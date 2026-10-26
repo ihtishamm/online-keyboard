@@ -6,6 +6,7 @@ import "@fontsource/noto-sans-devanagari/400.css";
 import { getLanguage, getLayout, layoutSlug } from "@okb/layouts";
 import { FONT_CLASS } from "./fonts";
 import KeyboardApp from "./keyboard/KeyboardApp";
+import { allSheets, pdfPath, sheetPath } from "./cheatsheet/sheets";
 import LayoutChart from "./LayoutChart.astro";
 import RomanGuide from "./RomanGuide.astro";
 import Base from "../layouts/Base.astro";
@@ -24,6 +25,7 @@ const copy = copyFor(slug);
 const isDefault = layoutId === language.layouts[0];
 const layoutCopy = copy.layouts[layoutId];
 const otherLayouts = language.layouts.filter((id) => id !== layoutId);
+const sheet = allSheets().find((s) => s.layoutId === layoutId);
 
 const title = isDefault
   ? copy.title
@@ -99,6 +101,18 @@ const jsonLd = [
         <RomanGuide rows={copy.romanGuide} lang={language.lang} />
       ) : (
         <LayoutChart layout={layout} />
+      )}
+      {sheet && (
+        <p class="mt-3 text-sm">
+          <a class="text-accent underline" href={sheetPath(sheet.id)}>
+            Printable {layout.translit ? "Roman Urdu" : layout.name.en} chart
+          </a>{" "}
+          (
+          <a class="text-accent underline" href={pdfPath(sheet.id)} download>
+            PDF
+          </a>
+          )
+        </p>
       )}
       {otherLayouts.length > 0 && (
         <p class="mt-3 text-sm text-muted">

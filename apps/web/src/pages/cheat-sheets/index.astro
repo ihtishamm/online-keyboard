@@ -1,0 +1,59 @@
+---
+import { getLayout } from "@okb/layouts";
+import { allSheets, pdfPath, sheetPath } from "../../components/cheatsheet/sheets";
+import { FONT_CLASS } from "../../components/fonts";
+import { SITE } from "../../config/site";
+import Base from "../../layouts/Base.astro";
+
+const sheets = allSheets();
+const languages = [...new Set(sheets.map((s) => s.language))];
+const title = `Printable Keyboard Layout Charts (Free PDF) | ${SITE.name}`;
+const description =
+  "Free printable keyboard charts for Urdu, Arabic, Farsi, Pashto, Sindhi, Punjabi, Saraiki, Balochi, Kashmiri, Hindi and Bangla layouts, plus a Roman Urdu chart. One A4 page each, as PDF.";
+---
+
+<Base title={title} description={description}>
+  <h1 class="mb-2 text-2xl font-semibold tracking-tight sm:text-3xl">Printable keyboard charts</h1>
+  <p class="mb-8 max-w-3xl text-muted">
+    One A4 page per layout with every key and its Shift and AltGr characters. Print one and keep it
+    next to your keyboard while you learn, or download the PDF. All free to print and share.
+  </p>
+  <div class="flex flex-col gap-8">
+    {languages.map((language) => (
+      <section aria-labelledby={`h-${language.slug}`}>
+        <h2 id={`h-${language.slug}`} class="mb-3 flex items-baseline gap-3 text-xl font-semibold">
+          {language.name.en}
+          <span
+            class={`${FONT_CLASS[language.fonts[0]!]} text-lg font-normal text-accent`}
+            lang={language.lang}
+            dir={language.dir}
+          >
+            {language.name.native}
+          </span>
+        </h2>
+        <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {sheets
+            .filter((s) => s.language === language)
+            .map((s) => {
+              const layout = getLayout(s.layoutId);
+              const label = s.kind === "roman" ? `Roman ${language.name.en}` : layout.name.en;
+              return (
+                <li class="flex items-center justify-between gap-3 rounded-xl border border-border bg-surface px-4 py-3">
+                  <a
+                    class="font-medium text-text no-underline hover:text-accent"
+                    href={sheetPath(s.id)}
+                  >
+                    {label} chart
+                  </a>
+                  <a class="text-sm text-accent underline" href={pdfPath(s.id)} download>
+                    PDF
+                    <span class="sr-only">for the {`${language.name.en} ${label}`} chart</span>
+                  </a>
+                </li>
+              );
+            })}
+        </ul>
+      </section>
+    ))}
+  </div>
+</Base>

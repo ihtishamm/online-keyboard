@@ -316,7 +316,15 @@ online-keyboard/
   - Shahmukhi, Sindhi, Pashto and the other languages are left out until speech services return them in the script this site types; Punjabi comes back in Gurmukhi.
   - Also fixed: pressed toolbar buttons (Emoji, Voice typing) now look pressed. `bg-surface` had been overriding `bg-accent-soft`.
   - Tests: text clean-up, spacing and errors (unit); a fake recogniser for consent, dictation, interim text, restarts, a blocked microphone and the button hidden without support (component); e2e with a fake recogniser on desktop and mobile, plus axe.
-- [ ] Printable layout cheat sheets (PDF) as SEO landing assets.
+- [x] Printable layout cheat sheets (PDF) as SEO landing assets. `/cheat-sheets` lists all 13 (each layout, plus a Roman Urdu spelling chart). Each `/cheat-sheets/<language>-<layout>` page has a Download PDF button, a Print button and a link to the keyboard. Keyboard pages link to their chart, and the home page lists the charts under Tools.
+  - Each chart is one A4 landscape page. Every key shows the English key, the normal character, Shift, AltGr and Shift+AltGr, with a legend, the layout's summary and source, and the site link. Sizes are in container units, so the on-screen preview matches the paper. Print CSS (a named `@page`) prints the sheet alone with no margins.
+  - Wide signs are kept readable: ligature signs (ﷺ) are drawn in Naskh, ﷽ is named "Bismillah", and ZWJ/ZWNJ use small text.
+  - PDFs: `pnpm build && node scripts/make-cheatsheets.ts` prints each built page with Playwright's Chromium into `public/cheat-sheets/` (about 160 KB each, 2 MB in all, committed).
+    - `manifest.json` stores a hash of everything the sheets are made from: layout data, sheet components, page copy, labels and the site URL.
+    - A unit test fails when the hash no longer matches, so stale PDFs cannot ship.
+    - The PDFs print the site's address, so regenerate them once `PUBLIC_SITE_URL` points to the real domain. The test flags this when it runs with that variable set.
+  - Each page has `DigitalDocument` structured data.
+  - Tests: sheet list and PDF freshness (unit); index links, PDF download, print media showing only the sheet, no page overflow on phones, keyboard page link, and axe (e2e, desktop and mobile).
 - [ ] Blog and guides in original content: "How to type Urdu on Windows/Mac/Android", "Roman Urdu to Urdu".
 
 ### Phase 5: Scale and monetise (week 14 onward)

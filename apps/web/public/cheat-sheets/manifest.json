@@ -1,0 +1,19 @@
+{
+  "site": "https://likho.example",
+  "hash": "aa7441d68bccf181",
+  "sheets": [
+    "arabic-standard",
+    "balochi-phonetic",
+    "bangla-inscript",
+    "farsi-standard",
+    "hindi-inscript",
+    "kashmiri-phonetic",
+    "pashto-standard",
+    "saraiki-phonetic",
+    "shahmukhi-phonetic",
+    "sindhi-phonetic",
+    "urdu-phonetic",
+    "urdu-roman",
+    "urdu-standard"
+  ]
+}

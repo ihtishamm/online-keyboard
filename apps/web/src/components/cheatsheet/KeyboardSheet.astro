@@ -1,0 +1,281 @@
+---
+import { ROWS, US_QWERTY, keyDefFor, type KeyCode } from "@okb/engine";
+import { getLayout } from "@okb/layouts";
+import { copyFor } from "../../content/languages";
+import { FONT_CLASS } from "../fonts";
+import { displayLabel } from "../keyboard/labels";
+import SheetFrame from "./SheetFrame.astro";
+import type { Sheet } from "./sheets";
+
+interface Props {
+  sheet: Sheet;
+  link: string;
+}
+
+const { sheet, link } = Astro.props;
+const { language } = sheet;
+const layout = getLayout(sheet.layoutId);
+const layoutCopy = copyFor(language.slug).layouts[sheet.layoutId];
+const script = FONT_CLASS[language.fonts[0]!];
+const hasAltGr = Object.values(layout.keys).some((k) => k?.ag || k?.sag);
+const hasShiftAltGr = Object.values(layout.keys).some((k) => k?.sag);
+
+/** A key on the chart: a character key, or a labelled modifier (`w` in key widths). */
+type Cap = { code: KeyCode; w?: number } | { label: string; w: number; strong?: boolean };
+const [numbers, top, home, bottom] = ROWS as unknown as KeyCode[][];
+const keys = (codes: KeyCode[]) => codes.map((code): Cap => ({ code }));
+const rows: Cap[][] = [
+  [...keys(numbers!), { label: "Backspace", w: 2 }],
+  [
+    { label: "Tab", w: 1.5 },
+    ...keys(top!.filter((c) => c !== "Backslash")),
+    { code: "Backslash", w: 1.5 },
+  ],
+  [{ label: "Caps Lock", w: 1.75 }, ...keys(home!), { label: "Enter", w: 2.25 }],
+  [
+    { label: "Shift", w: 2.25, strong: true },
+    ...keys(bottom!.filter((c) => c !== "IntlBackslash")),
+    { label: "Shift", w: 2.75, strong: true },
+  ],
+  [
+    { label: "Ctrl", w: 1.5 },
+    { label: "", w: 1.25 },
+    { label: "Alt", w: 1.5 },
+    { label: "Space", w: 6 },
+    { label: hasAltGr ? "AltGr" : "Alt", w: 1.5, strong: hasAltGr },
+    { label: "", w: 1.25 },
+    { label: "Ctrl", w: 2 },
+  ],
+];
+
+/** ﷽ is a whole phrase in one character: far too wide for a key, so it is named instead. */
+const BISMILLAH = "\uFDFD";
+const label = (text: string | undefined) =>
+  text === BISMILLAH ? "Bismillah" : displayLabel(text ?? "");
+/** Extra class for labels that need another size: ligature signs (ﷺ) and words (ZWNJ). */
+const size = (text: string | undefined) => {
+  const shown = label(text);
+  return /^[\uFDF0-\uFDFF]/u.test(shown) ? "wide" : /^[A-Za-z]{2,}$/.test(shown) ? "abbr" : "";
+};
+const notes = [
+  layoutCopy?.summary,
+  layoutCopy?.bestFor && `Best for: ${layoutCopy.bestFor}`,
+].filter(Boolean);
+---
+
+<SheetFrame
+  title={`${language.name.en} ${layout.name.en} keyboard layout`}
+  native={layout.name.native}
+  nativeClass={script}
+  lang={language.lang}
+  dir={language.dir}
+  link={link}
+  source={layout.source}
+>
+  <div class="board" dir="ltr">
+    {rows.map((row) => (
+      <div class="row">
+        {row.map((cap) => {
+          const width = { "--w": cap.w ?? 1 };
+          if ("label" in cap) {
+            return (
+              <div class:list={["key mod", { strong: cap.strong }]} style={width}>
+                {cap.label}
+              </div>
+            );
+          }
+          const def = keyDefFor(layout, cap.code);
+          const parts = [
+            ["shift", def?.s],
+            ["normal", def?.n],
+            ["sag", def?.sag],
+            ["ag", def?.ag],
+          ] as const;
+          return (
+            <div class="key" style={width}>
+              <span class="latin">{US_QWERTY[cap.code][0]}</span>
+              {parts.map(
+                ([part, text]) =>
+                  (text || part === "normal" || part === "shift") && (
+                    <span class:list={[part, script, size(text)]} lang={language.lang}>
+                      {label(text)}
+                    </span>
+                  ),
+              )}
+            </div>
+          );
+        })}
+      </div>
+    ))}
+  </div>
+
+  <div class="below">
+    <div class="legend">
+      <div class="key sample" aria-hidden="true">
+        <span class="latin">Q</span>
+        <span class="shift">Shift</span>
+        <span class="normal">Key</span>
+        {hasShiftAltGr && <span class="sag">Shift+AltGr</span>}
+        {hasAltGr && <span class="ag">AltGr</span>}
+      </div>
+      <p>
+        The large character is typed by the key alone. Hold <b>Shift</b> for the one at top right.{" "}
+        {hasAltGr && (
+          <>
+            Hold <b class="teal">AltGr</b> (the right Alt key; Ctrl+Alt also works) for the one at
+            bottom right{hasShiftAltGr && ", and Shift+AltGr for bottom left"}.
+          </>
+        )}{" "}
+        The small grey letter is the English key it sits on.
+      </p>
+    </div>
+    {notes.length > 0 && (
+      <div class="notes">
+        {notes.map((n) => (
+          <p>{n}</p>
+        ))}
+      </div>
+    )}
+  </div>
+</SheetFrame>
+
+<style>
+  .board {
+    --u: calc(93cqw / 15);
+    --gap: 0.35cqw;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+  }
+
+  .row {
+    display: flex;
+    gap: var(--gap);
+  }
+
+  .key {
+    position: relative;
+    flex: none;
+    width: calc(var(--w) * var(--u) - var(--gap));
+    height: calc(var(--u) * 1.12 - var(--gap));
+    border: 0.12cqw solid #8a8a8a;
+    border-radius: 0.6cqw;
+    background: #fff;
+  }
+
+  .mod {
+    display: flex;
+    align-items: flex-end;
+    padding: 0.5cqw 0.7cqw;
+    background: #eeeeea;
+    color: #666;
+    font-size: 1cqw;
+  }
+
+  .mod.strong {
+    color: #161616;
+    font-weight: 600;
+  }
+
+  .key > span {
+    position: absolute;
+    line-height: 1;
+  }
+
+  .latin {
+    top: 0.45cqw;
+    left: 0.55cqw;
+    font-size: 0.95cqw;
+    color: #6b6b6b;
+    text-transform: uppercase;
+  }
+
+  .shift {
+    top: 0.35cqw;
+    right: 0.55cqw;
+    font-size: 1.5cqw;
+    color: #333;
+  }
+
+  .normal {
+    left: 50%;
+    top: 52%;
+    translate: -50% -50%;
+    font-size: 2.5cqw;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .ag,
+  .sag {
+    bottom: 0.45cqw;
+    font-size: 1.35cqw;
+    color: #0f6b5c;
+  }
+
+  .ag {
+    right: 0.55cqw;
+  }
+
+  .sag {
+    left: 0.55cqw;
+  }
+
+  .below {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3cqw;
+    align-items: start;
+  }
+
+  .legend {
+    display: flex;
+    gap: 1.6cqw;
+    align-items: center;
+  }
+
+  .legend p,
+  .notes p {
+    margin: 0 0 0.5cqw;
+  }
+
+  .sample {
+    --w: 1.9;
+    --u: 7cqw;
+    --gap: 0px;
+    height: 8cqw;
+  }
+
+  .sample > span {
+    font-family: inherit;
+  }
+
+  .sample .normal {
+    font-size: 1.5cqw;
+  }
+
+  .sample .shift,
+  .sample .ag,
+  .sample .sag {
+    font-size: 1cqw;
+  }
+
+  /* Ligature signs: Naskh draws them far more compactly than Nastaliq. */
+  .key > .wide {
+    font-family: var(--stack-naskh);
+    font-size: 1.3cqw;
+  }
+
+  .key > .normal.wide {
+    font-size: 1.5cqw;
+  }
+
+  .key > .abbr {
+    font-family: inherit;
+    font-size: 0.7cqw;
+  }
+
+  .teal {
+    color: #0f6b5c;
+  }
+</style>

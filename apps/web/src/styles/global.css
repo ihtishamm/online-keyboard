@@ -213,6 +213,25 @@
   }
 }
 
+/* Printable keyboard charts (components/cheatsheet): the sheet alone, on A4 landscape. */
+@page cheatsheet {
+  size: A4 landscape;
+  margin: 0;
+}
+
+@media print {
+  body:has([data-sheet]) > :not(main),
+  body:has([data-sheet]) main > :not(.sheet-frame) {
+    display: none !important;
+  }
+
+  body:has([data-sheet]) main {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 /* "PDF" export prints #print-sheet alone (see keyboard/export/print.ts). */
 #print-sheet {
   display: none;

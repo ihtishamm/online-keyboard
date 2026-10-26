@@ -1,0 +1,158 @@
+---
+import { getLayout } from "@okb/layouts";
+import { Download, Keyboard, Printer } from "lucide-react";
+import KeyboardSheet from "../../components/cheatsheet/KeyboardSheet.astro";
+import RomanSheet from "../../components/cheatsheet/RomanSheet.astro";
+import {
+  allSheets,
+  keyboardPath,
+  pdfPath,
+  sheetPath,
+  type Sheet,
+} from "../../components/cheatsheet/sheets";
+import { SITE } from "../../config/site";
+import { copyFor } from "../../content/languages";
+import Base from "../../layouts/Base.astro";
+
+export function getStaticPaths() {
+  return allSheets().map((sheet) => ({ params: { sheet: sheet.id }, props: { sheet } }));
+}
+
+interface Props {
+  sheet: Sheet;
+}
+
+const { sheet } = Astro.props;
+const { language } = sheet;
+const layout = getLayout(sheet.layoutId);
+const layoutCopy = copyFor(language.slug).layouts[sheet.layoutId];
+const roman = sheet.kind === "roman";
+const keyboard = keyboardPath(sheet);
+const site = new URL(keyboard, Astro.site);
+const link = `${site.host}${site.pathname}`;
+const pdf = pdfPath(sheet.id);
+const others = allSheets().filter((s) => s.language === language && s.id !== sheet.id);
+
+const name = roman
+  ? `Roman ${language.name.en} chart`
+  : `${language.name.en} ${layout.name.en} keyboard layout`;
+const title = roman
+  ? `Roman ${language.name.en} Chart: ${language.name.en} in English Letters (Printable PDF) | ${SITE.name}`
+  : `${name} Chart (Printable PDF) | ${SITE.name}`;
+const description = roman
+  ? `Free printable chart for typing ${language.name.en} in English letters: which Roman letters make which ${language.name.en} letters, with examples. Print it or download the PDF.`
+  : `Free printable ${name}: every key with its Shift${
+      Object.values(layout.keys).some((k) => k?.ag) ? " and AltGr" : ""
+    } characters on one A4 page. Print it or download the PDF.`;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "DigitalDocument",
+  name,
+  description,
+  inLanguage: ["en", language.lang],
+  encodingFormat: "application/pdf",
+  url: new URL(pdf, Astro.site).href,
+  isAccessibleForFree: true,
+};
+
+const BTN =
+  "inline-flex h-10 items-center gap-2 rounded-lg border border-border bg-surface px-4 text-sm text-text no-underline hover:bg-surface-2";
+const PRIMARY =
+  "inline-flex h-10 items-center gap-2 rounded-lg border border-accent bg-accent px-4 text-sm font-medium text-accent-fg no-underline hover:opacity-90";
+---
+
+<Base title={title} description={description} nastaliq={language.fonts.includes("nastaliq")}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <nav class="mb-3 text-sm text-muted" aria-label="Breadcrumb">
+    <a class="text-accent underline" href="/cheat-sheets">
+      Printable keyboard charts
+    </a>
+    <span aria-hidden="true"> / </span>
+    {language.name.en}
+  </nav>
+  <h1 class="mb-2 text-2xl font-semibold tracking-tight sm:text-3xl">{name}: printable chart</h1>
+  <p class="mb-4 max-w-3xl text-muted">
+    {roman
+      ? `Keep this chart next to your keyboard while you learn to type ${language.name.en} in English letters. It fits on one A4 page.`
+      : `Every key of the ${layout.name.en} layout on one A4 page, to print and keep next to your keyboard while you learn.`}{" "}
+    {layoutCopy?.summary}
+  </p>
+  <div class="mb-6 flex flex-wrap gap-2">
+    <a class={PRIMARY} href={pdf} download>
+      <Download size={16} aria-hidden="true" />
+      Download PDF
+    </a>
+    <button type="button" class={BTN} data-print>
+      <Printer size={16} aria-hidden="true" />
+      Print
+    </button>
+    <a class={BTN} href={keyboard}>
+      <Keyboard size={16} aria-hidden="true" />
+      Type {language.name.en} online
+    </a>
+  </div>
+
+  <p class="mb-2 text-sm text-muted sm:hidden">
+    The chart scrolls sideways; the PDF is easier to read on a phone.
+  </p>
+  {roman ? <RomanSheet sheet={sheet} link={link} /> : <KeyboardSheet sheet={sheet} link={link} />}
+
+  <section aria-labelledby="use-heading" class="mt-10 max-w-3xl">
+    <h2 id="use-heading" class="mb-2 text-xl font-semibold">
+      How to use this chart
+    </h2>
+    <ul class="list-disc space-y-2 ps-5">
+      {roman ? (
+        <>
+          <li>
+            Type each word the way it sounds, then press Space to turn it into {language.name.en}.
+          </li>
+          <li>
+            The chart shows the letter combinations that pick a particular letter, such as kh for خ.
+          </li>
+          <li>You do not need to learn a new keyboard: any English keyboard or phone works.</li>
+        </>
+      ) : (
+        <>
+          <li>
+            Print it in landscape on A4 or Letter paper, or keep the PDF open on a second screen.
+          </li>
+          <li>
+            Practise with the on-screen keyboard at{" "}
+            <a class="text-accent underline" href={keyboard}>
+              {link}
+            </a>
+            : keys light up as you type.
+          </li>
+          {language.slug === "urdu" && (
+            <li>
+              Learn the layout row by row with the free{" "}
+              <a class="text-accent underline" href="/urdu-typing-tutor">
+                Urdu typing tutor
+              </a>
+              .
+            </li>
+          )}
+        </>
+      )}
+    </ul>
+    {others.length > 0 && (
+      <p class="mt-4 text-sm text-muted">
+        Other {language.name.en} charts:{" "}
+        {others.map((s, i) => (
+          <>
+            {i > 0 && ", "}
+            <a class="text-accent underline" href={sheetPath(s.id)}>
+              {s.kind === "roman" ? "Roman" : getLayout(s.layoutId).name.en}
+            </a>
+          </>
+        ))}
+      </p>
+    )}
+  </section>
+
+  <script>
+    document.querySelector("[data-print]")?.addEventListener("click", () => window.print());
+  </script>
+</Base>

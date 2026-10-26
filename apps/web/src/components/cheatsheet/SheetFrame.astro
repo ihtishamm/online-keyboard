@@ -1,0 +1,147 @@
+---
+/**
+ * An A4 landscape page. On screen it is a paper preview that scales with its container; in
+ * print (and the generated PDFs) it fills the page. Sizes inside use cqw, 1% of the sheet's
+ * width, so screen and paper look the same.
+ */
+import { SITE } from "../../config/site";
+
+interface Props {
+  title: string;
+  /** Layout name in the language, shown large at the top. */
+  native: string;
+  nativeClass: string;
+  lang: string;
+  dir: "ltr" | "rtl";
+  /** e.g. "likho.app/urdu". */
+  link: string;
+  source?: string;
+}
+
+const { title, native, nativeClass, lang, dir, link, source } = Astro.props;
+---
+
+<!-- Focusable: on narrow screens the sheet scrolls sideways inside the frame. -->
+<div class="sheet-frame" role="region" aria-label="Chart preview" tabindex="0">
+  <article class="sheet" data-sheet aria-label={`${title}, printable chart`}>
+    <div class="sheet-page">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-brand">{SITE.name} · free online keyboards</p>
+          <h2 class="sheet-title">{title}</h2>
+        </div>
+        <p class={`sheet-native ${nativeClass}`} lang={lang} dir={dir}>
+          {native}
+        </p>
+      </header>
+      <slot />
+      <footer class="sheet-foot">
+        <span>
+          Type online for free at <strong>{link}</strong>
+        </span>
+        {source && <span class="sheet-source">Layout: {source}</span>}
+        <span>Free to print and share.</span>
+      </footer>
+    </div>
+  </article>
+</div>
+
+<style>
+  .sheet-frame {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  .sheet {
+    container-type: inline-size;
+    min-width: 720px;
+    max-width: 1123px;
+    aspect-ratio: 297 / 210;
+    margin-inline: auto;
+    background: #fff;
+    color: #161616;
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 24px rgb(0 0 0 / 0.12);
+    overflow: hidden;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Inside the container, so cqw here means 1% of the sheet's width. */
+  .sheet-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6cqw;
+    padding: 3cqw 3.5cqw 2.4cqw;
+    font-size: 1.2cqw;
+    line-height: 1.4;
+  }
+
+  .sheet-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2cqw;
+    border-bottom: 0.25cqw solid #0f6b5c;
+    padding-bottom: 1cqw;
+  }
+
+  .sheet-brand {
+    margin: 0;
+    font-size: 1.1cqw;
+    font-weight: 600;
+    color: #0f6b5c;
+    letter-spacing: 0.02em;
+  }
+
+  .sheet-title {
+    margin: 0;
+    font-size: 2.6cqw;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .sheet-native {
+    margin: 0;
+    font-size: 3cqw;
+    line-height: 1.3;
+    color: #0f6b5c;
+  }
+
+  .sheet-foot {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.4cqw 2cqw;
+    border-top: 0.1cqw solid #ccc;
+    padding-top: 0.8cqw;
+    font-size: 0.95cqw;
+    color: #555;
+  }
+
+  .sheet-source {
+    flex: 1 1 40%;
+  }
+
+  @media print {
+    .sheet-frame {
+      overflow: visible;
+      padding: 0;
+    }
+
+    .sheet {
+      page: cheatsheet;
+      width: 297mm;
+      height: 210mm;
+      min-width: 0;
+      max-width: none;
+      aspect-ratio: auto;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+</style>

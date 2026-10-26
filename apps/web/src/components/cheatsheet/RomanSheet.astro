@@ -1,0 +1,124 @@
+---
+import { getLayout } from "@okb/layouts";
+import { copyFor } from "../../content/languages";
+import { FONT_CLASS } from "../fonts";
+import SheetFrame from "./SheetFrame.astro";
+import type { Sheet } from "./sheets";
+
+interface Props {
+  sheet: Sheet;
+  link: string;
+}
+
+const { sheet, link } = Astro.props;
+const { language } = sheet;
+const layout = getLayout(sheet.layoutId);
+const rows = copyFor(language.slug).romanGuide ?? [];
+const script = FONT_CLASS[language.fonts[0]!];
+// Two columns, filled top to bottom.
+const half = Math.ceil(rows.length / 2);
+const columns = [rows.slice(0, half), rows.slice(half)];
+const example = "بہت";
+---
+
+<SheetFrame
+  title={`Roman ${language.name.en}: typing ${language.name.en} in English letters`}
+  native={layout.name.native}
+  nativeClass={script}
+  lang={language.lang}
+  dir={language.dir}
+  link={link}
+>
+  <p class="how">
+    Type words as they sound in English letters and press <b>Space</b>: each word turns into{" "}
+    {language.name.en} script. Vowels can be left out: <span class="roman">bht</span> becomes{" "}
+    <span class={script} lang={language.lang}>
+      {example}
+    </span>
+    . If a word comes out wrong, pick another spelling from the bar under the editor, or press{" "}
+    <b>Esc</b> to keep it in English.
+  </p>
+  <div class="columns">
+    {columns.map((column) => (
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">You type</th>
+            <th scope="col">Letters</th>
+            <th scope="col">Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          {column.map((row) => (
+            <tr>
+              <td class="roman">{row.roman}</td>
+              <td class:list={["letters", script]} lang={language.lang} dir="rtl">
+                {row.urdu}
+              </td>
+              <td>
+                {row.examples.map(([roman, urdu], i) => (
+                  <>
+                    {i > 0 && <span class="sep"> · </span>}
+                    <span class="roman">{roman}</span>{" "}
+                    <span class={script} lang={language.lang}>
+                      {urdu}
+                    </span>
+                  </>
+                ))}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ))}
+  </div>
+</SheetFrame>
+
+<style>
+  .how {
+    margin: 0 0 1cqw;
+    font-size: 1.5cqw;
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5cqw;
+    align-items: start;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.45cqw;
+  }
+
+  th {
+    text-align: start;
+    font-weight: 600;
+    background: #eeeeea;
+    padding: 0.7cqw 1cqw;
+  }
+
+  td {
+    border-top: 0.1cqw solid #ddd;
+    padding: 0.9cqw 1cqw;
+    vertical-align: middle;
+    line-height: 1.6;
+  }
+
+  .roman {
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-weight: 600;
+  }
+
+  .letters {
+    font-size: 2.1cqw;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .sep {
+    color: #767676;
+  }
+</style>
