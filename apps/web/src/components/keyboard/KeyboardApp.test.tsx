@@ -1,4 +1,4 @@
-import { act, cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { act, cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import KeyboardApp from "./KeyboardApp";
 
@@ -115,5 +115,88 @@ describe("KeyboardApp", () => {
     expect(keyButton("KeyB").getAttribute("aria-label")).toBe("ب, B key");
     tap(screen.getAllByRole("button", { name: "Shift" })[0]!);
     expect(keyButton("KeyY").getAttribute("aria-label")).toBe("zabar, Y key");
+  });
+});
+
+describe("toolbar", () => {
+  const renderApp = () =>
+    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+
+  it("copies the text to the clipboard and says so", async () => {
+    const writeText = vi.fn().mockResolvedValue(undefined);
+    Object.defineProperty(navigator, "clipboard", { value: { writeText }, configurable: true });
+    renderApp();
+    press("KeyS");
+    press("KeyL");
+    await act(async () => {
+      fireEvent.click(screen.getByRole("button", { name: "Copy" }));
+    });
+    expect(writeText).toHaveBeenCalledWith("سل");
+    expect(await screen.findByText("Copied to clipboard")).toBeTruthy();
+  });
+
+  it("clears the text", () => {
+    renderApp();
+    press("KeyS");
+    fireEvent.click(screen.getByRole("button", { name: "Clear" }));
+    expect(editor().value).toBe("");
+  });
+
+  it("switches font and size, and remembers both", () => {
+    renderApp();
+    expect(editor().className).toContain("font-nastaliq");
+    fireEvent.change(screen.getByRole("combobox", { name: "Font" }), {
+      target: { value: "naskh" },
+    });
+    expect(editor().className).toContain("font-naskh");
+    fireEvent.click(screen.getByRole("button", { name: "Larger text" }));
+    expect(editor().style.fontSize).toBe("32px");
+    expect(localStorage.getItem("likho:font:urdu")).toBe("naskh");
+    expect(localStorage.getItem("likho:fontSize")).toBe("32");
+  });
+
+  it("counts words and characters", () => {
+    renderApp();
+    for (const code of ["KeyS", "KeyL", "KeyA", "KeyM"]) press(code);
+    expect(screen.getByText(/1 word · 4 characters/)).toBeTruthy();
+  });
+});
+
+describe("autosave", () => {
+  it("restores the text after a reload", async () => {
+    vi.useFakeTimers({ shouldAdvanceTime: true });
+    try {
+      render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+      await act(async () => {
+        await vi.runAllTimersAsync();
+      });
+      for (const code of ["KeyS", "KeyL", "KeyA", "KeyM"]) press(code);
+      await act(async () => {
+        await vi.advanceTimersByTimeAsync(1000);
+      });
+      expect(await screen.findByText("Saved on this device")).toBeTruthy();
+      cleanup();
+
+      render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+      await act(async () => {
+        await vi.runAllTimersAsync();
+      });
+      expect(editor().value).toBe("سلام");
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it("keeps several drafts", async () => {
+    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    const draftSelect = await screen.findByRole("combobox", { name: "Draft" });
+    press("KeyS");
+    fireEvent.click(screen.getByRole("button", { name: "New draft" }));
+    await waitFor(() => expect(draftSelect.querySelectorAll("option")).toHaveLength(2));
+    expect(editor().value).toBe("");
+    press("KeyM");
+    const first = [...draftSelect.querySelectorAll("option")].find((o) => o.textContent === "س")!;
+    fireEvent.change(draftSelect, { target: { value: first.getAttribute("value") } });
+    await waitFor(() => expect(editor().value).toBe("س"));
   });
 });

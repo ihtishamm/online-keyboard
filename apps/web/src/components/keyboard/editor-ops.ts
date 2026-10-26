@@ -39,6 +39,17 @@ export function deleteBackward(el: HTMLTextAreaElement): void {
   replaceRange(el, "", start, end);
 }
 
+/** Native undo/redo of the textarea's own history. */
+export function undo(el: HTMLTextAreaElement): void {
+  el.focus();
+  exec(el, "undo");
+}
+
+export function redo(el: HTMLTextAreaElement): void {
+  el.focus();
+  exec(el, "redo");
+}
+
 /** Replace everything, as one undoable step when possible. */
 export function replaceAll(el: HTMLTextAreaElement, text: string): void {
   if (document.activeElement === el) {
