@@ -280,8 +280,13 @@ online-keyboard/
   - Search matches word prefixes in English or the page language (پاکستان, خدا حافظ, नमस्ते), ignores case, accents and Arabic vowel marks, and folds ي/ی, ك/ک, ه/ہ. Enter inserts the top result.
   - Categories, Recently used, a remembered skin tone, arrow-key grid navigation, Escape to close. On phones the panel takes the on-screen keyboard's place.
   - Tests: data and search (unit); e2e for insertion, both-language search, skin tone + recents across reloads, keyboard navigation, whole-emoji backspace, phone layout, axe.
-- [ ] PWA offline mode.
-- **Exit:** each language passes a golden-text typing test, and the site works offline after the first visit.
+- [x] PWA offline mode. Installable (web manifest, 192/512 and maskable icons, apple-touch-icon, shortcuts to Urdu/Arabic/Hindi/InPage) and offline after the first visit.
+  - Hand-written service worker (`src/sw/service-worker.js`), no Workbox. After `astro build`, an integration (`src/sw/build.ts`) writes `dist/sw.js` with the precache list: every page plus the scripts and styles they import statically (26 files, ~2 MB raw), versioned by a hash of their contents. Dynamic chunks (emoji keywords, exports), word lists and fonts are cached the first time they are fetched; the page also hands over what it loaded before the worker took control.
+  - Pages are network-first (4 s timeout, then cache), so releases show up at once; hashed `/_astro/` files are cache-first, and files from earlier builds are dropped on activation. Cache lookups ignore `Vary` (servers send `Vary: Origin`, and fonts and module scripts carry an Origin header).
+  - Registered in production builds only. The footer says "Works offline." once the worker controls the page.
+  - Tests: precache list (static imports in, dynamic imports out, version changes with content); e2e on Chromium: offline reload types and renders Nastaliq, unvisited pages open offline, emoji used once works offline, manifest and icons.
+- **Exit: met.** Every language passes its golden-text typing test (unit + e2e), and the site works offline after the first visit (e2e).
+- Still open from earlier phases (not checklist items): subset display fonts, try Preact, measure Lighthouse on real hosting. They need a real deploy (and new packages for subsetting and Preact), so they wait for the first deployment.
 
 ### Phase 4: Engagement and growth (weeks 11–13)
 - [ ] Urdu typing tutor and speed test (WPM, accuracy, shareable result card).

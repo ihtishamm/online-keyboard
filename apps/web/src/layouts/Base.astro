@@ -30,6 +30,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
     <meta name="theme-color" content="#0f6b5c" />
     <meta property="og:title" content={title} />
@@ -105,6 +107,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       <div class="mx-auto flex max-w-6xl flex-wrap justify-between gap-2 px-4 py-4">
         <p>
           © {new Date().getFullYear()} {SITE.name}. Your text stays on your device.
+          <span id="offline-ready" hidden>
+            {" "}
+            Works offline.
+          </span>
         </p>
         <p>
           Word suggestions use a word list built from
@@ -119,5 +125,35 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         </p>
       </div>
     </footer>
+    {import.meta.env.PROD && <script is:inline>
+      // Offline support (src/sw/service-worker.js). Production builds only: in development
+      // a cached page would hide code changes.
+      if ("serviceWorker" in navigator) {
+        const sw = navigator.serviceWorker;
+        // Files this page fetched before the worker controlled it, so they work offline too.
+        const handOver = () =>
+          sw.controller?.postMessage({
+            type: "cache",
+            urls: performance
+              .getEntriesByType("resource")
+              .map((e) => e.name)
+              .filter((url) => url.startsWith(location.origin)),
+          });
+        const ready = () => {
+          const note = document.getElementById("offline-ready");
+          if (note && sw.controller) note.hidden = false;
+        };
+        sw.addEventListener("controllerchange", () => {
+          handOver();
+          ready();
+        });
+        ready();
+        window.addEventListener("load", () => {
+          sw.register("/sw.js").then(handOver, () => {
+            /* unsupported or blocked: the site still works online */
+          });
+        });
+      }
+    </script>}
   </body>
 </html>
