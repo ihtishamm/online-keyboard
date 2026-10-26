@@ -1,0 +1,337 @@
+# Online Multilingual Keyboard: Competitive Teardown & Execution Plan
+
+> Target analysed: `https://www.branah.com/urdu`, with spot checks of `/chinese`, `/japanese`, `/hindi`, `/arabic`, `/sindhi`, `/punjabi`, `/farsi`, `/bangla` and the home page.
+> Method: REA (Reverse Engineering Agent) browser and JavaScript analysis, a headless Chrome capture, and a manual read of the shipped inline bundle.
+> Date: 2026-10-26
+
+---
+
+## 0. Ground rules (legal and ethical)
+
+- We studied **behaviour and architecture** so we can build something better. We do **not** copy Branah's code, CSS, branding, page text or layout data tables.
+- Keyboard layouts are standards, not Branah's property. We source ours from openly licensed or standard references:
+  - Unicode **CLDR keyboard** data
+  - **SIL Keyman** keyboards (MIT/open licences)
+  - Microsoft KLC layouts (as references only)
+  - **CRULP** Urdu phonetic specs
+  - Government InScript specs (Indic scripts)
+- Dictionaries and corpora for prediction must have clear licences: Urdu Wikipedia dumps (CC BY-SA), Leipzig corpora, OSCAR, Hunspell `ur` (check its licence).
+
+---
+
+## 1. Reverse-engineering findings
+
+### 1.1 Evidence ledger
+
+| # | Finding | Evidence | Confidence |
+|---|---------|----------|-----------|
+| E1 | The page runs 2 scripts. The whole app is **one ~33.8 KB inline IIFE bundle** (esbuild-style output). The other script is the AdSense push. | REA `analyze_web_bundle` `ev_1c40a19b…93d1` (sha256 `e20d950a…2226`) | observed |
+| E2 | The bundle has no network endpoints, routes, source maps or WebMCP. Urdu is 100 % client-side. | same Evidence: `endpoints: []`, `routes: []` | observed (static) |
+| E3 | Static graph: 1 file, 0 modules, ~10k AST nodes, no parse failures. | REA `analyze_javascript_application` `ev_3bcf24bd…ae78` | derived |
+| E4 | Third-party code: Google AdSense only (`ca-pub-…`), plus iframes from doubleclick. | CDP target list and HTML `<script src>` | observed |
+| E5 | 98 language pages plus side tools (OCR, PDF to text, Braille, Unicode table, etc.). | Home page fetch | observed |
+| E6 | CJK pages load **XML dictionaries** from `/xml/*.xml` and show candidates on the number row. | `/chinese`, `/japanese` HTML | observed (static) |
+| E7 | Urdu has 2 layouts (Standard, Phonetic) and **no transliteration or word suggestions** on the web. Farsi has a "Transliteration" layout; Urdu does not. | Layout IDs in each page | observed |
+| E8 | Punjabi is **Gurmukhi only** (InScript/Phonetic). There is no Shahmukhi. Balochi, Saraiki, Kashmiri, Hindko, Brahui and Shina are absent. | `/punjabi` layouts and the home language list | observed |
+
+Gaps in coverage: we did not observe the server or CDN configuration, analytics beyond AdSense, or the mobile app internals. Other language pages got light static checks only, with no runtime capture.
+
+### 1.2 Architecture (described in our own words)
+
+```
+Static HTML page per language (SSR/static, SEO text + FAQ)
+ └─ Inline bundle
+     ├─ util       : caret/selection helpers, surrogate-pair & emoji-cluster aware backspace,
+     │               browser sniffing (mobile UA, Opera, Firefox keyCode quirks)
+     ├─ layout     : data model for one layout (48 key slots k0..k47) + dead-key table
+     ├─ keyboard   : renders buttons, holds modifier state, routes input, draws labels
+     ├─ store      : localStorage wrapper keyed by page slug (undo, redo, layout, fontSize)
+     └─ plugins    : installed via install(ctx)
+          • layout switcher (radio buttons, persisted)
+          • font size  (- / +, 14–36 px, step 2)
+          • edit tools (Select All, Copy, Undo, Redo, Clear All)
+          • share links (mailto, X intent, Google search, Google Translate sl=<lang>&tl=en)
+          • save as .txt (Blob download, form-POST fallback)
+ Page config object: { url slug, langAbbr, fontSize, layouts[{Id, Name, Json}] }
+```
+
+**Key mechanics observed:**
+
+1. **Layout model.** Each key slot has a physical id (`k0`–`k47`, ANSI plus ISO key 47) and up to **6 layers**: normal, shift, AltGr, Shift+AltGr and two Caps "SGCap" layers. A per-key flag says whether Caps acts like Shift. Dead keys are `(trigger, base) → composed` pairs.
+2. **Physical input.** `keydown` maps `event.code`, or the legacy `keyCode` for old browsers, to the slot index. The app looks up the active layer, then **prevents the default** and inserts the character itself at the caret. Ctrl+A/C/V/X/Y/Z pass through.
+3. **Esc** toggles between the target layout and plain QWERTY passthrough.
+4. **On-screen input.** Delegated pointer events on the keyboard container. Holding a key auto-repeats after about 300 ms (a 50 ms interval after 5 ticks). Hovering a modifier previews its layer.
+5. **Responsive.** Below 640 px the HTML is a different, compact 3-row build. It is chosen **once at load** and does not react to resize or rotation. On mobile UAs the textarea is set to **readOnly** to suppress the OS keyboard.
+6. **Emoji.** The emoji panel pages through **raw consecutive code points** from U+1F600, 14 per row. It has no categories or search, and it shows unassigned or invalid code points.
+7. **Persistence.** Every 3 s, if the text changed, the app pushes a **full text snapshot** onto the undo stack in localStorage. There is no cap, so the stack grows without bound. On load it restores the last snapshot (autosave).
+8. **Copy** uses the deprecated `document.execCommand('copy')` and falls back to an `alert()`.
+9. **CJK IME.** An XML dictionary is fetched per input method. A buffer is matched to candidates, shown on the number keys with ◂/▸ paging, and Space picks the first.
+10. **Rendering.** Text is shown in the browser's default font. There is **no Nastaliq font**, so Urdu renders in Naskh, which most Urdu readers dislike.
+
+### 1.3 UX audit (from the screenshot and DOM)
+
+- A cramped layout of the 2010s. Ads and "discover more" links push the editor down. No dark mode.
+- There's no visual feedback on the on-screen key when you press a physical key.
+- Key legends are tiny and pink-on-grey. Contrast is weak.
+- Accessibility: buttons have no `aria-label`, and layer or modifier state isn't announced. The textarea has no label. Screen-reader users get little.
+- There's one document with no titles, no history browser and no sync.
+- The phone experience upsells the native app instead of being good on the web.
+
+---
+
+## 2. Where we win (positioning)
+
+**"The best way to type Urdu (and every South-Asian / Arabic-script language) online, beautiful, smart, private, offline."**
+
+Branah is broad (98 languages) but shallow. We go **deep on Urdu and its neighbouring languages first**, then scale breadth through a data-driven layout pipeline.
+
+| Gap at Branah | Our answer |
+|---|---|
+| No Nastaliq rendering | Nastaliq by default (Noto Nastaliq Urdu, Mehr/Jameel-style open fonts), with a font switcher |
+| No Roman-Urdu transliteration | **Type "mera naam" and get میرا نام** with ranked candidates. This is how most Pakistanis actually type. |
+| No word prediction on web | Client-side n-gram/trie prediction, plus next-word suggestions |
+| No spell check | Urdu spell check with suggestions (Hunspell/own wordlist, run in a Web Worker) |
+| Naive emoji | Real emoji picker with categories, search and skin tones (CLDR annotations) |
+| Plain .txt export only | Export .txt, .docx, .pdf and a **PNG/JPG "post image"** in Nastaliq for WhatsApp, Facebook and Instagram |
+| No InPage support | **InPage ↔ Unicode converter** (big demand from Pakistani offices and journalists) |
+| Missing languages | Shahmukhi Punjabi, Saraiki, Balochi, Kashmiri, Hindko, Brahui, Shina, Torwali, Khowar, Pashto variants |
+| Fixed layout, resize-blind | Fluid responsive keyboard, landscape and tablet modes, split keyboard |
+| Weak a11y | WCAG 2.2 AA, ARIA live layer announcements, high-contrast theme |
+| Single doc, localStorage spam | IndexedDB multi-document drafts with capped history, plus optional cloud sync |
+| No offline web | PWA, installable and fully offline |
+| Ad-heavy | Light ads, with an ad-free Pro tier |
+
+---
+
+## 3. Product scope and priorities
+
+### P0: MVP (parity plus the killer features)
+1. Core typing engine (our own clean implementation; see §4.2) with physical `event.code` mapping, 6 layers, dead keys, RTL/LTR, auto-repeat and pressed-key highlighting.
+2. Urdu layouts: **Phonetic** (CRULP-style), **Standard** (Windows/national standard) and **Roman-Urdu transliteration**.
+3. Nastaliq rendering in the editor, with font size and line-height controls.
+4. Toolbar: Copy (Clipboard API), Paste, Undo/Redo (native plus our own stack), Clear (with undo instead of `confirm()`), Download .txt, Share (Web Share API, WhatsApp, X, email).
+5. Autosave to IndexedDB. Restore on load.
+6. Responsive keyboard that reflows on resize. Mobile-first. Toggling the OS keyboard is optional instead of a forced readOnly.
+7. Dark and light themes. Accessible markup.
+8. SEO-ready static page per language and layout (fast LCP < 1.5 s, no layout shift from ads).
+
+### P1: Differentiators
+1. Word prediction and next-word suggestions (Urdu first).
+2. Spell check with a red underline and suggestions.
+3. Export to .docx, .pdf and a social **image card** (Nastaliq, themes, watermark optional).
+4. InPage → Unicode (and reverse) converter page.
+5. Voice typing (Web Speech API `ur-PK` where supported, with graceful fallback).
+6. A full emoji panel.
+7. Multi-document drafts sidebar.
+8. A layout cheat-sheet overlay and a printable layout PDF.
+9. A typing tutor and speed test for Urdu (a strong SEO and retention loop).
+10. Add the regional language pack: Arabic, Farsi, Pashto, Sindhi, Shahmukhi Punjabi, Saraiki, Balochi, Kashmiri, Hindi, Bangla.
+
+### P2: Scale and moat
+1. AI assist (Claude API, server-side proxy): translate, fix grammar and diacritics (اعراب), convert messy Roman Urdu, and summarise. Rate-limited, with a Pro tier.
+2. Custom layout editor (users build and share layouts as JSON).
+3. Browser extension that types Urdu into any website.
+4. An embeddable widget (`<script>`) for other sites (B2B/education).
+5. Scale to 100+ languages via the layout import pipeline (Keyman/CLDR → our schema).
+6. Account plus cloud sync (optional, privacy-first).
+7. Image-to-text (Urdu OCR via Tesseract.js `urd` model, client-side).
+
+---
+
+## 4. Technical design
+
+### 4.1 Stack
+- **Framework:** Astro (static-first, best for hundreds of SEO pages) with React islands for the keyboard app. Next.js (App Router, SSG) is the alternative if we expect lots of app-like pages.
+- **Language:** TypeScript, strict mode.
+- **Styling:** Tailwind CSS with CSS variables for theming.
+- **State:** Zustand (or signals) inside the island.
+- **Storage:** IndexedDB via `idb-keyval`/Dexie.
+- **Workers:** a Web Worker for transliteration, prediction and spellcheck, so the UI thread never blocks.
+- **PWA:** Workbox service worker. Dictionaries are cached on demand per language.
+- **Fonts:** self-hosted and subsetted WOFF2 (Noto Nastaliq Urdu, Noto Naskh Arabic, Noto Sans per script), `font-display: swap`.
+- **Testing:** Vitest (engine unit tests), Playwright (E2E typing on desktop and mobile viewports), axe-core (a11y).
+- **Hosting:** Cloudflare Pages or Vercel with edge caching. A small serverless API only for P2 AI features.
+- **Analytics:** privacy-friendly (Plausible/Umami).
+
+### 4.2 Core engine (`packages/engine`), framework-agnostic
+```
+engine/
+  layout/schema.ts        # our JSON schema (zod-validated)
+  layout/registry.ts      # lazy-load layouts per language
+  input/physical.ts       # KeyboardEvent.code -> slot, modifier tracking, IME-safe
+  input/virtual.ts        # pointer events, long-press popups (alternate chars), repeat
+  compose/deadkeys.ts     # dead-key & multi-key compose state machine
+  translit/engine.ts      # rule-based Roman->script transliteration (longest-match FST)
+  translit/rank.ts        # candidate ranking with dictionary frequency
+  predict/trie.ts         # prefix trie + bigram next-word model (binary packed)
+  text/caret.ts           # setRangeText-based insert/delete, grapheme-aware (Intl.Segmenter)
+  text/normalize.ts       # Unicode NFC, Urdu-specific normalisation (ی/ي, ک/ك, ہ/ه)
+```
+
+**Layout schema (our own design):**
+```jsonc
+{
+  "id": "ur-phonetic",
+  "lang": "ur", "script": "Arab", "dir": "rtl",
+  "name": { "en": "Urdu Phonetic", "native": "اردو صوتی" },
+  "base": "ansi",            // ansi | iso | jis | mobile
+  "keys": { "KeyA": { "n": "…", "s": "…", "ag": "…", "sag": "…", "caps": "shift" } },
+  "longpress": { "KeyA": ["…", "…"] },   // mobile alternates
+  "deadkeys": [{ "trigger": "…", "base": "…", "out": "…" }],
+  "translit": "ur-roman"     // optional transliteration scheme id
+}
+```
+Keys are indexed by **`KeyboardEvent.code`** directly, not numeric slots, so ISO, JIS and mobile rows fit cleanly.
+
+**Engine improvements over Branah:**
+- Use `setRangeText` and `beforeinput`/`InputEvent` so native undo, autocorrect and IME composition keep working.
+- Grapheme-aware delete with `Intl.Segmenter` (handles emoji ZWJ sequences, Urdu ligatures and diacritics) instead of hand-written code-point tables.
+- Respect `compositionstart/end`, so we never fight the OS IME.
+- Resize-aware rendering (ResizeObserver), with no full re-render on every key. Update only the labels that changed.
+
+### 4.3 Transliteration (the killer feature)
+- **Phase A: rules.** Longest-match tables, e.g. `kh→خ`, `gh→غ`, `sh→ش`, `ch→چ`, `aa→آ/ا`, `ee→ی`, `oo→و`, word-final `a→ہ/ا`, plus context rules.
+- **Phase B: dictionary ranking.** Build a Roman↔Urdu word list (from a mined corpus and community contributions). Generate candidates from the rules, then re-rank them by dictionary frequency.
+- **Phase C (P2): AI fallback** for whole-sentence conversion and ambiguous words.
+- UX: an inline candidate bar above the keyboard. Space commits the top candidate, 1–9 picks one, Esc keeps the Roman text. A toggle switches between "Roman mode" and "Direct mode".
+
+### 4.4 Prediction and spell check
+- Ship per-language **binary-packed tries** (target < 1 MB gzipped for Urdu, top ~100k words) plus a bigram table.
+- Load lazily after first input. Cache with the service worker.
+- Spell check runs nspell/Hunspell in a worker. Results show as underlines on a mirrored overlay above the textarea, or we use a contenteditable editor (see the risk notes).
+
+### 4.5 Editor choice
+- MVP: `<textarea>` (simple, reliable with RTL and copy).
+- P1: move to a light contenteditable editor (Lexical or ProseMirror) only if spell-underlines or rich export need it. Keep the plain-text model either way.
+
+### 4.6 Repo layout
+```
+online-keyboard/
+  apps/web/                 # Astro site
+    src/pages/[lang]/index.astro         # e.g. /urdu, /arabic
+    src/pages/[lang]/[layout].astro      # e.g. /urdu/phonetic
+    src/pages/tools/inpage-converter.astro
+    src/pages/typing-test/[lang].astro
+    src/components/keyboard/*            # React island
+    src/content/languages/*.md           # SEO copy, FAQs per language (original text)
+  packages/engine/          # TS core (no DOM deps where possible)
+  packages/layouts/         # JSON layouts + importer scripts (Keyman/CLDR -> schema)
+  packages/dictionaries/    # build scripts -> packed tries per language
+  packages/ui/              # shared components, themes
+  tools/                    # corpus processing, font subsetting
+```
+
+---
+
+## 5. Execution roadmap
+
+### Phase 0: Foundations (week 1)
+- [ ] Monorepo (pnpm workspaces), TS strict, ESLint/Prettier, Vitest, Playwright, CI (GitHub Actions).
+- [ ] Design tokens (light, dark, high-contrast), typography scale, Nastaliq font subset pipeline.
+- [ ] Layout JSON schema and validator. Importer prototype for one Keyman keyboard.
+- **Exit:** CI green, an empty Astro site deploys to preview.
+
+### Phase 1: Engine and Urdu MVP (weeks 2–4)
+- [ ] Physical-key engine (code→layer→insert) with Shift, AltGr, Caps and dead keys, plus Esc passthrough toggle.
+- [ ] Virtual keyboard component: desktop ANSI/ISO and a mobile layout, auto-repeat, long-press alternates, pressed-key highlighting.
+- [ ] Urdu Phonetic and Standard layouts (built from public specs).
+- [ ] Toolbar: copy, share, download .txt, clear-with-undo, font size, font family.
+- [ ] Autosave in IndexedDB, multiple drafts (basic).
+- [ ] `/urdu` page: hero editor above the fold, original SEO copy, FAQ schema.org markup, hreflang.
+- **Exit:** Lighthouse ≥ 95 on all four categories. Playwright tests type a known sentence on both layouts and match the expected Unicode. axe reports 0 serious violations.
+
+### Phase 2: Roman Urdu and prediction (weeks 5–7)
+- [ ] Transliteration rules engine with candidate bar.
+- [ ] Corpus pipeline: clean, normalise, count frequencies, build the packed trie.
+- [ ] Word completion and next-word suggestions.
+- [ ] A test set of 500 Roman→Urdu word pairs. Target: top-1 accuracy ≥ 80 %, top-5 ≥ 95 %.
+- **Exit:** a typist can write a WhatsApp-length message in Roman mode with fewer than 1 correction in 10 words.
+
+### Phase 3: Regional language pack and tools (weeks 8–10)
+- [ ] Arabic, Farsi, Pashto, Sindhi, **Shahmukhi Punjabi**, **Saraiki**, **Balochi**, Kashmiri, Hindi, Bangla (layouts, fonts and page copy).
+- [ ] InPage ↔ Unicode converter.
+- [ ] Export to .docx, .pdf and a Nastaliq image card.
+- [ ] Emoji panel with search.
+- [ ] PWA offline mode.
+- **Exit:** each language passes a golden-text typing test, and the site works offline after the first visit.
+
+### Phase 4: Engagement and growth (weeks 11–13)
+- [ ] Urdu typing tutor and speed test (WPM, accuracy, shareable result card).
+- [ ] Spell check (Urdu).
+- [ ] Voice typing.
+- [ ] Printable layout cheat sheets (PDF) as SEO landing assets.
+- [ ] Blog and guides in original content: "How to type Urdu on Windows/Mac/Android", "Roman Urdu to Urdu".
+
+### Phase 5: Scale and monetise (week 14 onward)
+- [ ] Bulk layout import to reach 100+ languages (prioritise by search volume).
+- [ ] AI assist (Claude API via a server proxy, rate-limited) as a Pro feature.
+- [ ] Browser extension (Chrome/Firefox) reusing `packages/engine`.
+- [ ] Embeddable widget and an API for schools and publishers.
+- [ ] Accounts and sync (optional).
+
+---
+
+## 6. UI and UX blueprint
+
+- **Above the fold:** language switcher (searchable, native names), layout tabs (Phonetic / Standard / Roman), a big editor (Nastaliq, about 28 px default), and a candidate bar.
+- **Keyboard:** large rounded keys with the native glyph big and the Latin hint small. The pressed key animates. The active modifier glows. On mobile there are full-width keys and long-press popups.
+- **Toolbar:** icon buttons with tooltips: Copy, Share, Download ▾ (txt/docx/pdf/image), Undo, Redo, Clear, Font ▾, Theme, Fullscreen/Focus mode.
+- **Focus mode:** hide everything except the editor and keyboard.
+- **Ads:** one reserved slot below the keyboard and one in the sidebar on desktop. No ads inside the typing area. Fixed dimensions, so there's no CLS.
+- **Trust:** a "Your text never leaves your device" badge (true for everything except opt-in AI).
+
+---
+
+## 7. SEO and growth plan
+
+- One canonical page per language and per layout (`/urdu`, `/urdu/phonetic`, `/urdu/roman`), plus tool pages (`/inpage-to-unicode`, `/urdu-typing-test`).
+- Target Urdu and English keywords: "urdu keyboard", "roman urdu to urdu", "type in urdu", "اردو کی بورڈ", "inpage to unicode", "urdu typing test".
+- Bilingual pages: English UI with Urdu content blocks, `lang`/`dir` set correctly, hreflang alternates.
+- Core Web Vitals: zero-JS SEO shell, keyboard island hydrated on idle/visible.
+- Structured data: `FAQPage`, `SoftwareApplication`, `HowTo`.
+- Shareable outputs (image cards, typing-test results) carry a subtle URL watermark, which gives a viral loop.
+- Community: an open layout and dictionary contribution repo (credits, GitHub), which brings backlinks.
+
+---
+
+## 8. Monetisation
+
+- **Free:** everything in the MVP and P1, with light ads.
+- **Pro (≈ $2–3/mo or regional pricing in PKR):** no ads, AI assist, cloud sync, premium Nastaliq image templates, unlimited docs and history.
+- **B2B:** embeddable widget, OCR/conversion API, school licences for the typing tutor.
+
+---
+
+## 9. Success metrics
+
+| Metric | Target (90 days post-launch) |
+|---|---|
+| LCP (mobile, p75) | < 1.8 s |
+| Lighthouse a11y | ≥ 95 |
+| Roman→Urdu top-1 accuracy | ≥ 85 % |
+| Avg. session length on /urdu | > Branah's (benchmark via SimilarWeb) |
+| Copy/share/export actions per session | ≥ 1.2 |
+| Returning-user rate (7-day) | ≥ 25 % |
+| Organic ranking | Top 5 for "urdu keyboard", top 3 for "roman urdu to urdu" |
+
+---
+
+## 10. Risks and mitigations
+
+| Risk | Mitigation |
+|---|---|
+| Nastaliq fonts are heavy (MBs) | Subset per page, `unicode-range`, lazy-load the full font |
+| Transliteration quality | Rules plus dictionary first. Measure on a test set. Community corrections feedback loop. |
+| Dictionary licensing | Use only CC/permissive corpora. Document provenance in `packages/dictionaries/SOURCES.md`. |
+| contenteditable RTL bugs | Keep the textarea for the MVP. Adopt an editor only behind a feature flag. |
+| Mobile OS keyboard conflict | Offer "use on-screen keyboard only" with `inputmode="none"` instead of readOnly, which keeps caret and selection working |
+| Copying competitor IP | Independent implementation, layouts from standards, original copy (see §0) |
+
+---
+
+## 11. Immediate next steps
+
+1. Approve the stack (Astro + React island + TS) or switch to Next.js.
+2. Scaffold the monorepo (Phase 0).
+3. Collect the Urdu layout specs (CRULP phonetic, Windows Urdu) and the corpus sources.
+4. Build the engine and `/urdu` MVP (Phase 1). Then demo it.
