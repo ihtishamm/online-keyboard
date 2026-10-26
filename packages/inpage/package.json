@@ -1,0 +1,19 @@
+{
+  "name": "@okb/inpage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "InPage (legacy Urdu DTP) to Unicode and back: .inp files, clipboard text.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
+  }
+}
