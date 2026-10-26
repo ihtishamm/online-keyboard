@@ -52,6 +52,8 @@ export default function KeyboardApp({
   const [passthrough, setPassthrough] = useState(false);
   const [pressed, setPressed] = useState<ReadonlySet<string>>(new Set());
   const [physicalCaps, setPhysicalCaps] = useState(false);
+  /** False until hydrated: the server-rendered editor stays read-only so early keys don't type Latin. */
+  const [hydrated, setHydrated] = useState(false);
   const [coarse, setCoarse] = useState(false);
   const [phoneKeyboard, setPhoneKeyboard] = useState(false);
   const [font, setFont] = useState<FontId>(language.fonts[0]!);
@@ -90,6 +92,7 @@ export default function KeyboardApp({
   );
 
   useEffect(() => {
+    setHydrated(true);
     setCoarse(hasCoarsePointer());
     setPhoneKeyboard(loadPreference("phoneKeyboard") === "on");
     const savedFont = loadPreference(`font:${slug}`) as FontId | null;
@@ -260,14 +263,14 @@ export default function KeyboardApp({
                 }`}
               >
                 {l.name.en}
-                <span className="font-naskh ms-1.5 opacity-80" lang={l.lang}>
+                <span className="font-naskh ms-1.5" lang={l.lang}>
                   {l.name.native}
                 </span>
               </button>
             );
           })}
         </div>
-        <p className="text-sm text-muted">
+        <p className="text-sm text-muted max-sm:hidden">
           {passthrough ? "English typing" : `${language.name.en} typing`} · press{" "}
           <kbd className="rounded border border-border bg-surface px-1.5 py-0.5 text-xs">Esc</kbd>{" "}
           to switch
@@ -323,6 +326,7 @@ export default function KeyboardApp({
         autoCapitalize="off"
         autoComplete="off"
         autoCorrect="off"
+        readOnly={!hydrated}
         inputMode={coarse && !phoneKeyboard ? "none" : undefined}
         onKeyDown={phoneKeyboard ? undefined : onKeyDown}
         onKeyUp={onKeyUp}
@@ -332,7 +336,7 @@ export default function KeyboardApp({
         }}
         onBlur={() => setPressed(new Set())}
         style={{ fontSize: `${fontSize}px` }}
-        className={`${FONT_CLASS[font]} min-h-48 w-full resize-y rounded-xl border border-border bg-surface px-4 py-3 text-text shadow-sm placeholder:text-muted/60 focus:border-accent focus:outline-none sm:min-h-56`}
+        className={`${FONT_CLASS[font]} min-h-32 w-full resize-y rounded-xl border border-border bg-surface px-4 py-3 text-text shadow-sm placeholder:text-muted/60 focus:border-accent focus:outline-none sm:min-h-56`}
       />
 
       <div className="flex flex-wrap items-center justify-between gap-2 px-1 text-xs text-muted">

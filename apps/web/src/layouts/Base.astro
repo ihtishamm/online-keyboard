@@ -1,5 +1,6 @@
 ---
 import "@fontsource-variable/inter";
+import interLatin from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url";
 import "../styles/global.css";
 import ThemeSwitcher from "../components/ThemeSwitcher.astro";
 import { SITE } from "../config/site";
@@ -24,11 +25,42 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
     <meta name="theme-color" content="#0f6b5c" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
+    <script is:inline>
+      // Nastaliq: apply at once if this browser has loaded it before (it is in the HTTP cache);
+      // otherwise fetch it when the page is idle, then swap it in. See .font-nastaliq in CSS.
+      (() => {
+        const KEY = "likho:nastaliq";
+        const root = document.documentElement;
+        const ready = () => root.classList.add("nastaliq-ready");
+        try {
+          if (localStorage.getItem(KEY) === "1") ready();
+        } catch {
+          /* storage unavailable: load on idle below */
+        }
+        if (!document.fonts?.load) return ready();
+        const load = () =>
+          document.fonts.load('1em "Noto Nastaliq Urdu"', "\u0627\u0628").then(() => {
+            ready();
+            try {
+              localStorage.setItem(KEY, "1");
+            } catch {
+              /* storage unavailable: next visit loads on idle again */
+            }
+          });
+        const idle = () =>
+          window.requestIdleCallback
+            ? requestIdleCallback(load, { timeout: 1500 })
+            : setTimeout(load, 200);
+        if (document.readyState === "complete") idle();
+        else window.addEventListener("load", idle);
+      })();
+    </script>
     <script is:inline>
       // Apply the saved theme before first paint to avoid a flash.
       try {
@@ -51,7 +83,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     </a>
     <header class="border-b border-border bg-surface">
       <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
-        <a href="/" class="flex items-baseline gap-2 text-text no-underline">
+        <a href="/" class="flex h-10 items-center gap-2 text-text no-underline">
           <span class="text-xl font-semibold tracking-tight">{SITE.name}</span>
           <span class="font-nastaliq text-lg text-accent" lang="ur" dir="rtl">
             {SITE.nameNative}

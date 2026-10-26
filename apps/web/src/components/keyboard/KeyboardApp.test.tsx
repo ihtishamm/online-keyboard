@@ -112,9 +112,9 @@ describe("KeyboardApp", () => {
 
   it("labels keys with their character and Latin position", () => {
     render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
-    expect(keyButton("KeyB").getAttribute("aria-label")).toBe("ب, B key");
+    expect(screen.getByRole("button", { name: "ب, B key" })).toBe(keyButton("KeyB"));
     tap(screen.getAllByRole("button", { name: "Shift" })[0]!);
-    expect(keyButton("KeyY").getAttribute("aria-label")).toBe("zabar, Y key");
+    expect(screen.getByRole("button", { name: "zabar, Y key" })).toBe(keyButton("KeyY"));
   });
 });
 

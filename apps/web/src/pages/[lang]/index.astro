@@ -1,0 +1,15 @@
+---
+import { LANGUAGES } from "@okb/layouts";
+import LanguagePage from "../../components/LanguagePage.astro";
+
+export function getStaticPaths() {
+  return LANGUAGES.map((language) => ({
+    params: { lang: language.slug },
+    props: { slug: language.slug, layoutId: language.layouts[0]! },
+  }));
+}
+
+const { slug, layoutId } = Astro.props;
+---
+
+<LanguagePage slug={slug} layoutId={layoutId} />

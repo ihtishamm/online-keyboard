@@ -1,5 +1,6 @@
 ---
 import "@fontsource/noto-nastaliq-urdu/400.css";
+import { LANGUAGES } from "@okb/layouts";
 import Base from "../layouts/Base.astro";
 import { SITE } from "../config/site";
 ---
@@ -11,5 +12,30 @@ import { SITE } from "../config/site";
       اردو لکھیں، خوبصورتی سے
     </p>
     <p class="mx-auto mt-4 max-w-2xl text-muted">{SITE.description}</p>
+  </section>
+
+  <section aria-labelledby="keyboards-heading" class="mx-auto max-w-3xl">
+    <h2 id="keyboards-heading" class="mb-4 text-xl font-semibold">
+      Keyboards
+    </h2>
+    <ul class="grid gap-3 sm:grid-cols-2">
+      {LANGUAGES.map((l) => (
+        <li>
+          <a
+            href={`/${l.slug}`}
+            class="flex items-center justify-between rounded-xl border border-border bg-surface px-5 py-4 text-text no-underline hover:border-accent"
+          >
+            <span class="text-lg font-medium">{l.name.en} keyboard</span>
+            <span class="font-nastaliq text-2xl text-accent" lang={l.lang} dir={l.dir}>
+              {l.name.native}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="mt-6 text-sm text-muted">
+      More languages are coming: Arabic, Farsi, Pashto, Sindhi, Shahmukhi Punjabi, Saraiki, Balochi,
+      Kashmiri, Hindi and Bangla.
+    </p>
   </section>
 </Base>

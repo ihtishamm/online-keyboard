@@ -1,0 +1,18 @@
+---
+import { LANGUAGES, layoutSlug } from "@okb/layouts";
+import LanguagePage from "../../components/LanguagePage.astro";
+
+// The default layout lives at /<lang>; every other layout gets /<lang>/<layout>.
+export function getStaticPaths() {
+  return LANGUAGES.flatMap((language) =>
+    language.layouts.slice(1).map((id) => ({
+      params: { lang: language.slug, layout: layoutSlug(id) },
+      props: { slug: language.slug, layoutId: id },
+    })),
+  );
+}
+
+const { slug, layoutId } = Astro.props;
+---
+
+<LanguagePage slug={slug} layoutId={layoutId} />

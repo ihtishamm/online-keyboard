@@ -1,0 +1,46 @@
+---
+import { ROWS, US_QWERTY, keyDefFor, type KeyCode } from "@okb/engine";
+import type { Layout } from "@okb/engine/layout";
+import { displayLabel } from "./keyboard/labels";
+
+interface Props {
+  layout: Layout;
+}
+
+const { layout } = Astro.props;
+const rows = ROWS.map((row) => row.filter((c) => c !== "IntlBackslash")) as KeyCode[][];
+---
+
+<figure class="overflow-x-auto" tabindex="0" aria-label={`${layout.name.en} layout chart`}>
+  <figcaption class="mb-2 text-sm text-muted">
+    Each key shows its normal character (large) and its Shift character (small, top right). The
+    letter at top left is the English key.
+  </figcaption>
+  <div dir="ltr" class="inline-flex min-w-[40rem] flex-col gap-1">
+    {rows.map((row, i) => (
+      <div class="flex gap-1" style={{ paddingInlineStart: `${i * 0.75}rem` }}>
+        {row.map((code) => {
+          const def = keyDefFor(layout, code);
+          const normal = displayLabel(def?.n ?? "");
+          const shift = displayLabel(def?.s ?? "");
+          return (
+            <div class="relative flex h-12 w-12 items-center justify-center rounded-md border border-border bg-surface">
+              <span class="absolute top-0.5 left-1 text-[0.6rem] text-key-hint uppercase">
+                {US_QWERTY[code][0]}
+              </span>
+              <span
+                class="font-naskh absolute top-0.5 right-1 text-xs text-muted"
+                lang={layout.lang}
+              >
+                {shift}
+              </span>
+              <span class="font-naskh text-xl" lang={layout.lang}>
+                {normal}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+    ))}
+  </div>
+</figure>

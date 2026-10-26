@@ -1,0 +1,129 @@
+---
+import "@fontsource/noto-naskh-arabic/400.css";
+import "@fontsource/noto-nastaliq-urdu/400.css";
+import { getLanguage, getLayout, layoutSlug } from "@okb/layouts";
+import KeyboardApp from "./keyboard/KeyboardApp";
+import LayoutChart from "./LayoutChart.astro";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+import { copyFor } from "../content/languages";
+
+interface Props {
+  slug: string;
+  layoutId: string;
+}
+
+const { slug, layoutId } = Astro.props;
+const language = getLanguage(slug);
+const layout = getLayout(layoutId);
+const copy = copyFor(slug);
+const isDefault = layoutId === language.layouts[0];
+const layoutCopy = copy.layouts[layoutId];
+
+const title = isDefault
+  ? copy.title
+  : `${language.name.en} ${layout.name.en} Keyboard Online (${layout.name.native}) | ${SITE.name}`;
+const description = isDefault
+  ? copy.description
+  : `Type ${language.name.en} online with the ${layout.name.en} layout. ${layoutCopy?.summary ?? ""}`;
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} ${language.name.en} Keyboard`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: language.lang,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: copy.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">
+      {isDefault ? copy.heading : `${language.name.en} ${layout.name.en} Keyboard`}
+    </h1>
+    <span class="font-nastaliq text-2xl text-accent" lang={language.lang} dir={language.dir}>
+      {copy.headingNative}
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">{copy.intro}</p>
+
+  {/* Hydrate after first paint (capped at 500 ms) so React never delays the static render. */}
+  <KeyboardApp
+    client:idle={{ timeout: 500 }}
+    slug={slug}
+    layoutId={layoutId}
+    explicitLayout={!isDefault}
+  />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_1fr]">
+    <section aria-labelledby="layout-heading" class="min-w-0">
+      <h2 id="layout-heading" class="mb-2 text-xl font-semibold">
+        {layout.name.en} layout{" "}
+        <span class="font-naskh" lang={language.lang}>
+          ({layout.name.native})
+        </span>
+      </h2>
+      {layoutCopy && <p class="mb-1 max-w-2xl">{layoutCopy.summary}</p>}
+      {layoutCopy && (
+        <p class="mb-4 max-w-2xl text-sm text-muted">Best for: {layoutCopy.bestFor}</p>
+      )}
+      <LayoutChart layout={layout} />
+      <p class="mt-3 text-sm text-muted">
+        Other layouts:{" "}
+        {language.layouts
+          .filter((id) => id !== layoutId)
+          .map((id, i) => (
+            <>
+              {i > 0 && ", "}
+              <a
+                class="text-accent underline"
+                href={id === language.layouts[0] ? `/${slug}` : `/${slug}/${layoutSlug(id)}`}
+              >
+                {getLayout(id).name.en}
+              </a>
+            </>
+          ))}
+      </p>
+    </section>
+
+    <section aria-labelledby="tips-heading" class="min-w-0">
+      <h2 id="tips-heading" class="mb-3 text-xl font-semibold">
+        Tips
+      </h2>
+      <ul class="list-disc space-y-2 ps-5">
+        {copy.tips.map((t) => (
+          <li>{t}</li>
+        ))}
+      </ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {copy.faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

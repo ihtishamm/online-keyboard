@@ -118,7 +118,11 @@ export default function Toolbar(props: ToolbarProps) {
   const drafts = props.drafts.state;
 
   return (
-    <div role="toolbar" aria-label="Text tools" className="flex flex-wrap items-center gap-1.5">
+    <div
+      role="toolbar"
+      aria-label="Text tools"
+      className="relative flex items-center gap-1.5 max-sm:-mx-4 max-sm:overflow-x-auto max-sm:px-4 max-sm:pb-1 sm:flex-wrap [&>*]:shrink-0"
+    >
       <ToolButton label="Copy" icon={<Copy {...icon} />} onClick={onCopy} />
       {nativeShareAvailable ? (
         <ToolButton label="Share" icon={<Share2 {...icon} />} onClick={onShare} />

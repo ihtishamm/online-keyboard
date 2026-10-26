@@ -102,41 +102,65 @@
   --color-focus: var(--color-focus);
 
   --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
-  --font-nastaliq: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
-  --font-naskh: "Noto Naskh Arabic", serif;
 }
 
-/* Typography scale */
+/*
+ * Typography. Script font stacks are plain variables, not @theme tokens: Tailwind would turn
+ * --font-* tokens into .font-* utilities that override the deferred-Nastaliq rules below.
+ */
 :root {
+  --stack-nastaliq: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+  --stack-naskh: "Noto Naskh Arabic", serif;
   --text-editor: 1.75rem;
   --leading-nastaliq: 2.2;
 }
 
-html {
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-sans);
-  -webkit-text-size-adjust: 100%;
+/* Base styles live in a layer so Tailwind utilities (e.g. focus:outline-none) can override them. */
+@layer base {
+  html {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--color-bg);
+    min-height: 100dvh;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+
+  /*
+   * Nastaliq is large (~160 KB) and costly to shape, so first paint uses Naskh and the
+   * html.nastaliq-ready class (set by Base.astro once the font is loaded) swaps it in.
+   * The line height is identical in both states so the swap does not move layout.
+   */
+  .font-nastaliq {
+    font-family: var(--stack-naskh);
+    line-height: var(--leading-nastaliq);
+  }
+
+  :root.nastaliq-ready .font-nastaliq {
+    font-family: var(--stack-nastaliq);
+  }
+
+  .font-naskh {
+    font-family: var(--stack-naskh);
+    line-height: 1.8;
+  }
 }
 
-body {
-  background: var(--color-bg);
-  min-height: 100dvh;
-}
-
-:focus-visible {
-  outline: 3px solid var(--color-focus);
-  outline-offset: 2px;
-}
-
-.font-nastaliq {
-  font-family: var(--font-nastaliq);
-  line-height: var(--leading-nastaliq);
-}
-
-.font-naskh {
-  font-family: var(--font-naskh);
-  line-height: 1.8;
+/*
+ * Below-the-fold content (layout charts, FAQs) is skipped for layout and paint until it is
+ * near the viewport. Arabic-script shaping is costly on low-end phones.
+ */
+.below-fold {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 40rem;
 }
 
 @media (prefers-reduced-motion: reduce) {

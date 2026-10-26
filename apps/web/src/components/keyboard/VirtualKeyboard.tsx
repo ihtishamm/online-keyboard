@@ -43,6 +43,17 @@ const KEY_BASE =
 const CHAR_KEY = `${KEY_BASE} bg-key active:bg-key-pressed data-[pressed=true]:bg-key-pressed`;
 const MOD_KEY = `${KEY_BASE} bg-key-mod text-sm text-muted active:bg-key-pressed data-[on=true]:bg-accent data-[on=true]:text-accent-fg`;
 
+/** Keep the alternates popup on screen for keys near the edges. */
+function clampToViewport(el: HTMLDivElement | null) {
+  if (!el) return;
+  el.style.marginLeft = "0px";
+  const pad = 4;
+  const rect = el.getBoundingClientRect();
+  const width = document.documentElement.clientWidth;
+  if (rect.left < pad) el.style.marginLeft = `${pad - rect.left}px`;
+  else if (rect.right > width - pad) el.style.marginLeft = `${width - pad - rect.right}px`;
+}
+
 export default function VirtualKeyboard(props: VirtualKeyboardProps) {
   const { labelFor, longpress, pressed, passthrough, onChar, onAlternate, onAction } = props;
   const [popup, setPopup] = useState<{ code: KeyCode; options: readonly string[] } | null>(null);
@@ -175,7 +186,6 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
           data-key={code}
           data-pressed={pressed.has(code)}
           tabIndex={first ? 0 : -1}
-          aria-label={accessibleName(out, latin.toUpperCase())}
           className={CHAR_KEY}
           onPointerDown={charDown(code)}
           onPointerUp={charUp(code)}
@@ -195,6 +205,7 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
           >
             {shown || " "}
           </span>
+          <span className="sr-only">{accessibleName(out, latin.toUpperCase())}</span>
           {hasAlt && (
             <span
               aria-hidden="true"
@@ -207,6 +218,7 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
             data-popup
             role="menu"
             aria-label="Alternate characters"
+            ref={clampToViewport}
             className="absolute bottom-full left-1/2 z-20 mb-1 flex -translate-x-1/2 gap-1 rounded-lg border border-border bg-surface p-1 shadow-lg"
           >
             {popup.options.map((alt) => (
@@ -215,14 +227,14 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
                 type="button"
                 role="menuitem"
                 data-alt={alt}
-                aria-label={accessibleName(alt, "")}
                 className="font-naskh h-11 min-w-11 rounded-md bg-key px-2 text-2xl hover:bg-accent-soft"
                 onClick={() => {
                   onAlternate(alt);
                   setPopup(null);
                 }}
               >
-                {displayLabel(alt)}
+                <span aria-hidden="true">{displayLabel(alt)}</span>
+                <span className="sr-only">{accessibleName(alt, "")}</span>
               </button>
             ))}
           </div>
@@ -243,7 +255,6 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
       tabIndex={-1}
       data-on={opts.on ?? false}
       aria-pressed={opts.on === undefined ? undefined : opts.on}
-      aria-label={opts.aria ?? label}
       className={`${MOD_KEY} ${opts.className ?? ""}`}
       style={{ flexGrow: opts.grow ?? 1 }}
       onPointerDown={actionDown(action)}
@@ -255,6 +266,7 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
       <span aria-hidden="true" className="pointer-events-none">
         {label}
       </span>
+      <span className="sr-only">{opts.aria ?? label}</span>
       {opts.locked && (
         <span
           aria-hidden="true"
@@ -317,8 +329,8 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
           grow: 1.5,
           on: passthrough,
           aria: passthrough
-            ? `Switch to ${props.nativeName} typing (Esc)`
-            : "Switch to English typing (Esc)",
+            ? `ENG: switch to ${props.nativeName} typing (Esc)`
+            : `${props.nativeName}: switch to English typing (Esc)`,
         })}
         {modKey("altgr", "AltGr", {
           grow: 1.5,

@@ -7,6 +7,8 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: process.env.PUBLIC_SITE_URL ?? "https://likho.example",
   trailingSlash: "never",
+  // The CSS is small (~8 KB); inlining it removes render-blocking requests on slow networks.
+  build: { inlineStylesheets: "always" },
   integrations: [react(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
