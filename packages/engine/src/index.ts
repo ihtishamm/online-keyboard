@@ -3,6 +3,7 @@
 export * from "./layout/keycodes";
 export type { DeadKey, KeyDef, Layout, LayoutInput } from "./layout/schema";
 export * from "./core/machine";
+export * from "./core/reverse";
 export * from "./text/edit";
 export * from "./text/words";
 export * from "./predict/lexicon";

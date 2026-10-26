@@ -1,0 +1,72 @@
+---
+import TypingPage from "../components/typing/TypingPage.astro";
+import TypingTest from "../components/typing/TypingTest";
+import { URDU_PASSAGES, URDU_WORDS } from "../content/typing/urdu";
+import { SITE } from "../config/site";
+
+const steps = [
+  "Pick a layout (Phonetic or Standard), a length (30 seconds, 1 or 2 minutes) and the text: common words or sentences.",
+  "Start typing the highlighted word. The clock starts with your first key. Press Space after each word.",
+  "Correct words turn green and wrong ones red. When the time is up you see your speed in words per minute and your accuracy.",
+  "Download or share your result as an image, then try again to beat your best.",
+];
+
+const faqs = [
+  {
+    q: "How is Urdu typing speed (WPM) worked out?",
+    a: "Like most typing tests: every 5 characters you type correctly, spaces included, count as one word. Your speed is those words divided by the minutes taken. Words with a mistake in them do not count. Raw speed counts every character you typed, right or wrong.",
+  },
+  {
+    q: "What is a good Urdu typing speed?",
+    a: "Around 20 to 30 words per minute is a comfortable everyday speed, and 40 or more is fast. Accuracy matters more than speed when you start: aim for 95% and the speed follows with practice.",
+  },
+  {
+    q: "Do I need an Urdu keyboard?",
+    a: "No. Your normal keyboard types Urdu here: on the Phonetic layout, keys sound like the Latin letter on them (S types س, K types ک). If your computer or phone already has an Urdu keyboard, tick “My device already types Urdu”.",
+  },
+  {
+    q: "Can I take the test on my phone?",
+    a: "Yes. On a phone the on-screen Urdu keyboard appears below the text, or tick “My device already types Urdu” to use your phone's own keyboard.",
+  },
+  {
+    q: "Where are my results saved?",
+    a: "Only on your device. Your best speed for each layout and test length is kept in your browser; nothing is uploaded.",
+  },
+];
+---
+
+<TypingPage
+  title={`Urdu Typing Test: Check Your Urdu Typing Speed (WPM) Online | ${SITE.name}`}
+  description="Free Urdu typing speed test. Type common words or sentences on the Phonetic or Standard Urdu keyboard, see your WPM and accuracy, and share your result."
+  heading="Urdu Typing Test"
+  headingNative="اردو ٹائپنگ ٹیسٹ"
+  intro="How fast can you type Urdu? Take a 30-second, 1-minute or 2-minute test with everyday words or sentences, using your normal keyboard or the one on screen."
+  appName="Urdu Typing Test"
+  howToName="How to take the Urdu typing test"
+  steps={steps}
+  about={{
+    heading: "Practise to get faster",
+    paragraphs: [
+      "Typing speed comes from knowing where every letter is without looking. If you are still searching for keys, the typing tutor teaches the keyboard one row at a time.",
+      "Short daily practice beats long sessions: a few 1-minute tests a day will raise your speed within weeks.",
+    ],
+  }}
+  faqs={faqs}
+  related={[
+    { href: "/urdu-typing-tutor", label: "Urdu typing tutor: learn the keyboard" },
+    { href: "/urdu", label: "Urdu keyboard: type and save your text" },
+  ]}
+>
+  <TypingTest
+    client:idle={{ timeout: 500 }}
+    slug="urdu"
+    lang="ur"
+    languageName="Urdu"
+    nativeName="اردو"
+    nativeTitle="اردو ٹائپنگ ٹیسٹ"
+    title="Urdu typing test"
+    layouts={["ur-phonetic", "ur-standard"]}
+    words={URDU_WORDS}
+    passages={URDU_PASSAGES}
+  />
+</TypingPage>

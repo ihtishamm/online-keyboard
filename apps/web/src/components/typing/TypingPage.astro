@@ -1,0 +1,110 @@
+---
+/**
+ * Shared shell for the typing test and tutor pages: heading, intro, the island slot, how-to
+ * steps, an explainer and FAQs, with WebApplication, HowTo and FAQPage structured data.
+ */
+import "@fontsource/noto-naskh-arabic/400.css";
+import "@fontsource/noto-nastaliq-urdu/400.css";
+import Base from "../../layouts/Base.astro";
+import { SITE } from "../../config/site";
+
+interface Props {
+  title: string;
+  description: string;
+  heading: string;
+  headingNative: string;
+  intro: string;
+  appName: string;
+  howToName: string;
+  steps: string[];
+  about: { heading: string; paragraphs: string[] };
+  faqs: { q: string; a: string }[];
+  related: { href: string; label: string }[];
+}
+
+const p = Astro.props;
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} ${p.appName}`,
+    applicationCategory: "EducationalApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: "ur",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: p.howToName,
+    step: p.steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: p.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={p.title} description={p.description}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">{p.heading}</h1>
+    <span class="font-nastaliq text-2xl text-accent" lang="ur" dir="rtl">
+      {p.headingNative}
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">{p.intro}</p>
+
+  <slot />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        {p.howToName}
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {p.steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="about-heading" class="min-w-0">
+      <h2 id="about-heading" class="mb-3 text-xl font-semibold">
+        {p.about.heading}
+      </h2>
+      {p.about.paragraphs.map((text) => (
+        <p class="mb-3 text-muted">{text}</p>
+      ))}
+      <ul class="mt-4 space-y-1">
+        {p.related.map((r) => (
+          <li>
+            <a class="text-accent underline" href={r.href}>
+              {r.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {p.faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

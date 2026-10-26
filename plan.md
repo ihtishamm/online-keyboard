@@ -289,7 +289,12 @@ online-keyboard/
 - Still open from earlier phases (not checklist items): subset display fonts, try Preact, measure Lighthouse on real hosting. They need a real deploy (and new packages for subsetting and Preact), so they wait for the first deployment.
 
 ### Phase 4: Engagement and growth (weeks 11–13)
-- [ ] Urdu typing tutor and speed test (WPM, accuracy, shareable result card).
+- [x] Urdu typing tutor and speed test (WPM, accuracy, shareable result card). `/urdu-typing-test` and `/urdu-typing-tutor`, linked from the home page and `/urdu`.
+  - Test: Phonetic or Standard, 30 s / 1 min / 2 min, common words or sentences; the clock starts with the first key. Net WPM (correct characters incl. spaces / 5 / minutes), raw WPM, keystroke accuracy, right/wrong words, personal best per layout and length (on the device), and a result image to download or share. "My device already types Urdu" leaves key presses to the OS keyboard.
+  - Tutor: lessons generated from the layout (home, top, bottom rows, then each with Shift, then common words and sentences). Drill words come from the Urdu frequency list at build time, using only letters learned so far; early lessons are topped up with letter groups. The next key (and Shift) lights up on the on-screen keyboard, wrong keys ask for Backspace; 90% accuracy passes a lesson, progress is saved per layout.
+  - Words are checked whole (colouring single letters would break Nastaliq joining); comparisons use NFD, so آ or ؤ typed as one key or as letter + mark both count. Practice text is original (everyday words, 12 short passages) and tested to be typeable on both layouts.
+  - Engine: `keystrokeMap(layout)`, character -> key and modifiers.
+  - Tests: drill scoring, NFD handling, next-key logic, lesson generation for both layouts (unit); e2e typing through the phonetic layout, timer and result (fake clock), result PNG, own-keyboard mode, phone keys, tutor highlight and a passed lesson, axe on both pages.
 - [ ] Spell check (Urdu).
 - [ ] Voice typing.
 - [ ] Printable layout cheat sheets (PDF) as SEO landing assets.

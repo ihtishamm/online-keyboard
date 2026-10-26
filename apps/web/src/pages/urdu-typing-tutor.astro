@@ -1,0 +1,75 @@
+---
+import wordList from "@okb/dictionaries/ur/words.txt?raw";
+import { getLayout } from "@okb/layouts";
+import TypingPage from "../components/typing/TypingPage.astro";
+import TypingTutor from "../components/typing/TypingTutor";
+import { buildLessons } from "../components/typing/lessons";
+import { URDU_PASSAGES, URDU_WORDS } from "../content/typing/urdu";
+import { SITE } from "../config/site";
+
+// Lessons are built here, at build time: only the chosen words reach the page.
+const frequency = wordList.split("\n").slice(0, 30_000);
+const lessons = Object.fromEntries(
+  ["ur-phonetic", "ur-standard"].map((id) => [
+    id,
+    buildLessons(getLayout(id), frequency, { words: URDU_WORDS, passages: URDU_PASSAGES }),
+  ]),
+);
+
+const steps = [
+  "Choose your layout: Phonetic (keys sound like their Latin letters) or Standard (the layout of Urdu keyboards and InPage users).",
+  "Start with lesson 1, the home row. Rest your fingers on the middle row of letters.",
+  "Type the words shown. The next key lights up on the on-screen keyboard, and the line under the box names it.",
+  "Pass a lesson with 90% accuracy or more, then move on. Your progress is saved on this device.",
+];
+
+const faqs = [
+  {
+    q: "Which Urdu keyboard layout should I learn?",
+    a: "If you already type English, Phonetic is quickest to learn because most keys match the sound of the Latin letter. Standard follows the official Urdu keyboard used by Windows and many offices; learn it if that is what you will use at work.",
+  },
+  {
+    q: "How long does it take to learn Urdu typing?",
+    a: "With 15 minutes a day, most people know the letters within a week or two, and reach a comfortable 20 to 25 words per minute in about a month.",
+  },
+  {
+    q: "Do I need to look at the keyboard?",
+    a: "Try not to. Use the highlighted key on screen instead of your hands: that is how touch typing becomes a habit.",
+  },
+  {
+    q: "Is the tutor free?",
+    a: "Yes, completely free, with no sign-up. It works in your browser on computers, tablets and phones, and keeps working offline after your first visit.",
+  },
+];
+---
+
+<TypingPage
+  title={`Urdu Typing Tutor: Learn Urdu Typing Online, Free Lessons | ${SITE.name}`}
+  description="Learn Urdu typing step by step with free lessons for the Phonetic and Standard keyboards. The next key lights up as you type, and your progress is saved."
+  heading="Urdu Typing Tutor"
+  headingNative="اردو ٹائپنگ سیکھیں"
+  intro="Learn to type Urdu without looking at the keys. Each lesson adds a row of letters and practises them in real Urdu words, with the next key lit up on screen."
+  appName="Urdu Typing Tutor"
+  howToName="How to learn Urdu typing"
+  steps={steps}
+  about={{
+    heading: "How the lessons work",
+    paragraphs: [
+      "Lessons follow the keyboard: the home row first, then the top and bottom rows, then the letters you reach with Shift. Practice words use only letters you have learned so far.",
+      "The last two lessons practise common words and full sentences. When you are ready, measure your speed with the typing test.",
+    ],
+  }}
+  faqs={faqs}
+  related={[
+    { href: "/urdu-typing-test", label: "Urdu typing test: check your speed" },
+    { href: "/urdu", label: "Urdu keyboard: type and save your text" },
+  ]}
+>
+  <TypingTutor
+    client:idle={{ timeout: 500 }}
+    lang="ur"
+    languageName="Urdu"
+    nativeName="اردو"
+    lessons={lessons}
+  />
+</TypingPage>

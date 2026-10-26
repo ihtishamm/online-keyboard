@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   ModifierLatch,
+  keystrokeMap,
   NO_MODIFIERS,
   TypingMachine,
   layerFor,
@@ -113,5 +114,17 @@ describe("ModifierLatch", () => {
     expect(l.current()).toEqual({ shift: false, altgr: true, caps: true });
     l.reset();
     expect(l.current()).toEqual(NO_MODIFIERS);
+  });
+});
+
+describe("keystrokeMap", () => {
+  it("finds the key and modifiers for each character, plain layer first", () => {
+    const map = keystrokeMap(layout);
+    expect(map.get("a")).toEqual({ code: "KeyA", shift: false, altgr: false });
+    expect(map.get("A")).toEqual({ code: "KeyA", shift: true, altgr: false });
+    expect(map.get("á")).toEqual({ code: "KeyA", shift: false, altgr: true });
+    expect(map.get("Á")).toEqual({ code: "KeyA", shift: true, altgr: true });
+    expect(map.get("پ")).toEqual({ code: "KeyB", shift: true, altgr: false });
+    expect(map.get("ê")).toBeUndefined();
   });
 });

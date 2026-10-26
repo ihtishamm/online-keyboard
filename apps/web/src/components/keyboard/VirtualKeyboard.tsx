@@ -23,6 +23,10 @@ export interface VirtualKeyboardProps {
   onChar: (code: KeyCode) => void;
   onAlternate: (text: string) => void;
   onAction: (action: KeyAction) => void;
+  /** Keys to point out (key codes or actions such as "shift"), e.g. the next key in the tutor. */
+  highlight?: ReadonlySet<string>;
+  /** The key that switches to English typing; off where English typing makes no sense. */
+  showToggle?: boolean;
 }
 
 const LONG_PRESS_MS = 450;
@@ -47,8 +51,10 @@ const SECONDARY: ReadonlySet<KeyCode> = new Set<KeyCode>([
 
 const KEY_BASE =
   "relative flex h-12 min-w-0 flex-1 basis-0 select-none items-center justify-center rounded-lg border-b-2 border-key-edge text-text shadow-[var(--shadow-key)] transition-colors duration-75 touch-manipulation sm:h-14";
-const CHAR_KEY = `${KEY_BASE} bg-key active:bg-key-pressed data-[pressed=true]:bg-key-pressed`;
-const MOD_KEY = `${KEY_BASE} bg-key-mod text-sm text-muted active:bg-key-pressed data-[on=true]:bg-accent data-[on=true]:text-accent-fg`;
+const HIGHLIGHT =
+  "data-[highlight=true]:ring-2 data-[highlight=true]:ring-accent data-[highlight=true]:ring-offset-1 data-[highlight=true]:ring-offset-surface-2";
+const CHAR_KEY = `${KEY_BASE} bg-key active:bg-key-pressed data-[pressed=true]:bg-key-pressed data-[highlight=true]:bg-accent-soft ${HIGHLIGHT}`;
+const MOD_KEY = `${KEY_BASE} bg-key-mod text-sm text-muted active:bg-key-pressed data-[on=true]:bg-accent data-[on=true]:text-accent-fg ${HIGHLIGHT}`;
 
 /** Keep the alternates popup on screen for keys near the edges. */
 function clampToViewport(el: HTMLDivElement | null) {
@@ -194,6 +200,7 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
           type="button"
           data-key={code}
           data-pressed={pressed.has(code)}
+          data-highlight={props.highlight?.has(code) ?? false}
           tabIndex={first ? 0 : -1}
           className={CHAR_KEY}
           onPointerDown={charDown(code)}
@@ -263,6 +270,7 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
       key={`${action}-${label}-${opts.className ?? ""}`}
       type="button"
       data-key={action}
+      data-highlight={props.highlight?.has(action) ?? false}
       tabIndex={-1}
       data-on={opts.on ?? false}
       aria-pressed={opts.on === undefined ? undefined : opts.on}
@@ -336,13 +344,14 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
         {modKey("backspace", "⌫", { grow: 1.5, className: "sm:hidden", aria: "Backspace" })}
       </div>
       <div data-row className="flex gap-1 sm:gap-1.5">
-        {modKey("toggle", passthrough ? "ENG" : props.nativeName, {
-          grow: 1.5,
-          on: passthrough,
-          aria: passthrough
-            ? `ENG: switch to ${props.nativeName} typing (Esc)`
-            : `${props.nativeName}: switch to English typing (Esc)`,
-        })}
+        {(props.showToggle ?? true) &&
+          modKey("toggle", passthrough ? "ENG" : props.nativeName, {
+            grow: 1.5,
+            on: passthrough,
+            aria: passthrough
+              ? `ENG: switch to ${props.nativeName} typing (Esc)`
+              : `${props.nativeName}: switch to English typing (Esc)`,
+          })}
         {props.hasAltGr &&
           modKey("altgr", "AltGr", {
             grow: 1.5,

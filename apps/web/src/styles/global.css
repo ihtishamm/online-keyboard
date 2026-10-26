@@ -20,6 +20,9 @@
   --color-key-mod: #e9e6df;
   --color-key-hint: #8a867d;
   --color-focus: #c2410c;
+  --color-good: #15803d;
+  --color-bad: #b91c1c;
+  --color-bad-soft: #fde4e4;
   --shadow-key: 0 1px 0 var(--color-key-edge);
   color-scheme: light;
 }
@@ -41,6 +44,9 @@
     --color-key-mod: #22221f;
     --color-key-hint: #8f8c83;
     --color-focus: #fb923c;
+    --color-good: #4ade80;
+    --color-bad: #f87171;
+    --color-bad-soft: #3d1f1f;
     color-scheme: dark;
   }
 }
@@ -61,6 +67,9 @@
   --color-key-mod: #22221f;
   --color-key-hint: #8f8c83;
   --color-focus: #fb923c;
+  --color-good: #4ade80;
+  --color-bad: #f87171;
+  --color-bad-soft: #3d1f1f;
   color-scheme: dark;
 }
 
@@ -80,6 +89,9 @@
   --color-key-mod: #000000;
   --color-key-hint: #ffffff;
   --color-focus: #00ffff;
+  --color-good: #7dff7d;
+  --color-bad: #ff7b7b;
+  --color-bad-soft: #3a0000;
   --shadow-key: 0 0 0 1px #ffffff;
   color-scheme: dark;
 }
@@ -100,6 +112,9 @@
   --color-key-mod: var(--color-key-mod);
   --color-key-hint: var(--color-key-hint);
   --color-focus: var(--color-focus);
+  --color-good: var(--color-good);
+  --color-bad: var(--color-bad);
+  --color-bad-soft: var(--color-bad-soft);
 
   --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
 }
