@@ -124,7 +124,7 @@ test("whole keyboard fits on a phone screen", async ({ page, isMobile }) => {
   );
 });
 
-for (const path of ["/urdu", "/urdu/standard"]) {
+for (const path of ["/urdu", "/urdu/standard", "/urdu/roman"]) {
   test(`${path} has no serious accessibility violations`, async ({ page }) => {
     await page.goto(path);
     const results = await new AxeBuilder({ page }).analyze();
@@ -134,6 +134,53 @@ for (const path of ["/urdu", "/urdu/standard"]) {
     expect(serious, JSON.stringify(serious, null, 2)).toEqual([]);
   });
 }
+
+/** Open the Roman page and wait until the word list has downloaded. */
+async function openRoman(page: Page) {
+  const words = page.waitForResponse((r) => /\/words\.[^/]+\.txt$/.test(r.url()));
+  await open(page, "/urdu/roman");
+  expect((await words).ok()).toBe(true);
+}
+
+test.describe("Roman Urdu", () => {
+  test("converts a typed sentence word by word", async ({ page, isMobile }) => {
+    test.skip(isMobile, "physical keyboard test");
+    await openRoman(page);
+    await editor(page).click();
+    await page.keyboard.type("aap kaise hain");
+    await page.keyboard.press("Shift+Slash");
+    await expect(editor(page)).toHaveValue("آپ کیسے ہیں؟");
+  });
+
+  test("undo turns a converted word back into Roman", async ({ page, isMobile }) => {
+    test.skip(isMobile, "physical keyboard test");
+    await openRoman(page);
+    await editor(page).click();
+    await page.keyboard.type("mera ");
+    await expect(editor(page)).toHaveValue("میرا ");
+    await page.keyboard.press("ControlOrMeta+z");
+    await expect(editor(page)).toHaveValue("mera");
+  });
+
+  test("offers spellings to tap, with on-screen keys", async ({ page }) => {
+    await openRoman(page);
+    for (const code of ["KeyN", "KeyA", "KeyA", "KeyM"]) await key(page, code).click();
+    const spellings = page.getByRole("group", { name: "Urdu spellings" });
+    await expect(spellings.getByRole("button").first()).toHaveText(/نام/);
+    await spellings.getByRole("button").first().click();
+    await expect(editor(page)).toHaveValue("نام ");
+  });
+});
+
+test("suggests completions on the phonetic layout", async ({ page }) => {
+  await open(page, "/urdu");
+  for (const code of ["KeyP", "KeyA", "KeyK", "KeyS"]) await key(page, code).click();
+  const suggestion = page
+    .getByRole("group", { name: "Word suggestions" })
+    .getByRole("button", { name: "پاکستان", exact: true });
+  await suggestion.click();
+  await expect(editor(page)).toHaveValue("پاکستان ");
+});
 
 test("ships SEO metadata and FAQ structured data", async ({ page }) => {
   await open(page, "/urdu");

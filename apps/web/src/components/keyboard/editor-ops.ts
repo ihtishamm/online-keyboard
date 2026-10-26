@@ -24,6 +24,19 @@ export function insertText(el: HTMLTextAreaElement, text: string): void {
   replaceRange(el, text, el.selectionStart, el.selectionEnd);
 }
 
+/** Replace `start..end` with `text` as one undoable step, leaving the caret after it. */
+export function replaceText(
+  el: HTMLTextAreaElement,
+  start: number,
+  end: number,
+  text: string,
+): void {
+  if (document.activeElement !== el) el.focus({ preventScroll: true });
+  el.setSelectionRange(start, end);
+  if (exec(el, "insertText", text)) return;
+  replaceRange(el, text, start, end);
+}
+
 export function deleteBackward(el: HTMLTextAreaElement): void {
   let start = el.selectionStart;
   const end = el.selectionEnd;

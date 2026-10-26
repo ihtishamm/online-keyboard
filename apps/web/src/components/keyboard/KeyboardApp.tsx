@@ -6,7 +6,7 @@ import {
   type KeyCode,
   type Modifiers,
 } from "@okb/engine";
-import { getLanguage, getLayout, layoutSlug, type FontId } from "@okb/layouts";
+import { getLanguage, getLayout, getScheme, layoutSlug, type FontId } from "@okb/layouts";
 import {
   useCallback,
   useEffect,
@@ -16,14 +16,19 @@ import {
   type KeyboardEvent as ReactKeyboardEvent,
 } from "react";
 import { countText } from "./actions";
+import CandidateBar from "./CandidateBar";
 import { deleteBackward, insertText } from "./editor-ops";
 import { hasCoarsePointer, isAltGr } from "./platform";
 import { loadPreference, savePreference } from "./preferences";
 import Toolbar, { FONT_SIZES } from "./Toolbar";
 import { useDrafts } from "./useDrafts";
+import { useSuggestions } from "./useSuggestions";
 import VirtualKeyboard, { type KeyAction } from "./VirtualKeyboard";
 
 const FONT_CLASS: Record<FontId, string> = { nastaliq: "font-nastaliq", naskh: "font-naskh" };
+
+/** In Roman mode, characters that end a word (anything but letters, apostrophes and digits). */
+const isBoundary = (text: string) => !/^[A-Za-z'0-9]*$/.test(text);
 
 export interface KeyboardAppProps {
   /** Language slug, e.g. "urdu". */
@@ -63,6 +68,15 @@ export default function KeyboardApp({
   const announceTimer = useRef<number | undefined>(undefined);
   const editorRef = useRef<HTMLTextAreaElement>(null);
   const drafts = useDrafts(slug, editorRef);
+  const [predict, setPredict] = useState(true);
+  const scheme = layout.translit ? getScheme(layout.translit) : null;
+  const roman = scheme !== null && !passthrough;
+  const suggest = useSuggestions({
+    slug,
+    editorRef,
+    scheme: roman ? scheme : null,
+    predict: predict && !passthrough,
+  });
 
   /** Tell screen readers (and show briefly) what just happened. */
   const setAnnouncement = useCallback((message: string) => {
@@ -95,6 +109,7 @@ export default function KeyboardApp({
     setHydrated(true);
     setCoarse(hasCoarsePointer());
     setPhoneKeyboard(loadPreference("phoneKeyboard") === "on");
+    if (loadPreference("predict") === "off") setPredict(false);
     const savedFont = loadPreference(`font:${slug}`) as FontId | null;
     if (savedFont && language.fonts.includes(savedFont)) setFont(savedFont);
     const savedSize = Number(loadPreference("fontSize"));
@@ -108,9 +123,40 @@ export default function KeyboardApp({
     editorRef.current?.focus({ preventScroll: true });
   }, []); // mount only: page-level choices must not re-apply on later renders
 
+  // Roman mode needs the word list for ranking: fetch it as soon as the mode is on. Other
+  // modes wait for the first key press, so a page view alone downloads nothing extra.
+  const { load: loadWords } = suggest;
+  useEffect(() => {
+    if (!roman) return;
+    const idle = "requestIdleCallback" in window;
+    const id = idle
+      ? requestIdleCallback(loadWords, { timeout: 2000 })
+      : window.setTimeout(loadWords, 500);
+    return () => (idle ? cancelIdleCallback(id) : window.clearTimeout(id));
+  }, [roman, loadWords]);
+
   const insert = (text: string) => {
     const el = editorRef.current;
     if (el && text) insertText(el, text);
+  };
+
+  /**
+   * Type `text` produced by a key. In Roman mode a word boundary (space, punctuation) first
+   * converts the Roman word before the caret; punctuation becomes its Urdu form.
+   */
+  const typeText = (text: string) => {
+    if (!roman || !isBoundary(text)) return insert(text);
+    const el = editorRef.current;
+    const prev = el ? el.value[el.selectionStart - 1] : undefined;
+    // Leave decimal points and times alone: 3.5, 10:30
+    const out = prev && /\d/.test(prev) ? text : (suggest.punctuation[text] ?? text);
+    if (!suggest.commit(out)) insert(out);
+  };
+
+  /** Roman mode: leave the word as typed and move on. */
+  const keepRoman = () => {
+    insert(" ");
+    setAnnouncement("Kept as typed");
   };
 
   const togglePassthrough = () => {
@@ -127,6 +173,25 @@ export default function KeyboardApp({
     if (ne.isComposing || ne.keyCode === 229) return;
     setPressed((s) => (s.has(e.code) ? s : new Set(s).add(e.code)));
     if (ne.getModifierState) setPhysicalCaps(ne.getModifierState("CapsLock"));
+    suggest.load();
+
+    const plain = !e.ctrlKey && !e.metaKey && !e.altKey;
+    if (roman && plain && suggest.composing()) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        keepRoman();
+        return;
+      }
+      if (/^[1-9]$/.test(e.key) && suggest.pick(Number(e.key) - 1)) {
+        e.preventDefault();
+        return;
+      }
+      if (e.key === " " || e.key === "Enter") {
+        e.preventDefault();
+        suggest.commit(e.key === " " ? " " : "\n");
+        return;
+      }
+    }
 
     if (e.key === "Escape") {
       e.preventDefault();
@@ -154,7 +219,7 @@ export default function KeyboardApp({
       altgr,
       caps: ne.getModifierState?.("CapsLock") ?? false,
     });
-    if (result.kind === "text") insert(result.text);
+    if (result.kind === "text") typeText(result.text);
     rerender();
   };
 
@@ -169,6 +234,7 @@ export default function KeyboardApp({
 
   // ----- on-screen keyboard -----
   const onChar = (code: KeyCode) => {
+    suggest.load();
     if (passthrough) {
       const { shift, caps } = latch.current();
       const [lower, upper] = US_QWERTY[code];
@@ -176,7 +242,7 @@ export default function KeyboardApp({
       insert(shift !== (caps && isLetter) ? upper : lower);
     } else {
       const result = machine.press(code, latch.current());
-      if (result.kind === "text") insert(result.text);
+      if (result.kind === "text") typeText(result.text);
     }
     latch.consume();
     rerender();
@@ -195,12 +261,13 @@ export default function KeyboardApp({
         if (!machine.cancelPending() && el) deleteBackward(el);
         break;
       case "enter":
-        insert("\n");
+        if (!(roman && suggest.commit("\n"))) insert("\n");
         break;
       case "space": {
         const trigger = machine.pending;
         machine.cancelPending();
-        insert(trigger ?? " ");
+        if (trigger) insert(trigger);
+        else if (!(roman && suggest.commit(" "))) insert(" ");
         break;
       }
       case "shift":
@@ -271,9 +338,14 @@ export default function KeyboardApp({
           })}
         </div>
         <p className="text-sm text-muted max-sm:hidden">
-          {passthrough ? "English typing" : `${language.name.en} typing`} · press{" "}
+          {passthrough
+            ? "English typing"
+            : roman
+              ? "Roman typing: Space converts each word"
+              : `${language.name.en} typing`}{" "}
+          · press{" "}
           <kbd className="rounded border border-border bg-surface px-1.5 py-0.5 text-xs">Esc</kbd>{" "}
-          to switch
+          {roman ? "to keep a word in English" : "to switch"}
         </p>
       </div>
 
@@ -330,13 +402,33 @@ export default function KeyboardApp({
         inputMode={coarse && !phoneKeyboard ? "none" : undefined}
         onKeyDown={phoneKeyboard ? undefined : onKeyDown}
         onKeyUp={onKeyUp}
-        onInput={() => {
+        onInput={(e) => {
+          if (roman) suggest.afterNativeInput(e.nativeEvent as InputEvent);
           drafts.onInput();
           refreshCounts();
+          suggest.refresh();
         }}
+        onSelect={suggest.refresh}
         onBlur={() => setPressed(new Set())}
         style={{ fontSize: `${fontSize}px` }}
         className={`${FONT_CLASS[font]} min-h-32 w-full resize-y rounded-xl border border-border bg-surface px-4 py-3 text-text shadow-sm placeholder:text-muted/60 focus:border-accent focus:outline-none sm:min-h-56`}
+      />
+
+      <CandidateBar
+        state={suggest.state}
+        roman={roman}
+        lang={language.lang}
+        dir={language.dir}
+        predict={predict}
+        onTogglePredict={() => {
+          const next = !predict;
+          setPredict(next);
+          savePreference("predict", next ? "on" : "off");
+          setAnnouncement(next ? "Word suggestions on" : "Word suggestions off");
+        }}
+        onPick={(i) => suggest.pick(i)}
+        onKeep={keepRoman}
+        showNumbers={!coarse}
       />
 
       <div className="flex flex-wrap items-center justify-between gap-2 px-1 text-xs text-muted">

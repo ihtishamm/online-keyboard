@@ -4,6 +4,17 @@ export interface LayoutCopy {
   summary: string;
   /** Who this layout suits. */
   bestFor: string;
+  /** Page title, heading and meta description when the defaults do not fit the search. */
+  title?: string;
+  heading?: string;
+  description?: string;
+}
+
+/** One row of the Roman spelling guide. */
+export interface RomanGuideRow {
+  roman: string;
+  urdu: string;
+  examples: [roman: string, urdu: string][];
 }
 
 export interface LanguageCopy {
@@ -15,6 +26,8 @@ export interface LanguageCopy {
   layouts: Record<string, LayoutCopy>;
   tips: string[];
   faqs: { q: string; a: string }[];
+  /** Spelling guide shown on the Roman layout page. */
+  romanGuide?: RomanGuideRow[];
 }
 
 export const COPY: Record<string, LanguageCopy> = {
@@ -37,9 +50,20 @@ export const COPY: Record<string, LanguageCopy> = {
           'The layout that ships with Windows as "Urdu". Keys follow how often letters are used rather than how they sound.',
         bestFor: "Office and newsroom typists who learnt Urdu typing on Windows.",
       },
+      "ur-roman": {
+        title: "Roman Urdu to Urdu: Type Urdu in English Letters Online",
+        heading: "Roman Urdu to Urdu",
+        description:
+          "Type Urdu the way you text it, in English letters, and get proper Urdu script as you go. Free, private, with word suggestions and Nastaliq.",
+        summary:
+          "Type Urdu the way you text it, in English letters. Each word turns into Urdu when you press Space, and the bar under the editor offers other spellings and longer words.",
+        bestFor:
+          "Anyone who writes Roman Urdu on WhatsApp and wants real Urdu script without learning a keyboard layout.",
+      },
     },
     tips: [
       "Press Esc to switch between Urdu and English without leaving the page.",
+      "On the Roman layout, type words in English letters (mera naam) and press Space. Press 1 to 6 to pick another spelling, or Esc to keep a word in English.",
       "Shift + a key gives the second character on it. Diacritics such as zabar, zer and pesh are on Shift in the Phonetic layout and on AltGr (right Alt) in the Standard layout.",
       "Shift + AltGr + S types ﷺ. Shift + AltGr + R, Z and A type the honorifics ◌\u0612 (rahmatullah alaih), ◌\u0613 (radiallahu anhu) and ◌\u0611 (alaihis salam).",
       "On a phone, press and hold a key to see related letters, like آ on ا or ں on ن.",
@@ -67,8 +91,104 @@ export const COPY: Record<string, LanguageCopy> = {
         a: "Yes. The keyboard produces standard Unicode Urdu, so it works anywhere text works. Press Copy and paste it wherever you like.",
       },
       {
+        q: "Can I type Urdu in English letters (Roman Urdu)?",
+        a: "Yes. Choose the Roman layout and type as you would in a text message, for example “aap kaise hain”. Each word becomes Urdu (آپ کیسے ہیں) when you press Space. If a word comes out wrong, pick another spelling from the bar under the editor.",
+      },
+      {
         q: "How do I type zabar, zer and pesh?",
         a: "On the Phonetic layout use Shift+Y for zabar, Shift+I for zer and Shift+P for pesh. On the Standard layout use AltGr+A, AltGr+I and AltGr+U. On a phone, tap Shift (or AltGr) first, then the key.",
+      },
+    ],
+    romanGuide: [
+      {
+        roman: "kh",
+        urdu: "خ  کھ",
+        examples: [
+          ["khush", "خوش"],
+          ["khana", "کھانا"],
+        ],
+      },
+      {
+        roman: "gh",
+        urdu: "غ  گھ",
+        examples: [
+          ["ghalat", "غلط"],
+          ["ghar", "گھر"],
+        ],
+      },
+      { roman: "sh", urdu: "ش", examples: [["shaam", "شام"]] },
+      {
+        roman: "ch, chh",
+        urdu: "چ  چھ",
+        examples: [
+          ["chai", "چائے"],
+          ["chhota", "چھوٹا"],
+        ],
+      },
+      {
+        roman: "th",
+        urdu: "تھ  ٹھ",
+        examples: [
+          ["tha", "تھا"],
+          ["theek", "ٹھیک"],
+        ],
+      },
+      {
+        roman: "bh, ph, jh, dh",
+        urdu: "بھ  پھ  جھ  دھ",
+        examples: [
+          ["bhai", "بھائی"],
+          ["phir", "پھر"],
+          ["mujhe", "مجھے"],
+        ],
+      },
+      {
+        roman: "aa",
+        urdu: "ا  آ",
+        examples: [
+          ["baat", "بات"],
+          ["aaj", "آج"],
+        ],
+      },
+      {
+        roman: "ee, i",
+        urdu: "ی",
+        examples: [
+          ["teen", "تین"],
+          ["thi", "تھی"],
+        ],
+      },
+      {
+        roman: "e, ay (at the end)",
+        urdu: "ے",
+        examples: [
+          ["mere", "میرے"],
+          ["hay", "ہے"],
+        ],
+      },
+      {
+        roman: "oo, o, u",
+        urdu: "و",
+        examples: [
+          ["door", "دور"],
+          ["ko", "کو"],
+        ],
+      },
+      {
+        roman: "n (at the end)",
+        urdu: "ں",
+        examples: [
+          ["main", "میں"],
+          ["kahan", "کہاں"],
+        ],
+      },
+      {
+        roman: "T D R S Z H",
+        urdu: "ٹ  ڈ  ڑ  ص  ض  ح",
+        examples: [
+          ["baRa", "بڑا"],
+          ["Sabr", "صبر"],
+        ],
       },
     ],
   },

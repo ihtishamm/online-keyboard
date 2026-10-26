@@ -1,0 +1,53 @@
+---
+import type { RomanGuideRow } from "../content/languages";
+
+interface Props {
+  rows: RomanGuideRow[];
+  lang: string;
+}
+
+const { rows, lang } = Astro.props;
+---
+
+<figure>
+  <figcaption class="mb-2 text-sm text-muted">
+    Spell words as they sound. Vowels can be left out (bht for بہت) and the word list picks the
+    likeliest Urdu spelling. A capital letter asks for a particular letter.
+  </figcaption>
+  <table class="w-full border-collapse overflow-hidden rounded-xl border border-border bg-surface text-sm">
+    <thead class="bg-key-mod text-start">
+      <tr>
+        <th scope="col" class="px-3 py-2 text-start font-medium">
+          You type
+        </th>
+        <th scope="col" class="px-3 py-2 text-start font-medium">
+          Urdu letters
+        </th>
+        <th scope="col" class="px-3 py-2 text-start font-medium">
+          Examples
+        </th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-border">
+      {rows.map((row) => (
+        <tr>
+          <td class="px-3 py-2 font-mono">{row.roman}</td>
+          <td class="font-naskh px-3 py-2 text-lg" lang={lang} dir="rtl">
+            {row.urdu}
+          </td>
+          <td class="px-3 py-2">
+            {row.examples.map(([roman, urdu], i) => (
+              <>
+                {i > 0 && <span class="text-muted">, </span>}
+                <span class="font-mono">{roman}</span> →{" "}
+                <span class="font-naskh text-base" lang={lang}>
+                  {urdu}
+                </span>
+              </>
+            ))}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</figure>

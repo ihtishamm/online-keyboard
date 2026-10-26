@@ -4,6 +4,7 @@ import "@fontsource/noto-nastaliq-urdu/400.css";
 import { getLanguage, getLayout, layoutSlug } from "@okb/layouts";
 import KeyboardApp from "./keyboard/KeyboardApp";
 import LayoutChart from "./LayoutChart.astro";
+import RomanGuide from "./RomanGuide.astro";
 import Base from "../layouts/Base.astro";
 import { SITE } from "../config/site";
 import { copyFor } from "../content/languages";
@@ -22,10 +23,16 @@ const layoutCopy = copy.layouts[layoutId];
 
 const title = isDefault
   ? copy.title
-  : `${language.name.en} ${layout.name.en} Keyboard Online (${layout.name.native}) | ${SITE.name}`;
+  : layoutCopy?.title
+    ? `${layoutCopy.title} | ${SITE.name}`
+    : `${language.name.en} ${layout.name.en} Keyboard Online (${layout.name.native}) | ${SITE.name}`;
 const description = isDefault
   ? copy.description
-  : `Type ${language.name.en} online with the ${layout.name.en} layout. ${layoutCopy?.summary ?? ""}`;
+  : (layoutCopy?.description ??
+    `Type ${language.name.en} online with the ${layout.name.en} layout. ${layoutCopy?.summary ?? ""}`);
+const heading = isDefault
+  ? copy.heading
+  : (layoutCopy?.heading ?? `${language.name.en} ${layout.name.en} Keyboard`);
 
 const jsonLd = [
   {
@@ -53,9 +60,7 @@ const jsonLd = [
 <Base title={title} description={description}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
-    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">
-      {isDefault ? copy.heading : `${language.name.en} ${layout.name.en} Keyboard`}
-    </h1>
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">{heading}</h1>
     <span class="font-nastaliq text-2xl text-accent" lang={language.lang} dir={language.dir}>
       {copy.headingNative}
     </span>
@@ -82,7 +87,11 @@ const jsonLd = [
       {layoutCopy && (
         <p class="mb-4 max-w-2xl text-sm text-muted">Best for: {layoutCopy.bestFor}</p>
       )}
-      <LayoutChart layout={layout} />
+      {layout.translit && copy.romanGuide ? (
+        <RomanGuide rows={copy.romanGuide} lang={language.lang} />
+      ) : (
+        <LayoutChart layout={layout} />
+      )}
       <p class="mt-3 text-sm text-muted">
         Other layouts:{" "}
         {language.layouts
