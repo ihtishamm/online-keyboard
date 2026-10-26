@@ -91,7 +91,7 @@ export function normalize(text: string): string {
   return text
     .normalize("NFD")
     .toLowerCase()
-    .replace(/[̀-ًͯ-ٰٟـ]/g, "")
+    .replace(/[\u0300-\u036Fً-\u065Fٰـ]/g, "")
     .replace(/[يى]/g, "ی")
     .replace(/ك/g, "ک")
     .replace(/ه/g, "ہ")

@@ -8,5 +8,6 @@ export * from "./text/edit";
 export * from "./text/words";
 export * from "./predict/lexicon";
 export * from "./predict/next-words";
+export * from "./predict/spell";
 export * from "./translit/scheme";
 export * from "./translit/engine";

@@ -4,7 +4,10 @@ import KeyboardApp from "./KeyboardApp";
 
 vi.mock("./dictionary", async () => {
   const { Lexicon, NextWords } = await import("@okb/engine");
-  const words = ["میں", "نے", "ہے", "کیا", "حال", "میرا", "نام", "پاکستان", "پاکستانی", "پاک"];
+  const words = [
+    ...["میں", "نے", "ہے", "کیا", "حال", "میرا", "نام", "پاکستان", "پاکستانی", "پاک"],
+    ...["کی", "ضرورت", "حکومت"],
+  ];
   const dictionary = {
     lexicon: Lexicon.fromRanked(words),
     next: NextWords.parse("^\t0 2\n0\t1 2\n", words),
@@ -143,5 +146,79 @@ describe("word suggestions", () => {
     await new Promise((r) => setTimeout(r, 20));
     expect(screen.queryByRole("button", { name: "پاکستان" })).toBeNull();
     expect(screen.getByText("Word suggestions are off.")).toBeTruthy();
+  });
+});
+
+describe("spell check", () => {
+  const renderPhonetic = () =>
+    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+
+  /** Put `text` in the editor as if typed, with the caret at `caret` (default: the end). */
+  function setText(text: string, caret = text.length) {
+    const el = editor();
+    el.value = text;
+    el.setSelectionRange(caret, caret);
+    fireEvent.input(el);
+  }
+
+  const count = () => screen.queryByRole("button", { name: /possible misspelling/ });
+
+  it("underlines misspelled words once the word list loads", async () => {
+    const { container } = renderPhonetic();
+    setText("میرا نام زرورت ہے ");
+    await waitFor(() => expect(count()?.textContent).toBe("1 possible misspelling"));
+    const marked = container.querySelectorAll(".spell-error");
+    expect([...marked].map((m) => m.textContent)).toEqual(["زرورت"]);
+  });
+
+  it("underlines the word being typed only once the caret leaves it", async () => {
+    renderPhonetic();
+    setText("میرا نام زرورت");
+    await waitFor(() => bar(/Spelling corrections/));
+    expect(count()).toBeNull();
+    editor().setSelectionRange(0, 0);
+    fireEvent.select(editor());
+    await waitFor(() => expect(count()?.textContent).toBe("1 possible misspelling"));
+  });
+
+  it("offers corrections for the word at the caret and replaces it", async () => {
+    renderPhonetic();
+    setText("زرورت ہے", 2);
+    const group = await waitFor(() => bar(/Spelling corrections/));
+    fireEvent.click(within(group).getByRole("button", { name: "ضرورت" }));
+    expect(editor().value).toBe("ضرورت ہے");
+    await waitFor(() => expect(count()).toBeNull());
+  });
+
+  it("jumps to the next misspelling", async () => {
+    renderPhonetic();
+    setText("ہکومت کی زرورت ہے", 0);
+    await waitFor(() => expect(count()?.textContent).toBe("2 possible misspellings"));
+    fireEvent.click(count()!);
+    expect(editor().selectionStart).toBe(5); // after ہکومت
+    expect(within(bar(/Spelling corrections/)).getByRole("button", { name: "حکومت" })).toBeTruthy();
+  });
+
+  it("ignores a word, or adds it to the user's dictionary", async () => {
+    renderPhonetic();
+    setText("لکھو ہے زرورت ہے", 1);
+    const ignore = await screen.findByRole("button", { name: /Ignore/ });
+    fireEvent.click(ignore);
+    await waitFor(() => expect(count()?.textContent).toBe("1 possible misspelling"));
+
+    editor().setSelectionRange(10, 10);
+    fireEvent.select(editor());
+    fireEvent.click(await screen.findByRole("button", { name: /to my dictionary/ }));
+    await waitFor(() => expect(count()).toBeNull());
+    expect(JSON.parse(localStorage.getItem("likho:spelling:urdu")!)).toEqual(["زرورت"]);
+  });
+
+  it("can be turned off, and remembers it", async () => {
+    renderPhonetic();
+    setText("زرورت ہے ");
+    await waitFor(() => expect(count()).toBeTruthy());
+    fireEvent.click(screen.getByRole("button", { name: "Spell check" }));
+    expect(localStorage.getItem("likho:spellcheck")).toBe("off");
+    await waitFor(() => expect(count()).toBeNull());
   });
 });

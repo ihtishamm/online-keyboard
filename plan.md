@@ -295,7 +295,19 @@ online-keyboard/
   - Words are checked whole (colouring single letters would break Nastaliq joining); comparisons use NFD, so آ or ؤ typed as one key or as letter + mark both count. Practice text is original (everyday words, 12 short passages) and tested to be typeable on both layouts.
   - Engine: `keystrokeMap(layout)`, character -> key and modifiers.
   - Tests: drill scoring, NFD handling, next-key logic, lesson generation for both layouts (unit); e2e typing through the phonetic layout, timer and result (fake clock), result PNG, own-keyboard mode, phone keys, tutor highlight and a passed lesson, axe on both pages.
-- [ ] Spell check (Urdu).
+- [x] Spell check (Urdu). On `/urdu` (every layout), on by default, with a toggle in the suggestion bar. It runs in the browser on the existing 100k-word list, so nothing is sent anywhere.
+  - Misspelled words get a wavy underline: a transparent copy of the text over the editor, sized to its content box and scrolled with it. The word being typed is underlined only once the caret leaves it. With the caret in a flagged word, the suggestion bar offers corrections, Ignore (this page view) and Add to my dictionary (saved on the device). The footer shows "N possible misspellings", which jumps to the next one.
+  - Engine `SpellChecker`: corrections come from a weighted Damerau–Levenshtein search over the trie, with frequency as the tie-break. Sound-alike letters are cheap to swap (س/ص/ث, ز/ذ/ض/ظ, ت/ط, ہ/ح, ا/ع, ک/ق), and so are near misses on the keyboard (ت/ٹ, ہ/ھ, ہ/ے). Dropping a vowel letter or a hamza is cheap too.
+  - What counts as correct:
+    - Words run together after a non-joining letter (اورپھر, کےلیے).
+    - ہ/ھ and ئے/یے variants (تمہارا, چاہئے).
+    - Verb forms whose infinitive is in the list (سوچو, کرونگا).
+    - Rare corpus words are flagged only when one cheap edit away from a word 10× more common, which catches typos that crept into the list (سحت, مسلہ).
+  - Evaluation (`packages/dictionaries/test/spell-eval.test.ts`, original data):
+    - 44 common misspellings: 43 flagged; the right word is first for 43 and in the top 3 for all 44.
+    - 808 correct words from the Roman Urdu sets: 2 flagged (بلکل, مسلہ), both real misspellings.
+    - The rules were tuned against both sets, so these figures are optimistic.
+  - Tests: engine unit tests, component tests (underline, correct, jump, ignore/add, typing, toggle), and e2e on desktop and mobile (corrections, overlay geometry, personal dictionary across a reload, axe).
 - [ ] Voice typing.
 - [ ] Printable layout cheat sheets (PDF) as SEO landing assets.
 - [ ] Blog and guides in original content: "How to type Urdu on Windows/Mac/Android", "Roman Urdu to Urdu".

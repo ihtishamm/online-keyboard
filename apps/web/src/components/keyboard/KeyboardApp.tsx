@@ -25,6 +25,7 @@ import CandidateBar from "./CandidateBar";
 import { hasDictionary } from "./dictionary";
 import { deleteBackward, insertText } from "./editor-ops";
 import { hasCoarsePointer, isAltGr } from "./platform";
+import SpellOverlay from "./SpellOverlay";
 import { loadPreference, savePreference } from "./preferences";
 import Toolbar, { FONT_SIZES } from "./Toolbar";
 import { useDrafts } from "./useDrafts";
@@ -86,6 +87,7 @@ export default function KeyboardApp({
   const editorRef = useRef<HTMLTextAreaElement>(null);
   const drafts = useDrafts(slug, editorRef);
   const [predict, setPredict] = useState(true);
+  const [spellcheck, setSpellcheck] = useState(true);
   const scheme = layout.translit ? getScheme(layout.translit) : null;
   const roman = scheme !== null && !passthrough;
   const suggest = useSuggestions({
@@ -93,6 +95,7 @@ export default function KeyboardApp({
     editorRef,
     scheme: roman ? scheme : null,
     predict: predict && !passthrough,
+    spellcheck,
   });
 
   /** Tell screen readers (and show briefly) what just happened. */
@@ -104,9 +107,17 @@ export default function KeyboardApp({
     announceTimer.current = window.setTimeout(() => setAnnouncementText(""), 4000);
   }, []);
 
+  const { refresh: refreshSuggestions } = suggest;
+  /** After the text changed without an input event (a draft was opened). */
   const refreshCounts = useCallback(() => {
     setCounts(countText(editorRef.current?.value ?? ""));
-  }, []);
+    refreshSuggestions();
+  }, [refreshSuggestions]);
+  // The first draft is put into the editor once drafts have loaded.
+  const draftId = drafts.state?.currentId;
+  useEffect(() => {
+    if (draftId) refreshCounts();
+  }, [draftId]); // only when the draft changes
 
   const switchLayout = useCallback(
     (id: string, opts: { updateUrl: boolean }) => {
@@ -127,6 +138,7 @@ export default function KeyboardApp({
     setCoarse(hasCoarsePointer());
     setPhoneKeyboard(loadPreference("phoneKeyboard") === "on");
     if (loadPreference("predict") === "off") setPredict(false);
+    if (loadPreference("spellcheck") === "off") setSpellcheck(false);
     const savedFont = loadPreference(`font:${slug}`) as FontId | null;
     if (savedFont && language.fonts.includes(savedFont)) setFont(savedFont);
     const savedSize = Number(loadPreference("fontSize"));
@@ -168,6 +180,26 @@ export default function KeyboardApp({
     // Leave decimal points and times alone: 3.5, 10:30
     const out = prev && /\d/.test(prev) ? text : (suggest.punctuation[text] ?? text);
     if (!suggest.commit(out)) insert(out);
+  };
+
+  /** Stop flagging the misspelled word at the caret. */
+  const acceptWord = (save: boolean) => {
+    const word = suggest.state.mode === "spell" ? suggest.state.range?.word : undefined;
+    if (!word) return;
+    suggest.accept(word, save);
+    setAnnouncement(save ? "Added to your dictionary" : "Ignored");
+  };
+
+  /** Select the next misspelled word after the caret (wrapping round), to fix it. */
+  const nextMisspelling = () => {
+    const el = editorRef.current;
+    const issues = suggest.marks.issues;
+    if (!el || !issues.length) return;
+    const next = issues.find((i) => i.start >= el.selectionEnd) ?? issues[0]!;
+    el.focus();
+    // A collapsed caret at the word's end shows its corrections in the bar.
+    el.setSelectionRange(next.end, next.end);
+    suggest.refresh();
   };
 
   /** Roman mode: leave the word as typed and move on. */
@@ -414,31 +446,42 @@ export default function KeyboardApp({
         }
       />
 
-      <textarea
-        ref={editorRef}
-        dir={layout.dir}
-        lang={language.lang}
-        aria-label={`${language.name.en} text`}
-        placeholder={language.sample}
-        spellCheck={false}
-        autoCapitalize="off"
-        autoComplete="off"
-        autoCorrect="off"
-        readOnly={!hydrated}
-        inputMode={coarse && !phoneKeyboard ? "none" : undefined}
-        onKeyDown={phoneKeyboard ? undefined : onKeyDown}
-        onKeyUp={onKeyUp}
-        onInput={(e) => {
-          if (roman) suggest.afterNativeInput(e.nativeEvent as InputEvent);
-          drafts.onInput();
-          refreshCounts();
-          suggest.refresh();
-        }}
-        onSelect={suggest.refresh}
-        onBlur={() => setPressed(new Set())}
-        style={{ fontSize: `${fontSize}px` }}
-        className={`${FONT_CLASS[font]} min-h-32 w-full resize-y rounded-xl border border-border bg-surface px-4 py-3 text-text shadow-sm placeholder:text-muted/60 focus:border-accent focus:outline-none sm:min-h-56`}
-      />
+      <div className="relative">
+        <textarea
+          ref={editorRef}
+          dir={layout.dir}
+          lang={language.lang}
+          aria-label={`${language.name.en} text`}
+          placeholder={language.sample}
+          spellCheck={false}
+          autoCapitalize="off"
+          autoComplete="off"
+          autoCorrect="off"
+          readOnly={!hydrated}
+          inputMode={coarse && !phoneKeyboard ? "none" : undefined}
+          onKeyDown={phoneKeyboard ? undefined : onKeyDown}
+          onKeyUp={onKeyUp}
+          onInput={(e) => {
+            if (roman) suggest.afterNativeInput(e.nativeEvent as InputEvent);
+            drafts.onInput();
+            refreshCounts();
+          }}
+          onSelect={suggest.refresh}
+          onBlur={() => setPressed(new Set())}
+          style={{ fontSize: `${fontSize}px` }}
+          className={`${FONT_CLASS[font]} block min-h-32 w-full resize-y rounded-xl border border-border bg-surface px-4 py-3 text-text shadow-sm placeholder:text-muted/60 focus:border-accent focus:outline-none sm:min-h-56`}
+        />
+        {suggest.spellReady && (
+          <SpellOverlay
+            editorRef={editorRef}
+            marks={suggest.marks}
+            fontClass={FONT_CLASS[font]}
+            fontSize={fontSize}
+            dir={layout.dir}
+            lang={language.lang}
+          />
+        )}
+      </div>
 
       {(roman || hasDictionary(slug)) && (
         <CandidateBar
@@ -456,6 +499,22 @@ export default function KeyboardApp({
           onPick={(i) => suggest.pick(i)}
           onKeep={keepRoman}
           showNumbers={!coarse}
+          spelling={
+            hasDictionary(slug)
+              ? {
+                  enabled: spellcheck,
+                  onToggle: () => {
+                    const next = !spellcheck;
+                    setSpellcheck(next);
+                    savePreference("spellcheck", next ? "on" : "off");
+                    setAnnouncement(next ? "Spell check on" : "Spell check off");
+                    if (next) suggest.load();
+                  },
+                  onIgnore: () => acceptWord(false),
+                  onAdd: () => acceptWord(true),
+                }
+              : undefined
+          }
         />
       )}
 
@@ -464,6 +523,16 @@ export default function KeyboardApp({
           {counts.words} {counts.words === 1 ? "word" : "words"} · {counts.chars}{" "}
           {counts.chars === 1 ? "character" : "characters"}
         </span>
+        {suggest.marks.issues.length > 0 && (
+          <button
+            type="button"
+            onClick={nextMisspelling}
+            className="rounded px-1 text-bad underline decoration-dotted underline-offset-2 hover:decoration-solid"
+          >
+            {suggest.marks.issues.length}{" "}
+            {suggest.marks.issues.length === 1 ? "possible misspelling" : "possible misspellings"}
+          </button>
+        )}
         <span aria-live="polite" className="font-medium text-accent">
           {announcement}
         </span>

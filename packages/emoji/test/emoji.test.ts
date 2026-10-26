@@ -45,7 +45,7 @@ describe("data", () => {
   it("lists each emoji once, fully qualified, without separate skin-tone entries", () => {
     const all = data.emoji.map((e) => e.char);
     expect(new Set(all).size).toBe(all.length);
-    expect(all).toContain("❤️");
+    expect(all).toContain("❤\uFE0F");
     expect(all).not.toContain("❤");
     expect(all.some((c) => /[\u{1F3FB}-\u{1F3FF}]/u.test(c))).toBe(false);
     expect(data.emoji.length).toBeGreaterThan(1800);
@@ -56,18 +56,18 @@ describe("data", () => {
     expect(wave.skins).toEqual(["👋🏻", "👋🏼", "👋🏽", "👋🏾", "👋🏿"]);
     expect(withSkin(wave, 3)).toBe("👋🏽");
     expect(withSkin(wave, 0)).toBe("👋");
-    const coder = data.emoji.find((e) => e.char === "👩‍💻")!;
-    expect(withSkin(coder, 5)).toBe("👩🏿‍💻");
+    const coder = data.emoji.find((e) => e.char === "👩\u200D💻")!;
+    expect(withSkin(coder, 5)).toBe("👩🏿\u200D💻");
     const grin = data.emoji.find((e) => e.char === "😀")!;
     expect(grin.skins).toBeUndefined();
     expect(withSkin(grin, 4)).toBe("😀");
   });
 
   it("leaves out emoji newer than 15.0", () => {
-    // 🫨 shaking face is Emoji 15.0 (kept); 🙂‍↔️ head shaking horizontally is 15.1.
+    // 🫨 shaking face is Emoji 15.0 (kept); 🙂\u200D↔\uFE0F head shaking horizontally is 15.1.
     const all = data.emoji.map((e) => e.char);
     expect(all).toContain("🫨");
-    expect(all).not.toContain("🙂‍↔️");
+    expect(all).not.toContain("🙂\u200D↔\uFE0F");
   });
 });
 
@@ -103,15 +103,15 @@ describe("search", () => {
   });
 
   it("matches word prefixes and needs every word", () => {
-    expect(chars(en, "hea", 50)).toContain("❤️");
-    expect(chars(en, "red hea")[0]).toBe("❤️");
+    expect(chars(en, "hea", 50)).toContain("❤\uFE0F");
+    expect(chars(en, "red hea")[0]).toBe("❤\uFE0F");
     expect(searchEmoji(en, "red zzzz")).toEqual([]);
     expect(searchEmoji(en, "  ")).toEqual([]);
   });
 
   it("finds by the page language's keywords", () => {
     expect(chars(ur, "پاکستان")[0]).toBe("🇵🇰");
-    expect(chars(ur, "دل", 20)).toContain("❤️");
+    expect(chars(ur, "دل", 20)).toContain("❤\uFE0F");
     expect(chars(ur, "خدا حافظ", 10)).toContain("👋");
     // English still works alongside.
     expect(chars(ur, "wave", 10)).toContain("👋");

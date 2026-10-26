@@ -41,7 +41,7 @@ const LOCALES: Record<string, string[]> = {
 };
 
 const SKIN_TONES = [0x1f3fb, 0x1f3fc, 0x1f3fd, 0x1f3fe, 0x1f3ff];
-const FE0F = /️/g;
+const FE0F = /\uFE0F/g;
 
 async function source(url: string): Promise<string> {
   const file = join(CACHE, url.replace(/^https:\/\//, "").replace(/[^\w.-]+/g, "_"));

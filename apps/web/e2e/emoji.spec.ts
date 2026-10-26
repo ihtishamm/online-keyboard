@@ -21,7 +21,7 @@ test("inserts emoji at the caret", async ({ page }) => {
   await page.getByRole("button", { name: "Emoji" }).click();
   await panel(page).getByRole("button", { name: "grinning face", exact: true }).click();
   await panel(page).getByRole("button", { name: "red heart", exact: true }).click();
-  await expect(editor(page)).toHaveValue("سلام😀❤️");
+  await expect(editor(page)).toHaveValue("سلام😀❤\uFE0F");
 });
 
 test("searches in English and in the page language", async ({ page }) => {
@@ -81,7 +81,7 @@ test("backspace deletes a whole emoji", async ({ page, isMobile }) => {
   await search(page).fill("woman technologist");
   await panel(page).getByRole("radio", { name: "Dark skin tone", exact: true }).click();
   await grid(page).getByRole("button").first().click();
-  await expect(editor(page)).toHaveValue("👩🏿‍💻");
+  await expect(editor(page)).toHaveValue("👩🏿\u200D💻");
   await editor(page).focus();
   await page.keyboard.press("Backspace");
   await expect(editor(page)).toHaveValue("");

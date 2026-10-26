@@ -132,6 +132,21 @@ export class Lexicon {
     return node;
   }
 
+  /** First child of `node`, or -1. With `nextSibling` and `charOf`, for custom searches. */
+  firstChildOf(node: number): number {
+    return this.firstChild[node]!;
+  }
+
+  /** The next child of the same parent, or -1. */
+  nextSiblingOf(node: number): number {
+    return this.nextSibling[node]!;
+  }
+
+  /** The UTF-16 code unit on the edge into `node`. */
+  charOf(node: number): number {
+    return this.ch[node]!;
+  }
+
   /** Rank of the word ending at `node`, or -1 if it is only a prefix. */
   rankAt(node: number): number {
     return this.wordRank[node] ?? -1;

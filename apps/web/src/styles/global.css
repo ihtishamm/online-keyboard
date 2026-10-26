@@ -196,6 +196,14 @@
   contain-intrinsic-size: auto 40rem;
 }
 
+/* Misspelled words in the editor (keyboard/SpellOverlay.tsx). */
+.spell-error {
+  text-decoration: underline wavy var(--color-bad);
+  text-decoration-thickness: 1.5px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 0.2em;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
