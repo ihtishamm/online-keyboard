@@ -1,0 +1,23 @@
+{
+  "name": "@okb/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Framework-agnostic typing engine: layouts, key resolution, dead keys, caret editing.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./layout": "./src/layout/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
+  }
+}
