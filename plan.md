@@ -263,7 +263,12 @@ online-keyboard/
   - Phones keep punctuation keys that carry letters (Arabic ج د ك ط, InScript ड च ट य, Sindhi ٿ ڱ ڌ ڳ). The suggestion bar is hidden for languages without a word list.
   - Golden typing tests per language (unit + e2e), alphabet coverage tests, axe on every page.
   - Follow-ups: dedicated mobile rows for the denser layouts; phonetic Hindi/Bangla (Avro-style) and Gurmukhi Punjabi; word lists for the new languages.
-- [ ] InPage ↔ Unicode converter.
+- [x] InPage ↔ Unicode converter. `/inpage-to-unicode`, linked from the home page.
+  - `packages/inpage`: compound-file (OLE2) reader, paragraph-record extraction from the `InPage100/200` stream, decoder for `.inp` files and for text copied out of InPage (U+0004 + cp1252), and a Unicode → InPage encoder for pasting into InPage 2000/2002.
+  - Character table compiled from two independent references (Kamal Abdali's InpToUni; zanysoft, MIT). They agree on every letter. Output matches Abdali's on a real 43-paragraph InPage 2000 file (not committed: no licence), once NFC and Urdu digits are applied. Codes neither source pins down show as � and are counted for the user.
+  - InPage's one hamza code becomes ئ inside a word and ء at its end; آ/أ/ؤ/ۂ/ۓ are composed from letter + mark.
+  - Tests: synthetic .inp files from a test compound-file writer (regular and mini streams), round trips, hamza, clipboard text; e2e for upload, paste, reverse, "Edit in Urdu keyboard", axe.
+  - Not covered: InPage 3+ files (already Unicode; the page says so) and formatting (text only).
 - [ ] Export to .docx, .pdf and a Nastaliq image card.
 - [ ] Emoji panel with search.
 - [ ] PWA offline mode.

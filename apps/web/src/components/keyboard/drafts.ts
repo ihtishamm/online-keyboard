@@ -104,3 +104,13 @@ export function removeDraft(state: DraftState, id: string): DraftState {
 export function currentDraft(state: DraftState): Draft {
   return state.drafts.find((d) => d.id === state.currentId) ?? state.drafts[0]!;
 }
+
+/** Save `text` as a new current draft, so the language page opens with it (e.g. after a conversion). */
+export async function openInNewDraft(slug: string, text: string): Promise<void> {
+  const state = await loadDrafts(slug);
+  const current = currentDraft(state);
+  // Reuse an empty current draft instead of piling up blank ones.
+  const drafts = current.text.trim() ? state.drafts : state.drafts.filter((d) => d !== current);
+  const draft = newDraft(text);
+  await saveDrafts(slug, { drafts: [draft, ...drafts], currentId: draft.id });
+}

@@ -1,0 +1,125 @@
+---
+import "@fontsource/noto-naskh-arabic/400.css";
+import "@fontsource/noto-nastaliq-urdu/400.css";
+import InPageConverter from "../components/tools/InPageConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `InPage to Unicode Converter: Convert .inp Files to Urdu Unicode | ${SITE.name}`;
+const description =
+  "Convert InPage 2000 and 2002 files (.inp) and copied InPage text to Unicode Urdu, and Unicode back to InPage. Free, in your browser: files are never uploaded.";
+
+const steps = [
+  "Drop your .inp file on the box, or choose it with the button. To convert part of a document, copy the text in InPage and paste it into the box next to it.",
+  "The Unicode Urdu appears below in Nastaliq. Check it, and fix any word if needed.",
+  "Copy it, download it as a .txt file, or open it in the Urdu keyboard to keep editing.",
+];
+
+const faqs = [
+  {
+    q: "Which InPage versions can I convert?",
+    a: "Files from InPage 1.x, 2000 and 2002 (.inp), which store Urdu in InPage's own code. InPage 3 and later already use Unicode: copy the text out of InPage and paste it anywhere.",
+  },
+  {
+    q: "Is my file uploaded anywhere?",
+    a: "No. The converter runs entirely in your browser. Your file and text never leave your device.",
+  },
+  {
+    q: "Is formatting kept?",
+    a: "No, only the text: paragraphs, tabs, diacritics, Urdu digits and punctuation. Fonts, sizes, colours and page layout are not converted.",
+  },
+  {
+    q: "Some characters show as �. Why?",
+    a: "A few rare InPage symbols have no agreed Unicode equivalent. The converter marks them with � and tells you how many there are, so you can fix them by hand.",
+  },
+  {
+    q: "How do I get Unicode Urdu into old InPage?",
+    a: "Choose Unicode → InPage, paste or type your Urdu, press Copy for InPage, and paste into InPage 2000 or 2002. Letters, diacritics, Urdu digits and punctuation carry over.",
+  },
+  {
+    q: "Why does text copied from InPage look like ‚ƒ„… elsewhere?",
+    a: "Old InPage puts its own character codes on the clipboard, which other programs show as Latin symbols. Paste that text here and it turns back into Urdu.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} InPage to Unicode Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: "ur",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Convert an InPage file to Unicode Urdu",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">InPage to Unicode Converter</h1>
+    <span class="font-nastaliq text-2xl text-accent" lang="ur" dir="rtl">
+      ان پیج سے یونیکوڈ
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Turn old InPage documents into Unicode Urdu you can paste into Word, WhatsApp, websites and the
+    Urdu keyboard, or turn Unicode back into InPage text. Everything happens on your device.
+  </p>
+
+  <InPageConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to convert InPage to Unicode
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="about-heading" class="min-w-0">
+      <h2 id="about-heading" class="mb-3 text-xl font-semibold">
+        Why convert?
+      </h2>
+      <p class="text-muted">
+        InPage 2000 and 2002 write Urdu in a private code that only InPage understands. Unicode is
+        the standard every phone, browser and word processor uses, so converted text can be
+        searched, shared and published online.
+      </p>
+    </section>
+  </div>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>
