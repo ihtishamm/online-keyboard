@@ -84,7 +84,11 @@ export const COPY: Record<string, LanguageCopy> = {
       },
       {
         q: "Is my text private?",
-        a: "Yes. Your text is saved only in this browser on this device. It is never sent to our servers.",
+        a: "Yes. Your text is saved only in this browser on this device. It is never sent to our servers. The one exception is voice typing, which you turn on yourself: your browser sends the recording to its speech service to be written out.",
+      },
+      {
+        q: "Can I type Urdu by voice?",
+        a: "Yes, in Chrome, Edge and Safari. Press Voice typing, speak Urdu, and your words are typed where the cursor is. Say “فل سٹاپ” for ۔, “سوالیہ نشان” for ؟, “کوما” for ، and “نئی لائن” for a new line. Your browser turns speech into text using its own online service.",
       },
       {
         q: "Can I paste the Urdu text into Word, WhatsApp or Facebook?",

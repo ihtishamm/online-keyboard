@@ -30,6 +30,9 @@ import { loadPreference, savePreference } from "./preferences";
 import Toolbar, { FONT_SIZES } from "./Toolbar";
 import { useDrafts } from "./useDrafts";
 import { useSuggestions } from "./useSuggestions";
+import { useVoiceTyping } from "./useVoiceTyping";
+import { dictationText, recognitionCtor, spaced, speechLang } from "./voice";
+import VoicePanel from "./VoicePanel";
 import VirtualKeyboard, { type KeyAction } from "./VirtualKeyboard";
 
 const EmojiPanel = lazy(() => import("./EmojiPanel"));
@@ -79,6 +82,9 @@ export default function KeyboardApp({
   const [coarse, setCoarse] = useState(false);
   const [phoneKeyboard, setPhoneKeyboard] = useState(false);
   const [emojiOpen, setEmojiOpen] = useState(false);
+  /** Set once hydrated, where the browser can recognise this language's speech. */
+  const [voiceLang, setVoiceLang] = useState<string | null>(null);
+  const [voiceConsent, setVoiceConsent] = useState(false);
   const [font, setFont] = useState<FontId>(language.fonts[0]!);
   const [fontSize, setFontSize] = useState<number>(FONT_SIZES.default);
   const [counts, setCounts] = useState({ words: 0, chars: 0 });
@@ -139,6 +145,7 @@ export default function KeyboardApp({
     setPhoneKeyboard(loadPreference("phoneKeyboard") === "on");
     if (loadPreference("predict") === "off") setPredict(false);
     if (loadPreference("spellcheck") === "off") setSpellcheck(false);
+    if (recognitionCtor()) setVoiceLang(speechLang(slug));
     const savedFont = loadPreference(`font:${slug}`) as FontId | null;
     if (savedFont && language.fonts.includes(savedFont)) setFont(savedFont);
     const savedSize = Number(loadPreference("fontSize"));
@@ -167,6 +174,26 @@ export default function KeyboardApp({
   const insert = (text: string) => {
     const el = editorRef.current;
     if (el && text) insertText(el, text);
+  };
+
+  const voice = useVoiceTyping({
+    lang: voiceLang ?? "",
+    languageName: language.name.en,
+    onPhrase: (transcript) => {
+      const el = editorRef.current;
+      const text = dictationText(slug, transcript);
+      if (el && text) insert(spaced(el.value.slice(0, el.selectionStart), text));
+    },
+  });
+
+  const toggleVoice = () => {
+    if (voice.listening) {
+      voice.stop();
+      setAnnouncement("Voice typing stopped");
+    } else if (loadPreference("voice") === "on") {
+      voice.start();
+      setAnnouncement("Listening");
+    } else setVoiceConsent(true);
   };
 
   /**
@@ -428,6 +455,7 @@ export default function KeyboardApp({
             setAnnouncement(emojiOpen ? "Emoji closed" : "Emoji open");
           },
         }}
+        voice={voiceLang ? { listening: voice.listening, onToggle: toggleVoice } : undefined}
         phoneKeyboard={
           coarse
             ? {
@@ -482,6 +510,30 @@ export default function KeyboardApp({
           />
         )}
       </div>
+
+      {voiceLang && (voiceConsent || voice.listening || voice.error) && (
+        <VoicePanel
+          view={voice.listening ? "listening" : voiceConsent ? "consent" : "error"}
+          languageName={language.name.en}
+          lang={language.lang}
+          dir={language.dir}
+          interim={voice.interim}
+          error={voice.error}
+          onConsent={() => {
+            savePreference("voice", "on");
+            setVoiceConsent(false);
+            editorRef.current?.focus({ preventScroll: true });
+            voice.start();
+            setAnnouncement("Listening");
+          }}
+          onCancel={() => {
+            setVoiceConsent(false);
+            voice.clearError();
+            editorRef.current?.focus({ preventScroll: true });
+          }}
+          onStop={toggleVoice}
+        />
+      )}
 
       {(roman || hasDictionary(slug)) && (
         <CandidateBar

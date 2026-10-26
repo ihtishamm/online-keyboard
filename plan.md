@@ -308,7 +308,14 @@ online-keyboard/
     - 808 correct words from the Roman Urdu sets: 2 flagged (بلکل, مسلہ), both real misspellings.
     - The rules were tuned against both sets, so these figures are optimistic.
   - Tests: engine unit tests, component tests (underline, correct, jump, ignore/add, typing, toggle), and e2e on desktop and mobile (corrections, overlay geometry, personal dictionary across a reload, axe).
-- [ ] Voice typing.
+- [x] Voice typing. A "Voice typing" toolbar button on Urdu, Arabic, Farsi, Hindi and Bangla. It appears only where the browser has the Web Speech API (Chrome, Edge, Safari; not Firefox).
+  - Privacy: the first use shows a notice that the browser sends the recording to its speech service (Google, Microsoft or Apple). Voice starts only after the user agrees, and the choice is remembered. Typed text still never leaves the device; the Urdu privacy FAQ says so, and a new FAQ explains voice typing.
+  - Finished phrases are typed at the cursor, with a space before them when needed. Words not yet final show in a "Listening" strip with a Stop button. Urdu output gets Urdu letter forms. Spoken punctuation works in Urdu (فل سٹاپ ۔, سوالیہ نشان ؟, کوما ،, نئی لائن) and Hindi (पूर्ण विराम ।, अल्पविराम, नई पंक्ति).
+  - Browsers end recognition on their own (after a pause, after each phrase on Android, after about a minute). A new session starts until the user presses Stop or an error occurs. Android runs one phrase per session, because continuous mode repeats results there.
+  - Errors are explained: microphone blocked, no microphone, offline, language not supported, nothing heard.
+  - Shahmukhi, Sindhi, Pashto and the other languages are left out until speech services return them in the script this site types; Punjabi comes back in Gurmukhi.
+  - Also fixed: pressed toolbar buttons (Emoji, Voice typing) now look pressed. `bg-surface` had been overriding `bg-accent-soft`.
+  - Tests: text clean-up, spacing and errors (unit); a fake recogniser for consent, dictation, interim text, restarts, a blocked microphone and the button hidden without support (component); e2e with a fake recogniser on desktop and mobile, plus axe.
 - [ ] Printable layout cheat sheets (PDF) as SEO landing assets.
 - [ ] Blog and guides in original content: "How to type Urdu on Windows/Mac/Android", "Roman Urdu to Urdu".
 

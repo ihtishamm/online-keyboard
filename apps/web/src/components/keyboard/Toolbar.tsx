@@ -7,6 +7,7 @@ import {
   FilePlus2,
   FileText,
   Image as ImageIcon,
+  Mic,
   Redo2,
   Share2,
   Smartphone,
@@ -68,12 +69,17 @@ export interface ToolbarProps {
     remove: () => void;
   };
   emoji: { open: boolean; onToggle: () => void };
+  /** Present only where the browser can recognise the language's speech. */
+  voice?: { listening: boolean; onToggle: () => void };
   /** Present only on touch devices. */
   phoneKeyboard?: { enabled: boolean; onToggle: () => void };
 }
 
-const BTN =
-  "inline-flex h-9 items-center gap-1.5 rounded-lg border border-border bg-surface px-2.5 text-sm text-text hover:bg-surface-2 disabled:opacity-50";
+const BTN_BASE =
+  "inline-flex h-9 items-center gap-1.5 rounded-lg border px-2.5 text-sm text-text disabled:opacity-50";
+const BTN = `${BTN_BASE} border-border bg-surface hover:bg-surface-2`;
+/** Pressed toggles; separate strings, since bg-surface would win over bg-accent-soft. */
+const BTN_PRESSED = `${BTN_BASE} border-accent bg-accent-soft`;
 /** Drop-down under its button; on phones a sheet at the bottom, since the toolbar scrolls sideways and would clip it. */
 const POPUP =
   "absolute z-30 mt-1 flex min-w-44 flex-col rounded-lg border border-border bg-surface p-1 shadow-lg max-sm:fixed max-sm:inset-x-4 max-sm:bottom-4 max-sm:p-2 max-sm:shadow-2xl";
@@ -90,7 +96,7 @@ function ToolButton(props: {
   return (
     <button
       type="button"
-      className={`${BTN} ${props.pressed ? "border-accent bg-accent-soft" : ""}`}
+      className={props.pressed ? BTN_PRESSED : BTN}
       onClick={props.onClick}
       aria-pressed={props.pressed}
       title={props.label}
@@ -262,6 +268,14 @@ export default function Toolbar(props: ToolbarProps) {
         pressed={props.emoji.open}
         onClick={props.emoji.onToggle}
       />
+      {props.voice && (
+        <ToolButton
+          label="Voice typing"
+          icon={<Mic {...icon} />}
+          pressed={props.voice.listening}
+          onClick={props.voice.onToggle}
+        />
+      )}
 
       <span aria-hidden="true" className="mx-1 h-6 w-px bg-border" />
       <ToolButton
