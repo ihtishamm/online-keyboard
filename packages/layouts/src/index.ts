@@ -1,12 +1,19 @@
+import type { TranslitScheme } from "@okb/engine";
 import type { Layout, LayoutInput } from "@okb/engine/layout";
+import { UR_ROMAN } from "./translit/ur-roman";
 import urPhonetic from "../data/ur/phonetic.json";
+import urRoman from "../data/ur/roman.json";
 import urStandard from "../data/ur/standard.json";
 
 /**
  * Raw layout files, in registry order. They are validated against the schema in the test
  * suite (see test/layouts.test.ts), so the browser bundle does not need to ship zod.
  */
-export const RAW_LAYOUTS: readonly LayoutInput[] = [urPhonetic, urStandard] as LayoutInput[];
+export const RAW_LAYOUTS: readonly LayoutInput[] = [
+  urPhonetic,
+  urStandard,
+  urRoman,
+] as LayoutInput[];
 
 /** Apply schema defaults without validating (validation happens in tests). */
 function withDefaults(raw: LayoutInput): Layout {
@@ -41,7 +48,7 @@ export const LANGUAGES: readonly Language[] = [
     dir: "rtl",
     name: { en: "Urdu", native: "اردو" },
     fonts: ["nastaliq", "naskh"],
-    layouts: ["ur-phonetic", "ur-standard"],
+    layouts: ["ur-phonetic", "ur-standard", "ur-roman"],
     sample: "اردو ہماری قومی زبان ہے۔",
   },
 ];
@@ -65,4 +72,14 @@ export function layoutSlug(layoutId: string): string {
 
 export function allLayouts(): Layout[] {
   return [...LAYOUTS.values()];
+}
+
+export { UR_ROMAN };
+
+const SCHEMES: ReadonlyMap<string, TranslitScheme> = new Map([[UR_ROMAN.id, UR_ROMAN]]);
+
+export function getScheme(id: string): TranslitScheme {
+  const scheme = SCHEMES.get(id);
+  if (!scheme) throw new Error(`Unknown transliteration scheme "${id}"`);
+  return scheme;
 }

@@ -1,7 +1,15 @@
 import { NO_MODIFIERS, TypingMachine, US_QWERTY, isKeyCode, type KeyCode } from "@okb/engine";
 import { parseLayout } from "@okb/engine/layout";
 import { describe, expect, it } from "vitest";
-import { LANGUAGES, RAW_LAYOUTS, allLayouts, getLanguage, getLayout, layoutSlug } from "../src";
+import {
+  LANGUAGES,
+  RAW_LAYOUTS,
+  allLayouts,
+  getLanguage,
+  getLayout,
+  getScheme,
+  layoutSlug,
+} from "../src";
 
 /** Every letter of the Urdu alphabet plus the hamza-carrier forms in everyday use. */
 const URDU_LETTERS = [..."اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوہھءیےۃئؤۂۓ"];
@@ -119,5 +127,21 @@ describe("golden typing", () => {
   it("types shifted letters on the phonetic layout", () => {
     // ٹھیک = T h(shift) i k
     expect(typeOn("ur-phonetic", "THik")).toBe("ٹھیک");
+  });
+});
+
+describe("ur-roman", () => {
+  it("types Latin letters and pairs with an existing scheme", () => {
+    const layout = getLayout("ur-roman");
+    expect(typeOn("ur-roman", "mera")).toBe("mera");
+    expect(getScheme(layout.translit!).lang).toBe(layout.lang);
+  });
+
+  it("is the only layout with a transliteration scheme", () => {
+    expect(
+      allLayouts()
+        .filter((l) => l.translit)
+        .map((l) => l.id),
+    ).toEqual(["ur-roman"]);
   });
 });
