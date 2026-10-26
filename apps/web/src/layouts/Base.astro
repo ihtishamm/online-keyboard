@@ -1,0 +1,74 @@
+---
+import "@fontsource-variable/inter";
+import "../styles/global.css";
+import ThemeSwitcher from "../components/ThemeSwitcher.astro";
+import { SITE } from "../config/site";
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Language of the page's main content (the UI chrome is English). */
+  lang?: string;
+}
+
+const { title, description = SITE.description, lang = "en" } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0f6b5c" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <script is:inline>
+      // Apply the saved theme before first paint to avoid a flash.
+      try {
+        const t = localStorage.getItem("likho:theme");
+        if (t === "light" || t === "dark" || t === "contrast") {
+          document.documentElement.dataset.theme = t;
+        }
+      } catch {
+        /* storage unavailable: follow the system theme */
+      }
+    </script>
+    <slot name="head" />
+  </head>
+  <body class="flex min-h-dvh flex-col antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-surface focus:px-3 focus:py-2"
+    >
+      Skip to content
+    </a>
+    <header class="border-b border-border bg-surface">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
+        <a href="/" class="flex items-baseline gap-2 text-text no-underline">
+          <span class="text-xl font-semibold tracking-tight">{SITE.name}</span>
+          <span class="font-nastaliq text-lg text-accent" lang="ur" dir="rtl">
+            {SITE.nameNative}
+          </span>
+        </a>
+        <ThemeSwitcher />
+      </div>
+    </header>
+    <main id="main" class="mx-auto w-full max-w-6xl flex-1 px-4 py-6">
+      <slot />
+    </main>
+    <footer class="border-t border-border bg-surface text-sm text-muted">
+      <div class="mx-auto flex max-w-6xl flex-wrap justify-between gap-2 px-4 py-4">
+        <p>
+          © {new Date().getFullYear()} {SITE.name}. Your text stays on your device.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

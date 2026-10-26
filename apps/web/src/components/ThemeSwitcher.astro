@@ -1,0 +1,39 @@
+---
+const options = [
+  { value: "system", label: "System" },
+  { value: "light", label: "Light" },
+  { value: "dark", label: "Dark" },
+  { value: "contrast", label: "High contrast" },
+];
+---
+
+<label class="flex items-center gap-2 text-sm text-muted">
+  <span>Theme</span>
+  <select
+    id="theme-switcher"
+    class="rounded-md border border-border bg-surface px-2 py-1 text-text"
+  >
+    {options.map((o) => (
+      <option value={o.value}>{o.label}</option>
+    ))}
+  </select>
+</label>
+
+<script>
+  const KEY = "likho:theme";
+  const select = document.getElementById("theme-switcher") as HTMLSelectElement | null;
+  if (select) {
+    select.value = document.documentElement.dataset.theme ?? "system";
+    select.addEventListener("change", () => {
+      const value = select.value;
+      if (value === "system") delete document.documentElement.dataset.theme;
+      else document.documentElement.dataset.theme = value;
+      try {
+        if (value === "system") localStorage.removeItem(KEY);
+        else localStorage.setItem(KEY, value);
+      } catch {
+        /* storage unavailable: the choice lasts for this page view */
+      }
+    });
+  }
+</script>

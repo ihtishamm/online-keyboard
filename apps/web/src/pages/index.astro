@@ -1,0 +1,15 @@
+---
+import "@fontsource/noto-nastaliq-urdu/400.css";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+---
+
+<Base title={`${SITE.name}: ${SITE.tagline}`}>
+  <section class="py-10 text-center">
+    <h1 class="text-4xl font-semibold tracking-tight">{SITE.tagline}</h1>
+    <p class="font-nastaliq mt-4 text-3xl text-accent" lang="ur" dir="rtl">
+      اردو لکھیں، خوبصورتی سے
+    </p>
+    <p class="mx-auto mt-4 max-w-2xl text-muted">{SITE.description}</p>
+  </section>
+</Base>

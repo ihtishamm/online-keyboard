@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens. Every colour the UI uses is a variable here, so themes only redefine variables.
+ * Themes: light (default), dark (system or data-theme="dark"), contrast (data-theme="contrast").
+ */
+:root {
+  --color-bg: #f7f6f3;
+  --color-surface: #ffffff;
+  --color-surface-2: #efede8;
+  --color-text: #1c1b19;
+  --color-muted: #615e57;
+  --color-border: #dcd8cf;
+  --color-accent: #0f6b5c;
+  --color-accent-fg: #ffffff;
+  --color-accent-soft: #d7ece7;
+  --color-key: #ffffff;
+  --color-key-edge: #cfcac0;
+  --color-key-pressed: #d7ece7;
+  --color-key-mod: #e9e6df;
+  --color-key-hint: #8a867d;
+  --color-focus: #c2410c;
+  --shadow-key: 0 1px 0 var(--color-key-edge);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="contrast"]) {
+    --color-bg: #151513;
+    --color-surface: #1e1e1b;
+    --color-surface-2: #282824;
+    --color-text: #ecebe6;
+    --color-muted: #a29f96;
+    --color-border: #36352f;
+    --color-accent: #4fc1a9;
+    --color-accent-fg: #0b2621;
+    --color-accent-soft: #1f3b35;
+    --color-key: #2a2a26;
+    --color-key-edge: #12120f;
+    --color-key-pressed: #1f3b35;
+    --color-key-mod: #22221f;
+    --color-key-hint: #8f8c83;
+    --color-focus: #fb923c;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #151513;
+  --color-surface: #1e1e1b;
+  --color-surface-2: #282824;
+  --color-text: #ecebe6;
+  --color-muted: #a29f96;
+  --color-border: #36352f;
+  --color-accent: #4fc1a9;
+  --color-accent-fg: #0b2621;
+  --color-accent-soft: #1f3b35;
+  --color-key: #2a2a26;
+  --color-key-edge: #12120f;
+  --color-key-pressed: #1f3b35;
+  --color-key-mod: #22221f;
+  --color-key-hint: #8f8c83;
+  --color-focus: #fb923c;
+  color-scheme: dark;
+}
+
+:root[data-theme="contrast"] {
+  --color-bg: #000000;
+  --color-surface: #000000;
+  --color-surface-2: #000000;
+  --color-text: #ffffff;
+  --color-muted: #ffffff;
+  --color-border: #ffffff;
+  --color-accent: #ffff00;
+  --color-accent-fg: #000000;
+  --color-accent-soft: #333300;
+  --color-key: #000000;
+  --color-key-edge: #ffffff;
+  --color-key-pressed: #333300;
+  --color-key-mod: #000000;
+  --color-key-hint: #ffffff;
+  --color-focus: #00ffff;
+  --shadow-key: 0 0 0 1px #ffffff;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-surface-2: var(--color-surface-2);
+  --color-text: var(--color-text);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
+  --color-accent: var(--color-accent);
+  --color-accent-fg: var(--color-accent-fg);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-key: var(--color-key);
+  --color-key-edge: var(--color-key-edge);
+  --color-key-pressed: var(--color-key-pressed);
+  --color-key-mod: var(--color-key-mod);
+  --color-key-hint: var(--color-key-hint);
+  --color-focus: var(--color-focus);
+
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-nastaliq: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+  --font-naskh: "Noto Naskh Arabic", serif;
+}
+
+/* Typography scale */
+:root {
+  --text-editor: 1.75rem;
+  --leading-nastaliq: 2.2;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  min-height: 100dvh;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.font-nastaliq {
+  font-family: var(--font-nastaliq);
+  line-height: var(--leading-nastaliq);
+}
+
+.font-naskh {
+  font-family: var(--font-naskh);
+  line-height: 1.8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
