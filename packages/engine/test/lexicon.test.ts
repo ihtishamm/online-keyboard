@@ -63,3 +63,15 @@ describe("NextWords", () => {
     expect(next.size).toBe(2);
   });
 });
+
+describe("thread transfer", () => {
+  it("round-trips a lexicon and a next-word table through plain data", () => {
+    const lex = Lexicon.fromRanked(WORDS);
+    const copy = Lexicon.fromData(structuredClone(lex.toData()));
+    expect(copy.size).toBe(lex.size);
+    expect(copy.rank("then")).toBe(lex.rank("then"));
+    expect(copy.complete(copy.walk(0, "t"), 3).map((e) => e.word)).toEqual(["the", "to", "then"]);
+    const next = NextWords.parse("0\t1\n", ["a", "b"]);
+    expect(NextWords.fromData(structuredClone(next.toData())).after("a", 5)).toEqual(["b"]);
+  });
+});

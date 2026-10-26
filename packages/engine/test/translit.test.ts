@@ -77,6 +77,7 @@ describe("Transliterator without a dictionary", () => {
     expect(isRomanWord("abc")).toBe(true);
     expect(isRomanWord("a1")).toBe(false);
     expect(isRomanWord("'")).toBe(false);
+    expect(isRomanWord("a".repeat(31))).toBe(false);
     expect(t.candidates("12")).toEqual([]);
     expect(t.convertText("thanos ok?")).toBe("θανος οκ;");
   });
@@ -119,5 +120,23 @@ describe("Transliterator with a dictionary", () => {
     t.setLexicon(null);
     expect(t.candidates("tha")).not.toBe(before);
     expect(t.hasDictionary).toBe(false);
+  });
+});
+
+describe("context ranking", () => {
+  it("prefers a word that often follows the previous one", async () => {
+    const { NextWords } = await import("../src");
+    const words = ["τα", "θα", "ος"];
+    const t = new Transliterator({
+      ...SCHEME,
+      rules: [...SCHEME.rules, { in: "x", out: "τα θα:0.1" }, { in: "z", out: "ος" }],
+    });
+    t.setLexicon(Lexicon.fromRanked(words));
+    expect(t.best("x")).toBe("τα");
+    t.setNextWords(NextWords.parse("2\t1\n", words));
+    expect(t.best("x", "ος")).toBe("θα");
+    expect(t.best("x", null)).toBe("τα");
+    expect(t.convertText("z x")).toBe("ος θα");
+    expect(t.convertText("z? x")).toBe("ος; τα");
   });
 });

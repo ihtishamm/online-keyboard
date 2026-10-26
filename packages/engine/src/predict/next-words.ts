@@ -32,6 +32,15 @@ export class NextWords {
     return new NextWords(table);
   }
 
+  /** Plain data for sending between threads; see `fromData`. */
+  toData(): [string, readonly string[]][] {
+    return [...this.table];
+  }
+
+  static fromData(data: readonly (readonly [string, readonly string[]])[]): NextWords {
+    return new NextWords(new Map(data));
+  }
+
   /** Words likely to follow `previous` (or to start a sentence when it is null). */
   after(previous: string | null, limit: number): string[] {
     return (this.table.get(previous ?? SENTENCE_START) ?? []).slice(0, limit);
@@ -44,7 +53,6 @@ export class NextWords {
 
 /** Everything the predictor needs for one language. */
 export interface Dictionary {
-  words: readonly string[];
   lexicon: Lexicon;
   next: NextWords;
 }

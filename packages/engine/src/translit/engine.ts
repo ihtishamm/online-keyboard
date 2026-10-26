@@ -1,4 +1,5 @@
 import { Lexicon, rankCost } from "../predict/lexicon";
+import type { NextWords } from "../predict/next-words";
 import {
   compileScheme,
   type CompiledRule,
@@ -32,13 +33,16 @@ export interface TranslitOptions {
   unknownCost: number;
   /** Partial spellings kept per input position. */
   beam: number;
+  /** Bonus for a word that often follows the previous one (scaled down by its position). */
+  contextBonus: number;
 }
 
 export const DEFAULT_OPTIONS: TranslitOptions = {
   frequencyWeight: 0.45,
   completionCost: 2.5,
   unknownCost: 4,
-  beam: 48,
+  beam: 24,
+  contextBonus: 1.5,
 };
 
 interface State {
@@ -53,10 +57,12 @@ interface State {
 }
 
 const LATIN_WORD = /^[a-z']+$/i;
+/** Longer Latin runs (URLs, pasted English) are not words to convert, and would be slow. */
+const MAX_WORD_LENGTH = 30;
 
 /** Is this a Roman word the transliterator should handle? */
 export function isRomanWord(text: string): boolean {
-  return LATIN_WORD.test(text) && /[a-z]/i.test(text);
+  return text.length <= MAX_WORD_LENGTH && LATIN_WORD.test(text) && /[a-z]/i.test(text);
 }
 
 /**
@@ -69,6 +75,7 @@ export function isRomanWord(text: string): boolean {
 export class Transliterator {
   private readonly compiled: CompiledScheme;
   private lexicon: Lexicon | null = null;
+  private next: NextWords | null = null;
   private readonly options: TranslitOptions;
   private cache = new Map<string, Candidate[]>();
 
@@ -86,14 +93,26 @@ export class Transliterator {
   }
 
   setLexicon(lexicon: Lexicon | null): void {
+    if (lexicon === this.lexicon) return;
     this.lexicon = lexicon;
     this.cache.clear();
   }
 
-  /** Ranked conversions of one Roman word, best first. */
-  candidates(input: string, limit = 8): Candidate[] {
+  /** Next-word statistics, used to rank candidates by the word before them. */
+  setNextWords(next: NextWords | null): void {
+    if (next === this.next) return;
+    this.next = next;
+    this.cache.clear();
+  }
+
+  /**
+   * Ranked conversions of one Roman word, best first. `previous` is the word before it
+   * (null at the start of a sentence, undefined when unknown); it breaks ties such as
+   * ke → کے / کہ.
+   */
+  candidates(input: string, limit = 8, previous?: string | null): Candidate[] {
     if (!isRomanWord(input)) return [];
-    const key = `${input}\0${limit}`;
+    const key = `${input}\0${limit}\0${previous}`;
     const hit = this.cache.get(key);
     if (hit) return hit;
 
@@ -129,6 +148,16 @@ export class Transliterator {
       );
     }
 
+    if (this.next && previous !== undefined) {
+      const followers = this.next.after(previous, 10);
+      followers.forEach((word, i) => {
+        const c = found.get(word);
+        if (c && c.kind !== "listed") {
+          c.cost -= this.options.contextBonus * (1 - i / (followers.length + 1));
+        }
+      });
+    }
+
     const result = [...found.values()].sort((a, b) => a.cost - b.cost).slice(0, limit);
     if (this.cache.size > 500) this.cache.clear();
     this.cache.set(key, result);
@@ -136,16 +165,23 @@ export class Transliterator {
   }
 
   /** What committing the word (Space) produces: the best non-completion candidate. */
-  best(input: string): string {
-    return this.candidates(input).find((c) => c.kind !== "completion")?.text ?? input;
+  best(input: string, previous?: string | null): string {
+    return this.candidates(input, 8, previous).find((c) => c.kind !== "completion")?.text ?? input;
   }
 
   /** Convert running Roman text word by word, including punctuation. */
   convertText(text: string): string {
     const punct = this.compiled.scheme.punctuation;
-    return text.replace(/[a-z']+|[^\sa-z']/gi, (token) =>
-      isRomanWord(token) ? this.best(token) : (punct[token] ?? token),
-    );
+    let previous: string | null = null;
+    return text.replace(/[a-z']+|[^\sa-z']/gi, (token) => {
+      if (isRomanWord(token)) {
+        const word = this.best(token, previous);
+        previous = word;
+        return word;
+      }
+      previous = null; // punctuation ends the context
+      return punct[token] ?? token;
+    });
   }
 
   /**

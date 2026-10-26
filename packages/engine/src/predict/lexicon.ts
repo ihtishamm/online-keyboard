@@ -6,6 +6,17 @@ export interface LexiconEntry {
   cost: number;
 }
 
+/** The arrays behind a Lexicon, for sending it between threads (all transferable). */
+export interface LexiconData {
+  ch: Uint16Array;
+  firstChild: Int32Array;
+  nextSibling: Int32Array;
+  wordRank: Int32Array;
+  bestRank: Int32Array;
+  parent: Int32Array;
+  size: number;
+}
+
 /** Zipf's law: frequency ~ 1/rank, so -log(probability) ~ log(rank). */
 export function rankCost(rank: number): number {
   return Math.log(rank + 2);
@@ -51,6 +62,34 @@ export class Lexicon {
       if (lex.insert(word, rank)) lex.size++;
     });
     return lex;
+  }
+
+  /** Rebuild from `toData()` output, e.g. after a worker built the trie. */
+  static fromData(data: LexiconData): Lexicon {
+    const lex = new Lexicon(0);
+    lex.ch = data.ch;
+    lex.firstChild = data.firstChild;
+    lex.nextSibling = data.nextSibling;
+    lex.wordRank = data.wordRank;
+    lex.bestRank = data.bestRank;
+    lex.parent = data.parent;
+    lex.count = data.ch.length;
+    lex.size = data.size;
+    return lex;
+  }
+
+  /** The trie's arrays, trimmed to the nodes in use. Pass their buffers as transferables. */
+  toData(): LexiconData {
+    const n = this.count;
+    return {
+      ch: this.ch.slice(0, n),
+      firstChild: this.firstChild.slice(0, n),
+      nextSibling: this.nextSibling.slice(0, n),
+      wordRank: this.wordRank.slice(0, n),
+      bestRank: this.bestRank.slice(0, n),
+      parent: this.parent.slice(0, n),
+      size: this.size,
+    };
   }
 
   /** Parse the newline-separated list produced by the dictionary build. */
