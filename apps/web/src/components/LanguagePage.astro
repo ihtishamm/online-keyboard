@@ -1,7 +1,10 @@
 ---
 import "@fontsource/noto-naskh-arabic/400.css";
 import "@fontsource/noto-nastaliq-urdu/400.css";
+import "@fontsource/noto-sans-bengali/400.css";
+import "@fontsource/noto-sans-devanagari/400.css";
 import { getLanguage, getLayout, layoutSlug } from "@okb/layouts";
+import { FONT_CLASS } from "./fonts";
 import KeyboardApp from "./keyboard/KeyboardApp";
 import LayoutChart from "./LayoutChart.astro";
 import RomanGuide from "./RomanGuide.astro";
@@ -20,6 +23,7 @@ const layout = getLayout(layoutId);
 const copy = copyFor(slug);
 const isDefault = layoutId === language.layouts[0];
 const layoutCopy = copy.layouts[layoutId];
+const otherLayouts = language.layouts.filter((id) => id !== layoutId);
 
 const title = isDefault
   ? copy.title
@@ -57,11 +61,15 @@ const jsonLd = [
 ];
 ---
 
-<Base title={title} description={description}>
+<Base title={title} description={description} nastaliq={language.fonts.includes("nastaliq")}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
     <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">{heading}</h1>
-    <span class="font-nastaliq text-2xl text-accent" lang={language.lang} dir={language.dir}>
+    <span
+      class={`${FONT_CLASS[language.fonts[0]!]} text-2xl text-accent`}
+      lang={language.lang}
+      dir={language.dir}
+    >
       {copy.headingNative}
     </span>
   </div>
@@ -79,7 +87,7 @@ const jsonLd = [
     <section aria-labelledby="layout-heading" class="min-w-0">
       <h2 id="layout-heading" class="mb-2 text-xl font-semibold">
         {layout.name.en} layout{" "}
-        <span class="font-naskh" lang={language.lang}>
+        <span class="font-script" lang={language.lang}>
           ({layout.name.native})
         </span>
       </h2>
@@ -92,11 +100,10 @@ const jsonLd = [
       ) : (
         <LayoutChart layout={layout} />
       )}
-      <p class="mt-3 text-sm text-muted">
-        Other layouts:{" "}
-        {language.layouts
-          .filter((id) => id !== layoutId)
-          .map((id, i) => (
+      {otherLayouts.length > 0 && (
+        <p class="mt-3 text-sm text-muted">
+          Other layouts:{" "}
+          {otherLayouts.map((id, i) => (
             <>
               {i > 0 && ", "}
               <a
@@ -107,7 +114,9 @@ const jsonLd = [
               </a>
             </>
           ))}
-      </p>
+        </p>
+      )}
+      <p class="mt-3 text-xs text-muted">Layout source: {layout.source}</p>
     </section>
 
     <section aria-labelledby="tips-heading" class="min-w-0">

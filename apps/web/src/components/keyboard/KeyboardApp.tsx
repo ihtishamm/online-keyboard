@@ -1,4 +1,5 @@
 import {
+  KEY_CODES,
   ModifierLatch,
   TypingMachine,
   US_QWERTY,
@@ -10,13 +11,16 @@ import { getLanguage, getLayout, getScheme, layoutSlug, type FontId } from "@okb
 import {
   useCallback,
   useEffect,
+  useMemo,
   useReducer,
   useRef,
   useState,
   type KeyboardEvent as ReactKeyboardEvent,
 } from "react";
+import { FONT_CLASS } from "../fonts";
 import { countText } from "./actions";
 import CandidateBar from "./CandidateBar";
+import { hasDictionary } from "./dictionary";
 import { deleteBackward, insertText } from "./editor-ops";
 import { hasCoarsePointer, isAltGr } from "./platform";
 import { loadPreference, savePreference } from "./preferences";
@@ -24,8 +28,6 @@ import Toolbar, { FONT_SIZES } from "./Toolbar";
 import { useDrafts } from "./useDrafts";
 import { useSuggestions } from "./useSuggestions";
 import VirtualKeyboard, { type KeyAction } from "./VirtualKeyboard";
-
-const FONT_CLASS: Record<FontId, string> = { nastaliq: "font-nastaliq", naskh: "font-naskh" };
 
 /** In Roman mode, characters that end a word (anything but letters, apostrophes and digits). */
 const isBoundary = (text: string) => !/^[A-Za-z'0-9]*$/.test(text);
@@ -52,6 +54,16 @@ export default function KeyboardApp({
   machineRef.current ??= new TypingMachine(layout);
   const machine = machineRef.current;
   const latch = useRef(new ModifierLatch()).current;
+
+  const letterKeys = useMemo(
+    () =>
+      new Set(
+        KEY_CODES.filter((code) =>
+          [layout.keys[code]?.n, layout.keys[code]?.s].some((v) => v && /[\p{L}\p{M}]/u.test(v)),
+        ),
+      ),
+    [layout],
+  );
 
   const [, rerender] = useReducer((x: number) => x + 1, 0);
   const [passthrough, setPassthrough] = useState(false);
@@ -330,7 +342,7 @@ export default function KeyboardApp({
                 }`}
               >
                 {l.name.en}
-                <span className="font-naskh ms-1.5" lang={l.lang}>
+                <span className="font-script ms-1.5" lang={l.lang}>
                   {l.name.native}
                 </span>
               </button>
@@ -414,22 +426,24 @@ export default function KeyboardApp({
         className={`${FONT_CLASS[font]} min-h-32 w-full resize-y rounded-xl border border-border bg-surface px-4 py-3 text-text shadow-sm placeholder:text-muted/60 focus:border-accent focus:outline-none sm:min-h-56`}
       />
 
-      <CandidateBar
-        state={suggest.state}
-        roman={roman}
-        lang={language.lang}
-        dir={language.dir}
-        predict={predict}
-        onTogglePredict={() => {
-          const next = !predict;
-          setPredict(next);
-          savePreference("predict", next ? "on" : "off");
-          setAnnouncement(next ? "Word suggestions on" : "Word suggestions off");
-        }}
-        onPick={(i) => suggest.pick(i)}
-        onKeep={keepRoman}
-        showNumbers={!coarse}
-      />
+      {(roman || hasDictionary(slug)) && (
+        <CandidateBar
+          state={suggest.state}
+          roman={roman}
+          lang={language.lang}
+          dir={language.dir}
+          predict={predict}
+          onTogglePredict={() => {
+            const next = !predict;
+            setPredict(next);
+            savePreference("predict", next ? "on" : "off");
+            setAnnouncement(next ? "Word suggestions on" : "Word suggestions off");
+          }}
+          onPick={(i) => suggest.pick(i)}
+          onKeep={keepRoman}
+          showNumbers={!coarse}
+        />
+      )}
 
       <div className="flex flex-wrap items-center justify-between gap-2 px-1 text-xs text-muted">
         <span>
@@ -458,6 +472,7 @@ export default function KeyboardApp({
           caps={displayMods.caps}
           passthrough={passthrough}
           nativeName={language.name.native}
+          letterKeys={letterKeys}
           pressed={pressed}
           onChar={onChar}
           onAlternate={onAlternate}

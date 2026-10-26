@@ -10,9 +10,14 @@ interface Props {
   description?: string;
   /** Language of the page's main content (the UI chrome is English). */
   lang?: string;
+  /**
+   * Fetch the Nastaliq font once the page is idle. Pages for languages not written in Nastaliq
+   * skip the download; the logo then stays in Naskh unless the font is already cached.
+   */
+  nastaliq?: boolean;
 }
 
-const { title, description = SITE.description, lang = "en" } = Astro.props;
+const { title, description = SITE.description, lang = "en", nastaliq = true } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -31,7 +36,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
-    <script is:inline>
+    <script is:inline define:vars={{ fetchNastaliq: nastaliq }}>
       // Nastaliq: apply at once if this browser has loaded it before (it is in the HTTP cache);
       // otherwise fetch it when the page is idle, then swap it in. See .font-nastaliq in CSS.
       (() => {
@@ -43,6 +48,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         } catch {
           /* storage unavailable: load on idle below */
         }
+        if (!fetchNastaliq) return;
         if (!document.fonts?.load) return ready();
         const load = () =>
           document.fonts.load('1em "Noto Nastaliq Urdu"', "\u0627\u0628").then(() => {

@@ -256,7 +256,13 @@ online-keyboard/
   - Evaluation runs in CI: `pnpm --filter @okb/dictionaries eval:ur` prints the misses.
 
 ### Phase 3: Regional language pack and tools (weeks 8–10)
-- [ ] Arabic, Farsi, Pashto, Sindhi, **Shahmukhi Punjabi**, **Saraiki**, **Balochi**, Kashmiri, Hindi, Bangla (layouts, fonts and page copy).
+- [x] Arabic, Farsi, Pashto, Sindhi, **Shahmukhi Punjabi**, **Saraiki**, **Balochi**, Kashmiri, Hindi, Bangla (layouts, fonts and page copy).
+  - Layouts are generated from vendored open sources (`packages/layouts/vendor/`, licences included) by `pnpm --filter @okb/layouts import:layouts`; a test fails if `data/` drifts from them. Windows standards come from Unicode CLDR 43 (new `importCldr` in the engine): Arabic (101), Persian (Standard, ISIRI 9147), Pashto, Hindi InScript, Bengali InScript. Phonetic layouts come from Keyman (MIT): Sindhi (Rachitrali), Shahmukhi (SIL), Saraiki (Parvez Qadir), Balochi (SIL), Kashmiri (SIL).
+  - Our changes are listed in each layout's `source` (shown under the layout chart): Sindhi spelling fixes (ڪ on K, ه, ي), Shahmukhi آ as one character, Urdu-style digits for Saraiki/Kashmiri, Balochi's Ctrl layer on AltGr, ZWJ/ZWNJ/₹/৳ on Shift+AltGr for InScript. All output is NFC.
+  - Fonts: Noto Naskh/Nastaliq for Arabic script (Sindhi Naskh only: Nastaliq lacks ڪ), Noto Sans Devanagari/Bengali. Nastaliq is no longer fetched on pages that don't offer it.
+  - Phones keep punctuation keys that carry letters (Arabic ج د ك ط, InScript ड च ट य, Sindhi ٿ ڱ ڌ ڳ). The suggestion bar is hidden for languages without a word list.
+  - Golden typing tests per language (unit + e2e), alphabet coverage tests, axe on every page.
+  - Follow-ups: dedicated mobile rows for the denser layouts; phonetic Hindi/Bangla (Avro-style) and Gurmukhi Punjabi; word lists for the new languages.
 - [ ] InPage ↔ Unicode converter.
 - [ ] Export to .docx, .pdf and a Nastaliq image card.
 - [ ] Emoji panel with search.

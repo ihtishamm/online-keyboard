@@ -16,6 +16,8 @@ export interface VirtualKeyboardProps {
   passthrough: boolean;
   /** Short native name of the language for the switch key, e.g. "اردو". */
   nativeName: string;
+  /** Keys that type letters or marks: never hidden on narrow screens. */
+  letterKeys: ReadonlySet<KeyCode>;
   /** Physical keys currently held, by `KeyboardEvent.code`. */
   pressed: ReadonlySet<string>;
   onChar: (code: KeyCode) => void;
@@ -27,7 +29,10 @@ const LONG_PRESS_MS = 450;
 const REPEAT_DELAY_MS = 450;
 const REPEAT_INTERVAL_MS = 60;
 
-/** Keys hidden on narrow screens; their characters stay reachable through long-press. */
+/**
+ * Punctuation keys hidden on narrow screens (their characters stay reachable through
+ * long-press), unless the layout puts letters on them, as Arabic and InScript do.
+ */
 const SECONDARY: ReadonlySet<KeyCode> = new Set<KeyCode>([
   "Backquote",
   "Minus",
@@ -183,7 +188,7 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
     return (
       <div
         key={code}
-        className={`relative flex min-w-0 flex-1 basis-0 ${SECONDARY.has(code) ? "max-sm:hidden" : ""}`}
+        className={`relative flex min-w-0 flex-1 basis-0 ${SECONDARY.has(code) && !props.letterKeys.has(code) ? "max-sm:hidden" : ""}`}
       >
         <button
           type="button"
@@ -207,7 +212,7 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
           )}
           <span
             aria-hidden="true"
-            className={`pointer-events-none text-xl sm:text-2xl ${isAscii ? "" : "font-naskh"}`}
+            className={`pointer-events-none text-xl sm:text-2xl ${isAscii ? "" : "font-script"}`}
           >
             {shown || " "}
           </span>
@@ -233,7 +238,7 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
                 type="button"
                 role="menuitem"
                 data-alt={alt}
-                className="font-naskh h-11 min-w-11 rounded-md bg-key px-2 text-2xl hover:bg-accent-soft"
+                className="font-script h-11 min-w-11 rounded-md bg-key px-2 text-2xl hover:bg-accent-soft"
                 onClick={() => {
                   onAlternate(alt);
                   setPopup(null);

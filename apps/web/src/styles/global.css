@@ -111,6 +111,10 @@
 :root {
   --stack-nastaliq: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
   --stack-naskh: "Noto Naskh Arabic", serif;
+  --stack-devanagari: "Noto Sans Devanagari", sans-serif;
+  --stack-bengali: "Noto Sans Bengali", sans-serif;
+  /* Key caps, candidates and other UI glyphs in any of our scripts (fonts load per glyph range). */
+  --stack-script: "Noto Naskh Arabic", "Noto Sans Devanagari", "Noto Sans Bengali", serif;
   --text-editor: 1.75rem;
   --leading-nastaliq: 2.2;
 }
@@ -151,6 +155,20 @@
   .font-naskh {
     font-family: var(--stack-naskh);
     line-height: 1.8;
+  }
+
+  .font-devanagari {
+    font-family: var(--stack-devanagari);
+    line-height: 1.7;
+  }
+
+  .font-bengali {
+    font-family: var(--stack-bengali);
+    line-height: 1.7;
+  }
+
+  .font-script {
+    font-family: var(--stack-script);
   }
 }
 

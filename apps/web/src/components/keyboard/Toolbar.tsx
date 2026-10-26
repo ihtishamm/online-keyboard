@@ -21,6 +21,8 @@ export const FONT_SIZES = { min: 18, max: 56, step: 4, default: 28 } as const;
 const FONT_LABELS: Record<FontId, { en: string; native: string }> = {
   nastaliq: { en: "Nastaliq", native: "نستعلیق" },
   naskh: { en: "Naskh", native: "نسخ" },
+  devanagari: { en: "Devanagari", native: "देवनागरी" },
+  bengali: { en: "Bengali", native: "বাংলা" },
 };
 
 export interface ToolbarProps {

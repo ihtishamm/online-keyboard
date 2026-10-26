@@ -1,6 +1,10 @@
 ---
+import "@fontsource/noto-naskh-arabic/400.css";
 import "@fontsource/noto-nastaliq-urdu/400.css";
+import "@fontsource/noto-sans-bengali/400.css";
+import "@fontsource/noto-sans-devanagari/400.css";
 import { LANGUAGES } from "@okb/layouts";
+import { FONT_CLASS } from "../components/fonts";
 import Base from "../layouts/Base.astro";
 import { SITE } from "../config/site";
 ---
@@ -26,16 +30,16 @@ import { SITE } from "../config/site";
             class="flex items-center justify-between rounded-xl border border-border bg-surface px-5 py-4 text-text no-underline hover:border-accent"
           >
             <span class="text-lg font-medium">{l.name.en} keyboard</span>
-            <span class="font-nastaliq text-2xl text-accent" lang={l.lang} dir={l.dir}>
+            <span
+              class={`${FONT_CLASS[l.fonts[0]!]} text-2xl text-accent`}
+              lang={l.lang}
+              dir={l.dir}
+            >
               {l.name.native}
             </span>
           </a>
         </li>
       ))}
     </ul>
-    <p class="mt-6 text-sm text-muted">
-      More languages are coming: Arabic, Farsi, Pashto, Sindhi, Shahmukhi Punjabi, Saraiki, Balochi,
-      Kashmiri, Hindi and Bangla.
-    </p>
   </section>
 </Base>

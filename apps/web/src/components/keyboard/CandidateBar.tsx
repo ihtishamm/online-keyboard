@@ -59,7 +59,7 @@ export default function CandidateBar(props: CandidateBarProps) {
                 {i + 1}
               </span>
             )}
-            <span className="font-naskh" lang={lang}>
+            <span className="font-script" lang={lang}>
               {item}
             </span>
           </button>

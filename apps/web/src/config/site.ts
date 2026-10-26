@@ -4,5 +4,5 @@ export const SITE = {
   nameNative: "لکھو",
   tagline: "Type any language, beautifully.",
   description:
-    "Free online keyboards for Urdu and the languages of South Asia. Nastaliq script, Roman Urdu typing, works offline, and your text never leaves your device.",
+    "Free online keyboards for Urdu, Arabic, Farsi, Pashto, Sindhi, Punjabi, Saraiki, Balochi, Kashmiri, Hindi and Bangla. Nastaliq script, Roman Urdu typing, and your text never leaves your device.",
 } as const;
