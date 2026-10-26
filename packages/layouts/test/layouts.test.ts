@@ -80,6 +80,16 @@ describe("registry", () => {
     }
   });
 
+  it("only types NFC-normalised text", () => {
+    for (const layout of allLayouts()) {
+      for (const [code, def] of Object.entries(layout.keys)) {
+        for (const v of [def?.n, def?.s, def?.ag, def?.sag]) {
+          if (v) expect(v.normalize("NFC"), `${layout.id} ${code} "${v}"`).toBe(v);
+        }
+      }
+    }
+  });
+
   it("looks up languages by slug", () => {
     expect(getLanguage("urdu").lang).toBe("ur");
     expect(() => getLanguage("klingon")).toThrow();
@@ -127,6 +137,67 @@ describe("golden typing", () => {
   it("types shifted letters on the phonetic layout", () => {
     // ٹھیک = T h(shift) i k
     expect(typeOn("ur-phonetic", "THik")).toBe("ٹھیک");
+  });
+});
+
+/** Letters each layout must be able to type (core alphabets, not every loan letter). */
+const ALPHABETS: Record<string, string> = {
+  "ar-standard": "ابتثجحخدذرزسشصضطظعغفقكلمنهويءآأإؤئةى",
+  "fa-standard": "آابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیءئ\u200C",
+  "ps-standard": "اآبپتټثجځچڅحخدډذرړزږژسشښصضطظعغفقکګلمنڼوهېیۍيئ",
+  "sd-phonetic": "اٻبڀتٿٽثپجڄڃچڇحخدڌڏڊڍذرڙزژسشصضطظعغفڦقڪکڳگڱلمنڻوهھءي",
+  "pnb-phonetic": "اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںݨوہھءیے",
+  "skr-phonetic": "اآبٻپتٹثجڄچحخدڈݙذرڑزژسشصضطظعغفقکگڳلمنںݨوہھءیے",
+  "bal-phonetic": "اآبپتٹجچدڈرڑزژسشکگلمنوهیےءئ",
+  "ks-phonetic": "اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوۄہھءیےؠٲ",
+  "hi-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
+  "bn-inscript": "অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহৎ",
+};
+
+/** Golden words typed on a US keyboard. */
+const GOLDEN: [layoutId: string, keys: string, expected: string][] = [
+  ["ar-standard", "lvpfh", "مرحبا"],
+  ["fa-standard", "sghl", "سلام"],
+  ["ps-standard", "FAj,", "پښتو"],
+  ["sd-phonetic", "sn\\i", "سنڌي"],
+  ["pnb-phonetic", "pnjabi", "پنجابی"],
+  ["skr-phonetic", "sraEiki", "سرائیکی"],
+  ["bal-phonetic", "blwcy", "بلوچی"],
+  ["ks-phonetic", "k-xPr", "کٲشُر"],
+  ["hi-inscript", "vcmdls", "नमस्ते"],
+  ["bn-inscript", "yexne", "বাংলা"],
+];
+
+describe("regional language pack", () => {
+  it("covers every layout in the registry", () => {
+    const expected = allLayouts()
+      .map((l) => l.id)
+      .filter((id) => !id.startsWith("ur-"));
+    expect(Object.keys(ALPHABETS).sort()).toEqual(expected.sort());
+  });
+
+  it.each(Object.entries(ALPHABETS))("%s can type its alphabet", (id, letters) => {
+    const chars = producible(id);
+    const missing = [...letters].filter((ch) => !chars.has(ch));
+    expect(missing).toEqual([]);
+  });
+
+  it.each(GOLDEN)("%s: %s types %s", (id, keys, expected) => {
+    expect(typeOn(id, keys)).toBe(expected);
+  });
+
+  it("gives every language a sample in its own script", () => {
+    for (const lang of LANGUAGES) {
+      const script = getLayout(lang.layouts[0]!).script;
+      expect(lang.sample).toMatch(new RegExp(`\\p{Script=${script}}`, "u"));
+    }
+  });
+
+  it("only offers Nastaliq for Arabic-script languages", () => {
+    for (const lang of LANGUAGES) {
+      if (lang.fonts.includes("nastaliq") || lang.fonts.includes("naskh"))
+        expect(getLayout(lang.layouts[0]!).script).toBe("Arab");
+    }
   });
 });
 

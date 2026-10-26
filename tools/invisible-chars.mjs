@@ -2,10 +2,12 @@
 /**
  * Keeps invisible characters out of source files.
  *
- * - In .ts/.mts/.js/.mjs/.json files, combining marks (Mn/Me) and format characters (Cf:
- *   ZWJ, ZWNJ, LRM, RLM, bidi controls...) must be written as \uXXXX escapes so layouts and
- *   tests stay reviewable. `--fix` rewrites them. (Escapes are valid in string, template and
- *   regex literals, and harmless in comments.)
+ * - In .ts/.mts/.js/.mjs/.json files, format characters (Cf: ZWJ, ZWNJ, LRM, RLM, bidi
+ *   controls...) and lone combining marks (Mn/Me not attached to a letter, such as a zabar on
+ *   its own layout key) must be written as \uXXXX escapes so layouts and tests stay
+ *   reviewable. Marks inside words (हिन्दी, کٲشُر) render visibly and may stay as they are.
+ *   `--fix` rewrites them. (Escapes are valid in string, template and regex literals, and
+ *   harmless in comments.)
  * - In every checked file, including .tsx/.astro/.md, bidi embedding/override/isolate controls
  *   are rejected outright: they can make code display differently from how it runs
  *   ("Trojan Source", CVE-2021-42574).
@@ -29,7 +31,7 @@ const ESCAPABLE_EXT = new Set([".ts", ".mts", ".js", ".mjs", ".json"]);
 const CHECK_EXT = new Set([...ESCAPABLE_EXT, ".tsx", ".astro", ".md", ".css", ".yml", ".yaml"]);
 const SKIP_FILES = new Set(["pnpm-lock.yaml"]);
 
-const INVISIBLE = /[\p{Mn}\p{Me}\p{Cf}]/gu;
+const INVISIBLE = /\p{Cf}|(?<![\p{L}\p{M}])[\p{Mn}\p{Me}]/gu;
 const BIDI_CONTROL = /[\u202A-\u202E\u2066-\u2069]/gu;
 
 const fix = process.argv.includes("--fix");
