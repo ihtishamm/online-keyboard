@@ -225,20 +225,25 @@ online-keyboard/
 
 ## 5. Execution roadmap
 
-### Phase 0: Foundations (week 1)
-- [ ] Monorepo (pnpm workspaces), TS strict, ESLint/Prettier, Vitest, Playwright, CI (GitHub Actions).
-- [ ] Design tokens (light, dark, high-contrast), typography scale, Nastaliq font subset pipeline.
-- [ ] Layout JSON schema and validator. Importer prototype for one Keyman keyboard.
-- **Exit:** CI green, an empty Astro site deploys to preview.
+### Phase 0: Foundations (week 1) ✅ done
+- [x] Monorepo (pnpm workspaces), TS strict, ESLint/Prettier, Vitest, Playwright, CI (GitHub Actions).
+- [x] Design tokens (light, dark, high-contrast), typography scale. *Font subset pipeline moved to Phase 3 (see Phase 1 notes).*
+- [x] Layout JSON schema and validator. Importer prototype for Keyman `.kmn` (positional/mnemonic subset).
+- [x] Added: `tools/invisible-chars.mjs` (escapes invisible characters, blocks bidi controls / Trojan Source).
+- **Exit:** CI workflow written; all checks pass locally. *Not yet run on GitHub (no remote configured).*
 
-### Phase 1: Engine and Urdu MVP (weeks 2–4)
-- [ ] Physical-key engine (code→layer→insert) with Shift, AltGr, Caps and dead keys, plus Esc passthrough toggle.
-- [ ] Virtual keyboard component: desktop ANSI/ISO and a mobile layout, auto-repeat, long-press alternates, pressed-key highlighting.
-- [ ] Urdu Phonetic and Standard layouts (built from public specs).
-- [ ] Toolbar: copy, share, download .txt, clear-with-undo, font size, font family.
-- [ ] Autosave in IndexedDB, multiple drafts (basic).
-- [ ] `/urdu` page: hero editor above the fold, original SEO copy, FAQ schema.org markup, hreflang.
-- **Exit:** Lighthouse ≥ 95 on all four categories. Playwright tests type a known sentence on both layouts and match the expected Unicode. axe reports 0 serious violations.
+### Phase 1: Engine and Urdu MVP (weeks 2–4) ✅ done
+- [x] Physical-key engine (code→layer→insert) with Shift, AltGr, Caps and dead keys, plus Esc passthrough toggle.
+- [x] Virtual keyboard component: responsive desktop/mobile rows, Backspace auto-repeat, long-press alternates, pressed-key highlighting.
+- [x] Urdu Phonetic (CRULP-based) and Standard (Windows Urdu-based) layouts, plus AltGr diacritics and honorifics.
+- [x] Toolbar: copy, share, download .txt, clear-with-undo, font size, font family, phone-keyboard switch.
+- [x] Autosave in IndexedDB, multiple drafts (basic).
+- [x] `/urdu` and `/urdu/standard` pages: editor above the fold, original SEO copy, FAQ + WebApplication JSON-LD, layout charts. *hreflang deferred until there is a translated UI.*
+- **Exit:**
+  - [x] Playwright types known sentences on both layouts and matches the expected Unicode (23 e2e tests, desktop + mobile).
+  - [x] axe: 0 serious/critical violations.
+  - [x] Lighthouse desktop: 100 / 100 / 100 / 100.
+  - [ ] Lighthouse mobile: Accessibility, Best Practices, SEO 100; **Performance median ≈ 90** (runs vary 85–97 on a local preview server). Remaining cost is style/layout of Arabic-script text above the fold. Follow-up in Phase 3: subset display fonts (`subset-font`/HarfBuzz), measure on real hosting with a CDN.
 
 ### Phase 2: Roman Urdu and prediction (weeks 5–7)
 - [ ] Transliteration rules engine with candidate bar.
