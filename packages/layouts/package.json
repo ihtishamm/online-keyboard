@@ -1,0 +1,21 @@
+{
+  "name": "@okb/layouts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Keyboard layout data and the language registry.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@okb/engine": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
+  }
+}
