@@ -7,8 +7,9 @@
  *   + [RALT K_A] > ...          (also CTRL ALT, RA)
  *   + 'a' > ...                 (mnemonic rules, mapped through US QWERTY)
  * Rules that need context, stores, deadkey() or any()/index() are reported as warnings
- * so a human can port them to `deadkeys` by hand.
+ * so a human can port them to `deadkeys` by hand. The space bar is never mapped.
  */
+import { ISO_KEYS } from "./cldr";
 import { US_QWERTY, type KeyCode } from "./keycodes";
 import type { KeyDef, LayoutInput } from "./schema";
 
@@ -40,6 +41,14 @@ for (const [code, [n, s]] of Object.entries(US_QWERTY) as [KeyCode, readonly [st
   US_CHAR.set(s, [code, "s"]);
 }
 
+export interface KeymanOptions {
+  /**
+   * Read Ctrl (without Alt) as AltGr. Some keyboards put letters on Ctrl, which browsers
+   * reserve for shortcuts, so we move that layer to AltGr.
+   */
+  ctrlAsAltGr?: boolean;
+}
+
 export interface KeymanImport {
   name: string | null;
   keys: NonNullable<LayoutInput["keys"]>;
@@ -62,18 +71,20 @@ function parseOutput(src: string): string | null {
   return out;
 }
 
-function layerFor(mods: Set<string>): keyof KeyDef | null {
+function layerFor(mods: Set<string>, options: KeymanOptions): keyof KeyDef | null {
   const shift = mods.delete("SHIFT");
-  const altgr = mods.delete("RALT") || mods.delete("RA") || (mods.has("CTRL") && mods.has("ALT"));
-  mods.delete("CTRL");
-  mods.delete("ALT");
+  const ctrl = mods.has("CTRL") || mods.has("LCTRL");
+  const alt = mods.has("ALT") || mods.has("LALT");
+  const ctrlOnly = ctrl && !alt && options.ctrlAsAltGr === true;
+  const altgr = mods.delete("RALT") || mods.delete("RA") || (ctrl && alt) || ctrlOnly;
+  if (altgr) for (const m of ["CTRL", "LCTRL", "ALT", "LALT"]) mods.delete(m);
   mods.delete("NCAPS");
   if (mods.size > 0) return null;
   if (altgr) return shift ? "sag" : "ag";
   return shift ? "s" : "n";
 }
 
-export function importKeyman(source: string): KeymanImport {
+export function importKeyman(source: string, options: KeymanOptions = {}): KeymanImport {
   const keys: KeymanImport["keys"] = {};
   const warnings: string[] = [];
   let name: string | null = null;
@@ -110,8 +121,9 @@ export function importKeyman(source: string): KeymanImport {
     if (lhs.startsWith("[")) {
       const parts = lhs.slice(1, -1).trim().split(/\s+/);
       const vkey = parts.pop() ?? "";
-      code = VKEYS[vkey];
-      layer = layerFor(new Set(parts.map((p) => p.toUpperCase())));
+      if (vkey === "K_SPACE") return;
+      code = VKEYS[vkey] ?? ISO_KEYS[vkey]; // K_A, or an ISO position such as B08
+      layer = layerFor(new Set(parts.map((p) => p.toUpperCase())), options);
     } else {
       const ch = lhs.slice(1, -1);
       const hit = US_CHAR.get(ch);
