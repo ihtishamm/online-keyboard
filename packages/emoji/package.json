@@ -1,0 +1,20 @@
+{
+  "name": "@okb/emoji",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Emoji list, skin tones and search keywords (Unicode emoji-test.txt + CLDR annotations).",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build:data": "node scripts/build.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
+  }
+}

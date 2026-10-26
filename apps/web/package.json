@@ -20,6 +20,7 @@
     "@fontsource/noto-sans-bengali": "^5.3.0",
     "@fontsource/noto-sans-devanagari": "^5.3.0",
     "@okb/dictionaries": "workspace:*",
+    "@okb/emoji": "workspace:*",
     "@okb/engine": "workspace:*",
     "@okb/inpage": "workspace:*",
     "@okb/layouts": "workspace:*",

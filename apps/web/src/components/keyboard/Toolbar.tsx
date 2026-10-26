@@ -10,6 +10,7 @@ import {
   Redo2,
   Share2,
   Smartphone,
+  Smile,
   Trash2,
   Undo2,
 } from "lucide-react";
@@ -66,6 +67,7 @@ export interface ToolbarProps {
     create: () => void;
     remove: () => void;
   };
+  emoji: { open: boolean; onToggle: () => void };
   /** Present only on touch devices. */
   phoneKeyboard?: { enabled: boolean; onToggle: () => void };
 }
@@ -254,6 +256,12 @@ export default function Toolbar(props: ToolbarProps) {
           </button>
         </div>
       </details>
+      <ToolButton
+        label="Emoji"
+        icon={<Smile {...icon} />}
+        pressed={props.emoji.open}
+        onClick={props.emoji.onToggle}
+      />
 
       <span aria-hidden="true" className="mx-1 h-6 w-px bg-border" />
       <ToolButton

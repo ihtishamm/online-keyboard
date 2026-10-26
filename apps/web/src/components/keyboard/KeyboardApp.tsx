@@ -9,6 +9,8 @@ import {
 } from "@okb/engine";
 import { getLanguage, getLayout, getScheme, layoutSlug, type FontId } from "@okb/layouts";
 import {
+  lazy,
+  Suspense,
   useCallback,
   useEffect,
   useMemo,
@@ -28,6 +30,8 @@ import Toolbar, { FONT_SIZES } from "./Toolbar";
 import { useDrafts } from "./useDrafts";
 import { useSuggestions } from "./useSuggestions";
 import VirtualKeyboard, { type KeyAction } from "./VirtualKeyboard";
+
+const EmojiPanel = lazy(() => import("./EmojiPanel"));
 
 /** In Roman mode, characters that end a word (anything but letters, apostrophes and digits). */
 const isBoundary = (text: string) => !/^[A-Za-z'0-9]*$/.test(text);
@@ -73,6 +77,7 @@ export default function KeyboardApp({
   const [hydrated, setHydrated] = useState(false);
   const [coarse, setCoarse] = useState(false);
   const [phoneKeyboard, setPhoneKeyboard] = useState(false);
+  const [emojiOpen, setEmojiOpen] = useState(false);
   const [font, setFont] = useState<FontId>(language.fonts[0]!);
   const [fontSize, setFontSize] = useState<number>(FONT_SIZES.default);
   const [counts, setCounts] = useState({ words: 0, chars: 0 });
@@ -384,6 +389,13 @@ export default function KeyboardApp({
           create: () => void drafts.create().then(refreshCounts),
           remove: () => void drafts.remove().then(refreshCounts),
         }}
+        emoji={{
+          open: emojiOpen,
+          onToggle: () => {
+            setEmojiOpen(!emojiOpen);
+            setAnnouncement(emojiOpen ? "Emoji closed" : "Emoji open");
+          },
+        }}
         phoneKeyboard={
           coarse
             ? {
@@ -464,7 +476,28 @@ export default function KeyboardApp({
         </span>
       </div>
 
-      {!phoneKeyboard && (
+      {emojiOpen && (
+        <Suspense
+          fallback={
+            <p className="rounded-xl border border-border bg-surface p-4 text-sm text-muted">
+              Loading emoji…
+            </p>
+          }
+        >
+          <EmojiPanel
+            lang={language.lang}
+            nativeName={language.name.native}
+            onPick={typeText}
+            onClose={() => {
+              setEmojiOpen(false);
+              editorRef.current?.focus({ preventScroll: true });
+            }}
+          />
+        </Suspense>
+      )}
+
+      {/* On phones the emoji panel takes the on-screen keyboard's place, as phone keyboards do. */}
+      {!phoneKeyboard && !(coarse && emojiOpen) && (
         <VirtualKeyboard
           labelFor={(code) => machine.labelFor(code, displayMods)}
           longpress={layout.longpress}

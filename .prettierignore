@@ -6,3 +6,4 @@ playwright-report/
 test-results/
 plan.md
 vendor/
+packages/emoji/data/

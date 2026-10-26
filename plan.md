@@ -275,7 +275,11 @@ online-keyboard/
   - Image card: canvas PNG in the editor's font, in Square, Portrait (4:5) and Story (9:16) shapes, four colour themes, the largest font size that fits, an optional site-address watermark, and Share on devices that can share files.
   - On phones, toolbar menus open as a bottom sheet (the scrolling toolbar clipped them).
   - Tests: ZIP/CRC, docx parts, print sheet, text fitting (unit); e2e downloads the .docx and PNG, checks the print-only view, and runs axe on the dialog.
-- [ ] Emoji panel with search.
+- [x] Emoji panel with search. Toolbar "Emoji" button; the panel loads on first open.
+  - `packages/emoji`: 1,870 emoji (Unicode emoji-test.txt, capped at Emoji 15.0 so older phones draw them all), 305 with skin tones, CLDR 49 names and keywords in English plus every page language (Saraiki, Balochi and Kashmiri use Urdu; Shahmukhi gaps filled from Urdu). Built by a script from pinned sources; ~45 KB + ~25-50 KB gzipped per language.
+  - Search matches word prefixes in English or the page language (پاکستان, خدا حافظ, नमस्ते), ignores case, accents and Arabic vowel marks, and folds ي/ی, ك/ک, ه/ہ. Enter inserts the top result.
+  - Categories, Recently used, a remembered skin tone, arrow-key grid navigation, Escape to close. On phones the panel takes the on-screen keyboard's place.
+  - Tests: data and search (unit); e2e for insertion, both-language search, skin tone + recents across reloads, keyboard navigation, whole-emoji backspace, phone layout, axe.
 - [ ] PWA offline mode.
 - **Exit:** each language passes a golden-text typing test, and the site works offline after the first visit.
 
