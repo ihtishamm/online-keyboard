@@ -125,7 +125,7 @@ export const COPY: Record<string, LanguageCopy> = {
         roman: "ch, chh",
         urdu: "چ  چھ",
         examples: [
-          ["chai", "چائے"],
+          ["chalo", "چلو"],
           ["chhota", "چھوٹا"],
         ],
       },

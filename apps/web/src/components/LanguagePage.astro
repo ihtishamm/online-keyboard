@@ -4,6 +4,7 @@ import "@fontsource/noto-nastaliq-urdu/400.css";
 import "@fontsource/noto-sans-bengali/400.css";
 import "@fontsource/noto-sans-devanagari/400.css";
 import { getLanguage, getLayout, layoutSlug } from "@okb/layouts";
+import { getCollection } from "astro:content";
 import { FONT_CLASS } from "./fonts";
 import KeyboardApp from "./keyboard/KeyboardApp";
 import { allSheets, pdfPath, sheetPath } from "./cheatsheet/sheets";
@@ -26,6 +27,10 @@ const isDefault = layoutId === language.layouts[0];
 const layoutCopy = copy.layouts[layoutId];
 const otherLayouts = language.layouts.filter((id) => id !== layoutId);
 const sheet = allSheets().find((s) => s.layoutId === layoutId);
+const guides = (await getCollection("guides", (g) => g.data.language === slug)).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const layoutGuide = guides.find((g) => g.data.layout === layoutId);
 
 const title = isDefault
   ? copy.title
@@ -102,6 +107,13 @@ const jsonLd = [
       ) : (
         <LayoutChart layout={layout} />
       )}
+      {layoutGuide && (
+        <p class="mt-3 text-sm">
+          <a class="text-accent underline" href={`/guides/${layoutGuide.id}`}>
+            Full guide: {layoutGuide.data.heading ?? layoutGuide.data.title}
+          </a>
+        </p>
+      )}
       {sheet && (
         <p class="mt-3 text-sm">
           <a class="text-accent underline" href={sheetPath(sheet.id)}>
@@ -153,6 +165,22 @@ const jsonLd = [
             Urdu typing test
           </a>
         </p>
+      )}
+      {guides.length > 0 && (
+        <nav aria-labelledby="guides-heading" class="mt-6">
+          <h2 id="guides-heading" class="mb-2 text-base font-semibold">
+            Guides
+          </h2>
+          <ul class="space-y-1 text-sm">
+            {guides.map((g) => (
+              <li>
+                <a class="text-accent underline" href={`/guides/${g.id}`}>
+                  {g.data.heading ?? g.data.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
       )}
     </section>
   </div>

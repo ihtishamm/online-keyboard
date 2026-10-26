@@ -196,6 +196,105 @@
   contain-intrinsic-size: auto 40rem;
 }
 
+/* Guide articles (pages/guides): Markdown output, so styled by element. */
+.guide-prose {
+  line-height: 1.75;
+
+  & > * + * {
+    margin-top: 1.1em;
+  }
+
+  & h2 {
+    margin-top: 2.2em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    scroll-margin-top: 1rem;
+  }
+
+  & h3 {
+    margin-top: 1.8em;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  & a {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+
+  & ul,
+  & ol {
+    padding-inline-start: 1.5rem;
+  }
+
+  & ul {
+    list-style: disc;
+  }
+
+  & ol {
+    list-style: decimal;
+  }
+
+  & li + li {
+    margin-top: 0.4em;
+  }
+
+  & strong {
+    font-weight: 600;
+  }
+
+  & blockquote {
+    border-inline-start: 3px solid var(--color-accent);
+    background: var(--color-surface);
+    padding: 0.75rem 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  & kbd {
+    display: inline-block;
+    min-width: 1.6em;
+    padding: 0 0.4em;
+    border: 1px solid var(--color-border);
+    border-bottom-width: 2px;
+    border-radius: 0.3rem;
+    background: var(--color-surface);
+    font-family: inherit;
+    font-size: 0.85em;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  & code {
+    font-size: 0.9em;
+  }
+
+  & table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+
+  & th,
+  & td {
+    border-bottom: 1px solid var(--color-border);
+    padding: 0.5rem 0.75rem;
+    text-align: start;
+    vertical-align: top;
+  }
+
+  & th {
+    font-weight: 600;
+    background: var(--color-surface);
+  }
+
+  /* Urdu inside English text: Naskh keeps the line height even; Nastaliq would not. */
+  & [lang="ur"] {
+    font-family: var(--stack-naskh);
+    font-size: 1.15em;
+  }
+}
+
 /* Misspelled words in the editor (keyboard/SpellOverlay.tsx). */
 .spell-error {
   text-decoration: underline wavy var(--color-bad);

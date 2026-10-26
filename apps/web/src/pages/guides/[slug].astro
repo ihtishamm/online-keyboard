@@ -1,0 +1,102 @@
+---
+import { getCollection, render } from "astro:content";
+import { SITE } from "../../config/site";
+import Base from "../../layouts/Base.astro";
+
+export async function getStaticPaths() {
+  const guides = await getCollection("guides");
+  return guides.map((guide) => ({ params: { slug: guide.id }, props: { guide } }));
+}
+
+const { guide } = Astro.props;
+const { Content, headings } = await render(guide);
+const { title, description, heading, published, updated, cta } = guide.data;
+const others = (await getCollection("guides"))
+  .filter((g) => g.id !== guide.id)
+  .sort((a, b) => a.data.order - b.data.order);
+const sections = headings.filter((h) => h.depth === 2);
+const date = (d: Date) =>
+  d.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: heading ?? title,
+  description,
+  datePublished: published.toISOString().slice(0, 10),
+  dateModified: updated.toISOString().slice(0, 10),
+  inLanguage: "en",
+  author: { "@type": "Organization", name: SITE.name },
+  publisher: { "@type": "Organization", name: SITE.name },
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+};
+---
+
+<Base title={`${title} | ${SITE.name}`} description={description}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-3xl">
+    <nav class="mb-3 text-sm text-muted" aria-label="Breadcrumb">
+      <a class="text-accent underline" href="/guides">
+        Guides
+      </a>
+    </nav>
+    <header class="mb-6">
+      <h1 class="mb-2 text-3xl font-semibold tracking-tight">{heading ?? title}</h1>
+      <p class="text-sm text-muted">
+        Updated <time datetime={updated.toISOString().slice(0, 10)}>{date(updated)}</time>
+      </p>
+    </header>
+    {sections.length > 2 && (
+      <nav
+        aria-labelledby="toc-heading"
+        class="mb-8 rounded-xl border border-border bg-surface px-5 py-4"
+      >
+        <h2 id="toc-heading" class="mb-2 text-sm font-semibold">
+          On this page
+        </h2>
+        <ol class="list-decimal space-y-1 ps-5 text-sm">
+          {sections.map((h) => (
+            <li>
+              <a class="text-accent underline" href={`#${h.slug}`}>
+                {h.text}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+    )}
+    <div class="guide-prose">
+      <Content />
+    </div>
+    <aside class="mt-10 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-accent bg-accent-soft px-5 py-4">
+      <p class="font-medium">Nothing to install: type in your browser now.</p>
+      <a
+        class="inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-accent-fg no-underline hover:opacity-90"
+        href={cta.href}
+      >
+        {cta.label}
+      </a>
+    </aside>
+    {others.length > 0 && (
+      <section aria-labelledby="more-heading" class="mt-10">
+        <h2 id="more-heading" class="mb-3 text-lg font-semibold">
+          More guides
+        </h2>
+        <ul class="space-y-2">
+          {others.map((g) => (
+            <li>
+              <a class="text-accent underline" href={`/guides/${g.id}`}>
+                {g.data.heading ?? g.data.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </article>
+</Base>

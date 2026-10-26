@@ -288,7 +288,7 @@ online-keyboard/
 - **Exit: met.** Every language passes its golden-text typing test (unit + e2e), and the site works offline after the first visit (e2e).
 - Still open from earlier phases (not checklist items): subset display fonts, try Preact, measure Lighthouse on real hosting. They need a real deploy (and new packages for subsetting and Preact), so they wait for the first deployment.
 
-### Phase 4: Engagement and growth (weeks 11–13)
+### Phase 4: Engagement and growth (weeks 11–13) ✅ done
 - [x] Urdu typing tutor and speed test (WPM, accuracy, shareable result card). `/urdu-typing-test` and `/urdu-typing-tutor`, linked from the home page and `/urdu`.
   - Test: Phonetic or Standard, 30 s / 1 min / 2 min, common words or sentences; the clock starts with the first key. Net WPM (correct characters incl. spaces / 5 / minutes), raw WPM, keystroke accuracy, right/wrong words, personal best per layout and length (on the device), and a result image to download or share. "My device already types Urdu" leaves key presses to the OS keyboard.
   - Tutor: lessons generated from the layout (home, top, bottom rows, then each with Shift, then common words and sentences). Drill words come from the Urdu frequency list at build time, using only letters learned so far; early lessons are topped up with letter groups. The next key (and Shift) lights up on the on-screen keyboard, wrong keys ask for Backspace; 90% accuracy passes a lesson, progress is saved per layout.
@@ -325,7 +325,13 @@ online-keyboard/
     - The PDFs print the site's address, so regenerate them once `PUBLIC_SITE_URL` points to the real domain. The test flags this when it runs with that variable set.
   - Each page has `DigitalDocument` structured data.
   - Tests: sheet list and PDF freshness (unit); index links, PDF download, print media showing only the sheet, no page overflow on phones, keyboard page link, and axe (e2e, desktop and mobile).
-- [ ] Blog and guides in original content: "How to type Urdu on Windows/Mac/Android", "Roman Urdu to Urdu".
+- [x] Blog and guides in original content: "How to type Urdu on Windows/Mac/Android", "Roman Urdu to Urdu". Four guides at `/guides/<slug>`: Windows (11 and 10), Mac, Android and iPhone, and Roman Urdu to Urdu. `/guides` lists them; the home page links them under Tools.
+  - Markdown in an Astro content collection (`src/content/guides`, schema in `src/content.config.ts`). Each guide has a title, description, dates, order, a call to action, and the language (and optionally the layout) page that lists it.
+  - Guide pages have `Article` structured data, an "On this page" contents list, a call to action, and links to the other guides. Prose styles are `.guide-prose` in `global.css`.
+  - The Urdu keyboard pages list the guides; the Roman layout page links the Roman Urdu guide.
+  - Device steps were checked against current vendor documentation and hedged where menus vary by version. Every Roman Urdu example was run through the converter and shows its real first choice. Writing them turned up a wrong example in the Roman spelling table (`chai` gives کہے first), now `chalo` → چلو, and the Roman chart PDF is regenerated.
+  - Tests (e2e, desktop and mobile): index lists every guide in order; each guide has an h1 and Article data, its contents links point at headings, every internal link returns 200, no page overflow, and axe; the Urdu pages link to the guides.
+- **Known issue:** the e2e test "emoji used once keeps working offline" (`e2e/offline.spec.ts`) fails about 1 run in 10 on mobile, timing out while waiting for the service worker to finish caching. It fails at the same rate without the Phase 4 guides, so it predates them.
 
 ### Phase 5: Scale and monetise (week 14 onward)
 - [ ] Bulk layout import to reach 100+ languages (prioritise by search volume).

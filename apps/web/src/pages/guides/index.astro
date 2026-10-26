@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import { SITE } from "../../config/site";
+import Base from "../../layouts/Base.astro";
+
+const guides = (await getCollection("guides")).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base
+  title={`Urdu Typing Guides: Windows, Mac, Phones and Roman Urdu | ${SITE.name}`}
+  description="Step-by-step guides to typing Urdu on Windows, Mac, Android and iPhone, and to turning Roman Urdu into Urdu script."
+>
+  <div class="mx-auto max-w-3xl">
+    <h1 class="mb-2 text-3xl font-semibold tracking-tight">Guides</h1>
+    <p class="mb-8 text-muted">
+      How to set up Urdu typing on your own devices, and how to get the most out of {SITE.name}.
+    </p>
+    <ul class="flex flex-col gap-3">
+      {guides.map((g) => (
+        <li>
+          <a
+            href={`/guides/${g.id}`}
+            class="flex flex-col gap-1 rounded-xl border border-border bg-surface px-5 py-4 text-text no-underline hover:border-accent"
+          >
+            <span class="text-lg font-medium">{g.data.heading ?? g.data.title}</span>
+            <span class="text-sm text-muted">{g.data.description}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>
