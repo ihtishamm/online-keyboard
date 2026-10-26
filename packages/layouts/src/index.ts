@@ -1,6 +1,17 @@
-import { parseLayout, type Layout } from "@okb/engine/layout";
+import type { Layout, LayoutInput } from "@okb/engine/layout";
 import urPhonetic from "../data/ur/phonetic.json";
 import urStandard from "../data/ur/standard.json";
+
+/**
+ * Raw layout files, in registry order. They are validated against the schema in the test
+ * suite (see test/layouts.test.ts), so the browser bundle does not need to ship zod.
+ */
+export const RAW_LAYOUTS: readonly LayoutInput[] = [urPhonetic, urStandard] as LayoutInput[];
+
+/** Apply schema defaults without validating (validation happens in tests). */
+function withDefaults(raw: LayoutInput): Layout {
+  return { ...raw, deadkeys: raw.deadkeys ?? [], longpress: raw.longpress ?? {} } as Layout;
+}
 
 export type FontId = "nastaliq" | "naskh";
 
@@ -20,10 +31,7 @@ export interface Language {
 }
 
 const LAYOUTS: ReadonlyMap<string, Layout> = new Map(
-  [urPhonetic, urStandard].map((raw) => {
-    const layout = parseLayout(raw);
-    return [layout.id, layout] as const;
-  }),
+  RAW_LAYOUTS.map((raw) => [raw.id, withDefaults(raw)] as const),
 );
 
 export const LANGUAGES: readonly Language[] = [

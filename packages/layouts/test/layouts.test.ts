@@ -1,6 +1,7 @@
 import { NO_MODIFIERS, TypingMachine, US_QWERTY, isKeyCode, type KeyCode } from "@okb/engine";
+import { parseLayout } from "@okb/engine/layout";
 import { describe, expect, it } from "vitest";
-import { LANGUAGES, allLayouts, getLanguage, getLayout, layoutSlug } from "../src";
+import { LANGUAGES, RAW_LAYOUTS, allLayouts, getLanguage, getLayout, layoutSlug } from "../src";
 
 /** Every letter of the Urdu alphabet plus the hamza-carrier forms in everyday use. */
 const URDU_LETTERS = [..."اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوہھءیےۃئؤۂۓ"];
@@ -37,6 +38,17 @@ function producible(layoutId: string): Set<string> {
 }
 
 describe("registry", () => {
+  it.each(RAW_LAYOUTS.map((r) => [r.id, r] as const))(
+    "%s matches the layout schema",
+    (_id, raw) => {
+      expect(() => parseLayout(raw)).not.toThrow();
+    },
+  );
+
+  it("serves layouts identical to the validated ones", () => {
+    for (const raw of RAW_LAYOUTS) expect(getLayout(raw.id)).toEqual(parseLayout(raw));
+  });
+
   it("references only existing layouts", () => {
     for (const lang of LANGUAGES)
       for (const id of lang.layouts) expect(() => getLayout(id)).not.toThrow();

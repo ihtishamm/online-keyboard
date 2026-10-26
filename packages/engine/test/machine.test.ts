@@ -5,9 +5,9 @@ import {
   TypingMachine,
   layerFor,
   outputFor,
-  parseLayout,
   type Modifiers,
 } from "../src";
+import { parseLayout } from "../src/layout";
 
 const layout = parseLayout({
   id: "xx-test",
