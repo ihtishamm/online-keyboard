@@ -269,7 +269,12 @@ online-keyboard/
   - InPage's one hamza code becomes ئ inside a word and ء at its end; آ/أ/ؤ/ۂ/ۓ are composed from letter + mark.
   - Tests: synthetic .inp files from a test compound-file writer (regular and mini streams), round trips, hamza, clipboard text; e2e for upload, paste, reverse, "Edit in Urdu keyboard", axe.
   - Not covered: InPage 3+ files (already Unicode; the page says so) and formatting (text only).
-- [ ] Export to .docx, .pdf and a Nastaliq image card.
+- [x] Export to .docx, .pdf and a Nastaliq image card. The toolbar's Download menu offers Text, Word, PDF and Image card; export code loads only when used.
+  - .docx is written in the browser (small stored-ZIP writer, no dependency): one paragraph per line, with the editor's font, size, language and direction in the document defaults. Fonts are named, not embedded (Nastaliq is over 1 MB). Checked in LibreOffice.
+  - PDF goes through the print dialog ("Save as PDF") with a print sheet holding only the text, so the browser shapes Nastaliq/Indic text and it stays selectable. A JavaScript-drawn PDF would need a shaping engine.
+  - Image card: canvas PNG in the editor's font, in Square, Portrait (4:5) and Story (9:16) shapes, four colour themes, the largest font size that fits, an optional site-address watermark, and Share on devices that can share files.
+  - On phones, toolbar menus open as a bottom sheet (the scrolling toolbar clipped them).
+  - Tests: ZIP/CRC, docx parts, print sheet, text fitting (unit); e2e downloads the .docx and PNG, checks the print-only view, and runs axe on the dialog.
 - [ ] Emoji panel with search.
 - [ ] PWA offline mode.
 - **Exit:** each language passes a golden-text typing test, and the site works offline after the first visit.

@@ -189,3 +189,36 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* "PDF" export prints #print-sheet alone (see keyboard/export/print.ts). */
+#print-sheet {
+  display: none;
+}
+
+@media print {
+  @page {
+    margin: 2cm;
+  }
+
+  html.printing,
+  html.printing body {
+    background: #fff !important;
+    color: #000 !important;
+    min-height: 0;
+  }
+
+  html.printing body > :not(#print-sheet) {
+    display: none !important;
+  }
+
+  html.printing #print-sheet {
+    display: block;
+    font-size: 16pt;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
+
+  html.printing #print-sheet p {
+    margin: 0;
+  }
+}

@@ -364,6 +364,8 @@ export default function KeyboardApp({
       <Toolbar
         editorRef={editorRef}
         fileBase={slug}
+        lang={language.lang}
+        dir={language.dir}
         announce={setAnnouncement}
         fonts={language.fonts}
         font={font}

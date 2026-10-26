@@ -5,16 +5,38 @@ import {
   Copy,
   Download,
   FilePlus2,
+  FileText,
+  Image as ImageIcon,
   Redo2,
   Share2,
   Smartphone,
   Trash2,
   Undo2,
 } from "lucide-react";
-import { useEffect, useState, type ReactNode, type RefObject } from "react";
-import { canNativeShare, copyText, downloadText, nativeShare, shareLinks } from "./actions";
+import {
+  lazy,
+  Suspense,
+  useEffect,
+  useRef,
+  useState,
+  type MouseEvent,
+  type ReactNode,
+  type RefObject,
+} from "react";
+import { FONT_CLASS } from "../fonts";
+import {
+  canNativeShare,
+  copyText,
+  datedName,
+  downloadBlob,
+  downloadText,
+  nativeShare,
+  shareLinks,
+} from "./actions";
 import { draftTitle, type DraftState } from "./drafts";
 import { redo, replaceAll, undo } from "./editor-ops";
+
+const ImageCardDialog = lazy(() => import("./export/ImageCardDialog"));
 
 export const FONT_SIZES = { min: 18, max: 56, step: 4, default: 28 } as const;
 
@@ -29,6 +51,9 @@ export interface ToolbarProps {
   editorRef: RefObject<HTMLTextAreaElement | null>;
   /** Used for download file names, e.g. "urdu". */
   fileBase: string;
+  /** BCP 47 tag and direction of the text, for exported documents. */
+  lang: string;
+  dir: "ltr" | "rtl";
   announce: (message: string) => void;
   fonts: readonly FontId[];
   font: FontId;
@@ -47,6 +72,11 @@ export interface ToolbarProps {
 
 const BTN =
   "inline-flex h-9 items-center gap-1.5 rounded-lg border border-border bg-surface px-2.5 text-sm text-text hover:bg-surface-2 disabled:opacity-50";
+/** Drop-down under its button; on phones a sheet at the bottom, since the toolbar scrolls sideways and would clip it. */
+const POPUP =
+  "absolute z-30 mt-1 flex min-w-44 flex-col rounded-lg border border-border bg-surface p-1 shadow-lg max-sm:fixed max-sm:inset-x-4 max-sm:bottom-4 max-sm:p-2 max-sm:shadow-2xl";
+const POPUP_ITEM =
+  "flex items-center gap-2 rounded-md px-3 py-2 text-start text-sm text-text no-underline hover:bg-surface-2 max-sm:py-3";
 
 function ToolButton(props: {
   label: string;
@@ -75,7 +105,26 @@ export default function Toolbar(props: ToolbarProps) {
   const { editorRef, announce } = props;
   const [nativeShareAvailable, setNativeShareAvailable] = useState(false);
   const [shareText, setShareText] = useState("");
+  const [cardText, setCardText] = useState<string | null>(null);
+  const toolbarRef = useRef<HTMLDivElement>(null);
   useEffect(() => setNativeShareAvailable(canNativeShare()), []);
+
+  // Close open menus on a click outside them or on Escape.
+  useEffect(() => {
+    const closeMenus = (except?: Node) => {
+      for (const d of toolbarRef.current?.querySelectorAll("details[open]") ?? []) {
+        if (!except || !d.contains(except)) d.removeAttribute("open");
+      }
+    };
+    const onPointer = (e: PointerEvent) => closeMenus(e.target as Node);
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && closeMenus();
+    document.addEventListener("pointerdown", onPointer);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("pointerdown", onPointer);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, []);
 
   const el = () => editorRef.current;
   const icon = { size: 16, "aria-hidden": true } as const;
@@ -97,11 +146,37 @@ export default function Toolbar(props: ToolbarProps) {
     await nativeShare(e.value);
   };
 
-  const onDownload = () => {
-    const e = el();
-    if (!e?.value) return announce("Nothing to download yet");
-    announce(`Downloaded ${downloadText(e.value, props.fileBase)}`);
-  };
+  /** Run an export with the editor text, closing the menu first. */
+  const exporting =
+    (run: (text: string) => void | Promise<void>) => (e: MouseEvent<HTMLElement>) => {
+      e.currentTarget.closest("details")?.removeAttribute("open");
+      const text = el()?.value;
+      if (!text?.trim()) return announce("Nothing to download yet");
+      void Promise.resolve(run(text)).catch(() => announce("Download failed. Please try again."));
+    };
+
+  const onText = exporting((text) => announce(`Downloaded ${downloadText(text, props.fileBase)}`));
+
+  const onDocx = exporting(async (text) => {
+    const { buildDocx, DOCX_MIME } = await import("./export/docx");
+    const filename = datedName(props.fileBase, "docx");
+    const bytes = buildDocx(text, { lang: props.lang, dir: props.dir, font: props.font });
+    downloadBlob(new Blob([bytes as BlobPart], { type: DOCX_MIME }), filename);
+    announce(`Downloaded ${filename}`);
+  });
+
+  const onPdf = exporting(async (text) => {
+    const { printText } = await import("./export/print");
+    announce("Choose “Save as PDF” in the print dialog");
+    await printText(text, {
+      lang: props.lang,
+      dir: props.dir,
+      fontClass: FONT_CLASS[props.font],
+      title: datedName(props.fileBase, "pdf").replace(/\.pdf$/, ""),
+    });
+  });
+
+  const onCard = exporting((text) => setCardText(text));
 
   const onClear = () => {
     const e = el();
@@ -121,6 +196,7 @@ export default function Toolbar(props: ToolbarProps) {
 
   return (
     <div
+      ref={toolbarRef}
       role="toolbar"
       aria-label="Text tools"
       className="relative flex items-center gap-1.5 max-sm:-mx-4 max-sm:overflow-x-auto max-sm:px-4 max-sm:pb-1 sm:flex-wrap [&>*]:shrink-0"
@@ -139,14 +215,14 @@ export default function Toolbar(props: ToolbarProps) {
             <Share2 {...icon} />
             <span className="max-sm:sr-only">Share</span>
           </summary>
-          <div className="absolute z-30 mt-1 flex min-w-40 flex-col rounded-lg border border-border bg-surface p-1 shadow-lg">
+          <div className={POPUP}>
             {shareLinks(shareText).map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md px-3 py-2 text-sm text-text no-underline hover:bg-surface-2"
+                className={POPUP_ITEM}
               >
                 {link.label}
               </a>
@@ -154,7 +230,30 @@ export default function Toolbar(props: ToolbarProps) {
           </div>
         </details>
       )}
-      <ToolButton label="Download .txt" icon={<Download {...icon} />} onClick={onDownload} />
+      <details className="relative">
+        <summary className={`${BTN} cursor-pointer list-none`} title="Download">
+          <Download {...icon} />
+          <span className="max-sm:sr-only">Download</span>
+        </summary>
+        <div className={POPUP}>
+          <button type="button" className={POPUP_ITEM} onClick={onText}>
+            <FileText {...icon} />
+            Text (.txt)
+          </button>
+          <button type="button" className={POPUP_ITEM} onClick={onDocx}>
+            <FileText {...icon} />
+            Word (.docx)
+          </button>
+          <button type="button" className={POPUP_ITEM} onClick={onPdf}>
+            <FileText {...icon} />
+            PDF
+          </button>
+          <button type="button" className={POPUP_ITEM} onClick={onCard}>
+            <ImageIcon {...icon} />
+            Image card
+          </button>
+        </div>
+      </details>
 
       <span aria-hidden="true" className="mx-1 h-6 w-px bg-border" />
       <ToolButton
@@ -245,6 +344,23 @@ export default function Toolbar(props: ToolbarProps) {
           pressed={props.phoneKeyboard.enabled}
           onClick={props.phoneKeyboard.onToggle}
         />
+      )}
+
+      {cardText !== null && (
+        <Suspense fallback={null}>
+          <ImageCardDialog
+            text={cardText}
+            lang={props.lang}
+            dir={props.dir}
+            font={props.font}
+            fileBase={props.fileBase}
+            announce={announce}
+            onClose={() => {
+              setCardText(null);
+              editorRef.current?.focus();
+            }}
+          />
+        </Suspense>
       )}
     </div>
   );

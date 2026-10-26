@@ -47,11 +47,13 @@ export function shareLinks(text: string): { label: string; href: string }[] {
 
 const BOM = String.fromCharCode(0xfeff);
 
-/** Download as UTF-8 .txt. The BOM makes older Windows editors pick the right encoding. */
-export function downloadText(text: string, basename: string, now = new Date()): string {
-  const date = now.toISOString().slice(0, 10);
-  const filename = `${basename}-${date}.txt`;
-  const url = URL.createObjectURL(new Blob([BOM + text], { type: "text/plain;charset=utf-8" }));
+/** A download file name such as "urdu-2026-10-26.txt". */
+export function datedName(basename: string, ext: string, now = new Date()): string {
+  return `${basename}-${now.toISOString().slice(0, 10)}.${ext}`;
+}
+
+export function downloadBlob(blob: Blob, filename: string): void {
+  const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
   a.download = filename;
@@ -59,6 +61,12 @@ export function downloadText(text: string, basename: string, now = new Date()): 
   a.click();
   a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 0);
+}
+
+/** Download as UTF-8 .txt. The BOM makes older Windows editors pick the right encoding. */
+export function downloadText(text: string, basename: string, now = new Date()): string {
+  const filename = datedName(basename, "txt", now);
+  downloadBlob(new Blob([BOM + text], { type: "text/plain;charset=utf-8" }), filename);
   return filename;
 }
 
