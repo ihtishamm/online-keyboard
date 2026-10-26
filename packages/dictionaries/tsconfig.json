@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "allowImportingTsExtensions": true,
+    "target": "ES2024",
+    "lib": ["ES2024"]
+  },
+  "include": ["src", "test"]
+}

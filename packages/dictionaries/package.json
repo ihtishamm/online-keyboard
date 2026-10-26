@@ -1,0 +1,26 @@
+{
+  "name": "@okb/dictionaries",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Corpus pipeline and the word lists it builds (frequency-ranked words, next-word table).",
+  "exports": {
+    "./ur/words.txt": "./data/ur/words.txt",
+    "./ur/next.txt": "./data/ur/next.txt"
+  },
+  "scripts": {
+    "build:ur": "node src/build.ts",
+    "eval:ur": "EVAL_VERBOSE=1 vitest run test/roman-eval.test.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@okb/engine": "workspace:*",
+    "@okb/layouts": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
+  }
+}

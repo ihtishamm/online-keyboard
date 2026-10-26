@@ -1,0 +1,10 @@
+{
+  "source": "urwiki-latest-pages-articles.xml.bz2",
+  "pages": 704532,
+  "sentences": 3311391,
+  "repeatedSentencesSkipped": 2958851,
+  "tokens": 58021837,
+  "distinctWords": 634769,
+  "wordsKept": 100000,
+  "nextWordHeads": 9998
+}
