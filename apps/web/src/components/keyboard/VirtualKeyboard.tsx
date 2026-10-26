@@ -9,6 +9,8 @@ export interface VirtualKeyboardProps {
   longpress: Partial<Record<KeyCode, readonly string[]>>;
   shift: LatchState;
   altgr: LatchState;
+  /** False when the layout has no AltGr characters: the key is then left out. */
+  hasAltGr: boolean;
   caps: boolean;
   /** Typing Latin instead of the target script. */
   passthrough: boolean;
@@ -176,6 +178,8 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
     const out = passthrough ? latin : labelFor(code);
     const shown = displayLabel(out);
     const hasAlt = !passthrough && !!longpress[code]?.length;
+    // Latin output (English typing, the Roman layout): no hint, and the UI font.
+    const isAscii = /^[\x20-\x7e]*$/.test(out);
     return (
       <div
         key={code}
@@ -193,15 +197,17 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
           onContextMenu={(e) => e.preventDefault()}
           onClick={keyboardClick(() => onChar(code))}
         >
+          {!isAscii && (
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute top-0.5 left-1.5 text-[0.65rem] text-key-hint uppercase"
+            >
+              {latin}
+            </span>
+          )}
           <span
             aria-hidden="true"
-            className="pointer-events-none absolute top-0.5 left-1.5 text-[0.65rem] text-key-hint uppercase"
-          >
-            {latin}
-          </span>
-          <span
-            aria-hidden="true"
-            className={`pointer-events-none text-xl sm:text-2xl ${passthrough ? "" : "font-naskh"}`}
+            className={`pointer-events-none text-xl sm:text-2xl ${isAscii ? "" : "font-naskh"}`}
           >
             {shown || " "}
           </span>
@@ -332,20 +338,22 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
             ? `ENG: switch to ${props.nativeName} typing (Esc)`
             : `${props.nativeName}: switch to English typing (Esc)`,
         })}
-        {modKey("altgr", "AltGr", {
-          grow: 1.5,
-          on: altgrOn,
-          locked: props.altgr === "locked",
-          aria: "AltGr",
-        })}
-        {modKey("space", "Space", { grow: 6, aria: "Space" })}
-        {modKey("altgr", "AltGr", {
-          grow: 1.5,
-          on: altgrOn,
-          locked: props.altgr === "locked",
-          className: "max-sm:hidden",
-          aria: "AltGr",
-        })}
+        {props.hasAltGr &&
+          modKey("altgr", "AltGr", {
+            grow: 1.5,
+            on: altgrOn,
+            locked: props.altgr === "locked",
+            aria: "AltGr",
+          })}
+        {modKey("space", "Space", { grow: props.hasAltGr ? 6 : 7.5, aria: "Space" })}
+        {props.hasAltGr &&
+          modKey("altgr", "AltGr", {
+            grow: 1.5,
+            on: altgrOn,
+            locked: props.altgr === "locked",
+            className: "max-sm:hidden",
+            aria: "AltGr",
+          })}
         {modKey("enter", "⏎", { grow: 1.5, className: "sm:hidden", aria: "Enter" })}
       </div>
     </div>

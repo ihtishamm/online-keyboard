@@ -454,6 +454,7 @@ export default function KeyboardApp({
           longpress={layout.longpress}
           shift={latch.shift}
           altgr={latch.altgr}
+          hasAltGr={Object.values(layout.keys).some((k) => k?.ag || k?.sag)}
           caps={displayMods.caps}
           passthrough={passthrough}
           nativeName={language.name.native}

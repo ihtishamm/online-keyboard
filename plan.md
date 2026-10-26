@@ -245,12 +245,15 @@ online-keyboard/
   - [x] Lighthouse desktop: 100 / 100 / 100 / 100.
   - [ ] Lighthouse mobile: Accessibility, Best Practices, SEO 100; **Performance median ≈ 90** (runs vary 85–97 on a local preview server). Remaining cost is style/layout of Arabic-script text above the fold. Follow-up in Phase 3: subset display fonts (`subset-font`/HarfBuzz), measure on real hosting with a CDN.
 
-### Phase 2: Roman Urdu and prediction (weeks 5–7)
-- [ ] Transliteration rules engine with candidate bar.
-- [ ] Corpus pipeline: clean, normalise, count frequencies, build the packed trie.
-- [ ] Word completion and next-word suggestions.
-- [ ] A test set of 500 Roman→Urdu word pairs. Target: top-1 accuracy ≥ 80 %, top-5 ≥ 95 %.
-- **Exit:** a typist can write a WhatsApp-length message in Roman mode with fewer than 1 correction in 10 words.
+### Phase 2: Roman Urdu and prediction (weeks 5–7) ✅ done
+- [x] Transliteration rules engine with candidate bar: weighted rules + beam search constrained to dictionary prefixes, fixed chat-word list, omitted-letter insertion, capital hints (T→ٹ), context ranking from the next-word table. `/urdu/roman`: convert on Space/punctuation (one undo step), 1–6 to pick, Esc keeps English, phone keyboards convert after the space.
+- [x] Corpus pipeline (`packages/dictionaries`): Urdu Wikipedia dump (1 Oct 2026, CC BY-SA 4.0, credited in the footer) → markup stripping, sentence dedup, normalisation, frequencies, next-word table. 100k words; 407 KB + 99 KB gzipped. The trie is built in a Web Worker (126 ms on desktop would block a phone) and transferred as typed arrays. *Shipped as a ranked text list rather than a binary trie: it compresses better and builds fast.*
+- [x] Word completion and next-word suggestions on all layouts, with an on/off switch.
+- [x] Test set: 663 Roman→Urdu pairs. **Top-1 86.9 %, top-5 99.2 %.** (Rules were tuned against this set.)
+- **Exit:** [x] held-out set of 20 chat messages (not used for tuning): **6 corrections in 121 words (5.0 %)**, under the 1-in-10 bar. Remaining misses need sentence context or loanwords (کہ/کے, فون, کھانا/کہنا, دعا/دوا).
+- Notes:
+  - Lighthouse mobile on this machine is too noisy to compare (Phase 1 baseline itself 74–88 in alternating runs). The island grew by 7.6 KB gzipped; React's runtime (65.6 KB gzipped) is the main JS cost. Follow-up in Phase 3: try Preact (`preact/compat`, about 50 KB smaller) and measure on real hosting.
+  - Evaluation runs in CI: `pnpm --filter @okb/dictionaries eval:ur` prints the misses.
 
 ### Phase 3: Regional language pack and tools (weeks 8–10)
 - [ ] Arabic, Farsi, Pashto, Sindhi, **Shahmukhi Punjabi**, **Saraiki**, **Balochi**, Kashmiri, Hindi, Bangla (layouts, fonts and page copy).
