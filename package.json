@@ -12,9 +12,10 @@
     "test": "pnpm -r test",
     "test:e2e": "pnpm --filter @okb/web test:e2e",
     "typecheck": "pnpm -r typecheck",
-    "lint": "eslint .",
+    "lint": "eslint . && node tools/invisible-chars.mjs",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "fix:chars": "node tools/invisible-chars.mjs --fix"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.0",

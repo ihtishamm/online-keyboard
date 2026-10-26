@@ -13,12 +13,12 @@ describe("backspaceLength", () => {
   });
 
   it("removes a diacritic without its base letter", () => {
-    // بَ = beh + zabar
-    expect(del("بَ")).toBe("ب");
+    // ب\u064E = beh + zabar
+    expect(del("ب\u064E")).toBe("ب");
   });
 
   it("removes a whole emoji ZWJ sequence", () => {
-    expect(del("ok👨‍👩‍👧")).toBe("ok");
+    expect(del("ok👨\u200D👩\u200D👧")).toBe("ok");
   });
 
   it("removes a flag (regional indicator pair)", () => {
