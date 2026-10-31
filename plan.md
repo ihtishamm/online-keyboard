@@ -1,389 +1,755 @@
-# Online Multilingual Keyboard: Competitive Teardown & Execution Plan
+# Likho: 100 Languages, Mobile First. Execution Plan (Phases 5–11)
 
-> Target analysed: `https://www.branah.com/urdu`, with spot checks of `/chinese`, `/japanese`, `/hindi`, `/arabic`, `/sindhi`, `/punjabi`, `/farsi`, `/bangla` and the home page.
-> Method: REA (Reverse Engineering Agent) browser and JavaScript analysis, a headless Chrome capture, and a manual read of the shipped inline bundle.
-> Date: 2026-10-26
-
----
-
-## 0. Ground rules (legal and ethical)
-
-- We studied **behaviour and architecture** so we can build something better. We do **not** copy Branah's code, CSS, branding, page text or layout data tables.
-- Keyboard layouts are standards, not Branah's property. We source ours from openly licensed or standard references:
-  - Unicode **CLDR keyboard** data
-  - **SIL Keyman** keyboards (MIT/open licences)
-  - Microsoft KLC layouts (as references only)
-  - **CRULP** Urdu phonetic specs
-  - Government InScript specs (Indic scripts)
-- Dictionaries and corpora for prediction must have clear licences: Urdu Wikipedia dumps (CC BY-SA), Leipzig corpora, OSCAR, Hunspell `ur` (check its licence).
+> Written 2026-10-31, after Phases 0–4 shipped. The full notes for Phases 0–4 (Branah teardown, technical design, what shipped and why) are in git: `git show 19faad7:plan.md`.
+>
+> Inputs:
+> - The owner's brief: 100 languages; learning and typing tests in those languages; Lexilogos-style keyboards and converters (Arabic, French, Spanish, Italian, case converter); English-to-Hindi typing; Roman-to-script tools for every current language; "English to Spanish/Italian typing"; a keyboard layout tester; typing practice and games; voice, suggestions and correction in more languages; about **70 % of traffic is on phones**.
+> - A look at the Lexilogos pages named in the brief.
+> - The current code.
 
 ---
 
-## 1. Reverse-engineering findings
+## 0. How to use this plan (for Claude)
 
-### 1.1 Evidence ledger
-
-| # | Finding | Evidence | Confidence |
-|---|---------|----------|-----------|
-| E1 | The page runs 2 scripts. The whole app is **one ~33.8 KB inline IIFE bundle** (esbuild-style output). The other script is the AdSense push. | REA `analyze_web_bundle` `ev_1c40a19b…93d1` (sha256 `e20d950a…2226`) | observed |
-| E2 | The bundle has no network endpoints, routes, source maps or WebMCP. Urdu is 100 % client-side. | same Evidence: `endpoints: []`, `routes: []` | observed (static) |
-| E3 | Static graph: 1 file, 0 modules, ~10k AST nodes, no parse failures. | REA `analyze_javascript_application` `ev_3bcf24bd…ae78` | derived |
-| E4 | Third-party code: Google AdSense only (`ca-pub-…`), plus iframes from doubleclick. | CDP target list and HTML `<script src>` | observed |
-| E5 | 98 language pages plus side tools (OCR, PDF to text, Braille, Unicode table, etc.). | Home page fetch | observed |
-| E6 | CJK pages load **XML dictionaries** from `/xml/*.xml` and show candidates on the number row. | `/chinese`, `/japanese` HTML | observed (static) |
-| E7 | Urdu has 2 layouts (Standard, Phonetic) and **no transliteration or word suggestions** on the web. Farsi has a "Transliteration" layout; Urdu does not. | Layout IDs in each page | observed |
-| E8 | Punjabi is **Gurmukhi only** (InScript/Phonetic). There is no Shahmukhi. Balochi, Saraiki, Kashmiri, Hindko, Brahui and Shina are absent. | `/punjabi` layouts and the home language list | observed |
-
-Gaps in coverage: we did not observe the server or CDN configuration, analytics beyond AdSense, or the mobile app internals. Other language pages got light static checks only, with no runtime capture.
-
-### 1.2 Architecture (described in our own words)
-
-```
-Static HTML page per language (SSR/static, SEO text + FAQ)
- └─ Inline bundle
-     ├─ util       : caret/selection helpers, surrogate-pair & emoji-cluster aware backspace,
-     │               browser sniffing (mobile UA, Opera, Firefox keyCode quirks)
-     ├─ layout     : data model for one layout (48 key slots k0..k47) + dead-key table
-     ├─ keyboard   : renders buttons, holds modifier state, routes input, draws labels
-     ├─ store      : localStorage wrapper keyed by page slug (undo, redo, layout, fontSize)
-     └─ plugins    : installed via install(ctx)
-          • layout switcher (radio buttons, persisted)
-          • font size  (- / +, 14–36 px, step 2)
-          • edit tools (Select All, Copy, Undo, Redo, Clear All)
-          • share links (mailto, X intent, Google search, Google Translate sl=<lang>&tl=en)
-          • save as .txt (Blob download, form-POST fallback)
- Page config object: { url slug, langAbbr, fontSize, layouts[{Id, Name, Json}] }
-```
-
-**Key mechanics observed:**
-
-1. **Layout model.** Each key slot has a physical id (`k0`–`k47`, ANSI plus ISO key 47) and up to **6 layers**: normal, shift, AltGr, Shift+AltGr and two Caps "SGCap" layers. A per-key flag says whether Caps acts like Shift. Dead keys are `(trigger, base) → composed` pairs.
-2. **Physical input.** `keydown` maps `event.code`, or the legacy `keyCode` for old browsers, to the slot index. The app looks up the active layer, then **prevents the default** and inserts the character itself at the caret. Ctrl+A/C/V/X/Y/Z pass through.
-3. **Esc** toggles between the target layout and plain QWERTY passthrough.
-4. **On-screen input.** Delegated pointer events on the keyboard container. Holding a key auto-repeats after about 300 ms (a 50 ms interval after 5 ticks). Hovering a modifier previews its layer.
-5. **Responsive.** Below 640 px the HTML is a different, compact 3-row build. It is chosen **once at load** and does not react to resize or rotation. On mobile UAs the textarea is set to **readOnly** to suppress the OS keyboard.
-6. **Emoji.** The emoji panel pages through **raw consecutive code points** from U+1F600, 14 per row. It has no categories or search, and it shows unassigned or invalid code points.
-7. **Persistence.** Every 3 s, if the text changed, the app pushes a **full text snapshot** onto the undo stack in localStorage. There is no cap, so the stack grows without bound. On load it restores the last snapshot (autosave).
-8. **Copy** uses the deprecated `document.execCommand('copy')` and falls back to an `alert()`.
-9. **CJK IME.** An XML dictionary is fetched per input method. A buffer is matched to candidates, shown on the number keys with ◂/▸ paging, and Space picks the first.
-10. **Rendering.** Text is shown in the browser's default font. There is **no Nastaliq font**, so Urdu renders in Naskh, which most Urdu readers dislike.
-
-### 1.3 UX audit (from the screenshot and DOM)
-
-- A cramped layout of the 2010s. Ads and "discover more" links push the editor down. No dark mode.
-- There's no visual feedback on the on-screen key when you press a physical key.
-- Key legends are tiny and pink-on-grey. Contrast is weak.
-- Accessibility: buttons have no `aria-label`, and layer or modifier state isn't announced. The textarea has no label. Screen-reader users get little.
-- There's one document with no titles, no history browser and no sync.
-- The phone experience upsells the native app instead of being good on the web.
+1. Work through the phases in order. Inside a phase, do the items in order unless an item says it can run in parallel.
+2. At the start and end of every phase, run the **phase protocol** (§5.1). Tick the **Definition of Done** (§5.2) and the **mobile checklist** (§5.3) for every item. For work on a language, use the **tier checklist** (§5.4).
+3. When an item is done:
+   - tick it here and add short notes under it (what shipped, measured numbers, deviations, known issues), as in Phases 0–4;
+   - commit with `feat(scope): …; Phase N item M done`.
+4. If part of this plan turns out to be wrong (a licence, a browser limit, an unrealistic target), say so in the notes and change the plan. Never quietly work around it.
+5. Open decisions for the owner are in §11. Ask before building anything that depends on one of them.
 
 ---
 
-## 2. Where we win (positioning)
+## 1. Where we are (Phases 0–4, done)
 
-**"The best way to type Urdu (and every South-Asian / Arabic-script language) online, beautiful, smart, private, offline."**
-
-Branah is broad (98 languages) but shallow. We go **deep on Urdu and its neighbouring languages first**, then scale breadth through a data-driven layout pipeline.
-
-| Gap at Branah | Our answer |
-|---|---|
-| No Nastaliq rendering | Nastaliq by default (Noto Nastaliq Urdu, Mehr/Jameel-style open fonts), with a font switcher |
-| No Roman-Urdu transliteration | **Type "mera naam" and get میرا نام** with ranked candidates. This is how most Pakistanis actually type. |
-| No word prediction on web | Client-side n-gram/trie prediction, plus next-word suggestions |
-| No spell check | Urdu spell check with suggestions (Hunspell/own wordlist, run in a Web Worker) |
-| Naive emoji | Real emoji picker with categories, search and skin tones (CLDR annotations) |
-| Plain .txt export only | Export .txt, .docx, .pdf and a **PNG/JPG "post image"** in Nastaliq for WhatsApp, Facebook and Instagram |
-| No InPage support | **InPage ↔ Unicode converter** (big demand from Pakistani offices and journalists) |
-| Missing languages | Shahmukhi Punjabi, Saraiki, Balochi, Kashmiri, Hindko, Brahui, Shina, Torwali, Khowar, Pashto variants |
-| Fixed layout, resize-blind | Fluid responsive keyboard, landscape and tablet modes, split keyboard |
-| Weak a11y | WCAG 2.2 AA, ARIA live layer announcements, high-contrast theme |
-| Single doc, localStorage spam | IndexedDB multi-document drafts with capped history, plus optional cloud sync |
-| No offline web | PWA, installable and fully offline |
-| Ad-heavy | Light ads, with an ad-free Pro tier |
-
----
-
-## 3. Product scope and priorities
-
-### P0: MVP (parity plus the killer features)
-1. Core typing engine (our own clean implementation; see §4.2) with physical `event.code` mapping, 6 layers, dead keys, RTL/LTR, auto-repeat and pressed-key highlighting.
-2. Urdu layouts: **Phonetic** (CRULP-style), **Standard** (Windows/national standard) and **Roman-Urdu transliteration**.
-3. Nastaliq rendering in the editor, with font size and line-height controls.
-4. Toolbar: Copy (Clipboard API), Paste, Undo/Redo (native plus our own stack), Clear (with undo instead of `confirm()`), Download .txt, Share (Web Share API, WhatsApp, X, email).
-5. Autosave to IndexedDB. Restore on load.
-6. Responsive keyboard that reflows on resize. Mobile-first. Toggling the OS keyboard is optional instead of a forced readOnly.
-7. Dark and light themes. Accessible markup.
-8. SEO-ready static page per language and layout (fast LCP < 1.5 s, no layout shift from ads).
-
-### P1: Differentiators
-1. Word prediction and next-word suggestions (Urdu first).
-2. Spell check with a red underline and suggestions.
-3. Export to .docx, .pdf and a social **image card** (Nastaliq, themes, watermark optional).
-4. InPage → Unicode (and reverse) converter page.
-5. Voice typing (Web Speech API `ur-PK` where supported, with graceful fallback).
-6. A full emoji panel.
-7. Multi-document drafts sidebar.
-8. A layout cheat-sheet overlay and a printable layout PDF.
-9. A typing tutor and speed test for Urdu (a strong SEO and retention loop).
-10. Add the regional language pack: Arabic, Farsi, Pashto, Sindhi, Shahmukhi Punjabi, Saraiki, Balochi, Kashmiri, Hindi, Bangla.
-
-### P2: Scale and moat
-1. AI assist (Claude API, server-side proxy): translate, fix grammar and diacritics (اعراب), convert messy Roman Urdu, and summarise. Rate-limited, with a Pro tier.
-2. Custom layout editor (users build and share layouts as JSON).
-3. Browser extension that types Urdu into any website.
-4. An embeddable widget (`<script>`) for other sites (B2B/education).
-5. Scale to 100+ languages via the layout import pipeline (Keyman/CLDR → our schema).
-6. Account plus cloud sync (optional, privacy-first).
-7. Image-to-text (Urdu OCR via Tesseract.js `urd` model, client-side).
+- **Languages.** 11 languages with 13 layouts:
+  - Urdu: Phonetic, Standard and Roman.
+  - Arabic, Farsi, Pashto, Sindhi, Punjabi (Shahmukhi), Saraiki, Balochi, Kashmiri.
+  - Hindi (InScript) and Bangla (InScript).
+- **Engine** (`packages/engine`):
+  - physical keys, 4 layers, dead keys and long-press;
+  - grapheme-aware editing;
+  - CLDR and Keyman importers;
+  - transliteration (weighted rules plus a dictionary beam search);
+  - lexicon trie, next-word model and spell checker.
+- **Urdu only:**
+  - Roman Urdu (top-1 86.9 %, top-5 99.2 %);
+  - a 100k-word list built from Urdu Wikipedia (CC BY-SA);
+  - suggestions and spell check;
+  - typing test and tutor;
+  - four guides.
+- **Site-wide:**
+  - Nastaliq rendering;
+  - export to .txt, .docx, PDF and image card;
+  - emoji search in every page language;
+  - InPage ↔ Unicode;
+  - voice typing (Urdu, Arabic, Farsi, Hindi, Bangla);
+  - printable cheat sheets;
+  - PWA offline mode;
+  - drafts.
+- **Not done yet:**
+  - deploy to the real domain (`PUBLIC_SITE_URL` still defaults to `https://likho.example`);
+  - analytics;
+  - font subsetting;
+  - the Preact trial;
+  - Lighthouse on real hosting.
+- **Problems that will grow with 100 languages:**
+  - **Every keyboard page bundles every layout.** `KeyboardApp.tsx` imports the whole registry from `@okb/layouts`.
+  - **The service worker precaches every page.** That works at 30 pages but won't at 700.
+  - **Cheat-sheet PDFs are committed to git.** They take 2 MB for 14 sheets and would take about 30 MB at 200.
+  - **Phones have no real phone layout.** Punctuation keys are hidden instead, and there is no numbers/symbols page.
+  - **Each language is hand-wired in TypeScript.** `LANGUAGES` and `RAW_LAYOUTS` in `packages/layouts/src/index.ts`, plus copy in `apps/web/src/content/languages.ts`.
 
 ---
 
-## 4. Technical design
+## 2. Ground rules (every phase)
 
-### 4.1 Stack
-- **Framework:** Astro (static-first, best for hundreds of SEO pages) with React islands for the keyboard app. Next.js (App Router, SSG) is the alternative if we expect lots of app-like pages.
-- **Language:** TypeScript, strict mode.
-- **Styling:** Tailwind CSS with CSS variables for theming.
-- **State:** Zustand (or signals) inside the island.
-- **Storage:** IndexedDB via `idb-keyval`/Dexie.
-- **Workers:** a Web Worker for transliteration, prediction and spellcheck, so the UI thread never blocks.
-- **PWA:** Workbox service worker. Dictionaries are cached on demand per language.
-- **Fonts:** self-hosted and subsetted WOFF2 (Noto Nastaliq Urdu, Noto Naskh Arabic, Noto Sans per script), `font-display: swap`.
-- **Testing:** Vitest (engine unit tests), Playwright (E2E typing on desktop and mobile viewports), axe-core (a11y).
-- **Hosting:** Cloudflare Pages or Vercel with edge caching. A small serverless API only for P2 AI features.
-- **Analytics:** privacy-friendly (Plausible/Umami).
-
-### 4.2 Core engine (`packages/engine`), framework-agnostic
-```
-engine/
-  layout/schema.ts        # our JSON schema (zod-validated)
-  layout/registry.ts      # lazy-load layouts per language
-  input/physical.ts       # KeyboardEvent.code -> slot, modifier tracking, IME-safe
-  input/virtual.ts        # pointer events, long-press popups (alternate chars), repeat
-  compose/deadkeys.ts     # dead-key & multi-key compose state machine
-  translit/engine.ts      # rule-based Roman->script transliteration (longest-match FST)
-  translit/rank.ts        # candidate ranking with dictionary frequency
-  predict/trie.ts         # prefix trie + bigram next-word model (binary packed)
-  text/caret.ts           # setRangeText-based insert/delete, grapheme-aware (Intl.Segmenter)
-  text/normalize.ts       # Unicode NFC, Urdu-specific normalisation (ی/ي, ک/ك, ہ/ه)
-```
-
-**Layout schema (our own design):**
-```jsonc
-{
-  "id": "ur-phonetic",
-  "lang": "ur", "script": "Arab", "dir": "rtl",
-  "name": { "en": "Urdu Phonetic", "native": "اردو صوتی" },
-  "base": "ansi",            // ansi | iso | jis | mobile
-  "keys": { "KeyA": { "n": "…", "s": "…", "ag": "…", "sag": "…", "caps": "shift" } },
-  "longpress": { "KeyA": ["…", "…"] },   // mobile alternates
-  "deadkeys": [{ "trigger": "…", "base": "…", "out": "…" }],
-  "translit": "ur-roman"     // optional transliteration scheme id
-}
-```
-Keys are indexed by **`KeyboardEvent.code`** directly, not numeric slots, so ISO, JIS and mobile rows fit cleanly.
-
-**Engine improvements over Branah:**
-- Use `setRangeText` and `beforeinput`/`InputEvent` so native undo, autocorrect and IME composition keep working.
-- Grapheme-aware delete with `Intl.Segmenter` (handles emoji ZWJ sequences, Urdu ligatures and diacritics) instead of hand-written code-point tables.
-- Respect `compositionstart/end`, so we never fight the OS IME.
-- Resize-aware rendering (ResizeObserver), with no full re-render on every key. Update only the labels that changed.
-
-### 4.3 Transliteration (the killer feature)
-- **Phase A: rules.** Longest-match tables, e.g. `kh→خ`, `gh→غ`, `sh→ش`, `ch→چ`, `aa→آ/ا`, `ee→ی`, `oo→و`, word-final `a→ہ/ا`, plus context rules.
-- **Phase B: dictionary ranking.** Build a Roman↔Urdu word list (from a mined corpus and community contributions). Generate candidates from the rules, then re-rank them by dictionary frequency.
-- **Phase C (P2): AI fallback** for whole-sentence conversion and ambiguous words.
-- UX: an inline candidate bar above the keyboard. Space commits the top candidate, 1–9 picks one, Esc keeps the Roman text. A toggle switches between "Roman mode" and "Direct mode".
-
-### 4.4 Prediction and spell check
-- Ship per-language **binary-packed tries** (target < 1 MB gzipped for Urdu, top ~100k words) plus a bigram table.
-- Load lazily after first input. Cache with the service worker.
-- Spell check runs nspell/Hunspell in a worker. Results show as underlines on a mirrored overlay above the textarea, or we use a contenteditable editor (see the risk notes).
-
-### 4.5 Editor choice
-- MVP: `<textarea>` (simple, reliable with RTL and copy).
-- P1: move to a light contenteditable editor (Lexical or ProseMirror) only if spell-underlines or rich export need it. Keep the plain-text model either way.
-
-### 4.6 Repo layout
-```
-online-keyboard/
-  apps/web/                 # Astro site
-    src/pages/[lang]/index.astro         # e.g. /urdu, /arabic
-    src/pages/[lang]/[layout].astro      # e.g. /urdu/phonetic
-    src/pages/tools/inpage-converter.astro
-    src/pages/typing-test/[lang].astro
-    src/components/keyboard/*            # React island
-    src/content/languages/*.md           # SEO copy, FAQs per language (original text)
-  packages/engine/          # TS core (no DOM deps where possible)
-  packages/layouts/         # JSON layouts + importer scripts (Keyman/CLDR -> schema)
-  packages/dictionaries/    # build scripts -> packed tries per language
-  packages/ui/              # shared components, themes
-  tools/                    # corpus processing, font subsetting
-```
+- **Copy behaviour, not code.** We may study what competitors do. We never copy their code, CSS, page text, images or data tables (Lexilogos' shortcut tables included). Facts such as "Alt+0233 types é" may be stated in our own words.
+- **Clean data licences.** Use only sources whose licence allows a commercial, ad-supported site. For each source:
+  - record it in the package README/SOURCES file with its URL, date and licence;
+  - credit it in the footer when the licence asks for attribution;
+  - see §8.
+- **Privacy.** Typed text stays on the device. Some features send text: voice typing, AI assist, look-up links and "report a wrong word". Each of these:
+  - says so before its first use;
+  - runs only when the user asks.
+- **Mobile first.** Design at 360 px wide, then scale up. Phones are 70 % of visitors.
+- **Honest quality.** Every language feature has a measured number. Below target, the page labels it **Beta**; it is never hidden or overstated.
+- **Language value.** A language gets a page only when we offer something the user's own keyboard doesn't. That leaves out plain-ASCII languages such as Indonesian or Swahili (see §11).
+- **Original games.** Use genre ideas such as falling words or races. Never recreate a specific existing game.
+- **URLs are permanent.** Existing URLs keep working (`/urdu`, `/urdu/roman`, `/urdu-typing-test`, …). A rename needs a redirect.
 
 ---
 
-## 5. Execution roadmap
+## 3. How we stand out (competitor map)
 
-### Phase 0: Foundations (week 1) ✅ done
-- [x] Monorepo (pnpm workspaces), TS strict, ESLint/Prettier, Vitest, Playwright, CI (GitHub Actions).
-- [x] Design tokens (light, dark, high-contrast), typography scale. *Font subset pipeline moved to Phase 3 (see Phase 1 notes).*
-- [x] Layout JSON schema and validator. Importer prototype for Keyman `.kmn` (positional/mnemonic subset).
-- [x] Added: `tools/invisible-chars.mjs` (escapes invisible characters, blocks bidi controls / Trojan Source).
-- **Exit:** CI workflow written; all checks pass locally. *Not yet run on GitHub (no remote configured).*
+Each item's competitor check (§5.1) refreshes this table. Rows marked *(check)* are assumptions to verify in that phase.
 
-### Phase 1: Engine and Urdu MVP (weeks 2–4) ✅ done
-- [x] Physical-key engine (code→layer→insert) with Shift, AltGr, Caps and dead keys, plus Esc passthrough toggle.
-- [x] Virtual keyboard component: responsive desktop/mobile rows, Backspace auto-repeat, long-press alternates, pressed-key highlighting.
-- [x] Urdu Phonetic (CRULP-based) and Standard (Windows Urdu-based) layouts, plus AltGr diacritics and honorifics.
-- [x] Toolbar: copy, share, download .txt, clear-with-undo, font size, font family, phone-keyboard switch.
-- [x] Autosave in IndexedDB, multiple drafts (basic).
-- [x] `/urdu` and `/urdu/standard` pages: editor above the fold, original SEO copy, FAQ + WebApplication JSON-LD, layout charts. *hreflang deferred until there is a translated UI.*
-- **Exit:**
-  - [x] Playwright types known sentences on both layouts and matches the expected Unicode (23 e2e tests, desktop + mobile).
-  - [x] axe: 0 serious/critical violations.
-  - [x] Lighthouse desktop: 100 / 100 / 100 / 100.
-  - [ ] Lighthouse mobile: Accessibility, Best Practices, SEO 100; **Performance median ≈ 90** (runs vary 85–97 on a local preview server). Remaining cost is style/layout of Arabic-script text above the fold. Follow-up in Phase 3: subset display fonts (`subset-font`/HarfBuzz), measure on real hosting with a CDN.
+| Competitor | What they do well | Their gap | Our answer |
+|---|---|---|---|
+| **Lexilogos** (keyboards, case converter) | About 200 scripts. Typing shortcuts (`e=` é, `c=` ç, `n=` ñ, `??` ¿). Dictionary and translate links. | Shortcuts must be learnt per site. The case converter is upper/lower only (checked 2026-10-31). No suggestions or spell check. Phone UX *(check)*. | The standard US-International dead keys people already know, an accent bar, and **smart accents** (type `como estas`, get `cómo estás`). Locale-aware case converter. A real phone keyboard. |
+| **Branah** | 98 languages | No transliteration or suggestions for Urdu. No Nastaliq. The phone layout is chosen once at load (Phase 0 teardown). | Deep features per language, plus a phone keyboard as good as Gboard. |
+| **English-to-Hindi sites** (easyhindityping and similar) | Phonetic Hindi typing with suggestions. Kruti Dev converters. Large Indian audience. | Mostly Hindi only. Many depend on an online service for each word, so offline doesn't work *(check)*. Heavy ads *(check)*. | Roman typing for 30+ South Asian languages, offline and private, with a measured accuracy number. |
+| **Typing-test sites** (monkeytype, 10fastfingers, typing.com) | Polished tests, games and streaks | English/Latin first. Weak on Nastaliq, Indic shaping and phones *(check)*. | Script-correct scoring (graphemes, NFD, CPM for Thai/CJK) in 100+ languages, on phones too. |
+| **Keyboard-tester sites** | Large search volume | Single-purpose *(check)* | A tester plus layout mapping, plus a Unicode inspector that shows ZWJ, ZWNJ and RLM. |
+| **Case-converter sites** | Large search volume | English rules only *(check)* | Turkish İ/ı, German ß, Greek tonos, Dutch IJ, Irish prefixes |
+| **Gboard / SwiftKey** (native) | The bar for mobile typing feel | Not on desktop. No export, image cards, InPage, cheat sheets or tests. | Match their feel on the web (Phase 5), and offer what they can't |
 
-### Phase 2: Roman Urdu and prediction (weeks 5–7) ✅ done
-- [x] Transliteration rules engine with candidate bar: weighted rules + beam search constrained to dictionary prefixes, fixed chat-word list, omitted-letter insertion, capital hints (T→ٹ), context ranking from the next-word table. `/urdu/roman`: convert on Space/punctuation (one undo step), 1–6 to pick, Esc keeps English, phone keyboards convert after the space.
-- [x] Corpus pipeline (`packages/dictionaries`): Urdu Wikipedia dump (1 Oct 2026, CC BY-SA 4.0, credited in the footer) → markup stripping, sentence dedup, normalisation, frequencies, next-word table. 100k words; 407 KB + 99 KB gzipped. The trie is built in a Web Worker (126 ms on desktop would block a phone) and transferred as typed arrays. *Shipped as a ranked text list rather than a binary trie: it compresses better and builds fast.*
-- [x] Word completion and next-word suggestions on all layouts, with an on/off switch.
-- [x] Test set: 663 Roman→Urdu pairs. **Top-1 86.9 %, top-5 99.2 %.** (Rules were tuned against this set.)
-- **Exit:** [x] held-out set of 20 chat messages (not used for tuning): **6 corrections in 121 words (5.0 %)**, under the 1-in-10 bar. Remaining misses need sentence context or loanwords (کہ/کے, فون, کھانا/کہنا, دعا/دوا).
-- Notes:
-  - Lighthouse mobile on this machine is too noisy to compare (Phase 1 baseline itself 74–88 in alternating runs). The island grew by 7.6 KB gzipped; React's runtime (65.6 KB gzipped) is the main JS cost. Follow-up in Phase 3: try Preact (`preact/compat`, about 50 KB smaller) and measure on real hosting.
-  - Evaluation runs in CI: `pnpm --filter @okb/dictionaries eval:ur` prints the misses.
-
-### Phase 3: Regional language pack and tools (weeks 8–10)
-- [x] Arabic, Farsi, Pashto, Sindhi, **Shahmukhi Punjabi**, **Saraiki**, **Balochi**, Kashmiri, Hindi, Bangla (layouts, fonts and page copy).
-  - Layouts are generated from vendored open sources (`packages/layouts/vendor/`, licences included) by `pnpm --filter @okb/layouts import:layouts`; a test fails if `data/` drifts from them. Windows standards come from Unicode CLDR 43 (new `importCldr` in the engine): Arabic (101), Persian (Standard, ISIRI 9147), Pashto, Hindi InScript, Bengali InScript. Phonetic layouts come from Keyman (MIT): Sindhi (Rachitrali), Shahmukhi (SIL), Saraiki (Parvez Qadir), Balochi (SIL), Kashmiri (SIL).
-  - Our changes are listed in each layout's `source` (shown under the layout chart): Sindhi spelling fixes (ڪ on K, ه, ي), Shahmukhi آ as one character, Urdu-style digits for Saraiki/Kashmiri, Balochi's Ctrl layer on AltGr, ZWJ/ZWNJ/₹/৳ on Shift+AltGr for InScript. All output is NFC.
-  - Fonts: Noto Naskh/Nastaliq for Arabic script (Sindhi Naskh only: Nastaliq lacks ڪ), Noto Sans Devanagari/Bengali. Nastaliq is no longer fetched on pages that don't offer it.
-  - Phones keep punctuation keys that carry letters (Arabic ج د ك ط, InScript ड च ट य, Sindhi ٿ ڱ ڌ ڳ). The suggestion bar is hidden for languages without a word list.
-  - Golden typing tests per language (unit + e2e), alphabet coverage tests, axe on every page.
-  - Follow-ups: dedicated mobile rows for the denser layouts; phonetic Hindi/Bangla (Avro-style) and Gurmukhi Punjabi; word lists for the new languages.
-- [x] InPage ↔ Unicode converter. `/inpage-to-unicode`, linked from the home page.
-  - `packages/inpage`: compound-file (OLE2) reader, paragraph-record extraction from the `InPage100/200` stream, decoder for `.inp` files and for text copied out of InPage (U+0004 + cp1252), and a Unicode → InPage encoder for pasting into InPage 2000/2002.
-  - Character table compiled from two independent references (Kamal Abdali's InpToUni; zanysoft, MIT). They agree on every letter. Output matches Abdali's on a real 43-paragraph InPage 2000 file (not committed: no licence), once NFC and Urdu digits are applied. Codes neither source pins down show as � and are counted for the user.
-  - InPage's one hamza code becomes ئ inside a word and ء at its end; آ/أ/ؤ/ۂ/ۓ are composed from letter + mark.
-  - Tests: synthetic .inp files from a test compound-file writer (regular and mini streams), round trips, hamza, clipboard text; e2e for upload, paste, reverse, "Edit in Urdu keyboard", axe.
-  - Not covered: InPage 3+ files (already Unicode; the page says so) and formatting (text only).
-- [x] Export to .docx, .pdf and a Nastaliq image card. The toolbar's Download menu offers Text, Word, PDF and Image card; export code loads only when used.
-  - .docx is written in the browser (small stored-ZIP writer, no dependency): one paragraph per line, with the editor's font, size, language and direction in the document defaults. Fonts are named, not embedded (Nastaliq is over 1 MB). Checked in LibreOffice.
-  - PDF goes through the print dialog ("Save as PDF") with a print sheet holding only the text, so the browser shapes Nastaliq/Indic text and it stays selectable. A JavaScript-drawn PDF would need a shaping engine.
-  - Image card: canvas PNG in the editor's font, in Square, Portrait (4:5) and Story (9:16) shapes, four colour themes, the largest font size that fits, an optional site-address watermark, and Share on devices that can share files.
-  - On phones, toolbar menus open as a bottom sheet (the scrolling toolbar clipped them).
-  - Tests: ZIP/CRC, docx parts, print sheet, text fitting (unit); e2e downloads the .docx and PNG, checks the print-only view, and runs axe on the dialog.
-- [x] Emoji panel with search. Toolbar "Emoji" button; the panel loads on first open.
-  - `packages/emoji`: 1,870 emoji (Unicode emoji-test.txt, capped at Emoji 15.0 so older phones draw them all), 305 with skin tones, CLDR 49 names and keywords in English plus every page language (Saraiki, Balochi and Kashmiri use Urdu; Shahmukhi gaps filled from Urdu). Built by a script from pinned sources; ~45 KB + ~25-50 KB gzipped per language.
-  - Search matches word prefixes in English or the page language (پاکستان, خدا حافظ, नमस्ते), ignores case, accents and Arabic vowel marks, and folds ي/ی, ك/ک, ه/ہ. Enter inserts the top result.
-  - Categories, Recently used, a remembered skin tone, arrow-key grid navigation, Escape to close. On phones the panel takes the on-screen keyboard's place.
-  - Tests: data and search (unit); e2e for insertion, both-language search, skin tone + recents across reloads, keyboard navigation, whole-emoji backspace, phone layout, axe.
-- [x] PWA offline mode. Installable (web manifest, 192/512 and maskable icons, apple-touch-icon, shortcuts to Urdu/Arabic/Hindi/InPage) and offline after the first visit.
-  - Hand-written service worker (`src/sw/service-worker.js`), no Workbox. After `astro build`, an integration (`src/sw/build.ts`) writes `dist/sw.js` with the precache list: every page plus the scripts and styles they import statically (26 files, ~2 MB raw), versioned by a hash of their contents. Dynamic chunks (emoji keywords, exports), word lists and fonts are cached the first time they are fetched; the page also hands over what it loaded before the worker took control.
-  - Pages are network-first (4 s timeout, then cache), so releases show up at once; hashed `/_astro/` files are cache-first, and files from earlier builds are dropped on activation. Cache lookups ignore `Vary` (servers send `Vary: Origin`, and fonts and module scripts carry an Origin header).
-  - Registered in production builds only. The footer says "Works offline." once the worker controls the page.
-  - Tests: precache list (static imports in, dynamic imports out, version changes with content); e2e on Chromium: offline reload types and renders Nastaliq, unvisited pages open offline, emoji used once works offline, manifest and icons.
-- **Exit: met.** Every language passes its golden-text typing test (unit + e2e), and the site works offline after the first visit (e2e).
-- Still open from earlier phases (not checklist items): subset display fonts, try Preact, measure Lighthouse on real hosting. They need a real deploy (and new packages for subsetting and Preact), so they wait for the first deployment.
-
-### Phase 4: Engagement and growth (weeks 11–13) ✅ done
-- [x] Urdu typing tutor and speed test (WPM, accuracy, shareable result card). `/urdu-typing-test` and `/urdu-typing-tutor`, linked from the home page and `/urdu`.
-  - Test: Phonetic or Standard, 30 s / 1 min / 2 min, common words or sentences; the clock starts with the first key. Net WPM (correct characters incl. spaces / 5 / minutes), raw WPM, keystroke accuracy, right/wrong words, personal best per layout and length (on the device), and a result image to download or share. "My device already types Urdu" leaves key presses to the OS keyboard.
-  - Tutor: lessons generated from the layout (home, top, bottom rows, then each with Shift, then common words and sentences). Drill words come from the Urdu frequency list at build time, using only letters learned so far; early lessons are topped up with letter groups. The next key (and Shift) lights up on the on-screen keyboard, wrong keys ask for Backspace; 90% accuracy passes a lesson, progress is saved per layout.
-  - Words are checked whole (colouring single letters would break Nastaliq joining); comparisons use NFD, so آ or ؤ typed as one key or as letter + mark both count. Practice text is original (everyday words, 12 short passages) and tested to be typeable on both layouts.
-  - Engine: `keystrokeMap(layout)`, character -> key and modifiers.
-  - Tests: drill scoring, NFD handling, next-key logic, lesson generation for both layouts (unit); e2e typing through the phonetic layout, timer and result (fake clock), result PNG, own-keyboard mode, phone keys, tutor highlight and a passed lesson, axe on both pages.
-- [x] Spell check (Urdu). On `/urdu` (every layout), on by default, with a toggle in the suggestion bar. It runs in the browser on the existing 100k-word list, so nothing is sent anywhere.
-  - Misspelled words get a wavy underline: a transparent copy of the text over the editor, sized to its content box and scrolled with it. The word being typed is underlined only once the caret leaves it. With the caret in a flagged word, the suggestion bar offers corrections, Ignore (this page view) and Add to my dictionary (saved on the device). The footer shows "N possible misspellings", which jumps to the next one.
-  - Engine `SpellChecker`: corrections come from a weighted Damerau–Levenshtein search over the trie, with frequency as the tie-break. Sound-alike letters are cheap to swap (س/ص/ث, ز/ذ/ض/ظ, ت/ط, ہ/ح, ا/ع, ک/ق), and so are near misses on the keyboard (ت/ٹ, ہ/ھ, ہ/ے). Dropping a vowel letter or a hamza is cheap too.
-  - What counts as correct:
-    - Words run together after a non-joining letter (اورپھر, کےلیے).
-    - ہ/ھ and ئے/یے variants (تمہارا, چاہئے).
-    - Verb forms whose infinitive is in the list (سوچو, کرونگا).
-    - Rare corpus words are flagged only when one cheap edit away from a word 10× more common, which catches typos that crept into the list (سحت, مسلہ).
-  - Evaluation (`packages/dictionaries/test/spell-eval.test.ts`, original data):
-    - 44 common misspellings: 43 flagged; the right word is first for 43 and in the top 3 for all 44.
-    - 808 correct words from the Roman Urdu sets: 2 flagged (بلکل, مسلہ), both real misspellings.
-    - The rules were tuned against both sets, so these figures are optimistic.
-  - Tests: engine unit tests, component tests (underline, correct, jump, ignore/add, typing, toggle), and e2e on desktop and mobile (corrections, overlay geometry, personal dictionary across a reload, axe).
-- [x] Voice typing. A "Voice typing" toolbar button on Urdu, Arabic, Farsi, Hindi and Bangla. It appears only where the browser has the Web Speech API (Chrome, Edge, Safari; not Firefox).
-  - Privacy: the first use shows a notice that the browser sends the recording to its speech service (Google, Microsoft or Apple). Voice starts only after the user agrees, and the choice is remembered. Typed text still never leaves the device; the Urdu privacy FAQ says so, and a new FAQ explains voice typing.
-  - Finished phrases are typed at the cursor, with a space before them when needed. Words not yet final show in a "Listening" strip with a Stop button. Urdu output gets Urdu letter forms. Spoken punctuation works in Urdu (فل سٹاپ ۔, سوالیہ نشان ؟, کوما ،, نئی لائن) and Hindi (पूर्ण विराम ।, अल्पविराम, नई पंक्ति).
-  - Browsers end recognition on their own (after a pause, after each phrase on Android, after about a minute). A new session starts until the user presses Stop or an error occurs. Android runs one phrase per session, because continuous mode repeats results there.
-  - Errors are explained: microphone blocked, no microphone, offline, language not supported, nothing heard.
-  - Shahmukhi, Sindhi, Pashto and the other languages are left out until speech services return them in the script this site types; Punjabi comes back in Gurmukhi.
-  - Also fixed: pressed toolbar buttons (Emoji, Voice typing) now look pressed. `bg-surface` had been overriding `bg-accent-soft`.
-  - Tests: text clean-up, spacing and errors (unit); a fake recogniser for consent, dictation, interim text, restarts, a blocked microphone and the button hidden without support (component); e2e with a fake recogniser on desktop and mobile, plus axe.
-- [x] Printable layout cheat sheets (PDF) as SEO landing assets. `/cheat-sheets` lists all 13 (each layout, plus a Roman Urdu spelling chart). Each `/cheat-sheets/<language>-<layout>` page has a Download PDF button, a Print button and a link to the keyboard. Keyboard pages link to their chart, and the home page lists the charts under Tools.
-  - Each chart is one A4 landscape page. Every key shows the English key, the normal character, Shift, AltGr and Shift+AltGr, with a legend, the layout's summary and source, and the site link. Sizes are in container units, so the on-screen preview matches the paper. Print CSS (a named `@page`) prints the sheet alone with no margins.
-  - Wide signs are kept readable: ligature signs (ﷺ) are drawn in Naskh, ﷽ is named "Bismillah", and ZWJ/ZWNJ use small text.
-  - PDFs: `pnpm build && node scripts/make-cheatsheets.ts` prints each built page with Playwright's Chromium into `public/cheat-sheets/` (about 160 KB each, 2 MB in all, committed).
-    - `manifest.json` stores a hash of everything the sheets are made from: layout data, sheet components, page copy, labels and the site URL.
-    - A unit test fails when the hash no longer matches, so stale PDFs cannot ship.
-    - The PDFs print the site's address, so regenerate them once `PUBLIC_SITE_URL` points to the real domain. The test flags this when it runs with that variable set.
-  - Each page has `DigitalDocument` structured data.
-  - Tests: sheet list and PDF freshness (unit); index links, PDF download, print media showing only the sheet, no page overflow on phones, keyboard page link, and axe (e2e, desktop and mobile).
-- [x] Blog and guides in original content: "How to type Urdu on Windows/Mac/Android", "Roman Urdu to Urdu". Four guides at `/guides/<slug>`: Windows (11 and 10), Mac, Android and iPhone, and Roman Urdu to Urdu. `/guides` lists them; the home page links them under Tools.
-  - Markdown in an Astro content collection (`src/content/guides`, schema in `src/content.config.ts`). Each guide has a title, description, dates, order, a call to action, and the language (and optionally the layout) page that lists it.
-  - Guide pages have `Article` structured data, an "On this page" contents list, a call to action, and links to the other guides. Prose styles are `.guide-prose` in `global.css`.
-  - The Urdu keyboard pages list the guides; the Roman layout page links the Roman Urdu guide.
-  - Device steps were checked against current vendor documentation and hedged where menus vary by version. Every Roman Urdu example was run through the converter and shows its real first choice. Writing them turned up a wrong example in the Roman spelling table (`chai` gives کہے first), now `chalo` → چلو, and the Roman chart PDF is regenerated.
-  - Tests (e2e, desktop and mobile): index lists every guide in order; each guide has an h1 and Article data, its contents links point at headings, every internal link returns 200, no page overflow, and axe; the Urdu pages link to the guides.
-- **Known issue:** the e2e test "emoji used once keeps working offline" (`e2e/offline.spec.ts`) fails about 1 run in 10 on mobile, timing out while waiting for the service worker to finish caching. It fails at the same rate without the Phase 4 guides, so it predates them.
-
-### Phase 5: Scale and monetise (week 14 onward)
-- [ ] Bulk layout import to reach 100+ languages (prioritise by search volume).
-- [ ] AI assist (Claude API via a server proxy, rate-limited) as a Pro feature.
-- [ ] Browser extension (Chrome/Firefox) reusing `packages/engine`.
-- [ ] Embeddable widget and an API for schools and publishers.
-- [ ] Accounts and sync (optional).
+**Our position:** deep where our audience lives (South Asian and Arabic-script languages, with flagship features), broad everywhere else (110 languages, all with a good phone keyboard). Private, offline, and every tool works on a phone.
 
 ---
 
-## 6. UI and UX blueprint
+## 4. Roadmap at a glance
 
-- **Above the fold:** language switcher (searchable, native names), layout tabs (Phonetic / Standard / Roman), a big editor (Nastaliq, about 28 px default), and a candidate bar.
-- **Keyboard:** large rounded keys with the native glyph big and the Latin hint small. The pressed key animates. The active modifier glows. On mobile there are full-width keys and long-press popups.
-- **Toolbar:** icon buttons with tooltips: Copy, Share, Download ▾ (txt/docx/pdf/image), Undo, Redo, Clear, Font ▾, Theme, Fullscreen/Focus mode.
-- **Focus mode:** hide everything except the editor and keyboard.
-- **Ads:** one reserved slot below the keyboard and one in the sidebar on desktop. No ads inside the typing area. Fixed dimensions, so there's no CLS.
-- **Trust:** a "Your text never leaves your device" badge (true for everything except opt-in AI).
+| Phase | Theme | Why in this order | Size |
+|---|---|---|---|
+| **5** | Mobile keyboard 2.0 (plus deploy and measure) | 70 % of visitors are on phones. Every later feature reuses this keyboard, so fix it once, before multiplying it by 100 languages. | L |
+| **6** | Roman typing and smart typing for the 11 current languages | Our biggest differentiator, already proven on Urdu. The pages exist. "English to Hindi/Bangla/Arabic typing" are large searches. Phone users can type Roman on their own keyboard. | XL |
+| **7** | 100-language platform, Latin toolkit, Wave 1 (14 European languages), case converter | Make every feature language-generic before adding languages in bulk. Covers the Lexilogos keyboards and English → Spanish/Italian typing. | XL |
+| **8** | Learning hub (tests, tutor, games, daily challenge) and keyboard tester | Built generic, so every language added in Phase 9 gets it free. Large search volume and a retention loop. | L |
+| **9** | Waves 2–4: reach about 110 languages | Mostly data work once Phases 7–8 are generic. Our audience first (South Asia), then global demand, then the long tail. | XXL (3 sub-phases) |
+| **10** | Converters and text tools (Kruti Dev, Bijoy, Zawgyi, Shahmukhi ↔ Gurmukhi, …) | Each one is a stand-alone search page. | M |
+| **11** | AI assist, accounts, extension, UI languages, monetisation | Needs a server and a budget. Builds on everything above. | L, ongoing |
 
----
+Sizes are relative: Phase 4 was about M.
 
-## 7. SEO and growth plan
-
-- One canonical page per language and per layout (`/urdu`, `/urdu/phonetic`, `/urdu/roman`), plus tool pages (`/inpage-to-unicode`, `/urdu-typing-test`).
-- Target Urdu and English keywords: "urdu keyboard", "roman urdu to urdu", "type in urdu", "اردو کی بورڈ", "inpage to unicode", "urdu typing test".
-- Bilingual pages: English UI with Urdu content blocks, `lang`/`dir` set correctly, hreflang alternates.
-- Core Web Vitals: zero-JS SEO shell, keyboard island hydrated on idle/visible.
-- Structured data: `FAQPage`, `SoftwareApplication`, `HowTo`.
-- Shareable outputs (image cards, typing-test results) carry a subtle URL watermark, which gives a viral loop.
-- Community: an open layout and dictionary contribution repo (credits, GitHub), which brings backlinks.
+**Quick wins that may be pulled forward** if SEO pages need to launch sooner: the case converter (7.6) and the keyboard tester (8.3). Both stand alone and take a day or two each.
 
 ---
 
-## 8. Monetisation
+## 5. Checklists Claude follows
 
-- **Free:** everything in the MVP and P1, with light ads.
-- **Pro (≈ $2–3/mo or regional pricing in PKR):** no ads, AI assist, cloud sync, premium Nastaliq image templates, unlimited docs and history.
-- **B2B:** embeddable widget, OCR/conversion API, school licences for the typing tutor.
+### 5.1 Phase protocol
+
+**At the start of a phase**
+- [ ] Re-read §2 (ground rules), the phase section, and `LANGUAGES.md` (once it exists).
+- [ ] **Competitor check** for each item. Look at behaviour only:
+  - Open the competitors named in §3 and in the item, at desktop size and at 360 px.
+  - Write a 3–5 line **beat list** into the phase notes: what they do, what they miss, and what we will do better.
+  - Update §3 if something changed.
+- [ ] Confirm every data source and licence the phase needs **before** writing code that depends on it. Record them in §8 and the package's SOURCES/README.
+- [ ] Check §11 for open decisions this phase needs, and ask the owner.
+
+**For each item**
+- [ ] Definition of Done (§5.2).
+- [ ] Mobile checklist (§5.3) for any UI change.
+- [ ] Tier checklist (§5.4) for any language work.
+- [ ] One or more commits ending `Phase N item M done`.
+
+**At the end of a phase**
+- [ ] Full suite passes: `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build`, `pnpm test:e2e`. The e2e run covers desktop, Pixel 7, iPhone (WebKit) and a 360 px Android viewport.
+- [ ] Lighthouse mobile on the deployed preview. Performance budgets hold (§6, item 5.7).
+- [ ] **Beat-list review.** Every advantage we claimed is real and visible in the product. Drop any claim that isn't.
+- [ ] Notes under the phase: what shipped, numbers, deviations and known issues. Mark the phase ✅ and commit `…; Phase N done`.
+
+### 5.2 Definition of Done (every item)
+
+**Works**
+- [ ] On desktop and phones, in RTL and LTR.
+- [ ] With every input the feature claims: a physical keyboard, our on-screen keyboard, and the phone's own keyboard (Gboard, iOS).
+- [ ] Offline after the first visit, or the UI says why not (voice, AI).
+- [ ] Typed text never leaves the device unless the user switched on a feature that says it will.
+
+**Tested and measured**
+- [ ] Unit tests for logic and component tests for UI states.
+- [ ] e2e tests on desktop, Pixel 7 and iPhone.
+- [ ] axe: 0 serious or critical issues.
+- [ ] Language features are measured on an evaluation set, and the numbers go in the notes. Say so when rules were tuned on the same set.
+- [ ] Code is split so pages that don't use it don't load it. Performance budgets still hold.
+- [ ] No new dependency without checking its size, licence and upkeep. Prefer small code of our own, as with the .docx writer and the service worker.
+
+**Content and SEO**
+- [ ] Copy is original and the facts are checked. Every example runs through our own tool, as with the guides.
+- [ ] Title, meta description, H1, canonical URL, JSON-LD and sitemap entry.
+- [ ] Internal links from the relevant keyboard pages and from the home page.
+- [ ] Data provenance: source, licence and date recorded, and footer credit when the licence asks for it.
+
+**Hygiene**
+- [ ] Lint, typecheck and the invisible-character check pass. Plan notes are updated.
+
+### 5.3 Mobile checklist (every UI change)
+
+- [ ] Designed at 360×640 first. No horizontal scroll at 320 px. Checked in landscape.
+- [ ] Touch targets are at least 44×44 px. Keys may be narrower but are at least 40 px tall, with hit areas that extend into the gaps.
+- [ ] Primary actions (Copy, Share) sit within thumb reach in the bottom half. Menus open as bottom sheets.
+- [ ] Nothing covers the editor or the keyboard: no ads, banners or toasts. Toasts appear above the keyboard.
+- [ ] Handles `visualViewport`, the OS keyboard and safe-area insets. Inputs use at least 16 px text, so iOS doesn't zoom on focus.
+- [ ] Works with Gboard/iOS composition events when the phone's own keyboard is in use.
+- [ ] A tap shows a visible response within 100 ms on a 4× CPU throttle.
+- [ ] Respects reduced motion. Haptics and sounds are optional.
+
+### 5.4 Language tiers and the per-language checklist
+
+Every language declares a `tier` in its `language.json` (Phase 7). A **tier-gate test** checks that each required piece exists and that the latest evaluation numbers meet the targets. A language can't claim a tier it hasn't earned. `pnpm roster` writes the status table to `LANGUAGES.md`.
+
+**Tier C: Keyboard** (every language)
+- [ ] **Layouts.** Taken from an open source or a documented standard:
+  - the licence is in `vendor/`;
+  - our changes are listed in `source`;
+  - output is NFC and the layout passes schema validation.
+- [ ] **Tests.** A golden typing test and an alphabet-coverage test (unit), plus an e2e smoke test on desktop and phone.
+- [ ] **Phone layout.** Generated or hand-tuned. Every character is reachable, directly or by long-press. A symbols page has the language's punctuation and digits.
+- [ ] **Fonts.** The no-tofu test passes, `lang` and `dir` are correct, and the sample sentence renders.
+- [ ] **Page.** An original intro and layout summary, plus:
+  - a table of the special letters, generated from the data;
+  - "how to type these without this site" (Windows, Mac, phone);
+  - at least 4 FAQs;
+  - a cheat sheet;
+  - look-up links;
+  - emoji names, if CLDR has the language.
+- [ ] **Typing tutor.** Lessons generated from the layout.
+
+**Tier B: Smart** (Tier C, plus)
+- [ ] A licence-clean word list of at least 20k words, plus a next-word table, built by the pipeline. It stays within its size budget.
+- [ ] Suggestions and spell check with per-language settings. Its misspelling set meets the targets.
+- [ ] Non-Latin scripts: Roman typing whose evaluation set meets target, or the page says Beta.
+- [ ] Latin scripts with diacritics: smart accents that meet target.
+- [ ] A typing test with words and sentences.
+- [ ] Voice typing, wherever the locale probe shows the browser returns this script.
+
+**Tier A: Flagship** (Tier B, plus)
+- [ ] A hand-tuned phone layout.
+- [ ] Native-speaker review of the page copy and of 50 random Roman conversions. The owner arranges the reviewer.
+- [ ] Held-out message test: fewer than 1 correction per 10 words.
+- [ ] Guides for Windows, Mac, Android and iPhone.
+- [ ] Game word sets and a daily challenge.
+- [ ] Related converters, where any exist.
+
+---
+
+## 6. Phases
+
+### Phase 5: Mobile keyboard 2.0 (size L)
+
+**Why first:** 70 % of visitors are on phones, and every later feature runs on this keyboard.
+
+**Stand-out bar:** it feels like a phone keyboard, not a web page.
+- The editor and keyboard fill the screen like a messaging app.
+- Every character is one tap or one slide away.
+- The phone's own keyboard is a first-class choice, not a fallback.
+
+- [ ] **5.1 Deploy and measure (baseline first).**
+  - [ ] If the site isn't live on its domain yet:
+    - deploy it and set `PUBLIC_SITE_URL`;
+    - regenerate the cheat-sheet PDFs, because they print the site address;
+    - run Lighthouse on real hosting (carried over from Phase 3).
+  - [ ] Add privacy-friendly analytics with no cookies, and **never record typed text**. Events:
+    - keyboard mode (on-screen or phone keyboard), layout, Copy, Share, Download;
+    - voice start, picking a Roman candidate, errors.
+    - Add a line about analytics to the privacy FAQ.
+  - [ ] Field Web Vitals (LCP, INP, CLS) by device class, sent to analytics.
+  - [ ] After 2 weeks, write the baseline into these notes:
+    - phone share, top viewport widths and browsers;
+    - LCP and INP at p75;
+    - copies and shares per phone session;
+    - on-screen keyboard vs phone-keyboard usage.
+- [ ] **5.2 Phone-first page layout.**
+  - [ ] **Compose mode on phones:**
+    - the editor sits on top and the keyboard is docked at the bottom;
+    - safe-area insets are respected;
+    - the editor resizes with `visualViewport` (iOS URL bar, Android OS keyboard);
+    - the page doesn't jump while you type.
+  - [ ] SEO content stays below the editor and is reachable ("More about Urdu typing ↓").
+  - [ ] **Sticky action row:**
+    - a big Copy button;
+    - Share, with WhatsApp first where available (`https://wa.me/?text=`);
+    - Undo/Clear;
+    - everything else in a **More** bottom sheet.
+  - [ ] A "Copied" toast above the keyboard, and a **Copy and open WhatsApp** action.
+- [ ] **5.3 Real phone layouts (schema and generator).**
+  - [ ] Schema: an optional `mobile` block holding:
+    - letter rows of key references, at most 11 keys per row;
+    - a `symbols` page;
+    - `digits` (native and Western).
+  - [ ] Generator: builds the phone layout of any language from its desktop layout.
+    - Keep every letter, ordered by frequency (from the word list when there is one).
+    - Move rare letters into the long-press list of a related letter.
+  - [ ] Hand-tuned overrides for Urdu, Arabic, Hindi and Bangla.
+  - [ ] **Symbols page** (`?123`, `١٢٣`, `१२३`):
+    - the language's punctuation first (۔ ، ؟ ؛ for Urdu, । ॥ for Hindi);
+    - native and Western digits;
+    - currency (₨ ₹ ৳ ﷼) and common symbols.
+  - [ ] Test, for every layout: every character the desktop layout types can be reached on the phone layout.
+- [ ] **5.4 Touch mechanics.**
+  - [ ] A key-preview bubble above the finger, showing the enlarged glyph in the script's font.
+  - [ ] Long-press: slide to an alternate and release to type it (no second tap). A small corner hint marks keys with alternates.
+  - [ ] Slide on the space bar to move the caret. Slide left from Backspace to select words to delete. Backspace repeat speeds up to whole words after about 1.5 s.
+  - [ ] Hit areas extend into the gaps between keys, so near misses go to the nearest key.
+  - [ ] Optional haptic tick (Android `navigator.vibrate`; iOS has none) and an optional key sound, off by default.
+  - [ ] Latency: a tap shows its glyph in the editor within 50 ms on a 4× CPU throttle. Pressing a key doesn't re-render the whole keyboard (measure with the React profiler).
+- [ ] **5.5 Comfort settings**, remembered per device.
+  - [ ] Keyboard height (S/M/L), a one-handed mode (left or right), a landscape layout, and wider or split keys on tablets.
+  - [ ] Key label size, and a high-contrast keys option.
+- [ ] **5.6 "Use my phone's keyboard" as a first-class mode.**
+  - [ ] First visit on a phone: one screen with the choice "Tap keys here" or "Use my phone keyboard". For languages with Roman typing, the second option reads "type in English letters". The choice is remembered.
+  - [ ] In phone-keyboard mode:
+    - the suggestion bar sits just above the OS keyboard (`visualViewport`);
+    - it works with Gboard, SwiftKey and iOS composition (`insertCompositionText`, `insertReplacementText`);
+    - autocorrect and autocapitalize are off in Roman mode.
+  - [ ] e2e tests that simulate composition events, as Gboard sends them.
+- [ ] **5.7 Speed on low-end phones.**
+  - [ ] **Each page ships only its own layouts.** Load the layout in the island instead of importing the whole registry. Add a test that fails if a keyboard page's JS grows when another language is added.
+  - [ ] Try Preact (`preact/compat`). Keep it if every e2e test passes and it saves at least 30 KB gzipped.
+  - [ ] Subset fonts per page with `unicode-range` (carried over from Phase 3).
+  - [ ] **Budgets, enforced in CI:**
+    - at most 90 KB gzipped of initial JS on keyboard pages;
+    - CLS below 0.05.
+  - [ ] **Field targets:** LCP p75 under 2.0 s and INP p75 under 150 ms on phones.
+- [ ] **5.8 Install and share loop.**
+  - [ ] An install prompt on Android after the 2nd visit or 3rd copy (`beforeinstallprompt`), and an "Add to Home Screen" hint sheet on iOS.
+  - [ ] **Web Share Target** (installed PWA on Android): text shared into Likho from WhatsApp or any app opens in the editor. On a Roman layout it can be converted in one tap.
+- [ ] **5.9 Phone testing.**
+  - [ ] Add Playwright projects for iPhone 15 (WebKit) and a 360×640 Android viewport, and run every mobile spec on both.
+  - [ ] Manual device pass, recorded in the notes:
+    - browsers: Android Chrome, Samsung Internet, iOS Safari, iOS Chrome;
+    - languages: Urdu, Hindi, Arabic;
+    - in portrait and landscape.
+
+**Exit**
+- Mobile e2e passes on Pixel 7, iPhone 15 and 360 px.
+- No overflow at 320 px.
+- The CI budgets hold.
+- Field LCP and INP meet their targets, or the gap is written down with a reason.
+- **Hallway test**, which the owner runs with 5 people: write a 20-word Urdu message on a phone and share it to WhatsApp. Everyone finishes without help; record their times.
+- Copies and shares per phone session are up against the 5.1 baseline.
+
+---
+
+### Phase 6: Roman typing and smart typing for every current language (size XL)
+
+**Why now:** this feature is proven on Urdu, the pages already exist, and phone users can type English letters on their own keyboard.
+
+**Stand-out bar:**
+- every current language converts offline, with a published accuracy number;
+- Arabizi digits (`3` ع, `7` ح) work;
+- Persian gets correct ZWNJ;
+- Hindi and Bangla match the chat spellings people actually use.
+
+Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
+
+| Language | Page title | Example |
+|---|---|---|
+| Urdu | Roman Urdu to Urdu Keyboard (live) | `mera naam` → میرا نام |
+| Arabic | English to Arabic Typing | `marhaba` → مرحبا |
+| Farsi | Finglish to Persian Keyboard | `salam` → سلام |
+| Pashto | Roman Pashto to Pashto | → پښتو |
+| Sindhi | Roman Sindhi to Sindhi | → سنڌي |
+| Punjabi (Shahmukhi) | Roman Punjabi to Shahmukhi | → پنجابی |
+| Saraiki | Roman Saraiki to Saraiki | → سرائیکی |
+| Balochi | Roman Balochi to Balochi | → بلوچی |
+| Kashmiri | Roman Kashmiri to Kashmiri | → کٲشُر |
+| Hindi | English to Hindi Typing | `namaste` → नमस्ते |
+| Bangla | English to Bangla Typing | `ami` → আমি |
+
+- [ ] **6.1 Word lists for every current language** (the dictionary pipeline goes multilingual).
+  - [ ] `build --lang <code>` works on any Wikipedia dump. Each language gets its own normaliser:
+    - Arabic: strip tatweel and harakat for lookup, and unify alef forms.
+    - Farsi: ی/ک, with ZWNJ kept inside the word.
+    - Hindi: nukta, and anusvara vs chandrabindu.
+    - Bangla: khanda ta.
+    - Sindhi, Pashto, Shahmukhi, Saraiki, Kashmiri, Balochi: their letter variants.
+  - [ ] A second, conversational source for chat words, if its licence is confirmed (§8). Wikipedia alone lacks everyday words.
+  - [ ] **Small or missing Wikipedias.** Saraiki and Kashmiri are small, and Balochi may have none (check). Fall back to:
+    - rules;
+    - words shared with Urdu or Farsi;
+    - a hand-written list.
+    - The tier stays honest.
+  - [ ] Budget: at most 150 KB gzipped per language (words plus next-word table). Loaded lazily and cached for offline use.
+- [ ] **6.2 Transliteration schemes.**
+  - [ ] **Scheme inheritance** (`extends: "ur-roman"` plus differences) for Shahmukhi, Saraiki, Kashmiri, Balochi and Sindhi.
+  - [ ] **Hindi:**
+    - Hinglish chat spellings (`kya`, `hai`, `mein` में / `main` मैं);
+    - schwa deletion, left to the dictionary beam;
+    - ं vs ँ;
+    - capital letters as hints (T ट, D ड, N ण, Sh ष).
+  - [ ] **Bangla:** Bangladeshi and Indian chat spellings (`ami`, `tumi`, `kemon acho`), using our own rules.
+  - [ ] **Arabic:**
+    - English-letter spellings (`marhaba`);
+    - the chat alphabet: 2 ء, 3 ع, 5 خ, 6 ط, 7 ح, with apostrophe forms (3' غ, 6' ظ, 7' خ);
+    - regional variants for 8 and 9 offered as alternatives.
+  - [ ] **Farsi (Finglish):**
+    - kh خ, gh غ/ق, sh ش, zh ژ, ch چ;
+    - **automatic ZWNJ**: `mikonam` → می‌کنم, `ketabha` → کتاب‌ها.
+  - [ ] **Pashto:** ښ ږ ټ ډ ړ ڼ ځ څ ې ۍ, with common Roman conventions (x or sh, zh or g', ts, dz).
+- [ ] **6.3 Evaluation sets (the quality gate).**
+  - [ ] **Hindi, Bangla and Sindhi** (and a re-check of Urdu): test splits from the Google **Dakshina** romanisation lexicons (CC BY-SA 4.0, confirmed). Never tune on the test split.
+  - [ ] **Arabic, Farsi, Pashto, Shahmukhi, Saraiki, Balochi and Kashmiri:** original sets written for this project:
+    - at least 300 word pairs;
+    - 20 held-out chat messages each;
+    - native-speaker spot checks for Tier A languages (the owner arranges them).
+  - [ ] **Targets:**
+    - Hindi, Bangla, Arabic, Farsi, Shahmukhi, Pashto, Sindhi: top-1 ≥ 85 %, top-5 ≥ 97 %, fewer than 1 correction per 10 words in held-out messages.
+    - Saraiki, Balochi, Kashmiri: top-1 ≥ 70 % and top-5 ≥ 90 %. Labelled Beta until they reach the higher bar.
+  - [ ] `eval:<lang>` runs in CI and writes a results JSON that the tier gate reads.
+- [ ] **6.4 Roman pages.**
+  - [ ] Pages for all ten languages above (`/hindi/roman`, `/bangla/roman`, `/arabic/roman`, …), each with:
+    - the example shown above the editor;
+    - a spelling guide (like `RomanGuide`);
+    - a cheat-sheet PDF for the Roman scheme.
+  - [ ] Same keys as Urdu: Space converts, 1–6 pick, Esc keeps English. They work on our on-screen Latin keyboard and on the phone's own keyboard.
+  - [ ] English words the user keeps go into the personal dictionary, so they aren't converted again.
+  - [ ] **"Report a wrong word"** (opt-in, with a consent notice): sends only the Roman word and the chosen output, to feed the next rule update. Needs a tiny endpoint, or a `mailto` until one exists.
+  - [ ] Default tab on `/hindi` and `/bangla`: see decision §11.1.
+- [ ] **6.5 Reverse: script → Roman.**
+  - [ ] "Urdu to Roman Urdu", "Hindi to English letters" and the same for each language. Two styles:
+    - **Chat style**: the most common spelling attested in the evaluation data.
+    - **Scholarly**: ISO 15919/IAST for Hindi, ALA-LC style for Arabic-script languages.
+  - [ ] The copy says plainly that this changes the letters, not the meaning. Translation comes with AI assist (Phase 11).
+- [ ] **6.6 Suggestions, correction and autocorrect for every current language.**
+  - [ ] Per-language settings for `SpellChecker`:
+    - sound-alike groups;
+    - cheap vowel and hamza drops;
+    - joinable words.
+    - **Keyboard-neighbour costs are generated from the layout data**, both desktop and phone rows.
+  - [ ] **Join and split corrections** (`buon giorno` → `buongiorno` in Phase 7): offered when the joined (or split) form is much more common.
+  - [ ] Misspelling set per language: at least 40 misspellings and 500 correct words. Targets:
+    - at least 90 % of misspellings flagged;
+    - the right word in the top 3 for at least 90 %;
+    - false flags under 1 %.
+  - [ ] **Autocorrect on Space** for high-confidence fixes, as phones do. Backspace right after undoes it.
+    - Off by default.
+    - On by default only where the evaluation shows fewer than 1 % wrong replacements.
+  - [ ] Completion and next-word suggestions on every layout of these languages, not just Urdu.
+- [ ] **6.7 Wider voice typing.**
+  - [ ] A locale probe on Chrome desktop, Android Chrome and Safari. Record which locales return text in the script we type, and publish the table in the notes.
+  - [ ] Enable voice only where the probe passes. Add a dialect picker for Arabic (ar-SA, ar-EG, ar-AE, …).
+
+**Exit**
+- All 10 new Roman pages are live, each at its target or labelled Beta.
+- Suggestions and spell check run in every current language that has a word list.
+- The voice table is published.
+- e2e passes for each Roman page on desktop and in both phone modes.
+
+---
+
+### Phase 7: Platform for 100 languages, Latin toolkit and Wave 1 (size XL)
+
+**Why now:** every feature has to be language-generic before languages are added in bulk.
+
+**Stand-out bar:**
+- the page cost stays flat as languages are added;
+- no language ever shows tofu (missing-glyph boxes);
+- Latin languages get smart accents that type the accents for you, not shortcuts you must learn.
+
+- [ ] **7.1 Language registry as data.**
+  - [ ] One folder per language: `packages/layouts/languages/<slug>/`, holding:
+    - `language.json` (lang, script, dir, fonts, layouts, voice locales, scheme, word list, tier);
+    - the layouts;
+    - phone-layout overrides.
+  - [ ] Page copy moves to an Astro content collection, `src/content/languages/<slug>.md`, with a zod schema.
+  - [ ] Migrate the 11 current languages. **Golden tests prove that no output or URL changed.**
+  - [ ] Languages load per page (builds on 5.7). The bundle-growth test stays green.
+  - [ ] The tier-gate test (§5.4) and `pnpm roster` → `LANGUAGES.md`.
+- [ ] **7.2 Scripts and fonts.**
+  - [ ] A script registry: ISO 15924 code → font stack (Noto, through fontsource), direction, digits, punctuation, whether the script has case, and whether letters join.
+  - [ ] **No-tofu test:** every character any layout can type must be in the page's font. Read the font's cmap at build time.
+  - [ ] Only the page's script fonts load, subset with `unicode-range`.
+- [ ] **7.3 Importers at scale.**
+  - [ ] CLDR 43 keyboards for every Windows layout we need.
+  - [ ] The Keyman importer covers more of `.kmn`: stores with `any`/`index`, contexts, more deadkey forms. Layouts it can't express are **reported, never imported wrongly**.
+  - [ ] Evaluate xkeyboard-config (X11 layouts) as a third source. Check its licence per file.
+  - [ ] Add the ABNT2 (`IntlRo`) and JIS (`IntlYen`) keys to `keycodes.ts`.
+  - [ ] An import report for each layout: source, licence, coverage and our changes.
+- [ ] **7.4 Language picker and look-up.**
+  - [ ] **Searchable picker:**
+    - finds English and native names plus aliases (Farsi/Persian, Bangla/Bengali);
+    - shows recent languages first;
+    - groups languages by region;
+    - opens as a full-screen sheet on phones.
+  - [ ] **Home page:** suggests languages from `navigator.languages`, and lets you browse all of them by script or region.
+  - [ ] **Look-up menu** on every keyboard (the Lexilogos "Search & Translation" idea):
+    - Translate (Google, Bing or DeepL where they support the language);
+    - Wiktionary;
+    - web search.
+    - It opens a new tab only on click and is labelled as leaving the site.
+- [ ] **7.5 Latin toolkit** (Lexilogos keyboards, and the owner's English → Spanish/Italian typing).
+  - [ ] **Default mode for Latin languages: "Easy accents".** Most people searching "French keyboard" have an English keyboard. The mode combines:
+    - **QWERTY with US-International dead keys** (`'` `` ` `` `^` `"` `~`, and `'` + `c` → ç), the convention Windows and Linux users already know;
+    - an **accent bar**: one tap for each of the language's special letters (Shift for capitals), on desktop and phone;
+    - **smart accents**, the "English to Spanish typing" page title. Type plain letters, and Space adds the accent when the dictionary is sure (`cancion` → `canción`). **Ambiguous pairs** (`esta`/`está`, `e`/`è`, `como`/`cómo`) go to the candidate bar and are never changed automatically.
+  - [ ] **Spanish ¿ ¡:** typing `?` or `!` at the end of a sentence adds `¿` or `¡` at its start, as one undo step. `hola como estas?` → `hola ¿cómo estás?` (with `cómo` picked from the bar). The owner's example also adds a comma after `hola`. That is grammar, so it goes to AI assist (11.1).
+  - [ ] **Italian:** `perche` → `perché`, `citta` → `città`, and the join correction `buon giorno` → `buongiorno` (6.6).
+  - [ ] **French typography option:** a narrow no-break space before `; : ! ?` and inside `« »`. On by default for fr-FR.
+  - [ ] **National layouts:**
+    - French AZERTY (and Belgian), German and Swiss QWERTZ;
+    - Spanish (Spain and Latin America), Italian;
+    - Portuguese (PT, and BR ABNT2);
+    - Turkish Q and F;
+    - Polish programmer; Czech, Hungarian, Romanian, Nordic.
+  - [ ] Copy on each Latin page: how to type these letters without us (Windows Alt codes or US-International, Mac Option keys, long-press on phones), in our own words.
+  - [ ] **Smart-accent evaluation, per language:**
+    - Strip accents from 2,000 held-out Wikipedia sentences, then restore them.
+    - Target: at least 97 % of accent-needing words restored correctly.
+    - Ambiguous pairs must appear in the top 3.
+- [ ] **7.6 Case converter** (`/case-converter`), better than Lexilogos' upper/lower.
+  - [ ] **Modes:** UPPER, lower, Sentence case, Title Case, Capitalise Each Word, iNVERSE, alternating. Each is live as you type, with its own Copy button.
+  - [ ] **Language-aware rules:**
+    - Turkish and Azeri İ i / I ı;
+    - German ß → SS (optional ẞ);
+    - Greek all-caps drops the tonos, as Greek typography does, and lowercase uses final ς;
+    - Dutch `IJ` in title case;
+    - Irish prefixes (`an tAthair`);
+    - title-case small words for en, fr, es, de, it and pt.
+  - [ ] Works in any script. Scripts without case (Arabic, Devanagari, …) get a short note. Grapheme-aware counts of characters, words and lines.
+- [ ] **7.7 Wave 1 languages (14):**
+  - Spanish, French, Italian, German, Portuguese, Turkish;
+  - Polish, Dutch, Romanian, Czech, Hungarian, Swedish, Catalan, Croatian.
+  - Every one reaches Tier B. Target Tier A: Spanish, French, Italian, German, Portuguese, Turkish (word lists from Wikipedia, §8).
+
+**Exit**
+- 25 languages are live.
+- The 11 original languages migrated with no change in output.
+- The tier gate and the bundle-growth test pass.
+- The no-tofu test passes everywhere.
+- Smart accents meet their target in the Tier A Latin languages.
+- The case converter's e2e tests cover the Turkish, Greek, German and Irish cases.
+
+---
+
+### Phase 8: Learning hub and keyboard tester (size L)
+
+**Why now:** built once and generic, so every language added in Phase 9 gets tests, lessons and games automatically.
+
+**Stand-out bar:**
+- typing tests that score Nastaliq, Indic, Thai and CJK correctly;
+- practice that works on phones;
+- a keyboard tester that also checks layouts and invisible characters.
+
+- [ ] **8.1 Typing test and tutor in every language.**
+  - [ ] Generalise `TypingTest` and `TypingTutor`. Content comes from:
+    - lessons generated from any layout, including phone layouts, plus "learn the Roman spellings" lessons for Roman schemes;
+    - drill words from the word list;
+    - sentences from **Tatoeba** (CC BY 2.0 FR, credited).
+  - [ ] Sentences are filtered so they:
+    - can be typed on the layout;
+    - fall within a length range;
+    - contain no offensive words (a filter list, plus a manual sample review for Tier A languages).
+  - [ ] URLs: `/<slug>-typing-test` and `/<slug>-typing-tutor` (the Urdu URLs don't change), plus a `/typing` hub with the language picker.
+  - [ ] **Script-correct scoring:**
+    - compare graphemes in NFD (generalised from Urdu);
+    - handle Indic conjuncts and vowel signs;
+    - Korean counts syllables;
+    - Thai and CJK use characters per minute (the norm for them); other languages use WPM.
+  - [ ] Phone test mode (on-screen keys or the phone's own keyboard), with separate personal bests. A result card with the language name in its own script.
+- [ ] **8.2 Practice and games** (original designs; §2).
+  - [ ] **Daily challenge:**
+    - one passage per language per day, seeded by the date, so it's the same for everyone;
+    - a streak counter;
+    - a share card ("Day 12 · 48 WPM · 97 %").
+  - [ ] **Falling-words game.** Word sets come from frequency bands for each level. Playable on phones with the on-screen keyboard.
+  - [ ] **Key-finder drill.** A letter appears and you tap or press its key. It's the fastest way to learn a layout on a phone.
+  - [ ] **Ghost race** against your own personal best.
+  - [ ] **Progress page:**
+    - history per language;
+    - an accuracy-by-key heatmap drawn on the keyboard;
+    - drills generated for your weakest keys;
+    - export and import as JSON.
+    - Everything stays local (IndexedDB). Global leaderboards wait for accounts (11.3).
+  - [ ] Badges for streaks and milestones, stored locally.
+- [ ] **8.3 Keyboard tester** (`/keyboard-tester`, the owner's "Keyboard Layout Tester").
+  - [ ] **On-screen board.** Physical keys light up as pressed, in ANSI, ISO, ABNT2 or JIS shape. Each press shows `key`, `code`, `location`, `repeat`, the modifiers and timing. A progress bar tracks "all keys tested".
+  - [ ] **Fault checks:**
+    - chatter: two presses less than 30 ms apart are flagged;
+    - stuck keys;
+    - rollover: how many held keys register at once.
+  - [ ] **OS layout detection** through the Keyboard Map API (Chromium), otherwise inferred from `event.key`.
+  - [ ] **Layout mapping:** pick any of our layouts and see, for each key, what it types next to what the OS types.
+  - [ ] **Special-characters inspector:** paste text and see each character's code point, Unicode name, script, direction and normalisation.
+    - Invisible characters (ZWJ, ZWNJ, RLM, NBSP) are highlighted.
+    - Name data loads lazily, per Unicode block.
+  - [ ] **On phones:** a multi-touch screen tester, plus the inspector.
+
+**Exit**
+- Test and tutor are live for every Tier B language or higher (at least 25).
+- Games are live for the Tier A languages.
+- The tester's e2e tests cover ISO and ABNT2 keys.
+- axe and Lighthouse pass on every new page.
+
+---
+
+### Phase 9: Waves 2–4, reaching about 110 languages (size XXL, run as 9a, 9b and 9c)
+
+**Why now:** Phases 7–8 made everything generic, so this phase is mostly data, engines for the special scripts, and copy.
+
+**Stand-out bar:** "English to Tamil/Telugu/Marathi/Gujarati typing" pages with accuracy numbers. Real input methods for Korean, Japanese, Chinese and Vietnamese. Every language works on phones.
+
+**Scaling work** (do it before 9a):
+- [ ] **Cheat-sheet PDFs:** generate them during the deploy build and stop committing them.
+- [ ] **Offline:** precache the app shell plus the pages the user has visited, and add a **"Save this language for offline"** button. Stop precaching every page.
+- [ ] **Tests:** golden tests for every language stay in the unit tests. e2e runs a smoke test per language (load, then type the golden text on desktop and phone), with a full nightly e2e run.
+- [ ] **Build:** split the sitemap by section. CI must stay under 10 minutes.
+- [ ] **Emoji:** names and keywords for every new language that CLDR annotates, added automatically.
+
+- [ ] **9a. Wave 2: South Asia and Arabic script** (our core audience, 23 languages).
+  - [ ] **Languages:**
+    - Indic: Punjabi (Gurmukhi), Marathi, Nepali, Gujarati, Tamil, Telugu, Kannada, Malayalam, Odia, Assamese, Sinhala, Sanskrit, Konkani, Maithili;
+    - Dhivehi;
+    - Arabic script: Kurdish (Sorani), Uyghur, Dari, Hindko, Brahui, Shina, Khowar, Malay (Jawi).
+  - [ ] **Roman typing:**
+    - The Dakshina languages (Gujarati, Kannada, Malayalam, Marathi, Punjabi, Sinhala, Tamil, Telugu) use Dakshina evaluation sets.
+    - Others use Aksharantar (licence split by data part; check, §8).
+    - Page titles: "English to Tamil Typing" and so on.
+  - [ ] **Standards:** InScript (CLDR), Tamil99, Nepali Traditional and Romanised, Sinhala Wijesekara, ITRANS and IAST for Sanskrit.
+  - [ ] **Hindko, Brahui, Shina and Khowar:** only if an openly licensed layout exists, or we design one with a native speaker. Otherwise defer them and write down why.
+- [ ] **9b. Wave 3: global majors** (23 languages).
+  - [ ] **Languages:**
+    - Cyrillic: Russian, Ukrainian, Belarusian, Bulgarian, Serbian, Macedonian, Kazakh, Kyrgyz, Tajik, Mongolian;
+    - Greek, Hebrew, Armenian, Georgian;
+    - South-East Asia: Thai, Lao, Khmer, Burmese, Vietnamese;
+    - East Asia: Korean, Japanese, Chinese (Simplified), Chinese (Traditional).
+  - [ ] **Engines:**
+    - **Korean:** Hangul 2-set composition, with a Backspace that removes one jamo at a time.
+    - **Japanese:** romaji → kana. Kanji conversion only with a licence-clean dictionary (check Mozc's data, §8); otherwise ship kana only and say so.
+    - **Chinese:** pinyin → hanzi with CC-CEDICT (CC BY-SA 4.0) plus Wikipedia frequencies. Accept toneless and tone-number input. Simplified ↔ Traditional through OpenCC data (Apache-2.0). A Zhuyin layout for Taiwan.
+    - **Vietnamese:** Telex and VNI, with a choice of old or new tone placement.
+    - **Roman → Cyrillic** ("translit") for Russian, Ukrainian and Bulgarian, plus a phonetic layout.
+    - **Greek:** Greeklish → Greek. **Hebrew:** phonetic layout and niqqud.
+    - **Thai** Kedmanee, **Khmer** NiDA, **Burmese** Unicode (Zawgyi conversion in Phase 10).
+- [ ] **9c. Wave 4: long tail to about 110** (40 languages, plus special keyboards).
+  - [ ] **Latin:**
+    - Europe: Slovak, Slovenian, Albanian, Lithuanian, Latvian, Estonian, Finnish, Norwegian, Danish, Icelandic, Faroese, Irish, Welsh, Scottish Gaelic, Maltese, Galician, Esperanto, Latin, Afrikaans;
+    - Turkic and Kurdish: Azerbaijani, Turkmen, Uzbek, Kurdish (Kurmanji);
+    - Africa and the Pacific: Yoruba, Igbo, Hausa, Wolof, Hawaiian, Māori.
+  - [ ] **Other scripts:**
+    - Amharic and Tigrinya: Ge'ez, with syllable input from Roman letters;
+    - Tibetan, Syriac, Yiddish;
+    - Cherokee and Inuktitut: syllabaries;
+    - Santali: Ol Chiki;
+    - Bodo: Devanagari;
+    - Tatar and Bashkir.
+  - [ ] **Special keyboards** (not counted as languages):
+    - IPA;
+    - Quranic Arabic, with full tashkeel;
+    - Arabic romanisation (ā ḥ ṣ ʿ ʾ);
+    - pinyin with tone marks.
+
+**Exit**
+- At least 100 languages at Tier C or above, at least 50 at Tier B or above, and about 15 at Tier A. `LANGUAGES.md` is published.
+- The no-tofu test and axe pass on every page.
+- Build and CI times stay within budget.
+- Per-page JS is flat.
+
+---
+
+### Phase 10: Converters and text tools (size M)
+
+**Why now:** each converter is a stand-alone search page for an audience we already serve.
+
+**Stand-out bar:**
+- conversions are checked against two independent references, as InPage was;
+- nothing is uploaded;
+- every tool works on a phone.
+
+- [ ] **10.1 Legacy-font converters.**
+  - [ ] Kruti Dev ↔ Unicode (Hindi; a very large search), then Chanakya.
+  - [ ] Bijoy ↔ Unicode (Bangla; Bangladesh).
+  - [ ] Zawgyi ↔ Unicode (Burmese), with automatic detection (check Google myanmar-tools, Apache-2.0).
+  - [ ] Each one follows the InPage method:
+    - tables built from two independent references with clean licences;
+    - round-trip tests;
+    - unknown codes are counted and shown to the user.
+- [ ] **10.2 Script converters.**
+  - [ ] Shahmukhi ↔ Gurmukhi, with dictionary help for vowels.
+  - [ ] Hindi ↔ Urdu (Hindustani), with dictionary help. Show its quality number.
+  - [ ] Serbian Cyrillic ↔ Latin.
+  - [ ] Kazakh and Uzbek Cyrillic ↔ Latin. Check which official alphabet version is current.
+- [ ] **10.3 Text tools.**
+  - [ ] **Diacritics remover:** Arabic and Urdu harakat, Hebrew niqqud, Latin accents.
+  - [ ] **Digit converter:** ٠١٢ / ۰۱۲ / ०१२ / 012.
+  - [ ] **Number to words** in Urdu, Hindi, Arabic and Bangla (cheque writing, with lakh and crore).
+  - [ ] **Word and character counter** for all scripts, grapheme-aware.
+  - [ ] **"Fix Urdu/Arabic text copied from a PDF":** turn presentation forms back into normal letters and undo reversed order. This is a common pain point.
+- [ ] Each tool:
+  - links from the relevant keyboard pages;
+  - is in the sitemap;
+  - gets e2e and axe tests on desktop and phone.
+
+**Exit**
+- Every converter matches its reference outputs on its test corpus.
+- Every tool is linked and indexed.
+
+---
+
+### Phase 11: AI assist, reach and revenue (size L, ongoing)
+
+- [ ] **11.1 AI assist** (opt-in; text goes through our server proxy to the Claude API; use the `claude-api` skill to choose models and set up caching).
+  - [ ] **Features:**
+    - translate (the real "Hindi to English");
+    - fix grammar and spelling in whole sentences;
+    - add diacritics (اعراب, tashkeel, niqqud);
+    - add punctuation (the comma in `hola, ¿cómo estás?`);
+    - whole-sentence Roman conversion when the rules are unsure;
+    - rewrite the tone.
+  - [ ] **Safeguards:**
+    - a clear notice that text is sent;
+    - rate limits and a monthly cost cap;
+    - typed text is never logged.
+- [ ] **11.2 UI in more languages.** Urdu, Hindi, Arabic, Bangla, Spanish, French, Portuguese, Farsi and Turkish, plus `hreflang` (deferred since Phase 1).
+- [ ] **11.3 Optional accounts and sync:**
+  - drafts, personal dictionary and typing progress;
+  - global leaderboards with an anti-cheat check on keystroke timing.
+- [ ] **11.4 Browser extension** (Chrome, Firefox, Edge): Roman → script in any text box, built on `packages/engine`.
+- [ ] **11.5 Embeddable widget** and a classroom mode for schools.
+- [ ] **11.6 Experiment:** glide (swipe) typing on the on-screen keyboard for Tier A languages, decoding the swipe path against the word list.
+- [ ] **11.7 Monetisation:**
+  - **Ads:** fixed slots with no layout shift. Never over the editor or keyboard, and never between them on phones.
+  - **Pro tier:** no ads, an AI assist quota, and sync.
+
+---
+
+## 7. Language roster (about 110)
+
+The target tier for each language is decided by data after Phase 5 analytics. The starting proposal is below. ★ marks a Tier A candidate.
+
+| Group | Languages | Phase |
+|---|---|---|
+| Current (11) | Urdu ★, Hindi ★, Bangla ★, Arabic ★, Farsi ★, Punjabi (Shahmukhi) ★, Pashto ★, Sindhi ★, Saraiki, Balochi, Kashmiri | 6 |
+| Wave 1 (14) | Spanish ★, French ★, Italian ★, German ★, Portuguese ★, Turkish ★, Polish, Dutch, Romanian, Czech, Hungarian, Swedish, Catalan, Croatian | 7 |
+| Wave 2 (23) | Punjabi (Gurmukhi), Marathi, Nepali, Gujarati, Tamil, Telugu, Kannada, Malayalam, Odia, Assamese, Sinhala, Sanskrit, Konkani, Maithili, Dhivehi, Kurdish (Sorani), Uyghur, Dari, Hindko, Brahui, Shina, Khowar, Malay (Jawi) | 9a |
+| Wave 3 (23) | Russian, Ukrainian, Belarusian, Bulgarian, Serbian, Macedonian, Kazakh, Kyrgyz, Tajik, Mongolian, Greek, Hebrew, Armenian, Georgian, Thai, Lao, Khmer, Burmese, Vietnamese, Korean, Japanese, Chinese (Simplified), Chinese (Traditional) | 9b |
+| Wave 4 (40) | Slovak, Slovenian, Albanian, Lithuanian, Latvian, Estonian, Finnish, Norwegian, Danish, Icelandic, Faroese, Irish, Welsh, Scottish Gaelic, Maltese, Galician, Esperanto, Latin, Afrikaans, Azerbaijani, Turkmen, Uzbek, Kurdish (Kurmanji), Yoruba, Igbo, Hausa, Wolof, Hawaiian, Māori, Amharic, Tigrinya, Tibetan, Syriac, Yiddish, Cherokee, Inuktitut, Santali, Tatar, Bashkir, Bodo | 9c |
+| Special keyboards | IPA, Quranic Arabic, Arabic romanisation, pinyin tones | 9c |
+
+That makes 111 languages. Some Wave 2 languages may slip (Hindko, Brahui, Shina, Khowar) if no open layout exists. Wave 4 has room to add Bhojpuri, Dogri or Manipuri (Meetei Mayek) instead.
+
+---
+
+## 8. Data sources and licences
+
+Check each one again at the start of the phase that uses it. "Confirmed" means checked on 2026-10-31.
+
+| Source | Use | Licence | Status |
+|---|---|---|---|
+| Wikipedia dumps (per language) | Word lists, next-word tables, smart-accent evaluation | CC BY-SA 4.0 (credit; derived lists are CC BY-SA) | In use (Urdu) |
+| Google Dakshina | Roman evaluation and attested spellings for 12 South Asian languages | CC BY-SA 4.0 | Confirmed (repo README) |
+| AI4Bharat Aksharantar | Roman evaluation for other Indic languages | Split: CC BY for the manually collected part, CC0 for the mined part (AI4Bharat page) | Check the Hugging Face card and the IndicXlit repo before use |
+| Tatoeba | Typing-test sentences | CC BY 2.0 FR (some CC0); credit with a link | Confirmed |
+| Unicode CLDR 43 | Keyboards, emoji names | Unicode License v3 | In use |
+| SIL Keyman keyboards | Layouts | Mostly MIT (per keyboard) | In use; check each one |
+| xkeyboard-config | Latin and Cyrillic national layouts | X11/MIT-style, varies by file | Check per file |
+| CC-CEDICT | Pinyin → hanzi | CC BY-SA 4.0 | Check at 9b |
+| OpenCC data | Simplified ↔ Traditional | Apache-2.0 | Check at 9b |
+| Mozc dictionary data | Kana → kanji | Mixed | **Check carefully**; ship kana only if unclear |
+| Google myanmar-tools | Zawgyi detection | Apache-2.0 | Check at 10.1 |
+| Subtitle-based frequency lists | Chat words | Unclear (the underlying subtitles' rights) | **Avoid** unless the licence is clear |
+| Leipzig Corpora Collection | — | Sources conflict (CC BY vs CC BY-NC) | **Don't use** without written confirmation (the old plan listed it) |
+| Hunspell dictionaries | — | GPL/LGPL/MPL, varies | **Don't ship** in the client bundle unless the licence fits; our own spell checker covers this |
 
 ---
 
 ## 9. Success metrics
 
-| Metric | Target (90 days post-launch) |
+| Metric | Target |
 |---|---|
-| LCP (mobile, p75) | < 1.8 s |
-| Lighthouse a11y | ≥ 95 |
-| Roman→Urdu top-1 accuracy | ≥ 85 % |
-| Avg. session length on /urdu | > Branah's (benchmark via SimilarWeb) |
-| Copy/share/export actions per session | ≥ 1.2 |
-| Returning-user rate (7-day) | ≥ 25 % |
-| Organic ranking | Top 5 for "urdu keyboard", top 3 for "roman urdu to urdu" |
+| Phone LCP p75 / INP p75 (field) | < 2.0 s / < 150 ms |
+| Initial JS on keyboard pages | ≤ 90 KB gzipped, flat as languages are added |
+| Copies and shares per phone session | Up against the Phase 5 baseline (set the target number once the baseline is known) |
+| Languages at Tier C / B / A | ≥ 100 / ≥ 50 / ≈ 15 at the end of Phase 9 |
+| Roman top-1 (Tier A non-Latin) | ≥ 85 % |
+| Smart accents (Tier A Latin) | ≥ 97 % of accent-needing words |
+| Spell check false flags | < 1 % |
+| 7-day returning users | ≥ 25 % (daily challenge and streaks help here) |
+| Rankings | Top 5 for "<language> keyboard" and "English to <language> typing" in each Tier A language within 6 months of launch |
 
 ---
 
@@ -391,18 +757,23 @@ online-keyboard/
 
 | Risk | Mitigation |
 |---|---|
-| Nastaliq fonts are heavy (MBs) | Subset per page, `unicode-range`, lazy-load the full font |
-| Transliteration quality | Rules plus dictionary first. Measure on a test set. Community corrections feedback loop. |
-| Dictionary licensing | Use only CC/permissive corpora. Document provenance in `packages/dictionaries/SOURCES.md`. |
-| contenteditable RTL bugs | Keep the textarea for the MVP. Adopt an editor only behind a feature flag. |
-| Mobile OS keyboard conflict | Offer "use on-screen keyboard only" with `inputmode="none"` instead of readOnly, which keeps caret and selection working |
-| Copying competitor IP | Independent implementation, layouts from standards, original copy (see §0) |
+| 100 thin pages hurt SEO and trust | Tiers and the tier gate. Minimum content for every page, original copy, and a real feature on each page (§2 "Language value"). |
+| The bundle grows with each language | Per-page layout loading, plus the bundle-growth test (5.7, 7.1) |
+| Build, test and precache sizes explode | PDFs built at deploy, precache only visited pages, e2e smoke per language plus a nightly full run (Phase 9 scaling work) |
+| A licence trap in a dataset | §8 is checked at the start of each phase, and nothing ships without a recorded licence |
+| Low quality in low-resource languages | Beta labels, published numbers, "Report a wrong word", native-speaker review for Tier A |
+| Voice depends on browser vendors (none in Firefox; Android quirks) | The locale probe, voice enabled only where verified, honest UI copy |
+| iOS limits (no vibration, WebKit quirks) | iPhone e2e project, manual device pass every phase |
+| CJK dictionaries are large | Lazy loading per language, cached offline, a size budget per language |
+| Mobile ads covering the keyboard | Ad rules in 11.7 and the mobile checklist §5.3 |
 
 ---
 
-## 11. Immediate next steps
+## 11. Decisions for the owner
 
-1. Approve the stack (Astro + React island + TS) or switch to Next.js.
-2. Scaffold the monorepo (Phase 0).
-3. Collect the Urdu layout specs (CRULP phonetic, Windows Urdu) and the corpus sources.
-4. Build the engine and `/urdu` MVP (Phase 1). Then demo it.
+1. **Default tab on `/hindi` and `/bangla`.** Recommendation: make **English → Hindi/Bangla (Roman)** the default, because that is what most visitors search for, and keep InScript as a tab. Check against analytics after Phase 5.
+2. **Domain and analytics.** Which domain goes in `PUBLIC_SITE_URL`, and which privacy-friendly analytics tool to use (needed for 5.1).
+3. **Tier A list.** Confirm the ★ languages in §7 once two weeks of analytics are in.
+4. **Native-speaker reviewers** for Tier A languages, paid or volunteer (needed from Phase 6).
+5. **Plain-ASCII languages** (Indonesian, Swahili, Tagalog, …). Recommendation: leave them out of the count of 100, because a keyboard adds nothing for them.
+6. **AI budget and Pro pricing** (Phase 11).
