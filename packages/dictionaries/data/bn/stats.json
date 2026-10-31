@@ -1,0 +1,10 @@
+{
+  "source": "bnwiki-latest-pages-articles.xml.bz2",
+  "pages": 192129,
+  "sentences": 5248108,
+  "repeatedSentencesSkipped": 644722,
+  "tokens": 68842901,
+  "distinctWords": 1569682,
+  "wordsKept": 100000,
+  "nextWordHeads": 9997
+}

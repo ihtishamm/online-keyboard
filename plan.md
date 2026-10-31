@@ -290,7 +290,7 @@ Every language declares a `tier` in its `language.json` (Phase 7). A **tier-gate
 
 ---
 
-### Phase 6: Roman typing and smart typing for every current language (size XL)
+### Phase 6: Roman typing and smart typing for every current language (size XL) ✅ (owner follow-ups listed under "Open")
 
 **Why now:** this feature is proven on Urdu, the pages already exist, and phone users can type English letters on their own keyboard.
 
@@ -316,85 +316,90 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
 | Hindi | English to Hindi Typing | `namaste` → नमस्ते |
 | Bangla | English to Bangla Typing | `ami` → আমি |
 
-- [ ] **6.1 Word lists for every current language** (the dictionary pipeline goes multilingual).
-  - [ ] `build --lang <code>` works on any Wikipedia dump. Each language gets its own normaliser:
-    - Arabic: strip tatweel and harakat for lookup, and unify alef forms.
-    - Farsi: ی/ک, with ZWNJ kept inside the word.
-    - Hindi: nukta, and anusvara vs chandrabindu.
-    - Bangla: khanda ta.
-    - Sindhi, Pashto, Shahmukhi, Saraiki, Kashmiri, Balochi: their letter variants.
-  - [ ] A second, conversational source for chat words, if its licence is confirmed (§8). Wikipedia alone lacks everyday words.
-  - [ ] **Small or missing Wikipedias.** Saraiki and Kashmiri are small, and Balochi may have none (check). Fall back to:
-    - rules;
-    - words shared with Urdu or Farsi;
-    - a hand-written list.
-    - The tier stays honest.
-  - [ ] Budget: at most 150 KB gzipped per language (words plus next-word table). Loaded lazily and cached for offline use.
-- [ ] **6.2 Transliteration schemes.**
-  - [ ] **Scheme inheritance** (`extends: "ur-roman"` plus differences) for Shahmukhi, Saraiki, Kashmiri, Balochi and Sindhi.
-  - [ ] **Hindi:**
-    - Hinglish chat spellings (`kya`, `hai`, `mein` में / `main` मैं);
-    - schwa deletion, left to the dictionary beam;
-    - ं vs ँ;
-    - capital letters as hints (T ट, D ड, N ण, Sh ष).
-  - [ ] **Bangla:** Bangladeshi and Indian chat spellings (`ami`, `tumi`, `kemon acho`), using our own rules.
-  - [ ] **Arabic:**
-    - English-letter spellings (`marhaba`);
-    - the chat alphabet: 2 ء, 3 ع, 5 خ, 6 ط, 7 ح, with apostrophe forms (3' غ, 6' ظ, 7' خ);
-    - regional variants for 8 and 9 offered as alternatives.
-  - [ ] **Farsi (Finglish):**
-    - kh خ, gh غ/ق, sh ش, zh ژ, ch چ;
-    - **automatic ZWNJ**: `mikonam` → می‌کنم, `ketabha` → کتاب‌ها.
-  - [ ] **Pashto:** ښ ږ ټ ډ ړ ڼ ځ څ ې ۍ, with common Roman conventions (x or sh, zh or g', ts, dz).
-- [ ] **6.3 Evaluation sets (the quality gate).**
-  - [ ] **Hindi, Bangla and Sindhi** (and a re-check of Urdu): test splits from the Google **Dakshina** romanisation lexicons (CC BY-SA 4.0, confirmed). Never tune on the test split.
-  - [ ] **Arabic, Farsi, Pashto, Shahmukhi, Saraiki, Balochi and Kashmiri:** original sets written for this project:
-    - at least 300 word pairs;
-    - 20 held-out chat messages each;
-    - native-speaker spot checks for Tier A languages (the owner arranges them).
-  - [ ] **Targets:**
-    - Hindi, Bangla, Arabic, Farsi, Shahmukhi, Pashto, Sindhi: top-1 ≥ 85 %, top-5 ≥ 97 %, fewer than 1 correction per 10 words in held-out messages.
-    - Saraiki, Balochi, Kashmiri: top-1 ≥ 70 % and top-5 ≥ 90 %. Labelled Beta until they reach the higher bar.
-  - [ ] `eval:<lang>` runs in CI and writes a results JSON that the tier gate reads.
-- [ ] **6.4 Roman pages.**
-  - [ ] Pages for all ten languages above (`/hindi/roman`, `/bangla/roman`, `/arabic/roman`, …), each with:
-    - the example shown above the editor;
-    - a spelling guide (like `RomanGuide`);
-    - a cheat-sheet PDF for the Roman scheme.
-  - [ ] Same keys as Urdu: Space converts, 1–6 pick, Esc keeps English. They work on our on-screen Latin keyboard and on the phone's own keyboard.
-  - [ ] English words the user keeps go into the personal dictionary, so they aren't converted again.
-  - [ ] **"Report a wrong word"** (opt-in, with a consent notice): sends only the Roman word and the chosen output, to feed the next rule update. Needs a tiny endpoint, or a `mailto` until one exists.
-  - [ ] Default tab on `/hindi` and `/bangla`: see decision §11.1.
-- [ ] **6.5 Reverse: script → Roman.**
-  - [ ] "Urdu to Roman Urdu", "Hindi to English letters" and the same for each language. Two styles:
-    - **Chat style**: the most common spelling attested in the evaluation data.
-    - **Scholarly**: ISO 15919/IAST for Hindi, ALA-LC style for Arabic-script languages.
-  - [ ] The copy says plainly that this changes the letters, not the meaning. Translation comes with AI assist (Phase 11).
-- [ ] **6.6 Suggestions, correction and autocorrect for every current language.**
-  - [ ] Per-language settings for `SpellChecker`:
-    - sound-alike groups;
-    - cheap vowel and hamza drops;
-    - joinable words.
-    - **Keyboard-neighbour costs are generated from the layout data**, both desktop and phone rows.
-  - [ ] **Join and split corrections** (`buon giorno` → `buongiorno` in Phase 7): offered when the joined (or split) form is much more common.
-  - [ ] Misspelling set per language: at least 40 misspellings and 500 correct words. Targets:
-    - at least 90 % of misspellings flagged;
-    - the right word in the top 3 for at least 90 %;
-    - false flags under 1 %.
-  - [ ] **Autocorrect on Space** for high-confidence fixes, as phones do. Backspace right after undoes it.
-    - Off by default.
-    - On by default only where the evaluation shows fewer than 1 % wrong replacements.
-  - [ ] Completion and next-word suggestions on every layout of these languages, not just Urdu.
-- [ ] **6.7 Wider voice typing.**
-  - [ ] A locale probe on Chrome desktop, Android Chrome and Safari. Record which locales return text in the script we type, and publish the table in the notes.
-  - [ ] Enable voice only where the probe passes. Add a dialect picker for Arabic (ar-SA, ar-EG, ar-AE, …).
+**Beat list** (from §3; no competitor was re-opened this phase):
+- Romanised typing sites (Google Input Tools-style pages, Lexilogos) convert online, or by fixed rules with no word list; ours runs offline, ranks by a word list and publishes its accuracy per language.
+- Arabizi pages rarely accept the chat digits with apostrophe forms (3' غ) or regional 8/9; ours does, and offers both readings.
+- Finglish converters leave out the half-space; ours writes می‌کنم and کتاب‌ها.
+- No competitor we know of offers script → Roman in chat style, or a spell checker for Pashto, Shahmukhi or Saraiki.
+
+- [x] **6.1 Word lists for every current language.** Details, sources and stats: `packages/dictionaries/README.md`.
+  - [x] `build --lang <code>` builds from any Wikipedia dump (several parts comma-separated). Per-language normalisers now live in `@okb/engine/normalize`, shared by the build and the browser: Arabic drops tatweel and harakat and keeps alef forms apart (the spell checker accepts hamza-less alef as a variant); Persian keeps ZWNJ inside words; Hindi and Bangla compose nukta forms; the Urdu-family languages keep their own letters.
+  - [ ] A second, conversational source. **Not done:** no licence-clean chat corpus was found. This is the main reason Arabic and Persian stay Beta (formal word lists against colloquial chat).
+  - [x] Small Wikipedias: Kashmiri (21,396 words) and Saraiki (70,705) are built from their own Wikipedias. Balochi has none: Roman typing runs on rules alone, with no suggestions or spell check, and the page says so. **Not done:** borrowing words from Urdu or Farsi.
+  - [x] Budget: a compact front-coded format (`likho-dict 1`, `@okb/engine/compact`), at most 150 KB gzipped per language (40,000 words, or 35,000 for Hindi and Bangla, plus next words for the 3,000 commonest). The site fetches it on the first keystroke; the service worker caches it for offline use.
+- [x] **6.2 Transliteration schemes.**
+  - [x] Scheme inheritance (`packages/layouts/src/translit/extend.ts`) for Shahmukhi, Saraiki, Kashmiri, Balochi, Sindhi and Pashto.
+  - [x] Hindi: Hinglish chat spellings, schwa deletion by the dictionary beam, ं/ँ, and capital hints (T ट, D ड, N ण, Sh ष).
+  - [x] Bangla: Bangladeshi and Indian chat spellings, with our own rules.
+  - [x] Arabic: English-letter spellings, the chat digits with apostrophe forms, and both regional readings of 8 and 9.
+  - [x] Farsi: kh gh sh zh ch, plus automatic ZWNJ.
+  - [x] Pashto: ښ ږ ټ ډ ړ ڼ ځ څ ې ۍ, with x/sh, zh/g', ts, dz.
+  - New engine options: `doubledCost`, `letters` (digits as letters) and `splitCost` (prefer kh as one letter over k + h).
+- [x] **6.3 Evaluation sets.** `pnpm --filter @okb/dictionaries eval` scores the test split, then writes and checks `results/<scheme>.json`, which the pages publish. Rules were tuned only on dev splits, except Urdu (its set predates the split, and the README says so).
+
+  | Scheme | Test set | Top-1 | Top-5 | Corrections / 10 words | Status |
+  |---|---|---|---|---|---|
+  | Urdu | Likho, 663 pairs | 87.8 % | 99.2 % | 0.50 | at target |
+  | Hindi | Dakshina | 42.5 % | 52.0 % | 1.86 | Beta |
+  | Bangla | Dakshina | 39.4 % | 46.5 % | 3.00 | Beta |
+  | Sindhi | Dakshina | 54.6 % | 75.6 % | 3.16 | Beta |
+  | Arabic | Likho | 68.7 % | 87.8 % | 3.45 | Beta |
+  | Farsi | Likho | 81.4 % | 94.3 % | 1.21 | Beta |
+  | Pashto | Likho, 219 pairs | 66.2 % | 83.6 % | 2.78 | Beta |
+  | Shahmukhi | Likho, 167 pairs | 86.2 % | 98.2 % | 1.30 | Beta |
+  | Saraiki | Likho, 124 pairs | 71.0 % | 93.5 % | 2.03 | Beta |
+  | Balochi | Likho, 81 pairs | 53.1 % | 79.0 % | 4.38 | Beta |
+  | Kashmiri | Likho, 81 pairs | 61.7 % | 80.2 % | 4.07 | Beta |
+
+  - **Deviations:** only Urdu meets its target. Dakshina samples reach deep into rare words: only about half the Hindi test words are among the 35,000 shipped, which caps top-5 at about 52 %. The Likho sets for Pashto, Shahmukhi, Saraiki, Balochi and Kashmiri are smaller than the 300 pairs planned; the pages say so. None of the Likho sets has had a native-speaker check yet. **Open (owner):** arrange spot checks.
+  - [ ] CI tier gate. The eval runs in `pnpm test` and fails if a non-Beta language drops below target or the published numbers go stale. The tier-gate test itself comes with `language.json` in Phase 7.
+- [x] **6.4 Roman pages.** Pages for all ten new schemes, each with the example above the editor (run through the scheme and the shipped word list by `src/content/roman.test.ts`), a spelling guide, a cheat-sheet PDF, the accuracy table and a Beta badge where it applies.
+  - [x] Space converts, 1–6 pick, Esc keeps English, on our on-screen keys and on the phone's own keyboard (`e2e/roman.spec.ts`: every page, desktop and both phone modes).
+  - [x] Kept English words are remembered per language (`kept:<slug>`); picking a conversion for one makes it convert again.
+  - [x] "Report a wrong word": a `mailto` link to `words@likho.example`, which sends only what the user writes. **Open:** an endpoint, and the real address once the domain is chosen.
+  - [x] /hindi and /bangla open on Roman typing (decision §11.1); InScript moved to `/hindi/inscript` and `/bangla/inscript`.
+- [x] **6.5 Script → Roman** (`/<lang>/to-roman`, 11 pages, `@okb/engine/romanize`). Chat style uses the commonest attested spelling (`data/<code>/chat.tsv`, taken from the dev splits only, so the test splits stay unseen), then letter rules. For Arabic-script text, a vowelled spelling is confirmed by converting it back. Scholarly style follows ISO 15919 for Hindi and Bangla, and ALA-LC for Arabic script. The copy says it changes the letters, not the meaning.
+- [x] **6.6 Suggestions, spell check and autocorrect for every current language with a word list.**
+  - [x] Per-language spelling rules (`@okb/engine/spelling`): sound-alike groups, cheap vowel and hamza drops, letters that don't join (for run-together words), and accepted variants (Arabic without hamza on the alef, ه/ة, ي/ى). Keyboard-neighbour pairs are generated from each language's layouts, desktop and phone rows both.
+  - [x] Join and split: run-together words were already split. The suggestion bar now also offers the joined word when a stray space splits one (کیو نکہ → کیونکہ).
+  - [x] Misspelling sets and evaluation (`test/spell-langs.test.ts`, results in `results/spelling.json`):
+
+    | Language | Flagged | Right word in top 3 | False flags | Wrong autocorrections | Spell check | Autocorrect |
+    |---|---|---|---|---|---|---|
+    | Urdu | 100 % | 100 % | 0.4 % of 808 | 0.0 % | on | on |
+    | Pashto | 98 % | 100 % | 0.0 % of 299 | 0.0 % | on | offered, off |
+    | Shahmukhi | 98 % | 96 % | 0.4 % of 249 | 0.0 % | on | offered, off |
+    | Saraiki | 100 % | 94 % | 0.5 % of 213 | 0.0 % | on | offered, off |
+    | Farsi | 92 % | 96 % | 4.7 % of 344 | 0.8 % | Beta, off | no |
+    | Arabic | 100 % | 98 % | 7.5 % of 359 | 0.7 % | Beta, off | no |
+    | Sindhi | 96 % | 96 % | 7.8 % of 1,329 | 1.5 % | Beta, off | no |
+    | Kashmiri | 76 % | 100 % | 18.8 % of 239 | 1.0 % | Beta, off | no |
+    | Hindi | 100 % | 98 % | 38.0 % of 1,335 | 10.0 % | Beta, off | no |
+    | Bangla | 100 % | 98 % | 33.7 % of 1,352 | 9.3 % | Beta, off | no |
+
+    **Deviations:** apart from Urdu, the 50 misspellings per language are synthetic (`src/make-misspellings.ts`: a common word with one typical slip) and need native review. The correct words are the native side of the Roman sets, and only Hindi, Bangla and Sindhi reach 500. Their false flags are mostly Dakshina's rare words that the 35,000-word lists lack; Arabic's are colloquial words (كتير, عايز).
+  - [x] Autocorrect on Space (physical, on-screen and our Space key): only clear fixes, where the best correction beats the next by a margin. Backspace right after it puts the typed word back and leaves it alone for the visit. It is offered only where spell check meets its bars and under 1 % of words would be changed wrongly. It is on by default only for Urdu, whose misspellings were not made up. The settings are remembered per language.
+  - [x] Completions and next words on every layout of these languages. Persian half-spaces stay inside a word. Bug fixed: with spell check off, text from the phone's own keyboard never loaded the word list.
+  - JS: spelling rules load with the word list. `@okb/engine` is now `sideEffects: false`, so pages drop the to-Roman tables they don't use. Keyboard pages: 43.8 KB gzipped (was 42.5 KB).
+- [x] **6.7 Wider voice typing.**
+  - [x] Locale probe: `/voice-probe` (noindex, not in the sitemap). It tries each candidate locale, classifies the script of the result and copies a table. **Open (owner):** run it on Chrome desktop, Android Chrome and Safari, and paste the tables below. Until then, voice stays on the five locales enabled in Phase 4 (Urdu, Arabic, Farsi, Hindi, Bangla). Shahmukhi stays off: Punjabi comes back in Gurmukhi.
+
+    | Locale | Chrome desktop | Android Chrome | Safari |
+    |---|---|---|---|
+    | ur-PK, ar-SA, fa-IR, hi-IN, bn-BD | not yet probed | not yet probed | not yet probed |
+    | ps-AF, sd-IN, pa-PK | not yet probed | not yet probed | not yet probed |
+  - [x] Dialect picker (Arabic: 11 regions; also Urdu Pakistan/India and Bangla Bangladesh/India), in the voice panel and remembered per language.
 
 **Exit**
-- All 10 new Roman pages are live, each at its target or labelled Beta.
-- Suggestions and spell check run in every current language that has a word list.
-- The voice table is published.
-- e2e passes for each Roman page on desktop and in both phone modes.
+- [x] All 10 new Roman pages are live with published numbers. Urdu is at target; the rest are labelled Beta.
+- [x] Suggestions and spell check run in every current language with a word list. Spell check is Beta (off by default) where it misses its bars.
+- [ ] The voice table is published. **Open:** waiting on the owner's probe run.
+- [x] e2e passes for each Roman page on desktop and in both phone modes.
 
+**Known issues**
+- Hindi and Bangla Roman typing are far below target. The fix is a larger word list within budget, or a chat word source.
+- The misspelling sets for nine languages are synthetic.
+- The "Report a wrong word" address is a placeholder until the domain is chosen.
 ---
 
 ### Phase 7: Platform for 100 languages, Latin toolkit and Wave 1 (size XL)

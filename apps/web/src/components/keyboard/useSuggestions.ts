@@ -1,10 +1,10 @@
 import {
-  SpellChecker,
   Transliterator,
   previousWord,
   romanWordBefore,
   scriptWordBefore,
   type Dictionary,
+  type Layout,
   type Misspelling,
   type TranslitScheme,
   type WordRange,
@@ -12,6 +12,7 @@ import {
 import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from "react";
 import { hasDictionary, loadDictionary } from "./dictionary";
 import { insertText, replaceText } from "./editor-ops";
+import type { createChecker as CreateChecker } from "./spelling";
 import { loadPreference, savePreference } from "./preferences";
 
 export interface SuggestionState {
@@ -37,12 +38,16 @@ export interface SpellMarks {
 const NONE: SuggestionState = { mode: "none", items: [], range: null };
 const NO_MARKS: SpellMarks = { text: "", issues: [] };
 const LIMIT = 6;
-const ARABIC_LETTER = /[\u0620-\u064A\u066E-\u06D3]/;
+/** A letter of a script other than Latin: text worth spell checking. */
+const SCRIPT_LETTER = /[^\P{L}\p{Script=Latin}]/u;
 
-/** Words the user added to their dictionary, per language. */
-function loadPersonal(slug: string): string[] {
+/**
+ * Words the user added to their dictionary (`spelling:<slug>`), or English words they kept
+ * while typing Roman (`kept:<slug>`), per language.
+ */
+function loadPersonal(slug: string, kind: "spelling" | "kept" = "spelling"): string[] {
   try {
-    const value: unknown = JSON.parse(loadPreference(`spelling:${slug}`) ?? "[]");
+    const value: unknown = JSON.parse(loadPreference(`${kind}:${slug}`) ?? "[]");
     return Array.isArray(value) ? value.filter((w): w is string => typeof w === "string") : [];
   } catch {
     return [];
@@ -51,6 +56,8 @@ function loadPersonal(slug: string): string[] {
 
 export interface SuggestionsOptions {
   slug: string;
+  /** Data code of the language (Language.code), which picks the dictionary. */
+  code: string;
   editorRef: RefObject<HTMLTextAreaElement | null>;
   /** Transliteration scheme while Roman typing is active, else null. */
   scheme: TranslitScheme | null;
@@ -58,6 +65,20 @@ export interface SuggestionsOptions {
   predict: boolean;
   /** Underline misspelled words and offer corrections. */
   spellcheck: boolean;
+  /** Correct a clearly misspelled word on Space (needs `spellcheck`). */
+  autocorrect: boolean;
+  /** The language's layouts: keyboard neighbours count as likely slips. */
+  layouts: readonly Layout[];
+}
+
+/** The last autocorrection, so Backspace right after it can undo it. */
+interface Correction {
+  /** Where the corrected text (correction + boundary) ends. */
+  end: number;
+  typed: string;
+  inserted: string;
+  /** The editor's value right after the correction. */
+  value: string;
 }
 
 /** Run `fn` once the browser has painted the current frame. */
@@ -73,8 +94,10 @@ const NATIVE_INSERTS: ReadonlySet<string> = new Set([
 ]);
 
 export function useSuggestions(options: SuggestionsOptions) {
-  const { slug, editorRef, scheme, predict, spellcheck } = options;
+  const { slug, code, editorRef, scheme, predict, spellcheck, autocorrect, layouts } = options;
   const [dictionary, setDictionary] = useState<Dictionary | null>(null);
+  /** Builds the spell checker; loaded with the word list. */
+  const [createChecker, setCreateChecker] = useState<typeof CreateChecker | null>(null);
   const [state, setState] = useState<SuggestionState>(NONE);
   const [marks, setMarks] = useState<SpellMarks>(NO_MARKS);
   const requested = useRef(false);
@@ -86,23 +109,35 @@ export function useSuggestions(options: SuggestionsOptions) {
   /** Words ignored for this page view. */
   const [ignored, setIgnored] = useState<ReadonlySet<string>>(new Set());
   useEffect(() => setPersonal(loadPersonal(slug)), [slug]);
+  /** Roman mode: English words the user kept with Esc; Space leaves them as typed. */
+  const kept = useRef<Set<string>>(new Set());
+  useEffect(() => {
+    kept.current = new Set(loadPersonal(slug, "kept"));
+  }, [slug]);
+  const saveKept = useCallback(() => {
+    savePreference(`kept:${slug}`, JSON.stringify([...kept.current]));
+  }, [slug]);
   const checker = useMemo(() => {
     if (!dictionary) return null;
-    const c = new SpellChecker(dictionary.lexicon);
-    c.setPersonal([...personal, ...ignored]);
+    const c = createChecker?.(dictionary, code, layouts) ?? null;
+    c?.setPersonal([...personal, ...ignored]);
     return c;
-  }, [dictionary, personal, ignored]);
+  }, [dictionary, createChecker, code, layouts, personal, ignored]);
   const spell = spellcheck ? checker : null;
 
   /** Start downloading the word list (once). Cheap to call on every keystroke. */
   const load = useCallback(() => {
-    if (requested.current || !hasDictionary(slug)) return;
+    if (requested.current || !hasDictionary(code)) return;
     requested.current = true;
-    void loadDictionary(slug).then((d) => {
+    void loadDictionary(code).then((d) => {
       if (d) setDictionary(d);
       else requested.current = false;
     });
-  }, [slug]);
+    void import("./spelling").then(
+      (m) => setCreateChecker(() => m.createChecker),
+      () => undefined, // offline before it was cached: suggestions still work
+    );
+  }, [code]);
 
   const compute = useCallback((): SuggestionState => {
     const el = editorRef.current;
@@ -111,7 +146,7 @@ export function useSuggestions(options: SuggestionsOptions) {
     const caret = el.selectionStart;
 
     if (translit) {
-      const word = romanWordBefore(text, caret);
+      const word = romanWordBefore(text, caret, translit.letters);
       if (word) {
         const context = previousWord(text, word.start);
         const items = translit.candidates(word.word, LIMIT, context).map((c) => c.text);
@@ -131,7 +166,20 @@ export function useSuggestions(options: SuggestionsOptions) {
     // A word still being typed gets completions while it has any, corrections after that.
     const wrong = spell?.misspellingAt(text, caret);
     if (wrong && !completions.length) {
-      return { mode: "spell", items: spell!.suggest(wrong.word, LIMIT), range: wrong };
+      const items = spell!.suggest(wrong.word, LIMIT);
+      // A word split by a stray space: offer the joined word, replacing both halves.
+      const before = /(\S+) $/u.exec(text.slice(0, wrong.start));
+      const joined = before && spell!.join(before[1]!, wrong.word);
+      if (before && joined) {
+        const start = wrong.start - before[0].length;
+        const prefix = text.slice(start, wrong.start);
+        return {
+          mode: "spell",
+          items: [joined, ...items.slice(0, LIMIT - 1).map((w) => prefix + w)],
+          range: { start, end: wrong.end, word: text.slice(start, wrong.end) },
+        };
+      }
+      return { mode: "spell", items, range: wrong };
     }
     if (partial) {
       return completions.length ? { mode: "complete", items: completions, range: partial } : NONE;
@@ -152,14 +200,15 @@ export function useSuggestions(options: SuggestionsOptions) {
     const el = editorRef.current;
     if (!el) return;
     const text = el.value;
-    if (spellcheck && !dictionary && ARABIC_LETTER.test(text)) load();
+    // Text typed on the phone's own keyboard sends no key events: load on what it wrote.
+    if ((spellcheck || predict) && !dictionary && SCRIPT_LETTER.test(text)) load();
     const caret = el.selectionStart === el.selectionEnd ? el.selectionStart : -1;
     const typing = typingAt.current;
     if (text !== typing.text) typingAt.current = { text, caret };
     else if (caret !== typing.caret) typing.caret = -1;
     const skip = typingAt.current.caret;
     setMarks(spell && text ? { text, issues: spell.misspellings(text, skip) } : NO_MARKS);
-  }, [compute, editorRef, spellcheck, dictionary, spell, load]);
+  }, [compute, editorRef, spellcheck, predict, dictionary, spell, load]);
 
   // Re-rank when the dictionary arrives or the mode changes.
   useEffect(refreshNow, [refreshNow]);
@@ -188,6 +237,11 @@ export function useSuggestions(options: SuggestionsOptions) {
       const current = compute();
       const item = current.items[index];
       if (!el || item === undefined) return false;
+      // Picking a conversion for a kept English word means it should convert again.
+      if (current.mode === "roman" && current.range) {
+        const key = current.range.word.toLowerCase();
+        if (kept.current.delete(key)) saveKept();
+      }
       // A correction replaces the word where it stands; other picks move on to the next word.
       if (current.mode === "spell" && current.range) {
         replaceText(el, current.range.start, current.range.end, item);
@@ -195,7 +249,7 @@ export function useSuggestions(options: SuggestionsOptions) {
       else insertText(el, item + " ");
       return true;
     },
-    [editorRef, compute],
+    [editorRef, compute, saveKept],
   );
 
   /**
@@ -206,19 +260,33 @@ export function useSuggestions(options: SuggestionsOptions) {
     (boundary: string): boolean => {
       const el = editorRef.current;
       if (!el || !translit || el.selectionStart !== el.selectionEnd) return false;
-      const word = romanWordBefore(el.value, el.selectionStart);
+      const word = romanWordBefore(el.value, el.selectionStart, translit.letters);
       if (!word) return false;
-      const best = translit.best(word.word, previousWord(el.value, word.start));
+      const best = kept.current.has(word.word.toLowerCase())
+        ? word.word
+        : translit.best(word.word, previousWord(el.value, word.start));
       replaceText(el, word.start, word.end, best + boundary);
       return true;
     },
     [editorRef, translit],
   );
 
+  /** Roman mode: remember the word before the caret as English, so Space leaves it alone. */
+  const keep = useCallback((): void => {
+    const el = editorRef.current;
+    if (!el || !translit) return;
+    const word = romanWordBefore(el.value, el.selectionStart, translit.letters);
+    if (!word) return;
+    kept.current.add(word.word.toLowerCase());
+    saveKept();
+  }, [editorRef, translit, saveKept]);
+
   /** Roman mode: is there a Roman word waiting to be converted? */
   const composing = useCallback((): boolean => {
     const el = editorRef.current;
-    return !!el && !!translit && romanWordBefore(el.value, el.selectionStart) !== null;
+    return (
+      !!el && !!translit && romanWordBefore(el.value, el.selectionStart, translit.letters) !== null
+    );
   }, [editorRef, translit]);
 
   /**
@@ -235,14 +303,56 @@ export function useSuggestions(options: SuggestionsOptions) {
       const caret = el.selectionStart;
       const typed = el.value[caret - 1] ?? "";
       if (!/^[\s.,?!;:]$/.test(typed)) return;
-      const word = romanWordBefore(el.value, caret - typed.length);
-      if (!word) return;
+      const word = romanWordBefore(el.value, caret - typed.length, translit.letters);
+      if (!word || kept.current.has(word.word.toLowerCase())) return;
       const punct = translit.scheme.punctuation[typed] ?? typed;
       const best = translit.best(word.word, previousWord(el.value, word.start));
       replaceText(el, word.start, caret, best + punct);
     },
     [editorRef, translit],
   );
+
+  const lastCorrection = useRef<Correction | null>(null);
+
+  /**
+   * Type `boundary` (a space) after the word before the caret, correcting the word first if
+   * it is clearly misspelled. Returns false when there was nothing to correct.
+   */
+  const correctBefore = useCallback(
+    (boundary: string): boolean => {
+      const el = editorRef.current;
+      if (!el || !spell || !autocorrect || el.selectionStart !== el.selectionEnd) return false;
+      const word = scriptWordBefore(el.value, el.selectionStart);
+      if (!word) return false;
+      const typed = el.value.slice(word.start, word.end);
+      const fix = spell.autocorrect(typed);
+      if (!fix) return false;
+      replaceText(el, word.start, word.end, fix + boundary);
+      lastCorrection.current = {
+        end: word.start + fix.length + boundary.length,
+        typed,
+        inserted: fix + boundary,
+        value: el.value,
+      };
+      return true;
+    },
+    [editorRef, spell, autocorrect],
+  );
+
+  /**
+   * Backspace straight after an autocorrection: put the typed word back (without the space)
+   * and leave it alone for the rest of the visit. Returns the word restored, or null.
+   */
+  const undoCorrection = useCallback((): string | null => {
+    const el = editorRef.current;
+    const last = lastCorrection.current;
+    lastCorrection.current = null;
+    if (!el || !last || el.value !== last.value) return null;
+    if (el.selectionStart !== last.end || el.selectionEnd !== last.end) return null;
+    replaceText(el, last.end - last.inserted.length, last.end, last.typed);
+    setIgnored((s) => new Set(s).add(last.typed));
+    return last.typed;
+  }, [editorRef]);
 
   /** Stop flagging `word`: for this page view, or for good (`save`). */
   const accept = useCallback(
@@ -265,6 +375,9 @@ export function useSuggestions(options: SuggestionsOptions) {
     refresh,
     pick,
     commit,
+    correctBefore,
+    undoCorrection,
+    keep,
     composing,
     afterNativeInput,
     load,

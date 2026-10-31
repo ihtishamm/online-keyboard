@@ -11,8 +11,11 @@ import { allSheets, pdfPath, sheetPath } from "./cheatsheet/sheets";
 import LayoutChart from "./LayoutChart.astro";
 import RomanGuide from "./RomanGuide.astro";
 import Base from "../layouts/Base.astro";
+import { creditsFor } from "../content/credits";
 import { SITE } from "../config/site";
+import { accuracyFor, percent } from "../content/accuracy";
 import { copyFor } from "../content/languages";
+import { romanFor } from "../content/roman";
 
 interface Props {
   slug: string;
@@ -31,6 +34,16 @@ const guides = (await getCollection("guides", (g) => g.data.language === slug)).
   (a, b) => a.data.order - b.data.order,
 );
 const layoutGuide = guides.find((g) => g.data.layout === layoutId);
+const roman = layout.translit ? romanFor(layoutId) : undefined;
+const accuracy = layout.translit ? accuracyFor(layout.translit) : undefined;
+// Tables read better in Naskh than in tall Nastaliq.
+const guideFont = FONT_CLASS[language.fonts.includes("naskh") ? "naskh" : language.fonts[0]!];
+const scriptFont = FONT_CLASS[language.fonts[0]!];
+const reportHref = `mailto:${SITE.feedbackEmail}?subject=${encodeURIComponent(
+  `Wrong word (${language.name.en} Roman typing)`,
+)}&body=${encodeURIComponent(
+  "What I typed in English letters:\n\nWhat it turned into:\n\nWhat it should be:\n",
+)}`;
 
 const title = isDefault
   ? copy.title
@@ -68,10 +81,24 @@ const jsonLd = [
 ];
 ---
 
-<Base title={title} description={description} nastaliq={language.fonts.includes("nastaliq")}>
+<Base
+  title={title}
+  description={description}
+  nastaliq={language.fonts.includes("nastaliq")}
+  credits={creditsFor(language)}
+>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
     <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">{heading}</h1>
+    {accuracy?.beta && (
+      <a
+        href="#accuracy"
+        class="rounded-full border border-border px-2 py-0.5 text-xs font-medium text-muted"
+        title="Conversions are still being improved; see the accuracy notes"
+      >
+        Beta
+      </a>
+    )}
     <span
       class={`${FONT_CLASS[language.fonts[0]!]} text-2xl text-accent`}
       lang={language.lang}
@@ -81,6 +108,14 @@ const jsonLd = [
     </span>
   </div>
   <p class="max-w-3xl text-sm text-muted max-sm:line-clamp-2 sm:mb-5 sm:text-base">{copy.intro}</p>
+  {roman && (
+    <p class="mb-2 text-sm sm:-mt-2 sm:mb-4" data-testid="roman-example">
+      Type <span class="font-mono font-medium">{roman.example[0]}</span> and press Space →{" "}
+      <span class:list={[scriptFont, "text-base"]} lang={language.lang} dir={language.dir}>
+        {roman.example[1]}
+      </span>
+    </p>
+  )}
   {/* Phones: the intro is clipped and the keyboard fills the screen; the guide is a tap away. */}
   <a
     href="#more"
@@ -112,10 +147,48 @@ const jsonLd = [
       {layoutCopy && (
         <p class="mb-4 max-w-2xl text-sm text-muted">Best for: {layoutCopy.bestFor}</p>
       )}
-      {layout.translit && copy.romanGuide ? (
-        <RomanGuide rows={copy.romanGuide} lang={language.lang} />
+      {roman ? (
+        <RomanGuide
+          rows={roman.guide}
+          lang={language.lang}
+          dir={language.dir}
+          font={guideFont}
+          languageName={language.name.en}
+          short={roman.short}
+        />
       ) : (
         <LayoutChart layout={layout} />
+      )}
+      {accuracy && (
+        <div id="accuracy" class="mt-4 max-w-2xl scroll-mt-4 text-sm">
+          <h3 class="mb-1 font-semibold">
+            How accurate is it?
+            {accuracy.beta && <span class="font-normal text-muted"> (Beta)</span>}
+          </h3>
+          <p>
+            On {accuracy.pairs} test words, the word written when you press Space was right{" "}
+            {percent(accuracy.top1)} of the time, and the right word was among the first five
+            suggestions {percent(accuracy.top5)} of the time. Typing {accuracy.messageWords} words
+            of held-out chat messages needed {accuracy.correctionsPer10Words.toFixed(1)} corrections
+            per 10 words. Test set: {accuracy.source}
+            {accuracy.smallSet && ", smaller than the 300 words we aim for"}.
+          </p>
+          {accuracy.beta && (
+            <p class="mt-1 text-muted">
+              Beta: these numbers are below our bar (85% right on Space, 97% in the first five,
+              under one correction per 10 words). Check words before you send.
+            </p>
+          )}
+          <p class="mt-1">
+            <a class="text-accent underline" href={reportHref}>
+              Report a wrong word
+            </a>{" "}
+            <span class="text-muted">
+              opens your email app with a short form. Nothing is sent unless you send it, and only
+              what you type in it.
+            </span>
+          </p>
+        </div>
       )}
       {layoutGuide && (
         <p class="mt-3 text-sm">
@@ -127,7 +200,7 @@ const jsonLd = [
       {sheet && (
         <p class="mt-3 text-sm">
           <a class="text-accent underline" href={sheetPath(sheet.id)}>
-            Printable {layout.translit ? "Roman Urdu" : layout.name.en} chart
+            Printable {layout.translit ? `Roman ${language.name.en}` : layout.name.en} chart
           </a>{" "}
           (
           <a class="text-accent underline" href={pdfPath(sheet.id)} download>
@@ -173,6 +246,14 @@ const jsonLd = [
           ·{" "}
           <a class="text-accent underline" href="/urdu-typing-test">
             Urdu typing test
+          </a>
+        </p>
+      )}
+      {language.layouts.some((id) => getLayout(id).translit) && (
+        <p class="mt-4 text-sm">
+          Convert:{" "}
+          <a class="text-accent underline" href={`/${slug}/to-roman`}>
+            {language.name.en} script to English letters
           </a>
         </p>
       )}

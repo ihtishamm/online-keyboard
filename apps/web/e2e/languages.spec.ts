@@ -11,8 +11,8 @@ const LANGUAGES = [
   { path: "/saraiki", name: "Saraiki", keys: "sraEiki", text: "سرائیکی" },
   { path: "/balochi", name: "Balochi", keys: "blwcy", text: "بلوچی" },
   { path: "/kashmiri", name: "Kashmiri", keys: "k-xPr", text: "کٲشُر" },
-  { path: "/hindi", name: "Hindi", keys: "vcmdls", text: "नमस्ते" },
-  { path: "/bangla", name: "Bangla", keys: "yexne", text: "বাংলা" },
+  { path: "/hindi/inscript", name: "Hindi", keys: "vcmdls", text: "नमस्ते" },
+  { path: "/bangla/inscript", name: "Bangla", keys: "yexne", text: "বাংলা" },
 ] as const;
 
 const editor = (page: Page, name: string) => page.getByRole("textbox", { name: `${name} text` });
@@ -76,15 +76,17 @@ test("Hindi pages use a Devanagari font and skip Nastaliq", async ({ page }) => 
   await expect(page.locator("html")).not.toHaveClass(/nastaliq-ready/);
 });
 
-test("Sindhi hides the word-suggestion bar it has no word list for", async ({ page }) => {
-  await page.goto("/sindhi");
-  await expect(editor(page, "Sindhi")).toBeEditable();
+// Balochi has no Wikipedia, so no word list (plan item 6.1).
+test("Balochi hides the word-suggestion bar it has no word list for", async ({ page }) => {
+  await page.goto("/balochi");
+  await expect(editor(page, "Balochi")).toBeEditable();
   await expect(page.getByRole("group", { name: "Word suggestions" })).toHaveCount(0);
 });
 
 test("home page links every language", async ({ page }) => {
   await page.goto("/");
   for (const { path } of LANGUAGES) {
-    await expect(page.locator(`main a[href="${path}"]`)).toBeVisible();
+    const home = path.split("/").slice(0, 2).join("/");
+    await expect(page.locator(`main a[href="${home}"]`)).toBeVisible();
   }
 });

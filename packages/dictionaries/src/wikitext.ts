@@ -144,5 +144,6 @@ export class DumpReader {
 
 /** Redirect pages hold no prose. Urdu Wikipedia also uses the localised keyword. */
 export function isRedirect(text: string): boolean {
-  return /^\s*#\s*(redirect|رجوع[_ ]مکرر)/i.test(text);
+  // `#REDIRECT [[…]]` in English or the wiki's own word (#رجوع_مکرر, #تحويل, #अनुप्रेषित, …).
+  return /^\s*#\s*(redirect|رجوع[_ ]مکرر)/i.test(text) || /^\s*#[^\s[]+\s*\[\[/u.test(text);
 }

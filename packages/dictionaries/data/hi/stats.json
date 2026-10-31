@@ -1,0 +1,10 @@
+{
+  "source": "hiwiki-latest-pages-articles.xml.bz2",
+  "pages": 175824,
+  "sentences": 2710398,
+  "repeatedSentencesSkipped": 538141,
+  "tokens": 45141565,
+  "distinctWords": 848034,
+  "wordsKept": 100000,
+  "nextWordHeads": 9987
+}

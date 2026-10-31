@@ -1,0 +1,10 @@
+{
+  "scheme": "ur-roman",
+  "source": "Likho set",
+  "pairs": 663,
+  "top1": 0.878,
+  "top5": 0.992,
+  "messageWords": 121,
+  "correctionsPer10Words": 0.5,
+  "beta": false
+}

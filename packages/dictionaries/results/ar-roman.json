@@ -1,0 +1,10 @@
+{
+  "scheme": "ar-roman",
+  "source": "Likho set, not yet reviewed by a native speaker",
+  "pairs": 319,
+  "top1": 0.687,
+  "top5": 0.878,
+  "messageWords": 55,
+  "correctionsPer10Words": 3.45,
+  "beta": true
+}

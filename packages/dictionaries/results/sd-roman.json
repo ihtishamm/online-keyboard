@@ -1,0 +1,10 @@
+{
+  "scheme": "sd-roman",
+  "source": "Dakshina test split",
+  "pairs": 1000,
+  "top1": 0.546,
+  "top5": 0.756,
+  "messageWords": 307,
+  "correctionsPer10Words": 3.16,
+  "beta": true
+}

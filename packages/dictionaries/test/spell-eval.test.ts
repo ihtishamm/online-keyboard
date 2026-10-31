@@ -1,10 +1,10 @@
-import { existsSync, readFileSync } from "node:fs";
-import { Lexicon, SpellChecker, urduWordKey } from "@okb/engine";
+import { readFileSync } from "node:fs";
+import { SpellChecker, urduWordKey } from "@okb/engine";
 import { describe, expect, it } from "vitest";
+import { loadShipped } from "../src/shipped.ts";
 import { normalizeWord } from "../src/urdu.ts";
 
-const WORDS = new URL("../data/ur/words.txt", import.meta.url);
-const lexicon = existsSync(WORDS) ? Lexicon.parse(readFileSync(WORDS, "utf8")) : null;
+const lexicon = loadShipped("ur")?.lexicon ?? null;
 const checker = lexicon ? new SpellChecker(lexicon) : null;
 const verbose = process.env.EVAL_VERBOSE === "1";
 

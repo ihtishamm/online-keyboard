@@ -142,7 +142,7 @@ for (const path of ["/urdu", "/urdu/standard", "/urdu/roman"]) {
 
 /** Open the Roman page and wait until the word list has downloaded. */
 async function openRoman(page: Page) {
-  const words = page.waitForResponse((r) => /\/words\.[^/]+\.txt$/.test(r.url()));
+  const words = page.waitForResponse((r) => /\/dict\.[^/]+\.txt$/.test(r.url()));
   await open(page, "/urdu/roman");
   expect((await words).ok()).toBe(true);
 }

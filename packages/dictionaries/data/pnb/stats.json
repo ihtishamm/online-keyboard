@@ -1,0 +1,10 @@
+{
+  "source": "pnbwiki-latest-pages-articles.xml.bz2",
+  "pages": 76471,
+  "sentences": 1558369,
+  "repeatedSentencesSkipped": 254106,
+  "tokens": 32224205,
+  "distinctWords": 463368,
+  "wordsKept": 100000,
+  "nextWordHeads": 9952
+}

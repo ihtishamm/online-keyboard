@@ -4,9 +4,14 @@
  * Words are stored without diacritics and in the letter forms Urdu keyboards produce, so the
  * same word typed on any layout (or converted from Roman) finds the same entry.
  */
+import { normalizeUrdu } from "@okb/engine/normalize";
 
-/** Letters a dictionary word may contain once normalised. */
-const URDU_WORD = /^[ءآأؤئابپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوہۂۃھیےۓ]+$/u;
+/**
+ * Normalise one word: Arabic letter forms become Urdu ones, hamza written as a separate mark
+ * is joined to its seat, other diacritics, tatweel and joiners are removed.
+ * Returns null when the result is not an Urdu word.
+ */
+export const normalizeWord = normalizeUrdu;
 
 /**
  * Runs of Arabic-script letters and the marks attached to them. Zero-width non-joiners split
@@ -22,25 +27,6 @@ export function splitSentences(text: string): string[] {
     .split(SENTENCE_END)
     .map((s) => s.trim())
     .filter((s) => s.length > 0);
-}
-
-/**
- * Normalise one word: Arabic letter forms become Urdu ones, hamza written as a separate mark
- * is joined to its seat, other diacritics, tatweel and joiners are removed.
- * Returns null when the result is not an Urdu word.
- */
-export function normalizeWord(raw: string): string | null {
-  const w = raw
-    .normalize("NFC")
-    .replace(/ي|ى/g, "ی")
-    .replace(/ك/g, "ک")
-    .replace(/ه/g, "ہ")
-    .replace(/\u06C0|\u06C1\u0654/g, "\u06C2") // heh + hamza -> ۂ
-    .replace(/\u06CC\u0654/g, "\u0626") // Farsi yeh + hamza -> ئ
-    .replace(/\u0640/g, "") // tatweel
-    .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED\u200C\u200D]/g, "");
-  if (w.length === 0 || w.length > 24 || !URDU_WORD.test(w)) return null;
-  return w;
 }
 
 /** The Urdu words of a sentence, in order. Non-Urdu tokens split the sequence with null. */

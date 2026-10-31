@@ -13,6 +13,32 @@ export interface VoicePanelProps {
   onConsent: () => void;
   onCancel: () => void;
   onStop: () => void;
+  /** Regional variants to choose from (Arabic dialects), with the one in use. */
+  dialects?: {
+    options: readonly [tag: string, region: string][];
+    value: string;
+    onChange: (tag: string) => void;
+  };
+}
+
+/** Pick the speaker's dialect: recognition is tuned per region. */
+function DialectPicker({ dialects }: { dialects: NonNullable<VoicePanelProps["dialects"]> }) {
+  return (
+    <label className="flex shrink-0 items-center gap-2 text-sm text-muted">
+      Dialect
+      <select
+        value={dialects.value}
+        onChange={(e) => dialects.onChange(e.currentTarget.value)}
+        className="h-9 rounded-lg border border-border bg-surface px-2 text-sm text-text"
+      >
+        {dialects.options.map(([tag, region]) => (
+          <option key={tag} value={tag}>
+            {region}
+          </option>
+        ))}
+      </select>
+    </label>
+  );
 }
 
 const BTN_BASE =
@@ -45,7 +71,8 @@ export default function VoicePanel(props: VoicePanelProps) {
           Chrome and Edge send your voice to Google or Microsoft to turn it into text, and Safari
           uses Apple&rsquo;s service. Everything else you type stays on this device.
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          {props.dialects && <DialectPicker dialects={props.dialects} />}
           <button ref={startRef} type="button" className={PRIMARY} onClick={props.onConsent}>
             <Mic size={16} aria-hidden="true" />
             Start voice typing
@@ -96,6 +123,7 @@ export default function VoicePanel(props: VoicePanelProps) {
           </span>
         )}
       </div>
+      {props.dialects && <DialectPicker dialects={props.dialects} />}
       <button type="button" className={BTN} onPointerDown={keepFocus} onClick={props.onStop}>
         <Square size={14} aria-hidden="true" />
         Stop

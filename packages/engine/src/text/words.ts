@@ -7,7 +7,7 @@ export interface WordRange {
 
 const LATIN = /[A-Za-z']/;
 const SCRIPT = /[\p{L}\p{M}]/u;
-const SENTENCE_END = /[.!?؟۔\n]/;
+const SENTENCE_END = /[.!?؟۔।\n]/;
 const DIACRITICS = /[\u064B-\u065F\u0670]/g;
 
 /** Start of the run of word characters that ends at `caret`. */
@@ -19,20 +19,24 @@ function scanBack(text: string, caret: number, isWordChar: (c: string) => boolea
 
 /**
  * The Roman (Latin-letter) word that ends at the caret, if the caret sits at its end.
- * This is the word Roman mode converts when a space or punctuation is typed.
+ * This is the word Roman mode converts when a space or punctuation is typed. `letters` are
+ * the scheme's extra word characters (see `TranslitScheme.letters`).
  */
-export function romanWordBefore(text: string, caret: number): WordRange | null {
-  if (caret < text.length && LATIN.test(text[caret]!)) return null;
-  const start = scanBack(text, caret, (c) => LATIN.test(c));
+export function romanWordBefore(text: string, caret: number, letters = ""): WordRange | null {
+  const isRoman = (c: string) => LATIN.test(c) || (letters !== "" && letters.includes(c));
+  if (caret < text.length && isRoman(text[caret]!)) return null;
+  const start = scanBack(text, caret, isRoman);
   const word = text.slice(start, caret);
   return /[A-Za-z]/.test(word) ? { start, end: caret, word } : null;
 }
 
 /** The non-Latin word ending at the caret (e.g. Urdu being typed), for completions. */
 export function scriptWordBefore(text: string, caret: number): WordRange | null {
-  const isScript = (c: string) => SCRIPT.test(c) && !LATIN.test(c);
+  // A zero-width non-joiner (Persian half-space, می\u200Cخواهم) sits inside words.
+  const isScript = (c: string) => (SCRIPT.test(c) && !LATIN.test(c)) || c === "\u200C";
   if (caret < text.length && isScript(text[caret]!)) return null;
-  const start = scanBack(text, caret, isScript);
+  let start = scanBack(text, caret, isScript);
+  while (start < caret && text[start] === "\u200C") start++;
   if (start === caret) return null;
   return { start, end: caret, word: text.slice(start, caret).replace(DIACRITICS, "") };
 }

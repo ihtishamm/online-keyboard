@@ -1,0 +1,10 @@
+{
+  "source": "arwiki-latest-pages-articles1.xml-p1p340838.bz2, arwiki-latest-pages-articles2.xml-p340839p1205738.bz2",
+  "pages": 146244,
+  "sentences": 3746156,
+  "repeatedSentencesSkipped": 564063,
+  "tokens": 65853613,
+  "distinctWords": 1108355,
+  "wordsKept": 100000,
+  "nextWordHeads": 10000
+}

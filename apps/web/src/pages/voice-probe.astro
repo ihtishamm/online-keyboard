@@ -1,0 +1,26 @@
+---
+/**
+ * Owner's tool (plan item 6.7): which speech locales each browser transcribes in our script.
+ * Not linked or indexed. Results go in the Phase 6 notes of plan.md; voice typing is enabled only
+ * for locales that pass there.
+ */
+import Base from "../layouts/Base.astro";
+import VoiceProbe from "../components/tools/VoiceProbe";
+---
+
+<Base
+  title="Voice locale check | Likho"
+  description="Checks which speech recognition locales this browser supports."
+  noindex
+>
+  <h1 class="text-2xl font-semibold">Voice locale check</h1>
+  <p class="mt-2 max-w-prose text-muted">
+    For each locale, press its button and say a short sentence in that language. Your browser sends
+    the audio to its own speech service (Google, Microsoft or Apple); this page keeps nothing. Copy
+    the table into the Phase 6 notes in <code>plan.md</code> when done. Run it in Chrome on a
+    computer, Chrome on Android and Safari.
+  </p>
+  <div class="mt-6">
+    <VoiceProbe client:only="preact" />
+  </div>
+</Base>

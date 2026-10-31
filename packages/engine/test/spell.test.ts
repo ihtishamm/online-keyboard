@@ -1,5 +1,13 @@
 import { describe, expect, it } from "vitest";
-import { Lexicon, SpellChecker, urduWordKey } from "../src";
+import {
+  Lexicon,
+  SPELLING_LANGUAGES,
+  SpellChecker,
+  keyboardNeighbours,
+  spellingRules,
+  urduWordKey,
+} from "../src";
+import { parseLayout } from "../src/layout/schema";
 
 // Most frequent first. Filler words push the rare ones past the "rare" rank.
 const COMMON = [
@@ -115,5 +123,56 @@ describe("SpellChecker.suggest", () => {
 
   it("returns nothing for words far from any entry", () => {
     expect(checker.suggest("ژژژژژژ")).toEqual([]);
+  });
+});
+
+describe("SpellChecker.autocorrect and join", () => {
+  it("corrects only clear misspellings", () => {
+    expect(checker.autocorrect("ضرورت")).toBeNull();
+    expect(checker.autocorrect("زرورت")).toBe("ضرورت");
+  });
+
+  it("joins a word split by a stray space", () => {
+    expect(checker.join("ضرو", "رت")).toBe("ضرورت");
+    expect(checker.join("اور", "پھر")).toBeNull();
+  });
+});
+
+describe("spellingRules", () => {
+  const layout = parseLayout({
+    id: "hi-test",
+    lang: "hi",
+    script: "Deva",
+    dir: "ltr",
+    name: { en: "Test", native: "Test" },
+    source: "test",
+    keys: { KeyQ: { n: "ौ" }, KeyW: { n: "\u0948" }, KeyE: { n: "ा" }, KeyR: { n: "ी" } },
+  });
+
+  it("adds keyboard neighbours from the layout rows", () => {
+    expect(keyboardNeighbours([layout])).toEqual(expect.arrayContaining(["ौै", "\u0948ा", "ाी"]));
+  });
+
+  it("checks Devanagari words and suggests fixes", () => {
+    const words = ["है", "यह", "और", "आवश्यक", "किताब", "समिति", ...filler];
+    const hi = new SpellChecker(Lexicon.fromRanked(words), spellingRules("hi", [layout])!);
+    expect(hi.check("आवश्यक")).toBe(true);
+    expect(hi.check("आवशयक")).toBe(false);
+    expect(hi.suggest("आवशयक", 3)).toContain("आवश्यक");
+    expect(hi.misspellings("यह किताब है hello")).toEqual([]);
+  });
+
+  it("accepts Arabic written without hamza on the alef", () => {
+    const ar = new SpellChecker(
+      Lexicon.fromRanked(["أكبر", "مدرسة", ...filler]),
+      spellingRules("ar")!,
+    );
+    expect(ar.check("اكبر")).toBe(true);
+    expect(ar.check("مدرسه")).toBe(true);
+  });
+
+  it("knows every language it lists", () => {
+    for (const code of SPELLING_LANGUAGES) expect(spellingRules(code)).not.toBeNull();
+    expect(spellingRules("xx")).toBeNull();
   });
 });

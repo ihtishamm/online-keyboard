@@ -1,18 +1,35 @@
 ---
-import type { RomanGuideRow } from "../content/languages";
+import type { RomanGuideRow } from "../content/roman";
 
 interface Props {
   rows: RomanGuideRow[];
   lang: string;
+  dir: "ltr" | "rtl";
+  /** Font class of the language's script. */
+  font: string;
+  /** e.g. "Urdu". */
+  languageName: string;
+  /** A word typed without vowels, e.g. ["bht", "بہت"]. */
+  short?: [string, string];
 }
 
-const { rows, lang } = Astro.props;
+const { rows, lang, dir, font, languageName, short } = Astro.props;
 ---
 
 <figure>
   <figcaption class="mb-2 text-sm text-muted">
-    Spell words as they sound. Vowels can be left out (bht for بہت) and the word list picks the
-    likeliest Urdu spelling. A capital letter asks for a particular letter.
+    Spell words as they sound.{" "}
+    {short && (
+      <>
+        Vowels can be left out (<span class="font-mono">{short[0]}</span> for{" "}
+        <span class={font} lang={lang} dir={dir}>
+          {short[1]}
+        </span>
+        ).{" "}
+      </>
+    )}
+    The word list picks the likeliest {languageName} spelling, and the bar under the editor offers
+    the others.
   </figcaption>
   <table class="w-full border-collapse overflow-hidden rounded-xl border border-border bg-surface text-sm">
     <thead class="bg-key-mod text-start">
@@ -21,7 +38,7 @@ const { rows, lang } = Astro.props;
           You type
         </th>
         <th scope="col" class="px-3 py-2 text-start font-medium">
-          Urdu letters
+          {languageName} letters
         </th>
         <th scope="col" class="px-3 py-2 text-start font-medium">
           Examples
@@ -32,16 +49,16 @@ const { rows, lang } = Astro.props;
       {rows.map((row) => (
         <tr>
           <td class="px-3 py-2 font-mono">{row.roman}</td>
-          <td class="font-naskh px-3 py-2 text-lg" lang={lang} dir="rtl">
-            {row.urdu}
+          <td class:list={[font, "px-3 py-2 text-lg"]} lang={lang} dir={dir}>
+            {row.script}
           </td>
           <td class="px-3 py-2">
-            {row.examples.map(([roman, urdu], i) => (
+            {row.examples.map(([roman, script], i) => (
               <>
                 {i > 0 && <span class="text-muted">, </span>}
                 <span class="font-mono">{roman}</span> →{" "}
-                <span class="font-naskh text-base" lang={lang}>
-                  {urdu}
+                <span class:list={[font, "text-base"]} lang={lang} dir={dir}>
+                  {script}
                 </span>
               </>
             ))}

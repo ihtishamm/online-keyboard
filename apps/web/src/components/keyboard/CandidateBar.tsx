@@ -1,4 +1,4 @@
-import { BookPlus, EyeOff, Lightbulb, LightbulbOff, SpellCheck } from "lucide-react";
+import { BookPlus, EyeOff, Lightbulb, LightbulbOff, SpellCheck, SpellCheck2 } from "lucide-react";
 import type { PointerEvent } from "react";
 import type { SuggestionState } from "./useSuggestions";
 
@@ -9,6 +9,8 @@ export interface CandidateBarProps {
   /** BCP 47 tag and direction of the suggested words. */
   lang: string;
   dir: "ltr" | "rtl";
+  /** English name of the language, for the Roman spellings' label. */
+  languageName: string;
   predict: boolean;
   onTogglePredict: () => void;
   onPick: (index: number) => void;
@@ -19,10 +21,14 @@ export interface CandidateBarProps {
   /** Spell checking; undefined when the language has no word list. */
   spelling?: {
     enabled: boolean;
+    /** Not yet at its quality bar for this language: it may flag correct words. */
+    beta: boolean;
     onToggle: () => void;
     /** Stop flagging the word at the caret: for now, or for good. */
     onIgnore: () => void;
     onAdd: () => void;
+    /** Correct clear misspellings on Space; undefined where the language does not offer it. */
+    autocorrect?: { enabled: boolean; onToggle: () => void };
   };
 }
 
@@ -36,7 +42,7 @@ const ITEM =
 
 export default function CandidateBar(props: CandidateBarProps) {
   const { state, roman, lang, dir, predict, onTogglePredict, onPick, onKeep, showNumbers } = props;
-  const { spelling } = props;
+  const { spelling, languageName } = props;
   const romanWord = state.mode === "roman" ? state.range?.word : undefined;
   const misspelled = state.mode === "spell" ? state.range?.word : undefined;
   const empty = state.items.length === 0;
@@ -46,7 +52,11 @@ export default function CandidateBar(props: CandidateBarProps) {
       <div
         role="group"
         aria-label={
-          misspelled ? "Spelling corrections" : roman ? "Urdu spellings" : "Word suggestions"
+          misspelled
+            ? "Spelling corrections"
+            : roman
+              ? `${languageName} spellings`
+              : "Word suggestions"
         }
         dir={dir}
         className="flex min-w-0 flex-1 items-center gap-0.5 overflow-x-auto"
@@ -141,11 +151,31 @@ export default function CandidateBar(props: CandidateBarProps) {
           onPointerDown={keepFocus}
           onClick={spelling.onToggle}
           aria-pressed={spelling.enabled}
-          title={spelling.enabled ? "Turn spell check off" : "Turn spell check on"}
+          title={
+            (spelling.enabled ? "Turn spell check off" : "Turn spell check on") +
+            (spelling.beta ? " (Beta: it may flag correct words)" : "")
+          }
           className={`${TOOL} ${spelling.enabled ? "" : "opacity-60"}`}
         >
           <SpellCheck size={18} aria-hidden="true" />
           <span className="sr-only">Spell check</span>
+        </button>
+      )}
+      {spelling?.enabled && spelling.autocorrect && (
+        <button
+          type="button"
+          onPointerDown={keepFocus}
+          onClick={spelling.autocorrect.onToggle}
+          aria-pressed={spelling.autocorrect.enabled}
+          title={
+            spelling.autocorrect.enabled
+              ? "Turn autocorrect off"
+              : "Turn autocorrect on: Space fixes clear misspellings, Backspace undoes"
+          }
+          className={`${TOOL} ${spelling.autocorrect.enabled ? "" : "opacity-60"}`}
+        >
+          <SpellCheck2 size={18} aria-hidden="true" />
+          <span className="sr-only">Autocorrect</span>
         </button>
       )}
       {!roman && (

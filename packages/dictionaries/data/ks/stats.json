@@ -1,0 +1,10 @@
+{
+  "source": "kswiki-latest-pages-articles.xml.bz2",
+  "pages": 11837,
+  "sentences": 53480,
+  "repeatedSentencesSkipped": 8362,
+  "tokens": 858558,
+  "distinctWords": 67999,
+  "wordsKept": 21396,
+  "nextWordHeads": 6766
+}

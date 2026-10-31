@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { dictationText, spaced, speechLang, voiceError } from "./voice";
+import { dictationText, spaced, speechDialects, speechLang, voiceError } from "./voice";
 
 describe("dictationText", () => {
   it("turns spoken punctuation into marks", () => {
@@ -42,5 +42,14 @@ describe("speechLang and voiceError", () => {
     expect(voiceError("not-allowed", "Urdu")).toMatch(/Microphone access is blocked/);
     expect(voiceError("language-not-supported", "Urdu")).toMatch(/recognise Urdu/);
     expect(voiceError("aborted", "Urdu")).toBeNull();
+  });
+});
+
+describe("speechDialects", () => {
+  it("offers Arabic dialects, the default first", () => {
+    const arabic = speechDialects("arabic");
+    expect(arabic[0]![0]).toBe(speechLang("arabic"));
+    expect(arabic.map(([tag]) => tag)).toEqual(expect.arrayContaining(["ar-EG", "ar-AE", "ar-MA"]));
+    expect(speechDialects("hindi")).toEqual([]);
   });
 });

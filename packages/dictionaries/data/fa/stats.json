@@ -1,0 +1,10 @@
+{
+  "source": "fawiki-latest-pages-articles1.xml-p1p1500000.bz2",
+  "pages": 210065,
+  "sentences": 3431584,
+  "repeatedSentencesSkipped": 635569,
+  "tokens": 61550143,
+  "distinctWords": 641479,
+  "wordsKept": 100000,
+  "nextWordHeads": 9997
+}

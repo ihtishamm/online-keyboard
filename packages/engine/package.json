@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "sideEffects": false,
   "description": "Framework-agnostic typing engine: layouts, key resolution, dead keys, caret editing.",
   "exports": {
     ".": "./src/index.ts",
-    "./layout": "./src/layout/index.ts"
+    "./layout": "./src/layout/index.ts",
+    "./compact": "./src/predict/compact.ts",
+    "./normalize": "./src/text/normalize.ts",
+    "./romanize": "./src/translit/romanize.ts",
+    "./spelling": "./src/predict/spelling-rules.ts"
   },
   "scripts": {
     "test": "vitest run",

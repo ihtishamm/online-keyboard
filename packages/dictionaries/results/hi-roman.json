@@ -1,0 +1,10 @@
+{
+  "scheme": "hi-roman",
+  "source": "Dakshina test split",
+  "pairs": 1000,
+  "top1": 0.425,
+  "top5": 0.52,
+  "messageWords": 328,
+  "correctionsPer10Words": 1.86,
+  "beta": true
+}

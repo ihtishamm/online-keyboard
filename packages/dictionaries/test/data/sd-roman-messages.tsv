@@ -1,0 +1,44 @@
+# sd: held-out sentences (test split), Roman -> words
+# From the Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0:
+# https://github.com/google-research-datasets/dakshina
+# Native words normalised with packages/dictionaries/src/languages.ts.
+hin dharmi kitaab jo mutarjim veerumal malani ahe	هن ڌرمي ڪتاب جو مترجم ويرومل ملاڻي آهي
+tiyun qasam hikro kundan waro ahe jahin khe khardar psata chawan thaa	ٽيون قسم هڪڙو ڪنڊن وارو آهي جنهن کي خاردار پست چون ٿا
+sateul nisa khanam dadhi qabil aurat hue	ستي النساء خانم ڏاڍي قابل عورت هئي
+diso diso ae baro gul	ڏسو ڏسو اي ٻارو گل
+tanhin laai kujh bi chae kona tho saghje	تنهن لاء ڪجهه به چئي ڪونه ٿو سگهجي
+hite je aksaret islam saan tailq rakhandaru ahe	هتي جي اڪثريت اسلام سان تعلق رکندر آهي
+hin jo daiyaa mettr kulo mettr aahe	ھن جو ڊائيا ميٽر ڪلو ميٽر آھي
+aem adaarn jo resirch gaied bi ahe	ايم ادارن جو ريسرچ گائيڊ به آهي
+hi kitab lekhak qeesrya prees hyderabad man saal eesvi man chapayo	هيء ڪتاب ليکڪ قيصريه پريس حيدرآباد مان سال ع مان ڇپايو
+zaat jo pnhor jaanaaije tho	ذات جو پنھور ڄاڻائجي ٿو
+matar september khan november taen pokhay saghjan tha	مٽر سيپٽمبر کان نومبر تائين پوکي سگهجن ٿا
+popat pehnji zindagi je doraan mukhatlif haalatun man guzrando ahe	پوپٽ پنهنجي زندگي جي دوران مختلف حالتن مان گزرندو آهي
+raajaa phareian paan thoro bhiti khaai poi sabhni khe orhaaie dendo ahe	راجا پهريائين پاڻ ٿورو ڀت کائي پوء سڀني کي ورهائي ڏيندو آهي
+har maanhua jo haal talkhyin saan bharyal rahay tho	هر ماڻهوء جو حال تلخين سان ڀريل رهي ٿو
+baahraan gadrholaal ahe andaruna gulabe rang jo thiay tho	ٻاهران ڳاڙهولال آهي اندران گلابي رنگ جو ٿئي ٿو
+hin imaarata te unadin mugal aarketekchr jo bi asaru nazara ache tho	هن عمارت تي انڊين مغل آرڪيٽيڪچر جو به اثر نظر اچي ٿو
+msr maan bi kaafi kitaab gharuayaa huyain	مصر مان به ڪافي ڪتاب گهرايا هئائين
+hindu hin jabal jo taluq shiv devta saan joreenda aahin	ھندو ھن جبل جو تعلق شو ديوتا سان جوڙيندا آهن
+jahin aguwanue bhaarate waziru aezam oe	جنهن اڳوڻي ڀارتي وزير اعظم وي
+moti waji mkhnr khaio	موٽي وڃي مکڻ کائو
+kaamil sal lallaahu alaihi wasallam	ڪامل صلي الله عليه وسلم
+abo alalaaie printing press aagrah	ابو العلائي پرنٽنگ پريس آگرهه
+kujh manhun jo khayaalu hi sabhu kresh ie huaa	ڪجھ ماڻھن جو خيال ھي سڀ قريش ئي ھئا
+ho hiku rais zado ho	هو هڪ رئيس زادو هو
+saami safar halyaa ko piroray pandh	سامي سفر هليا ڪو پروڙي پنڌ
+snjunup chbhdrn khe chere lwanu wijhe skaaibo ahe	سڃاڻپ چڀڙن کي چيري لوڻ وجهي سڪائبو آهي
+hin ilaiqe jaa baa hsa ahin	هن علائقي جا ٻه حصا آهن
+saancho insaani jinsyaat kcho	سانچو انساني جنسيات ڪچو
+unu chondan m chaw chawandn chayo wasar	اڻ چونڊن م چؤ چوندن چيو وسار
+uhe biay kabaron ute gadu ahin	اهي ٻئي قبرون اتي گڏ آهن
+shaitaan hindustani nalo athas	شيطان هندستاني نالو اٿس
+september pakistan khe geru oabasta mulkan je tinzem je rkanet dini wai	سيپٽمبر پاڪستان کي غير وابسته ملڪن جي تنظيم جي رڪنيت ڏني وئي
+kamyonist party tay bandish lagan khan poi hiw roposh thi wayo	ڪميونسٽ پارٽيء تي بندش لڳڻ کان پوء هيء روپوش ٿي ويو
+aakhond molanaa chhte bhatia je walid buzrigwaar jo naalo aakhond guhe ho	آخوند مولانا ڇٽي ڀٽيء جي والد بزرگوار جو نالو آخوند گاهي هو
+hin jaa baa te qasam ahin	هن جا ٻه ٽي قسم آهن
+ashfak ahmad khe tsof saan tamam ghani rgbt hui	اشفاق احمد کي تصوف سان تمام گهڻي رغبت هئي
+shaadi oal haaiedl station	شادي وال هائيڊل اسٽيشن
+heu kitaab mirzaa klech beg jo likhiyal ahe	هيء ڪتاب مرزا قليچ بيگ جو لکيل آهي
+ho aroozi shairi'ya jo mahir samjhyo wendo ho	هو عروضي شاعريء جو ماهر سمجهيو ويندو هو
+olaete karoks hite chagu na thindo ahe	ولايتي ڪروڪس هتي چڱو نه ٿيندو آهي

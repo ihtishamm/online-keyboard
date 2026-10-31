@@ -10,12 +10,8 @@ export interface LayoutCopy {
   description?: string;
 }
 
-/** One row of the Roman spelling guide. */
-export interface RomanGuideRow {
-  roman: string;
-  urdu: string;
-  examples: [roman: string, urdu: string][];
-}
+import { getLanguage } from "@okb/layouts";
+import { ROMAN } from "./roman";
 
 export interface LanguageCopy {
   title: string;
@@ -26,8 +22,6 @@ export interface LanguageCopy {
   layouts: Record<string, LayoutCopy>;
   tips: string[];
   faqs: { q: string; a: string }[];
-  /** Spelling guide shown on the Roman layout page. */
-  romanGuide?: RomanGuideRow[];
 }
 
 export const COPY: Record<string, LanguageCopy> = {
@@ -49,16 +43,6 @@ export const COPY: Record<string, LanguageCopy> = {
         summary:
           'The layout that ships with Windows as "Urdu". Keys follow how often letters are used rather than how they sound.',
         bestFor: "Office and newsroom typists who learnt Urdu typing on Windows.",
-      },
-      "ur-roman": {
-        title: "Roman Urdu to Urdu: Type Urdu in English Letters Online",
-        heading: "Roman Urdu to Urdu",
-        description:
-          "Type Urdu the way you text it, in English letters, and get proper Urdu script as you go. Free, private, with word suggestions and Nastaliq.",
-        summary:
-          "Type Urdu the way you text it, in English letters. Each word turns into Urdu when you press Space, and the bar under the editor offers other spellings and longer words.",
-        bestFor:
-          "Anyone who writes Roman Urdu on WhatsApp and wants real Urdu script without learning a keyboard layout.",
       },
     },
     tips: [
@@ -101,98 +85,6 @@ export const COPY: Record<string, LanguageCopy> = {
       {
         q: "How do I type zabar, zer and pesh?",
         a: "On the Phonetic layout use Shift+Y for zabar, Shift+I for zer and Shift+P for pesh. On the Standard layout use AltGr+A, AltGr+I and AltGr+U. On a phone, tap Shift (or AltGr) first, then the key.",
-      },
-    ],
-    romanGuide: [
-      {
-        roman: "kh",
-        urdu: "خ  کھ",
-        examples: [
-          ["khush", "خوش"],
-          ["khana", "کھانا"],
-        ],
-      },
-      {
-        roman: "gh",
-        urdu: "غ  گھ",
-        examples: [
-          ["ghalat", "غلط"],
-          ["ghar", "گھر"],
-        ],
-      },
-      { roman: "sh", urdu: "ش", examples: [["shaam", "شام"]] },
-      {
-        roman: "ch, chh",
-        urdu: "چ  چھ",
-        examples: [
-          ["chalo", "چلو"],
-          ["chhota", "چھوٹا"],
-        ],
-      },
-      {
-        roman: "th",
-        urdu: "تھ  ٹھ",
-        examples: [
-          ["tha", "تھا"],
-          ["theek", "ٹھیک"],
-        ],
-      },
-      {
-        roman: "bh, ph, jh, dh",
-        urdu: "بھ  پھ  جھ  دھ",
-        examples: [
-          ["bhai", "بھائی"],
-          ["phir", "پھر"],
-          ["mujhe", "مجھے"],
-        ],
-      },
-      {
-        roman: "aa",
-        urdu: "ا  آ",
-        examples: [
-          ["baat", "بات"],
-          ["aaj", "آج"],
-        ],
-      },
-      {
-        roman: "ee, i",
-        urdu: "ی",
-        examples: [
-          ["teen", "تین"],
-          ["thi", "تھی"],
-        ],
-      },
-      {
-        roman: "e, ay (at the end)",
-        urdu: "ے",
-        examples: [
-          ["mere", "میرے"],
-          ["hay", "ہے"],
-        ],
-      },
-      {
-        roman: "oo, o, u",
-        urdu: "و",
-        examples: [
-          ["door", "دور"],
-          ["ko", "کو"],
-        ],
-      },
-      {
-        roman: "n (at the end)",
-        urdu: "ں",
-        examples: [
-          ["main", "میں"],
-          ["kahan", "کہاں"],
-        ],
-      },
-      {
-        roman: "T D R S Z H",
-        urdu: "ٹ  ڈ  ڑ  ص  ض  ح",
-        examples: [
-          ["baRa", "بڑا"],
-          ["Sabr", "صبر"],
-        ],
       },
     ],
   },
@@ -532,15 +424,19 @@ export const COPY: Record<string, LanguageCopy> = {
   },
 
   hindi: {
-    title: "Hindi Keyboard Online: Type in Hindi (हिन्दी) with InScript",
+    title: "English to Hindi Typing: Type Hindi in English Letters Online",
     description:
-      "Type Hindi online for free with the InScript layout, the Indian government standard. Conjuncts, Devanagari digits, an on-screen keyboard for phones, and autosave. Your text never leaves your device.",
-    heading: "Hindi Keyboard",
-    headingNative: "हिन्दी कीबोर्ड",
+      "Type Hindi in English letters and get Devanagari as you go: namaste becomes नमस्ते. InScript too, an on-screen keyboard for phones, and autosave. Your text never leaves your device.",
+    heading: "English to Hindi Typing",
+    headingNative: "हिन्दी टाइपिंग",
     intro:
-      "Type Hindi with your computer keyboard, by tapping the keys below, or on your phone. Your text is saved on this device as you write.",
+      "Type Hindi in English letters, the way you chat, and each word turns into Devanagari when you press Space. Prefer the Hindi keyboard? Switch to InScript. Your text is saved on this device as you write.",
     layouts: {
       "hi-inscript": {
+        title: "Hindi InScript Keyboard Online: Type in Hindi (हिन्दी)",
+        heading: "Hindi InScript Keyboard",
+        description:
+          "Type Hindi online with InScript, the Indian government standard layout. Conjuncts, Devanagari digits, an on-screen keyboard for phones, and autosave.",
         summary:
           "InScript, the Government of India standard built into Windows, macOS and Android. Vowel signs are on the left of the keyboard and consonants on the right.",
         bestFor: "Government and office typists, and anyone who wants the official Hindi layout.",
@@ -548,6 +444,7 @@ export const COPY: Record<string, LanguageCopy> = {
     },
     tips: [
       "Press Esc to switch between Hindi and English without leaving the page.",
+      "On the Roman layout, type words in English letters (mera naam) and press Space. Press 1 to 6 to pick another spelling, or Esc to keep a word in English.",
       "Type a consonant, then a vowel sign: क (K) then ा (E) makes का.",
       "The halant \u094D on D joins consonants: स (M), \u094D (D), त (L) makes स्त.",
       "Full vowels are on Shift of their sign: Shift+E आ, Shift+F इ, Shift+R ई, Shift+G उ, Shift+S ए.",
@@ -555,6 +452,10 @@ export const COPY: Record<string, LanguageCopy> = {
       "AltGr (right Alt) with the number keys types Devanagari digits १२३. Shift+AltGr+4 types ₹.",
     ],
     faqs: [
+      {
+        q: "Can I type Hindi in English letters?",
+        a: "Yes. The page opens on Roman typing: write as you would in a chat, for example “aap kaise hain”, and each word becomes Hindi (आप कैसे हैं) when you press Space. If a word comes out wrong, pick another spelling from the bar under the editor.",
+      },
       {
         q: "What is InScript?",
         a: "InScript is the standard keyboard layout for Indian scripts, set by the Government of India. Hindi, Marathi, Bangla and other Indian scripts share the same key positions.",
@@ -575,15 +476,19 @@ export const COPY: Record<string, LanguageCopy> = {
   },
 
   bangla: {
-    title: "Bangla Keyboard Online: Type in Bengali (বাংলা) with InScript",
+    title: "English to Bangla Typing: Type Bangla in English Letters Online",
     description:
-      "Type Bangla online for free with the InScript layout. Conjuncts, ৎ, ৳, an on-screen keyboard for phones, and autosave. Nothing to install, and your text never leaves your device.",
-    heading: "Bangla Keyboard",
-    headingNative: "বাংলা কিবোর্ড",
+      "Type Bangla in English letters (ami, tumi, kemon acho) and get Bangla script as you go. InScript too, an on-screen keyboard for phones, and autosave. Your text never leaves your device.",
+    heading: "English to Bangla Typing",
+    headingNative: "বাংলা টাইপিং",
     intro:
-      "Type Bangla with your computer keyboard, by tapping the keys below, or on your phone. Your text is saved on this device as you write.",
+      "Type Bangla in English letters, the way you chat, and each word turns into Bangla script when you press Space. Prefer the Bangla keyboard? Switch to InScript. Your text is saved on this device as you write.",
     layouts: {
       "bn-inscript": {
+        title: "Bangla InScript Keyboard Online: Type in Bengali (বাংলা)",
+        heading: "Bangla InScript Keyboard",
+        description:
+          "Type Bangla online with the InScript layout. Conjuncts, ৎ, ৳, an on-screen keyboard for phones, and autosave.",
         summary:
           "Bengali InScript, the Indian government standard built into Windows. Vowel signs are on the left of the keyboard and consonants on the right, in the same places as Hindi InScript.",
         bestFor: "Office typists and anyone who wants the standard Bangla layout.",
@@ -591,12 +496,17 @@ export const COPY: Record<string, LanguageCopy> = {
     },
     tips: [
       "Press Esc to switch between Bangla and English without leaving the page.",
+      "On the Roman layout, type words in English letters (kemon acho) and press Space. Press 1 to 6 to pick another spelling, or Esc to keep a word in English.",
       "Type a consonant, then a vowel sign: ক (K) then া (E) makes কা.",
       "The hasanta \u09CD on D joins consonants: ক (K), \u09CD (D), ষ (Shift+,) makes ক্ষ. Shift+7 types ক্ষ in one press.",
       "Shift+J types ৎ and / types য়. For ড়, type ড ([) then the nukta \u09BC (]).",
       "Shift+AltGr+5 types the taka sign ৳ and Shift+AltGr+4 types ₹.",
     ],
     faqs: [
+      {
+        q: "Can I type Bangla in English letters?",
+        a: "Yes. The page opens on Roman typing: write as you would in a chat, for example “kemon acho”, and each word becomes Bangla (কেমন আছো) when you press Space. If a word comes out wrong, pick another spelling from the bar under the editor.",
+      },
       {
         q: "Is this the Bijoy or Avro layout?",
         a: "No. This page uses InScript, the standard layout built into Windows. Its keys differ from Bijoy, but every Bangla letter and conjunct can be typed.",
@@ -620,5 +530,18 @@ export const COPY: Record<string, LanguageCopy> = {
 export function copyFor(slug: string): LanguageCopy {
   const copy = COPY[slug];
   if (!copy) throw new Error(`No page copy for "${slug}"`);
-  return copy;
+  // Roman layouts keep their copy with their spelling guide (roman.ts).
+  const roman = Object.fromEntries(
+    getLanguage(slug).layouts.flatMap((id) => (ROMAN[id] ? [[id, ROMAN[id].page]] : [])),
+  );
+  const romanId = getLanguage(slug).layouts.find((id) => ROMAN[id]);
+  const tips =
+    romanId && !copy.tips.some((t) => t.includes("Roman layout"))
+      ? [
+          ...copy.tips.slice(0, 1),
+          `On the Roman layout, type words in English letters (${ROMAN[romanId]!.example[0]}) and press Space. Press 1 to 6 to pick another spelling, or Esc to keep a word in English.`,
+          ...copy.tips.slice(1),
+        ]
+      : copy.tips;
+  return { ...copy, tips, layouts: { ...roman, ...copy.layouts } };
 }

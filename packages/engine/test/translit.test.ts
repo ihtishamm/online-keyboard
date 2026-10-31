@@ -5,6 +5,7 @@ import {
   compileScheme,
   isRomanWord,
   parseOutputs,
+  romanWordBefore,
   type TranslitScheme,
 } from "../src";
 
@@ -80,6 +81,28 @@ describe("Transliterator without a dictionary", () => {
     expect(isRomanWord("a".repeat(31))).toBe(false);
     expect(t.candidates("12")).toEqual([]);
     expect(t.convertText("thanos ok?")).toBe("θανος οκ;");
+  });
+});
+
+describe("extra word characters", () => {
+  // Like the Arabic chat alphabet: a digit stands for a letter inside a word.
+  const t = new Transliterator({
+    ...SCHEME,
+    letters: "3",
+    rules: [...SCHEME.rules, { in: "3", out: "ϟ" }],
+  });
+
+  it("treat scheme digits as letters only inside words", () => {
+    expect(isRomanWord("3ak", "3")).toBe(true);
+    expect(isRomanWord("3ak")).toBe(false);
+    expect(isRomanWord("33", "3")).toBe(false); // a number, not a word
+    expect(t.best("3as")).toBe("ϟας");
+    expect(t.convertText("3as 3 tea")).toBe("ϟας 3 τεα");
+  });
+
+  it("are part of the word before the caret", () => {
+    expect(romanWordBefore("x 3ak", 5, "3")).toEqual({ start: 2, end: 5, word: "3ak" });
+    expect(romanWordBefore("x 3ak", 5)).toEqual({ start: 3, end: 5, word: "ak" });
   });
 });
 

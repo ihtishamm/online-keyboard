@@ -7,13 +7,20 @@ vi.mock("./dictionary", async () => {
   const { Lexicon, NextWords } = await import("@okb/engine");
   const words = [
     ...["میں", "نے", "ہے", "کیا", "حال", "میرا", "نام", "پاکستان", "پاکستانی", "پاک"],
-    ...["کی", "ضرورت", "حکومت"],
+    ...["کی", "ضرورت", "حکومت", "کیونکہ"],
   ];
   const dictionary = {
     lexicon: Lexicon.fromRanked(words),
     next: NextWords.parse("^\t0 2\n0\t1 2\n", words),
   };
-  return { hasDictionary: () => true, loadDictionary: () => Promise.resolve(dictionary) };
+  return {
+    hasDictionary: () => true,
+    hasSpelling: () => true,
+    spellingByDefault: () => true,
+    hasAutocorrect: () => true,
+    autocorrectByDefault: () => false,
+    loadDictionary: () => Promise.resolve(dictionary),
+  };
 });
 
 const editor = () => screen.getByRole<HTMLTextAreaElement>("textbox");
@@ -91,8 +98,13 @@ describe("Roman mode", () => {
     press("Escape", "Escape");
     expect(editor().value).toBe("ok ");
     await waitFor(() =>
-      expect(document.querySelector("[aria-live]")?.textContent).toBe("Kept as typed"),
+      expect(document.querySelector("[aria-live]")?.textContent).toMatch(/^Kept in English/),
     );
+    // Remembered: the next time, Space leaves it alone too.
+    typeRoman("ok");
+    press("Space", " ");
+    expect(editor().value).toBe("ok ok ");
+    expect(JSON.parse(localStorage.getItem("likho:kept:urdu") ?? "[]")).toEqual(["ok"]);
   });
 
   it("converts after a phone keyboard types a space", () => {
@@ -253,12 +265,41 @@ describe("spell check", () => {
     expect(JSON.parse(localStorage.getItem("likho:spelling:urdu")!)).toEqual(["زرورت"]);
   });
 
+  it("offers to join a word split by a stray space", async () => {
+    renderPhonetic();
+    setText("میں کیو نکہ");
+    const group = await waitFor(() => bar(/Spelling corrections/));
+    fireEvent.click(within(group).getByRole("button", { name: "کیونکہ" }));
+    expect(editor().value).toBe("میں کیونکہ");
+  });
+
+  it("autocorrects on Space only once turned on; Backspace undoes it", async () => {
+    renderPhonetic();
+    setText("میرا نام زرورت");
+    await waitFor(() => bar(/Spelling corrections/));
+    fireEvent.keyDown(editor(), { code: "Space", key: " " });
+    expect(editor().value).toBe("میرا نام زرورت"); // off: the browser types the space
+
+    fireEvent.click(screen.getByRole("button", { name: "Autocorrect" }));
+    expect(localStorage.getItem("likho:autocorrect:urdu")).toBe("on");
+    setText("میرا نام زرورت");
+    await waitFor(() => bar(/Spelling corrections/));
+    fireEvent.keyDown(editor(), { code: "Space", key: " " });
+    expect(editor().value).toBe("میرا نام ضرورت ");
+    fireEvent.keyDown(editor(), { code: "Backspace", key: "Backspace" });
+    expect(editor().value).toBe("میرا نام زرورت");
+    // Kept as typed: the next Space leaves it alone.
+    fireEvent.input(editor());
+    fireEvent.keyDown(editor(), { code: "Space", key: " " });
+    expect(editor().value).toBe("میرا نام زرورت");
+  });
+
   it("can be turned off, and remembers it", async () => {
     renderPhonetic();
     setText("زرورت ہے ");
     await waitFor(() => expect(count()).toBeTruthy());
     fireEvent.click(screen.getByRole("button", { name: "Spell check" }));
-    expect(localStorage.getItem("likho:spellcheck")).toBe("off");
+    expect(localStorage.getItem("likho:spellcheck:urdu")).toBe("off");
     await waitFor(() => expect(count()).toBeNull());
   });
 });

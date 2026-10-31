@@ -1,9 +1,9 @@
 /// <reference lib="webworker" />
 // Downloads and indexes a word list off the main thread, then hands the trie's arrays back
 // without copying (they are transferred).
-import { buildDictionary, type DictionaryRequest } from "./dictionary-build";
+import { buildDictionary } from "./dictionary-build";
 
-self.onmessage = async (event: MessageEvent<DictionaryRequest>) => {
+self.onmessage = async (event: MessageEvent<string>) => {
   try {
     const { lexicon, next } = await buildDictionary(event.data);
     const data = lexicon.toData();

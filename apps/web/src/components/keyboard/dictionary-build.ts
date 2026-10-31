@@ -1,19 +1,10 @@
 import { Lexicon, NextWords, type Dictionary } from "@okb/engine";
+import { decodeDictionary } from "@okb/engine/compact";
 
-export interface DictionaryRequest {
-  words: string;
-  next: string;
-}
-
-async function fetchText(url: string): Promise<string> {
+/** Fetch a compact dictionary file and index it. Runs in the worker, or on the main thread. */
+export async function buildDictionary(url: string): Promise<Dictionary> {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
-  return res.text();
-}
-
-/** Fetch both lists and index them. Runs in the worker, or on the main thread as a fallback. */
-export async function buildDictionary(urls: DictionaryRequest): Promise<Dictionary> {
-  const [wordsText, nextText] = await Promise.all([fetchText(urls.words), fetchText(urls.next)]);
-  const words = wordsText.split("\n").filter((w) => w.length > 0);
-  return { lexicon: Lexicon.fromRanked(words), next: NextWords.parse(nextText, words) };
+  const { words, next } = decodeDictionary(await res.text());
+  return { lexicon: Lexicon.fromRanked(words), next: NextWords.parse(next, words) };
 }

@@ -9,6 +9,7 @@ import {
   getLayout,
   getScheme,
   layoutSlug,
+  nativeLayout,
 } from "../src";
 
 /** Every letter of the Urdu alphabet plus the hamza-carrier forms in everyday use. */
@@ -171,6 +172,7 @@ const GOLDEN: [layoutId: string, keys: string, expected: string][] = [
 describe("regional language pack", () => {
   it("covers every layout in the registry", () => {
     const expected = allLayouts()
+      .filter((l) => !l.translit)
       .map((l) => l.id)
       .filter((id) => !id.startsWith("ur-"));
     expect(Object.keys(ALPHABETS).sort()).toEqual(expected.sort());
@@ -188,7 +190,7 @@ describe("regional language pack", () => {
 
   it("gives every language a sample in its own script", () => {
     for (const lang of LANGUAGES) {
-      const script = getLayout(lang.layouts[0]!).script;
+      const script = nativeLayout(lang).script;
       expect(lang.sample).toMatch(new RegExp(`\\p{Script=${script}}`, "u"));
     }
   });
@@ -196,7 +198,7 @@ describe("regional language pack", () => {
   it("only offers Nastaliq for Arabic-script languages", () => {
     for (const lang of LANGUAGES) {
       if (lang.fonts.includes("nastaliq") || lang.fonts.includes("naskh"))
-        expect(getLayout(lang.layouts[0]!).script).toBe("Arab");
+        expect(nativeLayout(lang).script).toBe("Arab");
     }
   });
 });
@@ -208,11 +210,13 @@ describe("ur-roman", () => {
     expect(getScheme(layout.translit!).lang).toBe(layout.lang);
   });
 
-  it("is the only layout with a transliteration scheme", () => {
-    expect(
-      allLayouts()
-        .filter((l) => l.translit)
-        .map((l) => l.id),
-    ).toEqual(["ur-roman"]);
+  it("is one of the Roman layouts, each named after its own scheme", () => {
+    const roman = allLayouts().filter((l) => l.translit);
+    expect(roman.map((l) => l.id)).toContain("ur-roman");
+    for (const l of roman) {
+      expect(l.translit).toBe(l.id);
+      expect(l.script).toBe("Latn");
+      expect(() => getScheme(l.translit!)).not.toThrow();
+    }
   });
 });

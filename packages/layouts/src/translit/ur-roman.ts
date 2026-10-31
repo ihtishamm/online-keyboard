@@ -11,6 +11,7 @@ export const UR_ROMAN: TranslitScheme = {
   id: "ur-roman",
   lang: "ur",
   vowels: "aeiou",
+  splitCost: 1,
   rules: [
     // ----- consonant clusters -----
     { in: "chch", out: "چ" },
@@ -141,6 +142,7 @@ export const UR_ROMAN: TranslitScheme = {
     ["kya kia kiya", "کیا"],
     ["to toh", "تو"],
     ["bhi bi", "بھی"],
+    ["bhai bhae", "بھائی"],
     ["ap aap", "آپ"],
     ["kuch kuchh kch", "کچھ"],
     ["bohat bahut bohot bht bhot buhat bohut", "بہت"],

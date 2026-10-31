@@ -56,13 +56,16 @@ interface State {
   inserted: boolean;
 }
 
-const LATIN_WORD = /^[a-z']+$/i;
 /** Longer Latin runs (URLs, pasted English) are not words to convert, and would be slow. */
 const MAX_WORD_LENGTH = 30;
 
-/** Is this a Roman word the transliterator should handle? */
-export function isRomanWord(text: string): boolean {
-  return text.length <= MAX_WORD_LENGTH && LATIN_WORD.test(text) && /[a-z]/i.test(text);
+const escapeClass = (s: string) => s.replace(/[\\\]^-]/g, "\\$&");
+
+/** Is this a Roman word the transliterator should handle? `letters`: see TranslitScheme. */
+export function isRomanWord(text: string, letters = ""): boolean {
+  if (text.length > MAX_WORD_LENGTH || !/[a-z]/i.test(text)) return false;
+  for (const c of text) if (!/[a-z']/i.test(c) && !letters.includes(c)) return false;
+  return true;
 }
 
 /**
@@ -78,9 +81,12 @@ export class Transliterator {
   private next: NextWords | null = null;
   private readonly options: TranslitOptions;
   private cache = new Map<string, Candidate[]>();
+  /** Extra Roman word characters (TranslitScheme.letters). */
+  readonly letters: string;
 
   constructor(scheme: TranslitScheme, options: Partial<TranslitOptions> = {}) {
     this.compiled = compileScheme(scheme);
+    this.letters = scheme.letters ?? "";
     this.options = { ...DEFAULT_OPTIONS, ...options };
   }
 
@@ -111,7 +117,7 @@ export class Transliterator {
    * ke → کے / کہ.
    */
   candidates(input: string, limit = 8, previous?: string | null): Candidate[] {
-    if (!isRomanWord(input)) return [];
+    if (!isRomanWord(input, this.letters)) return [];
     const key = `${input}\0${limit}\0${previous}`;
     const hit = this.cache.get(key);
     if (hit) return hit;
@@ -173,8 +179,10 @@ export class Transliterator {
   convertText(text: string): string {
     const punct = this.compiled.scheme.punctuation;
     let previous: string | null = null;
-    return text.replace(/[a-z']+|[^\sa-z']/gi, (token) => {
-      if (isRomanWord(token)) {
+    const extra = escapeClass(this.letters);
+    const tokens = new RegExp(`[a-z'${extra}]+|[^\\sa-z'${extra}]`, "gi");
+    return text.replace(tokens, (token) => {
+      if (isRomanWord(token, this.letters)) {
         const word = this.best(token, previous);
         previous = word;
         return word;
@@ -190,6 +198,7 @@ export class Transliterator {
    */
   private search(input: string, lex: Lexicon | null): State[] {
     const { byFirst, omitted, isVowel, scheme } = this.compiled;
+    const splitCost = scheme.splitCost ?? 0;
     const lower = input.toLowerCase();
     const n = lower.length;
     const capitalHints = input !== input.toUpperCase();
@@ -242,6 +251,11 @@ export class Transliterator {
       const hint =
         capitalHints && pos > 0 && upper !== lower[pos] ? scheme.capitals[upper] : undefined;
 
+      // A one-letter consonant here would split an h digraph ("kh") that has rules of its own.
+      const splitsDigraph =
+        splitCost > 0 &&
+        lower[pos + 1] === "h" &&
+        rules.some((r) => r.in.length === 2 && r.in[1] === "h" && lower.startsWith(r.in, pos));
       for (const rule of rules) {
         if (!lower.startsWith(rule.in, pos)) continue;
         // A doubled consonant ("pakka") may read as the single letter.
@@ -253,10 +267,15 @@ export class Transliterator {
         for (const span of spans) {
           const end = pos + span;
           if (!contextOk(rule, pos, end, n, prevChar, lower[end], isVowel)) continue;
-          // Urdu writes a doubled consonant once, so spelling both letters is the odd reading.
-          const repeat = span === 1 && rule.in.length === 1 && prevChar === rule.in ? 0.5 : 0;
+          // Urdu writes a doubled consonant once, so spelling both letters is the odd reading
+          // there; scripts that write both set `doubledCost` to 0.
+          const repeat =
+            span === 1 && rule.in.length === 1 && prevChar === rule.in
+              ? (scheme.doubledCost ?? 0.5)
+              : 0;
+          const split = rule.in.length === 1 && splitsDigraph ? splitCost : 0;
           for (const o of rule.outputs) {
-            let cost = o.cost + repeat;
+            let cost = o.cost + repeat + split;
             if (hint) cost = o.text.startsWith(hint) ? Math.min(cost, 0) : cost + 3;
             for (const s of states) {
               const node = extend(s, o.text);

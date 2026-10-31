@@ -1,0 +1,10 @@
+{
+  "scheme": "bn-roman",
+  "source": "Dakshina test split",
+  "pairs": 1000,
+  "top1": 0.394,
+  "top5": 0.465,
+  "messageWords": 343,
+  "correctionsPer10Words": 3,
+  "beta": true
+}

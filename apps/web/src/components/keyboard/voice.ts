@@ -50,6 +50,39 @@ export function speechLang(slug: string): string | null {
   return SPEECH_LANG[slug] ?? null;
 }
 
+/**
+ * Regional variants the speech services recognise separately, first is the default. Arabic
+ * dialects differ enough that recognition is much better in the speaker's own.
+ */
+const DIALECTS: Readonly<Record<string, readonly [tag: string, region: string][]>> = {
+  urdu: [
+    ["ur-PK", "Pakistan"],
+    ["ur-IN", "India"],
+  ],
+  arabic: [
+    ["ar-SA", "Saudi Arabia"],
+    ["ar-EG", "Egypt"],
+    ["ar-AE", "United Arab Emirates"],
+    ["ar-JO", "Jordan"],
+    ["ar-LB", "Lebanon"],
+    ["ar-IQ", "Iraq"],
+    ["ar-KW", "Kuwait"],
+    ["ar-QA", "Qatar"],
+    ["ar-MA", "Morocco"],
+    ["ar-DZ", "Algeria"],
+    ["ar-TN", "Tunisia"],
+  ],
+  bangla: [
+    ["bn-BD", "Bangladesh"],
+    ["bn-IN", "India"],
+  ],
+};
+
+/** The dialects offered for a language, or an empty list when there is no choice. */
+export function speechDialects(slug: string): readonly [tag: string, region: string][] {
+  return DIALECTS[slug] ?? [];
+}
+
 /** Spoken punctuation: phrases said on their own, replaced by the mark. */
 const COMMANDS: Readonly<Record<string, readonly [phrase: string, mark: string][]>> = {
   urdu: [

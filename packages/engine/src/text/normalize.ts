@@ -1,0 +1,186 @@
+/**
+ * Word normalisation per language: the dictionary form of a word as the word-list build
+ * stores it. Shared by the build (@okb/dictionaries) and the browser (spell check), so a word
+ * typed on any layout finds the same entry. Each returns null when the text is not a word of
+ * the language. No imports: Node runs this file directly in the build.
+ */
+
+/** Letters a dictionary word may contain once normalised. */
+const URDU_WORD = /^[ءآأؤئابپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوہۂۃھیےۓ]+$/u;
+
+/**
+ * Normalise one word: Arabic letter forms become Urdu ones, hamza written as a separate mark
+ * is joined to its seat, other diacritics, tatweel and joiners are removed.
+ * Returns null when the result is not an Urdu word.
+ */
+export function normalizeUrdu(raw: string): string | null {
+  const w = raw
+    .normalize("NFC")
+    .replace(/ي|ى/g, "ی")
+    .replace(/ك/g, "ک")
+    .replace(/ه/g, "ہ")
+    .replace(/\u06C0|\u06C1\u0654/g, "\u06C2") // heh + hamza -> ۂ
+    .replace(/\u06CC\u0654/g, "\u0626") // Farsi yeh + hamza -> ئ
+    .replace(/\u0640/g, "") // tatweel
+    .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED\u200C\u200D]/g, "");
+  if (w.length === 0 || w.length > 24 || !URDU_WORD.test(w)) return null;
+  return w;
+}
+
+/** Harakat, Quranic marks, superscript alef, tatweel and joiners. */
+const HARAKAT = /[\u064B-\u065Fٰۖ-\u06EDـ\u200D]/g;
+
+function checked(w: string, letters: RegExp): string | null {
+  return w.length > 0 && w.length <= 24 && letters.test(w) ? w : null;
+}
+
+/** Shared Arabic-script clean-up: NFC, hamza written as a mark joins its seat. */
+function arabicBase(raw: string): string {
+  return raw
+    .normalize("NFC")
+    .replace(/أ/g, "أ")
+    .replace(/ؤ/g, "ؤ")
+    .replace(/[يی]\u0654/g, "ئ");
+}
+
+const AR_LETTERS = /^[ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىي]+$/u;
+export function normalizeArabic(raw: string): string | null {
+  const w = arabicBase(raw)
+    .replace(/ٱ/g, "ا") // alef wasla
+    .replace(/ی/g, "ي")
+    .replace(/ک/g, "ك")
+    .replace(/[ہھ]/g, "ه")
+    .replace(/[ۀۂۃ]/g, "ة")
+    .replace(HARAKAT, "")
+    .replace(/\u200C/g, "");
+  return checked(w, AR_LETTERS);
+}
+
+const FA_LETTERS =
+  /^[ءآأؤإئابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیة](?:[ءآأؤإئابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیة]|\u200C(?=[^\u200C]))*$/u;
+export function normalizeFarsi(raw: string): string | null {
+  const w = arabicBase(raw)
+    .replace(/[يى]/g, "ی")
+    .replace(/ك/g, "ک")
+    .replace(/[ہھ]/g, "ه")
+    .replace(/ۀ/g, "ه") // ۀ is ه + hamza; typed as ه then a ZWNJ'd ی in most text
+    .replace(HARAKAT, "")
+    .replace(/\u200C+/g, "\u200C")
+    .replace(/^\u200C|\u200C$/g, "");
+  return checked(w, FA_LETTERS);
+}
+
+// Pashto has both ي (feminine / ee) and ی, plus ې and ۍ: keep all four.
+const PS_LETTERS = /^[ءآأؤئابپتټثجځچڅحخدډذرړزږژسشښصضطظعغفقکګلمنڼوهيیېۍ]+$/u;
+export function normalizePashto(raw: string): string | null {
+  const w = arabicBase(raw)
+    .replace(/ك/g, "ک")
+    .replace(/گ/g, "ګ") // the Pashto gaf with a ring
+    .replace(/ى/g, "ی")
+    .replace(/[ہھ]/g, "ه")
+    .replace(/ۀ/g, "ه")
+    .replace(HARAKAT, "")
+    .replace(/\u200C/g, "");
+  return checked(w, PS_LETTERS);
+}
+
+// Sindhi writes the Arabic ي and ه; ڪ (kaf) and ک (kheh) are different letters.
+const SD_LETTERS = /^[ءآأؤئابٻڀتٽٿٺثپجڄڃچڇحخدڌڏڊڍذرڙزژسشصضطظعغفڦقڪکگڳڱلمنڻوهھيۃ]+$/u;
+export function normalizeSindhi(raw: string): string | null {
+  const w = arabicBase(raw)
+    .replace(/[یى]/g, "ي")
+    .replace(/ك/g, "ڪ")
+    .replace(/ہ/g, "ه")
+    .replace(HARAKAT, "")
+    .replace(/\u200C/g, "");
+  return checked(w, SD_LETTERS);
+}
+
+const URDU_LETTERS = "ءآأؤئابپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوہۂۃھیےۓ";
+
+/** Urdu's letter forms plus extra letters (Shahmukhi ݨ, Saraiki implosives, Balochi vowels). */
+export function urduPlus(extra: string, without = "") {
+  const base = [...URDU_LETTERS].filter((c) => !without.includes(c)).join("");
+  const letters = new RegExp(`^[${base}${extra}]+$`, "u");
+  return (raw: string): string | null =>
+    checked(
+      arabicBase(raw)
+        .replace(/[يى]/g, "ی")
+        .replace(/ك/g, "ک")
+        .replace(/ه/g, "ہ")
+        .replace(/\u06C0|\u06C1\u0654/g, "\u06C2")
+        .replace(HARAKAT, "")
+        .replace(/\u200C/g, ""),
+      letters,
+    );
+}
+
+// Balochi as its layout types it: Urdu's letters, but the Arabic ه, and ۆ ێ ۀ.
+const BAL_LETTERS = /^[ءآأؤئابپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوهۀۃیےۓۆێ]+$/u;
+export function normalizeBalochi(raw: string): string | null {
+  const w = arabicBase(raw)
+    .replace(/[يى]/g, "ی")
+    .replace(/ك/g, "ک")
+    .replace(/[ہھ]/g, "ه")
+    .replace(/\u06C2/g, "\u06C0")
+    .replace(HARAKAT, "")
+    .replace(/\u200C/g, "");
+  return checked(w, BAL_LETTERS);
+}
+
+// Kashmiri spells vowels with marks: \u0655 (hamza below), \u065A, \u065F, \u0656 and the letters ٲ ٳ ۄ ؠ ێ.
+const KS_MARKS = "\u0654\u0655\u0656\u065A\u065F";
+const KS_BASE = `${URDU_LETTERS}ؠٲٳۄێ`;
+// The marks follow a letter in the second class on purpose: each is matched on its own.
+// eslint-disable-next-line no-misleading-character-class
+const KS_LETTERS = new RegExp(`^[${KS_BASE}][${KS_BASE}${KS_MARKS}]*$`, "u");
+export function normalizeKashmiri(raw: string): string | null {
+  const w = raw
+    .normalize("NFC")
+    .replace(/\u0626/g, "\u06CC\u0654") // ئ: the Kashmiri layout types ی then the hamza mark
+    .replace(/[يى]/g, "ی")
+    .replace(/ك/g, "ک")
+    .replace(/ه/g, "ہ")
+    .replace(
+      new RegExp(
+        `[\\u064B-\\u0653\\u0657-\\u0659\\u065B-\\u065E\\u0670\\u06D6-\\u06ED\\u0640\\u200C\\u200D]`,
+        "g",
+      ),
+      "",
+    );
+  return checked(w, KS_LETTERS);
+}
+
+// Letters and signs, no digits (०–९), dandas or abbreviation signs; starts with a letter.
+const HI_LETTERS = /^[ऄ-हक़-ॡॲ-ॿ][\u0900-\u0963ॱ-ॿ]*$/u;
+export function normalizeHindi(raw: string): string | null {
+  // NFC splits nukta letters (क़ -> क + \u093C), the form InScript types.
+  const w = raw.normalize("NFC").replace(/[\u200C\u200D]/g, "");
+  return checked(w, HI_LETTERS);
+}
+
+const BN_LETTERS = /^[অ-হৎড়-ৡ][\u0981-\u09E3]*$/u;
+export function normalizeBangla(raw: string): string | null {
+  const w = raw
+    .normalize("NFC")
+    .replace(/ত্\u200D/g, "ৎ") // ত্\u200D (ta, virama, ZWJ) -> khanda ta ৎ
+    .replace(/[\u200C\u200D]/g, "")
+    .replace(/[ৰৱ]/g, ""); // Assamese ra/wa: not Bangla
+  return checked(w, BN_LETTERS);
+}
+
+/** Word normalisers by data code (Language.code). */
+export const WORD_NORMALIZERS: Readonly<Record<string, (raw: string) => string | null>> = {
+  ur: normalizeUrdu,
+  ar: normalizeArabic,
+  fa: normalizeFarsi,
+  ps: normalizePashto,
+  sd: normalizeSindhi,
+  // The Shahmukhi layouts have no ۃ (زکوٰۃ is written with ت or ہ in Punjabi).
+  pnb: urduPlus("ݨڵ", "ۃ"),
+  skr: urduPlus("ٻڄݙڳݨڃڊ"),
+  ks: normalizeKashmiri,
+  bal: normalizeBalochi,
+  hi: normalizeHindi,
+  bn: normalizeBangla,
+};

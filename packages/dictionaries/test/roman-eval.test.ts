@@ -1,25 +1,18 @@
-import { existsSync, readFileSync } from "node:fs";
-import { Lexicon, NextWords } from "@okb/engine";
+import { readFileSync } from "node:fs";
 import { UR_ROMAN } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
 import { evaluate, evaluateMessages, parseMessages, parsePairs } from "../src/evaluate.ts";
+import { loadShipped } from "../src/shipped.ts";
 
-const WORDS = new URL("../data/ur/words.txt", import.meta.url);
 const pairs = parsePairs(
   readFileSync(new URL("./data/ur-roman-pairs.tsv", import.meta.url), "utf8"),
 );
 const messages = parseMessages(
   readFileSync(new URL("./data/ur-roman-messages.tsv", import.meta.url), "utf8"),
 );
-const lexicon = existsSync(WORDS) ? Lexicon.parse(readFileSync(WORDS, "utf8")) : null;
-const NEXT = new URL("../data/ur/next.txt", import.meta.url);
-const next =
-  lexicon && existsSync(NEXT)
-    ? NextWords.parse(
-        readFileSync(NEXT, "utf8"),
-        readFileSync(WORDS, "utf8").split("\n").filter(Boolean),
-      )
-    : null;
+const shipped = loadShipped("ur");
+const lexicon = shipped?.lexicon ?? null;
+const next = shipped?.next ?? null;
 const verbose = process.env.EVAL_VERBOSE === "1";
 // Each run converts ~1,300 words; allow for slow CI machines.
 const SLOW = { timeout: 60_000 };

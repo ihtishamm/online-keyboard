@@ -24,7 +24,13 @@ import {
 import { FONT_CLASS } from "../fonts";
 import { countText } from "./actions";
 import CandidateBar from "./CandidateBar";
-import { hasDictionary } from "./dictionary";
+import {
+  autocorrectByDefault,
+  hasAutocorrect,
+  hasDictionary,
+  hasSpelling,
+  spellingByDefault,
+} from "./dictionary";
 import {
   deleteBackward,
   deleteRange,
@@ -49,7 +55,7 @@ import { noteCopy, useInstallOffer } from "./install";
 import { track } from "../../analytics/track";
 import { useSuggestions } from "./useSuggestions";
 import { useVoiceTyping } from "./useVoiceTyping";
-import { dictationText, recognitionCtor, spaced, speechLang } from "./voice";
+import { dictationText, recognitionCtor, spaced, speechDialects, speechLang } from "./voice";
 import VoicePanel from "./VoicePanel";
 import VirtualKeyboard, { type KeyAction } from "./VirtualKeyboard";
 
@@ -124,15 +130,19 @@ export default function KeyboardApp({
   const editorRef = useRef<HTMLTextAreaElement>(null);
   const drafts = useDrafts(slug, editorRef);
   const [predict, setPredict] = useState(true);
-  const [spellcheck, setSpellcheck] = useState(true);
+  const [spellcheck, setSpellcheck] = useState(() => spellingByDefault(language.code));
+  const [autocorrect, setAutocorrect] = useState(() => autocorrectByDefault(language.code));
   const scheme = layout.translit ? (bundle.schemes[layout.translit] ?? null) : null;
   const roman = scheme !== null && !passthrough;
   const suggest = useSuggestions({
     slug,
+    code: language.code,
     editorRef,
     scheme: roman ? scheme : null,
     predict: predict && !passthrough,
-    spellcheck,
+    spellcheck: spellcheck && hasSpelling(language.code),
+    autocorrect: autocorrect && hasAutocorrect(language.code),
+    layouts: bundle.layouts,
   });
 
   /** Tell screen readers (and show briefly) what just happened. */
@@ -184,8 +194,16 @@ export default function KeyboardApp({
     });
     setKeyboardSettings(loadKeyboardSettings());
     if (loadPreference("predict") === "off") setPredict(false);
-    if (loadPreference("spellcheck") === "off") setSpellcheck(false);
-    if (recognitionCtor()) setVoiceLang(speechLang(slug));
+    // Per language: what suits one word list may not suit another.
+    const savedSpelling = loadPreference(`spellcheck:${slug}`) ?? loadPreference("spellcheck");
+    if (savedSpelling === "off" || savedSpelling === "on") setSpellcheck(savedSpelling === "on");
+    const savedAutocorrect = loadPreference(`autocorrect:${slug}`);
+    if (savedAutocorrect) setAutocorrect(savedAutocorrect === "on");
+    if (recognitionCtor()) {
+      const saved = loadPreference(`voiceLang:${slug}`);
+      const known = speechDialects(slug).some(([tag]) => tag === saved);
+      setVoiceLang(known ? saved : speechLang(slug));
+    }
     const savedFont = loadPreference(`font:${slug}`) as FontId | null;
     if (savedFont && language.fonts.includes(savedFont)) setFont(savedFont);
     const savedSize = Number(loadPreference("fontSize"));
@@ -281,6 +299,7 @@ export default function KeyboardApp({
    * converts the Roman word before the caret; punctuation becomes its Urdu form.
    */
   const typeText = (text: string) => {
+    if (!roman && text === " " && suggest.correctBefore(" ")) return;
     if (!roman || !isBoundary(text)) return insert(text);
     const el = editorRef.current;
     const prev = el ? el.value[el.selectionStart - 1] : undefined;
@@ -309,10 +328,18 @@ export default function KeyboardApp({
     suggest.refresh();
   };
 
+  /** Backspace right after an autocorrection puts the typed word back. */
+  const undoCorrection = (): boolean => {
+    const word = suggest.undoCorrection();
+    if (word) setAnnouncement(`Kept ${word}`);
+    return word !== null;
+  };
+
   /** Roman mode: leave the word as typed and move on. */
   const keepRoman = () => {
+    suggest.keep();
     insert(" ");
-    setAnnouncement("Kept as typed");
+    setAnnouncement("Kept in English. It stays in English on this device.");
   };
 
   const togglePassthrough = () => {
@@ -338,7 +365,9 @@ export default function KeyboardApp({
         keepRoman();
         return;
       }
-      if (/^[1-9]$/.test(e.key) && suggest.pick(Number(e.key) - 1)) {
+      // Number keys pick a spelling, unless digits are letters here (Arabic chat: 3 = ع).
+      const digitIsLetter = scheme?.letters?.includes(e.key) ?? false;
+      if (/^[1-9]$/.test(e.key) && !digitIsLetter && suggest.pick(Number(e.key) - 1)) {
         e.preventDefault();
         return;
       }
@@ -356,12 +385,22 @@ export default function KeyboardApp({
     }
     if (passthrough) return;
 
+    if (e.key === "Backspace" && plain && undoCorrection()) {
+      e.preventDefault();
+      return;
+    }
+
     if (machine.pending !== null && (e.key === "Backspace" || e.key === " ")) {
       e.preventDefault();
       const trigger = machine.pending;
       machine.cancelPending();
       if (e.key === " ") insert(trigger);
       rerender();
+      return;
+    }
+
+    if (e.key === " " && plain && !roman && suggest.correctBefore(" ")) {
+      e.preventDefault();
       return;
     }
 
@@ -414,7 +453,7 @@ export default function KeyboardApp({
     const el = editorRef.current;
     switch (action) {
       case "backspace":
-        if (!machine.cancelPending() && el) deleteBackward(el);
+        if (!machine.cancelPending() && !undoCorrection() && el) deleteBackward(el);
         break;
       case "enter":
         if (!(roman && suggest.commit("\n"))) insert("\n");
@@ -423,7 +462,7 @@ export default function KeyboardApp({
         const trigger = machine.pending;
         machine.cancelPending();
         if (trigger) insert(trigger);
-        else if (!(roman && suggest.commit(" "))) insert(" ");
+        else if (roman ? !suggest.commit(" ") : !suggest.correctBefore(" ")) insert(" ");
         break;
       }
       case "shift":
@@ -609,6 +648,8 @@ export default function KeyboardApp({
           dir={layout.dir}
           lang={language.lang}
           aria-label={`${language.name.en} text`}
+          // For tests and tools: the word list has downloaded and been indexed.
+          data-words={suggest.ready ? "ready" : undefined}
           placeholder={language.sample}
           spellCheck={false}
           autoCapitalize="off"
@@ -714,6 +755,23 @@ export default function KeyboardApp({
             editorRef.current?.focus({ preventScroll: true });
           }}
           onStop={toggleVoice}
+          dialects={
+            speechDialects(slug).length
+              ? {
+                  options: speechDialects(slug),
+                  value: voiceLang,
+                  onChange: (tag) => {
+                    savePreference(`voiceLang:${slug}`, tag);
+                    setVoiceLang(tag);
+                    // The session listens in the dialect it started with.
+                    if (voice.listening) {
+                      voice.stop();
+                      setAnnouncement("Dialect changed. Start voice typing again to use it.");
+                    }
+                  },
+                }
+              : undefined
+          }
         />
       )}
 
@@ -786,12 +844,13 @@ export default function KeyboardApp({
             </div>
           </section>
         )}
-        {(roman || hasDictionary(slug)) && (
+        {(roman || hasDictionary(language.code)) && (
           <CandidateBar
             state={suggest.state}
             roman={roman}
             lang={language.lang}
             dir={language.dir}
+            languageName={language.name.en}
             predict={predict}
             onTogglePredict={() => {
               const next = !predict;
@@ -805,18 +864,30 @@ export default function KeyboardApp({
             onKeep={keepRoman}
             showNumbers={!coarse}
             spelling={
-              hasDictionary(slug)
+              hasSpelling(language.code)
                 ? {
                     enabled: spellcheck,
+                    beta: !spellingByDefault(language.code),
                     onToggle: () => {
                       const next = !spellcheck;
                       setSpellcheck(next);
-                      savePreference("spellcheck", next ? "on" : "off");
+                      savePreference(`spellcheck:${slug}`, next ? "on" : "off");
                       setAnnouncement(next ? "Spell check on" : "Spell check off");
                       if (next) suggest.load();
                     },
                     onIgnore: () => acceptWord(false),
                     onAdd: () => acceptWord(true),
+                    autocorrect: hasAutocorrect(language.code)
+                      ? {
+                          enabled: autocorrect,
+                          onToggle: () => {
+                            const next = !autocorrect;
+                            setAutocorrect(next);
+                            savePreference(`autocorrect:${slug}`, next ? "on" : "off");
+                            setAnnouncement(next ? "Autocorrect on" : "Autocorrect off");
+                          },
+                        }
+                      : undefined,
                   }
                 : undefined
             }

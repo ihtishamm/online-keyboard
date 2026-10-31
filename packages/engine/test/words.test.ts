@@ -16,6 +16,10 @@ describe("romanWordBefore", () => {
 });
 
 describe("scriptWordBefore", () => {
+  it("keeps a Persian half-space inside the word", () => {
+    expect(scriptWordBefore("من می\u200Cخوا", 9)?.word).toBe("می\u200Cخوا");
+  });
+
   it("finds the Urdu word ending at the caret, without diacritics", () => {
     expect(scriptWordBefore("میرا پاکس", 9)).toEqual({ start: 5, end: 9, word: "پاکس" });
     expect(scriptWordBefore("ب\u064Eس", 3)?.word).toBe("بس");

@@ -1,0 +1,44 @@
+# bn: held-out sentences (test split), Roman -> words
+# From the Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0:
+# https://github.com/google-research-datasets/dakshina
+# Native words normalised with packages/dictionaries/src/languages.ts.
+tobe biya diya amar pran banchao	তবে বিয়া দিয়া আমার প্রাণ বাঁচাও
+porobortikale ei sishui abdul mottaleb naame porichito hon	পরবর্তীকালে এই শিশুই আব্দুল মোত্তালেব নামে পরিচিত হন
+engreji arbi farshi o urdhu provriti vhasay tar dakhol chilo	ইংরেজি আরবি ফার্সি ও উর্দু প্রভৃতি ভাষায় তার দখল ছিল
+jonnager baire thot o talu mukh ston ebong angul	জননাঙ্গের বাইরে ঠোঁট ও তালু মুখ স্তন এবং আঙ্গুল
+muktijuddho shuru hole jhapiye poren juddhe	মুক্তিযুদ্ধ শুরু হলে ঝাঁপিয়ে পড়েন যুদ্ধে
+seshomoy tini prothomik bidyaloy tournamente bongobundhu gold cup a khelechilen	সেসময় তিনি প্রাথমিক বিদ্যালয় টুর্নামেন্ট বঙ্গবন্ধু গোল্ড কাপ এ খেলেছিলেন
+kakhono kakhono uttorodhikar sutre ekti bishesh khomota hishebe jadukori khomota labh koren	কখনো কখনো উত্তরাধিকার সূত্রে একটি বিশেষ ক্ষমতা হিসেবে যাদুকরী ক্ষমতা লাভ করেন
+jonmejoy kruddho hoye indroshoho tokkhokke ognite nikkhep korte nirdesh den	জন্মেজয় ক্রদ্ধ হয়ে ইন্দ্রসহ তক্ষককে অগ্নিতে নিক্ষেপ করতে নির্দেশ দেন
+tini karnatak bidhansabhar akjon muslim rajneetibid	তিনি কর্ণাটক বিধানসভার একজন মুসলিম রাজনীতিবিদ
+saal theke eke char bachor meyadi kora hoy	সাল থেকে একে চার বছর মেয়াদী করা হয়
+kachua thana naame bangladeshe duti thana royeche	কচুয়া থানা নামে বাংলাদেশে দুইটি থানা রয়েছে
+ars infusa onupranito shilpo	আর্স ইনফিউসা অনুপ্রাণিত শিল্প
+koyekjon biplobi punoray songothito hoy	কয়েকজন বিপ্লবী পুনরায় সংগঠিত হয়
+daliyo sangider tulonay pingal fashion sachetan o shongeeter dike prabal agroho royeche	দলীয় সঙ্গীদের তুলনায় প্রিঙ্গল ফ্যাশন সচেতন ও সঙ্গীতের দিকে প্রবল আগ্রহ রয়েছে
+degree stor theke snatok somman porjaye uninoto kora	ডিগ্রী স্তর থেকে স্নাতক সম্মান পর্যায়ে উনীণত করা
+ei durghatona aaj porjonto bimoncholonar itihaase shobcheye baro durghotona hishebe bibechito hoy	এই দুর্ঘটনা আজ পর্যন্ত বিমানচালনার ইতিহাসে সবচেয়ে বড় দুর্ঘটনা হিসেবে বিবেচিত হয়
+saale estambuler sent trinity girjai prothom ai smoron dibos palon kora hoy	সালে ইস্তানবুলের সেন্ট ট্রিনিটি গীর্জায় প্রথম এই স্মরণ দিবস পালন করা হয়
+eti jela sadar theke matro km dure obosthit	এটি জেলা সদর থেকে মাত্র কিঃমিঃ দূরে অবস্থিত
+lokjoner dristhi eranor jonno tarighari kore charam pulke pochaner tagid	লোকজনের দৃষ্টি এড়ানোর জন্য তড়িঘড়ি করে চরম পুলকে পৌঁছানোর তাগিদ
+echara pakistan bharot nepal myanmar thailand malyasia indonesiateo pawa jay	এছাড়া পাকিস্তান ভারত নেপাল মায়ানমার থাইল্যান্ড মালয়েশিয়া ইন্দোনেশিয়াতেও পাওয়া যায়
+prokretopokkhe saal hote swadhinota porjonto jonab farhaader huliya thake	প্রকৃতপক্ষে সাল হতে স্বাধীনতা পর্যন্ত জনাব ফরহাদের হুলিয়া থাকে
+e shilper bohumatrikotar karone bivinno porjaye arthonoitik kormokander somvobana toiri hoy	এ শিল্পের বহুমাত্রিকতার কারণে বিভিন্ন পর্যায়ে অর্থনৈতিক কর্মকাণ্ডের সম্ভাবনা তৈরি হয়
+bifaciculer block holo ek dhoroner hritpinder raktasongbahanghatito ashabhabikata	বাইফ্যাসিকুলার ব্লক হল এক ধরণের হৃৎপিণ্ডের রক্তসংবহনঘটিত অস্বাভাবিকতা
+ekti saarir atyanto guruttwopurno ekti boishishto holo obhisriti	একটি সারির অত্যন্ত গুরুত্বপূর্ণ একটি বৈশিষ্ট্য হল অভিসৃতি
+prodhan sangrai bartomane engreji calender anusare apriler tarikhei palon kora hoy	প্রধান সাংগ্রাই বর্তমানে ইংরেজি ক্যালেন্ডার অনুসারে এপ্রিলের তারিখেই পালন করা হয়
+parabartite pariser kachakachi mewdone stree sahajoge bosobas koren	পরবর্তীতে প্যারিসের কাছাকাছি মিউডনে স্ত্রী সহযোগে বসবাস করেন
+ei biplobider netritwe chilen mastarda surjosen	এই বিপ্লবীদের নেতৃত্বে ছিলেন মাষ্টারদা সূর্য্যসেন
+isusuf estate chrishto dharmo chere islam dharmo grohonkari american nagorik	ইউসুফ এস্টেস খ্রিস্ট ধর্ম ছেড়ে ইসলাম ধর্ম গ্রহণকারী আমেরিকান নাগরিক
+m b a regular	এম বি এ রেগুলার
+era takhon bicchinobhabe banglar nana sthane ghati baniye luthpaat chalato	এরা তখন বিচ্ছিন্নভাবে বাংলার নানা স্থানে ঘাঁটি বানিয়ে লুঠপাট চালাত
+jar fole europiyo bazare ei boigulir saffolyo majhe majhe byahoto hoy	যার ফলে ইউরোপীয় বাজারে এই বইগুলির সাফল্য মাঝে মাঝে ব্যাহত হয়
+pakistani senar asar agei gopone tara obosthan nilen nodir epare	পাকিস্তানি সেনারা আসার আগেই গোপনে তাঁরা অবস্থান নিলেন নদীর এপারে
+chobiti pratim d gupta porichalona koren	ছবিটি প্রতীম ডি গুপ্তা পরিচালনা করেন
+shanti stuper naksha enkechilen m	শান্তি স্তুপের নকশা এঁকেছিলেন এম
+marma gramer ginnira sangrai niye nana porikolpona korte thake	মারমা গ্রামের গিন্নীরা সাংগ্রাই নিয়ে নানা পরিকল্পনা করতে থাকে
+saaler decemberer majhamajhi somoye sorbosesh century hakan	সালের ডিসেম্বরের মাঝামাঝি সময়ে সর্বশেষ সেঞ্চুরি হাঁকান
+tini tar rajnoitik kormakander jonno proshiddho	তিনি তার রাজনৈতিক কর্মকান্ডের জন্য প্রসিদ্ধ
+modacchir hussain jonmo march bangladesher akjon prokhyato ainbid ebong tomo prodhan bicharpoti	মোদাচ্ছির হোসেন জন্ম মার্চ বাংলাদেশের একজন প্রখ্যাত আইনবিদ এবং তম প্রধান বিচারপতি
+ei tin cha masta holen eisai senji moye soin senno yiku	এই তিন চা মাষ্টা হলেন এইসাই সেনজি ম্যোয়ে সোয়িন সেননো র্যিকু
+ramendu majumdar khatyiman bangladeshi abhineta moncho nirdeshok nirmata	রামেন্দু মজুমদার খ্যাতিমান বাংলাদেশী অভিনেতা মঞ্চ নির্দেশক নির্মাতা

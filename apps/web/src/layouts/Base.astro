@@ -17,6 +17,11 @@ interface Props {
   nastaliq?: boolean;
   /** Keep the page out of search results (utility pages such as /share). */
   noindex?: boolean;
+  /**
+   * Sources of the word list the page's language uses, credited in the footer: its Wikipedia
+   * (name and subdomain) and, for Hindi, Bangla and Sindhi chat spellings, Dakshina.
+   */
+  credits?: { wikipedia?: { name: string; code: string }; dakshina?: boolean };
 }
 
 const {
@@ -25,6 +30,7 @@ const {
   lang = "en",
   nastaliq = true,
   noindex = false,
+  credits = { wikipedia: { name: "Urdu", code: "ur" } },
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -124,17 +130,25 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
             Works offline.
           </span>
         </p>
-        <p>
-          Word suggestions use a word list built from
-          <a class="underline" href="https://ur.wikipedia.org/">
-            Urdu Wikipedia
-          </a>
-          (
-          <a class="underline" href="https://creativecommons.org/licenses/by-sa/4.0/">
-            CC BY-SA 4.0
-          </a>
-          ).
-        </p>
+        {credits.wikipedia && (
+          <p>
+            {"Word suggestions use a word list built from "}
+            <a class="underline" href={`https://${credits.wikipedia.code}.wikipedia.org/`}>
+              {`${credits.wikipedia.name} Wikipedia`}
+            </a>
+            {credits.dakshina && " and chat spellings from the "}
+            {credits.dakshina && (
+              <a class="underline" href="https://github.com/google-research-datasets/dakshina">
+                Dakshina dataset (Google Research)
+              </a>
+            )}
+            {" ("}
+            <a class="underline" href="https://creativecommons.org/licenses/by-sa/4.0/">
+              CC BY-SA 4.0
+            </a>
+            {")."}
+          </p>
+        )}
       </div>
     </footer>
     {import.meta.env.PROD && <script is:inline>

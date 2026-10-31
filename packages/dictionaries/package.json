@@ -6,13 +6,19 @@
   "description": "Corpus pipeline and the word lists it builds (frequency-ranked words, next-word table).",
   "exports": {
     "./ur/words.txt": "./data/ur/words.txt",
-    "./ur/next.txt": "./data/ur/next.txt"
+    "./*/dict.txt": "./data/*/dict.txt",
+    "./results/*.json": "./results/*.json",
+    "./*/chat.tsv": "./data/*/chat.tsv"
   },
   "scripts": {
-    "build:ur": "node src/build.ts",
+    "build:words": "node src/build.ts",
+    "build:ur": "node src/build.ts --lang ur",
     "eval:ur": "EVAL_VERBOSE=1 vitest run test/roman-eval.test.ts",
     "test": "vitest run",
-    "typecheck": "tsc -p tsconfig.json"
+    "typecheck": "tsc -p tsconfig.json",
+    "eval": "EVAL_VERBOSE=1 vitest run test/roman-langs.test.ts",
+    "compact": "node src/compact.ts",
+    "chat-words": "node src/chat-words.ts"
   },
   "dependencies": {
     "@okb/engine": "workspace:*",

@@ -1,0 +1,11 @@
+{
+  "scheme": "skr-roman",
+  "source": "Likho set, not yet reviewed by a native speaker",
+  "pairs": 124,
+  "top1": 0.71,
+  "top5": 0.935,
+  "messageWords": 64,
+  "correctionsPer10Words": 2.03,
+  "beta": true,
+  "smallSet": true
+}

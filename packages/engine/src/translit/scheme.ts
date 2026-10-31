@@ -28,6 +28,21 @@ export interface TranslitScheme {
   lang: string;
   /** Latin letters treated as vowels by `prev`/`next`. */
   vowels: string;
+  /**
+   * Characters besides a–z and the apostrophe that belong to a Roman word, such as the
+   * digits of the Arabic chat alphabet (`3` for ع, `7` for ح). A word still needs a letter.
+   */
+  letters?: string;
+  /**
+   * Extra cost of spelling a doubled Latin consonant ("pakka") as two letters. Default 0.5:
+   * Urdu writes it once. Hindi and Bangla write both (with a virama), so they use 0.
+   */
+  doubledCost?: number;
+  /**
+   * Extra cost of reading a consonant on its own when it starts an h digraph the scheme has
+   * ("khana" as k + h, کہنا, rather than kh, کھانا). Default 0.
+   */
+  splitCost?: number;
   rules: readonly TranslitRule[];
   /**
    * Letters a hurried spelling may leave out ("bht" for بہت, "mn" for میں), in the same

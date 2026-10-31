@@ -1,0 +1,11 @@
+{
+  "scheme": "ks-roman",
+  "source": "Likho set, not yet reviewed by a native speaker",
+  "pairs": 81,
+  "top1": 0.617,
+  "top5": 0.802,
+  "messageWords": 59,
+  "correctionsPer10Words": 4.07,
+  "beta": true,
+  "smallSet": true
+}

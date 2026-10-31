@@ -1,5 +1,5 @@
 import { LANGUAGES, getLayout, layoutSlug, type Language } from "@okb/layouts";
-import { copyFor } from "../../content/languages";
+import { romanFor } from "../../content/roman";
 
 /** A printable one-page chart of a layout: its keys, or for Roman typing the spelling guide. */
 export interface Sheet {
@@ -14,7 +14,7 @@ export function allSheets(): Sheet[] {
   return LANGUAGES.flatMap((language) =>
     language.layouts.flatMap((layoutId): Sheet[] => {
       const roman = !!getLayout(layoutId).translit;
-      if (roman && !copyFor(language.slug).romanGuide) return [];
+      if (roman && !romanFor(layoutId)) return [];
       const id = `${language.slug}-${layoutSlug(layoutId)}`;
       return [{ id, language, layoutId, kind: roman ? "roman" : "keys" }];
     }),

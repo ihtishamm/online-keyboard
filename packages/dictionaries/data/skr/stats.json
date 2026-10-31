@@ -1,0 +1,10 @@
+{
+  "source": "skrwiki-latest-pages-articles.xml.bz2",
+  "pages": 25059,
+  "sentences": 565700,
+  "repeatedSentencesSkipped": 98498,
+  "tokens": 8934098,
+  "distinctWords": 190999,
+  "wordsKept": 70705,
+  "nextWordHeads": 9977
+}

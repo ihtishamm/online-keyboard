@@ -1,0 +1,11 @@
+{
+  "scheme": "bal-roman",
+  "source": "Likho set, not yet reviewed by a native speaker",
+  "pairs": 81,
+  "top1": 0.531,
+  "top5": 0.79,
+  "messageWords": 64,
+  "correctionsPer10Words": 4.38,
+  "beta": true,
+  "smallSet": true
+}

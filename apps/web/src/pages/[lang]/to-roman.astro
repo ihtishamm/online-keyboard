@@ -1,0 +1,84 @@
+---
+import "@fontsource/noto-naskh-arabic/400.css";
+import "@fontsource/noto-nastaliq-urdu/400.css";
+import "@fontsource/noto-sans-bengali/400.css";
+import "@fontsource/noto-sans-devanagari/400.css";
+import { LANGUAGES, getLayout, languageBundle, type Language } from "@okb/layouts";
+import { FONT_CLASS } from "../../components/fonts";
+import RomanizeTool from "../../components/tools/RomanizeTool";
+import Base from "../../layouts/Base.astro";
+import { creditsFor } from "../../content/credits";
+import { SITE } from "../../config/site";
+
+// Script → English letters for every language with a Roman scheme (plan item 6.5).
+export function getStaticPaths() {
+  return LANGUAGES.filter((l) => l.layouts.some((id) => getLayout(id).translit)).map(
+    (language) => ({ params: { lang: language.slug }, props: { language } }),
+  );
+}
+
+interface Props {
+  language: Language;
+}
+const { language } = Astro.props;
+const name = language.name.en;
+
+/** Page names people search for. */
+const HEADINGS: Record<string, string> = {
+  urdu: "Urdu to Roman Urdu Converter",
+  hindi: "Hindi to English Letters Converter",
+  bangla: "Bangla to English Letters Converter",
+  arabic: "Arabic to English Letters (Arabizi) Converter",
+  farsi: "Persian to Finglish Converter",
+};
+const heading = HEADINGS[language.slug] ?? `${name} to Roman ${name} Converter`;
+const title = `${heading}: ${name} Script in English Letters | ${SITE.name}`;
+const description = `Turn ${name} script into English letters, in the chat spelling people text with or in scholarly romanisation. Free, and your text never leaves your device.`;
+
+const bundle = languageBundle(language.slug);
+const romanId = language.layouts.find((id) => getLayout(id).translit)!;
+const scheme = bundle.schemes[getLayout(romanId).translit!]!;
+const romanPage = romanId === language.layouts[0] ? `/${language.slug}` : `/${language.slug}/roman`;
+const font = FONT_CLASS[language.fonts[0]!];
+const dakshina = ["hi", "bn", "sd"].includes(language.code);
+---
+
+<Base
+  title={title}
+  description={description}
+  nastaliq={language.fonts.includes("nastaliq")}
+  credits={creditsFor(language)}
+>
+  <h1 class="mb-2 text-2xl font-semibold tracking-tight sm:text-3xl">{heading}</h1>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Paste {name} text to read or share it in English letters. Chat style spells words the way people
+    text them; scholarly style keeps every letter. Everything happens on your device.
+  </p>
+
+  <RomanizeTool
+    client:idle={{ timeout: 500 }}
+    code={language.code}
+    lang={language.lang}
+    dir={language.dir}
+    font={font}
+    languageName={name}
+    scheme={scheme}
+    placeholder={language.sample}
+  />
+
+  <section class="below-fold mt-10 max-w-3xl space-y-3 text-sm">
+    <p>
+      Going the other way? Type {name} in English letters on the{" "}
+      <a class="text-accent underline" href={romanPage}>
+        Roman {name} keyboard
+      </a>
+      .
+    </p>
+    <p class="text-muted">
+      Chat spellings come from{" "}
+      {dakshina ? "the Dakshina dataset (Google Research, CC BY-SA 4.0)" : "our own word sets"}
+      and from the Roman keyboard's word list. They are a guide to the usual spelling, not the only
+      right one.
+    </p>
+  </section>
+</Base>

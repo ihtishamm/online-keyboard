@@ -26,6 +26,8 @@ export interface Misspelling {
 }
 
 export interface SpellingRules {
+  /** Unicode script of the words checked (others, such as English, are skipped). */
+  script?: "Arabic" | "Devanagari" | "Bengali";
   /** Map a written word to its dictionary form. */
   key: (word: string) => string;
   /** Groups of letters that sound alike or sit on the same key: swapping them costs little. */
@@ -91,15 +93,19 @@ const OPTIONAL_INDEL = 0.4;
 const TRANSPOSE = 0.8;
 
 /**
- * An Arabic-script word: letters and marks, plus joiners and bidi marks inside it. Digits and
- * punctuation (۔ ، ؟ ٪) end it.
+ * A word of the script: letters and marks, plus joiners and bidi marks inside it. Digits and
+ * punctuation (۔ ، ؟ ٪ ।) end it.
  */
-const WORD_CHAR = "(?:(?=[\\p{L}\\p{M}\\p{Cf}])[\\p{Script=Arabic}\\p{Cf}])";
-const WORD = new RegExp(`${WORD_CHAR}+`, "gu");
-const IS_WORD_CHAR = new RegExp(`^${WORD_CHAR}$`, "u");
+function scriptRegexes(script: string) {
+  const char = `(?:(?=[\\p{L}\\p{M}\\p{Cf}])[\\p{Script=${script}}\\p{Cf}])`;
+  return {
+    word: new RegExp(`${char}+`, "gu"),
+    isChar: new RegExp(`^${char}$`, "u"),
+    /** Only words made of the script's letters (and marks) are checked. */
+    checked: new RegExp(`^(?=\\p{L})(?:(?=[\\p{L}\\p{M}])\\p{Script=${script}})+$`, "u"),
+  };
+}
 const EDGE_FORMAT = /^\p{Cf}+|\p{Cf}+$/gu;
-/** Only words made of Arabic-script letters are checked. */
-const ARABIC_WORD = /^(?:(?=\p{L})\p{Script=Arabic})+$/u;
 
 /**
  * Rare words (beyond this rank) that sit one cheap edit away from a word this many times
@@ -131,6 +137,7 @@ export class SpellChecker {
   private readonly nonJoining: Set<string>;
   private readonly cache = new Map<string, boolean>();
   private readonly personal = new Set<string>();
+  private readonly re: ReturnType<typeof scriptRegexes>;
 
   constructor(
     private readonly lexicon: Lexicon,
@@ -153,6 +160,7 @@ export class SpellChecker {
     for (const c of rules.weak) this.indels.set(c.charCodeAt(0), WEAK_INDEL);
     for (const c of rules.optional) this.indels.set(c.charCodeAt(0), OPTIONAL_INDEL);
     this.nonJoining = new Set(rules.nonJoining);
+    this.re = scriptRegexes(rules.script ?? "Arabic");
     this.subCost = (a, b) => (a === b ? 0 : (this.sub.get(pair(a, b)) ?? 1));
   }
 
@@ -175,7 +183,7 @@ export class SpellChecker {
     let ok = this.cache.get(word);
     if (ok === undefined) {
       const key = this.rules.key(word);
-      ok = [...key].length < 2 || !ARABIC_WORD.test(key) || this.known(key);
+      ok = [...key].length < 2 || !this.re.checked.test(key) || this.known(key);
       this.cache.set(word, ok);
     }
     return ok;
@@ -220,7 +228,7 @@ export class SpellChecker {
   /** Every misspelled word in `text`, in order. Skips the word ending at `skipAt` (being typed). */
   misspellings(text: string, skipAt = -1): Misspelling[] {
     const out: Misspelling[] = [];
-    for (const m of text.matchAll(WORD)) {
+    for (const m of text.matchAll(this.re.word)) {
       const found = this.at(text, m.index, m.index + m[0].length);
       if (found && found.end !== skipAt) out.push(found);
     }
@@ -231,8 +239,8 @@ export class SpellChecker {
   misspellingAt(text: string, caret: number): Misspelling | null {
     let start = caret;
     let end = caret;
-    while (start > 0 && IS_WORD_CHAR.test(text[start - 1]!)) start--;
-    while (end < text.length && IS_WORD_CHAR.test(text[end]!)) end++;
+    while (start > 0 && this.re.isChar.test(text[start - 1]!)) start--;
+    while (end < text.length && this.re.isChar.test(text[end]!)) end++;
     return start < end ? this.at(text, start, end) : null;
   }
 
@@ -244,8 +252,36 @@ export class SpellChecker {
     return { start, end: start + word.length, word };
   }
 
+  /**
+   * The correction to make on Space, or null: only for a misspelled word whose best
+   * suggestion clearly beats the next one (by `margin` in score).
+   */
+  autocorrect(word: string, margin = 1.5): string | null {
+    if (this.check(word)) return null;
+    const [best, next] = this.scored(word);
+    if (!best || best.word.includes(" ")) return null;
+    return !next || next.score - best.score >= margin ? best.word : null;
+  }
+
+  /**
+   * Two words that belong together, split by a stray space (کیو نکہ): their join when it is a
+   * common word and either half is misspelled on its own. Null otherwise.
+   */
+  join(first: string, second: string): string | null {
+    if (this.check(first) && this.check(second)) return null;
+    const joined = this.rules.key(first) + this.rules.key(second);
+    return this.common(joined) ? joined : null;
+  }
+
   /** Likely corrections for `word`, best first. */
   suggest(word: string, limit = 6): string[] {
+    return this.scored(word)
+      .slice(0, limit)
+      .map((s) => s.word);
+  }
+
+  /** Corrections for `word` with their scores (lower is better), best first. */
+  private scored(word: string): { word: string; score: number }[] {
     const key = this.rules.key(word);
     const length = [...key].length;
     const max = length <= 3 ? 1 : length <= 6 ? 1.5 : 2;
@@ -258,11 +294,10 @@ export class SpellChecker {
       const rank = Math.max(this.lexicon.rank(pair[0]), this.lexicon.rank(pair[1]));
       scored.push({ word: pair.join(" "), score: score(WEAK_INDEL, rank) });
     }
-    const words = scored
+    const seen = new Set<string>([key]);
+    return scored
       .sort((a, b) => a.score - b.score)
-      .map((s) => s.word)
-      .filter((w) => w !== key);
-    return [...new Set(words)].slice(0, limit);
+      .filter((s) => !seen.has(s.word) && seen.add(s.word));
   }
 
   /** Dictionary words within `max` edit cost of `key`, cheapest (then commonest) first. */

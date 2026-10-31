@@ -1,0 +1,10 @@
+{
+  "source": "sdwiki-latest-pages-articles.xml.bz2",
+  "pages": 23040,
+  "sentences": 521772,
+  "repeatedSentencesSkipped": 44547,
+  "tokens": 9002127,
+  "distinctWords": 187715,
+  "wordsKept": 66700,
+  "nextWordHeads": 9963
+}

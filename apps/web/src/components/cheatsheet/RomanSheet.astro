@@ -1,6 +1,6 @@
 ---
 import { getLayout } from "@okb/layouts";
-import { copyFor } from "../../content/languages";
+import { romanFor } from "../../content/roman";
 import { FONT_CLASS } from "../fonts";
 import SheetFrame from "./SheetFrame.astro";
 import type { Sheet } from "./sheets";
@@ -13,12 +13,12 @@ interface Props {
 const { sheet, link } = Astro.props;
 const { language } = sheet;
 const layout = getLayout(sheet.layoutId);
-const rows = copyFor(language.slug).romanGuide ?? [];
+const roman = romanFor(sheet.layoutId)!;
+const rows = roman.guide;
 const script = FONT_CLASS[language.fonts[0]!];
 // Two columns, filled top to bottom.
 const half = Math.ceil(rows.length / 2);
 const columns = [rows.slice(0, half), rows.slice(half)];
-const example = "بہت";
 ---
 
 <SheetFrame
@@ -31,11 +31,21 @@ const example = "بہت";
 >
   <p class="how">
     Type words as they sound in English letters and press <b>Space</b>: each word turns into{" "}
-    {language.name.en} script. Vowels can be left out: <span class="roman">bht</span> becomes{" "}
-    <span class={script} lang={language.lang}>
-      {example}
+    {language.name.en} script, such as <span class="roman">{roman.example[0]}</span>{" "}
+    <span class={script} lang={language.lang} dir={language.dir}>
+      {roman.example[1]}
     </span>
-    . If a word comes out wrong, pick another spelling from the bar under the editor, or press{" "}
+    .{" "}
+    {roman.short && (
+      <>
+        Vowels can be left out: <span class="roman">{roman.short[0]}</span> becomes{" "}
+        <span class={script} lang={language.lang} dir={language.dir}>
+          {roman.short[1]}
+        </span>
+        .{" "}
+      </>
+    )}
+    If a word comes out wrong, pick another spelling from the bar under the editor, or press{" "}
     <b>Esc</b> to keep it in English.
   </p>
   <div class="columns">
@@ -52,16 +62,16 @@ const example = "بہت";
           {column.map((row) => (
             <tr>
               <td class="roman">{row.roman}</td>
-              <td class:list={["letters", script]} lang={language.lang} dir="rtl">
-                {row.urdu}
+              <td class:list={["letters", script]} lang={language.lang} dir={language.dir}>
+                {row.script}
               </td>
               <td>
-                {row.examples.map(([roman, urdu], i) => (
+                {row.examples.map(([typed, written], i) => (
                   <>
                     {i > 0 && <span class="sep"> · </span>}
-                    <span class="roman">{roman}</span>{" "}
-                    <span class={script} lang={language.lang}>
-                      {urdu}
+                    <span class="roman">{typed}</span>{" "}
+                    <span class={script} lang={language.lang} dir={language.dir}>
+                      {written}
                     </span>
                   </>
                 ))}

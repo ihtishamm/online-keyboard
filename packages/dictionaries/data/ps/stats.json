@@ -1,0 +1,10 @@
+{
+  "source": "pswiki-latest-pages-articles.xml.bz2",
+  "pages": 23433,
+  "sentences": 551606,
+  "repeatedSentencesSkipped": 41721,
+  "tokens": 13290061,
+  "distinctWords": 349754,
+  "wordsKept": 100000,
+  "nextWordHeads": 9991
+}
