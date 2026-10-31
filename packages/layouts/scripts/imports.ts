@@ -12,6 +12,7 @@ import {
   importCldr,
   importKeyman,
   type KeyCode,
+  type DeadKey,
   type KeyDef,
   type LayoutInput,
 } from "@okb/engine/layout";
@@ -227,10 +228,8 @@ export const IMPORTS: readonly ImportSpec[] = [
       script: "Arab",
       dir: "rtl",
       name: { en: "Phonetic", native: "صوتی" },
-      source:
-        "Keyman Kashmiri Phonetic 1.0.2 by SIL Global (MIT). The number row types ۱۲۳ directly (upstream converts digits with a context rule).",
+      source: "Keyman Kashmiri Phonetic 1.0.2 by SIL Global (MIT).",
     },
-    patch: persoArabicDigits,
   },
 ];
 
@@ -266,6 +265,7 @@ export function buildImport(spec: ImportSpec, sourceText: string): ImportResult 
       ? importCldr(sourceText)
       : importKeyman(sourceText, { ctrlAsAltGr: spec.from.ctrlAsAltGr ?? false });
   const keys = imported.keys;
+  const deadkeys = "deadkeys" in imported ? (imported.deadkeys as DeadKey[]) : [];
   spec.patch?.(keys);
   for (const def of Object.values(keys)) {
     for (const layer of ["n", "s", "ag", "sag"] as const) {
@@ -276,7 +276,12 @@ export function buildImport(spec: ImportSpec, sourceText: string): ImportResult 
   const ordered: Keys = {};
   for (const code of Object.keys(keys).sort(byRow) as KeyCode[]) ordered[code] = keys[code];
   return {
-    layout: { ...spec.meta, keys: ordered, longpress: deriveLongpress(ordered) },
+    layout: {
+      ...spec.meta,
+      keys: ordered,
+      ...(deadkeys.length ? { deadkeys } : {}),
+      longpress: deriveLongpress(ordered),
+    },
     warnings: imported.warnings,
   };
 }

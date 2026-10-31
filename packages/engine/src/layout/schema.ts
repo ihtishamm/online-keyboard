@@ -16,6 +16,11 @@ export const keyDefSchema = z
     sag: z.string().optional(),
     /** How Caps Lock affects this key: "shift" swaps n/s (Latin letters), "none" ignores it. */
     caps: z.enum(["none", "shift"]).optional(),
+    /**
+     * Layers where this key types its character even though it is a dead-key trigger
+     * elsewhere: French AltGr+9 types ^, while the key right of P is a dead ^.
+     */
+    live: z.array(z.enum(["n", "s", "ag", "sag"])).optional(),
   })
   .strict();
 

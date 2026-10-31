@@ -6,6 +6,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
+import { importReport } from "../scripts/import-report";
 import { IMPORTS, buildImport } from "../scripts/imports";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -38,4 +39,14 @@ describe.each(IMPORTS.map((spec) => [spec.meta.id, spec] as const))("%s", (_id, 
     ).toBe(true);
     expect(JSON.parse(readFileSync(outPath, "utf8"))).toEqual(layout);
   });
+});
+
+it("IMPORTS.md is up to date", () => {
+  const path = join(ROOT, "IMPORTS.md");
+  const report = importReport(ROOT);
+  if (UPDATE) writeFileSync(path, report);
+  expect(
+    existsSync(path) ? readFileSync(path, "utf8") : "",
+    "run pnpm --filter @okb/layouts import:layouts",
+  ).toBe(report);
 });

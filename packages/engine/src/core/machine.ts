@@ -64,11 +64,17 @@ export class TypingMachine {
       if (!out) return { kind: "text", text: trigger };
       return { kind: "text", text: this.table.get(trigger + "\0" + out) ?? trigger + out };
     }
-    if (this.triggers.has(out)) {
+    if (this.triggers.has(out) && !this.isLive(code, mods)) {
       this.pending = out;
       return { kind: "dead", trigger: out };
     }
     return out ? { kind: "text", text: out } : { kind: "none" };
+  }
+
+  /** Does this key type its trigger character as is, on the layer in use? */
+  private isLive(code: KeyCode, mods: Modifiers): boolean {
+    const def = keyDefFor(this._layout, code);
+    return !!def?.live?.includes(layerFor(def, mods));
   }
 
   /** Text a key would produce right now, for drawing key caps. */

@@ -9,3 +9,4 @@ vendor/
 packages/emoji/data/
 packages/layouts/test/golden/
 LANGUAGES.md
+packages/layouts/IMPORTS.md

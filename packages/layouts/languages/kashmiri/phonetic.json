@@ -7,58 +7,58 @@
     "en": "Phonetic",
     "native": "صوتی"
   },
-  "source": "Keyman Kashmiri Phonetic 1.0.2 by SIL Global (MIT). The number row types ۱۲۳ directly (upstream converts digits with a context rule).",
+  "source": "Keyman Kashmiri Phonetic 1.0.2 by SIL Global (MIT).",
   "keys": {
     "Backquote": {
       "n": "\u0651",
       "s": "\u0653"
     },
     "Digit1": {
-      "s": "!",
-      "n": "۱"
+      "n": "۱",
+      "s": "!"
     },
     "Digit2": {
-      "s": "@",
-      "n": "۲"
+      "n": "۲",
+      "s": "@"
     },
     "Digit3": {
-      "s": "#",
-      "n": "۳"
+      "n": "۳",
+      "s": "#"
     },
     "Digit4": {
-      "s": "$",
-      "n": "۴"
+      "n": "۴",
+      "s": "$"
     },
     "Digit5": {
-      "s": "٪",
-      "n": "۵"
+      "n": "۵",
+      "s": "٪"
     },
     "Digit6": {
+      "n": "۶",
       "s": "ـ",
-      "ag": "؏",
-      "n": "۶"
+      "ag": "؏"
     },
     "Digit7": {
+      "n": "۷",
       "s": "\u034F",
-      "ag": "\u0614",
-      "n": "۷"
+      "ag": "\u0614"
     },
     "Digit8": {
+      "n": "۸",
       "s": "*",
-      "ag": "٭",
-      "n": "۸"
+      "ag": "٭"
     },
     "Digit9": {
+      "n": "۹",
       "s": "﴾",
       "ag": "\u0612",
-      "sag": "(",
-      "n": "۹"
+      "sag": "("
     },
     "Digit0": {
+      "n": "۰",
       "s": "﴿",
       "ag": "\u0613",
-      "sag": ")",
-      "n": "۰"
+      "sag": ")"
     },
     "Minus": {
       "n": "ٲ",

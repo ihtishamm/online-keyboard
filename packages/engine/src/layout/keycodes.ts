@@ -49,9 +49,16 @@ export const ROWS = [
   ],
 ] as const;
 
-export type KeyCode = (typeof ROWS)[number][number];
+/**
+ * Keys only some national boards have, kept out of ROWS so layouts without them draw as
+ * before: IntlRo (Brazilian ABNT2 and Japanese, right of the slash key) and IntlYen (Japanese,
+ * left of Backspace).
+ */
+export const EXTRA_KEYS = ["IntlRo", "IntlYen"] as const;
 
-export const KEY_CODES: readonly KeyCode[] = ROWS.flat();
+export type KeyCode = (typeof ROWS)[number][number] | (typeof EXTRA_KEYS)[number];
+
+export const KEY_CODES: readonly KeyCode[] = [...ROWS.flat(), ...EXTRA_KEYS];
 
 const KEY_CODE_SET: ReadonlySet<string> = new Set(KEY_CODES);
 
@@ -108,5 +115,8 @@ export const US_QWERTY: Readonly<Record<KeyCode, readonly [normal: string, shift
   KeyM: ["m", "M"],
   Comma: [",", "<"],
   Period: [".", ">"],
+  // US boards lack these keys; ABNT2 legends.
+  IntlRo: ["/", "?"],
+  IntlYen: ["\\", "|"],
   Slash: ["/", "?"],
 };

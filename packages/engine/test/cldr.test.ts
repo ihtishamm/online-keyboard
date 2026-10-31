@@ -68,12 +68,31 @@ describe("importCldr", () => {
     expect(result.warnings).toEqual([expect.stringMatching(/Z99/)]);
   });
 
-  it("warns that transforms need porting by hand", () => {
+  it("reports transforms it cannot express, never imports them wrongly", () => {
     const xml = XML.replace(
       "</keyboard>",
-      '<transforms type="simple"><transform from="a" to="b"/></transforms></keyboard>',
+      '<transforms type="simple"><transform from="a" to="b"/><transform from="xyz" to="w"/></transforms></keyboard>',
     );
-    expect(importCldr(xml).warnings).toContainEqual(expect.stringMatching(/transforms/));
+    const { deadkeys, warnings } = importCldr(xml);
+    expect(deadkeys).toEqual([]);
+    expect(warnings).toContainEqual(expect.stringMatching(/"a" -> "b" not imported/));
+    expect(warnings).toContainEqual(expect.stringMatching(/"xyz"/));
+  });
+
+  it("imports dead keys from simple transforms, and keys marked transform=no as live", () => {
+    const xml = `<keyboard locale="fr-t-k0-windows"><names><name value="French"/></names>
+      <keyMap><map iso="D12" to="^"/><map iso="D01" to="a"/><map iso="B11" to="/"/></keyMap>
+      <keyMap modifiers="altR"><map iso="E09" to="^" transform="no"/></keyMap>
+      <transforms type="simple">
+        <transform from="^ " to="^"/>
+        <transform from="^a" to="â"/>
+        <transform from="~n" to="ñ"/>
+      </transforms></keyboard>`;
+    const { keys, deadkeys, warnings } = importCldr(xml);
+    expect(deadkeys).toEqual([{ trigger: "^", base: "a", out: "â" }]);
+    expect(keys.Digit9).toEqual({ ag: "^", live: ["ag"] });
+    expect(keys.IntlRo).toEqual({ n: "/" });
+    expect(warnings).toContainEqual(expect.stringMatching(/no key types "~"/));
   });
 
   it("produces keys that validate against the layout schema", () => {

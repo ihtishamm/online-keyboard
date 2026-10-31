@@ -73,4 +73,53 @@ describe("importKeyman", () => {
     });
     expect(Object.keys(layout.keys)).toHaveLength(5);
   });
+
+  describe("stores, any() and dead keys", () => {
+    const STORES = `
+store(&NAME) 'Stores'
+store(nums) '1234'
+store(digits) U+0661 .. U+0664
+store(vk) [RALT K_Q] [RALT K_W]
+store(two) U+0661 U+0662
+store(acc) U+00E2 U+00EA
+store(base) 'ae'
+store(ign) '[]'
+group(main) using keys
++ any(nums) > index(digits, 1)
++ any(vk) > index(two, 1)
++ any(ign) > nul
++ 'a' > 'a'
++ 'e' > 'e'
++ [K_6] > dk(circ)
+dk(circ) + any(base) > index(acc, 2)
+dk(circ) + [K_SPACE] > '^'
++ [K_7] > deadkey(lost)
+deadkey(lost) + 'a' > U+00E0
+'x' + 'y' > 'z'
+`;
+    const r = importKeyman(STORES);
+
+    it("expands ranges and maps any() to index()", () => {
+      expect(r.keys.Digit1).toEqual({ n: "\u0661" });
+      expect(r.keys.Digit4).toEqual({ n: "\u0664" });
+      expect(r.keys.KeyQ).toEqual({ ag: "\u0661" });
+      expect(r.keys.KeyW).toEqual({ ag: "\u0662" });
+      expect(r.keys.BracketLeft).toBeUndefined();
+    });
+
+    it("turns dead keys with a spacing form into triggers", () => {
+      expect(r.keys.Digit6).toEqual({ n: "^" });
+      expect(r.deadkeys).toEqual([
+        { trigger: "^", base: "a", out: "\u00E2" },
+        { trigger: "^", base: "e", out: "\u00EA" },
+      ]);
+    });
+
+    it("reports what it cannot express", () => {
+      expect(r.keys.Digit7).toBeUndefined();
+      expect(r.warnings.some((w) => /lost has no single spacing/.test(w))).toBe(true);
+      expect(r.warnings.some((w) => /context/.test(w) && /'x' \+ 'y'/.test(w))).toBe(true);
+      expect(r.warnings).toHaveLength(2);
+    });
+  });
 });

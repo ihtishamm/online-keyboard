@@ -128,3 +128,25 @@ describe("keystrokeMap", () => {
     expect(map.get("ê")).toBeUndefined();
   });
 });
+
+describe("live keys", () => {
+  it("types a trigger character as is on a layer marked live", () => {
+    const layout = parseLayout({
+      id: "xx-live",
+      lang: "xx",
+      script: "Latn",
+      dir: "ltr",
+      name: { en: "Live", native: "Live" },
+      source: "test",
+      keys: { BracketLeft: { n: "^" }, Digit9: { ag: "^", live: ["ag"] }, KeyA: { n: "a" } },
+      deadkeys: [{ trigger: "^", base: "a", out: "â" }],
+    });
+    const m = new TypingMachine(layout);
+    expect(m.press("BracketLeft", NO_MODIFIERS)).toEqual({ kind: "dead", trigger: "^" });
+    expect(m.press("KeyA", NO_MODIFIERS)).toEqual({ kind: "text", text: "â" });
+    expect(m.press("Digit9", { ...NO_MODIFIERS, altgr: true })).toEqual({
+      kind: "text",
+      text: "^",
+    });
+  });
+});

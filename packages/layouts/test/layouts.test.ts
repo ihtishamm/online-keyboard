@@ -19,7 +19,8 @@ const URDU_MARKS = ["\u064E", "\u0650", "\u064F", "\u064B", "\u0651", "\u0652", 
 
 const US_TO_CODE = new Map<string, [KeyCode, boolean]>();
 for (const [code, [n, s]] of Object.entries(US_QWERTY) as [KeyCode, readonly string[]][]) {
-  if (code === "IntlBackslash") continue;
+  // These duplicate the legends of Backslash and Slash.
+  if (code === "IntlBackslash" || code === "IntlRo" || code === "IntlYen") continue;
   US_TO_CODE.set(n!, [code, false]);
   US_TO_CODE.set(s!, [code, true]);
 }

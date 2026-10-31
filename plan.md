@@ -424,12 +424,12 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
   - [ ] A script registry: ISO 15924 code → font stack (Noto, through fontsource), direction, digits, punctuation, whether the script has case, and whether letters join.
   - [ ] **No-tofu test:** every character any layout can type must be in the page's font. Read the font's cmap at build time.
   - [ ] Only the page's script fonts load, subset with `unicode-range`.
-- [ ] **7.3 Importers at scale.**
-  - [ ] CLDR 43 keyboards for every Windows layout we need.
-  - [ ] The Keyman importer covers more of `.kmn`: stores with `any`/`index`, contexts, more deadkey forms. Layouts it can't express are **reported, never imported wrongly**.
-  - [ ] Evaluate xkeyboard-config (X11 layouts) as a third source. Check its licence per file.
-  - [ ] Add the ABNT2 (`IntlRo`) and JIS (`IntlYen`) keys to `keycodes.ts`.
-  - [ ] An import report for each layout: source, licence, coverage and our changes.
+- [x] **7.3 Importers at scale.**
+  - [x] CLDR 43 keyboards for every Windows layout we need. 26 Latin keyboards vendored (French, Belgian, Swiss, German, Spanish, Latin American, Italian, Portuguese PT/ABNT/ABNT2, Turkish Q/F, Polish 214/Programmers, Czech, Hungarian, Romanian, Nordic, Dutch, US-International); all import with no warnings. Dead keys import as `deadkeys` (two-character transforms); `transform="no"` layers are marked `live`, so the trigger types literally there.
+  - [x] The Keyman importer covers more of `.kmn`: stores (ranges, key lists), `any`/`index`, `nul`, `dk()`/`deadkey()` with a spacing form as the trigger. Other context rules and dead keys without a spacing form are **reported, never imported wrongly**. Existing imports unchanged; Kashmiri's digit patch is gone (the importer reads its `any(nums)` rule).
+  - [x] Evaluated xkeyboard-config: permissive MIT/HPND notices in the project `COPYING`, most `symbols/` files carry none of their own. Not used yet (CLDR covers every layout we need); recorded in `packages/layouts/IMPORTS.md`.
+  - [x] Added the ABNT2 (`IntlRo`) and JIS (`IntlYen`) keys to `keycodes.ts`.
+  - [x] An import report for each layout: `packages/layouts/IMPORTS.md` (source, licence, coverage, skipped rules, our changes computed from the patch), kept fresh by `test/imported.test.ts`.
 - [ ] **7.4 Language picker and look-up.**
   - [ ] **Searchable picker:**
     - finds English and native names plus aliases (Farsi/Persian, Bangla/Bengali);

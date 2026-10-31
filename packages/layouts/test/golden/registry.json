@@ -2610,7 +2610,7 @@
         "en": "Phonetic",
         "native": "صوتی"
       },
-      "source": "Keyman Kashmiri Phonetic 1.0.2 by SIL Global (MIT). The number row types ۱۲۳ directly (upstream converts digits with a context rule).",
+      "source": "Keyman Kashmiri Phonetic 1.0.2 by SIL Global (MIT).",
       "keys": {
         "Backquote": {
           "n": "ّ",
@@ -20307,7 +20307,7 @@
             "en": "Phonetic",
             "native": "صوتی"
           },
-          "source": "Keyman Kashmiri Phonetic 1.0.2 by SIL Global (MIT). The number row types ۱۲۳ directly (upstream converts digits with a context rule).",
+          "source": "Keyman Kashmiri Phonetic 1.0.2 by SIL Global (MIT).",
           "keys": {
             "Backquote": {
               "n": "ّ",
