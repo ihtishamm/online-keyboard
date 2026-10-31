@@ -1,0 +1,18 @@
+{
+  "slug": "kashmiri",
+  "code": "ks",
+  "order": 90,
+  "lang": "ks",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Kashmiri",
+    "native": "کٲشُر"
+  },
+  "fonts": ["nastaliq", "naskh"],
+  "layouts": ["ks-phonetic", "ks-roman"],
+  "sample": "کٲشُر زبان",
+  "voice": [],
+  "wordList": true,
+  "tier": null
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "farsi",
+  "code": "fa",
+  "order": 30,
+  "lang": "fa",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Farsi",
+    "native": "فارسی"
+  },
+  "fonts": ["naskh", "nastaliq"],
+  "layouts": ["fa-standard", "fa-roman"],
+  "sample": "فارسی شکر است.",
+  "voice": ["fa-IR"],
+  "wordList": true,
+  "tier": null
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "hindi",
+  "code": "hi",
+  "order": 100,
+  "lang": "hi",
+  "script": "Deva",
+  "dir": "ltr",
+  "name": {
+    "en": "Hindi",
+    "native": "हिन्दी"
+  },
+  "fonts": ["devanagari"],
+  "layouts": ["hi-roman", "hi-inscript"],
+  "sample": "हिन्दी हमारी भाषा है।",
+  "voice": ["hi-IN"],
+  "wordList": true,
+  "tier": null,
+  "notes": "English letters first: what most visitors search for (decision §11.1)."
+}

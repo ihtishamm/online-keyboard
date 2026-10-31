@@ -55,7 +55,7 @@ import { noteCopy, useInstallOffer } from "./install";
 import { track } from "../../analytics/track";
 import { useSuggestions } from "./useSuggestions";
 import { useVoiceTyping } from "./useVoiceTyping";
-import { dictationText, recognitionCtor, spaced, speechDialects, speechLang } from "./voice";
+import { dictationText, recognitionCtor, spaced, speechDialects } from "./voice";
 import VoicePanel from "./VoicePanel";
 import VirtualKeyboard, { type KeyAction } from "./VirtualKeyboard";
 
@@ -201,8 +201,9 @@ export default function KeyboardApp({
     if (savedAutocorrect) setAutocorrect(savedAutocorrect === "on");
     if (recognitionCtor()) {
       const saved = loadPreference(`voiceLang:${slug}`);
-      const known = speechDialects(slug).some(([tag]) => tag === saved);
-      setVoiceLang(known ? saved : speechLang(slug));
+      // Only locales that return this script are listed (language.json `voice`).
+      const locales = language.voice;
+      setVoiceLang(saved && locales.includes(saved) ? saved : (locales[0] ?? null));
     }
     const savedFont = loadPreference(`font:${slug}`) as FontId | null;
     if (savedFont && language.fonts.includes(savedFont)) setFont(savedFont);
@@ -756,9 +757,9 @@ export default function KeyboardApp({
           }}
           onStop={toggleVoice}
           dialects={
-            speechDialects(slug).length
+            speechDialects(language.voice).length
               ? {
-                  options: speechDialects(slug),
+                  options: speechDialects(language.voice),
                   value: voiceLang,
                   onChange: (tag) => {
                     savePreference(`voiceLang:${slug}`, tag);

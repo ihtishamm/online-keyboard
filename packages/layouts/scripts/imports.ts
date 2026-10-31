@@ -4,8 +4,8 @@
  * is written down here and in the layout's `source` field. All output is NFC-normalised
  * (e.g. Devanagari ग़ U+095A becomes ग + nukta), as text on the web should be.
  *
- * Regenerate data/ after editing: pnpm --filter @okb/layouts import:layouts
- * (test/imported.test.ts fails while data/ and this file disagree.)
+ * Regenerate languages/ after editing: pnpm --filter @okb/layouts import:layouts
+ * (test/imported.test.ts fails while languages/ and this file disagree.)
  */
 import {
   KEY_CODES,
@@ -19,7 +19,7 @@ import {
 type Keys = NonNullable<LayoutInput["keys"]>;
 
 export interface ImportSpec {
-  /** Output path under data/. */
+  /** Output path under languages/. */
   out: string;
   from: { cldr: string } | { keyman: string; ctrlAsAltGr?: boolean };
   meta: Omit<LayoutInput, "keys" | "longpress" | "deadkeys">;
@@ -41,7 +41,7 @@ const CLDR_NOTE = "Unicode CLDR 43 keyboard data (Unicode License v3)";
 
 export const IMPORTS: readonly ImportSpec[] = [
   {
-    out: "ar/standard.json",
+    out: "arabic/standard.json",
     from: { cldr: "cldr/ar-t-k0-windows.xml" },
     meta: {
       id: "ar-standard",
@@ -97,7 +97,7 @@ export const IMPORTS: readonly ImportSpec[] = [
     },
   },
   {
-    out: "fa/standard.json",
+    out: "farsi/standard.json",
     from: { cldr: "cldr/fa-t-k0-windows-extended.xml" },
     meta: {
       id: "fa-standard",
@@ -109,7 +109,7 @@ export const IMPORTS: readonly ImportSpec[] = [
     },
   },
   {
-    out: "ps/standard.json",
+    out: "pashto/standard.json",
     from: { cldr: "cldr/ps-t-k0-windows.xml" },
     meta: {
       id: "ps-standard",
@@ -121,7 +121,7 @@ export const IMPORTS: readonly ImportSpec[] = [
     },
   },
   {
-    out: "hi/inscript.json",
+    out: "hindi/inscript.json",
     from: { cldr: "cldr/hi-t-k0-windows.xml" },
     meta: {
       id: "hi-inscript",
@@ -138,7 +138,7 @@ export const IMPORTS: readonly ImportSpec[] = [
     },
   },
   {
-    out: "bn/inscript.json",
+    out: "bangla/inscript.json",
     from: { cldr: "cldr/bn-t-k0-windows.xml" },
     meta: {
       id: "bn-inscript",
@@ -156,7 +156,7 @@ export const IMPORTS: readonly ImportSpec[] = [
     },
   },
   {
-    out: "sd/phonetic.json",
+    out: "sindhi/phonetic.json",
     from: { keyman: "keyman/rac_sindhi/rac_sindhi.kmn" },
     meta: {
       id: "sd-phonetic",
@@ -176,7 +176,7 @@ export const IMPORTS: readonly ImportSpec[] = [
     },
   },
   {
-    out: "pnb/phonetic.json",
+    out: "shahmukhi/phonetic.json",
     from: { keyman: "keyman/shahmukhi_phonetic/shahmukhi_phonetic.kmn" },
     meta: {
       id: "pnb-phonetic",
@@ -192,7 +192,7 @@ export const IMPORTS: readonly ImportSpec[] = [
     },
   },
   {
-    out: "skr/phonetic.json",
+    out: "saraiki/phonetic.json",
     from: { keyman: "keyman/saraiki/saraiki.kmn" },
     meta: {
       id: "skr-phonetic",
@@ -206,7 +206,7 @@ export const IMPORTS: readonly ImportSpec[] = [
     patch: persoArabicDigits,
   },
   {
-    out: "bal/phonetic.json",
+    out: "balochi/phonetic.json",
     from: { keyman: "keyman/balochi_phonetic/balochi_phonetic.kmn", ctrlAsAltGr: true },
     meta: {
       id: "bal-phonetic",
@@ -219,7 +219,7 @@ export const IMPORTS: readonly ImportSpec[] = [
     },
   },
   {
-    out: "ks/phonetic.json",
+    out: "kashmiri/phonetic.json",
     from: { keyman: "keyman/kashmiri_phonetic/kashmiri_phonetic.kmn" },
     meta: {
       id: "ks-phonetic",

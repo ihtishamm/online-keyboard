@@ -1,5 +1,6 @@
+import { getLanguage } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
-import { dictationText, spaced, speechDialects, speechLang, voiceError } from "./voice";
+import { dictationText, spaced, speechDialects, voiceError } from "./voice";
 
 describe("dictationText", () => {
   it("turns spoken punctuation into marks", () => {
@@ -32,12 +33,7 @@ describe("spaced", () => {
   });
 });
 
-describe("speechLang and voiceError", () => {
-  it("knows which languages browsers recognise", () => {
-    expect(speechLang("urdu")).toBe("ur-PK");
-    expect(speechLang("shahmukhi")).toBeNull();
-  });
-
+describe("voiceError", () => {
   it("explains failures, and stays quiet when the user cancelled", () => {
     expect(voiceError("not-allowed", "Urdu")).toMatch(/Microphone access is blocked/);
     expect(voiceError("language-not-supported", "Urdu")).toMatch(/recognise Urdu/);
@@ -46,10 +42,17 @@ describe("speechLang and voiceError", () => {
 });
 
 describe("speechDialects", () => {
-  it("offers Arabic dialects, the default first", () => {
-    const arabic = speechDialects("arabic");
-    expect(arabic[0]![0]).toBe(speechLang("arabic"));
-    expect(arabic.map(([tag]) => tag)).toEqual(expect.arrayContaining(["ar-EG", "ar-AE", "ar-MA"]));
-    expect(speechDialects("hindi")).toEqual([]);
+  it("names each locale by its region, when there is a choice", () => {
+    expect(speechDialects(["ar-SA", "ar-EG", "ar-AE"])).toEqual([
+      ["ar-SA", "Saudi Arabia"],
+      ["ar-EG", "Egypt"],
+      ["ar-AE", "United Arab Emirates"],
+    ]);
+    expect(speechDialects(["hi-IN"])).toEqual([]);
+  });
+
+  it("offers voice only where language.json lists locales", () => {
+    expect(getLanguage("urdu").voice[0]).toBe("ur-PK");
+    expect(getLanguage("shahmukhi").voice).toEqual([]);
   });
 });

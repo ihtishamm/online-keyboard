@@ -1,0 +1,30 @@
+{
+  "slug": "arabic",
+  "code": "ar",
+  "order": 20,
+  "lang": "ar",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Arabic",
+    "native": "العربية"
+  },
+  "fonts": ["naskh"],
+  "layouts": ["ar-standard", "ar-roman"],
+  "sample": "العربية لغة جميلة.",
+  "voice": [
+    "ar-SA",
+    "ar-EG",
+    "ar-AE",
+    "ar-JO",
+    "ar-LB",
+    "ar-IQ",
+    "ar-KW",
+    "ar-QA",
+    "ar-MA",
+    "ar-DZ",
+    "ar-TN"
+  ],
+  "wordList": true,
+  "tier": null
+}

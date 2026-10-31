@@ -1,5 +1,5 @@
 /**
- * Layouts in data/ that come from upstream sources must match what scripts/imports.ts builds
+ * Layouts in languages/ that come from upstream sources must match what scripts/imports.ts builds
  * from vendor/. Run with UPDATE_LAYOUTS=1 (pnpm --filter @okb/layouts import:layouts) to rewrite them.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -23,7 +23,7 @@ function toJson(value: unknown): string {
 
 describe.each(IMPORTS.map((spec) => [spec.meta.id, spec] as const))("%s", (_id, spec) => {
   const sourcePath = join(ROOT, "vendor", "cldr" in spec.from ? spec.from.cldr : spec.from.keyman);
-  const outPath = join(ROOT, "data", spec.out);
+  const outPath = join(ROOT, "languages", spec.out);
   const { layout, warnings } = buildImport(spec, readFileSync(sourcePath, "utf8"));
 
   it("matches its upstream source", () => {

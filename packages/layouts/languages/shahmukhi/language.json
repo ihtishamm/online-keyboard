@@ -1,0 +1,19 @@
+{
+  "slug": "shahmukhi",
+  "code": "pnb",
+  "order": 60,
+  "lang": "pa-Arab",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Punjabi (Shahmukhi)",
+    "native": "پنجابی"
+  },
+  "fonts": ["nastaliq", "naskh"],
+  "layouts": ["pnb-phonetic", "pnb-roman"],
+  "sample": "پنجابی ساڈی ماں بولی اے۔",
+  "voice": [],
+  "wordList": true,
+  "tier": null,
+  "notes": "No voice: speech services return Punjabi in Gurmukhi."
+}

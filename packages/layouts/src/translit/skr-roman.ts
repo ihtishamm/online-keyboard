@@ -1,6 +1,6 @@
 import type { TranslitScheme } from "@okb/engine";
 import { extendScheme } from "./extend";
-import { PNB_ROMAN } from "./pa-roman";
+import { PNB_ROMAN } from "./pnb-roman";
 
 /**
  * Roman Saraiki → Saraiki, starting from Roman Punjabi: adds the four implosives, typed

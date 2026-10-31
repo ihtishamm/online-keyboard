@@ -8,7 +8,7 @@ import { readFile } from "node:fs/promises";
 const phonetic = keystrokeMap(
   JSON.parse(
     readFileSync(
-      new URL("../../../packages/layouts/data/ur/phonetic.json", import.meta.url),
+      new URL("../../../packages/layouts/languages/urdu/phonetic.json", import.meta.url),
       "utf8",
     ),
   ) as Layout,

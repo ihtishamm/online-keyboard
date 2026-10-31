@@ -25,7 +25,7 @@ interface Props {
 const { slug, layoutId } = Astro.props;
 const language = getLanguage(slug);
 const layout = getLayout(layoutId);
-const copy = copyFor(slug);
+const copy = await copyFor(slug);
 const isDefault = layoutId === language.layouts[0];
 const layoutCopy = copy.layouts[layoutId];
 const otherLayouts = language.layouts.filter((id) => id !== layoutId);

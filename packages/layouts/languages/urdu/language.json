@@ -1,0 +1,18 @@
+{
+  "slug": "urdu",
+  "code": "ur",
+  "order": 10,
+  "lang": "ur",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Urdu",
+    "native": "اردو"
+  },
+  "fonts": ["nastaliq", "naskh"],
+  "layouts": ["ur-phonetic", "ur-standard", "ur-roman"],
+  "sample": "اردو ہماری قومی زبان ہے۔",
+  "voice": ["ur-PK", "ur-IN"],
+  "wordList": true,
+  "tier": "B"
+}

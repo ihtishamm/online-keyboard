@@ -31,7 +31,7 @@ const ESCAPABLE_EXT = new Set([".ts", ".mts", ".js", ".mjs", ".json"]);
 const CHECK_EXT = new Set([...ESCAPABLE_EXT, ".tsx", ".astro", ".md", ".css", ".yml", ".yaml"]);
 const SKIP_FILES = new Set(["pnpm-lock.yaml"]);
 /** Generated data, never edited by hand: emoji sequences are made of joiners and selectors. */
-const SKIP_PATHS = new Set(["packages/emoji/data"]);
+const SKIP_PATHS = new Set(["packages/emoji/data", "packages/layouts/test/golden"]);
 
 const INVISIBLE = /\p{Cf}|(?<![\p{L}\p{M}])[\p{Mn}\p{Me}]/gu;
 const BIDI_CONTROL = /[\u202A-\u202E\u2066-\u2069]/gu;

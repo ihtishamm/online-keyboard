@@ -24,4 +24,34 @@ const guides = defineCollection({
   }),
 });
 
-export const collections = { guides };
+/**
+ * Page copy for each language page, /<slug> (plan item 7.1): src/content/languages/<slug>.md,
+ * the copy in the front matter. Original text, written for this site. Roman layouts keep
+ * their copy with their spelling guide (src/content/roman.ts).
+ */
+const layoutCopy = z.object({
+  /** Short description shown above the layout chart. */
+  summary: z.string(),
+  /** Who this layout suits. */
+  bestFor: z.string(),
+  /** Page title, heading and meta description when the defaults do not fit the search. */
+  title: z.string().optional(),
+  heading: z.string().optional(),
+  description: z.string().optional(),
+});
+const languages = defineCollection({
+  loader: glob({ pattern: "*.md", base: "./src/content/languages" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    heading: z.string(),
+    headingNative: z.string(),
+    intro: z.string(),
+    /** By layout id. */
+    layouts: z.record(z.string(), layoutCopy).default({}),
+    tips: z.array(z.string()).min(1),
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).min(1),
+  }),
+});
+
+export const collections = { guides, languages };

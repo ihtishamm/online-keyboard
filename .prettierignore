@@ -7,3 +7,5 @@ test-results/
 plan.md
 vendor/
 packages/emoji/data/
+packages/layouts/test/golden/
+LANGUAGES.md

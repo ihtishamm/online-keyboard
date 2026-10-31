@@ -15,7 +15,7 @@ interface Props {
 const { sheet, link } = Astro.props;
 const { language } = sheet;
 const layout = getLayout(sheet.layoutId);
-const layoutCopy = copyFor(language.slug).layouts[sheet.layoutId];
+const layoutCopy = (await copyFor(language.slug)).layouts[sheet.layoutId];
 const script = FONT_CLASS[language.fonts[0]!];
 const hasAltGr = Object.values(layout.keys).some((k) => k?.ag || k?.sag);
 const hasShiftAltGr = Object.values(layout.keys).some((k) => k?.sag);

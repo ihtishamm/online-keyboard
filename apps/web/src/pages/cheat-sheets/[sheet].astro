@@ -25,7 +25,7 @@ interface Props {
 const { sheet } = Astro.props;
 const { language } = sheet;
 const layout = getLayout(sheet.layoutId);
-const layoutCopy = copyFor(language.slug).layouts[sheet.layoutId];
+const layoutCopy = (await copyFor(language.slug)).layouts[sheet.layoutId];
 const roman = sheet.kind === "roman";
 const keyboard = keyboardPath(sheet);
 const site = new URL(keyboard, Astro.site);

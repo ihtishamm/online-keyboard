@@ -1,0 +1,18 @@
+{
+  "slug": "pashto",
+  "code": "ps",
+  "order": 40,
+  "lang": "ps",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Pashto",
+    "native": "پښتو"
+  },
+  "fonts": ["naskh", "nastaliq"],
+  "layouts": ["ps-standard", "ps-roman"],
+  "sample": "پښتو زموږ ژبه ده.",
+  "voice": [],
+  "wordList": true,
+  "tier": null
+}

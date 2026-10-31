@@ -1,35 +1,43 @@
 /**
  * Writes the Roman (English letters) layout of each language: US QWERTY keys whose words a
  * transliteration scheme converts. They differ only in name, language and scheme, so they are
- * generated from data/ur/roman.json.
+ * generated from languages/urdu/roman.json.
  *
  *   node scripts/roman-layouts.ts
  */
 import { readFileSync, writeFileSync } from "node:fs";
 
-const DATA = new URL("../data/", import.meta.url);
-const base = JSON.parse(readFileSync(new URL("ur/roman.json", DATA), "utf8")) as Record<
+const DATA = new URL("../languages/", import.meta.url);
+const base = JSON.parse(readFileSync(new URL("urdu/roman.json", DATA), "utf8")) as Record<
   string,
   unknown
 >;
 
 const ROMAN: readonly {
   code: string;
+  slug: string;
   lang: string;
   dir: "rtl" | "ltr";
   native: string;
   language: string;
 }[] = [
-  { code: "hi", lang: "hi", dir: "ltr", native: "रोमन", language: "Hindi" },
-  { code: "bn", lang: "bn", dir: "ltr", native: "রোমান", language: "Bangla" },
-  { code: "ar", lang: "ar", dir: "rtl", native: "عربيزي", language: "Arabic" },
-  { code: "fa", lang: "fa", dir: "rtl", native: "فینگلیش", language: "Persian" },
-  { code: "ps", lang: "ps", dir: "rtl", native: "رومن", language: "Pashto" },
-  { code: "sd", lang: "sd", dir: "rtl", native: "رومن", language: "Sindhi" },
-  { code: "pnb", lang: "pa-Arab", dir: "rtl", native: "رومن", language: "Punjabi" },
-  { code: "skr", lang: "skr", dir: "rtl", native: "رومن", language: "Saraiki" },
-  { code: "bal", lang: "bal", dir: "rtl", native: "رومن", language: "Balochi" },
-  { code: "ks", lang: "ks", dir: "rtl", native: "رومن", language: "Kashmiri" },
+  { code: "hi", slug: "hindi", lang: "hi", dir: "ltr", native: "रोमन", language: "Hindi" },
+  { code: "bn", slug: "bangla", lang: "bn", dir: "ltr", native: "রোমান", language: "Bangla" },
+  { code: "ar", slug: "arabic", lang: "ar", dir: "rtl", native: "عربيزي", language: "Arabic" },
+  { code: "fa", slug: "farsi", lang: "fa", dir: "rtl", native: "فینگلیش", language: "Persian" },
+  { code: "ps", slug: "pashto", lang: "ps", dir: "rtl", native: "رومن", language: "Pashto" },
+  { code: "sd", slug: "sindhi", lang: "sd", dir: "rtl", native: "رومن", language: "Sindhi" },
+  {
+    code: "pnb",
+    slug: "shahmukhi",
+    lang: "pa-Arab",
+    dir: "rtl",
+    native: "رومن",
+    language: "Punjabi",
+  },
+  { code: "skr", slug: "saraiki", lang: "skr", dir: "rtl", native: "رومن", language: "Saraiki" },
+  { code: "bal", slug: "balochi", lang: "bal", dir: "rtl", native: "رومن", language: "Balochi" },
+  { code: "ks", slug: "kashmiri", lang: "ks", dir: "rtl", native: "رومن", language: "Kashmiri" },
 ];
 
 for (const r of ROMAN) {
@@ -43,6 +51,6 @@ for (const r of ROMAN) {
     source: `US QWERTY keys. Each word typed in English letters is converted to ${r.language} by the ${scheme} transliteration scheme (Likho).`,
     translit: scheme,
   };
-  writeFileSync(new URL(`${r.code}/roman.json`, DATA), JSON.stringify(layout, null, 2) + "\n");
-  console.log(`wrote data/${r.code}/roman.json`);
+  writeFileSync(new URL(`${r.slug}/roman.json`, DATA), JSON.stringify(layout, null, 2) + "\n");
+  console.log(`wrote languages/${r.slug}/roman.json`);
 }

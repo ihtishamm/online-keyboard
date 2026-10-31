@@ -15,7 +15,8 @@
     "lint": "eslint . && node tools/invisible-chars.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "fix:chars": "node tools/invisible-chars.mjs --fix"
+    "fix:chars": "node tools/invisible-chars.mjs --fix",
+    "roster": "ROSTER_WRITE=1 pnpm --filter @okb/web exec vitest run src/tier-gate.test.ts"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.0",

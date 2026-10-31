@@ -1,0 +1,45 @@
+import { readFileSync, writeFileSync } from "node:fs";
+import { describe, expect, it } from "vitest";
+import { LANGUAGES, SCHEME_LIST, allLayouts, languageBundle, type Language } from "../src";
+
+/**
+ * Golden snapshot of the language registry (plan item 7.1): every language, layout and
+ * scheme, exactly as the site receives them. Moving the registry into data must not change
+ * any of it. Refresh deliberately with UPDATE_GOLDEN=1 when a change is intended.
+ */
+const FILE = new URL("./golden/registry.json", import.meta.url);
+
+const byId = (a: { id: string }, b: { id: string }) => (a.id < b.id ? -1 : 1);
+
+const old = ({ slug, code, lang, dir, name, fonts, layouts, sample }: Language) => ({
+  slug,
+  code,
+  lang,
+  dir,
+  name,
+  fonts,
+  layouts,
+  sample,
+});
+
+describe("registry golden snapshot", () => {
+  it("is unchanged", () => {
+    const now = JSON.stringify(
+      {
+        // The fields the site had before the move; fields added since are checked elsewhere.
+        languages: LANGUAGES.map(old),
+        // Order only matters to tests: compare by id.
+        layouts: allLayouts().sort(byId),
+        schemes: [...SCHEME_LIST].sort(byId),
+        bundles: LANGUAGES.map((l) => {
+          const bundle = languageBundle(l.slug);
+          return { ...bundle, language: old(bundle.language) };
+        }),
+      },
+      null,
+      1,
+    );
+    if (process.env.UPDATE_GOLDEN === "1") writeFileSync(FILE, now + "\n");
+    expect(now + "\n").toBe(readFileSync(FILE, "utf8"));
+  });
+});
