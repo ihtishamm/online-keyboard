@@ -1,4 +1,5 @@
 ---
+import { getLayout } from "@okb/layouts";
 import TypingPage from "../components/typing/TypingPage.astro";
 import TypingTest from "../components/typing/TypingTest";
 import { URDU_PASSAGES, URDU_WORDS } from "../content/typing/urdu";
@@ -65,7 +66,7 @@ const faqs = [
     nativeName="اردو"
     nativeTitle="اردو ٹائپنگ ٹیسٹ"
     title="Urdu typing test"
-    layouts={["ur-phonetic", "ur-standard"]}
+    layouts={["ur-phonetic", "ur-standard"].map(getLayout)}
     words={URDU_WORDS}
     passages={URDU_PASSAGES}
   />

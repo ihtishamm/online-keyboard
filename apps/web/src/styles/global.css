@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
 /*
+ * Phone keyboard mode: narrow screens, and touch screens turned sideways (a landscape phone is
+ * wider than `sm` but still a phone). `short` is the landscape case, where keys must be lower.
+ * Keep in sync with PHONE_QUERY in components/keyboard/useNarrow.ts.
+ */
+@custom-variant phone (@media (max-width: 639.98px), (pointer: coarse) and (max-height: 500px));
+@custom-variant short (@media (pointer: coarse) and (max-height: 500px));
+
+/*
  * Design tokens. Every colour the UI uses is a variable here, so themes only redefine variables.
  * Themes: light (default), dark (system or data-theme="dark"), contrast (data-theme="contrast").
  */

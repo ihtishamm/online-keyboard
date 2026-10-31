@@ -25,6 +25,10 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm test
       - run: pnpm build
+        env:
+          SKIP_PDFS: "1"
+      # At most 90 KB gzipped of initial JS on every keyboard page (plan item 5.7).
+      - run: pnpm --filter @okb/web check:budgets
 
   e2e:
     runs-on: ubuntu-latest
@@ -37,7 +41,7 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm --filter @okb/web exec playwright install --with-deps chromium
+      - run: pnpm --filter @okb/web exec playwright install --with-deps chromium webkit
       - run: pnpm test:e2e
       - uses: actions/upload-artifact@v4
         if: failure()

@@ -1,4 +1,4 @@
-import { getLayout } from "@okb/layouts";
+import type { Layout } from "@okb/engine";
 import { Download, RotateCcw, Share2 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { datedName, downloadBlob } from "../keyboard/actions";
@@ -17,7 +17,8 @@ export interface TypingTestProps {
   /** Result card heading, e.g. "اردو ٹائپنگ ٹیسٹ" / "Urdu typing test". */
   nativeTitle: string;
   title: string;
-  layouts: readonly string[];
+  /** The layouts on offer (data, so the registry stays on the server). */
+  layouts: readonly Layout[];
   words: readonly string[];
   passages: readonly string[];
 }
@@ -41,7 +42,7 @@ const BTN = `${BTN_BASE} border-border bg-surface text-text hover:bg-surface-2`;
 const PRIMARY = `${BTN_BASE} border-accent bg-accent font-medium text-accent-fg hover:opacity-90`;
 
 export default function TypingTest(props: TypingTestProps) {
-  const [layoutId, setLayoutId] = useState(props.layouts[0]!);
+  const [layoutId, setLayoutId] = useState(props.layouts[0]!.id);
   const [duration, setDuration] = useState<number>(60);
   const [source, setSource] = useState<Source>("words");
   const [keyboard, setKeyboard] = useState(true);
@@ -50,7 +51,7 @@ export default function TypingTest(props: TypingTestProps) {
   const [now, setNow] = useState(0);
   const [best, setBest] = useState<{ previous: number | null; isNew: boolean } | null>(null);
   const [message, setMessage] = useState("");
-  const layout = getLayout(layoutId);
+  const layout = props.layouts.find((l) => l.id === layoutId) ?? props.layouts[0]!;
   const bestKey = `typingBest:${layoutId}:${duration}:${source}`;
   const rootRef = useRef<HTMLDivElement>(null);
 
@@ -75,7 +76,7 @@ export default function TypingTest(props: TypingTestProps) {
   useEffect(() => {
     const saved = (key: string) => loadPreference(`typing:${key}`);
     const l = saved("layout");
-    if (l && props.layouts.includes(l)) setLayoutId(l);
+    if (l && props.layouts.some((x) => x.id === l)) setLayoutId(l);
     const d = Number(saved("duration"));
     if ((DURATIONS as readonly number[]).includes(d)) setDuration(d);
     if (saved("source") === "sentences") setSource("sentences");
@@ -153,7 +154,7 @@ export default function TypingTest(props: TypingTestProps) {
         <Segmented
           label="Keyboard layout"
           value={layoutId}
-          options={props.layouts.map((id) => ({ value: id, label: getLayout(id).name.en }))}
+          options={props.layouts.map((l) => ({ value: l.id, label: l.name.en }))}
           onChange={(id) => {
             setLayoutId(id);
             savePreference("typing:layout", id);

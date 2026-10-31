@@ -15,9 +15,17 @@ interface Props {
    * skip the download; the logo then stays in Naskh unless the font is already cached.
    */
   nastaliq?: boolean;
+  /** Keep the page out of search results (utility pages such as /share). */
+  noindex?: boolean;
 }
 
-const { title, description = SITE.description, lang = "en", nastaliq = true } = Astro.props;
+const {
+  title,
+  description = SITE.description,
+  lang = "en",
+  nastaliq = true,
+  noindex = false,
+} = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -25,10 +33,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 <html lang={lang}>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
@@ -146,6 +158,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         sw.addEventListener("controllerchange", () => {
           handOver();
           ready();
+          // Requests still in flight at the switch finish later, outside the worker: hand
+          // those over too as they arrive (the worker skips anything it already has).
+          if ("PerformanceObserver" in window) {
+            new PerformanceObserver(handOver).observe({ type: "resource" });
+          }
         });
         ready();
         window.addEventListener("load", () => {
@@ -155,5 +172,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         });
       }
     </script>}
+    <script>
+      // Page views and field Web Vitals; a no-op unless PUBLIC_ANALYTICS_ENDPOINT is set.
+      import { track } from "../analytics/track";
+      import { reportVitals } from "../analytics/vitals";
+      track("pageview");
+      reportVitals();
+    </script>
   </body>
 </html>

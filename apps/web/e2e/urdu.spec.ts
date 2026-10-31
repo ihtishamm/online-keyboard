@@ -58,7 +58,7 @@ test.describe("desktop typing", () => {
     await editor(page).click();
     await page.keyboard.type("slam");
     await page.getByRole("button", { name: "Copy" }).click();
-    await expect(page.getByText("Copied to clipboard")).toBeVisible();
+    await expect(page.locator("[aria-live]", { hasText: "Copied to clipboard" })).toBeVisible();
     expect(await page.evaluate(() => navigator.clipboard.readText())).toBe("سلام");
   });
 });
@@ -106,7 +106,12 @@ test("mobile keeps the OS keyboard hidden until asked", async ({ page, isMobile 
   test.skip(!isMobile, "touch devices only");
   await open(page, "/urdu");
   await expect(editor(page)).toHaveAttribute("inputmode", "none");
-  await page.getByRole("button", { name: "Phone keyboard" }).tap();
+  // On phones the switch is in the More sheet.
+  await page.getByRole("button", { name: "More", exact: true }).tap();
+  await page
+    .getByRole("dialog", { name: "More tools" })
+    .getByRole("button", { name: "Phone keyboard" })
+    .tap();
   await expect(editor(page)).not.toHaveAttribute("inputmode", "none");
   await expect(page.getByRole("group", { name: "On-screen keyboard" })).toHaveCount(0);
 });

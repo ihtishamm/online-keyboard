@@ -1,5 +1,5 @@
 // @ts-check
-import react from "@astrojs/react";
+import preact from "@astrojs/preact";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
@@ -11,8 +11,19 @@ export default defineConfig({
   trailingSlash: "never",
   // The CSS is small (~8 KB); inlining it removes render-blocking requests on slow networks.
   build: { inlineStylesheets: "always" },
-  integrations: [react(), sitemap(), serviceWorker()],
+  integrations: [
+    // Islands are written against React's API and run on Preact (preact/compat): the same
+    // components for ~55 KB less JavaScript on every keyboard page.
+    preact({ compat: true }),
+    sitemap({ filter: (page) => !page.endsWith("/share/") && !page.endsWith("/share") }),
+    serviceWorker(),
+  ],
   vite: {
     plugins: [tailwindcss()],
+    resolve: {
+      // Server rendering bundles React-API libraries, so that their `react` imports resolve
+      // to preact/compat too. Setting this replaces @astrojs/preact's own list, repeated here.
+      noExternal: ["react", "react-dom", "react/jsx-runtime", "lucide-react"],
+    },
   },
 });

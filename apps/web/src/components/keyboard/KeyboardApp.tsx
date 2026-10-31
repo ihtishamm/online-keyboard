@@ -4,10 +4,12 @@ import {
   TypingMachine,
   US_QWERTY,
   isKeyCode,
+  phoneLayout,
   type KeyCode,
   type Modifiers,
 } from "@okb/engine";
-import { getLanguage, getLayout, getScheme, layoutSlug, type FontId } from "@okb/layouts";
+import type { FontId } from "@okb/layouts";
+import { bundleLayout, layoutSlug, type LanguageBundle } from "@okb/layouts/bundle";
 import {
   lazy,
   Suspense,
@@ -23,12 +25,28 @@ import { FONT_CLASS } from "../fonts";
 import { countText } from "./actions";
 import CandidateBar from "./CandidateBar";
 import { hasDictionary } from "./dictionary";
-import { deleteBackward, insertText } from "./editor-ops";
+import {
+  deleteBackward,
+  deleteRange,
+  insertText,
+  moveCaret,
+  replaceText,
+  wordsBefore,
+} from "./editor-ops";
+import {
+  DEFAULT_KEYBOARD_SETTINGS,
+  loadKeyboardSettings,
+  saveKeyboardSettings,
+  type KeyboardSettings,
+} from "./keyboard-settings";
 import { hasCoarsePointer, isAltGr } from "./platform";
 import SpellOverlay from "./SpellOverlay";
 import { loadPreference, savePreference } from "./preferences";
 import Toolbar, { FONT_SIZES } from "./Toolbar";
 import { useDrafts } from "./useDrafts";
+import { useKeyboardInset } from "./useKeyboardInset";
+import { noteCopy, useInstallOffer } from "./install";
+import { track } from "../../analytics/track";
 import { useSuggestions } from "./useSuggestions";
 import { useVoiceTyping } from "./useVoiceTyping";
 import { dictationText, recognitionCtor, spaced, speechLang } from "./voice";
@@ -41,8 +59,8 @@ const EmojiPanel = lazy(() => import("./EmojiPanel"));
 const isBoundary = (text: string) => !/^[A-Za-z'0-9]*$/.test(text);
 
 export interface KeyboardAppProps {
-  /** Language slug, e.g. "urdu". */
-  slug: string;
+  /** The page's language with its layouts (only this language ships to the browser). */
+  bundle: LanguageBundle;
   /** Layout the page is about. */
   layoutId: string;
   /** True on a layout-specific URL (/urdu/standard); false on the language's main page. */
@@ -50,11 +68,13 @@ export interface KeyboardAppProps {
 }
 
 export default function KeyboardApp({
-  slug,
+  bundle,
   layoutId: pageLayoutId,
   explicitLayout,
 }: KeyboardAppProps) {
-  const language = getLanguage(slug);
+  const { language } = bundle;
+  const slug = language.slug;
+  const getLayout = (id: string) => bundleLayout(bundle, id);
   const [layoutId, setLayoutId] = useState(pageLayoutId);
   const layout = getLayout(layoutId);
 
@@ -73,6 +93,12 @@ export default function KeyboardApp({
     [layout],
   );
 
+  const phone = useMemo(() => phoneLayout(layout), [layout]);
+  const [keyboardSettings, setKeyboardSettings] =
+    useState<KeyboardSettings>(DEFAULT_KEYBOARD_SETTINGS);
+  /** Where the caret was when a Backspace slide began: the words before it get selected. */
+  const slideAnchor = useRef<number | null>(null);
+
   const [, rerender] = useReducer((x: number) => x + 1, 0);
   const [passthrough, setPassthrough] = useState(false);
   const [pressed, setPressed] = useState<ReadonlySet<string>>(new Set());
@@ -81,6 +107,11 @@ export default function KeyboardApp({
   const [hydrated, setHydrated] = useState(false);
   const [coarse, setCoarse] = useState(false);
   const [phoneKeyboard, setPhoneKeyboard] = useState(false);
+  /** Roman text pasted or shared in: offer to convert it all at once. */
+  const [romanToConvert, setRomanToConvert] = useState(false);
+  const [copies, setCopies] = useState(0);
+  /** First visit on a touch screen: ask how the visitor wants to type. */
+  const [askInput, setAskInput] = useState(false);
   const [emojiOpen, setEmojiOpen] = useState(false);
   /** Set once hydrated, where the browser can recognise this language's speech. */
   const [voiceLang, setVoiceLang] = useState<string | null>(null);
@@ -94,7 +125,7 @@ export default function KeyboardApp({
   const drafts = useDrafts(slug, editorRef);
   const [predict, setPredict] = useState(true);
   const [spellcheck, setSpellcheck] = useState(true);
-  const scheme = layout.translit ? getScheme(layout.translit) : null;
+  const scheme = layout.translit ? (bundle.schemes[layout.translit] ?? null) : null;
   const roman = scheme !== null && !passthrough;
   const suggest = useSuggestions({
     slug,
@@ -131,6 +162,7 @@ export default function KeyboardApp({
       latch.reset();
       setLayoutId(id);
       savePreference(`layout:${slug}`, id);
+      track("layout", { layout: id });
       if (opts.updateUrl) {
         const path = id === language.layouts[0] ? `/${slug}` : `/${slug}/${layoutSlug(id)}`;
         history.replaceState(null, "", path);
@@ -142,7 +174,15 @@ export default function KeyboardApp({
   useEffect(() => {
     setHydrated(true);
     setCoarse(hasCoarsePointer());
-    setPhoneKeyboard(loadPreference("phoneKeyboard") === "on");
+    savePreference("lastLanguage", slug);
+    const savedInput = loadPreference("phoneKeyboard");
+    setPhoneKeyboard(savedInput === "on");
+    setAskInput(hasCoarsePointer() && savedInput === null);
+    track("keyboard", {
+      layout: layoutId,
+      input: !hasCoarsePointer() ? "physical" : savedInput === "on" ? "phone" : "onscreen",
+    });
+    setKeyboardSettings(loadKeyboardSettings());
     if (loadPreference("predict") === "off") setPredict(false);
     if (loadPreference("spellcheck") === "off") setSpellcheck(false);
     if (recognitionCtor()) setVoiceLang(speechLang(slug));
@@ -176,6 +216,45 @@ export default function KeyboardApp({
     if (el && text) insertText(el, text);
   };
 
+  useKeyboardInset(coarse && phoneKeyboard);
+  const installOffer = useInstallOffer(coarse, copies);
+
+  // Text shared to the installed app (/share) opens in a new draft, once drafts have loaded.
+  const draftsReady = drafts.state !== null;
+  useEffect(() => {
+    if (!draftsReady) return;
+    let shared: string | null;
+    try {
+      shared = sessionStorage.getItem("likho:shared");
+      sessionStorage.removeItem("likho:shared");
+    } catch {
+      return;
+    }
+    if (!shared) return;
+    const text = shared;
+    void drafts.create().then(() => {
+      const el = editorRef.current;
+      if (!el) return;
+      el.value = text;
+      el.setSelectionRange(text.length, text.length);
+      drafts.onInput();
+      refreshCounts();
+      if (/[A-Za-z]/.test(text)) setRomanToConvert(true);
+      setAnnouncement("Shared text opened in a new draft");
+    });
+  }, [draftsReady]); // once, when drafts are ready
+
+  /** Convert every Roman word in the editor (one undo step). */
+  const convertAllRoman = () => {
+    const el = editorRef.current;
+    if (!el || !suggest.convertText) return;
+    replaceText(el, 0, el.value.length, suggest.convertText(el.value));
+    track("convertAll", { layout: layoutId });
+    setRomanToConvert(false);
+    refreshCounts();
+    setAnnouncement(`Converted to ${language.name.en}`);
+  };
+
   const voice = useVoiceTyping({
     lang: voiceLang ?? "",
     languageName: language.name.en,
@@ -192,6 +271,7 @@ export default function KeyboardApp({
       setAnnouncement("Voice typing stopped");
     } else if (loadPreference("voice") === "on") {
       voice.start();
+      track("voice", { layout: layoutId });
       setAnnouncement("Listening");
     } else setVoiceConsent(true);
   };
@@ -369,6 +449,54 @@ export default function KeyboardApp({
     rerender();
   };
 
+  /** Space-bar slide: move the caret through the text. */
+  const onCaret = (steps: number) => {
+    const el = editorRef.current;
+    if (!el) return;
+    if (document.activeElement !== el) el.focus({ preventScroll: true });
+    moveCaret(el, steps, layout.dir);
+    suggest.refresh();
+  };
+
+  /** Backspace slide (select words, delete on release) and long hold (delete word by word). */
+  const onDeleteWords = (words: number, done: boolean) => {
+    const el = editorRef.current;
+    if (!el) return;
+    if (done && slideAnchor.current === null) {
+      // Held Backspace: one more whole word.
+      deleteRange(el, wordsBefore(el.value, el.selectionStart, words), el.selectionEnd);
+      return;
+    }
+    slideAnchor.current ??= el.selectionStart;
+    const end = slideAnchor.current;
+    if (done) {
+      slideAnchor.current = null;
+      if (words > 0) deleteRange(el, wordsBefore(el.value, end, words), end);
+      else el.setSelectionRange(end, end);
+      return;
+    }
+    el.setSelectionRange(wordsBefore(el.value, end, words), end);
+  };
+
+  const changeKeyboardSettings = (next: KeyboardSettings) => {
+    setKeyboardSettings(next);
+    saveKeyboardSettings(next);
+  };
+
+  /** Type with the phone's own keyboard (true) or the keys on the page (false). */
+  const chooseInput = (own: boolean) => {
+    setPhoneKeyboard(own);
+    setAskInput(false);
+    savePreference("phoneKeyboard", own ? "on" : "off");
+    track("input", { input: own ? "phone" : "onscreen" });
+    setAnnouncement(own ? "Using your phone's keyboard" : "Using the on-screen keyboard");
+    const el = editorRef.current;
+    if (!el) return;
+    // The OS keyboard opens only on a fresh focus once inputmode changes.
+    el.blur();
+    if (own) requestAnimationFrame(() => el.focus());
+  };
+
   // Labels follow both tapped (latched) and physically held modifiers.
   const latched = latch.current();
   const displayMods: Modifiers = {
@@ -386,7 +514,7 @@ export default function KeyboardApp({
         <div
           role="radiogroup"
           aria-label="Keyboard layout"
-          className="inline-flex rounded-lg border border-border bg-surface p-0.5"
+          className="inline-flex max-w-full rounded-lg border border-border bg-surface p-0.5"
         >
           {language.layouts.map((id) => {
             const l = getLayout(id);
@@ -401,12 +529,13 @@ export default function KeyboardApp({
                   if (!checked) switchLayout(id, { updateUrl: true });
                   editorRef.current?.focus();
                 }}
-                className={`rounded-md px-3 py-1.5 text-sm font-medium ${
+                className={`rounded-md px-3 py-1.5 text-sm font-medium max-sm:px-2.5 ${
                   checked ? "bg-accent text-accent-fg" : "text-muted hover:text-text"
                 }`}
               >
                 {l.name.en}
-                <span className="font-script ms-1.5" lang={l.lang}>
+                {/* Small phones: the English names alone, so three layouts fit one row. */}
+                <span className="font-script ms-1.5 max-[399px]:hidden" lang={l.lang}>
                   {l.name.native}
                 </span>
               </button>
@@ -460,17 +589,17 @@ export default function KeyboardApp({
           coarse
             ? {
                 enabled: phoneKeyboard,
-                onToggle: () => {
-                  const next = !phoneKeyboard;
-                  setPhoneKeyboard(next);
-                  savePreference("phoneKeyboard", next ? "on" : "off");
-                  setAnnouncement(
-                    next ? "Using your phone's keyboard" : "Using the on-screen keyboard",
-                  );
-                  editorRef.current?.blur();
-                },
+                onToggle: () => chooseInput(!phoneKeyboard),
               }
             : undefined
+        }
+        onCopied={() => {
+          noteCopy();
+          track("copy", { layout: layoutId });
+          setCopies((n) => n + 1);
+        }}
+        keyboardSettings={
+          phoneKeyboard ? undefined : { value: keyboardSettings, onChange: changeKeyboardSettings }
         }
       />
 
@@ -490,7 +619,14 @@ export default function KeyboardApp({
           onKeyDown={phoneKeyboard ? undefined : onKeyDown}
           onKeyUp={onKeyUp}
           onInput={(e) => {
-            if (roman) suggest.afterNativeInput(e.nativeEvent as InputEvent);
+            const input = e.nativeEvent as InputEvent;
+            if (roman) suggest.afterNativeInput(input);
+            if (
+              roman &&
+              input.inputType === "insertFromPaste" &&
+              /[A-Za-z]/.test(input.data ?? editorRef.current?.value ?? "")
+            )
+              setRomanToConvert(true);
             drafts.onInput();
             refreshCounts();
           }}
@@ -510,6 +646,52 @@ export default function KeyboardApp({
           />
         )}
       </div>
+
+      {romanToConvert && roman && suggest.convertText && (
+        <div className="flex flex-wrap items-center gap-2 rounded-xl border border-accent bg-accent-soft px-3 py-2 text-sm">
+          <span className="grow">Turn the English-letter text into {language.name.en}?</span>
+          <button
+            type="button"
+            onClick={convertAllRoman}
+            className="min-h-10 rounded-lg bg-accent px-3 font-medium text-accent-fg"
+          >
+            Convert all
+          </button>
+          <button
+            type="button"
+            onClick={() => setRomanToConvert(false)}
+            className="min-h-10 rounded-lg px-3 text-muted hover:text-text"
+          >
+            Not now
+          </button>
+        </div>
+      )}
+
+      {installOffer && (
+        <div className="flex flex-wrap items-center gap-2 rounded-xl border border-border bg-surface px-3 py-2 text-sm">
+          <span className="grow">
+            {installOffer.kind === "prompt"
+              ? "Add Likho to your home screen: it opens like an app and works offline."
+              : "Add Likho to your home screen: tap Share, then “Add to Home Screen”."}
+          </span>
+          {installOffer.kind === "prompt" && (
+            <button
+              type="button"
+              onClick={installOffer.install}
+              className="min-h-10 rounded-lg bg-accent px-3 font-medium text-accent-fg"
+            >
+              Install
+            </button>
+          )}
+          <button
+            type="button"
+            onClick={installOffer.dismiss}
+            className="min-h-10 rounded-lg px-3 text-muted hover:text-text"
+          >
+            Not now
+          </button>
+        </div>
+      )}
 
       {voiceLang && (voiceConsent || voice.listening || voice.error) && (
         <VoicePanel
@@ -535,41 +717,6 @@ export default function KeyboardApp({
         />
       )}
 
-      {(roman || hasDictionary(slug)) && (
-        <CandidateBar
-          state={suggest.state}
-          roman={roman}
-          lang={language.lang}
-          dir={language.dir}
-          predict={predict}
-          onTogglePredict={() => {
-            const next = !predict;
-            setPredict(next);
-            savePreference("predict", next ? "on" : "off");
-            setAnnouncement(next ? "Word suggestions on" : "Word suggestions off");
-          }}
-          onPick={(i) => suggest.pick(i)}
-          onKeep={keepRoman}
-          showNumbers={!coarse}
-          spelling={
-            hasDictionary(slug)
-              ? {
-                  enabled: spellcheck,
-                  onToggle: () => {
-                    const next = !spellcheck;
-                    setSpellcheck(next);
-                    savePreference("spellcheck", next ? "on" : "off");
-                    setAnnouncement(next ? "Spell check on" : "Spell check off");
-                    if (next) suggest.load();
-                  },
-                  onIgnore: () => acceptWord(false),
-                  onAdd: () => acceptWord(true),
-                }
-              : undefined
-          }
-        />
-      )}
-
       <div className="flex flex-wrap items-center justify-between gap-2 px-1 text-xs text-muted">
         <span>
           {counts.words} {counts.words === 1 ? "word" : "words"} · {counts.chars}{" "}
@@ -585,7 +732,7 @@ export default function KeyboardApp({
             {suggest.marks.issues.length === 1 ? "possible misspelling" : "possible misspellings"}
           </button>
         )}
-        <span aria-live="polite" className="font-medium text-accent">
+        <span aria-live="polite" className="font-medium text-accent max-sm:sr-only">
           {announcement}
         </span>
         <span>
@@ -597,44 +744,128 @@ export default function KeyboardApp({
         </span>
       </div>
 
-      {emojiOpen && (
-        <Suspense
-          fallback={
-            <p className="rounded-xl border border-border bg-surface p-4 text-sm text-muted">
-              Loading emoji…
-            </p>
-          }
-        >
-          <EmojiPanel
+      {/*
+        Phones: suggestions, emoji and the keyboard dock at the bottom of the screen, like a
+        messaging app, so the keys stay in reach while the page scrolls.
+      */}
+      <div
+        data-dock
+        className="flex flex-col gap-3 phone:sticky phone:bottom-[var(--kb-inset,0px)] phone:z-20 phone:gap-1.5 phone:bg-bg phone:pt-1 phone:pb-[max(0.25rem,env(safe-area-inset-bottom))] max-sm:-mx-4 max-sm:px-1"
+      >
+        {announcement && (
+          <p
+            aria-hidden="true"
+            className="pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 rounded-full bg-text px-3 py-1.5 text-sm whitespace-nowrap text-bg shadow-lg sm:hidden"
+          >
+            {announcement}
+          </p>
+        )}
+        {askInput && (
+          <section
+            aria-labelledby="input-choice"
+            className="rounded-xl border border-accent bg-surface p-3 shadow-sm"
+          >
+            <h2 id="input-choice" className="mb-2 text-sm font-semibold">
+              How would you like to type?
+            </h2>
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                type="button"
+                onClick={() => chooseInput(false)}
+                className="min-h-12 rounded-lg bg-accent px-3 py-2 text-sm font-medium text-accent-fg"
+              >
+                Tap the keys below
+              </button>
+              <button
+                type="button"
+                onClick={() => chooseInput(true)}
+                className="min-h-12 rounded-lg border border-border bg-surface-2 px-3 py-2 text-sm font-medium"
+              >
+                {scheme ? "Use my phone keyboard (English letters)" : "Use my phone's keyboard"}
+              </button>
+            </div>
+          </section>
+        )}
+        {(roman || hasDictionary(slug)) && (
+          <CandidateBar
+            state={suggest.state}
+            roman={roman}
             lang={language.lang}
-            nativeName={language.name.native}
-            onPick={typeText}
-            onClose={() => {
-              setEmojiOpen(false);
-              editorRef.current?.focus({ preventScroll: true });
+            dir={language.dir}
+            predict={predict}
+            onTogglePredict={() => {
+              const next = !predict;
+              setPredict(next);
+              savePreference("predict", next ? "on" : "off");
+              setAnnouncement(next ? "Word suggestions on" : "Word suggestions off");
             }}
+            onPick={(i) => {
+              if (suggest.pick(i)) track("pick", { rank: i, roman });
+            }}
+            onKeep={keepRoman}
+            showNumbers={!coarse}
+            spelling={
+              hasDictionary(slug)
+                ? {
+                    enabled: spellcheck,
+                    onToggle: () => {
+                      const next = !spellcheck;
+                      setSpellcheck(next);
+                      savePreference("spellcheck", next ? "on" : "off");
+                      setAnnouncement(next ? "Spell check on" : "Spell check off");
+                      if (next) suggest.load();
+                    },
+                    onIgnore: () => acceptWord(false),
+                    onAdd: () => acceptWord(true),
+                  }
+                : undefined
+            }
           />
-        </Suspense>
-      )}
+        )}
 
-      {/* On phones the emoji panel takes the on-screen keyboard's place, as phone keyboards do. */}
-      {!phoneKeyboard && !(coarse && emojiOpen) && (
-        <VirtualKeyboard
-          labelFor={(code) => machine.labelFor(code, displayMods)}
-          longpress={layout.longpress}
-          shift={latch.shift}
-          altgr={latch.altgr}
-          hasAltGr={Object.values(layout.keys).some((k) => k?.ag || k?.sag)}
-          caps={displayMods.caps}
-          passthrough={passthrough}
-          nativeName={language.name.native}
-          letterKeys={letterKeys}
-          pressed={pressed}
-          onChar={onChar}
-          onAlternate={onAlternate}
-          onAction={onAction}
-        />
-      )}
+        {emojiOpen && (
+          <Suspense
+            fallback={
+              <p className="rounded-xl border border-border bg-surface p-4 text-sm text-muted">
+                Loading emoji…
+              </p>
+            }
+          >
+            <EmojiPanel
+              lang={language.lang}
+              nativeName={language.name.native}
+              onPick={typeText}
+              onClose={() => {
+                setEmojiOpen(false);
+                editorRef.current?.focus({ preventScroll: true });
+              }}
+            />
+          </Suspense>
+        )}
+
+        {/* On phones the emoji panel takes the on-screen keyboard's place, as phone keyboards do. */}
+        {!phoneKeyboard && !(coarse && emojiOpen) && (
+          <VirtualKeyboard
+            labelFor={(code) => machine.labelFor(code, displayMods)}
+            longpress={layout.longpress}
+            shift={latch.shift}
+            altgr={latch.altgr}
+            hasAltGr={Object.values(layout.keys).some((k) => k?.ag || k?.sag)}
+            caps={displayMods.caps}
+            passthrough={passthrough}
+            nativeName={language.name.native}
+            letterKeys={letterKeys}
+            pressed={pressed}
+            onChar={onChar}
+            onAlternate={onAlternate}
+            onAction={onAction}
+            phone={phone}
+            onCaret={onCaret}
+            onDeleteWords={onDeleteWords}
+            settings={keyboardSettings}
+          />
+        )}
+      </div>
     </div>
   );
 }

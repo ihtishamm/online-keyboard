@@ -3,7 +3,7 @@ import "@fontsource/noto-naskh-arabic/400.css";
 import "@fontsource/noto-nastaliq-urdu/400.css";
 import "@fontsource/noto-sans-bengali/400.css";
 import "@fontsource/noto-sans-devanagari/400.css";
-import { getLanguage, getLayout, layoutSlug } from "@okb/layouts";
+import { getLanguage, getLayout, languageBundle, layoutSlug } from "@okb/layouts";
 import { getCollection } from "astro:content";
 import { FONT_CLASS } from "./fonts";
 import KeyboardApp from "./keyboard/KeyboardApp";
@@ -80,17 +80,27 @@ const jsonLd = [
       {copy.headingNative}
     </span>
   </div>
-  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">{copy.intro}</p>
+  <p class="max-w-3xl text-sm text-muted max-sm:line-clamp-2 sm:mb-5 sm:text-base">{copy.intro}</p>
+  {/* Phones: the intro is clipped and the keyboard fills the screen; the guide is a tap away. */}
+  <a
+    href="#more"
+    class="mb-1 inline-flex min-h-11 items-center text-sm text-accent underline sm:hidden"
+  >
+    More about {language.name.en} typing ↓
+  </a>
 
   {/* Hydrate after first paint (capped at 500 ms) so React never delays the static render. */}
   <KeyboardApp
     client:idle={{ timeout: 500 }}
-    slug={slug}
+    bundle={languageBundle(slug)}
     layoutId={layoutId}
     explicitLayout={!isDefault}
   />
 
-  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_1fr]">
+  <div
+    id="more"
+    class="below-fold mt-12 grid scroll-mt-4 grid-cols-1 gap-10 lg:grid-cols-[2fr_1fr]"
+  >
     <section aria-labelledby="layout-heading" class="min-w-0">
       <h2 id="layout-heading" class="mb-2 text-xl font-semibold">
         {layout.name.en} layout{" "}

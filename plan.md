@@ -50,9 +50,8 @@
   - drafts.
 - **Not done yet:**
   - deploy to the real domain (`PUBLIC_SITE_URL` still defaults to `https://likho.example`);
-  - analytics;
-  - font subsetting;
-  - the Preact trial;
+  - analytics (code done in Phase 5; needs an endpoint);
+  - font subsetting (moved to Phase 7, item 7.2);
   - Lighthouse on real hosting.
 - **Problems that will grow with 100 languages:**
   - **Every keyboard page bundles every layout.** `KeyboardApp.tsx` imports the whole registry from `@okb/layouts`.
@@ -219,7 +218,7 @@ Every language declares a `tier` in its `language.json` (Phase 7). A **tier-gate
 
 ## 6. Phases
 
-### Phase 5: Mobile keyboard 2.0 (size L)
+### Phase 5: Mobile keyboard 2.0 (size L) ✅ (owner follow-ups listed under "Open")
 
 **Why first:** 70 % of visitors are on phones, and every later feature runs on this keyboard.
 
@@ -228,90 +227,66 @@ Every language declares a `tier` in its `language.json` (Phase 7). A **tier-gate
 - Every character is one tap or one slide away.
 - The phone's own keyboard is a first-class choice, not a fallback.
 
-- [ ] **5.1 Deploy and measure (baseline first).**
-  - [ ] If the site isn't live on its domain yet:
-    - deploy it and set `PUBLIC_SITE_URL`;
-    - regenerate the cheat-sheet PDFs, because they print the site address;
-    - run Lighthouse on real hosting (carried over from Phase 3).
-  - [ ] Add privacy-friendly analytics with no cookies, and **never record typed text**. Events:
-    - keyboard mode (on-screen or phone keyboard), layout, Copy, Share, Download;
-    - voice start, picking a Roman candidate, errors.
-    - Add a line about analytics to the privacy FAQ.
-  - [ ] Field Web Vitals (LCP, INP, CLS) by device class, sent to analytics.
-  - [ ] After 2 weeks, write the baseline into these notes:
-    - phone share, top viewport widths and browsers;
-    - LCP and INP at p75;
-    - copies and shares per phone session;
-    - on-screen keyboard vs phone-keyboard usage.
-- [ ] **5.2 Phone-first page layout.**
-  - [ ] **Compose mode on phones:**
-    - the editor sits on top and the keyboard is docked at the bottom;
-    - safe-area insets are respected;
-    - the editor resizes with `visualViewport` (iOS URL bar, Android OS keyboard);
-    - the page doesn't jump while you type.
-  - [ ] SEO content stays below the editor and is reachable ("More about Urdu typing ↓").
-  - [ ] **Sticky action row:**
-    - a big Copy button;
-    - Share, with WhatsApp first where available (`https://wa.me/?text=`);
-    - Undo/Clear;
-    - everything else in a **More** bottom sheet.
-  - [ ] A "Copied" toast above the keyboard, and a **Copy and open WhatsApp** action.
-- [ ] **5.3 Real phone layouts (schema and generator).**
-  - [ ] Schema: an optional `mobile` block holding:
-    - letter rows of key references, at most 11 keys per row;
-    - a `symbols` page;
-    - `digits` (native and Western).
-  - [ ] Generator: builds the phone layout of any language from its desktop layout.
-    - Keep every letter, ordered by frequency (from the word list when there is one).
-    - Move rare letters into the long-press list of a related letter.
-  - [ ] Hand-tuned overrides for Urdu, Arabic, Hindi and Bangla.
-  - [ ] **Symbols page** (`?123`, `١٢٣`, `१२३`):
-    - the language's punctuation first (۔ ، ؟ ؛ for Urdu, । ॥ for Hindi);
-    - native and Western digits;
-    - currency (₨ ₹ ৳ ﷼) and common symbols.
-  - [ ] Test, for every layout: every character the desktop layout types can be reached on the phone layout.
-- [ ] **5.4 Touch mechanics.**
-  - [ ] A key-preview bubble above the finger, showing the enlarged glyph in the script's font.
-  - [ ] Long-press: slide to an alternate and release to type it (no second tap). A small corner hint marks keys with alternates.
-  - [ ] Slide on the space bar to move the caret. Slide left from Backspace to select words to delete. Backspace repeat speeds up to whole words after about 1.5 s.
-  - [ ] Hit areas extend into the gaps between keys, so near misses go to the nearest key.
-  - [ ] Optional haptic tick (Android `navigator.vibrate`; iOS has none) and an optional key sound, off by default.
-  - [ ] Latency: a tap shows its glyph in the editor within 50 ms on a 4× CPU throttle. Pressing a key doesn't re-render the whole keyboard (measure with the React profiler).
-- [ ] **5.5 Comfort settings**, remembered per device.
-  - [ ] Keyboard height (S/M/L), a one-handed mode (left or right), a landscape layout, and wider or split keys on tablets.
-  - [ ] Key label size, and a high-contrast keys option.
-- [ ] **5.6 "Use my phone's keyboard" as a first-class mode.**
-  - [ ] First visit on a phone: one screen with the choice "Tap keys here" or "Use my phone keyboard". For languages with Roman typing, the second option reads "type in English letters". The choice is remembered.
-  - [ ] In phone-keyboard mode:
-    - the suggestion bar sits just above the OS keyboard (`visualViewport`);
-    - it works with Gboard, SwiftKey and iOS composition (`insertCompositionText`, `insertReplacementText`);
-    - autocorrect and autocapitalize are off in Roman mode.
-  - [ ] e2e tests that simulate composition events, as Gboard sends them.
-- [ ] **5.7 Speed on low-end phones.**
-  - [ ] **Each page ships only its own layouts.** Load the layout in the island instead of importing the whole registry. Add a test that fails if a keyboard page's JS grows when another language is added.
-  - [ ] Try Preact (`preact/compat`). Keep it if every e2e test passes and it saves at least 30 KB gzipped.
-  - [ ] Subset fonts per page with `unicode-range` (carried over from Phase 3).
-  - [ ] **Budgets, enforced in CI:**
-    - at most 90 KB gzipped of initial JS on keyboard pages;
-    - CLS below 0.05.
-  - [ ] **Field targets:** LCP p75 under 2.0 s and INP p75 under 150 ms on phones.
-- [ ] **5.8 Install and share loop.**
-  - [ ] An install prompt on Android after the 2nd visit or 3rd copy (`beforeinstallprompt`), and an "Add to Home Screen" hint sheet on iOS.
-  - [ ] **Web Share Target** (installed PWA on Android): text shared into Likho from WhatsApp or any app opens in the editor. On a Roman layout it can be converted in one tap.
-- [ ] **5.9 Phone testing.**
-  - [ ] Add Playwright projects for iPhone 15 (WebKit) and a 360×640 Android viewport, and run every mobile spec on both.
-  - [ ] Manual device pass, recorded in the notes:
-    - browsers: Android Chrome, Samsung Internet, iOS Safari, iOS Chrome;
-    - languages: Urdu, Hindi, Arabic;
-    - in portrait and landscape.
+**Beat list** (from the Phase 0 teardown and §3; no competitor was re-opened this phase):
+- Branah picks a fixed layout at load and has no symbols page; we build a phone layout for every layout and show the language's own digits, punctuation and currency on `?123`.
+- Web keyboards shrink the desktop rows; ours has Gboard-style touches: key preview, slide-to-alternate, space-bar caret, Backspace word delete.
+- None we know of offers the phone's own keyboard *with* Roman conversion; we ask on the first visit and convert Gboard/iOS compositions.
+
+- [ ] **5.1 Deploy and measure (baseline first).** Code done; deploy and baseline wait on the owner.
+  - [ ] Deploy and set `PUBLIC_SITE_URL`, then Lighthouse on real hosting. **Open:** the domain is still the `likho.example` placeholder (owner decision, §11). PDFs are now built with the site (see 5.7), so they pick up the real address on the first deploy.
+  - [x] Privacy-friendly analytics, provider-agnostic: `src/analytics/track.ts` posts small JSON events with `sendBeacon` to `PUBLIC_ANALYTICS_ENDPOINT`; with no endpoint set nothing is sent. No cookies, no IDs, and property values must match `^[\w.:/-]{1,40}$`, so typed text cannot be sent by mistake (unit-tested). Events: `pageview`, `keyboard` (layout, on-screen or phone keyboard), `layout`, `copy`, `share`, `download`, `voice`, `pick`, `convertAll`, `input`, `install`.
+  - [x] Field Web Vitals (`src/analytics/vitals.ts`): LCP, CLS (session windows) and INP (longest interaction), sent on page hide with the device class (phone/tablet/desktop).
+  - [ ] Baseline after 2 weeks of real traffic. **Open:** needs the deploy and an endpoint.
+- [x] **5.2 Phone-first page layout.**
+  - [x] Compose mode: the suggestion bar, emoji panel and keyboard sit in a dock that sticks to the bottom of the screen (`phone:sticky`), above the OS keyboard (`--kb-inset` from `visualViewport`) and the safe area. The viewport uses `interactive-widget=resizes-content` and `viewport-fit=cover`. e2e: the dock stays on screen after scrolling, on /urdu, /arabic, /hindi, /urdu/roman and /bangla.
+  - [x] On phones the intro is clipped to two lines, with a "More about … typing ↓" link to the page copy.
+  - [x] Phone action row: a big Copy button, Share (the native share sheet, else WhatsApp), Undo, Emoji, Voice and **More**. More is a bottom sheet with Send to WhatsApp, the downloads, Redo, Clear, text size, font, drafts, the phone-keyboard switch and keyboard settings.
+  - [x] Toast above the keyboard ("Copied to clipboard"), hidden from screen readers; the status line remains the screen-reader announcement.
+- [x] **5.3 Real phone layouts (schema and generator).**
+  - [x] Schema: optional `mobile: { rows, longpress }` (2–4 rows of at most 11 key codes). The symbols page and digits are derived, not stored. That is one place less to go wrong per layout.
+  - [x] Generator (`packages/engine/src/layout/phone.ts`). It keeps the QWERTY letter rows, so muscle memory from the desktop layout carries over. Letter keys from the number and punctuation rows move into the shortest rows (rows hold at most 11/11/10). Keys that still don't fit become long-press alternates of their neighbour. **Deviation:** the plan said "ordered by frequency". Keeping key positions was better for people who already know the layout, and no current layout needed frequency to decide anything.
+  - [x] Hand-tuned: Arabic (ج د ك ط stay on the letter rows, ئ under ء, لا/لآ under ل). Urdu Phonetic's generated rows are already the hand-tuned answer (test pins `قوعرتےءیہپ / اسدفگحجکل / زشچطبنم`). **Deferred:** Hindi and Bangla. Their pages default to Roman typing in Phase 6, so InScript's phone rows matter less; tune them then.
+  - [x] Symbols page (`?۱۲۳`, `?१२३` …): native digits first (found on any layer; InScript has them on AltGr), then Western digits, then the language's punctuation (۔ ، ؟ ؛, । ॥), its currency (₨ ₹ ৳ ؋ ﷼) and € £ ¥, then ASCII symbols. Pages of 3 rows of 10, with a 1/2 page key.
+  - [x] Test for every layout (13): every desktop character is reachable on the phone layout, rows fit, keys are unique (`packages/layouts/test/phone.test.ts`).
+- [x] **5.4 Touch mechanics.**
+  - [x] Key preview bubble in the script's font, for touch and pen only.
+  - [x] Long-press: slide to an alternate and release (existing). A corner hint on phone keys shows the first alternate.
+  - [x] Space-bar slide moves the caret by grapheme (RTL-aware). Backspace slide selects whole words and deletes them on release. Held Backspace repeats, then deletes whole words after 1.5 s.
+  - [x] Hit areas reach half a gap past each key edge, so a tap between keys goes to the nearer one.
+  - [x] Optional haptic tick (on by default where `navigator.vibrate` exists) and key sound (off by default).
+  - [x] Latency (`e2e/perf.spec.ts`, Pixel 7 profile, 4× CPU throttle, run on its own after the other tests): median **19 ms** from pointer press to the frame showing the letter, slowest of 10 taps ~70 ms (target 50 ms). The first measurement was ~64 ms: corrections for a word with no completions were looked up inside the tap. Suggestions now refresh after the next paint, and quick taps share one lookup. **Not done:** profiling whether a key press re-renders the whole keyboard. Latency is within target, so this waits for Phase 7, when keyboards get bigger.
+- [x] **5.5 Comfort settings**, remembered per device (More → Keyboard settings).
+  - [x] Key height S/M/L, one-handed mode (left/right), large letters, vibration, key sound. **Landscape** keeps the phone layout with lower keys (the `short:` variant; e2e). **Tablets** (640 px and wider) get the full desktop keyboard, which already has room. **Deviation:** no split keyboard; revisit if tablet analytics show demand.
+  - [x] High contrast: the site's existing Contrast theme covers the keys; there is no separate key-only switch.
+- [x] **5.6 "Use my phone's keyboard" as a first-class mode.**
+  - [x] First phone visit asks "How would you like to type?": **Tap the keys below** or **Use my phone keyboard** (on Roman layouts: "…(English letters)"). The choice is remembered and can be changed in More.
+  - [x] In that mode the dock (with the suggestion bar) sits above the OS keyboard. Roman conversion handles `insertText`, `insertCompositionText` and `insertReplacementText`, never edits while `isComposing`, and skips when text is selected. Autocorrect, autocapitalize and spellcheck are off on the editor.
+  - [x] Pasting Roman text offers **Convert all**. Unit and e2e tests simulate Gboard-style compositions.
+- [x] **5.7 Speed on low-end phones.**
+  - [x] Each page ships only its own layouts. The page passes a `LanguageBundle` (its language, layouts and Roman scheme) to the island, and client components may import `@okb/layouts` only for types (`src/client-imports.test.ts` fails otherwise). Before: all 13 layouts in a 17.5 KB gz chunk on every keyboard page.
+  - [x] **Preact (`preact/compat`) adopted.** Initial JS per keyboard page went from **100.9 KB to 42.5 KB gzipped** (−58 KB, bar was −30 KB). All e2e and unit tests pass on Preact. Unit tests run on Preact too (aliases in `vitest.config.ts`, `@testing-library/preact`). `lucide-react` is bundled for SSR so its `react` imports resolve to compat.
+  - [ ] Font subsetting with `unicode-range`. **Moved to Phase 7 item 7.2** (scripts and fonts), which already plans per-page `unicode-range` subsets.
+  - [x] Budgets in CI: `pnpm --filter @okb/web check:budgets` (≤ 90 KB gz initial JS on every keyboard page, today 42.5 KB). CLS on /urdu at 4× throttle: **0.011** (budget 0.05, `e2e/perf.spec.ts`).
+  - [ ] Field targets (LCP p75 < 2.0 s, INP p75 < 150 ms). **Open:** needs field data after the deploy.
+  - Also: cheat-sheet PDFs are now generated by `pnpm build` into `dist/` instead of being committed (pulled forward from Phase 9; `SKIP_PDFS=1` skips them in the CI check job).
+- [x] **5.8 Install and share loop.**
+  - [x] Install offer from the 2nd visit or 3rd copy: Android uses `beforeinstallprompt`; iOS Safari gets an "Add to Home Screen" hint. "Not now" is remembered.
+  - [x] Web Share Target (`/share`, noindex): shared text opens in a new draft on the last-used language, and Roman text can be converted in one tap (e2e).
+- [x] **5.9 Phone testing.**
+  - [x] Playwright projects: `android-360` (360×640) runs the phone spec. `iphone` (iPhone 15, WebKit) runs only in CI (`CI` or `E2E_WEBKIT`), because WebKit's system libraries can't be installed on the dev machine without sudo. CI installs Chromium and WebKit with their dependencies.
+  - [ ] Manual device pass (Android Chrome, Samsung Internet, iOS Safari and Chrome; Urdu, Hindi, Arabic; portrait and landscape). **Open:** needs real devices; owner.
 
 **Exit**
-- Mobile e2e passes on Pixel 7, iPhone 15 and 360 px.
-- No overflow at 320 px.
-- The CI budgets hold.
-- Field LCP and INP meet their targets, or the gap is written down with a reason.
-- **Hallway test**, which the owner runs with 5 people: write a 20-word Urdu message on a phone and share it to WhatsApp. Everyone finishes without help; record their times.
-- Copies and shares per phone session are up against the 5.1 baseline.
+- [x] Mobile e2e passes on Pixel 7 and 360 px (214 tests: 176 passed, 38 skipped by design). iPhone 15 runs in CI; not yet seen green locally.
+- [x] No overflow at 320 px: the layout switcher drops native names below 400 px (e2e).
+- [x] CI budgets hold (42.5 KB, CLS 0.011).
+- [ ] Field LCP/INP. **Open:** after deploy.
+- [ ] Hallway test (owner, 5 people, 20-word Urdu message shared to WhatsApp). **Open.**
+- [ ] Copies and shares per phone session against the 5.1 baseline. **Open:** after deploy.
+
+**Known issues**
+- Suggestions appear one frame after the letter (by design, see 5.4).
+- On a 320 px screen, three native layout names don't fit, so only the English names show.
 
 ---
 

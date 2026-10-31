@@ -1,0 +1,29 @@
+---
+/**
+ * Web Share Target (see manifest.webmanifest): text shared to the installed app from WhatsApp
+ * or any other app lands here. It is handed to the keyboard of the language used last (via
+ * sessionStorage, never a server) and opens there in a new draft.
+ */
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Opening shared text… | Likho" description="Opens text shared to Likho." noindex>
+  <p class="text-muted">Opening your text…</p>
+  <script is:inline>
+    (() => {
+      const q = new URLSearchParams(location.search);
+      const text = [q.get("title"), q.get("text"), q.get("url")]
+        .filter((v) => v && v.trim())
+        .join("\n");
+      let slug = "urdu";
+      try {
+        if (text) sessionStorage.setItem("likho:shared", text);
+        const last = localStorage.getItem("likho:lastLanguage");
+        if (last && /^[a-z-]+$/.test(last)) slug = last;
+      } catch {
+        /* storage blocked: open the keyboard empty */
+      }
+      location.replace("/" + slug);
+    })();
+  </script>
+</Base>

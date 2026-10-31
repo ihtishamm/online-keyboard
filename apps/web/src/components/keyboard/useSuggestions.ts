@@ -60,6 +60,18 @@ export interface SuggestionsOptions {
   spellcheck: boolean;
 }
 
+/** Run `fn` once the browser has painted the current frame. */
+function afterPaint(fn: () => void) {
+  if (typeof requestAnimationFrame === "function") requestAnimationFrame(() => setTimeout(fn));
+  else setTimeout(fn);
+}
+
+const NATIVE_INSERTS: ReadonlySet<string> = new Set([
+  "insertText",
+  "insertCompositionText",
+  "insertReplacementText",
+]);
+
 export function useSuggestions(options: SuggestionsOptions) {
   const { slug, editorRef, scheme, predict, spellcheck } = options;
   const [dictionary, setDictionary] = useState<Dictionary | null>(null);
@@ -134,8 +146,8 @@ export function useSuggestions(options: SuggestionsOptions) {
   /** Where the user is typing a word: it is not underlined until the caret leaves it. */
   const typingAt = useRef({ text: "", caret: -1 });
 
-  /** Re-read the editor: suggestions for the caret, underlines for the text. */
-  const refresh = useCallback(() => {
+  /** Re-read the editor now: suggestions for the caret, underlines for the text. */
+  const refreshNow = useCallback(() => {
     setState(compute());
     const el = editorRef.current;
     if (!el) return;
@@ -150,7 +162,24 @@ export function useSuggestions(options: SuggestionsOptions) {
   }, [compute, editorRef, spellcheck, dictionary, spell, load]);
 
   // Re-rank when the dictionary arrives or the mode changes.
-  useEffect(refresh, [refresh]);
+  useEffect(refreshNow, [refreshNow]);
+
+  /**
+   * Re-read the editor after the next paint. Looking up corrections can take tens of
+   * milliseconds on a slow phone; deferred, the typed letter shows first, and quick taps
+   * share one lookup.
+   */
+  const pending = useRef(false);
+  const latest = useRef(refreshNow);
+  latest.current = refreshNow;
+  const refresh = useCallback(() => {
+    if (pending.current) return;
+    pending.current = true;
+    afterPaint(() => {
+      pending.current = false;
+      latest.current();
+    });
+  }, []);
 
   /** Use suggestion `index`, followed by a space. Returns false if there is none. */
   const pick = useCallback(
@@ -199,10 +228,13 @@ export function useSuggestions(options: SuggestionsOptions) {
   const afterNativeInput = useCallback(
     (event: InputEvent): void => {
       const el = editorRef.current;
-      if (!el || !translit || event.inputType !== "insertText" || !event.data) return;
+      // Phone keyboards send words as compositions (Gboard, Samsung) or replacements (picked
+      // suggestions, autocorrect). Never edit mid-composition: the keyboard would lose track.
+      if (!el || !translit || event.isComposing || !NATIVE_INSERTS.has(event.inputType)) return;
+      if (el.selectionStart !== el.selectionEnd) return;
       const caret = el.selectionStart;
-      const typed = el.value.slice(caret - event.data.length, caret);
-      if (typed !== event.data || !/^[\s.,?!;:]$/.test(typed)) return;
+      const typed = el.value[caret - 1] ?? "";
+      if (!/^[\s.,?!;:]$/.test(typed)) return;
       const word = romanWordBefore(el.value, caret - typed.length);
       if (!word) return;
       const punct = translit.scheme.punctuation[typed] ?? typed;
@@ -238,5 +270,7 @@ export function useSuggestions(options: SuggestionsOptions) {
     load,
     ready: dictionary !== null,
     punctuation: translit?.scheme.punctuation ?? {},
+    /** Roman mode: convert a whole Roman text (pasted or shared) word by word. */
+    convertText: translit ? (text: string) => translit.convertText(text) : null,
   };
 }

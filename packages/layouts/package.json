@@ -5,7 +5,8 @@
   "type": "module",
   "description": "Keyboard layout data and the language registry.",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./bundle": "./src/bundle.ts"
   },
   "scripts": {
     "import:layouts": "UPDATE_LAYOUTS=1 vitest run test/imported.test.ts",

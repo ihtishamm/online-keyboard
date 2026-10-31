@@ -13,10 +13,22 @@ async function openWithText(page: Page) {
 }
 
 async function menu(page: Page, item: string) {
-  // The label is visually hidden on phones, so click the summary itself.
+  if (page.viewportSize()!.width < 640) {
+    // Phones: downloads are in the More sheet.
+    await page.getByRole("button", { name: "More", exact: true }).click();
+    await page
+      .getByRole("dialog", { name: "More tools" })
+      .getByRole("button", { name: new RegExp(item.replace(/[().]/g, "\\$&")) })
+      .click();
+    return;
+  }
+  // The label is visually hidden on narrow screens, so click the summary itself.
   await page.locator('summary[title="Download"]').click();
   await page.getByRole("button", { name: item }).click();
 }
+
+/** The status line read out to screen readers (phones also show a toast copy). */
+const status = (page: Page) => page.locator("[aria-live]").filter({ hasText: /\S/ });
 
 test("downloads Word documents with the text", async ({ page }) => {
   await openWithText(page);
@@ -85,5 +97,5 @@ test("says when there is nothing to download", async ({ page }) => {
   await page.goto("/urdu");
   await expect(page.getByRole("textbox", { name: "Urdu text" })).toBeEditable();
   await menu(page, "Word (.docx)");
-  await expect(page.getByText("Nothing to download yet")).toBeAttached();
+  await expect(status(page)).toHaveText("Nothing to download yet");
 });

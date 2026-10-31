@@ -71,5 +71,6 @@ const faqs = [
     languageName="Urdu"
     nativeName="اردو"
     lessons={lessons}
+    layouts={Object.fromEntries(Object.keys(lessons).map((id) => [id, getLayout(id)]))}
   />
 </TypingPage>

@@ -7,7 +7,53 @@
     "en": "Standard",
     "native": "قياسي"
   },
-  "source": "Windows \"Arabic (101)\", from Unicode CLDR 43 keyboard data (Unicode License v3).",
+  "source": "Windows \"Arabic (101)\", from Unicode CLDR 43 keyboard data (Unicode License v3). Phone rows are ours, in the order Arabic phone keyboards use.",
+  "mobile": {
+    "rows": [
+      [
+        "KeyQ",
+        "KeyW",
+        "KeyE",
+        "KeyR",
+        "KeyT",
+        "KeyY",
+        "KeyU",
+        "KeyI",
+        "KeyO",
+        "KeyP",
+        "BracketLeft"
+      ],
+      [
+        "KeyA",
+        "KeyS",
+        "KeyD",
+        "KeyF",
+        "KeyG",
+        "KeyH",
+        "KeyJ",
+        "KeyK",
+        "KeyL",
+        "Semicolon",
+        "Quote"
+      ],
+      [
+        "Backquote",
+        "KeyX",
+        "KeyC",
+        "KeyV",
+        "KeyN",
+        "KeyM",
+        "Comma",
+        "Period",
+        "Slash",
+        "BracketRight"
+      ]
+    ],
+    "longpress": {
+      "KeyX": ["ئ"],
+      "KeyG": ["لا", "لآ"]
+    }
+  },
   "keys": {
     "Backquote": {
       "n": "ذ",

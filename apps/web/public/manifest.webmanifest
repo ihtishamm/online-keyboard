@@ -9,20 +9,57 @@
   "background_color": "#f7f6f3",
   "theme_color": "#0f6b5c",
   "icons": [
-    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
     {
       "src": "/icons/maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
-    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
   ],
   "shortcuts": [
-    { "name": "Urdu keyboard", "short_name": "Urdu", "url": "/urdu" },
-    { "name": "Arabic keyboard", "short_name": "Arabic", "url": "/arabic" },
-    { "name": "Hindi keyboard", "short_name": "Hindi", "url": "/hindi" },
-    { "name": "InPage to Unicode", "short_name": "InPage", "url": "/inpage-to-unicode" }
-  ]
+    {
+      "name": "Urdu keyboard",
+      "short_name": "Urdu",
+      "url": "/urdu"
+    },
+    {
+      "name": "Arabic keyboard",
+      "short_name": "Arabic",
+      "url": "/arabic"
+    },
+    {
+      "name": "Hindi keyboard",
+      "short_name": "Hindi",
+      "url": "/hindi"
+    },
+    {
+      "name": "InPage to Unicode",
+      "short_name": "InPage",
+      "url": "/inpage-to-unicode"
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
 }

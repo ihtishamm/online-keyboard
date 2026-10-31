@@ -1,5 +1,6 @@
 import { act, cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { languageBundle } from "@okb/layouts";
 import KeyboardApp from "./KeyboardApp";
 import type { RecognitionResultEvent } from "./voice";
 
@@ -34,7 +35,9 @@ class FakeRecognition {
 const editor = () => screen.getByRole<HTMLTextAreaElement>("textbox");
 const mic = () => screen.getByRole("button", { name: "Voice typing" });
 const renderUrdu = () =>
-  render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+  render(
+    <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+  );
 
 beforeEach(() => {
   localStorage.clear();

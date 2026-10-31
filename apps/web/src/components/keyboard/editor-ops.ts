@@ -71,3 +71,59 @@ export function replaceAll(el: HTMLTextAreaElement, text: string): void {
   }
   replaceRange(el, text, 0, el.value.length);
 }
+
+/** Grapheme boundaries of `text` (where a caret may sit), with a code-point fallback. */
+function boundaries(text: string): number[] {
+  const points = [0];
+  if (typeof Intl !== "undefined" && "Segmenter" in Intl) {
+    for (const { index, segment } of new Intl.Segmenter(undefined, {
+      granularity: "grapheme",
+    }).segment(text)) {
+      points.push(index + segment.length);
+    }
+  } else {
+    let i = 0;
+    for (const ch of text) points.push((i += ch.length));
+  }
+  return points;
+}
+
+/**
+ * Move the caret by `steps` characters as seen on screen (positive = right). In right-to-left
+ * text, right on screen is backwards in the text. Never splits a character.
+ */
+export function moveCaret(el: HTMLTextAreaElement, steps: number, dir: "ltr" | "rtl"): void {
+  if (!steps) return;
+  const logical = dir === "rtl" ? -steps : steps;
+  const points = boundaries(el.value);
+  let target: number;
+  if (logical > 0) {
+    // First boundary after the caret counts as one step.
+    const k = points.findIndex((p) => p > el.selectionEnd);
+    target = k < 0 ? el.value.length : points[Math.min(points.length - 1, k + logical - 1)]!;
+  } else {
+    let k = -1;
+    points.forEach((p, i) => p < el.selectionStart && (k = i));
+    target = k < 0 ? 0 : points[Math.max(0, k + logical + 1)]!;
+  }
+  el.setSelectionRange(target, target);
+}
+
+/** Start of the `words`-th word before `caret` (spaces before the caret are part of it). */
+export function wordsBefore(text: string, caret: number, words: number): number {
+  let i = caret;
+  for (let n = 0; n < words && i > 0; n++) {
+    while (i > 0 && /\s/.test(text[i - 1]!)) i--;
+    while (i > 0 && !/\s/.test(text[i - 1]!)) i--;
+  }
+  return i;
+}
+
+/** Delete `start..end` as one undoable step. */
+export function deleteRange(el: HTMLTextAreaElement, start: number, end: number): void {
+  if (start >= end) return;
+  if (document.activeElement !== el) el.focus({ preventScroll: true });
+  el.setSelectionRange(start, end);
+  if (exec(el, "delete")) return;
+  replaceRange(el, "", start, end);
+}

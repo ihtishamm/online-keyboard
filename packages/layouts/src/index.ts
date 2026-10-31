@@ -1,5 +1,6 @@
 import type { TranslitScheme } from "@okb/engine";
 import type { Layout, LayoutInput } from "@okb/engine/layout";
+import type { LanguageBundle } from "./bundle";
 import { UR_ROMAN } from "./translit/ur-roman";
 import arStandard from "../data/ar/standard.json";
 import balPhonetic from "../data/bal/phonetic.json";
@@ -176,10 +177,7 @@ export function getLanguage(slug: string): Language {
   return language;
 }
 
-/** The URL segment for a layout within its language, e.g. `ur-phonetic` -> `phonetic`. */
-export function layoutSlug(layoutId: string): string {
-  return layoutId.slice(layoutId.indexOf("-") + 1);
-}
+export { bundleLayout, layoutSlug } from "./bundle";
 
 export function allLayouts(): Layout[] {
   return [...LAYOUTS.values()];
@@ -194,3 +192,13 @@ export function getScheme(id: string): TranslitScheme {
   if (!scheme) throw new Error(`Unknown transliteration scheme "${id}"`);
   return scheme;
 }
+
+export function languageBundle(slug: string): LanguageBundle {
+  const language = getLanguage(slug);
+  const layouts = language.layouts.map(getLayout);
+  const schemes: Record<string, TranslitScheme> = {};
+  for (const l of layouts) if (l.translit) schemes[l.translit] = getScheme(l.translit);
+  return { language, layouts, schemes };
+}
+
+export type { LanguageBundle } from "./bundle";

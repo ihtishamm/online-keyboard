@@ -1,5 +1,6 @@
 import { cleanup, fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { languageBundle } from "@okb/layouts";
 import KeyboardApp from "./KeyboardApp";
 
 vi.mock("./dictionary", async () => {
@@ -37,7 +38,9 @@ afterEach(cleanup);
 
 describe("Roman mode", () => {
   const renderRoman = () =>
-    render(<KeyboardApp slug="urdu" layoutId="ur-roman" explicitLayout={true} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-roman" explicitLayout={true} />,
+    );
 
   it("converts each word on Space, ranked by the dictionary", async () => {
     renderRoman();
@@ -70,13 +73,14 @@ describe("Roman mode", () => {
     expect(editor().value).toBe("3.5");
   });
 
-  it("picks another spelling with a number key", () => {
+  it("picks another spelling with a number key", async () => {
     renderRoman();
     typeRoman("he");
-    const buttons = within(bar(/Urdu spellings/)).getAllByRole("button");
-    expect(buttons.map((b) => b.textContent)).toEqual(
-      expect.arrayContaining([expect.stringContaining("ہی")]),
-    );
+    // The bar updates after the next paint.
+    await waitFor(() => {
+      const buttons = within(bar(/Urdu spellings/)).getAllByRole("button");
+      expect(buttons[1]?.textContent).toContain("ہی");
+    });
     press("Digit2", "2");
     expect(editor().value).toBe("ہی ");
   });
@@ -86,16 +90,48 @@ describe("Roman mode", () => {
     typeRoman("ok");
     press("Escape", "Escape");
     expect(editor().value).toBe("ok ");
-    expect(await screen.findByText("Kept as typed")).toBeTruthy();
+    await waitFor(() =>
+      expect(document.querySelector("[aria-live]")?.textContent).toBe("Kept as typed"),
+    );
   });
 
   it("converts after a phone keyboard types a space", () => {
-    render(<KeyboardApp slug="urdu" layoutId="ur-roman" explicitLayout={true} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-roman" explicitLayout={true} />,
+    );
     const el = editor();
     el.value = "mera ";
     el.setSelectionRange(5, 5);
     fireEvent.input(el, { inputType: "insertText", data: " " });
     expect(el.value).toBe("میرا ");
+  });
+
+  it("converts words that phone keyboards commit as compositions or replacements", () => {
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-roman" explicitLayout={true} />,
+    );
+    const el = editor();
+    // Gboard: the word arrives as a composition, then the space ends it.
+    el.value = "mera ";
+    el.setSelectionRange(5, 5);
+    fireEvent.input(el, { inputType: "insertCompositionText", data: "mera ", isComposing: false });
+    expect(el.value).toBe("میرا ");
+    // A picked suggestion or autocorrect replaces the word, space included.
+    el.value = "میرا naam ";
+    el.setSelectionRange(10, 10);
+    fireEvent.input(el, { inputType: "insertReplacementText", data: "naam " });
+    expect(el.value).toBe("میرا نام ");
+  });
+
+  it("never edits the text while the phone keyboard is still composing", () => {
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-roman" explicitLayout={true} />,
+    );
+    const el = editor();
+    el.value = "mera ";
+    el.setSelectionRange(5, 5);
+    fireEvent.input(el, { inputType: "insertCompositionText", data: "mera ", isComposing: true });
+    expect(el.value).toBe("mera ");
   });
 
   it("leaves words alone after switching to English", () => {
@@ -112,7 +148,9 @@ describe("Roman mode", () => {
 
 describe("word suggestions", () => {
   const renderPhonetic = () =>
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
 
   it("completes the word being typed", async () => {
     renderPhonetic();
@@ -151,7 +189,9 @@ describe("word suggestions", () => {
 
 describe("spell check", () => {
   const renderPhonetic = () =>
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
 
   /** Put `text` in the editor as if typed, with the caret at `caret` (default: the end). */
   function setText(text: string, caret = text.length) {

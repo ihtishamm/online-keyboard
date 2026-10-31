@@ -45,6 +45,18 @@ export const layoutSchema = z
     deadkeys: z.array(deadKeySchema).default([]),
     /** Mobile long-press alternates. */
     longpress: z.partialRecord(keyCode, z.array(z.string().min(1)).min(1)).default({}),
+    /**
+     * Hand-tuned phone rows (key codes, top to bottom, at most 11 a row). Without it the phone
+     * layout is generated from the desktop one (see phone.ts).
+     */
+    mobile: z
+      .object({
+        rows: z.array(z.array(keyCode).min(1).max(11)).min(2).max(4),
+        /** Extra phone long-press alternates, for letters of keys left off the rows. */
+        longpress: z.partialRecord(keyCode, z.array(z.string().min(1)).min(1)).optional(),
+      })
+      .strict()
+      .optional(),
     /** Optional id of a transliteration scheme that pairs with this layout. */
     translit: z.string().optional(),
   })

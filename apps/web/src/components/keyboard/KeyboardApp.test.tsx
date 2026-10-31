@@ -1,5 +1,6 @@
 import { act, cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { languageBundle } from "@okb/layouts";
 import KeyboardApp from "./KeyboardApp";
 
 const editor = () => screen.getByRole<HTMLTextAreaElement>("textbox");
@@ -27,7 +28,9 @@ afterEach(cleanup);
 
 describe("KeyboardApp", () => {
   it("types Urdu from physical keys on the phonetic layout", () => {
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
     for (const code of ["KeyP", "KeyA", "KeyK", "KeyS", "KeyT", "KeyA", "KeyN"]) press(code);
     expect(editor().value).toBe("پاکستان");
     expect(editor().dir).toBe("rtl");
@@ -35,19 +38,25 @@ describe("KeyboardApp", () => {
   });
 
   it("uses the shift layer when Shift is held", () => {
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
     press("KeyT", { shiftKey: true });
     expect(editor().value).toBe("ٹ");
   });
 
   it("lets Ctrl shortcuts through untouched", () => {
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
     press("KeyA", { ctrlKey: true });
     expect(editor().value).toBe("");
   });
 
   it("switches to English typing with Esc", () => {
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
     press("Escape", { key: "Escape" });
     press("KeyA");
     // Not intercepted: the browser would type "a" natively, so nothing is inserted by us.
@@ -56,7 +65,9 @@ describe("KeyboardApp", () => {
   });
 
   it("switches layouts and remembers the choice", () => {
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
     fireEvent.click(screen.getByRole("radio", { name: /Standard/ }));
     expect(location.pathname).toBe("/urdu/standard");
     press("KeyJ");
@@ -66,19 +77,25 @@ describe("KeyboardApp", () => {
 
   it("restores the saved layout on the main page but not on a layout page", () => {
     localStorage.setItem("likho:layout:urdu", "ur-standard");
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
     expect(screen.getByRole("radio", { name: /Standard/ }).getAttribute("aria-checked")).toBe(
       "true",
     );
     cleanup();
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={true} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={true} />,
+    );
     expect(screen.getByRole("radio", { name: /Phonetic/ }).getAttribute("aria-checked")).toBe(
       "true",
     );
   });
 
   it("types from on-screen keys and applies one-shot Shift", () => {
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
     tap(keyButton("KeyB"));
     tap(screen.getAllByRole("button", { name: "Shift" })[0]!);
     tap(keyButton("KeyT"));
@@ -89,7 +106,13 @@ describe("KeyboardApp", () => {
   it("shows long-press alternates and inserts the chosen one", () => {
     vi.useFakeTimers();
     try {
-      render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+      render(
+        <KeyboardApp
+          bundle={languageBundle("urdu")}
+          layoutId="ur-phonetic"
+          explicitLayout={false}
+        />,
+      );
       fireEvent.pointerDown(keyButton("KeyA"), { pointerId: 1 });
       act(() => vi.advanceTimersByTime(500));
       fireEvent.pointerUp(keyButton("KeyA"), { pointerId: 1 });
@@ -103,7 +126,9 @@ describe("KeyboardApp", () => {
   });
 
   it("deletes with the on-screen backspace", () => {
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
     tap(keyButton("KeyS"));
     tap(keyButton("KeyL"));
     tap(screen.getAllByRole("button", { name: "Backspace" })[0]!);
@@ -111,7 +136,9 @@ describe("KeyboardApp", () => {
   });
 
   it("labels keys with their character and Latin position", () => {
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
     expect(screen.getByRole("button", { name: "ب, B key" })).toBe(keyButton("KeyB"));
     tap(screen.getAllByRole("button", { name: "Shift" })[0]!);
     expect(screen.getByRole("button", { name: "zabar, Y key" })).toBe(keyButton("KeyY"));
@@ -120,7 +147,9 @@ describe("KeyboardApp", () => {
 
 describe("toolbar", () => {
   const renderApp = () =>
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
 
   it("copies the text to the clipboard and says so", async () => {
     const writeText = vi.fn().mockResolvedValue(undefined);
@@ -132,7 +161,9 @@ describe("toolbar", () => {
       fireEvent.click(screen.getByRole("button", { name: "Copy" }));
     });
     expect(writeText).toHaveBeenCalledWith("سل");
-    expect(await screen.findByText("Copied to clipboard")).toBeTruthy();
+    await waitFor(() =>
+      expect(document.querySelector("[aria-live]")?.textContent).toBe("Copied to clipboard"),
+    );
   });
 
   it("clears the text", () => {
@@ -166,7 +197,13 @@ describe("autosave", () => {
   it("restores the text after a reload", async () => {
     vi.useFakeTimers({ shouldAdvanceTime: true });
     try {
-      render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+      render(
+        <KeyboardApp
+          bundle={languageBundle("urdu")}
+          layoutId="ur-phonetic"
+          explicitLayout={false}
+        />,
+      );
       await act(async () => {
         await vi.runAllTimersAsync();
       });
@@ -177,7 +214,13 @@ describe("autosave", () => {
       expect(await screen.findByText("Saved on this device")).toBeTruthy();
       cleanup();
 
-      render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+      render(
+        <KeyboardApp
+          bundle={languageBundle("urdu")}
+          layoutId="ur-phonetic"
+          explicitLayout={false}
+        />,
+      );
       await act(async () => {
         await vi.runAllTimersAsync();
       });
@@ -188,7 +231,9 @@ describe("autosave", () => {
   });
 
   it("keeps several drafts", async () => {
-    render(<KeyboardApp slug="urdu" layoutId="ur-phonetic" explicitLayout={false} />);
+    render(
+      <KeyboardApp bundle={languageBundle("urdu")} layoutId="ur-phonetic" explicitLayout={false} />,
+    );
     const draftSelect = await screen.findByRole("combobox", { name: "Draft" });
     press("KeyS");
     fireEvent.click(screen.getByRole("button", { name: "New draft" }));

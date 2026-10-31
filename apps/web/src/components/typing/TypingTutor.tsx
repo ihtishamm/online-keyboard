@@ -1,4 +1,4 @@
-import { getLayout } from "@okb/layouts";
+import type { Layout } from "@okb/engine";
 import { ArrowLeft, ArrowRight, Check, RotateCcw } from "lucide-react";
 import { useEffect, useState } from "react";
 import { loadPreference, savePreference } from "../keyboard/preferences";
@@ -13,6 +13,8 @@ export interface TypingTutorProps {
   nativeName: string;
   /** Lessons for each layout, in layout order. */
   lessons: Readonly<Record<string, readonly Lesson[]>>;
+  /** Layouts by id, for every key of `lessons`. */
+  layouts: Readonly<Record<string, Layout>>;
 }
 
 /** Accuracy needed to pass a lesson. */
@@ -59,7 +61,7 @@ export default function TypingTutor(props: TypingTutorProps) {
   const [drill, setDrill] = useState<Drill>(() => createDrill([]));
   const [saved, setSaved] = useState(false);
   const lessons = props.lessons[layoutId] ?? [];
-  const layout = getLayout(layoutId);
+  const layout = props.layouts[layoutId]!;
   const lesson = active === null ? null : lessons[active]!;
 
   useEffect(() => {
@@ -105,7 +107,7 @@ export default function TypingTutor(props: TypingTutorProps) {
           <Segmented
             label="Keyboard layout"
             value={layoutId}
-            options={layoutIds.map((id) => ({ value: id, label: getLayout(id).name.en }))}
+            options={layoutIds.map((id) => ({ value: id, label: props.layouts[id]!.name.en }))}
             onChange={(id) => {
               setLayoutId(id);
               savePreference("typing:layout", id);
