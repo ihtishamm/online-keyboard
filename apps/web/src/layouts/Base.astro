@@ -3,6 +3,7 @@ import "@fontsource-variable/inter";
 import interLatin from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url";
 import "../styles/global.css";
 import ThemeSwitcher from "../components/ThemeSwitcher.astro";
+import type { FontId } from "@okb/layouts";
 import { SITE } from "../config/site";
 
 interface Props {
@@ -15,6 +16,12 @@ interface Props {
    * skip the download; the logo then stays in Naskh unless the font is already cached.
    */
   nastaliq?: boolean;
+  /**
+   * The page language's default font. Key caps and other `font-script` text then use that
+   * font's stack only, and pages in other scripts draw the Urdu logo with system fonts, so
+   * each page downloads only its own script's fonts.
+   */
+  font?: FontId;
   /** Keep the page out of search results (utility pages such as /share). */
   noindex?: boolean;
   /**
@@ -29,6 +36,7 @@ const {
   description = SITE.description,
   lang = "en",
   nastaliq = true,
+  font,
   noindex = false,
   credits = { wikipedia: { name: "Urdu", code: "ur" } },
 } = Astro.props;
@@ -36,7 +44,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html
+  lang={lang}
+  style={font ? `--stack-script: var(--stack-${font === "nastaliq" ? "naskh" : font})` : undefined}
+>
   <head>
     <meta charset="utf-8" />
     <meta
@@ -111,7 +122,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <a href="/" class="flex h-10 items-center gap-2 text-text no-underline">
           <span class="text-xl font-semibold tracking-tight">{SITE.name}</span>
-          <span class="font-nastaliq text-lg text-accent" lang="ur" dir="rtl">
+          <span
+            class:list={[
+              "text-lg text-accent",
+              font === "devanagari" || font === "bengali" ? "font-system-arabic" : "font-nastaliq",
+            ]}
+            lang="ur"
+            dir="rtl"
+          >
             {SITE.nameNative}
           </span>
         </a>

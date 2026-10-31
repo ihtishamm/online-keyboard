@@ -13,6 +13,7 @@ import { LANGUAGE_FILES, RAW_LAYOUTS, SCHEME_LIST } from "./registry";
 // The schemes, by name (UR_ROMAN …), and the raw lists.
 export * from "./registry";
 export type { FontId, LanguageFile, Tier } from "./language";
+export { SCRIPTS, scriptInfo, type ScriptInfo } from "./scripts";
 
 /** A language as the site uses it: its languages/<slug>/language.json. */
 export type Language = LanguageFile;

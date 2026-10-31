@@ -47,6 +47,7 @@ const dakshina = ["hi", "bn", "sd"].includes(language.code);
   title={title}
   description={description}
   nastaliq={language.fonts.includes("nastaliq")}
+  font={language.fonts[0]}
   credits={creditsFor(language)}
 >
   <h1 class="mb-2 text-2xl font-semibold tracking-tight sm:text-3xl">{heading}</h1>

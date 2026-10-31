@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { generateRegistry } from "../scripts/registry";
-import { LANGUAGES, getLayout } from "../src";
+import { LANGUAGES, getLayout, scriptInfo } from "../src";
 
 const DIR = new URL("../languages/", import.meta.url);
 const FONTS = ["nastaliq", "naskh", "devanagari", "bengali"];
@@ -23,7 +23,9 @@ describe("language registry (languages/<slug>/)", () => {
     expect(Number.isInteger(l.order)).toBe(true);
     expect(() => new Intl.Locale(l.lang)).not.toThrow();
     expect(l.script).toMatch(/^[A-Z][a-z]{3}$/);
-    expect(["ltr", "rtl"]).toContain(l.dir);
+    const script = scriptInfo(l.script);
+    expect(l.dir).toBe(script.dir);
+    for (const f of l.fonts) expect(script.fonts).toContain(f);
     expect(l.name.en && l.name.native).toBeTruthy();
     expect(l.fonts.length).toBeGreaterThan(0);
     for (const f of l.fonts) expect(FONTS).toContain(f);

@@ -132,10 +132,16 @@
  * --font-* tokens into .font-* utilities that override the deferred-Nastaliq rules below.
  */
 :root {
-  --stack-nastaliq: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
-  --stack-naskh: "Noto Naskh Arabic", serif;
-  --stack-devanagari: "Noto Sans Devanagari", sans-serif;
-  --stack-bengali: "Noto Sans Bengali", sans-serif;
+  /*
+   * Each stack ends in fonts that fill the gaps (src/fonts.test.ts checks every typeable
+   * character): Naskh for the few letters Noto Nastaliq lacks (ۉ, ڲ), Inter for symbols
+   * such as ₹. Browsers fetch a fallback's files only for characters that need it.
+   */
+  --stack-nastaliq:
+    "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Noto Naskh Arabic", "Inter Variable", serif;
+  --stack-naskh: "Noto Naskh Arabic", "Inter Variable", serif;
+  --stack-devanagari: "Noto Sans Devanagari", "Inter Variable", sans-serif;
+  --stack-bengali: "Noto Sans Bengali", "Inter Variable", sans-serif;
   /* Key caps, candidates and other UI glyphs in any of our scripts (fonts load per glyph range). */
   --stack-script: "Noto Naskh Arabic", "Noto Sans Devanagari", "Noto Sans Bengali", serif;
   --text-editor: 1.75rem;
@@ -192,6 +198,12 @@
 
   .font-script {
     font-family: var(--stack-script);
+  }
+
+  /* Arabic script without a web font (the logo on pages in other scripts): system fonts only. */
+  .font-system-arabic {
+    font-family: "Geeza Pro", "Segoe UI", "Noto Sans Arabic", system-ui, sans-serif;
+    line-height: 1.8;
   }
 }
 

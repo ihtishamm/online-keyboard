@@ -1,0 +1,57 @@
+import type { FontId } from "./language";
+
+/**
+ * Writing systems (plan item 7.2), by ISO 15924 code. Each language.json names its `script`;
+ * its fonts must be among the script's, and test/scripts.test.ts holds them together.
+ */
+export interface ScriptInfo {
+  name: string;
+  dir: "ltr" | "rtl";
+  /** Editor fonts for this script, best first (see apps/web global.css). */
+  fonts: readonly FontId[];
+  /** The script's own digits, 0–9, where it has them. */
+  digits?: string;
+  /** Its own punctuation marks (full stop, comma, question mark …). */
+  punctuation: string;
+  /** Letters come in upper and lower case. */
+  cased: boolean;
+  /** Letters join their neighbours (shaping, invisible run-together words). */
+  joining: boolean;
+}
+
+export const SCRIPTS: Readonly<Record<string, ScriptInfo>> = {
+  Arab: {
+    name: "Arabic",
+    dir: "rtl",
+    fonts: ["naskh", "nastaliq"],
+    // Arabic-Indic digits; Persian, Urdu and their neighbours use the extended forms ۰–۹.
+    digits: "٠١٢٣٤٥٦٧٨٩",
+    punctuation: "،؛؟۔٪",
+    cased: false,
+    joining: true,
+  },
+  Deva: {
+    name: "Devanagari",
+    dir: "ltr",
+    fonts: ["devanagari"],
+    digits: "०१२३४५६७८९",
+    punctuation: "।॥",
+    cased: false,
+    joining: false,
+  },
+  Beng: {
+    name: "Bengali",
+    dir: "ltr",
+    fonts: ["bengali"],
+    digits: "০১২৩৪৫৬৭৮৯",
+    punctuation: "।",
+    cased: false,
+    joining: false,
+  },
+};
+
+export function scriptInfo(code: string): ScriptInfo {
+  const info = SCRIPTS[code];
+  if (!info) throw new Error(`Unknown script "${code}": add it to packages/layouts/src/scripts.ts`);
+  return info;
+}

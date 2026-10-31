@@ -40,6 +40,7 @@ describe("registry golden snapshot", () => {
       1,
     );
     if (process.env.UPDATE_GOLDEN === "1") writeFileSync(FILE, now + "\n");
-    expect(now + "\n").toBe(readFileSync(FILE, "utf8"));
+    // Compared as data, so reformatting the file changes nothing.
+    expect(JSON.parse(now)).toEqual(JSON.parse(readFileSync(FILE, "utf8")));
   });
 });

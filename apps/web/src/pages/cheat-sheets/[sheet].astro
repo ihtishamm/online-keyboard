@@ -62,7 +62,12 @@ const PRIMARY =
   "inline-flex h-10 items-center gap-2 rounded-lg border border-accent bg-accent px-4 text-sm font-medium text-accent-fg no-underline hover:opacity-90";
 ---
 
-<Base title={title} description={description} nastaliq={language.fonts.includes("nastaliq")}>
+<Base
+  title={title}
+  description={description}
+  nastaliq={language.fonts.includes("nastaliq")}
+  font={language.fonts[0]}
+>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <nav class="mb-3 text-sm text-muted" aria-label="Breadcrumb">
     <a class="text-accent underline" href="/cheat-sheets">

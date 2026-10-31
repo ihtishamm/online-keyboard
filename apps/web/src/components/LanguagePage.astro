@@ -85,6 +85,7 @@ const jsonLd = [
   title={title}
   description={description}
   nastaliq={language.fonts.includes("nastaliq")}
+  font={language.fonts[0]}
   credits={creditsFor(language)}
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
