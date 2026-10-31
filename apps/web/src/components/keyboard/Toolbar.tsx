@@ -1,9 +1,11 @@
-import type { FontId } from "@okb/layouts";
+import type { FontId, TranslateCodes } from "@okb/layouts";
 import {
   AArrowDown,
   AArrowUp,
+  BookOpenText,
   Copy,
   Download,
+  ExternalLink,
   FilePlus2,
   FileText,
   Image as ImageIcon,
@@ -39,6 +41,7 @@ import {
   shareLinks,
 } from "./actions";
 import { draftTitle, type DraftState } from "./drafts";
+import { lookupLinks, lookupText } from "./lookup";
 import { redo, replaceAll, undo } from "./editor-ops";
 import type { KeyboardSettings } from "./keyboard-settings";
 import { track } from "../../analytics/track";
@@ -80,6 +83,8 @@ export interface ToolbarProps {
   phoneKeyboard?: { enabled: boolean; onToggle: () => void };
   /** Comfort settings for the on-screen keyboard (offered in the phone's More sheet). */
   keyboardSettings?: { value: KeyboardSettings; onChange: (next: KeyboardSettings) => void };
+  /** Translation services for the look-up menu (Wiktionary and web search are always there). */
+  translate: TranslateCodes;
   /** Called after a successful copy. */
   onCopied?: () => void;
 }
@@ -129,6 +134,7 @@ export default function Toolbar(props: ToolbarProps) {
   const { editorRef, announce } = props;
   const [nativeShareAvailable, setNativeShareAvailable] = useState(false);
   const [shareText, setShareText] = useState("");
+  const [lookup, setLookup] = useState("");
   const [cardText, setCardText] = useState<string | null>(null);
   const toolbarRef = useRef<HTMLDivElement>(null);
   useEffect(() => setNativeShareAvailable(canNativeShare()), []);
@@ -223,6 +229,32 @@ export default function Toolbar(props: ToolbarProps) {
     props.onFontSize(next);
     announce(`Text size ${next}`);
   };
+
+  /** Links to other sites: plain links, so nothing is sent until one is clicked. */
+  const lookupItems = (
+    <>
+      <p className="px-3 pt-1 pb-2 text-xs text-muted">
+        {lookup.trim() ? "Opens another site in a new tab." : "Type or select some text first."}
+      </p>
+      {lookupLinks(lookup, props.translate).map((link) => (
+        <a
+          key={link.id}
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={POPUP_ITEM}
+          onClick={(e) => {
+            e.currentTarget.closest("details")?.removeAttribute("open");
+            track("lookup", { via: link.id });
+          }}
+        >
+          <ExternalLink {...icon} />
+          {link.label}
+          <span className="sr-only"> (opens another site)</span>
+        </a>
+      ))}
+    </>
+  );
 
   const drafts = props.drafts.state;
   const [moreOpen, setMoreOpen] = useState(false);
@@ -429,6 +461,18 @@ export default function Toolbar(props: ToolbarProps) {
           </div>
         </details>
       )}
+      <details
+        className="relative max-sm:hidden"
+        onToggle={(e) =>
+          (e.currentTarget as HTMLDetailsElement).open && setLookup(lookupText(el()))
+        }
+      >
+        <summary className={`${BTN} cursor-pointer list-none`} title="Look up">
+          <BookOpenText {...icon} />
+          <span>Look up</span>
+        </summary>
+        <div className={`${POPUP} w-60`}>{lookupItems}</div>
+      </details>
       <details className="relative max-sm:hidden">
         <summary className={`${BTN} cursor-pointer list-none`} title="Download">
           <Download {...icon} />
@@ -462,7 +506,10 @@ export default function Toolbar(props: ToolbarProps) {
       <ToolButton
         label="More"
         icon={<MoreHorizontal {...icon} />}
-        onClick={() => setMoreOpen(true)}
+        onClick={() => {
+          setLookup(lookupText(el()));
+          setMoreOpen(true);
+        }}
         pressed={moreOpen}
         className="h-11 w-11 justify-center max-[359px]:w-10 sm:hidden"
       />
@@ -545,6 +592,10 @@ export default function Toolbar(props: ToolbarProps) {
               {fontPicker}
               {draftControls}
             </div>
+            <section aria-label="Look up" className="flex flex-col border-t border-border pt-3">
+              <h3 className="px-3 text-sm font-semibold">Look up</h3>
+              {lookupItems}
+            </section>
             {phoneKeyboardButton && <div>{phoneKeyboardButton}</div>}
             {ks && (
               <section

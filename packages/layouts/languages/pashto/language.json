@@ -9,10 +9,16 @@
     "en": "Pashto",
     "native": "پښتو"
   },
+  "aliases": ["Pushto", "Pakhto", "Pukhto"],
+  "region": "south-asia",
   "fonts": ["naskh", "nastaliq"],
   "layouts": ["ps-standard", "ps-roman"],
   "sample": "پښتو زموږ ژبه ده.",
   "voice": [],
   "wordList": true,
+  "translate": {
+    "google": "ps",
+    "bing": "ps"
+  },
   "tier": null
 }

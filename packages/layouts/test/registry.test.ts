@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { generateRegistry } from "../scripts/registry";
-import { LANGUAGES, getLayout, scriptInfo } from "../src";
+import { LANGUAGES, REGIONS, getLayout, scriptInfo } from "../src";
 
 const DIR = new URL("../languages/", import.meta.url);
 const FONTS = ["nastaliq", "naskh", "devanagari", "bengali"];
@@ -38,11 +38,27 @@ describe("language registry (languages/<slug>/)", () => {
     for (const tag of l.voice) expect(() => new Intl.Locale(tag)).not.toThrow();
     expect(typeof l.wordList).toBe("boolean");
     expect(["A", "B", "C", null]).toContain(l.tier);
+    expect(Object.keys(REGIONS)).toContain(l.region);
+    for (const alias of l.aliases) expect(alias).toMatch(/^\p{Lu}[\p{L} ()-]+$/u);
+    for (const [service, code] of Object.entries(l.translate)) {
+      expect(["google", "bing", "deepl"]).toContain(service);
+      expect(() => new Intl.Locale(code)).not.toThrow();
+    }
     // Only known fields: a typo would otherwise be ignored silently.
     const raw = JSON.parse(readFileSync(new URL(`${slug}/language.json`, DIR), "utf8")) as object;
     const known = ["slug", "code", "order", "lang", "script", "dir", "name", "fonts", "layouts"];
-    known.push("sample", "voice", "wordList", "tier", "notes");
+    known.push("aliases", "region", "sample", "voice", "wordList", "translate", "tier", "notes");
     for (const key of Object.keys(raw)) expect(known).toContain(key);
+  });
+
+  it("aliases name no other language", () => {
+    const names = LANGUAGES.flatMap((l) => [l.name.en, ...l.aliases].map((n) => [n, l.slug]));
+    const seen = new Map<string, string>();
+    for (const [name, slug] of names) {
+      const key = name!.toLowerCase();
+      expect(seen.get(key) ?? slug, `${name} names two languages`).toBe(slug);
+      seen.set(key, slug!);
+    }
   });
 
   it("orders languages without ties", () => {

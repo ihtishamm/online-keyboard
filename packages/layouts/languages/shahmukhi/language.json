@@ -9,11 +9,16 @@
     "en": "Punjabi (Shahmukhi)",
     "native": "پنجابی"
   },
+  "aliases": ["Punjabi", "Panjabi", "Lahnda"],
+  "region": "south-asia",
   "fonts": ["nastaliq", "naskh"],
   "layouts": ["pnb-phonetic", "pnb-roman"],
   "sample": "پنجابی ساڈی ماں بولی اے۔",
   "voice": [],
   "wordList": true,
+  "translate": {
+    "google": "pa-Arab"
+  },
   "tier": null,
   "notes": "No voice: speech services return Punjabi in Gurmukhi."
 }

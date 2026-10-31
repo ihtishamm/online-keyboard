@@ -9,11 +9,17 @@
     "en": "Bangla",
     "native": "বাংলা"
   },
+  "aliases": ["Bengali"],
+  "region": "south-asia",
   "fonts": ["bengali"],
   "layouts": ["bn-roman", "bn-inscript"],
   "sample": "বাংলা আমার মাতৃভাষা।",
   "voice": ["bn-BD", "bn-IN"],
   "wordList": true,
+  "translate": {
+    "google": "bn",
+    "bing": "bn"
+  },
   "tier": null,
   "notes": "English letters first: what most visitors search for (decision §11.1)."
 }

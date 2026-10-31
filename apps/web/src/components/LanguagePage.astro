@@ -87,8 +87,15 @@ const jsonLd = [
   nastaliq={language.fonts.includes("nastaliq")}
   font={language.fonts[0]}
   credits={creditsFor(language)}
+  language={language.slug}
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <script>
+    // Recent languages for the picker and the home page (stored on this device only).
+    import { rememberLanguage } from "./picker/languages";
+    const slug = location.pathname.split("/")[1];
+    if (slug) rememberLanguage(slug);
+  </script>
   <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
     <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">{heading}</h1>
     {accuracy?.beta && (

@@ -87,6 +87,8 @@ test("home page links every language", async ({ page }) => {
   await page.goto("/");
   for (const { path } of LANGUAGES) {
     const home = path.split("/").slice(0, 2).join("/");
-    await expect(page.locator(`main a[href="${home}"]`)).toBeVisible();
+    // The list by region shows first; the same links by script are a tab away.
+    await expect(page.locator(`[data-browse="region"] a[href="${home}"]`)).toBeVisible();
+    await expect(page.locator(`[data-browse="script"] a[href="${home}"]`)).toBeAttached();
   }
 });

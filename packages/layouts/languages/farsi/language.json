@@ -9,10 +9,16 @@
     "en": "Farsi",
     "native": "فارسی"
   },
+  "aliases": ["Persian", "Parsi"],
+  "region": "middle-east",
   "fonts": ["naskh", "nastaliq"],
   "layouts": ["fa-standard", "fa-roman"],
   "sample": "فارسی شکر است.",
   "voice": ["fa-IR"],
   "wordList": true,
+  "translate": {
+    "google": "fa",
+    "bing": "fa"
+  },
   "tier": null
 }

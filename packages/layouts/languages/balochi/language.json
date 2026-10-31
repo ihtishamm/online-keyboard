@@ -9,11 +9,14 @@
     "en": "Balochi",
     "native": "بلوچی"
   },
+  "aliases": ["Baluchi"],
+  "region": "south-asia",
   "fonts": ["nastaliq", "naskh"],
   "layouts": ["bal-phonetic", "bal-roman"],
   "sample": "بلوچی منی زبان انت.",
   "voice": [],
   "wordList": false,
+  "translate": {},
   "tier": null,
   "notes": "No Wikipedia, so no word list yet: Roman typing runs on rules alone."
 }

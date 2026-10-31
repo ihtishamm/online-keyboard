@@ -9,10 +9,16 @@
     "en": "Urdu",
     "native": "اردو"
   },
+  "aliases": [],
+  "region": "south-asia",
   "fonts": ["nastaliq", "naskh"],
   "layouts": ["ur-phonetic", "ur-standard", "ur-roman"],
   "sample": "اردو ہماری قومی زبان ہے۔",
   "voice": ["ur-PK", "ur-IN"],
   "wordList": true,
+  "translate": {
+    "google": "ur",
+    "bing": "ur"
+  },
   "tier": "B"
 }

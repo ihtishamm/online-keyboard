@@ -9,10 +9,15 @@
     "en": "Kashmiri",
     "native": "کٲشُر"
   },
+  "aliases": ["Koshur"],
+  "region": "south-asia",
   "fonts": ["nastaliq", "naskh"],
   "layouts": ["ks-phonetic", "ks-roman"],
   "sample": "کٲشُر زبان",
   "voice": [],
   "wordList": true,
+  "translate": {
+    "bing": "ks"
+  },
   "tier": null
 }

@@ -3,10 +3,20 @@ import "@fontsource/noto-naskh-arabic/400.css";
 import "@fontsource/noto-nastaliq-urdu/400.css";
 import "@fontsource/noto-sans-bengali/400.css";
 import "@fontsource/noto-sans-devanagari/400.css";
-import { LANGUAGES } from "@okb/layouts";
+import { LANGUAGES, REGIONS, type Language } from "@okb/layouts";
 import { FONT_CLASS } from "../components/fonts";
+import HomeSuggestions from "../components/picker/HomeSuggestions";
+import { SCRIPT_NAMES, pickerLanguage } from "../components/picker/languages";
 import Base from "../layouts/Base.astro";
 import { SITE } from "../config/site";
+
+const pickerLanguages = LANGUAGES.map(pickerLanguage);
+const group = (key: (l: Language) => string, names: Record<string, string>) =>
+  Object.keys(names)
+    .map((k) => [names[k]!, LANGUAGES.filter((l) => key(l) === k)] as const)
+    .filter(([, list]) => list.length > 0);
+const byRegion = group((l) => l.region, REGIONS);
+const byScript = group((l) => l.script, SCRIPT_NAMES);
 ---
 
 <Base title={`${SITE.name}: ${SITE.tagline}`}>
@@ -18,29 +28,76 @@ import { SITE } from "../config/site";
     <p class="mx-auto mt-4 max-w-2xl text-muted">{SITE.description}</p>
   </section>
 
-  <section aria-labelledby="keyboards-heading" class="mx-auto max-w-3xl">
-    <h2 id="keyboards-heading" class="mb-4 text-xl font-semibold">
-      Keyboards
-    </h2>
-    <ul class="grid gap-3 sm:grid-cols-2">
-      {LANGUAGES.map((l) => (
-        <li>
-          <a
-            href={`/${l.slug}`}
-            class="flex items-center justify-between rounded-xl border border-border bg-surface px-5 py-4 text-text no-underline hover:border-accent"
-          >
-            <span class="text-lg font-medium">{l.name.en} keyboard</span>
-            <span
-              class={`${FONT_CLASS[l.fonts[0]!]} text-2xl text-accent`}
-              lang={l.lang}
-              dir={l.dir}
-            >
-              {l.name.native}
-            </span>
-          </a>
-        </li>
-      ))}
-    </ul>
+  <HomeSuggestions client:idle languages={pickerLanguages} />
+
+  <section id="all-languages" aria-labelledby="keyboards-heading" class="group mx-auto max-w-3xl">
+    <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
+      <h2 id="keyboards-heading" class="text-xl font-semibold">
+        Keyboards
+      </h2>
+      <fieldset class="inline-flex rounded-lg border border-border bg-surface p-0.5 text-sm">
+        <legend class="sr-only">Browse by</legend>
+        {(
+          [
+            ["region", "By region"],
+            ["script", "By script"],
+          ] as const
+        ).map(([value, label]) => (
+          <label class="cursor-pointer rounded-md px-3 py-2 text-muted has-checked:bg-accent has-checked:text-accent-fg has-focus-visible:outline-2">
+            <input
+              type="radio"
+              name="browse"
+              value={value}
+              id={`browse-${value}`}
+              checked={value === "region"}
+              class="sr-only"
+            />
+            {label}
+          </label>
+        ))}
+      </fieldset>
+    </div>
+    {(
+      [
+        ["region", byRegion],
+        ["script", byScript],
+      ] as const
+    ).map(([mode, groups]) => (
+      <div
+        data-browse={mode}
+        class:list={[
+          "flex flex-col gap-6",
+          mode === "region"
+            ? "group-has-[#browse-script:checked]:hidden"
+            : "hidden group-has-[#browse-script:checked]:flex",
+        ]}
+      >
+        {groups.map(([name, list]) => (
+          <section aria-label={name}>
+            <h3 class="mb-2 text-sm font-semibold tracking-wide text-muted uppercase">{name}</h3>
+            <ul class="grid gap-3 sm:grid-cols-2">
+              {list.map((l) => (
+                <li>
+                  <a
+                    href={`/${l.slug}`}
+                    class="flex items-center justify-between rounded-xl border border-border bg-surface px-5 py-4 text-text no-underline hover:border-accent"
+                  >
+                    <span class="text-lg font-medium">{l.name.en} keyboard</span>
+                    <span
+                      class={`${FONT_CLASS[l.fonts[0]!]} text-2xl text-accent`}
+                      lang={l.lang}
+                      dir={l.dir}
+                    >
+                      {l.name.native}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    ))}
   </section>
 
   <section aria-labelledby="tools-heading" class="mx-auto mt-10 max-w-3xl">

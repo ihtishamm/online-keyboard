@@ -9,11 +9,17 @@
     "en": "Sindhi",
     "native": "سنڌي"
   },
+  "aliases": [],
+  "region": "south-asia",
   "fonts": ["naskh"],
   "layouts": ["sd-phonetic", "sd-roman"],
   "sample": "سنڌي اسان جي ٻولي آهي.",
   "voice": [],
   "wordList": true,
+  "translate": {
+    "google": "sd",
+    "bing": "sd"
+  },
   "tier": null,
   "notes": "Noto Nastaliq Urdu lacks ڪ, the commonest Sindhi letter, and Sindhi is printed in Naskh."
 }

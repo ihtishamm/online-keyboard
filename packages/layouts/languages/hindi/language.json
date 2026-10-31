@@ -9,11 +9,17 @@
     "en": "Hindi",
     "native": "हिन्दी"
   },
+  "aliases": [],
+  "region": "south-asia",
   "fonts": ["devanagari"],
   "layouts": ["hi-roman", "hi-inscript"],
   "sample": "हिन्दी हमारी भाषा है।",
   "voice": ["hi-IN"],
   "wordList": true,
+  "translate": {
+    "google": "hi",
+    "bing": "hi"
+  },
   "tier": null,
   "notes": "English letters first: what most visitors search for (decision §11.1)."
 }

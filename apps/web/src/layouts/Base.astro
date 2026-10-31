@@ -3,7 +3,9 @@ import "@fontsource-variable/inter";
 import interLatin from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url";
 import "../styles/global.css";
 import ThemeSwitcher from "../components/ThemeSwitcher.astro";
-import type { FontId } from "@okb/layouts";
+import LanguagePicker from "../components/picker/LanguagePicker";
+import { pickerLanguage } from "../components/picker/languages";
+import { LANGUAGES, REGIONS, type FontId } from "@okb/layouts";
 import { SITE } from "../config/site";
 
 interface Props {
@@ -29,6 +31,8 @@ interface Props {
    * (name and subdomain) and, for Hindi, Bangla and Sindhi chat spellings, Dakshina.
    */
   credits?: { wikipedia?: { name: string; code: string }; dakshina?: boolean };
+  /** Slug of the page's language, marked as current in the language picker. */
+  language?: string;
 }
 
 const {
@@ -39,7 +43,10 @@ const {
   font,
   noindex = false,
   credits = { wikipedia: { name: "Urdu", code: "ur" } },
+  language,
 } = Astro.props;
+const pickerLanguages = LANGUAGES.map(pickerLanguage);
+const regions = Object.entries(REGIONS);
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -133,7 +140,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
             {SITE.nameNative}
           </span>
         </a>
-        <ThemeSwitcher />
+        <div class="flex items-center gap-2">
+          <LanguagePicker
+            client:idle
+            languages={pickerLanguages}
+            regions={regions}
+            current={language}
+          />
+          <ThemeSwitcher />
+        </div>
       </div>
     </header>
     <main id="main" class="mx-auto w-full max-w-6xl flex-1 px-4 py-6">

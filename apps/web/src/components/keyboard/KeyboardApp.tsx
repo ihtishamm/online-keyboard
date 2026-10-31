@@ -597,6 +597,7 @@ export default function KeyboardApp({
       <Toolbar
         editorRef={editorRef}
         fileBase={slug}
+        translate={language.translate}
         lang={language.lang}
         dir={language.dir}
         announce={setAnnouncement}

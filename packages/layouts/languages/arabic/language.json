@@ -9,6 +9,8 @@
     "en": "Arabic",
     "native": "العربية"
   },
+  "aliases": ["Arabi"],
+  "region": "middle-east",
   "fonts": ["naskh"],
   "layouts": ["ar-standard", "ar-roman"],
   "sample": "العربية لغة جميلة.",
@@ -26,5 +28,10 @@
     "ar-TN"
   ],
   "wordList": true,
+  "translate": {
+    "google": "ar",
+    "bing": "ar",
+    "deepl": "ar"
+  },
   "tier": null
 }

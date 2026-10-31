@@ -9,10 +9,13 @@
     "en": "Saraiki",
     "native": "سرائیکی"
   },
+  "aliases": ["Seraiki", "Siraiki", "Multani"],
+  "region": "south-asia",
   "fonts": ["nastaliq", "naskh"],
   "layouts": ["skr-phonetic", "skr-roman"],
   "sample": "سرائیکی ساݙی ماء بولی اے۔",
   "voice": [],
   "wordList": true,
+  "translate": {},
   "tier": null
 }

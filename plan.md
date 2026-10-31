@@ -430,18 +430,19 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
   - [x] Evaluated xkeyboard-config: permissive MIT/HPND notices in the project `COPYING`, most `symbols/` files carry none of their own. Not used yet (CLDR covers every layout we need); recorded in `packages/layouts/IMPORTS.md`.
   - [x] Added the ABNT2 (`IntlRo`) and JIS (`IntlYen`) keys to `keycodes.ts`.
   - [x] An import report for each layout: `packages/layouts/IMPORTS.md` (source, licence, coverage, skipped rules, our changes computed from the patch), kept fresh by `test/imported.test.ts`.
-- [ ] **7.4 Language picker and look-up.**
-  - [ ] **Searchable picker:**
-    - finds English and native names plus aliases (Farsi/Persian, Bangla/Bengali);
-    - shows recent languages first;
-    - groups languages by region;
-    - opens as a full-screen sheet on phones.
-  - [ ] **Home page:** suggests languages from `navigator.languages`, and lets you browse all of them by script or region.
-  - [ ] **Look-up menu** on every keyboard (the Lexilogos "Search & Translation" idea):
-    - Translate (Google, Bing or DeepL where they support the language);
-    - Wiktionary;
-    - web search.
-    - It opens a new tab only on click and is labelled as leaving the site.
+- [x] **7.4 Language picker and look-up.**
+  - [x] **Searchable picker** (`components/picker/`), a "Languages" button in every page header:
+    - finds English and native names plus aliases (Farsi/Persian, Bangla/Bengali); accents and Arabic vowel marks are ignored, and names that start with the query rank first;
+    - shows recent languages first (the last 5 keyboards opened, kept on the device);
+    - groups languages by region (`region` in language.json);
+    - opens as a full-screen sheet on phones (a native `<dialog>`); before hydration the button is a link to the home page list.
+  - [x] **Home page:** "For you" suggests recent keyboards and languages from `navigator.languages`, matched by language and likely script (pa-IN, Gurmukhi, does not suggest Shahmukhi). Browse all languages by region or by script, with no JavaScript needed.
+  - [x] **Look-up menu** on every keyboard (desktop toolbar; the More sheet on phones), for the selection or the whole text:
+    - Translate with Google, Bing or DeepL, only where the service's own language list includes the language (`translate` in language.json: Google Cloud Translation and Microsoft Translator lists, checked 2026-10-31; DeepL only for Arabic, since its text list could not be read without an API key);
+    - Wiktionary (the first line);
+    - web search (DuckDuckGo).
+    - Plain links that open a new tab only on click, labelled "Opens another site in a new tab". Analytics records only which link, never the text.
+  - Keyboard pages: 47.2 KB gzipped initial JS (was 43.8; budget 90).
 - [ ] **7.5 Latin toolkit** (Lexilogos keyboards, and the owner's English → Spanish/Italian typing).
   - [ ] **Default mode for Latin languages: "Easy accents".** Most people searching "French keyboard" have an English keyboard. The mode combines:
     - **QWERTY with US-International dead keys** (`'` `` ` `` `^` `"` `~`, and `'` + `c` → ç), the convention Windows and Linux users already know;

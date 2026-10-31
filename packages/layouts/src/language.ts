@@ -10,6 +10,30 @@ export type FontId = "nastaliq" | "naskh" | "devanagari" | "bengali";
  */
 export type Tier = "A" | "B" | "C" | null;
 
+/** Regions for browsing languages, in display order. */
+export const REGIONS = {
+  "south-asia": "South Asia",
+  "middle-east": "Middle East and North Africa",
+  "central-asia": "Central Asia",
+  europe: "Europe",
+  africa: "Africa",
+  "east-asia": "East Asia",
+  "southeast-asia": "Southeast Asia",
+  americas: "The Americas",
+  oceania: "Oceania",
+} as const;
+export type Region = keyof typeof REGIONS;
+
+/**
+ * Codes the translation sites use for the language, set only where the service's own list
+ * of supported languages includes it (Google Cloud Translation, Microsoft Translator, DeepL).
+ */
+export interface TranslateCodes {
+  google?: string;
+  bing?: string;
+  deepl?: string;
+}
+
 export interface LanguageFile {
   /** URL segment, e.g. `urdu` -> /urdu */
   slug: string;
@@ -23,6 +47,10 @@ export interface LanguageFile {
   script: string;
   dir: "ltr" | "rtl";
   name: { en: string; native: string };
+  /** Other English names people search for (Persian for Farsi, Bengali for Bangla). */
+  aliases: readonly string[];
+  /** Where most speakers live, for browsing by region. */
+  region: Region;
   /** Fonts offered in the editor; the first is the default. */
   fonts: readonly FontId[];
   /** Layout ids; the first is the default. Files: languages/<slug>/<id without code>.json. */
@@ -36,6 +64,8 @@ export interface LanguageFile {
   voice: readonly string[];
   /** Has a word list (@okb/dictionaries data/<code>/dict.txt). */
   wordList: boolean;
+  /** For the look-up menu's Translate links; empty when no service supports the language. */
+  translate: TranslateCodes;
   tier: Tier;
   /** Why something is the way it is, for whoever edits the file next. */
   notes?: string;
