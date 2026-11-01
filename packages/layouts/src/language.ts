@@ -2,7 +2,21 @@
  * The format of languages/<slug>/language.json (plan item 7.1). Checked by
  * test/registry.test.ts; the site reads it through `LANGUAGES`.
  */
-export type FontId = "nastaliq" | "naskh" | "devanagari" | "bengali" | "latin";
+export type FontId =
+  | "nastaliq"
+  | "naskh"
+  | "devanagari"
+  | "bengali"
+  | "gurmukhi"
+  | "gujarati"
+  | "oriya"
+  | "tamil"
+  | "telugu"
+  | "kannada"
+  | "malayalam"
+  | "sinhala"
+  | "thaana"
+  | "latin";
 
 /**
  * The tier a language has earned (plan §5.4), or null while it misses part of Tier C.

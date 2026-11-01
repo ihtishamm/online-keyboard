@@ -4,7 +4,10 @@ import { generateRegistry } from "../scripts/registry";
 import { LANGUAGES, REGIONS, getLayout, scriptInfo } from "../src";
 
 const DIR = new URL("../languages/", import.meta.url);
-const FONTS = ["nastaliq", "naskh", "devanagari", "bengali", "latin"];
+const FONTS = [
+  ...["nastaliq", "naskh", "devanagari", "bengali", "gurmukhi", "gujarati", "oriya", "tamil"],
+  ...["telugu", "kannada", "malayalam", "sinhala", "thaana", "latin"],
+];
 
 describe("language registry (languages/<slug>/)", () => {
   it("src/registry.ts is up to date (run node scripts/registry.ts)", () => {

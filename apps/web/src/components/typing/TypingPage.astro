@@ -3,10 +3,6 @@
  * Shared shell for the typing test and tutor pages: heading, intro, the island slot, how-to
  * steps, an explainer and FAQs, with WebApplication, HowTo and FAQPage structured data.
  */
-import "@fontsource/noto-naskh-arabic/400.css";
-import "@fontsource/noto-nastaliq-urdu/400.css";
-import "@fontsource/noto-sans-bengali/400.css";
-import "@fontsource/noto-sans-devanagari/400.css";
 import { LANGUAGES, type FontId } from "@okb/layouts";
 import Base from "../../layouts/Base.astro";
 import { FONT_CLASS } from "../fonts";
@@ -83,7 +79,13 @@ const jsonLd = [
 ];
 ---
 
-<Base title={p.title} description={p.description} credits={credits}>
+<Base
+  title={p.title}
+  description={p.description}
+  credits={credits}
+  font={font}
+  fonts={font === "nastaliq" || font === "naskh" ? ["nastaliq", "naskh"] : [font]}
+>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
     <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">{p.heading}</h1>

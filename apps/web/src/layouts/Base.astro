@@ -6,6 +6,7 @@ import ThemeSwitcher from "../components/ThemeSwitcher.astro";
 import LanguagePicker from "../components/picker/LanguagePicker";
 import { pickerLanguage } from "../components/picker/languages";
 import { LANGUAGES, REGIONS, type FontId } from "@okb/layouts";
+import { fontFaces } from "../styles/script-fonts";
 import { SITE } from "../config/site";
 
 interface Props {
@@ -24,6 +25,8 @@ interface Props {
    * each page downloads only its own script's fonts.
    */
   font?: FontId;
+  /** Script fonts whose @font-face rules the page carries (src/styles/script-fonts.ts). */
+  fonts?: readonly FontId[];
   /** Keep the page out of search results (utility pages such as /share). */
   noindex?: boolean;
   /**
@@ -45,6 +48,7 @@ const {
   lang = "en",
   nastaliq = true,
   font,
+  fonts = [],
   noindex = false,
   credits = { wikipedia: { name: "Urdu", code: "ur" } },
   language,
@@ -52,6 +56,9 @@ const {
 const pickerLanguages = LANGUAGES.map(pickerLanguage);
 const regions = Object.entries(REGIONS);
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const faces = fontFaces(fonts);
+// The logo is Urdu: in Nastaliq on Arabic-script pages and pages of no one script.
+const arabicLogo = font === undefined || font === "nastaliq" || font === "naskh";
 ---
 
 <!doctype html>
@@ -73,6 +80,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
+    {faces && <style set:html={faces} />}
     <meta name="theme-color" content="#0f6b5c" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -136,9 +144,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
           <span
             class:list={[
               "text-lg text-accent",
-              font === "devanagari" || font === "bengali" || font === "latin"
-                ? "font-system-arabic"
-                : "font-nastaliq",
+              arabicLogo ? "font-nastaliq" : "font-system-arabic",
             ]}
             lang="ur"
             dir="rtl"

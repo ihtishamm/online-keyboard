@@ -160,6 +160,15 @@
   --stack-naskh: "Noto Naskh Arabic", "Inter Variable", serif;
   --stack-devanagari: "Noto Sans Devanagari", "Inter Variable", sans-serif;
   --stack-bengali: "Noto Sans Bengali", "Inter Variable", sans-serif;
+  --stack-gurmukhi: "Noto Sans Gurmukhi", "Inter Variable", sans-serif;
+  --stack-gujarati: "Noto Sans Gujarati", "Inter Variable", sans-serif;
+  --stack-oriya: "Noto Sans Oriya", "Inter Variable", sans-serif;
+  --stack-tamil: "Noto Sans Tamil", "Inter Variable", sans-serif;
+  --stack-telugu: "Noto Sans Telugu", "Inter Variable", sans-serif;
+  --stack-kannada: "Noto Sans Kannada", "Inter Variable", sans-serif;
+  --stack-malayalam: "Noto Sans Malayalam", "Inter Variable", sans-serif;
+  --stack-sinhala: "Noto Sans Sinhala", "Inter Variable", sans-serif;
+  --stack-thaana: "Noto Sans Thaana", "Inter Variable", sans-serif;
   --stack-latin: "Inter Variable", "Spacing Accents", system-ui, sans-serif;
   /* Key caps, candidates and other UI glyphs in any of our scripts (fonts load per glyph range). */
   --stack-script: "Noto Naskh Arabic", "Noto Sans Devanagari", "Noto Sans Bengali", serif;
@@ -213,6 +222,52 @@
   .font-bengali {
     font-family: var(--stack-bengali);
     line-height: 1.7;
+  }
+
+  /* Tall stacked conjuncts and vowel signs need more room than Devanagari. */
+  .font-gurmukhi {
+    font-family: var(--stack-gurmukhi);
+    line-height: 1.7;
+  }
+
+  .font-gujarati {
+    font-family: var(--stack-gujarati);
+    line-height: 1.7;
+  }
+
+  .font-oriya {
+    font-family: var(--stack-oriya);
+    line-height: 1.8;
+  }
+
+  .font-tamil {
+    font-family: var(--stack-tamil);
+    line-height: 1.8;
+  }
+
+  .font-telugu {
+    font-family: var(--stack-telugu);
+    line-height: 1.9;
+  }
+
+  .font-kannada {
+    font-family: var(--stack-kannada);
+    line-height: 1.9;
+  }
+
+  .font-malayalam {
+    font-family: var(--stack-malayalam);
+    line-height: 1.8;
+  }
+
+  .font-sinhala {
+    font-family: var(--stack-sinhala);
+    line-height: 1.8;
+  }
+
+  .font-thaana {
+    font-family: var(--stack-thaana);
+    line-height: 2;
   }
 
   .font-latin {

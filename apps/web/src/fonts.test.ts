@@ -10,13 +10,19 @@ import { brotliDecompressSync, inflateSync } from "node:zlib";
 import { desktopCharacters, phoneCharacters, phoneLayout, type TranslitScheme } from "@okb/engine";
 import { LANGUAGES, getLayout, getScheme, type FontId } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
+import { FONT_PACKAGES } from "./styles/script-fonts";
 
 /** The font files behind each family in the editor font stacks (global.css). */
 const FAMILIES: Readonly<Record<string, { dir: string; files: RegExp; local?: true }>> = {
-  "Noto Nastaliq Urdu": { dir: "@fontsource/noto-nastaliq-urdu", files: /-400-normal\.woff$/ },
-  "Noto Naskh Arabic": { dir: "@fontsource/noto-naskh-arabic", files: /-400-normal\.woff$/ },
-  "Noto Sans Devanagari": { dir: "@fontsource/noto-sans-devanagari", files: /-400-normal\.woff$/ },
-  "Noto Sans Bengali": { dir: "@fontsource/noto-sans-bengali", files: /-400-normal\.woff$/ },
+  // Each script font's family name, read from its package's CSS: "Noto Sans Tamil".
+  ...Object.fromEntries(
+    Object.values(FONT_PACKAGES).map((pkg) => [
+      /font-family: '([^']+)'/.exec(
+        readFileSync(join(process.cwd(), "node_modules/@fontsource", pkg, "400.css"), "utf8"),
+      )![1]!,
+      { dir: `@fontsource/${pkg}`, files: /-400-normal\.woff2$/ },
+    ]),
+  ),
   "Inter Variable": { dir: "@fontsource-variable/inter", files: /-wght-normal\.woff2$/ },
   "Spacing Accents": { dir: "src/fonts", files: /\.woff2$/, local: true },
 };

@@ -1,8 +1,5 @@
 ---
-import "@fontsource/noto-naskh-arabic/400.css";
-import "@fontsource/noto-nastaliq-urdu/400.css";
-import "@fontsource/noto-sans-bengali/400.css";
-import "@fontsource/noto-sans-devanagari/400.css";
+import { CORE_FONTS } from "../styles/script-fonts";
 import { LANGUAGES, REGIONS } from "@okb/layouts";
 import { FONT_CLASS } from "../components/fonts";
 import { TYPING_LANGUAGES } from "../content/typing/practice";
@@ -22,6 +19,7 @@ const count = languages.length;
 ---
 
 <Base
+  fonts={CORE_FONTS}
   title={`Typing Tests and Typing Tutors in ${count} Languages | ${SITE.name}`}
   description={`Free typing tests and touch-typing lessons in ${count} languages, from Urdu, Hindi and Arabic to Spanish and German. Learn the keyboard, check your speed, on a computer or a phone.`}
 >

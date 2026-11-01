@@ -1,5 +1,7 @@
 ---
+import { getLanguage } from "@okb/layouts";
 import { getCollection, render } from "astro:content";
+import { pageFonts } from "../../styles/script-fonts";
 import { SITE } from "../../config/site";
 import Base from "../../layouts/Base.astro";
 
@@ -37,7 +39,11 @@ const jsonLd = {
 };
 ---
 
-<Base title={`${title} | ${SITE.name}`} description={description}>
+<Base
+  title={`${title} | ${SITE.name}`}
+  description={description}
+  fonts={pageFonts(getLanguage(guide.data.language))}
+>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <article class="mx-auto max-w-3xl">
     <nav class="mb-3 text-sm text-muted" aria-label="Breadcrumb">

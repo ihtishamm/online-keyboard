@@ -1,8 +1,5 @@
 ---
-import "@fontsource/noto-naskh-arabic/400.css";
-import "@fontsource/noto-nastaliq-urdu/400.css";
-import "@fontsource/noto-sans-bengali/400.css";
-import "@fontsource/noto-sans-devanagari/400.css";
+import { pageFonts } from "../styles/script-fonts";
 import { getLanguage, getLayout, languageBundle, layoutSlug } from "@okb/layouts";
 import { getCollection } from "astro:content";
 import { FONT_CLASS } from "./fonts";
@@ -92,6 +89,7 @@ const hasTyping = slug === "urdu" || TYPING_LANGUAGES.some((l) => l.slug === slu
   description={description}
   nastaliq={language.fonts.includes("nastaliq")}
   font={language.fonts[0]}
+  fonts={pageFonts(language)}
   credits={creditsFor(language)}
   language={language.slug}
 >

@@ -29,5 +29,7 @@ export default defineConfig({
     setupFiles: ["src/test-setup.ts"],
     // Bundle React-API libraries so that their `react` imports get the aliases above.
     server: { deps: { inline: [/lucide-react/] } },
+    // Vitest empties CSS files by default; script-fonts.ts reads the fontsource ones as text.
+    css: { include: [/@fontsource/] },
   },
 });

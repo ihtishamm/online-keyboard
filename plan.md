@@ -655,6 +655,7 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
   - Sanskrit, Konkani and Maithili are typed on Devanagari InScript, as on Windows.
 
 - [ ] **9a. Wave 2: South Asia and Arabic script** (our core audience, 23 languages).
+  - **Platform (done):** scripts Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Sinhala and Thaana in the script registry, with Noto Sans fonts (fontsource, OFL). Each page now inlines `@font-face` rules only for its own scripts (`src/styles/script-fonts.ts`) instead of importing every script's CSS: the Hindi and Spanish pages are 1.4–1.6 KB smaller gzipped, and the cost no longer grows with each script. The home page, typing hub and progress page keep Arabic, Nastaliq, Devanagari and Bengali; names in other scripts there use the system's fonts. Fixed on the way: cheat sheets and guides carried no script fonts at all, so the Hindi and Bangla charts (and their PDFs) used whatever font the system had.
   - [ ] **Languages:**
     - Indic: Punjabi (Gurmukhi), Marathi, Nepali, Gujarati, Tamil, Telugu, Kannada, Malayalam, Odia, Assamese, Sinhala, Sanskrit, Konkani, Maithili;
     - Dhivehi;

@@ -1,8 +1,5 @@
 ---
-import "@fontsource/noto-naskh-arabic/400.css";
-import "@fontsource/noto-nastaliq-urdu/400.css";
-import "@fontsource/noto-sans-bengali/400.css";
-import "@fontsource/noto-sans-devanagari/400.css";
+import { CORE_FONTS } from "../../styles/script-fonts";
 import { LANGUAGES } from "@okb/layouts";
 import TypingProgress from "../../components/typing/TypingProgress";
 import { TYPING_LANGUAGES } from "../../content/typing/practice";
@@ -26,6 +23,7 @@ const languages = LANGUAGES.filter((l) => typing.has(l.slug)).map((l) => ({
 ---
 
 <Base
+  fonts={CORE_FONTS}
   title={`Your Typing Progress | ${SITE.name}`}
   description="Your typing history, accuracy by key, practice for your weakest keys and badges, kept on your device."
   noindex
