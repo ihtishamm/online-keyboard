@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { CORE_FONTS, fontFaces, pageFonts } from "./script-fonts";
+import { FONT_FAMILY } from "../components/font-names";
+import { CORE_FONTS, FONT_PACKAGES, fontFaces, pageFonts } from "./script-fonts";
 
 describe("script fonts per page", () => {
   it("writes only the families asked for, pointing at WOFF2 files", () => {
@@ -17,5 +18,12 @@ describe("script fonts per page", () => {
     expect(pageFonts({ script: "Arab", fonts: ["naskh"] })).toEqual(["naskh", "nastaliq"]);
     expect(pageFonts({ script: "Taml", fonts: ["tamil"] })).toEqual(["tamil"]);
     expect(CORE_FONTS).toContain("devanagari");
+  });
+
+  it("names each font as its package does", () => {
+    for (const [font, pkg] of Object.entries(FONT_PACKAGES)) {
+      const css = fontFaces([font as keyof typeof FONT_PACKAGES]);
+      expect(css, pkg).toContain(`font-family:'${FONT_FAMILY[font as keyof typeof FONT_FAMILY]}'`);
+    }
   });
 });

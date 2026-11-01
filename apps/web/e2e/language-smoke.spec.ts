@@ -52,7 +52,7 @@ function layoutsOf(slug: string): Map<string, Layout & { translit?: string }> {
       .filter((f) => f.endsWith(".json") && f !== "language.json")
       .map((f) => json<Layout & { translit?: string }>(new URL(f, folder)))
       .filter((l) => typeof l.id === "string" && l.keys)
-      .map((l) => [l.id, { deadkeys: [], ...l }]),
+      .map((l) => [l.id, { ...l, deadkeys: l.deadkeys ?? [] }]),
   );
 }
 /** "ur-phonetic" -> "phonetic", as in @okb/layouts. */

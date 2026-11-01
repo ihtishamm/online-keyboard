@@ -55,6 +55,15 @@ const FONT_LABELS: Record<FontId, { en: string; native: string }> = {
   naskh: { en: "Naskh", native: "نسخ" },
   devanagari: { en: "Devanagari", native: "देवनागरी" },
   bengali: { en: "Bengali", native: "বাংলা" },
+  gurmukhi: { en: "Gurmukhi", native: "ਗੁਰਮੁਖੀ" },
+  gujarati: { en: "Gujarati", native: "ગુજરાતી" },
+  oriya: { en: "Odia", native: "ଓଡ଼ିଆ" },
+  tamil: { en: "Tamil", native: "தமிழ்" },
+  telugu: { en: "Telugu", native: "తెలుగు" },
+  kannada: { en: "Kannada", native: "ಕನ್ನಡ" },
+  malayalam: { en: "Malayalam", native: "മലയാളം" },
+  sinhala: { en: "Sinhala", native: "සිංහල" },
+  thaana: { en: "Thaana", native: "ތާނަ" },
   latin: { en: "Sans serif", native: "Aa" },
 };
 

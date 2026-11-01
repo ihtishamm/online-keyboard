@@ -1,3 +1,4 @@
+import { FONT_FAMILY } from "../../font-names";
 import type { FontId } from "@okb/layouts";
 import { zipStore } from "./zip";
 
@@ -16,23 +17,11 @@ export interface DocxOptions {
 
 export const DOCX_MIME = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
 
-const FONT_NAME: Record<FontId, string> = {
-  nastaliq: "Noto Nastaliq Urdu",
-  naskh: "Noto Naskh Arabic",
-  devanagari: "Noto Sans Devanagari",
-  bengali: "Noto Sans Bengali",
-  // Latin text: a font every copy of Word has.
-  latin: "Calibri",
-};
+/** Latin text gets a font every copy of Word has. */
+const fontName = (font: FontId) => (font === "latin" ? "Calibri" : FONT_FAMILY[font]);
 
 /** Font size in half-points: Nastaliq reads small at the sizes Naskh and Indic fonts use. */
-const HALF_POINTS: Record<FontId, number> = {
-  nastaliq: 32,
-  naskh: 28,
-  devanagari: 28,
-  bengali: 28,
-  latin: 24,
-};
+const halfPoints = (font: FontId) => (font === "nastaliq" ? 32 : font === "latin" ? 24 : 28);
 
 const W = "http://schemas.openxmlformats.org/wordprocessingml/2006/main";
 
@@ -76,8 +65,8 @@ export function documentXml(text: string): string {
 
 /** Document defaults carry the font, size, language and direction, so every paragraph gets them. */
 export function stylesXml({ lang, dir, font }: DocxOptions): string {
-  const name = escapeXml(FONT_NAME[font]);
-  const size = HALF_POINTS[font];
+  const name = escapeXml(fontName(font));
+  const size = halfPoints(font);
   const rtl = dir === "rtl";
   const rPr =
     `<w:rFonts w:ascii="${name}" w:hAnsi="${name}" w:eastAsia="${name}" w:cs="${name}"/>` +

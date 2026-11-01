@@ -1,3 +1,4 @@
+import { FONT_FAMILY, TALL_FONTS } from "../../font-names";
 import type { FontId } from "@okb/layouts";
 
 /** Image cards for posting text on WhatsApp, Instagram and Facebook, drawn on a canvas. */
@@ -25,33 +26,21 @@ export const CARD_THEMES: readonly CardTheme[] = [
   { id: "rose", label: "Rose", background: "#fdf0f2", text: "#4a0a1c", accent: "#d0365e" },
 ];
 
-/** CSS variable holding each font's stack (global.css), and its line height for cards. */
-const FONT_STACK_VAR: Record<FontId, string> = {
-  nastaliq: "--stack-nastaliq",
-  naskh: "--stack-naskh",
-  devanagari: "--stack-devanagari",
-  bengali: "--stack-bengali",
-  latin: "--stack-latin",
-};
-const LEADING: Record<FontId, number> = {
-  nastaliq: 2.1,
-  naskh: 1.75,
-  devanagari: 1.6,
-  bengali: 1.6,
-  latin: 1.45,
-};
-
-const FALLBACK_STACK: Record<FontId, string> = {
-  nastaliq: '"Noto Nastaliq Urdu", serif',
-  naskh: '"Noto Naskh Arabic", serif',
-  devanagari: '"Noto Sans Devanagari", sans-serif',
-  bengali: '"Noto Sans Bengali", sans-serif',
-  latin: '"Inter Variable", sans-serif',
-};
+/** Line height for cards: Nastaliq and the scripts with tall marks need more room. */
+function cardLeading(font: FontId): number {
+  if (font === "nastaliq") return 2.1;
+  if (font === "naskh") return 1.75;
+  if (font === "latin") return 1.45;
+  return TALL_FONTS.has(font) ? 1.8 : 1.6;
+}
 
 export function fontStack(font: FontId): string {
-  const value = getComputedStyle(document.documentElement).getPropertyValue(FONT_STACK_VAR[font]);
-  return value.trim() || FALLBACK_STACK[font];
+  // Each font's stack is the CSS variable --stack-<font> (global.css).
+  const value = getComputedStyle(document.documentElement).getPropertyValue(`--stack-${font}`);
+  return (
+    value.trim() ||
+    `"${FONT_FAMILY[font]}", ${font === "naskh" || font === "nastaliq" ? "serif" : "sans-serif"}`
+  );
 }
 
 /** Width of a string at a font size. */
@@ -198,7 +187,7 @@ export async function drawCard(
   const padX = 120;
   const padY = 130;
   const box = { width: width - padX * 2, height: height - padY * 2 - footer };
-  const leading = LEADING[options.font];
+  const leading = cardLeading(options.font);
 
   ctx.direction = options.dir;
   ctx.textAlign = "center";
