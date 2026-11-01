@@ -632,8 +632,13 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
   - The to-roman tool fetches chat spellings as files (`?url`) rather than as modules, so the list can name them.
   - **Sizes:** keyboard pages 53.4 KB initial JS (was 51.9; budget 90). Saving Urdu stores 14 pages.
   - **Not done:** no test of a worker update in e2e (Playwright can't swap the worker mid-test); covered by reading. Lazily loaded code is warmed for keyboard pages only, not for the typing games' share card.
-- [ ] **Tests:** golden tests for every language stay in the unit tests. e2e runs a smoke test per language (load, then type the golden text on desktop and phone), with a full nightly e2e run.
-- [ ] **Build:** split the sitemap by section. CI must stay under 10 minutes.
+- [x] **Tests:** golden tests for every language stay in the unit tests. e2e runs a smoke test per language (load, then type the golden text on desktop and phone), with a full nightly e2e run.
+  - **Shipped:** `e2e/language-smoke.spec.ts` reads the registry folders, so a language added as data is tested with no new spec. For each language's first key layout it types the first word of the sample from the physical keyboard (dead keys and AltGr included) and taps the sample's letters on the phone keyboard. Its axe check is tagged `@nightly`, as are the per-language axe loops in `languages.spec.ts` and `wave1.spec.ts`; the typing checks there that the smoke test now covers were removed.
+  - Pull requests run `--grep-invert @nightly`; `.github/workflows/nightly.yml` runs everything at 02:30 UTC, iPhone and PDFs included.
+  - **Numbers (this machine, 4 workers, 25 languages):** the smoke spec takes 41 s without axe (50 tests) and 1.8 min with it; the pull-request suite 5.6 min (479 tests; the 2 cheat-sheet PDF checks fail only in local `SKIP_PDFS` builds).
+- [x] **Build:** split the sitemap by section. CI must stay under 10 minutes.
+  - **Shipped:** six sitemaps under `sitemap-index.xml` (`src/config/sitemap.ts`): keyboards 69 URLs, typing 76, cheat sheets 59, guides 5, tools 3, other pages 1.
+  - **CI time:** the e2e job runs in 3 shards, so at about 110 languages (an estimated 8–9 min on one machine) each shard stays well under 10 minutes. The build takes about 40 s without PDFs. Check the real CI times on the first pull request.
 - [x] **Emoji:** names and keywords for every new language that CLDR annotates, added automatically.
   - **Shipped:** `packages/emoji/scripts/build.ts` reads the languages from the registry, fetches each one's CLDR 49 annotations (404s are remembered) and writes `src/locales.ts` with the loaders. A test fails when a registry language is missing until the script runs again. 22 languages now have keywords (the 14 Wave 1 languages are new), and 3 (Saraiki, Balochi, Kashmiri) use Urdu's. Swedish CLDR lacks 3 keycap names; English names still find them.
 

@@ -84,7 +84,7 @@ for (const [slug, name, file] of WAVE1) {
       await expect(editor).toHaveValue(`${tip[2]} `);
     });
 
-    test("has no serious accessibility violations", async ({ page }) => {
+    test("has no serious accessibility violations @nightly", async ({ page }) => {
       await page.goto(`/${slug}`);
       await expect(page.getByRole("textbox", { name: `${name} text` })).toBeEditable();
       const results = await new AxeBuilder({ page }).analyze();

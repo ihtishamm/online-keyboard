@@ -1,0 +1,30 @@
+name: Nightly
+
+# The full end-to-end run, @nightly tests included, plus a build with the cheat-sheet PDFs
+# (plan Phase 9: per-language smoke tests on every pull request, everything every night).
+on:
+  schedule:
+    - cron: "30 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @okb/web exec playwright install --with-deps chromium webkit
+      # Playwright's web server runs `pnpm build`, PDFs and all.
+      - run: pnpm test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report-nightly
+          path: apps/web/playwright-report
+          retention-days: 14

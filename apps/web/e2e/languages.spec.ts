@@ -1,51 +1,34 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
 
-/** Golden text for each regional language: US keys typed and the text they must produce. */
+/**
+ * The regional language pack. Typing on each page is covered for every language by
+ * language-smoke.spec.ts; the accessibility checks here run in the nightly suite.
+ */
 const LANGUAGES = [
-  { path: "/arabic", name: "Arabic", keys: "lvpfh", text: "مرحبا" },
-  { path: "/farsi", name: "Farsi", keys: "sghl", text: "سلام" },
-  { path: "/pashto", name: "Pashto", keys: "FAj,", text: "پښتو" },
-  { path: "/sindhi", name: "Sindhi", keys: "sn\\i", text: "سنڌي" },
-  { path: "/shahmukhi", name: "Punjabi (Shahmukhi)", keys: "pnjabi", text: "پنجابی" },
-  { path: "/saraiki", name: "Saraiki", keys: "sraEiki", text: "سرائیکی" },
-  { path: "/balochi", name: "Balochi", keys: "blwcy", text: "بلوچی" },
-  { path: "/kashmiri", name: "Kashmiri", keys: "k-xPr", text: "کٲشُر" },
-  { path: "/hindi/inscript", name: "Hindi", keys: "vcmdls", text: "नमस्ते" },
-  { path: "/bangla/inscript", name: "Bangla", keys: "yexne", text: "বাংলা" },
+  { path: "/arabic", name: "Arabic" },
+  { path: "/farsi", name: "Farsi" },
+  { path: "/pashto", name: "Pashto" },
+  { path: "/sindhi", name: "Sindhi" },
+  { path: "/shahmukhi", name: "Punjabi (Shahmukhi)" },
+  { path: "/saraiki", name: "Saraiki" },
+  { path: "/balochi", name: "Balochi" },
+  { path: "/kashmiri", name: "Kashmiri" },
+  { path: "/hindi/inscript", name: "Hindi" },
+  { path: "/bangla/inscript", name: "Bangla" },
 ] as const;
 
 const editor = (page: Page, name: string) => page.getByRole("textbox", { name: `${name} text` });
 
-/** keyboard.type() sends capitals without Shift held, so press Shift+key for those. */
-async function typeKeys(page: Page, keys: string) {
-  for (const ch of keys) {
-    if (/[A-Z]/.test(ch)) await page.keyboard.press(`Shift+Key${ch}`);
-    else await page.keyboard.type(ch);
-  }
-}
-
-for (const { path, name, keys, text } of LANGUAGES) {
-  test.describe(path, () => {
-    test.beforeEach(async ({ page }) => {
-      await page.goto(path);
-      await expect(editor(page, name)).toBeEditable();
-    });
-
-    test(`types ${text} from the physical keyboard`, async ({ page, isMobile }) => {
-      test.skip(isMobile, "physical keyboard test");
-      await editor(page, name).click();
-      await typeKeys(page, keys);
-      await expect(editor(page, name)).toHaveValue(text);
-    });
-
-    test("has no serious accessibility violations", async ({ page }) => {
-      const results = await new AxeBuilder({ page }).analyze();
-      const serious = results.violations.filter(
-        (v) => v.impact === "serious" || v.impact === "critical",
-      );
-      expect(serious, JSON.stringify(serious, null, 2)).toEqual([]);
-    });
+for (const { path, name } of LANGUAGES) {
+  test(`${path} has no serious accessibility violations @nightly`, async ({ page }) => {
+    await page.goto(path);
+    await expect(editor(page, name)).toBeEditable();
+    const results = await new AxeBuilder({ page }).analyze();
+    const serious = results.violations.filter(
+      (v) => v.impact === "serious" || v.impact === "critical",
+    );
+    expect(serious, JSON.stringify(serious, null, 2)).toEqual([]);
   });
 }
 

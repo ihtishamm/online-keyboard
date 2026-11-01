@@ -33,6 +33,12 @@ jobs:
   e2e:
     runs-on: ubuntu-latest
     needs: check
+    # Three machines share the suite, so the run stays within 10 minutes as languages are
+    # added (plan Phase 9: about 5.6 minutes on one machine at 25 languages).
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3]
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -42,10 +48,12 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter @okb/web exec playwright install --with-deps chromium webkit
-      - run: pnpm test:e2e
+      # Tests tagged @nightly (per-language accessibility checks and other slow loops) run in
+      # nightly.yml, which keeps this job within CI's 10-minute budget (plan Phase 9).
+      - run: pnpm test:e2e --grep-invert @nightly --shard=${{ matrix.shard }}/3
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: playwright-report
+          name: playwright-report-${{ matrix.shard }}
           path: apps/web/playwright-report
           retention-days: 7
