@@ -19,3 +19,4 @@ export { WORD_NORMALIZERS } from "./text/normalize";
 export * from "./translit/scheme";
 export * from "./translit/engine";
 export * from "./translit/romanize";
+export * from "./text/case";

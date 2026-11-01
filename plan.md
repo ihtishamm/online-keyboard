@@ -472,16 +472,22 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
   - Results (held-out articles, words with the language's own accented letters): Spanish 97.3 %, French 98.1 %, Italian 98.5 % restored; 6, 13 and 2 plain words changed wrongly in about 40,000 each. Words with other languages' letters (Nações in Italian text) are counted apart: 8, 104 and 103. Published on each page.
   - Spell check meets its bars in all three, measured on 1,000 everyday Tatoeba sentences kept out of the lists: false flags 0.9 %, 0.9 % and 1.0 % (just under the bar); on Wikipedia prose 2.2 %, 1.5 % and 3.1 % (recorded as `prose`). Capitalised words count as names and are not checked; regular plurals, feminines, adverbs and verb forms count as known when their base is. Autocorrect is offered, off by default (the misspellings are synthetic).
   - The tier gate now requires smart accents to meet target for Latin languages. The three languages are not yet Tier C: the typing tutor pages come in 7.7.
-- [ ] **7.6 Case converter** (`/case-converter`), better than Lexilogos' upper/lower.
-  - [ ] **Modes:** UPPER, lower, Sentence case, Title Case, Capitalise Each Word, iNVERSE, alternating. Each is live as you type, with its own Copy button.
-  - [ ] **Language-aware rules:**
+- [x] **7.6 Case converter** (`/case-converter`), better than Lexilogos' upper/lower.
+  - [x] **Modes:** UPPER, lower, Sentence case, Title Case, Capitalise Each Word, iNVERSE, alternating. Each is live as you type, with its own Copy button.
+  - [x] **Language-aware rules:**
     - Turkish and Azeri İ i / I ı;
     - German ß → SS (optional ẞ);
     - Greek all-caps drops the tonos, as Greek typography does, and lowercase uses final ς;
     - Dutch `IJ` in title case;
     - Irish prefixes (`an tAthair`);
     - title-case small words for en, fr, es, de, it and pt.
-  - [ ] Works in any script. Scripts without case (Arabic, Devanagari, …) get a short note. Grapheme-aware counts of characters, words and lines.
+  - [x] Works in any script. Scripts without case (Arabic, Devanagari, …) get a short note. Grapheme-aware counts of characters, words and lines.
+  - `/case-converter`, linked from the home page; the rules are `@okb/engine/case` (`convertCase`, `hasCase`, `textCounts`), pure functions with their own tests.
+    - The platform's case mapping does Turkish and Azeri i, ß → SS and final ς. Greek capitals are done in the engine, since browsers differ: Chromium keeps the tonos (ΜΆΙΟΣ) where Node drops it. The dialytika comes in where a dropped accent split a vowel pair (Μάιος → ΜΑΪΟΣ).
+    - Irish: eclipsis (mBaile, bhFear) and t/n before a vowel are always prefixes; h before a vowel only after the words that bring it (na hÉireann), so hata stays Hata.
+    - Sentence case cannot know names: the FAQ says so.
+    - The language picker remembers its choice, and starts from the browser's language. Counts use grapheme clusters (👍🏽 and the conjunct ब्द count as one).
+  - e2e: every style, Copy, and the Turkish, Greek, German (ẞ option), Irish and caseless-script cases, on desktop and both phone sizes.
 - [ ] **7.7 Wave 1 languages (14):**
   - Spanish, French, Italian, German, Portuguese, Turkish;
   - Polish, Dutch, Romanian, Czech, Hungarian, Swedish, Catalan, Croatian.

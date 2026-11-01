@@ -13,7 +13,8 @@
     "./romanize": "./src/translit/romanize.ts",
     "./spelling": "./src/predict/spelling-rules.ts",
     "./latin": "./src/text/latin.ts",
-    "./accents": "./src/predict/accents.ts"
+    "./accents": "./src/predict/accents.ts",
+    "./case": "./src/text/case.ts"
   },
   "scripts": {
     "test": "vitest run",

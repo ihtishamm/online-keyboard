@@ -1,0 +1,131 @@
+---
+import CaseConverter from "../components/tools/CaseConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Case Converter: UPPER, lower, Sentence and Title Case in Any Language | ${SITE.name}`;
+const description =
+  "Change text to upper case, lower case, sentence case, title case and more, all at once as you type. Gets Turkish İ, German ß, Greek accents, Dutch IJ and Irish prefixes right. Free and private.";
+
+const steps = [
+  "Type or paste your text in the box.",
+  "Choose the language it is written in, so letters like the Turkish İ or the German ß come out right.",
+  "Every style appears below at once. Press Copy next to the one you want.",
+];
+
+const faqs = [
+  {
+    q: "Why does the language matter?",
+    a: "Some languages change letters in their own way. Turkish i becomes İ in capitals, not I. German ß becomes SS. Greek capitals drop their accents, and Irish keeps prefixes like the t in an tAthair small. Choose the language, and the converter follows its rules.",
+  },
+  {
+    q: "What is the difference between title case and capitalise each word?",
+    a: "Capitalise Each Word gives every word a capital. Title Case leaves short words such as of, the and and in lower case unless they start or end the title, as most English, French, Spanish, Italian, Portuguese and German style guides do.",
+  },
+  {
+    q: "Does sentence case keep names?",
+    a: "No. Sentence case lowers everything and then capitalises the first letter of each sentence (and the English word I), so names such as Paris need their capital put back by hand.",
+  },
+  {
+    q: "Can I convert Arabic, Urdu or Hindi?",
+    a: "Those scripts have no capital letters, so there is nothing to convert: every style shows the text as it is. The character and word counts still work for every script.",
+  },
+  {
+    q: "Is my text sent anywhere?",
+    a: "No. The conversion runs in your browser, and the text never leaves your device.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Case Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Change the case of text",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <h1 class="mb-2 text-2xl font-semibold tracking-tight sm:text-3xl">Case Converter</h1>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Change text to capitals, small letters, sentence case or title case, with each language's own
+    rules. Every style updates as you type. Everything happens on your device.
+  </p>
+
+  <CaseConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to change the case of text
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="styles-heading" class="min-w-0">
+      <h2 id="styles-heading" class="mb-3 text-xl font-semibold">
+        The styles
+      </h2>
+      <ul class="space-y-1 text-muted">
+        <li>
+          <strong class="text-text">UPPER CASE</strong>: every letter a capital.
+        </li>
+        <li>
+          <strong class="text-text">lower case</strong>: no capitals at all.
+        </li>
+        <li>
+          <strong class="text-text">Sentence case</strong>: a capital at each sentence start.
+        </li>
+        <li>
+          <strong class="text-text">Title Case</strong>: capitals, except short words.
+        </li>
+        <li>
+          <strong class="text-text">Capitalise Each Word</strong>: a capital on every word.
+        </li>
+        <li>
+          <strong class="text-text">iNVERSE cASE</strong>: each letter swapped.
+        </li>
+        <li>
+          <strong class="text-text">aLtErNaTiNg cAsE</strong>: small and capital in turn.
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>
