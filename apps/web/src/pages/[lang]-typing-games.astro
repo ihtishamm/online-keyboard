@@ -1,0 +1,98 @@
+---
+import { LANGUAGES, type Language } from "@okb/layouts";
+import TypingPage from "../components/typing/TypingPage.astro";
+import TypingGames from "../components/typing/TypingGames";
+import { TYPING_LANGUAGES, gameData } from "../content/typing/practice";
+import { URDU_PASSAGES, URDU_WORDS } from "../content/typing/urdu";
+import { SITE } from "../config/site";
+
+/** Typing games for every language with typing pages, Urdu included (plan item 8.2). */
+export function getStaticPaths() {
+  const urdu = LANGUAGES.find((l) => l.slug === "urdu")!;
+  return [urdu, ...TYPING_LANGUAGES].map((language) => ({
+    params: { lang: language.slug },
+    props: { language },
+  }));
+}
+
+const { language: l } = Astro.props as { language: Language };
+const name = l.name.en;
+const isUrdu = l.slug === "urdu";
+const data = await gameData(l, isUrdu ? { words: URDU_WORDS, passages: URDU_PASSAGES } : undefined);
+const sentences = data.passages.length > 0;
+
+const steps = [
+  `Daily challenge: type today's ${name} ${sentences ? "sentences" : "words"} once through. Everyone gets the same text on the same day (days change at midnight UTC). Finish one every day to build a streak, then share your result.`,
+  "Falling words: type a word before it reaches the bottom. Every 10 words the level goes up and the words get faster and less common. Three misses end the game.",
+  `Key finder: a ${name} letter appears and you press or tap its key. Twenty letters a round, timed. A wrong key lights up the right one.`,
+  "Your results stay on this device. The progress page shows them all, with the keys you miss most.",
+];
+
+const faqs = [
+  {
+    q: `Is the ${name} daily challenge the same for everyone?`,
+    a: "Yes. The text is chosen from the date, so everyone typing the challenge on the same day (UTC) gets the same text. That makes results worth comparing.",
+  },
+  {
+    q: "How does the streak work?",
+    a: "Finish the daily challenge on consecutive days and the streak grows by one each day. If you haven't played yet today, yesterday's streak still shows until the day ends. Streaks are kept on your device only.",
+  },
+  {
+    q: "Can I play on my phone?",
+    a: `Yes. On a phone the on-screen ${name} keyboard appears under each game, so you don't need a ${name} keyboard installed. If your phone already types ${name}, tick “My device already types ${name}”.`,
+  },
+  {
+    q: "Which game helps a beginner most?",
+    a: "Key finder. It teaches where each letter is, which is the slowest part of learning a new layout. When you know the keys, the typing tutor teaches you to type them without looking.",
+  },
+  {
+    q: "Where are my scores saved?",
+    a: "In your browser, on this device. Nothing is uploaded. The progress page can export them to a file and import them on another device.",
+  },
+];
+---
+
+<TypingPage
+  title={`${name} Typing Games: Daily Challenge, Falling Words and Key Finder | ${SITE.name}`}
+  description={`Free ${name} typing games: a daily typing challenge with streaks, a falling-words game and a key-finder drill to learn the ${name} keyboard. Works on phones, no sign-up.`}
+  heading={`${name} Typing Games`}
+  headingNative={l.name.native}
+  intro={`Practise ${name} typing a few minutes a day: today's challenge, a game of falling words, or a drill to find every letter on the keyboard. Use your own keyboard or the one on screen.`}
+  appName={`${name} Typing Games`}
+  howToName={`How to play the ${name} typing games`}
+  steps={steps}
+  about={{
+    heading: "A few minutes a day",
+    paragraphs: [
+      "Short daily practice builds speed faster than a long session now and then, and the daily challenge gives you a reason to come back. Each game works with any layout offered here.",
+      `The words come from the commonest ${name} words${sentences ? ", and the daily challenge from everyday sentences" : ""}. Higher levels of falling words use rarer, longer words.`,
+    ],
+  }}
+  faqs={faqs}
+  related={[
+    { href: `/${l.slug}-typing-test`, label: `${name} typing test: check your speed` },
+    { href: `/${l.slug}-typing-tutor`, label: `${name} typing tutor: learn the keyboard` },
+    { href: "/typing/progress", label: "Your typing progress" },
+    { href: `/${l.slug}`, label: `${name} keyboard: type and save your text` },
+  ]}
+  slug={l.slug}
+  lang={l.lang}
+  dir={l.dir}
+  font={l.fonts[0]}
+  tatoeba={!isUrdu && sentences}
+>
+  <TypingGames
+    client:idle={{ timeout: 500 }}
+    slug={l.slug}
+    lang={l.lang}
+    languageName={name}
+    nativeName={l.name.native}
+    layouts={data.layouts}
+    words={data.words}
+    passages={data.passages}
+    bands={data.bands}
+    script={l.script}
+    dir={l.dir}
+    font={l.fonts[0]!}
+  />
+</TypingPage>

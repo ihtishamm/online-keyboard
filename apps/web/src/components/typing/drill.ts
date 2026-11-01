@@ -36,6 +36,12 @@ export interface Drill {
   results: readonly WordResult[];
   keystrokes: number;
   correctKeystrokes: number;
+  /**
+   * Keystrokes per target character, for the accuracy-by-key heatmap: [right, wrong]. A key
+   * is counted against the character of the text it should have typed (both keys of آ typed
+   * as ا + madda count for آ); keys typed after a mistake count for nothing.
+   */
+  keyCounts: Readonly<Record<string, readonly [number, number]>>;
   startedAt: number | null;
   endedAt: number | null;
 }
@@ -112,9 +118,30 @@ export function createDrill(words: readonly string[], script = "Arab"): Drill {
     results: [],
     keystrokes: 0,
     correctKeystrokes: 0,
+    keyCounts: {},
     startedAt: null,
     endedAt: null,
   };
+}
+
+/** The character of `word` (NFC) that holds code point `offset` of its NFD form. */
+function charAt(word: string, offset: number): string | undefined {
+  let at = 0;
+  for (const ch of word) {
+    at += nfd(ch).length;
+    if (at > offset) return ch;
+  }
+  return undefined;
+}
+
+function count(
+  counts: Drill["keyCounts"],
+  ch: string | undefined,
+  ok: boolean,
+): Drill["keyCounts"] {
+  if (!ch) return counts;
+  const [right, wrong] = counts[ch] ?? [0, 0];
+  return { ...counts, [ch]: ok ? [right + 1, wrong] : [right, wrong + 1] };
 }
 
 export const isFinished = (d: Drill) => d.endedAt !== null;
@@ -152,13 +179,16 @@ export function typeText(drill: Drill, text: string, now: number): Drill {
       continue;
     }
     const startedAt = d.startedAt ?? now;
-    const ok = nfd(currentWord(d)).startsWith(nfd(d.typed + ch)) && onTrack(d);
+    const tracking = onTrack(d);
+    const ok = nfd(currentWord(d)).startsWith(nfd(d.typed + ch)) && tracking;
+    const target = tracking ? charAt(currentWord(d), nfd(d.typed).length) : undefined;
     d = {
       ...d,
       startedAt,
       typed: d.typed + ch,
       keystrokes: d.keystrokes + 1,
       correctKeystrokes: d.correctKeystrokes + (ok ? 1 : 0),
+      keyCounts: count(d.keyCounts, target, ok),
     };
     // The last word needs no Space.
     if (d.index === d.words.length - 1 && nfd(d.typed) === nfd(currentWord(d))) {

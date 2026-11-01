@@ -15,6 +15,8 @@ export interface ResultCardOptions {
   nativeTitle: string;
   title: string;
   watermark: string;
+  /** The line under the speed (default: accuracy · length · layout). */
+  line?: string;
   /** Font and direction of the heading (default: Urdu's). */
   font?: FontId;
   dir?: "rtl" | "ltr";
@@ -76,7 +78,7 @@ export async function drawResultCard(
     o.seconds >= 60 ? `${Math.round(o.seconds / 60)} min` : `${Math.round(o.seconds)} s`;
   ctx.font = `500 40px ${sans}`;
   ctx.globalAlpha = 0.85;
-  ctx.fillText(`${o.accuracy}% accuracy · ${minutes} · ${o.layoutName}`, size / 2, 770);
+  ctx.fillText(o.line ?? `${o.accuracy}% accuracy · ${minutes} · ${o.layoutName}`, size / 2, 770);
 
   ctx.font = `500 30px ${sans}`;
   ctx.globalAlpha = 0.6;

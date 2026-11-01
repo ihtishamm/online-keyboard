@@ -1,28 +1,8 @@
-import {
-  layoutRows,
-  KEY_CODES,
-  ModifierLatch,
-  TypingMachine,
-  deadStrokeMap,
-  isKeyCode,
-  keystrokeMap,
-  type KeyCode,
-  type Layout,
-  type Modifiers,
-} from "@okb/engine";
-import {
-  useEffect,
-  useLayoutEffect,
-  useMemo,
-  useReducer,
-  useRef,
-  useState,
-  type KeyboardEvent as ReactKeyboardEvent,
-} from "react";
+import { deadStrokeMap, keystrokeMap, layoutRows, type Layout } from "@okb/engine";
+import { useLayoutEffect, useMemo, useRef } from "react";
 import type { FontId } from "@okb/layouts";
 import { FONT_CLASS } from "../fonts";
-import { hasCoarsePointer, isAltGr } from "../keyboard/platform";
-import VirtualKeyboard, { type KeyAction } from "../keyboard/VirtualKeyboard";
+import VirtualKeyboard from "../keyboard/VirtualKeyboard";
 import {
   backspace,
   currentWord,
@@ -34,6 +14,7 @@ import {
   type Drill,
 } from "./drill";
 import { strokeName } from "./keys";
+import { useLayoutInput } from "./useLayoutInput";
 
 export interface TypingDrillProps {
   drill: Drill;
@@ -73,13 +54,15 @@ const DEFAULT_SIZE = {
 
 export default function TypingDrill(props: TypingDrillProps) {
   const { drill, update, layout } = props;
-  const machineRef = useRef<TypingMachine | null>(null);
-  machineRef.current ??= new TypingMachine(layout);
-  const machine = machineRef.current;
-  const latch = useRef(new ModifierLatch()).current;
-  const [, rerender] = useReducer((x: number) => x + 1, 0);
-  const [pressed, setPressed] = useState<ReadonlySet<string>>(new Set());
-  const [coarse, setCoarse] = useState(false);
+  const finished = isFinished(drill);
+  const type = (text: string) => update((d) => typeText(d, text, performance.now()));
+  const input = useLayoutInput(layout, {
+    disabled: finished,
+    ownKeyboard: props.ownKeyboard,
+    type,
+    backspace: () => update(backspace),
+  });
+  const { machine, coarse } = input;
   const inputRef = useRef<HTMLInputElement>(null);
   const wordsRef = useRef<HTMLDivElement>(null);
   const keys = useMemo(() => keystrokeMap(layout), [layout]);
@@ -93,81 +76,12 @@ export default function TypingDrill(props: TypingDrillProps) {
     ? { lang: `${props.lang}-Latn`, dir: "ltr" as const, font: "latin" as FontId }
     : { lang: props.lang, dir, font };
 
-  useEffect(() => setCoarse(hasCoarsePointer()), []);
-  useEffect(() => {
-    machine.setLayout(layout);
-    latch.reset();
-  }, [layout, machine, latch]);
-
   // Keep the current word on the second line, so the line just typed stays visible.
   useLayoutEffect(() => {
     const box = wordsRef.current;
     const word = box?.querySelector<HTMLElement>("[data-current]");
     if (box && word) box.scrollTop = Math.max(0, word.offsetTop - word.offsetHeight);
   }, [drill.index, drill.words]);
-
-  const finished = isFinished(drill);
-  const type = (text: string) => update((d) => typeText(d, text, performance.now()));
-
-  // ----- physical keyboard -----
-  const onKeyDown = (e: ReactKeyboardEvent<HTMLInputElement>) => {
-    const ne = e.nativeEvent;
-    if (ne.isComposing || ne.keyCode === 229) return;
-    setPressed((s) => (s.has(e.code) ? s : new Set(s).add(e.code)));
-    if (props.ownKeyboard || finished) return;
-    if (e.key === " ") {
-      e.preventDefault();
-      const trigger = machine.pending;
-      machine.cancelPending();
-      type(trigger ?? " ");
-      return;
-    }
-    if (e.key === "Backspace" && machine.cancelPending()) {
-      e.preventDefault();
-      return;
-    }
-    const altgr = isAltGr(ne);
-    if (!altgr && (e.ctrlKey || e.metaKey || e.altKey)) return;
-    if (!isKeyCode(e.code)) return; // Backspace and the like work natively on the input
-    e.preventDefault();
-    const result = machine.press(e.code, {
-      shift: e.shiftKey,
-      altgr,
-      caps: ne.getModifierState?.("CapsLock") ?? false,
-    });
-    if (result.kind === "text") type(result.text);
-    rerender();
-  };
-
-  const onKeyUp = (e: ReactKeyboardEvent<HTMLInputElement>) =>
-    setPressed((s) => {
-      if (!s.has(e.code)) return s;
-      const next = new Set(s);
-      next.delete(e.code);
-      return next;
-    });
-
-  // ----- on-screen keyboard -----
-  const onChar = (code: KeyCode) => {
-    if (finished) return;
-    const result = machine.press(code, latch.current());
-    if (result.kind === "text") type(result.text);
-    latch.consume();
-    rerender();
-  };
-
-  const onAction = (action: KeyAction) => {
-    if (action === "backspace") {
-      if (!machine.cancelPending()) update(backspace);
-    } else if (action === "space" || action === "enter") {
-      const trigger = machine.pending;
-      machine.cancelPending();
-      type(trigger ?? " ");
-    } else if (action === "shift") latch.tapShift();
-    else if (action === "altgr") latch.tapAltGr();
-    else if (action === "caps") latch.tapCaps();
-    rerender();
-  };
 
   const next = props.hint ? nextKeystroke(drill, keys, dead, machine.pending) : null;
   const highlight = useMemo(() => {
@@ -181,21 +95,6 @@ export default function TypingDrill(props: TypingDrillProps) {
     return set;
   }, [next]);
 
-  const latched = latch.current();
-  const mods: Modifiers = {
-    shift: latched.shift || pressed.has("ShiftLeft") || pressed.has("ShiftRight"),
-    altgr: latched.altgr || pressed.has("AltRight"),
-    caps: latched.caps,
-  };
-  const letterKeys = useMemo(
-    () =>
-      new Set(
-        KEY_CODES.filter((code) =>
-          [layout.keys[code]?.n, layout.keys[code]?.s].some((v) => v && /[\p{L}\p{M}]/u.test(v)),
-        ),
-      ),
-    [layout],
-  );
   const showKeyboard = (props.keyboard || coarse) && !props.ownKeyboard;
   const track = onTrack(drill);
   const target = currentWord(drill);
@@ -245,9 +144,7 @@ export default function TypingDrill(props: TypingDrillProps) {
           onChange={(e) =>
             update((d) => setTyped(d, e.target.value.normalize("NFC"), performance.now()))
           }
-          onKeyDown={onKeyDown}
-          onKeyUp={onKeyUp}
-          onBlur={() => setPressed(new Set())}
+          {...input.handlers}
           disabled={finished}
           lang={typed.lang}
           dir={typed.dir}
@@ -281,22 +178,10 @@ export default function TypingDrill(props: TypingDrillProps) {
 
       {showKeyboard && (
         <VirtualKeyboard
-          labelFor={(code) => machine.labelFor(code, mods)}
-          longpress={layout.longpress}
+          {...input.keyboard}
           rows={layoutRows(layout.keys)}
-          shift={latch.shift}
-          altgr={latch.altgr}
-          hasAltGr={Object.values(layout.keys).some((k) => k?.ag || k?.sag)}
-          caps={mods.caps}
-          passthrough={false}
           nativeName={props.nativeName}
-          letterKeys={letterKeys}
-          pressed={pressed}
-          onChar={onChar}
-          onAlternate={(text) => type(text)}
-          onAction={onAction}
           highlight={highlight}
-          showToggle={false}
         />
       )}
     </div>

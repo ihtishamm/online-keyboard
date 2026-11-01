@@ -7,9 +7,14 @@ import { loadPreference, savePreference } from "../keyboard/preferences";
 import { createDrill, isFinished, scoringFor, stats, type Drill } from "./drill";
 import type { Lesson } from "./lessons";
 import Segmented from "./Segmented";
+import { addRecord } from "./history";
+import { recordOf } from "./progress";
 import TypingDrill from "./TypingDrill";
+import { hasCoarsePointer } from "../keyboard/platform";
 
 export interface TypingTutorProps {
+  /** Language slug, for the progress history. */
+  slug: string;
   lang: string;
   languageName: string;
   nativeName: string;
@@ -108,7 +113,21 @@ export default function TypingTutor(props: TypingTutorProps) {
       savePreference(`tutor:${layoutId}`, JSON.stringify(next));
     }
     setSaved(true);
-  }, [result, lesson, saved, progress, layoutId]);
+    void addRecord(
+      recordOf(
+        {
+          slug: props.slug,
+          layout: lesson.layout ?? layoutId,
+          activity: "lesson",
+          phone: hasCoarsePointer(),
+          detail: lesson.id,
+        },
+        result,
+        // Roman spelling lessons are typed in English letters: no keys of the layout.
+        lesson.cues ? {} : drill.keyCounts,
+      ),
+    ).catch(() => {});
+  }, [result, lesson, saved, progress, layoutId, props.slug, drill]);
 
   if (!lesson) {
     const doneCount = lessons.filter((l) => (progress[l.id]?.accuracy ?? 0) >= PASS).length;

@@ -131,6 +131,7 @@ const lastLessons =
   tatoeba={text.passages.length > 0}
 >
   <TypingTutor
+    slug={l.slug}
     client:idle={{ timeout: 500 }}
     lang={l.lang}
     languageName={name}

@@ -1,0 +1,41 @@
+---
+import "@fontsource/noto-naskh-arabic/400.css";
+import "@fontsource/noto-nastaliq-urdu/400.css";
+import "@fontsource/noto-sans-bengali/400.css";
+import "@fontsource/noto-sans-devanagari/400.css";
+import { LANGUAGES } from "@okb/layouts";
+import TypingProgress from "../../components/typing/TypingProgress";
+import { TYPING_LANGUAGES } from "../../content/typing/practice";
+import Base from "../../layouts/Base.astro";
+import { SITE } from "../../config/site";
+
+/**
+ * Typing progress (plan item 8.2): history, accuracy by key, weakest-key drills and badges,
+ * all from this device. Personal, so kept out of search results.
+ */
+const typing = new Set(["urdu", ...TYPING_LANGUAGES.map((l) => l.slug)]);
+const languages = LANGUAGES.filter((l) => typing.has(l.slug)).map((l) => ({
+  slug: l.slug,
+  name: l.name.en,
+  native: l.name.native,
+  lang: l.lang,
+  dir: l.dir,
+  font: l.fonts[0]!,
+  script: l.script,
+}));
+---
+
+<Base
+  title={`Your Typing Progress | ${SITE.name}`}
+  description="Your typing history, accuracy by key, practice for your weakest keys and badges, kept on your device."
+  noindex
+>
+  <section class="py-6">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">Your typing progress</h1>
+    <p class="mt-3 max-w-3xl text-muted">
+      Every typing test, tutor lesson and game you finish is kept here, in this browser only. See
+      where you're getting faster, which keys you miss, and practise them.
+    </p>
+  </section>
+  <TypingProgress client:load languages={languages} />
+</Base>

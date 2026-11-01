@@ -184,3 +184,63 @@ export async function romanPairs(
   }
   return pairs;
 }
+
+/** Falling-words levels: [highest frequency rank, longest word in characters]. */
+const BANDS: readonly (readonly [number, number])[] = [
+  [150, 5],
+  [600, 7],
+  [2000, 9],
+  [6000, 12],
+];
+/** Words kept per level. */
+const BAND_SIZE = 150;
+/** Words offered for drills on the weakest keys. */
+const FREQUENT = 3000;
+
+export interface GameData {
+  layouts: Layout[];
+  /** Common words, for the daily challenge when there are no sentences. */
+  words: string[];
+  passages: string[];
+  /** Falling-words word sets, easiest first: common, short words, then rarer and longer. */
+  bands: string[][];
+  /** The commonest words every layout types, for drills on the weakest keys. */
+  frequent: string[];
+}
+
+/**
+ * Text for the typing games of a language (plan item 8.2). Urdu uses the layouts, words and
+ * passages of its own typing test (urdu.ts) and its word list for the levels.
+ */
+export async function gameData(
+  l: Language,
+  urdu?: { words: readonly string[]; passages: readonly string[] },
+): Promise<GameData> {
+  const layouts = urdu ? ["ur-phonetic", "ur-standard"].map(getLayout) : typingLayouts(l);
+  const maps = layouts.map((layout) => {
+    const keys = keystrokeMap(layout);
+    return { keys, dead: deadStrokeMap(layout, keys) };
+  });
+  const everywhere = (text: string) => maps.every((m) => typeable(text, m.keys, m.dead));
+  const text = await practiceText(l);
+  const blocked = blocklist(l);
+  const usable = text.frequency.filter(
+    (w) => isWord(w) && !blocked.words.has(w.toLowerCase()) && everywhere(w),
+  );
+  const graphemes = new Intl.Segmenter(l.lang, { granularity: "grapheme" });
+  const length = (w: string) => [...graphemes.segment(w)].length;
+  // Each level: the rarest of the words up to its rank that are short enough.
+  const bands = BANDS.map(([rank, longest]) =>
+    usable
+      .slice(0, rank)
+      .filter((w) => length(w) <= longest)
+      .slice(-BAND_SIZE),
+  ).filter((band) => band.length >= 20);
+  return {
+    layouts,
+    words: urdu ? [...urdu.words] : text.words,
+    passages: urdu ? [...urdu.passages] : text.passages,
+    bands,
+    frequent: usable.slice(0, FREQUENT),
+  };
+}

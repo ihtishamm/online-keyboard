@@ -7,6 +7,8 @@ import { loadPreference, savePreference } from "../keyboard/preferences";
 import { hasCoarsePointer } from "../keyboard/platform";
 import { createDrill, extend, finish, isFinished, scoringFor, stats, type Drill } from "./drill";
 import Segmented from "./Segmented";
+import { addRecord } from "./history";
+import { recordOf } from "./progress";
 import TypingDrill from "./TypingDrill";
 
 export interface TypingTestProps {
@@ -48,6 +50,25 @@ const BTN_BASE =
 const BTN = `${BTN_BASE} border-border bg-surface text-text hover:bg-surface-2`;
 const PRIMARY = `${BTN_BASE} border-accent bg-accent font-medium text-accent-fg hover:opacity-90`;
 
+/** A timeline with every second filled (seconds with no new word keep the last count). */
+function filled(timeline: readonly number[], seconds: number): number[] {
+  const out: number[] = [];
+  let last = 0;
+  for (let i = 0; i <= seconds; i++) out.push((last = timeline[i] ?? last));
+  return out;
+}
+
+function loadGhost(key: string): number[] | null {
+  try {
+    const value: unknown = JSON.parse(loadPreference(key) ?? "null");
+    return Array.isArray(value) && value.length && value.every((n) => typeof n === "number")
+      ? value
+      : null;
+  } catch {
+    return null;
+  }
+}
+
 export default function TypingTest(props: TypingTestProps) {
   const [layoutId, setLayoutId] = useState(props.layouts[0]!.id);
   const [duration, setDuration] = useState<number>(60);
@@ -59,6 +80,10 @@ export default function TypingTest(props: TypingTestProps) {
   const [now, setNow] = useState(0);
   const [best, setBest] = useState<{ previous: number | null; isNew: boolean } | null>(null);
   const [message, setMessage] = useState("");
+  // Ghost race: correct characters at each second of this run, and of the best run.
+  const timeline = useRef<number[]>([]);
+  const [ghost, setGhost] = useState<number[] | null>(null);
+  const [race, setRace] = useState(true);
   const layout = props.layouts.find((l) => l.id === layoutId) ?? props.layouts[0]!;
   // Phones keep their own bests: tapping is a different skill from a keyboard.
   const bestKey = `typingBest:${layoutId}:${duration}:${source}${phone ? ":phone" : ""}`;
@@ -79,6 +104,7 @@ export default function TypingTest(props: TypingTestProps) {
 
   const restart = useCallback(() => {
     setDrill(createDrill(text(), props.script));
+    timeline.current = [];
     setBest(null);
     setNow(0);
     requestAnimationFrame(() =>
@@ -97,6 +123,7 @@ export default function TypingTest(props: TypingTestProps) {
     setPhone(hasCoarsePointer());
     if (saved("keyboard") === "off") setKeyboard(false);
     if (saved("own") === "on") setOwnKeyboard(true);
+    if (saved("race") === "off") setRace(false);
   }, [props.layouts, props.passages]);
   useEffect(() => restart(), [restart, layoutId, duration]);
 
@@ -130,11 +157,37 @@ export default function TypingTest(props: TypingTestProps) {
     const raw = loadPreference(bestKey);
     const previous = raw === null ? null : Number(raw);
     const isNew = result.netWpm > 0 && (previous === null || result.netWpm > previous);
-    if (isNew) savePreference(bestKey, String(result.netWpm));
+    if (isNew) {
+      savePreference(bestKey, String(result.netWpm));
+      savePreference(`${bestKey}:ghost`, JSON.stringify(filled(timeline.current, duration)));
+    }
     setBest({ previous, isNew });
-  }, [result, best, bestKey]);
+    if (drill.keystrokes > 0) {
+      void addRecord(
+        recordOf(
+          {
+            slug: props.slug,
+            layout: layoutId,
+            activity: "test",
+            phone,
+            detail: `${duration}s ${source}`,
+          },
+          { ...result, seconds: duration },
+          drill.keyCounts,
+        ),
+      ).catch(() => {});
+    }
+  }, [result, best, bestKey, drill, props.slug, layoutId, phone, duration, source]);
 
   const live = stats(drill, running ? now : (drill.endedAt ?? 0));
+  if (running) timeline.current[Math.floor(live.seconds)] = live.correctChars;
+
+  // The best run's timeline, for this layout, length, text and device.
+  useEffect(() => setGhost(loadGhost(`${bestKey}:ghost`)), [bestKey, best]);
+  const ghostChars = ghost ? (ghost[Math.min(Math.floor(live.seconds), ghost.length - 1)] ?? 0) : 0;
+  const racing = race && ghost !== null && !isFinished(drill);
+  const lead = live.correctChars - (drill.startedAt === null ? 0 : ghostChars);
+  const span = Math.max(1, ghost?.at(-1) ?? 1, live.correctChars);
   const left = drill.startedAt === null ? duration : Math.max(0, duration - live.seconds);
   const layoutName = layout.name.en;
 
@@ -232,6 +285,20 @@ export default function TypingTest(props: TypingTestProps) {
           />
           My device already types {props.languageName}
         </label>
+        {ghost && (
+          <label className="inline-flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={race}
+              onChange={(e) => {
+                setRace(e.target.checked);
+                savePreference("typing:race", e.target.checked ? "on" : "off");
+              }}
+              className="size-4 accent-[var(--color-accent)]"
+            />
+            Race my best
+          </label>
+        )}
       </div>
 
       <div
@@ -250,6 +317,32 @@ export default function TypingTest(props: TypingTestProps) {
           <span className="ms-auto text-sm text-muted">The clock starts with your first key.</span>
         )}
       </div>
+
+      {racing && (
+        <div className="flex flex-col gap-1.5 text-sm" data-race>
+          {[
+            { label: "You", chars: live.correctChars, cls: "bg-accent" },
+            { label: "Best", chars: drill.startedAt === null ? 0 : ghostChars, cls: "bg-muted" },
+          ].map((r) => (
+            <div key={r.label} className="flex items-center gap-2">
+              <span className="w-10 shrink-0 text-muted">{r.label}</span>
+              <span className="h-2.5 flex-1 overflow-hidden rounded-full bg-surface-2">
+                <span
+                  className={`block h-full rounded-full ${r.cls} transition-[width] duration-200 motion-reduce:transition-none`}
+                  style={{ width: `${Math.min(100, (100 * r.chars) / span)}%` }}
+                />
+              </span>
+            </div>
+          ))}
+          <p className="text-muted">
+            {drill.startedAt === null
+              ? `Racing your best of ${best?.previous ?? loadPreference(bestKey) ?? "?"} ${UNIT}.`
+              : lead >= 0
+                ? `${lead} ${lead === 1 ? "character" : "characters"} ahead of your best`
+                : `${-lead} ${lead === -1 ? "character" : "characters"} behind your best`}
+          </p>
+        </div>
+      )}
 
       {result ? (
         <section

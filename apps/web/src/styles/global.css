@@ -407,3 +407,14 @@
     margin: 0;
   }
 }
+
+/* Falling-words game (components/typing/FallingWords.tsx): a word drops from above the box to
+   its bottom edge; the game counts a miss when the animation ends. */
+@keyframes fall {
+  from {
+    top: -3rem;
+  }
+  to {
+    top: 100%;
+  }
+}
