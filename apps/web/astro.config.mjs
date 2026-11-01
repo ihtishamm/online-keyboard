@@ -15,7 +15,7 @@ export default defineConfig({
     // Islands are written against React's API and run on Preact (preact/compat): the same
     // components for ~55 KB less JavaScript on every keyboard page.
     preact({ compat: true }),
-    sitemap({ filter: (page) => !/\/(share|voice-probe)\/?$/.test(page) }),
+    sitemap({ filter: (page) => !/\/(share|voice-probe|typing\/progress)\/?$/.test(page) }),
     serviceWorker(),
   ],
   vite: {

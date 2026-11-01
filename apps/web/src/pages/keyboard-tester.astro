@@ -1,0 +1,130 @@
+---
+import TesterApp from "../components/tester/TesterApp";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+/** The keyboard tester (plan item 8.3): keys, faults, layout, touch screen and characters. */
+const steps = [
+  "Press every key on your keyboard. Each one lights up on the board, and the bar counts how many are done.",
+  "Pick your keyboard's shape (ANSI, ISO, ABNT2 or JIS) if it isn't picked for you. Pressing a key only some shapes have switches it.",
+  "Read the checks: chatter (a key that types twice), keys held too long (stuck), and how many keys register at once.",
+  "Under “Your keyboard layout”, see which layout your computer is set to, and compare it key by key with any of our layouts.",
+  "On a phone or tablet, test the touch screen with several fingers. Paste any text into Special characters to see every hidden character in it.",
+];
+
+const faqs = [
+  {
+    q: "How do I know if a key is broken?",
+    a: "Press it. A working key turns green on the board and shows in the event log. A key that never lights up isn't reaching the computer; one that lights up twice from a single press is chattering; one that stays lit after you let go is stuck.",
+  },
+  {
+    q: "What is key chatter?",
+    a: "A worn or dirty switch can bounce, so one press counts as two. The tester flags any key pressed again less than 30 milliseconds after its last press, faster than anyone can press a key twice on purpose.",
+  },
+  {
+    q: "What is rollover, and what number should I get?",
+    a: "Rollover is how many keys a keyboard can register at once. Hold down as many as you can: many keyboards stop at 6 keys or miss some combinations; gaming keyboards often register them all (NKRO). The operating system can also limit it.",
+  },
+  {
+    q: "Why does my keyboard type the wrong characters?",
+    a: "Your computer is set to a different layout from the one printed on the keys, for example French AZERTY on a US keyboard. The tester shows the layout the computer is using; change it in your system's language or keyboard settings.",
+  },
+  {
+    q: "What are ANSI, ISO, ABNT2 and JIS keyboards?",
+    a: "The physical shapes: ANSI (US) has a wide one-row Enter and a long left Shift. ISO (most of Europe) has a tall Enter and an extra key next to the left Shift. ABNT2 (Brazil) adds a key next to the right Shift. JIS (Japan) adds keys for the yen sign and for switching kana.",
+  },
+  {
+    q: "What are invisible characters like ZWNJ and RLM?",
+    a: "Characters that take no space but change the text around them. Persian uses the zero-width non-joiner (ZWNJ) to keep letters apart inside a word; Urdu and Arabic text uses the right-to-left mark (RLM) to keep numbers in the right place. Text copied from websites and PDFs can carry stray ones, which break searches and spell checks; the inspector shows each one.",
+  },
+  {
+    q: "Is anything I type sent anywhere?",
+    a: "No. The tester runs in your browser. Only character names are downloaded, as public data, for the text you inspect.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Keyboard Tester`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base
+  title={`Keyboard Tester: Test Every Key, Chatter, Rollover and Layout Online | ${SITE.name}`}
+  description="Free online keyboard tester: check every key on ANSI, ISO, ABNT2 and JIS keyboards, find chatter, stuck keys and rollover, see your keyboard layout, test a touch screen and reveal hidden characters."
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <section class="py-6">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">Keyboard tester</h1>
+    <p class="mt-3 max-w-3xl text-muted">
+      Test every key of your keyboard, find keys that chatter or stick, and see which layout your
+      computer uses. On a phone, test the touch screen. Paste any text to see its hidden characters.
+    </p>
+  </section>
+
+  <TesterApp client:load />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to test your keyboard
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="more-heading" class="min-w-0">
+      <h2 id="more-heading" class="mb-3 text-xl font-semibold">
+        Type in your language
+      </h2>
+      <p class="mb-3 text-muted">
+        Your keyboard works for every language here: the on-screen keyboard shows which key types
+        which letter.
+      </p>
+      <ul class="space-y-1">
+        <li>
+          <a class="text-accent underline" href="/">
+            All keyboards
+          </a>
+        </li>
+        <li>
+          <a class="text-accent underline" href="/typing">
+            Typing tests and tutors
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

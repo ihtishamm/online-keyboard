@@ -516,7 +516,7 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
 
 ---
 
-### Phase 8: Learning hub and keyboard tester (size L)
+### Phase 8: Learning hub and keyboard tester (size L) ✅ (owner follow-ups listed under "Phase 8 close")
 
 **Why now:** built once and generic, so every language added in Phase 9 gets tests, lessons and games automatically.
 
@@ -555,39 +555,64 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
   - **Phones:** the drill uses the same on-screen keyboard as the keyboard pages, long-press included, or the phone's own keyboard. Phone bests are kept apart from computer bests. The result card draws the test's title in the language's script and font.
   - **Tests:** unit tests check that every sentence types on every offered layout, plus the scoring, lessons and blocklist. New e2e tests (`e2e/typing-langs.spec.ts`) cover the hub filter, Hindi on InScript, an Arabic home-row lesson, the Hindi Roman spellings lesson, Arabic RTL on phones, and axe on each page type. `phone.spec.ts` checks the hub and three typing pages at 320 and 360 px. Full suite: 363 e2e passed (desktop, Pixel 7, 360 px Android). WebKit/iPhone wasn't run locally.
   - **Fixed on the way:** the `phone:` Tailwind variant had compiled to an invalid selector for its landscape half, so phone-only styles (sticky keyboard, keyboard inset) never applied on landscape phones. It now uses the block form. Also fixed a typecheck error in `packages/layouts/scripts/imports.ts`.
-- [ ] **8.2 Practice and games** (original designs; §2).
-  - [ ] **Daily challenge:**
+- [x] **8.2 Practice and games** (original designs; §2).
+  - [x] **Daily challenge:**
     - one passage per language per day, seeded by the date, so it's the same for everyone;
     - a streak counter;
     - a share card ("Day 12 · 48 WPM · 97 %").
-  - [ ] **Falling-words game.** Word sets come from frequency bands for each level. Playable on phones with the on-screen keyboard.
-  - [ ] **Key-finder drill.** A letter appears and you tap or press its key. It's the fastest way to learn a layout on a phone.
-  - [ ] **Ghost race** against your own personal best.
-  - [ ] **Progress page:**
+  - [x] **Falling-words game.** Word sets come from frequency bands for each level. Playable on phones with the on-screen keyboard.
+  - [x] **Key-finder drill.** A letter appears and you tap or press its key. It's the fastest way to learn a layout on a phone.
+  - [x] **Ghost race** against your own personal best.
+  - [x] **Progress page:**
     - history per language;
     - an accuracy-by-key heatmap drawn on the keyboard;
     - drills generated for your weakest keys;
     - export and import as JSON.
     - Everything stays local (IndexedDB). Global leaderboards wait for accounts (11.3).
-  - [ ] Badges for streaks and milestones, stored locally.
-- [ ] **8.3 Keyboard tester** (`/keyboard-tester`, the owner's "Keyboard Layout Tester").
-  - [ ] **On-screen board.** Physical keys light up as pressed, in ANSI, ISO, ABNT2 or JIS shape. Each press shows `key`, `code`, `location`, `repeat`, the modifiers and timing. A progress bar tracks "all keys tested".
-  - [ ] **Fault checks:**
+  - [x] Badges for streaks and milestones, stored locally.
+  - **Shipped:** `/<slug>-typing-games` for all 25 typing languages, Urdu included, with three tabs (daily challenge, falling words, key finder; `#daily`, `#falling`, `#finder` link to each). Also `/typing/progress` (noindex, left out of the sitemap). Links come from every typing page, the hub and each keyboard page.
+  - **Daily challenge:** sentences from a seeded start until about 20 words, or 25 seeded common words for languages without sentences. Seeded by language and UTC day, so the same everywhere. Challenge numbers count from 2026-11-01 (#1). The streak counts UTC days in a row and still shows yesterday's streak until today's is played. Share as text (Web Share, else copied) or as an image card with the language's name in its own script. The text is fixed within a build; rebuilding the sentence files can change future days' texts.
+  - **Falling words:** four levels from frequency bands (top 150 words of up to 5 letters, then 600/7, 2,000/9 and 6,000/12), 150 words each, every one typeable on every offered layout (unit-tested for all 25 languages). The level goes up every 10 words; words fall faster and come more often. Three misses end the game. Words fall by CSS animation (no per-frame JavaScript) and pause while the page is hidden. On phones the box shrinks and scrolls into view with the keyboard.
+  - **Key finder:** 20 letters a round from the layout's plain and Shift layers (capitals of letters already on the plain layer are left out). A wrong key lights the right one on the on-screen keyboard; results are letters per minute and "right first time".
+  - **Ghost race:** each new best saves correct characters per second. The next test of the same layout, length, text and device shows "You" and "Best" bars and how far ahead or behind you are. Can be turned off.
+  - **Per-key accuracy:** the drill now counts each keystroke against the character it should have typed (both keys of آ typed as ا + madda count for آ; keys after a mistake count for nothing). Tests, lessons, the daily challenge and the key finder record it. Falling words doesn't, because which word you're typing is only known once it matches.
+  - **Progress:** results go to IndexedDB (`history.ts`, at most 5,000, oldest dropped). The page shows best speed, test count, practice time, daily streak, a speed chart of the last 30 tests, and the history table. It draws the heatmap on the layout used most (keys need 3 presses to be coloured; light tints keep text contrast) and lists the 4 weakest keys. "Practise these keys" builds a drill from common words holding them. Each language's layouts and words load from `/typing/data/<slug>.json` (13–15 KB gzipped) only when shown. Export, import (checked field by field, merged without duplicates) and delete. Without IndexedDB (some private modes) the page says results last only for the visit.
+  - **Badges:** 11, computed from the records (so they travel with an export): first result, daily player, 3/7/30 days in a row, 20/40/60 WPM, 98 % over a minute, 25 tests, 3 languages.
+  - **Refactor:** TypingDrill's key handling moved into `useLayoutInput`, shared with the games (`GameInput`).
+  - **Sizes:** games pages 35.9 KB initial JS, progress 33.6 KB (keyboard pages 51.9 KB; budget 90).
+- [x] **8.3 Keyboard tester** (`/keyboard-tester`, the owner's "Keyboard Layout Tester").
+  - [x] **On-screen board.** Physical keys light up as pressed, in ANSI, ISO, ABNT2 or JIS shape. Each press shows `key`, `code`, `location`, `repeat`, the modifiers and timing. A progress bar tracks "all keys tested".
+  - [x] **Fault checks:**
     - chatter: two presses less than 30 ms apart are flagged;
     - stuck keys;
     - rollover: how many held keys register at once.
-  - [ ] **OS layout detection** through the Keyboard Map API (Chromium), otherwise inferred from `event.key`.
-  - [ ] **Layout mapping:** pick any of our layouts and see, for each key, what it types next to what the OS types.
-  - [ ] **Special-characters inspector:** paste text and see each character's code point, Unicode name, script, direction and normalisation.
+  - [x] **OS layout detection** through the Keyboard Map API (Chromium), otherwise inferred from `event.key`.
+  - [x] **Layout mapping:** pick any of our layouts and see, for each key, what it types next to what the OS types.
+  - [x] **Special-characters inspector:** paste text and see each character's code point, Unicode name, script, direction and normalisation.
     - Invisible characters (ZWJ, ZWNJ, RLM, NBSP) are highlighted.
     - Name data loads lazily, per Unicode block.
-  - [ ] **On phones:** a multi-touch screen tester, plus the inspector.
+  - [x] **On phones:** a multi-touch screen tester, plus the inspector.
+  - **Shipped:** three tabs (keyboard, touch screen, special characters). Phones open on the touch tester, computers on the keyboard; `#keyboard`, `#touch` and `#characters` pick one. Linked from the home page.
+  - **Board:** function row, main block and navigation cluster (88 keys on ANSI). The shape is remembered, and switches by itself when a key only some shapes have is pressed (IntlBackslash → ISO, IntlRo → ABNT2, IntlYen → JIS). Legends show what the computer types on each key once known. The board scrolls sideways inside its box on narrow screens; the page doesn't. The last key shows all its fields, and the event log keeps 40 events with gap and hold times.
+  - **Checks:** chatter is a second key-down of the same key within 30 ms (auto-repeat excluded). A key held for 2 s or more is reported as possibly stuck; held keys are released when the page loses focus, since the OS may swallow key-ups. Rollover is the most keys down at once.
+  - **Layout:** the Keyboard Map API where it returns keys (headless Chromium returns an empty map, as can a computer with no keyboard attached). Otherwise the layout is worked out after 8 letter keys pressed without modifiers. The result is matched against all our key layouts plus US QWERTY (`/keyboard-tester/layouts.json`, 5.3 KB gzipped, loaded on demand) and shows the top 3. The comparison table highlights keys that differ.
+  - **Inspector:** code points, characters as seen (graphemes), invisible characters by name, the normalisation forms the text is in, the text with invisible characters shown as labels, and a table of name, script, direction (bidi class in words), category and decomposition. Five examples (Farsi ZWNJ, Urdu RLM, Hindi conjunct, é two ways, emoji ZWJ). Data: Unicode 17.0 (`scripts/make-unicode.ts`, §8), 346 block files (1.9 MB in all) under `public/unicode/17.0/`, fetched per block and cached by the service worker. Hangul syllable names are worked out by the Unicode algorithm; CJK and Tangut names come from ranges.
+  - **Touch:** numbered circles for each finger, the most at once, and a 6 × 10 grid that fills in where the screen has responded, to find dead spots.
+  - **Keyboard users:** the tester blocks the browser's own key actions (F5, Space scrolling, Alt menus) so those keys can be tested, but lets Tab move focus and Enter or Space press the focused button.
+  - **Tests:** unit tests for the board widths and shapes, chatter, stuck keys, rollover, layout matching, invisible labels, Hangul names and normalisation. e2e tests (`e2e/games.spec.ts`) send ISO and ABNT2 keys as events (Playwright can't press them by name) and check the board switches and lights them. They also cover chatter, rollover, layout detection from AZERTY keys, Tab and button presses, the inspector, the touch tester on phones, and axe on each tab.
+  - **Not done:** PrintScreen and some media keys never reach a web page, and Fn never does; the FAQ doesn't promise them. The numeric keypad is logged but not drawn.
 
 **Exit**
 - Test and tutor are live for every Tier B language or higher (at least 25).
 - Games are live for the Tier A languages.
 - The tester's e2e tests cover ISO and ABNT2 keys.
 - axe and Lighthouse pass on every new page.
+
+**Phase 8 close (2026-11-01)**
+- Exit: tests and tutors are live for all 25 typing languages (every Tier B language and above, and the Tier C ones too). Games are live for all 25, more than the Tier A list. The tester's e2e tests cover the ISO and ABNT2 keys. axe shows no serious or critical issues on the new pages (hub, typing pages, games, progress, tester).
+- Full suite: lint, typecheck, 1,223 unit tests, the build, the JS budget, and 389 e2e tests (desktop, Pixel 7, 360 px Android, latency on Pixel 7 at 4× throttle: median 24.7 ms from tap to letter) all pass.
+- **Beat-list review:** the advantages claimed in §3 are visible in the product. Tests run on any layout with the on-screen keyboard on any device, lessons are built from the layout, with Roman spelling lessons, nothing covers the text, the daily text is the same for everyone, and the tester works at 360 px with ABNT2, JIS, layout mapping and the inspector. Speed scoring alone is no longer claimed as an edge (10fastfingers counts keystrokes too).
+- **Open (owner):** Lighthouse mobile on a deployed preview (no deploy yet, §11.2); an iPhone (WebKit) e2e run; native-speaker review of the games and tester copy; the manual sample review of sentences for Tier A languages.
 
 ---
 
@@ -750,6 +775,7 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | Tatoeba | Typing-test sentences; everyday words and the spell-check test for Latin languages | CC BY 2.0 FR (some CC0); credit with a link | In use (typing sentences for 22 languages; word lists for 14 Latin ones) |
 | LDNOOBW word lists | Blocklist for typing tests, lessons and games (build time only) | CC BY 4.0 (credited in the package README) | In use (13 languages, plus Hindi, Bangla, Urdu and Sindhi converted from its Roman Hindi list) |
 | Unicode CLDR 43 | Keyboards, emoji names | Unicode License v3 | In use |
+| Unicode Character Database 17.0 | Character names, scripts and bidi classes for the keyboard tester's inspector (`apps/web/scripts/make-unicode.ts`) | Unicode License v3 (credited on the page) | In use (8.3) |
 | SIL Keyman keyboards | Layouts | Mostly MIT (per keyboard) | In use; check each one |
 | xkeyboard-config | Latin and Cyrillic national layouts | X11/MIT-style, varies by file | Check per file |
 | CC-CEDICT | Pinyin → hanzi | CC BY-SA 4.0 | Check at 9b |
