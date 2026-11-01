@@ -411,19 +411,21 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
 - no language ever shows tofu (missing-glyph boxes);
 - Latin languages get smart accents that type the accents for you, not shortcuts you must learn.
 
-- [ ] **7.1 Language registry as data.**
-  - [ ] One folder per language: `packages/layouts/languages/<slug>/`, holding:
+- [x] **7.1 Language registry as data.**
+  - [x] One folder per language: `packages/layouts/languages/<slug>/`, holding:
     - `language.json` (lang, script, dir, fonts, layouts, voice locales, scheme, word list, tier);
     - the layouts;
     - phone-layout overrides.
-  - [ ] Page copy moves to an Astro content collection, `src/content/languages/<slug>.md`, with a zod schema.
-  - [ ] Migrate the 11 current languages. **Golden tests prove that no output or URL changed.**
-  - [ ] Languages load per page (builds on 5.7). The bundle-growth test stays green.
-  - [ ] The tier-gate test (§5.4) and `pnpm roster` → `LANGUAGES.md`.
-- [ ] **7.2 Scripts and fonts.**
-  - [ ] A script registry: ISO 15924 code → font stack (Noto, through fontsource), direction, digits, punctuation, whether the script has case, and whether letters join.
-  - [ ] **No-tofu test:** every character any layout can type must be in the page's font. Read the font's cmap at build time.
-  - [ ] Only the page's script fonts load, subset with `unicode-range`.
+  - [x] Page copy moves to an Astro content collection, `src/content/languages/<slug>.md`, with a zod schema.
+  - [x] Migrate the 11 current languages. **Golden tests prove that no output or URL changed.**
+  - [x] Languages load per page (builds on 5.7). The bundle-growth test stays green.
+  - [x] The tier-gate test (§5.4) and `pnpm roster` → `LANGUAGES.md`.
+  - **Shipped** (commit 62e1953; notes added 2026-11-01, as the commit didn't update the plan): `scripts/registry.ts` generates `src/registry.ts` from the language folders, and a test checks it is fresh. Every built page was compared before and after the move: identical apart from the new language fields in island props. Voice locales and dialect names come from `language.json`. The tier gate computes the tier each language has earned.
+- [x] **7.2 Scripts and fonts.**
+  - [x] A script registry: ISO 15924 code → font stack (Noto, through fontsource), direction, digits, punctuation, whether the script has case, and whether letters join.
+  - [x] **No-tofu test:** every character any layout can type must be in the page's font. Read the font's cmap at build time.
+  - [x] Only the page's script fonts load, subset with `unicode-range`.
+  - **Shipped** (commit bfb6bf1; notes added 2026-11-01): `language.json` fonts and direction must match their script. The no-tofu test (`apps/web/src/fonts.test.ts`) reads the cmap of every fontsource file in each editor stack and checks every character the layouts, phone layouts and Roman schemes can type. It found that Noto Nastaliq lacks ۉ and ڲ, and that no script font has ₨; the stacks now fall back to Naskh and Inter. Pages download only their own script's fonts (e2e). Before, /hindi fetched Naskh Arabic and /arabic fetched Devanagari and Bengali.
 - [x] **7.3 Importers at scale.**
   - [x] CLDR 43 keyboards for every Windows layout we need. 26 Latin keyboards vendored (French, Belgian, Swiss, German, Spanish, Latin American, Italian, Portuguese PT/ABNT/ABNT2, Turkish Q/F, Polish 214/Programmers, Czech, Hungarian, Romanian, Nordic, Dutch, US-International); all import with no warnings. Dead keys import as `deadkeys` (two-character transforms); `transform="no"` layers are marked `live`, so the trigger types literally there.
   - [x] The Keyman importer covers more of `.kmn`: stores (ranges, key lists), `any`/`index`, `nul`, `dk()`/`deadkey()` with a spacing form as the trigger. Other context rules and dead keys without a spacing form are **reported, never imported wrongly**. Existing imports unchanged; Kashmiri's digit patch is gone (the importer reads its `any(nums)` rule).
