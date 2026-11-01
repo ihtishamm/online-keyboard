@@ -19,6 +19,7 @@ import {
   normalizeUrdu,
   urduPlus,
 } from "@okb/engine/normalize";
+import { LATIN_LOCALES, foldLatin, normalizeLatin } from "@okb/engine/latin";
 
 export interface TextRules {
   /** Data directory and Wikipedia prefix, e.g. `fa` -> data/fa, fawiki. */
@@ -33,6 +34,16 @@ export interface TextRules {
   joiners: RegExp;
   /** Normalise one word; null when it is not a word of the language. */
   normalizeWord(raw: string): string | null;
+  /**
+   * Latin scripts: the lookup form of a word (lower case by the language's rules). Words are
+   * counted by it, and each keeps the case it is most often written in mid-sentence.
+   */
+  fold?: (word: string) => string;
+  /**
+   * Keep every n-th article out of the word list, for evaluations (smart accents). Chosen
+   * by a hash of the title, so the split is the same on every run.
+   */
+  holdout?: number;
 }
 
 const ARABIC_SENTENCE_END = /[۔؟?!.\n]+/u;
@@ -51,6 +62,45 @@ const arabicScript = (
   normalizeWord: (raw: string) => string | null,
   run = ARABIC_RUN,
 ): TextRules => ({ code, wiki, sentenceEnd: ARABIC_SENTENCE_END, run, joiners: ZW, normalizeWord });
+
+const LATIN_SENTENCE_END = /(?<=[.?!…])\s+|\n+/u;
+/** Latin letters and marks, with Catalan's middle dot and hyphens inside words. */
+const LATIN_RUN = /\p{Script=Latin}(?:[\p{Script=Latin}\p{M}]|[·-](?=\p{Script=Latin}))*/gu;
+/**
+ * The one-letter words of each language. Any other single letter in Wikipedia text is an
+ * abbreviation (m s. n. m.), a symbol (2n, n veces) or a list label, so it is not a word.
+ * Apostrophes split words, so elided articles and pronouns (l'homme, c'è, d'aigua) count too.
+ */
+const ONE_LETTER: Record<string, string> = {
+  es: "aeouy",
+  fr: "aàycdjlmnst",
+  it: "aeèiocdl",
+  de: "",
+  pt: "aàeéoó",
+  tr: "o",
+  pl: "aiouwz",
+  nl: "u",
+  ro: "aoe",
+  cs: "aiksuovz",
+  hu: "a",
+  sv: "iåö",
+  ca: "aiodlmnst",
+  hr: "aiuosk",
+};
+const latin = (code: string): TextRules => ({
+  code,
+  wiki: `${code}wiki`,
+  sentenceEnd: LATIN_SENTENCE_END,
+  run: LATIN_RUN,
+  joiners: /\s/g,
+  normalizeWord: (raw) => {
+    const word = normalizeLatin(raw);
+    if (word === null || [...word].length > 1) return word;
+    return ONE_LETTER[code]!.includes(foldLatin(word, LATIN_LOCALES[code]!)) ? word : null;
+  },
+  fold: (w) => foldLatin(w, LATIN_LOCALES[code]!),
+  holdout: 50,
+});
 
 /** Text rules by data code. */
 export const TEXT_RULES: Readonly<Record<string, TextRules>> = {
@@ -80,6 +130,7 @@ export const TEXT_RULES: Readonly<Record<string, TextRules>> = {
     joiners: ZW,
     normalizeWord: normalizeBangla,
   },
+  ...Object.fromEntries(Object.keys(LATIN_LOCALES).map((code) => [code, latin(code)])),
 };
 
 export function splitSentences(text: string, rules: TextRules): string[] {

@@ -7,13 +7,15 @@
  *   EVAL_WRITE=1 pnpm --filter @okb/dictionaries test spell-langs  # refresh results/spelling.json
  *
  * Misspellings are test/data/<code>-misspellings.tsv. Correct words are the native side of
- * the language's Roman evaluation sets (messages and word pairs). A language gets the spell
+ * the language's Roman evaluation sets (messages and word pairs), or for Latin languages
+ * 1,000 everyday Tatoeba sentences (src/import-tatoeba.ts); their false flags on held-out
+ * Wikipedia prose are recorded too, as `prose`. A language gets the spell
  * checker only where it meets the plan's bars (BARS), and autocorrect only where, in
  * addition, under 1% of words would be changed wrongly. results/spelling.json records the
  * numbers and both decisions; the site reads it.
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
-import { SpellChecker, spellingRules } from "@okb/engine";
+import { LATIN_LOCALES, SpellChecker, spellingRules } from "@okb/engine";
 import { LANGUAGES, getLayout } from "@okb/layouts";
 import { afterAll, describe, expect, it } from "vitest";
 import { loadShipped } from "../src/shipped.ts";
@@ -38,6 +40,8 @@ export interface SpellScore {
   /** Autocorrect on Space: misspellings fixed, and words changed to the wrong thing. */
   fixed: number;
   wrongReplacements: number;
+  /** Latin languages: false flags on held-out Wikipedia prose too (names and jargon). */
+  prose?: { words: number; falseFlags: number };
 }
 
 export function scoreSpelling(code: string): SpellScore | null {
@@ -45,7 +49,7 @@ export function scoreSpelling(code: string): SpellScore | null {
   const language = LANGUAGES.find((l) => l.code === code);
   const rules = language && spellingRules(code, language.layouts.map(getLayout));
   if (!shipped || !rules) return null;
-  const checker = new SpellChecker(shipped.lexicon, rules);
+  const checker = new SpellChecker(shipped.lexicon, rules, shipped.latin);
   const wrong = rows(`${code}-misspellings.tsv`);
   let flagged = 0;
   let top3 = 0;
@@ -63,12 +67,14 @@ export function scoreSpelling(code: string): SpellScore | null {
   const pairs = [`${code}-roman-dev.tsv`, `${code}-roman-pairs.tsv`].find((f) =>
     existsSync(data(f)),
   );
-  const correctText = [
-    ...rows(`${code}-roman-messages.tsv`),
-    ...rows(pairs ?? `${code}-roman-test.tsv`),
-  ]
-    .map(([, native]) => native.replaceAll("|", " "))
-    .join("\n");
+  // Latin languages have no Roman sets: their correct text is everyday Tatoeba sentences.
+  const correctText = existsSync(data(`${code}-everyday.txt`))
+    ? rows(`${code}-everyday.txt`)
+        .map(([, sentence]) => sentence)
+        .join("\n")
+    : [...rows(`${code}-roman-messages.tsv`), ...rows(pairs ?? `${code}-roman-test.tsv`)]
+        .map(([, native]) => native.replaceAll("|", " "))
+        .join("\n");
   const correctWords = correctText.split(/\s+/).filter(Boolean).length;
   const falseFlags = checker.misspellings(correctText).map((m) => m.word);
   if (verbose) console.log(`  false flags: ${falseFlags.join(" ")}`);
@@ -79,7 +85,18 @@ export function scoreSpelling(code: string): SpellScore | null {
       if (verbose) console.log(`  autocorrect would change ${word} -> ${auto}`);
     }
   }
+  // Held-out Wikipedia prose, every 7th sentence so that all the held-out articles count.
+  let prose: SpellScore["prose"];
+  if (existsSync(data(`${code}-heldout.txt`))) {
+    const text = readFileSync(data(`${code}-heldout.txt`), "utf8")
+      .split("\n")
+      .filter((line, i) => line && i % 7 === 0)
+      .join("\n");
+    const words = text.split(/\s+/).filter(Boolean).length;
+    prose = { words, falseFlags: checker.misspellings(text).length };
+  }
   return {
+    ...(prose ? { prose } : {}),
     misspellings: wrong.length,
     flagged,
     top3,
@@ -110,9 +127,10 @@ export function decide(
   return { spellcheck, autocorrect, autocorrectByDefault: autocorrect && !synthetic };
 }
 
-const CODES = ["ur", "ar", "fa", "ps", "sd", "pnb", "skr", "ks", "hi", "bn"].filter(
-  (c) => !only || c === only,
-);
+const CODES = [
+  ...["ur", "ar", "fa", "ps", "sd", "pnb", "skr", "ks", "hi", "bn"],
+  ...Object.keys(LATIN_LOCALES),
+].filter((c) => !only || c === only);
 
 const recorded = existsSync(RESULTS)
   ? (JSON.parse(readFileSync(RESULTS, "utf8")) as Record<
@@ -138,7 +156,8 @@ describe("spell check evaluation, all languages", () => {
         `${code}: flagged ${pct(s.flagged, s.misspellings)}, top-3 ${pct(s.top3, s.misspellings)}, ` +
           `false flags ${pct(s.falseFlags, s.correctWords)} of ${s.correctWords} words; ` +
           `autocorrect fixes ${pct(s.fixed, s.misspellings)}, ` +
-          `wrong ${pct(s.wrongReplacements, s.misspellings + s.correctWords)}`,
+          `wrong ${pct(s.wrongReplacements, s.misspellings + s.correctWords)}` +
+          (s.prose ? `; prose false flags ${pct(s.prose.falseFlags, s.prose.words)}` : ""),
       );
       expect(s.misspellings).toBeGreaterThanOrEqual(40);
       if (process.env.EVAL_WRITE !== "1") expect(recorded[code]).toEqual(measured[code]);

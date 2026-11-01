@@ -4,7 +4,7 @@ import { generateRegistry } from "../scripts/registry";
 import { LANGUAGES, REGIONS, getLayout, scriptInfo } from "../src";
 
 const DIR = new URL("../languages/", import.meta.url);
-const FONTS = ["nastaliq", "naskh", "devanagari", "bengali"];
+const FONTS = ["nastaliq", "naskh", "devanagari", "bengali", "latin"];
 
 describe("language registry (languages/<slug>/)", () => {
   it("src/registry.ts is up to date (run node scripts/registry.ts)", () => {
@@ -47,7 +47,25 @@ describe("language registry (languages/<slug>/)", () => {
     // Only known fields: a typo would otherwise be ignored silently.
     const raw = JSON.parse(readFileSync(new URL(`${slug}/language.json`, DIR), "utf8")) as object;
     const known = ["slug", "code", "order", "lang", "script", "dir", "name", "fonts", "layouts"];
-    known.push("aliases", "region", "sample", "voice", "wordList", "translate", "tier", "notes");
+    known.push("aliases", "region", "accents", "sample", "voice", "wordList", "translate");
+    known.push("tier", "notes");
+    if (l.script === "Latn") {
+      // Every special letter in both cases, and nothing a plain keyboard types.
+      expect(l.accents, "Latin languages list their special letters").toBeTruthy();
+      const letters = [...l.accents!].filter((c) => /\p{L}/u.test(c));
+      for (const c of letters) {
+        expect(/[a-z]/i.test(c), `${c} is on every keyboard`).toBe(false);
+        expect(letters, `${c} in the other case`).toContain(
+          c === c.toLowerCase() ? c.toUpperCase() : c.toLowerCase(),
+        );
+      }
+      for (const c of l.accents!) {
+        const typeable = l.layouts.some((id) =>
+          Object.values(getLayout(id).keys).some((k) => Object.values(k ?? {}).includes(c)),
+        );
+        expect(typeable || /\p{L}/u.test(c), `${c} cannot be typed on any layout`).toBe(true);
+      }
+    }
     for (const key of Object.keys(raw)) expect(known).toContain(key);
   });
 

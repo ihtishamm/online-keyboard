@@ -1,4 +1,5 @@
 import {
+  layoutRows,
   KEY_CODES,
   ModifierLatch,
   TypingMachine,
@@ -253,6 +254,7 @@ export default function TypingDrill(props: TypingDrillProps) {
         <VirtualKeyboard
           labelFor={(code) => machine.labelFor(code, mods)}
           longpress={layout.longpress}
+          rows={layoutRows(layout.keys)}
           shift={latch.shift}
           altgr={latch.altgr}
           hasAltGr={Object.values(layout.keys).some((k) => k?.ag || k?.sag)}

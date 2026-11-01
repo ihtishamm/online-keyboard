@@ -443,25 +443,35 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - web search (DuckDuckGo).
     - Plain links that open a new tab only on click, labelled "Opens another site in a new tab". Analytics records only which link, never the text.
   - Keyboard pages: 47.2 KB gzipped initial JS (was 43.8; budget 90).
-- [ ] **7.5 Latin toolkit** (Lexilogos keyboards, and the owner's English → Spanish/Italian typing).
-  - [ ] **Default mode for Latin languages: "Easy accents".** Most people searching "French keyboard" have an English keyboard. The mode combines:
+- [x] **7.5 Latin toolkit** (Lexilogos keyboards, and the owner's English → Spanish/Italian typing).
+  - [x] **Default mode for Latin languages: "Easy accents".** Most people searching "French keyboard" have an English keyboard. The mode combines:
     - **QWERTY with US-International dead keys** (`'` `` ` `` `^` `"` `~`, and `'` + `c` → ç), the convention Windows and Linux users already know;
     - an **accent bar**: one tap for each of the language's special letters (Shift for capitals), on desktop and phone;
     - **smart accents**, the "English to Spanish typing" page title. Type plain letters, and Space adds the accent when the dictionary is sure (`cancion` → `canción`). **Ambiguous pairs** (`esta`/`está`, `e`/`è`, `como`/`cómo`) go to the candidate bar and are never changed automatically.
-  - [ ] **Spanish ¿ ¡:** typing `?` or `!` at the end of a sentence adds `¿` or `¡` at its start, as one undo step. `hola como estas?` → `hola ¿cómo estás?` (with `cómo` picked from the bar). The owner's example also adds a comma after `hola`. That is grammar, so it goes to AI assist (11.1).
-  - [ ] **Italian:** `perche` → `perché`, `citta` → `città`, and the join correction `buon giorno` → `buongiorno` (6.6).
-  - [ ] **French typography option:** a narrow no-break space before `; : ! ?` and inside `« »`. On by default for fr-FR.
-  - [ ] **National layouts:**
+  - [x] **Spanish ¿ ¡:** typing `?` or `!` at the end of a sentence adds `¿` or `¡` at its start, as one undo step. `hola como estas?` → `hola ¿cómo estás?` (with `cómo` picked from the bar). The owner's example also adds a comma after `hola`. That is grammar, so it goes to AI assist (11.1).
+  - [x] **Italian:** `perche` → `perché`, `citta` → `città`, and the join correction `buon giorno` → `buongiorno` (6.6).
+  - [x] **French typography option:** a narrow no-break space before `; : ! ?` and inside `« »`. On by default for fr-FR.
+  - [x] **National layouts:**
     - French AZERTY (and Belgian), German and Swiss QWERTZ;
     - Spanish (Spain and Latin America), Italian;
     - Portuguese (PT, and BR ABNT2);
     - Turkish Q and F;
     - Polish programmer; Czech, Hungarian, Romanian, Nordic.
-  - [ ] Copy on each Latin page: how to type these letters without us (Windows Alt codes or US-International, Mac Option keys, long-press on phones), in our own words.
-  - [ ] **Smart-accent evaluation, per language:**
+  - [x] Copy on each Latin page: how to type these letters without us (Windows Alt codes or US-International, Mac Option keys, long-press on phones), in our own words.
+  - [x] **Smart-accent evaluation, per language:**
     - Strip accents from 2,000 held-out Wikipedia sentences, then restore them.
     - Target: at least 97 % of accent-needing words restored correctly.
     - Ambiguous pairs must appear in the top 3.
+  - Done for Spanish, French and Italian (/spanish, /french, /italian); the other national layouts come with their languages in 7.7.
+    - Layouts: es easy, Spain, Latin America; fr easy, AZERTY, Belgian, Swiss; it easy, standard. Imported from CLDR (Windows), faithful to the standards; letters a standard lacks (œ on AZERTY, capital È on Italian) are listed in the tests and covered by the accent bar. The 102nd key beside Shift appears only on layouts that use it.
+    - Smart accents (`AccentRestorer`): Space adds an accent only when the plain spelling is not a word and one accented spelling dominates; otherwise the spellings go to the bar. Words the list lacks take the accents of their ending (-cion → -ción), learnt from the list; hyphenated words go part by part. Backspace right after undoes.
+    - Typing rules are one undo step and work with our keys, a computer keyboard and a phone's own keyboard: French narrow no-break spaces (Espaces fines, on by default), Spanish ¿ ¡ (on by default).
+    - Each page has a table of its letters: Windows US-International keys, Alt codes, Mac Option keys, phone long-press, generated from our layouts.
+  - Word lists: the first 40 MB of each Wikipedia dump, plus everyday Tatoeba sentences (CC BY 2.0 FR, credited) weighted at half the dump, since encyclopedia text lacks "I" and "you" verb forms and everyday words. Words keep their usual case; lookups fold it.
+  - dict.txt gains an accents section: smart accents needs a long tail (95 % restored with the 40,000 shipped words, 97 % with 100,000), so the rarer words that change its answer ship too, within their own 80 KB budget. Spanish 178 KB, French 192 KB, Italian 151 KB gzipped in all.
+  - Results (held-out articles, words with the language's own accented letters): Spanish 97.3 %, French 98.1 %, Italian 98.5 % restored; 6, 13 and 2 plain words changed wrongly in about 40,000 each. Words with other languages' letters (Nações in Italian text) are counted apart: 8, 104 and 103. Published on each page.
+  - Spell check meets its bars in all three, measured on 1,000 everyday Tatoeba sentences kept out of the lists: false flags 0.9 %, 0.9 % and 1.0 % (just under the bar); on Wikipedia prose 2.2 %, 1.5 % and 3.1 % (recorded as `prose`). Capitalised words count as names and are not checked; regular plurals, feminines, adverbs and verb forms count as known when their base is. Autocorrect is offered, off by default (the misspellings are synthetic).
+  - The tier gate now requires smart accents to meet target for Latin languages. The three languages are not yet Tier C: the typing tutor pages come in 7.7.
 - [ ] **7.6 Case converter** (`/case-converter`), better than Lexilogos' upper/lower.
   - [ ] **Modes:** UPPER, lower, Sentence case, Title Case, Capitalise Each Word, iNVERSE, alternating. Each is live as you type, with its own Copy button.
   - [ ] **Language-aware rules:**
@@ -701,10 +711,10 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 
 | Source | Use | Licence | Status |
 |---|---|---|---|
-| Wikipedia dumps (per language) | Word lists, next-word tables, smart-accent evaluation | CC BY-SA 4.0 (credit; derived lists are CC BY-SA) | In use (Urdu) |
+| Wikipedia dumps (per language) | Word lists, next-word tables, smart-accent evaluation | CC BY-SA 4.0 (credit; derived lists are CC BY-SA) | In use (13 languages) |
 | Google Dakshina | Roman evaluation and attested spellings for 12 South Asian languages | CC BY-SA 4.0 | Confirmed (repo README) |
 | AI4Bharat Aksharantar | Roman evaluation for other Indic languages | Split: CC BY for the manually collected part, CC0 for the mined part (AI4Bharat page) | Check the Hugging Face card and the IndicXlit repo before use |
-| Tatoeba | Typing-test sentences | CC BY 2.0 FR (some CC0); credit with a link | Confirmed |
+| Tatoeba | Typing-test sentences; everyday words and the spell-check test for Latin languages | CC BY 2.0 FR (some CC0); credit with a link | In use (es, fr, it) |
 | Unicode CLDR 43 | Keyboards, emoji names | Unicode License v3 | In use |
 | SIL Keyman keyboards | Layouts | Mostly MIT (per keyboard) | In use; check each one |
 | xkeyboard-config | Latin and Cyrillic national layouts | X11/MIT-style, varies by file | Check per file |

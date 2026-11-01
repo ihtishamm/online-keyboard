@@ -19,6 +19,18 @@ dumps, downloaded in October 2026; Urdu's source is described below):
 | `ks`  | Kashmiri        | 11,837  | 0.9M       | 21,396     | 21,396                 |
 | `hi`  | Hindi           | 175,824 | 45.1M      | 100,000    | 35,000                 |
 | `bn`  | Bengali         | 192,129 | 68.8M      | 100,000    | 35,000                 |
+| `es`  | Spanish         | 3,835   | 13.4M      | 100,000    | 40,000 + 10,500 accent |
+| `fr`  | French          | 3,244   | 12.1M      | 100,000    | 40,000 + 14,100 accent |
+| `it`  | Italian         | 7,975   | 14.1M      | 100,000    | 40,000 + 3,200 accent  |
+
+The Latin-script languages (plan 7.5) read the first 40 MB of their dump (the oldest, most
+edited articles), and add everyday sentences from [Tatoeba](https://tatoeba.org) through
+`--text` (`src/import-tatoeba.ts --train`): an encyclopedia rarely says "I" or "you"
+(voudrais, compraste) or names everyday things. All Tatoeba sentences together count half as
+much as the dump (`--text-share`); the 1,000 sentences each spell-check test uses are left
+out, and so are the names Tom and Mary, which Tatoeba gives nearly everyone. Their words keep
+the case they are most often written in mid-sentence (Madrid, la), and lookups fold case.
+Every 50th article is held out for the smart-accent test (`test/data/<code>-heldout.txt`).
 
 Balochi has no Wikipedia: its Roman typing runs on rules alone, and it has no suggestions or
 spell check yet.
@@ -29,6 +41,9 @@ Files per language:
 - `dict.txt`: what the site downloads. The most common words and the next-word table for the
   3,000 commonest, front-coded (`src/compact.ts`, format in `@okb/engine`'s `compact.ts`).
   At most 150 KB gzipped: the word count shrinks in steps of 2,500 until it fits.
+  Latin languages add an accents section (at most 80 KB more): the rarer words that change
+  what smart accents does, so it behaves as with all 100,000 words (95 % of accented words
+  restored with 40,000, 97 % with 100,000).
 - `chat.tsv` (ur, hi, bn, sd, ar, fa): the commonest English-letter spelling of each word,
   for the script-to-Roman converter, taken from the **dev** splits of the evaluation sets
   (`src/chat-words.ts`). Hindi, Bangla and Sindhi spellings come from Dakshina (below).
@@ -48,6 +63,10 @@ The Hindi, Bangla and Sindhi evaluation pairs (`test/data/{hi,bn,sd}-roman-{dev,
 and their `chat.tsv` files come from the
 [Dakshina dataset v1.0](https://github.com/google-research-datasets/dakshina) (Google
 Research), also CC BY-SA 4.0 (`src/import-dakshina.ts`); those pages credit it too.
+
+The Spanish, French and Italian lists also count sentences from
+[Tatoeba](https://tatoeba.org) (CC BY 2.0 FR), and `test/data/<code>-everyday.txt` are
+Tatoeba sentences, with their sentence numbers. Those pages credit Tatoeba too.
 
 ### Building another language
 
@@ -82,6 +101,17 @@ Large Wikipedias come in parts: pass them comma-separated to `--dump`. The build
     need review by native speakers.
   - Correct words are the native side of the Roman evaluation sets, so Hindi, Bangla and
     Sindhi are measured on Dakshina's rare words, which their word lists often lack.
+  - Latin languages are measured on 1,000 everyday Tatoeba sentences. Their false flags on
+    held-out Wikipedia prose, full of names and jargon, are recorded too (`prose`: 1.5 to
+    3.1 %). Words with a capital letter are names there and are not checked; plurals,
+    feminines, adverbs and regular verb forms count as known when their base word is
+    (`@okb/engine` spelling rules).
+- **Smart accents** (`test/accents-eval.test.ts`): strips the accents from 2,000 held-out
+  Wikipedia sentences and does what Space does. At least 97 % of the words that need one of
+  the language's own accented letters must come back right (on Space, or in the top 3 of the
+  bar when both spellings are words), and at most 0.5 % of the other words may change.
+  Words with other languages' letters (Nações in Italian text) are counted apart, not
+  scored. Writes and checks `results/accents.json`, which the site publishes.
 
 ## Urdu (`data/ur/`)
 

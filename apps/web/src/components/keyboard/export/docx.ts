@@ -21,6 +21,8 @@ const FONT_NAME: Record<FontId, string> = {
   naskh: "Noto Naskh Arabic",
   devanagari: "Noto Sans Devanagari",
   bengali: "Noto Sans Bengali",
+  // Latin text: a font every copy of Word has.
+  latin: "Calibri",
 };
 
 /** Font size in half-points: Nastaliq reads small at the sizes Naskh and Indic fonts use. */
@@ -29,6 +31,7 @@ const HALF_POINTS: Record<FontId, number> = {
   naskh: 28,
   devanagari: 28,
   bengali: 28,
+  latin: 24,
 };
 
 const W = "http://schemas.openxmlformats.org/wordprocessingml/2006/main";

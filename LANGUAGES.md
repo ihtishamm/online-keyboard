@@ -16,3 +16,6 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Kashmiri (/kashmiri) | Arab | – | yes | Beta | 61.7 % (Beta) | no | at least 4 FAQs; typing tutor |
 | Hindi (/hindi) | Deva | – | yes | Beta | 42.5 % (Beta) | hi-IN | typing tutor |
 | Bangla (/bangla) | Beng | – | yes | Beta | 39.4 % (Beta) | bn-BD, bn-IN | typing tutor |
+| Spanish (/spanish) | Latn | – | yes | yes | – | es-ES, es-MX, es-US, es-AR, es-CO | typing tutor |
+| French (/french) | Latn | – | yes | yes | – | fr-FR, fr-CA, fr-BE, fr-CH | typing tutor |
+| Italian (/italian) | Latn | – | yes | yes | – | it-IT, it-CH | typing tutor |

@@ -30,7 +30,11 @@ interface Props {
    * Sources of the word list the page's language uses, credited in the footer: its Wikipedia
    * (name and subdomain) and, for Hindi, Bangla and Sindhi chat spellings, Dakshina.
    */
-  credits?: { wikipedia?: { name: string; code: string }; dakshina?: boolean };
+  credits?: {
+    wikipedia?: { name: string; code: string };
+    dakshina?: boolean;
+    tatoeba?: boolean;
+  };
   /** Slug of the page's language, marked as current in the language picker. */
   language?: string;
 }
@@ -132,7 +136,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
           <span
             class:list={[
               "text-lg text-accent",
-              font === "devanagari" || font === "bengali" ? "font-system-arabic" : "font-nastaliq",
+              font === "devanagari" || font === "bengali" || font === "latin"
+                ? "font-system-arabic"
+                : "font-nastaliq",
             ]}
             lang="ur"
             dir="rtl"
@@ -179,7 +185,21 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
             <a class="underline" href="https://creativecommons.org/licenses/by-sa/4.0/">
               CC BY-SA 4.0
             </a>
-            {")."}
+            {")"}
+            {credits.tatoeba && " and everyday sentences from "}
+            {credits.tatoeba && (
+              <a class="underline" href="https://tatoeba.org/">
+                Tatoeba
+              </a>
+            )}
+            {credits.tatoeba && " ("}
+            {credits.tatoeba && (
+              <a class="underline" href="https://creativecommons.org/licenses/by/2.0/fr/">
+                CC BY 2.0 FR
+              </a>
+            )}
+            {credits.tatoeba && ")"}
+            {"."}
           </p>
         )}
       </div>

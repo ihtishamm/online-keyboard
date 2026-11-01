@@ -18,13 +18,28 @@ const SLUG: Record<string, string> = {
   bal: "balochi",
   hi: "hindi",
   bn: "bangla",
+  es: "spanish",
+  fr: "french",
+  it: "italian",
+  de: "german",
+  pt: "portuguese",
+  tr: "turkish",
+  pl: "polish",
+  nl: "dutch",
+  ro: "romanian",
+  cs: "czech",
+  hu: "hungarian",
+  sv: "swedish",
+  ca: "catalan",
+  hr: "croatian",
 };
 
 const norm = (code: string, w: string) => TEXT_RULES[code]!.normalizeWord(w);
 
 describe("text rules", () => {
   it("cover every language on the site", () => {
-    expect(Object.values(SLUG).sort()).toEqual(LANGUAGES.map((l) => l.slug).sort());
+    const slugs = new Set(Object.values(SLUG));
+    expect(LANGUAGES.map((l) => l.slug).filter((slug) => !slugs.has(slug))).toEqual([]);
     expect(Object.keys(TEXT_RULES).sort()).toEqual(Object.keys(SLUG).sort());
   });
 
@@ -87,6 +102,22 @@ describe("text rules", () => {
     expect(norm("bn", "৳")).toBeNull();
   });
 
+  it("Latin: words keep case and accents, stray single letters are not words", () => {
+    expect(norm("es", "Canción")).toBe("Canción");
+    expect(norm("es", "y")).toBe("y");
+    expect(norm("es", "n")).toBeNull(); // m s. n. m., n veces
+    expect(norm("fr", "À")).toBe("À");
+    expect(norm("fr", "l")).toBe("l"); // l'homme
+    expect(norm("fr", "b")).toBeNull();
+    expect(norm("it", "è")).toBe("è");
+    expect(norm("ca", "col·lecció")).toBe("col·lecció");
+    expect(tokenize("El niño (n. 1990) y 2n.", TEXT_RULES.es!).filter(Boolean)).toEqual([
+      "El",
+      "niño",
+      "y",
+    ]);
+  });
+
   it("break word pairs at digits and Latin text", () => {
     expect(tokenize("मेरा 2 घर house है", TEXT_RULES.hi!)).toEqual([
       "मेरा",
@@ -101,14 +132,19 @@ describe("text rules", () => {
 describe("built word lists", () => {
   for (const [code, slug] of Object.entries(SLUG)) {
     const file = new URL(`../data/${code}/words.txt`, import.meta.url);
-    if (!existsSync(file)) continue;
+    const language = LANGUAGES.find((l) => l.slug === slug);
+    if (!existsSync(file) || !language) continue; // no list yet, or no page yet
     it(`${code}: every letter of the top 5,000 words can be typed on the ${slug} layouts`, () => {
-      const language = LANGUAGES.find((l) => l.slug === slug)!;
       const typeable = new Set<string>();
       for (const id of language.layouts) {
         for (const out of desktopCharacters(getLayout(id))) for (const c of out) typeable.add(c);
       }
       typeable.add("\u200C"); // the ZWNJ key exists on every Arabic-script layout we ship
+      // Latin pages: the accent bar types the language's letters, in both cases.
+      for (const c of language.accents ?? "") {
+        typeable.add(c);
+        typeable.add(c.toLocaleUpperCase(language.lang));
+      }
       const words = readFileSync(file, "utf8").split("\n").slice(0, 5000);
       const missing = new Set<string>();
       for (const w of words) for (const c of w) if (!typeable.has(c)) missing.add(c);

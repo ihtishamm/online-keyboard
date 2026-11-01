@@ -13,8 +13,8 @@ test("lists a chart and a PDF for every layout", async ({ page }) => {
   await page.goto("/cheat-sheets");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Printable keyboard charts");
   const charts = page.getByRole("link", { name: /^(?!PDF).* chart$/ });
-  // 13 keyboard layouts plus the 10 new Roman schemes (Phase 6).
-  await expect(charts).toHaveCount(23);
+  // 13 keyboard layouts and 10 Roman schemes (Phase 6), and 9 Latin layouts (7.5).
+  await expect(charts).toHaveCount(32);
   await expect(
     page.getByRole("link", { name: "PDF for the Urdu Roman Urdu chart" }),
   ).toHaveAttribute("href", "/cheat-sheets/urdu-roman.pdf");

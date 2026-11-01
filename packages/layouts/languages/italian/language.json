@@ -1,0 +1,27 @@
+{
+  "slug": "italian",
+  "code": "it",
+  "order": 220,
+  "lang": "it",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Italian",
+    "native": "Italiano"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["it-easy", "it-standard"],
+  "accents": "àèéìíòóùúÀÈÉÌÍÒÓÙÚ",
+  "sample": "Perché la città è così bella? Più tardi andrò là.",
+  "voice": ["it-IT", "it-CH"],
+  "wordList": true,
+  "translate": {
+    "google": "it",
+    "bing": "it",
+    "deepl": "it"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot. Easy accents (US-International) is the default: most visitors have an English keyboard."
+}

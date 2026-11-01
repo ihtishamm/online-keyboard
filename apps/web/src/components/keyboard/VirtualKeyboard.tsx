@@ -1,4 +1,10 @@
-import { ROWS, US_QWERTY, type KeyCode, type LatchState, type PhoneLayout } from "@okb/engine";
+import {
+  US_QWERTY,
+  layoutRows,
+  type KeyCode,
+  type LatchState,
+  type PhoneLayout,
+} from "@okb/engine";
 import {
   useEffect,
   useRef,
@@ -47,8 +53,11 @@ export interface VirtualKeyboardProps {
   /** Backspace slide: select `words` words before the caret (0 to cancel); `done` deletes them. */
   onDeleteWords?: (words: number, done: boolean) => void;
   settings?: KeyboardSettings;
+  /** The computer rows (`layoutRows(layout)`): adds the ISO and ABNT2 keys where used. */
+  rows?: readonly (readonly KeyCode[])[];
 }
 
+const DEFAULT_ROWS = layoutRows({});
 const LONG_PRESS_MS = 450;
 const REPEAT_DELAY_MS = 450;
 const REPEAT_INTERVAL_MS = 60;
@@ -498,11 +507,13 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
 
   const shiftOn = props.shift !== "off" || pressed.has("ShiftLeft") || pressed.has("ShiftRight");
   const altgrOn = props.altgr !== "off" || pressed.has("AltRight");
-  const row3 = ROWS[3].filter((c) => c !== "IntlBackslash");
+  const rows = props.rows ?? DEFAULT_ROWS;
+  const row3 = rows[3]!;
 
-  const shiftKey = (className = "") =>
+  /** `iso`: the board has a key left of Z, so the left Shift is short (ISO boards). */
+  const shiftKey = (className = "", iso = false) =>
     modKey("shift", "⇧", {
-      grow: phone ? 1.5 : 2.25,
+      grow: phone ? 1.5 : iso ? 1.25 : 2.25,
       on: shiftOn,
       locked: props.shift === "locked",
       aria: "Shift",
@@ -598,12 +609,12 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
   return frame(
     <>
       <div data-row className={`flex ${gap}`}>
-        {ROWS[0].map((c, i) => charKey(c, i === 0))}
+        {rows[0]!.map((c, i) => charKey(c, i === 0))}
         {modKey("backspace", "⌫", { grow: 2, className: "max-sm:hidden", aria: "Backspace" })}
       </div>
       <div data-row className={`flex ${gap}`}>
         <div aria-hidden="true" className="max-sm:hidden" style={{ flex: "0.5 1 0" }} />
-        {ROWS[1].map((c) => charKey(c))}
+        {rows[1]!.map((c) => charKey(c))}
       </div>
       <div data-row className={`flex ${gap}`}>
         {modKey("caps", "Caps", {
@@ -612,11 +623,11 @@ export default function VirtualKeyboard(props: VirtualKeyboardProps) {
           className: "max-sm:hidden",
           aria: "Caps Lock",
         })}
-        {ROWS[2].map((c) => charKey(c))}
+        {rows[2]!.map((c) => charKey(c))}
         {modKey("enter", "⏎", { grow: 2, className: "max-sm:hidden", aria: "Enter" })}
       </div>
       <div data-row className={`flex ${gap}`}>
-        {shiftKey()}
+        {shiftKey("", row3[0] === "IntlBackslash")}
         {row3.map((c) => charKey(c))}
         {shiftKey("max-sm:hidden")}
         {modKey("backspace", "⌫", { grow: 1.5, className: "sm:hidden", aria: "Backspace" })}

@@ -11,13 +11,25 @@ const ENTITIES: Record<string, string> = {
   "&apos;": "'",
   "&nbsp;": " ",
   "&amp;": "&",
+  "&ndash;": "–",
+  "&mdash;": "—",
+  "&thinsp;": " ",
+  "&ensp;": " ",
+  "&emsp;": " ",
+  "&hellip;": "…",
+  "&shy;": "",
+  "&zwnj;": "\u200c",
+  "&zwj;": "\u200d",
 };
 
 export function decodeEntities(text: string): string {
   return text
     .replace(/&#(\d+);/g, (_, n: string) => String.fromCodePoint(Number(n)))
     .replace(/&#x([0-9a-f]+);/gi, (_, n: string) => String.fromCodePoint(parseInt(n, 16)))
-    .replace(/&(lt|gt|quot|apos|nbsp|amp);/g, (m) => ENTITIES[m] ?? m);
+    .replace(
+      /&(lt|gt|quot|apos|nbsp|amp|ndash|mdash|thinsp|ensp|emsp|hellip|shy|zwnj|zwj);/g,
+      (m) => ENTITIES[m] ?? m,
+    );
 }
 
 /** Remove balanced `open … close` spans, including nested ones. Unclosed spans run to the end. */
@@ -77,7 +89,8 @@ export function stripWikitext(source: string): string {
   s = s.replace(/__[A-Z_]+__/g, " ");
   s = s.replace(/^[=]+|[=]+$/gm, " ");
   s = s.replace(/^[*#:;]+/gm, " ");
-  return s;
+  // The dump escapes the wikitext once (&amp;nbsp;); entities its authors wrote decode now.
+  return decodeEntities(s);
 }
 
 export interface WikiPage {

@@ -55,6 +55,7 @@ const FONT_LABELS: Record<FontId, { en: string; native: string }> = {
   naskh: { en: "Naskh", native: "نسخ" },
   devanagari: { en: "Devanagari", native: "देवनागरी" },
   bengali: { en: "Bengali", native: "বাংলা" },
+  latin: { en: "Sans serif", native: "Aa" },
 };
 
 export interface ToolbarProps {

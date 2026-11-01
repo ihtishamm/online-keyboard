@@ -1,6 +1,7 @@
 import { ROWS, type KeyCode } from "../layout/keycodes";
 import { phoneLayout } from "../layout/phone";
 import type { Layout } from "../layout/schema";
+import { LATIN_LOCALES, foldLatin } from "../text/latin";
 import { WORD_NORMALIZERS } from "../text/normalize";
 import { URDU_SPELLING, type SpellingRules } from "./spell";
 
@@ -127,11 +128,121 @@ const BASES: Readonly<Record<string, Base>> = {
   },
 };
 
+/**
+ * Latin scripts: a letter and its accented forms (typed without the accent, or with the
+ * wrong one), then letters that sound alike in the language. `weak`: a silent h.
+ */
+/**
+ * Regular inflections, as [ending, base ending]: a word ending in the first is a form of the
+ * word with the second instead. Plurals and feminines, and for the Romance languages the
+ * regular verb endings back to the infinitive (administraba → administrar), and the "I" and
+ * "you" forms to the third person (voudrais → voudrait, trajiste → trajo), as any grammar
+ * lists them: encyclopedia text has few of those. The list need only know the base.
+ */
+const verbs = (infinitives: readonly string[], endings: readonly string[]) =>
+  infinitives.flatMap((inf) => endings.map((e) => [e, inf] as const));
+// prettier-ignore
+const ES_AR = ["a", "as", "an", "amos", "o", "e", "en", "es", "aba", "abas", "aban", "ábamos", "ó", "aron", "ado", "ada", "ados", "adas", "ando", "ará", "arán", "aría", "arían", "ara", "aran", "ase", "asen"];
+// prettier-ignore
+const ES_ER_IR = ["e", "es", "en", "emos", "imos", "o", "a", "an", "ía", "ías", "ían", "íamos", "ió", "ieron", "ido", "ida", "idos", "idas", "iendo", "yendo", "erá", "erán", "ería", "erían", "irá", "irán", "iría", "irían", "iera", "ieran", "iese", "iesen"];
+// prettier-ignore
+const FR_ER = ["e", "es", "ent", "ons", "ez", "ais", "ait", "aient", "ions", "iez", "ant", "é", "ée", "és", "ées", "a", "èrent", "era", "eront", "erait", "eraient", "erai"];
+// prettier-ignore
+const FR_IR = ["is", "it", "issent", "issait", "issaient", "issant", "i", "ie", "is", "ies", "irent", "ira", "iront", "irait"];
+// prettier-ignore
+const IT_ARE = ["a", "ano", "o", "i", "iamo", "ate", "ava", "avano", "ò", "arono", "ato", "ata", "ati", "ate", "ando", "erà", "eranno", "erebbe"];
+// prettier-ignore
+const IT_ERE_IRE = ["e", "ono", "o", "i", "iamo", "eva", "evano", "iva", "ivano", "é", "ì", "erono", "irono", "uto", "uta", "uti", "ito", "ita", "iti", "endo", "irà", "erà"];
+/** Pronouns written onto Spanish and Italian verbs (distribuirse, levantarme, farlo). */
+// prettier-ignore
+const CLITICS = ["se", "lo", "la", "le", "los", "las", "les", "me", "te", "nos", "os", "si", "ne", "ci", "mi", "ti", "vi", "melo", "telo", "selo", "sela"].map((c) => [c, ""] as const);
+/** Adverbs from adjectives (emocionalmente, rápidamente, paisiblement, lentamente). */
+const ES_IT_ADVERBS = [
+  ["mente", ""],
+  ["amente", "o"],
+] as const;
+const FR_ADVERBS = [
+  ["ment", ""],
+  ["ement", ""],
+  ["amment", "ant"],
+  ["emment", "ent"],
+] as const;
+/** Spanish diminutives (palomita, cafecito). */
+// prettier-ignore
+const ES_DIMINUTIVES = [["ita", "a"], ["ito", "o"], ["itas", "as"], ["itos", "os"], ["cita", ""], ["cito", ""], ["ecita", "a"], ["ecito", "o"]] as const;
+/** First and second person endings, and the third person form a corpus has. */
+// prettier-ignore
+const ES_PERSON = [["é", "ó"], ["aste", "ó"], ["asteis", "aron"], ["í", "ió"], ["iste", "ió"], ["isteis", "ieron"], ["e", "o"], ["aba", "aba"], ["abas", "aba"], ["ábamos", "aban"], ["abais", "aban"], ["ías", "ía"], ["íamos", "ían"], ["íais", "ían"], ["aré", "ará"], ["arás", "ará"], ["aremos", "arán"], ["aréis", "arán"], ["eré", "erá"], ["erás", "erá"], ["iré", "irá"], ["irás", "irá"], ["emos", "en"], ["imos", "en"], ["amos", "an"], ["áis", "an"], ["éis", "en"], ["ís", "en"], ["as", "a"], ["es", "e"], ["o", "a"], ["o", "e"], ["ás", "a"], ["és", "e"], ["iera", "iera"], ["ieras", "iera"], ["aras", "ara"], ["ste", "ó"]] as const;
+// prettier-ignore
+const FR_PERSON = [["ais", "ait"], ["ions", "aient"], ["iez", "aient"], ["ons", "ent"], ["ez", "ent"], ["es", "e"], ["ai", "a"], ["as", "a"], ["ras", "ra"], ["rai", "ra"], ["rons", "ront"], ["rez", "ront"], ["rais", "rait"], ["rions", "raient"], ["riez", "raient"], ["is", "it"], ["us", "ut"], ["âmes", "èrent"], ["îmes", "irent"], ["âtes", "èrent"]] as const;
+// prettier-ignore
+const IT_PERSON = [["o", "a"], ["i", "a"], ["o", "e"], ["i", "e"], ["iamo", "ano"], ["ate", "ano"], ["ete", "ono"], ["ite", "ono"], ["avo", "ava"], ["avi", "ava"], ["evo", "eva"], ["evi", "eva"], ["ai", "ò"], ["asti", "ò"], ["ei", "é"], ["esti", "é"], ["ii", "ì"], ["isti", "ì"], ["erò", "erà"], ["erai", "erà"], ["irò", "irà"], ["rei", "rebbe"], ["resti", "rebbe"]] as const;
+// prettier-ignore
+const INFLECTIONS: Readonly<Record<string, readonly (readonly [string, string])[]>> = {
+  es: [["s", ""], ["es", ""], ["a", "o"], ["as", "o"], ...verbs(["ar"], ES_AR), ...verbs(["er", "ir"], ES_ER_IR), ...ES_PERSON, ...ES_IT_ADVERBS, ...ES_DIMINUTIVES, ...CLITICS],
+  fr: [["s", ""], ["x", ""], ["e", ""], ["es", ""], ["nne", "n"], ["nnes", "n"], ["aux", "al"], ...verbs(["er"], FR_ER), ...verbs(["ir"], FR_IR), ["ient", "ier"], ["èrent", "er"], ["urent", "oir"], ["irent", "ir"], ...FR_PERSON, ...FR_ADVERBS],
+  it: [["i", "o"], ["e", "a"], ["i", "e"], ["a", "o"], ["he", "a"], ["hi", "o"], ...verbs(["are"], IT_ARE), ...verbs(["ere", "ire"], IT_ERE_IRE), ...IT_PERSON, ...ES_IT_ADVERBS, ...CLITICS],
+  de: [["e", ""], ["en", ""], ["n", ""], ["s", ""], ["er", ""], ["es", ""], ["nen", ""]],
+  pt: [["s", ""], ["es", ""], ["a", "o"], ["as", "o"], ["ões", "ão"], ["ns", "m"], ["is", "l"]],
+  tr: [["ler", ""], ["lar", ""]],
+  pl: [["y", ""], ["i", ""], ["a", ""], ["owie", ""], ["ów", ""]],
+  nl: [["en", ""], ["s", ""], ["e", ""]],
+  ro: [["i", ""], ["e", "ă"], ["uri", ""], ["le", "l"]],
+  cs: [["y", ""], ["i", ""], ["a", ""], ["é", "ý"], ["á", "ý"]],
+  hu: [["k", ""], ["ok", ""], ["ek", ""], ["ak", ""]],
+  sv: [["er", ""], ["ar", ""], ["or", "a"], ["en", ""], ["na", ""], ["et", ""]],
+  ca: [["s", ""], ["es", "a"], ["os", ""], ["a", ""], ["es", ""]],
+  hr: [["i", ""], ["e", ""], ["a", ""], ["ovi", ""], ["evi", ""]],
+};
+
+const LATIN: Readonly<Record<string, { groups: readonly string[]; weak?: string }>> = {
+  es: { groups: ["aá", "eé", "ií", "oó", "uúü", "nñ", "bv", "sz", "cz", "jg"], weak: "h" },
+  fr: { groups: ["aàâ", "eéèêë", "iîï", "oô", "uùûü", "cç", "yÿ"], weak: "h" },
+  it: { groups: ["aà", "eéè", "iì", "oò", "uù"], weak: "h" },
+  de: { groups: ["aä", "oö", "uü", "sß", "dt", "fv"] },
+  pt: { groups: ["aáâãà", "eéê", "ií", "oóôõ", "uú", "cç", "sz", "jg"], weak: "h" },
+  tr: { groups: ["cç", "gğ", "iı", "oö", "sş", "uü"] },
+  pl: { groups: ["aą", "cć", "eę", "lł", "nń", "oó", "sś", "zźż", "uó"] },
+  nl: { groups: ["aá", "eéëè", "iïí", "oóö", "uü", "dt"] },
+  ro: { groups: ["aăâ", "iî", "sș", "tț"] },
+  cs: {
+    groups: ["aá", "cč", "dď", "eéě", "ií", "nň", "oó", "rř", "sš", "tť", "uúů", "yý", "zž", "iy"],
+  },
+  hu: { groups: ["aá", "eé", "ií", "oóöő", "uúüű"] },
+  sv: { groups: ["aåä", "oö", "eé"] },
+  ca: { groups: ["aà", "eéè", "ií", "oóò", "uúü", "cç", "bv"], weak: "h" },
+  hr: { groups: ["cčć", "dđ", "sš", "zž"] },
+};
+
+/** Romanian also has older cedilla letters (ş ţ) for its comma ones (ș ț). */
+const latinKey = (code: string, locale: string) =>
+  code === "ro"
+    ? (w: string) => foldLatin(w, locale).replace(/ş/g, "ș").replace(/ţ/g, "ț")
+    : (w: string) => foldLatin(w, locale);
+
 /** Languages the spell checker has rules for (data codes). */
-export const SPELLING_LANGUAGES: readonly string[] = Object.keys(BASES);
+export const SPELLING_LANGUAGES: readonly string[] = [...Object.keys(BASES), ...Object.keys(LATIN)];
 
 /** The spelling rules of a language, with keyboard slips from its layouts. */
 export function spellingRules(code: string, layouts: readonly Layout[] = []): SpellingRules | null {
+  const latin = LATIN[code];
+  const locale = LATIN_LOCALES[code];
+  if (latin && locale) {
+    return {
+      script: "Latin",
+      key: latinKey(code, locale),
+      homophones: latin.groups,
+      nearMisses: keyboardNeighbours(layouts).map((p) => p.toLocaleLowerCase(locale)),
+      weak: latin.weak ?? "",
+      optional: "",
+      nonJoining: "",
+      inflections: (key) =>
+        (INFLECTIONS[code] ?? [])
+          .filter(([end]) => key.endsWith(end) && key.length > end.length + 2)
+          .map(([end, base]) => key.slice(0, key.length - end.length) + base),
+      skipNames: true,
+    };
+  }
   const base = BASES[code];
   const normalize = WORD_NORMALIZERS[code];
   if (!base || !normalize) return null;

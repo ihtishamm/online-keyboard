@@ -55,4 +55,22 @@ export class NextWords {
 export interface Dictionary {
   lexicon: Lexicon;
   next: NextWords;
+  /**
+   * Latin scripts: the lexicon and next-word table hold folded (lower-case) words; these are
+   * the words as written (Haus, Madrid), by rank, and the locale that folds them.
+   */
+  latin?: {
+    words: readonly string[];
+    locale: string;
+    /** Words beyond the list that smart accents knows, with their full-list ranks. */
+    accents?: readonly { word: string; rank: number }[];
+  };
+}
+
+/** A word from the lexicon (or the next-word table) as it is written. */
+export function displayWord(dictionary: Dictionary, word: string): string {
+  const latin = dictionary.latin;
+  if (!latin) return word;
+  const rank = dictionary.lexicon.rank(word);
+  return rank >= 0 ? latin.words[rank]! : word;
 }

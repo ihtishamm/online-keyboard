@@ -1,5 +1,12 @@
 import {
+  AccentRestorer,
   Transliterator,
+  displayWord,
+  foldLatin,
+  isLatinCode,
+  latinWordBefore,
+  matchCase,
+  previousLatinWord,
   previousWord,
   romanWordBefore,
   scriptWordBefore,
@@ -40,6 +47,9 @@ const NO_MARKS: SpellMarks = { text: "", issues: [] };
 const LIMIT = 6;
 /** A letter of a script other than Latin: text worth spell checking. */
 const SCRIPT_LETTER = /[^\P{L}\p{Script=Latin}]/u;
+const ANY_LETTER = /\p{L}/u;
+/** Latin: two words typed apart are offered joined when the joined word is this common. */
+const JOIN_RANK = 10_000;
 
 /**
  * Words the user added to their dictionary (`spelling:<slug>`), or English words they kept
@@ -69,6 +79,8 @@ export interface SuggestionsOptions {
   autocorrect: boolean;
   /** The language's layouts: keyboard neighbours count as likely slips. */
   layouts: readonly Layout[];
+  /** Latin scripts: add accents on Space when the word list is sure (cancion → canción). */
+  smartAccents?: boolean;
 }
 
 /** The last autocorrection, so Backspace right after it can undo it. */
@@ -95,6 +107,8 @@ const NATIVE_INSERTS: ReadonlySet<string> = new Set([
 
 export function useSuggestions(options: SuggestionsOptions) {
   const { slug, code, editorRef, scheme, predict, spellcheck, autocorrect, layouts } = options;
+  const smartAccents = options.smartAccents ?? false;
+  const latin = isLatinCode(code);
   const [dictionary, setDictionary] = useState<Dictionary | null>(null);
   /** Builds the spell checker; loaded with the word list. */
   const [createChecker, setCreateChecker] = useState<typeof CreateChecker | null>(null);
@@ -124,6 +138,14 @@ export function useSuggestions(options: SuggestionsOptions) {
     return c;
   }, [dictionary, createChecker, code, layouts, personal, ignored]);
   const spell = spellcheck ? checker : null;
+  const restorer = useMemo(() => {
+    const words = dictionary?.latin;
+    return words && smartAccents
+      ? new AccentRestorer(words.words, words.locale, words.accents)
+      : null;
+  }, [dictionary, smartAccents]);
+  /** The word being typed before the caret: Latin, or the language's own script. */
+  const wordBefore = latin ? latinWordBefore : scriptWordBefore;
 
   /** Start downloading the word list (once). Cheap to call on every keystroke. */
   const load = useCallback(() => {
@@ -155,14 +177,41 @@ export function useSuggestions(options: SuggestionsOptions) {
     }
     if (!dictionary) return NONE;
 
-    const partial = predict ? scriptWordBefore(text, caret) : null;
+    const partial = predict || restorer ? wordBefore(text, caret) : null;
+    const locale = dictionary.latin?.locale ?? "en";
+    const fold = (w: string) => (latin ? foldLatin(w, locale) : w);
+    /** A dictionary word as written, in the case the user is typing. */
+    const shown = (w: string, typed: string) =>
+      latin ? matchCase(typed, displayWord(dictionary, w), locale) : w;
+    const accentOptions = partial && restorer ? restorer.restore(partial.word).options : [];
     const completions = partial
-      ? dictionary.lexicon
-          .complete(dictionary.lexicon.walk(0, partial.word), LIMIT + 1)
-          .map((e) => e.word)
-          .filter((w) => w !== partial.word)
+      ? [
+          ...accentOptions,
+          ...(predict
+            ? dictionary.lexicon
+                .complete(dictionary.lexicon.walk(0, fold(partial.word)), LIMIT + 1)
+                .filter((e) => e.word !== fold(partial.word))
+                .map((e) => shown(e.word, partial.word))
+            : []),
+        ]
+          .filter((w, i, all) => all.indexOf(w) === i)
           .slice(0, LIMIT)
       : [];
+    // Latin: two words that belong together, typed apart (buon giorno → buongiorno).
+    if (latin && partial && predict) {
+      const before = /(\p{L}+) $/u.exec(text.slice(0, partial.start));
+      const joined = before && fold(before[1]! + partial.word);
+      const rank = joined ? dictionary.lexicon.rank(joined) : -1;
+      if (before && rank >= 0 && rank < JOIN_RANK) {
+        const start = partial.start - before[0].length;
+        const word = shown(joined!, before[1]!);
+        return {
+          mode: "complete",
+          items: [word, ...completions.filter((w) => w !== word)].slice(0, LIMIT),
+          range: { start, end: partial.end, word: text.slice(start, partial.end) },
+        };
+      }
+    }
     // A word still being typed gets completions while it has any, corrections after that.
     const wrong = spell?.misspellingAt(text, caret);
     if (wrong && !completions.length) {
@@ -185,11 +234,14 @@ export function useSuggestions(options: SuggestionsOptions) {
       return completions.length ? { mode: "complete", items: completions, range: partial } : NONE;
     }
     if (!predict) return NONE;
-    const previous = previousWord(text, caret);
+    const previous = latin ? previousLatinWord(text, caret, locale) : previousWord(text, caret);
     if (previous === undefined) return NONE;
-    const items = dictionary.next.after(previous, LIMIT);
+    // A new sentence starts with a capital.
+    const items = dictionary.next
+      .after(previous, LIMIT)
+      .map((w) => shown(w, previous === null ? "A" : "a"));
     return items.length ? { mode: "next", items, range: null } : NONE;
-  }, [editorRef, translit, predict, dictionary, spell]);
+  }, [editorRef, translit, predict, dictionary, spell, restorer, latin, wordBefore]);
 
   /** Where the user is typing a word: it is not underlined until the caret leaves it. */
   const typingAt = useRef({ text: "", caret: -1 });
@@ -201,14 +253,15 @@ export function useSuggestions(options: SuggestionsOptions) {
     if (!el) return;
     const text = el.value;
     // Text typed on the phone's own keyboard sends no key events: load on what it wrote.
-    if ((spellcheck || predict) && !dictionary && SCRIPT_LETTER.test(text)) load();
+    const letter = latin ? ANY_LETTER : SCRIPT_LETTER;
+    if ((spellcheck || predict || smartAccents) && !dictionary && letter.test(text)) load();
     const caret = el.selectionStart === el.selectionEnd ? el.selectionStart : -1;
     const typing = typingAt.current;
     if (text !== typing.text) typingAt.current = { text, caret };
     else if (caret !== typing.caret) typing.caret = -1;
     const skip = typingAt.current.caret;
     setMarks(spell && text ? { text, issues: spell.misspellings(text, skip) } : NO_MARKS);
-  }, [compute, editorRef, spellcheck, predict, dictionary, spell, load]);
+  }, [compute, editorRef, spellcheck, predict, smartAccents, latin, dictionary, spell, load]);
 
   // Re-rank when the dictionary arrives or the mode changes.
   useEffect(refreshNow, [refreshNow]);
@@ -315,17 +368,45 @@ export function useSuggestions(options: SuggestionsOptions) {
   const lastCorrection = useRef<Correction | null>(null);
 
   /**
-   * Type `boundary` (a space) after the word before the caret, correcting the word first if
-   * it is clearly misspelled. Returns false when there was nothing to correct.
+   * Latin, phone keyboards: after the browser typed a space, add the accents to the word
+   * before it when the word list is sure (Backspace right after puts it back).
+   */
+  const afterNativeSpace = useCallback(
+    (event: InputEvent): void => {
+      const el = editorRef.current;
+      if (!el || !restorer || event.isComposing || event.inputType !== "insertText") return;
+      if (event.data !== " " || el.selectionStart !== el.selectionEnd) return;
+      const caret = el.selectionStart;
+      const word = latinWordBefore(el.value, caret - 1);
+      if (!word || ignored.has(word.word)) return;
+      const fix = restorer.restore(word.word).auto;
+      if (!fix) return;
+      replaceText(el, word.start, caret, fix + " ");
+      lastCorrection.current = {
+        end: word.start + fix.length + 1,
+        typed: word.word,
+        inserted: fix + " ",
+        value: el.value,
+      };
+    },
+    [editorRef, restorer, ignored],
+  );
+
+  /**
+   * Type `boundary` (a space) after the word before the caret, adding its accents (Latin, when
+   * the word list is sure) or correcting it if it is clearly misspelled. Returns false when
+   * there was nothing to change.
    */
   const correctBefore = useCallback(
     (boundary: string): boolean => {
       const el = editorRef.current;
-      if (!el || !spell || !autocorrect || el.selectionStart !== el.selectionEnd) return false;
-      const word = scriptWordBefore(el.value, el.selectionStart);
+      if (!el || el.selectionStart !== el.selectionEnd) return false;
+      if (!restorer && !(spell && autocorrect)) return false;
+      const word = wordBefore(el.value, el.selectionStart);
       if (!word) return false;
       const typed = el.value.slice(word.start, word.end);
-      const fix = spell.autocorrect(typed);
+      const accented = restorer && !ignored.has(typed) ? restorer.restore(typed).auto : null;
+      const fix = accented ?? (spell && autocorrect ? spell.autocorrect(typed) : null);
       if (!fix) return false;
       replaceText(el, word.start, word.end, fix + boundary);
       lastCorrection.current = {
@@ -336,7 +417,7 @@ export function useSuggestions(options: SuggestionsOptions) {
       };
       return true;
     },
-    [editorRef, spell, autocorrect],
+    [editorRef, spell, autocorrect, restorer, wordBefore, ignored],
   );
 
   /**
@@ -380,6 +461,7 @@ export function useSuggestions(options: SuggestionsOptions) {
     keep,
     composing,
     afterNativeInput,
+    afterNativeSpace,
     load,
     ready: dictionary !== null,
     punctuation: translit?.scheme.punctuation ?? {},

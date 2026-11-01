@@ -1,0 +1,27 @@
+{
+  "slug": "spanish",
+  "code": "es",
+  "order": 200,
+  "lang": "es",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Spanish",
+    "native": "Español"
+  },
+  "aliases": ["Castilian"],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["es-easy", "es-spain", "es-latam"],
+  "accents": "áéíóúüñÁÉÍÓÚÜÑ¿¡",
+  "sample": "¿Dónde está la estación? Mañana iré en tren.",
+  "voice": ["es-ES", "es-MX", "es-US", "es-AR", "es-CO"],
+  "wordList": true,
+  "translate": {
+    "google": "es",
+    "bing": "es",
+    "deepl": "es"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot. Easy accents (US-International) is the default: most visitors have an English keyboard."
+}

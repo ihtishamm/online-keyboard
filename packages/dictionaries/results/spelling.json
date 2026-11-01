@@ -118,5 +118,53 @@
     "spellcheck": false,
     "autocorrect": false,
     "autocorrectByDefault": false
+  },
+  "es": {
+    "prose": {
+      "words": 6689,
+      "falseFlags": 145
+    },
+    "misspellings": 50,
+    "flagged": 50,
+    "top3": 50,
+    "correctWords": 7562,
+    "falseFlags": 71,
+    "fixed": 36,
+    "wrongReplacements": 18,
+    "spellcheck": true,
+    "autocorrect": true,
+    "autocorrectByDefault": false
+  },
+  "fr": {
+    "prose": {
+      "words": 6578,
+      "falseFlags": 99
+    },
+    "misspellings": 50,
+    "flagged": 45,
+    "top3": 49,
+    "correctWords": 8089,
+    "falseFlags": 70,
+    "fixed": 38,
+    "wrongReplacements": 23,
+    "spellcheck": true,
+    "autocorrect": true,
+    "autocorrectByDefault": false
+  },
+  "it": {
+    "prose": {
+      "words": 6321,
+      "falseFlags": 195
+    },
+    "misspellings": 50,
+    "flagged": 49,
+    "top3": 49,
+    "correctWords": 6132,
+    "falseFlags": 61,
+    "fixed": 39,
+    "wrongReplacements": 17,
+    "spellcheck": true,
+    "autocorrect": true,
+    "autocorrectByDefault": false
   }
 }

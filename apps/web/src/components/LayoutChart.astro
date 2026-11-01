@@ -1,5 +1,5 @@
 ---
-import { ROWS, US_QWERTY, keyDefFor, type KeyCode } from "@okb/engine";
+import { US_QWERTY, keyDefFor, layoutRows } from "@okb/engine";
 import type { Layout } from "@okb/engine/layout";
 import { displayLabel } from "./keyboard/labels";
 
@@ -8,7 +8,7 @@ interface Props {
 }
 
 const { layout } = Astro.props;
-const rows = ROWS.map((row) => row.filter((c) => c !== "IntlBackslash")) as KeyCode[][];
+const rows = layoutRows(layout.keys);
 ---
 
 <figure class="overflow-x-auto" tabindex="0" aria-label={`${layout.name.en} layout chart`}>

@@ -16,6 +16,11 @@ describe("stripWikitext", () => {
     expect(stripWikitext(src).replace(/\s+/g, " ").trim()).toBe("متن مثال");
   });
 
+  it("decodes entities the article's authors wrote, under the dump's own escaping", () => {
+    const src = "60&amp;nbsp;cm de altura&amp;mdash;más o menos";
+    expect(stripWikitext(src)).toBe("60 cm de altura—más o menos");
+  });
+
   it("removes nested spans and tolerates unclosed ones", () => {
     expect(removeNested("a{{b{{c}}d}}e", "{{", "}}")).toBe("a e");
     expect(removeNested("a{{b", "{{", "}}")).toBe("a");

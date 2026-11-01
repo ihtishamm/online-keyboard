@@ -48,6 +48,14 @@ export const SCRIPTS: Readonly<Record<string, ScriptInfo>> = {
     cased: false,
     joining: false,
   },
+  Latn: {
+    name: "Latin",
+    dir: "ltr",
+    fonts: ["latin"],
+    punctuation: ".,?!;:¿¡«»„“”‚‘’–—…",
+    cased: true,
+    joining: false,
+  },
 };
 
 export function scriptInfo(code: string): ScriptInfo {

@@ -6,4 +6,5 @@ export const FONT_CLASS: Record<FontId, string> = {
   naskh: "font-naskh",
   devanagari: "font-devanagari",
   bengali: "font-bengali",
+  latin: "font-latin",
 };

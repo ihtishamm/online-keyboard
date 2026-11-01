@@ -26,6 +26,11 @@ export interface ImportSpec {
   meta: Omit<LayoutInput, "keys" | "longpress" | "deadkeys">;
   /** Our changes to the imported keys. Keep `meta.source` in step with them. */
   patch?: (keys: Keys) => void;
+  /**
+   * Latin layouts: the language's special letters, offered first on a long press of their
+   * base letter (ñ on n, é è ê ë on e), so phones reach them in one slide.
+   */
+  accents?: string;
 }
 
 const set = (keys: Keys, code: KeyCode, def: Partial<KeyDef>) => {
@@ -39,6 +44,117 @@ const persoArabicDigits = (keys: Keys) => {
 };
 
 const CLDR_NOTE = "Unicode CLDR 43 keyboard data (Unicode License v3)";
+
+/** The Windows US-International keyboard: the base of every "Easy accents" layout. */
+const US_INTL = "cldr/en-t-k0-windows-extended.xml";
+
+/**
+ * A Latin-script layout from CLDR. `easy`: US-International, for people with an English
+ * keyboard: ' ` ^ " ~ are dead keys (' then e types é; ' then c types ç), AltGr types the
+ * accented letters directly.
+ */
+function latin(options: {
+  code: string;
+  folder: string;
+  id: string;
+  file: string;
+  name: { en: string; native: string };
+  accents: string;
+  source?: string;
+}): ImportSpec {
+  const easy = options.file === US_INTL;
+  const file = options.file.replace("cldr/", "");
+  return {
+    out: `${options.folder}/${options.id}.json`,
+    from: { cldr: options.file },
+    accents: options.accents,
+    meta: {
+      id: `${options.code}-${options.id}`,
+      lang: options.code,
+      script: "Latn",
+      dir: "ltr",
+      name: options.name,
+      source:
+        (easy
+          ? `Windows "United States-International", from ${CLDR_NOTE} (${file}).`
+          : `Windows ${options.source ?? `"${options.name.en}"`}, from ${CLDR_NOTE} (${file}).`) +
+        " Long-press alternates put the language's own letters first.",
+    },
+  };
+}
+
+const LATIN_IMPORTS: readonly ImportSpec[] = [
+  ...(
+    [
+      ["es", "spanish", "áéíóúüñ¿¡", "Acentos fáciles"],
+      ["fr", "french", "àâæçéèêëîïôœùûüÿ«»", "Accents faciles"],
+      ["it", "italian", "àèéìíòóùú", "Accenti facili"],
+    ] as const
+  ).map(([code, folder, accents, native]) =>
+    latin({
+      code,
+      folder,
+      id: "easy",
+      file: US_INTL,
+      accents,
+      name: { en: "Easy accents", native },
+    }),
+  ),
+  latin({
+    code: "es",
+    folder: "spanish",
+    id: "spain",
+    file: "cldr/es-t-k0-windows.xml",
+    accents: "áéíóúüñ¿¡",
+    name: { en: "Spain", native: "España" },
+    source: '"Spanish"',
+  }),
+  latin({
+    code: "es",
+    folder: "spanish",
+    id: "latam",
+    file: "cldr/es-419-t-k0-windows.xml",
+    accents: "áéíóúüñ¿¡",
+    name: { en: "Latin America", native: "Latinoamérica" },
+    source: '"Latin American"',
+  }),
+  latin({
+    code: "fr",
+    folder: "french",
+    id: "azerty",
+    file: "cldr/fr-t-k0-windows.xml",
+    accents: "àâæçéèêëîïôœùûüÿ«»",
+    name: { en: "AZERTY (France)", native: "AZERTY (France)" },
+    source: '"French"',
+  }),
+  latin({
+    code: "fr",
+    folder: "french",
+    id: "belgian",
+    file: "cldr/fr-BE-t-k0-windows.xml",
+    accents: "àâæçéèêëîïôœùûüÿ«»",
+    name: { en: "AZERTY (Belgium)", native: "AZERTY (Belgique)" },
+    source: '"Belgian French"',
+  }),
+  latin({
+    code: "fr",
+    folder: "french",
+    id: "swiss",
+    file: "cldr/fr-CH-t-k0-windows.xml",
+    accents: "àâæçéèêëîïôœùûüÿ«»",
+    name: { en: "QWERTZ (Switzerland)", native: "QWERTZ (Suisse)" },
+    source: '"Swiss French"',
+  }),
+  latin({
+    code: "it",
+    folder: "italian",
+    id: "standard",
+    file: "cldr/it-t-k0-windows.xml",
+    accents: "àèéìíòóùú",
+    name: { en: "Italian", native: "Italiana" },
+    source: '"Italian"',
+  }),
+];
 
 export const IMPORTS: readonly ImportSpec[] = [
   {
@@ -231,6 +347,7 @@ export const IMPORTS: readonly ImportSpec[] = [
       source: "Keyman Kashmiri Phonetic 1.0.2 by SIL Global (MIT).",
     },
   },
+  ...LATIN_IMPORTS,
 ];
 
 /** Characters worth a long press: letters and marks, not ASCII punctuation or digits. */
@@ -241,11 +358,15 @@ const isAlternate = (text: string | undefined): text is string =>
  * Mobile long-press alternates: a key's Shift and AltGr characters, so phone users reach
  * them without toggling Shift.
  */
-export function deriveLongpress(keys: Keys): NonNullable<LayoutInput["longpress"]> {
+export function deriveLongpress(keys: Keys, accents = ""): NonNullable<LayoutInput["longpress"]> {
   const longpress: NonNullable<LayoutInput["longpress"]> = {};
   for (const [code, def] of Object.entries(keys) as [KeyCode, KeyDef][]) {
     if (!def.n) continue;
-    const alts = [...new Set([def.s, def.ag, def.sag].filter(isAlternate))].filter(
+    // Latin layouts: the language's letters built on this key's letter (é on e, ñ on n).
+    const own = [...accents].filter(
+      (a) => a !== def.n && a.normalize("NFD")[0] === def.n && /\p{L}/u.test(def.n),
+    );
+    const alts = [...new Set([...own, def.s, def.ag, def.sag].filter(isAlternate))].filter(
       (t) => t !== def.n,
     );
     if (alts.length) longpress[code] = alts;
@@ -280,7 +401,7 @@ export function buildImport(spec: ImportSpec, sourceText: string): ImportResult 
       ...spec.meta,
       keys: ordered,
       ...(deadkeys.length ? { deadkeys } : {}),
-      longpress: deriveLongpress(ordered),
+      longpress: deriveLongpress(ordered, spec.accents),
     },
     warnings: imported.warnings,
   };

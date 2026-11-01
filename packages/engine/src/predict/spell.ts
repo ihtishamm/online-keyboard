@@ -1,3 +1,4 @@
+import { matchCase } from "../text/latin";
 import { Lexicon, rankCost } from "./lexicon";
 
 /**
@@ -27,7 +28,7 @@ export interface Misspelling {
 
 export interface SpellingRules {
   /** Unicode script of the words checked (others, such as English, are skipped). */
-  script?: "Arabic" | "Devanagari" | "Bengali";
+  script?: "Arabic" | "Devanagari" | "Bengali" | "Latin";
   /** Map a written word to its dictionary form. */
   key: (word: string) => string;
   /** Groups of letters that sound alike or sit on the same key: swapping them costs little. */
@@ -45,6 +46,16 @@ export interface SpellingRules {
    * and the base forms of inflections the corpus may lack (سوچو from سوچنا).
    */
   variants?: (key: string) => string[];
+  /**
+   * Latin scripts: the base forms of regular inflections (dojos → dojo, amuralladas →
+   * amurallado). A form the list lacks counts as known when its base is, as rare as the base.
+   */
+  inflections?: (key: string) => string[];
+  /**
+   * Words with a capital letter are names, and not checked: a word list of 40,000 words
+   * cannot know the world's names (Latin scripts).
+   */
+  skipNames?: boolean;
 }
 
 /**
@@ -138,11 +149,23 @@ export class SpellChecker {
   private readonly cache = new Map<string, boolean>();
   private readonly personal = new Set<string>();
   private readonly re: ReturnType<typeof scriptRegexes>;
+  /** Rarer words the dictionary file carries for smart accents: known, not suggested. */
+  private readonly extra = new Map<string, number>();
 
+  /**
+   * @param latin Latin scripts: the words as written, by rank (the lexicon holds them
+   *   folded), so corrections come out as Haus and Madrid, in the case the user typed.
+   */
   constructor(
     private readonly lexicon: Lexicon,
     private readonly rules: SpellingRules = URDU_SPELLING,
+    private readonly latin?: {
+      words: readonly string[];
+      locale: string;
+      accents?: readonly { word: string; rank: number }[];
+    },
   ) {
+    for (const { word, rank } of latin?.accents ?? []) this.extra.set(rules.key(word), rank);
     const pair = (a: number, b: number) => (a < b ? a * 65536 + b : b * 65536 + a);
     const add = (groups: readonly string[], cost: number) => {
       for (const g of groups) {
@@ -183,7 +206,11 @@ export class SpellChecker {
     let ok = this.cache.get(word);
     if (ok === undefined) {
       const key = this.rules.key(word);
-      ok = [...key].length < 2 || !this.re.checked.test(key) || this.known(key);
+      ok =
+        [...key].length < 2 ||
+        !this.re.checked.test(key) ||
+        (this.rules.skipNames === true && /\p{Lu}/u.test(word)) ||
+        this.known(key);
       this.cache.set(word, ok);
     }
     return ok;
@@ -191,9 +218,16 @@ export class SpellChecker {
 
   private known(key: string): boolean {
     if (this.personal.has(key)) return true;
-    const rank = this.lexicon.rank(key);
+    let rank = this.lexicon.rank(key);
+    if (rank < 0) rank = this.extra.get(key) ?? -1;
     if (rank >= 0 && rank < RARE_RANK) return true;
     if (this.rules.variants?.(key).some((v) => this.common(v))) return true;
+    if (rank < 0 && this.rules.inflections) {
+      const bases = this.rules.inflections(key).map((v) => this.lexicon.rank(v));
+      rank = Math.min(...bases.filter((r) => r >= 0));
+      if (rank === Infinity) rank = -1;
+      else if (rank < RARE_RANK) return true;
+    }
     if (rank >= 0) return !this.closeTo(key, HOMOPHONE, rank / RARE_RATIO);
     return this.split(key) !== null && !this.closeTo(key, CHEAP, RARE_RANK);
   }
@@ -270,7 +304,7 @@ export class SpellChecker {
   join(first: string, second: string): string | null {
     if (this.check(first) && this.check(second)) return null;
     const joined = this.rules.key(first) + this.rules.key(second);
-    return this.common(joined) ? joined : null;
+    return this.common(joined) ? this.written(joined, first) : null;
   }
 
   /** Likely corrections for `word`, best first. */
@@ -278,6 +312,19 @@ export class SpellChecker {
     return this.scored(word)
       .slice(0, limit)
       .map((s) => s.word);
+  }
+
+  /** A dictionary word as written, in the case of `typed` (Latin scripts). */
+  private written(found: string, typed: string): string {
+    const latin = this.latin;
+    if (!latin) return found;
+    return found
+      .split(" ")
+      .map((part) => {
+        const rank = this.lexicon.rank(part);
+        return matchCase(typed, rank >= 0 ? latin.words[rank]! : part, latin.locale);
+      })
+      .join(" ");
   }
 
   /** Corrections for `word` with their scores (lower is better), best first. */
@@ -297,7 +344,8 @@ export class SpellChecker {
     const seen = new Set<string>([key]);
     return scored
       .sort((a, b) => a.score - b.score)
-      .filter((s) => !seen.has(s.word) && seen.add(s.word));
+      .filter((s) => !seen.has(s.word) && seen.add(s.word))
+      .map((s) => ({ ...s, word: this.written(s.word, word) }));
   }
 
   /** Dictionary words within `max` edit cost of `key`, cheapest (then commonest) first. */

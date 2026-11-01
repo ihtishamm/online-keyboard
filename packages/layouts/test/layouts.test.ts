@@ -173,7 +173,7 @@ const GOLDEN: [layoutId: string, keys: string, expected: string][] = [
 describe("regional language pack", () => {
   it("covers every layout in the registry", () => {
     const expected = allLayouts()
-      .filter((l) => !l.translit)
+      .filter((l) => !l.translit && l.script !== "Latn")
       .map((l) => l.id)
       .filter((id) => !id.startsWith("ur-"));
     expect(Object.keys(ALPHABETS).sort()).toEqual(expected.sort());
@@ -219,5 +219,60 @@ describe("ur-roman", () => {
       expect(l.script).toBe("Latn");
       expect(() => getScheme(l.translit!)).not.toThrow();
     }
+  });
+});
+
+/** Characters a layout types: on keys, and through its dead keys (trigger, then base). */
+function producibleWithDeadKeys(layoutId: string): Set<string> {
+  const layout = getLayout(layoutId);
+  const all = producible(layoutId);
+  for (const d of layout.deadkeys) if (all.has(d.trigger) && all.has(d.base)) all.add(d.out);
+  return all;
+}
+
+describe("Latin layouts", () => {
+  const latin = LANGUAGES.filter((l) => l.script === "Latn");
+
+  /**
+   * Special letters a layout cannot type. National layouts are imported as their standards
+   * define them, gaps included (classic AZERTY has no É or œ; Italian has no capital À): the
+   * accent bar above the keyboard always offers every special letter. Easy accents should
+   * miss as little as possible.
+   */
+  const GAPS: Record<string, string> = {
+    "fr-easy": "œŒŸ",
+    "fr-azerty": "æœÆÇÉŒŸ",
+    "fr-belgian": "æœÆÇŒŸ",
+    "fr-swiss": "æœÆÇŒŸ",
+    "it-standard": "íóúÀÈÉÌÍÒÓÙÚ",
+  };
+
+  it.each(latin.flatMap((l) => l.layouts.map((id) => [id, l.accents!] as const)))(
+    "%s types a–z, and its language's special letters but the known gaps",
+    (id, accents) => {
+      const chars = producibleWithDeadKeys(id);
+      for (const c of "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ") {
+        expect(chars.has(c), `${id} types ${c}`).toBe(true);
+      }
+      const missing = [...accents].filter((c) => /\p{L}/u.test(c) && !chars.has(c));
+      expect(missing.join("")).toBe(GAPS[id] ?? "");
+    },
+  );
+
+  it.each([
+    ["es-easy", "canci'on", "canción"],
+    ["es-easy", "~n", "ñ"],
+    ["fr-easy", "'cava", "çava"],
+    ["fr-easy", "^etre", "être"],
+    ["it-easy", "citt`a", "città"],
+    // AZERTY: A and Q, Z and W, M swap places with the US keys.
+    ["fr-azerty", "qwer", "azer"],
+    ["fr-azerty", ";", "m"],
+    // Spain: ñ has its own key (US ;), ´ is a dead key on the US ' key.
+    ["es-spain", "espa;a", "españa"],
+    ["es-spain", "cancion", "cancion"],
+    ["it-standard", "citt'", "città"],
+  ])("%s: %s types %s", (id, keys, expected) => {
+    expect(typeOn(id, keys)).toBe(expected);
   });
 });

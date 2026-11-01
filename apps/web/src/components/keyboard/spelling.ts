@@ -12,5 +12,5 @@ export function createChecker(
   layouts: readonly Layout[],
 ): SpellChecker | null {
   const rules = spellingRules(code, layouts);
-  return rules ? new SpellChecker(dictionary.lexicon, rules) : null;
+  return rules ? new SpellChecker(dictionary.lexicon, rules, dictionary.latin) : null;
 }

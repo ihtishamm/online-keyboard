@@ -3,14 +3,14 @@
 // without copying (they are transferred).
 import { buildDictionary } from "./dictionary-build";
 
-self.onmessage = async (event: MessageEvent<string>) => {
+self.onmessage = async (event: MessageEvent<{ url: string; code: string }>) => {
   try {
-    const { lexicon, next } = await buildDictionary(event.data);
+    const { lexicon, next, latin } = await buildDictionary(event.data.url, event.data.code);
     const data = lexicon.toData();
     const { ch, firstChild, nextSibling, wordRank, bestRank, parent } = data;
     const arrays = [ch, firstChild, nextSibling, wordRank, bestRank, parent];
     self.postMessage(
-      { lexicon: data, next: next.toData() },
+      { lexicon: data, next: next.toData(), latin },
       arrays.map((a) => a.buffer),
     );
   } catch (error) {

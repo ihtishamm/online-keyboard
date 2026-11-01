@@ -1,0 +1,27 @@
+{
+  "slug": "french",
+  "code": "fr",
+  "order": 210,
+  "lang": "fr",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "French",
+    "native": "Français"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["fr-easy", "fr-azerty", "fr-belgian", "fr-swiss"],
+  "accents": "àâæçéèêëîïôœùûüÿÀÂÆÇÉÈÊËÎÏÔŒÙÛÜŸ«»",
+  "sample": "Où est la gare ? Ça dépend : c’est à côté du marché.",
+  "voice": ["fr-FR", "fr-CA", "fr-BE", "fr-CH"],
+  "wordList": true,
+  "translate": {
+    "google": "fr",
+    "bing": "fr",
+    "deepl": "fr"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot. Easy accents (US-International) is the default: most visitors have an English keyboard."
+}

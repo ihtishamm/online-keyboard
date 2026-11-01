@@ -60,6 +60,18 @@ export type KeyCode = (typeof ROWS)[number][number] | (typeof EXTRA_KEYS)[number
 
 export const KEY_CODES: readonly KeyCode[] = [...ROWS.flat(), ...EXTRA_KEYS];
 
+/**
+ * The rows a layout draws: the ISO key left of Z (German < > |, Spanish < >) and the ABNT2 key
+ * right of the slash (Portuguese / ?) appear only where the layout puts characters on them,
+ * so US-shaped layouts draw as before.
+ */
+export function layoutRows(keys: Partial<Record<KeyCode, unknown>>): KeyCode[][] {
+  const rows = ROWS.map((row) => [...row]) as KeyCode[][];
+  if (!keys.IntlBackslash) rows[3] = rows[3]!.filter((c) => c !== "IntlBackslash");
+  if (keys.IntlRo) rows[3]!.push("IntlRo");
+  return rows;
+}
+
 const KEY_CODE_SET: ReadonlySet<string> = new Set(KEY_CODES);
 
 export function isKeyCode(code: string): code is KeyCode {

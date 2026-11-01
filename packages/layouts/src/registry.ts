@@ -47,6 +47,18 @@ import bangla from "../languages/bangla/language.json";
 import bnRoman from "../languages/bangla/roman.json";
 import { BN_ROMAN } from "./translit/bn-roman";
 import bnInscript from "../languages/bangla/inscript.json";
+import spanish from "../languages/spanish/language.json";
+import esEasy from "../languages/spanish/easy.json";
+import esSpain from "../languages/spanish/spain.json";
+import esLatam from "../languages/spanish/latam.json";
+import french from "../languages/french/language.json";
+import frEasy from "../languages/french/easy.json";
+import frAzerty from "../languages/french/azerty.json";
+import frBelgian from "../languages/french/belgian.json";
+import frSwiss from "../languages/french/swiss.json";
+import italian from "../languages/italian/language.json";
+import itEasy from "../languages/italian/easy.json";
+import itStandard from "../languages/italian/standard.json";
 
 /** Every language.json, in page order. */
 export const LANGUAGE_FILES = [
@@ -61,6 +73,9 @@ export const LANGUAGE_FILES = [
   kashmiri,
   hindi,
   bangla,
+  spanish,
+  french,
+  italian,
 ] as LanguageFile[];
 
 /** Every layout file, by language, in each language's order. */
@@ -88,6 +103,15 @@ export const RAW_LAYOUTS = [
   hiInscript,
   bnRoman,
   bnInscript,
+  esEasy,
+  esSpain,
+  esLatam,
+  frEasy,
+  frAzerty,
+  frBelgian,
+  frSwiss,
+  itEasy,
+  itStandard,
 ] as LayoutInput[];
 
 /** The transliteration schemes the layouts use. */

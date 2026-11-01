@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+3153	Quand je serai grand, je veux être roi.
+3263	Tu devines probablement ce qui va arriver.
+3281	C'est là que réside le problème.
+3646	Est-ce que tu pourrais retéléphoner plus tard s'il te plaît ?
+3741	L'orchestre produit des notes dissonantes lorsqu'il s'accorde.
+3761	Ne sachant avec quel prétendant elle voulait se marier, la princesse hésitait, nommant tantôt l'un, tantôt l'autre.
+3856	Pendant les vacances d’été, je prenais mon dîner à minuit.
+4032	L'homme propose, Dieu dispose.
+4090	Ça coûte les yeux de la tête.
+4367	On va beaucoup manger ce soir alors j'espère que tu ne fais pas de régime.
+6456	Je me suis mis à jour dans tous mes devoirs la nuit dernière.
+6848	Je voudrais lire quelques livres sur Lincoln.
+6942	J'aime jouer du piano.
+7449	J'ai quelques photos à vous montrer.
+7558	Je suis en congé cette semaine.
+7666	As-tu pris note de mon numéro de téléphone ?
+7831	Mon permis de conduire expire la semaine prochaine.
+7863	Mon oncle lui a offert un cadeau.
+7916	J'ai une idée.
+8327	Je ne le croyais pas au début.
+8597	Il faudra que j'y réfléchisse.
+8897	Maintenant que mon frère est étudiant à l'université, il doit beaucoup lire.
+9170	J'ai demandé une place dans la partie non-fumeur.
+9276	Sois rapide ou tu manqueras le train.
+9354	J'ai failli rater le train.
+9782	Après le concert la foule se dirigea vers la porte la plus proche.
+10083	Ils arrivèrent à l'hôtel à quatre heures.
+10432	Je t'admire.
+10457	Cet auteur italien est peu connu au Japon.
+10462	Puis-je manger ce gâteau ?
+10590	L'alcool a fait de gros dégâts sur son corps.
+10796	Ne partez pas.
+10807	Ça va, merci.
+10819	Mon oncle m’a donné un livre.
+10917	Le thé a été introduit de Chine.
+11074	Chris ne peut pas travailler demain.
+11081	Réserve ton vol rapidement parce qu'il y a beaucoup de réservations à Noël.
+11167	Va-t'en d'ici.
+12078	Je préfèrerais faire une promenade plutôt qu'aller voir un film.
+12136	Cet accident s'est passé sous ses yeux.
+12492	Habituellement je me déplace à pied.
+12674	Les données peuvent être transmises de l'ordinateur principal à votre propre ordinateur, et vice versa.
+12988	Maintenant je comprends pourquoi il n'est pas allé à l'université.
+12995	Puis-je avoir une serviette, s'il vous plaît ?
+13021	Changez de train à Chicago pour New York.
+13066	Jouer du violon nécessite beaucoup de pratique.
+13469	Combien de temps a vécu la civilisation maya ?
+13577	Depuis combien de temps vivez-vous à Tokyo ?
+13690	Fais ton travail avec plus d'attention.
+13766	S'il te plaît, calme-toi.
+14140	Une nouvelle décennie est passée en un clin d'œil.
+14595	Si possible, les Japonais semblent préférer choisir un conjoint qui leur ressemble, chercher une situation stable qui assure une promotion lente mais régulière et mettre leurs économies à la banque.
+14674	La délinquance juvénile est en hausse.
+15023	Je vois la tour de chez moi.
+15181	Tous nos professeurs étaient jeunes et aimaient enseigner.
+15221	Pouvez-vous soulever cette pierre ?
+15364	Il coupa à travers la forêt de Sherwood.
+15373	Il a étudié des documents historiques pour résoudre cette énigme.
+15551	Ses cheveux étaient si longs qu'ils touchaient le sol.
+15684	Mon père a arrêté de fumer.
+119768	Tout ce que vous avez dit dans votre courrier électronique est juste excepté le prix.
+126660	« J'imagine que votre travail vous plaît. » « Pas du tout, je le déteste. »
+127976	J'ai emprunté une voiture à un ami.
+128611	Informez les nouveaux venus des règles du club.
+128802	Quelle est la longueur du pont Seto ?
+129004	Ma grand-mère a vécu jusqu'à quatre-vingt-quinze ans.
+129377	Un avion vole au-dessus de la ville.
+129540	On peut obtenir gratuitement un formulaire d'enregistrement.
+130050	Notre association ne dura pas longtemps.
+130566	Le mois prochain, cela fera cinq ans qu'il apprend à jouer du violon.
+130674	Il t'aime vraiment très fort.
+130741	Il vous regarde toujours.
+130764	Il se plaint tout le temps.
+130890	En ville, tout le monde connaît son nom.
+131076	Il a ligoté le voleur.
+131418	Il semblait comme si rien n'était arrivé.
+132196	Il nous a donné le signal pour commencer.
+132404	Il fit un bref compte rendu de l'accident.
+132430	Il est incapable d'acheter une voiture.
+132520	Il est jeune mais a de l'expérience.
+132525	Il a appris le français dans sa jeunesse.
+132535	Il avait un livre dans la main.
+132549	Il porte des gants.
+132590	Il a lancé un grand cri pour avoir de l'aide.
+132608	Il est critique plutôt que romancier.
+132867	Tout le monde le connaît dans le village.
+133417	Il sera chez lui demain.
+133428	Il répara le filet.
+133676	Elle est habillée élégamment.
+133912	Elle profita de chaque opportunité.
+134441	Elle a perdu sa clé de voiture.
+134456	Elle a oublié de poster la lettre.
+134482	Elle est indépendante de ses parents.
+134677	Chaque matin elle aide sa mère à préparer le petit déjeuner dans la cuisine.
+135359	N'oubliez pas de venir me voir demain matin.
+135875	Nous devons essayer de préserver les vestiges des anciennes civilisations.
+136038	Ce garçon ne veut pas me dire son nom.
+138711	Vue de loin, cette pierre ressemble à un visage humain.
+138883	Il dut porter le sac.
+139076	Ses deux fils se disputaient la maison de leur père.
+139432	Est-ce que tu aimes la cuisine japonaise ?
+139511	Prenons le train.
+139926	L'omission est l'exemple parfait d'une expression technique ; elle est utilisée dans de nombreuses grammaires.
+180229	Son opinion ajoute un éclairage nouveau à la question.
+181030	Ils suivent 3 leçons d'anglais par semaine.
+181147	Ce T-shirt est trop petit pour moi.
+181249	Pourriez-vous venir ici un instant ?
+181461	L'héroïne du roman s'est suicidée.
+181551	Écrivez avec un stylo à bille s'il vous plait.
+181601	S'il vous plaît, donnez-moi un antalgique.
+181617	J'ai un vieux vélo.
+181711	Ça fait dix ans qu'il est mort.
+181820	Faites-nous savoir si vous pouvez venir.
+182050	Lorsque je suis entré dans la salle, ils ont applaudi.
+182073	Elle n'a pas eu de mal à apprendre le poème par cœur.
+182080	Il n'y a pas au Japon de golfeur professionnel aussi célèbre que Jumbo Ozaki.
+236252	La propreté est sœur de la divinité.
+237136	Assurez-vous de prendre une dose trois fois par jour.
+237192	Le passé et l'avenir emprisonnent mon cœur.
+329744	J'arrive immédiatement.
+330273	Il y a beaucoup plus d'eau que nécessaire.
+330332	Avez-vous besoin de lui ?
+330952	Quel idiot j'étais de n'avoir pas découvert ce simple mensonge !
+330992	Mon opinion est entièrement différente de la vôtre.
+331114	Ça semble plus long que ça, mais c'est une illusion d'optique.
+331300	Tu dois, avant tout, être fidèle à tes amis.
+331813	Ce bruit me rend nerveux.
+332104	Nous avons attrapé le voleur.
+332273	Tom joue tout le temps aux jeux vidéo.
+332313	J'aime le tennis.
+333644	Je vais plus souvent à Bruxelles qu'à Paris.
+334348	Je ne lis pas trop les journaux.
+334583	Nous sommes arrivés ici rapidement, n'est-ce pas ?
+334588	Elle est morte paisiblement dans son sommeil.
+336499	Il est resté chez sa tante.
+337062	L'autre jour sa mère est décédée à l'hôpital.
+338124	Je me demande qui a lancé cette rumeur.
+338496	UN signifie Nations Unies.
+339417	Répondez à l'appel de votre nom.
+341302	Nous devons encore marcher dix miles avant le coucher du soleil.
+341814	Je cherche mes lunettes.
+350217	Le magasin est proche de ma maison.
+353471	Chaque fois qu'il me rend visite, il laisse quelque chose chez moi.
+354128	On pensait que cette femme étrange était une sorcière.
+354326	Je me suis tout de suite senti mieux après m'être lavé.
+354349	C'est la fenêtre qui a été cassée par le jeune garçon.
+354371	Elle a baissé le son de la radio.
+354593	Elle s'est décidée à aller étudier aux États-Unis.
+367122	Déterminez la dimension de ce sous-espace vectoriel.
+368366	Ce n'est qu'en acceptant les autres que nous pouvons faire tomber nos propres barrières.
+373269	Ce jeune aux cheveux longs est rude.
+378055	Où est le banc le plus proche ?
+378811	Ce soir nous allons danser.
+381848	Il ne manquait plus que ça !
+390312	Les femmes françaises sont magnifiques.
+390956	Tu dis que tu n'aimes pas le poulet, mais est-ce que ce ne serait pas seulement parce que tu ne l'as jamais essayé ?
+391027	La capitale de l'Italie est Rome.
+391926	Je dois probablement parler ce soir.
+393419	Il m'a envoyé une courte lettre.
+397285	Si seulement son mari l'aidait, la source de la plupart de ses problèmes à la maison serait éliminée.
+398158	Lorsque je suis avec un bébé qui pleure, j'ai le goût de pleurer moi aussi !
+399879	Où est-il né ?
+400841	Pouvez-vous me recommander un bon appareil photo ?
+407550	Contrairement à l'anglaise, la noblesse française refusa toujours de pratiquer même le «commerce honorable.».
+407554	Mon ami Tom a deux fois plus de timbres que moi.
+413042	Les faibles sont la nourriture des forts.
+417012	Il a découpé une annonce dans le journal.
+417423	Rien d'extraordinaire n'a jamais été réussi sans prendre de risques.
+419353	Tu as fait tes devoirs ?
+421286	Nous n'avons que du thé.
+426210	Tu devrais respecter ta promesse.
+427061	Je suis à Tokyo aujourd'hui.
+427121	Calme-toi, mon gars.
+427287	Qu'est-ce qui t'a décidé à arrêter de fumer ?
+427500	On a demandé à chaque étudiant son nom et son lieu de naissance.
+428788	Est-ce que la quantité des précipitations influence la croissance des cultures ?
+428914	Il est venu en voiture plutôt qu'en train.
+429051	La soupe est très chaude.
+429107	Je crains qu'il ne pleuve demain.
+429221	Elle a ramassé une pièce de monnaie.
+429889	Tu n'aurais pas dû jouir si tôt.
+429979	Avec ce train, tu iras deux fois plus vite.
+430920	Le grand âge est une île entourée par la mort.
+431013	Le bâtiment sera sur votre droite, vous ne pouvez pas le rater.
+431880	Il s'est séparé de sa petite amie, c'est pourquoi il tente souvent de se suicider.
+432446	Plus vite, plus haut, plus fort !
+433178	Elle est bien la plus grande fille.
+433999	La vague de chaleur est très courte ici.
+437130	Souvenez-vous de votre humanité, oubliez le reste.
+439028	Je dis aux jeunes : la fête, c'est la vie. La vie, c'est ton visage !
+439814	Je vous demande de vous arrêter !
+440742	En parlant de voyages, as-tu déjà visité New York ?
+442113	Bon voyage à toi !
+449895	Je ne la rencontre jamais sans penser à feu sa mère.
+450520	J'ai bien des fleurs.
+450667	J'ai déjà écrit une lettre.
+451013	Vous avez encore le temps, chère baronne.
+451875	Ma mère déteste écrire des lettres.
+453323	Je décalai la cérémonie.
+457473	Il surmonta les obstacles grâce à des efforts importants.
+457573	Je joue du piano après le souper.
+457993	À qui ceci importe-t-il ?
+458179	Je n'étais pas conscient que quiconque me regardait.
+458187	Nous publierons l'ordre du jour définitif le matin du lundi 20 janvier, donc répondez rapidement, s'il vous plait.
+458296	Avez-vous du temps demain après-midi ?
+458488	Tu ne l'as pas compris.
+458870	Non, pas trop.
+459516	Il l'a fait pour l'argent.
+459996	C'est calme ici la nuit.
+460172	Où se trouve l'arrêt de bus pour le musée ?
+460535	Tu es malin.
+460689	Me donnerez-vous quelque chose à boire ?
+460831	Il mit à exécution le plan qu'il avait soigneusement échafaudé.
+461575	L'eau des lacs et des rivières est le plus souvent douce.
+461696	On peut tout croire.
+463526	Il met souvent les gens en colère.
+466277	Chaque fois que je vois cette image, je pense à mon père.
+470058	Partout où tu iras, tu seras bienvenu.
+472070	Ils arrivèrent presque tous à l'heure.
+474589	Ne radotez pas.
+477461	J'interprète à votre silence que vous ne vous satisfaites pas de ma réponse.
+477603	Ils sont arrivés en Angleterre il y a une semaine.
+478162	Je vous appellerai dès que j'arrive à l'aéroport.
+478808	Veuillez signer ici.
+480622	Tu l'as rencontrée ?
+481408	Vous avez quelques livres.
+481438	Je t'admire pour ton courage.
+481594	Je suis honoré de me trouver dans la ville éternelle du Caire, et d'être reçu par deux institutions remarquables. Depuis plus de mille ans, Al-Azhar est resté le phare de l'enseignement islamique, et depuis plus d'un siècle, l'université du Caire a été la source du progrès de l'Égypte.
+482098	Ce que vous dites ne s'applique pas dans ce cas.
+482900	Comme convenu, veuillez trouver ci-joint le contrat remis à jour.
+485208	Tu n'es pas censée fumer ici.
+487315	Il est dangereux de nager de nuit.
+488207	C'est mon professeur. Il s'appelle monsieur Haddad.
+489258	Le cœur d'un homme est à peu près aussi grand que son poing.
+490703	Vous feriez mieux de mettre l'occasion à profit.
+493650	Je suis malade !
+494755	Le jardin est séparé du chemin par une clôture.
+496938	Y a-t-il une différence quelconque entre ton idée et la sienne ?
+501804	Les oranges veulent dire un amour heureux, tandis que les citrons veulent dire celui qui est sans réponse.
+503450	La mère réveille sa fille.
+504376	Je voudrais dix assiettes.
+507643	Les examens de rattrapage en Italie comportent deux épreuves, l'écrit et l'oral, dans toutes les disciplines.
+517053	Il ne nous aime pas.
+519965	Les travailleurs n'ont pas de patrie.
+521598	Ce bureau est trop lourd pour que l’on puisse le soulever.
+524074	Il punaisa la note sur le tableau d'affichage.
+524442	Alain décrivait sa femme comme une fille impétueuse, qui parlait vite, savait mentir et n’avait aucun sens de la pudeur.
+528411	Ta sœur ne sait pas bien nager, si ?
+531070	Il a besoin de courir aussi vite ?
+531140	Le soleil ne brille pas la nuit.
+532367	Plus la souris est rapide, plus le cimetière est vaste.
+533520	Laissez-moi me présenter, s'il vous plaît.
+536420	Ses capacités le qualifient pour le poste.
+536540	Je vais t'examiner sous toutes les coutures.
+537438	Cette classe compte 35 élèves.
+538909	J'ai aussi apporté du riz au lait. Tu as juste besoin de le réchauffer.
+539495	J’ai hoché la tête pour montrer que j’étais d’accord.
+540011	Je joue de la trompette dans un orchestre symphonique d'instruments à vent.
+540201	Il y a trois sortes de gens dans le monde : ceux qui savent compter et ceux qui ne le savent pas.
+541213	C'est le premier pas qui compte.
+541601	C'est la personne à qui j'ai donné mon dictionnaire.
+543373	Un passereau dans la main vaut mieux qu'une grue qui vole.
+543461	On aime toujours ce qu'on n'a pas.
+544851	La Lune illuminait la pièce.
+545688	Nous n'avons plus été en contact depuis longtemps.
+546360	Le magasin n'est pas ouvert aujourd'hui.
+548603	En Tunisie tout le monde parle bien français.
+548807	Elle a d'excellentes manières.
+549054	Mon nom est Tamako, et vous ?
+549137	Qui aime les insectes ?
+549329	Tu dois quitter la maison à six heures.
+551480	Peux-tu m'accorder une faveur ?
+554837	Il est très amusant d'apprendre l'espéranto.
+554920	Laisse-moi te l'épeler.
+558129	Veuillez m'excuser, j'ai oublié de faire mes devoirs.
+564249	Ce projet pourrait ne pas être rentable.
+565985	Nous étions deux, mais n'avions qu'un cœur.
+566616	Je suis vraiment confus.
+567250	Le petit-déjeuner est-il prêt ?
+567257	Le bain est-il prêt ?
+571857	Pouvez-vous passer à vingt-et-une heures ?
+571867	Notre catalogue peut vous être envoyé sur demande.
+572162	Le village est isolé du reste du monde.
+572768	À ma surprise, elle était vivante.
+578037	Je peux le faire si vous m'en laissez l'occasion.
+578081	Le bébé pleure déjà depuis presque dix minutes.
+579780	Le livre est facile.
+584512	Il a encore plus de pommes.
+584740	Quelle jolie fleur.
+585478	Tu étais avec quelqu'un ?
+587745	Nous admirons la Lune pour sa lumière, alors que c'est le Soleil qui l'illumine de ses rayons.
+589209	Ce livre comptait de nombreuses pages.
+589767	Je ne comprends rien à son roman.
+591776	Je me demande si le niveau de la mer monte vraiment quand la glace du pôle nord dégèle.
+595635	Il ne nous a pas aidés à moitié.
+602117	Cherchons-le sur eBay.
+611120	L'homme seul est seul, parce qu'il craint les autres.
+613866	J'ai l'impression qu'il a plu toute la journée.
+617750	Aucune de mes deux sœurs n'est mariée.
+628954	Les moutons broutent de l'herbe dans le champ.
+631736	Un mauvais ouvrier se plaint de ses outils.
+651347	Tu peux facilement le reconnaître étant donné qu'il est très grand.
+655113	Troller est une art.
+655537	Je veux aller un jour à l'étranger.
+657681	Conduis plus lentement s'il te plaît.
+658779	Je suis épuisé d'avoir travaillé toute la journée.
+668069	C'est un honneur pour moi que d'attendre une jolie fille.
+672031	De nos jours, tout le monde regarde la télé passivement.
+679077	La pluie s'est soudainement mise à tomber.
+683252	Tu regardes cet arbre.
+690136	C'est vraiment un bon coup !
+693942	Salut, je suis Mike.
+698812	Le thé que nous avons pris là-bas était excellent.
+700769	Mort aux phrases insipides, aux exemples fades et autres tournures banales !
+711863	Elle a éteint la lumière afin de ne pas gaspiller l'électricité.
+728212	Une fois, Zhuangzi rêva d'être un papillon, mais quand il se réveilla, il ne fut pas sûr si c'était Zhuangzi qui avait rêvé d'être un papillon, ou si c'était un papillon qui maintenant rêvait d'être Zhuangzi.
+728249	Cette histoire est basée sur des faits réels.
+732598	Nous avons reçu leur faire-part de mariage.
+746160	N'ayez jamais peur de faire des erreurs.
+750739	"Vous êtes là," dit le steward.
+759062	C'est une bonne chose pour nous de comprendre d'autres cultures.
+763335	Ferdinand Magellan fut le premier homme à traverser à la voile tous les méridiens du monde, mais la seule raison qui le lui permit, c'est que Christophe Colomb avait choisi de le faire à la nage.
+764132	Le papier fut en premier lieu inventé en Chine.
+774316	Combien coûte une bière ?
+778399	Il a vécu seul dans la forêt.
+781899	Il est marié à une Américaine.
+788562	Il m'a fait attendre plus d'une heure.
+788586	J'aimerais ajouter une phrase mais je ne sais pas comment faire.
+788597	La pornographie infantile est illégale dans la plupart des pays mais Saeb veut que je trouve des phrases qui en parlent.
+792835	La fortune lui sourit.
+799113	De retour à Shanghai je me fais des bonnes pâtes de riz sautées à la chair de crabe.
+802317	Il est hors de question d'apprendre toutes ces peines par cœur.
+802786	Elle n'a pas peur de la mort.
+803957	La coutume souhaite que la mariée s'y conforme.
+805646	Il est comptable à la société.
+809418	Ce qui me tracassait le plus était d'avoir été abusé.
+809537	Si tu apprends à faire des tours de cartes tu seras toujours l'attraction de la soirée.
+809859	Je mis un enfant au monde avec elle.
+813521	Il n'y a aucun moyen d'atteindre l'île autre que le bateau.
+814841	Durant la fin du XXe siècle, la Yougoslavie était considérée comme un État voyou par les États-Unis.
+816435	Votre question ne concerne pas le sujet discuté.
+817105	Le souverain fut renversé et banni du pays.
+817425	Que veux-tu faire à l'avenir ?
+820401	Les gens disent que j'ai l'air presque aussi vieux que ma sœur.
+820419	Je t'envoie un cadeau d'anniversaire par le courrier aérien.
+821457	Si le temps était inversé, les gouttes de pluie remonteraient du sol et s'envoleraient vers les nuages.
+821470	Cela concerne tous les gens qui vivent ici.
+826767	Tu dois garder tes dents propres.
+827527	Il serait préférable que tu ne fumes pas pendant le service.
+829414	L'explosion a tué plusieurs passants.
+829784	La vue de l'or, la possession de l'or était devenue sa monomanie.
+833935	Garde cette information par-devers toi.
+835496	Voudriez-vous bien faire une photo pour nous ?
+835886	La compétition se termina en nul.
+837516	Dix ans c'est long.
+839544	Les êtres humains diffèrent des animaux en ce qu'ils peuvent penser et parler.
+840357	L'artisan promit de venir le jour suivant.
+840881	Comme elle était à l'étranger, elle téléphona fréquemment par Skype.
+841734	La formule politique de « la finlandisation », qui fut créée en Allemagne, avant que les études PISA et la musique humppa n'y contribuent à une popularité renouvelée de la Finlande, n'est normalement pas connotée positivement.
+843597	Ce livre-ci n'est pas aussi facile que celui-là.
+845375	Mon ami a péri d'une blessure.
+845598	Nous recherchons éperdument les preuves de notre propre existence.
+849498	Tu es un ami de Thomas, n'est-ce pas ?
+849505	Il me critiqua pour avoir négligé mon devoir.
+849538	Le bâtiment sur la colline est notre école.
+849654	La fête fut inaugurée par son discours.
+858502	La perte se monta à 2.000.000 $.
+859373	Il faut améliorer la gestion électronique des ressources.
+865468	Contacte-moi dès que tu arrives ici.
+866364	La femme n'a pas à être intelligente, au sens que nous donnons à ce mot : elle a à être experte en plaisirs charnels et en bons soins. Là se borne son rôle, alors qu'elle cohabite avec l'homme, et c'est pourquoi les idées d'émancipation dont on nous rebat actuellement les oreilles me semblent absurdes.
+868499	Je ne bois jamais de thé avec du citron.
+870177	Rien ne peut être préservé qui n'est bon.
+871960	Ce que le maire prétend est infondé et incendiaire.
+873336	Que Thomas soit amoureux de Catherine est un secret de polichinelle.
+874820	Pourquoi sont-ils ici ?
+876659	Le génie et la folie ne sont séparés que par le succès.
+876993	Je me rends au musée chaque fois que j'en ai l'occasion.
+879852	Elle embellissait en vieillissant.
+880845	Des promesses... toujours des promesses !
+882566	Il se leva et lui sourit.
+883806	Qu'est-ce là ?
+884259	Les données sont souvent inexactes.
+885736	Fin de la partie.
+888708	Je t'ai déjà dit de ne pas fumer dans ta chambre.
+888954	Ils sont tous irritables.
+889614	Le bambou plie sous le poids de la neige.
+891418	Il n'a fait aucune faute.
+891625	Avancez vers le fond, s'il vous plait.
+892355	Je suis toujours fou du tennis.
+892690	J'ai trouvé le film intéressant.
+893317	L'heure est arrêtée.
+895680	Je souhaite participer à la fête du premier novembre.
+896299	Il a détalé comme un lapin.
+898221	Je suis venu au Japon, non pour enseigner, mais pour écrire.
+900429	Quand un ennemi t'a fait du mal, offre une trompette à chacun de ses enfants.
+906574	C'est néanmoins une bonne phrase.
+907470	Il entrait au théâtre par la porte de sortie, et comme on s'en étonnait, il déclarait : « Je m'efforce de faire dans ma vie le contraire de tout le monde. »
+909792	Comme il a cherché à m'arnaquer, je voulais lui mettre une claque.
+913480	Il sait à peine parler anglais.
+914920	Les koalas sentent l'eucalyptus.
+917065	Tous les garçons de la classe travaillèrent dur.
+919158	N'as-tu pas de batteur chez toi ?
+921334	Il dit un mensonge.
+927265	Bien des gens attrapèrent des rats et les mangèrent.
+927426	Avez-vous un programme ?
+929005	Tu es tellement beau !
+931728	Un étudiant américain masculin sur cinq a déclaré boire plus de 10 verres d'alcool lors d'une journée.
+932028	Y a-t-il une boîte aux lettres près d'ici ?
+935739	Ses parents essayèrent de lui faire comprendre combien une bonne éducation est importante.
+935982	La situation est pire que ce que je pensais.
+936700	Aimez-vous être seul ?
+936867	Il est encore trop tôt pour en parler.
+942090	Le plaisir fut bref.
+945554	Enfant, notre maison me paraissait plus grande que maintenant.
+950034	Ne te cure pas le nez !
+952786	Je ne savais que faire en premier.
+955872	Le mur fait deux mètres d'épaisseur.
+958354	Qu'est-ce que ça a à voir avec moi ?
+960255	Depuis qu'elle porte un appareil dentaire, je l'ai à peine vue sourire.
+961243	La forme de cette plaie est très significative d'une blessure causée par une lame émoussée.
+962674	À cette époque, Athènes dominait les autres cités grecques.
+963618	Les jeunes s'adaptent facilement.
+964515	Au XVe siècle, le Portugal était une grande puissance coloniale.
+965683	Donne-moi un anneau si tu découvres quelque chose.
+976889	Je me suis décidé à rendre tout l'argent que j'ai fauché.
+979855	Oh tu sais, les gens disent que je suis un acteur, mais j'ai joué tout au plus des rôles de figurants, rien de bien reluisant.
+979863	Quelle heure est-il à Tokyo ?
+982400	J'ai l'intention de rester ici jusqu'à ce que mon argent s'épuise.
+984528	Tu es un de ces idiots !
+984642	Elle a laissé son enfant aux bons soins de sa tante.
+987327	Et ton fils, il conduit, lui ?
+991618	Les vaches se mouvaient très lentement à travers les grandes herbes vertes.
+998633	Forgeons le glaive en araire !
+998658	Je ne suis pas capable de soulever cette pierre.
+998671	Je suis claqué.
+999094	Elle parle russe.
+1000061	La rime est la parure de la poésie.
+1007504	Ce CD est à mon fils.
+1011435	Ça ne me concerne pas !
+1013089	Je possède quelques très vieux timbres.
+1014018	Montrer les autres du doigt est impoli.
+1016929	Les manifestants brandissaient leurs drapeaux.
+1017191	Le succès encouragea l'auteur à un nouvel ouvrage.
+1018571	Le fait que la plupart des hommes appartiennent à la fois à deux collectivités tout au moins, dont l'une est d'origine nationale et l'autre d'origine économique, est la cause qui jette tant de trouble et de complexité dans les rapports sociaux à presque toutes les périodes de l'humanité.
+1023073	Chérie, offre du café aux invités.
+1023663	L'instant zéro de l'univers est une aporie.
+1031373	Tu as encore bien des traces d'alcool.
+1034801	Ce serait mieux que vous vous reposiez ici.
+1035863	De nombreux grands penseurs qui étaient inconnus de leur vivant, acquirent la renommée après leur mort.
+1037774	Quand cela te convient-il ?
+1039455	L'anglais a emprunté de nombreux mots au français.
+1041852	En ouvrant le réfrigérateur, je me suis aperçu que la viande s'était avariée.
+1041978	Ils exprimèrent leurs réserves.
+1045938	Vos parents étaient-ils à la maison ?
+1048028	Elle se calma avant de se mettre à parler.
+1049570	Veuillez accrocher votre manteau dans l'antichambre, s'il vous plait.
+1049590	C'est un livre intéressant.
+1049638	Es-tu déjà allé à l'étranger ?
+1049814	Il a crié très fort en demandant de l'aide.
+1049851	Il n'y a presque plus de lait dans le verre.
+1053557	Avez-vous trouvé ce livre intéressant ?
+1055159	Ce porc est un peu avarié.
+1056652	Il fait un peu frisquet ce matin.
+1057293	La plupart des gens utilisent leur jeunesse à ruiner leur vieillesse.
+1058187	Ce Scapin émérite était attaché à son maître comme à un être supérieur.
+1058206	Les émeutiers lancèrent des pavés.
+1058616	Que devrais-je faire pour arrêter un hoquet ?
+1060659	On lui a demandé de siéger au comité.
+1070978	Que font-elles de tout leur temps libre ?
+1076469	L'attaque est la meilleure défense.
+1076732	Vous êtes bonne cuisinière, non ?
+1077987	C'était une pleine lune qu'on voyait ce soir-là.
+1078217	Le monde a-t-il besoin d'un nouvel ordre économique ?
+1078642	J'étais sur le point de te chercher.
+1080618	Où avez-vous acheté ce livre ?
+1081026	« Remonte de la zone de commentaires, je me sens seule et j'ai peur ! » cria Marie angoissée.
+1081812	Une approche purement policière du problème ne permet pas de le résoudre.
+1081899	Il s'est vu mettre à la porte après vingt ans de fidèle collaboration.
+1082615	Je ne les ai pas vus depuis longtemps.
+1082769	Vous voulez boire quelque chose ?
+1082841	Mon père a fait une étagère pour moi.
+1082906	Tout le monde est ton ami si tu lui paies ses frais d'inscription au congrès.
+1082915	Un jour ce petit garçon déménagea dans un autre village avec sa famille et il emmena Tango avec lui.
+1083210	Il viendra dans l'après-midi.
+1083267	Il n'y avait presque plus de couleur sur son visage.
+1097874	L'oisiveté aussi fatigue les gens.
+1097883	Le Président Lincoln fut assassiné d'une balle dans la tête, juste derrière l'oreille gauche.
+1099245	Je m'oppose à ce que tu ailles seule en Europe.
+1099630	Je peux comprendre ton point de vue.
+1099864	Je ne suis pas en situation de discuter de ça.
+1100185	Hier, nos poules ont pondu de nombreux œufs.
+1100383	Vous devriez aller chez un dentiste.
+1100405	Tu devrais t'assurer que tu fais un nœud de chaise.
+1101474	Nous voyons ce que nous voulons voir.
+1102202	Après dîner, amène ta guitare et nous chanterons.
+1102595	En France, on consomme beaucoup de vin.
+1107750	Pierrot est fou.
+1110216	N'importe quelle chanson chantée en français me met dans une humeur libidineuse.
+1115551	Pourriez-vous me dire ce qui se passe ?
+1117740	Elle sait chanter mieux que n'importe qui dans sa classe.
+1118097	Je l'avais rencontré à de nombreuses reprises auparavant.
+1118941	Lorsqu'il s'est arrêté de courir, il était satisfait.
+1119668	Elle le loua pour son honnêteté.
+1121270	Chacun de ces étudiants a sa propre opinion.
+1121560	Je fais mes ablutions dans les toilettes.
+1122796	Quant à toi, je l'ignore, mais pour moi c'est vraiment très important.
+1124883	Sa taille mesure 24 pouces.
+1132271	N'importe qui peut le faire s'il essaie.
+1132839	Nous avons trouvé une anomalie.
+1134517	Viens voir ça !
+1134701	Elle tenait fermement mon bras.
+1136805	Je n'aime pas cette chemise, montrez-moi en une autre.
+1137238	Elle pouvait sentir ses genoux trembler.
+1138256	Il a échoué à ses examens, car il n'avait pas suffisamment étudié.
+1138884	D’où venaient-ils ? Du lieu le plus prochain.
+1140216	Après un peu de congés, je prévois de partir pour une nouvelle tournée de concerts.
+1140486	J'aimerais te présenter à ma femme.
+1140539	Vivre avec lui ne s'avéra pas si facile.
+1141341	Si on ne saisit pas l'occasion tout de suite, elle ne se représente pas.
+1141435	Tout dépend de la façon dont on le dit.
+1141488	Oui, la soirée est si belle !
+1141807	Mais pourquoi lui cacher votre amour ?
+1141998	Tu sais nager, mais moi, non.
+1142787	Vous devez me pardonner.
+1147054	C'est son truc spécial.
+1147376	Vous ne pouvez pas compter sur l'aide de Tom.
+1148929	Sois ponctuel à midi.
+1148933	Où es-tu hébergé ?
+1152427	La Wallonie est un beau pays.
+1156131	Tom ne fait que ce qu'il veut.
+1156787	Vous trouverez le magasin entre la banque et l'école.
+1157031	Je n'en vois pas de cause.
+1157341	On ne peut le nier.
+1157345	Si tu ne t'y opposes pas.
+1157476	J'ai trouvé !
+1158140	Le sommet de la montagne est de 2000 mètres au-dessus du niveau de la mer.
+1158143	Pourquoi l'hélicoptère survole-t-il la ville ?
+1159406	Où avez-vous mis ma plume ?
+1159573	Êtes-vous venue avant-hier ?
+1165464	Comment avez-vous trouvé ma maison?
+1168097	Nous allons sous peu commencer le travail.
+1168552	On peut bien essayer, non ?
+1170564	Quand la liberté rentrera, je rentrerai.
+1171306	Nous ne disposons pas de suffisamment de temps.
+1172359	Nous espérons que Tom restera quelques semaines.
+1172360	Je suis sûr qu’il réussira le prochain examen.
+1173451	Tom regarda l'homme de grande taille en le soupçonnant.
+1174482	Cette montagne est cinq fois plus haute que celle-ci.
+1174499	Sa fille aînée est mariée.
+1175529	Baisse un peu la télévision, s'il te plait.
+1175563	Comme ma mère était malade, je n'ai pas pu me rendre au concert.
+1182247	Lors de notre premier rendez-vous, il a sorti son portable et commencé à écrire des SMS. Je pouvais à peine le croire !
+1182307	Les nouveaux arrivants cultivèrent l'immensité sauvage.
+1183686	Dans les temps anciens, tous les livres étaient copiés à la main.
+1185582	Est-ce là, la clef que tu cherches ?
+1187089	Il est arrivé sain et sauf.
+1187288	Un ronin ne jouit peut-être pas du statut d'un daimyo, mais il jouit de la liberté que ce dernier n'a peut-être jamais.
+1188224	Nous fûmes émerveillés par l'éloquence du petit garçon.
+1189376	Chaque religion interdit le meurtre.
+1189592	Ma femme s'est bien occupée du chien.
+1189667	Mon heure n'est pas encore arrivée.
+1190518	La nourriture est un carburant pour le corps.
+1190547	Oui, toute la vie est un songe ; et les songes eux-mêmes, que sont-ils ? Songe !
+1194639	Je n'aime pas petit-déjeuner au lit parce que les miettes piquent.
+1196778	On peut compter sur lui.
+1198814	Il se tenait là les yeux fermés.
+1198827	Parler au sujet de la religion est une chose délicate.
+1203003	Il l'a obligée à s'asseoir.
+1204179	Seigneur, écoute ma prière !
+1206174	Dans sa chambre est accrochée une nature morte d'un peintre néerlandais.
+1208753	Elle a les cheveux emmêles.
+1210445	J'ai la mauvaise habitude de me ronger les ongles.
+1211131	Un des rois d'Angleterre a abdiqué pour épouser une roturière.
+1224251	Ton raisonnement n'est pas très cohérent.
+1224285	J'espère que nous nous verrons bientôt !
+1228060	Ton voyage commence ici.
+1238327	Bradford est prétendument la ville la plus laide de Grande-Bretagne.
+1242793	La photo de mon grand-père est sur le mur.
+1243697	N'oublie pas tes trucs.
+1251928	Je peux enseigner l'anglais.
+1254330	Je devrais penser que tu as raison.
+1255664	On ne peut pas se garer dans cette rue.
+1259591	Puis-je consommer de l'alcool ?
+1269205	Tu es sans cœur, aujourd'hui.
+1270610	Elle s'est habillée et est allée dehors.
+1271750	Brisez la vitre en cas d'urgence.
+1275796	Nous travaillons le jour et nous reposons la nuit.
+1276216	Remettez-nous vos papiers.
+1280791	Il yoyotte un peu de la touffe.
+1283132	Il n'est pas très courageux.
+1290178	Il habite à l'étage au-dessus du mien.
+1302953	Ça tu peux le faire avaler à quelqu'un d'autre !
+1303162	Il y a des moments où une rose est plus importante qu'un morceau de pain.
+1306527	Qu’est-ce qu’il y a dans son havresac ?
+1308919	De la merde sur ton boomerang se retrouvera dans ta figure.
+1309033	Quand êtes-vous arrivées ? Êtes-vous arrivées aujourd'hui ?
+1314786	Le train Skyliner de la compagnie Keisei vous conduira de l'aéroport à la gare d'Ueno en une heure et quart.
+1317044	Il prononçait un discours, mais il s'arrêta brusquement de parler lorsqu'il entendit un bruit étrange.
+1317066	Vous pouvez prendre le livre.
+1317936	Avez-vous un tire-bouchon pour déboucher la bouteille ?
+1324397	Elle l'a largué.
+1326670	J'ai presque fait une crise cardiaque.
+1330324	Nous avons tenu une réunion secrète.
+1330390	Lève la main si tu comprends.
+1330430	Êtes-vous jamais passé à la télévision ?
+1330776	Vous me manquez lorsque vous n'êtes pas là.
+1334630	Tout le monde a ses secrets.
+1335169	Il semble que je vais avoir une journée difficile.
+1337183	Le temps est devenu beaucoup plus chaud.
+1337940	Les livres sont les enfants de notre esprit.
+1337951	Le plus grand ouvrier de la nature est le temps.
+1339219	Prévois-tu de te rendre outre-mer ?
+1339368	Il m'a envoyé une carte d'anniversaire.
+1339575	Mon collège comporte un dortoir.
+1340874	Je peux voir un bateau au loin.
+1342205	Peut-être as-tu finalement raison.
+1348582	Où devrais-je mettre mes bagages ?
+1350808	Le temps est aujourd'hui extrêmement beau.
+1353114	Pourriez-vous prendre contact avec lui ?
+1354472	Soit ce projet sera un succès formidable, soit un coup d'épée dans l'eau, sûrement rien entre les deux.
+1356329	Il trouva la boîte sous la table.
+1357206	Il avait marché pieds nus sur une punaise, mais n'en a rien laissé paraître.
+1357924	Ma mère est à l'hôpital, en ce moment.
+1357931	Elle l'a accompagné au piano.
+1358889	Comment aimeriez-vous qu'on vous appelle ?
+1358993	Vous pouvez dire tout ce que vous voulez.
+1367161	C'est le Chopin de notre époque.
+1367473	Je déjeune tous les jours.
+1367997	Elle lui demanda de lui donner de l'argent.
+1368716	Ces plantations empiéteraient sur la servitude de halage.
+1368925	Elle lui demanda s'il savait où je vivais.
+1368995	J'en sais la raison, mais je ne peux pas te la dire.
+1369226	Je pense qu'il est temps pour moi de faire l'acquisition d'une maison.
+1369583	C'est ma fille.
+1369590	Ce type de livre devrait être à sa portée.
+1370652	Elle l'a persuadé d'accepter le pot-de-vin.
+1386253	Vos chaussures ont besoin d'être réparées.
+1387504	Résiste à la résistance !
+1387654	Ouah, quel gros coucou ! Oui, c'est un coucou de grand-père.
+1388637	C'est la terre de mes ancêtres que tu foules de tes pieds !
+1389506	Au premier jour des soldes, la cohue habituelle règne aux tables des bonnes affaires.
+1389917	Je n'aurais pas dû boire cette dernière bouteille de bière.
+1392217	Elle l'a informé de la date de la prochaine réunion.
+1392366	Pourrais-tu me dire à nouveau qui est ton père ?
+1393035	Elle fit clairement comprendre qu'elle voulait aller à la fac.
+1394724	Je ne sais pas où je suis.
+1398850	J'ai quelque chose à te dire. Je suis ton frère.
+1402942	Je ne peux pas vous dire à quel point je suis heureux que vous soyez venu nous rendre visite.
+1405655	Un grain de sel rend le repas plus savoureux.
+1405770	Ne prenez pas la peine de me réveiller à quatre heures du matin. Je ne prévois pas d'aller pêcher demain.
+1405791	Je veux manger quelque chose de coréen.
+1408843	Ôtez votre casquette.
+1408869	Il me fit attendre.
+1409712	Puisqu'il est écrit en anglais facile, il est propice pour les débutants.
+1410220	Descendons en flânant jusqu'à la rivière.
+1410445	Ils sont tous deux bons.
+1410566	Il a écrit le rapport.
+1413206	Si on raconte un mensonge suffisamment de fois, on commence à le croire.
+1419163	Mon chat venait de sous la table.
+1420222	Ce genre de choses n'arrivent qu'en Suède.
+1420747	Il te donnera un bon conseil en ce qui concerne cette affaire.
+1424635	Les sauterelles venaient par milliers.
+1430418	Quelle que soit la langue que vous étudiez, ça prend du temps.
+1431631	Le sociologue a l'habitude de se gratter l'épaule.
+1432600	Elle écrivit le mot.
+1433021	Hier, il n'y avait même pas un enfant dans le parc.
+1436899	La chose la plus difficile dans la vie est de savoir quels ponts traverser et lesquels brûler.
+1438667	Le poète a donné une rose à la fille.
+1445695	Il en est bien capable, le bougre !
+1446034	Le coût de la vie a augmenté de manière drastique.
+1446410	T'es-tu déjà remis de ton rhume ?
+1446421	Je ne veux pas non plus le faire à nouveau.
+1450156	Je ne peux pas supporter ces maux d'estomac.
+1450325	Il s'est planté.
+1451989	Cette chanson me rappelle chez moi.
+1452183	Enfin, je rattrapai mes amies.
+1460697	Vous devriez vous détendre un peu.
+1461638	Si j'étais vous, je lui demanderais.
+1462751	Comme il se sentait malade, il resta chez lui plutôt que d'aller à l'école.
+1462790	Vous feriez mieux de vous lever tôt.
+1463877	L'ail et l'oignon constituent de bons remèdes contre le rhume.
+1463920	Je trouve superflu d'en parler.
+1464851	Le train s'arrêta après une embardée.
+1464868	Ne manquez pas cette exceptionnelle occasion.
+1466164	Rien ne dure pour l'éternité.
+1467335	Excuse-moi, je n'ai pas de montre et je ne peux pas te donner l'heure.
+1468061	Avez-vous accompagné Pierre à Munich ?
+1468131	Tom a craché un peu de sang.
+1471884	Je suis citoyenne romaine.
+1474770	Pensez-vous qu'il soit étrange qu'il ne soit pas là ?
+1475321	Le chemin, qui traverse la montagne, est étroit et abrupt.
+1476631	Quelle remarquable interprétation !
+1477803	Nous pouvons dès lors partir.
+1480464	Nous sommes parvenus à garder l'église au milieu du village.
+1489257	C'est terrible.
+1490862	Je ne retrouve pas mes gants.
+1496294	Un chien a des maîtres ; un chat, des serviteurs.
+1503242	Donnez-moi un exemple.
+1504047	Bien que Tom soit présent, je reste.
+1509656	Ma mère est en train de faire un gâteau à mon père.
+1509907	Il est en train de dessiner une pomme.
+1510662	N'oublie pas, s'il te plait, de timbrer les lettres que je t'ai données à poster.
+1514209	Il rassembla le courage de décliner la proposition.
+1517269	Le monde n'est déjà pas si mal, certes, mais à ton arrivée, il était meilleur.
+1517327	Je ne veux pas te dévoiler la fin à l'avance.
+1520364	Petit Vénusien demande poliment pour aller aux toilettes.
+1521118	Ton sort est entre mes mains.
+1529036	Jeanne aussi joue au tennis.
+1529087	Je ne puis m'empêcher de le soupçonner de mensonge.
+1532497	Je ne m'attendais pas à ce que ce soit aussi gros.
+1532737	J'ai besoin d'un nouveau balai, celui-ci est foutu.
+1534167	N'est-il pas un jeune étudiant américain ?
+1537892	Je devrais essayer ce rasoir électrique avant de l'acheter.
+1538045	C'est bon. Je me casse.
+1548558	La vérité à demi ne vaut rien, il la faut toujours entière.
+1551650	Ne dites jamais du mal de vous ; vos amis en diront toujours assez.
+1554124	Disposes-tu d'un permis de pêche ?
+1557398	Il y a longtemps, les gens voyageaient à pied.
+1557966	Quelle pointure fais-tu ?
+1562600	Les bactéries sont partout.
+1564151	Devinez ce qui m'est arrivé !
+1567606	Il ne sied pas de prêcher parmi les corbeaux.
+1570951	Antoine et Marie se connaissent.
+1574662	Les disputes conduisent à la discorde.
+1575992	Le vol céleste des hirondelles?
+1576772	Ne le touche pas. Laisse-le comme il est.
+1577115	Jane a sauté les questions auxquelles elle ne savait pas répondre.
+1577148	J'ai des bleus sur les deux jambes.
+1580134	L'hiver est terminé. Le printemps est là.
+1585172	C'est assez courant en Amérique du Nord qu'une maison ait un garage pour une ou deux voitures.
+1589861	Il faudra me passer sur le corps !
+1589979	Je me suis blessé pendant le cours de sport.
+1590000	Il ressemble à son frère comme deux gouttes d'eau.
+1590137	Les circonstances ne m'ont pas permis de vous aider.
+1591380	Mon grand-père adorait lire.
+1592816	As-tu fini de parler ?
+1598021	Le monde, là, au dehors, me fait peur.
+1600989	Des places sont-elles encore disponibles ?
+1605515	Tu m'aides à faire mes valises ?
+1610731	Il est pile cinq heures.
+1623446	Qui se soucie de quand elle va se marier ?
+1628694	Quelqu'un peut-il me conseiller un bon dictionnaire d'allemand unilingue ?
+1635435	S'il te plait, laisse-moi venir avec toi.
+1639052	T'a-t-on jamais embrassée auparavant ?
+1640539	Je pouvais à peine tenir debout.
+1650710	Au lieu de prendre des notes, j'ai passé tout le cours à gribouiller.
+1652421	Il te faut appuyer sur le bouton.
+1653353	Elles firent du bon boulot.
+1654866	Je ne peux pas admettre ma défaite.
+1657828	Sait-on jamais ? Ça se révélera peut-être utile.
+1660228	Vous devriez vous tenir au loin d'une mauvaise compagnie.
+1669429	Il s'est enfui avec une autre femme.
+1672994	Il pensait que ce serait intéressant et amusant.
+1678976	Les exercices lui ont fait du bien.
+1680944	Tom prend un bain chaque soir après le souper.
+1684664	Je commençais à m'inquiéter à votre sujet.
+1688187	Elle a eu confiance en toi.
+1696346	Ils étaient aux antipodes l'un de l'autre : l'un était honnête et fiable tandis que l'autre était imprévisible et irresponsable.
+1701310	Assurez-vous qu'il est bien lubrifié.
+1701744	Regarde attentivement le plan de la ville.
+1703571	Sais-tu, il y a encore un point que je voulais discuter avec toi : comment pouvons-nous insuffler un nouvel élan à notre vie amoureuse ?
+1704116	J'ai la mienne alors va te faire foutre.
+1711401	Il est mort quelques jours plus tard.
+1712768	Que je suis heureux aujourd'hui !
+1723021	Ouvre encore la gueule et je te cogne !
+1723022	J'étais en retard pour le rendez-vous.
+1723087	Juste à ce moment-là, j'entendis des pas dans la cage d'escalier.
+1724272	Elle s'est fait prendre la main dans le sac.
+1724277	Il s'est fait prendre en flagrant délit.
+1724519	Il ne boit pas de café.
+1724646	Dis-le tout de même !
+1726490	Il s'est proposé de sauter dans l'eau malgré le froid.
+1736411	Il a vu de meilleurs jours.
+1738182	Vous êtes tous des poules mouillées.
+1744262	Quand l'eau refroidit, elle peut devenir de la neige ou de la glace.
+1745418	On n'est pas là pour être ici !
+1749032	Il aime vraiment beaucoup la musique.
+1759973	Usain Bolt est l'homme le plus rapide au monde.
+1776147	Je sais très peu de choses de lui.
+1776152	Elle ne portait rien d'autre que ses sous-vêtements.
+1778381	Elle me demanda de le faire.
+1780228	L'examen a été extrêmement difficile, cette fois-ci.
+1783830	Il est ton ami.
+1784760	Nous avons monté des escaliers.
+1786424	Je ne sais pas exactement ce qui se passe.
+1787536	Il n'est pas nécessaire qu'elle s'y rende en personne.
+1788178	Comment nous a-t-il trouvées ?
+1797002	Elle a exprimé l'espoir que tous travaillent ardemment à ce projet unique.
+1801270	Combien t'as de balances ?
+1802677	Mon père ne dit rien.
+1803459	Devinez ce que je tiens dans la main !
+1803630	Comment vous décririez-vous ?
+1804894	La nuit dernière, j'étais raide bourrée et je me suis endormie sans prendre de bain.
+1805264	J'ai promis de ne rien lui dire.
+1805289	Peu de gens savent comment retourner l'arme d'un ennemi contre celui-ci.
+1805354	Monsieur Hobson a fermé le magasin et est rentré à la maison.
+1813109	Je crois qu'il est temps pour moi d'éteindre la télé.
+1814252	Ton ami s'est-il toujours bien conduit ?
+1815332	J'hésitai à aller avec lui au cinéma.
+1815948	Nous sommes désormais amies.
+1818402	Je veux t'entendre jouer du piano.
+1820427	Ils en veulent davantage.
+1821647	Elle a surmonté le choc.
+1821913	Veuillez prendre note de mon adresse.
+1830275	Tu es désormais en sécurité.
+1833438	Il dit qu'il était pauvre.
+1833571	Il parla de musique.
+1835325	À la prochaine intersection, prenez à droite.
+1835700	Et si on se faisait une petite bouffe ?
+1845679	Vous l'avez rendu possible.
+1845778	Il n'y a pas de remède à la schizophrénie.
+1845881	Ne soyez pas alarmé.
+1845946	Donnez-moi une seconde !
+1849875	Sommes-nous prêts à y aller ?
+1853265	Ne dites rien à mon petit copain !
+1858271	Je suis désolé de t'avoir blessé.
+1859340	Traiter avec succès les situations de compétition - voilà une partie importante de la vie.
+1870045	J'ai fait des choses dont je ne suis pas fier.
+1871281	Le jour n'est pas plus brillant que vos yeux d'azur.
+1873699	Es-tu d'accord avec moi?
+1876934	Pourquoi tu ne réponds pas ?
+1889683	Il aime jouer aux cartes.
+1890073	Peuvent-elles nous voir ?
+1893172	Je ne les donne pas.
+1900937	La robe de Marie ne lui va pas très bien.
+1901035	C'est trop dangereux !
+1901114	Tout le monde l'a remarqué.
+1902555	Spoutnik fut lancé le quatre octobre dix-neuf-cent-cinquante-sept.
+1902940	A-t-il utilisé une capote ?
+1911533	J'ai un voisin de gauche.
+1913952	Il retira sa chemise.
+1915316	Je ne les bride pas.
+1919300	Il saisit son bras.
+1924186	Les fleurs n'ont pas l'air heureuses. J'aimerais les arroser, y a-t-il un arrosoir par ici ?
+1925009	C'est la chose la plus dingue que j'ai jamais vue.
+1925074	Elle quitta la ferme pour se rendre à la ville.
+1925289	Je ne continue pas leur travail.
+1925660	Je ne leur demande pas pardon.
+1925666	Elle m'a confectionné des biscuits.
+1925974	Ton frère ne l'achètera pas.
+1927614	Deux personnes disent qu'elles auraient entendu une détonation.
+1936650	Tu ferais mieux de laisser tomber ça !
+1942291	Je ne prie pas pour eux.
+1942346	Je ne me moque pas d’eux.
+1942658	Je ne carde pas votre laine.
+1945368	L'as-tu emmené chez toi ?
+1945395	Que diable en sait-il ?
+1947411	Ôte tes vêtements !
+1947514	Elle est trop vieille pour toi.
+1949395	Il faisait assez frais.
+1949460	Ils se ressemblent l'un l'autre à tous points de vue.
+1950464	Vous êtes un amour !
+1950480	Elle m'a dit de la rencontrer chez elle.
+1954305	Tu ne peux pas simplement faire irruption ici chaque fois que ça te chante.
+1954337	Vous ne pouvez pas imaginer ce que ma vie a été depuis que vous êtes parties.
+1966309	J'ai cédé mon siège à une vieille dame.
+1967851	Je ne vous adresse pas la parole.
+1968915	Les enfants doivent bouger beaucoup et manger peu de sucreries, sinon, ils deviennent obèses.
+1970578	Il me faut trouver de nouvelles amies.
+1973763	Je vous ai vue dans le parc, hier.
+1974657	Il a toujours dit ne pas avoir besoin d'aide, parce qu'il se considérait très habile.
+1974934	« Mes amis vont apprendre la langue nyamwezi. Et les vôtres ? » « Non, ils ne l'apprendront pas. »
+1975222	Je ne colle rien.
+1975556	Je n’enterre personne.
+1977280	Il dormit dans la voiture.
+1977320	Elle a porté un costume de pirate pour Halloween.
+1978174	Peut-être est-il maladroit dans ses paroles et qu'il manque de finesse, mais je l'apprécie d'autant plus pour ça.
+1978290	Je te les ai remis en mains propres.
+1978541	Nous sommes allées effectuer une promenade dehors après le petit-déjeuner.
+1978838	Sur Tatoeba, les locuteurs d'isolats tels que le hongrois ou le finnois sont sur-représentés par rapport à leurs populations, du fait de leur plus grand intérêt pour les langues.
+1978903	Nous avons été choquées à la nouvelle de sa mort.
+1980071	J'ai pris un antalgique pour mon mal de tête.
+1982153	Un enfant, vous le savez bien, peut certes avoir dans le cœur des pensées qu'il peut dévoiler à son père, mais pas à un tiers.
+1982925	L'inconséquence est la maladie la plus grave.
+1984238	Je n'arrive pas à croire que votre mère vous aie laissées vous en aller.
+1989547	Ne laisse pas cette information fuiter.
+1991077	Cela a certes une certaine logique, voire une logique certaine.
+1995306	J'ai la tête pleine.
+1996438	Ne soyez pas mesquin !
+1997321	Elle lui a donné un coup de pied dans les parties.
+2005316	Je n'oublierai jamais le jour où je l'ai rencontré pour la première fois.
+2005555	Il lui faut parler l'anglais.
+2018278	Peut-être voudrais-tu y réfléchir à nouveau.
+2019624	Ce n'est pas comme ça que je veux que les choses soient.
+2020386	Je suis plus que content.
+2022242	Je ne le fais que pour votre bien.
+2026312	Ils firent quelques pas en avant.
+2026669	Je te dirai tout ce que tu veux savoir.
+2026736	Je veux savoir où ils ont dissimulé l'argent.
+2027115	Je veux juste m'assurer que ce n'est pas du poison.
+2027676	Ne crains pas davantage l'aboiement du patron que tous les déchaînements des délégués syndicaux.
+2030989	Ici, il n'y a pas de vent.
+2031051	Il est difficile de comprendre pourquoi vous voulez vous en aller.
+2036099	Tiens-toi là où tu es !
+2036304	Combien en avez-vous obtenu ?
+2039302	L'institution publique n'existe plus, et ne peut plus exister, parce qu'où il n'y a plus de patrie, il ne peut plus y avoir de citoyens. Ces deux mots patrie et citoyen doivent être effacés des langues modernes.
+2039363	Jusqu'à hier, je n'avais pas appris la vérité.
+2043267	L'ourdou est sa langue maternelle.
+2045967	Tom ne pourra pas être là ce soir.
+2046056	Je ne veux faire de mal à personne.
+2046180	Tom m'a montré comment faire.
+2048532	Nous essayerons d'être plus prudentes la prochaine fois.
+2048694	Bill n'oublie jamais d'envoyer un cadeau d'anniversaire à sa mère.
+2049135	Tu enverras le livre par la poste.
+2054819	Je ne peux pas t'autoriser à entrer là.
+2056971	Kim sourit gentiment.
+2058606	Je t'enverrai une photo de ma famille.
+2060372	Il faut que j'apprenne de nouvelles chansons.
+2060979	Nous devrions envoyer Jordan à l'hôpital.
+2061291	Vous ne pouvez pas enterrer la vérité.
+2061647	Les petits-enfants prouvent qu'il n'est pas inutile d'avoir des enfants.
+2061703	Tu devrais te présenter.
+2067531	Bonjour l'ambiance !
+2070229	Elle avait froid.
+2070724	Vous n'étiez pas en colère.
+2070758	J'ai quelque chose à échanger.
+2070946	Il n'a pas faim.
+2070988	Tu auras faim.
+2071126	Elle n'a pas soif.
+2071351	Je pensais que tu serais d'accord.
+2071366	Tom n'a pas raison.
+2073268	Je n'avais pas de vertiges.
+2073385	Tu n'as pas de vertiges.
+2074167	Quelle est votre plus grande crainte ?
+2076320	Elles font la sourde oreille.
+2076445	Tom fera la sourde oreille.
+2077132	Elles ont été déçues.
+2078228	Marie est jalouse.
+2080625	J'ai assez d'argent pour procéder à son acquisition.
+2091411	Je n'abîmerai pas mes vêtements.
+2092681	Quiconque se trouvait-il dans la pièce ?
+2095110	Tout le monde a commencé à partir.
+2100360	Nous abrutissons les étudiants.
+2101565	Tu affameras les chiens.
+2101584	Nous affamerons les chiens.
+2101666	Elles aidaient les pauvres.
+2103820	Il vit dans une banlieue de Londres.
+2109541	Nous nous entretînmes.
+2110316	Je risque d'arriver en retard au travail.
+2112761	Ils achèteront du pain.
+2126296	J'ai allumé des bougies dans ma chambre.
+2135732	Je te suis reconnaissant de t'arrêter.
+2153904	L'avion est sur le point de décoller.
+2156293	Bruxelles-Congrès est désormais une gare fantôme.
+2159707	J'ai pensé que la manche était terminée.
+2161211	Je lui ai écrit une lettre pour lui demander de bientôt rentrer à la maison.
+2162146	Qu'avez-vous pensé de ce film ?
+2164787	C'est juste faux.
+2164824	Je suis intéressée par les choses métaphysiques.
+2167656	Nous voulons voter.
+2173404	Ça a le même goût que le poulet.
+2180591	J'y réfléchirai.
+2196274	Il porte des lunettes de créateur.
+2200711	Tu dois avoir des femmes qui se pendent à ton cou tout le temps.
+2201998	J’avais des bouffées de chaleur.
+2213109	Ce nouveau supermarché a ouvert le mois dernier.
+2215274	Pourquoi n'allez-vous pas discuter avec lui ?
+2216344	Nous sommes allés voir un film.
+2217967	Je ne me rappelle rien d'autre.
+2217980	Je ne me rappelle pas ça du tout.
+2218628	Arrêtez de draguer ma sœur !
+2218634	Il lui a enroulé les bras autour de la taille.
+2218652	Tu es trop lente.
+2218674	Les rideaux sont tirés.
+2219187	Ça dépend de la taille du fauteuil.
+2219513	Elle est amoureuse de moi.
+2226697	Tu es très contrarié.
+2230784	Tu t’arrêtais.
+2231435	J’ai boycotté les marchandises de ce pays.
+2234606	Tu ébréchais les tasses.
+2253652	J'aimerais que tu rencontres ma sœur.
+2254276	Il a besoin d'être au centre de l'attention.
+2261682	Ta chatte est en surpoids.
+2261745	Je peux à peine payer mon loyer.
+2269985	Je l'ai cuite pour vous.
+2271429	Apprécies-tu l'opéra français ?
+2274990	Ajustez votre cravate !
+2275102	On ne vous virera pas.
+2283017	Cette maison est en désespérance.
+2283274	Tous mes amis se marient.
+2284226	Tu ne me prêtes pas attention.
+2284688	N'ai-je pas mentionné cela ?
+2284739	Il aime Bob plus que Tom.
+2284780	Marie est aussi grande que Tom.
+2286333	Cela fait une heure qu'elle discute au téléphone.
+2286570	N'oubliez jamais cela !
+2288629	Vous n'avez pas l'air aussi bonne que ça.
+2288750	Tu n'es pas obligé de présenter des excuses.
+2288791	Tu n'iras pas, si ?
+2288799	Tu travaillais, hier après-midi, n'est-ce pas ?
+2288857	Vous avez été blessés, n'est-ce pas ?
+2288868	Vous aviez chaud, n'est-ce pas ?
+2288871	Vous étiez très désirable, n'est-ce pas ?
+2289715	Ne me dis pas ! Laisse-moi deviner !
+2291485	Je ne me suis pas inscrit pour ça.
+2291817	Je ne t'ai pas demandé ça.
+2295918	Où est née Marie ?
+2296075	Il peut skier aussi bien que son frère.
+2298434	À quelle heure part la navette pour l'aéroport ?
+2299346	Dis-leur de me le donner.

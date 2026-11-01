@@ -1,8 +1,8 @@
 // @vitest-environment node
 /**
  * Tier gate and roster (plan §5.4). Works out the tier each language has earned from what
- * exists: page copy, cheat sheets, tutor and typing-test pages, word list, spell check and
- * Roman evaluation results. Fails when a language.json claims a higher tier, and when
+ * exists: page copy, cheat sheets, tutor and typing-test pages, word list, spell check, smart
+ * accents (Latin scripts) and Roman evaluation results. Fails when a language.json claims a higher tier, and when
  * LANGUAGES.md (the roster) is out of date:
  *
  *   pnpm roster    # rewrite LANGUAGES.md
@@ -12,7 +12,7 @@ import { join } from "node:path";
 import { LANGUAGES, getLayout, type Language, type Tier } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
 import { allSheets } from "./components/cheatsheet/sheets";
-import { accuracyFor } from "./content/accuracy";
+import { accentAccuracyFor, accuracyFor } from "./content/accuracy";
 
 const WEB = process.cwd();
 const ROOT = join(WEB, "../..");
@@ -48,6 +48,10 @@ function checks(l: Language): { C: Check[]; B: Check[]; A: Check[] } {
       { name: "word list of 20k+ words", ok: l.wordList && words >= 20_000 },
       { name: "spell check meets its targets", ok: spelling[l.code]?.spellcheck ?? false },
       { name: "Roman typing evaluated", ok: !roman || accuracyFor(roman) !== undefined },
+      {
+        name: "smart accents meet their target",
+        ok: l.script !== "Latn" || (accentAccuracyFor(l.code)?.meetsTarget ?? false),
+      },
       { name: "typing test", ok: page(`${l.slug}-typing-test`) },
     ],
     // Native-speaker review and the held-out message test need evidence we do not have yet.

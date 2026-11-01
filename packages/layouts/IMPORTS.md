@@ -125,6 +125,87 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
 - **Skipped:** nothing
 - **Our changes:** none
 
+## es-easy
+
+- **Output:** `languages/spanish/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## fr-easy
+
+- **Output:** `languages/french/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## it-easy
+
+- **Output:** `languages/italian/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## es-spain
+
+- **Output:** `languages/spanish/spain.json`
+- **Source:** `vendor/cldr/es-t-k0-windows.xml`. Windows "Spanish", from Unicode CLDR 43 keyboard data (Unicode License v3) (es-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 12), 49 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## es-latam
+
+- **Output:** `languages/spanish/latam.json`
+- **Source:** `vendor/cldr/es-419-t-k0-windows.xml`. Windows "Latin American", from Unicode CLDR 43 keyboard data (Unicode License v3) (es-419-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 6), 43 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## fr-azerty
+
+- **Output:** `languages/french/azerty.json`
+- **Source:** `vendor/cldr/fr-t-k0-windows.xml`. Windows "French", from Unicode CLDR 43 keyboard data (Unicode License v3) (fr-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 47, ag 13), 37 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## fr-belgian
+
+- **Output:** `languages/french/belgian.json`
+- **Source:** `vendor/cldr/fr-BE-t-k0-windows.xml`. Windows "Belgian French", from Unicode CLDR 43 keyboard data (Unicode License v3) (fr-BE-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 15, sag 3), 49 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## fr-swiss
+
+- **Output:** `languages/french/swiss.json`
+- **Source:** `vendor/cldr/fr-CH-t-k0-windows.xml`. Windows "Swiss French", from Unicode CLDR 43 keyboard data (Unicode License v3) (fr-CH-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 16), 49 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## it-standard
+
+- **Output:** `languages/italian/standard.json`
+- **Source:** `vendor/cldr/it-t-k0-windows.xml`. Windows "Italian", from Unicode CLDR 43 keyboard data (Unicode License v3) (it-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 6, sag 2)
+- **Skipped:** nothing
+- **Our changes:** none
+
 ## Vendored, not yet used
 
 CLDR 43 Windows keyboards ready for the national layouts (plan 7.5). Unicode License v3.
@@ -136,15 +217,8 @@ CLDR 43 Windows keyboards ready for the national layouts (plan 7.5). Unicode Lic
 | `da-t-k0-windows.xml` | Danish | 48 keys (n 48, s 48, ag 13), 49 dead-key compositions | nothing |
 | `de-CH-t-k0-windows.xml` | Swiss German | 48 keys (n 48, s 48, ag 16), 49 dead-key compositions | nothing |
 | `de-t-k0-windows.xml` | German | 48 keys (n 48, s 48, ag 12, sag 1), 32 dead-key compositions | nothing |
-| `en-t-k0-windows-extended.xml` | United States-International | 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions | nothing |
-| `es-419-t-k0-windows.xml` | Latin American | 48 keys (n 48, s 48, ag 6), 43 dead-key compositions | nothing |
-| `es-t-k0-windows.xml` | Spanish | 48 keys (n 48, s 48, ag 12), 49 dead-key compositions | nothing |
 | `fi-t-k0-windows.xml` | Finnish | 48 keys (n 48, s 48, ag 13), 49 dead-key compositions | nothing |
-| `fr-BE-t-k0-windows.xml` | Belgian French | 48 keys (n 48, s 48, ag 15, sag 3), 49 dead-key compositions | nothing |
-| `fr-CH-t-k0-windows.xml` | Swiss French | 48 keys (n 48, s 48, ag 16), 49 dead-key compositions | nothing |
-| `fr-t-k0-windows.xml` | French | 48 keys (n 48, s 47, ag 13), 37 dead-key compositions | nothing |
 | `hu-t-k0-windows.xml` | Hungarian | 48 keys (n 48, s 48, ag 41), 74 dead-key compositions | nothing |
-| `it-t-k0-windows.xml` | Italian | 48 keys (n 48, s 48, ag 6, sag 2) | nothing |
 | `nb-t-k0-windows.xml` | Norwegian | 48 keys (n 48, s 48, ag 12), 49 dead-key compositions | nothing |
 | `nl-t-k0-windows.xml` | Dutch | 48 keys (n 48, s 48, ag 21), 51 dead-key compositions | nothing |
 | `pl-t-k0-windows-extended.xml` | Polish (Programmers) | 48 keys (n 48, s 48, ag 10, sag 9), 18 dead-key compositions | nothing |

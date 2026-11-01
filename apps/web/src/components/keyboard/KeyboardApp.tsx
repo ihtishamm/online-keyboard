@@ -1,4 +1,5 @@
 import {
+  layoutRows,
   KEY_CODES,
   ModifierLatch,
   TypingMachine,
@@ -48,6 +49,8 @@ import {
 import { hasCoarsePointer, isAltGr } from "./platform";
 import SpellOverlay from "./SpellOverlay";
 import { loadPreference, savePreference } from "./preferences";
+import AccentBar from "./AccentBar";
+import { frenchSpacing, spanishOpening, type Edit } from "./latin-typing";
 import Toolbar, { FONT_SIZES } from "./Toolbar";
 import { useDrafts } from "./useDrafts";
 import { useKeyboardInset } from "./useKeyboardInset";
@@ -100,6 +103,7 @@ export default function KeyboardApp({
   );
 
   const phone = useMemo(() => phoneLayout(layout), [layout]);
+  const rows = useMemo(() => layoutRows(layout.keys), [layout]);
   const [keyboardSettings, setKeyboardSettings] =
     useState<KeyboardSettings>(DEFAULT_KEYBOARD_SETTINGS);
   /** Where the caret was when a Backspace slide began: the words before it get selected. */
@@ -132,6 +136,13 @@ export default function KeyboardApp({
   const [predict, setPredict] = useState(true);
   const [spellcheck, setSpellcheck] = useState(() => spellingByDefault(language.code));
   const [autocorrect, setAutocorrect] = useState(() => autocorrectByDefault(language.code));
+  const isLatin = language.script === "Latn";
+  /** Latin: Space adds accents the word list is sure of (cancion → canción). */
+  const [smartAccents, setSmartAccents] = useState(isLatin && hasDictionary(language.code));
+  /** French spacing before ; : ! ? or Spanish ¿ ¡: the language's typing rule, if any. */
+  const typingRule: ((text: string, caret: number) => Edit | null) | null =
+    language.code === "fr" ? frenchSpacing : language.code === "es" ? spanishOpening : null;
+  const [typography, setTypography] = useState(typingRule !== null);
   const scheme = layout.translit ? (bundle.schemes[layout.translit] ?? null) : null;
   const roman = scheme !== null && !passthrough;
   const suggest = useSuggestions({
@@ -143,6 +154,7 @@ export default function KeyboardApp({
     spellcheck: spellcheck && hasSpelling(language.code),
     autocorrect: autocorrect && hasAutocorrect(language.code),
     layouts: bundle.layouts,
+    smartAccents: smartAccents && !passthrough,
   });
 
   /** Tell screen readers (and show briefly) what just happened. */
@@ -199,6 +211,11 @@ export default function KeyboardApp({
     if (savedSpelling === "off" || savedSpelling === "on") setSpellcheck(savedSpelling === "on");
     const savedAutocorrect = loadPreference(`autocorrect:${slug}`);
     if (savedAutocorrect) setAutocorrect(savedAutocorrect === "on");
+    const savedAccents = loadPreference(`accents:${slug}`);
+    if (savedAccents && isLatin)
+      setSmartAccents(savedAccents === "on" && hasDictionary(language.code));
+    const savedTypography = loadPreference(`typography:${slug}`);
+    if (savedTypography && typingRule) setTypography(savedTypography === "on");
     if (recognitionCtor()) {
       const saved = loadPreference(`voiceLang:${slug}`);
       // Only locales that return this script are listed (language.json `voice`).
@@ -233,6 +250,25 @@ export default function KeyboardApp({
   const insert = (text: string) => {
     const el = editorRef.current;
     if (el && text) insertText(el, text);
+  };
+
+  /**
+   * Type one character with the language's typing rule (French spacing, Spanish ¿ ¡) applied
+   * in the same edit, so one Undo takes both back. Returns false when the rule has nothing to do.
+   */
+  const insertWithRule = (text: string): boolean => {
+    const el = editorRef.current;
+    if (!el || !typingRule || !typography || passthrough || [...text].length !== 1) return false;
+    const { selectionStart: start, selectionEnd: end, value } = el;
+    const typed = value.slice(0, start) + text + value.slice(end);
+    const caret = start + text.length;
+    const edit = typingRule(typed, caret);
+    if (!edit) return false;
+    const from = Math.min(edit.start, start);
+    const after = typed.slice(0, edit.start) + edit.text + typed.slice(edit.end);
+    const newCaret = caret + edit.text.length - (edit.end - edit.start);
+    replaceText(el, from, end, after.slice(from, newCaret));
+    return true;
   };
 
   useKeyboardInset(coarse && phoneKeyboard);
@@ -301,6 +337,7 @@ export default function KeyboardApp({
    */
   const typeText = (text: string) => {
     if (!roman && text === " " && suggest.correctBefore(" ")) return;
+    if (insertWithRule(text)) return;
     if (!roman || !isBoundary(text)) return insert(text);
     const el = editorRef.current;
     const prev = el ? el.value[el.selectionStart - 1] : undefined;
@@ -445,7 +482,7 @@ export default function KeyboardApp({
   };
 
   const onAlternate = (text: string) => {
-    insert(text);
+    if (!insertWithRule(text)) insert(text);
     latch.consume();
     rerender();
   };
@@ -664,6 +701,21 @@ export default function KeyboardApp({
           onInput={(e) => {
             const input = e.nativeEvent as InputEvent;
             if (roman) suggest.afterNativeInput(input);
+            if (isLatin && !passthrough) {
+              // The phone's own keyboard typed it: accents on Space, then the typing rule.
+              suggest.afterNativeSpace(input);
+              const el = editorRef.current;
+              const edit =
+                el && typography && input.inputType === "insertText" && input.data?.length === 1
+                  ? typingRule?.(el.value, el.selectionStart)
+                  : null;
+              if (el && edit) {
+                const caret = el.selectionStart;
+                replaceText(el, edit.start, edit.end, edit.text);
+                const moved = caret + edit.text.length - (edit.end - edit.start);
+                el.setSelectionRange(moved, moved);
+              }
+            }
             if (
               roman &&
               input.inputType === "insertFromPaste" &&
@@ -916,16 +968,64 @@ export default function KeyboardApp({
           </Suspense>
         )}
 
+        {isLatin && language.accents && !passthrough && !(coarse && emojiOpen) && (
+          <AccentBar
+            accents={language.accents}
+            upper={displayMods.shift !== displayMods.caps}
+            lang={language.lang}
+            onPick={(c) => {
+              suggest.load();
+              onAlternate(c);
+            }}
+            smartAccents={
+              hasDictionary(language.code)
+                ? {
+                    enabled: smartAccents,
+                    onToggle: () => {
+                      const next = !smartAccents;
+                      setSmartAccents(next);
+                      savePreference(`accents:${slug}`, next ? "on" : "off");
+                      setAnnouncement(next ? "Smart accents on" : "Smart accents off");
+                      if (next) suggest.load();
+                    },
+                  }
+                : undefined
+            }
+            typography={
+              typingRule
+                ? {
+                    label: language.code === "fr" ? "Espaces fines" : "¿ ¡",
+                    title:
+                      language.code === "fr"
+                        ? "French spacing: a narrow no-break space before ; : ! ? and inside « »"
+                        : "Typing ? or ! at the end of a sentence adds ¿ or ¡ at its start",
+                    enabled: typography,
+                    onToggle: () => {
+                      const next = !typography;
+                      setTypography(next);
+                      savePreference(`typography:${slug}`, next ? "on" : "off");
+                      setAnnouncement(
+                        `${language.code === "fr" ? "French spacing" : "Opening ¿ ¡"} ${next ? "on" : "off"}`,
+                      );
+                    },
+                  }
+                : undefined
+            }
+          />
+        )}
+
         {/* On phones the emoji panel takes the on-screen keyboard's place, as phone keyboards do. */}
         {!phoneKeyboard && !(coarse && emojiOpen) && (
           <VirtualKeyboard
             labelFor={(code) => machine.labelFor(code, displayMods)}
             longpress={layout.longpress}
+            rows={rows}
             shift={latch.shift}
             altgr={latch.altgr}
             hasAltGr={Object.values(layout.keys).some((k) => k?.ag || k?.sag)}
             caps={displayMods.caps}
             passthrough={passthrough}
+            showToggle={!isLatin}
             nativeName={language.name.native}
             letterKeys={letterKeys}
             pressed={pressed}

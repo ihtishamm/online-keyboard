@@ -1,0 +1,38 @@
+{
+  "es": {
+    "sentences": 2000,
+    "accentWords": 5519,
+    "foreignWords": 8,
+    "auto": 4455,
+    "offered": 914,
+    "missed": 150,
+    "plainWords": 39668,
+    "wrongChanges": 6,
+    "restored": 0.9728211632542128,
+    "meetsTarget": true
+  },
+  "fr": {
+    "sentences": 2000,
+    "accentWords": 6912,
+    "foreignWords": 104,
+    "auto": 4336,
+    "offered": 2444,
+    "missed": 132,
+    "plainWords": 37718,
+    "wrongChanges": 13,
+    "restored": 0.9809027777777778,
+    "meetsTarget": true
+  },
+  "it": {
+    "sentences": 2000,
+    "accentWords": 1693,
+    "foreignWords": 103,
+    "auto": 860,
+    "offered": 807,
+    "missed": 26,
+    "plainWords": 41508,
+    "wrongChanges": 2,
+    "restored": 0.9846426461901949,
+    "meetsTarget": true
+  }
+}

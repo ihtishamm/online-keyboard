@@ -1,5 +1,5 @@
 ---
-import { ROWS, US_QWERTY, keyDefFor, type KeyCode } from "@okb/engine";
+import { US_QWERTY, keyDefFor, layoutRows, type KeyCode } from "@okb/engine";
 import { getLayout } from "@okb/layouts";
 import { copyFor } from "../../content/languages";
 import { FONT_CLASS } from "../fonts";
@@ -22,7 +22,7 @@ const hasShiftAltGr = Object.values(layout.keys).some((k) => k?.sag);
 
 /** A key on the chart: a character key, or a labelled modifier (`w` in key widths). */
 type Cap = { code: KeyCode; w?: number } | { label: string; w: number; strong?: boolean };
-const [numbers, top, home, bottom] = ROWS as unknown as KeyCode[][];
+const [numbers, top, home, bottom] = layoutRows(layout.keys);
 const keys = (codes: KeyCode[]) => codes.map((code): Cap => ({ code }));
 const rows: Cap[][] = [
   [...keys(numbers!), { label: "Backspace", w: 2 }],
@@ -33,9 +33,9 @@ const rows: Cap[][] = [
   ],
   [{ label: "Caps Lock", w: 1.75 }, ...keys(home!), { label: "Enter", w: 2.25 }],
   [
-    { label: "Shift", w: 2.25, strong: true },
-    ...keys(bottom!.filter((c) => c !== "IntlBackslash")),
-    { label: "Shift", w: 2.75, strong: true },
+    { label: "Shift", w: bottom![0] === "IntlBackslash" ? 1.25 : 2.25, strong: true },
+    ...keys(bottom!),
+    { label: "Shift", w: bottom!.includes("IntlRo") ? 1.75 : 2.75, strong: true },
   ],
   [
     { label: "Ctrl", w: 1.5 },

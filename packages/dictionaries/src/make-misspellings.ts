@@ -9,6 +9,7 @@
  *   node src/make-misspellings.ts
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { LATIN_LOCALES, foldLatin } from "@okb/engine/latin";
 
 // Sound-alike groups for generating errors (deliberately broad: not the checker's tables).
 const SOUND: Readonly<Record<string, readonly string[]>> = {
@@ -21,6 +22,10 @@ const SOUND: Readonly<Record<string, readonly string[]>> = {
   ks: ["سصث", "زذضظ", "تط", "ہح", "کق"],
   hi: ["\u093F\u0940", "\u0941\u0942", "शषस", "नण", "बव", "\u0947\u0948", "\u094B\u094C"],
   bn: ["\u09BF\u09C0", "\u09C1\u09C2", "শষস", "নণ", "জয"],
+  // Latin: letters that sound alike, and accents mixed up (dropping them is smart accents' job).
+  es: ["bv", "sz", "sc", "gj", "yi", "ck", "áa", "éeè", "óo"],
+  fr: ["éèêe", "sc", "ck", "gj", "mn", "àa", "ùu", "ôo"],
+  it: ["éèe", "cq", "zs", "àa", "ìi", "òo", "ùu"],
 };
 const WEAK: Readonly<Record<string, string>> = {
   ar: "اوي",
@@ -32,6 +37,9 @@ const WEAK: Readonly<Record<string, string>> = {
   ks: "اویہ",
   hi: "ािीुूेैोौं्",
   bn: "ািীুূেোং্",
+  es: "aeiouhr",
+  fr: "aeiouhst",
+  it: "aeiouhlnrst",
 };
 
 let seed = 20261031;
@@ -68,15 +76,20 @@ for (const code of Object.keys(SOUND)) {
   const file = new URL(`../data/${code}/words.txt`, import.meta.url);
   if (!existsSync(file)) continue;
   const words = readFileSync(file, "utf8").split("\n").filter(Boolean);
-  const known = new Set(words);
-  const pool = words.slice(100, 8000).filter((w) => [...w].length >= 4);
+  const locale = LATIN_LOCALES[code];
+  const fold = (w: string) => (locale ? foldLatin(w, locale) : w);
+  const known = new Set(words.map(fold));
+  // Latin: names (capitalised) are not checked, so they make no test.
+  const pool = words
+    .slice(100, 8000)
+    .filter((w) => [...w].length >= 4 && (!locale || w === fold(w)));
   const rows: string[] = [];
   const used = new Set<string>();
   for (let tries = 0; rows.length < 50 && tries < 20000; tries++) {
     const word = pick(pool);
     if (used.has(word)) continue;
     const wrong = slip(word, code);
-    if (!wrong || known.has(wrong)) continue;
+    if (!wrong || known.has(fold(wrong))) continue;
     used.add(word);
     rows.push(`${wrong}\t${word}`);
   }

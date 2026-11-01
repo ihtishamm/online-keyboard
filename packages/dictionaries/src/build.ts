@@ -16,9 +16,23 @@
  *   next.txt   "<rank>\t<rank> <rank> ..." followers of common words; "^" = sentence start
  *   stats.json counts for the README
  *   dict.txt   the shipped subset in the website's compact format (compact.ts)
+ *
+ * Latin-script languages also hold out every 50th article (by title hash): up to 2,000 of its
+ * sentences go to test/data/<lang>-heldout.txt for the smart-accent evaluation, and none of
+ * its words are counted.
+ *
+ * `--text` adds plain sentences (one per line) to the counts: for Latin languages, everyday
+ * Tatoeba sentences (import-tatoeba.ts --train), since encyclopedia prose rarely says "I" or
+ * "you" (voudrais, compraste) or names everyday things.
  */
 import { spawn } from "node:child_process";
-import { createReadStream, createWriteStream, mkdirSync, writeFileSync } from "node:fs";
+import {
+  createReadStream,
+  createWriteStream,
+  mkdirSync,
+  readFileSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { createInterface } from "node:readline";
@@ -39,6 +53,14 @@ const { values: args } = parseArgs({
     heads: { type: "string", default: "10000" },
     followers: { type: "string", default: "6" },
     limit: { type: "string" },
+    /** Plain text files, one sentence per line, counted with the dump (everyday sentences). */
+    text: { type: "string" },
+    /**
+     * How much the `--text` sentences weigh against the dump: 0.5 makes all their words count
+     * half as much as the dump's, whatever the sizes of the two.
+     */
+    "text-share": { type: "string", default: "0.5" },
+    "heldout-sentences": { type: "string", default: "2000" },
   },
 });
 
@@ -59,6 +81,16 @@ const MIN_COUNT = Number(args["min-count"]);
 const HEADS = Number(args.heads);
 const FOLLOWERS = Number(args.followers);
 const PAGE_LIMIT = args.limit ? Number(args.limit) : Infinity;
+const HELDOUT_MAX = Number(args["heldout-sentences"]);
+const HELDOUT_PATH = join(
+  dirname(new URL(import.meta.url).pathname),
+  "../test/data",
+  `${rules.code}-heldout.txt`,
+);
+
+/** A held-out sentence worth testing: a few words of running text, not a list or a table. */
+const heldOutWorthy = (s: string) =>
+  s.length < 300 && /^\p{Lu}/u.test(s) && /[.?!]$/.test(s) && s.split(/\s+/).length >= 5;
 
 /** Lines of the dump, decompressing .bz2 with the system bzcat. */
 function dumpLines(path: string) {
@@ -78,6 +110,10 @@ function dumpLines(path: string) {
 
 async function passOne(sentencesPath: string) {
   const counts = new Map<string, number>();
+  /** Latin scripts: how often each folded word is written each way, mid-sentence. */
+  const casing = new Map<string, Map<string, number>>();
+  const heldOut: string[] = [];
+  let heldOutPages = 0;
   const seen = new Set<number>();
   const out = createWriteStream(sentencesPath);
   const reader = new DumpReader();
@@ -85,29 +121,51 @@ async function passOne(sentencesPath: string) {
   let sentences = 0;
   let repeated = 0;
   let tokens = 0;
+  let textSentences = 0;
+
+  async function add(sentence: string, weight = 1) {
+    const surface = tokenize(sentence, rules);
+    const fold = rules.fold;
+    const words = fold ? surface.map((w) => (w === null ? null : fold(w))) : surface;
+    if (fold) {
+      surface.forEach((w, i) => {
+        if (i === 0 || w === null) return;
+        const key = words[i]!;
+        const votes = casing.get(key) ?? new Map<string, number>();
+        votes.set(w, (votes.get(w) ?? 0) + 1);
+        casing.set(key, votes);
+      });
+    }
+    const real = words.filter((w) => w !== null);
+    if (real.length < 2) return;
+    const key = hash53(words.map((w) => w ?? "|").join(" "));
+    if (seen.has(key)) {
+      repeated++;
+      return;
+    }
+    seen.add(key);
+    sentences++;
+    tokens += real.length;
+    for (const w of real) counts.set(w, (counts.get(w) ?? 0) + weight);
+    if (!out.write(words.map((w) => w ?? "|").join(" ") + "\n")) {
+      await new Promise<void>((r) => out.once("drain", () => r()));
+    }
+  }
+
   for (const dump of DUMPS) {
     const { lines, stop } = dumpLines(dump);
     for await (const line of lines) {
       const page = reader.line(line);
       if (!page || page.ns !== 0 || isRedirect(page.text)) continue;
       if (++pages > PAGE_LIMIT) break;
-      for (const sentence of splitSentences(stripWikitext(page.text), rules)) {
-        const words = tokenize(sentence, rules);
-        const real = words.filter((w) => w !== null);
-        if (real.length < 2) continue;
-        const key = hash53(words.map((w) => w ?? "|").join(" "));
-        if (seen.has(key)) {
-          repeated++;
-          continue;
+      if (rules.holdout && hash53(page.title) % rules.holdout === 0) {
+        heldOutPages++;
+        for (const sentence of splitSentences(stripWikitext(page.text), rules)) {
+          if (heldOut.length < HELDOUT_MAX && heldOutWorthy(sentence)) heldOut.push(sentence);
         }
-        seen.add(key);
-        sentences++;
-        tokens += real.length;
-        for (const w of real) counts.set(w, (counts.get(w) ?? 0) + 1);
-        if (!out.write(words.map((w) => w ?? "|").join(" ") + "\n")) {
-          await new Promise<void>((r) => out.once("drain", () => r()));
-        }
+        continue;
       }
+      for (const sentence of splitSentences(stripWikitext(page.text), rules)) await add(sentence);
       if (pages % 20000 === 0) {
         console.error(`  ${pages} pages, ${sentences} sentences, ${counts.size} distinct words`);
       }
@@ -116,8 +174,32 @@ async function passOne(sentencesPath: string) {
     stop();
     if (pages > PAGE_LIMIT) break;
   }
+  const textFiles = args.text?.split(",") ?? [];
+  const textLines = textFiles.flatMap((file) => readFileSync(file, "utf8").split("\n"));
+  let textTokens = 0;
+  for (const line of textLines) textTokens += tokenize(line, rules).filter(Boolean).length;
+  const textWeight = textTokens ? (Number(args["text-share"]) * tokens) / textTokens : 0;
+  for (const line of textLines) {
+    for (const sentence of splitSentences(line, rules)) {
+      const before = sentences;
+      await add(sentence, textWeight);
+      textSentences += sentences - before;
+    }
+  }
   await new Promise<void>((r) => out.end(() => r()));
-  return { counts, pages: Math.min(pages, PAGE_LIMIT), sentences, repeated, tokens };
+  if (rules.holdout) writeFileSync(HELDOUT_PATH, heldOut.join("\n") + "\n");
+  return {
+    counts,
+    casing,
+    pages: Math.min(pages, PAGE_LIMIT),
+    sentences,
+    repeated,
+    tokens,
+    heldOutPages,
+    heldOutSentences: heldOut.length,
+    textSentences,
+    textWeight,
+  };
 }
 
 async function passTwo(sentencesPath: string, rankOf: Map<string, number>) {
@@ -179,7 +261,13 @@ console.error("Pass 2: counting word pairs");
 const two = await passTwo(sentencesPath, rankOf);
 const next = topFollowers(two.pairs, two.starts);
 
-writeFileSync(join(OUT, "words.txt"), words.join("\n") + "\n");
+/** A Latin word in the case it is most often written mid-sentence (Haus, der, Madrid). */
+const display = (key: string) => {
+  const votes = one.casing.get(key);
+  if (!votes) return key;
+  return [...votes].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1))[0]![0];
+};
+writeFileSync(join(OUT, "words.txt"), words.map(display).join("\n") + "\n");
 writeFileSync(join(OUT, "next.txt"), next.join("\n") + "\n");
 compactLanguage(OUT);
 const stats = {
@@ -191,6 +279,19 @@ const stats = {
   distinctWords: one.counts.size,
   wordsKept: words.length,
   nextWordHeads: next.length - 1,
+  ...(args.text
+    ? {
+        text: args.text
+          .split(",")
+          .map((f) => f.split("/").pop())
+          .join(", "),
+        textSentences: one.textSentences,
+        textWeight: Math.round(one.textWeight * 100) / 100,
+      }
+    : {}),
+  ...(rules.holdout
+    ? { heldOutPages: one.heldOutPages, heldOutSentences: one.heldOutSentences }
+    : {}),
 };
 writeFileSync(join(OUT, "stats.json"), JSON.stringify(stats, null, 2) + "\n");
 console.error(stats, `${((Date.now() - started) / 1000).toFixed(0)} s`);

@@ -2,7 +2,7 @@
  * The format of languages/<slug>/language.json (plan item 7.1). Checked by
  * test/registry.test.ts; the site reads it through `LANGUAGES`.
  */
-export type FontId = "nastaliq" | "naskh" | "devanagari" | "bengali";
+export type FontId = "nastaliq" | "naskh" | "devanagari" | "bengali" | "latin";
 
 /**
  * The tier a language has earned (plan §5.4), or null while it misses part of Tier C.
@@ -55,6 +55,11 @@ export interface LanguageFile {
   fonts: readonly FontId[];
   /** Layout ids; the first is the default. Files: languages/<slug>/<id without code>.json. */
   layouts: readonly string[];
+  /**
+   * Latin scripts: the language's special letters, lower case then capitals, then its own
+   * punctuation (¿ ¡ « »). The accent bar offers them, and the page lists them.
+   */
+  accents?: string;
   /** Sample sentence shown in empty editors and used in tests. */
   sample: string;
   /**

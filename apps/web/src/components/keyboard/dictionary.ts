@@ -50,10 +50,15 @@ export function autocorrectByDefault(code: string): boolean {
 }
 
 type WorkerReply =
-  { lexicon: LexiconData; next: [string, readonly string[]][] } | { error: string };
+  | {
+      lexicon: LexiconData;
+      next: [string, readonly string[]][];
+      latin?: Dictionary["latin"];
+    }
+  | { error: string };
 
 /** Build in a worker: indexing 40k words takes a phone's main thread a few hundred ms. */
-function buildInWorker(url: string): Promise<Dictionary> {
+function buildInWorker(url: string, code: string): Promise<Dictionary> {
   return new Promise((resolve, reject) => {
     const worker = new Worker(new URL("./dictionary.worker.ts", import.meta.url), {
       type: "module",
@@ -66,6 +71,7 @@ function buildInWorker(url: string): Promise<Dictionary> {
         resolve({
           lexicon: Lexicon.fromData(reply.lexicon),
           next: NextWords.fromData(reply.next),
+          ...(reply.latin ? { latin: reply.latin } : {}),
         });
       }
     };
@@ -74,7 +80,7 @@ function buildInWorker(url: string): Promise<Dictionary> {
       reject(new Error(event.message || "worker failed"));
     };
     // Resolve the asset path here: the worker's own URL is a different base.
-    worker.postMessage(new URL(url, location.href).href);
+    worker.postMessage({ url: new URL(url, location.href).href, code });
   });
 }
 
@@ -89,8 +95,8 @@ export function loadDictionary(code: string): Promise<Dictionary | null> {
   if (!promise) {
     const build =
       typeof Worker === "undefined"
-        ? buildDictionary(source)
-        : buildInWorker(source).catch(() => buildDictionary(source));
+        ? buildDictionary(source, code)
+        : buildInWorker(source, code).catch(() => buildDictionary(source, code));
     promise = build.catch((error: unknown) => {
       console.warn("Word list unavailable:", error);
       loading.delete(code); // allow a retry later

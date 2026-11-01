@@ -11,7 +11,9 @@
     "./compact": "./src/predict/compact.ts",
     "./normalize": "./src/text/normalize.ts",
     "./romanize": "./src/translit/romanize.ts",
-    "./spelling": "./src/predict/spelling-rules.ts"
+    "./spelling": "./src/predict/spelling-rules.ts",
+    "./latin": "./src/text/latin.ts",
+    "./accents": "./src/predict/accents.ts"
   },
   "scripts": {
     "test": "vitest run",
