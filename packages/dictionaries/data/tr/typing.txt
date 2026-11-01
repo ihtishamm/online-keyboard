@@ -46,7 +46,6 @@
 1975162	Sormadan arabamı almaya cüret etti.
 2115955	Sık sık başkalarına yardım eder.
 2197104	Benim yatak odam örümceklerle dolu.
-2449350	Gitme zamanının geldiğini düşünmüyor musun?
 2596490	Yasal varis bensem hakkımı almaya geleceğim.
 2777383	Şayet benim siteme banner'ını koymak istiyorsan,bana kodunu gönder.
 2926032	Fransızcada asla çok iyi olmadım.
@@ -62,6 +61,7 @@
 3573548	Daha yapacak çok iş var.
 3588475	Japonya'nın pirinç piyasası ithalata kapalıdır.
 3589307	Bu insanlar dünya barışına çok büyük katkı sağladı.
+3615237	Seni bu tarz bir yerde görmeyi ummazdım.
 3652369	Bazı cookie'ler kullanıcıların sabit disklerinde süresiz olarak kaydedilir.
 3657634	Ben seninim sen de benim.
 3661729	Çirkin biri, kendini güzel göstermek için, güzelliğin tanımını bile değiştirmeye kalkabilir.

@@ -1,0 +1,232 @@
+# Words and phrases kept out of typing practice. From LDNOOBW
+# (https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words),
+# CC BY 4.0; made by src/blocklist.ts. Build-time only.
+aand
+aandu
+balatkar
+balatkari
+behen chod
+beti chod
+bhadva
+bhadve
+bhandve
+bhangi
+bhootni ke
+bhosad
+bhosadi ke
+boobe
+chakke
+chinaal
+chinki
+chod
+chodu
+chodu bhagat
+chooche
+choochi
+choope
+choot
+choot ke baal
+chootia
+chootiya
+chuche
+chuchi
+chudaap
+chudai khanaa
+chudam chudai
+chude
+chut
+chut ka chuha
+chut ka churan
+chut ka mail
+chut ke baal
+chut ke dhakkan
+chut maarli
+chutad
+chutadd
+chutan
+chutia
+chutiya
+gaand
+gaandfat
+gaandmasti
+gaandufad
+gandfattu
+gandu
+gashti
+gasti
+ghassa
+ghasti
+gucchi
+gucchu
+harami
+haramzade
+hawas
+hawas ke pujari
+hijda
+hijra
+jhant
+jhant chaatu
+jhant ka keeda
+jhant ke baal
+jhant ke pissu
+jhantu
+kamine
+kaminey
+kanjar
+kutta
+kutta kamina
+kutte ki aulad
+kutte ki jat
+kuttiya
+loda
+lodu
+lund
+lund choos
+lund ka bakkal
+lund khajoor
+lundtopi
+lundure
+maa ki chut
+maal
+madar chod
+madarchod
+madhavchod
+mooh mein le
+mutth
+mutthal
+najayaz
+najayaz aulaad
+najayaz paidaish
+paki
+pataka
+patakha
+raand
+randaap
+randi
+randi rona
+saala
+saala kutta
+saali kutti
+saali randi
+suar
+suar ke lund
+suar ki aulad
+tatte
+tatti
+teri maa ka bhosada
+teri maa ka boba chusu
+teri maa ki behenchod
+teri maa ki chut
+tharak
+tharki
+tu chuda
+आन्दु
+कन्जर
+कमिने
+कमिनेय
+कुटिया
+कुत्ता
+कुत्ता कामिनी
+कुत्ते की औलाद
+कुत्ते की जाता
+गन्दु
+गन्द्फ़तु
+गश्ती
+गान्द
+गान्दुफ़द
+गान्द्फ़त
+गान्द्मस्ती
+गुच्छी
+गुच्छु
+घस्ती
+घास
+चिनाल
+चिन्की
+चुची
+चुचे
+चुतद
+चुतिअ
+चुतिया
+चुदम चुदै
+चुदाप
+चुदे
+चुदै खाना
+चूची
+चूचे
+चूतिअ
+चूतिया
+चोदु
+चोदु भगत
+छुपे
+छूट
+छूट का चुराने
+छूट का चूहा
+छूट का मैल
+छूट के ढक्कन
+छूट के बाल
+छूट मार्ली
+छूटने
+झन्त
+झन्त का कीड़ा
+झन्त के पिस्सू
+झन्त के बाल
+झन्त चातु
+झन्तु
+तते
+तहरीक
+तांती
+तु छुड़ा
+तेरी मा का बोबा चुसु
+तेरी मा का भोसदा
+तेरी मा की छूट
+तेरी मा की बेहेन्चोद
+थर्की
+नाजायज़
+नाजायज़ औलाद
+नाजायज़ पैदाइश
+पकी
+पतखा
+पताका
+बलत्करी
+बलात्कार
+बूबे
+बेटी छोड़
+बेहें छोड़
+भंगी
+भद्वा
+भद्वे
+भन्द्वे
+भूटानी के
+भोसद
+भोसदी के
+मदर छोड़
+मदर्चोद
+मधव्चोद
+मा की छूट
+मुट्ठी
+मुत्थल
+मुह में ले
+रन्दाप
+रानडे
+रेंडी
+रेंडी रोना
+लुन्द
+लुन्द का बिकल
+लुन्द खजूर
+लुन्द चूस
+लुन्दुरे
+लुन्द्तोपी
+लोड
+लोदु
+साल कुत्ता
+साली कुटी
+साली रेंडी
+सुअर
+सुअर की औलाद
+सुअर के लुन्द
+हरमी
+हरम्ज़दे
+हवस
+हवस के पुजारी
+हिजरी
+हिज्दा

@@ -1,0 +1,230 @@
+# Words and phrases kept out of typing practice. From LDNOOBW
+# (https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words),
+# CC BY 4.0; made by src/blocklist.ts. Build-time only.
+aand
+aandu
+balatkar
+balatkari
+behen chod
+beti chod
+bhadva
+bhadve
+bhandve
+bhangi
+bhootni ke
+bhosad
+bhosadi ke
+boobe
+chakke
+chinaal
+chinki
+chod
+chodu
+chodu bhagat
+chooche
+choochi
+choope
+choot
+choot ke baal
+chootia
+chootiya
+chuche
+chuchi
+chudaap
+chudai khanaa
+chudam chudai
+chude
+chut
+chut ka chuha
+chut ka churan
+chut ka mail
+chut ke baal
+chut ke dhakkan
+chut maarli
+chutad
+chutadd
+chutan
+chutia
+chutiya
+gaand
+gaandfat
+gaandmasti
+gaandufad
+gandfattu
+gandu
+gashti
+gasti
+ghassa
+ghasti
+gucchi
+gucchu
+harami
+haramzade
+hawas
+hawas ke pujari
+hijda
+hijra
+jhant
+jhant chaatu
+jhant ka keeda
+jhant ke baal
+jhant ke pissu
+jhantu
+kamine
+kaminey
+kanjar
+kutta
+kutta kamina
+kutte ki aulad
+kutte ki jat
+kuttiya
+loda
+lodu
+lund
+lund choos
+lund ka bakkal
+lund khajoor
+lundtopi
+lundure
+maa ki chut
+maal
+madar chod
+madarchod
+madhavchod
+mooh mein le
+mutth
+mutthal
+najayaz
+najayaz aulaad
+najayaz paidaish
+paki
+pataka
+patakha
+raand
+randaap
+randi
+randi rona
+saala
+saala kutta
+saali kutti
+saali randi
+suar
+suar ke lund
+suar ki aulad
+tatte
+tatti
+teri maa ka bhosada
+teri maa ka boba chusu
+teri maa ki behenchod
+teri maa ki chut
+tharak
+tharki
+tu chuda
+আন্দ
+আন্দু
+কন্যার
+কামিনে
+কামিনেয়
+কুটি
+কুটি কামিনা
+কুতিয়া
+কুতে কী আউলাদ
+কুতে কী জাত
+গান্দ
+গান্দু
+গান্দুফাদ
+গান্দ্ফাত
+গান্দ্ফাতু
+গান্দ্মাস্তি
+গাশ্তি
+গাস্তি
+গুচ্চি
+গুচ্চু
+ঘাস
+ঘাস্তি
+চড়
+চদু
+চদু ভগত
+চিনাল
+চিন্কি
+চুচি
+চুচে
+চুতাদ
+চুতান
+চুতিআ
+চুতিয়া
+চুদাই খানা
+চুদাপ
+চুদাম চুদাই
+চুপে
+ছকে
+ছুটি
+ছুটি কা চুরান
+ছুটি কা চুহা
+ছুটি কা মাইল
+ছুটি কে ঢাকনা
+ছুটি কে বাল
+ছুটি মার্লি
+ছুড়ে
+ঝান্ত
+ঝান্ত কা কিড
+ঝান্ত কে পিসু
+ঝান্ত কে বাল
+ঝান্ত চাতু
+ঝান্তু
+টু চূড়া
+তাঁতি
+তেরি মা কা বব চুসু
+তেরি মা কা ভসাদা
+তেরি মা কী ছুটি
+তেরি মা কী বেহেন্চদ
+থারাক
+থার্কি
+নাজায়াজ
+নাজায়াজ আউলাদ
+নাজায়াজ পাইদাইশ
+পাকি
+পাতাখা
+বালাত্কার
+বালাত্কারি
+বুবে
+বেটি চড়
+বেহেন চড়
+ভঙ্গি
+ভসাদ
+ভসাদি কে
+ভাদ্ভা
+ভাদ্ভে
+ভান্দ্ভে
+ভুটানি কে
+মা কী ছুটি
+মাদার চড়
+মাদার্চদ
+মাধাভ্চদ
+মাল
+মুত্থ
+মুত্থাল
+মুহ মেইন লে
+রান্দ
+রান্দাপ
+রান্দি
+রান্দি রন
+লদু
+লুন্দ
+লুন্দ কা বাকল
+লুন্দ খেজুর
+লুন্দ চুস
+লুন্দুরে
+লুন্দ্তপি
+লোড
+সাল কুটি
+সালি কুটি
+সালি রান্দি
+সুআর
+সুআর কী আউলাদ
+সুআর কে লুন্দ
+হবস
+হবস কে পূজারী
+হারামি
+হারাম্জাদে
+হিজড়া

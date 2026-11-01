@@ -1,82 +1,82 @@
 # Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
 # sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
-353128	Mój ojciec zmarł przed moim narodzeniem.
-355994	Prosiła go, by odesłał ją do domu.
-362862	Jest dobrze wychowana przez swoich rodziców.
-364669	Ten samochód ma trzy rzędy siedzeń i może pomieścić ośmiu pasażerów.
-366084	Bez wątpienia czas nie pozwolił na wykonanie zdjęcia w żywych kolorach.
-530467	Kościół jest po drugiej stronie ulicy.
-623104	Moja mama nie mówi po angielsku.
-722256	Nie śmiej się z tego, że się pomylił.
-728543	Nie mam jutro nic specjalnego do roboty.
-767244	Oczywiste jest, że on ma rację.
-770335	Gdyby tu był, odwiedziłby nas.
-838947	Pożyczyłem od niego tę książkę.
-901240	Ten dom jest do wynajęcia.
-903400	Mam nadzieję, że się panu spodoba.
-924621	Potrzebujemy więcej inżynierów, by nadgonić harmonogram.
-924627	Japoński i koreański są naprawdę ciekawe, więc bardzo je lubię.
-925819	Kiedy noszę kontakty, mam wysuszone i zaczerwienione oczy.
-925856	A więc proszę o przekazanie mu tej notatki. To pilne.
-951197	Proszę skręcić w lewo na tym rogu, a zobaczy pan dworzec.
-959489	Trzeba było wyruszyć pół godziny wcześniej.
-959692	Żaden jacht nie pływa szybciej niż ten.
-969958	Kiedyś marzyłem, że będę bogatym przedsiębiorcą.
-1113000	Może być dumny ze swojego domu.
-1178664	Żałuję, że robię Ci tyle problemów.
-1179742	Ten pokój jest za ciemny.
-1341639	Moja dziewczyna jest bardzo zazdrosna.
-1349153	Profesor rozwiązał problem jako ostatni.
-1354275	Wyślij mi rakietę tenisową i buty do tenisa.
-1452274	Nie robiła nic poza rozglądaniem się.
-1455873	Nie wiem, czy zapamiętam tak długie hasło.
-1829463	Chociaż Bob był w przebraniu, to i tak poznałem go na pierwszy rzut oka.
-2063380	Nic nie mogę zrobić dla Toma.
-2260494	Musisz przeczytać i zaakceptować zasady, by mieć prawo ściągać, instalować i używać.
-2784680	Wypiłam dzisiaj zbyt dużo kawy.
-3108131	Jak doszło do wypadku kolejowego na dworcu w Tokio?
-3585905	Przyszedłeś tu, bo chciałeś znać prawdę.
-3667798	Moja praca jest warta wiele więcej.
-3743805	Karty wypadły mi z ręki.
-3743834	Udało mi się dziś włożyć wtyczke USB do portu za pierwszym razem!
-3846741	Co jest w tych wszystkich pudełkach?
-3851405	Próbuję cię powstrzymać przed zrobieniem dużego błędu.
-3867648	W ogóle się nie uczyłem.
-3872057	Czemu nie przejdziesz na dietę?
-3926306	To nie jest zbyt romantyczne.
-3931726	Szukamy miejsca, gdzie moglibyśmy zjeść.
-4156217	Ta kreda nie jest żółta.
-4169768	Jaka jest twoja ulubiona gra komputerowa?
-4438937	Oczywiście, że napiszę ten list po angielsku.
-4882044	Czy ty możesz myśleć o innych powodach?
-5224098	On gra w World of Warcraft.
-5714942	Nie czuję się zbyt głodny.
-5960569	To, czy Szekspir napisał ten wiersz czy nie, prawdopodobnie pozostanie tajemnicą.
-5968908	Czy ten mur zbudowano, by trzymać ludzi na zewnątrz, czy też trzymać ich w środku?
-6156396	Walec drogowy zatrzymał się bez powodu.
-6156570	Bill był zbyt młody aby objąć stanowisko.
-6328274	Nie mówmy już o tym.
-6487272	Pieniądze nie rosną na drzewach.
-6533122	Mój starszy brat w zeszłym miesiącu wybudował sobie dom.
-6635714	Czy ma pan inne zdanie?
-7164845	Każda z nich kupiła nową sukienkę.
-7962597	Pomogła mi niezliczoną ilość razy.
-8529771	On zranił swoją żonę nożem.
-8608422	Kręciło mi się w głowie.
-8608527	To w końcu mam to wnosić czy nie?
-8763738	Muszę zapłacić rachunek od lekarza.
-9663579	Piraci chcieli sprowadzić go na złą drogę z powodu jego urody.
-10530092	Nie mogę się nie zgodzić.
-10549908	Czy podejmiesz się tej pracy?
-10761971	Proszę Pana, czy ma Pan świadomość, że Pan jest kotem?
-11148665	Jestem w okolicy gdzie zdarzył się ten wypadek.
-11259781	Mój starszy brat chodzi w każdy weekend na ryby.
-11324157	Niech Państwo biegną! Czas ucieka!
-11492502	Pamiętasz, jak zagrać tę piosenkę?
-11608481	Wygląda na to, że im ulżyło.
-12476578	Kara klacz podeszła do ogrodzenia.
-12832438	Nigdy w życiu nie kupiłam losu na loterię.
-13633145	Nie jestem leniem, po prostu lubię odpoczywać zanim jestem zmęczony.
-13690230	Chcą, żebym się poddała, ale ja nie jestem gotowa dać za wygraną.
-13899297	W autobusie ktoś grał bardzo głośno muzykę techno.
-14079919	Jego przeskoczyć jest łatwiej niż obejść.
+349994	Nie mieli jeszcze do czynienia z takim problemem, nie wiedzą więc, co z tym zrobić.
+357881	Zamknij się! Gadasz za dużo!
+360426	Kapitan dowodzi statkiem i załogą.
+361724	Podobno Nancy jest bardzo ładna.
+365125	Oczywiście, że mam upoważnienie, by to mówić.
+442970	Mgła to zwyczajny widok w Londynie.
+503791	W tym parku jest dużo wysokich drzew.
+527541	Sukces mniej zależy od talentu, bardziej od pasji.
+529649	Dziękuję. Niech cię Bóg błogosławi. I niech Bóg błogosławi Stany Zjednoczone Ameryki.
+531201	Energia słońca jest nowym źródłem energii.
+562250	Jedyne, czego zło potrzebuje, żeby zatriumfować to aby dobrzy ludzie nic nie robili.
+631642	Czy już skończłeś swój lunch?
+640695	Przynieś tę książkę do mnie, nie do Toma.
+675523	Raczej nie ma nadziei, że odniesie sukces.
+697410	Mało prawdopodobne, by przyszli o tak późnej porze.
+722281	Kioto było kiedyś stolicą Japonii.
+731966	Ważne jest tylko to, czy robisz to z całych sił czy nie.
+734209	Ten niepopularny polityk wiele razy w trakcie swojego przemówienia budził śmiech tłumu.
+734327	Te obrazy zostały namalowane przez niego.
+745413	Według mnie on nie nadaje się do tej pracy.
+771825	Dzieci zależą od rodziców w kwestii ubioru i wyżywienia.
+787755	Janek, będąc zmęczonym, poszedł do łóżka wcześniej.
+792148	Im więcej gromadzisz doświadczeń, tym jesteś mądrzejszy.
+794071	On wygląda na opętanego przez złego ducha.
+826659	Wysłałem Ci to dwa dni temu.
+906115	Z bólem głowy nie odpoczniesz sobie.
+914740	Beth boi się ciemności, bo ma złośliwego brata.
+929424	Na co drugiej stronie tej książki są ilustracje.
+932849	Czy ma pan ubezpieczenie zdrowotne?
+959636	Nie zapomnij zwrócić tej książki do biblioteki.
+959771	Czekałem na zewnątrz w nadziei, że cię spotkam.
+982514	Żołnierze nie mogli zrobić nic aż do wiosny.
+1110160	Opowiadanie jest oparte na jego własnych przeżyciach.
+1268600	Sugeruję, abyśmy skorzystali ze schodów.
+1348637	Zawsze zapominam jak ludzie mają na imię.
+1353124	Wszystkie dzieci poszły do łóżek.
+1359952	Nie martw się. Zapewniam cię że wszystko będzie dobrze.
+2139074	Cokolwiek zrobisz, nie zapomnij tego.
+2260395	Nie mogę powiedzieć ci, co wiem.
+2467060	Ta książka odmieni twoje życie.
+3018122	Zauważyłem, że promocyjne ceny były napisane czerwonym drukiem.
+3127683	Nie mogę uwierzyć, że znów tu jestem.
+3187995	Światło słoneczne i woda są czynnikami, które sprawiają, że rośliny rosną.
+3292923	Skąd mam wiedzieć, że nie zamierzasz mnie zranić?
+3381882	Od dzieciństwa zdradza zainteresowanie przedmiotami ścisłymi.
+3382425	Tamten stary dom jest zaniedbany od lat.
+3445154	Nie łapię tego! Czemu się na mnie wkurzasz?!
+3653757	Nie możesz mnie winić za moją podejrzliwość.
+3660648	Stary staw. Żaba wskakuje do niego. Plusk wody.
+3744887	Takie przypadki są u nas na porządku dziennym.
+4101487	Nie lubię rozmawiać o Tomie.
+4952752	Niektórzy z was potrzebują pomocy.
+5187747	Kupiłem dom w dwa tysiące trzynastym.
+5215233	Nadmiar wody odpłynął kanałem do ścieków.
+5527706	Każdy kraj ma swoją stolice.
+6154912	Nigdy wcześniej nie słyszałem tego słowa. Co ono oznacza?
+6159689	Pójdę powiedzieć jej, że jesteśmy gotowi.
+6178322	Dowiem się kim on jest.
+6302025	Podajcie nazwy wszystkich przypadków, występujących w języku polskim.
+7058150	Miała wyraz twarzy zupełnie jakby ujrzała ducha.
+7703667	Powiedziała, że nie ma dokąd iść.
+7766451	Gdzie mogę złożyć te dokumenty?
+8608522	Ale tu jest dużo czasopism!
+9684338	Planuję spędzić trzy miesiące w Bostonie.
+9686660	Czekałem, aż powiesz mi co mam zrobić.
+10701202	Mama już wcześniej mi o tym powiedziała.
+11006409	Może nie jest idealne, ale jest najlepsze.
+11266252	Moje dziecko, czego się lękasz?
+12044215	Więzienne jedzenie nie jest tak złe, jak się spodziewałem.
+12069046	Bardzo trudno było przekonać Toma.
+12191454	Co jest pod twoim łóżkiem?
+12360027	To nie o tym rozmawiali.
+12455215	Kto jeszcze wie, że tu jesteś?
+12574221	Podobał ci się wczorajszy wieczorny koncert?
+12678770	Deszcz padał aż do wieczora.
+12953707	On powiesi wszystkie te rzeczy na choince.
+13027430	Pośpiech jest wskazany tylko przy łapaniu pcheł, biegunce i jedzeniu ze wspólnej miski.
+13282686	Gdzie się o tym dowiedziałeś?
+13469732	Ten lekarz chce mi zrobić zawał serca.
+13782775	Dzieci również są mile widziane.

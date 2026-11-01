@@ -18,6 +18,8 @@ faqs:
     a: "ٲ is on the minus key and ۄ on V. The vowel marks ◌ٚ, ◌ٕ, ◌ٖ and ◌ٗ are on Shift+F, Shift+M, Shift+L and Shift+U: type the letter first, then the mark."
   - q: "Do I need to install anything?"
     a: "No. The keyboard runs in your browser on Windows, Mac, Linux, Android and iPhone. There is nothing to download."
+  - q: "Can I learn to type Kashmiri here?"
+    a: "Yes. The Kashmiri typing tutor teaches this keyboard one row at a time, with the next key lit up, and the Kashmiri typing test measures your speed. Both are free and work on phones."
   - q: "Is my text private?"
     a: "Yes. Your text is saved only in this browser on this device. It is never sent to our servers."
 ---

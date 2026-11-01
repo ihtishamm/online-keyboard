@@ -422,10 +422,11 @@ const isAlternate = (text: string | undefined): text is string =>
 export function deriveLongpress(keys: Keys, accents = ""): NonNullable<LayoutInput["longpress"]> {
   const longpress: NonNullable<LayoutInput["longpress"]> = {};
   for (const [code, def] of Object.entries(keys) as [KeyCode, KeyDef][]) {
-    if (!def.n) continue;
+    const base = def.n;
+    if (!base) continue;
     // Latin layouts: the language's letters built on this key's letter (é on e, ñ on n).
     const own = [...accents].filter(
-      (a) => a !== def.n && a.normalize("NFD")[0] === def.n && /\p{L}/u.test(def.n),
+      (a) => a !== base && a.normalize("NFD")[0] === base && /\p{L}/u.test(base),
     );
     const alts = [...new Set([...own, def.s, def.ag, def.sag].filter(isAlternate))].filter(
       (t) => t !== def.n,

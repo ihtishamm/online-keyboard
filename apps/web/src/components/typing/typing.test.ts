@@ -1,8 +1,16 @@
-import { deadStrokeMap, keystrokeMap } from "@okb/engine";
-import { getLayout } from "@okb/layouts";
+import { Transliterator, deadStrokeMap, keystrokeMap, makeDictionary } from "@okb/engine";
+import { decodeDictionary } from "@okb/engine/compact";
+import { readFileSync } from "node:fs";
+import { LANGUAGES, getLayout, getScheme } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
-import { TYPING_COPY } from "../../content/typing/latin-copy";
-import { TYPING_LANGUAGES, practiceText, typingLayouts } from "../../content/typing/latin";
+import { TYPING_COPY } from "../../content/typing/copy";
+import {
+  TYPING_LANGUAGES,
+  practiceText,
+  romanLayout,
+  romanPairs,
+  typingLayouts,
+} from "../../content/typing/practice";
 import { URDU_PASSAGES, URDU_WORDS } from "../../content/typing/urdu";
 import {
   backspace,
@@ -10,12 +18,13 @@ import {
   extend,
   finish,
   nextKeystroke,
+  scoringFor,
   setTyped,
   stats,
   typeable,
   typeText,
 } from "./drill";
-import { buildLessons } from "./lessons";
+import { buildLessons, romanLesson } from "./lessons";
 
 const phonetic = keystrokeMap(getLayout("ur-phonetic"));
 const standard = keystrokeMap(getLayout("ur-standard"));
@@ -148,10 +157,16 @@ describe("lessons", () => {
   });
 });
 
-describe("Latin-script typing pages", () => {
-  it("cover every Latin-script language with a word list", () => {
+/** Languages whose Tatoeba set is too small or not in their script: words only. */
+const NO_SENTENCES = new Set(["sd", "ks"]);
+/** Small Tatoeba sets: every usable sentence, under 50. */
+const FEW_SENTENCES = new Set(["ps", "pnb"]);
+
+describe("generated typing pages", () => {
+  it("cover every language but Urdu, which has its own", () => {
     const slugs = TYPING_LANGUAGES.map((l) => l.slug);
-    expect(slugs).toEqual(expect.arrayContaining(["spanish", "french", "italian"]));
+    expect(slugs).toHaveLength(LANGUAGES.length - 1);
+    expect(slugs).not.toContain("urdu");
     for (const l of TYPING_LANGUAGES) expect(TYPING_COPY[l.code], l.code).toBeDefined();
   });
 
@@ -159,8 +174,11 @@ describe("Latin-script typing pages", () => {
     "%s: enough text, typeable on every layout",
     async (_, l) => {
       const text = await practiceText(l);
-      expect(text.passages.length).toBeGreaterThanOrEqual(50);
-      expect(text.words.length).toBe(200);
+      const fewest = NO_SENTENCES.has(l.code) ? 0 : FEW_SENTENCES.has(l.code) ? 20 : 50;
+      expect(text.passages.length).toBeGreaterThanOrEqual(fewest);
+      // Balochi's words come from its sentences: it has no word list yet.
+      expect(text.words.length).toBe(l.wordList ? 200 : Math.min(200, text.words.length));
+      expect(text.words.length).toBeGreaterThanOrEqual(100);
       expect(new Set(text.ids).size).toBe(text.ids.length);
       const layouts = typingLayouts(l);
       expect(layouts.length).toBeGreaterThan(0);
@@ -199,5 +217,82 @@ describe("Latin-script typing pages", () => {
       shift: false,
       altgr: false,
     });
+  });
+});
+
+describe("script-correct scoring", () => {
+  /** Type the words in one minute: all but the last character at once, that at 60 s. */
+  const minute = (words: string[], script: string) => {
+    const all = [...words.join(" ")];
+    let d = typeText(createDrill(words, script), all.slice(0, -1).join(""), 0);
+    d = typeText(d, all.at(-1)!, 60_000);
+    return stats(d, 60_000);
+  };
+
+  it("counts what the reader sees as one letter, once", () => {
+    // é typed with a dead key is one character, as is آ.
+    expect(minute(["café"], "Latn").correctChars).toBe(4);
+    expect(minute(["آپ"], "Arab").correctChars).toBe(2);
+    // Korean: one syllable block is one character.
+    expect(scoringFor("Hang").length("한국어")).toBe(3);
+  });
+
+  it("counts Indic vowel signs and the virama, which are keys", () => {
+    expect(minute(["कि"], "Deva").correctChars).toBe(2);
+    expect(minute(["क्ष"], "Deva").correctChars).toBe(3);
+    expect(minute(["কি"], "Beng").correctChars).toBe(2);
+  });
+
+  it("matches nukta letters however they were typed", () => {
+    // क़ as one code point (U+0958) or as क + nukta.
+    let d = createDrill(["क़"], "Deva");
+    d = typeText(d, "क़", 0);
+    expect(d.results).toEqual([{ typed: "क़", correct: true }]);
+  });
+
+  it("scores unspaced scripts in characters per minute", () => {
+    expect(scoringFor("Thai").unit).toBe("cpm");
+    expect(scoringFor("Jpan").unit).toBe("cpm");
+    const s = minute(["สวัสดี"], "Thai");
+    expect(s.unit).toBe("cpm");
+    expect(s.netWpm).toBe(scoringFor("Thai").length("สวัสดี"));
+    expect(minute(["hello"], "Latn")).toMatchObject({ unit: "wpm", netWpm: 1 });
+  });
+});
+
+describe("non-Latin lessons", () => {
+  it("teach InScript's vowel signs and virama in real words", async () => {
+    const hi = TYPING_LANGUAGES.find((l) => l.code === "hi")!;
+    const text = await practiceText(hi);
+    const lessons = buildLessons(getLayout("hi-inscript"), text.frequency, text);
+    const home = lessons.find((x) => x.id === "home")!;
+    expect(home.letters).toEqual(expect.arrayContaining(["ि", "\u094D", "क"]));
+    expect(home.words).toEqual(expect.arrayContaining(["के", "कि"]));
+  });
+
+  it("offer Roman spellings that Roman typing turns back into the word", async () => {
+    for (const code of ["hi", "bn", "ar", "fa", "sd"]) {
+      const l = TYPING_LANGUAGES.find((x) => x.code === code)!;
+      const pairs = await romanPairs(l, (await practiceText(l)).frequency);
+      expect(pairs.length, code).toBeGreaterThanOrEqual(40);
+      const layout = romanLayout(l)!;
+      const t = new Transliterator(getScheme(layout.translit!));
+      const { words, next, accents } = decodeDictionary(
+        readFileSync(`../../packages/dictionaries/data/${code}/dict.txt`, "utf8"),
+      );
+      t.setLexicon(makeDictionary(words, next, code, accents).lexicon);
+      for (const [roman, word] of pairs.slice(0, 40)) {
+        expect(roman, code).toMatch(/^[a-z]+$/);
+        expect(t.best(roman), `${code}: ${roman}`).toBe(word);
+      }
+      const lesson = romanLesson(pairs, layout.id);
+      expect(lesson.words).toHaveLength(40);
+      expect(lesson.cues![lesson.words[0]!]).toBe(pairs[0]![1]);
+    }
+  }, 60_000);
+
+  it("name keys from the layout in the tips", () => {
+    expect(TYPING_COPY.fa!.tip).toContain("Shift + B");
+    expect(TYPING_COPY.hi!.tip).toContain("(D)");
   });
 });

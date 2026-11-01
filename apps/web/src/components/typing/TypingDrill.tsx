@@ -33,6 +33,7 @@ import {
   typeText,
   type Drill,
 } from "./drill";
+import { strokeName } from "./keys";
 
 export interface TypingDrillProps {
   drill: Drill;
@@ -51,6 +52,11 @@ export interface TypingDrillProps {
   /** Writing direction and font of the language (default: Urdu's). */
   dir?: "rtl" | "ltr";
   font?: FontId;
+  /**
+   * Roman spelling lessons: the words are typed in English letters, and the box shows each
+   * one as the language writes it (target → shown). The input is then Latin script.
+   */
+  cues?: Readonly<Record<string, string>>;
 }
 
 /** Nastaliq needs tall lines; other scripts are set a little smaller and tighter. */
@@ -64,16 +70,6 @@ const DEFAULT_SIZE = {
   box: "h-[calc(3*1.9em+1rem)] text-[1.35rem] leading-[1.9] sm:text-[1.5rem]",
   input: "h-14 text-[1.35rem]",
 };
-
-/** Physical key names for the hint line, e.g. "Shift + A". */
-const keyName = (code: KeyCode) =>
-  code.startsWith("Key")
-    ? code.slice(3)
-    : code.startsWith("Digit")
-      ? code.slice(5)
-      : (({ Comma: ",", Period: ".", Slash: "/", Semicolon: ";", Quote: "'" } as const)[
-          code as "Comma"
-        ] ?? code);
 
 export default function TypingDrill(props: TypingDrillProps) {
   const { drill, update, layout } = props;
@@ -91,6 +87,11 @@ export default function TypingDrill(props: TypingDrillProps) {
   const dir = props.dir ?? "rtl";
   const font = props.font ?? "nastaliq";
   const size = SIZE[font] ?? DEFAULT_SIZE;
+  const cues = props.cues;
+  // What the input holds: the language, or its English-letter spelling.
+  const typed = cues
+    ? { lang: `${props.lang}-Latn`, dir: "ltr" as const, font: "latin" as FontId }
+    : { lang: props.lang, dir, font };
 
   useEffect(() => setCoarse(hasCoarsePointer()), []);
   useEffect(() => {
@@ -222,7 +223,7 @@ export default function TypingDrill(props: TypingDrillProps) {
           return (
             <span key={i}>
               <span data-current={current || undefined} className={cls}>
-                {word}
+                {cues?.[word] ?? word}
               </span>{" "}
             </span>
           );
@@ -230,6 +231,14 @@ export default function TypingDrill(props: TypingDrillProps) {
       </div>
 
       <div className="flex flex-col gap-1">
+        {cues && !finished && (
+          <p className="text-sm text-muted">
+            In English letters:{" "}
+            <span lang={typed.lang} className="font-mono text-base font-semibold text-text">
+              {target}
+            </span>
+          </p>
+        )}
         <input
           ref={inputRef}
           value={drill.typed}
@@ -240,8 +249,8 @@ export default function TypingDrill(props: TypingDrillProps) {
           onKeyUp={onKeyUp}
           onBlur={() => setPressed(new Set())}
           disabled={finished}
-          lang={props.lang}
-          dir={dir}
+          lang={typed.lang}
+          dir={typed.dir}
           aria-label={props.label}
           aria-describedby="typing-target"
           aria-invalid={!track}
@@ -250,11 +259,11 @@ export default function TypingDrill(props: TypingDrillProps) {
           autoCorrect="off"
           autoCapitalize="off"
           spellCheck={false}
-          className={`${FONT_CLASS[font]} ${size.input} w-full rounded-xl border-2 bg-surface px-4 focus:outline-none disabled:opacity-60 ${
+          className={`${FONT_CLASS[typed.font]} ${(SIZE[typed.font] ?? DEFAULT_SIZE).input} w-full rounded-xl border-2 bg-surface px-4 focus:outline-none disabled:opacity-60 ${
             track ? "border-border text-text focus:border-accent" : "border-bad text-bad"
           }`}
         />
-        <p id="typing-target" className="sr-only" lang={props.lang}>
+        <p id="typing-target" className="sr-only" lang={typed.lang}>
           {finished ? "Finished" : `Type: ${target}`}
         </p>
         {props.hint && !finished && (
@@ -264,9 +273,7 @@ export default function TypingDrill(props: TypingDrillProps) {
               : next === "space"
                 ? "Press Space for the next word."
                 : next
-                  ? `Next key: ${[next.shift && "Shift", next.altgr && "AltGr", keyName(next.code)]
-                      .filter(Boolean)
-                      .join(" + ")}`
+                  ? `Next key: ${strokeName(next)}`
                   : ""}
           </p>
         )}

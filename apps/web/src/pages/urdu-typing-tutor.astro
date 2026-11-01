@@ -1,18 +1,26 @@
 ---
 import wordList from "@okb/dictionaries/ur/words.txt?raw";
-import { getLayout } from "@okb/layouts";
+import { LANGUAGES, getLayout } from "@okb/layouts";
 import TypingPage from "../components/typing/TypingPage.astro";
 import TypingTutor from "../components/typing/TypingTutor";
-import { buildLessons } from "../components/typing/lessons";
+import { buildLessons, romanLesson } from "../components/typing/lessons";
+import { romanPairs } from "../content/typing/practice";
 import { URDU_PASSAGES, URDU_WORDS } from "../content/typing/urdu";
 import { SITE } from "../config/site";
 
 // Lessons are built here, at build time: only the chosen words reach the page.
 const frequency = wordList.split("\n").slice(0, 30_000);
+const pairs = await romanPairs(
+  LANGUAGES.find((l) => l.slug === "urdu")!,
+  frequency,
+);
 const lessons = Object.fromEntries(
   ["ur-phonetic", "ur-standard"].map((id) => [
     id,
-    buildLessons(getLayout(id), frequency, { words: URDU_WORDS, passages: URDU_PASSAGES }),
+    [
+      ...buildLessons(getLayout(id), frequency, { words: URDU_WORDS, passages: URDU_PASSAGES }),
+      romanLesson(pairs, "ur-roman"),
+    ],
   ]),
 );
 
@@ -56,7 +64,7 @@ const faqs = [
     heading: "How the lessons work",
     paragraphs: [
       "Lessons follow the keyboard: the home row first, then the top and bottom rows, then the letters you reach with Shift. Practice words use only letters you have learned so far.",
-      "The last two lessons practise common words and full sentences. When you are ready, measure your speed with the typing test.",
+      "Then come common words and full sentences. The last lesson, Roman spellings, shows common Urdu words and has you type them in English letters, the way the Urdu keyboard's Roman typing turns them into Urdu. When you are ready, measure your speed with the typing test.",
     ],
   }}
   faqs={faqs}
@@ -71,6 +79,8 @@ const faqs = [
     languageName="Urdu"
     nativeName="اردو"
     lessons={lessons}
-    layouts={Object.fromEntries(Object.keys(lessons).map((id) => [id, getLayout(id)]))}
+    layouts={Object.fromEntries(
+      [...Object.keys(lessons), "ur-roman"].map((id) => [id, getLayout(id)]),
+    )}
   />
 </TypingPage>

@@ -1,0 +1,111 @@
+---
+import "@fontsource/noto-naskh-arabic/400.css";
+import "@fontsource/noto-nastaliq-urdu/400.css";
+import "@fontsource/noto-sans-bengali/400.css";
+import "@fontsource/noto-sans-devanagari/400.css";
+import { LANGUAGES, REGIONS } from "@okb/layouts";
+import { FONT_CLASS } from "../components/fonts";
+import { TYPING_LANGUAGES } from "../content/typing/practice";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+/**
+ * The typing hub (plan item 8.1): every language's typing tutor and test, by region, with a
+ * filter by English or native name. Without JavaScript the full list shows.
+ */
+const typing = new Set(["urdu", ...TYPING_LANGUAGES.map((l) => l.slug)]);
+const languages = LANGUAGES.filter((l) => typing.has(l.slug));
+const groups = Object.entries(REGIONS)
+  .map(([key, name]) => [name, languages.filter((l) => l.region === key)] as const)
+  .filter(([, list]) => list.length > 0);
+const count = languages.length;
+---
+
+<Base
+  title={`Typing Tests and Typing Tutors in ${count} Languages | ${SITE.name}`}
+  description={`Free typing tests and touch-typing lessons in ${count} languages, from Urdu, Hindi and Arabic to Spanish and German. Learn the keyboard, check your speed, on a computer or a phone.`}
+>
+  <section class="py-6">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">
+      Typing tests and tutors in {count} languages
+    </h1>
+    <p class="mt-3 max-w-3xl text-muted">
+      Learn a keyboard one row at a time, then measure your speed. Every lesson is built from the
+      layout itself, and speed is counted the way each script is written. Everything works on phones
+      too, and your progress stays on your device.
+    </p>
+  </section>
+
+  <div class="mb-5 max-w-md">
+    <label for="typing-filter" class="mb-1 block text-sm font-medium">
+      Find a language
+    </label>
+    <input
+      id="typing-filter"
+      type="search"
+      autocomplete="off"
+      placeholder="e.g. Hindi, français, اردو"
+      class="h-11 w-full rounded-xl border border-border bg-surface px-4 text-text focus:border-accent focus:outline-none"
+    />
+    <p id="typing-filter-status" class="mt-1 min-h-5 text-sm text-muted" aria-live="polite"></p>
+  </div>
+
+  <div class="flex flex-col gap-6">
+    {groups.map(([name, list]) => (
+      <section aria-label={name} data-group>
+        <h2 class="mb-2 text-sm font-semibold tracking-wide text-muted uppercase">{name}</h2>
+        <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {list.map((l) => (
+            <li
+              data-names={[l.name.en, l.name.native, l.slug, ...l.aliases].join(" ").toLowerCase()}
+              class="flex flex-col gap-3 rounded-xl border border-border bg-surface px-5 py-4"
+            >
+              <span class="flex items-center justify-between gap-2">
+                <span class="text-lg font-medium">{l.name.en}</span>
+                <span
+                  class={`${FONT_CLASS[l.fonts[0]!]} text-2xl text-accent`}
+                  lang={l.lang}
+                  dir={l.dir}
+                >
+                  {l.name.native}
+                </span>
+              </span>
+              <span class="flex flex-wrap gap-2 text-sm">
+                <a
+                  class="inline-flex h-10 items-center rounded-lg border border-border px-3 text-text no-underline hover:border-accent"
+                  href={`/${l.slug}-typing-tutor`}
+                >
+                  {l.name.en} typing tutor
+                </a>
+                <a
+                  class="inline-flex h-10 items-center rounded-lg border border-border px-3 text-text no-underline hover:border-accent"
+                  href={`/${l.slug}-typing-test`}
+                >
+                  {l.name.en} typing test
+                </a>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+
+  <script>
+    const input = document.querySelector<HTMLInputElement>("#typing-filter")!;
+    const status = document.querySelector("#typing-filter-status")!;
+    input.addEventListener("input", () => {
+      const q = input.value.trim().toLowerCase().normalize("NFC");
+      let shown = 0;
+      for (const item of document.querySelectorAll<HTMLElement>("[data-names]")) {
+        const match = !q || item.dataset.names!.normalize("NFC").includes(q);
+        item.hidden = !match;
+        if (match) shown++;
+      }
+      for (const group of document.querySelectorAll<HTMLElement>("[data-group]")) {
+        group.hidden = !group.querySelector("[data-names]:not([hidden])");
+      }
+      status.textContent = q ? `${shown} ${shown === 1 ? "language" : "languages"}` : "";
+    });
+  </script>
+</Base>

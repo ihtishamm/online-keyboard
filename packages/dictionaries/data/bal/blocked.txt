@@ -1,0 +1,402 @@
+# Words and phrases kept out of typing practice. From LDNOOBW
+# (https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words),
+# CC BY 4.0; made by src/blocklist.ts. Build-time only.
+aand
+aandu
+balatkar
+balatkari
+behen chod
+beti chod
+bhadva
+bhadve
+bhandve
+bhangi
+bhootni ke
+bhosad
+bhosadi ke
+boobe
+chakke
+chinaal
+chinki
+chod
+chodu
+chodu bhagat
+chooche
+choochi
+choope
+choot
+choot ke baal
+chootia
+chootiya
+chuche
+chuchi
+chudaap
+chudai khanaa
+chudam chudai
+chude
+chut
+chut ka chuha
+chut ka churan
+chut ka mail
+chut ke baal
+chut ke dhakkan
+chut maarli
+chutad
+chutadd
+chutan
+chutia
+chutiya
+gaand
+gaandfat
+gaandmasti
+gaandufad
+gandfattu
+gandu
+gashti
+gasti
+ghassa
+ghasti
+gucchi
+gucchu
+harami
+haramzade
+hawas
+hawas ke pujari
+hijda
+hijra
+jhant
+jhant chaatu
+jhant ka keeda
+jhant ke baal
+jhant ke pissu
+jhantu
+kamine
+kaminey
+kanjar
+kutta
+kutta kamina
+kutte ki aulad
+kutte ki jat
+kuttiya
+loda
+lodu
+lund
+lund choos
+lund ka bakkal
+lund khajoor
+lundtopi
+lundure
+maa ki chut
+maal
+madar chod
+madarchod
+madhavchod
+mooh mein le
+mutth
+mutthal
+najayaz
+najayaz aulaad
+najayaz paidaish
+paki
+pataka
+patakha
+raand
+randaap
+randi
+randi rona
+saala
+saala kutta
+saali kutti
+saali randi
+suar
+suar ke lund
+suar ki aulad
+tatte
+tatti
+teri maa ka bhosada
+teri maa ka boba chusu
+teri maa ki behenchod
+teri maa ki chut
+tharak
+tharki
+tu chuda
+آب کیر
+آندو
+احتلام
+ارگاسم
+اغتصاب
+اند
+برهنه
+بز
+بزاز
+بظر
+بلتکر
+بلتکری
+بلتڪر
+بلتڪري
+بوبي
+بوبی
+بيتي چونڊ
+بيضان
+بيهن چونڊ
+بھدوا
+بھدوے
+بھندوے
+بھنگی
+بھوسد
+بھوسدی کے
+بھوٹانی کے
+بہن چھوڑ
+بیٹی چھوڑ
+تتي
+تتی
+تجاوز
+تحريڪي
+تحرک
+تحریکی
+تخمی
+تري مان کي بوبا چسو
+تري مان کي بيهينچود
+تري مان کي ڀوسدا
+تري مان کي ڇت
+تمص
+تو چودہ
+تو ڇڏي
+تیری ما کا بوبا کھوسو
+تیری ما کا بھوسدا
+تیری ما کی بیہینچود
+تیری ما کی چھت
+ثدي
+جق
+جقی
+جلق
+جماع
+جنده
+جهنت
+جهنت چٽو
+جهنت کي بال
+جهنت کي قيدي
+جهنت کي پيسو
+جهنتو
+جھنت
+جھنت چھتوں
+جھنت کا کیڑا
+جھنت کے بال
+جھنت کے پیسو
+جھنتو
+حشر
+حشری
+حلمة
+خنثي
+خول
+داف
+دودول
+رند
+رنداپ
+رندي
+رندي رونا
+رندیپ
+رینڈی
+رینڈی رونا
+زب
+سالا
+سالا ڪتا
+سالي رندي
+سالي ڪتي
+سالہ کتا
+سالی رینڈی
+سالی کٹی
+ساک زدن
+سحاق
+سحاقية
+سكس
+سوار
+سوار کي اولاد
+سوار کي لنڊ
+سوار کی اولاد
+سوار کے لوند
+سوپر
+سکس
+سکس کردن
+سکسی
+شاذ
+شرج
+شرموطة
+شق کردن
+شهوة
+شهوت
+شهوتی
+شونبول
+طيز
+عاهرة
+عرص
+غصي
+غصہ
+فرج
+فیلم سوپر
+قحبة
+قضيب
+كس
+لاشی
+لانڈری
+لاپا
+لاپایی
+لبوة
+لحس
+لخت
+لش
+لعق
+لندتوپي
+لندتوپی
+لندري
+لنڊ
+لنڊ چونس
+لنڊ کجور
+لنڊ کي بقال
+لواط
+لودي
+لوطي
+لوند
+لوند چوس
+لوند کا بکل
+لوند کھجور
+لوڏو
+لڈو
+لڑا
+ما کی چھت
+مان کي ڇت
+مبادل
+متناك
+متناكة
+متٿل
+متھلا
+مدار چونڊ
+مدر چھوڑ
+مدرچود
+مدھوچود
+مص
+مفلقسة
+منی
+موته
+موتہ
+موهن ۾ لي
+موہ میں لے
+مڌوچود
+نجيز
+نجيز اولاد
+نجيز پيدائش
+نجیز
+نجیز اولاد
+نجیز پیدائش
+نيك
+هجدا
+هرزه
+هرمزدي
+هرمي
+هوس
+هوس کي پجاري
+ٺڙڪ
+پتاڪا
+پتخا
+پتکا
+پورن
+پورنو
+پٹک
+پکی
+پڪي
+ڀدوا
+ڀدوي
+ڀندوي
+ڀوسد
+ڀوسدي کي
+ڀوٽاني کي
+چاچي
+چتا
+چتد
+چتن
+چتوڑ
+چداپ
+چدم چوڑے
+چدم ڇڏي
+چنکی
+چوتيا
+چودہ
+چوندو
+چوندو ڀڳت
+چونڪي
+چوٹ
+چوٹ کے بال
+چوٹیاں
+چوٽ
+چوٽ کي بال
+چوچول
+چوچي
+چوڑے کہنا
+چٹان
+چپي
+چچی
+چھت
+چھت مارلی
+چھت کا میل
+چھت کا چرن
+چھت کا چوہا
+چھت کے بال
+چھت کے ڈھکن
+چھوڑو
+چھوڑو بھگت
+چھپے
+ڇت مارلي
+ڇت کي بال
+ڇت کي ميل
+ڇت کي چرن
+ڇت کي ڇهه
+ڇت کي ڌڪن
+ڇڏي خانا
+کاتیا
+کتا
+کتا کامنا
+کتے کی اولاد
+کتے کی جات
+کس
+کس دادن
+کس کردن
+کسکش
+کمونے
+کنجر
+کوس
+کون
+کون دادن
+کون کردن
+کونکش
+کونی
+کیر
+کیری
+ڪامڻي
+ڪتا
+ڪتا ڪمن
+ڪتي کي اولاد
+ڪتي کي جت
+ڪينجهر
+ڪٽيا
+گاندفت
+گاندفد
+گاندمستي
+گاندمستی
+گستي
+گستی
+گشتي
+گشتی
+گند
+گندفتو
+گندو
+گهستي
+گچھو
+گچی
+گھستی
+ڳچي
+ہجدا
+ہجرہ
+ہرمزد
+ہرمی
+ہوس
+ہوس کے پجاری

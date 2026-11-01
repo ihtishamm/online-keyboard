@@ -6,6 +6,7 @@ import "@fontsource/noto-sans-devanagari/400.css";
 import { getLanguage, getLayout, languageBundle, layoutSlug } from "@okb/layouts";
 import { getCollection } from "astro:content";
 import { FONT_CLASS } from "./fonts";
+import { TYPING_LANGUAGES } from "../content/typing/practice";
 import KeyboardApp from "./keyboard/KeyboardApp";
 import { allSheets, pdfPath, sheetPath } from "./cheatsheet/sheets";
 import LatinLetters from "./LatinLetters.astro";
@@ -81,6 +82,8 @@ const jsonLd = [
     })),
   },
 ];
+// Urdu's typing pages are its own; the rest come from [lang]-typing-tutor and -test.
+const hasTyping = slug === "urdu" || TYPING_LANGUAGES.some((l) => l.slug === slug);
 ---
 
 <Base
@@ -270,15 +273,15 @@ const jsonLd = [
           <li>{t}</li>
         ))}
       </ul>
-      {slug === "urdu" && (
+      {hasTyping && (
         <p class="mt-4 text-sm">
           Practise:{" "}
-          <a class="text-accent underline" href="/urdu-typing-tutor">
-            Urdu typing tutor
+          <a class="text-accent underline" href={`/${slug}-typing-tutor`}>
+            {language.name.en} typing tutor
           </a>{" "}
           ·{" "}
-          <a class="text-accent underline" href="/urdu-typing-test">
-            Urdu typing test
+          <a class="text-accent underline" href={`/${slug}-typing-test`}>
+            {language.name.en} typing test
           </a>
         </p>
       )}

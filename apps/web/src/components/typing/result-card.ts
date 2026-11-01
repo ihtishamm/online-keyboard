@@ -5,6 +5,8 @@ import { CARD_THEMES, fontStack } from "../keyboard/export/card";
 
 export interface ResultCardOptions {
   wpm: number;
+  /** "WPM" (default) or "CPM" for scripts written without spaces. */
+  unit?: "WPM" | "CPM";
   accuracy: number;
   seconds: number;
   /** e.g. "Phonetic". */
@@ -68,7 +70,7 @@ export async function drawResultCard(
   ctx.fillText(String(o.wpm), size / 2, 600);
   ctx.fillStyle = theme.text;
   ctx.font = `600 44px ${sans}`;
-  ctx.fillText("words per minute", size / 2, 670);
+  ctx.fillText(o.unit === "CPM" ? "characters per minute" : "words per minute", size / 2, 670);
 
   const minutes =
     o.seconds >= 60 ? `${Math.round(o.seconds / 60)} min` : `${Math.round(o.seconds)} s`;

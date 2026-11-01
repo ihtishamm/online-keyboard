@@ -27,8 +27,8 @@
 1068472	Soy tan fuerte como tú.
 1075100	No me acuerdo de su nombre.
 1170913	Su país se ve amenazado por la anarquía.
+1192053	Yo programé mi primer juego de computador a los doce años.
 1248359	Ella me pidió perdón por haberme pisado el pie.
-1260760	Quiero tener sexo con él.
 1264226	Mi hermano pequeño sabe leer en inglés.
 1280107	Mi cuerpo se desvanecerá, como la espuma.
 1281949	Ateo y antirreligioso no son sinónimos.

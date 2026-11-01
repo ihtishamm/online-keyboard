@@ -5,6 +5,8 @@
  */
 import "@fontsource/noto-naskh-arabic/400.css";
 import "@fontsource/noto-nastaliq-urdu/400.css";
+import "@fontsource/noto-sans-bengali/400.css";
+import "@fontsource/noto-sans-devanagari/400.css";
 import { LANGUAGES, type FontId } from "@okb/layouts";
 import Base from "../../layouts/Base.astro";
 import { FONT_CLASS } from "../fonts";
@@ -29,12 +31,16 @@ interface Props {
   lang?: string;
   dir?: "rtl" | "ltr";
   font?: FontId;
+  /** The page's practice sentences are from Tatoeba: credit it. */
+  tatoeba?: boolean;
 }
 
 const p = Astro.props;
 const lang = p.lang ?? "ur";
 const font = p.font ?? "nastaliq";
 const language = LANGUAGES.find((l) => l.slug === (p.slug ?? "urdu"))!;
+const languageCredits = creditsFor(language);
+const credits = { ...languageCredits, tatoeba: languageCredits.tatoeba || !!p.tatoeba };
 const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -64,7 +70,7 @@ const jsonLd = [
 ];
 ---
 
-<Base title={p.title} description={p.description} credits={creditsFor(language)}>
+<Base title={p.title} description={p.description} credits={credits}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
     <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">{p.heading}</h1>
@@ -102,6 +108,11 @@ const jsonLd = [
             </a>
           </li>
         ))}
+        <li>
+          <a class="text-accent underline" href="/typing">
+            Typing tests and tutors in other languages
+          </a>
+        </li>
       </ul>
     </section>
   </div>

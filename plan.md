@@ -402,7 +402,7 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
 - The "Report a wrong word" address is a placeholder until the domain is chosen.
 ---
 
-### Phase 7: Platform for 100 languages, Latin toolkit and Wave 1 (size XL)
+### Phase 7: Platform for 100 languages, Latin toolkit and Wave 1 (size XL) ✅ (owner follow-ups listed under "Not done")
 
 **Why now:** every feature has to be language-generic before languages are added in bulk.
 
@@ -523,22 +523,30 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
 - practice that works on phones;
 - a keyboard tester that also checks layouts and invisible characters.
 
-- [ ] **8.1 Typing test and tutor in every language.**
-  - [ ] Generalise `TypingTest` and `TypingTutor`. Content comes from:
+- [x] **8.1 Typing test and tutor in every language.**
+  - [x] Generalise `TypingTest` and `TypingTutor`. Content comes from:
     - lessons generated from any layout, including phone layouts, plus "learn the Roman spellings" lessons for Roman schemes;
     - drill words from the word list;
     - sentences from **Tatoeba** (CC BY 2.0 FR, credited).
-  - [ ] Sentences are filtered so they:
+  - [x] Sentences are filtered so they:
     - can be typed on the layout;
     - fall within a length range;
     - contain no offensive words (a filter list, plus a manual sample review for Tier A languages).
-  - [ ] URLs: `/<slug>-typing-test` and `/<slug>-typing-tutor` (the Urdu URLs don't change), plus a `/typing` hub with the language picker.
-  - [ ] **Script-correct scoring:**
+  - [x] URLs: `/<slug>-typing-test` and `/<slug>-typing-tutor` (the Urdu URLs don't change), plus a `/typing` hub with the language picker.
+  - [x] **Script-correct scoring:**
     - compare graphemes in NFD (generalised from Urdu);
     - handle Indic conjuncts and vowel signs;
     - Korean counts syllables;
     - Thai and CJK use characters per minute (the norm for them); other languages use WPM.
-  - [ ] Phone test mode (on-screen keys or the phone's own keyboard), with separate personal bests. A result card with the language name in its own script.
+  - [x] Phone test mode (on-screen keys or the phone's own keyboard), with separate personal bests. A result card with the language name in its own script.
+  - **Shipped:** typing tests and tutors for **25 languages** (every one with a key layout; Urdu keeps its own pages), linked from each keyboard page, the home page and the `/typing` hub, which filters by English or native name. Tutor lessons are generated from each layout: rows, Shift, then AltGr and dead keys. On Indic layouts the vowel signs and virama are taught as letters. Every language with a Roman layout, Urdu included, gets a "Roman spellings" lesson: common words shown in the script and typed in English letters. A spelling is kept only when our Roman typing's first choice for it gives the word back.
+  - **Sentences:** `src/typing-sentences.ts` picks 80 Tatoeba sentences per language (5 to 16 words, chosen by a hash, so runs are reproducible). Outside Latin script every word must be in the word list, which drops sentences in neighbouring languages. Pashto has 36 and Shahmukhi 38; Sindhi and Kashmiri have fewer than 20 usable sentences, so their tests offer words only. Each page offers only the layouts that type at least 90 % of its sentences, and drops the sentences those layouts can't type.
+  - **Blocklist:** `data/<code>/blocked.txt` comes from LDNOOBW (CC BY 4.0, §8). Its Roman Hindi list is converted by our own Roman typing into Hindi, Bangla and Arabic script, except where a conversion lands on one of the 3,000 commonest words (those are everyday words). Every Arabic-script language except Arabic and Farsi, which have LDNOOBW lists of their own, shares that Arabic-script list. **Not done:** Romanian, Catalan and Croatian have no LDNOOBW list, so they rely on Tatoeba's own moderation; the manual sample review waits for Tier A.
+  - **Scoring:** graphemes count once (é, a Korean syllable); Indic scripts count every code point, since each vowel sign and virama is a key. Unspaced scripts (Thai, Lao, Khmer, Burmese, CJK) score in CPM; no language using them has shipped yet, so this is unit-tested only.
+  - **Phones:** the drill uses the same on-screen keyboard as the keyboard pages, long-press included, or the phone's own keyboard. Phone bests are kept apart from computer bests. The result card draws the test's title in the language's script and font.
+  - **Tests:** unit tests check that every sentence types on every offered layout, plus the scoring, lessons and blocklist. New e2e tests (`e2e/typing-langs.spec.ts`) cover the hub filter, Hindi on InScript, an Arabic home-row lesson, the Hindi Roman spellings lesson, Arabic RTL on phones, and axe on each page type. `phone.spec.ts` checks the hub and three typing pages at 320 and 360 px. Full suite: 363 e2e passed (desktop, Pixel 7, 360 px Android). WebKit/iPhone wasn't run locally.
+  - **Fixed on the way:** the `phone:` Tailwind variant had compiled to an invalid selector for its landscape half, so phone-only styles (sticky keyboard, keyboard inset) never applied on landscape phones. It now uses the block form. Also fixed a typecheck error in `packages/layouts/scripts/imports.ts`.
+  - **Not done:** the Phase 8 competitor check and beat list (§5.1). They need a browser session against the §3 competitors at 360 px.
 - [ ] **8.2 Practice and games** (original designs; §2).
   - [ ] **Daily challenge:**
     - one passage per language per day, seeded by the date, so it's the same for everyone;
@@ -731,7 +739,8 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | Wikipedia dumps (per language) | Word lists, next-word tables, smart-accent evaluation | CC BY-SA 4.0 (credit; derived lists are CC BY-SA) | In use (13 languages) |
 | Google Dakshina | Roman evaluation and attested spellings for 12 South Asian languages | CC BY-SA 4.0 | Confirmed (repo README) |
 | AI4Bharat Aksharantar | Roman evaluation for other Indic languages | Split: CC BY for the manually collected part, CC0 for the mined part (AI4Bharat page) | Check the Hugging Face card and the IndicXlit repo before use |
-| Tatoeba | Typing-test sentences; everyday words and the spell-check test for Latin languages | CC BY 2.0 FR (some CC0); credit with a link | In use (14 Latin languages) |
+| Tatoeba | Typing-test sentences; everyday words and the spell-check test for Latin languages | CC BY 2.0 FR (some CC0); credit with a link | In use (typing sentences for 22 languages; word lists for 14 Latin ones) |
+| LDNOOBW word lists | Blocklist for typing tests, lessons and games (build time only) | CC BY 4.0 (credited in the package README) | In use (13 languages, plus Hindi, Bangla, Urdu and Sindhi converted from its Roman Hindi list) |
 | Unicode CLDR 43 | Keyboards, emoji names | Unicode License v3 | In use |
 | SIL Keyman keyboards | Layouts | Mostly MIT (per keyboard) | In use; check each one |
 | xkeyboard-config | Latin and Cyrillic national layouts | X11/MIT-style, varies by file | Check per file |

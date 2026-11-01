@@ -1,82 +1,82 @@
 # Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
 # sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
-372634	Visa mig ett annat exempel.
-410141	Han visade mig sin frimärkssamling.
-421450	Jag gillar varken den ena eller den andra kakan.
-651240	Ett ögonblicks tvekan kan kosta en pilot livet.
-880549	Vad vill ni ha att dricka? Kaffe?
-883045	Jag vet att jag inte vet.
-892968	Vi ska se en utländsk film ikväll.
-921409	Kan du inte skriva med kulspetspenna?
-1125614	Det är skönt att stiga upp tidigt.
-1125764	Jag har aldrig träffat dig i verkligheten.
-1304949	Vältränade tjejer med god självkänsla är snygga. Men man får inte banta för mycket.
-1507918	Vad är det för filtillägg?
-2000144	Min son är längre än jag.
-2030827	Huset brann ner till grunden.
-2085853	Jag har så många idéer.
-2122091	Det återstår att se om jag kan komma i tid.
-2127904	Jag förstår inte vad hon försöker säga.
-2141941	De är spända på att få veta vad som hände.
-2171206	Han röstar alltid på Alliansen.
-2181776	Han har ingen riktig arkitektutbildning, men han jobbar ändå på landets finaste arkitektkontor.
-2193521	Jag kan inte riktigt minnas.
-2212849	De fann diverse attrapper i mannens lägenhet.
-2224192	På grund av sjukdom kunde jag inte delta vid mötet.
-2266571	Titta på pojken bredvid bilen.
-2455266	Jag vet inte om vi kan hjälpa dig eller inte.
-2455292	Jag vill ha en förklaring.
-2502216	Hans hälsa är sämre och sämre.
-2511470	Hon var tvungen att avreagera sig.
-3124103	Med tiden så förstod han vad de menade.
-3554852	Två år har gått sedan dess.
-3720920	Spaden hade frusit fast i marken.
-3720986	Nu är det dags att göra rent hus med gamla fördomar.
-3740927	Det var inte förrän i går som jag nåddes av nyheterna.
-3742877	Hon kan inte heller komma.
-3784212	Det kommer ett vattenfall längre fram.
-3844381	Kan jag få träffa dem?
-3873201	Det här är den vackraste solnedgång som jag någonsin sett.
-4335652	Vi gick redan igenom det där.
-4349909	Det är ett svårt ord att uttala.
-4360525	Hennes röst ekade i korridoren.
-4407022	Många européer besöker Egypten varje år.
-4421252	Det är roligt att göra snöänglar i snön.
-4442472	Den här kon är inte brännmärkt.
-4442710	Nu är vi tillsammans igen.
-4455615	Jag har bestämt mig att gifta mig med henne.
-4477509	Det är lättare än det ser ut.
-5301906	Låt oss prata tystlåtet för att inte väcka bebisen.
-6332657	Han är min farbror, eftersom min far är hans bror.
-6780112	Jag har lovat att aldrig göra det där igen.
-8427087	Hur allvarligt är det här problemet?
-8428969	Det är svårt att tänka mig att jag en dag kan vara rörelsehindrad.
-8757153	Jag uppskattar verkligen er vänlighet.
-8781003	En elefant äter en spindel.
-8804135	Naturen är full av mysterier.
-8955663	Varför måste vi hjälpa henne?
-8955690	Hon frågade mig om provresultatet.
-9039647	Din son är en man nu.
-9117247	Presidenten vill ha fred, eller hur?
-9168760	Det här ordet är dubbeltydigt.
-9230486	Den korta kvinnan har på sig en grå kostym.
-9234957	De där böckerna är hennes.
-9703807	Att simma är min hobby.
-9773433	Säg mig vad jag ska tänka!
-10006905	Priset på ris har stigit med tre procent.
-10015905	Vi får en ny magister i morgon.
-10201669	Ska vi gå till tunnelbanan?
-10334880	Fågeln är i sitt bo.
-10598874	Hon sade till mig att hon var förbryllad.
-10670591	Han sydde en klänning åt mig.
-10686388	Den är för liten för mig.
-10692695	Vattnet här är mycket grunt.
-10957261	Det var början på en stor kärlek.
-11068747	Han gjorde inga försök att freda sig.
-11170276	Jag vet vad som hände.
-11186539	Det är okej att vara rädd.
-11282002	Tycker din pojkvän om te?
-11907546	Slog det dig inte att stänga fönstren?
-12105292	Hur räknar man till tio på franska?
-12107179	Har du någonsin läst Koranen?
-13872262	Skynda er, annars kommer ni försent till lunchen.
+401443	En bra lärare måste vara tålmodig med sina elever.
+895285	Tålmodighet är den vackraste dygden.
+898879	Kan du förklara vad det här är?
+912925	Jag frågade vem han var.
+923943	Soldaterna var utrustade med vapen.
+1970052	Ingen av dem deltog på mötet.
+1971735	För henne är det en förolämpning.
+1975080	Skulle du vilja ha lite äggröra?
+2027031	Jag är precis som du.
+2030843	Det var en tyst natt i vintertid.
+2043741	Jag kan bara inte sova.
+2043763	Jag tyckte om din historia.
+2051923	Jag tror att jag är kär.
+2175081	Vad kostar den här kulspetspennan?
+2178301	Taket på mitt hus är rött.
+2205943	Bilderna ligger på en cd-skiva någonstans.
+2212881	Boken auktionerades ut för femhundraåttio kronor.
+2216848	Hur svårt ska det vara?
+2228074	Sådant kan hända då och då.
+2261604	Detta var en skön känsla.
+2373680	Varför går du inte och lägger dig lite tidigare om kvällarna?
+2513567	Tidningen avslöjade en väl bevarad hemlighet.
+2611905	Att ta genvägar sparar pengar på kort sikt men förlorar kunder på lång sikt.
+3036122	Jag såg den med mina egna ögon.
+3126522	Han har alltid velat hålla i en orm.
+3130219	Vad som helst blir bra.
+3713778	Det ligger på ditt bord.
+3717910	Den randiga slipsen passar inte till den rutiga kavajen.
+3720902	Det finns gott om idioter i den här världen.
+3784547	Vi visste allt om den.
+3834591	Jag var i Kanada då.
+3847624	Vad som är tillåtet för Jupiter, är inte tillåtet för oxen.
+3881289	Du skulle inte finna nöje i det.
+4158332	Pedro, hur många språk kan du?
+4167967	Jag drack inte te igår.
+4168050	Var snäll och säg svaret på frågan.
+4193881	Teddybjörnen hade definitivt sett sina bästa dagar, men trots det var den Toms käraste leksak.
+4326691	Jag är på din sida.
+4338514	Jag känner mig som en slav.
+4344148	Berätta för mig hur man gör.
+4450807	Hur långt ifrån havet är vi?
+4451337	Det här är rätt dyrt.
+5118646	Det här är en av Toms favoritböcker.
+5120833	Var snälla mot alla djur.
+5143306	Ekorren blundade och började räkna hasselnötter.
+5204053	Det är det jag är så stolt över.
+5204084	Jag tror inte att jag ska gå på college.
+5264062	Det är utan tvekan en av de värsta idéer jag någonsin hört.
+5928429	Din attityd gentemot kvinnor är stötande.
+6363889	Jag tror att Sami tyckte om det.
+6392213	Sami och Layla är lika gamla.
+7043742	Jag blev övertygad av hans förklaring.
+7044054	Ingen pratar med mig längre.
+7046026	Klockan fyra gick han till frisören.
+7684575	Nej, det är jag inte, utan du!
+8425782	Vem har haft sönder den här?
+8805577	Jag förstår inte vad du menar.
+8972706	Skomakare, bliv vid din läst!
+9084179	Hon kommer att säga åt honom att inte göra det.
+9222298	Se upp med vad du säger.
+9557234	Om jag skulle börja gråta, så skulle jag inte kunna sluta.
+9737250	Min fasters barn är min kusin.
+9807303	Att döma av hans accent är han från Osaka.
+9835370	Jag läste i en bok medan jag åt.
+9837424	Hit med pengarna eller så får du stryk!
+9857422	Om det regnar i morgon så går jag inte på mötet.
+9943652	Skicka fakturan hem till mig.
+10056013	Det är som att få en hink kallt vatten över huvudet.
+10125889	Tog du med dig en hårtork?
+10667942	Jag ville inte döda någon.
+10667971	Jag föreslår att du gör det idag.
+10714478	Varför är ni rädda för Derek?
+10749465	Har du sett hennes nya video?
+10857253	Litet barn, stor skål, stor sked.
+10928677	Jag vill att du skriver ett brev på franska.
+11163961	Oroa er inte. Det här kommer inte att hända igen.
+11910659	Jag skulle vilja åka skidor.
+11946770	Jag har tidigare arbetat som översättare.
+12097233	Jag tvivlar på att det kommer att snöa i morgon.
+12110635	Du vet inte vad hon gjorde mot mig.

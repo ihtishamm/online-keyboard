@@ -19,6 +19,8 @@ faqs:
     a: "Hold Shift and press B, J, F or Q. On a phone, tap Shift first, then the letter."
   - q: "Do I need to install anything?"
     a: "No. The keyboard runs in your browser on Windows, Mac, Linux, Android and iPhone. There is nothing to download."
+  - q: "Can I learn to type Saraiki here?"
+    a: "Yes. The Saraiki typing tutor teaches this keyboard one row at a time, with the next key lit up, and the Saraiki typing test measures your speed. Both are free and work on phones."
   - q: "Is my text private?"
     a: "Yes. Your text is saved only in this browser on this device. It is never sent to our servers."
 ---

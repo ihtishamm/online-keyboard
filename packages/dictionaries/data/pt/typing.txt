@@ -25,6 +25,7 @@
 1682937	Não posso consertar esta máquina. É muito difícil.
 1848981	Eu gosto do logotipo do Tatoeba.
 2105765	Esse vestido combina com o seu cabelo ruivo.
+2211114	Ele veio para cima de mim com um revólver.
 2363822	Qual é o grande segredo?
 2429872	Por favor, leia este livro.
 2634595	Quando foi a última vez que você leu um livro?
@@ -43,12 +44,10 @@
 3455535	Vamos levar as crianças ao zoológico.
 3551334	Você vai se danar se sua namorada souber a verdade.
 3963643	Eu odeio o meu computador.
-4108895	Portanto, o simples estar em companhia dela era praticamente um consolo.
 4170964	Você acha que eu deveria aceitá-lo?
 4182746	Eu trabalho todos os dias desde cedo de manhã até tarde da noite.
 4196533	Eu prefiro estudar de noite.
 4247027	Você tem algo a acrescentar?
-4374528	Ele morreu e sua alma foi para o inferno.
 4546075	De repente, cessou a conversa.
 4593943	Eu gostaria mesmo de encontrar Kumiko.
 4814758	É verdade que o consumo de carne bovina é proibido na Índia?
@@ -57,6 +56,7 @@
 5028340	Eu vou chamar um táxi para você.
 5045456	O esquilo está comendo pizza.
 5070931	É um pouco tarde e ainda não fizemos a lição de casa.
+5124315	É Dia das Mães hoje.
 5127139	Estou satisfeito com os resultados.
 5160544	Ele tem uma câmera fotográfica idêntica à minha.
 5363027	Eles estão esperando lá fora.

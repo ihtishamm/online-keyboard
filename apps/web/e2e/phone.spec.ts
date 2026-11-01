@@ -48,6 +48,23 @@ for (const path of ["/urdu", "/arabic", "/hindi", "/urdu/roman", "/bangla"]) {
   });
 }
 
+// Typing pages (plan item 8.1): the hub, and the longest layout names and RTL/Indic text.
+for (const path of [
+  "/typing",
+  "/hindi-typing-test",
+  "/arabic-typing-tutor",
+  "/spanish-typing-test",
+]) {
+  test(`${path}: fits 320 and 360 px without sideways scrolling`, async ({ page }) => {
+    for (const width of [360, 320]) {
+      await page.setViewportSize({ width, height: 640 });
+      await page.goto(path);
+      await page.waitForLoadState("networkidle");
+      await noSidewaysScroll(page);
+    }
+  });
+}
+
 test("fits a 320 px phone without sideways scrolling", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 640 });
   await open(page, "/urdu");

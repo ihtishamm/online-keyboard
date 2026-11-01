@@ -8,7 +8,8 @@
     "./ur/words.txt": "./data/ur/words.txt",
     "./*/dict.txt": "./data/*/dict.txt",
     "./results/*.json": "./results/*.json",
-    "./*/chat.tsv": "./data/*/chat.tsv"
+    "./*/chat.tsv": "./data/*/chat.tsv",
+    "./blocked": "./src/blocked.ts"
   },
   "scripts": {
     "build:words": "node src/build.ts",

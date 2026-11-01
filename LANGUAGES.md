@@ -6,16 +6,16 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Language | Script | Tier | Word list | Spell check | Roman top-1 | Voice | Missing for the next tier |
 |---|---|---|---|---|---|---|---|
 | Urdu (/urdu) | Arab | B | yes | yes | 87.8 % | ur-PK, ur-IN | native-speaker review |
-| Arabic (/arabic) | Arab | – | yes | Beta | 68.7 % (Beta) | ar-SA, ar-EG, ar-AE, ar-JO, ar-LB, ar-IQ, ar-KW, ar-QA, ar-MA, ar-DZ, ar-TN | typing tutor |
-| Farsi (/farsi) | Arab | – | yes | Beta | 81.4 % (Beta) | fa-IR | typing tutor |
-| Pashto (/pashto) | Arab | – | yes | yes | 66.2 % (Beta) | no | typing tutor |
-| Sindhi (/sindhi) | Arab | – | yes | Beta | 54.6 % (Beta) | no | typing tutor |
-| Punjabi (Shahmukhi) (/shahmukhi) | Arab | – | yes | yes | 86.2 % (Beta) | no | typing tutor |
-| Saraiki (/saraiki) | Arab | – | yes | yes | 71 % (Beta) | no | at least 4 FAQs; typing tutor |
-| Balochi (/balochi) | Arab | – | no | no | 53.1 % (Beta) | no | at least 4 FAQs; typing tutor |
-| Kashmiri (/kashmiri) | Arab | – | yes | Beta | 61.7 % (Beta) | no | at least 4 FAQs; typing tutor |
-| Hindi (/hindi) | Deva | – | yes | Beta | 42.5 % (Beta) | hi-IN | typing tutor |
-| Bangla (/bangla) | Beng | – | yes | Beta | 39.4 % (Beta) | bn-BD, bn-IN | typing tutor |
+| Arabic (/arabic) | Arab | C | yes | Beta | 68.7 % (Beta) | ar-SA, ar-EG, ar-AE, ar-JO, ar-LB, ar-IQ, ar-KW, ar-QA, ar-MA, ar-DZ, ar-TN | spell check meets its targets |
+| Farsi (/farsi) | Arab | C | yes | Beta | 81.4 % (Beta) | fa-IR | spell check meets its targets |
+| Pashto (/pashto) | Arab | B | yes | yes | 66.2 % (Beta) | no | native-speaker review |
+| Sindhi (/sindhi) | Arab | C | yes | Beta | 54.6 % (Beta) | no | spell check meets its targets; typing test with words and sentences |
+| Punjabi (Shahmukhi) (/shahmukhi) | Arab | B | yes | yes | 86.2 % (Beta) | no | native-speaker review |
+| Saraiki (/saraiki) | Arab | B | yes | yes | 71 % (Beta) | no | native-speaker review |
+| Balochi (/balochi) | Arab | C | no | no | 53.1 % (Beta) | no | word list of 20k+ words; spell check meets its targets |
+| Kashmiri (/kashmiri) | Arab | C | yes | Beta | 61.7 % (Beta) | no | spell check meets its targets; typing test with words and sentences |
+| Hindi (/hindi) | Deva | C | yes | Beta | 42.5 % (Beta) | hi-IN | spell check meets its targets |
+| Bangla (/bangla) | Beng | C | yes | Beta | 39.4 % (Beta) | bn-BD, bn-IN | spell check meets its targets |
 | Spanish (/spanish) | Latn | B | yes | yes | – | es-ES, es-MX, es-US, es-AR, es-CO | native-speaker review |
 | French (/french) | Latn | B | yes | yes | – | fr-FR, fr-CA, fr-BE, fr-CH | native-speaker review |
 | Italian (/italian) | Latn | C | yes | Beta | – | it-IT, it-CH | spell check meets its targets |

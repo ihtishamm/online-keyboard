@@ -1,82 +1,82 @@
 # Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
 # sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
-417235	Hij is snel op zijn tenen getrapt.
-519912	Natuurlijk zou ik willen gaan, maar ik ben bang dat ik het te druk heb.
-674672	Ik heb een pop gemaakt voor Ana.
-791856	Een overwinning behaald met geweld is evenveel waard als een nederlaag, want ze is maar tijdelijk.
-798346	Hij heeft verschillende keren geprobeerd van het roken af te raken, maar het is niet gelukt.
-863405	We kwamen overeen het huishoudelijk werk te verdelen.
-959097	Nee, zet maar op mijn rekening.
-1009340	Ge zoudt uw ouders minstens eens per maand moeten opbellen.
-1105911	Ik vraag me af of hij vannacht zal komen.
-1532713	Ik wil je nog zien voor ik naar Europa vertrek.
-2023544	Ik weet het niet, en ik wil het niet weten.
-2244205	Drinkt u thee of koffie?
-2337685	Ik heb je alles verteld.
-3493073	Het ziet ernaar uit dat hij hard berispt was.
-3616020	De mannen praten met elkaar.
-3632903	Bedankt dat je teruggekomen bent.
-4029808	Ik zou graag hebben dat jullie onmiddellijk na het ontbijt het gras maaien.
-4218551	Ik denk dat je naar een deeltijdbaan moet zoeken.
-4248555	Ik zweer dat het niet mijn fout was.
-4450520	Kunt u mij vertellen hoe deze wasmachine gebruikt moet worden?
-4454608	Ik kan geen ander initiatief nemen.
-4695957	Ik zag een spin lopen op het plafond.
-4927505	Laten we het niet over school hebben.
-5340031	De lucht was vol met vliegtuigen.
-5367605	Zeg me hoe je het hebt gedaan.
-5934634	De twee mannen hebben elkaar persoonlijk ontmoet.
-5993090	Hoe kon ze zoveel eten?
-6133171	Ik kan niet naar de bioscoop gaan, ben blut.
-6218858	Schreeuwen is echt niet nodig.
-6388059	Je wordt dunner van dat dieet, maar word je ook gezonder?
-7105841	Veel studenten hebben niet veel geld.
-7548851	Jij bent mijn lerares en mijn vrouw!
-7894929	Ze eet elke dag chocolade.
-7907442	Doha is de hoofdstad van Qatar.
-7915695	Laten we onze overwinning vieren.
-7952492	Hij stond in dubio, zou hij morgen of vandaag naar de kapper gaan.
-7958396	Je kan dit maar beter weggooien.
-8083753	Ik dacht dat iedereen honger had.
-8434526	Kom morgen naar ons toe!
-8508487	Omdat ze naar de televisie zitten te kijken.
-8538171	Vertel niemand dat ik hier ben.
-8558233	De jongen besloot om voor een fles verse melk naar de melkboer te gaan.
-9009926	Ik ga naar de sauna.
-9255049	Zij zijn aan het uitstellen.
-9266387	Ik had geen flauw vermoeden dat het daar was.
-9499836	Heb je een leuke kerst gehad?
-9521899	Mijn vrouw en ik deden onze kerstinkopen in oktober.
-9666460	Maak je je geen zorgen?
-9928813	We hebben besloten om Australië te verlaten.
-10018950	Laten we met hem gaan praten.
-10024329	Er waren daar acht kiezels.
-10028122	Maar zijn glimlach verloor hij niet, zelfs niet in die verontrustende situatie.
-10057803	De show wisselt sketches en liedjes af.
-10634738	Ik wou dat ik je niet had gekust.
-10734963	Hij heeft niet veel verbeeldingskracht, hè?
-10740753	Er zijn geen bloemen hier.
-10756810	Ik kocht die van haar.
-10787566	Hij is in slaap gevallen terwijl hij aan haar dacht.
-11213339	Je moet meteen een arts bellen.
-11524631	Ze heeft zich daarbij verwond.
-11555968	Je hoeft je geen zorgen te maken.
-11557027	Ik heb een scheerbeurt nodig.
-11603973	Veel van mijn jeugdvrienden kwamen ook.
-11760853	De wijn smaakte slecht, dus goot ik hem weg.
-11760855	Ik schonk melk in een glas en dronk het.
-11903296	Dagelijkse lichaamsbeweging is essentieel voor een goede gezondheid.
-12047056	Is dat waarom je gestopt bent?
-12852582	Zeker, ik kan echt niet meer zonder.
-12992631	Hij heeft nooit liefde gekend.
-13008095	Lucía zag er op haar eerste echo uit als een pinda.
-13028588	De polyglotte dichter heeft soms zin om alle gedichten die hij heeft geschreven te vertalen.
-13204390	Het maakt me allemaal niet zo veel uit. Ik eet alles.
-13349711	Epstein heeft geen zelfmoord gepleegd.
-13537389	Ze was in goede gezondheid.
-13580364	Het cakeje was oud en beschimmeld.
-13604944	Het Duits kent vier naamvallen.
-13650354	Een kat is ook prima.
-13787846	Zijn huid rook naar suikerspin.
-13971890	Het spijt mij echt dat ik je deze morgen niet heb geloofd.
-14009350	Dat zal ik waarschijnlijk nooit hoeven te doen.
+403211	Wanneer ze in gevaar zijn, vluchten ze.
+418683	Lees het zo voor dat iedereen het kan horen.
+422847	Jij raapt nog geen stro van de aarde.
+450318	Zonder tv kan ik niet leven.
+847705	Ik neem alles terug wat ik gezegd heb.
+935688	Hoe gaan we dat aanpakken?
+1033068	Tegenover het park is er een mooie rivier.
+1355304	Dat wil ik ook weten.
+1532798	Helaas ging mijn reis naar Indonesië ging niet door, omdat ik niet genoeg geld kon sparen.
+1620907	Dit is de plaats waar ze werkt als secretaresse.
+1622221	Ik hou ervan wanneer je me op de lippen kust. Neen, op de wang.
+3395396	We kunnen hem missen als kiespijn.
+3547133	Dit is nogal grof, vind je niet?
+3600691	Zou je graag veel geld willen hebben?
+3959083	Hoeveel neuronen zitten er in dit menselijke brein?
+3985403	Zij is een egoïstisch persoon.
+4029840	Het is aan het sneeuwen.
+4230040	Het oude echtpaar had geen kinderen.
+4454645	Hij speelde het klaar ondanks alle problemen.
+4454653	Hij betrapte een jongen die zijn horloge aan het stelen was.
+4553167	Er zijn geen meisjes op het internet.
+5461141	Zeg het alsjeblieft tegen niemand anders.
+5984407	Je wordt er beter in als je blijft oefenen.
+6128095	Ik ben bang voor tandartsen.
+6201293	Op de tafels liggen enkele schriften en potloden.
+7052629	Het is niet erg duurzaam.
+7307728	Ik zou graag willen weten waarom je hier bent.
+7432101	Excuseer, staat u me toe drie fouten in het bovenstaande artikel te vermelden.
+7459486	Sami downloadde Layla haar video.
+7460335	Ik heb gisteren vis gegeten.
+7645110	Voor welk voedsel zijn jullie allergisch?
+7680586	Hij was aan het jagen.
+7897503	Dit bed is te zacht.
+7898077	Wie heeft u Frans geleerd?
+7902245	Schiet op, anders missen jullie de bus.
+7906708	Kunt u ook in het Italiaans tellen?
+7912107	Ik moet met Susan praten.
+7996200	Ik vraag niet om jouw mening.
+8005336	Alle details van het project hebben reden van bestaan.
+8075382	Ik ben blij, want vanaf vandaag, hebben we tot september geen school.
+8093269	Ik ben bang om te sterven.
+8110774	Ik moet nog een paar vragen stellen.
+8112720	Ik hou van mijn ouders.
+8228947	Moeten we naar school komen aanstaande maandag?
+8234305	Je bent te jong om een rijbewijs te krijgen, toch?
+8381368	De aarde is te klein.
+8657395	Laat me uw tong zien.
+9484206	Mama had veel te doen.
+9522943	Het gezicht van het kind straalde als de zon toen hij de kerstman zag.
+9642577	Ik ben niet in staat om dat te doen.
+9666293	Niemand is me ooit komen bezoeken in het ziekenhuis.
+9869675	Heb je onlangs onverklaarbare pijn of stijfheid in je nek gevoeld?
+9930886	Hoe kan het dat je mij nooit verteld hebt dat je uit Boston komt?
+9944266	Waar kan ik koffie kopen?
+10040617	Wie heeft dat voor jullie gekocht?
+10209061	Hij weet wie we zijn.
+10633601	Ik sta normaal niet zo vroeg op.
+10634589	Ik moet de appels schillen.
+10645816	De muziek is te hard.
+10784121	Ik wil dat je meegaat.
+10834448	Ik heb warm water nodig.
+10891224	Het spijt me dat ik niet voldoe aan jouw vooropgestelde ideeën over perfectie.
+11086948	Ik weet niet hoe dit heet.
+11305336	Soms val ik tijdens de les in slaap.
+11388515	Er ligt iets onder het bed.
+11515208	Ik voel me het gelukkigst wanneer ik op school ben.
+12142272	De studenten luisteren naar een geschiedenisles.
+12151842	We zijn ver van het centrum.
+12326795	Ik weet niet of ik van mijn ouders naar buiten mag.
+12334344	Dat moet je zelf weten.
+12471579	Ik doe dat wanneer Pasen op een donderdag valt.
+12854058	Ik laat je morgen weten of ik met de auto kom.
+12857151	Hij barstte bijna in tranen uit van dankbaarheid.
+12999491	Mijn goede voornemens zijn dat ik minder ga werken en meer ga leven.
+13460488	Ik kon mijn nies niet bedwingen.
+13604948	Ik zou graag met jullie mee willen maar ik heb geen geld.
+13815636	Ziri is al een volwassene.
+13816185	Lorenzo ging terug naar beneden om tv te kijken.
+13904551	Wij wonen in de bergen.
+13954340	De broer van mijn vrouw is een rechter.

@@ -202,6 +202,19 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
             {"."}
           </p>
         )}
+        {!credits.wikipedia && credits.tatoeba && (
+          <p>
+            {"Practice sentences are from "}
+            <a class="underline" href="https://tatoeba.org/">
+              Tatoeba
+            </a>
+            {" ("}
+            <a class="underline" href="https://creativecommons.org/licenses/by/2.0/fr/">
+              CC BY 2.0 FR
+            </a>
+            {")."}
+          </p>
+        )}
       </div>
     </footer>
     {import.meta.env.PROD && <script is:inline>

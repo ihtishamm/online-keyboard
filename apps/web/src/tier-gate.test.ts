@@ -13,7 +13,7 @@ import { LANGUAGES, getLayout, type Language, type Tier } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
 import { allSheets } from "./components/cheatsheet/sheets";
 import { accentAccuracyFor, accuracyFor } from "./content/accuracy";
-import { TYPING_LANGUAGES } from "./content/typing/latin";
+import { TYPING_LANGUAGES } from "./content/typing/practice";
 
 const WEB = process.cwd();
 const ROOT = join(WEB, "../..");
@@ -32,8 +32,10 @@ function checks(l: Language): { C: Check[]; B: Check[]; A: Check[] } {
   const copy = readFileSync(join(WEB, `src/content/languages/${l.slug}.md`), "utf8");
   const faqs = copy.match(/^ {2}- q:/gm)?.length ?? 0;
   const sheets = new Set(allSheets().map((s) => s.layoutId));
-  // A page of its own (Urdu), or the Latin-script routes [lang]-typing-tutor and -test.
+  // A page of its own (Urdu), or the routes [lang]-typing-tutor and -test.
   const typing = TYPING_LANGUAGES.some((x) => x.slug === l.slug);
+  // Tier B asks for a test with sentences too: Tatoeba's, or Urdu's own passages.
+  const sentences = l.slug === "urdu" || existsSync(join(DICTS, `data/${l.code}/typing.txt`));
   const page = (name: string) => typing || existsSync(join(WEB, `src/pages/${name}.astro`));
   const stats = join(DICTS, `data/${l.code}/stats.json`);
   const words = existsSync(stats)
@@ -55,7 +57,10 @@ function checks(l: Language): { C: Check[]; B: Check[]; A: Check[] } {
         name: "smart accents meet their target",
         ok: l.script !== "Latn" || (accentAccuracyFor(l.code)?.meetsTarget ?? false),
       },
-      { name: "typing test", ok: page(`${l.slug}-typing-test`) },
+      {
+        name: "typing test with words and sentences",
+        ok: page(`${l.slug}-typing-test`) && sentences,
+      },
     ],
     // Native-speaker review and the held-out message test need evidence we do not have yet.
     A: [{ name: "native-speaker review", ok: false }],

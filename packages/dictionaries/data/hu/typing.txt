@@ -1,82 +1,82 @@
 # Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
 # sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
-642507	A japán vállalatok nagy hangsúlyt fektetnek a hierarchiára.
-658706	A nagybácsi megajándékozta az unokaöccsét.
-689364	A szén az aknán keresztül érkezik a felszínre.
-719156	Tegyen sót a forrásban lévő vízbe.
-774764	Egy reggel felébredtem és arra eszméltem hogy híres vagyok.
-853591	Ki a fillért nem becsüli, a forintot nem érdemli.
-1908039	Ez a ház jól néz ki.
-2102328	Fontos, hogy emlékezz rá, hogy kik a barátaid.
-2115679	Nem szeretem a matematikát, a fizikát még kevésbé.
-2134389	Szívesebben mennék taxival, mint gyalog.
-3081501	Havai egy népszerű turisztikai célpont.
-3115945	Muszáj leadnom egy keveset. Az öreg farmerjaim nem lesznek jók rám!
-3167034	Mindenki tudja, hogy ez a vegyszer ártalmas az emberre.
-3266257	Kecses kezei és lábai voltak, nagy feje és kerek szemei.
-3277875	Nagyon sok dolog van, amit holnapig el kellene végezni, de már nem fog menni.
-3572568	Nem tudtam elképzelni, hogy valaha is elveszítem a szüleimet.
-3605606	Senki nem akar veled dolgozni.
-3690000	Péter egy szép gyűrűvel kedveskedett Évának.
-3745432	A helyedben én ezt nem tűrném tovább.
-3765464	Péter mindenkivel kötekszik a munkahelyén.
-3800729	A szekrény mellett van az ablak.
-3844412	Miért nem álltál meg, amikor mondtam?
-3927580	Jobban bízott a lábaiban, mint a kezeiben.
-3968344	Muszáj volt megszegnem az ígéretemet, amit a lányomnak tettem.
-3999876	Minket nagyon zavar a barátnőd viselkedése.
-4029920	Most a sógoromról van szó?
-4034717	Dani megtudta, hogy Linda elhunyt.
-4044712	Egy hónapban lehet öt hét is.
-4082697	Mire itt lesznek a vendégek, te tök részeg leszel.
-4118192	És ezt míóta gondoljátok így?
-4163482	Most én vagyok a főnök.
-4232837	Lélegezz mélyen, és akkor meg tudsz nyugodni.
-4245744	Ki is eshetett volna a gyerek az ablakon!
-4265393	Jó lesz, ha elköltözöm innen.
-4398227	A vulkán már jó régóta inaktív.
-4425077	Még mindig időre van szükségem.
-4436083	Egyszer mindenki meg fog halni.
-4459896	Van egy feladatom a számodra.
-4475129	Célszerű csütörtökön vásárolni, amikor a gyümölcs és a zöldség frissebb.
-4486983	Talán szükséged van még rám?
-4541212	A világon csak egy igazság van!
-4589689	Lehet, hogy ez nekem is jót tenne?
-4600274	Volt egy kis összetűzésem a szomszédommal.
-4620830	Apád nagyon szerette ezt a szállodát.
-4672392	Sok minden jár a fejemben.
-4673872	Éva nem fekszik le velem.
-4719056	A jövőben tartózkodj a látogatóktól!
-4762185	Még van egy kevés tej a hűtőben.
-4819726	Mindkettőjüket szerette, és ők is mindketten szerették.
-4847460	Négy évenként választunk egy elnököt.
-4851627	Biztos vagyok benne, hogy jó móka lesz.
-4883003	A szívem olaszként érez, az agyam németként gondolkodik.
-4961664	Ez a tintafolt nem akar kijönni.
-4975799	Tomi összecsukta a laptopját és felállt.
-5007193	Megérkeztek a lányok a másik osztályból, mi átengedtünk nekik pár padot.
-5066223	Félő, hogy ez a beszéd hosszú lesz.
-5191759	A méreg szétterjedt a testében.
-5243424	Az emberek saját földet akarnak.
-5259510	Miért nem vacsizol velem ezen az estén?
-5441045	Hiszen még el sem kezdtük!
-5540997	Az a doboz nagyobb ennél.
-5727235	Tomi egész nap az íróasztalnál szokott ülni.
-5793231	Én nem agyalok ezen, csak teszem, amit tennem kell.
-5970265	Hány nyelvet beszélnek az emberek Európában?
-6047395	Egyikőtöknek sincs fogalma róla, hogy min mentem keresztül.
-6100784	Aki az élvezeteket hajtja, kiég.
-6151462	Egy hónappal karácsony előtt az üzletekben mindig nagy a forgalom.
-6725174	A bíróság majd eldönti, hogy igazat mondott-e ön.
-6866499	Az én türelmemnek is van ám határa!
-6917374	Ez csak egy szélsőséges példa volt.
-7009306	Úgy hangzik, mint egy hollywoodi film forgatókönyve.
-7010284	Etikus odaadni neki előre az interjú kérdéseit?
-7098613	Én semmi pénzért be nem tenném a lábam a gettóba.
-7153216	Tomi részt vett egy papírrepülő versenyen és első lett.
-7162497	Megtehettem volna, de úgy döntöttem, nem teszem.
-7248325	Manapság egy számítógépnek sincs hajlékonylemezes meghajtója.
-7263490	Holnap egy új év veszi kezdetét.
-7546396	Kért egy kis gondolkodási időt.
-7644456	Tamás kölcsönadott nekem három könyvet.
-7664367	Tamás százhúsz hektáros fenyőfaültetvénnyel foglalkozik.
+597576	Mit jelent ez a mondat?
+626559	Azt mondják, az új regénye a saját tapasztalatain alapszik.
+635516	Láttam egy fekete macskát befutni a házba.
+639553	Értesítsen, ha van valami, amit tehetek.
+641713	Az öt nő közül egyet sem ismerek.
+688185	Ha jót teszel, örülnek az angyalok.
+716566	Nincs kellemesebb, mint a kemény munka utáni pihenés.
+720317	Úgy tűnik jó lesz az idő.
+730233	Nem csak motorja, autója is van.
+950397	A politikusok mind egy követ fújnak.
+961304	A bolond és a gyermek megmondja az igazat.
+2204828	Sokan attól félnek, hogy visszajön.
+2350958	A polgármester a lakossághoz fordult.
+3181365	A mi korunk a gépkorszak.
+3215844	Van a pályaudvar közelében egy bank?
+3548775	Ne add fel a reményt!
+3550925	Ha esetleg nem vetted volna észre, már két órája várok.
+3557622	Szalmával töltötte meg Péter a párnáját.
+3718154	Nem tudok választani a két ruha közül.
+3754006	Nézz rám, amikor hozzád beszélek!
+3799443	Itt nem az eszközökről van szó.
+3868404	Nem kell ahhoz tudomány, hogy egy személyi számítógépet az internethez kapcsoljunk.
+3952028	Előttem hirtelen összeesett egy férfi.
+3967917	Csak egy kis segítségre van szükségem.
+4026999	Nem akarom tovább faggatni a gyerekeket.
+4090109	Meg kell oldanom ezt a problémát!
+4255673	A jókat nagy veszély fenyegeti.
+4287274	Ha a test szenved, a lélek virágzik.
+4299515	Nem volt szerszámom, hogy megcsináljam.
+4312116	Tudom, hogy rosszul bántam veled.
+4424639	A vizsga iszonyúan nehéz volt.
+4429238	A legjobb barátom éppen Rómában van.
+4431424	Sok angol szó a latinból származik.
+4434555	Annál nagyobb lesz a meglepetés.
+4460525	Egyikőjük sem ismerne be a bűnösségét.
+4467014	A legnagyobb kagylófajta az óriáskagyló.
+4487039	A táblázat nem vesz el sok helyet.
+4578335	Sajnálom, ha megrémítettelek az imént.
+4620077	A doboz olyan nehéz volt, hogy Tomnak segítenie kellett Marinak azt hazacipelni.
+4641878	Villamos árammal működteti a fűrészgépet.
+4694349	Hogy mi!? Te nem hiszed el?
+4732564	Számodra mit jelent a pénz?
+4810401	Sok éven át Cuzco volt a fővárosuk.
+4826018	El kell nyomnod a cigarettát.
+4827063	Az asszony elnémult a meglepetéstől.
+4835299	A kék színt, ha összekeverjük a pirossal, akkor lilát kapunk.
+4849624	Kinek van kulcsa ehhez a lakáshoz?
+4870212	Mit csinálsz te még itt?
+4938648	Végül megoldotta Tomi a talányt.
+4938758	Miért van még mindig ez?
+5141167	Nagyon meleg van ebben a szobában.
+5210070	A lovak kiszagolják a félelmet.
+5227988	Mi az, ami aggaszt téged?
+5238392	Az iskolában még szorgalmas volt Tomi, de aztán egy lusta disznó lett belőle.
+5364131	Oszd szét a kalácsot hármótok között.
+5370498	Az ízléstelen graffitit eltávolította egy városi alkalmazott.
+5388154	Tehát, ahogy te is tudod, kirúgtak.
+5439276	Nem lehet egy nagy élmény itt lakni.
+5537984	A szomorúságon csak a zene segít.
+5802482	Tudtam, hogy nem halt meg.
+5922462	Hogy bírtátok ki egymás mellett egy életen át?
+5958636	Elhallgass, te átkozott, mert ellátom a bajodat!
+6021315	Ha felírtam volna, nem felejtettem volna el.
+6047234	Fogadok, hogy mindketten el akarunk menni.
+6143718	Még magyarul is nehezen ment neki a kémia, nemhogy németül.
+6211106	Kíváncsi lennék rá, te mit tettél volna ebben a helyzetben.
+6317531	Unom már, hogy folyton csak akkor találtok meg, ha kell nektek valami.
+6699677	Viccet félretéve ez most tényleg jó ötlet.
+6772209	Ez még mindig nem lesz elég.
+6890457	Nevezz meg egy dolgot, amiben én jó vagyok.
+6974145	A valóban fontos dolgokra összpontosítsd a figyelmedet.
+7014778	Maradj csendben és viselkedj jól!
+7070933	A vágya, hogy búvárkodjon, az életébe került.
+7146143	Meg is feledkeztél már róla, mit mondtál az imént?
+7213457	Tegnap még ott volt a könyv.
+7345270	Kedvelem a francia nyelvet, de még nem beszélem jól.
+7352774	Mi volt ez a sípoló hang?
+7359309	Fogadd el az életet úgy, ahogy van.
+7359620	Ez nem történhetett volna meg.
+7449001	Mondtam, hogy nem lesz ez így jó! Én megmondtam!

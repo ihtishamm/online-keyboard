@@ -125,7 +125,7 @@ test.describe("typing tutor", () => {
     await expect(page.getByRole("heading", { name: "Lesson passed!" })).toBeVisible();
     await page.getByRole("button", { name: "All lessons" }).click();
     await expect(page.getByRole("button", { name: /Lesson 1\s*Passed\s*Home row/ })).toBeVisible();
-    await expect(page.getByText("1 of 8 lessons passed")).toBeVisible();
+    await expect(page.getByText("1 of 9 lessons passed")).toBeVisible();
   });
 
   test("teaches the standard layout too", async ({ page }) => {

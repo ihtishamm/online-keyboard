@@ -1,82 +1,82 @@
 # Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
 # sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
-467388	Ningú no li és rival.
-855565	No hi ha cap gos que sigui més gran que aquest.
-859316	La traducció de la novel·la francesa li va portar més de tres mesos.
-859402	L'honestedat és una virtut cabdal.
-875407	Ell no ha jugat mai al golf.
-875475	No et preocupis per mi.
-875514	No hi ha ningú a l'entrada.
-876308	M'agadaria saber quan ho pot enviar.
-877334	No entenc el que tractes de dir.
-877368	Ella ens va dir que el carrer estava tancat.
-877595	El noi que m'agrada no m'estima.
-877596	Crec que mereix la pena veure aquesta pel·lícula dues vegades.
-877987	No m'imposis la teva opinió.
-878184	Ell va arribar massa aviat.
-1036604	Tu coneixes al senyor Brown?
-1285667	La pràctica fa al mestre.
-1448177	És un home que no parla amb ningú.
-1519210	Basteix la teva casa lluny dels parents i a prop d'un rierol.
-1519259	Tot el cel s'il·luminà i va haver-hi una explosió.
-1519329	La gentada va córrer cap a la sortida.
-1519382	Sempre està a l'aguait del capteniment dels seus fills.
-1524384	Fa tant de temps que parles amb mi i no saps com me dic?
-1525598	Li vaig dir que podia marxar.
-1525632	No em canso mai de parlar.
-1525656	La mare d'en Cookie ha most de càncer.
-1539051	Un llop ha matat uns bens als Vosgues.
-1758392	En Jim corre tan ràpid com en Ron.
-1758483	A França, la propaganda de mòbils destinada als nens de menys de dotze anys està prohibida.
-1764573	L'any passat vaig anar a Viena per primer cop.
-1772155	La nena no va dir res.
-1772351	El significat exacte de la metafísica és controvertit.
-1772386	Que hi ha seients lliures?
-1953123	T'ensenyo un parell de fotos.
-2136680	Déu ha estat molt bo amb el tauró.
-2138628	Està cofoi de ser músic.
-2491607	Sense aigua no podries viure.
-2797558	Havent viscut a Tokyo, conec bé la ciutat.
-2977474	Ell ha anat amb la Maria a Boston.
-4302752	Quan la voluntat està absent, el poder desapareix.
-4419031	El meu aerolliscador està ple d'anguiles
-4969341	Nosaltres ja quasi no el veiem per ací.
-4969430	Este edifici està quasi acabat.
-5073637	Eixe circ no realitza espectacles amb animals.
-6453730	Escolteu atentament el que està dient.
-6836563	Tots els meus nens saben parlar francès.
-8886387	No vaig fer el que se m'havia demanat.
-8901649	Kiev és la capital d'Ucraïna.
-9722342	No li donaré ni un sol centau.
-9722777	No era un bisexual. Res de tot això és veritat.
-9723008	La propera generació mai no coneixerà el racisme.
-9726380	Cal que el nadó prengui prou llet.
-9726509	Ell espera esdevenir un poeta eminent.
-9726606	Ahir vaig començar un llibre nou.
-9731393	No entenem res del que diu ell.
-9731944	L'autor va decebre molts dels seus fans per la seva tranfòbia.
-9733625	Coi! Ja res no t'agrada.
-9753531	No ho he fet des que tenia dotze anys.
-9808873	Com us ha anat el divendres?
-9825833	Les dones són les meves ties.
-9832565	Ella plorava i plorava, però ningú no vingué a consolar-la.
-10298402	Al meu avi li encanta pescar.
-11900061	En Miguel va comprar un futbolí per jugar junts ell i jo.
-12495260	Recorda tancar bé l'aixeta després de rentar-te les mans.
-12495788	Qui has vist al parc?
-12497851	Això és tot el que va escriure.
-12983224	La terra cobreix els errors dels metges.
-12988117	La nostra casa és un submarí groc.
-13017164	Hi ha llops bons i llops dolents?
-13031894	L'amor passa, però deixa aquest record d'un petó o d'una queixa a cada cor.
-13073453	El treball permet sentir-se útil.
-13227450	La gana és el desig de menjar.
-13238733	Anirà a la platja amb el seu amic.
-13241844	On és la resta de la classe?
-13330540	Ningú pot viure en el passat. La vida és ara.
-13549085	Un terç de les selves tropicals del món es troben al Brasil.
-13573070	Per què m'estàs explicant tot això?
-13677252	On seràs quan s'acabi el món?
-13727315	Tenia vuitanta anys quan va néixer el meu nét.
-13831512	Ja he omplert més de deu pàgines d'un quadern amb frases en turc.
-13906968	Tothom ho diu, ningú no ho sap.
+467605	Em sembla que he agafat un constipat.
+495432	Hi ha algú que sàpiga pronunciar aquesta paraula?
+779111	Encara que el menjar que fan en aquell restaurant fós boníssim, no hi aniria a menjar.
+854009	Quin és el teu propòsit real?
+857581	Per cert, has fet la teva tasca?
+875311	He de comprar-ne un demà.
+875418	Nara és tan antiga com Kioto.
+876032	Pocs estudiants poden entendre el que diu.
+876196	Aquesta illa té un clima ideal.
+877101	Quina és la població del Japó?
+877622	Es va emportar el meu paraigües sense tan sols demanar-m'ho.
+877645	Sabem que ell és un home valent.
+877971	Per què beu vostè aigua?
+877997	Vaig veure a una dona de negre.
+878145	Hi havia deu ous en total.
+898621	Que tens fil i agulla?
+1405603	Vull escriure una carta. Tinc un sobre, però no tinc segells.
+1519200	Recordeu en quin any va passar?
+1519246	A la meva mare li agrada molt el te.
+1523508	Ella sempre podia contestar totes les preguntes.
+1524319	Per primer cop en deu anys he tornat a la meva vila natal.
+1524411	Elles sempre van amb tant de retard...
+1525659	Qui ha escrit aquesta carta?
+1529307	Tinc un abric, però cap barret.
+1725822	Em sap greu no haver-la pogut veure.
+1758428	Fins ara, he visitat més de deu països estrangers.
+1758477	Tu vas a l'escola, oi?
+1772224	Aquesta és la raó per què no vaig venir ahir.
+1904351	Agarra un poal i trabuca les botelles.
+1905975	Abans de morir va passar més d'un mes hospitalitzat.
+1908775	Compri tomàquets de la comarca.
+1911823	M'agraden les dones, m'agrada el vi. I si haig d'oblidar-les bec i oblido.
+1965865	Ara ella viu a Roma casada amb un italià.
+1971640	Ella s'ha posat a plorar quan ha sentit la terrible notícia.
+1971704	En general vam parlar sobre la importància d'una llengua internacional.
+2138591	L'activitat del comerç exterior ha davallat darrerament.
+2491571	Ara sóc a Hong Kong.
+3446001	Sóc l'únic del grup que no parla gens de francès.
+3711235	M'agradaria reservar una taula per a dos.
+4195636	No estic enfadada amb tu.
+8901650	Mai no sé quan fer servir el pronom de segona persona formal o informal.
+8902449	Ella era tan intensa en el seu odi com en el seu amor.
+9722756	En Sami va desposar una dona bisexual.
+9726300	Les onades de mar fuetegen les roques sense parar.
+9726536	Ell estava impacient per començar en la seva nova feina.
+9731810	Hòstia, pilotes! Oh, que en són de bones, m'encanten!
+9733981	La llet em provoca mal d'estómac.
+9926389	Han col·laborat per primera vegada.
+9972552	Li vaig fer un vestit.
+9986777	Ell és l'home perfecte per ell.
+10561328	Hi ha tanta boira que no podem veure el camí.
+10615828	L'inundació va causar molts danys
+11899877	Ell inmediatament va buscar una resposta.
+11899962	Fa molt fred aquest hivern.
+11900100	No hi ha presència nord-americana a Argèlia.
+12495805	Quant de temps et portarà?
+12497328	Sempre esperes que resolgui els teus problemes.
+12497741	De veritat confies en ell?
+12499545	Se us permet utilitzar un diccionari mentre feu la prova.
+12500841	A mi ningú m'ha de dir què haig de fer.
+12501110	Va romandre pobre tota la seva vida.
+12502887	La pluja m'ha deixat xop.
+12946032	Una mare que abandona els seus fills no mereix recuperar-los.
+13028572	El poeta políglota de vegades té ganes de traduir tots els poemes que ha escrit.
+13050128	Mai m'acostumaré a matinar, és molt dur.
+13063269	Heu de donar suport als vostres comentaris amb exemples clars i concisos.
+13070272	Si alguna música s'escolta al cel, sens dubte va ser Bach qui la va compondre.
+13285413	Aquests turons són perfectes per un passeig a cavall.
+13318826	El seu lloc és aquí.
+13374531	El sumeri és la llengua escrita més antiga del món.
+13397772	La cua del paó està coberta d'ocels, taques rodones i acolorides.
+13409391	No necessitem un alto el foc per acabar la guerra.
+13514116	Hi podria haver milers de cossos sota les runes de les cases destruïdes.
+13633689	Quina seria la naturalesa de les frases incloses en una edició concisa i essencial de Tatoeba?
+13678858	El teixit es pot identificar per la mostra.
+13705005	Van trobar una cobra morta al seu cotxe.
+13833510	Tots dos anem a nedar junts un cop per setmana.
+13839516	Això serà millor per a tots dos.
+13915178	Això no és una prèdica.
+13973264	Aquest país també és nostre.

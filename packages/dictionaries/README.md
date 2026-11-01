@@ -86,6 +86,12 @@ The Latin-script lists also count sentences from [Tatoeba](https://tatoeba.org)
 typing test and tutor's sentences, `src/typing-sentences.ts`) are Tatoeba sentences, with
 their sentence numbers. Those pages credit Tatoeba too.
 
+`data/<code>/blocked.txt` (words kept out of the typing tests, lessons and games) are built by
+`src/blocklist.ts` from the offensive-word lists of
+[LDNOOBW](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words)
+(`vendor/ldnoobw/`, CC BY 4.0, commit 5faf2ba). They are read at build time only and never
+reach a page.
+
 ### Building another language
 
 ```sh

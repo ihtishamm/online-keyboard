@@ -2,8 +2,9 @@ import type { Layout } from "@okb/engine";
 import type { FontId } from "@okb/layouts";
 import { ArrowLeft, ArrowRight, Check, RotateCcw } from "lucide-react";
 import { useEffect, useState } from "react";
+import { FONT_CLASS } from "../fonts";
 import { loadPreference, savePreference } from "../keyboard/preferences";
-import { createDrill, isFinished, stats, type Drill } from "./drill";
+import { createDrill, isFinished, scoringFor, stats, type Drill } from "./drill";
 import type { Lesson } from "./lessons";
 import Segmented from "./Segmented";
 import TypingDrill from "./TypingDrill";
@@ -14,11 +15,13 @@ export interface TypingTutorProps {
   nativeName: string;
   /** Lessons for each layout, in layout order. */
   lessons: Readonly<Record<string, readonly Lesson[]>>;
-  /** Layouts by id, for every key of `lessons`. */
+  /** Layouts by id, for every key of `lessons` and every lesson's own `layout`. */
   layouts: Readonly<Record<string, Layout>>;
   /** Writing direction and font of the language (default: Urdu's). */
   dir?: "rtl" | "ltr";
   font?: FontId;
+  /** ISO 15924 script, for scoring (default: Arab). */
+  script?: string;
 }
 
 /** Accuracy needed to pass a lesson. */
@@ -39,17 +42,19 @@ function loadProgress(layoutId: string): Record<string, Score> {
   }
 }
 
-function drillFor(lesson: Lesson): Drill {
+function drillFor(lesson: Lesson, script?: string): Drill {
+  // Roman spellings are typed in English letters.
+  const typedIn = lesson.cues ? "Latn" : script;
   if (lesson.sentences?.length) {
     const passage = lesson.sentences[Math.floor(Math.random() * lesson.sentences.length)]!;
-    return createDrill(passage.split(/\s+/u));
+    return createDrill(passage.split(/\s+/u), typedIn);
   }
   const pool = [...lesson.words];
   const words: string[] = [];
   while (words.length < DRILL_WORDS && pool.length) {
     words.push(pool.splice(Math.floor(Math.random() * Math.min(pool.length, 25)), 1)[0]!);
   }
-  return createDrill(words);
+  return createDrill(words, typedIn);
 }
 
 const BTN =
@@ -65,8 +70,10 @@ export default function TypingTutor(props: TypingTutorProps) {
   const [drill, setDrill] = useState<Drill>(() => createDrill([]));
   const [saved, setSaved] = useState(false);
   const lessons = props.lessons[layoutId] ?? [];
-  const layout = props.layouts[layoutId]!;
   const lesson = active === null ? null : lessons[active]!;
+  const layout = props.layouts[lesson?.layout ?? layoutId]!;
+  const font = FONT_CLASS[props.font ?? "nastaliq"];
+  const UNIT = scoringFor(props.script).unit === "wpm" ? "WPM" : "CPM";
 
   useEffect(() => {
     const saved = loadPreference("typing:layout");
@@ -76,7 +83,7 @@ export default function TypingTutor(props: TypingTutorProps) {
 
   const start = (index: number) => {
     setActive(index);
-    setDrill(drillFor(lessons[index]!));
+    setDrill(drillFor(lessons[index]!, props.script));
     setSaved(false);
     requestAnimationFrame(() =>
       document.querySelector<HTMLInputElement>("[data-tutor] input[aria-label]")?.focus(),
@@ -145,7 +152,7 @@ export default function TypingTutor(props: TypingTutorProps) {
                   <span className="font-semibold">{l.title}</span>
                   {l.letters.length > 0 && (
                     <span
-                      className="font-script text-xl text-accent"
+                      className={`${font} text-xl text-accent`}
                       lang={props.lang}
                       dir={props.dir ?? "rtl"}
                     >
@@ -154,7 +161,7 @@ export default function TypingTutor(props: TypingTutorProps) {
                   )}
                   <span className="text-sm text-muted">
                     {score
-                      ? `Best: ${score.wpm} WPM, ${score.accuracy}% accuracy`
+                      ? `Best: ${score.wpm} ${l.cues ? "WPM" : UNIT}, ${score.accuracy}% accuracy`
                       : "Not tried yet"}
                   </span>
                 </button>
@@ -176,11 +183,7 @@ export default function TypingTutor(props: TypingTutorProps) {
         <h2 className="text-lg font-semibold">
           Lesson {active! + 1}: {lesson.title}{" "}
           {lesson.letters.length > 0 && (
-            <span
-              className="font-script ms-1 text-accent"
-              lang={props.lang}
-              dir={props.dir ?? "rtl"}
-            >
+            <span className={`${font} ms-1 text-accent`} lang={props.lang} dir={props.dir ?? "rtl"}>
               {lesson.letters.join(" ")}
             </span>
           )}
@@ -200,8 +203,8 @@ export default function TypingTutor(props: TypingTutorProps) {
             {passed ? "Lesson passed!" : `Almost: aim for ${PASS}% accuracy`}
           </h3>
           <p role="status">
-            <span className="text-3xl font-bold text-accent tabular-nums">{result.netWpm}</span> WPM
-            ·{" "}
+            <span className="text-3xl font-bold text-accent tabular-nums">{result.netWpm}</span>{" "}
+            {result.unit.toUpperCase()}·{" "}
             <span className={`font-semibold ${passed ? "text-good" : "text-bad"}`}>
               {result.accuracy}% accuracy
             </span>{" "}
@@ -222,7 +225,7 @@ export default function TypingTutor(props: TypingTutorProps) {
         </section>
       ) : (
         <TypingDrill
-          key={`${layoutId}-${active}`}
+          key={`${layout.id}-${active}`}
           drill={drill}
           update={setDrill}
           layout={layout}
@@ -233,7 +236,12 @@ export default function TypingTutor(props: TypingTutorProps) {
           hint
           keyboard
           ownKeyboard={false}
-          label={`Type the ${props.languageName} words here`}
+          label={
+            lesson.cues
+              ? `Type the ${props.languageName} words in English letters here`
+              : `Type the ${props.languageName} words here`
+          }
+          {...(lesson.cues ? { cues: lesson.cues } : {})}
         />
       )}
     </div>

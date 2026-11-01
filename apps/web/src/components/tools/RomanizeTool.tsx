@@ -1,38 +1,10 @@
 import { Transliterator, type TranslitScheme } from "@okb/engine";
-import {
-  ARABIC_SCRIPT,
-  BENGALI,
-  DEVANAGARI,
-  KASHMIRI_SCRIPT,
-  PASHTO_SCRIPT,
-  PERSIAN_SCRIPT,
-  SARAIKI_SCRIPT,
-  SHAHMUKHI_SCRIPT,
-  SINDHI_SCRIPT,
-  URDU_SCRIPT,
-  romanize,
-  type RomanStyle,
-  type RomanTable,
-} from "@okb/engine/romanize";
+import { romanize, type RomanStyle } from "@okb/engine/romanize";
 import { Copy } from "lucide-react";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { copyText } from "../keyboard/actions";
 import { loadDictionary } from "../keyboard/dictionary";
-
-/** Letter tables by data code (Language.code). */
-const TABLES: Readonly<Record<string, RomanTable>> = {
-  ur: URDU_SCRIPT,
-  ar: ARABIC_SCRIPT,
-  fa: PERSIAN_SCRIPT,
-  ps: PASHTO_SCRIPT,
-  sd: SINDHI_SCRIPT,
-  pnb: SHAHMUKHI_SCRIPT,
-  skr: SARAIKI_SCRIPT,
-  ks: KASHMIRI_SCRIPT,
-  bal: URDU_SCRIPT,
-  hi: DEVANAGARI,
-  bn: BENGALI,
-};
+import { ROMAN_TABLES as TABLES, schemeWords } from "./roman-tables";
 
 /** Attested chat spellings per data code, fetched on demand. */
 const CHAT = import.meta.glob<string>("../../../../../packages/dictionaries/data/*/chat.tsv", {
@@ -46,16 +18,6 @@ function parseChat(text: string): Map<string, string> {
     if (!line || line.startsWith("#")) continue;
     const [word, roman] = line.split("\t");
     if (word && roman) map.set(word, roman);
-  }
-  return map;
-}
-
-/** The scheme's own common words, reversed: its first Roman spelling of each. */
-function schemeWords(scheme: TranslitScheme): Map<string, string> {
-  const map = new Map<string, string>();
-  for (const [romans, outputs] of scheme.words) {
-    const roman = romans.trim().split(/\s+/)[0]!;
-    for (const out of outputs.trim().split(/\s+/)) if (!map.has(out)) map.set(out, roman);
   }
   return map;
 }

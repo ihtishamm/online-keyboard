@@ -1,82 +1,82 @@
 # Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
 # sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
-458951	Lidi vlci za normálních okolností nenapadají.
-871501	Dobrý den. Jmenuji se John Reindle. Pracuji na americkém velvyslanectví v Praze.
-1680682	Můj šéf odmítl rozpočet nového projektu.
-1829994	Má babička vychovala desetičlennou rodinu.
-1845599	Chceš přijít na mou oslavu?
-2148274	To je nejdelší román, který jsem kdy četl.
-2315836	Mám hrozně rád obě dvě.
-2404603	Moje teta žije v New Yorku.
-2977839	Začala plakat a já jsem začal plakat také.
-3013647	Její historie je také moje historie.
-3046697	Myslel jsem, že to stihneme do půl třetí.
-3075916	Jen jsem ležel na pláži a pozoroval koupající se lidi.
-3346307	Někteří lidé se podrobují děsivým fyzickým zátěžím za účelem zůstat v kondici.
-3415017	Měl jsem se ohledně této záležitosti poradit se svými rodiči.
-3971832	Obávám se, že tato kniha je nad jeho pochopení.
-3992572	Všichni studenti byli proti válce.
-4311984	Darovanému koni na zuby nehleď.
-4401395	Ukažte mi prosím váš pas.
-4418830	Co si myslíš o novém filmu?
-4446282	Co se vám dvěma stalo?
-6895995	On má na sobě brýle.
-6934163	Neviděli jsme ani jednu hru.
-6935180	Jsi moc mladý na to, abys cestoval sám.
-7024077	Promiňte, ale mám teď plné ruce.
-7525419	Může se to stát znova.
-7562758	Dělám to, kvůli čemu jsme sem přišli.
-8013750	Co bych měl zatím dělat?
-8098573	V této budově se nesmí kouřit.
-8136148	Chtěl bych ti představit svého syna.
-8319941	Firemní záležitosti by měly zůstat uvnitř firmy.
-8414185	Víte, jak se to stalo?
-8418758	Chtěl jsem si otevřít vlastní restauraci.
-8434919	Poprava Toma byla zrušena na poslední chvíli.
-8435595	Takové slovo v ruštině neexistuje.
-8793360	Budeš tady ještě, až se vrátím?
-8878301	Spáchal sebevraždu tak, že skočil pod vlak.
-8908356	Měli jsme velmi hezký výhled na řeku.
-8996624	Mohlo by to stát za to.
-9003448	Bob mi píše jednou za měsíc.
-9468998	Já si nemyslím, že odpoledne bude pršet.
-9551808	Můj vnuk má bílé kotě.
-9571817	Zítra nemusíme jít do školy.
-9686412	Být vámi, nic bych pro Toma nedělal.
-9777986	Nechte vše tam, kde to je.
-9818159	Vím, že se něco není v pořádku, cítím to.
-9938963	Je to jen slabé mrholení.
-10059976	Pan Bates je zámožný průmyslník, nebude mít čas na někoho jako jsi ty.
-10142069	Zrovna na to nyní myslím.
-10182345	Kolik stojí deset papírových talířů?
-10238764	Poslali Toma na jistou smrt.
-10320938	Nezastavil jsem se u vás, protože jsem neměl čas.
-10464501	Tehdy jsem nevěděl, že Toma uvidím naposledy.
-10567604	Kde se narodil a vyrůstal?
-10604223	Mám raději grepy než pomeranče.
-10639164	Jeho žena zahynula při havárii.
-10957720	Asi mám horečku a pokouší se o mě zimnice.
-11002906	Nechci, aby mě s ní viděli.
-11124949	Když byla jezera v zimě zamrzlá, byla plná bruslařů.
-11172081	Takové podmínky jsou pro Toma nepřijatelné.
-11248335	Lidem se líbilo to, co udělal.
-11259981	Vrátil se před osmou hodinou.
-11707146	Nejsem umělec. Nikdy jsem na to neměl schopnosti.
-11724879	Provedená změna nepřinesla žádné vylepšení.
-11741748	Nechal ve dřezu špinavé nádobí.
-11905734	Na obálce knihy bylo několik inkoustových skvrn.
-12124546	Pamatujte na křehkost své existence.
-12169626	Budeme se za tebe modlit.
-12196198	Elegantní řešení se podařilo najít pouze jemu.
-12205379	Oba mí bratři jsou stále dospívající.
-12437233	Rád bych mu dal dar k jeho narozeninám.
-12452573	Myslel jsem, že jsi vymyslel nějaké provizorní řešení.
-12525294	Ve vlaku mi ukradli foťák.
-12773714	Počkáme ještě, nebo budeme jednat hned?
-12903535	Nebudu to dělat na úkor svého volného času.
-13792372	Musíš se o svého psa postarat sama.
-13793615	Zlato je cennější než jakýkoli jiný kov.
-13793737	Vím, že je špatné stahovat hudbu z internetu, ale stejně to dělám.
-13897707	Životní úroveň v zemi roste.
-13911258	Byl o dost starší než my.
-13934790	Zapamatuj si, jak se toto slovo píše.
+458922	Ten stařec tam bydlel sám.
+500481	Jejich nejstarší sestra ještě není vdaná.
+1138628	Můžete si tuhle knihu přečíst.
+1625257	Podívej, co dělá to dítě!
+1723141	Pozval jsem Kena, Billa a Yumi.
+1830068	Tvá kniha leží na stole.
+2091581	Přemýšlím, jaké bude zítra počasí.
+2091584	Jsem tak chytrý, že někdy ani slovu nerozumím, co povídám.
+2306763	Odjede do Paříže příští měsíc.
+3062678	O tom není nejmenších pochyb.
+3472347	Řekni mu, že mám hlad.
+3484675	Ať jsme hledali jak jsme hledali, najít jsme to nemohli.
+3691018	Petr se už nějakou dobu snaží najít byt.
+3970700	Musím udělat hromadu práce do konce týdne.
+3984723	Určité vůně mohou snadno vyvolat vzpomínky z dětství.
+4098057	Minulou noc jsem četl knížku.
+4270767	Nejradši má její nejstarší dceru.
+4279228	Vem si na pár dní volno.
+4418029	Řekni mi, co to je.
+4422048	Vždy můžeš používat můj slovník.
+4433963	Medvěd se dokáže vyšplhat na strom.
+4700298	Tento čaj je velice dobrý.
+6794225	Během jednoho až dvou týdnů se očekávají silné záplavy.
+6815489	Velmi rád vám pomůžu s vyklízením vaší garáže.
+6901672	Toto nové auto patří jí.
+7262821	Co se stane, pokud nás chytí?
+7300760	Rád si hned po obědě zdřímnu.
+7530857	Býval jsem bohatý jako ty.
+7910370	Nemyslím si, že je to tak vážné.
+7957518	Odešla do školy, ačkoliv jí bolela noha.
+8033025	To, co je v této krabici, je velmi křehké.
+8041104	Na dnešní večer předpovídají déšť.
+8084279	Šlápl jsem Tomovu psu na ocas.
+8171292	V práci se mu nedařilo a tak odešel.
+8256147	Seznámil jsem se s jednou hezkou maďarskou dívkou.
+8308959	Zastavím se pro vás později.
+8469818	Proč je tvůj pes tak špinavý?
+8488868	K večeři si dám jen teplé mléko.
+8553362	Tomův přístup se mi vůbec nelíbí.
+8626421	Tohle oblečení mladým lidem dobře pasuje.
+8938349	Tato slepice snáší vejce prakticky každý den.
+8941452	Myslím, že teď je ten správný čas.
+9384265	Tátova angličtina je lepší, než mámina.
+9426983	Řekni jí, že tam nebudu.
+9927900	Mám známého, který hraje na harmoniku.
+9995807	Nevím, kde mám svoji učebnici francouzštiny.
+10082328	Dnes je dost zima, nezdá se ti?
+10198798	Zeptala se, jak se daří jeho otci.
+10457862	Souhlasila s tím, že přijde.
+10499022	Rád bych Tomovi pomohl, ale nevím jak.
+10604167	Myslím, že je to jed na krysy.
+10707399	Narodila se a vyrostla v Osace.
+10785593	Chtěl bych opravit tady tu hadičku.
+10951440	Alkohol je v Německu taky levný.
+11157675	Dej mi čas na rozmyšlenou.
+11225200	Nejsem si jistá, jestli to chci vidět.
+11247837	Nemám na světě nic jiného.
+11312489	Mí rodiče už nejsou mladí.
+11643488	Tomovi se včera porouchalo auto.
+11844892	V září je v moři spousta medůz.
+12019820	Ta kniha se musí do úterý vrátit.
+12025150	Tohle dělej vždy pouze s Tomem.
+12026507	Něčemu z těchto věcí věřím.
+12147685	Tohle je jízdenka pro dvě osoby.
+12177482	Ziri zavolala do hotelu v Alžírsku.
+12229782	Proč jsi ještě tady, Tome?
+12494336	Řekni Tomovi, ať jde pryč.
+12496174	Moje tiskárna tiskne jen černobíle.
+12714276	Lituji, že jsem takovou věc udělal.
+12991758	Pocházím z Francie. Jsem Francouz, a mluvím francouzsky.
+13305140	Naučil jsem se to ve vězení.
+13741675	Jak jste spokojeni s Tomem?
+13783218	Slyšíte jen to, co chcete slyšet.
+13792211	Můj syn je vyšší než já.
+13792702	Využila kontaktů svého otce, aby sehnala své současné místo.
+13792722	Angličtina není můj rodný jazyk.
+13793002	Let z Pekingu přistál kvůli hustému sněžení o dvacet minut opožděn.
+13793019	Měl by ses dát ostříhat.
+13878466	Měla by ses s Tomem rozloučit.
+14035316	To nemůže být Tomovo auto. Musí být někoho jiného.

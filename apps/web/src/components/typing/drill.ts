@@ -5,13 +5,18 @@ import type { DeadStroke, Keystroke } from "@okb/engine";
  * Words are checked whole, the way Urdu typing tests usually work: colouring single letters
  * would break Nastaliq joining.
  *
- * Comparisons happen in NFD, so آ typed as one key or as ا + madda, and ؤ typed as و + hamza,
- * count the same.
+ * Comparisons happen in NFD, so آ typed as one key or as ا + madda, ؤ typed as و + hamza, é
+ * typed as one key or with a dead key, and क़ as one code point or as क + nukta, all count
+ * the same.
  *
  * Speed follows the usual convention: a "word" is 5 characters, spaces included.
  *   net WPM = characters of correctly typed words (+ their spaces) / 5 / minutes
  *   raw WPM = all characters typed / 5 / minutes
  *   accuracy = keystrokes that matched the text / all keystrokes (Backspace not counted)
+ * What a character is depends on the script (scoringFor): what the reader sees as one letter
+ * (é, آ, a Korean syllable block), but for Indic scripts every code point, since vowel signs and
+ * the virama are keys of their own (कि is two, क्ष three). Thai, Lao, Khmer, Burmese, Chinese
+ * and Japanese write no spaces between words, so they are scored in characters per minute.
  */
 
 export interface WordResult {
@@ -20,6 +25,8 @@ export interface WordResult {
 }
 
 export interface Drill {
+  /** ISO 15924 script of the text, for scoring (scoringFor). */
+  script: string;
   /** Target words, NFC. */
   words: readonly string[];
   /** Index of the word being typed. */
@@ -35,6 +42,8 @@ export interface Drill {
 
 export interface DrillStats {
   seconds: number;
+  /** Words or characters per minute (Scoring.unit); netWpm and rawWpm are in this unit. */
+  unit: "wpm" | "cpm";
   netWpm: number;
   rawWpm: number;
   /** 0-100, whole number. */
@@ -47,8 +56,56 @@ export interface DrillStats {
 
 const nfd = (s: string) => s.normalize("NFD");
 
-export function createDrill(words: readonly string[]): Drill {
+export interface Scoring {
+  /** Words (5 characters) or characters per minute. */
+  unit: "wpm" | "cpm";
+  /** Characters in a piece of text, for speed. */
+  length: (text: string) => number;
+}
+
+/** Scripts whose vowel signs and virama are keys of their own (ISO 15924). */
+const INDIC = new Set([
+  "Deva",
+  "Beng",
+  "Guru",
+  "Gujr",
+  "Orya",
+  "Taml",
+  "Telu",
+  "Knda",
+  "Mlym",
+  "Sinh",
+]);
+/** Scripts written without spaces between words: scored per character. */
+const UNSPACED = new Set([
+  "Thai",
+  "Laoo",
+  "Khmr",
+  "Mymr",
+  "Hani",
+  "Hans",
+  "Hant",
+  "Jpan",
+  "Hira",
+  "Kana",
+]);
+
+const graphemes = new Intl.Segmenter(undefined, { granularity: "grapheme" });
+const graphemeCount = (text: string) => {
+  let n = 0;
+  for (const _ of graphemes.segment(text.normalize("NFC"))) n++;
+  return n;
+};
+
+/** How a script's typing is scored. Korean syllable blocks are single graphemes in NFC. */
+export function scoringFor(script = "Arab"): Scoring {
+  if (INDIC.has(script)) return { unit: "wpm", length: (t) => [...t.normalize("NFC")].length };
+  return { unit: UNSPACED.has(script) ? "cpm" : "wpm", length: graphemeCount };
+}
+
+export function createDrill(words: readonly string[], script = "Arab"): Drill {
   return {
+    script,
     words: words.map((w) => w.normalize("NFC")),
     index: 0,
     typed: "",
@@ -134,6 +191,7 @@ export function finish(d: Drill, now: number): Drill {
 }
 
 export function stats(d: Drill, now: number): DrillStats {
+  const { unit, length } = scoringFor(d.script);
   const end = d.endedAt ?? now;
   const seconds = d.startedAt === null ? 0 : Math.max(0, (end - d.startedAt) / 1000);
   let correctChars = 0;
@@ -142,14 +200,16 @@ export function stats(d: Drill, now: number): DrillStats {
     if (!r.correct) return;
     correctWords++;
     // The space after a word counts, except after the very last word of the text.
-    correctChars += [...nfd(d.words[i]!)].length + (i < d.words.length - 1 ? 1 : 0);
+    correctChars += length(d.words[i]!) + (i < d.words.length - 1 ? 1 : 0);
   });
   // A word cut off by the timer still counts as far as it is right.
-  if (d.typed && onTrack(d)) correctChars += [...nfd(d.typed)].length;
+  if (d.typed && onTrack(d)) correctChars += length(d.typed);
   const minutes = seconds / 60;
-  const perMinute = (chars: number) => (minutes > 0 ? Math.round(chars / 5 / minutes) : 0);
+  const per = unit === "wpm" ? 5 : 1;
+  const perMinute = (chars: number) => (minutes > 0 ? Math.round(chars / per / minutes) : 0);
   return {
     seconds,
+    unit,
     netWpm: perMinute(correctChars),
     rawWpm: perMinute(d.keystrokes),
     accuracy: d.keystrokes ? Math.round((100 * d.correctKeystrokes) / d.keystrokes) : 100,

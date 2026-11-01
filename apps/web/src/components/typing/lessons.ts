@@ -14,7 +14,9 @@ import {
  * (é, ß on some layouts). Each lesson practises real words (from a frequency list,
  * most common first) that use only the letters learned so far and at least one new one. Early
  * lessons with few real words are topped up with short letter groups. The last lessons are
- * common words and full sentences.
+ * common words and full sentences, and, for languages typed in English letters too, their
+ * Roman spellings (romanLesson). On Indic layouts the vowel signs and the virama are taught as
+ * letters: they are keys of their own, and nearly every word needs them.
  *
  * Runs at build time: the frequency list never reaches the browser, only the chosen words.
  */
@@ -28,6 +30,10 @@ export interface Lesson {
   words: string[];
   /** Whole sentences, typed in order (for the sentence lesson). */
   sentences?: string[];
+  /** Roman spelling lessons: each word (English letters) → the word as the language writes it. */
+  cues?: Record<string, string>;
+  /** The layout the lesson is typed on, when not the one chosen (the Roman layout). */
+  layout?: string;
 }
 
 const STEPS: { id: string; title: string; row: readonly KeyCode[]; layer: Layer }[] = [
@@ -43,6 +49,9 @@ const POOL = 40;
 const MIN_REAL = 12;
 /** Letters, not marks, punctuation or the tatweel (a modifier letter that only stretches lines). */
 const isLetter = (s: string) => /^[\p{Lo}\p{Ll}\p{Lu}]$/u.test(s);
+const INDIC = new Set(["Deva", "Beng", "Guru", "Gujr", "Orya", "Taml", "Telu", "Knda", "Mlym"]);
+/** Indic vowel signs, virama, nukta and anusvara: keys of their own. */
+const isSign = (s: string) => /^\p{M}$/u.test(s);
 
 /** Small deterministic generator, so builds are reproducible. */
 function* letterGroups(fresh: string[], known: string[]): Generator<string> {
@@ -66,12 +75,13 @@ export function buildLessons(
 ): Lesson[] {
   const lessons: Lesson[] = [];
   const known: string[] = [];
+  const teach = INDIC.has(layout.script) ? (s: string) => isLetter(s) || isSign(s) : isLetter;
   // Letters the language never uses (Arabic ي on the Urdu standard layout) are not taught.
   const used = new Set([...frequencyWords, ...extra.words, ...extra.passages].join(""));
   const keys = keystrokeMap(layout);
   const dead = deadStrokeMap(layout, keys);
   const extraLetters = [...used].filter(
-    (ch) => isLetter(ch) && (dead.has(ch) || keys.get(ch)?.altgr === true),
+    (ch) => teach(ch) && (dead.has(ch) || keys.get(ch)?.altgr === true),
   );
   // Latin layouts only: the Arabic-script ones keep the lessons they always had.
   const steps =
@@ -86,7 +96,7 @@ export function buildLessons(
     const fresh = [
       ...new Set(
         outputs.filter(
-          (out): out is string => !!out && isLetter(out) && used.has(out) && !known.includes(out),
+          (out): out is string => !!out && teach(out) && used.has(out) && !known.includes(out),
         ),
       ),
     ].sort((a, b) => (step.id === "accents" ? a.localeCompare(b) : 0));
@@ -121,4 +131,24 @@ export function buildLessons(
     sentences: [...extra.passages],
   });
   return lessons;
+}
+
+/** Words in the Roman spelling lesson. */
+const ROMAN_POOL = 40;
+
+/**
+ * The "Roman spellings" lesson: common words shown as the language writes them, typed in
+ * English letters on the Roman layout. `pairs` are [roman, word], commonest first, each one a
+ * spelling the site's Roman typing turns back into that word (practice.ts checks).
+ */
+export function romanLesson(pairs: readonly (readonly [string, string])[], layout: string): Lesson {
+  const chosen = pairs.slice(0, ROMAN_POOL);
+  return {
+    id: "roman",
+    title: "Roman spellings",
+    letters: [],
+    words: chosen.map(([roman]) => roman),
+    cues: Object.fromEntries(chosen),
+    layout,
+  };
 }

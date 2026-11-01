@@ -4,7 +4,8 @@ import { Download, RotateCcw, Share2 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { datedName, downloadBlob } from "../keyboard/actions";
 import { loadPreference, savePreference } from "../keyboard/preferences";
-import { createDrill, extend, finish, isFinished, stats, type Drill } from "./drill";
+import { hasCoarsePointer } from "../keyboard/platform";
+import { createDrill, extend, finish, isFinished, scoringFor, stats, type Drill } from "./drill";
 import Segmented from "./Segmented";
 import TypingDrill from "./TypingDrill";
 
@@ -25,6 +26,8 @@ export interface TypingTestProps {
   /** Writing direction and font of the language (default: Urdu's). */
   dir?: "rtl" | "ltr";
   font?: FontId;
+  /** ISO 15924 script, for scoring (default: Arab). */
+  script?: string;
 }
 
 type Source = "words" | "sentences";
@@ -49,6 +52,7 @@ export default function TypingTest(props: TypingTestProps) {
   const [layoutId, setLayoutId] = useState(props.layouts[0]!.id);
   const [duration, setDuration] = useState<number>(60);
   const [source, setSource] = useState<Source>("words");
+  const [phone, setPhone] = useState(false);
   const [keyboard, setKeyboard] = useState(true);
   const [ownKeyboard, setOwnKeyboard] = useState(false);
   const [drill, setDrill] = useState<Drill>(() => createDrill([]));
@@ -56,7 +60,13 @@ export default function TypingTest(props: TypingTestProps) {
   const [best, setBest] = useState<{ previous: number | null; isNew: boolean } | null>(null);
   const [message, setMessage] = useState("");
   const layout = props.layouts.find((l) => l.id === layoutId) ?? props.layouts[0]!;
-  const bestKey = `typingBest:${layoutId}:${duration}:${source}`;
+  // Phones keep their own bests: tapping is a different skill from a keyboard.
+  const bestKey = `typingBest:${layoutId}:${duration}:${source}${phone ? ":phone" : ""}`;
+  const unit = scoringFor(props.script).unit;
+  const UNIT = unit === "wpm" ? "WPM" : "CPM";
+  const unitName = unit === "wpm" ? "words per minute" : "characters per minute";
+  const device = phone ? "phone" : "device";
+  const hasSentences = props.passages.length > 0;
   const rootRef = useRef<HTMLDivElement>(null);
 
   const text = useCallback(
@@ -68,13 +78,13 @@ export default function TypingTest(props: TypingTestProps) {
   );
 
   const restart = useCallback(() => {
-    setDrill(createDrill(text()));
+    setDrill(createDrill(text(), props.script));
     setBest(null);
     setNow(0);
     requestAnimationFrame(() =>
       rootRef.current?.querySelector<HTMLInputElement>("input[aria-label]")?.focus(),
     );
-  }, [text]);
+  }, [text, props.script]);
 
   // Saved choices, then a fresh text whenever the settings change.
   useEffect(() => {
@@ -83,10 +93,11 @@ export default function TypingTest(props: TypingTestProps) {
     if (l && props.layouts.some((x) => x.id === l)) setLayoutId(l);
     const d = Number(saved("duration"));
     if ((DURATIONS as readonly number[]).includes(d)) setDuration(d);
-    if (saved("source") === "sentences") setSource("sentences");
+    if (saved("source") === "sentences" && props.passages.length) setSource("sentences");
+    setPhone(hasCoarsePointer());
     if (saved("keyboard") === "off") setKeyboard(false);
     if (saved("own") === "on") setOwnKeyboard(true);
-  }, [props.layouts]);
+  }, [props.layouts, props.passages]);
   useEffect(() => restart(), [restart, layoutId, duration]);
 
   const running = drill.startedAt !== null && !isFinished(drill);
@@ -132,6 +143,7 @@ export default function TypingTest(props: TypingTestProps) {
     const canvas = document.createElement("canvas");
     await drawResultCard(canvas, {
       wpm: result!.netWpm,
+      unit: UNIT,
       accuracy: result!.accuracy,
       seconds: duration,
       layoutName,
@@ -175,18 +187,20 @@ export default function TypingTest(props: TypingTestProps) {
             savePreference("typing:duration", String(d));
           }}
         />
-        <Segmented
-          label="Text"
-          value={source}
-          options={[
-            { value: "words", label: "Words" },
-            { value: "sentences", label: "Sentences" },
-          ]}
-          onChange={(s) => {
-            setSource(s);
-            savePreference("typing:source", s);
-          }}
-        />
+        {hasSentences && (
+          <Segmented
+            label="Text"
+            value={source}
+            options={[
+              { value: "words", label: "Words" },
+              { value: "sentences", label: "Sentences" },
+            ]}
+            onChange={(s) => {
+              setSource(s);
+              savePreference("typing:source", s);
+            }}
+          />
+        )}
         <button type="button" className={BTN} onClick={restart} title="New text (restart)">
           <RotateCcw size={16} aria-hidden />
           <span>Restart</span>
@@ -227,7 +241,7 @@ export default function TypingTest(props: TypingTestProps) {
       >
         <span className="text-3xl font-semibold tabular-nums">{Math.ceil(left)}</span>
         <span className="text-sm text-muted">
-          <span className="font-semibold text-text tabular-nums">{live.netWpm}</span> WPM
+          <span className="font-semibold text-text tabular-nums">{live.netWpm}</span> {UNIT}
         </span>
         <span className="text-sm text-muted">
           <span className="font-semibold text-text tabular-nums">{live.accuracy}%</span> accuracy
@@ -250,13 +264,15 @@ export default function TypingTest(props: TypingTestProps) {
               <span className="block text-6xl font-bold text-accent tabular-nums">
                 {result.netWpm}
               </span>
-              <span className="text-sm text-muted">words per minute</span>
+              <span className="text-sm text-muted">{unitName}</span>
             </p>
             <dl className="grid grid-cols-2 gap-x-6 gap-y-1 text-sm sm:grid-cols-4">
               <dt className="text-muted">Accuracy</dt>
               <dd className="font-semibold tabular-nums">{result.accuracy}%</dd>
               <dt className="text-muted">Raw speed</dt>
-              <dd className="font-semibold tabular-nums">{result.rawWpm} WPM</dd>
+              <dd className="font-semibold tabular-nums">
+                {result.rawWpm} {UNIT}
+              </dd>
               <dt className="text-muted">Correct words</dt>
               <dd className="font-semibold text-good tabular-nums">{result.correctWords}</dd>
               <dt className="text-muted">Wrong words</dt>
@@ -266,10 +282,10 @@ export default function TypingTest(props: TypingTestProps) {
           <p className="text-sm text-muted" role="status">
             {best?.isNew
               ? best.previous === null
-                ? `First result saved on this device: ${result.netWpm} WPM.`
-                : `New personal best! Up from ${best.previous} WPM.`
+                ? `First result saved on this ${device}: ${result.netWpm} ${UNIT}.`
+                : `New personal best on this ${device}! Up from ${best.previous} ${UNIT}.`
               : best?.previous != null
-                ? `Your best on this device: ${best.previous} WPM.`
+                ? `Your best on this ${device}: ${best.previous} ${UNIT}.`
                 : ""}{" "}
             {layoutName} layout, {duration < 60 ? `${duration} seconds` : `${duration / 60} min`},{" "}
             {source}.

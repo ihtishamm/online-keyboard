@@ -16,7 +16,14 @@
  * wider than `sm` but still a phone). `short` is the landscape case, where keys must be lower.
  * Keep in sync with PHONE_QUERY in components/keyboard/useNarrow.ts.
  */
-@custom-variant phone (@media (max-width: 639.98px), (pointer: coarse) and (max-height: 500px));
+@custom-variant phone {
+  @media (max-width: 639.98px) {
+    @slot;
+  }
+  @media (pointer: coarse) and (max-height: 500px) {
+    @slot;
+  }
+}
 @custom-variant short (@media (pointer: coarse) and (max-height: 500px));
 
 /*
