@@ -9,9 +9,12 @@ downloaded once into `.cache/` (git-ignored):
   groups and skin-tone variants. Emoji newer than 15.0 are left out so phones a few years old
   can draw every one.
 - [CLDR annotations](https://github.com/unicode-org/cldr/tree/release-49/common/annotations)
-  (release 49, plus `annotationsDerived`): names and keywords in English, Urdu, Arabic, Farsi,
-  Pashto, Sindhi, Shahmukhi (gaps filled from Urdu), Hindi and Bangla. Saraiki, Balochi and
-  Kashmiri pages search the Urdu keywords.
+  (release 49, plus `annotationsDerived`): names and keywords in English and in every
+  registry language CLDR annotates. The languages come from
+  `packages/layouts/languages/<slug>/language.json`, so a new language gets its keywords the
+  next time the script runs (a test fails until it has). Shahmukhi's gaps are filled from
+  Urdu; Saraiki, Balochi and Kashmiri, which CLDR lacks, search the Urdu keywords. The script
+  also writes `src/locales.ts`, the loaders for the keyword files.
 
 The data is © Unicode, Inc., used under the Unicode License v3 (`data/LICENSE`).
 

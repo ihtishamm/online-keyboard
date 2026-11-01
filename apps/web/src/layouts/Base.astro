@@ -166,7 +166,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
           © {new Date().getFullYear()} {SITE.name}. Your text stays on your device.
           <span id="offline-ready" hidden>
             {" "}
-            Works offline.
+            Pages you open work offline.
           </span>
         </p>
         {credits.wikipedia && (
@@ -222,10 +222,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       // a cached page would hide code changes.
       if ("serviceWorker" in navigator) {
         const sw = navigator.serviceWorker;
-        // Files this page fetched before the worker controlled it, so they work offline too.
+        // This page and the files it fetched before the worker controlled it, so they work
+        // offline too.
         const handOver = () =>
           sw.controller?.postMessage({
             type: "cache",
+            page: location.pathname,
             urls: performance
               .getEntriesByType("resource")
               .map((e) => e.name)

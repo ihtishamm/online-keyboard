@@ -20,8 +20,8 @@ async function allCached(page: Page): Promise<boolean> {
 /** First visit: wait until the worker controls the page and has cached what it used. */
 async function firstVisit(page: Page, path: string) {
   await page.goto(path);
-  await expect(page.getByText("Works offline.")).toBeVisible({ timeout: 15_000 });
-  await expect(page.locator("html.nastaliq-ready")).toHaveCount(1);
+  await expect(page.getByText("Pages you open work offline.")).toBeVisible({ timeout: 15_000 });
+  if (path === "/urdu") await expect(page.locator("html.nastaliq-ready")).toHaveCount(1);
   await expect.poll(() => allCached(page), { timeout: 15_000 }).toBe(true);
 }
 
@@ -46,13 +46,48 @@ test.describe("offline", () => {
     });
     expect(nastaliq).toBe(true);
 
-    // Pages not visited yet are there too.
-    await page.goto("/hindi");
-    await expect(editor(page, "Hindi")).toBeEditable();
-    await page.goto("/inpage-to-unicode");
-    await expect(page.getByRole("radio", { name: "InPage → Unicode" })).toBeVisible();
+    // The home page is always there; a page never opened says it isn't saved and lists
+    // the pages that are.
     await page.goto("/");
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    await page.goto("/hindi");
+    await expect(page.getByRole("heading", { name: "You're offline" })).toBeVisible();
+    await expect(page.getByText("/hindi isn't saved on this device")).toBeVisible();
+    await expect(page.getByRole("link", { name: /Urdu Keyboard/ }).first()).toBeVisible();
+  });
+
+  test("a saved language works offline, every page of it", async ({ page, context }) => {
+    await firstVisit(page, "/hindi");
+    const box = page.getByRole("region", { name: "Use it offline" });
+    await box.getByRole("button", { name: "Save Hindi for offline" }).click();
+    await expect(box.getByRole("status")).toContainText(/Saved \d+ pages/, { timeout: 60_000 });
+    await expect(box.getByRole("button", { name: "Remove Hindi from this device" })).toBeVisible();
+    await context.setOffline(true);
+
+    // Pages never opened, with their scripts.
+    await page.goto("/hindi/inscript");
+    await expect(editor(page, "Hindi")).toBeEditable();
+    await page.goto("/hindi-typing-test");
+    await expect(page.getByRole("textbox").first()).toBeVisible();
+    await page.goto("/hindi/to-roman");
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "You're offline" })).toHaveCount(0);
+    // The emoji panel, loaded on first use, was fetched while saving.
+    await page.goto("/hindi");
+    await expect(editor(page, "Hindi")).toBeEditable();
+    await page.getByRole("button", { name: "Emoji" }).click();
+    await expect(
+      page.getByRole("region", { name: "Emoji" }).locator('[role="group"] button').first(),
+    ).toBeVisible();
+
+    // Removing it frees the pages again.
+    await context.setOffline(false);
+    await page.reload();
+    await box.getByRole("button", { name: "Remove Hindi from this device" }).click();
+    await expect(box.getByRole("status")).toContainText("removed");
+    await context.setOffline(true);
+    await page.goto("/hindi-typing-test");
+    await expect(page.getByRole("heading", { name: "You're offline" })).toBeVisible();
   });
 
   test("emoji used once keeps working offline", async ({ page, context }) => {

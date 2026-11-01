@@ -24,6 +24,8 @@ export interface EmojiData {
 /** Emoji -> "name|keyword|keyword..." in one language. */
 export type Annotations = Readonly<Record<string, string>>;
 
+import { ALIASES, ANNOTATIONS } from "./locales.ts";
+
 type Row = [string, number, string, string, string[]?];
 
 export async function loadEmoji(): Promise<EmojiData> {
@@ -41,25 +43,12 @@ export async function loadEmoji(): Promise<EmojiData> {
   };
 }
 
-const ANNOTATIONS: Record<string, () => Promise<{ default: unknown }>> = {
-  ur: () => import("../data/ur.json"),
-  ar: () => import("../data/ar.json"),
-  fa: () => import("../data/fa.json"),
-  ps: () => import("../data/ps.json"),
-  sd: () => import("../data/sd.json"),
-  "pa-Arab": () => import("../data/pa-Arab.json"),
-  hi: () => import("../data/hi.json"),
-  bn: () => import("../data/bn.json"),
-};
-
-/** Languages without CLDR emoji keywords whose speakers read Urdu. */
-const URDU_FALLBACK = new Set(["skr", "bal", "ks"]);
-
 /** The keyword set for a language tag (e.g. "ur", "pa-Arab"), or null if there is none. */
 export function annotationLocale(lang: string): string | null {
   if (lang in ANNOTATIONS) return lang;
   const base = lang.split("-")[0]!;
-  if (URDU_FALLBACK.has(base)) return "ur";
+  const alias = ALIASES[lang] ?? ALIASES[base];
+  if (alias) return alias;
   return base in ANNOTATIONS ? base : null;
 }
 

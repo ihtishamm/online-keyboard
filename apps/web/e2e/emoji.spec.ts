@@ -41,6 +41,12 @@ test("searches in English and in the page language", async ({ page }) => {
   await expect(editor(page)).toHaveValue("👍");
 });
 
+test("searches in the language of every page CLDR covers", async ({ page }) => {
+  await openPanel(page, "/spanish");
+  await search(page).fill("corazón");
+  await expect(grid(page).getByRole("button", { name: "red heart", exact: true })).toBeVisible();
+});
+
 test("remembers a skin tone and recent emoji", async ({ page }) => {
   await openPanel(page);
   await panel(page).getByRole("radio", { name: "Medium skin tone", exact: true }).click();

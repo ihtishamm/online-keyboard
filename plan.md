@@ -623,11 +623,19 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
 **Stand-out bar:** "English to Tamil/Telugu/Marathi/Gujarati typing" pages with accuracy numbers. Real input methods for Korean, Japanese, Chinese and Vietnamese. Every language works on phones.
 
 **Scaling work** (do it before 9a):
-- [ ] **Cheat-sheet PDFs:** generate them during the deploy build and stop committing them.
-- [ ] **Offline:** precache the app shell plus the pages the user has visited, and add a **"Save this language for offline"** button. Stop precaching every page.
+- [x] **Cheat-sheet PDFs:** generate them during the deploy build and stop committing them.
+  - **Already so** (checked 2026-11-01): `pnpm build` prints them into `dist/` (`scripts/make-cheatsheets.ts`) and none are in git; CI builds with `SKIP_PDFS=1`.
+- [x] **Offline:** precache the app shell plus the pages the user has visited, and add a **"Save this language for offline"** button. Stop precaching every page.
+  - **Shipped:** the worker precaches only `/`, the new `/offline` page and their scripts (18 files, down from 258). Every page opened is kept, the first one included (the page hands its own address to the worker). A page never opened shows `/offline`, which names the address and lists the pages on the device.
+  - **Save for offline:** a "Use it offline" box on every keyboard page. The build writes `/offline/<slug>.json` (keyboard pages, to-roman, typing tutor/test/games, guides, cheat sheets, word list, chat spellings, typing data); the worker stores each page with its static imports and keeps the list. The page fetches what the keyboard loads on first use (emoji panel and keywords, exports, spell check, the word-list worker, the language's fonts). "Remove" deletes those pages and files again. The build fails if a list names a file that isn't built.
+  - **Updates:** a new worker fetches the new copy of every kept page and saved language before it takes over, and refreshes unhashed data files; a saved page refetches its first-use code when it sees a new version. The version now hashes every page.
+  - The to-roman tool fetches chat spellings as files (`?url`) rather than as modules, so the list can name them.
+  - **Sizes:** keyboard pages 53.4 KB initial JS (was 51.9; budget 90). Saving Urdu stores 14 pages.
+  - **Not done:** no test of a worker update in e2e (Playwright can't swap the worker mid-test); covered by reading. Lazily loaded code is warmed for keyboard pages only, not for the typing games' share card.
 - [ ] **Tests:** golden tests for every language stay in the unit tests. e2e runs a smoke test per language (load, then type the golden text on desktop and phone), with a full nightly e2e run.
 - [ ] **Build:** split the sitemap by section. CI must stay under 10 minutes.
-- [ ] **Emoji:** names and keywords for every new language that CLDR annotates, added automatically.
+- [x] **Emoji:** names and keywords for every new language that CLDR annotates, added automatically.
+  - **Shipped:** `packages/emoji/scripts/build.ts` reads the languages from the registry, fetches each one's CLDR 49 annotations (404s are remembered) and writes `src/locales.ts` with the loaders. A test fails when a registry language is missing until the script runs again. 22 languages now have keywords (the 14 Wave 1 languages are new), and 3 (Saraiki, Balochi, Kashmiri) use Urdu's. Swedish CLDR lacks 3 keycap names; English names still find them.
 
 - [ ] **9a. Wave 2: South Asia and Arabic script** (our core audience, 23 languages).
   - [ ] **Languages:**

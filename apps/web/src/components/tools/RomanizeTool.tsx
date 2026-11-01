@@ -6,10 +6,14 @@ import { copyText } from "../keyboard/actions";
 import { loadDictionary } from "../keyboard/dictionary";
 import { ROMAN_TABLES as TABLES, schemeWords } from "./roman-tables";
 
-/** Attested chat spellings per data code, fetched on demand. */
+/**
+ * Attested chat spellings per data code, fetched on demand. Plain files rather than modules,
+ * so "Save for offline" (src/content/offline.ts) can name the same URLs.
+ */
 const CHAT = import.meta.glob<string>("../../../../../packages/dictionaries/data/*/chat.tsv", {
-  query: "?raw",
+  query: "?url",
   import: "default",
+  eager: true,
 });
 
 function parseChat(text: string): Map<string, string> {
@@ -53,10 +57,17 @@ export default function RomanizeTool(props: RomanizeToolProps) {
   // The chat list and the word list (to check vowelled spellings) load once the page is idle.
   useEffect(() => {
     let live = true;
-    const loader = Object.entries(CHAT).find(([path]) => path.split("/").at(-2) === code)?.[1];
-    void loader?.().then((tsv) => {
-      if (live) setWords(new Map([...parseChat(tsv), ...schemeWords(scheme)]));
-    });
+    const url = Object.entries(CHAT).find(([path]) => path.split("/").at(-2) === code)?.[1];
+    if (url) {
+      fetch(url)
+        .then((response) => (response.ok ? response.text() : Promise.reject(response.status)))
+        .then((tsv) => {
+          if (live) setWords(new Map([...parseChat(tsv), ...schemeWords(scheme)]));
+        })
+        .catch(() => {
+          /* offline and never fetched: the scheme's own words still convert */
+        });
+    }
     if (table.kind === "arabic") {
       void loadDictionary(code).then((dictionary) => {
         if (!live || !dictionary) return;

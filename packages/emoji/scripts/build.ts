@@ -9,50 +9,76 @@
  *
  * Output (data/):
  *   emoji.json         { version, groups, emoji: [char, group, name, keywords, skins?][] }
- *   <locale>.json      { char: "name|keyword|keyword..." } for each locale in LOCALES
+ *   <locale>.json      { char: "name|keyword|keyword..." } for each registry language CLDR
+ *                      annotates
+ * and src/locales.ts, the loaders for those files. The languages are read from
+ * packages/layouts/languages/<slug>/language.json, so a new language gets its keywords the next
+ * time this runs; a test fails until it has.
  *
  * Only fully-qualified emoji up to MAX_VERSION are kept, so phones a few years old can draw
  * all of them. Skin tones are kept when all five uniform variants exist.
  */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 const ROOT = join(dirname(new URL(import.meta.url).pathname), "..");
 const CACHE = join(ROOT, ".cache");
 const OUT = join(ROOT, "data");
+const LANGUAGES = join(ROOT, "..", "layouts", "languages");
 
 const EMOJI_TEST = "https://unicode.org/Public/emoji/16.0/emoji-test.txt";
 const CLDR = "https://raw.githubusercontent.com/unicode-org/cldr/release-49/common";
 const MAX_VERSION = 15.0;
 
-/**
- * Output locale -> CLDR files, first match wins. Shahmukhi's annotations are incomplete, so
- * Urdu fills the gaps; languages CLDR lacks (Saraiki, Balochi, Kashmiri) use Urdu outright.
- */
-const LOCALES: Record<string, string[]> = {
-  ur: ["ur"],
-  ar: ["ar"],
-  fa: ["fa"],
-  ps: ["ps"],
-  sd: ["sd"],
-  "pa-Arab": ["pa_Arab", "ur"],
-  hi: ["hi"],
-  bn: ["bn"],
-};
+/** CLDR files that fill the gaps in a language's own annotations (Shahmukhi's are incomplete). */
+const GAPS: Record<string, string[]> = { "pa-Arab": ["ur"], ks: ["ur"] };
+/** Languages CLDR doesn't annotate whose speakers read another language's keywords. */
+const FALLBACK: Record<string, string> = { skr: "ur", bal: "ur", ks: "ur" };
+
+/** Every registry language's tag (language.json "lang"), sorted. */
+const tags = [
+  ...new Set(
+    readdirSync(LANGUAGES, { withFileTypes: true })
+      .filter((d) => d.isDirectory() && existsSync(join(LANGUAGES, d.name, "language.json")))
+      .map(
+        (d) =>
+          (
+            JSON.parse(readFileSync(join(LANGUAGES, d.name, "language.json"), "utf8")) as {
+              lang: string;
+            }
+          ).lang,
+      ),
+  ),
+].sort();
+/** "pa-Arab" -> "pa_Arab", CLDR's file name. */
+const cldrFile = (tag: string) => tag.replace(/-/g, "_");
 
 const SKIN_TONES = [0x1f3fb, 0x1f3fc, 0x1f3fd, 0x1f3fe, 0x1f3ff];
 const FE0F = /\uFE0F/g;
 
-async function source(url: string): Promise<string> {
+/** The file at url, or null when it doesn't exist (a 404 is remembered too). */
+async function source(url: string): Promise<string | null> {
   const file = join(CACHE, url.replace(/^https:\/\//, "").replace(/[^\w.-]+/g, "_"));
+  const absent = `${file}.404`;
+  if (existsSync(absent)) return null;
   if (!existsSync(file)) {
     console.log(`fetching ${url}`);
     const res = await fetch(url);
-    if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
     mkdirSync(CACHE, { recursive: true });
+    if (res.status === 404) {
+      writeFileSync(absent, "");
+      return null;
+    }
+    if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
     writeFileSync(file, await res.text());
   }
   return readFileSync(file, "utf8");
+}
+
+async function required(url: string): Promise<string> {
+  const text = await source(url);
+  if (text === null) throw new Error(`${url}: not found`);
+  return text;
 }
 
 interface Entry {
@@ -140,14 +166,17 @@ function joinWords(name: string | undefined, keywords: readonly string[]): strin
   return words.join("|");
 }
 
-const { groups, entries } = parseEmojiTest(await source(EMOJI_TEST));
-const annotations = (file: string) =>
-  Promise.all([
+const { groups, entries } = parseEmojiTest(await required(EMOJI_TEST));
+/** A CLDR locale's names and keywords, or null if CLDR has none for it. */
+async function annotations(file: string) {
+  const [main, derived] = await Promise.all([
     source(`${CLDR}/annotations/${file}.xml`),
     source(`${CLDR}/annotationsDerived/${file}.xml`),
-  ]).then((xml) => parseAnnotations(...xml));
+  ]);
+  return main === null ? null : parseAnnotations(main, derived ?? "");
+}
 
-const en = await annotations("en");
+const en = (await annotations("en"))!;
 const emoji = entries.map((e) => {
   const a = en.get(e.char.replace(FE0F, ""));
   const name = a?.name ?? e.name;
@@ -173,21 +202,58 @@ console.log(
   `emoji.json: ${emoji.length} emoji, ${emoji.filter((r) => r.length > 4).length} with skin tones`,
 );
 
-for (const [locale, files] of Object.entries(LOCALES)) {
-  const tables = await Promise.all(files.map(annotations));
+const written: string[] = [];
+const missing: string[] = [];
+for (const tag of tags) {
+  const own = await annotations(cldrFile(tag));
+  if (!own) {
+    if (!(tag in FALLBACK)) missing.push(tag);
+    continue;
+  }
+  const tables = [own, ...(await Promise.all((GAPS[tag] ?? []).map(annotations)))].filter(
+    (t) => t !== null,
+  );
   const words: Record<string, string> = {};
-  let missing = 0;
+  let absent = 0;
   for (const e of entries) {
     const key = e.char.replace(FE0F, "");
     const a = tables.map((t) => t.get(key)).find(Boolean);
     if (!a) {
-      missing++;
+      absent++;
       continue;
     }
     words[e.char] = joinWords(a.name, a.keywords);
   }
-  writeFileSync(join(OUT, `${locale}.json`), JSON.stringify(words));
+  writeFileSync(join(OUT, `${tag}.json`), JSON.stringify(words));
+  written.push(tag);
   console.log(
-    `${locale}.json: ${Object.keys(words).length} emoji (${missing} without ${files.join("/")} annotations)`,
+    `${tag}.json: ${Object.keys(words).length} emoji (${absent} without ${[cldrFile(tag), ...(GAPS[tag] ?? [])].join("/")} annotations)`,
   );
 }
+
+const aliases = Object.fromEntries(
+  Object.entries(FALLBACK).filter(([tag]) => tags.includes(tag) && !written.includes(tag)),
+);
+writeFileSync(
+  join(ROOT, "src", "locales.ts"),
+  `// Generated by scripts/build.ts from the language registry. Do not edit; run
+// \`pnpm --filter @okb/emoji build:data\` after adding a language.
+
+/** Keyword file loaders, one per language CLDR annotates. */
+export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unknown }>>> = {
+${written.map((tag) => `  ${JSON.stringify(tag)}: () => import("../data/${tag}.json"),`).join("\n")}
+};
+
+/** Languages CLDR lacks whose speakers search in another language's keywords. */
+export const ALIASES: Readonly<Record<string, string>> = ${JSON.stringify(aliases)};
+
+/** Registry languages with no CLDR keywords: their emoji search is in English. */
+export const NOT_ANNOTATED: readonly string[] = ${JSON.stringify(missing)};
+
+/** Every registry language this file was generated for. */
+export const LANGUAGE_TAGS: readonly string[] = ${JSON.stringify(tags)};
+`,
+);
+console.log(
+  `locales.ts: ${written.length} with keywords, ${Object.keys(aliases).length} aliases, ${missing.length} without: ${missing.join(", ")}`,
+);

@@ -1,0 +1,144 @@
+---
+/**
+ * "Save for offline" for one language (plan Phase 9, scaling work). The service worker stores
+ * the pages listed in /offline/<slug>.json; this page fetches what its keyboard loads only on
+ * first use (offline-warm.ts). Hidden until a service worker controls the page.
+ */
+import type { Language } from "@okb/layouts";
+import { FONT_CLASS } from "./fonts";
+
+interface Props {
+  language: Language;
+  /** The language has typing practice pages. */
+  typing: boolean;
+}
+
+const { language, typing } = Astro.props;
+const name = language.name.en;
+---
+
+<section
+  aria-labelledby="offline-heading"
+  class="mt-6"
+  data-offline-save
+  data-slug={language.slug}
+  data-code={language.code}
+  data-lang={language.lang}
+  data-name={name}
+  hidden
+>
+  <h2 id="offline-heading" class="mb-1 text-base font-semibold">
+    Use it offline
+  </h2>
+  <p class="mb-2 text-sm text-muted">
+    Keep every {name} keyboard{typing && ", the typing practice"}, the guides and the printable
+    charts on this device, to use them without the internet.
+  </p>
+  <span
+    hidden
+    data-offline-sample
+    class={FONT_CLASS[language.fonts[0]!]}
+    lang={language.lang}
+    dir={language.dir}
+  >
+    {language.sample}
+  </span>
+  <button
+    type="button"
+    class="inline-flex min-h-11 items-center gap-2 rounded-lg border border-border bg-surface px-4 text-sm font-medium text-text hover:bg-surface-2 disabled:opacity-60"
+  >
+    Save {name} for offline
+  </button>
+  <p role="status" class="mt-1 text-sm text-muted"></p>
+</section>
+
+<script>
+  import { loadPreference, savePreference } from "./keyboard/preferences";
+
+  interface Reply {
+    version: string;
+    error?: string;
+    pages?: number;
+    slugs?: string[];
+  }
+
+  const box = document.querySelector<HTMLElement>("[data-offline-save]");
+  const sw = "serviceWorker" in navigator ? navigator.serviceWorker : null;
+
+  /** Sends the worker a message and waits for its answer. */
+  async function ask(message: object): Promise<Reply> {
+    const registration = await sw!.ready;
+    return new Promise((resolve, reject) => {
+      const channel = new MessageChannel();
+      channel.port1.onmessage = (event: MessageEvent<Reply>) =>
+        event.data.error ? reject(new Error(event.data.error)) : resolve(event.data);
+      registration.active!.postMessage(message, [channel.port2]);
+    });
+  }
+
+  if (box && sw) {
+    const { slug = "", code = "", lang = "", name = "" } = box.dataset;
+    const button = box.querySelector("button")!;
+    const status = box.querySelector<HTMLElement>('[role="status"]')!;
+    const sampleEl = box.querySelector<HTMLElement>("[data-offline-sample]")!;
+    const versionKey = `offline:${slug}`;
+    let saved = false;
+    let started = false;
+
+    const warm = () =>
+      import("./keyboard/offline-warm").then(({ warmKeyboard }) =>
+        warmKeyboard({
+          code,
+          lang,
+          sample: sampleEl.textContent ?? "",
+          fontElements: [sampleEl, ...document.querySelectorAll(`[lang="${lang}"]`)],
+        }),
+      );
+
+    const show = () => {
+      button.textContent = saved ? `Remove ${name} from this device` : `Save ${name} for offline`;
+    };
+
+    const start = async () => {
+      if (!sw.controller || started) return;
+      started = true;
+      const reply = await ask({ type: "saved" });
+      saved = reply.slugs?.includes(slug) ?? false;
+      show();
+      if (saved) status.textContent = `${name} is saved on this device.`;
+      box.hidden = false;
+      // A new release replaced the code this page loads on first use: fetch it again.
+      if (saved && loadPreference(versionKey) !== reply.version) {
+        void warm().then(() => savePreference(versionKey, reply.version));
+      }
+    };
+
+    button.addEventListener("click", async () => {
+      button.disabled = true;
+      try {
+        if (saved) {
+          status.textContent = "Removing…";
+          await ask({ type: "unsave", slug });
+          saved = false;
+          status.textContent = `${name} was removed from this device. Pages you open still work offline.`;
+        } else {
+          status.textContent = `Saving ${name}…`;
+          const [reply] = await Promise.all([ask({ type: "save", slug }), warm()]);
+          savePreference(versionKey, reply.version);
+          saved = true;
+          status.textContent = `Saved ${reply.pages} pages. ${name} now works without the internet on this device.`;
+        }
+      } catch {
+        status.textContent = saved
+          ? "Couldn't remove it. Try again."
+          : "Couldn't save everything. Check your connection and try again.";
+      } finally {
+        button.disabled = false;
+        show();
+      }
+    });
+
+    sw.addEventListener("controllerchange", () => void start());
+    void start();
+  }
+</script>

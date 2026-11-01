@@ -1,0 +1,77 @@
+---
+/**
+ * Shown by the service worker (src/sw/service-worker.js) for a page that was never opened or
+ * saved on this device when there is no network. Lists the pages that do work offline.
+ */
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="You're offline | Likho"
+  description="This page isn't saved on this device yet."
+  noindex
+  credits={{}}
+>
+  <h1 class="mb-2 text-2xl font-semibold tracking-tight">You're offline</h1>
+  <p class="mb-4 max-w-2xl" id="offline-what">
+    This page isn't saved on this device, so it needs the internet.
+  </p>
+  <p class="mb-6 max-w-2xl text-sm text-muted">
+    Pages you have opened before work without the internet. To keep a whole language (all its
+    layouts, typing practice and guides), open its keyboard and choose “Save for offline”.
+  </p>
+  <section aria-labelledby="saved-heading" id="offline-saved" hidden>
+    <h2 id="saved-heading" class="mb-2 text-lg font-semibold">
+      Pages on this device
+    </h2>
+    <ul class="space-y-1" id="offline-list"></ul>
+  </section>
+  <p class="mt-6">
+    <a class="inline-flex min-h-11 items-center text-accent underline" href="/">
+      Home page
+    </a>
+  </p>
+  <script>
+    // The worker answers with this page at the address asked for, so name that address.
+    const what = document.getElementById("offline-what")!;
+    if (location.pathname !== "/offline") {
+      what.textContent = `${decodeURI(location.pathname)} isn't saved on this device, so it needs the internet.`;
+    }
+
+    /** Pages in the worker's page caches with their titles, by title. */
+    async function cachedPages(): Promise<{ path: string; title: string }[]> {
+      if (!("caches" in window)) return [];
+      const names = (await caches.keys()).filter((n) => n.startsWith("likho-pages-"));
+      const found = new Map<string, string>();
+      for (const name of names) {
+        const cache = await caches.open(name);
+        for (const request of await cache.keys()) {
+          const path = new URL(request.url).pathname;
+          if (path === "/offline" || found.has(path)) continue;
+          const html = (await (await cache.match(request))?.text()) ?? "";
+          const title = /<title>([^<]*)<\/title>/.exec(html)?.[1] ?? path;
+          const text = new DOMParser().parseFromString(title, "text/html").body.textContent;
+          found.set(path, (text ?? path).replace(/\s*\|\s*Likho$/, ""));
+        }
+      }
+      return [...found]
+        .map(([path, title]) => ({ path, title }))
+        .sort((a, b) => a.title.localeCompare(b.title, "en"));
+    }
+
+    void cachedPages().then((pages) => {
+      if (!pages.length) return;
+      const list = document.getElementById("offline-list")!;
+      for (const { path, title } of pages) {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = path;
+        link.textContent = title;
+        link.className = "inline-flex min-h-11 items-center text-accent underline";
+        item.append(link);
+        list.append(item);
+      }
+      document.getElementById("offline-saved")!.hidden = false;
+    });
+  </script>
+</Base>

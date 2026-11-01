@@ -10,6 +10,7 @@ import { TYPING_LANGUAGES } from "../content/typing/practice";
 import KeyboardApp from "./keyboard/KeyboardApp";
 import { allSheets, pdfPath, sheetPath } from "./cheatsheet/sheets";
 import LatinLetters from "./LatinLetters.astro";
+import OfflineSave from "./OfflineSave.astro";
 import LayoutChart from "./LayoutChart.astro";
 import RomanGuide from "./RomanGuide.astro";
 import Base from "../layouts/Base.astro";
@@ -297,6 +298,7 @@ const hasTyping = slug === "urdu" || TYPING_LANGUAGES.some((l) => l.slug === slu
           </a>
         </p>
       )}
+      <OfflineSave language={language} typing={hasTyping} />
       {guides.length > 0 && (
         <nav aria-labelledby="guides-heading" class="mt-6">
           <h2 id="guides-heading" class="mb-2 text-base font-semibold">
