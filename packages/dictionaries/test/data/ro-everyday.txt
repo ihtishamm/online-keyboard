@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+405995	Tatăl meu și-a oferit serviciile unei companii de comerț bine cunoscută.
+406815	Cum vă numiți?
+411865	Vara mă duc la piscină în fiecare zi.
+476862	Windows este sistemul de operare cel mai folosit.
+584448	Se pare că am făcut o greșeală.
+599153	Datorită acestui accident s-au pierdut multe vieți.
+610906	Mama ne-a pregătit sandvișuri cu brânză pentru prânz.
+702068	Îmi place să călătoresc.
+706114	Au trecut cinci ani de când te-am văzut ultima dată.
+706124	Nu avea nicio intenție să aștepte trei ore.
+706153	O rățușcă urâtă a devenit o lebădă grațioasă.
+708922	Poate o să ningă.
+708987	Lasă-mă să tai morcovii.
+709892	Persoanele care nu se grăbesc stau pe partea dreaptă a scărilor rulante.
+709911	John a depus mărturie în ceea ce îl privește.
+863658	Urăsc aceste cuvinte.
+924390	Nu știam că ai avut o săptămână liberă luna trecută.
+1059474	Ce drăguț din partea ta să mă inviți și pe mine!
+1059483	A venit să ne roage să-l ajutăm.
+1059642	Te rog, păstrează cartea asta la îndemână.
+1059675	Aș putea vedea meniul de vinuri?
+1059684	El cântă bine la pian.
+1136275	Poți invita orice persoană dorești.
+1136577	Judecătorul Parker nu a avut vreo șansă să câștige alegerile electorale.
+1136615	Nu promit că răspund, dar îmi puteți trimite mesaje.
+1136645	Tom nu a intenționat să întârzie atât de mult timp.
+1136655	Nu sunt sigură de ce au fost forțați să închidă restaurantul.
+1136753	Asta e cu totul altă problemă.
+1136822	Purta haine potrivite pentru petrecere.
+1136851	Te-ai spălat deja pe mâini?
+1136907	Ai înţeles ce a zis?
+1136938	Ne-am ridicat toți deodată.
+1137565	Cu ajutorul acestei aplicații, veți putea sincroniza fotografiile și muzica între aparatele dumneavoastră.
+1138059	Fata din imagine poartă o coroană nu din aur, ci din flori.
+1138062	S-a întors la casa lui din Tennessee.
+1138065	Părerea lui este în general corectă.
+1143116	Acest ceas ți-e destinat.
+1143125	Nu e de vreun folos să încerci să îl convingi de acel lucru.
+1143164	Tom a fost exclus de la o cină "numai femei".
+1144038	Holmes a ieșit din cameră fără să fie observat de nimeni.
+1144704	Care este capitala Finlandei?
+1151773	Azi e marți. Cumpăr pești.
+1151778	Azi e miercuri. Citesc.
+1153798	Indiferent de ce joacă pe ecran, Tom arată grozav.
+1153804	Vii la petrecere, da?
+1153818	Rar iese duminica.
+1153863	Ai văzut vreodată un film atât de bun?
+1153871	Voi face tot ce îmi stă în putere.
+1185062	N-ar fi trebuit să mănânci atât de multă înghețată.
+1185094	Sunt băiat bun.
+1185162	Americanii și-au pierdut încrederea în Toyota.
+1192738	Compunerea ta nu este în întregime rea.
+1192761	Planul lui e dificil și costisitor; iese complet din discuție.
+1195228	Cartea e multicoloră.
+1195255	Acest televizor e greu.
+1221645	Poate că banii strică caracterul, dar lipsa lor nu-l face nicidecum mai bun.
+1288338	Cum se întâmplă adeseori, băiatul a fugit de acasă.
+1288342	Nici măcar nu-și poate scrie numele.
+1291125	Mă bucur să vă întâlnesc.
+1327055	Am apreciat comportamentul lui ca copilăros.
+1346255	Încă nu am ieşit din pădure.
+1418733	Sora mea cea mică are doi copii, ceea ce înseamnă că am doi nepoți.
+1555846	Acasă consum multă bere.
+1555859	Îmi iubesc soția.
+1981930	Stai! Nu trage încă.
+1981934	Tom câteodată poartă o pălărie.
+1981978	Ești sigur că nu putem repara aparatul foto?
+2433935	Rog să mă ajutați în depistarea greșelilor gramaticale și ortografice.
+2534221	Am auzit că Tom cumpără lucruri de pe piața neagră.
+2536070	Am fost în munți.
+2536135	Nu sunt un pește real, sunt doar un pluș.
+2536498	A fi surprins, a te mira, este începutul înțelegerii.
+2536591	Ochii mei sunt un ocean în care visele mele se reflectă.
+2536620	Mă doare capul.
+2536648	Ar fi bucuros să audă asta.
+2536716	Am luat o decizie.
+2536720	A fi obiectiv înseamnă să nu spui tuturor de partea cui ești.
+2568446	S-a terminat între noi. Dă-mi înapoi inelul!
+2568503	Fratele meu cel mic se uită la televizor.
+2639265	Acesta nu este un pește.
+2657507	Ei s-au dus la un bar.
+2705015	Președintele republicii este ales de către popor.
+2705112	Nu aveți voie să fumați aici.
+2705115	Este interzis să umbli gol prin hotel.
+2705119	În această cameră este aer condiționat.
+2705125	Am o fiică.
+2705207	Am cel mai lung păr din clasă.
+2706068	Acesta este tatăl lui Tom.
+2707150	Luna este minunată toamna.
+2708229	Trebuie să aștept aici.
+2708469	El nu poate să facă asta.
+2709537	Vreau să mă înscriu la curs.
+2728339	Nu îți ajunge?
+2797507	Vrei să luăm o bere?
+2797862	Zero este un număr special.
+2804820	Amintirile din copilărie sunt cele mai frumoase.
+2814137	Nu poţi fi de acord cu toată lumea despre orice.
+2977792	Sperăm că adevărul va ieși la lumină.
+2977797	Ne puteți aduce cafea?
+3110809	Dintr-un motiv sau altul microfonul nu funcționa adineauri.
+3110811	Nu știu dacă am timpul necesar.
+3154084	Luna viitoare mergem în vacanță.
+3154120	Puteți să-mi dați sarea, vă rog?
+3166510	Mai bine mă duc acasă.
+3166850	Un weekend plăcut!
+3209034	Ăă... da, așa cred.
+3209057	Nu-ți plac poveștile de dragoste, așa-i?
+3209059	A sunat Tom când erai la duș.
+3209115	Hai să terminăm treaba.
+3222545	Poliția a prins toată banda.
+3222588	John scrie părinților săi o dată pe lună.
+4073649	Vinul a fost excelent.
+4146383	Nu lipsește nimic.
+4152258	Restaurantul este la parter.
+4222682	Cum a mers întâlnirea?
+4538796	Toți sunteți nebuni.
+4538860	E ceva așa de rău?
+4538865	Să nu faci așa ceva.
+4809215	Ea este ocupată.
+4827204	Urăsc luminile fluorescente.
+4827217	Când începe călătoria?
+4831969	Nu știu ce se va întâmpla cu tine.
+4844868	A fost jenant.
+4844922	Școala era interesantă.
+4844950	Aceasta a fost cea mai captivantă carte pe care am citit-o.
+4847191	A trebuit să iau medicamente.
+4847200	Nu trebuie să te schimbi.
+4847257	Trebuie să te oprești.
+4876538	Omul nu este implicat în acest proiect.
+4881893	Compania noastră susține diverse evenimente culturale.
+4882028	Care este activitatea ta preferată?
+4882184	Iernile erau foarte friguroase.
+4885190	Am vorbit despre tot felul de lucruri.
+4885745	Societatea este compusă din indivizi.
+4895972	Toate aceste bunuri sunt impozitate într-o măsura prea mare.
+4898150	Aceste case sunt întunecate și murdare.
+4898173	Puteți duce aceste valize pentru mine?
+4900902	Nici măcar pe timpul iernii nu avem multă zăpadă pe aici.
+4901185	Până seara, s-au format câțiva nori.
+4901724	Cum ai știut că Tom nu a fost hoțul?
+4903470	De ce nu îți actualizezi site-ul?
+4913483	Egalitatea este garantată de Constituție.
+4913543	Culcă-te pe partea stângă.
+4913680	Jucătorul a fost aplaudat de fani.
+4916580	Are cineva vreo idee cine ar fi putut face asta?
+4928161	Tom le-a mulțumit amândurora.
+4929972	Trebuie să îl avertizăm pe Tom.
+4932276	Mașina lui este un Ford.
+4932333	În ce mă priveşte, Tom poate face ceea ce vrea.
+4932370	Cât de greu este să înveți să zbori?
+4934245	M-am săturat să trăiesc așa.
+4934256	M-am săturat de scuzele tale, Tom.
+4934365	Nu îți face griji pentru Tom.
+4943899	Dan nici măcar nu a plâns.
+4945996	Tom s-a săturat de citit și a vrut să iasă afară și să se joace.
+4946146	În domeniul academic, fetele sunt mai ambițioase decât băieții.
+4946904	Tom doarme în patul de jos.
+4948888	Trebuie să învăț multe limbi.
+4948895	Cred în puterea ta.
+4950461	El este înrudit cu ea prin căsătorie.
+4950689	Am rugat-o să facă ceai.
+4959957	Lasă-l să plece!
+4959989	De ce să facă asta?
+4961176	Să încercăm din nou, băieți!
+4961459	Salutări din Brazilia!
+4965532	Eu însămi am făcut acea rochie.
+4965823	Totul sau nimic.
+4974967	Marilyn Monroe a murit cu treizeci și trei de ani în urmă.
+4978264	Pot să fac sau să spun ceea ce vreau.
+4980431	Cu toate că au trecut cinci ani, încă îmi amintesc de ea.
+4980435	Timpul va spune.
+4980608	Telefonul meu sună.
+4980625	Ea a încercat de câteva ori, dar a eșuat.
+4980953	Tom lucrează pentru o agenție de traduceri.
+4981665	Am fost disperat.
+4981742	Tom era indulgent.
+4982426	S-au ciocnit unii cu alții.
+4987442	Corectează erorile dacă sunt.
+4989035	El a strâns ultimele trei bețe de chibrituri rămase pe podea.
+4989058	Nu te poți înțelege cu el căci vorbește întruna.
+4991259	Ei pot pleca mâine.
+4991288	Puterea apei învârte roata.
+4991323	O calitate importantă a oțelului este rezistența sa.
+4994530	El lucrează la îmbunătățirea unor algoritmi matematici.
+4994539	Firma vrea să exporte mai multe aragaze la anul.
+5000197	Vezi, de asta nu ne înțelegem noi!
+5000481	Ia uite cum mai joacă baba, zici că are douăzeci de ani!
+5001208	Din câte știu eu, ea este o persoană care își ține promisiunile.
+5001218	Din câte știu eu, ea nu are nicio legătură cu scandalul.
+5001295	Trebuie să jucăm după reguli.
+5001493	S-au gândit să demoleze toate clădirile ai căror stâlpi de susținere sunt șubrezi.
+5001503	Avem gresie în baie și parchet în dormitor.
+5001616	Unii dintre câini trăiesc.
+5003076	El este american.
+5004018	El a dat bani multora.
+5026676	Extratereștrii au verificat progresul lumii în secret.
+5030950	A căzut cortina.
+5033404	Președintele Clinton a negat orice acțiuni dezonorabile.
+5037766	Astăzi este 5 martie.
+5041268	El va părăsi Japonia în luna aprilie.
+5043765	Vreau să mă plâng în mod public despre asta.
+5043770	Nu te schimba din cauza cuiva. Fii tu însuți, iar persoana potrivită te va place așa cum ești.
+5051683	Dacă tu previi pagubele, noi te vom recompensa.
+5055760	Comunitatea lor, având dispreț pentru știință, a rămas în urmă.
+5057018	Ea are câteva cunoștințe la care poate apela în caz de nevoie.
+5060303	Ce știe președintele despre fratele său, și nu vrea să spună?
+5068563	Celor mai mulți votanți le-a plăcut ceea ce a spus Roosevelt.
+5076463	Asta e ceva ce am învățat citind istoria.
+5082313	Tom știe despre ce este vorba.
+5082486	Tu trebuie să aduci cu tine la bancă pașaportul tău.
+5084318	Copiii sunt deja aici.
+5084505	Nimeni nu râde.
+5092676	Mama me e la pat, e bolnavă.
+5098278	M-am simțit foarte fericit.
+5120471	Avem o casă de închiriat.
+5121520	Cine a punctat cel mai mult?
+5121591	Cine ar ști asta?
+5126421	E o conexiune între fumat și cacerul de plămân.
+5130517	Primul calculator electronic a fost produs în țara noastră în anul 1941.
+5130610	El mi-a povestit pe scurt ce s-a întâmplat.
+5134565	El va studia franceza.
+5138387	El și-a recunoscut greșelile.
+5138791	El consideră succesul său ca fiind o urmare a muncii grele.
+5138800	El a recunoscut defectele sale.
+5138877	El mi-a scris din timp în timp.
+5139247	Ghici ghicitoarea mea!
+5141497	El e o persoană aspră.
+5142929	Trei sferturi dintre ei au fost de acord.
+5144502	Ai putea să mă înveți tiparele verbului?
+5144891	Multe comentarii ale consumatorilor de pe Amazon sunt false.
+5146116	Probabil cel mai corect ar fi dacă am pleca acum.
+5155965	Să te ajute prietenul tău.
+5156652	Nu era nimic de făcut decât să așteptăm până dimineața următoare.
+5157272	Furtuna s-a transformat într-un taifun.
+5157481	O furtună a împiedicat decolarea avionului.
+5164240	Pălăria ta este similară cu a mea.
+5164332	Acesta este un vechi obicei american.
+5165893	Ieri a fost duminică.
+5165904	Ai vrea să bei nițel diseară?
+5167189	Nu mă puteam opri din râs.
+5171112	Sunt prea ocupat ca să merg.
+5177809	M-am săturat de viață în ultimul hal.
+5181711	Împacă-te cu tine însăți.
+5181773	Tom a râs zgomotos și inadecvat.
+5181808	Tom a folosit un limbaj neadecvat.
+5181870	Tom a petrecut o noapte albă gândindu-se la Mary.
+5197046	Ea și-a direcționat eforturile să învețe să vorbească limba engleză.
+5201889	Nu e câștig fără osteneală.
+5208298	Când noi am început, erau lucruri pe care nu le cunoșteam.
+5208330	Tot ce trebuie să faci este să apeși pe acest buton roșu.
+5212277	Te doare capul?
+5212688	Am nevoie să iau una.
+5216603	Pantalonii albaștri sunt prea strâmți pentru mine.
+5216868	Plecarea a fost amânată din cauza înrăutățirii vremii.
+5221651	Lui Tom nu-i place să locuiască la țară.
+5221749	Lui Tom nu-i place să fie ținut în așteptare pentru mult timp.
+5224034	Când era el elev, existau încă școli separate pentru băieți și fete.
+5224678	El însuși a făcut toate hainele.
+5224695	Pentru poziția respectivă sunt necesare calificări corespunzătoare.
+5229160	Profesorul l-a acuzat pe Tom de fraudă.
+5233283	Cât de mare e casa lui Tom?
+5236310	Nu-ți pot spune de ce Tom întârzie.
+5239768	Tom a împrumutat camera sa foto lui Mary.
+5242206	Tom a intenționat să meargă cu Mary, dar ceva s-a întâmplat și nu a mai putut.
+5242271	Tom i-a cerut lui Mary să-i facă un sandviș.
+5248623	Tom știe de ce Mary a decis să nu meargă la picnic cu el.
+5298018	Tom nu se poate ierta pe el însuși pentru ceea ce i-a făcut lui Mary.
+5299697	Eu trebuie să-mi vând casa.
+5319115	Nu aveam nimic de pierdut.
+5328891	Tom ar trebui să doarmă un pic.
+5337295	Tom ar trebui să ajungă acasă.
+5358820	Te rog, nu spune asta.
+5367190	Prețurile variază în funcție de locație.
+5369646	Zgarda câinelui este roșie.
+5370035	Nu fi atât de sensibil.
+5405658	Complotul de asasinare a eșuat.
+5405790	Câinele lui Tom s-a ghemuit sub masa de bucătărie în timpul furtunii.
+5474964	Care este dimensiunea tortului de care aveți nevoie?
+5676534	Poți să înoți.
+5676540	Sunt în vacanță.
+5684190	Râul care curge prin Paris se numește Sena.
+5686617	Am scăpat cu greu.
+5686841	Mai este puțin vin rămas.
+5777456	Pentru ce este destinat acel lucru?
+5795981	Nava a lovit un recif.
+5906347	Trebuie să mănânc ceva.‎
+5908775	Ei sunt nepoții mei.
+5908992	Cât este ora?
+5918965	Ce vrei să iei?
+6060921	Circumstanțele nu mi-au permis să vă ajut.
+6061190	E atmosfera vesela aici.
+6061207	Acest motan nu e de vânzare.
+6061240	Ce vrei să muncești?
+6061801	Sensul figurat nu mai este în uz.
+6153920	În modul acesta se face asta.
+6537003	Nu-l lăsa pe Tom să doarmă.
+6537107	Nu poți continua așa.
+6537111	Tom are o mulțime de bagaje de mână.
+6537113	Birocrații testează apele asupra revizuirii reglementărilor vechi.
+6538735	Am avut norocul de a fi ales.
+6540586	N-am uitat niciodată ziua de naștere a lui Tom.
+6543578	Du-te înapoi la locul tău.
+6546370	Am fost la bancă.
+6561340	Afacerile sunt afaceri.
+6561367	E o joacă de copil.
+6561586	Îmi voi lua inima-n dinți.
+6576339	Mă întreb unde se îndreaptă acea navă.
+6576374	Care este formația ta favorită?
+6578170	Era o treabă bine făcută.
+6578240	Lui Tom îi lipsește familia.
+6578370	Preferă numerele cu soț.
+6579808	El m-a privit și a zâmbit.
+6579832	Cred că nu-i probabil ca Tom să plece la Boston prea curând.
+6580182	Nu mă pot mulțumi cu viața asta plictisitoare.
+6581856	Ce crezi despre ea?
+6581946	Tom și-a scos haina din șifonier și s-a îmbrăcat cu ea.
+6582834	Tom obișnuia să se ducă în Boston în fiecare vară când era copil.
+6582841	Tom este foarte nefericit cu tine.
+6582889	Tom nu mai doarme, nu-i așa?
+6586627	Bunătatea face mai mult decât violența.
+6587339	Rar este vreme frumoasă de Paști.
+6587355	Îl voi contacta eu pe Tom.
+6587379	Nu-ți fă griji despre asta. Nu e problema ta.
+6587383	Nu am libertatea să discut despre asta.
+6587391	Pe lângă că era chirurg, el mai era și un scriitor celebru.
+6589531	Singurul ei hobby este să colecționeze timbre.
+6595160	Poți corecta acest eseu pentru mine?
+6595187	Fiul nestatornic s-a întors.
+6595544	Cine naiba ești?
+6599813	Cine este reclamantul în acest proces?
+6599837	Cine nu riscă, nu câștigă.
+6599848	Din cauza unor circumstanțe neprevăzute, petrecerea va avea loc la ora 21:00.
+6616143	Poți avea încredere în noi.
+6620852	De ce ești așa de certăreț?
+6620870	Este plauzibil din punct de vedere științific?
+6624188	Nimeni nu poate prevedea ce se va întâmpla.
+6635541	Este doar un mic eșec.
+6635657	Tom este un pustnic.
+6637064	Fără să vrea, el i-a spus ei exact ceea ce ea vroia să știe.
+6637101	Întregul oraș este invadat de zombi.
+6637588	Am fost pedepsit pe nedrept.
+6639805	Ea este ecologistă.
+6672610	N-am vrut să te înjosesc.
+6687889	Nu cred că aceste pete de cerneală vor ieși.
+6692426	Bătrâna a fost dusă la spital, dar a murit la scurt timp după aceea.
+6699687	Aceasta este cea mai ieftină alternativă.
+6699709	Această lege va aduce beneficii săracilor.
+6700214	Costul real a fost mai mare decât s-a estimat.
+6700216	Cât timp estimați că va dura?
+6700257	Prefer o metodă sistematică.
+6700265	O urgență poate apărea în orice moment.
+6701319	Ei au vrut să înlăture guvernul comunist al lui Fidel Castro.
+6705665	O forță determină schimbare vitezei; și de asemenea, o schimbare a vitezei generează o forță. Ecuația funcționează în ambele sensuri.
+6709228	Nelson Mandela a fost unul dintre acei oameni rari, care au reușit să câștige recunoaștere universală în întreaga lume.
+6709928	Prieteniile adevărate sunt pentru totdeauna.
+6722625	Hai să scoatem usturoiul.
+6723200	Tom a fost surprins cu adevărat.
+6732312	Cred că ceea ce faci e stupid.
+6732345	Tom a explorat peștera subacvatică.
+6732360	Spune-i lui Tom ce ți-a făcut Mary.
+6734346	Dan a mâncat resturile.
+6736518	Fără să vrea, el i-a spus ei exact tot ceea ce ea voia să știe.
+6763112	A fost frumos cât a ținut.
+6764046	Am avut succes.
+6764155	Tom era căsătorit cu Mary de trei ani.
+6764167	Medicamentul mi-a dat pietre la rinichi.
+6764268	El a crezut că afirmația ei este pur și simplu imposibilă și a consimțit propunerea.
+6794425	Îmi plac judecătorii și iubesc curțile. Sunt idealurile mele ce reprezintă pe pământ, ceea ce vom întâlni în lumea de apoi, în ceruri, sub un Dumnezeu drept.
+6795177	Nu poți păcăli destinul.
+6803838	Adesea, ființele umane nu își înțeleg propriile greșeli și eșecuri.
+6814705	Salariul este mic.
+6824475	Tom este lipsit de bun simț.
+6824508	Tom a fost deosebit de ghinionist.
+6824588	Nu pot spune o minciună.
+6824591	Nu voi mai vorbi cu el vreodată.
+6825087	Omogenitatea lingvistică este plictisitoare.
+6828474	Tom are o cicatrice distinctivă sub ochiul drept.
+6828885	Nu am știut că ai locuit în Boston.
+6840323	Tom este lipsit de imaginație.
+6856229	Tom este o persoană foarte generoasă.
+6857409	Citește cât mai mult posibil.
+6857607	Mă întreb ce-l îngrijorează pe Tom.
+6857624	Ei sunt o adunătură de proști și de cretini lacomi.
+6867549	Anumite mirosuri pot declanșa cu ușurință amintiri din copilărie.
+6878172	Nu mă înșela.
+6881822	Tom știa cine încerca să-l omoare.
+6910877	Din căpșuni s-a făcut gem.
+6910899	Nu-mi pot aminti codul secret.
+6918493	Tom regretă că a lipsit de la școală.
+6981787	El putea să vadă că regele lui va primi șah-mat în cinci mutări.
+7058567	El era fiul unui negustor bogat.
+7058863	Ea l-a mușcat.
+7058868	Vacile mănâncă iarbă.
+7058886	Care este ocupația ta?
+7096080	Podul nu a rezistat din cauza inundațiilor.
+7166781	El ne-a spus că a trecut prin multe greutăți.
+7186981	Tom a scos-o pe Mary din nisipurile mișcătoare.
+7193017	Am lucrat alături de Tom.
+7361668	Sunt bucuros că am putut ajuta.
+7361721	Mâncarea de fast-food nu este bună pentru sănătatea ta.
+7578101	Tom a fost primul care s-a trezit în dimineața asta.
+7581561	Îl văd pe Tom în fiecare zi.
+7588703	Nu suntem cu totul siguri.
+7588930	Mary nu poate avea peste treizeci de ani. Ea pare a avea cam vreo optsprezece ani.
+7611390	A râs în hohote.
+7611474	A scăpat un oftat.
+7627772	A trecut o clipă.
+7634334	A zâmbit șiret.
+7634571	A încuviinţat scurt.
+7634672	Iarna fusese uşoară.
+7634682	Vara e în toi.
+7634687	Toamna veni devreme.
+7677945	Am avut un sfârșit de săptămână grozav.
+7707580	Am auzit pe cineva bătând la ușă.
+7707665	Ce cină splendidă!
+7726404	Tom este rănit.
+7749219	Iarna vine în curând.
+7749225	Asta s-a întâmplat în fiecare iarnă.
+7749232	Iarna este anotimpul meu favorit.
+7772951	Sfaturile sale sunt întotdeauna foarte sensibile.
+7854021	Este prima dată când ai observat problema asta?
+7864525	Este bine să ai opțiuni.
+7864542	Tom părea să fie foarte nervos.
+7864566	Sami a auzit copilul plângând.
+7992881	Tu ai intrat.
+7992919	Cum s-a produs accidentul de circulație?
+7992939	Tom m-a învățat să înot.
+7992941	Tom era răsfățat.
+8002728	Dacă ți-ar plăcea, te-aș asculta.
+8002732	Deodată, se auziră focuri de armă.
+8002775	Tom este un mare bucătar.
+8002776	Cred că voi pleca acum.
+8219580	Tom a fost profesor de franceză.
+8219597	Fiecare caz diferă.
+8269375	Avem probleme cu localizarea lui Tom.
+8269395	Acum am uitat numele tău.
+8321124	El s-a hotărât repede.
+8383455	El nu este poet, ci nuvelist.
+8384915	Pe bune? De ce?
+8384931	De ce mereu eu?
+8384985	De ce tremuri?
+8384990	Spune-i lui Tom de ce.
+8385058	De ce te bosumfli?
+8399249	Tom e acum calm.
+8399393	E o cameră foarte liniștită.
+8403607	Vorbiți mai tare!
+8411983	Tom a marcat de trei ori.
+8423753	Inginerii rezolvă probleme.
+8426105	Tom are însoțitori.
+8426161	El continuă să aibă o companie proastă.
+8427970	Mâncam niște căpșuni.
+8428069	Dumnezeu m-a creat.
+8431701	Pentru mine este important.
+8435959	Moralul lor este sus.
+8504207	Aceasta frază mi se pare corectă.
+8504234	Ai vrea să mai repeți asta încă o dată?
+8565132	El e plecat.
+8565851	Tu nu poți veni.
+8565888	Nu o să intri?
+8567512	L-am trimis pe Tom.
+8567596	Tom a trimis-o pe Mary.
+8573985	Fă-l să plece.
+8578113	Mulți au fost refuzați.
+8601050	De ce îmi împăturești hainele?
+8605321	Și grecii mănâncă mult pește.
+8607422	La ce te gândești, Tom?
+8608201	Mă uit la televizor în fiecare seară.
+8608219	De câte ori ai încercat să repari asta?
+8616395	Tom este mereu primul din clasă.
+8616397	Nu am văzut un film bun recent.
+8616399	El este un paranormal.
+8616401	Tom nu a știut că Mary avea cancer.
+8616435	Am fost foarte ocupat săptămâna trecută.
+8616436	Pot să am un cuțit și o furculiță, vă rog?
+8616521	Tom locuiește în cealaltă parte a insulei.
+8618167	Tom s-a întors.
+8619440	Ceața se îndesește.
+8622449	Cred că Mary ar trebui să facă asta singură.
+8624453	Mă interesează orașele vechi ale lumii.
+8632539	Am scris o scrisoare în engleză.
+8632565	Tom nu mi-a spus că asta era a lui.
+8647801	Voi merge oriunde dorești.
+8739848	Aș dori să cumpăr ceva pentru John.
+8741685	Paul a fost unul dintre cei mai buni studenți din California.
+8746440	Anglia și Scoția au fost unificate la 1 mai 1707, pentru a forma Regatul Marii Britanii.
+8760509	Pacea este ceea ce îți dorim.
+8760531	Sunt deja capabil să scriu caractere chinezești.
+8760537	Ne vedem la bibliotecă?
+8760708	Legenda lui Dracula va dăinui pentru totdeauna.
+8762474	Nu pot să fac asta astăzi.
+8770251	Băieții mă estimau și mă tratau cu considerație.
+8772057	El putea să rezolve acea problemă.
+8772797	Tom era foarte persistent.
+8773523	Apa din acel lac este călduță.
+8781678	Iarba rea nu piere așa ușor.
+8786226	Voi fi acasă mâine.
+8807489	La mulți ani de Ziua Internațională a Femeii!
+8815134	Sunt fericit pentru că soția mea este atât de fericită.
+8829069	Tom nu vorbește cu nimeni.
+8843889	Linda s-a născut în Anglia. Deci, e britanică.
+8859445	Nu-mi place să conduc pe ploaie.
+8862498	Mulțumesc că ați venit, băieți! Ne vedem săptămâna viitoare!
+8872374	Totul este în regulă. Nu-ți face griji.
+8872430	Îmi place foarte mult să mă uit la Power Rangers!
+8881330	Fii prieten cu prietenii tăi și dușman cu dușmanii tăi.
+8899975	El s-a descurcat bine la toate materiile, mai ales la matematică.
+8899983	Toți par confuzi.
+8910861	El a spus că nu este de acord.
+8914749	Mi-ați putea recomanda un restaurant bun?
+8914779	Vorbesc puțin engleză.
+8920999	Ce i-ai spus șefului tău?
+8921743	Primul tren pleacă la 4:00 dimineața.
+8940853	Supa este groasă.
+8948253	Tom și Mary mi-au cerut să le împrumut niște bani.
+8948986	Cum putem face lumea mai bună?
+8961130	De ce nu m-ai angajat?
+8961567	Sperăm că medicii pot găsi cauza durerii toracice a lui Tom cu ajutorul unei ecografii endoscopice.
+8961619	Ascendența monarhilor este ceea ce îi împiedică pe supuși să se revolte.
+8961782	Nu ai niciun motiv să te plângi.
+8961872	Astăzi îți pot vedea și auzi vocea.
+8961873	Un parteneriat civil nu este același lucru cu o căsătorie.
+8962280	Are cineva un stilou pe care l-aș putea împrumuta?
+8962288	Contradicția era evidentă.
+8962646	El a decis să cadă la o înțelegere cu ea.
+8962713	M-am simțit în siguranță de îndată ce am ajuns acasă.
+8970753	De obicei primesc ceea ce cer.
+8970761	Vreau ca Tom să stea un pic mai mult.
+8970765	Trebuie să îți spun totul?
+8979823	Fiecare zi contează.
+8979902	Cred că Tom ar trebui să cânte.
+9014809	Eu nu am poreclă.
+9020090	Nu am fost cel mai popular copil din școală, dar am avut o mulțime de prieteni.
+9020131	Ești absolut sigur că Tom a murit?
+9020187	Nu și-a văzut mama de mai bine de patru ani.
+9028779	Mary intenționează să facă asta ea însăși.
+9037964	Deși erau răniți, au continuat să lupte.
+9037973	Ce companie reprezinți?
+9040139	Nu sunt unul care să bârfească.
+9042025	Cred că ar trebui să încerci din nou.
+9063020	Ideea fericirii este extrem de abstractă.
+9081341	Tom vrea să răzbune moartea fratelui său.
+9081465	Vă suntem recunoscători.
+9214252	Să nu vă așteptați la prea multe din partea lui.
+9233275	Știi că te respect.
+9263442	Tom ar fi trebuit să mă aștepte.
+9287607	La ce oră închideți?
+9363037	Camera era liniștită.
+9366096	Tom tremură ca varga.
+9400424	Veți înrăutăți lucrurile dacă faceți asta.
+9400470	Statele Unite este țara care luminează lumea cu idealurile sale de libertate. Asasinările politice, loviturile de stat militare, invaziile, bombardamentele și tortura sunt întreprinse de Statele Unite pentru a face lumea un loc mai bun.
+9400556	Tom a zburat ieri către Boston.
+9408713	Știm că voi ați spart geamul.
+9408984	Tom a plecat după un an.
+9479842	Această chitară îi aparține lui Tom.
+9479950	Nu Tom a fost cel care mi-a spus să fac asta.
+9554314	Mama mi-a spus să fac curat în cameră.
+9567830	Să mergem să vedem ce știe Tom.
+9622351	Cu o coafură diferită, ai părea cu zece ani mai tânără.
+9636212	Am băut niște ceai verde.
+9636222	Câte vaci ai?
+9641233	Când ți-ai schimbat adresa?
+9735755	Ai grijă să închizi gazele înainte de a ieși.
+9817364	Ea este tot timpul ocupată.
+9819148	Oamenii se fac vinovați de dispariția multor specii de animale.
+9819776	Mă simt jenat.
+9937301	Aș fi preferat să mă trateze cu indiferență decât cu condescendență.
+9937327	Nu e important.
+9948003	Înainte să plece în Franța, fiul meu va studia franceză.
+9961494	Vântul însoțea ploaia.
+9961500	Ne-am rugat să plouă.
+9961616	S-ar putea să plouă în noapte asta.
+9961641	Aveam nevoie de ploaia asta.
+9967737	Probabil va ploua.
+10014855	Nu vorbi despre Tom.
+10100405	Este doar o singură cale de a face asta.
+10102356	Crede în visele tale, oricât de imposibile ar părea.
+10102922	Nu călca în acel cartier.
+10134776	Am un cadou pentru Tom.
+10134784	Sunt obosită acum.
+10154931	Cuțitul este murdar.
+10154938	Cred că eu și Tom am fi putut rezolva singuri această problemă.
+10155023	Tom blestemă în portugheză când echipa sa nu câștigă.
+10162461	Toți dorim să facem asta.
+10167383	Acest roman era una din ultimele sale scrieri.
+10167438	Acesta este locul meu.
+10183142	Eu și Tom ne iubim.
+10252285	Cred că Tom nu este cu mult mai în vârstă decât Mary.
+10253930	Ea nu știe ce i s-a întâmplat.
+10270888	Tom și Mary l-au intervievat pe John.
+10282208	Tom încearcă mereu să dea vina pe altcineva pentru eșecurile lui.
+10320977	Voi lua asta pentru tine.
+10452004	Ultimul lup tazmanian a murit în 1936.
+10452037	Am treabă azi.
+10502268	Cel mai apropiat restaurant se află la zece minute distanță.
+10502272	Este puțin probabil ca Tom să fie părtinitor.
+10513777	Am nevoie de niște informații.
+10525967	O să fac micul dejun.
+10534132	El are un site ca afacere.
+10535246	Tom a întrebat cât de mult am plătit.
+10535249	Ei încă sunt afară.
+10549316	Planta a crescut încetul cu încetul.
+10616576	Asta-i amuzant, știi tu.
+10666373	Știam că fusesem acolo.
+10674757	Arată-mi cum să o fac.
+10686482	Știu că nu e greu.
+10733702	Să nu spui nimic.
+10737202	Mai e cineva care vrea să mănânce?
+10737243	Și-a lăsat laptopul acasă.
+10737320	Bea o cană de apă.
+10737593	Nu vrei să te ajut cu asta?
+10737594	Nu vrei să te ajutăm cu asta?
+10738592	Nu-mi pot contacta rudele.
+10740502	Nu am vrut să-ți schimbi planurile.
+10741829	Copiii au fost rugați să se îndrepte direct spre casă.
+10742693	Nu plouă chiar așa de tare.
+10744407	Ar fi nepoliticos să facem asta acum.
+10745171	Această încuietoare este frumoasă.
+10745369	Părea atât de ieftin.
+10746299	Nu te așteptam până la 2:30.
+10746301	Mary a alergat cât de repede a putut.
+10746313	Unde sunt pozele tale?
+10747575	Nu știam că mă iubește.
+10747688	Mi-e frică că nu voi fi niciodată în stare să fac asta.
+10749762	Și-a câștigat existența ca inginer.
+10752191	Nu sunt sigur.
+10765888	N-am observat asta.
+10766873	Încă nu am încredere deplină în Tom.
+10772312	Oamenii uniți nu vor fi niciodată învinși.
+10773249	Deocamdată nu îmi este sete.
+10783832	Crezi că vei face asta vreodată?
+10783941	Tom încă nu a terminat de scris raportul.
+10784220	A știut că trebuie să cumpere un cadou pentru ea.
+10784543	Nu am fost niciodată atât de fericită în viața mea.
+10784671	Tom nu ar lăsa pe nimeni să facă asta.
+10784892	Încerc să dorm bine.
+10784927	Pe dealul de peste râu se află un templu.
+10787538	Fusesem avertizată să nu fac asta.
+10788217	Ziri a fost un bărbat sexy.
+10788644	Tom și-a dat seama că Mary leșinase.
+10788664	Tom a vrut să facă o plimbare cu mașina.
+10789349	Acum suntem foarte ocupați.
+10789455	Tom ne vorbea.
+10790073	Mennad trebuia să-și scoată amigdalele.
+10790135	Tom i-a spus lui Mary să-l ajute pe John.
+10790171	Cum ai aflat că lui Tom îi place să facă asta?
+10790215	Am doar o întrebare pentru tine.
+10790282	Nu vreau s-o dezamăgesc.
+10790453	Am știut asta dinainte.
+10792148	Există două uși care ies din cameră: una la stânga, cealaltă la dreapta.
+10793516	Mi-ar plăcea să vii la mine cândva.
+10795712	Mi s-a spus să nu fac asta de unul singur.
+10795914	Bunicul meu a murit când eram mică.
+10795986	Ce fel de persoană a fost când a venit prima dată aici?
+10796690	Mă duc să pregătesc ceva de mâncare.
+10820071	Șoarecele este sub podea.
+10823915	Avem un cățel.
+10827414	Tom trebuie să fie deprimat.
+10846682	Am așteptat afară.
+10847578	Te rog să te întorci în Australia.
+10849879	Tom nu vrea să fie veterinar.
+10893135	Dacă scrii atât de bine, de ce nu câștigi bani din asta?
+10893483	Când va începe petrecerea?
+11075693	Dacă te trezești devreme, poți ajunge la timp la școală.
+11080786	Pot vedea ținta.
+11088937	Pantalonii ăștia sunt prea mari pentru mine.
+11089078	Scriu recenzii nu numai despre filme, ci și despre desene animate.
+11092018	Acești pantaloni sunt prea mari pentru mine.
+11094043	Ai citit asta deja?
+11094101	Câteodată merg acasă pentru prânz.
+11103084	N-ai îmbătrânit o zi.
+11103112	Nu te angaja.
+11163053	Care este vârsta celui mai în vârstă?
+11165090	El e câteodată ciudat.
+11169912	Este o stație de autobuz chiar în fața casei mele.
+11184960	E bine la unu fără un sfert?
+11191415	Vreau să mă îmbrățișezi.
+11200695	În seara asta voi găti.
+11206564	Ahmed locuiește în Egipt.
+11214093	Concertul se va ține primăvara viitoare.
+11354314	Și eu și Tom am predat amândoi franceză.
+11474776	Tom era vorbăreț.
+11474790	Toarnă cu găleata.
+11474797	Maria l-a întrebat pe Tom ce crede despre rochie, dar el s-a ferit să-i spună, ce credea într-adevăr.
+11474804	În prima zi din luna de miere, cuplul prinde torpile.
+11477842	Ușa era închisă, dar nu încuiată.
+11478094	Am fost în întârziere.
+11478139	Ce-a fost asta?
+11479850	Jos din pat cu tine!
+11484369	Paharul se sparge ușor.
+11491849	Câinele m-a mușcat.
+11492379	Vrei tricoul acesta?
+11497851	Totuși, mă doare umărul.
+11499691	Am nevoie de cheile mașinii.
+11502301	L-ai lovit pe Tom?
+11509673	Ei o fac pentru că noi le permitem.
+11510398	El va trimite cartea prin poștă.
+11512264	Tom e un copil foarte zgomotos.
+11512566	Ea trebuie să mănânce.
+11514304	Nu eram gata să plec.
+11516106	Ușa s-a deschis și bărbatul a ieșit.
+11518554	Mă ocup eu mai târziu.
+11520714	Tom nu mănâncă decât fructe.
+11521105	Se înșeală, nu?
+11529549	De ce tocmai mi-ai făcut cu ochiul?
+11555943	Tom nu obișnuia să facă asta niciodată.
+11555951	Tom ar face-o.
+11569238	Sami locuia prea departe.
+11572487	Am locuit deja în Coimbra.
+11577620	Puțini oameni înțeleg adevăratul sens al vieții.
+11578058	Inima și mintea trebuie să lucreze împreună.
+11645616	Sunt plătit să predau franceză.
+11653709	Zilele săptămânii sunt luni, marți, miercuri, joi, vineri, sâmbătă și duminică.
+11664612	Vaca grasă are lapte bun.
+11672344	Curcanul este la cuptor.
+11694410	A scrie nu este ușor.
+11699535	O căpșună nu este mai gustoasă decât o banană.
+11758144	El este vărul meu din partea tatălui.
+11807666	Eu nu sunt împotrivă lui.
+11882699	Făcând acest curs, am învățat multe lucruri despre limba română.
+11897027	El a contribuit deja cu 3.000 de propoziții în limba greacă.
+11900874	Te-am prins mâncând înghețată.
+11928209	Mi-aș dori să trăiesc o viață fericită.
+11939043	Noua lege facilitează crearea multor locuri de muncă noi.
+11939135	Puteți să-mi explicați asta încă o dată?
+11939257	Nu suntem niște sfinți.
+11939484	În Turcia sunt multe moschei.
+11942128	Nu pot să deschid.
+11944369	Care e fructul tău favorit?
+11944377	Vrei și ceva de băut împreună cu pasta?
+11949477	Dacă te grăbești o să prinzi autobuzul.
+11949481	Pare că ești obosit.
+11951170	Cine m-a văzut?
+11956214	Îi voi da asta lui Tom.
+11973962	Compania a introdus un sistem de trasabiliate pentru a monitoriza parcursul mărfurilor în timp real.
+11978202	Mi-a reparat umbrela.
+11979678	Câte persoane erau prezente la reuniune?
+11979738	Noi am coborât dealul alergând.
+11979921	De câte ori s-a însurat Tom?
+11983049	Calul ăsta aleargă iute.
+11983189	Nu așteptăm mai mult de trei ore.
+12021966	Primavara este anotimpul iubirii.
+12035290	Pilotul glumește cu stewardesa.
+12047717	Tom i-a arătat ceva lui Mary.
+12058454	Florile nufărului se deschid la răsăritul soarelui și se închid la apus.
+12069274	Nu sunt regizat, eu direc.
+12071218	Cartierul nostru are trei bulevarde.
+12072586	Eu Ie-am văzut lucrând cu copiii în grădină.
+12083823	Este ăsta biroul lui Sami Bakir?
+12085394	Ziri a avut cel puțin patru atacuri consecutive.
+12085656	Sărac este un cuvânt urât.
+12092579	Eu n-am negat niciodată că simt ceva pentru tine.
+12112330	Galiciana este o limbă soră cu spaniolă și portugheză. Studiez cu sârguință la trei, întotdeauna după-amiaza sau dimineața.
+12120205	Pune garderoba în dreapta și patul în stânga.
+12148421	Tom este pe cale să plece acasă.
+12149007	Era aici, dar a plecat curând pentru că se grăbea.
+12169570	Bărbații sunt niște porci.
+12169605	Etiopia este o țară săracă.
+12170530	Știi care este problema ta?
+12176016	Știi că Thomas are un frate geamăn?
+12181387	Purtam o tristețe, nu mă gândeam la o altă iubire când ai intrat în viața mea.
+12198807	Câinele era vigilent.
+12198880	Noi îi iertăm.
+12199023	Ea muncește prea mult.
+12199338	Doamna are un animal de casă.
+12201097	Ar fi bine să te duci la dentist.
+12203617	Sunt sigur că ai găsit aceste pietre lângă lacul unde am înotat.
+12216282	Și eu cred la fel.
+12218646	Părinții Mariei încă locuiesc în acel sat pitoresc.
+12224244	Fiecare dintre câștigătorii celor șase categorii va câștiga 2.000 de dolari SUA.
+12246214	Sper că visele tale cele mai prețuite să devină realitate în anul 2024!
+12248279	Carnea este mai puțin uscată când este gătită la cuptor la temperaturi scăzute.
+12252023	Când pleacă autobuzul din Taksim?
+12297151	Să o urmărim cu atenție.
+12297167	E puțin beat.
+12301343	Lucrez într-o societate comercială.
+12304047	Închideți lampa de lângă pat când ați terminat de citit cartea.
+12304965	Scuze pentru cuvintele dure.
+12316327	Sunt sigură că Tom nu va fi interesat.
+12332993	Acum patru ani am cumpărat această bicicletă.
+12333008	Hoțul a atacat-o pe o stradă lăturalnică.
+12333084	Sami și Layla se prefăceau că nu s-a întâmplat nimic.
+12333163	Mă duc să mă îmbrac.
+12333165	Mă voi îmbrăca.
+12333339	De ce nu ne-ați invitat?
+12335864	Ai idee pe unde mi-am pus cheile?
+12336941	E prietenul meu din copilărie.
+12337055	Cineva i-a sunat.
+12345797	Ea nu este aici acum.
+12345806	Trebuie să le opresc.
+12347369	Mulți oameni admiră răsăritul mai mult decât apusul.
+12347381	Mi-e frică de greci, mai ales dacă aduc daruri.
+12347567	Această poveste ilustrează natura invidiei.
+12347644	Am înghițit un gândac.
+12349107	Ajutorul lui a fost foarte apreciat.
+12351319	Îmi fac datoria.
+12351356	Ce se va întâmpla cu draga mea Tullia?
+12355237	Bunicul său s-a sinucis în acea casă.
+12356379	Încă mai citesc.
+12356682	Nu mă îndoiesc că te vei pocăi în curând de acest lucru.
+12359385	Pasărea colibri este o pasăre foarte mică din America tropicală, care se hrănește cu nectar, are penajul de obicei irizat și poate pluti în aer și zbura înapoi.
+12360988	Totuși, în partea mea cea mai bună, care este nemuritoare, voi fi dus dincolo de stele și numele meu va fi de neșters.
+12365965	Cine vorbește mult face și mai puțin.
+12366416	Bolta cerească își face revoluția.
+12370311	Mireasa își imaginează că este vizitată de mire noaptea și îi laudă frumusețea, adresându-se tovarășilor săi, iar mirele, la rândul său, laudă și frumusețea iubitei sale.
+12381439	Nimeni nu este mai surd decât cel care nu vrea să audă.
+12403545	Se comporta ca un nebun.
+12450714	Tom a vorbit în franceză cu mine.
+12450717	Desigur, au fost concerte în oraș.
+12452479	În sfârșit, și-a arătat adevărata față.
+12468802	Probabil ea vă va putea spune mai multe.
+12500682	Ai urmat cursuri de actorie?
+12517394	Sunt trei modalități de a rezolva problema.
+12546051	Maghiara nu este o limbă indo-europeană.
+12555702	Unde-mi e încărcătura?
+12558423	Am să te protejez cu orice preț.
+12610443	Nu accept refuzuri.
+12632117	Vrem să evităm vărsarea de sânge.
+12722986	Înainte, toți oamenii vorbeau aceeași limbă.
+12763209	Jonas nu s-a mișcat.
+12763219	Ea a cules multe flori frumoase.
+12769711	Pisicile își îngroapă caca.
+12775689	Eu mi-am primit bonusul.
+12775693	Îmi place cafeaua.
+12775928	Eu aș fi spus "nu".
+12778401	Putem s-o facem amândoi.
+12782332	Era o perioadă dificilă pentru mine.
+12782342	Tom a spus că erați fericiți.
+12782422	Am galopat calul nostru peste deal.
+12832251	Nu este o glumă.
+12833923	Compania a hotărât să caseze vechiul echipament și să achiziționeze unul nou și modern.
+12834084	Magazinul a achiziționat o nouă casă de marcat pentru a accelera procesul de plată.
+12848980	Este la fel ca întotdeauna.
+12860282	Situația este foarte gingașă și necesită o abordare atentă.
+12870425	Pentru a crea un efect dramatic, cinematograful a folosit un decupaj rapid între diferite unghiuri ale camerei în timpul scenei de urmărire.
+12870547	În timpul tăierii de primăvară, grădinarul a tăiat cu grijă ramurile moarte pentru ca pomul să crească noi lăstari și să fie mai sănătos.
+12884802	Ești un om slab.
+12884818	Am venit acasă lunea trecută.
+12893296	Știu la ce oră se întoarce Tom acasă.
+12910668	Dictatorul a oropsit poporul, privându-l de drepturile și libertățile fundamentale.
+12912009	Nu știu dacă nașii fiului meu mai sunt în viață.
+12912381	Trei ciclopi forjau razele lui Jupiter.
+12914708	Eu am o fată.
+12916288	Ea bea un pahar cu lapte.
+12929325	Implicația a fost că acolo unde era o fântână, erau rezidenți.
+12931513	Nu e cald vara în regiunea mea.
+12940876	Astronomul studiază universul și îl găsește pe Dumnezeu.
+12940957	Natura este la fel ca trupul lui Dumnezeu.
+12950575	În Spania există o abundență de idioți, lași și corupți.
+12953697	Viața nu oferă cadouri.
+12978212	Când omul își stabilește un scop, Dumnezeu face repede invers.
+12979807	Averea nu ia nimic altceva decât ceea ce a dat ea.
+12986780	A avea succes înseamnă a atinge un scop sau a îndeplini o dorință.
+12987349	Unde te duci? Este aproape trei și jumătate.
+12989421	Acest cartier din Paris este foarte faimos.
+12992329	Războiul dureros și ucigaș este violet, culoarea păcii este un albastru strălucitor al cerului.
+12993278	Cele patru surori sunt minunate. Cel mai mare este cel mai frumos.
+12997578	Fiecare zi care trece este încă un pas către somnul suprem.
+13002354	În ultimul minut, a marcat al doilea gol.
+13011449	Extracția lemnului este interzisă.
+13011908	A început să-și mănânce micul dejun.
+13012231	Cum poate această furnică mică să genereze atât de multă energie corporală?
+13016871	Acum, la bătrânețe și fără prea multă energie, totul mă obosește, chiar și să-mi scriu poezii sărace.
+13031895	Dragostea trece, dar lasă acea amintire a unui sărut sau a unei plângeri în fiecare inimă.
+13045242	Se plimbă pe străzi.
+13051975	Rochia aceasta mulează perfect corpul.
+13082507	Tehnologia modernă a revoluționat procesul de extracție a aurului.
+13111140	Ați greșit numărul!
+13112920	Care e obiectivul?
+13112935	Am poftă de pizza.
+13130009	Unde este cartea mea?
+13130051	Dorința de succes l-a motivat să încerce în continuare.
+13149034	În galerie au fost expuse desene pastelate superbe.
+13149519	Am auzit un trăsnet în depărtare.
+13151867	Studiul comportamental al copiilor ajută la înțelegerea dezvoltării lor.
+13152733	Durerea l-a topit complet.
+13158755	Cum putem să ne protejăm de coronavirus?
+13161620	Negocierile pentru un armistițiu au fost dificile, dar au avut succes.
+13167782	Preîntâmpinarea accidentelor este prioritară.
+13199494	Fragmentarea documentului vechi face dificilă citirea textului.
+13220725	Pentru a prepara apă carbogazoasă, umplem sifonul cu apă, îl închidem și injectăm gaz carbonic dintr-un cartuș.
+13220886	Pe pietre funerare vechi se găsesc adesea cartușe gravate cu inscripții și motive decorative.
+13222664	Este un vorbitor inabil, nu știe să capteze atenția publicului.
+13312884	Chiar dacă nu vorbește perfect engleza, reușește să se facă înțeles.
+13421700	Nedreptatea prosperă, violența este larg răspândită.
+13427331	Această tastatură veche este inutilă!
+13462206	Prostia este infinit mai fascinantă decât inteligența, infinit mai profundă. Inteligența are limite; prostia nu.
+13467835	Ființa umană este un fluture visător.
+13544781	Ochii ei sunt negrii.
+13553837	Nimeni nu poate cumpăra fericirea.
+13554813	Sărbătorim Crăciunul împreună.
+13563156	Directorul l-a rugat pe profesor să părăsească incinta.
+13582727	IA poate face greșeli.
+13594033	Cine a spart sticla?
+13594697	El este un spirit al luminii și va străluci în viața de apoi.
+13596782	Voi nu știați că Tom nu este canadian?
+13596800	Eu am văzut-o pe ea, dar ea nu m-a văzut.
+13596818	Nu o da afară.
+13597003	Dintre toate traducerile acelei poezii, cea mai frumoasă este cea făcută în Interlingua.
+13598931	În ultimul timp am fost ocupată, așa că nu am studiat deloc.
+13603866	Aşa grăit-a Zarathustra.
+13603891	Tu ești un șofer bun.
+13603947	Haideți să ieșim și să ne distrăm cu prietenii noștri.
+13603982	El a petrecut șapte ani în Siberia.
+13603999	Am avut un infarct acum trei ani.
+13606053	Nu trebuie să fie neapărat ale lor?
+13606499	Nu merg să construiesc baze militare în Nigeria.
+13608439	Tom își scrie jurnalul în franceză.
+13608593	Tom spuse că ar face aproape orice pentru Mary.
+13608595	Eu cred că voi ați luat decizia corectă.
+13612972	Spune-mi ce ai cumpărat.
+13613074	Nu a existat niciodată vreo problemă înainte.
+13613470	Gluma lui Tom a fost primită cu o tăcere impenetrabilă.
+13613670	Nu cred că din acest motiv Tom nu este aici.
+13615425	Tom a iubit-o cu adevărat pe Mary.
+13615567	Cred că Tom și Mary au prejudecăți.
+13616959	Tu poți avea o priveliște spre munții acoperiți de zăpadă din această casă în copac.
+13619025	Mariei îi place muzica andină.
+13619293	Apa este încă liniștită.
+13619510	Care este una dintre cele mai bune amintiri din copilăria voastră?
+13619599	Sunt cam ocupată acum.
+13620965	Ce îi place surorii tale?
+13626112	Tom i-a dat lui Mary o carte.
+13626446	În rețetă scrie trei căni de făină.
+13626448	Ar trebui să adăugați puțin mai multă sare.
+13626455	Hai să luăm un milkshake în drum spre casă.
+13626482	Este puțin prea gras pentru gustul meu.
+13632884	Îmi poți pune sosul separat?
+13632957	Fiul dumneavoastră hărțuiește alt copil.
+13636406	În afară de zei, nimic nu poate fi mai util oamenilor decât oamenii înșiși.
+13668867	El omoară șerpi.
+13668870	Totul a dispărut!
+13675381	Îi vei spune la revedere lui Tom?
+13677118	Picioarele mele sunt amorțite de frig.
+13687721	Nu e ușor să zbori fără aripi.
+13688015	Ai văzut ce a făcut Tom?
+13688416	Președintele a fost dur.
+13689540	Oamenii care nu au grijă fac multe greșeli.
+13694444	Mi-a cerut să-i dau sarea.
+13723509	Acest adaptor de călătorie nu se potrivește cu priza.
+13728253	Despre cine vorbești?
+13731500	De ce nu mi-ai prezentat prietenii tăi?
+13740760	Care este diferența dintre aceste două cuvinte?
+13741537	Chiar nu mint.
+13780684	Am întâlnit-o pe noua ta prietenă ieri.
+13787226	Despre ce ați discutat ieri?
+13797991	Aceste castroane costă numai doi euro.
+13798013	Scuzați-ne, nu găsim vesela.
+13803293	Mulți împărați și împărătese au trăit în palatul Schönbrunn.
+13808638	Ea a primit un telefon mobil de ziua ei.
+13814662	Tom vrea să te vadă.
+13838162	Căsuța vocală a doamnei Müller nu mai funcționează.
+13838211	Doamna Müller, cum vă pot ajuta?
+13838255	Am notat numărul dumneavoastră.
+13840380	Acest dicționar are 1.234 de pagini.
+13843447	Nu este permis telefonatul în timpul cursului.
+13851260	Ea s-a rănit patinând.
+13853638	Sezonul sparanghelului este important în cultura germană.
+13854337	Alfabetul turc are 8 vocale și 21 de consoane.
+13854928	Anunțați-mă dacă sunt întrebări.
+13859031	Cunoașteți acești autori germani?
+13896192	Are o singură baie.
+13896197	A fost otrăvit de colegul său de celulă.
+13900000	Am rezervat o masă în acest local.
+13903717	Aruncă acest lapte. Este deja acru.
+13905199	Tu îmi ceri mereu bani!
+13911267	Dacă eram un om bogat, nu trebuia să lucrez din greu.
+13911512	El mi-a scris pe un bilețel: „Te iubesc”!
+13923991	Părinții mei nu vor să-mi cumpere acest joc video.
+13924029	Ce film de groază este pe acest canal?
+13931833	Cea mai bună prietenă a mea se pregătește pentru un examen important.
+13936948	Primul Război Mondial se termină pe 11 noiembrie 1918.
+13953151	Vă rugăm să ne scuzați, știți unde se află locurile noastre?
+13954114	Străbunicul meu fu omorât în Rusia în timpul celui de al Doilea Război Mondial.
+13959120	Un lăcătuș produce încuietori.
+13962280	Colegul tău de cameră face antrenament de forță?
+13974253	Ridicați mâna dacă aveți nevoie de o altă copie.
+14006592	Noi zburăm mâine dimineață la Berlin.
+14012753	El m-a jupuit.
+14016098	Cine fu primul împărat al Sfântului Imperiu Roman?
+14016104	Ana a fost prima și a câștigat competiția.
+14016860	Pot apărea probleme.
+14018923	Trebuie să fie bun la mersul pe jos, dacă a parcurs o distanță atât de mare.
+14022814	Copiii obraznici nu primesc bomboane!
+14024533	Dna. Müller este noua noastră secretară. Bine ați venit!
+14025864	Dragule, ce oră este?
+14026863	Am încredere în soția mea. Ea are mereu dreptate.
+14047003	Merele astea sunt mici.
+14047360	Biblia este o carte foarte groasă.
+14049198	Am scos bani de la bancă.
+14057400	Încearcă această haină de iarnă. Este groasă și călduroasă.
+14057925	Oprește-ți telefonul! Detest muzica rock!
+14059134	El poartă un tricou în dungi roșu și albastru.
+14061747	N-ai primit nicio confirmare?
+14061779	Nu vreau să mă uit la acest film. Este sinistru!
+14068011	Acest cartierul este cu siguranță cel mai liniștit.
+14071664	Faimosul savant vine în orașul nostru anul viitor! Sunt atât de entuziasmată!
+14080481	Este de o calitate excellentă pentru un chilipir.
+14084805	Ai liber weekend-ul acesta? Vreau să vizionez un film cu tine.
+14091431	Sufletul este mai important decât corpul.
+14099199	Nu poți să-l convingi. Este atât de încăpățânat!

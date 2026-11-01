@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+1059675	Aș putea vedea meniul de vinuri?
+1059684	El cântă bine la pian.
+1136615	Nu promit că răspund, dar îmi puteți trimite mesaje.
+1136822	Purta haine potrivite pentru petrecere.
+1137565	Cu ajutorul acestei aplicații, veți putea sincroniza fotografiile și muzica între aparatele dumneavoastră.
+1138062	S-a întors la casa lui din Tennessee.
+1153863	Ai văzut vreodată un film atât de bun?
+2536591	Ochii mei sunt un ocean în care visele mele se reflectă.
+2536648	Ar fi bucuros să audă asta.
+2709537	Vreau să mă înscriu la curs.
+2977792	Sperăm că adevărul va ieși la lumină.
+4898150	Aceste case sunt întunecate și murdare.
+4943899	Dan nici măcar nu a plâns.
+5026676	Extratereștrii au verificat progresul lumii în secret.
+5092676	Mama me e la pat, e bolnavă.
+5130610	El mi-a povestit pe scurt ce s-a întâmplat.
+5201889	Nu e câștig fără osteneală.
+5224678	El însuși a făcut toate hainele.
+6060921	Circumstanțele nu mi-au permis să vă ajut.
+6578170	Era o treabă bine făcută.
+6579808	El m-a privit și a zâmbit.
+6599813	Cine este reclamantul în acest proces?
+6637588	Am fost pedepsit pe nedrept.
+6701319	Ei au vrut să înlăture guvernul comunist al lui Fidel Castro.
+6910899	Nu-mi pot aminti codul secret.
+7058567	El era fiul unui negustor bogat.
+7361721	Mâncarea de fast-food nu este bună pentru sănătatea ta.
+7749225	Asta s-a întâmplat în fiecare iarnă.
+7772951	Sfaturile sale sunt întotdeauna foarte sensibile.
+7992919	Cum s-a produs accidentul de circulație?
+8002776	Cred că voi pleca acum.
+8426161	El continuă să aibă o companie proastă.
+8504207	Aceasta frază mi se pare corectă.
+8608201	Mă uit la televizor în fiecare seară.
+8616436	Pot să am un cuțit și o furculiță, vă rog?
+8624453	Mă interesează orașele vechi ale lumii.
+8781678	Iarba rea nu piere așa ușor.
+8910861	El a spus că nu este de acord.
+8914749	Mi-ați putea recomanda un restaurant bun?
+8961619	Ascendența monarhilor este ceea ce îi împiedică pe supuși să se revolte.
+8970753	De obicei primesc ceea ce cer.
+8970765	Trebuie să îți spun totul?
+9020187	Nu și-a văzut mama de mai bine de patru ani.
+9063020	Ideea fericirii este extrem de abstractă.
+9554314	Mama mi-a spus să fac curat în cameră.
+9817364	Ea este tot timpul ocupată.
+9948003	Înainte să plece în Franța, fiul meu va studia franceză.
+10102922	Nu călca în acel cartier.
+10167383	Acest roman era una din ultimele sale scrieri.
+10320977	Voi lua asta pentru tine.
+10737202	Mai e cineva care vrea să mănânce?
+10742693	Nu plouă chiar așa de tare.
+10747688	Mi-e frică că nu voi fi niciodată în stare să fac asta.
+10793516	Mi-ar plăcea să vii la mine cândva.
+11474804	În prima zi din luna de miere, cuplul prinde torpile.
+11477842	Ușa era închisă, dar nu încuiată.
+11514304	Nu eram gata să plec.
+11653709	Zilele săptămânii sunt luni, marți, miercuri, joi, vineri, sâmbătă și duminică.
+11758144	El este vărul meu din partea tatălui.
+11939043	Noua lege facilitează crearea multor locuri de muncă noi.
+11939135	Puteți să-mi explicați asta încă o dată?
+11979738	Noi am coborât dealul alergând.
+12085656	Sărac este un cuvânt urât.
+12149007	Era aici, dar a plecat curând pentru că se grăbea.
+12333339	De ce nu ne-ați invitat?
+12365965	Cine vorbește mult face și mai puțin.
+12452479	În sfârșit, și-a arătat adevărata față.
+12931513	Nu e cald vara în regiunea mea.
+12987349	Unde te duci? Este aproape trei și jumătate.
+13082507	Tehnologia modernă a revoluționat procesul de extracție a aurului.
+13199494	Fragmentarea documentului vechi face dificilă citirea textului.
+13222664	Este un vorbitor inabil, nu știe să capteze atenția publicului.
+13594697	El este un spirit al luminii și va străluci în viața de apoi.
+13597003	Dintre toate traducerile acelei poezii, cea mai frumoasă este cea făcută în Interlingua.
+13626446	În rețetă scrie trei căni de făină.
+13626448	Ar trebui să adăugați puțin mai multă sare.
+13626482	Este puțin prea gras pentru gustul meu.
+14057925	Oprește-ți telefonul! Detest muzica rock!
+14068011	Acest cartierul este cu siguranță cel mai liniștit.
+14099199	Nu poți să-l convingi. Este atât de încăpățânat!

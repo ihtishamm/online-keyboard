@@ -1,0 +1,27 @@
+{
+  "slug": "polish",
+  "code": "pl",
+  "order": 260,
+  "lang": "pl",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Polish",
+    "native": "Polski"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["pl-programmer", "pl-typist"],
+  "accents": "ąćęłńóśźżĄĆĘŁŃÓŚŹŻ",
+  "sample": "Jutro pojedziemy nad jezioro, jeśli będzie słońce.",
+  "voice": ["pl-PL"],
+  "wordList": true,
+  "translate": {
+    "google": "pl",
+    "bing": "pl",
+    "deepl": "pl"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot. Polish (Programmers) is the default: it is US QWERTY with the Polish letters on AltGr, the layout most people in Poland use, so a separate Easy accents layout would add nothing."
+}

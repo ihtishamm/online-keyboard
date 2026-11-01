@@ -5,7 +5,10 @@
  */
 import "@fontsource/noto-naskh-arabic/400.css";
 import "@fontsource/noto-nastaliq-urdu/400.css";
+import { LANGUAGES, type FontId } from "@okb/layouts";
 import Base from "../../layouts/Base.astro";
+import { FONT_CLASS } from "../fonts";
+import { creditsFor } from "../../content/credits";
 import { SITE } from "../../config/site";
 
 interface Props {
@@ -20,9 +23,18 @@ interface Props {
   about: { heading: string; paragraphs: string[] };
   faqs: { q: string; a: string }[];
   related: { href: string; label: string }[];
+  /** The language's slug, for the footer's word-list credits (default: Urdu). */
+  slug?: string;
+  /** The language of headingNative (default: Urdu). */
+  lang?: string;
+  dir?: "rtl" | "ltr";
+  font?: FontId;
 }
 
 const p = Astro.props;
+const lang = p.lang ?? "ur";
+const font = p.font ?? "nastaliq";
+const language = LANGUAGES.find((l) => l.slug === (p.slug ?? "urdu"))!;
 const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -30,7 +42,7 @@ const jsonLd = [
     name: `${SITE.name} ${p.appName}`,
     applicationCategory: "EducationalApplication",
     operatingSystem: "Any (web browser)",
-    inLanguage: "ur",
+    inLanguage: lang,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
     url: new URL(Astro.url.pathname, Astro.site).href,
   },
@@ -52,11 +64,11 @@ const jsonLd = [
 ];
 ---
 
-<Base title={p.title} description={p.description}>
+<Base title={p.title} description={p.description} credits={creditsFor(language)}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
     <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">{p.heading}</h1>
-    <span class="font-nastaliq text-2xl text-accent" lang="ur" dir="rtl">
+    <span class:list={[FONT_CLASS[font], "text-2xl text-accent"]} lang={lang} dir={p.dir ?? "rtl"}>
       {p.headingNative}
     </span>
   </div>

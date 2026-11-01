@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+458951	Lidi vlci za normálních okolností nenapadají.
+459619	Na stole byla kočka.
+463644	Nemůžu to auto nastartovat.
+463649	Naproti nádraží je banka.
+694363	Jak on je.
+696477	Já nerozernám skokana od ropuchy.
+871501	Dobrý den. Jmenuji se John Reindle. Pracuji na americkém velvyslanectví v Praze.
+1133283	Národnostní menšiny bojují proti předsudkům, chudobě a útlaku.
+1142639	Pozor na kapesní zloděje.
+1144058	Co teď děláš?
+1146886	Jsem rád, že jsi se vrátil v pořádku.
+1497947	Byla ještě oslabená po nemoci.
+1497950	Olomouc je velmi hrdá na jedinečnou sbírku šesti barokních kašen.
+1501936	Omyj si obličej a ruce.
+1606521	Dnes půjdeme spát ven.
+1607831	Kdo to nakreslil?
+1608595	Žádám, aby byl potrestán.
+1608653	Věřím, že upřímnost je nejlepší strategie.
+1608673	Nikoho z nich neznám.
+1610849	Celý den jen pláče.
+1610853	Máte pokoj, který je o něco levnější?
+1619481	Nemohu udělat vyjímku z pravidel pro nikoho.
+1619502	Vždyck je doma v neděli.
+1639172	Hlavu vzhůru, Johano. V řece plavou další ryby.
+1657770	Jak se řekne ...?
+1658560	Stala se zdravotní sestrou.
+1660609	V současné situaci nemohu dělat nic, než pít čaj a čekat.
+1676287	O půlnoci dosáhneme vesnice.
+1680682	Můj šéf odmítl rozpočet nového projektu.
+1683479	Její prst krvácí.
+1688930	Můj život by byl bez tebe úplně prázdný.
+1689510	Vážně, lidé jsou tak tupí.
+1689539	Kdy vyjde tvůj nový román?
+1698180	Byl tak hladový, že okamžitě snědl všechno, co bylo na talíři.
+1698214	Jeho přednáška byla nudná.
+1753290	Můj zesnulý otec mi odkázal velkou částku peněz.
+1764852	Tato kniha je široce dostupná v knihovnách.
+1780829	Tom má docela temperamentní povahu.
+1796568	Zákony se musí dodržovat.
+1801356	Jak je Tony starý?
+1803902	Je možné, že lže.
+1815237	Slyšel jsem, že v Šizuoce bylo zemětřesení.
+1829994	Má babička vychovala desetičlennou rodinu.
+1830013	Je velmi šikovná.
+1845599	Chceš přijít na mou oslavu?
+1856032	Kéž bych chtěla, ale já nechci!
+1881386	To je tvůj problém, ne můj.
+1881475	Proč mi pokládáte tolik otázek?
+1896215	Poprosili mě otevřít bránu.
+1945720	Nevím, jestli to ještě mám.
+2148036	Pro mě to není žádný problém.
+2148274	To je nejdelší román, který jsem kdy četl.
+2153177	Ještě nejsem připraven.
+2176953	Včera jsem snědl velký talíř hrachové polévky.
+2193399	Četl jsi tu tlustou knížku?
+2194658	Tvůj puls je normální.
+2206913	Napiš své jméno.
+2206953	Kdo je Laurie?
+2243865	Udělala jsem pár chlebíčků, protože jsem si myslela, že bys mohla být hladová.
+2261850	Nemám ho ráda.
+2268779	Neposlouchali svých rodičů.
+2315836	Mám hrozně rád obě dvě.
+2352266	Stařec odpočíval pod stromem.
+2352537	I když jsem si dvakrát vzala dvě tablety, bolesti hlavy nezmizely.
+2404603	Moje teta žije v New Yorku.
+2466012	Podívej se dozadu!
+2466033	Spotřebovali jsme naše potraviny.
+2637240	Ještě jsem nikdy neviděla Toma opilého.
+2719245	Posaď se na schody a nestůj nám v cestě.
+2794762	Prohráli jsme tři nula.
+2813660	Tom doma nikdy nepije pivo.
+2814009	Ricardo je mé křestní jméno.
+2831124	Myslím si, že lžeš.
+2836623	Mé peníze byly ukradeny.
+2977839	Začala plakat a já jsem začal plakat také.
+2977843	To je jasné.
+2981637	Vyřeší jejich spor.
+2987268	Hlasovali pro vznik výboru.
+2991654	Je oblíbená všemi.
+2991656	Přijď sem přesně v šest hodin.
+3006010	Psíček chce spát.
+3013647	Její historie je také moje historie.
+3042774	Jsi si jistá, že to nechceš udělat?
+3043238	Tom se vrátil dolů.
+3046697	Myslel jsem, že to stihneme do půl třetí.
+3058866	Jsem si jistý, že než sem dorazíte, budeme připraveni.
+3062675	Máš dnes dobrou náladu. Stalo se něco dobrého?
+3071100	Rybář se zachránil díky plovoucímu prknu.
+3073890	Škoda, že nemáme víc času.
+3075916	Jen jsem ležel na pláži a pozoroval koupající se lidi.
+3091934	Přál bych si vědět kdo Tom je.
+3091937	Ten chlapec je skutečně stydlivý.
+3225957	Byl to skvělý generál a státník.
+3226206	Vyrábíme saké z rýže.
+3233648	Můj otec musel být v mládí pohledný.
+3238606	Nebojím se tě, Tome.
+3268964	Když nemůžeš udělat co chceš, děláš co můžeš.
+3308936	Tato káva je na mě příliš silná.
+3316231	Nemáš dobrou paměť.
+3341229	Je někdo, s kým bys chtěl mluvit?
+3346307	Někteří lidé se podrobují děsivým fyzickým zátěžím za účelem zůstat v kondici.
+3373641	Život začíná tehdy, když se rozhodneme, co od něj očekáváme.
+3373664	Jeho mzda se zvýšila o deset procent.
+3415017	Měl jsem se ohledně této záležitosti poradit se svými rodiči.
+3415022	Dala mu peníze, které mu dlužila.
+3455413	Jich se bojím víc než tebe.
+3455447	Bojíš se ticha?
+3456975	Toto je tužka a tamto je pero.
+3457604	Vstávám v šest skoro každý den.
+3459243	Překvapilo by tě, co se můžeš naučit za týden.
+3467162	Tom mluvil o Mary za jejími zády.
+3467171	Políbil mi ruku.
+3472345	Jím, protože mám hlad.
+3483764	Čekej v čekárně.
+3498339	Nevím, co máte na mysli.
+3502100	Protože jsi nastydlý, nesmíš jít ven.
+3504190	Už tě nemiluju, proto jsem smutný.
+3507635	Udělala to podle sebe.
+3512802	Potřebuju to do zítřka.
+3512849	Potřebujeme víc inflace?
+3512874	Potřebuje léky, ale nechce je.
+3513186	Už ho nepotřebuju.
+3513188	Potřebuješ tuhle knihu?
+3513190	Jsi-li po mém boku, nic víc nepotřebuju.
+3513410	Je zapotřebí hodně vody.
+3515516	Bill vstal brzy, aby stihnul první vlak.
+3515522	Možná mu ujel jeho obvyklý autobus.
+3526684	Nejez tu meruňku!
+3526792	Tom si vyžehlil košili.
+3529133	Cítím se dobře, děkuji.
+3529136	Řízl jsem se do prstu při škrabání brambor.
+3538918	Není třeba, aby pracoval.
+3539375	Kéž bych se byl zamlada víc učil.
+3540428	Cena benzínu stále stoupá.
+3540549	Nafťáky jsou populární v Evropě.
+3542900	Myslím, že se jim líbíš.
+3545696	Dostavil jsem se příliš pozdě na to, abych slyšel jeho projev.
+3547146	Neznám místní zvyky.
+3558435	Tom se cítil dobře.
+3564280	Mám strach, že upadnu.
+3570876	Odešla brzy ráno.
+3573275	Všichni kluci křičeli.
+3577490	Tom měl rád Mary.
+3592595	Na stole je meloun.
+3593231	Neměl bys mu věřit.
+3676636	Trvalo by věčnost, všechno to vysvětlit.
+3772008	Sbal si věci!
+3781030	Žádné starosti! To už se dá zařídit.
+3864428	Je velmi špatná kuchařka.
+3877978	Průměrné lidské tělo obsahuje dost kostí, aby vytvořilo celou lidskou kostru.
+3963892	Promluvil jsem s nim.
+3964107	Jdu do Fukui.
+3970328	Mluvíte se mnou?
+3970729	Není potřeba, abys utrácel tolik peněz.
+3971736	Ať jde do háje!
+3971832	Obávám se, že tato kniha je nad jeho pochopení.
+3972685	Lisa si všímala jen toho, co chtěla vidět.
+3973104	Nikdy jsi mi to neříkala.
+3985503	Myslel jsem na tebe!
+3985729	Tom říkal, že přijdeš.
+3992572	Všichni studenti byli proti válce.
+3993204	Jsem rád, žes zavolal.
+3993728	Snaž se stát zpříma.
+4103482	Má dvě sestry, které bydlí v Kjótu.
+4133976	Opravdu jsem to měl vědět.
+4139796	Já hrál dobře.
+4163648	Jak víš, že jsem to neudělal?
+4179837	Tom není mým synem.
+4185534	Pokud vyrazíme teď, měli bysme to stihnout.
+4187168	Veřejnost požaduje odpovědi.
+4199677	Drží dietu, neboť má mírnou nadváhu.
+4211022	Ukázal mi svůj nový vůz.
+4227346	Já to udělal.
+4227467	Byli lepší, než jsem čekal.
+4228982	To bude pěkné.
+4234835	To bys pro mě udělal?
+4235923	O to si nemusíš dělat starosti.
+4269310	Každý den k nám přijdou dva nebo tři lidi s žádostí o práci.
+4269946	Jsem si celkem jistý, že jsem neudělal nic špatně.
+4270994	Jak dlouho žije želva?
+4273704	Kdo tu není?
+4276105	Proč jsi mě políbila?
+4281647	V Bavorsku je hodně pivovarů.
+4282475	Dřevo hoří velmi snadno.
+4311984	Darovanému koni na zuby nehleď.
+4401395	Ukažte mi prosím váš pas.
+4409917	Jsi s tím spokojen?
+4410370	Jsem přesně tam, kde chci být.
+4410635	„Chutná to dobře?“ — „Ano, chutná.“
+4412739	Co říkáš tomuhle svetru?
+4412887	Jak se dnes cítí?
+4413046	Nechtělo se mi jít.
+4414518	Chci si promluvit s Tomem.
+4414701	To je všechno co dělají?
+4414804	Tom si koupil klobouk ze slámy.
+4414834	Nemohl bys mě svézt svým autem?
+4414850	Ona hledá práci, kde bude moci uplatnit svou znalost cizích jazyků.
+4414894	Zajímá se o politiku.
+4414912	Nemám rada Putina.
+4414953	Jed tě může zabít.
+4418830	Co si myslíš o novém filmu?
+4419132	Proč se tak zlobíš?
+4419675	Mary ztratila cestu.
+4419835	Bolí ji záda.
+4419884	Ztratili jsme víru v lidstvo.
+4420518	To je, samozřejmě, možné.
+4420554	Doufám, ještě není všechno ztracené.
+4420617	Škoda, že nepřijdete.
+4421962	Tom nemůže za to, co se stalo.
+4423752	Tom šel do parku.
+4423754	Máš pravdu ohledně toho.
+4423952	Vždy jsem dobře vycházela s Tomem.
+4424221	Chlapeček se málem utopil.
+4424343	Šukali celou noc.
+4426148	Udělal kouli z hlíny.
+4437082	Miloval jsem tě víc, než tě kdy miloval kdokoli jiný.
+4440837	Líbí se ti toto město?
+4446282	Co se vám dvěma stalo?
+4449938	Zavři prosím při odchodu dveře.
+4469669	Musel jsem je ochraňovat.
+4474777	Proč tedy mlčíte?
+4479533	Mně se zdá, že se mýlíš.
+4504727	Proč se strachovat o Toma?
+4608946	Dávám přednost kávě.
+4706847	Udělám to hned teď.
+4709804	Vybral jsem si tě!
+4709840	Kdy začínají vánoční prázdniny?
+4712306	Zneužíváte svoji autoritu.
+4717053	Kolik stojí tyto hodiny?
+4719166	Jak se má tvoje žena?
+4721532	Bude tam deset lidí včetně vás.
+4756956	Udělals, cos musel.
+4764370	Můžeme Tomovi pomoci.
+4805103	Kam odešel kůň?
+4830807	Já už nevěřím sousedovi.
+4852801	Jen tak kecáme.
+4970800	Tvoje matka má pravdu.
+4997513	Poslední knihy byly prodány minulý týden.
+5019567	Zdraví začíná dobrým spánkem.
+5071300	Pošlete to leteckou poštou.
+5090429	Marie nezpívá moc dobře.
+5121089	Nemýlil jsem se.
+5148447	Potřebuji pokoj pro dva.
+5236217	Mary pomohla Tomovi.
+5236219	Nech Toma na pokoji.
+5344935	Toto jsou pštrosí vejce.
+5507904	Měl bys Tomovi dát trochu času.
+5507943	Tom bude v bezpečí.
+5874488	Jak se překládá tato věta?
+5874752	Počkej tady, prosím.
+5874811	Zajímáš se o matematiku.
+5945056	Kdy si koupíš nový notebook?
+5951091	Zaplatil jsem Tomovi.
+5951183	Vůbec to neumím.
+5951198	Potřebuji se najíst.
+5951201	Koupil jsem Tomovi náramkové hodinky.
+6031569	Táta přišel domů.
+6031571	Její otec zemřel.
+6152462	Už nemám čas.
+6152476	Psi jsou nejlepší přátelé člověka.
+6399467	Jaké divné počasí!
+6455830	Kde jsi sehnal tolik peněz?
+6455881	Udělej přestávku, Tome.
+6457407	Mám dům v Bostonu.
+6483414	Co tam píšete?
+6483446	Jsi jediná, kdo ví, jak se to dělá.
+6795154	Opravdu tě stále miluju, Mary, i když stárneš.
+6795195	Jsi ve svém domě šťastný?
+6798603	Všichni jsou pryč.
+6812645	Ten vlak už je tady.
+6812725	Udělej, co jsem ti řekl.
+6812753	Slibuji, že ti najdu práci.
+6812803	Klepe se jako osika.
+6813101	Šli jsme spát.
+6813126	Některé klávesnice na tom klavíru jsou rozbité.
+6814427	Slepice jsou nakrmeny, a pes bez blech.
+6814469	Ještě s námi chceš pobýt v Bostonu příští léto?
+6814686	Složil jsem jazykovou zkoušku.
+6815385	Je hodně práce.
+6815708	Čekáme na Toma.
+6815712	Je pravda, že Tom ten závod vyhrál?
+6816252	Pořád Toma nenávidím.
+6818220	Oni tam Toma nechtějí.
+6826053	Obecně řečeno, ženy žijí skoro o deset let déle,než muži.
+6826058	Vypadá to, že Tom se baví.
+6836117	Kdy se stěhujete do vašeho nového domu?
+6849870	Jim odjel do Londýna.
+6853584	Je nutné dělat takový hluk?
+6856201	Zvedá se vítr.
+6861856	Tom neměl lehký život.
+6865986	Počkat, proč ti to vlastně říkám?
+6872361	Tom je jediný, koho znám, kdo byl v Bostonu.
+6883866	Udělal jsi to jen proto, abys mě naštval?
+6889174	Potkal jsem Kanaďana se jménem Tom Jackson.
+6895995	On má na sobě brýle.
+6896013	Ví Tom, proč jsi nevyhrála?
+6896064	Tom řekl, že Mary je slabá.
+6897374	Která taška je vaše?
+6901666	Všichni jsou ještě vzhůru.
+6909555	Pokojně jsme demonstrovali.
+6915876	Jsi neodbytný, že?
+6930224	Nevím, proč si Tom pořád stěžuje.
+6934163	Neviděli jsme ani jednu hru.
+6934167	Můj bratr není doma.
+6935180	Jsi moc mladý na to, abys cestoval sám.
+6939965	Udělal jsi to?
+6943590	Ať už jsi jakkoliv zaneprázdněný, musíš si udělat úkol.
+6971687	Spletl jsem si tě s tvým bratrem.
+7024077	Promiňte, ale mám teď plné ruce.
+7207389	Kde mám sestru?
+7237406	Sami to zahodil do velkého kontejneru na odpad.
+7279949	Musí se kočičí drápy zastřihovat?
+7306573	Přežil jen jeden člověk.
+7316647	Prezident na otázku odmítl odpovědět.
+7325293	Tom říká pravdu, že ano?
+7333628	Dokonce i Tom lhal.
+7339489	Narodil jsem se v říjnu.
+7348525	Zdálo se, že Tomovi nevadí pozdní příchod Mary.
+7354962	Toma jeho práce nudila.
+7355872	To jsem řekl já.
+7356887	Tom říkal, že Mary odešla.
+7361862	Toma jsem kdysi nenáviděl.
+7363262	Bývali jsme manželé.
+7366378	Je zvyklá bydlet sama.
+7412008	Mary bývala modelkou.
+7414285	Bývalo to tu klidné.
+7449594	Byla to moje chyba.
+7477139	Nedávej mi to!
+7481698	Tom se chtěl stát překladatelem znakové řeči.
+7525419	Může se to stát znova.
+7530926	Vím, co Tom míval rád.
+7546209	Kde je vypínač?
+7546528	Jestli nechcete říct nic hezkého, mlčte.
+7562758	Dělám to, kvůli čemu jsme sem přišli.
+7564927	Tvoje francouzština se hodně zlepšila.
+7564950	Tom dal Mary něco studeného k pití.
+7564991	Nezapomeň Tomovi zavolat před 2:30.
+7623672	Chci tu pár ddní zůstat.
+7654093	Byl to tom, kdo to dal Mary.
+7666936	Toto je nejhlubší jezero v Japonsku.
+7666937	Udělali jsme sochy ze dřeva.
+7666964	Potřebuji tady trochu pomoct.
+7666978	Je to výzva?
+7673536	Stále jsme nervózní.
+7673549	Co chceš k Vánocům?
+7694357	Od doby, co tu Tom začal pracovat jsem s ním mluvil pouze dvakrát.
+7695624	Dělám přesně to, co jsi mi řekl.
+7721938	Myslela si, že ho může přimět, aby ji měl rád.
+7766884	Starý muž zanechal své ženě velké jmění.
+7840424	Zavezu tě domů.
+7842633	Tom urazil Mary.
+7863352	Tom měl být venku a hrát si s ostatními dětmi.
+7888955	Tom to udělal dnes.
+7904437	Výzkum ukazuje že léčivo je nejúčinější u šedesátiletých žen a starších.
+7905490	Co jí krokodýli?
+7908893	Jestli mi nevěříš, jdi a podívej se sama.
+7920402	Potom byla hostina, která trvala až do svítání.
+7921671	Zastavilo se mi srdce.
+7934283	Uklidni se! Jsme od špitálu pár minut!
+7935807	Tohle není francouzština.
+7942648	Sami se potloukal s lidmi, kteří se k němu nehodili.
+7948698	Tato stará kniha je pokryta plísní.
+7950275	Tom se včera nemohl vykoupat, protože netekla teplá voda.
+7950518	Tom každý den četl dětem pohádku na dobrou noc.
+7952695	Tom má rád psy, ale nesnáší kočky.
+7953609	Tom se nás zeptal, co budeme dělat když bude pěkné počasí.
+7953767	Můj strýc provozuje hotel.
+7956329	Tom vrtal díru do zdi a narazil na vodovodní trubku.
+7959550	Položte pistoli na stůl.
+7959849	Vlasy té dívky měly rudou barvu zapadajícího slunce.
+7967501	Kdo je kapitánem této lodi?
+7971262	Pořád si myslím, že je Tom vinen.
+7974707	Byl jsem neskutečně znuděný.
+7975481	Jsou studenti připraveni psát test?
+7983966	Pod postelí je kočka.
+7990144	Kdo si objednal pizzu?
+7994108	Tom zůstal celý život sám.
+7995775	Nic, co jsem řekl, nemělo význam.
+7997993	Kterým vlakem pojedete?
+8000653	Tom nemá rád ani pivo, ani víno.
+8007811	Tom chodí každý den na procházku.
+8013750	Co bych měl zatím dělat?
+8032495	Mary pomáhá svojí matce.
+8045530	Víme, co jsi udělal.
+8078042	Doufám, že jednou bude mezi lidmi panovat rovnost.
+8080424	Vyžehli prosím tyhle košile.
+8080755	Nalaď mi kytaru, prosím.
+8081208	Bereš to moc vážně.
+8085996	V koupelně nikdo není.
+8092254	Nebudeš cítit nic.
+8094490	Tom se od Mary dozvěděl pravdu.
+8094984	Tom by mohl onemocnět.
+8098573	V této budově se nesmí kouřit.
+8112246	Zamýšlela jít nakupovat.
+8114833	Nerad se oblékám do černého.
+8116189	Dny se teď znatelně krátí, když přichází podzim.
+8116299	Zdálo se mi, že plynně hovořím maďarsky.
+8117577	To nejsou Tomovi rodiče.
+8124174	Jsme na univerzitě.
+8130492	Mary se bála o svou přítelkyni.
+8132830	Připomeň se jim.
+8135985	Moje krabice je dvakrát těžší, než tvoje.
+8136148	Chtěl bych ti představit svého syna.
+8171319	Někteří lidé přešli na syrovou stravu.
+8173854	Dovolil svým dětem hrát si s námi.
+8176086	Mnoho květin začíná na jaře kvést.
+8176478	Tohle opravdu plánuješ udělat?
+8188350	Tom a Mary ještě nejsou připraveni odjet domů.
+8195488	Nikdo jí nepomohl.
+8201476	Nikdo o tom nemluví.
+8209930	Chci se učit jazyky rychleji.
+8212162	Měli odejít už dávno.
+8217323	Je to velmi ostrý nůž!
+8221646	Ujistil jsem je, že se jedná pouze o dočasné řešení.
+8228532	Mám za sebou další bezesnou noc.
+8251043	Nikdo se nebude vměšovat.
+8251389	Tom a Mary s vámi nechtějí mluvit.
+8275938	Pokaždé za to můžeš ty.
+8299172	Můj pes spal v posteli se mnou.
+8301349	To znělo dobře.
+8302068	Tom se před třemi roky předávkoval.
+8312430	Nerad věci odkládám na potom.
+8315273	Někdo to nejspíše udělá zítra.
+8317821	Tom má přátele v Německu.
+8319941	Firemní záležitosti by měly zůstat uvnitř firmy.
+8323331	Teď není osamělá.
+8328620	Co se stalo se vším naším nábytkem?
+8334095	My často mluvíme o počasí.
+8370475	Tom uklízel podkroví.
+8371785	Jen doufám, že není příliš pozdě.
+8374319	Kdo myslíš, že rozbil to okno?
+8394931	Ve skutečnosti se to vůbec nestalo.
+8398770	Drží tě něco v noci vzhůru?
+8399429	Prosím, vyhoď to.
+8401278	Neuvědomil jsem si, že už je tak pozdě.
+8404333	Rozhodnutí bylo učiněno okamžitě.
+8405653	Nikdy bych ji nepolíbil.
+8414185	Víte, jak se to stalo?
+8417274	Měl sklony k násilí.
+8418758	Chtěl jsem si otevřít vlastní restauraci.
+8420164	Tom nechce přijít domů.
+8425768	Myslíš, že to zvládneš bez pomoci?
+8427414	Tom už týden drží hladovku.
+8427805	Samozřejmě, že k tobě nechovám nenávist.
+8432355	Tom má další otázky.
+8432394	Sami nikdy nebral drogy.
+8432403	Mary věděla, že ji pronásledují.
+8432414	Dítě jí chléb.
+8434655	Doktor Tomovi poradil, aby co nejdříve přestal kouřit.
+8434919	Poprava Toma byla zrušena na poslední chvíli.
+8435595	Takové slovo v ruštině neexistuje.
+8438863	Tomovi se nezavděčíte.
+8438891	Měli bychom to přestat dělat.
+8439392	Zaplatil mu čtyři dolary.
+8439409	Skutečně hledáš práci?
+8439516	Moje matka mi koupila novou sukni.
+8445269	Tom se Mary svěřil, že má problémy s pitím.
+8445597	Rád bych věděl, co v té místnosti je.
+8446903	V jakém oddělení pracujete?
+8464016	Tom mě předjel.
+8466586	Tom je urozeného původu.
+8468577	Tom si našel novou přítelkyni.
+8474329	Řekni mi, proč je nemáš rád.
+8483571	Tom mi řekl, že dnes večer viděl Mary.
+8484180	Zavolej mi, až dorazíš.
+8502003	Tom je jedním z našich nejlepších detektivů.
+8503864	Tom od nich odmítá cokoliv jíst.
+8505973	Tomův stůl je tamhle.
+8506454	Nejsem o moc mladší, nežli ty.
+8509805	Tom určitě dokončil svoji práci brzo.
+8537791	Někoho jsem ti přivedl.
+8553436	Jak byl Tom zraněn?
+8553732	Začínám francouzštinu lépe chápat.
+8564146	Tomův hlas mě dráždí.
+8569706	Udělal jsem velkou hloupost.
+8571467	To vůbec nepřichází v úvahu.
+8574149	Tom začal mluvit s cizincem.
+8581391	Tom předtím psa nikdy neměl.
+8582899	Toma z toho vynech.
+8584568	Co kdybychom zítra vyrazili na pláž?
+8584828	Bylo štěstí, že jsi tam byl a pomohl mi.
+8585468	Tomova posedlost Mary skončila tragicky.
+8585473	Tom o Mary hodně mluví.
+8585489	Mary cestovala do budoucnosti a zjistila, že změna klimatu zničila veškerý život na Zemi.
+8619370	Jak dlouho myslíš, že bude porotě trvat vynesení rozsudku?
+8624200	Ta kamna nejsou na uvaření jídla dost horká.
+8636203	Opravdu máš rád takové jídlo?
+8639979	Přišla o svého otce na moři.
+8668545	Kde jsi ji schoval?
+8671551	Nemohu otevřít tento zámek.
+8698671	Už nějakou dobu jsem s tebou nemluvil.
+8704624	Hodně to bolelo.
+8714650	Můžeš mi říkat Tom, jestli chceš.
+8714727	Plavání mi jde stejně špatně, jako běhání.
+8715866	Váš návrh zvážíme.
+8718408	Vysvětlím ti to.
+8718485	Žijete ve městě?
+8718491	Je nemožné se za měsíc naučit anglicky.
+8730049	Příští týden navštívíme svého učitele.
+8735419	Co se ti na nás líbí?
+8742381	Učíš se každý den?
+8746798	Můžete jít kamkoliv.
+8746981	Vrať se do tmy.
+8763419	Vlak konečně přijel.
+8779343	Na tvůj názor jsem se neptal.
+8779345	Neptal jsem se na váš názor.
+8779423	Můžeme sedět vzadu?
+8786161	Viděl jsem, jak jeho auto zabočilo doprava.
+8790834	Tom se mi zdá být šťastný.
+8790927	Šel jsem první.
+8793360	Budeš tady ještě, až se vrátím?
+8801412	Zajisti, aby tyto dveře zůstaly zamčené.
+8807493	Můj pes rád čůrá na kola aut.
+8808142	Čekal jsem, že mi zavolá.
+8814046	Nebojíš se, že se opozdíš?
+8816180	My na to přijdeme.
+8819698	Co bych si bez tebe počal?
+8819844	Rychle jsem se postavil.
+8821231	Vím, že nemáš fotbal rád.
+8827847	Nelíbí se mi, kým ses stal.
+8839559	Dost se bojím.
+8842989	Možná zmeškal letadlo.
+8843919	To jídlo mi nechutnalo.
+8870947	Zíral jsem na Toma a on zíral na mě.
+8872716	Někdo mi řekl, že Tom má alergii na pšenici.
+8878283	Nedělej z toho takovou tragédii.
+8878301	Spáchal sebevraždu tak, že skočil pod vlak.
+8878416	Odpovím pouze na jednu otázku.
+8882483	Ani se nenabídli, že mi pomůžou.
+8882614	Byl jsi na tom koncertě?
+8884563	Neukazuj na ostatní.
+8884956	Tom chtěl přestat kouřit.
+8894012	Nedávno jsem potkal svoji bývalou přítelkyni, ale zdálo se, že mě nepoznala.
+8896124	Tvoji práci kontrolovat nebudu.
+8902806	Moje žačka měla kočku.
+8908356	Měli jsme velmi hezký výhled na řeku.
+8911199	Býval jsem řezníkem.
+8913677	Já a Tom chodíme do kostela společně.
+8921215	Nechám tě to udělat znova.
+8949479	Tom byl tak ohromen, že ze sebe nedostal ani slovo.
+8957612	Tom je v mizerné náladě.
+8961958	Tom není trpělivý.
+8963564	Tom se bál víc, než já.
+8970223	Možná měl Tom smůlu.
+8991257	Tom si takové jednání nezasluhuje.
+8996624	Mohlo by to stát za to.
+9002871	Bydlíme ve druhém patře.
+9003448	Bob mi píše jednou za měsíc.
+9004696	Prosím potvrďte přijetí.
+9016728	Tohle místo obsadil Tom.
+9029336	Je ještě mladý.
+9126469	Vůbec mu nerozumíte.
+9131308	To je placené parkoviště.
+9136944	Tom zatajil pravdu.
+9155758	Je to odsud daleko.
+9161193	Tom musí odejít.
+9161776	Tomu, co mi Tom řekl, je těžké uvěřit.
+9181465	Tom trval na tom, že se tam s námi setká.
+9193986	Kolik jazyků je v Evropě?
+9197386	Máš na ten výlet dost peněz?
+9198741	V Mexiku se mluví španělsky.
+9200913	Sedli si vedle sebe.
+9248457	Co děláš zítra po škole?
+9287837	Žádné hlasy neslyším.
+9297933	Bolí mě jeden zub.
+9302193	Nebudeme to mít lehké.
+9363397	Tvá pomoc nebude třeba.
+9369042	Zdála se být zamlklá.
+9394383	Kéž bych byl tak statečný, jako je Tom.
+9415739	Neseď na slunci.
+9419944	Je toto jedno z vašich děl?
+9421332	Požádala nás o pomoc.
+9443357	V mé rodině jsou tři děti.
+9445784	Takhle jsi to neřekl.
+9452830	Narodili se v Thajsku.
+9455961	Tom má problém koupit boty, které pasují.
+9459991	Kde je nemocnice?
+9467944	Byli to moji rodiče, kdo mě naučil jak se to dělá.
+9468998	Já si nemyslím, že odpoledne bude pršet.
+9482097	Ty utratíš všechny tyhle peníze?
+9498834	Toto je rouhání!
+9501526	Raději bych zůstal.
+9535724	Ty nechceš spát?
+9548714	Můj syn se dívá na kreslený film.
+9551808	Můj vnuk má bílé kotě.
+9569014	My o Tomových podrazech víme.
+9570401	Doufám, že si to Tom rozmyslí.
+9571817	Zítra nemusíme jít do školy.
+9572493	Viděl jsem toho psa.
+9686412	Být vámi, nic bych pro Toma nedělal.
+9687384	Matika byla stvořena k trápení dětí.
+9753547	Tom je tamhle blízko okna.
+9760390	Řekl mi, že nebude přítomný.
+9765716	Mrzí mě, že Tom odchází.
+9777986	Nechte vše tam, kde to je.
+9779688	Nikdo vás už volit nebude.
+9815701	Při plavání jsem dostal křeč do nohy.
+9815804	Chce, abych mu zítra pomohl.
+9818159	Vím, že se něco není v pořádku, cítím to.
+9848360	Chceš moji emailovou adresu?
+9871913	Zítra půjdeme do divadla.
+9872479	Jsme v předstihu.
+9923646	Spal v autě.
+9937611	Všichni jsme je nedávno viděli.
+9938963	Je to jen slabé mrholení.
+9944549	Měl jsem počkat.
+9946772	Jsi někde zraněný?
+9966606	Tom poslal Mary pohlednici.
+9968381	Tom dnes večer odjíždí do Budapešti.
+10003412	Silnice se opravuje.
+10003465	Sundal si košili.
+10007377	Tom na ně poštval psy.
+10013997	Otevřete ty dveře.
+10024235	Máš moc hezké vlasy.
+10027434	Potřebuji pasovou fotografii.
+10048116	Řekni mi, jaký má život smysl.
+10048243	Znám ho jen podle jména.
+10056345	Všichni vědátoři jsou trošku pošetilí.
+10057202	Nebudu se Tomovi omlouvat.
+10057382	Tohle bych neudělal.
+10059976	Pan Bates je zámožný průmyslník, nebude mít čas na někoho jako jsi ty.
+10069200	Vy jste policista?
+10076453	Nejdu dnes do školy.
+10091366	Tato kniha byla napsány Haleym.
+10101998	Kolik je tam barev?
+10105669	Je vždycky dochvilný.
+10108519	33 let uplynulo od smrti Marilyn Monroe.
+10117066	Večeříme v sedm hodin.
+10117461	Tom sem může přijít kdy chce.
+10119087	Vypadá to, že jsem se nachladl.
+10125005	Zachránila mi život.
+10142069	Zrovna na to nyní myslím.
+10144688	Půjdeme to říct Tomovi.
+10144806	Já peníze netisknu.
+10152961	Pokouším se našetřit nějaké peníze.
+10152967	Jak dlouho spolu Tom a Mary chodili, než se vzali?
+10159447	Je nás celkem osm.
+10162168	Ukradli mi peněženku, takže zavolám policii.
+10164144	Byl sám v domě.
+10165856	Tady je lék na průjem.
+10165992	Nemůžu najít práci, která by se mi líbila.
+10169625	Na té párty bylo hodně dívek.
+10169926	Násilí trvalo dva týdny.
+10174220	Pořád mám trochu hlad.
+10178365	Je hodně nemocný.
+10182345	Kolik stojí deset papírových talířů?
+10184179	Měl bys jíst.
+10186043	Dám ti pět minut.
+10198815	Jak píšeš svoje příjmení?
+10238764	Poslali Toma na jistou smrt.
+10254485	Buď rozumný a neprovokuj Toma.
+10293325	Šla do kláštera.
+10311042	Ráno je vzduch chladný.
+10320938	Nezastavil jsem se u vás, protože jsem neměl čas.
+10321525	Zrovna teď nemám čas.
+10338616	Sekyra byla jediná věc, kterou Tom tenkrát měl.
+10348079	Tom mě podcenil.
+10358605	Hrála na klavír valčík.
+10358939	Jakou hru to se mnou hraješ, Tome?
+10456351	Dejte Tomovi moc, a on vám ukáže.
+10456598	Tom není můj přítel. Přátelé si pomáhají.
+10458708	Tom si stěžoval na špatné pracovní podmínky.
+10462454	Pomohl jí svléknout si kabátek.
+10464501	Tehdy jsem nevěděl, že Toma uvidím naposledy.
+10466475	Tom je tady celebrita.
+10471446	Tom nic nevyřeší, věřte mi.
+10512353	Omlouvám se za včerejšek.
+10512367	Nevím, proč nerozumí.
+10526162	Řekni Tomovi, ať si hledí svého.
+10535757	Měl jsi zůstat v autě.
+10543264	Bude z něj dobrý manžel.
+10547554	Mučení je špatné.
+10549698	Tam jsem nehledal.
+10559973	Vůbec jsem nevěděl, co mám říci.
+10566125	Přelož tyto věty.
+10567604	Kde se narodil a vyrůstal?
+10576717	Nic neslyším. Jsem hluchý.
+10597146	Cvičím při každé příležitosti.
+10604223	Mám raději grepy než pomeranče.
+10609447	Vzbudil jsem se v pět hodin.
+10612503	Všichni studenti ve škole Toma znají.
+10615491	Je na svého syna hrdý.
+10616884	Mládí je obloha bez mraků.
+10623313	Žena objala dítě.
+10626564	Ten muž se na mě podíval.
+10626572	Co je v láhvi?
+10639164	Jeho žena zahynula při havárii.
+10639944	Musím ti něco říct teď hned.
+10653915	Toma jste z toho měli vynechat.
+10658801	Vítr se utišil.
+10660125	Raději byste měli odejít.
+10664281	Dostal jsem spalničky.
+10664744	Je třeba dělat cvičení.
+10666798	Zaplatil jsem mu minulý týden.
+10669086	Nemohl jsem poslouchat Tomovo blábolení a raději jsem odešel.
+10669279	Přivázali zloděje ke stromu.
+10678128	Velmi jsem ji miloval.
+10690778	Počasí je deštivé.
+10703823	Tomova rodina uprchla ze země.
+10714752	Operace je nejlepším řešením.
+10721750	Mám syna, který studuje.
+10738035	Mám díru ve střeše.
+10739468	Tom otevřel šuplík a vyndal tužku.
+10739932	Čepel byla velmi ostrá.
+10758773	Tom se bál stát na kraji.
+10782693	Nastoupil jsem do špatného autobusu.
+10790751	Rozřízněte to napůl.
+10791971	Věřím v Boha.
+10801434	Umyli jsme jablko.
+10803345	Moje sestra pracuje jako sekretářka v bance.
+10838864	Místo ní s nimi šla její sestra.
+10849333	Berbeři konvertovali k islámu a opustili svoji předchozí víru.
+10849340	Mnoho žen v domácnosti si stěžuje na vysoké ceny.
+10857656	Tom nám o tom řekl.
+10879532	Věř mi, funguje to.
+10889807	Obrátili tu místnost vzhůru nohama.
+10895207	Musíte si s námi promluvit.
+10930544	Chtějí, abych s tebou mluvil.
+10934793	Omlouvat se nemusíte.
+10937619	Ta hudba mě uchvátila.
+10940051	Mary je autistka.
+10942965	Pes kousnul kočku do ocasu.
+10949314	Tom nemůže přijít dnes, ale může přijít zítra.
+10957720	Asi mám horečku a pokouší se o mě zimnice.
+10959982	Neúspěchy jsou součástí života.
+10966946	Řekl jsem Tomovi, ať jde pryč.
+10998354	Stahování je dokončeno.
+10998538	Doktor Tomovi změnil léky.
+11002906	Nechci, aby mě s ní viděli.
+11007785	Vím, že už je příliš pozdě.
+11008334	Mluvili o kultuře.
+11011199	Tom si to může vzít s sebou.
+11014512	Brzy jsem našel restauraci, kterou jsem hledal.
+11018462	Víš aspoň, co se děje ve světě?
+11036665	Docela chápu, proč to Tom udělal.
+11041141	Neznám vás příliš dobře.
+11044339	Je tato ryba ještě živá?
+11045807	Dobří doktoři poslouchají své pacienty.
+11070016	Zahraju ti na kytaru.
+11078767	V dnešní době mnoho lidí cestuje autem.
+11095871	Je tu někdo, kdo neumí francouzsky?
+11110845	Tom tady nechce pracovat.
+11118949	Zdá se mi být laskavá.
+11121783	Řekl jsem Tomovi, že odejdu z práce dříve.
+11124949	Když byla jezera v zimě zamrzlá, byla plná bruslařů.
+11124964	Tom byl zvolen kapitánem družstva.
+11125300	Omlouvám se, zapomněl jsem.
+11135661	Tohle je mýdlo.
+11137370	Chtěl jsem, aby to Tom viděl.
+11141730	Nakládá auto, že?
+11166756	Nižnij Novgorod a Filadelfie jsou partnerská města.
+11172081	Takové podmínky jsou pro Toma nepřijatelné.
+11177780	Tom je teď na stavbě.
+11177989	Tomovo zdraví se zhoršilo.
+11194525	Málem mě přejel autobus.
+11210551	Umělec maloval stoje na lešení.
+11225124	Já už jsem v Římě byla.
+11225141	Neviděl někdo náhodou z vás moji kočku s různobarevnýma očima?
+11236058	Zamíchal jsem polévku.
+11248335	Lidem se líbilo to, co udělal.
+11259981	Vrátil se před osmou hodinou.
+11318860	Bylo to příliš i na Toma.
+11323359	Tom nám pomohl odklízet sníh.
+11353622	Vysával jsem s Tomem nějaké stroje.
+11357806	Co víš o Izraeli?
+11447242	Tom byl tentokrát rychlejší.
+11448189	Moje kancelář je v jiném patře.
+11464424	Přestaň mě tahat za vlasy!
+11466380	Našli jsme to.
+11499470	Co je to autobiografie?
+11504912	Je mi jedno, kam Tom odešel.
+11547747	Nepotřebuji tě tady.
+11575545	Tato kniha je určena středoškolákům.
+11575917	Dám květiny do vázy.
+11615948	Tom opustil svoji rodinu prvního prosince večer.
+11661252	Poslouchejte své srdce.
+11666091	Daří se mu líp.
+11667147	Proč tak rád improvizuješ?
+11668407	Rusko musí být uznáno jako primární síla ve východní Evropě a střední Asii.
+11676456	Mám dřevěný hřeben.
+11676513	Já mu to neřekl.
+11677058	Trápí ho výčitky svědomí.
+11707146	Nejsem umělec. Nikdy jsem na to neměl schopnosti.
+11717654	Mému fyzikáři nezáleží na tom, jestli se ulívám.
+11724879	Provedená změna nepřinesla žádné vylepšení.
+11734308	Radil jsem mu, ať neřídí.
+11741748	Nechal ve dřezu špinavé nádobí.
+11742786	Teď jsi součástí mne.
+11781637	Ani se toho nedotýkejte.
+11787211	Řekni Tomovi, ať se ode mne drží dál.
+11791704	Jedině Tom vám dokáže pomoct.
+11791914	Jenom pravda je krásná.
+11796406	Za zázraky se musíme modlit, pro změnu musíme pracovat.
+11802982	Máš štěstí, že tě nekousnul.
+11807843	Nastěhoval se do mého sousedství.
+11854448	Tom ty prášky nechce brát.
+11857812	Nebyl mi sympatický.
+11863117	Uvaž lano ke stromu.
+11865510	Nechci být jako ty.
+11865947	Ani nevíš, co tě čeká!
+11889471	Chytit černou kočku ve tmě je velmi obtížné.
+11889853	My víme, jak to začalo.
+11894181	Koupil jsem půl tuctu vajec.
+11898500	Tomovi bylo uloženo domácí vězení.
+11905734	Na obálce knihy bylo několik inkoustových skvrn.
+11912169	To dítě bylo celé ušpiněné.
+11914889	Jste v domě sami?
+11919055	Dýně pocházejí ze Střední Ameriky.
+11919386	Má tucet knih.
+11934646	To teplo začíná být nesnesitelné.
+11942112	Obdivuju tvou odvahu.
+11949870	Tom venku odhazuje sníh.
+11955122	Kdy se Tom vrací?
+11986673	Tom to celé přepracoval.
+11995029	Je to dobrý spisovatel.
+12012076	Po nějakou dobu nebude nic dostupné.
+12023388	My neslibujeme, my konáme!
+12040267	Konečně jsem přestal kouřit.
+12046530	Náš druh nemůže žít na Zemi.
+12080857	Věděl jsi to, Tome, a přesto jsi nic neřekl.
+12083029	Obvykle spím v leže na zádech.
+12083160	Tom prodloužil smlouvu.
+12093789	S tímhle autobusem se dostaneš do města.
+12093854	Všude byla kola.
+12100879	Učitel požádal studenty, aby se rozdělili do skupin po dvou nebo po třech.
+12101406	Tom našel jiný způsob, jak to udělat.
+12110866	Vždycky chodím do školy pěšky.
+12122666	Pokusím se Tomovi vyhýbat.
+12123800	Tom se nedokázal smířit se ztrátou svého zaměstnání a vzal si život.
+12124546	Pamatujte na křehkost své existence.
+12137915	Tomovi se nedá vyhnout.
+12143550	Museli jste Toma špatně pochopit.
+12151075	Neměl jsi tam být.
+12165872	Zrovna jsem si ostříhal nehty.
+12167160	Tuhle polévku je třeba trochu dosolit.
+12167829	Díváte se obvykle na oblohu?
+12169626	Budeme se za tebe modlit.
+12176514	Tak pravil Zarathustra.
+12178572	Soudní řízení bylo spravedlivé.
+12178730	Nemůžu snést ten rámus.
+12180137	Ten plán jsme kvůli nedostatku peněz vzdali.
+12180257	Má široké boky.
+12181446	Pořád ještě miluješ svou manželku?
+12183910	V současnosti mám až příliš mnoho starostí.
+12184628	Demokracie je nejhorší způsob vlády, s výjimkou všech ostatních, které byly vyzkoušeny.
+12192663	Musel dřevo rozštípat sekerou.
+12196198	Elegantní řešení se podařilo najít pouze jemu.
+12196455	Nechci vidět Toma umírat.
+12204613	Lhal jsi své ženě.
+12204624	Řekli mi, že byli nešťastní.
+12205379	Oba mí bratři jsou stále dospívající.
+12222784	Co jste koupili Tomovi k Vánocům?
+12226237	Přála jsi Tomovi k Vánocům?
+12258807	Tohle je moje neteř. Je to dcera mé sestry.
+12267213	Daroval jsem to Tomovi.
+12267650	Tom se za ty roky vůbec nezměnil.
+12286514	Chci s tebou mluvit o samotě.
+12299588	Tom na mě byl docela milý.
+12302716	Tom udělá všechno, co chcete.
+12318678	Stojí to dvě eura.
+12324487	Tom nás to nenechal udělat.
+12350331	Život je plný nástrah.
+12358836	Přeložte to prosím do angličtiny.
+12360167	Tom by si na to měl zvyknout.
+12366351	Nemusíte Tomovi pomáhat.
+12368493	Vzpomínám si, že jsem jí dával klíč.
+12370040	Tom je podezřelý ze spáchání trestného činu.
+12375091	Rád bych věděl co mám dělat, abych se vyhnul hněvu Toma.
+12375097	Přemýšlím, jak se vyhnout hněvu Toma.
+12376163	Jak se daří mému synovi?
+12386176	Nedělejte z toho vědu.
+12433616	Vždycky se najde někdo, kdo se o vás postará.
+12436660	Ve škole mohu být během deseti minut.
+12436684	Musím si s tebou něco vyřídit.
+12436766	S Tomem se mi špatně komunikuje.
+12437162	Itálie je velmi krásná země.
+12437233	Rád bych mu dal dar k jeho narozeninám.
+12439543	Tu knihu musím do soboty vrátit.
+12440557	Tom usnul ve své kanceláři.
+12441042	Pokud máte čas, pomozte mi.
+12441134	Rostliny mají duši.
+12442750	Přehodila si ručník přes rameno a vyšla z místnosti.
+12446683	Psi jsou zvířata.
+12450897	Zavři tu hadici.
+12452062	Kniha je cosi jako autobiografický román.
+12452573	Myslel jsem, že jsi vymyslel nějaké provizorní řešení.
+12452608	Z vůně čerstvě upečeného chleba jsem dostal hlad.
+12453818	Pěstuji si na zahradě fazole.
+12456103	Tom nemohl najít svůj oddací list.
+12457276	Svými výstřednostmi jsi buď okouzlující, nebo únavný.
+12465479	Baví tě Toma kárat, že?
+12472370	Aby se předešlo zkratu, kabely musí mít izolaci.
+12472439	Mysleli jsme, že Tomova výhrůžka byla jen vtip.
+12472557	Například šišky borovice Banksovy se snadno neotevřou, aby vypustily svá semena, dokud nejsou vystaveny vysokým teplotám.
+12473971	Hlas z tlampače byl příliš ztlumený na to, aby mu šlo rozumět.
+12474687	Takovou drzost od Toma nemusím snášet.
+12486362	Napište něco Tomovi.
+12502848	Pokud se nechcete dostat do potíží, měli byste Toma poslouchat.
+12505628	Dnes do školy nejdeme.
+12525294	Ve vlaku mi ukradli foťák.
+12533404	Může sem přijít kdokoliv.
+12535150	Nejlepší je na to vůbec nemyslet.
+12536496	Doufám, že se brzy ochladí.
+12570890	Všichni budou na Vánoce doma.
+12655991	Vedro začíná být nesnesitelné.
+12668671	Nikdy se neoženil.
+12674802	Tom se šel podívat na rozbitou bránu.
+12710616	Můžete přijít také?
+12714266	Mary řekla Tomovi, že nevěděla, co dělat.
+12714432	Nevím, kdy ti budu moct pomoci.
+12714957	Cítím se dneska trochu slabá.
+12721293	Tom byl jediný, kdo byl s výsledkem spokojen.
+12758203	Kam odešla tvoje matka?
+12765855	Nechte Toma mluvit.
+12773714	Počkáme ještě, nebo budeme jednat hned?
+12776478	Tom sem nikdy nechodí.
+12791684	Můžu si půjčit šálek cukru?
+12796973	Pomáhali jsme Tomovi sklízet brambory.
+12816312	Tom řekl, že vezme jakoukoli práci.
+12817061	S Tomem nemůžete pracovat.
+12824761	Má všeho dost?
+12856733	Do centra města nechodím.
+12856835	Zima už se blíží.
+12896194	Společnost je odsouzena k záhubě.
+12901144	Nechceme války. Chceme mír.
+12903535	Nebudu to dělat na úkor svého volného času.
+12904454	Tom to nejspíš nedovolí.
+12906894	Tom má něco, co vy nemáte a nikdy mít nebudete.
+12918539	Tom řídil auto s čepicí na hlavě.
+12944166	Vidět Toma živého a šťastného bylo pro nás něco jako zázrak.
+12946188	Rodina je mi vždy přednější než práce.
+12995677	Mladý jsi jen jednou.
+13021653	Kde jste byly?
+13031582	Byl to opravdu rušný den.
+13044546	Než abych šel do kina, rozhodl jsem se jít do hospody.
+13045089	Kovy mohou při nízkých teplotách křehnout.
+13126243	Jak moc se změnil váš život?
+13173017	Sotva se Tom vrátil domů, tak musel znovu odejít.
+13184512	Nemusíš si tu knihu kupovat. Můžeš si ji půjčit v knihovně.
+13225782	Problém Toma jsou peníze.
+13272553	Já jsem tam nebyl.
+13276557	Tom má tentýž problém, co já.
+13314711	Tom se už podruhé rozvádí.
+13315626	Situace není tak vážná.
+13428120	Už jsme vyzkoušeli všechno.
+13433537	Dinosauři vyhynuli před miliony let.
+13486264	Miluji vůni růží.
+13508816	Tímto způsobem se to nenaučíte.
+13522867	Někdo by měl Toma napomenout.
+13526460	Jak to všechno víš?
+13541469	Půjdu nakupovat s Tomem.
+13544100	Kam jsi cestoval nejdál?
+13554418	Neberte si to prosím osobně.
+13585008	Proč to potřeboval?
+13598719	Byl vyznamenán záslužným řádem.
+13617831	Toma v říjnu vyhodili.
+13625237	Když jsem se ohlédl, Tom už tam nebyl.
+13631276	Tom nemohl vstát z postele.
+13657604	Dosud na to nikdo nereagoval.
+13658435	Řekla ti pravdu?
+13662427	Nebudu Tomovi brát telefon.
+13662453	Za ten neúspěch neviním Toma ani nikoho jiného.
+13708783	Tom nemá důvod lhát.
+13730583	Většinou hlasů byl zvolen Tom.
+13789902	Tom byl na mě naštvaný kvůli tomu, že jsem mu nepomohl.
+13792113	Rád bych ti řekl něco zvláštního.
+13792136	Opravdu věříte v duchy?
+13792166	Nikdy jsem ho dříve neviděl.
+13792216	Nemyslí na nic jiného než na sebe.
+13792372	Musíš se o svého psa postarat sama.
+13792535	To se snáz řekne, než udělá.
+13792694	Dnes ráno jsem sledoval televizi.
+13792754	Nesmíš o nás mít obavy.
+13793352	Na jaké střední škole jsi?
+13793532	Dlouho jsem ho neviděl.
+13793610	Myslím, že udělá vše, co je v jeho silách.
+13793615	Zlato je cennější než jakýkoli jiný kov.
+13793737	Vím, že je špatné stahovat hudbu z internetu, ale stejně to dělám.
+13793757	Tys mi lhal, že jo?
+13793859	Máš na hodinkách správný čas?
+13794068	Vlak zrovna odjížděl.
+13836507	Opět platí Tom.
+13844269	Je důležité, aby to Tom udělal přesně tak, jak má.
+13844411	Je to velmi spolehlivá osoba.
+13846626	Nenechávejte děti samotné.
+13881076	Máš jednoduchý úkol.
+13897707	Životní úroveň v zemi roste.
+13904409	Tom o tom s nikým nemluvil.
+13911258	Byl o dost starší než my.
+13917795	Tom rozmačkal to rajče.
+13918080	Snažím se učit španělsky.
+13928123	Tom si ve firmě vybudoval dobrou pověst.
+13934790	Zapamatuj si, jak se toto slovo píše.
+13969668	Nechal jsem si od Toma opravit auto.
+14009361	Děti mají rády zvířata.
+14032212	Když jsem viděl Tomův ustaraný výraz, věděl jsem, že se něco stalo.
+14077113	Jestli je to Tom, tak já tu nejsem.
+14092564	Tom je starý a zlomený.
+14097435	Tom je známý informátor.
+14097447	Přátelé jsou zloději času.

@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+655335	Znaš li da joj se sviđaju životinje?
+655437	Danas je više oblaka nego jučer.
+655500	Ne može doći jer je bolestan.
+658916	Koji je glavni grad Sjedinjenih Država, Washington ili New York?
+670218	Škrinja je napravljena od drva.
+933911	Povjeriti ću ti jednu tajnu.
+934979	Je li blizu poštanski sandučić?
+936500	Imam dvije ulaznice za Boston protiv Vancouver u subotu navečer. Želiš li ići sa mnom?
+942610	To je rekao mlađi od braće.
+942686	Penis je jedan od muških spolnih organa.
+945112	Kojeg god je podrijetla, Valentinovo je uvijek imalo dugu i romantičnu povijest.
+955734	Pretpostavljam da više nije važno.
+955755	Znam da te ne zaslužujem.
+957604	Isključite molim vas Vaš motor.
+957913	Nije me htjela pustiti dok nisam pristao ići s njom u kino.
+958083	Preporučujem ti da promijeniš svoje prehrambene navike.
+958128	Prestao je pušiti da očuva svoje zdravlje.
+960305	Dva puta ispeci pa reci.
+960496	Ne tlačite me svojim mišljenjem.
+1047900	Gotovo da nema nasilja u tom gradu.
+1048000	Postavio sam mu mnogo pitanja o ekologiji.
+1048084	Je li išao jučer kući?
+1050939	Ne idem u školu nedjeljom.
+1051541	Razuman je u svojim pitanjima.
+1054004	Više se brine majka o petero djece, nego petero djece o jednoj majci.
+1054011	Mari radi u velikoj tvrtci.
+1055797	Najveći užitak koji poznajem je učiniti neko dobro potajno, koje tek poslije slučajno bude otkriveno.
+1059381	Zamolila me je da otvorim prozor.
+1100213	Ne igram tako dobro tenis.
+1101000	Ima jednog sina i dvije kčeri.
+1101211	On uvijek nađe greške svoje tajnice.
+1106407	Izabrali smo Toma za vođu ekipe.
+1115956	Želimo ti izmjeriti tjelesnu temperaturu.
+1201830	Ona se ispričava svojih prijatelja na večeru.
+1434487	Mislim da si nazvao pogrešan broj.
+1477400	Dobio sam tvoje pismo prekjučer.
+1477437	Javi mi čim se on vrati.
+2125461	Ti pamtiš stvari mnogo lakše nego ja.
+2156816	Zamijenio sam ju s njezinom sestrom.
+2156944	Otišao je prije deset minuta.
+2156971	Ne žali se stalno! Nisi jedina kojoj je teško.
+2157016	Htjela bih putovati diljem svijeta.
+2208306	Mojoj mački se sviđa moja tipkovnica.
+2208935	Jeste li ikada pročitali ijednu Tennysonovu pjesmu?
+2213853	Jučer sam igrao s Tonyjem.
+2220493	Ona je starija od mene šest godina.
+2439103	Ne želim raditi pod tim uvjetima.
+2609626	Veoma su pažljivo odslušali to predavanje.
+3179132	Sramim se što je moj sin učinio takvo što.
+3249456	Moramo izići na sljedećoj postaji.
+3957088	Možeš li preporučiti neke druge hotele?
+4267025	Neki gospodin Itoh želi vas vidjeti.
+4701389	Karton je jači od papira.
+4982200	Dobio sam na lutriji i idemo na Bahame.
+5018400	Ja sam vrlo tužan čovjek.
+5020978	Zašto si odustao od učenja francuskog?
+5694323	Tomu je bilo toliko hladno da su mu zubi cvokotali.
+5705085	Možeš li me odvesti njoj?
+5731212	Ja ne vjerujem više u ono što mi govoriš.
+5738898	Posjetiti ću ga u za nekoliko tjedana.
+6004724	Ne znam jesu li ti jezici srodni.
+6075471	Moram obaviti još neke stvari.
+6077639	Izgleda da ju je uvrijedilo ono što joj je rekao.
+6078310	Japanom vlada car a Španjolskom kralj.
+6085281	Došao je na sastanak na vrijeme.
+6085292	Jeste li primili paket koji sam vam poslao?
+6085351	Fadil je htio ukrasti Danijin novac.
+6158565	Nema manje od sto dolara.
+6564006	Postavili smo naše šatore prije mraka.
+7423753	Dobro je što imam kći.
+8808450	Sada moramo paziti na sebe.
+13098967	Tada dođoše dvije bludnice kralju i stadoše preda nj.
+13115948	Vidiš da nije tako grozno.
+13323886	Navodno je vidio neku ženu i čuo glasan vrisak.
+13651291	Vidio sam konja blizu jezera.
+13778298	Njegova kći živi u Novom Zelandu.
+13984186	Bila je najljepša djevojka na plaži.
+13997655	Popio je čašu čaja od limuna i otišao u svoju sobu.
+14004305	Ovo je knjiga koju tražiš, zar ne?
+14051193	On daje psu malo mesa.

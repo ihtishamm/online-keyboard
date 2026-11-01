@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+375913	Dit werkwoord wordt gewoonlijk alleen gebruikt in de derde persoon.
+377485	Mary ziet er niet zo erg vriendelijk uit, maar ze heeft het hart op de juiste plaats.
+377932	Zijn hoed zag er heel grappig uit.
+379491	Voor hoelang bent u in Sjanghai?
+380126	Daarna ging ik daar weg, maar ik kwam erachter dat ik mijn tas vergeten was.
+383991	Zoiets heb ik nog nooit gezien.
+385389	Haar handtas is gestolen.
+386222	Waar is je vader?
+388409	De ceremonie zal morgen plaatsvinden.
+388641	Zijn muziek heeft een grote populariteit bereikt in het buitenland.
+391670	Toe maar, kom maar bij me. Ik zal je heus niet opeten.
+395236	Veel economen is dit niet bekend.
+413384	Met dat als begin werden veel Europese gedichten en werd veel literatuur geïntroduceerd.
+413815	Zijn broek wordt elke dag gestreken.
+417235	Hij is snel op zijn tenen getrapt.
+417284	Er staan geen fouten in je opstel.
+422874	Oefening baart kunst.
+440290	Verscheidene leerlingen waren niet aanwezig op school wegens verkoudheid.
+445535	Kens oom heeft een grote kippenboerderij.
+449430	Mensen die Latijn niet het mooiste vinden, begrijpen niets.
+462152	Ik gebruik Twitter.
+518049	"Ik bedoel... mijn leven," zei Dima. "Hoe dan ook, er zit 3.000.000 BYR in deze aktetas."
+519912	Natuurlijk zou ik willen gaan, maar ik ben bang dat ik het te druk heb.
+526955	Mio is een pianist.
+538810	Deze onderbroek moet uitgewrongen worden.
+541900	Het kan niet altijd feest zijn!
+549274	Waar is de dichtstbijzijnde telefooncel?
+549281	Ik maak me niet al te druk over mijn cv.
+631306	Afgelopen maand heb ik mijn rijbewijs verlengd.
+632762	Zolang we enkel gericht blijven op productie en consumptie, zullen we nooit onze problemen te boven komen.
+638384	Het was liefde op het eerste gezicht.
+639056	Zij is een zeer mooie vrouw.
+647255	Ze is zo actief als ze eruitziet.
+649983	Als je erop staat, drink ik er nog een.
+652273	Zijn lezingen duren heel lang.
+652877	Tijd brengt raad.
+662522	Hij is nog een groentje op het werk.
+662702	Kan ik je over twintig minuten terugbellen?
+664518	Honger is de beste saus.
+664874	Laat zien wat ge gekocht hebt.
+668033	Alles rondom hem is grijs.
+671810	Bedankt voor het wegnemen van het misverstand.
+674148	Leven er intelligente wezens op aarde?
+674522	Men is nooit te voorzichtig.
+674672	Ik heb een pop gemaakt voor Ana.
+675040	Waar en wanneer hebt ge dat antiek horloge gekocht?
+685771	De ouders verwachtten te veel van hun zoon.
+686844	Het is echt een koopje.
+687074	Ik ging naar de dierentuin met mijn zuster.
+691210	Haar naam is Lucifera.
+695349	Hij is tandarts van beroep.
+698723	Het vereist wijsheid om wijsheid te verstaan: muziek is niets wanneer het publiek doof is.
+700466	Waarvoor dient dit?
+704783	Een gekregen paard kijkt men niet in de mond.
+706609	Hebt ge iets kwalitatief beters?
+706709	Door zijn invloed hielp hij haar deze betrekking te krijgen.
+711792	We blijven hopen.
+713295	Niemand van ons was bewust van zijn beslissing te winnen in de langeafstandsloop.
+717702	In de zesde eeuw namen de Angelsaksen het Latijns schrift over.
+724664	Ik had het moeilijk om een taxi te vinden.
+731510	Deze fabriek produceert auto-onderdelen.
+737901	Hij was een deuntje aan het fluiten.
+750839	Zij vergrootten het grondgebied van hun rijk.
+762439	Waar hebt ge de boeken en schriften gelegd?
+763621	Volgens haar is hij de beste muzikant die ze ooit zag.
+768360	Hoe groot is uw familie?
+775069	Hoeveel geld hebt ge?
+778906	Open de deur voor mij alstublieft.
+785063	De schrijver over wie ik je zoveel vertelde is gisteren overleden.
+789641	Er viel een grote bom, en heel veel mensen kwamen om.
+791856	Een overwinning behaald met geweld is evenveel waard als een nederlaag, want ze is maar tijdelijk.
+794614	De computer spaart ons tijd en problemen.
+798346	Hij heeft verschillende keren geprobeerd van het roken af te raken, maar het is niet gelukt.
+813596	Ik zou graag mijn goederen terughebben.
+813852	Hij heeft verspild wat hij van zijn vader gekregen heeft.
+813921	Groen staat Alice goed.
+813971	Waar is de afdeling XXX?
+814045	Speelt hij piano?
+818466	Ze zat op de bank.
+821202	Het zou leuk zijn om te zien hoe alles in de loop van de jaren verandert.
+822850	Hij lijkt zachtaardig.
+837049	Aan de andere kant spelen stadgenoten een grote rol.
+839086	Welkom in ons huis.
+846501	Het land stopte te bestaan.
+846575	In dit geval heb je ongelijk.
+847408	Ik hou van komedies.
+847606	Ik voel me niet ongelukkig.
+847900	Zijn enige zoon kwam om in een auto-ongeluk.
+857887	Is alles in orde hier?
+857895	Ze is mijn vriendin.
+863405	We kwamen overeen het huishoudelijk werk te verdelen.
+871987	Er is geen god buiten God, en Mohammed is zijn profeet.
+874382	Ze hebben ons deze taak opgelegd.
+876451	Rode wijn past goed bij vlees.
+878362	Hoeveel tijd is er nodig om van A tot B te gaan?
+879981	Hij zal snel weer herstellen van zijn ziekte.
+880795	Veel werd gezegd.
+884947	Ik heb hem ertoe gebracht mijn kamer te kuisen.
+932289	Nu is er gelukkig een overvloed aan Esperantomateriaal op het Internet.
+940586	Glenn heeft twee hartsvriendinnen.
+959097	Nee, zet maar op mijn rekening.
+979742	Het is maar normaal dat hij fier is op zijn zoon.
+985857	Ze ging in het bos om haar verloren kind te zoeken.
+1005444	Kunt ge mij uw gsm-nummer geven?
+1009340	Ge zoudt uw ouders minstens eens per maand moeten opbellen.
+1018166	Hij houdt zijn kamer proper.
+1020550	De grote vraag, die nooit beantwoord is, en die ik ondanks dertig jaar studie van de vrouwelijke geest nog niet kan beantwoorden, is: "Wat wil een vrouw?"
+1020861	Hij lag daar met zijn benen samen gebonden.
+1033335	Deze taart is te zoet voor mij.
+1045920	Ze had een aangename droom.
+1084718	Vroeger was alles beter.
+1102785	Wil je een korte wandeling maken?
+1105911	Ik vraag me af of hij vannacht zal komen.
+1116873	Ik heb met vrienden gesproken.
+1124402	Ieder van ons draagt een schooluniform.
+1124449	Je moet nu niet vertrekken.
+1130774	Men zegt dat hij een miljardair is.
+1138185	Hij trok een rechte lijn op de muur.
+1181433	Hij komt goed overeen met al zijn klasgenoten.
+1372012	De info die je me gaf is van weinig nut.
+1395858	Die straat was zeer lawaaierig.
+1397281	Er zijn veel sterren die groter zijn dan onze zon.
+1400179	Ik kijk uit naar de zomervakantie.
+1401613	Hoe oud denk je dat Tom is?
+1401662	Mag ik het hier neerzetten?
+1437272	Enkele kinderen zijn op het gras aan het spelen.
+1438357	We zijn twee weken in Londen gebleven.
+1471704	Dat is een schitterend idee.
+1477994	Dit is het boek waar je naar op zoek bent.
+1479002	Niet tegen hem praten terwijl hij rijdt.
+1479078	Zijn wangen brandden van schaamte.
+1479751	Ik wil het je terugbetalen.
+1479978	In 1972 begon Dr. Francine Patterson met gebarentaal aan Koko te leren.
+1480368	Het kan Tom niet schelen wat andere mensen denken.
+1480383	De wedstrijd vond niet plaats.
+1480633	Tom is een tieneridool.
+1480664	Mary houdt van romantische komedies.
+1483080	Hij die vecht, kan verliezen, maar hij die dat niet doet, heeft al verloren.
+1494872	Tom is zijn bril kwijt.
+1496721	Ben je daar echt in geïnteresseerd?
+1532713	Ik wil je nog zien voor ik naar Europa vertrek.
+1541624	Tom is de hele nacht blijven praten.
+1541760	Men kan hier niet ademen.
+1622198	Dat is uw opgave.
+1635460	Niemand weet het.
+1678382	Wij zullen je bezoeken.
+1678404	Er zijn vier seizoenen: lente, zomer, herfst, winter.
+2008900	Laten we dat doen.
+2023544	Ik weet het niet, en ik wil het niet weten.
+2088718	Het leven is prachtig!
+2128428	De politieman achtervolgde de dief.
+2224203	Een van die twee antwoorden is goed.
+2226358	Ben je doof?
+2244205	Drinkt u thee of koffie?
+2326335	Ik hoop dat het gebeurt.
+2337685	Ik heb je alles verteld.
+2338572	Hij nam een foto van de koala.
+2358340	Wat is het warm vandaag!
+2358357	Ze werden gedwongen hun huis tegen hun wil in te verlaten.
+2358584	Bill houdt zijn woord vaak niet.
+2411873	Het museum is open vanaf negen uur 's morgens.
+2449380	"Bedankt dat ik op je Xbox mag spelen." "Geen probleem kerel, leef je uit."
+2660718	Boeken zijn mijn beste vrienden.
+2686917	De kist was te zwaar.
+2730281	Waar is mijn dagboek?
+2743815	Er zijn andere kanten.
+2807668	We luisterden naar de leraar tijdens de Engelse les.
+2813719	We gingen in de rij staan om aan kaarten voor het concert te komen.
+2824887	Ik denk niet dat dat een verstandige beslissing was.
+2920580	Ik hoop dat vader gauw terugkomt uit het buitenland.
+2922435	Nefertari was de eerste vrouw van Ramses II.
+2972466	Mijn moeder heeft de jongen op straat niet gezien.
+2974685	We zijn maar mensen, geen goden.
+3037174	Tom brak vorig jaar zijn been en hinkt sindsdien.
+3037195	Ze verkopen meubels.
+3038220	Het meer is compleet bevroren.
+3038284	Heb je Tom al bereikt?
+3039131	Ik wil dat je een bijeenkomst regelt.
+3062040	Ik vraag me af wat er mis is.
+3120222	Wat een mooie dag, niet?
+3120254	Ik heb vandaag niets te doen.
+3120255	Vandaag voel ik me veel beter.
+3123885	Het onderwijs is een spiegel van de ideologie van een natie.
+3124573	Op het einde van de maand heb ik zo weinig geld over.
+3128908	Hoeveel tassen heb je?
+3141074	Hij heeft geen vonkie moed.
+3141116	Zijn leven hangt aan een zijden draadje.
+3174109	Gooi de teerling.
+3175089	U lijkt moe. U moet een uurtje of twee rusten.
+3175238	Toon me de weg naar het station, alstublieft.
+3175478	Niemand bewondert hem meer dan ik.
+3193087	Men zal u wassen.
+3194051	Neem je paraplu mee voor wanneer het zou regenen.
+3217486	Het lijkt niet zo groot.
+3219029	Waar besteedt u de meeste tijd aan?
+3221743	Ik heb veel gedronken en kan me niet veel herinneren van wat er afgelopen nacht is gebeurd.
+3227748	In mijn gezin zijn er negen personen.
+3244696	Het wordt dikwijls gezegd dat het Japans een taal is die moeilijk te leren valt.
+3245736	Bestaan er Portugese ondertitels voor die film?
+3308405	Op weg naar huis leerde ik een hond kennen.
+3452813	Ik ben gekomen om jou te zeggen dat ik wegga.
+3465210	Tom maakte ons bang.
+3477221	De overwinning of de dood!
+3493048	Tom nam toch meer dan één foto?
+3493073	Het ziet ernaar uit dat hij hard berispt was.
+3498193	Goedenavond, ik had graag een glas volle melk.
+3524242	De zevende dag van de week is zondag.
+3548673	Het blijft vervelend, zoiets.
+3552323	Wat blieft u?
+3552835	Het was onmiddellijk een succes.
+3559927	Roken is in de lift niet toegestaan.
+3560101	Dat is Toms kat.
+3562886	Ik ga naar huis.
+3582644	Ik zat juist toen de bel ging.
+3582853	Ken jij Engels?
+3598574	Ik wil vandaag niks vertalen.
+3601708	Ik heb nog geen avondeten gegeten deze avond.
+3616020	De mannen praten met elkaar.
+3632903	Bedankt dat je teruggekomen bent.
+3645098	Tom speelt heel goed piano.
+3663468	Tom weet veel over de geschiedenis van Amerika.
+3697265	Hebt u verse eieren?
+3702037	Kan ik je iets laten zien?
+3772599	Meg heeft een klavertjevier gevonden.
+3814822	Dit ben ik.
+3851876	Hij is tamelijk knap, niet?
+3867576	Alleen jij ontbreekt voor die film!
+3972492	Wie een beest van zichzelf maakt, verliest de pijn van het mens zijn.
+3991116	Kan je je dat voorstellen?
+4002245	Wat is er op tv?
+4029808	Ik zou graag hebben dat jullie onmiddellijk na het ontbijt het gras maaien.
+4029810	Ik zou graag hebben dat je onmiddellijk na het ontbijt het gras maait.
+4073647	Tom heeft het hek gerepareerd.
+4077231	Waar is de hamer?
+4170716	Mag ik rijden, alstublieft?
+4193901	Tom heeft een hoge pet op van zichzelf.
+4210210	Stop met praten wanneer de leraar binnenkomt.
+4218551	Ik denk dat je naar een deeltijdbaan moet zoeken.
+4222684	Tom was heel behulpzaam.
+4248555	Ik zweer dat het niet mijn fout was.
+4275663	Ik heb morgen les.
+4285501	Alleen vodka uit Rusland is echte Russische vodka.
+4303429	Ze werkten samen om de brand te blussen.
+4348726	De muren zijn wit.
+4375478	Ik kan je niet bijhouden.
+4440965	Ze was graatmager.
+4441437	Ik ben over u aan het schrijven.
+4450520	Kunt u mij vertellen hoe deze wasmachine gebruikt moet worden?
+4454608	Ik kan geen ander initiatief nemen.
+4475040	Een goede buur is beter dan een slecht familielid.
+4480434	Ge hebt gelijk. Ik moet doorgaan met mijn leven.
+4516609	Welke denk je dat Tom zal kiezen?
+4521364	Ik luister zelden naar de radio.
+4521537	Ik heb veel pijn.
+4523957	Hij speelde piano en zij zong.
+4523962	Ik heb hem maar één keer piano horen spelen.
+4557809	Hij zou in Nagano moeten wonen, dus wat doet hij op Station Tokio?
+4559237	Zijn ze weg?
+4570846	Het probleem met de kinderen van de buren is dat ze altijd luidruchtig zijn laat in de avond.
+4571534	Afgezien van dat het koud was in de zaal, heb ik me vermaakt bij het concert.
+4573837	Francis kwam om zes uur bij Galeao aan.
+4635254	Ik wil weten waar je gisteravond was.
+4640223	Zelfs jij zou niet kunnen antwoorden!
+4640370	Voel je je ooit schuldig?
+4640551	Het maakt niet uit hoeveel hij eet, hij komt toch niet aan.
+4642988	Als het te mooi klinkt om waar te zijn, dan is het dat waarschijnlijk niet.
+4644458	Ik vrees dat ze ziek is.
+4660572	Geloof je nou echt dat die machine in de tijd heeft gereisd?
+4695751	Iedereen vertrok, behalve wij.
+4695957	Ik zag een spin lopen op het plafond.
+4699132	Appelen, peren, pruimen en druiven brengt in een mandje onze geliefde herfst.
+4701465	Tom heeft bij het examen geschiedenis gesjoemeld.
+4707902	Waarom heb je niet gebeld?
+4722798	Waarom zijn mooie dingen zo fragiel?
+4722879	Tom is weg zonder mij het te zeggen.
+4759332	Tom en Maria zijn van plan volgend jaar te komen.
+4763215	Hou je er een andere mening op na?
+4780752	Is dat een probleem?
+4834533	Je zal hier moeten wachten.
+4868508	Ik ga niet weg zonder jou.
+4915229	Maria is slimmer dan de meeste meisjes van haar leeftijd.
+4927505	Laten we het niet over school hebben.
+4927508	Trek de stekker eruit.
+4940967	Dat is lelijk.
+4947926	Laten we met deze opgave beginnen.
+4979629	Tom is in het ziekenhuis beland.
+5014079	Tom kan niet fietsen.
+5027429	De recente frequentie van aardbevingen maakt ons zenuwachtig.
+5117316	Is je paspoort klaar?
+5168897	Ik zal betalen.
+5236535	Spreekt u Pools?
+5340031	De lucht was vol met vliegtuigen.
+5340602	Mijn mobiele telefoon was gestolen.
+5357256	We komen binnen.
+5367605	Zeg me hoe je het hebt gedaan.
+5458967	Niemand is onsterfelijk.
+5460022	Kom hier dat ik je sla.
+5461047	Tom heeft nog steeds gevoelens voor u.
+5529771	Wat telt, is niet de grootte van een persoon, maar de grootte van zijn karakter.
+5716558	Ze stellen religie gelijk aan kerkgang.
+5720396	Volgens ons zijn zonnepanelen een goede investering.
+5802778	Tom probeerde de stemming te verzachten.
+5808103	Hij vroeg om een salarisverhoging.
+5931167	Tom moet wel heel veel van Maria houden.
+5934634	De twee mannen hebben elkaar persoonlijk ontmoet.
+5965771	Toms shirt was doorweekt van het zweet.
+5993046	Ik ben werkelijk onder de indruk.
+5993090	Hoe kon ze zoveel eten?
+6039003	Ik hou niet van tatoeages.
+6044299	Je zult er geen spijt van krijgen.
+6045416	Hij is zo sluw, ik weet nooit wanneer ik veilig ben.
+6059582	Hij heeft echt geen manieren.
+6059995	Ik voel me vaak lusteloos.
+6062878	Wat doe je de volgende week?
+6065331	Dit waren de droogste zes maanden in dertig jaar.
+6067907	Hallo schat! Waarom ben je nog steeds in bed? Ben je ziek?
+6080279	Schiet op! De professor zal niet op je wachten.
+6084172	Hij was er niet zeker van.
+6086714	Je mag in de klas geen lawaai maken.
+6086981	Het was mijn idee.
+6089345	Waar is de winkel?
+6091089	Hij rukte de brief uit mijn hand.
+6101111	Gelooft Tom in magie?
+6116594	Het gewaad van de priester fladderde zachtjes in de wind.
+6117473	Pak het fototoestel.
+6133171	Ik kan niet naar de bioscoop gaan, ben blut.
+6135035	We hebben minder praten en meer actie nodig.
+6138515	Tom spreekt perfect Frans, maar zijn moedertaal is Duits.
+6138529	Ik heb scheve tanden.
+6138543	Hij is een man die met niemand praat.
+6176106	Jij kan niet vertalen wat jij niet begrijpt.
+6202885	De kat kijkt door het raam.
+6218590	Maria moet gaan winkelen.
+6218858	Schreeuwen is echt niet nodig.
+6284175	Zij is onbeholpen.
+6322456	Door ieder overlijden in een verkeersongeval groeit het bnp, want we moeten betalen voor politie, ziekenwagen, ziekenhuis, geneesmiddelen, advocaten, rouw, enz.
+6380183	Het is dood.
+6388059	Je wordt dunner van dat dieet, maar word je ook gezonder?
+6397753	Raakte zij je borsten aan?
+6458334	Heel wat inwoners van de Verenigde Staten zijn trots op hun niet-Amerikaanse voorouders, maar beschouwen zich als legitieme staatsburgers van de VS en worden meestal ook zo beschouwd.
+6459932	Houdt je vriendin van thee?
+6523209	Hoe laat bent u thuisgeraakt?
+6566589	Tom brengt altijd de regen met zich mee.
+6582105	Je kent me weliswaar niet, maar ik heb veel foto's van jou op mijn computer.
+6598116	Dit is geen postkantoor.
+6617180	Tom is allergisch voor noten.
+6621396	Tom durfde niet naar Maria te kijken.
+6623099	Tom kan goed koken.
+6623139	Maria gooide de kleren van haar vriendje in het vuur.
+6623454	Wees stil en luister.
+6699437	Het werk was echt moeilijk.
+6724595	Ik vind je foto's heel goed.
+6738178	Maria heeft boter, brood en kaas gekocht.
+6777719	Tom spreekt een beetje Frans.
+6796952	Ga slapen, Tom.
+6844831	Nu komt alles goed.
+6852775	Iemand heeft zijn tas op de bank vergeten.
+6863898	Ik zal mijn haar niet wassen.
+6878750	Ik was gewoon beleefd.
+6889841	Loop niet op het glas.
+7036793	Ik wil gerechtigheid.
+7037206	Ik zie Tom dikwijls.
+7037280	Er was niemand in de lobby.
+7039567	De brand verspreidde zich snel.
+7041516	Tom studeerde journalistiek.
+7066033	Dat was mijn vinger.
+7076838	We plantten bomen.
+7084592	Neem een beslissing en neem ze met de zekerheid dat u gelijk hebt.
+7105841	Veel studenten hebben niet veel geld.
+7109776	Het samenstellen van een woordenboek kost veel tijd.
+7118864	Hij bloosde gemakkelijk.
+7118900	Wat drink je?
+7122166	Waar is de fout opgetreden?
+7203981	Rome is een van de oudste steden van Europa.
+7222167	Ik ben vrij zeker dat Tom geen broers en zussen heeft.
+7263825	Hij krijgt de zak.
+7281538	De AEX opende 0,6 procent in de plus.
+7323372	Sami gooide afstandsbedieningen naar Layla.
+7323718	Mijn huwelijk is over.
+7326807	Sami verwijderde de foto's.
+7328162	Tom heeft drie laptops.
+7451497	Argentinië, Chili, Uruguay, Paraguay en Zuid-Brazilië maken deel uit van de Zuidkegel.
+7455790	Wij zijn geen genieën.
+7455797	Windsurfen is leuk.
+7459801	Ik heb mijn wijn gemorst.
+7459855	Tom drinkt appelsap.
+7481767	Ik gaf borstvoeding.
+7488023	Layla was zo blond.
+7489211	Wij hebben water nodig.
+7491799	Jullie kunnen tv-kijken
+7491882	Tom liet een boer.
+7499545	Bloemen maken haar blij.
+7523534	Die zee heet de Middellandse Zee.
+7523669	Zij hadden niet genoeg goud.
+7526531	Mijn moeder is in de keuken.
+7535330	Ik heb bijna drie jaar in Boston gewoond.
+7535970	Deze dingen gebeuren alleen in Zweden.
+7547608	"Is dit van jou?" "Ja, dat is van mij."
+7548851	Jij bent mijn lerares en mijn vrouw!
+7550925	Is het mogelijk?
+7588499	Cambodja is etnisch homogeen.
+7594655	Ze had een erge infectie en haar eierstok zwol op.
+7596319	Ik heb geen geschikte schoenen voor dat evenement.
+7611554	Ze verdienen meer.
+7645274	Ik wist dat Tom allergisch was voor pinda's, dus heb ik geen pinda's in deze koekjes gedaan.
+7668829	Ik gebruik zelden een zakdoek.
+7669201	Hij heeft een heel goede stem.
+7673704	Sami stopte met roken.
+7678780	Haar olijke oogjes keken me stralend aan.
+7680659	Laten we dansen, lieverd!
+7682369	Ik ben zo gelukkig.
+7684271	Ik ben kleurenblind.
+7693826	Papa zit in bad.
+7694462	Zijn jullie kaal?
+7694736	De leraar gaf ons huiswerk.
+7694881	Waar is een Chinees restaurant?
+7694913	Sami heeft in een restaurant gewerkt.
+7699350	Het is hier.
+7699426	Tom schilde de wortels.
+7706646	Tom werd gemarteld en vermoord.
+7708940	Heeft Tom grijs haar?
+7717605	Ze gaan hem doden.
+7727845	U heeft ons gisteren gezien.
+7727846	Jij hebt ons gisteren gezien.
+7730635	Londen stemde om in de Europese Unie te blijven.
+7740615	Sami's favoriete eten is pasta.
+7745804	Ik begrijp kunst niet.
+7764515	Wanneer heb je hem ook alweer voor het laatst gezien?
+7768095	Bedankt voor jouw antwoord.
+7769044	Ik ben panseksueel.
+7799514	Het is zeven uur.
+7800953	Ik hou van prei.
+7803835	Zij wonen in Oekraïne.
+7811495	Ik heb uw software geüpdatet.
+7811504	Een update is beschikbaar.
+7811683	Heeft u hen gegoogeld?
+7814256	Ik maak me zorgen.
+7814642	Waarom geeft u geen antwoord?
+7831069	Wij lieten hem gaan.
+7838362	Ik had aan Tom mijn woordenboek uitgeleend, en nu kreeg ik het terug met heel wat ezelsoren.
+7841114	Zeg dat in het Grieks.
+7851603	U kunt geen dokter zijn.
+7853566	Ik vond zijn verklaring niet overtuigend.
+7864617	De meeste Algerijnen zijn soennitische moslims.
+7894929	Ze eet elke dag chocolade.
+7895466	Tom zal niet huilen.
+7898571	Gaan jullie met de trein?
+7898773	Wie heeft dat gezegd?
+7899218	Spreekt u Kasjoebisch?
+7899254	Spreek je Deens?
+7899305	Spreken jullie Farsi?
+7899314	Spreken jullie Noors?
+7900381	Tom sprak gisteren met Maria.
+7900910	Het gaat sneeuwen.
+7902345	Ik bleef de hele dag thuis.
+7902349	Hij is vandaag thuis.
+7902572	Waar zijn jouw spullen?
+7904274	Dinosaurussen zijn nu uitgestorven.
+7904311	Hij is bang voor zijn vader.
+7906500	De jongen heeft een appel in zijn zak.
+7906646	Kunnen ze geen Italiaans spreken?
+7906707	Kun je ook in het Italiaans tellen?
+7907179	De baby viel in slaap.
+7907442	Doha is de hoofdstad van Qatar.
+7908951	Bagdad is de hoofdstad van Irak.
+7911438	John is een goede student.
+7911580	Ik drink geen bier.
+7911757	Ook Tom is een student.
+7912872	Tom vroeg toestemming om het fotokopieerapparaat te gebruiken.
+7915695	Laten we onze overwinning vieren.
+7928049	Dit is een ei.
+7935639	Zijn favoriete groep is Warpaint.
+7952492	Hij stond in dubio, zou hij morgen of vandaag naar de kapper gaan.
+7955014	Waar gaat het heen?
+7956377	Heb je Kyoto al bezocht?
+7958396	Je kan dit maar beter weggooien.
+7980047	Eerlijk gezegd vond ik het stoofpotje van Tom niet lekker.
+7992598	Ik wil hem leren kennen.
+7999526	Waar is de geldautomaat?
+8001720	U loopt naar binnen.
+8002113	Ben je niet zenuwachtig?
+8002232	Wat deden Tom en Maria in Boston?
+8005893	Hier zijn enkele voorbeelden van het soort persoonlijke gegevens dat ons bedrijf kan verzamelen en hoe we deze kunnen gebruiken.
+8061041	Ik doe wat ik wil.
+8064588	Wanneer Mennad in Egypte is, voelt hij zich niet veilig.
+8083753	Ik dacht dat iedereen honger had.
+8094810	Die hoed is erg in de mode.
+8097405	Wij hebben de laatste tijd veel ongewenste reclame ontvangen.
+8099709	Hij is straatarm
+8100429	We hebben weer eens gezondigd en veel te veel gedronken.
+8157296	Tom was als vampier verkleed.
+8167477	Geef me een minuut om erover na te denken.
+8182452	Je kunt niet iedereen een plezier doen.
+8192593	Met de lift kun je zowel omhoog- als omlaaggaan.
+8192603	Als je deze spullen niet kunt verkopen, moet je ze misschien afprijzen.
+8227969	De beker is gevuld met water.
+8228004	Tom werd geïnteresseerd.
+8228119	Als die twee beginnen met kletsen, houden ze ook niet meer op.
+8228390	Ik ben een barman.
+8228499	Ik ga een samenvatting maken.
+8228615	Zij kan heel goed piano spelen.
+8228694	Ik had vroeger drie konijnen.
+8229346	Mennad vroeg zich af waarom Baya van Ziri hield maar niet van hem.
+8234377	Tom is noch thuis noch op school.
+8234745	Stop met schieten!
+8234839	Tom is niet bang voor slangen.
+8239201	De man met wie ze wil trouwen, is ruimtevaarder.
+8258065	Ik ga de troep opruimen.
+8286586	We zijn eraan gewend niet thuis te zijn.
+8294806	We kunnen het niet riskeren.
+8309616	Ik begrijp dit probleem helemaal niet.
+8339543	Wat er ook gebeurt, ik zal niet van gedachten veranderen.
+8353836	Hij was te laat.
+8372042	Ik sta op het punt dat te doen.
+8374005	Ik haat Wikipedia.
+8386184	Ik vond dat leuk.
+8389471	Sami bleef Layla geld sturen.
+8390909	Tom zal me nooit meer geloven.
+8396474	Ik ben een beetje wanhopig.
+8396749	Zijn deze eetbaar?
+8406398	Je bent een megalomaan.
+8409585	Er is geen enkele aanwijzing voor een motief.
+8410893	Hij schreef een boek over zijn familie.
+8411985	Ze houdt van poëzie en muziek.
+8418871	Ik denk niet dat ik in staat zal zijn om je kapotte telefoon te maken.
+8418881	Is het al klaar?
+8429927	Tom en ik zijn al lang getrouwd.
+8430090	Mijn man is leraar.
+8434141	Is er een derde manier?
+8434526	Kom morgen naar ons toe!
+8436071	Hoe gaat Tom naar Australië?
+8436506	Ik snapte de grap niet.
+8443658	Deze mango's zijn zoet.
+8449587	Tom weet dat dit waar is.
+8450119	Het was keihard.
+8462874	Ken je het verschil tussen goed en kwaad?
+8465101	De rivier heeft een breedte van vijftig meter.
+8472887	Ik kom daar net vandaan.
+8474614	Jims vader komt laat thuis.
+8486514	Ik ben verbaasd dat je de baan niet hebt gekregen.
+8488038	Om negen uur 's avonds bezochten we het Anne Frank Huis.
+8501446	Tom is degene die belde.
+8508487	Omdat ze naar de televisie zitten te kijken.
+8538171	Vertel niemand dat ik hier ben.
+8545130	Tom en Mary gaan graag met hun vrienden dansen.
+8551150	Draag je handschoenen?
+8557923	Jullie spreken toch allemaal Frans?
+8558233	De jongen besloot om voor een fles verse melk naar de melkboer te gaan.
+8565254	Dit is mijn geesteskind.
+8570006	Ben je aan het eten?
+8570032	Hij kan het doen.
+8571693	Het is een heel stuk van hier naar school.
+8572978	Is dat alles wat er is?
+8575445	Het is niet eerlijk!
+8579454	Hij is verkouden.
+8580757	Kom je naar beneden?
+8580937	Heeft Tom je hierover iets gevraagd?
+8593958	Zal zij leven?
+8596022	Ga lekker zitten.
+8608974	Dat is hem.
+8615308	Wat heb je verstopt?
+8646096	Plots was er een mistbank voor me en ik remde hevig.
+8650121	Wat zei je? Kan je het nog een keer zeggen?
+8650580	We zullen u informeren.
+8661541	Ze zijn bevriend.
+8663458	We zullen je bellen.
+8665940	Tom bad voor Mary.
+8699203	Met kaart, alstublieft.
+8704252	Bel je moeder!
+8719863	Tom barstte in lachen uit.
+8723374	Laten we vergeten wat er vandaag is gebeurd.
+8725593	Wat wil je, gepocheerde eieren of liever een omelet?
+8744451	Tom nam ontslag.
+8744576	Laten we op jouw gezondheid proosten!
+8772004	Dat moeten we uitzoeken.
+8774703	Hij is menselijk.
+8776107	Ik zal lunchen.
+8854537	Een verwoestende tyfoon heeft de Filippijnen getroffen.
+8947277	Ik vind het hier heerlijk.
+8974499	Kun je buiten wachten?
+8996899	Dat wordt onvergetelijk.
+9000966	Ik wil graag naar Duitsland om Duits te leren.
+9001533	Geen foto's van mij!
+9008890	Laten we ze achternagaan!
+9009926	Ik ga naar de sauna.
+9014228	Ga door aan de linkerkant!
+9032102	Hij heeft astma.
+9032141	Het weer is helder.
+9032142	Lucht je kamer uit!
+9050517	Tom was niet erg gelukkig in Boston
+9051421	Laten we het onderzoeken.
+9051839	Jullie zullen beroemd zijn.
+9068191	Ik heb dit altijd al willen doen, maar ik heb daarvoor tot nu toe nooit de kans gehad.
+9072276	Dat was genoeg.
+9082955	Ik zong voor Tom.
+9085060	Tom heeft toch honger?
+9132860	Is dat niet alleen maar een broodjeaapverhaal?
+9142237	Tom zei dat we zijn hutje bij het meer konden gebruiken dit weekend.
+9175675	De straten zijn glad, dus wees alstublieft voorzichtig.
+9182050	Ken je hem zo goed?
+9209564	Dit vlees is kip.
+9231802	Ik ben erg blij dit te horen.
+9242066	Tom zei dat ik hier moest wachten.
+9255049	Zij zijn aan het uitstellen.
+9256570	Ga niet alleen naar het oerwoud.
+9266387	Ik had geen flauw vermoeden dat het daar was.
+9269253	Hoeveel mensen waren er?
+9277763	Heb je het ooit gezien?
+9296729	Laad uw telefoon op.
+9300452	We kwamen hen tegen op het busstation.
+9332551	Ik ben naar buiten gelopen.
+9358264	Trek een kaart.
+9358814	Bel je dochter.
+9376976	Ik begin het al door te krijgen.
+9378818	Ik heb problemen voorzien.
+9380159	Wat een kutfilm!
+9381834	Waarom bleef u stil?
+9388928	We zijn een beetje sceptisch.
+9393963	Ze gaat naar het park.
+9398371	Ze hebben het moeilijk gehad.
+9411373	Het is rommel.
+9411576	Ik ben gek.
+9419624	Ik weet dat mijn vader me zal helpen.
+9421523	Ik bestelde vijf glazen platen.
+9426593	Je hebt haar hart gewonnen.
+9428187	Laat dit hier.
+9428196	Maria is vreemd.
+9431383	Heeft u een boek in het Russisch?
+9431598	Ik kan niet zonder stok lopen.
+9433343	Doe de poort op slot.
+9442290	Tom wilde niet gaan winkelen met Maria.
+9456333	Ik heb mijn ex-vrouw niet gezien sinds onze scheiding.
+9463135	Ik kan niet wachten om Tom met zijn kinderen te zien.
+9463136	Tom is ongetwijfeld welbespraakt.
+9466830	Ook dit jaar blijft hij met zijn keuzes in de roos schieten.
+9466999	Waarin ben je geïnteresseerd?
+9474328	De fles is vol.
+9477278	Tom wil geen afstand doen van zijn recht op een juryrechtspraak.
+9484276	Ik spreek een beetje Russisch.
+9491365	Winkels zijn druk bezet net voor Kerstmis.
+9492877	Tom brak zijn rechterbeen en werd een paar weken voor kerst naar het ziekenhuis gebracht.
+9496534	Ik hou van Texas!
+9499767	Tom heeft een puppy gekregen voor Kerstmis.
+9499836	Heb je een leuke kerst gehad?
+9499837	Hebt u een leuke kerst gehad?
+9507385	Deze zin dient door een moedertaalspreker gecontroleerd te worden.
+9520720	Tom en Maria werken hard.
+9520743	Ik hoorde ze mijn naam roepen.
+9521899	Mijn vrouw en ik deden onze kerstinkopen in oktober.
+9525919	Wat zou ik Tom moeten kopen voor Kerstmis?
+9525921	Wat zou ik Tom moeten geven voor Kerstmis?
+9526097	Ze bracht al haar kerstmissen thuis door met haar familie.
+9526836	U weet niet wat u krijgt voor Kerstmis, of wel?
+9535742	Hij trad af.
+9535934	Het is een cadeau voor u.
+9556847	Dit is een openbare school.
+9568852	Mijn droom is om in het buitenland te studeren.
+9589712	Ze probeerde hem te doden.
+9593311	Wie veel werkt maakt veel fouten. Wie weinig werkt maakt weinig fouten. Wie niet werkt maakt geen fouten en krijgt een promotie.
+9623875	Zijn jullie het eens met Tom?
+9631588	Wat is de aard van uw probleem?
+9633740	Er eten hier elke dag honderden mensen.
+9663826	Het zwembadwater is koud.
+9666460	Maak je je geen zorgen?
+9667859	Wie is de baas?
+9668793	Het ruimtevaartuig New Horizons vloog op 1 januari 2019 langs het oude Kuipergordelobject Arrokoth.
+9672744	Tom werd gevangen genomen, maar hij werd vrijgelaten.
+9681413	Ik heb geen enkele pen.
+9681451	Braziliaanse muziek is gewoonweg magisch.
+9683623	Hoeveel zussen heeft Tom?
+9685477	Tom zal Maria vergeven.
+9698667	Bijna iedereen doet dat.
+9709522	Laat je dominantie gelden.
+9724368	Ze is verbannen.
+9727663	Ik zal het morgen proberen.
+9728488	Ik neem alles.
+9728522	Luister naar de professor!
+9735338	Moslims zijn normale mensen.
+9735372	Je was goed voor ons geweest.
+9736341	Ben je bereid om dit te doen?
+9738676	Tom heeft een monobrauw.
+9738900	Wie zingt er nu met Tom?
+9749077	Ik interesseer me niet voor zijn privé-leven.
+9752351	Weet je eigenlijk wel hoe je een wegenkaart leest? Geef dat aan mij.
+9752368	Ik kom er niet van af.
+9752376	Vergeet je bronnen niet aan te geven.
+9752469	Hoe zou jij het zeggen?
+9752798	We weten allemaal dat je naar de bioscoop gaat om "Twilight" te zien vanwege het fantastische script en niet vanwege de acteurs.
+9754995	Tom verwacht je, toch?
+9756113	Hij begrijpt het.
+9756159	Wat een zwakkeling!
+9756438	Geef hem door.
+9776411	Jullie hebben ons leven gered.
+9779837	Tijdens de Tweede Wereldoorlog zijn veel mensen gedood.
+9806694	Ik wil graag een auto huren voor drie dagen.
+9816857	Ik heb ze allebei nodig.
+9835596	Ik dacht dat jullie wilden dat ik jullie hielp.
+9851073	Jullie zaten in de taxi, nietwaar?
+9870173	Draagt u contactlenzen?
+9919561	Wat voor alcohol drinkt u meestal?
+9919633	Wanneer was je laatste gehoortest?
+9928813	We hebben besloten om Australië te verlaten.
+9937553	Hebben jullie hem gewaarschuwd?
+9937573	Mijn vriendin wil haar haar roze verven.
+9939040	Groothertog is een Europese erfelijke titel.
+9939571	Moet u dat echt doen?
+9941273	We weten niets over Istanboel.
+9944218	Marilyn Monroes succes maakte haar niet gelukkig.
+9952724	Dat zullen we doen.
+9964762	Alleen ik kan je redden.
+9979344	Niemand zei dat het makkelijk zou zijn.
+10004066	Sindsdien heb ik Tom niet gezien.
+10012368	Is dat correct Engels?
+10015348	Ik wil je hartelijk danken voor je bijzondere hulp.
+10018688	Heeft u een landkaart?
+10018950	Laten we met hem gaan praten.
+10021575	Tom kocht een bontjas voor zijn vrouw.
+10024329	Er waren daar acht kiezels.
+10028122	Maar zijn glimlach verloor hij niet, zelfs niet in die verontrustende situatie.
+10039170	Mijn neven wonen aan het strand.
+10040608	Als ik had geweten dat je zou komen, zou ik gewacht hebben.
+10041360	Ik ben jaloers op de kinderen van morgen. Ik was zelf een bevoorrechte jongen, ik kon naar goede scholen en universiteiten gaan; maar kinderen die over 20 jaar opgroeien zullen veel betere onderwijsmogelijkheden hebben dan ik ooit heb gehad.
+10041829	Ik zag haar huis.
+10044064	Je bent perfect!
+10057803	De show wisselt sketches en liedjes af.
+10060640	Maria zal het niet inspuiten.
+10061951	Maria chanteert Tom.
+10096150	Tom was thuis.
+10096174	Tom was succesvol.
+10110980	Hoe is het met Antonius?
+10132599	Tom zond Maria naar huis.
+10134861	Waar je ook maar wilt.
+10168646	Zul je ons helpen?
+10184893	Dit artikel vermeld geen bronnen.
+10204896	Ze ontmoeten de leraar.
+10238857	We zouden het moeten verlaten.
+10303583	Ze zegt ja.
+10320453	Wie heeft dit beschadigd?
+10321344	Tom heeft vanmiddag een afspraak bij de dokter.
+10325889	Tom hoefde niet zo veel te betalen.
+10325902	Aluminium geleidt elektriciteit niet zo goed als koper.
+10336342	Vraag het me nog een keer.
+10346126	''Waarom is dat zo?'' – ''Dat vraag ik me ook af.''
+10364706	Ik heb zulke dingen nooit te koop gezien.
+10480801	Hij spoorde me aan om door te gaan.
+10482781	Jean rijdt roekeloos.
+10622221	Ze zijn trots op hun dochter.
+10622562	Het verhaal was ongelooflijk.
+10633171	Ik heb hier nu geen tijd voor.
+10634415	Dat lijkt me onwaarschijnlijk.
+10634453	Ik dacht dat het nep was.
+10634696	We aten samen lunch.
+10634738	Ik wou dat ik je niet had gekust.
+10635447	Tom woont niet zo ver weg.
+10635504	Ik denk niet dat we iets verkeerd hebben gedaan.
+10635529	Ik voetbal elke dag.
+10635815	Raad eens waar ik dit heb gevonden.
+10635867	Ik gleed uit en viel van de trap.
+10637100	Tom loopt achter mij.
+10637941	Tom heeft overgewicht, maar Mary niet.
+10642693	Wat is er met je dochter gebeurt?
+10643656	We hebben deze puppy's nog geen namen gegeven.
+10646736	Hoelang ben je van plan in Boston te blijven?
+10651040	Tom is de enige die huilde.
+10652011	Niemand weet wie er verantwoordelijk is.
+10654991	Tom zingt in het koor.
+10655277	Ik liet het dienblad vallen.
+10660738	Tom ontspande zijn greep.
+10662274	Ze heeft al gegeten.
+10662581	Zoals verwacht, was dit nogal vermoeiend.
+10664150	Het is zeker warm vandaag.
+10666463	Ik dacht dat je geen geld had.
+10672508	Ik zie je bij de lunch.
+10677126	Tom weet niet wat de reden is, maar hij weet wel dat er een reden is.
+10731487	Tom was niet voor niets boos.
+10734963	Hij heeft niet veel verbeeldingskracht, hè?
+10735241	Ik ben van plan om mijn roman op het internet te zetten.
+10736613	Ik dacht dat je vroeger les Frans gaf.
+10736974	Tom leest de hele dag de Bijbel.
+10737675	Ik vind het concept van deze website erg goed.
+10740753	Er zijn geen bloemen hier.
+10745511	Ik wil je leren kennen.
+10747522	Ik heb het bewijs hier.
+10747541	Hij had niets gezegd tijdens het debat.
+10749083	Ik ben Tom in Boston gaan opzoeken.
+10756729	Wie zwemt daar in het zwembad?
+10756810	Ik kocht die van haar.
+10773171	We moeten voorzichtig zijn.
+10784059	Ik zei dat ze het konden vergeten.
+10787566	Hij is in slaap gevallen terwijl hij aan haar dacht.
+10787567	Hij sukkelde in slaap terwijl hij aan haar dacht.
+10812314	Ik betwijfel of ik dat zou kunnen.
+10824457	Tom is waarschijnlijk nog steeds ellendig.
+10844259	Echter, er zijn uitzonderingen.
+10849479	U gaf terug.
+10862812	Layla's moeder was niet in de buurt.
+10891238	Je helpt de armen niet.
+11020300	Ik wil gaan bowlen.
+11028526	Hij onderhoudt zijn auto goed.
+11028681	Hij werd beschuldigd van moord en tot vijftien jaar gevangenisstraf veroordeeld.
+11041501	Tom gooide de documenten op Mary's bureau.
+11044544	Wat is je doel?
+11051146	Tom kent veel talen.
+11064372	Dat is zo eenvoudig: een kind kan het doen.
+11074241	Ik ben blij dat Tom en Mary thuis zijn.
+11135735	Andrew, de broer van Simon en Peter, was één van de twee, die hoorden wat Jan had gezegd.
+11137247	Als ik naar beneden kom, geef ik je een kopstoot!
+11144184	Zie je een zwart paard?
+11181025	Zullen we gaan eten?
+11202747	Mary beseft niet hoeveel geluk ze heeft.
+11213339	Je moet meteen een arts bellen.
+11219376	Tom voegde 200.000 zinnen toe aan het corpus van Tatoeba.
+11223332	De Engelse zin is veranderd. Verzeker je ervan dat deze vertaling nog overeen komt.
+11224531	Het kan onmogelijk zijn om een ​​helemaal foutloos corpus te krijgen vanwege de aard van dit soort samenwerking. Als we leden echter aanmoedigen om zinnen in hun eigen taal bij te dragen in plaats van te experimenteren met de talen die ze leren, kunnen we fouten mogelijk verminderen.
+11225058	Tatoeba: Waar niets een hartstochtelijke nacht van het maken van zinnen verpest als een slecht geplaatste komma of, slechter nog, een onzorgvuldige typfout.
+11263875	Ik controleer zinnen meestal niet meer actief, aangezien de persoonlijke aanvallen van een paar kwaadwillende mensen mij opbrandden voor de taak. Gebrek aan moderatie leidt tot zinnen van lagere kwaliteit.
+11285750	Hij hield van reizen.
+11285824	Ze zijn jong.
+11304100	Ik wil dat corruptie verdwijnt, maar ik wil niet stoppen met mijn zwager te bellen als ik een proces wil versnellen.
+11305373	Waarom blijft Tom dat doen?
+11341553	Leven we allemaal in een gele onderzeeër?
+11341764	Serveer nu de koffie, alsjeblieft.
+11344244	Je doet sarcastisch.
+11379501	Tom lijkt niet te begrijpen waarom hij dat moest doen.
+11397286	Goedemorgen, meneer pastoor.
+11451190	Geduldige mensen winnen altijd.
+11476871	Ik heb een nieuw paar handschoenen gekocht.
+11480229	Na gedaan werk is 't goed rusten.
+11508082	Tom zei dat hij ons wilde zien voordat we vertrokken.
+11510498	Doe de deur niet meer open.
+11512307	Zal de zangeres eraan denken haar gitaar mee te nemen?
+11514786	Hij is overal.
+11515955	Volgens mij heb ik geen regels overtreden.
+11516063	U krijgt instructies.
+11521851	Daar maak ik me geen zorgen meer over.
+11524631	Ze heeft zich daarbij verwond.
+11526712	Heeft iemand anders Tom geknuffeld?
+11527635	We zijn doodsbang.
+11555949	Tom zou het doen.
+11555968	Je hoeft je geen zorgen te maken.
+11556113	Geef dit boek alsjeblieft aan Tom.
+11557027	Ik heb een scheerbeurt nodig.
+11559007	Weet u iets over hem?
+11559314	We waren niet in staat hem te redden.
+11562046	Na mijn operatie kreeg ik van het ziekenhuispersoneel een kit om de hechtingen te verwijderen samen met instructies over hoe ik die thuis kon gebruiken.
+11577698	De jongere zus is sentimenteler dan de andere.
+11588874	Heeft Tom nog iets anders gegeten?
+11603973	Veel van mijn jeugdvrienden kwamen ook.
+11604083	De operatie is nogal ingewikkeld.
+11747660	Ik snap het niet helemaal.
+11758688	Scott ruilde een horloge in voor een boek, en vervolgens ruilde hij het boek in voor geld.
+11760853	De wijn smaakte slecht, dus goot ik hem weg.
+11760855	Ik schonk melk in een glas en dronk het.
+11762287	Dat is niet wat ik bedoelde te zeggen.
+11762369	Neem alsjeblieft deze sleutel in handen.
+11778642	"Wat ben je aan het voorbereiden?" "Pompoensoep."
+11799731	"Iemand heeft een scheet gelaten." "Ik was het niet!"
+11810410	Je wenkbrauwen zijn prachtig.
+11823280	Deze rechercheur beschermde de ooggetuige.
+11898615	Ik denk niet dat Tom eerlijk was.
+11902894	Ik kan glas eten, het doet me geen pijn.
+11903296	Dagelijkse lichaamsbeweging is essentieel voor een goede gezondheid.
+11905265	Wil je een huis kopen in Duitsland?
+11905981	Iedereen streeft naar geluk.
+11907778	Om in deze richting te gaan moet je de trein door het bos nemen.
+11930216	Seksualiteit is een privézaak.
+11944827	Denk je dat er een kans is?
+12047056	Is dat waarom je gestopt bent?
+12093469	Tom is misschien thuis dit weekend.
+12093472	India heeft een lange, rijke geschiedenis.
+12118711	We staan nu voor het museum.
+12122231	Tom moest Mary zien.
+12127120	Koeien en geiten zijn herkauwers.
+12128369	Weet jij hoeveel dit voor mij betekent?
+12133833	Tom trok zijn skischoenen uit.
+12138610	Ze schieten op ons!
+12146714	Tom zei tegen me dat hij dacht dat Mary nieuw was.
+12154305	Ik hou van hagedissen.
+12159362	Ze is geboren in Armenië.
+12265371	De eetkamer in het huis van Tom is heel groot.
+12300876	Hier heeft hij zichzelf omgebracht.
+12307716	Hij komt lopend of met de fiets.
+12314361	Tom komt waarschijnlijk niet terug morgen.
+12314950	Ik heb geen oog dicht gedaan.
+12326192	Kunnen we dat verzetten?
+12326312	Ik heb het nu druk, Tom.
+12329155	Muziek heeft de kracht om zelfs beesten te kalmeren.
+12329987	Dit is erg leuk om te doen.
+12332896	Dit is het neusje van de zalm.
+12333348	Volgende week wordt het warmer.
+12333351	Ik ben er zeker van dat alles uiteindelijk goed komt.
+12334394	Tom heeft het contract nooit getekend.
+12336945	Tom vierde zijn verjaardag met Mary.
+12337175	Jij beslist of we gaan.
+12339499	We hebben nog steeds onze twijfels.
+12339560	Laten we hopen dat dit niet nog een keer gebeurt.
+12343498	Tom zal het de volgende keer nog beter doen.
+12344234	Maria is een Roemeense staatsburger.
+12349212	Ben je bereid om dat te doen?
+12349278	Tom zei dat Mary niet zou zwemmen.
+12349315	Tom droeg enkele dagen een pleister op zijn oog.
+12349343	Ik probeerde te vissen.
+12349353	Ik heb net een mooie wandeling gemaakt.
+12351265	Ik dacht dat je thee zou zetten.
+12376792	Begin met het uitrollen van het deeg.
+12384931	Wist je niet dat Tom een sportwagen had?
+12384935	Ik had nooit tegen Tom moeten liegen.
+12455246	We willen graag afzonderlijke facturen.
+12523527	Zijn er kleermakers in je familie?
+12740279	Ze duwde de onwelkome gedachte weg.
+12760010	Tom wacht voor de school.
+12761029	Is jouw kat gecastreerd?
+12780499	Tom moet driehonderd dollar betalen.
+12802449	Rustig maar, we hebben de tijd.
+12824073	Heeft u een tafel met zicht op de oceaan?
+12852582	Zeker, ik kan echt niet meer zonder.
+12890305	Ik ben het die verantwoordelijk is voor het ongeluk.
+12900332	Ik wou gewoon mijn oud leventje terug.
+12950462	Hij kent Frans en natuurlijk ook Engels.
+12959801	De natuurkundige was zich bewust van het potentiële gevaar van een kernfusie.
+12960472	Ik moet iemand laten komen, om mijn televisie te repareren.
+12967089	Waar is de kapel?
+12967608	Hij is aan het peinzen.
+12976714	Wat willen jullie in de toekomst doen?
+12976772	Ik ben nog nooit in het huis van mijn oom geweest.
+12979440	Hij houdt van zijn nichtje als van zijn eigen dochter.
+12979941	Vrede zij met hem.
+12982272	Ik zal beslissen.
+12992631	Hij heeft nooit liefde gekend.
+12997699	De vogel vloog weg.
+12997790	Bent u gewapend?
+12997843	Van wie is deze villa?
+12997855	Neem een wilde gok.
+12997875	Alle dorpelingen kennen hem.
+12997946	De bruid lachte plotseling.
+13002429	In de laatste minuut scoorde hij het tweede doelpunt.
+13008095	Lucía zag er op haar eerste echo uit als een pinda.
+13021560	Er zijn dingen veranderd.
+13028588	De polyglotte dichter heeft soms zin om alle gedichten die hij heeft geschreven te vertalen.
+13053498	„Och, schat,” zei ze, „ga zitten, ontspan je en sluit je ogen.”
+13091522	Stokpaardjes zijn duurder dan Arabische hengsten.
+13203217	Ga niet met de huidige trends mee.
+13204188	Zouden we op het terras kunnen zitten?
+13204390	Het maakt me allemaal niet zo veel uit. Ik eet alles.
+13220272	Ik wil gewoon een paar uur slapen.
+13253218	Zal ik hen hierbij betrekken?
+13284144	De beste vergrootglazen voor de vreugde van deze wereld, zijn de glazen waaruit je drinkt.
+13319448	Dat heb ik voor een appel en een ei gekregen.
+13349711	Epstein heeft geen zelfmoord gepleegd.
+13359375	Tom begrijpt geen moderne technologie.
+13370751	Ik wou van schaamte in de grond kruipen.
+13408502	Hoe kan ik mijn vakantiedagen berekenen? Ik weet niet hoeveel dagen ik krijg.
+13410389	In de politiek lijkt het nieuwe bijna altijd op oud brood.
+13412341	De salamander verstopte zich in het mos.
+13413194	Deze ronduit respectloze berichten werden door een zoon aan zijn vader gestuurd.
+13490340	Hoe vaak dekt Tom de tafel?
+13513276	Wie is die man die piano speelt?
+13525645	Download het elke ochtend vanaf 4 uur 's ochtends en geniet offline wanneer u onderweg bent.
+13526532	Maria vertelde me dat ze niet onder de indruk is.
+13537389	Ze was in goede gezondheid.
+13549921	Volksgebruik geldt als wet.
+13553380	Als ik zeg „Ren!”, ren dan. Ren!
+13580364	Het cakeje was oud en beschimmeld.
+13604944	Het Duits kent vier naamvallen.
+13608464	Daar zul je spijt van krijgen.
+13620124	Tom vroeg me waarom ik daar was.
+13624828	De jouwe is hier, maar waar is de mijne?
+13645835	Je krijgt je geld nog.
+13650354	Een kat is ook prima.
+13654350	We zijn nu aan het werk.
+13654362	Tom weet heel goed dat ik het niet leuk vind.
+13658781	Ze hebben de auto gerepareerd.
+13659911	Jullie haar wordt grijs.
+13667101	Heb je haar uitnodiging geaccepteerd?
+13667222	Ik ben een proefsom uit het wiskundeboek aan het oplossen.
+13677308	Alle wereldlijke wezens zijn op drie dingen terug te voeren: eer, rijkdom, genot.
+13709637	In heel wat West-Europese landen kent men de muskusrat, die op een grote rat lijkt.
+13723100	Ze wonen in mijn huis.
+13724658	„Doe ons een plezier, wil je?” – „En wat zou dat zijn?”
+13726890	Ze zijn niet zo stom als ze eruitzien.
+13738016	Tom is door Mary vervangen.
+13743701	Over die toets die hij maakte; hij is blijkbaar gewoon geslaagd.
+13760466	Ik word heel vroeg wakker.
+13783343	Ik wil er graag nog een.
+13783345	Mijn kat speelt heel graag.
+13787846	Zijn huid rook naar suikerspin.
+13808954	Het dichtstbijzijnde café vanaf de school is ’s middags gesloten.
+13812013	Bestuurders zouden de verkeersregels moeten kennen.
+13816015	Wat ga je echt doen?
+13816041	"Ben je klaar om te gaan?" "Nog niet, geef me een minuutje."
+13929892	Varkensvlees is verboden in de islam.
+13969645	De vis is vers.
+13971890	Het spijt mij echt dat ik je deze morgen niet heb geloofd.
+13975591	Duolingo is nu alleen nog nuttig voor de eigenaren.
+13976504	Geen miljardair is rijk geworden door te werken.
+14009350	Dat zal ik waarschijnlijk nooit hoeven te doen.
+14022898	De rechercheur bekeek het autopsierapport grondiger.
+14035928	Dat jij op een zaterdag aan het leren bent!
+14046775	Sami heeft een benefietconcert georganiseerd.
+14093227	Er zijn geen leeuwen in die dierentuin.

@@ -55,9 +55,12 @@ describe("language registry (languages/<slug>/)", () => {
       const letters = [...l.accents!].filter((c) => /\p{L}/u.test(c));
       for (const c of letters) {
         expect(/[a-z]/i.test(c), `${c} is on every keyboard`).toBe(false);
-        expect(letters, `${c} in the other case`).toContain(
-          c === c.toLowerCase() ? c.toUpperCase() : c.toLowerCase(),
-        );
+        // By the language's rules: Turkish ı and İ pair with the plain I and i.
+        const lower = c.toLocaleLowerCase(l.lang);
+        const other = c === lower ? c.toLocaleUpperCase(l.lang) : lower;
+        // ß has no single capital in use (SS), and is fine alone.
+        if (!/^[a-z]+$/i.test(other) && [...other].length === 1)
+          expect(letters, `${c} in the other case`).toContain(other);
       }
       for (const c of l.accents!) {
         const typeable = l.layouts.some((id) =>

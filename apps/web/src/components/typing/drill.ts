@@ -1,4 +1,4 @@
-import type { Keystroke } from "@okb/engine";
+import type { DeadStroke, Keystroke } from "@okb/engine";
 
 /**
  * Typing drill state: a list of target words typed one at a time, Space moving to the next.
@@ -167,15 +167,23 @@ export function stats(d: Drill, now: number): DrillStats {
 export function nextKeystroke(
   d: Drill,
   keys: ReadonlyMap<string, Keystroke>,
+  dead: ReadonlyMap<string, DeadStroke> = new Map(),
+  /** The dead key waiting for its base key, if any (TypingMachine.pending). */
+  pending: string | null = null,
 ): Keystroke | "backspace" | "space" | null {
   if (isFinished(d)) return null;
   if (!onTrack(d)) return "backspace";
+  const viaDead = (ch: string) => {
+    const s = dead.get(ch);
+    return s ? (pending === s.trigger ? s.then : s.first) : null;
+  };
   const typed = nfd(d.typed).length;
   let offset = 0;
   for (const ch of currentWord(d)) {
     const parts = nfd(ch);
     if (offset + parts.length > typed) {
       if (offset === typed && keys.has(ch)) return keys.get(ch)!;
+      if (offset === typed && dead.has(ch)) return viaDead(ch);
       return keys.get(parts[typed - offset]!) ?? null;
     }
     offset += parts.length;
@@ -183,9 +191,14 @@ export function nextKeystroke(
   return "space";
 }
 
-/** True when every character of the text can be typed on the layout (directly or as parts). */
-export function typeable(text: string, keys: ReadonlyMap<string, Keystroke>): boolean {
+/** True when every character of the text can be typed on the layout (directly, by a dead key or as parts). */
+export function typeable(
+  text: string,
+  keys: ReadonlyMap<string, Keystroke>,
+  dead: ReadonlyMap<string, DeadStroke> = new Map(),
+): boolean {
   return [...text.normalize("NFC")].every(
-    (ch) => /\s/u.test(ch) || keys.has(ch) || [...nfd(ch)].every((p) => keys.has(p)),
+    (ch) =>
+      /\s/u.test(ch) || keys.has(ch) || dead.has(ch) || [...nfd(ch)].every((p) => keys.has(p)),
   );
 }

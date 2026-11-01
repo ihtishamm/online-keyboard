@@ -1,0 +1,107 @@
+---
+import type { Language } from "@okb/layouts";
+import TypingPage from "../components/typing/TypingPage.astro";
+import TypingTest from "../components/typing/TypingTest";
+import { TYPING_COPY } from "../content/typing/latin-copy";
+import { TYPING_LANGUAGES, practiceText, typingLayouts } from "../content/typing/latin";
+import { SITE } from "../config/site";
+
+/** Typing tests for the Latin-script languages (/urdu-typing-test has its own page). */
+export function getStaticPaths() {
+  return TYPING_LANGUAGES.map((language) => ({
+    params: { lang: language.slug },
+    props: { language },
+  }));
+}
+
+const { language: l } = Astro.props as { language: Language };
+const copy = TYPING_COPY[l.code]!;
+const name = l.name.en;
+const text = await practiceText(l);
+const layouts = typingLayouts(l);
+const layoutNames = layouts.map((x) => x.name.en);
+const listed =
+  layoutNames.length > 1
+    ? `${layoutNames.slice(0, -1).join(", ")} or ${layoutNames.at(-1)}`
+    : layoutNames[0]!;
+const easy = layouts.find((x) => x.id.endsWith("-easy"))?.name.en;
+
+const steps = [
+  `Pick a layout (${listed}), a length (30 seconds, 1 or 2 minutes) and the text: common words or sentences.`,
+  "Start typing the highlighted word. The clock starts with your first key. Press Space after each word.",
+  "Correct words turn green and wrong ones red. When the time is up you see your speed in words per minute and your accuracy.",
+  "Download or share your result as an image, then try again to beat your best.",
+];
+
+const faqs = [
+  {
+    q: `How is ${name} typing speed (WPM) worked out?`,
+    a: "Like most typing tests: every 5 characters you type correctly, spaces included, count as one word. Your speed is those words divided by the minutes taken. Words with a mistake in them do not count. Raw speed counts every character you typed, right or wrong.",
+  },
+  {
+    q: "What is a good typing speed?",
+    a: "Around 30 to 40 words per minute is a comfortable everyday speed, and 60 or more is fast. Accented letters take an extra key on some layouts, so expect a few words per minute less than in English at first.",
+  },
+  {
+    q: `Do I need a ${name} keyboard?`,
+    a: easy
+      ? `No. Choose ${easy} and your English keyboard types every ${name} letter: the accent key first, then the letter. If your computer or phone already types ${name}, tick “My device already types ${name}”.`
+      : `No. Choose a layout here and your keyboard types the ${name} letters. If your computer or phone already types ${name}, tick “My device already types ${name}”.`,
+  },
+  {
+    q: `Which ${name} letters slow people down?`,
+    a: copy.tip,
+  },
+  {
+    q: "Can I take the test on my phone?",
+    a: `Yes. On a phone the on-screen ${name} keyboard appears below the text, or tick “My device already types ${name}” to use your phone's own keyboard.`,
+  },
+  {
+    q: "Where are my results saved?",
+    a: "Only on your device. Your best speed for each layout and test length is kept in your browser; nothing is uploaded.",
+  },
+];
+---
+
+<TypingPage
+  title={`${name} Typing Test: Check Your ${name} Typing Speed (WPM) Online | ${SITE.name}`}
+  description={`Free ${name} typing speed test. Type common words or real sentences on the ${listed} keyboard, see your WPM and accuracy, and share your result.`}
+  heading={`${name} Typing Test`}
+  headingNative={copy.test}
+  intro={`How fast can you type ${name}, accents and all? Take a 30-second, 1-minute or 2-minute test with common words or everyday sentences, using your own keyboard or the one on screen.`}
+  appName={`${name} Typing Test`}
+  howToName={`How to take the ${name} typing test`}
+  steps={steps}
+  about={{
+    heading: "Practise to get faster",
+    paragraphs: [
+      "Typing speed comes from knowing where every letter is without looking. If you are still searching for keys, the typing tutor teaches the keyboard one row at a time, accents last.",
+      "Short daily practice beats long sessions: a few 1-minute tests a day will raise your speed within weeks.",
+      `The words are the ${text.words.length} most common in the ${name} word list. The sentences are from Tatoeba, credited below.`,
+    ],
+  }}
+  faqs={faqs}
+  related={[
+    { href: `/${l.slug}-typing-tutor`, label: `${name} typing tutor: learn the keyboard` },
+    { href: `/${l.slug}`, label: `${name} keyboard: type and save your text` },
+  ]}
+  slug={l.slug}
+  lang={l.lang}
+  dir={l.dir}
+  font={l.fonts[0]}
+>
+  <TypingTest
+    client:idle={{ timeout: 500 }}
+    slug={l.slug}
+    lang={l.lang}
+    languageName={name}
+    nativeName={l.name.native}
+    nativeTitle={copy.test}
+    title={`${name} typing test`}
+    layouts={layouts}
+    words={text.words}
+    passages={text.passages}
+    dir={l.dir}
+    font={l.fonts[0]}
+  />
+</TypingPage>

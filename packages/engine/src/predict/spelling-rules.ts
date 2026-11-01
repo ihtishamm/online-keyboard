@@ -178,16 +178,31 @@ const FR_PERSON = [["ais", "ait"], ["ions", "aient"], ["iez", "aient"], ["ons", 
 // prettier-ignore
 const IT_PERSON = [["o", "a"], ["i", "a"], ["o", "e"], ["i", "e"], ["iamo", "ano"], ["ate", "ano"], ["ete", "ono"], ["ite", "ono"], ["avo", "ava"], ["avi", "ava"], ["evo", "eva"], ["evi", "eva"], ["ai", "ò"], ["asti", "ò"], ["ei", "é"], ["esti", "é"], ["ii", "ì"], ["isti", "ì"], ["erò", "erà"], ["erai", "erà"], ["irò", "irà"], ["rei", "rebbe"], ["resti", "rebbe"]] as const;
 // prettier-ignore
+const PT_AR = ["o", "as", "a", "amos", "ais", "am", "ava", "avas", "ávamos", "avam", "ei", "aste", "ou", "aram", "ado", "ada", "ados", "adas", "ando", "ará", "arão", "aria", "ariam", "asse", "assem", "e", "em"];
+// prettier-ignore
+const PT_ER_IR = ["o", "es", "e", "emos", "imos", "em", "ia", "ias", "íamos", "iam", "i", "este", "iste", "eu", "iu", "eram", "iram", "ido", "ida", "idos", "idas", "endo", "indo", "erá", "irá", "erão", "irão", "eria", "iria", "esse", "isse", "a", "am"];
+/** Portuguese "I" and "you" forms to the third person, and diminutives (casinha, livrinho). */
+// prettier-ignore
+const PT_PERSON = [["ei", "ou"], ["aste", "ou"], ["i", "eu"], ["este", "eu"], ["iste", "iu"], ["amos", "am"], ["emos", "em"], ["imos", "em"], ["o", "a"], ["o", "e"], ["as", "a"], ["es", "e"], ["ava", "ava"], ["avas", "ava"], ["ia", "ia"], ["ias", "ia"], ["arei", "ará"], ["erei", "erá"], ["irei", "irá"], ["inho", "o"], ["inha", "a"], ["inhos", "os"], ["inhas", "as"], ["zinho", ""], ["zinha", ""]] as const;
+/**
+ * Romanian: the definite article written onto the noun (omul, casa, oamenii, casele, omului,
+ * casei, oamenilor), and regular verb forms back to the third person.
+ */
+// prettier-ignore
+const RO_ARTICLES = [["ul", ""], ["ului", ""], ["le", ""], ["lui", ""], ["a", "ă"], ["ei", "ă"], ["ii", "i"], ["ilor", "i"], ["le", "e"], ["lor", ""], ["elor", "e"], ["urile", "uri"], ["urilor", "uri"], ["ua", "ă"]] as const;
+// prettier-ignore
+const RO_VERBS = [["ez", "ează"], ["ezi", "ează"], ["ăm", "ă"], ["ați", "ă"], ["esc", "ește"], ["ești", "ește"], ["im", "ește"], ["iți", "ește"], ["em", "e"], ["eți", "e"], ["am", "a"], ["ai", "a"], ["ați", "a"], ["au", "a"], ["at", "a"], ["ată", "at"], ["ați", "at"], ["ate", "at"], ["ită", "it"], ["iți", "it"], ["ite", "it"], ["ând", "a"], ["ind", "i"]] as const;
+// prettier-ignore
 const INFLECTIONS: Readonly<Record<string, readonly (readonly [string, string])[]>> = {
   es: [["s", ""], ["es", ""], ["a", "o"], ["as", "o"], ...verbs(["ar"], ES_AR), ...verbs(["er", "ir"], ES_ER_IR), ...ES_PERSON, ...ES_IT_ADVERBS, ...ES_DIMINUTIVES, ...CLITICS],
   fr: [["s", ""], ["x", ""], ["e", ""], ["es", ""], ["nne", "n"], ["nnes", "n"], ["aux", "al"], ...verbs(["er"], FR_ER), ...verbs(["ir"], FR_IR), ["ient", "ier"], ["èrent", "er"], ["urent", "oir"], ["irent", "ir"], ...FR_PERSON, ...FR_ADVERBS],
   it: [["i", "o"], ["e", "a"], ["i", "e"], ["a", "o"], ["he", "a"], ["hi", "o"], ...verbs(["are"], IT_ARE), ...verbs(["ere", "ire"], IT_ERE_IRE), ...IT_PERSON, ...ES_IT_ADVERBS, ...CLITICS],
   de: [["e", ""], ["en", ""], ["n", ""], ["s", ""], ["er", ""], ["es", ""], ["nen", ""]],
-  pt: [["s", ""], ["es", ""], ["a", "o"], ["as", "o"], ["ões", "ão"], ["ns", "m"], ["is", "l"]],
+  pt: [["s", ""], ["es", ""], ["a", "o"], ["as", "o"], ["ões", "ão"], ["ns", "m"], ["is", "l"], ...verbs(["ar"], PT_AR), ...verbs(["er", "ir"], PT_ER_IR), ...PT_PERSON, ...ES_IT_ADVERBS],
   tr: [["ler", ""], ["lar", ""]],
   pl: [["y", ""], ["i", ""], ["a", ""], ["owie", ""], ["ów", ""]],
   nl: [["en", ""], ["s", ""], ["e", ""]],
-  ro: [["i", ""], ["e", "ă"], ["uri", ""], ["le", "l"]],
+  ro: [["i", ""], ["e", "ă"], ["uri", ""], ["le", "l"], ...RO_ARTICLES, ...RO_VERBS],
   cs: [["y", ""], ["i", ""], ["a", ""], ["é", "ý"], ["á", "ý"]],
   hu: [["k", ""], ["ok", ""], ["ek", ""], ["ak", ""]],
   sv: [["er", ""], ["ar", ""], ["or", "a"], ["en", ""], ["na", ""], ["et", ""]],

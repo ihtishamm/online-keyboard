@@ -28,9 +28,15 @@ const TOGGLE =
 export default function AccentBar(props: AccentBarProps) {
   const chars = [...props.accents];
   const lower = chars.filter((c) => !/\p{L}/u.test(c) || c === c.toLowerCase());
-  const shown = props.upper
-    ? lower.map((c) => (/\p{L}/u.test(c) ? c.toLocaleUpperCase(props.lang) : c))
-    : lower;
+  // One letter for one: ß in capitals is the capital ẞ here, not the two letters SS.
+  const upperOf = (c: string) => {
+    if (!/\p{L}/u.test(c)) return c;
+    const up = c.toLocaleUpperCase(props.lang);
+    return [...up].length === 1 ? up : c === "ß" ? "ẞ" : c;
+  };
+  // Capitals whose small letter is on every keyboard (Turkish İ, from i) join the capitals.
+  const extra = chars.filter((c) => !lower.includes(c) && !lower.map(upperOf).includes(c));
+  const shown = props.upper ? [...new Set([...lower.map(upperOf), ...extra])] : lower;
   const toggle = (on: boolean) =>
     `${TOGGLE} ${on ? "border-accent bg-accent-soft text-text" : "border-border text-muted"}`;
 

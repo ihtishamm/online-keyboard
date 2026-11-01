@@ -12,6 +12,9 @@
  * learn from Tatoeba, but never from the sentences they are tested on (nor their repeats).
  * Tatoeba calls nearly everyone in its examples Tom or Mary; the training text leaves those
  * two names out (a word break in their place), or they would rank among the commonest words.
+ * Inflected forms go too (Toma, Tomovi, Tomnak, Toms, Maria, Marii, Tom'un): capitalised
+ * words of Tom or Mary/Mari and up to four letters, unless the file writes them in lower
+ * case at least a quarter as often (Spanish toma, "take", and tomate stay).
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { parseArgs } from "node:util";
@@ -56,9 +59,25 @@ console.log(`${rules.code}: ${picked.length} of ${rows.length} sentences`);
 
 if (args.train) {
   const tested = new Set(picked.map((r) => r.text.toLowerCase()));
+  // How often each word is written in lower case, and how often capitalised.
+  const fold = rules.fold ?? ((w: string) => w.toLowerCase());
+  const lower = new Map<string, number>();
+  const upper = new Map<string, number>();
+  for (const r of all)
+    for (const w of r.text.match(/[\p{L}\p{M}]+/gu) ?? []) {
+      const counts = /^\p{Lu}/u.test(w) ? upper : lower;
+      counts.set(fold(w), (counts.get(fold(w)) ?? 0) + 1);
+    }
+  const STAND_IN =
+    /(?<![\p{L}\p{M}])(?:Tom|Mary|Mari)[\p{L}\p{M}]{0,4}(?![\p{L}\p{M}])(?:['’]\p{Ll}+)?/gu;
+  // A common word in its own right is written in lower case at least a quarter as often.
+  const standIn = (w: string) => {
+    const key = fold(w.replace(/['’].*$/u, ""));
+    return (lower.get(key) ?? 0) * 4 < (upper.get(key) ?? 0);
+  };
   const train = all
     .filter((r) => !tested.has(r.text.toLowerCase()))
-    .map((r) => r.text.replace(/\b(Tom|Mary)\b/g, "|"));
+    .map((r) => r.text.replace(STAND_IN, (w) => (standIn(w) ? "|" : w)));
   writeFileSync(args.train, train.join("\n") + "\n");
   console.log(`${rules.code}: ${train.length} sentences for the word list in ${args.train}`);
 }

@@ -1,0 +1,27 @@
+{
+  "slug": "dutch",
+  "code": "nl",
+  "order": 270,
+  "lang": "nl",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Dutch",
+    "native": "Nederlands"
+  },
+  "aliases": ["Flemish"],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["nl-easy", "nl-standard"],
+  "accents": "áéëèíïóöúüÁÉËÈÍÏÓÖÚÜ",
+  "sample": "Wij gaan morgen naar het café; één koffie, graag.",
+  "voice": ["nl-NL", "nl-BE"],
+  "wordList": true,
+  "translate": {
+    "google": "nl",
+    "bing": "nl",
+    "deepl": "nl"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot. Most people in the Netherlands type on US-International, the Easy accents layout."
+}

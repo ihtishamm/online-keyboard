@@ -13,6 +13,7 @@ import { LANGUAGES, getLayout, type Language, type Tier } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
 import { allSheets } from "./components/cheatsheet/sheets";
 import { accentAccuracyFor, accuracyFor } from "./content/accuracy";
+import { TYPING_LANGUAGES } from "./content/typing/latin";
 
 const WEB = process.cwd();
 const ROOT = join(WEB, "../..");
@@ -31,7 +32,9 @@ function checks(l: Language): { C: Check[]; B: Check[]; A: Check[] } {
   const copy = readFileSync(join(WEB, `src/content/languages/${l.slug}.md`), "utf8");
   const faqs = copy.match(/^ {2}- q:/gm)?.length ?? 0;
   const sheets = new Set(allSheets().map((s) => s.layoutId));
-  const page = (name: string) => existsSync(join(WEB, `src/pages/${name}.astro`));
+  // A page of its own (Urdu), or the Latin-script routes [lang]-typing-tutor and -test.
+  const typing = TYPING_LANGUAGES.some((x) => x.slug === l.slug);
+  const page = (name: string) => typing || existsSync(join(WEB, `src/pages/${name}.astro`));
   const stats = join(DICTS, `data/${l.code}/stats.json`);
   const words = existsSync(stats)
     ? (JSON.parse(readFileSync(stats, "utf8")) as { wordsKept: number }).wordsKept

@@ -1,0 +1,15 @@
+{
+  "source": "pl.xml.bz2",
+  "pages": 4173,
+  "sentences": 462829,
+  "repeatedSentencesSkipped": 19512,
+  "tokens": 4790175,
+  "distinctWords": 313831,
+  "wordsKept": 100000,
+  "nextWordHeads": 9620,
+  "text": "pl-train.txt",
+  "textSentences": 133872,
+  "textWeight": 2.94,
+  "heldOutPages": 80,
+  "heldOutSentences": 2000
+}

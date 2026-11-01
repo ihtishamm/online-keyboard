@@ -138,6 +138,8 @@ describe("built word lists", () => {
       const typeable = new Set<string>();
       for (const id of language.layouts) {
         for (const out of desktopCharacters(getLayout(id))) for (const c of out) typeable.add(c);
+        // Dead keys too: ^ then a types â on Turkish Q.
+        for (const d of getLayout(id).deadkeys) for (const c of d.out) typeable.add(c);
       }
       typeable.add("\u200C"); // the ZWNJ key exists on every Arabic-script layout we ship
       // Latin pages: the accent bar types the language's letters, in both cases.

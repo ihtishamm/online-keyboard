@@ -314,7 +314,14 @@ const jsonLd = [
       accents={language.accents}
       lang={language.lang}
       languageName={language.name.en}
-      usIntl={getLayout(`${language.code}-easy`)}
+      usIntl={getLayout(
+        // US-International, the same for every language (Polish has none of its own).
+        language.layouts.find((id) => id.endsWith("-easy")) ?? "es-easy",
+      )}
+      national={language.layouts
+        .filter((id) => !id.endsWith("-easy"))
+        .map(getLayout)
+        .find((x) => x.script === "Latn")}
     />
   )}
 

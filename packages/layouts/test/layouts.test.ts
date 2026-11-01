@@ -245,6 +245,15 @@ describe("Latin layouts", () => {
     "fr-belgian": "æœÆÇŒŸ",
     "fr-swiss": "æœÆÇŒŸ",
     "it-standard": "íóúÀÈÉÌÍÒÓÙÚ",
+    // Switzerland writes ss for ß.
+    "de-swiss": "ß",
+    // US-International has no letters with a caron, breve, comma below or double acute, and
+    // no Turkish dotless ı or đ: the accent bar and smart accents type them.
+    "tr-easy": "ğışĞŞİ",
+    "ro-easy": "ășțĂȘȚ",
+    "cs-easy": "čďěňřšťůžČĎĚŇŘŠŤŮŽ",
+    "hu-easy": "őűŐŰ",
+    "hr-easy": "čćđšžČĆĐŠŽ",
   };
 
   it.each(latin.flatMap((l) => l.layouts.map((id) => [id, l.accents!] as const)))(
@@ -272,6 +281,18 @@ describe("Latin layouts", () => {
     ["es-spain", "espa;a", "españa"],
     ["es-spain", "cancion", "cancion"],
     ["it-standard", "citt'", "città"],
+    // QWERTZ: Y and Z swap; ü ö ä sit on the US [ ; ' keys.
+    ["de-germany", "m[nchen", "münchen"],
+    ["de-germany", "y", "z"],
+    ["hu-standard", "y", "z"],
+    // Turkish Q: the US i key types dotless ı, and the dotted i is beside L.
+    ["tr-q", "i", "ı"],
+    ["tr-q", "'", "i"],
+    // Turkish F: its own letter order (f g ğ ı on the US q w e r keys).
+    ["tr-f", "qwer", "fgğı"],
+    ["sv-standard", "[;'", "åöä"],
+    ["pt-brazil", ";", "ç"],
+    ["cs-qwertz", "2", "ě"],
   ])("%s: %s types %s", (id, keys, expected) => {
     expect(typeOn(id, keys)).toBe(expected);
   });

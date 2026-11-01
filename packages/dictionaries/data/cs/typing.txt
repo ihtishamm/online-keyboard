@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+458951	Lidi vlci za normálních okolností nenapadají.
+871501	Dobrý den. Jmenuji se John Reindle. Pracuji na americkém velvyslanectví v Praze.
+1680682	Můj šéf odmítl rozpočet nového projektu.
+1829994	Má babička vychovala desetičlennou rodinu.
+1845599	Chceš přijít na mou oslavu?
+2148274	To je nejdelší román, který jsem kdy četl.
+2315836	Mám hrozně rád obě dvě.
+2404603	Moje teta žije v New Yorku.
+2977839	Začala plakat a já jsem začal plakat také.
+3013647	Její historie je také moje historie.
+3046697	Myslel jsem, že to stihneme do půl třetí.
+3075916	Jen jsem ležel na pláži a pozoroval koupající se lidi.
+3346307	Někteří lidé se podrobují děsivým fyzickým zátěžím za účelem zůstat v kondici.
+3415017	Měl jsem se ohledně této záležitosti poradit se svými rodiči.
+3971832	Obávám se, že tato kniha je nad jeho pochopení.
+3992572	Všichni studenti byli proti válce.
+4311984	Darovanému koni na zuby nehleď.
+4401395	Ukažte mi prosím váš pas.
+4418830	Co si myslíš o novém filmu?
+4446282	Co se vám dvěma stalo?
+6895995	On má na sobě brýle.
+6934163	Neviděli jsme ani jednu hru.
+6935180	Jsi moc mladý na to, abys cestoval sám.
+7024077	Promiňte, ale mám teď plné ruce.
+7525419	Může se to stát znova.
+7562758	Dělám to, kvůli čemu jsme sem přišli.
+8013750	Co bych měl zatím dělat?
+8098573	V této budově se nesmí kouřit.
+8136148	Chtěl bych ti představit svého syna.
+8319941	Firemní záležitosti by měly zůstat uvnitř firmy.
+8414185	Víte, jak se to stalo?
+8418758	Chtěl jsem si otevřít vlastní restauraci.
+8434919	Poprava Toma byla zrušena na poslední chvíli.
+8435595	Takové slovo v ruštině neexistuje.
+8793360	Budeš tady ještě, až se vrátím?
+8878301	Spáchal sebevraždu tak, že skočil pod vlak.
+8908356	Měli jsme velmi hezký výhled na řeku.
+8996624	Mohlo by to stát za to.
+9003448	Bob mi píše jednou za měsíc.
+9468998	Já si nemyslím, že odpoledne bude pršet.
+9551808	Můj vnuk má bílé kotě.
+9571817	Zítra nemusíme jít do školy.
+9686412	Být vámi, nic bych pro Toma nedělal.
+9777986	Nechte vše tam, kde to je.
+9818159	Vím, že se něco není v pořádku, cítím to.
+9938963	Je to jen slabé mrholení.
+10059976	Pan Bates je zámožný průmyslník, nebude mít čas na někoho jako jsi ty.
+10142069	Zrovna na to nyní myslím.
+10182345	Kolik stojí deset papírových talířů?
+10238764	Poslali Toma na jistou smrt.
+10320938	Nezastavil jsem se u vás, protože jsem neměl čas.
+10464501	Tehdy jsem nevěděl, že Toma uvidím naposledy.
+10567604	Kde se narodil a vyrůstal?
+10604223	Mám raději grepy než pomeranče.
+10639164	Jeho žena zahynula při havárii.
+10957720	Asi mám horečku a pokouší se o mě zimnice.
+11002906	Nechci, aby mě s ní viděli.
+11124949	Když byla jezera v zimě zamrzlá, byla plná bruslařů.
+11172081	Takové podmínky jsou pro Toma nepřijatelné.
+11248335	Lidem se líbilo to, co udělal.
+11259981	Vrátil se před osmou hodinou.
+11707146	Nejsem umělec. Nikdy jsem na to neměl schopnosti.
+11724879	Provedená změna nepřinesla žádné vylepšení.
+11741748	Nechal ve dřezu špinavé nádobí.
+11905734	Na obálce knihy bylo několik inkoustových skvrn.
+12124546	Pamatujte na křehkost své existence.
+12169626	Budeme se za tebe modlit.
+12196198	Elegantní řešení se podařilo najít pouze jemu.
+12205379	Oba mí bratři jsou stále dospívající.
+12437233	Rád bych mu dal dar k jeho narozeninám.
+12452573	Myslel jsem, že jsi vymyslel nějaké provizorní řešení.
+12525294	Ve vlaku mi ukradli foťák.
+12773714	Počkáme ještě, nebo budeme jednat hned?
+12903535	Nebudu to dělat na úkor svého volného času.
+13792372	Musíš se o svého psa postarat sama.
+13793615	Zlato je cennější než jakýkoli jiný kov.
+13793737	Vím, že je špatné stahovat hudbu z internetu, ale stejně to dělám.
+13897707	Životní úroveň v zemi roste.
+13911258	Byl o dost starší než my.
+13934790	Zapamatuj si, jak se toto slovo píše.

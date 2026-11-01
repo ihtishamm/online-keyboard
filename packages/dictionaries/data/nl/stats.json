@@ -1,0 +1,15 @@
+{
+  "source": "nl.xml.bz2",
+  "pages": 4204,
+  "sentences": 667232,
+  "repeatedSentencesSkipped": 56689,
+  "tokens": 6945208,
+  "distinctWords": 297704,
+  "wordsKept": 100000,
+  "nextWordHeads": 9787,
+  "text": "nl-train.txt",
+  "textSentences": 199834,
+  "textWeight": 2.24,
+  "heldOutPages": 92,
+  "heldOutSentences": 2000
+}

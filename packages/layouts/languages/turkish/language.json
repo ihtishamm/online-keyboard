@@ -1,0 +1,27 @@
+{
+  "slug": "turkish",
+  "code": "tr",
+  "order": 250,
+  "lang": "tr",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Turkish",
+    "native": "Türkçe"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["tr-easy", "tr-q", "tr-f"],
+  "accents": "çğıöşüâîûÇĞÖŞÜÂÎÛİ",
+  "sample": "Bugün hava çok güzel; İstanbul'da yürüyüşe çıkalım mı?",
+  "voice": ["tr-TR"],
+  "wordList": true,
+  "translate": {
+    "google": "tr",
+    "bing": "tr",
+    "deepl": "tr"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot. Turkish capitals: i ↔ İ and ı ↔ I. The plain I and i are on every keyboard, so the letter list has İ but not I."
+}

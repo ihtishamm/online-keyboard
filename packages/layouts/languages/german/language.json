@@ -1,0 +1,27 @@
+{
+  "slug": "german",
+  "code": "de",
+  "order": 230,
+  "lang": "de",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "German",
+    "native": "Deutsch"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["de-easy", "de-germany", "de-swiss"],
+  "accents": "äöüßÄÖÜ",
+  "sample": "Schöne Grüße aus München! Wir fahren übermorgen zurück.",
+  "voice": ["de-DE", "de-AT", "de-CH"],
+  "wordList": true,
+  "translate": {
+    "google": "de",
+    "bing": "de",
+    "deepl": "de"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

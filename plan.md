@@ -466,7 +466,7 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - Layouts: es easy, Spain, Latin America; fr easy, AZERTY, Belgian, Swiss; it easy, standard. Imported from CLDR (Windows), faithful to the standards; letters a standard lacks (œ on AZERTY, capital È on Italian) are listed in the tests and covered by the accent bar. The 102nd key beside Shift appears only on layouts that use it.
     - Smart accents (`AccentRestorer`): Space adds an accent only when the plain spelling is not a word and one accented spelling dominates; otherwise the spellings go to the bar. Words the list lacks take the accents of their ending (-cion → -ción), learnt from the list; hyphenated words go part by part. Backspace right after undoes.
     - Typing rules are one undo step and work with our keys, a computer keyboard and a phone's own keyboard: French narrow no-break spaces (Espaces fines, on by default), Spanish ¿ ¡ (on by default).
-    - Each page has a table of its letters: Windows US-International keys, Alt codes, Mac Option keys, phone long-press, generated from our layouts.
+    - Each page has a table of its letters: Windows US-International keys (or, for letters it lacks, the language's own Windows layout), Alt codes, Mac Option keys, phone long-press, generated from our layouts.
   - Word lists: the first 40 MB of each Wikipedia dump, plus everyday Tatoeba sentences (CC BY 2.0 FR, credited) weighted at half the dump, since encyclopedia text lacks "I" and "you" verb forms and everyday words. Words keep their usual case; lookups fold it.
   - dict.txt gains an accents section: smart accents needs a long tail (95 % restored with the 40,000 shipped words, 97 % with 100,000), so the rarer words that change its answer ship too, within their own 80 KB budget. Spanish 178 KB, French 192 KB, Italian 151 KB gzipped in all.
   - Results (held-out articles, words with the language's own accented letters): Spanish 97.3 %, French 98.1 %, Italian 98.5 % restored; 6, 13 and 2 plain words changed wrongly in about 40,000 each. Words with other languages' letters (Nações in Italian text) are counted apart: 8, 104 and 103. Published on each page.
@@ -488,10 +488,19 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - Sentence case cannot know names: the FAQ says so.
     - The language picker remembers its choice, and starts from the browser's language. Counts use grapheme clusters (👍🏽 and the conjunct ब्द count as one).
   - e2e: every style, Copy, and the Turkish, Greek, German (ẞ option), Irish and caseless-script cases, on desktop and both phone sizes.
-- [ ] **7.7 Wave 1 languages (14):**
+- [x] **7.7 Wave 1 languages (14):**
   - Spanish, French, Italian, German, Portuguese, Turkish;
   - Polish, Dutch, Romanian, Czech, Hungarian, Swedish, Catalan, Croatian.
   - Every one reaches Tier B. Target Tier A: Spanish, French, Italian, German, Portuguese, Turkish (word lists from Wikipedia, §8).
+  - All 14 are live and at least Tier C (`LANGUAGES.md`). **Not met: Tier B for every one.** Spanish and French are Tier B. The rest are Tier C, held back by spell check (all 12) and smart accents (9 of them), published as Beta with their numbers.
+  - Layouts (CLDR Windows data, as 7.5): German QWERTZ (Germany, Switzerland), Portuguese (Brazil ABNT2, Portugal), Turkish Q and F, Polish (Programmers, 214), Dutch, Romanian Standard, Czech QWERTZ and QWERTY, Hungarian, Swedish, Catalan (Spain), Croatian. Each but Polish also has Easy accents (US-International). Its gaps are listed in the tests, and the accent bar covers them: Easy accents cannot type ğ ı ş, ă ș ț, the Czech háček letters, ő ű or the Croatian letters, and Swiss German has no ß. The accent bar's capitals follow the language (Turkish İ, and ẞ, not SS).
+  - Pages: original copy for each, with layout summaries, tips and FAQs. Every smart-accents example on a page is checked against the shipped word list (`src/content/latin-copy.test.ts`, and on the live page by `e2e/wave1.spec.ts`). Each page types its sample sentence from the physical keyboard on its national layout in e2e. The letters table falls back to the language's own Windows layout for letters US-International lacks (Polish (Programmers): AltGr+A).
+  - Typing tutor and test for every Latin-script language: `/[lang]-typing-tutor` and `/[lang]-typing-test`. The lessons come from the layout, and Latin layouts get a last "Accents and AltGr" lesson. The hint line takes dead keys one press at a time (´, then a). The tests use the 200 commonest words, plus 80 Tatoeba sentences per language (`data/<code>/typing.txt`), never the spell-check test sentences. A page offers only the layouts that type 90 % of its sentences, so Easy accents is left out where it cannot type the language. Sentences and words that some offered layout cannot type are dropped.
+  - Word lists: the first 20 to 40 MB of each dump, with Tatoeba as in 7.5. All 14 were rebuilt with two fixes. Tatoeba's stand-in names now go in every inflected form (Czech had Toma at rank 27, Hungarian Tomi at 37). Turkish endings after an apostrophe stay with their name (Türkiye'nin counts as Türkiye, not as a word nin). Romanian reads cedilla ş ţ as ș ț. Spanish, French and Italian smart-accent numbers were unchanged by the rebuild.
+  - Smart accents (2,000 held-out sentences each), target 97 %: Portuguese 98.0 % and Romanian 97.4 % meet it. **Below, published as Beta:** Catalan 96.4, Swedish 95.4, Polish 94.5, German 94.4, Turkish 93.7, Dutch 92.3, Croatian 91.4, Czech 91.1, Hungarian 87.1 % (Hungarian also changes 0.57 % of plain words, over the 0.5 % bar). The misses are words a 40,000-word list cannot hold: German compounds, and Hungarian, Turkish and Slavic case endings. Rules were chosen on development sentences from the middle of each dump, never the test split (`src/dev-sentences.ts`, `EVAL_DEV`). On those, a compound and ending split for words the list lacks raised German from 81.7 to 88.0 % and Hungarian from 81.4 to 85.0 %. It is on for German, Dutch, Swedish, Hungarian and Turkish only, since in Romance and Slavic languages it added wrong changes. The accents test now fails when a language that met the target drops, or when `results/accents.json` is stale.
+  - Spell check (1,000 everyday Tatoeba sentences, 50 synthetic misspellings each): every new language flags 94 to 100 % and ranks the fix in the top 3 for 94 to 100 %. **None meets the false-flag bar (under 1 %):** Portuguese 1.1, Romanian 1.4, Dutch 1.5, German 1.7, Swedish 2.1, Catalan 2.4, Czech 2.8, Croatian 4.5, Polish 4.7, Turkish 4.8, Hungarian 8.0 %. All are Beta, off until turned on. Portuguese and Romanian gained verb, article and diminutive endings from their grammars. Italian, at 1.0 % before, rose by one false flag (62 of 6,132) with the rebuilt list, and is Beta and Tier C again.
+  - Fonts: Inter's web subsets lack the spacing accents ˍ ˘ ˙ ˛ that dead keys type on their own. A 2.8 KB cut of Noto Sans (OFL, `src/fonts/`) covers them, and the no-tofu test passes for all 25 languages.
+  - **Not done:** native-speaker review of any copy, sentences or misspellings (needed for Tier A); spell-check rules for case endings beyond plurals (German compounds, Turkish and Hungarian suffixes), which need a morphology model, not a longer table; Tier A for the six target languages.
 
 **Exit**
 - 25 languages are live.
@@ -500,6 +509,8 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
 - The no-tofu test passes everywhere.
 - Smart accents meet their target in the Tier A Latin languages.
 - The case converter's e2e tests cover the Turkish, Greek, German and Irish cases.
+
+**Exit status (2026-11-01):** 25 languages are live. The tier gate, the bundle budgets (90 KB initial JS per keyboard page) and the no-tofu test pass, and the case converter's e2e covers all four cases. The original languages' layouts and Roman output are unchanged (their golden tests). Smart accents meet target in Spanish, French, Italian and Portuguese, four of the six Tier A candidates. **German (94.4 %) and Turkish (93.7 %) do not.** No language is Tier A yet: that needs native-speaker review (§11, decision 4).
 
 ---
 
@@ -720,7 +731,7 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | Wikipedia dumps (per language) | Word lists, next-word tables, smart-accent evaluation | CC BY-SA 4.0 (credit; derived lists are CC BY-SA) | In use (13 languages) |
 | Google Dakshina | Roman evaluation and attested spellings for 12 South Asian languages | CC BY-SA 4.0 | Confirmed (repo README) |
 | AI4Bharat Aksharantar | Roman evaluation for other Indic languages | Split: CC BY for the manually collected part, CC0 for the mined part (AI4Bharat page) | Check the Hugging Face card and the IndicXlit repo before use |
-| Tatoeba | Typing-test sentences; everyday words and the spell-check test for Latin languages | CC BY 2.0 FR (some CC0); credit with a link | In use (es, fr, it) |
+| Tatoeba | Typing-test sentences; everyday words and the spell-check test for Latin languages | CC BY 2.0 FR (some CC0); credit with a link | In use (14 Latin languages) |
 | Unicode CLDR 43 | Keyboards, emoji names | Unicode License v3 | In use |
 | SIL Keyman keyboards | Layouts | Mostly MIT (per keyboard) | In use; check each one |
 | xkeyboard-config | Latin and Cyrillic national layouts | X11/MIT-style, varies by file | Check per file |

@@ -1,4 +1,5 @@
 import type { Layout } from "@okb/engine";
+import type { FontId } from "@okb/layouts";
 import { ArrowLeft, ArrowRight, Check, RotateCcw } from "lucide-react";
 import { useEffect, useState } from "react";
 import { loadPreference, savePreference } from "../keyboard/preferences";
@@ -15,6 +16,9 @@ export interface TypingTutorProps {
   lessons: Readonly<Record<string, readonly Lesson[]>>;
   /** Layouts by id, for every key of `lessons`. */
   layouts: Readonly<Record<string, Layout>>;
+  /** Writing direction and font of the language (default: Urdu's). */
+  dir?: "rtl" | "ltr";
+  font?: FontId;
 }
 
 /** Accuracy needed to pass a lesson. */
@@ -140,7 +144,11 @@ export default function TypingTutor(props: TypingTutorProps) {
                   </span>
                   <span className="font-semibold">{l.title}</span>
                   {l.letters.length > 0 && (
-                    <span className="font-script text-xl text-accent" lang={props.lang} dir="rtl">
+                    <span
+                      className="font-script text-xl text-accent"
+                      lang={props.lang}
+                      dir={props.dir ?? "rtl"}
+                    >
                       {l.letters.join(" ")}
                     </span>
                   )}
@@ -168,7 +176,11 @@ export default function TypingTutor(props: TypingTutorProps) {
         <h2 className="text-lg font-semibold">
           Lesson {active! + 1}: {lesson.title}{" "}
           {lesson.letters.length > 0 && (
-            <span className="font-script ms-1 text-accent" lang={props.lang} dir="rtl">
+            <span
+              className="font-script ms-1 text-accent"
+              lang={props.lang}
+              dir={props.dir ?? "rtl"}
+            >
               {lesson.letters.join(" ")}
             </span>
           )}
@@ -215,6 +227,8 @@ export default function TypingTutor(props: TypingTutorProps) {
           update={setDrill}
           layout={layout}
           lang={props.lang}
+          dir={props.dir}
+          font={props.font}
           nativeName={props.nativeName}
           hint
           keyboard

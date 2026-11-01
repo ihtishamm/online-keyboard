@@ -12,12 +12,13 @@ import { LANGUAGES, getLayout, getScheme, type FontId } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
 
 /** The font files behind each family in the editor font stacks (global.css). */
-const FAMILIES: Readonly<Record<string, { dir: string; files: RegExp }>> = {
+const FAMILIES: Readonly<Record<string, { dir: string; files: RegExp; local?: true }>> = {
   "Noto Nastaliq Urdu": { dir: "@fontsource/noto-nastaliq-urdu", files: /-400-normal\.woff$/ },
   "Noto Naskh Arabic": { dir: "@fontsource/noto-naskh-arabic", files: /-400-normal\.woff$/ },
   "Noto Sans Devanagari": { dir: "@fontsource/noto-sans-devanagari", files: /-400-normal\.woff$/ },
   "Noto Sans Bengali": { dir: "@fontsource/noto-sans-bengali", files: /-400-normal\.woff$/ },
   "Inter Variable": { dir: "@fontsource-variable/inter", files: /-wght-normal\.woff2$/ },
+  "Spacing Accents": { dir: "src/fonts", files: /\.woff2$/, local: true },
 };
 
 /** Each editor font's stack, read from global.css (--stack-<font>). */
@@ -135,7 +136,9 @@ function stackCoverage(font: FontId): Set<number> {
     if (!source) continue; // a system font, such as Jameel Noori Nastaleeq, or serif
     let have = coverage.get(family);
     if (!have) {
-      const dir = join(process.cwd(), "node_modules", source.dir, "files");
+      const dir = source.local
+        ? join(process.cwd(), source.dir)
+        : join(process.cwd(), "node_modules", source.dir, "files");
       have = new Set();
       for (const name of readdirSync(dir).filter((n) => source.files.test(n))) {
         for (const c of woffCodePoints(readFileSync(join(dir, name)))) have.add(c);

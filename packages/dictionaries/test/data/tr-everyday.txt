@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+356138	Zamanda geçmişe seyahat etmenin imkansız olduğu düşünülüyor.
+357926	Kızı onunla her yere gitmeye hevesli.
+403940	Öğretmenimiz bize çok ödev verir.
+459523	Auckland, Yeni Zelanda'da bir şehirdir.
+474528	Yağmur nedeniyle toplantı iptal edildi.
+475666	Hilton Oteli'ne gidelim lütfen.
+475796	Bugün rüzgar yok.
+486304	Bugün ben birçok İspanyolca sözcük öğrendim ve artık nasıl "yanak", "çene" ve "diz" diyebileceğimi biliyorum.
+487302	Altmış yaşındaki birine değil altı yaşındaki birine sorun.
+521704	Gülü seven dikenine katlanır.
+595260	Bazı doktorlar hastalarını memnun etmek için bir şeyler söylerler.
+603637	Bu kitap Tony'ye ait.
+674891	Sözlük mü satın alacaksınız?
+707629	Yakın gelecekte, AIDS'e son verebileceğiz.
+766681	En çok İngilizceyi seviyorum.
+767470	O yapılı biri.
+788410	Evet, ben Sapporo'danım.
+798798	Motosiklet bir arabaya çarptı.
+845296	Mayıs'ta mı doğdum?
+849751	Konuştum ama hiç kimse beni dinlemedi.
+849786	Ortak düşmanı yenmek için birlikte dövüşmek zorunda olduklarını biliyorlardı.
+849864	Bay White Kanada'ya gitti.
+850187	Müzeyi ziyaret etme fırsatından yararlandı.
+850992	Işıklar açık değil.
+852066	Rastgele cümlelerde neden insanlar her zaman "Tom" olarak çağrılıyor?
+856789	Bir pound troy 12 onz çeker.
+858427	Belediye başkanı ona şehrin anahtarını sundu.
+862482	Klavsenin sesini çok severim.
+864767	Ne ısmarlamak istiyorsunuz,beyler?
+864868	Bay White sınavda kopye çektiği için çocuğu cezalandırdı.
+866926	O göklere baktı.
+867177	O, şekerlemeyi azalttı.
+872899	O tek başına çalıştı.
+918995	Hem Magdalena, hem de Ania; Polonyalıdır.
+919044	Polonyalı bir kadınla evliyim.
+927741	Sanırım John'un Jane ile olan ilişkilerini çok fazla okuyorsun.
+930369	Tam otuz yıldır saatim işlemiş ben durmuşum; gökyüzünden habersiz, uçurtma uçurmuşum...
+948714	Odasını her zaman temiz tutar.
+986374	Bir şeyler içmek ister misin?
+1009765	Kylie Minogue'nun Türkiye'ye, özellikle Gaziantep'e gelmesini istiyoruz.
+1014661	Benim kalemimi kullanma.
+1022140	Ceza hukuku, ceza yasası olarak da bilinen, bir suç olarak sınıflandırılmış olan bir hareket için takibat gerektirir.
+1022643	Özür dilemekten başka yapacak bir şey yok.
+1022840	Hırsızlar arasında onur vardır.
+1030593	Birine ihtiyacım var.
+1031170	Fuarda dikkate değer bir şey yoktu.
+1031319	O kötü bir sürücü.
+1032195	Lütfen bana resmini göster.
+1032261	Tüm insanların ölümlü olduğunu biliyoruz.
+1035394	Tom'un yiyeceği tükendi.
+1036306	Ben kırk yılda bir kez kiliseye giderim.
+1037786	Biz bu gerçeği unutmaya meyilliyiz.
+1039394	Ben ona yardım edemeyecek kadar çok meşgulüm.
+1039585	O çocuk yirmiye kadar sayabilir.
+1039776	Onunla karşılaşmadan önce, Pizzaro adamlarının ve silahlarının çoğunu kasaba yakınında sakladı.
+1042047	Mağazada kaç kişi öldürüldü?
+1042675	Siyatik sinir insan vücudundaki en uzun sinirdir.
+1042927	O günlerde ben hâlâ bir öğrenciydim.
+1045932	Tonlama herkesin bildiği gibi yabancı dilin kazanması zor bir parçasıdır.
+1046025	Yurt dışına bazen yalnız seyahat ederdim.
+1046670	Alkollü içkileri her gün içmek istemiyordu. Fakat bira onun sevdiği içkisidir, bu yüzden o her gün alkolsüz bira içiyor.
+1046708	Tom hasta olduğunu söyledi, fakat o bir yalandı.
+1048764	Bilet almak için sırada durmalısınız.
+1056798	Çorba tencerede fokurduyor.
+1056881	O, yarın öğleden sonra beni görmeye geliyor.
+1057067	Diğer bir deyişle, o bir inanç adamı.
+1060167	Kyoto'yu görmek için Japonya'ya geldim.
+1060199	O gerçek bir Müslüman
+1060518	İyi sağlık her şeyin en değerlisidir.
+1060778	Yiyecek bir şeyleri yok.
+1063709	Bazı memurlara rüşvet verilmiş olabilir.
+1065319	O benden hoşlanmadığını fakat yardımıma ihtiyacı olduğunu söyledi.
+1067119	Geometri uzay bilimi ise, zaman bilimi nedir?
+1067214	Ben nehri karşıdan karşıya yüzebildim.
+1067277	Gerçekten güzel bir tadı var.
+1068787	İki çocuk aynı yaştalardı.
+1068806	İki şey arasında ince farklar var.
+1072344	Her on beş dakikada bir otobüs vardır.
+1072901	Popüler şarkıcı intihar etti.
+1077683	TV izlemek için fazla zaman harcama.
+1080597	Eğer her kullanıcı Tatoeba'ya günde yirmi ilave yaparsa, Noel'e kadar bir milyon cümleye ulaşmak mümkün olabilir.
+1080842	Dikensiz bir gül yoktur.
+1080843	Her gülün dikeni vardır.
+1080983	Üniversiteden mezun olduktan hemen sonra evlendi.
+1081304	Yeni koalisyon hükümeti fırtınayı kazasız belasız atlatmaya çalışıyor.
+1087549	Ben kısa sürede sizinle irtibata geçeceğim.
+1088434	En küçük çocuk her sabahı kreşte geçirdi.
+1090680	Ben maddi kazançlarla ilgilenmiyorum.
+1096731	Öneriyi geri çevirmek zorunda olmam makul görünüyor.
+1096911	Bu sabah TV izledim.
+1097021	Ben size yetiştim.
+1100607	Ben yarına kadar işimi bitirtmeliyim.
+1101538	Bana bir avukat bulur musunuz?
+1108386	Bazı insanların neden kara kedilerin uğursuz olduğunu düşündüğünü merak ediyorum.
+1111310	Bay Tom Jones bu yeni iş için proje lideri olarak görev yapmayı kabul etti.
+1114051	Tom arabasına haftada iki kez yakıt alır.
+1116021	Yağmurdan dolayı piknik iptal edildi.
+1119116	O ona bir öğretmen olmasını tavsiye etti.
+1121633	Tom'u boşanmasından beri çok fazla görmedik.
+1121650	Tom'un ebeveynlerinin her ikisi de öğretmendir.
+1122952	Tom otuzlu yaşların başındaydı.
+1124527	Tom Fransız müziği ile ilgileniyor.
+1127227	Tom ve Mary birbirlerinden nefret ediyordu.
+1129178	Kazağım yıkanırken çekti.
+1130715	O öyle bir şey yapacak son adamdır.
+1131393	Uzun çubuklar içine turp kesin.
+1135222	Zarfı açmak için yırttı.
+1142465	Tom Mary'nin iyi bir kelle avcısı olacağını söyledi.
+1156468	Japon güçleri Birmanya'ya yürüdü.
+1156470	Japonlar Pearl Harbor'ı tahrip etti.
+1158218	O, Mary'yi görmeye gitti mi?
+1159585	O işle, o ayda 500 doların üzerinde kazanmaktadır.
+1160643	İtfaiyeciler yangını hemen söndürdüler.
+1163849	Dün büyük bir balık yakaladım.
+1164551	Tom onun ev sahibi kirayı düşürdüğü için mutlu oldu.
+1164989	Tom bazı sorunlara işaret etti.
+1166112	Kimle birlikte gittin?
+1166383	Bu iflasımızı sunmak zorunda olduğumuz anlamına mı geliyor?
+1167046	Derhal bir ambulans geldi.
+1168199	Tom'u birisi öldürürse ne olur? Ne yaparsın?
+1169086	Tom, son gördüğümde, bir gözbandı takıyordu.
+1169734	Tom Mary'den çok fazla yaşlı değildi.
+1172072	Planı oğluma yaptıracağım.
+1173581	Her sabah koşuya gitmeyi kural haline getiririm.
+1173826	Tom yiyemeyecek kadar çok yorgun olduğunu söyleyerek akşam yemeğini geçiştirdi.
+1176839	Tom onun hakkında düşünmek için bir ya da iki güne ihtiyacı olduğunu söyledi.
+1177967	Tom hikayenin gerçek olmadığını biliyordu.
+1178311	Tom sadece biraz huzur ve sessizlik istedi.
+1178419	Tom Mary'den muhtemelen bir ya da iki yıl daha gençtir.
+1178457	Tom John ile gelecek hafta taşınıyor.
+1179592	Tom'un sana göstermek için bekleyemediği bir şeyi var.
+1179655	Tom'un Mary'nin sahip olduğundan çok daha fazla deneyimi var.
+1183784	Tom benim sinirime dokunuyor.
+1183904	Tom bir konuşma yaptı.
+1183974	Tom sevdiği bir iş buldu.
+1189076	Mary eklemlerini çatlattığında Tom sevmez.
+1189335	Tom bir rahip olarak kendini gizledi.
+1193319	Tom vitamin almanın gerekli olmadığına karar verdi.
+1193545	Tom biraz daha yaşlanıncaya kadar evden ayrılmamaya karar verdi.
+1193667	Tom hapşırmayı durduramadı.
+1194270	Tom'un astımı var.
+1195050	Tom işe motosikletle gidip geliyor.
+1197279	Tom kesinlikle yemek yapma hakkında çok şey bilir.
+1200810	Hem Tom hem de Mary onun hakkında aynı şeyi hissediyorlar.
+1204394	Olanlardan sen sorumlu değilsin.
+1206073	Tom yetenekli bir şarkıcıdır.
+1208452	Sana kayıp yüzüğünü bulacağım.
+1209628	Kitabında sayfa dokuzu aç.
+1210703	Kayıt ofisi nerede?
+1214359	Yarın onun beşinci doğum günü.
+1216090	Tuvalette okumak benim alışkanlığımdır.
+1216367	Bu, Tokyo ve Yokohama arasında çalışan ilk trenin bir resmidir
+1216825	Biz bu konuda bir şey yapmak zorundayız.
+1217076	Güzel dünyayı kirlilikten korumak için ne yapmalıyız?
+1220811	Lütfen ona beklemesini söyle.
+1224360	Ben karanlıkta lamba anahtarını hissettim.
+1227129	Tom'un fikrini değiştirmek için söyleyebileceğim hiçbir şey yok.
+1227164	Tom'un şirketindeki işçiler daha kısa çalışma saatleri talep ediyorlar.
+1230982	Sammy Davis mükemmel bir şarkıcıydı.
+1231009	Dün Barbara'nın sürücü testi nasıl geçti?
+1231267	Kumi bir kutu yapmadı.
+1231362	Mary'nin erkek arkadaşı hakkında ne biliyorsunuz?
+1232640	Emi asla bir mektup yazmadı.
+1233379	Joe benim parayı ödemem konusunda ısrar etti.
+1234537	George yeni işi hakkında çok hevesli.
+1234700	Hadi yapalım şu işi.
+1239849	Ken dün arkadaşları ile konuştu.
+1239994	O, Jane'i akşam yemeğine çıkardı.
+1245773	Tom nereye gideceğine karar veremedi.
+1247209	Tom Mary'ye yardımcı olmak için elinden geleni yaptı.
+1247498	Tom Mary'nin zamanında gelmesini beklemiyordu.
+1247558	Tom işi iyi yapmak için yeterli tecrübeye sahip değildi.
+1247664	Tom Mary'nin onun davetini kabul etmeme nedenini bilmiyordu.
+1248201	Tom arabasının niçin çalışmadığını bilmiyordu.
+1249112	Tom ne Mary'yi nede kız kardeşini tanımıyor.
+1249785	Tom Mary'nin geçinmek için ne yaptığını bilmiyor.
+1252546	Bu onun hakkında.
+1256991	Tom çok aç
+1259445	Tom gerçekten üzgündü.
+1261047	Ben başlamaya hazırım.
+1261362	Onun kazanmasını istiyordu.
+1264097	Sadece yürümeye devam edin.
+1265707	Yakında iyileşecek miyim?
+1269550	Hiç banyo yoktu.
+1269761	Onu bu gece arayacağım.
+1272589	Sağ tarafınıza yatın.
+1272593	Benimle gel, olur mu?
+1274615	Naoko hızlı bir koşucudur.
+1276988	Bana gülüyor musun?
+1277593	Bir bardak su getiriniz lütfen.
+1278314	Kabul ediyorum, ama sadece tek bir şartla.
+1280188	Genellikle bulaşıkları yıkarım.
+1280324	Araba için ödeme yapamam.
+1280707	Onun hakkında bir hayalim vardı.
+1280988	Tren az önce gitti.
+1281622	O iyi haberle geldi.
+1282312	Bu anahtarlar benim değildir.
+1285376	Elimden geleni yapmaya çalışacağım.
+1285460	Onunla istasyonda tanıştım.
+1285963	Kar durdu mu?
+1286398	Diğerleri hakkında endişe etmeyin.
+1293898	Sağ ayağım uyuşuyor.
+1295553	Oraya nasıl gideceğimi soracağım.
+1296232	Gel ve benimle birlikte çay iç.
+1297331	Şimdi gerçekten bir içkiye ihtiyacım var.
+1298172	Çocuklar bloklarla oynarlar.
+1303859	Bizim bir şişe meyve suyuna ihtiyacımız var.
+1303896	Bu defa sonuçları aldı.
+1304406	Doyuncaya kadar yedik.
+1306952	Her iki bina da yandı.
+1309436	Bu resimleri kim yaptı?
+1310835	Bu kitabı ona geri götür.
+1312889	Ben bugün onu aramayı unuttum.
+1313481	Benim köpek kuyruğunu sallıyor.
+1323823	Tom çok yetenekli bir öğretmendir.
+1324182	Onun yaptığı yasal değil.
+1326385	Birkaç kez orada bulundum.
+1329687	Kız kardeşim tatlıya düşkündür.
+1329808	Ben mağazada bir şapka aldım.
+1335074	O, bana adını vermedi.
+1336700	İlk çağ tarihini sever misin?
+1343696	Tom Mary'ye yiyecek çok şey verdi.
+1344212	Paranın bir kısmı çalındı.
+1349164	O, gitmene gerek olmadığını söyledi.
+1358087	Yemeklerden sonra dişlerinizi fırçalayın.
+1361608	O, dün gece televizyonda çıktı.
+1362531	O, bir ata binmede iyidir.
+1364383	Özür dilemeye gerek yok.
+1367074	En sevdiğin şampuan nedir?
+1368650	Tom Mary'yi çok samimi buldu.
+1383135	Hayalet hikayesi korkunçtu.
+1385288	Onunla karşılaştığımı hayal meyal hatırlıyorum.
+1391736	O, bu odaya girmiş olmalı.
+1393574	Bizimle Fransızca konuşmayı denedi.
+1394593	O, tahtaya bir çivi çaktı.
+1394830	Onlar art arda geldiler.
+1419327	Onun tavsiye ettiği kişiyi işe alacağım.
+1422190	O, iyi haber tarafından keyiflendi.
+1425068	Yaşlılık günlerim için para tasarruf ediyorum.
+1432702	O, bankaya çok miktarda para yatırdı.
+1443103	Bunun delice görünebileceğinin farkındayım fakat sanırım senin küçük kız kardeşine âşık oldum.
+1451111	Bu araba çok kolay kullanılır.
+1451237	O, hatalı olduğunu itiraf etti.
+1451866	Onun evi benimkinin karşısındadır.
+1454484	O, bana çok hızlı sürmememi söyledi.
+1455366	Bu tablo ile nasıl geldin?
+1456669	Okula ne zaman geri döneceksin?
+1459061	Onlar arasında bağlantı yok.
+1459101	Burada bu odada öğle yemeği yiyebilirsin.
+1464502	Bu mektubu benim için gönderir misin?
+1464506	Yarım saat daha erken ayrılmalıydın.
+1467455	O, onu sıkıca tuttu ve gitmesine asla izin vermedi.
+1469165	Amerikalılar vergilerini hesaplamak için saatlerini harcarlar.
+1481919	O sonunda ortaya çıktı.
+1487543	O bana her şeyi anlattı.
+1492307	O, güçlükle konuşabiliyor.
+1493602	O bir şey görmedi.
+1497919	Üşüyorum. Isıtıcıyı açar mısın?
+1498183	O neredeyse bir şair değildir.
+1498191	O, görevlerini yaptı.
+1498971	Keşke o burada olsaydı.
+1501169	Ben yurt dışına gitmeyi planladım.
+1505304	Bu odanın üç penceresi vardır.
+1506442	Keşke onu yapmasaydın.
+1511847	Onlar gün boyunca çalıştılar.
+1514040	Muazzam bir insan kalabalığı bekledi.
+1514177	sevimsiz bulmaya başlıyorum.
+1514328	Seyahat çekleri kabul ediyor musunuz?
+1516702	O, kısa bir hastalıktan sonra öldü.
+1522849	Ne kadar süredir yurt dışındasınız?
+1523302	Çok iyi şekilde tenis oynayamam.
+1526141	Anahtarı ona verdiğimi hatırlıyorum.
+1537419	Yakıt seviyesi boşun altında.
+1537440	Kız annesine benziyordu.
+1545547	Sonuçtan endişe ediyorum.
+1545577	Hayatlarından memnun olduklarını ifade ettiler.
+1556511	Öğretmen olmak istememde Tom'un kesinlikle hiçbir etkisi olmadı.
+1585027	Tom Mary'nin mutlu olduğunu düşünmüyor.
+1585079	Tom arabasını satışa koydu.
+1586160	Niçin başkanlığa adaylığını koymuyorsun?
+1591240	Hawking çalışmalarına geri döndü.
+1600125	Parayı cebime koydu.
+1600185	Bana onu yapmamı söyledi, bu yüzden onu yaptım.
+1605216	Ona yüz yüze şikâyette bulundum.
+1605899	Havuzda yüzmeyi sevmiyorum.
+1611849	Sanırım o, gerçeği biliyor.
+1612066	Elimden geldiği kadar kısa sürede onu teslim edeceğim.
+1612539	Onun yalan söylediği belliydi.
+1613506	John Rutledge şiddetle karşı çıktı.
+1613982	Bu gerçek aşktır.
+1615494	Bir parça kek daha alabilir miyim?
+1618941	Araba iki günde bir cilalanır.
+1619280	Bu nasıl bir İngilizce böyle?
+1619292	Onur hak ettiğimden daha fazlasıdır.
+1622547	O gerçeği bilecek kadar büyük.
+1624105	Allah aşkına burada ne yapıyorsun?
+1625661	O herkesin bildiği gibi, o bir dahidir.
+1634759	Üç dakika ile otobüsü kaçırdım.
+1635088	Birinci kattaki koltukları isterim.
+1643145	Tom yağışlı sezonu sevmez.
+1646757	Burada güzel ayakkabılar bulmalısın.
+1649700	Sınavı geçeceğinden emin.
+1649878	Onunla tokalaştı ve gülümsedi.
+1649885	Sanki her şeyi biliyormuş gibi konuşuyor.
+1649904	Ailenin bir fotoğrafını çekti.
+1650409	Sınavda kopya çekerken yakalandı.
+1650599	Ne sıklıkta profil düzenlersin?
+1651493	Birinin odaya girdiğini duydum.
+1651905	Keşke onun emirlerine itaat etseydim.
+1651970	Bu akşam dışarı çıkmayı tercih etmiyorum.
+1654960	Yumruğu ile masaya vurdu.
+1655014	Kutuyu aşağıya taşıttı.
+1655104	İngilizce bir sınava girdi.
+1664610	Çocukların hepsi ona gülmedi.
+1669227	Dün gece saat 11:00'de yatmaya gitti.
+1669291	Onun durumu dün gece daha da kötüleşti.
+1672526	Erkek kardeşimi istasyona gönderdim.
+1672700	Onun buraya gelip gelmeyeceğini bilmek istiyorum.
+1680699	Işık kırmızıdan yeşile dönüştü.
+1691758	Dün gölette bir kız boğuldu.
+1703920	Onlardan her birine üç kurşun kalem verdim.
+1704046	Değişiklik olsun diye bu akşam dışarıda yemeye ne dersin?
+1704195	İngiltere'den birkaç kitap ısmarladım.
+1706941	Onunla son defa Londra'da gördüm.
+1709652	Seyahatimin ilk iki günü yağmurluydu.
+1710778	Kapıdaki boya henüz kuru değil.
+1716562	Londrada iken, İngilizce eğitimi aldı.
+1716731	Haksızlığa karşı yüksek sesle konuşmalısın.
+1719322	Bir liderin bütün niteliklerine sahipti.
+1719345	Ne zaman geri döneceğini bana söylemedi.
+1720081	Para kazanmaktan başka bir şey düşünmez.
+1721604	Televizyonu çok fazla sevmem.
+1727705	Doğum günümü hatırladığınız için teşekkür ederim.
+1732518	Her sabah kahvaltıdan önce koşarız.
+1732551	Oyun için saati ve tarihi ayarladık.
+1732766	Allah aşkına sen kim olduğunu sanıyorsun?
+1735267	Herkes onun yeni saç stilini fark etti.
+1735566	Trafik kazasında yaralandı.
+1741555	Bu paketi Japonya'ya göndermek istiyorum.
+1741871	Deri bir omuz çantası arıyorum.
+1742128	Saç tıraşı olmak ona 3,000 yene mal oldu.
+1750428	Öğretmen okuldan sonra onun kalmasını sağladı.
+1750433	Tren tam saat beşte ayrıldı.
+1750474	En üst katta bir restoran var.
+1750526	Bunlar benim ayakkabılarım ve şunlar seninkiler.
+1751874	Tom kırsalda yaşamayı sevmiyor.
+1756714	Acil bir iş için Osaka'ya gitti.
+1757383	Bugün canım bir şey yemek istemiyor.
+1764094	Sence, Almanya'da iş bulmak kolay mı?
+1765965	Filmde başrolü iki büyük aktris paylaştı.
+1767009	On yıldır Londra'da yaşıyorlar.
+1767747	Gerçeği söylemek gerekirse, kalemini kaybettim.
+1768199	Yangında iki ev yandı.
+1769813	Sorunları dikkatlice düşünmeliyiz.
+1771279	Laurie pizzayı çok sevmesine rağmen zayıf kalmak ister.
+1774254	Onun arabulucuları onun emirlerine itaat etmedi.
+1785012	Yer altında alışveriş bölgesi var.
+1800922	Onun gelmeme nedenini bilmek istiyorum.
+1801842	Numara 932-8647 ama alan kodunu bilmiyorum.
+1824170	Issız adayı keşfetmeyi umuyor.
+1829851	Bir şeyin eksik olduğunun bilincindeydim.
+1834691	Vaktini müzik çalışmasına adadı.
+1835729	Sonuçlardan açıkça memnundu.
+1847315	Trene zamanında yetişmek için elinden geleni yaptı.
+1861032	Sınıftaki hiç kimse onun kadar hızlı koşmaz.
+1871822	Okumak için favori kitap türün nedir?
+1874906	Tom'un cep telefonu çaldı.
+1874933	Tom, kapıya cevap ver.
+1875046	Kötü haberi duyunca bayıldı.
+1899599	Keşke gençken daha çok çalışsaydım.
+1911429	Sanki ben bilmiyordum!
+1942273	Bugün toplantı olduğunu niçin bana hatırlatmadın?
+1953653	Önünde hala yaşayacak bütün bir hayat var.
+1978948	Lütfen benim için kapıyı aç.
+1980311	Sadece İngilizce değil, Fransızca da konuşabilir.
+1982671	Düşündüğümden daha ucuzdu.
+1982807	Şirket Osaka'nın banliyölerinde bulunmaktadır.
+1995885	Sen beni gerçekten sevdin mi?
+2003443	O bunu hak etti.
+2003518	O bir haydut.
+2006743	Onun buna ihtiyacı var.
+2006804	O bir yalandı.
+2013171	Tam burada dur.
+2017141	Ben şimdi neredeyim?
+2017574	Sen gerçek misin?
+2023444	Bir kalem alabilir miyim?
+2030304	Pasta hazır mı?
+2034147	Lütfen beni destekleyin!
+2036813	Bir grev var.
+2037376	Tom kan kustu.
+2038922	O niçin yanlıştır?
+2047988	Onun başarıya ulaşacağını umuyorum.
+2049946	Eğlenceli bir geceydi.
+2051525	Web sayfası çökmüş durumda.
+2054283	Onun doğru olduğunu biliyorsun.
+2057443	Oğlu nasıl öldü?
+2059192	Ben son derece mutluyum.
+2063776	"PTA"nın açılımı nedir?
+2066700	Mary'nin başı ağrıyor.
+2067495	O modern bir kızdır.
+2070102	Tom paydos etti.
+2079319	O benim fikrimle alay etti.
+2080413	Ne kadar süredir sahibiz?
+2084738	Yalnız olmak istiyorum.
+2100211	Onu her hafta yaparlar.
+2112974	Hâlâ evli misin?
+2114125	Hiç Tom'u aradın mı?
+2116309	Yüzü bembeyaz olmuştu.
+2121355	Dört yeni kitap okudum.
+2122827	Özür dilerim. Seni incitmek istememiştim.
+2126932	"O bir saat mi aldı?" "Evet, aldı."
+2127533	O, malı almadan önce satıcının onu test etmesine izin vermediğinde bir şeyin yanlış olduğundan şüphelenmeye başladı.
+2140918	İki kadın şarkı söylüyor.
+2143865	Başka neye ihtiyacın var?
+2144047	Onu ne zaman söyledin?
+2147490	Babam bana bir kamera aldı.
+2155257	Fransızca konuşabilen birini istiyorum.
+2182250	İşte Japonya'nın bayrağı.
+2196868	Bay Wood, Tony için baba gibiydi.
+2229682	Ondan susmasını istedim ama yine de devam etti.
+2231796	Reggae hakkında ne düşünüyorsun?
+2237049	Açık havada adayı buradan görebiliriz.
+2307523	Ona güvenebilirsin. Seni yarı yolda bırakmaz.
+2307684	Yüksek sesle konuşmaya gerek yok.
+2310860	Gerçeği bir gün öğreneceksin.
+2314814	Yeni ürün, kurulum sırasında herhangi bir sorun çıkmasın diye bu hafta iki kez kontrol edildi.
+2320895	Tom'un arabasının çalındığını bilmiyordum.
+2409591	Tom'u durdurmak zorundasın.
+2417526	Ne olursa olsun, hep yanında olacağım.
+2428124	Hiç kimse gerçekten ne olduğunu bilmiyor.
+2431410	Bundan sonra, Miki hastaneye götürüldü.
+2437988	Büyük olasılıkla toplantı iptal edildi.
+2439443	Sanırım anahtarlarımı burada bir yerde bıraktım.
+2441197	Benim hatam olmadığına yemin ederim.
+2441227	Bir böcek yuttum.
+2441436	Sanırım herkes Mary'ye âşık olduğumu düşünüyor.
+2441514	Bazı temiz elbiseler giymemizi öneririm.
+2441595	Birden bunalıma girerim.
+2443370	Bir şey olduğunu bilmeliydim.
+2445451	Onun tamam olduğunu söyledim.
+2446994	Tom bir şey denemek için gönüllü.
+2449350	Gitme zamanının geldiğini düşünmüyor musun?
+2449872	Kitapçığı okumadın mı?
+2450167	Tom'un beni hatırlamasına inanamıyorum.
+2456876	Elimden gelen her şeyi yapacağım.
+2463752	Gözyaşı akıtmamak için çabaladı.
+2467582	Tom genellikle bir kovboy şapkası takar fakat bugün o bir beyzbol şapkası takıyor.
+2472332	Bu devirde bütün insanlar parayla satın alınabilir mi?
+2472470	Belki de sen benim görmemi istediğin şeyleri ayarladın.
+2472660	Ailemle tartışmak istemiyorum ama gerekirse tartışırım.
+2475303	Şu adam profesör değildir, o bir doktordur.
+2477273	Tom bir cevap almadı.
+2477366	Tom kazanmadı, değil mi?
+2480696	Onları birbirinden nasıl ayırıyorsun?
+2481456	Buradaki herhangi biri Fransızca bilir mi?
+2481476	Okulda Fransızca öğrenir misin ?
+2481510	Tek kelime Fransızca konuşmam.
+2481619	Tom bir sürü Fransızca kitaplar okudu.
+2483960	Tom herkese Fransızca konuşamadığını söylüyor fakat doğru değil.
+2488994	Umarım yararı olur.
+2491095	Onun harika olduğunu düşündüm.
+2492681	Bu şarkıdan nefret ediyorum.
+2492717	Denemek zorunda kaldım.
+2500347	Çevreye ve size verdiğimiz rahatsızlıktan ötürü özür dileriz.
+2500542	Sohbet etmek için buluşalım.
+2500794	Tom bizim oğlumuz.
+2500796	Tom bizim arkadaşımız.
+2502845	Tom bir katil.
+2505997	Artık bahse girmiyorum.
+2506316	Hatta oraya gitme.
+2506914	Benim gelişmemi kimler engelledi?
+2508493	Tom'un çok kötü bir sırrı var.
+2508686	O, Tom'u duraklattı.
+2514508	Ben sizi anlayalı çok uzun zaman oldu.
+2518314	Okulda herhangi bir sorunu yok.
+2519035	Rahatsız edilmiş görünüyorsun.
+2521193	Çok hoş görünüyorsun.
+2558035	Şimdi böyle olabilir fakat sonra roller değişecektir.
+2559129	Düşersem bir tekmede sizin atmanız yerine bırakın da yerden kalkayım.
+2565466	Ben onunla tanışmak istiyorum, bu mümkün mü?
+2571402	Hepiniz geçmişimi biliyorsunuz ve beni gönlünüzde hapishaneye koymadınız mı?
+2574001	Onsuz bir yaşam düşünemezken beni yolumdan döndürmek için çabalamadınız mı?
+2577520	Burada iyi olacaksın.
+2578110	Onları iptal et.
+2583851	Onlar cana yakın olacaklar.
+2584623	Ne şimdi güleceğim ne de sonra ağlayacağım.
+2585253	Para her şey değil; her şey para değil.
+2586231	Onlar kahve içtiler.
+2596433	Biz onunla mutlu olabilirdik.
+2598887	Tom beni bıçakladı.
+2601464	Her şeyden önce, yalan söyleme.
+2601478	Neden bize hamile olduğunu söylemedin?
+2602659	Bana güvenmediğiniz için güvenilmez bir adam oldum.
+2602895	Onun parayı kabul ettiği gerçeği hâlâ devam etmektedir.
+2603084	O utangaç ve her zaman arka planda kalır.
+2604462	Tom iyi niyetliydi.
+2606879	Git ve o ayrılmadan önce ona elveda de.
+2617327	Tom neredeyse ağladı.
+2625672	Durmamı mı istiyorsun?
+2627529	Bir dahaki sefere kampa gittiğimizde bizimle gelmeyi düşünmelisin.
+2628050	Oraya kendin git.
+2630511	Sen bir yıkıcısın.
+2634913	Tom tek başına bunun üstesinden gelmeli.
+2638816	Sana nasıl teşekkür edebiliriz?
+2660391	Konuşması çok etkileyiciydi. Orada olmalıydın.
+2660774	Birisi beni duyuyor mu?
+2670726	Erkek kardeşler yazıyorlar.
+2671681	En azından deneyebilirdiniz.
+2676306	Vay be, Daniel'ı son gördüğümden bu yana çok kilo almış.
+2678901	Herhangi bir alarm duymadık.
+2690471	Tom gitmek ister.
+2693040	Şu anda yoğunum.
+2693897	Öğretmenimiz kelimenin tam anlamıyla bir beyefendi.
+2694579	Onu henüz okumadığımı itiraf etmeliyim.
+2695533	Artık kızgın değilim.
+2698516	Tom ışıkları yaktı.
+2708867	Şu işe bakar mısın!
+2726076	Ben bir üyeydim.
+2728272	Bence bunu ilginç bulacaksın.
+2730279	Adımı hatırlıyor musun?
+2740844	Bence bu iğrenç.
+2760300	Lütfen sigara içmekten kaçının.
+2770269	Tom esmer ve yakışıklıdır.
+2774452	Fransızca kesinlikle öğrenmek için en kolay olan dil değildir.
+2774976	İlaç bağımlılığı modern toplumda bir kanserdir.
+2785338	Tom sizin yüzüğünüzü çaldı.
+2785377	Tom nasıl hayatta kaldı?
+2832179	Bunu hiç göstermemene rağmen beni sevdiğini biliyordum.
+2832944	Beni yaralayan tek şey bana güvenmemiş olmandır.
+2843055	Bekliyorum ve Alex'in gelmesini umuyorum.
+2849928	Seni nasıl gücendirdiğimi bilmiyorum.
+2849948	Sanırım onunla konuşsan iyi olur.
+2852669	Bu sefer kendi bildiğimi okuyacağım.
+2870427	Hiçbir şey görmedin.
+2881208	Beklemekten başka bir şey yapamam.
+2896967	Yerken cep telefonunu meşgul etme, lütfen.
+2899327	Tom'u asla tekrar aramadım.
+2904019	Tom'dan senin hakkında bilgi edindim.
+2905452	Üzgün hissettiğini biliyorum.
+2907120	Bu şarkıyı biliyorum.
+2913568	Maria Yahudiliğe döndü ve asla pişman olmadı.
+2921386	Birinin içeri geldiğini duydum.
+2921422	Bu hafta sonunda çalışmak zorundayım.
+2949519	Takımında kaç kişi var?
+2955256	Neredeyse tanıdığım herkes yarınki konsere gitmek istiyor.
+2961710	Tom yarın kesin orada olacak.
+2964525	Tom çekmeceden bir kasap bıçağı çıkardı.
+2969209	Tom cebine uzandı ve cüzdanını çıkardı.
+2969737	Tom acil freni çekti.
+2972987	Tom dün giydiğinden daha farklı bir şapka giyiyor.
+2974267	Tom çıkmaya hazır.
+2976254	Tom haylaz bir ruh hali içinde.
+2978511	Tom Mary'ye tam puan verdi.
+2978527	Tom sahip olduğu her şeyi kumarda kaybetti.
+2979092	Tom bir aileye bakmak için yeterli para kazanmıyor.
+2979408	Tom bana yiyecek bir şey vermedi.
+2982550	Tom kapıyı çalmadan odama girdi.
+2985229	Tom okula zamanında geldi.
+2995174	Dün ciddi şekilde kendini yaralayabilirdin.
+2998692	Onun hakkında bir şey yapmak zorundayız.
+3002876	Tom'un partimize gelmeyeceği doğru mu?
+3004163	Tom'un Boston'a hiç gitmediğinden oldukça eminim.
+3008901	Tom'un müziğe göre ayağını vurduğunu duydum.
+3009613	Tom'dan yardım isteme konusunda biraz tereddütlü olduğumu kabul etmek zorundayım.
+3009759	Aynı şekilde hissediyorum.
+3009973	Tom ve Mary'nin ayrılma nedenini bilmiyorum.
+3010450	Ara sıra beklemek zorundasın.
+3010471	Tom onu neden yapıyor?
+3014295	Bütün ilgilendiğim adalet.
+3017447	Tom daha sonra ne söyleyeceğinden emin değildi.
+3027456	Boston'u seviyor musun?
+3031390	Tom Jackson gibi gitar çalabilen kimse yok.
+3036614	Bu güzel olurdu.
+3037879	Onu başka bir yere götürün.
+3038183	Hiç kimse onun hepsine sahip olamaz.
+3040580	Tom henüz ortaya çıkmadı.
+3044747	Kendi dilim haricinde diller öğrenmek istiyorum.
+3046950	Tom geçen hafta Boston'daydı, değil mi?
+3047367	Boston'da durum nedir?
+3051701	Tom şimdi kötü bir ruh hali içinde.
+3053154	Bütün bu nasıl başladı?
+3054983	O adamın bir polis olduğunu nasıl bildin?
+3055116	Unut gitsin, tamam mı?
+3055290	Tom'un tehlikeli olduğunu düşünüyor musun?
+3055696	Atların ayakta uyudukları doğru mu?
+3055807	Uzun boylu kadın güzeldir.
+3058421	İnsanlar onu nasıl yapabilir?
+3059792	Gözlerimde biraz şampuan var ve yakıyor.
+3061000	Tom'un hırsız olmadığını nasıl bildin?
+3061270	Herkes o hatayı yapar.
+3062946	Tom'un sağ gözünün altında farklı bir yara izi vardı.
+3063883	Xi'an'da tanıştık.
+3064840	Bir sonraki sensin, Tom.
+3065288	Saçını tıraş edersen, tekrar daha kalın uzayacaktır.
+3071079	Tom mektubu okumak için gözlüğünü taktı.
+3072041	Bana gerçeği söylediğin için teşekkür ederim.
+3073554	Tom saçını siyaha boyattı.
+3073683	Yemek pişirmene yardım edebilir miyim?
+3076686	İnternet bağlantım neden bu kadar yavaş?
+3077357	2.30'a kadar burada olmanız gerekiyordu.
+3082586	Okula saat yedide gidiyorum.
+3087178	Tam gün bir işim var.
+3090059	Tom gitmemeye karar verdi.
+3092297	Tom pisliği temizlememe yardımcı oldu.
+3094901	Tom sadece birkaç kelime Fransızca konuşabilir.
+3097658	Bacaklarımdaki hissi kaybettim.
+3106924	Tom sizin için yeterince iyi değil.
+3116990	Bunun gerçek olmadığını ikimiz de biliyoruz.
+3121065	Ebeveynlerimin her ikisi de hâlâ hayatta.
+3121083	Buraya yaşamaya geleli on yıldan fazla oldu.
+3126938	Okyanus gerçekten büyük.
+3130420	Beni çekici buluyor musun?
+3135741	Böyle bir züppesin.
+3138818	Bir aile büyük bir evde yaşıyor.
+3140901	Bütün öğleden sonra meşgul olacağım.
+3141327	Bana inanmalısın. Gerçekten kalmanı istiyorum.
+3142158	Olduğun yerde daha güvendesin.
+3143208	İspanya'da beş dil konuşan bir arkadaşım var.
+3144287	Saatte otuz dolar alıyorum.
+3144425	Tom öncekinden daha samimi görünüyor.
+3148099	O hala bebeğiyle oynuyor.
+3153972	"Köşedeki kim?" "O Tom. Ona aldırma."
+3154067	Asteroid kuşağı Mars ve Jüpiter yörüngeleri arasındaki bölgede yer almaktadır.
+3154447	Hiç Londra'da bulundunuz mu?
+3167397	Pakistan'da en düşük maaş nedir?
+3175181	Tom Mary'nin başka bir yerde olmak istediğini söyleyebilirdi.
+3177760	Tom'un mesajını aldınız mı?
+3186887	O, öğrencilerinden birine âşık oldu.
+3205490	Bu pirinç yapışkan.
+3205499	Bununla ilgili bir şey düşünmedim.
+3208830	Zürih, Londra'dan sonra dünyanın ikinci en büyük altın borsasıdır.
+3223402	Başka becerilerin olduğundan eminim.
+3225477	O sarhoş ve kızgındı.
+3274162	Gulca'nın pek çok türden elmaları vardır.
+3275603	Tom büyük bir olasılıkla geç kalacak.
+3275797	Hiçbirimiz evlenmek istemiyoruz.
+3276210	Bilgisayarım çöktü ve her şeyi kaybettim.
+3279598	O, 5 gün kalacak.
+3279716	Burada güvende olduğumuzdan emin misin?
+3281073	Her zaman onun makalesini okumaya meraklıyım.
+3285479	Planını benimkine uydur.
+3287585	Gözlerinde ölümün korkusunu gördüm.
+3289315	Bana yalan söylemeyi kesmeliydin.
+3294824	Korkacak bir şeyimiz yok.
+3297472	Tom takım arkadaşlarıyla kanoda oturuyordu.
+3301403	Gözler ve kulaklar arasında dört parmaklık bir mesafe vardır.
+3301576	Olasılıkla bundan kimseye söz etmemelisin.
+3301588	Tom bir sokak kavgasında yaralandı.
+3312492	Tom Mary'nin yanında oturuyor.
+3316077	Trang, Tatoeba'yı ne zaman güncelleyeceksin?
+3319396	Bir restorana gittiğimizde, Tom'la aynı şeyi ısmarlamam.
+3320250	Teşekkürler Tom. Çiçekleri severim.
+3323673	Beni görmek istediğini duydum.
+3325744	Postanız başarıyla gönderildi.
+3327922	Göl yakınında kamp yapacağız.
+3328657	Kutuyu açtım, boştu.
+3333151	Adamın, karısından daha fazla ekmeği var.
+3335865	Sadece aramızda kalsın, o benim kız arkadaşım.
+3338186	Bir kütüphanede yüksek sesle konuşan insanları dinlemek sinir bozucu.
+3358186	Bu tuvalet kağıdı zımpara kağıdı gibi.
+3359426	En sevdiğim müzik aleti flüttür.
+3362655	Lütfen haftaya babama gitmeyi unutma.
+3364911	Başka bir planın var mı?
+3367355	Tatoeba için bir şarkı yazdım.
+3367452	Mary sınıftaki en sevimli kızdır.
+3367655	Güvenimi suistimal etti.
+3368330	Ama güvercinler nerede uyur?
+3368438	Beş yıldır İngilizce öğreniyorum.
+3370497	Bunların hiçbiri beni şaşırtmadı.
+3372561	Korkarım burada kalamayız.
+3379174	Unutmayacağıma söz veriyorum.
+3389437	Bir randevuyu iptal etti.
+3389544	Gece yaşamı New York'ta daha iyidir.
+3425615	Öğretmenin dediğini dinleyin.
+3430320	Açlıktan ölse bile yardım istemezdi.
+3431670	Mary senin kız kardeşin olmak için yeterince genç.
+3434760	Bu senin kendi fikrin mi?
+3437612	Yasayı çiğnemiş olmakla suçlandı.
+3438163	Paul baba ile birlikte geri geldi.
+3442831	Fren iyi çalışmıyor.
+3445510	Tom ve Mary arkadaşlarımdır.
+3445792	Duygulu bir kimseyim, bilirsin.
+3446097	Bu şarkı bana her zaman çocukluğumu hatırlatır.
+3447286	Benim için çok acı.
+3452818	Neden Tom'la konuşuyorsunuz?
+3458164	İçeri birlikte girdik.
+3461399	Ne gördüğünüzü bana anlatabilir misiniz?
+3464419	Mary çocuk doğururken öldü.
+3464514	İnsanlar ne düşünür?
+3467354	Mike'a telefon etmeliydin.
+3471577	Emily, üniversitesinde Almanca dilbilimi okuyor.
+3483106	Bugün Tom'a göz kulak olduğunuz için teşekkürler.
+3484645	Tom hâlâ bir şey yapmadı.
+3487164	O bir felaketti.
+3487183	Gezegenleri belirlemek kolay, çünkü yıldızlar gibi parıldamazlar.
+3488809	Sağanak yağmur olacak.
+3491043	Bugün Tom orada değildi.
+3500676	Senin geleceğine ilgisiz kalamam.
+3503243	Yarın mahkemede tanıklık etmek zorundayım.
+3528130	Sahilde piknik yapamadık.
+3528685	Kimse seni işe almayacak.
+3543879	Bugün bile şöyle bir şey diyebileceğimizi düşünmüyorum:"Nükleer santrallerimiz güvenlidir."
+3551079	Bayım, rica ederim bana gerçeği söyleyebilir misiniz?
+3555659	Boston'a gitme niyetinde olduğunu neden bana anlatmadın?
+3560525	Bizim müşteri olduğumuzu anlayınca, bize çay ikram etmek istedi.
+3563576	Tüm dünya bir sahnedir, insanlar da yalnızca birer oyuncu. Sahneye girer, çıkarlar ve zamanları boyunca yedi dönemden oluşan birçok oyun sergilerler.
+3564478	Benim üniversitem farklı.
+3565558	Dil öğrenmek ilginçtir.
+3566638	O iyi bir mazeret.
+3570302	Mary zamanında geldi.
+3571259	Bir kafede kahvaltı yapmak istiyorum.
+3574086	Doğum günümde benim için özel bir şey yapmanı istemiyorum.
+3575044	Tom kim olduğumu bilmiyordu.
+3582195	Kıyafetlerimle çok dalga geçtiler.
+3582643	Sizi görmemişim, özür dilerim.
+3585392	Dürüstlük büyük bir erdemdir.
+3585908	Sağ dizime biraz anti inflamatuar krem akıtıyorum.
+3586838	Bir insana yapılacak en büyük kötülük, ona umut verip sonra hiçbir şey olmamış gibi gitmektir.
+3591013	Şimdi beni terk edemezsin.
+3595118	Bu benim kız kardeşim. Adı Julia.
+3595507	Aslında, ufak bir şikayetim var.
+3601214	Gidince beni ara!
+3606596	Bunu hemen yapmak zorunda değilsin.
+3607425	Bildiğim Fransızca'nın çoğunu bana Tom öğretti.
+3610809	Bu kitabı size ödünç veremem.
+3612639	Benim ne düşündüğümü biliyor musun?
+3615270	Tom ne kadardır orada?
+3627555	İz bırakmadan kayboldu.
+3637985	Artık onunla konuşmuyorum.
+3641148	Güz gelmek üzere.
+3643480	Tom, herkesten ayakkabılarını çıkarmalarını istedi.
+3646193	Mary Tom'la paylaştığı tüm mutlu zamanları düşünerek plajda oturdu.
+3648131	Bir ay boyunca burada kalacağım.
+3651341	Bunlarla yaşamak zorundasın.
+3652267	Bu oldukça garip.
+3656523	Bana banyonun nerede olduğunu gösterebilir misin?
+3660471	Tom zindandan kaçtı.
+3662743	Suratına bakınca kaybolduğu anlaşılıyor.
+3673987	Neden onlar seni işe aldı?
+3677340	Tom ders çalışmak dışında her şeyi yapar.
+3681696	Zaten Tom'u aradım.
+3683079	İşlerin bu sefer farklı olmasını istiyorum.
+3690258	Tom yaşamını kurtardı.
+3691299	Tom bana çok iyi davrandı.
+3691698	Bir şeyin ortasındaydım.
+3692147	Orada biri var.
+3692331	Bu Tom'un beklediği şey.
+3693042	Ben de ofisten biriyle çıkıyorum.
+3697918	Emeklerin boşa gittiği için üzgünüm.
+3702035	Ödevini mi yapıyorsun?
+3702446	Tom'un Fransızcası çok iyi değil.
+3704457	Doğum gününde Tom'la olmak istiyorum.
+3704486	Bu günü asla unutmayacağım.
+3706647	At çalındıktan sonra ahır kapısını kapatmak için çok geç.
+3708771	Google+ yeni bir sosyal ağdır.
+3709735	Tümen yaşam kalitesinin en yüksek olduğu şehirler arasında başı çekmektedir. Ayrıca Tümen'le birlikte Rusya'nın en gelişmiş şehirleri arasına Moskova, Kazan, Krasnodar, Sankt-Peterburg, Çelyabinsk, Ekaterinburg, Krasnoyarsk, Novosibirsk ve Orenburg dahil edilebilir.
+3710883	Dostlarını yakın düşmanlarını daha yakın tut.
+3711056	Dağ sana gelmiyorsa sen dağa gideceksin.
+3711218	Fıstık ezmesi istiyor.
+3716505	Tom hayal gücü çok kuvvetli değil, değil mi?
+3718599	Tom okuldan sonra arkadaşlarıyla beyzbol oynadı.
+3740639	Sakin olmak zorundasın.
+3744336	İlk yazdığım program "BASIC" dilindeydi.
+3747688	Düşüncelerimi düzene koymalıyım.
+3748600	Tom zengin bir ailede büyüdü.
+3750764	Senin için hazırdım.
+3750951	Sana temizlikte yardım edeceğim.
+3751112	Tom'un nereye gittiğini tam olarak bilmiyorum.
+3751191	Bazı adamlar çok yetenekli.
+3753482	Tom Mary'den özür diledi.
+3756277	Konuşacak çok şeyiniz vardır.
+3766003	Tom Mary'yi Boston'da gördüğünde şaşırdı.
+3767766	Eliden gelen en kısa sürede geri gel.
+3767812	Baloya kimi davet etmeyi planladığını bilmek istiyorum.
+3769748	Keşke onu farklı yapsaydım.
+3770085	Keşke Tom'un kim olduğunu bilsem.
+3770119	Keşke kısa kollu giyseydim.
+3772196	Bu sormaman gereken bir soru.
+3772261	Bu işe yaramadı.
+3775937	Keşke ne aradığını bilseydim.
+3776718	Sanırım onu yapmamalıydın.
+3777342	Tom bizimle gidemeyecek.
+3781146	Tom bize yardım etmezse, bunu asla zamanında bitiremeyeceğiz.
+3781469	Tom bir işitme cihazı takıyor.
+3784926	Tom burada üst rafa ulaşmak için yeterince uzun olan tek kişi.
+3785179	Burada gerçek bir karmaşa.
+3789424	Gece yarısından sonra uyandım.
+3789913	Tom'un sağlığını sormak zorundayız.
+3790273	Saat kaç, lütfen?
+3792202	Oyun herkes tarafından dört gözle beklendi.
+3797427	Kompozisyon yarışması için giriş şartları çok sıkıdır.
+3799061	Körü körüne mutluluk.
+3799877	Sözlük benim için çok faydalı.
+3802720	Trene yetişmek istiyorsan koşmak zorundasın.
+3834992	Onu 8'inci sınıftan beri öğrenmekteyim.
+3836563	Ofis kapım her zaman açık.
+3837382	Tom bunu görmek istiyor.
+3838102	Nasıl bu kadar rahat olabilirsin?
+3840201	Bunu tekrar yaptığımı görmek ister misin?
+3845584	Yarın 2.30'da gerçekten orada olman gerekiyor.
+3845603	Yapılması gereken son bir şey var.
+3845614	Ne yapılması gerektiğini öğrenmek zorundayız.
+3847797	Elbette, geri geleceğim.
+3853288	Sakin kalmak zorundayım.
+3857090	Bu gerçekten çılgın.
+3857139	Kalabalıklardan nefret ediyorum.
+3858124	Belli bir yerde ikametiniz olmadığı için başvurunuz reddedilmiş.
+3859539	Ne yapılması gerektiğini sana tam olarak söyleyeceğim.
+3861059	Çocuklar, genellikle şeker severler.
+3866683	Ne sıklıkta jilet değiştirirsin?
+3867302	Buraya geldiğimden beri on yıl oldu.
+3867902	Tom boşandığından beri çok daha mutlu görünüyor.
+3867933	Bana inanmadığın için, kendin ara.
+3868745	Holly'yi en son nerede gördünüz?
+3869026	Hasta hissettiği için okuldan sonra evde kaldı.
+3870763	Bu, iki hafta içinde kendiliğinden kaybolacak.
+3870934	Kalbimi kırıncaya kadar ben burada mutluydum.
+3873556	Bu bir süre alabilir.
+3876531	Çok fazla acele etme.
+3877676	Ben arayana kadar bekle.
+3877983	Bu basit görünüyor.
+3878719	Yağmur duracağı yerde arttı.
+3881948	Onu daha önce hiç yapmadım.
+3882178	Tom büyük bir gazeteci.
+3883520	Oraya ondan önce varmalıyız.
+3885115	Tom Mary'ye bakmaya devam ediyor.
+3887046	Kitaplarım çok iyi satıyor.
+3888568	Bir an burada kalın.
+3889205	Tom bana bekar olduğunu söyledi.
+3889831	O gerçekten gerekli miydi?
+3890901	Doktor şu anda Tom'u muayene ediyor.
+3891088	Gerçekten biraz ara vermek istiyorum.
+3893441	Tom üzerine düşeni yaptı.
+3893673	Her şey plana göre gidiyor.
+3894861	Londra Tokyo'dan iklim olarak farklıdır.
+3896155	İstifa etmek zorundasın.
+3896635	Tom odasını temizledi.
+3898027	Söyleyecek başka ne var?
+3901218	Bu kızı seninle birlikte bırakmak istiyorum.
+3925933	Hayır bilmiyorum. Bir telefon rehberine baksan iyi olur.
+3932328	Onlara yapmamasını söylesek bile, bazı insanlar onu hâlâ yapıyorlar.
+3932402	Bugün yapacak bir şeyim yok.
+3933097	Onu senin için yapacağım, Tom.
+3934690	Bu kitap okuyamayacağım kadar zor.
+3936855	Sana şehri gezdireyim.
+3937266	Sen hiç Washington'a gittin mi, Amerika Birleşik Devletlerinin başkenti?
+3937825	O sınıfı geçmek için biraz ekstra kredi çalışması yaptım.
+3939352	Tom Mary'nin bilmesini istiyordu.
+3940039	Bu kedi şanssız.
+3942425	Tom Mary'den üç kitap ödünç aldı.
+3942502	Tom koyun gibi sırıttı.
+3947321	Tom için kapıyı açtım.
+3950515	Penceremin dışında oynayan çocukların sesini duyabiliyordum.
+3952163	Boston ofisinde yapacak biraz işim var.
+3953044	Seni her zaman seveceğimi bilmeni istiyorum.
+3954433	Boston'a geri gelmenin sebebi bu, değil mi?
+3955011	Yakında bir şey ortaya atmak zorunda kalacağız.
+3955353	Bir şey söylemek istiyorsun gibi görünüyorsun.
+3956945	Sadece bir dakika yatmam gerekiyor.
+3958011	Şimdi diğer sorunumuzu tartışalım.
+3960061	Bunun nasıl olduğunu biliyorsun, değil mi?
+3961946	Ofise geri dönmek zorundayım.
+3962874	Odamda hiç kitabım yok.
+3966378	Gerçekten onun mantıklı olduğunu düşünüyor musun?
+3966626	Bir şey yemeyeceğiz.
+3966805	Kel olmanın en az bir avantajı var - şampuanla ilgili çok tasarruf yaparsın.
+3967645	Onunla birlikte çok zaman geçiririm.
+3968472	Tom asla tek başına kanosuyla dışarı çıkmaz.
+3968832	Tom zamanını nasıl iyi kullanacağını biliyor.
+3969600	Ne düşündüğümü söyleyebilir misin?
+3970242	Bu fiziksel olarak imkansız olurdu.
+3970361	Hangi yola götürmem gerektiğini merak ediyorum.
+3971395	Tom ofisinde olabilir.
+3971867	Gittikçe daha fazla öğrenci protestolara katılıyor.
+3972934	Oraya erken gitmen gerektiğini sana söylemedim mi?
+3974581	Havayla birlikte değişir.
+3975380	Tom döndü ve uzaklaştı.
+3975971	Tom herkese benim Mary'den nefret ettiğimi söyledi ama bu doğru değil.
+3976694	Tabii ki seni affediyorum.
+3977517	Onu senin için yapmaya niyet ediyorum.
+3979943	Bunu bensiz yapamazsın.
+3983132	Tom geldiğim için bana teşekkür etti.
+3984241	Ah, o bana eski günleri hatırlatır.
+3985272	Ona itaat etmeye söz verdim.
+3986340	Nasıl terk edebilirim?
+3986342	Ne kanıtın var?
+3991527	Bazen, Dünya güneşin etrafında dönerken o, güneşle ay arasına gelir. Bu olduğu zaman dünya ay karşısında karanlık bir gölge atar. Bu, bir ay tutulması ya da bir ay tutulması olarak bilinir.
+3993348	Seni asla suçlamadım.
+3996039	Bu gece partiyi unutma.
+3996118	Sigaranı söndürmeyi unutma.
+3998469	Mary'nin hayali bir arkadaşı var.
+4000565	Onlarla konuşmayı özlüyorum.
+4003797	Bizimle gitmeni istiyorum.
+4003979	Bunun bizimle bir ilgisi yok.
+4005833	Onun hapse gitmesini istemiyorum.
+4008652	Her zaman ona güvendim.
+4009714	Sana tamamen güvenmiyorum.
+4017516	Benim saçım Tom'unkinden daha uzun.
+4018002	Bugün bir tane fiyatına iki tane alabilirsin.
+4019924	Neden herkes ağlıyor?
+4024596	Ona karşı kaba olmak istemiyorum.
+4025499	Şimdi kendini daha iyi mi hissediyorsun?
+4025641	Polisi mi çağıracaksın?
+4027699	Ona daha çok denemesini söyle.
+4028392	Ona tam orada olacağımı söyle.
+4028910	Neden önce bize söyledin?
+4029140	Bana onun hakkında söyleyemez misin?
+4029439	Buraya ait olmayan sensin.
+4030462	Onlara dışarıda kalmalarını söyleyeceğim.
+4030810	Yaşlı adamın tek oğlu üç yıl önce öldü.
+4031715	Onlara söylesem iyi olur.
+4032257	Onları durdurmaya çalışmadım.
+4034120	Kalmak bir hataydı.
+4035052	Onları asla tekrar görmeyeceksin.
+4035495	Gürültü Tom'u ürküttü.
+4035534	Sadece Tom'la konuş.
+4038177	Onları tavsiye ettim.
+4040000	Neden o hâliyle gitmesine izin verdiniz?
+4041561	Nihayet bugün onlarla buluştum.
+4042796	Onu sevdiğini biliyorum.
+4043094	Tom size yardımcı olacak.
+4043957	Balığa gitmelerine izin vermeliydim.
+4044929	Tom onu nasıl yapacağını bana söylemedi.
+4046649	Sanırım bunun hakkında Tom'la konuşmam gerekecek.
+4047089	Tom papağanıyla konuşuyor.
+4051790	Burada mutlu olabileceğini düşünüyorum.
+4053933	Ben de sana bir şey getirdim.
+4058349	Jim yolu geçmeden önce sola ve sağa baktı.
+4058508	Delhi Londra'dan çok daha sıcak.
+4060888	Hindistan benim memleketimdir.
+4065670	Burada bir şey olursa, sana güvenebilir miyim?
+4068171	Bebeğini kollarına aldı.
+4068982	Yarın o kapalı olacak.
+4071866	Tom Mary'nin kendisini sevdiğini söylemesini istedi.
+4071994	Tom kızgın görünüyordu.
+4072035	Bay Yamada beni eve götürecek kadar nazikti.
+4075074	Şimdiye kadar tüm istediğim bu.
+4075310	O bir daire satın aldı.
+4076293	O neredeyse yeterince iyi değil.
+4079168	Kyoto'ya varır varmaz hastalandım.
+4083752	Bu benim için önemliydi.
+4086439	Kurallara uymamız benim için önemli.
+4087166	Burada tüm yaptığım bu.
+4089081	Ebeveynlerim şu an evde değil.
+4089439	Tom randevularına geç kalmaya eğilimli.
+4089668	Tom artık geri gelmeli.
+4091689	Tom geçinmeyi başardı.
+4092195	Tom toplantının iyi gittiğini söyledi.
+4093570	Tom seninle Boston'a gitmek istemeyebilir.
+4094532	Tom bizi görmek için uzun bir yol katetti.
+4095315	Tom'un kamyonu oraya geri döndü.
+4097933	Tom denize çapa attı.
+4098429	Tom çok dalgın.
+4098822	Tom dışarıda Mary'yi bekliyor.
+4102051	Onlar bir çocuğu evlet edindi.
+4104823	Tom, gerçekten ne düşündüğünü Mary'ye söyleyecek kadar aptal değildi.
+4105110	Tom'un amacına müsaade edilmedi.
+4106715	Hiçbir şey empatiden daha önemli değildir.
+4109936	Tom neredeyse ev ödevini bitirdi.
+4112846	Senin için Tom'u arayacağım.
+4113026	İşte hep bu yüzden cezalandırılacaksın.
+4113077	Tom Harvard'da bir öğrenci.
+4113972	Sen, şiir için doğdun.
+4117936	Tom pazartesi akşamı çocuklara bakıcılık yapmayı kabul etti.
+4118205	Tom'un bir sürü düşmanı vardı.
+4118568	Git Tom'un kapısını çal.
+4119081	Cennetin anahtarı bende.
+4120303	O adam karısıyla beraber öldü.
+4121057	Bu oyun sıkıcı.
+4121361	Yaptıklarımızı duymak ister misin?
+4123199	Tom hem oğluyla hem de kızıyla gurur duymaktadır..
+4126650	Neden bana yanıt vermedin?
+4129315	Tom Mary'nin şikayetlerinden bıktı.
+4131505	Yeterince zamanım yoktu.
+4135105	Onu yapmak zorunda değilsin.
+4135547	Onlar seni uyardılar.
+4135687	Tom Mary'ye kullanılmış araba almamasını tavsiye etti.
+4136371	Tom'un söylediğine inanma.
+4137591	Ben hâlâ eskisi gibi aynı kişiyim.
+4138375	Bu restoran uzun süredir burada bulunmaktadır.
+4138778	Lütfen orada oturma.
+4143331	Tom kötü dövüldü.
+4144342	Tom uzun zaman önce ayrıldı.
+4144691	Bana kimse bundan bahsetmedi.
+4144692	Japonya'da 43 vilayet vardır.
+4145642	Tom muhtemelen gerçekten hayal kırıklığına uğrayacak, değil mi?
+4145712	Tom azimli, değil mi?
+4145764	Tom oldukça duygusal, değil mi?
+4145783	Bu plastik çöp torbası tehlikeli kimyasallar içermez.
+4146803	Allah biliyor ki elimizden gelen her şeyi yaptık.
+4148193	O mağaza çok uzak.
+4149371	Öğretmen metni sesli okutur.
+4152088	Tom'un ısıtmalı yüzme havuzu var.
+4152744	Onu zaten biliyorsun, değil mi?
+4153669	Tom okulda iyi yapıyor.
+4155102	Sanırım Tom saygısız oluyor.
+4155322	Bana terliklerimi verin.
+4156831	Ben bir karar vermek zorundaydım.
+4156933	Bunun tuhaf olduğunu düşünen tek kişi ben miyim?
+4157971	Tom neden öyle bir şey yapardı?

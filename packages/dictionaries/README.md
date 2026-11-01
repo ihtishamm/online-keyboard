@@ -22,14 +22,31 @@ dumps, downloaded in October 2026; Urdu's source is described below):
 | `es`  | Spanish         | 3,835   | 13.4M      | 100,000    | 40,000 + 10,500 accent |
 | `fr`  | French          | 3,244   | 12.1M      | 100,000    | 40,000 + 14,100 accent |
 | `it`  | Italian         | 7,975   | 14.1M      | 100,000    | 40,000 + 3,200 accent  |
+| `de`  | German          | 3,469   | 12.5M      | 100,000    | 37,500 + 10,600 accent |
+| `pt`  | Portuguese      | 5,838   | 12.6M      | 100,000    | 40,000 + 9,200 accent  |
+| `tr`  | Turkish         | 11,476  | 9.1M       | 100,000    | 40,000 + 24,600 accent |
+| `pl`  | Polish          | 4,173   | 4.8M       | 100,000    | 40,000 + 18,500 accent |
+| `nl`  | Dutch           | 4,204   | 6.9M       | 100,000    | 37,500 + 3,000 accent  |
+| `ro`  | Romanian        | 6,657   | 5.2M       | 87,516     | 40,000 + 12,800 accent |
+| `cs`  | Czech           | 3,530   | 4.8M       | 100,000    | 40,000 + 23,500 accent |
+| `hu`  | Hungarian       | 4,414   | 5.4M       | 100,000    | 37,500 + 21,500 accent |
+| `sv`  | Swedish         | 5,102   | 5.1M       | 97,115     | 40,000 + 16,800 accent |
+| `ca`  | Catalan         | 4,501   | 5.9M       | 74,643     | 40,000 + 6,300 accent  |
+| `hr`  | Croatian        | 7,701   | 4.8M       | 100,000    | 40,000 + 12,300 accent |
 
-The Latin-script languages (plan 7.5) read the first 40 MB of their dump (the oldest, most
+The Latin-script languages (plan 7.5, 7.7) read the first 20 to 40 MB of their dump (the oldest, most
 edited articles), and add everyday sentences from [Tatoeba](https://tatoeba.org) through
 `--text` (`src/import-tatoeba.ts --train`): an encyclopedia rarely says "I" or "you"
 (voudrais, compraste) or names everyday things. All Tatoeba sentences together count half as
 much as the dump (`--text-share`); the 1,000 sentences each spell-check test uses are left
-out, and so are the names Tom and Mary, which Tatoeba gives nearly everyone. Their words keep
-the case they are most often written in mid-sentence (Madrid, la), and lookups fold case.
+out, and so are the names Tom and Mary, which Tatoeba gives nearly everyone, in every form a
+language gives them (Toma, Tomovi, Tomnak, Toms, Maria): capitalised words of Tom or
+Mary/Mari and up to four letters, unless the file writes them in lower case at least a
+quarter as often (Spanish toma stays). Smaller Tatoeba sets weigh more per sentence, so
+Catalan's 10,000 and Croatian's 5,500 sentences count 40 and 84 times. Words keep the case
+they are most often written in mid-sentence (Madrid, la), and lookups fold case. Turkish
+endings after an apostrophe (Türkiye'nin) belong to the name before them; Romanian's old
+cedilla letters ş ţ are read as the comma letters ș ț.
 Every 50th article is held out for the smart-accent test (`test/data/<code>-heldout.txt`).
 
 Balochi has no Wikipedia: its Roman typing runs on rules alone, and it has no suggestions or
@@ -64,9 +81,10 @@ and their `chat.tsv` files come from the
 [Dakshina dataset v1.0](https://github.com/google-research-datasets/dakshina) (Google
 Research), also CC BY-SA 4.0 (`src/import-dakshina.ts`); those pages credit it too.
 
-The Spanish, French and Italian lists also count sentences from
-[Tatoeba](https://tatoeba.org) (CC BY 2.0 FR), and `test/data/<code>-everyday.txt` are
-Tatoeba sentences, with their sentence numbers. Those pages credit Tatoeba too.
+The Latin-script lists also count sentences from [Tatoeba](https://tatoeba.org)
+(CC BY 2.0 FR), and `test/data/<code>-everyday.txt` and `data/<code>/typing.txt` (the
+typing test and tutor's sentences, `src/typing-sentences.ts`) are Tatoeba sentences, with
+their sentence numbers. Those pages credit Tatoeba too.
 
 ### Building another language
 
@@ -102,8 +120,8 @@ Large Wikipedias come in parts: pass them comma-separated to `--dump`. The build
   - Correct words are the native side of the Roman evaluation sets, so Hindi, Bangla and
     Sindhi are measured on Dakshina's rare words, which their word lists often lack.
   - Latin languages are measured on 1,000 everyday Tatoeba sentences. Their false flags on
-    held-out Wikipedia prose, full of names and jargon, are recorded too (`prose`: 1.5 to
-    3.1 %). Words with a capital letter are names there and are not checked; plurals,
+    held-out Wikipedia prose, full of names and jargon, are recorded too (`prose`: 1.3 to
+    9.8 %). Words with a capital letter are names there and are not checked; plurals,
     feminines, adverbs and regular verb forms count as known when their base word is
     (`@okb/engine` spelling rules).
 - **Smart accents** (`test/accents-eval.test.ts`): strips the accents from 2,000 held-out
@@ -111,7 +129,13 @@ Large Wikipedias come in parts: pass them comma-separated to `--dump`. The build
   the language's own accented letters must come back right (on Space, or in the top 3 of the
   bar when both spellings are words), and at most 0.5 % of the other words may change.
   Words with other languages' letters (Nações in Italian text) are counted apart, not
-  scored. Writes and checks `results/accents.json`, which the site publishes.
+  scored. Writes and checks `results/accents.json`, which the site publishes; languages
+  below the target are published as Beta, and the test fails if one that met it drops.
+  Rules are chosen on development sentences, never on the test split: `src/dev-sentences.ts`
+  takes them from the middle of a dump, far past what the word list reads, and
+  `EVAL_DEV=…/{code}-dev.txt` scores them. German, Dutch, Swedish, Hungarian and Turkish
+  words the list lacks are also tried as compounds of known words, or a known word and an
+  ending (Gefäß + wänden, tárgyalás + ának).
 
 ## Urdu (`data/ur/`)
 

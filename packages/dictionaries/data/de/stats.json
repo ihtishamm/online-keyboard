@@ -1,0 +1,15 @@
+{
+  "source": "de.xml.bz2",
+  "pages": 3469,
+  "sentences": 1093675,
+  "repeatedSentencesSkipped": 39643,
+  "tokens": 12510058,
+  "distinctWords": 634279,
+  "wordsKept": 100000,
+  "nextWordHeads": 9931,
+  "text": "de-train.txt",
+  "textSentences": 323205,
+  "textWeight": 2,
+  "heldOutPages": 51,
+  "heldOutSentences": 2000
+}

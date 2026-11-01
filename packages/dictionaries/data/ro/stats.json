@@ -1,0 +1,15 @@
+{
+  "source": "ro.xml.bz2",
+  "pages": 6657,
+  "sentences": 391590,
+  "repeatedSentencesSkipped": 31202,
+  "tokens": 5207235,
+  "distinctWords": 231513,
+  "wordsKept": 87516,
+  "nextWordHeads": 9619,
+  "text": "ro-train.txt",
+  "textSentences": 41142,
+  "textWeight": 9.41,
+  "heldOutPages": 141,
+  "heldOutSentences": 2000
+}

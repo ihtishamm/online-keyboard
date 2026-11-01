@@ -1,0 +1,27 @@
+{
+  "slug": "czech",
+  "code": "cs",
+  "order": 290,
+  "lang": "cs",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Czech",
+    "native": "Čeština"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["cs-easy", "cs-qwertz", "cs-qwerty"],
+  "accents": "áčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ",
+  "sample": "Zítra pojedeme vlakem do Brna, jestli bude hezky.",
+  "voice": ["cs-CZ"],
+  "wordList": true,
+  "translate": {
+    "google": "cs",
+    "bing": "cs",
+    "deepl": "cs"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

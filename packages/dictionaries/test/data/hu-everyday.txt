@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+546561	A kommunikációjuk talán sokkal bonyolultabb, mint ahogy gondoltuk.
+559311	Kiolvastad a regényt?
+568811	Írd meg az esszéd, ne terelje el más a figyelmedet.
+573837	Mossa ki, mielőtt felveszi.
+582156	Ki vagy te, hogy így leszólítasz engem?
+587517	Hol lehet telefonálni?
+591465	Jack elrejtette az eltört tányért, de a kishúga beárulta.
+594029	A nagy bankok többsége vezeti be ezt a rendszert.
+598895	Nagyon boldognak látszott.
+603629	Megfejtetted a rejtvényt?
+603828	Ők bolondulnak a dzsesszért.
+610461	Tudsz egy jó játékot ajánlani nekem?
+610581	Jobb lenne, ha nem hagynánk el a szakterületünket.
+623486	Mint nő, bátran küzdött.
+625235	Rossz a fogsora.
+633167	Szeretném elhagyni a várost és újra felfedezni a természetet.
+633974	Az eszperantó ábécében 28 betű van: a, b, c, ĉ, d, e, f, g, ĝ, h, ĥ, i, j, ĵ, k, l, m, n, o, p, r, s, ŝ, t, u, ŭ, v, z.
+642507	A japán vállalatok nagy hangsúlyt fektetnek a hierarchiára.
+649847	Ezen földterületen a törvény tiltja a felhőkarcolók építését.
+655200	Törpe csak törpe marad, ha hegytetőn áll is.
+658706	A nagybácsi megajándékozta az unokaöccsét.
+666760	Biztos, hogy lekéste a vonatot.
+668832	Harapós a kutya?
+670616	Nekem lenne még egy külön kérdésem.
+673236	Tudod, hogy nem szeretem a tojást.
+688173	Lehet itt kapni alkoholmentes sört?
+689364	A szén az aknán keresztül érkezik a felszínre.
+689370	Ismeri a polgármestert.
+690506	Egy csónakban evezünk, nemde?
+692582	Az egészséges ember nem tudja, mennyit ér az egészség.
+693005	Elnökségi jelölt lett.
+700870	Mához egy hétre tér vissza, azaz december 10-én.
+701534	Nem kell levetni a cipőt.
+702517	Mikor vizelt utoljára?
+707818	Vidéken nőttem föl.
+719156	Tegyen sót a forrásban lévő vízbe.
+731445	Összetöpörödött anyóka koldult az utcasarkon.
+748502	Az beszél, akinek a háza ég.
+768144	A legveszélyesebb betegség a butaság.
+774764	Egy reggel felébredtem és arra eszméltem hogy híres vagyok.
+780577	Szégyenlős kuncogással nyújtotta át az óvszert.
+813927	Luxusruha, üres kassza.
+822483	A férfi fogott valamit a kabátja alatt.
+827478	Mari volt Magyarországon.
+833313	Inkább otthon maradnák, mint hogy moziba menjek.
+853591	Ki a fillért nem becsüli, a forintot nem érdemli.
+900144	Gyermekkorától fogva ismerem őt.
+908455	A rendőr füttyögött, hogy álljon meg az autó.
+937690	Szinte semmit sem tudok róla.
+937720	Viszket a fülem.
+977018	A dohányzás árt az egészségnek.
+1031013	Mérlegelnünk kell cselekedetünk következményeit.
+1043070	A nap delelőn van.
+1044534	A fürdő készen van.
+1067604	Mindenütt jó, de legjobb otthon.
+1080115	Vidám poharazás közben az idő gyorsan múlik.
+1134017	Állandóan rá gondolok.
+1169344	Legyen szerencsém máskor is látni önt!
+1172162	Szeresd felebarátodat, mint tenmagadat!
+1196446	Tom a homlokát ráncolta.
+1250478	Vedd ki a hűtőből a narancsokat.
+1271322	Kész van a vacsora?
+1275760	Emlékszem, hogy fiatal koromban háromszor elolvastam a könyvet.
+1299614	Nekem más javaslatom van, mint ami elhangzott.
+1367407	Nincs semmi sürgős.
+1422308	Brazília fővárosa Brazíliaváros.
+1447750	Hisz a férfi ártatlanságában.
+1456618	Kölcsönadom a cédét, feltéve, ha nem adod kölcsön másnak.
+1497374	Fizetés nap van.
+1577890	Mary olyan kedves lány, hogy mindenki szereti.
+1587751	Milyen? Idős vagy fiatal?
+1589119	Gyalog megy, vagy busszal?
+1594758	Paul összevissza ugrált örömében, hogy nyert.
+1605817	Kivágott egy hirdetést az újságból.
+1677928	Pirkadat előtt odaérkeztek.
+1770858	Fogadd legszívélyesebb köszönetemet!
+1870210	A napszemüveg húsz euróba kerül.
+1908039	Ez a ház jól néz ki.
+1951120	A csokoládénak az LDL oxidációt megelőző hatása van.
+2022526	A nagynéném idősebb az anyámnál.
+2041452	Ma egy unalmas nap van.
+2041456	Találnom kell valami érdekes tennivalót.
+2061475	Kell neked a kulcs?
+2069623	Heveny krízise volt.
+2083525	Az ittas vezetés veszélyes.
+2102328	Fontos, hogy emlékezz rá, hogy kik a barátaid.
+2115679	Nem szeretem a matematikát, a fizikát még kevésbé.
+2127169	A házam egy buszmegálló közelében van.
+2134302	Tom felhívott Bostonból.
+2134374	Mi történik? Nagyon sápadt vagy.
+2134389	Szívesebben mennék taxival, mint gyalog.
+2145423	Szegény ember csak kenyéren és vízen él.
+2145440	Az újévi üdvözlőlapok lehetőséget kínálnak arra, hogy megtudjuk, mi újság a barátoknál, rokonoknál.
+2151823	Kialudta a bódulatot.
+2157925	Róbert egy év óta szerelmes Mariba.
+2158091	Az az őr mindent a szabályok szerint szokott csinálni.
+2166153	Volt egy nagy háza és két autója.
+2175363	Azt lehet mondani, hogy a legnagyobb és a legkisebb dolgok kutatása hozzájárul Isten dicsőségéhez, amely tükröződik a világegyetem minden részében.
+2178417	Alig figyelnek rá.
+2190550	Némelyik ház kevésbé tetszik nekem.
+2190719	Itt az idő, hogy független légy a szüleidtől.
+2195543	A házam szép.
+2200832	Aki elmegy az alkalom mellett, soha rá nem talál többé.
+2211817	Együtt megyünk, és te vezetsz.
+2219340	Az nincs hazugság nélkül.
+2219720	Mikor eszünk? – Nemsokára.
+2228581	A vendégek hármasával jöttek.
+2228624	Azt csak szükség esetén tedd.
+2233412	Ne hívd meg, úgysem jön el.
+2240925	Várok, míg el nem alszik, jól nem lakik, abba nem hagyja az evést, nem eszik már.
+2240941	Mindaddig, amíg a helyzet követeli, fizessünk kétszeres tagdíjat.
+2263717	Nappal a napot látjuk, éjjel a holdat és a gyönyörű csillagokat.
+2279524	Mostantól számítva alig két hét múlva itt a karácsony.
+2298956	Tanulj keményen, hogy átmenj a vizsgán!
+2312120	Te vitted haza őt tegnap este?
+2344204	Amit mondott igaznak bizonyult.
+2350293	Hazugságért büntették meg.
+2386657	Ne lógasd a fejed.
+2387941	Nem vagyunk veszélyben most.
+2451908	Ismételjük meg ezt a játszmát.
+2451917	Ez nem az én nagy házam.
+2457296	Kiküldte a fiát a világba.
+2459770	Szereted a nyarat?
+2533290	Az az álmom, hogy baseball játékos legyek.
+2626885	Mit mondott tegnap?
+2664622	Bizonyára gazdag, ha három autót tart.
+2664865	Minden barátom szereti a futballt.
+2681457	Hogy följussunk a meredek dombra, kezdetben lassabban kell lépkedni.
+2696167	Ezek a zoknik nem passzolnak.
+2696349	Ez az én mondatom.
+2736776	Nem zavarok, ugye?
+2750681	Szerinte nem ő jön.
+2754103	A szultán elvesztette a türelmét.
+2776138	Maria nagyon gyorsan úszik.
+2776267	Nem az számít amit mondasz, hanem az, hogy hogyan mondod.
+2781569	Adtam neki pénzt kölcsön, de még nem adta vissza.
+2784193	Ő végül megoldotta a problémát.
+2784239	Töltsd az idődet ahogy akarod. Végül is a te időd.
+2784422	El vagyok foglalva a házi feladattal.
+2787248	Mikor, ha most nem?
+2800571	Sikerült átúsznunk a folyót.
+2810368	Ezen a héten egy súlyos meghűlés akadályozott engem a tanulásban.
+2819737	Ezt még egy gyerek is megérti.
+2820280	A rab kért egy darab kalácsot.
+2834893	Ön túl sokat vár a hölgytől.
+2865032	Megmostad a fogadat?
+2880351	Nem félemlítelek meg.
+2886277	Nézze azt a magas hegyet!
+2968381	Ugye, kicsit beszél franciául.
+2976934	Nem találok szabakat!
+2995584	Nincs szoba a számomra?
+3017283	Nem kellett volna ilyen korán jönnöd.
+3034837	Jani nem tud gitározni.
+3042784	Soha ne vegyél kölcsön autót!
+3061247	Ismert a városban.
+3061460	Alapos töprengés után úgy döntöttem, hogy nem fogadom el ezt az ajánlatot.
+3065227	Nem kívánom a húst.
+3066086	Minél több a hivatalnok, annál gyengébb a kormányzat.
+3079678	"Glaso de vino" egy olyan pohár, amelyben előzőleg bor volt, vagy amelyet borhoz használnak; "glaso da vino" pedig egy borral teli pohár.
+3081501	Havai egy népszerű turisztikai célpont.
+3083848	Ez a mi hibánk.
+3104715	Ezután légy prudensebb!
+3109942	Mondd csak, miről beszélgettetek?
+3115132	Tomnak van valami érzelmi problémája.
+3115945	Muszáj leadnom egy keveset. Az öreg farmerjaim nem lesznek jók rám!
+3116097	Ez egy levél a XV. századból.
+3127120	Én Franciaországból származom.
+3128654	Új vezetőséget választottak.
+3129004	Miért használnak mégis sokféle hamis adatot nyelvészek, eszperantisták, szerkesztők papíron és neten egyaránt?
+3130519	A 12-es megáll az Operaház közelében.
+3159336	Emília föltett nekem egy kérdést.
+3167034	Mindenki tudja, hogy ez a vegyszer ártalmas az emberre.
+3195561	Nagyon szeretek utazni.
+3197710	Ki ez a fiú?
+3211560	Az öltözéked nem illik ehhez az eseményhez.
+3211956	Próbáltam nem gondolni rá.
+3231156	Tomi nincs annyira sokkal magasabb, mint Mari.
+3239514	Az autó hátsó ülésén három utas részére van hely.
+3239614	Ez alkalommal nagyon optimista vagyok.
+3239628	A kutya gyorsabban fut az embernél.
+3243478	De mit is mondtok?
+3246747	Ezt most mi nem tudjuk megnézni.
+3251203	Egy nap milyen gyakran nézed meg magad a tükörben?
+3254665	Ma is fáradt vagyok.
+3255317	Van két macskám.
+3262534	Én jól ismerem a klub elnökét.
+3262601	Tomi játékokat tölt le.
+3263294	Milyen hatalmas fa ez!
+3265020	A herceg leütötte a sárkányt.
+3266257	Kecses kezei és lábai voltak, nagy feje és kerek szemei.
+3266730	Nem, ő nem az új kedvesem.
+3267091	Megbocsátott az ellenségének.
+3267250	A rossz időjárás az egészségére is kihatott.
+3268847	A bálteremben az első párok táncolni kezdtek.
+3268868	Tomi megkérdezett bennünket, hogy van-e kérdésünk.
+3277875	Nagyon sok dolog van, amit holnapig el kellene végezni, de már nem fog menni.
+3281186	Nem tudok semmit az ő múltjáról.
+3291697	A valóság ijesztő.
+3295120	Maradt még fagyi?
+3315365	Századszorra mondom, hogy sajnálom.
+3321908	Tegnap este rizst ettem karival.
+3324200	Remélem, hogy apa hamarosan visszajön külföldről.
+3324936	Minden név alfabetikus rendben került a névsorra.
+3327823	Ez nem néz ki jól.
+3364767	Nem bízol az ösztöneidben?
+3376481	Futottunk a macska után.
+3383995	Itt dolgozott Tom.
+3393412	Kinek kék a ruhája?
+3394179	Jó lenne neked, ha beszélnék erről a feleségemmel?
+3401810	Kedvenc időtöltésem a főzés és az olvasás.
+3402979	Nem szereti a halat.
+3433465	Korábban az emberek azt gondolták, hogy a föld lapos.
+3433529	Kérlek, vedd fel a cipődet.
+3433536	A döntést elhalasztották.
+3435149	Régen nem láttuk egymást!
+3450286	A papír fehér; a hó szintén fehér. A papír és a hó fehérek.
+3465012	Tom dalokat írt.
+3466541	Íróként keresi a kenyerét.
+3475094	Csinálsz nekem egy kávét?
+3487193	Tomi levegő után kapkodott.
+3488197	A bébi szereti a tejet.
+3490966	Fáj ez a fogam.
+3497367	Meg akarok ismerkedni veled.
+3500310	Kelts fel, kérlek, fél hétkor!
+3511575	Színezék, tartósítószer és mesterséges ízfokozó nélkül.
+3513103	Az osztályteremben nem szabad zajongani.
+3517932	Ez a gyógyszer majd kigyógyít a megfázásból.
+3518618	Nem tudtam aludni.
+3520159	Havonta egyszer itt találkozunk.
+3520286	Letette az imakönyvét a kertben egy asztalra.
+3523197	Tüdőrákot is okozhat.
+3550951	Ez tényleg bosszantó.
+3556014	Szereted még Tomot?
+3565470	Péter részegen jelent meg a munkahelyén.
+3565474	Piroska eladta a karkötőjét.
+3572568	Nem tudtam elképzelni, hogy valaha is elveszítem a szüleimet.
+3572632	Kettőnk közül a feleségem a békülékenyebb.
+3573393	Piroska mindig divatosan öltözködik.
+3582167	Feltételezem, hogy ma este nagyon el leszel foglalva.
+3600928	A garnélarák a szívét a fejében hordja.
+3605606	Senki nem akar veled dolgozni.
+3635136	Most mindenkit utálok.
+3644310	Ne beszélj légyszíves.
+3650147	Már benned sem bízom.
+3651400	Nem csinálnak mást, csak panaszkodnak.
+3653671	Úgy látom, hogy ez jó lesz nekünk.
+3654246	Nekem nem tetszik a véleményük.
+3658012	Furcsa szokásaid vannak.
+3658118	Nem kell semmitől tartanunk!
+3659820	El az utamból!
+3662514	Valamiért tudtam, hogy neked sikerülni fog.
+3676763	A nemzet a király halálát gyászolta.
+3678602	Azt akarom, hogy meg legyen javítva, méghozzá amilyen gyorsan csak lehet.
+3679494	Mennyünk mi is közéjük!
+3680111	A barátnője kísérte el.
+3683358	Nem vagyok közveszélyes.
+3684287	Mit gondoltok, lehetséges?
+3686801	Mit mondtál az előbb?
+3687431	Tom egészen jó szakács.
+3688649	Bélának elfogyott a szívgyógyszere.
+3690000	Péter egy szép gyűrűvel kedveskedett Évának.
+3698553	A feleségével együtt elköltözött Isztambulba.
+3701632	Ki fog nekem segíteni, ha megöregszem?
+3701847	Ne halj meg!
+3702645	Ez a szelence négyzet és nem téglalap alakú.
+3703730	Láttam Tomot teniszezni.
+3709387	Csukva tartotta a szemét.
+3732116	Sok szerencsét a teszthez.
+3740201	Vedd le a maszkodat.
+3745432	A helyedben én ezt nem tűrném tovább.
+3745952	A nyelvi jogok témájáról beszélgetett velünk.
+3745971	Ez nem egy mondat.
+3746977	Semmi sincs, amit pénzért ne lehetne megvenni.
+3751181	Kinek a híres mondását idéztem az előbb?
+3753459	Tom tudta azt?
+3756918	Feltehetek neked egy kényes kérdést?
+3760784	Még a portással is lefeküdtél?
+3765464	Péter mindenkivel kötekszik a munkahelyén.
+3767891	Mind a két írásmód helyes.
+3776157	A távolság nem tudta kioltani a szerelmes érzéseket.
+3776160	Az éjjel ismét láttam azt az álmot.
+3777067	Köszönöm mindenkinek a gratulációkat.
+3780706	Milyen jó süppedős ez a szőnyeg.
+3785186	Hamar hazajöttetek, talán nem volt jó a buli?
+3791615	Piroska sárga szalagot tett a kislánya hajába.
+3794428	Már sok ember kérte a segítségem.
+3798369	Judit véletlenül cserélte össze a két tányért.
+3800729	A szekrény mellett van az ablak.
+3802297	A társulatunk tavaly egy hónapig Kínában szerepelt.
+3802779	Péter mindenkinek azzal dicsekszik, hogy hamarosan nagyapa lesz.
+3804248	Éppen telefonon beszélek.
+3804921	A dalt, amelyet el szeretnék énekelni, már ismerős a számodra.
+3805900	Judittal jól álcáztuk magunkat.
+3810016	A nagyobbik lányom már elvégezte az egyetemet.
+3810205	A fiam fizikát tanít az egyetemen.
+3813785	Adják vissza a fiamat!
+3844412	Miért nem álltál meg, amikor mondtam?
+3845240	Csak Évára tudtam figyelni.
+3845774	Hallok valakit énekelni.
+3846658	Az egyedüllét függetlenség.
+3851880	Nem számíthatok rád.
+3853539	Tom soha nem ölt meg senkit.
+3860889	Péter volt a férjem legjobb barátja addig, amíg egy vadászaton össze nem verekedtek.
+3864343	Az összes harci repülőgépnek csupán a fele képes harcolni. A többit más feladatokra használják.
+3868272	Ugye találok megoldást?
+3874271	New York állam csaknem olyan nagy, mint Görögország.
+3875040	A bátyám most Ausztráliában van.
+3880134	Sok baromságot csináltunk együtt Bélával.
+3883141	Vettem egy régi lámpát.
+3890251	Éváék Szöulba mennek nászútra.
+3898593	Átgondoltuk, amit mondtál.
+3901760	Veletek értek egyet!
+3922188	Vigyázz a tolatással!
+3922816	Ági főzés közben ír is.
+3923479	Romlott életet él.
+3927580	Jobban bízott a lábaiban, mint a kezeiben.
+3930700	Dan Linda lakását nézte az ablakából.
+3932875	Tessék eszperantóul beszélni.
+3933763	Ti is tudjátok, hogy ez nem normális.
+3937097	Na ide hallgass!
+3940062	Még csak nem is vagyok kanadai.
+3940295	Mind tudjuk, mi fog történni.
+3941518	Krisztián sok meccsen játszik kis együtteseknél.
+3942793	Nem szándékozom követni a tanácsaidat.
+3942797	Ne engedd bejönni Tomit.
+3948025	A húgodat ne hozd többet ide!
+3948539	Töltött paprika a vacsora.
+3950936	Mai napon APEH bevallást kell beadni.
+3951527	Úgy látjuk, hogy ebből már nincs kiút.
+3952515	Muszáj volt hazudnom az unokámnak.
+3956066	Muszáj megvennem ezt a lakást az unokámnak!
+3965195	Most már érted?
+3965981	Nem tudsz kiszedni belőlem semmit.
+3967992	Ez az ön autója?
+3968344	Muszáj volt megszegnem az ígéretemet, amit a lányomnak tettem.
+3968391	Bedőlt a hitelem.
+3974100	Ráér később is. Látom, hogy most nagyon el vagy foglalva.
+3974144	Az emeleten nem lehet parkolni.
+3976698	Ken időben érkezett.
+3978397	Elárult a legjobb barátom.
+3983909	Mary a kertet locsolta.
+3983944	A nővéred ebbe nem szólhat bele.
+3990180	Te Béla lánya vagy?
+3991163	Idén már sokan belefulladtak a Tiszába.
+3991986	Adjon egy kis időt, amíg összeszedem a pénzt.
+3999876	Minket nagyon zavar a barátnőd viselkedése.
+3999951	Az én apukám mindent tud.
+4008844	Te minden este részegen jössz haza.
+4021861	Nem ezt ígértétek.
+4024850	Láttam néhány majmot felmászni a fára.
+4029920	Most a sógoromról van szó?
+4034717	Dani megtudta, hogy Linda elhunyt.
+4034780	Nagy teher nyomja a vállam.
+4037896	Többet kellene tanulnia ennek a gyereknek.
+4037916	Bepárásodott a szemüveg.
+4044712	Egy hónapban lehet öt hét is.
+4046988	Még nem érkeztek meg.
+4049323	Holnap majd elmondom, hogy mit csináltam, és amiért nem voltam otthon.
+4054459	Bölcs ember vagy, Péter.
+4055370	Ugyan, ne bolondozzatok már megint velem!
+4058324	Hagytatok egy kis szódavizet?
+4058421	Képtelen vagyok elviselni Évát.
+4065413	Az ajtó belülről van bezárva.
+4073433	Melyik út biztonságosabb?
+4073629	Raboljuk el a gyerekét!
+4080607	Az én anyukám dohányzik.
+4082232	Tom egy hokedlin ült a sarokban.
+4082652	Mi jöhet még?
+4082697	Mire itt lesznek a vendégek, te tök részeg leszel.
+4087833	Sikerült felhívni a szállodát?
+4087922	Hol iható a víz?
+4088042	Tom egész nap a tévét nézi.
+4090083	Meg tudom oldani ezt a problémát.
+4094594	Ez most a legnagyobb sikerünk.
+4097275	Szerinted holnap esni fog?
+4098805	Le kell törölni a polcokat.
+4103885	Mit akartok? Tapsot?
+4104576	Hála Istennek, megjöttek!
+4104844	Minden órában esik az eső.
+4104967	Csak nem sértettem meg?
+4113750	Engem már nem érdekel senki.
+4118192	És ezt míóta gondoljátok így?
+4118384	Nem voltak ott.
+4119669	Ha végzünk, már itt sem vagyunk.
+4121058	Tom nem ment egyedül.
+4125050	Nem is volt olyan szörnyű, ugye?
+4128441	Hagyja abba a duzzogást!
+4128548	Béla jól mulatott a farsangi bálon?
+4130428	A gyerekeket ágyba dugtam.
+4142938	Nem tudok semmit Bostonról.
+4143061	Reggelizz mindig rendesen!
+4148622	Senkire nem haragszunk.
+4150046	Tudná nekem érvényesíteni ezt a parkolójegyet?
+4151167	Tudtam, hogy valami nem stimmel.
+4155615	Miért nem eszed a csokoládédat?
+4156212	Sokra tartod magad!
+4156701	Nincs is itthon bor.
+4162054	Mennyi ideig fogunk várni?
+4163482	Most én vagyok a főnök.
+4168389	Megkérjük az engedélyt.
+4177156	Meg kell tanulnod a másik szemével is látni a világot.
+4177760	A lányom nem fél a veszélytől.
+4180365	Nem volt elég pénzünk.
+4187570	Nekünk is megvan a magunk gondja.
+4190657	Úgy csináltunk mindent, hogy jogilag ne lehessen megtámadni.
+4190903	Ez az egyetlen dolog, amihez tényleg értek.
+4192981	Lehet, hogy Évának ez nem mindegy.
+4196169	Nehogy valaki véletlenül bejöjjön.
+4197493	Nincs benne elég kurázsi.
+4198029	Figyelj másokra is.
+4203387	Máris túl sokat mondtál.
+4203454	Ez az ágy kettőnknek is elég.
+4208351	Jó, hogy elmeséltük egymásnak a problémáinkat.
+4209709	Úgy látszik, igazságtalan voltam Évához.
+4211211	Ha nem jelentkezel, akkor lemaradsz az előadásról.
+4211931	Szülői segítség nélkül boldogultam.
+4211959	Nem lett jó vége.
+4212794	Még mindenki alszik?
+4212828	Utoljára beszélhetek vele.
+4216256	Ők már nem árthatnak neked.
+4216599	Naponta több mint kétszáz emailt kapok.
+4217788	Emlékeztetem rá, hogy még mindig eskü alatt áll.
+4219810	Magamra már alig költök.
+4220199	Az idegenek rejtett manipulációval megakadályoztak egy nagy földi háborút.
+4221488	Tom már itt van.
+4224538	Ugye, te új vagy itt?
+4227562	Más nem válthat meg.
+4230807	Tudom, hogy itt laksz.
+4232249	Egy palócleves elég lesz ebédre?
+4232279	Legszívesebben egy palóclevest főznék.
+4232296	Tom azt mondta nekem, hogy meg fogja csinálni.
+4232698	Nos, mi az ábra?
+4232723	Mindenki maga dönti el, hogy meddig akar maradni.
+4232837	Lélegezz mélyen, és akkor meg tudsz nyugodni.
+4233210	Csak mondd meg nekem az igazat.
+4233815	A bátyja elesett Vietnamban.
+4235075	Te is unatkozol?
+4235914	Tudom, hogyan kell újraélesztést alkalmazni.
+4238146	A csapat csak annyira erős, amennyire a leggyengébb tagja.
+4238466	Ennek a multimilliomosnak öt otthona van négy országban.
+4239404	Döntött a bíróság.
+4239565	Hol az igazság?
+4239608	Hogy jutok én így haza?
+4242159	Tegnap egy szép este volt.
+4245744	Ki is eshetett volna a gyerek az ablakon!
+4245893	Hol van itt a vészcsengő?
+4246800	Miért ég a lámpa?
+4248031	Már sínen vagyunk, de jön a vonat.
+4249868	Mondom, hogy nem az én hibám volt!
+4251356	Évát is megbántottad.
+4254453	Honnan tudod, hogy Tom blöfföl?
+4257068	Összefolyik minden előttem.
+4257073	Még ma hazamegyek, az biztos.
+4260610	Én cukrot kértem.
+4260797	Egész vacsora alatt nagyon gondterheltnek láttalak.
+4260902	Kérni fogom a leszerelésemet.
+4260912	Van egy csomó tartalékom.
+4261028	Most megszedhetem magam.
+4263579	Éva otthon maradt.
+4263614	Éva nagyon nem bírta a kórházat.
+4264570	Tom Ausztráliában nőtt fel.
+4265393	Jó lesz, ha elköltözöm innen.
+4265749	A fekete papír elnyeli a fényt.
+4265891	Az élet lényege a győzelem!
+4266275	Apu fizeti a tandíjunkat.
+4266332	Tom már nem a szüleinél él.
+4269523	Jöjjön, amikor önnek alkalmas.
+4270442	Ezek a lányok nem voltak túl bőbeszédűek.
+4274334	Nem tud hazudni.
+4276312	Bennetek ez még fel sem merült?
+4276421	Régóta szerettem volna változtatni valamit a hajamon.
+4277367	Tomi az egyetem filozófia karára jár.
+4279354	Évának nagyon sokat kellett tanulni, hogy sikerüljön neki a vizsga.
+4288230	Nekem amúgy is mindegy.
+4289309	Akkor is szeretném megpróbálni.
+4289881	Én nem akarok menni.
+4296260	Nyugtával dicsérjük a napot.
+4309082	Mindent pontosan el kell mondanod, amit láttál!
+4312112	Nem kötök fogadást ilyenre.
+4320454	Tom valószínűleg jönni fog.
+4323339	Csak pocsékolom az energiáimat.
+4323426	A nyelv az, amit az emberek beszélnek, és nem az, amit egyesek szerint beszélniük kellene.
+4329378	Már nem sokáig bírom ezt a melót.
+4334476	Majd mindezt egy kevés langyos tejjel jól összedolgozzuk.
+4337471	Ez minden, amit tehetünk.
+4338173	Szervezzük meg magunkat.
+4340132	Eléggé biztos vagyok benne.
+4340206	Tegnap találkoztam Máriával.
+4340636	Tomi rendesen kidolgozta magát.
+4341161	Évának sürgős dolga akadt.
+4344625	Föl kell készülnöm.
+4348663	Térjünk vissza a tárgyra.
+4356573	Nem tudom, ki tette ezt Tommal.
+4357169	Múlt éjszaka mentek el.
+4362140	Túl sokáig tart.
+4364345	Menj csak vissza, folytasd a munkádat.
+4373134	Ennek a ládának egy tonna a súlya.
+4373263	Nem tudunk többet mondani.
+4374741	Te is tévedhetsz!
+4379641	Nem szólalt meg a riasztóm.
+4381942	A nyár és az ősz testvérek.
+4385529	Jogi úton indította el a háborút.
+4387545	Egy jó gondolata támadt.
+4388294	Biztos, hogy nem kérsz salátát?
+4388949	Éva sokkal ügyesebb nálam.
+4391501	Magunk is meg tudjuk csinálni.
+4391647	Várhatnál még egy kicsit.
+4391846	Nem törtem be.
+4398227	A vulkán már jó régóta inaktív.
+4400973	Nincs semmi baj a szívemmel.
+4401237	Ezt megtehetem érted.
+4401442	Mary hányinger elleni szert vett be.
+4404600	Vannak barátaid az osztálytársaid között?
+4407688	Szívből szeretném, ha álmaidban becéznél.
+4410335	Néha háton alszom, valamikor hason, és van, amikor az oldalamon.
+4410652	Nem tudtam, hogy tudsz franciául.
+4411364	Húzd fel a sötétítőt, hadd jöjjön be egy kis fény.
+4414322	A hazudozás jól megy neki.
+4415110	Valaki ellopta a holmimat.
+4415701	A ház elhagyatott volt.
+4419954	Miért lennék én gátlástalan zsarnok?
+4420054	Szívesen reggeliznék veled együtt.
+4423827	Lehetett volna rosszabb is.
+4425077	Még mindig időre van szükségem.
+4427930	Tudtam ám, hogy így lesz.
+4428859	Milyen hosszú ez?
+4431355	Nem tudok tovább mozdulatlanul ülni.
+4431548	Remélem, van egy jobb terv is a tarsolyodban.
+4432450	Tom lőtt először.
+4432943	Javítom a mosógépet.
+4435565	Nem én írtam ezt a levelet.
+4436034	Mennyi ez az ing?
+4436083	Egyszer mindenki meg fog halni.
+4436387	Ha könnyű lenne az élet, mi értelme lenne?
+4436397	Azzal kell beérned, amid van.
+4437485	Az oxigén hidrogénnel reagálva vizet alkot.
+4439604	Ez a legjobb munkakör.
+4440256	Nem jössz velünk?
+4440546	Elsőre nem találtam el.
+4441268	Abban az időben kislány volt.
+4441270	Támogatja a családját.
+4441963	Még nem tudom egészen biztosan.
+4442130	Mikor kell ismét jelentkezned?
+4443320	Nem ért velem egyet.
+4443702	Amikor harapok, fáj ez a fogam.
+4447295	Azzal próbálták elrettenteni a gyerekeket attól, hogy az erdőben játsszanak, hogy manókról és koboldokról meséltek nekik.
+4451581	Én nem ugrok utánad.
+4451586	A rossz fiúk uralják az utcát.
+4451609	Nem fog fázni, mert vattával van kibélelve a kabátja.
+4451790	Megérdemelsz egy fizetésemelést.
+4455891	Az ajtó megvéd bennünket és a tulajdonunkat az idegenekkel szemben, és nem engedi ki vagy be a hőt.
+4458536	Nem te voltál.
+4459896	Van egy feladatom a számodra.
+4461709	Az első géppel elrepülök.
+4465641	Túl sok a hasonlóság.
+4467909	Ön a történész.
+4475129	Célszerű csütörtökön vásárolni, amikor a gyümölcs és a zöldség frissebb.
+4476651	Mary olvasta a német fordítást.
+4476802	Egyszerűen már nem érzem magam itt biztonságban.
+4478429	Eredetileg tegnap kellett volna utaznom.
+4481285	Nem arról van szó, hogy mit mondtál, hanem, hogy hogyan.
+4485749	Kiegyezik a társával.
+4486128	Nem szeretem a neveletlen gyerekeket.
+4486983	Talán szükséged van még rám?
+4486996	Ő egy csodálatos lány.
+4505476	Tom volt a győztes.
+4508681	Hamarosan frissíteni fogom.
+4510706	Önök sem lesznek fiatalabbak.
+4516833	Én tudom, hogy hogyan lehet megoldani a problémát, de megkértek, hogy neked ne mondjam meg.
+4519018	Semmit nem ettél.
+4519022	Nem kell többet dolgoznom.
+4520482	A legjobb mindenkinek, ha hallgatnak.
+4521893	Kiengedték a kóterból.
+4521904	Nincs elég tollam.
+4534515	Aki meg akar ismerni valakit, meg fog ismerni valakit.
+4541212	A világon csak egy igazság van!
+4542029	Apa pár perce ért haza.
+4545077	Gondold csak át, mit mondtam!
+4545491	Mikor érkezik meg Tom?
+4545603	Három fa van az udvarunkban.
+4571980	A sérülés gyorsabban gyógyult, mint várták.
+4574024	Sose veszítsd el a reményt!
+4576515	Pont annyi időm van, mint neked.
+4577286	Nagy a baj nálatok.
+4584763	Nincs mit veszítenem.
+4589657	Ez kemény melónak látszik, de vállalom.
+4589689	Lehet, hogy ez nekem is jót tenne?
+4597488	Anyám mellett kuporogtam a kanapén.
+4599925	Egyszerűen felejtsd el!
+4600274	Volt egy kis összetűzésem a szomszédommal.
+4606057	Ez egyáltalán nem volt kellemetlen.
+4606957	Ezt a kiscsomagot önnek címezték.
+4609268	Nem kellene kibeszélni a barátokat a hátuk mögött.
+4612389	Hogy ma este itt lehetek, azt teljes egészében neked köszönhetem.
+4612939	Hogyan jutottál erre a gondolatra?
+4617858	Tom nem számított látogatóra.
+4620830	Apád nagyon szerette ezt a szállodát.
+4624751	Tom sokat hibázik, amikor franciául beszél.
+4627769	Nagyon remélem, hogy ez jó lesz.
+4628153	A csapatunkból hiányoznak a karizmatikus egyéniségek.
+4631138	Tom kimagaslóan jól tanult.
+4633801	Nincs meg a poggyászom.
+4634669	Nagyon szeretitek egymást, ugye?
+4651866	Ha Péter újra jelentkezne, visszafogadnád?
+4653758	Kigúnyoltuk őt emiatt.
+4659645	Senki sem boldog.
+4661059	Lemászott a majom.
+4661135	Kibeszélte a titkom.
+4668071	Imádom ezt a férfit!
+4670720	Felnyitotta a borítékot.
+4672392	Sok minden jár a fejemben.
+4673872	Éva nem fekszik le velem.
+4684770	Ne beszélj az üzletről az asztalnál!
+4697271	Tom sokkal többre is képes lenne.
+4697414	Ez nem szerencse kérdése.
+4698672	Mutasd meg a térképen!
+4701120	Nem szabadulhatsz tőlem.
+4701889	Gyerekeket tanítok lovagolni.
+4701988	Mi az, ami időtálló érték?
+4703167	Kihalt az utca.
+4703336	Most már nincs hozzá kedvem.
+4712818	Tudsz gyorsan úszni?
+4714885	Milyen oktalanok vagytok!
+4714891	Ez mindnyájunk számára egy nehéz helyzet.
+4716725	Kérem, bánjon jól a cicával.
+4719056	A jövőben tartózkodj a látogatóktól!
+4721460	Csak semmi érzelgősség!
+4733329	Vízzel töltik meg a boros flakont.
+4733357	Ugye, ezt akarod mondani?
+4734633	Nálad boldogabb vagyok.
+4735518	Tom jól rajzol.
+4736817	Mindenben felülmúlja a riválisait.
+4736883	Amíg nincs bizonyítékod, addig ez a beszélgetés meg sem történt.
+4737581	Szerintem, szeretnek engem.
+4738413	Le szabad ezt brazíliai portugálra fordítanom és a blogomon megjelentetnem?
+4743440	Van ennek valami értelme, apám?
+4751292	Az előadásnak folytatódnia kell.
+4753431	Semmit nem tud a tervről.
+4760053	Mindegy, hogy mennyit tudsz, sosem lesz elég.
+4760902	A bátyám tévét néz.
+4761073	Ez az étel nagyon finom.
+4762180	A reggelihez lehetőleg mindig iszom tejet.
+4762185	Még van egy kevés tej a hűtőben.
+4763481	Mesélte nekem Tom, hogy meghalt az apja.
+4767608	A rendőrség alaposan átkutatta a házat.
+4784184	Tomi hozzászokott a munkához.
+4784843	A matematika a kedvenc tárgyam.
+4787690	Tudja Tom, hogy mit tett Marie?
+4788605	Engem ki szeret?
+4791719	Szeretnék hazamenni és aludni.
+4791756	Előbb-utóbb meg fogja bánni.
+4791804	Inkább hagyd rám a tervezést.
+4792599	Kritikus szemmel tekintett végig a jelenlévőkön.
+4795421	Mikor jössz el hozzám?
+4802915	A béke kedvéért Tomi mindig igazat ad Marinak.
+4803063	Erőteljes vonzó kisugárzása van neki.
+4805703	Van egy percnyi időd?
+4810574	Tomi kerülte, hogy ránézzen Marira.
+4814485	Meg kell hagynom, egy kicsit nehezen boldogultunk vele.
+4816886	A szabadságért harcolok.
+4819726	Mindkettőjüket szerette, és ők is mindketten szerették.
+4823133	Tom folyton panaszkodik a főnöke miatt.
+4823144	Akár ez is megtörténhet.
+4827092	Merre van a legközelebbi telefonfülke?
+4829741	A tapasztalat megingatta a hitét.
+4840619	Minden évben átesem az influenzán.
+4841996	Felhalmozódik a munka.
+4847460	Négy évenként választunk egy elnököt.
+4848228	Én ilyen vagyok.
+4851627	Biztos vagyok benne, hogy jó móka lesz.
+4853843	Az utcákat hó borította.
+4854007	A párt aktivizálódott a győzelem érdekében.
+4855885	A lányom egy előkelő magániskolába jár.
+4855984	Elsőnek szállhatnak fel a gépre.
+4862204	Semmi sem létezik örökké.
+4863628	Hogy szoktál lazítani?
+4866162	Az élet kiszámíthatatlan.
+4870644	Nemsokára el fogunk menni.
+4873207	Hogy van a férjed?
+4874012	Jimnek mondhatsz köszönetet a kudarcodért.
+4878617	Miből gondolod, hogy azok az alakok nem akarnak majd minket megölni?
+4879594	Nem merem kimondani.
+4883003	A szívem olaszként érez, az agyam németként gondolkodik.
+4885627	Ezt a régi épületet nem érdemes tatarozni. Jobb lenne elbontani.
+4886719	A tavalyi év volt a legmelegebb, mióta nyilvántartást vezetnek erről.
+4886969	Megpecsételődött a sorsunk.
+4887697	Tom kiöntötte az italát.
+4895257	Tom beragadt a forgalomban.
+4896975	Mennyit kér a munkáért?
+4898406	Hagyj úgy mindent, ahogy most van.
+4900785	Miért várakozik Tomi?
+4910053	a feszültség érezhető a levegőben.
+4913857	Sajnálom, nem érzem jól magam.
+4917115	A vallásom tiltja.
+4917909	A rossz időjárás megakadályozta, hogy munkába menjek.
+4926203	Mostanáig minden rendben van.
+4926521	Tamás sok történetet írt.
+4933924	Mielőtt rájössz, hogy mi is az élet, jobbára a fele már elment.
+4935335	Ne rágódj ezen, Tomi, ez nem a te hibád volt.
+4935490	A jóképű emberek jól néznek ki, függetlenül attól, hogy mit viselnek.
+4938704	Úgy érzem, eltört egy bordám.
+4952605	Láttam az autó felrobbanását.
+4958929	Nos, valamit kell tennem.
+4961664	Ez a tintafolt nem akar kijönni.
+4963319	Nem tudom eldönteni, hol parkoljak le.
+4963792	A palackot színültig töltse meg, hogy ne maradjon levegő benne.
+4972355	Aki fél a farkastól, ne menjen az erdőbe.
+4975799	Tomi összecsukta a laptopját és felállt.
+4978008	Csak rászánom azt az időt, amennyit igényel.
+4981986	Akit egyszer egy kígyó megmart, fél minden zsinórtól.
+4984095	Nem érdekel, mennyire viszket. Ne vakard meg.
+4989690	Van még egy kis whisky az üvegben.
+4989709	A ház jól be lett szigetelve.
+5003888	Tíz dollár ez az ing.
+5007193	Megérkeztek a lányok a másik osztályból, mi átengedtünk nekik pár padot.
+5012065	Erősen csirkeíze van.
+5013173	Fölkeltettem és ő fátyolos tekintettel nézett rám.
+5026490	Vissza a hajóra!
+5066223	Félő, hogy ez a beszéd hosszú lesz.
+5068359	Előbb a meló, aztán a szórakozás.
+5068368	A lányomért jöttem, hol találom?
+5072477	Küldtem maguknak virágot.
+5074706	Nem bírok neked ellenállni.
+5084123	Mit akarsz ma főzni?
+5098568	Épp most próbáltam ki egy új bringát.
+5101375	Nem hiszem, hogy el tudok menni a bulidba.
+5101650	Amikor felnőttem, még nem volt áramunk.
+5101890	Tomnak nem tetszett az új terv.
+5106139	Nem vehettem biztosra.
+5108955	Nem tudom hozni a legjobbamat.
+5108992	Milyen ember utálja a macskákat és a vattacukrot?
+5115206	Tom nem keresett sok pénzt.
+5116029	Tom tudta, hogy Mary hol dolgozik.
+5116034	Tom egy kicsivel 2:30 után ment el.
+5116381	Tom harminc napot töltött börtönben.
+5116487	Adott neki egy nagy ölelést.
+5117776	Egy tapasztalt ember tanácsa megfizethetetlen.
+5117963	Tomnak mindegy, mit gondolnak az emberek Maryről.
+5119753	Egy ország gazdasági fejlettségét tükrözik az autók és az úthálózatok - egy ország szellemi fejlettségét mutatja a kerékpárutak kiépítettsége.
+5122709	Csodálom az önbizalmát.
+5122720	Fújd kimagad, és fogj hozzá te is!
+5133145	Alig, hogy leült Tom, máris eszméletlenül dőlt a padlóra.
+5139998	A levelet nem adták át neki.
+5145124	Egy kutya, amelyik meg akar harapni, morog. Egy méh, amelyik meg akar szúrni, az zümmög. De egy lánynak csak ragyognak a szemei.
+5145140	Tominak törzsi tetoválás van a combján.
+5149493	Svizzera azt jelenti németül Schweiz.
+5157038	A helyzet nagy komolyságot igényel.
+5162421	Apu, télen miért nem dörög az ég?
+5174011	Még mindig azt gondolod, hogy megöltem a testvéremet?
+5182639	Tomi teljes lényével nevetett.
+5191759	A méreg szétterjedt a testében.
+5193372	Ők is érnek annyit?
+5194455	Én is enni akarok!
+5195448	Hogy ez mennyire egyszerű!
+5195833	Megmozdult a csali.
+5210805	Hol érdekel az engem, hogy ki ő?
+5221055	Nem fog nekünk sikerülni, vagy mégis?
+5223312	Tamás és Mária boldog házasságban éltek egészen egy autóbalesetig, melyben életüket vesztették.
+5238433	Ott leszek ma este.
+5243424	Az emberek saját földet akarnak.
+5244929	Tom egy menekült.
+5258524	Legközelebb nem fogom neked ezt elnézni.
+5259510	Miért nem vacsizol velem ezen az estén?
+5260690	Ismered a különbséget.
+5260696	Tudod, hogy miért?
+5260777	Ismered Tomot, azt hiszem.
+5262264	Kamu, hogy terhes.
+5262363	Ismered ezt a férfit?
+5278847	Tamás azt mondta nekem, hogy egy kissé ideges voltál.
+5284290	Bolgár létére az El Fuego nevet vette fel.
+5297355	Csak a dolgát teszi Tom.
+5298884	Üdvözöld a barátaidat!
+5298885	Üdvözöld a nevemben a barátaidat!
+5306973	Hallottam, hogy Tom valakivel hangosan beszélget, de amikor beléptem a szobába, teljesen egyedül volt.
+5312582	Próbáljon már engem megérteni!
+5323638	Ma kaptam egy halálos fenyegetést.
+5333040	Egy nagyon kicsit beszélek magyarul.
+5349123	Ez csak a kezdete mindannak, amit a tanfolyam során látni fogsz.
+5350209	Nekem nincs különös kedvenc ételem.
+5354956	Ez a ház sokkal jobb az ő házánál.
+5358151	Ott jön a tanítónk.
+5359790	Mit írt Tom?
+5360856	Van közvetlen vonat Hamburgba?
+5364128	Mit mondanál te az én helyemben?
+5383021	Legalább a nevedet elárulhatnád.
+5387253	Tomi rokona Marinak?
+5389390	Túltette magát az ügyön.
+5395312	Igazából nem értem.
+5401865	Furán hangzik, de attól még igaz.
+5409876	Sok jó éttermet ismerek.
+5410931	A jó gyerekek a szülőket boldoggá teszik, a rosszak a sírba viszik.
+5412394	Ez a vállalat Kínában épít egy gyárat.
+5413460	Tom mindig tanár akart lenni.
+5420615	Nem tudom biztosan, mennyi ideig fog tartani.
+5434756	Haladjunk át rajta még agyszer.
+5434848	Gratulálok, kollégák, szép teljesítmény volt!
+5436630	Semmit sem vásárolok.
+5440356	Ezt tavaly vettem.
+5441045	Hiszen még el sem kezdtük!
+5455522	Hát még mindig nem érted, hogy szeretlek!?
+5459251	A műtét után benn marad megfigyelésen.
+5459580	Szeretnék egy kis sajtot venni.
+5465451	Orvosi engedélyre van szükségem, hogy használjam ezt a gyógyszert?
+5488806	Most már itt kell, hogy hagyjalak benneteket.
+5540997	Az a doboz nagyobb ennél.
+5557427	A tanfolyam tízkor kezdődik.
+5560001	Tom nagyapja híradós tiszt volt a seregben.
+5562635	Tomi kutyája szereti, ha porszívózzák a bundáját.
+5562794	Gyerekkoromban még két órán át zötykölődtünk vonattal ezen a szakaszon.
+5562948	Ez a film jól végződött.
+5568016	Szeretnék franciául tanulni.
+5573596	Két fiatal lány boldogan mosolygott.
+5580754	Ezerszer megmutattam már, mégis rosszul csinálod!
+5581009	Nem értette, miért veszekednek.
+5604642	Nem érdekel, akárhogy is legyen.
+5608942	És most pár szó a szponzorunktól.
+5609356	Én nem maximalistának nevezném, hanem megszállottnak.
+5626018	Arra adta a fejét, hogy pilóta legyen.
+5638115	Vigyázz! Gyorsabban mész a megengedettnél.
+5661271	Ki ismerős erre?
+5664961	Hadd játsszon vele, majd megunja és visszaadja.
+5673669	Nem, én csak megkérdeztem tőle, hogy miért sír; erre ő meg elszaladt!
+5673683	- Te Tomi, a Tatoeba tudásszint-csillagai közötti eltérés az lineárisan vagy exponenciálisan értendő? - Mi van!?
+5674982	Nem látom a neved rajta.
+5682835	Hogy lehetsz ilyen vak?
+5687603	Ebben a házban tényleg mindenkinek elment az esze!?
+5693612	Nem hallottam semmilyen csobbanást.
+5711221	Mennydörgős mennykő, ezt nem gondoltam volna!
+5727235	Tomi egész nap az íróasztalnál szokott ülni.
+5732290	Te vagy a szakács.
+5750452	Nekem is van kockahasam, csak nem lehet látni.
+5763183	Palaunak egy élő cápa egy év alatt a turizmus által tízszer annyit hoz, mint egy kifogott példány a piacon.
+5765891	Ausztrália politikusai meg tudják védeni országuk határait és annak lakosságát, az európaiak nem.
+5766369	Akkor megyünk haza, ha ezeket eladtuk.
+5769903	Az autó beragadt a sárba.
+5777409	Ha nehezen megjegyezhető, többszótagos szavakat akarsz megtanulni, akkor kössed egy már általad ismert szóhoz; például a finn myymälä szó, jelentése bolt: műmellet vettem a boltban.
+5784139	Hová is akartok menni?
+5792601	Ha szökni próbálsz, simán lepuffantalak.
+5793231	Én nem agyalok ezen, csak teszem, amit tennem kell.
+5803860	Tomi rendelkezik a szükséges tapasztalattal.
+5807771	Tomi fél a magasságtól.
+5854014	Ne aludj el!
+5856527	Mindjárt szerelmes leszek.
+5860278	Magunk mögött tudhatunk egynéhány kemény telet.
+5871469	Tamás utálja a hazugokat.
+5886067	A német autók az egyik legjobbak.
+5888246	Tomi a '80-as és '90-es évek zenéjére esküszik.
+5905080	Ön azt gondolja, hogy az állatoknak van lelkük?
+5905085	Ön mikor született?
+5909587	Van bizonyíték rá?
+5910135	Napról napra soványabbnak tűnt.
+5911487	Messze mész, vissza tán sosem térsz.
+5934318	Mária undorodik a pókoktól, bogaraktól, békáktól és mindenféle csúszó-mászóktól.
+5954553	A szöveg nyomdakész.
+5970126	Ha a dolgok így folytatódnak Európában, egyes országokat - mint Svédországot, Belgiumot vagy Franciaországot - nem biztonságos országoknak kell nyilvánítani, ahová a migránsok sem adhatják be úgy a menekült státusz iránti kérelmüket. Miért alakult ki ez a helyzet Európában? Erről nem szabad beszélni. Baromság!
+5970265	Hány nyelvet beszélnek az emberek Európában?
+5986922	Japánt gyakran sújtja földrengés.
+5989326	Egy beszélgetés keltette fel a figyelmemet a szomszédos asztalnál.
+5998728	Ez a farm már generációk óta a családunkhoz tartozik.
+6001090	Sajnálom, nem tudok neked segíteni.
+6002242	Múlt hónapban keményen dolgoztam.
+6007516	Azért nem tudsz leszokni a cigarettáról, mert gyenge vagy emberileg.
+6015913	Semmit sem tud a felmenői nyelvéről.
+6023120	Van egy vörös rózsa a vázában.
+6033510	Soros György most éppen Macedónia belügyeibe akar beavatkozni. Ez a gátlástalan, rendkívül unszimpatikus milliárdos többek között egész Európát a saját játszóterének tekinti.
+6044721	Tegyél félre pénzt a nehezebb időkre!
+6045380	Már ezerszer megtettem.
+6047395	Egyikőtöknek sincs fogalma róla, hogy min mentem keresztül.
+6075205	Teszek egy sétát a kutyámmal este.
+6076350	Tomi fogott egy regényt és elkezdte kiírni mondatról mondatra a Tatoebára.
+6100784	Aki az élvezeteket hajtja, kiég.
+6112267	Megmentettétek az életünket.
+6114741	Egy icike-picike pocok pocakon pöckölt egy másik icike-picike pockot, mire a pocakon pöckölt icike-picike pocok is jól pocakon pöckölte az őt pocakon pöckölő icike-picike pockot.
+6122512	Voltál már valaha külföldön?
+6127296	Ezzel kapcsolatban kétségeink vannak.
+6127342	Ez számomra újdonság.
+6151358	Te milyen nemzetiségű vagy?
+6151462	Egy hónappal karácsony előtt az üzletekben mindig nagy a forgalom.
+6152977	Az idősebb gyerekek hajlamosabbak kevésbé irigynek lenni, mint a fiatalabb testvéreik.
+6158564	Csomó ember van, de még több arc, mert mindenkinek több is van.
+6165905	Tisztelettudóbban kellett volna beszélned.
+6197049	Miattunk aztán ne aggódj; közülünk szerintem senki nem kívánná meg a feleségedet!
+6203218	Vajon ez az, amit Tomi tényleg szeretett volna?
+6205896	Tamás megpróbált szépen artikulálni, de mindhiába, mert az indiai rendőr Új-Delhiben egy árva szót sem tudott magyarul.
+6216192	Az utcán sétálva találkoztam egy régi barátommal.
+6216361	Először is, ő az apád, másodszor meg, nagyon beteg. Tamás, teljességgel támogatnod kell őt.
+6217712	Szerintem Ausztriából származik.
+6296447	Mindjárt tudunk enni.
+6326085	Itt kell fizetni az alagút díját?
+6330008	Szálljon be, kérem; kocsikázunk egyet.
+6333059	Már hazaküldtem a személyzetet.
+6393532	Cuki ez a kutya.
+6459943	Gyerekjáték volt átkelni a folyón.
+6465970	Tamás azt mondta, hogy Bostonba akart költözni.
+6479720	Tomot elütötte egy teherautó.
+6568486	Beszél Tom franciául?
+6587286	Megvolt az esélyed.
+6595862	De ezt egyáltalán nem akarom.
+6626705	Bejött az, amit az előbb mondtál.
+6628687	Érzem, hogy már nem szeret.
+6725174	A bíróság majd eldönti, hogy igazat mondott-e ön.
+6833946	Öreg cipőket hordott.
+6858234	A szomszédok a barátaim.
+6864985	Amúgy is elkéstem már.
+6866499	Az én türelmemnek is van ám határa!
+6887943	Láttam őt elmenni a hotelból.
+6899941	Segítenünk kell egymáson.
+6903566	Mellém kell állnod.
+6915154	Kevés a hely.
+6915185	Mi a véleményed az Amerikai Egyesült Államokról?
+6917374	Ez csak egy szélsőséges példa volt.
+6920920	Van egy gumid?
+6945672	Úgy tudom, sokat tud Spanyolországról.
+6946263	Nem volt elég bizonyítékom.
+6959239	A 7. emeleten lakunk.
+6964491	Már megint csak a panasz árad belőled!
+6967020	Nincs más választás, mint várni.
+6974012	Ez egy mostani fejlesztés.
+6974466	Mindenkit szeretnék meghívni egy körre.
+6980911	Van egy barátom, aki önkéntesként dolgozik.
+6992801	Megkérdezte tőlem, hogy ráérek-e.
+6993319	Tomnak színésznek kellett volna lennie.
+7001065	Mari úgy nézett ki, mintha sietne, hogy hazaérjen.
+7001179	Ma este ügyeletes vagyok.
+7007406	Most sokkal kényelmesebben érzem magam.
+7009306	Úgy hangzik, mint egy hollywoodi film forgatókönyve.
+7010284	Etikus odaadni neki előre az interjú kérdéseit?
+7010356	A hülye terved valójában működik.
+7010601	Nem vagyok szakértő.
+7025566	Felnéztem a holdra.
+7030403	Még mindig próbálok hozzászokni az új rendszerhez.
+7036021	Egymásért mindent megtesznek.
+7038712	Bárcsak kicsit csendesebb lennél!
+7041444	Az többé nem érdekel engem.
+7047815	Oly sokat tehetünk.
+7049756	Tom mondott valamit, mielőtt meghalt?
+7051974	Az igazat megvallva nem akarok vele dolgozni.
+7055867	A szólásszabadság nem lehet néhányak kiváltsága.
+7060655	Olyan könyveket kellene olvasnod, amelyek később az életben jól hasznosítható információkat tartalmaznak.
+7068295	Olyan táskákkal járni nem biztonságos.
+7073338	Azt akarom mondani neked, hogy holnap nem leszek itt.
+7073853	Azok a csillagok, amik az én egemen ragyognak, a tiéden is ragyognak.
+7085321	Támogatni kellett Tomit.
+7089341	Te kanadai vagy, nem?
+7090749	A sopánkodásból nem fogunk megélni.
+7091817	Borzalmas úszó vagyok.
+7091887	Tom hallotta a dörömbölést az ajtón.
+7091944	Sajnálom, hogy egyáltalán megtörtént.
+7094874	Emlékszem arra a levélre.
+7094941	Nem számítottam ma rátok egyáltalán.
+7096321	Olyan bárgyú képet vágott, nem tudtam, sajnáljam-e vagy nevessek rajta.
+7098613	Én semmi pénzért be nem tenném a lábam a gettóba.
+7109187	Tudom, hogy aludni akar Tomi.
+7109743	Itt az idő, hogy elkezdjük.
+7134819	Meggyőztem, hogy nincs mitől félnie.
+7150815	Meddig tart elvégezni ezt a munkát?
+7153216	Tomi részt vett egy papírrepülő versenyen és első lett.
+7160326	Amikor a magyarok finn nyelvű beszédet hallanak, általában egy szót sem értenek belőle, a hangzása távolról mégis olyan, mintha magyar beszédet hallanának.
+7162497	Megtehettem volna, de úgy döntöttem, nem teszem.
+7185029	Irányításra van szükségük.
+7204423	Nem is emlékszem már rá, hogy mikor történt valami rendkívüli az életünkben.
+7234368	Tamás olyan szegény volt, mint a templom egere.
+7237803	Egy órával a vonat indulása előtt ki fog menni az állomásra.
+7239495	Elvan a kis saját világában.
+7244440	Csodás nap, így van?
+7248325	Manapság egy számítógépnek sincs hajlékonylemezes meghajtója.
+7251246	Hegyezd a füleidet.
+7255462	Csak néztem, hogyan tudnám ezt megoldani.
+7263490	Holnap egy új év veszi kezdetét.
+7264121	Semmi más nem számít.
+7273407	Ezt aztán jól megmondtad neki!
+7275113	Igazából senki se tudja.
+7290235	Este nem találtam olyan mondatot, amit érdemesnek találtam volna lefordítani.
+7300038	Tom lecsukta a laptopját.
+7302663	Nem ízlik ez a szörp, túl sok benne a mesterséges édesítő.
+7348922	Mari fekete ruhát viselt.
+7352789	Nem hagyhatsz itt mindent csak úgy!
+7354158	Mari a hátára feküdt.
+7367488	Mit csinálnék én ön nélkül?
+7425554	Nem értem, ha minden migránsnak több ezer euró spórolt pénze van, akkor miért akarja elhagyni a hazáját és Európába jönni egy jobb élet reményében.
+7425618	Hogy van az ön édesanyja?
+7426169	Kedvelem a koreai ételeket.
+7431937	Volna kedved megnézni velem egy filmet?
+7433467	A szerencsétlen fiatalembert az asztal mellett fekve találták meg.
+7434743	Tomi kéthavonta jön ide.
+7496615	Az igaz barátság a gyémántnál is ritkább.
+7500356	Néhány évig keményen dolgoztam.
+7546396	Kért egy kis gondolkodási időt.
+7547091	Tomi olyan éhes volt, hogy megette még a másnapos kenyeret is héjastul.
+7580165	Szavakkal nem lehet leírni, mit érzek.
+7583438	Csak egyszer láttam őt.
+7627647	Ki az az idegen?
+7643926	A források és eszközök értéke mindig azonos, hiszen nem két különböző dologról, hanem ugyanannak a dolognak a kétféle módon történő kimutatásáról van szó.
+7644456	Tamás kölcsönadott nekem három könyvet.
+7649135	Milyen a vérnyomásod?
+7649296	Megváltóztatta az e-mail címét.
+7664367	Tamás százhúsz hektáros fenyőfaültetvénnyel foglalkozik.
+7669055	Ez a kávé nagyon erős.
+7676647	Egész biztos tönkrement ez a mérleg.
+7676790	Keresnek valami íróeszközt.

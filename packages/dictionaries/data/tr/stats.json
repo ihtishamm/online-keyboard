@@ -1,0 +1,15 @@
+{
+  "source": "tr.xml.bz2",
+  "pages": 11476,
+  "sentences": 946502,
+  "repeatedSentencesSkipped": 51729,
+  "tokens": 9050296,
+  "distinctWords": 454945,
+  "wordsKept": 100000,
+  "nextWordHeads": 9600,
+  "text": "tr-train.txt",
+  "textSentences": 267329,
+  "textWeight": 3.15,
+  "heldOutPages": 240,
+  "heldOutSentences": 2000
+}

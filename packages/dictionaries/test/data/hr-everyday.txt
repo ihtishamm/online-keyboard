@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+469011	Je li tvoj?
+470736	Njezin je, zar ne?
+470738	Njezina je, zar ne?
+475448	Njegov je, zar ne?
+475451	Njegova je, zar ne?
+476808	Kako se zove?
+476816	Dobro. A vi?
+478216	Kako se kaže...?
+478764	Jesi li ti studentica?
+478964	"Jesi li ti nastavnik?" "Da, jesam."
+486980	To je njegov auto.
+486988	Ta torba je moja.
+547433	Triput meri, jednom seci.
+655332	Tvoji rezultati ispita su odlični.
+655335	Znaš li da joj se sviđaju životinje?
+655354	Oni kopaju rupu.
+655356	Bliži se veliki tajfun.
+655373	Kažem li svojoj majci, brinut će se, zato mislim da joj neću reći.
+655379	Odlučila sam joj reći da ga volim.
+655406	Ne, to je sve.
+655417	Mogu li uzeti tvoj rječnik?
+655418	Hoćeš li otvoriti vrata?
+655429	Dojim svoje dijete.
+655437	Danas je više oblaka nego jučer.
+655454	Djevojke su lagano plesale, kao mnoštvo leptira.
+655455	Ne mogu se s tobom dogovoriti po tom pitanju.
+655466	On često citira Shakespeara.
+655468	Vaš prijedlog je suprotan našemu.
+655477	Ona je moja prva ljubav.
+655478	I malo kruha.
+655480	Uvijek govori o vladi s prijezirom.
+655482	Želim da mi se san ostvari.
+655483	Ona će platiti najviše 50 dolara.
+655485	Ukratko, neki pištolji imaju odlične sigurnosne sustave kako bi spriječili slučajna opaljivanja (npr. kod ispuštanja), a drugi nemaju.
+655496	Ukoliko pronađem tvoju putovnicu, smjesta ću te nazvati.
+655497	Radio sam na tome dan za danom.
+655500	Ne može doći jer je bolestan.
+655505	Čini se da Cathy voli glazbu.
+655516	Bol je malo popustila.
+658895	Ona je veoma lijepa.
+658907	Ruka ruku mije.
+658909	Tko živ, tko mrtav.
+658910	Vuk dlaku mijenja, ali ćud nikad.
+658912	Cijeli grad je bio pod vodom.
+658916	Koji je glavni grad Sjedinjenih Država, Washington ili New York?
+658924	Planirate li dugo ostati?
+658927	Jučer me usrećio.
+658941	Ptica je visoko letjela nebom.
+658942	Čovjek je čovjeku vuk.
+658943	Jedna lasta ne čini proljeće.
+658946	Kako došlo, tako prošlo.
+658961	Koliko duboko je to jezero?
+658985	Je li to tvoj automobil?
+658999	Molim, ispunite taj formular.
+670182	Tom i Frank su dobri prijatelji.
+670186	Slažem se s vama.
+670200	Koliko imate olovaka?
+670212	Gdje se nalazi muzej?
+670218	Škrinja je napravljena od drva.
+670298	Bio sam u kupovini u subotu.
+699842	Triput mjeri, jednom sijeci.
+742823	Ona je bogata, a on siromašan.
+742825	Ona je opet takva, kakva je bila.
+742826	Reci što hoćeš, a ja ću napraviti po svojem!
+755930	Ona nije visoka.
+933760	Pjevala je prekrasnim glasom.
+933766	Tko radi i želi, taj i dobiva, -- tko sam ne ustraje, ništa ne postiže.
+933786	Ne pitaj me toliko. Koristi svoju glavu.
+933796	Ja sam iz Nizozemske.
+933837	Moj otac je umro prije pet godina.
+933851	Tom je polupao prozor.
+933854	Ne mogu trpiti njezino ponašanje.
+933855	Šećernica je prazna.
+933871	Idem pješke u školu.
+933877	Naše ovce su žigosane da ih možemo prepoznati.
+933879	Vrlo je vješt u ručnim poslovima.
+933885	"Je li istina?" "Da, istina je."
+933889	Ova ruža je lijepa.
+933899	Želiš li čaj ili kavu?
+933904	Korijeni stabla su se duboko ukorijenili u zemlju.
+933911	Povjeriti ću ti jednu tajnu.
+934339	Kako se zove ova ulica?
+934341	Doslovce sam shvatio njezine riječi.
+934979	Je li blizu poštanski sandučić?
+935003	Ne mogu je razlikovati od njezine sestre blizanke.
+935013	Dužnost je djece voljeti svoje roditelje.
+935020	On ima savršene načine, zato se nikad ne zna što zapravo misli.
+935025	Ovaj cvijet prekrasno miriši.
+935027	Ovdje se govori španjolski.
+935029	Crna mačka je predila, kada je bila zadovoljna.
+935042	To je hotel.
+935193	Samo je 5 mjeseci otkada je taj Francuz stigao u Japan.
+935222	Stari učitelj je počeo nostalgično govoriti o dobrim, starim vremenima.
+935223	Išli smo u crkvu svake nedjelje, kada smo bili u Americi.
+936392	Ta knjiga je nova.
+936437	Magdalenu zanima zemljopis.
+936484	Ania ima crnu, a Magdalena plavu kosu.
+936500	Imam dvije ulaznice za Boston protiv Vancouver u subotu navečer. Želiš li ići sa mnom?
+936544	Na taj vlak je Aomori trideset minuta kasnio, zato se bojim da nećemo stići u Tokijo prijepodne.
+936565	Moja starija kći je Magdalena Zarębówna.
+936566	Ušao je kroz prozor.
+936576	Molim te pripazi na moj kofer.
+936579	Odlučio je postati liječnik.
+936595	U svijetu je preko sedam tisuća jezika.
+936620	Njezin sastav je vrlo dobar, osim nekoliko grešaka u izgovoru.
+936696	Tvoj plan zvuči odlično.
+936905	Nikada se ne ustručavaj reći istinu.
+936933	Učiniti ću te sretnom.
+936987	Ti govoriš engleski tečno.
+936994	Ubrzo smo vidjeli kuću, čiji je krov bio crven.
+937027	Atraktivni ljudi me odbijaju.
+937032	Umrijeti nije ništa. Zato počni živjeti, manje je smiješno i traje duže.
+937090	Svaki svemir dovoljno jednostavan za razumjeti je previše jednostavan da stvori biće sposobno razumjeti ga.
+938183	Sada mi je puno bolje.
+938188	Proživjeli smo pakao penjući se na 20. kat te zgrade.
+942592	Želim još jednu čašu piva.
+942593	Pisati ću o našim parkovima i planinama.
+942595	Počeli su snažnim napadom protiv neprijatelja.
+942604	Daje meso psu.
+942610	To je rekao mlađi od braće.
+942682	Želim ostati duže tu.
+942686	Penis je jedan od muških spolnih organa.
+942702	Ellen ne govori engleski.
+942705	Jesu li svi isti?
+942707	Autobusna stanica je blizu naše škole.
+942724	Upravo jedem jabuku.
+944952	Gledaš AnnoZero, eh?
+944956	Liječnik ju je temeljito pregledao.
+945005	Danas nemamo školu.
+945034	On studira američku povijest.
+945052	Njegov sin je izbačen iz škole.
+945056	Gdje si slikao to?
+945070	Protiv je rasne diskriminacije.
+945097	Treba biti više autobusa tijekom sati najživljeg prometa.
+945112	Kojeg god je podrijetla, Valentinovo je uvijek imalo dugu i romantičnu povijest.
+945147	Puno je toga za napraviti, želiš li pomoć?
+945209	Moj brat mi je pomogao s domaćom zadaćom.
+945266	Pričaš li sa mnom?
+949188	Kvalificiran si da budeš liječnik.
+949753	U Ankari su sva godišnja doba nalik zimi.
+949755	Bilo je oko tisuću ljudi.
+949759	Lice joj je bilo jarko crvene boje bijesa.
+949761	Imate li vremena da mi pomognete?
+950035	Bila je iznenađena čuvši vijesti.
+950044	Ići ću pješke.
+950052	Jesi li jeo tortu od banane?
+950073	Mogu i bez toga.
+950830	Izvrsni učenici drže svoj stol uvijek urednim.
+950841	To cvijeće koje vidiš su ruže.
+955698	Zbog toga sam se rano digao tog jutra.
+955706	Trebao bi posjetiti zubara.
+955734	Pretpostavljam da više nije važno.
+955738	Piše dnevnik na engleskom.
+955739	Paragvaj je država u Južnoj Americi.
+955755	Znam da te ne zaslužujem.
+955799	Rado ću pogledati taj film.
+955821	Življenje u gradu se vrlo razlikuje od življenja na selu.
+955853	Objasnit ću joj to.
+957602	Sveto Rimsko Carstvo njemačkog naroda je prestalo postojati godine 1806.
+957604	Isključite molim vas Vaš motor.
+957627	George ima dvije rođakinje; jedna živi u Njemačkoj, a druga u Švicarskoj.
+957630	U Njemačkoj je zimi hladnije nego u Italiji.
+957638	Koliko se ja sjećam, to ne ide tako, kako vi kažete.
+957702	"Tatoeba" na japanskom znači "na primjer."
+957742	Svako mišljenje je mješavina istine i grješke.
+957814	On je ovisnik o heroinu.
+957845	Imali smo usmeni ispit.
+957880	Nemam ništa što bih trebao sakriti.
+957894	Svatko dijete to može.
+957913	Nije me htjela pustiti dok nisam pristao ići s njom u kino.
+958019	Ukupno stanovništvo Novog Zelanda iznosi 3,410,000, a jedna sedmina su Maori.
+958051	Zašto ljudi idu u kino?
+958068	Nijedna zemlja na svijetu nije sigurna u ovom atomskom dobu.
+958083	Preporučujem ti da promijeniš svoje prehrambene navike.
+958096	Još imam mnogo toga za učiniti.
+958102	Bolest iz djetinjstva ju je oslijepila.
+958113	Moj pas je slijep, ali voli ići van i šetati se.
+958128	Prestao je pušiti da očuva svoje zdravlje.
+958132	Moj brat je kupio električnu gitaru.
+958135	Svećenik je bio pozvan da da posljednju pomast umirućem čovjeku.
+958143	Gledamo televiziju svaki dan.
+958158	Sutra ću ostati kod kuće.
+958160	Ne govori tako.
+958173	Kina graniči s Pakistanom, Indijom, Afganistanom, Tadžikistanom, Kirgistanom, Kazahstanom, Sjevernom Korejom, Laosom, Vijetnamom, Nepalom, Butanom, Mijanmarom, Mongolijom i Rusijom.
+960303	AIDS se može zaustaviti samo onda, ako mu se svaka osoba odluči suprotstaviti.
+960305	Dva puta ispeci pa reci.
+960346	Rizik je velik.
+960353	Moram li sada ići?
+960364	Život tog bolesnika je u opasnosti.
+960384	Ptica može letjeti.
+960386	Poslao sam ju kući.
+960411	Bolesnik je trenutno izvan opasnosti.
+960473	Ne brini za nas.
+960493	To si učinio namjerno!
+960496	Ne tlačite me svojim mišljenjem.
+960501	Japanski srednjoškolci idu u školu 35 tjedana godišnje.
+960507	Sate sam proveo čitajući knjige.
+960527	Pokaži mi današnje novine.
+960533	Sliči svome ocu.
+960556	Podjelio je milijun dolara na pet sinova.
+960562	Sklon sam avanturama.
+960584	Dao si veliki doprinos.
+960587	Zaljevske zemlje su u stalnoj ratnoj opasnosti.
+960598	Nasuprot tome čovjeku, ona izgleda vrlo sretno.
+974109	Idu na posao svaki dan.
+997638	To pivo sadrži 5% alkohola.
+997640	Je li prošao ispit?
+997644	Pogledaj knjigu koju je stavio na pisaći stol.
+1031108	Volim okcitanski jezik.
+1040903	Ne mogu sutra doći na zabavu, ali hvala na pozivu.
+1040923	Smijem li pitati gdje radiš?
+1040933	Strašna bitka se dogodila na Kasserineu u zapadnom Tunisu.
+1040950	Što će učiniti?
+1040960	Otišao sam u banku.
+1040979	Trebat ćeš pronaći jeftinije, zamjenske sastojke, iako svoj recept temeljiš na bakinom.
+1040980	Obično kupujem u toj trgovini.
+1040987	Novi si, huh?
+1040992	Želim unajmiti auto, pokažite mi molim Vas cjenik.
+1041034	Svadba će biti u subotu.
+1041078	Napustila je tvrtku.
+1041504	Kada počinje igra?
+1041510	Ista stvar, samo s glavom prema zemlji.
+1041519	Mary ne želi poslušati prijateljev savjet
+1041559	Tko je izmislio ovaj uređaj?
+1041565	Radim sada, nazvat ću te poslije.
+1041573	Nije imala brata.
+1041579	Zatvori prozor prije nego što odeš u krevet.
+1041604	Zadovoljstvo je pratiti bejzbolsku utakmicu na TV-u.
+1041617	Učinio sam ga gladnim.
+1047778	Ne možeš piti morsku vodu, jer je preslana.
+1047796	Obukao je naopako džemper.
+1047818	Ona ima dečka još iz škole, ali misli da su zajedno samo iz navike te je sve više nezadovoljna.
+1047900	Gotovo da nema nasilja u tom gradu.
+1047917	Danas je ponedjeljak.
+1047976	Jer su proizvedene u Italiji, te traperice su vrlo skupe.
+1047986	Sve dok je engleski u pitanju, nedostižan sam.
+1048000	Postavio sam mu mnogo pitanja o ekologiji.
+1048027	Ostani miran načas.
+1048039	Oboje su dobri studenti.
+1048056	Bio je privučen tom ženom.
+1048065	Sin je slijedio svoga oca.
+1048084	Je li išao jučer kući?
+1050086	Utopljenik je vikao upomoć.
+1050111	Ušli smo u restoran i jeli.
+1050161	Nisi li sretan?
+1050226	Ne znam što je gore.
+1050920	Više nije sam.
+1050930	Nitko ne može srušiti njegov rekord.
+1050932	Nažalost, moja mačka je negdje otišla.
+1050937	Gorko za jezik, ali okrijepljujuće za krv.
+1050939	Ne idem u školu nedjeljom.
+1050945	Mora se poštovati zakon.
+1050953	Ti koji nikada nisu mislili o vrijednosti života, ne bi trebali studirati medicinu.
+1050956	Molim vas napišite svoje ime.
+1050957	Bio sam očaran njezinom ljepotom.
+1051013	Otišao je na aerodrom kako bi sreo gospodina Westa.
+1051022	Prihvati stvari kakve jesu.
+1051033	Nesigurna za kojeg prosioca bi se udala, kolebala se princeza sad za jednog, sad za drugog.
+1051041	On je visok i ona također.
+1051047	Napravio je nekoliko mojih fotki svojom kamerom.
+1051054	Dolazim od djeda, a sad idem kod ujaka.
+1051104	Volio bih poboljšati svoj engleski izgovor.
+1051112	Trebam okupati svoju mačku danas.
+1051117	Hvala na informaciji.
+1051141	Mogu li ugasiti svjetlo?
+1051171	Rođena je u kraljevskoj obitelji.
+1051190	Navike jedenja se razlikuju od zemlje do zemlje.
+1051380	Kao dijete sam često sa svojim ocem išao na pecanje.
+1051399	Vrh planine Fuji je prekrio snijeg.
+1051428	Svijeća se sama ugasila.
+1051483	Znam da je Marija otišla u inozemstvo.
+1051496	Ona ima ujaka koji radi u banci.
+1051508	Priznao je da nije bio u pravu.
+1051532	Odgovoran sam za tu pogrješku.
+1051536	Operite svoje ruke prije jela.
+1051541	Razuman je u svojim pitanjima.
+1051552	Ne znam engleski, a još manje njemački.
+1051580	Volio bih te jednom upoznati malo bolje.
+1051675	Usprkos svim naporima, nije prošao ispit.
+1051681	Zbog tvoje duge, bijele kose, mogu te prepoznati izdaleka.
+1051682	Moj djed je umro u istoj sobi u kojoj se rodio.
+1053868	Želim napustiti posao.
+1053871	Nešto ne valja s tim televizorom.
+1053906	U dodiru je sa različitim ljudima.
+1053966	Sada imam 30 godina.
+1053971	Imam toliko odjeće da ne znam što obući sutra.
+1053992	Otišao sam u Tokijo vidjeti Tonija.
+1054004	Više se brine majka o petero djece, nego petero djece o jednoj majci.
+1054011	Mari radi u velikoj tvrtci.
+1054016	Ona svaku subotu provodi igrajući tenis.
+1054024	Jasno je što se mora učiniti.
+1054036	Čita li knjigu?
+1054051	Papa Ivan Pavao II. je prvi papa koji je izrekao svoj uskršnji blagoslov na esperantu, naime 3. travnja 1994.; također te godine i božićni je blagoslov bio na esperantu. Nastavio je tako kao i njegov nasljednik.
+1054062	Čitav dan je kiša pljuštala.
+1054080	Ne sviđa se nešto Bogu, zato što je to dobro; to je dobro, jer se Bogu sviđa.
+1055797	Najveći užitak koji poznajem je učiniti neko dobro potajno, koje tek poslije slučajno bude otkriveno.
+1057617	Idem u kino.
+1057621	Ja sam crna ovca u obitelji.
+1057652	Oprostite, koliko je sati?
+1058786	Predsjednik je trenutno Miamiu.
+1059381	Zamolila me je da otvorim prozor.
+1059389	Budući da sam zauzet, ne mogu ići.
+1059396	Jako su se trudili riješiti problem.
+1059401	Mlijeko je dobra namirnica.
+1060334	U to vrijeme šećer je vrijedio manje od soli.
+1060337	Upravo pijem pivo.
+1060340	Lišće je šuštilo na vjetru.
+1100169	Još nije bilo moguće vidjeti predznake proljeća.
+1100213	Ne igram tako dobro tenis.
+1100251	Tracyne naočale su izgubljene.
+1100661	Pričali smo o tebi.
+1100695	Jesi li me uopće čuo što sam ti rekao?
+1100710	Zaporka je "Muiriel".
+1100753	Uskoro se vraćam.
+1100862	Znaš li što znači fraza: "jesen života"?
+1100915	Svi imaju pravo na državljanstvo.
+1100918	Evo auta kojeg sam zadnji put spomenuo.
+1100994	Dječak kupuje psa.
+1101000	Ima jednog sina i dvije kčeri.
+1101192	On je nestao bez traga.
+1101205	Pravda u ovoj zemlji ima dvostruke standarde: pravda za siromašne i pravda za bogate.
+1101209	Ja bih želio očistiti dom prije nego dođu moji roditelji.
+1101211	On uvijek nađe greške svoje tajnice.
+1101216	Svi psi žive.
+1101943	Skupa butelja se izrađuje od stakla.
+1101969	Mi trebamo nekog, tko čuva malu djecu, dok nas nema.
+1101975	Mi moramo odmah početi.
+1102018	Od svih, on je najviši.
+1102035	Zahvaljujemo Bogu što nam pomaže.
+1106338	Ne, ali igram tenis.
+1106407	Izabrali smo Toma za vođu ekipe.
+1109297	Konačno smo ovdje!
+1115952	Ako ćeš ikada biti u nevolji, ja ću ti pomoći.
+1115954	Nadam se da će mi pomoći.
+1115956	Želimo ti izmjeriti tjelesnu temperaturu.
+1119243	Ako ne želiš biti sam, mogu ti se pridružiti
+1122581	Moja sestra je mršava, a ja sam debeljuškast.
+1122626	Neki ljudi se udebljaju kada prestanu pušiti.
+1128258	Zar ne želiš ući na trenutak?
+1139195	Šutnja je zlato!
+1139197	Jednostavan ili dvostruki?
+1168717	Pijete li kavu?
+1201830	Ona se ispričava svojih prijatelja na večeru.
+1280910	Zašto je on ovdje?
+1400490	To je čista istina.
+1400501	Ja sam još uvijek sam.
+1400553	Ona nije obična pjevačica.
+1400564	Auto ga je udario i umro je na mjestu.
+1402549	Nikada neću zaboraviti kako si bio ljubazan.
+1402555	Kada je tvoj rođendan?
+1416860	Jučer je bilo oblačno.
+1416890	Obožavam nasmijevati ljude i to me je dovelo do točke gdje sam sada.
+1434487	Mislim da si nazvao pogrešan broj.
+1477337	Njegova neljubaznost ju je razljutila.
+1477347	Pozvao me je na zabavu.
+1477356	Njen sat kasni deset minuta.
+1477359	Nije mogao a da se ne smije njenim šalama.
+1477361	Ne moraš se cifrati.
+1477400	Dobio sam tvoje pismo prekjučer.
+1477426	Večeras bi mogao padati snijeg.
+1477429	Htio bih iznajmiti vaše najjeftinije auto na tjedan dana.
+1477437	Javi mi čim se on vrati.
+1477450	Vladu kritiziraju sa svih strana.
+1477481	Ne moraš dolaziti u ured, uzmi si slobodan dan.
+1477494	Nitko ne zna što će se desiti u budućnosti.
+1477503	Nekada smo bili neprijatelji ali smo zakopali ratnu sjekiru i sada smo u prijateljskim odnosima.
+1477555	Imaš li aspirin pri ruci?
+1477559	Tom ne skriva svoje osjećaje baš najbolje.
+1477593	Namjerno mi je rekla pogrešnu adresu.
+1477600	Ostat ću doma s bakom i djedom za vikend.
+1477604	Pekara je pored mesnice.
+1477733	Zvjezde su svjetlucale na nebu.
+1477742	Brokula je jedna od najzdravijih vrsta povrća.
+1811743	Ako ti srce od ljubavi pati u moj mir svrati!
+1811749	Uzmite gospodo! Zemite si! Kupite! Imamo svega, uzmite, koliko želite!
+2125461	Ti pamtiš stvari mnogo lakše nego ja.
+2156566	Što si radio preko vikenda?
+2156583	On će doći uskoro.
+2156715	Ostavi me na miru.
+2156729	Nemate li jeftinije izdanje?
+2156734	Istini za volju, stvarno sam ju volio.
+2156816	Zamijenio sam ju s njezinom sestrom.
+2156860	Obećao je doći u četiri.
+2156868	Jesi li provjerio vrata jesu li zaključana?
+2156918	Tisuće su izgubile svoje domove.
+2156920	Život mu je u opasnosti.
+2156923	Kutija je bila krcata knjigama.
+2156929	Pao je ispit jer nije učio.
+2156943	Bol je nestala.
+2156944	Otišao je prije deset minuta.
+2156945	Ništa nije spremno.
+2156948	Vrijeme je da idemo.
+2156960	Tom se pretvarao da nije znao put do Marijine škole.
+2156969	Mraz je oštetio biljke.
+2156971	Ne žali se stalno! Nisi jedina kojoj je teško.
+2156978	Vjerujemo u Boga.
+2156986	Napravio sam jednu grešku.
+2156988	To je zato što si glupan!
+2156994	Imali smo mnogo namještaja.
+2156995	To me ne brine.
+2157016	Htjela bih putovati diljem svijeta.
+2157046	Nema potrebe plakati kao dijete.
+2157050	On kaže da sam oprezan.
+2157054	Kamo želiš poći?
+2157056	Samo malo, netko kuca na moja vrata.
+2175183	Ovaj labud je crn.
+2187688	Naše vrijeme je ograničeno.
+2197387	Italija je jako lijepa država.
+2197392	Rim se nalazi u Italiji.
+2197432	Ima puno otoka u Grčkoj.
+2197445	Grčka ima mnogo otoka.
+2197454	Imam žabu u grlu.
+2197500	Crkva je samo preko puta.
+2197506	Možete mi reći gdje se nalazi najbliža crkva?
+2197510	Tipična je gotička crkva.
+2208286	Dođi do mene u jedanaest sati.
+2208290	Uvijek dariva svoju ženu.
+2208300	Zašto ga nisi slušao?
+2208306	Mojoj mački se sviđa moja tipkovnica.
+2208322	Zagrlila ga je.
+2208329	Da sam imao dovoljno novaca, kupio bih kameru.
+2208331	Jesi li već večerao?
+2208334	Do kolodvora možeš doći busom.
+2208858	Zašto neki ljudi podriguju poslije jela?
+2208922	Tko je njihov razrednnik?
+2208935	Jeste li ikada pročitali ijednu Tennysonovu pjesmu?
+2208938	Jeste li platili knjigu?
+2208977	Istog smo godišta.
+2208983	Još je mnogo toga za obaviti.
+2209018	Sjećaš li se imena svoje bake? - Ne, uvijek sam ju zvao samo bakom.
+2209026	Do grada je svega dvije milje.
+2213763	Mislila sam da je to moj posao.
+2213769	Ne možeš mi ti reći s kim mogu, a s kim ne mogu pričati.
+2213789	Zapalio je svoju vlastitu kuću.
+2213853	Jučer sam igrao s Tonyjem.
+2213854	Jesi li već uzeo svoj lijek?
+2213855	Bio je korektan prema meni.
+2213858	Bila sam jako pospana.
+2213860	To nije dobro za moje srce.
+2213877	Trebala bi pregledati svoje oči.
+2220490	Radim kao mrav svaki dan u hotelu.
+2220493	Ona je starija od mene šest godina.
+2220626	Dobro jutro, Mike.
+2220647	Ja sam turist.
+2220656	Izašao je u šetnju.
+2281652	Zar niste gladni?
+2287023	On se dobrovoljno predao.
+2287030	Predati se neprijatelju.
+2287050	Radije bih umro nego da se predam.
+2287274	Mnogo kuća je bilo pod požarom.
+2294800	Ovo je trokut.
+2345998	Knjiga je na stolu.
+2346895	Ovo je moje računalo.
+2422734	Lenjir je kratak.
+2439103	Ne želim raditi pod tim uvjetima.
+2441667	Kad možeš doći?
+2441670	Možeš li doći?
+2441673	Možete li doći?
+2489832	Ne pijte vodu iz prljave čaše!
+2609626	Veoma su pažljivo odslušali to predavanje.
+2743211	Sat je stao.
+2743221	Još uvijek te volim.
+2763030	Šećer je zamijenio med kao zaslađivač.
+2795001	Dat ću ti sve što želiš.
+2836607	Ja sam iz Njemačke.
+2864485	Jedan jezik nikad nije dovoljan.
+3061352	Ne razumijem ovu riječ.
+3081387	Imam dvije mačke.
+3179023	Dala mi je kompliment.
+3179039	Zabrinuto je za majčino zdravlje.
+3179067	Je li ovo mjesto slobodno?
+3179073	Ta žena me plaši. Uvijek viče i razgovara sama sa sobom.
+3179085	Koja ti je najdraža vrsta sušija?
+3179108	Opasno će biti samo za onoga koji ne reagira na život.
+3179121	Taj bi ti dao i košulju sa sebe.
+3179132	Sramim se što je moj sin učinio takvo što.
+3179140	Kako slatki štenci!
+3211322	On je učiteljova maza.
+3249456	Moramo izići na sljedećoj postaji.
+3255818	Želiš li kavu?
+3255825	Gdje je Cornwall?
+3255927	Mislim da ću se vratiti na spavanje.
+3355950	Nacrtaj mi ovcu...
+3457732	Život nikad ne ostaje isti.
+3457739	Imam problem i zove se Tom.
+3457745	Nećeš me ostaviti, zar ne?
+3457758	Pokušaj raditi jednu po jednu stvar.
+3457765	Izgubio sam sve.
+3457779	Hvala na tvojoj čokoladi.
+3457794	Ja neću gubiti vrijeme.
+3457805	Svaki put mi se sve više gadiš.
+3458031	Ideš li doma?
+3458034	Ovo je težak jezik.
+3458077	Da bi bio dobro dijete, trebaš ići u krevet i rano ustajati.
+3458479	Ne jedi kao svinja.
+3458874	Kada će to biti?
+3461715	Ljetni praznici su prošli.
+3468995	Kakav glup komentar!
+3468998	Oprosti, nisam te htjela uvrijediti.
+3512653	Veliko drvo nije zeleno.
+3836063	Svidjela mi se moja šalica čaja.
+3957057	Zašto si tako pametna?
+3957086	Kako se zvao hotel u Bostonu u kojem si bila prošle godine?
+3957087	Možeš li preporučiti hotel u blizini zračne luke?
+3957088	Možeš li preporučiti neke druge hotele?
+3957090	Neću ići u školu sutra.
+3957105	Sutra ne moraš ići u školu.
+3957125	Tom je vidio Mary s drugim muškarcem.
+3957136	Tom je htjeo vidjeti Marynu sobu.
+3957397	Tvoja stara jede govna.
+3957419	Živim u New Yorku.
+3957505	Tko je zaključao vrata?
+3957519	Koliko je star tvoj auto?
+3957577	Jesi li uživao u onoj igri? Tko je pobjedio?
+3960342	Mi ih nikad nećemo koristiti.
+3965605	Volim svog biseksualnog dečka!
+3965612	Ne viči na mene.
+3965620	Može li on voziti?
+3965624	Jesi li znala to prije?
+3965701	Bojiš li se smrti?
+3965702	Ona se boji smrti.
+3967095	Dvije vreće cementa će biti dovoljne.
+3967529	Puši mi kurac.
+3967548	Mi živimo u predgrađu.
+4098705	Čije je ovo?
+4267009	Sviđa li joj se moj šešir?
+4267010	Kiša je tako jako padala da smo odlučili ostati doma.
+4267021	Nije ništa razumio.
+4267025	Neki gospodin Itoh želi vas vidjeti.
+4421932	Šalica je na stolu.
+4421954	Poznaju jedan drugog od njihova djetinjstva.
+4542083	On nas ne može zaustaviti.
+4542095	Kad izlazimo s momcima samo ispaljujemo gluposti, a kad izlazimo samo mi cure, govorimo o momcima?
+4542103	Taj američki film okrunjen je velikim uspjehom.
+4542116	Ne idem te poljubiti.
+4542129	Je li moguće da je ovo ljubav?
+4542159	Ima 3 godine da sam doselio ovjde.
+4542173	Pričekajte molim dok ne dopijem kavu.
+4543010	Povuci to što si rekao da sam škrt!
+4543064	Tek što sam otvorio krletku, kanarinac je izletio.
+4543135	Posvađali su se.
+4543203	Tom se namrštio.
+4543214	Pristojno se ponašaj.
+4543221	Smijao sam se.
+4543244	Molim te, odlazi.
+4543319	Imaš li novaca?
+4591018	Molim te pogledaj me.
+4700932	Tom je odlučio otići u Boston.
+4700935	Tom je odlučio uzeti slobodan dan.
+4700937	Tom je varao na ispitu iz povijesti.
+4700971	Netko je ukrao Tomov novac.
+4700974	Tom može taknuti strop.
+4701389	Karton je jači od papira.
+4776967	Ima li ona dijece?
+4776989	Voda teče u zdjelu.
+4776996	Tom je zaboravio nahraniti Marijina psa.
+4776998	Poduzeli smo nužne mjere.
+4982200	Dobio sam na lutriji i idemo na Bahame.
+5010779	Koliko je sati?
+5010793	Reći ću te tati.
+5010797	Nazovi me ponekad.
+5011136	Je li on učitelj?
+5011322	Dobri umiru mladi.
+5013382	Ne brini o drugima.
+5013589	Ne radi scenu u javnosti.
+5013724	Ovo je život.
+5013786	Ostavi me na miru!
+5017713	Svatko tko tako kaže je lažljivac.
+5018400	Ja sam vrlo tužan čovjek.
+5018458	Mogu to i sama!
+5020777	Naravno, to nije točno.
+5020778	Naravno da to nije točno.
+5020978	Zašto si odustao od učenja francuskog?
+5020979	Puno očekujemo od njega.
+5026612	Posao je već bio završen.
+5026729	Bio je ranjen u borbi.
+5027724	Želiš li papra na tome?
+5036611	Mary zalijeva vrt.
+5049568	Tom ima odlično pamćenje.
+5049570	Donesi mi ocat i ulje, molim lijepo.
+5114080	On se nasmijao na mojem izgovoru.
+5255042	Što si odgovorio?
+5255179	Sviđa mi se taj odgovor.
+5359661	Stara gospođa je bila posvećena svom psu.
+5577604	Tom uživa u ribolovu.
+5577625	Nismo bile dovoljno oprezne.
+5577822	Nismo mogli to napraviti.
+5577827	Nismo bili dovoljno pažljivi.
+5577834	Mnogo smo se brinuli o tebi.
+5577836	Htjeli bismo znati o tome.
+5579233	Svatko želi sjesti kraj nje.
+5579732	Troškovi života su porasli.
+5579738	Izvadio je olovku.
+5579739	Tom duboko udahnu.
+5579746	To će se promijeniti.
+5579757	Odlično sam doručkovao u sedam.
+5579834	Mongolske horde pometale su sve na što su naišle.
+5580490	Zašto ne biste podijelili kekse s Jimom?
+5582856	Točnije rečeno, pio sam crno vino.
+5582862	Nisam to ja učinio.
+5582878	Odlučila je da ne ide.
+5582891	Nešto te ugrizlo.
+5582934	Tom vozi kamion.
+5583624	Ova se knjiga ovih dana dobro prodaje.
+5583729	Čast mi je upoznati vas.
+5585148	Ženu koja mi je ubila sestru trebalo bi objesiti.
+5585385	VIdjeli smo da djeca ulaze u autobus.
+5586578	Obratio se predsjedniku.
+5586579	Hvala ti, ne bih to mogao bez tebe.
+5587239	Uskladi svoje planove s mojima.
+5588894	Gdje ste bili prije tri godine?
+5691355	Ovdje je Rodos, ovdje skoči!
+5694323	Tomu je bilo toliko hladno da su mu zubi cvokotali.
+5697050	Zabava neće započeti sve dok se Tom ne pojavi.
+5700213	Da se nisam prisjećao, zaboravo bih.
+5705085	Možeš li me odvesti njoj?
+5705088	Svaki od njih ima bicikl.
+5705168	Dogodilo se nešto neočekivano.
+5705177	Tomu je ugodno.
+5705179	Ajmo van na šetnju.
+5720450	Neki prijatelji su me pozvali na večeru.
+5720919	Koliko dugo ti treba s biciklom odavde do tvoje kuće?
+5720922	Tom mora da je pokušavao ovo očistiti bez sapuna.
+5727440	Svi mi živimo pod istim nebom, ali nemamo isti horizont.
+5727452	Ona studira engleski.
+5727482	Razvijam Android aplikaciju.
+5728421	Ne možemo nego misliti da je bio mrtav.
+5730193	Tom je rekao da si sretan.
+5730199	Imao je strah mraka.
+5730203	Trebao sam čekati da se Tom probudi.
+5731206	Sreo sam tvog oca jučer.
+5731212	Ja ne vjerujem više u ono što mi govoriš.
+5731224	Tko zna tko su oni.
+5735508	On gleda olimpijadu.
+5735525	Tom je dolje.
+5736763	Nisam mu nikad vidio lice.
+5736769	Napravila sam sve što mogu da pomognem.
+5738898	Posjetiti ću ga u za nekoliko tjedana.
+5738899	Prošla su dva tjedna otkad je otišao na Havaje.
+5738901	Nitko ne želi mrziti moju državu.
+5738904	Nisam se mogao sjetiti njegovog imena.
+5738909	Sa slobodom dolazi odgovornost.
+5740859	Kako si došao do tog zaključka?
+5740862	Govoriš li tečno Japanski?
+5741802	Imaš li vremena ručati sa mnom?
+5750015	Velika je vjerojatnost da će sutra kišiti.
+5751312	To dijete je nastavilo plakati satima.
+5751319	Je li ovo mjesto gdje Tom sjedi?
+5785599	Poslije nas, potop.
+5867297	Ja sam iz Hrvatske.
+5867311	Zagreb je glavni grad Hrvatske.
+5874358	Plaža mi se sviđa.
+5874367	Išli su na plažu.
+6004717	U selu je bio kafić sa stolovima vani.
+6004724	Ne znam jesu li ti jezici srodni.
+6004725	U ovom gradu nema ništa za raditi.
+6004727	Tko je taj luđak?
+6004738	Da znaš koliko teško radimo da bismo ti pružili ovu hranu ne bi to rekao.
+6004744	Postoje li duše?
+6004750	Ne smijemo im dopustiti da nam to rade.
+6024257	Imate li flaširanu vodu?
+6048179	Imam tetu koja živi u Kyotu.
+6048181	Imam strinu koja živi u Kyotu.
+6048183	Ne moraš biti tako umišljen.
+6048187	Cvjetovi će izgledati još ljepše u vazi.
+6048198	Ta tvrtka je na klimavim nogama zbog loših dugova.
+6048209	Neuspjeh je začin koji daje okus uspjehu.
+6048210	Postoji barem jedna prednost čelavosti - štediš puno na šamponu.
+6048211	Engleski je pun romanskih riječi.
+6048214	Ne možeš me kupiti.
+6048215	Ne primam mito.
+6048219	On je iskren.
+6048223	Barem je iskren.
+6048229	Ne smijemo dopustiti da naše emocije narušavaju naše djelovanje.
+6048236	Hoću njegovu glavu.
+6048237	Hoću njenu glavu.
+6048240	Ne čitam romane.
+6050682	Ovi tanjuri su ručno obojani.
+6050687	Glup ljudi su često umišljeni.
+6050695	Tomova kuća je u obliku piramide.
+6050772	Treba popraviti moj sat.
+6063779	Tom je Amerikanac koji živi u Parizu.
+6063809	Radimo na pravima žena.
+6063824	Sami je znao pričati s mladim ženama.
+6064019	Većina znanstvenika smatra da je ovo uzrokovano čovjekovim djelovanjem, kroz ispuštanje metana, ugljičnog dioksida i drugih staklenjačkih plinova, od vremena industrijalizacije. Ali ipak, nekolicina drugih znanstvenika sumnja u ovo.
+6064049	On ne uči mnogo, ali ima dobar uspjeh u školi.
+6064052	Ovo je veoma komplicirano.
+6064078	Nećeš biti sposoban podnijeti ovaj posao.
+6064085	Rekla si mi to prije.
+6064089	Vi ste nas to naučili.
+6064096	Prepali ste nas.
+6064097	Zvučiš veoma mlad.
+6064128	Svatko čini pogreške s vremena na vrijeme.
+6064134	Trebamo više krumpira.
+6064139	Koja je šifra Wi-Fi-ja.
+6075458	Ostavi kufer tamo.
+6075462	Najgore glavobolje su uzrokovane nedovoljno shvaćenim idejama.
+6075463	Moraš se naviknuti na dvije stvari da bi učinio život podnošljivim: loše vrijeme i ljudsku nepravdu.
+6075470	Vratila sam se danas.
+6075471	Moram obaviti još neke stvari.
+6075907	Zbog toga se ne čudim.
+6075923	Moj je savjet da joj se ne kaže.
+6075928	Layla je dala policiji slike Samija.
+6075940	Samo se trudim biti dobar susjed.
+6075962	Tom nije bio osuđen.
+6077639	Izgleda da ju je uvrijedilo ono što joj je rekao.
+6077870	Ovaj dokaz je bio protiv njega.
+6077875	Mislim da je ovo očito.
+6078240	Kad su se vjenčali?
+6078243	Tko će biti prvi?
+6078247	Oba odgovora su moguća.
+6078294	Što češ napisati u ovom pismu?
+6078304	Layla nije bila spremna ići kući.
+6078310	Japanom vlada car a Španjolskom kralj.
+6078317	Mislim da jedna stvar koju si upravo rekao u svom uvodu malo odudara.
+6082560	Tom je čuo topove i bio se napeo sav od znatiželje hoće li i opet opaliti.
+6082570	Više nije nimalo sumnjao u starčeve riječi.
+6082610	Onaj tko piše čita dvaput.
+6082725	Postao sam umirovljenik nakon četrdestpet godina rada u uredu.
+6082726	Neki smatraju da se spontano zapaljenje ljudi stvarno događa, ali ja nisam baš uvjeren.
+6085278	Nije došao na posljednji sastanak.
+6085281	Došao je na sastanak na vrijeme.
+6085289	Jesi li primio paket koji sam ti poslala?
+6085292	Jeste li primili paket koji sam vam poslao?
+6085296	Možeš li pročitati onaj znak ispred nas?
+6085348	Dania je nastavila slijediti Fadilov primjer.
+6085351	Fadil je htio ukrasti Danijin novac.
+6158513	Imam smrdljivu djevojku.
+6158533	Izgledam li dobro u ovome?
+6158543	Što ti je ona napravila?
+6158561	Tom je umro od tuberkuloze.
+6158562	Njegov prst krvari.
+6158565	Nema manje od sto dolara.
+6158578	Dvaput je napravio tu istu grešku.
+6158850	Rekla mi je sve.
+6158853	On mi je sve rekao.
+6158854	"Ovaj?" "Ne, onaj!"
+6158865	Govoriš li talijanski?
+6158866	"Razumiješ li?" "Uopće ne razumijem."
+6158869	Tom je sjeo nasuprot Mary.
+6158872	Poznajem čovjeka s kojim radiš.
+6158875	Nisam navikao voziti auto po snijegu.
+6158883	Tom je igrao tenis svaki ponedjeljak.
+6158904	Zar stvarno želiš nešto kupiti od Toma?
+6158905	To je bila najveća greška u mom životu.
+6158908	Cijene su pale.
+6190940	Ona se jako ljuti na njega.
+6191028	Idemo u šetnju.
+6195439	U redu je, smatram, da svatko nauči neki strani jezik.
+6195464	Moguće je biti u miru, a on bira rat.
+6195476	Kuća je mala, ali zgodna.
+6195483	A život je težak.
+6196925	Reče: "Bolje sam naslikao grožđe nego dječaka."
+6386029	Ptica je uzletjela visoko na nebo i tražila ostale slonove.
+6386047	Kada se vratio u dva sata ujutro, pošteno sam ga izribao.
+6386715	"Je li istina što kažu?" "Što?" "Da ljudsko meso ima okus po svinjetini."
+6386887	Gdje sam pogriješio?
+6402131	Marija upravo sluša svoj iPod.
+6458667	Je li pomrčina Sunca uzrokovala trosatnu tamu?
+6563990	Obukao sam majicu.
+6563999	Letjeli smo od Londona do New Yorka.
+6564006	Postavili smo naše šatore prije mraka.
+6564024	Slušali smo pažljivo da ne propustimo ni jednu riječ.
+6564041	Zajedno smo ručali.
+6933649	Bio sam preumoran da išta pojedem.
+7097791	Nacrtao sam jednu kartu.
+7423752	Moj muž kaže da je treba.
+7423753	Dobro je što imam kći.
+8226967	Njihovo cvijeće slatko miriše.
+8226991	Molim te radi mi društvo.
+8560043	Ne želim da moja zemlja postane članica Europske unije.
+8752680	Zato što te volim.
+8755499	Jesi li to čula?
+8763229	Zašto si lagao?
+8767303	Ja se baš tako zovem.
+8808450	Sada moramo paziti na sebe.
+9170645	Prihvaćate li čekove?
+9685592	Veleprodajne cijene su u osnovi stabilne.
+9988268	Tom me pozvao na svoju zabavu.
+10059516	Moram spavati sada.
+10116682	Torta je ukusan desert.
+10130286	Cvjetača i brokula su slični.
+10130305	Doručak je najvažniji obrok u danu.
+10143178	Daj mi jedan.
+10363174	Naučio sam francuski.
+10471231	Zašto ne jedeš?
+10808691	Upoznao sam nekoga.
+10819701	Dođi ovdje brzo!
+10826641	Djeca vole jogurt.
+10843959	Trebao bi napisati roman.
+10852041	Proljeće je došlo.
+10894800	Ona ne puši.
+11169884	Mislim da je prekasno.
+11170369	Otišao sam tamo vlakom.
+11170801	Ona želi biti heroj.
+11172047	Automobil je zamijenio bicikl.
+11172231	Vidjet ćemo ga kasnije.
+11172772	Jučer je govorio o tebi.
+11173184	Tom može ostati s nama.
+11175080	Ovo je dvorac koji smo posjetili prošli tjedan.
+11175109	Za djecu je opasno igrati se na ulici.
+11175132	Hoćete li nešto popiti?
+11175293	Na pismu se ne kaže točno kada će doći u Tokio.
+11175430	Tjedan je podijeljen na sedam dana: ponedjeljak, utorak, srijeda, četvrtak, petak, subota i nedjelja.
+11207131	Što mogu učiniti?
+11313259	Sada živim u Tokiju.
+11313379	Dao sam im tvoju adresu.
+11355544	Mislim da je Yumi bolesna
+11745429	Danas je srijeda.
+11913820	Tiha noć, sveta noć, spava sve ...
+11940506	Koliko je zvijezda na nebu?
+11954933	Što je novo?
+11956200	Ona je moja učiteljica.
+11997789	On je liječnik.
+11999579	Što pčele rade zimi?
+12003069	Riječi nema u rječniku.
+12006525	Ja nemam pojma.
+12007296	Leptiri su ukras naših travnjaka.
+12010790	Ja čitam svoju knjigu.
+12011998	To je moj prijatelj.
+12012001	To je moj prijatelj Tom.
+12013722	Onaj koji piše dvaput čita.
+12015314	Da, to je točno.
+12022599	Imam trideset godina.
+12023431	Tko je naručio pizzu?
+12037395	Glazbenici su umorni.
+12037406	Da li je mušterija uvijek u pravu?
+12045449	On živi u Samarkandu.
+12075793	Australija je zemlja ekstrema.
+12099640	Glavni grad Srbije je Beograd.
+12100221	Mi smo u ratu.
+12115174	Tko se mača lati, od mača će i poginuti.
+12119352	Sloboda je temeljno ljudsko pravo.
+12128937	To je žohar.
+12128939	Žohari se smatraju štetočinama.
+12167485	Vrijeme je još uvijek vjetrovito.
+12168516	Dvije godine živim u Sloveniji.
+12172029	Svijet je okrugli.
+12198226	Ovo je moja soba.
+12210809	Moje ime je Jack.
+12217471	Ja sam Marija.
+12228764	Umrla je prije osam godina.
+12247953	Sutra je ponedjeljak.
+12260039	Moje ime je Andrea.
+12277321	Venera je planet.
+12292844	Zoološki vrt je otvoren.
+12303653	Povijest se ponavlja.
+12338545	Napredak ovog učenika/studenta je zadovoljavajući.
+12398180	Tom voli glazbu.
+12402866	Gdje je zahod?
+12403575	Kako se zove tvoja mačka?
+12405857	Ja nisam pjevačica.
+12407107	Šišmiši nisu slijepi.
+12409260	Gdje se nalazi hotel?
+12412001	Ovo je moja kuća.
+12471979	Djeca danas nisu u školi.
+12577198	Što to znači?
+12659544	Virus mi je pokvario računalo.
+12692673	Kako došlo, tako otišlo.
+12705786	Koji jezik učiš?
+12724125	Zašto je krv crvena?
+12741926	Čaj ili kava?
+12742572	Svijet me fascinira.
+12748843	Daj mi tisuću poljubaca.
+12818205	Četiri plus osamnaest je dvadeset i dva.
+12818573	Tom je gluh.
+12818582	Mokar sam. / Mokra sam.
+12821293	Prodajete li baterije?
+12821300	Možete li ponoviti što ste upravo rekli?
+12838509	Imam trinaest mačaka.
+12839635	Njegova žena je Francuskinja.
+12839687	Celo telo me boli.
+12839738	Suze su joj napunile oči.
+12839772	Tlo se čini mokrim.
+12839783	Ove kocke leda će se uskoro otopiti.
+12901236	Želim ti lijep dan.
+12970739	Ništa se nije dogodilo.
+13018732	Ptice nemaju zube.
+13098967	Tada dođoše dvije bludnice kralju i stadoše preda nj.
+13114368	Mnogim se učenicima nije svidjelo djelo "Lovac u žitu".
+13114375	Erik je jako zajebao kad je odlučio da će provoditi vrijeme na tome.
+13115939	Ovaj zanimljiv i uspješan latvijski film ne sadržava dijalog jer su svi likovi u njemu životinje.
+13115944	Ovo sranje ti uopće nije potrebno.
+13115948	Vidiš da nije tako grozno.
+13158739	Kako se možemo zaštititi od koronavirusa?
+13170454	Držite se dalje od psa!
+13171053	Zašto čekaš vani?
+13256962	Mislim da bismo trebali proći ovuda.
+13256979	Mislim da je odvratno kako neki ljudi žive u nekoj državi preko 20 ili čak 30 godina i još uvijek ne znaju složiti rečenicu na njenom jeziku. Zašto bi se neki Latvijac koji živi u Latviji trebao sramiti jer ne zna ruski zbog ruske manjine koja čini oko 20% stanovništva? Zar se ne bi te Ruse trebalo poticati da nauče jezik države u kojoj žive, zar nije njihov jezik sličan ukrajinskom, čiji su materinji govornici uspjeli naučiti latvijski u manje od 3 godine? A to ni nije jedini primjer, pa koliko tek ima Balkanaca koji toliko dugo žive u Njemačkoj, a možda znaju manje od 10 riječi na tom jeziku?
+13257002	Ne razumijem zašto neki ljudi preziru stvari koje uopće ne utječu na njihov život. Što tebe briga ako se netko zaljubi u osobu istog spola? Kako bi to tebi moglo nauditi?
+13257009	Hajde, probaj naučiti taj latinski, inače ćeš dobiti negativnu ocjenu ako te prozove.
+13259988	Bojim ga se.
+13276856	Svaki dan sam zvao.
+13276877	Kod kuće nam je ponestalo kruha.
+13323886	Navodno je vidio neku ženu i čuo glasan vrisak.
+13323888	Ja sam idiot, uopće ne biste trebali slušati moja mišljenja. Ja ne znam ništa o natjecanju Eurovizije.
+13324009	Zašto laici pokušavaju podučiti stručnjake?
+13324054	Izgleda kao armenski predstavnik.
+13377248	Nekoliko je jabuka u košari.
+13377300	To jezero ima promjer od sto metara.
+13377304	Koja ti se od japanske glazbe svidjela?
+13593816	Učinit ću je sretnom.
+13640635	Oprostite, mjesto je zauzeto.
+13642579	Bio je Mike tko je nazvao policiju.
+13642866	Tom i Mary uživaju provoditi vrijeme zajedno.
+13644796	Zmija je velika.
+13645172	On je otvorio vrata!
+13645184	Znaš li zašto je Tom otišao u Boston?
+13645241	Želim vidjeti vulkan.
+13647014	Naučio sam engleski za dvije sata nakon večere.
+13651231	Kuća je crna.
+13651291	Vidio sam konja blizu jezera.
+13655438	Pomoć ću ti pronaći tu knjigu.
+13656008	Pio sam pivo.
+13693367	Reći ću ti što se događa ovdje.
+13699541	Tom crta bolje od mene.
+13701037	Otišao sam u Tomovu sobu kako bih vidio spava li.
+13704532	Bio sam sam.
+13711161	Ti si ovdje.
+13711392	Znam gdje je bilo.
+13743946	Tom je prestar da živi sam.
+13744029	Gdje je konobar?
+13753586	Pokušaj doći rano.
+13760935	Večera je na stolu.
+13762879	Morao sam čekati više od tri sata.
+13768604	Meni se pjesma baš i nije dopala.
+13768630	Idi tamo gdje te vodi srce, dušo.
+13768636	Odavde nema natrag.
+13768646	Pričajmo o važnosti sredozemnog mora.
+13768648	Niste dali hrane djetetu!
+13768665	Dijete mi je izgubljeno.
+13768685	Barokna se književnost ističe po svojoj raskošnosti.
+13778273	Zadar je obalni grad.
+13778298	Njegova kći živi u Novom Zelandu.
+13786384	Jede li Tom grožđe?
+13793456	Je li kava dovoljno jaka?
+13793457	Stavljaš li mlijeko u svoj čaj?
+13810735	Tom provodi puno vremena u vrtu.
+13824385	Volim je, ali kaže da smo samo prijatelji.
+13824452	Dodala je mlijeko u svoju kavu.
+13833879	Nije bilo vjetrovito.
+13848102	Tko vlada svijetom?
+13852615	Uživajte u obroku.
+13857235	Gdje je učitelj?
+13899050	Ne želim igrati.
+13901915	Ja sam umjetna inteligencija.
+13919859	Franjo, daj mi bušilicu dolje molim.
+13928268	Budizam je jedna od pet velikih svjetskih religija.
+13928783	Gdje si sada?
+13937804	On nema novca.
+13937816	Ima li on novca?
+13951172	Hrvatski je službeni jezik Republike Hrvatske.
+13974125	Ne znam što je to.
+13978308	Tko ti je pomogao?
+13981919	Prozori kuće su zatvoreni.
+13981977	Znao sam da ćeš pitati o tomu.
+13984186	Bila je najljepša djevojka na plaži.
+13984190	Tražio sam posvuda, ali ne mogu to pronaći.
+13986752	Onaj čovjek priča s ljudima na jeziku kojeg ja razumijem.
+13987181	Dan esperanta obilježava se svake godine diljem svijeta u čast obljetnice objavljivanja prve knjige na esperantu 26. srpnja 1887. godine.
+13992997	Što radiš ovdje?
+13995200	Rekao je da govori osam jezika.
+13997509	Nisam mislio da će danas padati kiša.
+13997655	Popio je čašu čaja od limuna i otišao u svoju sobu.
+13999035	Probudio je Toma.
+14001275	Tom mi je rekao da je Mary ta koja mi je ukrala bicikl, ali mu ne vjerujem.
+14001300	Nismo doručkali iako je sada podne.
+14001301	Tom je već ovdje, ali Mary još nije ovdje.
+14004066	Bogatiji smo od njih.
+14004142	Bio sam u Africi.
+14004144	Može li Tom to učiniti umjesto mene?
+14004163	Tom kaže da mora pomoći Mary to učiniti.
+14004305	Ovo je knjiga koju tražiš, zar ne?
+14005077	Nikada ga nije posjetila.
+14009347	Na kojem je katu?
+14009348	Prilično sam siguran da je Tom već zaboravio ono što sam mu jučer rekao.
+14010396	Ne želimo te ovdje.
+14010724	Je li ovo vino?
+14015986	Pokazao mi je kako napraviti tortu.
+14017474	Žele me ubiti.
+14018712	Još uvijek ne razumijem ovu ideju.
+14019612	Tom je viši od svog brata.
+14019613	Ima li Tom mačku?
+14023914	To je prozor.
+14029794	Imam tri psa.
+14047832	On mora ostati.
+14049114	Tom je učitelj u školi našeg sina.
+14049117	Skoro sam pao u bazen.
+14051176	Ne znam što rade.
+14051193	On daje psu malo mesa.
+14053748	Ostavi kukuruz na stolu.
+14055939	Tom govori francuski gore nego engleski.
+14058431	Znam da je Tom otišao u Boston.
+14058432	Mislim da je ovo najbolje mjesto za jelo u gradu.
+14059546	Mrzim tvog psa.
+14061387	Ostao je budan cijelu noć čitajući roman.
+14064224	Tom i ja zajedno studiramo francuski.
+14066354	Želim da to vidiš.
+14077070	Moramo očistiti cijelu plažu.
+14079558	Zašto se to dogodilo?

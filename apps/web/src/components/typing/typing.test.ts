@@ -1,6 +1,8 @@
-import { keystrokeMap } from "@okb/engine";
+import { deadStrokeMap, keystrokeMap } from "@okb/engine";
 import { getLayout } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
+import { TYPING_COPY } from "../../content/typing/latin-copy";
+import { TYPING_LANGUAGES, practiceText, typingLayouts } from "../../content/typing/latin";
 import { URDU_PASSAGES, URDU_WORDS } from "../../content/typing/urdu";
 import {
   backspace,
@@ -143,5 +145,59 @@ describe("lessons", () => {
     const typing = keystrokeMap(getLayout("ur-standard"));
     for (const lesson of lessons)
       for (const w of lesson.words) expect(typeable(w, typing), w).toBe(true);
+  });
+});
+
+describe("Latin-script typing pages", () => {
+  it("cover every Latin-script language with a word list", () => {
+    const slugs = TYPING_LANGUAGES.map((l) => l.slug);
+    expect(slugs).toEqual(expect.arrayContaining(["spanish", "french", "italian"]));
+    for (const l of TYPING_LANGUAGES) expect(TYPING_COPY[l.code], l.code).toBeDefined();
+  });
+
+  it.each(TYPING_LANGUAGES.map((l) => [l.code, l] as const))(
+    "%s: enough text, typeable on every layout",
+    async (_, l) => {
+      const text = await practiceText(l);
+      expect(text.passages.length).toBeGreaterThanOrEqual(50);
+      expect(text.words.length).toBe(200);
+      expect(new Set(text.ids).size).toBe(text.ids.length);
+      const layouts = typingLayouts(l);
+      expect(layouts.length).toBeGreaterThan(0);
+      for (const layout of layouts) {
+        const id = layout.id;
+        const keys = keystrokeMap(layout);
+        const dead = deadStrokeMap(layout, keys);
+        for (const t of [...text.words, ...text.passages])
+          expect(typeable(t, keys, dead), `${id}: ${t}`).toBe(true);
+        // Every lesson word types on its layout, the accented letters included.
+        for (const lesson of buildLessons(layout, text.frequency, text))
+          for (const w of lesson.words) expect(typeable(w, keys, dead), `${id}: ${w}`).toBe(true);
+      }
+    },
+  );
+
+  it("teach the accented letters, and hint dead keys one press at a time", async () => {
+    const spain = getLayout("es-spain");
+    const es = TYPING_LANGUAGES.find((l) => l.code === "es")!;
+    const lessons = buildLessons(spain, (await practiceText(es)).frequency, {
+      words: [],
+      passages: [],
+    });
+    const accents = lessons.find((x) => x.id === "accents")!;
+    expect(accents.letters).toEqual(expect.arrayContaining(["á", "é", "í", "ó", "ú"]));
+    expect(lessons.find((x) => x.id === "home")!.letters).toContain("ñ");
+
+    const keys = keystrokeMap(spain);
+    const dead = deadStrokeMap(spain, keys);
+    const d = createDrill(["está"]);
+    const typed = setTyped(d, "est", 0);
+    // á on Spain's layout: the ´ key (Quote), then A.
+    expect(nextKeystroke(typed, keys, dead)).toEqual({ code: "Quote", shift: false, altgr: false });
+    expect(nextKeystroke(typed, keys, dead, "´")).toEqual({
+      code: "KeyA",
+      shift: false,
+      altgr: false,
+    });
   });
 });

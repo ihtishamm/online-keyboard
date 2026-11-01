@@ -1,0 +1,15 @@
+{
+  "source": "pt.xml.bz2",
+  "pages": 5838,
+  "sentences": 918984,
+  "repeatedSentencesSkipped": 41069,
+  "tokens": 12562444,
+  "distinctWords": 290640,
+  "wordsKept": 100000,
+  "nextWordHeads": 9969,
+  "text": "pt-train.txt",
+  "textSentences": 326250,
+  "textWeight": 2.33,
+  "heldOutPages": 127,
+  "heldOutSentences": 2000
+}

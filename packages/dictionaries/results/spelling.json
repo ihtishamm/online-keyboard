@@ -144,7 +144,7 @@
     "flagged": 45,
     "top3": 49,
     "correctWords": 8089,
-    "falseFlags": 70,
+    "falseFlags": 71,
     "fixed": 38,
     "wrongReplacements": 23,
     "spellcheck": true,
@@ -160,11 +160,187 @@
     "flagged": 49,
     "top3": 49,
     "correctWords": 6132,
-    "falseFlags": 61,
+    "falseFlags": 62,
     "fixed": 39,
     "wrongReplacements": 17,
-    "spellcheck": true,
-    "autocorrect": true,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
+  },
+  "de": {
+    "prose": {
+      "words": 4613,
+      "falseFlags": 93
+    },
+    "misspellings": 50,
+    "flagged": 49,
+    "top3": 49,
+    "correctWords": 8384,
+    "falseFlags": 140,
+    "fixed": 34,
+    "wrongReplacements": 36,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
+  },
+  "pt": {
+    "prose": {
+      "words": 5992,
+      "falseFlags": 76
+    },
+    "misspellings": 50,
+    "flagged": 49,
+    "top3": 47,
+    "correctWords": 7090,
+    "falseFlags": 80,
+    "fixed": 38,
+    "wrongReplacements": 23,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
+  },
+  "tr": {
+    "prose": {
+      "words": 3977,
+      "falseFlags": 237
+    },
+    "misspellings": 50,
+    "flagged": 50,
+    "top3": 50,
+    "correctWords": 5130,
+    "falseFlags": 246,
+    "fixed": 34,
+    "wrongReplacements": 73,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
+  },
+  "pl": {
+    "prose": {
+      "words": 4529,
+      "falseFlags": 384
+    },
+    "misspellings": 50,
+    "flagged": 50,
+    "top3": 50,
+    "correctWords": 5626,
+    "falseFlags": 265,
+    "fixed": 39,
+    "wrongReplacements": 82,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
+  },
+  "nl": {
+    "prose": {
+      "words": 4999,
+      "falseFlags": 181
+    },
+    "misspellings": 50,
+    "flagged": 48,
+    "top3": 50,
+    "correctWords": 6737,
+    "falseFlags": 104,
+    "fixed": 42,
+    "wrongReplacements": 19,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
+  },
+  "ro": {
+    "prose": {
+      "words": 5611,
+      "falseFlags": 163
+    },
+    "misspellings": 50,
+    "flagged": 47,
+    "top3": 50,
+    "correctWords": 6783,
+    "falseFlags": 94,
+    "fixed": 29,
+    "wrongReplacements": 29,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
+  },
+  "cs": {
+    "prose": {
+      "words": 4290,
+      "falseFlags": 246
+    },
+    "misspellings": 50,
+    "flagged": 50,
+    "top3": 49,
+    "correctWords": 5271,
+    "falseFlags": 150,
+    "fixed": 34,
+    "wrongReplacements": 48,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
+  },
+  "hu": {
+    "prose": {
+      "words": 4621,
+      "falseFlags": 452
+    },
+    "misspellings": 50,
+    "flagged": 50,
+    "top3": 48,
+    "correctWords": 5693,
+    "falseFlags": 455,
+    "fixed": 34,
+    "wrongReplacements": 129,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
+  },
+  "sv": {
+    "prose": {
+      "words": 4914,
+      "falseFlags": 248
+    },
+    "misspellings": 50,
+    "flagged": 50,
+    "top3": 47,
+    "correctWords": 5763,
+    "falseFlags": 123,
+    "fixed": 31,
+    "wrongReplacements": 27,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
+  },
+  "ca": {
+    "prose": {
+      "words": 6390,
+      "falseFlags": 162
+    },
+    "misspellings": 50,
+    "flagged": 49,
+    "top3": 48,
+    "correctWords": 7578,
+    "falseFlags": 185,
+    "fixed": 35,
+    "wrongReplacements": 68,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
+  },
+  "hr": {
+    "prose": {
+      "words": 4292,
+      "falseFlags": 320
+    },
+    "misspellings": 50,
+    "flagged": 50,
+    "top3": 49,
+    "correctWords": 5828,
+    "falseFlags": 260,
+    "fixed": 33,
+    "wrongReplacements": 80,
+    "spellcheck": false,
+    "autocorrect": false,
     "autocorrectByDefault": false
   }
 }

@@ -1,0 +1,15 @@
+{
+  "source": "hu.xml.bz2",
+  "pages": 4414,
+  "sentences": 605607,
+  "repeatedSentencesSkipped": 45004,
+  "tokens": 5381388,
+  "distinctWords": 465312,
+  "wordsKept": 100000,
+  "nextWordHeads": 9584,
+  "text": "hu-train.txt",
+  "textSentences": 230457,
+  "textWeight": 1.73,
+  "heldOutPages": 110,
+  "heldOutSentences": 2000
+}

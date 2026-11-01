@@ -1,0 +1,15 @@
+{
+  "source": "ca.xml.bz2",
+  "pages": 4501,
+  "sentences": 317459,
+  "repeatedSentencesSkipped": 19660,
+  "tokens": 5943402,
+  "distinctWords": 188663,
+  "wordsKept": 74643,
+  "nextWordHeads": 9013,
+  "text": "ca-train.txt",
+  "textSentences": 10154,
+  "textWeight": 39.79,
+  "heldOutPages": 101,
+  "heldOutSentences": 2000
+}

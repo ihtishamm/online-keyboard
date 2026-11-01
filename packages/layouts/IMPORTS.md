@@ -206,31 +206,251 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
 - **Skipped:** nothing
 - **Our changes:** none
 
+## de-easy
+
+- **Output:** `languages/german/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## pt-easy
+
+- **Output:** `languages/portuguese/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## tr-easy
+
+- **Output:** `languages/turkish/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## nl-easy
+
+- **Output:** `languages/dutch/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## ro-easy
+
+- **Output:** `languages/romanian/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## cs-easy
+
+- **Output:** `languages/czech/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## hu-easy
+
+- **Output:** `languages/hungarian/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## sv-easy
+
+- **Output:** `languages/swedish/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## ca-easy
+
+- **Output:** `languages/catalan/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## hr-easy
+
+- **Output:** `languages/croatian/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## de-germany
+
+- **Output:** `languages/german/germany.json`
+- **Source:** `vendor/cldr/de-t-k0-windows.xml`. Windows "German", from Unicode CLDR 43 keyboard data (Unicode License v3) (de-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 12, sag 1), 32 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## de-swiss
+
+- **Output:** `languages/german/swiss.json`
+- **Source:** `vendor/cldr/de-CH-t-k0-windows.xml`. Windows "Swiss German", from Unicode CLDR 43 keyboard data (Unicode License v3) (de-CH-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 16), 49 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## pt-brazil
+
+- **Output:** `languages/portuguese/brazil.json`
+- **Source:** `vendor/cldr/pt-t-k0-windows-var.xml`. Windows "Portuguese (Brazil ABNT2)", from Unicode CLDR 43 keyboard data (Unicode License v3) (pt-t-k0-windows-var.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 49 keys (n 49, s 49, ag 14), 49 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## pt-portugal
+
+- **Output:** `languages/portuguese/portugal.json`
+- **Source:** `vendor/cldr/pt-PT-t-k0-windows.xml`. Windows "Portuguese", from Unicode CLDR 43 keyboard data (Unicode License v3) (pt-PT-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 11), 49 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## tr-q
+
+- **Output:** `languages/turkish/q.json`
+- **Source:** `vendor/cldr/tr-t-k0-windows.xml`. Windows "Turkish Q", from Unicode CLDR 43 keyboard data (Unicode License v3) (tr-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 23, sag 2), 54 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## tr-f
+
+- **Output:** `languages/turkish/f.json`
+- **Source:** `vendor/cldr/tr-t-k0-windows-legacy.xml`. Windows "Turkish F", from Unicode CLDR 43 keyboard data (Unicode License v3) (tr-t-k0-windows-legacy.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 34, sag 14), 55 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## pl-programmer
+
+- **Output:** `languages/polish/programmer.json`
+- **Source:** `vendor/cldr/pl-t-k0-windows-extended.xml`. Windows "Polish (Programmers)", from Unicode CLDR 43 keyboard data (Unicode License v3) (pl-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 10, sag 9), 18 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## pl-typist
+
+- **Output:** `languages/polish/typist.json`
+- **Source:** `vendor/cldr/pl-t-k0-windows.xml`. Windows "Polish (214)", from Unicode CLDR 43 keyboard data (Unicode License v3) (pl-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 27), 74 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## nl-standard
+
+- **Output:** `languages/dutch/standard.json`
+- **Source:** `vendor/cldr/nl-t-k0-windows.xml`. Windows "Dutch", from Unicode CLDR 43 keyboard data (Unicode License v3) (nl-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 21), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## ro-standard
+
+- **Output:** `languages/romanian/standard.json`
+- **Source:** `vendor/cldr/ro-t-k0-windows.xml`. Windows "Romanian (Standard)", from Unicode CLDR 43 keyboard data (Unicode License v3) (ro-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 26, sag 12), 94 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## cs-qwertz
+
+- **Output:** `languages/czech/qwertz.json`
+- **Source:** `vendor/cldr/cs-t-k0-windows.xml`. Windows "Czech", from Unicode CLDR 43 keyboard data (Unicode License v3) (cs-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 34), 116 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## cs-qwerty
+
+- **Output:** `languages/czech/qwerty.json`
+- **Source:** `vendor/cldr/cs-t-k0-windows-qwerty.xml`. Windows "Czech (QWERTY)", from Unicode CLDR 43 keyboard data (Unicode License v3) (cs-t-k0-windows-qwerty.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 23, sag 12), 72 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## hu-standard
+
+- **Output:** `languages/hungarian/standard.json`
+- **Source:** `vendor/cldr/hu-t-k0-windows.xml`. Windows "Hungarian", from Unicode CLDR 43 keyboard data (Unicode License v3) (hu-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 41), 74 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## sv-standard
+
+- **Output:** `languages/swedish/standard.json`
+- **Source:** `vendor/cldr/sv-t-k0-windows.xml`. Windows "Swedish", from Unicode CLDR 43 keyboard data (Unicode License v3) (sv-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 13), 49 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## ca-spain
+
+- **Output:** `languages/catalan/spain.json`
+- **Source:** `vendor/cldr/es-t-k0-windows.xml`. Windows "Spanish", the keyboard Catalan is typed on in Spain and Andorra,, from Unicode CLDR 43 keyboard data (Unicode License v3) (es-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 12), 49 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## hr-standard
+
+- **Output:** `languages/croatian/standard.json`
+- **Source:** `vendor/cldr/sl-t-k0-windows.xml`. Windows "Croatian" (CLDR 43 has no Croatian file; Windows' Croatian and Slovenian layouts have the same keys, so this is the Slovenian one), from Unicode CLDR 43 keyboard data (Unicode License v3) (sl-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 29), 74 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
 ## Vendored, not yet used
 
 CLDR 43 Windows keyboards ready for the national layouts (plan 7.5). Unicode License v3.
 
 | File | Name | Coverage | Skipped |
 | --- | --- | --- | --- |
-| `cs-t-k0-windows-qwerty.xml` | Czech (QWERTY) | 48 keys (n 48, s 48, ag 23, sag 12), 72 dead-key compositions | nothing |
-| `cs-t-k0-windows.xml` | Czech | 48 keys (n 48, s 48, ag 34), 116 dead-key compositions | nothing |
 | `da-t-k0-windows.xml` | Danish | 48 keys (n 48, s 48, ag 13), 49 dead-key compositions | nothing |
-| `de-CH-t-k0-windows.xml` | Swiss German | 48 keys (n 48, s 48, ag 16), 49 dead-key compositions | nothing |
-| `de-t-k0-windows.xml` | German | 48 keys (n 48, s 48, ag 12, sag 1), 32 dead-key compositions | nothing |
 | `fi-t-k0-windows.xml` | Finnish | 48 keys (n 48, s 48, ag 13), 49 dead-key compositions | nothing |
-| `hu-t-k0-windows.xml` | Hungarian | 48 keys (n 48, s 48, ag 41), 74 dead-key compositions | nothing |
 | `nb-t-k0-windows.xml` | Norwegian | 48 keys (n 48, s 48, ag 12), 49 dead-key compositions | nothing |
-| `nl-t-k0-windows.xml` | Dutch | 48 keys (n 48, s 48, ag 21), 51 dead-key compositions | nothing |
-| `pl-t-k0-windows-extended.xml` | Polish (Programmers) | 48 keys (n 48, s 48, ag 10, sag 9), 18 dead-key compositions | nothing |
-| `pl-t-k0-windows.xml` | Polish (214) | 48 keys (n 48, s 48, ag 27), 74 dead-key compositions | nothing |
-| `pt-PT-t-k0-windows.xml` | Portuguese | 48 keys (n 48, s 48, ag 11), 49 dead-key compositions | nothing |
-| `pt-t-k0-windows-var.xml` | Portuguese (Brazil ABNT2) | 49 keys (n 49, s 49, ag 14), 49 dead-key compositions | nothing |
 | `pt-t-k0-windows.xml` | Portuguese (Brazil ABNT) | 49 keys (n 49, s 49, ag 14), 49 dead-key compositions | nothing |
 | `ro-t-k0-windows-legacy.xml` | Romanian (Legacy) | 48 keys (n 48, s 48, ag 28), 76 dead-key compositions | nothing |
-| `ro-t-k0-windows.xml` | Romanian (Standard) | 48 keys (n 48, s 48, ag 26, sag 12), 94 dead-key compositions | nothing |
-| `sv-t-k0-windows.xml` | Swedish | 48 keys (n 48, s 48, ag 13), 49 dead-key compositions | nothing |
-| `tr-t-k0-windows-legacy.xml` | Turkish F | 48 keys (n 48, s 48, ag 34, sag 14), 55 dead-key compositions | nothing |
-| `tr-t-k0-windows.xml` | Turkish Q | 48 keys (n 48, s 48, ag 23, sag 2), 54 dead-key compositions | nothing |
 
 ## xkeyboard-config (evaluated, not used)
 

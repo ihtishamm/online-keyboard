@@ -1,6 +1,17 @@
 @import "tailwindcss";
 
 /*
+ * The spacing accents ˍ ˘ ˙ ˛ that dead keys type on their own (Czech, Polish, Hungarian, …):
+ * Inter's web subsets leave them out. Four glyphs from Noto Sans (src/fonts/OFL.txt).
+ */
+@font-face {
+  font-family: "Spacing Accents";
+  src: url("../fonts/noto-sans-spacing-accents.woff2") format("woff2");
+  unicode-range: U+02CD, U+02D8-02D9, U+02DB;
+  font-display: swap;
+}
+
+/*
  * Phone keyboard mode: narrow screens, and touch screens turned sideways (a landscape phone is
  * wider than `sm` but still a phone). `short` is the landscape case, where keys must be lower.
  * Keep in sync with PHONE_QUERY in components/keyboard/useNarrow.ts.
@@ -142,7 +153,7 @@
   --stack-naskh: "Noto Naskh Arabic", "Inter Variable", serif;
   --stack-devanagari: "Noto Sans Devanagari", "Inter Variable", sans-serif;
   --stack-bengali: "Noto Sans Bengali", "Inter Variable", sans-serif;
-  --stack-latin: "Inter Variable", system-ui, sans-serif;
+  --stack-latin: "Inter Variable", "Spacing Accents", system-ui, sans-serif;
   /* Key caps, candidates and other UI glyphs in any of our scripts (fonts load per glyph range). */
   --stack-script: "Noto Naskh Arabic", "Noto Sans Devanagari", "Noto Sans Bengali", serif;
   --text-editor: 1.75rem;

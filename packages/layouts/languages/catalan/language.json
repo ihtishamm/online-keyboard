@@ -1,0 +1,26 @@
+{
+  "slug": "catalan",
+  "code": "ca",
+  "order": 320,
+  "lang": "ca",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Catalan",
+    "native": "Català"
+  },
+  "aliases": ["Valencian"],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["ca-easy", "ca-spain"],
+  "accents": "àçéèíïòóúüÀÇÉÈÍÏÒÓÚÜ·",
+  "sample": "Demà anirem a la platja amb la família, si fa bon temps.",
+  "voice": ["ca-ES"],
+  "wordList": true,
+  "translate": {
+    "google": "ca",
+    "bing": "ca"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot. Catalan is typed on the Spanish keyboard in Spain and Andorra. · is the middle dot of l·l."
+}

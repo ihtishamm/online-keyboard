@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+806	Er war immer noch verärgert über den Unfall, trotz den versöhnlichen Worten seiner Frau.
+135758	Arabisch ist eine sehr wichtige Sprache.
+340857	Deutsch ist keine einfache Sprache.
+353699	Schweden hat eine eigene Sprache.
+368344	Die Insel liegt etwa zwei Meilen von der Küste entfernt.
+400703	Ich habe gestern bis spät in die Nacht im Internet gesurft.
+401662	Er hoffte auf das Vermögen seiner Eltern.
+401928	Ich werde dir das Geld morgen geben.
+406758	Wann wird sie nach Hause zurückkommen?
+445894	Es macht mir nichts aus, ob ich nass werde.
+471972	Du solltest deine Wertsachen an einem sicheren Ort verwahren.
+560175	Fang mich, wenn du kannst.
+666386	Sich zu erholen braucht Zeit.
+714606	Ich habe heute für vierzig Dollar getankt.
+718922	Sie war empört als ich sagte, dass sie lügt.
+768975	Einige Manager murrten wegen seiner Bestellung zum Präsidenten.
+852584	Ich schäme mich, so angezogen, auszugehen.
+900305	Ich freue mich auch, Sie kennenzulernen!
+906499	Bevor du gehst, vergewissere dich, dass du jedes Licht ausgemacht hast.
+915055	Die Arbeiter forderten, mit dem Eigentümer zu reden.
+924927	Sie lebt noch immer von ihren Eltern.
+938421	Der in den letzten Tagen niedergegangene Regen hat die Sümpfe aufgefüllt.
+943925	So viel Essen kann ich niemals alleine aufessen.
+966757	Lass das! Du bringst sie in Verlegenheit.
+1065911	Was halten Sie von einem Spaziergang nach dem Mittagessen?
+1077767	Hast du den Fön mitgenommen?
+1309231	Die Blumen sind ohne Wasser eingegangen.
+1352808	Man weiß selten, was Glück ist, aber man weiß immer, was Glück war.
+1389470	Aber irgendwie haben Sie schon recht.
+1494650	Ist dies der Schlüssel, den dein Onkel sucht?
+1514956	Tischmanieren unterscheiden sich von Land zu Land.
+1533466	Stellen Sie den Wagen in die Garage.
+1554758	Die Demokraten kauften Sendezeit im Werbefernsehen für den Wahlkampf.
+1620227	Eine solche Politik wird nicht zum Erfolg führen.
+1684266	Er stieß sie ins Schwimmbecken.
+1724063	Sie ist sanft wie ein Lamm.
+1724098	Sie macht das schon seit über zwanzig Jahren.
+1768834	Ohne seine Hilfe hätte sie versagt.
+1806624	Die See ist rau, bis Sado liegt darüber die Milchstraße.
+1830795	Soweit ich weiß, ist er ehrlich.
+1833005	Wir sind alle drei Studenten.
+1905208	Rushia, hast du eine Schwester?
+1918759	Er war der richtige Mann am richtigen Platz.
+1941635	Das Beste ist, was man in der Hand hat.
+1941644	Auf ausgetretenen Wegen wächst kein Gras.
+1966784	Bei dieser Untätigkeit kann keine Lebensfreude aufkommen.
+2027263	Du willst doch nicht, dass ich meinen Bus verpasse, oder?
+2073514	Der Soldat wurde am Bein verwundet.
+2114683	Es war ein Fehler von ihrer Seite.
+2122284	Drastische Zeiten erfordern drastische Maßnahmen!
+2130073	Am Ende nahm Maria das Angebot des Unbekannten an.
+2343314	Die Familie ist die älteste aller Gemeinschaften und die einzige natürliche.
+2416444	Hänge an die große Glocke nicht, was jemand im Vertrauen spricht.
+2419838	Warum schweigst du denn plötzlich?
+2437742	Ich wollte dich einfach nur verwirren.
+2632214	Ich kam, um Sie zu suchen.
+2689803	Mir ist klar, dass es dir nicht darum ging, mich zu kritisieren.
+2690083	Hier gibt es viele Leute.
+2710076	Sich selbst geben ist besser als nur geben.
+2717268	Du beharrst ständig darauf, im Recht zu sein.
+2743750	Brausend eilt zwischen moosigen Felsen hindurch schäumendes Wasser zu Tal.
+2744210	Draußen steht ein nasser Hund vor einer verschlossen Tür, reckt den Hals und heult auf.
+2835498	Die Argumentation der Geheimdienste ist ekelhaft und verlogen.
+2970360	Das verstehe ich leider nicht. Das ist für mich zu kompliziert.
+2997381	Sie ähneln sich wie ein Ei dem anderen.
+3110178	Ich gehe zu Fuß nach Bilthoven.
+3118679	Ich will dir nicht zuhören.
+3167775	Ich glaube nur die Hälfte von dem, was ich im Internet lese.
+3241847	Teuer verkaufen ist keine Sünde, wohl aber falsch messen.
+3341865	Du denkst dir das aus, oder?
+3384358	Die Kellnerinnen sind jung, hübsch, aufreizend und wohlgekleidet.
+3543783	Der alte Mann nahm mir das Buch aus der Hand.
+3548182	Dieses Lied habe ich, glaube ich, schon mal gehört.
+3750099	Es gab zwei kleine Kuchen.
+3894089	Ich muss einen Brief schreiben. Haben Sie Papier?
+3945157	Ich nehme Ihr Angebot an.
+3961014	Ihre Bemerkungen waren so unverschämt, dass sie einfach nicht veröffentlicht werden konnten.
+3968673	Die beiden Männer wurden wegen rücksichtslosen Fahrens verhaftet.
+3973879	Ich hab' schonmal einen Mann barfuß über heiße Kohlen laufen sehen.
+4254324	Diese Ente ist nicht besonders zart.

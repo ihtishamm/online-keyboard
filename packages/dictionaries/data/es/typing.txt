@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+330042	Una mujer me preguntó por una calle.
+330153	Ella no tiene con quién hablar.
+345559	Por algo había estudiado él en el extranjero.
+434161	Según el pronóstico va a nevar mañana.
+460876	Él cogió un espejo y se miró la lengua.
+497495	El otro día perdí mi cámara de fotos.
+524670	Parece que Alice está muy contenta con el traje.
+576072	Nuestro maestro de inglés es tanto estricto como amable.
+626307	No le prestes atención a lo que él dijo.
+668525	Preocuparse es como pagar una deuda que no tienes.
+738335	No puedo tomarme un café con tanto azúcar.
+754701	No llegues tarde a la escuela mañana.
+765150	Mi padre es muy amable.
+776567	No almacenes en la memoria lo que puedas almacenar en el bolsillo.
+790072	Bob perdió su interés en la música rock.
+860507	Me gusta nadar y jugar al baloncesto.
+931686	Estos autos están fabricados en Japón.
+945417	El dolor le había afectado los sentidos.
+981681	El punto de observación se encontraba en la zona más alta de la ciudad.
+990858	Al principio no me gustaba el rock, pero ahora sí.
+1016063	Justo ahora que me estaba divirtiendo, me quedé sin dinero.
+1047348	El mayor campo de refugiados del mundo se encuentra en Kenia.
+1068086	No deja que nadie se siente en su sillón.
+1068420	El mando a distancia de la televisión está debajo del sofá.
+1068472	Soy tan fuerte como tú.
+1075100	No me acuerdo de su nombre.
+1170913	Su país se ve amenazado por la anarquía.
+1248359	Ella me pidió perdón por haberme pisado el pie.
+1260760	Quiero tener sexo con él.
+1264226	Mi hermano pequeño sabe leer en inglés.
+1280107	Mi cuerpo se desvanecerá, como la espuma.
+1281949	Ateo y antirreligioso no son sinónimos.
+1284808	Esta casa no es muy grande.
+1305557	Aún no puedo decirte la respuesta a eso.
+1318373	El arte moderno no significa nada para mí.
+1330639	Ella le enseñó a tocar el piano.
+1352123	Ella se abrió paso entre la muchedumbre.
+1387850	Te amo más que a nadie.
+1404616	Mi madre le está haciendo un pastel a mi padre.
+1416956	Pelá las papas y las zanahorias.
+1420818	Quédate en casa esta tarde.
+1441902	La vida comienza a los cuarenta.
+1454093	Su reputación se vio muy afectada por esto.
+1461091	Taro habla inglés mejor que yo.
+1501751	Es, sin embargo, una buena oración.
+1543359	Él está a punto de ir a Londres.
+1551495	Estoy esperando a mi novio.
+1580332	Quiero un poco de té sin azúcar.
+1596601	Su estúpida respuesta dejó sorprendidos a todos.
+1598099	Lo conozco de vista, pero no por su nombre.
+1603507	Ellos comenzaron con un fuerte ataque al enemigo.
+1611599	Ella ha pasado más de cuatro meses en el extranjero.
+1643601	Él se ha preparado para lo peor.
+1666484	Ella lo hace más rápido que yo.
+1668162	Me costó cerrar la puerta.
+1690790	No me interesa lo que hagas.
+1696556	Japón es en su mayor parte un lugar hermoso para vivir.
+1721432	Hace mucho tiempo que los científicos están buscando una cura para el cáncer.
+1834210	Si lo supiera, lo diría.
+1937733	Mi inglés no es nada bueno.
+1993134	Danos unos ejemplos, por favor.
+2003571	Está medicina no me hace ningún bien.
+2067203	Estar familiarizado con idioma es una cosa, enseñarlo es otra cosa.
+2079724	Todos estaban disfrazados, así que no podía decir quién era quien.
+2084464	Yo reconozco cuando alguien miente.
+2270711	Por favor, hágame un poco de té.
+2311753	Se dice que él es rico.
+2334839	Descubre cómo vivieron, y descubrirás cómo murieron.
+2337758	Él jugará al golf el domingo que viene.
+2342362	El asesino no dejó ningún tipo de huella.
+2389640	El amor al dinero es la raíz de todos los males.
+2412364	Él veía aves, flores y hojas, y en todas partes brillaban los colores.
+2722777	Como he dormido muy bien esta noche, me encuentro muy bien esta mañana.
+2938489	Él fue baleado al entrar a la villa.
+2943103	Como había una mosca en mi café, no tuve que pagar la cuenta.
+3215707	En la Biblia está escrito así.
+3302499	Yo pensaba que vos estabas en la cita.
+3531069	Acabo de disparar a alguien, creo.
+3567394	Esta canción me emociona tanto que me hace lagrimear.
+3773308	Era una obra de ritmo pausado y tono elegiaco.

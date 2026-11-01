@@ -1,0 +1,27 @@
+{
+  "slug": "swedish",
+  "code": "sv",
+  "order": 310,
+  "lang": "sv",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Swedish",
+    "native": "Svenska"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["sv-easy", "sv-standard"],
+  "accents": "åäöéÅÄÖÉ",
+  "sample": "Vi åker till skärgården på lördag och äter jordgubbar.",
+  "voice": ["sv-SE"],
+  "wordList": true,
+  "translate": {
+    "google": "sv",
+    "bing": "sv",
+    "deepl": "sv"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

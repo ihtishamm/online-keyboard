@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+467310	Això és bufar i fer ampolles.
+467342	Cinc! -va dir l'Àlex.
+467356	El sindicat va negociar amb la directiva.
+467359	Hi ha animals, com els lleons, que mengen carn.
+467377	Estarà enllestida la feina per a demà?
+467387	Ningú no li fa ombra.
+467388	Ningú no li és rival.
+467420	Compara aquesta joia autèntica amb aquella imitació.
+467448	El diccionari recull vora mig milió de paraules.
+467491	França és a l'Europa Occidental.
+467502	Té números de sortir-se'n?
+467511	M'he deixat la raqueta de tennis al tren.
+507036	Quines llengües es parlen al Canadà?
+507048	Hi ha algun músic conegut a l'escena?
+507059	Estudio l'anglès perquè tinc la intenció d'anar a Amèrica.
+507090	Va agafar el llibre del prestatge.
+507098	Va anar-se'n de l'oficina sense dir-ne res a ningú.
+507107	Crec que aquesta taula ocupa massa espai.
+507118	Els diners permeten de comprar qualsevol cosa.
+507123	Em vaig cansar d'estar tot el dia estirat al llit.
+507945	Què? Encara no saps conduir?
+507950	Els nostres fills volen bicicletes com les dels fills del veí.
+507955	Faré els deures després de veure la televisió.
+585958	Tu en saps d'entrar a les dones.
+589487	He visto de 100 a ser més o menys
+607501	Escac i mat!
+779088	Encara no he acabat d'esmorzar.
+779090	Deixa que vagi a comprar.
+779127	Em dutxo tots els dies.
+779129	Quantes vegades et dutxes per setmana?
+780006	No sabràs pas on viu ella?
+780022	Jo havia estat a Canadà.
+780427	Conta'ns la història de principi a fi.
+780428	Aquí està prohibit malgastar l'aigua.
+780432	Vostè quan beu cafè?
+780444	La prova ens va convèncer de la seva innocència.
+780954	Va fer un gran badall.
+780963	Puc parlar de qualsevol cosa amb el meu amic.
+780970	Li vam fer veure l'error en el seu raonament.
+780982	No podia respondre cap pregunta de la prova.
+780987	El Japó necessitava establir relacions amb els països d'occident.
+781013	Qui li ha ensenyat a parlar anglès?
+781026	Molts joves japonesos prenen pa per a esmorzar.
+781031	Ell va morir ahir.
+782396	Café y té Pu-Erh son elixires de vida.
+795035	No és tan nena com et penses.
+795042	Van marxar de casa a l'instant.
+795055	T'ho mereixes.
+795073	En Tom ha viscut a Nova York des de menut.
+795297	Sembla que ja no és un cercle perfecte.
+795306	El Japó importa una gran quantitat de petroli.
+795311	Quin rodatge té aquest cotxe?
+822964	No em comparis amb una estrella de cinema.
+822970	La fotografia em transporta a la meva infantesa.
+853559	Obre els ulls sisplau
+853906	Aquest cotxe és un trasto.
+854973	Ella va sortir sense dir ni una paraula
+855046	Ara son les cuatre i deu.
+855056	Puc donar fe de la seva inocencia.
+855157	Qui es aquell home?
+855565	No hi ha cap gos que sigui més gran que aquest.
+856618	Els bitllets de metro pujaràn de preu l'u d'abril de 1999.
+857091	L'anglès es difícil, no és cert?
+857566	Si tenim problemes de diners sempre podem tirar mà dels nostres estalvis.
+859316	La traducció de la novel·la francesa li va portar més de tres mesos.
+859402	L'honestedat és una virtut cabdal.
+859422	No puc suportar el soroll per més temps.
+859436	És evident que ell té raó.
+859477	La proposta amb el número 264405 no existeix.
+859512	Quin és el nom d'aquest carrer, per favor?
+859554	Avui fa calor.
+874303	Ell vindrà a veure'ns sens falta.
+875370	Estic escoltant la ràdio.
+875407	Ell no ha jugat mai al golf.
+875412	La setmana passada vaig començar a aprendre xinès.
+875438	Va atribuir el seu fracàs a la mala sort.
+875442	Si et menjes això, moriràs.
+875461	Per aquest camí sempre passen molts cotxes.
+875471	No em molestis quan estic estudiant.
+875475	No et preocupis per mi.
+875477	Quan vas tornar d'Alemanya?
+875494	L'italià és la meva llengua materna.
+875513	No et preocupis per la teva feina.
+875514	No hi ha ningú a l'entrada.
+876041	Així és com va inventar la màquina.
+876043	Aquesta és la raó per la qual ell va entrar a l'universitat.
+876053	La línies blaves al mapa corresponen als rius.
+876070	Ell té tres filles.
+876071	Tens una bona memòria.
+876073	Bill era al Japó.
+876084	El seu marit viu a Tòkio ara.
+876130	Ell ha començar a cercar treball.
+876147	El mèdic de na Mary li va aconsellar que fes exercici.
+876153	Ja he acavat tota la meva feina així que ara m'agradaria prendre'm un petit repós.
+876161	He tingut una experiència terrible avui, així que vaig a prendre'm una cervesa i anar al llit.
+876193	Això no és espanyol.
+876245	Què sucs de fruites tens?
+876253	Podria signar-me aquest llibre?
+876308	M'agadaria saber quan ho pot enviar.
+876335	Vols conèixer el meu secret? És molt senzill...
+876338	Escriu aquestes paraules al teu quadern.
+876346	Els diners no poden comprar la felicitat.
+877089	Ell va cercar la carta tot el día.
+877090	Estic molt agraït per la teva ajuda.
+877097	Les arts marcials tenen el seu límit; només has de pensar en el Bruce Lee: ell era el més fort però no va poder evitar morir.
+877099	Haurien d'estar avergonyits de la seva estupidesa.
+877115	Papá ha perdut la seva feina, i el que es pitjor, mamá s'ha posat malalta.
+877127	Pots venir amb mi.
+877137	Estic tan cansada que no puc estudiar.
+877159	Aquella és la causa del seu fracàs.
+877178	No vull tornar a veure la teva cara.
+877204	Jo no visc per menjar sinò que menjo per viure.
+877205	Quasi ningú li va creure.
+877208	S'està estudiant un nou tractament per l'hepatitis.
+877219	Ells són jugadors de beisbol.
+877222	Hellen Keller era sorda i cega.
+877225	Darrerament, ell ha estat bevent massa.
+877233	Sempre ha sigut així.
+877241	Hi aniré en cotxe.
+877246	Vaig veure la imatge.
+877251	Pareix que a l'estudiant li anirà bé amb els següents exàmens parcials.
+877265	John va convèncer els seus amics d'ajudar a la família pobre.
+877273	Avui fa bon temps veritat?
+877279	Oh, em sap greu.
+877285	Aquest hàbit és adquirit, no innat.
+877295	No marxin, estimats.
+877296	Hi han taxis per aquí a prop?
+877303	Aquest periòdic és gratuït.
+877308	Ell semblava molt feliç.
+877326	El teu comportament va més enllà de l'extraordinari.
+877334	No entenc el que tractes de dir.
+877368	Ella ens va dir que el carrer estava tancat.
+877392	Aquesta és una fotografía de la meva mare.
+877408	Es pronostica un 4% d'inflacció per enguany.
+877416	Sap vostè el seu nom per casualitat?
+877433	El contracto com a programador.
+877442	Em sap greu haver d'informar-te de la mala notícia.
+877443	Tota persona té dret a fundar sindicats i a sindicar-se per a la defensa del seus interessos.
+877468	Malauradament no tinc ara mateix el seu formulari a mà.
+877470	De cop, vaig escoltar un crit.
+877503	Aquest rellotge no funciona.
+877505	Aquella noia d'allà és molt grassa.
+877514	Sempre fa un temps tan horrible a l'abril?
+877519	Ell va anar fins a l'estació a acomiadar-la.
+877540	No caminis tan ràpid.
+877567	La meva bicicleta té una roda pintxada.
+877582	Algunes persones que parlen anglès creuen que l'omisió del subjecte no existeix amb aquella llengua, no obstant, el subjecte s'omet amb oracions com "thank you" o "bless you".
+877592	Es porta bé a l'escola, però a casa causa problemes.
+877595	El noi que m'agrada no m'estima.
+877596	Crec que mereix la pena veure aquesta pel·lícula dues vegades.
+877602	No m'importa, el que triis tu.
+877610	A ella no li va afectar molt la mort del seu marit.
+877612	Ell va notificar un nom i direcció falsos a la policía.
+877626	Amb un pare americà i una mare francesa, ella és bilingüe.
+877642	Jo no podria estar-hi ni un sol día sense aquest diccionari.
+877650	Espero que surti bé.
+877982	Aquests articles no són a la venda.
+877987	No m'imposis la teva opinió.
+878021	La botiga tanca a les set.
+878026	Carlos se'n va anar i va tornar amb el llibre.
+878040	"A què s'assembla?" "A un home trist."
+878051	No m'interessa la seva vida privada.
+878099	Volía comprar el llibre.
+878107	La trobo encantadora i atractiva.
+878108	Per què sempre em passa això a mi?
+878128	No vull vivir tot sol.
+878132	Ells no són els meus vertaders pares.
+878155	El meu oncle ha viscut molts anys a l'estranger.
+878161	Va ser triat com a membre de l'equip.
+878181	On vas papà?
+878183	El temps vola com una fletxa; la fruita vola com una banana.
+878184	Ell va arribar massa aviat.
+878190	La meva mare va preparar el nostre esmorzar.
+878200	No puc recordar on el vaig comprar.
+879420	El seu cor bategava d'emoció.
+879422	És molt difícil exterminar les cucaratxes de la nostra casa.
+879423	Ell va tornar abans de les vuit.
+879485	Em quedaré fins demà.
+881197	De sobte vaig recordar que no em podia permetre tants llibres.
+924382	Ella vol tancar al seu petit negoci.
+1016217	Benvinguda a Tatoeba.
+1036604	Tu coneixes al senyor Brown?
+1285667	La pràctica fa al mestre.
+1302994	A bon entenedor, poques paraules.
+1303338	Qui vol presumir, ha de patir.
+1303374	Les aparences enganyen.
+1303416	Mal de molts, conhort de tontos.
+1345598	Me l'he trobat a Tòquio de casualitat.
+1405500	Tothom parla del temps, però ningú no hi fa res.
+1405506	Ell és molt honest.
+1405591	Per a ser estimat, sigues amable!
+1405613	Vinga, juguem als escacs un altre cop!
+1412052	Eres la meua princesa.
+1412058	Pots ajudar-me, per favor?
+1412118	Homes rics solen casar-se amb joves dones trofeu.
+1416031	Quan te'n vas de vacances?
+1443662	M'agradaria aprendre a tocar el piano, la guitarra o la flauta.
+1448133	El cavall corre de pressa.
+1448159	Ets un criminal.
+1448177	És un home que no parla amb ningú.
+1448178	Has parlat amb el teu advocat sobre aquest problema?
+1448185	Tom i Mary van jugar a la ruleta russa.
+1518843	El Jack no és aquí. Deu haver perdut l'autobús de cada dia.
+1518890	Els nostres avantpassats sabien llegir els astres.
+1518892	Naturalment ell parla anglès a més de francès.
+1518901	Ella ha trobat les claus del meu cor.
+1518904	De mica en mica creix el nostre coneixement de l'anglès.
+1518905	Si us plau, no obri la finestra.
+1518907	Sovint en John fa un esmorzar ràpid.
+1518909	Encara tinc set.
+1518922	Per desgràcia, el meu gat ha marxat no sé on.
+1518923	Primer ofereixen el vi bo, i tan aviat la gent està beguda, els posen el dolent.
+1518931	Calculo que la feina costarà més de 10.000 $.
+1519167	Us agradaria anar a una illa deserta?
+1519184	Em fa vergonya de mi mateix.
+1519208	No has de marxar, si no vols.
+1519210	Basteix la teva casa lluny dels parents i a prop d'un rierol.
+1519211	No em cal res.
+1519227	Vam veure entrar un estranger a la casa.
+1519243	Està orgullós d'haver-se format als Estats Units.
+1519250	Has dit a algú quin és el teu nom de debò?
+1519259	Tot el cel s'il·luminà i va haver-hi una explosió.
+1519264	És igual el que digui, no tornaré a refiar-me'n.
+1519303	Sembla incapaç de nedar.
+1519324	Què has fet amb el meu equipatge?
+1519327	Sobretot volen viure en pau.
+1519329	La gentada va córrer cap a la sortida.
+1519330	Ella va a l'escola.
+1519346	Primer han de pagar.
+1519350	Aquest cotxe és massa car per que jo el compri.
+1519362	Veniu a veure'm a les onze.
+1519375	De la gent pobra no te n'has de riure.
+1519377	Des que em vaig casar no he treballat més.
+1519382	Sempre està a l'aguait del capteniment dels seus fills.
+1519385	Vaig veure un gos. El gos portava un tall de carn a la boca.
+1519400	Tot i que fora bufa un vent fort, sortirem de casa a fer un volt.
+1519407	Ves amb compte quan tornis a casa.
+1519409	La casa està en construcció.
+1519430	Tant de bo portés més diners.
+1519434	Digues-me com fer servir la rentadora.
+1523402	Tom ha estat salvat per un que passava per allà.
+1523411	En Tom ha copiat el document.
+1523478	Ella l'obliga a fer els deures abans de sopar.
+1523479	On és el Papa, allà és Roma.
+1523503	Ell té tres anys més que jo.
+1524200	Augmenten els accidents de trànsit.
+1524296	El Japó es veu afectat sovint per terratrèmols.
+1524313	Llavors, qui tindrà cura del vostre gat?
+1524360	Com s'han fet tan rics?
+1524384	Fa tant de temps que parles amb mi i no saps com me dic?
+1524392	Ell vol un cotxe vermell.
+1524397	L'aire és a l'home allò que l'aigua als peixos.
+1524407	No és el gris dels cabells ni el nombre d'anys el que fan l'edat; és vell aquell que perd el sentit de l'humor i ja no té interès per res.
+1524418	Saben què ha passat.
+1524429	Tinc els ulls negres.
+1524435	Ell és el que em va tocar.
+1524436	Són paraules buides.
+1525598	Li vaig dir que podia marxar.
+1525612	No sé el motiu pel qual va anar-hi.
+1525616	Em sorprèn que acceptés l'oferiment.
+1525626	No puc evitar riure quan el veig ballar.
+1525632	No em canso mai de parlar.
+1525643	Mai no és massa tard per aprendre.
+1525656	La mare d'en Cookie ha most de càncer.
+1525680	No tinc altra opció que acceptar l'oferta.
+1525696	Escric cartes que no envio mai.
+1525699	Em sap greu haver-te causat tants problemes.
+1525700	Ella sap parlar japonès.
+1527244	Què et passa?
+1527255	És la nostra darrera oportunitat.
+1527266	No és fàcil parlar una llengua estrangera.
+1527274	Continueu sense mi.
+1527297	En Tom està interessat en la literatura francesa.
+1527300	Ets prou bona.
+1527323	Avui és un dia bonic de debò.
+1527353	En Tom estima la seva muller, l'Elizabeth.
+1527370	He de ser-hi abans de les 7.
+1527507	La bicicleta és meva.
+1527515	Els meus dies d'escola seran un dels records més feliços.
+1527526	Un dia d'aquests et portaré al zoo.
+1527532	Quina posta més maca!
+1529205	Sa filla i mon fill són bons amics.
+1529226	Val més ser cec que veure això.
+1529244	Siusplau, fes la reserva una setmana abans.
+1529261	Els nens es cansen de pressa.
+1529308	Tinc desig de presentar-vos l'home de qui vaig parlar l'altre dia.
+1529316	El van portar inconscient a l'hospital.
+1529323	Bangkok és la capital de Tailàndia.
+1529326	Finalment vaig veure l'oceà després de sortir al balcó. He de dir que aquesta habitació té vistes a l'oceà?
+1532185	El president Clinton va negar l'acusació.
+1532254	Explica-ho clar i català.
+1532269	Siusplau afageixi el meu nom a la llista.
+1532276	Saps que va dir?
+1532409	Sembla que va ser un gran atleta.
+1538993	En Bob és l'únic de la classe que sap espanyol.
+1539014	El meu fill ha anat a Amèrica a estudiar medicina.
+1539020	Vam anar-hi sense ell, perquè no estava preparat.
+1539032	L'alemany és la millor llengua del món.
+1539051	Un llop ha matat uns bens als Vosgues.
+1539059	L'Anne fa cara d'estar malalta.
+1539089	Tot ho fa depressa.
+1539137	En espanyol sis no porta accent, però setze sí.
+1539156	És una bona nedadora.
+1557198	No ha entès gens ni mica el concepte d'equació diferencial.
+1583208	Un any té dotze mesos.
+1583544	Moltes persones només parlen una llengua.
+1603628	No vàrem veure res.
+1603661	Només dic la veritat.
+1722911	La batalla va durar 15 minuts. Sí, va ser una representació.
+1758386	Sentia que em moriria.
+1758392	En Jim corre tan ràpid com en Ron.
+1758401	Sí, ho he preguntat uns sis cops.
+1758403	Cadascuna de les tres noies van rebre un premi.
+1758434	La meva mare ha sortit de casa fa deu minuts.
+1758453	En Daniel va venir a la seva festa d'aniversari vestit de pallasso.
+1758483	A França, la propaganda de mòbils destinada als nens de menys de dotze anys està prohibida.
+1758510	A ell li fa por el mar.
+1758520	Pots respondre això?
+1758536	Ja has plorat prou. Calma't.
+1758592	El pa es fa amb farina, aigua i llevat.
+1758598	Necessites les claus?
+1758628	És bo llegir llibres quan s'és jove.
+1758645	L'aigua verda no és bona per beure.
+1758648	Tenim una festa demà a la nit.
+1764558	És una dona digna d'admirar.
+1764568	Escriu la teva adreça a la meva agenda.
+1764573	L'any passat vaig anar a Viena per primer cop.
+1764579	No sé qui va pintar aquest quadre.
+1772073	Si no estudies molt, continuaràs tenint qualificacions baixes.
+1772082	El jardiner va plantar un roser enmig del jardí.
+1772084	Ho veuràs per tu mateix.
+1772154	Creiem que vindrà.
+1772155	La nena no va dir res.
+1772159	La meva ciutat ja no és el que era.
+1772169	Dues ampolles d'aigua mineral, si us plau.
+1772233	Aquell país és ric en recursos naturals.
+1772272	No pots dir "no".
+1772297	És el primer cop que deixo el meu cotxe sense tancar les portes.
+1772323	Aquest és el noi que va jugar amb la joguina que va espantar la granota que va esquitxar el gos que va perseguir el gat que es va menjar la rata que va matar el ratolí que vivia a la casa que en Jack va construir.
+1772351	El significat exacte de la metafísica és controvertit.
+1772365	El meu tren surt a les sis en punt i arriba a les deu en punt.
+1772378	La seva nova novel·la és realment interessant en comparació amb l'última.
+1772386	Que hi ha seients lliures?
+1772389	Ell confia en la seva habilitat.
+1772390	Ell confia en la seva capacitat.
+1901825	Quan tornaràs ja no hi seré.
+1901886	Que em pots deixar tot sol, si us plau?
+1901892	Allò va ser un colp molt dur per a tots nosaltres.
+1902109	I tu quin dia fas anys?
+1902303	Al sandemà el trobaren mort d'un tir al cap.
+1904360	Els dijous no obri la botiga.
+1904388	Catalunya és un país xicotet en comparació amb uns altres.
+1906316	M'encanta la seua figueta depilada.
+1906492	No sóc gai, però m'agrada masturbar-me amb hòmens.
+1908740	Em puc córrer en la teva cara?
+1908765	Agafa el peix per la cua si no vols que caigui a terra.
+1908774	No sé si compraré la samarreta vermella de tela o aquestes gorra negra de seda.
+1908782	No t'oblidis de posar-te les mitges.
+1911731	És tan gandul com son pare.
+1911844	Conta'ns un acudit picant.
+1920139	El gos és el millor amic de l'home.
+1953115	Els meus pares són morts.
+1953123	T'ensenyo un parell de fotos.
+1954457	Va passar pel meu costat fent veure que no em coneixia.
+1954460	Ara Holanda es troba en estat de necessitat.
+1954468	No tinc temps per escriure.
+1954488	Siusplau, passeu a la cambra d'un en un.
+1954490	Sembla que aquell parell estan fets l'un per l'altre.
+1957264	Menja tant com vulguis.
+1957303	Aquella corbata t'està molt bé.
+1962293	No li hauríeu h'haver dit coses així.
+1962304	Digues alguna cosa!
+1962313	Em va millor.
+1965964	Camino pel carrer.
+1965965	S'està adormint.
+1969222	Només jo puc fer-ho. Ho vaig fer sol.
+1971586	Vet aquí dos gossos; un és blanc i l'altre és negre.
+1971590	Un papagai reïx a imitar la veu d'una persona.
+1971603	Hem vingut a la conferència sabent-ho, però sembla ser que tu no.
+1971663	Els nens no suporten empipar els mestres.
+1971679	Ma mare m'ha tallat el cabell massa curt.
+1979320	Ara ho puc sentir.
+1979352	Quasi tot ha millorat.
+1982143	Encara romandré aquí tres dies.
+1985143	Us heu llevat tard?
+1987429	Fa cara que tot li ha sortit bé.
+1987443	He visitat Romania fa uns quants anys.
+2002639	La noia és maca.
+2061552	No em casaré aquest any. De fet, potser mai em casaré.
+2062038	He oblidat el seu número de telèfon.
+2062139	Vull donar-te alguna cosa.
+2062184	Ell arribarà força aviat.
+2062215	Vaig comprar un periòdic anglès.
+2062217	En el seu pais de naixement, França, Tatoeba s'ha convertit en un fenòmen cultural i social.
+2125631	Com estava cansat, estava assegut, ulls closos, al sofà.
+2136680	Déu ha estat molt bo amb el tauró.
+2136738	El peix es podreix pel cap.
+2138602	El cafè es va introduir a Europa des d'Aràbia.
+2138610	T'ho dic tot, Marie!
+2138628	Està cofoi de ser músic.
+2223188	Ell va a una escola per sords.
+2223274	És un llibre.
+2233932	Portava el cap cobert amb una mantellina.
+2239026	Estic tip de parlar amb tu!
+2239039	El seu nom és tot un orgull per la ciutat.
+2239069	La sort dóna a molts massa però a ningú prou.
+2260292	Tom va discutir els seus plans amb Mary.
+2271693	Que n'aprenguin!
+2307319	Caga el rei i caga el papa, i de cagar ningú s'escapa.
+2339547	La porta està oberta ara.
+2339552	No puc abandonar a Jordi en un moment tan difícil.
+2339579	Nosaltres coneixem bé a l'autor.
+2339619	Posa'l de volta a la taula.
+2342315	Si vols ensenyar-te esperanto, llig molt i practica molt.
+2401396	Ens hem divertit, oi?
+2461750	Es trobava enmig de nens.
+2491449	Com sempre, contava quelcom de força estrany sense arrufar les celles.
+2491450	Li ha dit Carles.
+2491456	Ho cal fer.
+2491482	Estem decorant la sala de conferències
+2491585	M'he trobat fa poc al Shinkansen un vell amic que no havia ????.
+2491607	Sense aigua no podries viure.
+2491608	Sóc al Portugal.
+2491609	L'hort és encara a l'ombra.
+2599551	Les gallines fan ous.
+2599554	Ella em va fer un petó i una abraçada.
+2600594	Feliços els nets de cor, perquè ells veuran Déu.
+2604242	No em coneixeu ni a mi, ni el meu Pare. Si em coneguéssiu a mi, també coneixeríeu el meu Pare.
+2784045	Jo no sóc metge.
+2784207	Una imatge val més que mil paraules.
+2789539	Que us estimeu els uns als altres, tal com jo us he estimat.
+2792152	Per què els conills tenen orelles llargues?
+2792164	Que els teus somnis es facin realitat avui!
+2792524	Tatoeba no és una escola — és una universitat!
+2794251	Ningú pot saber-ho tot.
+2797504	M'agrada aquesta tassa.
+2797558	Havent viscut a Tokyo, conec bé la ciutat.
+2809455	Ell no veu res sense les ulleres.
+2811020	Em podries fer una rebaixa?
+2811026	Vaig tornar cap al Japó.
+2843044	Amb una sola mirada m'has robat el cor, amb una sola perla dels teus collarets.
+2845601	Aparta de mi els teus ulls, que m'embruixen!
+2846968	Sota el pomer t'he desvetllat.
+2863809	Majestat, no parlis així!
+2936741	La literatura és el futur d'una nació.
+2977371	Ella va passar descalça per sobre les brases.
+2977446	El supermercat és obert.
+2977458	L'avió surt a les sis.
+2977474	Ell ha anat amb la Maria a Boston.
+2977484	T'imagines la situació?
+2977496	Prefereixes l'arròs negre o blanc?
+2977500	Em llevo d'hora al matí.
+3406272	Sóc en/el Tom
+3406279	Prefereixo conduir a caminar.
+3445980	Un dia sense humor és un dia d'allò més trist.
+3445983	Naturalment, per això som aquí.
+3445985	D'una manera o altra això és erroni.
+3445993	L'estació es troba entre dues ciutats.
+3446017	Per què parles tan fort?
+3466722	M'ha fet un bonic regal.
+3468228	Jo no esperava cap regal.
+3633405	No vull anar a l'escola.
+3666983	La lluita continua.
+3667000	Està buscant una feina.
+3667020	Si vostè veu un error, corregir-lo, si us plau.
+3711228	Estic molt tip.
+3713865	Vaig estar una hora esperant un dels meus amics.
+3805105	Ell parla cinc idiomes.
+3805118	No parlo hongarès.
+3805161	El secret de la longevitat és triar amb compte els pares.
+3866073	Estàs d'acord amb Tom, no?
+4003509	tothom coneix els fets.
+4080646	El gat és molt astut.
+4124436	Necessito un got d'aigua.
+4124467	Crec que tens raó.
+4302752	Quan la voluntat està absent, el poder desapareix.
+4305384	El meu gos té una cua molt llarga.
+4419031	El meu aerolliscador està ple d'anguiles
+4465879	Si vols estudiar, ve a estudiar!
+4465908	L'home és sobre tot un animal que jutja.
+4466597	"Això no pot ser!" — "Però així és!"
+4645551	Es va disculpà.
+4645552	Puc demanar-li a ella que m'ajudi.
+4645558	Puc demanar-li ajuda.
+4714722	Les peces d'escacs són: peó, cavall, alfil, roque, dama i rei.
+4731546	Vaig demanar al senyor Smith
+4731549	Només sóc un ciutadà
+4922308	Quina serp és la més ràpida del món?
+4922330	Sabia que ell estava mentint.
+4922357	Sí, està bé.
+4922366	Arribares tard al treball.
+4922369	Dimitri Mendeleev va nàixer a Tobolsk, Rússia.
+4934352	Segur que demà farà bon temps.
+4934377	Aquesta és la raó per la qual va entrar a la universitat.
+4934381	Va perdre la memòria.
+4940195	La possibilitat de que això passe algun dia és molt menuda.
+4940296	Per què no et sentes i et relaxes?
+4940336	No estaves equivocat.
+4958343	Esta és la teua bicicleta?
+4958486	És un error conceptual dir que les abelles formen colònies. El terme més adequat és "societat", perquè aquests animals no mantenen vincles físics entre ells.
+4958531	Ell sabia que estava mal.
+4958536	Ell sabia que estava incorrecte.
+4958565	Tinc una vista normal.
+4969310	Ells han de vindre.
+4969341	Nosaltres ja quasi no el veiem per ací.
+4969343	Quan he de tornar el llibre?
+4969420	Qui és el xiquet més fort?
+4969425	Amb qui estan parlant?
+4969430	Este edifici està quasi acabat.
+4969445	Dan va confessar tot a la policia.
+4997859	Quan estic de mal humor, comence a cantar.
+4998325	Quan és primavera a l'hemisferi nord, és tardor en l'hemisferi sud.
+5028259	És un honor per a mi.
+5028279	Al món hi ha cinc oceans.
+5073624	Jo jugue al volei una hora al dia.
+5073637	Eixe circ no realitza espectacles amb animals.
+5073653	Eixa és una llengua que pot desaparéixer en uns anys.
+5073659	El francés és una llengua que parle millor del que escric.
+5073672	Esta celebració és part intrínseca de la cultura del nostre país.
+5073676	Has de començar a veure les coses des d'altres punts de vista.
+5073689	Tom menteix d'una forma tan natural, que arriba a ser impossible saber si està mentint.
+5073696	No sé què hi ha de diferent entre eixes dues camises. Són idèntiques per a mi.
+5073701	Pena. Això és l'única cosa que sent per ella.
+5073734	No m'agrada escoltar els plors dels xiquets.
+5082883	Ella em va preguntar quantes llengües parlava.
+5091708	Es diu que l'amor és cec.
+5091749	Per què està prohibit pescar en este riu?
+5091779	L'exèrcit dels gals va ser vençut.
+5091787	Tom i Joan són ambdós cecs.
+5091802	Els acords són justos.
+5091804	Tinc un fill atleta.
+5091835	Esta casa és del meu avi, però després serà meua.
+5091848	Este colom no pot volar. Les seues ales estan trencades.
+5095496	L'accident va bloquejar el trànsit.
+5095518	No anem a tractar això ara.
+5095561	Oh, s'ha apagat la llum!
+5095570	Un poc de pa i mantega.
+5095629	Es va encallar un paper dins de la impressora, i ara ja no funciona.
+5095669	Els seus quadres em pareixen estranys.
+5095720	Un any té trenta-un milions cinc-cents trenta-sis mil segons.
+5114414	Espere que no t'importe.
+5114439	M'encanten els caps de setmana prolongats.
+5114457	Els vam vore.
+5132867	Ell sembla molt simpàtic.
+5150674	Bon any nou, Louise!
+5159038	No m'agrada que digues paraulotes.
+5160326	No parlo japonès.
+5160360	Que és aquest edifici de la teulada verda?
+5161324	El reconeixement de la parla més avançat es basa en xarxes neuronals.
+5161863	Bon cap de setmana!
+5161917	Si és així no hi ha cap problema, no?
+5163909	Tinc una cosa a dir-te.
+5163935	És el director d'un hotel.
+5165606	Fas bona cara.
+5173126	Quina posta de sol més bonica!
+5173732	Veniu ací tots els dies?
+5173817	No recorde on el vaig comprar.
+5173828	M'agradaria conèixer la teva germana gran.
+5210343	Londres és petit, comparat amb Tokio.
+5222829	Gràcies per venir, nois! Fins a la propera classe!
+5341805	Tinc una pregunta.
+5435493	Que en penses, Tom?
+5451271	Què penses sobre la independència de Catalunya?
+5457330	Tens un llapis per prestar-me?
+5598712	No canviarem res.
+5794898	Aquesta dona sap exactament que ella no sap el que vol.
+5806460	Jo tinc molts amics.
+5880317	L’Azerbaidjan es diu «Azərbaycan» en àzeri.
+6451268	No hi havia gats.
+6453730	Escolteu atentament el que està dient.
+6457535	Sap si hi ha alguna farmàcia prop d'aquí?
+6480961	És extrany que els nostres amics no estiguin aqui.
+6480988	Ningú sap perquè el Tom no ho ha fet.
+6480994	Potser el Tom li va demanar a la Mary que mentís.
+6587820	Tots els vols s'han cancel·lat pel temporal.
+6588541	Juguem a futbol cada dissabte.
+6734238	Deixi'm prémer el botó.
+6734256	No ho vaig dir mai.
+6741148	Ho vaig fer avui per primera vegada.
+6836563	Tots els meus nens saben parlar francès.
+6885236	Vull veure en Tom demà.
+7303603	La raó és que sé parlar xinès.
+7892876	Si us plau.
+8287492	Jo també vaig petonejar en Tom.
+8287502	De qui són?
+8539308	Ella és canadenca.
+8540180	Està una mica descolorit.
+8881930	Hi ha algú aquí que parli sòrab?
+8881963	Es quedarà gaire més?
+8886387	No vaig fer el que se m'havia demanat.
+8886389	Hi havia un munt de coses de les quals en Tom no ens havia dit res.
+8901649	Kiev és la capital d'Ucraïna.
+8901658	Encara em fa falta tallar-me els cabells.
+8901661	Com redimonis ens podrà trobar algú aquí?
+8901662	En Tom no és un estudiant aquí. És un dels mestres.
+8901676	Per què van suicidar-se en Tom i la Maria?
+8901702	Explico la lliçó.
+8901703	Mai no t'havia vist tan nerviosa.
+8901717	Jo ja te n'havia advertit.
+8901720	En Tom volia perdre dos quilos abans de les vacances d'estiu.
+8902407	Convencerem en Tom.
+8902423	En Tom no estava segur d'on hauria d'anar.
+8902427	En Tom va passar-se setmanes preparant-se per al seu viatge.
+8902440	Espero el dia de demà amb impaciència, car començo a viatjar per l'Àsia!
+8902460	Jo era la persona més feliç del món.
+8902499	La meva mare es diu Ina.
+8902501	L'esperanto és una llengua inventada.
+8912129	Ell ja no em recorda.
+8912138	Qui ho hagués pensat!
+8912141	El beisbol no li interessa massa.
+8912144	Espero que la Mary es recuperi aviat.
+8989755	Com et pots menjar una entxilada sense salsa?
+9191897	Igwanciyen, els guanches, els únics berbers que no han estat islamitzats. Per meditar ...
+9722342	No li donaré ni un sol centau.
+9722343	Qui pot llegir el futur?
+9722365	Ella sap que s'ha ficat en un embolic dels grossos.
+9722378	No esmentaré el nom de la professora.
+9722381	Penses que hi estarà d'acord, ella?
+9722386	Fes servir el teu puny.
+9722395	Provinc d'una illa.
+9722494	N'hem parlat entre nosaltres.
+9722498	És molt simbòlic.
+9722504	La seva germana és una autèntica bellesa.
+9722520	No ets més que un paràsit social!
+9722608	Llavors ell era aquí.
+9722628	No t'ho puc dir. És un secret.
+9722646	En Tom va contractar un detectiu.
+9722671	El marit d'ella és gai.
+9722687	En Tom s'identifica com a queer.
+9722694	Les idees d'ell són una mica estranyes.
+9722743	Ell és bisexual.
+9722753	La Layla fou una dona bisexual.
+9722757	El marit d'en Tom és bisexual.
+9722762	Van fer-li el buit a en Sam perquè era bisexual.
+9722777	No era un bisexual. Res de tot això és veritat.
+9722802	En Tom fa tiktoks.
+9722840	Es considera TikTok un directe competidor de les apps de vídeos Snapchat i Instagram, propietat de Facebook.
+9722869	En Sami adora YouTube.
+9722888	Jo sé esperanto.
+9722891	Jo adoro l'esperanto.
+9722897	M'agrada l'esperanto.
+9722914	La pronúncia en esperanto és fàcil.
+9722974	Encara no assimilem l'impacte del coronavirus.
+9722975	Encara no tenim un vaccí contra el coronavirus.
+9722986	L'homofòbia és comuna a Turquia.
+9723008	La propera generació mai no coneixerà el racisme.
+9723019	El govern federal no té una estratègia contra el racisme en la societat.
+9723051	Què és la literatura?
+9723084	Fa molt de temps que no escric cap poema.
+9723093	Com és possible que mai no us hagi vist per aquí abans?
+9723098	Per sort, ja ens les havien ensenyades.
+9723108	Va collir una ceba.
+9723133	No vull dormir al sofà de nou aquesta nit.
+9723167	Ja has dit prou estupideses.
+9726202	Em fan por els ratpenats.
+9726286	Espero que tot et vagi bé.
+9726303	Ell tingué una bona idea.
+9726311	Les irrefutables lleis de la lògica em diuen que és l'únic camí que amb plena certesa ens conduirà al nostre objectiu.
+9726326	Hi ha tulipes de color violeta al costat de les finestres del meu castell.
+9726338	Malauradament ell no va voler escoltar les nostres propostes i ara nosaltres devem cedir davant les seves pròpies decisions.
+9726340	Heus ací una carta de la nostra corresponent a Pequín.
+9726380	Cal que el nadó prengui prou llet.
+9726396	Et contactaré tan bon punt arribi.
+9726509	Ell espera esdevenir un poeta eminent.
+9726550	Rentà l'auto a consciència.
+9726554	Us veuré a tots demà.
+9726556	Rentaràs les patates.
+9726562	Rentareu les pataques.
+9726601	No sabia que tornaries.
+9726606	Ahir vaig començar un llibre nou.
+9726610	Qui us ha deixat entrar?
+9726688	Vull que acabi la setmana que ve i no ha ni començat.
+9726894	Van caure molts arbres.
+9726898	Les fulles caigueren dels arbres.
+9726904	Si us plau dona-li records a la Judy de la meva part.
+9726908	Heus aquí el Japó.
+9726964	Què fara la teva amant el dia 15 d'agost?
+9727110	Ell hi ha estat d'acord.
+9727437	Hauria d'estar estudiant, car tindré una prova de llatí ben aviat.
+9728072	Justa la fusta!
+9730773	Se suposa que no fumeu a l'escola.
+9730806	Què t'ha semblat el film?
+9730845	No pots anar-hi encara.
+9730852	Ella em va esquivar.
+9731393	No entenem res del que diu ell.
+9731415	Em pots llegir la carta astral, Martina?
+9731422	Penja contingut en català a les xarxes.
+9731425	Desestigmatitzem la masturbació femenina ja o què?
+9731430	No ens podem conformar amb qualsevol cosa.
+9731566	En Tom només escolta podcasts.
+9731589	En Tom es veia ridícul.
+9731590	En Tom es veu ridícul.
+9731593	Ens veiem ridículs.
+9731604	Odiaven en Tom.
+9731606	Ella odia les carrotes.
+9731621	Vas fer tot el que vas poder.
+9731646	Jo conec aqueixos bars.
+9731752	Aquest és un recordatori fugaç que gràcies als mites de les antigues civilitzacions grega, mesopotàmica i egípcia, les persones queer arreu podem assegurar que som divines. Quelcom a recordar el proper cop que hagis de lluitar contra queerfòbia de qualsevol mena.
+9731770	Em feia mandra arreglar-me i pentinar-me, o sigui que mocador al cap i xandall al cos.
+9731781	La Safo de Lesbos és sens dubte una de les majors icones lèsbiques que hi ha hagut en la història, i de les queers també.
+9731785	Soc una apassionada del Nesquik!
+9731803	Vaig arribar a pensar-me que series l'amor de la meva vida, quina il·lusa que estic feta.
+9731809	No puc més.
+9731826	Dirigeix-te a mi com a elli.
+9731830	Soc la parella d'en Tom i el pronom que utilitzo és elli.
+9731885	En Tom és cisgènere.
+9731907	No hi ha cap amenaça real vers les persones cis perquè les trans tinguin accés al mateix lavabo que elles, només en tenen les trans d'ésser assassinades per transfòbia.
+9731933	El diagnòstic psiquiàtric conegut com a disfòria de gènere es pot aplicar a una persona cisgènere mitjançant la mateixa teràpia hormonal que la tracta en persones transgènere, com va ser el cas per a Alan Turing de part del govern britànic, conduint-lo a cometre suïcidi posteriorment.
+9731938	L'autora va decebre moltes dels seus fans per la seva transfòbia.
+9731944	L'autor va decebre molts dels seus fans per la seva tranfòbia.
+9732015	A la Cabília no cal el racisme.
+9732045	La Jeong va dir que també experimentava racisme.
+9733609	Jo crec que està sent honesta.
+9733622	Encara ets massa jove per a beure.
+9733625	Coi! Ja res no t'agrada.
+9733655	Faré els deures.
+9733656	En Tom no sap què vol la Mary que li compri pel seu aniversari.
+9733667	Es pot confiar en ell.
+9753531	No ho he fet des que tenia dotze anys.
+9753534	Em va agradar molt el ball que vam veure ahir.
+9773095	Va ser una victòria fàcil.
+9773098	Aquell llibre és meu.
+9808475	En Tom és un nen de tretze anys d'Austràlia.
+9808483	En Tom és buscat a Austràlia.
+9808488	En Tom és cercat a Austràlia.
+9808816	En guerra la justícia calla.
+9808821	Un metge als Estats Units: "Em sap greu informar-te que pateixes una malaltia terminal." "Quina?" "La pobresa."
+9808846	A en Tom li va agafar cangueli.
+9808857	Això és extremadament difícil per a en Tom.
+9808873	Com us ha anat el divendres?
+9808877	De gran vull muntar una llibreria.
+9810089	La a va abans de la be en l'abecedari.
+9810106	Aqueix llibre descriu la vida d'una família jueva durant l'època del nazisme.
+9811202	Asseca't els ulls.
+9825783	En Tomàs em va donar feina.
+9825798	Aquí hi ha lavabo.
+9825805	A en Tomàs no li agrada com riu la Maria.
+9825814	Ell està un pèl pàlid.
+9825833	Les dones són les meves ties.
+9825857	No em deixis, si us plau!
+9825879	La seva ira no era fingida.
+9825886	Vostè és arrogant.
+9832550	Soc un home d'alçada mitjana.
+9832565	Ella plorava i plorava, però ningú no vingué a consolar-la.
+9847721	Això és un tallaungles.
+9851720	El meu estil de vida és molt exigent.
+9851727	Sempre pots confiar en en Tomàs.
+9926341	Han tingut l'oportunitat d'expressar la seva opinió.
+9926397	Els alumnes de l'escola han participat en un programa.
+9926443	Aquest dimarts, els alumnes ha començat el curs.
+9926454	El secretari general ha afirmat aquest dimarts que és absolutament insuficient.
+9926471	Aquest matí hem tingut una reunió telemàtica.
+9926516	Una dotació important de llibres a les biblioteques.
+9941099	Allò ho va escriure Taro Akagawa.
+9972612	La foto era una enganyifa.
+9976102	Jo no vaig pagar el Tom per fer allò.
+9976181	Ens van dir que creien que guanyarien.
+9976218	Què hi ha dins la caixa?
+9976227	Podeu ajudar el Tom d'alguna forma?
+9976288	La seva cunyada va morir fa un any.
+9976295	No m'havia adonat que no saps francès
+9976324	La meva amiga no creu que els fantastes existeixin.
+10083699	Nosaltres som vegans
+10242326	El va contractar com a programador.
+10269432	Jo podria ajudar.
+10298402	Al meu avi li encanta pescar.
+10615348	Ella ven petxines a la costa.
+10665463	Saps que vol per al seu aniversari?
+10767154	Estic de camí a can Tom.
+10767159	Potser encara necessiti estar a Boston uns dies més.
+10767160	Sempre està cridant els seus fills.
+11891316	La muntanya no és tan alta com el mont Fuji.
+11899830	A l'Airel li agraden les xalupes.
+11899835	Fes-ho ara mateix!
+11899897	Perdó! He arribat tard.
+11899902	Quina és la correcta?
+11899932	Aquest es el meu verdader nom.
+11899937	Al cinquè dia, l'ànec seguia viu.
+11899949	No aniré a Australia.
+11899954	Aviat seran les sis.
+11899961	El passatger ha de portar posat el cinturó.
+11899991	No tenim un gos.
+11899997	La vida és una mala nit en una mala posada.
+11900038	Hi ha coses que pots dir, i d‘altres que no.
+11900061	En Miguel va comprar un futbolí per jugar junts ell i jo.
+11900106	Dona‘m les claus del cotxe.
+11900168	Ella el va contractar.
+12340237	Tom ha sentit la Mary parlant d'ell.
+12493926	De vegades em costa parlar anglès.
+12495260	Recorda tancar bé l'aixeta després de rentar-te les mans.
+12495522	Has tornat a perdre les claus del cotxe?
+12495752	Per què no repartim els beneficis?
+12495788	Qui has vist al parc?
+12495796	Quan tothom estigui a punt, començarem.
+12495830	Agafa un préssec.
+12495833	Quants préssecs hi ha?
+12495847	"Què és això?" "Això és un préssec".
+12495914	Per què va decidir divorciar-se?
+12495915	He intentat descansar una mica.
+12495925	Crec que necessito ajuda.
+12495934	"Et molesta si fumo?" "Per descomptat que no."
+12495935	Gats de l'infern!
+12496215	Totes dues solucions són errònies.
+12496992	Quin carrer has seguit?
+12497276	On és el quetxup?
+12497290	Tens el meu passaport?
+12497324	La vida a vegades és massa curta.
+12497369	Per què vas començar sense mi?
+12497402	Quan es va fundar aquesta universitat?
+12497736	No tinc cap opinió sobre aquest tema.
+12497788	La prova és molt difícil!
+12497821	No vull la teva opinió.
+12497827	Tan sols vull trobar un taxi.
+12497842	Vull que els meus fills estiguin segurs.
+12497850	Això és tot el que ella va escriure.
+12497851	Això és tot el que va escriure.
+12497969	No sabia que tenia un fill.
+12498036	Li vaig dir que em van acomiadar.
+12498043	Els vaig dir que no podia fer-ho.
+12498281	Necessito una abraçada.
+12498296	Recentment, hem estat aconseguint molts clients nous.
+12498315	No fa gens de vent.
+12498641	Així són les coses.
+12498645	Aquest és el veritable repte.
+12499482	Podràs cantar millor la pròxima vegada.
+12499485	Ell és maco.
+12499500	Ho fa fins i tot quan està malalt.
+12499526	Va perdre els guants.
+12499584	Ja pots descansar.
+12499592	Alguna vegada has pelat cebes?
+12499607	Les actrius són boges.
+12499614	M'he equivocat.
+12500706	M'estàs marejant.
+12500837	Volia dir això!
+12501119	Ni tan sols he fet una pregunta.
+12501162	Deixa't estar de bestieses.
+12501179	No m'ho crec!
+12501198	Estudiem un exemple específic.
+12501383	Això és una granota?
+12501388	Els ocells canten.
+12501653	Crec que estudies massa.
+12501656	No en tinc prou.
+12501670	Què val això?
+12501692	No val gaire.
+12501731	Dibuixa una imatge.
+12501732	Acoloreix la imatge.
+12501734	Fes una altra foto.
+12501739	Això és una foto.
+12502059	Per què no podem anar a l'escola com els altres?
+12579770	El mirall es va trencar.
+12579932	El peix fa pudor.
+12656044	Són dos quarts de deu.
+12946245	Per modelar l'argila, cal estovar-la abans amb aigua.
+12959945	Per emmotllar l'argila primer cal estovar-la amb aigua.
+12966234	Estava cobert de fang.
+12977085	La ciutat és tranquil·la a la nit.
+12983224	La terra cobreix els errors dels metges.
+12984223	Quan et donin la vaca, ves a buscar la corda de seguida.
+12984833	Mentre facis el teu deure, no et preocupis per paraules malicioses.
+12985097	És difícil trobar paraules per descriure aquest dolor.
+12988117	La nostra casa és un submarí groc.
+12991974	La calor del sol endureix l'argila.
+12994737	Decideix tu mateix què creus que és normal.
+12997369	Si us plau, no em posis en un pedestal, perquè segur que cauré. Estima'm tal com sóc, amb tots els meus defectes i debilitats.
+13001995	El meu equip va marcar un gol i va jugar bé, només a l'inici del partit. Aleshores, sembla que es va cansar, va perdre tota la seva energia.
+13010992	No hi ha res més útil que llegir i comparar frases de les llengües que volem aprendre.
+13012138	El teu afecte és com el nèctar per a mi.
+13015337	El vuitanta per cent dels incendis forestals són provocats pels humans.
+13015485	El que millor es va preparar va guanyar la prova.
+13017164	Hi ha llops bons i llops dolents?
+13018044	A elefen va escriure quinze mil frases.
+13018398	El vuit és el nombre entre el set i el nou.
+13024727	Aquella frase va ser la que més li va agradar traduir, però la tasca no va ser fàcil.
+13029062	Simplicitat del llenguatge - Toki Pona.
+13031894	L'amor passa, però deixa aquest record d'un petó o d'una queixa a cada cor.
+13032027	La nostra felicitat és simplement una mostra fugaç de l'estat natural de l'Esser etern.
+13034460	Es passava hores i hores escrivint noves frases, nous versos per al seu llibre.
+13036152	En cada mal sempre es pot trobar el bé.
+13038671	Quin error més ximple que vaig cometre. Semblava que estava dormint. Algú em va corregir somrient. Ni tan sols sé què vaig sentir.
+13038756	Comparant traduccions, aprenc idiomes.
+13039263	Vaig estudiar diverses llengües del grup romànic. És cert que n'he après alguna. D'altres, però, ja me n'he oblidat.
+13047050	En Tom va aconseguir ser força bo.
+13048672	Haurien de retirar el carnet de conduir als motoristes que condueixen per la vorera.
+13050097	Recordo quan era petit i jugava amb els meus germans a la platja.
+13051175	Té vuit mesos i ja té una dent. Molt alegre, gairebé mai plora. Menja amb molt de gust, és bastant grassoneta. Ja està provant uns petits crits, ara vol parlar.
+13051737	En aquest món acumulem obres, unes són bones, altres són dolentes.
+13051813	Si vols sobreviure, has d'adaptar-te, no hi ha un altre camí possible.
+13068351	La primera llum de l'alba tenyia els núvols d'un to rosat.
+13069251	No em cansaré mai d'agrair-te.
+13069424	La calavera que hi havia a l'estreta fornícula llançava reflexos iridescents.
+13069552	"No puc fer això. M'has d'ajudar". "Per què? Sóc jo qui necessita ajuda".
+13073453	El treball permet sentir-se útil.
+13081826	Difícilment podia prescindir dels plaers.
+13099083	Qui eren els trobadors?
+13227450	La gana és el desig de menjar.
+13238714	Ell sap el que cal fer.
+13238725	No en coneixem cap ni un.
+13238733	Anirà a la platja amb el seu amic.
+13238739	Ni tan sols sabies qui hi havia allà.
+13238748	Anem a l'escola amb aquell bus.
+13238755	És un animal herbívor.
+13238763	L'organització és gran.
+13238772	Anem amb ells.
+13238776	En Yuba exagera.
+13239344	Ens hem discutit.
+13239354	Qui us ha dit que volíem fer això?
+13239363	Soc la vostra mestra.
+13239368	És difícil de fer entendre.
+13241844	On és la resta de la classe?
+13244914	Només ho vaig recordar més tard.
+13286717	Va a funcionar.
+13286722	He de dir-li una cosa.
+13286731	Us he de dir quelcom.
+13289336	N'estàs segur?
+13303902	Tenim la solució. No cal reinventar la roda amb elements perillosos.
+13310889	Crec que és una mica massa tard per fer-ho.
+13318785	Així és com van les coses.
+13330540	Ningú pot viure en el passat. La vida és ara.
+13342179	Un altre cop?
+13359387	Per què no deixem de parlar francès i passem a l'anglès?
+13362907	Quina és la teva pel·lícula preferida?
+13363145	He d'anar al bany.
+13364010	El basc és una llengua més difícil que el castellà.
+13368106	Li quedava poc més d'un mes de vida.
+13368731	Quan trobo a Tatoeba, en algun idioma que conec, una frase que aparentment conté un error o una inexactitud, normalment suggereixo una alternativa adequada.
+13397996	Quina d'aquestes dues meravelles és més impressionant: la sorprenent bellesa de la cua oberta d'un paó o l'ull humà capaç de percebre-la i interpretar-la?
+13402194	L'Erica és una jove rica i bonica.
+13416464	Un fosc malson terroritza el món. La humanitat s'ha tornat completament boja.
+13418585	El xantatge s'utilitza obertament i sense la més mínima vergonya com a instrument eficaç de diplomàcia oficial.
+13421854	La corrupció regna en la política.
+13435640	El que la defensa afirma en general: Tots sabem que hi va haver un cop d'estat, això és innegable. El meu client, però, no hi va tenir res a veure.
+13441711	El que realment està passant és una guerra declarada a la humanitat.
+13445497	No s'esgarrifa la consciència humana per tants crims espantosos, per tantes guerres?
+13456668	Processar els que van intentar un cop d'estat no és una caça de bruixes.
+13464822	Per què el llac és rosa?
+13469103	No hi hauria d'haver un Tribunal Suprem amb jurisdicció per avaluar (castigar) les greus violacions dels drets humans comeses a tot el món per autoritarisme amoral i cruel?
+13470563	Aquests polítics no saben si no tenen gens de vergonya o si és la desvergonya la que realment els posseeix, els corromp i els vilipendia.
+13483009	Estem passant una mala ratxa, però esperem que les coses millorin aviat.
+13511095	Apaga el mòbil i vés a dormir, noi! Ja és hora d'anar a dormir; no és bo que et saltis el descans i miris tantes "ensenyaments" sobre coses vanes que no tenen cap importància.
+13514065	Que el Consell de Pau impedeixi per sempre l'esclat de noves guerres!
+13537775	El professor Forrest F. Cleveland va començar a publicar Molecular Spectroscopy completament en interlingua.
+13547339	Ser supersticiós porta mala sort.
+13549085	Un terç de les selves tropicals del món es troben al Brasil.
+13549396	"Més tard, Ròmul, mostrant alegremente la pell marró fosc d'una lloba (la nodrissa), erigirà la ciutat de Mart i governarà el poble al qual donarà el seu nom: els romans. A aquests no els poso cap límit, ni de temps ni de conquestes, perquè els he destinat un imperi que no tindrà fi."
+13566709	Vaig aconseguir unes botes.
+13566871	El falàfel és un plat originari de l'Orient Mitjà.
+13568265	Una bona traducció no sembla una traducció.
+13568856	Deixa que la vora del vestit li caigui fins als peus i, amb un pas, es revela: era, sens dubte, una deessa.
+13573070	Per què m'estàs explicant tot això?
+13575061	Me sé aquesta cançó de memòria.
+13579947	Greument ferit, Troilo cau d'esquena sobre el carro que avança a tota velocitat. Encara sosté les regnes dels cavalls veloços, incapaç d'aturar-los. Penjat allà, el seu coll i els seus cabells s'arrosseguen pel camí mentre la punta de la llança fatal esgarrapa el terra.
+13581903	La nostra espasa no ha vingut a devastar les llars líbies, no saquejarem aquesta ciutat i tornarem al mar amb el botí: no tenim una naturalesa tan violenta, ni aquesta audàcia és característica dels vençuts.
+13582792	No sé què seria millor.
+13583507	Els pomers i els perers van florir, i les boires flotaven sobre el riu.
+13634360	No t'ho aturaré. Pots marxar ara.
+13637259	L'aranya va teixir la seva delicada teranyina al jardí.
+13639533	Jugurta i Roma eren enemics acèrrims.
+13644093	Simplement els vaig recollir i reorganitzar.
+13646753	Mentre el mirall reflecteix sense parlar, ell, al contrari, parla sense reflectir.
+13648095	L'espiritisme és el sistema filosòfic que afirma que és possible mantenir contacte amb els esperits dels morts.
+13648194	Es casarà l'any que ve.
+13649109	Quin dels dos llibres és millor?
+13654614	Res no és més bell que el somriure d'un nen. Res no és més encantador que la teva mirada. El teu ésser s'expressa en una dansa ideal i alegre. Ets un cor innocent que batega.
+13656012	El so de la pluja calma la ment inquieta.
+13677163	Les alegries sempre porten decepcions.
+13677252	On seràs quan s'acabi el món?
+13682447	Val més ser envejat que ser digne de llàstima.
+13685343	Els diners ho compren tot.
+13700337	La llengua portuguesa és rica, forta i bella, un sistema hàbil de parlar i escriure. Expressiva i sonora, és cristal·lina en la manifestació del riure i el sofriment.
+13700835	No és estrany que els pobres siguin més feliços que els rics.
+13706641	Aquesta és la teva clau?
+13708713	Aquesta vida seria una comèdia, si no fos, al final, una tragèdia.
+13710818	El cotxe blanc també és meu.
+13712904	Vaig néixer un diumenge de gener.
+13715077	Miro la rosa a la finestra.
+13718199	Quin és aquell edifici allà?
+13721374	Els teus fruits són més dolços que els fruits del meu hort.
+13721511	Les paraules ens mouen. Els ulls ens encanten. Les mans ens maten.
+13722456	Tenia catorze anys, i ell recordava perfectament quan la va veure per primera vegada.
+13727315	Tenia vuitanta anys quan va néixer el meu nét.
+13735311	Estic a l'església.
+13831512	Ja he omplert més de deu pàgines d'un quadern amb frases en turc.
+13855560	Sempre bec el meu cafè de la mateixa tassa.
+13856753	La repetició regular és una de les maneres més efectives d'emmagatzemar vocabulari a la nostra memòria a llarg termini.
+13856964	Si marxen, no podran tornar mai més.
+13857019	La gent està farta d'aquest tipus de política.
+13902992	En Tom va néixer a l'espai.
+13903322	El rei és un imbècil.
+13904863	En Cookie és un poltre o una poltra?
+13906968	Tothom ho diu, ningú no ho sap.
+13907573	Necessito un medicament per a la diarrea.
+13909917	La intel·ligència artificial no existeix.
+13918052	Estic intentant aprendre castellà.
+13920883	Tom és de fet un molt bon pare.
+13923939	Si us plau, digueu-li que ja no necessita sentir-se com un desconegut aquí.
+13937146	Jesús es va vestir com un pobre. Tanmateix, va parlar com un rei.
+13938168	Déu no és quelcom que existeix. Ell és el fonament, la base de l'existència.
+13938327	L'univers està fet d'informació.
+13956381	Ets una dona alta.
+13977533	En l'àtom, en la cèl·lula, en el cosmos, la Intel·ligència Transcendent és perceptible.

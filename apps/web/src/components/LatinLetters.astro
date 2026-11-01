@@ -15,12 +15,14 @@ interface Props {
   languageName: string;
   /** The US-International layout ("Easy accents"), for the Windows column. */
   usIntl: Layout;
+  /** The language's own Windows layout, for letters US-International cannot type. */
+  national?: Layout;
 }
 
-const { accents, lang, languageName, usIntl } = Astro.props;
+const { accents, lang, languageName, usIntl, national } = Astro.props;
 
-/** The US key that types `char` on a layer, as "Shift+6" or "AltGr+N". */
-function keyFor(char: string): string | null {
+/** The key that types `char` on a layer, as "Shift+6" or "AltGr+N" (named as on US keys). */
+function keyFor(char: string, layout: Layout = usIntl): string | null {
   const layers = [
     ["n", ""],
     ["s", "Shift+"],
@@ -28,7 +30,7 @@ function keyFor(char: string): string | null {
     ["sag", "Shift+AltGr+"],
   ] as const;
   for (const [layer, prefix] of layers) {
-    for (const [code, def] of Object.entries(usIntl.keys) as [KeyCode, Record<string, string>][]) {
+    for (const [code, def] of Object.entries(layout.keys) as [KeyCode, Record<string, string>][]) {
       if (def?.[layer] === char) {
         const legend = US_QWERTY[code][0]!;
         return prefix + (/[a-z]/.test(legend) ? legend.toUpperCase() : legend);
@@ -38,15 +40,28 @@ function keyFor(char: string): string | null {
   return null;
 }
 
-/** Windows US-International: a dead key then the letter, or AltGr with a key. */
-function windowsKeys(char: string): string {
-  const dead = usIntl.deadkeys.find((d) => d.out === char);
+/**
+ * How one layout types a letter: US-International's accent keys first (' then e, as people
+ * learn it), a national layout's own key first (ř on 5), else a dead key and the letter.
+ */
+function keysOn(layout: Layout, char: string, deadFirst = false): string | null {
+  const direct = keyFor(char, layout);
+  if (direct && !deadFirst) return direct;
+  const dead = layout.deadkeys.find((d) => d.out === char);
   if (dead) {
-    const trigger = keyFor(dead.trigger);
-    const base = keyFor(dead.base);
+    const trigger = keyFor(dead.trigger, layout);
+    const base = keyFor(dead.base, layout);
     if (trigger && base) return `${trigger}, then ${base}`;
   }
-  return keyFor(char) ?? "–";
+  return direct;
+}
+
+/** Windows US-International, else the language's own Windows layout, by name. */
+function windowsKeys(char: string): string {
+  const us = keysOn(usIntl, char, true);
+  if (us) return us;
+  const own = national && keysOn(national, char);
+  return own ? `${national!.name.en}: ${own}` : "–";
 }
 
 /** Alt codes type Windows-1252 characters on any Windows keyboard (number pad). */
@@ -110,6 +125,8 @@ const rows = chars.flatMap((c) => {
   const upper = /\p{L}/u.test(c) ? c.toLocaleUpperCase(lang) : null;
   return [c, ...(upper && upper !== c && accents.includes(upper) ? [upper] : [])];
 });
+/** The national layout is named only where US-International lacks a letter it has. */
+const viaNational = national && rows.some((c) => !keysOn(usIntl, c, true) && keysOn(national, c));
 ---
 
 <section aria-labelledby="letters-heading" class="mt-10 max-w-3xl">
@@ -119,10 +136,16 @@ const rows = chars.flatMap((c) => {
   <p class="mb-3 text-sm text-muted">
     On this page, tap a letter in the bar above the keyboard, or type it plain and let smart accents
     add the accent. In other apps: on Windows, choose the United States-International keyboard in
-    Settings, then use the keys below, or hold Alt and type the code on the number pad. On a Mac,
-    hold Option. On phones, hold the plain letter.
+    Settings{viaNational && ` (or ${national!.name.en}, for the letters it lacks)`}, then use the
+    keys below, or hold Alt and type the code on the number pad. On a Mac, hold Option, or add the
+    {languageName} keyboard. On phones, hold the plain letter.
   </p>
-  <div class="overflow-x-auto rounded-xl border border-border">
+  <div
+    class="overflow-x-auto rounded-xl border border-border"
+    role="region"
+    aria-labelledby="letters-heading"
+    tabindex="0"
+  >
     <table class="w-full text-sm">
       <thead class="bg-surface-2 text-left">
         <tr>
@@ -130,7 +153,7 @@ const rows = chars.flatMap((c) => {
             Letter
           </th>
           <th scope="col" class="px-3 py-2">
-            Windows US-International
+            Windows
           </th>
           <th scope="col" class="px-3 py-2">
             Windows Alt code

@@ -1,0 +1,27 @@
+{
+  "slug": "portuguese",
+  "code": "pt",
+  "order": 240,
+  "lang": "pt",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Portuguese",
+    "native": "Português"
+  },
+  "aliases": ["Brazilian Portuguese"],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["pt-easy", "pt-brazil", "pt-portugal"],
+  "accents": "áâãàçéêíóôõúÁÂÃÀÇÉÊÍÓÔÕÚ",
+  "sample": "Não sei se você já conhece a canção. Ela é ótima.",
+  "voice": ["pt-BR", "pt-PT"],
+  "wordList": true,
+  "translate": {
+    "google": "pt",
+    "bing": "pt",
+    "deepl": "pt"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

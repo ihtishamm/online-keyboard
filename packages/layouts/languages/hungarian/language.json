@@ -1,0 +1,27 @@
+{
+  "slug": "hungarian",
+  "code": "hu",
+  "order": 300,
+  "lang": "hu",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Hungarian",
+    "native": "Magyar"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["hu-easy", "hu-standard"],
+  "accents": "áéíóöőúüűÁÉÍÓÖŐÚÜŰ",
+  "sample": "Holnap elutazunk a Balatonhoz, ha süt a nap.",
+  "voice": ["hu-HU"],
+  "wordList": true,
+  "translate": {
+    "google": "hu",
+    "bing": "hu",
+    "deepl": "hu"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

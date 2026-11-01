@@ -3,6 +3,7 @@ import {
   KEY_CODES,
   ModifierLatch,
   TypingMachine,
+  deadStrokeMap,
   isKeyCode,
   keystrokeMap,
   type KeyCode,
@@ -18,6 +19,8 @@ import {
   useState,
   type KeyboardEvent as ReactKeyboardEvent,
 } from "react";
+import type { FontId } from "@okb/layouts";
+import { FONT_CLASS } from "../fonts";
 import { hasCoarsePointer, isAltGr } from "../keyboard/platform";
 import VirtualKeyboard, { type KeyAction } from "../keyboard/VirtualKeyboard";
 import {
@@ -45,7 +48,22 @@ export interface TypingDrillProps {
   ownKeyboard: boolean;
   /** Accessible name of the typing box. */
   label: string;
+  /** Writing direction and font of the language (default: Urdu's). */
+  dir?: "rtl" | "ltr";
+  font?: FontId;
 }
+
+/** Nastaliq needs tall lines; other scripts are set a little smaller and tighter. */
+const SIZE: Partial<Record<FontId, { box: string; input: string }>> = {
+  nastaliq: {
+    box: "h-[calc(3*2.2em+1rem)] text-[1.6rem] leading-[2.2] sm:text-[1.75rem]",
+    input: "h-16 text-[1.6rem] leading-[2.2]",
+  },
+};
+const DEFAULT_SIZE = {
+  box: "h-[calc(3*1.9em+1rem)] text-[1.35rem] leading-[1.9] sm:text-[1.5rem]",
+  input: "h-14 text-[1.35rem]",
+};
 
 /** Physical key names for the hint line, e.g. "Shift + A". */
 const keyName = (code: KeyCode) =>
@@ -69,6 +87,10 @@ export default function TypingDrill(props: TypingDrillProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const wordsRef = useRef<HTMLDivElement>(null);
   const keys = useMemo(() => keystrokeMap(layout), [layout]);
+  const dead = useMemo(() => deadStrokeMap(layout, keys), [layout, keys]);
+  const dir = props.dir ?? "rtl";
+  const font = props.font ?? "nastaliq";
+  const size = SIZE[font] ?? DEFAULT_SIZE;
 
   useEffect(() => setCoarse(hasCoarsePointer()), []);
   useEffect(() => {
@@ -146,7 +168,7 @@ export default function TypingDrill(props: TypingDrillProps) {
     rerender();
   };
 
-  const next = props.hint ? nextKeystroke(drill, keys) : null;
+  const next = props.hint ? nextKeystroke(drill, keys, dead, machine.pending) : null;
   const highlight = useMemo(() => {
     const set = new Set<string>();
     if (next === "space" || next === "backspace") set.add(next);
@@ -182,9 +204,9 @@ export default function TypingDrill(props: TypingDrillProps) {
       <div
         ref={wordsRef}
         lang={props.lang}
-        dir="rtl"
+        dir={dir}
         onClick={() => inputRef.current?.focus()}
-        className="font-nastaliq relative h-[calc(3*2.2em+1rem)] cursor-text overflow-hidden rounded-xl border border-border bg-surface px-4 py-2 text-[1.6rem] leading-[2.2] sm:text-[1.75rem]"
+        className={`${FONT_CLASS[font]} relative ${size.box} cursor-text overflow-hidden rounded-xl border border-border bg-surface px-4 py-2`}
         aria-hidden="true"
       >
         {drill.words.map((word, i) => {
@@ -219,7 +241,7 @@ export default function TypingDrill(props: TypingDrillProps) {
           onBlur={() => setPressed(new Set())}
           disabled={finished}
           lang={props.lang}
-          dir="rtl"
+          dir={dir}
           aria-label={props.label}
           aria-describedby="typing-target"
           aria-invalid={!track}
@@ -228,7 +250,7 @@ export default function TypingDrill(props: TypingDrillProps) {
           autoCorrect="off"
           autoCapitalize="off"
           spellCheck={false}
-          className={`font-nastaliq h-16 w-full rounded-xl border-2 bg-surface px-4 text-[1.6rem] leading-[2.2] focus:outline-none disabled:opacity-60 ${
+          className={`${FONT_CLASS[font]} ${size.input} w-full rounded-xl border-2 bg-surface px-4 focus:outline-none disabled:opacity-60 ${
             track ? "border-border text-text focus:border-accent" : "border-bad text-bad"
           }`}
         />

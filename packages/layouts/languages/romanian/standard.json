@@ -1,0 +1,776 @@
+{
+  "id": "ro-standard",
+  "lang": "ro",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Romanian (Standard)",
+    "native": "Română (standard)"
+  },
+  "source": "Windows \"Romanian (Standard)\", from Unicode CLDR 43 keyboard data (Unicode License v3) (ro-t-k0-windows.xml). Long-press alternates put the language's own letters first.",
+  "keys": {
+    "Backquote": {
+      "n": "„",
+      "s": "”",
+      "ag": "`",
+      "live": ["ag"],
+      "sag": "~"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "!",
+      "ag": "~"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "@",
+      "ag": "ˇ"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "#",
+      "ag": "^"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "$",
+      "ag": "˘"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "%",
+      "ag": "°"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "^",
+      "live": ["s"],
+      "ag": "˛"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "&",
+      "ag": "`"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "*",
+      "ag": "˙"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "(",
+      "ag": "´"
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")",
+      "ag": "˝"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_",
+      "ag": "¨",
+      "sag": "–"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+",
+      "ag": "¸",
+      "sag": "±"
+    },
+    "KeyQ": {
+      "n": "q",
+      "s": "Q",
+      "caps": "shift"
+    },
+    "KeyW": {
+      "n": "w",
+      "s": "W",
+      "caps": "shift"
+    },
+    "KeyE": {
+      "n": "e",
+      "s": "E",
+      "ag": "€",
+      "caps": "shift"
+    },
+    "KeyR": {
+      "n": "r",
+      "s": "R",
+      "caps": "shift"
+    },
+    "KeyT": {
+      "n": "t",
+      "s": "T",
+      "caps": "shift"
+    },
+    "KeyY": {
+      "n": "y",
+      "s": "Y",
+      "caps": "shift"
+    },
+    "KeyU": {
+      "n": "u",
+      "s": "U",
+      "caps": "shift"
+    },
+    "KeyI": {
+      "n": "i",
+      "s": "I",
+      "caps": "shift"
+    },
+    "KeyO": {
+      "n": "o",
+      "s": "O",
+      "caps": "shift"
+    },
+    "KeyP": {
+      "n": "p",
+      "s": "P",
+      "ag": "§",
+      "caps": "shift"
+    },
+    "BracketLeft": {
+      "n": "ă",
+      "s": "Ă",
+      "ag": "[",
+      "sag": "{",
+      "caps": "shift"
+    },
+    "BracketRight": {
+      "n": "î",
+      "s": "Î",
+      "ag": "]",
+      "sag": "}",
+      "caps": "shift"
+    },
+    "Backslash": {
+      "n": "â",
+      "s": "Â",
+      "ag": "\\",
+      "sag": "|",
+      "caps": "shift"
+    },
+    "KeyA": {
+      "n": "a",
+      "s": "A",
+      "caps": "shift"
+    },
+    "KeyS": {
+      "n": "s",
+      "s": "S",
+      "ag": "ß",
+      "caps": "shift"
+    },
+    "KeyD": {
+      "n": "d",
+      "s": "D",
+      "ag": "đ",
+      "sag": "Đ",
+      "caps": "shift"
+    },
+    "KeyF": {
+      "n": "f",
+      "s": "F",
+      "caps": "shift"
+    },
+    "KeyG": {
+      "n": "g",
+      "s": "G",
+      "caps": "shift"
+    },
+    "KeyH": {
+      "n": "h",
+      "s": "H",
+      "caps": "shift"
+    },
+    "KeyJ": {
+      "n": "j",
+      "s": "J",
+      "caps": "shift"
+    },
+    "KeyK": {
+      "n": "k",
+      "s": "K",
+      "caps": "shift"
+    },
+    "KeyL": {
+      "n": "l",
+      "s": "L",
+      "ag": "ł",
+      "sag": "Ł",
+      "caps": "shift"
+    },
+    "Semicolon": {
+      "n": "ș",
+      "s": "Ș",
+      "ag": ";",
+      "sag": ":",
+      "caps": "shift"
+    },
+    "Quote": {
+      "n": "ț",
+      "s": "Ț",
+      "ag": "'",
+      "sag": "\"",
+      "caps": "shift"
+    },
+    "IntlBackslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyZ": {
+      "n": "z",
+      "s": "Z",
+      "caps": "shift"
+    },
+    "KeyX": {
+      "n": "x",
+      "s": "X",
+      "caps": "shift"
+    },
+    "KeyC": {
+      "n": "c",
+      "s": "C",
+      "ag": "©",
+      "caps": "shift"
+    },
+    "KeyV": {
+      "n": "v",
+      "s": "V",
+      "caps": "shift"
+    },
+    "KeyB": {
+      "n": "b",
+      "s": "B",
+      "caps": "shift"
+    },
+    "KeyN": {
+      "n": "n",
+      "s": "N",
+      "caps": "shift"
+    },
+    "KeyM": {
+      "n": "m",
+      "s": "M",
+      "caps": "shift"
+    },
+    "Comma": {
+      "n": ",",
+      "s": ";",
+      "ag": "<",
+      "sag": "«"
+    },
+    "Period": {
+      "n": ".",
+      "s": ":",
+      "ag": ">",
+      "sag": "»"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "?"
+    }
+  },
+  "deadkeys": [
+    {
+      "trigger": "`",
+      "base": "a",
+      "out": "à"
+    },
+    {
+      "trigger": "`",
+      "base": "A",
+      "out": "À"
+    },
+    {
+      "trigger": "`",
+      "base": "e",
+      "out": "è"
+    },
+    {
+      "trigger": "`",
+      "base": "E",
+      "out": "È"
+    },
+    {
+      "trigger": "`",
+      "base": "i",
+      "out": "ì"
+    },
+    {
+      "trigger": "`",
+      "base": "I",
+      "out": "Ì"
+    },
+    {
+      "trigger": "`",
+      "base": "o",
+      "out": "ò"
+    },
+    {
+      "trigger": "`",
+      "base": "O",
+      "out": "Ò"
+    },
+    {
+      "trigger": "`",
+      "base": "u",
+      "out": "ù"
+    },
+    {
+      "trigger": "`",
+      "base": "U",
+      "out": "Ù"
+    },
+    {
+      "trigger": "´",
+      "base": "a",
+      "out": "á"
+    },
+    {
+      "trigger": "´",
+      "base": "A",
+      "out": "Á"
+    },
+    {
+      "trigger": "´",
+      "base": "c",
+      "out": "ć"
+    },
+    {
+      "trigger": "´",
+      "base": "C",
+      "out": "Ć"
+    },
+    {
+      "trigger": "´",
+      "base": "e",
+      "out": "é"
+    },
+    {
+      "trigger": "´",
+      "base": "E",
+      "out": "É"
+    },
+    {
+      "trigger": "´",
+      "base": "i",
+      "out": "í"
+    },
+    {
+      "trigger": "´",
+      "base": "I",
+      "out": "Í"
+    },
+    {
+      "trigger": "´",
+      "base": "l",
+      "out": "ĺ"
+    },
+    {
+      "trigger": "´",
+      "base": "L",
+      "out": "Ĺ"
+    },
+    {
+      "trigger": "´",
+      "base": "n",
+      "out": "ń"
+    },
+    {
+      "trigger": "´",
+      "base": "N",
+      "out": "Ń"
+    },
+    {
+      "trigger": "´",
+      "base": "o",
+      "out": "ó"
+    },
+    {
+      "trigger": "´",
+      "base": "O",
+      "out": "Ó"
+    },
+    {
+      "trigger": "´",
+      "base": "r",
+      "out": "ŕ"
+    },
+    {
+      "trigger": "´",
+      "base": "R",
+      "out": "Ŕ"
+    },
+    {
+      "trigger": "´",
+      "base": "s",
+      "out": "ś"
+    },
+    {
+      "trigger": "´",
+      "base": "S",
+      "out": "Ś"
+    },
+    {
+      "trigger": "´",
+      "base": "u",
+      "out": "ú"
+    },
+    {
+      "trigger": "´",
+      "base": "U",
+      "out": "Ú"
+    },
+    {
+      "trigger": "´",
+      "base": "y",
+      "out": "ý"
+    },
+    {
+      "trigger": "´",
+      "base": "Y",
+      "out": "Ý"
+    },
+    {
+      "trigger": "´",
+      "base": "z",
+      "out": "ź"
+    },
+    {
+      "trigger": "´",
+      "base": "Z",
+      "out": "Ź"
+    },
+    {
+      "trigger": "^",
+      "base": "a",
+      "out": "â"
+    },
+    {
+      "trigger": "^",
+      "base": "A",
+      "out": "Â"
+    },
+    {
+      "trigger": "^",
+      "base": "e",
+      "out": "ê"
+    },
+    {
+      "trigger": "^",
+      "base": "E",
+      "out": "Ê"
+    },
+    {
+      "trigger": "^",
+      "base": "i",
+      "out": "î"
+    },
+    {
+      "trigger": "^",
+      "base": "I",
+      "out": "Î"
+    },
+    {
+      "trigger": "^",
+      "base": "o",
+      "out": "ô"
+    },
+    {
+      "trigger": "^",
+      "base": "O",
+      "out": "Ô"
+    },
+    {
+      "trigger": "^",
+      "base": "u",
+      "out": "û"
+    },
+    {
+      "trigger": "^",
+      "base": "U",
+      "out": "Û"
+    },
+    {
+      "trigger": "˘",
+      "base": "a",
+      "out": "ă"
+    },
+    {
+      "trigger": "˘",
+      "base": "A",
+      "out": "Ă"
+    },
+    {
+      "trigger": "˙",
+      "base": "z",
+      "out": "ż"
+    },
+    {
+      "trigger": "˙",
+      "base": "Z",
+      "out": "Ż"
+    },
+    {
+      "trigger": "¨",
+      "base": "a",
+      "out": "ä"
+    },
+    {
+      "trigger": "¨",
+      "base": "A",
+      "out": "Ä"
+    },
+    {
+      "trigger": "¨",
+      "base": "e",
+      "out": "ë"
+    },
+    {
+      "trigger": "¨",
+      "base": "E",
+      "out": "Ë"
+    },
+    {
+      "trigger": "¨",
+      "base": "i",
+      "out": "ï"
+    },
+    {
+      "trigger": "¨",
+      "base": "I",
+      "out": "Ï"
+    },
+    {
+      "trigger": "¨",
+      "base": "o",
+      "out": "ö"
+    },
+    {
+      "trigger": "¨",
+      "base": "O",
+      "out": "Ö"
+    },
+    {
+      "trigger": "¨",
+      "base": "u",
+      "out": "ü"
+    },
+    {
+      "trigger": "¨",
+      "base": "U",
+      "out": "Ü"
+    },
+    {
+      "trigger": "¨",
+      "base": "y",
+      "out": "ÿ"
+    },
+    {
+      "trigger": "¨",
+      "base": "Y",
+      "out": "Ÿ"
+    },
+    {
+      "trigger": "˝",
+      "base": "o",
+      "out": "ő"
+    },
+    {
+      "trigger": "˝",
+      "base": "O",
+      "out": "Ő"
+    },
+    {
+      "trigger": "˝",
+      "base": "u",
+      "out": "ű"
+    },
+    {
+      "trigger": "˝",
+      "base": "U",
+      "out": "Ű"
+    },
+    {
+      "trigger": "¸",
+      "base": "c",
+      "out": "ç"
+    },
+    {
+      "trigger": "¸",
+      "base": "C",
+      "out": "Ç"
+    },
+    {
+      "trigger": "¸",
+      "base": "s",
+      "out": "ş"
+    },
+    {
+      "trigger": "¸",
+      "base": "S",
+      "out": "Ş"
+    },
+    {
+      "trigger": "¸",
+      "base": "t",
+      "out": "ţ"
+    },
+    {
+      "trigger": "¸",
+      "base": "T",
+      "out": "Ţ"
+    },
+    {
+      "trigger": "˛",
+      "base": "a",
+      "out": "ą"
+    },
+    {
+      "trigger": "˛",
+      "base": "A",
+      "out": "Ą"
+    },
+    {
+      "trigger": "˛",
+      "base": "e",
+      "out": "ę"
+    },
+    {
+      "trigger": "˛",
+      "base": "E",
+      "out": "Ę"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "c",
+      "out": "č"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "C",
+      "out": "Č"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "d",
+      "out": "ď"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "D",
+      "out": "Ď"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "e",
+      "out": "ě"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "E",
+      "out": "Ě"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "l",
+      "out": "ľ"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "L",
+      "out": "Ľ"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "n",
+      "out": "ň"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "N",
+      "out": "Ň"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "r",
+      "out": "ř"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "R",
+      "out": "Ř"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "s",
+      "out": "š"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "S",
+      "out": "Š"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "t",
+      "out": "ť"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "T",
+      "out": "Ť"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "z",
+      "out": "ž"
+    },
+    {
+      "trigger": "ˇ",
+      "base": "Z",
+      "out": "Ž"
+    },
+    {
+      "trigger": "°",
+      "base": "u",
+      "out": "ů"
+    },
+    {
+      "trigger": "°",
+      "base": "U",
+      "out": "Ů"
+    }
+  ],
+  "longpress": {
+    "Backquote": ["”"],
+    "Digit2": ["ˇ"],
+    "Digit4": ["˘"],
+    "Digit5": ["°"],
+    "Digit6": ["˛"],
+    "Digit8": ["˙"],
+    "Digit9": ["´"],
+    "Digit0": ["˝"],
+    "Minus": ["¨", "–"],
+    "Equal": ["¸", "±"],
+    "KeyE": ["€"],
+    "KeyT": ["ț"],
+    "KeyI": ["î"],
+    "KeyP": ["§"],
+    "BracketLeft": ["Ă"],
+    "BracketRight": ["Î"],
+    "Backslash": ["Â"],
+    "KeyA": ["ă", "â"],
+    "KeyS": ["ș", "ß"],
+    "KeyD": ["đ", "Đ"],
+    "KeyL": ["ł", "Ł"],
+    "Semicolon": ["Ș"],
+    "Quote": ["Ț"],
+    "KeyC": ["©"],
+    "Comma": ["«"],
+    "Period": ["»"]
+  }
+}

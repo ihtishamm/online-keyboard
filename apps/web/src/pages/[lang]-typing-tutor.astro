@@ -1,0 +1,106 @@
+---
+import type { Language } from "@okb/layouts";
+import TypingPage from "../components/typing/TypingPage.astro";
+import TypingTutor from "../components/typing/TypingTutor";
+import { buildLessons } from "../components/typing/lessons";
+import { TYPING_COPY } from "../content/typing/latin-copy";
+import { TYPING_LANGUAGES, practiceText, typingLayouts } from "../content/typing/latin";
+import { SITE } from "../config/site";
+
+/** Typing tutors for the Latin-script languages (/urdu-typing-tutor has its own page). */
+export function getStaticPaths() {
+  return TYPING_LANGUAGES.map((language) => ({
+    params: { lang: language.slug },
+    props: { language },
+  }));
+}
+
+const { language: l } = Astro.props as { language: Language };
+const copy = TYPING_COPY[l.code]!;
+const name = l.name.en;
+const text = await practiceText(l);
+// Lessons are built here, at build time: only the chosen words reach the page.
+const layouts = typingLayouts(l);
+const lessons = Object.fromEntries(
+  layouts.map((layout) => [layout.id, buildLessons(layout, text.frequency, text)]),
+);
+const layoutNames = layouts.map((x) => x.name.en);
+const listed =
+  layoutNames.length > 1
+    ? `${layoutNames.slice(0, -1).join(", ")} or ${layoutNames.at(-1)}`
+    : layoutNames[0]!;
+
+const easy = layouts.find((x) => x.id.endsWith("-easy"))?.name.en;
+const national = layoutNames.filter((n) => n !== easy).join(", ");
+
+const steps = [
+  `Choose your layout: ${listed}. Pick the one printed on your keyboard${easy ? `, or ${easy} if your keyboard is English` : ""}.`,
+  "Start with lesson 1, the home row. Rest your fingers on the middle row of letters.",
+  "Type the words shown. The next key lights up on the on-screen keyboard, and the line under the box names it.",
+  "Pass a lesson with 90% accuracy or more, then move on. Your progress is saved on this device.",
+];
+
+const faqs = [
+  {
+    q: `Which keyboard layout should I learn for ${name}?`,
+    a: easy
+      ? `The one you will type on. If your keyboard has the ${name} letters printed on it, choose its layout (${national}). On an English keyboard choose ${easy}: the letters stay where they are, and accents come from a dead key before the letter.`
+      : `The one you will type on: ${listed}. Pick the one printed on your keyboard, or the one your office or school uses.`,
+  },
+  {
+    q: `How are the ${name} accents taught?`,
+    a: `${copy.tip} The lesson "Accents and AltGr" practises the letters that take more than one key, with the keys to press shown under the box.`,
+  },
+  {
+    q: "How long does it take to learn touch typing?",
+    a: "With 15 minutes a day, most people know the letters within a week or two, and reach a comfortable 30 words per minute in about a month. Accuracy first: speed follows.",
+  },
+  {
+    q: "Do I need to look at the keyboard?",
+    a: "Try not to. Use the highlighted key on screen instead of your hands: that is how touch typing becomes a habit.",
+  },
+  {
+    q: "Is the tutor free?",
+    a: "Yes, completely free, with no sign-up. It works in your browser on computers, tablets and phones, and keeps working offline after your first visit.",
+  },
+];
+---
+
+<TypingPage
+  title={`${name} Typing Tutor: Learn ${name} Touch Typing Online, Free Lessons | ${SITE.name}`}
+  description={`Learn ${name} touch typing with free lessons for the ${listed} keyboards. The next key lights up as you type, accents included, and your progress is saved.`}
+  heading={`${name} Typing Tutor`}
+  headingNative={copy.tutor}
+  intro={`Learn to type ${name} without looking at the keys. Each lesson adds a row of letters and practises it in real ${name} words, ending with the accented letters and whole sentences.`}
+  appName={`${name} Typing Tutor`}
+  howToName={`How to learn ${name} typing`}
+  steps={steps}
+  about={{
+    heading: "How the lessons work",
+    paragraphs: [
+      "Lessons follow the keyboard: the home row first, then the top and bottom rows, then capitals with Shift, then the letters you reach with AltGr or an accent key. Practice words come from the most common words of the language and use only letters you have learned so far.",
+      "The last two lessons practise common words and full sentences. When you are ready, measure your speed with the typing test.",
+      "Practice sentences are from Tatoeba, credited below.",
+    ],
+  }}
+  faqs={faqs}
+  related={[
+    { href: `/${l.slug}-typing-test`, label: `${name} typing test: check your speed` },
+    { href: `/${l.slug}`, label: `${name} keyboard: type and save your text` },
+  ]}
+  slug={l.slug}
+  lang={l.lang}
+  dir={l.dir}
+  font={l.fonts[0]}
+>
+  <TypingTutor
+    client:idle={{ timeout: 500 }}
+    lang={l.lang}
+    languageName={name}
+    nativeName={l.name.native}
+    lessons={lessons}
+    layouts={Object.fromEntries(layouts.map((x) => [x.id, x]))}
+    dir={l.dir}
+    font={l.fonts[0]}
+  />
+</TypingPage>

@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+642507	A japán vállalatok nagy hangsúlyt fektetnek a hierarchiára.
+658706	A nagybácsi megajándékozta az unokaöccsét.
+689364	A szén az aknán keresztül érkezik a felszínre.
+719156	Tegyen sót a forrásban lévő vízbe.
+774764	Egy reggel felébredtem és arra eszméltem hogy híres vagyok.
+853591	Ki a fillért nem becsüli, a forintot nem érdemli.
+1908039	Ez a ház jól néz ki.
+2102328	Fontos, hogy emlékezz rá, hogy kik a barátaid.
+2115679	Nem szeretem a matematikát, a fizikát még kevésbé.
+2134389	Szívesebben mennék taxival, mint gyalog.
+3081501	Havai egy népszerű turisztikai célpont.
+3115945	Muszáj leadnom egy keveset. Az öreg farmerjaim nem lesznek jók rám!
+3167034	Mindenki tudja, hogy ez a vegyszer ártalmas az emberre.
+3266257	Kecses kezei és lábai voltak, nagy feje és kerek szemei.
+3277875	Nagyon sok dolog van, amit holnapig el kellene végezni, de már nem fog menni.
+3572568	Nem tudtam elképzelni, hogy valaha is elveszítem a szüleimet.
+3605606	Senki nem akar veled dolgozni.
+3690000	Péter egy szép gyűrűvel kedveskedett Évának.
+3745432	A helyedben én ezt nem tűrném tovább.
+3765464	Péter mindenkivel kötekszik a munkahelyén.
+3800729	A szekrény mellett van az ablak.
+3844412	Miért nem álltál meg, amikor mondtam?
+3927580	Jobban bízott a lábaiban, mint a kezeiben.
+3968344	Muszáj volt megszegnem az ígéretemet, amit a lányomnak tettem.
+3999876	Minket nagyon zavar a barátnőd viselkedése.
+4029920	Most a sógoromról van szó?
+4034717	Dani megtudta, hogy Linda elhunyt.
+4044712	Egy hónapban lehet öt hét is.
+4082697	Mire itt lesznek a vendégek, te tök részeg leszel.
+4118192	És ezt míóta gondoljátok így?
+4163482	Most én vagyok a főnök.
+4232837	Lélegezz mélyen, és akkor meg tudsz nyugodni.
+4245744	Ki is eshetett volna a gyerek az ablakon!
+4265393	Jó lesz, ha elköltözöm innen.
+4398227	A vulkán már jó régóta inaktív.
+4425077	Még mindig időre van szükségem.
+4436083	Egyszer mindenki meg fog halni.
+4459896	Van egy feladatom a számodra.
+4475129	Célszerű csütörtökön vásárolni, amikor a gyümölcs és a zöldség frissebb.
+4486983	Talán szükséged van még rám?
+4541212	A világon csak egy igazság van!
+4589689	Lehet, hogy ez nekem is jót tenne?
+4600274	Volt egy kis összetűzésem a szomszédommal.
+4620830	Apád nagyon szerette ezt a szállodát.
+4672392	Sok minden jár a fejemben.
+4673872	Éva nem fekszik le velem.
+4719056	A jövőben tartózkodj a látogatóktól!
+4762185	Még van egy kevés tej a hűtőben.
+4819726	Mindkettőjüket szerette, és ők is mindketten szerették.
+4847460	Négy évenként választunk egy elnököt.
+4851627	Biztos vagyok benne, hogy jó móka lesz.
+4883003	A szívem olaszként érez, az agyam németként gondolkodik.
+4961664	Ez a tintafolt nem akar kijönni.
+4975799	Tomi összecsukta a laptopját és felállt.
+5007193	Megérkeztek a lányok a másik osztályból, mi átengedtünk nekik pár padot.
+5066223	Félő, hogy ez a beszéd hosszú lesz.
+5191759	A méreg szétterjedt a testében.
+5243424	Az emberek saját földet akarnak.
+5259510	Miért nem vacsizol velem ezen az estén?
+5441045	Hiszen még el sem kezdtük!
+5540997	Az a doboz nagyobb ennél.
+5727235	Tomi egész nap az íróasztalnál szokott ülni.
+5793231	Én nem agyalok ezen, csak teszem, amit tennem kell.
+5970265	Hány nyelvet beszélnek az emberek Európában?
+6047395	Egyikőtöknek sincs fogalma róla, hogy min mentem keresztül.
+6100784	Aki az élvezeteket hajtja, kiég.
+6151462	Egy hónappal karácsony előtt az üzletekben mindig nagy a forgalom.
+6725174	A bíróság majd eldönti, hogy igazat mondott-e ön.
+6866499	Az én türelmemnek is van ám határa!
+6917374	Ez csak egy szélsőséges példa volt.
+7009306	Úgy hangzik, mint egy hollywoodi film forgatókönyve.
+7010284	Etikus odaadni neki előre az interjú kérdéseit?
+7098613	Én semmi pénzért be nem tenném a lábam a gettóba.
+7153216	Tomi részt vett egy papírrepülő versenyen és első lett.
+7162497	Megtehettem volna, de úgy döntöttem, nem teszem.
+7248325	Manapság egy számítógépnek sincs hajlékonylemezes meghajtója.
+7263490	Holnap egy új év veszi kezdetét.
+7546396	Kért egy kis gondolkodási időt.
+7644456	Tamás kölcsönadott nekem három könyvet.
+7664367	Tamás százhúsz hektáros fenyőfaültetvénnyel foglalkozik.

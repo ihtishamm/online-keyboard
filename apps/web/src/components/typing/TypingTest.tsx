@@ -1,4 +1,5 @@
 import type { Layout } from "@okb/engine";
+import type { FontId } from "@okb/layouts";
 import { Download, RotateCcw, Share2 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { datedName, downloadBlob } from "../keyboard/actions";
@@ -21,6 +22,9 @@ export interface TypingTestProps {
   layouts: readonly Layout[];
   words: readonly string[];
   passages: readonly string[];
+  /** Writing direction and font of the language (default: Urdu's). */
+  dir?: "rtl" | "ltr";
+  font?: FontId;
 }
 
 type Source = "words" | "sentences";
@@ -134,6 +138,8 @@ export default function TypingTest(props: TypingTestProps) {
       nativeTitle: props.nativeTitle,
       title: props.title,
       watermark: location.host,
+      font: props.font,
+      dir: props.dir,
     });
     return new Promise<Blob>((resolve, reject) =>
       canvas.toBlob((b) => (b ? resolve(b) : reject(new Error("PNG failed"))), "image/png"),
@@ -313,6 +319,8 @@ export default function TypingTest(props: TypingTestProps) {
           update={setDrill}
           layout={layout}
           lang={props.lang}
+          dir={props.dir}
+          font={props.font}
           nativeName={props.nativeName}
           hint={false}
           keyboard={keyboard}

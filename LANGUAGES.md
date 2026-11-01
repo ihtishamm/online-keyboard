@@ -16,6 +16,17 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Kashmiri (/kashmiri) | Arab | – | yes | Beta | 61.7 % (Beta) | no | at least 4 FAQs; typing tutor |
 | Hindi (/hindi) | Deva | – | yes | Beta | 42.5 % (Beta) | hi-IN | typing tutor |
 | Bangla (/bangla) | Beng | – | yes | Beta | 39.4 % (Beta) | bn-BD, bn-IN | typing tutor |
-| Spanish (/spanish) | Latn | – | yes | yes | – | es-ES, es-MX, es-US, es-AR, es-CO | typing tutor |
-| French (/french) | Latn | – | yes | yes | – | fr-FR, fr-CA, fr-BE, fr-CH | typing tutor |
-| Italian (/italian) | Latn | – | yes | yes | – | it-IT, it-CH | typing tutor |
+| Spanish (/spanish) | Latn | B | yes | yes | – | es-ES, es-MX, es-US, es-AR, es-CO | native-speaker review |
+| French (/french) | Latn | B | yes | yes | – | fr-FR, fr-CA, fr-BE, fr-CH | native-speaker review |
+| Italian (/italian) | Latn | C | yes | Beta | – | it-IT, it-CH | spell check meets its targets |
+| German (/german) | Latn | C | yes | Beta | – | de-DE, de-AT, de-CH | spell check meets its targets; smart accents meet their target |
+| Portuguese (/portuguese) | Latn | C | yes | Beta | – | pt-BR, pt-PT | spell check meets its targets |
+| Turkish (/turkish) | Latn | C | yes | Beta | – | tr-TR | spell check meets its targets; smart accents meet their target |
+| Polish (/polish) | Latn | C | yes | Beta | – | pl-PL | spell check meets its targets; smart accents meet their target |
+| Dutch (/dutch) | Latn | C | yes | Beta | – | nl-NL, nl-BE | spell check meets its targets; smart accents meet their target |
+| Romanian (/romanian) | Latn | C | yes | Beta | – | ro-RO | spell check meets its targets |
+| Czech (/czech) | Latn | C | yes | Beta | – | cs-CZ | spell check meets its targets; smart accents meet their target |
+| Hungarian (/hungarian) | Latn | C | yes | Beta | – | hu-HU | spell check meets its targets; smart accents meet their target |
+| Swedish (/swedish) | Latn | C | yes | Beta | – | sv-SE | spell check meets its targets; smart accents meet their target |
+| Catalan (/catalan) | Latn | C | yes | Beta | – | ca-ES | spell check meets its targets; smart accents meet their target |
+| Croatian (/croatian) | Latn | C | yes | Beta | – | hr-HR | spell check meets its targets; smart accents meet their target |

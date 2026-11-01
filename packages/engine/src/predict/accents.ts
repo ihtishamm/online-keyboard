@@ -32,6 +32,21 @@ const ENDING_MAX = 7;
 const ENDING_EVIDENCE = 8;
 const ENDING_SHARE = 0.95;
 
+/**
+ * Words the list lacks are also tried in parts: a compound of known words (Gefäß + wänden),
+ * or a known word and an ending (tárgyalás + ának). Each part must be one the list is sure
+ * of; the shortest part, the longest ending, and how deep compounds nest are bounded.
+ */
+const PART_MIN = 4;
+const HEAD_MIN = 4;
+const TAIL_MAX = 6;
+const COMPOUND_DEPTH = 2;
+/**
+ * Languages that build long words from parts: compounding Germanic ones and agglutinative
+ * ones. Romance and Slavic words rarely split into known words, and trying only adds errors.
+ */
+const BUILDS_WORDS = new Set(["de", "nl", "sv", "hu", "tr"]);
+
 /** Zipf: frequency ~ 1/(rank + 2). */
 const ratio = (better: number, worse: number) => (worse + 2) / (better + 2);
 
@@ -93,7 +108,10 @@ export class AccentRestorer {
     return { auto: sure ? options[0]! : null, options };
   }
 
-  /** A word the list lacks: hyphenated parts one by one, else the word's ending. */
+  /**
+   * A word the list lacks: hyphenated parts one by one; else a compound of known words; else
+   * a known word and its ending, the ending written as the list writes it; else the ending.
+   */
   private unknown(typed: string, folded: string): AccentResult {
     let auto: string | null = null;
     if (typed.includes("-")) {
@@ -101,10 +119,58 @@ export class AccentRestorer {
       const joined = parts.join("-");
       if (joined !== typed) auto = joined;
     } else {
-      const guess = this.fromEnding(folded);
-      if (guess) auto = matchCase(typed, guess, this.locale);
+      const guess = BUILDS_WORDS.has(this.locale) ? this.inParts(folded) : this.fromEnding(folded);
+      if (guess && guess !== folded) auto = matchCase(typed, guess, this.locale);
     }
     return { auto, options: auto ? [auto] : [] };
+  }
+
+  /**
+   * A part of a longer word, folded and plain: how the list writes it, when it is sure. Null
+   * for words it lacks, and for parts with two spellings (schon / schön).
+   */
+  private part(plain: string): string | null {
+    const list = this.byPlain.get(plain);
+    const own = this.known.get(plain);
+    if (!list?.length) return own === undefined ? null : plain;
+    const accented = list.filter(([, w]) => foldLatin(w, this.locale) !== plain);
+    if (!accented.length) return plain;
+    const [best, next] = accented;
+    if (own !== undefined && ratio(best![0], own) < TYPO_RATIO) return null;
+    if (next && ratio(best![0], next[0]) < DOMINANCE) return null;
+    return foldLatin(best![1], this.locale);
+  }
+
+  /** Known words end to end, the first longest (Übergang + s + form: a joining s allowed). */
+  private compound(plain: string, depth: number): string | null {
+    const chars = [...plain];
+    for (let j = chars.length - PART_MIN; j >= PART_MIN; j--) {
+      const head = chars.slice(0, j).join("");
+      const tail = chars.slice(j).join("");
+      const h =
+        this.part(head) ??
+        (head.endsWith("s") && j > PART_MIN + 1 ? this.part(head.slice(0, -1))?.concat("s") : null);
+      if (!h) continue;
+      const t =
+        this.part(tail) ?? (depth + 1 < COMPOUND_DEPTH ? this.compound(tail, depth + 1) : null);
+      if (t) return h + t;
+    }
+    return null;
+  }
+
+  private inParts(plain: string): string | null {
+    const whole = this.compound(plain, 0);
+    if (whole) return whole;
+    const guess = this.fromEnding(plain);
+    if (!guess) return null;
+    const chars = [...plain];
+    for (let j = chars.length - 2; j >= HEAD_MIN && chars.length - j <= TAIL_MAX; j--) {
+      const head = this.part(chars.slice(0, j).join(""));
+      if (head === null) continue;
+      // The ending as the ending rules write it (they keep letters one for one).
+      return head + [...guess].slice(j).join("");
+    }
+    return guess;
   }
 
   private fromEnding(folded: string): string | null {

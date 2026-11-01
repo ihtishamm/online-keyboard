@@ -87,14 +87,26 @@ const ONE_LETTER: Record<string, string> = {
   ca: "aiodlmnst",
   hr: "aiuosk",
 };
+/**
+ * Turkish writes the endings of a name after an apostrophe (Türkiye'nin, Tom'un). The ending
+ * is part of the word, not a word of its own: it is matched with the name and cut off, so
+ * Türkiye'nin counts as Türkiye.
+ */
+const SUFFIX_AFTER_APOSTROPHE = new Set(["tr"]);
+const LATIN_RUN_SUFFIX = new RegExp(`${LATIN_RUN.source}(?:['’]\\p{Ll}+)?`, "gu");
+
+const ROMANIAN_COMMA: Record<string, string> = { ş: "ș", ţ: "ț", Ş: "Ș", Ţ: "Ț" };
+
 const latin = (code: string): TextRules => ({
   code,
   wiki: `${code}wiki`,
   sentenceEnd: LATIN_SENTENCE_END,
-  run: LATIN_RUN,
+  run: SUFFIX_AFTER_APOSTROPHE.has(code) ? LATIN_RUN_SUFFIX : LATIN_RUN,
   joiners: /\s/g,
   normalizeWord: (raw) => {
-    const word = normalizeLatin(raw);
+    let word = normalizeLatin(raw.replace(/['’].*$/u, ""));
+    // Romanian writes ș and ț with a comma; older text has the cedilla look-alikes ş and ţ.
+    if (code === "ro" && word) word = word.replace(/[şţŞŢ]/g, (c) => ROMANIAN_COMMA[c]!);
     if (word === null || [...word].length > 1) return word;
     return ONE_LETTER[code]!.includes(foldLatin(word, LATIN_LOCALES[code]!)) ? word : null;
   },

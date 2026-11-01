@@ -1,8 +1,17 @@
-import { ROWS, keyDefFor, type KeyCode, type Layer, type Layout } from "@okb/engine";
+import {
+  ROWS,
+  deadStrokeMap,
+  keyDefFor,
+  keystrokeMap,
+  type KeyCode,
+  type Layer,
+  type Layout,
+} from "@okb/engine";
 
 /**
  * Typing tutor lessons, generated from a layout: the home row first, then the top and bottom
- * rows, then the same rows with Shift. Each lesson practises real words (from a frequency list,
+ * rows, then the same rows with Shift, then the letters reached with AltGr or a dead key
+ * (é, ß on some layouts). Each lesson practises real words (from a frequency list,
  * most common first) that use only the letters learned so far and at least one new one. Early
  * lessons with few real words are topped up with short letter groups. The last lessons are
  * common words and full sentences.
@@ -59,16 +68,28 @@ export function buildLessons(
   const known: string[] = [];
   // Letters the language never uses (Arabic ي on the Urdu standard layout) are not taught.
   const used = new Set([...frequencyWords, ...extra.words, ...extra.passages].join(""));
-  for (const step of STEPS) {
+  const keys = keystrokeMap(layout);
+  const dead = deadStrokeMap(layout, keys);
+  const extraLetters = [...used].filter(
+    (ch) => isLetter(ch) && (dead.has(ch) || keys.get(ch)?.altgr === true),
+  );
+  // Latin layouts only: the Arabic-script ones keep the lessons they always had.
+  const steps =
+    layout.script === "Latn"
+      ? [...STEPS, { id: "accents", title: "Accents and AltGr", row: [], layer: "n" as Layer }]
+      : STEPS;
+  for (const step of steps) {
+    const outputs =
+      step.id === "accents"
+        ? extraLetters
+        : step.row.map((code) => keyDefFor(layout, code)?.[step.layer as Layer]);
     const fresh = [
       ...new Set(
-        step.row
-          .map((code) => keyDefFor(layout, code)?.[step.layer])
-          .filter(
-            (out): out is string => !!out && isLetter(out) && used.has(out) && !known.includes(out),
-          ),
+        outputs.filter(
+          (out): out is string => !!out && isLetter(out) && used.has(out) && !known.includes(out),
+        ),
       ),
-    ];
+    ].sort((a, b) => (step.id === "accents" ? a.localeCompare(b) : 0));
     if (!fresh.length) continue;
     const allowed = new Set([...known, ...fresh]);
     const words = frequencyWords

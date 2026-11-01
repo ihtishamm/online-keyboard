@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+399268	Cercate questa parola nel vostro dizionario.
+723318	Chi commette l'errore paga le conseguenze.
+1073965	Per favore, aggiungete il mio nome alla lista.
+1171449	Sei mai stato nell'ufficio dove lavora tuo padre?
+1214916	Ho intenzione di lottare fino alla fine.
+1264114	Lui ha la voce alta.
+1568702	Come scia bene quella ragazza!
+1761709	Dedichiamo fin troppe parole alla questione, senza però muovere un dito.
+2063460	Speriamo che l'esame sia andato bene.
+2131198	Gli ho fatto pitturare il cancello la settimana scorsa.
+2231630	Non lasciare che la tua fantasia perda il controllo.
+2448292	Il killer ha confessato il suo terribile atto.
+2576386	La biblioteca fu fondata in memoria dello studioso.
+2706612	Scusate, non stavo prestando attenzione.
+2722865	Non riesco a crederci che è già Natale.
+2728601	Hanno chiamato il loro cane Rex.
+2806645	Ce la fa Lochhead a suscitare la nostra indulgenza?
+2812405	Loro tengono delle elezioni generali ogni anno.
+2896120	Jiro non riusciva ad agire diversamente.
+2899864	Il testo dev'essere tradotto in bielorusso.
+2933088	Arriveremo a Los Angeles attraverso le Hawaii.
+2997750	Peli le patate e le carote.
+3020615	Gli editori potevano rimuovere i latimismi e rimpiazzarli con parole più usate.
+3040357	Quando piove lei si sente triste.
+3099668	La mia casa comprende queste quattro stanze.
+3146433	Ogni bel gioco dura poco.
+3177122	Qui c'è gente molto malata!
+3184747	E ora si prende il sole.
+3212036	Tu credi a tutte queste cose?
+3254825	Ha allietato la mia giornata lavorativa.
+3277532	Lei è interessato al Buddhismo?
+3281320	Me ne sto andando da Boston.
+3316122	Credo che stiamo continuando a parlare senza capire una cosa di fondo.
+3360446	Non mette mai una cravatta.
+3384134	Tre hanno votato contro l'idea.
+3436993	Noi crediamo soltanto in coloro che credono in se stessi.
+3480510	C'è gente che non capirà mai.
+3498840	Ma che razza di commenti fate?
+3499045	Vorremmo un appuntamento al più presto.
+3538285	Mangiavo spesso del curry in Giappone.
+3548923	Sono depressa e non voglio sentire nessuno.
+3564030	Quella è la ragione per cui sono venuta.
+3588910	Resterò qui finché non ritorna.
+3594312	Perché dovremmo ancora dargli dei soldi?
+3707945	Non so quale sia il tuo problema.
+3753954	Io non do ragione a chi ha sparato!
+3776357	La spazzatura non spunta da sola per la strada?
+3804080	Metti in pratica ciò che predichi.
+3876593	Quanto ci vuole ad alterarla?
+3988217	Sysko lavora come una formica.
+4166697	Hanno una foto di un aeroporto.
+4213676	Questa sera farà un rapporto.
+4226870	Così facendo ti allungano la vita?
+4228144	Ben fatto! I tuoi genitori devono essere fieri di te.
+4234065	Marie sta per andare a fare una doccia ora.
+4247049	Sta per farti vedere come catturare un pesce.
+4252633	Per qualcuno non esistiamo già più?
+4260441	Perché gli esseri umani ridono? È un problema piuttosto difficile.
+4356220	Prima di quell'ora non riesco.
+4465312	Non ero consapevole della sua presenza.
+4520635	Noi abbiamo bisogno di un leader lungimirante per rendere di nuovo grande questo paese.
+4796418	Anni di sofferenze per nulla.
+4838895	Ho lavorato in questa fabbrica.
+4910905	Un momento, per favore, qualcuno bussa alla porta.
+4920775	La paura di fallire è radicata profondamente nel mio subconscio.
+4994424	Le cooperative sono tutte in mano ai comunisti?
+5027515	Non ho soldi, per cui mangio solo della pasta.
+5120884	In centro ci sono molti grandi edifici.
+5135234	Le persone stanno ancora morendo di fame.
+5161261	Loro mi hanno mostrato molte foto carine.
+5245598	Chi è il tuo personaggio immaginario preferito?
+5352871	L'ascensore si fermò al secondo piano.
+5376806	Il mio nome è sulla porta.
+5430281	È veramente una pessima barista.
+5605953	Non ho risposto per lungo tempo ai suoi messaggi.
+5704203	Per favore, legga il mio blog.
+5730624	Sono veramente fiero di loro.
+5879629	A Fadil piaceva la scuola.
+5911927	Io non ho guadagnato questo.
+5983000	Sono andato a un concerto con lei.

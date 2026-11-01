@@ -59,6 +59,43 @@ import frSwiss from "../languages/french/swiss.json";
 import italian from "../languages/italian/language.json";
 import itEasy from "../languages/italian/easy.json";
 import itStandard from "../languages/italian/standard.json";
+import german from "../languages/german/language.json";
+import deEasy from "../languages/german/easy.json";
+import deGermany from "../languages/german/germany.json";
+import deSwiss from "../languages/german/swiss.json";
+import portuguese from "../languages/portuguese/language.json";
+import ptEasy from "../languages/portuguese/easy.json";
+import ptBrazil from "../languages/portuguese/brazil.json";
+import ptPortugal from "../languages/portuguese/portugal.json";
+import turkish from "../languages/turkish/language.json";
+import trEasy from "../languages/turkish/easy.json";
+import trQ from "../languages/turkish/q.json";
+import trF from "../languages/turkish/f.json";
+import polish from "../languages/polish/language.json";
+import plProgrammer from "../languages/polish/programmer.json";
+import plTypist from "../languages/polish/typist.json";
+import dutch from "../languages/dutch/language.json";
+import nlEasy from "../languages/dutch/easy.json";
+import nlStandard from "../languages/dutch/standard.json";
+import romanian from "../languages/romanian/language.json";
+import roEasy from "../languages/romanian/easy.json";
+import roStandard from "../languages/romanian/standard.json";
+import czech from "../languages/czech/language.json";
+import csEasy from "../languages/czech/easy.json";
+import csQwertz from "../languages/czech/qwertz.json";
+import csQwerty from "../languages/czech/qwerty.json";
+import hungarian from "../languages/hungarian/language.json";
+import huEasy from "../languages/hungarian/easy.json";
+import huStandard from "../languages/hungarian/standard.json";
+import swedish from "../languages/swedish/language.json";
+import svEasy from "../languages/swedish/easy.json";
+import svStandard from "../languages/swedish/standard.json";
+import catalan from "../languages/catalan/language.json";
+import caEasy from "../languages/catalan/easy.json";
+import caSpain from "../languages/catalan/spain.json";
+import croatian from "../languages/croatian/language.json";
+import hrEasy from "../languages/croatian/easy.json";
+import hrStandard from "../languages/croatian/standard.json";
 
 /** Every language.json, in page order. */
 export const LANGUAGE_FILES = [
@@ -76,6 +113,17 @@ export const LANGUAGE_FILES = [
   spanish,
   french,
   italian,
+  german,
+  portuguese,
+  turkish,
+  polish,
+  dutch,
+  romanian,
+  czech,
+  hungarian,
+  swedish,
+  catalan,
+  croatian,
 ] as LanguageFile[];
 
 /** Every layout file, by language, in each language's order. */
@@ -112,6 +160,32 @@ export const RAW_LAYOUTS = [
   frSwiss,
   itEasy,
   itStandard,
+  deEasy,
+  deGermany,
+  deSwiss,
+  ptEasy,
+  ptBrazil,
+  ptPortugal,
+  trEasy,
+  trQ,
+  trF,
+  plProgrammer,
+  plTypist,
+  nlEasy,
+  nlStandard,
+  roEasy,
+  roStandard,
+  csEasy,
+  csQwertz,
+  csQwerty,
+  huEasy,
+  huStandard,
+  svEasy,
+  svStandard,
+  caEasy,
+  caSpain,
+  hrEasy,
+  hrStandard,
 ] as LayoutInput[];
 
 /** The transliteration schemes the layouts use. */

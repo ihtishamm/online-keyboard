@@ -6,6 +6,10 @@
  * 100k-word list. Fixed seed, so the files are reproducible. Real typists' errors would be
  * better; these are flagged as synthetic in the README.
  *
+ * A set, once written, is a test set: it is kept as it is when the word lists are rebuilt.
+ * Delete a file to make it again. Each language starts from the same seed, so a set does not
+ * depend on the languages made before it (the first 12 sets were made in one run).
+ *
  *   node src/make-misspellings.ts
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
@@ -26,6 +30,17 @@ const SOUND: Readonly<Record<string, readonly string[]>> = {
   es: ["bv", "sz", "sc", "gj", "yi", "ck", "áa", "éeè", "óo"],
   fr: ["éèêe", "sc", "ck", "gj", "mn", "àa", "ùu", "ôo"],
   it: ["éèe", "cq", "zs", "àa", "ìi", "òo", "ùu"],
+  de: ["dt", "fv", "sß", "bp", "gk", "äe", "iy"],
+  pt: ["sçz", "gj", "xs", "áàâa", "éêe", "óôo"],
+  tr: ["td", "kg", "bp", "cç", "ıi", "oö", "uü"],
+  pl: ["óu", "żź", "ęe", "ąo", "bp", "dt", "wf"],
+  nl: ["dt", "fv", "sz", "ëe", "ïi", "éèe"],
+  ro: ["ăâ", "îâ", "ei", "ck"],
+  cs: ["iy", "íý", "úů", "ěe", "sz", "dt"],
+  hu: ["öő", "üű", "oó", "ií", "uú", "jy"],
+  sv: ["åo", "äe", "ck", "vw", "sz"],
+  ca: ["bv", "sz", "gj", "sç", "éèe", "óòo"],
+  hr: ["čć", "ie", "bp", "dt", "sz"],
 };
 const WEAK: Readonly<Record<string, string>> = {
   ar: "اوي",
@@ -40,9 +55,21 @@ const WEAK: Readonly<Record<string, string>> = {
   es: "aeiouhr",
   fr: "aeiouhst",
   it: "aeiouhlnrst",
+  de: "aeiouhnrst",
+  pt: "aeiouhmrs",
+  tr: "aeıioöuünrl",
+  pl: "aeiouyjnrwz",
+  nl: "aeiounrt",
+  ro: "aeiouinrl",
+  cs: "aeiouynrlj",
+  hu: "aeiotnlsz",
+  sv: "aeiounrlt",
+  ca: "aeiouhlnrs",
+  hr: "aeiouijnr",
 };
 
-let seed = 20261031;
+const SEED = 20261031;
+let seed = SEED;
 const rand = () => (seed = (seed * 1103515245 + 12345) % 2 ** 31) / 2 ** 31;
 const pick = <T>(xs: readonly T[]): T => xs[Math.floor(rand() * xs.length)]!;
 
@@ -74,7 +101,9 @@ function slip(word: string, code: string): string | null {
 
 for (const code of Object.keys(SOUND)) {
   const file = new URL(`../data/${code}/words.txt`, import.meta.url);
-  if (!existsSync(file)) continue;
+  const out = new URL(`../test/data/${code}-misspellings.tsv`, import.meta.url);
+  if (!existsSync(file) || existsSync(out)) continue;
+  seed = SEED;
   const words = readFileSync(file, "utf8").split("\n").filter(Boolean);
   const locale = LATIN_LOCALES[code];
   const fold = (w: string) => (locale ? foldLatin(w, locale) : w);
@@ -96,9 +125,6 @@ for (const code of Object.keys(SOUND)) {
   const header =
     "# Synthetic misspellings (wrong<TAB>right): common words with one typical slip, made by\n" +
     "# src/make-misspellings.ts. Not collected from real typists; needs review.\n";
-  writeFileSync(
-    new URL(`../test/data/${code}-misspellings.tsv`, import.meta.url),
-    header + rows.join("\n") + "\n",
-  );
+  writeFileSync(out, header + rows.join("\n") + "\n");
   console.log(`${code}: ${rows.length}`);
 }

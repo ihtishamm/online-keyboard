@@ -1,3 +1,4 @@
+import type { FontId } from "@okb/layouts";
 import { CARD_THEMES, fontStack } from "../keyboard/export/card";
 
 /** A square image of a typing test result, for sharing. */
@@ -12,6 +13,9 @@ export interface ResultCardOptions {
   nativeTitle: string;
   title: string;
   watermark: string;
+  /** Font and direction of the heading (default: Urdu's). */
+  font?: FontId;
+  dir?: "rtl" | "ltr";
 }
 
 export async function drawResultCard(
@@ -24,11 +28,11 @@ export async function drawResultCard(
   const ctx = canvas.getContext("2d");
   if (!ctx) throw new Error("Canvas is not available");
   const theme = CARD_THEMES.find((t) => t.id === "emerald") ?? CARD_THEMES[0]!;
-  const nastaliq = fontStack("nastaliq");
+  const native = fontStack(o.font ?? "nastaliq");
   const sans = `"Inter Variable", system-ui, sans-serif`;
   try {
     await Promise.all([
-      document.fonts?.load(`72px ${nastaliq}`, o.nativeTitle),
+      document.fonts?.load(`72px ${native}`, o.nativeTitle),
       document.fonts?.load(`700 72px ${sans}`, "0123456789"),
     ]);
   } catch {
@@ -49,8 +53,8 @@ export async function drawResultCard(
   ctx.textBaseline = "alphabetic";
   ctx.fillStyle = theme.text;
 
-  ctx.direction = "rtl";
-  ctx.font = `72px ${nastaliq}`;
+  ctx.direction = o.dir ?? "rtl";
+  ctx.font = `72px ${native}`;
   ctx.fillText(o.nativeTitle, size / 2, 230);
 
   ctx.direction = "ltr";

@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+576734	Essa é a sua chave.
+668594	Sabes contar até dez em chinês?
+868695	Você estava em casa às dez?
+871626	No ano passado eles compraram uma casa no lugar onde passaremos as férias.
+918188	Como se usa vale para refeição?
+976342	Não se esqueça de lacrar bem a caixa antes de despachá-la.
+976389	Fique na fila do caixa enquanto eu devolvo este produto.
+985123	Por favor, assegure-se de que a porta está trancada.
+996692	Não está em meu poder.
+1054604	Eu acho que o homem é basicamente bom.
+1076994	Minha casa não aceita ligação a cobrar, então nem pense em me ligar.
+1087933	Quem nasce na Itália é italiano.
+1143801	O senhor me mostra o seu passaporte, por favor?
+1148609	Você é a única pessoa que eu conheço que possa me ajudar.
+1174823	Me faça uma xícara de café, por favor.
+1374522	Eram onze e meia, e o sol estava abrasador.
+1396933	O que você achou desse filme?
+1400633	Ele já se esqueceu do que dissera.
+1447676	Não o tenho visto há um longo tempo.
+1573282	Você depende muito dos outros.
+1592794	Ele não se levantou cedo.
+1632137	Como está se sentindo ultimamente?
+1682937	Não posso consertar esta máquina. É muito difícil.
+1848981	Eu gosto do logotipo do Tatoeba.
+2105765	Esse vestido combina com o seu cabelo ruivo.
+2363822	Qual é o grande segredo?
+2429872	Por favor, leia este livro.
+2634595	Quando foi a última vez que você leu um livro?
+2671000	A beleza favorece o amor.
+2688726	Eles vêm consagrando muito dinheiro e esforço a essa empresa.
+2746921	Que volte logo de sua navegação!
+2938984	Antes de tudo, desliguem seus celulares e permaneçam em silêncio.
+3009295	Tenho muito orgulho de minha humildade.
+3028655	Eles se prepararam para atirar com o fuzil.
+3099860	O universo tal como o conhecemos é o produto conjunto do observador e do observado.
+3119703	Esse jogador de basquetebol tem mais de dois metros de altura.
+3138203	As luas galileanas são as quatro luas de Júpiter descobertas por Galileu Galilei no século dezessete.
+3206864	Poxa, você me ajudou muito.
+3274565	Eu sugiro que você leia este documento primeiro.
+3332365	Você não é nada sem mim.
+3455535	Vamos levar as crianças ao zoológico.
+3551334	Você vai se danar se sua namorada souber a verdade.
+3963643	Eu odeio o meu computador.
+4108895	Portanto, o simples estar em companhia dela era praticamente um consolo.
+4170964	Você acha que eu deveria aceitá-lo?
+4182746	Eu trabalho todos os dias desde cedo de manhã até tarde da noite.
+4196533	Eu prefiro estudar de noite.
+4247027	Você tem algo a acrescentar?
+4374528	Ele morreu e sua alma foi para o inferno.
+4546075	De repente, cessou a conversa.
+4593943	Eu gostaria mesmo de encontrar Kumiko.
+4814758	É verdade que o consumo de carne bovina é proibido na Índia?
+4832843	Esse é um grande apartamento.
+4901585	Meu irmão se feriu num acidente de carro.
+5028340	Eu vou chamar um táxi para você.
+5045456	O esquilo está comendo pizza.
+5070931	É um pouco tarde e ainda não fizemos a lição de casa.
+5127139	Estou satisfeito com os resultados.
+5160544	Ele tem uma câmera fotográfica idêntica à minha.
+5363027	Eles estão esperando lá fora.
+6199510	Você tem certeza de que isso é seguro?
+6299837	Nós nos preocupamos se alguma coisa tinha acontecido.
+6365221	Pedófilos são tratados cruelmente na prisão.
+6368443	Eu me encontrei com Maria.
+6781482	É de você que eu gosto.
+6814168	Você já viu esta bandeira?
+6814919	Não seja duro demais com elas.
+7072905	Aquele acontecimento foi uma lição de vida.
+7078254	A história contada neste livro é aberta.
+7090659	O tio da Maria está bem.
+7097677	Quem foi que você convidou para a festa?
+7200630	O aquário tem peixes de muitas cores.
+7200875	Isto é um molho de chaves.
+7219147	Quero crer que o senhor não pode.
+7264749	Podeis ficar aqui quanto quiserdes.
+7289324	Ele me disse que eu deveria ter mais cuidado.
+7314023	Acho que te preocupas demais com os estudos.
+7323648	Que conclusão os senhores tirariam disso?
+7756699	Como eles preparam esse peixe na França?
+7858297	Faz quase dois dias que eu coloquei o cadáver na geladeira.

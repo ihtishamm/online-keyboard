@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+374903	Você deve ser mais cuidadoso para evitar cometer um erro grosseiro.
+375215	É de graça?
+377626	É muito difícil se dar bem com ele.
+381473	Estou te pedindo isso porque eu confio em você.
+381590	Muitíssimo obrigado pelo maravilhoso jantar de ontem.
+384814	Eu não acredito que essas coisas existam.
+390842	Por que eu?
+404333	Esse é o lugar onde o incidente ocorreu.
+406508	Todos gostariam de acreditar que os sonhos podem se tornar realidade.
+418089	Preste atenção. Eu vou te mostrar como se faz.
+418122	Eu tenho que devolver o livro antes de sábado.
+418227	Minha vida é vazia sem ele.
+429553	Se queres emagrecer, deverias parar de debicar.
+438857	Ele salvou o rapaz do afogamento, mas ao custo da sua própria vida.
+455366	Você se importa se eu for junto?
+455374	Mostre-me o que tem no seu bolso.
+517784	Maria gasta muito dinheiro com roupas.
+519035	O terrorista de um homem é o soldado da paz de outro.
+519518	Perdão, senhora, onde o diretor está agora?
+558365	Minha mãe não fala inglês.
+576620	Você deve ir.
+651793	Eu tive dificuldades em encontrar um táxi.
+723558	Ele também estuda chinês.
+734400	Uma língua é um dialeto com exército e marinha.
+734663	Traga-me meus óculos.
+744576	Por que comprou esse dicionário tão caro?
+786812	Meu hobby é colecionar garrafas antigas.
+803913	Surpreendemos minha prima com uma festa de aniversário.
+809644	Os jogadores devem obedecer às regras do jogo.
+811482	Um assaltante de estrada roubou o dinheiro do pedestre.
+838539	Vou voar para Nova Iorque ou para qualquer outro lugar.
+844871	Qual é a distância daqui para Hakata?
+870611	Então... o que você estava dizendo?
+870613	Sinto muito por isso.
+870942	A pintura está no Louvre, Paris.
+871110	Quantos anos ela tinha quando dirigiu um carro pela primeira vez?
+879273	Não responda à sua mãe.
+882969	Tive uma boa noite de sono.
+884460	O pão está mesmo com um cheiro muito bom.
+892261	Faço exercícios no ginásio duas ou três vezes por semana.
+902422	Eu não podia dormir por causa do barulho.
+902675	Não precisa ser um gênio para saber quem disse isso.
+902795	Você não deveria fumar tanto.
+903927	Eu quero mesmo uma moto.
+904669	Eu acho que é hora de eu pedir seu conselho.
+912266	Ele é a última pessoa com quem eu gostaria de esquiar.
+913706	A propósito, você já esteve na Europa?
+916855	Eu não tenho paciência com aqueles que dizem que o excitamento sexual é vergonhoso e que o estímulo erótico tem sua origem não na natureza, mas no pecado. Nada é mais distante da verdade.
+918144	Sinto-me como que acordado de um pesadelo.
+920017	Ajudar aos outros é ajudar a si mesmo.
+931968	O farol ficou verde.
+941516	O divórcio deles foi uma absoluta surpresa.
+942875	Tentou tirar proveito da situação enquanto estive ausente.
+948758	Eu sei que fez isso.
+948827	Dei-lhe um tabefe.
+949103	Ficar frente a frente com um dinossauro foi uma experiência engraçada.
+950562	Será fácil terminar este trabalho antes de terça-feira.
+950580	Estava a ler uma carta quando entrou.
+951990	Estudar como se comunicar de forma eficaz é um tempo bem gasto.
+952526	Tom gosta mais de chá a café.
+952903	Não. Sinto muito, eu tenho que voltar cedo.
+956898	Ele oferece uma seleção de delícias de dar água na boca.
+957234	Não sei onde ele mora.
+957518	Todos discentes que se graduaram pela nossa universidade estudaram inglês pelo menos dois anos com um nativo.
+957950	Você deveria fazer sua tarefa agora.
+965891	O que aconteceu com ele?
+972205	Gostaria de poder ir ao concerto.
+972566	Escutem atentamente o que está dizendo.
+972699	Se a árvore é ruim, seu fruto é ruim.
+973952	Quero que fiques comigo.
+977687	Se continuar assim, o professor queixar-se-á de você.
+978024	O número de europeus que visitam a Tailândia a cada ano é muito elevado.
+978057	Ela vive em Quioto.
+980117	Queres casar comigo?
+980197	O carro que ele está dirigindo não é dele.
+983613	Alguns assuntos são tão sérios que só podemos brincar sobre eles.
+987632	Corra o mais rápido que puder.
+989286	O ano de 2001 trouxe uma cicatriz na história dos EUA.
+989959	Após meses de protestos, o presidente concluiu que a melhor opção seria abandonar o país.
+990351	O custo de vida nos Estados Unidos estava aumentando.
+992161	Onde é que vocês vão passar a véspera de ano novo?
+994127	Ele morreu recentemente.
+994897	Estudei deveras para passar na prova. E, claro, passei.
+996697	Bob tem vários livros em seu quarto.
+998128	Estas palavras são morfologicamente semelhantes, mas apresentam sentidos totalmente distintos.
+999830	Ela canta bem, sem dúvida, mas ela não consegue atuar.
+999899	Esta roupa deveria ser jogada fora.
+1001224	Era covarde de meter pena.
+1001723	A energia solar não ameaça o ambiente.
+1001924	Para quando você precisa?
+1005286	Tenho um pouco de frio.
+1006425	Setembro, abril, junho e novembro têm trinta dias.
+1007562	Não sou muito chegado em química, mas tenho que estudá-la mesmo assim.
+1007776	Hoje a fecundação é um dos assuntos mais estudados em biologia.
+1011197	Ele alega que não sabe nada sobre ela.
+1011794	Chamou-me de mentiroso e virou a cara.
+1012118	A estreia da loja foi ontem.
+1017288	Com frequência, descobrimos que a simpatia se transforma em amor.
+1017718	O processo é todo automatizado.
+1018054	Este hospital tem equipamento novinho.
+1018076	Por favor, vá à padaria.
+1032611	Você pode descrever exatamente o que aconteceu?
+1043153	Sempre fui um rapaz motivado em meus estudos. E me orgulho de sê-lo.
+1043176	Passou-se por outra pessoa e enganou-me.
+1046212	O Brasil é um país que cobra exorbitantes taxas de juros.
+1047447	Eu não devia ter ido sozinho a pé para casa tarde da noite.
+1047464	Estou com bastante fome, já que não como desde manhã cedo.
+1047691	Ele não gosta de política, do que gosta é roubar.
+1048319	Eu bebi muito e não consigo lembrar muito do que aconteceu na noite passada.
+1050352	Dá uma preguiça ter que levantar para trabalhar na segunda...
+1054478	Você sabe me informar se chegou algum ônibus do Rio de Janeiro aqui na rodoviária?
+1059200	Estuda música há 7 anos e não sabe tocar um Beethoven.
+1061438	Você é racista.
+1062989	A notícia lhe foi tão impactante que derramou a xícara de chá na camisa branca.
+1063514	Não sei cozinhar tão bem como a minha mãe.
+1069402	Um pássaro pode planar no ar sem bater as asas.
+1072502	Quantos alunos há na tua escola?
+1072793	É hora de ir para a cama. Desliguem o rádio.
+1074165	"Que horas são?" "São dez e trinta."
+1075593	Não subas no muro.
+1076881	O etanol é um álcool.
+1077087	Saia da minha vida!
+1084982	A garota na foto está sorrindo.
+1085660	Isso me parece familiar.
+1086125	A maioria era incapaz de ler ou escrever.
+1087885	De quem você falou?
+1105104	Eu sou tão impaciente…
+1107455	Digitais, documentos, armas, todas as provas foram limpas.
+1112283	Todo o corpo me dói.
+1112901	Odeio dar-te esta notícia, mas encontrei outro.
+1120512	Comprei esse livro um dia desses.
+1123419	Nadar e correr faz bem.
+1125969	Eu nunca saí com ela!
+1126241	Ou você o mudou?
+1129566	Como entrou sem ingresso?
+1141659	Volte para casa cedo.
+1143355	Eu não gosto de brincar com ele. Sempre fazemos as mesmas coisas.
+1143901	Minha impressora a laser pode também escanear uma imagem.
+1145821	Viva o Esperanto!
+1145870	Há quanto tempo você está estudando inglês?
+1146024	Você tem boa pronúncia.
+1146262	Em que rua fica a sua casa?
+1146622	Como vai a sua mulher?
+1149566	Ele veio falar comigo inesperadamente.
+1149902	Perdão, amigo, por eu estar atrasado.
+1154480	Por cuidados, não por anos, branqueiam-se os cabelos.
+1154952	Ele mente maquinalmente.
+1155566	Quem diz a verdade tem sofrimento.
+1155699	Por que você tem uma língua tão grande?
+1156424	Ele veio pedir-nos para ajudá-lo.
+1157880	Gosto muito de medicina, mas essa profissão não penso em elegê-la.
+1157911	Sua resposta direta não agradou a ninguém, exceto a mim.
+1161176	Tenho somente uma boca, mas tenho dois ouvidos.
+1161322	Ele não me deu tempo de dizer nada.
+1161424	Se eu fosse eleito...
+1162398	Ele lhe deu uma resposta afirmativa ou negativa?
+1162608	Em dia muito quente eu gosto de caminhar na floresta.
+1165529	Que vai fazer Jane amanhã de manhã?
+1165656	Jamais esquecerei do dia em que caí no poço.
+1165808	Por favor, notifique-me por e-mail quaisquer falhas encontradas ou funções ausentes que você quer que sejam incluídas em versões futuras da calculadora do IMC.
+1166077	As categorias do IMC (abaixo do peso, acima do peso e obeso) da tabela principal são inapropriadas para atletas, crianças, idosos e enfermos.
+1172139	O poeta não está acostumado a falar em público.
+1174894	Imagine que a gente perca o último trem, o que deveríamos fazer?
+1175430	Olha a imagem.
+1190023	Façam fila, por favor.
+1200125	Ela mostrou-lhe a foto.
+1201217	Quem estará aqui?
+1207148	Eu quero te contar a história.
+1211878	Se dois homens têm sempre a mesma opinião, um deles é inútil.
+1222432	Os pássaros estão cantando.
+1230686	Tom é um bom estudante.
+1232034	Que filme chato! Não acontece nada!
+1245207	O Tom passou a noite toda procurando fotos de famosos na Web.
+1247894	A tua oração será respondida.
+1252094	Foi por minha culpa que eles chegaram tarde.
+1255906	Eu gosto desta imagem.
+1267559	O acidente se deu devido à neblina.
+1276875	Não tenho tempo para ajudá-lo com o trabalho.
+1277652	No carnaval, costumava-se molhar as pessoas que passavam pela rua.
+1292547	Ken tem um cachorro branco.
+1292982	Foi uma noite escura.
+1293043	Nós obedecemos às regras.
+1294006	Olá, Susan. Como vai?
+1302307	Ele foi morto pelas minhas mãos.
+1302318	Eu sempre fui uma pessoa esforçada no que faço.
+1304116	O advogado dela entrou com um pedido de habeas corpus.
+1305840	Eu não pude lembrar seu nome.
+1312886	Quando tenho dúvidas sobre o que fazer, sempre pergunto à minha mãe.
+1318717	Farei dezesseis anos no meu próximo aniversário.
+1320546	Ele partiu para a América.
+1322662	A empregada entrou carregando um bolo.
+1322764	A mãe cortou o bolo em oito pedaços.
+1340535	Há muitos anos havia aqui um castelo.
+1357403	Quem é a menina que está na porta?
+1368148	Desde quando você aprende húngaro?
+1373187	Isso é uma dor intolerável!
+1374240	Você me ajudou, agora eu ajudarei você.
+1376236	O banheiro fora arranjado com tapetes extremamente belos.
+1376564	Eu nada disse, nem sequer uma palavra.
+1377014	Cada um de acordo com o seu gosto!
+1377118	Qualquer coisa que seja nova ele imediatamente aceita sem refletir.
+1378169	Como fui ingênuo!
+1379783	Doem-me os olhos à luz artificial.
+1379823	Crianças brincavam em torno da árvore.
+1379927	O lápis caiu da minha mão.
+1380257	Pediram do governo um subsídio para aquela casa de educação.
+1380333	A menina me cumprimentou de trás do muro.
+1380866	Ora, em que isso prejudica, senhor tenente?
+1381395	Quer chova, quer faça sol, eu certamente irei.
+1383283	Sua alegria era tanta, que ela começou a dançar.
+1396769	"Quem é?" "É Jim."
+1396857	Quem é seu advogado?
+1417441	Os estudantes estão expostos à influência de seus professores.
+1419509	Você é a coisa mais linda que eu já vi na vida.
+1424307	Mostre-me as fotos que tirou em Paris.
+1430836	É uma espécie de animal que vive no mar.
+1433815	Ele não revelou seu segredo.
+1434981	É um sinal de perigo.
+1446713	Vi a partida ontem à noite.
+1456075	Veja! O trem está aqui!
+1456902	Sou apenas três anos mais velho que ele.
+1456998	É difícil tocar piano.
+1461983	O rapaz está ansioso por uma nova bola de futebol.
+1466449	Ele deu aos seus porquinhos-da-índia os nomes Blondie, Thumper e Candy.
+1468241	Ele é um excelente neurocirurgião.
+1468984	Você não tem ingresso para o espetáculo de hoje?
+1487954	Não me aborreças.
+1488889	Venha visitar-me quanto estiver a sentir-se melhor.
+1491372	Ele ganha três vezes mais dinheiro do que eu.
+1491794	Gostaria de ser rica e de não me preocupar com dinheiro.
+1502781	"Doutor, todos estão me ignorando." "Próximo, por favor."
+1504363	A criança foi resgatada de uma casa incendiada.
+1517958	A notícia da gravidez a tomou de surpresa.
+1520468	Aí vem o trem.
+1531357	Tom não está com vontade de sair hoje.
+1535056	O professor disse-lhe que reescrevesse seu ensaio.
+1544823	As crianças devem ir para a cama cedo, sem assistir televisão.
+1557861	Ela vestia luxuosas roupas de seda.
+1566842	Esta régua está graduada em centímetros e em polegadas.
+1566847	Quando foi a última vez que nos vimos?
+1567522	As discussões ainda estão em andamento.
+1571247	Não conheço a palavra "impossível".
+1571523	Sou um pouco mais alto que você.
+1571537	Agora estão correndo.
+1571738	Cientistas vão pensar em novos métodos para aumentar o suprimento de comida no mundo.
+1583904	Sempre ouço música clássica antes de dormir e posso dizer que isso me faz muito bem.
+1586936	Todos os esforços foram inúteis.
+1587209	O cachorro é bonito.
+1588750	Não, eu sou inglês.
+1592867	Há muitas pessoas no parque.
+1602821	O argumento não tem nenhuma força.
+1608471	Eu te emprestarei o livro assim que terminar de lê-lo.
+1609058	Eu não sei escrever em chinês.
+1622369	Sentimos muito; a pessoa que você está tentando contatar não está disponível.
+1630126	Qual vocês escolherão?
+1646574	Consegui o que precisava.
+1648550	Comprei duas amoras ontem.
+1653718	Não deixe ninguém esperar na sala de reuniões.
+1654647	O elemento cálcio, quando exposto diretamente ao bico de Bunsen, confere à chama uma coloração vermelho-alaranjada.
+1656818	Tom pediu ajuda.
+1669350	Ele tentará descobrir tudo.
+1674238	Em que ano você está na escola?
+1675849	Por que o senhor tem dois carros?
+1691252	Esta taça é tão frágil que trincou só de ser apoiada sobre a pia.
+1694576	Só tenho duas mãos.
+1694610	Os degraus desta escada são muito altos.
+1700947	Estamos engatinhando como bebês.
+1701232	Vocês vêm comigo?
+1705369	Já estivemos ali antes.
+1708416	Tom pode ir se quiser.
+1708577	Faleceu uma pessoa importante para a sociedade.
+1718540	Você já viu neve?
+1729959	Desligue a eletricidade!
+1773458	O pascal é a unidade de pressão do SI. Seu símbolo é Pa.
+1778779	Ela vive de quê?
+1779027	Estados Unidos tem mostrado não ser apenas uma potência econômica, mas também uma potência esportiva.
+1779387	Eu gosto quando os meus amigos traduzem as minhas frases.
+1782693	O amor não é só um sentimento; é também uma arte.
+1787131	O médico recomendou a esse paciente que parasse de fumar.
+1789150	"Experiência" é simplesmente o nome que damos aos nossos erros.
+1791984	Ele ainda estava furioso por causa do acidente apesar das palavras conciliadoras de sua mulher.
+1825584	Como posso ver-te?
+1829757	Você admitiu estar errado.
+1834245	Preciso dele para amanhã.
+1835932	Não fique sentado aí simplesmente! Faça alguma coisa!
+1837662	Esta deve ser a casa do meu avô.
+1841050	Quem foi enviado para salvar a princesa?
+1841165	O inferno está cheio de boas intenções.
+1843699	Eu tenho um amigo japonês e um chinês que falam um com o outro em inglês, já que esta é a única língua que eles têm em comum.
+1846901	Por favor, ajude-me com os deveres.
+1861639	Estou falando desta caneta, não daquela em cima da escrivaninha.
+1861703	Não estudei nenhuma dessas línguas.
+1874717	Sabões perfumados tendiam a dar coceira na pele dela.
+1909354	Você deve ser educado com os seus convidados.
+1909693	Muitas cidades foram destruídas por bombas.
+1909713	Você é gente boa.
+1912115	Você vê uma estrela?
+1914222	A Terra é redonda?
+1914228	Que livro vês?
+1916041	Não me deixes só!
+1916954	O tirano morreu; nasce o dia da liberdade.
+1917548	Você pode me culpar?
+1918128	João saiu do ringue com a bochecha inchada.
+1927038	No meu guarda-roupa eu tenho uma grande quantidade de vestidos.
+1974345	Rockefeller foi governador de Nova Iorque.
+2004438	Meu sobrenome é Wang.
+2033249	Eu realmente quero conversar.
+2045036	Você parecia tão feliz algumas horas atrás.
+2053871	Eu lhes deixei uma mensagem.
+2064319	Aonde a senhora foi, exatamente?
+2133855	Gostei desse jogo.
+2139241	Isto vai ser bom para vocês também.
+2145968	A irmã dela é uma esposa e uma mãe maravilhosa.
+2162258	A minha dor de cabeça passou.
+2165178	A gente não quer nenhum problema.
+2165354	Você marcou o açúcar na lista de compras?
+2166792	Irei com você até a ponte.
+2175863	Duvido que ele venha.
+2178597	Quem é aquele lá?
+2179265	Ele possui uma iguana.
+2179676	Elas contaram a Mary a história completa.
+2179852	Vocês gostam de ver televisão.
+2195778	Você está mais e mais bonita a cada dia.
+2196343	Eu sou um homem casado.
+2210330	Se eles se propuserem, vocês também se proporão.
+2210350	Se eu opuser, tu também oporás.
+2210431	Se tu tiveres, eu também terei.
+2210969	As mordidas indicam que os ataques partiram de um animal selvagem.
+2239468	Falando de viagens, você já visitou Nova Iorque?
+2274708	É possível que ele nunca seja famoso.
+2355090	Eles estão ficando nervosos.
+2355100	Temos duas orelhas.
+2356861	Meu computador, às vezes, se desliga de repente.
+2368015	Quem mandaria flores para mim?
+2403547	Vocês vão ficar bem.
+2414275	Esta ferramenta é difícil de se usar.
+2418167	Trabalhei muito no jardim.
+2418168	Scheme é uma linguagem de programação funcional.
+2418930	Levantei muito tarde esta manhã.
+2427737	Ken perguntou sobre seu pai.
+2431067	Não remova esta tampa.
+2453307	Agora eu gostaria de examiná-los.
+2453794	Em alguns territórios canadenses, quase não há gente.
+2462153	As crianças têm tudo, exceto o que nós tiramos delas.
+2466563	Eu acho que você deveria ver isso.
+2486192	Ele foi para longe.
+2488943	Ele diz estudar quatro línguas ao mesmo tempo.
+2490467	O Tom aprovou.
+2500558	Esse é o meu tipo de sanduíche favorito.
+2553244	Ele fez coisas que eu jamais imaginava que faria.
+2554303	Os resultados são imprevisíveis.
+2554314	Vou tomar um açaí.
+2571880	O tanque do carro está cheio.
+2571977	Ninguém veio me socorrer.
+2576403	Os peixes não conseguem sobreviver fora da água.
+2576797	A propósito, eu tenho algo a lhe dizer.
+2580773	O meu trabalho é tudo o que me importa.
+2582223	O frâncio é um elemento químico de símbolo Fr.
+2582286	O oxigênio é um elemento químico de símbolo O.
+2582324	O enxofre é um elemento químico de símbolo S.
+2585361	Eu lhe garanto que isso não vai acontecer.
+2585535	Você não pode, simplesmente, mudar de ideia.
+2590346	O campo magnético crítico varia de material para material.
+2594716	Ela foi direto para a cama.
+2595165	Eu tenho um carro rosa.
+2595395	Dezenas de carros estão estacionados no bolsão de estacionamento.
+2599038	Elas continuaram andando.
+2599267	Ela viajou para a Itália.
+2607122	Ela encarava as nossas representações como um passatempo infantil.
+2624248	Os pais ensinam aos filhos que é feio mentir.
+2631523	Um avestruz é mais alto que um cavalo.
+2632093	O Tom e a Mary têm uma filha e dois filhos.
+2633165	A mulher que você viu é a sua mãe.
+2633427	O Tom e a Mary se sentaram próximos um do outro no trem.
+2653770	Ricardo é meu primeiro nome.
+2657416	Ele não faz mal nem a uma mosca.
+2657785	O abuso de soníferos é perigoso.
+2657827	Em Interlingua, acentua-se geralmente a vogal que antecede a última consoante.
+2657938	Em francês se faz a concordância do verbo com o sujeito.
+2658294	Seu comportamento atual é a confirmação daquilo que havíamos imaginado.
+2660161	Vamos fazer umas perguntas.
+2660207	Ela parece amistosa.
+2667880	Alguns meninos estão brincando na areia.
+2668063	Esta é a cidadezinha onde nasci.
+2668634	Eu estava desarmado.
+2669289	Ele sempre chega pontualmente.
+2679520	Surgiram problemas de toda ordem.
+2681059	Ele canta sempre a mesma ária.
+2690845	Ainda me falta muito.
+2691483	Eles gostam muito de futebol.
+2692613	Ele está com o coração partido.
+2694073	Ele é possuidor de uma imensa fortuna.
+2699173	Vamos tentar do seu jeito, então.
+2699202	Quando eu disse isso?
+2707534	Ele evitou-lhe o olhar.
+2714323	Você fica bem de azul.
+2716116	Deem-me uma nova oportunidade.
+2717994	As religiões asiáticas inspiraram-no a criar esculturas magníficas.
+2734018	Não se pode sair sem sobretudo: o frio já é intenso, não é brincadeira.
+2738349	Você está falando por experiência própria?
+2740611	Eu não tenho certeza se você vai querer fazer isso.
+2766582	Tom se parece com um típico turista americano.
+2767567	O Sr. Joel está em serviço agora.
+2772126	Venha quando quiser depois das nove.
+2787246	Feliz aniversário, querida amiga!
+2798273	Eu gosto muito de fazer gracejos.
+2812609	Eu devo devolver o livro para ele amanhã.
+2815611	Você gosta de discutir comigo, não é?
+2816726	Há diversas situações na quais esse sufixo deveria ser usado.
+2830270	A calculadora é um invento maravilhoso.
+2831072	Acho que sei o que o Tom está fazendo aqui.
+2832593	Como é que você faz isso?
+2854306	Ele bateu o joelho contra a cadeira.
+2864002	Quem mais sabe que a tua casa é mal assombrada?
+2879168	A natureza está mudando a olhos vistos.
+2898240	Estou à procura de receitas para um bolo de chocolate sem chocolate.
+2900557	Ele é o sonho de muita moça bonita.
+2911669	Vocês gostariam de sair depois do trabalho?
+2911787	Você vai levar os livros na mala junto com as roupas?
+2915010	Quanto você pagou por isto?
+2915047	A parcimônia vale mais que a riqueza.
+2915990	Nós afiamos as facas.
+2917199	Eles estavam indo ao trabalho.
+2917614	Uma galinha pôs um ovo em meu armário.
+2930579	Eu tenho certeza de que você está muito ocupado.
+2936073	A juventude é feliz porque tem futuro.
+2995605	Os perfumes, as cores e os sons se correspondem.
+3000680	O que a lagarta chama o fim do mundo, o resto do mundo chama borboleta.
+3006799	Em qual estação do ano — e em quais meses — pode-se ver teatro no Museu de Artes Industriais, em Copenhague?
+3012292	Adicionar novos idiomas não é um problema.
+3020192	Teresa arrependida os dedos afrouxa: "Vai, volta a tua relva, gentil borboleta."
+3032407	Essa mulher parece ser rica.
+3037743	É ali onde moro.
+3059730	"Em que estás pensando?" — "Estou pensando em ti."
+3066794	Você é charmoso.
+3076349	Vamos tentar ser os primeiros.
+3087286	Creio que todo ser humano tem um número limitado de batidas do coração. Eu não pretendo desperdiçar nenhuma das minhas.
+3092249	O vinho é inebriante.
+3095465	Eu tenho a intuição do que você está querendo dizer.
+3095492	Não esqueça o que lhe vou dizer.
+3095505	Para ti é fácil dizer isso.
+3095980	Entendo imediatamente o que vocês me dizem.
+3102198	Você não pode se matar prendendo o fôlego.
+3104339	Meu pai conhece bem a arte de fazer rimas.
+3122979	Ele chegava e seu amigo partia.
+3123828	Já nos conhecemos?
+3129998	Ninguém é profeta em sua terra.
+3147803	Será que eu poderia tentar fazer isso?
+3156174	Tom colocou um envelope na mesa de Mary.
+3159068	Ele preferia antes viver na miséria que pedir um favor a alguém.
+3159606	Este hotel é infinitamente preferível.
+3182391	Esquece tuas preocupações.
+3188383	Isto é como procurar uma agulha num monte de feno.
+3190515	O nome do meu filho é Tom.
+3191030	Desde já agradeço a sua paciência comigo.
+3192211	A princesa está chegando!
+3193837	O tremor de terra fez muitas vítimas humanas.
+3193858	Charles ouviu o discurso até o fim.
+3199805	Não existe nenhum caminho para Deus — Deus é o caminho.
+3207591	Pensamentos como este são ultrapassados. A geração atual não pensa desta maneira.
+3210039	Na vida, tudo tem um propósito.
+3210147	Eu mal conseguia acompanhar o fio da história.
+3211381	Somente o homem duvida — o Universo ama.
+3245973	Eu te dou a minha palavra de que não contarei à ninguém sobre isso.
+3274559	Eu me considero um idiota.
+3288603	Durante algum tempo ainda ele ouviu explosões, gritos e gemidos. Então os ruídos da luta foram diminuindo, e cessaram. Tudo ficou de novo em silêncio e paz.
+3309346	Vou descascar uma laranja para você.
+3320662	O cabelo da Maria está longo.
+3324230	Por que não foste à escola hoje?
+3335487	Ouvi falar de que você não vai se matricular nesse curso.
+3335831	Essa árvore é alta, mas aquela é mais alta ainda.
+3382789	João é um grande amante da leitura.
+3388095	Não há nada em que eu acredite.
+3425002	Sua energia parece inesgotável.
+3433179	Sobre o que Tom está reclamando?
+3443399	Não sei o que Tom fez com a TV, mas está funcionando agora.
+3447777	Eu estava feliz por ver o Tom.
+3455599	Ele virou à esquerda na esquina.
+3490254	É duro, não é?
+3492573	Tom não tinha que levantar tão cedo.
+3510708	Ponho o sapato debaixo da mesa.
+3511033	Eu te ligo de volta.
+3530928	Não confunda "dare" e "dear".
+3532402	Por favor diga ao Tom que vou ligar de novo amanhã pela manhã.
+3550899	Eles batizaram o bebê com o nome de Jane.
+3555478	Começaremos em breve.
+3603913	Naquela acanhada morada, nem o sol nem a lua jamais deixavam penetrar a sua luz.
+3689613	Você sabe o que Tom está fazendo?
+3689649	quando o vinho esta dentro, o espirito esta fora.
+3701178	Está tudo bem entre nós dois?
+3703137	Eu não gosto dela nenhum pouquinho.
+3703905	Você tem algum grupo de idiomas no WhatsApp?
+3706121	Eu não sou como Tom.
+3750427	Eu prefiro andar de bicicleta.
+3752427	Porque você perguntou?
+3762423	Não havia pressa.
+3763247	Como ela sabe disso? Tom, você lhe contou?
+3763271	Meu nome é estranho.
+3776684	Se ao menos eu pudesse te ajudar.
+3806349	Tom insistia que não estivera bebendo, mas sua fala inarticulada e o andar trôpego o denunciavam.
+3813368	Ele é arquiteto.
+3839299	A peça teatral termina com a morte do herói.
+3841105	O peixe quer escapar.
+3853772	Bom, onde eu começo?
+3878503	2015 é o Ano da Cabra.
+3885608	Eu esperei por ela a vida toda.
+3938671	Jamais consegui vencer meu professor no xadrez.
+3970748	Talvez eu já tivesse assistido a esse filme antes, mas não me lembro nada dele.
+3995369	Evite o ócio.
+3995393	As armas não conhecem as leis.
+3996685	Julgai com justiça.
+4029304	Enquanto se tem curiosidade, não se é afetado pela idade.
+4031210	Isso tem gosto ruim.
+4038980	Olha a todo o destroço que você causou.
+4076946	Deve-se respeitar aquilo com que todos concordam.
+4113178	Muitas vezes, eles corriam sozinhos pela floresta, colhendo bagas vermelhas...
+4113427	Isso tudo não vale nada em comparação com o tesouro que eu consegui...
+4136871	A pedra é pesada.
+4145238	Ela voltou às pressas da Inglaterra.
+4155199	O homem arremessou a sua flauta ao lago.
+4155267	Para eles, os novos tempos nada trouxeram além de lágrimas e dor.
+4191217	Essas pessoas, depois de conhecerem o diminuto manual, podem ver o assunto com desdenhosa insatisfação.
+4229315	De repente, apareceu um homem que a agarrou pela cintura, querendo beijá-la.
+4264645	O navio apareceu a eles qual uma gaivota pousada sobre a água.
+4270317	Tom está arruinado.
+4276200	Eles não pretendiam fazer nenhum mal.
+4278543	Preciso de abraços.
+4278829	Caia fora daqui. Preciso de paz e tranquilidade.
+4281731	Eu odeio malhar, mas sei que é bom para a saúde.
+4284659	Com a mesma facilidade ele esboça os sentimentos mais delicados e as paixões mais atrozes.
+4293108	O barco estava pintado de vermelho e branco.
+4312058	Eu mandei parar!
+4321243	Que tal um filme?
+4332765	Você irá ao cinema com a Letícia?
+4333112	O que você está fazendo com isso?
+4340570	Isto custa 1,50 euros por quilo!
+4407418	Não creio que haja alguém ali fora.
+4435245	Há um helicóptero sobrevoando a cidade.
+4440009	Eu estou aprendendo coreano.
+4443018	O nariz dele é totalmente diferente.
+4449973	Minha avó materna foi a melhor mulher que eu já conheci na vida.
+4453786	Não gosto de oxicocos.
+4459673	Não pise ali.
+4468912	Minha mãe infelizmente não está em casa.
+4485563	Você não tinha escolha.
+4488573	Eu não sei quando vou poder te ajudar.
+4493025	Tom ainda está casado?
+4505896	Eu deveria comprar um híbrido?
+4509854	Você não vestiu isso ontem?
+4523438	Será que ela está ouvindo?
+4538189	Ela é húngara?
+4584647	Eu prefiro cães.
+4591319	Divida isso ao meio!
+4600513	Eu dou lições de caligrafia.
+4602279	Eu sinto saudades dela todos os dias.
+4609555	É necessário muita água.
+4635222	Os poemas daquele autor foram citados na apresentação do livro.
+4638071	Isso foi um terremoto?
+4655303	Vocês se lembram disso?
+4673028	As ações humanas alteram o clima em todo o mundo.
+4683161	Você quer mesmo que eu vá?
+4684795	Água fervida não tem gosto de nada.
+4691250	Aquilo é um javali?
+4695403	Será que esqueci alguém?
+4704434	Eles passaram sem cumprimentar ninguém.
+4717260	Você não tem nenhuma prova.
+4732861	Ela deve chegar logo.
+4751789	Eu escutei um barulho vindo da cozinha.
+4759392	Como conseguiu ela aprender tanto sobre peixes?
+4771891	Estou satisfeito com tudo.
+4776017	Tom está regando o gramado.
+4778223	Quem menos perguntas faz, menos mentiras ouve.
+4783553	Este livro só está disponível em uma loja.
+4784857	Tom era o mais jovem entre os concorrentes.
+4787468	Se seu país não o deixa acampar por seus direitos, mas permite acampar para ver Justin Bieber, cole isso no seu mural.
+4804342	Pense nisto, por favor.
+4810166	A resposta do Tom estava errada.
+4819090	Eu tenho certeza de que temos muito em comum.
+4819173	Preciso daquela fita.
+4819358	Tom está em casa?
+4834266	Ela atravessou a rua.
+4834845	Ann adora chocolate.
+4841908	Não consigo entender por que algumas pessoas gostam de caçar borboletas.
+4844187	Vale a pena ou não?
+4847676	"Qual é o seu telefone?" "É 1234-5678."
+4853135	Tom já comeu.
+4871717	Nós possuímos todos os detalhes.
+4875740	Críticas são sempre bem-vindas, desde que feitas de forma respeitosa.
+4875903	Quem veio aqui?
+4884352	O que você fez com a minha bolsa?
+4899216	Ela tomou o leite vencido.
+4899655	Tom entendeu isso.
+4900199	Ele não estava em promoção.
+4906569	Boa sorte no seu trabalho!
+4916939	Ganhar dinheiro é a religião dele.
+4922873	Ninguém acreditou em mim a princípio.
+4925502	Eu estava cansado hoje.
+4933768	Liberte sua mente de todos os pensamentos inúteis.
+4933865	Eu não consigo vencer.
+4935899	Você já fumou alguma vez?
+4952059	Acabei de tocar em uma cobra.
+4952463	Tom protegeu os olhos.
+4954660	Foi cometido um erro.
+4982839	Eu resisto bem ao frio.
+4985523	Nos encontramos no acampamento de verão.
+4990363	"Você terminou?" "Não, eu ainda nem comecei."
+4993499	Nós não estamos desistindo.
+4995437	Eu serei responsável.
+4997343	A competitividade não é nem boa nem má por si própria.
+5006457	Eu preciso usar o banheiro.
+5026212	Até hoje, muitos dos melhores perfumes provêm da França.
+5028305	Tom vai obedecer.
+5045431	Nós comeremos logo.
+5047781	Precisamos adiar a comemoração.
+5052932	Todos estavam presentes.
+5059682	Tom disse que não é verdade.
+5070568	Não parecia necessário.
+5070596	Obrigado pela carona.
+5070859	João se interessa por golfe.
+5071295	Eu ouvi alguém chamando meu nome.
+5073493	Eu acho que quebrei o braço.
+5074239	Você pode ver as pegadas do gato na neve.
+5074874	Ele parecia ter sido muito feliz.
+5075242	Aquele homem de cabelo grisalho é o pai de Tom.
+5078938	Tom morreu em outubro.
+5080571	Eu admirava sua coragem e confiava nele.
+5089475	As terras arenosas são inférteis.
+5092285	Você é o único canadense na nossa escola.
+5098499	Tom ainda está procurando emprego.
+5100437	Tom tinha medo de cachorros.
+5100732	Eu preciso relaxar.
+5103221	Os troianos eram superiores em todas as batalhas.
+5105203	Não fique brava.
+5116926	Eu não ouvi falar dele desde junho passado.
+5117445	Ninguém te ama.
+5117937	Eu tenho o necessário; não quero nada mais.
+5119232	Não tem ninguém no quarto.
+5122294	Eu adoro vê-lo alegre.
+5129291	Onde eu posso pegar a minha bagagem?
+5138779	Eu odeio limpar o banheiro.
+5140867	Eu perguntei a Tom, mas ele não sabia.
+5148510	Fizemos este trabalho em vão.
+5149581	Sem dúvida você pegou o caminho mais fácil.
+5158366	Tom é muito ambicioso.
+5163146	Poucos alcançam a velhice.
+5164986	Ele me olhou com olhos ávidos.
+5170472	Mary vai se casar amanhã.
+5170768	É de certeza que ele não saiu naquele dia.
+5170804	Hoje à noite eu estou disponível.
+5174771	Você fez um bom trabalho.
+5175175	Meu nome é Tom e esta é Maria.
+5181357	Eu comprei um carro vermelho.
+5186259	Um brilhante futuro a aguarda.
+5186457	O inimigo retirou-se impune.
+5196340	A sala de aula está vazia.
+5203515	Tom quer que você lave o carro dele.
+5205584	Um sestércio vale dois asses e meio.
+5212028	Eu leio o rótulo com muito cuidado.
+5234765	Nós devíamos ficar juntos.
+5243107	Você é estrangeiro?
+5245856	Eles vivem sem luxos num vilarejo rodeado por montanhas.
+5249036	Os trabalhadores moravam nos subúrbios.
+5251431	Eu tenho as minhas dúvidas quanto a isso.
+5251627	Elas estão comendo chocolate.
+5258405	O trem de Tom ainda não chegou.
+5262523	Você é simpática.
+5264310	Maria concluiu o curso universitário de Literatura Inglesa.
+5267435	Elegeram Tom para presidente.
+5272526	Eu decidi ir de trem.
+5279719	Venha ver isto.
+5281206	A minha esposa está cozinhando.
+5281328	Ela está escrevendo um livro.
+5312953	Não temos absolutamente nada em comum.
+5316100	O rinoceronte é um mamífero grande e pesado, com um ou dois chifres sobre o nariz e pele grossa com dobras, encontrado na África e no sul da Ásia.
+5316308	Eu fiquei preso.
+5340276	Estou precisando de um novo par de tênis.
+5343617	Nem todo dia é bom, mas todos os dias trazem consigo pelo menos uma coisa boa.
+5362649	Foi fácil para você encontrar trabalho na Alemanha?
+5367783	A empresa está investindo muito em carros autônomos.
+5376980	Ela me perseguiu.
+5384381	Eu não sei o que dizer a Tom.
+5393247	Eu estava almoçando.
+5397888	Ele torceu o tornozelo.
+5399967	Tom e Maria começaram a discutir.
+5404867	Você se lembra de como tocar aquela música?
+5405508	Eles compraram um computador novo ontem.
+5431935	Não deixe de contar com Tom ainda.
+5442637	Algumas vezes, por não dispor de uma fotografia, procurei de certa forma ilustrar minhas explicações com um esboço ou desenho.
+5443670	É melhor ser feliz do que ter razão.
+5445762	Deixe-me encher seu copo de novo.
+5448627	Você tem uma explicação?
+5452082	Eu já lhe disse a verdade.
+5462550	Se eu tivesse comprado o bilhete pro concerto no início então estaria tudo bem.
+5463263	Isso parece improvável.
+5473473	Uma gramática de referência mais prática e minuciosa, eu ainda não encontrei.
+5484635	Todos nós podemos sonhar.
+5491595	Tom disse que não queria ir à festa de Maria.
+5497200	Ninguém me conhece em Boston.
+5508922	Parece que ele está arrependido.
+5509057	Eu farei isso, sem falta.
+5516028	Isto não está ajudando.
+5518746	Você é desnecessário.
+5520911	Todo cidadão tem direitos e deveres.
+5529182	Quem tem olho grande não entra na China.
+5530463	Eu era gordo.
+5534290	Espero que não chova à tarde.
+5539511	Precisamos de mais professores como você.
+5541751	Eu ainda preciso pagar o meu aluguel.
+5544609	Eu sempre quis aprender a tocar bandolim.
+5548097	Não estamos a fim de dançar.
+5588790	Eu não consegui comprar nenhum livro na feira.
+5590948	Isso não é o suficiente para vocês?
+5606304	Ele tende a ficar com raiva quando as coisas não estão do jeito dele.
+5608464	Você já está casado?
+5610117	Quem pediu a sua opinião?
+5617892	Dan disse à Linda que o relacionamento deles estava acabado.
+5622379	Fumar é estritamente proibido.
+5626531	Estou ficando resfriado.
+5642278	Eu acabo de almoçar.
+5655593	Nós temos de ser proativos.
+5663420	Eu detesto ficar entediado.
+5675887	Tom foi criado pela avó.
+5708581	Isso é sério mesmo?
+5711831	Estou encharcado de suor.
+5743257	Não sobraram muitas maçãs.
+5762638	Eu subi a cerca.
+5769814	Eu falei com o Tom ao telefone.
+5785649	Meu pai comeu.
+5793918	Não se lembra de mim?
+5809547	Meu vizinho chamou a polícia.
+5821934	Todo mundo começou a rir de Tom.
+5863822	Aonde fica isso?
+5871079	Desculpe-me, onde fica a saída?
+5872120	Eu desisti muito rápido.
+5873643	A escada é estreita.
+5878724	Fadil estava sentado em sua casa sozinho.
+5881287	O inglês é a língua materna de sua irmã, também.
+5881801	Às 8:30, ainda não havia sinal de Fadil.
+5889912	Parece realmente repugnante.
+5892738	Fadil aprendeu sozinho o alfabeto árabe.
+5892769	Por que você decidiu aprender o Árabe?
+5899134	Quanto lhe deve Fadil?
+5906310	Tom se ofereceu para transportar-nos através do rio em seu barco.
+5908116	Vocês são da Austrália, certo?
+5908761	Espere! Não atire!
+5926908	Estou pedindo por esta natureza-morta duzentos euros.
+5933062	Eu gostaria de saber por que você fica tão preocupado antes de um exame.
+5933308	Tom parece ser muito mais velho do que Maria.
+5941291	Estou cansado de escutar o Tom.
+5943939	Tom sempre amou a Mary.
+5959026	Por que você não vai pro inferno?
+5984613	Não é muito durável.
+5987346	Eu que o diga!
+5998081	Qual é o preço de uma vida humana?
+6006157	Tom agiu como se estivesse com medo.
+6037657	Eu só quero ajudá-la.
+6048257	Consigo fazer isso?
+6053194	Agora eu não tenho tempo para pensar em futebol.
+6061279	Enquanto as ondas de luz viajam mais rapidamente através do ar, elas passam mais devagar através da água e mais lentamente ainda através do vidro.
+6063539	Senhoras e senhores...
+6068573	Estes cavalos são de Tom.
+6078695	Os magos ofereceram ouro, incenso e mirra ao menino.
+6085308	A menina vestida de branco é a noiva dele.
+6112420	Layla perdeu muito peso.
+6121665	Sami e Leila se apaixonaram e se casaram.
+6135801	O mundo não foi feito no tempo, mas com o tempo.
+6148019	Eu nasci em 4 de junho de 1974.
+6148800	Isso é um novo traje de banho?
+6163910	Tom viaja pelo mundo à procura de meteoritos.
+6164458	Parem de fumar!
+6164926	Como é sua irmã?
+6166923	Um copo de água sem gás, por favor.
+6173029	Minha lista de vilões está ficando mais curta a cada dia que eu envelheço e meu registro de tolos, mais completo e mais longo.
+6173847	Um presidente é qual um gerente de cemitério. Ele tem muitas pessoas abaixo de si, mas ninguém o escuta.
+6180468	Mais não se pode esperar, de modo algum.
+6192169	Levou uma semana para Jane se livrar de seu resfriado.
+6194932	Você sabe o que o nome dela significa?
+6195510	A senhora gosta da moldura desse quadro?
+6198977	Apenas aqueles espíritos verdadeiramente corajosos sabem como perdoar. Um ser vil não perdoa nunca porque não está na sua natureza.
+6201354	Eu direi a elas que o senhor perguntou.
+6213390	Preciso saber onde você está.
+6216299	Tom chegou em casa encharcado.
+6285572	"Você pôs na bagagem o mapa rodoviário, Tom?" "Eu não preciso disso, vovô. Nosso carro possui um sistema de navegação por satélite com saída de voz".
+6296640	Tatoeba é uma fonte de saber.
+6297033	Essa passou muito perto.
+6299495	Vós sois aquilo que fazeis, e não aquilo que dizeis que ireis fazer.
+6304800	Há uma casa de chá ali à frente. Venha, vamos beber uma xícara de chá de mirtilo!
+6307123	Perdoai-me. Eu não tive a intenção de assustar-vos.
+6310245	O boato já se espalhou.
+6316015	Ela já te deu o dinheiro?
+6316206	Ela não gostou de tudo.
+6316342	Tom não viu Maria.
+6325134	Por que você vai de metrô dessa vez?
+6330756	A língua e a cultura coexistem em perfeita simbiose como se fossem uma unidade indivisível.
+6364838	"Você vê, tudo está melhorando." "Eu não diria isso."
+6375048	Tenho nó na garganta.
+6379069	Os cães amam incondicionalmente!
+6382095	A morte é uma vida vivida. A vida é uma morte que vem.
+6382123	Vocês não estão com saudade de casa?
+6387918	Depois de longa espera, perderam completamente a esperança, chegando à conclusão de que qualquer ajuda seria inútil.
+6388513	Não foi Deus que criou o homem, mas o homem que criou Deus.
+6392576	Mary parou de trabalhar às 5 horas.
+6398069	Esse jornal é de ontem.
+6399659	Tom e Maria assistiram a um filme mudo.
+6463713	Eu não tenho bebido.
+6468381	O Tom voltou mesmo?
+6469387	Sami não pediu ajuda.
+6469555	Esse é o endereço.
+6470406	Não gosto de filmes de terror.
+6470719	Tom pediu a Mary para esperar por ele aqui.
+6472130	Estou ajudando o Tom.
+6542672	Eu roubei algo do Tom.
+6544525	Minha irmã está apaixonada por minha melhor amiga.
+6554499	Eu não quero que o Tom dirija. Ele tem bebido.
+6554515	Essa é uma boa escolha.
+6562133	Quando um filho seu morre, você perde o seu futuro.
+6564783	Tom deu à Mary uma caixa de chocolates sortidos.
+6567907	Ele virá mais tarde.
+6567910	Ele vai vir mais tarde.
+6570255	Tom foi aplaudido de pé pelo auditório.
+6572111	Mary tem algo que ela gostaria de dizer a todos.
+6572124	Isso o deixou bravo.
+6584984	Eles fazem os melhores tacos de polvo.
+6596120	Tom disse que está com sede.
+6599212	Tom faleceu dia 20 de outubro de 2013.
+6639688	Você é aquele.
+6668046	Tom e Mary estão jogando futebol por aí.
+6672682	Tom tem estado mais vezes na Austrália que a Mary.
+6677217	Deixe a gente ficar aqui.
+6719507	Ela é sua filha também.
+6728440	Por favor, aceite as minhas desculpas.
+6733916	Entender a língua materna falada com forte sotaque por estrangeiros, às vezes é muito difícil, mas entender um idioma que não o nosso, mesmo que o dominemos muito bem, falado com sotaques estranhos aos daquela língua, é praticamente impossível.
+6751086	Como você pode confiar nela?
+6763630	O melhor jeito de viver a vida é vivê-la dia após dia.
+6763647	Ele me disse para dizer sim.
+6763667	Estou investindo no meu futuro.
+6767292	Mãe, vem aqui!
+6770454	O Tom e a Mary são otimistas?
+6774418	Eu não estou bem.
+6778826	Acredito ser importante dividir as tarefas de casa.
+6780902	O Tom vai fazer qualquer coisa que fizermos.
+6781107	O que é que o Tom vai dizer?
+6781856	Nós queremos que você faça isso.
+6798274	Use alguma coisa quente. Vai estar frio esta tarde.
+6803000	Tom não tem uma família.
+6803018	Tom e eu vamos para Boston.
+6803051	O Tom não precisa fazer isso.
+6809239	Eu sei o que você disse para elas.
+6817667	Foi um debate interessante.
+6826512	Eu não deixaria o Tom perto dos meus gatos.
+6839947	Tu podes contar com a ajuda do Tom.
+6844682	Nós tentamos animá-lo levando-o para fora.
+6852470	Tom perdeu a oportunidade de ser promovido.
+6872761	Alarmados, depressa sacudimos / os caracóis em chama e com água apagamos / aquele sacro lume.
+6924905	Quem pode imaginar toda a felicidade / que o coração me invade, ilumina e enternece, / em privilégio transformando a circunstância / de ser parceiro de tão jovem coração / em seu período de feliz desabrochar!
+6933731	Nós viajamos pelo sul da França.
+6937434	Como é o clima em Boston?
+6941253	Me dê um outro exemplo.
+6945395	Tom deixou uma boa gorjeta para o garçom.
+6956480	Eu vi o Tom e a Mary caminhando pelo parque hoje de manhã.
+6958252	Quem quer vir comigo?
+6958285	Você pode mesmo fazer isso por mim?
+6958336	Tom perguntou para a Mary onde ele deveria colocar a mala dele.
+6960175	Tom limpou o sangue da espada.
+6965810	Volte para o seu escritório.
+6970381	Até onde sei, essa é a primeira vez que o Tom fez isso.
+6972592	Vocês são tchecas?
+6972628	"Eles são romenos?" "Não, eles são belgas."
+6983572	Eu me machuquei em Boston.
+6998459	Não queremos ir à Albânia.
+7002207	O seu a seu dono.
+7006267	Não posso passar a vida sentado numa cadeira.
+7006437	É melhor ir dormir sem jantar do que se levantar com dívidas.
+7010694	Caluniar é imputar crimes falsos.
+7021225	Você é amigo do Tom?
+7021267	Quem te disse que o Tom estaria aqui?
+7024598	Também sabes falar português?
+7029968	Para quantos países se pode viajar em que se fale português?
+7043956	Eles acordaram Tom gritando.
+7048596	Há muitos aspetos para investigar.
+7054815	Vais em quantos meses de gravidez?
+7060054	Morei em Boston.
+7062644	Duvido que o Tom ainda esteja preocupado.
+7064363	A água da fonte é potável.
+7065741	Preciso de um copo de água.
+7066770	A baleia é um mamífero de grande porte.
+7067636	Moro num país anti-democrático.
+7067687	O que é um budista?
+7069179	Não se deve acordar um bebé que esteja a dormir.
+7070316	A boda do casamento prolongou-se até tarde.
+7070459	Ela toca gaita-de-foles.
+7080872	Sentimo-nos muito bem.
+7080893	As letras do aviso são muito pequenas.
+7081208	Tudo se resolve com o diálogo.
+7081320	As estrelas estão brilhando.
+7082487	Onde fica o centro da cidade?
+7083041	Tom mora muito longe daqui.
+7084653	A Maria já não sai há um mês.
+7087041	Já nada há a descobrir.
+7088244	Quero mostrar-vos uma coisa.
+7088426	Isto é uma vassoura.
+7088766	Há quanto tempo você estuda japonês?
+7088784	Há quanto tempo vocês duas ficaram noivas?
+7094506	A professora de russo é loira.
+7100866	Eu sou mais alto do que você.
+7101468	Tenha cuidado ao atravessar a estrada.
+7103980	Tenha cuidado com o lume.
+7104022	Tenham cuidado ao escrever-lhe.
+7107878	Abra ambas as janelas.
+7120757	É muito comum no Rio de Janeiro os comerciantes de rua - também conhecidos como "camelôs" - venderem guarda-chuvas por 10 reais, cerca de 3 dólares.
+7124398	Comprei uma quinta com dez miriares.
+7132912	Cometeste um erro crasso.
+7134971	As eleições são na sexta-feira.
+7136250	Tom narrou tudo conforme o acontecido.
+7138368	Isto é uma bola de futebol.
+7139415	Isto é uma chatice.
+7142772	Que vista magnífica!
+7149005	Isto é um saco de papel.
+7152238	Tenho uma consulta médica às 2:30.
+7154639	Sem os seus óculos o Tom não consegue ver nada.
+7154645	Até o Tom admitiu isso.
+7157910	É verdade que os senhores estão se mudando para a Austrália?
+7162036	Eu quero que o Tom estude francês.
+7162851	Se a senhora estivesse presa em uma ilha deserta, do que sentiria mais falta?
+7195508	Caí na dança.
+7198052	Isto é uma rã.
+7200123	Isto é um porco-espinho.
+7200692	Isto é um chocalho.
+7226084	Tom gosta de cuidar do jardim.
+7235203	Você e Elena estão namorando?
+7254717	Vou pedir conselhos ao Tom.
+7254779	Não vamos falar de religião, ok?
+7257144	A senhora sentiu saudades minhas?
+7263426	Tom amar-te-á sempre.
+7269557	Eu desejo que a senhora seja amada.
+7277750	Quem deu isso a vocês?
+7289627	Tomara que venha logo.
+7291938	Desejo ver os senhores.
+7295655	Os lençóis são pequenos.
+7297773	Nunca percebi nada de italiano.
+7297840	Onde é que ela aprendeu chinês?
+7297879	Onde é que elas aprenderam búlgaro?
+7303962	É necessário que eu lhes comunique algo importante.
+7309022	A responsabilidade é deles.
+7313491	Nunca mais lhes vou falar do meu primo.
+7314517	Ele estudou violino.
+7328325	A senhora já acabou de fazer a mala?
+7330531	Eu estudei francês na faculdade.
+7341595	O Tom passou a tarde toda ajudando a Mary.
+7345503	Eu devo cancelar o nosso compromisso.
+7347417	Você está sugerindo que eu não estou dizendo a verdade?
+7347463	Eu vim aqui com o Tom.
+7353696	Eu quase sorri.
+7366711	Estou farto de comer caracóis.
+7368555	Nunca me disseram que eu precisava de um visto.
+7441571	Eu ainda estou interessado em fazer isso.
+7454386	O Tom estava irritado, mas a Mary não estava.
+7459101	Estou feliz que o Tom tenha esperado pela gente.
+7488938	Mandei um recado para ela.
+7494575	Ela queria te entregar isso.
+7524313	Eu já comprovei isso várias vezes por experiência própria. Qualquer que tenha sido, porém, a natureza de tua falta, deverás defender a causa perante o monitor.
+7531041	Contamos com eles.
+7555614	Tom sentiu-se só.
+7563838	Preciso viajar amanhã.
+7564064	Preciso me desculpar com eles.
+7576306	Vamos explorar todos os planetas que giram à volta do sol.
+7578050	Não me apetece ir de carro.
+7578067	Não me apetece ir por este caminho.
+7580808	Eu não tomei nenhuma medida de precaução.
+7589909	Me desculpe por ter causado tantos problemas.
+7590915	Será que a gente poderia se encontrar nesse fim de semana?
+7657589	Eu quero poder ir te visitar um dia.
+7657701	Precisamos de reforço e agora!
+7668700	Bom, eu não sei.
+7730170	Eles já foram avisados.
+7742673	Vocês não devem nada a eles.
+7756047	E, conduzindo-o para fora, lhe disse: "Olha para o céu e conta as estrelas, se fores capaz!" E acrescentou: "Assim será tua descendência."
+7761761	Você tem algum passatempo?
+7762269	Eu não sei como chegar lá.
+7775708	Não é como se eu te quisesse aqui.
+7791426	Eu era inteligente.
+7795279	Eu não sei onde eu vou morar no ano que vem.
+7809819	E Isaac respondeu: Teu irmão veio com astúcia e recebeu a bênção que te pertencia.
+7815773	Esse carro tem quantos cavalos de potência?
+7821871	Socorro! Quem pode me ajudar aqui?
+7825246	Leões não miam.
+7832648	A quê sua pergunta almeja?
+7842863	Por que você está tão chateada agora?
+7859168	Tenho dado aulas desde 2001.
+7896600	Muitos beijam a mão que prefeririam decepar.
+7897358	Não use este martelo.
+7901752	Alguma coisa ofendeu Tom.
+7903735	Eles torceram por seu companheiro de equipe.
+7920866	O velho rei vestia roupas novas, e sua coroa de ouro e o cetro tinham sido tão bem polidos que tudo estava belíssimo.
+7927400	Qual o ônibus que a gente tem que pegar?
+7991378	Meu sogro é engenheiro.
+8026927	Ele morde a língua enquanto fala.
+8033152	Ela me fascinava.
+8044189	Consigo digitar 50 palavras por minuto.
+8055893	O que você não pode fazer?

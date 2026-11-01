@@ -1,0 +1,15 @@
+{
+  "source": "cs.xml.bz2",
+  "pages": 3530,
+  "sentences": 504440,
+  "repeatedSentencesSkipped": 71796,
+  "tokens": 4761953,
+  "distinctWords": 319997,
+  "wordsKept": 100000,
+  "nextWordHeads": 9390,
+  "text": "cs-train.txt",
+  "textSentences": 88947,
+  "textWeight": 5.01,
+  "heldOutPages": 63,
+  "heldOutSentences": 2000
+}

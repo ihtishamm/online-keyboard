@@ -1,0 +1,15 @@
+{
+  "source": "sv.xml.bz2",
+  "pages": 5102,
+  "sentences": 401097,
+  "repeatedSentencesSkipped": 20446,
+  "tokens": 5137845,
+  "distinctWords": 302666,
+  "wordsKept": 97115,
+  "nextWordHeads": 9504,
+  "text": "sv-train.txt",
+  "textSentences": 55527,
+  "textWeight": 7.92,
+  "heldOutPages": 97,
+  "heldOutSentences": 2000
+}

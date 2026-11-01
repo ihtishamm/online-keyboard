@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+341942	Jag blev till slut klar med arbetet.
+372634	Visa mig ett annat exempel.
+401360	De säljer diverse varor på den affären.
+409683	Vad är det?
+410141	Han visade mig sin frimärkssamling.
+415587	Har du gjort klart din engelskläxa än?
+421450	Jag gillar varken den ena eller den andra kakan.
+493907	Ska han dö?
+522462	Hon gav honom en klocka.
+651240	Ett ögonblicks tvekan kan kosta en pilot livet.
+684135	Ena sidan av ett mynt kallas för 'krona' och den andra kallas för 'klave'.
+760513	Jag minns när Anna berättade att hon blivit kär.
+781095	Var arbetar du?
+841983	Svara på frågan.
+841990	Tiga är guld.
+866374	Det är säkert att äta fisken.
+880549	Vad vill ni ha att dricka? Kaffe?
+880555	Kan jag få ett glas vatten?
+883045	Jag vet att jag inte vet.
+891069	Jag måste ställa en dum fråga.
+891472	Gjort är gjort.
+891497	Är Ginza Japans livligaste gata?
+892968	Vi ska se en utländsk film ikväll.
+895290	Jag vet inte vad som har hänt med honom.
+896741	Att flyga drake kan vara farligt.
+898892	Tom är en duktig cricketspelare.
+912730	Hon hjälpte sin far med trädgårdsarbetet.
+912751	Det här är inte min åsikt, bara min översättning!
+914339	De lät mig vänta länge.
+921409	Kan du inte skriva med kulspetspenna?
+921621	Jag följer inte med.
+923144	Jag stannar här till i övermorgon.
+963732	Jag kan inte tacka nog för din vänlighet.
+1125614	Det är skönt att stiga upp tidigt.
+1125737	Det är Babas röst.
+1125764	Jag har aldrig träffat dig i verkligheten.
+1135473	Jag ogillar att vara ensam.
+1135487	Det är knappast värt att bry sig om honom.
+1137641	Tom har något i sin hand.
+1137663	Du måste städa ditt rum.
+1137676	Var får jag tag på böcker?
+1138548	Jag har letat efter Andy. Vet du var han är?
+1239129	Jag har glömt mina glasögon.
+1245564	Trollis försvann spårlöst i vimlet.
+1267444	På de höstkalla trappstegen upp mot Drottninggatan ligger fimpar bland spridda spottloskor, tillplattade läskburkar och skrynkliga påsar med rester av hamburgare.
+1294246	Det som göms i snö kommer upp i tö.
+1304949	Vältränade tjejer med god självkänsla är snygga. Men man får inte banta för mycket.
+1364208	Jag förstår inte vad du säger.
+1403373	Gillar du att äta fisk?
+1433411	Hon gifte sig vid en ålder av sjutton.
+1433538	Hon brukade dricka öl.
+1435153	Gör dig inget besvär!
+1435241	Jag står till ditt förfogande.
+1497488	Nu är jag riktigt trött.
+1498044	Jag är dålig på tennis.
+1507918	Vad är det för filtillägg?
+1576818	Det här gräset behöver klippas.
+1583136	Jag har svarta ögon.
+1587004	Jag vill dricka något kallt.
+1587330	Varför var du där?
+1603614	Ni måste hem.
+1609199	Jag ska till parken.
+1666462	Jag talar klingonska med dig.
+1769292	Sjutton gastar på död mans kista. - Hej och hå och en flaska med rom!
+1784796	Kan du hjälpa mig?
+1784972	Jag vet inte varför.
+1920128	Hunden är människans bästa vän.
+1949478	Du kanske kommer att lyckas.
+1959155	Jag ser en man mellan träden.
+1959900	Å min sida, hoppas jag att det inte ska regna.
+1959917	Han sprang så fort som han kunde.
+1959935	Vet du vilka färger han tycker om?
+1959980	Det gör inte så ont.
+1960616	Vilket land är störst, Japan eller England?
+1960668	Du borde ha avvisat ett sådant orättvist förslag.
+1960746	Natten är ju ganska lång, eller hur?
+1960943	Hon blev tvungen att förlita sig på sin inre styrka.
+1962887	Det är farligt att bada i den här floden.
+1964583	Det jag skrev är inte engelska.
+1965171	Håll käften och lyssna, unge.
+1965229	Jag lärde mig det av dig.
+1965265	Hon slängde igen dörren.
+1965266	Han slängde igen dörren.
+1965336	Genast lämnade fåglarna sina bon.
+1965359	Hon betalade för att gå på konserten.
+1965635	Nu har de skickat datorn.
+1965728	Jag önskar bara att Tom kunde vara här.
+1966231	Jag har så bråttom att jag inte kan hjälpa er.
+1968684	Han är den sista som skulle prata illa om andra.
+1969020	Jag trodde att Tom skulle stanna lite längre.
+1971118	Han hade ingen anledning att gnälla på henne på det där sättet.
+1972009	Någon gjorde sönder min kamera.
+1972061	Alla eleverna kommer från USA.
+1972823	Prata inte om det där framför honom.
+1973055	Han kysste sin dotter på pannan.
+1978713	De vädrar alltid sängkläderna på torsdagar.
+1988678	Jag tror hon är ärlig.
+1988718	Är han inte söt när han är arg?
+1990278	Mina ögon är ömma.
+1990418	Har du matat hunden än?
+1991625	Jag var hemma.
+1991635	Det är måndag.
+1992030	En del av äpplena som låg i lådan var ruttna.
+1996618	Använd det här.
+1996648	Låt mig hjälpa till.
+1998257	Jag berättar för dig.
+1998286	Det är en plan.
+1999695	Det är gammal skåpmat.
+2000144	Min son är längre än jag.
+2005688	Jag gjorde den där.
+2015718	Vill du ha barn?
+2022393	Tom är en stamgäst.
+2022428	Enlevering är en så gott som utdöd företeelse i Sverige.
+2022649	Är det några frågor?
+2022942	Vad såg du?
+2022975	Vi är i knipa.
+2025343	Jag har arbete att göra.
+2026998	Jag räddade ditt liv.
+2027134	Seoul är huvudstaden i Sydkorea.
+2027282	Han dog innan jag kom fram.
+2027346	Tom är i knipa.
+2030827	Huset brann ner till grunden.
+2030871	Livet är ett uppvaknande efter ett annat.
+2037828	Vad är det där för lukt?
+2043785	Jag var hövlig.
+2044019	Jag är lealös.
+2046229	Det slutade bra.
+2048625	Tom är häpen.
+2049002	Blev någon dödad?
+2049013	Vi klarar oss.
+2049637	Jag kan inte ändra på det.
+2051109	Jag behövde inte åka.
+2051913	Jag kanske kommer att prata med Tom.
+2051914	Jag kanske pratar med Tom.
+2051931	Jag försökte varna dig.
+2051948	Tack för ert svar.
+2053578	Jag kommer att gå nu.
+2078865	Tom behöll min tändare.
+2085853	Jag har så många idéer.
+2085885	Vad heter hon nu igen?
+2088368	De närmar sig.
+2098144	Jag kikade genom dörrspringan.
+2098555	Jag tyckte att det var bra.
+2099168	Stäng er bok.
+2110596	Och om han har fel?
+2113529	Tom har dött.
+2113578	Här kommer han.
+2113789	Härifrån till banken är det gott och väl tre kilometer.
+2114733	Tom har anlänt.
+2114738	Tom är genialisk.
+2120269	Det förklarar varför dörren står öppen.
+2120291	Han är ful i munnen.
+2122091	Det återstår att se om jag kan komma i tid.
+2122653	Är du rädd än?
+2122654	Är ni rädda än?
+2127904	Jag förstår inte vad hon försöker säga.
+2128713	Jag äter bara koscher mat.
+2128738	Jag trodde att du gillade mig.
+2128757	Jag trodde att du var Tom.
+2132772	Tom är på väg hit.
+2134402	Det här teet smakar gott.
+2141941	De är spända på att få veta vad som hände.
+2145258	Det var en bra idé.
+2147518	Tom har dörrarna låsta om natten.
+2148021	De tände en myggspiral.
+2148033	Det kommer fler tillfällen, jag lovar.
+2148111	Säg inte ett knyst.
+2148142	Först måste vi skrapa bilrutorna.
+2148587	Titta på huset med det röda taket.
+2148957	Har du skrivit färdigt ditt abstract än?
+2149596	Det sista tåget har redan åkt.
+2151234	Genom att läsa nättidningen håller sig morfar ajour.
+2151542	Jag är längst i vår klass.
+2153449	Hur skulle jag kunna trösta dig?
+2161537	Tack för lånet.
+2162552	Vädret är sämre i dag än i går.
+2170482	Jordskalvet skakade husen.
+2171206	Han röstar alltid på Alliansen.
+2171927	Han går på anabola.
+2171995	Vi tolererar inte personangrepp i kommentarsfälten.
+2172018	Han har inga anhöriga.
+2172884	Sjung ut! Ut med språket!
+2173551	Det där är en väldigt allvarlig anklagelse.
+2180533	Hon hade ett ansträngt leende på läpparna.
+2181776	Han har ingen riktig arkitektutbildning, men han jobbar ändå på landets finaste arkitektkontor.
+2183312	Vad sägs om att spela schack i kväll?
+2183321	Han har spelat schack sedan han gick på high school.
+2193521	Jag kan inte riktigt minnas.
+2193673	Kylskåpet är helt tomt.
+2195525	De tittade på tv.
+2197596	Kan jag köpa enbart linserna?
+2202123	Jag trodde att det var ett skämt.
+2205920	Tom nämnde inte Mary.
+2209797	Hon är för gammal för er.
+2212069	Detta är sant även i ditt fall.
+2212615	Äpplena är inte plockmogna än.
+2212677	Hon är asocial.
+2212849	De fann diverse attrapper i mannens lägenhet.
+2212863	Deras konsert planeras bli en audiovisuell upplevelse.
+2224192	På grund av sjukdom kunde jag inte delta vid mötet.
+2228066	Får den här lådan plats i skåpbilen?
+2228450	Jag tycker inte om honom, för han är slug som en räv.
+2235367	Jag är rädd för vilda djur.
+2240030	Russin är skrumpnade vindruvor.
+2242263	Han sa att han inte visste.
+2242954	Han stiger upp tidigt.
+2243482	Vi får inte många besökare här nere.
+2251359	Fetma är en nationell epidemi.
+2266571	Titta på pojken bredvid bilen.
+2271227	Vår bil är tre år äldre än era.
+2271529	Har vi något avfettningsmedel?
+2271592	Han är avhållsam.
+2280661	Jag får svår prestationsångest innan jag ska hålla ett tal.
+2285996	Tom verkar inte komma åt sina data.
+2285997	Tom verkar inte komma åt sin data.
+2315113	Vinden blåste hela dagen.
+2325597	Hunden kom tillbaka helt avmagrad efter två veckor på rymmen.
+2328232	Inget är så enkelt som det verkar.
+2379645	För inte oväsen här.
+2389831	Engelska är svårt, inte sant?
+2415595	Det var alla tiders hur du pratade med henne.
+2455266	Jag vet inte om vi kan hjälpa dig eller inte.
+2455292	Jag vill ha en förklaring.
+2467451	Jag tycker att det är roligt att promenera.
+2498181	Ett skrattande barn öppnade dörren.
+2502159	Nu är han ombord på skeppet.
+2502216	Hans hälsa är sämre och sämre.
+2511470	Hon var tvungen att avreagera sig.
+2511493	Försvaret avrustades kraftigt.
+2514373	Hon klev emellan för att avstyra bråket.
+2514652	Liisa hade inte en aning om vad hon skulle göra.
+2591760	Från den här vinkeln ser jag inte ens halva duken.
+2591784	Min pappa insisterade på att vi skulle vänta på tåget.
+2594333	Kunde du ta det här, tack?
+2594424	Jag kommer inte på någonting.
+2610279	Hisaos ansikte var likblekt.
+2654027	Mitt hjärta blöder.
+2654047	Jag vill bo i staden.
+2654344	Det nya huset ligger här.
+2700882	Den som sjunger om somrarna, arbetar om vintrarna.
+2704737	Vi kan inte hålla med dig på denna punkt.
+2714770	Jag kommer inte ihåg texten.
+2773755	Du blir tvungen att laga mer mat.
+2775486	Grafen är ett ämne som består av rent kol.
+2786380	Snälla ge mig någonting att äta.
+2791482	Jag mindes alla.
+2798288	Det är förnedrande för henne.
+2820004	Det är dumt att läsa en sådan tidskrift.
+2887058	Liisa stirrade förbluffat på Markku.
+2910006	Min bror slog igen dörren med en smäll efter sig när han gick.
+2921201	Storebror ser dig.
+2977260	Vi har ingen dotter.
+3000416	Tänker du ligga i sängen hela dagen, eller?
+3004154	Det här är den högsta byggnad som jag någonsin sett.
+3009066	Jag kommer att studera.
+3009255	Är du redo?
+3032510	Herr Smith har bott i Kyoto i tre år.
+3046892	Listan är oändlig.
+3049172	Hon gav mig några böcker.
+3096679	Detta är mycket viktigt för oss.
+3121210	Han hade fel på hälften av frågorna.
+3122161	Vad tror du att du håller på med egentligen?
+3122170	Barnen gick för att hämta vatten ur brunnen.
+3122221	I första hand tycker jag att vi ska semestra på ett varmt ställe.
+3124056	Vart tog han vägen efter lektionen?
+3124082	Han är redan här.
+3124103	Med tiden så förstod han vad de menade.
+3125048	Han kom fram i tid.
+3125106	Han är rädd för allt som går att vara rädd för – och lite till.
+3126529	Det är så sant som det är sagt.
+3126923	Morfar drar ofta historier för oss barnbarn.
+3126943	Vilket hus är det du bor i?
+3208766	Tom vill inte verka svag.
+3235031	Finns det några reserabatter eller rabattkort?
+3302538	Den gröna lampskärmen kastar ett varmt sken i rummet.
+3349339	Du ser tveksam ut.
+3410071	Denna mening förmedlar en lögn.
+3436236	”Jag undrar varför spöken bara kommer fram på natten.” ”Va, jag har sett spöken på dagen.” ”Allvarligt?”
+3436395	Var inte orolig.
+3449818	Säkerhet kommer alltid först.
+3453018	Jag vet inte vem som sjunger den här sången.
+3456766	Leanne har försökt att reparera datorn.
+3554852	Två år har gått sedan dess.
+3644595	Läs dina böner.
+3647256	Det är bäst vi beställer genast.
+3708148	Kom tillbaka hem.
+3710444	Det här är ett gammalt brev.
+3711467	Vi ger upp.
+3711483	Vi såg alltihop.
+3711504	Tom är en drummel.
+3711653	Vem ska ges skulden?
+3712261	Låt mig berätta för Tom.
+3712263	Är vi säkra än?
+3712377	Jag är bara en kompis.
+3713734	Vad har du hittat?
+3713750	Jag har ingen aning om vad Tom pratar om.
+3713832	Det är inte klart än.
+3713886	Vi kan inte hjälpa er.
+3717233	Kom så går vi hem, Tom.
+3718783	Det finns folk som läser böcker för att slå ihjäl tid.
+3720746	En slät kopp kaffe skulle sitta bra.
+3720797	Från och med nu tänker jag inte tycka synd om mig själv längre.
+3720845	Det var ett hus helt i min smak.
+3720920	Spaden hade frusit fast i marken.
+3720986	Nu är det dags att göra rent hus med gamla fördomar.
+3721064	Han är varken för eller emot förslaget.
+3721082	Hon tillbringade större delen av dagen på sjukhuset.
+3721112	Hon är seglivad som en katt.
+3721207	Varför ska han alltid spela över?
+3739121	Jag dansar verkligen dåligt.
+3740927	Det var inte förrän i går som jag nåddes av nyheterna.
+3742877	Hon kan inte heller komma.
+3781704	Jag är säker på att det skulle vara ett misstag att berätta för Tom.
+3784212	Det kommer ett vattenfall längre fram.
+3784471	Hon är så överlägsen!
+3784966	Hon spelade på ett ostämt piano.
+3790591	Tom har stor fallenhet för idrott.
+3790891	Var det inte hemskt?
+3793350	Hon var svimfärdig.
+3794799	Vet du vilken färg hon gillar?
+3801365	Det finns inget att klaga på.
+3809159	Har man läxor även på universitetet?
+3809699	Jag är glad att du fattat tycke för den, Tom.
+3809783	Har du en hårtork?
+3809870	Fan, jag har använt för mycket pengar.
+3809902	”Har du varit här någon gång tidigare?” ”Nej, det är första gången”.
+3809933	Hur är det på nya jobbet?
+3812757	Tom gillade inte Mary förut.
+3829592	Jag undrar om det inte finns något bra sätt att göra det på.
+3829808	Undrar om Tom är arg?
+3829900	Vi myste i soffan.
+3830561	Han har syrebrist i hjärnan.
+3830752	Ska vi ta och spela lite tv-spel?
+3830861	Hon bröt tystnaden.
+3830896	Han njöt i fulla drag av solsemestern.
+3830991	De hade hamnat i ett dödläge.
+3834564	Hon hjälpte fattiga.
+3834617	Järn är mycket mer användbart än guld.
+3834654	Alla förblev stående.
+3835445	Det är kallt, så jag vill äta någonting varmt.
+3835560	Han är inte främmande för våld.
+3837665	Det var inte planen.
+3837784	Jag skämtar med er bara.
+3837800	Jag åker till gymmet.
+3840571	Jag ger en del av min lön till mina föräldrar för att hjälpa dem att betala räkningarna.
+3840613	Jag går till skolan på tio minuter.
+3840631	Du är så bra på det.
+3840642	Jag väntar hellre här.
+3841361	I morgon åker jag till Amerika.
+3843235	När var det du träffade henne för första gången?
+3844381	Kan jag få träffa dem?
+3873201	Det här är den vackraste solnedgång som jag någonsin sett.
+3873234	Ön är sex gånger större än Manhattan.
+3873257	Vi gjorde vad vi var tvungna att göra för att överleva.
+3875278	Jag söker efter min vän.
+3879107	Gör som ni vill.
+3881389	Jag är vid den norra utgången.
+3882244	Jag har känt Tom sen vi var barn.
+3883373	Jag letar efter en väninna till mig.
+3891710	Tror du att ni kan få in mig?
+3891724	Fick du med allt?
+3894190	Ni ser alla så glada ut.
+3894217	Varför sover du inte?
+3894230	Vad gör vi här?
+3894265	Tom är inget ljushuvud.
+3995234	Ljug inte för mig! Det var du som gjorde det.
+4025765	Jag föredrar rött vin framför vitt.
+4025778	Jag ser att du har ett grekiskt namn.
+4025780	När jag har tid går jag på restaurang.
+4084981	Du har så snygga slipsar.
+4157131	Elefanter dricker vatten.
+4159723	Ge honom lite lugn och ro!
+4163222	Vi var oroliga.
+4163891	Jag minns ingenting.
+4167349	Vi kan inte lita på vad hon säger.
+4167969	Jag vill bara inte att Tom lägger sig i.
+4168055	En katt är inte en människa!
+4194187	Tom går på en promenad varje morgon med sin hund.
+4317399	Är du en fånge?
+4317424	Attans, det var nära.
+4320661	Jag kan tala med Tom.
+4322709	Kan du reparera detta?
+4323840	Kom och sätt dig.
+4324097	Vad gjorde Tom sedan?
+4324539	Att fela är mänskligt.
+4328447	Jobbar din fru?
+4328574	Det landet har ett handelsöverskott. Det exporterar mera än det importerar.
+4330110	De bor på landet på somrarna.
+4333490	Till en del dialektala uttryck finns det inga standardspråkliga motsvarigheter.
+4334518	Den här klockan var ett riktigt fynd.
+4335652	Vi gick redan igenom det där.
+4338664	Jag tvingade honom att gå.
+4338694	Jag glömde att kolla på det.
+4338857	Kom in och sätt dig i bilen bara.
+4339972	Ge mig min käpp.
+4343634	Ha en trevlig flygresa.
+4343645	Jag har mycket mera.
+4343697	Du måste springa nu.
+4343703	Du måste se det.
+4343717	Jag måste lita på Tom.
+4343962	Hur agerade Tom?
+4345847	Jag kan göra båda.
+4345872	Kanske jag kan hjälpa dig.
+4347101	Jag känner doften av blommor.
+4347208	Jag grät hela morgonen.
+4347274	Jag känner mig så hjälplös.
+4347386	Jag har köpt någonting åt dig.
+4347445	Jag avskyr skräckfilmer.
+4347468	Jag har ett kontrakt.
+4348073	Jag måste hjälpa till.
+4349909	Det är ett svårt ord att uttala.
+4350441	Jag kan sången.
+4350497	Jag gillar den där klänningen.
+4353850	Jag tänkte ringa.
+4353859	Jag saknar dina skämt.
+4354239	Jag behöver ett svar.
+4357531	Jag bär aldrig kostym.
+4357550	Jag satte den tillbaka.
+4359671	Jag tycker om att läsa nyheterna.
+4359733	Tom ska vara tillbaka idag på eftermiddagen.
+4360525	Hennes röst ekade i korridoren.
+4360528	Min favoritdans är tango.
+4362840	Tom var alldeles virrig efter att ha varit uppe i 38 timmar i sträck.
+4363124	Jag sa det till Tom själv.
+4367442	Jag fick en judisk uppfostran.
+4370970	Tom är inte särskilt lång, eller hur?
+4371027	Jag borde ha studerat flitigare.
+4371066	Ingenting sådant hände.
+4371697	Han är österrikare.
+4375000	Nu förstår jag allt.
+4378339	Spindlar är inte insekter.
+4381519	Marys farmor har inga tänder.
+4384043	Var är hästarna?
+4384326	Jag tycker om att spela tennis.
+4388030	De är mycket längre än vi.
+4391821	Jag har aldrig hört talas om den staden.
+4396535	Han ställer alltid dumma frågor.
+4397786	Tom svetsade samman de två rören.
+4407022	Många européer besöker Egypten varje år.
+4408526	Solen sken, men det var ändå kallt.
+4408733	Stormen fick allvarliga följder för ekonomin.
+4408954	Den har kommit.
+4408969	Det är möjligt.
+4412086	Alla är där.
+4419001	Här finns ingen mat, skåpet är ju alldeles tomt!
+4421249	Människorna samlades på Hagnäs torg på valborgsmässoafton för att lyssna på tal och förbereda sig för förstamajtåget.
+4421252	Det är roligt att göra snöänglar i snön.
+4424226	Han är mycket nogräknad när det gäller att boka resor.
+4435250	Jag åker till butiken.
+4439421	Jag har ont överallt.
+4439783	Tom är förtjust.
+4439797	Tom är modfälld.
+4439815	Tom är driftig.
+4439828	Tom tycker om snö.
+4441745	Jag sov hela dagen.
+4441856	Det var korrekt.
+4442472	Den här kon är inte brännmärkt.
+4442500	Hur långt är det till Boston?
+4442640	Det är kul att besöka gamla vänner.
+4442658	Jag behöver bara lite frisk luft.
+4442710	Nu är vi tillsammans igen.
+4442721	Du måste vara Toms far.
+4445891	Ingen har någonting.
+4445956	Jag behöver hela rubbet.
+4446006	Du måste komma hem.
+4446009	Du måste återvända.
+4446590	Vilken hemsk dag!
+4446745	Vad har Tom sagt?
+4446774	Vad är mitt saldo?
+4448736	Jag tror att det är där Tom är.
+4448873	Bananer är goda.
+4448943	Arabiska är ett mycket viktigt språk.
+4449440	Ta hit deras vapen.
+4449461	Ge dem pengar.
+4449570	Jag måste iväg.
+4451365	Försöker du fly?
+4451386	Jag litar inte på dig heller.
+4452811	Jag behöver ett kuvert.
+4452830	Barn tycker om att klättra i träd.
+4454356	Det är vad jag har fått höra.
+4454382	Det är en av mina favoriter.
+4454393	Det var precis vad jag behövde.
+4454455	Jag åker på morgonen.
+4455615	Jag har bestämt mig att gifta mig med henne.
+4474326	Jag tror inte att Tom gjorde någonting med den.
+4477509	Det är lättare än det ser ut.
+4684614	Jag var i London i nästan hela sommaren.
+4839462	Det du sade övertygade henne.
+4843115	Jag skämtade bara.
+4880353	Du är oartig.
+5007345	Du är så vacker.
+5097944	Det är ett otroligt resultat.
+5105103	Som man bäddar får man ligga.
+5105549	Han fick sladd i en rondell och voltade.
+5118667	Varför hälsar Tom aldrig på oss längre?
+5120829	Vi stänger vid kl. 19.
+5120844	Det tar vi om.
+5145073	Min familj bor i det där huset.
+5162063	Var är din bil?
+5198796	Det finns en effektiv minnesteknik som fungerar så, att man omvandlar sakerna som man ska minnas till en visuell och löjeväckande form, och placerar bilderna någonstans på en välbekant rutt, till exempel längs vägen till jobbet eller i rummen i sitt barndomshem.
+5264023	Vi diskar inte tallrikarna.
+5264024	Jag tänker inte diska.
+5264044	Var var den svarta katten?
+5264068	Låt Tom prata.
+5265537	Jag tror Tom letar efter sina nycklar.
+5265546	Tom och jag var båda glada.
+5301906	Låt oss prata tystlåtet för att inte väcka bebisen.
+5331880	Rädda fången från Solens land, skänk henne friheten åter. Kall är sjökungens smekande hand, och fången från Sol-landet gråter.
+5384700	Kontaktade någon henne?
+5384932	Tom dolde sina bekymmer för sin fru.
+5626572	Njut av de små sakerna!
+5626581	Vi måste lasta ur den här lastbilen innan det börjar regna.
+5626585	Vi hinner förmodligen inte göra klart det idag.
+5783387	Jag glömde att ta med mig min läxa till skolan.
+5799714	Hur övertygade Tom Mary till att hjälpa oss?
+5872249	Fadil åkte bara hem.
+5872311	Fadil hittades avliden i sin lägenhet.
+5872342	Fadil var Danias enda kärlek.
+5877897	Jag är inte van vid att dricka kaffe utan socker.
+5882489	Tom gillar inte öl.
+5882494	Tom stannar i tre dagar till.
+5882510	Tom säger att ni är bra på tennis.
+5882527	Var lärde ni er att skriva?
+5883402	Välkommen till den här världen!
+5883471	Vattenmeloner är fulla av vatten.
+5884646	Förstår ni vad jag menar?
+5885980	Lyssna inte på honom. Tom ljuger för dig.
+5895903	Ni behöver mig mer än jag er.
+5902231	Det kommer säkert att regna i dag.
+5913110	Jag tror att hon kommer.
+5926126	Jag är inte så värst imponerad.
+5926748	Vi springer varje dag.
+5932518	Det faller utanför mitt område.
+5941353	Därför är jag arg på honom.
+5947443	Han kan inte komma; han är sjuk.
+5950298	Många fattiga studenter får stipendier.
+5976694	Det är inte tillåtet.
+6002138	De kan inte börja utan mig.
+6002165	Fienden till bra är bättre.
+6002916	Han gav mig 10 tusen yen.
+6080469	Varför köpte du den där?
+6139393	Efter klockan åtta är det farligt där.
+6289710	Varför har ingen sagt någonting?
+6332657	Han är min farbror, eftersom min far är hans bror.
+6363874	Hon var redo.
+6363957	Sami drömde om att en dag publicera en bok.
+6363999	Hindi och Urdu är samma språk.
+6364017	Tom såg på de gamla fotona.
+6364018	Tom uppmärksammade mig inte.
+6364056	Jag älskar dig, Spanien.
+6364135	Hon är uppenbarligen kär i dig.
+6364185	Al-Mutanabbi dog med svärdet i hand.
+6370939	Det här gick inte.
+6372011	In med dig!
+6389193	Sami gav Farid tillåtelse att kyssa hans dotter Layla.
+6389234	Han såg förvirrad ut.
+6389235	Vi kommer att hitta Tom förr eller senare.
+6389351	Du kan få överslafen.
+6389388	Han berättade för mig att han älskade mig.
+6389486	Jag är säker på att du har rätt.
+6390985	Skulle du kunna ta av dig dina solglasögon?
+6392190	Om du verkligen älskar mig, gör du som jag ber dig.
+6399373	Låt mig leka.
+6569285	Det finns inga dumma frågor, bara dumma svar.
+6578283	Hur mycket tjänar en rörmokare?
+6592407	Tom ligger på golvet.
+6619800	Allt är tillgängligt.
+6619812	Han älskar katter.
+6619825	Jag tycker det är du som borde berätta för Tom att han är avskedad.
+6741124	Du gör illa mig.
+6779965	Tom var inte van vid att prata om arbete i hemmet.
+6780094	Jag har redan berättat för Tom vad jag behövde köpa.
+6780112	Jag har lovat att aldrig göra det där igen.
+6797747	Varför berättade du inte det för Tom?
+6828738	Tom drack en alkoholfri öl.
+7039188	Jag vill att du börjar ta saker seriöst.
+7042631	Drömmar går i uppfyllelse.
+7044741	I övrigt är allt perfekt.
+7045992	Varför finns inte det jag söker?
+7046046	Hon skrek för allt vad hon var värd.
+7046217	Hon blir inte långlivad.
+7047201	Jag gillar hans inställning.
+7580660	Tom visste att jag hade rätt.
+7680965	Mary bad Tom om att sitta tyst.
+7686845	Det beror på sammanhanget.
+7864059	Livet är för grymt.
+7864065	Vad snällt av er!
+7882322	Jag har en lång lista saker jag inte borde göra.
+7895331	Det är en slags katt.
+7997313	Kan jag låna din penna?
+8158252	Drygar du dig mot mig nu?
+8386794	De är professorer.
+8386887	Ni borde informera er mamma så snart som möjligt.
+8388312	Mary är för full.
+8388318	Hon är en berömd läkare.
+8388331	Jag tror du vägrar att förstå.
+8399900	Hela staden var täckt med gult damm.
+8399918	Det här är lätt att göra.
+8410450	Carlos besteg berget.
+8415286	Ni låter besviken.
+8418488	Det var ett fånigt misstag.
+8418505	Ingen blev skadad.
+8418511	Ingen gjorde sig illa.
+8419108	Jag snubblade över en sten.
+8419491	Jag trodde du skämtade.
+8421657	De brast alla i skratt.
+8421818	Jag bestrider det inte.
+8427087	Hur allvarligt är det här problemet?
+8428439	Jag vill utomlands.
+8428969	Det är svårt att tänka mig att jag en dag kan vara rörelsehindrad.
+8430024	Är han japan?
+8439521	Hur många syskon har ni?
+8624635	Oj, det snöar!
+8737098	Flickan har ingen mamma.
+8752238	Han uppnådde sitt syfte.
+8757153	Jag uppskattar verkligen er vänlighet.
+8757173	Tom, är den här din?
+8761267	Kom du hem ordentligt?
+8767584	Tom är inte alls rolig.
+8770173	Jag vill inte arbeta.
+8777284	Var snäll och tänd lyset.
+8781003	En elefant äter en spindel.
+8783221	Det var trevligt att inte göra någonting.
+8786768	Får jag gå?
+8787110	Jag är i huset.
+8793660	Han gav mig en present.
+8804135	Naturen är full av mysterier.
+8812120	Vill du hänga med?
+8815737	Hämta en skovel.
+8833779	Vad ska det tjäna till?
+8840933	Jag ringer tidigt i morgon.
+8848588	Det rann tårar nerför hennes kinder.
+8848679	Jag är född där.
+8862451	De tog fel flyg.
+8873603	Jag har analyserat inspelningen.
+8878573	Hon är mycket söt.
+8886144	Det kom fyrtio personer.
+8891377	Naturen är full av hemligheter.
+8925037	Jag beklagar verkligen.
+8931270	Det är tråkigt att gå i skolan.
+8933014	Den här staden har dött.
+8940706	Det är min farmors löständer.
+8944893	Mår ni bra?
+8945145	Ni är upprörda.
+8945606	Butiken var stängd.
+8945693	Vi ertappade henne på bar gärning.
+8950701	Brandkåren var på plats inom fem minuter efter att ha mottagit samtalet.
+8955238	Stora pojkar gråter inte.
+8955627	Han tände eld på skolan.
+8955663	Varför måste vi hjälpa henne?
+8955690	Hon frågade mig om provresultatet.
+8955827	Idag är det min födelsedag!
+8955853	Tom ställde en dum fråga.
+8966108	Ta av dig slipsen.
+8969757	Jag tror att det kommer regna idag.
+9009125	Vem skrev det?
+9009194	Ni är bra på det här.
+9010731	Mina hundar är vita.
+9014101	Lås din dörr.
+9036165	Varför har du köpt det här?
+9039647	Din son är en man nu.
+9052518	På landsbygden finns det många träd.
+9084180	Han diskuterade inte planen med henne.
+9107122	Var finns närmaste bankomat?
+9117247	Presidenten vill ha fred, eller hur?
+9168760	Det här ordet är dubbeltydigt.
+9171669	Den här meningen används allmänt.
+9230040	Det är riktigt besvärliga förhållanden för en segeltur idag.
+9230486	Den korta kvinnan har på sig en grå kostym.
+9234957	De där böckerna är hennes.
+9253946	Tom är rättvis.
+9280634	Jag har inte borstat tänderna på tre dar.
+9363260	Söker han något?
+9432441	Har ni hus?
+9464632	De gick och höll varandra i handen.
+9540719	Prästen har gått med på att viga oss.
+9553869	Min hobby är att samla på frimärken.
+9571631	De gräver ett hål.
+9649691	Om jag bara visste!
+9703807	Att simma är min hobby.
+9704589	En trerättersmiddag består av förrätt, huvudrätt och efterrätt.
+9709897	Ditt tåg avgår från perrong nummer tio.
+9715595	Floden rinner genom dalen.
+9715613	Han uppfann hjulet.
+9732483	Varifrån är du?
+9735721	Ge er iväg!
+9737191	Min brors fru är min svägerska.
+9752812	Jag kommer att minnas dina ord.
+9753433	Jag är britt.
+9770820	Det enda på bordet som jag normalt inte skulle äta är det som är på den gula tallriken.
+9773433	Säg mig vad jag ska tänka!
+9777242	Hon borde ha gjort det redan.
+9808092	Hur klarar vi oss?
+9819390	Vilken sorts produkter gör ert företag?
+9819443	Tom känner inte många människor i Boston.
+9824249	Jag hade en jobbig morgon.
+9825414	Vill man vara fin får man lida pin.
+9828797	Jag kan skriva 50 ord i minuten.
+9830443	Jag tvättade håret i morse.
+9833147	Hon hade bråttom.
+9833543	Vi är manliga.
+9839118	Det var lite dagg i morse.
+9839249	Jag erinrar mig det.
+9848157	Vi kom fram på samma gång.
+9848195	Gör inte två saker på en gång.
+9850214	Var vänlig och radera denna fil.
+9868296	Han är lycklig.
+9888987	Kött från i dag, bröd från i går och vin från i fjol. Det håller en frisk och kry!
+9916170	Tom var förut kapten på en bogserbåt.
+9954913	Jag planterade ett äppelträd i min trädgård.
+9956891	Jag kommer att sakna er så mycket.
+9984747	Vi har bevis för att allt detta är sant.
+9990618	Har ni Toms adress?
+9990681	Utan hjärna kan man inte tänka.
+9990888	Han ljög mig i ansiktet.
+9990898	Hans ansikte blev blekt.
+9996156	Låtsas göra någonting.
+10002349	Hon sörjde sin ende sons död.
+10006905	Priset på ris har stigit med tre procent.
+10007758	Vad du än gör så spring inte!
+10008837	Jag måste pissa.
+10011973	Tom är en kompis till mig.
+10015905	Vi får en ny magister i morgon.
+10032777	Det är på morgonen som naturens skönhet uppenbarar sig för oss.
+10032905	Jag har rymt hemifrån.
+10037553	Vad letar du efter?
+10037903	Jag tog en droska för att hinna med tåget.
+10056505	Vi stannade hemma igår kväll.
+10059526	Jag går i skolan på lördagar.
+10087924	Den 6 juni är Sveriges nationaldag.
+10096419	Det är omöjligt att översätta denna mening utan att ta hjälp av en ordbok.
+10110775	Han lät dem skräddarsy en skjorta åt honom.
+10132706	Jag hade en bra ledighet.
+10137193	Hon slog honom med en hammare.
+10149312	Min mor känner honom.
+10154747	Han började ett nytt liv.
+10161156	Hon kom just hit.
+10164569	De pratar inte med dig.
+10164573	Jag såg en bil köra på en man.
+10169283	Jag är en man.
+10201669	Ska vi gå till tunnelbanan?
+10230740	Tom körde på och skadade en pensionär allvarligt med elsparkcykeln när han åkte på trottoaren.
+10279354	Kom hit med nyckeln.
+10334860	Ni kommer inte att lyckas.
+10334879	Fågeln är i sitt rede.
+10334880	Fågeln är i sitt bo.
+10335472	Tom sitter och läser Bibeln.
+10337406	Vi hade en angenäm kväll.
+10337440	Toms namn stod på asken.
+10368951	Ge mig namnet på min brors mördare.
+10473970	Jag frös, så jag tog på mig en tröja.
+10489552	Tom är medlem i ett hemligt sällskap.
+10520755	Det är hundra delar i den.
+10522798	Diktatorn undertryckte folket.
+10535333	Det fanns ingen där.
+10555271	Jag skickar hem Tom.
+10557998	De beordrade mig att döda min bror.
+10598874	Hon sade till mig att hon var förbryllad.
+10601278	Det är en rätt stor klubb.
+10615286	Det är helt orimligt.
+10627170	Tom hade inte modet att trycka på avtryckaren.
+10660843	Tom vet redan vad Mary har gjort.
+10661003	Har du betalat din telefonräkning?
+10661249	Tom föddes före Mary.
+10661312	Skulle du vilja ha mer?
+10661336	Jag träffade en student från Amerika igår.
+10662794	Klockor mäter tid.
+10662922	Jag kan inte avslöja min källa.
+10662982	Jag måste göra klart mina läxor.
+10663084	Jag borde ha väntat.
+10664851	Jag är präst.
+10664913	Sami halkade och föll.
+10665408	Hon biter på naglarna.
+10667804	Mannen är elegant.
+10667828	Överansträng dig inte.
+10667970	Det var svaret jag ville ha.
+10670591	Han sydde en klänning åt mig.
+10673355	Gillar du vintern?
+10673396	Skyll inte på offret.
+10673407	Tom kommer att hjälpa oss.
+10686388	Den är för liten för mig.
+10686509	Tom är nästan blind.
+10686529	Tom lärde mig att sjunga.
+10686890	Jag är en mycket god lyssnare.
+10686946	Vad orsakar mjäll?
+10687053	Kvinnan äter ris.
+10689418	Skulle du vilja bo i ett annat land?
+10689699	Jag lär mig ungerska och polska på Duolingo.
+10690951	Jag ser den hunden nästan varje dag.
+10691071	Vi kan hjälpa er.
+10691758	Katten kommer att sova.
+10692658	Tom bytte växel.
+10692666	Du är ytlig.
+10692695	Vattnet här är mycket grunt.
+10692837	Tänk på henne.
+10701075	Vår lärare är trött.
+10701483	Tidningen är gratis.
+10702223	Var kan vi hitta mat?
+10702344	Hon har ingen familj.
+10702346	Problemet är löst.
+10705667	Vi kan börja.
+10705815	Min farbror har ett hus i Italien.
+10705869	Dricker du kaffe varje morgon?
+10705975	Mary är inte hennes riktiga namn.
+10707687	Han förstår franska.
+10710900	Hon köpte den.
+10712028	Stör mig inte när jag pluggar.
+10713189	Hur mycket är ett människoliv värt?
+10713216	Rita är Dans svärdotter.
+10713294	"Var är du?" "I Algeriet."
+10714441	Marys ögon är svarta.
+10714523	Vattnet är som djupast här.
+10714547	Det finns lite vatten kvar.
+10718094	Det här fönstret är skottsäkert.
+10726173	Hon studerar matematik.
+10734634	Tom satt bakom lås och bom.
+10735134	Jag har fyra barn.
+10745906	Mary är gift med en otroligt korkad kvinna.
+10747248	Samis telefonsamtal spelades inte in.
+10749486	Världen talar engelska.
+10749591	Sami är en bra pappa.
+10753428	Vi är vänner nu.
+10753476	Vi är redan hemma.
+10767551	Jag lät Tom leva.
+10783986	Säljer de krattor?
+10819733	Var kan jag hitta kostnadsfria läromedel i svenska?
+10848950	Hur mycket kostar det per månad?
+10857280	En nagel gick av.
+10866992	Många fåglar sitter på grenen.
+10890109	Gardinerna fattade eld.
+10894670	Är du i form?
+10894747	Hon ersatte smöret med margarin.
+10897656	På skylten står: "Utgång."
+10897657	Är det problem?
+10899050	Det drar upp till storm.
+10899987	En båt kapsejsade.
+10900210	Tom höjde på ett ögonbryn.
+10900216	Var snäll och svara på frågan.
+10912837	Han försvann i vimlet av de många människorna.
+10915735	Hinken är full.
+10915753	Maria behandlade sitt skadade knä.
+10916446	Han var tvungen att lämna byn.
+10944166	Kate har en hund.
+10945548	Det engelska alfabetet har 26 bokstäver.
+10945570	Är hon nöjd med sitt vardagsliv?
+10945905	Hundfjället erbjuder nedfarter i alla svårighetsgrader.
+10949078	"God morgon." "Kaffe."
+10951428	Ditt svar är rätt.
+10951556	Jag är sugen på något sött.
+10951901	Du måste till en läkare.
+10952027	Finns det någon mer utgång?
+10953625	Hennes uttalande var inte trovärdigt.
+10953628	Jag litar inte på Toms vittnesmål.
+10953635	Fin utsikt, va?
+10954447	Är hon på gott humör?
+10954547	Jag är allergisk mot rosor.
+10956481	Vi missade tåget.
+10957261	Det var början på en stor kärlek.
+10957330	Titta på det där höga berget!
+10957542	Ni måste lämna in era rapporter på måndag.
+10957589	Din beställning kommer att skickas inom kort.
+10957770	Vi drack öl.
+10959994	Det där är en mycket konstig bokstav.
+10978671	Yanni är pilot.
+11057254	Sa inte du att du tyckte om Tom?
+11061619	Tom är en väldigt vis man.
+11061649	Jag vill också veta!
+11061696	Var det många kvinnor där?
+11061821	Var är tröjan jag köpte dig?
+11068747	Han gjorde inga försök att freda sig.
+11163964	Tom har blå ögon och brunt hår.
+11163994	Jag är inte dum.
+11170276	Jag vet vad som hände.
+11177311	Mitt WiFi suger.
+11186476	Jag lade till nya meningar.
+11186539	Det är okej att vara rädd.
+11189334	Det här är en dålig översättning.
+11205208	Han har en obotlig sjukdom.
+11231040	Tjugo dividerat med två är tio.
+11269162	Detta är privat egendom.
+11281920	Lägg allting i den här lådan.
+11281934	Ni kommer inte att tro mig.
+11281948	Yanni träffade någon ny.
+11282002	Tycker din pojkvän om te?
+11282013	Jag hatade dem.
+11284481	Har han ätit lunch?
+11328369	Du luktar bajs.
+11358490	Tom har en bror.
+11393043	Vi önskar er en god jul.
+11424776	Mary gav alla sina pengar till Tom.
+11474628	De är föräldrar.
+11474659	Han är dum och omogen.
+11485351	Han sprang efter sin hund.
+11510493	Hon pratar inte.
+11510538	Hans leksaker är blå.
+11526329	Mitt gevär saknas.
+11536291	Jag ser något men vet inte vad det är.
+11538985	Han vill lära sig danska.
+11547043	Tom är med henne.
+11602921	Hans son är sjuk.
+11655413	Tom älskar barn.
+11852213	Tom sade att ni gillar popcorn.
+11852250	De är dina vänner, inte mina.
+11852587	Tom är inte gammal nog att köpa öl.
+11907085	Du gillar elefanter.
+11907094	Jag gillar hundar.
+11907149	Jag ska studera arkitektur.
+11907199	Han är van vid att resa.
+11907546	Slog det dig inte att stänga fönstren?
+11907566	Ni skrämmer barnen.
+11908604	Hon frågade honom var han bodde.
+11908758	Jag vet nästan ingenting om dig.
+11908873	Han föll ner i den bottenlösa gropen.
+11909362	Om du vill kan du bo här hos oss.
+11910771	Förutom sport har många konserter hållits i anläggningen.
+11911733	Jag fick böter för att ha parkerat framför en brandpost.
+11913277	Jag ifrågasätter din lojalitet.
+11914381	Det visade sig att hon ljugit.
+11916310	Tom joggar varje dag.
+11916316	Jag joggar två gånger i veckan.
+11938579	Många andra förbättringar lades till.
+11938613	Vi ansöker om skattebefrielse.
+11938626	Många betydande personer har varit aktivt engagerade i välgörenhetsorganisationen.
+11946716	Det har regnat sedan i söndags.
+12025356	Tom letar efter sin mobil.
+12067956	På tomten hade farfar ett drivhus fyllt av tomatplantor.
+12068857	Du är riktigt tråkig.
+12084893	Han hade mycket att studera till provet.
+12097075	Jag måste fortfarande hämta Tom från skolan.
+12098948	Jag vill att denna byggnad genomsöks från översta till nedersta våningen.
+12098985	Yanni tittade bort.
+12098993	Skadade de detta lilla djur?
+12100345	Yetin ("Snömannen") försvann över kullen.
+12100359	Jag visste verkligen inte att du var här i Boston.
+12105292	Hur räknar man till tio på franska?
+12105314	Wang, vilket år föddes du?
+12105376	Jag kan inte låta det hända igen.
+12105428	Jag undrar om Tom och Mary trodde att de måste göra det.
+12105464	Jag hoppas att du inte fick problem.
+12105496	Muslimer har många saker som vi inte har.
+12107115	När jag kom till busshållplatsen, så hade bussen redan gått.
+12107130	Mary går väldigt sällan någonstans själv.
+12107146	Det var sista gången som Tom sågs i livet.
+12107179	Har du någonsin läst Koranen?
+12107279	Jag försöker understryka en poäng här.
+12108926	Jag tycker bättre om engelska än om matematik.
+12108939	Så vitt jag vet så är han en ärlig man.
+12110651	Detta är en pappersbiljett.
+12110726	Mary stoppade in sin skjorta och stod på händerna.
+12156117	Vilken film ska ni se?
+12166506	Allt Tom sa var lögn.
+12169845	Hon är vår dotter.
+12187941	'Propaganda' är ursprungligen ett latinskt ord som betyder "saker som ska föras vidare".
+12193450	Hade du med dig någon?
+12195857	Jag sköt Tom i stället för Mary.
+12202892	Jag har inte sett Tom på sista tiden.
+12215842	Ringde du alldeles nyss?
+12220405	Jag har en syster till.
+12225217	I dag är det vintersolstånd.
+12228029	God jul, allihopa!
+12228583	Tom kallar sin padda Viktor.
+12233153	Talar du filipino?
+12237625	Han är i vardagsrummet.
+12240262	Vem är det där?
+12244275	Vad heter Zimbabwes huvudstad?
+12257785	Hon ser ung ut.
+12258513	Jag såg Toms ärr.
+12266999	Hon väckte dig.
+12269828	Mänsklig dumhet har inga gränser.
+12274880	Han sprang för fort för att vi skulle kunna hinna ikapp honom.
+12280563	Den är i brunnen.
+12285907	Det är ett muslimskt namn.
+12307495	Han föddes på vintern.
+12347189	Det är inte riktigt dags ännu.
+12347511	Varför sa de ingenting?
+12349546	Tom har ont i tänderna.
+12356139	Jag har bott i Kina i sex månader.
+12356191	Jag har hittills bott sex månader i Kina.
+12406999	Spindlar har åtta ben.
+12410398	Hon slängde bort många brev.
+12431503	Det är ingen bra översättning.
+12433737	Var kan man få tag på den billigaste kvargen med låg fetthalt?
+12434743	Ta tillbaka det där!
+12434759	Jag är trött i benen.
+12446405	Det är inte någon bra översättning.
+12538127	Tom behöver en vass kniv.
+12662734	Cykelstöld blir ett allt vanligare problem i staden.
+12680122	Tom har också en röd bil.
+13042959	Alla fåglar har näbb.
+13236665	Är själen evig?
+13659115	Han klarade inte examen.
+13820842	Raska på med det!
+13834166	Nu eller aldrig!
+13846125	Ska vi säga kvart i ett?
+13846130	Klockan är tio i elva.
+13860342	Killen siktade på mig och sköt.
+13872262	Skynda er, annars kommer ni försent till lunchen.
+13896292	Det tar knappt mer än en halvtimme att läsa berättelsen.
+13909260	Upp ur sängen!
+13921179	Res dig upp.

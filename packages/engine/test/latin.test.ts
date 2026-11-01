@@ -116,6 +116,27 @@ describe("smart accents", () => {
     expect(h.restore("teorico-practico").auto).toBe("teórico-practico");
   });
 
+  it("restores compounds part by part in languages that build words", () => {
+    const de = new AccentRestorer(
+      ["Gefäß", "Wänden", "Übergang", "Form", "schon", "schön", "Zeit"],
+      "de",
+    );
+    expect(de.restore("Gefasswanden").auto).toBe("Gefäßwänden");
+    // A joining s: Übergang + s + Form.
+    expect(de.restore("Ubergangsform").auto).toBe("Übergangsform");
+    // A part with two spellings (schon, schön) leaves the word alone.
+    expect(de.restore("schonzeit").auto).toBeNull();
+    // Spanish does not build words that way: no splitting.
+    const es = new AccentRestorer(["están", "cielo"], "es");
+    expect(es.restore("estancielo").auto).toBeNull();
+  });
+
+  it("gives a known word its ending's accents, where the ending rules are sure", () => {
+    const ending = ["házának", "kertjének", "nevének", "ának", "fának", "lábának", "várának"];
+    const hu = new AccentRestorer(["tárgyalás", ...ending, "szépének", "útjának"], "hu");
+    expect(hu.restore("targyalasanak").auto).toBe("tárgyalásának");
+  });
+
   it("knows rarer words from the dictionary's accents section, at their own ranks", () => {
     const base = ["de", ...Array.from({ length: 50 }, (_, i) => `w${i}`)];
     const r2 = new AccentRestorer(base, "es", [

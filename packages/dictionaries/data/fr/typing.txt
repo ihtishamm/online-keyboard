@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+3646	Est-ce que tu pourrais retéléphoner plus tard s'il te plaît ?
+3856	Pendant les vacances d'été, je prenais mon dîner à minuit.
+7666	As-tu pris note de mon numéro de téléphone ?
+10462	Puis-je manger ce gâteau ?
+10819	Mon oncle m'a donné un livre.
+12995	Puis-je avoir une serviette, s'il vous plaît ?
+13469	Combien de temps a vécu la civilisation maya ?
+13577	Depuis combien de temps vivez-vous à Tokyo ?
+15221	Pouvez-vous soulever cette pierre ?
+128802	Quelle est la longueur du pont Seto ?
+139432	Est-ce que tu aimes la cuisine japonaise ?
+181249	Pourriez-vous venir ici un instant ?
+330332	Avez-vous besoin de lui ?
+330952	Quel idiot j'étais de n'avoir pas découvert ce simple mensonge !
+334583	Nous sommes arrivés ici rapidement, n'est-ce pas ?
+378055	Où est le banc le plus proche ?
+381848	Il ne manquait plus que ça !
+398158	Lorsque je suis avec un bébé qui pleure, j'ai le goût de pleurer moi aussi !
+400841	Pouvez-vous me recommander un bon appareil photo ?
+419256	Il est interdit aux étudiants de fumer sur le terrain de l'école.
+419353	Tu as fait tes devoirs ?
+427287	Qu'est-ce qui t'a décidé à arrêter de fumer ?
+428788	Est-ce que la quantité des précipitations influence la croissance des cultures ?
+432446	Plus vite, plus haut, plus fort !
+439814	Je vous demande de vous arrêter !
+440742	En parlant de voyages, as-tu déjà visité New York ?
+442113	Bon voyage à toi !
+457993	À qui ceci importe-t-il ?
+458296	Avez-vous du temps demain après-midi ?
+460172	Où se trouve l'arrêt de bus pour le musée ?
+460689	Me donnerez-vous quelque chose à boire ?
+496938	Y a-t-il une différence quelconque entre ton idée et la sienne ?
+521598	Ce bureau est trop lourd pour que l'on puisse le soulever.
+528411	Ta sœur ne sait pas bien nager, si ?
+531070	Il a besoin de courir aussi vite ?
+539495	J'ai hoché la tête pour montrer que j'étais d'accord.
+549054	Mon nom est Tamako, et vous ?
+549137	Qui aime les insectes ?
+551480	Peux-tu m'accorder une faveur ?
+567250	Le petit-déjeuner est-il prêt ?
+567257	Le bain est-il prêt ?
+571857	Pouvez-vous passer à vingt-et-une heures ?
+585478	Tu étais avec quelqu'un ?
+690136	C'est vraiment un bon coup !
+700769	Mort aux phrases insipides, aux exemples fades et autres tournures banales !
+774316	Combien coûte une bière ?
+817425	Que veux-tu faire à l'avenir ?
+835496	Voudriez-vous bien faire une photo pour nous ?
+849498	Tu es un ami de Thomas, n'est-ce pas ?
+880845	Des promesses... toujours des promesses !
+919158	N'as-tu pas de batteur chez toi ?
+929005	Tu es tellement beau !
+932028	Y a-t-il une boîte aux lettres près d'ici ?
+950034	Ne te cure pas le nez !
+958354	Qu'est-ce que ça a à voir avec moi ?
+979863	Quelle heure est-il à Tokyo ?
+984528	Tu es un de ces idiots !
+987327	Et ton fils, il conduit, lui ?
+998633	Forgeons le glaive en araire !
+1011435	Ça ne me concerne pas !
+1037774	Quand cela te convient-il ?
+1045938	Vos parents étaient-ils à la maison ?
+1049638	Es-tu déjà allé à l'étranger ?
+1053557	Avez-vous trouvé ce livre intéressant ?
+1058616	Que devrais-je faire pour arrêter un hoquet ?
+1070978	Que font-elles de tout leur temps libre ?
+1076732	Vous êtes bonne cuisinière, non ?
+1078217	Le monde a-t-il besoin d'un nouvel ordre économique ?
+1138884	D'où venaient-ils ? Du lieu le plus prochain.
+1172360	Je suis sûr qu'il réussira le prochain examen.
+1185582	Est-ce là, la clef que tu cherches ?
+1306527	Qu'est-ce qu'il y a dans son havresac ?
+1388637	C'est la terre de mes ancêtres que tu foules de tes pieds !
+1701744	Regarde attentivement le plan de la ville.
+1942346	Je ne me moque pas d'eux.
+2101123	Ils n'accompagnent pas les enfants à l'école.
+2144347	Le train est sur le point d'arriver.
+2150756	Tu sais, je me suis bien amusée.
+2201998	J'avais des bouffées de chaleur.
+2231435	J'ai boycotté les marchandises de ce pays.

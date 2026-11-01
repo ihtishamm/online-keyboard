@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+690936	Lütfen cevabı bu kâğıt parçasına yazınız.
+1012255	Yeni bilgisayarın iyi çalışıyor mu?
+1034977	Bu ikinci el arabanın fiyatı makul.
+1037776	Futbol heyecan verici bir spordur.
+1057260	Tatil çok sıkıcı olmaya devam ediyor.
+1059272	Her şey için görgü kuralı vardır, hatta bir seks partisinin bile.
+1061683	İlk görüşte ona âşık oldun mu?
+1067505	Ben iki haftadır yeni projemiz hakkında düşünüyorum. Fakat iyi bir fikir sunamadım.
+1069844	Sana anlatacak o kadar çok şeyim var ki nereden başlayacağımı bilmiyorum.
+1070676	Askerler düşman ateşine maruz kaldı.
+1071114	Ben taslakta bazı değişiklikler yapmak istiyorum.
+1101174	John o üç yıl önceki adam değil.
+1119832	Ben böylesine pahalı bir restoranda yemek yemeği göze alamam.
+1213027	Güzel bir oda, değil mi?
+1223608	Masaru masum olduğunu iddia ediyor.
+1231645	Ben toplantıdan sonra John ile küçük bir sohbet yaptım.
+1261675	O bana çarptı, ona değil.
+1278340	Onu herhangi bir yere koyabilirsin.
+1283814	Bu kelime ne anlama geliyor?
+1288679	O, daha iyi günler gördü.
+1370833	Ne iş yaptığını bana bildir.
+1432159	Şu sekiz kırmızı elmayı bana verir misiniz lütfen?
+1461022	O, ona çok hızlı araba sürmemesini tavsiye etti.
+1461141	Onlar fabrikayı kapatmaya karar verdiler.
+1462122	Sana az önce aldığım arabayı göstereceğim.
+1463575	Bu motosikletin kaç para olduğunu bilmiyorum.
+1464937	Eski araban için onlar sana ne kadar verdiler?
+1467447	O onun kalmasını rica etti fakat o işe gitmek zorundaydı.
+1482264	O, her zaman zamanında gelir.
+1582855	İşinize daha fazla dikkat edin.
+1612027	Her gün farklı saatler çalışırım.
+1647409	Bana bir Time dergisi getirebilir misin?
+1651714	Dışarı gitmeyi evde kalmaya tercih ederim.
+1691859	Japon müziği ile ilgileniyor musun?
+1735200	Beyaz pirinci mi yoksa kahverengi pirinci mi tercih edersiniz?
+1743919	Bana bir şey yanlış gibi görünüyor.
+1763902	İnsanlar işbirliği yaptığında daha fazlasını elde ederler.
+1775825	Onun telefon numarasını bulmaya çalıştım.
+1791204	Kiliseler tüm ada üzerine inşa edilmiştir.
+1810204	Geçen yaz İngiltere'yi ziyaret etmiş olmalı.
+1826668	Onun etkisi tüm ülkeye yayılır.
+1852072	Yüzlerce manda göle doğru yöneldi.
+1921118	Köşede sola döndük ve kuzeye gittik.
+1975162	Sormadan arabamı almaya cüret etti.
+2115955	Sık sık başkalarına yardım eder.
+2197104	Benim yatak odam örümceklerle dolu.
+2449350	Gitme zamanının geldiğini düşünmüyor musun?
+2596490	Yasal varis bensem hakkımı almaya geleceğim.
+2777383	Şayet benim siteme banner'ını koymak istiyorsan,bana kodunu gönder.
+2926032	Fransızcada asla çok iyi olmadım.
+2955243	Neredeyse buradaki herkes Fransızca konuşabilir.
+2998716	Yarın bunu tekrar yapmak zorundayız.
+3069327	Bence Dünya'da insanlar öncelikle sevildiğini hissetmek istiyor.
+3072868	Burada hava güzel ve sıcak.
+3157051	Kışın en sevdiğin hobi hangisidir?
+3169332	Senin gibi olmasa bile en azından biraz daha kibar olmayı deneyebilirsin.
+3333032	Birçok genç erkek, aynı hataları işleme eğilimindedir.
+3445174	İki adam bir barda içiyordu.
+3457198	Doktor Smith'in birçok hastası var.
+3573548	Daha yapacak çok iş var.
+3588475	Japonya'nın pirinç piyasası ithalata kapalıdır.
+3589307	Bu insanlar dünya barışına çok büyük katkı sağladı.
+3652369	Bazı cookie'ler kullanıcıların sabit disklerinde süresiz olarak kaydedilir.
+3657634	Ben seninim sen de benim.
+3661729	Çirkin biri, kendini güzel göstermek için, güzelliğin tanımını bile değiştirmeye kalkabilir.
+3685711	Dün burada olamadığım için üzgünüm.
+3759333	Tomas neredeyse hiç kitap okumaz.
+3760943	Ben de size saçma sapan sorular sormamanızı tavsiye ediyorum.
+3761882	Yorgun olduğun için, dinlensen iyi olur.
+3831624	Onun cinayetinden sorunlu asıl katil sensin!
+3925553	Onun için yemin eder misin?
+3933009	Onu birlikte yaparsak daha eğlenceli olur.
+3936803	Sen hiç sözlükte bu kelimeyi aradın mı?
+3939183	Beni tatlı bir kızla tanıştır, lütfen.
+3956572	Bak, bu konuda dürüst olmak istiyorum.
+3971136	Bunu güvenli bir yere koyacağım.
+4017627	Dedem üç yıl önce öldü.
+4025471	Kanadalılardan neden bu kadar nefret ediyorsun?
+4048675	Semptomlardaki azalmaya rağmen tedavisi mümkün değildi.
+4128692	Ne şarap, ne afyon, ne de tütün insanların yaşamları için gereklidir.

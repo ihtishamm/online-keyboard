@@ -1,0 +1,27 @@
+{
+  "slug": "romanian",
+  "code": "ro",
+  "order": 280,
+  "lang": "ro",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Romanian",
+    "native": "Română"
+  },
+  "aliases": ["Moldovan"],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["ro-easy", "ro-standard"],
+  "accents": "ăâîșțĂÂÎȘȚ„”",
+  "sample": "Mâine mergem la munte, dacă vremea ține.",
+  "voice": ["ro-RO"],
+  "wordList": true,
+  "translate": {
+    "google": "ro",
+    "bing": "ro",
+    "deepl": "ro"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot. ș and ț are the comma-below letters; the old cedilla forms (ş ţ) are read as them by the spell checker."
+}

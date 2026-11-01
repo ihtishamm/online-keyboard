@@ -1,0 +1,15 @@
+{
+  "source": "hr.xml.bz2",
+  "pages": 7701,
+  "sentences": 393373,
+  "repeatedSentencesSkipped": 32433,
+  "tokens": 4816259,
+  "distinctWords": 323799,
+  "wordsKept": 100000,
+  "nextWordHeads": 8301,
+  "text": "hr-train.txt",
+  "textSentences": 5486,
+  "textWeight": 83.67,
+  "heldOutPages": 175,
+  "heldOutSentences": 2000
+}

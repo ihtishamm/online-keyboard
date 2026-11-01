@@ -156,6 +156,66 @@ const LATIN_IMPORTS: readonly ImportSpec[] = [
   }),
 ];
 
+/** Wave 1 (plan item 7.7): [code, folder, the language's letters, "Easy accents" natively]. */
+const WAVE1: readonly (readonly [string, string, string, string])[] = [
+  ["de", "german", "äöüß", "Einfache Akzente"],
+  ["pt", "portuguese", "áâãàçéêíóôõú", "Acentos fáceis"],
+  ["tr", "turkish", "çğıöşüİ", "Kolay aksanlar"],
+  ["nl", "dutch", "áéëèíïóöúü", "Makkelijke accenten"],
+  ["ro", "romanian", "ăâîșț„”", "Accente ușoare"],
+  ["cs", "czech", "áčďéěíňóřšťúůýž", "Snadné diakritiky"],
+  ["hu", "hungarian", "áéíóöőúüű", "Könnyű ékezetek"],
+  ["sv", "swedish", "åäöé", "Enkla accenter"],
+  ["ca", "catalan", "àçéèíïòóúü·", "Accents fàcils"],
+  ["hr", "croatian", "čćđšž", "Lagani naglasci"],
+];
+const letters = (code: string) => WAVE1.find(([c]) => c === code)?.[2] ?? "";
+
+/** National layouts of the Wave 1 languages: [code, folder, id, file, en, native, Windows name]. */
+// prettier-ignore
+const WAVE1_NATIONAL: readonly (readonly [string, string, string, string, string, string, string])[] = [
+  ["de", "german", "germany", "de-t-k0-windows.xml", "QWERTZ (Germany)", "QWERTZ (Deutschland)", '"German"'],
+  ["de", "german", "swiss", "de-CH-t-k0-windows.xml", "QWERTZ (Switzerland)", "QWERTZ (Schweiz)", '"Swiss German"'],
+  ["pt", "portuguese", "brazil", "pt-t-k0-windows-var.xml", "Brazil (ABNT2)", "Brasil (ABNT2)", '"Portuguese (Brazil ABNT2)"'],
+  ["pt", "portuguese", "portugal", "pt-PT-t-k0-windows.xml", "Portugal", "Portugal", '"Portuguese"'],
+  ["tr", "turkish", "q", "tr-t-k0-windows.xml", "Turkish Q", "Türkçe Q", '"Turkish Q"'],
+  ["tr", "turkish", "f", "tr-t-k0-windows-legacy.xml", "Turkish F", "Türkçe F", '"Turkish F"'],
+  ["pl", "polish", "programmer", "pl-t-k0-windows-extended.xml", "Polish (Programmers)", "Polska (programisty)", '"Polish (Programmers)"'],
+  ["pl", "polish", "typist", "pl-t-k0-windows.xml", "Polish (214)", "Polska (maszynistki)", '"Polish (214)"'],
+  ["nl", "dutch", "standard", "nl-t-k0-windows.xml", "Dutch", "Nederlands", '"Dutch"'],
+  ["ro", "romanian", "standard", "ro-t-k0-windows.xml", "Romanian (Standard)", "Română (standard)", '"Romanian (Standard)"'],
+  ["cs", "czech", "qwertz", "cs-t-k0-windows.xml", "Czech (QWERTZ)", "Čeština (QWERTZ)", '"Czech"'],
+  ["cs", "czech", "qwerty", "cs-t-k0-windows-qwerty.xml", "Czech (QWERTY)", "Čeština (QWERTY)", '"Czech (QWERTY)"'],
+  ["hu", "hungarian", "standard", "hu-t-k0-windows.xml", "Hungarian", "Magyar", '"Hungarian"'],
+  ["sv", "swedish", "standard", "sv-t-k0-windows.xml", "Swedish", "Svenska", '"Swedish"'],
+  ["ca", "catalan", "spain", "es-t-k0-windows.xml", "Spain (Catalan)", "Espanya (català)", '"Spanish", the keyboard Catalan is typed on in Spain and Andorra,'],
+  ["hr", "croatian", "standard", "sl-t-k0-windows.xml", "Croatian", "Hrvatska", '"Croatian" (CLDR 43 has no Croatian file; Windows\' Croatian and Slovenian layouts have the same keys, so this is the Slovenian one)'],
+];
+
+const WAVE1_IMPORTS: readonly ImportSpec[] = [
+  ...WAVE1.map(([code, folder, accents, native]) =>
+    latin({
+      code,
+      folder,
+      id: "easy",
+      file: US_INTL,
+      accents,
+      name: { en: "Easy accents", native },
+    }),
+  ),
+  ...WAVE1_NATIONAL.map(([code, folder, id, file, en, native, source]) =>
+    latin({
+      code,
+      folder,
+      id,
+      file: `cldr/${file}`,
+      accents: code === "pl" ? "ąćęłńóśźż" : letters(code),
+      name: { en, native },
+      source,
+    }),
+  ),
+];
+
 export const IMPORTS: readonly ImportSpec[] = [
   {
     out: "arabic/standard.json",
@@ -348,6 +408,7 @@ export const IMPORTS: readonly ImportSpec[] = [
     },
   },
   ...LATIN_IMPORTS,
+  ...WAVE1_IMPORTS,
 ];
 
 /** Characters worth a long press: letters and marks, not ASCII punctuation or digits. */

@@ -1,0 +1,26 @@
+{
+  "slug": "croatian",
+  "code": "hr",
+  "order": 330,
+  "lang": "hr",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Croatian",
+    "native": "Hrvatski"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["hr-easy", "hr-standard"],
+  "accents": "čćđšžČĆĐŠŽ",
+  "sample": "Sutra idemo na more, ako bude sunčano i toplo.",
+  "voice": ["hr-HR"],
+  "wordList": true,
+  "translate": {
+    "google": "hr",
+    "bing": "hr"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot. The Croatian layout is CLDR's Slovenian one: Windows gives the two the same keys, and CLDR 43 has no Croatian file."
+}
