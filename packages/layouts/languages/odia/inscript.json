@@ -1,0 +1,257 @@
+{
+  "id": "or-inscript",
+  "lang": "or",
+  "script": "Orya",
+  "dir": "ltr",
+  "name": {
+    "en": "InScript",
+    "native": "ଇନସ\u0B4Dକ\u0B4Dର\u0B3Fପ\u0B4Dଟ"
+  },
+  "source": "Windows \"Odia\" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).",
+  "keys": {
+    "Digit1": {
+      "n": "1",
+      "ag": "୧",
+      "sag": "\u200D"
+    },
+    "Digit2": {
+      "n": "2",
+      "ag": "୨",
+      "sag": "\u200C"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "\u0B4Dର",
+      "ag": "୩"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "ର\u0B4D",
+      "ag": "୪",
+      "sag": "₹"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "ଜ\u0B4Dଞ",
+      "ag": "୫"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "ତ\u0B4Dର",
+      "ag": "୬"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "କ\u0B4Dଷ",
+      "ag": "୭"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "ଶ\u0B4Dର",
+      "ag": "୮"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "(",
+      "ag": "୯"
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")",
+      "ag": "୦"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "ଃ"
+    },
+    "Equal": {
+      "n": "\u0B43",
+      "s": "ଋ",
+      "ag": "\u0B44",
+      "sag": "ୠ"
+    },
+    "KeyQ": {
+      "n": "ୌ",
+      "s": "ଔ"
+    },
+    "KeyW": {
+      "n": "ୈ",
+      "s": "ଐ"
+    },
+    "KeyE": {
+      "n": "ା",
+      "s": "ଆ"
+    },
+    "KeyR": {
+      "n": "ୀ",
+      "s": "ଈ",
+      "ag": "\u0B63",
+      "sag": "ୡ"
+    },
+    "KeyT": {
+      "n": "\u0B42",
+      "s": "ଊ"
+    },
+    "KeyY": {
+      "n": "ବ",
+      "s": "ଭ"
+    },
+    "KeyU": {
+      "n": "ହ",
+      "s": "ଙ"
+    },
+    "KeyI": {
+      "n": "ଗ",
+      "s": "ଘ"
+    },
+    "KeyO": {
+      "n": "ଦ",
+      "s": "ଧ"
+    },
+    "KeyP": {
+      "n": "ଜ",
+      "s": "ଝ"
+    },
+    "BracketLeft": {
+      "n": "ଡ",
+      "s": "ଢ",
+      "ag": "ଡ\u0B3C",
+      "sag": "ଢ\u0B3C"
+    },
+    "BracketRight": {
+      "n": "\u0B3C",
+      "s": "ଞ"
+    },
+    "KeyA": {
+      "n": "ୋ",
+      "s": "ଓ"
+    },
+    "KeyS": {
+      "n": "େ",
+      "s": "ଏ"
+    },
+    "KeyD": {
+      "n": "\u0B4D",
+      "s": "ଅ"
+    },
+    "KeyF": {
+      "n": "\u0B3F",
+      "s": "ଇ",
+      "ag": "\u0B62",
+      "sag": "ଌ"
+    },
+    "KeyG": {
+      "n": "\u0B41",
+      "s": "ଉ"
+    },
+    "KeyH": {
+      "n": "ପ",
+      "s": "ଫ"
+    },
+    "KeyJ": {
+      "n": "ର"
+    },
+    "KeyK": {
+      "n": "କ",
+      "s": "ଖ"
+    },
+    "KeyL": {
+      "n": "ତ",
+      "s": "ଥ"
+    },
+    "Semicolon": {
+      "n": "ଚ",
+      "s": "ଛ"
+    },
+    "Quote": {
+      "n": "ଟ",
+      "s": "ଠ"
+    },
+    "KeyZ": {
+      "n": "ୟ",
+      "s": "ୱ"
+    },
+    "KeyX": {
+      "n": "ଂ",
+      "s": "\u0B01",
+      "ag": "୰"
+    },
+    "KeyC": {
+      "n": "ମ",
+      "s": "ଣ"
+    },
+    "KeyV": {
+      "n": "ନ"
+    },
+    "KeyB": {
+      "n": "ୱ",
+      "ag": "ଵ"
+    },
+    "KeyN": {
+      "n": "ଲ",
+      "s": "ଳ"
+    },
+    "KeyM": {
+      "n": "ସ",
+      "s": "ଶ"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "ଷ"
+    },
+    "Period": {
+      "n": ".",
+      "s": "।",
+      "ag": "॥",
+      "sag": "ଽ"
+    },
+    "Slash": {
+      "n": "ୟ",
+      "s": "ଯ",
+      "sag": "ଯ\u0B3C"
+    }
+  },
+  "longpress": {
+    "Digit1": ["\u200D"],
+    "Digit2": ["\u200C"],
+    "Digit3": ["\u0B4Dର"],
+    "Digit4": ["ର\u0B4D", "₹"],
+    "Digit5": ["ଜ\u0B4Dଞ"],
+    "Digit6": ["ତ\u0B4Dର"],
+    "Digit7": ["କ\u0B4Dଷ"],
+    "Digit8": ["ଶ\u0B4Dର"],
+    "Minus": ["ଃ"],
+    "Equal": ["ଋ", "\u0B44", "ୠ"],
+    "KeyQ": ["ଔ"],
+    "KeyW": ["ଐ"],
+    "KeyE": ["ଆ"],
+    "KeyR": ["ଈ", "\u0B63", "ୡ"],
+    "KeyT": ["ଊ"],
+    "KeyY": ["ଭ"],
+    "KeyU": ["ଙ"],
+    "KeyI": ["ଘ"],
+    "KeyO": ["ଧ"],
+    "KeyP": ["ଝ"],
+    "BracketLeft": ["ଢ", "ଡ\u0B3C", "ଢ\u0B3C"],
+    "BracketRight": ["ଞ"],
+    "KeyA": ["ଓ"],
+    "KeyS": ["ଏ"],
+    "KeyD": ["ଅ"],
+    "KeyF": ["ଇ", "\u0B62", "ଌ"],
+    "KeyG": ["ଉ"],
+    "KeyH": ["ଫ"],
+    "KeyK": ["ଖ"],
+    "KeyL": ["ଥ"],
+    "Semicolon": ["ଛ"],
+    "Quote": ["ଠ"],
+    "KeyZ": ["ୱ"],
+    "KeyX": ["\u0B01", "୰"],
+    "KeyC": ["ଣ"],
+    "KeyB": ["ଵ"],
+    "KeyN": ["ଳ"],
+    "KeyM": ["ଶ"],
+    "Comma": ["ଷ"],
+    "Period": ["।", "॥", "ଽ"],
+    "Slash": ["ଯ", "ଯ\u0B3C"]
+  }
+}

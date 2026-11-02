@@ -1,0 +1,10 @@
+{
+  "source": "maiwiki.xml.bz2",
+  "pages": 15282,
+  "sentences": 81119,
+  "repeatedSentencesSkipped": 63407,
+  "tokens": 991744,
+  "distinctWords": 102161,
+  "wordsKept": 27181,
+  "nextWordHeads": 6467
+}

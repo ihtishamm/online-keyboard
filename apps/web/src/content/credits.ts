@@ -3,7 +3,7 @@ import type { Language } from "@okb/layouts";
 /**
  * What each language's pages credit in the footer (CC BY-SA 4.0 attribution): the Wikipedia
  * its word list was built from, Tatoeba where everyday sentences were counted in too (Latin
- * languages, CC BY 2.0 FR), and Dakshina where its chat spellings come from there.
+ * languages, CC BY 2.0 FR), and Dakshina or Aksharantar where its chat spellings come from.
  */
 const DICTIONARIES = import.meta.glob("../../../../packages/dictionaries/data/*/dict.txt");
 const HAS_DICTIONARY = new Set(Object.keys(DICTIONARIES).map((p) => p.split("/").at(-2)!));
@@ -26,7 +26,10 @@ const WIKI_NAMES: Readonly<Record<string, string>> = {
   pnb: "Western Punjabi",
   bn: "Bengali",
   pa: "Punjabi",
+  kok: "Goan Konkani",
 };
+/** Wikipedia's subdomain, where it differs from the language's code. */
+const WIKI_CODES: Readonly<Record<string, string>> = { kok: "gom" };
 /** Languages whose chat spellings come from Dakshina (see data/<code>/chat.tsv). */
 export const DAKSHINA: ReadonlySet<string> = new Set([
   "hi",
@@ -41,14 +44,17 @@ export const DAKSHINA: ReadonlySet<string> = new Set([
   "ml",
   "si",
 ]);
+/** Languages whose chat spellings come from AI4Bharat's Aksharantar (CC BY). */
+export const AKSHARANTAR: ReadonlySet<string> = new Set(["ne", "or", "as", "sa", "kok", "mai"]);
 
 export function creditsFor(language: Language) {
   const { code } = language;
   return {
     wikipedia: HAS_DICTIONARY.has(code)
-      ? { name: WIKI_NAMES[code] ?? language.name.en, code }
+      ? { name: WIKI_NAMES[code] ?? language.name.en, code: WIKI_CODES[code] ?? code }
       : undefined,
     dakshina: DAKSHINA.has(code),
+    aksharantar: AKSHARANTAR.has(code),
     tatoeba: HAS_TATOEBA.has(code),
   };
 }

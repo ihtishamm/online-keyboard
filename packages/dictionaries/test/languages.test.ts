@@ -26,6 +26,12 @@ const SLUG: Record<string, string> = {
   kn: "kannada",
   ml: "malayalam",
   si: "sinhala",
+  ne: "nepali",
+  or: "odia",
+  as: "assamese",
+  sa: "sanskrit",
+  kok: "konkani",
+  mai: "maithili",
   es: "spanish",
   fr: "french",
   it: "italian",
@@ -113,12 +119,23 @@ describe("text rules", () => {
   it("Wave 2 Indic: each script's words, Malayalam chillus atomic, Sinhala joiners kept", () => {
     expect(tokenize("தமிழ் என் தாய்மொழி.", TEXT_RULES.ta!)).toEqual(["தமிழ்", "என்", "தாய்மொழி"]);
     expect(tokenize("ਪੰਜਾਬੀ ਮੇਰੀ ਮਾਂ ਬੋਲੀ ਹੈ।", TEXT_RULES.pa!)).toHaveLength(5);
-    expect(norm("ml", "അവന്‍")).toBe("അവൻ");
-    expect(norm("si", "ප්‍රදේශය")).toBe("ප්‍රදේශය");
+    expect(norm("ml", "അവന്\u200D")).toBe("അവൻ");
+    expect(norm("si", "ප්\u200Dරදේශය")).toBe("ප්\u200Dරදේශය");
     expect(norm("te", "తెలుగు")).toBe("తెలుగు");
     expect(norm("kn", "ತెలుగు")).toBeNull(); // a Telugu letter inside
     expect(norm("gu", "ગુજરાતી")).toBe("ગુજરાતી");
     expect(norm("mr", "बाळ")).toBe("बाळ");
+  });
+
+  it("Wave 2 batch 2: Odia and Assamese words, Devanagari for Nepali, Sanskrit, Konkani, Maithili", () => {
+    expect(tokenize("ଓଡ଼ିଆ ମୋର ମାତୃଭାଷା।", TEXT_RULES.or!)).toHaveLength(3);
+    expect(tokenize("অসমীয়া মোৰ মাতৃভাষা।", TEXT_RULES.as!)).toHaveLength(3);
+    expect(norm("as", "রাজ্য")).toBe("ৰাজ্য");
+    expect(norm("sa", "सोऽहम्")).toBe("सोऽहम्");
+    expect(norm("ne", "नेपाली")).toBe("नेपाली");
+    expect(norm("kok", "कोंकणी")).toBe("कोंकणी");
+    expect(norm("mai", "मैथिली")).toBe("मैथिली");
+    expect(TEXT_RULES.kok!.wiki).toBe("gomwiki");
   });
 
   it("Latin: words keep case and accents, stray single letters are not words", () => {

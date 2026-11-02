@@ -162,6 +162,12 @@ const ALPHABETS: Record<string, string> = {
   "kn-inscript": "ಅಆಇಈಉಊಋಎಏಐಒಓಔಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಲಳವಶಷಸಹ",
   "ml-inscript": "അആഇഈഉഊഋഎഏഐഒഓഔകഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരറലളഴവശഷസഹ",
   "si-wijesekara": "අආඇඈඉඊඋඌඑඒඔඕකඛගඝඞඟචඡජඣඤටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ",
+  "ne-traditional": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
+  "or-inscript": "ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯରଲଳଶଷସହୟ",
+  "as-inscript": "অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযৰলৱশষসহৎ",
+  "sa-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
+  "kok-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळ",
+  "mai-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
 };
 
 /** Golden words typed on a US keyboard. */
@@ -184,6 +190,12 @@ const GOLDEN: [layoutId: string, keys: string, expected: string][] = [
   ["kn-inscript", "kvdv[", "ಕನ್ನಡ"],
   ["ml-inscript", "cn/eNx", "മലയാളം"],
   ["si-wijesekara", "isxy,", "සිංහල"],
+  ["ne-traditional", "g]kfnL", "नेपाली"],
+  ["or-inscript", "A[]fE", "ଓଡ\u0B3Cିଆ"],
+  ["as-inscript", "Dmcr/e", "অসমীয\u09BCা"],
+  ["sa-inscript", "mxmdk=lcd", "संस्कृतम्"],
+  ["kok-inscript", "kaxkCr", "कोंकणी"],
+  ["mai-inscript", "cwLfnr", "मैथिली"],
 ];
 
 describe("regional language pack", () => {

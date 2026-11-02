@@ -31,15 +31,15 @@ export const MR_ROMAN: TranslitScheme = {
     { in: "y", at: "end", prev: "C", out: "ी:0.3" },
 
     // ----- nasals: Marathi writes the anusvara before most consonants (अंचल, गुंगी) -----
-    { in: "n", next: "C", out: "ं:0.1" },
-    { in: "m", next: "C", out: "ं:0.5" },
-    { in: "n", at: "end", prev: "V", out: "ं:0.3" },
-    { in: "ri", prev: "C", out: "ृ:0.5" },
-    { in: "ru", prev: "C", out: "ृ:0.5" },
+    { in: "n", next: "C", out: "\u0902:0.1" },
+    { in: "m", next: "C", out: "\u0902:0.5" },
+    { in: "n", at: "end", prev: "V", out: "\u0902:0.3" },
+    { in: "ri", prev: "C", out: "\u0943:0.5" },
+    { in: "ru", prev: "C", out: "\u0943:0.5" },
     { in: "ri", at: "start", out: "ऋ:0.8" },
 
     ...abugidaRules({
-      virama: "्",
+      virama: "\u094D",
       inherentCost: 0.4,
       consonants: [
         ["k", "क"],
@@ -80,12 +80,17 @@ export const MR_ROMAN: TranslitScheme = {
         { in: "i", independent: "इ ई:0.6", sign: "ि ी:0.4", finalSign: "ी ि:0.6" },
         { in: "ee", independent: "ई", sign: "ी" },
         { in: "ii", independent: "ई", sign: "ी" },
-        { in: "u", independent: "उ ऊ:0.6", sign: "ु ू:0.5", finalSign: "ू ु:0.3" },
-        { in: "oo", independent: "ऊ", sign: "ू ु:0.6" },
-        { in: "uu", independent: "ऊ", sign: "ू" },
-        { in: "e", independent: "ए", sign: "े" },
-        { in: "ai", independent: "ऐ", sign: "ै े:0.6" },
-        { in: "ae", independent: "ऐ:0.3 ए", sign: "ै:0.3 े:0.3" },
+        {
+          in: "u",
+          independent: "उ ऊ:0.6",
+          sign: "\u0941 \u0942:0.5",
+          finalSign: "\u0942 \u0941:0.3",
+        },
+        { in: "oo", independent: "ऊ", sign: "\u0942 \u0941:0.6" },
+        { in: "uu", independent: "ऊ", sign: "\u0942" },
+        { in: "e", independent: "ए", sign: "\u0947" },
+        { in: "ai", independent: "ऐ", sign: "\u0948 \u0947:0.6" },
+        { in: "ae", independent: "ऐ:0.3 ए", sign: "\u0948:0.3 \u0947:0.3" },
         { in: "o", independent: "ओ", sign: "ो" },
         { in: "au", independent: "औ", sign: "ौ" },
         { in: "ou", independent: "औ", sign: "ौ" },
@@ -93,7 +98,7 @@ export const MR_ROMAN: TranslitScheme = {
     }),
   ],
   // Hurried spellings: "ahe" आहे is spelled out; "nhi" नाही is not.
-  omitted: "ा:1.6 ु:1.8 ि:2 ी:2 ं:1.4 े:2.2",
+  omitted: "ा:1.6 \u0941:1.8 ि:2 ी:2 \u0902:1.4 \u0947:2.2",
   capitals: { T: "ट", D: "ड", N: "ण", L: "ळ", S: "ष" },
   words: [
     ["aahe ahe", "आहे"],

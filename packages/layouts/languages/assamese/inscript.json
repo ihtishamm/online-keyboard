@@ -1,0 +1,233 @@
+{
+  "id": "as-inscript",
+  "lang": "as",
+  "script": "Beng",
+  "dir": "ltr",
+  "name": {
+    "en": "InScript",
+    "native": "ইনস\u09CDক\u09CDৰিপ\u09CDট"
+  },
+  "source": "Windows \"Assamese - INSCRIPT\" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free). ৎ added on Shift+J, as on Bangla InScript.",
+  "keys": {
+    "Backquote": {
+      "n": "॥"
+    },
+    "Digit1": {
+      "n": "১",
+      "s": "!",
+      "sag": "\u200D"
+    },
+    "Digit2": {
+      "n": "২",
+      "s": "@",
+      "sag": "\u200C"
+    },
+    "Digit3": {
+      "n": "৩",
+      "s": "\u09CDৰ"
+    },
+    "Digit4": {
+      "n": "৪",
+      "s": "ৰ\u09CD",
+      "sag": "₹"
+    },
+    "Digit5": {
+      "n": "৫",
+      "s": "জ\u09CDঞ"
+    },
+    "Digit6": {
+      "n": "৬",
+      "s": "ত\u09CDৰ"
+    },
+    "Digit7": {
+      "n": "৭",
+      "s": "ক\u09CDষ"
+    },
+    "Digit8": {
+      "n": "৮",
+      "s": "শ\u09CDৰ"
+    },
+    "Digit9": {
+      "n": "৯",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "০",
+      "s": ")"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "ঃ"
+    },
+    "Equal": {
+      "n": "\u09C3",
+      "s": "ঋ"
+    },
+    "KeyQ": {
+      "n": "ৌ",
+      "s": "ঔ"
+    },
+    "KeyW": {
+      "n": "ৈ",
+      "s": "ঐ"
+    },
+    "KeyE": {
+      "n": "া",
+      "s": "আ"
+    },
+    "KeyR": {
+      "n": "ী",
+      "s": "ঈ"
+    },
+    "KeyT": {
+      "n": "\u09C2",
+      "s": "ঊ"
+    },
+    "KeyY": {
+      "n": "ব",
+      "s": "ভ"
+    },
+    "KeyU": {
+      "n": "হ",
+      "s": "ঙ"
+    },
+    "KeyI": {
+      "n": "গ",
+      "s": "ঘ"
+    },
+    "KeyO": {
+      "n": "দ",
+      "s": "ধ"
+    },
+    "KeyP": {
+      "n": "জ",
+      "s": "ঝ"
+    },
+    "BracketLeft": {
+      "n": "ড",
+      "s": "ঢ"
+    },
+    "BracketRight": {
+      "n": "\u09BC",
+      "s": "ঞ"
+    },
+    "KeyA": {
+      "n": "ো",
+      "s": "ও"
+    },
+    "KeyS": {
+      "n": "ে",
+      "s": "এ"
+    },
+    "KeyD": {
+      "n": "\u09CD",
+      "s": "অ"
+    },
+    "KeyF": {
+      "n": "ি",
+      "s": "ই"
+    },
+    "KeyG": {
+      "n": "\u09C1",
+      "s": "উ"
+    },
+    "KeyH": {
+      "n": "প",
+      "s": "ফ"
+    },
+    "KeyJ": {
+      "n": "ৰ",
+      "s": "ৎ"
+    },
+    "KeyK": {
+      "n": "ক",
+      "s": "খ"
+    },
+    "KeyL": {
+      "n": "ত",
+      "s": "থ"
+    },
+    "Semicolon": {
+      "n": "চ",
+      "s": "ছ"
+    },
+    "Quote": {
+      "n": "ট",
+      "s": "ঠ"
+    },
+    "KeyX": {
+      "n": "ং",
+      "s": "\u0981"
+    },
+    "KeyC": {
+      "n": "ম",
+      "s": "ণ"
+    },
+    "KeyV": {
+      "n": "ন"
+    },
+    "KeyB": {
+      "n": "ৱ"
+    },
+    "KeyN": {
+      "n": "ল"
+    },
+    "KeyM": {
+      "n": "স",
+      "s": "শ"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "ষ"
+    },
+    "Period": {
+      "n": ".",
+      "s": "।"
+    },
+    "Slash": {
+      "n": "য\u09BC",
+      "s": "য"
+    }
+  },
+  "longpress": {
+    "Digit1": ["\u200D"],
+    "Digit2": ["\u200C"],
+    "Digit3": ["\u09CDৰ"],
+    "Digit4": ["ৰ\u09CD", "₹"],
+    "Digit5": ["জ\u09CDঞ"],
+    "Digit6": ["ত\u09CDৰ"],
+    "Digit7": ["ক\u09CDষ"],
+    "Digit8": ["শ\u09CDৰ"],
+    "Minus": ["ঃ"],
+    "Equal": ["ঋ"],
+    "KeyQ": ["ঔ"],
+    "KeyW": ["ঐ"],
+    "KeyE": ["আ"],
+    "KeyR": ["ঈ"],
+    "KeyT": ["ঊ"],
+    "KeyY": ["ভ"],
+    "KeyU": ["ঙ"],
+    "KeyI": ["ঘ"],
+    "KeyO": ["ধ"],
+    "KeyP": ["ঝ"],
+    "BracketLeft": ["ঢ"],
+    "BracketRight": ["ঞ"],
+    "KeyA": ["ও"],
+    "KeyS": ["এ"],
+    "KeyD": ["অ"],
+    "KeyF": ["ই"],
+    "KeyG": ["উ"],
+    "KeyH": ["ফ"],
+    "KeyJ": ["ৎ"],
+    "KeyK": ["খ"],
+    "KeyL": ["থ"],
+    "Semicolon": ["ছ"],
+    "Quote": ["ঠ"],
+    "KeyX": ["\u0981"],
+    "KeyC": ["ণ"],
+    "KeyM": ["শ"],
+    "Comma": ["ষ"],
+    "Period": ["।"],
+    "Slash": ["য"]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "scheme": "kok-roman",
+  "source": "Aksharantar test split (frequent words)",
+  "pairs": 1000,
+  "top1": 0.48,
+  "top5": 0.552,
+  "messageWords": 70,
+  "correctionsPer10Words": 2.86,
+  "beta": true
+}

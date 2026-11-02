@@ -15,7 +15,7 @@ export const KN_ROMAN: TranslitScheme = {
   splitCost: 1,
   rules: [
     // i then a is written i + ya ("asia").
-    { in: "ia", prev: "C", out: "ಿಯಾ:0.2 ಿಯ:0.2" },
+    { in: "ia", prev: "C", out: "\u0CBFಯಾ:0.2 \u0CBFಯ:0.2" },
     { in: "ksh", out: "ಕ್ಷ" },
     { in: "gn", out: "ಜ್ಞ:0.3" },
     { in: "jn", out: "ಜ್ಞ:0.3" },
@@ -23,7 +23,7 @@ export const KN_ROMAN: TranslitScheme = {
     { in: "shr", out: "ಶ್ರ" },
     // "hegiddira" ಹೇಗಿದ್ದೀರ, "dodda" ದೊಡ್ಡ: a doubled d is written twice.
     { in: "dd", out: "ದ್ದ ಡ್ಡ:0.3" },
-    { in: "y", at: "end", prev: "C", out: "ಿ:0.3 ೀ:0.5" },
+    { in: "y", at: "end", prev: "C", out: "\u0CBF:0.3 ೀ:0.5" },
 
     // ----- nasals: the anusvara before a consonant -----
     { in: "n", next: "C", out: "ಂ:0.1" },
@@ -33,7 +33,7 @@ export const KN_ROMAN: TranslitScheme = {
     { in: "ru", prev: "C", out: "ೃ:0.6" },
 
     ...abugidaRules({
-      virama: "್",
+      virama: "\u0CCD",
       inherentCost: 0.8,
       finalVirama: 0.8,
       consonants: [
@@ -72,24 +72,24 @@ export const KN_ROMAN: TranslitScheme = {
       vowels: [
         { in: "a", independent: "ಅ ಆ:0.6", sign: "- ಾ:0.4", finalSign: "- ಾ:0.3" },
         { in: "aa", independent: "ಆ", sign: "ಾ" },
-        { in: "i", independent: "ಇ ಈ:0.6", sign: "ಿ ೀ:0.5" },
+        { in: "i", independent: "ಇ ಈ:0.6", sign: "\u0CBF ೀ:0.5" },
         { in: "ee", independent: "ಈ ಏ:0.3", sign: "ೀ ೇ:0.3" },
         { in: "ii", independent: "ಈ", sign: "ೀ" },
         { in: "u", independent: "ಉ ಊ:0.6", sign: "ು ೂ:0.5" },
         { in: "oo", independent: "ಊ ಓ:0.3", sign: "ೂ ೋ:0.3" },
         { in: "uu", independent: "ಊ", sign: "ೂ" },
-        { in: "e", independent: "ಎ ಏ:0.3", sign: "ೆ ೇ:0.3" },
+        { in: "e", independent: "ಎ ಏ:0.3", sign: "\u0CC6 ೇ:0.3" },
         { in: "ae", independent: "ಏ", sign: "ೇ" },
         { in: "ai", independent: "ಐ", sign: "ೈ" },
         { in: "ei", independent: "ಐ:0.4", sign: "ೈ:0.4" },
         { in: "o", independent: "ಒ ಓ:0.3", sign: "ೊ ೋ:0.3" },
         { in: "oa", independent: "ಓ", sign: "ೋ" },
-        { in: "au", independent: "ಔ", sign: "ೌ" },
-        { in: "ou", independent: "ಔ", sign: "ೌ" },
+        { in: "au", independent: "ಔ", sign: "\u0CCC" },
+        { in: "ou", independent: "ಔ", sign: "\u0CCC" },
       ],
     }),
   ],
-  omitted: "ಂ:1.4 ು:1.8 ಾ:2 ಿ:2",
+  omitted: "ಂ:1.4 ು:1.8 ಾ:2 \u0CBF:2",
   capitals: { T: "ಟ", D: "ಡ", N: "ಣ", L: "ಳ", S: "ಷ" },
   words: [
     ["namaskara namaskaara", "ನಮಸ್ಕಾರ"],

@@ -1,12 +1,15 @@
 import { describe, expect, it } from "vitest";
 import {
   ARABIC_SCRIPT,
+  ASSAMESE,
   BENGALI,
   DEVANAGARI,
   GUJARATI,
   GURMUKHI,
   KANNADA,
   MALAYALAM,
+  ODIA,
+  SANSKRIT,
   SINHALA,
   TAMIL,
   TELUGU,
@@ -94,6 +97,21 @@ describe("romanize: Wave 2 Indic scripts", () => {
   it("writes ISO 15919 short and long e and o", () => {
     expect(romanizeWord("எதோ", TAMIL, scholarly)).toBe("etō");
     expect(romanizeWord("ఏమి", TELUGU, scholarly)).toBe("ēmi");
+  });
+  it("keeps the final vowel in Odia and Sanskrit, and spells Odia ଡ଼ d", () => {
+    expect(word("ଘଣ୍ଟା", ODIA)).toBe("ghanta");
+    expect(word("ଭୋଗ", ODIA)).toBe("bhoga");
+    expect(word("କଢ଼ା", ODIA)).toBe("kadha");
+    expect(romanizeWord("ଓଡ଼ିଆ", ODIA, scholarly)).toBe("ōṛiā");
+    expect(word("रामः", SANSKRIT)).toBe("ramah");
+    expect(word("नेपाल", DEVANAGARI)).toBe("nepal");
+  });
+
+  it("spells Assamese sounds: x for স and শ, s for চ, its own ৰ and ৱ", () => {
+    expect(word("অসম", ASSAMESE)).toBe("oxom");
+    expect(word("চাকটো", ASSAMESE)).toBe("sakto");
+    expect(word("কুমাৰৰ", ASSAMESE)).toBe("kumaror");
+    expect(word("ৱাৰ্ড", ASSAMESE)).toBe("ward");
   });
 });
 

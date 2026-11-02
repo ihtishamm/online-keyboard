@@ -27,6 +27,12 @@ const PAGES = (
     ["kn-roman", "/kannada", "Kannada"],
     ["ml-roman", "/malayalam", "Malayalam"],
     ["si-roman", "/sinhala", "Sinhala"],
+    ["ne-roman", "/nepali", "Nepali"],
+    ["or-roman", "/odia", "Odia"],
+    ["as-roman", "/assamese", "Assamese"],
+    ["sa-roman", "/sanskrit", "Sanskrit"],
+    ["kok-roman", "/konkani", "Konkani"],
+    ["mai-roman", "/maithili", "Maithili"],
   ] as const
 ).map(([id, path, name]) => ({
   path,

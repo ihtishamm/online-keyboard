@@ -10,8 +10,8 @@ import { abugidaRules } from "./indic";
  * project from common usage.
  */
 
-const NUKTA = "਼";
-const ADDAK = "ੱ";
+const NUKTA = "\u0A3C";
+const ADDAK = "\u0A71";
 
 const CONSONANTS: readonly (readonly [string, string])[] = [
   ["k", "ਕ"],
@@ -75,8 +75,8 @@ export const PA_ROMAN: TranslitScheme = {
   rules: [
     ...addak(),
     // Subscript ਰ and ਹ: ਪ੍ਰ, ਖੜ੍ਹਨ.
-    { in: "r", prev: "C", out: "੍ਰ:0.3" },
-    { in: "h", prev: "C", out: "੍ਹ:0.6" },
+    { in: "r", prev: "C", out: "\u0A4Dਰ:0.3" },
+    { in: "h", prev: "C", out: "\u0A4Dਹ:0.6" },
     { in: "y", at: "end", prev: "C", out: "ੀ:0.3" },
     // "dhakiya" ਢਕਿਆ, "saheliyan" ਸਹੇਲੀਆਂ: Gurmukhi writes no ਯ between vowels.
     { in: "y", prev: "V", next: "V", out: "-:0.2" },
@@ -84,9 +84,9 @@ export const PA_ROMAN: TranslitScheme = {
     { in: "a", prev: "V", at: "end", out: "ਆ:0.1" },
 
     // ----- nasals: tippi after short vowels, bindi after long ones -----
-    { in: "n", next: "C", out: "ੰ:0.1 ਂ:0.2" },
-    { in: "m", next: "C", out: "ੰ:0.4 ਂ:0.6" },
-    { in: "n", at: "end", prev: "V", out: "ਂ:0.1 ੰ:0.3" },
+    { in: "n", next: "C", out: "\u0A70:0.1 \u0A02:0.2" },
+    { in: "m", next: "C", out: "\u0A70:0.4 \u0A02:0.6" },
+    { in: "n", at: "end", prev: "V", out: "\u0A02:0.1 \u0A70:0.3" },
     // -iaan, -ian, -aan: plural endings (ਕਾਪੀਆਂ, ਪੱਟੀਆਂ).
     { in: "an", at: "end", prev: "V", out: "ਆਂ:0.1" },
     { in: "an", at: "end", prev: "C", out: "ਾਂ:0.1" },
@@ -94,7 +94,7 @@ export const PA_ROMAN: TranslitScheme = {
     { in: "aan", at: "end", prev: "C", out: "ਾਂ" },
 
     ...abugidaRules({
-      virama: "੍",
+      virama: "\u0A4D",
       // Consonants seldom join: "karda" is ਕਰਦਾ, not ਕ੍ਰਦਾ.
       inherentCost: 0,
       consonants: CONSONANTS,
@@ -104,20 +104,25 @@ export const PA_ROMAN: TranslitScheme = {
         { in: "i", independent: "ਇ ਈ:0.5", sign: "ਿ ੀ:0.4", finalSign: "ੀ ਿ:0.6" },
         { in: "ee", independent: "ਈ", sign: "ੀ" },
         { in: "ii", independent: "ਈ", sign: "ੀ" },
-        { in: "u", independent: "ਉ ਊ:0.6", sign: "ੁ ੂ:0.4", finalSign: "ੂ ੁ:0.4" },
-        { in: "oo", independent: "ਊ", sign: "ੂ ੁ:0.6" },
-        { in: "uu", independent: "ਊ", sign: "ੂ" },
-        { in: "e", independent: "ਏ ਇ:0.8", sign: "ੇ" },
-        { in: "ai", independent: "ਐ", sign: "ੈ" },
-        { in: "ae", independent: "ਐ ਏ:0.3", sign: "ੈ ੇ:0.3" },
-        { in: "ei", independent: "ਐ ਏ", sign: "ੈ ੇ" },
-        { in: "o", independent: "ਓ", sign: "ੋ ੌ:0.6" },
-        { in: "au", independent: "ਔ", sign: "ੌ" },
-        { in: "ou", independent: "ਔ", sign: "ੌ" },
+        {
+          in: "u",
+          independent: "ਉ ਊ:0.6",
+          sign: "\u0A41 \u0A42:0.4",
+          finalSign: "\u0A42 \u0A41:0.4",
+        },
+        { in: "oo", independent: "ਊ", sign: "\u0A42 \u0A41:0.6" },
+        { in: "uu", independent: "ਊ", sign: "\u0A42" },
+        { in: "e", independent: "ਏ ਇ:0.8", sign: "\u0A47" },
+        { in: "ai", independent: "ਐ", sign: "\u0A48" },
+        { in: "ae", independent: "ਐ ਏ:0.3", sign: "\u0A48 \u0A47:0.3" },
+        { in: "ei", independent: "ਐ ਏ", sign: "\u0A48 \u0A47" },
+        { in: "o", independent: "ਓ", sign: "\u0A4B \u0A4C:0.6" },
+        { in: "au", independent: "ਔ", sign: "\u0A4C" },
+        { in: "ou", independent: "ਔ", sign: "\u0A4C" },
       ],
     }),
   ],
-  omitted: "ਾ:1.6 ੁ:1.8 ਿ:2 ੀ:2 ੰ:1.4 ਂ:1.4 ੇ:2.2",
+  omitted: "ਾ:1.6 \u0A41:1.8 ਿ:2 ੀ:2 \u0A70:1.4 \u0A02:1.4 \u0A47:2.2",
   capitals: { T: "ਟ", D: "ਡ", N: "ਣ", R: "ੜ" },
   words: [
     ["hai", "ਹੈ"],

@@ -94,37 +94,67 @@ function NON_LATIN(): Record<string, TypingCopy> {
     gu: {
       tutor: "ગુજરાતી ટાઇપિંગ ટ્યુટર",
       test: "ગુજરાતી ટાઇપિંગ ટેસ્ટ",
-      tip: `On InScript a vowel sign is typed after its consonant, even one written before it: ક and then િ (${key("gu-inscript", "િ")}) make કિ. The virama ્ (${key("gu-inscript", "્")}) joins consonants, and ળ is on ${key("gu-inscript", "ળ")}.`,
+      tip: `On InScript a vowel sign is typed after its consonant, even one written before it: ક and then િ (${key("gu-inscript", "િ")}) make કિ. The virama \u0ACD (${key("gu-inscript", "\u0ACD")}) joins consonants, and ળ is on ${key("gu-inscript", "ળ")}.`,
     },
     pa: {
       tutor: "ਪੰਜਾਬੀ ਟਾਈਪਿੰਗ ਟਿਊਟਰ",
       test: "ਪੰਜਾਬੀ ਟਾਈਪਿੰਗ ਟੈਸਟ",
-      tip: `The addak ੱ (${key("pa-inscript", "ੱ")}) comes before the letter it doubles: ਪ, ੱ, ਕ, ਾ make ਪੱਕਾ. The tippi ੰ is on ${key("pa-inscript", "ੰ")} and the bindi ਂ on ${key("pa-inscript", "ਂ")}.`,
+      tip: `The addak \u0A71 (${key("pa-inscript", "\u0A71")}) comes before the letter it doubles: ਪ, \u0A71, ਕ, ਾ make ਪੱਕਾ. The tippi \u0A70 is on ${key("pa-inscript", "\u0A70")} and the bindi \u0A02 on ${key("pa-inscript", "\u0A02")}.`,
     },
     ta: {
       tutor: "தமிழ் டைப்பிங் பயிற்சி",
       test: "தமிழ் டைப்பிங் டெஸ்ட்",
-      tip: `The pulli ் (${key("ta-inscript", "்")}) ends a consonant: க and ் make க். ${on("ta-inscript", "ழளற")}.`,
+      tip: `The pulli \u0BCD (${key("ta-inscript", "\u0BCD")}) ends a consonant: க and \u0BCD make க். ${on("ta-inscript", "ழளற")}.`,
     },
     te: {
       tutor: "తెలుగు టైపింగ్ ట్యూటర్",
       test: "తెలుగు టైపింగ్ టెస్ట్",
-      tip: `The virama ్ (${key("te-inscript", "్")}) joins consonants: క, ్, ష make క్ష. The anusvara ం is on ${key("te-inscript", "ం")}.`,
+      tip: `The virama \u0C4D (${key("te-inscript", "\u0C4D")}) joins consonants: క, \u0C4D, ష make క్ష. The anusvara ం is on ${key("te-inscript", "ం")}.`,
     },
     kn: {
       tutor: "ಕನ್ನಡ ಟೈಪಿಂಗ್ ಟ್ಯೂಟರ್",
       test: "ಕನ್ನಡ ಟೈಪಿಂಗ್ ಟೆಸ್ಟ್",
-      tip: `The virama ್ (${key("kn-inscript", "್")}) joins consonants: ನ, ್, ನ make ನ್ನ. The anusvara ಂ is on ${key("kn-inscript", "ಂ")} and ಳ on ${key("kn-inscript", "ಳ")}.`,
+      tip: `The virama \u0CCD (${key("kn-inscript", "\u0CCD")}) joins consonants: ನ, \u0CCD, ನ make ನ್ನ. The anusvara ಂ is on ${key("kn-inscript", "ಂ")} and ಳ on ${key("kn-inscript", "ಳ")}.`,
     },
     ml: {
       tutor: "മലയാളം ടൈപ്പിംഗ് ട്യൂട്ടർ",
       test: "മലയാളം ടൈപ്പിംഗ് ടെസ്റ്റ്",
-      tip: `Each chillu has its own key: ${on("ml-inscript", "ൻർൽൾ")}. The virama ് is on ${key("ml-inscript", "്")} and ഴ on ${key("ml-inscript", "ഴ")}.`,
+      tip: `Each chillu has its own key: ${on("ml-inscript", "ൻർൽൾ")}. The virama \u0D4D is on ${key("ml-inscript", "\u0D4D")} and ഴ on ${key("ml-inscript", "ഴ")}.`,
     },
     si: {
       tutor: "සිංහල ටයිපිං පුහුණුව",
       test: "සිංහල ටයිපිං පරීක්ෂණය",
-      tip: `On Wijesekara the al-lakuna ් (${key("si-wijesekara", "්")}) ends a consonant: ක and ් make ක්. The vowel sign ා is on ${key("si-wijesekara", "ා")}.`,
+      tip: `On Wijesekara the al-lakuna \u0DCA (${key("si-wijesekara", "\u0DCA")}) ends a consonant: ක and \u0DCA make ක්. The vowel sign ා is on ${key("si-wijesekara", "ා")}.`,
+    },
+    ne: {
+      tutor: "नेपाली टाइपिङ ट्युटर",
+      test: "नेपाली टाइपिङ टेस्ट",
+      tip: `On the traditional layout ा is on ${key("ne-traditional", "ा")} and ि on ${key("ne-traditional", "ि")}. Shift with a consonant key types its half form: क is ${key("ne-traditional", "क")}, so Shift with it types क्.`,
+    },
+    or: {
+      tutor: "ଓଡ଼ିଆ ଟାଇପିଂ ଟ୍ୟୁଟର",
+      test: "ଓଡ଼ିଆ ଟାଇପିଂ ଟେଷ୍ଟ",
+      tip: `On InScript a vowel sign is typed after its consonant, even one written before it: କ and then \u0B3F (${key("or-inscript", "\u0B3F")}) make କି. The halant \u0B4D (${key("or-inscript", "\u0B4D")}) joins consonants.`,
+    },
+    as: {
+      tutor: "অসমীয়া টাইপিং টিউটৰ",
+      test: "অসমীয়া টাইপিং পৰীক্ষা",
+      tip: `ৰ, Assamese's own ra, is on ${key("as-inscript", "ৰ")} and ৱ on ${key("as-inscript", "ৱ")}. A vowel sign is typed after its consonant: ক and then ি (${key("as-inscript", "ি")}) make কি.`,
+    },
+    sa: {
+      tutor: "संस्कृत टङ्कन शिक्षक",
+      test: "संस्कृत टङ्कन परीक्षा",
+      tip: `The visarga ः is on ${key("sa-inscript", "ः")} and the halant \u094D on ${key("sa-inscript", "\u094D")}: त and \u094D make त्, as at the end of भवेत्.`,
+    },
+    kok: {
+      tutor: "कोंकणी टायपिंग ट्यूटर",
+      test: "कोंकणी टायपिंग टेस्ट",
+      tip: `ळ is on ${key("kok-inscript", "ळ")}. A vowel sign is typed after its consonant, even one written before it: क and then ि (${key("kok-inscript", "ि")}) make कि.`,
+    },
+    mai: {
+      tutor: "मैथिली टाइपिंग ट्यूटर",
+      test: "मैथिली टाइपिंग टेस्ट",
+      tip: `The avagraha ऽ (कऽ) is on ${key("mai-inscript", "ऽ")}, and the chandrabindu \u0901 (अहाँ) on ${key("mai-inscript", "\u0901")}.`,
     },
   };
 }

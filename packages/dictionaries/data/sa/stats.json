@@ -1,0 +1,10 @@
+{
+  "source": "sawiki.xml.bz2",
+  "pages": 12915,
+  "sentences": 346443,
+  "repeatedSentencesSkipped": 61992,
+  "tokens": 2680498,
+  "distinctWords": 587816,
+  "wordsKept": 89448,
+  "nextWordHeads": 7552
+}

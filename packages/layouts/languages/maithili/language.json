@@ -1,0 +1,25 @@
+{
+  "slug": "maithili",
+  "code": "mai",
+  "order": 196,
+  "lang": "mai",
+  "script": "Deva",
+  "dir": "ltr",
+  "name": {
+    "en": "Maithili",
+    "native": "मैथिली"
+  },
+  "aliases": [],
+  "region": "south-asia",
+  "fonts": ["devanagari"],
+  "layouts": ["mai-roman", "mai-inscript"],
+  "sample": "मैथिली हमर मातृभाषा अछि।",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "mai",
+    "bing": "mai"
+  },
+  "tier": null,
+  "notes": "English letters first, as for Hindi (decision §11.1). No voice yet: the locale has not passed /voice-probe."
+}

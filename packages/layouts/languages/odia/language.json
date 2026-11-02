@@ -1,0 +1,25 @@
+{
+  "slug": "odia",
+  "code": "or",
+  "order": 192,
+  "lang": "or",
+  "script": "Orya",
+  "dir": "ltr",
+  "name": {
+    "en": "Odia",
+    "native": "ଓଡ଼ିଆ"
+  },
+  "aliases": ["Oriya"],
+  "region": "south-asia",
+  "fonts": ["oriya"],
+  "layouts": ["or-roman", "or-inscript"],
+  "sample": "ଓଡ଼ିଆ ମୋର ମାତୃଭାଷା।",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "or",
+    "bing": "or"
+  },
+  "tier": null,
+  "notes": "English letters first, as for Hindi (decision §11.1). No voice yet: the locale has not passed /voice-probe."
+}

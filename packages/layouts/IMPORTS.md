@@ -141,6 +141,83 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
   - Digit5.sag: none → `U+200C`
   - Digit6.sag: none → `₹`
 
+## or-inscript
+
+- **Output:** `languages/odia/inscript.json`
+- **Source:** `vendor/cldr/or-t-k0-windows.xml`. Windows "Odia" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 45 keys (n 45, s 40, ag 17, sag 9)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - Digit4.sag: none → `₹`
+
+## as-inscript
+
+- **Output:** `languages/assamese/inscript.json`
+- **Source:** `vendor/cldr/as-t-k0-windows.xml`. Windows "Assamese - INSCRIPT" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free). ৎ added on Shift+J, as on Bangla InScript.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 45 keys (n 45, s 41, sag 3)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - Digit4.sag: none → `₹`
+  - KeyJ.s: none → `ৎ`
+
+## sa-inscript
+
+- **Output:** `languages/sanskrit/inscript.json`
+- **Source:** `vendor/cldr/hi-t-k0-windows.xml`. Windows "Devanagari - INSCRIPT", from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 23, sag 13)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - Digit4.sag: none → `₹`
+
+## kok-inscript
+
+- **Output:** `languages/konkani/inscript.json`
+- **Source:** `vendor/cldr/hi-t-k0-windows.xml`. Windows "Devanagari - INSCRIPT", from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr. ॲ (Konkani loanwords: ॲटलास) added on Shift+AltGr+D, by अ.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 23, sag 14)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - Digit4.sag: none → `₹`
+  - KeyD.sag: none → `ॲ`
+
+## mai-inscript
+
+- **Output:** `languages/maithili/inscript.json`
+- **Source:** `vendor/cldr/hi-t-k0-windows.xml`. Windows "Devanagari - INSCRIPT", from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 23, sag 13)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - Digit4.sag: none → `₹`
+
+## ne-traditional
+
+- **Output:** `languages/nepali/traditional.json`
+- **Source:** `vendor/cldr/ne-t-k0-windows.xml`. Windows "Nepali" (the traditional typewriter layout), from Unicode CLDR 43 keyboard data (Unicode License v3). Its Ctrl+Shift layer (a browser shortcut) moved to Shift+AltGr: ौ, ई, ऐ and ओ on Q, O, P and ], which no other key types; its ASCII punctuation is left out (AltGr types the digits). ZWJ and ZWNJ added on Shift+AltGr+1 and 2.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 47 keys (n 47, s 47, ag 14, sag 6)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - KeyQ.sag: none → `U+094C`
+  - KeyO.sag: none → `ई`
+  - KeyP.sag: none → `ऐ`
+  - BracketRight.sag: none → `ओ`
+
 ## si-wijesekara
 
 - **Output:** `languages/sinhala/wijesekara.json`

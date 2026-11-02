@@ -359,9 +359,11 @@ export const IMPORTS: readonly ImportSpec[] = [
       ["gu", "gujarati", "Gujr", "Gujarati", "ઇનસ્ક્રિપ્ટ"],
       ["pa", "punjabi", "Guru", "Punjabi", "ਇਨਸਕ੍ਰਿਪਟ"],
       ["ta", "tamil", "Taml", "Tamil", "இன்ஸ்கிரிப்ட்"],
-      ["te", "telugu", "Telu", "Telugu", "ఇన్‌స్క్రిప్ట్"],
-      ["kn", "kannada", "Knda", "Kannada", "ಇನ್‌ಸ್ಕ್ರಿಪ್ಟ್"],
+      ["te", "telugu", "Telu", "Telugu", "ఇన్\u200Cస్క్రిప్ట్"],
+      ["kn", "kannada", "Knda", "Kannada", "ಇನ್\u200Cಸ್ಕ್ರಿಪ್ಟ್"],
       ["ml", "malayalam", "Mlym", "Malayalam", "ഇൻസ്ക്രിപ്റ്റ്"],
+      ["or", "odia", "Orya", "Odia", "ଇନସ୍କ୍ରିପ୍ଟ"],
+      ["as", "assamese", "Beng", "Assamese - INSCRIPT", "ইনস্ক্ৰিপ্ট"],
     ] as const
   ).map(([code, folder, script, windows, native]): ImportSpec => ({
     out: `${folder}/inscript.json`,
@@ -372,10 +374,60 @@ export const IMPORTS: readonly ImportSpec[] = [
       script,
       dir: "ltr",
       name: { en: "InScript", native },
-      source: `Windows "${windows}" (InScript), from ${CLDR_NOTE}. ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).`,
+      source:
+        `Windows "${windows}" (InScript), from ${CLDR_NOTE}. ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).` +
+        (code === "as" ? " ৎ added on Shift+J, as on Bangla InScript." : ""),
     },
-    patch: inscriptExtras,
+    patch: (keys) => {
+      inscriptExtras(keys);
+      if (code === "as") set(keys, "KeyJ", { s: "ৎ" });
+    },
   })),
+  // Sanskrit, Konkani and Maithili are typed on Windows "Devanagari - INSCRIPT", as Hindi is.
+  ...(
+    [
+      ["sa", "sanskrit"],
+      ["kok", "konkani"],
+      ["mai", "maithili"],
+    ] as const
+  ).map(([code, folder]): ImportSpec => ({
+    out: `${folder}/inscript.json`,
+    from: { cldr: "cldr/hi-t-k0-windows.xml" },
+    meta: {
+      id: `${code}-inscript`,
+      lang: code,
+      script: "Deva",
+      dir: "ltr",
+      name: { en: "InScript", native: "इनस्क्रिप्ट" },
+      source:
+        `Windows "Devanagari - INSCRIPT", from ${CLDR_NOTE}. ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr.` +
+        (code === "kok" ? " ॲ (Konkani loanwords: ॲटलास) added on Shift+AltGr+D, by अ." : ""),
+    },
+    patch: (keys) => {
+      inscriptExtras(keys);
+      if (code === "kok") set(keys, "KeyD", { sag: "ॲ" });
+    },
+  })),
+  {
+    out: "nepali/traditional.json",
+    from: { cldr: "cldr/ne-t-k0-windows.xml" },
+    meta: {
+      id: "ne-traditional",
+      lang: "ne",
+      script: "Deva",
+      dir: "ltr",
+      name: { en: "Traditional", native: "परम्परागत" },
+      source: `Windows "Nepali" (the traditional typewriter layout), from ${CLDR_NOTE}. Its Ctrl+Shift layer (a browser shortcut) moved to Shift+AltGr: ौ, ई, ऐ and ओ on Q, O, P and ], which no other key types; its ASCII punctuation is left out (AltGr types the digits). ZWJ and ZWNJ added on Shift+AltGr+1 and 2.`,
+    },
+    patch: (keys) => {
+      set(keys, "Digit1", { sag: "\u200D" });
+      set(keys, "Digit2", { sag: "\u200C" });
+      set(keys, "KeyQ", { sag: "\u094C" });
+      set(keys, "KeyO", { sag: "ई" });
+      set(keys, "KeyP", { sag: "ऐ" });
+      set(keys, "BracketRight", { sag: "ओ" });
+    },
+  },
   {
     out: "sinhala/wijesekara.json",
     from: { cldr: "cldr/si-t-k0-windows.xml" },

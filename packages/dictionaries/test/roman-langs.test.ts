@@ -37,6 +37,8 @@ const FULL = { top1: 0.85, top5: 0.97 };
 /** The bar for small languages; they stay Beta until they reach FULL. */
 const SMALL = { top1: 0.7, top5: 0.9 };
 const DAKSHINA = "Dakshina test split";
+/** Aksharantar's frequent words (AK-Freq); its named entities are left out. */
+const AKSHARANTAR = "Aksharantar test split (frequent words)";
 const OURS = "Likho set, not yet reviewed by a native speaker";
 export const TARGETS: readonly Target[] = [
   // Urdu's set predates the dev/test split; the README notes the rules were tuned on it.
@@ -61,6 +63,13 @@ export const TARGETS: readonly Target[] = [
   { code: "kn", scheme: "kn-roman", source: DAKSHINA, ...FULL, beta: true },
   { code: "ml", scheme: "ml-roman", source: DAKSHINA, ...FULL, beta: true },
   { code: "si", scheme: "si-roman", source: DAKSHINA, ...FULL, beta: true },
+  // Aksharantar languages: the held-out messages are ours, not yet reviewed by native speakers.
+  { code: "ne", scheme: "ne-roman", source: AKSHARANTAR, ...FULL, beta: true },
+  { code: "or", scheme: "or-roman", source: AKSHARANTAR, ...FULL, beta: true },
+  { code: "as", scheme: "as-roman", source: AKSHARANTAR, ...FULL, beta: true },
+  { code: "sa", scheme: "sa-roman", source: AKSHARANTAR, ...FULL, beta: true },
+  { code: "kok", scheme: "kok-roman", source: AKSHARANTAR, ...FULL, beta: true },
+  { code: "mai", scheme: "mai-roman", source: AKSHARANTAR, ...FULL, beta: true },
   // Chat Arabic and Persian are colloquial; the Wikipedia word lists are formal, so both
   // stay Beta until a word list with everyday spellings exists.
   { code: "ar", scheme: "ar-roman", source: OURS, ...FULL, beta: true },

@@ -36,6 +36,7 @@ interface Props {
   credits?: {
     wikipedia?: { name: string; code: string };
     dakshina?: boolean;
+    aksharantar?: boolean;
     tatoeba?: boolean;
   };
   /** Slug of the page's language, marked as current in the language picker. */
@@ -192,6 +193,19 @@ const arabicLogo = font === undefined || font === "nastaliq" || font === "naskh"
               CC BY-SA 4.0
             </a>
             {")"}
+            {credits.aksharantar && " and chat spellings from "}
+            {credits.aksharantar && (
+              <a class="underline" href="https://huggingface.co/datasets/ai4bharat/Aksharantar">
+                AI4Bharat Aksharantar
+              </a>
+            )}
+            {credits.aksharantar && " ("}
+            {credits.aksharantar && (
+              <a class="underline" href="https://creativecommons.org/about/cclicenses/">
+                CC BY
+              </a>
+            )}
+            {credits.aksharantar && ")"}
             {credits.tatoeba && " and everyday sentences from "}
             {credits.tatoeba && (
               <a class="underline" href="https://tatoeba.org/">

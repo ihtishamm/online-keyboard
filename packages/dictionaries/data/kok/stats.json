@@ -1,0 +1,10 @@
+{
+  "source": "gomwiki.xml.bz2",
+  "pages": 4316,
+  "sentences": 101248,
+  "repeatedSentencesSkipped": 44775,
+  "tokens": 1028475,
+  "distinctWords": 168638,
+  "wordsKept": 36751,
+  "nextWordHeads": 5977
+}

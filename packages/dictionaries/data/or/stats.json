@@ -1,0 +1,10 @@
+{
+  "source": "orwiki.xml.bz2",
+  "pages": 21247,
+  "sentences": 355908,
+  "repeatedSentencesSkipped": 92893,
+  "tokens": 3972652,
+  "distinctWords": 259367,
+  "wordsKept": 72314,
+  "nextWordHeads": 9547
+}

@@ -102,7 +102,7 @@ for (const language of LANGUAGES) {
         );
       // Keys with nothing on this layer (InScript has a few) show a blank label: skip them.
       const byChar = new Map(
-        shown.filter(([, label]) => label.trim()).map(([code, label]) => [label, code]),
+        shown.filter(([, label]) => label?.trim()).map(([code, label]) => [label, code]),
       );
       const letters = [...language.sample.toLowerCase()].filter((ch) => byChar.has(ch));
       const typed = letters.slice(0, 5);

@@ -1,0 +1,10 @@
+{
+  "source": "aswiki.xml.bz2",
+  "pages": 21684,
+  "sentences": 628002,
+  "repeatedSentencesSkipped": 55136,
+  "tokens": 8287458,
+  "distinctWords": 422722,
+  "wordsKept": 100000,
+  "nextWordHeads": 9895
+}

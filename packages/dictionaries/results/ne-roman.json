@@ -1,0 +1,10 @@
+{
+  "scheme": "ne-roman",
+  "source": "Aksharantar test split (frequent words)",
+  "pairs": 1000,
+  "top1": 0.449,
+  "top5": 0.526,
+  "messageWords": 75,
+  "correctionsPer10Words": 1.07,
+  "beta": true
+}

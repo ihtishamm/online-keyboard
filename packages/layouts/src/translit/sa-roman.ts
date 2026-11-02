@@ -1,0 +1,133 @@
+import type { TranslitScheme } from "@okb/engine";
+import { abugidaRules } from "./indic";
+
+/**
+ * English letters → Sanskrit (Devanagari). Sanskrit is read with every inherent vowel, so a
+ * Roman "a" after a consonant is the inherent vowel and a consonant with no vowel after it
+ * takes a virama (अहम्, भवेत्). A final h is the visarga (रामः) and a final m may be the
+ * anusvara (अहं). Long vowels are doubled (aa, ee, oo).
+ * The rules over-generate; the word list decides. Written for this project from common usage.
+ */
+export const SA_ROMAN: TranslitScheme = {
+  id: "sa-roman",
+  lang: "sa",
+  vowels: "aeiou",
+  doubledCost: 0,
+  splitCost: 1,
+  rules: [
+    { in: "ia", prev: "C", out: "िया:0.3 िय:0.2" },
+    // ----- clusters with their own letters -----
+    { in: "ksh", out: "क्ष" },
+    { in: "jn", out: "ज्ञ:0.2" },
+    { in: "jny", out: "ज्ञ" },
+    { in: "gy", out: "ज्ञ:0.3" },
+    { in: "tr", out: "त्र" },
+    { in: "shr", out: "श्र" },
+    { in: "cch", out: "च्छ" },
+    { in: "chh", out: "च्छ:0.2 छ:0.3" },
+    { in: "sht", out: "ष्ट स्ट:0.5" },
+    { in: "shth", out: "ष्ठ" },
+    { in: "shk", out: "ष्क श्क:0.4" },
+    { in: "shm", out: "ष्म श्म:0.3" },
+    // The nasal of a class: ञ before ज and च, ङ before क and ग.
+    { in: "nj", out: "ञ्ज \u0902ज:0.3 न्ज:0.5" },
+    { in: "nch", out: "ञ्च \u0902च:0.3" },
+    { in: "nk", out: "ङ्क \u0902क:0.3 न्क:0.5" },
+    { in: "nkh", out: "ङ्ख \u0902ख:0.3" },
+    { in: "ng", out: "ङ्ग \u0902ग:0.3 न्ग:0.5" },
+
+    // ----- marks: anusvara before a consonant, visarga and anusvara at the end -----
+    { in: "n", next: "C", out: "\u0902:0.3" },
+    { in: "m", next: "C", out: "\u0902:0.4" },
+    { in: "m", at: "end", prev: "V", out: "\u0902 म्:0.2" },
+    { in: "h", at: "end", prev: "V", out: "ः ह्:1" },
+    // Chat often spells the visarga "ha" (ततः tataha), and h before a consonant (दुःख duhkha).
+    { in: "ha", at: "end", prev: "V", out: "ः:0.3" },
+    { in: "h", prev: "V", next: "C", out: "ः:0.5" },
+    { in: "ri", prev: "C", out: "\u0943:0.3" },
+    { in: "ru", prev: "C", out: "\u0943:0.5" },
+    { in: "rri", prev: "C", out: "\u0943" },
+    { in: "ri", at: "start", out: "ऋ:0.5" },
+    { in: "rri", at: "start", out: "ऋ" },
+    // "om" ॐ
+    { in: "om", at: "start", out: "ॐ:0.5" },
+
+    ...abugidaRules({
+      virama: "\u094D",
+      inherentCost: 0.8,
+      // A final consonant without a vowel is spelled with a virama: भवेत्, अहम्.
+      finalVirama: 0.6,
+      consonants: [
+        ["k", "क"],
+        ["kh", "ख"],
+        ["g", "ग"],
+        ["gh", "घ"],
+        ["ch", "च छ:0.5"],
+        ["chh", "छ"],
+        ["c", "च"],
+        ["j", "ज"],
+        ["jh", "झ"],
+        ["t", "त ट:0.5"],
+        ["th", "थ ठ:0.5"],
+        ["d", "द ड:0.5"],
+        ["dh", "ध ढ:0.6"],
+        ["n", "न ण:0.6"],
+        ["p", "प"],
+        ["ph", "फ"],
+        ["b", "ब"],
+        ["bh", "भ"],
+        ["m", "म"],
+        ["y", "य"],
+        ["r", "र"],
+        ["l", "ल"],
+        ["v", "व"],
+        ["w", "व"],
+        ["s", "स श:0.6 ष:0.8"],
+        ["sh", "श ष:0.4"],
+        ["h", "ह"],
+      ],
+      vowels: [
+        { in: "a", independent: "अ आ:0.6", sign: "- ा:0.5", finalSign: "- ा:0.3" },
+        { in: "aa", independent: "आ", sign: "ा" },
+        { in: "i", independent: "इ ई:0.6", sign: "ि ी:0.5" },
+        { in: "ee", independent: "ई", sign: "ी" },
+        { in: "ii", independent: "ई", sign: "ी" },
+        { in: "u", independent: "उ ऊ:0.6", sign: "\u0941 \u0942:0.5" },
+        { in: "oo", independent: "ऊ", sign: "\u0942" },
+        { in: "uu", independent: "ऊ", sign: "\u0942" },
+        { in: "e", independent: "ए", sign: "\u0947" },
+        { in: "ai", independent: "ऐ", sign: "\u0948" },
+        { in: "o", independent: "ओ", sign: "ो" },
+        { in: "au", independent: "औ", sign: "ौ" },
+        { in: "ou", independent: "औ", sign: "ौ" },
+      ],
+    }),
+  ],
+  omitted: "",
+  capitals: { T: "ट", D: "ड", N: "ण", S: "ष" },
+  words: [
+    ["aham", "अहम्"],
+    ["tvam", "त्वम्"],
+    ["asti", "अस्ति"],
+    ["namah namaha", "नमः"],
+    ["namaste", "नमस्ते"],
+    ["samskritam sanskritam", "संस्कृतम्"],
+    ["bhavati", "भवति"],
+    ["kim", "किम्"],
+    ["kutra", "कुत्र"],
+    ["atra", "अत्र"],
+    ["tatra", "तत्र"],
+    ["cha ca", "च"],
+    ["na", "न"],
+    ["eva", "एव"],
+    ["api", "अपि"],
+    ["iti", "इति"],
+    ["mama", "मम"],
+    ["katham", "कथम्"],
+    ["om", "ॐ"],
+    ["dhanyavadah", "धन्यवादः"],
+    ["shubham", "शुभम्"],
+    ["suprabhatam", "सुप्रभातम्"],
+  ],
+  punctuation: { ".": "।" },
+};

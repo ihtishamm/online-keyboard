@@ -1,6 +1,7 @@
 import type { TranslitScheme } from "@okb/engine";
 import {
   ARABIC_SCRIPT,
+  ASSAMESE,
   BENGALI,
   DEVANAGARI,
   GUJARATI,
@@ -8,8 +9,10 @@ import {
   KANNADA,
   KASHMIRI_SCRIPT,
   MALAYALAM,
+  ODIA,
   PASHTO_SCRIPT,
   PERSIAN_SCRIPT,
+  SANSKRIT,
   SARAIKI_SCRIPT,
   SHAHMUKHI_SCRIPT,
   SINDHI_SCRIPT,
@@ -41,6 +44,12 @@ export const ROMAN_TABLES: Readonly<Record<string, RomanTable>> = {
   kn: KANNADA,
   ml: MALAYALAM,
   si: SINHALA,
+  ne: DEVANAGARI,
+  or: ODIA,
+  as: ASSAMESE,
+  sa: SANSKRIT,
+  kok: DEVANAGARI,
+  mai: DEVANAGARI,
 };
 
 /** The scheme's own common words, reversed: its first Roman spelling of each. */

@@ -181,10 +181,27 @@ function indic(letters: RegExp, fix: (w: string) => string = (w) => w) {
 
 /** Marathi is written in Devanagari: Hindi's rules (ळ and ॲ are in its letter range). */
 export const normalizeMarathi = normalizeHindi;
+/** Nepali, Sanskrit, Konkani and Maithili are written in Devanagari too (ऽ is in range). */
+export const normalizeNepali = normalizeHindi;
+export const normalizeSanskrit = normalizeHindi;
+export const normalizeKonkani = normalizeHindi;
+export const normalizeMaithili = normalizeHindi;
+/**
+ * Assamese: the Bengali script with its own ra ৰ and wa ৱ. Text typed on a Bangla keyboard
+ * has Bangla র for ৰ; it becomes ৰ, so র is no Assamese letter.
+ */
+export const normalizeAssamese = indic(/^[অ-যল-হৎড়-ৡৰৱ][\u0981-যল-\u09E3ৰৱ]*$/u, (w) =>
+  w.replace(/র/g, "ৰ").replace(/ত্\u200D/g, "ৎ"),
+);
+export const normalizeOdia = indic(
+  /^[\u0B05-\u0B39\u0B5C-\u0B61\u0B71][\u0B01-\u0B57\u0B5C-\u0B63\u0B71]*$/u,
+);
 export const normalizeGujarati = indic(
   /^[\u0A85-\u0AB9\u0AE0\u0AE1\u0AF9][\u0A81-\u0AE3\u0AFA-\u0AFF]*$/u,
 );
 export const normalizePunjabi = indic(
+  // Ranges of escaped letters and signs, each matched on its own.
+  // eslint-disable-next-line no-misleading-character-class
   /^[\u0A05-\u0A39\u0A59-\u0A5E\u0A72\u0A73][\u0A01-\u0A51\u0A59-\u0A5E\u0A70-\u0A75]*$/u,
 );
 export const normalizeTamil = indic(/^[\u0B85-\u0BB9][\u0B82-\u0BCD\u0BD7]*$/u);
@@ -209,9 +226,11 @@ export const normalizeMalayalam = indic(
   (w) => w.replace(/([ണനരലളക])\u0D4D\u200D/g, (_, c: string) => CHILLU[c]!),
 );
 
+// ZWJ is matched on its own, as part of the word (see below).
+// eslint-disable-next-line no-misleading-character-class
 const SI_LETTERS = /^[\u0D85-\u0DC6][\u0D81-\u0DC6\u0DCA-\u0DDF\u0DF2\u0DF3\u200D]*$/u;
 /**
- * Sinhala keeps ZWJ: it builds the touching and half forms (ශ්‍රී, ක්‍ය) that the language
+ * Sinhala keeps ZWJ: it builds the touching and half forms (ශ්\u200Dරී, ක්\u200Dය) that the language
  * spells with, so a word without it is written differently. ZWNJ goes.
  */
 export function normalizeSinhala(raw: string): string | null {
@@ -240,4 +259,10 @@ export const WORD_NORMALIZERS: Readonly<Record<string, (raw: string) => string |
   kn: normalizeKannada,
   ml: normalizeMalayalam,
   si: normalizeSinhala,
+  ne: normalizeNepali,
+  or: normalizeOdia,
+  as: normalizeAssamese,
+  sa: normalizeSanskrit,
+  kok: normalizeKonkani,
+  mai: normalizeMaithili,
 };

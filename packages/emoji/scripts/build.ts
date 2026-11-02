@@ -32,8 +32,11 @@ const MAX_VERSION = 15.0;
 
 /** CLDR files that fill the gaps in a language's own annotations (Shahmukhi's are incomplete). */
 const GAPS: Record<string, string[]> = { "pa-Arab": ["ur"], ks: ["ur"] };
-/** Languages CLDR doesn't annotate whose speakers read another language's keywords. */
-const FALLBACK: Record<string, string> = { skr: "ur", bal: "ur", ks: "ur" };
+/**
+ * Languages CLDR doesn't annotate (or whose CLDR file is empty, as Sanskrit's and Maithili's
+ * are) whose speakers read another language's keywords.
+ */
+const FALLBACK: Record<string, string> = { skr: "ur", bal: "ur", ks: "ur", sa: "hi", mai: "hi" };
 
 /** Every registry language's tag (language.json "lang"), sorted. */
 const tags = [
@@ -223,6 +226,10 @@ for (const tag of tags) {
       continue;
     }
     words[e.char] = joinWords(a.name, a.keywords);
+  }
+  if (Object.keys(words).length === 0) {
+    if (!(tag in FALLBACK)) missing.push(tag);
+    continue;
   }
   writeFileSync(join(OUT, `${tag}.json`), JSON.stringify(words));
   written.push(tag);

@@ -1,0 +1,260 @@
+{
+  "id": "ne-traditional",
+  "lang": "ne",
+  "script": "Deva",
+  "dir": "ltr",
+  "name": {
+    "en": "Traditional",
+    "native": "परम\u094Dपरागत"
+  },
+  "source": "Windows \"Nepali\" (the traditional typewriter layout), from Unicode CLDR 43 keyboard data (Unicode License v3). Its Ctrl+Shift layer (a browser shortcut) moved to Shift+AltGr: ौ, ई, ऐ and ओ on Q, O, P and ], which no other key types; its ASCII punctuation is left out (AltGr types the digits). ZWJ and ZWNJ added on Shift+AltGr+1 and 2.",
+  "keys": {
+    "Backquote": {
+      "n": "ञ",
+      "s": "ञ\u094D"
+    },
+    "Digit1": {
+      "n": "ज\u094Dञ",
+      "s": "१",
+      "ag": "1",
+      "sag": "\u200D"
+    },
+    "Digit2": {
+      "n": "घ",
+      "s": "२",
+      "ag": "2",
+      "sag": "\u200C"
+    },
+    "Digit3": {
+      "n": "ङ",
+      "s": "३",
+      "ag": "3"
+    },
+    "Digit4": {
+      "n": "झ",
+      "s": "४",
+      "ag": "4"
+    },
+    "Digit5": {
+      "n": "छ",
+      "s": "५",
+      "ag": "5"
+    },
+    "Digit6": {
+      "n": "ट",
+      "s": "६",
+      "ag": "6"
+    },
+    "Digit7": {
+      "n": "ठ",
+      "s": "७",
+      "ag": "7"
+    },
+    "Digit8": {
+      "n": "ड",
+      "s": "८",
+      "ag": "8"
+    },
+    "Digit9": {
+      "n": "ढ",
+      "s": "९",
+      "ag": "9"
+    },
+    "Digit0": {
+      "n": "ण",
+      "s": "०",
+      "ag": "0"
+    },
+    "Minus": {
+      "n": "(",
+      "s": ")"
+    },
+    "Equal": {
+      "n": ".",
+      "s": "\u0902",
+      "ag": "+"
+    },
+    "KeyQ": {
+      "n": "त\u094Dर",
+      "s": "ो",
+      "sag": "ौ"
+    },
+    "KeyW": {
+      "n": "ध",
+      "s": "ध\u094D"
+    },
+    "KeyE": {
+      "n": "भ",
+      "s": "भ\u094D"
+    },
+    "KeyR": {
+      "n": "च",
+      "s": "च\u094D"
+    },
+    "KeyT": {
+      "n": "त",
+      "s": "त\u094D"
+    },
+    "KeyY": {
+      "n": "थ",
+      "s": "थ\u094D"
+    },
+    "KeyU": {
+      "n": "ग",
+      "s": "ग\u094D"
+    },
+    "KeyI": {
+      "n": "ष",
+      "s": "क\u094Dष"
+    },
+    "KeyO": {
+      "n": "य",
+      "s": "इ",
+      "sag": "ई"
+    },
+    "KeyP": {
+      "n": "उ",
+      "s": "ए",
+      "ag": "ऊ",
+      "sag": "ऐ"
+    },
+    "BracketLeft": {
+      "n": "\u0943",
+      "s": "र\u094D"
+    },
+    "BracketRight": {
+      "n": "\u0947",
+      "s": "\u0948",
+      "ag": "औ",
+      "sag": "ओ"
+    },
+    "Backslash": {
+      "n": "\u094Dर",
+      "s": "\u094D"
+    },
+    "KeyA": {
+      "n": "ब",
+      "s": "ब\u094D"
+    },
+    "KeyS": {
+      "n": "क",
+      "s": "क\u094D"
+    },
+    "KeyD": {
+      "n": "म",
+      "s": "म\u094D"
+    },
+    "KeyF": {
+      "n": "ा",
+      "s": "\u0901"
+    },
+    "KeyG": {
+      "n": "न",
+      "s": "न\u094D"
+    },
+    "KeyH": {
+      "n": "ज",
+      "s": "ज\u094D"
+    },
+    "KeyJ": {
+      "n": "व",
+      "s": "व\u094D"
+    },
+    "KeyK": {
+      "n": "प",
+      "s": "प\u094D"
+    },
+    "KeyL": {
+      "n": "ि",
+      "s": "ी"
+    },
+    "Semicolon": {
+      "n": "स",
+      "s": "स\u094D"
+    },
+    "Quote": {
+      "n": "\u0941",
+      "s": "\u0942"
+    },
+    "KeyZ": {
+      "n": "श",
+      "s": "श\u094D"
+    },
+    "KeyX": {
+      "n": "ह",
+      "s": "ह\u094D"
+    },
+    "KeyC": {
+      "n": "अ",
+      "s": "ऋ",
+      "ag": "आ"
+    },
+    "KeyV": {
+      "n": "ख",
+      "s": "ख\u094D"
+    },
+    "KeyB": {
+      "n": "द",
+      "s": "द\u094D"
+    },
+    "KeyN": {
+      "n": "ल",
+      "s": "ल\u094D"
+    },
+    "KeyM": {
+      "n": "फ",
+      "s": "ः"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "?"
+    },
+    "Period": {
+      "n": "।",
+      "s": "श\u094Dर"
+    },
+    "Slash": {
+      "n": "र",
+      "s": "र\u0942"
+    }
+  },
+  "longpress": {
+    "Backquote": ["ञ\u094D"],
+    "Digit1": ["\u200D"],
+    "Digit2": ["\u200C"],
+    "Equal": ["\u0902"],
+    "KeyQ": ["ो", "ौ"],
+    "KeyW": ["ध\u094D"],
+    "KeyE": ["भ\u094D"],
+    "KeyR": ["च\u094D"],
+    "KeyT": ["त\u094D"],
+    "KeyY": ["थ\u094D"],
+    "KeyU": ["ग\u094D"],
+    "KeyI": ["क\u094Dष"],
+    "KeyO": ["इ", "ई"],
+    "KeyP": ["ए", "ऊ", "ऐ"],
+    "BracketLeft": ["र\u094D"],
+    "BracketRight": ["\u0948", "औ", "ओ"],
+    "Backslash": ["\u094D"],
+    "KeyA": ["ब\u094D"],
+    "KeyS": ["क\u094D"],
+    "KeyD": ["म\u094D"],
+    "KeyF": ["\u0901"],
+    "KeyG": ["न\u094D"],
+    "KeyH": ["ज\u094D"],
+    "KeyJ": ["व\u094D"],
+    "KeyK": ["प\u094D"],
+    "KeyL": ["ी"],
+    "Semicolon": ["स\u094D"],
+    "Quote": ["\u0942"],
+    "KeyZ": ["श\u094D"],
+    "KeyX": ["ह\u094D"],
+    "KeyC": ["ऋ", "आ"],
+    "KeyV": ["ख\u094D"],
+    "KeyB": ["द\u094D"],
+    "KeyN": ["ल\u094D"],
+    "KeyM": ["ः"],
+    "Period": ["श\u094Dर"],
+    "Slash": ["र\u0942"]
+  }
+}

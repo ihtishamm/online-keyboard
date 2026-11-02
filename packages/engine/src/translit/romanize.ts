@@ -221,7 +221,7 @@ export const BENGALI: IndicTable = {
 // ----- Scripts laid out like Devanagari -----
 
 /**
- * Gurmukhi, Gujarati, Tamil, Telugu, Kannada and Malayalam keep Devanagari's letter order in
+ * Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada and Malayalam keep Devanagari's letter order in
  * Unicode (from ISCII): each letter sits at the same offset in its block. Their tables start
  * from Devanagari's, moved to the script's block, keeping only letters the script has; each
  * then adds or changes its own.
@@ -266,8 +266,8 @@ function shifted(
 export const GURMUKHI: IndicTable = shifted(0x100, "Gurmukhi", {
   consonants: { ੜ: p("r", "ṛ"), ਲ਼: p("l", "ḷ"), ਸ਼: p("sh", "ś") },
   vowels: { ੲ: p("i"), ੳ: p("u") },
-  marks: { "ੰ": p("n", "ṁ") },
-  gemination: "ੱ",
+  marks: { "\u0A70": p("n", "ṁ") },
+  gemination: "\u0A71",
 });
 
 export const GUJARATI: IndicTable = shifted(0x180, "Gujarati", {
@@ -345,14 +345,49 @@ export const MALAYALAM: IndicTable = shifted(0x400, "Malayalam", {
   // U+0D3C is a virama sign here, not a nukta.
   nukta: undefined,
   // The half-u: ആണ് "aanu".
-  finalMarks: { "്": p("u", "ŭ") },
+  finalMarks: { "\u0D4D": p("u", "ŭ") },
 });
+
+/** Odia pronounces the final inherent vowel, and chat writes it (ଘଣ୍ଟା ghanta, ଭୋଗ bhoga). */
+export const ODIA: IndicTable = shifted(0x200, "Oriya", {
+  consonants: {
+    ଯ: p("j", "y"),
+    ୟ: p("y", "ẏ"),
+    ୱ: p("w", "v"),
+    ଳ: p("l", "ḷ"),
+    // Odia chat writes ଡ଼ and ଢ଼ as d and dh (ଓଡ଼ିଆ odia).
+    ଡ଼: p("d", "ṛ"),
+    ଢ଼: p("dh", "ṛh"),
+  },
+  schwaDeletion: false,
+});
+
+/**
+ * Assamese: the Bengali script and Bangla's inherent "o", with Assamese sounds in chat: স, শ
+ * and ষ are "x" (অসম Axom), চ and ছ are "s", য is "j", and ৰ and ৱ are its own r and w.
+ */
+export const ASSAMESE: IndicTable = {
+  ...BENGALI,
+  consonants: {
+    ...Object.fromEntries(Object.entries(BENGALI.consonants).filter(([k]) => k !== "র")),
+    চ: p("s", "c"),
+    ছ: p("s", "ch"),
+    শ: p("x", "ś"),
+    ষ: p("x", "ṣ"),
+    স: p("x", "s"),
+    ৰ: p("r"),
+    ৱ: p("w", "v"),
+  },
+};
+
+/** Sanskrit is read with every inherent vowel (रामः rāmaḥ, not ram). */
+export const SANSKRIT: IndicTable = { ...DEVANAGARI, schwaDeletion: false };
 
 // ----- Sinhala -----
 
 export const SINHALA: IndicTable = {
   kind: "indic",
-  virama: "්",
+  virama: "\u0DCA",
   inherent: p("a"),
   consonants: {
     ක: p("k"),
@@ -419,10 +454,10 @@ export const SINHALA: IndicTable = {
     "ා": p("a", "ā"),
     "ැ": p("ae", "æ"),
     "ෑ": p("ae", "ǣ"),
-    "ි": p("i"),
-    "ී": p("ee", "ī"),
-    "ු": p("u"),
-    "ූ": p("oo", "ū"),
+    "\u0DD2": p("i"),
+    "\u0DD3": p("ee", "ī"),
+    "\u0DD4": p("u"),
+    "\u0DD6": p("oo", "ū"),
     "ෘ": p("ru", "r̥"),
     "ෙ": p("e"),
     "ේ": p("e", "ē"),
@@ -629,7 +664,7 @@ function indicWord(word: string, t: IndicTable, style: RomanStyle): string {
   let double = false;
   for (let i = 0; i < chars.length; i++) {
     let c = chars[i]!;
-    // Joiners only choose a glyph (Sinhala ප්‍ර, Malayalam chillus written ന്‍).
+    // Joiners only choose a glyph (Sinhala ප්\u200Dර, Malayalam chillus written ന്\u200D).
     if (c === "\u200C" || c === "\u200D") continue;
     if (c === t.gemination) {
       double = true;

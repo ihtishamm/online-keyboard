@@ -1,0 +1,25 @@
+{
+  "slug": "nepali",
+  "code": "ne",
+  "order": 191,
+  "lang": "ne",
+  "script": "Deva",
+  "dir": "ltr",
+  "name": {
+    "en": "Nepali",
+    "native": "नेपाली"
+  },
+  "aliases": [],
+  "region": "south-asia",
+  "fonts": ["devanagari"],
+  "layouts": ["ne-roman", "ne-traditional"],
+  "sample": "नेपाली मेरो मातृभाषा हो।",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ne",
+    "bing": "ne"
+  },
+  "tier": null,
+  "notes": "English letters first, as for Hindi (decision §11.1). No voice yet: the locale has not passed /voice-probe."
+}

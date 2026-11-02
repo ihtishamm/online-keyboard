@@ -644,7 +644,7 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
       },
       {
         roman: "i, u",
-        script: "ई  ी  ऊ  ू",
+        script: "ई  ी  ऊ  \u0942",
         examples: [
           ["aai", "आई"],
           ["bhau", "भाऊ"],
@@ -706,7 +706,7 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
       },
       {
         roman: "e, i, u",
-        script: "ે  ી  ૂ",
+        script: "\u0AC7  ી  \u0AC2",
         examples: [
           ["mane", "મને"],
           ["khub", "ખૂબ"],
@@ -723,7 +723,7 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
       },
       {
         roman: "u (at the end)",
-        script: "ું",
+        script: "\u0AC1\u0A82",
         examples: [
           ["maru", "મારું"],
           ["tamaru", "તમારું"],
@@ -764,7 +764,7 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
       },
       {
         roman: "i, u",
-        script: "ੀ  ੂ  ੁ",
+        script: "ੀ  \u0A42  \u0A41",
         examples: [
           ["ki", "ਕੀ"],
           ["khush", "ਖੁਸ਼"],
@@ -780,7 +780,7 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
       },
       {
         roman: "kk, ll (doubled)",
-        script: "ੱ",
+        script: "\u0A71",
         examples: [
           ["pakka", "ਪੱਕਾ"],
           ["gall", "ਗੱਲ"],
@@ -788,7 +788,7 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
       },
       {
         roman: "n (before a letter or at the end)",
-        script: "ੰ  ਂ",
+        script: "\u0A70  \u0A02",
         examples: [
           ["changa", "ਚੰਗਾ"],
           ["mainu", "ਮੈਨੂੰ"],
@@ -821,7 +821,7 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
     guide: [
       {
         roman: "aa, ee, oo",
-        script: "ா  ீ  ூ",
+        script: "ா  \u0BC0  ூ",
         examples: [
           ["kaalai", "காலை"],
           ["veedu", "வீடு"],
@@ -879,7 +879,7 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
     guide: [
       {
         roman: "aa, ee, e",
-        script: "ా  ీ  ే",
+        script: "\u0C3E  \u0C40  \u0C47",
         examples: [
           ["chaala", "చాలా"],
           ["meeru", "మీరు"],
@@ -1010,7 +1010,7 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
       },
       {
         roman: "u (at the end)",
-        script: "്",
+        script: "\u0D4D",
         examples: [
           ["aaNu", "ആണ്"],
           ["enikku", "എനിക്ക്"],
@@ -1086,10 +1086,328 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
       { roman: "L", script: "ළ", examples: [["Lamaya", "ළමයා"]] },
       {
         roman: "(at the end)",
-        script: "්",
+        script: "\u0DCA",
         examples: [
           ["pothak", "පොතක්"],
           ["ayubowan", "ආයුබෝවන්"],
+        ],
+      },
+    ],
+  },
+  "ne-roman": {
+    page: {
+      title: "English to Nepali Typing: Type Nepali in English Letters Online",
+      heading: "English to Nepali Typing",
+      description:
+        "Type Nepali in English letters and get Devanagari as you go: namaste becomes नमस्ते. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Nepali the way you text it in English letters. Each word turns into Devanagari when you press Space, and the bar under the editor offers other spellings. Both v and b work for व and भ (vayo, dhanyabad), and capitals T and D ask for ट and ड.",
+      bestFor:
+        "Anyone who chats in Nepali with English letters and wants proper Devanagari without learning the Nepali keyboard.",
+    },
+    example: ["namaste", "नमस्ते"],
+    guide: [
+      {
+        roman: "aa, a",
+        script: "आ  ा",
+        examples: [
+          ["aama", "आमा"],
+          ["bhat", "भात"],
+        ],
+      },
+      {
+        roman: "i, u",
+        script: "ई  ी  \u0942",
+        examples: [
+          ["didi", "दिदी"],
+          ["haru", "हरू"],
+        ],
+      },
+      {
+        roman: "ch, chh",
+        script: "च  छ",
+        examples: [
+          ["chiya", "चिया"],
+          ["chha", "छ"],
+        ],
+      },
+      {
+        roman: "jh, dh",
+        script: "झ  ध",
+        examples: [
+          ["jhyal", "झ्याल"],
+          ["dhanyabad", "धन्यवाद"],
+        ],
+      },
+      { roman: "Th", script: "ठ", examples: [["Thulo", "ठुलो"]] },
+      {
+        roman: "an, aan",
+        script: "\u0901",
+        examples: [
+          ["sanga", "सँग"],
+          ["aankha", "आँखा"],
+        ],
+      },
+      {
+        roman: "gy, ksh",
+        script: "ज्ञ  क्ष",
+        examples: [
+          ["gyan", "ज्ञान"],
+          ["kshetra", "क्षेत्र"],
+        ],
+      },
+    ],
+  },
+  "or-roman": {
+    page: {
+      title: "English to Odia Typing: Type Odia in English Letters Online",
+      heading: "English to Odia Typing",
+      description:
+        "Type Odia in English letters and get Odia script as you go: namaskar becomes ନମସ୍କାର. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Odia the way you text it in English letters. Each word turns into Odia script when you press Space, and the bar under the editor offers other spellings. A final a is the vowel Odia says at the end of a word (ଘର ghara), and nk and ng give ଙ୍କ and ଙ୍ଗ.",
+      bestFor:
+        "Anyone who chats in Odia with English letters and wants proper Odia script without learning InScript.",
+    },
+    example: ["namaskar", "ନମସ୍କାର"],
+    guide: [
+      {
+        roman: "a",
+        script: "ା  (or none)",
+        examples: [
+          ["pila", "ପିଲା"],
+          ["ghara", "ଘର"],
+        ],
+      },
+      {
+        roman: "i, u",
+        script: "\u0B3F  \u0B41",
+        examples: [
+          ["aji", "ଆଜି"],
+          ["sundara", "ସୁନ୍ଦର"],
+        ],
+      },
+      {
+        roman: "bh, jh",
+        script: "ଭ  ଝ",
+        examples: [
+          ["bhata", "ଭାତ"],
+          ["jhia", "ଝିଅ"],
+        ],
+      },
+      {
+        roman: "sh",
+        script: "ଶ  ଷ",
+        examples: [
+          ["bhasha", "ଭାଷା"],
+          ["shiksha", "ଶିକ୍ଷା"],
+        ],
+      },
+      {
+        roman: "nk, ng, nch",
+        script: "ଙ୍କ  ଙ୍ଗ  ଞ୍ଚ",
+        examples: [
+          ["lokanka", "ଲୋକଙ୍କ"],
+          ["ranga", "ରଙ୍ଗ"],
+          ["anchala", "ଅଞ୍ଚଳ"],
+        ],
+      },
+      {
+        roman: "d, l",
+        script: "ଡ଼  ଳ",
+        examples: [
+          ["odia", "ଓଡ଼ିଆ"],
+          ["kalinga", "କଳିଙ୍ଗ"],
+        ],
+      },
+    ],
+  },
+  "as-roman": {
+    page: {
+      title: "English to Assamese Typing: Type Assamese in English Letters Online",
+      heading: "English to Assamese Typing",
+      description:
+        "Type Assamese in English letters and get Assamese script as you go: nomoskar becomes নমস্কাৰ. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Assamese the way you text it in English letters. Each word turns into Assamese script when you press Space, and the bar under the editor offers other spellings. Type the sounds: x for স and শ (axom), s for চ and ছ (ase), and r and w give Assamese ৰ and ৱ.",
+      bestFor:
+        "Anyone who chats in Assamese with English letters and wants proper Assamese script without learning InScript.",
+    },
+    example: ["nomoskar", "নমস্কাৰ"],
+    guide: [
+      {
+        roman: "x",
+        script: "স  শ  ষ",
+        examples: [
+          ["axom", "অসম"],
+          ["xokolo", "সকলো"],
+        ],
+      },
+      {
+        roman: "s",
+        script: "চ  ছ",
+        examples: [
+          ["ase", "আছে"],
+          ["sohor", "চহৰ"],
+        ],
+      },
+      {
+        roman: "o",
+        script: "অ  ো  (or none)",
+        examples: [
+          ["ghor", "ঘৰ"],
+          ["nodi", "নদী"],
+        ],
+      },
+      {
+        roman: "r, w",
+        script: "ৰ  ৱ",
+        examples: [
+          ["rati", "ৰাতি"],
+          ["guwahati", "গুৱাহাটী"],
+        ],
+      },
+      {
+        roman: "bh, dh",
+        script: "ভ  ধ",
+        examples: [
+          ["bhal", "ভাল"],
+          ["dhonyobad", "ধন্যবাদ"],
+        ],
+      },
+    ],
+  },
+  "sa-roman": {
+    page: {
+      title: "English to Sanskrit Typing: Type Sanskrit in English Letters Online",
+      heading: "English to Sanskrit Typing",
+      description:
+        "Type Sanskrit in English letters and get Devanagari as you go: samskritam becomes संस्कृतम्. Visarga, anusvara and conjuncts, free, private and offline.",
+      summary:
+        "Write Sanskrit in English letters and each word turns into Devanagari when you press Space. Every a is read, so a word ending in a consonant gets a virama (अहम्); a final h is the visarga (नमः), and ri after a consonant is \u0943.",
+      bestFor:
+        "Students, teachers and anyone writing verses or quotations in Sanskrit who knows its sounds but not the InScript keyboard.",
+    },
+    example: ["samskritam", "संस्कृतम्"],
+    guide: [
+      {
+        roman: "h (at the end)",
+        script: "ः",
+        examples: [
+          ["namah", "नमः"],
+          ["devah", "देवः"],
+        ],
+      },
+      {
+        roman: "m (at the end)",
+        script: "म्  \u0902",
+        examples: [
+          ["aham", "अहम्"],
+          ["satyam", "सत्यं"],
+        ],
+      },
+      { roman: "ri", script: "\u0943", examples: [["amritam", "अमृतं"]] },
+      {
+        roman: "jn, ksh",
+        script: "ज्ञ  क्ष",
+        examples: [
+          ["jnanam", "ज्ञानं"],
+          ["kshama", "क्षमा"],
+        ],
+      },
+      {
+        roman: "sh, cch",
+        script: "श  च्छ",
+        examples: [
+          ["shantih", "शान्तिः"],
+          ["gacchami", "गच्छामि"],
+        ],
+      },
+    ],
+  },
+  "kok-roman": {
+    page: {
+      title: "English to Konkani Typing: Type Konkani in English Letters Online",
+      heading: "English to Konkani Typing",
+      description:
+        "Type Konkani in English letters and get Devanagari as you go: konkani becomes कोंकणी. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Konkani the way you text it in English letters. Each word turns into Devanagari when you press Space, and the bar under the editor offers other spellings. A final em or n is the nasal vowel (बरें, हांव), and the word list picks between ल and ळ.",
+      bestFor:
+        "Anyone who chats in Konkani with English letters and wants Devanagari Konkani without learning InScript.",
+    },
+    example: ["konkani", "कोंकणी"],
+    guide: [
+      {
+        roman: "aa, a",
+        script: "आ  ा",
+        examples: [
+          ["kaam", "काम"],
+          ["pani", "पानी"],
+        ],
+      },
+      {
+        roman: "em, anv",
+        script: "\u0947\u0902  ा\u0902व",
+        examples: [
+          ["borem", "बरें"],
+          ["hanv", "हांव"],
+        ],
+      },
+      {
+        roman: "l",
+        script: "ळ",
+        examples: [
+          ["shala", "शाळा"],
+          ["balak", "बाळक"],
+        ],
+      },
+      {
+        roman: "kh, bh",
+        script: "ख  भ",
+        examples: [
+          ["sukh", "सुख"],
+          ["bhas", "भास"],
+        ],
+      },
+    ],
+  },
+  "mai-roman": {
+    page: {
+      title: "English to Maithili Typing: Type Maithili in English Letters Online",
+      heading: "English to Maithili Typing",
+      description:
+        "Type Maithili in English letters and get Devanagari as you go: pranam becomes प्रणाम. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Maithili the way you text it in English letters. Each word turns into Devanagari when you press Space, and the bar under the editor offers other spellings. Short and long vowels need not be told apart: the word list picks अछि or नीक.",
+      bestFor:
+        "Anyone who chats in Maithili with English letters and wants proper Devanagari without learning InScript.",
+    },
+    example: ["pranam", "प्रणाम"],
+    guide: [
+      {
+        roman: "aa, a",
+        script: "आ  ा",
+        examples: [
+          ["gaam", "गाम"],
+          ["hamar", "हमर"],
+        ],
+      },
+      {
+        roman: "i",
+        script: "ि  ी",
+        examples: [
+          ["achhi", "अछि"],
+          ["nik", "नीक"],
+        ],
+      },
+      { roman: "chh", script: "छ", examples: [["chhi", "छी"]] },
+      {
+        roman: "bh, dh",
+        script: "भ  ध",
+        examples: [
+          ["bhasha", "भाषा"],
+          ["dhanyavad", "धन्यवाद"],
         ],
       },
     ],

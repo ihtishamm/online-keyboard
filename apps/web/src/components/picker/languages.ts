@@ -39,6 +39,7 @@ export const SCRIPT_NAMES: Readonly<Record<string, string>> = {
   Telu: "Telugu script",
   Knda: "Kannada script",
   Mlym: "Malayalam script",
+  Orya: "Odia script",
   Sinh: "Sinhala script",
   Latn: "Latin alphabet",
   Cyrl: "Cyrillic",

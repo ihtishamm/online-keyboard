@@ -24,6 +24,12 @@ const SOURCES: Readonly<Record<string, { file: string; credit: string }>> = {
   kn: { file: "kn-roman-dev.tsv", credit: "Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0" },
   ml: { file: "ml-roman-dev.tsv", credit: "Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0" },
   si: { file: "si-roman-dev.tsv", credit: "Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0" },
+  ne: { file: "ne-roman-dev.tsv", credit: "AI4Bharat Aksharantar, CC BY" },
+  or: { file: "or-roman-dev.tsv", credit: "AI4Bharat Aksharantar, CC BY" },
+  as: { file: "as-roman-dev.tsv", credit: "AI4Bharat Aksharantar, CC BY" },
+  sa: { file: "sa-roman-dev.tsv", credit: "AI4Bharat Aksharantar, CC BY" },
+  kok: { file: "kok-roman-dev.tsv", credit: "AI4Bharat Aksharantar, CC BY" },
+  mai: { file: "mai-roman-dev.tsv", credit: "AI4Bharat Aksharantar, CC BY" },
   ar: { file: "ar-roman-dev.tsv", credit: "Likho Arabic dev set" },
   fa: { file: "fa-roman-dev.tsv", credit: "Likho Persian dev set" },
 };

@@ -79,6 +79,30 @@ import sinhala from "../languages/sinhala/language.json";
 import siRoman from "../languages/sinhala/roman.json";
 import { SI_ROMAN } from "./translit/si-roman";
 import siWijesekara from "../languages/sinhala/wijesekara.json";
+import nepali from "../languages/nepali/language.json";
+import neRoman from "../languages/nepali/roman.json";
+import { NE_ROMAN } from "./translit/ne-roman";
+import neTraditional from "../languages/nepali/traditional.json";
+import odia from "../languages/odia/language.json";
+import orRoman from "../languages/odia/roman.json";
+import { OR_ROMAN } from "./translit/or-roman";
+import orInscript from "../languages/odia/inscript.json";
+import assamese from "../languages/assamese/language.json";
+import asRoman from "../languages/assamese/roman.json";
+import { AS_ROMAN } from "./translit/as-roman";
+import asInscript from "../languages/assamese/inscript.json";
+import sanskrit from "../languages/sanskrit/language.json";
+import saRoman from "../languages/sanskrit/roman.json";
+import { SA_ROMAN } from "./translit/sa-roman";
+import saInscript from "../languages/sanskrit/inscript.json";
+import konkani from "../languages/konkani/language.json";
+import kokRoman from "../languages/konkani/roman.json";
+import { KOK_ROMAN } from "./translit/kok-roman";
+import kokInscript from "../languages/konkani/inscript.json";
+import maithili from "../languages/maithili/language.json";
+import maiRoman from "../languages/maithili/roman.json";
+import { MAI_ROMAN } from "./translit/mai-roman";
+import maiInscript from "../languages/maithili/inscript.json";
 import spanish from "../languages/spanish/language.json";
 import esEasy from "../languages/spanish/easy.json";
 import esSpain from "../languages/spanish/spain.json";
@@ -150,6 +174,12 @@ export const LANGUAGE_FILES = [
   kannada,
   malayalam,
   sinhala,
+  nepali,
+  odia,
+  assamese,
+  sanskrit,
+  konkani,
+  maithili,
   spanish,
   french,
   italian,
@@ -207,6 +237,18 @@ export const RAW_LAYOUTS = [
   mlInscript,
   siRoman,
   siWijesekara,
+  neRoman,
+  neTraditional,
+  orRoman,
+  orInscript,
+  asRoman,
+  asInscript,
+  saRoman,
+  saInscript,
+  kokRoman,
+  kokInscript,
+  maiRoman,
+  maiInscript,
   esEasy,
   esSpain,
   esLatam,
@@ -265,6 +307,12 @@ export const SCHEME_LIST: readonly TranslitScheme[] = [
   KN_ROMAN,
   ML_ROMAN,
   SI_ROMAN,
+  NE_ROMAN,
+  OR_ROMAN,
+  AS_ROMAN,
+  SA_ROMAN,
+  KOK_ROMAN,
+  MAI_ROMAN,
 ];
 
 export {
@@ -287,4 +335,10 @@ export {
   KN_ROMAN,
   ML_ROMAN,
   SI_ROMAN,
+  NE_ROMAN,
+  OR_ROMAN,
+  AS_ROMAN,
+  SA_ROMAN,
+  KOK_ROMAN,
+  MAI_ROMAN,
 };

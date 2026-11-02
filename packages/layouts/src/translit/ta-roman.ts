@@ -38,7 +38,7 @@ export const TA_ROMAN: TranslitScheme = {
     { in: "y", at: "end", prev: "C", out: "ி:0.3" },
 
     ...abugidaRules({
-      virama: "்",
+      virama: "\u0BCD",
       inherentCost: 1.2,
       finalVirama: 1.2,
       consonants: [
@@ -78,9 +78,9 @@ export const TA_ROMAN: TranslitScheme = {
       vowels: [
         { in: "a", independent: "அ ஆ:0.6", sign: "- ா:0.5", finalSign: "- ா:0.4 ை:0.8" },
         { in: "aa", independent: "ஆ", sign: "ா" },
-        { in: "i", independent: "இ ஈ:0.6", sign: "ி ீ:0.5" },
-        { in: "ee", independent: "ஈ ஏ:0.6", sign: "ீ ே:0.6" },
-        { in: "ii", independent: "ஈ", sign: "ீ" },
+        { in: "i", independent: "இ ஈ:0.6", sign: "ி \u0BC0:0.5" },
+        { in: "ee", independent: "ஈ ஏ:0.6", sign: "\u0BC0 ே:0.6" },
+        { in: "ii", independent: "ஈ", sign: "\u0BC0" },
         { in: "u", independent: "உ ஊ:0.6", sign: "ு ூ:0.5" },
         { in: "oo", independent: "ஊ ஓ:0.4", sign: "ூ ோ:0.4" },
         { in: "uu", independent: "ஊ", sign: "ூ" },
@@ -96,7 +96,7 @@ export const TA_ROMAN: TranslitScheme = {
       ],
     }),
   ],
-  omitted: "்:1.6 ு:1.8 ா:2 ி:2",
+  omitted: "\u0BCD:1.6 ு:1.8 ா:2 ி:2",
   capitals: { N: "ண", L: "ள", R: "ற", T: "ட" },
   words: [
     ["vanakkam vanakam", "வணக்கம்"],

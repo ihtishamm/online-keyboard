@@ -4,7 +4,7 @@ import { LANGUAGES, getLayout, languageBundle, type Language } from "@okb/layout
 import { FONT_CLASS } from "../../components/fonts";
 import RomanizeTool from "../../components/tools/RomanizeTool";
 import Base from "../../layouts/Base.astro";
-import { DAKSHINA, creditsFor } from "../../content/credits";
+import { AKSHARANTAR, DAKSHINA, creditsFor } from "../../content/credits";
 import { SITE } from "../../config/site";
 
 // Script → English letters for every language with a Roman scheme (plan item 6.5).
@@ -33,6 +33,12 @@ const HEADINGS: Record<string, string> = {
   kannada: "Kannada to English Letters Converter",
   malayalam: "Malayalam to English Letters (Manglish) Converter",
   sinhala: "Sinhala to English Letters (Singlish) Converter",
+  nepali: "Nepali to English Letters Converter",
+  odia: "Odia to English Letters Converter",
+  assamese: "Assamese to English Letters Converter",
+  sanskrit: "Sanskrit to English Letters Converter",
+  konkani: "Konkani to English Letters Converter",
+  maithili: "Maithili to English Letters Converter",
   arabic: "Arabic to English Letters (Arabizi) Converter",
   farsi: "Persian to Finglish Converter",
 };
@@ -45,7 +51,11 @@ const romanId = language.layouts.find((id) => getLayout(id).translit)!;
 const scheme = bundle.schemes[getLayout(romanId).translit!]!;
 const romanPage = romanId === language.layouts[0] ? `/${language.slug}` : `/${language.slug}/roman`;
 const font = FONT_CLASS[language.fonts[0]!];
-const dakshina = DAKSHINA.has(language.code);
+const chatSource = DAKSHINA.has(language.code)
+  ? "the Dakshina dataset (Google Research, CC BY-SA 4.0)"
+  : AKSHARANTAR.has(language.code)
+    ? "AI4Bharat's Aksharantar (CC BY)"
+    : "our own word sets";
 ---
 
 <Base
@@ -83,8 +93,7 @@ const dakshina = DAKSHINA.has(language.code);
       .
     </p>
     <p class="text-muted">
-      Chat spellings come from{" "}
-      {dakshina ? "the Dakshina dataset (Google Research, CC BY-SA 4.0)" : "our own word sets"}
+      Chat spellings come from {chatSource}
       and from the Roman keyboard's word list. They are a guide to the usual spelling, not the only
       right one.
     </p>

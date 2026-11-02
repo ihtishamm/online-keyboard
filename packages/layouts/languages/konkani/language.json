@@ -1,0 +1,25 @@
+{
+  "slug": "konkani",
+  "code": "kok",
+  "order": 195,
+  "lang": "kok",
+  "script": "Deva",
+  "dir": "ltr",
+  "name": {
+    "en": "Konkani",
+    "native": "कोंकणी"
+  },
+  "aliases": [],
+  "region": "south-asia",
+  "fonts": ["devanagari"],
+  "layouts": ["kok-roman", "kok-inscript"],
+  "sample": "कोंकणी म्हजी मायभास।",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "gom",
+    "bing": "gom"
+  },
+  "tier": null,
+  "notes": "English letters first, as for Hindi (decision §11.1). No voice yet: the locale has not passed /voice-probe. Devanagari Konkani (Goa's official script); the word list keeps only Devanagari words from gom.wikipedia, which mixes in Latin-script Konkani."
+}

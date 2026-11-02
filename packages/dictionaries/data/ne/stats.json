@@ -1,0 +1,10 @@
+{
+  "source": "newiki.xml.bz2",
+  "pages": 30477,
+  "sentences": 459435,
+  "repeatedSentencesSkipped": 101459,
+  "tokens": 5726336,
+  "distinctWords": 387358,
+  "wordsKept": 100000,
+  "nextWordHeads": 9827
+}

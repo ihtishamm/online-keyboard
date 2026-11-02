@@ -44,6 +44,14 @@ const QUOTED: [layoutId: string, roman: string, script: string][] = [
   ["ml-roman", "ente peru", "എന്റെ പേര്"],
   ["ml-roman", "njan", "ഞാൻ"],
   ["si-roman", "oyata kohomada", "ඔයාට කොහොමද"],
+  ["ne-roman", "ma thik chhu", "म ठीक छु"],
+  ["or-roman", "mu bhala achhi", "ମୁଁ ଭଲ ଅଛି"],
+  ["or-roman", "tume kemiti achha", "ତୁମେ କେମିତି ଅଛ"],
+  ["as-roman", "moi bhal asu", "মই ভাল আছোঁ"],
+  ["sa-roman", "namah", "नमः"],
+  ["kok-roman", "tum koso asa", "तूं कसो आसा"],
+  ["kok-roman", "dev borem korum", "देव बरें करूं"],
+  ["mai-roman", "aha kona chhi", "अहाँ कोना छी"],
 ];
 
 describe("Roman page examples convert as shown", () => {

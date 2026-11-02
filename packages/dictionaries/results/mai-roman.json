@@ -1,0 +1,10 @@
+{
+  "scheme": "mai-roman",
+  "source": "Aksharantar test split (frequent words)",
+  "pairs": 1000,
+  "top1": 0.487,
+  "top5": 0.606,
+  "messageWords": 87,
+  "correctionsPer10Words": 0.46,
+  "beta": true
+}

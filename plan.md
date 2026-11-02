@@ -663,6 +663,12 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - **Typing:** Tatoeba sentences for all eight. Gujarati, Telugu, Kannada and Sinhala have small sets (20–50 usable); Sinhala needed `--min-words 3`.
     - **Fixed on the way:** Roman typing could commit the raw Latin when word-list completions filled the first eight candidates (Tamil "kaNNu"). Kannada "dd" now gives ದ್ದ (ಇದ್ದ), not ಡ. Tried and dropped: a cost for reading a doubled consonant as one letter. It lowered dev top-1 in every language, because chat spelling doubles letters loosely.
     - **FAQ examples changed to ones that convert:** Marathi "tu kasa aahes", Kannada "nanna hesaru", Malayalam "ningal sugamano". "tumhi kase aahat" gives आहेत, and "neevu hegiddeera" gives ಹೆ for ಹೇ.
+  - **Batch 2 (done 2026-11-02): Nepali, Odia, Assamese, Sanskrit, Konkani, Maithili.**
+    - **Layouts:** CLDR InScript for Odia and Assamese (ৎ added on Shift+J, as on Bangla), CLDR Nepali (the traditional typewriter layout, its Ctrl+Shift layer moved to Shift+AltGr), and Devanagari InScript for Sanskrit, Konkani (ॲ added on Shift+AltGr+D) and Maithili. A Roman scheme each. Odia keeps the final inherent vowel in its romanisation (ghanta, bhoga); Assamese writes স, শ and ষ as "x" (Axom) and has its own ৰ and ৱ.
+    - **Word lists:** from each Wikipedia dump (Konkani's gomwiki mixes Devanagari and Latin articles; only Devanagari words are kept): 27k (Maithili) to 100k (Nepali, Assamese) words kept.
+    - **Roman accuracy (Aksharantar test split, frequent words, top-1 / top-5, all Beta):** Nepali 44.9 / 52.6, Odia 41.5 / 48.9, Assamese 45.0 / 48.9, Sanskrit 50.0 / 60.4, Konkani 48.0 / 55.2, Maithili 48.7 / 60.6. `src/import-aksharantar.ts` writes the evaluation files; named entities and mined IndicCorp words are left out.
+    - **Typing:** Tatoeba sentences for Nepali, Assamese (82 each), Sanskrit (47) and Odia (35). Konkani and Maithili have too few, so their typing test has words only (as for Sindhi and Kashmiri).
+    - **Emoji:** CLDR keywords for Nepali, Odia, Assamese and Konkani. Sanskrit's and Maithili's CLDR files are empty, so they use Hindi's.
   - [ ] **Languages:**
     - Indic: Punjabi (Gurmukhi), Marathi, Nepali, Gujarati, Tamil, Telugu, Kannada, Malayalam, Odia, Assamese, Sinhala, Sanskrit, Konkani, Maithili;
     - Dhivehi;

@@ -9,6 +9,7 @@
  */
 import {
   normalizeArabic,
+  normalizeAssamese,
   normalizeBalochi,
   normalizeBangla,
   normalizeFarsi,
@@ -16,10 +17,15 @@ import {
   normalizeHindi,
   normalizeKannada,
   normalizeKashmiri,
+  normalizeKonkani,
+  normalizeMaithili,
   normalizeMalayalam,
   normalizeMarathi,
+  normalizeNepali,
+  normalizeOdia,
   normalizePashto,
   normalizePunjabi,
+  normalizeSanskrit,
   normalizeSindhi,
   normalizeSinhala,
   normalizeTamil,
@@ -171,6 +177,14 @@ export const TEXT_RULES: Readonly<Record<string, TextRules>> = {
   kn: indic("kn", "Kannada", normalizeKannada),
   ml: indic("ml", "Malayalam", normalizeMalayalam),
   si: indic("si", "Sinhala", normalizeSinhala),
+  ne: indic("ne", "Devanagari", normalizeNepali),
+  or: indic("or", "Oriya", normalizeOdia),
+  as: indic("as", "Bengali", normalizeAssamese),
+  sa: indic("sa", "Devanagari", normalizeSanskrit),
+  // Konkani's Wikipedia (gom) mixes Devanagari and Latin-script articles: only Devanagari runs
+  // are words here.
+  kok: { ...indic("kok", "Devanagari", normalizeKonkani), wiki: "gomwiki" },
+  mai: indic("mai", "Devanagari", normalizeMaithili),
   ...Object.fromEntries(Object.keys(LATIN_LOCALES).map((code) => [code, latin(code)])),
 };
 

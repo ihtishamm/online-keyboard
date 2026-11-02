@@ -42,11 +42,11 @@ export const ML_ROMAN: TranslitScheme = {
     { in: "l", next: "C", out: "ൽ:0.3 ൾ:0.5" },
     { in: "n", next: "C", out: "ൻ:0.4 ൺ:0.6" },
     { in: "m", next: "C", out: "ം:0.3" },
-    { in: "ri", prev: "C", out: "ൃ:0.5" },
-    { in: "ru", prev: "C", out: "ൃ:0.6" },
+    { in: "ri", prev: "C", out: "\u0D43:0.5" },
+    { in: "ru", prev: "C", out: "\u0D43:0.6" },
 
     ...abugidaRules({
-      virama: "്",
+      virama: "\u0D4D",
       inherentCost: 0.6,
       finalVirama: 1,
       consonants: [
@@ -91,9 +91,14 @@ export const ML_ROMAN: TranslitScheme = {
         { in: "i", independent: "ഇ ഈ:0.6", sign: "ി ീ:0.5" },
         { in: "ee", independent: "ഈ ഏ:0.3", sign: "ീ േ:0.3" },
         { in: "ii", independent: "ഈ", sign: "ീ" },
-        { in: "u", independent: "ഉ ഊ:0.6", sign: "ു ൂ:0.5", finalSign: "് ു:0.2 ൂ:0.8" },
-        { in: "oo", independent: "ഊ ഓ:0.3", sign: "ൂ ോ:0.3" },
-        { in: "uu", independent: "ഊ", sign: "ൂ" },
+        {
+          in: "u",
+          independent: "ഉ ഊ:0.6",
+          sign: "\u0D41 \u0D42:0.5",
+          finalSign: "\u0D4D \u0D41:0.2 \u0D42:0.8",
+        },
+        { in: "oo", independent: "ഊ ഓ:0.3", sign: "\u0D42 ോ:0.3" },
+        { in: "uu", independent: "ഊ", sign: "\u0D42" },
         { in: "e", independent: "എ ഏ:0.4 ഇ:0.5", sign: "െ േ:0.4" },
         { in: "ae", independent: "ഏ", sign: "േ" },
         { in: "ai", independent: "ഐ", sign: "ൈ" },
@@ -105,7 +110,7 @@ export const ML_ROMAN: TranslitScheme = {
       ],
     }),
   ],
-  omitted: "്:1.6 ു:1.8 ാ:2 ി:2",
+  omitted: "\u0D4D:1.6 \u0D41:1.8 ാ:2 ി:2",
   capitals: { T: "ട", D: "ഡ", N: "ണ", L: "ള", R: "റ" },
   words: [
     ["namaskaram", "നമസ്കാരം"],

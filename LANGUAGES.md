@@ -24,6 +24,12 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Kannada (/kannada) | Knda | C | yes | Beta | 55.6 % (Beta) | no | spell check meets its targets |
 | Malayalam (/malayalam) | Mlym | C | yes | Beta | 40 % (Beta) | no | spell check meets its targets |
 | Sinhala (/sinhala) | Sinh | C | yes | Beta | 58.9 % (Beta) | no | spell check meets its targets |
+| Nepali (/nepali) | Deva | C | yes | Beta | 44.9 % (Beta) | no | spell check meets its targets |
+| Odia (/odia) | Orya | C | yes | Beta | 41.5 % (Beta) | no | spell check meets its targets |
+| Assamese (/assamese) | Beng | C | yes | Beta | 45 % (Beta) | no | spell check meets its targets |
+| Sanskrit (/sanskrit) | Deva | C | yes | Beta | 50 % (Beta) | no | spell check meets its targets |
+| Konkani (/konkani) | Deva | C | yes | Beta | 48 % (Beta) | no | spell check meets its targets; typing test with words and sentences |
+| Maithili (/maithili) | Deva | C | yes | Beta | 48.7 % (Beta) | no | spell check meets its targets; typing test with words and sentences |
 | Spanish (/spanish) | Latn | B | yes | yes | – | es-ES, es-MX, es-US, es-AR, es-CO | native-speaker review |
 | French (/french) | Latn | B | yes | yes | – | fr-FR, fr-CA, fr-BE, fr-CH | native-speaker review |
 | Italian (/italian) | Latn | C | yes | Beta | – | it-IT, it-CH | spell check meets its targets |
