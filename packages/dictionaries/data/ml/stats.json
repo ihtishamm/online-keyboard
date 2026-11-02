@@ -1,0 +1,10 @@
+{
+  "source": "mlwiki-latest-pages-articles.xml.bz2",
+  "pages": 25754,
+  "sentences": 780945,
+  "repeatedSentencesSkipped": 56536,
+  "tokens": 6436698,
+  "distinctWords": 988002,
+  "wordsKept": 100000,
+  "nextWordHeads": 9048
+}

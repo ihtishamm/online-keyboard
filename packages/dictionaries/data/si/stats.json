@@ -1,0 +1,10 @@
+{
+  "source": "siwiki-latest-pages-articles.xml.bz2",
+  "pages": 23739,
+  "sentences": 543527,
+  "repeatedSentencesSkipped": 56043,
+  "tokens": 7167938,
+  "distinctWords": 406349,
+  "wordsKept": 100000,
+  "nextWordHeads": 9583
+}

@@ -172,7 +172,10 @@ export class Transliterator {
 
   /** What committing the word (Space) produces: the best non-completion candidate. */
   best(input: string, previous?: string | null): string {
-    return this.candidates(input, 8, previous).find((c) => c.kind !== "completion")?.text ?? input;
+    // Completions can fill the first eight places ("kaNNu"), so look at every candidate.
+    return (
+      this.candidates(input, Infinity, previous).find((c) => c.kind !== "completion")?.text ?? input
+    );
   }
 
   /** Convert running Roman text word by word, including punctuation. */

@@ -1,0 +1,25 @@
+{
+  "slug": "marathi",
+  "code": "mr",
+  "order": 120,
+  "lang": "mr",
+  "script": "Deva",
+  "dir": "ltr",
+  "name": {
+    "en": "Marathi",
+    "native": "मराठी"
+  },
+  "aliases": [],
+  "region": "south-asia",
+  "fonts": ["devanagari"],
+  "layouts": ["mr-roman", "mr-inscript"],
+  "sample": "मराठी माझी मातृभाषा आहे.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "mr",
+    "bing": "mr"
+  },
+  "tier": null,
+  "notes": "English letters first, as for Hindi (decision §11.1). No voice yet: the locale has not passed /voice-probe."
+}

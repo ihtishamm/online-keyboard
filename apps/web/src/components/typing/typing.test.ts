@@ -160,7 +160,7 @@ describe("lessons", () => {
 /** Languages whose Tatoeba set is too small or not in their script: words only. */
 const NO_SENTENCES = new Set(["sd", "ks"]);
 /** Small Tatoeba sets: every usable sentence, under 50. */
-const FEW_SENTENCES = new Set(["ps", "pnb"]);
+const FEW_SENTENCES = new Set(["ps", "pnb", "gu", "te", "kn", "si"]);
 
 describe("generated typing pages", () => {
   it("cover every language but Urdu, which has its own", () => {

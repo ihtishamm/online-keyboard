@@ -154,6 +154,14 @@ const ALPHABETS: Record<string, string> = {
   "ks-phonetic": "اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوۄہھءیےؠٲ",
   "hi-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
   "bn-inscript": "অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহৎ",
+  "mr-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसह",
+  "gu-inscript": "અઆઇઈઉઊઋએઐઓઔકખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલળવશષસહ",
+  "pa-inscript": "ਅਆਇਈਉਊਏਐਓਔਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵੜਸਹ",
+  "ta-inscript": "அஆஇஈஉஊஎஏஐஒஓஔகஙசஞடணதநபமயரலவழளறனஜஷஸஹ",
+  "te-inscript": "అఆఇఈఉఊఋఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరఱలళవశషసహ",
+  "kn-inscript": "ಅಆಇಈಉಊಋಎಏಐಒಓಔಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಲಳವಶಷಸಹ",
+  "ml-inscript": "അആഇഈഉഊഋഎഏഐഒഓഔകഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരറലളഴവശഷസഹ",
+  "si-wijesekara": "අආඇඈඉඊඋඌඑඒඔඕකඛගඝඞඟචඡජඣඤටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ",
 };
 
 /** Golden words typed on a US keyboard. */
@@ -168,6 +176,14 @@ const GOLDEN: [layoutId: string, keys: string, expected: string][] = [
   ["ks-phonetic", "k-xPr", "کٲشُر"],
   ["hi-inscript", "vcmdls", "नमस्ते"],
   ["bn-inscript", "yexne", "বাংলা"],
+  ["mr-inscript", 'cje"r', "मराठी"],
+  ["gu-inscript", "igpjelr", "ગુજરાતી"],
+  ["pa-inscript", "hxpeyr", "ਪੰਜਾਬੀ"],
+  ["ta-inscript", "ocfBd", "தமிழ்"],
+  ["te-inscript", "lzngig", "తెలుగు"],
+  ["kn-inscript", "kvdv[", "ಕನ್ನಡ"],
+  ["ml-inscript", "cn/eNx", "മലയാളം"],
+  ["si-wijesekara", "isxy,", "සිංහල"],
 ];
 
 describe("regional language pack", () => {

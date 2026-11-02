@@ -1,0 +1,248 @@
+{
+  "id": "gu-inscript",
+  "lang": "gu",
+  "script": "Gujr",
+  "dir": "ltr",
+  "name": {
+    "en": "InScript",
+    "native": "ઇનસ\u0ACDક\u0ACDરિપ\u0ACDટ"
+  },
+  "source": "Windows \"Gujarati\" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).",
+  "keys": {
+    "Digit1": {
+      "n": "1",
+      "s": "ઍ",
+      "ag": "૧",
+      "sag": "\u200D"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "\u0AC5",
+      "ag": "૨",
+      "sag": "\u200C"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "\u0ACDર",
+      "ag": "૩"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "ર\u0ACD",
+      "ag": "૪",
+      "sag": "₹"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "જ\u0ACDઞ",
+      "ag": "૫"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "ત\u0ACDર",
+      "ag": "૬"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "ક\u0ACDષ",
+      "ag": "૭"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "શ\u0ACDર",
+      "ag": "૮"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "(",
+      "ag": "૯"
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")",
+      "ag": "૦"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "ઃ"
+    },
+    "Equal": {
+      "n": "\u0AC3",
+      "s": "ઋ",
+      "ag": "\u0AC4",
+      "sag": "ૠ"
+    },
+    "KeyQ": {
+      "n": "ૌ",
+      "s": "ઔ"
+    },
+    "KeyW": {
+      "n": "\u0AC8",
+      "s": "ઐ"
+    },
+    "KeyE": {
+      "n": "ા",
+      "s": "આ"
+    },
+    "KeyR": {
+      "n": "ી",
+      "s": "ઈ"
+    },
+    "KeyT": {
+      "n": "\u0AC2",
+      "s": "ઊ"
+    },
+    "KeyY": {
+      "n": "બ",
+      "s": "ભ"
+    },
+    "KeyU": {
+      "n": "હ",
+      "s": "ઙ"
+    },
+    "KeyI": {
+      "n": "ગ",
+      "s": "ઘ"
+    },
+    "KeyO": {
+      "n": "દ",
+      "s": "ધ"
+    },
+    "KeyP": {
+      "n": "જ",
+      "s": "ઝ"
+    },
+    "BracketLeft": {
+      "n": "ડ",
+      "s": "ઢ"
+    },
+    "BracketRight": {
+      "n": "\u0ABC",
+      "s": "ઞ"
+    },
+    "Backslash": {
+      "n": "ૉ",
+      "s": "ઑ"
+    },
+    "KeyA": {
+      "n": "ો",
+      "s": "ઓ"
+    },
+    "KeyS": {
+      "n": "\u0AC7",
+      "s": "એ"
+    },
+    "KeyD": {
+      "n": "\u0ACD",
+      "s": "અ"
+    },
+    "KeyF": {
+      "n": "િ",
+      "s": "ઇ"
+    },
+    "KeyG": {
+      "n": "\u0AC1",
+      "s": "ઉ"
+    },
+    "KeyH": {
+      "n": "પ",
+      "s": "ફ"
+    },
+    "KeyJ": {
+      "n": "ર"
+    },
+    "KeyK": {
+      "n": "ક",
+      "s": "ખ"
+    },
+    "KeyL": {
+      "n": "ત",
+      "s": "થ"
+    },
+    "Semicolon": {
+      "n": "ચ",
+      "s": "છ"
+    },
+    "Quote": {
+      "n": "ટ",
+      "s": "ઠ"
+    },
+    "KeyX": {
+      "n": "\u0A82",
+      "s": "\u0A81",
+      "sag": "ૐ"
+    },
+    "KeyC": {
+      "n": "મ",
+      "s": "ણ"
+    },
+    "KeyV": {
+      "n": "ન"
+    },
+    "KeyB": {
+      "n": "વ"
+    },
+    "KeyN": {
+      "n": "લ",
+      "s": "ળ"
+    },
+    "KeyM": {
+      "n": "સ",
+      "s": "શ"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "ષ"
+    },
+    "Period": {
+      "n": ".",
+      "s": "।",
+      "ag": "॥",
+      "sag": "ઽ"
+    },
+    "Slash": {
+      "n": "ય"
+    }
+  },
+  "longpress": {
+    "Digit1": ["ઍ", "\u200D"],
+    "Digit2": ["\u0AC5", "\u200C"],
+    "Digit3": ["\u0ACDર"],
+    "Digit4": ["ર\u0ACD", "₹"],
+    "Digit5": ["જ\u0ACDઞ"],
+    "Digit6": ["ત\u0ACDર"],
+    "Digit7": ["ક\u0ACDષ"],
+    "Digit8": ["શ\u0ACDર"],
+    "Minus": ["ઃ"],
+    "Equal": ["ઋ", "\u0AC4", "ૠ"],
+    "KeyQ": ["ઔ"],
+    "KeyW": ["ઐ"],
+    "KeyE": ["આ"],
+    "KeyR": ["ઈ"],
+    "KeyT": ["ઊ"],
+    "KeyY": ["ભ"],
+    "KeyU": ["ઙ"],
+    "KeyI": ["ઘ"],
+    "KeyO": ["ધ"],
+    "KeyP": ["ઝ"],
+    "BracketLeft": ["ઢ"],
+    "BracketRight": ["ઞ"],
+    "Backslash": ["ઑ"],
+    "KeyA": ["ઓ"],
+    "KeyS": ["એ"],
+    "KeyD": ["અ"],
+    "KeyF": ["ઇ"],
+    "KeyG": ["ઉ"],
+    "KeyH": ["ફ"],
+    "KeyK": ["ખ"],
+    "KeyL": ["થ"],
+    "Semicolon": ["છ"],
+    "Quote": ["ઠ"],
+    "KeyX": ["\u0A81", "ૐ"],
+    "KeyC": ["ણ"],
+    "KeyN": ["ળ"],
+    "KeyM": ["શ"],
+    "Comma": ["ષ"],
+    "Period": ["।", "॥", "ઽ"]
+  }
+}

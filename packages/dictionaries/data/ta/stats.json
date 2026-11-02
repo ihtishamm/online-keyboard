@@ -1,0 +1,10 @@
+{
+  "source": "tawiki-latest-pages-articles.xml.bz2",
+  "pages": 29731,
+  "sentences": 921556,
+  "repeatedSentencesSkipped": 92117,
+  "tokens": 8608135,
+  "distinctWords": 847068,
+  "wordsKept": 100000,
+  "nextWordHeads": 9349
+}

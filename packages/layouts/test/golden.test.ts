@@ -30,6 +30,11 @@ describe("registry golden snapshot", () => {
   it("is unchanged", () => {
     const languages = LANGUAGES.filter((l) => SNAPSHOT.has(l.slug));
     const layoutIds = new Set(languages.flatMap((l) => l.layouts));
+    const schemeIds = new Set(
+      allLayouts()
+        .filter((l) => layoutIds.has(l.id))
+        .map((l) => l.translit),
+    );
     const now = JSON.stringify(
       {
         // The fields the site had before the move; fields added since are checked elsewhere.
@@ -38,7 +43,7 @@ describe("registry golden snapshot", () => {
         layouts: allLayouts()
           .filter((l) => layoutIds.has(l.id))
           .sort(byId),
-        schemes: [...SCHEME_LIST].sort(byId),
+        schemes: SCHEME_LIST.filter((s) => schemeIds.has(s.id)).sort(byId),
         bundles: languages.map((l) => {
           const bundle = languageBundle(l.slug);
           return { ...bundle, language: old(bundle.language) };

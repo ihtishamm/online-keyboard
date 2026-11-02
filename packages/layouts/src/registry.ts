@@ -47,6 +47,38 @@ import bangla from "../languages/bangla/language.json";
 import bnRoman from "../languages/bangla/roman.json";
 import { BN_ROMAN } from "./translit/bn-roman";
 import bnInscript from "../languages/bangla/inscript.json";
+import marathi from "../languages/marathi/language.json";
+import mrRoman from "../languages/marathi/roman.json";
+import { MR_ROMAN } from "./translit/mr-roman";
+import mrInscript from "../languages/marathi/inscript.json";
+import gujarati from "../languages/gujarati/language.json";
+import guRoman from "../languages/gujarati/roman.json";
+import { GU_ROMAN } from "./translit/gu-roman";
+import guInscript from "../languages/gujarati/inscript.json";
+import punjabi from "../languages/punjabi/language.json";
+import paRoman from "../languages/punjabi/roman.json";
+import { PA_ROMAN } from "./translit/pa-roman";
+import paInscript from "../languages/punjabi/inscript.json";
+import tamil from "../languages/tamil/language.json";
+import taRoman from "../languages/tamil/roman.json";
+import { TA_ROMAN } from "./translit/ta-roman";
+import taInscript from "../languages/tamil/inscript.json";
+import telugu from "../languages/telugu/language.json";
+import teRoman from "../languages/telugu/roman.json";
+import { TE_ROMAN } from "./translit/te-roman";
+import teInscript from "../languages/telugu/inscript.json";
+import kannada from "../languages/kannada/language.json";
+import knRoman from "../languages/kannada/roman.json";
+import { KN_ROMAN } from "./translit/kn-roman";
+import knInscript from "../languages/kannada/inscript.json";
+import malayalam from "../languages/malayalam/language.json";
+import mlRoman from "../languages/malayalam/roman.json";
+import { ML_ROMAN } from "./translit/ml-roman";
+import mlInscript from "../languages/malayalam/inscript.json";
+import sinhala from "../languages/sinhala/language.json";
+import siRoman from "../languages/sinhala/roman.json";
+import { SI_ROMAN } from "./translit/si-roman";
+import siWijesekara from "../languages/sinhala/wijesekara.json";
 import spanish from "../languages/spanish/language.json";
 import esEasy from "../languages/spanish/easy.json";
 import esSpain from "../languages/spanish/spain.json";
@@ -110,6 +142,14 @@ export const LANGUAGE_FILES = [
   kashmiri,
   hindi,
   bangla,
+  marathi,
+  gujarati,
+  punjabi,
+  tamil,
+  telugu,
+  kannada,
+  malayalam,
+  sinhala,
   spanish,
   french,
   italian,
@@ -151,6 +191,22 @@ export const RAW_LAYOUTS = [
   hiInscript,
   bnRoman,
   bnInscript,
+  mrRoman,
+  mrInscript,
+  guRoman,
+  guInscript,
+  paRoman,
+  paInscript,
+  taRoman,
+  taInscript,
+  teRoman,
+  teInscript,
+  knRoman,
+  knInscript,
+  mlRoman,
+  mlInscript,
+  siRoman,
+  siWijesekara,
   esEasy,
   esSpain,
   esLatam,
@@ -201,6 +257,14 @@ export const SCHEME_LIST: readonly TranslitScheme[] = [
   KS_ROMAN,
   HI_ROMAN,
   BN_ROMAN,
+  MR_ROMAN,
+  GU_ROMAN,
+  PA_ROMAN,
+  TA_ROMAN,
+  TE_ROMAN,
+  KN_ROMAN,
+  ML_ROMAN,
+  SI_ROMAN,
 ];
 
 export {
@@ -215,4 +279,12 @@ export {
   KS_ROMAN,
   HI_ROMAN,
   BN_ROMAN,
+  MR_ROMAN,
+  GU_ROMAN,
+  PA_ROMAN,
+  TA_ROMAN,
+  TE_ROMAN,
+  KN_ROMAN,
+  ML_ROMAN,
+  SI_ROMAN,
 };

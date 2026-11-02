@@ -169,6 +169,55 @@ export function normalizeBangla(raw: string): string | null {
   return checked(w, BN_LETTERS);
 }
 
+/**
+ * Wave 2 Indic scripts (plan 9a): NFC, joiners dropped (they only steer rendering), and a
+ * word must start with a letter and hold only the script's letters and signs: no digits,
+ * dandas or abbreviation signs.
+ */
+function indic(letters: RegExp, fix: (w: string) => string = (w) => w) {
+  return (raw: string): string | null =>
+    checked(fix(raw.normalize("NFC")).replace(/[\u200C\u200D]/g, ""), letters);
+}
+
+/** Marathi is written in Devanagari: Hindi's rules (ळ and ॲ are in its letter range). */
+export const normalizeMarathi = normalizeHindi;
+export const normalizeGujarati = indic(
+  /^[\u0A85-\u0AB9\u0AE0\u0AE1\u0AF9][\u0A81-\u0AE3\u0AFA-\u0AFF]*$/u,
+);
+export const normalizePunjabi = indic(
+  /^[\u0A05-\u0A39\u0A59-\u0A5E\u0A72\u0A73][\u0A01-\u0A51\u0A59-\u0A5E\u0A70-\u0A75]*$/u,
+);
+export const normalizeTamil = indic(/^[\u0B85-\u0BB9][\u0B82-\u0BCD\u0BD7]*$/u);
+export const normalizeTelugu = indic(
+  /^[\u0C05-\u0C39\u0C58-\u0C5A\u0C60\u0C61][\u0C00-\u0C56\u0C58-\u0C5A\u0C60-\u0C63]*$/u,
+);
+export const normalizeKannada = indic(
+  /^[\u0C85-\u0CB9\u0CDE\u0CE0\u0CE1][\u0C80-\u0CD6\u0CDE\u0CE0-\u0CE3\u0CF1\u0CF2]*$/u,
+);
+
+/** Old chillu spellings (letter, virama, ZWJ) as the atomic chillu letters of Unicode 5.1. */
+const CHILLU: Readonly<Record<string, string>> = {
+  ണ: "ൺ",
+  ന: "ൻ",
+  ര: "ർ",
+  ല: "ൽ",
+  ള: "ൾ",
+  ക: "ൿ",
+};
+export const normalizeMalayalam = indic(
+  /^[\u0D05-\u0D3A\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F][\u0D00-\u0D4E\u0D54-\u0D57\u0D5F-\u0D63\u0D7A-\u0D7F]*$/u,
+  (w) => w.replace(/([ണനരലളക])\u0D4D\u200D/g, (_, c: string) => CHILLU[c]!),
+);
+
+const SI_LETTERS = /^[\u0D85-\u0DC6][\u0D81-\u0DC6\u0DCA-\u0DDF\u0DF2\u0DF3\u200D]*$/u;
+/**
+ * Sinhala keeps ZWJ: it builds the touching and half forms (ශ්‍රී, ක්‍ය) that the language
+ * spells with, so a word without it is written differently. ZWNJ goes.
+ */
+export function normalizeSinhala(raw: string): string | null {
+  return checked(raw.normalize("NFC").replace(/\u200C/g, ""), SI_LETTERS);
+}
+
 /** Word normalisers by data code (Language.code). */
 export const WORD_NORMALIZERS: Readonly<Record<string, (raw: string) => string | null>> = {
   ur: normalizeUrdu,
@@ -183,4 +232,12 @@ export const WORD_NORMALIZERS: Readonly<Record<string, (raw: string) => string |
   bal: normalizeBalochi,
   hi: normalizeHindi,
   bn: normalizeBangla,
+  mr: normalizeMarathi,
+  gu: normalizeGujarati,
+  pa: normalizePunjabi,
+  ta: normalizeTamil,
+  te: normalizeTelugu,
+  kn: normalizeKannada,
+  ml: normalizeMalayalam,
+  si: normalizeSinhala,
 };

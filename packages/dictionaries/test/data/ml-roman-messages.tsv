@@ -1,0 +1,44 @@
+# ml: held-out sentences (test split), Roman -> words
+# From the Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0:
+# https://github.com/google-research-datasets/dakshina
+# Native words normalised with packages/dictionaries/src/languages.ts.
+payyannoorile kandoth kshethratthinu munnil a	പയ്യന്നൂരിലെ കണ്ടോത്ത് ക്ഷേത്രത്തിനു മുന്നിൽ എ
+n general assembly palastine jutharkkum arabikalkkumayi vibhajikuvanulla theerumanam angeekarichu	എൻ ജനറൽ അസംബ്ലി പലസ്തീൻ ജൂതർക്കും അറബികൾക്കുമായി വിഭജിക്കുവാനുള്ള തീരുമാനം അംഗീകരിച്ചു
+theofilactinte penmakkalaya mrisiyayum theodorayum pilkkalathe papel rashtriyathe ere svadhinichu	തിയോഫൈലാക്ടിന്റെ പെണ്മക്കളായ മറോസിയയും തിയൊഡോറായും പിൽക്കാലത്തെ പേപ്പൽ രാഷ്ട്രീയത്തെ ഏറെ സ്വാധീനിച്ചു
+aankili mattoru penkiliyodoppam kazhinjirunnu	ആൺകിളി മറ്റൊരു പെൺകിളിയോടൊപ്പം കഴിഞ്ഞിരുന്നു
+paapineni shivashankar rachicha thelughu kavithakalude samaahaaramaanu rajanighandha kavitha	പാപിനേനി ശിവശങ്കർ രചിച്ച തെലുഗു കവിതകളുടെ സമാഹാരമാണ് രജനിഗന്ധ കവിത
+ithe pole mattu uyarnna moolakangalkkokke dhravyanashtam undaayittund ennu pinneedulla pareekshanangal theliyichu	ഇതേ പോലെ മറ്റു ഉയർന്ന മൂലകങ്ങൾക്കൊക്കെ ദ്രവ്യനഷ്ടം ഉണ്ടായിട്ടുണ്ട് എന്നു പിന്നീടുള്ള പരീക്ഷണങ്ങൾ തെളിയിച്ചു
+kozhikkod faarooq kolejilum vividha gava	കോഴിക്കോട് ഫാറൂഖ് കോളേജിലും വിവിധ ഗവ
+panthrandu gothrangalaayi bhoomi pankidukayum cheythu nyaayaadhipanmaar ennariyappetta bharanaadhipanmaaraayirunnu bharanam nadathiyirunnathu	പന്ത്രണ്ടു ഗോത്രങ്ങളായി ഭൂമി പങ്കിടുകയും ചെയ്തു ന്യായാധിപൻമാർ എന്നറിയറിയപ്പെട്ട ഭരണാധിപൻമാരായിരുന്നു ഭരണം നടത്തിയിരുന്നത്
+ikkaalathu vadakkan afgaanisthaante mikka bhaagangalum usbekkukalude niyandhranathilaayirunnu	ഇക്കാലത്ത് വടക്കൻ അഫ്ഹ്ഗാനിസ്താന്റെ മിക്ക ഭാഗങ്ങൾഊം ഉസ്ബെക്കുകളുടെ നിയന്ത്രണത്തിലായിരുന്നു
+prathyakshanubhavamillathe manasilundakunna bodham bahyavasthuvinte pakarppayi thonnukayeyilla	പ്രത്യക്ഷാനുഭവമില്ലാതെ മനസ്സിലുണ്ടാകുന്ന ബോധം ബാഹ്യവസ്തുവിന്റെ പകർപ്പായി തോന്നുകയേയില്ല
+chathurangam pole porulla kali	ചതുരംഗം പോലെ പോരുള്ള കളി
+palamaramkondundakiya valiya dhoopakuttiyil kanaleduthu dhooparadhana nadathunnu	പാലമരംകൊണ്ടുണ്ടാക്കിയ വലിയ ധൂപക്കുറ്റിയിൽ കനലെടുത്ത് ധൂപാരാധന നടത്തുന്നു
+melinjnja sareerathinu thavittuniramanu maril vilariya manjnjanirathilulla varakal kanam	മെലിഞ്ഞ ശരീരത്തിന് തവിട്ടുനിറമാണ് മാറിൽ വിളറിയ മഞ്ഞനിറത്തിലുള്ള വരകൾ കാണാം
+yennal russiayil communist viplavathe thudarnnu adhikarathilethiya stalin ee rahasya karaar parasyapeduthukayundayi	എന്നാൽ റഷ്യയിൽ കമ്മ്യൂണിസ്റ്റ് വിപ്ലവത്തെ തുടർന്ന് അധികാരത്തിലെത്തിയ സ്റ്റാലിൻ ഈ രഹസ്യ കരാർ പരസ്യപ്പെടുത്തുകയുണ്ടായി
+lanu gulf newsprasideekaranam aarambichathu uaeyile businessmariloralaya abdul vhab gladhari aanu pathrathinte muthaliyayirunnu	ലാണ് ഗൾഫ് ന്യൂസ്പ്രസിദ്ധീകരണം ആരംഭിച്ചത് യുഎഇയിലെ ബിസിനസുമാരിലൊരാളായ അബ്ദുൽ വഹാബ് ഗലധാരി ആണ് പത്രത്തിൻറെ മുതലാളിയായിരുന്നു
+yettedukan alillathe varunna mrithasharerangal eteduthu paripalanam natathunnathilum addheham munkieduthu	ഏറ്റെടുക്കാൻ ആളില്ലാതെ വരുന്ന മൃതശരീരങ്ങൾ ഏറ്റെടുത്ത് പരിപാലനം നടത്തുന്നതിലും അദ്ദേഹം മുൻകയ്യെടുത്തു
+kaya bala grahadikalaya ettu amgangaleyum purvasamhithakalilninnu samaharichu bhamgiyayum kramanusrithamayum ashtamgahridayathil vivarichittund	കായ ബാല ഗ്രഹാദികളായ എട്ട് അംഗങ്ങളെയും പൂർവസംഹിതകളിൽനിന്നു സമാഹരിച്ചു ഭംഗിയായും ക്രമാനുസൃതമായും അഷ്ടാംഗഹൃദയത്തിൽ വിവരിച്ചിട്ടുണ്ട്
+vimanathavalathinu purame ee dveepil anekam vyavasaya salakalum und	വിമാനത്താവളത്തിനു പുറമേ ഈ ദ്വീപിൽ അനേകം വ്യവസായ ശാലകളും ഉണ്ട്
+international rose test garden parkil yennal nilavil mrigashalayil mathramanu pravarthikunnath	ഇന്റർനാഷണൽ റോസ് ടെസ്റ്റ് ഗാർഡൻ പാർക്കിൽ എന്നാൽ നിലവിൽ മൃഗശാലയിൽ മാത്രമാണ് പ്രവർത്തിക്കുന്നത്
+jamaaathe islaami keralayude pravarthanangalude kendhramaanu kozhikkottu sthithicheyunna hiraa sentar	ജമാഅത്തെ ഇസ്ലാമി കേരളയുടെ പ്രവർത്തനങ്ങളുടെ കേന്ദ്രമാണ് കോഴിക്കോട്ട് സ്ഥിതിചെയ്യുന്ന ഹിറാ സെന്റർ
+ganthathilum bhaashaa prayogathilum praaveenyam nedaan tiksit sahaayichirunnu	ഗണിതത്തിലും ഭാഷാ പ്രയോഗത്തിലും പ്രാവീണ്യം നേടാൻ ടിക്സിറ്റ് സഹായിച്ചിരുന്നു
+indiayku svathandryam labhichathinushesham aacharya vinoba bhaveyumothu bhoodaanaprasthaanathil pravarthichu	ഇന്ത്യയ്ക്കു സ്വാതന്ത്ര്യം ലഭിച്ചതിനുശേഷം ആചാര്യ വിനോബാ ഭാവേയുമൊത്ത് ഭൂദാനപ്രസ്ഥാനത്തിൽ പ്രവർത്തിച്ചു
+ithekkurichu niravadhi virudhaabhipraayangal nilanilkkunnundu	ഇതേക്കുറിച്ച് നിരവധി വിരുദ്ധാഭിപ്രായങ്ങൾ നിലനിൽക്കുന്നുണ്ട്
+achyuthapishaaradikku jyothishaasthrathil anekam prasidha shishyanmaarum prashishyanmaarum undaayittund	അച്യുതപ്പിഷാരടിക്കു ജ്യോതിശ്ശാസ്ത്രത്തിൽ അനേകം പ്രസിദ്ധ ശിഷ്യൻമാരും പ്രശിഷ്യൻമാരും ഉണ്ടായിട്ടുണ്ട്
+thakshakan perulla sarppavum rakshappettathaayi mahaabhaarathathil parayunnundu	തക്ഷകൻ പേരുള്ള സർപ്പവും രക്ഷപെട്ടതായി മഹാഭാരതത്തിൽ പറയുന്നുണ്ട്
+muthal bangloorilekk nirantharam yaathracheythu niyamapadanam nadathi abhibhaashakayaayitheernnu	മുതൽ ബാംഗ്ലൂരിലേക്ക് നിരന്തരം യാതചെയ്ത് നിയമപഠനം നടത്തി അഭിഭാഷകയായിത്തീർന്നു
+akkaalathu parichamuttukaliyum ithinte bhaagamaayirunnu	അക്കാലത്ത് പരിചമുട്ടുകളിയും ഇതിൻറെ ഭാഗമായിരുന്നു
+per tokyoyile antharashtra mathsarathil pankeduthu ezhu kappukalumayanu madangiyath	പേർ ടോക്യോയിലെ അന്താരാാഷ്ട്ര മത്സരത്തിൽ പങ്കെടുത്തു ഏഴു കപ്പുകളുമായാണ് മടങ്ങിയത്
+daiaryyude pradhanyam vardhippikkunna oru visheshatha british charithrathile randu duranthagalude drkksakshivivaranam athil undennullathumanu	ഡയറിയുടെ പ്രാധാന്യം വർദ്ധിപ്പിക്കുന്ന ഒരു വിശേഷത ബ്രിട്ടീഷ് ചരിത്രത്തിലെ രണ്ടു ദുരന്തങ്ങളുടെ ദൃക്സാക്ഷിവിവരണം അതിൽ ഉണ്ടെന്നുള്ളതാണ്
+innu morokko aanu ee raajyathinte bhooribhaagavum morokkoyude thekkan pradheshangal enna peril bharikkunnathu	ഇന്ന് മൊറോക്കോ ആണ് ഈ രാജ്യത്തിന്റെ ഭൂരിഭാഗവും മൊറോക്കോയുടെ തെക്കൻ പ്രദേശങ്ങൾ എന്ന പേരിൽ ഭരിക്കുന്നത്
+bharthavil ninnum ammayil ninnum avalku peedakalelkendi vannu	ഭർത്താവിൽ നിന്നും അമ്മയിൽ നിന്നും അവൾക്ക് പീഡകളേൽക്കേണ്ടി വന്നു
+yennal thekkum kizhakkum meghalakalil preshnangal nilaninnu	എന്നാൽ തെക്കും കിഴക്കും മേഖലകളിൽ പ്രശ്നങ്ങൾ നിലനിന്നു
+ee padhathi adhyam arambhichathu malapuram jillayilanu	ഈ പദ്ധതി ആദ്യം ആരംഭിച്ചത് മലപ്പുറം ജില്ലയിലാണ്
+enkilum ethinu upolbalakamaya thelivukal charithrarekhakalil thulom kuravanu	എങ്കിലും ഇതിനു ഉപോൽബലകമായ തെളിവുകൾ ചരിത്രരേഖകളിൽ തുലോം കുറവാണ്
+ethiloode meltharam pashukutikale labhyamakanavum	ഇതിലൂടെ മേൽത്തരം പശുക്കുട്ടികളെ ലഭ്യമാക്കാനാവും
+malabar jewthanmaranu ethu nirmichathu	മലബാർ ജൂതന്മാരാണ് ഇത് നിർമിച്ചത്
+ee vanijyasamghadanakal ennu lokavyaparasamghadanayumayi sahakarichu pravarthikkunnu	ഈ വാണിജ്യസംഘടനകൾ ഇന്ന് ലോകവ്യാപാരസംഘടനയുമായി സഹകരിച്ചു പ്രവർത്തിക്കുന്നു
+filile nirdhishta block yethunnidamvare file entry blockukal vayikkuka	ഫയലിലെ നിർദ്ദിഷ്ട ബ്ലോക്ക് എത്തുന്നിടംവരെ ഫയൽ എൻട്രി ബ്ലോക്കുകൾ വായിക്കുക
+ith kollathinte sampath vyavasthaye vanthothil svadhinichittund	ഇത് കൊല്ലത്തിന്റെ സമ്പത്ത് വ്യവസ്ഥയെ വൻതോതിൽ സ്വാധീനിച്ചിട്ടുണ്ട്
+thanne avalkku sweekaaryanaakkumvidham thaan sampathum prashasthiyum nedum angane flo	തന്നെ അവൾക്ക് സ്വീകാര്യനാക്കുംവിധം താൻ സമ്പത്തും പ്രശസ്തിയും നേടും അങ്ങനെ ഫ്ലോ

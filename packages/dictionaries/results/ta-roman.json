@@ -1,0 +1,10 @@
+{
+  "scheme": "ta-roman",
+  "source": "Dakshina test split",
+  "pairs": 1000,
+  "top1": 0.502,
+  "top5": 0.575,
+  "messageWords": 316,
+  "correctionsPer10Words": 3.73,
+  "beta": true
+}

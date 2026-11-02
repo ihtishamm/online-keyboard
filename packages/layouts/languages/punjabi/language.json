@@ -1,0 +1,25 @@
+{
+  "slug": "punjabi",
+  "code": "pa",
+  "order": 140,
+  "lang": "pa",
+  "script": "Guru",
+  "dir": "ltr",
+  "name": {
+    "en": "Punjabi (Gurmukhi)",
+    "native": "ਪੰਜਾਬੀ"
+  },
+  "aliases": ["Gurmukhi"],
+  "region": "south-asia",
+  "fonts": ["gurmukhi"],
+  "layouts": ["pa-roman", "pa-inscript"],
+  "sample": "ਪੰਜਾਬੀ ਮੇਰੀ ਮਾਂ ਬੋਲੀ ਹੈ।",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "pa",
+    "bing": "pa"
+  },
+  "tier": null,
+  "notes": "English letters first, as for Hindi (decision §11.1). No voice yet: the locale has not passed /voice-probe."
+}

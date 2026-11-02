@@ -1,0 +1,44 @@
+# si: held-out sentences (test split), Roman -> words
+# From the Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0:
+# https://github.com/google-research-datasets/dakshina
+# Native words normalised with packages/dictionaries/src/languages.ts.
+me hethuwen swiwara asthiyata mrudu durwala saha namyashili gunanga labi atha	මේ හේතුවෙන් සවිවර අස්ථියට මෘදු දුර්වල සහ නම්‍යශීලී ගුණාංග ලැබී ඇත
+meya sri lankawata pamanakma suvishesi wu piliganeeme kramayaki	මෙය ශ්‍රී ලංකාවට පමණක්ම සුවිශේෂී වූ පිළිගැනීමෙී ක්‍රමයකි
+this yodun dura gewa chethiya rata jayathura nuwara shalawata wediya waga	තිස් යොදුන් දුර ගෙවා චේතිය රට ජයතුරා නුවර ශාලාවට වැඩිය වග
+emenma hisarudava venuven hisathel gema da nasya kirima da anudena vadara etha	එමෙන්ම හිසරුදාව වෙනුවෙන් හිසතෙල් ගෑම ද නස්‍ය කිරීම ද අනුදැන වදාරා ඇත
+hanuman aushadha vanantharaya galawa hisa pita thabagena lankapurayata eyi	හනුමාන් ඖෂධ වනාන්තරය ගලවා හිස පිට තබාගෙන ලංකාපුරයට එයි
+eelangata wayo dhathuwa apata gandhaya danenene wayo dhathuwa haraha	ඊලගට වායෝ ධාතුව අපට ගන්ධය දැනෙන්නේ වායෝ ධාතුව හරහා
+di yudew agamana rali eksath janapadaya eya sidukarana	දී යුදෙව් ආගමන රැලි එක්සත් ජනපදය එය සිදුකරන
+sokari saha guruhami owunge mehekuruwada samaga kasee rata sita meratata paminethi	සොකරි සහ ගුරුහාමි ඔවුන්ගේ මෙහෙකුරුවාද සමඟ කසී රට සිට මෙරටට පැමිණෙති
+pirisa kandayam washayen pathi kihipayakata bedee giyoya	පිරිස කණ්ඩායම් වශයෙන් පැති කිහිපයකට බෙදී ගියෝය
+thetiya medde kalu karapu m s fernando h r jothipala ethulu pirisa	තැටිය මැද්දේ කළු කරාපු එම් එස් ප්‍රනාන්දු එච් ආර ජෝතිපාල ඇතුළු පිරිස
+christhu sabhaawe adhipathyaya bindawetiima	ක්‍රිස්තු සභාවේ ආධිපත්‍යය බිඳවැටීම
+nidasunak lesa wayamba palath sabhawa thula ethi wu getuam dekviya heka	නිදසුනක් ලෙස වයඹ පළාත් සභාව තුළ ඇති වූ ගැටුම දැක්විය හැක
+meya soyaganna ladde jiyowani batista belsoni wisin dee ya	මෙය සොයාගන්නා ලද්දේ ජියෝවනී බැටිස්ටා බෙල්සොනි විසින් දී ය
+wartha gatha karunu newatha pareekshanaya	වාර්තා ගත කරුණු නැවත පරීක්ෂණය
+rawananhi peradasunak chennaihi devi sri devi cinama sankeernaye di pradarshanaya kerini	රාවණන්හි පෙරදසුනක් චෙන්නායිහි දේවි ශ්‍රී දේවි සිනමා සංකීර්ණයේ දී ප්‍රදර්ශනය කෙරිණි
+bill clinton siya adyapanaya laba gaththedda mema wishwa vidyalayeni	බිල් ක්ලිටන් සිය අධ්‍යාපනය ලබා ගත්තේද මෙම විශ්ව විද්‍යාලයෙනි
+ewa matha balayan yedu wita ghana vasthun virupanayata bhajanaya wiya heka	ඒවා මත බලයන් යෙදූ විට ඝන වස්තූන් විරූපණයට භාජනය විය හැක
+aandukrama wyawastha prathisanskaranaya sandhaha commissioni sabhawa path kireemata asannathama hethuwa wuye d	ආණ්ඩුක්‍රම ව්‍යවස්ථා ප්‍රතිසංස්කරණය සඳහා කොමිෂන් සභාව පත් කිරීමට ආසන්නතම හේතුව වූයේ ඩී
+vidimath adyapana vishaya malawata ayithi saundarya wishayayan	විධිමත් අධ්‍යාපන විෂය මාලාවට අයිති සෞන්දර්ය විෂයයන්
+gruha palanaya obe karyayanta wishala washayen balapanne keseda	ගෘහ පාලනය ඔ‍බේ කාර්යයන්ට විශාල වශයෙන් බලපාන්නේ කෙසේද
+memagin boho wishmayakara awarana athi laka heka	මෙමගින් බොහෝ විස්මයාකාර ආචරණ ඇති කල හැක
+gini pratirodhi parisara vrndaya	ගිනි ප්‍රතිරෝධී පරිසර වෘන්දය
+ohuge maranayata hethuwa nodani	ඔහුගේ මරණයට හේතුව නොදනී
+own sathu mema denuma palamu lothal thoraganeemedee da hethuwannata atha	ඔවුන් සතු මෙම දැනුම පළමු ලෝතාල් තෝරාගැනීමේදී ද හේතුවන්නට ඇත
+hweomsahi gakhwanjon shalawa guruye pranthaya	හ්වේඔම්සාහි ගක්හ්වංජොන් ශාලාව ගුර්යේ ප්‍රාන්තය
+mema sankalpaya sathipoojawa yanuwen salakai	මෙම සංතල්පය සතිපූජාව යනුවෙන් සළකයි
+mema dilindubhavaya hethuven pahath panthikayange thatthvaya behevin pahath viya	මෙම දිළිඳුභාවය හේතුවෙන් පහත් පාන්තිකයන්ගේ තත්ත්වය බෙහෙවින් පහත් විය
+oba ohuta yahamaga penvayi	ඔබ ඔහුට යහමග පෙන්වයි
+ege piya police sarayan m	ඇගේ පියා පොලිස් සැරයන් එම්
+rajaya ewa yatapath kireemata uthsaha kalada anek palathwalatada wirodatha pathira giyeya	රජය ඒවා යටපත් කිරීමට උත්සාහ කලද අනෙක් පළාත්වලටද විරෝධතා පැතිර ගියේය
+meda kana kuda asthika thunakin samanwitha ya	මැද කන කුඩා අස්ථිකා තුනකින් සමන්විත ය
+me ek ek ayathana sathu karya ha balathala prannapthiyema sandahan wei	මේ එක් එක් ආයතන සතු කාර්ය හා බලතල ප‍්‍රඥප්තියේම සඳහන් වෙයි
+methek awaboda karagena athi andamata memagin athi karana rogi thathwaya barapathala nowe	මෙතෙක් අවබෝධ කරගෙන ඇති අන්දමට මෙමගින් ඇති කරන රෝගී තතවය බරපතල නොවේ
+sri lankawe diya eli ganga saha vananthara sarath ranaweera	ශ්‍රී ලංකාවේ දිය ඇලි ගංගා සහ වනාන්තර සරත් රණවීර
+mewayen kumak anawaranaya kara yuthuda yanna rajaya thira nadaya karai	මේවායෙන් කුමක් අනාවරනය කර යුතුද යන්න රජය තිර නදය කරයි
+sampradayika kramayedi chithra patayak thanithani ruuparamu rasakin yuktha we	සාම්ප්‍රදායික ක්‍රමයේදී චිත්‍ර පටයක් තනිතනි රූපරාමු රැසකින් යුක්ත වේ
+eyin labana upatha bhawa uppaththiyai	එයින් ලබන උපත භව උප්පත්තියයි
+owun wisinma kshathreeya thathwaya sandaha himikam pa atha	ඔවුන් විසින්ම ක්ෂත්‍රීයය තත්ත්වය සඳහා හිමිකම් පෑ ඇත
+ehi paramarathaya wooye jathyanthara samaya ha awabodhaya athikaraleemai	එහි පරමාර්ථය වූයේ ජාත්‍යන්තර සාමය හා අවබෝධය ඇතිකරලීමයි
+e pilibanda one tharam janaprawada apa asa etha	ඒ පිළිබද ඕනෑ තරම් ජනප්රනවාද අප අසා ඇත

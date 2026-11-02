@@ -1,0 +1,10 @@
+{
+  "source": "guwiki-latest-pages-articles.xml.bz2",
+  "pages": 31038,
+  "sentences": 421874,
+  "repeatedSentencesSkipped": 82806,
+  "tokens": 5843446,
+  "distinctWords": 376581,
+  "wordsKept": 100000,
+  "nextWordHeads": 9805
+}

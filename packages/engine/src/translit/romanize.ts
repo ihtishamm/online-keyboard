@@ -31,6 +31,18 @@ export interface IndicTable {
   marks: Readonly<Record<string, Pair>>;
   /** Combining nukta (क + \u093C = क़). */
   nukta?: string;
+  /** A mark that doubles the next consonant: the Gurmukhi addak (ਪੱਕਾ pakka). */
+  gemination?: string;
+  /**
+   * Chat spelling drops a final or medial inherent vowel (Hindi kamal, kamla). Dravidian
+   * languages and Sinhala pronounce it, so they set this to false (Tamil vanakkam).
+   */
+  schwaDeletion?: boolean;
+  /**
+   * Spellings of a mark, or of the virama, at the end of a word: Malayalam ആണ് is "aanu",
+   * Telugu నమస్కారం is "namaskaram".
+   */
+  finalMarks?: Readonly<Record<string, Pair>>;
 }
 
 export interface ArabicTable {
@@ -84,6 +96,9 @@ export const DEVANAGARI: IndicTable = {
     ष: p("sh", "ṣ"),
     स: p("s"),
     ह: p("h"),
+    // Marathi
+    ळ: p("l", "ḷ"),
+    ऱ: p("r", "ṟ"),
     क़: p("q"),
     ख़: p("kh", "k͟h"),
     ग़: p("gh", "ġ"),
@@ -201,6 +216,223 @@ export const BENGALI: IndicTable = {
   },
   marks: { "ং": p("ng", "ṁ"), "\u0981": p("n", "m̐"), "ঃ": p("h", "ḥ"), "।": p(".") },
   nukta: "\u09BC",
+};
+
+// ----- Scripts laid out like Devanagari -----
+
+/**
+ * Gurmukhi, Gujarati, Tamil, Telugu, Kannada and Malayalam keep Devanagari's letter order in
+ * Unicode (from ISCII): each letter sits at the same offset in its block. Their tables start
+ * from Devanagari's, moved to the script's block, keeping only letters the script has; each
+ * then adds or changes its own.
+ */
+function shifted(
+  offset: number,
+  script: string,
+  own: {
+    inherent?: Pair;
+    consonants?: Record<string, Pair>;
+    vowels?: Record<string, Pair>;
+    signs?: Record<string, Pair>;
+    marks?: Record<string, Pair>;
+  } & Pick<IndicTable, "nukta" | "gemination" | "schwaDeletion" | "finalMarks">,
+): IndicTable {
+  const inScript = new RegExp(`^\\p{Script=${script}}+$`, "u");
+  const move = (table: Readonly<Record<string, Pair>>) =>
+    Object.fromEntries(
+      Object.entries(table)
+        .map(
+          ([k, v]) =>
+            [String.fromCodePoint(...[...k].map((c) => c.codePointAt(0)! + offset)), v] as const,
+        )
+        .filter(([k]) => inScript.test(k)),
+    );
+  const { consonants, vowels, signs, marks, inherent, ...rest } = own;
+  return {
+    kind: "indic",
+    virama: String.fromCodePoint(0x094d + offset),
+    inherent: inherent ?? DEVANAGARI.inherent,
+    consonants: { ...move(DEVANAGARI.consonants), ...consonants },
+    vowels: { ...move(DEVANAGARI.vowels), ...vowels },
+    signs: { ...move(DEVANAGARI.signs), ...signs },
+    marks: { ...move(DEVANAGARI.marks), "।": p("."), "॥": p("."), ...marks },
+    nukta: inScript.test(String.fromCodePoint(0x093c + offset))
+      ? String.fromCodePoint(0x093c + offset)
+      : undefined,
+    ...rest,
+  };
+}
+
+export const GURMUKHI: IndicTable = shifted(0x100, "Gurmukhi", {
+  consonants: { ੜ: p("r", "ṛ"), ਲ਼: p("l", "ḷ"), ਸ਼: p("sh", "ś") },
+  vowels: { ੲ: p("i"), ੳ: p("u") },
+  marks: { "ੰ": p("n", "ṁ") },
+  gemination: "ੱ",
+});
+
+export const GUJARATI: IndicTable = shifted(0x180, "Gujarati", {
+  consonants: { ળ: p("l", "ḷ") },
+});
+
+/** Short and long e and o, apart in the South Indian scripts (ISO 15919 e/ē, o/ō). */
+const SOUTH_E_O = (offset: number) => {
+  const c = (cp: number) => String.fromCodePoint(cp + offset);
+  return {
+    vowels: {
+      [c(0x090e)]: p("e"),
+      [c(0x090f)]: p("e", "ē"),
+      [c(0x0912)]: p("o"),
+      [c(0x0913)]: p("o", "ō"),
+    },
+    signs: {
+      [c(0x0946)]: p("e"),
+      [c(0x0947)]: p("e", "ē"),
+      [c(0x094a)]: p("o"),
+      [c(0x094b)]: p("o", "ō"),
+    },
+  };
+};
+
+export const TAMIL: IndicTable = shifted(0x280, "Tamil", {
+  consonants: {
+    // Tamil has one letter for k/g, ch/s, ṭ/ḍ, t/d and p/b: chat spells them as said most.
+    ச: p("s", "c"),
+    ஞ: p("nj", "ñ"),
+    ட: p("t", "ṭ"),
+    ன: p("n", "ṉ"),
+    ற: p("r", "ṟ"),
+    ழ: p("zh", "ḻ"),
+    ள: p("l", "ḷ"),
+    த: p("th", "t"),
+  },
+  vowels: { ...SOUTH_E_O(0x280).vowels },
+  signs: { ...SOUTH_E_O(0x280).signs },
+  marks: { ஃ: p("h", "ḵ") },
+  schwaDeletion: false,
+});
+
+export const TELUGU: IndicTable = shifted(0x300, "Telugu", {
+  consonants: { ఱ: p("r", "ṟ"), ళ: p("l", "ḷ") },
+  vowels: { ...SOUTH_E_O(0x300).vowels },
+  signs: { ...SOUTH_E_O(0x300).signs },
+  schwaDeletion: false,
+  finalMarks: { "ం": p("m", "ṁ") },
+});
+
+export const KANNADA: IndicTable = shifted(0x380, "Kannada", {
+  consonants: { ಳ: p("l", "ḷ"), ಱ: p("r", "ṟ"), ೞ: p("zh", "ḻ") },
+  vowels: { ...SOUTH_E_O(0x380).vowels },
+  signs: { ...SOUTH_E_O(0x380).signs },
+  schwaDeletion: false,
+  finalMarks: { "ಂ": p("m", "ṁ") },
+});
+
+export const MALAYALAM: IndicTable = shifted(0x400, "Malayalam", {
+  consonants: { ള: p("l", "ḷ"), ഴ: p("zh", "ḻ"), റ: p("r", "ṟ"), ഞ: p("nj", "ñ") },
+  vowels: { ...SOUTH_E_O(0x400).vowels },
+  signs: { ...SOUTH_E_O(0x400).signs, "ൗ": p("au") },
+  marks: {
+    // Chillus: a consonant with no vowel after it.
+    ൺ: p("n", "ṇ"),
+    ൻ: p("n"),
+    ർ: p("r"),
+    ൽ: p("l"),
+    ൾ: p("l", "ḷ"),
+    ൿ: p("k"),
+    "ം": p("m", "ṁ"),
+  },
+  schwaDeletion: false,
+  // U+0D3C is a virama sign here, not a nukta.
+  nukta: undefined,
+  // The half-u: ആണ് "aanu".
+  finalMarks: { "്": p("u", "ŭ") },
+});
+
+// ----- Sinhala -----
+
+export const SINHALA: IndicTable = {
+  kind: "indic",
+  virama: "්",
+  inherent: p("a"),
+  consonants: {
+    ක: p("k"),
+    ඛ: p("kh"),
+    ග: p("g"),
+    ඝ: p("gh"),
+    ඞ: p("ng", "ṅ"),
+    ඟ: p("ng", "n̆g"),
+    ච: p("ch", "c"),
+    ඡ: p("chh", "ch"),
+    ජ: p("j"),
+    ඣ: p("jh"),
+    ඤ: p("gn", "ñ"),
+    ඥ: p("gn", "jñ"),
+    ඦ: p("nj", "n̆j"),
+    ට: p("t", "ṭ"),
+    ඨ: p("th", "ṭh"),
+    ඩ: p("d", "ḍ"),
+    ඪ: p("dh", "ḍh"),
+    ණ: p("n", "ṇ"),
+    ඬ: p("nd", "n̆ḍ"),
+    // Sri Lankan chat spells ත "th" and ට "t".
+    ත: p("th", "t"),
+    ථ: p("th"),
+    ද: p("d"),
+    ධ: p("dh"),
+    න: p("n"),
+    ඳ: p("nd", "n̆d"),
+    ප: p("p"),
+    ඵ: p("ph"),
+    බ: p("b"),
+    භ: p("bh"),
+    ම: p("m"),
+    ඹ: p("mb", "m̆b"),
+    ය: p("y"),
+    ර: p("r"),
+    ල: p("l"),
+    ව: p("w", "v"),
+    ශ: p("sh", "ś"),
+    ෂ: p("sh", "ṣ"),
+    ස: p("s"),
+    හ: p("h"),
+    ළ: p("l", "ḷ"),
+    ෆ: p("f"),
+  },
+  vowels: {
+    අ: p("a"),
+    ආ: p("aa", "ā"),
+    ඇ: p("ae", "æ"),
+    ඈ: p("aae", "ǣ"),
+    ඉ: p("i"),
+    ඊ: p("ee", "ī"),
+    උ: p("u"),
+    ඌ: p("oo", "ū"),
+    ඍ: p("ru", "r̥"),
+    එ: p("e"),
+    ඒ: p("e", "ē"),
+    ඓ: p("ai"),
+    ඔ: p("o"),
+    ඕ: p("o", "ō"),
+    ඖ: p("au"),
+  },
+  signs: {
+    "ා": p("a", "ā"),
+    "ැ": p("ae", "æ"),
+    "ෑ": p("ae", "ǣ"),
+    "ි": p("i"),
+    "ී": p("ee", "ī"),
+    "ු": p("u"),
+    "ූ": p("oo", "ū"),
+    "ෘ": p("ru", "r̥"),
+    "ෙ": p("e"),
+    "ේ": p("e", "ē"),
+    "ෛ": p("ai"),
+    "ො": p("o"),
+    "ෝ": p("o", "ō"),
+    "ෞ": p("au"),
+  },
+  marks: { "ං": p("n", "ṁ"), "ඃ": p("h", "ḥ") },
+  schwaDeletion: false,
 };
 
 // ----- Arabic script -----
@@ -385,17 +617,33 @@ function decomposedKeys(table: Readonly<Record<string, Pair>>): ReadonlyMap<stri
 /** Letter-by-letter romanisation of one Indic word. */
 function indicWord(word: string, t: IndicTable, style: RomanStyle): string {
   const s = style === "chat" ? 0 : 1;
-  // Nukta letters are compared decomposed (क + \u093C): Unicode does not compose them.
-  const chars = [...word.normalize("NFD")];
+  // Nukta letters are compared decomposed (क + \u093C): Unicode does not compose them. Other
+  // letters stay composed: NFD would split two-part vowel signs (ொ into ெ and ா).
+  const chars = [...word.normalize("NFC")].flatMap((c) => {
+    const d = c.normalize("NFD");
+    return t.nukta && d.length === 2 && d[1] === t.nukta ? [...d] : [c];
+  });
   const consonants = decomposedKeys(t.consonants);
   // Each unit: consonant (with its vowel) or independent vowel or mark.
   const units: { text: string; schwa: boolean }[] = [];
+  let double = false;
   for (let i = 0; i < chars.length; i++) {
     let c = chars[i]!;
+    // Joiners only choose a glyph (Sinhala ප්‍ර, Malayalam chillus written ന്‍).
+    if (c === "\u200C" || c === "\u200D") continue;
+    if (c === t.gemination) {
+      double = true;
+      continue;
+    }
     if (t.nukta && chars[i + 1] === t.nukta && consonants.has(c + t.nukta)) c += chars[++i]!;
-    const cons = consonants.get(c);
-    if (cons) {
-      const next = chars[i + 1];
+    const found = consonants.get(c);
+    if (found) {
+      // The addak doubles the consonant's first letter: ਪੱਕਾ pakka, ਸੱਚ sachch.
+      const cons = double ? found.map((x) => x[0] + x) : found;
+      double = false;
+      let next = chars[i + 1];
+      // A joiner between a consonant and its virama or sign changes nothing.
+      if (next === "\u200D" || next === "\u200C") next = chars[++i + 1];
       if (next === t.virama) {
         units.push({ text: cons[s], schwa: false });
         i++;
@@ -407,10 +655,16 @@ function indicWord(word: string, t: IndicTable, style: RomanStyle): string {
       }
       continue;
     }
-    const v = t.vowels[c] ?? t.marks[c] ?? t.signs[c];
+    const atEnd = i === chars.length - 1;
+    const v = (atEnd && t.finalMarks?.[c]) || (t.vowels[c] ?? t.marks[c] ?? t.signs[c]);
     units.push({ text: v ? v[s] : c, schwa: false });
   }
-  if (style === "chat") {
+  // A final virama the language pronounces as a vowel (Malayalam ആണ് aanu).
+  const last = chars.at(-1);
+  if (last === t.virama && t.finalMarks?.[last] && units.length > 0) {
+    units.at(-1)!.text += t.finalMarks[last][s];
+  }
+  if (style === "chat" && t.schwaDeletion !== false) {
     // Schwa deletion, as speech (and chat spelling) drops it: at the end of the word, and
     // between two vowels when the next one stays (kamala → kamla, but samajh stays).
     const drop = (u: { text: string; schwa: boolean }) => {

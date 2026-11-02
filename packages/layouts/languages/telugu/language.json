@@ -1,0 +1,25 @@
+{
+  "slug": "telugu",
+  "code": "te",
+  "order": 160,
+  "lang": "te",
+  "script": "Telu",
+  "dir": "ltr",
+  "name": {
+    "en": "Telugu",
+    "native": "తెలుగు"
+  },
+  "aliases": [],
+  "region": "south-asia",
+  "fonts": ["telugu"],
+  "layouts": ["te-roman", "te-inscript"],
+  "sample": "తెలుగు నా మాతృభాష.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "te",
+    "bing": "te"
+  },
+  "tier": null,
+  "notes": "English letters first, as for Hindi (decision §11.1). No voice yet: the locale has not passed /voice-probe."
+}

@@ -57,6 +57,99 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
   - Digit4.sag: none → `₹`
   - Digit5.sag: none → `৳`
 
+## mr-inscript
+
+- **Output:** `languages/marathi/inscript.json`
+- **Source:** `vendor/cldr/mr-t-k0-windows.xml`. Windows "Marathi" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 46, s 44, ag 21, sag 26)
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyQ.sag: none → `U+200D`
+  - KeyW.sag: none → `U+200C`
+  - KeyE.sag: none → `₹`
+
+## gu-inscript
+
+- **Output:** `languages/gujarati/inscript.json`
+- **Source:** `vendor/cldr/gu-t-k0-windows.xml`. Windows "Gujarati" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 45 keys (n 45, s 41, ag 12, sag 6)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - Digit4.sag: none → `₹`
+
+## pa-inscript
+
+- **Output:** `languages/punjabi/inscript.json`
+- **Source:** `vendor/cldr/pa-t-k0-windows.xml`. Windows "Punjabi" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 44 keys (n 43, s 36, ag 17, sag 6)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - Digit4.sag: none → `₹`
+
+## ta-inscript
+
+- **Output:** `languages/tamil/inscript.json`
+- **Source:** `vendor/cldr/ta-t-k0-windows.xml`. Windows "Tamil" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 46 keys (n 44, s 39, ag 20, sag 3)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - Digit4.sag: none → `₹`
+
+## te-inscript
+
+- **Output:** `languages/telugu/inscript.json`
+- **Source:** `vendor/cldr/te-t-k0-windows.xml`. Windows "Telugu" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 46 keys (n 45, s 40, ag 15, sag 6)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - Digit4.sag: none → `₹`
+
+## kn-inscript
+
+- **Output:** `languages/kannada/inscript.json`
+- **Source:** `vendor/cldr/kn-t-k0-windows.xml`. Windows "Kannada" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 46 keys (n 45, s 40, ag 13, sag 7)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - Digit4.sag: none → `₹`
+
+## ml-inscript
+
+- **Output:** `languages/malayalam/inscript.json`
+- **Source:** `vendor/cldr/ml-t-k0-windows.xml`. Windows "Malayalam" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 46 keys (n 46, s 41, ag 11, sag 10)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit4.sag: none → `U+200D`
+  - Digit5.sag: none → `U+200C`
+  - Digit6.sag: none → `₹`
+
+## si-wijesekara
+
+- **Output:** `languages/sinhala/wijesekara.json`
+- **Source:** `vendor/cldr/si-t-k0-windows.xml`. Windows "Sinhala - Wij 9" (Wijesekara), from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 47 keys (n 47, s 46, ag 42, sag 9)
+- **Skipped:** nothing
+- **Our changes:** none
+
 ## sd-phonetic
 
 - **Output:** `languages/sindhi/phonetic.json`

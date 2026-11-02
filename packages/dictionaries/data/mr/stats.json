@@ -1,0 +1,10 @@
+{
+  "source": "mrwiki-latest-pages-articles.xml.bz2",
+  "pages": 57357,
+  "sentences": 770352,
+  "repeatedSentencesSkipped": 155625,
+  "tokens": 7488380,
+  "distinctWords": 530703,
+  "wordsKept": 100000,
+  "nextWordHeads": 9894
+}

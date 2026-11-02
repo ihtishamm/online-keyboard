@@ -133,6 +133,15 @@ describe("Transliterator with a dictionary", () => {
     expect(t.best("kos")).toBe("κος");
   });
 
+  it("commits the rule spelling even when completions fill the first places", () => {
+    // Three completions for each of κον, κων and κοεν (an omitted ε): nine in all.
+    const words = ["κον", "κων", "κοεν"].flatMap((p) => ["α", "αα", "ααα"].map((a) => p + a));
+    const u = new Transliterator(SCHEME, { unknownCost: 20 });
+    u.setLexicon(Lexicon.fromRanked(words));
+    expect(u.candidates("kon", 8).every((c) => c.kind === "completion")).toBe(true);
+    expect(u.best("kon")).toBe("κον");
+  });
+
   it("lets a capital letter ask for its letter", () => {
     expect(t.best("aTa")).toBe("ατα");
   });

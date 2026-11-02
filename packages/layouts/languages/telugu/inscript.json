@@ -1,0 +1,252 @@
+{
+  "id": "te-inscript",
+  "lang": "te",
+  "script": "Telu",
+  "dir": "ltr",
+  "name": {
+    "en": "InScript",
+    "native": "ఇన\u0C4D\u200Cస\u0C4Dక\u0C4Dర\u0C3Fప\u0C4Dట\u0C4D"
+  },
+  "source": "Windows \"Telugu\" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).",
+  "keys": {
+    "Backquote": {
+      "n": "\u0C4A",
+      "s": "ఒ"
+    },
+    "Digit1": {
+      "n": "1",
+      "ag": "౧",
+      "sag": "\u200D"
+    },
+    "Digit2": {
+      "n": "2",
+      "ag": "౨",
+      "sag": "\u200C"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "\u0C4Dర",
+      "ag": "౩"
+    },
+    "Digit4": {
+      "n": "4",
+      "ag": "౪",
+      "sag": "₹"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "జ\u0C4Dఞ",
+      "ag": "౫"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "త\u0C4Dర",
+      "ag": "౬"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "క\u0C4Dష",
+      "ag": "౭"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "శ\u0C4Dర",
+      "ag": "౮"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "(",
+      "ag": "౯"
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")",
+      "ag": "౦"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "ః"
+    },
+    "Equal": {
+      "n": "ృ",
+      "s": "ఋ",
+      "ag": "ౄ",
+      "sag": "ౠ"
+    },
+    "KeyQ": {
+      "n": "\u0C4C",
+      "s": "ఔ"
+    },
+    "KeyW": {
+      "n": "\u0C48",
+      "s": "ఐ",
+      "ag": "\u0C56"
+    },
+    "KeyE": {
+      "n": "\u0C3E",
+      "s": "ఆ"
+    },
+    "KeyR": {
+      "n": "\u0C40",
+      "s": "ఈ",
+      "sag": "ౡ"
+    },
+    "KeyT": {
+      "n": "ూ",
+      "s": "ఊ"
+    },
+    "KeyY": {
+      "n": "బ",
+      "s": "భ"
+    },
+    "KeyU": {
+      "n": "హ",
+      "s": "ఙ"
+    },
+    "KeyI": {
+      "n": "గ",
+      "s": "ఘ"
+    },
+    "KeyO": {
+      "n": "ద",
+      "s": "ధ"
+    },
+    "KeyP": {
+      "n": "జ",
+      "s": "ఝ",
+      "ag": "ౙ"
+    },
+    "BracketLeft": {
+      "n": "డ",
+      "s": "ఢ"
+    },
+    "BracketRight": {
+      "s": "ఞ"
+    },
+    "KeyA": {
+      "n": "\u0C4B",
+      "s": "ఓ"
+    },
+    "KeyS": {
+      "n": "\u0C47",
+      "s": "ఏ",
+      "ag": "\u0C55"
+    },
+    "KeyD": {
+      "n": "\u0C4D",
+      "s": "అ"
+    },
+    "KeyF": {
+      "n": "\u0C3F",
+      "s": "ఇ",
+      "sag": "ఌ"
+    },
+    "KeyG": {
+      "n": "ు",
+      "s": "ఉ"
+    },
+    "KeyH": {
+      "n": "ప",
+      "s": "ఫ"
+    },
+    "KeyJ": {
+      "n": "ర",
+      "s": "ఱ"
+    },
+    "KeyK": {
+      "n": "క",
+      "s": "ఖ"
+    },
+    "KeyL": {
+      "n": "త",
+      "s": "థ"
+    },
+    "Semicolon": {
+      "n": "చ",
+      "s": "ఛ",
+      "ag": "ౘ"
+    },
+    "Quote": {
+      "n": "ట",
+      "s": "ఠ"
+    },
+    "KeyZ": {
+      "n": "\u0C46",
+      "s": "ఎ"
+    },
+    "KeyX": {
+      "n": "ం",
+      "s": "ఁ"
+    },
+    "KeyC": {
+      "n": "మ",
+      "s": "ణ"
+    },
+    "KeyV": {
+      "n": "న",
+      "s": "న"
+    },
+    "KeyB": {
+      "n": "వ"
+    },
+    "KeyN": {
+      "n": "ల",
+      "s": "ళ"
+    },
+    "KeyM": {
+      "n": "స",
+      "s": "శ"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "ష"
+    },
+    "Period": {
+      "n": "."
+    },
+    "Slash": {
+      "n": "య"
+    }
+  },
+  "longpress": {
+    "Backquote": ["ఒ"],
+    "Digit1": ["\u200D"],
+    "Digit2": ["\u200C"],
+    "Digit3": ["\u0C4Dర"],
+    "Digit4": ["₹"],
+    "Digit5": ["జ\u0C4Dఞ"],
+    "Digit6": ["త\u0C4Dర"],
+    "Digit7": ["క\u0C4Dష"],
+    "Digit8": ["శ\u0C4Dర"],
+    "Minus": ["ః"],
+    "Equal": ["ఋ", "ౄ", "ౠ"],
+    "KeyQ": ["ఔ"],
+    "KeyW": ["ఐ", "\u0C56"],
+    "KeyE": ["ఆ"],
+    "KeyR": ["ఈ", "ౡ"],
+    "KeyT": ["ఊ"],
+    "KeyY": ["భ"],
+    "KeyU": ["ఙ"],
+    "KeyI": ["ఘ"],
+    "KeyO": ["ధ"],
+    "KeyP": ["ఝ", "ౙ"],
+    "BracketLeft": ["ఢ"],
+    "KeyA": ["ఓ"],
+    "KeyS": ["ఏ", "\u0C55"],
+    "KeyD": ["అ"],
+    "KeyF": ["ఇ", "ఌ"],
+    "KeyG": ["ఉ"],
+    "KeyH": ["ఫ"],
+    "KeyJ": ["ఱ"],
+    "KeyK": ["ఖ"],
+    "KeyL": ["థ"],
+    "Semicolon": ["ఛ", "ౘ"],
+    "Quote": ["ఠ"],
+    "KeyZ": ["ఎ"],
+    "KeyX": ["ఁ"],
+    "KeyC": ["ణ"],
+    "KeyN": ["ళ"],
+    "KeyM": ["శ"],
+    "Comma": ["ష"]
+  }
+}

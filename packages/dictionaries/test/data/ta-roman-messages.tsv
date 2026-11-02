@@ -1,0 +1,44 @@
+# ta: held-out sentences (test split), Roman -> words
+# From the Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0:
+# https://github.com/google-research-datasets/dakshina
+# Native words normalised with packages/dictionaries/src/languages.ts.
+indhiyaavin saarkkant maanilaththil raanuvaththinarudanaana mothalil moondru maavoyisap poraaligal kollappattanar bti	இந்தியாவின் சார்க்கண்ட் மாநிலத்தில் இராணுவத்தினருடனான மோதலில் மூன்று மாவோயிசப் போராளிகள் கொல்லப்பட்டனர் பிடிஐ
+andha sivadhanusai dhevaradham vamsathil paadhukaathuvandhaargal	அந்த சிவதனுசை தேவராதம் வம்சத்தில் பாதுகாத்துவந்தார்கள்
+marana viraippu sattanjsaar maruththuvam	மரண விறைப்பு சட்டஞ்சார் மருத்துவம்
+ingu valappurathil ulla iru uruppugalum podhumaippaduthapatta ingona yengal	இங்கு வலப்புறத்தில் உள்ள இரு உறுப்புகளும் பொதுமைப்படுத்தப்பட்ட ஐங்கோண எண்கள்
+iravu nerangalil ivai payanbaduginrana	இரவு நேரங்களில் இவை பயன்படுகின்றன
+ikkatturai alladhu katturaipagudhi dhesiya unavu paadhukaappu sattam endra katturaiyudan innaika parindhuraikappadugiradhu kalandhuraiyaadavum	இக்கட்டுரை அல்லது கட்டுரைப்பகுதி தேசிய உணவுப் பாதுகாப்புச் சட்டம் என்ற கட்டுரையுடன் இணைக்கப் பரிந்துரைக்கப்படுகிறது கலந்துரையாடவும்
+ithil slicon aluminium magnesium pondra rasaayanak kalavaigal adangiyullana	இதில் சிலிக்கன் அலுமினியம் மக்னீசியம் போன்ற இரசாயனக் கலவைகள் அடங்கியுள்ளன
+steve jobs il apple computer niruvanathai thodangiyavargalil oruvar	ஸ்டீவ் ஜொப்ஸ் இல் ஆப்பிள் கம்பியூட்டர் நிறுவனத்தைத் தொடங்கியவர்களுள் ஒருவர்
+vannam' yenbathai intha nool 'roobam' yenak kurippidugirathu	வன்னம் என்பதை இந்த நூல் ரூபம் எனக் குறிப்பிடுகிறது
+orunginaintha sitroor mempattu thittathin muyarchiyaal il pengalukkana thannuthavi kulukkal thodangapattana	ஒருங்கிணைந்த சிற்றூர் மேம்பாட்டுத் திட்டத்தின் முயற்சியால் இல் பெண்களுக்கான தன்னுதவிக் குழுக்கள் தொடங்கப்பட்டன
+namatheep nigand ennum sorkalukkup porul koorum nikandu nool k	நாமதீப நிகண்டு என்னும் சொற்களுக்குப் பொருள் கூறும் நிகண்டு நூல் கி
+sakkadai segarippu mattrum agattruthal	சாக்கடை சேகரிப்பு மற்றும் அகற்றுதல்
+pallavarkoon thuyilunarndhuthezhundhu iraivar ulamuvakkum vannam periyathirukoyilai amaitha perundhagaiyaarai chendru kaanavirumbith thirunindravoorai adaindhaan	பல்லவர்கோன் துயிலுணர்ந்தெழுந்து இறைவர் உளமுவக்கும் வண்ணம் பெரியதிருக்கோயிலை அமைத்த பெருந்தகையாரைச் சென்று காணவிரும்பித் திருநின்றவூரை அடைந்தான்
+krima vethiyiyalil eerasoniyamaakal thaakkangalil nitrite uppugal payanpaduthappaduginrana	கரிம வேதியியலில் ஈரசோனியமாக்கல் தாக்கங்களில் நைத்திரைற்று உப்புகள் பயன்படுத்தப்படுகின்றன
+udalil thanneer pattraakkuraiyaal sombal thalaivali thalaisuttral kuzhappam yerpattu iruthiyil maranam kooda yerpadalaam	உடலில் தண்ணீர் பற்றாக்குறையால் சோம்பல் தலைவலி தலைச்சுற்றல் குழப்பம் ஏற்பட்டு இறுதியில் மரணம் கூட ஏற்படலாம்
+arasar boomiponin vaazhkkaiyin sila tharunangal pugaippadath thoguppaaga	அரசர் பூமிபோனின் வாழ்க்கையின் சில தருணங்கள் புகைப்படத் தொகுப்பாக
+muthiyor payan perum vagaiyil thani irukkaigal othukkappattullathu	முதியோர் பயன் பெரும் வகையில் தனி இருக்கைகள் ஒதுக்கப்பட்டுள்ளது
+ithu thiruththanthai maarkuvin kaalaththil nigazhnthathu	இது திருத்தந்தை மாற்குவின் காலத்தில் நிகழ்ந்தது
+ikkaranam barathanaatiyaththil iadamperugindra nootriyettu karanagalil yezhupaththu aaraavathu karanamaagum	இக்கரணம் பரதநாட்டியத்தில் இடம்பெறுகின்ற நூற்றியெட்டு கரணங்களில் எழுபத்து ஆறாவது கரணமாகும்
+athai thondrantha iru paththaandukalil mors veys thanthi viraivaaga aayathappaduthappattathu	அதைத் தொடர்ந்த இரு பத்தாண்டுகளில் மோர்ஸ் வேய்ல் தந்தி விரைவாக ஆயத்தப்படுத்தப்பட்டது
+puli kayittrai thaandi aattaip pidikkalaam	புலி கயிற்றைத் தாண்டி ஆட்டைப் பிடிக்கலாம்
+athu padippadiyaaga valarnthu ganini moolame oru vimaanaththai vadivamaiththuvidalaam yengira nilaiyai yettiyathu	அது படிப்படியாக வளர்ந்து கணினி மூலமே ஒரு விமானத்தை வடிவமைத்துவிடலாம் என்கிற நிலையை எட்டியது
+intha tharaththin peyarai sangappaadal 'yaam' yendru kurippidugirathu	இந்த தரத்தின் பெயரைச் சங்கப்பாடல் யாம் என்று குறிப்பிடுகிறது
+yuppratees aattrin karaiyil amaintha sippar nagaram sumeriyaavin panndaiya nagaram aagum	யூப்பிரடீஸ் ஆற்றின் கரையில் அமைந்த சிப்பர் நகரம் சுமேரியாவின் பண்டைய நகரம் ஆகும்
+angiruntha solaigalum sunaigalum avanathu ambaraaththoonim ponrana	அங்கிருந்த சோலைகளும் சுனைகளும் அவனது அம்பறாத்தூணி போன்றன
+avargaluku migudhiyana yudaimaigal irrundhadhal avargallal seirundhu vazha mudiyavilai	அவர்களுக்கு மிகுதியான உடைமைகள் இருந்ததால் அவர்களால் சேர்ந்து வாழ முடியவில்லை
+itharkull geen padaiyani appothuthaan vanthirangiya vadakoriya aam padaippirivinarudan mothavendi nernthathu	இதற்குள் கீன் படையணி அப்போதுதான் வந்திறங்கிய வடகொரிய ஆம் படைப்பிரிவினருடன் மோதவேண்டி நேர்ந்தது
+sunailala pirathinithitthuva thettram unnmaiyil pala kotpaadugalin pattiyal aagum	சுநைளல பிரதிநிதித்துவ தேற்றம் உண்மையில் பல கோட்பாடுகளின் பட்டியல் ஆகும்
+thevaradham marraiyum podhu avar sandhathigal adhanai padhugadhuvandhargal	தேவராதம் மறையும் போது அவர் சந்ததிகள் அதனை பாதுகாத்துவந்தார்கள்
+ithittathil pinnar puraveli vinmeengalinaich chutrivarum pala puravelik kolgal kandariyappattana	இத்திட்டத்தில் பின்னர் புறவெளி விண்மீன்களினைச் சுற்றிவரும் பல புறவெளிக் கோள்கள் கண்டறியப்பட்டன
+piragu avar sisiyan karuvai vaitril sumappathu patri arintha aera kobam kondaar	பிறகு அவர் சியசின் கருவை வயிற்றில் சுமப்பது பற்றி அறிந்த எரா கோபம் கொண்டார்
+nilaththil irumbu thaangiyai mudhalil vaikkavendum	நிலத்தில் இரும்பு தாங்கியை முதலில் வைக்கவேண்டும்
+ivvallaigudavai andhiyulla nillam podhuvaga samatharaiyagavum thazhilnilaiyil ulladhum aagum	இவ்வளைகுடாவை அண்டியுள்ள நிலம் பொதுவாக சமதரையாகவும் தாழ்நிலையில் உள்ளதும் ஆகும்
+ithanaal ivanathu naattu makkalum vallanmaik kunam mikkavargal enath theriyavarugirathu	இதனால் இவனது நாட்டு மக்களும் வள்ளண்மைக் குணம் மிக்கவர்கள் எனத் தெரியவருகிறது
+athil udaluravu kollaatha iruvar ullaththaal anbu oththu oozhaal ondrupattu udaluravu kolakindranar	அதில் உடலுறவு கொள்ளாத இருவர் உள்ளத்தால் அன்பு ஒத்து ஊழால் ஒன்றுபட்டு உடலுறவு கொள்கின்றனர்
+thamizhnaattil indha ilakku ettappattavudan indiavil matra maanilangalukkum eduthuch chellappada ulladhu	தமிழ்நாட்டில் இந்த இலக்கு எட்டப்பட்டவுடன் இந்தியாவில் மற்ற மாநிலங்களுக்கும் எடுத்துச் செல்லப்பட உள்ளது
+annanpeyar solvom achchamillai yenbom	அண்ணன்பெயர் சொல்வோம் அச்சமில்லை என்போம்
+ivar enthavoru thervuth thuduppaattap pottiyilum kalanthu kollavillai	இவர் எந்தவொரு தேர்வுத் துடுப்பாட்டப் போட்டியிலும் கலந்து கொள்ளவில்லை
+aanaal atharkup pidikkum neramum velaiyum athigam	ஆனால் அதற்குப் பிடிக்கும் நேரமும் வேலையும் அதிகம்
+ivai thavira maelum pala payankalum kattidakkalai varaipadangkalukku undu	இவை தவிர மேலும் பல பயன்களும் கட்டிடக்கலை வரைபடங்களுக்கு உண்டு

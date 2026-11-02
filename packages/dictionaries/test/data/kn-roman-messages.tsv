@@ -1,0 +1,44 @@
+# kn: held-out sentences (test split), Roman -> words
+# From the Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0:
+# https://github.com/google-research-datasets/dakshina
+# Native words normalised with packages/dictionaries/src/languages.ts.
+ati krura svabhaavada meenaada piraanaage amejan nadi nele	ಅತಿ ಕ್ರೂರ ಸ್ವಭಾವದ ಮೀನಾದ ಪಿರಾನಾಗೆ ಅಮೆಜಾನ್ ನದಿ ನೆಲೆ
+ralli bidugadeyaada kannada chalanachitragalu	ರಲ್ಲಿ ಬಿಡುಗಡೆಯಾದ ಕನ್ನಡ ಚಲನಚಿತ್ರಗಳು
+p sadaashivam bharatada mukhya nyaayadheesharaagiddavaru ivaru april ralli tamilunadinalli janisidaru	ಪಿ ಸದಾಶಿವಂ ಭಾರತದ ಮುಖ್ಯ ನ್ಯಾಯಾಧೀಶರಾಗಿದ್ದವರು ಇವರು ಏಪ್ರಿಲ್ ರಲ್ಲಿ ತಮಿಳುನಾಡಿನಲ್ಲಿ ಜನಿಸಿದರು
+naagavarmana kaadambariyalli granthapaatavaagidda ondhu kade shree shaasthrigalu moola kaavyakkanugunavaagi hathaaru padyagalannu baredukottiddaare	ನಾಗವರ್ಮನ ಕಾದಂಬರಿಯಲ್ಲಿ ಗ್ರಂಥಪಾತವಾಗಿದ್ದ ಒಂದು ಕಡೆ ಶ್ರೀ ಶಾಸ್ತ್ರೀಗಳು ಮೂಲ ಕಾವ್ಯಕ್ಕನುಗುಣವಾಗಿ ಹತ್ತಾರು ಪದ್ಯಗಳನ್ನು ಬರೆದುಕೊಟ್ಟಿದ್ದಾರೆ
+maduveyaad dampatigalu joteyaagi sampattannu hondabahudittu	ಮದುವೆಯಾದ ದಂಪತಿಗಳು ಜೊತೆಯಾಗಿ ಸಂಪತ್ತನ್ನು ಹೊಂದಬಹುದಿತ್ತು
+avakke kadime gunamattada kabbina saakaagittu	ಅವಕ್ಕೆ ಕಡಿಮೆ ಗುಣಮಟ್ಟದ ಕಬ್ಬಿಣ ಸಾಕಾಗಿತ್ತು
+rallina tanikheya nanthara japan federal trade kamision intelna mele aneka aapaadanegalannu horisitu	ರಲ್ಲಿನ ತನಿಖೆಯ ನಂತರ ಜಪಾನ್ ಫೆಡರಲ್ ಟ್ರೇಡ್ ಕಮಿಶನ್ ಇಂಟೆಲ್ನ ಮೇಲೆ ಅನೇಕ ಅಪಾದನೆಗಳನ್ನು ಹೊರಿಸಿತು
+ee bhaashegala bagge saakashtu charche prayoga nadeyithaadaru uaavuduu balakege baralu saadhyavaagalilla	ಈ ಭಾಷೆಗಳ ಬಗ್ಗೆ ಸಾಕಷ್ಟು ಚರ್ಚೆ ಪ್ರಯೋಗ ನಡೆಯಿತಾದರೂ ಯಾವುದೂ ಬಳಕೆಗೆ ಬರಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ
+ballari jilleyalli kabbina manganese thaamra mattu seesada ganigalu saakashtive	ಬಳ್ಳಾರಿ ಜಿಲ್ಲೆಯಲ್ಲಿ ಕಬ್ಬಿಣ ಮ್ಯಾಂಗನೀಸ್ ತಾಮ್ರ ಮತ್ತು ಸೀಸದ ಗಣಿಗಳು ಸಾಕಷ್ಟಿವೆ
+aamele mooru dinagalalli yaarigoo bedade bitta padaarthagalannu oota maadatakkaddu	ಆಮೇಲೆ ಮೂರು ದಿನಗಳಲ್ಲಿ ಯಾರಿಗೂ ಬೇಡದೆ ಬಿಟ್ಟ ಪದಾರ್ಥಗಳನ್ನು ಊಟ ಮಾಡತಕ್ಕದ್ದು
+zebthinus hoovugalannu baavaligalu bheti maaduttave avu paraagavannu tinnuttave mattu hoovugalannu paraaga sparshisuttave	ಜಿಬೆಥಿನಸ್ ಹೂವುಗಳನ್ನು ಬಾವಲಿಗಳು ಭೇಟಿ ಮಾಡುತ್ತವೆ ಅವು ಪರಾಗವನ್ನು ತಿನ್ನುತ್ತವೆ ಮತ್ತು ಹೂವುಗಳನ್ನು ಪರಾಗ ಸ್ಪರ್ಶಿಸುತ್ತವೆ
+idakke sambandhisida rekhaachitravannu parisheelisidare intaha utpaadaneyu ondu saamaajika vechchada rekheyannu srushtisuttade	ಇದಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ರೇಖಾಚಿತ್ರವನ್ನು ಪರಿಶೀಲಿಸಿದರೆ ಇಂತಹ ಉತ್ಪಾದನೆಯು ಒಂದು ಸಾಮಾಜಿಕ ವೆಚ್ಚದ ರೇಖೆಯನ್ನು ಸೃಷ್ಟಿಸುತ್ತದೆ
+saamaanyavaagi college shikshanakke vidyaarthiyobba varshagala varege aagale shaalaashikshana padedirabeku	ಸಾಮಾನ್ಯವಾಗಿ ಕಾಲೇಜು ಶಿಕ್ಷಣಕ್ಕೆ ವಿದ್ಯಾರ್ಥಿಯೊಬ್ಬ ವರ್ಷಗಳ ವರೆಗೆ ಆಗಲೆ ಶಾಲಾಶಿಕ್ಷಣ ಪಡೆದಿರಬೇಕು
+ettarada everest vishvadallina atyanta ettarada shikharavaagide	ಎತ್ತರದ ಎವರೆಸ್ಟ್ ವಿಶ್ವದಲ್ಲಿನ ಅತ್ಯಂತ ಎತ್ತರದ ಶಿಖರವಾಗಿದೆ
+hullu mattu podegalu hechchaagiruvalli ivannu kaanabahudu	ಹುಲ್ಲು ಮತ್ತು ಪೊದೆಗಳು ಹೆಚ್ಚಾಗಿರುವಲ್ಲಿ ಇವನ್ನು ಕಾಣಬಹುದು
+marada halagegalannu ottige bigiyalu hoolida thogalapattigalannu balasuthidharu	ಮರದ ಹಲಗೆಗಳನ್ನು ಒಟ್ಟಿಗೆ ಬಿಗಿಯಲು ಹೊಲಿದ ತೊಗಲಪಟ್ಟಿಗಳನ್ನು ಬಳಸುತ್ತಿದ್ದರು
+ancient egypt science a source book door marshal klaget	ಏನ್ಶಿಯಂಟ್ ಈಜಿಪ್ಟ್ ಸೈನ್ಸ್ ಎ ಸೋರ್ಸ್ ಬುಕ್ ಡೋರ್ ಮಾರ್ಶಲ್ ಕ್ಲಾಗೆಟ್
+bage bageya chikitsegalallu idara upayoga untu	ಬಗೆ ಬಗೆಯ ಚಿಕಿತ್ಸೆಗಳಲ್ಲೂ ಇದರ ಉಪಯೋಗ ಉಂಟು
+uttarakarma satta mele maaduva karma	ಉತ್ತರಕರ್ಮ ಸತ್ತ ಮೇಲೆ ಮಾಡುವ ಕರ್ಮ
+ivaru hosa diganta patrikeyalli upasanpaadakiyaagi kaarya nirvahane maadiddaare	ಇವರು ಹೊಸ ದಿಗಂತ ಪತ್ರಿಕೆಯಲ್ಲಿ ಉಪಸಂಪಾದಕಿಯಾಗಿ ಕಾರ್ಯ ನಿರ್ವಹಣೆ ಮಾಡಿದ್ದಾರೆ
+aadaroo hallina kshaya aparoopavaagittu	ಆದರೂ ಹಲ್ಲಿನ ಕ್ಷಯ ಅಪರೂಪವಾಗಿತ್ತು
+avara lawyer secondary vidyaabhyaasa kannadadalli chikkanaayakanahalliyalli nadeyitu	ಅವರ ಲೋಯರ್ ಸೆಕೆಂಡರಿ ವಿದ್ಯಾಭ್ಯಾಸ ಕನ್ನಡದಲ್ಲಿ ಚಿಕ್ಕನಾಯಕನಹಳ್ಳಿಯಲ್ಲಿ ನಡೆಯಿತು
+ivugalalli kelavannu devasthaanada sutta mutta nodabahudu	ಇವುಗಳಲ್ಲಿ ಕೆಲವನ್ನು ದೇವಸ್ಥಾನದ ಸುತ್ತ ಮುತ್ತ ನೋಡಬಹುದು
+maargadarshanadalli sudhaaranaa karyagalannu hammikondaru	ಮಾರ್ಗದರ್ಶನದಲ್ಲಿ ಸುಧಾರಣಾ ಕಾರ್ಯಗಳನ್ನು ಹಮ್ಮಿಕೊಂಡರು
+shaishavaavastheyannu daati badukuva makkala shekadaavaaru pramaana gamanaarha erike kandu kaarmika shakti hechchitu	ಶೈಶವಾವಸ್ಥೆಯನ್ನು ದಾಟಿ ಬದುಕುವ ಮಕ್ಕಳ ಶೇಕಡಾವಾರು ಪ್ರಮಾಣ ಗಮನಾರ್ಹ ಏರಿಕೆ ಕಂಡು ಕಾರ್ಮಿಕ ಶಕ್ತಿ ಹೆಚ್ಚಿತು
+rachel davez paatradalli maggie gillenhaal	ರಾಚೆಲ್ ಡಾವೆಸ್ ಪಾತ್ರದಲ್ಲಿ ಮ್ಯಾಗಿ ಗಿಲೆನ್ಹಾಲ್
+huvugalannu shivaraathri sandarbhadalli shivana aaraadhaneyalli visheshavaagi balasalaaguttade	ಹೂವುಗಳನ್ನು ಶಿವರಾತ್ರಿ ಸಂದರ್ಭದಲ್ಲಿ ಶಿವನ ಆರಾಧನೆಯಲ್ಲಿ ವಿಶೇಷವಾಗಿ ಬಳಸಲಾಗುತ್ತದೆ
+ee vidhaanada mukhya udaaharane endare lass alamaasnalliruva paramaanushakti karyagara	ಈ ವಿಧಾನದ ಮುಖ್ಯ ಉದಾಹರಣೆ ಎಂದರೆ ಲಾಸ್ ಅಲಮಾಸ್ನಲ್ಲಿರುವ ಪರಮಾಣುಶಕ್ತಿ ಕಾರ್ಯಾಗಾರ
+maanava hrudayada bhaavagalannu vijnaana saakshaatkaara maadikodalaaradu	ಮಾನವ ಹೃದಯದ ಭಾವಗಳನ್ನು ವಿಜ್ಞಾನ ಸಾಕ್ಷಾತ್ಕಾರ ಮಾಡಿಕೊಡಲಾರದು
+ee kartavya paalaneyannu shivamogga jille sagara taallooku maneghattada t	ಈ ಕರ್ತವ್ಯ ಪಾಲನೆಯನ್ನು ಶಿವಮೊಗ್ಗ ಜಿಲ್ಲೆ ಸಾಗರ ತಾಲ್ಲೂಕು ಮನೆಘಟ್ಟದ ಟಿ
+ivu ondondu ranginallu iruva elegalu	ಇವು ಒಂದೊಂದು ರಂಗಿನಲ್ಲೂ ಇರುವ ಎಲೆಗಳು
+twenty books claude in black or read	ಟ್ವೆಂಟಿ ಬುಕ್ಸ್ ಕ್ಲಾಡ್ ಇನ್ ಬ್ಲಾಕ್ ಆರ್ ರೀಡ್
+santa cruz bus nildaanadinda nerul ge bus saukaryavide	ಸಾಂತಾ ಕ್ರುಝ್ ಬಸ್ ನಿಲ್ದಾಣದಿಂದ ನೇರುಲ್ ಗೆ ಬಸ್ ಸೌಕರ್ಯವಿದೆ
+avugalalli arasikere kadiyur sarvagnanapura arasikere muntaaduvannu ullekhisabahudu	ಅವುಗಳಲ್ಲಿ ಅರಸೀಕೆರೆ ಕಾಡಿಯೂರು ಸರ್ವಜ್ಞಪುರ ಅರಸೀಕೆರೆ ಮುಂತಾದುವನ್ನು ಉಲ್ಲೇಖಿಸಬಹುದು
+chitrakke sean roldranra sangeethavide mattu ke	ಚಿತ್ರಕ್ಕೆ ಸೀನ್ ರೋಲ್ಡನ್ರ ಸಂಗೀತವಿದೆ ಮತ್ತು ಕೆ
+tukaaraam gopal omble maharashtrada satharadalii obba raithara maganagi janisidharu	ತುಕಾರಾಮ್ ಗೋಪಾಲ್ ಓಂಬ್ಳೆ ಮಹಾರಾಷ್ಟ್ರದ ಸತಾರಾದಲ್ಲಿ ಒಬ್ಬ ರೈತರ ಮಗನಾಗಿ ಜನಿಸಿದರು
+cowardru mountbattenrondige vaiyaktika snehavannu hondiddarinda avara halavu bhaashanagalannu chalanachitradalli haageye uddharisalaagide	ಕೊವಾರ್ಡ್ರು ಮೌಂಟ್ಬ್ಯಾಟನ್ರೊಂದಿಗೆ ವೈಯಕ್ತಿಕ ಸ್ನೇಹವನ್ನು ಹೊಂದಿದ್ದರಿಂದ ಅವರ ಹಲವು ಭಾಷಣಗಳನ್ನು ಚಲನಚಿತ್ರದಲ್ಲಿ ಹಾಗೆಯೇ ಉದ್ಧರಿಸಲಾಗಿದೆ
+devategalu hagu asurara naduve samudra manthana nadedu isha udbhavavaadaaga adannu shiva kudida	ದೇವತೆಗಳು ಹಾಗೂ ಅಸುರರ ನಡುವೆ ಸಮುದ್ರ ಮಂಥನ ನಡೆದು ವಿಷ ಉದ್ಭವವಾದಾಗ ಅದನ್ನು ಶಿವ ಕುಡಿದ
+shaaradaarannu kelidaaga tandeya oppige kelabeku endiddarinda b	ಶಾರದಾರನ್ನು ಕೇಳಿದಾಗ ತಂದೆಯ ಒಪ್ಪಿಗೆ ಕೇಳಬೇಕು ಎಂದಿದ್ದರಿಂದ ಬಿ
+ee kavaatada padaragalu hrutkukshiya godege tantusthambhagalimda antikondide	ಈ ಕವಾಟದ ಪದರಗಳು ಹೃತ್ಕುಕ್ಷಿಯ ಗೋಡೆಗೆ ತಂತುಸ್ತಂಭಗಳಿಂದ ಅಂಟಿಕೊಂಡಿದೆ

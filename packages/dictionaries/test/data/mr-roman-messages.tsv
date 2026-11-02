@@ -1,0 +1,44 @@
+# mr: held-out sentences (test split), Roman -> words
+# From the Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0:
+# https://github.com/google-research-datasets/dakshina
+# Native words normalised with packages/dictionaries/src/languages.ts.
+hajaro varshanpasun mahaan vyaktinchya murti ghadavlya jaat ahet	हजारो वर्षांपासून महान व्यक्तींच्या मूर्ती घडवल्या जात आहेत
+kanitkar yanni anek aitihasik pustakanche lekhan kele hote	कानिटकर यांनी अनेक ऐतिहासिक पुस्तकांचे लेखन केले होते
+yoganandnnch mul nav mukundlal ghosh ase hote	योगानंदांचे मूळ नाव मुकुंदलाल घोष असे होते
+lanig chya vishwachashak spardhet austreliachi shanghanayika hoti	लॅनिग च्या विश्वचषक स्पर्धेत ऑस्ट्रेलियाची संघनायिका होती
+laxmichi aath rupe aadilaxmi dhanalaxmi dhanyalaxmi gajalaxmi santanlaxmi veerlaxmi dhiryalaxmi vijayalaxmi vidyalaxmi	लक्ष्मीची आठ रूपे आदिलक्ष्मी धनलक्ष्मी धान्यलक्ष्मी गजलक्ष्मी सन्तानलक्ष्मी वीरलक्ष्मी धैर्यलक्ष्मी विजयलक्ष्मी विद्यालक्ष्मी
+pune zhila parishad puraskar	पुणे जिल्हा परिषेदेचे पुरस्कार
+char tambaye bhasasi watto angavar	चार तांबये भसासी वत्तो अंगावर
+usacha ras kadhun vikanarya dukanas maharashtrat gurhal kinva rasavantigruhah ase mhanatat	उसाचा रस काढून विकणाऱ्या दुकानास महाराष्ट्रात गुऱ्हाळ किंवा रसवंतीगृह असे म्हणतात
+loktantra vikas aur bhavishya marathit lokshahi vikas ani bhavishay	लोकतंत्र विकास और भविष्य मराठीत लोकशाही विकास आणि भविष्य
+he zad kami pramanat aadhalathe	हे झाड कमी प्रमाणात आढळते
+ya padhatine adhyayan kelyas adhyayan vishayak samasya dur hotat	या पद्धतीने अध्ययन केल्यास अध्ययन विषयक समस्या दूर होतात
+pan vaishalichya bhikkhunni tyans nakar dila	पण वैशालीच्या भिक्खूंनी त्यास नकार दिला
+ashadhatil ek divas haushi natak	आषाढातील एक दिवस हौशी नाटक
+tyanchya mate hi falanichi nandi hoti	त्यांच्या मते ही फाळणीची नांदी होती
+tasech itar bankatil kahi khatedar ya bankemadhil lokanna paise pathavu shaktat	तसेच इतर बँकातील काही खातेदार या बँकेमधील लोकांना पैसे पाठवू शकतात
+pravasi va malvahatookikherij anek deshanchya vayusenanni dekhil he viman vaparale	प्रवासी व मालवाहतूकीखेरीज अनेक देशांच्या वायुसेनांनी देखील हे विमान वापरले
+thode pudhe jatach eka odhyapashi tyancha ghoda adla	थोडे पुढे जाताच एका ओढ्यापाशी त्यांचा घोडा अडला
+goachya dabholi vimantalapasun ya thikanache antar don tasanchya pravasaitke ahe	गोव्याच्या दाभोळी विमानतळापासून या ठिकाणाचे अंतर दोन तासांच्या प्रवासाइतके आहे
+kinchit meeth ghatlele pivalya rangache he butter refrigeratormadhye khoop divas tikate	किंचित मीठ घातलेले पिवळ्या रंगाचे हे बटर रेफ्रिजरेटरमध्ये खूप दिवस टिकते
+yache prashaskiya kendra rudraprayag yethe ahe	याचे प्रशासकीय केंद्र रुद्रप्रयाग येथे आहे
+vya shatakapasun khmer rajvaticha bhag rahilele saigon vya shatakamadhye frenchanchya adhipatyakhali aale	व्या शतकापासून ख्मेर राजवटीचा भाग राहिलेले सैगॉन व्या शतकामध्ये फ्रेंचांच्या अधिपत्याखाली आले
+sun saali banavlelya murtichi avastha thodi jirna jhali hoti	सन साली बनवलेल्या मुर्तीची अवस्था थोडी जीर्ण झाली होती
+society che panjikrut karyalay mumbai yethe aahe	सोसायटी चे पंजीकृत कार्यालय मुंबई येथे आहे
+britishanni nikami kelelya tofa punha suru karun tofagolyanchi nirmitihi suru keli	ब्रिटिशांनी निकामी केलेल्या तोफा पुन्हा सुरू करून तोफगोळ्यांची निर्मितीही सुरू केली
+ya chitrapatala utkrusta sangeetmay chitrapat ashi sambohatat	ह्या चित्रपटाला उत्कृष्ट संगीतमय चित्रपट असेही संबोधतात
+ya ghatana tyanchya ayushyala kalatni denyarya tharlya	या घटना त्यांच्या आयुष्याला कलाटणी देण्याऱ्या ठरल्या
+tyache mukhyalaya bharatatil mumbai yethe hote	त्याचे मुख्यालय भारतातील मुंबई येथे होते
+kalu balu jodila tamashakaletil yogdanasathi i	काळू बाळू जोडीला तमाशाकलेतील योगदानासाठी इ
+bhayankar sundar marathi bhasha punde da di lalit vividh mahitipar	भयंकर सुंदर मराठी भाषा पुंडे द दि ललित विविध माहितीपर
+barach vela apan fakta sahanubhutipurvak vagto	बराच वेळा आपण फक्त सहानुभूतीपूर्वक वागतो
+arun gadre vruttapatrantun vaicharik va anya lekhanahi kartat	अरुण गद्रे वृत्तपत्रांतून वैचारिक व अन्य लेखनही करतात
+yalach bhartane lokdharmi vrutti pravrutti ase mhantle ahe	यालाच भरताने लोकधर्मी वृत्ती प्रवृत्ती असे म्हटले आहे
+gujaratche mukhyamantri narendra modi he ya karyakramadarmyan uthun gele hote	गुजरातचे मुख्यमंत्री नरेंद्र मोदी हे या कार्यक्रमादरम्यान उठून गेले होते
+ramchandra dekhne sammelanadhyaksha hote	रामचंद्र देखणे संमेलनाध्यक्ष होते
+eka bankeche kahi khatedar itar bankatil lokanna paise deu shakatat	एका बँकेचे काही खातेदार इतर बँकातील लोकांना पैसे देऊ शकतात
+hya pustakat robinson crusoe navachya kalpanik scotish vyaktiche atmacharitra varnavale ahe	ह्या पुस्तकात रॉबिन्सन क्रुसो नावाच्या काल्पनिक स्कॉटिश व्यक्तीचे आत्मचरित्र वर्णवले आहे
+asimov yanchya pustakanchi marathi bhashantare	आसिमॉव्ह यांच्या पुस्तकांची मराठी भाषांतरे
+kundalitil samasthanat sama rashi samanyatah balwaan aste ase manle jate	कुंडलीतील समस्थानात सम राशी सामान्यत बलवान असते असे मानले जाते
+sant eknath maharajancha wada	संत एकनाथ महाराजणांचा वाडा
+shirobhagi ghantechya aakaracha ardhachandra aahe	शिरोभागी घंटेच्या आकाराचा अर्धचंद्र आहे

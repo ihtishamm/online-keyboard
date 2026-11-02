@@ -12,10 +12,18 @@ import {
   normalizeBalochi,
   normalizeBangla,
   normalizeFarsi,
+  normalizeGujarati,
   normalizeHindi,
+  normalizeKannada,
   normalizeKashmiri,
+  normalizeMalayalam,
+  normalizeMarathi,
   normalizePashto,
+  normalizePunjabi,
   normalizeSindhi,
+  normalizeSinhala,
+  normalizeTamil,
+  normalizeTelugu,
   normalizeUrdu,
   urduPlus,
 } from "@okb/engine/normalize";
@@ -56,6 +64,19 @@ const ZW = /[\s\u200C\u200D]/g;
 
 const DEVANAGARI_RUN = /[\p{Script=Devanagari}\u200C\u200D]+/gu;
 const BENGALI_RUN = /[\p{Script=Bengali}\u200C\u200D]+/gu;
+/** A Brahmic script's rules: its letters and marks, with ZWJ and ZWNJ inside words. */
+const indic = (
+  code: string,
+  script: string,
+  normalizeWord: (raw: string) => string | null,
+): TextRules => ({
+  code,
+  wiki: `${code}wiki`,
+  sentenceEnd: INDIC_SENTENCE_END,
+  run: new RegExp(`[\\p{Script=${script}}\\u200C\\u200D]+`, "gu"),
+  joiners: ZW,
+  normalizeWord,
+});
 const arabicScript = (
   code: string,
   wiki: string | null,
@@ -142,6 +163,14 @@ export const TEXT_RULES: Readonly<Record<string, TextRules>> = {
     joiners: ZW,
     normalizeWord: normalizeBangla,
   },
+  mr: indic("mr", "Devanagari", normalizeMarathi),
+  gu: indic("gu", "Gujarati", normalizeGujarati),
+  pa: indic("pa", "Gurmukhi", normalizePunjabi),
+  ta: indic("ta", "Tamil", normalizeTamil),
+  te: indic("te", "Telugu", normalizeTelugu),
+  kn: indic("kn", "Kannada", normalizeKannada),
+  ml: indic("ml", "Malayalam", normalizeMalayalam),
+  si: indic("si", "Sinhala", normalizeSinhala),
   ...Object.fromEntries(Object.keys(LATIN_LOCALES).map((code) => [code, latin(code)])),
 };
 

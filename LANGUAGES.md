@@ -16,6 +16,14 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Kashmiri (/kashmiri) | Arab | C | yes | Beta | 61.7 % (Beta) | no | spell check meets its targets; typing test with words and sentences |
 | Hindi (/hindi) | Deva | C | yes | Beta | 42.5 % (Beta) | hi-IN | spell check meets its targets |
 | Bangla (/bangla) | Beng | C | yes | Beta | 39.4 % (Beta) | bn-BD, bn-IN | spell check meets its targets |
+| Marathi (/marathi) | Deva | C | yes | Beta | 42.5 % (Beta) | no | spell check meets its targets |
+| Gujarati (/gujarati) | Gujr | C | yes | Beta | 45.1 % (Beta) | no | spell check meets its targets |
+| Punjabi (Gurmukhi) (/punjabi) | Guru | C | yes | Beta | 42.8 % (Beta) | no | spell check meets its targets |
+| Tamil (/tamil) | Taml | C | yes | Beta | 50.2 % (Beta) | no | spell check meets its targets |
+| Telugu (/telugu) | Telu | C | yes | Beta | 49.2 % (Beta) | no | spell check meets its targets |
+| Kannada (/kannada) | Knda | C | yes | Beta | 55.6 % (Beta) | no | spell check meets its targets |
+| Malayalam (/malayalam) | Mlym | C | yes | Beta | 40 % (Beta) | no | spell check meets its targets |
+| Sinhala (/sinhala) | Sinh | C | yes | Beta | 58.9 % (Beta) | no | spell check meets its targets |
 | Spanish (/spanish) | Latn | B | yes | yes | – | es-ES, es-MX, es-US, es-AR, es-CO | native-speaker review |
 | French (/french) | Latn | B | yes | yes | – | fr-FR, fr-CA, fr-BE, fr-CH | native-speaker review |
 | Italian (/italian) | Latn | C | yes | Beta | – | it-IT, it-CH | spell check meets its targets |

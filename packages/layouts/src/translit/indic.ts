@@ -13,6 +13,12 @@ export interface AbugidaSpec {
   /** Extra cost of reading consonant + consonant with the inherent vowel instead of a virama. */
   inherentCost: number;
   /**
+   * A consonant at the end of a word takes a virama, as in Tamil (வணக்கம்), Telugu, Kannada,
+   * Malayalam and Sinhala; the inherent vowel stays possible at this extra cost. Without it,
+   * a final consonant keeps its inherent vowel unwritten, as in Hindi (कमल).
+   */
+  finalVirama?: number;
+  /**
    * [Latin, consonant alternatives] as in TranslitRule.out, without viramas, and optionally
    * the alternatives at the end of a word when they differ (a final n is mostly \u0902 in Hindi).
    */
@@ -44,7 +50,11 @@ function mapOutputs(spec: string, suffix: string, costDelta = 0): string {
 
 export function abugidaRules(spec: AbugidaSpec): TranslitRule[] {
   const rules: TranslitRule[] = [];
-  for (const [latin, out, endOut = out] of spec.consonants) {
+  const final = (out: string) =>
+    spec.finalVirama === undefined
+      ? out
+      : `${mapOutputs(out, spec.virama)} ${mapOutputs(out, "", spec.finalVirama)}`;
+  for (const [latin, out, endOut = final(out)] of spec.consonants) {
     rules.push({
       in: latin,
       next: "C",

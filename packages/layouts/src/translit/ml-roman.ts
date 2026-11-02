@@ -1,0 +1,125 @@
+import type { TranslitScheme } from "@okb/engine";
+import { abugidaRules } from "./indic";
+
+/**
+ * English letters → Malayalam, as Malayalam is typed in chats ("sugamano", "ente peru").
+ * A final n, r, l or ḷ is a chillu (അവൻ, അവർ), a final m the anusvara (മലയാളം), and a final
+ * -u is often the half-u written as a bare virama (ആണ്). Common clusters have their own
+ * spellings: "nte" ന്റെ, "ng" ങ്ങ, "nj" ഞ്ഞ, "tt" ട്ട or റ്റ, "zh" ഴ. Chillus are the atomic
+ * letters, as the word lists store them. Written for this project from common usage.
+ */
+export const ML_ROMAN: TranslitScheme = {
+  id: "ml-roman",
+  lang: "ml",
+  vowels: "aeiou",
+  doubledCost: 0,
+  splitCost: 1,
+  rules: [
+    // i then a is written i + ya ("asia").
+    { in: "ia", prev: "C", out: "ിയാ:0.2 ിയ:0.2" },
+    // ----- clusters spelled their own way -----
+    { in: "ksh", out: "ക്ഷ" },
+    { in: "nt", out: "ന്റ ണ്ട:0.3 ന്ത:0.4" },
+    { in: "nd", out: "ണ്ട ന്ദ:0.3 ന്റ:0.5 ന്ത:0.6" },
+    { in: "nth", out: "ന്ത ന്ദ:0.6" },
+    { in: "ndh", out: "ന്ധ ന്ദ:0.3 ണ്ഡ:0.6" },
+    { in: "tt", out: "ട്ട റ്റ:0.3 ത്ത:0.4" },
+    { in: "thth", out: "ത്ത" },
+    { in: "tht", out: "ത്ത" },
+    { in: "ng", out: "ങ്ങ ംഗ:0.3 ങ്ക:0.4" },
+    { in: "nk", out: "ങ്ക" },
+    { in: "nj", out: "ഞ്ഞ ഞ്ജ:0.4 ഞ്ച:0.6" },
+    { in: "nch", out: "ഞ്ച" },
+    { in: "mb", out: "മ്പ ംബ:0.4" },
+    { in: "mp", out: "മ്പ" },
+    { in: "tr", out: "ത്ര ട്ര:0.5" },
+    { in: "cch", out: "ച്ച" },
+    { in: "chch", out: "ച്ച" },
+    { in: "y", at: "end", prev: "C", out: "ി:0.3" },
+
+    // ----- chillus and the anusvara before a consonant -----
+    { in: "r", next: "C", out: "ർ:0.1" },
+    { in: "l", next: "C", out: "ൽ:0.3 ൾ:0.5" },
+    { in: "n", next: "C", out: "ൻ:0.4 ൺ:0.6" },
+    { in: "m", next: "C", out: "ം:0.3" },
+    { in: "ri", prev: "C", out: "ൃ:0.5" },
+    { in: "ru", prev: "C", out: "ൃ:0.6" },
+
+    ...abugidaRules({
+      virama: "്",
+      inherentCost: 0.6,
+      finalVirama: 1,
+      consonants: [
+        // Chat writes a doubled consonant once: "samayathe" സമയത്തെ, "papaya" പപ്പായ.
+        ["k", "ക ക്ക:0.4"],
+        ["kh", "ഖ"],
+        ["g", "ഗ ക:0.5"],
+        ["gh", "ഘ"],
+        ["ch", "ച ഛ:0.6"],
+        ["chh", "ഛ"],
+        ["c", "ക:0.2 ച:0.3 സ:0.6"],
+        ["j", "ജ"],
+        ["jh", "ഝ"],
+        ["z", "സ ഴ:0.5"],
+        ["zh", "ഴ"],
+        ["t", "ട ത:0.3 ട്ട:0.5 റ്റ:0.6"],
+        ["th", "ത ത്ത:0.3 ഥ:0.4"],
+        ["d", "ദ ട:0.2 ഡ:0.3"],
+        ["dh", "ധ ഥ:0.2 ദ:0.4 ഢ:0.6"],
+        // Final n, ṇ, r, l, ḷ: the chillus; final m: the anusvara.
+        ["n", "ന ണ:0.4", "ൻ ൺ:0.4 ന്:0.8"],
+        ["p", "പ പ്പ:0.4"],
+        ["ph", "ഫ"],
+        ["f", "ഫ"],
+        ["b", "ബ"],
+        ["bh", "ഭ"],
+        ["m", "മ", "ം മ്:0.6"],
+        ["y", "യ"],
+        ["r", "ര റ:0.4", "ർ ര്:0.8"],
+        ["l", "ല ള:0.4", "ൽ ൾ:0.4"],
+        ["v", "വ"],
+        ["w", "വ"],
+        ["s", "സ ശ:0.4"],
+        ["sh", "ഷ ശ:0.3"],
+        ["h", "ഹ"],
+        ["q", "ക"],
+        ["x", "ക്സ"],
+      ],
+      vowels: [
+        { in: "a", independent: "അ ആ:0.6", sign: "- ാ:0.4", finalSign: "- ാ:0.3" },
+        { in: "aa", independent: "ആ", sign: "ാ" },
+        { in: "i", independent: "ഇ ഈ:0.6", sign: "ി ീ:0.5" },
+        { in: "ee", independent: "ഈ ഏ:0.3", sign: "ീ േ:0.3" },
+        { in: "ii", independent: "ഈ", sign: "ീ" },
+        { in: "u", independent: "ഉ ഊ:0.6", sign: "ു ൂ:0.5", finalSign: "് ു:0.2 ൂ:0.8" },
+        { in: "oo", independent: "ഊ ഓ:0.3", sign: "ൂ ോ:0.3" },
+        { in: "uu", independent: "ഊ", sign: "ൂ" },
+        { in: "e", independent: "എ ഏ:0.4 ഇ:0.5", sign: "െ േ:0.4" },
+        { in: "ae", independent: "ഏ", sign: "േ" },
+        { in: "ai", independent: "ഐ", sign: "ൈ" },
+        { in: "ei", independent: "ഐ:0.4", sign: "ൈ:0.4 െ:0.6" },
+        { in: "o", independent: "ഒ ഓ:0.4", sign: "ൊ ോ:0.4" },
+        { in: "oa", independent: "ഓ", sign: "ോ" },
+        { in: "au", independent: "ഔ", sign: "ൌ" },
+        { in: "ou", independent: "ഔ", sign: "ൌ" },
+      ],
+    }),
+  ],
+  omitted: "്:1.6 ു:1.8 ാ:2 ി:2",
+  capitals: { T: "ട", D: "ഡ", N: "ണ", L: "ള", R: "റ" },
+  words: [
+    ["namaskaram", "നമസ്കാരം"],
+    ["nanni", "നന്ദി"],
+    ["njan", "ഞാൻ"],
+    ["ningal", "നിങ്ങൾ"],
+    ["athe", "അതെ"],
+    ["illa", "ഇല്ല"],
+    ["entha", "എന്താ"],
+    ["enthu", "എന്ത്"],
+    ["ente", "എന്റെ"],
+    ["sugamano sughamano", "സുഖമാണോ"],
+    ["aanu anu", "ആണ്"],
+    ["malayalam", "മലയാളം"],
+  ],
+  punctuation: {},
+};

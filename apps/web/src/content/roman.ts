@@ -621,6 +621,479 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
       { roman: "ng", script: "ং", examples: [["bangla", "বাংলা"]] },
     ],
   },
+  "mr-roman": {
+    page: {
+      title: "English to Marathi Typing: Type Marathi in English Letters Online",
+      heading: "English to Marathi Typing",
+      description:
+        "Type Marathi in English letters and get Devanagari as you go: namaskar becomes नमस्कार. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Marathi the way you text it in English letters. Each word turns into Devanagari when you press Space, and the bar under the editor offers other spellings. The word list picks between ल and ळ and between न and ण; a capital D asks for ड.",
+      bestFor:
+        "Anyone who chats in Marathi with English letters and wants proper Devanagari without learning InScript.",
+    },
+    example: ["namaskar", "नमस्कार"],
+    guide: [
+      {
+        roman: "aa, a",
+        script: "आ  ा",
+        examples: [
+          ["aaj", "आज"],
+          ["naav", "नाव"],
+        ],
+      },
+      {
+        roman: "i, u",
+        script: "ई  ी  ऊ  ू",
+        examples: [
+          ["aai", "आई"],
+          ["bhau", "भाऊ"],
+        ],
+      },
+      {
+        roman: "kh, gh, ch, chh, jh",
+        script: "ख  घ  च  छ  झ",
+        examples: [
+          ["khup", "खूप"],
+          ["chhan", "छान"],
+        ],
+      },
+      {
+        roman: "bh, dh",
+        script: "भ  ध",
+        examples: [["dhanyavad", "धन्यवाद"]],
+      },
+      {
+        roman: "l, n",
+        script: "ळ  ण",
+        examples: [
+          ["shala", "शाळा"],
+          ["pani", "पाणी"],
+        ],
+      },
+      { roman: "D", script: "ड", examples: [["gaaDi", "गाडी"]] },
+      {
+        roman: "dny, ksh",
+        script: "ज्ञ  क्ष",
+        examples: [
+          ["dnyan", "ज्ञान"],
+          ["kshama", "क्षमा"],
+        ],
+      },
+    ],
+  },
+
+  "gu-roman": {
+    page: {
+      title: "English to Gujarati Typing: Type Gujarati in English Letters Online",
+      heading: "English to Gujarati Typing",
+      description:
+        "Type Gujarati in English letters (tame kem cho) and get Gujarati script as you go. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Gujarati the way you text it in English letters. Each word turns into Gujarati script when you press Space, and the bar under the editor offers other spellings. Endings such as -nu and -maa get their nasal by themselves: maru gives મારું.",
+      bestFor:
+        "Anyone who chats in Gujarati with English letters and wants proper Gujarati script without learning InScript.",
+    },
+    example: ["kem cho", "કેમ છો"],
+    guide: [
+      {
+        roman: "aa, a",
+        script: "આ  ા",
+        examples: [
+          ["aaj", "આજ"],
+          ["naam", "નામ"],
+        ],
+      },
+      {
+        roman: "e, i, u",
+        script: "ે  ી  ૂ",
+        examples: [
+          ["mane", "મને"],
+          ["khub", "ખૂબ"],
+        ],
+      },
+      {
+        roman: "kh, gh, chh, bh, dh",
+        script: "ખ  ઘ  છ  ભ  ધ",
+        examples: [
+          ["ghar", "ઘર"],
+          ["bhai", "ભાઈ"],
+          ["dhanyavaad", "ધન્યવાદ"],
+        ],
+      },
+      {
+        roman: "u (at the end)",
+        script: "ું",
+        examples: [
+          ["maru", "મારું"],
+          ["tamaru", "તમારું"],
+        ],
+      },
+      {
+        roman: "D, L, n",
+        script: "ડ  ળ  ણ",
+        examples: [
+          ["gaaDi", "ગાડી"],
+          ["shaaLa", "શાળા"],
+          ["pani", "પાણી"],
+        ],
+      },
+    ],
+  },
+
+  "pa-roman": {
+    page: {
+      title: "English to Punjabi Typing: Type Gurmukhi in English Letters Online",
+      heading: "English to Punjabi Typing",
+      description:
+        "Type Punjabi in English letters (sat sri akal) and get Gurmukhi as you go. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Punjabi the way you text it in English letters. Each word turns into Gurmukhi when you press Space, and the bar under the editor offers other spellings. A doubled letter gives the addak (pakka ਪੱਕਾ), and the tippi and bindi come by themselves.",
+      bestFor:
+        "Anyone who chats in Punjabi with English letters and wants proper Gurmukhi without learning InScript.",
+    },
+    example: ["sat sri akal", "ਸਤ ਸ੍ਰੀ ਅਕਾਲ"],
+    guide: [
+      {
+        roman: "aa, a",
+        script: "ਆ  ਾ",
+        examples: [
+          ["naam", "ਨਾਮ"],
+          ["haal", "ਹਾਲ"],
+        ],
+      },
+      {
+        roman: "i, u",
+        script: "ੀ  ੂ  ੁ",
+        examples: [
+          ["ki", "ਕੀ"],
+          ["khush", "ਖੁਸ਼"],
+        ],
+      },
+      {
+        roman: "gh, bh, dh",
+        script: "ਘ  ਭ  ਧ",
+        examples: [
+          ["ghar", "ਘਰ"],
+          ["bhra", "ਭਰਾ"],
+        ],
+      },
+      {
+        roman: "kk, ll (doubled)",
+        script: "ੱ",
+        examples: [
+          ["pakka", "ਪੱਕਾ"],
+          ["gall", "ਗੱਲ"],
+        ],
+      },
+      {
+        roman: "n (before a letter or at the end)",
+        script: "ੰ  ਂ",
+        examples: [
+          ["changa", "ਚੰਗਾ"],
+          ["mainu", "ਮੈਨੂੰ"],
+        ],
+      },
+      {
+        roman: "D, N",
+        script: "ੜ  ਣ",
+        examples: [
+          ["kuDi", "ਕੁੜੀ"],
+          ["sohNa", "ਸੋਹਣਾ"],
+        ],
+      },
+      { roman: "z, sh", script: "ਜ਼  ਸ਼", examples: [["zindagi", "ਜ਼ਿੰਦਗੀ"]] },
+    ],
+  },
+
+  "ta-roman": {
+    page: {
+      title: "English to Tamil Typing: Type Tamil in English Letters Online",
+      heading: "English to Tamil Typing",
+      description:
+        "Type Tamil in English letters (Tanglish) and get Tamil script as you go: vanakkam becomes வணக்கம். Free, private and offline, with word suggestions.",
+      summary:
+        "Write Tamil the way you text it in English letters. Each word turns into Tamil script when you press Space, and the bar under the editor offers other spellings. The word list picks between the three n's and the three l's; capitals ask for one: N ண, L ள, R ற, and zh gives ழ.",
+      bestFor:
+        "Anyone who chats in Tanglish and wants proper Tamil script without learning a Tamil keyboard.",
+    },
+    example: ["vanakkam", "வணக்கம்"],
+    guide: [
+      {
+        roman: "aa, ee, oo",
+        script: "ா  ீ  ூ",
+        examples: [
+          ["kaalai", "காலை"],
+          ["veedu", "வீடு"],
+        ],
+      },
+      {
+        roman: "kk, pp, ll (doubled)",
+        script: "க்க  ப்ப  ல்ல",
+        examples: [
+          ["appa", "அப்பா"],
+          ["nalla", "நல்ல"],
+        ],
+      },
+      {
+        roman: "n",
+        script: "ந  ன",
+        examples: [
+          ["naan", "நான்"],
+          ["nandri", "நன்றி"],
+        ],
+      },
+      {
+        roman: "N, L, R",
+        script: "ண  ள  ற",
+        examples: [
+          ["vaNakkam", "வணக்கம்"],
+          ["paLLi", "பள்ளி"],
+          ["aRivu", "அறிவு"],
+        ],
+      },
+      {
+        roman: "zh",
+        script: "ழ",
+        examples: [
+          ["tamizh", "தமிழ்"],
+          ["vaazhkai", "வாழ்க்கை"],
+        ],
+      },
+      { roman: "m (at the end)", script: "ம்", examples: [["maram", "மரம்"]] },
+    ],
+  },
+
+  "te-roman": {
+    page: {
+      title: "English to Telugu Typing: Type Telugu in English Letters Online",
+      heading: "English to Telugu Typing",
+      description:
+        "Type Telugu in English letters (meeru ela unnaru) and get Telugu script as you go. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Telugu the way you text it in English letters. Each word turns into Telugu script when you press Space, and the bar under the editor offers other spellings. A final m is the anusvara (namaskaram నమస్కారం); capitals ask for a letter: T ట, D డ, N ణ, L ళ.",
+      bestFor:
+        "Anyone who chats in Telugu with English letters and wants proper Telugu script without learning InScript.",
+    },
+    example: ["namaskaram", "నమస్కారం"],
+    guide: [
+      {
+        roman: "aa, ee, e",
+        script: "ా  ీ  ే",
+        examples: [
+          ["chaala", "చాలా"],
+          ["meeru", "మీరు"],
+          ["nenu", "నేను"],
+        ],
+      },
+      {
+        roman: "u (at the end)",
+        script: "ు",
+        examples: [
+          ["telugu", "తెలుగు"],
+          ["illu", "ఇల్లు"],
+        ],
+      },
+      {
+        roman: "mm, kk (doubled)",
+        script: "మ్మ  క్క",
+        examples: [
+          ["amma", "అమ్మ"],
+          ["ikkada", "ఇక్కడ"],
+        ],
+      },
+      {
+        roman: "n, m (before a letter or at the end)",
+        script: "ం",
+        examples: [
+          ["manchi", "మంచి"],
+          ["baagundi", "బాగుంది"],
+        ],
+      },
+      {
+        roman: "D, N, L",
+        script: "డ  ణ  ళ",
+        examples: [
+          ["vaaDu", "వాడు"],
+          ["raNDi", "రండి"],
+          ["kaLLu", "కళ్ళు"],
+        ],
+      },
+    ],
+  },
+
+  "kn-roman": {
+    page: {
+      title: "English to Kannada Typing: Type Kannada in English Letters Online",
+      heading: "English to Kannada Typing",
+      description:
+        "Type Kannada in English letters and get Kannada script as you go: namaskara becomes ನಮಸ್ಕಾರ. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Kannada the way you text it in English letters. Each word turns into Kannada script when you press Space, and the bar under the editor offers other spellings. A nasal before a letter is the anusvara (thumba ತುಂಬಾ); capitals ask for a letter: T ಟ, D ಡ, N ಣ, L ಳ.",
+      bestFor:
+        "Anyone who chats in Kannada with English letters and wants proper Kannada script without learning InScript.",
+    },
+    example: ["namaskara", "ನಮಸ್ಕಾರ"],
+    guide: [
+      {
+        roman: "ee, e",
+        script: "ೀ  ೇ",
+        examples: [
+          ["neeru", "ನೀರು"],
+          ["beku", "ಬೇಕು"],
+        ],
+      },
+      {
+        roman: "u (at the end)",
+        script: "ು",
+        examples: [
+          ["hesaru", "ಹೆಸರು"],
+          ["ondu", "ಒಂದು"],
+        ],
+      },
+      {
+        roman: "nn, dd (doubled)",
+        script: "ನ್ನ  ಡ್ಡ",
+        examples: [
+          ["kannada", "ಕನ್ನಡ"],
+          ["dodda", "ದೊಡ್ಡ"],
+        ],
+      },
+      {
+        roman: "n, m (before a letter)",
+        script: "ಂ",
+        examples: [["thumba", "ತುಂಬಾ"]],
+      },
+      {
+        roman: "T, D, N, L",
+        script: "ಟ  ಡ  ಣ  ಳ",
+        examples: [
+          ["ooTa", "ಊಟ"],
+          ["eraDu", "ಎರಡು"],
+          ["haNNu", "ಹಣ್ಣು"],
+          ["baLe", "ಬಾಳೆ"],
+        ],
+      },
+    ],
+  },
+
+  "ml-roman": {
+    page: {
+      title: "English to Malayalam Typing: Type Malayalam in English Letters Online",
+      heading: "English to Malayalam Typing",
+      description:
+        "Type Malayalam in English letters (Manglish) and get Malayalam script as you go: namaskaram becomes നമസ്കാരം. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Malayalam the way you text it in English letters. Each word turns into Malayalam script when you press Space, and the bar under the editor offers other spellings. A final n, r or l becomes a chillu by itself (avan അവൻ), and zh gives ഴ.",
+      bestFor:
+        "Anyone who chats in Manglish and wants proper Malayalam script without learning InScript.",
+    },
+    example: ["namaskaram", "നമസ്കാരം"],
+    guide: [
+      {
+        roman: "n, r, l, L (at the end)",
+        script: "ൻ  ർ  ൽ  ൾ",
+        examples: [
+          ["avan", "അവൻ"],
+          ["avar", "അവർ"],
+          ["kaal", "കാൽ"],
+          ["avaL", "അവൾ"],
+        ],
+      },
+      {
+        roman: "m (at the end)",
+        script: "ം",
+        examples: [
+          ["malayalam", "മലയാളം"],
+          ["pazham", "പഴം"],
+        ],
+      },
+      {
+        roman: "u (at the end)",
+        script: "്",
+        examples: [
+          ["aaNu", "ആണ്"],
+          ["enikku", "എനിക്ക്"],
+        ],
+      },
+      {
+        roman: "nte, nj, ng",
+        script: "ന്റെ  ഞ  ങ്ങ",
+        examples: [
+          ["ente", "എന്റെ"],
+          ["njan", "ഞാൻ"],
+          ["ningal", "നിങ്ങൾ"],
+        ],
+      },
+      {
+        roman: "zh, ll",
+        script: "ഴ  ള്ള",
+        examples: [
+          ["mazha", "മഴ"],
+          ["vellam", "വെള്ളം"],
+        ],
+      },
+      { roman: "chch", script: "ച്ഛ", examples: [["achchan", "അച്ഛൻ"]] },
+    ],
+  },
+
+  "si-roman": {
+    page: {
+      title: "English to Sinhala Typing: Type Sinhala in English Letters Online",
+      heading: "English to Sinhala Typing",
+      description:
+        "Type Sinhala in English letters (Singlish) and get Sinhala script as you go: kohomada becomes කොහොමද. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Sinhala the way you text it in English letters (Singlish). Each word turns into Sinhala script when you press Space, and the bar under the editor offers other spellings. A final consonant takes the al-lakuna by itself (pothak පොතක්), and ae gives ඇ.",
+      bestFor:
+        "Anyone who chats in Singlish and wants proper Sinhala script without learning Wijesekara.",
+    },
+    example: ["kohomada", "කොහොමද"],
+    guide: [
+      {
+        roman: "a, aa",
+        script: "ා",
+        examples: [
+          ["oya", "ඔයා"],
+          ["yannawa", "යනවා"],
+        ],
+      },
+      {
+        roman: "e, o",
+        script: "ෙ  ො  ේ",
+        examples: [
+          ["gedara", "ගෙදර"],
+          ["mage", "මගේ"],
+        ],
+      },
+      { roman: "ae", script: "ඇ  ෑ", examples: [["kaema", "කෑම"]] },
+      {
+        roman: "th, w",
+        script: "ත  ව",
+        examples: [
+          ["wathura", "වතුර"],
+          ["lankawa", "ලංකාව"],
+        ],
+      },
+      {
+        roman: "nd, ng",
+        script: "ඳ  ං",
+        examples: [
+          ["hondin", "හොඳින්"],
+          ["sinhala", "සිංහල"],
+        ],
+      },
+      { roman: "L", script: "ළ", examples: [["Lamaya", "ළමයා"]] },
+      {
+        roman: "(at the end)",
+        script: "්",
+        examples: [
+          ["pothak", "පොතක්"],
+          ["ayubowan", "ආයුබෝවන්"],
+        ],
+      },
+    ],
+  },
 };
 
 export function romanFor(layoutId: string): RomanCopy | undefined {

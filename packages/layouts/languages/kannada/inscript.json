@@ -1,0 +1,250 @@
+{
+  "id": "kn-inscript",
+  "lang": "kn",
+  "script": "Knda",
+  "dir": "ltr",
+  "name": {
+    "en": "InScript",
+    "native": "ಇನ\u0CCD\u200Cಸ\u0CCDಕ\u0CCDರ\u0CBFಪ\u0CCDಟ\u0CCD"
+  },
+  "source": "Windows \"Kannada\" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).",
+  "keys": {
+    "Backquote": {
+      "n": "ೊ",
+      "s": "ಒ"
+    },
+    "Digit1": {
+      "n": "1",
+      "ag": "೧",
+      "sag": "\u200D"
+    },
+    "Digit2": {
+      "n": "2",
+      "ag": "೨",
+      "sag": "\u200C"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "\u0CCDರ",
+      "ag": "೩"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "ರ\u0CCD",
+      "ag": "೪",
+      "sag": "₹"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "ಜ\u0CCDಞ",
+      "ag": "೫"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "ತ\u0CCDರ",
+      "ag": "೬"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "ಕ\u0CCDಷ",
+      "ag": "೭"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "ಶ\u0CCDರ",
+      "ag": "೮"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "(",
+      "ag": "೯"
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")",
+      "ag": "೦"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "ಃ"
+    },
+    "Equal": {
+      "n": "ೃ",
+      "s": "ಋ",
+      "ag": "ೄ",
+      "sag": "ೠ"
+    },
+    "KeyQ": {
+      "n": "\u0CCC",
+      "s": "ಔ"
+    },
+    "KeyW": {
+      "n": "ೈ",
+      "s": "ಐ",
+      "ag": "ೖ"
+    },
+    "KeyE": {
+      "n": "ಾ",
+      "s": "ಆ"
+    },
+    "KeyR": {
+      "n": "ೀ",
+      "s": "ಈ",
+      "sag": "ೡ"
+    },
+    "KeyT": {
+      "n": "ೂ",
+      "s": "ಊ"
+    },
+    "KeyY": {
+      "n": "ಬ",
+      "s": "ಭ"
+    },
+    "KeyU": {
+      "n": "ಹ",
+      "s": "ಙ"
+    },
+    "KeyI": {
+      "n": "ಗ",
+      "s": "ಘ"
+    },
+    "KeyO": {
+      "n": "ದ",
+      "s": "ಧ"
+    },
+    "KeyP": {
+      "n": "ಜ",
+      "s": "ಝ"
+    },
+    "BracketLeft": {
+      "n": "ಡ",
+      "s": "ಢ"
+    },
+    "BracketRight": {
+      "s": "ಞ"
+    },
+    "KeyA": {
+      "n": "ೋ",
+      "s": "ಓ"
+    },
+    "KeyS": {
+      "n": "ೇ",
+      "s": "ಏ",
+      "ag": "ೕ"
+    },
+    "KeyD": {
+      "n": "\u0CCD",
+      "s": "ಅ"
+    },
+    "KeyF": {
+      "n": "\u0CBF",
+      "s": "ಇ",
+      "sag": "ಌ"
+    },
+    "KeyG": {
+      "n": "ು",
+      "s": "ಉ"
+    },
+    "KeyH": {
+      "n": "ಪ",
+      "s": "ಫ",
+      "sag": "ೞ"
+    },
+    "KeyJ": {
+      "n": "ರ",
+      "s": "ಱ"
+    },
+    "KeyK": {
+      "n": "ಕ",
+      "s": "ಖ"
+    },
+    "KeyL": {
+      "n": "ತ",
+      "s": "ಥ"
+    },
+    "Semicolon": {
+      "n": "ಚ",
+      "s": "ಛ"
+    },
+    "Quote": {
+      "n": "ಟ",
+      "s": "ಠ"
+    },
+    "KeyZ": {
+      "n": "\u0CC6",
+      "s": "ಎ"
+    },
+    "KeyX": {
+      "n": "ಂ"
+    },
+    "KeyC": {
+      "n": "ಮ",
+      "s": "ಣ"
+    },
+    "KeyV": {
+      "n": "ನ"
+    },
+    "KeyB": {
+      "n": "ವ"
+    },
+    "KeyN": {
+      "n": "ಲ",
+      "s": "ಳ"
+    },
+    "KeyM": {
+      "n": "ಸ",
+      "s": "ಶ"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "ಷ"
+    },
+    "Period": {
+      "n": ".",
+      "s": "|"
+    },
+    "Slash": {
+      "n": "ಯ"
+    }
+  },
+  "longpress": {
+    "Backquote": ["ಒ"],
+    "Digit1": ["\u200D"],
+    "Digit2": ["\u200C"],
+    "Digit3": ["\u0CCDರ"],
+    "Digit4": ["ರ\u0CCD", "₹"],
+    "Digit5": ["ಜ\u0CCDಞ"],
+    "Digit6": ["ತ\u0CCDರ"],
+    "Digit7": ["ಕ\u0CCDಷ"],
+    "Digit8": ["ಶ\u0CCDರ"],
+    "Minus": ["ಃ"],
+    "Equal": ["ಋ", "ೄ", "ೠ"],
+    "KeyQ": ["ಔ"],
+    "KeyW": ["ಐ", "ೖ"],
+    "KeyE": ["ಆ"],
+    "KeyR": ["ಈ", "ೡ"],
+    "KeyT": ["ಊ"],
+    "KeyY": ["ಭ"],
+    "KeyU": ["ಙ"],
+    "KeyI": ["ಘ"],
+    "KeyO": ["ಧ"],
+    "KeyP": ["ಝ"],
+    "BracketLeft": ["ಢ"],
+    "KeyA": ["ಓ"],
+    "KeyS": ["ಏ", "ೕ"],
+    "KeyD": ["ಅ"],
+    "KeyF": ["ಇ", "ಌ"],
+    "KeyG": ["ಉ"],
+    "KeyH": ["ಫ", "ೞ"],
+    "KeyJ": ["ಱ"],
+    "KeyK": ["ಖ"],
+    "KeyL": ["ಥ"],
+    "Semicolon": ["ಛ"],
+    "Quote": ["ಠ"],
+    "KeyZ": ["ಎ"],
+    "KeyC": ["ಣ"],
+    "KeyN": ["ಳ"],
+    "KeyM": ["ಶ"],
+    "Comma": ["ಷ"]
+  }
+}

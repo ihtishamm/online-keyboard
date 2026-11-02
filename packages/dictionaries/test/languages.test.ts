@@ -18,6 +18,14 @@ const SLUG: Record<string, string> = {
   bal: "balochi",
   hi: "hindi",
   bn: "bangla",
+  mr: "marathi",
+  gu: "gujarati",
+  pa: "punjabi",
+  ta: "tamil",
+  te: "telugu",
+  kn: "kannada",
+  ml: "malayalam",
+  si: "sinhala",
   es: "spanish",
   fr: "french",
   it: "italian",
@@ -100,6 +108,17 @@ describe("text rules", () => {
     expect(norm("bn", "আমি")).toBe("আমি");
     expect(norm("bn", "উত্\u200Dসব")).toBe("উৎসব");
     expect(norm("bn", "৳")).toBeNull();
+  });
+
+  it("Wave 2 Indic: each script's words, Malayalam chillus atomic, Sinhala joiners kept", () => {
+    expect(tokenize("தமிழ் என் தாய்மொழி.", TEXT_RULES.ta!)).toEqual(["தமிழ்", "என்", "தாய்மொழி"]);
+    expect(tokenize("ਪੰਜਾਬੀ ਮੇਰੀ ਮਾਂ ਬੋਲੀ ਹੈ।", TEXT_RULES.pa!)).toHaveLength(5);
+    expect(norm("ml", "അവന്‍")).toBe("അവൻ");
+    expect(norm("si", "ප්‍රදේශය")).toBe("ප්‍රදේශය");
+    expect(norm("te", "తెలుగు")).toBe("తెలుగు");
+    expect(norm("kn", "ತెలుగు")).toBeNull(); // a Telugu letter inside
+    expect(norm("gu", "ગુજરાતી")).toBe("ગુજરાતી");
+    expect(norm("mr", "बाळ")).toBe("बाळ");
   });
 
   it("Latin: words keep case and accents, stray single letters are not words", () => {

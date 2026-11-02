@@ -1,0 +1,10 @@
+{
+  "scheme": "ml-roman",
+  "source": "Dakshina test split",
+  "pairs": 1000,
+  "top1": 0.4,
+  "top5": 0.473,
+  "messageWords": 300,
+  "correctionsPer10Words": 5.13,
+  "beta": true
+}

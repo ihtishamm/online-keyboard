@@ -3,6 +3,13 @@ import {
   ARABIC_SCRIPT,
   BENGALI,
   DEVANAGARI,
+  GUJARATI,
+  GURMUKHI,
+  KANNADA,
+  MALAYALAM,
+  SINHALA,
+  TAMIL,
+  TELUGU,
   URDU_SCRIPT,
   romanize,
   romanizeWord,
@@ -45,6 +52,48 @@ describe("romanize: Bengali", () => {
     expect(romanizeWord("ঘর", BENGALI, chat)).toBe("ghor");
     expect(romanizeWord("কমল", BENGALI, chat)).toBe("komol");
     expect(romanizeWord("বাংলা", BENGALI, chat)).toBe("bangla");
+  });
+});
+
+describe("romanize: Wave 2 Indic scripts", () => {
+  const word = (w: string, t: Parameters<typeof romanizeWord>[1]) => romanizeWord(w, t, chat);
+
+  it("drops the final schwa in North Indian scripts, and reads Marathi ळ", () => {
+    expect(word("ઘર", GUJARATI)).toBe("ghar");
+    expect(word("કમળ", GUJARATI)).toBe("kamal");
+    expect(word("बाळ", DEVANAGARI)).toBe("bal");
+  });
+
+  it("doubles the consonant after the Gurmukhi addak", () => {
+    expect(word("ਪੱਕਾ", GURMUKHI)).toBe("pakka");
+    expect(word("ਪੰਜਾਬੀ", GURMUKHI)).toBe("panjabi");
+    expect(word("ਸ਼ੇਰ", GURMUKHI)).toBe("sher");
+  });
+
+  it("keeps the inherent vowel in the South Indian scripts", () => {
+    expect(word("வணக்கம்", TAMIL)).toBe("vanakkam");
+    expect(word("தமிழ்", TAMIL)).toBe("thamizh");
+    expect(word("నమస్కారం", TELUGU)).toBe("namaskaram");
+    expect(word("ಕನ್ನಡ", KANNADA)).toBe("kannada");
+    expect(word("ಮಾಡಿಕೊಂಡಿತು", KANNADA)).toBe("madikonditu");
+  });
+
+  it("reads Malayalam chillus and the final half-u", () => {
+    expect(word("ഞാൻ", MALAYALAM)).toBe("njan");
+    expect(word("ആണ്", MALAYALAM)).toBe("aanu");
+    expect(word("മലയാളം", MALAYALAM)).toBe("malayalam");
+    expect(word("അവന്\u200D", MALAYALAM)).toBe("avan");
+  });
+
+  it("skips Sinhala joiners", () => {
+    expect(word("කොහොමද", SINHALA)).toBe("kohomada");
+    expect(word("ප්\u200Dරදේශය", SINHALA)).toBe("pradeshaya");
+    expect(romanizeWord("සිංහල", SINHALA, scholarly)).toBe("siṁhala");
+  });
+
+  it("writes ISO 15919 short and long e and o", () => {
+    expect(romanizeWord("எதோ", TAMIL, scholarly)).toBe("etō");
+    expect(romanizeWord("ఏమి", TELUGU, scholarly)).toBe("ēmi");
   });
 });
 

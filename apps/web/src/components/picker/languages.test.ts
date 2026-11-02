@@ -55,9 +55,10 @@ describe("suggestions from navigator.languages", () => {
     expect(slugs(suggestLanguages(LIST, ["bn-BD", "hi"]))).toEqual(["bangla", "hindi"]);
   });
 
-  it("does not suggest Shahmukhi for Punjabi in Gurmukhi", () => {
-    expect(suggestLanguages(LIST, ["pa-IN"])).toEqual([]);
-    expect(suggestLanguages(LIST, ["pa"])).toEqual([]);
+  it("tells Punjabi in Gurmukhi from Shahmukhi", () => {
+    expect(slugs(suggestLanguages(LIST, ["pa-IN"]))).toEqual(["punjabi"]);
+    expect(slugs(suggestLanguages(LIST, ["pa"]))).toEqual(["punjabi"]);
+    expect(slugs(suggestLanguages(LIST, ["pa-Guru"]))).toEqual(["punjabi"]);
   });
 
   it("ignores invalid tags", () => {

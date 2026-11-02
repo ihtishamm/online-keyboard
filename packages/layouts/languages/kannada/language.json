@@ -1,0 +1,25 @@
+{
+  "slug": "kannada",
+  "code": "kn",
+  "order": 170,
+  "lang": "kn",
+  "script": "Knda",
+  "dir": "ltr",
+  "name": {
+    "en": "Kannada",
+    "native": "ಕನ್ನಡ"
+  },
+  "aliases": [],
+  "region": "south-asia",
+  "fonts": ["kannada"],
+  "layouts": ["kn-roman", "kn-inscript"],
+  "sample": "ಕನ್ನಡ ನನ್ನ ಮಾತೃಭಾಷೆ.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "kn",
+    "bing": "kn"
+  },
+  "tier": null,
+  "notes": "English letters first, as for Hindi (decision §11.1). No voice yet: the locale has not passed /voice-probe."
+}

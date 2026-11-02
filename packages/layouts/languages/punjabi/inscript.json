@@ -1,0 +1,238 @@
+{
+  "id": "pa-inscript",
+  "lang": "pa",
+  "script": "Guru",
+  "dir": "ltr",
+  "name": {
+    "en": "InScript",
+    "native": "ਇਨਸਕ\u0A4Dਰਿਪਟ"
+  },
+  "source": "Windows \"Punjabi\" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).",
+  "keys": {
+    "Backquote": {
+      "s": "\u0A4Dਹ"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "\u0A4Dਵ",
+      "ag": "੧",
+      "sag": "\u200D"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "\u0A4Dਯ",
+      "ag": "੨",
+      "sag": "\u200C"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "\u0A4Dਰ",
+      "ag": "੩"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "\u0A71",
+      "ag": "੪",
+      "sag": "₹"
+    },
+    "Digit5": {
+      "n": "5",
+      "ag": "੫"
+    },
+    "Digit6": {
+      "n": "6",
+      "ag": "੬"
+    },
+    "Digit7": {
+      "n": "7",
+      "ag": "੭"
+    },
+    "Digit8": {
+      "n": "8",
+      "ag": "੮"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "(",
+      "ag": "੯"
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")",
+      "ag": "੦"
+    },
+    "Minus": {
+      "n": "-"
+    },
+    "KeyQ": {
+      "n": "\u0A4C",
+      "s": "ਔ"
+    },
+    "KeyW": {
+      "n": "\u0A48",
+      "s": "ਐ"
+    },
+    "KeyE": {
+      "n": "ਾ",
+      "s": "ਆ"
+    },
+    "KeyR": {
+      "n": "ੀ",
+      "s": "ਈ"
+    },
+    "KeyT": {
+      "n": "\u0A42",
+      "s": "ਊ"
+    },
+    "KeyY": {
+      "n": "ਬ",
+      "s": "ਭ"
+    },
+    "KeyU": {
+      "n": "ਹ",
+      "s": "ਙ"
+    },
+    "KeyI": {
+      "n": "ਗ",
+      "s": "ਘ",
+      "ag": "ਗ\u0A3C"
+    },
+    "KeyO": {
+      "n": "ਦ",
+      "s": "ਧ"
+    },
+    "KeyP": {
+      "n": "ਜ",
+      "s": "ਝ",
+      "ag": "ਜ\u0A3C"
+    },
+    "BracketLeft": {
+      "n": "ਡ",
+      "s": "ਢ",
+      "ag": "ੜ"
+    },
+    "BracketRight": {
+      "n": "\u0A3C",
+      "s": "ਞ"
+    },
+    "KeyA": {
+      "n": "\u0A4B",
+      "s": "ਓ"
+    },
+    "KeyS": {
+      "n": "\u0A47",
+      "s": "ਏ"
+    },
+    "KeyD": {
+      "n": "\u0A4D",
+      "s": "ਅ"
+    },
+    "KeyF": {
+      "n": "ਿ",
+      "s": "ਇ",
+      "sag": "ੲ"
+    },
+    "KeyG": {
+      "n": "\u0A41",
+      "s": "ਉ",
+      "sag": "ੳ"
+    },
+    "KeyH": {
+      "n": "ਪ",
+      "s": "ਫ",
+      "ag": "ਫ\u0A3C"
+    },
+    "KeyJ": {
+      "n": "ਰ",
+      "s": "ੜ"
+    },
+    "KeyK": {
+      "n": "ਕ",
+      "s": "ਖ",
+      "ag": "ਖ\u0A3C"
+    },
+    "KeyL": {
+      "n": "ਤ",
+      "s": "ਥ"
+    },
+    "Semicolon": {
+      "n": "ਚ",
+      "s": "ਛ"
+    },
+    "Quote": {
+      "n": "ਟ",
+      "s": "ਠ"
+    },
+    "KeyX": {
+      "n": "\u0A70",
+      "s": "\u0A02",
+      "sag": "ੴ"
+    },
+    "KeyC": {
+      "n": "ਮ",
+      "s": "ਣ"
+    },
+    "KeyV": {
+      "n": "ਨ"
+    },
+    "KeyB": {
+      "n": "ਵ",
+      "s": "ੲ",
+      "ag": "ੳ"
+    },
+    "KeyN": {
+      "n": "ਲ",
+      "s": "ਲ\u0A3C"
+    },
+    "KeyM": {
+      "n": "ਸ",
+      "s": "ਸ\u0A3C"
+    },
+    "Comma": {
+      "n": ","
+    },
+    "Period": {
+      "n": ".",
+      "s": "।",
+      "ag": "॥"
+    },
+    "Slash": {
+      "n": "ਯ"
+    }
+  },
+  "longpress": {
+    "Digit1": ["\u0A4Dਵ", "\u200D"],
+    "Digit2": ["\u0A4Dਯ", "\u200C"],
+    "Digit3": ["\u0A4Dਰ"],
+    "Digit4": ["\u0A71", "₹"],
+    "KeyQ": ["ਔ"],
+    "KeyW": ["ਐ"],
+    "KeyE": ["ਆ"],
+    "KeyR": ["ਈ"],
+    "KeyT": ["ਊ"],
+    "KeyY": ["ਭ"],
+    "KeyU": ["ਙ"],
+    "KeyI": ["ਘ", "ਗ\u0A3C"],
+    "KeyO": ["ਧ"],
+    "KeyP": ["ਝ", "ਜ\u0A3C"],
+    "BracketLeft": ["ਢ", "ੜ"],
+    "BracketRight": ["ਞ"],
+    "KeyA": ["ਓ"],
+    "KeyS": ["ਏ"],
+    "KeyD": ["ਅ"],
+    "KeyF": ["ਇ", "ੲ"],
+    "KeyG": ["ਉ", "ੳ"],
+    "KeyH": ["ਫ", "ਫ\u0A3C"],
+    "KeyJ": ["ੜ"],
+    "KeyK": ["ਖ", "ਖ\u0A3C"],
+    "KeyL": ["ਥ"],
+    "Semicolon": ["ਛ"],
+    "Quote": ["ਠ"],
+    "KeyX": ["\u0A02", "ੴ"],
+    "KeyC": ["ਣ"],
+    "KeyB": ["ੲ", "ੳ"],
+    "KeyN": ["ਲ\u0A3C"],
+    "KeyM": ["ਸ\u0A3C"],
+    "Period": ["।", "॥"]
+  }
+}

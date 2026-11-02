@@ -53,6 +53,14 @@ export const TARGETS: readonly Target[] = [
   { code: "hi", scheme: "hi-roman", source: DAKSHINA, ...FULL, beta: true },
   { code: "bn", scheme: "bn-roman", source: DAKSHINA, ...FULL, beta: true },
   { code: "sd", scheme: "sd-roman", source: DAKSHINA, ...FULL, beta: true },
+  { code: "mr", scheme: "mr-roman", source: DAKSHINA, ...FULL, beta: true },
+  { code: "gu", scheme: "gu-roman", source: DAKSHINA, ...FULL, beta: true },
+  { code: "pa", scheme: "pa-roman", source: DAKSHINA, ...FULL, beta: true },
+  { code: "ta", scheme: "ta-roman", source: DAKSHINA, ...FULL, beta: true },
+  { code: "te", scheme: "te-roman", source: DAKSHINA, ...FULL, beta: true },
+  { code: "kn", scheme: "kn-roman", source: DAKSHINA, ...FULL, beta: true },
+  { code: "ml", scheme: "ml-roman", source: DAKSHINA, ...FULL, beta: true },
+  { code: "si", scheme: "si-roman", source: DAKSHINA, ...FULL, beta: true },
   // Chat Arabic and Persian are colloquial; the Wikipedia word lists are formal, so both
   // stay Beta until a word list with everyday spellings exists.
   { code: "ar", scheme: "ar-roman", source: OURS, ...FULL, beta: true },

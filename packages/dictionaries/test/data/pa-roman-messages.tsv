@@ -1,0 +1,44 @@
+# pa: held-out sentences (test split), Roman -> words
+# From the Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0:
+# https://github.com/google-research-datasets/dakshina
+# Native words normalised with packages/dictionaries/src/languages.ts.
+sann takk eh soviet sangh daa bhaag hoiya karda si	ਸੰਨ ਤੱਕ ਇਹ ਸੋਵੀਅਤ ਸੰਘ ਦਾ ਭਾਗ ਹੋਇਆ ਕਰਦਾ ਸੀ
+us de pitaa sh hazuraa singh saahitak ruchiaan vaale phauji san	ਉਸ ਦੇ ਪਿਤਾ ਸ਼ ਹਜ਼ੂਰਾ ਸਿੰਘ ਸਾਹਿਤਕ ਰੁਚੀਆਂ ਵਾਲੇ ਫੌਜੀ ਸਨ
+jo kise ikk shreni vand vich nahin aaundi	ਜੋ ਕਿਸੇ ਇੱਕ ਸ਼੍ਰੇਣੀ ਵੰਡ ਵਿੱਚ ਨਹੀਂ ਆਉਂਦੀ
+viuntabaddh viaahaan daa case	ਵਿਉਂਤਬੱਧ ਵਿਆਹਾਂ ਦਾ ਕੇਸ
+jo chhote saitta laee ucchit han	ਜੋ ਛੋਟੇ ਸਾਈਟਾਂ ਲਈ ਉੱਚਿਤ ਹਨ
+ddhaddi' shabad kavi di vesheshta nu darsaonda hai	ਢਾਡੀ ਸ਼ਬਦ ਕਾਵਿ ਦੀ ਵਿਸ਼ੇਸ਼ਤਾ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ
+bharti filman videshan vich vi vekhiyan jandiyan han	ਭਾਰਤੀ ਫਿਲਮਾਂ ਵਿਦੇਸ਼ਾਂ ਵਿੱਚ ਵੀ ਵੇਖੀਆਂ ਜਾਂਦੀਆਂ ਹਨ
+dasvin pass karan pichho oh kaav rachnan vallon sargaram hoye	ਦਸਵੀਂ ਪਾਸ ਕਰਨ ਪਿੱਛੋ ਉਹ ਕਾਵਿ ਰਚਨਾਂ ਵੱਲ ਸਰਗਰਮ ਹੋਏ
+baad vich es commetee nu red cross da naa mileya	ਬਾਅਦ ਵਿੱਚ ਇਸ ਕਮੇਟੀ ਨੂੰ ਰੈੱਡ ਕਰਾਸ ਦਾ ਨਾਂਅ ਮਿਲਿਆ
+asati koi vaagarathi naam ton daa	ਅਸਤੀ ਕੋਈ ਵਾਗਰਥੀ ਨਾਮ ਤੋਂ ਡਾ
+es di pushti vich oh kavi diyan eh tukan dinda hai	ਇਸ ਦੀ ਪੁਸ਼ਟੀ ਵਿੱਚ ਉਹ ਕਵੀ ਦੀਆਂ ਇਹ ਤੁਕਾਂ ਦਿੰਦਾ ਹੈ
+semzonova ate de dahaake vich duniaa vich mohari mahilaa baskatball khidaari si	ਸੈਮਜ਼ੋਨੋਵਾ ਅਤੇ ਦੇ ਦਹਾਕੇ ਵਿੱਚ ਦੁਨੀਆ ਵਿੱਚ ਮੋਹਰੀ ਮਹਿਲਾ ਬਾਸਕਟਬਾਲ ਖਿਡਾਰੀ ਸੀ
+sardar balabh bhai patel	ਸਰਦਾਰ ਬਲਭ ਭਾਈ ਪਟੇਲ
+ehna vichon kujh karkaan vich shaamil han	ਇਹਨਾਂ ਵਿੱਚੋਂ ਕੁਝ ਕਾਰਕਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹਨ
+filmfare sabh ton vadhiaa pitthavarati gayak nahin nahin roti kaparhaa aur makaan	ਫਿਲਮਫੇਅਰ ਸਭ ਤੋਂ ਵਧੀਆ ਪਿੱਠਵਰਤੀ ਗਾਇਕ ਨਹੀਂ ਨਹੀਂ ਰੋਟੀ ਕਪੜਾ ਔਰ ਮਕਾਨ
+us ne krakoof vich architecture de parhayi kiti	ਉਸ ਨੇ ਕਰਾਕੂਫ਼ ਵਿੱਚ ਆਰਕੀਟੈਕਚਰ ਦੀ ਪੜ੍ਹਾਈ ਕੀਤੀ
+ton marxbaadi vichaaradhaaraa daa parchaar ho reha si	ਤੋਂ ਮਾਰਕਸਵਾਦੀ ਵਿਚਾਰਧਾਰਾ ਦਾ ਪ੍ਚਾਰ ਹੋ ਰਿਹਾ ਸੀ
+eh pakistan de sindh soobe di aadhikarik bhasha hai	ਇਹ ਪਾਕਿਸਤਾਨ ਦੇ ਸਿੰਧ ਸੂਬੇ ਦੀ ਆਧਿਕਾਰਿਕ ਭਾਸ਼ਾ ਹੈ
+is chhoti pusatak vich kiti gai bhavikkhavaani sacch saabat hoi	ਇਸ ਛੋਟੀ ਪੁਸਤਕ ਵਿੱਚ ਕੀਤੀ ਗਈ ਭਵਿੱਖਵਾਣੀ ਸੱਚ ਸਾਬਤ ਹੋਈ
+is taraan oh pehlian islamic nariwadiyan de vichon ik hai	ਇਸ ਤਰ੍ਹਾਂ ਉਹ ਪਹਿਲੀਆਂ ਇਸਲਾਮਿਕ ਨਾਰੀਵਾਦੀਆਂ ਦੇ ਵਿੱਚੋਂ ਇੱਕ ਹੈ
+is kitab vich panj kahaniyan shaamil han	ਇਸ ਕਿਤਾਬ ਵਿੱਚ ਪੰਜ ਕਹਾਣੀਆਂ ਸ਼ਾਮਿਲ ਹਨ
+us ne sony t	ਉਸ ਨੇ ਸੋਨੀ ਟੀ
+asin pen ate pencil nu sahi tarike naal nahi chakk sakade	ਅਸੀਂ ਪੈਨ ਅਤੇ ਪੈਨਸਿਲ ਨੂੰ ਸਹੀ ਤਰੀਕੇ ਨਾਲ ਨਹੀ ਚੱਕ ਸਕਦੇ
+ghorhe mard maidaan vich dhahi pain utanaa	ਘੋੜੇ ਮਰਦ ਮੈਦਾਨ ਵਿੱਚ ਢਹਿ ਪੈਣ ਉਤਾਣਾ
+shiv sharnam zangaman da onkar hai	ਸ਼ਿਵ ਸ਼ਰਣਮ ਜੰਗਮਾਂ ਦਾ ਓਂਕਾਰ ਹੈ
+is ton baad usne jawahar lal nehru university vich vi parhia	ਇਸ ਤੋਂ ਬਾਅਦ ਉਸਨੇ ਜਵਾਹਰ ਲਾਲ ਨਹਿਰੂ ਯੂਨੀਵਰਸਿਟੀ ਵਿੱਚ ਵੀ ਪੜ੍ਹਾਇਆ
+chini ate pani nu ek alag bartan vich rakh do	ਚੀਨੀ ਅਤੇ ਪਾਣੀ ਨੂੰ ਇੱਕ ਅਲੱਗ ਬਰਤਨ ਵਿੱਚ ਰੱਖ ਦੋ
+oh siaasat naalon saahit vich vaddh ruchi rakkhade rahe	ਉਹ ਸਿਆਸਤ ਨਾਲੋਂ ਸਾਹਿਤ ਵਿੱਚ ਵੱਧ ਰੁਚੀ ਰੱਖਦੇ ਰਹੇ
+devinder sathearthi chuni huyi rachnaye parkash manu	ਦੇਵਿੰਦਰ ਸਤਿਆਰਥੀ ਚੁਨੀ ਹੁਈ ਰਚਨਾਏਂ ਪ੍ਰਕਾਸ਼ ਮਨੂ
+jawa de itehaas vich is daa naam bahut vaar badaliya gaya hai	ਜਾਵਾ ਦੇ ਇਤਿਹਾਸ ਵਿੱਚ ਇਸ ਦਾ ਨਾਮ ਬਹੁਤ ਵਾਰ ਬਦਲਿਆ ਗਿਆ ਹੈ
+vich sufibaad di sutantar pachaan kayam ho chukki si	ਵਿੱਚ ਸੂਫ਼ੀਵਾਦ ਦੀ ਸੁਤੰਤਰ ਪਛਾਣ ਕਾਇਮ ਹੋ ਚੁੱਕੀ ਸੀ
+shanivaar nu kise ikk pratiyogi di vidaaigi hundi hai	ਸ਼ਨੀਵਾਰ ਨੂੰ ਕਿਸੇ ਇੱਕ ਪ੍ਰਤੀਯੋਗੀ ਦੀ ਵਿਦਾਇਗੀ ਹੁੰਦੀ ਹੈ
+ohda janam dakhani russ vich hoeya	ਉਹਦਾ ਜਨਮ ਦੱਖਣੀ ਰੂਸ ਵਿੱਚ ਹੋਇਆ
+zindagi aam taur te arathahin ate betuki hai	ਜ਼ਿੰਦਗੀ ਆਮ ਤੌਰ ਤੇ ਅਰਥਹੀਣ ਅਤੇ ਬੇਤੁਕੀ ਹੈ
+kalidas naam daa shaabadik arth hai kaali daa sevak	ਕਾਲੀਦਾਸ ਨਾਮ ਦਾ ਸ਼ਾਬਦਿਕ ਅਰਥ ਹੈ ਕਾਲੀ ਦਾ ਸੇਵਕ
+naat kalaa ate meraa anubhav	ਨਾਟ ਕਲਾ ਅਤੇ ਮੇਰਾ ਅਨੁਭਵ
+frida kale mainde kapde	ਫਰੀਦਾ ਕਾਲੇ ਮੈਂਡੇ ਕਪੜੇ
+kanapharamal chakkari brahimand vigayan	ਕਨਫਰਮਲ ਚੱਕਰੀ ਬ੍ਰਹਿਮੰਡ ਵਿਗਿਆਨ
+maadaa ate nar ik duje naal bahut vafaadaar nibhaaunde han	ਮਾਦਾ ਅਤੇ ਨਰ ਇਕ ਦੂਜੇ ਨਾਲ ਬਹੁਤ ਵਫ਼ਾਦਾਰ ਨਿਭਾਉਂਦੇ ਹਨ
+ikk vaibb hosating sevaa ikk kisam di intaranait hosating sevaa hai	ਇੱਕ ਵੈੱਬ ਹੋਸਟਿੰਗ ਸੇਵਾ ਇੱਕ ਕਿਸਮ ਦੀ ਇੰਟਰਨੈਟ ਹੋਸਟਿੰਗ ਸੇਵਾ ਹੈ

@@ -1,0 +1,245 @@
+{
+  "id": "ta-inscript",
+  "lang": "ta",
+  "script": "Taml",
+  "dir": "ltr",
+  "name": {
+    "en": "InScript",
+    "native": "இன\u0BCDஸ\u0BCDகிரிப\u0BCDட\u0BCD"
+  },
+  "source": "Windows \"Tamil\" (InScript), from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).",
+  "keys": {
+    "Backquote": {
+      "n": "ொ",
+      "s": "ஒ"
+    },
+    "Digit1": {
+      "n": "1",
+      "ag": "௧",
+      "sag": "\u200D"
+    },
+    "Digit2": {
+      "n": "2",
+      "ag": "௨",
+      "sag": "\u200C"
+    },
+    "Digit3": {
+      "n": "3",
+      "ag": "௩"
+    },
+    "Digit4": {
+      "n": "4",
+      "ag": "௪",
+      "sag": "₹"
+    },
+    "Digit5": {
+      "n": "5",
+      "ag": "௫"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "த\u0BCDர",
+      "ag": "௬"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "க\u0BCDஷ",
+      "ag": "௭"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "ஷ\u0BCDர",
+      "ag": "௮"
+    },
+    "Digit9": {
+      "n": "9",
+      "ag": "௯"
+    },
+    "Digit0": {
+      "n": "0",
+      "s": "௰",
+      "ag": "௦"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "ஃ",
+      "ag": "௱"
+    },
+    "Equal": {
+      "ag": "௲"
+    },
+    "KeyQ": {
+      "n": "ௌ",
+      "s": "ஔ"
+    },
+    "KeyW": {
+      "n": "ை",
+      "s": "ஐ"
+    },
+    "KeyE": {
+      "n": "ா",
+      "s": "ஆ"
+    },
+    "KeyR": {
+      "n": "\u0BC0",
+      "s": "ஈ"
+    },
+    "KeyT": {
+      "n": "ூ",
+      "s": "ஊ"
+    },
+    "KeyY": {
+      "n": "ப",
+      "s": "ப",
+      "ag": "௷"
+    },
+    "KeyU": {
+      "n": "ஹ",
+      "s": "ங"
+    },
+    "KeyI": {
+      "n": "க",
+      "s": "க"
+    },
+    "KeyO": {
+      "n": "த",
+      "s": "த"
+    },
+    "KeyP": {
+      "n": "ஜ",
+      "s": "ச"
+    },
+    "BracketLeft": {
+      "n": "ட",
+      "s": "ட"
+    },
+    "BracketRight": {
+      "n": "ஞ",
+      "s": "ஞ"
+    },
+    "KeyA": {
+      "n": "ோ",
+      "s": "ஓ"
+    },
+    "KeyS": {
+      "n": "ே",
+      "s": "ஏ"
+    },
+    "KeyD": {
+      "n": "\u0BCD",
+      "s": "அ"
+    },
+    "KeyF": {
+      "n": "ி",
+      "s": "இ"
+    },
+    "KeyG": {
+      "n": "ு",
+      "s": "உ"
+    },
+    "KeyH": {
+      "n": "ப",
+      "s": "ப",
+      "ag": "௶"
+    },
+    "KeyJ": {
+      "n": "ர",
+      "s": "ற"
+    },
+    "KeyK": {
+      "n": "க",
+      "s": "க"
+    },
+    "KeyL": {
+      "n": "த",
+      "s": "த"
+    },
+    "Semicolon": {
+      "n": "ச",
+      "s": "ச"
+    },
+    "Quote": {
+      "n": "ட",
+      "s": "ட"
+    },
+    "KeyZ": {
+      "n": "ெ",
+      "s": "எ",
+      "ag": "௹"
+    },
+    "KeyX": {
+      "s": "ௐ",
+      "ag": "௺"
+    },
+    "KeyC": {
+      "n": "ம",
+      "s": "ண",
+      "ag": "௴"
+    },
+    "KeyV": {
+      "n": "ந",
+      "s": "ன",
+      "ag": "௳"
+    },
+    "KeyB": {
+      "n": "வ",
+      "s": "ழ",
+      "ag": "௵"
+    },
+    "KeyN": {
+      "n": "ல",
+      "s": "ள",
+      "ag": "௸"
+    },
+    "KeyM": {
+      "n": "ஸ",
+      "s": "ஶ"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "ஷ"
+    },
+    "Period": {
+      "n": ".",
+      "s": "ஸ\u0BCDர\u0BC0"
+    },
+    "Slash": {
+      "n": "ய",
+      "s": "ய"
+    }
+  },
+  "longpress": {
+    "Backquote": ["ஒ"],
+    "Digit1": ["\u200D"],
+    "Digit2": ["\u200C"],
+    "Digit4": ["₹"],
+    "Digit6": ["த\u0BCDர"],
+    "Digit7": ["க\u0BCDஷ"],
+    "Digit8": ["ஷ\u0BCDர"],
+    "Digit0": ["௰"],
+    "Minus": ["ஃ", "௱"],
+    "KeyQ": ["ஔ"],
+    "KeyW": ["ஐ"],
+    "KeyE": ["ஆ"],
+    "KeyR": ["ஈ"],
+    "KeyT": ["ஊ"],
+    "KeyY": ["௷"],
+    "KeyU": ["ங"],
+    "KeyP": ["ச"],
+    "KeyA": ["ஓ"],
+    "KeyS": ["ஏ"],
+    "KeyD": ["அ"],
+    "KeyF": ["இ"],
+    "KeyG": ["உ"],
+    "KeyH": ["௶"],
+    "KeyJ": ["ற"],
+    "KeyZ": ["எ", "௹"],
+    "KeyC": ["ண", "௴"],
+    "KeyV": ["ன", "௳"],
+    "KeyB": ["ழ", "௵"],
+    "KeyN": ["ள", "௸"],
+    "KeyM": ["ஶ"],
+    "Comma": ["ஷ"],
+    "Period": ["ஸ\u0BCDர\u0BC0"]
+  }
+}

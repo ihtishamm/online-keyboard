@@ -44,7 +44,7 @@
   --color-key-edge: #cfcac0;
   --color-key-pressed: #d7ece7;
   --color-key-mod: #e9e6df;
-  --color-key-hint: #8a867d;
+  --color-key-hint: #736f66;
   --color-focus: #c2410c;
   --color-good: #15803d;
   --color-bad: #b91c1c;
@@ -68,7 +68,7 @@
     --color-key-edge: #12120f;
     --color-key-pressed: #1f3b35;
     --color-key-mod: #22221f;
-    --color-key-hint: #8f8c83;
+    --color-key-hint: #9a978e;
     --color-focus: #fb923c;
     --color-good: #4ade80;
     --color-bad: #f87171;
@@ -91,7 +91,7 @@
   --color-key-edge: #12120f;
   --color-key-pressed: #1f3b35;
   --color-key-mod: #22221f;
-  --color-key-hint: #8f8c83;
+  --color-key-hint: #9a978e;
   --color-focus: #fb923c;
   --color-good: #4ade80;
   --color-bad: #f87171;

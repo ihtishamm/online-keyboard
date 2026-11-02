@@ -45,6 +45,26 @@ const persoArabicDigits = (keys: Keys) => {
 
 const CLDR_NOTE = "Unicode CLDR 43 keyboard data (Unicode License v3)";
 
+/**
+ * Windows InScript puts ZWJ, ZWNJ and ₹ on Ctrl+Shift+1, 2 and 4, a browser shortcut: use
+ * Shift+AltGr on those keys, or, where the layout already types something there (Marathi's
+ * ! and @, Malayalam's ൰ and ൱), the next key whose Shift+AltGr is free (IMPORTS.md lists it).
+ */
+const inscriptExtras = (keys: Keys) => {
+  const free = (code: KeyCode) => !keys[code]?.sag;
+  for (const [preferred, char] of [
+    ["Digit1", "\u200D"],
+    ["Digit2", "\u200C"],
+    ["Digit4", "₹"],
+  ] as const) {
+    if (Object.values(keys).some((def) => Object.values(def ?? {}).includes(char))) continue;
+    const code = free(preferred)
+      ? preferred
+      : KEY_CODES.find((c) => /^(Digit|Key)/.test(c) && keys[c]?.n && free(c));
+    if (code) set(keys, code, { sag: char });
+  }
+};
+
 /** The Windows US-International keyboard: the base of every "Easy accents" layout. */
 const US_INTL = "cldr/en-t-k0-windows-extended.xml";
 
@@ -330,6 +350,42 @@ export const IMPORTS: readonly ImportSpec[] = [
       set(keys, "Digit2", { sag: "\u200C" });
       set(keys, "Digit4", { sag: "₹" });
       set(keys, "Digit5", { sag: "৳" });
+    },
+  },
+  // Wave 2 (plan 9a): Windows InScript for the Indic scripts, and Sinhala Wijesekara.
+  ...(
+    [
+      ["mr", "marathi", "Deva", "Marathi", "इनस्क्रिप्ट"],
+      ["gu", "gujarati", "Gujr", "Gujarati", "ઇનસ્ક્રિપ્ટ"],
+      ["pa", "punjabi", "Guru", "Punjabi", "ਇਨਸਕ੍ਰਿਪਟ"],
+      ["ta", "tamil", "Taml", "Tamil", "இன்ஸ்கிரிப்ட்"],
+      ["te", "telugu", "Telu", "Telugu", "ఇన్‌స్క్రిప్ట్"],
+      ["kn", "kannada", "Knda", "Kannada", "ಇನ್‌ಸ್ಕ್ರಿಪ್ಟ್"],
+      ["ml", "malayalam", "Mlym", "Malayalam", "ഇൻസ്ക്രിപ്റ്റ്"],
+    ] as const
+  ).map(([code, folder, script, windows, native]): ImportSpec => ({
+    out: `${folder}/inscript.json`,
+    from: { cldr: `cldr/${code}-t-k0-windows.xml` },
+    meta: {
+      id: `${code}-inscript`,
+      lang: code,
+      script,
+      dir: "ltr",
+      name: { en: "InScript", native },
+      source: `Windows "${windows}" (InScript), from ${CLDR_NOTE}. ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr (on 1, 2 and 4 where free).`,
+    },
+    patch: inscriptExtras,
+  })),
+  {
+    out: "sinhala/wijesekara.json",
+    from: { cldr: "cldr/si-t-k0-windows.xml" },
+    meta: {
+      id: "si-wijesekara",
+      lang: "si",
+      script: "Sinh",
+      dir: "ltr",
+      name: { en: "Wijesekara", native: "විජේසේකර" },
+      source: `Windows "Sinhala - Wij 9" (Wijesekara), from ${CLDR_NOTE}.`,
     },
   },
   {

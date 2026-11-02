@@ -1,0 +1,10 @@
+{
+  "source": "tewiki-latest-pages-articles.xml.bz2",
+  "pages": 47150,
+  "sentences": 1084332,
+  "repeatedSentencesSkipped": 2397394,
+  "tokens": 8969255,
+  "distinctWords": 806190,
+  "wordsKept": 100000,
+  "nextWordHeads": 9216
+}

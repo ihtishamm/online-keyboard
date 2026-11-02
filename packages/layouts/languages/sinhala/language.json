@@ -1,0 +1,25 @@
+{
+  "slug": "sinhala",
+  "code": "si",
+  "order": 190,
+  "lang": "si",
+  "script": "Sinh",
+  "dir": "ltr",
+  "name": {
+    "en": "Sinhala",
+    "native": "සිංහල"
+  },
+  "aliases": ["Sinhalese"],
+  "region": "south-asia",
+  "fonts": ["sinhala"],
+  "layouts": ["si-roman", "si-wijesekara"],
+  "sample": "සිංහල මගේ මව් භාෂාවයි.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "si",
+    "bing": "si"
+  },
+  "tier": null,
+  "notes": "English letters first, as for Hindi (decision §11.1). No voice yet: the locale has not passed /voice-probe."
+}

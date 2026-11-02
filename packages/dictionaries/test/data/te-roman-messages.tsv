@@ -1,0 +1,44 @@
+# te: held-out sentences (test split), Roman -> words
+# From the Dakshina dataset v1.0 (Google Research), CC BY-SA 4.0:
+# https://github.com/google-research-datasets/dakshina
+# Native words normalised with packages/dictionaries/src/languages.ts.
+naradudi maatalu vinna taruvaata koodaa dharmaraju mounam veedaledu	నారదుడి మాటలు విన్న తరువాత కూడా ధర్మరాజు మౌనం వీడలేదు
+plastic vasthuvulu cold weldingu cheyutaku mikkili anukulam	ప్లాస్టిక్ వస్తువులు కోల్డు వెల్డింగు చేయుటకు మిక్కిలి అనుకూలం
+aayaa chakra dhevathalanu praardhinchaali	ఆయా చక్ర దేవతలను ప్రార్థించాలి
+akkade sthira nivaasam erparachukonnaaru	అక్కడే స్థిర నివాసం ఏర్పరచుకొన్నారు
+vaati vinikidi sakti koodaa takkuve	వాటి వినికిడి శక్తి కూడా తక్కువే
+t n l ee roju charithralo	టీ ఎన్ ఎల్ ఈ రోజు చరిత్రలో
+mellaga aanglam meeda pattu tecchukuni intermediate manchi maarkulato utternudayyaadu	మెల్లగా ఆంగ్లం మీద పట్టు తెచ్చుకుని ఇంటర్మీడియట్ మంచి మార్కులతో ఉత్తీర్ణుడయ్యాడు
+krishnashastri kavitaatma krishnashastri kavitvampai samagra vimarsa	కృష్ణశాస్త్రి కవితాత్మ కృష్ణశాస్త్రి కవిత్వంపై సమగ్ర విమర్శ
+ee chitraniki bandhaa kanaklingeswararao sarangadharuniga p	ఆ చిత్రానికి బందా కనకలింగేశ్వరరావు సారంగధరునిగా పి
+kundalineesakti sthoola sareeram nundi pragnaamaya sareeram varaku vyaapinchiyunnadi	కుండలినీశక్తి స్థూల శరీరం నుండి ప్రజ్ఞామయ శరీరం వరకు వ్యాపించియున్నది
+prastutam koodaa aame akkade nivasistunnaaru	ప్రస్తుతం కూడా ఆమె అక్కడే నివసిస్తున్నారు
+va samvatsaramlo jaateeyam cheyabadinapudu deeni peru hindustan shipyard limited ayindi	వ సంవత్సరంలో జాతీయం చేయబడినపుడు దీని పేరు హిందుస్థాన్ షిప్యార్డ్ లిమిటెడ్ అయింది
+haindava saampradaayamlo maanavuniki kaavalasina anni dharma sookshmamulu ikkade labhyam	హైందవ సాంప్రదాయంలో మానవునికి కావలసిన అన్ని ధర్మ సూక్ష్మములు ఇక్కడే లభ్యం
+meerevarainaa choosaaraa kanneerainaa vidichaaraa	మీరెవరైనా చూశారా కన్నీరైనా విడిచారా
+vedaantam siddhendra varaprasad saampradaaayakamaina kuchipudu naatyakaarula kutumbaaniki chendinavaadu	వేదాంతం సిద్ధేంద్ర వరప్రసాద్ సాంప్రదాయకమైన కూచిపూడి నాట్యకారుల కుటుంబానికి చెందినవాడు
+visvanaadhavaari navalaa rachanalo ee pokada kontavaraku kanipistundi	విశ్వనాధవారి నవలా రచనలో ఈ పోకడ కొంతవరకు కనిపిస్తుంది
+eekrinda soochinchinatlu podi tayaaru chesi seesaalo tadi tagalakundaa vesi bhadraparachukovali	ఈక్రింద సూచించినట్లు పొడి తయారు చేసి సీసాలో తడి తగలకుండా వేసి భద్రపరచుకోవాలి
+adi photon ladvaaraa ledaa saktini nimpabadina kanaala dvaaraa jarugutundi	అది ఫోటాన్ లద్వారా లేదా శక్తిని నింపబడిన కణాల ద్వారా జరుగుతుంది
+narayana chakram daa c narayanareddy kavitvampai vishleshanaatmakamgaa vraasina grandham	నారాయణ చక్రం డా సి నారాయణరెడ్డి కవిత్వంపై విశ్లేణాత్మకంగా వ్రాసిన గ్రంథం
+gundlapalle perutho chalaa vyasalu vunnayi aa vyasala jabithanu ikkada iccharu	గుండ్లపల్లె పేరుతో చాలా వ్యాసాలు ఉన్నాయి ఆ వ్యాసాల జాబితాను ఇక్కడ ఇచ్చారు
+aaharam mariyu panchabhootaala chikitsa tappa inka vere mandulu undavu	ఆహారం మరియు పంచభూతాల చికిత్స తప్ప ఇంక వేరే మందులు వుండవు
+ekkuvagaa haasyapaatralalonu tandripaatralalonu natinchadu	ఎక్కువగా హాస్యపాత్రలలోను తండ్రిపాత్రలలోను నటించాడు
+udyogamlo undagaa upadhyaaya sanghaallo churuggaa undevadu	ఉద్యోగంలో ఉండగా ఉపాధ్యాయ సంఘాల్లో చురుగ్గా ఉండేవాడు
+adi choosi swayamvaraaniki vacchina rajulantaa suyodhanudi meeda viruchuku paddaaru	అది చూసి స్వయంవరానికి వచ్చిన రాజులంతా సుయోధనుడి మీద విరుచుకు పడ్డారు
+alaage baalkan raashtraalu koodaa svatantrammayyaayi	అలాగే బాల్కన్ రాష్ట్రాలు కూడా స్వతంత్రంమయ్యాయి
+gasolin volume dvaaraa takkuva peludu parimitini mariyu saatam eguva peludu parimiti vuntundi	గాసోలిన్ వాల్యూమ్ ద్వారా తక్కువ పేలుడు పరిమితిని మరియు శాతం ఎగువ పేలుడు పరిమితి ఉంటుంది
+aa kovaku chendinde ee kattula gaaradi	ఆ కోవకు చెందిందే ఈ కత్తుల గారడి
+telugulo ayinachoseetala tankam anavachchunu	తెలుగులో అయినచోశీతల టంకం అనవచ్చును
+aa taruvata line dorikindi kani sastry yettaledu	ఆ తర్వాత లైన్ దొరికింది కానీ శాస్త్రి ఎత్తలేదు
+ee pulupudhanam anunadi vudajahariamlam hydrochloricamlam yokka pulupudhananiki sapekshangha theluputharu	ఈ పులుపుదనం అనునది ఉదజహరికామ్లం హైడ్రోక్లోరికామ్లము యొక్క పులుపుదానానికి సాపేక్షంగా తెలుపుతారు
+paata kotta melavimpu vinta choosi vanta paadu	పాత కొత్త మేళవింపు వింత చూసి వంత పాడు
+itade vyaadhulaku vaati kaarakaalaku sambandhinchina koch pratipaaditaalanu soochinchaadu	ఇతడే వ్యాధులకు వాటి కారకాలకు సంబంధించిన కోచ్ ప్రతిపాదితాలను సూచించాడు
+hippocampus debbathinna elukala yandhu kanipinche mukya lakshanamu vati charyashilathalo perugudhala	హిప్పోకాంపస్ దెబ్బతిన్న ఎలుకల యందు కనిపించే ముఖ్య లక్షణము వాటి చర్యాశీలతలో పెరుగుదల
+thripura sundhari anna parashakthi namame ee kandhamu perunaku mulamani rachayitha bhavana	త్రిపుర సుందరి అన్న పరాశక్తి నామమే ఈ కాండము పేరునకు మూలమని రచయిత భావన
+sadhanandha rupam shubhayoga rupa masheshathmikam nirgunam nirvikaram	సదానంద రూపాం శుభాయోగ రూపా మశేషాత్మికాం నిర్గుణాం నిర్వికారాం
+appudu mexicolo kaaluninaa ventane californialo sthirapadipoyaayi	అప్పుడు మెక్సికోలో కాలూనినా వెంటనే కాలిఫోర్నియాలో స్థిరపడిపోయాయి
+nellore jilla bucchireddipalem mandalam kondurupaalem dalitavadalo narayya penchalammalaku aarava biddagaa janmincharu	నెల్లూరు జిల్లా బుచ్చిరెడ్డిపాళెం మండలం కొండూరుపాళెం దళితవాడలో నారయ్య పెంచలమ్మలకు ఆరవ బిడ్డగా జన్మించారు
+asankyakangha thabellu kuda atu itu thiruguthunnayi	అసంఖ్యాకంగా తాబేళ్ళు కూడా అటూ ఇటూ తిరుగుతున్నాయి
+vishnuvu aa kaustubhamanito paatu mahaalakshmini tana vaksha sthalam pai viraajillachesaadu	విష్ణువు ఆ కౌస్తుభమణితో పాటు మహాలక్ష్మిని తన వక్ష స్థలం పై విరాజిల్లచేశాడు
+vyaadhi nirodhaka sakti debba tinna vyaktulaku eosinophilic folliculitis raavachchu	వ్యాధి నిరోధక శక్తి దెబ్బ తిన్న వ్యక్తులకు ఎసినోఫిలిక్ ఫొలిక్యులిటిస్ రావచ్చు

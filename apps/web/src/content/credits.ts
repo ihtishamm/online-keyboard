@@ -25,8 +25,22 @@ const WIKI_NAMES: Readonly<Record<string, string>> = {
   fa: "Persian",
   pnb: "Western Punjabi",
   bn: "Bengali",
+  pa: "Punjabi",
 };
-const DAKSHINA: ReadonlySet<string> = new Set(["hi", "bn", "sd"]);
+/** Languages whose chat spellings come from Dakshina (see data/<code>/chat.tsv). */
+export const DAKSHINA: ReadonlySet<string> = new Set([
+  "hi",
+  "bn",
+  "sd",
+  "mr",
+  "gu",
+  "pa",
+  "ta",
+  "te",
+  "kn",
+  "ml",
+  "si",
+]);
 
 export function creditsFor(language: Language) {
   const { code } = language;

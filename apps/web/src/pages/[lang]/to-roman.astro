@@ -4,7 +4,7 @@ import { LANGUAGES, getLayout, languageBundle, type Language } from "@okb/layout
 import { FONT_CLASS } from "../../components/fonts";
 import RomanizeTool from "../../components/tools/RomanizeTool";
 import Base from "../../layouts/Base.astro";
-import { creditsFor } from "../../content/credits";
+import { DAKSHINA, creditsFor } from "../../content/credits";
 import { SITE } from "../../config/site";
 
 // Script → English letters for every language with a Roman scheme (plan item 6.5).
@@ -25,6 +25,14 @@ const HEADINGS: Record<string, string> = {
   urdu: "Urdu to Roman Urdu Converter",
   hindi: "Hindi to English Letters Converter",
   bangla: "Bangla to English Letters Converter",
+  marathi: "Marathi to English Letters Converter",
+  gujarati: "Gujarati to English Letters Converter",
+  punjabi: "Gurmukhi to English Letters Converter",
+  tamil: "Tamil to English Letters (Tanglish) Converter",
+  telugu: "Telugu to English Letters Converter",
+  kannada: "Kannada to English Letters Converter",
+  malayalam: "Malayalam to English Letters (Manglish) Converter",
+  sinhala: "Sinhala to English Letters (Singlish) Converter",
   arabic: "Arabic to English Letters (Arabizi) Converter",
   farsi: "Persian to Finglish Converter",
 };
@@ -37,7 +45,7 @@ const romanId = language.layouts.find((id) => getLayout(id).translit)!;
 const scheme = bundle.schemes[getLayout(romanId).translit!]!;
 const romanPage = romanId === language.layouts[0] ? `/${language.slug}` : `/${language.slug}/roman`;
 const font = FONT_CLASS[language.fonts[0]!];
-const dakshina = ["hi", "bn", "sd"].includes(language.code);
+const dakshina = DAKSHINA.has(language.code);
 ---
 
 <Base

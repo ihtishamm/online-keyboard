@@ -1,0 +1,25 @@
+{
+  "slug": "tamil",
+  "code": "ta",
+  "order": 150,
+  "lang": "ta",
+  "script": "Taml",
+  "dir": "ltr",
+  "name": {
+    "en": "Tamil",
+    "native": "தமிழ்"
+  },
+  "aliases": [],
+  "region": "south-asia",
+  "fonts": ["tamil"],
+  "layouts": ["ta-roman", "ta-inscript"],
+  "sample": "தமிழ் என் தாய்மொழி.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ta",
+    "bing": "ta"
+  },
+  "tier": null,
+  "notes": "English letters first, as for Hindi (decision §11.1). No voice yet: the locale has not passed /voice-probe."
+}

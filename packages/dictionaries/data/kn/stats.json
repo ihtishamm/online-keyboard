@@ -1,0 +1,10 @@
+{
+  "source": "knwiki-latest-pages-articles.xml.bz2",
+  "pages": 17853,
+  "sentences": 1020026,
+  "repeatedSentencesSkipped": 99200,
+  "tokens": 10500661,
+  "distinctWords": 1094036,
+  "wordsKept": 100000,
+  "nextWordHeads": 9830
+}

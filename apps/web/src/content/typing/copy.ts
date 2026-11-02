@@ -86,6 +86,46 @@ function NON_LATIN(): Record<string, TypingCopy> {
       test: "کٲشُر ٹایپنگ ٹیسٹ",
       tip: `ٲ, Kashmiri's own vowel letter, is on ${key("ks-phonetic", "ٲ")}.`,
     },
+    mr: {
+      tutor: "मराठी टायपिंग ट्यूटर",
+      test: "मराठी टायपिंग टेस्ट",
+      tip: `ळ, which Hindi lacks, is on ${key("mr-inscript", "ळ")}. A vowel sign is typed after its consonant, even one written before it: क and then ि (${key("mr-inscript", "ि")}) make कि.`,
+    },
+    gu: {
+      tutor: "ગુજરાતી ટાઇપિંગ ટ્યુટર",
+      test: "ગુજરાતી ટાઇપિંગ ટેસ્ટ",
+      tip: `On InScript a vowel sign is typed after its consonant, even one written before it: ક and then િ (${key("gu-inscript", "િ")}) make કિ. The virama ્ (${key("gu-inscript", "્")}) joins consonants, and ળ is on ${key("gu-inscript", "ળ")}.`,
+    },
+    pa: {
+      tutor: "ਪੰਜਾਬੀ ਟਾਈਪਿੰਗ ਟਿਊਟਰ",
+      test: "ਪੰਜਾਬੀ ਟਾਈਪਿੰਗ ਟੈਸਟ",
+      tip: `The addak ੱ (${key("pa-inscript", "ੱ")}) comes before the letter it doubles: ਪ, ੱ, ਕ, ਾ make ਪੱਕਾ. The tippi ੰ is on ${key("pa-inscript", "ੰ")} and the bindi ਂ on ${key("pa-inscript", "ਂ")}.`,
+    },
+    ta: {
+      tutor: "தமிழ் டைப்பிங் பயிற்சி",
+      test: "தமிழ் டைப்பிங் டெஸ்ட்",
+      tip: `The pulli ் (${key("ta-inscript", "்")}) ends a consonant: க and ் make க். ${on("ta-inscript", "ழளற")}.`,
+    },
+    te: {
+      tutor: "తెలుగు టైపింగ్ ట్యూటర్",
+      test: "తెలుగు టైపింగ్ టెస్ట్",
+      tip: `The virama ్ (${key("te-inscript", "్")}) joins consonants: క, ్, ష make క్ష. The anusvara ం is on ${key("te-inscript", "ం")}.`,
+    },
+    kn: {
+      tutor: "ಕನ್ನಡ ಟೈಪಿಂಗ್ ಟ್ಯೂಟರ್",
+      test: "ಕನ್ನಡ ಟೈಪಿಂಗ್ ಟೆಸ್ಟ್",
+      tip: `The virama ್ (${key("kn-inscript", "್")}) joins consonants: ನ, ್, ನ make ನ್ನ. The anusvara ಂ is on ${key("kn-inscript", "ಂ")} and ಳ on ${key("kn-inscript", "ಳ")}.`,
+    },
+    ml: {
+      tutor: "മലയാളം ടൈപ്പിംഗ് ട്യൂട്ടർ",
+      test: "മലയാളം ടൈപ്പിംഗ് ടെസ്റ്റ്",
+      tip: `Each chillu has its own key: ${on("ml-inscript", "ൻർൽൾ")}. The virama ് is on ${key("ml-inscript", "്")} and ഴ on ${key("ml-inscript", "ഴ")}.`,
+    },
+    si: {
+      tutor: "සිංහල ටයිපිං පුහුණුව",
+      test: "සිංහල ටයිපිං පරීක්ෂණය",
+      tip: `On Wijesekara the al-lakuna ් (${key("si-wijesekara", "්")}) ends a consonant: ක and ් make ක්. The vowel sign ා is on ${key("si-wijesekara", "ා")}.`,
+    },
   };
 }
 

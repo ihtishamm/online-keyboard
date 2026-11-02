@@ -1,0 +1,25 @@
+{
+  "slug": "malayalam",
+  "code": "ml",
+  "order": 180,
+  "lang": "ml",
+  "script": "Mlym",
+  "dir": "ltr",
+  "name": {
+    "en": "Malayalam",
+    "native": "മലയാളം"
+  },
+  "aliases": [],
+  "region": "south-asia",
+  "fonts": ["malayalam"],
+  "layouts": ["ml-roman", "ml-inscript"],
+  "sample": "മലയാളം എന്റെ മാതൃഭാഷയാണ്.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ml",
+    "bing": "ml"
+  },
+  "tier": null,
+  "notes": "English letters first, as for Hindi (decision §11.1). No voice yet: the locale has not passed /voice-probe."
+}

@@ -656,6 +656,13 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
 
 - [ ] **9a. Wave 2: South Asia and Arabic script** (our core audience, 23 languages).
   - **Platform (done):** scripts Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Sinhala and Thaana in the script registry, with Noto Sans fonts (fontsource, OFL). Each page now inlines `@font-face` rules only for its own scripts (`src/styles/script-fonts.ts`) instead of importing every script's CSS: the Hindi and Spanish pages are 1.4–1.6 KB smaller gzipped, and the cost no longer grows with each script. The home page, typing hub and progress page keep Arabic, Nastaliq, Devanagari and Bengali; names in other scripts there use the system's fonts. Fixed on the way: cheat sheets and guides carried no script fonts at all, so the Hindi and Bangla charts (and their PDFs) used whatever font the system had.
+  - **Batch 1 (done 2026-11-02): Marathi, Gujarati, Punjabi (Gurmukhi), Tamil, Telugu, Kannada, Malayalam, Sinhala.**
+    - **Layouts:** CLDR InScript for the seven Indic languages and Sinhala Wijesekara, plus a Roman scheme each (`packages/layouts/src/translit/<code>-roman.ts`). Romanisation tables for the new scripts are derived from Devanagari by Unicode offset.
+    - **Word lists:** built from the first 60 MB of each Wikipedia dump, not the whole dump (Gujarati's whole dump is 36 MB), then compacted to 27.5k–37.5k words (about 145 KB). These slices cap coverage of the Dakshina words at 57–74 %.
+    - **Roman accuracy (Dakshina test split, top-1 / top-5, all Beta):** Marathi 42.5 / 50.2, Gujarati 45.1 / 54.4, Punjabi 42.8 / 57.7, Tamil 50.2 / 57.5, Telugu 49.2 / 59.9, Kannada 55.6 / 63.2, Malayalam 40.0 / 47.3, Sinhala 58.9 / 71.2 (Hindi 40.8 and Bangla 40.5 on dev, for comparison).
+    - **Typing:** Tatoeba sentences for all eight. Gujarati, Telugu, Kannada and Sinhala have small sets (20–50 usable); Sinhala needed `--min-words 3`.
+    - **Fixed on the way:** Roman typing could commit the raw Latin when word-list completions filled the first eight candidates (Tamil "kaNNu"). Kannada "dd" now gives ದ್ದ (ಇದ್ದ), not ಡ. Tried and dropped: a cost for reading a doubled consonant as one letter. It lowered dev top-1 in every language, because chat spelling doubles letters loosely.
+    - **FAQ examples changed to ones that convert:** Marathi "tu kasa aahes", Kannada "nanna hesaru", Malayalam "ningal sugamano". "tumhi kase aahat" gives आहेत, and "neevu hegiddeera" gives ಹೆ for ಹೇ.
   - [ ] **Languages:**
     - Indic: Punjabi (Gurmukhi), Marathi, Nepali, Gujarati, Tamil, Telugu, Kannada, Malayalam, Odia, Assamese, Sinhala, Sanskrit, Konkani, Maithili;
     - Dhivehi;

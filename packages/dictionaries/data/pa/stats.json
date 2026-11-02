@@ -1,0 +1,10 @@
+{
+  "source": "pawiki-latest-pages-articles.xml.bz2",
+  "pages": 40927,
+  "sentences": 685762,
+  "repeatedSentencesSkipped": 66936,
+  "tokens": 11169386,
+  "distinctWords": 315806,
+  "wordsKept": 92327,
+  "nextWordHeads": 9984
+}
