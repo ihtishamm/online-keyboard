@@ -11,6 +11,12 @@ layouts:
     description: "Type Nepali online with the traditional layout of Nepali typewriters, as built into Windows. Half forms, Nepali digits, an on-screen keyboard for phones, and autosave."
     summary: "The traditional Nepali typewriter layout, as built into Windows: क on S, म on D, न on G and ा on F. Shift with a consonant key types its half form."
     bestFor: "Typists in Nepal who learned on a typewriter or in an office, and anyone who already knows the Nepali Traditional layout."
+  ne-romanized:
+    title: "Nepali Romanized Keyboard Online: Type in Nepali (नेपाली)"
+    heading: "Nepali Romanized Keyboard"
+    description: "Type Nepali online with the Romanized layout from Madan Puraskar Pustakalaya: क on K, म on M, न on N. Each key types one Nepali character, with an on-screen keyboard for phones and autosave."
+    summary: "The Romanized layout from Madan Puraskar Pustakalaya and Language Technology Kendra. Each key types the Nepali character that sounds like its English letter: क on K, म on M and न on N. Vowel signs are on A, I, U, E and O. Nothing is converted: what you press is what you get."
+    bestFor: "Anyone who wants keys that follow English letters and exact control over every character, with no word guessing."
 tips:
   - "Press Esc to switch between Nepali and English without leaving the page."
   - "On the Roman layout, type words in English letters (ma thik chhu) and press Space. Press 1 to 6 to pick another spelling, or Esc to keep a word in English."
@@ -19,7 +25,10 @@ tips:
   - "Shift+F types the chandrabindu ँ, Shift+= the anusvara ं and Shift+M the visarga ः."
   - "The number row types letters (ज्ञ घ ङ झ छ ट ठ ड ढ ण). Shift with it types Nepali digits १२३, and AltGr types 1 2 3."
   - "Shift+AltGr+O, P, ] and Q type ई, ऐ, ओ and ौ."
+  - "On Nepali Romanized, each key types one character: n, e, p, a, l, Shift+I makes नेपाली. / types the halant ् that joins consonants, and . types the danda ।."
 faqs:
+  - q: "How is Nepali Romanized different from the Roman layout?"
+    a: "Roman converts whole words: you write as in a chat and the word list picks the spelling when you press Space. Nepali Romanized is a fixed key layout: each key types one character straight away, and you spell the word yourself, halants and all."
   - q: "Can I type Nepali in English letters?"
     a: "Yes. The page opens on Roman typing: write as you would in a chat, for example “ma thik chhu”, and each word becomes Nepali (म ठीक छु) when you press Space. If a word comes out wrong, pick another spelling from the bar under the editor."
   - q: "Which Nepali keyboard layout is this?"

@@ -39,6 +39,10 @@ const GAPS: Record<string, string[]> = { "pa-Arab": ["ur"], ks: ["ur"], ug: ["en
 const FALLBACK: Record<string, string> = {
   skr: "ur",
   bal: "ur",
+  hno: "ur",
+  brh: "ur",
+  scl: "ur",
+  khw: "ur",
   ks: "ur",
   sa: "hi",
   mai: "hi",

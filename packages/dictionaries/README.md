@@ -211,3 +211,7 @@ pnpm --filter @okb/dictionaries eval:ur   # prints the misses
   measure the Phase 2 exit criterion: fewer than 1 correction per 10 words.
 
 Both sets were written for this project.
+
+## Typing practice without a word list
+
+Brahui, Shina and Khowar have no Wikipedia. `data/<code>/practice-words.txt` holds English Wiktionary's entries in Arabic script (category `<Language> lemmas`, CC BY-SA 4.0), used only for typing practice, never for suggestions or spell check. Hindko has too few entries, so it has none.

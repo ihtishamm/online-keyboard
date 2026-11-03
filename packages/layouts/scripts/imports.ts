@@ -632,6 +632,163 @@ export const IMPORTS: readonly ImportSpec[] = [
         return rule;
       }),
   },
+  {
+    out: "nepali/romanized.json",
+    from: { keyman: "keyman/nepali_mpp_romanized/nepali_mpp_romanized.kmn" },
+    meta: {
+      id: "ne-romanized",
+      lang: "ne",
+      script: "Deva",
+      dir: "ltr",
+      name: { en: "Nepali Romanized", native: "नेपाली रोमनाइज्ड" },
+      source:
+        "Keyman Nepali MPP Romanized 1.0.0 by Language Technology Kendra and Madan Puraskar Pustakalaya (MIT).",
+    },
+  },
+  {
+    out: "sanskrit/itrans.json",
+    from: {
+      keyman: "keyman/itrans_devanagari_sanskrit_vedic/itrans_devanagari_sanskrit_vedic.kmn",
+      contextRules: true,
+    },
+    meta: {
+      id: "sa-itrans",
+      lang: "sa",
+      script: "Deva",
+      dir: "ltr",
+      name: { en: "ITRANS", native: "आइट्रान्स्" },
+      source:
+        "Keyman Vedic Sanskrit Devanagari Phonetic (ITRANS) 1.3.0 by Shree Devi Kumar (MIT). Classical Sanskrit only: the Vedic and Samaveda marks (its AltGr layer and = rules), the letters on q, Q, z, Z, W, { and }, and the symbols on %, * and & are left out, but for the svarita ('') and anudatta (``). w types व् only, as upstream's aw for ऑ would also fire on av (use O). n then c types ञ्च् at once, where upstream leaves Latin nc until an h. Rules on a consonant and virama read the virama alone, to keep the table small.",
+    },
+    patch: (keys) => {
+      for (const def of Object.values(keys)) if (def) delete def.ag;
+      for (const code of ["KeyQ", "KeyZ", "KeyW"] as const) delete keys[code]?.s;
+      for (const code of ["KeyQ", "KeyZ"] as const) delete keys[code]?.n;
+      set(keys, "BracketLeft", { s: "{" });
+      set(keys, "BracketRight", { s: "}" });
+      set(keys, "Digit5", { s: "%" });
+      set(keys, "Digit7", { s: "&" });
+      set(keys, "Digit8", { s: "*" });
+    },
+    patchRules: (rules) => {
+      const vedic = /[\u1CD0-\u1CFF]|[\uA8E0-\uA8FF]/u;
+      const dropped = /^[\u0904\u0973\u0974\u0976\u0977\u0975]$/u;
+      const seen = new Set<string>();
+      return rules.flatMap((rule) => {
+        if (rule.typed === "=" || vedic.test(rule.add) || vedic.test(rule.before)) return [];
+        if (dropped.test(rule.typed) || /^[\uA8FE\u097A-\u097F]$/u.test(rule.typed)) return [];
+        if (/[\u093A\u093B\u0956\u0957\u0946\u094A\u094F]/u.test(rule.add) && rule.before === "@")
+          return [];
+        // aw and @aw: w is व् here, so these would fire on av.
+        if (rule.typed === "व्" && /\u0911|\u0949/u.test(rule.add)) return [];
+        if (rule.before === "nc") return [];
+        // Upstream's consonant store holds the virama of क्ष and ज्ञ too: not a consonant.
+        if (rule.before === "\u094D" && !rule.remove) return [];
+        const fixed = rule.add === "nc" ? { ...rule, add: "ञ्च्", remove: 2 } : rule;
+        const before = fixed.before.slice(-Math.max(fixed.remove ?? 0, 1));
+        const short = { ...fixed, before };
+        // Reads the virama alone now, so it adds what the key types anyway.
+        if (!short.remove && short.add === short.typed) return [];
+        const id = `${short.before}\0${short.typed}`;
+        if (seen.has(id)) return [];
+        seen.add(id);
+        return [short];
+      });
+    },
+  },
+  {
+    out: "sanskrit/iast.json",
+    from: { keyman: "keyman/itrans_roman/itrans_roman.kmn", contextRules: true, usDefaults: true },
+    meta: {
+      id: "sa-iast",
+      lang: "sa",
+      script: "Latn",
+      dir: "ltr",
+      name: { en: "IAST", native: "IAST" },
+      source:
+        "Keyman Indic Romanization from ITRANS 1.2.1 by Shree Devi Kumar (MIT), keeping only the rules that give IAST letters. Dot-m types ṃ and dot-M Ṃ (upstream asks for .mm), the apostrophe stays an apostrophe (upstream types U+02BC), and @ stays @. Letters follow Caps Lock.",
+    },
+    patch: (keys) => {
+      set(keys, "Quote", { n: "'" });
+      set(keys, "Digit2", { s: "@" });
+      for (const [code, def] of Object.entries(keys))
+        if (code.startsWith("Key") && def) def.caps = "shift";
+    },
+    patchRules: (rules) => {
+      const iast = /^[āīūṛṝḷḹṃḥṅñṭḍṇśṣĀĪŪṚṜḶḸṂḤṄÑṬḌṆŚṢ]$/u;
+      const kept = rules.filter(
+        (r) =>
+          iast.test(r.add) &&
+          r.remove === r.before.length &&
+          !/[\u0300-\u036F]/u.test(r.before.normalize("NFC")),
+      );
+      return [
+        ...kept,
+        { before: ".", typed: "m", add: "ṃ", remove: 1 },
+        { before: ".", typed: "M", add: "Ṃ", remove: 1 },
+      ];
+    },
+  },
+  {
+    out: "hindko/rachitrali.json",
+    from: { keyman: "keyman/rac_hindko/rac_hindko.kmn" },
+    meta: {
+      id: "hno-rachitrali",
+      lang: "hno",
+      script: "Arab",
+      dir: "rtl",
+      name: { en: "Rachitrali Hindko", native: "ہندکو" },
+      source: "Keyman Rachitrali-Hindko 1.0.1 by Rehmat Aziz Chitrali (MIT).",
+    },
+  },
+  {
+    out: "brahui/rachitrali.json",
+    from: { keyman: "keyman/rac_brahui/rac_brahui.kmn" },
+    meta: {
+      id: "brh-rachitrali",
+      lang: "brh",
+      script: "Arab",
+      dir: "rtl",
+      name: { en: "Rachitrali Brahui", native: "براہوی" },
+      source: "Keyman Rachitrali-Brahui 1.0.2 by Rehmat Aziz Chitrali (MIT).",
+    },
+  },
+  {
+    out: "shina/rachitrali.json",
+    from: { keyman: "keyman/rac_shina/rac_shina.kmn" },
+    meta: {
+      id: "scl-rachitrali",
+      lang: "scl",
+      script: "Arab",
+      dir: "rtl",
+      name: { en: "Rachitrali Shina", native: "شینا" },
+      source: "Keyman Rachitrali-Shina 1.2.2 by Rehmat Aziz Chitrali (MIT).",
+    },
+  },
+  {
+    out: "khowar/rachitrali.json",
+    from: { keyman: "keyman/rac_khowar/rac_khowar.kmn" },
+    meta: {
+      id: "khw-rachitrali",
+      lang: "khw",
+      script: "Arab",
+      dir: "rtl",
+      name: { en: "Rachitrali Khowar", native: "کھوار" },
+      source: "Keyman Rachitrali-Khowar 1.0 by Rehmat Aziz Chitrali (MIT).",
+    },
+  },
+  {
+    out: "khowar/phonetic.json",
+    from: { keyman: "keyman/sil_khowar/sil_khowar.kmn" },
+    meta: {
+      id: "khw-phonetic",
+      lang: "khw",
+      script: "Arab",
+      dir: "rtl",
+      name: { en: "Khowar Phonetic", native: "کھوار فونیٹک" },
+      source: "Keyman Khowar Phonetic (SIL) 1.1.1 by SIL Global (MIT).",
+    },
+  },
 ];
 
 /** Characters worth a long press: letters and marks, not ASCII punctuation or digits. */

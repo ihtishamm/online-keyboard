@@ -709,6 +709,430 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
   - Rule: `ஜ` + `அ` adds `U+200D` → `ஜ` + `அ` adds `` and holds
   - Rule: `ஹ` + `அ` adds `U+200D` → `ஹ` + `அ` adds `` and holds
 
+## ne-romanized
+
+- **Output:** `languages/nepali/romanized.json`
+- **Source:** `vendor/keyman/nepali_mpp_romanized/nepali_mpp_romanized.kmn`. Keyman Nepali MPP Romanized 1.0.0 by Language Technology Kendra and Madan Puraskar Pustakalaya (MIT).
+- **Licence:** MIT, Language Technology Kendra / Madan Puraskar Pustakalaya (vendor/keyman/nepali_mpp_romanized/LICENSE.md)
+- **Coverage:** 47 keys (n 47, s 47)
+- **Skipped:** 
+  - line 110: unknown key or modifiers, skipped: [T_eyelash_half_rra]
+  - line 111: unknown key or modifiers, skipped: [T_ksa]
+  - line 112: unknown key or modifiers, skipped: [T_tra]
+  - line 113: unknown key or modifiers, skipped: [T_gya]
+- **Our changes:** none
+
+## sa-itrans
+
+- **Output:** `languages/sanskrit/itrans.json`
+- **Source:** `vendor/keyman/itrans_devanagari_sanskrit_vedic/itrans_devanagari_sanskrit_vedic.kmn`. Keyman Vedic Sanskrit Devanagari Phonetic (ITRANS) 1.3.0 by Shree Devi Kumar (MIT). Classical Sanskrit only: the Vedic and Samaveda marks (its AltGr layer and = rules), the letters on q, Q, z, Z, W, { and }, and the symbols on %, * and & are left out, but for the svarita ('') and anudatta (``). w types व् only, as upstream's aw for ऑ would also fire on av (use O). n then c types ञ्च् at once, where upstream leaves Latin nc until an h. Rules on a consonant and virama read the virama alone, to keep the table small.
+- **Licence:** MIT, sanskritdocuments.org (vendor/keyman/itrans_devanagari_sanskrit_vedic/LICENSE.md)
+- **Coverage:** 47 keys (n 45, s 44), 237 context rules
+- **Skipped:** 
+  - line 289: rule for option opt1=hindi, skipped: any(Vyanjana)"्" + any(opt1endings)	>	index(Vyanjana,2) index(opt1endings,4)
+  - line 302: rule for option opt1=hindi, skipped: any(NuktaVyanjana)"़" "्" + any(opt1endings)	>	index(NuktaVyanjana,2)"़" index(opt1endings,5)
+  - line 73: unknown key or modifiers, skipped: [RCTRL RALT K_1]
+  - line 74: unknown key or modifiers, skipped: [RCTRL RALT K_0]
+  - line 115: unsupported context rule, skipped: any(DigitsU) + [K_BKSP]	>	index(Digits,1)
+  - line 403: unsupported output (context/stores/deadkeys): + [RALT	K_0]	>	beep
+  - line 415: unsupported output (context/stores/deadkeys): + [RALT K_J]	>	beep
+  - line 416: unsupported output (context/stores/deadkeys): + [RALT K_K]	>	beep
+  - line 419: unknown key or modifiers, skipped: [RCTRL K_1]
+  - line 420: unknown key or modifiers, skipped: [RCTRL K_2]
+  - line 421: unknown key or modifiers, skipped: [RCTRL K_3]
+  - line 422: unknown key or modifiers, skipped: [RCTRL K_4]
+  - line 423: unknown key or modifiers, skipped: [RCTRL K_5]
+  - line 424: unknown key or modifiers, skipped: [RCTRL K_6]
+  - line 425: unknown key or modifiers, skipped: [RCTRL K_7]
+  - line 426: unknown key or modifiers, skipped: [RCTRL K_8]
+  - line 427: unknown key or modifiers, skipped: [RCTRL K_9]
+  - line 428: unknown key or modifiers, skipped: [RCTRL K_0]
+  - line 429: unknown key or modifiers, skipped: [RCTRL K_A]
+  - line 430: unknown key or modifiers, skipped: [RCTRL K_K]
+  - line 431: unknown key or modifiers, skipped: [RCTRL K_N]
+  - line 432: unknown key or modifiers, skipped: [RCTRL K_P]
+  - line 433: unknown key or modifiers, skipped: [RCTRL K_R]
+  - line 434: unknown key or modifiers, skipped: [RCTRL K_S]
+  - line 435: unknown key or modifiers, skipped: [RCTRL K_U]
+  - line 436: unknown key or modifiers, skipped: [RCTRL K_V]
+  - line 438: unknown key or modifiers, skipped: [RCTRL K_SLASH]
+  - line 439: unknown key or modifiers, skipped: [RCTRL K_PERIOD]
+  - line 440: unknown key or modifiers, skipped: [RCTRL K_COMMA]
+  - line 441: unknown key or modifiers, skipped: [RCTRL K_BKSLASH]
+  - line 442: unknown key or modifiers, skipped: [RCTRL K_RBRKT]
+  - line 443: unknown key or modifiers, skipped: [RCTRL K_LBRKT]
+  - line 444: unknown key or modifiers, skipped: [RCTRL K_QUOTE]
+  - line 445: unknown key or modifiers, skipped: [RCTRL K_COLON]
+  - line 446: unknown key or modifiers, skipped: [RCTRL K_Z]
+  - line 447: unknown key or modifiers, skipped: [RCTRL K_X]
+  - line 448: unknown key or modifiers, skipped: [RCTRL K_C]
+  - line 451: unknown key or modifiers, skipped: [RCTRL K_B]
+  - line 452: unknown key or modifiers, skipped: [RCTRL K_D]
+  - line 453: unknown key or modifiers, skipped: [RCTRL K_EQUAL]
+  - line 454: unknown key or modifiers, skipped: [RCTRL K_E]
+  - line 455: unknown key or modifiers, skipped: [RCTRL K_F]
+  - line 456: unknown key or modifiers, skipped: [RCTRL K_G]
+  - line 457: unknown key or modifiers, skipped: [RCTRL K_HYPHEN]
+  - line 458: unknown key or modifiers, skipped: [RCTRL K_H]
+  - line 459: unknown key or modifiers, skipped: [RCTRL K_I]
+  - line 460: unknown key or modifiers, skipped: [RCTRL K_J]
+  - line 461: unknown key or modifiers, skipped: [RCTRL K_O]
+  - line 462: unknown key or modifiers, skipped: [RCTRL K_Q]
+  - line 463: unknown key or modifiers, skipped: [RCTRL K_T]
+  - line 464: unknown key or modifiers, skipped: [RCTRL K_W]
+  - line 465: unknown key or modifiers, skipped: [RCTRL K_Y]
+  - line 291: repeats the rule for क् + ्, skipped
+  - line 291: repeats the rule for ज् + ्, skipped
+  - line 291: repeats the rule for ्् + ्, skipped
+  - line 291: repeats the rule for ञ् + ्, skipped
+  - line 291: repeats the rule for ्् + ्, skipped
+  - line 291: repeats the rule for र् + ्, skipped
+  - line 291: repeats the rule for ष् + ्, skipped
+  - line 292: repeats the rule for क् + अ, skipped
+  - line 292: repeats the rule for ज् + अ, skipped
+  - line 292: repeats the rule for ्् + अ, skipped
+  - line 292: repeats the rule for ञ् + अ, skipped
+  - line 292: repeats the rule for ्् + अ, skipped
+  - line 292: repeats the rule for र् + अ, skipped
+  - line 292: repeats the rule for ष् + अ, skipped
+  - line 293: repeats the rule for क + अ, skipped
+  - line 293: repeats the rule for क + ए, skipped
+  - line 293: repeats the rule for क + इ, skipped
+  - line 293: repeats the rule for क + उ, skipped
+  - line 293: repeats the rule for क + व्, skipped
+  - line 293: repeats the rule for ज + अ, skipped
+  - line 293: repeats the rule for ज + ए, skipped
+  - line 293: repeats the rule for ज + इ, skipped
+  - line 293: repeats the rule for ज + उ, skipped
+  - line 293: repeats the rule for ज + व्, skipped
+  - line 293: repeats the rule for ् + अ, skipped
+  - line 293: repeats the rule for ् + ए, skipped
+  - line 293: repeats the rule for ् + इ, skipped
+  - line 293: repeats the rule for ् + उ, skipped
+  - line 293: repeats the rule for ् + व्, skipped
+  - line 293: repeats the rule for ञ + अ, skipped
+  - line 293: repeats the rule for ञ + ए, skipped
+  - line 293: repeats the rule for ञ + इ, skipped
+  - line 293: repeats the rule for ञ + उ, skipped
+  - line 293: repeats the rule for ञ + व्, skipped
+  - line 293: repeats the rule for ् + अ, skipped
+  - line 293: repeats the rule for ् + ए, skipped
+  - line 293: repeats the rule for ् + इ, skipped
+  - line 293: repeats the rule for ् + उ, skipped
+  - line 293: repeats the rule for ् + व्, skipped
+  - line 293: repeats the rule for र + अ, skipped
+  - line 293: repeats the rule for र + ए, skipped
+  - line 293: repeats the rule for र + इ, skipped
+  - line 293: repeats the rule for र + उ, skipped
+  - line 293: repeats the rule for र + व्, skipped
+  - line 293: repeats the rule for ष + अ, skipped
+  - line 293: repeats the rule for ष + ए, skipped
+  - line 293: repeats the rule for ष + इ, skipped
+  - line 293: repeats the rule for ष + उ, skipped
+  - line 293: repeats the rule for ष + व्, skipped
+  - line 294: repeats the rule for क् + ए, skipped
+  - line 294: repeats the rule for क् + इ, skipped
+  - line 294: repeats the rule for क् + ओ, skipped
+  - line 294: repeats the rule for क् + उ, skipped
+  - line 294: repeats the rule for क् + आ, skipped
+  - line 294: repeats the rule for क् + ऍ, skipped
+  - line 294: repeats the rule for क् + ई, skipped
+  - line 294: repeats the rule for क् + ऑ, skipped
+  - line 294: repeats the rule for क् + र्‍, skipped
+  - line 294: repeats the rule for क् + ऊ, skipped
+  - line 294: repeats the rule for क् + ऎ, skipped
+  - line 294: repeats the rule for क् + ऒ, skipped
+  - line 294: repeats the rule for क् + ळ्, skipped
+  - line 294: repeats the rule for क् + ऄ, skipped
+  - line 294: repeats the rule for क् + ꣾ, skipped
+  - line 294: repeats the rule for क् + ॵ, skipped
+  - line 294: repeats the rule for क् + ॳ, skipped
+  - line 294: repeats the rule for क् + ॴ, skipped
+  - line 294: repeats the rule for क् + ॶ, skipped
+  - line 294: repeats the rule for क् + ॷ, skipped
+  - line 294: repeats the rule for ज् + ए, skipped
+  - line 294: repeats the rule for ज् + इ, skipped
+  - line 294: repeats the rule for ज् + ओ, skipped
+  - line 294: repeats the rule for ज् + उ, skipped
+  - line 294: repeats the rule for ज् + आ, skipped
+  - line 294: repeats the rule for ज् + ऍ, skipped
+  - line 294: repeats the rule for ज् + ई, skipped
+  - line 294: repeats the rule for ज् + ऑ, skipped
+  - line 294: repeats the rule for ज् + र्‍, skipped
+  - line 294: repeats the rule for ज् + ऊ, skipped
+  - line 294: repeats the rule for ज् + ऎ, skipped
+  - line 294: repeats the rule for ज् + ऒ, skipped
+  - line 294: repeats the rule for ज् + ळ्, skipped
+  - line 294: repeats the rule for ज् + ऄ, skipped
+  - line 294: repeats the rule for ज् + ꣾ, skipped
+  - line 294: repeats the rule for ज् + ॵ, skipped
+  - line 294: repeats the rule for ज् + ॳ, skipped
+  - line 294: repeats the rule for ज् + ॴ, skipped
+  - line 294: repeats the rule for ज् + ॶ, skipped
+  - line 294: repeats the rule for ज् + ॷ, skipped
+  - line 294: repeats the rule for ्् + ए, skipped
+  - line 294: repeats the rule for ्् + इ, skipped
+  - line 294: repeats the rule for ्् + ओ, skipped
+  - line 294: repeats the rule for ्् + उ, skipped
+  - line 294: repeats the rule for ्् + आ, skipped
+  - line 294: repeats the rule for ्् + ऍ, skipped
+  - line 294: repeats the rule for ्् + ई, skipped
+  - line 294: repeats the rule for ्् + ऑ, skipped
+  - line 294: repeats the rule for ्् + र्‍, skipped
+  - line 294: repeats the rule for ्् + ऊ, skipped
+  - line 294: repeats the rule for ्् + ऎ, skipped
+  - line 294: repeats the rule for ्् + ऒ, skipped
+  - line 294: repeats the rule for ्् + ळ्, skipped
+  - line 294: repeats the rule for ्् + ऄ, skipped
+  - line 294: repeats the rule for ्् + ꣾ, skipped
+  - line 294: repeats the rule for ्् + ॵ, skipped
+  - line 294: repeats the rule for ्् + ॳ, skipped
+  - line 294: repeats the rule for ्् + ॴ, skipped
+  - line 294: repeats the rule for ्् + ॶ, skipped
+  - line 294: repeats the rule for ्् + ॷ, skipped
+  - line 294: repeats the rule for ञ् + ए, skipped
+  - line 294: repeats the rule for ञ् + इ, skipped
+  - line 294: repeats the rule for ञ् + ओ, skipped
+  - line 294: repeats the rule for ञ् + उ, skipped
+  - line 294: repeats the rule for ञ् + आ, skipped
+  - line 294: repeats the rule for ञ् + ऍ, skipped
+  - line 294: repeats the rule for ञ् + ई, skipped
+  - line 294: repeats the rule for ञ् + ऑ, skipped
+  - line 294: repeats the rule for ञ् + र्‍, skipped
+  - line 294: repeats the rule for ञ् + ऊ, skipped
+  - line 294: repeats the rule for ञ् + ऎ, skipped
+  - line 294: repeats the rule for ञ् + ऒ, skipped
+  - line 294: repeats the rule for ञ् + ळ्, skipped
+  - line 294: repeats the rule for ञ् + ऄ, skipped
+  - line 294: repeats the rule for ञ् + ꣾ, skipped
+  - line 294: repeats the rule for ञ् + ॵ, skipped
+  - line 294: repeats the rule for ञ् + ॳ, skipped
+  - line 294: repeats the rule for ञ् + ॴ, skipped
+  - line 294: repeats the rule for ञ् + ॶ, skipped
+  - line 294: repeats the rule for ञ् + ॷ, skipped
+  - line 294: repeats the rule for ळ् + ळ्, skipped
+  - line 294: repeats the rule for ्् + ए, skipped
+  - line 294: repeats the rule for ्् + इ, skipped
+  - line 294: repeats the rule for ्् + ओ, skipped
+  - line 294: repeats the rule for ्् + उ, skipped
+  - line 294: repeats the rule for ्् + आ, skipped
+  - line 294: repeats the rule for ्् + ऍ, skipped
+  - line 294: repeats the rule for ्् + ई, skipped
+  - line 294: repeats the rule for ्् + ऑ, skipped
+  - line 294: repeats the rule for ्् + र्‍, skipped
+  - line 294: repeats the rule for ्् + ऊ, skipped
+  - line 294: repeats the rule for ्् + ऎ, skipped
+  - line 294: repeats the rule for ्् + ऒ, skipped
+  - line 294: repeats the rule for ्् + ळ्, skipped
+  - line 294: repeats the rule for ्् + ऄ, skipped
+  - line 294: repeats the rule for ्् + ꣾ, skipped
+  - line 294: repeats the rule for ्् + ॵ, skipped
+  - line 294: repeats the rule for ्् + ॳ, skipped
+  - line 294: repeats the rule for ्् + ॴ, skipped
+  - line 294: repeats the rule for ्् + ॶ, skipped
+  - line 294: repeats the rule for ्् + ॷ, skipped
+  - line 294: repeats the rule for र् + ए, skipped
+  - line 294: repeats the rule for र् + इ, skipped
+  - line 294: repeats the rule for र् + ओ, skipped
+  - line 294: repeats the rule for र् + उ, skipped
+  - line 294: repeats the rule for र् + आ, skipped
+  - line 294: repeats the rule for र् + ऍ, skipped
+  - line 294: repeats the rule for र् + ई, skipped
+  - line 294: repeats the rule for र् + ऑ, skipped
+  - line 294: repeats the rule for र् + र्‍, skipped
+  - line 294: repeats the rule for र् + ऊ, skipped
+  - line 294: repeats the rule for र् + ऎ, skipped
+  - line 294: repeats the rule for र् + ऒ, skipped
+  - line 294: repeats the rule for र् + ळ्, skipped
+  - line 294: repeats the rule for र् + ऄ, skipped
+  - line 294: repeats the rule for र् + ꣾ, skipped
+  - line 294: repeats the rule for र् + ॵ, skipped
+  - line 294: repeats the rule for र् + ॳ, skipped
+  - line 294: repeats the rule for र् + ॴ, skipped
+  - line 294: repeats the rule for र् + ॶ, skipped
+  - line 294: repeats the rule for र् + ॷ, skipped
+  - line 294: repeats the rule for ष् + ए, skipped
+  - line 294: repeats the rule for ष् + इ, skipped
+  - line 294: repeats the rule for ष् + ओ, skipped
+  - line 294: repeats the rule for ष् + उ, skipped
+  - line 294: repeats the rule for ष् + आ, skipped
+  - line 294: repeats the rule for ष् + ऍ, skipped
+  - line 294: repeats the rule for ष् + ई, skipped
+  - line 294: repeats the rule for ष् + ऑ, skipped
+  - line 294: repeats the rule for ष् + र्‍, skipped
+  - line 294: repeats the rule for ष् + ऊ, skipped
+  - line 294: repeats the rule for ष् + ऎ, skipped
+  - line 294: repeats the rule for ष् + ऒ, skipped
+  - line 294: repeats the rule for ष् + ळ्, skipped
+  - line 294: repeats the rule for ष् + ऄ, skipped
+  - line 294: repeats the rule for ष् + ꣾ, skipped
+  - line 294: repeats the rule for ष् + ॵ, skipped
+  - line 294: repeats the rule for ष् + ॳ, skipped
+  - line 294: repeats the rule for ष् + ॴ, skipped
+  - line 294: repeats the rule for ष् + ॶ, skipped
+  - line 294: repeats the rule for ष् + ॷ, skipped
+  - line 295: repeats the rule for कि + इ, skipped
+  - line 295: repeats the rule for जि + इ, skipped
+  - line 295: repeats the rule for ्ि + इ, skipped
+  - line 295: repeats the rule for ञि + इ, skipped
+  - line 295: repeats the rule for ्ि + इ, skipped
+  - line 295: repeats the rule for रि + इ, skipped
+  - line 295: repeats the rule for षि + इ, skipped
+  - line 296: repeats the rule for कु + उ, skipped
+  - line 296: repeats the rule for जु + उ, skipped
+  - line 296: repeats the rule for ्ु + उ, skipped
+  - line 296: repeats the rule for ञु + उ, skipped
+  - line 296: repeats the rule for ्ु + उ, skipped
+  - line 296: repeats the rule for रु + उ, skipped
+  - line 296: repeats the rule for षु + उ, skipped
+  - line 297: repeats the rule for के + ए, skipped
+  - line 297: repeats the rule for जे + ए, skipped
+  - line 297: repeats the rule for ्े + ए, skipped
+  - line 297: repeats the rule for ञे + ए, skipped
+  - line 297: repeats the rule for ्े + ए, skipped
+  - line 297: repeats the rule for रे + ए, skipped
+  - line 297: repeats the rule for षे + ए, skipped
+  - line 298: repeats the rule for के + इ, skipped
+  - line 298: repeats the rule for जे + इ, skipped
+  - line 298: repeats the rule for ्े + इ, skipped
+  - line 298: repeats the rule for ञे + इ, skipped
+  - line 298: repeats the rule for ्े + इ, skipped
+  - line 298: repeats the rule for रे + इ, skipped
+  - line 298: repeats the rule for षे + इ, skipped
+  - line 299: repeats the rule for को + ओ, skipped
+  - line 299: repeats the rule for जो + ओ, skipped
+  - line 299: repeats the rule for ्ो + ओ, skipped
+  - line 299: repeats the rule for ञो + ओ, skipped
+  - line 299: repeats the rule for ्ो + ओ, skipped
+  - line 299: repeats the rule for रो + ओ, skipped
+  - line 299: repeats the rule for षो + ओ, skipped
+  - line 300: repeats the rule for को + उ, skipped
+  - line 300: repeats the rule for जो + उ, skipped
+  - line 300: repeats the rule for ्ो + उ, skipped
+  - line 300: repeats the rule for ञो + उ, skipped
+  - line 300: repeats the rule for ्ो + उ, skipped
+  - line 300: repeats the rule for रो + उ, skipped
+  - line 300: repeats the rule for षो + उ, skipped
+- **Our changes:** 
+  - Digit3.ag: `᳓` → none
+  - Digit4.ag: `U+1CD4` → none
+  - Digit5.s: `࿕` → `%`
+  - Digit5.ag: `U+1CD5` → none
+  - Digit8.s: `❀` → `*`
+  - Digit8.ag: `U+1CD8` → none
+  - Digit7.s: `☸` → `&`
+  - Digit7.ag: `U+1CD7` → none
+  - KeyV.ag: `U+1CF8` → none
+  - Digit6.ag: `U+1CD6` → none
+  - Minus.ag: `ꣻ` → none
+  - Equal.ag: `ꣽ` → none
+  - Digit1.ag: `U+1CD1` → none
+  - Quote.ag: `ꣶ` → none
+  - Digit9.ag: `U+1CD9` → none
+  - Slash.ag: `ꣴ` → none
+  - Semicolon.ag: `ꣵ` → none
+  - Backquote.ag: `U+1CD0` → none
+  - Comma.ag: `ꣲ` → none
+  - Period.ag: `ꣳ` → none
+  - Backslash.ag: `꣺` → none
+  - Digit2.ag: `U+1CD2` → none
+  - KeyA.ag: `U+1CE7` → none
+  - KeyI.ag: `ᳮ` → none
+  - KeyU.ag: `U+1CF4` → none
+  - BracketLeft.s: `ꣾ` → `{`
+  - BracketLeft.ag: `꣸` → none
+  - KeyE.ag: `U+1CE5` → none
+  - BracketRight.s: `ॵ` → `}`
+  - BracketRight.ag: `꣹` → none
+  - KeyO.ag: `ᳯ` → none
+  - KeyW.s: `ऄ` → none
+  - KeyW.ag: `U+1CE4` → none
+  - KeyZ.n: `ॶ` → none
+  - KeyZ.s: `ॷ` → none
+  - KeyZ.ag: `U+1CE2` → none
+  - KeyQ.n: `ॳ` → none
+  - KeyQ.s: `ॴ` → none
+  - KeyQ.ag: `U+1CE3` → none
+  - KeyH.ag: `ᳬ` → none
+  - KeyM.ag: `U+1CE2` → none
+  - KeyB.ag: `U+1CF9` → none
+  - KeyC.ag: `U+1CDD` → none
+  - KeyD.ag: `ᳱ` → none
+  - KeyG.ag: `ᳩ` → none
+  - KeyL.ag: `ꣷ` → none
+  - KeyN.ag: `U+1CE0` → none
+  - KeyP.ag: `ᳰ` → none
+  - KeyR.ag: `U+1CE6` → none
+  - KeyS.ag: `U+1CE8` → none
+  - KeyT.ag: `ᳪ` → none
+  - KeyX.ag: `ᳵ` → none
+  - KeyY.ag: `ᳫ` → none
+  - KeyF.ag: `U+1CDC` → none
+  - Rules: 1681 upstream → 237 here
+
+## sa-iast
+
+- **Output:** `languages/sanskrit/iast.json`
+- **Source:** `vendor/keyman/itrans_roman/itrans_roman.kmn`. Keyman Indic Romanization from ITRANS 1.2.1 by Shree Devi Kumar (MIT), keeping only the rules that give IAST letters. Dot-m types ṃ and dot-M Ṃ (upstream asks for .mm), the apostrophe stays an apostrophe (upstream types U+02BC), and @ stays @. Letters follow Caps Lock.
+- **Licence:** MIT, sanskritdocuments.org (vendor/keyman/itrans_roman/LICENSE.md)
+- **Coverage:** 47 keys (n 47, s 47), 48 context rules
+- **Skipped:** 
+  - line 42: Quote.n redefined
+  - line 223: unsupported context rule, skipped: "Ï" + "M" > "IṂ" C .IM
+  - line 227: unsupported context rule, skipped: "̇" + "M" > "Ṃ" C .MM
+  - line 230: unsupported context rule, skipped: "Ṃ" + "M" > "Ṁ" C .MMM
+  - line 231: unsupported context rule, skipped: "Ṃ" + "C" > "M̐" C .MMC
+  - line 53: repeats the rule for ' + ʼ, skipped
+- **Our changes:** 
+  - Quote.n: `ʼ` → `'`
+  - Digit2.s: `æ` → `@`
+  - Rules: 170 upstream → 48 here
+
+## hno-rachitrali
+
+- **Output:** `languages/hindko/rachitrali.json`
+- **Source:** `vendor/keyman/rac_hindko/rac_hindko.kmn`. Keyman Rachitrali-Hindko 1.0.1 by Rehmat Aziz Chitrali (MIT).
+- **Licence:** MIT, Rehmat Aziz Chitrali (vendor/keyman/rac_hindko/LICENSE.md)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## brh-rachitrali
+
+- **Output:** `languages/brahui/rachitrali.json`
+- **Source:** `vendor/keyman/rac_brahui/rac_brahui.kmn`. Keyman Rachitrali-Brahui 1.0.2 by Rehmat Aziz Chitrali (MIT).
+- **Licence:** MIT, Rehmat Aziz Chitrali (vendor/keyman/rac_brahui/LICENSE.md)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## scl-rachitrali
+
+- **Output:** `languages/shina/rachitrali.json`
+- **Source:** `vendor/keyman/rac_shina/rac_shina.kmn`. Keyman Rachitrali-Shina 1.2.2 by Rehmat Aziz Chitrali (MIT).
+- **Licence:** MIT, Rehmat Aziz Chitrali (vendor/keyman/rac_shina/LICENSE.md)
+- **Coverage:** 48 keys (n 48, s 48, ag 1)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## khw-rachitrali
+
+- **Output:** `languages/khowar/rachitrali.json`
+- **Source:** `vendor/keyman/rac_khowar/rac_khowar.kmn`. Keyman Rachitrali-Khowar 1.0 by Rehmat Aziz Chitrali (MIT).
+- **Licence:** MIT, Rehmat Aziz Chitrali (vendor/keyman/rac_khowar/LICENSE.md)
+- **Coverage:** 47 keys (n 47, s 47, ag 10)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## khw-phonetic
+
+- **Output:** `languages/khowar/phonetic.json`
+- **Source:** `vendor/keyman/sil_khowar/sil_khowar.kmn`. Keyman Khowar Phonetic (SIL) 1.1.1 by SIL Global (MIT).
+- **Licence:** MIT, SIL Global (vendor/keyman/sil_khowar/LICENSE.md)
+- **Coverage:** 47 keys (n 47, s 47)
+- **Skipped:** nothing
+- **Our changes:** none
+
 ## Vendored, not yet used
 
 CLDR 43 Windows keyboards ready for the national layouts (plan 7.5). Unicode License v3.

@@ -158,15 +158,16 @@ describe("lessons", () => {
 });
 
 /** Languages whose Tatoeba set is too small or not in their script: words only. */
-const NO_SENTENCES = new Set(["sd", "ks", "kok", "mai", "dv", "zlm"]);
+const NO_SENTENCES = new Set(["sd", "ks", "kok", "mai", "dv", "zlm", "brh", "scl", "khw"]);
 /** Small Tatoeba sets: every usable sentence, under 50. */
 const FEW_SENTENCES = new Set(["ps", "pnb", "gu", "te", "kn", "si", "or", "sa"]);
 
 describe("generated typing pages", () => {
-  it("cover every language but Urdu, which has its own", () => {
+  it("cover every language but Urdu, which has its own, and Hindko, with no text yet", () => {
     const slugs = TYPING_LANGUAGES.map((l) => l.slug);
-    expect(slugs).toHaveLength(LANGUAGES.length - 1);
+    expect(slugs).toHaveLength(LANGUAGES.length - 2);
     expect(slugs).not.toContain("urdu");
+    expect(slugs).not.toContain("hindko");
     for (const l of TYPING_LANGUAGES) expect(TYPING_COPY[l.code], l.code).toBeDefined();
   });
 

@@ -12,7 +12,7 @@
   "aliases": [],
   "region": "south-asia",
   "fonts": ["devanagari"],
-  "layouts": ["ne-roman", "ne-traditional"],
+  "layouts": ["ne-roman", "ne-traditional", "ne-romanized"],
   "sample": "नेपाली मेरो मातृभाषा हो।",
   "voice": [],
   "wordList": true,

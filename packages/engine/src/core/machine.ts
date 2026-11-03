@@ -28,7 +28,10 @@ export function outputFor(layout: Layout, code: KeyCode, mods: Modifiers): strin
 }
 
 export type PressResult =
-  { kind: "text"; text: string } | { kind: "dead"; trigger: string } | { kind: "none" };
+  /** `remove`: UTF-16 units to delete before the caret first (a context rule rewrote them). */
+  | { kind: "text"; text: string; remove?: number }
+  | { kind: "dead"; trigger: string }
+  | { kind: "none" };
 
 /**
  * Resolves key presses against a layout, including dead-key composition.
@@ -90,6 +93,7 @@ export class TypingMachine {
       const rule = this.rules.get(out)?.find((r) => before.endsWith(r.before));
       if (rule) {
         if (rule.hold) this.held = rule.before;
+        if (rule.remove) return { kind: "text", text: rule.add, remove: rule.remove };
         return rule.add ? { kind: "text", text: rule.add } : { kind: "none" };
       }
     }

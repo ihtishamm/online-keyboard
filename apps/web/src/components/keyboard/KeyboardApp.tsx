@@ -335,6 +335,17 @@ export default function KeyboardApp({
    * Type `text` produced by a key. In Roman mode a word boundary (space, punctuation) first
    * converts the Roman word before the caret; punctuation becomes its Urdu form.
    */
+  /**
+   * A context rule that rewrites the end of the text (ITRANS). Delete, then insert: Chromium's
+   * insertText keeps part of a selection that starts inside a conjunct (स्क् + ृ).
+   */
+  const rewriteBeforeCaret = (remove: number, text: string) => {
+    const el = editorRef.current;
+    if (!el) return;
+    replaceText(el, Math.max(0, el.selectionStart - remove), el.selectionEnd, "");
+    insert(text);
+  };
+
   /** What context rules read (Tamil99). The longest rule is far shorter than this. */
   const textBeforeCaret = () => {
     const el = editorRef.current;
@@ -462,7 +473,10 @@ export default function KeyboardApp({
       },
       textBeforeCaret(),
     );
-    if (result.kind === "text") typeText(result.text);
+    if (result.kind === "text") {
+      if (result.remove) rewriteBeforeCaret(result.remove, result.text);
+      else typeText(result.text);
+    }
     rerender();
   };
 
@@ -485,7 +499,10 @@ export default function KeyboardApp({
       insert(shift !== (caps && isLetter) ? upper : lower);
     } else {
       const result = machine.press(code, latch.current(), textBeforeCaret());
-      if (result.kind === "text") typeText(result.text);
+      if (result.kind === "text") {
+        if (result.remove) rewriteBeforeCaret(result.remove, result.text);
+        else typeText(result.text);
+      }
     }
     latch.consume();
     rerender();

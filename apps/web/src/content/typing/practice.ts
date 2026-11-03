@@ -34,6 +34,11 @@ const WORDS = import.meta.glob<string>("../../../../../packages/dictionaries/dat
   query: "?raw",
   import: "default",
 });
+/** Languages with no word list: English Wiktionary's entries, for typing practice only. */
+const PRACTICE_WORDS = import.meta.glob<string>(
+  "../../../../../packages/dictionaries/data/*/practice-words.txt",
+  { query: "?raw", import: "default", eager: true },
+);
 const DICTS = import.meta.glob<string>("../../../../../packages/dictionaries/data/*/dict.txt", {
   query: "?raw",
   import: "default",
@@ -70,9 +75,12 @@ export interface PracticeText {
 const keyLayouts = (l: Language): Layout[] =>
   l.layouts.map(getLayout).filter((layout) => !layout.translit && !layout.rules.length);
 
-/** Languages with generated typing pages: every one with a key layout, but Urdu. */
+/**
+ * Languages with generated typing pages: every one with a key layout, but Urdu, and Hindko,
+ * which has no open text to practise on (4 Wiktionary entries, checked 2026-11-04).
+ */
 export const TYPING_LANGUAGES: readonly Language[] = LANGUAGES.filter(
-  (l) => l.slug !== "urdu" && keyLayouts(l).length > 0,
+  (l) => l.slug !== "urdu" && l.code !== "hno" && keyLayouts(l).length > 0,
 );
 
 const sentenceRows = (l: Language): [string, string][] =>
@@ -128,7 +136,12 @@ export async function practiceText(l: Language): Promise<PracticeText> {
 
   const rows = sentenceRows(l).filter(([, text]) => clean(text));
   const loader = WORDS[file(l.code, "words.txt")];
-  const list = loader ? (await loader()).split("\n").slice(0, FREQUENCY) : sentenceWords(rows);
+  const practice = PRACTICE_WORDS[file(l.code, "practice-words.txt")];
+  const list = loader
+    ? (await loader()).split("\n").slice(0, FREQUENCY)
+    : practice
+      ? practice.split("\n")
+      : sentenceWords(rows);
   const frequency = list.filter((w) => w && !blocked.words.has(w.toLowerCase()));
   const words: string[] = [];
   for (const w of frequency) {

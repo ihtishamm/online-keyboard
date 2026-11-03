@@ -166,6 +166,14 @@ const ALPHABETS: Record<string, string> = {
   "ne-traditional": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
   "or-inscript": "ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯରଲଳଶଷସହୟ",
   "as-inscript": "অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযৰলৱশষসহৎ",
+  "ne-romanized": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
+  // Its consonant keys type the letter with a virama, so the golden tests cover them.
+  "sa-itrans": "अआइईउऊएओ\u0902\u0903",
+  "hno-rachitrali": "اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوہھءیےݨ",
+  "brh-rachitrali": "اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلڷمنںوہھءیے",
+  "scl-rachitrali": "اآبپتٹثجچڇحخدڈذرڑزژڙسشݜصضطظعغفقکگلمنںݨوہھیےڅ",
+  "khw-rachitrali": "اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوہھءیےݯݰݮݱځڅ",
+  "khw-phonetic": "اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوہھءیےݯݰݮݱځڅ",
   "sa-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
   "kok-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळ",
   "mai-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
@@ -200,6 +208,13 @@ const GOLDEN: [layoutId: string, keys: string, expected: string][] = [
   ["ne-traditional", "g]kfnL", "नेपाली"],
   ["or-inscript", "A[]fE", "ଓଡ\u0B3Cିଆ"],
   ["as-inscript", "Dmcr/e", "অসমীয\u09BCা"],
+  ["ne-romanized", "nepalI", "नेपाली"],
+  ["ne-romanized", ">", "."],
+  ["hno-rachitrali", "ondkw", "ہندکو"],
+  ["brh-rachitrali", "braowi", "براہوی"],
+  ["scl-rachitrali", "xina", "شینا"],
+  ["khw-rachitrali", "khwar", "کھوار"],
+  ["khw-phonetic", "kHwar", "کھوار"],
   ["sa-inscript", "mxmdk=lcd", "संस्कृतम्"],
   ["kok-inscript", "kaxkCr", "कोंकणी"],
   ["mai-inscript", "cwLfnr", "मैथिली"],
@@ -335,6 +350,70 @@ describe("Latin layouts", () => {
     ["cs-qwertz", "2", "ě"],
   ])("%s: %s types %s", (id, keys, expected) => {
     expect(typeOn(id, keys)).toBe(expected);
+  });
+});
+
+describe("ITRANS and IAST rewrite as they go", () => {
+  const type = (id: string, keys: string) => {
+    const machine = new TypingMachine(getLayout(id));
+    let out = "";
+    for (const ch of keys) {
+      if (ch === " ") {
+        out += " ";
+        continue;
+      }
+      const hit = US_TO_CODE.get(ch);
+      if (!hit) throw new Error(`no key for ${ch}`);
+      const r = machine.press(hit[0], { ...NO_MODIFIERS, shift: hit[1] }, out);
+      if (r.kind !== "text") continue;
+      out = out.slice(0, out.length - (r.remove ?? 0)) + r.text;
+    }
+    return out;
+  };
+
+  it.each([
+    ["saMskRtam", "संस्कृतम्"],
+    ["gItA", "गीता"],
+    ["dharmakShetre kurukShetre", "धर्मक्षेत्रे कुरुक्षेत्रे"],
+    ["rAmaH", "रामः"],
+    ["pa~nca", "पञ्च"],
+    ["pancha", "पञ्च"],
+    ["panca", "पञ्च"],
+    ["gangA", "गङ्गा"],
+    ["jYAnam", "ज्ञानम्"],
+    ["shrI", "श्री"],
+    // upstream's aw for ऑ would turn this into ऑतार
+    ["avatAra", "अवतार"],
+    ["RRShiH", "ऋषिः"],
+    ["soVham", "सोऽहम्"],
+    ["karma..", "कर्म।"],
+    ["kai", "कै"],
+    ["kau", "कौ"],
+    ["kaa", "का"],
+    ["kii", "की"],
+    ["kuu", "कू"],
+    ["bhagavadgItA", "भगवद्गीता"],
+    ["kShatriyaH", "क्षत्रियः"],
+    ["OM", "ॐ"],
+  ])("sa-itrans: %s types %s", (keys, expected) => {
+    expect(type("sa-itrans", keys)).toBe(expected);
+  });
+
+  it.each([
+    ["sa.msk.rtam", "saṃskṛtam"],
+    ["k.r.s.na", "kṛṣṇa"],
+    ["aa ii uu", "ā ī ū"],
+    ["'siva", "śiva"],
+    ["ga.nn", "gaṅ"],
+    ["pa~nca", "pañca"],
+    ["raama.h", "rāmaḥ"],
+    ["p.rr", "pṝ"],
+    ["k.ll", "kḹ"],
+    ["end. The", "end. The"],
+    [".S", "Ṣ"],
+    ["so'ham", "so'ham"],
+  ])("sa-iast: %s types %s", (keys, expected) => {
+    expect(type("sa-iast", keys)).toBe(expected);
   });
 });
 

@@ -12,7 +12,7 @@
   "aliases": [],
   "region": "south-asia",
   "fonts": ["devanagari"],
-  "layouts": ["sa-roman", "sa-inscript"],
+  "layouts": ["sa-roman", "sa-inscript", "sa-itrans", "sa-iast"],
   "sample": "संस्कृतं भारतस्य प्राचीना भाषा।",
   "voice": [],
   "wordList": true,

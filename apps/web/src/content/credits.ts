@@ -53,6 +53,9 @@ export const AKSHARANTAR: ReadonlySet<string> = new Set(["ne", "or", "as", "sa",
 /** Languages whose spellings come from English Wiktionary (CC BY-SA 4.0), through kaikki.org. */
 export const WIKTIONARY: ReadonlySet<string> = new Set(["dv", "ckb", "ug", "zlm"]);
 
+/** Languages with no word list whose typing practice is English Wiktionary's entries (CC BY-SA 4.0). */
+export const WIKTIONARY_WORDS: ReadonlySet<string> = new Set(["brh", "scl", "khw"]);
+
 export function creditsFor(language: Language) {
   const { code } = language;
   return {
@@ -62,6 +65,7 @@ export function creditsFor(language: Language) {
     dakshina: DAKSHINA.has(code),
     aksharantar: AKSHARANTAR.has(code),
     wiktionary: WIKTIONARY.has(code),
+    wiktionaryWords: WIKTIONARY_WORDS.has(code),
     tatoeba: HAS_TATOEBA.has(code),
   };
 }

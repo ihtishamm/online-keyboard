@@ -1,0 +1,19 @@
+{
+  "slug": "shina",
+  "code": "scl",
+  "order": 98,
+  "lang": "scl",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": { "en": "Shina", "native": "شینا" },
+  "aliases": ["Sina"],
+  "region": "south-asia",
+  "fonts": ["nastaliq", "naskh"],
+  "layouts": ["scl-rachitrali"],
+  "sample": "شینا زبان",
+  "voice": [],
+  "wordList": false,
+  "translate": {},
+  "tier": null,
+  "notes": "Keyboard only. No Wikipedia: typing practice uses English Wiktionary's Shina entries; no word list or Roman typing yet."
+}

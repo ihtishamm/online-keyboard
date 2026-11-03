@@ -55,6 +55,15 @@ import jawi from "../languages/jawi/language.json";
 import zlmRoman from "../languages/jawi/roman.json";
 import { ZLM_ROMAN } from "./translit/zlm-roman";
 import zlmStandard from "../languages/jawi/standard.json";
+import hindko from "../languages/hindko/language.json";
+import hnoRachitrali from "../languages/hindko/rachitrali.json";
+import brahui from "../languages/brahui/language.json";
+import brhRachitrali from "../languages/brahui/rachitrali.json";
+import shina from "../languages/shina/language.json";
+import sclRachitrali from "../languages/shina/rachitrali.json";
+import khowar from "../languages/khowar/language.json";
+import khwRachitrali from "../languages/khowar/rachitrali.json";
+import khwPhonetic from "../languages/khowar/phonetic.json";
 import hindi from "../languages/hindi/language.json";
 import hiRoman from "../languages/hindi/roman.json";
 import { HI_ROMAN } from "./translit/hi-roman";
@@ -100,6 +109,7 @@ import nepali from "../languages/nepali/language.json";
 import neRoman from "../languages/nepali/roman.json";
 import { NE_ROMAN } from "./translit/ne-roman";
 import neTraditional from "../languages/nepali/traditional.json";
+import neRomanized from "../languages/nepali/romanized.json";
 import odia from "../languages/odia/language.json";
 import orRoman from "../languages/odia/roman.json";
 import { OR_ROMAN } from "./translit/or-roman";
@@ -112,6 +122,8 @@ import sanskrit from "../languages/sanskrit/language.json";
 import saRoman from "../languages/sanskrit/roman.json";
 import { SA_ROMAN } from "./translit/sa-roman";
 import saInscript from "../languages/sanskrit/inscript.json";
+import saItrans from "../languages/sanskrit/itrans.json";
+import saIast from "../languages/sanskrit/iast.json";
 import konkani from "../languages/konkani/language.json";
 import kokRoman from "../languages/konkani/roman.json";
 import { KOK_ROMAN } from "./translit/kok-roman";
@@ -190,6 +202,10 @@ export const LANGUAGE_FILES = [
   uyghur,
   dari,
   jawi,
+  hindko,
+  brahui,
+  shina,
+  khowar,
   hindi,
   bangla,
   marathi,
@@ -252,6 +268,11 @@ export const RAW_LAYOUTS = [
   prsRoman,
   zlmRoman,
   zlmStandard,
+  hnoRachitrali,
+  brhRachitrali,
+  sclRachitrali,
+  khwRachitrali,
+  khwPhonetic,
   hiRoman,
   hiInscript,
   bnRoman,
@@ -275,12 +296,15 @@ export const RAW_LAYOUTS = [
   siWijesekara,
   neRoman,
   neTraditional,
+  neRomanized,
   orRoman,
   orInscript,
   asRoman,
   asInscript,
   saRoman,
   saInscript,
+  saItrans,
+  saIast,
   kokRoman,
   kokInscript,
   maiRoman,

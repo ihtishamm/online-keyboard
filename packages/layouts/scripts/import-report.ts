@@ -47,12 +47,17 @@ function changes(spec: ImportSpec, source: string): string[] {
     const before = importKeyman(source, spec.from).rules;
     const after = buildImport(spec, source).layout.rules ?? [];
     const text = (r: (typeof before)[number]) =>
-      `${show(r.before)} + ${show(r.typed)} adds ${show(r.add)}${r.hold ? " and holds" : ""}`;
-    before.forEach((r, i) => {
-      const was = text(r);
-      const now = after[i] ? text(after[i]!) : "none";
-      if (was !== now) out.push(`Rule: ${was} → ${now}`);
-    });
+      `${show(r.before)} + ${show(r.typed)}${r.remove ? ` removes ${r.remove},` : ""} adds ${show(r.add)}${r.hold ? " and holds" : ""}`;
+    if (before.length === after.length) {
+      before.forEach((r, i) => {
+        const was = text(r);
+        const now = after[i] ? text(after[i]!) : "none";
+        if (was !== now) out.push(`Rule: ${was} → ${now}`);
+      });
+    } else {
+      // A filtered table: the layout's `source` says what was left out.
+      out.push(`Rules: ${before.length} upstream → ${after.length} here`);
+    }
   }
   return out;
 }

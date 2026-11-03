@@ -158,6 +158,13 @@ test("in landscape the phone layout stays, with lower keys", async ({ page, brow
   expect(height).toBeLessThanOrEqual(40);
 });
 
+test("ITRANS rewrites the text from on-screen taps", async ({ page }) => {
+  await open(page, "/sanskrit/itrans");
+  // क् then a drops the virama: k, a, m makes कम्.
+  for (const code of ["KeyK", "KeyA", "KeyM"]) await key(page, code).tap();
+  await expect(page.getByRole("textbox", { name: "Sanskrit text" })).toHaveValue("कम्");
+});
+
 test("Tamil99 composes from on-screen taps", async ({ page }) => {
   await open(page, "/tamil/tamil99");
   // த ம இ ழ and the pulli make தமிழ்; then ம ம ஆ make ம்மா.

@@ -37,7 +37,8 @@ export const deadKeySchema = z
 
 /**
  * A key whose text depends on what is already typed (Tamil99: a vowel key types அ alone, but
- * its sign after a consonant). Rules only ever add text; they never change what is there.
+ * its sign after a consonant). Most rules only add text; `remove` also takes back the end of
+ * what is there (ITRANS: "a" after क् drops the virama).
  */
 export const contextRuleSchema = z
   .object({
@@ -47,6 +48,8 @@ export const contextRuleSchema = z
     typed: z.string().min(1),
     /** What it adds instead, which can be nothing. */
     add: z.string(),
+    /** UTF-16 units of `before` to delete first, counted from its end. */
+    remove: z.number().int().positive().optional(),
     /** Rules do not apply to the next key press (Tamil99's delinking vowel, rule 6). */
     hold: z.boolean().optional(),
   })
@@ -90,6 +93,13 @@ export const layoutSchema = z
       for (const v of [def?.n, def?.s, def?.ag, def?.sag]) if (v) triggers.add(v);
     }
     layout.rules.forEach((rule, i) => {
+      if (rule.remove !== undefined && rule.remove > rule.before.length) {
+        ctx.addIssue({
+          code: "custom",
+          path: ["rules", i, "remove"],
+          message: `context rule removes more than its "before" text`,
+        });
+      }
       if (!triggers.has(rule.typed)) {
         ctx.addIssue({
           code: "custom",

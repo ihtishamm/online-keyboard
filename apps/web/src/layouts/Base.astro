@@ -38,6 +38,7 @@ interface Props {
     dakshina?: boolean;
     aksharantar?: boolean;
     wiktionary?: boolean;
+    wiktionaryWords?: boolean;
     tatoeba?: boolean;
   };
   /** Slug of the page's language, marked as current in the language picker. */
@@ -177,6 +178,19 @@ const arabicLogo = font === undefined || font === "nastaliq" || font === "naskh"
             Pages you open work offline.
           </span>
         </p>
+        {credits.wiktionaryWords && (
+          <p>
+            {"Typing practice uses words from "}
+            <a class="underline" href="https://en.wiktionary.org/">
+              English Wiktionary
+            </a>
+            {" ("}
+            <a class="underline" href="https://creativecommons.org/licenses/by-sa/4.0/">
+              CC BY-SA 4.0
+            </a>
+            {")."}
+          </p>
+        )}
         {credits.wikipedia && (
           <p>
             {"Word suggestions use a word list built from "}

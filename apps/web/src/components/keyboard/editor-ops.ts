@@ -33,7 +33,8 @@ export function replaceText(
 ): void {
   if (document.activeElement !== el) el.focus({ preventScroll: true });
   el.setSelectionRange(start, end);
-  if (exec(el, "insertText", text)) return;
+  // Chromium's insertText with no text leaves the selection in place: delete it instead.
+  if (text ? exec(el, "insertText", text) : exec(el, "delete")) return;
   replaceRange(el, text, start, end);
 }
 

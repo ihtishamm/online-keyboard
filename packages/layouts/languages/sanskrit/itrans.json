@@ -1,0 +1,1503 @@
+{
+  "id": "sa-itrans",
+  "lang": "sa",
+  "script": "Deva",
+  "dir": "ltr",
+  "name": {
+    "en": "ITRANS",
+    "native": "आइट\u094Dरान\u094Dस\u094D"
+  },
+  "source": "Keyman Vedic Sanskrit Devanagari Phonetic (ITRANS) 1.3.0 by Shree Devi Kumar (MIT). Classical Sanskrit only: the Vedic and Samaveda marks (its AltGr layer and = rules), the letters on q, Q, z, Z, W, { and }, and the symbols on %, * and & are left out, but for the svarita ('') and anudatta (``). w types व\u094D only, as upstream's aw for ऑ would also fire on av (use O). n then c types ञ\u094Dच\u094D at once, where upstream leaves Latin nc until an h. Rules on a consonant and virama read the virama alone, to keep the table small.",
+  "keys": {
+    "Backquote": {
+      "n": "`",
+      "s": "~"
+    },
+    "Digit1": {
+      "s": "!",
+      "n": "१"
+    },
+    "Digit2": {
+      "s": "@",
+      "n": "२"
+    },
+    "Digit3": {
+      "s": "ॐ",
+      "n": "३"
+    },
+    "Digit4": {
+      "s": "₹",
+      "n": "४"
+    },
+    "Digit5": {
+      "s": "%",
+      "n": "५"
+    },
+    "Digit6": {
+      "s": "\u094D",
+      "n": "६"
+    },
+    "Digit7": {
+      "s": "&",
+      "n": "७"
+    },
+    "Digit8": {
+      "s": "*",
+      "n": "८"
+    },
+    "Digit9": {
+      "s": "(",
+      "n": "९"
+    },
+    "Digit0": {
+      "s": ")",
+      "n": "०"
+    },
+    "Minus": {
+      "s": "\u200C",
+      "n": "-"
+    },
+    "Equal": {
+      "s": "\u200D",
+      "n": "="
+    },
+    "KeyQ": {},
+    "KeyW": {
+      "n": "व\u094D"
+    },
+    "KeyE": {
+      "n": "ए",
+      "s": "ऍ"
+    },
+    "KeyR": {
+      "n": "र\u094D",
+      "s": "र\u094D\u200D"
+    },
+    "KeyT": {
+      "n": "त\u094D",
+      "s": "ट\u094D"
+    },
+    "KeyY": {
+      "n": "य\u094D",
+      "s": "ञ\u094D"
+    },
+    "KeyU": {
+      "n": "उ",
+      "s": "ऊ"
+    },
+    "KeyI": {
+      "n": "इ",
+      "s": "ई"
+    },
+    "KeyO": {
+      "n": "ओ",
+      "s": "ऑ"
+    },
+    "KeyP": {
+      "n": "प\u094D",
+      "s": "फ\u094D"
+    },
+    "BracketLeft": {
+      "n": "ऎ",
+      "s": "{"
+    },
+    "BracketRight": {
+      "n": "ऒ",
+      "s": "}"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyA": {
+      "n": "अ",
+      "s": "आ"
+    },
+    "KeyS": {
+      "n": "स\u094D",
+      "s": "ष\u094D"
+    },
+    "KeyD": {
+      "n": "द\u094D",
+      "s": "ड\u094D"
+    },
+    "KeyF": {
+      "n": "फ\u094D",
+      "s": "ङ\u094D"
+    },
+    "KeyG": {
+      "n": "ग\u094D",
+      "s": "घ\u094D"
+    },
+    "KeyH": {
+      "s": "ः",
+      "n": "ह\u094D"
+    },
+    "KeyJ": {
+      "n": "ज\u094D",
+      "s": "झ\u094D"
+    },
+    "KeyK": {
+      "n": "क\u094D",
+      "s": "ख\u094D"
+    },
+    "KeyL": {
+      "n": "ल\u094D",
+      "s": "ळ\u094D"
+    },
+    "Semicolon": {
+      "s": ":",
+      "n": ";"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "KeyZ": {},
+    "KeyX": {
+      "n": "क\u094Dष\u094D",
+      "s": "ज\u094Dञ\u094D"
+    },
+    "KeyC": {
+      "n": "च\u094D",
+      "s": "छ\u094D"
+    },
+    "KeyV": {
+      "s": "ऽ",
+      "n": "व\u094D"
+    },
+    "KeyB": {
+      "n": "ब\u094D",
+      "s": "भ\u094D"
+    },
+    "KeyN": {
+      "n": "न\u094D",
+      "s": "ण\u094D"
+    },
+    "KeyM": {
+      "s": "\u0902",
+      "n": "म\u094D"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "<"
+    },
+    "Period": {
+      "n": ".",
+      "s": ">"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "?"
+    }
+  },
+  "rules": [
+    {
+      "before": ",",
+      "typed": ",",
+      "add": "॰",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": ".",
+      "add": "।",
+      "remove": 1
+    },
+    {
+      "before": "।",
+      "typed": ".",
+      "add": "॥",
+      "remove": 1
+    },
+    {
+      "before": "॥",
+      "typed": ".",
+      "add": "…",
+      "remove": 1
+    },
+    {
+      "before": "-",
+      "typed": "-",
+      "add": "–",
+      "remove": 1
+    },
+    {
+      "before": "–",
+      "typed": "-",
+      "add": "—",
+      "remove": 1
+    },
+    {
+      "before": "'",
+      "typed": "'",
+      "add": "\u0951",
+      "remove": 1
+    },
+    {
+      "before": "`",
+      "typed": "`",
+      "add": "\u0952",
+      "remove": 1
+    },
+    {
+      "before": "\u200C",
+      "typed": "\u200C",
+      "add": "\u0952",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "आ",
+      "add": "ा",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "इ",
+      "add": "ि",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "ई",
+      "add": "ी",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "उ",
+      "add": "\u0941",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "ऊ",
+      "add": "\u0942",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "ए",
+      "add": "\u0947",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "ओ",
+      "add": "ो",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "ऍ",
+      "add": "\u0945",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "ऑ",
+      "add": "ॉ",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "अ",
+      "add": "a"
+    },
+    {
+      "before": "@a",
+      "typed": "अ",
+      "add": "ा",
+      "remove": 2
+    },
+    {
+      "before": "@a",
+      "typed": "ए",
+      "add": "\u0945",
+      "remove": 2
+    },
+    {
+      "before": "@a",
+      "typed": "इ",
+      "add": "\u0948",
+      "remove": 2
+    },
+    {
+      "before": "@a",
+      "typed": "उ",
+      "add": "ौ",
+      "remove": 2
+    },
+    {
+      "before": "ि",
+      "typed": "इ",
+      "add": "ी",
+      "remove": 1
+    },
+    {
+      "before": "\u0941",
+      "typed": "उ",
+      "add": "\u0942",
+      "remove": 1
+    },
+    {
+      "before": "\u0947",
+      "typed": "ए",
+      "add": "ी",
+      "remove": 1
+    },
+    {
+      "before": "\u0947",
+      "typed": "इ",
+      "add": "\u0948",
+      "remove": 1
+    },
+    {
+      "before": "ो",
+      "typed": "ओ",
+      "add": "\u0942",
+      "remove": 1
+    },
+    {
+      "before": "ो",
+      "typed": "उ",
+      "add": "ौ",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "र\u094D\u200D",
+      "add": "\u0943",
+      "remove": 1
+    },
+    {
+      "before": "\u0943",
+      "typed": "र\u094D\u200D",
+      "add": ""
+    },
+    {
+      "before": "\u0943",
+      "typed": "\u094D",
+      "add": "\u0944",
+      "remove": 1
+    },
+    {
+      "before": "@",
+      "typed": "ळ\u094D",
+      "add": "\u0962",
+      "remove": 1
+    },
+    {
+      "before": "\u0962",
+      "typed": "ळ\u094D",
+      "add": ""
+    },
+    {
+      "before": "\u0962",
+      "typed": "\u094D",
+      "add": "\u0963",
+      "remove": 1
+    },
+    {
+      "before": "अ",
+      "typed": "अ",
+      "add": "आ",
+      "remove": 1
+    },
+    {
+      "before": "इ",
+      "typed": "इ",
+      "add": "ई",
+      "remove": 1
+    },
+    {
+      "before": "ए",
+      "typed": "ए",
+      "add": "ई",
+      "remove": 1
+    },
+    {
+      "before": "उ",
+      "typed": "उ",
+      "add": "ऊ",
+      "remove": 1
+    },
+    {
+      "before": "ओ",
+      "typed": "ओ",
+      "add": "ऊ",
+      "remove": 1
+    },
+    {
+      "before": "अ",
+      "typed": "ए",
+      "add": "ऍ",
+      "remove": 1
+    },
+    {
+      "before": "अ",
+      "typed": "इ",
+      "add": "ऐ",
+      "remove": 1
+    },
+    {
+      "before": "ए",
+      "typed": "इ",
+      "add": "ऐ",
+      "remove": 1
+    },
+    {
+      "before": "अ",
+      "typed": "उ",
+      "add": "औ",
+      "remove": 1
+    },
+    {
+      "before": "ओ",
+      "typed": "उ",
+      "add": "औ",
+      "remove": 1
+    },
+    {
+      "before": "र\u094D\u200D",
+      "typed": "र\u094D\u200D",
+      "add": "ऋ",
+      "remove": 3
+    },
+    {
+      "before": "ऋ",
+      "typed": "\u094D",
+      "add": "ॠ",
+      "remove": 1
+    },
+    {
+      "before": "ळ\u094D",
+      "typed": "ळ\u094D",
+      "add": "ऌ",
+      "remove": 2
+    },
+    {
+      "before": "ऌ",
+      "typed": "\u094D",
+      "add": "ॡ",
+      "remove": 1
+    },
+    {
+      "before": "\u0902",
+      "typed": "\u0902",
+      "add": "\u0901",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "क\u094D",
+      "add": "क\u093C\u094D",
+      "remove": 1
+    },
+    {
+      "before": "क\u093C\u094D",
+      "typed": "ह\u094D",
+      "add": "ख\u093C\u094D",
+      "remove": 3
+    },
+    {
+      "before": ".",
+      "typed": "ग\u094D",
+      "add": "ग\u093C\u094D",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "ज\u094D",
+      "add": "ज\u093C\u094D",
+      "remove": 1
+    },
+    {
+      "before": "ज\u093C\u094D",
+      "typed": "ह\u094D",
+      "add": "झ\u093C\u094D",
+      "remove": 3
+    },
+    {
+      "before": ".",
+      "typed": "ड\u094D",
+      "add": "ड\u093C\u094D",
+      "remove": 1
+    },
+    {
+      "before": "ड\u093C\u094D",
+      "typed": "ह\u094D",
+      "add": "ढ\u093C\u094D",
+      "remove": 3
+    },
+    {
+      "before": ".",
+      "typed": "फ\u094D",
+      "add": "फ\u093C\u094D",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "न\u094D",
+      "add": "न\u093C\u094D",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "र\u094D",
+      "add": "र\u093C\u094D",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "ळ\u094D",
+      "add": "ळ\u093C\u094D",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "य\u094D",
+      "add": "य\u093C\u094D",
+      "remove": 1
+    },
+    {
+      "before": "~",
+      "typed": "न\u094D",
+      "add": "ञ\u094D",
+      "remove": 1
+    },
+    {
+      "before": "~",
+      "typed": "ण\u094D",
+      "add": "ङ\u094D",
+      "remove": 1
+    },
+    {
+      "before": "क\u094D",
+      "typed": "ह\u094D",
+      "add": "ख\u094D",
+      "remove": 2
+    },
+    {
+      "before": "ग\u094D",
+      "typed": "ह\u094D",
+      "add": "घ\u094D",
+      "remove": 2
+    },
+    {
+      "before": "\u094D",
+      "typed": "ह\u094D",
+      "add": ""
+    },
+    {
+      "before": "ज\u094D",
+      "typed": "ह\u094D",
+      "add": "झ\u094D",
+      "remove": 2
+    },
+    {
+      "before": "ट\u094D",
+      "typed": "ह\u094D",
+      "add": "ठ\u094D",
+      "remove": 2
+    },
+    {
+      "before": "ड\u094D",
+      "typed": "ह\u094D",
+      "add": "ढ\u094D",
+      "remove": 2
+    },
+    {
+      "before": "त\u094D",
+      "typed": "ह\u094D",
+      "add": "थ\u094D",
+      "remove": 2
+    },
+    {
+      "before": "द\u094D",
+      "typed": "ह\u094D",
+      "add": "ध\u094D",
+      "remove": 2
+    },
+    {
+      "before": "प\u094D",
+      "typed": "ह\u094D",
+      "add": "फ\u094D",
+      "remove": 2
+    },
+    {
+      "before": "ब\u094D",
+      "typed": "ह\u094D",
+      "add": "भ\u094D",
+      "remove": 2
+    },
+    {
+      "before": "स\u094D",
+      "typed": "ह\u094D",
+      "add": "श\u094D",
+      "remove": 2
+    },
+    {
+      "before": "न\u094D",
+      "typed": "क\u094D",
+      "add": "ङ\u094Dक\u094D",
+      "remove": 2
+    },
+    {
+      "before": "न\u094D",
+      "typed": "ग\u094D",
+      "add": "ङ\u094Dग\u094D",
+      "remove": 2
+    },
+    {
+      "before": "न\u094D",
+      "typed": "च\u094D",
+      "add": "ञ\u094Dच\u094D",
+      "remove": 2
+    },
+    {
+      "before": "न\u094D",
+      "typed": "ज\u094D",
+      "add": "ञ\u094Dज\u094D",
+      "remove": 2
+    },
+    {
+      "before": "घ\u094D",
+      "typed": "ञ\u094D",
+      "add": "ज\u094Dञ\u094D",
+      "remove": 2
+    },
+    {
+      "before": "ण\u094D",
+      "typed": "ग\u094D",
+      "add": "ङ\u094D",
+      "remove": 2
+    },
+    {
+      "before": "ऑ",
+      "typed": "\u0902",
+      "add": "ॐ",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "\u094D",
+      "add": ""
+    },
+    {
+      "before": "\u094D",
+      "typed": "अ",
+      "add": "",
+      "remove": 1
+    },
+    {
+      "before": "क",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "क",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "क",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "क",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ष",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ष",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ष",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ष",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ख",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ख",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ख",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ख",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ग",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ग",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ग",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ग",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "घ",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "घ",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "घ",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "घ",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ङ",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ङ",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ङ",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ङ",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "च",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "च",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "च",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "च",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "छ",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "छ",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "छ",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "छ",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ज",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ज",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ज",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ज",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ञ",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ञ",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ञ",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ञ",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "झ",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "झ",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "झ",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "झ",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ट",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ट",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ट",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ट",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ठ",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ठ",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ठ",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ठ",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ड",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ड",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ड",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ड",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ढ",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ढ",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ढ",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ढ",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ण",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ण",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ण",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ण",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "त",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "त",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "त",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "त",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "थ",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "थ",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "थ",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "थ",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "द",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "द",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "द",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "द",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ध",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ध",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ध",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ध",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "न",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "न",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "न",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "न",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "प",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "प",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "प",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "प",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "फ",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "फ",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "फ",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "फ",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ब",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ब",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ब",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ब",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "भ",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "भ",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "भ",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "भ",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "म",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "म",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "म",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "म",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "य",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "य",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "य",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "य",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "र",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "र",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "र",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "र",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ल",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ल",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ल",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ल",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ळ",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ळ",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ळ",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ळ",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "व",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "व",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "व",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "व",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "श",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "श",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "श",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "श",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "स",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "स",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "स",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "स",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "ह",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "ह",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "ह",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "ह",
+      "typed": "उ",
+      "add": "ौ"
+    },
+    {
+      "before": "\u094D",
+      "typed": "ए",
+      "add": "\u0947",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "इ",
+      "add": "ि",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "ओ",
+      "add": "ो",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "उ",
+      "add": "\u0941",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "आ",
+      "add": "ा",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "ऍ",
+      "add": "\u0945",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "ई",
+      "add": "ी",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "ऑ",
+      "add": "ॉ",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "र\u094D\u200D",
+      "add": "\u0943",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "ऊ",
+      "add": "\u0942",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "ऎ",
+      "add": "\u0946",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "ऒ",
+      "add": "ॊ",
+      "remove": 1
+    },
+    {
+      "before": "\u094D",
+      "typed": "ळ\u094D",
+      "add": "\u0962",
+      "remove": 1
+    },
+    {
+      "before": "\u093C",
+      "typed": "अ",
+      "add": "ा"
+    },
+    {
+      "before": "\u093C",
+      "typed": "ए",
+      "add": "\u0945"
+    },
+    {
+      "before": "\u093C",
+      "typed": "इ",
+      "add": "\u0948"
+    },
+    {
+      "before": "\u093C",
+      "typed": "उ",
+      "add": "ौ"
+    }
+  ],
+  "longpress": {
+    "Digit3": ["ॐ"],
+    "Digit4": ["₹"],
+    "Digit6": ["\u094D"],
+    "Minus": ["\u200C"],
+    "Equal": ["\u200D"],
+    "KeyE": ["ऍ"],
+    "KeyR": ["र\u094D\u200D"],
+    "KeyT": ["ट\u094D"],
+    "KeyY": ["ञ\u094D"],
+    "KeyU": ["ऊ"],
+    "KeyI": ["ई"],
+    "KeyO": ["ऑ"],
+    "KeyP": ["फ\u094D"],
+    "KeyA": ["आ"],
+    "KeyS": ["ष\u094D"],
+    "KeyD": ["ड\u094D"],
+    "KeyF": ["ङ\u094D"],
+    "KeyG": ["घ\u094D"],
+    "KeyH": ["ः"],
+    "KeyJ": ["झ\u094D"],
+    "KeyK": ["ख\u094D"],
+    "KeyL": ["ळ\u094D"],
+    "KeyX": ["ज\u094Dञ\u094D"],
+    "KeyC": ["छ\u094D"],
+    "KeyV": ["ऽ"],
+    "KeyB": ["भ\u094D"],
+    "KeyN": ["ण\u094D"],
+    "KeyM": ["\u0902"]
+  }
+}

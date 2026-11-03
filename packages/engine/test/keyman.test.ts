@@ -163,11 +163,41 @@ describe("context rules", () => {
       { before: "\u0BAE", typed: "\u0B87", add: "\u0BBF" },
       { before: "\u0B95", typed: "\u0B95", add: "\u0BCD\u0B95" },
       { before: "\u0B95\u0BCD\u0B95", typed: "\u0B95", add: "\u0B95" },
+      { before: "\u0B95", typed: "\u0BAE", add: "\u0BAE", remove: 1 },
     ]);
+    expect(r.warnings).toEqual([]);
   });
 
-  it("reports a rule that would change text already typed", () => {
-    expect(r.warnings).toEqual([expect.stringMatching(/unsupported context rule.*U\+0B95 \+ 'k'/)]);
+  it("reads quoted contexts and rewrites text, keeping what stays", () => {
+    const { rules, warnings } = importKeyman(
+      [
+        "store(cons) 'कम'",
+        "store(keys) 'e'",
+        "store(signs) '\u0947'",
+        "group(main) using keys",
+        "+ 'k' > 'क्'",
+        "+ 'a' > 'अ'",
+        "+ 'e' > 'ए'",
+        "any(cons) '\u094D' + 'a' > index(cons, 1)",
+        "any(cons) '\u094D' + any(keys) > index(cons, 1) index(signs, 3)",
+        "$keyman: if(opt = '0') 'क्' + 'k' > 'क्ख्'",
+        "$keyman: if(opt = 'x') 'क्' + 'e' > 'nope'",
+      ].join("\n"),
+      { contextRules: true },
+    );
+    expect(rules).toEqual([
+      { before: "क्", typed: "अ", add: "", remove: 1 },
+      { before: "म्", typed: "अ", add: "", remove: 1 },
+      { before: "क्", typed: "ए", add: "\u0947", remove: 1 },
+      { before: "म्", typed: "ए", add: "\u0947", remove: 1 },
+      { before: "क्", typed: "क्", add: "ख्" },
+    ]);
+    expect(warnings).toEqual([expect.stringMatching(/option opt=x/)]);
+  });
+
+  it("reads a quoted > as a key", () => {
+    const { keys } = importKeyman(`group(main) using keys\n+ ">" > "."`);
+    expect(keys.Period?.s).toBe(".");
   });
 
   it("fills keys with no rule from US QWERTY, but not silenced ones", () => {

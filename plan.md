@@ -654,7 +654,7 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
   - So **Hindko, Brahui, Shina and Khowar have openly licensed layouts** and are not deferred for lack of one. With no Wikipedia in these four, they stay Tier C (keyboard only) like Balochi.
   - Sanskrit, Konkani and Maithili are typed on Devanagari InScript, as on Windows.
 
-- [ ] **9a. Wave 2: South Asia and Arabic script** (our core audience, 23 languages).
+- [x] **9a. Wave 2: South Asia and Arabic script** (our core audience, 23 languages).
   - **Platform (done):** scripts Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Sinhala and Thaana in the script registry, with Noto Sans fonts (fontsource, OFL). Each page now inlines `@font-face` rules only for its own scripts (`src/styles/script-fonts.ts`) instead of importing every script's CSS: the Hindi and Spanish pages are 1.4–1.6 KB smaller gzipped, and the cost no longer grows with each script. The home page, typing hub and progress page keep Arabic, Nastaliq, Devanagari and Bengali; names in other scripts there use the system's fonts. Fixed on the way: cheat sheets and guides carried no script fonts at all, so the Hindi and Bangla charts (and their PDFs) used whatever font the system had.
   - **Batch 1 (done 2026-11-02): Marathi, Gujarati, Punjabi (Gurmukhi), Tamil, Telugu, Kannada, Malayalam, Sinhala.**
     - **Layouts:** CLDR InScript for the seven Indic languages and Sinhala Wijesekara, plus a Roman scheme each (`packages/layouts/src/translit/<code>-roman.ts`). Romanisation tables for the new scripts are derived from Devanagari by Unicode offset.
@@ -683,7 +683,16 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - **Emoji:** CLDR keywords for Uyghur, with English filling its 581 gaps. Dari uses Farsi's and Jawi uses Malay's (in Rumi). CLDR has nothing for Sorani or Dhivehi, so English search only.
     - **Checks:** full e2e 651 passed, 241 skipped (iPhone off here). Of 5 failures: 2 were PDF checks in a `SKIP_PDFS` build, which pass on a real build (98 PDFs); 2 were a stray Uyghur alias that made "arabic" find two languages, fixed; 1 was Tamil99's first key lost on the mobile project under load, which then passed 10 of 10 alone. Those, and the 2 phone tests cut off by a time limit, were re-run and pass; the whole suite was not run again after the fix. Noto Naskh and Noto Sans Thaana cover every character the new layouts type.
     - **Not done:** native-speaker review of all five. Spell check stays Beta and off, and its evaluation does not cover these five, as for batches 1 and 2.
-  - [ ] **Languages:**
+  - **Standards and the Tier C four (done 2026-11-04).**
+    - **Nepali Romanized:** Keyman Nepali MPP Romanized 1.0.0 (MIT), from Madan Puraskar Pustakalaya and Language Technology Kendra. A fixed key layout, unlike `ne-roman`.
+    - **Sanskrit ITRANS:** Keyman Vedic Sanskrit Devanagari Phonetic 1.3.0 (MIT), classical Sanskrit only. Changed from upstream: Vedic and Samaveda marks left out, aw for ऑ dropped (it fired on av: अवतार), n then c gives ञ्च् at once. ऋ is RR, as upstream, not standard ITRANS's R^i.
+    - **Sanskrit IAST:** the IAST rules of Keyman Indic Romanization from ITRANS 1.2.1 (MIT); the text stays in Roman letters. Changed: .m types ṃ (upstream .mm), IPA and ISO rules left out.
+    - **Engine:** context rules can now rewrite text (`remove`). The Keyman importer reads quoted contexts and `$keyman: if(option)` rules at their default, and a quoted `">"` key (Nepali Romanized had lost Shift+.). Chromium's insertText keeps part of a selection that starts inside a conjunct, so the editor deletes, then inserts: **one rewriting key is two Undo steps.** Only e2e caught this; the unit tests passed.
+    - **Hindko, Brahui, Shina, Khowar:** Keyman Rachitrali keyboards by Rehmat Aziz Chitrali (MIT), and SIL's Khowar Phonetic. Keyboards only: no Wikipedia, so no word list, Roman typing or spell check. Hindko uses `hno` (Northern Hindko); Keyman lists `hnd`. Emoji keywords are Urdu's.
+    - **Typing practice:** English Wiktionary's Arabic-script entries (`data/<code>/practice-words.txt`), words only: Khowar 254, Brahui 162, Shina 130 before the typeable filter. Alphabetical, not by frequency.
+    - **Hindko is not Tier C:** only 4 Wiktionary entries and almost nothing in Incubator (checked 2026-11-04), so it has no text for a tutor or test and no typing pages. The roster shows "–". The other three are Tier C.
+    - **Not done:** native-speaker review of the four languages' samples, keymaps and words, and of the Sanskrit and Nepali copy. ITRANS and IAST work from physical and on-screen keys only: a phone's own keyboard bypasses their rules. Typing pages leave out ITRANS and IAST, as for Tamil99.
+  - [x] **Languages:**
     - Indic: Punjabi (Gurmukhi), Marathi, Nepali, Gujarati, Tamil, Telugu, Kannada, Malayalam, Odia, Assamese, Sinhala, Sanskrit, Konkani, Maithili;
     - Dhivehi;
     - Arabic script: Kurdish (Sorani), Uyghur, Dari, Hindko, Brahui, Shina, Khowar, Malay (Jawi).
@@ -691,8 +700,8 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - The Dakshina languages (Gujarati, Kannada, Malayalam, Marathi, Punjabi, Sinhala, Tamil, Telugu) use Dakshina evaluation sets.
     - Others use Aksharantar (licence split by data part; check, §8). Dhivehi, Sorani, Uyghur and Jawi, which Aksharantar lacks, use Wiktionary pairs (batch 3).
     - Page titles: "English to Tamil Typing" and so on.
-  - [ ] **Standards:** InScript (CLDR), Tamil99, Nepali Traditional and Romanised, Sinhala Wijesekara, ITRANS and IAST for Sanskrit.
-  - [ ] **Hindko, Brahui, Shina and Khowar:** only if an openly licensed layout exists, or we design one with a native speaker. Otherwise defer them and write down why.
+  - [x] **Standards:** InScript (CLDR), Tamil99, Nepali Traditional and Romanised, Sinhala Wijesekara, ITRANS and IAST for Sanskrit.
+  - [x] **Hindko, Brahui, Shina and Khowar:** only if an openly licensed layout exists, or we design one with a native speaker. Otherwise defer them and write down why.
 - [ ] **9b. Wave 3: global majors** (23 languages).
   - [ ] **Languages:**
     - Cyrillic: Russian, Ukrainian, Belarusian, Bulgarian, Serbian, Macedonian, Kazakh, Kyrgyz, Tajik, Mongolian;

@@ -1,0 +1,518 @@
+{
+  "id": "sa-iast",
+  "lang": "sa",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "IAST",
+    "native": "IAST"
+  },
+  "source": "Keyman Indic Romanization from ITRANS 1.2.1 by Shree Devi Kumar (MIT), keeping only the rules that give IAST letters. Dot-m types ṃ and dot-M Ṃ (upstream asks for .mm), the apostrophe stays an apostrophe (upstream types U+02BC), and @ stays @. Letters follow Caps Lock.",
+  "keys": {
+    "Backquote": {
+      "n": "`",
+      "s": "~"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "!"
+    },
+    "Digit2": {
+      "s": "@",
+      "n": "2"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "#"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "$"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "%"
+    },
+    "Digit6": {
+      "s": "^",
+      "n": "6"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "&"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "*"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+"
+    },
+    "KeyQ": {
+      "n": "q",
+      "s": "Q",
+      "caps": "shift"
+    },
+    "KeyW": {
+      "n": "w",
+      "s": "W",
+      "caps": "shift"
+    },
+    "KeyE": {
+      "n": "e",
+      "s": "E",
+      "caps": "shift"
+    },
+    "KeyR": {
+      "n": "r",
+      "s": "R",
+      "caps": "shift"
+    },
+    "KeyT": {
+      "n": "t",
+      "s": "T",
+      "caps": "shift"
+    },
+    "KeyY": {
+      "n": "y",
+      "s": "Y",
+      "caps": "shift"
+    },
+    "KeyU": {
+      "n": "u",
+      "s": "U",
+      "caps": "shift"
+    },
+    "KeyI": {
+      "n": "i",
+      "s": "I",
+      "caps": "shift"
+    },
+    "KeyO": {
+      "n": "o",
+      "s": "O",
+      "caps": "shift"
+    },
+    "KeyP": {
+      "n": "p",
+      "s": "P",
+      "caps": "shift"
+    },
+    "BracketLeft": {
+      "n": "[",
+      "s": "{"
+    },
+    "BracketRight": {
+      "n": "]",
+      "s": "}"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyA": {
+      "n": "a",
+      "s": "A",
+      "caps": "shift"
+    },
+    "KeyS": {
+      "n": "s",
+      "s": "S",
+      "caps": "shift"
+    },
+    "KeyD": {
+      "n": "d",
+      "s": "D",
+      "caps": "shift"
+    },
+    "KeyF": {
+      "n": "f",
+      "s": "F",
+      "caps": "shift"
+    },
+    "KeyG": {
+      "n": "g",
+      "s": "G",
+      "caps": "shift"
+    },
+    "KeyH": {
+      "n": "h",
+      "s": "H",
+      "caps": "shift"
+    },
+    "KeyJ": {
+      "n": "j",
+      "s": "J",
+      "caps": "shift"
+    },
+    "KeyK": {
+      "n": "k",
+      "s": "K",
+      "caps": "shift"
+    },
+    "KeyL": {
+      "n": "l",
+      "s": "L",
+      "caps": "shift"
+    },
+    "Semicolon": {
+      "s": ":",
+      "n": ";"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "KeyZ": {
+      "n": "z",
+      "s": "Z",
+      "caps": "shift"
+    },
+    "KeyX": {
+      "n": "x",
+      "s": "X",
+      "caps": "shift"
+    },
+    "KeyC": {
+      "n": "c",
+      "s": "C",
+      "caps": "shift"
+    },
+    "KeyV": {
+      "n": "v",
+      "s": "V",
+      "caps": "shift"
+    },
+    "KeyB": {
+      "n": "b",
+      "s": "B",
+      "caps": "shift"
+    },
+    "KeyN": {
+      "n": "n",
+      "s": "N",
+      "caps": "shift"
+    },
+    "KeyM": {
+      "n": "m",
+      "s": "M",
+      "caps": "shift"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "<"
+    },
+    "Period": {
+      "n": ".",
+      "s": ">"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "?"
+    }
+  },
+  "rules": [
+    {
+      "before": ".",
+      "typed": "r",
+      "add": "ṛ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "l",
+      "add": "ḷ",
+      "remove": 1
+    },
+    {
+      "before": "ṛ",
+      "typed": "r",
+      "add": "ṝ",
+      "remove": 1
+    },
+    {
+      "before": "ḷ",
+      "typed": "l",
+      "add": "ḹ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "t",
+      "add": "ṭ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "d",
+      "add": "ḍ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "n",
+      "add": "ṇ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "s",
+      "add": "ṣ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "h",
+      "add": "ḥ",
+      "remove": 1
+    },
+    {
+      "before": "ṇ",
+      "typed": "n",
+      "add": "ṅ",
+      "remove": 1
+    },
+    {
+      "before": "'",
+      "typed": "s",
+      "add": "ś",
+      "remove": 1
+    },
+    {
+      "before": ";",
+      "typed": "s",
+      "add": "ś",
+      "remove": 1
+    },
+    {
+      "before": ";",
+      "typed": "n",
+      "add": "ṅ",
+      "remove": 1
+    },
+    {
+      "before": "-",
+      "typed": "a",
+      "add": "ā",
+      "remove": 1
+    },
+    {
+      "before": "-",
+      "typed": "i",
+      "add": "ī",
+      "remove": 1
+    },
+    {
+      "before": "-",
+      "typed": "u",
+      "add": "ū",
+      "remove": 1
+    },
+    {
+      "before": "-",
+      "typed": "n",
+      "add": "ñ",
+      "remove": 1
+    },
+    {
+      "before": "a",
+      "typed": "a",
+      "add": "ā",
+      "remove": 1
+    },
+    {
+      "before": "e",
+      "typed": "e",
+      "add": "ī",
+      "remove": 1
+    },
+    {
+      "before": "i",
+      "typed": "i",
+      "add": "ī",
+      "remove": 1
+    },
+    {
+      "before": "o",
+      "typed": "o",
+      "add": "ū",
+      "remove": 1
+    },
+    {
+      "before": "u",
+      "typed": "u",
+      "add": "ū",
+      "remove": 1
+    },
+    {
+      "before": "~",
+      "typed": "n",
+      "add": "ñ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "R",
+      "add": "Ṛ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "L",
+      "add": "Ḷ",
+      "remove": 1
+    },
+    {
+      "before": "Ṛ",
+      "typed": "R",
+      "add": "Ṝ",
+      "remove": 1
+    },
+    {
+      "before": "Ḷ",
+      "typed": "L",
+      "add": "Ḹ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "T",
+      "add": "Ṭ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "D",
+      "add": "Ḍ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "N",
+      "add": "Ṇ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "S",
+      "add": "Ṣ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "H",
+      "add": "Ḥ",
+      "remove": 1
+    },
+    {
+      "before": "Ṇ",
+      "typed": "N",
+      "add": "Ṅ",
+      "remove": 1
+    },
+    {
+      "before": "'",
+      "typed": "S",
+      "add": "Ś",
+      "remove": 1
+    },
+    {
+      "before": ";",
+      "typed": "S",
+      "add": "Ś",
+      "remove": 1
+    },
+    {
+      "before": ";",
+      "typed": "N",
+      "add": "Ṅ",
+      "remove": 1
+    },
+    {
+      "before": "-",
+      "typed": "A",
+      "add": "Ā",
+      "remove": 1
+    },
+    {
+      "before": "-",
+      "typed": "I",
+      "add": "Ī",
+      "remove": 1
+    },
+    {
+      "before": "-",
+      "typed": "U",
+      "add": "Ū",
+      "remove": 1
+    },
+    {
+      "before": "-",
+      "typed": "N",
+      "add": "Ñ",
+      "remove": 1
+    },
+    {
+      "before": "A",
+      "typed": "A",
+      "add": "Ā",
+      "remove": 1
+    },
+    {
+      "before": "E",
+      "typed": "E",
+      "add": "Ī",
+      "remove": 1
+    },
+    {
+      "before": "I",
+      "typed": "I",
+      "add": "Ī",
+      "remove": 1
+    },
+    {
+      "before": "O",
+      "typed": "O",
+      "add": "Ū",
+      "remove": 1
+    },
+    {
+      "before": "U",
+      "typed": "U",
+      "add": "Ū",
+      "remove": 1
+    },
+    {
+      "before": "~",
+      "typed": "N",
+      "add": "Ñ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "m",
+      "add": "ṃ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "M",
+      "add": "Ṃ",
+      "remove": 1
+    }
+  ],
+  "longpress": {}
+}

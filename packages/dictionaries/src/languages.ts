@@ -158,6 +158,11 @@ export const TEXT_RULES: Readonly<Record<string, TextRules>> = {
   ks: arabicScript("ks", "kswiki", normalizeKashmiri),
   // Balochi has no Wikipedia (checked 2026-10-31): no word list yet.
   bal: arabicScript("bal", null, normalizeBalochi),
+  // No Wikipedia in these four either (checked 2026-11-04): keyboards only.
+  hno: arabicScript("hno", null, urduPlus("ݨ")),
+  brh: arabicScript("brh", null, urduPlus("ڷٸ")),
+  scl: arabicScript("scl", null, urduPlus("ڇڅڙݜݨ")),
+  khw: arabicScript("khw", null, urduPlus("ݯݰݮݱځڅڵڨ")),
   hi: {
     code: "hi",
     wiki: "hiwiki",

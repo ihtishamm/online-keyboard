@@ -1,0 +1,19 @@
+{
+  "slug": "hindko",
+  "code": "hno",
+  "order": 96,
+  "lang": "hno",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": { "en": "Hindko", "native": "ہندکو" },
+  "aliases": [],
+  "region": "south-asia",
+  "fonts": ["nastaliq", "naskh"],
+  "layouts": ["hno-rachitrali"],
+  "sample": "ہندکو میری بولی اے۔",
+  "voice": [],
+  "wordList": false,
+  "translate": {},
+  "tier": null,
+  "notes": "Keyboard only. No Wikipedia and almost no open text (4 Wiktionary entries, checked 2026-11-04), so no word list, no Roman typing and no typing practice yet."
+}

@@ -81,6 +81,21 @@ function NON_LATIN(): Record<string, TypingCopy> {
       test: "بلوچی ٹائپنگ ٹیسٹ",
       tip: `ء is written as a word of its own (ءَ, ءُ): it is on ${key("bal-phonetic", "ء")}, and the zabar \u064E on ${key("bal-phonetic", "\u064E")}.`,
     },
+    brh: {
+      tutor: "براہوی ٹائپنگ ٹیوٹر",
+      test: "براہوی ٹائپنگ ٹیسٹ",
+      tip: `Brahui's ڷ, written for its own l sound, is on ${key("brh-rachitrali", "ڷ")}.`,
+    },
+    scl: {
+      tutor: "شینا ٹائپنگ ٹیوٹر",
+      test: "شینا ٹائپنگ ٹیسٹ",
+      tip: `Shina's own letters: ${on("scl-rachitrali", "ڇڅڙݜݨ")}.`,
+    },
+    khw: {
+      tutor: "کھوار ٹائپنگ ٹیوٹر",
+      test: "کھوار ٹائپنگ ٹیسٹ",
+      tip: `Khowar's own letters: ${on("khw-rachitrali", "ݯݰݮݱ")}.`,
+    },
     ks: {
       tutor: "کٲشُر ٹایپنگ ٹیوٹر",
       test: "کٲشُر ٹایپنگ ٹیسٹ",

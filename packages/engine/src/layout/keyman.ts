@@ -14,10 +14,12 @@
  *   dk(circ) + [K_SPACE] > '^'  (the dead key's own character: our trigger)
  *   dk(circ) + [K_6] > '^'      (the dead key typed twice gives the same spacing form)
  *   + 'x' > outs(name)          (a store's characters)
- * With `contextRules`, rules on text already typed, as long as they only add to it:
+ * With `contextRules`, rules on text already typed, which may rewrite it:
  *   U+0B95 + 'h' > U+0B95 U+0BCD U+0B95
  *   U+0B95 U+0BCD U+0B95 + 'h' > context U+0B95
  *   any(cons) + any(keys) > index(cons, 1) index(signs, 2)
+ *   any(cons) "\u094D" + "a" > index(cons, 1)
+ *   $keyman: if(opt = '0') "न्" + "k" > "ङ्क्"  (option at its default value; others skipped)
  * Anything else (other context, a dead key with no spacing form, chained dead keys) is
  * reported as a warning, never imported wrongly. The space bar is never mapped.
  */
@@ -160,16 +162,18 @@ function storeKeys(items: Item[], options: KeymanOptions): (KeyRef | null)[] {
   return items.map((i) => ("char" in i ? keyRef(`'${i.char}'`, options) : i.key));
 }
 
-const CONTEXT_ITEM = /any\s*\(\s*(\w+)\s*\)|[Uu]\+([0-9A-Fa-f]{4,6})/g;
-const CONTEXT_RULE =
-  /^((?:any\s*\(\s*\w+\s*\)|[Uu]\+[0-9A-Fa-f]{4,6})(?:\s+(?:any\s*\(\s*\w+\s*\)|[Uu]\+[0-9A-Fa-f]{4,6}))*)\s*\+\s*(.+?)\s*>\s*(.+)$/;
+const CONTEXT_ITEM = /any\s*\(\s*(\w+)\s*\)|[Uu]\+([0-9A-Fa-f]{4,6})|"([^"]*)"|'([^']*)'/g;
+const CONTEXT_PART = `(?:any\\s*\\(\\s*\\w+\\s*\\)|[Uu]\\+[0-9A-Fa-f]{4,6}|"[^"]*"|'[^']*')`;
+const CONTEXT_RULE = new RegExp(
+  `^(${CONTEXT_PART}(?:\\s*${CONTEXT_PART})*)\\s*\\+\\s*(.+?)\\s*>\\s*(.+)$`,
+);
 
 /** A context rule waiting for its key's character, which later rules may still define. */
-type RawRule = { before: string; key: KeyRef; add: string; line: number };
+type RawRule = { before: string; key: KeyRef; add: string; remove: number; line: number };
 
 /**
  * One context rule, expanded over its any() stores. Returns null when it needs more than one
- * any() in the context, or when it would change text already typed.
+ * any() in the context.
  */
 function expandContextRule(
   context: string,
@@ -179,8 +183,18 @@ function expandContextRule(
   options: KeymanOptions,
   line: number,
 ): RawRule[] | null {
-  const items = [...context.matchAll(CONTEXT_ITEM)];
-  const anys = items.flatMap((m, i) => (m[1] ? [{ at: i + 1, store: stores.get(m[1]) }] : []));
+  // A quoted string in a context is one item per character, for index() positions.
+  type ContextItem = { any: string } | { char: string };
+  const items = [...context.matchAll(CONTEXT_ITEM)].flatMap((m): ContextItem[] =>
+    m[1]
+      ? [{ any: m[1] }]
+      : m[2]
+        ? [{ char: String.fromCodePoint(parseInt(m[2], 16)) }]
+        : [...(m[3] ?? m[4] ?? "")].map((char) => ({ char })),
+  );
+  const anys = items.flatMap((m, i) =>
+    "any" in m ? [{ at: i + 1, store: stores.get(m.any) }] : [],
+  );
   if (anys.length > 1 || anys.some((a) => !a.store)) return null;
   const choices = anys[0]?.store ?? [null];
   const keyAt = items.length + 1;
@@ -195,7 +209,7 @@ function expandContextRule(
   for (let c = 0; c < choices.length; c++) {
     const before = items
       .map((m) => {
-        if (m[2]) return String.fromCodePoint(parseInt(m[2], 16));
+        if ("char" in m) return m.char;
         const item = choices[c];
         return item && "char" in item ? item.char : "";
       })
@@ -204,13 +218,15 @@ function expandContextRule(
       const key = keyList[k];
       if (!key) return null;
       let out = "";
-      const re = /\s*(?:(context)|index\s*\(\s*(\w+)\s*,\s*(\d+)\s*\)|[Uu]\+([0-9A-Fa-f]{4,6}))/y;
+      const re =
+        /\s*(?:(context)|index\s*\(\s*(\w+)\s*,\s*(\d+)\s*\)|[Uu]\+([0-9A-Fa-f]{4,6})|"([^"]*)"|'([^']*)')/y;
       for (let pos = 0; pos < rhs.length; pos = re.lastIndex) {
         re.lastIndex = pos;
         const m = re.exec(rhs);
         if (!m) return null;
         if (m[1]) out += before;
         else if (m[4]) out += String.fromCodePoint(parseInt(m[4], 16));
+        else if (m[5] !== undefined || m[6] !== undefined) out += m[5] ?? m[6];
         else {
           const at = Number(m[3]);
           const i = at === anys[0]?.at ? c : at === keyAt && keyStore ? k : -1;
@@ -219,8 +235,15 @@ function expandContextRule(
           out += item.char;
         }
       }
-      if (!out.startsWith(before)) return null;
-      rules.push({ before, key, add: out.slice(before.length), line });
+      let same = 0;
+      while (same < before.length && before[same] === out[same]) same++;
+      rules.push({
+        before,
+        key,
+        add: out.slice(same),
+        remove: before.length - same,
+        line,
+      });
     }
   }
   return rules;
@@ -247,7 +270,18 @@ export function importKeyman(source: string, options: KeymanOptions = {}): Keyma
     .split(/\r?\n/)
     .forEach((raw, idx) => {
       // Strip trailing comments (`c ...`) that are outside quotes.
-      const text = raw.replace(/(^|\s)c\s.*$|(^|\s)c$/, "").trim();
+      let text = raw.replace(/(^|\s)c\s.*$|(^|\s)c$/, "").trim();
+      const option = options.contextRules
+        ? /^\$keyman:\s*if\(\s*(\w+)\s*=\s*'([^']*)'\s*\)\s*(.*)$/.exec(text)
+        : null;
+      if (option) {
+        const [, opt = "", value = "", rest = ""] = option;
+        if (value === "0") text = rest;
+        else {
+          warnings.push(`line ${idx + 1}: rule for option ${opt}=${value}, skipped: ${rest}`);
+          return;
+        }
+      }
       const more = text.endsWith("\\"); // a backslash continues the line
       const part = more ? text.slice(0, -1).trim() : text;
       if (open) open.line += " " + part;
@@ -274,7 +308,8 @@ export function importKeyman(source: string, options: KeymanOptions = {}): Keyma
 
   for (const { lineNo, line } of lines) {
     if (!line || /^store\s*\(/i.test(line)) continue;
-    const rule = /^(?:(dk|deadkey)\s*\(\s*(\w+)\s*\)\s*)?\+\s*(.+?)\s*>\s*(.+)$/i.exec(line);
+    const rule =
+      /^(?:(dk|deadkey)\s*\(\s*(\w+)\s*\)\s*)?\+\s*("[^"]*"|'[^']*'|.+?)\s*>\s*(.+)$/i.exec(line);
     if (!rule) {
       const context = options.contextRules ? CONTEXT_RULE.exec(line) : null;
       if (context) {
@@ -421,7 +456,7 @@ export function importKeyman(source: string, options: KeymanOptions = {}): Keyma
 
   const typedRules: ContextRule[] = [];
   const seen = new Set<string>();
-  for (const { before, key, add, line } of rawRules) {
+  for (const { before, key, add, remove, line } of rawRules) {
     const typed = "space" in key ? undefined : keys[key.code]?.[key.layer];
     if (!typed) {
       warnings.push(`line ${line}: context rule's key types nothing, skipped`);
@@ -432,12 +467,13 @@ export function importKeyman(source: string, options: KeymanOptions = {}): Keyma
       continue;
     }
     seen.add(before + "\0" + typed);
-    typedRules.push({ before, typed, add });
+    typedRules.push({ before, typed, add, ...(remove ? { remove } : {}) });
   }
   // A rule that adds what the key types anyway does nothing, unless it overrides a shorter one.
   const rules = typedRules.filter(
     (r) =>
       r.add !== r.typed ||
+      r.remove ||
       typedRules.some(
         (o) =>
           o !== r &&
