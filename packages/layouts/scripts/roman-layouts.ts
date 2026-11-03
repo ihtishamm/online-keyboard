@@ -52,6 +52,11 @@ const ROMAN: readonly {
   { code: "skr", slug: "saraiki", lang: "skr", dir: "rtl", native: "رومن", language: "Saraiki" },
   { code: "bal", slug: "balochi", lang: "bal", dir: "rtl", native: "رومن", language: "Balochi" },
   { code: "ks", slug: "kashmiri", lang: "ks", dir: "rtl", native: "رومن", language: "Kashmiri" },
+  { code: "dv", slug: "dhivehi", lang: "dv", dir: "rtl", native: "ރޯމަން", language: "Dhivehi" },
+  { code: "ckb", slug: "sorani", lang: "ckb", dir: "rtl", native: "ڕۆمان", language: "Sorani" },
+  { code: "ug", slug: "uyghur", lang: "ug", dir: "rtl", native: "لاتىن", language: "Uyghur" },
+  { code: "prs", slug: "dari", lang: "prs", dir: "rtl", native: "رومن", language: "Dari" },
+  { code: "zlm", slug: "jawi", lang: "ms-Arab", dir: "rtl", native: "رومي", language: "Malay" },
 ];
 
 for (const r of ROMAN) {

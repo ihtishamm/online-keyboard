@@ -237,6 +237,66 @@ export function normalizeSinhala(raw: string): string | null {
   return checked(raw.normalize("NFC").replace(/\u200C/g, ""), SI_LETTERS);
 }
 
+/** Dhivehi: Thaana letters and vowel signs (fili). Every vowel is written, so nothing is dropped. */
+const DV_LETTERS = /^[ހ-ޱ]+$/u;
+export function normalizeDhivehi(raw: string): string | null {
+  return checked(raw.normalize("NFC").replace(/[\u200C\u200D]/g, ""), DV_LETTERS);
+}
+
+/**
+ * Sorani spells its vowels with letters (ە ێ ۆ) and tells ڕ ڵ from ر ل. Older text writes ە as
+ * ه and a ZWNJ, and the initial h as ھ: both become the forms the Central Kurdish keyboard types.
+ */
+const CKB_LETTERS = /^[ءآأؤإئابپتثجچحخدذرڕزژسشصضطظعغفڤقکگلڵمنهوۆیێە]+$/u;
+export function normalizeSorani(raw: string): string | null {
+  const w = arabicBase(raw)
+    .replace(/ه\u200C/g, "ە")
+    .replace(/[ةۀ]/g, "ە")
+    .replace(/ھ/g, "ه")
+    .replace(/[يى]/g, "ی")
+    .replace(/ك/g, "ک")
+    .replace(HARAKAT, "")
+    .replace(/\u200C/g, "");
+  return checked(w, CKB_LETTERS);
+}
+
+/**
+ * Uyghur writes every vowel, and keeps ى, ي, ك and ھ apart from their Persian look-alikes.
+ * Old text has ه for both ھ (inside a word) and ە (at its end).
+ */
+const UG_LETTERS = /^[ئابپتجچخدرزژسشغفقكگڭلمنھوۇۆۈۋېىيە]+$/u;
+export function normalizeUyghur(raw: string): string | null {
+  const w = arabicBase(raw)
+    .replace(/ی/g, "ي")
+    .replace(/ک/g, "ك")
+    .replace(/ة/g, "ە")
+    .replace(/ه(?=$|\u200C)/g, "ە")
+    .replace(/ه/g, "ھ")
+    .replace(HARAKAT, "")
+    .replace(/\u200C/g, "");
+  return checked(w, UG_LETTERS);
+}
+
+/** Dari is written like Farsi. */
+export const normalizeDari = normalizeFarsi;
+
+/**
+ * Malay in Jawi. Old text writes ga as ڬ or گ and ka as ك; the word list keeps one form of
+ * each, ݢ and ک, the ones the Jawi keyboard's G and K type, and one hamza, ء.
+ */
+const JAWI_LETTERS = /^[ءآأؤإئابةتثجچحخدذرزسشصضطظعغڠفڤقکݢلمنڽوۏهيى]+$/u;
+export function normalizeJawi(raw: string): string | null {
+  const w = arabicBase(raw)
+    .replace(/ی/g, "ي")
+    .replace(/ك/g, "ک")
+    .replace(/[ڬگ]/g, "ݢ")
+    .replace(/\u0674/g, "ء") // high hamza
+    .replace(/[ھہ]/g, "ه")
+    .replace(HARAKAT, "")
+    .replace(/\u200C/g, "");
+  return checked(w, JAWI_LETTERS);
+}
+
 /** Word normalisers by data code (Language.code). */
 export const WORD_NORMALIZERS: Readonly<Record<string, (raw: string) => string | null>> = {
   ur: normalizeUrdu,
@@ -265,4 +325,9 @@ export const WORD_NORMALIZERS: Readonly<Record<string, (raw: string) => string |
   sa: normalizeSanskrit,
   kok: normalizeKonkani,
   mai: normalizeMaithili,
+  dv: normalizeDhivehi,
+  ckb: normalizeSorani,
+  ug: normalizeUyghur,
+  prs: normalizeDari,
+  zlm: normalizeJawi,
 };

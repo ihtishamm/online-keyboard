@@ -39,6 +39,9 @@ const CURRENCY: Record<string, string> = {
   fa: "﷼",
   ps: "؋",
   ar: "﷼",
+  dv: "ރ",
+  prs: "؋",
+  ms: "RM",
 };
 const COMMON_CURRENCY = "€£¥";
 

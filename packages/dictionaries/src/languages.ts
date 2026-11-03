@@ -12,9 +12,12 @@ import {
   normalizeAssamese,
   normalizeBalochi,
   normalizeBangla,
+  normalizeDari,
+  normalizeDhivehi,
   normalizeFarsi,
   normalizeGujarati,
   normalizeHindi,
+  normalizeJawi,
   normalizeKannada,
   normalizeKashmiri,
   normalizeKonkani,
@@ -28,9 +31,11 @@ import {
   normalizeSanskrit,
   normalizeSindhi,
   normalizeSinhala,
+  normalizeSorani,
   normalizeTamil,
   normalizeTelugu,
   normalizeUrdu,
+  normalizeUyghur,
   urduPlus,
 } from "@okb/engine/normalize";
 import { LATIN_LOCALES, foldLatin, normalizeLatin } from "@okb/engine/latin";
@@ -185,6 +190,14 @@ export const TEXT_RULES: Readonly<Record<string, TextRules>> = {
   // are words here.
   kok: { ...indic("kok", "Devanagari", normalizeKonkani), wiki: "gomwiki" },
   mai: indic("mai", "Devanagari", normalizeMaithili),
+  dv: arabicScript("dv", "dvwiki", normalizeDhivehi, /\p{Script=Thaana}+/gu),
+  // A ZWNJ inside a word can stand for ە in older Sorani text (normalizeSorani).
+  ckb: arabicScript("ckb", "ckbwiki", normalizeSorani, ARABIC_RUN_ZWNJ),
+  ug: arabicScript("ug", "ugwiki", normalizeUyghur, ARABIC_RUN_ZWNJ),
+  // Dari has no Wikipedia (checked 2026-11-03): it shares Persian Wikipedia's word list.
+  prs: arabicScript("prs", "fawiki", normalizeDari, ARABIC_RUN_ZWNJ),
+  // No Jawi Wikipedia dump: src/import-jawi.ts builds the word list from Wiktionary spellings.
+  zlm: arabicScript("zlm", null, normalizeJawi),
   ...Object.fromEntries(Object.keys(LATIN_LOCALES).map((code) => [code, latin(code)])),
 };
 

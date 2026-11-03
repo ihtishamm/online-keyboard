@@ -1,0 +1,10 @@
+{
+  "source": "fawiki-latest-pages-articles.xml.bz2 (shared with Farsi)",
+  "pages": 210065,
+  "sentences": 3431584,
+  "repeatedSentencesSkipped": 635569,
+  "tokens": 61550143,
+  "distinctWords": 641479,
+  "wordsKept": 100000,
+  "nextWordHeads": 9997
+}

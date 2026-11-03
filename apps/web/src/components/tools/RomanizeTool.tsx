@@ -170,9 +170,11 @@ export default function RomanizeTool(props: RomanizeToolProps) {
       <p className="text-sm text-muted">
         {style === "chat"
           ? "Chat style spells words the way people text them. Words we have not seen are spelled letter by letter."
-          : table.kind === "indic"
-            ? "Scholarly style follows ISO 15919: every letter and vowel sign has its own spelling, so nothing is lost."
-            : "Scholarly style follows ALA-LC romanisation, letter by letter. Short vowels are only shown where the text marks them, because the script does not write them."}{" "}
+          : table.kind === "alphabet" || code === "dv"
+            ? "Scholarly style keeps every letter, with the accents of the language's Latin alphabet."
+            : table.kind === "indic"
+              ? "Scholarly style follows ISO 15919: every letter and vowel sign has its own spelling, so nothing is lost."
+              : "Scholarly style follows ALA-LC romanisation, letter by letter. Short vowels are only shown where the text marks them, because the script does not write them."}{" "}
         This changes the letters, not the meaning: it is not a translation.
       </p>
       <p aria-live="polite" className="sr-only">

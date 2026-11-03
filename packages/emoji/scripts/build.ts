@@ -31,12 +31,20 @@ const CLDR = "https://raw.githubusercontent.com/unicode-org/cldr/release-49/comm
 const MAX_VERSION = 15.0;
 
 /** CLDR files that fill the gaps in a language's own annotations (Shahmukhi's are incomplete). */
-const GAPS: Record<string, string[]> = { "pa-Arab": ["ur"], ks: ["ur"] };
+const GAPS: Record<string, string[]> = { "pa-Arab": ["ur"], ks: ["ur"], ug: ["en"] };
 /**
  * Languages CLDR doesn't annotate (or whose CLDR file is empty, as Sanskrit's and Maithili's
  * are) whose speakers read another language's keywords.
  */
-const FALLBACK: Record<string, string> = { skr: "ur", bal: "ur", ks: "ur", sa: "hi", mai: "hi" };
+const FALLBACK: Record<string, string> = {
+  skr: "ur",
+  bal: "ur",
+  ks: "ur",
+  sa: "hi",
+  mai: "hi",
+  prs: "fa",
+  "ms-Arab": "ms",
+};
 
 /** Every registry language's tag (language.json "lang"), sorted. */
 const tags = [

@@ -86,6 +86,31 @@ function NON_LATIN(): Record<string, TypingCopy> {
       test: "کٲشُر ٹایپنگ ٹیسٹ",
       tip: `ٲ, Kashmiri's own vowel letter, is on ${key("ks-phonetic", "ٲ")}.`,
     },
+    dv: {
+      tutor: "ދިވެހި ޓައިޕިންގ ޓިއުޓަރު",
+      test: "ދިވެހި ޓައިޕިންގ ޓެސްޓު",
+      tip: `Every consonant takes a vowel sign or a sukun: type the letter first, then the sign. The sukun \u07B0 is on ${key("dv-phonetic", "\u07B0")}, and alifu އ, the seat of a vowel with no consonant, on ${key("dv-phonetic", "އ")}.`,
+    },
+    ckb: {
+      tutor: "فێرکاری تایپی کوردی",
+      test: "تاقیکردنەوەی تایپی کوردی",
+      tip: `Sorani's own letters: ${on("ckb-standard", "ەێۆڕڵ")}.`,
+    },
+    ug: {
+      tutor: "ئۇيغۇرچە خەت بېسىش دەرسلىكى",
+      test: "ئۇيغۇرچە خەت بېسىش سىنىقى",
+      tip: `A word that begins with a vowel starts with ئ, on ${key("ug-standard", "ئ")}. Uyghur's own vowels: ${on("ug-standard", "ەېۇۆۈ")}.`,
+    },
+    prs: {
+      tutor: "آموزش تایپ دری",
+      test: "آزمون تایپ دری",
+      tip: `The letters Arabic lacks are ${on("prs-clra", "پچژگ")}. The half-space is on ${key("prs-clra", "\u200C")}.`,
+    },
+    zlm: {
+      tutor: "ڤلاجرن مناءيڤ جاوي",
+      test: "اوجين مناءيڤ جاوي",
+      tip: `Jawi's own letters: ${on("zlm-standard", "ݢڤچڽڠ")}.`,
+    },
     mr: {
       tutor: "मराठी टायपिंग ट्यूटर",
       test: "मराठी टायपिंग टेस्ट",

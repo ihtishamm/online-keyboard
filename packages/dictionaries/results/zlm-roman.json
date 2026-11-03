@@ -1,0 +1,10 @@
+{
+  "scheme": "zlm-roman",
+  "source": "English Wiktionary word pairs, in keyboard letters",
+  "pairs": 1000,
+  "top1": 0.904,
+  "top5": 0.945,
+  "messageWords": 69,
+  "correctionsPer10Words": 0.43,
+  "beta": true
+}

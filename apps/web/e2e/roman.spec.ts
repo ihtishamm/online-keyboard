@@ -5,7 +5,7 @@ import { ROMAN } from "../src/content/roman";
  * Every Roman (English letters) page converts its example (plan item 6.4): from the physical
  * keyboard, from our on-screen keys, and from the phone's own keyboard.
  */
-// [layout id, page, editor name]. Hindi, Bangla and the Wave 2 Indic languages open on Roman typing.
+// [layout id, page, editor name]. Hindi, Bangla, the Wave 2 Indic languages and Jawi open on Roman typing.
 const PAGES = (
   [
     ["ur-roman", "/urdu/roman", "Urdu"],
@@ -33,6 +33,11 @@ const PAGES = (
     ["sa-roman", "/sanskrit", "Sanskrit"],
     ["kok-roman", "/konkani", "Konkani"],
     ["mai-roman", "/maithili", "Maithili"],
+    ["dv-roman", "/dhivehi/roman", "Dhivehi"],
+    ["ckb-roman", "/sorani/roman", "Kurdish (Sorani)"],
+    ["ug-roman", "/uyghur/roman", "Uyghur"],
+    ["prs-roman", "/dari/roman", "Dari"],
+    ["zlm-roman", "/jawi", "Malay (Jawi)"],
   ] as const
 ).map(([id, path, name]) => ({
   path,

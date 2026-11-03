@@ -520,6 +520,93 @@ export const IMPORTS: readonly ImportSpec[] = [
       source: "Keyman Kashmiri Phonetic 1.0.2 by SIL Global (MIT).",
     },
   },
+  // Wave 2 (plan 9a): Dhivehi and the Arabic-script languages.
+  {
+    out: "dhivehi/phonetic.json",
+    from: { cldr: "cldr/dv-t-k0-windows.xml" },
+    meta: {
+      id: "dv-phonetic",
+      lang: "dv",
+      script: "Thaa",
+      dir: "rtl",
+      name: { en: "Phonetic", native: "ފޮނެޓިކް" },
+      source: `Windows "Divehi Phonetic", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "dhivehi/typewriter.json",
+    from: { cldr: "cldr/dv-t-k0-windows-legacy.xml" },
+    meta: {
+      id: "dv-typewriter",
+      lang: "dv",
+      script: "Thaa",
+      dir: "rtl",
+      name: { en: "Typewriter", native: "ޓައިޕްރައިޓަރު" },
+      source: `Windows "Divehi Typewriter", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "sorani/standard.json",
+    from: { cldr: "cldr/ckb-t-k0-windows.xml" },
+    meta: {
+      id: "ckb-standard",
+      lang: "ckb",
+      script: "Arab",
+      dir: "rtl",
+      name: { en: "Central Kurdish", native: "کوردیی ناوەندی" },
+      source: `Windows "Central Kurdish", from ${CLDR_NOTE}. Its Ctrl+Shift joiners (a browser shortcut) are left out: Shift+H types the ZWNJ.`,
+    },
+  },
+  {
+    out: "uyghur/standard.json",
+    from: { cldr: "cldr/ug-t-k0-windows.xml" },
+    meta: {
+      id: "ug-standard",
+      lang: "ug",
+      script: "Arab",
+      dir: "rtl",
+      name: { en: "Uyghur", native: "ئۇيغۇرچە" },
+      source: `Windows "Uyghur", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "dari/clra.json",
+    from: { keyman: "keyman/el_dari_clra/el_dari_clra.kmn" },
+    meta: {
+      id: "prs-clra",
+      lang: "prs",
+      script: "Arab",
+      dir: "rtl",
+      name: { en: "CLRA", native: "دری" },
+      source:
+        "Keyman Dari (CLRA) 1.1.1 by Enabling Languages (MIT). Shift+4 types the Afghani sign ؋, where upstream has a private-use character (U+E0B4) no font shows.",
+    },
+    patch: (keys) => set(keys, "Digit4", { s: "؋" }),
+  },
+  {
+    out: "jawi/standard.json",
+    from: { keyman: "keyman/malay_jawi/malay_jawi.kmn", usDefaults: true },
+    meta: {
+      id: "zlm-standard",
+      lang: "ms-Arab",
+      script: "Arab",
+      dir: "rtl",
+      name: { en: "Malay Jawi", native: "جاوي" },
+      source:
+        "Keyman Malay Jawi 1.0 by writingtradition (MIT). The number row types one set of digits (٠١٢٣٤٥٦٧٨٩): upstream mixes in ۰, ۴ and ۵, and repeats digits on Shift+4, 5 and 6, which type $, % and ^ here as on a US keyboard. K types ک and Shift+K types ك (swapped), the form Jawi dictionaries print. The quote key types ذ, the letter Malay uses, and AltGr+quote types upstream's ڎ; AltGr+A types آ and Shift+AltGr+A types أ, which upstream only composes from marks. Keys upstream leaves out keep their US characters.",
+    },
+    patch: (keys) => {
+      set(keys, "Digit0", { n: "٠" });
+      set(keys, "Digit4", { n: "٤" });
+      set(keys, "Digit5", { n: "٥" });
+      set(keys, "Digit4", { s: "$" });
+      set(keys, "Digit5", { s: "%" });
+      set(keys, "Digit6", { s: "^" });
+      set(keys, "KeyK", { n: "ک", s: "ك" });
+      set(keys, "Quote", { n: "ذ", ag: "ڎ" });
+      set(keys, "KeyA", { ag: "آ", sag: "أ" });
+    },
+  },
   ...LATIN_IMPORTS,
   ...WAVE1_IMPORTS,
   {

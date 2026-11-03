@@ -79,6 +79,10 @@ export function blocklists(): Map<string, string[]> {
     skr: arabicScript,
     ks: arabicScript,
     bal: arabicScript,
+    ckb: arabicScript,
+    ug: arabicScript,
+    prs: [...list("fa"), ...list("ar")],
+    zlm: arabicScript,
   };
 
   return new Map(

@@ -67,7 +67,7 @@ const BETWEEN = /^[ .,?!'·،؟۔।\u200C-]*$/u;
 const ARABIC_MARKS = /[\u064B-\u0652]/u;
 /** Tom and Mary as Tatoeba writes them in each script, and Arabic Tatoeba's Sami and Layla. */
 const NAMES =
-  /(?<![\p{L}\p{M}])(?:Tom|Mary|توم|تام|ٹوم|ٹام|ماري|ماری|مری|میری|سامي|ليلى|टॉम|मैरी|টম|মেরি)(?![\p{L}\p{M}])/u;
+  /(?<![\p{L}\p{M}])(?:Tom|Mary|تۆم|مێری|مارى|مەرى|توم|تام|ٹوم|ٹام|ماري|ماری|مری|میری|سامي|ليلى|टॉम|मैरी|টম|মেরি)(?![\p{L}\p{M}])/u;
 const MIN_WORDS = Number(args["min-words"]);
 const MIN_SENTENCES = 20;
 

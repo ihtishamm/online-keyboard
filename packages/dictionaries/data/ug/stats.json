@@ -1,0 +1,10 @@
+{
+  "source": "ugwiki-latest-pages-articles.xml.bz2",
+  "pages": 10658,
+  "sentences": 262748,
+  "repeatedSentencesSkipped": 30615,
+  "tokens": 3738602,
+  "distinctWords": 303759,
+  "wordsKept": 89217,
+  "nextWordHeads": 9187
+}

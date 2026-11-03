@@ -1,0 +1,24 @@
+{
+  "slug": "jawi",
+  "code": "zlm",
+  "order": 95,
+  "lang": "ms-Arab",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Malay (Jawi)",
+    "native": "جاوي"
+  },
+  "aliases": ["Jawi", "Malay Jawi", "Bahasa Melayu"],
+  "region": "southeast-asia",
+  "fonts": ["naskh"],
+  "layouts": ["zlm-roman", "zlm-standard"],
+  "sample": "بهاس ملايو بهاس ايبوندا ساي.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ms-Arab"
+  },
+  "tier": null,
+  "notes": "English letters (Rumi) first: most Malay speakers type Rumi, and few know a Jawi keyboard. Words come from Wiktionary's Jawi spellings, since no Jawi Wikipedia exists."
+}

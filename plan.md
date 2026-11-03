@@ -673,13 +673,23 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - **Engine:** layouts can now have context rules (`rules`), keys whose text depends on what is already typed. Tamil99 needs them for its vowel signs and automatic pulli. Rules only add text, so undo and Backspace work as before. The Keyman importer reads them when a layout asks (`contextRules`) and reports them otherwise, so no other layout changed.
     - **Changed from upstream:** the delinking அ (rule 6) adds nothing, where upstream adds an invisible ZWJ to the text. Upstream's rule 5 for ல reads ர்ல, a typo, so a third ல came out as ல்ல்ல and not ல்லல; fixed. Tests follow the published rules, 2 to 11.
     - **Not done:** the typing tutor, test and games leave Tamil99 out and use InScript. They teach one key per character, and on Tamil99 the next key depends on the text. On-screen keys keep showing the letter, as the standard's keytops do, even when the key will type a sign.
+  - **Batch 3 (done 2026-11-03): Dhivehi, Kurdish (Sorani), Uyghur, Dari, Malay (Jawi).**
+    - **Layouts:** CLDR Divehi Phonetic and Typewriter, Central Kurdish and Uyghur; Keyman Dari (CLRA, MIT) and Malay Jawi (MIT). A Roman scheme each. Jawi opens on Roman typing, as most Malay speakers type Rumi; the others open on their keyboards.
+    - **Changed from upstream:** Dari's Shift+4 types ؋, where upstream has a private-use character (U+E0B4; that it stood for ؋ is our reading). Jawi's number row has one set of digits, upstream mixed two; its quote key types ذ, which upstream could not type at all (it has ڎ, now on AltGr); K and Shift+K are swapped to ک and ك; آ and أ have keys.
+    - **Word lists:** Dhivehi 28k, Uyghur 89k and Sorani 100k words from each whole Wikipedia dump. Dari has no Wikipedia and shares Farsi's list and typing sentences. Jawi has no dump: 6,735 Wiktionary spellings ranked by Malay Wikipedia's use of the same word in Rumi (`src/import-jawi.ts`), so it is below the 20k Tier B bar.
+    - **Roman accuracy (top-1 / top-5, all Beta):** Uyghur 96.4 / 99.2, Dhivehi 96.1 / 98.3, Jawi 90.4 / 94.5, Dari 87.0 / 97.6, Sorani 80.7 / 91.8. **Do not compare these with Dakshina or Aksharantar scores.** Wiktionary pairs (`src/import-wiktionary.ts`) are dictionary spellings in keyboard letters, not chat from people, and Uyghur and Dhivehi write every vowel. Jawi's list comes from the same pairs. Dari's 169 pairs and everyone's held-out messages are ours, not reviewed by native speakers.
+    - **Engine:** a third kind of romanisation table, `alphabet`, for scripts that write every vowel (Uyghur, Sorani), as the Arabic one guesses short vowels and read ئ as y. Thaana's stops: އް doubles the next consonant (ރާއްޖެ raajje) or ends a word as h.
+    - **Typing:** Tatoeba sentences for Sorani and Uyghur (80 each). Dhivehi and Jawi have too few, so words only.
+    - **Emoji:** CLDR keywords for Uyghur, with English filling its 581 gaps. Dari uses Farsi's and Jawi uses Malay's (in Rumi). CLDR has nothing for Sorani or Dhivehi, so English search only.
+    - **Checks:** full e2e 651 passed, 241 skipped (iPhone off here). Of 5 failures: 2 were PDF checks in a `SKIP_PDFS` build, which pass on a real build (98 PDFs); 2 were a stray Uyghur alias that made "arabic" find two languages, fixed; 1 was Tamil99's first key lost on the mobile project under load, which then passed 10 of 10 alone. Those, and the 2 phone tests cut off by a time limit, were re-run and pass; the whole suite was not run again after the fix. Noto Naskh and Noto Sans Thaana cover every character the new layouts type.
+    - **Not done:** native-speaker review of all five. Spell check stays Beta and off, and its evaluation does not cover these five, as for batches 1 and 2.
   - [ ] **Languages:**
     - Indic: Punjabi (Gurmukhi), Marathi, Nepali, Gujarati, Tamil, Telugu, Kannada, Malayalam, Odia, Assamese, Sinhala, Sanskrit, Konkani, Maithili;
     - Dhivehi;
     - Arabic script: Kurdish (Sorani), Uyghur, Dari, Hindko, Brahui, Shina, Khowar, Malay (Jawi).
-  - [ ] **Roman typing:**
+  - [x] **Roman typing:**
     - The Dakshina languages (Gujarati, Kannada, Malayalam, Marathi, Punjabi, Sinhala, Tamil, Telugu) use Dakshina evaluation sets.
-    - Others use Aksharantar (licence split by data part; check, §8).
+    - Others use Aksharantar (licence split by data part; check, §8). Dhivehi, Sorani, Uyghur and Jawi, which Aksharantar lacks, use Wiktionary pairs (batch 3).
     - Page titles: "English to Tamil Typing" and so on.
   - [ ] **Standards:** InScript (CLDR), Tamil99, Nepali Traditional and Romanised, Sinhala Wijesekara, ITRANS and IAST for Sanskrit.
   - [ ] **Hindko, Brahui, Shina and Khowar:** only if an openly licensed layout exists, or we design one with a native speaker. Otherwise defer them and write down why.

@@ -1,0 +1,10 @@
+{
+  "source": "ckbwiki-latest-pages-articles.xml.bz2",
+  "pages": 85153,
+  "sentences": 648876,
+  "repeatedSentencesSkipped": 153709,
+  "tokens": 10961590,
+  "distinctWords": 527005,
+  "wordsKept": 100000,
+  "nextWordHeads": 9976
+}

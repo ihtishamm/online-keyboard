@@ -62,7 +62,11 @@ describe("suggestions from navigator.languages", () => {
   });
 
   it("ignores invalid tags", () => {
-    expect(suggestLanguages(LIST, ["not a tag", "fa-IR"]).map((l) => l.slug)).toEqual(["farsi"]);
+    // Dari's tag prs is an alias of fa-AF, so a Persian browser is offered both.
+    expect(suggestLanguages(LIST, ["not a tag", "fa-IR"]).map((l) => l.slug)).toEqual([
+      "farsi",
+      "dari",
+    ]);
   });
 });
 

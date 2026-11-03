@@ -1,0 +1,25 @@
+{
+  "slug": "uyghur",
+  "code": "ug",
+  "order": 93,
+  "lang": "ug",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Uyghur",
+    "native": "ئۇيغۇرچە"
+  },
+  "aliases": ["Uighur"],
+  "region": "central-asia",
+  "fonts": ["naskh"],
+  "layouts": ["ug-standard", "ug-roman"],
+  "sample": "ئۇيغۇرچە مېنىڭ ئانا تىلىم.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ug",
+    "bing": "ug"
+  },
+  "tier": null,
+  "notes": "The Arabic-based script (UEY). Roman typing follows the Latin alphabet ULY. No voice yet: the locale has not passed /voice-probe."
+}

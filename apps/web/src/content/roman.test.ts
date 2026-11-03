@@ -52,6 +52,11 @@ const QUOTED: [layoutId: string, roman: string, script: string][] = [
   ["kok-roman", "tum koso asa", "तूं कसो आसा"],
   ["kok-roman", "dev borem korum", "देव बरें करूं"],
   ["mai-roman", "aha kona chhi", "अहाँ कोना छी"],
+  ["dv-roman", "dhivehi", "ދިވެހި"],
+  ["ckb-roman", "silaw", "سڵاو"],
+  ["ug-roman", "yaxshi", "ياخشى"],
+  ["prs-roman", "tashakor", "تشکر"],
+  ["zlm-roman", "saya", "ساي"],
 ];
 
 describe("Roman page examples convert as shown", () => {

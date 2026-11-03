@@ -1,0 +1,234 @@
+{
+  "id": "ckb-standard",
+  "lang": "ckb",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Central Kurdish",
+    "native": "کوردیی ناوەندی"
+  },
+  "source": "Windows \"Central Kurdish\", from Unicode CLDR 43 keyboard data (Unicode License v3). Its Ctrl+Shift joiners (a browser shortcut) are left out: Shift+H types the ZWNJ.",
+  "keys": {
+    "Backquote": {
+      "n": "`",
+      "s": "~"
+    },
+    "Digit1": {
+      "n": "١",
+      "s": "!"
+    },
+    "Digit2": {
+      "n": "٢",
+      "s": "@"
+    },
+    "Digit3": {
+      "n": "٣",
+      "s": "#"
+    },
+    "Digit4": {
+      "n": "٤",
+      "s": "$"
+    },
+    "Digit5": {
+      "n": "٥",
+      "s": "٪"
+    },
+    "Digit6": {
+      "n": "٦",
+      "s": "^"
+    },
+    "Digit7": {
+      "n": "٧",
+      "s": "&"
+    },
+    "Digit8": {
+      "n": "٨",
+      "s": "*"
+    },
+    "Digit9": {
+      "n": "٩",
+      "s": ")"
+    },
+    "Digit0": {
+      "n": "٠",
+      "s": "("
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+"
+    },
+    "KeyQ": {
+      "n": "ق",
+      "s": "`"
+    },
+    "KeyW": {
+      "n": "و",
+      "s": "وو"
+    },
+    "KeyE": {
+      "n": "ە",
+      "s": "ي"
+    },
+    "KeyR": {
+      "n": "ر",
+      "s": "ڕ"
+    },
+    "KeyT": {
+      "n": "ت",
+      "s": "ط"
+    },
+    "KeyY": {
+      "n": "ی",
+      "s": "ێ"
+    },
+    "KeyU": {
+      "n": "ئ",
+      "s": "ء"
+    },
+    "KeyI": {
+      "n": "ح",
+      "s": "ع"
+    },
+    "KeyO": {
+      "n": "ۆ",
+      "s": "ؤ"
+    },
+    "KeyP": {
+      "n": "پ",
+      "s": "ث"
+    },
+    "BracketLeft": {
+      "n": "]",
+      "s": "}"
+    },
+    "BracketRight": {
+      "n": "[",
+      "s": "{"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyA": {
+      "n": "ا",
+      "s": "آ"
+    },
+    "KeyS": {
+      "n": "س",
+      "s": "ش"
+    },
+    "KeyD": {
+      "n": "د",
+      "s": "ذ"
+    },
+    "KeyF": {
+      "n": "ف",
+      "s": "إ"
+    },
+    "KeyG": {
+      "n": "گ",
+      "s": "غ"
+    },
+    "KeyH": {
+      "n": "ه",
+      "s": "\u200C"
+    },
+    "KeyJ": {
+      "n": "ژ",
+      "s": "أ"
+    },
+    "KeyK": {
+      "n": "ک",
+      "s": "ك"
+    },
+    "KeyL": {
+      "n": "ل",
+      "s": "ڵ"
+    },
+    "Semicolon": {
+      "n": "؛",
+      "s": ":"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "IntlBackslash": {
+      "n": "\\",
+      "s": "/"
+    },
+    "KeyZ": {
+      "n": "ز",
+      "s": "ض"
+    },
+    "KeyX": {
+      "n": "خ",
+      "s": "ص"
+    },
+    "KeyC": {
+      "n": "ج",
+      "s": "چ"
+    },
+    "KeyV": {
+      "n": "ڤ",
+      "s": "ظ"
+    },
+    "KeyB": {
+      "n": "ب",
+      "s": "ى"
+    },
+    "KeyN": {
+      "n": "ن",
+      "s": "ة"
+    },
+    "KeyM": {
+      "n": "م",
+      "s": "ـ"
+    },
+    "Comma": {
+      "n": "،",
+      "s": ">"
+    },
+    "Period": {
+      "n": ".",
+      "s": "<"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "؟"
+    }
+  },
+  "longpress": {
+    "Digit5": ["٪"],
+    "KeyW": ["وو"],
+    "KeyE": ["ي"],
+    "KeyR": ["ڕ"],
+    "KeyT": ["ط"],
+    "KeyY": ["ێ"],
+    "KeyU": ["ء"],
+    "KeyI": ["ع"],
+    "KeyO": ["ؤ"],
+    "KeyP": ["ث"],
+    "KeyA": ["آ"],
+    "KeyS": ["ش"],
+    "KeyD": ["ذ"],
+    "KeyF": ["إ"],
+    "KeyG": ["غ"],
+    "KeyH": ["\u200C"],
+    "KeyJ": ["أ"],
+    "KeyK": ["ك"],
+    "KeyL": ["ڵ"],
+    "KeyZ": ["ض"],
+    "KeyX": ["ص"],
+    "KeyC": ["چ"],
+    "KeyV": ["ظ"],
+    "KeyB": ["ى"],
+    "KeyN": ["ة"],
+    "KeyM": ["ـ"],
+    "Slash": ["؟"]
+  }
+}

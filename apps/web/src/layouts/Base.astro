@@ -37,6 +37,7 @@ interface Props {
     wikipedia?: { name: string; code: string };
     dakshina?: boolean;
     aksharantar?: boolean;
+    wiktionary?: boolean;
     tatoeba?: boolean;
   };
   /** Slug of the page's language, marked as current in the language picker. */
@@ -182,6 +183,12 @@ const arabicLogo = font === undefined || font === "nastaliq" || font === "naskh"
             <a class="underline" href={`https://${credits.wikipedia.code}.wikipedia.org/`}>
               {`${credits.wikipedia.name} Wikipedia`}
             </a>
+            {credits.wiktionary && " and spellings from "}
+            {credits.wiktionary && (
+              <a class="underline" href="https://en.wiktionary.org/">
+                English Wiktionary
+              </a>
+            )}
             {credits.dakshina && " and chat spellings from the "}
             {credits.dakshina && (
               <a class="underline" href="https://github.com/google-research-datasets/dakshina">

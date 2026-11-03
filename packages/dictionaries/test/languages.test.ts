@@ -32,6 +32,11 @@ const SLUG: Record<string, string> = {
   sa: "sanskrit",
   kok: "konkani",
   mai: "maithili",
+  dv: "dhivehi",
+  ckb: "sorani",
+  ug: "uyghur",
+  prs: "dari",
+  zlm: "jawi",
   es: "spanish",
   fr: "french",
   it: "italian",
@@ -125,6 +130,36 @@ describe("text rules", () => {
     expect(norm("kn", "ತెలుగు")).toBeNull(); // a Telugu letter inside
     expect(norm("gu", "ગુજરાતી")).toBe("ગુજરાતી");
     expect(norm("mr", "बाळ")).toBe("बाळ");
+  });
+
+  it("Dhivehi keeps its vowel signs; other scripts are not Dhivehi", () => {
+    expect(norm("dv", "ދިވެހި")).toBe("ދިވެހި");
+    expect(norm("dv", "دری")).toBeNull();
+  });
+
+  it("Sorani: old spellings become the letters its keyboard types", () => {
+    expect(norm("ckb", "کوردی")).toBe("کوردی");
+    expect(norm("ckb", "كوردي")).toBe("کوردی");
+    expect(norm("ckb", "زمانه\u200C")).toBe("زمانە");
+    expect(norm("ckb", "ھەولێر")).toBe("هەولێر");
+  });
+
+  it("Uyghur: keeps ى, ي and ك apart from the Persian letters, and sorts out ه", () => {
+    expect(norm("ug", "ئۇيغۇرچە")).toBe("ئۇيغۇرچە");
+    expect(norm("ug", "ئۇيغۇرچه")).toBe("ئۇيغۇرچە");
+    expect(norm("ug", "رەهمەت")).toBe("رەھمەت");
+    expect(norm("ug", "کىتاب")).toBe("كىتاب");
+  });
+
+  it("Dari is written as Farsi is", () => {
+    expect(norm("prs", "می\u200Cکنم")).toBe(norm("fa", "می\u200Cکنم"));
+  });
+
+  it("Jawi: one form each of ka and ga", () => {
+    expect(norm("zlm", "بهاس")).toBe("بهاس");
+    expect(norm("zlm", "كيت")).toBe("کيت");
+    expect(norm("zlm", "لاڬي")).toBe("لاݢي");
+    expect(norm("zlm", "لاگي")).toBe("لاݢي");
   });
 
   it("Wave 2 batch 2: Odia and Assamese words, Devanagari for Nepali, Sanskrit, Konkani, Maithili", () => {

@@ -39,6 +39,22 @@ import kashmiri from "../languages/kashmiri/language.json";
 import ksPhonetic from "../languages/kashmiri/phonetic.json";
 import ksRoman from "../languages/kashmiri/roman.json";
 import { KS_ROMAN } from "./translit/ks-roman";
+import sorani from "../languages/sorani/language.json";
+import ckbStandard from "../languages/sorani/standard.json";
+import ckbRoman from "../languages/sorani/roman.json";
+import { CKB_ROMAN } from "./translit/ckb-roman";
+import uyghur from "../languages/uyghur/language.json";
+import ugStandard from "../languages/uyghur/standard.json";
+import ugRoman from "../languages/uyghur/roman.json";
+import { UG_ROMAN } from "./translit/ug-roman";
+import dari from "../languages/dari/language.json";
+import prsClra from "../languages/dari/clra.json";
+import prsRoman from "../languages/dari/roman.json";
+import { PRS_ROMAN } from "./translit/prs-roman";
+import jawi from "../languages/jawi/language.json";
+import zlmRoman from "../languages/jawi/roman.json";
+import { ZLM_ROMAN } from "./translit/zlm-roman";
+import zlmStandard from "../languages/jawi/standard.json";
 import hindi from "../languages/hindi/language.json";
 import hiRoman from "../languages/hindi/roman.json";
 import { HI_ROMAN } from "./translit/hi-roman";
@@ -104,6 +120,11 @@ import maithili from "../languages/maithili/language.json";
 import maiRoman from "../languages/maithili/roman.json";
 import { MAI_ROMAN } from "./translit/mai-roman";
 import maiInscript from "../languages/maithili/inscript.json";
+import dhivehi from "../languages/dhivehi/language.json";
+import dvPhonetic from "../languages/dhivehi/phonetic.json";
+import dvTypewriter from "../languages/dhivehi/typewriter.json";
+import dvRoman from "../languages/dhivehi/roman.json";
+import { DV_ROMAN } from "./translit/dv-roman";
 import spanish from "../languages/spanish/language.json";
 import esEasy from "../languages/spanish/easy.json";
 import esSpain from "../languages/spanish/spain.json";
@@ -165,6 +186,10 @@ export const LANGUAGE_FILES = [
   saraiki,
   balochi,
   kashmiri,
+  sorani,
+  uyghur,
+  dari,
+  jawi,
   hindi,
   bangla,
   marathi,
@@ -181,6 +206,7 @@ export const LANGUAGE_FILES = [
   sanskrit,
   konkani,
   maithili,
+  dhivehi,
   spanish,
   french,
   italian,
@@ -218,6 +244,14 @@ export const RAW_LAYOUTS = [
   balRoman,
   ksPhonetic,
   ksRoman,
+  ckbStandard,
+  ckbRoman,
+  ugStandard,
+  ugRoman,
+  prsClra,
+  prsRoman,
+  zlmRoman,
+  zlmStandard,
   hiRoman,
   hiInscript,
   bnRoman,
@@ -251,6 +285,9 @@ export const RAW_LAYOUTS = [
   kokInscript,
   maiRoman,
   maiInscript,
+  dvPhonetic,
+  dvTypewriter,
+  dvRoman,
   esEasy,
   esSpain,
   esLatam,
@@ -299,6 +336,10 @@ export const SCHEME_LIST: readonly TranslitScheme[] = [
   SKR_ROMAN,
   BAL_ROMAN,
   KS_ROMAN,
+  CKB_ROMAN,
+  UG_ROMAN,
+  PRS_ROMAN,
+  ZLM_ROMAN,
   HI_ROMAN,
   BN_ROMAN,
   MR_ROMAN,
@@ -315,6 +356,7 @@ export const SCHEME_LIST: readonly TranslitScheme[] = [
   SA_ROMAN,
   KOK_ROMAN,
   MAI_ROMAN,
+  DV_ROMAN,
 ];
 
 export {
@@ -327,6 +369,10 @@ export {
   SKR_ROMAN,
   BAL_ROMAN,
   KS_ROMAN,
+  CKB_ROMAN,
+  UG_ROMAN,
+  PRS_ROMAN,
+  ZLM_ROMAN,
   HI_ROMAN,
   BN_ROMAN,
   MR_ROMAN,
@@ -343,4 +389,5 @@ export {
   SA_ROMAN,
   KOK_ROMAN,
   MAI_ROMAN,
+  DV_ROMAN,
 };

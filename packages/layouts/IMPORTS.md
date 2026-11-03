@@ -295,6 +295,73 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
 - **Skipped:** nothing
 - **Our changes:** none
 
+## dv-phonetic
+
+- **Output:** `languages/dhivehi/phonetic.json`
+- **Source:** `vendor/cldr/dv-t-k0-windows.xml`. Windows "Divehi Phonetic", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 6)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## dv-typewriter
+
+- **Output:** `languages/dhivehi/typewriter.json`
+- **Source:** `vendor/cldr/dv-t-k0-windows-legacy.xml`. Windows "Divehi Typewriter", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 6)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## ckb-standard
+
+- **Output:** `languages/sorani/standard.json`
+- **Source:** `vendor/cldr/ckb-t-k0-windows.xml`. Windows "Central Kurdish", from Unicode CLDR 43 keyboard data (Unicode License v3). Its Ctrl+Shift joiners (a browser shortcut) are left out: Shift+H types the ZWNJ.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## ug-standard
+
+- **Output:** `languages/uyghur/standard.json`
+- **Source:** `vendor/cldr/ug-t-k0-windows.xml`. Windows "Uyghur", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 47 keys (n 47, s 28)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## prs-clra
+
+- **Output:** `languages/dari/clra.json`
+- **Source:** `vendor/keyman/el_dari_clra/el_dari_clra.kmn`. Keyman Dari (CLRA) 1.1.1 by Enabling Languages (MIT). Shift+4 types the Afghani sign ؋, where upstream has a private-use character (U+E0B4) no font shows.
+- **Licence:** MIT, Enabling Languages (vendor/keyman/el_dari_clra/LICENSE.md)
+- **Coverage:** 48 keys (n 48, s 48, ag 46)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit4.s: `` → `؋`
+
+## zlm-standard
+
+- **Output:** `languages/jawi/standard.json`
+- **Source:** `vendor/keyman/malay_jawi/malay_jawi.kmn`. Keyman Malay Jawi 1.0 by writingtradition (MIT). The number row types one set of digits (٠١٢٣٤٥٦٧٨٩): upstream mixes in ۰, ۴ and ۵, and repeats digits on Shift+4, 5 and 6, which type $, % and ^ here as on a US keyboard. K types ک and Shift+K types ك (swapped), the form Jawi dictionaries print. The quote key types ذ, the letter Malay uses, and AltGr+quote types upstream's ڎ; AltGr+A types آ and Shift+AltGr+A types أ, which upstream only composes from marks. Keys upstream leaves out keep their US characters.
+- **Licence:** MIT, writingtradition (vendor/keyman/malay_jawi/LICENSE.md)
+- **Coverage:** 47 keys (n 47, s 47, ag 2, sag 1)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Quote.n: `ڎ` → `ذ`
+  - Quote.ag: none → `ڎ`
+  - Digit0.n: `۰` → `٠`
+  - Digit5.n: `۵` → `٥`
+  - Digit5.s: `٥` → `%`
+  - Digit4.n: `۴` → `٤`
+  - Digit4.s: `٤` → `$`
+  - Digit6.s: `۶` → `^`
+  - KeyA.ag: none → `آ`
+  - KeyA.sag: none → `أ`
+  - KeyK.n: `ك` → `ک`
+  - KeyK.s: `ک` → `ك`
+
 ## es-easy
 
 - **Output:** `languages/spanish/easy.json`

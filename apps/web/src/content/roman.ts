@@ -490,6 +490,108 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
     ],
   },
 
+  "dv-roman": {
+    page: {
+      title: "English to Dhivehi Typing: Type Dhivehi in English Letters Online",
+      heading: "English to Dhivehi Typing",
+      description:
+        "Type Dhivehi in English letters and get Thaana as you go: dhivehi becomes ދިވެހި. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Dhivehi in Malé Latin, the way it appears on signs and in names. Each word turns into Thaana when you press Space, and the bar under the editor offers other spellings.",
+      bestFor: "Anyone who writes Dhivehi in English letters and wants it in Thaana.",
+    },
+    example: ["dhivehi", "ދިވެހި"],
+    guide: [
+      { roman: "th, dh", script: "ތ  ދ", examples: [["dhuvas", "ދުވަސް"]] },
+      { roman: "lh, sh", script: "ޅ  ށ", examples: [["ragalhu", "ރަގަޅު"]] },
+      { roman: "aa, ee, oo", script: "\u07A7  \u07A9  \u07AB", examples: [["raajje", "ރާއްޖެ"]] },
+      { roman: "h (at the end)", script: "ށް  އް", examples: [["varah", "ވަރަށް"]] },
+    ],
+  },
+
+  "ckb-roman": {
+    page: {
+      title: "English to Kurdish Typing: Type Sorani in English Letters Online",
+      heading: "English to Kurdish (Sorani) Typing",
+      description:
+        "Type Sorani Kurdish in English letters and get Kurdish script as you go: supas becomes سوپاس. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Sorani the way you text it in English letters. Each word turns into Kurdish script when you press Space, and the bar under the editor offers other spellings. Type rr for ڕ, ll for ڵ, ee for ێ and oo for وو when you want to be sure.",
+      bestFor: "Anyone who chats in Kurdish with English letters and wants proper Sorani script.",
+    },
+    example: ["supas", "سوپاس"],
+    guide: [
+      { roman: "sh, ch, zh", script: "ش  چ  ژ", examples: [["bash", "باش"]] },
+      { roman: "rr, ll", script: "ڕ  ڵ", examples: [["silaw", "سڵاو"]] },
+      { roman: "e", script: "ە", examples: [["be", "بە"]] },
+      { roman: "o", script: "ۆ", examples: [["zor", "زۆر"]] },
+    ],
+  },
+
+  "ug-roman": {
+    page: {
+      title: "English to Uyghur Typing: Type Uyghur in English Letters Online",
+      heading: "English to Uyghur Typing",
+      description:
+        "Type Uyghur in Latin letters and get the Arabic-based script as you go: yaxshi becomes ياخشى. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Uyghur in the Latin alphabet ULY. Each word turns into the Arabic-based script when you press Space, and the bar under the editor offers other spellings. Type ö, ü and é as o, u and e.",
+      bestFor: "Anyone who knows Latin Uyghur and wants to write in the Arabic-based script.",
+    },
+    example: ["yaxshi", "ياخشى"],
+    guide: [
+      { roman: "ch, sh, zh", script: "چ  ش  ژ", examples: [["uchun", "ئۈچۈن"]] },
+      { roman: "gh, ng", script: "غ  ڭ", examples: [["uyghur", "ئۇيغۇر"]] },
+      { roman: "x, q", script: "خ  ق", examples: [["yaxshi", "ياخشى"]] },
+      { roman: "w", script: "ۋ", examples: [["we", "ۋە"]] },
+    ],
+  },
+
+  "prs-roman": {
+    page: {
+      title: "English to Dari Typing: Type Dari in English Letters Online",
+      heading: "English to Dari Typing",
+      description:
+        "Type Dari in English letters (salam, tashakor) and get Dari script with the right half-spaces as you go. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Dari the way you text it in English letters. Each word turns into Dari script when you press Space, and the bar under the editor offers other spellings. Verb prefixes get their half-space (ZWNJ) on their own.",
+      bestFor: "Anyone who chats in Dari with English letters and wants proper Dari script.",
+    },
+    example: ["salam", "سلام"],
+    guide: [
+      {
+        roman: "kh, sh, ch",
+        script: "خ  ش  چ",
+        examples: [
+          ["khob", "خوب"],
+          ["tashakor", "تشکر"],
+        ],
+      },
+      { roman: "mi-, me-", script: "می\u200C", examples: [["mikonam", "می\u200Cکنم"]] },
+      { roman: "aa, a", script: "ا", examples: [["kabul", "کابل"]] },
+    ],
+  },
+
+  "zlm-roman": {
+    page: {
+      title: "Rumi to Jawi Typing: Type Malay in English Letters and Get Jawi",
+      heading: "Rumi to Jawi",
+      description:
+        "Type Malay in Rumi and get Jawi as you go: bahasa becomes بهاس. Free, private and offline, with word suggestions.",
+      summary:
+        "Write Malay in Rumi as you always do. Each word turns into Jawi when you press Space, and the bar under the editor offers other spellings, since Jawi spelling is set word by word.",
+      bestFor:
+        "Anyone who reads Rumi and wants to write Malay in Jawi without learning a keyboard.",
+    },
+    example: ["bahasa", "بهاس"],
+    guide: [
+      { roman: "ng, ny", script: "ڠ  ڽ", examples: [["yang", "يڠ"]] },
+      { roman: "p, g", script: "ڤ  ݢ", examples: [["apa", "اڤ"]] },
+      { roman: "c", script: "چ", examples: [["cinta", "چينتا"]] },
+      { roman: "k (at the end)", script: "ق", examples: [["tidak", "تيدق"]] },
+    ],
+  },
+
   "hi-roman": {
     page: {
       title: "English to Hindi Typing: Type Hindi in English Letters Online",

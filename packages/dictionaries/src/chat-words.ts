@@ -32,6 +32,11 @@ const SOURCES: Readonly<Record<string, { file: string; credit: string }>> = {
   mai: { file: "mai-roman-dev.tsv", credit: "AI4Bharat Aksharantar, CC BY" },
   ar: { file: "ar-roman-dev.tsv", credit: "Likho Arabic dev set" },
   fa: { file: "fa-roman-dev.tsv", credit: "Likho Persian dev set" },
+  prs: { file: "fa-roman-dev.tsv", credit: "Likho Persian dev set" },
+  dv: { file: "dv-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  ckb: { file: "ckb-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  ug: { file: "ug-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  zlm: { file: "zlm-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
 };
 
 for (const [code, { file, credit }] of Object.entries(SOURCES)) {

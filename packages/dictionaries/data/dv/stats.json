@@ -1,0 +1,10 @@
+{
+  "source": "dvwiki-latest-pages-articles.xml.bz2",
+  "pages": 4621,
+  "sentences": 74803,
+  "repeatedSentencesSkipped": 13617,
+  "tokens": 717087,
+  "distinctWords": 107311,
+  "wordsKept": 28440,
+  "nextWordHeads": 5820
+}

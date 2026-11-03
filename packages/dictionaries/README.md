@@ -17,6 +17,9 @@ dumps, downloaded in October 2026; Urdu's source is described below):
 | `pnb` | Western Punjabi | 76,471  | 32.2M      | 100,000    | 40,000                 |
 | `skr` | Saraiki         | 25,059  | 8.9M       | 70,705     | 40,000                 |
 | `ks`  | Kashmiri        | 11,837  | 0.9M       | 21,396     | 21,396                 |
+| `ckb` | Central Kurdish | 85,153  | 11.0M      | 100,000    | 40,000                 |
+| `ug`  | Uyghur          | 10,658  | 3.7M       | 89,217     | 40,000                 |
+| `dv`  | Dhivehi         | 4,621   | 0.7M       | 28,440     | 28,440                 |
 | `hi`  | Hindi           | 175,824 | 45.1M      | 100,000    | 35,000                 |
 | `bn`  | Bengali         | 192,129 | 68.8M      | 100,000    | 35,000                 |
 | `es`  | Spanish         | 3,835   | 13.4M      | 100,000    | 40,000 + 10,500 accent |
@@ -51,6 +54,18 @@ Every 50th article is held out for the smart-accent test (`test/data/<code>-held
 
 Balochi has no Wikipedia: its Roman typing runs on rules alone, and it has no suggestions or
 spell check yet.
+
+Two Wave 2 languages have no Wikipedia of their own:
+
+- **Dari** (`prs`) shares Farsi's files, from Persian Wikipedia: the same letters, but Iranian
+  usage, so some Afghan words (پوهنتون, موتر) rank low or are missing. Its typing sentences are
+  Farsi's too; Tatoeba has no Dari.
+- **Malay in Jawi** (`zlm`) has no Jawi dump. `src/import-jawi.ts` takes 6,735 spellings from
+  English Wiktionary (CC BY-SA 4.0, through kaikki.org) and ranks them by how often the first
+  60 MB of Malay Wikipedia uses the same word in Rumi; reading that text through the pairs gives
+  the next-word table. Wiktionary lists headwords, so most words with me-, ber- or -kan are
+  missing and Roman typing spells them by rules. No typing sentences: Tatoeba has too few in
+  Jawi, and Dhivehi too few at all, so both typing tests have words only.
 
 Files per language:
 
@@ -111,6 +126,13 @@ Large Wikipedias come in parts: pass them comma-separated to `--dump`. The build
   - Dakshina's word samples reach into rare words: only about half the Hindi test words are
     among the 35,000 shipped, which caps accuracy there.
   - Arabic and Persian chat is colloquial, and the Wikipedia lists are formal.
+  - Dhivehi, Sorani, Uyghur and Jawi are scored on English Wiktionary's word pairs, put into
+    English keyboard letters by `src/import-wiktionary.ts`. These are spellings from each
+    language's Latin alphabet, not chat collected from people, so they read higher than the
+    Dakshina and Aksharantar scores and the two should not be compared. Jawi's word list comes
+    from the same pairs, so its score says how well listed words are found, not how many are
+    listed. Their held-out messages, and all of Dari's set, were written for this project and
+    are not reviewed by native speakers.
   - The Arabic, Persian, Pashto, Shahmukhi, Saraiki, Balochi and Kashmiri sets were written
     for this project and are not yet reviewed by native speakers. Pashto, Shahmukhi,
     Saraiki, Balochi and Kashmiri have fewer than the planned 300 pairs; the site says so.

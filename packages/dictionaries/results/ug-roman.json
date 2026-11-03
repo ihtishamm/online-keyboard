@@ -1,0 +1,10 @@
+{
+  "scheme": "ug-roman",
+  "source": "English Wiktionary word pairs, in keyboard letters",
+  "pairs": 1000,
+  "top1": 0.964,
+  "top5": 0.992,
+  "messageWords": 61,
+  "correctionsPer10Words": 0.33,
+  "beta": true
+}

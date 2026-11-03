@@ -36,6 +36,7 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
   ta: () => import("../data/ta.json"),
   te: () => import("../data/te.json"),
   tr: () => import("../data/tr.json"),
+  ug: () => import("../data/ug.json"),
   ur: () => import("../data/ur.json"),
 };
 
@@ -46,10 +47,12 @@ export const ALIASES: Readonly<Record<string, string>> = {
   ks: "ur",
   sa: "hi",
   mai: "hi",
+  prs: "fa",
+  "ms-Arab": "ms",
 };
 
 /** Registry languages with no CLDR keywords: their emoji search is in English. */
-export const NOT_ANNOTATED: readonly string[] = [];
+export const NOT_ANNOTATED: readonly string[] = ["ckb", "dv"];
 
 /** Every registry language this file was generated for. */
 export const LANGUAGE_TAGS: readonly string[] = [
@@ -58,8 +61,10 @@ export const LANGUAGE_TAGS: readonly string[] = [
   "bal",
   "bn",
   "ca",
+  "ckb",
   "cs",
   "de",
+  "dv",
   "es",
   "fa",
   "fr",
@@ -74,12 +79,14 @@ export const LANGUAGE_TAGS: readonly string[] = [
   "mai",
   "ml",
   "mr",
+  "ms-Arab",
   "ne",
   "nl",
   "or",
   "pa",
   "pa-Arab",
   "pl",
+  "prs",
   "ps",
   "pt",
   "ro",
@@ -91,5 +98,6 @@ export const LANGUAGE_TAGS: readonly string[] = [
   "ta",
   "te",
   "tr",
+  "ug",
   "ur",
 ];

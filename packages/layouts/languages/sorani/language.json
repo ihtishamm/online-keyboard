@@ -1,0 +1,25 @@
+{
+  "slug": "sorani",
+  "code": "ckb",
+  "order": 92,
+  "lang": "ckb",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Kurdish (Sorani)",
+    "native": "کوردی"
+  },
+  "aliases": ["Sorani", "Central Kurdish", "Kurdish"],
+  "region": "middle-east",
+  "fonts": ["naskh"],
+  "layouts": ["ckb-standard", "ckb-roman"],
+  "sample": "کوردی زمانی دایکی منە.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ckb",
+    "bing": "ku"
+  },
+  "tier": null,
+  "notes": "Sorani only: Kurmanji is written in Latin letters and has its own place in Wave 4. No voice yet: the locale has not passed /voice-probe."
+}

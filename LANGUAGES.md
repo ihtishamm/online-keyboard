@@ -14,6 +14,10 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Saraiki (/saraiki) | Arab | B | yes | yes | 71 % (Beta) | no | native-speaker review |
 | Balochi (/balochi) | Arab | C | no | no | 53.1 % (Beta) | no | word list of 20k+ words; spell check meets its targets |
 | Kashmiri (/kashmiri) | Arab | C | yes | Beta | 61.7 % (Beta) | no | spell check meets its targets; typing test with words and sentences |
+| Kurdish (Sorani) (/sorani) | Arab | C | yes | Beta | 80.7 % (Beta) | no | spell check meets its targets |
+| Uyghur (/uyghur) | Arab | C | yes | Beta | 96.4 % (Beta) | no | spell check meets its targets |
+| Dari (/dari) | Arab | C | yes | Beta | 87 % (Beta) | no | spell check meets its targets |
+| Malay (Jawi) (/jawi) | Arab | C | yes | Beta | 90.4 % (Beta) | no | word list of 20k+ words; spell check meets its targets; typing test with words and sentences |
 | Hindi (/hindi) | Deva | C | yes | Beta | 42.5 % (Beta) | hi-IN | spell check meets its targets |
 | Bangla (/bangla) | Beng | C | yes | Beta | 39.4 % (Beta) | bn-BD, bn-IN | spell check meets its targets |
 | Marathi (/marathi) | Deva | C | yes | Beta | 42.5 % (Beta) | no | spell check meets its targets |
@@ -30,6 +34,7 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Sanskrit (/sanskrit) | Deva | C | yes | Beta | 50 % (Beta) | no | spell check meets its targets |
 | Konkani (/konkani) | Deva | C | yes | Beta | 48 % (Beta) | no | spell check meets its targets; typing test with words and sentences |
 | Maithili (/maithili) | Deva | C | yes | Beta | 48.7 % (Beta) | no | spell check meets its targets; typing test with words and sentences |
+| Dhivehi (/dhivehi) | Thaa | C | yes | Beta | 96.1 % (Beta) | no | spell check meets its targets; typing test with words and sentences |
 | Spanish (/spanish) | Latn | B | yes | yes | – | es-ES, es-MX, es-US, es-AR, es-CO | native-speaker review |
 | French (/french) | Latn | B | yes | yes | – | fr-FR, fr-CA, fr-BE, fr-CH | native-speaker review |
 | Italian (/italian) | Latn | C | yes | Beta | – | it-IT, it-CH | spell check meets its targets |

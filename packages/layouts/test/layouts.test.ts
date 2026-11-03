@@ -169,6 +169,12 @@ const ALPHABETS: Record<string, string> = {
   "sa-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
   "kok-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळ",
   "mai-inscript": "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
+  "dv-phonetic": "ހށނރބޅކއވމފދތލގޏސޑޒޓޔޕޖޗަާިީުޫެޭޮޯް",
+  "dv-typewriter": "ހށނރބޅކއވމފދތލގޏސޑޒޓޔޕޖޗަާިީުޫެޭޮޯް",
+  "ckb-standard": "ئابپتجچحخدرڕزژسشعغفڤقکگلڵمنهوۆیێە",
+  "ug-standard": "ئابپتجچخدرزژسشغفقكگڭلمنھوۇۆۈۋېىيە",
+  "prs-clra": "آابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیءئ\u200C؋",
+  "zlm-standard": "ابتثجچحخدذرزسشصضطظعغڠفڤقکݢلمنڽوۏهيء",
 };
 
 /** Golden words typed on a US keyboard. */
@@ -197,6 +203,11 @@ const GOLDEN: [layoutId: string, keys: string, expected: string][] = [
   ["sa-inscript", "mxmdk=lcd", "संस्कृतम्"],
   ["kok-inscript", "kaxkCr", "कोंकणी"],
   ["mai-inscript", "cwLfnr", "मैथिली"],
+  ["dv-phonetic", "divehi", "ދިވެހި"],
+  ["ckb-standard", "kwrdy", "کوردی"],
+  ["ug-standard", "/uycur", "ئۇيغۇر"],
+  ["prs-clra", "sghl", "سلام"],
+  ["zlm-standard", "bhas", "بهاس"],
 ];
 
 describe("regional language pack", () => {

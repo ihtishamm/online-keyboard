@@ -6,6 +6,7 @@ import {
   DEVANAGARI,
   GUJARATI,
   GURMUKHI,
+  JAWI_SCRIPT,
   KANNADA,
   KASHMIRI_SCRIPT,
   MALAYALAM,
@@ -17,9 +18,12 @@ import {
   SHAHMUKHI_SCRIPT,
   SINDHI_SCRIPT,
   SINHALA,
+  SORANI,
   TAMIL,
   TELUGU,
+  THAANA,
   URDU_SCRIPT,
+  UYGHUR,
   type RomanTable,
 } from "@okb/engine/romanize";
 
@@ -50,6 +54,11 @@ export const ROMAN_TABLES: Readonly<Record<string, RomanTable>> = {
   sa: SANSKRIT,
   kok: DEVANAGARI,
   mai: DEVANAGARI,
+  dv: THAANA,
+  ckb: SORANI,
+  ug: UYGHUR,
+  prs: PERSIAN_SCRIPT,
+  zlm: JAWI_SCRIPT,
 };
 
 /** The scheme's own common words, reversed: its first Roman spelling of each. */

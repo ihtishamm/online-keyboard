@@ -40,6 +40,8 @@ const DAKSHINA = "Dakshina test split";
 /** Aksharantar's frequent words (AK-Freq); its named entities are left out. */
 const AKSHARANTAR = "Aksharantar test split (frequent words)";
 const OURS = "Likho set, not yet reviewed by a native speaker";
+/** Wiktionary's Roman spellings in keyboard letters (src/import-wiktionary.ts), not chat spelling. */
+const WIKTIONARY = "English Wiktionary word pairs, in keyboard letters";
 export const TARGETS: readonly Target[] = [
   // Urdu's set predates the dev/test split; the README notes the rules were tuned on it.
   {
@@ -79,6 +81,12 @@ export const TARGETS: readonly Target[] = [
   { code: "skr", scheme: "skr-roman", source: OURS, ...SMALL, beta: true, minPairs: 120 },
   { code: "bal", scheme: "bal-roman", source: OURS, ...SMALL, beta: true, minPairs: 80 },
   { code: "ks", scheme: "ks-roman", source: OURS, ...SMALL, beta: true, minPairs: 80 },
+  { code: "dv", scheme: "dv-roman", source: WIKTIONARY, ...FULL, beta: true },
+  { code: "ckb", scheme: "ckb-roman", source: WIKTIONARY, ...FULL, beta: true },
+  { code: "ug", scheme: "ug-roman", source: WIKTIONARY, ...FULL, beta: true },
+  { code: "zlm", scheme: "zlm-roman", source: WIKTIONARY, ...FULL, beta: true },
+  // Dari shares Farsi's word list; no public Dari set was found, so this one is ours.
+  { code: "prs", scheme: "prs-roman", source: OURS, ...FULL, beta: true, minPairs: 150 },
 ];
 
 const data = (name: string) => new URL(`./data/${name}`, import.meta.url);

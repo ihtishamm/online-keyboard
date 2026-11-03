@@ -1,0 +1,25 @@
+{
+  "slug": "dhivehi",
+  "code": "dv",
+  "order": 197,
+  "lang": "dv",
+  "script": "Thaa",
+  "dir": "rtl",
+  "name": {
+    "en": "Dhivehi",
+    "native": "ދިވެހި"
+  },
+  "aliases": ["Divehi", "Maldivian"],
+  "region": "south-asia",
+  "fonts": ["thaana"],
+  "layouts": ["dv-phonetic", "dv-typewriter", "dv-roman"],
+  "sample": "ދިވެހި އަހަރެންގެ މާދަރީ ބަހެވެ.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "dv",
+    "bing": "dv"
+  },
+  "tier": null,
+  "notes": "The Dhivehi keyboards first: Thaana writes every vowel, so Roman spellings map closely. No voice yet: the locale has not passed /voice-probe."
+}

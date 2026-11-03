@@ -43,6 +43,13 @@ export interface IndicTable {
    * Telugu నమస్కారం is "namaskaram".
    */
   finalMarks?: Readonly<Record<string, Pair>>;
+  /**
+   * Thaana's stop: this letter and the virama double the consonant after them (ރާއްޖެ raajje).
+   * With nothing after them, `beforeVirama` spells them.
+   */
+  doublingStop?: string;
+  /** Consonants a virama respells: Thaana's final ށް and އް are both "h" in Malé Latin. */
+  beforeVirama?: Readonly<Record<string, Pair>>;
 }
 
 export interface ArabicTable {
@@ -52,7 +59,20 @@ export interface ArabicTable {
   medialAlef?: string;
 }
 
-export type RomanTable = IndicTable | ArabicTable;
+/**
+ * Arabic-based alphabets that write every vowel (Uyghur, Sorani): nothing has to be guessed, so
+ * each letter is spelled as it stands, except the letters that can be a consonant or a vowel.
+ */
+export interface AlphabetTable {
+  kind: "alphabet";
+  letters: Readonly<Record<string, Pair>>;
+  /** Letters read as [consonant, vowel]: the consonant beside a vowel, the vowel between consonants. */
+  glides?: Readonly<Record<string, readonly [Pair, Pair]>>;
+  /** Letter pairs spelled as one sound (Sorani وو). */
+  pairs?: Readonly<Record<string, Pair>>;
+}
+
+export type RomanTable = IndicTable | ArabicTable | AlphabetTable;
 
 const p = (chat: string, scholarly = chat): Pair => [chat, scholarly];
 
@@ -610,6 +630,189 @@ export const KASHMIRI_SCRIPT: ArabicTable = {
   consonants: { ...URDU_LETTERS, ژ: p("ts") },
 };
 
+/** Malay in Jawi: the Arabic letters and Jawi's own. Spellings are guessed; known words are not. */
+export const JAWI_SCRIPT: ArabicTable = {
+  kind: "arabic",
+  consonants: {
+    ...URDU_LETTERS,
+    چ: p("c"),
+    ش: p("sy", "sy"),
+    ق: p("k", "q"),
+    ک: p("k"),
+    ك: p("k"),
+    ڠ: p("ng"),
+    ڽ: p("ny"),
+    ڤ: p("p"),
+    ݢ: p("g"),
+    ۏ: p("v"),
+    غ: p("gh"),
+    ذ: p("z", "dz"),
+    ث: p("s", "th"),
+    ء: p("", "ʼ"),
+  },
+};
+
+/** Sorani, in the Kurdish Latin alphabet (Hawar) for scholars and its keyboard letters for chat. */
+export const SORANI: AlphabetTable = {
+  kind: "alphabet",
+  letters: {
+    ئ: p("", ""),
+    ا: p("a"),
+    آ: p("a", "â"),
+    ب: p("b"),
+    پ: p("p"),
+    ت: p("t"),
+    ث: p("s", "s̱"),
+    ج: p("j", "c"),
+    چ: p("ch", "ç"),
+    ح: p("h", "ḧ"),
+    خ: p("kh", "x"),
+    د: p("d"),
+    ذ: p("z", "ẕ"),
+    ر: p("r"),
+    ڕ: p("rr", "ř"),
+    ز: p("z"),
+    ژ: p("zh", "j"),
+    س: p("s"),
+    ش: p("sh", "ş"),
+    ص: p("s", "ṣ"),
+    ض: p("z", "ẓ"),
+    ط: p("t", "ṭ"),
+    ظ: p("z", "z̤"),
+    ع: p("'", "'"),
+    غ: p("gh", "ẍ"),
+    ف: p("f"),
+    ڤ: p("v"),
+    ق: p("q"),
+    ک: p("k"),
+    گ: p("g"),
+    ل: p("l"),
+    ڵ: p("ll", "ł"),
+    م: p("m"),
+    ن: p("n"),
+    ه: p("h"),
+    ە: p("e"),
+    ێ: p("e", "ê"),
+    ۆ: p("o"),
+    ء: p("", "'"),
+    أ: p("e", "e"),
+    إ: p("i", "i"),
+    ؤ: p("o", "o"),
+  },
+  glides: {
+    و: [p("w"), p("u")],
+    ی: [p("y"), p("i", "î")],
+  },
+  pairs: { وو: p("oo", "û") },
+};
+
+/** Uyghur: Latin Uyghur (ULY) with its accents for scholars, without them for chat. */
+export const UYGHUR: AlphabetTable = {
+  kind: "alphabet",
+  letters: {
+    ئ: p("", ""),
+    ا: p("a"),
+    ە: p("e"),
+    ې: p("e", "é"),
+    ى: p("i"),
+    و: p("o"),
+    ۇ: p("u"),
+    ۆ: p("o", "ö"),
+    ۈ: p("u", "ü"),
+    ب: p("b"),
+    پ: p("p"),
+    ت: p("t"),
+    ج: p("j"),
+    چ: p("ch"),
+    خ: p("x"),
+    د: p("d"),
+    ر: p("r"),
+    ز: p("z"),
+    ژ: p("zh"),
+    س: p("s"),
+    ش: p("sh"),
+    غ: p("gh"),
+    ف: p("f"),
+    ق: p("q"),
+    ك: p("k"),
+    گ: p("g"),
+    ڭ: p("ng"),
+    ل: p("l"),
+    م: p("m"),
+    ن: p("n"),
+    ھ: p("h"),
+    ۋ: p("w"),
+    ي: p("y"),
+  },
+};
+
+/**
+ * Thaana: every vowel is a sign, so no inherent vowel. Malé Latin for chat; the Wiktionary letters
+ * (ṭ ḍ ṣ with long vowels marked) for scholars.
+ */
+export const THAANA: IndicTable = {
+  kind: "indic",
+  virama: "\u07B0",
+  inherent: p(""),
+  schwaDeletion: false,
+  doublingStop: "އ",
+  beforeVirama: { އ: p("h", "ʼ"), ށ: p("h", "ṣ") },
+  consonants: {
+    ހ: p("h"),
+    ށ: p("sh", "ṣ"),
+    ނ: p("n"),
+    ރ: p("r"),
+    ބ: p("b"),
+    ޅ: p("lh", "ḷ"),
+    ކ: p("k"),
+    އ: p(""),
+    ވ: p("v"),
+    މ: p("m"),
+    ފ: p("f"),
+    ދ: p("dh", "d"),
+    ތ: p("th", "t"),
+    ލ: p("l"),
+    ގ: p("g"),
+    ޏ: p("ny", "ñ"),
+    ސ: p("s"),
+    ޑ: p("d", "ḍ"),
+    ޒ: p("z"),
+    ޓ: p("t", "ṭ"),
+    ޔ: p("y"),
+    ޕ: p("p"),
+    ޖ: p("j"),
+    ޗ: p("ch", "c"),
+    ޘ: p("th", "ṯ"),
+    ޙ: p("h", "ḥ"),
+    ޚ: p("kh", "x"),
+    ޛ: p("dh", "ḏ"),
+    ޜ: p("z", "ž"),
+    ޝ: p("sh", "š"),
+    ޞ: p("s", "ş"),
+    ޟ: p("z", "ḍ"),
+    ޠ: p("t", "ţ"),
+    ޡ: p("z", "ẓ"),
+    ޢ: p("'", "ʿ"),
+    ޣ: p("gh", "ġ"),
+    ޤ: p("q"),
+    ޥ: p("v", "w"),
+  },
+  vowels: {},
+  signs: {
+    "\u07A6": p("a"),
+    "\u07A7": p("aa", "ā"),
+    "\u07A8": p("i"),
+    "\u07A9": p("ee", "ī"),
+    "\u07AA": p("u"),
+    "\u07AB": p("oo", "ū"),
+    "\u07AC": p("e"),
+    "\u07AD": p("ey", "ē"),
+    "\u07AE": p("o"),
+    "\u07AF": p("oa", "ō"),
+  },
+  marks: {},
+};
+
 const SHORT: Readonly<Record<string, Pair>> = {
   "\u064E": p("a"),
   "\u0650": p("i"),
@@ -670,6 +873,11 @@ function indicWord(word: string, t: IndicTable, style: RomanStyle): string {
       double = true;
       continue;
     }
+    if (c === t.doublingStop && chars[i + 1] === t.virama && chars[i + 2] !== undefined) {
+      double = true;
+      i++;
+      continue;
+    }
     if (t.nukta && chars[i + 1] === t.nukta && consonants.has(c + t.nukta)) c += chars[++i]!;
     const found = consonants.get(c);
     if (found) {
@@ -680,7 +888,7 @@ function indicWord(word: string, t: IndicTable, style: RomanStyle): string {
       // A joiner between a consonant and its virama or sign changes nothing.
       if (next === "\u200D" || next === "\u200C") next = chars[++i + 1];
       if (next === t.virama) {
-        units.push({ text: cons[s], schwa: false });
+        units.push({ text: t.beforeVirama?.[c]?.[s] ?? cons[s], schwa: false });
         i++;
       } else if (next !== undefined && t.signs[next]) {
         units.push({ text: cons[s] + t.signs[next]![s], schwa: false });
@@ -794,6 +1002,32 @@ function arabicWord(word: string, t: ArabicTable, style: RomanStyle): string {
   return out;
 }
 
+function alphabetWord(word: string, t: AlphabetTable, style: RomanStyle): string {
+  const s = style === "chat" ? 0 : 1;
+  const chars = [...word.replaceAll(ZWNJ, "")];
+  const isVowel = (c: string | undefined) =>
+    c !== undefined && /^[aeiouāēīōūöüéêîûə]/u.test(t.letters[c]?.[s] ?? "");
+  let out = "";
+  for (let i = 0; i < chars.length; i++) {
+    const c = chars[i]!;
+    const pair = t.pairs?.[c + (chars[i + 1] ?? "")];
+    if (pair) {
+      out += pair[s];
+      i++;
+      continue;
+    }
+    const glide = t.glides?.[c];
+    if (glide) {
+      const beside = i === 0 || isVowel(chars[i - 1]) || isVowel(chars[i + 1]);
+      out += glide[beside ? 0 : 1][s];
+      continue;
+    }
+    const letter = t.letters[c];
+    out += letter ? letter[s] : c;
+  }
+  return out;
+}
+
 const ARABIC_SHORT_VOWELS = ["a", "i", "u"] as const;
 
 /**
@@ -837,6 +1071,7 @@ export function romanizeWord(word: string, table: RomanTable, options: RomanizeO
     if (known) return known;
   }
   if (table.kind === "indic") return indicWord(word, table, style);
+  if (table.kind === "alphabet") return alphabetWord(word, table, style);
   const bare = arabicWord(word, table, style);
   if (style === "chat" && confirm && !/[\u064B-\u0650]/u.test(word)) {
     const found = vowelledSpellings(bare, 40).find((roman) => confirm(roman) === word);

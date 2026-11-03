@@ -1,0 +1,246 @@
+{
+  "id": "zlm-standard",
+  "lang": "ms-Arab",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Malay Jawi",
+    "native": "جاوي"
+  },
+  "source": "Keyman Malay Jawi 1.0 by writingtradition (MIT). The number row types one set of digits (٠١٢٣٤٥٦٧٨٩): upstream mixes in ۰, ۴ and ۵, and repeats digits on Shift+4, 5 and 6, which type $, % and ^ here as on a US keyboard. K types ک and Shift+K types ك (swapped), the form Jawi dictionaries print. The quote key types ذ, the letter Malay uses, and AltGr+quote types upstream's ڎ; AltGr+A types آ and Shift+AltGr+A types أ, which upstream only composes from marks. Keys upstream leaves out keep their US characters.",
+  "keys": {
+    "Backquote": {
+      "n": "ء",
+      "s": "\u0653"
+    },
+    "Digit1": {
+      "n": "١",
+      "s": "!"
+    },
+    "Digit2": {
+      "s": "\u0654",
+      "n": "٢"
+    },
+    "Digit3": {
+      "s": "\u06E8",
+      "n": "٣"
+    },
+    "Digit4": {
+      "s": "$",
+      "n": "٤"
+    },
+    "Digit5": {
+      "s": "%",
+      "n": "٥"
+    },
+    "Digit6": {
+      "s": "^",
+      "n": "٦"
+    },
+    "Digit7": {
+      "s": "\u0657",
+      "n": "٧"
+    },
+    "Digit8": {
+      "s": "\u0656",
+      "n": "٨"
+    },
+    "Digit9": {
+      "n": "٩",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "٠",
+      "s": ")"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_"
+    },
+    "Equal": {
+      "s": "؟",
+      "n": "="
+    },
+    "KeyQ": {
+      "s": "ص",
+      "n": "ق"
+    },
+    "KeyW": {
+      "s": "ض",
+      "n": "و"
+    },
+    "KeyE": {
+      "n": "ع",
+      "s": "غ"
+    },
+    "KeyR": {
+      "s": "ڊ",
+      "n": "ر"
+    },
+    "KeyT": {
+      "s": "ة",
+      "n": "ت"
+    },
+    "KeyY": {
+      "s": "ى",
+      "n": "ي"
+    },
+    "KeyU": {
+      "n": "و",
+      "s": "\u064F"
+    },
+    "KeyI": {
+      "s": "\u0650",
+      "n": "ي"
+    },
+    "KeyO": {
+      "s": "\u064C",
+      "n": "ؤ"
+    },
+    "KeyP": {
+      "s": "\u064D",
+      "n": "ڤ"
+    },
+    "BracketLeft": {
+      "s": "\u065C",
+      "n": "ئ"
+    },
+    "BracketRight": {
+      "s": "إ",
+      "n": "ٲ"
+    },
+    "Backslash": {
+      "s": "\u0670",
+      "n": "\u0651"
+    },
+    "KeyA": {
+      "s": "\u064E",
+      "n": "ا",
+      "ag": "آ",
+      "sag": "أ"
+    },
+    "KeyS": {
+      "s": "ش",
+      "n": "س"
+    },
+    "KeyD": {
+      "s": "ࢮ",
+      "n": "د"
+    },
+    "KeyF": {
+      "s": "ؼ",
+      "n": "ف"
+    },
+    "KeyG": {
+      "s": "ݣ",
+      "n": "ݢ"
+    },
+    "KeyH": {
+      "s": "ح",
+      "n": "ه"
+    },
+    "KeyJ": {
+      "s": "ہ",
+      "n": "ج"
+    },
+    "KeyK": {
+      "n": "ک",
+      "s": "ك"
+    },
+    "KeyL": {
+      "n": "ل",
+      "s": "ـ"
+    },
+    "Semicolon": {
+      "n": "ࢌ",
+      "s": "ط"
+    },
+    "Quote": {
+      "n": "ذ",
+      "s": "ظ",
+      "ag": "ڎ"
+    },
+    "KeyZ": {
+      "s": "خ",
+      "n": "ز"
+    },
+    "KeyX": {
+      "s": "\u0652",
+      "n": "ڽ"
+    },
+    "KeyC": {
+      "s": "ث",
+      "n": "چ"
+    },
+    "KeyV": {
+      "s": "ۑ",
+      "n": "ۏ"
+    },
+    "KeyB": {
+      "s": "ࢨ",
+      "n": "ب"
+    },
+    "KeyN": {
+      "s": "ڠ",
+      "n": "ن"
+    },
+    "KeyM": {
+      "s": "ࢴ",
+      "n": "م"
+    },
+    "Comma": {
+      "n": "،",
+      "s": "\u08F9"
+    },
+    "Period": {
+      "s": "\u065A",
+      "n": "."
+    },
+    "Slash": {
+      "n": "\u0654",
+      "s": "ڟ"
+    }
+  },
+  "longpress": {
+    "Backquote": ["\u0653"],
+    "Digit2": ["\u0654"],
+    "Digit3": ["\u06E8"],
+    "Digit7": ["\u0657"],
+    "Digit8": ["\u0656"],
+    "Equal": ["؟"],
+    "KeyQ": ["ص"],
+    "KeyW": ["ض"],
+    "KeyE": ["غ"],
+    "KeyR": ["ڊ"],
+    "KeyT": ["ة"],
+    "KeyY": ["ى"],
+    "KeyU": ["\u064F"],
+    "KeyI": ["\u0650"],
+    "KeyO": ["\u064C"],
+    "KeyP": ["\u064D"],
+    "BracketLeft": ["\u065C"],
+    "BracketRight": ["إ"],
+    "Backslash": ["\u0670"],
+    "KeyA": ["\u064E", "آ", "أ"],
+    "KeyS": ["ش"],
+    "KeyD": ["ࢮ"],
+    "KeyF": ["ؼ"],
+    "KeyG": ["ݣ"],
+    "KeyH": ["ح"],
+    "KeyJ": ["ہ"],
+    "KeyK": ["ك"],
+    "KeyL": ["ـ"],
+    "Semicolon": ["ط"],
+    "Quote": ["ظ", "ڎ"],
+    "KeyZ": ["خ"],
+    "KeyX": ["\u0652"],
+    "KeyC": ["ث"],
+    "KeyV": ["ۑ"],
+    "KeyB": ["ࢨ"],
+    "KeyN": ["ڠ"],
+    "KeyM": ["ࢴ"],
+    "Comma": ["\u08F9"],
+    "Period": ["\u065A"],
+    "Slash": ["ڟ"]
+  }
+}

@@ -27,9 +27,12 @@ const WIKI_NAMES: Readonly<Record<string, string>> = {
   bn: "Bengali",
   pa: "Punjabi",
   kok: "Goan Konkani",
+  prs: "Persian",
+  ckb: "Central Kurdish",
+  zlm: "Malay",
 };
 /** Wikipedia's subdomain, where it differs from the language's code. */
-const WIKI_CODES: Readonly<Record<string, string>> = { kok: "gom" };
+const WIKI_CODES: Readonly<Record<string, string>> = { kok: "gom", prs: "fa", zlm: "ms" };
 /** Languages whose chat spellings come from Dakshina (see data/<code>/chat.tsv). */
 export const DAKSHINA: ReadonlySet<string> = new Set([
   "hi",
@@ -47,6 +50,9 @@ export const DAKSHINA: ReadonlySet<string> = new Set([
 /** Languages whose chat spellings come from AI4Bharat's Aksharantar (CC BY). */
 export const AKSHARANTAR: ReadonlySet<string> = new Set(["ne", "or", "as", "sa", "kok", "mai"]);
 
+/** Languages whose spellings come from English Wiktionary (CC BY-SA 4.0), through kaikki.org. */
+export const WIKTIONARY: ReadonlySet<string> = new Set(["dv", "ckb", "ug", "zlm"]);
+
 export function creditsFor(language: Language) {
   const { code } = language;
   return {
@@ -55,6 +61,7 @@ export function creditsFor(language: Language) {
       : undefined,
     dakshina: DAKSHINA.has(code),
     aksharantar: AKSHARANTAR.has(code),
+    wiktionary: WIKTIONARY.has(code),
     tatoeba: HAS_TATOEBA.has(code),
   };
 }

@@ -11,9 +11,12 @@ import {
   ODIA,
   SANSKRIT,
   SINHALA,
+  SORANI,
   TAMIL,
   TELUGU,
+  THAANA,
   URDU_SCRIPT,
+  UYGHUR,
   romanize,
   romanizeWord,
 } from "../src/translit/romanize";
@@ -140,5 +143,31 @@ describe("romanize: Arabic script", () => {
 
   it("turns Arabic punctuation into Latin", () => {
     expect(romanize("کیا؟", URDU_SCRIPT, chat)).toBe("kya?");
+  });
+});
+
+describe("alphabets that write every vowel, and Thaana", () => {
+  it("Uyghur letters read one for one", () => {
+    expect(romanizeWord("ئۇيغۇر", UYGHUR, chat)).toBe("uyghur");
+    expect(romanizeWord("مېنىڭ", UYGHUR, chat)).toBe("mening");
+    expect(romanizeWord("مېنىڭ", UYGHUR, scholarly)).toBe("méning");
+    expect(romanizeWord("كۆرۈك", UYGHUR, scholarly)).toBe("körük");
+  });
+
+  it("Sorani و and ی are vowels between consonants and consonants beside vowels", () => {
+    expect(romanizeWord("کورد", SORANI, chat)).toBe("kurd");
+    expect(romanizeWord("سڵاو", SORANI, chat)).toBe("sllaw");
+    expect(romanizeWord("کوردی", SORANI, scholarly)).toBe("kurdî");
+    expect(romanizeWord("بوو", SORANI, chat)).toBe("boo");
+    expect(romanizeWord("بوو", SORANI, scholarly)).toBe("bû");
+  });
+
+  it("Thaana: fili are vowels, a sukun stop doubles the next consonant or ends in h", () => {
+    expect(romanizeWord("ދިވެހި", THAANA, chat)).toBe("dhivehi");
+    expect(romanizeWord("ރާއްޖެ", THAANA, chat)).toBe("raajje");
+    expect(romanizeWord("އަހަރެން", THAANA, chat)).toBe("aharen");
+    expect(romanizeWord("ވަރަށް", THAANA, chat)).toBe("varah");
+    expect(romanizeWord("ކިހިނެއް", THAANA, chat)).toBe("kihineh");
+    expect(romanizeWord("ދިވެހި", THAANA, scholarly)).toBe("divehi");
   });
 });
