@@ -75,3 +75,15 @@ test("home page links every language", async ({ page }) => {
     await expect(page.locator(`[data-browse="script"] a[href="${home}"]`)).toBeAttached();
   }
 });
+
+test("Tamil99 composes from the text already typed", async ({ page }) => {
+  await page.goto("/tamil/tamil99");
+  const box = editor(page, "Tamil");
+  await box.click();
+  await page.keyboard.type("lks/f");
+  await expect(box).toHaveValue("தமிழ்");
+  await page.keyboard.press("Space");
+  // A doubled consonant gets its pulli, and a soft-hard pair too.
+  await page.keyboard.type("akkq lbhkf");
+  await expect(box).toHaveValue("தமிழ் அம்மா தங்கம்");
+});

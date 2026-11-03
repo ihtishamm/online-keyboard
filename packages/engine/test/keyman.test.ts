@@ -123,3 +123,57 @@ deadkey(lost) + 'a' > U+00E0
     });
   });
 });
+
+describe("context rules", () => {
+  const SOURCE = [
+    "\uFEFFstore(cons) U+0B95 \\",
+    "  U+0BAE",
+    "store(keys) 'qs'",
+    "store(signs) U+0BBE U+0BBF",
+    "begin Unicode > use(Main)",
+    "group(Main) using keys",
+    "+ 'h' > U+0B95",
+    "+ 'k' > U+0BAE",
+    "+ 'q' > U+0B86",
+    "+ 's' > U+0B87",
+    "+ 'f' > U+0BCD",
+    "+ 'T' > outs(signs)",
+    "+ any(unused) > nul",
+    "store(unused) 'G'",
+    "any(cons) + any(keys) > index(cons, 1) index(signs, 2)",
+    "any(cons) + 'f' > index(cons, 1) U+0BCD",
+    "U+0B95 + 'h' > U+0B95 U+0BCD U+0B95",
+    "U+0B95 U+0BCD U+0B95 + 'h' > context U+0B95",
+    "U+0B95 + 'k' > U+0BAE",
+  ].join("\n");
+
+  it("reports them unless asked to import them", () => {
+    const r = importKeyman(SOURCE);
+    expect(r.rules).toEqual([]);
+    expect(r.warnings.filter((w) => /context/.test(w))).toHaveLength(5);
+  });
+
+  const r = importKeyman(SOURCE, { contextRules: true, usDefaults: true });
+
+  it("expands any() over the context and the key, and keeps only rules that do something", () => {
+    expect(r.rules).toEqual([
+      { before: "\u0B95", typed: "\u0B86", add: "\u0BBE" },
+      { before: "\u0B95", typed: "\u0B87", add: "\u0BBF" },
+      { before: "\u0BAE", typed: "\u0B86", add: "\u0BBE" },
+      { before: "\u0BAE", typed: "\u0B87", add: "\u0BBF" },
+      { before: "\u0B95", typed: "\u0B95", add: "\u0BCD\u0B95" },
+      { before: "\u0B95\u0BCD\u0B95", typed: "\u0B95", add: "\u0B95" },
+    ]);
+  });
+
+  it("reports a rule that would change text already typed", () => {
+    expect(r.warnings).toEqual([expect.stringMatching(/unsupported context rule.*U\+0B95 \+ 'k'/)]);
+  });
+
+  it("fills keys with no rule from US QWERTY, but not silenced ones", () => {
+    expect(r.keys.Digit7).toEqual({ n: "7", s: "&" });
+    expect(r.keys.KeyT?.s).toBe("\u0BBE\u0BBF");
+    expect(r.keys.KeyG?.s).toBeUndefined();
+    expect(r.keys.KeyG?.n).toBe("g");
+  });
+});

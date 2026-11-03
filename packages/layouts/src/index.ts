@@ -30,7 +30,12 @@ export const LANGUAGES: readonly Language[] = LANGUAGE_FILES;
 
 /** Apply schema defaults without validating (validation happens in tests). */
 function withDefaults(raw: LayoutInput): Layout {
-  return { ...raw, deadkeys: raw.deadkeys ?? [], longpress: raw.longpress ?? {} } as Layout;
+  return {
+    ...raw,
+    deadkeys: raw.deadkeys ?? [],
+    rules: raw.rules ?? [],
+    longpress: raw.longpress ?? {},
+  } as Layout;
 }
 
 const LAYOUTS: ReadonlyMap<string, Layout> = new Map(

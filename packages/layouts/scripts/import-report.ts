@@ -22,16 +22,16 @@ function licence(vendor: string, spec: ImportSpec["from"]): string {
 }
 
 /** Characters on each layer, and dead-key compositions. */
-function coverage(keys: Partial<Record<KeyCode, KeyDef>>, deadkeys: number): string {
+function coverage(keys: Partial<Record<KeyCode, KeyDef>>, deadkeys: number, rules = 0): string {
   const counts = LAYERS.map((l) => [l, Object.values(keys).filter((d) => d?.[l]).length] as const)
     .filter(([, n]) => n > 0)
     .map(([l, n]) => `${l} ${n}`);
-  return `${Object.keys(keys).length} keys (${counts.join(", ")})${deadkeys ? `, ${deadkeys} dead-key compositions` : ""}`;
+  return `${Object.keys(keys).length} keys (${counts.join(", ")})${deadkeys ? `, ${deadkeys} dead-key compositions` : ""}${rules ? `, ${rules} context rules` : ""}`;
 }
 
 /** Keys our patch changed, as `Code.layer: before → after`. */
 function changes(spec: ImportSpec, source: string): string[] {
-  if (!spec.patch) return [];
+  if (!spec.patch && !spec.patchRules) return [];
   const raw = "cldr" in spec.from ? importCldr(source).keys : importKeyman(source, spec.from).keys;
   const patched = buildImport(spec, source).layout.keys ?? {};
   const out: string[] = [];
@@ -42,6 +42,17 @@ function changes(spec: ImportSpec, source: string): string[] {
       const after = patched[code]?.[layer];
       if (before !== after) out.push(`${code}.${layer}: ${show(before)} → ${show(after)}`);
     }
+  }
+  if (spec.patchRules && !("cldr" in spec.from)) {
+    const before = importKeyman(source, spec.from).rules;
+    const after = buildImport(spec, source).layout.rules ?? [];
+    const text = (r: (typeof before)[number]) =>
+      `${show(r.before)} + ${show(r.typed)} adds ${show(r.add)}${r.hold ? " and holds" : ""}`;
+    before.forEach((r, i) => {
+      const was = text(r);
+      const now = after[i] ? text(after[i]!) : "none";
+      if (was !== now) out.push(`Rule: ${was} → ${now}`);
+    });
   }
   return out;
 }
@@ -75,7 +86,7 @@ export function importReport(root: string): string {
       `- **Output:** \`languages/${spec.out}\``,
       `- **Source:** \`vendor/${path}\`. ${cell(spec.meta.source ?? "")}`,
       `- **Licence:** ${licence(vendor, spec.from)}`,
-      `- **Coverage:** ${coverage(layout.keys ?? {}, layout.deadkeys?.length ?? 0)}`,
+      `- **Coverage:** ${coverage(layout.keys ?? {}, layout.deadkeys?.length ?? 0, layout.rules?.length ?? 0)}`,
       `- **Skipped:** ${warnings.length ? "" : "nothing"}`,
       ...warnings.map((w) => `  - ${cell(w)}`),
       `- **Our changes:** ${changed.length ? "" : "none"}`,

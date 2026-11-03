@@ -1,5 +1,5 @@
 import type { KeyCode } from "../layout/keycodes";
-import type { KeyDef, Layout } from "../layout/schema";
+import type { ContextRule, KeyDef, Layout } from "../layout/schema";
 
 export interface Modifiers {
   shift: boolean;
@@ -37,6 +37,10 @@ export type PressResult =
 export class TypingMachine {
   private triggers = new Set<string>();
   private table = new Map<string, string>();
+  /** Context rules by the text the key types, longest `before` first. */
+  private rules = new Map<string, ContextRule[]>();
+  /** The text a hold rule left before the caret: rules skip one key press while it is there. */
+  private held: string | null = null;
   private _layout!: Layout;
   /** Dead key waiting for its base character. */
   pending: string | null = null;
@@ -52,12 +56,25 @@ export class TypingMachine {
   setLayout(layout: Layout): void {
     this._layout = layout;
     this.pending = null;
+    this.held = null;
+    this.rules = new Map();
+    for (const rule of layout.rules) {
+      const list = this.rules.get(rule.typed) ?? [];
+      list.push(rule);
+      this.rules.set(rule.typed, list);
+    }
+    for (const list of this.rules.values()) {
+      list.sort((a, b) => b.before.length - a.before.length);
+    }
     this.triggers = new Set(layout.deadkeys.map((d) => d.trigger));
     this.table = new Map(layout.deadkeys.map((d) => [d.trigger + "\0" + d.base, d.out]));
   }
 
-  press(code: KeyCode, mods: Modifiers): PressResult {
+  /** `before` is the text before the caret, which context rules read. */
+  press(code: KeyCode, mods: Modifiers, before = ""): PressResult {
     const out = outputFor(this._layout, code, mods);
+    const held = this.held;
+    this.held = null;
     if (this.pending !== null) {
       const trigger = this.pending;
       this.pending = null;
@@ -68,7 +85,15 @@ export class TypingMachine {
       this.pending = out;
       return { kind: "dead", trigger: out };
     }
-    return out ? { kind: "text", text: out } : { kind: "none" };
+    if (!out) return { kind: "none" };
+    if (held === null || !before.endsWith(held)) {
+      const rule = this.rules.get(out)?.find((r) => before.endsWith(r.before));
+      if (rule) {
+        if (rule.hold) this.held = rule.before;
+        return rule.add ? { kind: "text", text: rule.add } : { kind: "none" };
+      }
+    }
+    return { kind: "text", text: out };
   }
 
   /** Does this key type its trigger character as is, on the layer in use? */

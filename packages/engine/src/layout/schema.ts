@@ -35,6 +35,23 @@ export const deadKeySchema = z
   })
   .strict();
 
+/**
+ * A key whose text depends on what is already typed (Tamil99: a vowel key types அ alone, but
+ * its sign after a consonant). Rules only ever add text; they never change what is there.
+ */
+export const contextRuleSchema = z
+  .object({
+    /** The text just before the caret. The longest match wins. */
+    before: z.string().min(1),
+    /** What the key types by itself. */
+    typed: z.string().min(1),
+    /** What it adds instead, which can be nothing. */
+    add: z.string(),
+    /** Rules do not apply to the next key press (Tamil99's delinking vowel, rule 6). */
+    hold: z.boolean().optional(),
+  })
+  .strict();
+
 export const layoutSchema = z
   .object({
     id: z.string().regex(/^[a-z]{2,3}(-[a-z0-9]+)+$/, "id must look like `ur-phonetic`"),
@@ -48,6 +65,7 @@ export const layoutSchema = z
     source: z.string().min(1),
     keys: z.partialRecord(keyCode, keyDefSchema),
     deadkeys: z.array(deadKeySchema).default([]),
+    rules: z.array(contextRuleSchema).default([]),
     /** Mobile long-press alternates. */
     longpress: z.partialRecord(keyCode, z.array(z.string().min(1)).min(1)).default({}),
     /**
@@ -71,6 +89,15 @@ export const layoutSchema = z
     for (const def of Object.values(layout.keys)) {
       for (const v of [def?.n, def?.s, def?.ag, def?.sag]) if (v) triggers.add(v);
     }
+    layout.rules.forEach((rule, i) => {
+      if (!triggers.has(rule.typed)) {
+        ctx.addIssue({
+          code: "custom",
+          path: ["rules", i, "typed"],
+          message: `context rule key "${rule.typed}" is not produced by any key`,
+        });
+      }
+    });
     layout.deadkeys.forEach((dk, i) => {
       if (!triggers.has(dk.trigger)) {
         ctx.addIssue({
@@ -84,6 +111,7 @@ export const layoutSchema = z
 
 export type KeyDef = z.infer<typeof keyDefSchema>;
 export type DeadKey = z.infer<typeof deadKeySchema>;
+export type ContextRule = z.infer<typeof contextRuleSchema>;
 /** Layout as written in JSON (defaults not yet applied). */
 export type LayoutInput = z.input<typeof layoutSchema>;
 /** Validated layout with defaults applied. */

@@ -49,7 +49,9 @@ describe("registry golden snapshot", () => {
           return { ...bundle, language: old(bundle.language) };
         }),
       },
-      null,
+      // Layouts gained `rules` after the move; none in the snapshot uses them.
+      (key, value: unknown) =>
+        key === "rules" && Array.isArray(value) && !value.length ? undefined : value,
       1,
     );
     if (process.env.UPDATE_GOLDEN === "1") writeFileSync(FILE, now + "\n");

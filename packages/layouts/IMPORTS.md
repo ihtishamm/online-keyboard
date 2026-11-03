@@ -610,6 +610,38 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
 - **Skipped:** nothing
 - **Our changes:** none
 
+## ta-tamil99
+
+- **Output:** `languages/tamil/tamil99.json`
+- **Source:** `vendor/keyman/ekwtamil99uni/ekwtamil99uni.kmn`. Keyman Thamizha Tamil99 2.0.5 by Mugunth, Umar and K. Sethu (MIT), after the Tamil Nadu government's Tamil99 standard. Delinking அ (rule 6) adds nothing to the text, where upstream adds an invisible ZWJ. The second ல of a doubled ல now stops the pulli (rule 5): upstream's rule reads ர்ல, a typo.
+- **Licence:** MIT (vendor/keyman/ekwtamil99uni/LICENSE.md)
+- **Coverage:** 47 keys (n 47, s 41), 16 dead-key compositions, 322 context rules
+- **Skipped:** nothing
+- **Our changes:** 
+  - Rule: `ரU+0BCDல` + `ல` adds `ல` → `லU+0BCDல` + `ல` adds `ல`
+  - Rule: `க` + `அ` adds `U+200D` → `க` + `அ` adds `` and holds
+  - Rule: `ங` + `அ` adds `U+200D` → `ங` + `அ` adds `` and holds
+  - Rule: `ச` + `அ` adds `U+200D` → `ச` + `அ` adds `` and holds
+  - Rule: `ஞ` + `அ` adds `U+200D` → `ஞ` + `அ` adds `` and holds
+  - Rule: `ட` + `அ` adds `U+200D` → `ட` + `அ` adds `` and holds
+  - Rule: `ண` + `அ` adds `U+200D` → `ண` + `அ` adds `` and holds
+  - Rule: `த` + `அ` adds `U+200D` → `த` + `அ` adds `` and holds
+  - Rule: `ந` + `அ` adds `U+200D` → `ந` + `அ` adds `` and holds
+  - Rule: `ப` + `அ` adds `U+200D` → `ப` + `அ` adds `` and holds
+  - Rule: `ம` + `அ` adds `U+200D` → `ம` + `அ` adds `` and holds
+  - Rule: `ய` + `அ` adds `U+200D` → `ய` + `அ` adds `` and holds
+  - Rule: `ர` + `அ` adds `U+200D` → `ர` + `அ` adds `` and holds
+  - Rule: `ல` + `அ` adds `U+200D` → `ல` + `அ` adds `` and holds
+  - Rule: `வ` + `அ` adds `U+200D` → `வ` + `அ` adds `` and holds
+  - Rule: `ழ` + `அ` adds `U+200D` → `ழ` + `அ` adds `` and holds
+  - Rule: `ள` + `அ` adds `U+200D` → `ள` + `அ` adds `` and holds
+  - Rule: `ற` + `அ` adds `U+200D` → `ற` + `அ` adds `` and holds
+  - Rule: `ன` + `அ` adds `U+200D` → `ன` + `அ` adds `` and holds
+  - Rule: `ஸ` + `அ` adds `U+200D` → `ஸ` + `அ` adds `` and holds
+  - Rule: `ஷ` + `அ` adds `U+200D` → `ஷ` + `அ` adds `` and holds
+  - Rule: `ஜ` + `அ` adds `U+200D` → `ஜ` + `அ` adds `` and holds
+  - Rule: `ஹ` + `அ` adds `U+200D` → `ஹ` + `அ` adds `` and holds
+
 ## Vendored, not yet used
 
 CLDR 43 Windows keyboards ready for the national layouts (plan 7.5). Unicode License v3.

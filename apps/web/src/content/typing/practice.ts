@@ -63,9 +63,12 @@ export interface PracticeText {
   frequency: string[];
 }
 
-/** Layouts typed key by key: not the Roman ones, which convert whole words. */
+/**
+ * Layouts typed key by key: not the Roman ones, which convert whole words, and not those whose
+ * keys depend on the text typed (Tamil99), whose next key the tutor cannot work out yet.
+ */
 const keyLayouts = (l: Language): Layout[] =>
-  l.layouts.map(getLayout).filter((layout) => !layout.translit);
+  l.layouts.map(getLayout).filter((layout) => !layout.translit && !layout.rules.length);
 
 /** Languages with generated typing pages: every one with a key layout, but Urdu. */
 export const TYPING_LANGUAGES: readonly Language[] = LANGUAGES.filter(

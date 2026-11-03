@@ -2,7 +2,7 @@
 // Keyman) live in "@okb/engine/layout" so they stay out of client bundles.
 export * from "./layout/keycodes";
 export * from "./layout/phone";
-export type { DeadKey, KeyDef, Layout, LayoutInput } from "./layout/schema";
+export type { ContextRule, DeadKey, KeyDef, Layout, LayoutInput } from "./layout/schema";
 export * from "./core/machine";
 export * from "./core/reverse";
 export * from "./text/edit";

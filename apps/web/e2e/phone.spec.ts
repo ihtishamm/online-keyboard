@@ -157,3 +157,12 @@ test("in landscape the phone layout stays, with lower keys", async ({ page, brow
   const height = (await key(page, "KeyQ").boundingBox())!.height;
   expect(height).toBeLessThanOrEqual(40);
 });
+
+test("Tamil99 composes from on-screen taps", async ({ page }) => {
+  await open(page, "/tamil/tamil99");
+  // த ம இ ழ and the pulli make தமிழ்; then ம ம ஆ make ம்மா.
+  for (const code of ["KeyL", "KeyK", "KeyS", "Slash", "KeyF", "KeyK", "KeyK", "KeyQ"]) {
+    await key(page, code).tap();
+  }
+  await expect(page.getByRole("textbox", { name: "Tamil text" })).toHaveValue("தமிழ்ம்மா");
+});

@@ -63,6 +63,7 @@ import tamil from "../languages/tamil/language.json";
 import taRoman from "../languages/tamil/roman.json";
 import { TA_ROMAN } from "./translit/ta-roman";
 import taInscript from "../languages/tamil/inscript.json";
+import taTamil99 from "../languages/tamil/tamil99.json";
 import telugu from "../languages/telugu/language.json";
 import teRoman from "../languages/telugu/roman.json";
 import { TE_ROMAN } from "./translit/te-roman";
@@ -229,6 +230,7 @@ export const RAW_LAYOUTS = [
   paInscript,
   taRoman,
   taInscript,
+  taTamil99,
   teRoman,
   teInscript,
   knRoman,

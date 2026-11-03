@@ -150,3 +150,51 @@ describe("live keys", () => {
     });
   });
 });
+
+describe("context rules", () => {
+  const layout = parseLayout({
+    id: "ta-test",
+    lang: "ta",
+    script: "Taml",
+    dir: "ltr",
+    name: { en: "T", native: "T" },
+    source: "test",
+    keys: { KeyA: { n: "a" }, KeyK: { n: "k" }, KeyZ: {} },
+    rules: [
+      { before: "k", typed: "a", add: "", hold: true },
+      { before: "k", typed: "k", add: "-k" },
+      { before: "k-k", typed: "k", add: "k" },
+    ],
+  });
+
+  it("uses the longest rule that matches the text before the caret", () => {
+    const m = new TypingMachine(layout);
+    expect(m.press("KeyK", NO_MODIFIERS, "")).toEqual({ kind: "text", text: "k" });
+    expect(m.press("KeyK", NO_MODIFIERS, "k")).toEqual({ kind: "text", text: "-k" });
+    expect(m.press("KeyK", NO_MODIFIERS, "k-k")).toEqual({ kind: "text", text: "k" });
+  });
+
+  it("ignores rules when no text is given", () => {
+    expect(new TypingMachine(layout).press("KeyK", NO_MODIFIERS)).toEqual({
+      kind: "text",
+      text: "k",
+    });
+  });
+
+  it("holds rules for one key press, adding nothing", () => {
+    const m = new TypingMachine(layout);
+    expect(m.press("KeyA", NO_MODIFIERS, "k")).toEqual({ kind: "none" });
+    expect(m.press("KeyK", NO_MODIFIERS, "k")).toEqual({ kind: "text", text: "k" });
+    expect(m.press("KeyK", NO_MODIFIERS, "kk")).toEqual({ kind: "text", text: "-k" });
+  });
+
+  it("drops a hold when the text it was for is gone", () => {
+    const m = new TypingMachine(layout);
+    m.press("KeyA", NO_MODIFIERS, "k");
+    expect(m.press("KeyK", NO_MODIFIERS, "xk")).toEqual({ kind: "text", text: "k" });
+    m.press("KeyA", NO_MODIFIERS, "k");
+    // Backspace removed the k, then a later k follows other text.
+    expect(m.press("KeyK", NO_MODIFIERS, "")).toEqual({ kind: "text", text: "k" });
+    expect(m.press("KeyK", NO_MODIFIERS, "k")).toEqual({ kind: "text", text: "-k" });
+  });
+});

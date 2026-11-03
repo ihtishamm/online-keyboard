@@ -1,0 +1,1928 @@
+{
+  "id": "ta-tamil99",
+  "lang": "ta",
+  "script": "Taml",
+  "dir": "ltr",
+  "name": {
+    "en": "Tamil99",
+    "native": "தமிழ\u0BCD99"
+  },
+  "source": "Keyman Thamizha Tamil99 2.0.5 by Mugunth, Umar and K. Sethu (MIT), after the Tamil Nadu government's Tamil99 standard. Delinking அ (rule 6) adds nothing to the text, where upstream adds an invisible ZWJ. The second ல of a doubled ல now stops the pulli (rule 5): upstream's rule reads ர\u0BCDல, a typo.",
+  "keys": {
+    "Backquote": {
+      "n": "`",
+      "s": "~"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "!"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "@"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "#"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "$"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "%"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "^"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "&"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "*"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+"
+    },
+    "KeyQ": {
+      "n": "ஆ",
+      "s": "ஸ"
+    },
+    "KeyW": {
+      "n": "ஈ",
+      "s": "ஷ"
+    },
+    "KeyE": {
+      "n": "ஊ",
+      "s": "ஜ"
+    },
+    "KeyR": {
+      "n": "ஐ",
+      "s": "ஹ"
+    },
+    "KeyT": {
+      "n": "ஏ",
+      "s": "ஸ\u0BCDர\u0BC0"
+    },
+    "KeyY": {
+      "n": "ள",
+      "s": "க\u0BCDஷ"
+    },
+    "KeyU": {
+      "n": "ற"
+    },
+    "KeyI": {
+      "n": "ன"
+    },
+    "KeyO": {
+      "n": "ட",
+      "s": "["
+    },
+    "KeyP": {
+      "n": "ண",
+      "s": "]"
+    },
+    "BracketLeft": {
+      "n": "ச",
+      "s": "{"
+    },
+    "BracketRight": {
+      "n": "ஞ",
+      "s": "}"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyA": {
+      "n": "அ",
+      "s": "௹"
+    },
+    "KeyS": {
+      "n": "இ",
+      "s": "௺"
+    },
+    "KeyD": {
+      "n": "உ",
+      "s": "௸"
+    },
+    "KeyF": {
+      "s": "ஃ",
+      "n": "\u0BCD"
+    },
+    "KeyG": {
+      "n": "எ"
+    },
+    "KeyH": {
+      "n": "க"
+    },
+    "KeyJ": {
+      "n": "ப"
+    },
+    "KeyK": {
+      "n": "ம",
+      "s": "\""
+    },
+    "KeyL": {
+      "n": "த",
+      "s": ":"
+    },
+    "Semicolon": {
+      "n": "ந",
+      "s": ";"
+    },
+    "Quote": {
+      "n": "ய",
+      "s": "'"
+    },
+    "KeyZ": {
+      "n": "ஔ",
+      "s": "௳"
+    },
+    "KeyX": {
+      "n": "ஓ",
+      "s": "௴"
+    },
+    "KeyC": {
+      "n": "ஒ",
+      "s": "௵"
+    },
+    "KeyV": {
+      "n": "வ",
+      "s": "௶"
+    },
+    "KeyB": {
+      "n": "ங",
+      "s": "௷"
+    },
+    "KeyN": {
+      "n": "ல"
+    },
+    "KeyM": {
+      "n": "ர",
+      "s": "/"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "<"
+    },
+    "Period": {
+      "n": ".",
+      "s": ">"
+    },
+    "Slash": {
+      "n": "ழ",
+      "s": "?"
+    }
+  },
+  "deadkeys": [
+    {
+      "trigger": "^",
+      "base": "^",
+      "out": "^"
+    },
+    {
+      "trigger": "^",
+      "base": "ஆ",
+      "out": "ா"
+    },
+    {
+      "trigger": "^",
+      "base": "இ",
+      "out": "ி"
+    },
+    {
+      "trigger": "^",
+      "base": "ஈ",
+      "out": "\u0BC0"
+    },
+    {
+      "trigger": "^",
+      "base": "உ",
+      "out": "ு"
+    },
+    {
+      "trigger": "^",
+      "base": "ஊ",
+      "out": "ூ"
+    },
+    {
+      "trigger": "^",
+      "base": "எ",
+      "out": "ெ"
+    },
+    {
+      "trigger": "^",
+      "base": "ஏ",
+      "out": "ே"
+    },
+    {
+      "trigger": "^",
+      "base": "ஐ",
+      "out": "ை"
+    },
+    {
+      "trigger": "^",
+      "base": "ஒ",
+      "out": "©"
+    },
+    {
+      "trigger": "^",
+      "base": ".",
+      "out": "•"
+    },
+    {
+      "trigger": "^",
+      "base": "7",
+      "out": "‘"
+    },
+    {
+      "trigger": "^",
+      "base": "8",
+      "out": "’"
+    },
+    {
+      "trigger": "^",
+      "base": "9",
+      "out": "“"
+    },
+    {
+      "trigger": "^",
+      "base": "0",
+      "out": "”"
+    },
+    {
+      "trigger": "^",
+      "base": "௺",
+      "out": " "
+    }
+  ],
+  "rules": [
+    {
+      "before": "க",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "க",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "க",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "க",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "க",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "க",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "க",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "க",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "க",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "க",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "க",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ங",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ங",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ங",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ங",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ங",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ங",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ங",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ங",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ங",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ங",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ங",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ச",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ச",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ச",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ச",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ச",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ச",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ச",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ச",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ச",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ச",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ச",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ஞ",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ஞ",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ஞ",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ஞ",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ஞ",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ஞ",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ஞ",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ஞ",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ஞ",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ஞ",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ஞ",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ட",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ட",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ட",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ட",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ட",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ட",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ட",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ட",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ட",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ட",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ட",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ண",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ண",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ண",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ண",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ண",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ண",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ண",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ண",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ண",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ண",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ண",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "த",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "த",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "த",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "த",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "த",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "த",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "த",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "த",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "த",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "த",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "த",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ந",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ந",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ந",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ந",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ந",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ந",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ந",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ந",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ந",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ந",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ந",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ப",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ப",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ப",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ப",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ப",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ப",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ப",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ப",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ப",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ப",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ப",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ம",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ம",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ம",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ம",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ம",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ம",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ம",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ம",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ம",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ம",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ம",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ய",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ய",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ய",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ய",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ய",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ய",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ய",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ய",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ய",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ய",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ய",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ர",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ர",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ர",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ர",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ர",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ர",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ர",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ர",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ர",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ர",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ர",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ல",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ல",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ல",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ல",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ல",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ல",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ல",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ல",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ல",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ல",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ல",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "வ",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "வ",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "வ",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "வ",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "வ",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "வ",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "வ",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "வ",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "வ",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "வ",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "வ",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ழ",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ழ",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ழ",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ழ",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ழ",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ழ",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ழ",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ழ",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ழ",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ழ",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ழ",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ள",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ள",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ள",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ள",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ள",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ள",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ள",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ள",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ள",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ள",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ள",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ற",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ற",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ற",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ற",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ற",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ற",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ற",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ற",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ற",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ற",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ற",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ன",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ன",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ன",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ன",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ன",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ன",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ன",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ன",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ன",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ன",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ன",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ஸ",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ஸ",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ஸ",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ஸ",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ஸ",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ஸ",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ஸ",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ஸ",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ஸ",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ஸ",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ஸ",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ஷ",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ஷ",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ஷ",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ஷ",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ஷ",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ஷ",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ஷ",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ஷ",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ஷ",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ஷ",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ஷ",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ஜ",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ஜ",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ஜ",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ஜ",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ஜ",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ஜ",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ஜ",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ஜ",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ஜ",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ஜ",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ஜ",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "ஹ",
+      "typed": "ஆ",
+      "add": "ா"
+    },
+    {
+      "before": "ஹ",
+      "typed": "இ",
+      "add": "ி"
+    },
+    {
+      "before": "ஹ",
+      "typed": "ஈ",
+      "add": "\u0BC0"
+    },
+    {
+      "before": "ஹ",
+      "typed": "உ",
+      "add": "ு"
+    },
+    {
+      "before": "ஹ",
+      "typed": "ஊ",
+      "add": "ூ"
+    },
+    {
+      "before": "ஹ",
+      "typed": "எ",
+      "add": "ெ"
+    },
+    {
+      "before": "ஹ",
+      "typed": "ஏ",
+      "add": "ே"
+    },
+    {
+      "before": "ஹ",
+      "typed": "ஐ",
+      "add": "ை"
+    },
+    {
+      "before": "ஹ",
+      "typed": "ஒ",
+      "add": "ொ"
+    },
+    {
+      "before": "ஹ",
+      "typed": "ஓ",
+      "add": "ோ"
+    },
+    {
+      "before": "ஹ",
+      "typed": "ஔ",
+      "add": "ௌ"
+    },
+    {
+      "before": "க",
+      "typed": "க",
+      "add": "\u0BCDக"
+    },
+    {
+      "before": "க\u0BCDக",
+      "typed": "க",
+      "add": "க"
+    },
+    {
+      "before": "ங",
+      "typed": "ங",
+      "add": "\u0BCDங"
+    },
+    {
+      "before": "ங\u0BCDங",
+      "typed": "ங",
+      "add": "ங"
+    },
+    {
+      "before": "ச",
+      "typed": "ச",
+      "add": "\u0BCDச"
+    },
+    {
+      "before": "ச\u0BCDச",
+      "typed": "ச",
+      "add": "ச"
+    },
+    {
+      "before": "ஞ",
+      "typed": "ஞ",
+      "add": "\u0BCDஞ"
+    },
+    {
+      "before": "ஞ\u0BCDஞ",
+      "typed": "ஞ",
+      "add": "ஞ"
+    },
+    {
+      "before": "ட",
+      "typed": "ட",
+      "add": "\u0BCDட"
+    },
+    {
+      "before": "ட\u0BCDட",
+      "typed": "ட",
+      "add": "ட"
+    },
+    {
+      "before": "ண",
+      "typed": "ண",
+      "add": "\u0BCDண"
+    },
+    {
+      "before": "ண\u0BCDண",
+      "typed": "ண",
+      "add": "ண"
+    },
+    {
+      "before": "த",
+      "typed": "த",
+      "add": "\u0BCDத"
+    },
+    {
+      "before": "த\u0BCDத",
+      "typed": "த",
+      "add": "த"
+    },
+    {
+      "before": "ந",
+      "typed": "ந",
+      "add": "\u0BCDந"
+    },
+    {
+      "before": "ந\u0BCDந",
+      "typed": "ந",
+      "add": "ந"
+    },
+    {
+      "before": "ப",
+      "typed": "ப",
+      "add": "\u0BCDப"
+    },
+    {
+      "before": "ப\u0BCDப",
+      "typed": "ப",
+      "add": "ப"
+    },
+    {
+      "before": "ம",
+      "typed": "ம",
+      "add": "\u0BCDம"
+    },
+    {
+      "before": "ம\u0BCDம",
+      "typed": "ம",
+      "add": "ம"
+    },
+    {
+      "before": "ய",
+      "typed": "ய",
+      "add": "\u0BCDய"
+    },
+    {
+      "before": "ய\u0BCDய",
+      "typed": "ய",
+      "add": "ய"
+    },
+    {
+      "before": "ர",
+      "typed": "ர",
+      "add": "\u0BCDர"
+    },
+    {
+      "before": "ர\u0BCDர",
+      "typed": "ர",
+      "add": "ர"
+    },
+    {
+      "before": "ல",
+      "typed": "ல",
+      "add": "\u0BCDல"
+    },
+    {
+      "before": "ல\u0BCDல",
+      "typed": "ல",
+      "add": "ல"
+    },
+    {
+      "before": "வ",
+      "typed": "வ",
+      "add": "\u0BCDவ"
+    },
+    {
+      "before": "வ\u0BCDவ",
+      "typed": "வ",
+      "add": "வ"
+    },
+    {
+      "before": "ழ",
+      "typed": "ழ",
+      "add": "\u0BCDழ"
+    },
+    {
+      "before": "ழ\u0BCDழ",
+      "typed": "ழ",
+      "add": "ழ"
+    },
+    {
+      "before": "ள",
+      "typed": "ள",
+      "add": "\u0BCDள"
+    },
+    {
+      "before": "ள\u0BCDள",
+      "typed": "ள",
+      "add": "ள"
+    },
+    {
+      "before": "ற",
+      "typed": "ற",
+      "add": "\u0BCDற"
+    },
+    {
+      "before": "ற\u0BCDற",
+      "typed": "ற",
+      "add": "ற"
+    },
+    {
+      "before": "ன",
+      "typed": "ன",
+      "add": "\u0BCDன"
+    },
+    {
+      "before": "ன\u0BCDன",
+      "typed": "ன",
+      "add": "ன"
+    },
+    {
+      "before": "ஸ",
+      "typed": "ஸ",
+      "add": "\u0BCDஸ"
+    },
+    {
+      "before": "ஸ\u0BCDஸ",
+      "typed": "ஸ",
+      "add": "ஸ"
+    },
+    {
+      "before": "ஷ",
+      "typed": "ஷ",
+      "add": "\u0BCDஷ"
+    },
+    {
+      "before": "ஷ\u0BCDஷ",
+      "typed": "ஷ",
+      "add": "ஷ"
+    },
+    {
+      "before": "ஜ",
+      "typed": "ஜ",
+      "add": "\u0BCDஜ"
+    },
+    {
+      "before": "ஜ\u0BCDஜ",
+      "typed": "ஜ",
+      "add": "ஜ"
+    },
+    {
+      "before": "ஹ",
+      "typed": "ஹ",
+      "add": "\u0BCDஹ"
+    },
+    {
+      "before": "ஹ\u0BCDஹ",
+      "typed": "ஹ",
+      "add": "ஹ"
+    },
+    {
+      "before": "க\u0BCDஷ",
+      "typed": "க\u0BCDஷ",
+      "add": "\u0BCDக\u0BCDஷ"
+    },
+    {
+      "before": "க\u0BCDஷ\u0BCDக\u0BCDஷ",
+      "typed": "க\u0BCDஷ",
+      "add": "க\u0BCDஷ"
+    },
+    {
+      "before": "க",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ங",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ச",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ஞ",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ட",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ண",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "த",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ந",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ப",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ம",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ய",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ர",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ல",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "வ",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ழ",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ள",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ற",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ன",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ஸ",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ஷ",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ஜ",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ஹ",
+      "typed": "அ",
+      "add": "",
+      "hold": true
+    },
+    {
+      "before": "ங",
+      "typed": "க",
+      "add": "\u0BCDக"
+    },
+    {
+      "before": "ங\u0BCDக",
+      "typed": "க",
+      "add": "க"
+    },
+    {
+      "before": "ந",
+      "typed": "த",
+      "add": "\u0BCDத"
+    },
+    {
+      "before": "ந\u0BCDத",
+      "typed": "த",
+      "add": "த"
+    },
+    {
+      "before": "ம",
+      "typed": "ப",
+      "add": "\u0BCDப"
+    },
+    {
+      "before": "ம\u0BCDப",
+      "typed": "ப",
+      "add": "ப"
+    },
+    {
+      "before": "ஞ",
+      "typed": "ச",
+      "add": "\u0BCDச"
+    },
+    {
+      "before": "ஞ\u0BCDச",
+      "typed": "ச",
+      "add": "ச"
+    },
+    {
+      "before": "ண",
+      "typed": "ட",
+      "add": "\u0BCDட"
+    },
+    {
+      "before": "ண\u0BCDட",
+      "typed": "ட",
+      "add": "ட"
+    },
+    {
+      "before": "ன",
+      "typed": "ற",
+      "add": "\u0BCDற"
+    },
+    {
+      "before": "ன\u0BCDற",
+      "typed": "ற",
+      "add": "ற"
+    }
+  ],
+  "longpress": {
+    "KeyQ": ["ஸ"],
+    "KeyW": ["ஷ"],
+    "KeyE": ["ஜ"],
+    "KeyR": ["ஹ"],
+    "KeyT": ["ஸ\u0BCDர\u0BC0"],
+    "KeyY": ["க\u0BCDஷ"],
+    "KeyA": ["௹"],
+    "KeyS": ["௺"],
+    "KeyD": ["௸"],
+    "KeyF": ["ஃ"],
+    "KeyZ": ["௳"],
+    "KeyX": ["௴"],
+    "KeyC": ["௵"],
+    "KeyV": ["௶"],
+    "KeyB": ["௷"]
+  }
+}

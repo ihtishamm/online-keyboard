@@ -669,6 +669,10 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - **Roman accuracy (Aksharantar test split, frequent words, top-1 / top-5, all Beta):** Nepali 44.9 / 52.6, Odia 41.5 / 48.9, Assamese 45.0 / 48.9, Sanskrit 50.0 / 60.4, Konkani 48.0 / 55.2, Maithili 48.7 / 60.6. `src/import-aksharantar.ts` writes the evaluation files; named entities and mined IndicCorp words are left out.
     - **Typing:** Tatoeba sentences for Nepali, Assamese (82 each), Sanskrit (47) and Odia (35). Konkani and Maithili have too few, so their typing test has words only (as for Sindhi and Kashmiri).
     - **Emoji:** CLDR keywords for Nepali, Odia, Assamese and Konkani. Sanskrit's and Maithili's CLDR files are empty, so they use Hindi's.
+  - **Tamil99 (done 2026-11-03):** a third layout on the Tamil page, from Keyman Thamizha Tamil99 2.0.5 (MIT).
+    - **Engine:** layouts can now have context rules (`rules`), keys whose text depends on what is already typed. Tamil99 needs them for its vowel signs and automatic pulli. Rules only add text, so undo and Backspace work as before. The Keyman importer reads them when a layout asks (`contextRules`) and reports them otherwise, so no other layout changed.
+    - **Changed from upstream:** the delinking அ (rule 6) adds nothing, where upstream adds an invisible ZWJ to the text. Upstream's rule 5 for ல reads ர்ல, a typo, so a third ல came out as ல்ல்ல and not ல்லல; fixed. Tests follow the published rules, 2 to 11.
+    - **Not done:** the typing tutor, test and games leave Tamil99 out and use InScript. They teach one key per character, and on Tamil99 the next key depends on the text. On-screen keys keep showing the letter, as the standard's keytops do, even when the key will type a sign.
   - [ ] **Languages:**
     - Indic: Punjabi (Gurmukhi), Marathi, Nepali, Gujarati, Tamil, Telugu, Kannada, Malayalam, Odia, Assamese, Sinhala, Sanskrit, Konkani, Maithili;
     - Dhivehi;

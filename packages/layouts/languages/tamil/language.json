@@ -12,7 +12,7 @@
   "aliases": [],
   "region": "south-asia",
   "fonts": ["tamil"],
-  "layouts": ["ta-roman", "ta-inscript"],
+  "layouts": ["ta-roman", "ta-inscript", "ta-tamil99"],
   "sample": "தமிழ் என் தாய்மொழி.",
   "voice": [],
   "wordList": true,

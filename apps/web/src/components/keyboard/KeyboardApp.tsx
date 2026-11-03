@@ -335,6 +335,12 @@ export default function KeyboardApp({
    * Type `text` produced by a key. In Roman mode a word boundary (space, punctuation) first
    * converts the Roman word before the caret; punctuation becomes its Urdu form.
    */
+  /** What context rules read (Tamil99). The longest rule is far shorter than this. */
+  const textBeforeCaret = () => {
+    const el = editorRef.current;
+    return el ? el.value.slice(Math.max(0, el.selectionStart - 32), el.selectionStart) : "";
+  };
+
   const typeText = (text: string) => {
     if (!roman && text === " " && suggest.correctBefore(" ")) return;
     if (insertWithRule(text)) return;
@@ -447,11 +453,15 @@ export default function KeyboardApp({
     if (!isKeyCode(e.code)) return; // Backspace, Enter, arrows... stay native
 
     e.preventDefault();
-    const result = machine.press(e.code, {
-      shift: e.shiftKey,
-      altgr,
-      caps: ne.getModifierState?.("CapsLock") ?? false,
-    });
+    const result = machine.press(
+      e.code,
+      {
+        shift: e.shiftKey,
+        altgr,
+        caps: ne.getModifierState?.("CapsLock") ?? false,
+      },
+      textBeforeCaret(),
+    );
     if (result.kind === "text") typeText(result.text);
     rerender();
   };
@@ -474,7 +484,7 @@ export default function KeyboardApp({
       const isLetter = code.startsWith("Key");
       insert(shift !== (caps && isLetter) ? upper : lower);
     } else {
-      const result = machine.press(code, latch.current());
+      const result = machine.press(code, latch.current(), textBeforeCaret());
       if (result.kind === "text") typeText(result.text);
     }
     latch.consume();

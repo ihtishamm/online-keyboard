@@ -12,6 +12,7 @@ import {
   importCldr,
   importKeyman,
   type KeyCode,
+  type ContextRule,
   type DeadKey,
   type KeyDef,
   type LayoutInput,
@@ -22,10 +23,14 @@ type Keys = NonNullable<LayoutInput["keys"]>;
 export interface ImportSpec {
   /** Output path under languages/. */
   out: string;
-  from: { cldr: string } | { keyman: string; ctrlAsAltGr?: boolean };
+  from:
+    | { cldr: string }
+    | { keyman: string; ctrlAsAltGr?: boolean; contextRules?: boolean; usDefaults?: boolean };
   meta: Omit<LayoutInput, "keys" | "longpress" | "deadkeys">;
   /** Our changes to the imported keys. Keep `meta.source` in step with them. */
   patch?: (keys: Keys) => void;
+  /** Our changes to the imported context rules. Keep `meta.source` in step with them. */
+  patchRules?: (rules: ContextRule[]) => ContextRule[];
   /**
    * Latin layouts: the language's special letters, offered first on a long press of their
    * base letter (ñ on n, é è ê ë on e), so phones reach them in one slide.
@@ -517,6 +522,29 @@ export const IMPORTS: readonly ImportSpec[] = [
   },
   ...LATIN_IMPORTS,
   ...WAVE1_IMPORTS,
+  {
+    out: "tamil/tamil99.json",
+    from: {
+      keyman: "keyman/ekwtamil99uni/ekwtamil99uni.kmn",
+      contextRules: true,
+      usDefaults: true,
+    },
+    meta: {
+      id: "ta-tamil99",
+      lang: "ta",
+      script: "Taml",
+      dir: "ltr",
+      name: { en: "Tamil99", native: "தமிழ்99" },
+      source:
+        "Keyman Thamizha Tamil99 2.0.5 by Mugunth, Umar and K. Sethu (MIT), after the Tamil Nadu government's Tamil99 standard. Delinking அ (rule 6) adds nothing to the text, where upstream adds an invisible ZWJ. The second ல of a doubled ல now stops the pulli (rule 5): upstream's rule reads ர்ல, a typo.",
+    },
+    patchRules: (rules) =>
+      rules.map((rule) => {
+        if (rule.add === "\u200D") return { ...rule, add: "", hold: true };
+        if (rule.before === "ர்ல" && rule.typed === "ல") return { ...rule, before: "ல்ல" };
+        return rule;
+      }),
+  },
 ];
 
 /** Characters worth a long press: letters and marks, not ASCII punctuation or digits. */
@@ -552,11 +580,11 @@ export interface ImportResult {
 /** Build one layout from its upstream source text. */
 export function buildImport(spec: ImportSpec, sourceText: string): ImportResult {
   const imported =
-    "cldr" in spec.from
-      ? importCldr(sourceText)
-      : importKeyman(sourceText, { ctrlAsAltGr: spec.from.ctrlAsAltGr ?? false });
+    "cldr" in spec.from ? importCldr(sourceText) : importKeyman(sourceText, spec.from);
   const keys = imported.keys;
   const deadkeys = "deadkeys" in imported ? (imported.deadkeys as DeadKey[]) : [];
+  const importedRules: ContextRule[] = "rules" in imported ? (imported.rules as ContextRule[]) : [];
+  const rules = spec.patchRules ? spec.patchRules(importedRules) : importedRules;
   spec.patch?.(keys);
   for (const def of Object.values(keys)) {
     for (const layer of ["n", "s", "ag", "sag"] as const) {
@@ -571,6 +599,7 @@ export function buildImport(spec: ImportSpec, sourceText: string): ImportResult 
       ...spec.meta,
       keys: ordered,
       ...(deadkeys.length ? { deadkeys } : {}),
+      ...(rules.length ? { rules } : {}),
       longpress: deriveLongpress(ordered, spec.accents),
     },
     warnings: imported.warnings,

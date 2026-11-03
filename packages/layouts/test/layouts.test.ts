@@ -158,6 +158,7 @@ const ALPHABETS: Record<string, string> = {
   "gu-inscript": "અઆઇઈઉઊઋએઐઓઔકખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલળવશષસહ",
   "pa-inscript": "ਅਆਇਈਉਊਏਐਓਔਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵੜਸਹ",
   "ta-inscript": "அஆஇஈஉஊஎஏஐஒஓஔகஙசஞடணதநபமயரலவழளறனஜஷஸஹ",
+  "ta-tamil99": "அஆஇஈஉஊஎஏஐஒஓஔகஙசஞடணதநபமயரலவழளறனஜஷஸஹ",
   "te-inscript": "అఆఇఈఉఊఋఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరఱలళవశషసహ",
   "kn-inscript": "ಅಆಇಈಉಊಋಎಏಐಒಓಔಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಲಳವಶಷಸಹ",
   "ml-inscript": "അആഇഈഉഊഋഎഏഐഒഓഔകഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരറലളഴവശഷസഹ",
@@ -323,5 +324,64 @@ describe("Latin layouts", () => {
     ["cs-qwertz", "2", "ě"],
   ])("%s: %s types %s", (id, keys, expected) => {
     expect(typeOn(id, keys)).toBe(expected);
+  });
+});
+
+describe("Tamil99 follows the published keystroke rules", () => {
+  /** Type US QWERTY characters, reading the text so far as the editor does. */
+  const type = (keys: string) => {
+    const machine = new TypingMachine(getLayout("ta-tamil99"));
+    let out = "";
+    for (const ch of keys) {
+      if (ch === " ") {
+        out += " "; // the editor handles Space itself
+        continue;
+      }
+      const hit = US_TO_CODE.get(ch);
+      if (!hit) throw new Error(`no key for ${ch}`);
+      const r = machine.press(hit[0], { ...NO_MODIFIERS, shift: hit[1] }, out);
+      if (r.kind === "text") out += r.text;
+    }
+    return out;
+  };
+
+  it.each([
+    ["upstream's example", "lks/f ams[f[dvos", "தமிழ் அரிச்சுவடி"],
+    ["rule 2: consonant and pulli", "hf", "க்"],
+    ["rule 3: every vowel sign", "hqhshwhdhehghthrhchxhz", "காகிகீகுகூகெகேகைகொகோகௌ"],
+    ["rule 3: grantha", "Qd", "ஸு"],
+    ["rule 4: doubled consonant", "hh", "க்க"],
+    ["rule 4: doubled ல", "nn", "ல்ல"],
+    ["rule 4: doubled grantha", "QQ", "ஸ்ஸ"],
+    ["rule 5: the third stays bare", "hhh", "க்கக"],
+    ["rule 5: then pairs again", "hhhh", "க்கக்க"],
+    ["rule 5: ல, which upstream gets wrong", "nnn", "ல்லல"],
+    ["rule 5: ர் then ல்ல", "mfnn", "ர்ல்ல"],
+    ["rule 6: அ adds nothing", "ha", "க"],
+    ["rule 6: stops the pulli", "hah", "கக"],
+    ["rule 6: stops the sign", "haq", "கஆ"],
+    ["rule 6: only for one key", "hahh", "கக்க"],
+    ["rule 7: soft and hard pairs", "bh ][ po ;l kj iu", "ங்க ஞ்ச ண்ட ந்த ம்ப ன்ற"],
+    ["rule 7: then bare", "bhh", "ங்கக"],
+    ["rule 8: vowel after anything else", "#q", "#ஆ"],
+    ["rule 8: vowel after a pulli", "hfq", "க்ஆ"],
+    ["rule 8: vowel after a sign", "hqq", "காஆ"],
+    ["rule 9: the caret shows a sign", "^q", "\u0BBE"],
+    ["rule 9: the caret twice", "^^", "^"],
+    ["rule 10", "^.^c", "\u2022\u00A9"],
+    ["rule 11", "^7^8^9^0^S", "\u2018\u2019\u201C\u201D\u00A0"],
+    ["aytham, Sri and ksha", "FTY", "ஃஸ்ரீக்ஷ"],
+    ["ksha takes signs and doubles", "Yq YY", "க்ஷா க்ஷ்க்ஷ"],
+    ["digits and punctuation pass through", "1,2.", "1,2."],
+    ["keys the layout leaves empty", "GHIJNU", ""],
+    ["page copy: அம்மா", "akkq", "அம்மா"],
+    ["page copy: தங்கம்", "lbhkf", "தங்கம்"],
+    ["page copy: கா", "hq", "கா"],
+  ])("%s", (_name, keys, text) => {
+    expect(type(keys)).toBe(text);
+  });
+
+  it("leaves no invisible characters in the text", () => {
+    expect(type("ha hah haq")).not.toMatch(/[\u200C\u200D]/);
   });
 });
