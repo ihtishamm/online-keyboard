@@ -1,5 +1,11 @@
 import AxeBuilder from "@axe-core/playwright";
-import { deadStrokeMap, keystrokeMap, type Keystroke, type Layout } from "@okb/engine";
+import {
+  deadStrokeMap,
+  keystrokeMap,
+  typingParts,
+  type Keystroke,
+  type Layout,
+} from "@okb/engine";
 import { expect, test, type Page } from "@playwright/test";
 import { readdirSync, readFileSync } from "node:fs";
 
@@ -18,7 +24,8 @@ const press = (page: Page, k: Keystroke) =>
 async function typeText(page: Page, layout: Layout, text: string) {
   const keys = keystrokeMap(layout);
   const dead = deadStrokeMap(layout, keys);
-  for (const ch of text) {
+  // Hangul syllables come from their letters.
+  for (const ch of layout.composer === "hangul" ? typingParts(text) : text) {
     if (keys.has(ch)) await press(page, keys.get(ch)!);
     else if (dead.has(ch)) {
       await press(page, dead.get(ch)!.first);
@@ -104,12 +111,16 @@ for (const language of LANGUAGES) {
       const byChar = new Map(
         shown.filter(([, label]) => label?.trim()).map(([code, label]) => [label, code]),
       );
-      const letters = [...language.sample.toLowerCase()].filter((ch) => byChar.has(ch));
-      const typed = letters.slice(0, 5);
+      // Hangul keys show letters that join: tap a whole word's letters and expect the syllables.
+      const hangul = layout.composer === "hangul";
+      const source = hangul ? typingParts(word) : language.sample.toLowerCase();
+      const letters = [...source].filter((ch) => byChar.has(ch));
+      const typed = hangul ? letters : letters.slice(0, 5);
       expect(typed.length, `letters of "${language.sample}" on the keyboard`).toBeGreaterThan(1);
       for (const ch of typed) await keyboard.locator(`button[data-key="${byChar.get(ch)}"]`).tap();
       // A Latin keyboard may start in capitals.
-      await expect(editor(page)).toHaveValue(new RegExp(`^${escape(typed.join(""))}$`, "i"));
+      const expected = hangul ? word : typed.join("");
+      await expect(editor(page)).toHaveValue(new RegExp(`^${escape(expected)}$`, "i"));
     });
 
     test("has no serious accessibility violations @nightly", async ({ page }) => {

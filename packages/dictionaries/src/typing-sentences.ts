@@ -61,9 +61,9 @@ const known = existsSync(dataFile("words.txt"))
  * Letters, spaces, and the punctuation every layout of the script has a key for: the Catalan
  * middle dot; Arabic-script ، ؟ ۔ and ZWNJ (Farsi می\u200Cروم); the Indic danda।
  */
-const ALLOWED = latin ? /^[\p{L}\p{M} .,?!'·-]+$/u : /^[\p{L}\p{M} .,?!،؟۔।\u200C]+$/u;
+const ALLOWED = latin ? /^[\p{L}\p{M} .,?!'·-]+$/u : /^[\p{L}\p{M} .,?!،؟۔।\u200C։՝՞՜។៕၊။]+$/u;
 /** What is left of a sentence without its words: spaces and punctuation, never another script. */
-const BETWEEN = /^[ .,?!'·،؟۔।\u200C-]*$/u;
+const BETWEEN = /^[ .,?!'·،؟۔।\u200C։՝՞՜។៕၊။-]*$/u;
 const ARABIC_MARKS = /[\u064B-\u0652]/u;
 /** Tom and Mary as Tatoeba writes them in each script, and Arabic Tatoeba's Sami and Layla. */
 const NAMES =
@@ -72,7 +72,7 @@ const MIN_WORDS = Number(args["min-words"]);
 const MIN_SENTENCES = 20;
 
 const clean = (text: string) =>
-  text
+  (rules.code === "hy" ? text.replace(/:/g, "։") : text)
     .normalize("NFC")
     .replace(/[\u2019\u02BC]/g, "'")
     .replace(/[\u00A0\u202F]/g, " ")
@@ -84,10 +84,12 @@ const ok = (text: string) => {
   if (latin && /^[^\p{Lu}]/u.test(text)) return false;
   if (!latin && rules.code !== "bal" && ARABIC_MARKS.test(text)) return false;
   if (tested.has(text.toLowerCase()) || text.length > 110) return false;
-  const words = text.split(" ");
-  if (words.length < MIN_WORDS || words.length > 16) return false;
+  // Scripts without spaces count the words the word breaker finds.
+  const split = rules.segment;
+  const pieces = split ? (text.match(rules.run) ?? []).flatMap((r) => split(r)) : text.split(" ");
+  if (pieces.length < MIN_WORDS || pieces.length > 16) return false;
   if (!BETWEEN.test(text.replace(rules.run, ""))) return false;
-  const runs = text.match(rules.run) ?? [];
+  const runs = split ? pieces : (text.match(rules.run) ?? []);
   return runs.every((w) => {
     const word = rules.normalizeWord(w);
     return word !== null && (latin || !known || known.has(word));

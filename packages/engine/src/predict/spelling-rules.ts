@@ -1,7 +1,7 @@
 import { ROWS, type KeyCode } from "../layout/keycodes";
 import { phoneLayout } from "../layout/phone";
 import type { Layout } from "../layout/schema";
-import { LATIN_LOCALES, foldLatin } from "../text/latin";
+import { CASE_LOCALES, LATIN_LOCALES, foldLatin } from "../text/latin";
 import { WORD_NORMALIZERS } from "../text/normalize";
 import { URDU_SPELLING, type SpellingRules } from "./spell";
 
@@ -208,6 +208,7 @@ const INFLECTIONS: Readonly<Record<string, readonly (readonly [string, string])[
   sv: [["er", ""], ["ar", ""], ["or", "a"], ["en", ""], ["na", ""], ["et", ""]],
   ca: [["s", ""], ["es", "a"], ["os", ""], ["a", ""], ["es", ""]],
   hr: [["i", ""], ["e", ""], ["a", ""], ["ovi", ""], ["evi", ""]],
+  vi: [],
 };
 
 const LATIN: Readonly<Record<string, { groups: readonly string[]; weak?: string }>> = {
@@ -227,6 +228,17 @@ const LATIN: Readonly<Record<string, { groups: readonly string[]; weak?: string 
   sv: { groups: ["aåä", "oö", "eé"] },
   ca: { groups: ["aà", "eéè", "ií", "oóò", "uúü", "cç", "bv"], weak: "h" },
   hr: { groups: ["cčć", "dđ", "sš", "zž"] },
+  vi: {
+    groups: [
+      "aàáảãạăằắẳẵặâầấẩẫậ",
+      "eèéẻẽẹêềếểễệ",
+      "iìíỉĩị",
+      "oòóỏõọôồốổỗộơờớởỡợ",
+      "uùúủũụưừứửữự",
+      "yỳýỷỹỵ",
+      "dđ",
+    ],
+  },
 };
 
 /** Romanian also has older cedilla letters (ş ţ) for its comma ones (ș ț). */
@@ -235,8 +247,26 @@ const latinKey = (code: string, locale: string) =>
     ? (w: string) => foldLatin(w, locale).replace(/ş/g, "ș").replace(/ţ/g, "ț")
     : (w: string) => foldLatin(w, locale);
 
+/** Letters that sound alike or are mixed up in each Cyrillic language. */
+const CYRILLIC: Readonly<Record<string, readonly string[]>> = {
+  ru: ["еёэ", "иы", "ао", "шщ", "ьъ", "зс", "бп", "гк", "дт", "вф", "жш"],
+  uk: ["еи", "иі", "гґ", "єе", "їі", "шщ", "зс", "дт"],
+  be: ["еёэ", "іы", "уў", "шч", "зс", "дт"],
+  bg: ["ъа", "еи", "оу", "шщ", "зс", "дт", "бп"],
+  sr: ["чћ", "џђ", "шс", "жз", "љл", "њн"],
+  mk: ["чќ", "џѓ", "шс", "жз", "љл", "њн"],
+  kk: ["әа", "ғг", "қк", "ңн", "өо", "ұу", "үу", "һх", "іи"],
+  ky: ["ңн", "өо", "үу", "еэ", "иы"],
+  tg: ["ғг", "ӣи", "қк", "ӯу", "ҳх", "ҷч"],
+  mn: ["өо", "үу", "еэ", "иы", "цч", "зж"],
+};
+
 /** Languages the spell checker has rules for (data codes). */
-export const SPELLING_LANGUAGES: readonly string[] = [...Object.keys(BASES), ...Object.keys(LATIN)];
+export const SPELLING_LANGUAGES: readonly string[] = [
+  ...Object.keys(BASES),
+  ...Object.keys(LATIN),
+  ...Object.keys(CYRILLIC),
+];
 
 /** The spelling rules of a language, with keyboard slips from its layouts. */
 export function spellingRules(code: string, layouts: readonly Layout[] = []): SpellingRules | null {
@@ -255,6 +285,20 @@ export function spellingRules(code: string, layouts: readonly Layout[] = []): Sp
         (INFLECTIONS[code] ?? [])
           .filter(([end]) => key.endsWith(end) && key.length > end.length + 2)
           .map(([end, base]) => key.slice(0, key.length - end.length) + base),
+      skipNames: true,
+    };
+  }
+  const cyrillic = CYRILLIC[code];
+  const caseLocale = CASE_LOCALES[code];
+  if (cyrillic && caseLocale) {
+    return {
+      script: "Cyrillic",
+      key: (w) => foldLatin(w, caseLocale),
+      homophones: cyrillic,
+      nearMisses: keyboardNeighbours(layouts).map((p) => p.toLocaleLowerCase(caseLocale)),
+      weak: "",
+      optional: "",
+      nonJoining: "",
       skipNames: true,
     };
   }

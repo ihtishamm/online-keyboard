@@ -1,0 +1,13 @@
+{
+  "source": "bgwiki.xml.bz2",
+  "pages": 25395,
+  "sentences": 1075858,
+  "repeatedSentencesSkipped": 139005,
+  "tokens": 13670420,
+  "distinctWords": 399591,
+  "wordsKept": 100000,
+  "nextWordHeads": 9448,
+  "text": "bg-train.txt",
+  "textSentences": 24680,
+  "textWeight": 49.06
+}

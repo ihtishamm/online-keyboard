@@ -1,0 +1,10 @@
+{
+  "scheme": "kk-roman",
+  "source": "English Wiktionary word pairs, in keyboard letters",
+  "pairs": 1000,
+  "top1": 0.724,
+  "top5": 0.765,
+  "messageWords": 62,
+  "correctionsPer10Words": 0.81,
+  "beta": true
+}

@@ -1,0 +1,10 @@
+{
+  "scheme": "el-roman",
+  "source": "English Wiktionary word pairs, in keyboard letters",
+  "pairs": 1000,
+  "top1": 0.532,
+  "top5": 0.599,
+  "messageWords": 61,
+  "correctionsPer10Words": 1.15,
+  "beta": true
+}

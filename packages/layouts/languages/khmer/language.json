@@ -1,0 +1,25 @@
+{
+  "slug": "khmer",
+  "code": "km",
+  "order": 560,
+  "lang": "km",
+  "script": "Khmr",
+  "dir": "ltr",
+  "name": {
+    "en": "Khmer",
+    "native": "ខ្មែរ"
+  },
+  "aliases": ["Cambodian"],
+  "region": "southeast-asia",
+  "fonts": ["khmer"],
+  "layouts": ["km-nida"],
+  "sample": "សួស្តី ថ្ងៃនេះអាកាសធាតុល្អណាស់",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "km",
+    "bing": "km"
+  },
+  "tier": null,
+  "notes": "Khmer is written without spaces between words. No Roman typing yet. No voice yet: the locale has not passed /voice-probe."
+}

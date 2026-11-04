@@ -8,7 +8,7 @@ import {
 import { decodeDictionary } from "@okb/engine/compact";
 import { romanizeWord } from "@okb/engine/romanize";
 import { isBlocked, readBlocklist } from "@okb/dictionaries/blocked";
-import { LANGUAGES, getLayout, getScheme, type Language } from "@okb/layouts";
+import { LANGUAGES, getLayout, getScheme, type Language, isRomanLayout } from "@okb/layouts";
 import { typeable } from "../../components/typing/drill";
 import { ROMAN_TABLES } from "../../components/tools/roman-tables";
 
@@ -70,10 +70,13 @@ export interface PracticeText {
 
 /**
  * Layouts typed key by key: not the Roman ones, which convert whole words, and not those whose
- * keys depend on the text typed (Tamil99), whose next key the tutor cannot work out yet.
+ * keys depend on context rules (Tamil99), whose next key the tutor cannot work out yet. Hangul,
+ * Telex and VNI do work: their keys build the word part by part (engine typingParts).
  */
 const keyLayouts = (l: Language): Layout[] =>
-  l.layouts.map(getLayout).filter((layout) => !layout.translit && !layout.rules.length);
+  l.layouts
+    .map(getLayout)
+    .filter((layout) => !layout.translit && !layout.rules.length);
 
 /**
  * Languages with generated typing pages: every one with a key layout, but Urdu, and Hindko,
@@ -153,7 +156,7 @@ export async function practiceText(l: Language): Promise<PracticeText> {
 
 /** The language's Roman layout (English letters, converted word by word), if it has one. */
 export const romanLayout = (l: Language): Layout | undefined =>
-  l.layouts.map(getLayout).find((layout) => layout.translit);
+  l.layouts.map(getLayout).find(isRomanLayout);
 
 /**
  * Common words with an English-letter spelling the site's Roman typing turns back into them,

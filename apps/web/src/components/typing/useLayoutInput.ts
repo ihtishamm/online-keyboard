@@ -31,6 +31,8 @@ export interface LayoutInputOptions {
   ownKeyboard?: boolean;
   type: (text: string) => void;
   backspace: () => void;
+  /** What is typed so far: Hangul and Vietnamese keys rewrite it as they go. */
+  typed?: () => string;
 }
 
 export function useLayoutInput(layout: Layout, o: LayoutInputOptions) {
@@ -47,6 +49,12 @@ export function useLayoutInput(layout: Layout, o: LayoutInputOptions) {
     machine.setLayout(layout);
     latch.reset();
   }, [layout, machine, latch]);
+
+  /** Type a key's result, taking back what a composing key rewrites. */
+  const write = (text: string, remove = 0) => {
+    for (let i = 0; i < remove; i++) o.backspace();
+    if (text) o.type(text);
+  };
 
   /** Space types a waiting dead key's own character, or a space. */
   const space = () => {
@@ -73,12 +81,12 @@ export function useLayoutInput(layout: Layout, o: LayoutInputOptions) {
     if (!altgr && (e.ctrlKey || e.metaKey || e.altKey)) return;
     if (!isKeyCode(e.code)) return; // Backspace and the like work natively on the input
     e.preventDefault();
-    const result = machine.press(e.code, {
-      shift: e.shiftKey,
-      altgr,
-      caps: ne.getModifierState?.("CapsLock") ?? false,
-    });
-    if (result.kind === "text") o.type(result.text);
+    const result = machine.press(
+      e.code,
+      { shift: e.shiftKey, altgr, caps: ne.getModifierState?.("CapsLock") ?? false },
+      o.typed?.() ?? "",
+    );
+    if (result.kind === "text") write(result.text, result.remove);
     rerender();
   };
 
@@ -94,8 +102,8 @@ export function useLayoutInput(layout: Layout, o: LayoutInputOptions) {
 
   const onChar = (code: KeyCode) => {
     if (o.disabled) return;
-    const result = machine.press(code, latch.current());
-    if (result.kind === "text") o.type(result.text);
+    const result = machine.press(code, latch.current(), o.typed?.() ?? "");
+    if (result.kind === "text") write(result.text, result.remove);
     latch.consume();
     rerender();
   };

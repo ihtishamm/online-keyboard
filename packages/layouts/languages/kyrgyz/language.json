@@ -1,0 +1,25 @@
+{
+  "slug": "kyrgyz",
+  "code": "ky",
+  "order": 470,
+  "lang": "ky",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Kyrgyz",
+    "native": "Кыргызча"
+  },
+  "aliases": ["Kirghiz"],
+  "region": "central-asia",
+  "fonts": ["latin"],
+  "layouts": ["ky-standard", "ky-roman"],
+  "sample": "Саламатсызбы! Бүгүн кандайсыз?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ky",
+    "bing": "ky"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

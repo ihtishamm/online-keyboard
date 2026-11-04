@@ -1,0 +1,242 @@
+{
+  "id": "ko-2set",
+  "lang": "ko",
+  "script": "Hang",
+  "dir": "ltr",
+  "name": {
+    "en": "2-set (Dubeolsik)",
+    "native": "두벌식"
+  },
+  "source": "The Korean standard 2-set layout, KS X 5002, written from the standard. Letters join into syllables as you type, and Backspace takes back one letter at a time.",
+  "keys": {
+    "Backquote": {
+      "n": "`",
+      "s": "~"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "!"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "@"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "#"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "$"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "%"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "^"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "&"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "*"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+"
+    },
+    "KeyQ": {
+      "n": "ㅂ",
+      "s": "ㅃ",
+      "caps": "none"
+    },
+    "KeyW": {
+      "n": "ㅈ",
+      "s": "ㅉ",
+      "caps": "none"
+    },
+    "KeyE": {
+      "n": "ㄷ",
+      "s": "ㄸ",
+      "caps": "none"
+    },
+    "KeyR": {
+      "n": "ㄱ",
+      "s": "ㄲ",
+      "caps": "none"
+    },
+    "KeyT": {
+      "n": "ㅅ",
+      "s": "ㅆ",
+      "caps": "none"
+    },
+    "KeyY": {
+      "n": "ㅛ",
+      "s": "ㅛ",
+      "caps": "none"
+    },
+    "KeyU": {
+      "n": "ㅕ",
+      "s": "ㅕ",
+      "caps": "none"
+    },
+    "KeyI": {
+      "n": "ㅑ",
+      "s": "ㅑ",
+      "caps": "none"
+    },
+    "KeyO": {
+      "n": "ㅐ",
+      "s": "ㅒ",
+      "caps": "none"
+    },
+    "KeyP": {
+      "n": "ㅔ",
+      "s": "ㅖ",
+      "caps": "none"
+    },
+    "BracketLeft": {
+      "n": "[",
+      "s": "{"
+    },
+    "BracketRight": {
+      "n": "]",
+      "s": "}"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyA": {
+      "n": "ㅁ",
+      "s": "ㅁ",
+      "caps": "none"
+    },
+    "KeyS": {
+      "n": "ㄴ",
+      "s": "ㄴ",
+      "caps": "none"
+    },
+    "KeyD": {
+      "n": "ㅇ",
+      "s": "ㅇ",
+      "caps": "none"
+    },
+    "KeyF": {
+      "n": "ㄹ",
+      "s": "ㄹ",
+      "caps": "none"
+    },
+    "KeyG": {
+      "n": "ㅎ",
+      "s": "ㅎ",
+      "caps": "none"
+    },
+    "KeyH": {
+      "n": "ㅗ",
+      "s": "ㅗ",
+      "caps": "none"
+    },
+    "KeyJ": {
+      "n": "ㅓ",
+      "s": "ㅓ",
+      "caps": "none"
+    },
+    "KeyK": {
+      "n": "ㅏ",
+      "s": "ㅏ",
+      "caps": "none"
+    },
+    "KeyL": {
+      "n": "ㅣ",
+      "s": "ㅣ",
+      "caps": "none"
+    },
+    "Semicolon": {
+      "n": ";",
+      "s": ":"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "IntlBackslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyZ": {
+      "n": "ㅋ",
+      "s": "ㅋ",
+      "caps": "none"
+    },
+    "KeyX": {
+      "n": "ㅌ",
+      "s": "ㅌ",
+      "caps": "none"
+    },
+    "KeyC": {
+      "n": "ㅊ",
+      "s": "ㅊ",
+      "caps": "none"
+    },
+    "KeyV": {
+      "n": "ㅍ",
+      "s": "ㅍ",
+      "caps": "none"
+    },
+    "KeyB": {
+      "n": "ㅠ",
+      "s": "ㅠ",
+      "caps": "none"
+    },
+    "KeyN": {
+      "n": "ㅜ",
+      "s": "ㅜ",
+      "caps": "none"
+    },
+    "KeyM": {
+      "n": "ㅡ",
+      "s": "ㅡ",
+      "caps": "none"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "<",
+      "caps": "shift"
+    },
+    "Period": {
+      "n": ".",
+      "s": ">"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "?"
+    }
+  },
+  "longpress": {
+    "KeyQ": ["ㅃ"],
+    "KeyW": ["ㅉ"],
+    "KeyE": ["ㄸ"],
+    "KeyR": ["ㄲ"],
+    "KeyT": ["ㅆ"],
+    "KeyO": ["ㅒ"],
+    "KeyP": ["ㅖ"]
+  },
+  "composer": "hangul"
+}

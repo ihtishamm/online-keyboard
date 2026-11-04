@@ -1,0 +1,25 @@
+{
+  "slug": "macedonian",
+  "code": "mk",
+  "order": 450,
+  "lang": "mk",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Macedonian",
+    "native": "Македонски"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["mk-standard", "mk-roman"],
+  "sample": "Добар ден! Како сте денес?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "mk",
+    "bing": "mk"
+  },
+  "tier": null,
+  "notes": "No translation from DeepL. No voice yet: the locale has not passed /voice-probe."
+}

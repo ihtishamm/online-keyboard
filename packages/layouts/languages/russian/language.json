@@ -1,0 +1,26 @@
+{
+  "slug": "russian",
+  "code": "ru",
+  "order": 400,
+  "lang": "ru",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Russian",
+    "native": "Русский"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["ru-standard", "ru-phonetic", "ru-roman"],
+  "sample": "Здравствуйте! Как у вас дела сегодня?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ru",
+    "bing": "ru",
+    "deepl": "ru"
+  },
+  "tier": null,
+  "notes": "Standard is the Windows ЙЦУКЕН layout. Phonetic (ЯВЕРТЫ) comes from xkeyboard-config, as Windows' Mnemonic layout types letters through dead keys. No voice yet: the locale has not passed /voice-probe."
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "tajik",
+  "code": "tg",
+  "order": 480,
+  "lang": "tg",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Tajik",
+    "native": "Тоҷикӣ"
+  },
+  "aliases": ["Tajiki"],
+  "region": "central-asia",
+  "fonts": ["latin"],
+  "layouts": ["tg-standard", "tg-roman"],
+  "sample": "Салом! Шумо имрӯз чӣ хелед?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "tg",
+    "bing": "tg"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

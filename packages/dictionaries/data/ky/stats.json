@@ -1,0 +1,10 @@
+{
+  "source": "kywiki.xml.bz2",
+  "pages": 77191,
+  "sentences": 708673,
+  "repeatedSentencesSkipped": 378350,
+  "tokens": 7589359,
+  "distinctWords": 458797,
+  "wordsKept": 100000,
+  "nextWordHeads": 9742
+}

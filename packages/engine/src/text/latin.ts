@@ -23,11 +23,41 @@ export const LATIN_LOCALES: Readonly<Record<string, string>> = {
   sv: "sv",
   ca: "ca",
   hr: "hr",
+  vi: "vi",
 };
 
 export const isLatinCode = (code: string): boolean => code in LATIN_LOCALES;
 
-const LETTER = /[\p{Script=Latin}\p{M}]/u;
+/**
+ * Every language written in a cased script, Latin or not. Their word lists work the same way:
+ * words keep their usual case, lookups fold it. Smart accents stay Latin only.
+ */
+export const CASE_LOCALES: Readonly<Record<string, string>> = {
+  ...LATIN_LOCALES,
+  ru: "ru",
+  uk: "uk",
+  be: "be",
+  bg: "bg",
+  sr: "sr",
+  mk: "mk",
+  kk: "kk",
+  ky: "ky",
+  tg: "tg",
+  mn: "mn",
+  el: "el",
+  hy: "hy",
+};
+
+export const isCasedCode = (code: string): boolean => code in CASE_LOCALES;
+
+/** Languages whose words hold an apostrophe (Ukrainian м'ята, Belarusian сям'я). */
+const APOSTROPHE_INSIDE: ReadonlySet<string> = new Set(["uk", "be"]);
+
+/** What may sit inside a word of this language, beside letters and marks. */
+export const innerMarks = (code: string): RegExp =>
+  APOSTROPHE_INSIDE.has(code) ? /[·'’-]/ : /[·-]/;
+
+const LETTER = /[\p{L}\p{M}]/u;
 /** Inside a word only: Catalan's middle dot (col·lecció) and hyphens (peut-être). */
 const INNER = /[·-]/;
 /** A Latin word, as stored in word lists. Apostrophes split words (l'homme, dell'anno). */
@@ -84,14 +114,14 @@ export function matchCase(typed: string, word: string, locale: string): string {
   return word;
 }
 
-/** The Latin word ending at the caret (letters, marks, inner · and -), for completions. */
-export function latinWordBefore(text: string, caret: number): WordRange | null {
+/** The word ending at the caret in a cased script (letters, marks, inner · and -), for completions. */
+export function latinWordBefore(text: string, caret: number, inner = INNER): WordRange | null {
   if (caret < text.length && LETTER.test(text[caret]!)) return null;
   let start = caret;
   while (start > 0) {
     const c = text[start - 1]!;
     if (LETTER.test(c)) start--;
-    else if (INNER.test(c) && start > 1 && LETTER.test(text[start - 2]!) && start < caret) start--;
+    else if (inner.test(c) && start > 1 && LETTER.test(text[start - 2]!) && start < caret) start--;
     else break;
   }
   if (start === caret || !/\p{L}/u.test(text[start]!)) return null;
@@ -108,11 +138,12 @@ export function previousLatinWord(
   text: string,
   caret: number,
   locale: string,
+  inner = INNER,
 ): string | null | undefined {
   const before = text.slice(0, caret);
   if (before.length > 0 && !/\s$/.test(before)) return undefined;
   const trimmed = before.trimEnd();
   if (trimmed.length === 0 || SENTENCE_END.test(trimmed[trimmed.length - 1]!)) return null;
-  const word = latinWordBefore(trimmed, trimmed.length);
+  const word = latinWordBefore(trimmed, trimmed.length, inner);
   return word ? foldLatin(word.word, locale) : undefined;
 }

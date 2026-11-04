@@ -87,7 +87,7 @@ Each item's competitor check (§5.1) refreshes this table. Rows marked *(check)*
 | Competitor | What they do well | Their gap | Our answer |
 |---|---|---|---|
 | **Lexilogos** (keyboards, case converter) | About 200 scripts. Typing shortcuts (`e=` é, `c=` ç, `n=` ñ, `??` ¿). Dictionary and translate links. | Shortcuts must be learnt per site. The case converter is upper/lower only (checked 2026-10-31). No suggestions or spell check. Phone UX *(check)*. | The standard US-International dead keys people already know, an accent bar, and **smart accents** (type `como estas`, get `cómo estás`). Locale-aware case converter. A real phone keyboard. |
-| **Branah** | 98 languages | No transliteration or suggestions for Urdu. No Nastaliq. The phone layout is chosen once at load (Phase 0 teardown). | Deep features per language, plus a phone keyboard as good as Gboard. |
+| **Branah** | 98 languages. Korean and Thai work (9b check). | No transliteration or suggestions for Urdu. No Nastaliq. The phone layout is chosen once at load (Phase 0 teardown). No kanji or pinyin conversion; Vietnamese did not convert; 7–12 requests while typing (9b check). | Deep features per language, plus a phone keyboard as good as Gboard. |
 | **English-to-Hindi sites** (easyhindityping and similar) | Phonetic Hindi typing with suggestions. Kruti Dev converters. Large Indian audience. | 3–5 ad slots and 70–80 requests while typing (easyhindityping's Tamil page, easynepalityping, checked 2026-11-01). Letter-by-letter rules get common words wrong (वनाक्कम). tamil.changathi.com is right but scrolls sideways at 360 px. No accuracy numbers. | Roman typing for 30+ South Asian languages, offline and private, with a measured accuracy number. |
 | **Typing-test sites** (monkeytype, 10fastfingers, typing.com; exam sites typingbaba, hindityping.info) | Polished tests, leaderboards. Monkeytype and 10fastfingers cover Urdu, Hindi, Arabic, Farsi, Thai, Korean and more. 10fastfingers already scores Indic by keystrokes. keybr has a daily goal and streaks. | They need the device's own keyboard for the language: no on-screen layout and no layout choice, so with no Urdu or Hindi keyboard installed you can't take the test. 10fastfingers' Urdu isn't Nastaliq. The exam sites are ad-heavy on phones: typingbaba shows 11 ad slots and an app-install popup at 360 px. keybr is English letters only and overflows sideways at 360 px. No lessons built from the layout, no Roman spelling lessons (checked 2026-11-01). | A test and tutor on the layout you choose, typed with the on-screen keyboard on any device, in Nastaliq and correct Indic shaping. Lessons built from each layout, Roman spelling lessons, no ads over the text. Same-for-everyone daily challenge with streaks and a share card. |
 | **Keyboard-tester sites** (monsgeek, key-tester.pages.dev) | Large search volume. Monsgeek: ANSI and ISO pictures, ghosting and rollover, polling rate. | Built for desktop: key-tester and monsgeek overflow sideways at 360 px (681 px and 462 px). Store pages with sale popups. No ABNT2 or JIS, no layout mapping, no Unicode inspector (checked 2026-11-01). | A tester with ANSI, ISO, ABNT2 and JIS, chatter checks and OS layout detection, plus layout mapping and a Unicode inspector that shows ZWJ, ZWNJ and RLM, and a multi-touch tester on phones. |
@@ -702,13 +702,41 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - Page titles: "English to Tamil Typing" and so on.
   - [x] **Standards:** InScript (CLDR), Tamil99, Nepali Traditional and Romanised, Sinhala Wijesekara, ITRANS and IAST for Sanskrit.
   - [x] **Hindko, Brahui, Shina and Khowar:** only if an openly licensed layout exists, or we design one with a native speaker. Otherwise defer them and write down why.
-- [ ] **9b. Wave 3: global majors** (23 languages).
-  - [ ] **Languages:**
+- [x] **9b. Wave 3: global majors** (23 languages).
+  - **Competitor check (2026-11-04, Chromium, 1366 and 360 px).**
+    - **What they do:** Lexilogos transliterates Russian and Korean correctly with no requests while typing, and Japanese to kana. Branah has key layouts for Russian, Japanese and Chinese; its Korean and Thai work. translit.net did not load from here.
+    - **What they miss:** in these probes nobody converted to kanji or from pinyin to hanzi. Lexilogos's Vietnamese Telex leaves the tone letters in, its Hebrew goes letter by letter with no final forms, and its Japanese page overflows 4 px at 360 px. Branah's Vietnamese did not convert, its Greek goes letter by letter, and it loads 6 iframes and sends 7–12 requests while typing.
+    - **What we do better:** kanji and hanzi conversion in the page, Telex and VNI with both tone placements, Hangul with one-jamo Backspace, suggestions for every language with a list, a published score per language, and all of it offline after the first use. **Beat-list review:** each is in the product and has an e2e test; the scores are modest (below), and pages say Beta.
+  - **Sources (checked 2026-11-04):** see §8. CC-CEDICT, OpenCC and the Mozc dictionary are all usable, so Japanese ships kanji and not kana only. ICU's word segmentation comes with Node and the browser.
+  - **Shipped:** all 23 languages, with 46 new layouts. New engine parts: romaji → kana (`core/romaji.ts`), a phrase converter (shortest path over readings, `translit/phrase.ts`), Zhuyin → pinyin, Chinese script conversion, ICU segmentation while typing (`text/words.ts`), and Hangul, Telex and VNI in the tutor, test and games, which follow composition (`typingParts`).
+  - **Roman typing, top-1 / top-5 on test words (all Beta):** bg 96.1 / 98.8, mk 97.5 / 97.7, be 92.6 / 94.6, uk 92.3 / 95.2, ky 91.8 / 94.6, tg 91.0 / 96.4, mn 85.8 / 88.5, ru 85.6 / 92.9, ka 83.0 / 93.0, hy 81.9 / 89.7, kk 72.4 / 76.5, he 56.2 / 81.7, el 53.2 / 59.9. Pairs are English Wiktionary's spellings (`src/import-wiktionary.ts`), so **do not compare these with Dakshina or Aksharantar scores**. Serbian's 99.7 / 100 is on pairs we generated from the word list in Gajica (Wiktionary files it under Serbo-Croatian, in Latin), so it only shows the rules work; it is not a score of real spellings.
+    - **Held-out messages, corrections per 10 words:** he 2.26, ky 1.33, el 1.15, others under 1. The messages are ours and not native-reviewed.
+    - **Why Greek and Hebrew are low:** many test words are not in the shipped list, and Greek's tonos and Hebrew's unwritten vowels cannot be guessed from rules alone.
+  - **Conversion (test split: 500 Tatoeba sentences with dictionary readings; this scores characters, not real typing):** Chinese word top-1 83.4 %, top-5 97.4 %, sentence characters 85.8 %, exact sentences 40.2 %. Japanese word top-1 86.1 %, sentence characters 84.0 %, exact sentences 22 %. There are no statistics between words, so expect to pick from the bar often. A lone syllable takes the most common character by Wikipedia's counts: `ma1` gives 摩, not 妈.
+  - **Vietnamese:** smart accents restore 93.6 % of accent words (7,344 by Space and 35,367 in the bar), and change 8 of 8,545 plain words. Under the 97 % target, and spell check does not meet its targets.
+  - **Word lists:** 14 at 100k. Below that: ja 98,114, zh 55,712, vi 53,180, km 36,195, th 35,245, my 23,573, lo 11,195 (under the 20k for Tier B). Word boundaries in Thai, Lao, Khmer, Burmese, Chinese and Japanese are ICU's guess. Typing sentences: 72–80 each, except mn 27, and none for ky and tg.
+  - **Deviations:**
+    - CLDR has no Russian phonetic that fits, so it is xkb's; Ukrainian phonetic is xkb's too. Kazakh's ё is added on AltGr+T.
+    - Hand-made 4-row phone layouts for kk, hy, th, lo and zht-zhuyin.
+    - Khmer's space bar types a plain space, as we drop upstream's ZWSP. Khmer's U+17FB–17FF keys from xkb type the real vowel pairs. Thai Pattachote drops a private-use character, Burmese its AltGr level.
+    - Vietnamese has Telex and VNI only, no Windows layout.
+    - Hangul and CJK use system fonts: a web font is many MB. Japanese and Chinese readings are about 450 KB gzipped each, above the 150 KB dictionary budget, so they load on the first key and are cached for offline use.
+    - Traditional Chinese has the code `zht` (the registry takes 2–3 letters).
+  - **Fixed along the way:** word-list files split surrogate pairs of rare Chinese characters into U+FFFD (5 words in the Chinese list); the encoder now keeps pairs whole, with a test. Khmer's deprecated ឣ and ឤ are normalised. Tajik emoji gaps are filled with English, as for Uyghur (CLDR names 69 %).
+  - **Checks (2026-11-05):** full e2e on a build with PDFs (152): 840 passed, 342 skipped, none failed, across desktop, mobile, android-360 and perf (iPhone off here). Unit tests 2,553 passed; typecheck and lint clean. The 14 failures before this were all in the tests or their examples: example words that come out capitalised (Greek, Armenian, Bulgarian, Tajik), Korean's phone test looking for syllables on keys that show letters, a wrong key name in the Chinese phone test, and the ITRANS and Tamil99 tests typing before the page hydrated (likely also the "first key lost" in batch 3's checks). The editor is read-only until hydration, so anyone typing that early loses those keys; not changed.
+  - **Not done, and follow-ups:**
+    - **Tiers:** the 20 languages with tutors reach Tier C. **Japanese and both Chinese languages have no tier**, as they have no typing tutor: the text typed differs from the text shown, so lessons need a design of their own. Tier B is blocked on spell check for all, as in 9a: there are no misspelling sets outside the original languages.
+    - No Roman typing for Thai, Lao, Khmer, Burmese and Korean; their pages say so. Thai and Korean are worth doing next.
+    - Blocklists are absent for el, he, hy, ka, lo, km, my and vi (LDNOOBW has none); typing sentences there come from Tatoeba unfiltered.
+    - **Capitals in Roman typing:** a word the list only has capitalised (mostly greetings that open sentences) comes out capitalised even mid-sentence: `salom` gives Салом, `kalimera` Καλημέρα, `barev` Բարև, `zdravey` Здравей. The engine can't tell these from names like Москва. The fix belongs in the list builder: don't count sentence-first capitals when choosing a word's case, which means rebuilding the lists. Until then those four pages show examples that avoid it: `efharisto`, `hayeren`, `blagodarya`, `kitob`.
+    - No statistics between words in the converters. Traditional Chinese has no word list, so no next-word suggestions.
+    - No native-speaker review of any of the 23. Zawgyi is Phase 10. Lighthouse on a deployed preview and the iPhone (WebKit) project were not run here.
+  - [x] **Languages:**
     - Cyrillic: Russian, Ukrainian, Belarusian, Bulgarian, Serbian, Macedonian, Kazakh, Kyrgyz, Tajik, Mongolian;
     - Greek, Hebrew, Armenian, Georgian;
     - South-East Asia: Thai, Lao, Khmer, Burmese, Vietnamese;
     - East Asia: Korean, Japanese, Chinese (Simplified), Chinese (Traditional).
-  - [ ] **Engines:**
+  - [x] **Engines:**
     - **Korean:** Hangul 2-set composition, with a Backspace that removes one jamo at a time.
     - **Japanese:** romaji → kana. Kanji conversion only with a licence-clean dictionary (check Mozc's data, §8); otherwise ship kana only and say so.
     - **Chinese:** pinyin → hanzi with CC-CEDICT (CC BY-SA 4.0) plus Wikipedia frequencies. Accept toneless and tone-number input. Simplified ↔ Traditional through OpenCC data (Apache-2.0). A Zhuyin layout for Taiwan.
@@ -840,9 +868,10 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | Unicode Character Database 17.0 | Character names, scripts and bidi classes for the keyboard tester's inspector (`apps/web/scripts/make-unicode.ts`) | Unicode License v3 (credited on the page) | In use (8.3) |
 | SIL Keyman keyboards | Layouts | Mostly MIT (per keyboard) | In use; check each one |
 | xkeyboard-config | Latin and Cyrillic national layouts | X11/MIT-style, varies by file | Check per file |
-| CC-CEDICT | Pinyin → hanzi | CC BY-SA 4.0 | Check at 9b |
-| OpenCC data | Simplified ↔ Traditional | Apache-2.0 | Check at 9b |
-| Mozc dictionary data | Kana → kanji | Mixed | **Check carefully**; ship kana only if unclear |
+| CC-CEDICT | Pinyin and Zhuyin → hanzi (`data/{zh,zht}/readings.txt`) | CC BY-SA 4.0 (file header, 2026-11-03; credited on the page) | In use (9b) |
+| OpenCC data | Simplified ↔ Traditional; forms in the Chinese lists | Apache-2.0 (`vendor/opencc/LICENSE`) | In use (9b) |
+| Mozc dictionary data | Kana → kanji (`data/ja/readings.txt`) | BSD 3-Clause, with IPAdic (ICOT notice) and Okinawa dictionary notices, all permissive; the set Google's web corpus adds is not in the open source version (`vendor/mozc/`) | In use (9b), checked 2026-11-04 |
+| ICU word segmentation (`Intl.Segmenter`) | Thai, Lao, Khmer, Burmese, Chinese and Japanese words, at build time and while typing | Unicode License; comes with Node and the browser, nothing copied | In use (9b) |
 | Google myanmar-tools | Zawgyi detection | Apache-2.0 | Check at 10.1 |
 | Subtitle-based frequency lists | Chat words | Unclear (the underlying subtitles' rights) | **Avoid** unless the licence is clear |
 | Leipzig Corpora Collection | — | Sources conflict (CC BY vs CC BY-NC) | **Don't use** without written confirmation (the old plan listed it) |

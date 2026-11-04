@@ -30,6 +30,19 @@ export function pickerLanguage(l: LanguageFile): PickerLanguage {
 
 /** Script names for browsing, by ISO 15924 code. */
 export const SCRIPT_NAMES: Readonly<Record<string, string>> = {
+  Cyrl: "Cyrillic",
+  Grek: "Greek",
+  Hebr: "Hebrew",
+  Armn: "Armenian",
+  Geor: "Georgian",
+  Thai: "Thai",
+  Laoo: "Lao",
+  Khmr: "Khmer",
+  Mymr: "Myanmar",
+  Hang: "Hangul",
+  Jpan: "Japanese",
+  Hans: "Chinese (Simplified)",
+  Hant: "Chinese (Traditional)",
   Arab: "Arabic script",
   Deva: "Devanagari",
   Beng: "Bengali script",
@@ -43,8 +56,6 @@ export const SCRIPT_NAMES: Readonly<Record<string, string>> = {
   Sinh: "Sinhala script",
   Thaa: "Thaana",
   Latn: "Latin alphabet",
-  Cyrl: "Cyrillic",
-  Grek: "Greek",
 };
 
 /** Lower case without accents or Arabic vowel marks, so "farsí" finds Farsi and "اُردو" finds اردو. */

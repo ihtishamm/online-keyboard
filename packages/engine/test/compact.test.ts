@@ -26,3 +26,12 @@ describe("compact dictionary", () => {
     expect(() => decodeDictionary("hello")).toThrow();
   });
 });
+
+describe("characters outside the BMP", () => {
+  it("survive a trip through a UTF-8 file", () => {
+    const words = ["𫖮", "𫖯", "𫚭"];
+    const file = new TextDecoder().decode(new TextEncoder().encode(encodeDictionary(words, "")));
+    expect(decodeDictionary(file).words.sort()).toEqual(words);
+    expect(file).not.toContain("�");
+  });
+});

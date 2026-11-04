@@ -1,0 +1,10 @@
+{
+  "scheme": "ja-kana",
+  "source": "Tatoeba sentences with dictionary readings; scores the characters, not the typing",
+  "sentences": 500,
+  "words": 4865,
+  "wordTop1": 0.861,
+  "wordTop5": 0.972,
+  "sentenceChars": 0.84,
+  "sentencesExact": 0.22
+}

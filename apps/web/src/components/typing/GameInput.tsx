@@ -40,6 +40,7 @@ const GameInput = forwardRef<HTMLInputElement, GameInputProps>(function GameInpu
     ownKeyboard: props.ownKeyboard,
     type: props.onType,
     backspace: props.onBackspace,
+    typed: () => props.value,
   });
   const showKeyboard = (props.keyboard || input.coarse) && !props.ownKeyboard;
   return (

@@ -1,0 +1,425 @@
+{
+  "id": "mk-standard",
+  "lang": "mk",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Standard",
+    "native": "Стандардна"
+  },
+  "source": "Windows \"Macedonian - Standard\", from Unicode CLDR 43 keyboard data (Unicode License v3).",
+  "mobile": {
+    "rows": [
+      [
+        "KeyQ",
+        "KeyW",
+        "KeyE",
+        "KeyR",
+        "KeyT",
+        "KeyY",
+        "KeyU",
+        "KeyI",
+        "KeyO",
+        "KeyP",
+        "BracketLeft"
+      ],
+      [
+        "KeyA",
+        "KeyS",
+        "KeyD",
+        "KeyF",
+        "KeyG",
+        "KeyH",
+        "KeyJ",
+        "KeyK",
+        "KeyL",
+        "Semicolon",
+        "Quote"
+      ],
+      [
+        "KeyZ",
+        "KeyX",
+        "KeyC",
+        "KeyV",
+        "KeyB",
+        "KeyN",
+        "KeyM",
+        "Backslash",
+        "BracketRight"
+      ]
+    ],
+    "longpress": {
+      "KeyG": [
+        "ѓ",
+        "Ѓ"
+      ]
+    }
+  },
+  "keys": {
+    "Backquote": {
+      "n": "ѝ",
+      "s": "Ѝ"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "!",
+      "ag": "°"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "„",
+      "ag": "@"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "“",
+      "ag": "#"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "'",
+      "ag": "$"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "%"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "‚",
+      "ag": "^"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "‘",
+      "ag": "&"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "*",
+      "ag": "…"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "(",
+      "ag": "{"
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")",
+      "ag": "}"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "-",
+      "ag": "—"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+",
+      "ag": "\u0301"
+    },
+    "KeyQ": {
+      "n": "љ",
+      "s": "Љ",
+      "caps": "shift"
+    },
+    "KeyW": {
+      "n": "њ",
+      "s": "Њ",
+      "caps": "shift"
+    },
+    "KeyE": {
+      "n": "е",
+      "s": "Е",
+      "caps": "shift"
+    },
+    "KeyR": {
+      "n": "р",
+      "s": "Р",
+      "caps": "shift"
+    },
+    "KeyT": {
+      "n": "т",
+      "s": "Т",
+      "caps": "shift"
+    },
+    "KeyY": {
+      "n": "ѕ",
+      "s": "Ѕ",
+      "caps": "shift"
+    },
+    "KeyU": {
+      "n": "у",
+      "s": "У",
+      "caps": "shift"
+    },
+    "KeyI": {
+      "n": "и",
+      "s": "И",
+      "caps": "shift"
+    },
+    "KeyO": {
+      "n": "о",
+      "s": "О",
+      "caps": "shift"
+    },
+    "KeyP": {
+      "n": "п",
+      "s": "П",
+      "caps": "shift"
+    },
+    "BracketLeft": {
+      "n": "ш",
+      "s": "Ш",
+      "ag": "[",
+      "caps": "shift"
+    },
+    "BracketRight": {
+      "n": "ѓ",
+      "s": "Ѓ",
+      "ag": "]",
+      "caps": "shift"
+    },
+    "Backslash": {
+      "n": "ж",
+      "s": "Ж",
+      "ag": "|",
+      "caps": "shift"
+    },
+    "KeyA": {
+      "n": "а",
+      "s": "А",
+      "caps": "shift"
+    },
+    "KeyS": {
+      "n": "с",
+      "s": "С",
+      "caps": "shift"
+    },
+    "KeyD": {
+      "n": "д",
+      "s": "Д",
+      "caps": "shift"
+    },
+    "KeyF": {
+      "n": "ф",
+      "s": "Ф",
+      "caps": "shift"
+    },
+    "KeyG": {
+      "n": "г",
+      "s": "Г",
+      "caps": "shift"
+    },
+    "KeyH": {
+      "n": "х",
+      "s": "Х",
+      "caps": "shift"
+    },
+    "KeyJ": {
+      "n": "ј",
+      "s": "Ј",
+      "caps": "shift"
+    },
+    "KeyK": {
+      "n": "к",
+      "s": "К",
+      "caps": "shift"
+    },
+    "KeyL": {
+      "n": "л",
+      "s": "Л",
+      "caps": "shift"
+    },
+    "Semicolon": {
+      "n": "ч",
+      "s": "Ч",
+      "caps": "shift"
+    },
+    "Quote": {
+      "n": "ќ",
+      "s": "Ќ",
+      "caps": "shift"
+    },
+    "IntlBackslash": {
+      "n": "ѐ",
+      "s": "Ѐ"
+    },
+    "KeyZ": {
+      "n": "з",
+      "s": "З",
+      "caps": "shift"
+    },
+    "KeyX": {
+      "n": "џ",
+      "s": "Џ",
+      "caps": "shift"
+    },
+    "KeyC": {
+      "n": "ц",
+      "s": "Ц",
+      "caps": "shift"
+    },
+    "KeyV": {
+      "n": "в",
+      "s": "В",
+      "caps": "shift"
+    },
+    "KeyB": {
+      "n": "б",
+      "s": "Б",
+      "caps": "shift"
+    },
+    "KeyN": {
+      "n": "н",
+      "s": "Н",
+      "caps": "shift"
+    },
+    "KeyM": {
+      "n": "м",
+      "s": "М",
+      "caps": "shift"
+    },
+    "Comma": {
+      "n": ",",
+      "s": ";",
+      "ag": "<"
+    },
+    "Period": {
+      "n": ".",
+      "s": ":",
+      "ag": ">"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "?",
+      "ag": "\\"
+    }
+  },
+  "longpress": {
+    "Backquote": [
+      "Ѝ"
+    ],
+    "Digit1": [
+      "°"
+    ],
+    "Digit2": [
+      "„"
+    ],
+    "Digit3": [
+      "“"
+    ],
+    "Digit6": [
+      "‚"
+    ],
+    "Digit7": [
+      "‘"
+    ],
+    "Digit8": [
+      "…"
+    ],
+    "Minus": [
+      "—"
+    ],
+    "Equal": [
+      "\u0301"
+    ],
+    "KeyQ": [
+      "Љ"
+    ],
+    "KeyW": [
+      "Њ"
+    ],
+    "KeyE": [
+      "Е"
+    ],
+    "KeyR": [
+      "Р"
+    ],
+    "KeyT": [
+      "Т"
+    ],
+    "KeyY": [
+      "Ѕ"
+    ],
+    "KeyU": [
+      "У"
+    ],
+    "KeyI": [
+      "И"
+    ],
+    "KeyO": [
+      "О"
+    ],
+    "KeyP": [
+      "П"
+    ],
+    "BracketLeft": [
+      "Ш"
+    ],
+    "BracketRight": [
+      "Ѓ"
+    ],
+    "Backslash": [
+      "Ж"
+    ],
+    "KeyA": [
+      "А"
+    ],
+    "KeyS": [
+      "С"
+    ],
+    "KeyD": [
+      "Д"
+    ],
+    "KeyF": [
+      "Ф"
+    ],
+    "KeyG": [
+      "Г"
+    ],
+    "KeyH": [
+      "Х"
+    ],
+    "KeyJ": [
+      "Ј"
+    ],
+    "KeyK": [
+      "К"
+    ],
+    "KeyL": [
+      "Л"
+    ],
+    "Semicolon": [
+      "Ч"
+    ],
+    "Quote": [
+      "Ќ"
+    ],
+    "IntlBackslash": [
+      "Ѐ"
+    ],
+    "KeyZ": [
+      "З"
+    ],
+    "KeyX": [
+      "Џ"
+    ],
+    "KeyC": [
+      "Ц"
+    ],
+    "KeyV": [
+      "В"
+    ],
+    "KeyB": [
+      "Б"
+    ],
+    "KeyN": [
+      "Н"
+    ],
+    "KeyM": [
+      "М"
+    ]
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "id": "lo-standard",
+  "lang": "lo",
+  "script": "Laoo",
+  "dir": "ltr",
+  "name": {
+    "en": "Standard",
+    "native": "ມາດຕະຖານ"
+  },
+  "source": "Windows \"Lao\", from Unicode CLDR 43 keyboard data (Unicode License v3). Phone rows are ours.",
+  "mobile": {
+    "rows": [
+      [
+        "Digit1",
+        "Digit2",
+        "Digit3",
+        "Digit4",
+        "Digit5",
+        "Digit6",
+        "Digit7",
+        "Digit8",
+        "Digit9",
+        "Digit0",
+        "Minus"
+      ],
+      [
+        "KeyW",
+        "KeyE",
+        "KeyR",
+        "KeyT",
+        "KeyY",
+        "KeyU",
+        "KeyI",
+        "KeyO",
+        "KeyP",
+        "BracketLeft",
+        "BracketRight"
+      ],
+      [
+        "KeyA",
+        "KeyS",
+        "KeyD",
+        "KeyF",
+        "KeyG",
+        "KeyH",
+        "KeyJ",
+        "KeyK",
+        "KeyL",
+        "Semicolon",
+        "Quote"
+      ],
+      ["KeyZ", "KeyX", "KeyC", "KeyV", "KeyB", "KeyN", "KeyM", "Comma", "Period", "Slash"]
+    ],
+    "longpress": {
+      "KeyW": ["\u0EBB", "\u0EBB\u0EC9"],
+      "Minus": ["\u0ECD", "\u0ECD\u0EC8"]
+    }
+  },
+  "keys": {
+    "Backquote": {
+      "n": "\"",
+      "s": "'"
+    },
+    "Digit1": {
+      "n": "ຢ",
+      "s": "1",
+      "ag": "໑"
+    },
+    "Digit2": {
+      "n": "ຟ",
+      "s": "2",
+      "ag": "໒"
+    },
+    "Digit3": {
+      "n": "ໂ",
+      "s": "3",
+      "ag": "໓"
+    },
+    "Digit4": {
+      "n": "ຖ",
+      "s": "4",
+      "ag": "໔"
+    },
+    "Digit5": {
+      "n": "\u0EB8",
+      "s": "\u0ECC",
+      "ag": "໕"
+    },
+    "Digit6": {
+      "n": "\u0EB9",
+      "s": "\u0EBC",
+      "ag": "໖"
+    },
+    "Digit7": {
+      "n": "ຄ",
+      "s": "5",
+      "ag": "໗"
+    },
+    "Digit8": {
+      "n": "ຕ",
+      "s": "6",
+      "ag": "໘"
+    },
+    "Digit9": {
+      "n": "ຈ",
+      "s": "7",
+      "ag": "໙"
+    },
+    "Digit0": {
+      "n": "ຂ",
+      "s": "8",
+      "ag": "໐"
+    },
+    "Minus": {
+      "n": "ຊ",
+      "s": "9"
+    },
+    "Equal": {
+      "n": "\u0ECD",
+      "s": "\u0ECD\u0EC8"
+    },
+    "KeyQ": {
+      "n": "\u0EBB",
+      "s": "\u0EBB\u0EC9"
+    },
+    "KeyW": {
+      "n": "ໄ",
+      "s": "0"
+    },
+    "KeyE": {
+      "n": "ຳ",
+      "s": "*"
+    },
+    "KeyR": {
+      "n": "ພ",
+      "s": "_"
+    },
+    "KeyT": {
+      "n": "ະ",
+      "s": "+"
+    },
+    "KeyY": {
+      "n": "\u0EB4",
+      "s": "\u0EB4\u0EC9"
+    },
+    "KeyU": {
+      "n": "\u0EB5",
+      "s": "\u0EB5\u0EC9"
+    },
+    "KeyI": {
+      "n": "ຮ",
+      "s": "ຣ"
+    },
+    "KeyO": {
+      "n": "ນ",
+      "s": "ໜ"
+    },
+    "KeyP": {
+      "n": "ຍ",
+      "s": "ຽ"
+    },
+    "BracketLeft": {
+      "n": "ບ",
+      "s": "-"
+    },
+    "BracketRight": {
+      "n": "ລ",
+      "s": "ຫ\u0EBC"
+    },
+    "Backslash": {
+      "n": "/",
+      "s": "\\"
+    },
+    "KeyA": {
+      "n": "\u0EB1",
+      "s": "\u0EB1\u0EC9"
+    },
+    "KeyS": {
+      "n": "ຫ",
+      "s": ";"
+    },
+    "KeyD": {
+      "n": "ກ",
+      "s": "."
+    },
+    "KeyF": {
+      "n": "ດ",
+      "s": ","
+    },
+    "KeyG": {
+      "n": "ເ",
+      "s": ":"
+    },
+    "KeyH": {
+      "n": "\u0EC9",
+      "s": "\u0ECA"
+    },
+    "KeyJ": {
+      "n": "\u0EC8",
+      "s": "\u0ECB"
+    },
+    "KeyK": {
+      "n": "າ",
+      "s": "!"
+    },
+    "KeyL": {
+      "n": "ສ",
+      "s": "?"
+    },
+    "Semicolon": {
+      "n": "ວ",
+      "s": "%"
+    },
+    "Quote": {
+      "n": "ງ",
+      "s": "="
+    },
+    "KeyZ": {
+      "n": "ຜ",
+      "s": "₭"
+    },
+    "KeyX": {
+      "n": "ປ",
+      "s": "("
+    },
+    "KeyC": {
+      "n": "ແ",
+      "s": "ຯ"
+    },
+    "KeyV": {
+      "n": "ອ",
+      "s": "x"
+    },
+    "KeyB": {
+      "n": "\u0EB6",
+      "s": "\u0EB6\u0EC9"
+    },
+    "KeyN": {
+      "n": "\u0EB7",
+      "s": "\u0EB7\u0EC9"
+    },
+    "KeyM": {
+      "n": "ທ",
+      "s": "ໆ"
+    },
+    "Comma": {
+      "n": "ມ",
+      "s": "ໝ"
+    },
+    "Period": {
+      "n": "ໃ",
+      "s": "$"
+    },
+    "Slash": {
+      "n": "ຝ",
+      "s": ")"
+    }
+  },
+  "longpress": {
+    "Digit5": ["\u0ECC"],
+    "Digit6": ["\u0EBC"],
+    "Equal": ["\u0ECD\u0EC8"],
+    "KeyQ": ["\u0EBB\u0EC9"],
+    "KeyY": ["\u0EB4\u0EC9"],
+    "KeyU": ["\u0EB5\u0EC9"],
+    "KeyI": ["ຣ"],
+    "KeyO": ["ໜ"],
+    "KeyP": ["ຽ"],
+    "BracketRight": ["ຫ\u0EBC"],
+    "KeyA": ["\u0EB1\u0EC9"],
+    "KeyH": ["\u0ECA"],
+    "KeyJ": ["\u0ECB"],
+    "KeyZ": ["₭"],
+    "KeyC": ["ຯ"],
+    "KeyB": ["\u0EB6\u0EC9"],
+    "KeyN": ["\u0EB7\u0EC9"],
+    "KeyM": ["ໆ"],
+    "Comma": ["ໝ"]
+  }
+}

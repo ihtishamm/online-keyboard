@@ -1,0 +1,190 @@
+{
+  "id": "zht-zhuyin",
+  "lang": "zh-Hant",
+  "script": "Hant",
+  "dir": "ltr",
+  "name": {
+    "en": "Zhuyin",
+    "native": "注音"
+  },
+  "source": "The standard Zhuyin (Bopomofo) layout used in Taiwan, written from the standard. Words come from CC-CEDICT (CC BY-SA 4.0). Shift gives ， 。 ？ ： ！ on the keys that hold Zhuyin symbols.",
+  "keys": {
+    "Digit1": {
+      "n": "ㄅ",
+      "s": "！"
+    },
+    "Digit2": {
+      "n": "ㄉ"
+    },
+    "Digit3": {
+      "n": "ˇ"
+    },
+    "Digit4": {
+      "n": "ˋ"
+    },
+    "Digit5": {
+      "n": "ㄓ"
+    },
+    "Digit6": {
+      "n": "ˊ"
+    },
+    "Digit7": {
+      "n": "˙"
+    },
+    "Digit8": {
+      "n": "ㄚ"
+    },
+    "Digit9": {
+      "n": "ㄞ"
+    },
+    "Digit0": {
+      "n": "ㄢ"
+    },
+    "Minus": {
+      "n": "ㄦ"
+    },
+    "KeyQ": {
+      "n": "ㄆ"
+    },
+    "KeyW": {
+      "n": "ㄊ"
+    },
+    "KeyE": {
+      "n": "ㄍ"
+    },
+    "KeyR": {
+      "n": "ㄐ"
+    },
+    "KeyT": {
+      "n": "ㄔ"
+    },
+    "KeyY": {
+      "n": "ㄗ"
+    },
+    "KeyU": {
+      "n": "ㄧ"
+    },
+    "KeyI": {
+      "n": "ㄛ"
+    },
+    "KeyO": {
+      "n": "ㄟ"
+    },
+    "KeyP": {
+      "n": "ㄣ"
+    },
+    "KeyA": {
+      "n": "ㄇ"
+    },
+    "KeyS": {
+      "n": "ㄋ"
+    },
+    "KeyD": {
+      "n": "ㄎ"
+    },
+    "KeyF": {
+      "n": "ㄑ"
+    },
+    "KeyG": {
+      "n": "ㄕ"
+    },
+    "KeyH": {
+      "n": "ㄘ"
+    },
+    "KeyJ": {
+      "n": "ㄨ"
+    },
+    "KeyK": {
+      "n": "ㄜ"
+    },
+    "KeyL": {
+      "n": "ㄠ"
+    },
+    "Semicolon": {
+      "n": "ㄤ",
+      "s": "："
+    },
+    "KeyZ": {
+      "n": "ㄈ"
+    },
+    "KeyX": {
+      "n": "ㄌ"
+    },
+    "KeyC": {
+      "n": "ㄏ"
+    },
+    "KeyV": {
+      "n": "ㄒ"
+    },
+    "KeyB": {
+      "n": "ㄖ"
+    },
+    "KeyN": {
+      "n": "ㄙ"
+    },
+    "KeyM": {
+      "n": "ㄩ"
+    },
+    "Comma": {
+      "n": "ㄝ",
+      "s": "，"
+    },
+    "Period": {
+      "n": "ㄡ",
+      "s": "。"
+    },
+    "Slash": {
+      "n": "ㄥ",
+      "s": "？"
+    },
+    "Backquote": {
+      "n": "`",
+      "s": "~"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+"
+    },
+    "BracketLeft": {
+      "n": "[",
+      "s": "{"
+    },
+    "BracketRight": {
+      "n": "]",
+      "s": "}"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "IntlBackslash": {
+      "n": "\\",
+      "s": "|"
+    }
+  },
+  "translit": "zht-zhuyin",
+  "mobile": {
+    "rows": [
+      [
+        "Digit1",
+        "Digit2",
+        "Digit3",
+        "Digit4",
+        "Digit5",
+        "Digit6",
+        "Digit7",
+        "Digit8",
+        "Digit9",
+        "Digit0",
+        "Minus"
+      ],
+      ["KeyQ", "KeyW", "KeyE", "KeyR", "KeyT", "KeyY", "KeyU", "KeyI", "KeyO", "KeyP"],
+      ["KeyA", "KeyS", "KeyD", "KeyF", "KeyG", "KeyH", "KeyJ", "KeyK", "KeyL", "Semicolon"],
+      ["KeyZ", "KeyX", "KeyC", "KeyV", "KeyB", "KeyN", "KeyM", "Comma", "Period", "Slash"]
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "japanese",
+  "code": "ja",
+  "order": 600,
+  "lang": "ja",
+  "script": "Jpan",
+  "dir": "ltr",
+  "name": {
+    "en": "Japanese",
+    "native": "日本語"
+  },
+  "aliases": [],
+  "region": "east-asia",
+  "fonts": ["cjk-jp"],
+  "layouts": ["ja-romaji"],
+  "sample": "こんにちは。今日はとても良い天気です。",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ja",
+    "bing": "ja",
+    "deepl": "ja"
+  },
+  "tier": null,
+  "notes": "Kanji conversion is from the Mozc dictionary without statistics between words, so the top choice is sometimes wrong: pick another from the bar. No voice yet: the locale has not passed /voice-probe."
+}

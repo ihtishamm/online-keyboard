@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+5681	Toi se goi ho ngay mai.
+5691	Cái đó la một cái điều tào lao nhất tôi noi từ xưa đến giờ.
+5706	Cái đó nhìn hấp dẫn.
+5709	Cảnh sát sẽ bắt bạn tìm ra mấy viên đạn.
+5817	Tôi bị nhức đầu.
+5839	Đầm dạ hội luôn được mong chờ.
+5878	Một bước Salsa tôi cũng không nhảy được.
+5890	Cái này làm tôi phát điên mất!
+5898	Tôi không tin!
+337922	Bản phân tích này đưa ra kết quả sau đây.
+337932	Đừng uống bia trước khi đi ngủ.
+337954	Lực lượng vũ trang đã thâu tóm toàn bộ lãnh thổ.
+409532	Ăn cơm mãi chán lắm rồi!
+489509	Năm ký tự đầu tiên trong địa chỉ mail của bạn là gì ?
+490765	Bạn có thấy phiền không nếu phải chờ một vài phút?
+497669	Cô ấy đang thưởng ngoạn chuyến đi chơi.
+497684	Chúng tôi chỉ mới có căn cứ đầu tiên.
+497691	Sân bay này tại vịnh Osaka.
+497722	Chúng ta hãy uống trà và chờ xem.
+506794	Bạn không được làm điều đó bây giờ.
+507670	Nếu không có sự giúp đỡ của chị ấy, tôi sẽ không hoàn thành được nhiệm vụ của tôi
+507776	Hôm nay khá nóng.
+509060	Xin lỗi, cho phép tôi chỉ ra ba lỗi trong bài viết trên.
+509212	Chúng ta hãy gọi điện thoại.
+510241	Họ đặt tên anh ấy là Jim.
+510399	Thiếu một con dao.
+510433	Làm ơn cho tôi một cốc nước.
+510535	Cúc xu xi nở khi mặt trời chiếu sáng.
+511650	Tôi muốn biếu anh ấy một tặng phẩm nhân dịp sinh nhật anh ấy.
+511693	Khi tôi còn nhỏ, tôi luôn luôn dậy sớm.
+512528	Tôi chơi quần vợt giỏi.
+515064	Không có gì quan trọng hơn tình bạn.
+515410	Bà ấy có con trai là thầy thuốc.
+516578	Tôi sai lầm kinh khủng trong trắc nghiệm.
+516653	Một nhà trường mới đã được xây dựng.
+516989	Hãy nhìn kỹ tấm ảnh này.
+523170	Tôi phản đối dự án này.
+523220	Tôi muốn học ở nước ngoài.
+523310	Bạn hãy tìm từ này trong từ điển.
+558886	Tôi đã làm xong bài tập về nhà.
+558960	Anh hãy cho tôi biết anh trông thấy gì lúc đó.
+563068	Tôi cảm thấy cô đơn.
+564694	Hãy tránh mưa.
+569643	Anh ấy không thể lấy được cô ấy.
+572518	Giá mà anh pha cho tôi tách trà nhỉ?
+577154	Tôi chưa bao giờ leo núi Phú Sĩ.
+581066	Vì vụ tai nạn giao toàn bộ thông bị gián đoạn.
+582977	Đây là cái gì tôi đã mua ở Tây Ban Nha.
+582990	Tôi sẽ trở về sau một tiếng đồng hồ.
+592736	Trời quá nắng để có thể ở lại trong nhà.
+604693	Anh đeo chiếc ca vát đẹp nhỉ.
+606830	Hằng ngày sau khi tan học, cô ấy chơi quần vợt.
+611312	Tôi thà chết còn hơn ăn cắp.
+611314	Tôi thà nhịn đói còn hơn ăn cắp.
+620672	Năm ngoái cô ấy tập đi xe đạp.
+653355	Bác sĩ bảo rằng chị ấy bị thấp khớp.
+654339	Đừng sờ vào sơn ướt.
+659465	Anh ấy để rơi hàng hóa.
+662531	Họ ở gần sát trường học.
+667215	Anh ta đã bằng tay khéo léo chế tạo ra các công cụ.
+667452	Chiếc xe đạp này của tôi.
+675683	Tôi không biết liệu George sẽ đến hay không.
+691697	Đã 7 giờ sáng .
+693673	Tôi không thích anh ấy lắm, trên thực tế tôi ghét anh ấy.
+703565	Nếu cô ấy không học tiếng Anh ở đây, cô ấy không thể qua được kỳ kiểm tra .
+717947	Cha tôi có thói quen đọc báo trước lúc ăn sáng.
+720729	Chúng tôi không có máy sấy quần áo.
+733127	Cậu ấy là một chàng trai lớn.
+733131	Có lẽ bạn có lý, tôi đã tỏ ra ích kỷ.
+736222	Điều ấy vượt qua sự hiểu biết của tôi.
+749060	Tôi sợ rằng anh ấy gặp phải sự chẳng lành.
+749061	Vì mẹ tôi ốm tôi không thể đến buổi hòa nhạc được.
+749075	Bạn đến vào thứ năm.
+757270	Hãy nói tốt cho người đã chết.
+759680	Anh ấy đúng là người đàn ông mà tôi chờ đợi.
+791743	Mỗi buổi chiều tôi ăn vào lúc 6 giờ.
+872458	Chúng ta càng học , chúng ta càng tiến bộ.
+872508	Mọi thứ đã xảy ra, như tôi đã mong.
+876966	Anh thà chết hơn nhìn em khóc.
+877011	Em gái tôi đang là áo khoác của tôi.
+893091	Quý khách có mua gì thêm nữa không ạ?
+893095	Cuối cùng tôi cũng đã quen với cuộc sống thành phố.
+893126	Bạn đi đâu đấy?
+906326	Các bạn hãy khẩn trương kẻo lỡ chuyến xe buýt.
+934766	Cán bộ y tế có chuyên môn cao ngày càng nhiều.
+934850	Suốt đêm qua, tao không thể yên giấc được mày à.
+934885	Màu tím là mốt thời trang được ưu chuộng trong năm nay.
+934892	Sách là người bạn yêu quí của tôi.
+1078358	hello thế giới!
+1250178	Chúng nó chẳng bao giờ nghe lời bố mẹ cả.
+1345019	Hãy mang nước bằng xô.
+1504123	Nếu bạn không có chương trình này, bây giờ bạn có thể tải nó về
+1509582	bạn làm gì ở đây thế ?
+1509593	Bạn phải chịu trách nhiệm về tai nạn này.
+1510623	Tôi rất vui vì có thể giúp được bạn.
+1510643	Mày nghĩ nó sẽ làm gì?
+1513726	Mẹ đã may cho tôi một chiếc đầm màu trắng tinh
+1514983	tôi nghe thấy tên tôi được gọi ở phía sau.
+1541832	Chúng ta nghỉ ngơi một chút nhé?
+1541846	Tôi muốn bạn giữ lời hứa.
+1541931	Đây chính là cách mà vụ tai nạn đã xãy ra.
+1541944	Chúng ta chẳng thể nào đấu lại Châu Á đâu.
+1541947	Tôi sống từ năm này qua năm khác.
+1541967	Anh ta hết năng lượng rồi.
+1542057	Xe tăng và máy bay có thể đánh bại quân đội nhưng chúng không thề chinh phục được người dân.
+1542068	Không được học nhiều quá.
+1542080	Nước lặn là nước sâu.
+1542453	Đừng đánh giá thấp đối thủ của bạn.
+1542537	Chọc lộn người rồi cưng.
+1542950	Trong dịp này, chúng ta nên làm một ly đi.
+1542952	Ông ta chết được 10 năm rồi.
+1543714	Cô ta đã từng sống một mình.
+1547263	Có người bào tôi đi mở cánh cổng.
+1547282	Vùng lân cận xung quanh nhà anh ấy chẳng có cái bệnh viện nào.
+1547640	Sau khi họ về, ông đã gọi điện lên cho tôi để thông báo tình hình.
+1547678	Cô ta dạy học ở trường địa phương chúng tôi.
+1548750	Ở nhà hàng đó, họ phục vụ bữa tối rất tốt.
+1549411	Mẹ dẫn chúng tôi đi và mẹ đem đặt mỗi đứa vào một cái hang đất ở bờ ruộng phía bên kia.
+1549453	Tôi không nghĩ được rằng một cựu giáo sư bây giờ lại có thể làm công việc cuả một người gác cổng.
+1550236	Dường như có vài người có thể giải bài toán.
+1550242	Tôi thường gọi điện thoại, hiếm khi viết thư.
+1550521	Đèn giao thông hoạt động liên tục.
+1550851	Lauren bước vội qua đại lộ mênh mông.
+1552448	tớ đang đợi bạn của tớ.
+1552950	Cái đó ăn rất ngon.
+1554794	Xe lửa sẽ di chuyển ở vận tốc 50 dặm một giờ.
+1554965	Chúng tôi đang học tiếng Ả rập.
+1554969	Đây là máy ghi âm dùng băng của bạn?
+1555215	Một cuộc sống gia đình hạnh phúc.
+1555284	Cọp chết để da, người ta chết để tiếng.
+1558379	Tôi cần kêu thợ sửa cái TV này.
+1564349	Tụi nó đã đứng trên đỉnh đồi.
+1567117	Tôi hoàn toàn phản đối kế hoạch.
+1567311	Các bạn ấy tuy nghèo nhưng rất vui sướng.
+1567323	Tủ lạnh của tôi bị hư.
+1571441	Tom hỏi Mary có bao nhiêu tiền.
+1571448	Tụi tao không tham gia việc mua xe mới của tụi nó.
+1571462	Mày thích kiểu tóc nào?
+1571491	Mũi của bạn đang chảy máu.
+1571561	Tao chẳng thể tìm nó ở đâu cả.
+1571586	Nó quản lý một cửa hàng giày.
+1573191	Bạn có thể vui lòng mở cửa sổ không?
+1573203	Được thôi, cho nó thử lần nữa.
+1573863	Anh ấy thật tốt bụng khi chỉ đường đến ga.
+1574522	Không có gió hôm nay.
+1575828	Với sự giúp đỡ của cô ấy, tiếng Pháp của tôi được cải thiện từng chút từng chút một.
+1581143	Niềm vui của tình yêu thì phu du; còn hối tiếc thì đời đời
+1581408	Thỉnh thoảng chúng tôi đi câu cá với nhau.
+1581652	Đấy là tạp chí cũ.
+1581660	Đây là trái dừa.
+1581673	Đây là quyển vở từ vựng.
+1581709	Con vẫn không hiểu ai cho ông ấy cái quyền được nói?
+1581752	Sean có vẻ thực sự tin.
+1581763	Chúng tôi là người Mỹ.
+1581846	Chạy về phía khu rừng!
+1598862	Bạn có thể lấy quyển sách nếu bạn có thể đọc nó.
+1618473	Anh ấy làm việc trong một nhà máy.
+1637038	Tôi sẽ đi tới đó ngay cả khi trời mưa.
+1697332	Tôi giao cho thư kí đánh bức thư đó.
+1699104	Chúng ta nên lợi dụng tình thế này.
+1727470	Anh ta sống ở nơi xa làng.
+1727554	Mọi người đều có mặt trừ anh ta.
+1750234	Chương trình đó được phát mỗi tuần.
+1759686	Anh ta hài lòng với kết quả đạt được.
+1772924	Bạn có thể viết bằng bất kì ngôn ngữ nào bạn muốn. Ở Tatoeba, mọi ngôn ngữ đều bình đẳng.
+1808205	Chúng tớ nghĩ rằng thông điệp đó là thật.
+1833202	Cô ta bất tỉnh nhưng tỉnh lại trong vài phút sau.
+1836454	Bài kiểm tra đã kết thúc hoàn toàn.
+1836460	Tôi bị dính vào cuộc tranh cãi của người khác.
+2507753	Con chó đâu rồi?
+2520973	Chúng ta hãy cùng thảo luận vấn đề ở đây.
+2639150	Tôi không hài lòng với bộ áo khoác này.
+2652528	Sáng nay tôi nhận được thư của Tom.
+2652570	Mẹ tôi là người bận nhất trong nhà.
+2652744	Tom không muốn ai thấy mình đi cùng với Mary.
+2654706	Bạn có đang để cửa sổ mở không ?
+2654713	Vâng, xin mời tới đây.
+2979581	Sáng nay, tôi cùng bạn tôi đi mua vé máy bay.
+3109191	Xe của tôi bị lủng lốp rồi.
+3109196	Quá trình này có ưu điểm và cả khuyết điểm.
+3134221	Nó không bao giờ nói láo.
+3134226	Tôi mua quyển sách đó từ Anh quốc.
+3228469	Bạn có một con mèo không?
+3304589	Tom đã bấm nhầm số điện thoại.
+3304610	Đi máy bay từ thành phố Hồ Chí Minh đi Hà Nội mất bao nhiêu tiếng?
+3309238	Đừng nghe nó, nó đang nói nhảm.
+3316856	Tôi hay đi trượt tuyết vào mùa đông.
+3320726	Làm thế này, một là có thể biết nhiều bạn bè Trung Quốc, hai là có thể luyện khẩu ngữ.
+3320921	Cắt và dán là hai chức năng rất cần thiết trong máy tính.
+3322942	Mọi người xung quanh trầm trồ khen ngợi.
+3333030	Tôi hân hạnh được làm quen với bạn.
+3333218	Điều gì thúc đẩy các cô học tiếng Đức?
+3356522	Xin vẽ hộ tôi một con cừu...
+3364803	Mọi kế hoạch đều đổ sông đổ bể.
+3381400	Một ngày tựa mạn thuyền rồng còn hơn chín kiếp ngồi trong thuyền chài .
+3416686	Ở hiền gặp lành ở ác gặp ác.
+3460373	Vui lòng cho tôi một chai bia.
+3460411	Cái áo không phải của tôi.
+3467902	Những người kỹ sư vẽ ra các kế hoạch cho bến tàu mới.
+3468122	Người bác sỹ đã phá vỡ lời thề Hippocrates.
+3468139	Xin lỗi, chỗ này tên là gì?
+3468153	Bạn cũng thua rồi.
+3470008	Uống thật nhiều vitamin C để đề phòng bị cảm.
+3470034	Tôi đã gặp Ken ở công viên.
+3481638	Phim khiêu dâm được xếp loại X, có nghĩa là chỉ người từ 18 tuổi trở lên có thể xem chúng.
+3481655	Ngày nay, giấy được dùng nhiều mỗi ngày.
+3481656	Cô ta đã gặp người nào đó.
+3481673	Tôi không nhớ gì về điều đó.
+3484767	Tôi là người giám sát Tom.
+3484793	Tôi cần nói chuyện riêng với Tom.
+3484810	Tom kể cho tôi những gì anh ta đã thấy.
+3484837	Đây là lần thứ hai tôi tự đến Trung Quốc.
+3526188	Không ai đi thì tôi đi một mình vậy.
+3526244	Anh muốn nói thế nào thì cứ nói đi.
+3526268	Bây giờ tôi sẽ trình bày vấn đề thứ hai.
+3537846	Đoàn kết mọi lực lường có thể đoàn kết được.
+3537859	Tôi thấy tin đó nên báo cho mọi người biết.
+3537964	Bài văn này rất hay.
+3537986	Tôi biết những sinh viên này.
+3537995	Biếu chị một chút quà.
+3538005	Hàng nghìn người đến dự cuộc mít tinh hôm nay.
+3538065	Chẳng ai đến cả.
+3549764	Mặt trời đang lên.
+3610977	Tuổi kết hôn hợp pháp ở Úc là 18.
+3680915	Hiện tại Tom không ở New York.
+3680921	Tom ước rằng mình có thể chơi tennis giỏi như Mary.
+3680944	Tom bắt đầu đóng gói đồ đạc.
+3708362	Tom tập trung vào công việc.
+3709244	Trong lúc doanh nghiệp đang tổ chức lại, phải kiên trì với tiêu chuẩn cao, yêu cầu nghiêm ngặt, ngăn chặn việc làm chiếu lệ hời hợt.
+3709319	Anh ta làm ra vẻ không quan tâm.
+3709333	Tớ một mình được mà, cậu cứ yên tâm đi.
+3709339	“Hôm nay nóng thật đấy” – “Chuẩn lun, nóng hơn hôm qua nhiều”
+3714423	Tôi sẽ đi học.
+3780727	Chàng trai đó đã nhuộm tóc vì muốn được chú ý.
+4169967	Biết đâu anh cần quyển sách đó!
+4172770	Tập dữ tính thành.
+4184802	Không có gì sướng bằng được ăn đồ ăn ngon.
+4184840	Giúp tớ làm bài tập tiếng Anh nhé?
+4188189	Về món quà, xin bạn đừng băn khoăn về giá trị tương đương. Đây là tình bạn, không phải là thị trường.
+4192926	Ông ta đã thử giúp.
+4195513	Mary là người bỏ cuộc.
+4205295	Đừng cù tôi!
+4205377	Tôi đau cẳng chân phải.
+4205435	Tôi đã quyết định kể từ bây giờ học chăm chỉ hơn.
+4255256	Tôi không phụ thuộc chuyện tiền bạc vào bố mẹ tôi
+4274418	Tom thường đi ngủ lúc 10 giờ 40.
+4302220	Chiếc xe này là của ổng.
+4305281	Hoa cẩm chướng ngửi ra sao?
+4305293	Ai đó đã móc túi lấy ví của tôi.
+4332920	Chúng tôi luôn đi bộ ngang qua bưu điện trên đường đi làm
+4332926	Tôi sẽ trở lại sớm
+4380771	Tôi không biết cái nào
+4456378	Rất vui được gặp bạn.
+4456384	Mary là một trong những học viên tự tin và thành công nhất trong lớp.
+4456387	Tom tháo kính khỏi gương mặt Mary và hai người trao nhau nụ hôn mãnh liệt.
+4456397	Tôi đã cực kỳ thất vọng khi nghe tin.
+4580264	Tôi chắc là bạn sẽ hiểu.
+4580275	Để Tom thử đi.
+4604905	Đó là của chúng tôi.
+4605264	Đừng có trẻ con như vậy.
+4608370	Mẹ của đứa bé kia là một phát thanh viên.
+4611353	Anh muốn mua gì?
+4785990	Khẩu súng của Tom bị cướp cò.
+4786056	Họ đã đến.
+4786062	Tom làm việc với bản báo cáo từ sáng đến giờ.
+4786097	Bạn sẽ cộng tác chứ?
+4786112	Có ai nhìn thấy bạn ở đó không?
+4786298	Tom chối là đã gian lận.
+4948528	Tối qua tôi ngủ ngon.
+5093716	Anh ấy đang đọc một quyển sách.
+5142828	Tom hỏi tôi nếu tôi có thể ở lại và giúp anh ấy dọn dẹp sau bữa tiệc.
+5144912	Cần bao nhiêu lít để đổ đầy bồn tắm nóng?
+5146458	Tin về cái chết của cậu ta đã không được thông báo trong vài tuần.
+5147693	Nhà hát thường thì không mở cửa vào thứ ba.
+5148072	Tôi sẽ chơi tennis với Tom lúc chiều muộn.
+5148691	Tom, cho tôi một phút. Tôi cần nghĩ đã.
+5148704	Cô ấy có thái độ tiêu cực với cuộc sống.
+5148861	Bạn có thể mời bất ai muốn đến Festival.
+5148893	Tôm đang hỏi về nó.
+5150846	Sự trợ giúp của anh ấy đến thật đúng lúc.
+5150850	Tôi gặp anh ta lần đầu tiên 10 năm trước.
+5158956	Chúng tôi đặt tên con thuyền là Nửa Vầng Trăng.
+5158972	Tôi thường nghe thấy cậu ta nói tiếng Anh.
+5159004	Tôi chỉ mang theo đồ dùng cá nhân.
+5159628	Tom là nhân chứng duy nhất. Không có nhân chứng nào khác.
+5159945	Đó không phải những gì mà Tom nói.
+5161351	Cái đèn pin này cần hai cục pin.
+5161363	Tom đang cân nhắn một cách nghiêm túc.
+5161413	Chính xác là cái máy này làm được việc gì?
+5172034	Đó là cách Tom kiếm sống.
+5404909	Tom nói là có người muốn gặp tôi.
+5404936	"Tôi tham gia với được không?" "Được thôi."
+5404951	Tôi không nghĩ là sẽ có mưa, nhưng cứ cầm theo ô cho chắc.
+5489302	Thật khó tin!
+5642145	George thấy tầu bắt đâu chuyển bánh.
+5754249	Tôi hi vọng là có vài câu lạc bộ âm nhạc.
+5758868	Anh ta đã cướp chiếc xe chở thư.
+5763073	Chính phủ không đầu tư nhiều vào giáo dục.
+5763078	Ổ bánh mì được tô điểm bằng những chú sóc nhỏ xíu được làm rất tỉ mỉ.
+5763107	Không ai trách em cả.
+5767751	Anh ta cao mét rưỡi.
+5844023	Tôi mười hai tuổi. Cái ấy này là gì?
+5911241	Người ta đang thi công một con đường mới.
+6229782	Tom lấy cuốn sách ở trên giá
+6261692	Họ có cách nhìn khác về vấn đề của ấy.
+6275247	Cậu còn điều gì muốn nói nữa không?
+6275269	Người lạ khiến Tom bối rối
+6275309	Thứ này làm việc tốt quá.
+6275360	Cậu viết bằng bút bi được không?
+6275380	Cậu nghĩ mình thông minh hơn tớ á?
+6275481	Chỉ còn một việc cần làm.
+6275543	Tom nói ấy tự làm đau lưng mình.
+6275713	Các ngón chân tớ đóng băng.
+6285763	Trái đất không thuộc về loài người; loài người thuộc về trái đất.
+6285779	Năm ngoái, mình xem ít nhất 50 phim.
+6285785	Mình muốn mua cho lũ trẻ tất cả những gì mình không có.
+6546577	Tôi thích thấy bạn cười
+6546603	Cho họ một phút.
+6639463	Mình thích cái này.
+7286802	Điếc không sợ súng.
+7286966	Con không khóc mẹ không cho bú.
+7287016	Không có lửa, làm sao có khói.
+7292127	Tom đang học tiếng Việt, nhưng chưa nói giỏi được.
+7421904	Họ ngủ chung lẫn lộn trong hang hoặc trong lều.
+7884834	Phan Đình Phương là một nhà phát minh tiên phong của Việt Nam.
+7884844	Hãy bật điện lên.
+7884849	Nhiều người nghĩ rằng bia ôm là một hình thức mại dâm trá hình.
+7884855	Em đưa cho tôi một phong thư màu hồng, rồi bẽn lẽn quay mặt đi.
+8423094	Mary nói rằng cô ấy biết ai đã làm điều đó
+8774941	Xin nói to hơn nữa ạ.
+8794986	Đừng bao giờ ngủ quên trên chiến thắng.
+8795074	Tôi thừa nhận sai lầm của chính mình.
+8795453	Bạn có thể bơi qua sông được không?
+8796113	Tom nói với con gái Mary của mình rằng "Lấy số tiền này mà mua thứ mình thích nhé" rồi đưa cho cô 5 Euro.
+8796156	Tom lau kính của mình.
+8796263	Trong tủ lạnh còn đồ ăn thừa.
+8796299	Buổi tối rất vui.
+8796354	Nhìn vào gương một chút đi.
+8832958	Tôi không thể đồng tình với việc các cô gái trẻ đi một mình đến chỗ đó.
+8833006	Tôi hiểu cảm giác của bạn.
+8833029	Tôi đã không thể hoàn thành được công việc nếu không nhờ sự giúp đỡ của bạn.
+8833042	Có một bằng chứng không thể chối cãi chứng minh rằng Tom là kẻ trộm.
+8833077	Cô ấy cũng học tiếng Trung.
+8834770	Geogre trông có vẻ là một cậu bé ngoan.
+8834823	Tôi không thích các môn thể thao như là boxing hay là khúc côn cầu.
+8834832	Hút thuốc có hại cho sức khỏe đấy.
+8834883	Đồng hồ đeo tay của tôi nhanh những 10 phút.
+8834932	Tôi ước tôi mạnh mẽ được như bạn.
+8836972	Bạn sống ở An-giê-ri à?
+8836976	Hãy mua cho tôi một cái CD mới của Shakira.
+8836985	Năm sau là năm con thỏ.
+8839376	Bạn đã từng chịch trong công viên chưa?
+8839445	Tôi ghét cái này!
+8839514	Không bao giờ là quá muộn để bắt đầu học một ngoại ngữ.
+8839898	Tôi đang nghe đài.
+8843106	Cái này có được miễn phí không?
+8843223	Nói thật là tôi không thích kiểu tóc của bạn.
+8847791	Tối qua bạn đi đâu?
+8850544	Tại sao người Nhật lại có định kiến với những người lesbian và bisexual đến vậy?
+8854522	Nếu lúc đó tôi học nhiều hơn, có lẽ bây giờ tôi đã trở thành giáo sư rồi.
+8875212	Cô ấy kết hôn với một triệu phú già.
+8887062	"Đồ uống có miễn phí không?" "Khuyến mãi này chỉ áp dụng cho phụ nữ, thưa quý khách."
+8887167	Bữa này tôi đãi!
+8890743	Lời nói và hành động của bạn không thống nhất.
+8902573	Anh ta vẫn tỏ vẻ bình thản, mặc dù mọi bằng chứng về những việc làm độc ác của mình đã bị phơi bày.
+8929217	Giấc mơ đã trở thành sự thật.
+8931143	Tranh biện là một trò chơi học thuật giữa một bên là "Đồng tình" và một bên là "Phản đối".
+8934196	Tôi có cảm giác là amidan của tôi đang sưng lên.
+8934891	Tôi đã rất run lẩy bẩy.
+8934922	Tom đã chết vì bệnh ung thư.
+8939476	Rất nhiều phong tục, tập quán cổ xưa đang dần bị mai một.
+8942115	Tôi gọi bạn bằng tên riêng có được không?
+8942421	Tom đang khó ở.
+8943172	Nhà vua cởi chuồng!
+8943244	Khi nào tôi mới có thể gặp lại cô ấy đây?
+8943469	Cô ấy hợp với quần áo Nhật Bản hơn nhiều.
+8943534	Hãy đến gặp tôi lần nữa đi.
+8943537	Cuốn sách này không nặng bằng cuốn sách đó.
+8943890	Tạm thời bây giờ hãy dùng cái của tôi đi.
+8944090	Sáng hôm nay, tôi đã uống một cốc Double Espresso rất nóng ở một quán cafe.
+8944095	Sàn nhà có cảm giác mát lạnh.
+8944125	Tôi có thể đỗ xe ở đây không?
+8945556	Sự mất cân bằng thương mại giữa hai nước cần phải được cải thiện.
+8946060	Trưởng phòng đã chấp nhận đề xuất.
+8947117	Anh ấy cho người đó một cuốn sách.
+8947122	Cũng có giáo viên vừa dạy vừa gọt vỏ khoai tây.
+8947129	Họ không bơi ở sông.
+8947232	Ngôi nhà đó được cho là bị ma ám.
+8949094	Hãy bắt đầu hát đi.
+8949832	Tôi không biết là Tom còn sống hay đã chết.
+8949914	Đừng từ bỏ tiếng Anh dù chỉ một ngày.
+8949967	Bạn cần biết phát huy thế mạnh của riêng mình.
+8950303	Đó là một vụ giết người? Hay là một vụ tự tử?
+8950319	Anh ấy sẽ vui nếu có thể gặp được bạn.
+8951536	Tôi cũng có nấu ăn, nhưng tôi nấu rất tệ.
+8951808	Những lời biện hộ của mày, tao đã nghe chán rồi.
+8951819	Bạn có hứng thú với nhạc Nhật không?
+8953682	Tại sao mọi người lại đi xem phim?
+8954443	Bạn rõ ràng là sai.
+8954490	Trong hai câu chuyện, câu chuyện sau hay hơn.
+8954516	Bạn trông giống hệt bố bạn nhỉ.
+8954569	Tôi không thể trả lời câu hỏi này.
+8955306	Một người đàn ông đã mặc một chiếc ảo nỉ màu xanh.
+8956138	Mẹ tôi đang ra ngoài.
+8956197	Bạn lúc nào cũng giúp đỡ tôi rất nhiều.
+8956512	Phái đoàn của hai nước sẽ gặp nhau tại Geneva.
+8956529	Tôi muốn đến nước Anh.
+8956560	Hãy đánh răng trước khi ngủ.
+8956620	Trái tim tôi đã hoàn toàn tan nát.
+8956753	Nếu tôi là bạn, tôi sẽ đăng ký nhận học bổng.
+8956759	Tom và Mary đã ở trong một khách sạn cao cấp.
+8956789	Debbie! Nghe thấy tôi nói gì không?
+8957095	Bài tập về nhà Toán dễ hơn tôi tưởng.
+8957765	Chúng tôi sẽ không bao giờ sử dụng chúng.
+8957770	Tôi cứ tưởng họ giận tôi vì tôi không giúp họ rửa ô tô.
+8957772	Tôi tưởng Tom đã ra viện rồi.
+8958144	Nếu anh còn quấy rầy tôi, tôi sẽ báo công an đấy!
+8958589	Bạn sẽ không hối hận về điều đó đâu.
+8959209	Bạn có thực sự không biết bơi không?
+8959210	Có thật là bạn không biết bơi không?
+8959901	Bạn vẫn định kết hôn với Tom à?
+8960052	Sao bạn biết tôi là người Canada?
+8960064	Tôi không biết là Tom đã từng làm điều đó.
+8961081	Năm ngoái, nhân lúc đi du học ngắn hạn tại đại học Bắc Kinh trong một tháng rưỡi, tôi đã chú tâm học tiếng Trung để có thể nói chuyện trôi chảy.
+8961602	Bây giờ tôi đang rảnh.
+8962020	Năm sau, tôi sẽ quay về Boston.
+8962206	Anh ấy đã viết một bản báo cáo.
+8962579	Tôi đang học tiếng Pháp.
+8962890	Anh ấy là sinh viên của trường đại học này.
+8963782	Sáu chia hai bằng ba.
+8964431	Ông ta làm việc tại công ty nào?
+8964637	Bạn đã cứu sống toàn bộ chúng tôi.
+8964982	Đứa nào nói xấu cô ấy là không xong với tao đâu.
+8965039	Tôi đang gánh vác một nhiệm vụ trọng đại.
+8965604	Tôi không biết cách đăng tải một tấm hình.
+8967962	Sáng nay tôi gặp Bob.
+8967982	Trên cây cầu có một con chó.
+8967998	Đây có phải nơi Tom làm việc không?
+8969881	Tôi thực sự không muốn ngồi trong căn phòng đó.
+8969922	Tom nói là anh ấy biết Mary đã học cách làm điều đó ở đâu.
+8969935	"Bạn nghe thấy tôi nói gì không?" "Không." "Vậy sao bạn lại có thể trả lời được câu hỏi của tôi?"
+8970661	Mày đang nói với ai đấy, hả thằng ngu?
+8970695	Nó không thú vị.
+8973910	Có kẹo cao su dính vào đế giày tôi.
+8974378	Cha mẹ có trách nhiệm cho sự an toàn của con mình.
+8974408	Chúng tôi cực kỳ thích đi picnic.
+8975277	Tôi muốn kết hôn với cô ấy.
+8977420	Tôi là người đầu tiên làm điều đó.
+8977794	Này, chờ đã!
+8978166	Tôi không thích đùa kiểu này.
+8978269	Điều đó sẽ xảy ra, tôi chắc chắn đấy.
+8981759	Vì lý do nào đó mà chồng cô ấy có vẻ không thích việc cô ấy nói về tôi. Thực tế thì cô ấy đã nói quá nhiều về tôi.
+8981919	Tom đã giấu con dao dưới gối của anh ấy.
+8982121	Hỡi Chúa của con, hỡi Chúa của con, tại sao ngài lại nỡ bỏ rơi con?
+8982774	Anh ấy cảm thấy xấu hổ về thất bại của mình.
+8987202	Ngoài ra thì bạn có thể tìm được nhiều cuốn sách với rất nhiều định dạng khác nhau trong dự án Gutenberg.
+8989041	Bạn đã trả lời như thế nào?
+8990703	Sao bạn không để Tom được yên?
+8991789	Tôi sẽ bảo với Mary là cô ấy không có gì phải lo lắng hết.
+8992155	Vì tiếng ồn nên tôi không thể nghe được một cái gì hết.
+8992575	Hôm nay là ngày phát lương à?
+8992594	Tôi đã tặng anh ấy một cái chăn.
+8992654	Cuộc vui nào rồi cũng sẽ đến hồi kết.
+8993872	Vì gặp cơn mưa rào nên tôi đã bị ướt như chuột lột.
+8993961	Có thật là bạn không biết nói tiếng Pháp không?
+8994390	Hành động quan trọng hơn lời nói.
+8995072	Bạn không thể lúc nào cũng vui được.
+8995090	Bạn đã sẵn sàng quẩy chưa?
+8995091	Bạn đã sẵn sàng để quẩy chưa?
+8995657	Bạn chắc hẳn phải rất giàu.
+8995764	Cô ấy bị bỏng ở tay phải.
+8995767	Mẹ tôi vừa mỉm cười vừa nói.
+8996694	Tom đã thắp nến lên.
+8997637	Vâng, tôi nhận được rồi!
+8997760	Tôi đéo quan tâm.
+8997907	Tôi không có thời gian để gặp bạn.
+8998221	Cô gái mà đã tặng cho tôi những bông hoa đẹp là em gái bạn.
+8999070	Bạn có thể có cái này với giá 300 Đô-la.
+9001460	Tên người bạn mới của bạn là gì?
+9002394	Cô ấy đã mua hai tá trứng.
+9003256	Nhưng mà bây giờ đã gần 11 giờ rưỡi rồi.
+9005877	Anh ấy đã vi phạm pháp luật.
+9007245	Tòa tuyên bố bản di chúc có hiệu lực.
+9007272	Hiện tại là năm giờ.
+9007417	Taro đã rút 10000 yên từ ngân hàng.
+9010228	Chúng tôi đã nhảy xuống sông.
+9010313	Tôi thật sự không thích đồ ăn Ý cho lắm.
+9010508	Cô ấy giàu có, và thậm chí còn rất xinh đẹp.
+9010523	Bạn có nhìn rõ kẻ đột nhập không?
+9010619	Tôi mong là bạn hiểu.
+9010646	Chắc là cô ấy đã không làm tình với anh ấy.
+9010663	Điều gì cũng có thể xảy ra.
+9011070	Tôi đã thay đổi ảnh đại diện của mình.
+9012223	Cho tôi xem bức tranh đó một lát.
+9012717	Bạn trông không giống bố bạn cho lắm.
+9013928	Cái nhẫn này giá bao nhiêu?
+9013947	Có lẽ là trời sắp mưa.
+9015879	Các bé gái sẽ bước vào tuổi dậy thì vào khoảng độ tuổi từ 10 đến 11, còn các bé trai thì sẽ là vào khoảng độ tuổi từ 11 đến 12.
+9016064	Cá voi là một loài động vật có vú khổng lồ sống ở đại dương.
+9016792	Đừng tin một ai.
+9016810	Có phải là Tom vẫn còn là một giáo viên tiếng Pháp không?
+9017794	Anh ấy sẽ không làm chuyện ngu xuẩn như thế.
+9018818	Tom có biết là bạn đang làm gì ở đây không?
+9023387	Những tin đồn kỳ lạ đang lan rộng.
+9024298	Tôi đã bảo Tom giúp Mary.
+9024300	Đã đến lúc trả đũa rồi.
+9024433	Con búp bê bị hỏng đó là của tôi.
+9024869	Anh ta điên rồi.
+9026145	Tôi không biết đi xe đạp.
+9028608	Cô ấy đã tưởng tôi là một bác sỹ.
+9028715	Đừng bao giờ tin một người phụ nữ có một khẩu súng trong tay.
+9034885	"Cho tớ hỏi ngu một tí được không? Cái chữ này đọc thế nào ấy nhỉ? Cô-rô-na gì đó. Ừ-dư? Nà-bê? Chắc sai rồi nhỉ." "Cô-rô-na-ca" "À! Hóa ra đọc là "ca" à." "Tớ nghĩ là cậu nên xem nhiều ti-vi hơn."
+9034887	"Mày ơi cho tao hỏi ngu một câu. Cái chữ này đọc thế nào ấy nhỉ? Cô-rô-na gì gì đó.. Ừ-dư? Nà-bê? Chắc sai rồi nhỉ." "Cô-rô-na-ca" "À! Hóa ra đọc là "ca" à." "Tao nghĩ là mày nên xem ti-vi nhiều hơn."
+9035411	Tôi ngồi đây được không?
+9037740	Tôi sẽ ăn pudding cà phê.
+9056988	Tom không tin vào cuộc sống sau khi chết.
+9064468	Năm ngoái tôi sống ở Boston.
+9064668	Bây giờ là 8 giờ sáng.
+9067989	Tôi nghĩ bốn cái khăn là đủ cho một người.
+9071696	Cô ấy đã không nói nên lời.
+9081634	Cô ấy nói với tôi là cô ấy không ăn thịt.
+9082306	Hai người đó đều đã làm tốt.
+9086112	Biết thì thưa thốt, không biết thì dựa cột mà nghe.
+9090741	Algeria có quan hệ căng thẳng với Morocco.
+9090758	Bạn cho tôi mượn cái bút chì được không?
+9090761	Bạn cho tôi mượn một cái bút chì có được không?
+9090764	Anh ấy đang vẽ tranh.
+9108525	Tom không thích sữa.
+9126272	Tôi hay hắt xì.
+9132104	Tôi đang xem ti vi.
+9381344	Rượu vang là thơ ca được chứa đựng trong chai.
+9415801	Chúng tôi sẽ tổ chức một buổi họp báo vào ngày thứ 6.
+9415821	Vào vị trí, sẵn sàng, chạy!
+9419017	Tom bỏ học cấp 3.
+9419170	Lúc còn nhỏ, tôi không có xe đạp.
+9424982	Hoa hồng nào mà chẳng có gai.
+9432160	Hai chúng tôi đều vô cùng đói.
+9450330	Thật mừng là tôi đã ở đó.
+9550414	quả táo đó rất ngon
+9555171	cảm ơn vì giải thích của bạn
+9555421	Nếu Tom có thời gian, tôi chắc chắn rằng anh ấy sẽ đến thăm Mary
+9555426	Tom và Mary có công việc giống nhau
+9629997	Anh ấy nghiêm khắc với con mình.
+9707411	Cô ấy đang bận chuẩn bị cho chuyến du lịch.
+9712477	Lúc còn nhỏ tôi không thích chó.
+9712806	Mày tin nó, có phải không?
+9712829	Ông ta bị buộc tội giết vợ con của mình.
+9712956	Tôi không nghĩ bạn sẽ đến sớm thế này đâu.
+9715135	Bạn sẽ thấy tốt hơn.
+9715332	Từ lúc chuyển nhà tới giờ, hôm qua là lần đầu tôi thấy gián đấy. Tôi cứ nghĩ là mình sắp ngất đi rồi. Tất nhiên là tôi phải giết lũ gián này bằng cách nào đó.
+9715792	Đừng cản tôi lúc này.
+9722315	Với số tiền mà ông Johnson tiết kiệm được, cho dù có nghỉ việc thì ông ấy vẫn có thể sống sung túc.
+9722841	Nhóm đó kêu gọi các bậc cha mẹ giám sát những nội dung mà con cái họ xem trên TikTok.
+9731417	Bà ấy đã đọc bài báo này chưa vậy?
+9733408	Đừng vòng vo nữa, vào chủ đề chính đi.
+9733857	Tôi không cần tiền.
+9733951	Thói quen ăn uống là nguyên nhân tử vong của hơn 1 triệu người.
+9734020	Ông ta đã bị khởi tố vì tội trộm cắp tài sản.
+9734314	Mary là một người phụ nữ xinh đẹp.
+9734327	Bà ấy mua một cuốn sách ở cửa hàng đó.
+9735525	Bà ấy để mình đắm chìm trong khoái cảm.
+9735838	John đùn đẩy trách nhiệm sang cho người khác.
+9736007	Cô ấy cho nhiều đường vào cà phê của mình.
+9736764	Em trai tôi học tiếng Anh.
+9736771	Tom và Mary định tổ chức một buổi tiệc vào tuần sau.
+9737923	Tôi đã chơi cờ vua từ nhỏ.
+9739417	Công việc đó lương ổn, nhưng tôi phải làm 12 tiếng một ngày.
+9739473	Nếu quan hệ vợ chồng mà tốt đẹp, thì cuộc sống hôn nhân sẽ là thiên đường. Nếu quan hệ vợ chồng mà tồi tệ, thì cuộc sống hôn nhân sẽ trở thành địa ngục trần gian.
+9741697	Bạn phải trở về nhà.
+9741763	Nhà tôi bẩn lắm.
+9752228	Ông ấy là chủ quán rượu đó.
+9752288	Đã bao giờ bạn ăn đồ ăn Nhật Bản chưa?
+9752672	Chúng ta ăn thôi. Tôi sắp chết vì đói rồi.
+9753792	Chúng ta có rất ít thời gian.
+9757395	Chúng tôi chưa biết kết quả.
+9773957	Mọi người đều nhìn anh ta.
+9778112	Trong lúc Tom đang nhìn qua cửa sổ, một ngôi sao băng từ trên trời rơi xuống.
+9778113	Tom đang nhìn qua cửa sổ thì một ngôi sao băng từ trên trời rơi xuống.
+9793960	Tôi thực sự không muốn sống ở đây.
+9809948	Niềm tin giết chết đàn ông và khiến đàn bà có thai.
+9843985	Tôi có một cái máy tính.
+9843987	Tôi có một chiếc máy tính.
+10043662	Hãy làm tiếp công việc đi.
+10045739	Chắc là Tom về nhà rồi.
+10222570	Ông tôi đã mất 5 năm trước.
+10222611	Không không, thật ra tôi cũng không thích nó đến thế đâu.
+10233037	Anh ấy đã quyết định sẽ kết hôn với cô ấy.
+10233073	Tôi là một bệnh nhân.
+10233118	Bạn phải trả tiền phí vào cửa ở đây.
+10233132	Bố tôi là một nhân viên ngân hàng.
+10233140	Đừng bắt nạt Tom nữa.
+10233396	Anh ấy khá là khó tính.
+10233483	Anh nhớ em nhiều lắm.
+10233497	OK tớ hiểu rồi. Tớ sẽ cố gắng đến sớm nhất có thể.
+10241599	Mãi cho tới khi Lucy không còn bên tôi nữa, tôi mới biết rằng tôi yêu cô ấy đến nhường nào.
+10257514	Ảnh thích hát trong bồn tắm.
+10257575	Quyển sách này rất hứu ích cho chúng ta.
+10257691	Cậu trốn ở đâu vậy?
+10257769	Tôi sẽ cất nó ở ngăn tủ trên cùng.
+10257790	Tom giả vờ là anh trai sinh đôi của anh ấy.
+10257793	Những loài động vật nào ăn muỗi?
+10257834	Tom nghĩ rằng Mary xinh.
+10258857	Sữa này không ngon.
+10266649	Anh ấy không làm gì sai.
+10266666	Anh ấy đã từng sống ở đây.
+10266990	Cô ấy đã không thể trả lời câu hỏi đó.
+10269476	Tôi hiểu rằng anh ấy đang tức giận.
+10273133	Chúng tôi chỉ vừa đến Úc tuần trước.
+10274090	Tôi không có tiền.
+10277208	Tôi không chơi quần vợt thường xuyên.
+10280488	Bố bạn làm nghề gì?
+10291517	Cô ấy nói rằng cô ấy không nghe thấy gì cả.
+10291522	Bạn phải làm bao nhiêu việc trong hôm nay?
+10299565	Khi nghe tin hoàng đế băng hà, thần dân của cả vương quốc đã vô cùng thương tiếc.
+10309078	Bạn có thể trông cậy vào Tom.
+10309105	Chắc là bạn đúng.
+10356430	Nghĩa của câu này mơ hồ.
+10460204	Tom gặp khó khăn với việc đứng yên.
+10475263	Không, tôi không có hứng đâu.
+10669095	Họ đã viết lá thư khi nào?
+10669790	Anh nhớ em rất nhiều
+10670117	Bạn có thường xuyên đi du lịch không?
+10670195	Tên tôi là Shu
+10703643	Mary là người phụ trách bảo tàng.
+10703661	Yanni cần làm gì trong hoàn cảnh này?
+10705745	Ngồi cho thẳng lưng.
+10708471	Chill bạn ơi!
+10712848	Tom đang ngồi dưới gốc cây.
+10713240	Tôi phải đi vệ sinh.
+10713920	Đầu bạn vẫn còn đau à?
+11028729	Cậu ta là một tấm chiếu mới chưa trải.
+11045615	Bác ái lĩnh chúng sanh.
+11067696	Tôi là người Arghentina.
+11108625	Đó là một trải nghiệm mới đối với cô ấy.
+11108887	Đây là lâu đài chúng tôi đã đến thăm vào tuần trước.
+11248558	Chắc chắn rùi!
+11254280	Anh ấy không có bạn để nói chuyện cùng
+11263476	Bạn nên sử dụng chiếc tuốc nơ vít còn lại.
+11264879	Tôi biết chơi quần vợt.
+11264899	Bạn có nghĩ đây là một ý tưởng hay không?
+11266534	Tôi đã không thể hiểu nổi tại sao anh ấy lại muốn rời đi.
+11268612	Mũi tôi bị nghẹt.
+11268657	Tôi sắp sửa đi ra ngoài thì điện thoại reo.
+11276047	Hôm nay thời tiết nắng đẹp.
+11277793	Chiếc áo len bao nhiêu tiền?
+11289521	Đây là lý do vì sao anh ấy nói đồng ý với bạn.
+11296913	Họ sẽ cho chúng ta thời gian để thu thập thêm thông tin.
+11297022	Rắc muối vào thức ăn của bạn là một thói quen không lành mạnh.
+11299681	Khi tàu chìm, ông ta đã rời nó và bỏ mặc 1.500 người chết.
+11302824	Hút thuốc lá có hại cho sức khỏe của bạn.
+11303171	Các học sinh nên làm bài tập về nhà của mình.
+11311520	Anh trai tôi đã làm bồi bàn trong một năm hồi anh ấy học đại học.
+11314610	Tôi vẫn thấy mình mặc đẹp.
+11318113	Không quan trọng bạn chọn tôn giáo nào.
+11319146	Cô ấy có mái tóc khô.
+11326244	Tôi đã làm điều đó khi nào?
+11326247	Cô ấy đã nói với bạn cái gì?
+11326298	Bạn có thể ở lại với chúng tôi
+11326949	Hãy cẩn thận với cửa kính trước mặt bạn.
+11330549	Tôi thích đọc sách ở thư viện.
+11344747	Tôi đã bị ngã thang vào ngày hôm qua.
+11352222	Tình yêu của chúng ta sẽ không bao giờ chết.
+11356910	Saguaro là một giống xương rồng.
+11357031	Cô ấy trông ốm yếu và gầy gò.
+11362823	Tôi muốn đến thăm một người bạn thân.
+11363994	Giờ thì chúng ta cuối cùng cũng có thể dùng nó để mở cánh cửa được rồi!
+11368560	Không, đây không phải xe hơi của tôi.
+11369858	Tôi sẽ làm đậu cho bạn.
+11373342	Khoảng cách từ nhà bạn đến đây là bao xa?
+11373510	Bạn đẹp hay không đẹp không thành vấn đề.
+11377514	Anh ấy đã gợi ý mọi người đi cắm trại vào mùa hè tới.
+11380380	Thế có quá muộn không?
+11380430	Tôi đã chỉ ngủ được khoảng ba mươi phút.
+11385011	Lẽ ra bạn nên gọi điện thoại cho tôi khi bạn đến.
+11392984	Anh/chị đã thực sự nhìn thấy điều đó?
+11392989	Tôi hiểu rằng đã có một sai lầm.
+11406838	Anh ấy đã phải ở lại vì anh ấy có quá nhiều việc phải làm.
+11409442	Con đường đầy những ổ gà.
+11412653	Tôi đã muốn mua nó.
+11434367	Tôi không muốn đi, nhưng tôi đã phải đi.
+11444622	Ngày mai chúng tôi sẽ không đi làm.
+11445065	Tôi đã cố gắng thu hút sự chú ý của bạn.
+11445129	Bạn đã cảnh báo Tom không được mở chiếc hộp đó rồi chứ?
+11445150	Tôi chỉ hy vọng rằng không ai nhìn thấy tôi làm chuyện đó.
+11445188	Tôi là người duy nhất đã làm sai việc đó.
+11450800	Tôi không ngại chăm sóc đứa bé cho bạn đâu.
+11451904	Bạn không thể hiểu được tiếng Pháp à?
+11452612	Tôi luôn gặp gỡ bạn bè của mình vào cuối tuần.
+11475631	Tom nói cậu ấy không đủ tự tin để làm việc đó.
+11475632	Tin đồn nhanh chống lan đi.
+11475659	Cô ấy không tự thở được.
+11475681	Đây là đồ trược tuyết của bạn hả?
+11475684	Mình thích cái đầm mà bạn đang mặc đấy.
+11480962	Chia sẻ đam mê của mình là sống thật trọn vẹn với nó.
+11534288	Cậu ấy gắn kệ sách vào tường.
+11534300	Tui nghĩ Tom là một người tốt bụng.
+11534331	"Cậu là Ziri hả?" "Ừ." "Vậy thì giúp tui được không?" "Giúp cái gì?"
+11534388	Ngọn lửa bắt đầu từ gara của cậu ấy.
+11534414	Tom mang đồ đắc tiền.
+11534431	Nếu tui là cậu thì sẽ thử mua mấy cái đó liền.
+11534986	Chứ còn gì nữa.
+11535045	Lại nữa sao?
+11584707	Một tảng đá rơi xuống đã khiến ông ta tử vong tại chỗ.
+11584716	Mày đã hứa với tao là mày không cười rồi mà.
+11584726	Tôi chỉ có một câu hỏi.
+11584734	Tao đếch quan tâm mày nghĩ cái gì đâu.
+11584768	Bà ấy rất thích chơi đàn tranh koto.
+11751600	Bạn đã sẵn sàng chưa?
+11829297	Tôi không thể dừng bình luận của anh ấy.
+11829501	Anh ấy nghĩ rằng công việc của anh ấy là vô ích.
+11832526	Cô ấy sẵn sàng
+11832539	Ai đã chờ đợi?
+12006945	Con chim đó đang tìm sâu.
+12006967	Các nước đang phát triển đang thiếu nguồn cung kỹ sư chất lượng cao.
+12006984	Cô ta không tôn trọng cái gì hết.
+12007197	Ông ấy đang đợi bạn ở trên đó.
+12007199	Anh ấy đang ở trên đó đợi bạn.
+12010859	Bạn là một đầu bếp giỏi.
+12010878	Ai trả lương cho bạn?
+12051827	Hút thuốc bị nghiêm cấm ở đây.
+12051833	Trái tim tôi bị tan vỡ.
+12052549	Tom và Vladimir cần nhau.
+12052629	Máy bay này nhanh như thế nào!
+12054379	Tôi không biết là Tom sống ở Úc 3 năm.
+12054887	Bạn có vẻ hơi mất phương hướng.
+12054894	Tôi bị gãy mắt cá chân.
+12054904	Ăn pizza khiến em gái anh tức giận.
+12054939	Nếu bạn ở vị trí của tôi, bạn sẽ làm gì?
+12056285	Chuyên ngành của Tom là sinh học.
+12095229	Tôi không mệt nhiều lắm.
+12095267	Đó là một con chuột.
+12119051	Tại sao cậu lại nắm tay anh ấy?
+12127200	Cô ấy thích hát.
+12127209	Chúng tôi có hai bụi cây trong vườn.
+12132337	Tom đang ở trong bếp, hâm nóng đồ ăn thừa.
+12132342	Tôi nghĩ Tom không cố ý.
+12132373	Không phải chúng ta cần nhiều tiền sao?
+12249318	Tom chắc chắn sẽ không có mặt tại cuộc họp.
+12249332	Và nếu bạn không đúng thì sao?
+12252367	Điều đó thật đáng buồn.
+12295991	Bạn đã viết cuốn sách này?
+12296031	Bạn nghe thấy gì?
+12312584	Kể từ khi đến thăm Paris, anh ấy chỉ nói về điều đó.
+12529250	Hầu hết mọi người nghĩ tôi bị điên
+12534031	Bạn đã ở đây bao lâu
+12534484	Có 1 vấn đề ở đó mà bạn không nhìn thấy
+12538220	Tôi có những lựa chọn nào khác
+12543119	Tôi sẽ không ăn thịt đâu.
+12544976	Đó là một cánh đồng lúa vàng bao la, bát ngát.
+12550051	ồ tôi xin lỗi
+12554145	Có quá nhiều thứ để làm
+12557782	Tại sao cuộc lại đầy những đau khổ vậy
+12562853	Tôi sẽ không thua
+12562866	Bạn đã có nhiều thời gian
+12565617	Bạn đang nói tính mạng tôi đang ở trong hiểm nguy
+12565621	Chỗ này có không khí rất bí ẩn
+12570916	Bạn sẽ chỉ đứng ở đó cả ngày à ?
+12582780	Tôi không sống xa nơi đây]
+12602694	Tôi sẽ có thật nhiều tiền hơn so với anh ấy.
+12725760	Bạn có chắc cô ấy nói được tiếng Bồ Đào Nha không?
+12837335	Tôi cần giảm cân.
+12864304	Tôi đã không vào trong ô tô của Tom
+12864311	Tôi thắc mắc tại sao Tom và Mary đã không làm điều mà chúng tôi đã bảo họ làm
+12876271	"Sao lại không nói với chúng tôi thế?" "Các bạn có hỏi đâu."
+12898862	Chúng tôi rất cảm động trước bài phát biểu của anh ấy.
+12898927	Hãy hiến máu.
+13022371	Nền kinh tế Nhật Bản phát triển rất nhanh.
+13135780	Người ích kỷ!
+13136032	Anh ấy đã chờ đợi.
+13173237	Tối nay tôi thấy rất buồn.
+13173328	Tôi không phải chuyên gia.
+13173330	Xin lỗi, tôi không thể.
+13173363	Tôi xong việc rồi.
+13173379	Tôi đồng ý với bạn, nhưng đừng bảo với ai là tôi nói thế.
+13173500	Đến cả siêu anh hùng thỉnh thoảng cũng cần nghỉ ngơi.
+13232192	Tom ở trong bệnh viện trong ba tháng.
+13249721	Hãy giơ tay.
+13249749	Có bao nhiêu người mà bạn biết tên là Tom?
+13249784	Tom nhỏ tuổi hơn Mary nhiều.
+13270995	Khu rừng bị tuyết che phủ.
+13271040	Tôi không thể lái xe vì tôi không có bằng lái.
+13271069	Tại sao Tom bị giết?
+13333854	Tom đã tắm.
+13334004	Nó đã hoạt động.
+13334035	Tha thứ cho Tom.
+13338350	Tôi đã thổ lộ.
+13338378	Xin hãy nghe này.
+13338430	Tom đã rơi lệ.
+13338507	Tom đã rời đi.
+13339789	Rẽ trái đi.
+13339831	Bạn hiểu lầm tôi.
+13339853	Tom béo lên.
+13339918	Trà chanh ngon hơn trà tắc.
+13340152	Cô ấy có OK không?
+13340188	Chúng tôi là lập trình viên.
+13340262	Đóng gói đồ đạc của bạn đi.
+13340471	Tom nói năng trôi trảy.
+13340554	Tiếng Việt là ngôn ngữ có thanh điệu.
+13340568	Tiếng Việt là một ngôn ngữ rất súc tích.
+13340581	Tom nói tiếng Việt, ngôn ngữ bản địa của vợ anh ấy.
+13340599	Hôm nay là ngày giỗ của bà nội Mary.
+13340604	Tiếng Santal là ngôn ngữ hệ Nam Á được nói nhiều thứ ba, chỉ sau tiếng Việt và tiếng Khơ-me.
+13340646	Tom bị mù.
+13340752	Mọi người không ai giống ai.
+13340813	Con bướm đẹp.
+13340821	Hút thuốc không tốt cho sức khoẻ.
+13340824	Anh ấy suýt chết đuối.
+13340845	Tôi đã nhảy việc.
+13340952	Tom là người chuyển giới.
+13340968	Đừng lãng phí tiền bạc nữa.
+13340996	Tôi chẳng được gì cả.
+13341089	Hãy nghe thật cẩn thận.
+13341160	Tinh tinh có thể bơi không?
+13341167	Tháo cái nắp ra.
+13341171	Tom vạm vỡ.
+13341843	Mèo thích hộp.
+13342773	Tôi không biết điệu nhảy đó.
+13344026	Tôi sẽ đến Boston vào tuần đầu tiên của tháng Mười.
+13344041	Tom ở trong lớp.
+13344099	Không có Tom nào ở đây cả.
+13344187	Tom không sợ.
+13344297	Tom đã chết khi tôi lên ba tuổi.
+13344298	Tom không có con.
+13351067	Căn hộ mới đẹp làm sao!
+13351069	Bát cháo này nóng quá.
+13351104	Quả táo này bao nhiêu tiền?
+13379342	Trời đang mưa ở Kabylie.
+13379375	Liệu rắn có thể dự báo động đất hay không?
+13380093	Nó biến mất lúc nửa đêm.
+13390962	Năng lượng hạt nhân được dùng để tạo ra điện.
+13400314	Tom nên ngủ nhiều hơn.
+13426391	Anh ấy đã làm bài tập về nhà của mình.
+13426397	Cho cô xem bài tập về nhà của em.
+13426466	Tôi tự hỏi liệu Tom có chịu giúp tôi làm bài tập về nhà không.
+13426490	Học máy có thể được dùng để dự báo và giảm thiểu thiệt hại của thảm hoạ tự nhiên.
+13426510	Fyodor châm ngòi một cái pháo hoa khác.
+13426512	Tôi không thích pháo hoa.
+13430909	Mary cần tiền.
+13432005	Bạn đã thử ăn lẩu ở Đài Loan chưa?
+13437747	Tôi thích sữa.
+13472127	Công thức Heron cho thấy rằng diện tích của một tam giác có thể được biểu diễn bằng một hàm các cạnh của tam giác đó.
+13472204	Bảy nhân hai bằng mười bốn.
+13472207	Các em được dùng máy tính của mình.
+13472363	Đó là tình yêu sét đánh.
+13477303	Yanni thì thân thiện hơn.
+13480516	Tôi yêu đất nước này.
+13480590	Dũng thấy Lan đang chạy bộ ở sân trường.
+13485416	Tôi đã tưới cây trong vườn.
+13493228	Cô ấy rất lo cho con gái cô.
+13496461	Lát nữa tôi sẽ xem xét căn phòng đó.
+13496467	Anh ấy không còn tin ai nữa.
+13496481	Cô ấy rất hay chơi thể thao.
+13508452	Tom đã mất hết sự tín nhiệm.
+13510626	Ấn tượng của bạn về bức tranh này là gì?
+13510630	Nhiệt kế hiện 37°C.
+13510677	Mọi người đều hát.
+13510774	Đây là một đứa trẻ.
+13510788	Đừng có nằm mơ giữa ban ngày nữa.
+13510804	Hãy đến sớm.
+13510817	Tôi nghĩ bây giờ bạn không nên nói chuyện với Tom.
+13510886	Lái cẩn thận vào.
+13513606	Tôi chấp nhận thử thách.
+13517462	Tôi không nhớ sinh nhật của ai cả.
+13534961	Khách sạn của chúng ta ở đâu?
+13550886	Cô ấy có phải là sinh viên không?
+13551026	Có người đã thích bình luận của bạn.
+13581088	Chúng ta đang nghe nhạc.
+13582201	Liệu đây có phải là mơ?
+13582217	Tôi không muốn cưới quá sớm.
+13598312	Voi ăn cỏ.
+13598316	Cây che bóng mát.
+13598318	Đó là đồ thủ công.
+13598619	Hãy khởi động lại máy tính của bạn.
+13599325	Chúng tôi học tiếng Pháp.
+13599553	Tôi không có điện thoại di động.
+13603201	Chúng ta sẽ không dừng lại cho đến khi đến nơi.
+13603243	Cái ác tự huỷ.
+13603272	Tối hôm trước Cloudflare bị sập.
+13615219	Maria ở đây với tôi ở Boston. Còn Tom thì ở lại Berlin với bố mẹ.
+13615234	Có thể đấy!
+13615249	Tatoeba là văn hoá.
+13615259	Cô ấy sẽ không làm việc đó cho anh ấy.
+13615262	Martino cắn đứt ngón tay của Rima.
+13619343	Tom chỉ đang ghen tị thôi.
+13619348	Đừng ấn Enter!
+13619358	Các nhà nghiên cứu muốn phát triển một hệ thống máy dịch.
+13628488	Ánh trăng tràn ngập căn phòng.
+13634479	Cái bánh tôi ăn không có đường.
+13634517	Tom thích viết lách.
+13634583	Mọi thứ có vẻ OK.
+13640319	Tôi thích sách.
+13640909	Nghe lời cha mẹ đi.
+13657201	Đi nhanh lên.
+13657214	Tôi đã huýt sáo.
+13666094	Cà phê được rồi đấy.
+13666108	Bạn cần một sở thích.
+13666121	Tôi đang nướng bánh mì.
+13666142	Gần Giáng sinh rồi.
+13666168	Tom đội tóc giả.
+13666235	Tôi thích cuốn sách này.
+13675724	Đồng hồ của tôi không chạy.
+13682577	Thư giãn đi.
+13693209	Tôi vừa nghe một từ mới. Tôi không biết từ này.
+13710178	Anh ấy thích số lẻ hơn.
+13710190	Anh ấy không có đủ tiền đi bác sĩ.
+13710356	Anh ấy cứ đứng nhìn chằm chằm.
+13710549	OK, nghe này.
+13715080	Tôi thực sự không muốn làm việc cùng với anh ta nữa.
+13726686	Tôi thích nước khoáng hơn.
+13726751	Tôi đã viết một lá thư cho giáo viên của mình.
+13726798	Tom bị mất ví.
+13731226	Chúng ta nên uống thêm nước.
+13740719	Sami có thể nghe thấy rất nhiều tiếng ồn.
+13740733	Ngày mai, mặt trời sẽ mọc.
+13740740	Tom đã hi sinh để cứu tất cả chúng ta.
+13769734	Tom cần nước.
+13769765	Gia đình tôi đâu?
+13769789	Tất cả là lỗi của Tom.
+13769851	Tom dậy chưa?
+13809575	Anh ấy ngày trước nghèo lắm, nhưng giờ thì rất giàu.
+13840919	Đó là kết quả của sự hi sinh trong nhiều năm.
+13840949	Bạn tốt nhất là đừng lái ô tô.
+13841089	Anh ấy đã thiệt mạng trong một vụ tai nạn đường sắt.
+13841108	Có vài chiếc thuyền trên hồ.
+13841610	Leonid đã đi rất xa khỏi con đường mòn.
+13841671	Tôi phải đi bệnh viện.
+13841684	Ai sẽ chăm sóc đứa bé sơ sinh này?
+13841685	Tôi tới đây vào ngày hôm qua.
+13841700	Tôi có rất nhiều việc cần làm bây giờ.
+13841721	Tôi có một người bạn sống ở Sapporo.
+13842892	Người mẹ bảo đứa con gái tự làm lấy.
+13853055	Sự tức giận của cô ấy hoàn toàn có lý.
+13853123	Họ không thích Tom.
+13855677	Anh ấy thích viết lách.
+13855693	Cái cây này không mọc ở Ai Cập mà mọc ở Syria.
+13858653	Mary bảo tôi đợi ở đây cho đén khi cô ấy quay lại
+13858656	Có vẻ như anh ấy sẽ đi Kashgar
+13858664	Ối, đó có phải là điều bí mật không?
+13859152	Bạn có thể dịch văn bản này sang tiếng Đức không?
+13859175	Tôn giáo đó hiện nay không còn nữa.
+13860588	Sự thất bại trong sự nghiệp chính trị của cô ấy đã khiến cô tự tử.
+13860592	Chiếc ô tô đâm vào cây cao su.
+13860692	Tôi muốn biết sự thật!
+13860713	Mặc dù cụm từ "hoà bình thế giới" nghe rất hấp dẫn, con đường đến hoà bình thế giới lại rất dài và lắm chông gai.
+13860765	Bên trắng phải đi đầu tiên.
+13871279	Không có ánh sáng nào khác ngoài ngọn lửa đó.
+13875743	Tôi dành nhiều thời gian học một ngôn ngữ.
+13877246	Hãy tôn trọng người khác.
+13886108	Cô ấy không dùng dây để dắt chó đi dạo.
+13886114	Bộ phim này nói về thơ ca.
+13892371	Vẽ vời là một trong số những sở thích của tôi.
+13896224	Vâng, tôi nhát lắm.
+13896243	Ai cũng biết phát xít là xấu trừ kẻ ngu ra.
+13896248	Nếm quả xa kê đi.
+13896339	Giặt quần áo đi.
+13896349	Nó có mùi nồng.
+13896358	Tôi muốn tráng miệng bằng hoa quả.
+13896390	Nó chỉ có một phòng tắm.
+13896414	Bạn đã đi đến cửa hàng nào?
+13896723	Nhìn xuống gầm giường đi.
+13896784	Anh ấy bán xe máy.
+13896789	Ziri khởi động xe máy của mình.
+13896810	Tôi đếm rồi. Một cây thông như thế này có hơn ba trăm vòng gỗ, nhưng lại chỉ cần 15 phút để chặt nó xuống.
+13897602	Tom lên xe máy của anh.
+13897650	Không may, Tom đã tự tử.
+13903904	Cô ấy đã chết vào thế kỉ 18.
+13903912	Anna muốn hẹn hò với Joseph.
+13904152	Chúng tôi sống ở phía Tây Munich.
+13904657	Học ngôn ngữ giống như việc rèn luyện bộ não vậy.
+13908339	Tôi chỉ muốn năm học kết thúc để tôi còn làm bài tập hè.
+13909301	Đừng quá thân thiết với anh ta.
+13911535	Tôi có chút sợ hãi việc mắc sai lầm.
+13916596	Tôi sốt ruột chờ cho màn đêm buông xuống.
+13916597	Cô ấy bị ám ảnh với việc dọn dẹp.
+13918398	Chúng tôi đã yêu nhau rất lâu rồi.
+13921332	Tôi nghe nói rằng căn bệnh của anh ấy nghiêm trọng đấy.
+13921341	Không gì có thể vượt qua tốc độ ánh sáng trong chân không.
+13924479	Bạn đến từ Bắc Kinh đúng không?
+13929043	Nhà máy Hàn Quốc này sản xuất ra hàng triệu điện thoại thông minh.
+13935387	món súp còn nóng khiến lưỡi tôi bị bỏng
+13954905	Hàng Châu ở gần Thượng Hải.
+13965557	Anh Quốc đã mở các trại tập trung ở thuộc địa Kenya.
+13980688	Chiếc xe đạp của người phụ nữ bị hỏng.
+13982874	Mary là người cao nhất trong phòng.
+13997516	Cô ấy đã quyết định đi Mĩ.
+14024919	Ngoài chó ra, sách là người bạn thân nhất của con người. Trong chó thì tối quá, không đọc nổi.
+14026311	GNOME là một môi trường bàn làm việc.
+14028726	Thầy giáo tên gì?
+14029104	Họ coi ông ấy là bác sĩ giỏi nhất trong thị trấn.
+14029156	Ở đây tôi không an toàn.
+14029217	Tom biết có thể tìm thấy tôi ở đâu.
+14032296	Không may, thời gian của chúng ta đã hết.
+14033712	Con sông đó rộng chứ?
+14034917	Tôi thích rượu vang hơn.
+14034968	Anh/ông/cậu ấy học tiếng Đức.
+14034970	Cục khí tượng đã ban bố cảnh báo mưa bão đỏ.
+14035006	Chúng tôi sẽ ở lại đây đúng không?
+14039267	Tôi yêu động vật rất nhiều.
+14039292	Mọi thứ cần phải bị hủy diệt.
+14083121	Vì lí do đó, cô ấy mất việc.

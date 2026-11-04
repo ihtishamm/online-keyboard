@@ -1,0 +1,25 @@
+{
+  "slug": "kazakh",
+  "code": "kk",
+  "order": 460,
+  "lang": "kk",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Kazakh",
+    "native": "Қазақша"
+  },
+  "aliases": [],
+  "region": "central-asia",
+  "fonts": ["latin"],
+  "layouts": ["kk-standard", "kk-roman"],
+  "sample": "Сәлеметсіз бе! Бүгін қалыңыз қалай?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "kk",
+    "bing": "kk"
+  },
+  "tier": null,
+  "notes": "The Cyrillic alphabet, still the everyday one; the switch to Latin letters is under way. No voice yet: the locale has not passed /voice-probe."
+}

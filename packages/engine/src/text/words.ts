@@ -41,6 +41,33 @@ export function scriptWordBefore(text: string, caret: number): WordRange | null 
   return { start, end: caret, word: text.slice(start, caret).replace(DIACRITICS, "") };
 }
 
+/** Scripts written without spaces between words. */
+const UNSPACED: ReadonlySet<string> = new Set(["th", "lo", "km", "my", "zh", "zht", "ja"]);
+export const isUnspacedCode = (code: string): boolean => UNSPACED.has(code);
+
+const segmenters = new Map<string, Intl.Segmenter>();
+
+/**
+ * The word ending at the caret in a script without spaces: the last word of the run, split by
+ * the browser's own word breaking. Too short a tail to break well gives a shorter word, not a
+ * wrong one: completions simply start from there.
+ */
+export function segmentedWordBefore(text: string, caret: number, code: string): WordRange | null {
+  const run = scriptWordBefore(text, caret);
+  if (!run) return null;
+  let segmenter = segmenters.get(code);
+  if (!segmenter) {
+    segmenter = new Intl.Segmenter(code, { granularity: "word" });
+    segmenters.set(code, segmenter);
+  }
+  const value = text.slice(run.start, run.end);
+  let last: Intl.SegmentData | null = null;
+  for (const s of segmenter.segment(value)) last = s;
+  if (!last) return null;
+  const start = run.start + last.index;
+  return { start, end: run.end, word: text.slice(start, run.end) };
+}
+
 /**
  * Context for next-word suggestions when the caret follows whitespace:
  * the previous word (without diacritics), `null` at the start of a sentence, or `undefined`

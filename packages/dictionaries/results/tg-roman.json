@@ -1,0 +1,10 @@
+{
+  "scheme": "tg-roman",
+  "source": "English Wiktionary word pairs, in keyboard letters",
+  "pairs": 1000,
+  "top1": 0.91,
+  "top5": 0.964,
+  "messageWords": 69,
+  "correctionsPer10Words": 0.58,
+  "beta": true
+}

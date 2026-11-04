@@ -61,6 +61,7 @@ export default function TypingDrill(props: TypingDrillProps) {
     ownKeyboard: props.ownKeyboard,
     type,
     backspace: () => update(backspace),
+    typed: () => drill.typed,
   });
   const { machine, coarse } = input;
   const inputRef = useRef<HTMLInputElement>(null);

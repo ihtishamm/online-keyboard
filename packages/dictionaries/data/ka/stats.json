@@ -1,0 +1,13 @@
+{
+  "source": "kawiki.xml.bz2",
+  "pages": 39986,
+  "sentences": 786848,
+  "repeatedSentencesSkipped": 99552,
+  "tokens": 8201569,
+  "distinctWords": 522812,
+  "wordsKept": 100000,
+  "nextWordHeads": 7725,
+  "text": "ka-train.txt",
+  "textSentences": 5926,
+  "textWeight": 162.26
+}

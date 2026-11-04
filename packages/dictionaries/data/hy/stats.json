@@ -1,0 +1,13 @@
+{
+  "source": "hywiki.xml.bz2",
+  "pages": 30807,
+  "sentences": 812082,
+  "repeatedSentencesSkipped": 408194,
+  "tokens": 9635976,
+  "distinctWords": 468995,
+  "wordsKept": 100000,
+  "nextWordHeads": 9413,
+  "text": "hy-train.txt",
+  "textSentences": 49711,
+  "textWeight": 19.17
+}

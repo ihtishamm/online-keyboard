@@ -15,6 +15,26 @@ const SOURCES: Readonly<Record<string, string>> = Object.fromEntries(
   Object.entries(FILES).map(([path, url]) => [path.split("/").at(-2)!, url]),
 );
 
+/** Chinese and Japanese conversion lists (data/<code>/readings.txt), fetched on their pages. */
+const READINGS = import.meta.glob<string>(
+  "../../../../../packages/dictionaries/data/*/readings.txt",
+  { query: "?url", import: "default", eager: true },
+);
+const READING_SOURCES: Readonly<Record<string, string>> = Object.fromEntries(
+  Object.entries(READINGS).map(([path, url]) => [path.split("/").at(-2)!, url]),
+);
+
+export async function loadReadings(code: string): Promise<string | null> {
+  const url = READING_SOURCES[code];
+  if (!url) return null;
+  try {
+    const response = await fetch(url);
+    return response.ok ? await response.text() : null;
+  } catch {
+    return null; // offline before it was cached: the typed letters stay as they are
+  }
+}
+
 const loading = new Map<string, Promise<Dictionary | null>>();
 
 export function hasDictionary(code: string): boolean {

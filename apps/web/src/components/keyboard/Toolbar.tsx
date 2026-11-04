@@ -64,6 +64,17 @@ const FONT_LABELS: Record<FontId, { en: string; native: string }> = {
   malayalam: { en: "Malayalam", native: "മലയാളം" },
   sinhala: { en: "Sinhala", native: "සිංහල" },
   thaana: { en: "Thaana", native: "ތާނަ" },
+  hebrew: { en: "Hebrew", native: "עברית" },
+  armenian: { en: "Armenian", native: "հայերեն" },
+  georgian: { en: "Georgian", native: "ქართული" },
+  thai: { en: "Thai", native: "ไทย" },
+  lao: { en: "Lao", native: "ລາວ" },
+  khmer: { en: "Khmer", native: "ខ្មែរ" },
+  myanmar: { en: "Myanmar", native: "မြန်မာ" },
+  hangul: { en: "Korean", native: "한글" },
+  "cjk-sc": { en: "Simplified", native: "简体" },
+  "cjk-tc": { en: "Traditional", native: "繁體" },
+  "cjk-jp": { en: "Japanese", native: "日本語" },
   latin: { en: "Sans serif", native: "Aa" },
 };
 

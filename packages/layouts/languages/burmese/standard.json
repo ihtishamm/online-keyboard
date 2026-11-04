@@ -1,0 +1,274 @@
+{
+  "id": "my-standard",
+  "lang": "my",
+  "script": "Mymr",
+  "dir": "ltr",
+  "name": {
+    "en": "Myanmar",
+    "native": "မြန\u103Aမာ"
+  },
+  "source": "Windows \"Myanmar\", from Unicode CLDR 43 keyboard data (Unicode License v3): Unicode, not Zawgyi. We drop its AltGr layer, which only repeats QWERTY.",
+  "keys": {
+    "Backquote": {
+      "n": "ၐ",
+      "s": "ဎ"
+    },
+    "Digit1": {
+      "n": "၁",
+      "s": "ဍ"
+    },
+    "Digit2": {
+      "n": "၂",
+      "s": "ၒ"
+    },
+    "Digit3": {
+      "n": "၃",
+      "s": "ဋ"
+    },
+    "Digit4": {
+      "n": "၄",
+      "s": "ၓ"
+    },
+    "Digit5": {
+      "n": "၅",
+      "s": "ၔ"
+    },
+    "Digit6": {
+      "n": "၆",
+      "s": "ၕ"
+    },
+    "Digit7": {
+      "n": "၇",
+      "s": "ရ"
+    },
+    "Digit8": {
+      "n": "၈",
+      "s": "*"
+    },
+    "Digit9": {
+      "n": "၉",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "၀",
+      "s": ")"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+"
+    },
+    "KeyQ": {
+      "n": "ဆ",
+      "s": "ဈ",
+      "caps": "shift"
+    },
+    "KeyW": {
+      "n": "တ",
+      "s": "ဝ",
+      "caps": "shift"
+    },
+    "KeyE": {
+      "n": "န",
+      "s": "ဣ",
+      "caps": "shift"
+    },
+    "KeyR": {
+      "n": "မ",
+      "s": "၎",
+      "caps": "shift"
+    },
+    "KeyT": {
+      "n": "အ",
+      "s": "ဤ",
+      "caps": "shift"
+    },
+    "KeyY": {
+      "n": "ပ",
+      "s": "၌",
+      "caps": "shift"
+    },
+    "KeyU": {
+      "n": "က",
+      "s": "ဥ",
+      "caps": "shift"
+    },
+    "KeyI": {
+      "n": "င",
+      "s": "၍",
+      "caps": "shift"
+    },
+    "KeyO": {
+      "n": "သ",
+      "s": "ဿ",
+      "caps": "shift"
+    },
+    "KeyP": {
+      "n": "စ",
+      "s": "ဏ",
+      "caps": "shift"
+    },
+    "BracketLeft": {
+      "n": "ဟ",
+      "s": "ဧ"
+    },
+    "BracketRight": {
+      "n": "ဩ",
+      "s": "ဪ"
+    },
+    "Backslash": {
+      "n": "၏",
+      "s": "ၑ"
+    },
+    "KeyA": {
+      "n": "ေ",
+      "s": "ဗ",
+      "caps": "shift"
+    },
+    "KeyS": {
+      "n": "ျ",
+      "s": "\u103E",
+      "caps": "shift"
+    },
+    "KeyD": {
+      "n": "\u102D",
+      "s": "\u102E",
+      "caps": "shift"
+    },
+    "KeyF": {
+      "n": "\u103A",
+      "s": "\u1039",
+      "caps": "shift"
+    },
+    "KeyG": {
+      "n": "ါ",
+      "s": "\u103D",
+      "caps": "shift"
+    },
+    "KeyH": {
+      "n": "\u1037",
+      "s": "\u1036",
+      "caps": "shift"
+    },
+    "KeyJ": {
+      "n": "ြ",
+      "s": "\u1032",
+      "caps": "shift"
+    },
+    "KeyK": {
+      "n": "\u102F",
+      "s": "ဒ",
+      "caps": "shift"
+    },
+    "KeyL": {
+      "n": "\u1030",
+      "s": "ဓ",
+      "caps": "shift"
+    },
+    "Semicolon": {
+      "n": "း",
+      "s": "ဂ"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "IntlBackslash": {
+      "n": "၏",
+      "s": "ၑ"
+    },
+    "KeyZ": {
+      "n": "ဖ",
+      "s": "ဇ",
+      "caps": "shift"
+    },
+    "KeyX": {
+      "n": "ထ",
+      "s": "ဌ",
+      "caps": "shift"
+    },
+    "KeyC": {
+      "n": "ခ",
+      "s": "ဃ",
+      "caps": "shift"
+    },
+    "KeyV": {
+      "n": "လ",
+      "s": "ဠ",
+      "caps": "shift"
+    },
+    "KeyB": {
+      "n": "ဘ",
+      "s": "ယ",
+      "caps": "shift"
+    },
+    "KeyN": {
+      "n": "ည",
+      "s": "ဉ",
+      "caps": "shift"
+    },
+    "KeyM": {
+      "n": "ာ",
+      "s": "ဦ",
+      "caps": "shift"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "၊"
+    },
+    "Period": {
+      "n": ".",
+      "s": "။"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "?"
+    }
+  },
+  "longpress": {
+    "Backquote": ["ဎ"],
+    "Digit1": ["ဍ"],
+    "Digit2": ["ၒ"],
+    "Digit3": ["ဋ"],
+    "Digit4": ["ၓ"],
+    "Digit5": ["ၔ"],
+    "Digit6": ["ၕ"],
+    "Digit7": ["ရ"],
+    "KeyQ": ["ဈ"],
+    "KeyW": ["ဝ"],
+    "KeyE": ["ဣ"],
+    "KeyR": ["၎"],
+    "KeyT": ["ဤ"],
+    "KeyY": ["၌"],
+    "KeyU": ["ဥ"],
+    "KeyI": ["၍"],
+    "KeyO": ["ဿ"],
+    "KeyP": ["ဏ"],
+    "BracketLeft": ["ဧ"],
+    "BracketRight": ["ဪ"],
+    "Backslash": ["ၑ"],
+    "KeyA": ["ဗ"],
+    "KeyS": ["\u103E"],
+    "KeyD": ["\u102E"],
+    "KeyF": ["\u1039"],
+    "KeyG": ["\u103D"],
+    "KeyH": ["\u1036"],
+    "KeyJ": ["\u1032"],
+    "KeyK": ["ဒ"],
+    "KeyL": ["ဓ"],
+    "Semicolon": ["ဂ"],
+    "IntlBackslash": ["ၑ"],
+    "KeyZ": ["ဇ"],
+    "KeyX": ["ဌ"],
+    "KeyC": ["ဃ"],
+    "KeyV": ["ဠ"],
+    "KeyB": ["ယ"],
+    "KeyN": ["ဉ"],
+    "KeyM": ["ဦ"],
+    "Comma": ["၊"],
+    "Period": ["။"]
+  }
+}

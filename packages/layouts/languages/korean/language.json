@@ -1,0 +1,25 @@
+{
+  "slug": "korean",
+  "code": "ko",
+  "order": 590,
+  "lang": "ko",
+  "script": "Hang",
+  "dir": "ltr",
+  "name": {
+    "en": "Korean",
+    "native": "한국어"
+  },
+  "aliases": ["Hangul"],
+  "region": "east-asia",
+  "fonts": ["hangul"],
+  "layouts": ["ko-2set"],
+  "sample": "안녕하세요! 오늘 날씨가 정말 좋네요.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ko",
+    "bing": "ko"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

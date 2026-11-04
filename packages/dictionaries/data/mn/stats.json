@@ -1,0 +1,13 @@
+{
+  "source": "mnwiki.xml.bz2",
+  "pages": 32236,
+  "sentences": 603741,
+  "repeatedSentencesSkipped": 69491,
+  "tokens": 8221992,
+  "distinctWords": 330651,
+  "wordsKept": 100000,
+  "nextWordHeads": 9106,
+  "text": "mn-train.txt",
+  "textSentences": 1776,
+  "textWeight": 449.19
+}

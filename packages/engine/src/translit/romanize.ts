@@ -70,6 +70,8 @@ export interface AlphabetTable {
   glides?: Readonly<Record<string, readonly [Pair, Pair]>>;
   /** Letter pairs spelled as one sound (Sorani وو). */
   pairs?: Readonly<Record<string, Pair>>;
+  /** The script has capitals: `letters` lists the lower-case ones, and capitals carry over. */
+  cased?: boolean;
 }
 
 export type RomanTable = IndicTable | ArabicTable | AlphabetTable;
@@ -750,6 +752,324 @@ export const UYGHUR: AlphabetTable = {
  * Thaana: every vowel is a sign, so no inherent vowel. Malé Latin for chat; the Wiktionary letters
  * (ṭ ḍ ṣ with long vowels marked) for scholars.
  */
+/**
+ * Cyrillic letters every language shares, in [chat, scholarly] form: chat as people text it,
+ * scholarly in the Latin letters of ISO 9. Each language overrides what it reads differently.
+ */
+const CYRILLIC_BASE: Readonly<Record<string, Pair>> = {
+  а: p("a"),
+  б: p("b"),
+  в: p("v"),
+  г: p("g"),
+  д: p("d"),
+  е: p("e"),
+  ё: p("yo", "ë"),
+  ж: p("zh", "ž"),
+  з: p("z"),
+  и: p("i"),
+  й: p("y", "j"),
+  к: p("k"),
+  л: p("l"),
+  м: p("m"),
+  н: p("n"),
+  о: p("o"),
+  п: p("p"),
+  р: p("r"),
+  с: p("s"),
+  т: p("t"),
+  у: p("u"),
+  ф: p("f"),
+  х: p("kh", "h"),
+  ц: p("ts", "c"),
+  ч: p("ch", "č"),
+  ш: p("sh", "š"),
+  щ: p("shch", "ŝ"),
+  ъ: p("", "ʺ"),
+  ы: p("y"),
+  ь: p("", "ʹ"),
+  э: p("e", "è"),
+  ю: p("yu", "û"),
+  я: p("ya", "â"),
+};
+
+const cyrillic = (own: Readonly<Record<string, Pair>> = {}): AlphabetTable => ({
+  kind: "alphabet",
+  cased: true,
+  letters: { ...CYRILLIC_BASE, ...own },
+});
+
+export const RUSSIAN: AlphabetTable = cyrillic();
+export const UKRAINIAN: AlphabetTable = cyrillic({
+  г: p("h", "g"),
+  ґ: p("g", "g̀"),
+  е: p("e"),
+  є: p("ye", "ê"),
+  и: p("y", "i"),
+  і: p("i", "ì"),
+  ї: p("yi", "ï"),
+  й: p("y", "j"),
+});
+export const BELARUSIAN: AlphabetTable = cyrillic({
+  г: p("h", "g"),
+  е: p("ye", "e"),
+  і: p("i", "ì"),
+  ў: p("w", "ŭ"),
+});
+export const BULGARIAN: AlphabetTable = cyrillic({
+  щ: p("sht", "ŝ"),
+  ъ: p("a", "ʺ"),
+  х: p("h"),
+});
+/** Serbian's chat spelling is its other alphabet, Gajica, typed without marks. */
+export const SERBIAN: AlphabetTable = cyrillic({
+  ђ: p("dj", "đ"),
+  ж: p("z", "ž"),
+  ј: p("j"),
+  љ: p("lj"),
+  њ: p("nj"),
+  ћ: p("c", "ć"),
+  х: p("h"),
+  ц: p("c"),
+  ч: p("c", "č"),
+  џ: p("dz", "dž"),
+  ш: p("s", "š"),
+});
+export const MACEDONIAN: AlphabetTable = cyrillic({
+  ѓ: p("gj", "ǵ"),
+  ж: p("zh", "ž"),
+  ѕ: p("dz"),
+  ј: p("j"),
+  љ: p("lj"),
+  њ: p("nj"),
+  ќ: p("kj", "ḱ"),
+  х: p("h"),
+  ц: p("c"),
+  џ: p("dj", "dž"),
+});
+export const KAZAKH: AlphabetTable = cyrillic({
+  ә: p("a", "ä"),
+  ғ: p("gh", "ğ"),
+  ж: p("zh", "j"),
+  қ: p("q"),
+  ң: p("ng", "ñ"),
+  ө: p("o", "ö"),
+  ұ: p("u", "ū"),
+  ү: p("u", "ü"),
+  һ: p("h"),
+  і: p("i", "ı"),
+  ы: p("y"),
+  у: p("u", "w"),
+});
+export const KYRGYZ: AlphabetTable = cyrillic({
+  ж: p("j"),
+  ң: p("ng", "ñ"),
+  ө: p("o", "ö"),
+  ү: p("u", "ü"),
+});
+export const TAJIK: AlphabetTable = cyrillic({
+  ғ: p("gh", "ġ"),
+  ж: p("zh", "ž"),
+  ӣ: p("i", "ī"),
+  қ: p("q"),
+  ӯ: p("u", "ū"),
+  ҳ: p("h", "ḩ"),
+  ҷ: p("j", "ç"),
+  ъ: p("'", "ʼ"),
+  х: p("kh", "x"),
+});
+export const MONGOLIAN: AlphabetTable = cyrillic({
+  ж: p("j"),
+  ө: p("o", "ö"),
+  ү: p("u", "ü"),
+  х: p("h", "x"),
+  ц: p("ts"),
+});
+
+/** Greek as Greeklish for chat, ELOT 743 for scholars. Accented vowels spell like plain ones. */
+const GREEK_VOWELS: Readonly<Record<string, Pair>> = {
+  α: p("a"),
+  ε: p("e"),
+  η: p("i"),
+  ι: p("i"),
+  ο: p("o"),
+  υ: p("y"),
+  ω: p("o"),
+};
+export const GREEK: AlphabetTable = {
+  kind: "alphabet",
+  cased: true,
+  letters: {
+    ...GREEK_VOWELS,
+    ά: p("a", "á"),
+    έ: p("e", "é"),
+    ή: p("i", "í"),
+    ί: p("i", "í"),
+    ό: p("o", "ó"),
+    ύ: p("y", "ý"),
+    ώ: p("o", "ó"),
+    ϊ: p("i", "ï"),
+    ΐ: p("i", "ḯ"),
+    ϋ: p("y", "ÿ"),
+    ΰ: p("y", "ÿ"),
+    β: p("v"),
+    γ: p("g"),
+    δ: p("d"),
+    ζ: p("z"),
+    θ: p("th"),
+    κ: p("k"),
+    λ: p("l"),
+    μ: p("m"),
+    ν: p("n"),
+    ξ: p("x"),
+    π: p("p"),
+    ρ: p("r"),
+    σ: p("s"),
+    ς: p("s"),
+    τ: p("t"),
+    φ: p("f"),
+    χ: p("ch"),
+    ψ: p("ps"),
+  },
+  pairs: {
+    ου: p("ou"),
+    ού: p("ou"),
+    αι: p("ai"),
+    αί: p("ai"),
+    ει: p("ei"),
+    εί: p("ei"),
+    οι: p("oi"),
+    οί: p("oi"),
+    μπ: p("b", "mp"),
+    ντ: p("nt"),
+    γκ: p("gk"),
+  },
+};
+
+/**
+ * Hebrew writes few vowels: this spells the letters, ו and י as vowels between consonants. The
+ * attested spellings of the chat list come first, so shalom rather than shlom.
+ */
+export const HEBREW: AlphabetTable = {
+  kind: "alphabet",
+  letters: {
+    א: p("a", "ʼ"),
+    ב: p("b"),
+    ג: p("g"),
+    ד: p("d"),
+    ה: p("h"),
+    ז: p("z"),
+    ח: p("ch", "ḥ"),
+    ט: p("t", "ṭ"),
+    כ: p("k"),
+    ך: p("kh", "k"),
+    ל: p("l"),
+    מ: p("m"),
+    ם: p("m"),
+    נ: p("n"),
+    ן: p("n"),
+    ס: p("s"),
+    ע: p("a", "ʻ"),
+    פ: p("p"),
+    ף: p("f", "p"),
+    צ: p("ts", "ṣ"),
+    ץ: p("ts", "ṣ"),
+    ק: p("k", "q"),
+    ר: p("r"),
+    ש: p("sh", "š"),
+    ת: p("t"),
+  },
+  glides: {
+    ו: [p("v"), p("o", "ō")],
+    י: [p("y"), p("i", "ī")],
+  },
+};
+
+export const ARMENIAN: AlphabetTable = {
+  kind: "alphabet",
+  cased: true,
+  letters: {
+    ա: p("a"),
+    բ: p("b"),
+    գ: p("g"),
+    դ: p("d"),
+    ե: p("e"),
+    զ: p("z"),
+    է: p("e", "ē"),
+    ը: p("y", "ə"),
+    թ: p("t", "tʻ"),
+    ժ: p("zh", "ž"),
+    ի: p("i"),
+    լ: p("l"),
+    խ: p("kh", "x"),
+    ծ: p("ts", "c"),
+    կ: p("k"),
+    հ: p("h"),
+    ձ: p("dz", "j"),
+    ղ: p("gh", "ġ"),
+    ճ: p("ch", "č"),
+    մ: p("m"),
+    յ: p("y"),
+    ն: p("n"),
+    շ: p("sh", "š"),
+    ո: p("o"),
+    չ: p("ch", "čʻ"),
+    պ: p("p"),
+    ջ: p("j", "ǰ"),
+    ռ: p("r", "ṙ"),
+    ս: p("s"),
+    վ: p("v"),
+    տ: p("t"),
+    ր: p("r"),
+    ց: p("ts", "cʻ"),
+    ւ: p("v", "w"),
+    փ: p("p", "pʻ"),
+    ք: p("k", "kʻ"),
+    օ: p("o", "ō"),
+    ֆ: p("f"),
+    և: p("ev"),
+  },
+  pairs: { ու: p("u") },
+};
+
+export const GEORGIAN: AlphabetTable = {
+  kind: "alphabet",
+  letters: {
+    ა: p("a"),
+    ბ: p("b"),
+    გ: p("g"),
+    დ: p("d"),
+    ე: p("e"),
+    ვ: p("v"),
+    ზ: p("z"),
+    თ: p("t"),
+    ი: p("i"),
+    კ: p("k", "kʼ"),
+    ლ: p("l"),
+    მ: p("m"),
+    ნ: p("n"),
+    ო: p("o"),
+    პ: p("p", "pʼ"),
+    ჟ: p("zh"),
+    რ: p("r"),
+    ს: p("s"),
+    ტ: p("t", "tʼ"),
+    უ: p("u"),
+    ფ: p("p"),
+    ქ: p("k"),
+    ღ: p("gh"),
+    ყ: p("q", "qʼ"),
+    შ: p("sh"),
+    ჩ: p("ch"),
+    ც: p("ts"),
+    ძ: p("dz"),
+    წ: p("ts", "tsʼ"),
+    ჭ: p("ch", "chʼ"),
+    ხ: p("kh"),
+    ჯ: p("j"),
+    ჰ: p("h"),
+  },
+};
+
 export const THAANA: IndicTable = {
   kind: "indic",
   virama: "\u07B0",
@@ -1002,7 +1322,27 @@ function arabicWord(word: string, t: ArabicTable, style: RomanStyle): string {
   return out;
 }
 
+/** "Я" → "Ya", and all capitals stay capitals: "ЯМА" → "YAMA". */
+function casedWord(word: string, t: AlphabetTable, style: RomanStyle): string {
+  const s = style === "chat" ? 0 : 1;
+  const chars = [...word];
+  const upper = (c: string) => c !== c.toLowerCase();
+  const allCaps = chars.length > 1 && chars.every((c) => upper(c) || !/\p{L}/u.test(c));
+  let out = "";
+  for (let i = 0; i < chars.length; i++) {
+    const c = chars[i]!;
+    const lower = c.toLowerCase();
+    const pair = t.pairs?.[lower + (chars[i + 1]?.toLowerCase() ?? "")];
+    const spelled = pair ? pair[s] : (t.letters[lower]?.[s] ?? lower);
+    if (pair) i++;
+    if (!upper(c)) out += spelled;
+    else out += allCaps ? spelled.toUpperCase() : spelled.charAt(0).toUpperCase() + spelled.slice(1);
+  }
+  return out;
+}
+
 function alphabetWord(word: string, t: AlphabetTable, style: RomanStyle): string {
+  if (t.cased) return casedWord(word, t, style);
   const s = style === "chat" ? 0 : 1;
   const chars = [...word.replaceAll(ZWNJ, "")];
   const isVowel = (c: string | undefined) =>
@@ -1069,6 +1409,8 @@ export function romanizeWord(word: string, table: RomanTable, options: RomanizeO
   if (style === "chat") {
     const known = words?.get(word);
     if (known) return known;
+    const cased = table.kind === "alphabet" && table.cased ? words?.get(word.toLowerCase()) : null;
+    if (cased) return word[0] === word[0]!.toLowerCase() ? cased : cased[0]!.toUpperCase() + cased.slice(1);
   }
   if (table.kind === "indic") return indicWord(word, table, style);
   if (table.kind === "alphabet") return alphabetWord(word, table, style);

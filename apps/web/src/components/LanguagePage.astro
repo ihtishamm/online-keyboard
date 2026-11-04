@@ -1,6 +1,6 @@
 ---
 import { pageFonts } from "../styles/script-fonts";
-import { getLanguage, getLayout, languageBundle, layoutSlug } from "@okb/layouts";
+import { getLanguage, getLayout, languageBundle, layoutSlug, isRomanLayout } from "@okb/layouts";
 import { getCollection } from "astro:content";
 import { FONT_CLASS } from "./fonts";
 import { TYPING_LANGUAGES } from "../content/typing/practice";
@@ -34,8 +34,8 @@ const guides = (await getCollection("guides", (g) => g.data.language === slug)).
   (a, b) => a.data.order - b.data.order,
 );
 const layoutGuide = guides.find((g) => g.data.layout === layoutId);
-const roman = layout.translit ? romanFor(layoutId) : undefined;
-const accuracy = layout.translit ? accuracyFor(layout.translit) : undefined;
+const roman = isRomanLayout(layout) ? romanFor(layoutId) : undefined;
+const accuracy = isRomanLayout(layout) ? accuracyFor(layout.translit!) : undefined;
 const accentAccuracy = language.script === "Latn" ? accentAccuracyFor(language.code) : undefined;
 // Tables read better in Naskh than in tall Nastaliq.
 const guideFont = FONT_CLASS[language.fonts.includes("naskh") ? "naskh" : language.fonts[0]!];
@@ -235,7 +235,7 @@ const hasTyping = slug === "urdu" || TYPING_LANGUAGES.some((l) => l.slug === slu
       {sheet && (
         <p class="mt-3 text-sm">
           <a class="text-accent underline" href={sheetPath(sheet.id)}>
-            Printable {layout.translit ? `Roman ${language.name.en}` : layout.name.en} chart
+            Printable {isRomanLayout(layout) ? `Roman ${language.name.en}` : layout.name.en} chart
           </a>{" "}
           (
           <a class="text-accent underline" href={pdfPath(sheet.id)} download>
@@ -288,7 +288,7 @@ const hasTyping = slug === "urdu" || TYPING_LANGUAGES.some((l) => l.slug === slu
           </a>
         </p>
       )}
-      {language.layouts.some((id) => getLayout(id).translit) && (
+      {language.layouts.some((id) => isRomanLayout(getLayout(id))) && (
         <p class="mt-4 text-sm">
           Convert:{" "}
           <a class="text-accent underline" href={`/${slug}/to-roman`}>

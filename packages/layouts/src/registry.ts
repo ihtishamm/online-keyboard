@@ -186,6 +186,93 @@ import caSpain from "../languages/catalan/spain.json";
 import croatian from "../languages/croatian/language.json";
 import hrEasy from "../languages/croatian/easy.json";
 import hrStandard from "../languages/croatian/standard.json";
+import russian from "../languages/russian/language.json";
+import ruStandard from "../languages/russian/standard.json";
+import ruPhonetic from "../languages/russian/phonetic.json";
+import ruRoman from "../languages/russian/roman.json";
+import { RU_ROMAN } from "./translit/ru-roman";
+import ukrainian from "../languages/ukrainian/language.json";
+import ukStandard from "../languages/ukrainian/standard.json";
+import ukPhonetic from "../languages/ukrainian/phonetic.json";
+import ukRoman from "../languages/ukrainian/roman.json";
+import { UK_ROMAN } from "./translit/uk-roman";
+import belarusian from "../languages/belarusian/language.json";
+import beStandard from "../languages/belarusian/standard.json";
+import beRoman from "../languages/belarusian/roman.json";
+import { BE_ROMAN } from "./translit/be-roman";
+import bulgarian from "../languages/bulgarian/language.json";
+import bgStandard from "../languages/bulgarian/standard.json";
+import bgPhonetic from "../languages/bulgarian/phonetic.json";
+import bgRoman from "../languages/bulgarian/roman.json";
+import { BG_ROMAN } from "./translit/bg-roman";
+import serbian from "../languages/serbian/language.json";
+import srStandard from "../languages/serbian/standard.json";
+import srRoman from "../languages/serbian/roman.json";
+import { SR_ROMAN } from "./translit/sr-roman";
+import macedonian from "../languages/macedonian/language.json";
+import mkStandard from "../languages/macedonian/standard.json";
+import mkRoman from "../languages/macedonian/roman.json";
+import { MK_ROMAN } from "./translit/mk-roman";
+import kazakh from "../languages/kazakh/language.json";
+import kkStandard from "../languages/kazakh/standard.json";
+import kkRoman from "../languages/kazakh/roman.json";
+import { KK_ROMAN } from "./translit/kk-roman";
+import kyrgyz from "../languages/kyrgyz/language.json";
+import kyStandard from "../languages/kyrgyz/standard.json";
+import kyRoman from "../languages/kyrgyz/roman.json";
+import { KY_ROMAN } from "./translit/ky-roman";
+import tajik from "../languages/tajik/language.json";
+import tgStandard from "../languages/tajik/standard.json";
+import tgRoman from "../languages/tajik/roman.json";
+import { TG_ROMAN } from "./translit/tg-roman";
+import mongolian from "../languages/mongolian/language.json";
+import mnStandard from "../languages/mongolian/standard.json";
+import mnRoman from "../languages/mongolian/roman.json";
+import { MN_ROMAN } from "./translit/mn-roman";
+import greek from "../languages/greek/language.json";
+import elStandard from "../languages/greek/standard.json";
+import elRoman from "../languages/greek/roman.json";
+import { EL_ROMAN } from "./translit/el-roman";
+import hebrew from "../languages/hebrew/language.json";
+import heStandard from "../languages/hebrew/standard.json";
+import hePhonetic from "../languages/hebrew/phonetic.json";
+import heRoman from "../languages/hebrew/roman.json";
+import { HE_ROMAN } from "./translit/he-roman";
+import armenian from "../languages/armenian/language.json";
+import hyPhonetic from "../languages/armenian/phonetic.json";
+import hyTypewriter from "../languages/armenian/typewriter.json";
+import hyRoman from "../languages/armenian/roman.json";
+import { HY_ROMAN } from "./translit/hy-roman";
+import georgian from "../languages/georgian/language.json";
+import kaQwerty from "../languages/georgian/qwerty.json";
+import kaMes from "../languages/georgian/mes.json";
+import kaRoman from "../languages/georgian/roman.json";
+import { KA_ROMAN } from "./translit/ka-roman";
+import thai from "../languages/thai/language.json";
+import thKedmanee from "../languages/thai/kedmanee.json";
+import thPattachote from "../languages/thai/pattachote.json";
+import lao from "../languages/lao/language.json";
+import loStandard from "../languages/lao/standard.json";
+import khmer from "../languages/khmer/language.json";
+import kmNida from "../languages/khmer/nida.json";
+import burmese from "../languages/burmese/language.json";
+import myStandard from "../languages/burmese/standard.json";
+import vietnamese from "../languages/vietnamese/language.json";
+import viTelex from "../languages/vietnamese/telex.json";
+import viVni from "../languages/vietnamese/vni.json";
+import korean from "../languages/korean/language.json";
+import ko2set from "../languages/korean/2set.json";
+import japanese from "../languages/japanese/language.json";
+import jaRomaji from "../languages/japanese/romaji.json";
+import { JA_KANA } from "./translit/ja-kana";
+import chineseSimplified from "../languages/chinese-simplified/language.json";
+import zhPinyin from "../languages/chinese-simplified/pinyin.json";
+import { ZH_PINYIN } from "./translit/zh-pinyin";
+import chineseTraditional from "../languages/chinese-traditional/language.json";
+import zhtPinyin from "../languages/chinese-traditional/pinyin.json";
+import { ZHT_PINYIN } from "./translit/zht-pinyin";
+import zhtZhuyin from "../languages/chinese-traditional/zhuyin.json";
+import { ZHT_ZHUYIN } from "./translit/zht-zhuyin";
 
 /** Every language.json, in page order. */
 export const LANGUAGE_FILES = [
@@ -237,6 +324,29 @@ export const LANGUAGE_FILES = [
   swedish,
   catalan,
   croatian,
+  russian,
+  ukrainian,
+  belarusian,
+  bulgarian,
+  serbian,
+  macedonian,
+  kazakh,
+  kyrgyz,
+  tajik,
+  mongolian,
+  greek,
+  hebrew,
+  armenian,
+  georgian,
+  thai,
+  lao,
+  khmer,
+  burmese,
+  vietnamese,
+  korean,
+  japanese,
+  chineseSimplified,
+  chineseTraditional,
 ] as LanguageFile[];
 
 /** Every layout file, by language, in each language's order. */
@@ -347,6 +457,52 @@ export const RAW_LAYOUTS = [
   caSpain,
   hrEasy,
   hrStandard,
+  ruStandard,
+  ruPhonetic,
+  ruRoman,
+  ukStandard,
+  ukPhonetic,
+  ukRoman,
+  beStandard,
+  beRoman,
+  bgStandard,
+  bgPhonetic,
+  bgRoman,
+  srStandard,
+  srRoman,
+  mkStandard,
+  mkRoman,
+  kkStandard,
+  kkRoman,
+  kyStandard,
+  kyRoman,
+  tgStandard,
+  tgRoman,
+  mnStandard,
+  mnRoman,
+  elStandard,
+  elRoman,
+  heStandard,
+  hePhonetic,
+  heRoman,
+  hyPhonetic,
+  hyTypewriter,
+  hyRoman,
+  kaQwerty,
+  kaMes,
+  kaRoman,
+  thKedmanee,
+  thPattachote,
+  loStandard,
+  kmNida,
+  myStandard,
+  viTelex,
+  viVni,
+  ko2set,
+  jaRomaji,
+  zhPinyin,
+  zhtPinyin,
+  zhtZhuyin,
 ] as LayoutInput[];
 
 /** The transliteration schemes the layouts use. */
@@ -381,6 +537,24 @@ export const SCHEME_LIST: readonly TranslitScheme[] = [
   KOK_ROMAN,
   MAI_ROMAN,
   DV_ROMAN,
+  RU_ROMAN,
+  UK_ROMAN,
+  BE_ROMAN,
+  BG_ROMAN,
+  SR_ROMAN,
+  MK_ROMAN,
+  KK_ROMAN,
+  KY_ROMAN,
+  TG_ROMAN,
+  MN_ROMAN,
+  EL_ROMAN,
+  HE_ROMAN,
+  HY_ROMAN,
+  KA_ROMAN,
+  JA_KANA,
+  ZH_PINYIN,
+  ZHT_PINYIN,
+  ZHT_ZHUYIN,
 ];
 
 export {
@@ -414,4 +588,22 @@ export {
   KOK_ROMAN,
   MAI_ROMAN,
   DV_ROMAN,
+  RU_ROMAN,
+  UK_ROMAN,
+  BE_ROMAN,
+  BG_ROMAN,
+  SR_ROMAN,
+  MK_ROMAN,
+  KK_ROMAN,
+  KY_ROMAN,
+  TG_ROMAN,
+  MN_ROMAN,
+  EL_ROMAN,
+  HE_ROMAN,
+  HY_ROMAN,
+  KA_ROMAN,
+  JA_KANA,
+  ZH_PINYIN,
+  ZHT_PINYIN,
+  ZHT_ZHUYIN,
 };

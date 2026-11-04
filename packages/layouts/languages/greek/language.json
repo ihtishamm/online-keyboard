@@ -1,0 +1,26 @@
+{
+  "slug": "greek",
+  "code": "el",
+  "order": 500,
+  "lang": "el",
+  "script": "Grek",
+  "dir": "ltr",
+  "name": {
+    "en": "Greek",
+    "native": "Ελληνικά"
+  },
+  "aliases": ["Modern Greek"],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["el-standard", "el-roman"],
+  "sample": "Καλημέρα! Τι κάνετε σήμερα;",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "el",
+    "bing": "el",
+    "deepl": "el"
+  },
+  "tier": null,
+  "notes": "Monotonic spelling. Roman typing takes Greeklish. No voice yet: the locale has not passed /voice-probe."
+}

@@ -342,5 +342,21 @@
     "spellcheck": false,
     "autocorrect": false,
     "autocorrectByDefault": false
+  },
+  "vi": {
+    "prose": {
+      "words": 7940,
+      "falseFlags": 12
+    },
+    "misspellings": 50,
+    "flagged": 50,
+    "top3": 42,
+    "correctWords": 8506,
+    "falseFlags": 12,
+    "fixed": 13,
+    "wrongReplacements": 4,
+    "spellcheck": false,
+    "autocorrect": false,
+    "autocorrectByDefault": false
   }
 }

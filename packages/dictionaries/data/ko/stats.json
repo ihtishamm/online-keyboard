@@ -1,0 +1,13 @@
+{
+  "source": "kowiki.xml.bz2",
+  "pages": 15409,
+  "sentences": 944690,
+  "repeatedSentencesSkipped": 139155,
+  "tokens": 10567922,
+  "distinctWords": 1106705,
+  "wordsKept": 100000,
+  "nextWordHeads": 7929,
+  "text": "ko-train.txt",
+  "textSentences": 14470,
+  "textWeight": 81.04
+}

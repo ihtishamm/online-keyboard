@@ -1,0 +1,13 @@
+{
+  "source": "jawiki.xml.bz2",
+  "pages": 6216,
+  "sentences": 1384929,
+  "repeatedSentencesSkipped": 104599,
+  "tokens": 22502787,
+  "distinctWords": 174570,
+  "wordsKept": 98114,
+  "nextWordHeads": 9982,
+  "text": "ja-train.txt",
+  "textSentences": 253723,
+  "textWeight": 3.91
+}

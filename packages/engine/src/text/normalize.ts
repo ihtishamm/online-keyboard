@@ -297,6 +297,67 @@ export function normalizeJawi(raw: string): string | null {
   return checked(w, JAWI_LETTERS);
 }
 
+/** Russian's letters, which most Cyrillic alphabets build on. */
+const RUSSIAN = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+/** Each Cyrillic language's own lower-case alphabet. A word with any other letter is not its own. */
+export const CYRILLIC_ALPHABETS: Readonly<Record<string, string>> = {
+  ru: RUSSIAN,
+  uk: "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя",
+  be: "абвгдеёжзійклмнопрстуўфхцчшыьэюя",
+  bg: "абвгдежзийклмнопрстуфхцчшщъьюя",
+  sr: "абвгдђежзијклљмнњопрстћуфхцчџш",
+  mk: "абвгдѓежзѕијклљмнњопрстќуфхцчџш",
+  kk: RUSSIAN + "әғқңөұүһі",
+  ky: RUSSIAN + "ңөү",
+  tg: "абвгғдеёжзиӣйкқлмнопрстуӯфхҳчҷшъэюя",
+  mn: RUSSIAN + "өү",
+};
+
+/**
+ * A Cyrillic word as the language's keyboards type it, in its own case: NFC, without the stress
+ * marks dictionaries and Wikipedia put on vowels (Росси́я), and with a straight apostrophe.
+ */
+function cyrillicWord(code: string): (raw: string) => string | null {
+  const letters = new Set(CYRILLIC_ALPHABETS[code]!);
+  return (raw) => {
+    const word = raw
+      .normalize("NFD")
+      .replace(/[\u0300\u0301]/g, "")
+      .normalize("NFC")
+      .replace(/’/g, "'")
+      .replace(/^['-]+|['-]+$/g, "");
+    if (!word) return null;
+    for (const c of word.toLocaleLowerCase(code)) {
+      if (!letters.has(c) && c !== "-" && c !== "'") return null;
+    }
+    return word;
+  };
+}
+
+/** Modern Greek in monotonic spelling. */
+const GREEK = "αάβγδεέζηήθιίϊΐκλμνξοόπρσςτυύϋΰφχψωώ";
+const greekWord = (raw: string): string | null => {
+  const word = raw.normalize("NFC");
+  for (const c of word.toLocaleLowerCase("el")) if (!GREEK.includes(c)) return null;
+  return word;
+};
+
+/** Hebrew letters without niqqud or cantillation, which everyday text leaves out. */
+const hebrewWord = (raw: string): string | null => {
+  const word = raw.replace(/[\u0591-\u05C7]/g, "").normalize("NFC");
+  return /^[\u05D0-\u05EA]+$/.test(word) ? word : null;
+};
+
+const armenianWord = (raw: string): string | null => {
+  const word = raw.normalize("NFC");
+  return /^[\u0531-\u0556\u0561-\u0587]+$/.test(word) ? word : null;
+};
+
+const georgianWord = (raw: string): string | null => {
+  const word = raw.normalize("NFC");
+  return /^[\u10D0-\u10F0]+$/.test(word) ? word : null;
+};
+
 /** Word normalisers by data code (Language.code). */
 export const WORD_NORMALIZERS: Readonly<Record<string, (raw: string) => string | null>> = {
   ur: normalizeUrdu,
@@ -334,4 +395,9 @@ export const WORD_NORMALIZERS: Readonly<Record<string, (raw: string) => string |
   ug: normalizeUyghur,
   prs: normalizeDari,
   zlm: normalizeJawi,
+  ...Object.fromEntries(Object.keys(CYRILLIC_ALPHABETS).map((c) => [c, cyrillicWord(c)])),
+  el: greekWord,
+  he: hebrewWord,
+  hy: armenianWord,
+  ka: georgianWord,
 };

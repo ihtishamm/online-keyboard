@@ -2,9 +2,9 @@
 import { existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { Lexicon, NextWords, Transliterator } from "@okb/engine";
+import { Transliterator, makeDictionary } from "@okb/engine";
 import { decodeDictionary } from "@okb/engine/compact";
-import { LANGUAGES, getLayout, getScheme } from "@okb/layouts";
+import { LANGUAGES, getLayout, getScheme, isRomanLayout } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
 import { ROMAN } from "./roman";
 
@@ -19,9 +19,11 @@ function converter(layoutId: string): Transliterator {
   const t = new Transliterator(getScheme(getLayout(layoutId).translit!));
   const file = join(DATA, language.code, "dict.txt");
   if (existsSync(file)) {
+    // As the page does: cased scripts look words up folded.
     const { words, next } = decodeDictionary(readFileSync(file, "utf8"));
-    t.setLexicon(Lexicon.fromRanked(words));
-    t.setNextWords(NextWords.parse(next, words));
+    const dictionary = makeDictionary(words, next, language.code);
+    t.setLexicon(dictionary.lexicon);
+    t.setNextWords(dictionary.next);
   }
   return t;
 }
@@ -65,7 +67,7 @@ describe("Roman page examples convert as shown", () => {
   });
 
   it("cover every Roman layout", () => {
-    const roman = LANGUAGES.flatMap((l) => l.layouts).filter((id) => getLayout(id).translit);
+    const roman = LANGUAGES.flatMap((l) => l.layouts).filter((id) => isRomanLayout(getLayout(id)));
     expect(Object.keys(ROMAN).sort()).toEqual(roman.sort());
   });
 

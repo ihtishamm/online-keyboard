@@ -1,0 +1,10 @@
+{
+  "scheme": "sr-roman",
+  "source": "the word list in Serbian Latin letters",
+  "pairs": 1000,
+  "top1": 0.997,
+  "top5": 1,
+  "messageWords": 71,
+  "correctionsPer10Words": 0,
+  "beta": true
+}

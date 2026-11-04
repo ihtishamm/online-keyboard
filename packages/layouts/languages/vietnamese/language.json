@@ -1,0 +1,26 @@
+{
+  "slug": "vietnamese",
+  "code": "vi",
+  "order": 580,
+  "lang": "vi",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Vietnamese",
+    "native": "Tiếng Việt"
+  },
+  "aliases": [],
+  "region": "southeast-asia",
+  "fonts": ["latin"],
+  "layouts": ["vi-telex", "vi-vni"],
+  "accents": "ăâđêôơưĂÂĐÊÔƠƯ",
+  "sample": "Xin chào! Hôm nay trời đẹp quá.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "vi",
+    "bing": "vi"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

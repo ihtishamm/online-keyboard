@@ -1,0 +1,13 @@
+{
+  "source": "ruwiki.xml.bz2",
+  "pages": 7092,
+  "sentences": 2112220,
+  "repeatedSentencesSkipped": 113707,
+  "tokens": 17828740,
+  "distinctWords": 595668,
+  "wordsKept": 100000,
+  "nextWordHeads": 9962,
+  "text": "ru-train.txt",
+  "textSentences": 1221757,
+  "textWeight": 0.79
+}

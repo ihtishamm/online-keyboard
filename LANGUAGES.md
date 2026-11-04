@@ -53,3 +53,26 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Swedish (/swedish) | Latn | C | yes | Beta | – | sv-SE | spell check meets its targets; smart accents meet their target |
 | Catalan (/catalan) | Latn | C | yes | Beta | – | ca-ES | spell check meets its targets; smart accents meet their target |
 | Croatian (/croatian) | Latn | C | yes | Beta | – | hr-HR | spell check meets its targets; smart accents meet their target |
+| Russian (/russian) | Cyrl | C | yes | Beta | 85.6 % (Beta) | no | spell check meets its targets |
+| Ukrainian (/ukrainian) | Cyrl | C | yes | Beta | 92.3 % (Beta) | no | spell check meets its targets |
+| Belarusian (/belarusian) | Cyrl | C | yes | Beta | 92.6 % (Beta) | no | spell check meets its targets |
+| Bulgarian (/bulgarian) | Cyrl | C | yes | Beta | 96.1 % (Beta) | no | spell check meets its targets |
+| Serbian (/serbian) | Cyrl | C | yes | Beta | 99.7 % (Beta) | no | spell check meets its targets |
+| Macedonian (/macedonian) | Cyrl | C | yes | Beta | 97.5 % (Beta) | no | spell check meets its targets |
+| Kazakh (/kazakh) | Cyrl | C | yes | Beta | 72.4 % (Beta) | no | spell check meets its targets |
+| Kyrgyz (/kyrgyz) | Cyrl | C | yes | Beta | 91.8 % (Beta) | no | spell check meets its targets; typing test with words and sentences |
+| Tajik (/tajik) | Cyrl | C | yes | Beta | 91 % (Beta) | no | spell check meets its targets; typing test with words and sentences |
+| Mongolian (/mongolian) | Cyrl | C | yes | Beta | 85.8 % (Beta) | no | spell check meets its targets |
+| Greek (/greek) | Grek | C | yes | Beta | 53.2 % (Beta) | no | spell check meets its targets |
+| Hebrew (/hebrew) | Hebr | C | yes | Beta | 56.2 % (Beta) | no | spell check meets its targets |
+| Armenian (/armenian) | Armn | C | yes | Beta | 81.9 % (Beta) | no | spell check meets its targets |
+| Georgian (/georgian) | Geor | C | yes | Beta | 83 % (Beta) | no | spell check meets its targets |
+| Thai (/thai) | Thai | C | yes | Beta | – | no | spell check meets its targets |
+| Lao (/lao) | Laoo | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets |
+| Khmer (/khmer) | Khmr | C | yes | Beta | – | no | spell check meets its targets |
+| Burmese (/burmese) | Mymr | C | yes | Beta | – | no | spell check meets its targets |
+| Vietnamese (/vietnamese) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target |
+| Korean (/korean) | Hang | C | yes | Beta | – | no | spell check meets its targets |
+| Japanese (/japanese) | Jpan | – | yes | Beta | – | no | typing tutor |
+| Chinese (Simplified) (/chinese-simplified) | Hans | – | yes | Beta | – | no | typing tutor |
+| Chinese (Traditional) (/chinese-traditional) | Hant | – | no | no | – | no | typing tutor |

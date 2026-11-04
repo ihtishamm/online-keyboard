@@ -1,0 +1,240 @@
+{
+  "id": "th-pattachote",
+  "lang": "th",
+  "script": "Thai",
+  "dir": "ltr",
+  "name": {
+    "en": "Pattachote",
+    "native": "ป\u0E31ตตะโชต\u0E34"
+  },
+  "source": "Windows \"Thai Pattachote\", from Unicode CLDR 43 keyboard data (Unicode License v3). We drop one private-use character no font draws.",
+  "keys": {
+    "Backquote": {
+      "n": "_",
+      "s": "฿"
+    },
+    "Digit1": {
+      "n": "=",
+      "s": "+"
+    },
+    "Digit2": {
+      "n": "๒",
+      "s": "\""
+    },
+    "Digit3": {
+      "n": "๓",
+      "s": "/"
+    },
+    "Digit4": {
+      "n": "๔",
+      "s": ","
+    },
+    "Digit5": {
+      "n": "๕",
+      "s": "?"
+    },
+    "Digit6": {
+      "n": "\u0E39",
+      "s": "\u0E38"
+    },
+    "Digit7": {
+      "n": "๗",
+      "s": "_"
+    },
+    "Digit8": {
+      "n": "๘",
+      "s": "."
+    },
+    "Digit9": {
+      "n": "๙",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "๐",
+      "s": ")"
+    },
+    "Minus": {
+      "n": "๑",
+      "s": "-"
+    },
+    "Equal": {
+      "n": "๖",
+      "s": "%"
+    },
+    "KeyQ": {
+      "n": "\u0E47",
+      "s": "\u0E4A"
+    },
+    "KeyW": {
+      "n": "ต",
+      "s": "ฤ"
+    },
+    "KeyE": {
+      "n": "ย",
+      "s": "ๆ"
+    },
+    "KeyR": {
+      "n": "อ",
+      "s": "ญ"
+    },
+    "KeyT": {
+      "n": "ร",
+      "s": "ษ"
+    },
+    "KeyY": {
+      "n": "\u0E48",
+      "s": "\u0E36"
+    },
+    "KeyU": {
+      "n": "ด",
+      "s": "ฝ"
+    },
+    "KeyI": {
+      "n": "ม",
+      "s": "ซ"
+    },
+    "KeyO": {
+      "n": "ว",
+      "s": "ถ"
+    },
+    "KeyP": {
+      "n": "แ",
+      "s": "ฒ"
+    },
+    "BracketLeft": {
+      "n": "ใ",
+      "s": "ฯ"
+    },
+    "BracketRight": {
+      "n": "ฌ",
+      "s": "ฦ"
+    },
+    "Backslash": {
+      "s": "\u0E4D"
+    },
+    "KeyA": {
+      "n": "\u0E49",
+      "s": "\u0E4B"
+    },
+    "KeyS": {
+      "n": "ท",
+      "s": "ธ"
+    },
+    "KeyD": {
+      "n": "ง",
+      "s": "ำ"
+    },
+    "KeyF": {
+      "n": "ก",
+      "s": "ณ"
+    },
+    "KeyG": {
+      "n": "\u0E31",
+      "s": "\u0E4C"
+    },
+    "KeyH": {
+      "n": "\u0E35",
+      "s": "\u0E37"
+    },
+    "KeyJ": {
+      "n": "า",
+      "s": "ผ"
+    },
+    "KeyK": {
+      "n": "น",
+      "s": "ช"
+    },
+    "KeyL": {
+      "n": "เ",
+      "s": "โ"
+    },
+    "Semicolon": {
+      "n": "ไ",
+      "s": "ฆ"
+    },
+    "Quote": {
+      "n": "ข",
+      "s": "ฑ"
+    },
+    "IntlBackslash": {
+      "s": "\u0E4D"
+    },
+    "KeyZ": {
+      "n": "บ",
+      "s": "ฎ"
+    },
+    "KeyX": {
+      "n": "ป",
+      "s": "ฏ"
+    },
+    "KeyC": {
+      "n": "ล",
+      "s": "ฐ"
+    },
+    "KeyV": {
+      "n": "ห",
+      "s": "ภ"
+    },
+    "KeyB": {
+      "n": "\u0E34",
+      "s": "\u0E31"
+    },
+    "KeyN": {
+      "n": "ค",
+      "s": "ศ"
+    },
+    "KeyM": {
+      "n": "ส",
+      "s": "ฮ"
+    },
+    "Comma": {
+      "n": "ะ",
+      "s": "ฟ"
+    },
+    "Period": {
+      "n": "จ",
+      "s": "ฉ"
+    },
+    "Slash": {
+      "n": "พ",
+      "s": "ฬ"
+    }
+  },
+  "longpress": {
+    "Backquote": ["฿"],
+    "Digit6": ["\u0E38"],
+    "KeyQ": ["\u0E4A"],
+    "KeyW": ["ฤ"],
+    "KeyE": ["ๆ"],
+    "KeyR": ["ญ"],
+    "KeyT": ["ษ"],
+    "KeyY": ["\u0E36"],
+    "KeyU": ["ฝ"],
+    "KeyI": ["ซ"],
+    "KeyO": ["ถ"],
+    "KeyP": ["ฒ"],
+    "BracketLeft": ["ฯ"],
+    "BracketRight": ["ฦ"],
+    "KeyA": ["\u0E4B"],
+    "KeyS": ["ธ"],
+    "KeyD": ["ำ"],
+    "KeyF": ["ณ"],
+    "KeyG": ["\u0E4C"],
+    "KeyH": ["\u0E37"],
+    "KeyJ": ["ผ"],
+    "KeyK": ["ช"],
+    "KeyL": ["โ"],
+    "Semicolon": ["ฆ"],
+    "Quote": ["ฑ"],
+    "KeyZ": ["ฎ"],
+    "KeyX": ["ฏ"],
+    "KeyC": ["ฐ"],
+    "KeyV": ["ภ"],
+    "KeyB": ["\u0E31"],
+    "KeyN": ["ศ"],
+    "KeyM": ["ฮ"],
+    "Comma": ["ฟ"],
+    "Period": ["ฉ"],
+    "Slash": ["ฬ"]
+  }
+}

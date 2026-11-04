@@ -79,6 +79,7 @@ test("home page links every language", async ({ page }) => {
 test("ITRANS rewrites the text as it is typed, and Backspace works", async ({ page }) => {
   await page.goto("/sanskrit/itrans");
   const box = editor(page, "Sanskrit");
+  await expect(box).toBeEditable();
   await box.click();
   // type() sends capitals without Shift, which these keys depend on.
   const type = async (keys: string) => {
@@ -100,6 +101,7 @@ test("ITRANS rewrites the text as it is typed, and Backspace works", async ({ pa
 test("IAST types Sanskrit diacritics and stays in Roman letters", async ({ page }) => {
   await page.goto("/sanskrit/iast");
   const box = editor(page, "Sanskrit");
+  await expect(box).toBeEditable();
   await box.click();
   await page.keyboard.type("sa.msk.rtam. raama.h");
   await expect(box).toHaveValue("saṃskṛtam. rāmaḥ");
@@ -108,6 +110,7 @@ test("IAST types Sanskrit diacritics and stays in Roman letters", async ({ page 
 test("Tamil99 composes from the text already typed", async ({ page }) => {
   await page.goto("/tamil/tamil99");
   const box = editor(page, "Tamil");
+  await expect(box).toBeEditable();
   await box.click();
   await page.keyboard.type("lks/f");
   await expect(box).toHaveValue("தமிழ்");

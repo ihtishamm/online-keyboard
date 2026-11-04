@@ -1,0 +1,25 @@
+{
+  "slug": "mongolian",
+  "code": "mn",
+  "order": 490,
+  "lang": "mn",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Mongolian",
+    "native": "Монгол"
+  },
+  "aliases": [],
+  "region": "east-asia",
+  "fonts": ["latin"],
+  "layouts": ["mn-standard", "mn-roman"],
+  "sample": "Сайн байна уу! Өнөөдөр сайхан өдөр байна.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "mn",
+    "bing": "mn"
+  },
+  "tier": null,
+  "notes": "The Cyrillic alphabet, used in Mongolia. Traditional Mongolian script is not covered. No voice yet: the locale has not passed /voice-probe."
+}

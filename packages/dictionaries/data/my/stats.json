@@ -1,0 +1,10 @@
+{
+  "source": "mywiki.xml.bz2",
+  "pages": 104549,
+  "sentences": 855091,
+  "repeatedSentencesSkipped": 264129,
+  "tokens": 14578948,
+  "distinctWords": 32989,
+  "wordsKept": 23573,
+  "nextWordHeads": 9890
+}

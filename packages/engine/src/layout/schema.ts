@@ -83,6 +83,11 @@ export const layoutSchema = z
       })
       .strict()
       .optional(),
+    /**
+     * An input method that rewrites the text as keys are typed: Hangul composition, Vietnamese
+     * Telex or VNI, romaji to kana. Keys hold what they type by themselves.
+     */
+    composer: z.enum(["hangul", "telex", "vni", "romaji"]).optional(),
     /** Optional id of a transliteration scheme that pairs with this layout. */
     translit: z.string().optional(),
   })

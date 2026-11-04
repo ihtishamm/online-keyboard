@@ -1,0 +1,10 @@
+{
+  "source": "tgwiki.xml.bz2",
+  "pages": 116286,
+  "sentences": 568527,
+  "repeatedSentencesSkipped": 246008,
+  "tokens": 7352024,
+  "distinctWords": 376565,
+  "wordsKept": 100000,
+  "nextWordHeads": 9740
+}

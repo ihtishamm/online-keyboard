@@ -55,6 +55,28 @@ const SLUG: Record<string, string> = {
   sv: "swedish",
   ca: "catalan",
   hr: "croatian",
+  ru: "russian",
+  uk: "ukrainian",
+  be: "belarusian",
+  bg: "bulgarian",
+  sr: "serbian",
+  mk: "macedonian",
+  kk: "kazakh",
+  ky: "kyrgyz",
+  tg: "tajik",
+  mn: "mongolian",
+  el: "greek",
+  he: "hebrew",
+  hy: "armenian",
+  ka: "georgian",
+  th: "thai",
+  lo: "lao",
+  km: "khmer",
+  my: "burmese",
+  vi: "vietnamese",
+  ko: "korean",
+  ja: "japanese",
+  zh: "chinese-simplified",
 };
 
 const norm = (code: string, w: string) => TEXT_RULES[code]!.normalizeWord(w);
@@ -62,7 +84,9 @@ const norm = (code: string, w: string) => TEXT_RULES[code]!.normalizeWord(w);
 describe("text rules", () => {
   it("cover every language on the site", () => {
     const slugs = new Set(Object.values(SLUG));
-    expect(LANGUAGES.map((l) => l.slug).filter((slug) => !slugs.has(slug))).toEqual([]);
+    // Traditional Chinese has its readings but no word list of its own: it types by conversion.
+    const pages = LANGUAGES.map((l) => l.slug).filter((slug) => slug !== "chinese-traditional");
+    expect(pages.filter((slug) => !slugs.has(slug))).toEqual([]);
     expect(Object.keys(TEXT_RULES).sort()).toEqual(Object.keys(SLUG).sort());
   });
 
@@ -209,6 +233,9 @@ describe("built word lists", () => {
     const file = new URL(`../data/${code}/words.txt`, import.meta.url);
     const language = LANGUAGES.find((l) => l.slug === slug);
     if (!existsSync(file) || !language) continue; // no list yet, or no page yet
+    // Typed letters become other characters here (jamo, Telex, pinyin, romaji): their tests
+    // are in the engine and in e2e/compose.spec.ts.
+    if (["ko", "vi", "ja", "zh"].includes(code)) continue;
     it(`${code}: every letter of the top 5,000 words can be typed on the ${slug} layouts`, () => {
       const typeable = new Set<string>();
       for (const id of language.layouts) {

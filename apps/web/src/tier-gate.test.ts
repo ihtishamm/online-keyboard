@@ -9,7 +9,7 @@
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { LANGUAGES, getLayout, type Language, type Tier } from "@okb/layouts";
+import { LANGUAGES, getLayout, type Language, type Tier, isRomanLayout } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
 import { allSheets } from "./components/cheatsheet/sheets";
 import { accentAccuracyFor, accuracyFor } from "./content/accuracy";
@@ -41,7 +41,7 @@ function checks(l: Language): { C: Check[]; B: Check[]; A: Check[] } {
   const words = existsSync(stats)
     ? (JSON.parse(readFileSync(stats, "utf8")) as { wordsKept: number }).wordsKept
     : 0;
-  const roman = l.layouts.map(getLayout).find((x) => x.translit)?.translit;
+  const roman = l.layouts.map(getLayout).find(isRomanLayout)?.translit;
   return {
     C: [
       { name: "layouts", ok: l.layouts.length > 0 },
@@ -84,7 +84,7 @@ export function roster(): string {
     const earned = earnedTier(l);
     const next = earned === "B" ? c.A : earned === "C" ? c.B : earned === null ? c.C : [];
     const missing = next.filter((x) => !x.ok).map((x) => x.name);
-    const roman = l.layouts.map(getLayout).find((x) => x.translit)?.translit;
+    const roman = l.layouts.map(getLayout).find(isRomanLayout)?.translit;
     const acc = roman ? accuracyFor(roman) : undefined;
     return [
       `${l.name.en} (/${l.slug})`,

@@ -8,6 +8,7 @@ import {
   phoneLayout,
   type KeyCode,
   type Modifiers,
+  type TonePlacement,
 } from "@okb/engine";
 import type { FontId } from "@okb/layouts";
 import { bundleLayout, layoutSlug, type LanguageBundle } from "@okb/layouts/bundle";
@@ -51,6 +52,7 @@ import SpellOverlay from "./SpellOverlay";
 import { loadPreference, savePreference } from "./preferences";
 import AccentBar from "./AccentBar";
 import { frenchSpacing, spanishOpening, type Edit } from "./latin-typing";
+import { convertChineseScript } from "./chinese-script";
 import Toolbar, { FONT_SIZES } from "./Toolbar";
 import { useDrafts } from "./useDrafts";
 import { useKeyboardInset } from "./useKeyboardInset";
@@ -136,6 +138,9 @@ export default function KeyboardApp({
   const [predict, setPredict] = useState(true);
   const [spellcheck, setSpellcheck] = useState(() => spellingByDefault(language.code));
   const [autocorrect, setAutocorrect] = useState(() => autocorrectByDefault(language.code));
+  /** Vietnamese Telex and VNI: hoà (the default) or hòa. */
+  const [tonePlacement, setTonePlacement] = useState<TonePlacement>("new");
+  machine.tonePlacement = tonePlacement;
   const isLatin = language.script === "Latn";
   /** Latin: Space adds accents the word list is sure of (cancion → canción). */
   const [smartAccents, setSmartAccents] = useState(isLatin && hasDictionary(language.code));
@@ -224,6 +229,7 @@ export default function KeyboardApp({
     }
     const savedFont = loadPreference(`font:${slug}`) as FontId | null;
     if (savedFont && language.fonts.includes(savedFont)) setFont(savedFont);
+    if (loadPreference("tonePlacement") === "old") setTonePlacement("old");
     const savedSize = Number(loadPreference("fontSize"));
     if (savedSize >= FONT_SIZES.min && savedSize <= FONT_SIZES.max) setFontSize(savedSize);
     if (!explicitLayout) {
@@ -339,6 +345,16 @@ export default function KeyboardApp({
    * A context rule that rewrites the end of the text (ITRANS). Delete, then insert: Chromium's
    * insertText keeps part of a selection that starts inside a conjunct (स्क् + ृ).
    */
+  /** Korean: Backspace takes one jamo off the syllable being composed. */
+  const backspaceComposed = (): boolean => {
+    const el = editorRef.current;
+    if (!el || el.selectionStart !== el.selectionEnd) return false;
+    const r = machine.backspace(textBeforeCaret());
+    if (!r) return false;
+    rewriteBeforeCaret(r.remove, r.text);
+    return true;
+  };
+
   const rewriteBeforeCaret = (remove: number, text: string) => {
     const el = editorRef.current;
     if (!el) return;
@@ -355,7 +371,8 @@ export default function KeyboardApp({
   const typeText = (text: string) => {
     if (!roman && text === " " && suggest.correctBefore(" ")) return;
     if (insertWithRule(text)) return;
-    if (!roman || !isBoundary(text)) return insert(text);
+    // Zhuyin's symbols are the word's own letters here, not punctuation.
+    if (!roman || !isBoundary(text) || scheme?.letters?.includes(text)) return insert(text);
     const el = editorRef.current;
     const prev = el ? el.value[el.selectionStart - 1] : undefined;
     // Leave decimal points and times alone: 3.5, 10:30
@@ -445,6 +462,12 @@ export default function KeyboardApp({
       return;
     }
 
+    if (e.key === "Backspace" && plain && backspaceComposed()) {
+      e.preventDefault();
+      rerender();
+      return;
+    }
+
     if (machine.pending !== null && (e.key === "Backspace" || e.key === " ")) {
       e.preventDefault();
       const trigger = machine.pending;
@@ -518,7 +541,9 @@ export default function KeyboardApp({
     const el = editorRef.current;
     switch (action) {
       case "backspace":
-        if (!machine.cancelPending() && !undoCorrection() && el) deleteBackward(el);
+        if (!machine.cancelPending() && !undoCorrection() && !backspaceComposed() && el) {
+          deleteBackward(el);
+        }
         break;
       case "enter":
         if (!(roman && suggest.commit("\n"))) insert("\n");
@@ -768,6 +793,75 @@ export default function KeyboardApp({
           />
         )}
       </div>
+
+      {(language.code === "zh" || language.code === "zht") && (
+        <div className="flex flex-wrap items-center gap-2 text-sm">
+          <span id="chinese-script" className="text-muted">
+            Convert my text to
+          </span>
+          <div role="group" aria-labelledby="chinese-script" className="flex gap-1">
+            {(
+              [
+                ["s2t", "繁體", "Traditional"],
+                ["t2s", "简体", "Simplified"],
+              ] as const
+            ).map(([direction, label, name]) => (
+              <button
+                key={direction}
+                type="button"
+                lang={direction === "s2t" ? "zh-Hant" : "zh-Hans"}
+                aria-label={`Convert my text to ${name} Chinese`}
+                className="min-h-11 rounded-lg border border-border bg-surface px-3 text-muted hover:text-text"
+                onClick={() => {
+                  const el = editorRef.current;
+                  if (!el?.value) return;
+                  void convertChineseScript(direction, el.value).then((text) => {
+                    if (text === null) setAnnouncement("Could not load the conversion table");
+                    else {
+                      replaceText(el, 0, el.value.length, text);
+                      setAnnouncement(`Converted to ${name} Chinese`);
+                    }
+                  });
+                }}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+      {(layout.composer === "telex" || layout.composer === "vni") && !passthrough && (
+        <div className="flex flex-wrap items-center gap-2 text-sm">
+          <span id="tone-placement" className="text-muted">
+            Tone marks
+          </span>
+          <div role="group" aria-labelledby="tone-placement" className="flex gap-1">
+            {(
+              [
+                ["new", "hoà (new)"],
+                ["old", "hòa (old)"],
+              ] as const
+            ).map(([value, label]) => (
+              <button
+                key={value}
+                type="button"
+                aria-pressed={tonePlacement === value}
+                onClick={() => {
+                  setTonePlacement(value);
+                  savePreference("tonePlacement", value);
+                }}
+                className={`min-h-11 rounded-lg border px-3 ${
+                  tonePlacement === value
+                    ? "border-accent bg-accent-soft text-text"
+                    : "border-border bg-surface text-muted hover:text-text"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {romanToConvert && roman && suggest.convertText && (
         <div className="flex flex-wrap items-center gap-2 rounded-xl border border-accent bg-accent-soft px-3 py-2 text-sm">

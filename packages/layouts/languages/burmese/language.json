@@ -1,0 +1,25 @@
+{
+  "slug": "burmese",
+  "code": "my",
+  "order": 570,
+  "lang": "my",
+  "script": "Mymr",
+  "dir": "ltr",
+  "name": {
+    "en": "Burmese",
+    "native": "မြန်မာ"
+  },
+  "aliases": ["Myanmar"],
+  "region": "southeast-asia",
+  "fonts": ["myanmar"],
+  "layouts": ["my-standard"],
+  "sample": "မင်္ဂလာပါ ဒီနေ့ ရာသီဥတု ကောင်းတယ်",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "my",
+    "bing": "my"
+  },
+  "tier": null,
+  "notes": "Types Unicode, not Zawgyi; Zawgyi conversion comes in Phase 10. No Roman typing yet. No voice yet: the locale has not passed /voice-probe."
+}

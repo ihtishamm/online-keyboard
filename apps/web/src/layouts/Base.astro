@@ -40,6 +40,9 @@ interface Props {
     wiktionary?: boolean;
     wiktionaryWords?: boolean;
     tatoeba?: boolean;
+    cedict?: boolean;
+    opencc?: boolean;
+    mozc?: boolean;
   };
   /** Slug of the page's language, marked as current in the language picker. */
   language?: string;
@@ -254,6 +257,36 @@ const arabicLogo = font === undefined || font === "nastaliq" || font === "naskh"
               CC BY 2.0 FR
             </a>
             {")."}
+          </p>
+        )}
+        {credits.cedict && (
+          <p>
+            {"Hanzi readings are from "}
+            <a class="underline" href="https://cc-cedict.org/">
+              CC-CEDICT
+            </a>
+            {" ("}
+            <a class="underline" href="https://creativecommons.org/licenses/by-sa/4.0/">
+              CC BY-SA 4.0
+            </a>
+            {")"}
+            {credits.opencc && ", and Simplified and Traditional conversion from "}
+            {credits.opencc && (
+              <a class="underline" href="https://github.com/BYVoid/OpenCC">
+                OpenCC
+              </a>
+            )}
+            {credits.opencc && " (Apache-2.0)"}
+            {"."}
+          </p>
+        )}
+        {credits.mozc && (
+          <p>
+            {"Kanji readings are from the "}
+            <a class="underline" href="https://github.com/google/mozc">
+              Mozc
+            </a>
+            {" open source dictionary (BSD 3-Clause, © Google), which includes IPAdic (© NAIST, ICOT notice) and Okinawa dictionary data."}
           </p>
         )}
       </div>

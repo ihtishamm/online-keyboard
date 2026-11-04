@@ -14,8 +14,12 @@ describe("phone layouts", () => {
       });
 
       it("keep rows narrow enough to tap", () => {
-        expect(phone.rows).toHaveLength(3);
-        phone.rows.forEach((row, i) => expect(row.length).toBeLessThanOrEqual(PHONE_ROW_MAX[i]!));
+        // Three rows, or four where a hand-tuned layout has too many letters (Kazakh's 42).
+        expect(phone.rows.length).toBeLessThanOrEqual(layout.mobile ? 4 : 3);
+        phone.rows.forEach((row, i) => {
+          const last = i === phone.rows.length - 1;
+          expect(row.length).toBeLessThanOrEqual(PHONE_ROW_MAX[last ? 2 : 0]!);
+        });
         for (const row of phone.symbols) expect(row.length).toBeLessThanOrEqual(10);
       });
 

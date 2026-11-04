@@ -51,7 +51,8 @@ describe("smart accents", () => {
           shipped!.latin!.words,
           heldOut,
           shipped!.latin!.accents,
-          LANGUAGES.find((l) => l.code === code)?.accents,
+          // Vietnamese's tone marks make nearly every vowel special: nothing counts as foreign.
+          code === "vi" ? undefined : LANGUAGES.find((l) => l.code === code)?.accents,
         );
         const pct = (x: number) => `${(x * 100).toFixed(1)}%`;
         console.log(

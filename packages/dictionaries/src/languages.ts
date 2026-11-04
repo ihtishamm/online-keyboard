@@ -7,6 +7,7 @@
  * finds the same entry. Diacritics are dropped where the language usually omits them; marks a
  * language needs to spell words (Kashmiri vowels, Hindi and Bangla vowel signs) are kept.
  */
+import { readFileSync } from "node:fs";
 import {
   normalizeArabic,
   normalizeAssamese,
@@ -37,6 +38,8 @@ import {
   normalizeUrdu,
   normalizeUyghur,
   urduPlus,
+  CYRILLIC_ALPHABETS,
+  WORD_NORMALIZERS,
 } from "@okb/engine/normalize";
 import { LATIN_LOCALES, foldLatin, normalizeLatin } from "@okb/engine/latin";
 
@@ -51,6 +54,11 @@ export interface TextRules {
   run: RegExp;
   /** Characters allowed between two words of a pair besides spaces. */
   joiners: RegExp;
+  /**
+   * Scripts written without spaces (Thai, Lao, Khmer, Burmese): split a run into words. The
+   * browser's own word breaking (ICU, Unicode License) does it at build time and when typing.
+   */
+  segment?: (run: string) => string[];
   /** Normalise one word; null when it is not a word of the language. */
   normalizeWord(raw: string): string | null;
   /**
@@ -118,6 +126,7 @@ const ONE_LETTER: Record<string, string> = {
   sv: "iåö",
   ca: "aiodlmnst",
   hr: "aiuosk",
+  vi: "aàáảãạôơởừửyý",
 };
 /**
  * Turkish writes the endings of a name after an apostrophe (Türkiye'nin, Tom'un). The ending
@@ -145,6 +154,109 @@ const latin = (code: string): TextRules => ({
   fold: (w) => foldLatin(w, LATIN_LOCALES[code]!),
   holdout: 50,
 });
+
+/** One-letter Cyrillic words (prepositions and the like); other single letters are labels. */
+const CYRILLIC_ONE_LETTER: Record<string, string> = {
+  ru: "авикоусяж",
+  uk: "авзіоуйя",
+  be: "азіуя",
+  bg: "авису",
+  sr: "аиоусј",
+  mk: "аиов",
+  kk: "",
+  ky: "",
+  tg: "ваюе",
+  mn: "",
+};
+const CYRILLIC_RUN =
+  /\p{Script=Cyrillic}(?:[\p{Script=Cyrillic}\p{M}]|-(?=\p{Script=Cyrillic}))*/gu;
+const CYRILLIC_RUN_APOSTROPHE =
+  /\p{Script=Cyrillic}(?:[\p{Script=Cyrillic}\p{M}]|['’-](?=\p{Script=Cyrillic}))*/gu;
+
+const cyrillic = (code: string): TextRules => ({
+  code,
+  wiki: `${code}wiki`,
+  sentenceEnd: LATIN_SENTENCE_END,
+  run: code === "uk" || code === "be" ? CYRILLIC_RUN_APOSTROPHE : CYRILLIC_RUN,
+  joiners: /\s/g,
+  normalizeWord: (raw) => {
+    const word = WORD_NORMALIZERS[code]!(raw);
+    if (word === null || [...word].length > 1) return word;
+    return CYRILLIC_ONE_LETTER[code]!.includes(foldLatin(word, code)) ? word : null;
+  },
+  fold: (w) => foldLatin(w, code),
+});
+
+const LETTER_END = /(?<=[.?!…։])\s+|\n+/u;
+/** A language with its own alphabet, and one-letter words listed in `single`. */
+const alphabet = (code: string, run: RegExp, single: string, cased: boolean): TextRules => ({
+  code,
+  wiki: `${code}wiki`,
+  sentenceEnd: LETTER_END,
+  run,
+  joiners: /\s/g,
+  normalizeWord: (raw) => {
+    const word = WORD_NORMALIZERS[code]!(raw);
+    if (word === null || [...word].length > 1) return word;
+    return single.includes(cased ? foldLatin(word, code) : word) ? word : null;
+  },
+  ...(cased ? { fold: (w: string) => foldLatin(w, code) } : {}),
+});
+
+/** A script written without spaces between words. */
+const unspaced = (code: string, run: RegExp): TextRules => {
+  const words = new Intl.Segmenter(code, { granularity: "word" });
+  return {
+    code,
+    wiki: `${code}wiki`,
+    sentenceEnd:
+      code === "km" ? /[។៕?!\n]+/u : code === "my" ? /[။?!\n]+/u : /[?!\n]+|(?<=[.])\s+/u,
+    run,
+    joiners: /[\s\u200B]/g,
+    segment: (text) => [...words.segment(text)].filter((s) => s.isWordLike).map((s) => s.segment),
+    normalizeWord: (raw) => {
+      const word = raw
+        .normalize("NFC")
+        .replace(/\u200B/g, "")
+        // Khmer: Unicode deprecates these two, and no keyboard types them.
+        .replace(/\u17A3/g, "\u17A2")
+        .replace(/\u17A4/g, "\u17A2\u17B6");
+      return [...word].length > 1 ? word : null;
+    },
+  };
+};
+
+/** OpenCC's Traditional to Simplified characters, read when Chinese is first built. */
+let toSimplified: Map<string, string> | null = null;
+function simplified(text: string): string {
+  if (!toSimplified) {
+    const file = new URL("../vendor/opencc/TSCharacters.txt", import.meta.url);
+    toSimplified = new Map(
+      readFileSync(file, "utf8")
+        .split("\n")
+        .filter((line) => line.includes("\t") && !line.startsWith("#"))
+        .map((line) => {
+          const [from, to] = line.split("\t");
+          return [from!, to!.split(" ")[0]!] as const;
+        }),
+    );
+  }
+  return [...text].map((c) => toSimplified!.get(c) ?? c).join("");
+}
+
+const japaneseWords = new Intl.Segmenter("ja", { granularity: "word" });
+const chineseWords = new Intl.Segmenter("zh", { granularity: "word" });
+/** Chinese Wikipedia mixes the two scripts: words are counted in Simplified. */
+const chinese: TextRules = {
+  code: "zh",
+  wiki: "zhwiki",
+  sentenceEnd: /[。！？!?\n]+/u,
+  run: /[\u3400-\u9FFF\uF900-\uFAFF]+/gu,
+  joiners: /[\s，、]/g,
+  segment: (text) =>
+    [...chineseWords.segment(simplified(text))].filter((s) => s.isWordLike).map((s) => s.segment),
+  normalizeWord: (raw) => raw,
+};
 
 /** Text rules by data code. */
 export const TEXT_RULES: Readonly<Record<string, TextRules>> = {
@@ -204,6 +316,35 @@ export const TEXT_RULES: Readonly<Record<string, TextRules>> = {
   // No Jawi Wikipedia dump: src/import-jawi.ts builds the word list from Wiktionary spellings.
   zlm: arabicScript("zlm", null, normalizeJawi),
   ...Object.fromEntries(Object.keys(LATIN_LOCALES).map((code) => [code, latin(code)])),
+  ...Object.fromEntries(Object.keys(CYRILLIC_ALPHABETS).map((code) => [code, cyrillic(code)])),
+  el: alphabet("el", /\p{Script=Greek}+/gu, "αηοωή", true),
+  // eslint-disable-next-line no-misleading-character-class -- letters and their points
+  he: alphabet("he", /[\u05D0-\u05EA\u0591-\u05C7]+/gu, "", false),
+  hy: alphabet("hy", /[\u0531-\u0556\u0561-\u0587]+/gu, "ևուէ", true),
+  ka: alphabet("ka", /[\u10D0-\u10F0]+/gu, "", false),
+  th: unspaced("th", /[\u0E01-\u0E3A\u0E40-\u0E4E]+/gu),
+  lo: unspaced("lo", /[\u0E81-\u0EBD\u0EC0-\u0ECD\u0EDC-\u0EDF]+/gu),
+  km: unspaced("km", /[\u1780-\u17D3\u200B]+/gu),
+  my: unspaced("my", /[\u1000-\u103F\u1050-\u1059]+/gu),
+  zh: chinese,
+  ja: {
+    code: "ja",
+    wiki: "jawiki",
+    sentenceEnd: /[。！？!?\n]+/u,
+    run: /[\u3041-\u3096\u30A1-\u30FAー\u3400-\u9FFF々]+/gu,
+    joiners: /[\s、]/g,
+    segment: (text) =>
+      [...japaneseWords.segment(text)].filter((s) => s.isWordLike).map((s) => s.segment),
+    normalizeWord: (raw) => raw,
+  },
+  ko: {
+    code: "ko",
+    wiki: "kowiki",
+    sentenceEnd: LETTER_END,
+    run: /[\uAC00-\uD7A3]+/gu,
+    joiners: /\s/g,
+    normalizeWord: (raw) => raw,
+  },
 };
 
 export function splitSentences(text: string, rules: TextRules): string[] {
@@ -222,7 +363,8 @@ export function tokenize(sentence: string, rules: TextRules): (string | null)[] 
     // breaks the word pair, so pairs only join words that were really adjacent.
     const gap = sentence.slice(last, m.index);
     if (out.length > 0 && gap.replace(rules.joiners, "") !== "") out.push(null);
-    out.push(rules.normalizeWord(m[0]));
+    if (rules.segment) for (const w of rules.segment(m[0])) out.push(rules.normalizeWord(w));
+    else out.push(rules.normalizeWord(m[0]));
     last = m.index + m[0].length;
   }
   return out;

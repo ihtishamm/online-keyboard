@@ -1,0 +1,13 @@
+{
+  "source": "ukwiki.xml.bz2",
+  "pages": 16145,
+  "sentences": 1176333,
+  "repeatedSentencesSkipped": 149700,
+  "tokens": 12612014,
+  "distinctWords": 581507,
+  "wordsKept": 100000,
+  "nextWordHeads": 9818,
+  "text": "uk-train.txt",
+  "textSentences": 184995,
+  "textWeight": 6.44
+}

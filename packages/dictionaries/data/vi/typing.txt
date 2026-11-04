@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+5736	Làm sao để tìm được thức ăn khi đang ở ngoài không gian?
+337913	Tôi đã có cơ hội gặp anh ấy.
+516582	Tôi thích cách chị ta cười khi tôi pha trò.
+529859	Anh ấy không biết làm gì với đồ ăn thừa.
+604502	Thường thường những câu nói đùa đều chứa một phần sự thật.
+665583	Mặc dầu nó đã mệt , nó vẫn tiếp tục làm việc.
+755419	Người tự do đi đến nơi anh ta muốn.
+837118	Giữ được bình tĩnh khi có chuyện khẩn cấp là rất quan trọng.
+837152	Billy, hãy cút đi! Tôi không muốn nhìn thấy anh ở đây nữa.
+886799	Tôi thật nhanh để gặp được chuyến tàu đầu tiên.
+1543712	Chúng ta không thể làm công việc đó trong một ngày.
+1555068	Cô ấy ngoảnh mặt đi và bắt đầu khóc.
+1558409	Bình hoa mà nó làm bể là của dì tôi.
+1563760	Làm theo cách mà nó đã chỉ mày.
+1564352	Thằng nhóc vui hẳn lên.
+1574437	Tụi mày có biết nhau không?
+1589726	Tôi sẽ đánh lạc hướng.
+1637041	Tớ sẽ đi tới đó ngay cả khi trời mưa.
+2661820	Tôi đi làm bằng xe tàu điện mỗi ngày.
+3304677	Đi theo tôi và tôi sẽ chỉ cho bạn đường đi.
+3320911	Cườm nước còn gọi là bệnh Glôcôm.
+3341834	Chủ quyền lãnh thổ quốc gia là thiêng liêng và bất khả xâm phạm.
+3534118	Mày bị cái khỉ gì vậy?
+3839521	Hôm nay tôi đến trường.
+4785974	Chắc là bạn đang đùa.
+4786118	Bạn có một ngôi nhà thật đẹp.
+5309124	Ai đã trả lời điện thoại vậy?
+6227379	Tôi rất ghét cái thời tiết này.
+6233012	Bỏ nó đi, bạn đâu còn là trẻ con nữa.
+6249315	Hôm nay chúng mình không đi đâu cả.
+8794967	Đám luật sư đứa nào cũng nói dối cả.
+8836607	Anh ta cư xử thế nào?
+8841544	Tôi không muốn biết tên anh ta.
+8948937	An không tìm được việc.
+8956012	Tôi đang ăn một quả lê.
+8961597	Tôi tin cô ấy là một người lương thiện.
+8968520	Cuốn sách đó bạn mua ở đâu thế?
+8981764	Tôi đang viết một bức thư.
+8995777	Tiểu thuyết này cũng được dịch sang tiếng Pháp.
+9001480	Đó có phải là người đã mất vợ trong vụ tai nạn ô tô đó không?
+9007618	Họ nói là họ không lạnh lắm.
+9007847	Họ định sẽ làm gì tôi đây?
+9010617	Anh ấy đã sống với họ hàng của mình ở Kabylie.
+9010683	Tuyết bắt đầu rơi rồi đấy.
+9016751	Ca-phê-in là một loại chất gây nghiện.
+9024429	Cô ta chẳng bao giờ dọn giường hết.
+9082295	Con chim đó to bằng nửa con đại bàng.
+9715072	Anh ấy sẽ ghi nhớ hai ngày cuối tuần này cho đến hết cuộc đời.
+9733860	Bạn đã gặp ai vậy?
+9739089	Trời đã mưa suốt mấy ngày liền.
+9752689	Họ ngồi dưới bóng râm của cái cây to kia.
+10235834	Họ đang khen ngợi lẫn nhau.
+10265848	Bạn nên the người làm việc đó.
+10266645	Cô ấy là một người thẳng thắn.
+10278462	Tôi hy vọng bạn có thể làm điều đó.
+10304563	Luật sư của bạn là ai?
+10669087	Bạn kết hôn bao lâu rồi?
+10669112	Tôi muốn sống hết mình.
+11045799	Thành công khó có thể sao chép nhưng văn hoá có thể lưu truyền.
+11115044	Mẹ tôi đang ăn kiêng theo chế độ banana diet.
+11338387	Tôi cần một ít thuốc vì tôi bị nhức đầu.
+11475581	Bạn có thấy cô ấy không?
+11584693	Bố đang nấu gì thế?
+12414397	Tôi thích ăn loại hạt óc chó.
+12414403	Tôi sẽ đến thăm cô ấy vào ngày mai.
+12562859	Tiết học sẽ bắt đầu lại sớm
+13173277	Bạn đã đi du lịch nước ngoài bao giờ chưa?
+13173484	Nếu bạn có thời gian, hãy đi mua sắm.
+13340612	Tránh uống đồ uống có đường.
+13388918	Đó là một ví dụ.
+13426494	Ziri đã mua pháo hoa.
+13525748	Cho tôi mượn cục sạc được không?
+13565150	Đèn giao thông được dùng để điều hướng giao thông.
+13581086	Tôi đã gặp anh ấy nhiều năm về trước.
+13603266	Tôi nhặt được một tờ tiền âm phủ.
+13726778	Sở thích của tôi là sưu tập những đồng xu cổ.
+13896389	Bạn đưa tôi bút chì có được không?
+13896795	Sao Kim có những đám mây sulfuric acid.
+13940930	Tôi có phát âm đúng hay không?
+14025599	Estrellia là em dâu của tôi.

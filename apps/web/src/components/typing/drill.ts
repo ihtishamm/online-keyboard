@@ -1,11 +1,11 @@
-import type { DeadStroke, Keystroke } from "@okb/engine";
+import { partKey, typingParts, type DeadStroke, type Keystroke } from "@okb/engine";
 
 /**
  * Typing drill state: a list of target words typed one at a time, Space moving to the next.
  * Words are checked whole, the way Urdu typing tests usually work: colouring single letters
  * would break Nastaliq joining.
  *
- * Comparisons happen in NFD, so آ typed as one key or as ا + madda, ؤ typed as و + hamza, é
+ * Comparisons happen part by part (NFD, and Hangul as letters), so آ typed as one key or as ا + madda, ؤ typed as و + hamza, é
  * typed as one key or with a dead key, and क़ as one code point or as क + nukta, all count
  * the same.
  *
@@ -60,7 +60,8 @@ export interface DrillStats {
   correctChars: number;
 }
 
-const nfd = (s: string) => s.normalize("NFD");
+/** Typed text and targets compare part by part (engine typingParts). */
+const nfd = typingParts;
 
 export interface Scoring {
   /** Words (5 characters) or characters per minute. */
@@ -274,7 +275,8 @@ export function nextKeystroke(
     if (offset + parts.length > typed) {
       if (offset === typed && keys.has(ch)) return keys.get(ch)!;
       if (offset === typed && dead.has(ch)) return viaDead(ch);
-      return keys.get(parts[typed - offset]!) ?? null;
+      const base = [...parts.slice(0, typed - offset)].find((p) => /\p{L}/u.test(p)) ?? "";
+      return partKey(keys, parts[typed - offset]!, base) ?? null;
     }
     offset += parts.length;
   }
@@ -289,6 +291,9 @@ export function typeable(
 ): boolean {
   return [...text.normalize("NFC")].every(
     (ch) =>
-      /\s/u.test(ch) || keys.has(ch) || dead.has(ch) || [...nfd(ch)].every((p) => keys.has(p)),
+      /\s/u.test(ch) ||
+      keys.has(ch) ||
+      dead.has(ch) ||
+      [...typingParts(ch)].every((p) => keys.has(p)),
   );
 }

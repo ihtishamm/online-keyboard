@@ -1,5 +1,12 @@
 import type { FontId } from "@okb/layouts";
 
+/**
+ * Korean, Chinese and Japanese use the fonts already on the device. Every phone and computer
+ * has them, and web fonts for these scripts run to hundreds of files per family.
+ */
+export const SYSTEM_FONTS = ["hangul", "cjk-sc", "cjk-tc", "cjk-jp"] as const;
+export type SystemFont = (typeof SYSTEM_FONTS)[number];
+
 /** The family name of each editor font (src/fonts.test.ts checks them against the packages). */
 export const FONT_FAMILY: Readonly<Record<FontId, string>> = {
   nastaliq: "Noto Nastaliq Urdu",
@@ -15,6 +22,17 @@ export const FONT_FAMILY: Readonly<Record<FontId, string>> = {
   malayalam: "Noto Sans Malayalam",
   sinhala: "Noto Sans Sinhala",
   thaana: "Noto Sans Thaana",
+  hebrew: "Noto Sans Hebrew",
+  armenian: "Noto Sans Armenian",
+  georgian: "Noto Sans Georgian",
+  thai: "Noto Sans Thai",
+  lao: "Noto Sans Lao",
+  khmer: "Noto Sans Khmer",
+  myanmar: "Noto Sans Myanmar",
+  hangul: "Noto Sans KR",
+  "cjk-sc": "Noto Sans SC",
+  "cjk-tc": "Noto Sans TC",
+  "cjk-jp": "Noto Sans JP",
   latin: "Inter Variable",
 };
 
@@ -27,4 +45,15 @@ export const TALL_FONTS: ReadonlySet<FontId> = new Set([
   "malayalam",
   "sinhala",
   "thaana",
+  "hebrew",
+  "armenian",
+  "georgian",
+  "thai",
+  "lao",
+  "khmer",
+  "myanmar",
+  "cjk-sc",
+  "cjk-tc",
+  "cjk-jp",
+  "hangul",
 ]);

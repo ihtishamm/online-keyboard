@@ -169,6 +169,21 @@
   --stack-malayalam: "Noto Sans Malayalam", "Inter Variable", sans-serif;
   --stack-sinhala: "Noto Sans Sinhala", "Inter Variable", sans-serif;
   --stack-thaana: "Noto Sans Thaana", "Inter Variable", sans-serif;
+  --stack-hebrew: "Noto Sans Hebrew", "Inter Variable", sans-serif;
+  --stack-armenian: "Noto Sans Armenian", "Inter Variable", sans-serif;
+  --stack-georgian: "Noto Sans Georgian", "Inter Variable", sans-serif;
+  --stack-thai: "Noto Sans Thai", "Inter Variable", sans-serif;
+  --stack-lao: "Noto Sans Lao", "Inter Variable", sans-serif;
+  --stack-khmer: "Noto Sans Khmer", "Inter Variable", sans-serif;
+  --stack-myanmar: "Noto Sans Myanmar", "Inter Variable", sans-serif;
+  /* The device's own fonts: see SYSTEM_FONTS in font-names.ts. */
+  --stack-hangul:
+    "Noto Sans KR", "Noto Sans CJK KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --stack-cjk-sc: "Noto Sans SC", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --stack-cjk-tc:
+    "Noto Sans TC", "Noto Sans CJK TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --stack-cjk-jp:
+    "Noto Sans JP", "Noto Sans CJK JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
   --stack-latin: "Inter Variable", "Spacing Accents", system-ui, sans-serif;
   /* Key caps, candidates and other UI glyphs in any of our scripts (fonts load per glyph range). */
   --stack-script: "Noto Naskh Arabic", "Noto Sans Devanagari", "Noto Sans Bengali", serif;
@@ -268,6 +283,53 @@
   .font-thaana {
     font-family: var(--stack-thaana);
     line-height: 2;
+  }
+
+  .font-hebrew {
+    font-family: var(--stack-hebrew);
+    line-height: 1.8;
+  }
+
+  .font-armenian {
+    font-family: var(--stack-armenian);
+    line-height: 1.8;
+  }
+
+  .font-georgian {
+    font-family: var(--stack-georgian);
+    line-height: 1.8;
+  }
+
+  .font-thai {
+    font-family: var(--stack-thai);
+    line-height: 2;
+  }
+
+  .font-lao {
+    font-family: var(--stack-lao);
+    line-height: 2;
+  }
+
+  .font-khmer {
+    font-family: var(--stack-khmer);
+    line-height: 2;
+  }
+
+  .font-myanmar {
+    font-family: var(--stack-myanmar);
+    line-height: 2.2;
+  }
+  .font-hangul {
+    font-family: var(--stack-hangul);
+  }
+  .font-cjk-sc {
+    font-family: var(--stack-cjk-sc);
+  }
+  .font-cjk-tc {
+    font-family: var(--stack-cjk-tc);
+  }
+  .font-cjk-jp {
+    font-family: var(--stack-cjk-jp);
   }
 
   .font-latin {

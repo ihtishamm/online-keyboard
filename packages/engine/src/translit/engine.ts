@@ -1,5 +1,6 @@
 import { Lexicon, rankCost } from "../predict/lexicon";
 import type { NextWords } from "../predict/next-words";
+import { romanWordBefore, type WordRange } from "../text/words";
 import {
   compileScheme,
   type CompiledRule,
@@ -35,6 +36,14 @@ export interface TranslitOptions {
   beam: number;
   /** Bonus for a word that often follows the previous one (scaled down by its position). */
   contextBonus: number;
+}
+
+/** For cased scripts, whose lexicon holds folded words. */
+export interface Casing {
+  /** The lookup form of a word, as the lexicon and next-word table hold it. */
+  fold: (word: string) => string;
+  /** A converted word as it should appear: its usual case, and capitals where they were typed. */
+  display: (word: string, typed: string) => string;
 }
 
 export const DEFAULT_OPTIONS: TranslitOptions = {
@@ -76,11 +85,14 @@ export function isRomanWord(text: string, letters = ""): boolean {
  * lacks) the rules' best spelling is still offered.
  */
 export class Transliterator {
+  /** A space follows each converted word. */
+  readonly spaced = true;
   private readonly compiled: CompiledScheme;
   private lexicon: Lexicon | null = null;
   private next: NextWords | null = null;
   private readonly options: TranslitOptions;
   private cache = new Map<string, Candidate[]>();
+  private casing: Casing | null = null;
   /** Extra Roman word characters (TranslitScheme.letters). */
   readonly letters: string;
 
@@ -92,6 +104,11 @@ export class Transliterator {
 
   get scheme(): TranslitScheme {
     return this.compiled.scheme;
+  }
+
+  /** The Roman word ending at the caret. */
+  wordBefore(text: string, caret: number): WordRange | null {
+    return romanWordBefore(text, caret, this.letters);
   }
 
   get hasDictionary(): boolean {
@@ -111,13 +128,22 @@ export class Transliterator {
     this.cache.clear();
   }
 
+  /** Set how words are folded and shown. Without it, words appear as the lexicon has them. */
+  setCasing(casing: Casing | null): void {
+    if (casing === this.casing) return;
+    this.casing = casing;
+    this.cache.clear();
+  }
+
   /**
    * Ranked conversions of one Roman word, best first. `previous` is the word before it
    * (null at the start of a sentence, undefined when unknown); it breaks ties such as
    * ke → کے / کہ.
    */
-  candidates(input: string, limit = 8, previous?: string | null): Candidate[] {
+  candidates(input: string, limit = 8, before?: string | null): Candidate[] {
     if (!isRomanWord(input, this.letters)) return [];
+    const casing = this.casing;
+    const previous = before && casing ? casing.fold(before) : before;
     const key = `${input}\0${limit}\0${previous}`;
     const hit = this.cache.get(key);
     if (hit) return hit;
@@ -164,7 +190,10 @@ export class Transliterator {
       });
     }
 
-    const result = [...found.values()].sort((a, b) => a.cost - b.cost).slice(0, limit);
+    const result = [...found.values()]
+      .sort((a, b) => a.cost - b.cost)
+      .slice(0, limit)
+      .map((c) => (casing ? { ...c, text: casing.display(c.text, input) } : c));
     if (this.cache.size > 500) this.cache.clear();
     this.cache.set(key, result);
     return result;

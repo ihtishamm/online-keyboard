@@ -3,6 +3,7 @@ import {
   deadStrokeMap,
   keyDefFor,
   keystrokeMap,
+  typingParts,
   type KeyCode,
   type Layer,
   type Layout,
@@ -77,7 +78,9 @@ export function buildLessons(
   const known: string[] = [];
   const teach = INDIC.has(layout.script) ? (s: string) => isLetter(s) || isSign(s) : isLetter;
   // Letters the language never uses (Arabic ي on the Urdu standard layout) are not taught.
-  const used = new Set([...frequencyWords, ...extra.words, ...extra.passages].join(""));
+  // Hangul syllables are taught as the letters they are typed with.
+  const letters = (s: string) => [...(layout.composer === "hangul" ? typingParts(s) : s)];
+  const used = new Set(letters([...frequencyWords, ...extra.words, ...extra.passages].join("")));
   const keys = keystrokeMap(layout);
   const dead = deadStrokeMap(layout, keys);
   const extraLetters = [...used].filter(
@@ -107,8 +110,8 @@ export function buildLessons(
         (w) =>
           w.length >= 2 &&
           w.length <= 8 &&
-          [...w].every((ch) => allowed.has(ch)) &&
-          [...w].some((ch) => fresh.includes(ch)),
+          letters(w).every((ch) => allowed.has(ch)) &&
+          letters(w).some((ch) => fresh.includes(ch)),
       )
       .slice(0, POOL);
     if (words.length < MIN_REAL) {

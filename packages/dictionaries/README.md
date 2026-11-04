@@ -36,6 +36,28 @@ dumps, downloaded in October 2026; Urdu's source is described below):
 | `sv`  | Swedish         | 5,102   | 5.1M       | 97,115     | 40,000 + 16,800 accent |
 | `ca`  | Catalan         | 4,501   | 5.9M       | 74,643     | 40,000 + 6,300 accent  |
 | `hr`  | Croatian        | 7,701   | 4.8M       | 100,000    | 40,000 + 12,300 accent |
+| `ru`  | Russian         | 7,092   | 17.8M      | 100,000    | 37,500                 |
+| `uk`  | Ukrainian       | 16,145  | 12.6M      | 100,000    | 37,500                 |
+| `be`  | Belarusian      | 39,944  | 9.4M       | 100,000    | 37,500                 |
+| `bg`  | Bulgarian       | 25,395  | 13.7M      | 100,000    | 40,000                 |
+| `sr`  | Serbian         | 16,707  | 11.4M      | 100,000    | 40,000                 |
+| `mk`  | Macedonian      | 35,683  | 12.1M      | 100,000    | 40,000                 |
+| `kk`  | Kazakh          | 105,009 | 12.0M      | 100,000    | 37,500                 |
+| `ky`  | Kyrgyz          | 77,191  | 7.6M       | 100,000    | 35,000                 |
+| `tg`  | Tajik           | 116,286 | 7.4M       | 100,000    | 37,500                 |
+| `mn`  | Mongolian       | 32,236  | 8.2M       | 100,000    | 37,500                 |
+| `el`  | Greek           | 17,642  | 13.7M      | 100,000    | 35,000                 |
+| `he`  | Hebrew          | 11,624  | 15.8M      | 100,000    | 40,000                 |
+| `hy`  | Armenian        | 30,807  | 9.6M       | 100,000    | 40,000                 |
+| `ka`  | Georgian        | 39,986  | 8.2M       | 100,000    | 35,000                 |
+| `th`  | Thai            | 18,548  | 16.0M      | 35,245     | 35,245                 |
+| `lo`  | Lao             | 6,173   | 1.1M       | 11,195     | 11,195                 |
+| `km`  | Khmer           | 14,701  | 6.8M       | 36,195     | 32,500                 |
+| `my`  | Burmese         | 104,549 | 14.6M      | 23,573     | 23,573                 |
+| `vi`  | Vietnamese      | 9,666   | 19.2M      | 53,180     | 35,000                 |
+| `ko`  | Korean          | 15,409  | 10.6M      | 100,000    | 37,500                 |
+| `ja`  | Japanese        | 6,216   | 22.5M      | 98,114     | 35,000                 |
+| `zh`  | Chinese         | 8,058   | 15.3M      | 55,712     | 35,000                 |
 
 The Latin-script languages (plan 7.5, 7.7) read the first 20 to 40 MB of their dump (the oldest, most
 edited articles), and add everyday sentences from [Tatoeba](https://tatoeba.org) through
@@ -66,6 +88,21 @@ Two Wave 2 languages have no Wikipedia of their own:
   the next-word table. Wiktionary lists headwords, so most words with me-, ber- or -kan are
   missing and Roman typing spells them by rules. No typing sentences: Tatoeba has too few in
   Jawi, and Dhivehi too few at all, so both typing tests have words only.
+
+- **Wave 3** (plan 9b) read the first 60 MB of each compressed dump (all of a smaller one), with Tatoeba where it has at
+  least 2,000 sentences. Thai, Lao, Khmer, Burmese, Chinese and Japanese write no spaces between
+  words, so ICU's `Intl.Segmenter` splits them, both here and while typing; its boundaries are
+  a machine's guess. Lao has 11,195 words, under the 20,000 Tier B asks for. Traditional Chinese
+  has no list of its own: it types by conversion. Khmer's deprecated ឣ and ឤ are written អ and អា.
+- **Chinese and Japanese readings** (`data/{zh,zht,ja}/readings.txt`, `src/build-readings.ts`)
+  map what is typed to words for the converter, about 450 KB gzipped each and fetched on the first
+  key. Chinese is CC-CEDICT, ranked by the word list. Japanese is the Mozc open source dictionary
+  (`vendor/mozc/`), ranked by the word list and then Mozc's cost.
+- **Simplified and Traditional** (`data/zh/opencc-{s2t,t2s}.txt`) are OpenCC's tables
+  (`vendor/opencc/`), fetched when the button is pressed.
+- **Serbian** has no pairs on Wiktionary (it is filed under Serbo-Croatian, in Latin), so
+  `src/import-serbian.ts` generates its test pairs from the word list in Gajica. Its Roman score is
+  therefore not comparable with any other language's.
 
 Files per language:
 
@@ -106,6 +143,13 @@ their sentence numbers. Those pages credit Tatoeba too.
 [LDNOOBW](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words)
 (`vendor/ldnoobw/`, CC BY 4.0, commit 5faf2ba). They are read at build time only and never
 reach a page.
+
+Chinese readings derive from [CC-CEDICT](https://cc-cedict.org/) (CC BY-SA 4.0, `vendor/cedict/`).
+Simplified and Traditional tables are [OpenCC](https://github.com/BYVoid/OpenCC)'s (Apache-2.0,
+`vendor/opencc/LICENSE`). Japanese readings derive from the [Mozc](https://github.com/google/mozc)
+open source dictionary (BSD 3-Clause, with the IPAdic and Okinawa dictionary notices:
+`vendor/mozc/`). ICU's word segmentation (Unicode License) is the one in Node and the browser;
+none of it is copied here. Those pages credit their sources in the footer.
 
 ### Building another language
 

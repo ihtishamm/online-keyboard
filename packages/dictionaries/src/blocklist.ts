@@ -83,6 +83,21 @@ export function blocklists(): Map<string, string[]> {
     ug: arabicScript,
     prs: [...list("fa"), ...list("ar")],
     zlm: arabicScript,
+    // Nothing in LDNOOBW for these: no blocklist yet (README says so).
+    el: [],
+    he: [],
+    hy: [],
+    ka: [],
+    lo: [],
+    km: [],
+    my: [],
+    vi: [],
+    th: list("th"),
+    ko: list("ko"),
+    // LDNOOBW has Russian only; these languages share many of its roots and loanwords.
+    ...Object.fromEntries(
+      ["ru", "uk", "be", "bg", "sr", "mk", "kk", "ky", "tg", "mn"].map((c) => [c, list("ru")]),
+    ),
   };
 
   return new Map(

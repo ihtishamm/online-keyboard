@@ -11,6 +11,7 @@ import {
   KEY_CODES,
   importCldr,
   importKeyman,
+  importXkb,
   type KeyCode,
   type ContextRule,
   type DeadKey,
@@ -25,6 +26,7 @@ export interface ImportSpec {
   out: string;
   from:
     | { cldr: string }
+    | { xkb: string; variant: string }
     | { keyman: string; ctrlAsAltGr?: boolean; contextRules?: boolean; usDefaults?: boolean };
   meta: Omit<LayoutInput, "keys" | "longpress" | "deadkeys">;
   /** Our changes to the imported keys. Keep `meta.source` in step with them. */
@@ -239,6 +241,27 @@ const WAVE1_IMPORTS: readonly ImportSpec[] = [
       source,
     }),
   ),
+];
+
+/** The three letter rows of a QWERTY-shaped keyboard, for hand-tuned phone layouts. */
+const TOP: KeyCode[] = [
+  "KeyQ",
+  "KeyW",
+  "KeyE",
+  "KeyR",
+  "KeyT",
+  "KeyY",
+  "KeyU",
+  "KeyI",
+  "KeyO",
+  "KeyP",
+];
+const HOME: KeyCode[] = ["KeyA", "KeyS", "KeyD", "KeyF", "KeyG", "KeyH", "KeyJ", "KeyK", "KeyL"];
+const BOTTOM: KeyCode[] = ["KeyZ", "KeyX", "KeyC", "KeyV", "KeyB", "KeyN", "KeyM"];
+const RUSSIAN_ROWS: KeyCode[][] = [
+  [...TOP, "BracketLeft"],
+  [...HOME, "Semicolon", "Quote"],
+  [...BOTTOM, "Comma", "Period", "Backquote"],
 ];
 
 export const IMPORTS: readonly ImportSpec[] = [
@@ -789,6 +812,457 @@ export const IMPORTS: readonly ImportSpec[] = [
       source: "Keyman Khowar Phonetic (SIL) 1.1.1 by SIL Global (MIT).",
     },
   },
+  {
+    out: "greek/standard.json",
+    from: { cldr: "cldr/el-t-k0-windows.xml" },
+    accents: "άέήίόύώϊϋΐΰς",
+    meta: {
+      id: "el-standard",
+      lang: "el",
+      script: "Grek",
+      dir: "ltr",
+      name: { en: "Standard", native: "Τυπικό" },
+      source: `Windows "Greek", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "hebrew/standard.json",
+    from: { cldr: "cldr/he-t-k0-windows-extended.xml" },
+    meta: {
+      id: "he-standard",
+      lang: "he",
+      script: "Hebr",
+      dir: "rtl",
+      name: { en: "Standard", native: "תקנית" },
+      source: `Windows "Hebrew (Standard)" (SI 1452), with niqqud on AltGr, from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "hebrew/phonetic.json",
+    from: { xkb: "xkb/il", variant: "phonetic" },
+    meta: {
+      id: "he-phonetic",
+      lang: "he",
+      script: "Hebr",
+      dir: "rtl",
+      name: { en: "Phonetic", native: "פונטית" },
+      source: `The phonetic layout of xkeyboard-config (X11/MIT-style licence).`,
+    },
+  },
+  {
+    out: "armenian/phonetic.json",
+    from: { cldr: "cldr/hy-t-k0-windows-phonetic.xml" },
+    meta: {
+      id: "hy-phonetic",
+      lang: "hy",
+      script: "Armn",
+      dir: "ltr",
+      name: { en: "Phonetic", native: "Հնչյունային" },
+      source: `Windows "Armenian Phonetic", from ${CLDR_NOTE}. Phone rows are ours.`,
+      // Ten letters live on the number row: a fourth row keeps them one tap away.
+      mobile: {
+        rows: [
+          [
+            "Digit1",
+            "Digit2",
+            "Digit3",
+            "Digit4",
+            "Digit5",
+            "Digit7",
+            "Digit8",
+            "Digit9",
+            "Digit0",
+            "Equal",
+          ],
+          [...TOP, "BracketLeft"],
+          [...HOME, "BracketRight", "Backslash"],
+          [...BOTTOM],
+        ],
+      },
+    },
+  },
+  {
+    out: "armenian/typewriter.json",
+    from: { cldr: "cldr/hy-t-k0-windows.xml" },
+    meta: {
+      id: "hy-typewriter",
+      lang: "hy",
+      script: "Armn",
+      dir: "ltr",
+      name: { en: "Typewriter", native: "Գրամեքենա" },
+      source: `Windows "Armenian Typewriter", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "georgian/qwerty.json",
+    from: { cldr: "cldr/ka-t-k0-windows-qwerty.xml" },
+    meta: {
+      id: "ka-qwerty",
+      lang: "ka",
+      script: "Geor",
+      dir: "ltr",
+      name: { en: "QWERTY", native: "QWERTY" },
+      source: `Windows "Georgian (QWERTY)", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "georgian/mes.json",
+    from: { cldr: "cldr/ka-t-k0-windows.xml" },
+    meta: {
+      id: "ka-mes",
+      lang: "ka",
+      script: "Geor",
+      dir: "ltr",
+      name: { en: "MES", native: "MES" },
+      source: `Windows "Georgian (MES)", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "thai/kedmanee.json",
+    from: { cldr: "cldr/th-t-k0-windows.xml" },
+    meta: {
+      id: "th-kedmanee",
+      lang: "th",
+      script: "Thai",
+      dir: "ltr",
+      name: { en: "Kedmanee", native: "เกษมณี" },
+      source: `Windows "Thai Kedmanee", from ${CLDR_NOTE}. Phone rows are ours.`,
+      mobile: {
+        // Thai has too many letters for three rows: the number row's letters get their own.
+        rows: [
+          [
+            "KeyQ",
+            "Digit4",
+            "Digit5",
+            "Digit6",
+            "Digit7",
+            "Digit8",
+            "Digit9",
+            "Digit0",
+            "Minus",
+            "Equal",
+          ],
+          [...TOP.slice(1), "BracketLeft", "BracketRight"],
+          [...HOME, "Semicolon", "Quote"],
+          [...BOTTOM, "Comma", "Period", "Slash"],
+        ],
+        longpress: { KeyQ: ["ๅ"], Minus: ["ฃ", "ฅ"] },
+      },
+    },
+  },
+  {
+    out: "thai/pattachote.json",
+    from: { cldr: "cldr/th-t-k0-windows-patta.xml" },
+    // A private-use character upstream (a Windows-only glyph) that no font draws.
+    patch: (keys) => {
+      for (const def of Object.values(keys)) {
+        for (const layer of ["n", "s", "ag", "sag"] as const) {
+          if (def?.[layer] === "\uF8C7") delete def[layer];
+        }
+      }
+    },
+    meta: {
+      id: "th-pattachote",
+      lang: "th",
+      script: "Thai",
+      dir: "ltr",
+      name: { en: "Pattachote", native: "ปัตตะโชติ" },
+      source: `Windows "Thai Pattachote", from ${CLDR_NOTE}. We drop one private-use character no font draws.`,
+    },
+  },
+  {
+    out: "lao/standard.json",
+    from: { cldr: "cldr/lo-t-k0-windows.xml" },
+    meta: {
+      id: "lo-standard",
+      lang: "lo",
+      script: "Laoo",
+      dir: "ltr",
+      name: { en: "Standard", native: "ມາດຕະຖານ" },
+      source: `Windows "Lao", from ${CLDR_NOTE}. Phone rows are ours.`,
+      mobile: {
+        rows: [
+          [
+            "Digit1",
+            "Digit2",
+            "Digit3",
+            "Digit4",
+            "Digit5",
+            "Digit6",
+            "Digit7",
+            "Digit8",
+            "Digit9",
+            "Digit0",
+            "Minus",
+          ],
+          [...TOP.slice(1), "BracketLeft", "BracketRight"],
+          [...HOME, "Semicolon", "Quote"],
+          [...BOTTOM, "Comma", "Period", "Slash"],
+        ],
+        longpress: { KeyW: ["\u0EBB", "\u0EBB\u0EC9"], Minus: ["\u0ECD", "\u0ECD\u0EC8"] },
+      },
+    },
+  },
+  {
+    out: "khmer/nida.json",
+    from: { xkb: "xkb/kh", variant: "basic" },
+    // The word space on Khmer's space bar is an invisible U+200B: on the web we type a plain
+    // space, like Khmer keyboards on phones.
+    patch: (keys) => {
+      // xkeyboard-config types these five vowel combinations through unassigned code points
+      // that its Compose file expands; we type the real letters.
+      const pairs: Record<string, string> = {
+        "\u17FB": "\u17BB\u17C7",
+        "\u17FC": "\u17BB\u17C6",
+        "\u17FD": "\u17C1\u17C7",
+        "\u17FE": "\u17C4\u17C7",
+        "\u17FF": "\u17B6\u17C6",
+      };
+      for (const def of Object.values(keys)) {
+        for (const layer of ["n", "s", "ag", "sag"] as const) {
+          const pair = def?.[layer] && pairs[def[layer]];
+          if (pair) def[layer] = pair;
+        }
+      }
+    },
+    meta: {
+      id: "km-nida",
+      lang: "km",
+      script: "Khmr",
+      dir: "ltr",
+      name: { en: "NiDA", native: "NiDA" },
+      source:
+        'NiDA Khmer Unicode standard, from xkeyboard-config "kh" (X11/MIT-style licence). The space bar types a plain space instead of U+200B, and five vowel keys type real letters instead of upstream\'s unassigned code points.',
+    },
+  },
+  {
+    out: "burmese/standard.json",
+    from: { cldr: "cldr/my-t-k0-windows.xml" },
+    // AltGr only repeats QWERTY: it would clutter the phone's symbols page.
+    patch: (keys) => {
+      for (const def of Object.values(keys)) {
+        if (def) {
+          delete def.ag;
+          delete def.sag;
+        }
+      }
+    },
+    meta: {
+      id: "my-standard",
+      lang: "my",
+      script: "Mymr",
+      dir: "ltr",
+      name: { en: "Myanmar", native: "မြန်မာ" },
+      source: `Windows "Myanmar", from ${CLDR_NOTE}: Unicode, not Zawgyi. We drop its AltGr layer, which only repeats QWERTY.`,
+    },
+  },
+  {
+    out: "russian/standard.json",
+    from: { cldr: "cldr/ru-t-k0-windows.xml" },
+    meta: {
+      id: "ru-standard",
+      lang: "ru",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Standard", native: "Стандартная" },
+      source: `Windows "Russian" (ЙЦУКЕН), from ${CLDR_NOTE}.`,
+      // Phone rows are ours; the computer keys are as upstream.
+      mobile: { rows: RUSSIAN_ROWS, longpress: { KeyT: ["ё", "Ё"] } },
+    },
+  },
+  {
+    out: "russian/phonetic.json",
+    from: { xkb: "xkb/ru", variant: "phonetic" },
+    meta: {
+      id: "ru-phonetic",
+      lang: "ru",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Phonetic", native: "Фонетическая" },
+      source: `The phonetic layout (ЯВЕРТЫ) of xkeyboard-config (X11/MIT-style licence).`,
+      // Phone rows are ours; the computer keys are as upstream.
+      mobile: {
+        rows: [
+          [...TOP, "BracketLeft"],
+          [...HOME, "Backslash", "Equal"],
+          [...BOTTOM, "Backquote", "BracketRight"],
+        ],
+        longpress: { KeyE: ["ё", "Ё"], KeyX: ["ъ", "Ъ"] },
+      },
+    },
+  },
+  {
+    out: "ukrainian/standard.json",
+    from: { cldr: "cldr/uk-t-k0-windows-extended.xml" },
+    meta: {
+      id: "uk-standard",
+      lang: "uk",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Standard", native: "Стандартна" },
+      source: `Windows "Ukrainian (Enhanced)", which adds ґ on its own key, from ${CLDR_NOTE}.`,
+      // Phone rows are ours; the computer keys are as upstream.
+      mobile: {
+        rows: [
+          [...TOP, "BracketLeft"],
+          [...HOME, "Semicolon", "Quote"],
+          [...BOTTOM, "Comma", "Period", "BracketRight"],
+        ],
+      },
+    },
+  },
+  {
+    out: "ukrainian/phonetic.json",
+    from: { xkb: "xkb/ua", variant: "phonetic" },
+    meta: {
+      id: "uk-phonetic",
+      lang: "uk",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Phonetic", native: "Фонетична" },
+      source: `The phonetic layout of xkeyboard-config (X11/MIT-style licence).`,
+    },
+  },
+  {
+    out: "belarusian/standard.json",
+    from: { cldr: "cldr/be-t-k0-windows.xml" },
+    meta: {
+      id: "be-standard",
+      lang: "be",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Standard", native: "Стандартная" },
+      source: `Windows "Belarusian", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "bulgarian/standard.json",
+    from: { cldr: "cldr/bg-t-k0-windows.xml" },
+    meta: {
+      id: "bg-standard",
+      lang: "bg",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "BDS", native: "БДС" },
+      source: `Windows "Bulgarian", the БДС layout, from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "bulgarian/phonetic.json",
+    from: { cldr: "cldr/bg-t-k0-windows-qwerty.xml" },
+    meta: {
+      id: "bg-phonetic",
+      lang: "bg",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Phonetic", native: "Фонетична" },
+      source: `Windows "Bulgarian (Phonetic)", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "serbian/standard.json",
+    from: { cldr: "cldr/sr-t-k0-windows.xml" },
+    meta: {
+      id: "sr-standard",
+      lang: "sr",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Standard", native: "Стандардна" },
+      source: `Windows "Serbian (Cyrillic)", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "macedonian/standard.json",
+    from: { cldr: "cldr/mk-t-k0-windows.xml" },
+    meta: {
+      id: "mk-standard",
+      lang: "mk",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Standard", native: "Стандардна" },
+      source: `Windows "Macedonian - Standard", from ${CLDR_NOTE}.`,
+      // Phone rows are ours; the computer keys are as upstream.
+      mobile: {
+        rows: [
+          [...TOP, "BracketLeft"],
+          [...HOME, "Semicolon", "Quote"],
+          [...BOTTOM, "Backslash", "BracketRight"],
+        ],
+        longpress: { KeyG: ["ѓ", "Ѓ"] },
+      },
+    },
+  },
+  {
+    out: "kazakh/standard.json",
+    patch: (keys) => set(keys, "KeyT", { ag: "ё", sag: "Ё" }),
+    from: { cldr: "cldr/kk-t-k0-windows.xml" },
+    meta: {
+      id: "kk-standard",
+      lang: "kk",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Standard", native: "Стандартты" },
+      source: `Windows "Kazakh", from ${CLDR_NOTE}. Upstream cannot type ё; we add it on AltGr+T, the е key. Phone rows are ours.`,
+      // Phone rows are ours; the computer keys are as upstream.
+      mobile: {
+        // Kazakh's own letters are on the number row: a fourth row keeps them one tap away.
+        rows: [
+          ["Digit2", "Digit3", "Digit4", "Digit5", "Digit8", "Digit9", "Digit0", "Minus", "Equal"],
+          [...TOP, "BracketLeft"],
+          [...HOME, "Semicolon", "Quote"],
+          [...BOTTOM, "Comma", "Period"],
+        ],
+      },
+    },
+  },
+  {
+    out: "kyrgyz/standard.json",
+    from: { cldr: "cldr/ky-t-k0-windows.xml" },
+    meta: {
+      id: "ky-standard",
+      lang: "ky",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Standard", native: "Стандарттык" },
+      source: `Windows "Kyrgyz Cyrillic", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "tajik/standard.json",
+    from: { cldr: "cldr/tg-t-k0-windows.xml" },
+    meta: {
+      id: "tg-standard",
+      lang: "tg",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Standard", native: "Стандартӣ" },
+      source: `Windows "Tajik", from ${CLDR_NOTE}.`,
+      // Phone rows are ours; the computer keys are as upstream.
+      mobile: { rows: RUSSIAN_ROWS, longpress: { KeyU: ["ғ", "Ғ"], KeyE: ["ӯ", "Ӯ"] } },
+    },
+  },
+  {
+    out: "mongolian/standard.json",
+    from: { cldr: "cldr/mn-t-k0-windows.xml" },
+    meta: {
+      id: "mn-standard",
+      lang: "mn",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Standard", native: "Стандарт" },
+      source: `Windows "Mongolian Cyrillic", from ${CLDR_NOTE}.`,
+      // Phone rows are ours; the computer keys are as upstream.
+      mobile: {
+        // е, on the minus key on a computer, is too common for a long press; ё moves under it.
+        rows: [
+          [...TOP, "BracketLeft"],
+          [...HOME, "Semicolon", "Quote"],
+          ["KeyZ", "KeyX", "Minus", "KeyV", "KeyB", "KeyN", "KeyM", "Comma", "Period", "Slash"],
+        ],
+        longpress: { Minus: ["ё", "Ё"], KeyI: ["щ", "Щ"], Comma: ["ъ", "Ъ"] },
+      },
+    },
+  },
 ];
 
 /** Characters worth a long press: letters and marks, not ASCII punctuation or digits. */
@@ -824,7 +1298,11 @@ export interface ImportResult {
 /** Build one layout from its upstream source text. */
 export function buildImport(spec: ImportSpec, sourceText: string): ImportResult {
   const imported =
-    "cldr" in spec.from ? importCldr(sourceText) : importKeyman(sourceText, spec.from);
+    "cldr" in spec.from
+      ? importCldr(sourceText)
+      : "xkb" in spec.from
+        ? importXkb(sourceText, spec.from.variant)
+        : importKeyman(sourceText, spec.from);
   const keys = imported.keys;
   const deadkeys = "deadkeys" in imported ? (imported.deadkeys as DeadKey[]) : [];
   const importedRules: ContextRule[] = "rules" in imported ? (imported.rules as ContextRule[]) : [];

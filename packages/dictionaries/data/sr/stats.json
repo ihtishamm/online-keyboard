@@ -1,0 +1,13 @@
+{
+  "source": "srwiki.xml.bz2",
+  "pages": 16707,
+  "sentences": 860362,
+  "repeatedSentencesSkipped": 98742,
+  "tokens": 11412407,
+  "distinctWords": 457737,
+  "wordsKept": 100000,
+  "nextWordHeads": 9625,
+  "text": "sr-train.txt",
+  "textSentences": 27977,
+  "textWeight": 37.81
+}

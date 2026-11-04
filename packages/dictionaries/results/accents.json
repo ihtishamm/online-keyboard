@@ -166,5 +166,17 @@
     "wrongChanges": 31,
     "restored": 0.937396024866474,
     "meetsTarget": false
+  },
+  "vi": {
+    "sentences": 2000,
+    "accentWords": 45641,
+    "foreignWords": 0,
+    "auto": 7344,
+    "offered": 35367,
+    "missed": 2930,
+    "plainWords": 8545,
+    "wrongChanges": 8,
+    "restored": 0.9358033347209745,
+    "meetsTarget": false
   }
 }

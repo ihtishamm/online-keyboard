@@ -1,0 +1,471 @@
+{
+  "id": "hy-phonetic",
+  "lang": "hy",
+  "script": "Armn",
+  "dir": "ltr",
+  "name": {
+    "en": "Phonetic",
+    "native": "Հնչյունային"
+  },
+  "source": "Windows \"Armenian Phonetic\", from Unicode CLDR 43 keyboard data (Unicode License v3). Phone rows are ours.",
+  "mobile": {
+    "rows": [
+      [
+        "Digit1",
+        "Digit2",
+        "Digit3",
+        "Digit4",
+        "Digit5",
+        "Digit7",
+        "Digit8",
+        "Digit9",
+        "Digit0",
+        "Equal"
+      ],
+      [
+        "KeyQ",
+        "KeyW",
+        "KeyE",
+        "KeyR",
+        "KeyT",
+        "KeyY",
+        "KeyU",
+        "KeyI",
+        "KeyO",
+        "KeyP",
+        "BracketLeft"
+      ],
+      [
+        "KeyA",
+        "KeyS",
+        "KeyD",
+        "KeyF",
+        "KeyG",
+        "KeyH",
+        "KeyJ",
+        "KeyK",
+        "KeyL",
+        "BracketRight",
+        "Backslash"
+      ],
+      [
+        "KeyZ",
+        "KeyX",
+        "KeyC",
+        "KeyV",
+        "KeyB",
+        "KeyN",
+        "KeyM"
+      ]
+    ]
+  },
+  "keys": {
+    "Backquote": {
+      "n": "՝",
+      "s": "՜",
+      "ag": "`",
+      "sag": "~"
+    },
+    "Digit1": {
+      "n": "է",
+      "s": "Է",
+      "ag": "1",
+      "sag": "!",
+      "caps": "shift"
+    },
+    "Digit2": {
+      "n": "թ",
+      "s": "Թ",
+      "ag": "2",
+      "sag": "@",
+      "caps": "shift"
+    },
+    "Digit3": {
+      "n": "փ",
+      "s": "Փ",
+      "ag": "3",
+      "sag": "#",
+      "caps": "shift"
+    },
+    "Digit4": {
+      "n": "ձ",
+      "s": "Ձ",
+      "ag": "4",
+      "sag": "$",
+      "caps": "shift"
+    },
+    "Digit5": {
+      "n": "ջ",
+      "s": "Ջ",
+      "ag": "5",
+      "sag": "%",
+      "caps": "shift"
+    },
+    "Digit6": {
+      "n": "ւ",
+      "s": "Ւ",
+      "ag": "6",
+      "sag": "^",
+      "caps": "shift"
+    },
+    "Digit7": {
+      "n": "և",
+      "s": "և",
+      "ag": "7",
+      "sag": "&"
+    },
+    "Digit8": {
+      "n": "ր",
+      "s": "Ր",
+      "ag": "8",
+      "sag": "*",
+      "caps": "shift"
+    },
+    "Digit9": {
+      "n": "չ",
+      "s": "Չ",
+      "ag": "9",
+      "sag": "(",
+      "caps": "shift"
+    },
+    "Digit0": {
+      "n": "ճ",
+      "s": "Ճ",
+      "ag": "0",
+      "sag": ")",
+      "caps": "shift"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "—",
+      "ag": "-",
+      "sag": "_"
+    },
+    "Equal": {
+      "n": "ժ",
+      "s": "Ժ",
+      "ag": "=",
+      "sag": "+",
+      "caps": "shift"
+    },
+    "KeyQ": {
+      "n": "ք",
+      "s": "Ք",
+      "caps": "shift"
+    },
+    "KeyW": {
+      "n": "ո",
+      "s": "Ո",
+      "caps": "shift"
+    },
+    "KeyE": {
+      "n": "ե",
+      "s": "Ե",
+      "caps": "shift"
+    },
+    "KeyR": {
+      "n": "ռ",
+      "s": "Ռ",
+      "caps": "shift"
+    },
+    "KeyT": {
+      "n": "տ",
+      "s": "Տ",
+      "caps": "shift"
+    },
+    "KeyY": {
+      "n": "ը",
+      "s": "Ը",
+      "caps": "shift"
+    },
+    "KeyU": {
+      "n": "ւ",
+      "s": "Ւ",
+      "caps": "shift"
+    },
+    "KeyI": {
+      "n": "ի",
+      "s": "Ի",
+      "caps": "shift"
+    },
+    "KeyO": {
+      "n": "օ",
+      "s": "Օ",
+      "caps": "shift"
+    },
+    "KeyP": {
+      "n": "պ",
+      "s": "Պ",
+      "caps": "shift"
+    },
+    "BracketLeft": {
+      "n": "խ",
+      "s": "Խ",
+      "ag": "[",
+      "sag": "{",
+      "caps": "shift"
+    },
+    "BracketRight": {
+      "n": "ծ",
+      "s": "Ծ",
+      "ag": "]",
+      "sag": "}",
+      "caps": "shift"
+    },
+    "Backslash": {
+      "n": "շ",
+      "s": "Շ",
+      "ag": "\\",
+      "sag": "|",
+      "caps": "shift"
+    },
+    "KeyA": {
+      "n": "ա",
+      "s": "Ա",
+      "caps": "shift"
+    },
+    "KeyS": {
+      "n": "ս",
+      "s": "Ս",
+      "caps": "shift"
+    },
+    "KeyD": {
+      "n": "դ",
+      "s": "Դ",
+      "caps": "shift"
+    },
+    "KeyF": {
+      "n": "ֆ",
+      "s": "Ֆ",
+      "caps": "shift"
+    },
+    "KeyG": {
+      "n": "գ",
+      "s": "Գ",
+      "caps": "shift"
+    },
+    "KeyH": {
+      "n": "հ",
+      "s": "Հ",
+      "caps": "shift"
+    },
+    "KeyJ": {
+      "n": "յ",
+      "s": "Յ",
+      "caps": "shift"
+    },
+    "KeyK": {
+      "n": "կ",
+      "s": "Կ",
+      "caps": "shift"
+    },
+    "KeyL": {
+      "n": "լ",
+      "s": "Լ",
+      "caps": "shift"
+    },
+    "Semicolon": {
+      "n": ";",
+      "s": "։",
+      "ag": ";",
+      "sag": ":"
+    },
+    "Quote": {
+      "n": "՛",
+      "s": "\"",
+      "ag": "'",
+      "sag": "\""
+    },
+    "IntlBackslash": {
+      "n": "»",
+      "s": "«"
+    },
+    "KeyZ": {
+      "n": "զ",
+      "s": "Զ",
+      "caps": "shift"
+    },
+    "KeyX": {
+      "n": "ղ",
+      "s": "Ղ",
+      "caps": "shift"
+    },
+    "KeyC": {
+      "n": "ց",
+      "s": "Ց",
+      "caps": "shift"
+    },
+    "KeyV": {
+      "n": "վ",
+      "s": "Վ",
+      "caps": "shift"
+    },
+    "KeyB": {
+      "n": "բ",
+      "s": "Բ",
+      "caps": "shift"
+    },
+    "KeyN": {
+      "n": "ն",
+      "s": "Ն",
+      "caps": "shift"
+    },
+    "KeyM": {
+      "n": "մ",
+      "s": "Մ",
+      "caps": "shift"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "<",
+      "ag": ",",
+      "sag": "<"
+    },
+    "Period": {
+      "n": "․",
+      "s": ">",
+      "ag": ".",
+      "sag": ">"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "՞",
+      "ag": "/",
+      "sag": "?"
+    }
+  },
+  "longpress": {
+    "Backquote": [
+      "՜"
+    ],
+    "Digit1": [
+      "Է"
+    ],
+    "Digit2": [
+      "Թ"
+    ],
+    "Digit3": [
+      "Փ"
+    ],
+    "Digit4": [
+      "Ձ"
+    ],
+    "Digit5": [
+      "Ջ"
+    ],
+    "Digit6": [
+      "Ւ"
+    ],
+    "Digit8": [
+      "Ր"
+    ],
+    "Digit9": [
+      "Չ"
+    ],
+    "Digit0": [
+      "Ճ"
+    ],
+    "Minus": [
+      "—"
+    ],
+    "Equal": [
+      "Ժ"
+    ],
+    "KeyQ": [
+      "Ք"
+    ],
+    "KeyW": [
+      "Ո"
+    ],
+    "KeyE": [
+      "Ե"
+    ],
+    "KeyR": [
+      "Ռ"
+    ],
+    "KeyT": [
+      "Տ"
+    ],
+    "KeyY": [
+      "Ը"
+    ],
+    "KeyU": [
+      "Ւ"
+    ],
+    "KeyI": [
+      "Ի"
+    ],
+    "KeyO": [
+      "Օ"
+    ],
+    "KeyP": [
+      "Պ"
+    ],
+    "BracketLeft": [
+      "Խ"
+    ],
+    "BracketRight": [
+      "Ծ"
+    ],
+    "Backslash": [
+      "Շ"
+    ],
+    "KeyA": [
+      "Ա"
+    ],
+    "KeyS": [
+      "Ս"
+    ],
+    "KeyD": [
+      "Դ"
+    ],
+    "KeyF": [
+      "Ֆ"
+    ],
+    "KeyG": [
+      "Գ"
+    ],
+    "KeyH": [
+      "Հ"
+    ],
+    "KeyJ": [
+      "Յ"
+    ],
+    "KeyK": [
+      "Կ"
+    ],
+    "KeyL": [
+      "Լ"
+    ],
+    "Semicolon": [
+      "։"
+    ],
+    "IntlBackslash": [
+      "«"
+    ],
+    "KeyZ": [
+      "Զ"
+    ],
+    "KeyX": [
+      "Ղ"
+    ],
+    "KeyC": [
+      "Ց"
+    ],
+    "KeyV": [
+      "Վ"
+    ],
+    "KeyB": [
+      "Բ"
+    ],
+    "KeyN": [
+      "Ն"
+    ],
+    "KeyM": [
+      "Մ"
+    ],
+    "Slash": [
+      "՞"
+    ]
+  }
+}

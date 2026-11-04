@@ -16,6 +16,17 @@ export type FontId =
   | "malayalam"
   | "sinhala"
   | "thaana"
+  | "hebrew"
+  | "armenian"
+  | "georgian"
+  | "thai"
+  | "lao"
+  | "khmer"
+  | "myanmar"
+  | "hangul"
+  | "cjk-sc"
+  | "cjk-tc"
+  | "cjk-jp"
   | "latin";
 
 /**

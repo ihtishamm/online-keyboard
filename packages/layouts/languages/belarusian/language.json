@@ -1,0 +1,24 @@
+{
+  "slug": "belarusian",
+  "code": "be",
+  "order": 420,
+  "lang": "be",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Belarusian",
+    "native": "Беларуская"
+  },
+  "aliases": ["Belorussian"],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["be-standard", "be-roman"],
+  "sample": "Добры дзень! Як у вас справы сёння?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "be"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

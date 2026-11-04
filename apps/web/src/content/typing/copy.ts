@@ -121,6 +121,101 @@ function NON_LATIN(): Record<string, TypingCopy> {
       test: "آزمون تایپ دری",
       tip: `The letters Arabic lacks are ${on("prs-clra", "پچژگ")}. The half-space is on ${key("prs-clra", "\u200C")}.`,
     },
+    el: {
+      tutor: "Εκμάθηση πληκτρολόγησης",
+      test: "Τεστ ταχύτητας πληκτρολόγησης",
+      tip: `The tonos is a dead key: press ${key("el-standard", "΄")}, then the vowel. σ is on ${key("el-standard", "σ")} and final ς on ${key("el-standard", "ς")}.`,
+    },
+    he: {
+      tutor: "לימוד הקלדה",
+      test: "מבחן מהירות הקלדה",
+      tip: `Final letters have keys of their own: ${on("he-standard", "ךםןףץ")}.`,
+    },
+    hy: {
+      tutor: "Տպագրության ուսուցում",
+      test: "Տպագրության արագության թեստ",
+      tip: `On the phonetic layout the number row holds letters: ${on("hy-phonetic", "էթփձջրչճ")}. Digits need AltGr.`,
+    },
+    th: {
+      tutor: "ฝึกพิมพ์สัมผัส",
+      test: "ทดสอบความเร็วการพิมพ์",
+      tip: `Kedmanee keeps letters on the number row too: ${on("th-kedmanee", "ภถคตจขช")}. Type vowels in the order they are written.`,
+    },
+    lo: {
+      tutor: "ຝຶກພິມດີດ",
+      test: "ທົດສອບຄວາມໄວພິມ",
+      tip: `The number row holds letters here: ${on("lo-standard", "ຢຟຖຄຕຈຂຊ")}. Type vowels in the order they are written.`,
+    },
+    km: {
+      tutor: "រៀនវាយអក្សរ",
+      test: "តេស្តល្បឿនវាយអក្សរ",
+      tip: `The coeng is ${key("km-nida", "\u17D2")}: it puts the next consonant below the one before it, as in ស្ត. Type a vowel after its consonant, even when it is drawn before it.`,
+    },
+    my: {
+      tutor: "လက်ကွက်လေ့ကျင့်ခန်း",
+      test: "စာရိုက်အမြန်နှုန်းစမ်းသပ်ခြင်း",
+      tip: `Type the consonant first, then the vowel drawn before it: ${on("my-standard", "\u1031")}. The asat is ${key("my-standard", "\u103A")} and the stacking sign is ${key("my-standard", "\u1039")}.`,
+    },
+    ko: {
+      tutor: "타자 연습",
+      test: "타자 속도 테스트",
+      tip: `Letters join into syllables as you type. Consonants are on the left and vowels on the right, and Shift doubles a consonant: ${on("ko-2set", "ㅃㅉㄸㄲㅆ")}.`,
+    },
+    ka: {
+      tutor: "ბეჭდვის მასწავლებელი",
+      test: "ბეჭდვის სიჩქარის ტესტი",
+      tip: `On the QWERTY layout Shift types other letters, not capitals: ${on("ka-qwerty", "თჭღშჟძჩ")}.`,
+    },
+    ru: {
+      tutor: "Тренажёр слепой печати",
+      test: "Тест скорости печати",
+      tip: `The letters people reach for most slowly: ${on("ru-standard", "ёъэ")}. On the phonetic layout, ${on("ru-phonetic", "ячшщю")}.`,
+    },
+    uk: {
+      tutor: "Тренажер сліпого друку",
+      test: "Тест швидкості друку",
+      tip: `Ukrainian's own letters: ${on("uk-standard", "іїєґ")}, and the apostrophe on ${key("uk-standard", "'")}.`,
+    },
+    be: {
+      tutor: "Трэнажор сляпога друку",
+      test: "Тэст хуткасці друку",
+      tip: `Belarusian's own letters: ${on("be-standard", "ўі")}, and the apostrophe on ${key("be-standard", "'")}.`,
+    },
+    bg: {
+      tutor: "Тренажор за бързо писане",
+      test: "Тест за скорост на писане",
+      tip: `On БДС: ${on("bg-standard", "ъьщ")}. On the phonetic layout: ${on("bg-phonetic", "ъщчя")}.`,
+    },
+    sr: {
+      tutor: "Вежбе куцања",
+      test: "Тест брзине куцања",
+      tip: `Serbian's own letters: ${on("sr-standard", "љњјћђџ")}.`,
+    },
+    mk: {
+      tutor: "Вежби за пишување",
+      test: "Тест за брзина на пишување",
+      tip: `Macedonian's own letters: ${on("mk-standard", "љњѕјѓќџ")}.`,
+    },
+    kk: {
+      tutor: "Жазу жаттықтырғышы",
+      test: "Жазу жылдамдығын тексеру",
+      tip: `Kazakh's own letters are on the number row: ${on("kk-standard", "әіңғүұқөһ")}. Digits need Shift.`,
+    },
+    ky: {
+      tutor: "Терүү машыктыргычы",
+      test: "Терүү ылдамдыгын текшерүү",
+      tip: `Kyrgyz's own letters use AltGr: ${on("ky-standard", "ңөү")}.`,
+    },
+    tg: {
+      tutor: "Машқи чопкунӣ",
+      test: "Санҷиши суръати чопкунӣ",
+      tip: `Tajik's own letters: ${on("tg-standard", "ғӣқӯҳҷ")}.`,
+    },
+    mn: {
+      tutor: "Бичих дасгал",
+      test: "Бичих хурдны шалгалт",
+      tip: `Mongolian's keys are not arranged like Russian's: ${on("mn-standard", "аеоөү")}. Digits need Shift.`,
+    },
     zlm: {
       tutor: "ڤلاجرن مناءيڤ جاوي",
       test: "اوجين مناءيڤ جاوي",
@@ -269,6 +364,11 @@ export const TYPING_COPY: Readonly<Record<string, TypingCopy>> = {
     tutor: "Tečaj tipkanja",
     test: "Test brzine tipkanja",
     tip: "Croatian QWERTZ swaps Y and Z. š and đ are to the right of P, č and ć to the right of L, and ž by the Enter key.",
+  },
+  vi: {
+    tutor: "Luyện gõ phím",
+    test: "Kiểm tra tốc độ gõ",
+    tip: "Marks are keys of their own. On Telex: aa â, aw ă, ee ê, oo ô, ow ơ, uw ư, dd đ, then s f r x j for the tones. On VNI: digits 1 to 9.",
   },
   ...NON_LATIN(),
 };

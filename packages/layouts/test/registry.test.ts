@@ -7,6 +7,8 @@ const DIR = new URL("../languages/", import.meta.url);
 const FONTS = [
   ...["nastaliq", "naskh", "devanagari", "bengali", "gurmukhi", "gujarati", "oriya", "tamil"],
   ...["telugu", "kannada", "malayalam", "sinhala", "thaana", "latin"],
+  ...["hebrew", "armenian", "georgian", "thai", "lao", "khmer", "myanmar"],
+  ...["hangul", "cjk-sc", "cjk-tc", "cjk-jp"],
 ];
 
 describe("language registry (languages/<slug>/)", () => {

@@ -17,6 +17,7 @@ import { LATIN_LOCALES, foldLatin } from "@okb/engine/latin";
 
 // Sound-alike groups for generating errors (deliberately broad: not the checker's tables).
 const SOUND: Readonly<Record<string, readonly string[]>> = {
+  vi: ["dr", "sx", "ckq", "iy", "aăâ", "eê", "oôơ", "uư"],
   ar: ["سصث", "زذظض", "تط", "هحة", "اأإ", "يى", "كق", "دض"],
   fa: ["سصث", "زذضظ", "تط", "هح", "قغ", "اع"],
   ps: ["سصث", "زذضظ", "تط", "هح", "یيې", "ښش", "ړر", "ډد", "ټت"],
@@ -66,6 +67,7 @@ const WEAK: Readonly<Record<string, string>> = {
   sv: "aeiounrlt",
   ca: "aeiouhlnrs",
   hr: "aeiouijnr",
+  vi: "aeiouynhg",
 };
 
 const SEED = 20261031;

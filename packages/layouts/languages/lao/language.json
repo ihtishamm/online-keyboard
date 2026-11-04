@@ -1,0 +1,25 @@
+{
+  "slug": "lao",
+  "code": "lo",
+  "order": 550,
+  "lang": "lo",
+  "script": "Laoo",
+  "dir": "ltr",
+  "name": {
+    "en": "Lao",
+    "native": "ລາວ"
+  },
+  "aliases": [],
+  "region": "southeast-asia",
+  "fonts": ["lao"],
+  "layouts": ["lo-standard"],
+  "sample": "ສະບາຍດີ ມື້ນີ້ອາກາດດີຫຼາຍ",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "lo",
+    "bing": "lo"
+  },
+  "tier": null,
+  "notes": "Lao is written without spaces between words. No Roman typing yet. No voice yet: the locale has not passed /voice-probe."
+}

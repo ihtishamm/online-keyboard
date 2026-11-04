@@ -3,7 +3,8 @@ import { compileScheme, desktopCharacters, parseOutputs, Transliterator } from "
 import { getLayout, LANGUAGES, SCHEME_LIST } from "../src";
 
 describe("transliteration schemes", () => {
-  for (const scheme of SCHEME_LIST) {
+  // Chinese and Japanese convert through readings (engine test/phrase.test.ts), not rules.
+  for (const scheme of SCHEME_LIST.filter((s) => !s.converter)) {
     describe(scheme.id, () => {
       const language = LANGUAGES.find((l) => l.lang === scheme.lang);
 

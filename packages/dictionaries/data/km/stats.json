@@ -1,0 +1,13 @@
+{
+  "source": "kmwiki.xml.bz2",
+  "pages": 14701,
+  "sentences": 323770,
+  "repeatedSentencesSkipped": 54547,
+  "tokens": 6824357,
+  "distinctWords": 65464,
+  "wordsKept": 36195,
+  "nextWordHeads": 9710,
+  "text": "km-train.txt",
+  "textSentences": 1306,
+  "textWeight": 565.39
+}

@@ -1,0 +1,13 @@
+{
+  "source": "mkwiki.xml.bz2",
+  "pages": 35683,
+  "sentences": 849004,
+  "repeatedSentencesSkipped": 218848,
+  "tokens": 12090817,
+  "distinctWords": 395383,
+  "wordsKept": 100000,
+  "nextWordHeads": 9764,
+  "text": "mk-train.txt",
+  "textSentences": 76799,
+  "textWeight": 15
+}

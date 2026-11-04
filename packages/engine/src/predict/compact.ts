@@ -48,6 +48,9 @@ function frontCode(entries: readonly { word: string; band: number }[]): string[]
     let shared = 0;
     while (shared < word.length && shared < prev.length && word[shared] === prev[shared]) shared++;
     shared = Math.min(shared, 9 + 26); // keep the prefix count one character ('0'-'9', ':'...)
+    // Never split a surrogate pair: half a character cannot be written to a UTF-8 file.
+    const unit = word.charCodeAt(shared - 1);
+    if (shared > 0 && unit >= 0xd800 && unit <= 0xdbff) shared--;
     lines.push(
       String.fromCharCode(PREFIX0 + shared) +
         word.slice(shared) +

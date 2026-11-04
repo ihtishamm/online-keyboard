@@ -1,4 +1,11 @@
-import { Transliterator, deadStrokeMap, keystrokeMap, makeDictionary } from "@okb/engine";
+import {
+  NO_MODIFIERS,
+  Transliterator,
+  TypingMachine,
+  deadStrokeMap,
+  keystrokeMap,
+  makeDictionary,
+} from "@okb/engine";
 import { decodeDictionary } from "@okb/engine/compact";
 import { readFileSync } from "node:fs";
 import { LANGUAGES, getLayout, getScheme } from "@okb/layouts";
@@ -158,14 +165,15 @@ describe("lessons", () => {
 });
 
 /** Languages whose Tatoeba set is too small or not in their script: words only. */
-const NO_SENTENCES = new Set(["sd", "ks", "kok", "mai", "dv", "zlm", "brh", "scl", "khw"]);
+const NO_SENTENCES = new Set(["sd", "ks", "kok", "mai", "dv", "zlm", "brh", "scl", "khw", "ky", "tg"]);
 /** Small Tatoeba sets: every usable sentence, under 50. */
-const FEW_SENTENCES = new Set(["ps", "pnb", "gu", "te", "kn", "si", "or", "sa"]);
+const FEW_SENTENCES = new Set(["ps", "pnb", "gu", "te", "kn", "si", "or", "sa", "mn"]);
 
 describe("generated typing pages", () => {
-  it("cover every language but Urdu, which has its own, and Hindko, with no text yet", () => {
+  it("cover every language but Urdu, which has its own, Hindko, with no text yet, and those typed by conversion", () => {
     const slugs = TYPING_LANGUAGES.map((l) => l.slug);
-    expect(slugs).toHaveLength(LANGUAGES.length - 2);
+    // Japanese and both Chinese: what is typed (romaji, pinyin) is not what is shown.
+    expect(slugs).toHaveLength(LANGUAGES.length - 5);
     expect(slugs).not.toContain("urdu");
     expect(slugs).not.toContain("hindko");
     for (const l of TYPING_LANGUAGES) expect(TYPING_COPY[l.code], l.code).toBeDefined();
@@ -258,6 +266,48 @@ describe("script-correct scoring", () => {
     expect(s.unit).toBe("cpm");
     expect(s.netWpm).toBe(scoringFor("Thai").length("สวัสดี"));
     expect(minute(["hello"], "Latn")).toMatchObject({ unit: "wpm", netWpm: 1 });
+  });
+});
+
+describe("composing layouts", () => {
+  /** Press the key the tutor points at until the word is done. */
+  const follow = (layoutId: string, word: string) => {
+    const layout = getLayout(layoutId);
+    const machine = new TypingMachine(layout);
+    const keys = keystrokeMap(layout);
+    let d = createDrill([word, "x"]);
+    for (let i = 0; i < 40 && d.index === 0; i++) {
+      const next = nextKeystroke(d, keys);
+      if (next === "space") return d.typed.normalize("NFC");
+      if (next === null || next === "backspace") return `off track at "${d.typed}"`;
+      const r = machine.press(next.code, { ...NO_MODIFIERS, shift: next.shift }, d.typed);
+      if (r.kind !== "text") return `no text at "${d.typed}"`;
+      for (let n = 0; n < (r.remove ?? 0); n++) d = backspace(d);
+      d = typeText(d, r.text, 0);
+    }
+    return d.typed.normalize("NFC");
+  };
+
+  it.each([
+    ["ko-2set", "한글"],
+    ["ko-2set", "안녕하세요"],
+    ["ko-2set", "과일"],
+    ["ko-2set", "값"],
+    ["ko-2set", "많이"],
+    ["ko-2set", "있었다"],
+    ["vi-telex", "tiếng"],
+    ["vi-telex", "việt"],
+    ["vi-telex", "đường"],
+    ["vi-telex", "người"],
+    ["vi-telex", "ộ"],
+    ["vi-telex", "ặc"],
+    ["vi-telex", "Đẹp"],
+    ["vi-vni", "tiếng"],
+    ["vi-vni", "việt"],
+    ["vi-vni", "đường"],
+    ["vi-vni", "hoà"],
+  ])("%s: the tutor's keys type %s", (id, word) => {
+    expect(follow(id, word)).toBe(word);
   });
 });
 

@@ -30,6 +30,7 @@ const WIKI_NAMES: Readonly<Record<string, string>> = {
   prs: "Persian",
   ckb: "Central Kurdish",
   zlm: "Malay",
+  zh: "Chinese",
 };
 /** Wikipedia's subdomain, where it differs from the language's code. */
 const WIKI_CODES: Readonly<Record<string, string>> = { kok: "gom", prs: "fa", zlm: "ms" };
@@ -51,7 +52,25 @@ export const DAKSHINA: ReadonlySet<string> = new Set([
 export const AKSHARANTAR: ReadonlySet<string> = new Set(["ne", "or", "as", "sa", "kok", "mai"]);
 
 /** Languages whose spellings come from English Wiktionary (CC BY-SA 4.0), through kaikki.org. */
-export const WIKTIONARY: ReadonlySet<string> = new Set(["dv", "ckb", "ug", "zlm"]);
+export const WIKTIONARY: ReadonlySet<string> = new Set([
+  "dv",
+  "ckb",
+  "ug",
+  "zlm",
+  "el",
+  "he",
+  "hy",
+  "ka",
+  "ru",
+  "uk",
+  "be",
+  "bg",
+  "mk",
+  "kk",
+  "ky",
+  "tg",
+  "mn",
+]);
 
 /** Languages with no word list whose typing practice is English Wiktionary's entries (CC BY-SA 4.0). */
 export const WIKTIONARY_WORDS: ReadonlySet<string> = new Set(["brh", "scl", "khw"]);
@@ -67,5 +86,8 @@ export function creditsFor(language: Language) {
     wiktionary: WIKTIONARY.has(code),
     wiktionaryWords: WIKTIONARY_WORDS.has(code),
     tatoeba: HAS_TATOEBA.has(code),
+    cedict: code === "zh" || code === "zht",
+    opencc: code === "zh" || code === "zht",
+    mozc: code === "ja",
   };
 }

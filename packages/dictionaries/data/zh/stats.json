@@ -1,0 +1,13 @@
+{
+  "source": "zhwiki.xml.bz2",
+  "pages": 8058,
+  "sentences": 856555,
+  "repeatedSentencesSkipped": 61805,
+  "tokens": 15321854,
+  "distinctWords": 72815,
+  "wordsKept": 55712,
+  "nextWordHeads": 9922,
+  "text": "zh-train.txt",
+  "textSentences": 88207,
+  "textWeight": 12.76
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "chinese-traditional",
+  "code": "zht",
+  "order": 620,
+  "lang": "zh-Hant",
+  "script": "Hant",
+  "dir": "ltr",
+  "name": {
+    "en": "Chinese (Traditional)",
+    "native": "繁體中文"
+  },
+  "aliases": ["Taiwan", "Hong Kong", "Zhuyin", "Bopomofo"],
+  "region": "east-asia",
+  "fonts": ["cjk-tc"],
+  "layouts": ["zht-pinyin", "zht-zhuyin"],
+  "sample": "你好！今天天氣很好。",
+  "voice": [],
+  "wordList": false,
+  "translate": {
+    "google": "zh-TW",
+    "bing": "zh-Hant"
+  },
+  "tier": null,
+  "notes": "Conversion works word by word without statistics between words, so the top choice is sometimes wrong: pick another from the bar. No voice yet: the locale has not passed /voice-probe."
+}

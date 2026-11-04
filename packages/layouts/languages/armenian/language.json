@@ -1,0 +1,25 @@
+{
+  "slug": "armenian",
+  "code": "hy",
+  "order": 520,
+  "lang": "hy",
+  "script": "Armn",
+  "dir": "ltr",
+  "name": {
+    "en": "Armenian",
+    "native": "Հայերեն"
+  },
+  "aliases": ["Eastern Armenian"],
+  "region": "central-asia",
+  "fonts": ["armenian"],
+  "layouts": ["hy-phonetic", "hy-typewriter", "hy-roman"],
+  "sample": "Բարև ձեզ։ Ինչպե՞ս եք այսօր։",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "hy",
+    "bing": "hy"
+  },
+  "tier": null,
+  "notes": "Eastern Armenian spelling, from Armenian Wikipedia. No voice yet: the locale has not passed /voice-probe."
+}

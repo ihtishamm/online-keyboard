@@ -10,6 +10,7 @@ import { brotliDecompressSync, inflateSync } from "node:zlib";
 import { desktopCharacters, phoneCharacters, phoneLayout, type TranslitScheme } from "@okb/engine";
 import { LANGUAGES, getLayout, getScheme, type FontId } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
+import { SYSTEM_FONTS } from "./components/font-names";
 import { FONT_PACKAGES } from "./styles/script-fonts";
 
 /** The font files behind each family in the editor font stacks (global.css). */
@@ -182,6 +183,7 @@ describe("no tofu", () => {
   for (const language of LANGUAGES) {
     const chars = new Set<string>([...language.sample]);
     for (const layout of language.layouts.map(getLayout)) {
+      if (layout.translit && getScheme(layout.translit).converter) continue;
       if (layout.translit)
         for (const c of schemeCharacters(getScheme(layout.translit))) chars.add(c);
       else {
@@ -189,7 +191,10 @@ describe("no tofu", () => {
         for (const c of phoneCharacters(layout, phoneLayout(layout))) chars.add(c);
       }
     }
-    for (const font of language.fonts) {
+    // Korean, Chinese and Japanese use the device's fonts (SYSTEM_FONTS).
+    for (const font of language.fonts.filter(
+      (f) => !(SYSTEM_FONTS as readonly string[]).includes(f),
+    )) {
       it(`${language.slug}: ${font} has every character`, () => {
         const have = stackCoverage(font);
         const missing = [...chars]

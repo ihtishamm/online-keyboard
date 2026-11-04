@@ -1,0 +1,13 @@
+{
+  "source": "thwiki.xml.bz2",
+  "pages": 18548,
+  "sentences": 520209,
+  "repeatedSentencesSkipped": 106315,
+  "tokens": 15972713,
+  "distinctWords": 69627,
+  "wordsKept": 35245,
+  "nextWordHeads": 9818,
+  "text": "th-train.txt",
+  "textSentences": 5763,
+  "textWeight": 227.5
+}

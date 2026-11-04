@@ -1,0 +1,26 @@
+{
+  "slug": "chinese-simplified",
+  "code": "zh",
+  "order": 610,
+  "lang": "zh-Hans",
+  "script": "Hans",
+  "dir": "ltr",
+  "name": {
+    "en": "Chinese (Simplified)",
+    "native": "简体中文"
+  },
+  "aliases": ["Mandarin", "Pinyin"],
+  "region": "east-asia",
+  "fonts": ["cjk-sc"],
+  "layouts": ["zh-pinyin"],
+  "sample": "你好！今天天气很好。",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "zh-CN",
+    "bing": "zh-Hans",
+    "deepl": "zh"
+  },
+  "tier": null,
+  "notes": "Conversion works word by word without statistics between words, so the top choice is sometimes wrong: pick another from the bar. No voice yet: the locale has not passed /voice-probe."
+}

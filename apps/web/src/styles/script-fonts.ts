@@ -1,4 +1,5 @@
 import type { FontId, Language } from "@okb/layouts";
+import { SYSTEM_FONTS, type SystemFont } from "../components/font-names";
 
 /**
  * @font-face rules for the script fonts a page uses (plan item 7.2; per page since Phase 9).
@@ -11,7 +12,7 @@ import type { FontId, Language } from "@okb/layouts";
  */
 
 /** The fontsource package behind each editor font (Inter, the UI font, is in Base.astro). */
-export const FONT_PACKAGES: Readonly<Record<Exclude<FontId, "latin">, string>> = {
+export const FONT_PACKAGES: Readonly<Record<Exclude<FontId, "latin" | SystemFont>, string>> = {
   nastaliq: "noto-nastaliq-urdu",
   naskh: "noto-naskh-arabic",
   devanagari: "noto-sans-devanagari",
@@ -25,6 +26,13 @@ export const FONT_PACKAGES: Readonly<Record<Exclude<FontId, "latin">, string>> =
   malayalam: "noto-sans-malayalam",
   sinhala: "noto-sans-sinhala",
   thaana: "noto-sans-thaana",
+  hebrew: "noto-sans-hebrew",
+  armenian: "noto-sans-armenian",
+  georgian: "noto-sans-georgian",
+  thai: "noto-sans-thai",
+  lao: "noto-sans-lao",
+  khmer: "noto-sans-khmer",
+  myanmar: "noto-sans-myanmar",
 };
 
 const CSS = import.meta.glob<string>("../../node_modules/@fontsource/*/400.css", {
@@ -54,10 +62,13 @@ function faces(pkg: string): string {
   });
 }
 
-/** The @font-face rules for these fonts, minified a little; Latin needs none. */
+/** The @font-face rules for these fonts, minified a little; Latin and system fonts need none. */
 export function fontFaces(fonts: readonly FontId[]): string {
   return [...new Set(fonts)]
-    .filter((f): f is Exclude<FontId, "latin"> => f !== "latin")
+    .filter(
+      (f): f is Exclude<FontId, "latin" | SystemFont> =>
+        f !== "latin" && !(SYSTEM_FONTS as readonly string[]).includes(f),
+    )
     .map((f) => faces(FONT_PACKAGES[f]))
     .join("")
     .replace(/\/\*[^*]*\*\//g, "")

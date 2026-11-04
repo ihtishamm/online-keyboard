@@ -547,6 +547,240 @@ export const ROMAN: Readonly<Record<string, RomanCopy>> = {
     ],
   },
 
+  "el-roman": {
+    page: {
+      title: "English to Greek Typing: Type Greek in English Letters Online",
+      heading: "English to Greek Typing",
+      description: "Type Greek in Greeklish and get Greek as you go: efharisto becomes ευχαριστώ. Free, private and offline, with word suggestions.",
+      summary: "Write Greek in Greeklish. Each word turns into Greek when you press Space, with the right tonos and the right i or o from the word list, and the bar under the editor offers other spellings.",
+      bestFor: "Anyone who reads Greek but has no Greek keyboard, or types faster on QWERTY.",
+    },
+    example: ["efharisto", "ευχαριστώ"],
+    guide: [
+      { roman: "th, ch, ps", script: "θ  χ  ψ", examples: [["thalassa", "θάλασσα"]] },
+      { roman: "i", script: "ι  η  υ  ει  οι", examples: [["kali", "καλή"]] },
+      { roman: "o", script: "ο  ω", examples: [["kalos", "καλός"]] },
+      { roman: "s", script: "σ  ς", examples: [["kalos", "καλός"]] },
+    ],
+  },
+
+  "he-roman": {
+    page: {
+      title: "English to Hebrew Typing: Type Hebrew in English Letters Online",
+      heading: "English to Hebrew Typing",
+      description: "Type Hebrew in English letters and get Hebrew script as you go: shalom becomes שלום. Free, private and offline, with word suggestions.",
+      summary: "Write Hebrew in English letters. Each word turns into Hebrew when you press Space: the word list settles which vowels are written, and final letters come by themselves. The bar under the editor offers other spellings.",
+      bestFor: "Anyone who reads Hebrew but has no Hebrew keyboard, or types faster on QWERTY.",
+    },
+    example: ["shalom", "שלום"],
+    guide: [
+      { roman: "sh", script: "ש", examples: [["shalom", "שלום"]] },
+      { roman: "kh, ch", script: "ח  כ", examples: [["lechem", "לחם"]] },
+      { roman: "t", script: "ת  ט", examples: [["tov", "טוב"]] },
+      { roman: "m, n at the end", script: "ם  ן", examples: [["shalom", "שלום"]] },
+    ],
+  },
+
+  "hy-roman": {
+    page: {
+      title: "English to Armenian Typing: Type Armenian in English Letters Online",
+      heading: "English to Armenian Typing",
+      description: "Type Armenian in English letters and get Armenian as you go: hayeren becomes հայերեն. Free, private and offline, with word suggestions.",
+      summary: "Write Armenian in English letters. Each word turns into Armenian when you press Space, and the word list tells apart letters such as տ and թ. The bar under the editor offers other spellings.",
+      bestFor: "Anyone who reads Armenian but has no Armenian keyboard, or types faster on QWERTY.",
+    },
+    example: ["hayeren", "հայերեն"],
+    guide: [
+      { roman: "u", script: "ու", examples: [["dur", "դուր"]] },
+      { roman: "sh, ch, zh", script: "շ  չ  ժ", examples: [["shat", "շատ"]] },
+      { roman: "kh, gh", script: "խ  ղ", examples: [["khosq", "խոսք"]] },
+      { roman: "ev", script: "և", examples: [["barev", "բարև"]] },
+    ],
+  },
+
+  "ka-roman": {
+    page: {
+      title: "English to Georgian Typing: Type Georgian in English Letters Online",
+      heading: "English to Georgian Typing",
+      description: "Type Georgian in English letters and get Georgian as you go: gamarjoba becomes გამარჯობა. Free, private and offline, with word suggestions.",
+      summary: "Write Georgian in English letters. Each word turns into Georgian when you press Space, and the word list tells apart letters such as თ and ტ. Capitals ask for the Shift letters of the QWERTY layout.",
+      bestFor: "Anyone who reads Georgian but has no Georgian keyboard, or types faster on QWERTY.",
+    },
+    example: ["gamarjoba", "გამარჯობა"],
+    guide: [
+      { roman: "sh, ch, zh", script: "შ  ჩ  ჟ", examples: [["kargi", "კარგი"]] },
+      { roman: "kh, gh", script: "ხ  ღ", examples: [["dghe", "დღე"]] },
+      { roman: "ts, dz", script: "ც  ძ", examples: [["dzma", "ძმა"]] },
+      { roman: "q", script: "ქ  ყ", examples: [["qali", "ქალი"]] },
+    ],
+  },
+
+  "ru-roman": {
+    page: {
+      title: "English to Russian Typing: Type Russian in English Letters Online",
+      heading: "English to Russian Typing",
+      description: "Type Russian the way you text it: privet becomes привет. Free, private and offline, with word suggestions.",
+      summary: "Write Russian in English letters. Each word turns into Cyrillic when you press Space, and the bar under the editor offers other spellings. Soft signs can be left out.",
+      bestFor: "Anyone who reads Russian but has no Russian keyboard, or types faster on QWERTY.",
+    },
+    example: ["privet", "привет"],
+    guide: [
+      { roman: "zh, ch, sh", script: "ж  ч  ш", examples: [["zhizn", "жизнь"], ["chto", "что"], ["khorosho", "хорошо"]] },
+      { roman: "ya, yu, yo", script: "я  ю  ё", examples: [["ya", "я"]] },
+      { roman: "shch", script: "щ", examples: [["eshche", "ещё"]] },
+      { roman: "kh or h", script: "х", examples: [["horosho", "хорошо"]] },
+    ],
+  },
+
+  "uk-roman": {
+    page: {
+      title: "English to Ukrainian Typing: Type Ukrainian in English Letters Online",
+      heading: "English to Ukrainian Typing",
+      description: "Type Ukrainian in English letters: pryvit becomes привіт. Free, private and offline, with word suggestions.",
+      summary: "Write Ukrainian in English letters. y is и, i is і, h is г and g is ґ. Each word turns into Cyrillic when you press Space, and the bar under the editor offers other spellings.",
+      bestFor: "Anyone who reads Ukrainian but has no Ukrainian keyboard, or types faster on QWERTY.",
+    },
+    example: ["pryvit", "привіт"],
+    guide: [
+      { roman: "y", script: "и", examples: [["ty", "ти"]] },
+      { roman: "i", script: "і", examples: [["pryvit", "привіт"]] },
+      { roman: "h", script: "г", examples: [["holova", "голова"]] },
+      { roman: "ya, yu, ye", script: "я  ю  є", examples: [["ya", "я"], ["ye", "є"]] },
+      { roman: "zh, ch, sh", script: "ж  ч  ш", examples: [["shcho", "що"]] },
+    ],
+  },
+
+  "be-roman": {
+    page: {
+      title: "English to Belarusian Typing: Type Belarusian in English Letters Online",
+      heading: "English to Belarusian Typing",
+      description: "Type Belarusian in English letters: dzyakuy becomes дзякуй. Free, private and offline, with word suggestions.",
+      summary: "Write Belarusian in English letters. h is г, w is ў, i is і and y is ы. Each word turns into Cyrillic when you press Space, and the bar under the editor offers other spellings.",
+      bestFor: "Anyone who reads Belarusian but has no Belarusian keyboard, or types faster on QWERTY.",
+    },
+    example: ["dzyakuy", "дзякуй"],
+    guide: [
+      { roman: "h", script: "г", examples: [["horad", "горад"]] },
+      { roman: "w", script: "ў", examples: [["tawtalohiya", "таўталогія"]] },
+      { roman: "dz, zh, ch", script: "дз  ж  ч", examples: [["dzyakuy", "дзякуй"]] },
+    ],
+  },
+
+  "bg-roman": {
+    page: {
+      title: "English to Bulgarian Typing: Type Bulgarian in English Letters Online",
+      heading: "English to Bulgarian Typing",
+      description: "Type Bulgarian in English letters: blagodarya becomes благодаря. Free, private and offline, with word suggestions.",
+      summary: "Write Bulgarian in English letters. sht is щ, and a or u can be ъ. Each word turns into Cyrillic when you press Space, and the bar under the editor offers other spellings.",
+      bestFor: "Anyone who reads Bulgarian but has no Bulgarian keyboard, or types faster on QWERTY.",
+    },
+    example: ["blagodarya", "благодаря"],
+    guide: [
+      { roman: "sht", script: "щ", examples: [["shte", "ще"]] },
+      { roman: "a, u", script: "ъ", examples: [["dobar", "добър"]] },
+      { roman: "ya, yu", script: "я  ю", examples: [["blagodarya", "благодаря"]] },
+      { roman: "zh, ch, sh", script: "ж  ч  ш", examples: [["chovek", "човек"]] },
+    ],
+  },
+
+  "sr-roman": {
+    page: {
+      title: "English to Serbian Typing: Type Serbian in English Letters Online",
+      heading: "English to Serbian Typing",
+      description: "Type Serbian in Latin letters and get Cyrillic as you go: hvala becomes хвала. Free, private and offline, with word suggestions.",
+      summary: "Write Serbian in Latin letters (Gajica), with or without the marks. Each word turns into Cyrillic when you press Space, and the bar under the editor offers other spellings.",
+      bestFor: "Anyone who reads Serbian but has no Serbian keyboard, or types faster on QWERTY.",
+    },
+    example: ["hvala", "хвала"],
+    guide: [
+      { roman: "lj, nj", script: "љ  њ", examples: [["ljubav", "љубав"], ["njega", "њега"]] },
+      { roman: "dj", script: "ђ", examples: [["djak", "ђак"]] },
+      { roman: "c", script: "ц  ч  ћ", examples: [["kuca", "кућа"]] },
+      { roman: "s, z", script: "ш  ж", examples: [["zena", "жена"]] },
+    ],
+  },
+
+  "mk-roman": {
+    page: {
+      title: "English to Macedonian Typing: Type Macedonian in English Letters Online",
+      heading: "English to Macedonian Typing",
+      description: "Type Macedonian in English letters: zdravo becomes здраво. Free, private and offline, with word suggestions.",
+      summary: "Write Macedonian in English letters. gj is ѓ, kj is ќ, lj is љ, nj is њ and dz is ѕ. Each word turns into Cyrillic when you press Space, and the bar under the editor offers other spellings.",
+      bestFor: "Anyone who reads Macedonian but has no Macedonian keyboard, or types faster on QWERTY.",
+    },
+    example: ["zdravo", "здраво"],
+    guide: [
+      { roman: "lj, nj", script: "љ  њ", examples: [["ljubov", "љубов"]] },
+      { roman: "kj", script: "ќ", examples: [["kjerka", "ќерка"]] },
+      { roman: "dz", script: "ѕ", examples: [["dzvezda", "ѕвезда"]] },
+      { roman: "zh, ch, sh", script: "ж  ч  ш", examples: [["chovek", "човек"]] },
+    ],
+  },
+
+  "kk-roman": {
+    page: {
+      title: "English to Kazakh Typing: Type Kazakh in English Letters Online",
+      heading: "English to Kazakh Typing",
+      description: "Type Kazakh in English letters and get Cyrillic as you go: rakhmet becomes рахмет. Free, private and offline, with word suggestions.",
+      summary: "Write Kazakh in English letters. q is қ, gh is ғ and ng is ң; a, o, u and i can be ә, ө, ұ, ү and і, and the word list decides. Each word turns into Cyrillic when you press Space.",
+      bestFor: "Anyone who reads Kazakh but has no Kazakh keyboard, or types faster on QWERTY.",
+    },
+    example: ["rakhmet", "рахмет"],
+    guide: [
+      { roman: "q", script: "қ", examples: [["qazaq", "қазақ"]] },
+      { roman: "gh", script: "ғ", examples: [["bagha", "баға"]] },
+      { roman: "ng", script: "ң", examples: [["zhanga", "жаңа"]] },
+    ],
+  },
+
+  "ky-roman": {
+    page: {
+      title: "English to Kyrgyz Typing: Type Kyrgyz in English Letters Online",
+      heading: "English to Kyrgyz Typing",
+      description: "Type Kyrgyz in English letters and get Cyrillic as you go: rakhmat becomes рахмат. Free, private and offline, with word suggestions.",
+      summary: "Write Kyrgyz in English letters. ng is ң and j is ж; o and u can be ө and ү, and the word list decides. Each word turns into Cyrillic when you press Space.",
+      bestFor: "Anyone who reads Kyrgyz but has no Kyrgyz keyboard, or types faster on QWERTY.",
+    },
+    example: ["rakhmat", "рахмат"],
+    guide: [
+      { roman: "j", script: "ж", examples: [["jana", "жана"]] },
+      { roman: "ng", script: "ң", examples: [["jangy", "жаңы"]] },
+      { roman: "o, u", script: "ө  ү", examples: [["kyrgyz", "кыргыз"]] },
+    ],
+  },
+
+  "tg-roman": {
+    page: {
+      title: "English to Tajik Typing: Type Tajik in English Letters Online",
+      heading: "English to Tajik Typing",
+      description: "Type Tajik in English letters and get Cyrillic as you go: kitob becomes китоб. Free, private and offline, with word suggestions.",
+      summary: "Write Tajik in English letters. j is ҷ, q is қ, gh is ғ and h is ҳ; i and u can be ӣ and ӯ, and the word list decides. Each word turns into Cyrillic when you press Space.",
+      bestFor: "Anyone who reads Tajik but has no Tajik keyboard, or types faster on QWERTY.",
+    },
+    example: ["kitob", "китоб"],
+    guide: [
+      { roman: "j", script: "ҷ", examples: [["tojik", "тоҷик"]] },
+      { roman: "q", script: "қ", examples: [["qalam", "қалам"]] },
+      { roman: "h", script: "ҳ", examples: [["hama", "ҳама"]] },
+    ],
+  },
+
+  "mn-roman": {
+    page: {
+      title: "English to Mongolian Typing: Type Mongolian in English Letters Online",
+      heading: "English to Mongolian Typing",
+      description: "Type Mongolian in English letters and get Cyrillic as you go: sain becomes сайн. Free, private and offline, with word suggestions.",
+      summary: "Write Mongolian in English letters. ts is ц and j is ж; o and u can be ө and ү, and the word list decides. Each word turns into Cyrillic when you press Space.",
+      bestFor: "Anyone who reads Mongolian but has no Mongolian keyboard, or types faster on QWERTY.",
+    },
+    example: ["sain", "сайн"],
+    guide: [
+      { roman: "ts, ch", script: "ц  ч", examples: [["tsag", "цаг"]] },
+      { roman: "j", script: "ж", examples: [["jil", "жил"]] },
+      { roman: "o, u", script: "ө  ү", examples: [["mongol", "монгол"]] },
+    ],
+  },
+
   "prs-roman": {
     page: {
       title: "English to Dari Typing: Type Dari in English Letters Online",

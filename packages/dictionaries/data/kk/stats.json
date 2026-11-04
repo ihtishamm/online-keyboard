@@ -1,0 +1,13 @@
+{
+  "source": "kkwiki.xml.bz2",
+  "pages": 105009,
+  "sentences": 1127751,
+  "repeatedSentencesSkipped": 423725,
+  "tokens": 11975234,
+  "distinctWords": 641532,
+  "wordsKept": 100000,
+  "nextWordHeads": 8417,
+  "text": "kk-train.txt",
+  "textSentences": 3405,
+  "textWeight": 276.67
+}

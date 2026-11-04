@@ -7,7 +7,7 @@ describe("printable charts", () => {
 
   it("cover every layout, with unique ids", () => {
     // 76 keyboard layouts (41, and 35 Latin) and 30 Roman schemes.
-    expect(sheets.length).toBe(106);
+    expect(sheets.length).toBe(152);
     expect(new Set(sheets.map((s) => s.id)).size).toBe(sheets.length);
     expect(sheets.find((s) => s.id === "urdu-roman")?.kind).toBe("roman");
   });

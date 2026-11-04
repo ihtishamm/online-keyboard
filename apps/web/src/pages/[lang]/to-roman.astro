@@ -1,6 +1,6 @@
 ---
 import { pageFonts } from "../../styles/script-fonts";
-import { LANGUAGES, getLayout, languageBundle, type Language } from "@okb/layouts";
+import { LANGUAGES, getLayout, languageBundle, type Language, isRomanLayout } from "@okb/layouts";
 import { FONT_CLASS } from "../../components/fonts";
 import RomanizeTool from "../../components/tools/RomanizeTool";
 import Base from "../../layouts/Base.astro";
@@ -9,7 +9,7 @@ import { SITE } from "../../config/site";
 
 // Script → English letters for every language with a Roman scheme (plan item 6.5).
 export function getStaticPaths() {
-  return LANGUAGES.filter((l) => l.layouts.some((id) => getLayout(id).translit)).map(
+  return LANGUAGES.filter((l) => l.layouts.some((id) => isRomanLayout(getLayout(id)))).map(
     (language) => ({ params: { lang: language.slug }, props: { language } }),
   );
 }
@@ -44,6 +44,20 @@ const HEADINGS: Record<string, string> = {
   uyghur: "Uyghur to English Letters Converter",
   dari: "Dari to English Letters Converter",
   jawi: "Jawi to Rumi Converter",
+  greek: "Greek to Greeklish Converter",
+  hebrew: "Hebrew to English Letters Converter",
+  armenian: "Armenian to English Letters Converter",
+  georgian: "Georgian to English Letters Converter",
+  russian: "Russian to English Letters Converter",
+  ukrainian: "Ukrainian to English Letters Converter",
+  belarusian: "Belarusian to English Letters Converter",
+  bulgarian: "Bulgarian to English Letters Converter",
+  serbian: "Serbian to English Letters Converter",
+  macedonian: "Macedonian to English Letters Converter",
+  kazakh: "Kazakh to English Letters Converter",
+  kyrgyz: "Kyrgyz to English Letters Converter",
+  tajik: "Tajik to English Letters Converter",
+  mongolian: "Mongolian to English Letters Converter",
   arabic: "Arabic to English Letters (Arabizi) Converter",
   farsi: "Persian to Finglish Converter",
 };
@@ -52,7 +66,7 @@ const title = `${heading}: ${name} Script in English Letters | ${SITE.name}`;
 const description = `Turn ${name} script into English letters, in the chat spelling people text with or in scholarly romanisation. Free, and your text never leaves your device.`;
 
 const bundle = languageBundle(language.slug);
-const romanId = language.layouts.find((id) => getLayout(id).translit)!;
+const romanId = language.layouts.find((id) => isRomanLayout(getLayout(id)))!;
 const scheme = bundle.schemes[getLayout(romanId).translit!]!;
 const romanPage = romanId === language.layouts[0] ? `/${language.slug}` : `/${language.slug}/roman`;
 const font = FONT_CLASS[language.fonts[0]!];

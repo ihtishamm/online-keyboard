@@ -1133,6 +1133,374 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
 - **Skipped:** nothing
 - **Our changes:** none
 
+## el-standard
+
+- **Output:** `languages/greek/standard.json`
+- **Source:** `vendor/cldr/el-t-k0-windows.xml`. Windows "Greek", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 18), 20 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## he-standard
+
+- **Output:** `languages/hebrew/standard.json`
+- **Source:** `vendor/cldr/he-t-k0-windows-extended.xml`. Windows "Hebrew (Standard)" (SI 1452), with niqqud on AltGr, from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 35, sag 9)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## he-phonetic
+
+- **Output:** `languages/hebrew/phonetic.json`
+- **Source:** `vendor/xkb/il`. The phonetic layout of xkeyboard-config (X11/MIT-style licence).
+- **Licence:** X11/MIT-style (vendor/xkb/LICENSE)
+- **Coverage:** 47 keys (n 47, s 47, ag 3)
+- **Skipped:** 
+  - include "level3(ralt_switch)" not read
+  - key <AE03>: keysym EuroSign skipped
+  - key <AE04>: keysym NewSheqelSign skipped
+  - key <AE05>: keysym degree skipped
+  - key <AE08>: keysym multiply skipped
+  - key <AE12>: keysym endash skipped
+  - key <AC09>: keysym rightdoublequotemark skipped
+  - key <AC10>: keysym doublelowquotemark skipped
+  - key <AB05>: keysym none skipped
+  - key <AB08>: keysym rightsinglequotemark skipped
+  - key <AB09>: keysym singlelowquotemark skipped
+  - key <AB10>: keysym division skipped
+- **Our changes:** none
+
+## hy-phonetic
+
+- **Output:** `languages/armenian/phonetic.json`
+- **Source:** `vendor/cldr/hy-t-k0-windows-phonetic.xml`. Windows "Armenian Phonetic", from Unicode CLDR 43 keyboard data (Unicode License v3). Phone rows are ours.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 21, sag 21)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## hy-typewriter
+
+- **Output:** `languages/armenian/typewriter.json`
+- **Source:** `vendor/cldr/hy-t-k0-windows.xml`. Windows "Armenian Typewriter", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 47 keys (n 47, s 46, ag 21, sag 21)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## ka-qwerty
+
+- **Output:** `languages/georgian/qwerty.json`
+- **Source:** `vendor/cldr/ka-t-k0-windows-qwerty.xml`. Windows "Georgian (QWERTY)", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 30, ag 22)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## ka-mes
+
+- **Output:** `languages/georgian/mes.json`
+- **Source:** `vendor/cldr/ka-t-k0-windows.xml`. Windows "Georgian (MES)", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 25)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## th-kedmanee
+
+- **Output:** `languages/thai/kedmanee.json`
+- **Source:** `vendor/cldr/th-t-k0-windows.xml`. Windows "Thai Kedmanee", from Unicode CLDR 43 keyboard data (Unicode License v3). Phone rows are ours.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## th-pattachote
+
+- **Output:** `languages/thai/pattachote.json`
+- **Source:** `vendor/cldr/th-t-k0-windows-patta.xml`. Windows "Thai Pattachote", from Unicode CLDR 43 keyboard data (Unicode License v3). We drop one private-use character no font draws.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 46, s 48)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Backslash.n: `` → none
+  - IntlBackslash.n: `` → none
+
+## lo-standard
+
+- **Output:** `languages/lao/standard.json`
+- **Source:** `vendor/cldr/lo-t-k0-windows.xml`. Windows "Lao", from Unicode CLDR 43 keyboard data (Unicode License v3). Phone rows are ours.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 47 keys (n 47, s 47, ag 10)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## km-nida
+
+- **Output:** `languages/khmer/nida.json`
+- **Source:** `vendor/xkb/kh`. NiDA Khmer Unicode standard, from xkeyboard-config "kh" (X11/MIT-style licence). The space bar types a plain space instead of U+200B, and five vowel keys type real letters instead of upstream's unassigned code points.
+- **Licence:** X11/MIT-style (vendor/xkb/LICENSE)
+- **Coverage:** 47 keys (n 46, s 46, ag 30, sag 42)
+- **Skipped:** 
+  - include "level3(ralt_switch)" not read
+  - key <TLDE>: keysym guillemotleft skipped
+  - key <TLDE>: keysym guillemotright skipped
+  - key <TLDE>: keysym none skipped
+  - key <AE05>: keysym EuroSign skipped
+  - key <AE11>: keysym none skipped
+  - key <AE12>: keysym none skipped
+  - key <AD06>: keysym none skipped
+  - key <AD07>: keysym none skipped
+  - key <AC01>: keysym none skipped
+  - key <AC02>: keysym none skipped
+  - key <AC03>: keysym none skipped
+  - key <AC04>: keysym none skipped
+  - key <AC05>: keysym none skipped
+  - key <AC06>: keysym none skipped
+  - key <AC07>: keysym none skipped
+  - key <AC09>: keysym none skipped
+  - key <BKSL>: keysym none skipped
+  - key <AB01>: keysym none skipped
+  - key <AB02>: keysym none skipped
+  - key <AB03>: keysym none skipped
+  - key <AB04>: keysym none skipped
+  - key <AB06>: keysym none skipped
+  - key <AB07>: keysym none skipped
+  - key <AB10>: keysym none skipped
+  - key <SPCE> skipped
+- **Our changes:** 
+  - KeyA.s: `៿` → `U+17B6U+17C6`
+  - Semicolon.s: `៾` → `U+17C4U+17C7`
+  - KeyV.s: `៽` → `U+17C1U+17C7`
+  - Comma.n: `៼` → `U+17BBU+17C6`
+  - Comma.s: `៻` → `U+17BBU+17C7`
+
+## my-standard
+
+- **Output:** `languages/burmese/standard.json`
+- **Source:** `vendor/cldr/my-t-k0-windows.xml`. Windows "Myanmar", from Unicode CLDR 43 keyboard data (Unicode License v3): Unicode, not Zawgyi. We drop its AltGr layer, which only repeats QWERTY.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Backquote.ag: ``` → none
+  - Backquote.sag: `~` → none
+  - Digit1.ag: `1` → none
+  - Digit1.sag: `!` → none
+  - Digit2.ag: `2` → none
+  - Digit2.sag: `@` → none
+  - Digit3.ag: `3` → none
+  - Digit3.sag: `#` → none
+  - Digit4.ag: `4` → none
+  - Digit4.sag: `$` → none
+  - Digit5.ag: `5` → none
+  - Digit5.sag: `%` → none
+  - Digit6.ag: `6` → none
+  - Digit6.sag: `^` → none
+  - Digit7.ag: `7` → none
+  - Digit7.sag: `&` → none
+  - Digit8.ag: `8` → none
+  - Digit8.sag: `*` → none
+  - Digit9.ag: `9` → none
+  - Digit9.sag: `(` → none
+  - Digit0.ag: `0` → none
+  - Digit0.sag: `)` → none
+  - Minus.ag: `-` → none
+  - Minus.sag: `_` → none
+  - Equal.ag: `=` → none
+  - Equal.sag: `+` → none
+  - KeyQ.ag: `q` → none
+  - KeyQ.sag: `Q` → none
+  - KeyW.ag: `w` → none
+  - KeyW.sag: `W` → none
+  - KeyE.ag: `e` → none
+  - KeyE.sag: `E` → none
+  - KeyR.ag: `r` → none
+  - KeyR.sag: `R` → none
+  - KeyT.ag: `t` → none
+  - KeyT.sag: `T` → none
+  - KeyY.ag: `y` → none
+  - KeyY.sag: `Y` → none
+  - KeyU.ag: `u` → none
+  - KeyU.sag: `U` → none
+  - KeyI.ag: `i` → none
+  - KeyI.sag: `I` → none
+  - KeyO.ag: `o` → none
+  - KeyO.sag: `O` → none
+  - KeyP.ag: `p` → none
+  - KeyP.sag: `P` → none
+  - BracketLeft.ag: `[` → none
+  - BracketLeft.sag: `{` → none
+  - BracketRight.ag: `]` → none
+  - BracketRight.sag: `}` → none
+  - KeyA.ag: `a` → none
+  - KeyA.sag: `A` → none
+  - KeyS.ag: `s` → none
+  - KeyS.sag: `S` → none
+  - KeyD.ag: `d` → none
+  - KeyD.sag: `D` → none
+  - KeyF.ag: `f` → none
+  - KeyF.sag: `F` → none
+  - KeyG.ag: `g` → none
+  - KeyG.sag: `G` → none
+  - KeyH.ag: `h` → none
+  - KeyH.sag: `H` → none
+  - KeyJ.ag: `j` → none
+  - KeyJ.sag: `J` → none
+  - KeyK.ag: `k` → none
+  - KeyK.sag: `K` → none
+  - KeyL.ag: `l` → none
+  - KeyL.sag: `L` → none
+  - Semicolon.ag: `;` → none
+  - Semicolon.sag: `:` → none
+  - Quote.ag: `'` → none
+  - Quote.sag: `"` → none
+  - Backslash.ag: `\` → none
+  - Backslash.sag: `|` → none
+  - IntlBackslash.ag: `\` → none
+  - IntlBackslash.sag: `|` → none
+  - KeyZ.ag: `z` → none
+  - KeyZ.sag: `Z` → none
+  - KeyX.ag: `x` → none
+  - KeyX.sag: `X` → none
+  - KeyC.ag: `c` → none
+  - KeyC.sag: `C` → none
+  - KeyV.ag: `v` → none
+  - KeyV.sag: `V` → none
+  - KeyB.ag: `b` → none
+  - KeyB.sag: `B` → none
+  - KeyN.ag: `n` → none
+  - KeyN.sag: `N` → none
+  - KeyM.ag: `m` → none
+  - KeyM.sag: `M` → none
+  - Comma.ag: `,` → none
+  - Comma.sag: `<` → none
+  - Period.ag: `.` → none
+  - Period.sag: `>` → none
+  - Slash.ag: `/` → none
+  - Slash.sag: `?` → none
+
+## ru-standard
+
+- **Output:** `languages/russian/standard.json`
+- **Source:** `vendor/cldr/ru-t-k0-windows.xml`. Windows "Russian" (ЙЦУКЕН), from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 1)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## ru-phonetic
+
+- **Output:** `languages/russian/phonetic.json`
+- **Source:** `vendor/xkb/ru`. The phonetic layout (ЯВЕРТЫ) of xkeyboard-config (X11/MIT-style licence).
+- **Licence:** X11/MIT-style (vendor/xkb/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## uk-standard
+
+- **Output:** `languages/ukrainian/standard.json`
+- **Source:** `vendor/cldr/uk-t-k0-windows-extended.xml`. Windows "Ukrainian (Enhanced)", which adds ґ on its own key, from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 1, sag 1)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## uk-phonetic
+
+- **Output:** `languages/ukrainian/phonetic.json`
+- **Source:** `vendor/xkb/ua`. The phonetic layout of xkeyboard-config (X11/MIT-style licence).
+- **Licence:** X11/MIT-style (vendor/xkb/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## be-standard
+
+- **Output:** `languages/belarusian/standard.json`
+- **Source:** `vendor/cldr/be-t-k0-windows.xml`. Windows "Belarusian", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## bg-standard
+
+- **Output:** `languages/bulgarian/standard.json`
+- **Source:** `vendor/cldr/bg-t-k0-windows.xml`. Windows "Bulgarian", the БДС layout, from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## bg-phonetic
+
+- **Output:** `languages/bulgarian/phonetic.json`
+- **Source:** `vendor/cldr/bg-t-k0-windows-qwerty.xml`. Windows "Bulgarian (Phonetic)", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## sr-standard
+
+- **Output:** `languages/serbian/standard.json`
+- **Source:** `vendor/cldr/sr-t-k0-windows.xml`. Windows "Serbian (Cyrillic)", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 3), 4 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## mk-standard
+
+- **Output:** `languages/macedonian/standard.json`
+- **Source:** `vendor/cldr/mk-t-k0-windows.xml`. Windows "Macedonian - Standard", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 17)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## kk-standard
+
+- **Output:** `languages/kazakh/standard.json`
+- **Source:** `vendor/cldr/kk-t-k0-windows.xml`. Windows "Kazakh", from Unicode CLDR 43 keyboard data (Unicode License v3). Upstream cannot type ё; we add it on AltGr+T, the е key. Phone rows are ours.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 1, sag 1)
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyT.ag: none → `ё`
+  - KeyT.sag: none → `Ё`
+
+## ky-standard
+
+- **Output:** `languages/kyrgyz/standard.json`
+- **Source:** `vendor/cldr/ky-t-k0-windows.xml`. Windows "Kyrgyz Cyrillic", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 3, sag 3)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## tg-standard
+
+- **Output:** `languages/tajik/standard.json`
+- **Source:** `vendor/cldr/tg-t-k0-windows.xml`. Windows "Tajik", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## mn-standard
+
+- **Output:** `languages/mongolian/standard.json`
+- **Source:** `vendor/cldr/mn-t-k0-windows.xml`. Windows "Mongolian Cyrillic", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48)
+- **Skipped:** nothing
+- **Our changes:** none
+
 ## Vendored, not yet used
 
 CLDR 43 Windows keyboards ready for the national layouts (plan 7.5). Unicode License v3.
@@ -1140,10 +1508,16 @@ CLDR 43 Windows keyboards ready for the national layouts (plan 7.5). Unicode Lic
 | File | Name | Coverage | Skipped |
 | --- | --- | --- | --- |
 | `da-t-k0-windows.xml` | Danish | 48 keys (n 48, s 48, ag 13), 49 dead-key compositions | nothing |
+| `el-POLYTON-t-k0-windows.xml` | Greek Polytonic | 48 keys (n 48, s 48, ag 23, sag 7), 260 dead-key compositions | nothing |
 | `fi-t-k0-windows.xml` | Finnish | 48 keys (n 48, s 48, ag 13), 49 dead-key compositions | nothing |
+| `he-t-k0-windows.xml` | Hebrew | 48 keys (n 48, s 48, ag 6) | nothing |
+| `km-t-k0-windows.xml` | Khmer | 47 keys (n 47, s 47, ag 41, sag 44) | nothing |
+| `ko-t-k0-windows.xml` | Korean | 48 keys (n 48, s 48) | nothing |
 | `nb-t-k0-windows.xml` | Norwegian | 48 keys (n 48, s 48, ag 12), 49 dead-key compositions | nothing |
 | `pt-t-k0-windows.xml` | Portuguese (Brazil ABNT) | 49 keys (n 49, s 49, ag 14), 49 dead-key compositions | nothing |
 | `ro-t-k0-windows-legacy.xml` | Romanian (Legacy) | 48 keys (n 48, s 48, ag 28), 76 dead-key compositions | nothing |
+| `uk-t-k0-windows.xml` | Ukrainian | 48 keys (n 48, s 48, ag 1, sag 1) | nothing |
+| `vi-t-k0-windows.xml` | Vietnamese | 48 keys (n 48, s 48, ag 48, sag 48) | nothing |
 
 ## xkeyboard-config (evaluated, not used)
 

@@ -1,0 +1,25 @@
+{
+  "slug": "georgian",
+  "code": "ka",
+  "order": 530,
+  "lang": "ka",
+  "script": "Geor",
+  "dir": "ltr",
+  "name": {
+    "en": "Georgian",
+    "native": "ქართული"
+  },
+  "aliases": [],
+  "region": "central-asia",
+  "fonts": ["georgian"],
+  "layouts": ["ka-qwerty", "ka-mes", "ka-roman"],
+  "sample": "გამარჯობა! როგორ ხარ დღეს?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ka",
+    "bing": "ka"
+  },
+  "tier": null,
+  "notes": "Modern Georgian has no capitals in running text. No voice yet: the locale has not passed /voice-probe."
+}

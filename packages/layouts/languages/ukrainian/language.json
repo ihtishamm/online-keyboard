@@ -1,0 +1,26 @@
+{
+  "slug": "ukrainian",
+  "code": "uk",
+  "order": 410,
+  "lang": "uk",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Ukrainian",
+    "native": "Українська"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["uk-standard", "uk-phonetic", "uk-roman"],
+  "sample": "Добрий день! Як у вас справи сьогодні?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "uk",
+    "bing": "uk",
+    "deepl": "uk"
+  },
+  "tier": null,
+  "notes": "Standard is Windows Ukrainian (Enhanced): ґ on its own key. Phonetic comes from xkeyboard-config. No voice yet: the locale has not passed /voice-probe."
+}

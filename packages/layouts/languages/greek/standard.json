@@ -1,0 +1,484 @@
+{
+  "id": "el-standard",
+  "lang": "el",
+  "script": "Grek",
+  "dir": "ltr",
+  "name": {
+    "en": "Standard",
+    "native": "Τυπικό"
+  },
+  "source": "Windows \"Greek\", from Unicode CLDR 43 keyboard data (Unicode License v3).",
+  "keys": {
+    "Backquote": {
+      "n": "`",
+      "s": "~"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "!"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "@",
+      "ag": "²"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "#",
+      "ag": "³"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "$",
+      "ag": "£"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "%",
+      "ag": "§"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "^",
+      "ag": "¶"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "&"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "*",
+      "ag": "¤"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "(",
+      "ag": "¦"
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")",
+      "ag": "°"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_",
+      "ag": "±"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+",
+      "ag": "½"
+    },
+    "KeyQ": {
+      "n": ";",
+      "s": ":"
+    },
+    "KeyW": {
+      "n": "ς",
+      "s": "΅"
+    },
+    "KeyE": {
+      "n": "ε",
+      "s": "Ε",
+      "ag": "€",
+      "caps": "shift"
+    },
+    "KeyR": {
+      "n": "ρ",
+      "s": "Ρ",
+      "ag": "®",
+      "caps": "shift"
+    },
+    "KeyT": {
+      "n": "τ",
+      "s": "Τ",
+      "caps": "shift"
+    },
+    "KeyY": {
+      "n": "υ",
+      "s": "Υ",
+      "ag": "¥",
+      "caps": "shift"
+    },
+    "KeyU": {
+      "n": "θ",
+      "s": "Θ",
+      "caps": "shift"
+    },
+    "KeyI": {
+      "n": "ι",
+      "s": "Ι",
+      "caps": "shift"
+    },
+    "KeyO": {
+      "n": "ο",
+      "s": "Ο",
+      "caps": "shift"
+    },
+    "KeyP": {
+      "n": "π",
+      "s": "Π",
+      "caps": "shift"
+    },
+    "BracketLeft": {
+      "n": "[",
+      "s": "{",
+      "ag": "«"
+    },
+    "BracketRight": {
+      "n": "]",
+      "s": "}",
+      "ag": "»"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|",
+      "ag": "¬"
+    },
+    "KeyA": {
+      "n": "α",
+      "s": "Α",
+      "caps": "shift"
+    },
+    "KeyS": {
+      "n": "σ",
+      "s": "Σ",
+      "caps": "shift"
+    },
+    "KeyD": {
+      "n": "δ",
+      "s": "Δ",
+      "caps": "shift"
+    },
+    "KeyF": {
+      "n": "φ",
+      "s": "Φ",
+      "caps": "shift"
+    },
+    "KeyG": {
+      "n": "γ",
+      "s": "Γ",
+      "caps": "shift"
+    },
+    "KeyH": {
+      "n": "η",
+      "s": "Η",
+      "caps": "shift"
+    },
+    "KeyJ": {
+      "n": "ξ",
+      "s": "Ξ",
+      "caps": "shift"
+    },
+    "KeyK": {
+      "n": "κ",
+      "s": "Κ",
+      "caps": "shift"
+    },
+    "KeyL": {
+      "n": "λ",
+      "s": "Λ",
+      "caps": "shift"
+    },
+    "Semicolon": {
+      "n": "΄",
+      "s": "¨",
+      "ag": "΅"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "IntlBackslash": {
+      "n": "<",
+      "s": ">"
+    },
+    "KeyZ": {
+      "n": "ζ",
+      "s": "Ζ",
+      "caps": "shift"
+    },
+    "KeyX": {
+      "n": "χ",
+      "s": "Χ",
+      "caps": "shift"
+    },
+    "KeyC": {
+      "n": "ψ",
+      "s": "Ψ",
+      "ag": "©",
+      "caps": "shift"
+    },
+    "KeyV": {
+      "n": "ω",
+      "s": "Ω",
+      "caps": "shift"
+    },
+    "KeyB": {
+      "n": "β",
+      "s": "Β",
+      "caps": "shift"
+    },
+    "KeyN": {
+      "n": "ν",
+      "s": "Ν",
+      "caps": "shift"
+    },
+    "KeyM": {
+      "n": "μ",
+      "s": "Μ",
+      "caps": "shift"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "<"
+    },
+    "Period": {
+      "n": ".",
+      "s": ">"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "?"
+    }
+  },
+  "deadkeys": [
+    {
+      "trigger": "΄",
+      "base": "α",
+      "out": "ά"
+    },
+    {
+      "trigger": "΄",
+      "base": "Α",
+      "out": "Ά"
+    },
+    {
+      "trigger": "΄",
+      "base": "ε",
+      "out": "έ"
+    },
+    {
+      "trigger": "΄",
+      "base": "Ε",
+      "out": "Έ"
+    },
+    {
+      "trigger": "΄",
+      "base": "η",
+      "out": "ή"
+    },
+    {
+      "trigger": "΄",
+      "base": "Η",
+      "out": "Ή"
+    },
+    {
+      "trigger": "΄",
+      "base": "ι",
+      "out": "ί"
+    },
+    {
+      "trigger": "΄",
+      "base": "Ι",
+      "out": "Ί"
+    },
+    {
+      "trigger": "΄",
+      "base": "ο",
+      "out": "ό"
+    },
+    {
+      "trigger": "΄",
+      "base": "Ο",
+      "out": "Ό"
+    },
+    {
+      "trigger": "΄",
+      "base": "υ",
+      "out": "ύ"
+    },
+    {
+      "trigger": "΄",
+      "base": "Υ",
+      "out": "Ύ"
+    },
+    {
+      "trigger": "΄",
+      "base": "ω",
+      "out": "ώ"
+    },
+    {
+      "trigger": "΄",
+      "base": "Ω",
+      "out": "Ώ"
+    },
+    {
+      "trigger": "¨",
+      "base": "ι",
+      "out": "ϊ"
+    },
+    {
+      "trigger": "¨",
+      "base": "Ι",
+      "out": "Ϊ"
+    },
+    {
+      "trigger": "΅",
+      "base": "ι",
+      "out": "ΐ"
+    },
+    {
+      "trigger": "¨",
+      "base": "υ",
+      "out": "ϋ"
+    },
+    {
+      "trigger": "¨",
+      "base": "Υ",
+      "out": "Ϋ"
+    },
+    {
+      "trigger": "΅",
+      "base": "υ",
+      "out": "ΰ"
+    }
+  ],
+  "longpress": {
+    "Digit2": [
+      "²"
+    ],
+    "Digit3": [
+      "³"
+    ],
+    "Digit4": [
+      "£"
+    ],
+    "Digit5": [
+      "§"
+    ],
+    "Digit6": [
+      "¶"
+    ],
+    "Digit8": [
+      "¤"
+    ],
+    "Digit9": [
+      "¦"
+    ],
+    "Digit0": [
+      "°"
+    ],
+    "Minus": [
+      "±"
+    ],
+    "Equal": [
+      "½"
+    ],
+    "KeyW": [
+      "΅"
+    ],
+    "KeyE": [
+      "έ",
+      "Ε",
+      "€"
+    ],
+    "KeyR": [
+      "Ρ",
+      "®"
+    ],
+    "KeyT": [
+      "Τ"
+    ],
+    "KeyY": [
+      "ύ",
+      "ϋ",
+      "ΰ",
+      "Υ",
+      "¥"
+    ],
+    "KeyU": [
+      "Θ"
+    ],
+    "KeyI": [
+      "ί",
+      "ϊ",
+      "ΐ",
+      "Ι"
+    ],
+    "KeyO": [
+      "ό",
+      "Ο"
+    ],
+    "KeyP": [
+      "Π"
+    ],
+    "BracketLeft": [
+      "«"
+    ],
+    "BracketRight": [
+      "»"
+    ],
+    "Backslash": [
+      "¬"
+    ],
+    "KeyA": [
+      "ά",
+      "Α"
+    ],
+    "KeyS": [
+      "Σ"
+    ],
+    "KeyD": [
+      "Δ"
+    ],
+    "KeyF": [
+      "Φ"
+    ],
+    "KeyG": [
+      "Γ"
+    ],
+    "KeyH": [
+      "ή",
+      "Η"
+    ],
+    "KeyJ": [
+      "Ξ"
+    ],
+    "KeyK": [
+      "Κ"
+    ],
+    "KeyL": [
+      "Λ"
+    ],
+    "Semicolon": [
+      "¨",
+      "΅"
+    ],
+    "KeyZ": [
+      "Ζ"
+    ],
+    "KeyX": [
+      "Χ"
+    ],
+    "KeyC": [
+      "Ψ",
+      "©"
+    ],
+    "KeyV": [
+      "ώ",
+      "Ω"
+    ],
+    "KeyB": [
+      "Β"
+    ],
+    "KeyN": [
+      "Ν"
+    ],
+    "KeyM": [
+      "Μ"
+    ]
+  }
+}

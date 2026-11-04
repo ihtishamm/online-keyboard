@@ -1,0 +1,10 @@
+{
+  "scheme": "zh-pinyin",
+  "source": "Tatoeba sentences with dictionary readings; scores the characters, not the typing",
+  "sentences": 500,
+  "words": 2896,
+  "wordTop1": 0.834,
+  "wordTop5": 0.974,
+  "sentenceChars": 0.858,
+  "sentencesExact": 0.402
+}

@@ -1,5 +1,8 @@
 import type { KeyCode } from "../layout/keycodes";
 import type { ContextRule, KeyDef, Layout } from "../layout/schema";
+import { backspaceHangul, composeHangul, type Rewrite } from "./hangul";
+import { composeRomaji } from "./romaji";
+import { composeVietnamese, type TonePlacement } from "./vietnamese";
 
 export interface Modifiers {
   shift: boolean;
@@ -45,8 +48,12 @@ export class TypingMachine {
   /** The text a hold rule left before the caret: rules skip one key press while it is there. */
   private held: string | null = null;
   private _layout!: Layout;
+  /** The syllable a composer last wrote: Backspace takes it apart while the caret is after it. */
+  private composed: string | null = null;
   /** Dead key waiting for its base character. */
   pending: string | null = null;
+  /** Vietnamese: where a tone sits on oa, oe and uy (hoà or hòa). */
+  tonePlacement: TonePlacement = "new";
 
   constructor(layout: Layout) {
     this.setLayout(layout);
@@ -60,6 +67,7 @@ export class TypingMachine {
     this._layout = layout;
     this.pending = null;
     this.held = null;
+    this.composed = null;
     this.rules = new Map();
     for (const rule of layout.rules) {
       const list = this.rules.get(rule.typed) ?? [];
@@ -89,6 +97,7 @@ export class TypingMachine {
       return { kind: "dead", trigger: out };
     }
     if (!out) return { kind: "none" };
+    if (this._layout.composer) return this.compose(out, before);
     if (held === null || !before.endsWith(held)) {
       const rule = this.rules.get(out)?.find((r) => before.endsWith(r.before));
       if (rule) {
@@ -98,6 +107,38 @@ export class TypingMachine {
       }
     }
     return { kind: "text", text: out };
+  }
+
+  private compose(out: string, before: string): PressResult {
+    const composer = this._layout.composer!;
+    let r: Rewrite;
+    if (composer === "hangul") {
+      // A syllable joins only what this composer just wrote, not text the caret moved to.
+      const context = this.composed !== null && before.endsWith(this.composed) ? before : "";
+      r = composeHangul(context, out);
+      const all = before.slice(0, before.length - r.remove) + r.text;
+      this.composed = all.slice(-1);
+    } else if (composer === "romaji") {
+      r = composeRomaji(before, out) ?? { remove: 0, text: out };
+    } else {
+      r = composeVietnamese(composer, before, out, this.tonePlacement);
+    }
+    return r.remove
+      ? { kind: "text", text: r.text, remove: r.remove }
+      : { kind: "text", text: r.text };
+  }
+
+  /**
+   * Backspace in a composing syllable: one jamo at a time. Null means an ordinary Backspace (the
+   * caret left the syllable, or nothing is being composed).
+   */
+  backspace(before: string): Rewrite | null {
+    if (this._layout.composer !== "hangul") return null;
+    if (this.composed === null || !before.endsWith(this.composed)) return null;
+    const r = backspaceHangul(before);
+    if (!r) return null;
+    this.composed = r.text.slice(-1);
+    return r;
   }
 
   /** Does this key type its trigger character as is, on the layer in use? */

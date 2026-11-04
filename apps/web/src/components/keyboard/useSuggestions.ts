@@ -1,15 +1,19 @@
 import {
   AccentRestorer,
+  PhraseConverter,
   Transliterator,
   displayWord,
+  CASE_LOCALES,
   foldLatin,
-  isLatinCode,
+  innerMarks,
+  isCasedCode,
+  isUnspacedCode,
   latinWordBefore,
   matchCase,
   previousLatinWord,
   previousWord,
-  romanWordBefore,
   scriptWordBefore,
+  segmentedWordBefore,
   type Dictionary,
   type Layout,
   type Misspelling,
@@ -17,7 +21,7 @@ import {
   type WordRange,
 } from "@okb/engine";
 import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from "react";
-import { hasDictionary, loadDictionary } from "./dictionary";
+import { hasDictionary, loadDictionary, loadReadings } from "./dictionary";
 import { insertText, replaceText } from "./editor-ops";
 import type { createChecker as CreateChecker } from "./spelling";
 import { loadPreference, savePreference } from "./preferences";
@@ -108,16 +112,51 @@ const NATIVE_INSERTS: ReadonlySet<string> = new Set([
 export function useSuggestions(options: SuggestionsOptions) {
   const { slug, code, editorRef, scheme, predict, spellcheck, autocorrect, layouts } = options;
   const smartAccents = options.smartAccents ?? false;
-  const latin = isLatinCode(code);
+  /** Cased scripts (Latin, Cyrillic …) fold words for lookups and take the case typed. */
+  const latin = isCasedCode(code);
+  const inner = useMemo(() => innerMarks(code), [code]);
+  /** Thai, Lao, Khmer, Burmese: no space after a word, and no spell check over whole runs. */
+  const unspaced = isUnspacedCode(code);
   const [dictionary, setDictionary] = useState<Dictionary | null>(null);
   /** Builds the spell checker; loaded with the word list. */
   const [createChecker, setCreateChecker] = useState<typeof CreateChecker | null>(null);
   const [state, setState] = useState<SuggestionState>(NONE);
   const [marks, setMarks] = useState<SpellMarks>(NO_MARKS);
   const requested = useRef(false);
-  const translit = useMemo(() => (scheme ? new Transliterator(scheme) : null), [scheme]);
-  translit?.setLexicon(dictionary?.lexicon ?? null);
-  translit?.setNextWords(dictionary?.next ?? null);
+  const translit = useMemo(
+    () =>
+      !scheme ? null : scheme.converter ? new PhraseConverter(scheme) : new Transliterator(scheme),
+    [scheme],
+  );
+  /** Conversion lists arrive on their own; a word list is not needed to convert. */
+  const [phraseReady, setPhraseReady] = useState(0);
+  /** Fetch the list on the first key press: it is large, and many visitors only read the page. */
+  const loadPhrases = useRef<PhraseConverter | null>(null);
+  const loadConversions = useCallback(() => {
+    if (!(translit instanceof PhraseConverter) || loadPhrases.current === translit) return;
+    loadPhrases.current = translit;
+    void loadReadings(code).then((text) => {
+      if (text === null) loadPhrases.current = null; // try again on the next key
+      else {
+        translit.setReadings(text);
+        setPhraseReady((n) => n + 1);
+      }
+    });
+  }, [translit, code]);
+  if (translit instanceof Transliterator) {
+    translit.setLexicon(dictionary?.lexicon ?? null);
+    translit.setNextWords(dictionary?.next ?? null);
+  }
+  const casing = useMemo(() => {
+    const locale = CASE_LOCALES[code];
+    if (!locale) return null;
+    return {
+      fold: (w: string) => foldLatin(w, locale),
+      display: (w: string, typed: string) =>
+        matchCase(typed, dictionary ? displayWord(dictionary, w) : w, locale),
+    };
+  }, [code, dictionary]);
+  if (translit instanceof Transliterator) translit.setCasing(casing);
 
   const [personal, setPersonal] = useState<string[]>([]);
   /** Words ignored for this page view. */
@@ -137,7 +176,7 @@ export function useSuggestions(options: SuggestionsOptions) {
     c?.setPersonal([...personal, ...ignored]);
     return c;
   }, [dictionary, createChecker, code, layouts, personal, ignored]);
-  const spell = spellcheck ? checker : null;
+  const spell = spellcheck && !unspaced ? checker : null;
   const restorer = useMemo(() => {
     const words = dictionary?.latin;
     return words && smartAccents
@@ -145,10 +184,19 @@ export function useSuggestions(options: SuggestionsOptions) {
       : null;
   }, [dictionary, smartAccents]);
   /** The word being typed before the caret: Latin, or the language's own script. */
-  const wordBefore = latin ? latinWordBefore : scriptWordBefore;
+  const wordBefore = useMemo(
+    () =>
+      latin
+        ? (t: string, c: number) => latinWordBefore(t, c, inner)
+        : unspaced
+          ? (t: string, c: number) => segmentedWordBefore(t, c, code)
+          : scriptWordBefore,
+    [latin, unspaced, code, inner],
+  );
 
   /** Start downloading the word list (once). Cheap to call on every keystroke. */
   const load = useCallback(() => {
+    loadConversions();
     if (requested.current || !hasDictionary(code)) return;
     requested.current = true;
     void loadDictionary(code).then((d) => {
@@ -159,7 +207,7 @@ export function useSuggestions(options: SuggestionsOptions) {
       (m) => setCreateChecker(() => m.createChecker),
       () => undefined, // offline before it was cached: suggestions still work
     );
-  }, [code]);
+  }, [code, loadConversions]);
 
   const compute = useCallback((): SuggestionState => {
     const el = editorRef.current;
@@ -168,7 +216,7 @@ export function useSuggestions(options: SuggestionsOptions) {
     const caret = el.selectionStart;
 
     if (translit) {
-      const word = romanWordBefore(text, caret, translit.letters);
+      const word = translit.wordBefore(text, caret);
       if (word) {
         const context = previousWord(text, word.start);
         const items = translit.candidates(word.word, LIMIT, context).map((c) => c.text);
@@ -234,14 +282,16 @@ export function useSuggestions(options: SuggestionsOptions) {
       return completions.length ? { mode: "complete", items: completions, range: partial } : NONE;
     }
     if (!predict) return NONE;
-    const previous = latin ? previousLatinWord(text, caret, locale) : previousWord(text, caret);
+    const previous = latin
+      ? previousLatinWord(text, caret, locale, inner)
+      : previousWord(text, caret);
     if (previous === undefined) return NONE;
     // A new sentence starts with a capital.
     const items = dictionary.next
       .after(previous, LIMIT)
       .map((w) => shown(w, previous === null ? "A" : "a"));
     return items.length ? { mode: "next", items, range: null } : NONE;
-  }, [editorRef, translit, predict, dictionary, spell, restorer, latin, wordBefore]);
+  }, [editorRef, translit, predict, dictionary, spell, restorer, latin, wordBefore, inner, phraseReady]);
 
   /** Where the user is typing a word: it is not underlined until the caret leaves it. */
   const typingAt = useRef({ text: "", caret: -1 });
@@ -298,11 +348,14 @@ export function useSuggestions(options: SuggestionsOptions) {
       // A correction replaces the word where it stands; other picks move on to the next word.
       if (current.mode === "spell" && current.range) {
         replaceText(el, current.range.start, current.range.end, item);
-      } else if (current.range) replaceText(el, current.range.start, current.range.end, item + " ");
+      } else if (current.range) {
+        const noSpace = unspaced || (current.mode === "roman" && translit?.spaced === false);
+        replaceText(el, current.range.start, current.range.end, item + (noSpace ? "" : " "));
+      }
       else insertText(el, item + " ");
       return true;
     },
-    [editorRef, compute, saveKept],
+    [editorRef, compute, saveKept, unspaced, translit],
   );
 
   /**
@@ -313,12 +366,14 @@ export function useSuggestions(options: SuggestionsOptions) {
     (boundary: string): boolean => {
       const el = editorRef.current;
       if (!el || !translit || el.selectionStart !== el.selectionEnd) return false;
-      const word = romanWordBefore(el.value, el.selectionStart, translit.letters);
+      const word = translit.wordBefore(el.value, el.selectionStart);
       if (!word) return false;
       const best = kept.current.has(word.word.toLowerCase())
         ? word.word
         : translit.best(word.word, previousWord(el.value, word.start));
-      replaceText(el, word.start, word.end, best + boundary);
+      // Chinese and Japanese: Space converts, and writes no space after the word.
+      const after = boundary === " " && !translit.spaced ? "" : boundary;
+      replaceText(el, word.start, word.end, best + after);
       return true;
     },
     [editorRef, translit],
@@ -328,7 +383,7 @@ export function useSuggestions(options: SuggestionsOptions) {
   const keep = useCallback((): void => {
     const el = editorRef.current;
     if (!el || !translit) return;
-    const word = romanWordBefore(el.value, el.selectionStart, translit.letters);
+    const word = translit.wordBefore(el.value, el.selectionStart);
     if (!word) return;
     kept.current.add(word.word.toLowerCase());
     saveKept();
@@ -338,7 +393,7 @@ export function useSuggestions(options: SuggestionsOptions) {
   const composing = useCallback((): boolean => {
     const el = editorRef.current;
     return (
-      !!el && !!translit && romanWordBefore(el.value, el.selectionStart, translit.letters) !== null
+      !!el && !!translit && translit.wordBefore(el.value, el.selectionStart) !== null
     );
   }, [editorRef, translit]);
 
@@ -356,7 +411,7 @@ export function useSuggestions(options: SuggestionsOptions) {
       const caret = el.selectionStart;
       const typed = el.value[caret - 1] ?? "";
       if (!/^[\s.,?!;:]$/.test(typed)) return;
-      const word = romanWordBefore(el.value, caret - typed.length, translit.letters);
+      const word = translit.wordBefore(el.value, caret - typed.length);
       if (!word || kept.current.has(word.word.toLowerCase())) return;
       const punct = translit.scheme.punctuation[typed] ?? typed;
       const best = translit.best(word.word, previousWord(el.value, word.start));

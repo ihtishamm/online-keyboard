@@ -183,6 +183,32 @@ const ALPHABETS: Record<string, string> = {
   "ug-standard": "ئابپتجچخدرزژسشغفقكگڭلمنھوۇۆۈۋېىيە",
   "prs-clra": "آابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیءئ\u200C؋",
   "zlm-standard": "ابتثجچحخدذرزسشصضطظعغڠفڤقکݢلمنڽوۏهيء",
+  "el-standard": "αβγδεζηθικλμνξοπρσςτυφχψω",
+  "he-standard": "אבגדהוזחטיכךלמםנןסעפףצץקרשת",
+  "he-phonetic": "אבגדהוזחטיכךלמםנןסעפףצץקרשת",
+  "hy-phonetic": "աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆև",
+  "hy-typewriter": "աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆև",
+  "ka-qwerty": "აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ",
+  "ka-mes": "აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ",
+  "th-kedmanee": "กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮะัาำิีึืุูเแโใไๅๆ็่้๊๋์",
+  "th-pattachote": "กขคฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮะัาำิีึืุูเแโใไๆ็่้๊๋์",
+  "lo-standard": "ກຂຄງຈສຊຍດຕຖທນບປຜຝພຟມຢຣລວຫອຮະັາຳິີຶືຸູົຼຽເແໂໃໄໆຯ່້໊໋໌ໍ",
+  "km-nida": "កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវសហឡអាិីឹឺុូួើឿៀេែៃោៅំះៈ៉៊់៌៍៎៏័្",
+  "my-standard": "ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအါာိီုူေဲံ့း္်ျြွှ",
+  "ko-2set": "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎㅏㅐㅑㅒㅓㅔㅕㅖㅗㅛㅜㅠㅡㅣ",
+  "ru-standard": "абвгдеёжзийклмнопрстуфхцчшщъыьэюя",
+  "ru-phonetic": "абвгдеёжзийклмнопрстуфхцчшщъыьэюя",
+  "uk-standard": "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя'",
+  "uk-phonetic": "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя'",
+  "be-standard": "абвгдеёжзійклмнопрстуўфхцчшыьэюя'",
+  "bg-standard": "абвгдежзийклмнопрстуфхцчшщъьюя",
+  "bg-phonetic": "абвгдежзийклмнопрстуфхцчшщъьюя",
+  "sr-standard": "абвгдђежзијклљмнњопрстћуфхцчџш",
+  "mk-standard": "абвгдѓежзѕијклљмнњопрстќуфхцчџш",
+  "kk-standard": "абвгдеёжзийклмнопрстуфхцчшщъыьэюяәғқңөұүһі",
+  "ky-standard": "абвгдеёжзийклмнопрстуфхцчшщъыьэюяңөү",
+  "tg-standard": "абвгғдеёжзиӣйкқлмнопрстуӯфхҳчҷшъэюя",
+  "mn-standard": "абвгдеёжзийклмнопрстуфхцчшщъыьэюяөү",
 };
 
 /** Golden words typed on a US keyboard. */
@@ -223,6 +249,31 @@ const GOLDEN: [layoutId: string, keys: string, expected: string][] = [
   ["ug-standard", "/uycur", "ئۇيغۇر"],
   ["prs-clra", "sghl", "سلام"],
   ["zlm-standard", "bhas", "بهاس"],
+  ["el-standard", "kalhm;era", "καλημέρα"],
+  ["he-standard", "akuo", "שלום"],
+  ["he-phonetic", "slwM", "שלום"],
+  ["hy-phonetic", "ba8i", "բարի"],
+  ["hy-typewriter", "dj'", "գիր"],
+  ["ka-qwerty", "gamarjoba", "გამარჯობა"],
+  ["ka-mes", "gamarjoba", "გამარჯობა"],
+  ["th-kedmanee", "l;ylfu", "สวัสดี"],
+  ["th-pattachote", "mogmuh", "สวัสดี"],
+  ["lo-standard", "lt[kpfu", "ສະບາຍດີ"],
+  ["km-nida", "sYsjtI", "សួស្តី"],
+  ["my-standard", "rjefrm", "မြန်မာ"],
+  ["ru-standard", "ghbdtn", "привет"],
+  ["ru-phonetic", "priwet", "привет"],
+  ["uk-standard", "ghbdsn", "привіт"],
+  ["uk-phonetic", "prywit", "привіт"],
+  ["be-standard", "lpzreq", "дзякуй"],
+  ["bg-standard", "po,dlex", "здравей"],
+  ["bg-phonetic", "zdravej", "здравей"],
+  ["sr-standard", "hvala", "хвала"],
+  ["mk-standard", "zdravo", "здраво"],
+  ["kk-standard", "hf0vtn", "рақмет"],
+  ["ky-standard", "hf[vfn", "рахмат"],
+  ["tg-standard", "njsbrm", "тоҷикӣ"],
+  ["mn-standard", "vgay", "сайн"],
 ];
 
 describe("regional language pack", () => {
@@ -246,7 +297,8 @@ describe("regional language pack", () => {
 
   it("gives every language a sample in its own script", () => {
     for (const lang of LANGUAGES) {
-      const script = nativeLayout(lang).script;
+      const code = nativeLayout(lang).script;
+      const script = code === "Hans" || code === "Hant" ? "Han" : code === "Jpan" ? "Han" : code;
       expect(lang.sample).toMatch(new RegExp(`\\p{Script=${script}}`, "u"));
     }
   });
@@ -267,7 +319,8 @@ describe("ur-roman", () => {
   });
 
   it("is one of the Roman layouts, each named after its own scheme", () => {
-    const roman = allLayouts().filter((l) => l.translit);
+    // Chinese and Japanese convert through readings, and write their own script's name.
+    const roman = allLayouts().filter((l) => l.translit && !getScheme(l.translit).converter);
     expect(roman.map((l) => l.id)).toContain("ur-roman");
     for (const l of roman) {
       expect(l.translit).toBe(l.id);
@@ -309,6 +362,9 @@ describe("Latin layouts", () => {
     "cs-easy": "čďěňřšťůžČĎĚŇŘŠŤŮŽ",
     "hu-easy": "őűŐŰ",
     "hr-easy": "čćđšžČĆĐŠŽ",
+    // Telex and VNI compose these from the keys before them (engine test/compose.test.ts).
+    "vi-telex": "ăâđêôơưĂÂĐÊÔƠƯ",
+    "vi-vni": "ăâđêôơưĂÂĐÊÔƠƯ",
   };
 
   it.each(latin.flatMap((l) => l.layouts.map((id) => [id, l.accents!] as const)))(

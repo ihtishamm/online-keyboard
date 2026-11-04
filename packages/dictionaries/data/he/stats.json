@@ -1,0 +1,13 @@
+{
+  "source": "hewiki.xml.bz2",
+  "pages": 11624,
+  "sentences": 1216914,
+  "repeatedSentencesSkipped": 61018,
+  "tokens": 15765139,
+  "distinctWords": 445729,
+  "wordsKept": 100000,
+  "nextWordHeads": 9896,
+  "text": "he-train.txt",
+  "textSentences": 210881,
+  "textWeight": 6.88
+}

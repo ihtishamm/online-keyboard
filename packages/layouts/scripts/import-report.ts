@@ -5,13 +5,14 @@
  */
 import { readFileSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { importCldr, importKeyman, type KeyCode, type KeyDef } from "@okb/engine/layout";
+import { importCldr, importKeyman, importXkb, type KeyCode, type KeyDef } from "@okb/engine/layout";
 import { IMPORTS, buildImport, type ImportSpec } from "./imports";
 
 const LAYERS = ["n", "s", "ag", "sag"] as const;
 
 function licence(vendor: string, spec: ImportSpec["from"]): string {
   if ("cldr" in spec) return "Unicode License v3 (vendor/cldr/LICENSE)";
+  if ("xkb" in spec) return "X11/MIT-style (vendor/xkb/LICENSE)";
   const dir = join(vendor, dirname(spec.keyman));
   const file = readdirSync(dir).find((f) => /^LICEN[CS]E/i.test(f));
   if (!file) return "**no licence file**";
@@ -32,7 +33,12 @@ function coverage(keys: Partial<Record<KeyCode, KeyDef>>, deadkeys: number, rule
 /** Keys our patch changed, as `Code.layer: before → after`. */
 function changes(spec: ImportSpec, source: string): string[] {
   if (!spec.patch && !spec.patchRules) return [];
-  const raw = "cldr" in spec.from ? importCldr(source).keys : importKeyman(source, spec.from).keys;
+  const raw =
+    "cldr" in spec.from
+      ? importCldr(source).keys
+      : "xkb" in spec.from
+        ? importXkb(source, spec.from.variant).keys
+        : importKeyman(source, spec.from).keys;
   const patched = buildImport(spec, source).layout.keys ?? {};
   const out: string[] = [];
   const codes = new Set([...Object.keys(raw), ...Object.keys(patched)] as KeyCode[]);
@@ -43,7 +49,7 @@ function changes(spec: ImportSpec, source: string): string[] {
       if (before !== after) out.push(`${code}.${layer}: ${show(before)} → ${show(after)}`);
     }
   }
-  if (spec.patchRules && !("cldr" in spec.from)) {
+  if (spec.patchRules && "keyman" in spec.from) {
     const before = importKeyman(source, spec.from).rules;
     const after = buildImport(spec, source).layout.rules ?? [];
     const text = (r: (typeof before)[number]) =>
@@ -81,7 +87,8 @@ export function importReport(root: string): string {
     "",
   ];
   for (const spec of IMPORTS) {
-    const path = "cldr" in spec.from ? spec.from.cldr : spec.from.keyman;
+    const path =
+      "cldr" in spec.from ? spec.from.cldr : "xkb" in spec.from ? spec.from.xkb : spec.from.keyman;
     const source = readFileSync(join(vendor, path), "utf8");
     const { layout, warnings } = buildImport(spec, source);
     const changed = changes(spec, source);

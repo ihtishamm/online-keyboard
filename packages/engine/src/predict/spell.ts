@@ -28,7 +28,7 @@ export interface Misspelling {
 
 export interface SpellingRules {
   /** Unicode script of the words checked (others, such as English, are skipped). */
-  script?: "Arabic" | "Devanagari" | "Bengali" | "Latin";
+  script?: "Arabic" | "Devanagari" | "Bengali" | "Latin" | "Cyrillic";
   /** Map a written word to its dictionary form. */
   key: (word: string) => string;
   /** Groups of letters that sound alike or sit on the same key: swapping them costs little. */

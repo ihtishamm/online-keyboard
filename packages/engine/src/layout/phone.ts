@@ -46,6 +46,20 @@ const CURRENCY: Record<string, string> = {
   dv: "ރ",
   prs: "؋",
   ms: "RM",
+  el: "€",
+  he: "₪",
+  hy: "֏",
+  ka: "₾",
+  ru: "₽",
+  uk: "₴",
+  be: "Br",
+  bg: "лв",
+  sr: "дин",
+  mk: "ден",
+  kk: "₸",
+  ky: "с",
+  tg: "с",
+  mn: "₮",
 };
 const COMMON_CURRENCY = "€£¥";
 

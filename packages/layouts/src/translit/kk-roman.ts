@@ -1,0 +1,53 @@
+import { cyrillicScheme } from "./cyrillic";
+
+/**
+ * English letters → Kazakh: salem, rakhmet, qazaq. gh is ғ, q is қ, ng is ң. The plain a, o, u and i
+ * can be ә, ө, ұ, ү and і, and the word list decides.
+ */
+export const KK_ROMAN = cyrillicScheme({
+  id: "kk-roman",
+  lang: "kk",
+  soft: "ь",
+  letters: {
+    shch: "щ",
+    ch: "ч",
+    sh: "ш",
+    zh: "ж",
+    kh: "х қ:0.5",
+    gh: "ғ",
+    ng: "ң нг:0.5",
+    ts: "ц",
+    yo: "ё",
+    yu: "ю",
+    ya: "я",
+    ae: "ә:0.1",
+    oe: "ө:0.1",
+    ue: "ү:0.1",
+    a: "а ә:0.3",
+    b: "б",
+    c: "ц к:0.8",
+    d: "д",
+    e: "е э:0.5",
+    f: "ф",
+    g: "г ғ:0.3",
+    h: "һ х:0.1 ғ:0.8",
+    i: "і и:0.2 й:0.8",
+    j: "ж:0.2",
+    k: "к қ:0.3",
+    l: "л",
+    m: "м",
+    n: "н ң:0.5",
+    o: "о ө:0.3",
+    p: "п",
+    q: "қ",
+    r: "р",
+    s: "с",
+    t: "т",
+    u: "у ұ:0.1 ү:0.2",
+    v: "в",
+    w: "у:0.2 в:0.5",
+    x: "х",
+    y: "ы й:0.2 і:0.8",
+    z: "з",
+  },
+});

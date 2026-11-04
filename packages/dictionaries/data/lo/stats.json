@@ -1,0 +1,10 @@
+{
+  "source": "lowiki.xml.bz2",
+  "pages": 6173,
+  "sentences": 48777,
+  "repeatedSentencesSkipped": 7757,
+  "tokens": 1104990,
+  "distinctWords": 20009,
+  "wordsKept": 11195,
+  "nextWordHeads": 6073
+}

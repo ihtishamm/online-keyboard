@@ -1,4 +1,4 @@
-import { getLayout, layoutSlug, type Language } from "@okb/layouts";
+import { getLayout, layoutSlug, type Language, isRomanLayout } from "@okb/layouts";
 import { getCollection } from "astro:content";
 import { allSheets, sheetPath } from "../components/cheatsheet/sheets";
 import { TYPING_LANGUAGES } from "./typing/practice";
@@ -36,7 +36,7 @@ export async function offlineManifest(language: Language): Promise<OfflineManife
   const pages = [
     `/${slug}`,
     ...language.layouts.slice(1).map((id) => `/${slug}/${layoutSlug(id)}`),
-    ...(language.layouts.some((id) => getLayout(id).translit) ? [`/${slug}/to-roman`] : []),
+    ...(language.layouts.some((id) => isRomanLayout(getLayout(id))) ? [`/${slug}/to-roman`] : []),
     ...(typing ? ["tutor", "test", "games"].map((p) => `/${slug}-typing-${p}`) : []),
     ...guides.map((g) => `/guides/${g.id}`).sort(),
     ...allSheets()

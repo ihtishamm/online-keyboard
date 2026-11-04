@@ -1,0 +1,26 @@
+{
+  "slug": "bulgarian",
+  "code": "bg",
+  "order": 430,
+  "lang": "bg",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Bulgarian",
+    "native": "Български"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["bg-standard", "bg-phonetic", "bg-roman"],
+  "sample": "Добър ден! Как сте днес?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "bg",
+    "bing": "bg",
+    "deepl": "bg"
+  },
+  "tier": null,
+  "notes": "БДС is the national layout; Phonetic (БАН) is the one most people type on. No voice yet: the locale has not passed /voice-probe."
+}

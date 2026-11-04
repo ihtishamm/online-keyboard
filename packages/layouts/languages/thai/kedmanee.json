@@ -1,0 +1,284 @@
+{
+  "id": "th-kedmanee",
+  "lang": "th",
+  "script": "Thai",
+  "dir": "ltr",
+  "name": {
+    "en": "Kedmanee",
+    "native": "เกษมณ\u0E35"
+  },
+  "source": "Windows \"Thai Kedmanee\", from Unicode CLDR 43 keyboard data (Unicode License v3). Phone rows are ours.",
+  "mobile": {
+    "rows": [
+      [
+        "KeyQ",
+        "Digit4",
+        "Digit5",
+        "Digit6",
+        "Digit7",
+        "Digit8",
+        "Digit9",
+        "Digit0",
+        "Minus",
+        "Equal"
+      ],
+      [
+        "KeyW",
+        "KeyE",
+        "KeyR",
+        "KeyT",
+        "KeyY",
+        "KeyU",
+        "KeyI",
+        "KeyO",
+        "KeyP",
+        "BracketLeft",
+        "BracketRight"
+      ],
+      [
+        "KeyA",
+        "KeyS",
+        "KeyD",
+        "KeyF",
+        "KeyG",
+        "KeyH",
+        "KeyJ",
+        "KeyK",
+        "KeyL",
+        "Semicolon",
+        "Quote"
+      ],
+      ["KeyZ", "KeyX", "KeyC", "KeyV", "KeyB", "KeyN", "KeyM", "Comma", "Period", "Slash"]
+    ],
+    "longpress": {
+      "KeyQ": ["ๅ"],
+      "Minus": ["ฃ", "ฅ"]
+    }
+  },
+  "keys": {
+    "Backquote": {
+      "n": "_",
+      "s": "%"
+    },
+    "Digit1": {
+      "n": "ๅ",
+      "s": "+"
+    },
+    "Digit2": {
+      "n": "/",
+      "s": "๑"
+    },
+    "Digit3": {
+      "n": "-",
+      "s": "๒"
+    },
+    "Digit4": {
+      "n": "ภ",
+      "s": "๓"
+    },
+    "Digit5": {
+      "n": "ถ",
+      "s": "๔"
+    },
+    "Digit6": {
+      "n": "\u0E38",
+      "s": "\u0E39"
+    },
+    "Digit7": {
+      "n": "\u0E36",
+      "s": "฿"
+    },
+    "Digit8": {
+      "n": "ค",
+      "s": "๕"
+    },
+    "Digit9": {
+      "n": "ต",
+      "s": "๖"
+    },
+    "Digit0": {
+      "n": "จ",
+      "s": "๗"
+    },
+    "Minus": {
+      "n": "ข",
+      "s": "๘"
+    },
+    "Equal": {
+      "n": "ช",
+      "s": "๙"
+    },
+    "KeyQ": {
+      "n": "ๆ",
+      "s": "๐"
+    },
+    "KeyW": {
+      "n": "ไ",
+      "s": "\""
+    },
+    "KeyE": {
+      "n": "ำ",
+      "s": "ฎ"
+    },
+    "KeyR": {
+      "n": "พ",
+      "s": "ฑ"
+    },
+    "KeyT": {
+      "n": "ะ",
+      "s": "ธ"
+    },
+    "KeyY": {
+      "n": "\u0E31",
+      "s": "\u0E4D"
+    },
+    "KeyU": {
+      "n": "\u0E35",
+      "s": "\u0E4A"
+    },
+    "KeyI": {
+      "n": "ร",
+      "s": "ณ"
+    },
+    "KeyO": {
+      "n": "น",
+      "s": "ฯ"
+    },
+    "KeyP": {
+      "n": "ย",
+      "s": "ญ"
+    },
+    "BracketLeft": {
+      "n": "บ",
+      "s": "ฐ"
+    },
+    "BracketRight": {
+      "n": "ล",
+      "s": ","
+    },
+    "Backslash": {
+      "n": "ฃ",
+      "s": "ฅ"
+    },
+    "KeyA": {
+      "n": "ฟ",
+      "s": "ฤ"
+    },
+    "KeyS": {
+      "n": "ห",
+      "s": "ฆ"
+    },
+    "KeyD": {
+      "n": "ก",
+      "s": "ฏ"
+    },
+    "KeyF": {
+      "n": "ด",
+      "s": "โ"
+    },
+    "KeyG": {
+      "n": "เ",
+      "s": "ฌ"
+    },
+    "KeyH": {
+      "n": "\u0E49",
+      "s": "\u0E47"
+    },
+    "KeyJ": {
+      "n": "\u0E48",
+      "s": "\u0E4B"
+    },
+    "KeyK": {
+      "n": "า",
+      "s": "ษ"
+    },
+    "KeyL": {
+      "n": "ส",
+      "s": "ศ"
+    },
+    "Semicolon": {
+      "n": "ว",
+      "s": "ซ"
+    },
+    "Quote": {
+      "n": "ง",
+      "s": "."
+    },
+    "IntlBackslash": {
+      "n": "ฃ",
+      "s": "ฅ"
+    },
+    "KeyZ": {
+      "n": "ผ",
+      "s": "("
+    },
+    "KeyX": {
+      "n": "ป",
+      "s": ")"
+    },
+    "KeyC": {
+      "n": "แ",
+      "s": "ฉ"
+    },
+    "KeyV": {
+      "n": "อ",
+      "s": "ฮ"
+    },
+    "KeyB": {
+      "n": "\u0E34",
+      "s": "\u0E3A"
+    },
+    "KeyN": {
+      "n": "\u0E37",
+      "s": "\u0E4C"
+    },
+    "KeyM": {
+      "n": "ท",
+      "s": "?"
+    },
+    "Comma": {
+      "n": "ม",
+      "s": "ฒ"
+    },
+    "Period": {
+      "n": "ใ",
+      "s": "ฬ"
+    },
+    "Slash": {
+      "n": "ฝ",
+      "s": "ฦ"
+    }
+  },
+  "longpress": {
+    "Digit6": ["\u0E39"],
+    "Digit7": ["฿"],
+    "KeyE": ["ฎ"],
+    "KeyR": ["ฑ"],
+    "KeyT": ["ธ"],
+    "KeyY": ["\u0E4D"],
+    "KeyU": ["\u0E4A"],
+    "KeyI": ["ณ"],
+    "KeyO": ["ฯ"],
+    "KeyP": ["ญ"],
+    "BracketLeft": ["ฐ"],
+    "Backslash": ["ฅ"],
+    "KeyA": ["ฤ"],
+    "KeyS": ["ฆ"],
+    "KeyD": ["ฏ"],
+    "KeyF": ["โ"],
+    "KeyG": ["ฌ"],
+    "KeyH": ["\u0E47"],
+    "KeyJ": ["\u0E4B"],
+    "KeyK": ["ษ"],
+    "KeyL": ["ศ"],
+    "Semicolon": ["ซ"],
+    "IntlBackslash": ["ฅ"],
+    "KeyC": ["ฉ"],
+    "KeyV": ["ฮ"],
+    "KeyB": ["\u0E3A"],
+    "KeyN": ["\u0E4C"],
+    "Comma": ["ฒ"],
+    "Period": ["ฬ"],
+    "Slash": ["ฦ"]
+  }
+}

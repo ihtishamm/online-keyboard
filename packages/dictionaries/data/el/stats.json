@@ -1,0 +1,13 @@
+{
+  "source": "elwiki.xml.bz2",
+  "pages": 17642,
+  "sentences": 863093,
+  "repeatedSentencesSkipped": 75685,
+  "tokens": 13717355,
+  "distinctWords": 355369,
+  "wordsKept": 100000,
+  "nextWordHeads": 9680,
+  "text": "el-train.txt",
+  "textSentences": 42009,
+  "textWeight": 27.8
+}

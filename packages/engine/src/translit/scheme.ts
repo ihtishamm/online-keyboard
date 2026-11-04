@@ -58,6 +58,11 @@ export interface TranslitScheme {
   words: readonly (readonly [string, string])[];
   /** Punctuation converted as it is typed in Roman mode. */
   punctuation: Readonly<Record<string, string>>;
+  /**
+   * Chinese and Japanese: convert through a list of readings (PhraseConverter), not these
+   * rules, and write no space after a word.
+   */
+  converter?: "pinyin" | "zhuyin" | "kana";
 }
 
 export interface CompiledOutput {

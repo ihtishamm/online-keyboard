@@ -1,0 +1,13 @@
+{
+  "source": "bewiki.xml.bz2",
+  "pages": 39944,
+  "sentences": 831972,
+  "repeatedSentencesSkipped": 99863,
+  "tokens": 9369357,
+  "distinctWords": 491658,
+  "wordsKept": 100000,
+  "nextWordHeads": 9146,
+  "text": "be-train.txt",
+  "textSentences": 13324,
+  "textWeight": 61.01
+}

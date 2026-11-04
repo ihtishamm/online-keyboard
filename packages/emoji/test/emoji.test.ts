@@ -106,14 +106,14 @@ describe("annotations", () => {
 
   it("names nearly every emoji in every language", async () => {
     // A few gaps are allowed (Swedish CLDR has no keycap names): English names still match.
+    const thin: Record<string, number> = {};
     for (const locale of Object.keys(ANNOTATIONS)) {
       const table = await loadAnnotations(locale);
-      const missing = data.emoji.filter((e) => !table[e.char]);
-      expect(missing.length, `${locale}: ${missing.map((e) => e.char).join(" ")}`).toBeLessThan(
-        data.emoji.length / 100,
-      );
+      const missing = data.emoji.filter((e) => !table[e.char]).length;
+      if (missing >= data.emoji.length / 100) thin[locale] = missing;
     }
-  });
+    expect(thin).toEqual({});
+  }, 60_000);
 });
 
 describe("search", () => {

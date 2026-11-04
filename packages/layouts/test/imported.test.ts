@@ -23,7 +23,11 @@ function toJson(value: unknown): string {
 }
 
 describe.each(IMPORTS.map((spec) => [spec.meta.id, spec] as const))("%s", (_id, spec) => {
-  const sourcePath = join(ROOT, "vendor", "cldr" in spec.from ? spec.from.cldr : spec.from.keyman);
+  const sourcePath = join(
+    ROOT,
+    "vendor",
+    "cldr" in spec.from ? spec.from.cldr : "xkb" in spec.from ? spec.from.xkb : spec.from.keyman,
+  );
   const outPath = join(ROOT, "languages", spec.out);
   const { layout, warnings } = buildImport(spec, readFileSync(sourcePath, "utf8"));
 

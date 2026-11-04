@@ -1,0 +1,25 @@
+{
+  "slug": "serbian",
+  "code": "sr",
+  "order": 440,
+  "lang": "sr",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Serbian",
+    "native": "Српски"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["sr-standard", "sr-roman"],
+  "sample": "Добар дан! Како сте данас?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "sr",
+    "bing": "sr-Cyrl"
+  },
+  "tier": null,
+  "notes": "The Cyrillic alphabet. Roman typing takes Gajica without its marks, or with them. No voice yet: the locale has not passed /voice-probe."
+}

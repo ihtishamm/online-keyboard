@@ -37,6 +37,20 @@ const SOURCES: Readonly<Record<string, { file: string; credit: string }>> = {
   ckb: { file: "ckb-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
   ug: { file: "ug-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
   zlm: { file: "zlm-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  el: { file: "el-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  he: { file: "he-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  hy: { file: "hy-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  ka: { file: "ka-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  ru: { file: "ru-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  uk: { file: "uk-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  be: { file: "be-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  bg: { file: "bg-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  sr: { file: "sr-roman-dev.tsv", credit: "The word list in Serbian Latin letters" },
+  mk: { file: "mk-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  kk: { file: "kk-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  ky: { file: "ky-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  tg: { file: "tg-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
+  mn: { file: "mn-roman-dev.tsv", credit: "English Wiktionary, CC BY-SA 4.0" },
 };
 
 for (const [code, { file, credit }] of Object.entries(SOURCES)) {

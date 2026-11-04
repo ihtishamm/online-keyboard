@@ -1,4 +1,4 @@
-import { LATIN_LOCALES, foldLatin } from "../text/latin";
+import { CASE_LOCALES, foldLatin } from "../text/latin";
 import { Lexicon } from "./lexicon";
 import type { RankedWord } from "./compact";
 import { NextWords, type Dictionary } from "./next-words";
@@ -14,7 +14,7 @@ export function makeDictionary(
   code: string,
   accents: readonly RankedWord[] = [],
 ): Dictionary {
-  const locale = LATIN_LOCALES[code];
+  const locale = CASE_LOCALES[code];
   if (!locale) return { lexicon: Lexicon.fromRanked(words), next: NextWords.parse(next, words) };
   const folded = words.map((w) => foldLatin(w, locale));
   return {

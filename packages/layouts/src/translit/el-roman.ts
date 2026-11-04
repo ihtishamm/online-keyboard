@@ -1,0 +1,83 @@
+import type { TranslitScheme } from "@okb/engine";
+
+/**
+ * Greeklish → Greek: kalimera, efharisto, ti kaneis. Greek has several letters for one sound, so
+ * each vowel lists them all, with and without the tonos, and the word list picks the spelling. A
+ * final s is ς. Written for this project.
+ */
+const vowel = (...letters: string[]) =>
+  letters.flatMap((l, i) => [`${l}:${i * 0.3}`, `${TONOS[l] ?? l}:${i * 0.3 + 0.1}`]).join(" ");
+const TONOS: Readonly<Record<string, string>> = {
+  α: "ά",
+  ε: "έ",
+  η: "ή",
+  ι: "ί",
+  ο: "ό",
+  υ: "ύ",
+  ω: "ώ",
+  αι: "αί",
+  ει: "εί",
+  οι: "οί",
+  ου: "ού",
+  αυ: "αύ",
+  ευ: "εύ",
+};
+
+export const EL_ROMAN: TranslitScheme = {
+  id: "el-roman",
+  lang: "el",
+  vowels: "aeiouy",
+  doubledCost: 0,
+  rules: [
+    { in: "th", out: "θ" },
+    { in: "ch", out: "χ" },
+    { in: "kh", out: "χ" },
+    { in: "ps", out: "ψ" },
+    { in: "ks", out: "ξ" },
+    { in: "mp", out: "μπ" },
+    { in: "nt", out: "ντ" },
+    { in: "gk", out: "γκ" },
+    { in: "gg", out: "γγ" },
+    { in: "ai", out: vowel("αι") },
+    { in: "ei", out: vowel("ει") },
+    { in: "oi", out: vowel("οι") },
+    { in: "ou", out: vowel("ου") },
+    { in: "au", out: vowel("αυ") },
+    { in: "af", out: "αυ αύ:0.1 αφ:0.3 άφ:0.4" },
+    { in: "av", out: "αυ αύ:0.1 αβ:0.3 άβ:0.4" },
+    { in: "eu", out: vowel("ευ") },
+    { in: "ef", out: "ευ εύ:0.1 εφ:0.3 έφ:0.4" },
+    { in: "ev", out: "ευ εύ:0.1 εβ:0.3 έβ:0.4" },
+    { in: "a", out: vowel("α") },
+    { in: "e", out: vowel("ε", "η", "αι") },
+    { in: "i", out: vowel("ι", "η", "υ", "ει", "οι") },
+    { in: "o", out: vowel("ο", "ω") },
+    { in: "u", out: vowel("ου", "υ") },
+    { in: "y", out: vowel("υ", "η", "ι") },
+    { in: "w", out: vowel("ω") },
+    { in: "h", out: `χ ${vowel("η")}` },
+    { in: "b", out: "μπ β:0.3" },
+    { in: "c", out: "κ σ:0.8" },
+    { in: "d", out: "δ ντ:0.3" },
+    { in: "f", out: "φ" },
+    { in: "g", out: "γ γκ:0.5" },
+    { in: "j", out: "τζ:0.2 ξ:0.8" },
+    { in: "k", out: "κ" },
+    { in: "l", out: "λ" },
+    { in: "m", out: "μ" },
+    { in: "n", out: "ν" },
+    { in: "p", out: "π" },
+    { in: "q", out: "θ:0.3 κ:0.8" },
+    { in: "r", out: "ρ" },
+    { in: "s", out: "ς", at: "end" },
+    { in: "s", out: "σ", at: "notEnd" },
+    { in: "t", out: "τ" },
+    { in: "v", out: "β" },
+    { in: "x", out: "ξ χ:0.1" },
+    { in: "z", out: "ζ" },
+  ],
+  omitted: "",
+  capitals: {},
+  words: [],
+  punctuation: { "?": ";" },
+};

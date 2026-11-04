@@ -58,7 +58,16 @@ export { bundleLayout, layoutSlug } from "./bundle";
 
 /** The language's first layout in its own script (Roman layouts type Latin letters). */
 export function nativeLayout(language: Language): Layout {
-  return getLayout(language.layouts.find((id) => !getLayout(id).translit)!);
+  const own = language.layouts.find((id) => !getLayout(id).translit);
+  return getLayout(own ?? language.layouts[0]!);
+}
+
+/**
+ * A layout that writes English letters and converts them by rules (ur-roman), with its own
+ * spelling guide. Chinese and Japanese layouts have a scheme too, but convert through readings.
+ */
+export function isRomanLayout(layout: Layout): boolean {
+  return !!layout.translit && !getScheme(layout.translit).converter;
 }
 
 export function allLayouts(): Layout[] {

@@ -1,0 +1,15 @@
+{
+  "source": "viwiki.xml.bz2",
+  "pages": 9666,
+  "sentences": 847581,
+  "repeatedSentencesSkipped": 83419,
+  "tokens": 19174300,
+  "distinctWords": 175846,
+  "wordsKept": 53180,
+  "nextWordHeads": 8820,
+  "text": "vi-train.txt",
+  "textSentences": 32506,
+  "textWeight": 34.85,
+  "heldOutPages": 203,
+  "heldOutSentences": 2000
+}
