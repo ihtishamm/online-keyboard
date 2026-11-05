@@ -1,0 +1,15 @@
+{
+  "source": "sqwiki.xml.bz2",
+  "pages": 29318,
+  "sentences": 623462,
+  "repeatedSentencesSkipped": 106620,
+  "tokens": 9820476,
+  "distinctWords": 414129,
+  "wordsKept": 100000,
+  "nextWordHeads": 9917,
+  "text": "sq-train.txt",
+  "textSentences": 1603,
+  "textWeight": 43.66,
+  "heldOutPages": 621,
+  "heldOutSentences": 2000
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "slovenian",
+  "code": "sl",
+  "order": 640,
+  "lang": "sl",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Slovenian",
+    "native": "Slovenščina"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["sl-easy", "sl-standard"],
+  "accents": "čšžČŠŽ",
+  "sample": "Danes gremo na izlet in si ogledamo čudovito jezero v gorah.",
+  "voice": ["sl-SI"],
+  "wordList": true,
+  "translate": {
+    "google": "sl",
+    "bing": "sl",
+    "deepl": "sl"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

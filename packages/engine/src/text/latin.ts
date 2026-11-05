@@ -24,6 +24,25 @@ export const LATIN_LOCALES: Readonly<Record<string, string>> = {
   ca: "ca",
   hr: "hr",
   vi: "vi",
+  sk: "sk",
+  sl: "sl",
+  sq: "sq",
+  lt: "lt",
+  lv: "lv",
+  et: "et",
+  fi: "fi",
+  nb: "nb",
+  da: "da",
+  is: "is",
+  fo: "fo",
+  ga: "ga",
+  cy: "cy",
+  gd: "gd",
+  mt: "mt",
+  gl: "gl",
+  eo: "eo",
+  la: "la",
+  af: "af",
 };
 
 export const isLatinCode = (code: string): boolean => code in LATIN_LOCALES;
@@ -83,6 +102,9 @@ const BASE: Readonly<Record<string, string>> = {
   æ: "ae",
   œ: "oe",
   ß: "ss",
+  ð: "d",
+  þ: "th",
+  ħ: "h",
 };
 
 /** A folded word without accents, as typed on a plain keyboard: canción → cancion, łódź → lodz. */
@@ -90,7 +112,7 @@ export function stripAccents(folded: string): string {
   return folded
     .normalize("NFD")
     .replace(/\p{M}/gu, "")
-    .replace(/[łøđıæœß]/g, (c) => BASE[c]!)
+    .replace(/[łøđıæœßðþħ]/g, (c) => BASE[c]!)
     .normalize("NFC");
 }
 

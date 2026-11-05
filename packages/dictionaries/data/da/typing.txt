@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+493710	Så er det din tur.
+551813	Spørg Trang om hun skal ud i aften.
+586207	Jeg taler fransk lige så godt som hun gjorde.
+586512	Jeg spørger mig selv om han elsker mig.
+614430	Fjenden flygtede efter vort første angreb.
+619012	Jeg ringer til dem i morgen når jeg kommer hjem.
+692755	Alle er lige for loven.
+697302	Hun spiller klaver om eftermiddagen eller om aftenen.
+707850	Vil du købe en ordbog?
+767845	Når du trykker på denne knap åbnes vinduet automatisk.
+771003	Han kunne ikke komme til festen.
+1191120	Har I de sko i min fodstørrelse?
+1793024	Han spiste appelsiner og æbler.
+1945239	I morgen lander han på månen.
+1979222	Øvelse er den bedste læremester.
+2000243	Så snart et menneske bliver født, begynder det at dø.
+2466668	Liisa er en aktiv og energisk ung kvinde.
+2615135	Vi har boet i Tokyo uafbrudt i seks år.
+2636860	Niels Bohr arbejdede på Manhattanprojektet under anden verdenskrig.
+3182804	Jeg vil betale med rejsechecks.
+3215801	Der er femogfyrre elever i klassen.
+3328559	Hans analyse af årsagerne til opstanden var korrekt.
+3394182	Dit hår skinner som guld.
+3752318	Landsbybeboerne mødte op alle mand af hus.
+3850548	Vores arbejde viste sig at være forgæves.
+4237827	Hvor gammel er du og hvor meget vejer du?
+4293843	I går hørte jeg en smuk sang.
+4352511	Hvis jeg var dig, ville jeg male det blåt.
+4515202	Hun har drukket for meget.
+4712252	Afrika er et kontinent, Grønland ikke.
+5060439	Min vaskemaskine har opgivet ævred.
+5394465	Han ankom forpustet til stationen.
+5645803	Det ser ud til at der kommer regn.
+5838366	Du ved at det er sandt.
+5996354	Maria vinkede farvel til dem.
+6558740	Du vover ikke spise mig!
+6939456	Hvor gammel skal man være for at køre bil?
+6999170	Sami brugte omkring seks-syv timer om dagen på motion.
+7248745	Kunne jeg få en øl?
+7310287	Jeg troede, at dette var almindeligt kendt.
+7337786	Nu er det dit problem.
+7724560	Vi vil ansætte en som taler engelsk.
+7797650	Har du givet dine heste noget at drikke?
+7821359	Må jeg låne din græsslåmaskine?
+7942295	Hun sikrede sig at ingen kunne se hende.
+8104366	Jeg har en god hukommelse.
+8207386	Der er hul i din ene strømpe.
+8216107	Jeg har glemt at låse til lagerrummet.
+8216116	Jeg er ved at lukke min butik for i dag.
+8252725	Mange hænder gør arbejdet lettere.
+8258050	Paul rejste sig fra lænestolen og gik ud i køkkenet for at lave en kop pulverkaffe.
+8360900	Solen skjuler sig bag skyerne.
+8793014	Gaden var propfuld af shoppere.
+8819812	Det gjorde du med vilje.
+9671863	Vi får brug for al den hjælp, vi kan få.
+10141946	Min lærer beskyldte mig for at have plagieret.
+10191794	Resten er op til dig.
+10196563	Hun elsker at plukke blomster.
+10263921	Dam spilles på det samme bræt som skak.
+10322770	Både mit modersmål og mit fædrelands sprog er japansk.
+10366845	Hvorfor opfører du dig så dumt?
+10576631	Det to tusind år gamle kristne Europa er ved at dø.
+10628285	Hun kender hverken mig eller dig.
+10665011	Jeg kan godt lide at rede mit hår.
+10669641	Min far har læst et hundrede og otteogtyve bøger.
+10698681	Cirka to tredjedele af vores krop består af vand.
+11059780	Jeg ved at du aldrig vil elske mig lige så meget som jeg elsker dig.
+11592986	I USA er desinformation blevet en god forretning.
+12009226	Kan du give mig endnu et eksempel?
+12009227	Kan du give mig et eksempel mere?
+12099074	Jeg må hellere ringe efter en taxa.
+12146871	Har I to nogensinde danset sammen?
+12242054	Jeg lavede kun tre fejl.
+12333228	Hun har bestemt sig for at sælge sit hus.
+12365585	Jeg blev bidt af dit barn.
+12473150	Vores samtale varede i timevis.
+12542903	Vi har ikke set hinanden, siden vi var børn.
+13188892	Hvornår købte du disse æg?
+13761109	Telefonen ringede netop som han var på vej ud ad døren.
+13803927	Adidas fremstiller sko af kængurulæder.

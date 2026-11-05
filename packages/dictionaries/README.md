@@ -58,6 +58,25 @@ dumps, downloaded in October 2026; Urdu's source is described below):
 | `ko`  | Korean          | 15,409  | 10.6M      | 100,000    | 37,500                 |
 | `ja`  | Japanese        | 6,216   | 22.5M      | 98,114     | 35,000                 |
 | `zh`  | Chinese         | 8,058   | 15.3M      | 55,712     | 35,000                 |
+| `sk` | Slovak | 23,008 | 8.3M | 100,000 | see `dict.txt` |
+| `sl` | Slovenian | 21,825 | 8.4M | 100,000 | see `dict.txt` |
+| `sq` | Albanian | 29,318 | 9.8M | 100,000 | see `dict.txt` |
+| `lt` | Lithuanian | 31,014 | 7.5M | 100,000 | see `dict.txt` |
+| `lv` | Latvian | 22,878 | 6.7M | 100,000 | see `dict.txt` |
+| `et` | Estonian | 25,030 | 8.2M | 100,000 | see `dict.txt` |
+| `fi` | Finnish | 9,459 | 8.3M | 100,000 | see `dict.txt` |
+| `nb` | Norwegian (Bokmål) | 16,100 | 10.1M | 100,000 | see `dict.txt` |
+| `da` | Danish | 19,355 | 9.9M | 100,000 | see `dict.txt` |
+| `is` | Icelandic | 39,878 | 7.8M | 100,000 | see `dict.txt` |
+| `fo` | Faroese | 14,266 | 1.6M | 42,454 | see `dict.txt` |
+| `ga` | Irish | 61,945 | 8.0M | 95,236 | see `dict.txt` |
+| `cy` | Welsh | 59,286 | 7.0M | 83,083 | see `dict.txt` |
+| `gd` | Scottish Gaelic | 16,134 | 1.6M | 28,402 | see `dict.txt` |
+| `mt` | Maltese | 8,089 | 6.8M | 77,884 | see `dict.txt` |
+| `gl` | Galician | 18,097 | 10.7M | 100,000 | see `dict.txt` |
+| `eo` | Esperanto | 21,336 | 15.5M | 100,000 | see `dict.txt` |
+| `la` | Latin | 43,377 | 6.0M | 100,000 | see `dict.txt` |
+| `af` | Afrikaans | 20,526 | 9.6M | 100,000 | see `dict.txt` |
 
 The Latin-script languages (plan 7.5, 7.7) read the first 20 to 40 MB of their dump (the oldest, most
 edited articles), and add everyday sentences from [Tatoeba](https://tatoeba.org) through
@@ -73,6 +92,10 @@ they are most often written in mid-sentence (Madrid, la), and lookups fold case.
 endings after an apostrophe (Türkiye'nin) belong to the name before them; Romanian's old
 cedilla letters ş ţ are read as the comma letters ș ț.
 Every 50th article is held out for the smart-accent test (`test/data/<code>-heldout.txt`).
+
+Wave 4's European languages (plan 9c) read the first 40 MB of each compressed dump. A Tatoeba set
+under 20,000 sentences now counts in proportion, up to the half share at 20,000: 16 Faroese
+sentences had put their words at the top of the list. Lists built earlier were not rebuilt.
 
 Balochi has no Wikipedia: its Roman typing runs on rules alone, and it has no suggestions or
 spell check yet.

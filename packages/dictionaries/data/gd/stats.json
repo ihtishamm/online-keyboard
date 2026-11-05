@@ -1,0 +1,15 @@
+{
+  "source": "gdwiki.xml.bz2",
+  "pages": 16134,
+  "sentences": 120892,
+  "repeatedSentencesSkipped": 30430,
+  "tokens": 1594464,
+  "distinctWords": 88610,
+  "wordsKept": 28402,
+  "nextWordHeads": 6699,
+  "text": "gd-train.txt",
+  "textSentences": 46,
+  "textWeight": 10.94,
+  "heldOutPages": 354,
+  "heldOutSentences": 1726
+}

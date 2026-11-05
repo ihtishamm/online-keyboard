@@ -1,0 +1,25 @@
+{
+  "slug": "latin",
+  "code": "la",
+  "order": 800,
+  "lang": "la",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Latin",
+    "native": "Latina"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["la-easy"],
+  "accents": "āēīōūȳæœĀĒĪŌŪȲÆŒ",
+  "sample": "Gallia est omnis dīvīsa in partēs trēs.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "la"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

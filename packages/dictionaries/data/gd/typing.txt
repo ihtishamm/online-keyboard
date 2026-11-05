@@ -1,0 +1,44 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+772670	Dh'èist mi ri òran glè bhòidheach an-dè.
+773130	Tha sin a' cur fearg oirre.
+851886	Tha caileag bhòidheach anns a' phàipear ann.
+851888	An robh sibh air a' mhonadh an-dè?
+851891	Bha ròn ann air a' chladach.
+851901	Nach eil aran ùr anns a' bhocsa ann?
+851904	Bha an duine, leis a' chù, cho mall air a' chnoc.
+851906	Bha an cù anns a' bhocsa fon bhòrd.
+851920	Tha an latha air a' mhonadh math dhut.
+851929	Nach eil iad a' dol dhan chèilidh anns a' bhaile?
+851985	Bha ròn ann anns an uisge, agus air a' chladach.
+851990	Nach robh iad aig a' mhuir tron oidhche?
+851996	Bha sgeulachd inntinneach anns an litir dhan bhalach.
+851998	Bha slat fhada ùr ann anns a' bhùth.
+852000	Nach robh iad ùine fhada anns a' bhaile?
+852001	Bha an cù dubh air an fheur ris a' ghrèin.
+852009	Bha a' ghrian blàth anns a' mhadainn, ach tha i fuar an-dràsda.
+852012	Tha a' Ghàidhlig glè inntinneach, nach eil?
+852013	Tha an nighean ris an uinneig oir tha a' ghrian glè bhlàth an-diugh.
+852099	Cha bhi an làraidh a' tighinn a-màireach, ma-thà.
+852106	Tha mi a' leughadh leabhar mun chànain.
+852127	Tha sibh trang an-dràsda, nach eil?
+852158	Tha mi glè thoilichte a' cluinntinn gu bheil Gàidhlig agad.
+1514151	Chan eil gràdh orm aig a' bhalach is tha gaol agam air.
+3475991	Chan eil iad a' cuideachadh.
+3605536	Tha cuimhn' agam air an-dràsda.
+3872513	Tha còig bhò anns a' bhaile bheag.
+4189383	Tha mi làn misneachd an-diugh.
+4224168	Càit a bheil thu a' fuireach?
+5745721	Is i Gàidhlig an aon chànain am beul nam bàrd 's nan èisg.
+5748832	Chan eil an càr aca math.
+5751735	Is coma le Tàmas Màiri.
+5751829	Tha iad a' bruidhinn ri chèile.
+5751833	Tha Tàmas agus Màiri a' bruidhinn ri chèile.
+5883792	Tha balach agus dithis nighean aig Tòmas.
+5919634	Cha robh smùid air Tòmas.
+8115191	Bha latha breagha a bh'ann an-dè.
+8697110	Dè na cur-seachadan a th' agad?
+9018961	A bheil thu a' bruidhinn Gàidhlig?
+9295531	Tha mi a' smaoineachadh gu bheil clann aca.
+13568617	Tha falt a' falbh às.
+13568618	Tha falt a' falbh aiste.

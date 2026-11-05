@@ -1,0 +1,15 @@
+{
+  "source": "cywiki.xml.bz2",
+  "pages": 59286,
+  "sentences": 537519,
+  "repeatedSentencesSkipped": 156867,
+  "tokens": 6954608,
+  "distinctWords": 239495,
+  "wordsKept": 83083,
+  "nextWordHeads": 9906,
+  "text": "cy-train.txt",
+  "textSentences": 669,
+  "textWeight": 34.6,
+  "heldOutPages": 1193,
+  "heldOutSentences": 2000
+}

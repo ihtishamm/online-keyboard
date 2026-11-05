@@ -20,6 +20,25 @@ const WAVE1 = [
   ["swedish", "Swedish", "standard"],
   ["catalan", "Catalan", "spain"],
   ["croatian", "Croatian", "standard"],
+  // Wave 4, European Latin (9c).
+  ["slovak", "Slovak", "qwertz"],
+  ["slovenian", "Slovenian", "standard"],
+  ["albanian", "Albanian", "standard"],
+  ["lithuanian", "Lithuanian", "standard"],
+  ["latvian", "Latvian", "qwerty"],
+  ["estonian", "Estonian", "standard"],
+  ["finnish", "Finnish", "standard"],
+  ["norwegian", "Norwegian", "standard"],
+  ["danish", "Danish", "standard"],
+  ["icelandic", "Icelandic", "standard"],
+  ["faroese", "Faroese", "standard"],
+  ["irish", "Irish", "standard"],
+  ["welsh", "Welsh", "uk-extended"],
+  ["scottish-gaelic", "Scottish Gaelic", "standard"],
+  ["maltese", "Maltese", "47"],
+  ["galician", "Galician", "spain"],
+  ["esperanto", "Esperanto", "easy"],
+  ["afrikaans", "Afrikaans", "easy"],
 ] as const;
 
 const ROOT = new URL("../../../", import.meta.url);

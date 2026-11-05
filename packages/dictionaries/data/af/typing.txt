@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+1354803	Ek het dit nie gesien nie.
+1606908	Moenie te veel rook nie.
+1747896	Maar jy weet goed dat hierdie negatiewe gevolge sou hê.
+1750757	Hy hou nie daarvan om per vliegtuig te reis nie.
+1752709	Ons moet die sneeu van die dak afvee.
+1754060	Sy stel belang daarin om nuwe idees te leer.
+1754862	Ek het my vriende gister gesien.
+1766993	Hy kan nie veel Engels praat nie.
+1783371	Ekskuus. Ek het nie gedink hierdie is jou sitplek nie.
+1838923	Die musiek is moeilik vir volwassenes om te verstaan.
+1857680	Die warm bad het my spiere ontspan.
+1857687	Hoe spel jy jou naam?
+1915339	Hy het belowe om elke dag te skryf.
+1974498	Ek het twee koppies koffie gedrink.
+2364222	Dit maak nie saak wat hy sê nie, moet hom nie vertrou nie.
+2364250	Dis nie hoe ek wil hê dinge moet wees nie.
+2364285	Kom ons wag tot hy kom.
+2364325	Die reuk van gefermenteerde sojabone maak hom siek.
+2364461	Lig is die stimulus wat veroorsaak dat blomme oopgaan.
+2714707	Die somer is tyd vir die skoolvakansie.
+2783269	Die kok sit in die kombuis.
+2783885	As jy meer besonderhede oor dit versoek sal jy my baas moet vra.
+2783897	Ek dink ek sal ses ure met jou kan spandeer nie.
+2783942	Ek sal die volgende bus vang.
+2786682	Ek is jammer oor laat wees.
+2786738	Ek sal dit terug maak vir aandete.
+2788182	Ek het perongeluk die melk gemors.
+3328105	Kan ons hierdie deur sluit?
+3442821	Sit die kaartspel op die eikehouttafel.
+3442839	Dit kom voor asof die baba rustig slaap.
+3514828	Ek het deur die hele fliek geslaap.
+4639666	Ek weet jy gaan nee sê.
+4871230	Ek wil nie verander nie.
+4871252	Ek wil nie meer lieg nie.
+4871270	Ek wil dit nie hoor nie.
+4874598	Waar het julle so geleer dans?
+5082280	Sy het met hom getrou.
+5169369	Ek wens ek was verkeerd.
+5472260	Vier lande blok die integrasie van die Oekraiene in die Europese Unie.
+5509989	Ons staan onder sy bevel.
+5512493	Nee, maar ek speel tennis.
+5512564	Niemand het dus ag geslaan op my nie.
+5529922	Liewe vriend, wat laat jou twyfel?
+5529989	Vermy hierdie onderwerp in sy teenwoordigheid.
+5535105	Niemand wil dit doen nie, maar een van ons moet.
+5645897	Dit is onbeskof om in ander se teenwoordigheid te fluister.
+5659856	Ons is in die woud.
+5660119	Jy vergelyk appels met pere.
+5733941	Jy moet die krag afskakel.
+5783225	Die katte is bang vir water.
+5792170	Sny die materiaal skuins af.
+5843273	Die hotel is vol buitelanders.
+5845326	Ek moet my sokkies uittrek.
+5968899	Hy is op die toilet.
+6456290	Ons het skoon van hulle vergeet.
+6456300	Ek sal niemand van haar vertel nie.
+6456333	Ek gee nie om oor haar nie.
+6456342	Waarom gee jy vir hom om?
+6456346	Ek het vir hom om gegee.
+6456410	Dit is hoe ek oor haar voel.
+6456512	Ek wil hê tom moet gaan.
+7986872	Ek het jou meisie ontmoet.
+7987693	Sami se vriende is wonderlik.
+8524675	Watse sin is meer korrek?
+9210333	As jou kar skielik breek is jou eerste reaksie baie keer om te paniek.
+9247088	Kan ek jou help? Nee, dis oraait.
+10471631	Weet jy wat jy nou doen?
+10471694	Selfs kinders het hul eie selfone.
+10472308	Ons moet voortgaan om dié te doen.
+12333157	Volgende week is het Halloween.
+12760819	Grieks is moeilik om te leer.
+12830768	Wat ek wil hê, sal ek kry.
+13368827	Ziri se palm bome dra baie minder dadels.
+13458357	Die goeie student leer nou die leermeester.
+13458379	Hulle vriendskap het deur die jare versterk.
+13458428	Ons wil jou nie pla nie.
+13577989	Ek wil nie hê jy moet dink dat ek nie gelukkig is met jou besluit nie.
+13577997	Sami het niemand in gedagte gehad nie.
+13699229	Ek sal jou nou daarvan vertel.
+13907005	Almal sê dit, niemand weet dit nie.

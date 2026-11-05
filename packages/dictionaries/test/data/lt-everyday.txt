@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+566965	Aš tavęs ilgiuosi.
+566967	Man visad labiau patiko paslaptingi personažai.
+568894	Kada norėtum jį pamatyti?
+631674	Aš panaši į savo motiną.
+631679	Mano motina irgi yra mirusi.
+868188	Negaliu pakelti tokio sunkaus automobilio.
+962028	Kaip praleidai vasarą?
+1219265	Aš nežinau ką pasakyti.
+1219980	Aš norėčiau padėti, bet aš esu labai užsiėmęs.
+1491639	Šio metodo veiksmingumas buvo patvirtintas daugelio žmonių patirtimi.
+1570484	Jis išgirdo kaip kažkas pasakė jo vardą.
+1570689	Kokia negraži katė.
+1572374	Aš pati rasiu savo automobilį.
+1572433	Visos jos katės sėdi and automobilio stogo.
+1579962	Aš niekada negėriau arbatos su pienu.
+1580020	Katė nusinešė mano mėsą.
+1587666	Mes radome gražią mėlyną lagūną tolimoje salos pusėje.
+1600678	"Aš turiu jį pamatyti." "Kam?"
+1601880	Tomas apie Indoneziją daug nežino.
+1604201	Žiūrėk man į akis.
+1605359	Ateik padėk man.
+1605368	Jo automobilis buvo rimtai sugadintas.
+1607321	Žmonės turėtų dirbti.
+1607496	Ar esi tikra?
+1607713	Pyragas yra skanus.
+1607725	Ar esi tikras?
+1609794	Jis kentėjo nuo sunkaus galvos skausmo.
+1610196	Gaila kad nenuėjai su mumis.
+1611244	Jis troško mirties.
+1626555	Tomas vis dar yra kalinys.
+1635408	Ar esi pasiruošęs išgirsti blogas žinias?
+1635417	Ar esate pasiruošę valgyti?
+1641517	Nesu tikras ar tai berniukas ar mergaitė.
+1660928	Kareiviai buvo pasiruošę mirti už savo šalį.
+1662550	Mes turime paskambinti policijai.
+1666104	Šiame name gyvena dvi šeimos.
+1666192	Šis sakinys yra juokingas.
+1666897	Aš padarysiu viską ką galiu.
+1673162	Aš išpyliau savo kavą ant kilimo.
+1673842	Bažnyčia yra kitoje gatvės pusėje.
+1677321	Tomas skundėsi dėl triukšmo.
+1774795	Kada esate užsiėmęs?
+1997146	Ji nekenčia jo.
+2119516	Linkiu tau geros kelionės.
+2152113	Aš žinau kad šitai veiks.
+2153654	Man velniškai skauda galva.
+2153782	Lauke nieko nebuvo.
+2158751	Tai yra didžiulė pažanga lyginant su praeitais metais.
+2160343	Pajutau aštrų skausmą pilve.
+2160499	Jeigu tik aš galėčiau pasikalbėti su visais pasaulio žmonėmis!
+2166256	Tai nėra taip lengva.
+2167244	Jis maldavo manęs likti.
+2167340	Aš verčiau, aš verčiu, aš versiu, aš versčiau... bet tik jei uždirbčiau pinigų.
+2167352	Kurį laiką venkite kepto maisto.
+2174562	Du arbatos į dvidešimt antrą.
+2207117	Aš nieko nepasakiau.
+2219284	Ar gali man parodyti?
+2226179	Aš girdėjau, kad tu išėjai į pensiją. Sveikinu!
+2278795	Tai yra mano tėvo namai.
+2492046	Mudu su juo tapome draugais.
+2586262	"Apie ką galvoji?" "Apie nieką..."
+2608509	Aš nekenčiu Helovino.
+2615524	Tai mane pribloškia.
+2616203	Aš pavėlavau į savo skrydį.
+2618364	Aš dažnai vykstu į užsienį.
+2618622	Ar esi tikra, kad nenori gyventi namie su tėvais?
+2653796	Ji labai mėgsta žvejoti.
+2653797	Jis labai mėgsta žvejybą.
+2708743	Aš esu žurnalistė.
+2716744	Čia aš su tavimi negaliu sutikti.
+2729266	Liaukitės mušę katę!
+2748229	Tavo šypsena visada daro mane laimingą.
+2752812	Jis jam net rankos nepaspaudė.
+2762395	Mes atvykome truputį pavėlavę.
+2970366	Skurdas grįžta į Europą.
+2993884	Jis dreba nuo šalčio.
+3088862	Nešvaistyk laiko menkniekiams.
+3111732	Aš ją padėjau į stalčių.
+3146787	Verčiau mirsiu, nei pasiduosiu!
+3180157	Jei būtum gyvūnas, kokiu būtum?
+3185781	Aš norėjau sugrįžti į tavo kaimą.
+3188803	Kokia tavo mėgstamiausia grupė?
+3192588	Ji neturėjo servetėlių nusišluostyti ašaroms .
+3206381	Aš esu tikras.
+3207898	Per prievartą mylimas nebusi.
+3208724	Aš mačiau jį bėgantį.
+3213850	Kame yra skirtumas tarp miesto ir kaimo?
+3218305	Kambaryje buvo betvarkė.
+3220848	Kelte buvo daugiausiai tik 100 keleivių.
+3262988	Kiekvieną dieną skaitai prancūziškai?
+3263596	Kažkada tu mirsi.
+3296646	Ji stovėjo ir žiūrėjo į jūrą.
+3297023	Tomas ir Merė atrodo laimingi.
+3324117	Įtikinau jį eiti į vakarėlį.
+3497795	Per klaidą įėjau į kažkieno kito kambarį.
+3526068	Jis tik praėjusį mėnesį grįžo iš užsienio.
+3533478	Jis netiki Dievu.
+3542797	Karvė visai ne toks kvailas gyvūnas, kaip daugelis galvoja.
+3571518	Perduokite linkėjimus seneliui.
+3586164	Aš tik noriu būti tobulas.
+3589984	Tomas vis dar rašo dainas.
+3590028	Jūs žinote, kur Tomas padėjo savo raktus?
+3596249	Nežaiskite su ugnimi.
+3597723	Ar galiu tavęs kai ko paklausti?
+3745057	Jis mane skambino.
+3934168	Kas valgo bites?
+3937564	Aš beveik nežiūriu televizoriaus.
+3937609	Šuo graužia kaulą.
+3942849	Ką jūs, panelės, veikiate?
+3953296	Džiaugiuosi, kad esi čia.
+3956749	Kaip galėjote leisti Tomui išeiti?
+3958269	Mano problema yra ta, kad aš visą laiką esu alkanas.
+3980104	Panašu, kad jie įsimylėję.
+4002057	Atsakomybės jausmas — mano kalėjimas.
+4156717	Tomas nemėgsta futbolo.
+4588328	Jie kalba daug.
+4614648	Savo gimtinėje, Prancūzijoje, Tatoebos projektas tapo kultūriniu ir socialiniu fenomenu.
+4614741	Vien tik tai, kad tai yra Tatoeba.org duomenų bazėje, dar nereiškia, kad tai - sakinys.
+4615681	Jis pažiūrėjo man į akis.
+4640101	Įsivaizduok, kad tu - tai aš.
+4661348	Noriu tau pasakyti kai ką svarbaus.
+4905390	Priešmirtinio raštelio nebuvo rasta.
+4905401	Nesudaužęs kiaušinio omleto neiškepsi.
+5878294	Ar jūs suspėsit?
+6020067	Nuo mokyklos iki bibliotekos netoli.
+6403608	Kalba tai dialektas su kariuomene ir jūrų pajėgomis.
+6452312	Kiek turime laukti?
+6454814	Jis nebijo pavojų.
+6742457	Ar tu dažnai rašai savo tėvams?
+6759456	Kas kitas apie tai žino?
+6787413	Dabar kambarys paruoštas tau.
+6805396	Sekantį kartą ateik daug anksčiau.
+6807770	Ar tu nori žinoti, kodėl šiandien čia nėra Tomo?
+6821446	Aš nusivilkau paltą.
+6832925	Tomas ir Marija visada gyveno Bostone.
+6833369	Mergaitės per dantis traukė.
+6844135	Jis yra vienintelis vyras, kurį aš kažkada mylėjau.
+6889584	Ji tyčia išmušė langą.
+6901614	Bepigu reikalauti, kada tu žinai, kad esi teisus.
+6901726	Ar jūsų mokykloje visi berniukai turi mokytis virti?
+6915166	Tu neprisipažįsti, kad ten ėjai?
+6934195	Keliamuosiuose metuose yra 366 dienos.
+6940283	Dar visai neseniai, jis net žiemą apsiliedavo šaltu vandeniu.
+6951255	Ji pastoviai dingsta.
+6952625	Man reikia atsakymų.
+6960077	Jis savo šešėlio bijo.
+6970092	Aš sumaišiau jį su jo broliu.
+6971755	Aš maniau, kad tu tą pasakysi.
+6991241	Duok man žemėlapį.
+6991270	Kaip tu labiau mėgsti paruošti upėtakį?
+6994490	Aš tikiuosi, kad jiems pasiseks.
+7005828	Aš jiems paaiškinau žaidimo taisykles.
+7014116	Tomas buvo labai įpykęs.
+7014712	Mes jį aptikome.
+7027914	Tomas nežino kuo sviestas skiriasi nuo margarino.
+7036856	Aš noriu, kad tu eitum į savo kambarį ir susidėtum savo daiktus.
+7040832	Vienas iš jų matyt meluoja.
+7059600	Aš plisavau sukneles.
+7101903	Prašau padaryti kiekvieno puslapio tris kopijas.
+7195928	Aš užmiršau nupirkti sukaktuvių tortą.
+7220794	Po tėvo mirties, verslu rūpinosi jis.
+7220872	Ar kas nors atrodo įtartina?
+7244341	Didelis kraitis, daug aukso, bet nėra širdies.
+7248012	Tomas palyginti linksmas.
+7280435	Ji įsimylėjo vyrą, kuris ją myli.
+7301900	Jimas suvalgė tris obuolius ir pasakė, kad dar galėtų tiek pat suvalgyti.
+7315904	Aš nieko taip skanaus dar niekada nevalgiau.
+7356365	Ji nežino, kas tuos namus pastatė.
+7416005	Ką tu darai tokioje izoliuotoje vietoje?
+7481440	Atrodo, kad dabar Tomas yra užimtas.
+7529922	Jis vėl prapuolė.
+7551336	Laivas nuskendo su žmonėmis ir prekėmis.
+7557799	Atrodo, kad tik nedaugelis žmonių gali išspręsti šitą matematikos uždavinį.
+7667804	Kiekvieną kartą, kai ji grįžta iš kelionės, savo sūnui parveža dovaną.
+7701059	Jo naujas išradimas jau po kelių minučių sprogo.
+7730427	Visas pasaulis dega.
+7746036	Troškinys neįsivaizduojamas be raudonos paprikos.
+7748198	Aš matau šiaurinį elnią.
+7778626	Dėl jo sveikatos aš labai susirūpinusi.
+7787007	Kaip sako ''Aš tave myliu!'' prancūziškai?
+7796321	Kur aš galiu plytų nusipirkti?
+7796474	Ji sunerimo dėl jo sveikatos.
+7809970	Aš nusprendžiau pakartotinai bandyti.
+7812124	Aš vaikščiojau, mėgindamas nusiraminti.
+7812128	Nuo jo veido žliaugia prakaitas.
+7812278	Jį naudodamas, laikykis šitų instrukcijų.
+7813293	Mes mokame aukštą nuomos kainą.
+7832006	Jis buvo sunkumų kilnojimo olimpinis čempionas.
+7832309	Mes pusryčiausime pusę septynių.
+7834362	Aš nieko nenoriu iš tavęs.
+7865336	Jis ieško progos su tavimi vienu pasikalbėti.
+7865468	Mes čia minutėlei atsisėskime ir mintimis pažvelkime į reginį.
+7880134	Tomas greitai bėga.
+7888394	Tyla yra sutikimas.
+7899745	Mane vejasi policija.
+7903098	Mano draugas pasakė gražią prakalbą.
+7910206	Aš apie kažką kitą paklausiau.
+7942615	Tomas tą padarė būdamas neblaivus.
+7946189	Jie nelydėjo vaikų į mokyklą.
+7946939	Aš Jonui daviau obuolį.
+7950657	Aš jaučiuosi gana kvailai, kai prisimenu, ką aš padariau.
+7950663	Darbininkai turi būti trumpai apsikirpę.
+7952548	Ir Nojus tą padarė; viską, ką jam Dievas liepė, jis taip padarė.
+7954647	Kokiam tikslui yra pianino pedalai?
+7957338	Gyvenimas yra kaip sapnas.
+7976878	Didžiąją dalį savo atostogų, mes praleidžiame kaime.
+7979440	Naudojant skaičiuoklį, lengva sudėti skaičius.
+7988747	Jis paėmė ją už rankos ir įvedė į rūmus.
+7990908	Klastotė nuo originalo skiriasi tuo, kad ji atrodo tikresnė.
+7996302	Ar tu tikrai galvoji, kad Tomas yra turtingas?
+8000144	Bėra kumelė, šokinėdama žvengė, bandydama numesti raitelį.
+8001974	Nenaudinga su likimu bartis.
+8003920	Po ilgo pasivaikščiojimo, ji matyt yra pavargusi.
+8014426	Čia mes turime mažai lankytojų.
+8029214	Aš, kažkur čia, pamečiau savo raktą.
+8033565	Ji atrodė taip, tarsi būtų ilgai sirgusi.
+8036616	Jis vasarą mėgsta plaukioti.
+8043917	Šita lova šalta.
+8070111	Aš pamiršau pasiimti savo skėtį.
+8070646	Mano nuomonė visai kita negu tavo.
+8076189	Parduotuvės atidarytos nuo pirmadienio iki šeštadienio.
+8080593	Tu atrodai labai pavargęs.
+8080706	Kur tavo lagaminas?
+8133127	Tu tikrai nori sublogti?
+8159857	Jis nėra aukščiausios klasės muzikantas.
+8195209	Tomo stora oda.
+8203643	Tu plačiai atvėrei duris.
+8210308	Aš Tomą pažįstu nuo tada, kai mes kartu ėjome į mokyklą.
+8219501	Nuogąstauju, kad tu klysti.
+8221773	Tomas truputį palaukė.
+8241782	Man buvo keista, kad jis nepasirodė.
+8243694	Nelengva atskirti teisigą nuo neteisingo.
+8311066	Mes tiesiog norime su juo pasišnekėti.
+8335624	Jie nesutiko, kad aš jį tikrinčiau.
+8346026	Golfas yra sportas, kurio aš nemėgstu.
+8357327	Atnešk man dar alaus!
+8360957	''Ačiū tau už pagalbą.'' - ''Nėr už ką!''
+8371109	Kada tu sugrįši namo?
+8378092	Viena kregždė pavasario neatneša.
+8379415	Tau reikalinga pagalba.
+8379909	Taip visada buvo.
+8389974	Tu esi bjaurus žmogus.
+8399561	Aš verčiau eisiu pėsčias.
+8404393	Aš prislėgtas, nes čia nėra tavęs.
+8412369	Mano draugas mokosi korėjiečių kalbą.
+8414317	Mano vyras tikėtina buvo girtas, kada jis tą pasirašė.
+8426055	Ponas Kameronas smuklėje pamiršo dukterį.
+8432715	Šitas sakinys yra dviprasmis.
+8439513	Tomas globojo mane.
+8448288	Ar tu nori, kad aš atidaryčiau langus?
+8494494	Tu esi ardus.
+8524826	Niekada iš naujo.
+8533847	Jie pasirengę svarstyti problemą.
+8546099	Kiek laiko tu jau čia?
+8546138	Ar tai tikrai taip klaiku?
+8551886	Aš rytoj keliausiu į Paryžių.
+8579240	Neužmiršk jai paskambinti.
+8583000	Jie per daug dirba.
+8583858	Ar Tomas ką nors darė?
+8585774	Aš nešiausi tris knygas.
+8619642	Ateinančiais metais šitas žvyruotas kelias bus išlietas asfaltu.
+8631003	Aš turiu keturias seseris ir brolį.
+8636485	Tu nori, kad aš su juo šnekėčiau?
+8686731	Tomas yra klastingas sukčius!
+8751267	Jis savo išvykimą atidėjo iki rytojaus.
+8758459	Ar perlai tikri, ar dirbtiniai?
+8758463	Ar perlai tikri, ar tai surogatai?
+8758880	Jis neleis, kad tu išeitum.
+8759354	Ar didelė jos nosis?
+8773779	Tomas yra nepakenčiamas.
+8814210	Aš nelabai gerai jaučiuosi.
+8833097	Tas ilgas driežas lėtai ropojo per atokią tuščią gatvę.
+8841148	Aš neapkenčiu Tomo.
+8841168	Tomas lėtai eina.
+8842354	Jis bandė įveikti savo skrupulus.
+8842363	Paskambink jam šįvakar!
+8870761	Aš gyvenu Lisabonoje.
+8880444	Kada buvau jaunas, aš daug romanų perskaičiau.
+8902289	Aš privariau Tomą iki ašarų.
+8913840	Tomas ir Marija yra su savo tėvais.
+8914970	Turbūt tau reikia gėrimo.
+8915621	Galvoju, kad aš niekada nevalgiau šunienos.
+8916022	Kada jis grįš iš Milano?
+8916030	Aš noriu susikurti "Facebook" vartotojo paskyrą.
+8921546	Ar tai sąmojis?
+8927574	Netikėtai princas pastebėjo, kad šalia nėra jo asmens sargybinio.
+8929261	Aš bandžiau tave rasti.
+8930269	Aš žinau, kad Tomas dažnai tą daro.
+8941540	Tomas niekada neatidaro šito lango.
+8949846	Jis puikiai kalba ir angliškai, ir prancūziškai.
+8950325	Aš dar nežinau , ką studijuosiu.
+8953565	Jis buvo mažas, bet tvirtas.
+8961265	Nustok nuo draugo nusirašinėti.
+8961276	Klausyk kas kalba!
+8962130	Aš bandau tapti dainininku.
+8964541	Aš čia nemėgstu būti.
+8975443	Jie kalbėjo apie kultūrą.
+8979710	Kodėl tu pats su savimi kalbi?
+8989001	Ta teorija yra beprasmybė.
+9000105	Noriu sužinoti, ką aš sugebu.
+9002534	Aš nesu labai kūrybiškas.
+9002919	Roma yra vienas iš seniausių Europos miestų.
+9004884	Ji nesugeba labai gerai meluoti.
+9005564	Už tavęs Tomo nėra.
+9013449	Šiandien nepaprasta diena!
+9019015	Ji yra ir turtinga, ir labai graži.
+9019065	Aš būsiu savo kontoroje.
+9019434	Dangus aptemo ir netrukus pradėjo lyti.
+9019867	Ar namuose tu kas dieną klausai radiją?
+9022737	Tu greitai sužinosi tiesą.
+9034089	Katė miega šalia sofos.
+9034165	Ligoninė yra šalia mokyklos.
+9044826	Mes turime atgal eiti.
+9045211	Jis daug kalba apie jos tėvą.
+9045364	Vietoj to, kad juoktis, ji verkia.
+9051205	Mūsų šuo kaulus užkasa sode.
+9051213	Žinok, kad aš knarkiu.
+9062731	Mano katė dažnai kniaukia.
+9063115	Kodėl tu taip nori mokytis anglų kalbos?
+9063896	Mes tai sustabdysime.
+9098899	Savaime aišku, kad jūs melavote.
+9109837	Kodėl aš jiems turiu padėti?
+9122296	Konsultacijai buvo pakviestas ekspertas.
+9129666	Jis teigė, kad yra beturtis.
+9143927	Aš taip pat labai išalgęs.
+9143955	Širdies potraukis yra likimo balsas.
+9146108	Kur yra bitės, čia pat turi būti ir medus.
+9152226	Kas dėl manęs, tai aš visiškai patenkintas.
+9181369	Jie yra įžymūs.
+9240209	Sūris sunkiai virškinamas.
+9244320	Gal žinote kieno tai?
+9309125	Tomui nepasisekė atsakyti į visus Marijos klausimus.
+9368778	Tomas nenešiojo mėlyno palto.
+9369542	Ką ji iš tikrųjų galvoja?
+9396819	Aš jo netekau.
+9420663	Mes ketiname grumtis iki galo.
+9431479	Aš jį pabučiavau po amalu.
+9474637	Palauk iki šeštos valandos.
+9477394	Aš nemėgstu kalbėti prancūziškai.
+9481102	Pabalnok mano ristūną.
+9481847	Aš pamečiau kojinę.
+9499267	Reikia tikėti savimi.
+9506012	Atleiskite, aš nežinojau.
+9526278	Jis labai greitai vaikšto.
+9541694	Be abejonės, Tomą atleis.
+9561270	Aš tau sakiau, kad Tomas yra greitas.
+9563583	Tomas Kalėdų seneliui parašė laišką.
+9570747	Tėvas leido savo mašiną man vairuoti.
+9574551	Aš tą šiandien gavau.
+9583839	Tu iš tikrųjų galvoji, kad aš su tuo ką nors bendro turėjau?
+9587826	Kada bus vakaro pobūvis?
+9592034	Tomas užgesino savo naktinę lempą.
+9607337	Kam jums reikalingi pinigai?
+9624674	Aplenk tą raudoną mašiną.
+9636164	Tomas gamina salotas.
+9636824	Kambaryje buvo galima girdėti skrendančią musę.
+9663673	Jeigu nubunda viltis, tai nusivylimas užminga.
+9710721	Tomas yra vienintelis Marijos sūnus.
+9713477	Šią žiemą buvo daug sniego.
+9739141	Tu jų nori?
+9739215	Jis pametė popierius.
+9742196	Aš ketinu mokytis prancūzų kalbos.
+9756813	Anglų kalbos dominavimas žudo Europos dialogą.
+9762853	Valgydamas aš skaičiau knygą.
+9778283	Tas tikrai paliks dėmę.
+9791996	Jis net be žodžių supranta tavo mintis ir jausmus.
+9798600	Aš jokių pažadų nedaviau.
+9808348	Prašau, paduok man riekę duonos.
+9813191	Tu turi ginklą?
+9817883	Aš jį sutikau pakeliui iš mokyklos į namus.
+9839728	Aš galvojau, kad tau jis reikalingas.
+9845756	Aš lėktuve nemiegojau.
+9845808	Aš nemoku nei skaityti, nei rašyti.
+9846637	Aš galvoju, kad jam reikia ten eiti.
+9854207	Ar tu ką nors valgei?
+9858501	Kodėl tu išėjai nesusimokėjęs?
+9860892	Tu dirbai daugiau už mane.
+9872831	Aš to daugiau nedarysiu.
+9922274	Kodėl tu klausi?
+9931655	Ji iš prigimties yra žingeidi.
+9937321	Aš matau akmenį.
+9946597	Staiga prieš mus pasirodė lokys.
+9972555	Krežis buvo pilnas obuolių.
+9991245	Nakties danguje bliksi žvaigždės.
+9996079	Aš pradėjau abejoti, ar kada nors tai pasidarys.
+9998016	Kuris šitą skaito yra kvailys.
+10006311	Net juodžiausia karvė duoda tik baltą pieną.
+10066651	Po to vėl pasigirdo žingsnių garsai.
+10077866	Prašau šiek tiek lėčiau kalbėti.
+10095166	Argentina yra stambi žaliavų eksportuotoja.
+10100817	Ką aš išlošiau?
+10101700	Ar tu nužudei Tomą?
+10102393	Laura yra tikra draugė.
+10106656	Ar tu turi adresą?
+10108946	Aš nesu blogas mokinys.
+10108957	Jis man parodė savo nuotrauką.
+10113128	Jie buvo suimti savo namuose.
+10124969	Aš kažko laukiu.
+10137471	Tomas užsnūdo ant sofos.
+10147700	Aš galvoju, kad tą padarė Tomas.
+10164084	Liaukis ją taip vadinti!
+10166287	Aš praleidau įvadą.
+10188389	Šita epocha praėjo.
+10188485	Jie man paskambino.
+10188852	Aš to negaliu užmiršti.
+10191715	Va jūsų batai.
+10214426	Aš tave ištrauksiu iš šitos siaubingos situacijos.
+10214473	Tomas yra simpatiškesnis už Joną.
+10218789	Jis, išpūtęs akis, žiūrėjo į jos dekolte.
+10220869	Tomas bemaž užmigo.
+10224569	Apskritai, kas tu esi?
+10238155	Tramvajai naudoja elektrą.
+10243735	Duok man savo žibintą.
+10243935	Kaip tu tai prisimeni?
+10258342	Kodėl tu manai, kad aš apie tave galvoju?
+10260064	Tėveli, kada grįš mama?
+10266177	Aš to nebeturiu.
+10267104	Mes juos sučiupkime!
+10275641	Su tavimi aš prarandu bet kokią kantrybę.
+10302323	Kiekvienais metais mieste vykdavo ypatingai populiari mugė.
+10302866	Aš gimiau tūkstantis devyni šimtai keturiasdešimt aštuntais metais lapkričio dvidešimt antrą.
+10303073	Aš jam atidaviau visas savo santaupas.
+10303081	Tuomet Tomas buvo Australijoje.
+10303114	Aš negaliu savo veltinio rasti.
+10307964	Jis buvo išbrauktas iš sąrašo.
+10319883	Aš nežaisčiau su ugnimi. Tai galėtų blogai baigtis.
+10334022	Kaip jis jaučiasi?
+10344887	Man tai be galo svarbu.
+10346384	Jis turėjo smegenų operaciją.
+10362473	Skylė yra plati.
+10377753	Jis atšaukė kelionę.
+10472418	Aš nepirkau knygos.
+10481164	Aš niekam nedirbu.
+10485071	Tau Tomas skambino.
+10488686	Mano kantrybė pagaliau baigėsi.
+10492039	Tas gali reikšti realią problemą.
+10492409	Jūs labai gerai kalbate.
+10495307	Gero išsilavinimo vertės negalima išmatuoti pinigais.
+10508574	Vedlys Tomą vedė per džiungles, kad jam parodytų indėnų kaimą.
+10512606	Šitas namas greitai subyrės.
+10522280	Užvakar buvo blogas oras.
+10526644	Nieko nėra brangiau už draugystę.
+10529223	Jis visiškai supuvęs.
+10548028	Tiesiog būk atsargus.
+10571542	Tomas sužvejojo kuoją.
+10593657	Tomai, tu esi problema.
+10597728	Kokio aukščio turi būti kopėčios?
+10600253	Mes tiesiog norime, kad tu pasitaisytum.
+10633914	Aš visada jį gerbiau.
+10641076	Tas, kuris be reikalo atsiprašo, patvirtina savo kaltę.
+10641364	Skubiai atsiųskite gelbėtojus!
+10641517	Kodėl pandos tokios mielos?
+10655509	Aš esu amerikietė.
+10655860	Aš savęs nelaikau negražia.
+10662084	Tomas prisipažino, kad jis elgėsi nemandagiai.
+10662537	Jis gerai moka prancūzų kalbą.
+10664054	Ar jūs tai girdėjote?
+10664812	Aš nenoriu, sėdėdamas namuose, praleisti atostogas.
+10667006	Jis pametė savo mašinos raktus.
+10667021	Automobilis dar nesenas, jį tiesiog reikia restauruoti.
+10667996	Kur mano laikraštis?
+10672868	Apskritai paėmus aš su tavimi sutinku.
+10676902	Mes laukiame gerų rezultatų.
+10678307	Kuris Tomo dviratis?
+10679623	Tai iš tiesų ne tavo reikalas.
+10686392	Aš jį dažnai aplankau.
+10688132	Ji toliau dirbo, net ir po to, kai tapo nėščia.
+10693467	Aš su daugeliu dailininkų esu pažįstamas.
+10694697	Katė mėgsta pamiegoti.
+10698581	Aš žinau, kad Tomas silpnas.
+10706294	Kai katinas iš namų, tai pelės pradeda šokti.
+10709981	Jam patinka dainuoti.
+10713586	Kalbų mokyklos yra idiotiškos.
+10724036	Pas ką mes šiandien eisime į svečius?
+10726065	Su kuo jūs kalbėjote?
+10730119	Jie buvo geresni, negu aš tikėjausi.
+10738728	Kur šitos linijos galas?
+10740191	Aš to nenoriu.
+10752362	Mano tėčiui nepatinka vasaros karštis.
+10761621	Ar tai iš tiesų taip svarbu?
+10764583	Jis nešiojo tamsų megztinį.
+10766524	Tai jūsų sūnaus pareiga.
+10775340	Mūsų valtis priartėjo prie mažos salos.
+10781611	Mes nekenčiame vabalų.
+10782581	Netrukus Tomas mirė.
+10799180	Jai pavogė pinigus.
+10801962	Mano vaikai gimė Bostone.
+10802060	Ar tu mėgsti šokti?
+10824082	Pastatas ant kalvos yra mūsų mokykla.
+10824147	Aš jūsų sąlygas priimu.
+10829909	Aš norėjau, kad Marija mane mylėtų, o ne Tomą.
+10830288	Namuose jūs ją vargu ar rasite.
+10834634	Kieno šitas šratinukas?
+10847071	Aš nelabai išmintingas.
+10867529	Šuniui gyvybiškai būtina judėti.
+10873907	Ar tai pieštukas?
+10876912	Prašau mano plaukų neliesti.
+10879689	Jie man nepatinka.
+10890492	Tu rasi sprendimą.
+10903412	Aš einu į tualetą.
+10905382	Aš žinau, kad tu jos nepažįsti.
+10905657	Ant blanko nėra antspaudo ir parašo.
+10906202	Jūs tą labai dažnai atliekate?
+10908487	Tu nesirengi manęs pabučiuoti?
+10921611	Aš pusę darbo padariau, ir dabar galiu padaryti pertrauką.
+10928379	Ne man reikia eiti.
+10959985	Ar tu nežinai, kodėl Tomas buvo toks piktas?
+10969304	Jie viską sudarkė.
+10973635	Tomas juos mylėjo.
+10981284	Staiga iš rūko pasirodė laivas.
+10984184	Tai pakankamai išmintinga.
+10986759	Tai ne problema.
+11028905	Tomas yra toks kvailys.
+11037246	Ką dar reikia įrodyti?
+11066772	Aš tikiuosi, kad mes galėsime tai išsiaiškinti.
+11070531	Aš jų nuolat neskiriu.
+11072252	Šitame kaime praėjo mano vaikystė.
+11075211	Aš tavęs neapgaudinėjau.
+11161449	Jis palaipsniui silpsta.
+11162612	Mes gavome padėkos laišką.
+11167982	Tai per tave.
+11217656	Aš šitą vietą žinau.
+11223861	Jums reikėjo geriau mokykloje mokytis.
+11268579	Jūs norite antį pirkti?
+11277353	Jūs tokia išmintinga.
+11296790	Laikas įgauti proto.
+11323389	Kodėl tu tokia pasipūtusi?
+11326595	Apie tai jam nepasakok, o tai jis pravirks.
+11338943	Aš galvoju, kad jis pasakys ne.
+11343619	Ar šunys ėda bananus?
+11346588	Už sienos kažkas du kartus nusičiaudėjo.
+11354963	Mūsų tėvas laisto gėles.
+11360831	Retkarčiais jis ant manęs pyksta.
+11411269	Raktas užsikirto spynoje.
+11418463	Tomas ir Marija išvyksta kitais metais.
+11435628	Aš jam nupirksiu kėdę.
+11435674	"Niekas neskambino?" - "Ne. O turėjo skambinti?"
+11456940	Aš grįšiu pirmadienį.
+11459287	Ar jūs turite vilnones kojines?
+11462371	O! O mes kaip tik apie tave kalbėjome.
+11466451	Jeigu simptomai nepraeina, tai pasitark su gydytoju.
+11487911	Aš užaugau netoliese nuo čia.
+11487988	Man patinka tuo užsiimti!
+11491657	Tomas užsuko vandenį.
+11512346	Jis dukart padarė tą pačią klaidą.
+11515004	Aš patvirtinu jūsų planą.
+11515046	Jo nuomonė neturėjo reikšmės.
+11519722	Ar jūs turite leidimą?
+11529186	Jie turi dvynukes.
+11539159	Jis ne veltui mokėsi universitete.
+11547496	Jie nenori namo.
+11551459	Ji mums paruošė užkandį.
+11553256	Koks nepaprastas vaizdas!
+11553326	Aš paprašiau Tomo, kad man parašytų laišką.
+11556650	Tomas renka kardus.
+11562539	Jūsų sūnus prastai moka geografiją!
+11564489	Tomas pametė pinigus
+11583401	Net lietus negalėjo gaisro užgesinti.
+11585549	Ką jūs planuojate rytdienai?
+11586617	Dabar svarbiausia yra nepabūgti.
+11588146	Prašau, duok man meniu.
+11600930	Ji išėjo vaistų.
+11609227	Ji iš tikrųjų graži moteris.
+11629910	Jeigu tu negali mums padėti, tai bent netrukdyk.
+11647623	Mano tikslai kuklūs.
+11666390	Nurodykite paieškos parametrus.
+11678824	Ji niekados nesiskundė.
+11686407	Praėjusią savaitę aš priaugau du su puse kilogramo.
+11690649	Ko čia nėra?
+11692251	Aš ieškau Tomo. Ar tu nežinai, kur jis?
+11694985	Mes visi miegojome.
+11725731	Aš galvoju, kad Tomas, galimas daiktas, kažką žino.
+11740548	Taip nutinka ne tik Australijoje.
+11819238	Jis ilsisi namuose.
+11832234	Tomas turi savo automobilį.
+11833133	Marija buvo apsirengusi ilgą, juodą suknelę.
+11853371	Sąrašas yra labai ilgas.
+11865967	Aš tuo įsitikinęs.
+11902708	Na ką gi, pradėsime.
+11909791	Jis dabar blogai nusiteikęs.
+11918123	Aš dar nieko negavau.
+11918139	Aš noriu, kad tu kentėtum.
+11919039	Tomas mane myli, ir aš jį taip pat myliu.
+11937274	Tomas išpuolė iš kambario.
+11937884	Jis pernelyg konservatyvus.
+11939512	Turkijoje yra daug mečečių.
+11976300	Nesiartink prie priešo.
+11986607	Jis negali sau leisti naujo automobilio.
+11986753	Išlaisvink žvėris iš narvo.
+11989832	Karčios jos ašaros riedėjo kaip pupos.
+11989899	Ar tau žinomas mano vardas?
+11993423	Man reikia artimo draugo.
+11995980	Nuo kada Tomas bedarbis?
+12087572	Ką jūs turite kišenėse?
+12088838	Kokia nepaprasta vieta!
+12090676	Per kiekvieną upę buvo tiltas.
+12092488	Tomas rašys laišką.
+12099080	Plovimo priemones aš laikau po praustuve.
+12100633	Aš dabar taip nepatogiai jaučiuosi.
+12105675	Tau reikėtų mesti rūkyti.
+12114334	Apjuodinti žmogų yra lengva.
+12122374	Kas parašyta įstatyme?
+12129506	Jūsų atsakymas yra kitoks negu mano.
+12131714	Gaila, kad tavęs nebus.
+12135298	Jautiena nūnai yra brangi.
+12138608	Kieno portretas yra ant šito pašto ženklo?
+12150384	Tomas labai sulyso.
+12154127	Ji anksti nuėjo miegoti.
+12155318	Čia baisiai karšta.
+12158369	Aš ten rytoj būsiu.
+12163034	Pasakyk jai, kad aš ateisiu.
+12163094	Aš pati jam apie tai pasakiau.
+12164561	Aš ketinu šitą knygą skaityti.
+12173938	Sportas stiprina širdį.
+12173969	Jis nori išlošti.
+12178352	Vaidinimas bus pirmadienį.
+12189148	Aš turiu vynuogių.
+12189607	Kieno ta knyga?
+12190844	Jis užaugo neturtingoje šeimoje.
+12191214	Gana kalbėti apie darbą!
+12194053	Jis yra tylus.
+12198416	Aš galiu jį pašaukti.
+12200798	Aš nesu menininkas.
+12206184	Dėl avarijos jis pavėlavo.
+12209669	Ar tu turi klausimų?
+12231926	Jis jai nuvilko drabužius.
+12283438	Kiaulės yra labai protingos.
+12288990	Tu jį sukūlei.
+12289288	Aš dirbsiu viena.
+12289651	Apie tai aš jau su Tomu pakalbėjau.
+12292318	Kodėl jūs tą padarėte be mano leidimo?
+12292766	Ar tu juos pažinojai?
+12295463	Mes visą vakarą praleidome su jais kalbėdami.
+12295495	Ko tu grįžai?
+12300469	Gal būt aš tai padarysiu šiandien.
+12311434	Aš nesuprantu Tomo.
+12311897	Aš visą naktį išdirbau.
+12312580	Ar jūs išalkote?
+12313639	Ji šiek tiek pavalgė.
+12319311	Ar tu žinai jo adresą?
+12321006	Aš jiems paskambinsiu.
+12321065	Tomui patinka Marija, o Marijai patinka Jonas.
+12325828	Tai kainuoja du eurus.
+12327891	Tomas yra pilietis.
+12353238	Aš maždaug trejus metus gyvenu Australijoje.
+12377904	Į Berlyną jis atvyko kaip mokytojas.
+12380718	Ji greitai bėgioja.
+12381584	Aš taip pat augau be tėvo.
+12381773	Reikia išvalyti vištidę.
+12391296	Anksčiau jis dirbo pašte.
+12419239	Aš tavo jaunesnioji sesuo.
+12421800	Dabar viską sutaisysime.
+12426868	Aš maldauju tavęs, atvyk.
+12427287	Aš šiandien truputį nesveikuoju.
+12450747	Galvoju, kad aš ir vienas galėčiau tai padaryti.
+12452884	Policijai pavyko rasti nusikaltėlį.
+12464260	Ji bijo ligoninių.
+12488820	Ko tu virpi?
+12489956	Su kuo aš likau?
+12492053	Aš pats nelaukiau tokios sėkmės.
+12496252	Mes būkime ramūs.
+12499663	Dabar tu mano.
+12506617	Aš maniau, kad Tomas jau baigė savo darbą.
+12506682	Šitoje šalyje retai lyja.
+12514584	Jis įjungė radiją.
+12527096	Ar tiesa, kad jūs nubėgote tris kilometrus?
+12527127	Jie tave kiekvieną dieną muša?
+12527471	Jeigu tu man padėsi, aš dar kartą pabandysiu.
+12548236	Be manęs neik per kelią.
+12548476	Ar tu turi žygio batus?
+12552630	Tu tikrai kvaila!
+12555354	Valgykite. Tai nemokamai.
+12560451	Ar kas nors ką nors pasakė?
+12564939	Aš neturiu tiek daug laiko, kaip tu.
+12568505	Aš jai atnešiu pieno.
+12568597	Jis tikras paliegėlis.
+12571334	O juk jūs mums žadėjote.
+12571345	Aš gi jums sakiau rytoj ateiti.
+12583267	Aš nežinau jų planų.
+12583371	Aš jo nekviečiu.
+12585488	Jie tai išspręs tarp savęs.
+12599616	Išeiginėmis dienomis aš dirbu prekybos centre.
+12607860	Dėkui, mane pasitiks.
+12608594	Mane skubiai iškvietė į darbą.
+12620900	Aš jaučiuosi labai nusiplūkusi.
+12620905	Jūs turėjote tai pastebėti.
+12645359	Neverk, greitai mama ateis.
+12656618	Aš gyvenau šalia vandenyno.
+12656739	Kaitra darosi nepakenčiama.
+12679743	Ji apsivilko rudą suknelę.
+12681227	Tai tavo pinigai?
+12685344	Tai žymiai palengvins jums darbą.
+12688373	Neužmirškite, kad Marija serga.
+12690938	Man nuo saldumynų skauda dantis.
+12697137	Pusryčiams aš valgiau dribsnius.
+12697306	Meška jaučia žmogų už daug kilometrų.
+12697706	Ar iš tikrųjų tai gali būti tiesa?
+12699483	Draugai ją kiekvieną dieną lankė.
+12707345	Prieduryje kvepia šviežiais dažais.
+12710627	Jo jis įpylė jai į stiklinę.
+12711044	Bankas aprobavo kreditą.
+12720257	Jums reikia pradėti ruoštis.
+12724839	Tu mane myli ar ne?
+12726556	Pasiimkite su savimi kompasą.
+12731794	Senukas lėtai eina.
+12734150	Jis stengėsi užkurti laužą.
+12735977	Tyrimai man jokios ligos neatskleidė.
+12738085	Su kuo jie tau trenkė?
+12749911	Visi čia: anūkai, duktė ir taip pat, suprantama, nuolatiniai klientai.
+12755458	Šitos sienos gali daug papasakoti.
+12759966	Aš du kartus pabuvau Bostone.
+12773667	Ji sugrįžo su trimis knygomis.
+12778051	Prašau atleisti, aš žinau, kad elgiausi įžūliai.
+12779339	Ji tau akis apmuilino.
+12787958	Tai jam padarė liga.
+12788232	Aš mėgstu po pietų nusnūsti.
+12788333	Mano senelė kiekvieną sekmadienį kepė sausainius.
+12790363	Mano namas šalia cerkvės.
+12792082	Tomas bus pamalonintas.
+12809010	Tuo laiku, kai mes atvažiuosime, jau bus tamsu.
+12809342	Aš šiandien turiu daug reikalų.
+12847269	Jis parduoda gėrimus.
+12861980	Taigi tai aš ir mėginu išaiškinti.
+12863470	Pažiūrėk į tvarkaraštį, kada mūsų traukinys išvyksta.
+12865949	Jūsų raktas nukrito.
+12867541	Aš dirbu logistikos srityje.
+12869396	Ar tu buvai tikras?
+12869822	Aš stebėsiu Tomą.
+12871454	Aš jos nekenčiau.
+12876102	Jis prekiauja mašinomis.
+12885644	Ji beprotiškai jį mylėjo, o jis begėdiškai tuo naudojosi.
+12885701	Tau jis pravers.
+12888041	Jis užbėgo laiptais į viršų.
+12888355	Tai gruodžio pirma diena.
+12892238	Idėja yra nepaprastai paprasta.
+12901143	"Ką tu čia viena veiki?" — "Aš jūros klausausi".
+12906893	Vaiko ieškojo visi drauge.
+12918195	Kuo snygis skiriasi nuo pūgos?
+12918849	Tai tik pirmoji dalis.
+12955717	Ar jis jį sutiko?
+12957752	Ji bijo dėl jos gyvybės.
+12958138	Galbūt tu apie tai jau girdėjai?
+12959862	Mes abu žinome, kad jūs meluojate.
+12971021	Aš jaučiau didelį norą išvykti.
+12974753	Greitai ir čia viską užstatys.
+12976288	Tai tu neini?
+12980050	Dėkui, kad man suteikėte tokią galimybę.
+12980100	Aš ruošiuosi mieste gyventi.
+12981584	Jeigu jūs išeisite, visi jūsų ilgėsis.
+12981783	Švenčių dienomis muziejus nedirba.
+12983837	Ten jūs būtumėte saugūs.
+13002044	Kur čia yra geras restoranas?
+13006012	Jie sukeitė pavyzdžius.
+13008000	Ji išklausė mano nuomonės.
+13012748	Man paskambinkite iškart po to, kai su juo susitiksite.
+13014343	Mes norime mėgautis gyvenimu.
+13014756	Tai yra tas, kam mes neturime įtakos.
+13016825	Jis eina į darbą.
+13031684	Aš šįmet nutariau niekam nieko nedovanoti.
+13032958	Bet aš galiu tau padėti.
+13034357	Kiekvienas medžiotojas nori žinoti, kur tupi fazanas.
+13036385	Mes abu esame vedę.
+13036453	Jau daug laiko aš čia negyvenu.
+13039176	Tai namas, kuriame aš gyvenau, kai buvau jaunas.
+13040650	Neturi jokios reikšmės, ką žmogus baigė.
+13041801	Pasakykite jūsų nuolatinės gyvenamosios vietos adresą.
+13047155	Aš noriu pasunkėti.
+13055236	Buvo du arkliai: vienas bėras, o kitas palšas obuolmušis.
+13064665	Ateitis bus sukurta ne jėga ar troškimu nugalėti, o kantriai taikant demokratijos etodą, vadovaujantis konstruktyvia sutarimo dvasia ir pagarba laisvei.
+13074403	Pažiūrėk, ar jie visi ten.
+13080515	Klasėje aš buvau mažiausia ir per fizkultūros pamoką stovėdavau paskutinė.
+13081720	Viskas dėl tokių, kaip jūs!
+13093263	Mes turime saugoti savo turtą.
+13093365	Jos ateitis neaiški.
+13098546	Daugiau kalbų, negu veiksmų.
+13098791	Aš šįryt atkeliavau gyvas ir sveikas.
+13100843	Ji ieško nemalonumų.
+13103070	Tai įvyko gana seniai.
+13103224	Aš turiu tris brolius, o jūs?
+13103279	Ar jūs gyvenate Niujorke?
+13108430	Jis su visais turi gerus santykius.
+13110554	Ar tai tikrai buvo plane?
+13110835	Ar ji vėl mane pavadino Tomu?
+13157103	Mes vykstame į šiaurę.
+13162579	Pasakykite man, kur mes keliaujame.
+13163381	Velionis nepaliko testamento.
+13167216	Lietūs čia ne retenybė.
+13167953	Tomas toliau švilpė.
+13168011	Tai buvo labai žiaurus karas.
+13168844	Tomas nėra religingas ir netiki Dievu.
+13176652	Atleisk, aš su tavimi nenoriu šokti.
+13184183	Mes turime reikalų.
+13186210	Jokia moteris to neatleis.
+13186647	Aš tokio nepadaryčiau.
+13193477	Negalima juk visai nemiegoti.
+13203103	Tą dieną mes miegojome.
+13207159	Ji mėgsta apie save šnekėti.
+13221138	Paskambink jiems rytoj.
+13243313	Šitas kelias jį nuves į stotį.
+13244931	Automagistralėje susidarė spūstis.
+13245151	Tėčiai laukia savo vaikų.
+13257775	Aš jai padėsiu, kad ir ką tu bekalbėtum.
+13267618	Jis tapo pasaulio sporto legenda.
+13273026	Grįžk greičiau namo.
+13273520	Ji stumia jį nuo savęs.
+13273686	Tomas šoko į vandenį atsivėsinti.
+13275638	Mūsų durys visuomet atdaros.
+13282058	Jums nereikia ginklo.
+13289203	Mes laikomės panašaus požiūrio.
+13290758	Jis anksti išeina iš namų.
+13325099	Manau, kad laikas užsiimti jo byla.
+13332682	Ar tu save laikai doru žmogumi?
+13339484	Aš noriu šitą sakinį ištrinti.
+13341153	Jūs viską atsimenate geriau už mane.
+13347801	Kas išsiuntė laišką?
+13349931	Sveiki! Kur jūs?
+13352087	Tomas pradėjo gerti, kai jį metė žmona.
+13356679	"Kur tu buvai?" — "Aš buvau parke".
+13358079	Aš mačiau tik vieną obuolį.
+13360652	Tiesa turi tik vieną veidą.
+13361752	Kiek metų mes jau pažįstami?
+13364644	Jūs nusipelnėte geriausio.
+13380959	Marija piktai pažvelgė į Beatričę.
+13383511	Porą žingsnių pasitraukite.
+13387760	Trūksta vieno dalykėlio.
+13389010	Galų gale jie pasidavė.
+13391125	Autolenktynininkas žuvo bandydamas pasiekti pasaulio rekordą.
+13395457	Aš pakilau į orą.
+13395485	Ar jums taip yra pasitaikę?
+13395583	Dėl ko tu apsiavei mano bartus?
+13395909	Jis ne veltui išvyko į Ameriką.
+13395932	Ji savo puikiomis mėlynomis akimis įsistebeilijusi žiūrėjo į mane.
+13396834	Juk tu jau nepyksti?
+13399533	Jis visiems pasakė, kad nuvargo.
+13399626	Jis man pasakė, kad kažkada buvo labai neturtingas.
+13399651	Jis man pasakė, kad bijo gyvačių.
+13401881	Kas čia per vieta?
+13402015	Aš dėl jūsų truputį nerimauju.
+13405498	Aš su Tomu negrįšiu.
+13409482	Jie pradeda mušti Tomą.
+13415298	Tu sakei, kad su juo pakalbėsi.
+13436904	Jis vos spėjo atvažiuoti, o jo jau paprašė išeiti.
+13439748	Niekas jūsų nemylės taip, kaip aš.
+13442548	Prašau, neverskite manęs su Tomu eiti.
+13443545	Aš manau, kad nesvarbu, kokius Jūs išsirinksite.
+13444958	Aš manau, kad neturi reikšmės, kurią Jūs paimsite.
+13445246	Aš tau nepaklusau.
+13447103	Tomas tikrai labai galvotas.
+13487675	Ji save laiko geru žmogumi.
+13489767	Man užtenka penkių šešių valandų miego per parą.
+13491159	Jūs sugebėjote atsispirti pagundai.
+13495611	Kodėl tau taip įdomu, ką galvoja Tomas?
+13495636	Mano nuomone, šansai yra gana geri.
+13496874	Pasirodo, mes gyvenome kaimynystėje ir apie tai nežinojome.
+13497174	Aš čia jau valandą laukiu.
+13498965	Italijoje visada geras oras.
+13501191	Kur tu buvai tuo momentu?
+13501413	Jie nesusiję giminystės ryšiais.
+13505762	Aš jį laikau gana juokingu.
+13510481	Mama, o kodėl Tomas gnaibosi!
+13511321	Jis mane įsiutino šitais žodžiais.
+13516048	Supratingam žmogui užtenka kelių žodžių.
+13516062	Pagalvok prieš kažką sakydamas.
+13516124	Nesiartink prie jos, ar aišku?
+13524339	Tomas atvertė knygą ir ėmė ją skaityti.
+13524342	Tomas nelabai ką išmano apie automobilius.
+13524348	Alžyro miestai be paliovos auga.
+13535626	Visi vaikai susigyveno su nauju mokytoju.
+13536398	Ji mane tyčiomis įskaudino.
+13538638	Jaunystėje reikia daugiau knygų skaityti.
+13540820	Jis iš tiesų išmintingas berniukas.
+13542785	Knyga Tomui tilpo į kišenę.
+13548525	Atlyginimas yra nepakankamas.
+13553615	Jie ten jos palaukė.
+13555136	Kitą kartą pasistenk būti atidesnis.
+13555137	Kitą kartą pasistenk būti dėmesingesnis.
+13555922	Informacija apie karinus veiksmus buvo laikoma paslaptyje
+13562929	Tu turi didžią sielą.
+13564402	Visas miestas giliu miegu miegojo.
+13566849	Vaikystėje Tomas švepsėjo.
+13568660	Išvyka buvo atšaukta dėl lietaus.
+13572514	Jūs ne pingvinai.
+13577468	Ar mes galime bent pasikalbėti?
+13579731	Kam jam jo reikia?
+13579760	Širdies gilumoje aš su tavimi sutinku.
+13581654	Tu ėjai žvejoti?
+13581663	Ar tu žvejojai
+13609095	Kada ateina naktis, galima pamatyti daugybę jonvabalių.
+13617168	Jis beprotiškai pavydus.
+13618180	Tomo krepšyje nieko nėra.
+13619261	Ar jūs suprantate problemos esmę?
+13648886	Per daug miego, kaip ir jo trūkumas, yra kenksminga.
+13652619	Jūs galvojate, kad aš toks naivus?
+13652636	Tu manei, kad aš nepastebėsiu?
+13652665	Jis iškart ją pastebėjo.
+13657864	Kodėl ji sumelavo apie savo amžių?
+13658562	Kur ji išmoko vairuoti?
+13662514	Tu apie viską pagalvojai, ar taip?
+13672352	Aš nenoriu, kad jūs jaudintumėtės.
+13673104	Aš stengiuosi susikaupti, o jūs man trukdote.
+13674396	Maisto gaminimu užsiims Tomas.
+13674512	Keletą dienų snigo be atvangos.
+13681309	Aš jų dalį jiems atidaviau.
+13682483	Aš iš Indonezijos.
+13687930	Net jei ji šauks, niekas neišgirs.
+13691723	Mano nuomone, jūs tuščiai leidžiate laiką.
+13691834	Jis Jūsų nelaukė.
+13691847	Rytoj man reikia važiuoti į Bostoną.
+13692154	Jo biuras yra kitoje gatvės pusėje.
+13692379	Mums su tavimi ta pati mintis atėjo į galvą.
+13695391	Kada jūs jį matėte paskutinį kartą?
+13696644	Jei nenori, tai daryk, kaip nori.
+13697081	Apie ką tu galvoji sėdėdamas prie vairo?
+13698294	Nesijaudinkite dėl manęs.
+13703056	Kaip mes gyvenome be interneto?
+13708899	Tomas negalėjo išsirinkti, ką pirkti.
+13709288	Tikiuosi, kad galų gale viskas bus gerai.
+13712297	Ar jums reikia pailsėti?
+13712349	Vargšeli, kiek laiko tu jau sėdi eilėje?
+13713313	Metai iš metų dokumentų skaičius didėjo.
+13713685	Aš nenoriu skambinti gitara.
+13715076	Tomas yra tas žmogus, apie kurį aš tau pasakojau.
+13718705	Kas, po galais, tave mokė žirklėmis naudotis?
+13720304	Dar keletas žingsnių, ir bus galima atsikvėpti.
+13725082	Nejuokauk su manimi.
+13725390	Ji droviai jam atsakė.
+13727016	Aš parašysiu mamai laišką.
+13729453	Tai atsitinka vieną kartą per dešimt tūkstančių metų.
+13731054	Geras miegas yra geros sveikatos pagrindas.
+13736137	Hm, Jūs prastai atrodote.
+13738866	Aš atsisakau dirbti tokioje nepasitikėjimo atmosferoje.
+13739601	Tavo nauja šukuosena. Tau labai tinka.
+13741485	Kas neužsiėmęs, ateikite čia.
+13743392	Aš įėjau į liftą.
+13743686	Man išvis nesinori ten važiuoti.
+13747020	Kurių metų statistika?
+13748096	Ir vis dėlto aš suklydau.
+13748146	Suaugusieji yra buvę vaikai.
+13749849	Gydytojas man sakė nepersivalgyti.
+13752006	Aš nedalyvauju kvailose apklausose.
+13752325	Pasaulis nusirito į suirutę.
+13752337	Ar jūs žinote, kodėl Tomas nenori, kad aš šalia jo sėdėčiau?
+13756911	Ji save laiko gera vairuotoja.
+13757621	Jis nenuplovė automobilio.
+13758740	Aš savo palto nekabinsiu už durų.
+13758837	Auksinis Romos imperijos amžius užmarštyje.
+13761803	Prašau, mane vadink vardu.
+13763358	Aš turiu daug arklių.
+13770066	Jūs viršijate savo įgaliojimus.
+13771894	Tai vaizdas iš jo kambario.
+13772956	Kai kada švietė saulė.
+13775566	Žmones parduoda kaip gyvulius.
+13784685	Jūs juos ginate.
+13792018	Man niekada nepatiko šitas tavo įsakmus tonas.
+13799240	Aš gi ne tyčia tai darau.
+13800220	Tomas yra arogantas.
+13804866	Man reikia jiems pasakyti.
+13806846	Ar jūs supratote bendrą idėją?
+13809811	Tu nors adresą palik, kur važiuoji.
+13809902	Aš atvažiavau dvyliktą valandą.
+13817664	Filmas iškart gavo keletą prizų.
+13822419	Mūsų pasauliai nesusikryžiuoja.
+13828024	Aišku juo anksčiau nesinaudojo.
+13828152	Dabar tau spręsti.
+13833611	Aš ne dėl to mečiau rūkyti, kad iš naujo pradėčiau.
+13838604	Mes buvome taip sukrėsti dėl jo netikėtos mirties.
+13841381	Aš pats sau pavydžiu.
+13844496	Parodykite man, kur Jums skauda.
+13845025	Po kurio laiko kranto linija keičiasi.
+13847108	Šeštadieniais jam nereikia eiti į mokyklą.
+13857912	Aš pats neatsimenu, kaip tą vakarą nusikasiau ligi namų.
+13865734	Paklauskite jos, ar ji ateis.
+13868773	Ar šita dėmė išsiskalbs?
+13871493	Ramybės būsenoje skausmas stiprėja.
+13871659	Jums jau laikas namo.
+13878845	Apie tai jau tada reikėjo imti galvoti.
+13878878	Tu turi septynis sūnus.
+13879700	Dar daug yra vietų.
+13881843	Visiškai gėdą prarado.
+13882877	Jie iš proto išsikraustė.
+13898884	Medicina yra ligų tyrinėjimas.
+13938355	Aš labai noriu valgyti. kada mes galėsime eiti pietauti?
+13939984	Negaliu patikėti, kad jis jus pabučiavo.
+13968741	Jūs suvalgėte riešutus.
+14002251	Kai kada sekasi.
+14018325	Jei jis neis į mokyklą, aš su juo daugiau nekalbėsiu.
+14022088	Svarbiausia yra tinkamai pasinaudoti šitais pinigais.
+14022454	Negaliu pakęsti, kai apsimeta vargšu.
+14025271	Tomas ne toks, kaip kiti studentai.
+14031519	Aš nesigilinau į detales.
+14034126	Tu turi galvoti apie tėvus.
+14036843	Jis apie jus pasiteiravo.
+14036846	Mergina perka pieną prekybos centre.
+14039759	Pienas sušalo ir pasidarė kietas.
+14040458	Jeigu jūs taip dažnai vėluosite, man teks jus atleisti.
+14040643	Tik tu gali šitą problemą išspręsti.
+14042959	Tu klysti; jis skambina kontrabosu, o ne tromboną pučia.
+14082110	Aš niekada neužmiršau nusiųsti jos motinai gimtadienio dovanos.
+14083278	Tai padarė paskutinis svečias.
+14096231	Mums jų nesimato.

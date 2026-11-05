@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+382234	Vinsamlegast skrifaðu mér einstaka sinnum.
+382240	Þetta er húsið sem þau bjuggu í þegar þau voru börn.
+382310	Kozue fannst fyrirlestur kennarans vera daufur, leiðinlegur og endalaus.
+382327	Hvað með það ef ég er samkynhneigður? Er það glæpur?
+382334	Hann hefur þekkingu á hagfræði.
+382460	Afsakið en ég er ekki með neina smámynt.
+382474	Brown fólkið er fín og glöð fjölskylda.
+382512	Niðurstaðan er enn óviss.
+383404	Slysinu olli vangá bílstjórans.
+383414	Hann át tvisvar sinnum það sem þú ást.
+383421	Tom hefur alltaf staðið sig vel í hverri vinnu sem hann hefur haft.
+383448	Stúlkum líkar að sýna fínu fötin sín.
+383453	Jörðin er um sex sinnum stærri en tunglið.
+383470	Ef þú leggur snemma af stað nærð þú í tíma til að taka lestina.
+383536	Ræða kennarans hvetur Mary til að leggja harðar að sér við námið.
+383552	Húsið hans er steinsnar frá skólanum hans.
+383559	Fyrirtækið hefur skipt um hendur þrisvar sinnum.
+383725	Það voru tvö morð í þessum mánuði.
+384052	Við lukum samræðum okkar.
+384054	Þegar kennslustundunum lauk fóru börnin heim.
+384061	Lögreglan ákærði hann um rán.
+384082	Við verðum að bíða eftir honum.
+384101	Við hittumst á sunnudaginn.
+384133	Það er ekki tíma heldur vilja sem þig skortir.
+384159	Eitthvað virðist vera að hljómflutningstækjunum.
+384163	Ekki gleyma að tala við hann á morgun.
+384613	Það var einu sinni lítill kastali á þessari hæð.
+384632	Presturinn lýsti þau hjón.
+384696	Skurðlæknirinn sannfærði mig um að gangast undir líffæraflutning.
+384700	Hún er alvarleg manneskja.
+385017	Hann skortir hæfileika til að vera leikari.
+385044	Enginn er svo fátækur að eiga ekki efni á að vera snyrtilegur.
+385152	Uppáhaldsliðið mitt er Inter Mílanó á Ítalíu.
+385204	Könnuðirnir fundu beinagrind í helli.
+385206	Hann gat ekki sannfært hana um mistök hennar.
+385210	Neitarðu því að hafa farið þangað?
+385418	Faðir hans hafði góð áhrif á hann.
+385463	Ég er ekkert svo hrifinn af sterkum mat.
+385481	Stúlkan var hrædd við að stökkva niður af þakinu.
+385539	Englendingar eru kurteist fólk.
+385669	Hann getur ekki hafa logið.
+385741	Hún lofaði mér að þrífa herbergið mitt.
+385743	Sjáðu sportbílinn þarna.
+385842	Ég mun aldrei segja neinum þetta.
+385852	Síðan nítjánhundruð hafa ellefu kvenkyns nemendur hlotið verðlaunin.
+385872	Þetta er ekki heldur appelsína.
+385910	Hann lítur vel út.
+385914	Ég þekki stelpu sem er síbrosandi.
+385922	Hún sagðist fara á fætur klukkan sex á hverjum morgni.
+385940	Ég er að skrá mig út.
+385945	Ekkert getur afsakað hann fyrir svo grófa framkomu.
+385947	Þú ert ekki að horfa á sjónvarpið núna.
+385974	Honum mistekst oft að standa við loforð sín.
+385999	Ókurteisin í honum gerði mig æfan af reiði.
+386007	Færið ykkur vinsamlegast inn í vagninn!
+386011	Þessi maður getur ekki hafa framið sjálfsmorð.
+386014	Hún er viðurkennd sem sérfræðingur í málvísindum.
+386107	Hann kynntist nokkrum þorpsbúum.
+386121	Það var einu sinni hávaxið tré nærri hofinu.
+386125	Robert hjálpaði áður fyrr föður sínum í búðinni um helgar.
+386144	Undrun gerði mig orðlausan.
+386160	Hún var gáfuð jafnt sem falleg.
+386167	Setningin er án málfræðivilla.
+386169	Við hittumst á leiðinni.
+386175	Hún var nógu snjöll til að láta hann ekki blekkja sig.
+386306	Hann kann ekki að synda.
+386312	Pabbi kom heim fyrir um tíu mínútum.
+386319	Tónlistarsmekkur hans er frábær.
+386347	Ég meiði mig enn í löppunum.
+386381	Sársaukinn hefur að mestu horfið.
+386468	Tölvan er ný.
+386471	Það breytir litlu hvort þú farir í leigubíl eða fótgangandi.
+386795	Ætlar þú að fjarlægja taugina?
+386797	Hann fann leigubíl fyrir mig.
+387049	Mér tókst að losna við vanann að finna að öðrum.
+387218	Deildarstjórinn setur alltaf upp einhvern svip þegar ég bið hann um eitthvað.
+387261	Hann tók sér frídag.
+387287	Útlendingurinn talaði japönsku eins og það væri hennar móðurmál.
+387398	Myndavélinni þinni kann að vera stolið ef þú skilur hana eftir hér.
+387400	Ég vinn frá níu til fimm hvern dag.
+387530	Ég ætla að fletta þessu orði upp í orðabókinni.
+387539	Það virðist sem aðferðirnar mínar séu nýlegri.
+387685	Eigum við að fá okkur saman drykk?
+387688	Bróðir minn er góður í tennis.
+387776	En það fyrsta sem við segjum er „góðan daginn.“
+387991	Kvenfólkið í þessum bæ mun vilja blóm til að setja í húsin sín.
+387993	Vélin vinnur á eigin spýtur.
+388005	Það er bara afsökun fyrir aðgerðaleysi.
+388423	Húsið seldist ódýrt.
+388882	Þeim þótti spennandi að spila körfubolta á leikvellinum.
+388892	Vonda lyktin gerði mér óglatt.
+388901	Þessi kona er með tvo poka.
+388952	Ég sá hann fara yfir götuna þegar ég steig úr vagninum.
+388955	Margur nemandinn hefur fallið á prófinu.
+388969	Hún tók fréttunum með ró.
+389023	Veistu hver hann er?
+389198	Laufin féllu til jarðar.
+389204	Í þá daga átti ég til að líta á mig sem myndarlegan mann.
+389336	Lögin, eins og þau eru, eru ekki svo ströng.
+389565	Ef þig vantar blýant skal ég lána þér.
+389573	Ég er tilbúinn til að láta mér það lynda um senn.
+389889	Hvar er Tony að spila?
+389910	Ég hafði búist við honum á fundinn.
+389913	Sonur minn hefur lent í vondum félagsskap.
+391480	Án súrefnis hefðu öll dýrin horfið fyrir löngu.
+391715	Hann var nógu hugrakkur til að koma upp um hneykslið.
+391719	Tæmdu úr skúffunum.
+392164	Ertu búinn að lesa blaðið?
+392176	Í leikritinu lék hún hvort tveggja þjónustukonu og afgreiðsludömu.
+398808	Hver er uppáhalds þátturinn þinn?
+427965	Enska er notuð af mörgum manneskjum.
+427990	Ég vil panta hótelbergi.
+428008	Ég borðaði kavíar.
+428548	Bíllinn stoppaði ekki.
+429583	Hefur þú sýnt foreldrum þínum það?
+448954	Hann telur mér það ómögulegt að klífa fjallið einn.
+449446	Ekki baktala fólk.
+450785	Hún lagðist í rúmið.
+451906	Ekki reiða þig of mikið á aðra.
+451907	Hópur fólks safnaðist saman á þessarri götu.
+451954	Það er ekkert alvarlegt.
+451955	Megi Guð vera með okkur.
+452257	Ég veit ekki hvort ég eigi að beygja til hægri eða vinstri.
+452261	Já, ég er með góða hugmynd.
+460446	Teningunum hefur verið kastað.
+460455	Ég þvæ sokkana mína.
+460459	Ég var fimmtán ára á þessari mynd.
+460471	Mig langar til að eyða lífinu með þér.
+460473	Mig langar til að sýna þér stórfenglegt útsýni.
+465363	Pabbi minn er laus á laugardaginn.
+466037	Hvernig var helgin?
+466058	Við völdum John til að vera fyrirliða.
+466869	Ég er bresk stelpa frá Manchester.
+466881	Þú ert þegar gagnslaus.
+468900	Hittirðu hann oft?
+468926	Saltið er búið.
+469151	Hvernig dirfistu að tala svona til þinna eldri og betri?!
+469208	Hann vissi það ekki.
+469214	Ég á einn eldri bróður og eina yngri systur.
+469346	Hún dáir eldri bróður sinn.
+469373	Hvar er pabbi þinn?
+469670	Við vinnum á hverjum degi fyrir utan sunnudaga.
+470202	Þegar stríð brýst út hafa báðar hliðarnar rangt fyrir sér.
+470207	Áttu morgunmat heima?
+470254	Hann leggur hart að sér í vinnunni.
+473504	Komdu yfir og hjálpaðu til.
+473508	Ég hafði rangt fyrir mér.
+473513	Ég lék við barnið á hné mínu.
+473517	Vinkona mín er að læra Kóresku.
+473530	Allir elska hana.
+475033	Í hvert skipti sem ég sé þessa mynd minnist ég hamingjuríku daganna í sveitinni.
+475041	Hvað er þessi stóll að gera hér?
+475137	Hún er ekki læknir.
+475169	Augun þín minna mig á stjörnur.
+475182	Hún hafði skilið son sinn einann eftir í bílnum.
+475230	Bill er í Japan.
+475243	Hún á kött. Kötturinn er hvítur.
+475704	Enginn veit af hverju hann yfirgaf bæinn.
+476713	Það er einmannalegt á hnakknum síðan hesturinn dó.
+476777	Hann spilar mjög vel á píanóið.
+476834	Þú ert fegursta blómið í lífi mínu.
+476865	Er nokkur möguleiki á að hann komi?
+477337	Fílar í Tælandi eru jafn algengir og kengúrur í Ástralíu.
+477879	„Er hún ung?“ „Já, það er hún.“
+477894	Fyrsti hópurinn lærir á mornganna, sá seinni um kvöldið.
+478096	Í dag flaug stór bíll af veginum.
+478538	Ég lofa þér.
+478611	Gætirðu vinsamlegast hringt aftur seinna?
+478616	Ég samþykki, en einungis með einu skilyrði.
+478922	Fólk undir átján getur ekki gifst.
+478986	Skoðanir okkar eru hugmyndir sem við höfum; sannfæring okkar er hugmynd sem hefur okkur.
+479038	Á morgun ætla ég að læra á bókasafninu.
+479457	Ég fer yfirleitt á fætur klukkan átta.
+479462	Lúður er hljóðfæri.
+480120	Þú verður að láta lækninum þínum eftir greininguna.
+480134	Mér finnst leiðinlegt að læra óreglulegar sagnir.
+481531	Ég tapaði innblæstrinum.
+481673	Hversu oft á dag skoðar þú sjálfan þig í speglinum?
+482288	Þrátt fyrir að hafa tekið út sína refsingu í fangelsi var morðingjanum aldrei fyllilega fyrirgefið glæpinn af almenningi.
+482336	Það er aldrei of seint að læra.
+482342	Hvernig berðu „bera fram“ fram?
+482343	Hvernig berðu „pronounce“ fram?
+482362	Hvenær borðum við? Ég er svöng!
+482365	Barn er ekki ílát til að fylla, heldur eldur til að kveikja.
+482366	Ég vissi að dagurinn í dag yrði skemmtilegur.
+482665	Ég bý til hádegismat á hverjum degi.
+482872	Flest fólk vill bara heyra sinn eigin sannleika.
+482960	Við hlupum tíu kílómetra.
+482984	Messing er málmblanda úr kopar og sink.
+483015	Mér líkar vel við hundinn.
+483023	Allir vegir liggja til Rómar.
+483535	Samkvæmt langtímaspánni er útlit fyrir mildum vetri.
+486940	Latína er tungumál framtíðarinnar!
+487109	Hugsum um það versta sem gæti gerst.
+488131	Hann leit eftir börnunum meðan þau voru að synda.
+488309	Lífið byrjar þegar þú ákveður hvers þú væntir af því.
+488316	Hún veiktist nú um helgina.
+488385	Hinkraðu aðeins; það er einhver að banka á dyrnar hjá mér.
+488533	Geturðu réttlætt notkun ofbeldis?
+488539	Tvo vanillu ísa, takk.
+489275	Það eina sem þú þarft að gera er að bíða eftir svari frá honum.
+489307	Mamma mín er sú eina sem saumar föt í fjölskyldunni minni.
+489311	Ertu með saumnál?
+489672	Í dag á systir mín afmæli.
+490502	Hún dróg stólinn að sér.
+490507	Hefur þú hugsað þér að hjálpa þeim?
+490542	Varið ykkur. Maðurinn er með byssu.
+493017	Þú ert að vinna of mikið. Taktu því rólega í svolítinn tíma.
+493051	Pósturinn kemur fyrir hádegi.
+493055	Barnið grét alla nóttina.
+493062	Ég tók því sem gefnu að þú héldir með mér.
+493077	Þú munt læra hvernig á að gera þetta fyrr eða síðar.
+493083	Þú lítur mjög föl út.
+493099	Þú veist talsvert mikið um súmóglímu.
+494231	Ég hugsa að það sé best að vera ekki ókurteis.
+494338	Ég á bráðum afmæli.
+494518	Er þetta nýleg mynd?
+495483	Leyfðu mér að gera þetta.
+495525	Þú þarft ekki að fara í skólann á sunnudaginn.
+495560	Vannstu vinnuna þína?
+495593	Þú ættir að vera vinum þínum trúr.
+495600	Þú ættir að læra að nota orðabókina þína.
+496302	Ég hugsa að þú ættir að fara í megrunarkúr.
+496509	Þú ættir að hætta að drekka.
+496511	Þú vanrækir þá sem eru í kringum þig of mikið.
+497800	Ekki koma nálægt ljósinu!
+497801	Ekki koma nærri ljósinu!
+499383	Eitrið breiddist út um allan líkamann hans.
+502279	Þú ættir að fara í regnkápu.
+502979	Af hverju reyndirðu að hlaupa í burtu?
+503344	Í hvaða félagi ertu?
+503348	Þú getur alltaf reitt þig á Tom.
+503358	Í hvaða framhaldsskóla ertu?
+503928	Þú hefðir getað það.
+504016	Þú gætir allt eins haldið því leyndu.
+504213	Þú verður að líta eftir barninu.
+504214	Þú verður að hugsa um barnið.
+504863	Þú hefðir ekki þurft að kaupa bókina.
+504910	Þú verður að grípa gæsina meðan hún gefst.
+505479	Þú ferð að því á rangan hátt.
+505498	Þú náðir því í einni. Það er rétt.
+505500	Þú ættir að leggja af stað undir eins.
+507287	Klukkan hvað ferðu yfirleitt á fætur?
+508851	Á hverjum degi notum við marga hluti sem Edison fann upp.
+508852	Ég fer í sundlaug borgarinnar á hverjum degi.
+511369	Þau keyra í bíl á stöðina.
+511428	Haglið hefur eyðilagt uppskeruna.
+511433	Myndin hangir nú á veggnum.
+511443	Hvar sástu þessar konur?
+511444	Hún elskar Tom en ekki mig.
+511461	Systir mín er ekki góður kokkur og ég ekki heldur.
+511488	Við erum nágrannar.
+511950	Ertu ný hérna?
+511951	Ertu nýr hérna?
+512727	Um morguninn gengum við frá dýnunum okkar.
+513499	Lýðræði er hugmynd sem má rekja aftur til Forn-Grikkja.
+513951	Hann lagðist á bakið.
+513954	Hann lyfti höndum.
+513955	Hann lyfti hendi.
+513981	Fátækur eins og hann er, er hann gjafmildur.
+514497	Milan Kundera er uppáhalds rithöfundurinn minn.
+514671	Ég fylgi ekki.
+514735	Skórnir þínir passa ekki við jakkafötin.
+514858	Ósk þín mun verða að veruleika í nánustu framtíð.
+515180	Kötturinn er ekki mennskur.
+515553	Hún á sér enga undankomuleið.
+515605	Þú verður að svara fyrir hafa ekki sinnt skyldu þinni.
+515606	Þú ættir að passa að borða ekki yfir þig.
+515652	Þú ættir að lesa bækur sem munu koma þér til góða.
+515655	Þér er frjálst að nota þetta herbergi hvernig sem þér sýnist.
+515657	Þú átt ekki efni á að sinna ekki heilsunni.
+516177	Þú ert næstur til að fá stöðuhækkun.
+516259	Vertu nú væn og slökktu á útvarpinu.
+516268	Friður sé með yður!
+516279	Hundurinn hljóp á eftir kettinum.
+537219	Apinn minn hljóp í burtu!
+538342	Hann er í vinnunni akkúrat núna en hann kemur aftur um sjöleitið.
+538346	Drykkjarvatn með súru regni hefur áhrif á heilsuna.
+538347	Hún féll á prófinu og ég varð mjög vonsvikinn.
+538361	Er kötturinn á eða undir stólnum?
+540862	Það er mikið af fólki í almenningsgarðinum.
+540863	Vopn drepa ekki fólk. Fólk drepur fólk.
+540869	Þetta smakkast mjög vel.
+540878	Gjarnan mundi ég skrifa hundruðir setninga á Tatoeba, en ég hef margt annað að gera.
+540881	Ég á ekki mikið af peningum.
+540899	Ég á fimm sinnum fleiri frímerki en hann.
+540914	Ég sló tvær flugur í einu höggi.
+540934	Á sjötta áratugnum var sagt um Finni að þeir hefðu einar óhollustu matarvenjur í heiminum.
+540958	„Elskaðu nágranna þinn eins og sjálfan þig“ er tilvitnun í Biblíuna.
+541993	Fótboltaleikurinn er á morgun.
+541994	Það er fótboltaleikur á morgun.
+542000	Reyndu að uppfylla skyldu þína.
+542121	Við höfum þekkt hvort annað í mörg ár.
+542148	Ég tók því sem gefnu að þú þekktir hættuna.
+543809	Hann er ákaflega sterkur.
+543828	„Viltu eitthvað að drekka?“ „Nei, en takk fyrir boðið.“
+544551	Ef ég hefði vitað sannleikann hefði ég sagt þér það.
+544574	Það eru kostir og gallar við skoðanir hvors tveggja ykkar svo ég ætla ekki að ákveða strax hvorn ég mun styðja.
+545041	Það er synd að þú kemst ekki.
+545044	Það skiptir engu hvort þú komir eða ekki.
+545074	Ég fór í gær að heiman án þess að borða morgunmat.
+545648	Hvað mundirðu gera í mínum sporum?
+545693	Við höfum margar gerðir af kaffi.
+545755	Mér til undrunar hafnaði hann boðinu mínu.
+545789	Okkur til undrunar kom Tom í teitina okkar með Mary.
+568009	Ég aflýsti tímanum mínum vegna áríðandi mála.
+570348	Hver einstaklingur borgaði þúsund dollara.
+578150	Ég hef gaman af djassi.
+583545	Það er nærri því ekkert vatn í fötunni.
+583658	Ég þarf hjálp.
+586700	Það er engin þörf á að flýta sér.
+586704	Þú þarft ekki að flýta þér.
+586978	Þegar þú ferð mun ég sakna þín.
+624019	Ég skal sjá um reikninginn.
+627444	Ég fer ekki á skauta í dag.
+643320	Ég mundi heldur vera heima en fara út.
+643321	Ég vil heldur vera heima en fara út.
+643980	Útlendir fjárfestar héldu sig til hlés sökum stjórnmálalegs óstöðugleika á svæðinu.
+645051	Við verðum að kaupa þau að utan.
+645053	Við verðum að kaupa þær frá útlöndum.
+646064	Skurðlæknirinn sannfærði mig um að fara í aðgerð.
+647411	Þessar myndir eru fallegar.
+647416	Þær hlupu inn í garðinn til að sleppa undan blóðþyrstum hundunum.
+651858	Þessar ungversku stúlkur er ákaflega fallegar.
+652990	Hvenær lýkur regntímabilinu?
+653021	Hvernig segir maður „bless“ á þýsku?
+653026	Skórnir eru farnir úr tísku.
+653230	Ég er atvinnulaus.
+653248	Ég er á leiðinni.
+653252	Hvar er fjölskyldan hennar?
+653312	Blómin vaxa í hlýjum löndum.
+657238	Þessi hamborgari er ódýr miðað við japanska hamborgara.
+657257	Ég er ákaflega svöng.
+657269	Ég fer með hundinn minn í göngutúr á kvöldin.
+658135	Þú ert fallegur.
+658255	Ef ég þarf að fara einu sinni aftur til Kjótó mun ég hafa farið þangað fjórum sinnum á þessu ári.
+658266	Ég þarf að skrifa bréf. Áttu til pappír?
+664612	John er amerískur piltur.
+664616	Allir vita að tveir plús tveir eru fjórir.
+664634	Brauð og smjör er þeirra vanalegi morgunmatur.
+664656	Þetta meðal mun lina höfuðverkinn þinn.
+664670	Það mun enginn trúa því sem hann segir.
+664710	Ég skil hana ekki.
+664717	Ég veit ekki nákvæmlega hvenær ég kem aftur.
+664737	Afsakið mig. Mig langar að leigja bíl.
+664754	Amma mín sagði að regni fylgdi sólskin. Hún var alltaf bjartsýn.
+665888	Ég hjálpaði honum við að fara yfir götuna.
+665892	Fyrir utan nafnið veit ég ekkert um hann.
+666914	Ég vildi ekki vera í hennar skóm.
+666943	Pabbi minn hætti að drekka.
+666995	Í gærnótt skrifaði ég bréf.
+668474	Við erum bókuð allan mánuðinn á Broadway.
+669193	Ég hef alls engan áhuga á stjórnmálum.
+669209	Íþróttir eru góðar fyrir heilsuna.
+669372	Það er ómögulegt að sjá fyrir sér fjórvíða hluti.
+669422	Stúlkan var sýnilega skelfd eftir slysið.
+669468	Ég á tvær dætur.
+669469	Quintilius Varus, gef mér hersveitir mínar aftur!
+669486	Ég hef búið hér síðan ég var barn.
+669539	Ég vildi fremur deyja en gera það.
+670250	Það vantar ekkert.
+670272	Hún roðnaði af skömm.
+671516	Við náum ekki að skilja merkingu orðsins.
+671539	Við höfum fengið alla bygginguna til afnota.
+671583	Við eigum langa leið að baki.
+671608	Við neyddum hann til að fara þangað.
+671619	Við erum sammála um þetta mál.
+673136	Hún fann dauða manneskju.
+673144	Hann er þjófur.
+673171	Er læknir á skipinu?
+673189	Klukkan er bara fimm að morgni en það er strax orðið bjart.
+673238	Við ættum alltaf að heiðra loforð okkar.
+673241	Við ræddum margt.
+673382	Við hvíldum okkur einn á eftir öðrum.
+673396	Við verðum að láta það sem við höfum nægja.
+673617	Frænka mín gaf mér blóm.
+673621	Ég fer í vinnu á hverjum degi.
+673833	Lokaðu glugganum áður en þú ferð að hátta.
+673852	Börn þurfa margt, en mest af öllu kærleika.
+673893	Við ættum ætíð að lúta lögunum.
+673900	Við gerðum eins gott og hægt var úr þessum vondu aðstæðum.
+673906	Við byrjuðum öll samtímis.
+673912	Við hlupum til og frá.
+673916	Við munum ekki líða nokkurn sem á þátt í hryðjuverkum.
+674594	Sigur okkar er öruggur.
+674597	Enginn getur fundið að nýju áætluninni okkar.
+675093	Ekki hreyfa við blómunum.
+675250	Ég er maður.
+675259	„Hvað er klukkan?“ „Hún er tuttugu mínútur gengin í fjögur.“
+675264	Vinnu okkar er nærri lokið.
+675306	Útreikningar okkar sýna að eldflaugin er af stefnu.
+675347	Áætlunin okkar hefur marga kosti.
+675382	Tekjur okkar eru í hlutfalli við raunverulega getu okkar.
+675387	Við unnum leikinn með þremur mörkum gegn einu.
+677849	Þessi bók hér er jafn áhugaverð og þessi þarna.
+683933	Leiktu ekki með tilfinningar hennar.
+684153	Þetta er jólagjöfin frá honum.
+684158	Hún vissi ekki hvað hún ætti að gefa börnunum í jólagjöf.
+684162	Sonur minn trúir á jólasveininn.
+690313	Vertu svo vænn að leyfa honum að tala.
+690314	Vertu svo væn að leyfa honum að tala.
+690327	Húsið á fjallinu er skólinn okkar.
+698243	Báturinn var búinn radar.
+698251	Ég er ekki með peninga á mér.
+698321	Ég er vanur að fara í sturtu á kvöldin.
+698324	Gefðu mér eitt tækifæri í viðbót.
+698349	Ég er byrjaður að lesa bókina.
+698374	Maðurinn skrifaði nafnið niður af ótta að hann skyldi gleyma því.
+701830	Ég hlakka til að heyra í þér bráðlega.
+705409	Getur einhver þýtt þessa setningu?
+706964	Þú getur meitt þig ef þú fylgir ekki öryggisráðstöfunum.
+707600	Föðurlandsvinirnir vörðu réttindi þjóðar sinnar.
+723360	Er hann kennari?
+723610	Pablo og María voru hér.
+725486	Þótt ég hefði viljað hætta gat ég það ekki.
+727436	Ekkert er svo hart sem demantur.
+727451	Maður sér ekki oft skífusíma lengur.
+727660	Flestir strákar líkjast feðrum sínum.
+727700	Ég hugsa að flestir séu betur settir nú en áður.
+727943	Nær hvern dag fer hann að ánni og veiðir.
+727989	Ég á henni árangur minn að þakka.
+728082	Það er þess vegna sem ég sagði þér að fara ekki einsömul.
+728084	Það er þess vegna sem ég sagði þér að fara ekki ein.
+728349	Viðkvæm, tignarleg blómin eru í blóma.
+732628	Öll laufin á trénu urðu gul.
+734002	Ekki hlaupa svona hratt.
+734007	Ég hafði ekki beðið lengi þegar vagninn kom.
+734436	Ég vildi óska að þú ækir ekki svona hratt. Þú ert að gera barnið veikt!
+734464	Þú hlýtur að vera svangur fyrst þú borðar svona mikið af hrísgrjónum.
+734483	Ekki trufla mig með svona kjánalegum spurningum.
+734485	Ég náði ekki alveg nafni þessa hönnuðar.
+736023	Betty er danskennari.
+736030	Þú ættir ekki að segja slíkt á almannafæri.
+736040	Ég hef aldrei heyrt nokkuð því líkt.
+736119	Sendu eftir farangrinum undir eins.
+736658	Sue er bandarískur nemandi.
+736893	Ég er nemandi frá Ítalíu.
+736919	Ég bauð ykkur í mat.
+738442	John stóð einn með hendurnar krosslagðar.
+738444	John sat með krosslagðar hendur.
+738917	Ég vinn í apóteki.
+738952	Skyr er líkt jógúrt.
+738959	Kemur John að hitta okkur á morgun?
+738983	Þú vinnur í Mílanó.
+740809	Viltu einfalt eða tvöfalt?
+740811	Viljiði eins eða tveggja manna herbergi?
+741562	Jill er eina stelpan í félaginu okkar.
+742158	John stóð alltaf hjá mér þegar ég var í vanda.
+742174	Jón fylgdi Maríu á tónleikana.
+742182	Jón spurði Maríu hvort hún vildi fara í útréttingar um efirmiðdaginn.
+742205	John er kunnugur fyrirtækinu.
+742217	John hélt dyrunum opnum.
+742222	John er mjög hávaxinn. Hann er um sjö fet.
+742223	John er að glíma við Tom.
+742267	John fór án þess svo mikið að kveðja.
+742273	Ég elska snjó.
+742745	John er góður nemandi.
+742759	John er prófessor í frönskum bókmenntum við Oxford og konan hans er frönsk.
+744821	Hví ertu svo dapur?
+744824	Af hverju ertu svona dapur?
+746606	John ætlar að segja Lucy frá uppruna ruðnings.
+748914	Hr. Jones lét Mary fara til tannlæknins.
+750470	Þetta var löng og ströng ferð en við erum loksins komin á leiðarenda.
+750472	Hópurinn komst á leiðarenda eftir þriggja daga göngu.
+751170	Geturðu pantað fyrir mig?
+751329	Ég þurfti að fara heim.
+751331	Þetta er bara tíu mínútna göngutúr.
+754480	Ég bý nálægt sjónum svo ég get oft farið á ströndina.
+754488	Hefurðu þvegið hendurnar?
+754504	Ég kvæntist þegar ég var 19 ára gamall.
+764335	Ég hlakka ekki til að fara í vinnuna.
+786706	Uglur geta ekki séð á daginn.
+788025	Hvað er þetta? Þetta er rúta.
+788033	Hvað er þetta? Þetta er búð.
+788036	Konan er að vinna.
+788884	Bill er hafnaboltamaður.
+788886	Bill geigaði á fyrsta boltanum.
+790091	Bill er mikill bardagamaður.
+790294	Bill fór svo snemma á fætur að hann náði fyrstu lestinni.
+790310	Bill er algjört fífl.
+790318	Bill hætti að reykja.
+790340	Tom neyðist til að vinna vinnuna.
+790348	Þúsundir útlendinga ferðast til Japans á hverju ári.
+790364	Hann fær ekki leyfi til að koma hingað aftur.
+791540	Bill mun keppa við þig í tennis.
+791553	Kannski kemur hann.
+793062	Á eynni hefur orðið óttalegur jarðskjálfti.
+793077	Margir misstu heimili sín sökum jarðskjálftans.
+793192	Hann býr aleinn úti í sveit.
+794378	Ég var vanur að drekka bjór.
+794544	Hann byrjaði að þvo bílinn sinn.
+794569	Kent er fæddur leiðtogi.
+795481	Hnetusmjör og sultu, takk.
+795548	Peter er núna ekki við.
+813350	Hann kvæntist kanadískri konu.
+813361	Húsið hans er mjög langt frá stöðinni.
+813389	Hvað er að mér?
+814430	Stundum hrekktu strákarnir kennarann.
+823809	Margir Asíubúar hafa ensku að sameiginlegu tungumáli.
+827509	Vinsamlegast mundu að senda þetta bréf.
+827588	Ég veit ekki hvað fékk mig til að koma hingað.
+827690	Þýskaland gekk í bandalag með Ítalíu.
+828343	Gætirðu sagt mér hvað klukkan er?
+828345	Gætirðu vinsamlegast sagt mér hvað klukkan er?
+828352	Gefðu mér annað tækifæri.
+828366	Vinsamlegast kynntu mig fyrir henni.
+828373	Ég vona að þú eigir góða ferð.
+828426	Gerðu það að syngja lagið einu sinni enn.
+828825	Leyfðu mér að taka af þér mynd.
+828837	Hvenær komstu aftur frá Þýskalandi?
+828858	Á ég að loka dyrunum?
+828860	Værirðu til í að opna dyrnar?
+828898	Þú veist að ég mundi gera allt fyrir fallegu augun þín.
+829767	Ég stóð hann að svindli í prófinu.
+829779	Mér datt ekki í hug að Georg mundi svindla á mér.
+831747	Bankaðu á hurðina.
+832842	Dyrnar voru enn sem áður læstar.
+832914	Ég lærði ekkert í gær.
+833310	Ég fór hjá húsinu hennar í gær.
+833317	Ég eldaði mat í gærkveldi.
+833335	Ég var hamingjusamur í gær.
+833342	Ég sá ungfrú Smith í leikhúsinu í gær.
+833345	Ég hitti föður þinn í gær.
+833350	Í gær rakst ég á gamlan vin minn á flugvellinum.
+833949	Mig dreymdi góðan draum í nótt.
+834408	Vinsamlegast haltu þessum upplýsingum fyrir sjálfan þig.
+834476	Hver er stúlkan sem stendur við dyrnar?
+836058	Maðurinn sem stendur við dyrnar er frægur söngvari.
+836465	Hefurðu tryggt að dyrnar eru læstar?
+836469	Hvar get ég fengið símkort?
+840092	Desnjév-höfði er 30 mílur sunnan norðurheimskautsbaugs.
+840093	Hvalur er engu meiri fiskur en hestur.
+841018	Þú ættir að lesa eins margar bækur og þú getur.
+844942	Svölur fljúga mjög hratt.
+844964	Ég vissi ekki af því fyrr en tiltölulega nýlega.
+844967	Loksins komst hún í valdastöðu.
+845913	Geturðu keypt eitt fyrir mig líka?
+845926	Þú leist á mig.
+845927	Simpansar eru gáfaðar skepnur, færar um að leysa einföld vandamál.
+845930	Hvar get ég fengið upplýsingar um leiðsöguferðir?
+846404	Má ég spurja þig að nokkru?
+846406	Ég ætla bara rétt að koma við á pósthúsinu.
+849734	Ég var við það að fara þegar dyrabjallan hringdi.
+849736	Hún kom rétt þegar ég var að fara.
+852677	Hefurðu nokkurntíma fengið ost með eplaköku?
+852678	Hefurðu nokkurntíma fengið þér ost með eplaköku?
+852693	Ég er með mikið slím í hálsinum.
+852702	Dansararnir lifnuðu virkilega við í latnesku dönsunum.
+852705	Hver hreyfing dansarans var fullkomin.
+852796	Enginn getur skilið þau að.
+852818	Ég er ekki í skapi til að fara út.
+853423	Það er líklegt að hún komi.
+856016	Það skiptir engu máli hvort hann samþykkir eða ekki.
+860011	Ég hlustaði en heyrði ekki neitt.
+860033	Mig virkilega langar í mótorhjól.
+860052	Ég var að borða súshí og drekka bjór.
+860065	Nútímavæðing þess var langt umfram væntingar mínar.
+860070	Hann var átakanlega mjór.
+860071	Auðvitað lærði ég um Kína í kennslubókum þegar ég var í Japan, en það sem ég upplifi sjálfur í Kína er allt öðruvísi en það sem lýst er í kennslubókunum.
+861136	Fólk ætti að vera heiðarlegt hvort við annað.
+862064	Hún verður ekki ánægð.
+862190	Ted hlakkar til að fara til útlanda eftir útskriftina.
+863024	Klukkan hvað fer hún á fætur?
+863040	Esperantó er tungumál tuttugustu og fyrstu aldarinnar.
+863100	Vinsamlegast hikaðu ekki við að spurja mig spurninga.
+865979	Skipið var upp á náð hafsins komið.
+865986	Trúirðu að örlögum okkar sé stjórnað af stjörnunum?
+866209	Að leikstýra er það sem allir leikarar segjast vilja gera.
+866257	Ég hélt uppi höndinni til að stöðva leigubíl.
+867993	Ég vil ekki að þessu leyndarmáli verði uppljóstrað.
+867994	Ég keypti þjófavörn fyrir hjólið mitt.
+868003	Ég er ekki mjög tónlistarlega sinnaður.
+868051	Þið verðið enga stund að venjast köldu loftslaginu.
+868073	Muammar Gaddafi er með mikilmennskubrjálæði.
+868288	Vinsamlegast komið inn eitt af öðru.
+868562	Af hverju höfnuðu þau tillögu þinni?
+870019	Mín væri ánægjan.
+870042	Og hvað fæ ég?
+870046	Allt í lagi, og hvað ætlar þú að gera fyrir mig?
+870082	Ég meina það í einlægni þegar ég segi að ég elska þig.
+870089	Þú ert að spurja ranga manneskju.
+870136	Gallíu allri er skipt í þrjá hluta.
+870140	Það er mjög leiðinlegt að vera veik.
+870807	Jafnvel eitraðir snákar munu aðeins gera árás ef þeim þykir sér ógnað.
+870833	Við ráðum við þetta.
+870834	Ég veifaði bless og labbaði svo í burtu.
+870841	Það eru ekki grá hár sem ógna viskunni.
+870852	Hefurðu aldrei heyrt um Rio de Janeiro?
+870861	Ég kannast ekki við það.
+870874	Við áttum stutta samræðu um mannréttindi.
+870967	Hví ertu svona reið?
+870970	Af hverju ertu svona sein?
+870979	Hvernig geturðu verið svona óvirkur? Af hverju svararðu ekki í sömu mynt?
+870999	Af hverju hringdirðu í mig á þessum óguðlega tíma?
+874143	Af hverju segirðu það?
+874145	Ókei, en hvað um stjórnandann?
+874153	Þú fréttir þetta ekki frá mér.
+879038	Tvær myndir sköruðust.
+879052	Sjáðu hvernig þau hlaupa!
+881352	Ekki eyðileggja matarlystina.
+881762	Þau geta veitt.
+881780	Þeir sjóða fisk niður í dósir.
+882604	Hvað ætlarðu að fá þér í hádegismat í dag?
+882609	Sundurlaust mal þessa manns er það fjarstæðukenndasta sem ég hef nokkurtíma heyrt.
+882626	Hún sendi þessa tölvupósta fyrir klukkutíma.
+883859	Ekki ganga yfir götuna!
+883898	Þú kynnir að verða undrandi á útkomunni.
+885081	Náðu í það og settu það á eldinn.
+885724	Einmanna fólk viðheldur eigin einmannaleika með ótta sínum við annað fólk.
+885730	Hvað gerðirðu í gærkveldi?
+885972	Sæktu það og settu það á eldinn.
+886399	Nýju húsin eru jafnhá.
+886401	Ég hef komið á hvorugan þessara staða.
+888073	Hún sagði honum hversu gömul hún er.
+888120	Hún upplýsti hann um dagsetningu næsta fundar.
+888133	Hún ráðlagði honum að halda sér fyrir í rúminu í tvo daga í viðbót.
+888244	Hún ráðlagði honum að hætta að taka þessi lyf.
+888313	Hún baðst afsökunar fyrir að hafa móðgað hann.
+888339	Hún bauð honum á stefnumót en hann sagði nei vegna þess að hann taldi að stelpur ættu ekki að bjóða strákum á stefnumót.
+888345	Hún spurði hann nokkurra spurninga en hann neitaði að svara.
+889722	Hún bað hann um að lesa það fyrir sig.
+889723	Hún bað hann um að vera eftir en hann vildi það ekki.
+889731	Hún spurði mig hvað hefði orðið af honum en ég vissi það ekki.
+889734	Hún réðst á hann með hafnaboltakylfu.
+891624	Nafn mitt er Ozymandias, konungur konunga: Berið verk mín voldug augum og örvæntið!
+894469	Fólk segir það ekki lengur.
+894472	Þessi dýr voru í hættu með að deyja út.
+894492	Hverju barni var gefin gjöf.
+894493	Hver leikmaður gerði sitt besta.
+895204	Þú hlýtur að vera staurblindur ef þú sást það ekki.
+905151	Ég er ekki enn búinn að ákveða mig.
+905301	Ég hugsa að það sé tími til að ég slökkvi á sjónvarpinu.
+905310	Hann gerði betur en seinast.
+905334	Ég var of hamingjusamur til að sofa.
+906371	Hvenær drekkurðu kaffi?
+906378	Á landbúnaðar- og iðnaðarsvæðum Kína eru sumir enn mjög fátækir.
+906618	Ég þoli ekki svokölluð „30 daga“ tungumálanámskeið.
+906637	Hún náði sér af áfallinu yfir dauða föður síns.
+906683	Hún brýtur eitthvað í hvert skipti sem hún þrífur herbergið.
+907037	Ekki vanmeta mig.
+907039	Hljóð kossins er ekki eins hátt og fallbyssunnar, en bergmálið endist þó nokkru lengur.
+907053	Skattar eru verðið sem við borgum fyrir siðmenntað samfélag.
+907083	Skólinn mun sjá okkur fyrir tjöldum.
+908298	Hún er meiri kunningi en vinur.
+908510	Hún flutti yndislega ræðu í brúðkaupsveislu vinkonu sinnar.
+908559	Hana syfjaði eftir kvöldmatinn.
+908638	Hann hatar að hlaupa.
+908647	Ég elska Lúther.
+908759	Higgsbóseindin hefur verið kölluð Guðeindin.
+908802	Fer hún til Ameríku á næsta ári?
+908813	Hún fer í vinnuferð til London í næstu viku.
+909461	Hver maður þráir lengi að lifa en engi maður vill gamall verða.
+910159	Hún hreykir sér af eldamennsku sinni.
+910246	Mundirðu ekki frekar vilja eyða tímanum þínum í eitthvað sem þú nýtur að gera?
+910252	Reyndu að eyða ekki svona miklum tíma í að kvarta yfir hlutum sem þú getur ekki breytt.
+910322	Gætirðu vinsamlegast sagt mér farsímanúmerið þitt?
+947877	Hann lenti í slysi.
+1137778	Geislunin lak úr kjarnorkuverinu.
+1137787	Við munum kaupa nýjan bíl í næstu viku.
+1137827	Einhver hefur tekið skóna mína í misgripum.
+1137834	Tom á enga bræður.
+1141429	Þú mátt ekki verða seinn í skólann.
+1141468	Ég fékk krampa í fótinn þegar ég hljóp niður tröppurnar til að ná lestinni og varð að setjast strax niður í miðjum tröppunum.
+1194668	Í heiminum mínum eru allir smáhestar og þeir éta allir regnboga og kúka fiðrildum.
+1220357	Ég hef lagt fjórðung tekna minna til hliðar síðastliðin þrjú ár.
+1312226	Ég hjálpaði þeim í gær.
+1312413	Það snjóaði stanslaust í fjóra daga.
+1312456	Hann er undir stólnum.
+1312921	Ég er ekki alveg sáttur með hvernig þessi setning er orðuð.
+1315548	Hann er plötusnúður.
+1315549	Hann er klár.
+1315552	Ég kann vel við hann.
+1315576	Hvernig líður Mary?
+1315593	Það er allt í lagi með mig.
+1316179	Ég skal sækja hann.
+1316181	Ég skal sækja það.
+1316183	I'll pick her up.
+1316207	Hann elskar hana.
+1316213	Ég nota hann.
+1316580	Hvað með þig?
+1316598	Má ég fara heim?
+1316636	Ekki vera reið.
+1316637	Ekki vera reiður.
+1316649	Hann hataði að ljúga.
+1318342	Hver braut þetta?
+1318372	Ég hata stjórnmál.
+1320745	Skemmtið ykkur vel.
+1320753	Hann hatar köngulær.
+1321339	Hann snéri sér við.
+1321821	Gerðu svo vel að hringja í hann.
+1321833	Hún vann áfram.
+1321867	Mér finnst gaman að ferðast.
+1322909	Hver á að gera?
+1322925	Hann er um fertugt.
+1322933	Hann er ennþá ungur.
+1322943	Ég var henni sammála.
+1323353	Ég hætti að reykja.
+1323355	Mig langar í mikið meira.
+1323356	Mig langar í pappír.
+1323360	Ég hélt áfram að lesa.
+1323361	Ég kem aftur eftir stutta stund.
+1323379	Lífið er ánægjulegt.
+1323740	Hann er ekki kominn ennþá.
+1323761	Ég næ ekki að sofa vel.
+1324573	Ég er góður í tennis.
+1324685	Vinsamlegast fáið yður sæti.
+1324698	Hún grét áfram.
+1324716	Smelltu þér í skóna þína.
+1329095	Það væri í góðu lagi.
+1329136	Tom er með timburmenn.
+1329186	Hvers vinur er hann?
+1329205	Eigðu góða helgi.
+1329207	Hann samþykkti hugmyndina mína.
+1336994	Hann náði takmarkinu sínu.
+1336996	Hann sat á bekknum.
+1337006	Hann tók af sér hattinn.
+1337057	Ég hlýt að hafa tapað því.
+1339329	Þessi fugl getur ekki flogið.
+1339331	Þetta er það sem mig vantar.
+1351292	Vertu komin heim fyrir sex.
+1351293	Veriði komin heim fyrir sex.
+1351356	Við erum frænkur.
+1351358	Við erum frændsystkini.
+1351389	Hann hefur sérkennilegar hugmyndir.
+1353528	Hann kvæntist frænku minni.
+1353595	Ég er ekki þreytt lengur.
+1353656	Ég mun aldrei sjá hann aftur.
+1353669	Mér líður vel núna.
+1353682	Ég er að skrifa bréf.
+1355111	Mörg tré féllu.
+1355121	Vinsamlegast sitjið kyrr.
+1356506	Skiptu þér ekki að þessu.
+1356528	Get ég skilið eftir skilaboð?
+1364160	Hann varð að halda sig í rúminu.
+1364163	Hann á þrjá bræður.
+1364296	Hann hlýtur að vera eldri en fimmtíu ára.
+1364299	Hvernig býr maður til box?
+1368319	Ég fer í háttinn klukkan ellefu.
+1368351	Það var heitt í gærnótt.
+1368360	Má ég gera það akkúrat núna?
+1369049	Hún á fallega brúðu.
+1960962	Það eru margir Bandaríkjamenn sem kunna að tala japönsku.
+1977905	Ég er bróðir þinn.
+1979410	Réttið upp hönd.
+1979691	Ég held að systrum þínum muni líka þessi bók.
+3772549	Mér finnst gaman að spila fótbolta.
+3795308	Útidyrahurðin var opin
+3795332	Hún er ungur námsmaður.
+3795370	Kötturinn minn er mjög glaður þegar hann fær fisk í matinn.
+3795372	Tom fór á námskeið til þess að læra að hafa stjórn á reiði sinni.
+3795377	Hann kann að nudda.
+3795409	Tom sýndi mér hvernig ætti að nota myndavélina.
+3795446	Komdu aftur hingað, gungan þín.
+3795452	Tom gat ekki munað lykilorðið sitt.
+3795499	Erum við alveg tilbúin?
+3795527	Hvað er allt þetta?
+3795569	Hvað gerir þetta?
+3795584	Hversvegna spurðir þú?
+3795585	Hvað fannst Tom?
+3795588	Hvað er að?
+3795594	Af hverju kom Tom?
+3795596	Ertu að skilja mig?
+3795664	Tom gæti hjálpað þér.
+3795674	Eldurinn var dauður.
+3795714	Hverju misstirðu af ?
+3795786	Ég sá Tom gera það.
+3799211	Mér finnst ég vera feitur.
+3799212	Þú ert að fitna.
+3799226	Tom er prestur.
+3799239	Tom svaf ekki.
+3799265	Við gætum hitt Tom.
+3799279	Þorirðu að spyrja hann út í það?
+3799309	Við sögðum ekkert.
+3799349	Lyklarnir mínir eru horfnir.
+3799356	Þetta er nýtt fyrir mér.
+3799362	Tom var með mér.
+3982190	Elskar þú móður þína?
+3994381	Höfuðborg Eistlands er Tallinn.
+3994456	Það var gefið út árið 1969.
+3994522	Eigðu góðan dag.
+3994577	Ertu á Facebook?
+3994589	Hún eyddi Facebook síðunni sinni.
+3994956	Dan hjálpaði Lindu að finna glæsilegan kjól í fatabúðinni.
+3994963	Hún var betri en ég bjóst við.
+3995301	Ég er að fara læra íslensku í Háskóla Íslands næsta haust.
+3996840	Heyrirðu ekki hvað ég er að segja?
+3997312	Tom skemmti sér mjög vel.
+3997349	Tom sagði að ég væri sæt.
+3997517	Hann fór til Bandaríkjanna til að læra bandarískar bókmenntir.
+3997687	Hún fór þangað í gær.
+3998375	Tom hefur enn ekki hringt í Mary.
+3998400	Ertu með netfang?
+3998413	Við erum í meiri vanda en við bjuggumst við.
+3998589	Ég verð að fara á hárgreiðslustofuna og láta laga rótina mína.
+4000851	Hann þarf hjálp.
+4000876	Viltu starfa í Þýskalandi?
+4000883	Við getum ekki sofið út af hávaðanum.
+4007782	Farðu í bað.
+4007788	Farðu í sturtu.
+4007860	Þessi mynd er leiðinleg.
+4008636	Ég kann ekki að keyra.
+4010000	Má bjóða ykkur te eða kaffi?
+4020831	Ég elska stjörnufræði.
+4022320	Viltu vinna með honum?
+4022326	Farðu í skólann.
+4025636	Halló. Get ég fengið að tala við Tom?
+4030571	Ég hef ekki reykt í mörg ár.
+4032172	Ég nenni því ekki.
+4091309	Tónlist er sál rúmfræðinnar.
+4171519	Hann var mjög veikur í síðustu viku.
+4171527	Ég gerði það svona.
+4171531	Talar þú Makedónísku?
+4171535	Ég er að borða epplið.
+4171561	Tom mun vera reiður við Mary þegar hann kemst að því sem hún gerði.
+4171585	Þegar þú talar ert þú aðeins að endurtaka það sem þú veist nú þegar. En ef þú hlustar gætir þú lært eitthvað nýtt.
+4171595	Maðurinn tekur hestana að vatninu.
+4171603	Þér líkar ekki við mig lengur!
+4171691	Svafst þú vel í dag?
+4171715	Java og Javascript eru eins og Indland og Indónesía, það er ekki sami hluturinn.
+4171721	Rotta er lítið dýr með langar, oddmjóar tennur og langan hala.
+4256206	Velkomin á Wikipediu.
+5003393	Sjaldan er ein báran stök.
+5003399	Ungur nemur, gamall temur.
+5003439	Hamraðu járnið meðan það er heitt.
+5003446	Morgunstund gefur gull í mund.
+5003448	Auga fyrir auga og tönn fyrir tönn.
+5003459	Fjarlægðin gerir fjöllin blá.
+5020986	Veðurfréttamaður er manneskja sem veðrið er ekki alltaf sammála.
+5030347	Er kvefið í Tom að batna?
+5484392	Sumir valda hamingju hvert sem þeir fara; aðrir þegar þeir fara.
+6812852	Hann trúlofaðist frænku minni.
+7319740	Gulrót eða banani?
+7319837	Þau eru sofandi!
+7320045	Hann var á ströndinni.
+7320057	Ég er í brúðkaupsferð.
+7344917	Hversu gömul ert þú?
+7467684	Þá um nóttina skalf hún úr kulda í tjaldinu.
+7467815	Þú heldur að Tom hafi ekki gert þetta, er það ekki?
+7467833	Þú getur sjálfur sagt Tom það.
+7468135	Hvað í helvítinu ertu að gera?
+8051741	Láttu mig vita þegar þú ert tilbúinn!
+8935776	Þau hittust við aðaldyr skólans.
+8942784	Sveitarfélög veita byggingar- og framkvæmdaleyfi, sem veitt eru eftir að umhverfismati framkvæmdar er lokið.
+8942796	Sameining sveitarfélaga hefur gengið vel.
+8945126	Hann segir lífverði sína hafa bjargað lífi sínu oftar en einu sinni.
+9509432	Ég held að ég aldrei hafi séð þá fyrr.
+10302649	Börnin eru að leika í sandkassanum.
+10302730	Segðu mér nafn þitt.
+10303971	Tom hefur ekki lifað hér í langan tíma.
+10304053	Er þetta góður hlutur?
+10304429	Þú ert bjáni!
+10305569	Áhugavert hvar hún er.
+10305746	Þessi bók stendur í almennumhugverkatakmörkonum.
+10348235	Henar móðir er óvenjulega falleg kona.
+10356150	Það þarf að svara fljótlega og stuttlega.
+10358208	Viljiði að við hringjum í ykkur?
+10359792	Mér finnst þessi hugmynd asnaleg.
+10360025	Þú reyndir ekki einu sinni.
+10377296	Ég var seinn fyrir flugið.
+10464002	Það er nótt.
+10464007	Ég geri þetta oft.
+10464033	Tölvan mín kostaði miklu meira en þín.
+10603603	Pabbi minn sagði mér ævintýrasögur á kvöldin.
+10603613	Ég þarf sturtu.
+10603761	Ég hata þig.
+10605825	Maturinn verður til eftir fimmtán mínútur.
+10606053	Ætti ég að þéra eða þúa yður?
+10613120	Trúið þið á örlög?
+10613141	Ég er ánægður að þú stakkst upp á þessu.
+10613155	Ég heyri ekki neitt vegna hávaðans.
+10613173	Má ég taka hana heim?
+10613267	Ég sá þig fylgja þeim.
+10613434	Kommúnismi er kerfið sem var stundað í Sovétríkjunum.
+10613481	Hugtakið „geðheilbrigði“ í okkar þjóðfélagi er að mestu leyti skilgreint af því hversu mikið einstaklingur hagar sér í samræmi við þarfir kerfisins og gerir það án þess að sýna merki um streitu.
+10613659	Tveir plús tveir er fjórir.
+10613910	Ég byrjaði að grafa.
+10615176	Ég næ ekki að anda!
+10615947	Í þessari höll konungurinn og drottningin búa.
+10615995	Ég vildi vernda þig.
+10616031	Þetta geta allir.
+10617057	Ég get ekki étið þetta.
+10620124	Reyndu að klára þessu einu sinni enn.
+10620165	Við verðum alltaf saman.
+10621731	Fólk leggur oft þessa spurningu fyrir okkur.
+10621767	Þau hugsa ekki og þess vegna eru ekki til.
+10623754	Ef ekki nú, hvenær þá?
+10632400	Þú ert trygg.
+10634002	Aldur er ekkert nema bara tala.
+10634007	Aldur er ekkert nema bara aðeins og einfaldlega tala.
+10635093	Þú ert bara að þykjast.
+10635139	Sæmundur gengur of hægt.
+10635305	Ég tel að þetta sé kynþáttafordómur.
+10641148	Það sem þú segir er vitleysa.
+10641157	Allt í lagi, reyndu aftur.
+10646703	Hvar er brúin?
+10646704	Hvar er brú?
+10647562	Ég hef ekkert klínk í vasa.
+10647777	Reykjavík er höfuðborg Íslands.
+10674012	Þann 13. febrúar get ég sagt að ég sé 35 ára.
+10675441	Ég vil ekki fara þangað einn.
+10681516	Ég vinn ekki lengur ókeypis.
+10681563	Ég vona að þú verður hér alla viku.
+10681592	Gerðu það sem þig langar. Þitt er valið.
+10681612	Ætli það snjói ekki.
+10681751	Japanir borða aðallega hrísgrjón og fisk.
+10681767	Hún er hrædd.
+10685050	Klám er viðbjóðslegt.
+10691498	Hún telur að hún sé snillingur.
+10691623	Af hverju sagði honum enginn?
+10691644	Sástu þá í gærkvöldi?
+10691645	Sástu þau í gærkvöldi?
+10692116	Mér líður vel.
+10692133	Hvernig gengur? Ég hef ekki séð þig í aldir!
+10692138	Ég mun útskýra þetta síðar.
+10695580	Í kvöld væri betra.
+10697357	Vínið er gott.
+10697969	Hún er Íslendingur.
+10698246	Í dag er bæði sprengidagur og bjórdagur.
+10700207	Hann er ríkur.
+10702499	Þú sagðist ætla að hjálpa mér.
+10702539	Hann vill að þú hjálpir honum.
+10705626	Ég veit að þú ert í uppnámi.
+10707101	Ég mun segja þér hvar á að finna hann.
+10710531	Hann er ljóshærður.
+10710587	Höfuðborg Úkraínu er Kænugarður.
+10713567	líttu á konuna þarna!
+10713674	Ég hef farið snemma að sofa í langan tíma.
+10713738	Kommúnismi er jöfn úthlutun fátæktar.
+10715289	Þú drepur mig ekki svona auðveldlega.
+10715312	Leyfðu honum að svara.
+10717029	Ég er búinn að kaupa allt.
+10717272	Ég er að fara út með ruslið.
+10719959	Ég er algjörlega sammála.
+10721666	Þetta er japönsk kvikmynd.
+10722902	Hringdu í mig ef eitthvað breytist.
+10722992	Hvernig finnst þér bókin?
+10724281	Ég biðst afsökunar.
+10730419	Rússar eru drykkjumenn og Úkraínumenn líka.
+10732437	Það væri skemtilegt.
+10798217	Hefur þú nokkurn tíma kysst hundinn þinn?
+10798218	Hugsanlega er það mögulegt.
+10798221	Vinur þinn hefur komið til þín.
+10814947	Gras er fyrir kýr.
+10834527	Ég veit bara að hann yfirgaf verkefnið.
+10844368	Finnst þér skemmtilegt skákmát?
+10851555	Handbyssa gæti komið sér vel.
+10851657	Þú getur breytt heiminum, bara eina póstsprengju í einu.
+10870922	Trúirðu á sögurnar?
+10873578	Settu bókina til baka þar sem þú fannst hana.
+10883576	Helvíti góð saga.
+10937948	Er það ekki nóg?
+10955098	Fáir kunna að meta ljóð þessa skálds að fullu.
+10960441	Hér er full karfa af grænmeti.
+10960448	Hann lést í fyrradag.
+10963556	Einn af þeim tveimur verður að fara.
+10963559	Annar af þeim tveim þarf að fara.
+10963561	Önnur af þeim tveim verður að fara.
+10963602	Hvaða tungumál eru töluð í Kóreu?
+10963630	Hafðu samband við hana.
+10963632	Ég skal leyfa þér að ákveða.
+10963647	Ekki gráta nornir.
+10963767	Ég elska tungumál!
+10965574	Það er þægilegt að búa svo nálægt stöðinni.
+10969591	Tom er kanadískur.
+10969600	Ég vinn eins mikið og Tom.
+10972089	Ef hann kemur, segðu honum að bíða eftir mér.
+10973123	Hún mun koma þegar hún er tilbúin.
+10973138	það er ómögulegt að hún sagði það.
+10976729	Komið þið sælir.
+10999678	Ég á ekki pening svo ég borða bara pasta.
+11011807	Ég held að þú sért sá eini sem þarfnast hjálpar.
+11074830	Ég ætla að panta annan bjór.
+11074866	Hefur þú hagað þér vel í dag?
+11102583	Ég sá ekki neinn í garðinum.
+11107047	Ég er ekki fatlaður.
+11145667	Ekki er ég lengur hræddur.
+11268294	Krákan er kolsvört.
+11271201	Af hverju líkaði þér við hann?
+11271308	Þetta er sonur okkar.
+11321647	Hversu ég vildi að ég gæti flogið!
+11344076	Við getum lifað af án matar… bara ekki lengi.
+11353091	Farðu aldrei einn.
+11515975	Áfengi hefur áhrif á mann.
+11537023	Þú þarft alltaf að segja satt.
+11539547	Ertu ekki sein?
+11792688	Satt að segja…
+11792697	Ég vissi alltaf að þú gætir gert þetta.
+11977746	Hún er hvít.
+12265239	Það er önnur leið.
+12282666	Mig langar að hætta.
+12300601	Við erum nánast eins og bræður.
+12300614	Við þurfum það báðar.
+12305653	Köngulær þurfa ást líka.
+12305655	Ég elska þig, kónguló mín.
+12340291	Þetta er grænn fiskur.
+12341981	Ég er prófessor.
+12360440	Kona sat á bekk.
+12360468	Þeir börðu mig allan.
+12360487	Sumar frægar kenningar eru rangar.
+12701219	Ég sakna sólarinnar.

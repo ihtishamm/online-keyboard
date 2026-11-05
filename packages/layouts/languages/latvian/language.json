@@ -1,0 +1,27 @@
+{
+  "slug": "latvian",
+  "code": "lv",
+  "order": 670,
+  "lang": "lv",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Latvian",
+    "native": "Latviešu"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["lv-easy", "lv-qwerty", "lv-standard"],
+  "accents": "āčēģīķļņšūžĀČĒĢĪĶĻŅŠŪŽ",
+  "sample": "Mana ģimene šodien iet uz mežu lasīt sēnes un ogas.",
+  "voice": ["lv-LV"],
+  "wordList": true,
+  "translate": {
+    "google": "lv",
+    "bing": "lv",
+    "deepl": "lv"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

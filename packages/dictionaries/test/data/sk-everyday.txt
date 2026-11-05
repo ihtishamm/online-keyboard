@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+707038	Iste máš chrípku.
+878889	Takmer nič o tom neviem.
+878897	Keď zaplatím všetky dlhy, neostanú mi asi vôbec žiadne peniaze.
+878911	Obrad sa uskutoční zajtra.
+878953	Tí dvaja chlapci majú zhruba rovnakú angličtinu.
+1035694	Ako donútim svojho psa žrať psie krmivo?
+1036032	Prosím, zadržte dych.
+1036401	Nehrajte tu bejsbal.
+1037278	Barman, dal by som si drink.
+1043031	Pôjde na stanicu hodinu predtým, ako odíde vlak.
+1044748	Inžinier nežije. Funguje to.
+1044817	Diétna kola stojí na Ukrajine ₴2.
+1045021	Felicja je rodáčka z Katowic.
+1059562	Aj ty ideš?
+1065460	Nechcem ísť do školy.
+1317881	Zem je pekná planéta.
+1317883	Jupiter je najhmotnejšia planéta slnečnej sústavy.
+1320407	Pes je biely.
+1336584	Starý muž prešiel cez cestu opatrne.
+1548480	Nie je toto tak?
+1812744	"Zločin nikdy nebude dokonalý, ale možno ho z času na čas zdokonaliť", povedal majster medzi zlodejmi na otázku o dokonalom zločine.
+1865219	Ľudia bojovali proti chudobe.
+2209085	Nikdy nepíš slová „boršč“ a „šči“ po nemecky!
+2225923	Učiteľ predviedol veľa fyzikálnych experimentov.
+2228960	Tomáš nemá poňatia, čo urobiť so všetkými nepotrebnými vecami v jeho garáži.
+2229002	Minulý rok som sa vrátil domov a bol som prekvapený tým, že aj dedina aj ľudia sa úplne zmenili.
+2233470	Kvitnúca broskyňa je krásna.
+2428534	To nie je má žena.
+2428535	Nechcem ťa stratiť.
+2428537	Vidím, ako sa učíš.
+2428662	Tento rok veľa pršalo.
+2428686	Môj malý brat to urobil miesto mňa.
+2428687	Chcete niečo jesť?
+2429377	Strom je zelený.
+2429385	To je veľmi tmavý.
+2430573	On napíše knihu teraz.
+2862518	Môžem sa na to pozrieť?
+2912436	Dom, ktorého strechu možeš vidieť tamto, je náš.
+2912675	Nerobil by som prudké pohyby.
+2913687	Tom pobozkal všetkých v miestnosti.
+2914111	Prišiel som pešo.
+2914130	Ľudia budú hovoriť.
+2914154	Prečo ma obviňuješ za to, čo sa stalo?
+2914676	Nehanbí sa za to, že je chudobný.
+2915847	Myslel som, že Tom a Mary sú blázniví.
+2915853	Nemôžeš tú vetu preložiť doslovne.
+2915869	Myslel som, že Tom bude vo svojej izbe.
+2915877	Kde držia Toma?
+2915884	Výhra jej nebude odovzdaná.
+2916535	Tom naplnil krabicu jedlom.
+2916546	Nikdy nehovorí anglicky bez toho, aby robil chyby.
+2916551	Poznám skutočný dôvod, prečo nechceš ísť.
+2921742	Tom si obliekol toto.
+2921827	Príde aj Tom.
+2921852	Odviezla ma domov.
+2926327	Zoberiem ťa tam.
+2926450	Pretože som bol vyľakaný.
+2926470	Tom nevie nič o Marynej rodine.
+2926486	Ja môžem pomôcť ak chceš.
+2927689	Včely robia med.
+2927710	Ja som videl zápas v televízii.
+2929950	Tá novina ju vôbec nerozrušila.
+2975741	Nevideli sme nič divného.
+3314271	Dnes už je utorok?
+3384753	Roj čiel obliehal obchod, chránil královnú.
+3632637	Ako sa volá tvoj najlepší priateľ?
+3847623	Čo je dovolené Jupiterovi, nie je dovolené volovi.
+4199721	Poznáš sa s Tomovou novou priateľkou?
+4267910	Zakryla její zklamání úsměvem.
+4403628	Nie som si istá.
+4404790	Nepáči sa mi ten nápad pracovať cez víkendy.
+4404937	Kde je moja malá princezná?
+4700519	Napísal mi list.
+4719272	Stará sa o svoju rodinu.
+4761681	Prosím ťa, zapíš, čo hovorí.
+4775952	Pozrel sa jej do očí.
+4780474	Kde je kladivo?
+4785678	Vyriešil problém sám.
+4980561	Chcem meč ako tento!
+4980682	Dnes som unavená.
+5016853	A teraz mám kvôli tebe problémy!
+5059262	Nie som si istá, že je to dobrý nápad.
+5060545	Čia je táto kniha?
+5090428	Tomáš spadol zo svojeho bicykla.
+5121059	Štedrí ľudia sú zlí obchodníci.
+5171953	To je všetko, čo môžeš urobiť.
+5195441	Chcem knihu. Kde je kníhkupectvo?
+5313885	Nezomrel som na to.
+5610913	To ani netuším.
+5701293	Aj inokedy sa stalo, že nevedel spať.
+6132936	Je to tak.
+6140561	Príliš sa obávam.
+6147550	Cena benzínu stúpa.
+6148988	Si už pripravený?
+6166452	Tom nevedel, kde je jeho pero.
+6824288	Ja som Ricardo.
+7360384	Tom chce ísť do kina.
+7435410	Pacient nemal horúčku.
+7526891	Prišiel som z Číny.
+7577734	Je to príliš drahé.
+7578279	Má dve dcéry.
+7584437	Vy ste študovali.
+7584457	Nám na tebe záleží, Tom.
+7584467	Je v skvelej forme.
+7584472	Tomáš verí v svoju intuíciu.
+7584496	Ako deti sme všetci mali sny.
+7584595	Vždy som bol na Vás hrdý.
+7610501	Dúfam, že to bude fungovať.
+7704425	Tom je američan žijúci v Paríži.
+7710621	Tom včera nebol doma.
+8179068	Asteroid explodoval nad Čeľjabinskom v Rusku.
+8214717	Tom potrebuje peniaze.
+8220273	Nie je tam.
+8338103	Kedy si išiel domov?
+8344066	Mám niekoľko domov.
+8540888	Nemôžem im ho dať.
+8585653	Nie je v tom nič zlé.
+8846121	Prečo Tom nie je šťastný?
+8859766	Napísala som list žiadajúc ho, aby sa vrátil trochu skôr.
+8862479	Na strednej škole som sa zobúdzal o šiestej každé ráno.
+8862750	Nesmejem sa často.
+8862754	Zaobchádzali so mnou ako s dieťaťom.
+8862799	Vždy, keď sem príde, objedná si to isté jedlo.
+8863030	Dám ti peniaze zajtra.
+8865559	Ak sa pozrieš na slová básne, naozaj veľa neznamenajú.
+8865651	Nemal som sa odhlásiť.
+8874042	Tom mal povedať pravdu.
+8874268	Poľovali na jelene a líšky.
+8876323	„Ver mi,“ povedal.
+8876396	Lukostrelec zabil jeleňa.
+8876405	Položte balíček kariet na dubový stôl.
+8905454	Rozumeli ste mu?
+8913864	Jeho mlčanie potvrdilo jej podozrenia.
+8923051	Čo sa chystáte robiť tento víkend?
+8923720	Tri lyžice chýbajú.
+8923725	To je lyžica.
+8923791	Daj mi svoj nôž.
+8923888	Oblaky sa rozptýlili.
+8923896	Jack zbiera známky.
+8927410	Pustovník je človek, ktorý žije jednoduchým spôsobom oddelene od druhých ľudí najmä z náboženských dôvodov.
+8935879	Niečo jej priniesol.
+8936196	Žijem v Lotyšsku.
+8936201	Litva sa po litovsky povie „Lietuva“.
+8936263	Povieš mu o tom, keď príde domov?
+8936347	Tom odsunul svoj tanier.
+8936388	Rozhodli ste sa kam ísť?
+8939255	Povedzte Tomovi, aby sa vyzul.
+8939258	Nie je lekárka?
+8944740	Zabalíte mi úhľadne tento balík?
+8944810	Moje modlitby boli vyslyšané.
+8947471	Ďakujem za dôveru!
+8947519	Predpokladám, že Tom šiel domov.
+8947529	Tom vie, že sme tu.
+8947554	Nesladím si kávu.
+8947614	V našom dome nenosíme topánky.
+8947631	Môžem si požičať vaše kladivo?
+8947664	Toto je moja rodina.
+8947940	Krabice boli všade.
+8950047	Slová boli napísané nesprávne.
+8954782	Urobil som to pre teba. Páči sa ti to?
+8956202	Máme rovnaké mená.
+8956391	Leda tak v tvojich snoch!
+8956436	Blahoželám k vášmu výročiu.
+8958336	Čítali ste to až do konca?
+8961180	Pane, zabudli ste si na stole zapaľovač.
+8962949	Toto je kniha.
+8963200	Súhlasím s vami.
+8963681	Je toto jazero hlboké?
+8963804	Stretnutie sa konalo tu.
+8974911	Každý sa zasmial.
+8975877	Neviem ich rozoznať.
+8975945	Stále je veterno?
+8976269	Moja budúca svokra robí úžasný černicový koláč.
+8976299	Moruše v mojej záhrade prinášajú plody.
+8978046	To je divné.
+8978165	Vezmem si ťa.
+8978936	Kto to zložil?
+8978998	Je tam veľa brusníc.
+8979004	Slivka kvitne v marci.
+8979060	Prekladám túto vetu z angličtiny do islandčiny.
+8979256	Návštevníkom nie je dovolené kŕmiť zvieratá.
+8980728	Starožitné koberce sú obzvlášť cenné.
+8987312	Idú do Talianska na dovolenku?
+8987332	Tom takmer nikdy nemešká.
+8992107	Tom o tom nikdy veľmi nehovoril.
+8992145	Dúfam, že to stojí za to.
+8992184	Naozaj ti nezávidím.
+8994849	Myslel som, že sa Tom rozplače.
+8996685	Jej otázky naznačujú, že veľmi dobre rozumie danej veci.
+8996729	Hľadám darček pre môjho otca.
+8996824	Musím ísť do školy.
+8996840	Vrátim všetko tam, kde to patrí.
+9000263	Do roboty chodím autobusom.
+9001751	Prečo si myslíte, že sa to Tomovi páči?
+9001752	Učiteľ píše na tabuľu.
+9002027	Keby som to vedel, povedal by som ti to.
+9002621	Kedy sa vrátiš do školy?
+9004582	Bolo to tvoje rozhodnutie.
+9004699	Tom nie je zaneprázdnený.
+9005772	Tom si zaslúži druhú príležitosť.
+9005774	Nezabudni si lístok.
+9005801	Tom je môj nevlastný brat.
+9008161	Vie vysoko skákať.
+9014546	Potrebujem nejaké lieky od bolesti.
+9016840	Chcel by som zostať na tri noci.
+9016905	Mohli by ste to napísať?
+9017020	Mám sa dobre. A ty?
+9017062	Viem, čo myslíš.
+9017075	Kde je stanica metra?
+9017180	Aké je vaše meno a priezvisko?
+9017219	Oni to vedia.
+9027264	Vedieť časovať slovesá je úplná nevyhnutnosť.
+9027537	Vaša budúcnosť je plná možností.
+9027541	Koľko názvov krajín sa začína na písmeno „Y“?
+9027584	Som veľmi rád, že vás znova vidím.
+9031497	Chceš si zatancovať?
+9033636	Učme sa slovesá a ich príslušné vzory.
+9033759	Musíme to urobiť ihneď.
+9033830	V tme niečo hľadal.
+9042667	Neprijímajte svet taký, aký je.
+9045599	Ste dobrý lekár.
+9051052	Mohli by ste mi, prosím, zopakovať, koľkokrát ste tu boli?
+9053724	Vedel som, že s ňou môžeme počítať.
+9063318	Tom vie ako podojiť kravu.
+9063382	Krava nám dáva mlieko.
+9068943	Francúzština je jej materčina.
+9068952	Chcem vedieť, na čo ste prišli.
+9072092	Dostal som pracovnú ponuku.
+9075239	Chyžná mi postlala.
+9099463	Tom vie, kde šla Mária.
+9141218	Nie som odborníkom.
+9141759	Chcem ťa pobozkať na rozlúčku.
+9141784	Vždy so sebou nosí knihu.
+9144179	Tom číta knihu o záhradkárstve.
+9144182	Hľadám niekoho, s kým by som si mohol zahrať šach.
+9149976	Cítim sa tak sama.
+9150059	Táto krabica nie je dostatočne veľká.
+9174208	Nechcel som ju zobudiť.
+9181016	Zasluhuje si lepší život.
+9204318	Ten list je určený tebe.
+9208403	Som na teba skutočne hrdý.
+9228234	Ona nechce, aby očkovanie bolo povinné.
+9269271	Za vlády Kaddáfiho obyvatelia Líbye žili v blahobyte, bola to bezpečná a stabilná krajina.
+9357935	Tom nedostal žiadne správy.
+9358003	Povedzte mi, prečo ste to urobili.
+9715841	Od zajtra viac nebudem jesť sladké.
+9727770	Jej meno je Mária.
+9733938	Boh urobil divú zver podľa svojho druhu, dobytok podľa svojho druhu i všetky plazy podľa svojho druhu. A Boh videl, že je to dobré.
+9734202	Som v Londýne.
+9734874	Tvoj otec je v záhrade?
+9736588	Polia musia byť rýchlo poorané.
+9739298	Umy si nohy.
+9739318	Mám radšej kávu.
+9742096	Čo jej chcete kúpiť?
+9749701	Z Edenu vytekala rieka, ktorá mala zavlažovať raj, a rozdeľovala sa odtiaľ a tvorila štyri toky.
+9754168	Ty si tam bola, však?
+9754284	Pracuje vaša dcéra?
+9762730	Žijem v neďalekom meste.
+9762776	Hovoril si s nimi v pondelok?
+9763137	Bola by si to schopná urobiť?
+9763164	Žena odpovedala hadovi: „Z ovocia rajských stromov môžeme jesť, ale o ovocí stromu, ktorý je v strede raja, nám Boh povedal: »Nejedzte z neho, ani sa ho nedotýkajte, aby ste nezomreli!«“
+9768398	Naša prechádzka bola pokazená dažďom a vetrom.
+9768453	Povedzte im, aby sa ponáhľali.
+9775652	Toto je dobrá príručka.
+9780031	Kde si vlani pracoval?
+9780201	Musíme dokončiť túto robotu.
+9780210	Kedy si dorazil do Kjóta?
+9780266	Mal by som navštíviť Kjóto.
+9780280	Urobila som to zadarmo.
+9780423	To je nepravdepodobné.
+9793711	Prekvapuje vás to?
+9797450	Je nielen krásna, ale i ku všetkým láskavá.
+9797453	Nielenže je krásna, ale aj ku všetkým milá.
+9805316	Tá časť územia na ktorej bývajú Galovia, ako sme povedali, začína sa pri rieke Rodane, je ohraničená riekou Garumnou, Atlantickým oceánom a územím Belgov, na strane Sekvanov a Helvéťanov dotýka sa aj rieky Rýna a smeruje na sever.
+9807608	Železo vedie teplo celkom dobre.
+9807734	Ako sa má žena?
+9813251	Mal váš manžel veľa nepriateľov?
+9813262	Včera ste sľúbili, že to pre mňa urobíte.
+9815752	Videla si niekoho na pláži?
+9817261	Nikto nevedel, čo nás čaká.
+9817338	Švédske slovesá sa zvyčajne delia do štyroch tried.
+9819976	Prosím, napíš správny tvar slovesa.
+9819977	Naučím vás vzory slovies.
+9820028	Niekedy je sloveso odvodené od podstatného mena a niekedy je to naopak.
+9824245	Povedzte mu všetko.
+9824342	Chcem, aby si zaspievala.
+9830693	Môj ujo má neďaleko stanice kvetinárstvo.
+9832244	Táto ruža je krásna.
+9839759	Na záhrade máme dva kríky.
+9839795	Ona nie je mojou sestrou, ale matkou.
+9840811	Tom nechcel žiť v Bostone.
+9843120	Trochu ma bolí hrdlo.
+9845647	Vôbec som ho nepoznala.
+9845650	Vôbec som ju nepoznala.
+9846218	Radi cestujú sami.
+9846259	Ona žije sama.
+9848468	Toto sú najlepšie roky tvojho života.
+9850245	Chceš počúvať hudbu?
+9850405	Si môj otec.
+9852673	Podal jej kyticu kvetov.
+9853168	Je trochu plachý.
+9853255	Čakám na nástupišti.
+9853302	Kde teraz si?
+9854380	Prepáčte, že som vás zobudil.
+9854723	Táto záhrada je nádherná.
+9854898	Kôň je biely.
+9857628	Mám veľa oviec.
+9857644	Prečo si odišiel bez zaplatenia?
+9858129	Podporujem ten nápad.
+9860449	To je jablko.
+9865275	Bolo mi ľúto úbohého psa.
+9867275	Bol som u doktora.
+9867885	Kde je tvoja žena?
+9871523	Volal som mu dnes ráno.
+9872809	Aký bol výlet?
+9889964	Hľadal si ich?
+9891752	Nikdy som nechodila do škôlky.
+9919914	Hovor ďalej, bo dobre hovoríš.
+9919977	Tom a Mária majú okolo dvadsať detí, ale nie sú si istí presným počtom.
+9920394	Mám rada ryby.
+9922491	Ak si unavený, choď spať.
+9922735	Čo si tam našla?
+9926977	Porozprávajme sa o tom ráno.
+9926987	Myslím, že by ste mali schôdzu odložiť.
+9927331	Podrobnosti ma nezaujímajú.
+9928991	Emily mi požičala svoju gruzínsku učebnicu.
+9929079	To je figovník.
+9929701	Jem trikrát denne.
+9930905	Koľko máte bratov?
+9932575	Nepôjdem s vami.
+9932752	Dneska je utorok.
+9934890	Prosím, píš perom.
+9936902	Tom strihá ovce.
+9937095	Nikdy predtým sa nestretli.
+9937253	Žiarlite na ňu?
+9938548	Myslím, že druhá cesta je bezpečnejšia.
+9938561	Požičiavaš si knihy.
+9939541	Je noc a ja stále ešte nespím.
+9939651	Mojím snom je študovať arménčinu v Jerevane.
+9940262	Frízština je moja materčina.
+9940608	Potom vstali mužovia odtiaľ a obrátili svoju tvár k Sodome. A Abrahám išiel s nimi, aby ich odprevadil.
+9940626	Kôň je vraný.
+9940774	Aké mesiace sú v kalendári?
+9940845	Hovoríte po luxembursky?
+9942048	Zvieratá sú naši priatelia.
+9942068	Stále ťa bolí hlava?
+9942139	Viete, kedy Tom prišiel do Austrálie?
+9943593	Ľudia sa menia.
+9943644	Rozhodol sa zostať.
+9948915	Vždy odchádza z domu o siedmej.
+9951954	Neznesiem túto bolesť.
+9952161	Počítal som s Tomom.
+9952170	Prišla som o pol tretej.
+9952487	Ukáž mi svoju pravú tvár.
+9952491	Vyzerali spolu tak šťastne.
+9952506	Oni to postavili.
+9957294	Chcel by si mať psa?
+9957304	Tri roky učím ruštinu.
+9957381	Zapísal si to do zošita.
+9957536	Mesiac osvetľoval izbu.
+9957619	Môžu slony kýchať?
+9959174	Páči sa ti rám tohto obrazu?
+9959650	V nemocnici je príliš hlučno.
+9967262	Prišiel si sem vlakom alebo autobusom?
+9967432	Poznáš nejaké ľudové piesne?
+9968818	Koľko ti platí?
+9968832	Musíš mu to dať.
+9968926	Tom zatvoril oči.
+9969230	Si si istý, že je to ľudská kosť?
+9969363	Akú hudbu chcete, aby sme hrali?
+9970534	Krv je červená tekutina, prúdiaca cez tepny a žily.
+9970699	Žalúdok sa spája s tenkým črevom.
+9970792	Mám pre vás niečo.
+9971688	Nie slová, ale činy sú teraz potrebné.
+9972416	Žil sám v lese.
+9972467	Moji učitelia sú veľmi prísni.
+9978270	Toto je naozaj zaujímavá otázka.
+9978526	Tento rok očakávame dobrú úrodu.
+9978597	Ona to robí každý deň.
+9978868	Musíte sa pripraviť na najhoršie.
+9979142	Tom sa napokon vzdal.
+9979825	Aký nádherný dom!
+9979929	Alkohol poškodzuje pečeň.
+9983348	Mýliš sa, Tom.
+9983403	Vôbec nikto to nepredvídal.
+9985830	Ona mi verí.
+9987857	Ich robota je krájať zeleninu.
+9989604	Chcem bývať na hrade.
+9996929	Tom priniesol Márii pohár vody.
+10000817	Nikto ťa neodháňa.
+10005707	To nie je jediná vec, ktorú Tom našiel.
+10007202	Výlet na Havaj stojí okolo dvesto dolárov.
+10007261	Poznáte niekoho, kto hovorí francúzsky?
+10008499	Vonku je chladno.
+10008525	Pes šteká vo sne.
+10008586	Hovoríte po slovinsky?
+10011902	Uvidela ma a zakývala mi.
+10013592	Tom povedal, že je vyčerpaný.
+10013983	Milenci kráčali ruka v ruke.
+10016130	Musím sa vrátiť do Austrálie.
+10020131	Dúfam, že som ťa neurazil.
+10021612	Ste Tomov brat?
+10025204	Videli ste môjho mladšieho brata?
+10025254	Ona to napraví.
+10025513	Urobila som chybu.
+10029556	Mám krabicu plnú rodinných spomienok.
+10029560	To je veľmi drahé!
+10033381	Jeho pokus o útek bol úspešný.
+10038701	Tom bol pravdepodobne opitý, keď to urobil.
+10038702	Tom bol zrejme opitý, keď to urobil.
+10039505	Tom bol hrdý na Máriu.
+10041809	Nechceš to urobiť?
+10048323	Tom tu niekedy obedúva.
+10053104	Tom sa stal kresťanom.
+10053110	To ma naľakalo.
+10055096	Je mi to ľúto
+10057614	Tom ti prepáčil.
+10057624	Čo, ak sa Tom nevráti?
+10058699	Povedali, že chcú byť právnikmi.
+10060398	Nikdy neporuší sľub.
+10062896	Vždy sú výnimky.
+10064357	Som jediný, komu môžeš dôverovať.
+10064405	Ak by ste niečo potrebovali, som tu.
+10064479	Tom je jeden z najlepších hráčov mužstva.
+10065576	Nie som z toho nadšený.
+10067253	Potrebujem vašu pomoc.
+10067384	Mária hovorí, že sa jej cnie za Austráliou.
+10067440	Máte veľký dom?
+10072287	Nestojte v ceste.
+10072314	Ryby sú drahé.
+10072336	Odpustil si jej?
+10072763	Máme dva psy, tri mačky a papagája.
+10072948	Fredov dom je päťizbový.
+10074400	Tom chcel, aby ste vedeli.
+10076484	Prečo nikto nič nepovedal?
+10077335	Tom povedal, že som vyzerala prekvapene.
+10078530	Má plno kníh.
+10079018	Chcem, aby si vedel, že ti verím.
+10080215	Tom, chceš ísť so mnou?
+10082342	Aké knihy si kúpil?
+10086233	To nie sú moji nepriatelia.
+10092674	Neviem, kde budeme budúci rok.
+10092770	„Miluješ ho?“ „Koho?“
+10093448	Zoznámim vás s bratom.
+10097192	Zakrátko som späť.
+10099901	Spolu s nami spievalo celé obecenstvo.
+10132949	Počul som o tom.
+10132996	Dúfam, že sa mýli.
+10133047	Tom vám uverí.
+10133096	Chceš sa naučiť anglicky?
+10134592	Tom ma nemohol ochrániť.
+10140164	Mýlila som sa.
+10142696	Myslím, že budete milo prekvapený.
+10142704	Choďte rovno, potom odbočte doprava.
+10142763	Dnes idem do nemocnice.
+10142777	Obhrýzanie nechtov je zlozvyk.
+10146033	Kto z vás je Tom?
+10146187	Dúfam, že všetko je v poriadku.
+10147030	Málokedy sa sťažujem.
+10147115	Videl si včerajšie zatmenie?
+10147158	Jeho otec je požiarnik.
+10147298	Jej otec je hasič.
+10147330	Už je mi lepšie.
+10150265	Čakajú ťa pri vchode.
+10150343	Ona nevie, čo chce.
+10150367	Počul som, že sa Tom oženil.
+10150841	Otec učí bratov čítať.
+10152567	Všetko som urobila sama.
+10152568	Bola to len nehoda.
+10155017	Dvakrát som bola v Londýne.
+10155041	Mám rád kurdčinu.
+10155042	Mám rada kurdčinu.
+10155062	Dlho som na teba čakal.
+10155439	Jej syn je nepočujúci.
+10157114	Môj byt je na treťom poschodí.
+10158634	Prečo si ich pozvala?
+10158643	Tom sa ma spýtal, či mám psa.
+10158760	Koľko jabĺk ste zjedli?
+10159112	Čo si dáš na seba?
+10162584	Rád jem hrušky.
+10165169	Mám dve ruky a dve nohy.
+10166243	Tom sa nevzdáva.
+10167987	Nikto nemohol robiť.
+10168014	Dostali všetko, čo potrebovali.
+10168113	Nikdy si mi o tom nehovorila.
+10168132	Aha! V kuchyni je mačka!
+10168177	To je tvoja taška?
+10236988	Povedal som Tomovi, aby to urobil sám.
+10248969	Čakáreň je prázdna.
+10248972	Nemyslím si, že mám na výber.
+10315764	Zriedkakedy chodievam do knižnice.
+10315934	Ste hrdé na svojho otca?
+10362381	Vôbec o tom nepochybujem.
+10474293	Obaja si sadli.
+10490954	Kedy Tom umrel?
+10496547	Tam, kde sa pália knihy, napokon sa upaľujú aj ľudia.
+10496560	Ste si istí, že nechce ísť do Bostonu?
+10515640	Žijem v Riu de Janeiro.
+10567162	Dúfam, že sa jej nič nestalo.
+10631301	Zem je lopta.
+10631353	Urobil som to najlepšie, ako som mohol.
+10631422	Dokonca aj v televízii je rasizmus.
+10632603	Nikdy som si nemyslel, že to takto medzi nami skončí.
+10664702	Tom tam ani nebol.
+10687702	Rýchlo sa obleč.
+10687710	Jedz viacej zeleniny.
+10717293	Urazil som vás?
+10748954	Naozaj tomu veríte?
+10783491	Príďte kedykoľvek chcete.
+10792777	Dúfal som, že ťa tam stretnem.
+10805576	Kto sa sťažuje?
+10805588	Z čoho ma obviňujete?
+11039706	Zajtra môžete urobiť viac.
+11041096	Si jej pasák?
+11058507	Váš rukopis je veľmi ťažko čitateľný.
+11069812	Sýty hladnému neverí.
+11419074	Ste dobrý kuchár.
+11495078	Nie som si istý, či vám verím.
+11576250	Chcem sa stať učiteľkou.
+11889557	Správate sa k sebe ako cudzinci.
+12009647	Si pripravený pohovoriť si o tom?
+12009832	O ktorej je let?
+12010062	Nechceme vás tu.
+12011565	Všetko musí ísť.
+12035271	Kto udrel Toma?
+12042590	Možno je čas na zmenu.
+12090374	Dnes večer ideme do divadla.
+12090402	Tiež som si to všimla.
+12095191	Tom pozval Mary do Bostonu.
+12095543	Vôbec to nebolo také skvelé.
+12273970	V pondelok je sviatok.
+12288077	Moje meno je Ľudovít.
+12288311	Kde sú moje noviny?
+12289530	Kde sú ryby?
+12338829	Myslím, že niečo skrývaš.
+12338835	Nemôžem ti povedať jeho meno, ale môžem ti povedať, kde býva.
+12408311	Kde sú toalety?
+12414463	Je pokojný letný večer.
+12470207	Tom zobral svojho psa k zverolekárovi.
+12470263	Videli sme troch mužov.
+12534445	Si vo vzťahu?
+12534473	Chcem, aby si šla so mnou plávať.
+12534495	Pred raňajkami polej rastlinky.
+12534523	Tom vie hovoriť aj francúzsky.
+12534529	Čo si ešte povedal?
+12541741	Prečo si mi nepovedala, že ste Kanaďania?
+12549879	Si všetko, čo mám.
+12553800	Si všetko, čo potrebujem.
+12559168	Vyber ti to, čo sa ti páči.
+12569976	Tom ide tiež.
+12570019	Tom nie je spokojný so svojím súčasným platom.
+12570060	Na východe sa začali sťahovať mračná.
+12570068	To nie je pošta.
+12571496	Vyhrážate sa mi?
+12571514	Prišiel do New Yorku hľadať prácu.
+12574855	Môj sen sa splnil, som šťastný. Čo viac si môžem priať?
+12578440	Aký prekrásny hrad!
+12589534	Slnko zapadá na západe a vychádza na východe.
+12594362	Všetko je nové.
+12597691	Hovorí, že príde zajtra.
+12598433	Zobudil ma štekot psa.
+12602342	Urobil som to pre teba.
+12602930	Kocka je hodená.
+12612441	Koľko zubov má medveď?
+12614722	Prepáč, musím ísť.
+12616074	Máte radi mango?
+12617877	Máte rád ryby?
+12617922	Máte rady jahoda?
+12618188	Už som ti povedal.
+12620531	Máte radi rap?
+12623833	Prepáč, ale nebudem ti môcť pomôcť.
+12630231	Máme ešte veľa času.
+12631194	Je lepšie sa popŕhliť žihľavou, než popichať na ruži.
+12632235	Prečo máme chuť na sladké?
+12632302	Abeceda dolnolužickej srbčiny pozostáva z 36 písmen: a, b, c, č, ć, d, dź, e, ě, f, g, h, ch, i, j, k, ł, l, m, n, ń, o, ó, p, r, ŕ, s, š, ś, t, u, w, y, z, ž, ź.
+12634369	Píše matke listy.
+12634380	Chcem, aby si šiel so mnou do kostola.
+12635428	Dáte si čaj, kavu alebo niečo iné?
+12647803	Prečo mi je stále zima?
+12656620	Je mladá a slobodná.
+12670552	Je Tom živý, alebo mŕtvy?
+12671280	Yanni je mŕtvy.
+12672045	Čo jedávate na raňajky?
+12674307	Použite svoj mozog.
+12676301	Kde si strávila noc?
+12679022	Aká je hĺbka jazera?
+12679054	Tom vyučuje francúzsku jazykovedu.
+12681163	Prečo ste vždy také tvrdohlavé?
+12681368	Je tu niekto, kto hovorí po francúzsky?
+12681917	Mám ešte čas.
+12686760	Nechcú nič počuť.
+12686804	Včera som obdržala tvoju správu.
+12689627	Tom vie, že Mária nehovorí francúzsky.
+12689686	Tom má troch synov. Všetci traja sú ženatí s Kanaďankami.
+12690033	Dôvody sú nejasné.
+12690056	Poznám jednu z Tomových sestier.
+12690080	Domáca úloha mi zabrala viac času, než som očakával.
+12690768	Zdá sa, že tam nikoho niet.
+12691906	Čo robíš dnes večer?
+12693090	To je tvoja posledná šanca.
+12694132	Kone sú vyššie a behajú rýchlejšie ako somáre.
+12697218	Pozri, čo som našiel.
+12699623	Nepijem pivo ani víno.
+12700962	Vezmi si akýkoľvek kvietok, ktorý sa ti páči.
+12701162	Ja a sestra si vôbec nie sme podobné.
+12706527	Poď sem, psík.
+12706615	Predtým si to nevedel?
+12707280	Mucha je hmyz.
+12707642	Volám sa Mária, a ty?
+12709200	Tom pasie ošípané.
+12709201	Tom pasie kozy.
+12710287	Tom je na oficiálnej návštene Číny.
+12710505	Bola som hladná a smädná.
+12710601	Mal by si byť opatrný.
+12713751	To je absurdné!
+12714093	Hovoríš po gruzínsky?
+12714094	Hovoríte po gruzínsky?
+12715859	Po robote som sa stretol s Tomom.
+12718742	Vzala som si ho.
+12718751	Prehliadol som to.
+12718767	Vstala som o piatej ráno.
+12718969	Som rád, že vás vidím!
+12721874	Korčuľovanie je zábavné.
+12721939	Mrkvička je zdravá, jedz.
+12722288	Často o nej hovorí.
+12725566	Tom je meteorológ.
+12726355	O čom to hovoríš?
+12728848	Vaši priatelia budú žiarliť.
+12728924	Pomodli sa za ňu.
+12730509	Zaslúžiš si byť šťastná.
+12733990	Mám dvoch synovcov.
+12734558	Tom je zverolekár.
+12735278	Prečo má žirafa tak dlhý krk?
+12737561	Moje nohy sú studené.
+12741367	Hovorí po poľsky.
+12741507	Hovorí po slovensky.
+12752505	Kto ich viedol cez džungľu?
+12752536	Chcem, aby si uspel.
+12758260	Košice ležia na rieke Hornád.
+12759701	Môžete si vybrať čo chcete.
+12762026	Madagaskar je ostrovný štát ležiaci v Indickom oceáne.
+12763026	Pôjde do divadla.
+12764566	Som si istý, že Tom zajtra príde.
+12765950	Hnačka patrí medzi najčastejšie črevné ťažkosti.
+12768948	Na stole leží melón.
+12772459	Tom očervenel ako repa.
+12773271	Pancier raka nerastie spolu s rakom, ale asi raz za rok ho zhodí.
+12775387	Si majákom pokoja uprostred chaosu.
+12775396	Už len to je úspech.
+12777821	Má každá otázka odpoveď?
+12778034	Cesta je cieľ.
+12778337	Chráňte ju ako oko v hlave.
+12780923	To je súčasťou plánu.
+12782097	Tokio je hlavným mestom Japonska.
+12782144	Raje používajú svoje tŕne len na obranu, takže zranenia ľudí sú zriedkavé.
+12782209	Hlavným mestom Chorvátska je Záhreb.
+12782506	Islamabad je hlavným mestom Pakistanu.
+12782508	Hlavné mesto Pakistanu je Islamabad.
+12782559	Hlavným mestom Švédska je Štokholm.
+12782759	Povedz Tomovi, aby počkal.
+12785278	Hlavné mesto Burkiny Faso je Ouagadougou.
+12786678	Buenos Aires je hlavným mestom Argentíny.
+12787747	Hlavným mestom Venezuely je Caracas.
+12794663	Valletta je hlavným mestom Malty.
+12795141	Hlavným mestom Gruzínska je Tbilisi.
+12796051	Ottawa je hlavné mesto Kanady.
+12801690	Hlavným mestom Belize je Belmopan.
+12807497	N'Djamena je hlavným mestom Čadu.
+12809691	Keňu nájdete na východnom pobreží Afriky a zhruba jej stredom prechádza rovník.
+12809902	Maputo je hlavným mestom Mozambiku.
+12809999	Zimbabwe je v mnohých smeroch veľmi zaujímavá krajina.
+12810230	Srdce pracuje ako čerpadlo.
+12810382	Mária pracuje ako recepčná.
+12812883	Hlavným mestom Angoly je Luanda.
+12812889	Angola sa rozprestiera na juhozápade Afriky.
+12816239	Mám v hlave niečo iné.
+12816252	Pozor! Je to pasca!
+12816264	Zdá sa, že sme v pasci.
+12819914	Vďaka, že si mi povedala pravdu.
+12821900	Čo rád čítaš?
+12824034	Naozaj si myslíte, že vám odpustím?
+12824399	Hlavné mesto Beninu je Porto-Novo.
+12824409	Hlavným mestom Stredoafrickej republiky je Bangui.
+12824657	Brazzaville je hlavným mestom Konga.
+12825140	Tom má deväť životov ako mačka.
+12826163	Moja rodina je štvorčlenná.
+12826166	Videla som piatich mužov.
+12827851	Ako zvyčajne meškajú.
+12833651	Spýtaj sa ho, či príde alebo nie.
+12833784	Už je neskoro.
+12835011	Pomáhame tým, čo nič nerobia.
+12841818	Moje obľúbené číslo je trojka.
+12845746	Koľko kuchárskych kníh si vydal?
+12854820	Naše mužstvo prehralo.
+12863031	Môj život si ty.
+12865946	Spadol ti kľúč.
+12871972	Práca je dôležitejšia.
+12892504	Labe je najväčšia česka rieka a svojou dĺžkou je davanásta najväčšia rieka v Európe.
+12893629	Hlavným mestom Kuvajtu je Kuvajt.
+12894503	Hlavné mesto Kirgizska je Biškek.
+12894977	Kde je žuvačka?
+12899196	Odkiaľ poznáš môjho otca?
+12903061	Pozri sa na oblohu.
+12919848	Podlaha bola klzká a nemohol som sa udržať na nohách.
+12919850	Vďaka za ponuku.
+12919869	Chcete ísť do väzenia?
+12925934	To je ich.
+12926137	Prečo ženy milujú vysoké podpätky?
+12928513	Borovica lesná je náš pôvodný ihličnatý strom.
+12928582	Japonsko sužuje ďalšia prírodná katastrofa.
+12951244	Buď silný a vytrvaj, raz ti bude táto bolesť na úžitok.
+12952010	Viete, prečo listy na jeseň menia svoju farbu?
+12954367	Tom má veľa priateľov.
+12989113	Usilujem sa ušetriť viac peňazí.
+12994933	Raz, dva, tri, štyri, päť.
+13022955	Čoho sa najviac bojíte vy?
+13024429	Je to ako kúzlo.
+13027530	Všetko v našom organizme je prepojené a nič nefunguje osamotene.
+13027540	Všetko vo svete je prepojené.
+13028368	Čo je dôležité vo vašom živote?
+13033746	Ako dobre poznáte slovenskú gramatiku?
+13034214	Slovenčina je môj materinský jazyk.
+13034704	Človek nežije len z chleba.
+13036485	Nepovedal ani slovo.
+13038263	Slovensko je parlamentnou demokratickou republikou.
+13041006	Dnes máme pekné počasie.
+13046584	Vieš, čie sú tie knihy?
+13046880	Slovenská armáda je v mnohých smeroch zastaraná a potrebuje zásadnú modernizáciu.
+13047216	Bobry majú dobre organizovaný sociálny systém.
+13050749	Nižšiu frekvenciu dýchania v pokoji môžeme brať ako dobrý ukazovateľ fyzickej zdatnosti.
+13051757	Ste si toho vedomé.
+13053603	Čo vlastne som?
+13054230	Nech žije kráľ!
+13054350	Nasledujte ma, prosím.
+13055354	Kam sa to pozeráš?
+13059788	Hádzal na nás veľavravné pohľady.
+13060268	Veríš v lásku?
+13061330	Neviem si spomenúť na meno.
+13062218	Čo sa to tu deje?
+13069068	Je štvrť na deväť.
+13070746	Včera bol utorok. Aký deň bude zajtra?
+13071750	Je to bodnutie do chrbta.
+13074092	Pôjdem s tebou.
+13075030	Vonku je teplo.
+13075872	Táto úloha nie je taká jednoduchá, ako sa na prvý pohľad môže zdať.
+13080501	Prečo ľudia veria klamárom?
+13080610	Myši majú rady syr.
+13080800	Mea culpa, mea maxima culpa je latinská veta, ktorá znamená: Moja vina, moja preveľká vina.
+13081772	Mám jeho vizitku.
+13085752	Fajčí 20 cigariet denne.
+13085832	Niečo fajné pod zub?
+13088474	Vieš, kto tam sedí?
+13088781	Čo je vlastne láska?
+13089719	Yanni klamal o svojom veku.
+13089916	Sme z Francúzska.
+13090499	Kanárik je žltý.
+13092315	Zobudila som ťa?
+13100470	Na jedenie zbierame len zdravé huby.
+13100529	Huby, ktoré nepoznáme, nezbierame a neničíme.
+13104741	Poznám tvojho brata.
+13108122	Dlho som ťa nevidela.
+13108339	Toto jablko je červené.
+13112978	Moja mačka sa volá Tayri.
+13116539	Je to ostrovná krajina.
+13116592	Myslíš, že je to dobrý nápad?
+13119591	Je viac vody, než treba.
+13126209	Moja rodina je malá.
+13140152	Dala mi pusu na líce.
+13141842	Musím ísť na záchod.
+13142810	Viete hrať šach?
+13144204	Celú noc som nespala.
+13145433	Som na povale.
+13147097	Pekná reč zvoní ako zvon.
+13147246	Čo je realita a čo je ilúzia?
+13169902	Tom chce ísť domov.
+13184070	Jeho noha je paralyzovaná.
+13194999	Chcel som sa ešte rozprávať, ale ona zložila.
+13200144	Prečo sa usmievaš, Tom?
+13202636	Teraz môžete ísť domov.
+13204588	Tom padol na kolená a rozplakal sa.
+13204616	Modlil si sa?
+13209112	Je váš pes tučný?
+13213198	Mária pije veľa vody.
+13215538	Ivrit je moderná hebrejčina.
+13216810	Potrebujeme jeden druhého.
+13243344	Steny bytu sú biele.
+13264142	Jupiter je piata planéta našej slnečnej sústavy.
+13287440	Ako môže človek poznať sám seba? Pozorovaním nikdy, skôr však konaním. Skúš urobiť svoju povinnosť a budeš vedieť hneď, čo je v tebe.
+13289100	Hľadáme našu mačku.
+13300193	Tom vždy vie všetko.
+13307448	Bolo mi jasné, že to zle dopadne.
+13314438	Tom začal jesť.
+13314544	To je nápad!
+13318608	Každý problém má riešenie.
+13325409	Všetko vo vesmíre je energia.
+13325619	Naučila som sa to naspamäť.
+13327436	Čo je falafel?
+13327617	Vo vode sú ryby.
+13339971	Mám sa dobre, všetko je v poriadku.
+13348888	Tom má dnes narodeniny.
+13361283	Máš plány na tento víkend?
+13365540	Vaše meno, prosím.
+13365785	To sa proste vzdáš?
+13366347	Poznám Tomov hlas.
+13370159	Autorské práva sú vyhradené.
+13371050	„Je voda naozaj mokrá?“ „Áno, voda je mokrá.“
+13372398	Ľúbim ťa, Mária!
+13375502	Čo bola dosť dobrá otázka.
+13381617	Mária je slávna slovenská poetka.
+13384130	Ruže sú červené.
+13390665	Koľko stojí táto kniha?
+13390956	Pochádzam zo Slovenska. Som Slovenka a hovorím slovensky.
+13394225	Tom zlomil mi nos.
+13394321	Čo si robila včera v noci?
+13404651	Čas je veľmi cenný.
+13406818	Vtáka po perí, človeka po reči poznáš.
+13408433	Mala dlhé tmavé vlasy.
+13408442	Čo pomáha na mastné vlasy?
+13412687	Prosíš si ešte?
+13412688	Prosíte si ešte?
+13417011	Počkám v aute.
+13424355	Maltčina sa používa na Malte.
+13424364	Zajtra je sviatok.
+13424653	Striebro patrí medzi drahé kovy.
+13424759	Olovo patrí medzi kovy.
+13425035	Kuj železo, kým je horúce.
+13428045	Nemohla uveriť vlastným očiam!
+13429048	Ja milujem zvieratá.
+13429661	Viete hovoriť po poľsky?
+13432006	Hovorila som s ňou dnes ráno.
+13443463	Je čas na akciu.
+13454229	Tučniak je nelietavý morský vták.
+13454232	Pštros je nelietavý vták.
+13460826	Kto zabil Toma?
+13487209	Prosím, ukážte mi niečo iné.
+13488006	Dni sú krátke v zime.
+13498381	Kaviareň je otvorená 24 hodín denne, 7 dní v týždni.
+13498975	Čas plynie ako rieka.
+13510450	Čo to môže znamenať?
+13510780	A teraz čo?
+13542400	Čo robíte vo voľnom čase?
+13544266	Leanne má modré oči.
+13548293	Musím ísť, i keď husto prší.
+13553629	Slovenský jazyk má šesť gramatických pádov.
+13556934	V slovenčine máme dnes už vlastne len šesť pádov.
+13571337	Ako dlho ho poznáš?
+13571348	Odkiaľ ju poznáte?
+13577310	„Odkiaľ máš moje číslo?“ „Od Márie.“
+13580109	Som fakt rád, že sa ti páči.
+13580718	Večera je na stole.
+13585019	Jablká sú ideálne na chudnutie.
+13585527	Aké knihy čítaš?
+13586696	Stojím si za svojimi slovami.
+13587660	Pracovné tablety si vyžadujú väčšiu obrazovku.
+13588313	Dáš si niečo?
+13588880	Určite máš pravdu.
+13591258	Ty s tým súhlasíš?
+13592594	Ľutujem, nemôžem ti pomôcť!
+13594188	Čo je to žubrienka?
+13594226	Žubrienky živia sa riasami.
+13596239	Sahara je najväčšia kamenistá púšť sveta.
+13598795	Včera snežilo celý deň.
+13600624	Raja má veľmi sploštené telo.
+13602100	Tešíme sa na vaše správy.
+13606372	Ako dlho žijú kone?
+13606688	Mária bola obľúbená a úspešná speváčka.
+13629041	Videla si moju sestru?
+13629051	Nevidela si moju sestru?
+13641812	Čo symbolizujú biele ruže?
+13649620	Prečo si lenivý?
+13659373	„Podľa môjho názoru, mýliš sa“, povedal mladší brat.
+13659577	Nemáme jediný dôkaz.
+13660017	Nie, nič mi to nehovorí.
+13660203	Nebola to jeho chyba.
+13660812	Naše čnosti pomôžu ľuďom veriť.
+13667020	Idete na Vianoce domov?
+13668367	Tu môžete parkovať.
+13671292	Prstence Saturna sú veľmi tenká a veľmi široká vrstva častíc, ktorá obieha planétu Saturn.
+13676511	Anjel je nebeská bytosť.
+13677529	Máte na Silvestra slávnostnú večeru?
+13677981	Zabudni na minulosť!
+13677985	Zabudnime na minulosť!
+13680210	Videla som ju plakať.
+13682767	Má troch synov.
+13689665	Mária študuje angličtinu v Anglicku.
+13690128	Tom je vojnový zajatec.
+13695159	Článkonožce sú najpočetnejší živočíšny kmeň.
+13695266	Máme dobrý, pekný dom, spokojne žijeme v ňom. Zatvoríme si ho zdnuka, nebojíme sa už vlka.
+13696740	Zajtra bude pondelok.
+13705207	Môj manžel je naozaj dobrý kuchár.
+13711757	Sovy majú veľmi veľké oči.
+13729877	Kde to je?
+13730890	Vy ste tehotná?
+13733954	Flámčina je zastrešujúci pojem pre niekoľko dialektov, ktorými sa hovorí vo Flámsku.
+13734694	Slovenčina a čeština sú najbližšie príbuzné slovanské jazyky.
+13734743	Tom žije v zahraničí.
+13739231	Máš pravdu. Pôjdeme taxíkom.
+13742708	Kto je ten človek?
+13744351	Gratulujem k splateniu pôžičky!
+13746574	Tom je veľmi zaneprázdnený.
+13749639	Ako prestať fajčiť?
+13750111	Od roku 1984 sa labuť veľká stala národným vtákom Dánska.
+13766465	Si ozajstný kamarát, Tom.
+13769757	Zvoní ti telefón.
+13781724	Vlky nevnímajú ľudí ako svoju korisť.
+13784291	Alžír je pekné mesto.
+13795111	Ľahnite si na chrbát.
+13807738	Piešťany sú kapitola sama o sebe.
+13807753	Tom je kapitola sama o sebe.
+13839373	Kde býva Holly?
+13843320	Nič také som nepovedal.
+13847011	Myslíš, že Mária je tehotná?
+13852657	Nesmej sa s otvorenými ústami.
+13864501	Vie Tom plávať?
+13864606	Datív je smrť genitívu.
+13882212	Teraz nemôžem hovoriť.
+13887532	Tento web je nedostupný.
+13900901	To záleží len na vás.
+13903147	To je od teba veľmi milé.
+13904384	Daj mi trocha vody.
+13904419	Tom je čierna ovca v rodine.
+13907237	Prečo robíme dookola tie isté chyby?
+13908158	Zdá sa mi, že si na niečo zabudla.
+13910157	Každý predsa vie, že voda tečie vždy zhora nadol.
+13913698	Tigre na rozdiel od väčšiny mačkovitých šeliem milujú vodu.
+13914545	Väčší problém pre rysa predstavujú medvede a diviaky, ktoré mu pravidelne kradnú korisť.
+13916010	Aká je vaša rada?
+13917971	Viete, kto napísal tento román?
+13917989	A ty vieš všetko najlepšie, Tom, však?
+13918081	Zavoláš mi zajtra?
+13918474	„A ak nie?“ namietol Tom.
+13918482	Myslíš si, že je to reálne?
+13921175	To patrí mne.
+13921388	Veľmi ti ďakujem, Anna.
+13921392	Veľmi, veľmi ti ďakujem.
+13921401	Ďakujeme vám za všetko.
+13923434	Bol spln mesiaca.
+13932623	Prečo si dnes taká smutná?
+13933613	Uštipnutie plošticou môže spôsobiť alergické reakcie.
+13933678	Ktorý jazyk je považovaný za najťažší na svete?
+13942872	Mala som pravdu?
+13944627	Ako to funguje?
+13944638	Nechápem, ako to funguje.
+13946837	Jeho nemčina nie je dobrá.
+13947013	Ich dcéra je ošetrovateľka.
+13947586	Tom má zmysel pre humor.
+13948553	To je od teba veľmi láskavé.
+13951239	Chorvátčina je úradným jazykom Chorvátskej republiky.
+13967781	Si moja sestra.
+13969618	Pochádzam z Malajzie. Som Malajzijčanka a hovorím malajsky.
+13997763	Mačky ani toľko nepáchnu ako psy.
+14000433	Drevo je prírodný a po celé storočia ľahko dostupný materiál.
+14000960	Drevo ako prírodný materiál sa nachádza v drevinách.
+14003170	Nemohol sa mi pozrieť priamo do očí.
+14004280	Dezinformácia je overiteľne nepravdivá, zavádzajúca alebo manipulatívne podaná informácia, ktorá je zámerne vytvorená, prezentovaná a šírená s jednoznačným úmyslom klamať alebo zavádzať, spôsobiť ujmu alebo zabezpečiť prospech.
+14008360	Som si istý, že to nie je jej pravé meno.
+14009432	O nemčine a jej členoch sa kolujú všelijaké odstrašujúce správy.
+14009588	Tom je úspešný podnikateľ.
+14009900	Iveta Radičová bola predsedníčkou vlády Slovenskej republiky.
+14009919	Anna, ty stále neješ mäso?
+14012407	Nebuďte na seba príliš tvrdý.
+14012480	Je Anna dobrá hudobníčka?
+14013989	Čo planuješ robiť dnes?
+14013991	Čo by si chcel robiť v budúcnosti?
+14014834	Zomrel pred tromi rokmi.
+14014838	Moja manželka zomrela pred dvomi rokmi.
+14016003	Otvorím ti bránu.
+14016818	Videl som ho plakať
+14017003	Mennad ma nemiluje.
+14017004	Sami ma nemiluje.
+14024076	Tom mal veriacich rodičov.
+14025183	Ahoj! Čo sa deje?
+14025775	Rast rastliny nie je počas jej života rovnomerný.
+14026266	Soul je hlavné mesto Kórejskej republiky.
+14027376	Nezistili ste žiadnu spojitosť?
+14027780	Chcel by som s vami hovoriť.
+14027865	Moja teta je veľmi zručná v čítaní z pier, čo jej umožňuje celkom dobre komunikovať s počujúcimi ľuďmi.
+14027996	Chuť je jedným zo základných piatich zmyslov a je spravidla zviazaná s čuchom.
+14028374	Koľko zmyslov má človek?
+14028385	Vieme, že človek má päť zmyslov.
+14028853	Pre rast ruží je veľmi dôležitá pevná opora.
+14028934	Čo sú to za nezmysly!
+14030801	Potom som odišla, ale následne som si uvedomila, že som si zabudla batoh v ich dome.
+14033408	Územie Sibíri je osídlené už od stredného paleolitu.
+14034455	Tom otvoril dvere.
+14036287	Vidíme len to šťastie, ktoré iní majú a my nie.
+14037598	Čo si tým myslel?
+14038754	Som jediný, kto o tom absolútne netušil?
+14039662	Aká hudba sa ti páči?
+14039685	Uvaril som si čaj na chudnutie.
+14042455	Všetko záleží na nás, na našej vôli.
+14043804	Tom je hotový muž.
+14044148	Zelená farba je zložená z modrej a žltej farby.
+14045012	Vraťte sa skoro.
+14049200	Volá sa Tom.
+14052627	Tom si pochutnáva na jahodách.
+14053915	Tom má dobrú pamäť.
+14057108	Môžem ti pomôcť.
+14076998	Mária spievala smutnú pieseň.
+14097952	Čo je to svetlo a ako ho vnímajú rastliny?

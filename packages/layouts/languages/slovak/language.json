@@ -1,0 +1,27 @@
+{
+  "slug": "slovak",
+  "code": "sk",
+  "order": 630,
+  "lang": "sk",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Slovak",
+    "native": "Slovenčina"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["sk-easy", "sk-qwertz", "sk-qwerty"],
+  "accents": "áäčďéíĺľňóôŕšťúýžÁÄČĎÉÍĹĽŇÓÔŔŠŤÚÝŽ",
+  "sample": "Dnes ideme do hôr a večer si uvaríme čaj pri krásnom jazere.",
+  "voice": ["sk-SK"],
+  "wordList": true,
+  "translate": {
+    "google": "sk",
+    "bing": "sk",
+    "deepl": "sk"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

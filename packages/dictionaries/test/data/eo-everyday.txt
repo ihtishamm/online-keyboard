@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+428349	Mi ne ŝatas tiun kameraon.
+430043	Rigardu antaŭen, mi petas.
+430794	Lia malĝoja rakonto kortuŝis min.
+438139	La kapo doloras min.
+440537	Li jam estas viro.
+442246	Vi estas tro riskema viro!
+442563	Li ne emas kompreni ŝercojn.
+447143	Mia familio konsistas el kvar personoj.
+450874	Dumtempe, ŝi lavis la vazaron.
+454717	Mi ŝatus esti pli juna.
+474358	Se pluvas en majo, pasis aprilo.
+474787	Mi iros aĉeti kelkajn materialojn hodiaŭ.
+481710	Japanoj ne forgesu, ke Usono estas pluretna nacio.
+483044	Li sidis trinkante vinon.
+486985	Li povas ludi pianon pli bone ol mi.
+507020	Palisaro ĉirkaŭas la domon.
+511994	Mi legis multajn modernajn verkistojn.
+512887	Liaj fingroj rapide moviĝis super la klavaro.
+514517	Li enamiĝis al ŝi je la unua rigardo.
+515832	Metu ĉion en mian korbon.
+519519	Ŝi okupiĝas pri multaj pli aĝaj homoj.
+521716	Bebo estas ponto inter estanteco kaj estonteco.
+527511	Mi donos al li ĉi tiun mesaĝon tuj kiam li alvenos.
+531590	La afero estas kie aĉeti tiun libron.
+546219	Maria, provu iri kelkajn metrojn!
+546522	Ili vivis feliĉaj.
+549664	Ni refoje renkontiĝu baldaŭ.
+549993	Eĉ li ne sciis la veron.
+550579	Kiujn filmojn vi vidis?
+550970	Tio estas freneza.
+552137	Mi volis kapti la birdon, sed tio montriĝis malfacila.
+556671	La kalorio estas ekzakta mezurilo por la energio de nutraĵo.
+559954	Folioj falas en aŭtuno.
+562503	La eksperimento fiaskis.
+567947	Mi volas la pli grandan kukon.
+568908	La vundita soldato apenaŭ povis marŝi.
+572077	Ne estas kaŭzo al paniko. Estas sufiĉe da tempo.
+574839	Bonvole agu, kvazaŭ vi estus ĉe vi.
+579210	Mi malamas reptiliojn.
+581965	Butero estas farata el kremo.
+582266	La karnavalo en Rio okazas dum februaro.
+584197	Islando iam apartenis al Danujo.
+587430	Mi petas vin iri renkonti lin.
+589020	Ĉu vi bonvolus foti nin?
+594577	Mia revo realiĝis.
+598769	Ili foriris pikniki.
+599218	Mi ĉiam skribas leterojn per plumo kaj inko.
+605713	Mi faros mian plej eblan.
+612857	Mi atendas, ke vi laboru pli serioze.
+617947	Li lernis bredi brutojn.
+622562	Mi multe provas plibonigi mian rilaton kun li.
+624810	Li perlaboras sian vivon kiel hotelknabo.
+627086	Leginte la rakonton, respondu al jenaj demandoj.
+628192	Oni povas vidi milojn da steloj sur la ĉielo.
+636460	Mi ĉiam malvarmumas vintre.
+639943	Li akuzis tiun homon je ŝtelado.
+640534	Ili disiris post sepjara geedzeco.
+640907	Li foriris antaŭ unu horo.
+647945	Celis paseron, trafis anseron.
+648492	Kia la poto, tia la kovrilo.
+648906	Li estas preskaŭ mia frato: nepo de kuzo de onklo de konato.
+649509	Por riĉulo fasto -- por malriĉulo festo.
+660192	Rigardu! La trajno alvenis!
+670774	La patro zorgas pri sia familio.
+677104	Estas via tasko decidi.
+679122	Mi nun estas sur la universitata areo.
+683607	Filipo diris: "Venu kaj vidu!"
+686702	Tiu knabo ofte rompas niajn fenestrojn per pilko.
+689288	La koncerto vokis longan, entuziasman aplaŭdon.
+689290	Neniu neis lian aŭtoritaton.
+691256	Mi scivolas, kiuj ili estas.
+695555	Estas malmulta espero, se entute, ke li vivas.
+704461	Ili loĝis tie ĝis ili venis al Tokio.
+708760	La situo ŝanĝiĝis.
+710812	Ve! Mi eraris.
+715093	Li estas aŭtoritatulo pri ekonomio.
+715747	Ŝi feliĉe ridetis.
+721453	Ion tian oni ne trovas ĉie.
+721524	Li bone interkomprenas kun siaj dungitoj.
+723098	Mia domo estas je la okcidenta flanko de la strato.
+736068	Ŝi diris, ke ŝi estas renkontinta lin en la antaŭa tago.
+753341	Ĉu mi povas ludi la harpon?
+754753	Vi havas belan haŭton.
+761345	Mia fotilo estas akvorezista.
+766742	Ĉu li scipovas paroli la francan?
+778558	Mia nomo estas Sally.
+781852	Estas miraklo, ke ili plu maldormas.
+787708	Tio vere estas bongusta.
+807998	Ĉu vi verkas taglibron?
+828560	Ĉu vi povus mallaŭtigi vian televidilon?
+851188	Post tio ni amikiĝis.
+899851	Li kunhavis violonon kaj arĉon.
+900852	La militistaroj de la Interligitaj Regnoj atakis de okcidento.
+929793	Li rapide resaniĝis.
+959080	La najbara hundo ĉiam bojas.
+968224	La germanoj fuĝis.
+980328	Mi dividas kun vi bonon kaj malbonon.
+981215	La plonĝistoj povas sendanĝere rikolti perlojn.
+988822	Tio necesas kiel pano ĉiutaga.
+991848	Mi aŭskultas la radion post la tagmanĝo.
+1004036	Okulvitroj ŝajnigas vin pli klera.
+1005145	Veronika kaj mi estintus aĉeti belan ĉapelon en la vendoplaco, sed ni decidis tro malfrue, kaj la ĉapelo estis jam vendita.
+1006645	Ni amas vin tre multe.
+1008669	La pirato klarigis, kial kompaso montras la nordon.
+1041145	Almenaŭ mi, mi havas nenion por plendi.
+1042868	Li elektas ĉiam la pli facilan parton de la laboro.
+1051654	Mi lin ne plu bezonas.
+1053468	Li ekfunkciigis la aparaton.
+1055985	Kie ni estis?
+1057300	Io ne plaĉas al Dio, ĉar ĝi estas bona, sed ĉar ĝi plaĉas al Dio, ĝi estas bona.
+1067316	Por tio estas bezonataj du.
+1073094	Rezultoj el la Granda Hadrona Koliziilo signifas, ke teoriistoj pri supersimetrio eble devos elpensi al ni novan teorion de sub-atoma fiziko.
+1088978	La buso bezonas proksimume 45 minutojn.
+1129274	Ŝi estas malgrasa kiel skeleto.
+1138371	Unufoje monate ŝi tagmanĝas kun sia patro.
+1145496	Ili iras al kunvenoj, sed ne komprenas Esperanton.
+1152837	Mia patro tranĉis lignon per segilo.
+1158981	Dum vintro mi havas ĉiam nazokataron.
+1166873	Ŝi okupiĝas ekde hieraŭ.
+1193394	Mi perfidis vin.
+1197891	"Ĉu?" Dima ne komprenis ĝin. "Ĉu mi do ne parolas kun Al-Sayib? Kaj ĉu vi ne trinkantas Fanta-n kaj dirantas al novuloj, ke ili fermu sian faŭkon?"
+1199489	La loĝado okazos en la propra tendo.
+1199572	Kiam ni havos tagmanĝon?
+1203698	Mi estas mortonta.
+1208179	Li venis savi min.
+1218939	Li fumis dum la tuta tempo.
+1225982	Ekde la jaro 2000 en Hungario pli ol 22.000 homoj trapasis ŝtatan ekzamenon de Esperanto.
+1226203	Unu fojon en monato mi vizitas kinejon.
+1226312	Adiaŭ, bela mondo!
+1229622	Mi deziras povi aĉeti tiun gitaron.
+1235679	La kongreso donos al ni okazon por rerenkonti fakokolegojn el la tuta mondo.
+1235936	Vi detruis ŝian familion.
+1242977	La streĉiteco atingas sian pinton, kiam la vilaĝanoj kunvenas por festo.
+1243555	Mi ne havas inspiron.
+1253015	Li similas al serĉanto, kiu ne scias tute precize, kion li vere volas trovi.
+1258962	Mi ankaŭ ne havis tempon por farbi.
+1266170	La sonoriloj sonoris dum la paro forlasis la preĝejon.
+1281981	La angla ne havas vorton por "komplezi".
+1283940	Tiu ĉi arbo estas alta, sed tiu estas ankoraŭ pli alta.
+1286965	De via kapo faru kesteton de ideoj.
+1291854	Multaj fremdaj kutimoj enkondukiĝis en Japanujon post la milito.
+1293821	Ĉu vi ŝatas viajn kolegojn?
+1295902	Mi terure enamiĝis.
+1327672	Mia amikino diris, ke ŝi aĉetis novan horloĝon.
+1327925	Ŝi memoris sian unuan lernejan tagon.
+1335340	Oni vidas sin per alia okulo, ol per kiu oni vidas sian proksimulon.
+1344940	Ĉi tiun someron mi iros al Danlando.
+1354520	Entute, lia estas feliĉa vivo.
+1355213	Mi petis, ĉu li helpos min.
+1366546	Ne ŝanĝu senerarajn frazojn. Vi prefere sendu alternativajn tradukojn de la originala frazo.
+1367256	Fungoj kun kremo estas mia favorata manĝaĵo.
+1374493	Kiu demandis? - La patrino demandis.
+1374575	Tiu movado celas la unuiĝon de la popoloj.
+1376797	Mi petas, ni aŭskultu alian personon.
+1377701	Dio ordonis ripozi ĉiun sepan tagon.
+1378382	Tiu estis la plej ruiniga tertremo, kiu iam ajn okazis.
+1379388	Kial la esperantistoj ne estas iuj buboj? - Ĉar la afero, por kiu ili batalas estas io tre serioza kaj povas alporti al la homaro nur grandan bonon.
+1380179	Ni vidas per la okuloj, aŭdas per la oreloj, flaras per la nazo.
+1380723	Li iris en karceron.
+1381390	Mi ne scias, ĉu li venos.
+1387409	Ŝi ne toleras ŝercon.
+1401332	Kiel tia strangaĵo okazis?
+1404774	En la cifereca epoko multaj junaj homoj ne scias, kio estas -aŭ estis - sonbendilo.
+1405695	Ni paŭzetas por prizorgo. Ni revenos post nelonge!
+1411456	Ŝi kolektas sanigajn herbojn.
+1416503	Ne ĉiam estas facile salti trans la abismon inter imago kaj realigo.
+1428231	La vilaĝaj virinoj nutras rankorojn.
+1428886	Matematiko estas rekta kaj facila.
+1431608	Li ĉiam parolas, kvazaŭ li estus en publika kunsido.
+1432224	Mi mislegis la duan vorton en la frazo.
+1443931	Vi devas labori.
+1446291	La prezentisto aludis al la koruptado en la politika mondo.
+1448935	Miloj da kandeloj lumis en la preĝejo dum la ceremonio.
+1457503	Mi venis pro serioza afero.
+1468375	Ankaŭ mi ŝatas pentri.
+1470218	La moderna homaro havas du specojn de moralo: unu, kiun ĝi predikas, sed ne aplikas, kaj alian, kiun ĝi aplikas, sed ne predikas.
+1479330	Patrino skoldis min pro mia pigreco.
+1483235	Tiu ĉi recepto estis provata por vi fare de unu el la plej bonaj grupoj de gastronomoj el Rumanio.
+1513979	Li donis al mi la salon.
+1515868	La ŝipo surteriĝis.
+1518152	Li estas realisto kaj ne kredas miraklon.
+1526151	La ŝtono estas perfekte glata.
+1531089	Ili lasis min elekti donacon.
+1541707	La longan altan halon lumigas vico de lampoj pendantaj de la tegmento.
+1544201	Tom estis pafita.
+1558201	Ekzemple en la komerco de mia patro la planado de vendoj kaj aĉetoj tre gravis, li fojfoje devis skribi aŭ diri al siaj kolegoj "estas alfluo" sen plua detalo.
+1560160	Bonvolu turni la paĝon.
+1587579	Ŝi ne komprenas vin.
+1615252	Vi diras, ke certe mi jam konas lin sufiĉe bone, sed fakte oni nur en la lasta semajno prezentis nin unu al la alia.
+1618713	Vi estas vere naŭza!
+1620732	Anstataŭ manĝi legomojn, li metas ilin en miksilon kaj trinkas ilin.
+1624283	Jen grava studenda demando.
+1626909	Tom kaj Mary loĝas en unuetaĝa feridomo.
+1634538	Certe en la tuta mondo estas neniu, kiu malestimas aŭ malamas vin.
+1653772	Ne estas apuda nutraĵvendejo.
+1657280	Ĉu tio estis nura koincido aŭ kio okazis ĉi tie?
+1664425	Vi portas tre facile, se vi nenion havas; sed riĉeco estas ŝarĝo pli malpeza.
+1683542	Ĉu ni volas, ke estonta reĝino estu tia?
+1692676	London estas tiel granda urbo, ke vizitantoj devas uzi busojn aŭ metrotrajnojn por atingi siajn celojn.
+1698946	La estimo al si mem estas la angula ŝtono de ĉiuj virtoj.
+1706171	Ŝian ĉemizon ornamis la aĵurita silueto de Ejfelturo.
+1707323	Lia specio havas tri seksojn kaj koncipo postulas ĉiujn tri.
+1723200	Mia unua impreso estis, ke li estas diplomata politikisto.
+1725807	La vidaĵo de sur tegmento de la konstruaĵo estis belega.
+1740863	Baldaŭ floros la sakuroj en nia kampuso.
+1741778	Diru al ŝi, ke mi tranĉas la viandon.
+1743224	Tom ankoraŭ ne fritis la fiŝon.
+1743883	La krimulo tre laciĝis pro batalo kontraŭ du policanoj.
+1744082	La lastajn fuĝantojn la hundoj mordas.
+1748675	La loĝantaron trafis longdaŭra seko.
+1753969	La tribunala organizo estas plurnivela.
+1754868	Malfermu vian menson.
+1764850	Mi havas senton, ke io terura okazos.
+1768671	Tio aldoniĝas al miaj problemoj.
+1772739	La armeo akceptis la batalon.
+1774207	Kiel oni iras al la vendejo?
+1776242	Provu eviti kaŭzi plian problemon.
+1790471	Mi trovis enrete la frazon tiel tradukitan.
+1791385	Mi eniris la banejon.
+1807610	La simioj senpuligas sin.
+1825670	Mi ne kapablas elteni lian rigardon.
+1831764	Ĉu vi povas vidi, kio ne glatas en tiu bildo?
+1833282	Jen la foto, kiun mi faris en lia domo.
+1860302	Marko prenis siajn aĵojn kaj eliris.
+1861945	Ĉu vi aĉetos vortaron?
+1867539	Atentu jen feŝfarbitaĵo.
+1876160	Ŝi scipovas paroli per tri lingvoj.
+1877759	Iu devas paroli.
+1879161	Li transiris la riveregon Rio Grande.
+1879241	Li rigardis al antikva vazo sur la tablo.
+1918985	Kiel tion instruas al ni Korano, "Estu konscia pri Dio kaj ĉiam diru la veron."
+1921506	Li timis konfesi, ke li ne sciis.
+1921872	La registaro de Usono havas tri povojn: la plenuma, la leĝodona kaj la juĝista.
+1930793	Kompreneble, ke tio plaĉas al mi!
+1930980	Bonvolu montri al mi vian detalan planon.
+1937845	Konfidence inter ni; ĉu vi enamiĝis al mia fratino?
+1942442	Sébastien Cabot estis la filo de Jean Cabot kaj, same kiel li, fariĝis esploristo.
+1943338	Lia valizo estis plena de akvo.
+1945104	Ni havis multe da pluvo ĉi-somere.
+1947679	Se mi maltrafos la trajnon, mi enbusiĝos.
+1947743	Li kredas esti la sola, kiu scias, kiel starigi kaptilojn.
+1948023	Ni estas maltrankvilaj pri ŝia sano.
+1949794	La invado en alian landon estas hontinda ago.
+1953042	Ni ne povas permesi plian eraron.
+1955744	Laŭ mi estas danĝere, ke la infanoj naĝas en tiu lago.
+1957487	Ŝi ne protestis.
+1958136	Jen la unua fojo, ke mi surhavas blankan mantelon.
+1969358	Mi ŝatus havi pli da amikoj.
+2010073	En la dormo la lacaj reakiris la fortojn.
+2035298	La Hinda Oceano estas la trie plej granda oceano.
+2036041	Ĝi ne facilos.
+2050117	Mary laboras kiel partatempa flegistino.
+2055555	Ŝia fratino estas mirinda edzino kaj patrino.
+2063303	Lia tuta familio laboras en bieno.
+2074449	Eblas uzi ovojn kiel armilojn.
+2077387	Ne timu, vi estas sekura.
+2088036	Nome de miaj klasaj kamaradoj, lasu min diri al vi kelkajn dankajn vortojn.
+2091042	Mi ne petus ke Tom faru ion, kion li ne vere deziras fari.
+2092951	Vi estas bona kliento.
+2097011	Li kapablas kuri cent metrojn en malpli ol dek du sekundoj.
+2097390	La urso polusa estas la urso orta post kiam ties koordinatsistemo estis transformita.
+2140188	Mi kredis vin vundita.
+2140691	Li malakceptis mian peton dirante, ke li estas okupata.
+2152351	Via parolado estis aĉa.
+2157164	La princo eniris en la ĉambron per rapidaj katecaj paŝoj.
+2162172	Mi ne postulas de ili mian salajron.
+2167873	Via kato transvivos.
+2214851	La ĉarlatano konstruigis al sia amatino luksan domon per fama arkitekto.
+2229053	La bendo volviĝas.
+2236044	Ĉu ŝi ankoraŭ post kelkaj jaroj memoros, kion ŝi promesis al mi?
+2261376	Temas pri funkciado de plurnivelaj kursoj.
+2264552	Ili ne volis partopreni la batalon.
+2271125	Vi ne diris al ŝi, kion li skribis en tiu ĉapitro.
+2271808	Neprofitema mensogo ne estas mensogo, sed poezio.
+2274698	Ĉi tie vi ne rajtas veturi per rultabulo.
+2277814	Tio teruras vin, ĉu ne?
+2280071	Mi ne iros al la lernejo hodiaŭ.
+2282641	Mi ne malsaniĝas.
+2298819	"Se la trifolio floras, eĉ milda brizo min ternigas," plendis Maria.
+2304673	Mi bezonis scii nenion plian.
+2310948	Mi venis ĉi tien por vidi, kiel vi fartas.
+2313661	La jako estas eluzita ĉe la kubutoj.
+2322496	Estis tiom pace en la bosko.
+2324501	Mi ne povas kompreni, kiel tio povis okazi.
+2325815	Vi ne rajtas pluki la florojn.
+2327842	Mi ĉion fuŝis.
+2333676	Estis necese detale studi la aferon.
+2335067	Tio estas por mia scienca projekto.
+2335557	La infano bone fartas.
+2335733	Ĝi sin maletendas ĉe malvarmo.
+2339664	Mi eltiris denton.
+2355257	Vi konsilis viajn pacientojn.
+2366129	Mi ne surmetas ilin.
+2367299	Li pripensis ĝin kaj decidis ne iri tien.
+2369444	Mi nur faras, kion oni diras al mi.
+2375268	Mi fidis lin koncerne la monon.
+2377844	Vi tre bone elturniĝas. Daŭrigu.
+2401626	Tom prenis la ŝlosilon for de la pordo.
+2413612	Mi pensas, ke Tom jam estas ĉi tie.
+2414615	Diru al li, ke mi ekmalsanis.
+2423384	Diru al li, ke nun mi manĝas.
+2429543	Atentu la ŝtupon, la ŝtuparo ege krutas.
+2434296	Mi bezonis mantelon.
+2436468	Mi ne volas perdi mian edzinon.
+2440503	Tom ne ŝatas esti ĝenita.
+2445167	Ili estas pli inteligentaj.
+2446644	Vi ne aspektas tre bonfarta.
+2465313	Li ne estas edzo.
+2470374	Ĉiam kiam mi preterpasas la tedomon, la ĉefo elvenas por bonvenigi min.
+2488425	Ne tuŝu la ciferplaton!
+2488538	Tom ne pezigis siajn valizojn.
+2494179	La ideoj pensigas, la sentoj agigas.
+2512757	La granda demando de filozofio ja restas: se la vivo estas sensenca, kiel do klarigi la alfabetan supon?
+2571696	Ŝi uzis ĉapelon.
+2573952	Mi amindumis nur du virinojn en mia vivo.
+2583133	Folio estas parto de la planto.
+2593870	Liaj gepatroj aprobas gefianĉiĝon.
+2598259	Ĉiuj senbiletuloj – kapraĉoj!
+2607443	Maria kredas, ke la plej granda feliĉo de la homo estas signifoplena vivo.
+2619038	Vi estas la plej bela knabino, kiun mi iam vidis.
+2634919	Mi estas en perfekta mondo.
+2639219	Ili forte diferencas inter si per la beleco.
+2655521	Mi ŝatas la revojn pri la estonteco pli ol la historion pri la pasinteco.
+2676914	Vi aspektas belega.
+2705449	Viro honora neniam provu tenti damon, krom se sukcese.
+2706217	Li komparis lian ideon kun aliula ideo.
+2742012	Vi devas studi anstataŭ amuziĝi!
+2750101	Mi diros tion al li se mi ne forgesas.
+2752593	Ĉu vi ne pensas, ke estas por vi tempo por foriri?
+2754527	Vi konstante devas peni plenforte.
+2754868	Mi estas tute nuda.
+2757579	La tradukantoj de la biblio estis konsiderataj blasfemaj.
+2759849	La lancopinto estis malsekigita per veneno.
+2764750	Mi volus, ke vi sciu, kiel mi sentas.
+2766142	Eksidu ĉi tie kaj varmigu vin.
+2806211	Mi donas la pomon al Johano.
+2815620	Kio kaŭzis vian zorgon?
+2839394	Antaŭ nia domo staras du maljunaj kaŝtanarboj.
+2841966	Ĉu Tomo kapablas fari tion?
+2860737	Svarmas rompoŝteloj en mia najbaraĵo.
+2876156	Dankon pro la traduko. Sed bonvole elektu alian flagon!
+2881619	Tomo ne konas la detalojn.
+2896345	Iun tagon, nigra virino Roza Parks revenis hejmen post peniga labortago.
+2899716	Vi studu pli intense gramatikon.
+2902726	Tomo estas denaska sportisto.
+2907551	Tomo malaperis senspure.
+2909047	Mi ne estas ĉi tie nur por aspekti bela.
+2912689	Laŭ vi kiom da tempo tio ankoraŭ bezonos?
+2914518	Tomo estis konsternita.
+2918347	Kontraŭ stulto ne ekzistas sanigilo.
+2924296	Kie estas mia teo?
+2935697	Mi kredas al vi, ke vi opinias vin geniulo.
+2939471	Ne troviĝas magazeno proksime de mia hejmo.
+2940328	Estas privesta regularo en tiu lernejo.
+2940597	Mi vidu ŝin!
+2944530	Ŝi ĉiam malfruas por iri al la lernejo.
+2955284	Vi ripozu iomete.
+2960825	Lin ĉefe interesis la deveno de la universo kaj ties evoluo.
+2967250	Mi supozas, ke tio ne estas tiel facila, kiel ĝi sonas.
+2975435	La nura fakto vidi knabinon emociegas lin.
+2975563	Li estis kuraĝa militisto, kiu pasigis la plej grandan parton de sia vivo, luktante kontraŭ siaj malamikoj.
+2979233	La floro estas ruĝa.
+2989504	Liaj okuloj plenis de malĝojo.
+2991310	Neniu povus levi ĝin!
+2992525	Poŝtelefono tiuspeca ege bone disvendiĝas.
+2992670	Mi esperas, ke vi ŝercas.
+2996099	Tomo ne estas tiom maljuna, kiom vi.
+3001079	La maristoj ribelis kaj elŝipigis la kapitanon sur foran insulon.
+3008354	Kiun vortaron vi ofte uzas?
+3017325	Ne mankis al li maltrankvilo, kiam dum la paso de la tago ne prezentiĝis al li la perspektivo de pantagruela manĝo, akompanata de la necesa kvanto da vinoj kaj brando.
+3018710	Kiel vi ekkonis Tatoeba?
+3024559	Norvega virino estis kondamnita je dek ses monatoj da enprizonado pro "seksaj rilatoj ekter geedzeco", post kiam ŝi plendis ĉe la tribunalo en Dubajo, ke oni seksperfortis ŝin.
+3029154	Kaj kiu estis la alia?
+3044974	Ni devas helpi al tiuj, kiuj ne povas defendi sin.
+3048508	Kiam li aŭdis la voĉon, li rigardis tra la fenestro.
+3064966	Liaj okuloj malheliĝis.
+3065162	Se la vetero ebligos tion, ili iros kolekti fungojn en la arbaro.
+3069688	Mia granda frato estas liceano.
+3075332	Vi estis torturitaj.
+3077736	Forigu tiujn vortojn per via frotogumo!
+3078549	Mi volas certiĝi, ke vi estas tiuj, kiuj vi deklaras esti.
+3079179	Mi pafos vin.
+3083988	Mi certas, ke ni povas solvi tion.
+3091836	Li edziĝis al la filino de sia onklo.
+3098805	Mi ne faris tion sola.
+3100281	Ŝi posedas malmultajn librojn.
+3107990	Estas same koncerne la aliajn.
+3125193	Ĉu mi nepre iru al la festo?
+3154531	La malmultekostaj aŭtoj domaĝas vian monujon.
+3159790	"Kion vi do faras en la kuirejo? — "Mi ŝmiras fragan marmeladon sur pantranĉo por mi." — "Se vi preparos plian por mi, vi ricevos kison!"
+3162260	Mi ne povas lasi ilin foriri, antaŭ ol la brakhorloĝo estos riparita.
+3162262	Li elektis ilin hazarde.
+3180850	Mi tre volas aliĝi al esperantista klubo.
+3187593	Tute ne certas, ke tio malbonus.
+3195386	Li antaŭvidas la vesperon tiamaniere, ke li parolos kun la prezidento.
+3207963	Mi esperas, ke mia rakontaro estos ne nur instrua al vi, sed ankaŭ plaĉa.
+3215381	Manjo ŝatas kaj Tomon kaj Johanon.
+3221307	Ĝi estas multinfana familio.
+3225209	Ne kuru tiom rapide, mi ne povas sekvi vin.
+3252521	La monumenton oni konstruis en la parko.
+3256077	Tom pensis, ke estus bona ideo foriri frue.
+3278916	Li ordonis, ke la edzinoj, infanoj kaj sklavoj de la armeo estu transportitaj per la kanalo.
+3286633	Li provizis al ŝi unuan helpon ĉe la akcidento.
+3289742	Ne parolu pri tiu abomeninda viro.
+3323933	Ĉu vi ŝatus iri promeni?
+3338094	Mi transiris la malluman straton.
+3340696	Ili neniam plu revidis unu la alian.
+3347932	Oni ne aŭdacu murdi militkaptiton, al kiu indulgon jam estas promesita, nek liberigu lin, sen permeso kaj scio de la ĉefkomandanto, je puno de morto kun malhonorigo.
+3355667	Por konvinke ludi rolon de fripono, ne necesas esti fripono. Sufiĉas atenta ĉirkaŭrigardo en la konataro.
+3355897	Mi frapas je nenies pordo.
+3374046	Ni ŝatas ĉinan manĝaĵon.
+3381779	La placo de Sankta Petro estis plena de homoj.
+3389071	La proceso okazis ĉe la tribunalo de Grenoblo.
+3389497	Ĉu vi scias, kio farendas, kiam estas fajrego en la konstruaĵo?
+3401752	Gardu viajn pensojn; ili estas la komenco de viaj agoj.
+3404572	Tio estas bedaŭrinda, sed ne senesperiga.
+3439166	Kial ne profiti de la vivo?
+3456818	Dum multaj jaroj la kompatindaj ĉefartikolistoj papage ripetis, kion deklamis la predikantoj de la merkata liberalismo.
+3463000	Mi komprenas nenion el ĉi tio.
+3463271	Plu vivi estas sensence.
+3463442	Tiu strato kondukos vin al la stacidomo kaj la urbocentro.
+3472933	Subita kanonopafo disŝiras la silenton.
+3484877	Mi deziris paroli kun vi pri viaj testrezultoj.
+3488063	La domo havis multajn posedantojn.
+3488389	Tomo rimarkis, ke Maria ne atentas Liajn vortojn.
+3491750	Hodiaŭ nia laborplano estas plenŝtopita.
+3496206	Ŝi falos el la arbo.
+3496317	Laŭ mi, ĝi ne ŝajnas natura.
+3502912	La virinoj traktas nin ĝuste tiel, kiel la homaro traktas siajn diojn. Ili adoras nin kaj ĉiam trudĝenadas nin por fari ion por ili.
+3510154	Mi volas esti rimarkita.
+3514878	Mi havas posttraŭmatan neŭrozon.
+3515473	Mi stiras nigran aŭton.
+3542791	Ili ne atentis.
+3547073	Sed kion fari okaze de ia neatendaĵo?
+3583937	Al nia prava postulo ili respondis rifuze.
+3608463	Korifeo oni nomas iun, kiu aparte bone kapablas fari ion kaj estas unu el la plej bonaj en sia fako.
+3639607	Kiu estas la numero de via ĉambro?
+3652654	Multaj bestospecioj estas proksimaj al formorto.
+3654116	Kies venkon vi volas?
+3672650	La usonanoj rifuzis la proponon.
+3674602	Ĉiuj lacertoj povas ellasi ovojn.
+3695444	Kiom da Avoj Frostoj estas?
+3709502	La mondo bezonas pli da tenereco.
+3772167	Tomo metis ĝin en la skatolon.
+3804591	Soldato estas anakronismo, de kiu oni devas liberiĝi.
+3883031	Kiom ofte vi telefonas al viaj gepatroj?
+3928325	Ni ŝatus kundividi la manĝon. Ĉu vi bonvolas alporti al ni du telerojn?
+3954902	Ĉu vi havas sekundon?
+3957399	Vi pli kredas al viaj okuloj, ol al miaj vortoj!
+3958868	Fraŭlino Kolardo, al kiu Maziero konigis sian klopodon kaj siajn suspektojn, levetis la ŝultrojn.
+3964024	La amikoj estas tiuj, kiuj helpas vin restariĝi, dum la aiaj eĉ ne rimarkis, ke vi falis.
+3967606	Tio estos okupata tago.
+3987433	Revenu ekster tie.
+3990458	Vi trovis ilin.
+4004959	Tom ne rajtas erari.
+4033375	Estas timige ĉi tie.
+4051294	La fraŭlino pro li perdis fianĉon.
+4052072	Ĉu mi povas kunveturi?
+4052932	Apud la unua iris Eunana ĉagrenita kaj meditanta.
+4079467	Vivartisto estas, kiu tiel revivas la someron, ke ĝi vintre ankoraŭ hejtas lin.
+4089517	Mi ŝatintus manĝi pli.
+4106314	Mi ĉiam amis vin, Tomo.
+4107181	La malĝoja sciigo premas min.
+4112634	Vi ne povas ĝin ripari. Necesas, ke vi aĉetu novan.
+4115273	La ĉielo ne eraras.
+4126647	Mi aŭdis, ke Nancy estas tre bela.
+4128281	Homoj ŝirmis sin per pluvombreloj kontraŭ la pluvo, per manteloj kontraŭ la malvarmo.
+4142857	Kial vi diris al Tomaso, ke li malplaĉas al Maria?
+4149970	Mi tre bone konas tiun lokon.
+4163422	Almenaŭ provu esti singardema.
+4165113	Neniu konas min tiel multe, kiel vi.
+4176822	Ĉu ŝi estas pli bona ol mi?
+4186025	Ili vidos tie ĉemizon por la fianĉo, kvazaŭ teksitan el oro kaj arĝento.
+4186081	Mi estis lavonta mian hararon.
+4195637	Terura tremo skuis ŝin de la kapo ĝis la piedoj.
+4219001	Tomo ĉirkaŭiris la temon.
+4226371	La patrino restis vekita dum la tuta nokto, atendante sian filon.
+4258916	Sen bonaj ingrediencoj oni ne povas prepari bonan manĝon.
+4274515	Oni devus malpermesi tion.
+4293208	Longe li revis pri pentrado per oleaj farboj.
+4300051	Ĉu vi estas fidela al via revo?
+4351709	Mi ne povas aprobi vian projekton.
+4371943	Ĉu estas eble trinki salan akvon?
+4387827	Ĝi flosas sed ne sinkas.
+4421738	He, uloj! Kiel vi fartas?
+4455869	La devo de bona soldato estas servi la patrujon.
+4481006	Tomo pasigis la matenon sarkante sian ĝardenon.
+4522098	Ŝi forestas pro malsano.
+4527109	Maria etendis la ombrelon.
+4546139	Vi metis ŝin en skatolon.
+4576058	Se la germanuja politiko estus aŭto, mi timas, ke ĝi jam dum kelkaj jaroj ne plu sukcese trairus la aŭtomobilan kontrolon.
+4580904	La morto estas fatala.
+4625731	Mi deziras lerni pli da Esperanto.
+4652757	Vi ĉiam telefonu al mi, se vi bezonas mian helpon.
+4681387	Ŝi preparas manĝon aŭskultante muzikon.
+4681501	Antaŭparoloj ordinare prezentas aŭtorojn, glorante iliajn meritojn kaj teksante konsideradojn pri ilia persono.
+4685677	Rezigni drinkadon dum tuta jaro estas sanige.
+4695384	Ni forgesu tion.
+4701840	Ĉu tio kontentigos vin?
+4707269	Kie vi estis dum la lastaj jaroj?
+4742502	La via pli grandas ol la mia.
+4742697	Ĉu varmos morgaŭ?
+4746523	Ŝi ĉiam estas zorge vestita.
+4821507	Tomo almenaŭ unu fojon semajne lesivas.
+4829277	Mi ĵus eksciis tion.
+4836018	Al li estos aljuĝita la usona civitaneco.
+4849586	Per reto oni povas pli facile fiŝkapti.
+4852087	Ĉu vi ne ĝojas pro tio, ke vi estas pensiulo?
+4864332	Post la milito oni alŝtatigis la ekleziajn bienojn.
+4872228	La araban oni legas de dekstra flanko al maldekstra.
+4876659	Tomo laboris multe por fini la laboron en tempo.
+4878638	Antaŭ la Diservo estis alie.
+4879083	Estis hieraŭ mateno, kiam ni vidis s-ron Carter.
+4879628	Mi devas aĉeti novan tapiŝon por la ĉambro.
+4882963	Kiel banale ajn tio sonas, mi ĉiutage pli amas mian edzon.
+4894537	Tiu parcelo ne apartenas al unu persono, sed al pluraj proprietuloj.
+4901452	Vi estas eksternorma!
+4903993	Li meritas multe.
+4916084	Ni estas moviĝantaj.
+4919182	Ne plu telefonu min.
+4921176	Ŝi fierigas sian patron.
+4926141	Nun mi studu.
+4933316	Tion mi ne negos.
+4940601	Tio plej bonos por vi.
+4945067	Ĉiu homo ŝanĝiĝas.
+4953483	La kuracisto diris, ke mi ne manĝu tro multe.
+4958793	Bartolomeo deziras manĝi framban kukon.
+4959576	Ĉesu tuŝi min.
+4966895	Vi estis la amo de mia vivo.
+4968409	Ni lasu Tomon fari tion.
+4973074	Li urinas enlite.
+4974296	Mi devis atendi pli ol tri horojn.
+4979093	Mi ĉiam malamis ŝin.
+4996626	Ŝi demandis lin, kial li ploras.
+5006338	Li estas tre senpartia.
+5032723	Mi precize instruis lin.
+5033047	La ekskursanto prenis la hejman cervelason.
+5036194	Malgraŭ allogo mi restis hejme kaj lernis.
+5037078	Mi ne vekas iliajn infanojn.
+5045597	Vi ne estas ĉagrenitaj, ĉu?
+5056188	Mi ege dubas prie.
+5063826	La valoraj mebloj estis kovritaj per blanka tego.
+5070419	La estraro alprenis severan leĝon kontraŭ kontraŭleĝa enmigrado.
+5076627	Oskaro bakas omaran pasteĉon por la vizitantoj.
+5077003	Lesoto estas tute ĉirkaŭata de Suda Afriko.
+5079686	Miĉjo ŝatas katojn.
+5084424	Tio estis tre komika.
+5099657	Bedaŭrinde mi ne kapablas tuj respondi.
+5111078	Vi bone scipovas desegni.
+5145584	Estas facile tranĉi fromaĝon per tranĉilo.
+5155981	La dekkelkjarulino je sabato estis deklarita de siaj gepatroj kiel mankanta.
+5174808	Multaj sciencistoj laboras per nombroj.
+5174925	Ili akvumos la ĝardenon.
+5176176	De kiom da tempo vi elprizoniĝis?
+5179809	Vi ne estus kapabla diri tion.
+5182905	Mi ne faris demandojn.
+5202296	Li kulpis pri murdo.
+5204079	Kiu bonŝancas, al tiu ankaŭ la virkoko donas ovon.
+5220036	Ĉu vi kontraŭstaras la fakton, ke mi iros tien?
+5224324	Kio do okazis al vi?
+5225003	El gramatika vidpunkto tiu frazo ne ĝustas.
+5231724	Mi havas larmojn en okuloj rilate tion.
+5235381	Ŝia rakonto tre amuzis nin.
+5241743	La soldatoj plenumu la ordonojn.
+5241889	Subite la sonorilego tintis, fortega vibrado tremigis la aeron, osciligis la pezan turon. La planko tremis sur la traboj. La bruo preskaŭ faligis min.
+5251042	La kamentubo estas farita el brikoj.
+5253424	Vi lavas viajn laktukojn.
+5253926	Ni ne adoris la idolojn.
+5267920	Li alvenos malfrue al la kunveno.
+5278173	Tomo tre amis Manjon.
+5280540	Tomo edziniĝis du fojojn.
+5287340	Maria diras, ke Venecio estas mirinda en aŭtuno, ĉar estas malpli da turistoj.
+5291920	Ni kantos belajn kantojn.
+5303925	La serpento malaperis malantaŭ la arbo.
+5308149	Tomo volis iri al Bostono.
+5330107	Aĥ, tiu aĉa ŝercemulo kiu ne tranoktas hejme! Eble li vizitis la putinojn...
+5376738	Mi ne sciis, kiel mi devas respondi lian demandon.
+5391604	Tomo pasigis la tutajn sabaton kaj dimanĉon ĉi tien kaj tien en la urbo serĉante poŝmonstrojn.
+5408338	Atendu ĝis nova ordono.
+5410068	Ni pensas ke ni estas tre proksimaj al solvo de la problemo.
+5417278	Sufiĉis malfermi la fenestron kaj simple preni ilin, ĉar ili restis iom konfuzitaj.
+5417440	Per tiuj radetoj ni konstruis multajn ĉaretojn, sed por la bretetoj ni devis ofte petadi, ĝis panjo fine diris al paĉjo - "Nu, segu kelkajn bretojn por ili".
+5417713	Ne necesas perdi sian vivon sub la preteksto gajni sian vivtenon.
+5426347	Tio estas refreŝiga.
+5435983	La pezaj kurtenegoj de la salono estis funde batpurigataj kaj brosataj kaj baldaŭ rependigataj je la lignaj stangoj super la fenestroj.
+5451935	Ĉu vi volas scii, kie vi eraris?
+5462719	Mia filo estas tro malgrasa.
+5473535	Tom truddevigis min fari tion.
+5478502	Pro teknika incidento la kunveno estas prokrastita je unu horo.
+5482844	Kiam mi vekiĝis la suno staris jam alte super la horizonto.
+5489764	Li ŝatas loĝi en Tokio.
+5505123	Legado estas tre grava al mi.
+5517097	Ni jam multe lernis.
+5519894	Tomo havas neniun memoraĵon pri tio, kio okazis.
+5520314	Kiam la prudento ofte laŭtigas la voĉon kontraŭ la fanatikeco, tiam ĝi povas igi la estontan generacion pli tolerema ol estas la nuna, kaj tiel multo estus jam atingita.
+5528901	Ni ne scias multon pri Tom.
+5537047	Ĝi estas la sola, kiun mi posedas.
+5537491	Ĉiuj vilaĝanoj diras, ke la nova pastro estas lupo ŝajniganta esti ŝafo.
+5557061	Mi volas trafi tiun de la sesa kaj kvardek kvin minutoj.
+5557883	Mi atentu pli bone.
+5568615	Ni formas bonan skipon.
+5570295	La helikoptero senskue surteriĝis.
+5575024	La konstruaĵo estis konstruita en 1960.
+5586206	Mi diris al Tomo, kion li devis fari.
+5589173	Mi ŝirmas vin.
+5594736	Ĉu vi volas iri por naĝi?
+5596584	Tuj venu hejmen.
+5611032	Mi ne scias, kial li estas tiom koleriga.
+5612371	Piani estas tre simple: oni nur premu la ĝustan klavon en la ĝusta tempo.
+5637490	Ŝi estis preskaŭ transveturita de aŭto.
+5639337	Necesas, ke Tomo revenu.
+5641960	Via kamerao ne tiel bonas kiel la mia.
+5644133	Ŝi vivis ĉi tie dum sia tuta vivo.
+5644225	Mi ne difektas al vi la vizaĝon.
+5648693	Ili faris al ni promeson.
+5654098	Ne estis elirejo.
+5663411	Endas, ke ŝi venu.
+5676664	Mi vere ŝatis ŝin!
+5684828	Ili loĝos enurbe.
+5694257	La komenco estas la duono de tutaĵo.
+5695451	Tio aspektas neinteresa.
+5698827	Tomo revenintos en Bostono morgaŭ nokte.
+5700925	Mi havas proksimume la saman aĝon, kian vi havas.
+5708442	Tomo tamen faris tion.
+5714031	Vi estas tiuj, kiuj realigis ĝin.
+5714552	Mi nur faris mian laboron.
+5714841	Mi kredas, ke vi provis igi min kolera.
+5719655	Ĉu vi disponos kelkan liberan tempon postmorgaŭ?
+5723521	Se oni povas fari nenion malĝuste, estas malfacile fari ion ĝuste.
+5727500	Narciso manĝas flavajn nudelojn kaj trinkas acerban poman akvon.
+5728259	Ĝi estas bona fotilo.
+5733572	Vi demandis pri la horo.
+5740855	Kiu estus dirinta tion?
+5752891	Mi gajnas ĉion kaj restas venkita.
+5754324	Ni estos tie por helpi.
+5758535	Mi trovas tion bona ideo.
+5762268	Li transportis min hospitalen.
+5775341	La instruisto povas montri ekzemplon ĉe la tabulo por ilustri la modelon de respondo dezirata.
+5780916	Mi ofte tenisas kun Tomo.
+5790106	Tomo estas la bofilo de Manjo.
+5791516	Tomo kaj Manjo edukis tri infanojn.
+5799358	Vi atingas la tridekjarecon.
+5823944	Ĉu vi konas grupojn kiuj kantas en la okcitana?
+5824621	Mi malestimas avarecon.
+5860055	Mi pensas, ke Tomo estas kompatema.
+5861648	Ŝi studos vian raporton.
+5911317	Ni eble kulpigu Tomon pri tio, kion ni faris.
+5913828	En la ekstero estas varmege, sed en la domo estas malvarmete.
+5914721	Nia teamo vere fierigas min.
+5920794	Nia hundo sekvas min ĉien.
+5959730	Manjo kredas esti bela.
+5972210	Mi neniam povus aflikti ilin.
+5973124	Malgraŭ ĉiaj klopodoj mi ne povis trovi la ŝlosilon de la loĝejo.
+5997567	Mi tre klopodas percepti tion kiel komplimenton.
+6015218	Mi volas havi pecon da ligno, por ke mi povu fari marioneton. Ĉu vi donas al mi unu?
+6031979	Bonvolu mallaŭti, Sinjoro!
+6101711	Tio estas ekster mia imagkapablo.
+6111259	Ili kune havis ok infanojn.
+6139816	Empatio ne estas lernebla.
+6140539	Tomo esperas edzinigi min, sed mi ne devas edzigi lin.
+6142526	Tom maturiĝis parolante ambaŭ la francan kaj la anglan.
+6158024	Ĉu plaĉas al vi mia nova ĉapelo?
+6170002	La knaboj, kiuj helpis nin, ne estis tiel junaj.
+6192432	Mia fratino nutras sin nur per legomoj.
+6197832	Mi estas varmiganta akvon.
+6197925	Tomo devus pli ofte helpi Manjon.
+6202828	Tom ne longe pluvivos.
+6202912	Laŭ la elektitaj vortigoj Tomo tuj komprenis, ke oni – ne tre zorge – tradukis la artikolon el la angla lingvo.
+6218116	Sur la vendoplaco moviĝas la popolamaso. Bruadas paŝoj kaj paroloj en zumado laŭta.
+6276802	Sukceso ne estas la ŝlosilo por feliĉo. Feliĉo estas la ŝlosilo por sukceso. Se vi amas, kion vi faras, vi sukcesos.
+6285433	Mi trovis lian prezentadon iom malvigla. Ni tamen povas atendi de li ion pli energian.
+6295025	Persono, kiu proponas varon, estas vendisto.
+6318205	Mi ne povas kompreni, kial do vi ne ŝatas ĵazon.
+6395321	Mi ĉi tie konas ĉiun ŝtoneton.
+6403532	Li iĝis deksepjara en februaro.
+6460640	Ĉu li estas malsana?
+6460688	Tomo ludas piedpilkadon.
+6465485	Kiu naĝas pli rapide, Tom aŭ Maria?
+6552143	Mi studas tre diligente.
+6560794	La Tridekjara-Milito (1618-1648) ankoraŭ daŭre ludas gravan rolon en la kolektiva memoro de la germanoj.
+6579771	Mi ne atentigas ilin.
+6626828	Pri tiu afero mi ne povas konsili vin.
+6698591	Konvene diru al mi, kiel ĝi funkcias.
+6736397	Ĉi tie estas la hospitalo.
+6768458	Ĉu vi denove vidos ŝin?
+6779006	Mi pensas, ke Tomo aspektas pli bone ol Johano.
+6786103	Ĉu vi ne malsatmortas?
+6817215	Tomo estas senlabora de unu jaro.
+6891964	Mi preferas vojaĝi sola.
+6942620	Kelkaj el la plej maljunaj baobaboj de Afriko subite mortis.
+6955473	Tom mortis hieraŭ.
+6967429	"Ve! Se mi nur altus, kiel la aliaj arboj!" sopiris la eta pino.
+6970960	Tomo ne volas, ke Manjo sciu tion.
+6971015	Mi rifuzas esti nomata io alia ol „Via moŝto”.
+6990163	Ĉu vi memoras, kion li portis?
+7038610	Tio ĉi estas la lasta alvoko por la flugo 333 al Bostono.
+7057982	Tomo estas por Manjo amiko kaj helpanto.
+7101968	Vi estus perfekta diktatoro.
+7201114	Ĉi tio estas dragilo.
+7265853	Ĉu virinoj plaĉas al vi?
+7309060	Tomo kaj Manjo havas plian domon.
+7347651	El reala buljono devas pli da okuloj elrigardi ol enen.
+7373018	Ĉu Tomo zorgis pri siaj notoj?
+7447990	Tiutempe estis multe pli ol nun neimageble por diplomatoj ne paroli la francan.
+7535285	Mi ne uzas mian biciklon tre ofte.
+7535894	Manjo demandis Tomon, kie li loĝas, sed li ne volis diri tion al ŝi.
+7549313	Laŭ la scienca signifo de la vorto, ĉiuj birdoj estas dinosaŭroj.
+7582131	Li skribas per la maldekstra mano.
+7675788	"Kiom, bonvolu?" "Dudek asojn".
+7684078	Mi sciis, ke Bostono plaĉus al vi.
+7709022	Mi volas viajn komentojn.
+7729237	Estos pli bone, se mi mem parolos kun ŝi.
+7753545	Kaj la Eternulo diris al Abram, post kiam Lot apartiĝis de li: Levu viajn okulojn, kaj rigardu de la loko, sur kiu vi nun estas, norden kaj suden kaj orienten kaj okcidenten.
+7781780	Ĉu vi deziras ankoraŭ iom pli?
+7799712	Ĉu vi helpis?
+7802778	Kaj Isaak semis en tiu lando, kaj havis en tiu jaro centoblemezuran rikolton; kaj la Eternulo lin benis.
+7803193	Ni estis unuecaj.
+7808006	Kaj lia patrino diris al li: Sur mi estu tiu malbeno, mia filo; nur aŭskultu mian voĉon kaj iru, alportu al mi.
+7816814	Kaj ŝi diris: Jen estas mia sklavino Bilha; envenu al ŝi, ke ŝi nasku sur miaj genuoj kaj ke mi ankaŭ ricevu filojn per ŝi.
+7856122	Vi sonas infaneca.
+7879504	Kia bela sunsubeniĝo.
+7883679	Ĉu Tomo vere kredas, ke li povas konvinki Manjon aĉeti lian malnovan aŭton?
+7901452	Ĉu vi ĉiuj parolas ĉine?
+7908886	Jareno estas la ĉefurbo de Nauro.
+7916101	Dio konsolu la sinjoron, kiun instruu la servisto.
+7932610	Ni ĉeestos malgraŭ tio.
+7937690	La provizado per motoroj havas ankaŭ bonajn aspektojn, la ĉevalŝteloj konsiderinde malplimultiĝis.
+7975983	Tomo portis kompleton al la intervjuo.
+8016535	Vi havas tre laŭmodajn ŝuojn.
+8021540	Oni ne manĝu tro multe.
+8027941	Tom forlasas la urbon.
+8027944	Mi estas certa, ke Tom sciis tion.
+8045088	Tie do ni travintros.
+8055882	La infano estas la patro de la viro.
+8073562	La laboro estos farita.
+8079198	Kaj Jitro, la bopatro de Moseo, alportis al Dio bruloferojn kaj buĉoferojn; kaj Aaron kaj ĉiuj ĉefoj de Izrael venis, por manĝi panon kun la bopatro de Moseo antaŭ Dio.
+8100556	Tomo almenaŭ dormis en la pasintaj noktoj.
+8115919	Tio estas tabua temo ĉi tie.
+8188750	La ŝtelisto forkuris, kiam ri vidis la policon.
+8289471	Li ne estas mia estro.
+8417392	Li pensas pri la semajnfino.
+8434482	Kun kio oni komparu la surteran vivon? Ĝi similas boaton, kiu matene levas la ankron, malaperante sen postsigno.
+8436096	Samio faras vidblogon pri sia vivo.
+8458285	Tomo estis la stelulo de la piedpilka teamo.
+8461688	Mi ne pensas, ke mi bezonas vian helpon hodiaŭ.
+8462088	Ĉu mi povus manĝi tiun pomon?
+8496231	Ŝi estas spektanta la televidon.
+8510314	Rush Limbaugh mortas pro pulma kancero.
+8532728	Dato povas esti ankoraŭ tiom aĉa, iam el ĝi fariĝas bone rondigita afero!
+8533185	La kato ankoraŭ tre junas.
+8559223	Ĉu ĉi tio estas Alĝero?
+8613715	En la domo estas nova kato, kiu konsistas el ombroj.
+8623919	Pripensoj estas ofte dubindaj anstataŭ pripensindaj.
+8649156	Mi volis vian komenton.
+8696835	Li estas ĉe ŝi.
+8747960	Ĉu via patrino kutimis ludi la pianon, kiam ŝi estis pli juna?
+8764284	Tomo foriris tuj poste.
+8790798	Mi kredas, ke tio povas veri ĉe multaj aferoj.
+8799650	Li ne volis respondi miajn demandojn.
+8812650	Ju malpli mi scias pri tio, des pli bone.
+8821783	Tomo ne volas respondi.
+8830601	Ŝia filino fritis la viandon.
+8835818	Ĉi tio estas rektangulo.
+8875595	Ne iru proksime al ili.
+8877958	Ĉu vi redonis la monon al via patrino?
+8892719	Mi kredas, kion Tomo diris.
+8960560	Vilhelmo studis la kri-indianan lingvon en lernejo en la vilaĝo.
+8962095	La necesejoj en la stacidomo estis surprize puraj.
+8968566	Ni pasigis la ferion ĉe la marbordo.
+8976954	Kial mi ne povas uzi mian kreditkarton?
+8991155	Bruneska birdo flugas al la alta arbo.
+9028138	Ĉi-nokte ĉe la gazono, multaj insektoj troviĝas sub la verdeska lumo.
+9028295	"Do mi diris al la juĝisto, 'Via panjo estas kulpa pri publika maldeco!'" "Ne, vi ne faris tion."
+9059617	Seksrivelaj festoj estas pli danĝeraj ol kontraŭfaŝismo.
+9240739	Mi faris la necesan laboron.
+9289824	Tomaso diris al mi, ke li fartas pli bone.
+9303017	Kial vi ne volas rigardi en miajn okulojn?
+9364149	Ĉion kreis Dio.
+9376999	Mi ekkomprenas, kiel uzi ĉi tiun novan maŝinon.
+9446176	Ĉiu havas malamikojn.
+9507099	Tomo havas tre ĉarman katidon.
+9630632	Mi instruas la berberan.
+9635966	Sekvafoje mi alportos martelon.
+9682575	Estis la fino de novembro.
+9710370	Kiel terura aĵo!
+9733485	Mi estas tute konvinkita pri la vereco de tio, kion Tomo diris.
+9738320	La plasta seĝo kostas malmulte.
+9748994	Ĉu vi ne divenas, kion mi faras?
+9767388	Ĉu Tomo ŝatas ĉokoladon?
+9806784	Mi denove telefonvokos vin poste.
+9857467	Ni ellitiĝis tro malfrue kaj maltrafis la trajnon.
+9860597	Kie estas la duciklo?
+9952467	Tomo estas traŭmatizita.
+10001125	Vi devos ĉiutage labori super tio.
+10012816	La vera heroo troviĝas plejparte reverse de la medalo.
+10042764	Tiu aliplaneda arbaro estas viola.
+10057426	Li estas vastaspirita.
+10066657	Pli poste denove aŭdiĝis paŝaj sonoj.
+10154583	Tomo tuj ekdormis.
+10248742	Mi ĝojas, ke vi revenis.
+10249943	Ili renkontis Marian survoje al lernejo.
+10284681	Pli bone diskuti problemon sen decidi ol decidi sen diskuti ĝin.
+10321977	Ĝojigis min renkonti vin ĉi tie.
+10336737	Mi laŭte ridis.
+10340352	Ne forgesu bone hidrati vin!
+10365714	Tiu aligatoro estas grandega!
+10367932	Tomo kaj Manjo fiksrigardas Joĉjon.
+10456304	Li faras sandviĉojn, tranĉas ilin kaj vendas ilin.
+10459233	Li ne konsentas pri la novaj reformoj.
+10506586	Li sekvos vian konsilon.
+10509704	Ruĝaj kaj brunaj folioj kovras la kortajn grundojn de la lernejo.
+10511393	Kiom estas kvardek minus dudek?
+10532783	Ĉu vi iam havis retinan disiĝon?
+10559570	Ili trovis nenian nekutiman aferon.
+10609322	Ĉu vi povus francigi tiun frazon?
+10624751	Prefere vi rapidu, aŭ vi malfruos.
+10630789	Tomo rigardis aprobe.
+10646688	Tom kondutis krude kaj altrudiĝeme.
+10664488	Mia kostumo estas griza.
+10693042	Mi kuiras, por ke mia familio manĝu bone.
+10698969	Li aĉetis al ŝi novan aŭtomobilon.
+10702250	Mi ankoraŭ memoras pri mia vojaĝo tra Eŭropo.
+10751093	Eble, Tomaso ne trinkas teon.
+10762703	La kuriozaj lanternoj, kiuj violete lumigis la marbordon, ĉirkaŭis la teejon.
+10775996	Unue li agas kiel li pensas. Tiam li parolas kiel li agas.
+10785773	La meksikanoj daŭre manĝis kokoson kun marmanĝaĵo kun ĉokolado, post kiam la plaĝa festo finiĝis.
+10785920	Al sia estro Tomo petis rajti pli frue iri hejmen.
+10814739	La Tago de Eŭropo estas festata la 9-an de majo en ĉiuj membroŝtatoj.
+10905565	Mi sentas min aventurema.
+10921627	Mi povintus kanti pli bone.
+10942423	Tomo volas lerni tabulgliti sur neĝo.
+10950858	Tomo sidis sur ŝtono.
+10981279	Tio ne estas la plej bona varianto.
+10999060	Se vi ne scias, kiel plenskribi la dek paĝojn de la eseo pri filozofio, komencu deliri, kaj vi jam vidos, kiel vi ricevos bonan noton de la profesoro.
+11003109	Neniu iam forgesos ilin.
+11024788	Tomo estas ano de loĝkooperativo.
+11048003	La verda kajto surteriĝis apud la rivero.
+11053328	Jes... ha ha ha... jes!
+11062211	"Kioma horo estas?" "Mi ne scias."
+11079467	La adreso de la retejo estis ŝanĝita.
+11091903	Kiam vivo fariĝas pli malĝoja ol morto, morto fariĝas espero.
+11092477	La terkultiveja domo estas konstruita ĉe la monteta malsupro.
+11110504	Kiam homoj diras, ke ili perdis sian koron, tio estas plejparte nur ilia menso.
+11168384	La manĝaĵo havis nekutiman guston.
+11178019	Ni neniam rajtis celebri Kristnaskon.
+11196646	Mi eĉ ne kapablas piediri, des malpli kuri.
+11221503	La gefratoj promenas sur la plaĝo.
+11236864	Tiaĵon dirus Tomo.
+11289353	Mi intencis fari tion.
+11315568	Mi ne daŭre atendos lin.
+11345484	Ĉu mi longe estis hipnotigita?
+11370156	Mi ja promesis tion, sed mi ŝanĝis mian opinion.
+11426338	Tomaso diris, ke li ne tre certas.
+11454376	Ni eĉ ne scias, kie Tomaso kreskis.
+11485635	Li estas nia filo.
+11533646	Ukrainujo reiĝis sendependa, kiam Sovet-Unio disiĝis en mil naŭcent naŭdek unu.
+11608993	Ĉu unuedzinaj viroj eksmodiĝis?
+11609729	Verdire, mi scias nenion.
+11688027	Mi opinias, ke mi povas helpi vin pri tio.
+11704980	Ĉu vi sufokiĝas?
+11707255	Doloro estas unu el malmultaj aferoj promesitaj en la vivo.
+11740176	Li proksimigis siajn lipojn al ŝiaj.
+11755573	Kion ĝi faras?
+11817373	Pro mia laboro mi ne ofte povas veni al Alĝero.
+11857036	Fek al via religio.
+11859649	Estas ni, kiuj skribu nian historion.
+11895767	Alvoku min, kiam vi estos tie.
+11919612	Kiu diris, ke malvarmas tie?
+11923496	La plimulto de homoj ne bezonas manĝi viandon.
+11953641	Ni sopiras pri li.
+11957299	Vi ellitiĝis relative malfrue.
+11974143	Tomo havas Pikaĉuan kusenon.
+11984825	Nun ĝi estas tie.
+11993690	Ŝi ankoraŭ ĉe ĉiu koncerto ludas la kanton, kiu ŝanĝis ŝian vivon.
+11995853	Kial ŝi kredas, ke mi faris tion?
+12002157	La afiŝo malfiksiĝis.
+12020710	Ĉu ankaŭ vi ne sciis?
+12026715	Tomo esploras ĝin.
+12053856	La planoj ekfloros printempe.
+12060262	Li ne estas danĝera por ni.
+12067702	Ni eklernu afablecon.
+12068941	Tomo ĉiam parolas pri Bostono.
+12079959	Tiu ĉapelo estas de vi.
+12104310	Mi maljungas la ĉevalojn.
+12109115	La elirpordo estas dekstre.
+12130829	Ili interkorespondadis dum la tuta vivo.
+12149009	Li estis ĉi tie, sed baldaŭ foriris ĉar li hastis.
+12175731	Li konstante ion maĉas.
+12223864	La paro disiĝis.
+12233984	Progresigo estis motivo labori pli streĉe.
+12288316	Restas nenio por trinki.
+12292343	Ĉu vi legas ĵurnalojn pri modo?
+12294338	Mi ne plu motorciklas.
+12318719	Ne bonas enlitiĝi kun plena stomako.
+12345270	Kiu do kredos tion!
+12351161	Tion ni ne faris por ili.
+12351307	Mi scias, kies ombrelo tiu estas.
+12363817	Ne manĝu viajn krustojn.
+12367958	Tomaso igis Marian iri unua.
+12371019	Ĉu antaŭ ol manĝi?
+12372898	Ĉu io tia akcepteblus?
+12377518	Tomo mendis kafon por si kaj kakaon por Maria.
+12379350	En mia aŭto estas skatolo por unua helpo ĉe akcidento.
+12383778	La kunloĝado de la du virinoj ŝanĝiĝas en senkompatan ludon de identeca ŝanĝiĝo.
+12423258	Mi postulas fumi.
+12430648	Ĉu oni povas al vi doni kelkajn demandojn?
+12430715	Por sia etna studo, li bezonas pli grandajn samplojn. Tio estas statistika esploro.
+12432955	Li mortis en batalo.
+12442323	Tomo prizorgis sian malsanan patrinon.
+12450280	Kafo naŭzas min.
+12497033	Ni parolu kun iu!
+12497778	Via rezonado estas malklara.
+12505741	Tomo scias, kiel rakonti ŝercon.
+12512870	Mi sciis, ke mi eble ne plu devos fari tion.
+12518582	Mia estro neniam invitis min al sia domo.
+12527293	Ne manĝu ion ajn.
+12592582	Ĉu vi ne povas vidi, ke vi ne estas bonvena ĉi tie?
+12600218	Vi pensas, ke vi konas min sufiĉe bone, ĉu ne?
+12612493	La koncerto estis tre vizitita.
+12623064	En siaj pli ekstremaj variantoj, cisgenra ideologio povas inkludi neon de la empiria realo, ke interseksaj kaj transgenraj homoj ekzistas.
+12624334	Mi volas interŝanĝi.
+12624427	Multaj en la nordo sentis, ke sklaveco estas maljusta.
+12628956	Mi havas ion interesan por diri al vi.
+12645758	La rakonto bone finiĝas.
+12655208	Iu, kiun mi ne povas elteni, pruntedonis al mi tiun libron, sufiĉe amuze.
+12671690	Kion mi povis fari por preventi tion?
+12682656	Tio malfaciligas percepton de teksto.
+12687183	Ŝi portis longan larĝan palton.
+12689177	Vi vidis min.
+12701968	Mi faros laŭeble plej multe.
+12715990	Mi ne bezonis vin.
+12716047	Onidire estas fantomoj en la domo.
+12719092	Ne al ĉiuj mi plaĉendas.
+12720695	Kondomo: akcesoraĵo de maskita seksamo.
+12724829	Ĝi estas mia preferata hobio.
+12731558	Ĝi daŭris multe pli longe, ol mi kredis, ke ĝi daŭros.
+12735376	Tio estas pripensita.
+12747603	Tio ŝajnas bezoni multan lertecon.
+12749097	Ĉu mi multe ronkas?
+12767146	Hieraŭ li estis malsana.
+12771970	Kaj ankaŭ tion oni forgesos.
+12798076	Atendu min, amikoj.
+12823885	Ni simple malstreĉu nin.
+12871592	Tomaso venis por helpi al ni.
+12876912	Ŝi donkiĥote baraktas.
+12928708	Hieraŭ, hodiaŭ kaj morgaŭ.
+12933010	Kubo volas bremsi la dolarigon de sia valuto.
+12981285	Ĵuru je la Biblio!
+12995064	Optimismo estas nepra. Oni devas koncentriĝi pri la aferoj, kiuj devos esti faritaj kaj pri kiuj oni respondecas.
+13037760	Ĉu vi volas flue paroli la tamaziĥtan?
+13048911	Tomo ne finis.
+13067971	Mi estas sociala asistanto.
+13071121	Kontaktu min laŭeble plej baldaŭ.
+13083737	Kiel trakti medimalpuriĝon, jen serioza problemo.
+13086933	Ĉu ĝi estas atestita?
+13116911	Ĉu ili havas ian sudbaratan manĝaĵon?
+13160416	La niĉo en la muro estas perfekta por instali la breton.
+13205421	Estas facile fari tion.
+13218025	Laŭ mi Tomo kulpas pri ĉio.
+13229269	Ĉiu mortos frue aŭ malfrue.
+13238853	Vi konas Tomon pli bone ol mi.
+13252015	Ĉu tio estas reala nombro?
+13270130	Tomo ŝajnas ne aŭdi nin.
+13312715	Lia mondo havas du sunojn en la purpura ĉielo.
+13435980	Tiu ulo hazarde estas trompŝtelisto.
+13458509	Liaj haroj estas bluaj.
+13466974	Lerni lingvojn estas mia ŝatokupo. Mi ne estas pagata por tio.
+13593926	Almenaŭ la luo estas malmultekosta.
+13594459	Ne ĉiuj judoj obeas la ordonojn pri koŝereco.
+13601995	Ĉu vi finis lavi viajn manojn?
+13608269	Jerry Seinfeld estas libana judo.
+13630956	Ni konkludis, ke ĉi tio estas vera rakonto.
+13721955	Lupo ululis malproksime.
+13724651	Ĉu viaj pafiloj estas sekure forŝlositaj?
+13724659	Tomo silente kontemplis en la angulo.
+13725585	Ĉu la frazo nun estas pli klara?
+13730341	Tomo ne tiom bonas, kiom li kredas.
+13734387	Mia dormoĉambro estas malpura. La via estas pura.
+13746597	Genotipa sekso, fenotipa sekso kaj socia sekso estas tri apartaj konceptoj.
+13788657	Tomo telefonis al sia edzino, ke li malfruos al la vespermanĝo.
+13788659	Muziko, libroj kaj la dancplanko estas inter la plej bonaj manieroj de la vivo por eskapi.
+13803837	Iuj vespoj atakis infanojn.
+13810837	Estas lakunoj en tiu enskribo, kiuj malfaciligas ĝian malĉifron.
+13847562	Armeo sen armeestro estas tigro sen kapo.
+13850379	Ili pene laboras.
+13853321	La koloro estas ruĝa.
+13900843	Fadilo komencis malaperadi dum longaj tempodaŭroj.
+13905017	Vi lernis, kiuj estas viaj veraj amikoj.
+13909158	Esti sentema ne signifas esti iu, kiu tro pripensas aferojn.
+13946964	Kiam mi plibonigas ĉion en mia vivo, mi plibonigas min mem.
+13991581	Tomo ne sukcesis fari tion.
+14030067	Ĉiuj venis, krom Tomo.
+14032735	Ali kisis mian manon dum la festo.
+14043393	En la tamila hundoj blekas „lol lol“.
+14069377	La Triunuo estas centra doktrino de kristanismo.
+14075389	Tomo komencis nekontroleble tremi.
+14078129	Mi tute eksplodis pro scivolo.
+14078319	Eĉ se tio estus vera, ĝi ne subtenus vian aserton.
+14088518	Aŭstrio kaj Aŭstralio estas landoj, kiuj estas tre malproksimaj unu de la alia kaj havas sufiĉe malsamajn kulturojn.
+14096966	Mi sentos min pli bone post momento.

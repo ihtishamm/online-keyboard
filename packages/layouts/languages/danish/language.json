@@ -1,0 +1,27 @@
+{
+  "slug": "danish",
+  "code": "da",
+  "order": 710,
+  "lang": "da",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Danish",
+    "native": "Dansk"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["da-easy", "da-standard"],
+  "accents": "æøåéÆØÅÉ",
+  "sample": "I dag går vi en tur i skoven og plukker blåbær.",
+  "voice": ["da-DK"],
+  "wordList": true,
+  "translate": {
+    "google": "da",
+    "bing": "da",
+    "deepl": "da"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

@@ -1,0 +1,15 @@
+{
+  "source": "iswiki.xml.bz2",
+  "pages": 39878,
+  "sentences": 660583,
+  "repeatedSentencesSkipped": 58580,
+  "tokens": 7765977,
+  "distinctWords": 453880,
+  "wordsKept": 100000,
+  "nextWordHeads": 9613,
+  "text": "is-train.txt",
+  "textSentences": 12411,
+  "textWeight": 30.89,
+  "heldOutPages": 821,
+  "heldOutSentences": 2000
+}

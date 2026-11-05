@@ -1,0 +1,26 @@
+{
+  "slug": "welsh",
+  "code": "cy",
+  "order": 750,
+  "lang": "cy",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Welsh",
+    "native": "Cymraeg"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["cy-easy", "cy-uk-extended"],
+  "accents": "âêîôûŵŷáéíóúàèìòùäëïöüÂÊÎÔÛŴŶÁÉÍÓÚÀÈÌÒÙÄËÏÖÜ",
+  "sample": "Heddiw mae'r dŵr yn oer ond mae'r tywydd yn braf ger y môr.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "cy",
+    "bing": "cy"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+767936	Tha am ballach ag ithe aran.
+767962	Bha am fear ag ithe aran.
+767993	Tha a bhean ag òl uisge an-dràsda.
+768173	Bha mi ag èisteachd ri òran glè bhòidheach an-dè.
+768196	Chan fhaca mo mhàthair am ballach air an t-sràid.
+768214	Bidh m' athair a' dèanamh biadh blàsta dhomh a-màireach.
+768242	Chan urrainn dha phiuthar ruit a bhruidhinn an-diugh.
+768249	Is toigh leis an teaghlach aige gu mòr coimhead air an telebhisean a h-uile latha.
+768894	Choinneach an neach-ionnsachaidh a' bhean sin an-uiridh.
+768902	Tòisich an neach-teagaisg ri Beurla ionnsachadh am bliadhna.
+768914	a h-aon, a dha, a tri, a ceithir, a coig, a sia, a seachd, a h-ochd, a naoi, a deug, a h-aon deag, a dha dheag, a tri deug.
+769993	Chan urrainn dhomh ga faicinn.
+770001	Dè a tha sin?
+770008	Tha e glè luath.
+770012	Tha e a' bruidhinn gu luath.
+770030	Chan eil mi a' bruidhinn gu luath.
+770436	Tha mi an dòchas gum bheil thu ga tuigsinn.
+770438	Dh'ithe am fear aran.
+770443	Trobhad an-seo 's cuidich leam.
+770451	Chaidh i a-steach anns an tacsaidh.
+770452	Thàinig mi a-mach anns an tacsaidh.
+770454	Tha mi tinn.
+770475	Am bheil thu a' coinneamh le duine an-seo?
+770489	Nuair a chaidh Màiri a-steach anns an t-seòmair, bha Jack a' sgur a bhruidhinn air ball.
+770494	Chan fheum thu a thighinn dhan oifis a dh'obair Disathairne.
+770497	Dè an aois a tha thu?
+770498	'S e nothaist a tha thu.
+770500	Bha brògan geala oirre.
+770502	Tha na laithean a' fàs nas fhaide 's nas fhaide.
+770508	Tha an t-éigh glè thiugh.
+770512	A bheil thu deich bliadhna a dh'aois?
+770513	Tha mi a' dol dhan bhùth.
+770516	Tha mi gu dòigheal.
+770518	Bha na cloinn a' cluich anns a' phàirc.
+770519	Bidh mi gu trang anns an fheasgar.
+770520	Na ruith anns an t-seòmair seo.
+770522	Tha mo bràithair anns an Astràilia an-dràsta.
+770525	Dè tha thu a' dèanamh?
+770529	Thug brathair mo mhathar preasant dha.
+770532	Thug an neach-teagaisg cus obair-dachaigh dhuinn.
+773096	Tha gaol agam ort.
+773097	Tha an t-acras orm.
+773100	A bheil am pathadh ort?
+773102	Duin an dòras, mas e do thoil e.
+773121	Chan eil an t-eagal orm idir.
+773123	Tha an cu mòr a' cur eagal orra.
+773126	Cairson a tha fearg ort?
+773140	Tha beagan Beurla aig mo mhàthair.
+773143	Halò, ciamar a tha thu, a chàraid choir?
+773146	Tha mòran Beurla agam.
+773150	Is toigh leam a bhith a' sgrìobhadh an-seo.
+773152	Am toigh leat a bhith a' leughadh Tatoeba?
+773160	Tha Beurla an cànan a tha a' fuireach 'nam chrìdhe.
+773166	Tha feum agam air do chuideachadh.
+773168	Tha mi duilich, ach feumaidh mi dol dhachaigh an-dràsta.
+773170	Dè an aois a tha e?
+773174	Dè an t-ainm a th' oirre?
+773176	Càite a bheil thu ag obair?
+773178	Dè tha thu a' deànamh an-diugh?
+773180	Dè bha iad a' deànamh an-dè?
+773188	Ann an a-màireach a bhios tu a' falbh air saor-làithean?
+773191	Tha mi uabhasach duilich seo a chluinntinn.
+773193	Cuine a bhios tu a' tighinn a dh'Alba?
+773197	Cò còmhla ris a bhios tu a' tighinn?
+773199	Chan eil an duine aig a bheil fios a-staigh.
+773205	Tha mi cinnteach gum bi i a' sein anns an eaglais a-màireach.
+773208	Tha mi a' saoilsinn gu bheil fear ann an-sin.
+773210	Tha mi a' smaoineachadh gur e deagh spòrs a bh' ann, gu dearbh!
+773214	Bha an t-iasg a' snàmh anns an uisge.
+773218	Tha i glè bhrèagha an-diugh.
+773219	Tha mi a' gabhail biadh uabhasach blasta dhachaidh.
+773225	Tìorraidh ma-thà!
+773228	Mar sin leat!
+773232	Chan eil an t-uisge ann.
+773236	Chì mi iad an-ath-sheachdain.
+773242	Na dèan cadal trom.
+773246	Chan eil no mise ag iarraidh seo fhaicinn cuideachd.
+773248	Thèid mi dhan taigh-bìdh aig leth-uair an dèidh seachd anns an fheasgar.
+773254	Tha e a' leughadh leabhraichean a-mhain fad an latha.
+773261	Tha mo theaghlach gu math, tapadh leat.
+773267	'S oidhche mhath 's inntineach a bh' innte.
+844405	A bheil fios agad, cò ise?
+844408	Tha fios agam gum bheil fios agad gum bheil fios agam.
+844423	Tha fios agam nach eil fhios agam.
+847768	Tha beagan Gàidhlig agam.
+847771	A bheil Beurla agus Gàidhlig agad?
+847774	Chan eil sinn a' fuireach ann an Alba fhathast.
+851886	Tha caileag bhòidheach anns a’ phàipear ann.
+851887	Tha an cù donn beag ann fon bhòrd sin.
+851888	An robh sibh air a’ mhonadh an-dè?
+851890	Tha an t-ìm air an aran glè mhath.
+851891	Bha ròn ann air a’ chladach.
+851892	Tha an gleann sin brèagha air latha ciùin.
+851893	Bha e uabhasach stoirmeil anns an fheasgar.
+851894	Chan eil uisge ann anns an t-sruth.
+851896	Tha teine math teth ann bhon ghual seo.
+851897	An robh e luath leis an t-seòl?
+851898	Bha sìth ann tron t-saoghal.
+851900	A bheil am bainne bhon fhiadh sin uabhasach math?
+851901	Nach eil aran ùr anns a’ bhocsa ann?
+851904	Bha an duine, leis a’ chù, cho mall air a’ chnoc.
+851905	Tha taigh ann thairis air an t-sruth.
+851906	Bha an cù anns a’ bhocsa fon bhòrd.
+851907	Tha gual ann anns an t-sruth.
+851917	A bheil thu a' smaointinn gum bheil falt donn glè bhòidheach?
+851918	Bha mi air an rathad dhan bhaile.
+851920	Tha an latha air a’ mhonadh math dhut.
+851923	Bha an làr fliuch le uisge.
+851924	Tha feuch grom ann anns an achadh.
+851926	Tha an taigh ùr faisg air an allt luath.
+851929	Nach eil iad a’ dol dhan chèilidh anns a’ bhaile?
+851975	Chan eil iasg anns an allt ann.
+851977	Tha am bòrd anns an t-seòmar sin glè shnog.
+851978	Tha mi a' smaoineachadh gum bheil uisge ann fon bhòrd.
+851983	Bha am bàta fo sheòl.
+851985	Bha ròn ann anns an uisge, agus air a’ chladach.
+851988	Tha an litir seo dhan chaillich.
+851990	Nach robh iad aig a’ mhuir tron oidhche?
+851992	Bha sgeul mun chaileig sin anns an naidheachd.
+851998	Bha slat fhada ùr ann anns a’ bhùth.
+852000	Nach robh iad ùine fhada anns a’ bhaile?
+852001	Bha an cù dubh air an fheur ris a’ ghrèin.
+852009	Bha a’ ghrian blàth anns a’ mhadainn, ach tha i fuar an-dràsda.
+852011	Bha i anns an leabaidh tron mhadainn a leughadh leabhar.
+852012	Tha a’ Ghàidhlig glè inntinneach, nach eil?
+852013	Tha an nighean ris an uinneig oir tha a’ ghrian glè bhlàth an-diugh.
+852049	’S e Diluain a tha ann an-diugh.
+852063	’S e Dimàirt a tha ann an-diugh. Tha mi a' ceannach iasgan.
+852069	’S e Didòmhnaich a bha ann an-dè.
+852071	'S e Là na Sàbaid a bha ann an-dè.
+852073	'S e Latha na Sàbaid a bh' ann an-dè.
+852078	An e Disathairne a bhios ann a-màireach?
+852081	'S e Diluain a tha ann an-diugh agus 's e Dimàirt a bhios ann a-màireach.
+852086	Dè an latha a tha ann a-rithist?
+852091	’S e Diardaoin a th’ ann, agus bidh làraidh an sgudail a’ tighinn an-diugh.
+852093	’S e Dihaoine là an sgudail ann an Sasainn.
+852099	Cha bhi an làraidh a’ tighinn a-màireach, ma-thà.
+852101	Tha mi an dòchas gum bi, oir tha am bion làn.
+852104	Dè tha sibh a' dèanamh?
+852106	Tha mi a’ leughadh leabhar mun chànain.
+852107	An robh sibh aig an taigh an-dè?
+852108	An robh thu aig an taigh an-dè?
+852110	Bha e ag obair anns an oifis a-raoir.
+852111	Cha robh mi ag obair an-dè.
+852116	Am bi sibh ag obair aig an taigh-osda a-màireach anns a' mhadainn?
+852119	Am bi thu ag obair aig an taigh-osda a-màireach anns a' mhadainn?
+852126	Tha thu trang an-dràsda, nach eil?
+852128	Tha mi trang an-dràsda.
+852131	A bheil thu trang an-dràsda?
+852133	A bheil sibh trang an-dràsda?
+852143	Tha mi trang an-dràsda, agus chan urrain dhomh a chluich còmhla riut.
+852144	Tha sinn ag obair gu trang anns an achadh an-diugh.
+852145	Bha am fear ag obair gu trang anns an achadh an-dè.
+852146	Bidh iad ag obair gu trang anns an achadh an-màireach.
+852147	Bha e ag obair gu trang anns an achadh a-raoir.
+852148	Tha mo mhac ag obair gu trang anns an achadh an-dràsda.
+852162	Tha mi uabhasach toilichte a' cluinntinn gu bheil thu ag iarraidh fuireach ann an Alba.
+852164	Tha mi toilichte a' cluinntinn gu bheil fìos agaibh, dè an t-ainm a th' oirre.
+852175	Tha mi an dòchas gu bheil an teaghlach agad gu dòigheal, a charaid.
+852181	Tha mi 'n dòchas gu bheil do theaghlach gu dòigheal, a charaid.
+852183	Tha mi 'n dòchas gu bheil do theaghlach gu math, a charaid.
+852185	Tha mi an dòchas gu bheil an teaghlach agad gu math, a charaid.
+877771	Tha an aimsir cho math sa ghabhas.
+877831	Tha fear dhuinn ceàrr.
+877864	Am faca tu cangarù riamh?
+877871	Am faca sibh cangarù riamh?
+877882	A bheil mapa agaibh?
+877929	Tha an sgeul seo fada nas inntinniche na am fear ud.
+877939	Bha mi nam oileanach aig an àm sin.
+877946	Taro, tha an dìnnear deiseil.
+877948	Tha mòran leabhraichean eachdraidh aige.
+877956	Tha an caisteal air taobh eile na h-aibhne.
+877961	Tha biadh gu leòr againn.
+877972	Feumaidh e dol a Shasainn san t-samhradh.
+877974	Ciamar a tha sibh?
+877976	Ciamar a tha thu?
+877984	Feumaidh i dol a Shasainn san t-samhradh.
+877993	Chaochail e an-dè.
+877999	Tha feum agaibh air.
+878007	Ist is èisd.
+878347	Tha mi à Siakoku.
+878353	Na dèan dà rud aig an aon àm.
+878387	Chaochail Taro o chionn dà bhliadhna.
+878421	Tha fear aig an doras a tha ag iarraidh bruidhinn riut.
+878423	'S ann an-dè a cheannaich mi carbaid ann an Doire.
+878426	Cò leis a tha am biadh seo?
+878429	Gabhaidh mi fras a h-uile latha.
+878430	A bheil Beurla aige?
+878431	Cha robh fios agam gun robh thu cho math air còcaireachd.
+878809	Tha dà bhrathair aige. Tha fear dhiubh a' fuireach ann an Osaka agus am fear eile ann an Kobe.
+878957	Cha stad fiù 's aon tacsi.
+878970	Carson a tha thu nad aonar?
+878977	'S e ainm fìona a th' ann am "Madeira".
+878982	Chan eil mi ga thuigsinn.
+879032	Ràinig sinn an stèisean aig sia uairean.
+879035	'S tusa gràdh mo bheatha.
+879062	A bheil Beurla agad?
+879064	'S e bean uasal a th' innte.
+879067	B' àbhaist dhomh leann òl.
+879069	"Chan fhaod tu dol a-mach an-dràsta." "Carson nach faod?"
+879158	Chan eil càil fhios agam air dè a thachair.
+879203	Bu toil leam a coinneachadh.
+879552	Stad e faisg air cathair Thòmais.
+879554	Stad e ri taobh cathair Thòmais.
+880114	Cha chreid mi gu bheil Fraingis aice.
+880117	Carson nach eil thu ag èisteachd rium?
+880127	Seall air an taigh sin.
+880294	Bha e cho bochd nach b' urrainn dha aran a cheannach.
+880296	Innis dhomh dè ni thu ann an Shounan.
+882027	Tha i a' teagaisg na Fraingis dhuinn.
+882029	Càite bheil Iain a' fuireach?
+882858	Chan eil mi air a choinneachadh ach turas a-mhàin.
+883328	Cha bu chòir dhuibh dol a-mach.
+883331	'S e DVD a th' ann.
+884263	Tha smòcadh toirmisgte anns na taighean bidh ann an California.
+885826	Tha mi a' dol dhan leabaidh.
+885830	Tha mo phiuthar ainmeil.
+885831	A bheil e cho teth a h-uile latha?
+894447	Is caomh leam cànanan!
+894450	Is toigh leam cànanan!
+894452	Tha cànanan a' còrdadh rium!
+901210	"'S toil leatha ceòl." "'S toil is leamsa."
+901211	"'S caomh leatha ceòl." "'S caomh is leamsa."
+901225	Bha a chainnt iomchaidh san t-suidheachadh.
+901251	Shuidh e sìos gus nobhail a leughadh.
+901314	A Tharo, tha an dìnnear deiseil.
+901371	Tha mòran leabhraichean air eachdraidh aige.
+1182014	Chan eil e math air seinn.
+1182021	Dè tha ceàrr leis?
+1182029	Chan eil fhios agam dè seòrsa duine a th' ann.
+1182033	Tha mi ag aontachadh ribh.
+1186098	Cia mheud truinnseir a th' againn?
+1187082	'S ann à Kyoto a tha mi.
+1514028	Am faod mi faighneachd dè an aois a tha sibh?
+1514030	Am faod mi faighneachd dè an aois a tha thu?
+1514032	Chaidh cron mòr a dhèanamh air a' chàr agam san tubaist.
+1514038	Am bi thu daonnan trang?
+1514039	Am bi sibh daonnan trang?
+1514042	Thuirt Juliana dhomh gur ann à São Paulo a tha thu.
+1514043	Thuirt Juliana dhomh gur ann à São Paulo a tha sibh.
+1514051	Tha iomadh leòmhainn ann an Afraga.
+1514054	Chan e mise as coireach.
+1514056	Tha mi air mo sheòladh post-dealain a dhìochuimhneachadh.
+1514060	Nach toir thu dhomh glainne bainne a bharrachd?
+1514061	Innis dhomh an t-ainm a tha air an naoidheamh mìos.
+1514062	Innisibh dhomh an t-ainm a tha air an naoidheamh mìos.
+1514139	Tha agam ri stampaichean a cheannach.
+1514141	Bhruidhinn air ceòl.
+1514143	Tha mi ag obair ann am banca.
+1514146	Dh'fhosgail mi am bogsa. Bha e falamh.
+1514154	Tha feum agam air stampa.
+1514157	Tha mi a' feitheamh air an trèan.
+1514160	Cha toil leam bailtean mòra.
+1514166	Tha an dèideag agam briste.
+1514172	Rinn i an aon mearachd a-rithist.
+1514179	Tha na leabhraichean seo gu math sean.
+1514187	Cha b' urrainn dhomh cadal air sgàth na fuaim.
+1515504	Tha cat geal aice.
+1515507	Na dèan cadal leis an t-solas air.
+1515509	Am bruidhinnear an Fhraingis ann an Canada?
+1515904	Tha mi an dùil a thighinn.
+1515906	Cha chreid mi gun obraich e.
+1515909	Cha chreid mi gu bheil e ag obair.
+1515910	Cha chreid mi gu bheil i ag obair.
+1515911	Cha chreid mi gun obraich i.
+1515915	Cha bhi aon cànan a-mhàin gu leòr tuilleadh.
+1515916	A bheil àite ann airson daoine a bharrachd?
+1515918	"Dè tha thu ag iarraidh?" "Tha mi ag iarraidh cù."
+1515919	Tha mi ag iarraidh fuireach an-seo.
+1515921	Tha iad ag ithe nan ùbhlan aca.
+1515924	Tha Nara cho sean ri Kyoto.
+1515926	Tha mi air an iuchair agam a chall.
+1515927	A bheil fios agad càite bheil tùr Tokyo?
+1516054	Thachair e bho chionn barrachd air trì latha.
+1516057	Rinn i an obair gun dragh sam bith.
+1516062	Tha thu fortanach gu bheil càirdean cho math agad.
+1516064	Tha sibh fortanach gu bheil càirdean cho math agaibh.
+1516066	'S ann à Sasainn a tha e.
+1516071	Dè rinn thu leis an leabhar agam?
+1516300	Tha e glè fhuar san t-seòmar seo, nach eil?
+1516301	Tha am boirreanach ceart.
+1516303	Cò tha a' chailleach ud?
+1516310	Chan eil mi ach air dà no trì deochannan òl.
+1516311	An e balach no nighean a th' ann?
+1516314	Càite an do lorg thu an rud neònach seo?
+1516324	Tha mi duilich.
+1516327	Tha coltas brònach ort.
+1516329	Tha an t-uabhas de dhaoine anns a' phàirc.
+1516337	Càite am bi sinn a' dol a-nochd?
+1516347	Rugadh mi ann an Osaka.
+1516353	Bu mhath leam sin fheuchainn.
+1516364	Chan eil airgead sam bith agad.
+1516373	Cuir stampa air a' phasgan agus chuir anns a' phost e.
+1516374	Chunnaic mi reul an-diugh.
+1516375	Cha robh mi trang an-dè.
+1516376	Nì mi rudeigin.
+1516379	Chaill e a h-uile rud a bh' aige.
+1516381	Càite an do cheannaich thu na brogan seo?
+1516395	Nach robh fhios agad gun do shiubhail e bho chionn mu dà bhliadhna?
+1516396	Tha a falt fada.
+1516397	Aon latha, thachair i le madadh-allaidh anns a' choille.
+1516515	'S ann agamsa a tha am fear dubh.
+1516517	Chaidh e thall thairis bho chionn dà bhliadhna.
+1516518	A bheil Gearmailtis agaibh?
+1516525	Chuala mi òran breagha an-dè.
+1516526	Seo an rothair agam.
+1516532	B' àbhaist dha leann òl.
+1516533	B' àbhaist dhi leann òl.
+1516534	B' àbhaist dhuibh leann òl.
+1516535	Carson nach èist thu rium?
+1516537	Seall air an taigh ud.
+1516539	Cha bu chòir dhut dol a-mach.
+1516546	A bheil thu ag iarraidh siùcar?
+1516582	Chòrd am pàrtaidh glan le Tòmas
+1516594	Na gabhaibh dragh!
+1516599	Halò, a h-uile duine.
+1516655	Carson a thèid daoine don taigh-dealbh?
+1516657	Nì mi m' obair-dachaigh às dèidh dhomh coimhead air an telebhisean.
+1525323	Feumaidh mi mo mhàthair a chuideachadh.
+1525324	Feuch a-rithist e.
+1525326	Feuchaibh a-rithist e.
+1525328	Tha a mhac aig a' cholaiste a-nis.
+1525329	Tillidh e ro cheann trì uair a thìde.
+1525534	Dè rinn thu leis a' chàr ud?
+1525542	Seo a bheachd.
+1526162	Tha e coltach ri athair.
+1526172	B' e Janet a bhuannaich a' chiad duais.
+1526205	Fàilte gu Tatoeba.
+1526225	Tha cat is cù agam. Tha an cat dubh agus tha an cù geal.
+1526243	Bha e sgoinneil. Chaidh mi a Kyoto.
+1527808	Nach robh fhios agaibh gun do shiubhail e bho chionn mu dà bhliadhna?
+1527883	Tha falt fada oirre.
+1527885	Chaidh e thall thairis an-uiridh.
+1527902	Cò tha a' chailleach sin?
+1528310	Mharbh Betty i.
+1529508	Cheannaich mi carbaid ann an Doire an-dè.
+1533108	Tha Crìosd air èiridh!
+1535616	Tha seo doirbh.
+1535618	Tha e fuar an-diugh!
+1607562	Tha mi 'n dòchas gu bheil thu gu math.
+1607588	Tha agam ri fear a cheannaich a-màireach.
+1607597	Tha feum agam air rothair ùir.
+1677625	'S beag orm an coltas sin!
+1793439	Tha mi ag iarraidh rudeigin òl.
+1959799	Gabh mo leisgeul.
+1959801	Tha thu gam thuigsinn.
+2345916	Am bheil do mhàthair a-staigh?
+2422744	'S fìor toil le mo mhàthair ceòl.
+2425975	Ar n-Athair a tha air nèamh, Gu naomhaichear d'ainm. Thigeadh do rìoghachd. Dèanar do thoil air an talamh, mar a nìthear air nèamh. Tabhair dhuinn an-diugh ar n-aran làitheil. Agus maith dhuinn ar fiachan, amhail a mhaitheas sinne dar luchd-fiach. Agus na leig ann am buaireadh sinn; ach saor sinn o olc
+2714646	Tha eagal orm.
+2784340	Bu mhath leam rudeigin òl.
+2784766	Rinn e an obair gun dragh sam bith.
+2801290	An robh thu ann?
+2801293	An robh sibh ann?
+2843278	Tha an latha fuar.
+2843283	Tha an teine teth.
+2890669	'S toil leam sneachd.
+2890670	'S toil leis sneachd.
+2890671	'S toil le Màiri sneachd.
+2987680	Tha an taigh mòr.
+2989016	Tha am fear àrd.
+3047423	Tha na h-eòin a' seinn.
+3077658	Tha mi leisg.
+3077659	Tha an là brèagha.
+3077661	Tha mi ag obair.
+3077663	Tha mi ag obair an seo.
+3077667	Tha mi ag ithe.
+3077674	Tha mi ag ithe an seo.
+3077675	Tha mi ag ithe ubhal.
+3077685	Tha mi ag òl.
+3077690	Tha mi ag òl uisge anns an cidsin.
+3081383	Tha dà chat agam.
+3085198	Tha a' chaileag bòidheach.
+3092444	Chan eil mi a' seinn.
+3092446	Tha am faclair mòr.
+3092449	Tha am faclair beag.
+3094967	Tha mi glè sgìth.
+3095086	Tha e glè fhuar an-diugh.
+3095097	Nach eil thu toilichte?
+3095219	Cha robh thu sgìth.
+3095220	Bha thu sgìth.
+3095222	Nach robh thu sgìth?
+3095223	An robh thu sgìth?
+3095233	Bha mi glè sgìth a-raoir.
+3095236	Bha mi glè sgìth an-diugh.
+3117166	Tha i a' leughadh.
+3179112	Tha e meadhan là.
+3254444	Tha mi ag iarraidh don t-Suain.
+3254450	Tha mi ag iarraidh dol do Lunnainn.
+3254452	Càite bheil a' Chòrn?
+3254454	Tha coimpiutair agam.
+3324255	Tha mis' ag iarraidh uisge teth.
+3383651	Bha an taigh-òsta seo glè fhaisg air an loch.
+3383652	Tha an taigh-òsta sin glè fhaisg air an loch.
+3383653	Tha an taigh-òsta seo glè fhaisg air an loch.
+3385310	Chan eil mo charaid a' cleachdadh bainne.
+3454994	Cò tha Pedro?
+3456316	'S toigh leam ithe.
+3456328	Ruigidh mi air a' 23mh dhen Chèitean.
+3475953	Tha mi a' leughadh leabhar.
+3475963	Is caileag glè bhòidheach Heather.
+3475968	Bha iongnadh air Eamag.
+3475977	Bha Eamag ag èisteachd ri ceòl.
+3475991	Chan eil iad a’ cuideachadh.
+3476006	Glac iad Tom.
+3476009	Tha iad a’ bruidhinn.
+3476011	Dùin an doras sin.
+3561602	Tha mi ag èisteachd air an òran seo.
+3573389	Dè an uair a tha e a’ tighinn?
+3573509	B’fheàrr leam a bhith a’ siubhal ‘nam aonar.
+3573537	Tha am bainne nas fheàrr na am bùrn.
+3573545	Is fheàrr dhut falbh.
+3577547	Aire air an rathad!
+3587359	Tha e a' nighe a' char.
+3605536	Tha cuimhn’ agam air an-dràsda.
+3614521	'S dòcha leam gum bi turadh ann.
+3663860	Tha eileanan anns a' mhuir.
+3677886	Feuchaidh mi Beurla ionnsachadh.
+3691878	Faodaidh tu falbh a-nis.
+3752706	Tha an taigh beag.
+3782706	An tèid agaibh air tadhal oirnn?
+3803724	Chan eil mi ag iarraidh dol dhan sgoil.
+3807632	Tha an taigh-beag beag.
+3807634	Bhìd an broc an gille.
+3807648	Tha taigh beag againn.
+3807675	Tha e mar chù a’ mùin air an t-sneachd.
+3817837	Dé do chor?
+3836270	Dè an dath as fheàrr leibh?
+3836361	Dè an diofar a tha eadar Calum agus Màiri?
+3838421	’S fheàrr leam cofaidh.
+3838441	Tha an t-iasg beò a’ snàmh fon uisge.
+3838480	Chunnaic mi e le m’ shùilean fhèin.
+3838490	Chaidh e a-null thairis.
+3872513	Tha còig bhò anns a’ bhaile bheag.
+3872518	Tha fìon-dhearc agad.
+4000294	A bheil e ag òl cofaidh?
+4000306	A bheil thu ag èisteachd ri ceòl?
+4000314	Chruthaich Dia thu.
+4000315	Chruthaich Dia mi.
+4000316	Chruthaich Dia i.
+4000323	Tha mi a’ dhèanamh m’ obair-dachaigh.
+4001333	Tha mi ag òl an cofaidh.
+4001336	Tha i ag òl an t-uisge.
+4001342	Tha mi ag ionnsachadh Gàidhlig.
+4001441	’S urrainn dhomh snàmh.
+4001445	’S urrainn dhomh leum.
+4046721	Bidh mi fadalach.
+4185187	Chi mi ann sibh.
+4185189	Am bi sibh ann?
+4188989	Tha i gaothach an-dràsda.
+4188994	Tha i grianach an-dràsda
+4188999	Tha i sgòthach an-duigh.
+4189002	Tha là brèagha ann.
+4189004	Tha droch shìde ann
+4189006	Tha deagh shìde ann.
+4189009	Ciamar a tha an t-sìde ?
+4189353	dè an saoghal a tha agad?
+4189358	co-là breith sona dhut!
+4189365	’S e do bheatha.
+4189370	'S math a rinn thu!
+4189378	Tha mi gleamach
+4192184	Tha mi sa ghàrradh.
+4192638	Tha seo sgoinneil!
+4192643	Am faca sibh seo fhathast?
+4192647	An do leugh thu seo fhathast?
+4192650	Tha seo cudromach.
+4192658	Tha seo èibhinn.
+4192663	Tha an deireadh-sheachdain ann.
+4192667	Seall far a bheil mise an-diugh!
+4195562	abair dealbh breagha!
+4195571	Bidh mi trang a-màireach.
+4195574	Tha mi ag ionnsachadh na Gàidhlig.
+4195579	Chì mi a-rithist thu.
+4195586	Tuigidh mi sin!
+4195591	Tha mi agad a-nis.
+4201827	Tha sin ceart.
+4201831	Tha e ceart agad.
+4206994	Tha e gle dorcha.
+4207027	Tha mi gu math!
+4209520	Gabh math an latha.
+4209734	Tha sin uabhasach math.
+4209737	Tha sin math gu leòr.
+4209738	Tha sin nas fheàrr.
+4209749	Chan eil e ceart.
+4209750	Tha thu uabhasach laghach .
+4209756	A bheil naidheachd agad dhomh?
+4217735	Tha mi ag iarraidh dotair fhaicinn.
+4217757	Tha mi ro thrang aig m' obair.
+4217776	An gabh thu sin?
+4217783	Bheil thu cinnteach?
+4218007	Càite a bheil thu fhèin ag obair?
+4218239	A bheil fada bho thòisich thu san obair an sin?
+4218261	Bheil an obair a' còrdadh riut?
+4223922	Is mise Jack.
+4224105	Bha iad cho dòigheil còmhla.
+4224112	Càit' an robh i a' dol?
+4224120	Cuiridh mise fòn thuice a-nochd fhèin.
+4224134	An urrainn dhut snàmh?
+4224168	Càit a bheil thu a’ fuireach?
+4224759	Rinn mi obair anns a' ghàrradh.
+4224776	Tha iasg math dhut.
+4234246	Bha latha math ann.
+4844565	Mur h-eil a-nist, cuine?
+5217659	'S e Burj Khalifa an togalach as airde san t-saoghal.
+5223275	Carson nach urrainn dhut mìneachadh dé tha thu a' déanamh?
+5223277	Bha mi trang a' còcaireachd.
+5223655	Do bheatha dhan duthaich!
+5223658	Ur beatha dhan duthaich!
+5223667	Tha fhios gu bheil.
+5223670	Nach eil fhios gu bheil.
+5223814	Feumaidh tu dol còmhla ri Tòmas an-dràsta.
+5712511	Dùin do bheul agus èisd!
+5712512	Dùin do ghoba agus èisd!
+5732675	A bheil thu ag iarraidh leann?
+5745477	Càite a bheil do ghùnan sìod?
+5745505	Cha do dh'fhàg Tàmas Astràilia.
+5745509	Tha an t-uisge ann.
+5745515	B' urrainn dhomh cuir Spànntis air an dàn sin.
+5745537	Chan eil guth ri ràdh.
+5745543	Thòisich mi air ionnsachadh dha-rìribh san Dàmhair.
+5745595	An urrainn dhuibh bruidhinn nas maille?
+5745597	Cha do thuig mi sin.
+5745598	Chan eil ach beagan Gàidhlig agam.
+5745602	Dè a' phrìs?
+5745604	Dè a' phrìs a tha seo?
+5745606	Dè na tha seo?
+5745616	Mo mhallachd aig na caoraich mhòr.
+5745619	Tha trì fichead bliadhna 's a trì on dh'fhàg mi Dùthaich 'IcAoidh.
+5745632	Thig an t-acras na 's tric no aon-uair.
+5745638	Tha fuil ghointe nad cheann.
+5745644	Triùir a thig gun iarraidh, gaol, èud agus eagal.
+5745650	Tionailidh maoin, maoin, agus tionailidh fiachan, fiachan.
+5745654	Tha e a-nis air slighe na fìrinn.
+5745656	Dèan math an aghaidh 'n uilc.
+5745659	Ch' an fhuiling an onair chùd.
+5745662	Nach gorm na cnuic a tha fada bhuainn.
+5745673	Chan eil saoigh gun choimheas.
+5745677	Breac à linne, slat à coille ‘s fiadh à fìreach - mèirle às nach do ghabh Gàidheal a-riamh nàire.
+5745682	Cha bhi 'm bochd soghail, saibhir.
+5745685	'S fheàrr cinnteach na caillteach.
+5745690	Air rèir do mheas ort fhèin 's ann a mheasas càch thu.
+5745693	Is fheàrr Gàidhlig bhriste na Gàidhlig sa chiste.
+5745696	Sheideadh e na h-adharcan de ghobhar.
+5745698	Cha shoirbh triubhas a chur air cat.
+5745700	Is buaine bladh nas saoghal.
+5745703	Is buaine na gach ni 'n naire.
+5745705	Am mac mar an t-athair.
+5745710	Buillean an-diugh, tuiream a-màireach.
+5745718	’S cha tèid a glòir air chall, dh’aindeoin gò is mì-run mòr nan Gall.
+5745721	Is i Gàidhlig an aon chànain am beul nam bàrd ’s nan èisg.
+5748831	Cha do cheannaich mi an leabhar seo.
+5748835	Chan eil an t-sìde cho math an-diugh 's a bha e an-dé.
+5748839	Tha mi eòlach air na h-oileanaich a tha seo.
+5749180	Tha esan na dheagh shaor.
+5749902	Chan eil ach beagan Fraingis agam.
+5749904	Chan eil Fraingis agam.
+5749908	Chan eil ach beagan Gàidhlig na h-Èireann agam.
+5749912	A bheil Gàidhlig na h-Èireann agad?
+5749913	A bheil Gàidhlig na h-Èireann agaibh?
+5749915	Cha chreid mi mo chluasan.
+5749922	Thoir pòg dhomh.
+5749963	Tha Tàmas math air an t-snàmh.
+5749967	Cha b' urrainn dha nas fheàrr a dhèanamh.
+5749969	Tha Tàmas nas àirde na Màiri.
+5749973	Cha do rinn e turadh.
+5749977	Tha mi nam shaor.
+5749979	'S e saor a th' annam.
+5751042	Bliadhna math ùr!
+5751043	Bliadhn' ùr math!
+5751059	Am faca tu mo leannan?
+5751261	Choinnich Tàmas ri Màiri ann an 1972.
+5751277	Bha iad a' bruidhinn mu do dhèidhinn.
+5751663	Tha gu leòr agam.
+5751664	Bha gu leòr agaibh.
+5751666	Bidh gu leòr aice.
+5751668	Biodh gu leòr aig Tàmas.
+5751670	Bithidh do thoil ri dhèanamh.
+5751674	Tha mise cho sgìth ri cù!
+5751677	Mo ghaoil air do dhà shùil.
+5751678	'S ann do Dhia a bhuineas slàinte.
+5751680	Mo mhallachd aca!
+5751682	Mo mhallachd aig Tàmas!
+5751704	Tha gu leòr aig Tàmas ri ràdh.
+5751710	Tha Tàmas 'n dùil gur e.
+5751727	Feumaidh mi falbh.
+5751731	Bha Tàmas an dùil gun robh Màiri gu sunndach.
+5751733	Thig gun dàil.
+5751737	Tha mi coma.
+5751746	'S bhòidheach an latha.
+5751747	Suidh aig ceann a' bhùird.
+5751759	Rinn mi mo chasan.
+5751776	Rinn Tàmas a chasan.
+5751804	Thachair e an-uiridh.
+5751815	Fàilte romhad chun dùthaich.
+5751821	Fàilte romhaibh gu dùthaich.
+5751824	Fàilte romhaibh chun dùthaich.
+5751829	Tha iad a’ bruidhinn ri chèile.
+5751833	Tha Tàmas agus Màiri a’ bruidhinn ri chèile.
+5751835	Tha i glè fhuar an-diugh.
+5751894	Chan fheum mi falbh.
+5751896	Chan eil feum aig Tàmas falbh.
+5751902	A Thàmais, fuirich san t-sèithear!
+5752892	S' e Èirisgeach a th' ann an Tàmas.
+5752894	Tha mi toilichte ur coinneachadh, a Thàmais.
+5752904	Tha mi toilichte do choinneachadh, a Thàmais.
+5753121	Carson nach eil sibh ag éisteachd?
+5753161	Rugadh mise ann an Osaka.
+5754179	'S ann mar sin a bha e riamh.
+5754189	Càit an deach sin an déidh sin?
+5754202	Tha mi an dòchas gu bheil fios aig a h-uile duine dé tha seo a' ciallachadh.
+5754212	Cheannaich mi leabhar an-dé.
+5754290	A bheil fón-laimh agad?
+5754301	Thoir dhomh an iris, mas e do thoil e.
+5754977	Chan eil Frangais agamsa.
+5760010	'S e Èirisgeach a bh' ann am Màiri.
+5765322	Thuirt Tòmas rium sa Fhraingis, "Chunnaic Ailis Màiri a-bhòin-dè."
+5765324	Thuirt Tòmas rium sa Fhraingis gun chunnaic Ailis Màiri a-bhòin-dè.
+5765330	Chuir Tòmas ceist orm, "Am faca Ailis Màiri a-bhòin-dè?"
+5765333	Chuir Tòmas ceist orm, "Nach fhaca Ailis Màiri a-bhòin-dè?"
+5765336	Tha Tòmas a' cur ceist orm, "Carson a chunnaic Ailis Màiri a-bhòin-dè?"
+5765341	Bheir Tòmas rium, "Chan fhaca Ailis Màiri a-bhòin-dè."
+5765415	Tapadh leibh airson am fiosrachadh.
+5765417	Bu toil leam gun cuiridh sibh m' ainm dhan stòr-data agaibh airson na cùrsa.
+5765538	Nach eil Tòmas oirre fhaicinn?
+5765540	Cha bhi Tòmas oirnn fhaicinn.
+5765543	An robh Tòmas ort fhaicinn an t-seachdain a chaidh?
+5765547	Tha Tòmas ag ràdh gu bheil e oirbh fhaicinn.
+5765549	'S mise Sasha.
+5765550	Halò, 's mise Màiri. Dè an t-ainm a tha ort?
+5765551	Halò, 's mise Tòmas. Dè an t-ainm a tha ort?
+5765553	Gabhaibh mo leisgeul, dè an t-ainm a tha ort?
+5765555	Gabh mo leisceul, dè an t-ainm a tha ort?
+5768318	Nach robh aice ach còig notaichen?
+5768332	Chan òl mise càil.
+5768335	Òlaidh ise fìon dearg.
+5768338	Cha bhi Tòmas sgìth.
+5768343	Am bi Tòmas a' dol dhan clas Fraingis?
+5768352	Cha bhiodh Tòmas gu sunndach.
+5768363	Chuir ise litir dhomh.
+5768367	Bha an fhianais nam aghaidh.
+5768374	Tha an leabhar aige dearg.
+5768376	Tha an leabhar aice dearg.
+5768377	Tha mi ann an Hong Kong an-dràsta.
+5768431	Is e clas soirbh a bidh ann? Chan e, is e clas as doirbh a tha ann!
+5768459	Cha bhiodh Tòmas mì-toilichte oirre.
+5768562	An do thuit Tòmas a-bhàn air Màiri?
+5768570	An do thuit Tòmas ann an gaol le Màiri?
+5768579	An do ghabh Tòmas gaol air Màiri?
+5769068	Is neònach leam gu bheil Tòmas ag ionnsachadh Fraingis.
+5769078	Is neònach leam nach do dh'ionnsaich Tòmas an cànan a tha aig a h-uile duine.
+5782606	Càite bheil an t-aran?
+5809797	"Tha seinn annam," thuirt Tòmas.
+5809799	Chan eil òran na bhràthar.
+5809803	Cha dèan e feum.
+5809805	Chan eil feum annad.
+5809806	Is beag feum a tha ort.
+5809808	'S e am feum a thug oirnn falbh.
+5810595	Chan eil òran ann am bràthair Thòmais.
+5810634	Tha sràdag ann an Tòmas.
+5810637	Chan eil casan ann.
+5881638	Thig Tòmas a dh'Astràilia an-ath-bhliadhna.
+5881640	Bheir Tòmas dhuinn a-màireach e.
+5881642	Bheir Tòmas do Mhàiri a-màireach e.
+5881644	Cò a nì seo?
+5881646	Dè a dh'òl Tòmas?
+5881647	'S ann tioram a bha an latha.
+5881652	'S ann dà mhìos air ais a thòisich Tòmas ag ionnsachadh an Fhraingis.
+5881653	'B ann o chionn dà mhìos a thòisich Tòmas ag ionnsachadh na Fraingis.
+5881655	Gheall Tòmas gun tilleadh e a dh'aithghearr.
+5881671	Bu toigh leotha m' fhaicinn.
+5881674	Gheall mi gun tillinn a dh'aithghearr.
+5881682	'S beag air Tòmas an ceannach.
+5881688	Bha Tòmas ri m' thaobh fad an latha.
+5881698	Am bu toil leibh ar faicinn an-diugh?
+5881700	'S aithne dhomh Tòmas.
+5881701	Is leamsa an eilean ud.
+5881703	Is leamsa an eilean ud thall.
+5881704	Tha Tòmas a' dol suas an staidhre.
+5881706	Tha Tòmas a' dol sìos an staidhre.
+5881708	Tha Tòmas a' dol a-nìos an staidhre.
+5881709	Tha Tòmas a' dol a-nuas an staidhre.
+5881710	Tha dùil aig Tòmas mo phòsadh, ach chan eil agam ris a phòsadh.
+5881714	Bha dùil aig Tòmas Màiri a phòsadh, ach cha robh aice ris a phòsadh agus cha do phòs.
+5881716	Am bu toil le Tòmas Màiri a phòsadh?
+5881720	Bhithinn toilichte do chuideachadh.
+5881722	Bhithinn toilichte ur cuideachadh.
+5881724	B' àbhaist dhomh a dhol a dh'Uibhist as t-samhraidh.
+5881727	B' àbhaist do Thòmas a dhol a dh'Astràilia as t-samhraidh.
+5881731	—Am faod dhomh an leabhar seo a cheannach? —Faodaidh.
+5881735	—Am bu toil leat Màiri a phòsadh? —Bu toil.
+5881738	—An aithne dhut Tòmas? —Chan aithne.
+5881740	—An aithne dhuibh Tòmas? —Chan aithne.
+5881743	—Am bu chòir dhomh sin a dhèanamh? —Cha bu choir.
+5881755	—An lugha ort Tòmas? —Cha lugha idir, tha gràdh agam air!
+5881761	Cò nach eil airson Gàidhlig a bhruidhinn?
+5881766	Cò nach eil airson Fraingis a bhruidhinn?
+5881780	Cuin nach robh Tòmas sàbhailte?
+5881784	Càite a bhithinn a' dol? Chan innsidh mi dhut!
+5881790	Cà bhithinn a' dol? Chan innsidh mi dhut!
+5881851	Meal do naidheachd.
+5881852	Meal ur naidheachd.
+5881853	—Dè do chor? —Cor math.
+5881855	—Dè do chor? —Deagh chor. —'S math sin.
+5881857	—Dè ur cor? —Droch chor. —Nach bochd sin.
+5881866	Bidh àite-fuirich a' dhìth air Tòmas.
+5881869	Tha dìth àite-fuirich air Tòmas.
+5881873	Tha feum aig Tòmas air àite-fuirich.
+5881881	'S toigh le Tòmas bàrdachd a dhèanamh.
+5881884	—An toigh leat bàrdachd a dhèanamh? —'S toigh.
+5881886	A bheil fios aig duine dè thachair?
+5881888	Tha mòran obair ri dhèanamh.
+5881889	Tha mòran obair ga dhèanamh.
+5881890	"Am faod thu an doras a dhùnadh?" "Faodaidh tusa."
+5881892	"An dùin thu an doras?" "Cha dùin."
+5881893	Thòisich Tòmas ag ionnsachadh na Fraingis o choinn trì bliadhna.
+5881894	Thòisich Tòmas ag ionnsachadh na Fraingis trì bliadhna air ais.
+5881896	Thòisich Tòmas ag ionnsachadh na Fraingis faisg air trì bliadhna air ais.
+5882288	"Cò dhibh a rinn seo?" "Cha mhi."
+5882300	"Cò agaibh a rinn seo?" "Cha mhi."
+5882306	"Cò leis a tha an leabhar?" "'S e le Tòmas."
+5882317	Carson nach mhàir Fraingis anns an dùthaich seo?
+5882328	Innsibh dhuinn cò às a thàining sibh.
+5882343	Saoil gun innsidh sibh dhuinn cò as a thàining sibh.
+5882353	Carson a thuirt thu gum bu choir dhomh Fraingis ionnsachadh?
+5882389	"Nach can tusa gun robh mi ceart gu leòr?" "Canaidh."
+5882408	Feuchaidh mi an ceist seo fhreagairt ma dh'fhaodas mi.
+5882415	Dh'iarr mi oirbhse sguir dheth.
+5882428	Bha Tòmas air Fraingis ionnsachadh.
+5882435	"An tigeadh tu a dh'Astràilia?" "Thigeadh gu dearbh."
+5882438	"An tigeadh tu do Bhoston?" "Cha tigeadh."
+5883769	"An òl thu fìon?" "Òlaidh."
+5883773	"An òl thu am fìon?" "Chan òl."
+5883789	Tha dithis bhalaich is triùir nigheanan aig Tòmas.
+5883794	Tha balach agus nighean aig Tòmas.
+5883796	Tha triùir bhalaich agus nighean aig Tòmas.
+5883800	Tha nighean agus dithis bhalach aig Tòmas agus Màiri.
+5883802	Tha nighean agus triùir bhalaich aig Tòmas agus Màiri.
+5883803	Tha nighean agus balach aig Tòmas agus Màiri.
+5883805	Phòs nighean Thòmais balach Mhàiri.
+5883810	Tha clann aig Tòmas.
+5883819	Tha triùir chloinne aig Tòmas.
+5883822	Tha dithis chloinne aig Tòmas.
+5883826	Tha obair aig Tòmas.
+5883829	Tha Tòmas ag obair.
+5883837	Thòisich Tòmas obair.
+5883842	Bidh Tòmas ag obair.
+5883867	Bha Tòmas ag obair.
+5883882	Tha sinn nar oileanaich.
+5883886	Tha mi nam oileanach.
+5883891	A bheil sibh nur oileanaich?
+5883895	Rinn na h-oileanaich gàire.
+5883897	Dh'fhàg na h-oileanaich.
+5883906	Tha na h-oileanaich seo nan Coirèanaich.
+5883914	Tha mòran oileanaich aca.
+5883920	'S e oileanaich a tha annainn uile.
+5883939	'S e oileanaich a tha ann an dithis dhinn.
+5883944	Cà bheil an t-oileanach?
+5884118	Bu chuimhne leam far an do thogadh mi.
+5884120	Bu chuimhne leam far na thogadh mi.
+5884124	Is coma leam cofaidh.
+5884125	Is coma leam uighean.
+5884130	Is coma leis mi.
+5884132	Cha robh duine am bu coma le Tòmas.
+5884140	Tha cuimhne mhath agam air.
+5884146	Cha chuimhne leam.
+5884148	A bheil cuimhne agad oirnn?
+5884174	Is cuimhne leam mòran rudan.
+5884177	Is cuimhne leam an duine sin.
+5884185	Gura math a thèid leat!
+5884186	Gura math a thèid leibh.
+5884190	Is miann orm a bhith òg.
+5884205	Chan eil ach aon mhiann agam.
+5884214	'S dòcha leam.
+5884216	'S dòcha leam gu bheil an t-acras ort.
+5884224	'S dòcha leam gu bheil gràdh agad oirre.
+5884227	'S dòcha leam gu bheil gràdh agad air.
+5884229	'S dòcha leam gun thig iad.
+5884230	'S dòcha leam gu bheil gaol agad air.
+5884231	'S dòcha leam gu bheil gaol agad oirre.
+5884233	'S dòcha leam gu bheil thu ceart.
+5884269	Chan iongnadh gur lugha le Tòmas sinne.
+5884274	Chan iongnadh gu bheil fearg mhòr aige.
+5884278	A bheil fearg agad?
+5884291	Tha fearg aig Ciorstag orm.
+5884296	Tha fearg aig m' athair orm.
+5884303	Chuir mi fearg air.
+5884314	Chuir an litir aige fearg oirre.
+5884316	Saoilidh mi gun robh fearg aige.
+5884344	'S iongnadh leam cò iad.
+5884356	'S iongnadh leam cò dh'innlich e.
+5884363	'S iongnadh leam cò thàinig.
+5884366	'S iongnadh leam cò ise.
+5884374	'S iongnadh leam dè tachraidh.
+5884378	Canaidh e gur ise a mhàthair.
+5884385	'S ann ormsa a tha an t-acras.
+5884390	B' ann orra a bha an t-acras.
+5884406	Chan ann an-dè a rugadh ise.
+5884410	Rugadh is thogadh mise ann an Astràilia.
+5884435	"Am faod sinn a dhol ann?" "Faodaidh air chòir 's gum bi sibh modhail."
+5884441	'S ann à Boston a thàinig mi.
+5884445	'S ann à Boston a tha mi.
+5884464	Bidh mi a' dol tràth dhan leabaidh air sgàth 's gum feumaidh mi dùsgadh tràth.
+5884617	'S ann leamsa a tha an taigh seo.
+5884621	Chan ann leamsa a tha an taigh seo.
+5884622	Is leamsa a tha an taigh seo.
+5884629	'S e taigh Thòmais a tha ann.
+5884631	Sin taigh Thòmais.
+5884632	Cà bheil taigh Thòmais?
+5884634	Rach do thaigh Thòmais.
+5884639	Cò leis a tha?
+5884641	Cò leis a tha am fearann seo?
+5884643	Cò leis a tha an taigh seo?
+5884647	'S le Tòmas an sealbh seo.
+5884651	"An leatsa an taigh?" "Chan e."
+5884654	"An ann leatsa a tha an taigh?" "Chan ann."
+5884655	'S ann le Tòmas a tha an sealbh seo.
+5884657	"An e oileanach a tha annad?" "'S e."
+5884659	"A bheil thu nad oileanach?" "Tha."
+5884661	"An robh thu nad chòcaire air a' bhàta sin?" "Cha robh."
+5884670	"Nach ann tric a bhios sibh aig an taigh?" "Chan ann."
+5884673	"An robh sibh nur còcaire air a' bhàta sin?" "Cha robh."
+5884680	"Am faca sibh am film sin?" "Chunnaic."
+5884686	"Am faic thu taigh-tasgaidh a-rithist?" "Chì."
+5884692	"An robh sibh nur stiùiriche am buidheann-carthannachd sin?" "Bha."
+5884698	"Am b' e stiùirche am buidheann-carthannachd sin a bha annaibh?" "B' e."
+5884700	"Am faca thu am film sin?" "Chunna."
+5884704	"Am b' ann fon bhòrd a bha an cù?" "B' ann."
+5884711	"An robh an cù fon bhòrd?" "Bha."
+5884715	"An ann a-nochd a chì sibh am film?" "Chan ann."
+5884718	"Am faic sibh am film a-nochd?" "Chan fhaic."
+5884723	"Nach saoil thu gur ann an-dè a chunnaic sinn an aiseag?" "Saoilidh."
+5884738	Nach shaoileadh duine gur e Tòmas a rinn e?
+5885032	Feumaidh sinn seasamh an aghaidh na gràine-chinnidh.
+5885044	Seasamaid an aghaidh na gràine-chinnidh.
+5885760	"An tèid thu dhan Eilean Sgiathanach san Lùnastal?" "Thèid."
+5885762	"An tèid sibh dhan Eilean Sgiathanach anns an Lùnastal?" "Thèid."
+5885768	"An ann do Ghlaschu slighe Mallaig a thèid thu?" "'S ann."
+5897271	"An gabh thu tì no cofaidh?" "Cha ghabh idir."
+5897274	Gheibh thu leabhar innteanach ma thig thu do Chomhairle nan Leabhraichean!
+5897277	Thàinig sinn air adhart nuair a chaidh sinn dhan cùrsa Fraingis sin.
+5897286	Thèid mi air siubhal a' bhaile ann an uair gu leth. Am bu toigh le duine tiginn cuide rium?
+5897288	Thachair mi ri poileas ach cha do thug e toighe dhomhsa idir.
+5918870	"Dè a fhuair thu?" "Fhuair mi dà leabhar Gàidhlig."
+5918875	"Dè a thug thu dhi am-bliadhna?" "Thug dà adhann."
+5918878	"Dè a ghabhas sibh?" "Gabhaidh trì cupannan cofaidh."
+5918880	"An gabh thu uisge-beatha neo fìon?" "Cha gabh idir, tapadh leat."
+5918886	"Cò a thug dhuinn a' bhideo seo?" "Tòmas."
+5918895	"Am b' e Tòmas cò a thug dhuinn a' bhideo seo?" "Cha b' e."
+5918897	"An do cheannaich thu an Audi?" "Cha do cheannaich, bha e uabhasach daor."
+5918900	Cha bhithinn toilichte le sin.
+5918946	Tha mi an aghaidh a pheantadh a-rithist a chionn ’s gun deach e a' peantadh dìreach an-uiridh.
+5918953	An ceann trì bliadhna, ràinig mi fileantachd.
+5918967	An ceann dàichead bliadhna 's a aon deug, dhealasaich Tòmas is Màiri ri chèile.
+5918969	Nach tèid thu dhan taigh cèilidh a-nochd?
+5918973	Cha chosg an iris gu lèir ach dà not gus a chur sa phost.
+5918975	Cha tèid agam air deagh Fhraingis a sgrìobhadh.
+5918977	Cha tèid aig Tòmas air deagh Fhraingis a sgrìobhadh.
+5918979	"Tha mòran Fraingis agad." "Chan eil mi cho fileanta riut."
+5918981	B' fheudar dhuinn lann an claidheamh a pheantadh airson dath ùr a chur air.
+5918985	Carson a tha Tòmas airson neo-eisimeileachd?
+5918988	Feuch a bheil cùrsa Fraingis air astar aca.
+5918995	Fuirichibh dà dhiog.
+5919012	Thig còmhla rium.
+5919013	Dè do bheachd?
+5919014	Dè ur beachdan?
+5919015	Saoil an tùras gu Astràilia caran daor?
+5919017	Dà cheud not 's a h-ochd an duine agus ceud dà fhichead not ’s a trì deug airson oileanaich.
+5919020	Tha seo nas fhurasta na bha Tòmas an dùil.
+5919022	Faodaidh sinn am bus fhaighinn às a' bhaile seo.
+5919024	Chan fheum mise a dhol, ach feumaidh tusa.
+5919026	Feumaidh tu a dhol a-nìos neo feumaidh mise a dhol sìos, tha mi coma co-dhiù.
+5919028	’S fhiach còig dolaran aon not.
+5919033	’S e an fhìrinn a tha agam.
+5919081	Dè cho sean 's a tha e?
+5919206	Cha robh Tòmas airson fàgail idir.
+5919383	Chan eil sgoil mhòr aig Tòmas.
+5919384	Tha sgoil mhòr aig Tòmas.
+5919387	Thuirt Tòmas gun do shaoil e gun robh am foghlam cudromach.
+5919390	Bha sgoil mhòr agus tòrr chànanan aig Tòmas.
+5919391	Chan eil foghlam tro mheadhann na Fraingis gu feum.
+5919635	Dè fon ghrèin a tha sin?
+5919637	Cha tug mi cuireadh dhutsa.
+5919638	Thug Tòmas cuireadh dha Mhàiri.
+5919642	An tèid aig Tòmas air tighinn ann? Nach tèid? Uill, tha sin duilich.
+5919644	Cha tèid agam air tighinn ann, duilich.
+5919647	Fònaidh mise Dihaoine e.
+5919652	"Am bi an deuchainn doirbh?" "Bidh nas doirbhe na fear sa chaidh."
+5919756	Thèid prògram telebhisein seo leth riumsa, co-dhiù.
+5919794	Eil thu airson tighinn?
+5922015	Chan eil mi a' dol leat.
+5975785	Tha mise a' dol don tràigh.
+6057661	'S ann on Tairbeirt a thàinig sinn.
+6057662	'S ann on Tairbeirt a tha mi.
+6057664	"Am bu chòir dhomh sineach a dhèanamh?" "Cha ruig thu a leas."
+6393762	'S e Ricardo an t-ainm a th' orm.
+6486913	Làmh fhada is cead a sìneadh.
+7590350	Chan eil mo choinsias glàn.
+7771046	Tha mi breagha.
+7853241	Tha mi gu math, tapadh leibh.
+8050295	Bha sin air an naidheachdan.
+8095995	Tha Tom a’ fuireach anns a’ Chuimrigh.
+8109607	An toil leat càise?
+8115191	Bha latha breagha a bh’ann an-dè.
+8692598	Is toil leam ceòl.
+8692620	Tha e glè fhliuch.
+8692621	Tha e glè thioram.
+8692624	Tha e glè dhorcha.
+8692640	Tha latha brèagha ann.
+8692641	Tha latha snog ann.
+8692646	Tha an t-sìde dona.
+8692650	Tha an latha àlainn ann.
+8692652	Tha latha sgoineill ann.
+8697110	Dè na cur-seachadan a th’ agad?
+8759751	Càite a bheil an t-aran?
+8759752	Càit' a bheil an t-aran?
+8760065	'S e latha na nigheadaireachd a th' ann a-màireach.
+8760067	'S e latha na nigheadaireachd a th' ann an-diugh.
+8760068	Càite a bheil ur sùilean?
+8760070	A bheil càr agad?
+8760079	B' fheudar dhut tighinn an-dè.
+8760082	'S e tidsear a th' annam.
+9018961	A bheil thu a’ bruidhinn Gàidhlig?
+9042968	Cò a th' ann am Pedro?
+9042977	Ghlac iad Tom.
+9256225	Cò às a tha thu?
+9256313	Chan eil mi sgìth.
+9256334	Chan eil i toilichte.
+9256354	A bheil thu sgìth?
+9256381	Tha mi a’ leughadh.
+9256399	Tha i ag ionnsachadh Gàidhlig.
+9256446	Chluich Seumas le claidheamh.
+9256480	'S e sin rudeigin eile.
+9269200	Ciamar a bha sin?
+9269203	Ciamar a tha cùisean?
+9269221	Dè an àirde a tha e?
+9269225	Dè am pian a tha ann?
+9269248	Co mheud duine a bha ann?
+9276360	Bha sinn ga thuigsinn.
+9276363	Cha bhi mi ga tachairt.
+9276374	An robh thu toilichte?
+9276389	Cha robh an t-uisge blàth.
+9276406	A bheil thu ann?
+9276418	Tha dà thaobh air.
+9276427	Cha bhi fadal ann.
+9282789	Tha falt glas air mo sheanmhair.
+9282822	Chì mi feuch a bheil iad a-staigh.
+9282851	Bidh mi gad fhaicinn.
+9282858	Chì mi dè nì mi.
+9282866	Chuir am buidsear a' chlann fo gheasaibh.
+9282879	An cuir thu am bainne anns a' chupa?
+9282885	Chuir e litir thuca.
+9282890	Chuir Seumas gòl.
+9282898	Tha thu car fadalach.
+9282924	Thig an stòiridh gu ceann car obann.
+9295511	Tha leigheas air gach càs ach chan eil leigheas air a' bhàs.
+9295516	Chan eil mi a' dèanamh bun no bàrr dheth!
+9295518	Tha a' chathair seo air a dèanamh à fiodh.
+9295519	Bha mise a' dèanamh cho math ri fear an seo.
+9295522	Tha mi cinnteach gum biodh e toilichte.
+9295524	Fanaidh mi gu ochd uairean.
+9295526	Chuir mi litir gu mo phàrantan.
+9295528	Is toil leis a bhith a' dol gu partaidhean.
+9295530	A bheil thu tighinn chun a' phartaidh?
+9295531	Tha mi a’ smaoineachadh gu bheil clann aca.
+9295533	Chan eil ticeadan aca.
+9295537	Chan eil mi leat.
+9295539	Chan eil mi cinnteach às is mu dheidhinn idir.
+9295541	Chan eil sin buileach fìor.
+9295545	A bheil e air a chall buileach?
+9295548	Bhuail tarbh nam aghaidh.
+9295550	Thàinig mi na lùib.
+9295553	Bha Seumas cinnteach gun robh an trèan a' tighinn.
+9295556	Bha sinn cinnteach às an toradh.
+9295558	Tha iad cinnteach asta fhèin.
+10113590	Feumaidh i uisge.
+10113591	Feumaidh mi uisge.
+10508853	Tha mi ag iarraidh uisge-beatha.
+11098464	Tha Tom a' fuireach ann an taigh beag nach eil fada bhon abhainn.
+11491730	Cho-dhùin i gluasad dhan Bheilg.
+11746022	Tha e fadalach agus tha sinn uile sgìth, agus mar sin tha mi a’ smaoineachadh gum bu chòir dhuinn a dhol dhachaigh.
+11978053	Cò tha ag òl lionn?
+12226453	Sgrìobh iad leabhar.
+12226459	Ceannaichidh tu an leabhar an-diugh.
+12228597	Dè tha thu a' cur sa ghàrradh?
+12621064	Bha mi airson uisge òl.
+12621065	Tha e ceart gu leòr.
+12621074	Tha e glè theth an-diugh.
+12838554	Chan eil mi gu tur cinnteach cò ris a bu chòir dhomh bruidhinn.
+12838555	Bha fhios aice gun robh gaol agam air.
+12838556	Bha fhios aige gun robh gaol agam air.
+12923494	Sgrìobhaidh i leabhar air bith-eòlas.
+13158749	Ciamar is urrainn dhuinn sinn fhèin a dhìon bhon choròna-bhìoras?
+13568617	Tha falt a’ falbh às.
+13568618	Tha falt a’ falbh aiste.
+14098167	Rinn mi an obair-dachaigh agam.
+14098214	Tha e air a thaghadh à deichean de mhìltean de cho-fharpaisich.
+14098225	Tha mi airson a bhith nam Roomba. Tha mi airson sgianan a bhith air an teipigeadh rium. Tha mi airson a bhith air mo leigeil ma sgaoil.
+14098380	Choimhead mi airson mapa anns an leabhar-iùil.
+14098879	Rinn mi ealain.
+14098981	Tha am bus nas saoire.

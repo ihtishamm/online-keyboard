@@ -273,6 +273,64 @@ import zhtPinyin from "../languages/chinese-traditional/pinyin.json";
 import { ZHT_PINYIN } from "./translit/zht-pinyin";
 import zhtZhuyin from "../languages/chinese-traditional/zhuyin.json";
 import { ZHT_ZHUYIN } from "./translit/zht-zhuyin";
+import slovak from "../languages/slovak/language.json";
+import skEasy from "../languages/slovak/easy.json";
+import skQwertz from "../languages/slovak/qwertz.json";
+import skQwerty from "../languages/slovak/qwerty.json";
+import slovenian from "../languages/slovenian/language.json";
+import slEasy from "../languages/slovenian/easy.json";
+import slStandard from "../languages/slovenian/standard.json";
+import albanian from "../languages/albanian/language.json";
+import sqEasy from "../languages/albanian/easy.json";
+import sqStandard from "../languages/albanian/standard.json";
+import lithuanian from "../languages/lithuanian/language.json";
+import ltEasy from "../languages/lithuanian/easy.json";
+import ltStandard from "../languages/lithuanian/standard.json";
+import latvian from "../languages/latvian/language.json";
+import lvEasy from "../languages/latvian/easy.json";
+import lvQwerty from "../languages/latvian/qwerty.json";
+import lvStandard from "../languages/latvian/standard.json";
+import estonian from "../languages/estonian/language.json";
+import etEasy from "../languages/estonian/easy.json";
+import etStandard from "../languages/estonian/standard.json";
+import finnish from "../languages/finnish/language.json";
+import fiEasy from "../languages/finnish/easy.json";
+import fiStandard from "../languages/finnish/standard.json";
+import norwegian from "../languages/norwegian/language.json";
+import nbEasy from "../languages/norwegian/easy.json";
+import nbStandard from "../languages/norwegian/standard.json";
+import danish from "../languages/danish/language.json";
+import daEasy from "../languages/danish/easy.json";
+import daStandard from "../languages/danish/standard.json";
+import icelandic from "../languages/icelandic/language.json";
+import isEasy from "../languages/icelandic/easy.json";
+import isStandard from "../languages/icelandic/standard.json";
+import faroese from "../languages/faroese/language.json";
+import foEasy from "../languages/faroese/easy.json";
+import foStandard from "../languages/faroese/standard.json";
+import irish from "../languages/irish/language.json";
+import gaEasy from "../languages/irish/easy.json";
+import gaStandard from "../languages/irish/standard.json";
+import welsh from "../languages/welsh/language.json";
+import cyEasy from "../languages/welsh/easy.json";
+import cyUkExtended from "../languages/welsh/uk-extended.json";
+import scottishGaelic from "../languages/scottish-gaelic/language.json";
+import gdEasy from "../languages/scottish-gaelic/easy.json";
+import gdStandard from "../languages/scottish-gaelic/standard.json";
+import maltese from "../languages/maltese/language.json";
+import mtEasy from "../languages/maltese/easy.json";
+import mt47 from "../languages/maltese/47.json";
+import mt48 from "../languages/maltese/48.json";
+import galician from "../languages/galician/language.json";
+import glEasy from "../languages/galician/easy.json";
+import glSpain from "../languages/galician/spain.json";
+import esperanto from "../languages/esperanto/language.json";
+import eoEasy from "../languages/esperanto/easy.json";
+import eoXSystem from "../languages/esperanto/x-system.json";
+import latin from "../languages/latin/language.json";
+import laEasy from "../languages/latin/easy.json";
+import afrikaans from "../languages/afrikaans/language.json";
+import afEasy from "../languages/afrikaans/easy.json";
 
 /** Every language.json, in page order. */
 export const LANGUAGE_FILES = [
@@ -347,6 +405,25 @@ export const LANGUAGE_FILES = [
   japanese,
   chineseSimplified,
   chineseTraditional,
+  slovak,
+  slovenian,
+  albanian,
+  lithuanian,
+  latvian,
+  estonian,
+  finnish,
+  norwegian,
+  danish,
+  icelandic,
+  faroese,
+  irish,
+  welsh,
+  scottishGaelic,
+  maltese,
+  galician,
+  esperanto,
+  latin,
+  afrikaans,
 ] as LanguageFile[];
 
 /** Every layout file, by language, in each language's order. */
@@ -503,6 +580,45 @@ export const RAW_LAYOUTS = [
   zhPinyin,
   zhtPinyin,
   zhtZhuyin,
+  skEasy,
+  skQwertz,
+  skQwerty,
+  slEasy,
+  slStandard,
+  sqEasy,
+  sqStandard,
+  ltEasy,
+  ltStandard,
+  lvEasy,
+  lvQwerty,
+  lvStandard,
+  etEasy,
+  etStandard,
+  fiEasy,
+  fiStandard,
+  nbEasy,
+  nbStandard,
+  daEasy,
+  daStandard,
+  isEasy,
+  isStandard,
+  foEasy,
+  foStandard,
+  gaEasy,
+  gaStandard,
+  cyEasy,
+  cyUkExtended,
+  gdEasy,
+  gdStandard,
+  mtEasy,
+  mt47,
+  mt48,
+  glEasy,
+  glSpain,
+  eoEasy,
+  eoXSystem,
+  laEasy,
+  afEasy,
 ] as LayoutInput[];
 
 /** The transliteration schemes the layouts use. */

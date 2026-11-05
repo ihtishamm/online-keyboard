@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+1518341	Ne kemi një tavolinë katrore.
+2156624	Çfarë bëni ju në kohën e lirë?
+2365560	Ndryshon forma, por në parim ngelesh vetëm.
+2365561	A do të ta rregulloj këtë orën?
+2424245	Unë e dua gjuhën shqipe.
+2864470	Një gjuhë asnjëherë nuk është mjaft.
+2941352	Në asnjë rast nuk duhet ta prekësh atë çelës.
+2941353	Por miqtë e tij u bashkuan për ta ndihmuar.
+2942699	Nuk e dija atehere, por e di tani.
+2942779	Shpresoj ti arrijmë deri në fund këti misteri sëbashku.
+3476553	A keni parë ndonjëherë atë duke notuar?
+3518972	Millie ka sy të kaltër.
+4731496	Je ose me ne ose kundër nesh.
+4963641	E di që kjo është e rëndë.
+4963678	Ky nuk është futboll, ky është futboll amerikan!
+5247298	Sa filxhane kafe pi ti në ditë?
+6297057	A do ta përdorësh këtë?
+6981403	Gota ime është e papastër.
+6981456	Më vjen keq që theva premtimin tim.
+6982041	Ai ka nëntë palë këpucë.
+6982101	A të pëlqen ngjyra e verdhë?
+6982103	Mos e kërko lumturinë. Ajo nuk ekziston.
+6982116	Ana ishte një vajzë e bukur.
+6983011	Është serioze sëmundja e Tomit?
+6983029	Tomi ishte ulur vetëm, po lexonte një libër.
+6983030	Tomi ishte ulur vetëm, duke lexuar një libër.
+6983105	Tomi pagoi faturën e tij vonë.
+6983372	E di ku ka shkuar Tomi.
+7002389	Kjo është ajo që trembte Tomin.
+7002413	Tomi arriti herët këtë mëngjes.
+7003415	Nesër do të jetë e enjte.
+7005440	Thanë që janë të etur.
+7005547	Do të jem e lirë tërë mëngjesin të premten tjetër.
+7005597	Shpresa nuk ushqen familjet tona.
+8766979	Ajo me tha se do te perpiqej ta bente.
+8793656	Eshte e nevojshme qe Meri te iki vetem?
+8971664	Pyes veten pse Tomi kishte kaq frikë.
+8971779	Festa do të jetë të djelën.
+8971805	Unë nuk do ta bëj një gjë të tillë.
+8971812	Po shkoni të kërkoni diçka në Meksikë?
+8971819	Shikoni atë ndërtesë. Është tempull?
+8971842	Pse donin të shkonin në Brazil?
+8971845	Ai pinë një paktë në ditë.
+8971870	Nuk dua të martohem me Maryn.
+8971879	Po shkoj të bëj një vrap.
+8972236	Ju u zgjodhët mbretëresha e ballos.
+8973082	Do të shkoj të ndërtoj sinagoga në Siri.
+8973102	Unë kam shumë detyra sot.
+8973113	Do të më mungoni të gjithë shumë.
+9004958	Jam shumë mirë, faleminderit. po juve si jeni?
+9017432	Brezi im janë bijtë e luftës.
+9017474	Ju jeni pothuajse të vdekur.
+9017492	Pse na pushoi nga puna?
+9017528	Shoku im nuk është palestinez.
+9017563	Do flasim me të të hënën.
+9017767	Duket se është me nxitim.
+9017771	Unë mendoj se vjan nga Italia.
+9017820	Unë duhet të pres Tomin?
+9017850	Kjo ndërtesë është e antike.
+9017856	Tomi nuk e njeh emrin tim.
+9017915	Tomi është më inteligjent se ju?
+9017982	Tomi iku mbi klait të tij.
+9018019	Vazhdojnë të flasin për të.
+9018042	Nuk shkon të ndërtosh mbarshtrimore në Mbretërinë e Bashkuar?
+9018051	Nuk do shkojnë të mësojnë diçka në Siri.
+9018078	Fushata zgjedhore pati sukses dhe ajo fitoi zgjedhjet.
+9018098	Fadili duhet të ketë dëgjuar diçka.
+9018183	Kishte gjëra për të provuar.
+9018202	Disa lule çelin në pranverë e të tjerë në vjeshtë.
+9018281	Mua më mugojnë drekat tona.
+9018321	Ky vend është është ndryshe.
+9018370	Nuk kam dëshirë të gatuaj.
+9018376	Jeni ende të inatosura me të?
+9018454	Nuk do të marrësh pjesë në varrimin e tij.
+9018490	Gramatika e frëngjishtes nuk është e thjeshtë.
+9018629	Sipas meje kjo është fyese.
+9023090	Do të duhet ta vini në pah atë fakt
+9090895	A mundesh të përtypesh pa zhurmë?
+13206496	Shoqja ime e fëmijërisë u bë muzikante.
+13735326	Kush do ta fitojë ndeshjen?

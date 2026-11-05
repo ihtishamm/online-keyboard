@@ -1,0 +1,26 @@
+{
+  "slug": "irish",
+  "code": "ga",
+  "order": 740,
+  "lang": "ga",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Irish",
+    "native": "Gaeilge"
+  },
+  "aliases": ["Irish Gaelic"],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["ga-easy", "ga-standard"],
+  "accents": "áéíóúÁÉÍÓÚ",
+  "sample": "Tá an aimsir go hálainn inniu agus táimid ag dul go dtí an trá.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ga",
+    "bing": "ga"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

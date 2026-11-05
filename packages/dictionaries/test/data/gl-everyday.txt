@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+625288	O que son hoxe en día débollo ao meu pai.
+625289	O can é o mellor amigo do home.
+625302	A aguia é a raíña das aves.
+625365	Eu vinos destruír o edificio vello.
+625395	Ela viviu soa desde que morreu o seu home.
+625425	Grazas pola marabillosa cea.
+625441	Vírono saír da casa.
+625442	Non teño ganas de ver a tele esta noite.
+625448	Botáronlle a culpa a Xurxo polo fracaso.
+625451	Vesche coma se vises a unha pantasma.
+625453	Os gatos son animais moi limpos.
+625455	Merqueime un coche.
+625457	Vinlle cruzar a estrada.
+625467	El sabe moito das bolboretas.
+625476	Fuches fumador, verdade?
+625477	Non sexas parvo.
+625483	Posiblemente non poida vir.
+639131	Se se dá présa, aínda poderá facturar a equipaxe e subir ao avión.
+639140	Pola mañá escribo no parque.
+639147	É certo que virá mañá?
+639153	Oh, a luz apagouse.
+639176	A que hora ides traballar?
+639179	O exercicio diario é bo para o corpo.
+639187	Debemos abolir a pena de morte.
+639197	Previmos que chegariamos a ese lugar no prazo de dúas semanas.
+650894	Dade a César o que é do César; e o que é de Deus, a Deus.
+650897	O exército está no norte para protexer a fronteira.
+650905	O home agarrou ao mozo da man.
+650906	Preferiría ser un paxaro a ser un peixe.
+650913	Á súa familia non lle falta nada.
+650914	Braga reza, O Porto traballa, Coimbra estuda e Lisboa divírtese.
+650916	Vasche a quedar en casa?
+650927	Como o fas?
+650931	Fixen feliz a John.
+650933	Podes engadir oracións que non saibas como traducir. Quizá outra persoa saiba.
+650939	Ela ten cinco anos.
+650945	O teu can morde?
+650969	Pero quero que entendas o que estou dicindo.
+650989	Os cartos están sobre a mesa.
+650991	El ía vela ao hospital cada dous días.
+650993	Londres é unha das cidades máis grandes do mundo.
+666203	Que hora é? Son as dez e media.
+666204	El tomou veleno por erro.
+666205	El esforzouse, pero finalmente perdeu.
+666207	Pode preparar a miña conta o máis pronto posible?
+666229	¡Vostede ten un gusto caro! - exclamou a dependenta - Está seguro de que non quere mirar as nosas versións máis baratas primeiro?
+853367	¿Viches ese filme?
+853370	Espero que non se sente ninguén diante de nós.
+853377	Non tes que chamarme.
+854270	Él ten unha mucama.
+854294	Ela presume de que o seu marido é rico.
+854297	¿Cómo vamos tratar este asunto?
+854333	O ancián morreu de fame.
+854350	Un malentendido moi común sobre Cristóbal Colón é que unha vez impresionou a unha tribu de nativos predicindo unha eclipse luar. A verdade é que él a CAUSOU.
+854354	Hai moitos paxaros neste parque.
+854358	¿Canto costa esta radio?
+854379	Para empeorar as cousas, enfermou.
+854993	Durmín ben toda a noite.
+855026	O neno está porco.
+855029	Un xaponés nunca faría tal.
+855475	Dende mañá podemos ir xuntos ao traballo
+855503	Non coñezo o sitio exacto no que nacín.
+855963	Iso escribiuno Taro Akagawa.
+856067	Todos os camiños levan a Roma.
+857372	Como podo axudarche?
+857376	Non pode ser un home honesto se fai tal cousa.
+857398	Este vaso roto é de meu avó.
+857414	Anda a procurar un cinto de coiro.
+857450	El morreu na guerra.
+857454	Só asine aquí.
+857468	Parece que Tom cometeu un grande erro.
+857488	Cada vez pasas menos tempo cos cativos.
+859242	O home estaba a piques de morrer.
+859245	As saias curtas xa non se levan.
+859272	Esta mañá ía frío.
+859286	Meu pai é mestre de inglés.
+859443	Foi a Paris por primeira vez.
+859450	Non te preocupes por min.
+859481	O troque, con todo, foi un sistema moi insatisfactorio porque as necesidades da xente poucas veces coincidían exactamente.
+859586	O café dáche enerxía!
+859600	Fomos divertirnos ao parque.
+860795	Hai dous meses que cheguei a Toquio.
+860920	As mulleres tenden a vivir máis cós homes.
+860956	Que comiches no almorzo?
+862519	Como é moi importante ocupareime diso.
+862522	El estaba en Francia.
+862540	Por hoxe basta.
+862595	Esa noite ía moito frío.
+862605	Iso non é o que eu escoitei.
+913648	Penso, logo existo.
+955837	Éche o que hai.
+955907	O meu número de teléfono é 789.
+955942	Non ten máis ca un coñecemento superficial do tema.
+955947	Desexádeme boa sorte!
+956108	Non teño razón?
+956131	Decembro é o último mes do ano.
+956162	Ninguén que chamara a Cristovo Colón "Cris" viviu para facerllo unha segunda vez.
+956176	Vexo a televisión.
+956181	Apenas teño cartos.
+956197	Ela quería que el coidara dos seus pais.
+956208	O inverno é a miña estación favorita.
+956249	Agora que comezou o exame non quero ouvir un ruído! O primeiro que sinta falar terá un cero.
+956293	Un grupo de persoas morreu na explosión.
+956334	Esta é a miña casa.
+956357	El soprouse as puntas dos dedos.
+956519	Pescárono fumando no baño.
+956551	Quen é ese que esta a durmir na miña cama?
+956565	Cantas irmás ten?
+956648	Tom debería estar aquí en calquera momento.
+956653	El describiu detalladamente o accidente.
+956654	Agora meu pai está no xardín.
+956672	É difícil rematar o traballo nun día.
+957106	Nós somos árabes.
+957141	Axudarei tanto como poida.
+957249	Espértome normalmente ás seis.
+958895	Perdoe, quen fala?
+959811	Estou pensando en mandalo traducir ao inglés.
+960545	El corta o pelo unha vez ao mes.
+960564	Non importa quen o diga, non mo creo.
+960636	Iniesta: "Cesc, Xavi e mais eu non somos compatíbeis".
+960639	A molécula de ADN é unha macromolécula.
+960647	O xenoma deste virus non é coñecido.
+960651	"Podería amosarme a súa licenza de conducir, por favor?" Dixo o vendedor.
+961509	A intervención humana sobre a natureza non atopa os seus límites.
+961526	As células sanguíneas son producidas na medula ósea.
+961543	Proclama a miña alma a grandeza do Señor, alégrase o meu espírito en Deus o meu Salvador, porque mirou a humillación da súa escrava.
+961557	Un debería dar esmola aos pobres.
+961560	Eu estudo a historia xaponesa.
+961605	A expansión viquinga dende o século IX en diante alcanzou zonas como a Normandía, Galicia, Andalucía, Sicilia e Crimea.
+961735	Pódesme deprender a roubar?
+961750	Virei se é mester.
+962487	Abonda por hoxe.
+962623	Foi acusado de evadir trabucos.
+962653	Fíxenme dano na perna no accidente.
+962695	Meu pai ten o mesmo coche có señor Kimura.
+962718	Non sexas tímido.
+962726	Fai demasiada calor.
+962741	Querédesvos facer ricas?
+962763	Un feixón pode responder tódalas preguntas.
+962808	A ela góstalle xogar ao tenis.
+962810	Tony estuda despois de cear.
+962855	O cliente non veu.
+962866	Este reloxo é de gran valor.
+962882	Quen pintou ese cadro?
+962892	Nós ofrecémoslle un bo traballo.
+962915	Iso é un pouco estraño, non é?
+962917	Eles teñen os mesmos costumes.
+962935	Os seus zapatos están desamarrados.
+962950	O prezo desta gravata é moi elevado.
+962965	Atención! Só pra maiores de 18 anos.
+962974	Entendo unha parte do que el quere dicir.
+962977	O teu telegrama chegou cando estaba a punto de chamarte por teléfono.
+962980	Estou moi ocupado como para axudalo.
+962987	Hei estar moi ocupado o mes que vén.
+963049	Teño tres cans; un é un macho e os outros son femias.
+964595	O mozo que ten un libro nas súas mans é o meu curmán.
+966054	Logo, se non fuches ti, ¿quen foi?
+966185	Se tan só te esforzases un pouco máis, conseguiríalo.
+966191	Se queres podes quedar, pero é preciso que avises os teus pais.
+1227420	Na tenda venden azucre e sal.
+1227424	Paul prefire o inglés ás matemáticas.
+1227427	El gaña máis cartos do que pode gastar.
+1227469	Podería encher este formulario?
+1227494	Ola, John! Como estás?
+1227498	Ela semella nova, pero de feito é maior ca ti.
+1227553	Hoxe vai vento.
+1227575	A súa explicación do que aconteceu é inconsistente con testemuño doutras testemuñas.
+1318703	A aprendizaxe non debe ser forzada. A aprendizaxe ha de ser esporeada.
+1318724	Non sei se dispoño de tempo.
+1318730	Esta froita ten un cheiro desagradábel.
+1318733	Aló en París fálase o francés.
+1318745	Está escuro alá fóra.
+1318746	Ti es un ninguén.
+1318759	A rapaza foi gravemente ferida no accidente de tráfico.
+1319250	Falade máis alto!
+1319278	Estes fósiles foron atopados no patio da miña casa.
+1319297	Tom precisa tomar un día de descanso.
+1319322	El tentou deixa-lo tabaco, pero foi inútil.
+1319331	Vó-los dous sodes un par de toutizos.
+1319377	As dúas irmás sempre pelexaban entre elas.
+1319452	Ela colleu o seu bebé no colo.
+1319573	Miña nai sabe moitas adiviñas e trabalinguas.
+1319674	Tiña dezaoito anos daquela.
+1319722	Apresureime para non chegar tarde á escola.
+1319742	Hasme esquecer algún día.
+1319790	É case un milagre.
+1336329	Os mellores peixes alcatrean despois de tres días.
+1337858	Unha cadea é tan forte como o é o seu elo máis débil.
+1337990	El quitou os zapatos a patadas sen desamalloalos primeiro.
+1338149	Alugamos o piso.
+1338176	Axiña reparou en que lle roubaran.
+1338203	Por fin reparou no seu erro.
+1338224	Ao mirar os seus ollos el reparou en que ela aínda o amaba e a esperanza xurdiu dentro del.
+1338286	Ese foi un erro imperdoábel.
+1338290	ERROR: Mensaxe sen contido.
+1338358	Estaban a piques de perde-los estribos.
+1338605	Podesme ensinar a xogar ao xadrez?
+1338630	Hei devolver este libro á escola así que remate de lelo.
+1338641	Cantos irmáns tendes?
+1338669	A rede enguedellouse na hélice do barco.
+1338714	Que fixeches onte?
+1338746	Gústanme os gatos.
+1338762	Case tódolos que estaban presentes eran mulleres.
+1338768	Con tódolos cartos que ten, el non é feliz.
+1338777	Ten sona de ser o mellor avogado da cidade.
+1338784	Gústame a cor branca.
+1338786	El non vive lonxe.
+1338796	Canto custa esta gravata?
+1338799	Isto éche moi bo.
+1338800	Case o atropelou un coche.
+1338801	El veute ver onte.
+1338804	Quen carallo era ese?
+1338812	Vexo que ela está a limpa-lo cuarto.
+1339474	Non abras o teu paraugas no vestíbulo.
+1339475	Non tiñamos a idea de agredilo.
+1339497	Non teño ningún bolígrafo.
+1339559	Abraham Lincoln, o décimo sexto presidente dos Estados Unidos, naceu nun alprende en Kentucky.
+1339706	Esta roupa está toda morriñenta é cómpre lavala.
+1339726	Calquera cousa vale.
+1339851	A Tom gústalle o seu café negro.
+1339966	El vai polas tardes a clase.
+1339975	A ferida non cicatrizou aínda.
+1340013	Os calcetíns e as zapatillas son novos.
+1340152	Ela puxo moito azucre no café.
+1340179	Pasei todo o día lendo unha novela.
+1340198	A miña moza saíu arestora a mercar un aparato eléctrico.
+1340218	Corrín e corrín, senón había chegar demasiado tarde.
+1340281	Estou anoxada con el.
+1340365	Imaxina comezar a impar e que non puideses parar.
+1340865	Tes dous fillos ben bonitos.
+1340867	A maioría das gaivotas inclúen na súa dieta caranguexos e peixes pequenos.
+1340927	Como consegues que os teus fillos coman as verduras?
+1342279	Que significan as siglas "NTT"?
+1342314	Imos probar hoxe outro lugar pra xantar.
+1342354	A historia transcorre en Lisboa.
+1342395	Por que teño que facelo?
+1342403	Tom tivo sorte de atopar as súas chaves.
+1342409	Pode que leves razón.
+1342411	Tódolos esforzos dos doutores foron inútiles.
+1342421	Conózoa un pouco.
+1342436	Ela ten máis ou menos corenta anos.
+1342525	O semáforo estaba en vermello.
+1342616	Leva o permiso de conducir?
+1342676	Iso foi antes de que John fose a prisión.
+1342705	Tráeme as lentes.
+1342721	Feliz día da nai!
+1342727	Non teño idea de canto custa.
+1353788	Abofé que sei o que dixo.
+1353799	Os vellos andan engorde.
+1353827	Pouco a pouco vai escurecendo.
+1353871	Despois do disparo, os atletas botaron a correr a fume de carozo.
+1417035	Gustaríame ir ós Estados Unidos un día.
+1422802	É unha longa historia.
+1422914	Cando Mary era unha nena, a súa familia era moi pobre.
+1422961	¿Canto costa unha noite?
+1422968	¿Ela toca o piano?
+1423036	É o mesmo para todos.
+1423052	A súa conducta decepcionou a moitos dos seus amigos.
+1423085	Criou a ese rapaz a un precio moi alto.
+1423142	Ken asemella ser unha persoa amigable.
+1424525	As súas palabras fixeron que todo o mundo escachara coa risa.
+1424684	Por favor, saca a túa bicicleta de aquí.
+1424688	Ese tipo está a andar de puntillas.
+1424830	Que rapaza máis maravillosa é.
+1424838	Tiveron que despedir a 300 homes da factoría.
+1424860	Deberíamos ter sido máis coidadosos.
+1424886	Teño o hábito de camiñar cada día.
+1424938	¿Fará calor mañá?
+1424989	Sinto moito pedirche axuda con tan pouca antelación, pero non me din de conta que este proxecto sería tan esixente.
+1425000	Tom non se fía de Mary co seu coche.
+1425008	Estivo a fumar todo o tempo.
+1425093	A miña nai puxo trece candeas na miña torta de aniversario.
+1425198	Os meus pais disuadíronme de viaxar.
+1425227	Decidín ir alí.
+1425260	Semellaba como que tivese estado enferma.
+1425354	Tom non sabe nada de Boston.
+1425356	Ten coñecementos de inglés.
+1425375	Chegará aí arredor das cinco.
+1425391	Perdeu o seu pai á idade de 3 anos.
+1425410	O policía pitou ó coche para que parase.
+1425438	Ás veces, as preguntas provennos con máis información que as respostas.
+1425475	Non tiña nada que dicir, polo tanto marchou.
+1425478	Non tiña nada que dicir, así que se foi.
+1425527	¿Que sería a vida sen esperanza?
+1425604	¿Por que non entras?
+1425606	¿Por que non pasas?
+1426197	Vexo o neno.
+1426214	O coche en fronte de min é de Karam.
+1427291	Non podo aceptar esta teoría.
+1427297	O que dixo a profesora fixo que Mary estudase aínda máis forte.
+1427314	Escribín a canción para ela.
+1427672	Non me refiro a ti.
+1428156	Nadar éme divertido.
+1428212	Saíu un tema novo na conversación.
+1428222	Estiven levantado ata moi tarde a noite pasada.
+1428260	Que coa calor e a humidade, non durmín ben.
+1428266	O home do tempo di que teremos chuvia pola tarde.
+1429022	¿Xa te recuperaches da túa catarreira?
+1429041	Esta mazá sabe amarga.
+1429638	Penso que ninguén dubida hoxe que Carlos Núñez sexa un dos mellores gaiteiros do mundo.
+1429711	O medio ambiente é o sustento básico da vida, e como tal cómpre decatármonos de que é a nosa responsabilidade adoptar as medidas oportunas para a súa salvagarda.
+1429900	Os rapaces teñen que beber leito acotío.
+1429937	El podería sequera desculparse.
+1430680	Pasei todo o día na súa casa.
+1430710	Acóchate. Vas pillar un arrefriado.
+1430740	Non traio cartos.
+1430743	O smog é o inimigo dos pulmóns saudábeis.
+1430748	O lóstrego alumeou o ceo.
+1430947	O dito énos moi familiar.
+1430958	Non, grazas. Estou canso.
+1430973	A panadaría está na rúa Piñeiro.
+1430985	Os peixes viven na auga.
+1431180	O inglés é xeralmente un pobo conservador.
+1431196	Non eres máis ca un parasito social!
+1431211	A industria téxtil hase adaptar a un mercado de libre competencia nos vindeiros anos.
+1431214	Ela subiu os chanzos de catro en catro.
+1431226	Os santos sempre son representados cunha auréola enriba da cabeza.
+1431233	A casa del está na beira sur do río.
+1431306	El ten casa de seu.
+1431312	Cando viaxo a algures nunca levo moita equipaxe.
+1431354	El comezou unha nova vida.
+1431377	Eu estaba moi preocupada por ela.
+1431422	Agarda deica mañá pola mañá.
+1431444	Tenche ollos na caluga.
+1431452	O dicionario recolle preto de medio millón de palabras.
+1431455	Esa boneca ten ollos grandes.
+1431471	Non teño moito tempo. Podería bulir?
+1431506	Abra a caixa amodo, sen romper a embalaxe.
+1431511	Por favor, peche a porta amodiño.
+1431513	Eu quero vivir nun castelo.
+1431519	Este libro é máis pequeno.
+1431547	Non te vaias trabucar.
+1431969	Se non fose pola súa axuda, o teu éxito non sería posible.
+1431982	A área estaba queda.
+1431998	O neno ten fe en que a súa nai coide del.
+1432755	Estou avergoñado porque obrei coma un parvo.
+1432802	Fun tan parvo que crin nel.
+1433199	Imaxínome que Tom quedará sen diñeiro nalgún momento e terá que volver para casa.
+1433242	Non deberías deixar que os nenos xoguen co coitelo da cociña.
+1435387	Este ano tivemos máis neve que o ano pasado.
+1435393	Tom quería pasar o resto da súa vida en América.
+1435408	Nesa esquina antes había unha farmacia.
+1435419	Debeu ser cousa da súa irmá.
+1435501	Eu podo falar español.
+1437327	O seu pai morreu, e para maior coita, a súa nai enfermou.
+1437337	A meu avó encántalle ler.
+1437339	Non me lembro ben, pero supoño que foi o venres pasado.
+1437409	Ela tenche un xeito amplo de ver as cousas.
+1437417	Aconteceu preto da casa.
+1437430	Non comeu nada onte.
+1437431	Non te quero volver ver!
+1437456	A policía ten algún sospeitoso?
+1437490	Fomos a nadar á praia.
+1437629	Escoitar esta canción éncheme o corazón de soidade.
+1437823	Os xaponeses sacan os zapatos cando entran nunha casa.
+1437861	Dise que o alcalde acepta subornos.
+1439300	¡Din que nos vai chover!
+1439340	Ansiaba unha entrada para o concerto.
+1439346	É mellor gastarse que oxidarse.
+1439416	Todo depende da súa resposta.
+1439442	Era un traveso cando era neno.
+1442679	¿Que tal se me promoves de só amigo a noivo?
+1444880	¿Viches a película "A caixa"?
+1444890	A perda de saúde é máis seria que a perda de diñeiro.
+1445664	Estou pensando en cambiar de provedor.
+1445713	Chamarei mañá á mañá.
+1445746	A rapaza ten moita fame.
+1445761	A choiva estaba a gotear a través dunha gotera no teito.
+1445985	Investir en educación é, sen dúbida, o único xeito eficaz de tirar un país da pobreza.
+1446220	A anciá está demasiado feble para se erguer da cama.
+1446445	Eu convideinos, pero eles preferiron non entrar.
+1446451	Hai moitas grandes tendas e supermercados en Shinjuku.
+1446495	"Onde están os seus libros?" "Están encol do escritorio."
+1448322	O tráfico estivo cortado durante varias horas.
+1448325	A súa mentira pesou na súa conciencia.
+1448339	John gaña sempre que xogamos a ese xogo.
+1448350	O mundo rendeu o debido recoñecemento ao seu talento.
+1448726	Non durmas coa luz prendida.
+1449124	O diñeiro mudoulle a vida.
+1449129	Tom mudoulle as sabas á cama.
+1449181	Miña irmá imítalle a miña avoa.
+1449251	Tom morreu á idade de 97 anos.
+1449264	Ela tenlle medo aos cans.
+1449265	Sei que el fixo iso.
+1449277	Coñeces a rapaza que está queda xunta a fiestra?
+1449307	Deixou que o seu fillo afogase.
+1449318	Coñecemos unha granxa que ten un robot capaz de apañar case vinte laranxas por minuto.
+1449326	A tradución é imposíbel.
+1449357	Tráiame unha sopa, por favor. Sen pementa.
+1449425	Esixiron que tódolos exemplares do libro fosen destruídos.
+1449453	Non abonda con dicilo!
+1449454	Quen che dixo iso?
+1449459	Quita do medio.
+1449480	Cometín un erro por facelo a correr.
+1449499	Gustaríame mercar algunhas postais.
+1449501	Gustaríame comprar algunhas postais.
+1449507	Se chove mañá, o partido de béisbol será suspendido.
+1449516	Por que estou a fumar con dor de gorxa?
+1449522	O exame comeza o próximo luns.
+1449539	El ordenoulles ceibar os presos.
+1449555	Onde está el?
+1449567	Non a coñezo e non coido querer coñecela.
+1449572	Onte fun nadar ao río.
+1449577	Chegas moi cedo esta mañá.
+1451399	Case estás no certo.
+1455129	¿Cres nas pantasmas?
+1455904	A nosa mestra está a cualifica-los traballos.
+1455911	Os cans abandonados adoitan acabar nas canceiras.
+1455918	En xeral, aos rapaces gústanlles as lambonadas.
+1455921	Este é un abano chinés.
+1455940	Louvado sexa Deus!
+1455959	Pódote ouvir, mais non te podo ver.
+1455961	Heite chamar así que chegue a casa.
+1455962	Non podo dicir cómo se fai.
+1455967	Quen son os membros da xunta directiva?
+1455974	No sur dos Estados Unidos hai moitos negros.
+1455989	Preguntáronnos se sabiamos cando comezaba a película.
+1455994	O gato perseguiu ao rato.
+1455996	Non te esquezas de falar con el mañá.
+1456031	El perdou o control das súas pernas.
+1456044	Hai moitos mobles no cuarto.
+1456047	Non pasa ren.
+1456072	Que facedes á tarde?
+1456083	É un laretas, nada máis.
+1456100	A que hora queres almorzar?
+1456116	Por favor, permanezan de pé.
+1471230	Deberíaslle de dicir a verdade.
+1471273	Que cara de nugallán che ten este teu irmanciño!
+1471291	Hai moito tempo aquí había unha ponte.
+1506119	É unha pena que penses dese xeito.
+1506292	Miña nai morreu cando eu era un neno.
+1506312	O Xapón ten auga e xente a esgalla.
+1506325	O rei Darío foi derrotado por Alexandre o Grande.
+1506326	Esqueciches o teu curso de alemán?
+1506332	O rei esmagou os seus inimigos.
+1506336	Tom machucou a caixa co seu pé.
+1506368	Pensei que ía abafar no tren ateigado de xente.
+1515055	En boca pechada non entran moscas.
+1515110	Heite topar ben en falta se marchas.
+1515133	Trata de tirar todo o preveito que poidas do teu dicionario.
+1515139	Tentou tirar proveito da situación namentres estiven ausente.
+1515184	O ascensor está estragado. Por favor, empreguen as escaleiras.
+1515220	Quérote ver antes de marchares.
+1515259	Eles viven no andar de embaixo.
+1515329	É mellor a sabedoría que a forza, pero desprézase a sabedoría do pobre e non se escoitan as súas palabras.
+1515933	O corvo considérase paxaro de mal agoiro.
+1525545	O significado da vida para a maioría das persoas redúcese a tres letras: CCD - comer, cagar e durmir.
+1578781	Tiven que escoller entre ambos os dous.
+1578821	Estou moi contento en Xeorxia.
+1578824	O señor Brown está buscando as súas lentes.
+1578841	Nunca escoitara unha historia tan singular.
+1578851	Non te rías canda os maiores.
+1578884	Ten moitas probabilidades de gañar.
+1628283	El fixo tódolos esforzos que puido para deter esa reforma.
+1628304	A súa súpeta aparición entrecolleunos a todos.
+1628335	Sería mellor levares un paraugas.
+1628372	Abre os ollos.
+1726300	Os meus pais queren que estude medicina.
+1726386	El veu para pedi-la nosa axuda.
+1726446	Estou de acordo.
+1726466	A el impórtalle un carallo o que digan os demais.
+1726482	O número de estudantes que se especializan en bioloxía vai aumentar de agora en diante.
+1727075	Moitas grazas por me lembrares a miña promesa.
+1727489	Benvido ao noso fogar.
+1727573	Jack e mais eu acordamos traballar na oficina por quendas os sábados.
+1727616	Cómprenos ler cando menos un libro ao mes.
+1727684	Mike foi elixido presidente.
+1795443	Tom ha poder axiña conducir un coche.
+1795912	Faga dos seus soños a súa estrela máis resplandecente.
+1795925	Que tomaches para almorzar?
+1795941	A informática é a súa paixón.
+1846528	Aborrezo a política.
+1846532	O Sr. García é moi amábel.
+1846546	Tom é un mal cociñeiro.
+1846550	Non dou topado a miña chave.
+1859894	Están a meter moito barullo, non me podo concentrar.
+1862370	Eles detiveron o seu xogo e ollaron en fite para min.
+1862426	O semáforo mudou a vermello.
+2038329	Axiña que ela chegue, habemos comezar.
+3136926	Eu non entendo por que Alemaña gañou Eurovisión.
+3530101	Ver o cempés na parede abondou para me poñer a pel de galiña.
+3654928	Vou ó hotel.
+3655393	A túa casa é grande.
+3655688	Deberías compralo para ti mesmo.
+3656797	Non teño tempo de morrer.
+3656821	Mañá é o seu aniversario.
+3658072	Tom foi de viaxe en coche cos seus amigos.
+3658103	Pode que lle leve un chisco.
+3658105	Tom non recorda como fixo para ter o seu ollo morado.
+3658108	Tom poderá optar a liberdade condicional en cinco anos.
+3792962	Estou dando un paseo por un parque.
+4571476	Esperanto é unha das linguas máis melodiosas do mundo.
+4571617	O sufrimento devora o corazón e tamén a coraxe.
+4635726	Non preciso nada.
+4737051	Estou certo de que sabes de que falo.
+4737057	Non podes diferenciar entre fantasía e realidade?
+4737061	El faime feliz.
+4748566	Podo ver o que botan noutras canles?
+4748605	Tío Eugenio é irmán de teu pai.
+4748641	Gústame moito a miña nova casa.
+4750295	Penso que traballas moito.
+4750299	O tren fixo unha pequena parada.
+4750332	Teño que lle cambiar as pilas á radio.
+4750351	A súa explicación carece de sentido algún.
+4750370	Se chove, esta noite non vou saír.
+4750424	Hoxe coñecín a miña nova mestra de filosofía.
+4760857	Non os coñezo.
+4760868	A miúdo dícese que o xaponés é un idioma difícil de aprender.
+4760880	Quero verte no teu despacho en media hora.
+4760961	Ningunha muller mercaría iso.
+5405785	Góstame a túa maneira de falar.
+5987406	A cazadora seguiuno adentro do bosque.
+5987430	Os alumnos desobedeceron ó seu profesor.
+5987441	Cometín algúns erros no exame.
+5987442	Estaba un pouco asustado.
+5987445	El adaptou a historia para os nenos.
+6207051	Ela namorouse do irmán da súa amiga.
+6618670	Eles son doutores.
+6618686	Fora vai frío, e ti estás quente.
+6620308	El está cociñando agora.
+6620309	Ela está cociñando agora.
+6620329	Que che fai sorrir?
+6620355	A actividade favorita de Tom era cociñar.
+6620367	Queres que abra a caixa?
+6622746	O home é forte.
+6622752	Ela é miña muller.
+6623321	Meu pai axudarame economicamente.
+6964724	Os seus zapatos son marróns.
+6968809	Mary recebeu moitos agasallos para o seu aniversario.
+7891912	María bicouno nos dous lados.
+7891950	Estou aliviado por ouvir iso.
+7891957	A principal razón pola que as crianzas contan mentiras é evitar ouvir reprimendas.
+7917281	Tom non quere ir para casa agora.
+8554258	Que prefires: polo ou peixe?
+8554261	Se non podes resolver este problema, pregunta ao teu profesor.
+8881539	Gustaríame volver ao traballo.
+8881571	El non coñece a palabra "harmonía".
+8902414	O año seiscentos da vida de Noé, o mes segundo, o día dezasiete do mes, nese día saltaron todas as fontes do gran abismo, e as comportas do ceo abríronse.
+8902424	Tom non estaba seguro de onde debería ir.
+8903401	Ela mencionou os resultados do exame?
+8903413	Ao meu irmán e a min gústanos a mesma comida.
+8903435	Hai moito que non teño unhas vacacións de verdade.
+8903455	Os Países Baixos ten dúas linguas oficiais.
+8903459	Indonesia declarou a súa independencia en 1945, durante a Segunda Guerra Mundial.
+8903498	Domingos de Guzmán fundou a Orde dos Predicadores, coñecida como dominicos.
+8903510	Li Yuan foi o primeiro soberano da Dinastía Tang, e reinou por oito anos.
+8911933	Os gatos son complexos individuos.
+8924309	As civilizacións india e china xa pintaban frescos centos de anos antes de Cristo, pero a técnica é mellor coñecida polos seus expoñentes occidentais.
+8982104	Ela come unicamente carne branca.
+9202336	Non podo estudar ningures na miña casa, é demasiado ruidosa.
+9202351	Lelo de novo para min.
+9372877	El sabe asubiar.
+9373009	Ás veces os nenos son raros.
+9631147	A Tom non lle facía falta.
+9631150	A Tom non lle facía falla.
+9673514	Gústame tocar o piano.
+9673535	Ela fala dez linguas.
+9726226	Danme medo os muricegos.
+9726243	No século XIX prodúxose unha revitalización da literatura en catalán e en galego. En Cataluña houbo a Renaixença ('a Renacenza') co poeta Jacint Verdaguer, o dramaturgo Àngel Guimerà e o novelista Narcís Oller. En Galicia tiveron o Rexurdimento, representado en especial por poetas: Rosalía de Castro, Manuel Curros Enríquez e Eduardo Pondal.
+9726679	Non son tan valente coma o Tom.
+9726998	Para min xaneiro é o mes máis importante do ano.
+9727000	A festa vai ser o próxima sábado, é dicir, no 26 de agosto.
+9728819	O meu irmán perdeu o tren porque se levantou demasiado tarde.
+9731562	O Tom só escuta podcasts.
+11169867	Quen vai limpar isto?
+11171021	Eu son un home vello.
+11171697	Os homes van ao traballo.
+11173029	Teño una historia que contar.
+11177815	Eu sabía que Antonio podía gañar.
+11178007	A profundidade do río é duns dez metros.
+11671946	Un verdadeiro amigo aconsellaríate.
+11746105	Quere vostede bailar comigo?
+11998033	Filtrou algo na bolsa.
+11998274	Hai días nos que me ducho pola mañá, pero normalmente prefiro ducharme pola tarde ou pola noite.
+11998481	Cambio o meu cepillo de dentes cada tres meses.
+12000467	Con que frecuencia te afeitas a barba?
+12001328	O portugués e o galego son a mesma lingua?
+12001716	A 21ª (vixésimo primeira) Enmenda anulou a 18ª (décimo oitava) e beber volveuse a legalizar nos Estados Unidos en decembro de 1933.
+12002039	Lisa finxiu non escoitar.
+12002058	Que dixo Tatiana para que a expulsasen do grupo?
+12004504	Vivimos na Terra.
+12004834	Imaxino moitas cousas bonitas.
+12005094	Quérote dende o fondo do meu corazón.
+12008043	Non puiden durmir.
+12008496	Vendéronnos un soño que en realidade era un gran pesadelo.
+12009485	Para que teño diñeiro?
+12010389	O concello é moi antigo.
+12010409	As flores son amarelas.
+12010471	Tom cubriuse os ollos.
+12012523	El baixa do coche e gabea polo talude do xardín ata a fiestra iluminada.
+12014435	Non podo volver.
+12014496	Leváronlle ao neno.
+12015308	O home e a muller son unha parella.
+12015334	Estas mazás vermellas pertencen a alguén.
+12016285	Ata que teñas dezaoito anos, somos responsables de ti.
+12016322	Nin o diñeiro nin a fama o fixeron feliz.
+12019802	Os vagóns vermellos son de vacas e os verdes de porcos.
+12022023	En todas partes, os días son máis curtos e as temperaturas son máis baixas no inverno.
+12029366	Onde está o horario?
+12031280	Son un traballador.
+12039599	O tellado da casa de súpeto cedeu.
+12040148	Tom foi unha vez tradutor.
+12040275	Hai algúns avións, chamados planeadores, que non teñen ningún motor, pero voan ben.
+12041334	Miña irmá é enxeñeira.
+12051494	Hai sitio para todos.
+12057463	Cambiei as sabas.
+12058543	As follas do nenúfar flotan na superficie da auga.
+12058686	O meu amor é coma unha fonte entre os outeiros cuxas augas rebordantes non se poden limitar, senón que verte un torrente polos camiños que serpentean nun xardín; alí a rosa destila o seu néctar; alí un lirio alto e branco enche a noite coa unción de dous namorados, cegos, mudos, xordos, de corpo, espírito e mente, a través da esmagadora mestura de vontades en conflito.
+12062626	Saltaches do tellado?
+12066248	Esta moza quéreme!
+12066622	Ao meu papagaio non lle gustan as sementes de xirasol.
+12066901	Estamos xuntos con vostedes, Marrocos e Libia.
+12069263	Non estou dirixido, eu dirixo.
+12071589	Estou preto dun restaurante romanés.
+12074142	É isto unha ameaza?
+12074538	Os 150 poemas do Libro dos Salmos representan un abano de voces e emocións humanas e están entre os versos máis lidos da Biblia.
+12078594	Ser violento non axuda.
+12080940	As súas paixóns eran ler e escribir.
+12085141	Sempre foi así.
+12090050	O fato de eu ter capturado a araña impressionou os outros.
+12091060	Non falo de política.
+12094846	Gústame moito esa amarela do uniforme de porteiro do meu equipo.
+12097622	Facía moitas preguntas cando era pequena.
+12100476	Eu como pouca carne.
+12111790	As fermosas follas vermellas do bordo están separadas das pólas e bailan no vento.
+12111965	Se as oliveiras coñecesen as mans que as plantaron, o seu aceite converteríase en bágoas.
+12124713	—Logo, tamén —dixo Sancho— entende vostede de trobas? —E máis do que pensas —respondeu don Quixote— e verás cando leves unha carta, escrita en verso de arriba para abaixo, á miña señora Dulcinea de Toboso. Pois quero que saibas, Sancho, que todos ou a maioría dos cabaleiros andantes da idade pasada eran grandes trobadores e grandes músicos; que estas dúas habilidades, ou grazas, para mellor dicir, están unidas aos amantes errantes. O certo é que as coplas de pasados ​​cabaleiros teñen máis espírito que perfección.
+12130743	O lanzamento terá lugar mañá.
+12131344	A diferenza entre o galego e o portugués ás veces paréceme que é unha simple cuestión de acento.
+12131960	O índice está ao final do libro.
+12132919	Algún día entenderás todo.
+12133017	O ascensor ten paredes verdes.
+12134849	Unha persoa que debuxa mal non é un artista.
+12135467	A nena estaba lendo un conto de fadas sobre un gato que fala.
+12137906	Durante catro séculos, o galego e o portugués estiveron unidos nunha única lingua: o galego-portugués. Son, por así dicir, dúas irmás siamesas que se separaron.
+12138313	O fogón está na cociña, á esquerda do frigorífico.
+12138880	A esperanza é a razón da vida.
+12144555	Creo que Tom é competente.
+12147159	Os ratos buscan queixo gratis.
+12159308	Esa canción obsesionoume. Levou un control implacable no meu espírito.
+12161458	O consello de revisión de Tatoeba é extremadamente eficiente.
+12163143	Ela aínda coida por el por compaixón, pero xa non lle sente ningún cariño.
+12163248	A intelixencia artificial aprende rápido e xamais esquece o que aprendeu.
+12165142	O poeta é, sobre todo, un artista no uso das palabras.
+12172439	O home medio durmido quere tomar café.
+12174397	Que Deus me perdoe.
+12182062	Perdinme cando te visitei por primeira vez.
+12186937	A miña casa está a só cinco minutos a pé da estación.
+12190443	Cantas veces debes encher o depósito do teu coche?
+12190963	Gústame acompañar cada unha das miñas frases en portugués coa súa tradución ao galego, para destacar as grandes semellanzas e pequenas diferenzas que existen entre estas dúas linguas.
+12194410	Hai algunha cláusula ao respecto no contrato de arrendamento?
+12201498	Os vellos papagaios non aprenden a falar.
+12202467	O solpor sempre me trae melancolía.
+12209664	Renunciou a todos os seus dereitos.
+12211429	A situación é mala por culpa de ti.
+12211433	Colle os libros de alí.
+12214463	Teño sono, ademais é tarde.
+12218514	Xa teño o esquema da historia.
+12223195	Podes axudarme a instalalo no meu ordenador?
+12237397	A aguia é unha ave depredadora cun peteiro enganchado e ás longas e anchas.
+12251047	Algún día, quizais, todas as persoas vivirán en paz.
+12251397	Cando están de vacacións, queren comprar todo o que ven.
+12287609	E chega o momento no que a alma esperta do soño... E decátase de que todo era unha ilusión. Dos falsos eus, finalmente, líbrase agora... E leve e pura volta á Fonte da Creación.
+12291092	Podes falar sen ningún tipo de vergoña.
+12294357	Debería ter estudado francés con máis dilixencia.
+12296273	A maquinaria usa moita electricidade.
+12297157	Debemos marchar agora.
+12299114	Cheiras a fume de cigarro.
+12301236	Tom chegaría tarde se Mary non o levara.
+12301999	Rivalidade significa, etimoloxicamente, disputa entre propietarios, porque as propiedades romanas estaban a miúdo separadas por un río ("rivus" en latín).
+12302207	"Vou ao campo!" "Vaia!"
+12304879	Tom solicitou o posto, pero non o conseguiu.
+12305455	Parece que Tom non comparte esa opinión.
+12305485	A túa oferta é ofensiva.
+12307801	A poesía é emoción expresada en ritmo a través do pensamento, así como a música é esa mesma expresión, pero directa, sen o intermediario da idea.
+12310586	Por suposto, estou de broma.
+12310589	Por suposto, son novo, e a política é dirixida por maiores.
+12310674	Tom finalmente necesitará unha operación.
+12310685	Tom non sabía que Mary era profesora de francés.
+12310964	Ela non pode vivir lonxe de aquí.
+12311619	Pensas moito nel?
+12312092	A miña camioneta está atrapada na lama.
+12312119	O bolso que me deches é moi bonito.
+12317126	Como se sentía canso despois do paseo polo campo, botou unha sesta
+12317317	Analizei o líquido.
+12318304	Estarei contigo mentres queiras.
+12319243	O árbitro daquel partido non só era incompetente, era parcial.
+12319522	Sabemos desde hai milenios que o cambio en nós, no noso futuro evolutivo, ten que facernos mellores persoas, máis amables cos nosos veciños, máis sensibles á beleza e capaces de repartir xustiza.
+12326038	A vida non espera. Mañá será demasiado tarde. Vive hoxe.
+12328125	O robot que pretendo mercar para axudarme a aprender a lingua latina chámase "Kikerus".
+12330389	Gustaríame ver unha obra de teatro. Podes darme algunha información?
+12330525	Cando cheguei á estación, fun visitar ao meu tío no seu despacho.
+12330628	Parece que o propósito do seu estudo no estranxeiro era mellorar a súa capacidade para falar inglés.
+12331113	A cheminea comezou a botar fume.
+12331183	Hoxe ensínase inglés en case todo o mundo.
+12333711	Vexo que aínda non o sabedes.
+12334442	A lingua latina é un camiño seguro para a sabedoría.
+12335366	Os que veñen a Corinto miran as estatuas.
+12335419	Sempre estás seguro de que a túa frase non contén ningún erro?
+12337605	Un vello estaba en repouso debaixo da árbore.
+12337613	Dentro de cada home hai miles.
+12337647	Veña pescar comigo.
+12338817	Unha virxe fermosa é medio dote.
+12339585	De súpeto, doume conta de que aínda teño moito que aprender!
+12340044	A ra que vive nun pozo non sabe que o mar existe.
+12341827	Esta non é unha opinión; son feitos.
+12345606	É preferible sufrir que facer inxustiza.
+12346832	O xuramento dun amante non se toma en serio.
+12347177	É máis gratificante dar que recibir.
+12348486	Non estás esperando, non?
+12349955	O latín é unha lingua especial. Unha frase latina pode admitir varias traducións, ou expresións, do seu significado.
+12353203	En canto a cidade foi tomada, Eneas fuxiu.
+12353231	A cidade foi tomada e Eneas fuxiu.
+12353547	O planeta Saturno completa a súa órbita en trinta anos.
+12354351	Ningunha obra me deleita salvo as de Plauto.
+12354458	Morreu o paxaro mascota da miña amada, / a mascota da miña amada, / a que era a mazá dos seus ollos, / o ser doce e agarimoso que coñecía á súa dona como esta coñecía á súa propia nai.
+12355015	Na miña longa viaxe, ás veces camiño rápido, outras lentamente.
+12355083	Alguén pode estar enfadado sen emoción?
+12355093	Evita as emocións.
+12356700	Isto debería terse feito hai moito tempo.
+12357033	Perdoa ao teu veciño moitas veces, a ti nunca.
+12357127	Sempre hai unha variedade de traducións para calquera pasaxe en calquera idioma.
+12360277	É difícil explicar isto.
+12360540	Un arco que está sempre estendido non resiste, rompe pronto.
+12360773	Como remata esta historia?
+12360971	Cando deba chegar ese día, que só ten poder absoluto sobre esta estrutura mortal, que chegue para poñer fin ao incerto curso da miña vida.
+12362929	Os traballos de ampliación avanzan.
+12363056	Onde é o mercado?
+12364924	Tom foi enganado.
+12366889	Todo o que fai falta para o triunfo do mal é a indolencia das boas persoas.
+12368502	Era pobre? pola contra, era rico.
+12368520	Gastan os seus bens e recursos para pagar impostos.
+12374861	Vives ao meu lado e eu non te teño.
+12375264	Se non o sabes, ó máis fermosa das mulleres, segue os rastros das ovellas e leva as túas cabras a pacer preto do campamento dos pastores!
+12379316	Na nosa familia, a miña nai decide todo.
+12392493	Fillas de Xerusalén, polos cervos e as gacelas do campo, xúrovos: non espertedes, deixade durmir a miña amada ata que queira acordar!
+12393411	Quen persegue dous coellos non colle ningún.
+12396232	O meu amado chámame, fálame: Levántate, amada, miña fermosura, ai ven, que xa pasou o inverno, pasou a chuvia e desapareceu;
+12399571	O meu amado é todo meu, e eu son súa, do pastor dos lírios! Antes de que acabe o día e medren as sombras, volve, amado, – imitando á gacela ou á súa prole –, ás escarpadas montañas!
+12411902	O amor nace da mirada.
+12413011	Unha pinga de fel aceda moito mel.
+12462774	Non todos os xudeus falan hebreo.
+12462880	As túas meixelas, dous cortes de granada, pódense ver detrás do veo.
+12509021	Fai as maletas.
+12531916	A pascua está chegando.
+12532074	É mellor non pensar niso.
+12546311	Enrabechou o cativo agachándolle o xoguete.
+12546396	O bo día sábese pola mañá.
+12578109	Sinto chegar así sen previo aviso.
+12585380	É un crime cortarlle as ás dunha aguia.
+12610334	Non teño sorte coas mulleres.
+12613006	Antes de durmir, é necesario ventilar a habitación.
+12687352	E Dido déixase prender, non só cos ollos senón con todo o corazón, polo ser fascinante, ás veces mesmo abrazándoo contra o seu peito, sen saber, a pobre, que un deus tan perigoso está aniñado no seu colo.
+12687415	Cando o sol se pon e os ventos amainan, sen coñecer ben o noso percorrido, cansos, chegamos á costa dos Cíclopes.
+12690305	Eu canto as fazañas do heroe que foi traído por primeira vez pola obra do destino, dende as costas de Troia ata as de Lavinium, en Italia.
+12690349	No vasto pelago, nadando, xorden algúns superviventes, aquí e acolá, mentres armas de heroes, cadros e útiles troianos balancean coas ondas.
+12695764	Deus é a única realidade. Todo o demais é ilusión.
+12695953	Cada paso que das deixa unha marca.
+12699854	Os teus beizos corren favos de mel, oh miña noiva, tes leite e mel debaixo da lingua, e o perfume das túas roupas é como o aroma do Líbano.
+12702481	Xa me quitei a túnica, e voume poñer de novo? Xa lavei os pés, e vounos a ensuciar de novo?
+12718013	De erro en erro, descobrese toda a verdade.
+12727424	O Primeiro Ser, a Fonte, o Creador é o que chamamos Deus.
+12727621	María axita as cadeiras para atraer a mirada luxuriosa dos homes.
+12746313	Hai ben tempo que non vexo o meu compadre.
+12774451	A sorte axuda aos que son fortes.
+12779564	Feliz é quen ten un bo veciño.
+12827080	Esconderémonos onde ninguén o sabe.
+12842538	Encántame coñecer outras linguas.
+12874710	Un libro é un agasallo que se pode abrir moitas veces.
+12877977	A restauración é un traballo longo e minucioso.
+12890574	Creo que ten razón.
+12893240	Temos que falar con el antes de que cometa algún erro.
+12903713	Cando estades ausentes, o sistema do fogar intelixente acende e apaga as luces en diferentes habitacións, creando a ilusión de que hai alguén na casa, reducindo así o risco de roubo.
+12908410	Unha leoa repousaba á sombra.
+12908524	A verdade destrúe todos os grilletes.
+12915844	Nunca volverían a atoparse.
+12922024	Son consciente da situación.
+12922043	O capitán do barco decidiu cambiar de rumbo.
+12928722	Debes namorarte dese rapaz, Mary, porque nos librará deste lío.
+12930347	O son da choiva é música para min.
+12932169	Tes, querida, a sinxeleza do neno.
+12932517	Xa non penso na morte, teño que cantar.
+12939376	Creo que o latín, mesmo para a Intelixencia Artificial, é a lingua máis difícil de dominar.
+12942615	A guerra estúpida e sanguenta chega ao seu fin.
+12945363	Retire o anel de retención que fixa o piñón ao cubo.
+12948490	Que o ano novo traia paz e amor a todos.
+12957977	Imos celebrar o Aninovo coa familia.
+12958051	Vexo a vida a través da luz dos teus ollos.
+12959950	As abellas son animais moi útiles porque producen mel, cera e polinizan as flores.
+12966166	O yiddish non é hebreo.
+12966200	Tom caeu no barro.
+12966232	Estaba cuberto de barro.
+12966268	Pisei na lama.
+12969168	Temos dous gatos negros.
+12974463	Todo me vai mal.
+12974683	Non o podo crer.
+12975188	Non me das medo.
+12976982	A cidade é moi tranquila pola noite.
+12977264	Agora dis que me queres, agora dis que me odias. Cando vas parar isto?
+12979805	A fortuna non quita nada máis que o que ela deu.
+12980298	O meu amigo está moi deprimido despois de perder recentemente á súa muller á que tanto quería.
+12980342	Os que din o que queren escoitan o que non lles gusta.
+12980410	Agora comezou a estudar latín en serio.
+12982375	Nin sequera un deus pode amar e ser sabio ao mesmo tempo.
+12984720	Domina o tema, virán as palabras.
+12985567	Veño aquí para xogar ao fútbol.
+12985708	Onde hai mel, hai abellas.
+12986775	Ser exitoso é conseguir un obxectivo ou cumprir un desexo.
+12986960	Atopei o diario de Tom.
+12987208	Conseguín o que quería.
+12987346	Onde vas? Son case as tres e media.
+12987522	Algunhas cousas son inevitables.
+12989803	Se alguén non causa envexa é porque non ten calidades envexables.
+12990191	Non é doado cazar contra a vontade dos cans.
+12990315	Quen toma unha decisión rapidamente, pronto se arrepinte.
+12991802	A pobreza é gris, o amarelo dourado é a cor da riqueza.
+12992000	A esperanza é verde, a liberdade sempre é azul.
+12993572	Mira esas montañas, entre as que corre o río!
+12994527	Xa sabes o que pasou.
+12994740	Decide por ti mesmo o que cres que é normal.
+12996133	Asegúrese de non verter auga sobre o teclado.
+12996239	Que se pode facer con este neno!
+12998979	Metérono no cárcere por ser un ladrón.
+13002589	Só con ler moitas frases nunha lingua estranxeira, podía aprender ese idioma.
+13003251	Que bonito é estar vivo! Sei como é iso. Pero como será deixar de pensar definitivamente, deixar de existir?
+13003556	Que fermosa é a vida! Sei o que é estar vivo. Pero como será deixar de pensar definitivamente, deixar de existir?
+13003917	A humanidade é unha familia inmensa, que se ramifica en moitos grupos onde xurdiron e seguen xurdindo diferentes linguas e dialectos.
+13008984	Atopei frases fermosas no poema, que ela escribiu e que acabo de ler.
+13010317	Case non notei diferenzas entre estas dúas traducións. O catalán e o occitano son realmente semellantes.
+13011441	Prohíbese cortar árbores.
+13014117	Eterna morriña, miña querida nai. Un bico do seu fillo que nunca a esquecerá.
+13015331	O oitenta por cento dos incendios forestais son provocados por humanos.
+13021475	Ninguén diría: non confío en Deus.
+13022053	Nas escolas da vida as clases nunca rematan. Ningún alumno conseguiu aprender todo.
+13022304	A tese que escribiu tiña dez mil palabras.
+13023542	A verdade sempre será benvida. É preferible a calquera simulación.
+13024204	O bo humor é como a primavera, porque fai florecer a natureza humana.
+13025204	O inferno e o ceo non son máis que espellismos.
+13025400	O noso profesor fala catorce idiomas.
+13025808	O inferno e o paraíso son só hipóteses inventadas pola mente.
+13026357	Paga a pena tentar escribir uns versos.
+13027541	Ás veces pregúntome como traduciría a señora Sonia esa frase a Toki Pona.
+13028468	Estou feliz! Ela escoitou a miña canción.
+13029991	Débese valorar moito a compaixón.
+13035032	Deixolles aos meus herdeiros un pequeno legado: recompilación de frases, poemas espallados.
+13048389	O corpo é perecedoiro, pero a alma é inmortal.
+13062883	Na túa mirada brilla a luz encantadora do amor, que me embriaga e me fascina.
+13069544	"Non podo facer isto. Tes que axudarme". "Por que? Son eu quen necesita axuda".
+13069814	Hai moitas frases preciosas no corpus de Tatoeba, aínda sen ningunha tradución.
+13070268	Se algunha música se escoita no ceo, certamente foi Bach quen a compuxo.
+13078948	Un can vivo é mellor que un león morto.
+13081815	Dificilmente podía prescindir dos praceres.
+13210573	O cardeal Robert Francis Prevost, de nacionalidade estadounidense e peruana, acaba de ser elixido Papa e adoptará o nome de León XIV (08.05.2025).
+13262666	Unha lingua é un gran tesouro que non hai que perder.
+13295406	Todos debemos celebralo, é tempo de paz.
+13300248	É posible que isto non sexa necesario.
+13304252	Cal é o problema que a súa empresa está a tentar resolver?
+13306867	Quen sabe o preto que está ese país de crear unha arma nuclear?
+13318469	Cada persoa ten o seu papel e a súa importancia, e non debe interferir nas prerrogativas dos demais. Como di o refrán, "cada mono na súa árbore".
+13318825	O seu lugar está aquí.
+13326008	Non quero deixarlles aos meus fillos un país dividido.
+13329243	Isto é algo que ocorreu repetidamente.
+13330538	Ninguén pode vivir no pasado. A vida é agora.
+13335554	A gratitude non só é a maior das virtudes, senón tamén a nai de todas as demais virtudes.
+13360190	Vivo coma todos os demais.
+13362155	Está lanzando varios anzós para ver se pesca algún peixe.
+13363144	Teño que ir ao baño.
+13393427	Non debemos confundir as cousas.
+13396516	O home nunca deixa de fabricar o Apocalipse.
+13397894	Hai lías en cada viño.
+13402691	A humanidade está a experimentar unha crise global de civilidade.
+13405057	Non hai ningunha.
+13410157	En política, o novo case sempre semella pan duro.
+13414254	Falemos doutra cousa.
+13417595	O despotismo e a arrogancia máis absurdos castigan mesmo os tribunais supremos estranxeiros.
+13421300	Os principios e valores ancestrais son irrespetados e trivializados.
+13425480	Les lleis no són fórmules matemàtiques. Interpretar-les és la funció d'una ciència important, l'hermenèutica jurídica.
+13427225	O Congreso quere votar a favor dunha impunidade ampla, xeneralizada e sen restricións para os seus membros.
+13434047	Os estudos revelan que, no século XXI, as autocracias son maioría no mundo.
+13434485	O mundo está a observar.
+13436445	Os seres humanos son depredadores e presas fáciles. Son os seus propios lobos.
+13457047	Non hai tempo que perder; a vida é curta.
+13457794	A falta de resposta xa é unha resposta, chea de significado.
+13464206	Alguén terá que ceder.
+13467760	A vida é un soño, unha bolboreta etérea. A bolboreta, un ser fugaz e revoloteante, é coma a vida: delicada e evanescente.
+13485049	Tomar café é un hábito saudable. É bo para o cerebro e o corazón.
+13497949	Os dous presidentes intercambiaron números de teléfono para poder falar sen intermediarios.
+13520574	É outono e os sopradores de follas están a soar por todas partes.
+13522820	O tempo que pasou nunca volverá.
+13526626	Eu estaría moito mellor no seu lugar. E el estaría moito mellor no meu lugar. Entón, sería mellor que intercambiásemos os dous postos, non si?
+13528695	Noutros, todo o mundo sabe que o corazón ten un lugar específico, xusto aquí no medio do peito, pero no meu caso, a anatomía volveuse tola. Son todo corazón.
+13541819	Alí, nunha inmensa cova, o rei Eolo domina os ventos tumultuosos, as tormentas ruidosas, e mantéñas prisioneiras en constante suxeición.
+13547441	En calquera lingua, calquera persoa que empregue adverbios, preposicións e conxuncións con competencia é capaz de escribir bos textos.
+13548549	Ela sabe que é a súa decisión.
+13550594	É un pracer escoitar a voz da IA ​​lendo frases en ruso en Google Translate.
+13553146	Non nacín cunha culler de prata na boca.
+13568134	Tomé deulle a María uns pendentes de diamantes.
+13569102	Dido, de Sidón, estaba alí construíndo un inmenso templo dedicado a Xuno, enriquecido coas ofrendas feitas á todopoderosa deusa.
+13570413	Debo confesar que me dá un pouco de medo. Fai tantas cousas que non consigo entender! É demasiado impulsiva, case me volve tolo. Non escoita a ninguén, fai o que lle apetece.
+13572474	Desafortunadamente, non o sei.
+13574629	Debería calar para sempre.
+13576825	Hai bágoas aquí polas nosas desgrazas, corazóns que simpatizan coas adversidades dos mortais.
+13579946	Gravemente ferido, Troilo cae de costas sobre o carro que avanza a toda velocidade. Aínda suxeita as rédeas dos veloces cabalos, sen poder detelos. Pendurado alí, o seu pescozo e cabelo son arrastrados polo camiño mentres a punta da lanza fatal rabuña o chan.
+13583676	Unha chamada vibra no vento errante.
+13584277	O viaxeiro do tempo alterou accidentalmente o curso da historia.
+13585868	É un pracer estudar interlingua de novo.
+13629119	O pretérito imperfecto indica continuidade: a acción estaba a suceder no pasado.
+13633688	Cal sería a natureza das frases incluídas nunha edición concisa e esencial de Tatoeba?
+13640681	A lingua latina está viva en Tatoeba.
+13651063	Os que aman crean os seus propios soños.
+13656009	O son da choiva acalma a mente inqueda.
+13676031	Espero que isto non sexa unha negativa.
+13677211	Quen non ten burro non precisa sela.
+13677250	Onde estarás cando se acabe o mundo?
+13678883	Como sempre, os maiores xenios están ocultos nas sombras!
+13681204	Non se pode facer unha roupa moi boa con tecido barato.
+13681950	É o máis doado xulgar.
+13682673	As rosas son nosas.
+13685121	Todo ocorre porque é na natureza humana.
+13685148	Ai dos mortos.
+13685954	Un verdadeiro amigo ama ao seu amigo máis que a si mesmo.
+13689984	Non todas as verdades deben dicirse.
+13690041	"Por que estás tan triste?" "Non é nada, mamá."
+13701989	Nesta illa atopei cangrexos vermellos.
+13702209	O móbil está soando.
+13704392	Por que tantas palabras?
+13705543	O seu ollar reflicte augas profundas.
+13709248	Este restaurante non está situado nesta rúa.
+13711910	Desde o microcosmos ata as nebulosas e as galaxias... O universo é coma unha rede inconmensurable concibida por unha Mente descoñecida. No espazo-tempo, todo está interconectado: pequenas ondas de Consciencia Universal.
+13712783	Todos aprendemos idiomas. E Tatoeba é a nosa gran mestra.
+13713795	Por favor, escribe isto nalgún lugar.
+13717293	"Cales son as cores da bandeira brasileira?" "Verde, amarelo e azul."
+13717399	É moi fotoxénica. É incluso máis guapa en fotos que en persoa.
+13718458	O rapaz sentouse nun banco da praza.
+13719808	Hai moitos paxaros de cores vivas neste parque.
+13723222	Saímos a pasear todos os días.
+13724305	O rapaz adoraba ao seu pai, pero tiña un pouco de medo á súa nai.
+13727414	Bromea, facendo coma se fose outra persoa.
+13727513	O campionato brasileiro de fútbol comeza en xaneiro e rematará só en decembro.
+13727542	Leo libros todos os días.
+13727664	Estas formas son esenciais para a comunicación en calquera lingua.
+13728184	O turco é a sexta lingua máis empregada en Tatoeba (antes era a segunda).
+13728391	Desde o balcón da miña casa pódese ver o mar.
+13729257	Non perdas o meu número.
+13729749	Podedes falar con franqueza.
+13754676	Vou muxir as vacas.
+13755492	As vacas teñen ollos grandes, tristes e pensativos.
+13755850	Todo do boi se aproveita: a carne, os menudos, o coiro, os cornos, o esterco — absolutamente todo.
+13756982	Ata o de agora, a palabra turca máis fermosa que aprendín é a que significa "azul mariño".
+13758590	Ven! Quero ensinarche algo. Ven, pero non corras. Ven devagar.
+13758849	Esta muller achegouse ao mostrador e preguntou cal era a miña relixión.
+13762691	Podes darlle o libro a quen queiras.
+13762776	El cre que cada haiku ten unha historia.
+13763906	O silencio dos bosques propicia a meditación.
+13764475	O caravel enfermou. A rosa foi de visita. O caravel desmaiouse. A rosa comezou a chorar.
+13766164	Verdi prometeu vir ao Brasil.
+13767773	Un segredo coñecido por dúas persoas xa non é un segredo.
+13767866	A verdade é un segredo ben gardado.
+13768103	A enerxía é a capacidade de realizar traballo.
+13768563	Por favor, trae un bolígrafo ao teu exame.
+13768794	Non teño gustos caros.
+13771999	As verrugas son feas pero inofensivas.
+13772293	Non compramos pan, fagámolo nós mesmos.
+13777552	Karol, o rei de Rusia, é parente de Karlo, o rei de Turquía.
+13778112	Medusa tiña cinco cabezas.
+13780791	A miña conciencia estaba a molestarme.
+13783184	Queres probas de que o mundo está progresando? As guerras remataron. Agora só quedan operacións xustificadas.
+13802914	A tradución é unha arte, non unha ciencia exacta.
+13808106	Non fun á festa onte pola noite porque estaba demasiado canso.
+13808324	Antes era moi pobre, pero agora é moi rico.
+13814950	Que forma escrita pode adoptar o silencio?
+13818775	Quero ser médico porque meu pai era médico.
+13822456	Antes traballaba moito, pero agora é un pouco preguiceiro.
+13823480	Ben, se o sabías, por que non mo dixeches?
+13826615	Debería compararte cun día de verán?
+13829248	Esa señora é a miña profesora de francés e ruso.
+13834447	Cal foi a reacción do marido?
+13838642	Que deberiamos facer para aumentar o noso vocabulario?
+13840097	O billete de avión custa 727 dólares.
+13845122	Fun á panadería a mercar pan.
+13850674	Ela está a conducir o seu coche.
+13851708	"De onde es?" "Do Brasil."
+13854120	Cada mañá espertome ás sete horas.
+13854332	O alfabeto turco ten 8 vogais e 21 consoantes.
+13856752	A repetición regular é unha das formas máis eficaces de almacenar vocabulario na nosa memoria a longo prazo.
+13859505	Está prohibido aparcar aquí.
+13860850	Messi liderou o seu equipo, marcou dous goles e foi nomeado o heroe do partido.
+13861208	Esta parella representa a unión de dous grandes activos.
+13862193	Os que teñen medo aos gatos foron ratas noutra vida.
+13862574	Iso sería satisfactorio.
+13862867	Esta emisora ​​de radio toca principalmente música folk.
+13866469	Non podes escoller ao teu pai, pero podes escoller ao teu sogro.
+13868539	O rei ameaza con matar a todos os seus súbditos se non fan o que el quere.
+13868756	A onde chegou o mundo?
+13921190	Caeu a súa máscara. Agora sabemos quen é de verdade.
+13923944	Por favor, dime-lle que xa non precisa sentirse como un estraño aquí.
+13936825	Un mundo libre non ten líderes.
+13938329	O universo está feito de información.
+13946374	O amor é harmonía, altruísmo e autosacrificio.
+13949774	Se só soubese como traducir esa frase a centos de linguas!

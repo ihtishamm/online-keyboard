@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+342384	Hvor enn du går, vil du aldri finne et bedre sted enn ditt eget hjem.
+354647	Ha i honningen, sitronsaften, de ristede mandlene og de revne eplene.
+367290	Denne larven vil bli til en nydelig sommerfugl.
+378510	Politiet arresterte den mistenkte i saken.
+380846	Han har ikke kommet enda. Han må ha mistet bussen.
+387386	Han er sterkere enn deg.
+402507	Rommet er ikke lyst nok til å sy i.
+512034	Han grov et hull i hagen.
+520124	For hvor lang avstand kan du godta et avstandsforhold?
+815803	Han tok ut en kniv og prøvde å åpne boksen.
+815853	Han bor i en leilighet for tiden.
+816108	Det kommer bare til å bety en uendelig debatt.
+1346444	For en vakker rose dette er!
+1680426	Det er ikke noe sjeldent å leve over nitti år.
+1681752	Hvor mange søsken har du?
+1850548	Livet blir stadig mer komplekst.
+1944256	De gjorde alt for ham.
+1944301	Han gjorde alt dette bare for seg selv.
+1945057	Fra nå av, skal jeg jobbe hardere enn jeg har gjort til nå.
+2311847	Jeg har fundert mye over de ulike metodene for å lære et nytt språk.
+2420390	Hvem av oss liker ikke å være berømt?
+2501307	Der kjøpte jeg bøker, magasiner og aviser.
+2571246	Han løper hele veien til bussholdeplassen.
+2572112	Er det ingen som kan låne meg penger?
+2591933	Et godt kunstverk fyller meg med fryd.
+2661088	Jeg kan slett ikke finne noen feil i hans teori.
+2670519	I går var de for første gang i Oslo.
+2671127	Etter denne skuffelsen jeg trenger trøst.
+2686702	Først i løpet av sine tredje sommer får den vesle bartrær sin første krans av greiner.
+2844295	Reiste du noe sted i sommerferien?
+2882053	Har du vært i Kyushu?
+2895337	Det har ikke du noe med.
+2907027	Du skulle ikke betalt regningen.
+2912281	Alle var interessert i historien.
+2912346	Ikke heng deg opp i dine tidligere feil!
+2923292	Vi har ennå ikke lykkes.
+2927204	Hun kan ikke stoppe ham.
+2942667	Skjorten din mangler en knapp.
+2945172	Jeg har fått nok av deg og dine dumme idéer.
+2947958	Han ble lei av å lese.
+2948550	Han tok over styringen av familiebedriften etter hans far døde.
+2948965	Hun tok av seg frakken.
+2949005	Hun ble tvunget til å tilstå.
+3007320	Yokohama er en fin havneby.
+3216121	De gjorde narr av han.
+3299815	Ingen bryr seg om hva du mener.
+3368903	Jeg har hatt et godt liv.
+3484708	Du har valgt mellom to alternativer.
+3522568	Jeg avholdt meg fra å kommentere den avholdte vennen min denne gangen.
+3541311	Vi må alle stå opp mot dette.
+3543004	Kun animalske produkter inneholder kolesterol.
+4694897	Jeg tok toget fra byen min til Tokyo og turen varte flere timer.
+4991917	Jeg bor ikke i Helsingfors.
+4994978	Til tross for det faktum at de alle var nederlendere, snakket de tysk med hverandre.
+5098231	Ja, ta det helt med ro!
+5145634	Kua Thusnelda er subjektet i denne setningen.
+5152967	Sist uke så han en gammel venn som han ikke hadde sett på årevis.
+6041952	Hvorfor liker du ikke meg?
+6045444	Du ville ikke vite hvordan gjør dette, ikke sant?
+8799887	Jeg skulle ønske jeg kunne bo i et så fint hus.
+8990570	Visste du at kjønnshårene til Bush har lus?
+9226422	Han uttrykte seg veldig godt på engelsk.
+9441174	Det eneste språket jeg snakker er fransk.
+10940820	Nara er like gammel som Kyoto.
+10942671	Han har bare én feil.
+10942693	Bilen hans kjørte inn i et tre.
+10943652	Huset mitt er lite og trangt.
+10943871	Jeg ga en bursdagsgave til mora mi.
+10944058	Jeg er like høy som deg.
+10982050	Det er et marked i byen.
+11806878	Jeg kan klare meg selv.
+11806978	Jeg lager ikke mat på mandager. Sønnen min gjør det.
+12218483	Hva ser du i vinduet?
+12576073	Dere er sterkere enn dem.
+12576278	Det har allerede gått mer enn fem år.
+14047555	Synes du at jeg burde slette denne setningen?
+14047655	Kan du fortelle meg litt mer om det?
+14048126	Jeg vet hva som er i eska.
+14048167	Jeg har råd til å kjøpe en bil.
+14048214	Jeg ble skuffet over henne.

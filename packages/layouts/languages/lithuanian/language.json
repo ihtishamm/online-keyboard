@@ -1,0 +1,27 @@
+{
+  "slug": "lithuanian",
+  "code": "lt",
+  "order": 660,
+  "lang": "lt",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Lithuanian",
+    "native": "Lietuvių"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["lt-easy", "lt-standard"],
+  "accents": "ąčęėįšųūžĄČĘĖĮŠŲŪŽ",
+  "sample": "Mes šiandien einame į mišką rinkti grybų ir uogų.",
+  "voice": ["lt-LT"],
+  "wordList": true,
+  "translate": {
+    "google": "lt",
+    "bing": "lt",
+    "deepl": "lt"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

@@ -1,0 +1,15 @@
+{
+  "source": "afwiki.xml.bz2",
+  "pages": 20526,
+  "sentences": 616704,
+  "repeatedSentencesSkipped": 72587,
+  "tokens": 9593506,
+  "distinctWords": 378907,
+  "wordsKept": 100000,
+  "nextWordHeads": 9846,
+  "text": "af-train.txt",
+  "textSentences": 3891,
+  "textWeight": 42,
+  "heldOutPages": 422,
+  "heldOutSentences": 2000
+}

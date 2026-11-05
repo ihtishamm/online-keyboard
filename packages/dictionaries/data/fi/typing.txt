@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+354315	Tämän takia hän menestyi pop-laulajana.
+356263	Tarkoitukseni ei ole satuttaa sinua millään tavalla.
+779872	Ruumis ei ole vielä noussut pintaan.
+1184808	Muiden kustannuksella ei saisi laskea leikkiä.
+2131332	Ei ole lahjahevosen suuhun katsomista.
+2610108	Hän on aina huonoin luokallaan.
+2614416	He alkoivat hetken päästä kävellä.
+2616035	Tässä autossa on kaksi pakoputkea.
+2666463	Ja mikä sinun ongelmasi on?
+2764921	Joskus saa tulla joksikin, mitä ei aikaisemmin ollut.
+2797346	Tuu tänne. Haluun näyttää sulle yhen jutun.
+2816266	Olen pahoillani, emme voineet saada sinulle paikkaa ensimmäisessä luokassa.
+2826392	Kysyin häneltä onko hän ollut Meksikossa.
+2832380	Puhdistettuani ikkunan voin nähdä selvästi sen läpi.
+3055124	Tomilla ei ollut aikomusta antaa periksi.
+3076679	Hän sanoi että hänen isänsä oli sairas, mutta se oli vale.
+3112803	Hänen uusi elokuvansa toi hänelle Akatemianpalkinnon.
+3217312	Se ei ole tarkalleen ottaen salaisuus.
+3225185	En muista milloin olisin viimeksi nähnyt rakeita.
+3225598	Tämä on minun ja tämä on sinun.
+3324168	Minun mielestäni saksa on maailman kaunein kieli.
+3333060	Kieli on yksi yhteisöllisyyden tärkeimmistä edellytyksistä.
+3357053	Sinun täytyy ajaa meidät kotiin.
+3357343	Yleisesti ottaen mikään ei ole niin pelottavaa kuin tuntemattomat asiat.
+3368584	Siitä hetkestä kun tiesin, että yliopisto on olemassa, olen halunnut mennä sinne.
+3394723	Pane ilmastointi pois päältä, täällä on kylmä.
+3704376	Tomin täytyy mennä nyt kotiin.
+3717093	Taidan haluta syödä ulkona tänä iltana.
+3817462	Mikään ei tapahdu ilman syytä.
+3829287	Tämä on kuva Tomin kodista.
+3849456	Sinusta tulee minulle mieleen eräs henkilö, jonka tunsin ennen.
+3991550	Teollistuminen kulkee usein käsi kädessä saastumisen kanssa.
+4127983	Tomi pyysi Maria olemaan lapsenvahtina lapsilleen.
+4137726	Tomi on paljon painavampi kuin Mari.
+4174615	Miksi et tullut juhliin eilen?
+4183337	Tomi näyttää olevan vieläkin järkyttynyt.
+4401507	Atomipommi on valtava uhka ihmiskunnalle.
+4434308	Marin tavoite on omistaa oma koti ennen kuin hän täyttää kolmekymmentä.
+4835375	He yrittivät murtautua vihollislinjojen läpi.
+4941559	Onko tuo edes oikea sana?
+4995784	Minkä kokoluokan yritys se on?
+5203695	Olisi mukavaa, jos voisit tulla.
+5216113	Sinun pitää syödä enemmän vihanneksia.
+5318436	Kaikkihan me tiedämme, ettei kukaan ole täydellinen.
+5728786	Sinulla oli tapana kiivetä tammipuuhumme, kun olit lapsi.
+5971870	Ole kiltti ja pane minua, en voi vastustella yhtään pitempää
+6837309	Jos ei ole heilaa helluntaina, niin ei ole koko kesänä.
+7032597	Missä on lähin ilmainen parkkipaikka?
+7370440	Tuo ei voi olla totta.
+7828199	Mikä on uuden ystävänne nimi?
+7913960	Minä ajattelin, että ehkä se olisi käyttökelpoista.
+8072028	Minä kaipasin sinua kovasti sinun ollessasi Ranskassa.
+8073574	Minun tyttäreni on syvässä unessa.
+8119327	Tämä oli ennen kuin Juhani laitettiin vankilaan.
+8164317	Etkö aio antaa minulle suukkoa?
+8166875	Teidän on löydettävä pienin yhteinen nimittäjä, ennen kuin te laskette murtolukuja yhteen.
+8193274	Minä olen varma, että kukaan ei seurannut minua.
+8368118	Miten monta vierasta olet kutsunut?
+8420029	Eurooppa oli avuton mustan surman edessä heikon sanitaation vuoksi.
+8565319	Me näimme sen tornin etäällä.
+9056069	Minä tutustuin häneen ollessani opiskelija.
+9872034	Herra Suzuki, joka on entinen pääministeri, tulee olemaan komitean puheenjohtaja.
+10050635	Sellaisen tragedian ei olisi pitänyt koskaan tapahtua.
+10073958	Oletko koskaan paistatellut Saharan autiomaan auringossa?
+10076529	Protonien törmäyttäminen on juuri se, mitä Large hadron collider tekee.
+10173182	Elvis on lähtenyt siitä rakennuksesta.
+10271726	Ei ole koiraa karvoihin katsominen.
+10280738	Ranteeni olivat kipeät painonnoston jälkeen.
+10491191	Tapasin sattumalta vanhan opettajani asemalla.
+10742448	Tomi ei ole tervetullut tänne.
+10751627	Edes he itse eivät tienneet sitä.
+10827876	Minun täytyy selvittää täsmälleen, mikä meni pieleen.
+11042711	Tuo ei itse asiassa ole totta.
+11210037	Viime yönä varas murtautui kauppaan.
+11264696	Lääkäri sanoi, että olen terve kuin pukki.
+11500767	En ole nähnyt Tomia yli viikkoon.
+12191400	Tomi ei ole hyvä taistelija.
+13040901	En tiedä onko se hyvä ajatus.
+13314294	Tyttö pakeni, koska hänen vanhempansa löivät häntä.
+13420382	Tänään ei ole niin kuuma kuin eilen.

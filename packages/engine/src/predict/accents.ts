@@ -45,7 +45,7 @@ const COMPOUND_DEPTH = 2;
  * Languages that build long words from parts: compounding Germanic ones and agglutinative
  * ones. Romance and Slavic words rarely split into known words, and trying only adds errors.
  */
-const BUILDS_WORDS = new Set(["de", "nl", "sv", "hu", "tr"]);
+const BUILDS_WORDS = new Set(["de", "nl", "sv", "hu", "tr", "fi", "nb", "da", "et", "is", "af"]);
 
 /** Zipf: frequency ~ 1/(rank + 2). */
 const ratio = (better: number, worse: number) => (worse + 2) / (better + 2);

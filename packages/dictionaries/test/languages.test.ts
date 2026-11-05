@@ -55,6 +55,25 @@ const SLUG: Record<string, string> = {
   sv: "swedish",
   ca: "catalan",
   hr: "croatian",
+  sk: "slovak",
+  sl: "slovenian",
+  sq: "albanian",
+  lt: "lithuanian",
+  lv: "latvian",
+  et: "estonian",
+  fi: "finnish",
+  nb: "norwegian",
+  da: "danish",
+  is: "icelandic",
+  fo: "faroese",
+  ga: "irish",
+  cy: "welsh",
+  gd: "scottish-gaelic",
+  mt: "maltese",
+  gl: "galician",
+  eo: "esperanto",
+  la: "latin",
+  af: "afrikaans",
   ru: "russian",
   uk: "ukrainian",
   be: "belarusian",
@@ -251,7 +270,11 @@ describe("built word lists", () => {
       }
       const words = readFileSync(file, "utf8").split("\n").slice(0, 5000);
       const missing = new Set<string>();
-      for (const w of words) for (const c of w) if (!typeable.has(c)) missing.add(c);
+      for (const w of words) {
+        // Foreign names (Jiří, Stanisław in Esperanto text) are not the language's letters.
+        if (language.script === "Latn" && /^\p{Lu}/u.test(w)) continue;
+        for (const c of w) if (!typeable.has(c)) missing.add(c);
+      }
       expect([...missing].map((c) => `${c} U+${c.codePointAt(0)!.toString(16)}`)).toEqual([]);
     });
   }

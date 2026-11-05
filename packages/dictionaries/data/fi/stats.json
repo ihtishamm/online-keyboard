@@ -1,0 +1,15 @@
+{
+  "source": "fiwiki.xml.bz2",
+  "pages": 9459,
+  "sentences": 930706,
+  "repeatedSentencesSkipped": 45158,
+  "tokens": 8293122,
+  "distinctWords": 787989,
+  "wordsKept": 100000,
+  "nextWordHeads": 9698,
+  "text": "fi-train.txt",
+  "textSentences": 152060,
+  "textWeight": 5.15,
+  "heldOutPages": 180,
+  "heldOutSentences": 2000
+}

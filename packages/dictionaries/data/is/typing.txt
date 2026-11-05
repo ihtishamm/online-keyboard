@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+383488	Ég get ekki samþykkt þessa kenningu.
+384681	Ég gat ekki sofið mikið í nótt.
+384695	Hvaða afsökun muntu nota ef þú getur ekki staðið við loforðið þitt?
+385154	Ég fór í uppáhalds kjólinn minn fyrir teitina.
+385238	Fyrirtækið er í jafnri eigu hópanna tveggja.
+385443	Ég lét einkaritarann minn taka tíu afrit.
+385459	Hann er grófur í framkomu.
+385913	Nemandinn hefur þegar leyst allt dæmið.
+385934	Ég vildi að þú lokaðir hurðinni þegar þú ferð út.
+386113	Ölstofa er vinsæll samkomustaður þar sem drukkinn er bjór.
+387032	Er þessi stigi nógu sterkur til að bera þyngd mína?
+387766	Landið er í vondu efnahagslegu ástandi.
+388927	Hún var hissa á útlitinu á honum.
+392161	Fátæka stúlkan brotnaði niður við að heyra fréttirnar.
+468938	Það eru nokkrar bækur á borðinu.
+475192	Ég þyrfti heila eilífð til að útskýra alltsaman.
+477292	Kate drekkur mikið af mjólk á hverjum degi.
+482986	Hver er munurinn á þessu hérna og þessu þarna.
+487135	Ég les bók meðan ég borða.
+489310	Það eina sem ég fann voru ein skæri.
+490566	Hann lenti í fimmta sæti í hlaupinu.
+495477	Já, ég hugsa að þú ættir að fara.
+516070	Geymdu fé á öruggum stað.
+540892	Það sem þú ekki átt er betra en það sem þú átt.
+544175	Berðu þýðinguna þína saman við þá á töflunni.
+545787	Hefur hann ekki litið á sjálfan sig í spegli?
+627447	Þú ættir að vera búinn undir það versta.
+653300	Hann kann hvorki lestur né skrift.
+664625	Þessi búð lokar klukkan níu um kvöld.
+666896	Hann vann dag og nótt til að verða ríkur.
+671599	Við náðum í allan efniviðinn.
+673371	Við munum berjast til enda.
+690340	Ég keypti þrjár flöskur af víni.
+706966	Ódýrt sake gerir þig veika.
+727438	Ekkert er jafn hart og demantur.
+736056	Ef þú gerir það muntu gera þig að athlægi.
+741564	Jill segist vera hamingjusamlega gift, en stundum mundi maður varla halda það.
+742144	John hefur verið að safna frímerkjum síðan hann var krakki.
+742274	Þú tekur alltaf allt svo bókstaflega.
+747124	John verður að leggja hart að sér til að ná bekkjarfélögum sínum.
+785409	Ræðan er silfur en þögnin gull.
+788026	Hvað er þetta? Þetta er steinn.
+788910	Bill kann aðeins í japönsku.
+827501	Vinsamlegast skilaðu kveðju til fjölskyldunnar þinnar.
+827507	Vinsamlegast ákveddu þig í eitt skipti fyrir öll.
+828332	Mundirðu gjöra svo vel að segja mér fuglaskoðunarsöguna.
+828351	Gefðu mér vinsamlegast annað tækifæri.
+828438	Vinsamlegast komið eins fljótt og auðið er.
+832843	Það er eitt að vita, allt annað að kenna.
+833303	Ég hjálpaði föður mínum í gær.
+856003	Það skiptir ekki máli hvort þú komir eða ekki.
+863099	Vinsamlegast ekki hika við að spurja mig spurninga.
+865989	Regnið fylgir mér hvert sem er!
+866017	Hann týnist sama hvert hann fer.
+868679	Hví reynirðu ekki að haga þér eins og herramaður?
+870836	Gjörðu svo vel að halda áfram.
+886456	Þessir stólar eru í veginum.
+907101	Ég er mjög glaður yfir því að skólanum sé lokið.
+1364308	Ég er hér í viðskiptaerindum.
+1368320	Ég hátta mig klukkan ellefu.
+1960962	Það eru margir Bandaríkjamenn sem kunna að tala japönsku.
+1981157	Hann svaraði ekki spurningunni minni.
+1981189	Geturðu hjálpað mér að finna lyklana mína?
+3998454	Í tíma og ótíma, þá vil ég slaka á og gleyma öllu.
+4171534	Ég er ekki hrifin af útliti hans.
+5758686	Má ég bjóða þér eitthvað meira?
+10352255	Hún hefur son og tvær dætur.
+10464087	Næstum því tíma að byrja.
+10464321	Hann er ekki eins hár og faðir hans.
+10590534	Já, eitthvað af þessum hætti.
+10609691	Rútan kemur ekki alltaf á réttum tíma.
+10609881	Látum það vera eins og er.
+10615944	Í þessari höll búa konungurinn og drottningin.
+10712221	Hvað er erfiðasta tungumál í heimi?
+10722925	Ég er mjög þreytt og vil fara að sofa nokkuð fyrr.
+10974340	Er eitthvað annað sem ég ætti að vita?
+10999682	Níu reikistjörnur, þar á meðal jörðin, snúast um sólina.
+11024527	Þetta málverk hangir á hvolfi.
+11268308	Venus er næstum á stærð við jörðina.
+12305666	Má ég nota þennan penna?

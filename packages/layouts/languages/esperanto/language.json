@@ -1,0 +1,25 @@
+{
+  "slug": "esperanto",
+  "code": "eo",
+  "order": 790,
+  "lang": "eo",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Esperanto",
+    "native": "Esperanto"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["eo-easy", "eo-x-system"],
+  "accents": "ĉĝĥĵŝŭĈĜĤĴŜŬ",
+  "sample": "La vetero estas bela hodiaŭ, do ni iros al la ĝardeno.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "eo"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

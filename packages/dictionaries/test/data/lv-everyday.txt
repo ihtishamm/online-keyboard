@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+474932	Kā jums klājas?
+629689	Mēs esam gandrīz kā brāļi.
+629737	Mana skola ir netālu no stacijas.
+806084	Viņa apsēdās uz gultas, kad māte pina viņas matus.
+1050719	Māte un tēvs ir diezgan nervozi.
+1050733	Tu par karu vai pret?
+1050738	Tā ir mana grāmata.
+1489913	Viņš maksā ar kredītkarti.
+1518591	Klusums ir zelta.
+1982332	Nekad nerunā ar svešiniekiem.
+2024874	Viņš paslēpās aiz durvīm.
+2130365	Es esmu kaķis.
+2446545	Labāk būt mirušam nekā sarkanam.
+2508315	Tas ir balts kā sniegs.
+2508338	Februārī mums ir daudz sniega.
+2525089	Viņš izskatījās mazs stāvot blakus manam lielajam tēvam.
+2525093	Kens uzvarēja mani šahā.
+2525126	Paldies tev, ka beidzot paskaidroji, kāpēc cilvēki uzskata mani par muļķi.
+2525142	Hm, tagad tas ir dīvaini.
+2525146	Ko tu atbildēji?
+2525152	Kur ir problēma?
+2525197	Ilgi dzīvo Padomju Savienībā!
+2525219	Tagad tā ir problēma.
+2525246	Tas ir neīsts.
+2525271	Dzīve ir jautra.
+2525290	Šie zēni ir brālēni.
+2526665	Tas vīrietis ir francūzis. Vai tu un tava māsa arī esat?
+2527238	Es nevaru tev palīdzēt to izdarīt.
+2527580	Es esmu nobijies.
+2527614	Kāds ir izsalcis?
+2527750	Misters Džons ir vecāks nekā es domāju.
+2527757	Mēs esam tikai draugi?
+2527798	Es varu dabūt visu, ko es gribu.
+2528008	Man nav nekas slēpjams.
+2528296	Pajautā viņai kad viņa atgriezīsies.
+2528522	Viņiem ir vīns.
+2528544	Toms nav piesardzīgs.
+2528551	Tev vajag beidzot to izdarīt.
+2536045	Viņi kļuva ļoti nervozi.
+2536057	Vai tu runā angliski?
+2536090	Nē, viņš ir mūsu uzņēmuma vadītājs.
+2536139	Priecājos ar jums iepazīties.
+2562563	Vai viņš atbalstīja viņas ideju?
+2562645	Es nevēlos tevi ievilkt nepatikšanās.
+2585136	Vai tu esi pārsteigts?
+2585193	Visi mani mēģinājumi ir izgāzušies.
+2588150	Kritiķī var strīdēties par to, ka visi iepriekšminētie raksturojumi ir ļoti abstrakti.
+2588254	Mums vajadzēja viņu gaidīt desmit minūtes.
+2588277	Viņa lūdza viņam palikt, bet viņam bija jāiet uz darbu.
+2588652	Ko viņš šodien ir izdarījis?
+2588655	Mēs neizdarījām neko sliktu.
+2588666	Toms gribēja nomazgāt rokas.
+2589527	Sanāksme beigsies rīt.
+2603472	Alkohols neatrisina kādas problēmas.
+2725115	Dzīve ir dāvana.
+2725151	Es ēdu maizi.
+2930926	Toms ir aizmidzis uz soliņa.
+2931121	Viņi palūdza Marijai pieskatīt bērnus.
+3089057	Lūk, mans noslēpums, tas ir ļoti vienkāršs: īsti mēs redzam tikai ar sirdi. Būtiskais nav acīm saredzams.
+3285671	Es esmu jūs kaut kur redzējis.
+3363690	Toms uzbruka Marijai.
+3364209	Ej un atvadies no viņa pirms viņš aiziet.
+3365677	Man šķiet, ka Toms bija tas, kurš nozaga manu maku.
+3370152	Es nespēju noticēt, ka patiešām gribēju precēties ar tevi.
+3808599	Persiešu valoda nav grūta valoda.
+3867846	Vai tev ir māja?
+5220539	Es ceru, ka tas strādās.
+5220562	Es pirmais jautāju.
+5220581	Skeptiķiem bija taisnība.
+5378215	Labrīt manu saulstariņ.
+5490825	Es nezinu iemeslu.
+5490850	Mans tēvs ir stiprāks par tavu tēvu.
+5493655	Mēs arī veicām amputācijas. Mums tas bija jādara.
+5932138	Vai tu domā, ka es to neesmu paredzējis?
+5934724	Es šonakt nedziedāšu.
+5934762	Es neēdīšu neko.
+5935057	Tu to izdariji tīšām!
+5942765	Toms ir pie lidostas.
+6781713	Vai jūs joprojām esat birojā?
+6781735	Toms nevar atlaist Mariju.
+6781743	Tā ir atvērtā koda programmatūra.
+6782849	Viņš vairs nevar pastaigāt.
+6787703	Kas ir tas vīrietis gleznā?
+6806110	Vai tev tas ir?
+7790681	Viņa ir saģērbusies ballītei.
+7790691	Man tas mazliet pietrūks.
+10094902	Mēs vēlamies paplašinātus teikumus.
+10237612	Pasaki Tomam, ka es jokoju.
+10237660	Ko jūs ar to iesāksiet?
+10237868	Viņš to nopelnīja.
+10238268	Uz Baltkrieviju doties mēs negribējām.
+10238655	Es atdošu jums šo pildspalvu.
+10238678	Es nākamnedēļ varētu atbraukt uz Bostonu.
+10238679	Viņš nebija laimīgs.
+10238685	Dublina atrodas Īrijā.
+10238712	Vai tu redzi, ko tu man nodarīji?
+10239238	Man riebjas strīdēties.
+10240385	Vismaz graudaugu uzglabāšanas laiks ir ilgs.
+10241392	Mosties, celies un strādā.
+10242948	Vēlāk tev nosūtīšu e-pastu ķīniešu valodā.
+10242959	Tev nav jāpaskaidro.
+10244102	Kāpēc lai jūs kaut ko tādu darītu?
+10244229	Uz ko jūs aicinājāt?
+10244276	Es to varu dzirdēt visu to gabalu no turienes.
+10245767	Tas būtu negods, ja tu to palaistu garām.
+10246041	Valoda tika izveidota, lai slēptu jūtas.
+10248715	Toms ar velosipēdu devās uz skolu.
+10248717	Istabā bija tik daudz dūmu, ka es tik tikko varēju paelpot.
+10248720	Mēs esam noguruši no garas pastaigas.
+10249665	Skaistumu nevar izmērīt kā, piemēram, dižkoka resnumu, ūdenskrituma augstumu vai dižakmens tilpumu.
+10249960	Toms teica, ka viņš nevarēja atcerēties, kur Marija dzīvoja.
+10249963	Pulkstenis rāda nepareizu laiku.
+10250373	Vai varat man parādīt, kur ir vannas istaba?
+10250374	Mēs nedosimies prom, kamēr spēle nebūs beigusies.
+10254914	Bērni vēlas augļu sulu.
+10254977	Urīns, kas atšķaidīts ūdenī 1:10, ir lielisks mēslojums.
+10255225	Toms nopirka divas biļetes.
+10255690	Tas tiešām ir dīvaini.
+10256007	Vai esi kādreiz bijis uz pārsteiguma ballīti?
+10256283	Toms staroja no auss līdz ausij.
+10257368	Vai Alžīrija var kļūt par brīvdienu vietu?
+10260698	Viņš gribēja būt žurnālists.
+10263972	Lai atrastu atbildi uz šo jautājumu, es devos uz pilsētas bibliotēku.
+10264000	Toms nesmietos par kaut ko tādu.
+10264986	Esmu diezgan apmierināts ar šo situāciju.
+10493476	Man vajadzīgs plāns.
+10493484	Tikai dažas čūskas ir indīgas, bet es baidos no tām visām.
+10493517	Es tikai gribēju būt tev tuvumā.
+10494069	Viņš nekad nav pārkāpis manas mājas slieksni.
+10538623	Vai pērles un citi dārgakmeņi spēj dziedēt ķermeni?
+10538650	Vai viņa zināja, ko dara?
+10538816	Viņš ir anglis.
+10538887	Mēs varam turpināt spēlēt tik ilgi, kamēr neradām troksni.
+10539047	Es nekad neesmu redzējis tevi tik aizņemtu.
+10550630	Tu īsti nevēlies, lai es tevi nobučoju, vai ne?
+10550633	Augstākie paisumi pasaulē ir Kanādas Fundī līcī.
+10566979	1697. gadā Spānija atdeva frančiem salas rietumu trešdaļu, kas vēlāk kļuva par Haiti.
+10566983	Malajiešu tirdzniecības osta, kas pazīstama kā Temaseka, pastāvēja Singapūras salā līdz 14. gadsimtam.
+10593457	Tā nav slimība.
+10593515	Iemācieties kontrolēt sevi.
+10607816	Paskaties uz sevi!
+10642314	Nekas nenotiek tāpat vien, bet ne vienmēr tas ir jāsaprot burtiski.
+10675352	Smēķēšana ietekmē jūsu veselību.
+10852178	Prezidentam patīk ceļot.
+10929082	Man ir rezervēts numurs
+10929095	Kas jums kaiš?
+11235986	Ziri bija viens pats mežā.
+11406905	Man tevis tik ļoti pietrūks, ja tu aiziesi.
+11412460	Parādiet man, lūdzu, kā tas tiek darīts.
+11413451	Gērnika ir slavena Pablo Pikaso glezna, kas gleznota no 1937. gada maija līdz jūnijam un kuras nosaukums atsaucas uz Gērnikas bombardēšanu, kas notika tā gada 26. aprīlī Spānijas pilsoņu kara laikā.
+11414154	Man tevi vajag.
+11414297	Man vajag darbu.
+11415317	Vai jums garšo apelsīni?
+11416645	Man garšo kafija.
+11418012	Nevis dvēsele nevar pastāvēt bez fiziskā ķermeņa, bet gan fiziskais ķermenis nevar pastāvēt bez dvēseles.
+11418291	Kādēļ man jājūtās vainīgam, iepērkoties lielveikalā, to ko es vēlos un cik daudz?!
+11418626	Tā ir zivs.
+11420952	Samī mašīnas logi aizmiglojās.
+11420997	Viņam vajadzēja zināt.
+11422547	Nav nepieciešamas baterijas.
+11426657	Zirī ir nupat pārvācies.
+11427739	Zirī māja atapkaļ.
+11427766	Sliekas ir dārznieka labākie draugi.
+11429101	Sami atjaunoja savu abonementu žurnālam.
+11429851	Gaume ir jākopj.
+11434243	Lūdzu, divas glāzes vīna!
+11434260	Lūdzu, atļauj man.
+11434301	Toms skrēja pakaļ autobusam.
+11438705	Tev jāizmanto savs veselas saprāts.
+11444676	Mani vienmēr ir pārsteigusi cilvēka nelokāmā spēja ticēt tam, kam viņš dod priekšroku būt patiesībai, nevis tam, ko pierādījumi liecina par ticamiem un iespējamiem. Mēs ilgojamies pēc gādīga Visuma, kas pasargās mūs no mūsu bērnišķīgajām kļūdām, un, saskaroties ar pierādījumu kalniem par pretējo, mēs visas cerības saistīsim ar mazākajām šaubām. Nav pierādīts, ka Dievs nepastāv, tāpēc viņam ir jāpastāv.
+11444681	Es ļoti nopietni šaubos, ka Toms būs pārsteigts.
+11444689	Šaubos, vai tas izdosies.
+11444697	Es šaubos, vai Toms gribēja kādu ļaunumu.
+11460540	Viņš ir pelnījis, lai viņā ieklausītos.
+11469632	Upe plūst mierīgi.
+11470098	No pirmā acu uzmetiena Titāns ļoti līdzinās Zemei. Ezeri un jūras ir izkaisīti pa ziemeļu puslodi, un ik pa laikam lietus samitrina tā smilšaino virsmu.
+11470243	Plejādes ir spilgtu zvaigžņu grupa Vērša zvaigznājā.
+11471423	Protams, būt motivētam palīdz.
+11485810	Kur ir mana josta?
+11485813	Šoferiem jālieto drošības jostas.
+11485832	Ziri vienmēr valkāja ādas jostu.
+11485876	Tomam garšo šokolāde.
+11485892	Vai tu vakar pabeidzi lasīt to grāmatu?
+11487679	Ēst ātrās uzkodas ir slikti jūsu veselībai.
+11488469	Lemuri nav pērtiķi.
+11491293	Kamīnā sprakšķēja uguns.
+11491948	Londona ir liela, salīdzinot ar Parīzi.
+11491956	Salīdzinot ar Tokiju, Londona ir maza.
+11492782	Vai tā ir taisnība, ka visi cilvēki kaut kādā līmenī ir liekuļi?
+11496424	Kur ir priežu mežs?
+11496442	Alžīrā ir ļoti maz mežu.
+11496478	Vai tas ir jauns?
+11500688	Vai jūs dzerat zaļo tēju?
+11508275	Toms, visticamāk, pagaidīs līdz pulksten 2:30.
+11513062	Uzmanies no krītošiem kokosriekstiem.
+11513174	Toms tur tasi kafijas.
+11513185	Toms tur glāzi vīna.
+11514419	Vai tas nav ievērības cienīgi?
+11531294	"Vai tu dzersi vīnu?" "Nē."
+11533266	Mans sapnis kļuva par īstenību.
+11533294	Viņas sapņi ir izgaisuši.
+11533334	Tas ir mans lielākais sapnis.
+11533371	Sajūta ir kā sapnī.
+11540316	"Tas var notikt reizēm." "Reizēm? Tas notiek visu laiku!"
+11540471	Izņemot gadījuma rakstura kokaīna lietošanu, viņam nebija nekādu netikumu.
+11548190	Viņš varētu kļūt par musulmani.
+11548323	Viņa ir kaislīga mākslas kolekcionāre.
+11563688	Toms ir pateicīgs.
+11581392	Tomam patīk pludmale.
+11581433	Tu esi ļoti agri.
+11588903	Dzīvnieki apdzīvo mežu.
+11624332	Tomam ir ļoti gudrs suns.
+11624347	Ceptai liellopu gaļai bieži vien pievieno Jorkšīras pudiņu.
+11630936	Kāpēc Toms tev uzbruka?
+11759181	Man ir sociālā trauksme.
+11790924	Šis zieds ļoti jauki smaržo.
+11814430	Faktiskā cena bija zemāka nekā es gaidīju.
+11842272	Toms ir nedaudz saguris.
+11898105	Astrālā projekcija, kas papildināta ar sarežģītiem instrumentiem, tika izmantota tālu Visuma daļu izpētei.
+11904186	Jauns pētījums atklāja, ka īsa auguma vīriešiem papildus vairākiem citiem veselības stāvokļiem ir paaugstināts risks priekšlaicīgi zaudēt matus.
+11911657	Postoša kartupeļu sērga un bads skāra Īriju 1840. gados.
+11918047	Es novērtēju jūsu modrību.
+11918052	Es uzskatu, ka šeit ir nepieciešama stingrāka modrība.
+11918054	Šajos nemierīgajos laikos ir jābūt modram.
+11923847	Neizdzēsiet teikuma paraugu.
+11925271	Viņiem nav izvēles kā vien atsist.
+11933277	Toms ir izturīgs.
+11933281	Cilvēka ķermenis ir pārsteidzoši izturīgs.
+11933403	Katra valoda, tāpat kā katra dzīva būtne, pēc savas būtības ir vērtīga un ir aizsardzības un atbalsta vērta.
+11943635	Jūs neticēsiet, kā viņš var sagrozīt 'patiesības' nozīmi.
+12054474	Astronomija mani vispār neinteresē.
+12056338	Man viņš ļoti patīk!
+12057767	Es plānoju palikt Bostonā uz nedēļu.
+12058276	Man ir tieksme uz dzeju.
+12060334	Nauda jāpārskaita uz drošāku vietu.
+12077015	Marija nebija pārliecināta, uz kuru pusi viņai doties.
+12078941	Sikspārņa lidojums ir ātrs un veikls.
+12089500	Jonass pārbaudīja humanoīda DNS.
+12090177	Kādi dārzeņi Tomam garšo?
+12090181	Mennads iedvesmoja Baiju.
+12090856	Tas patiešām ir nepastāvīgs.
+12090858	Šī ir gaistoša gāze.
+12091650	Viņš vēlas, lai es to izdaru viņas labā.
+12091656	Paredzētās aktivitātes ietver ūdens sportu, makšķerēšanu, putnu vērošanu, riteņbraukšanu un pastaigas.
+12091677	Es neesmu neviena vergs.
+12091681	Cilvēki mēdza vergus pērt.
+12093102	Viņš ēd ābolu.
+12094521	Izvairieties no kofeīna.
+12095041	Es jūtos pilnvarots.
+12095050	Es jūtos savādi.
+12096740	Satriecošās fotogrāfijas atklāj sarežģītu un daudzveidīgu reljefu uz ledainās pundurplanētas.
+12097475	Es vienkārši esmu muļķis.
+12098580	Viņš dzīvo taupīgi.
+12100557	Nāc man klāt.
+12100571	Tas ir gandrīz neiespējami.
+12103181	Tajā laikā astronomija un astroloģija vēl bija nedalāma.
+12103190	Viņa nokrāsoja matus tādā pašā krāsā kā viņa.
+12103208	Mums nav vajadzīga jauna starptautiska palīgvaloda. Angļu valoda jau pilda šo lomu.
+12103227	Šī vieta ir neauglīga.
+12103411	Pie kādas izšķirtspējas tu spēli spēlē?
+12108320	Senatnes pagānu tautām vienmēr bija tendence pielūgt Sauli ar dažādiem nosaukumiem kā gaismas un dzīvības devēju. Un viņu svētki tai par godu notika īsi pirms Ziemas saulgriežiem, gada īsākās dienas, kad Saule Decembrī sāk savu augšupeju, saviļņojot cilvēkus ar pirmo tālo Pavasara solījumu.
+12108386	Salna ir sasalusi rasa.
+12108571	Šorīt bija neliela rasa.
+12109251	Vārnas spalvas mirdzēja zaigojoši melnā krāsā.
+12113273	Es nevēlos pievienoties jūsu grupai.
+12113281	Marija nevar vienkārši darīt visu, ko viņa vēlas.
+12113736	Nenotiks ne viens, ne otrs.
+12113754	Vāji pamati lika mājai sabrukt.
+12115321	Turies ar mani.
+12115769	Marija jūtas pārprasta.
+12117079	Vai man var to ar šokolādi?
+12118065	Zeme sāka drebēt.
+12118101	Zemestrīce satricināja zemi.
+12118176	Es nokritu zemē.
+12118968	Vai tu vari beigt dīdīties?
+12122339	Tas bija viņš, kurš uzstāja.
+12122358	Viņas vecāki uzstāja, lai viņa kļūst neatkarīga.
+12122987	Jūsu pētījumi noteikti nesīs augļus.
+12122989	Es izlikos miegains.
+12123005	Ir pamats optimismam.
+12123040	Mana kreisā kāja ir nobrāzta.
+12123048	Nokritu zemē un nobrāzu ceļgalu.
+12123479	Es sagaidu jūsu palīdzību.
+12124230	Aizmirsu savas manieres.
+12124902	Tu izskatījies tā, it kā būtu vīlies.
+12125413	Oho, vai tas nav brīnišķīgi?
+12128645	Viņa zirgs, kas lēnām virzījās uz priekšu, pēkšņi pārtrauca savu vienmērīgo un nosvērto gaitu, sprauslāja, pacēlās un, kaut arī pieša mudināts, atteicās doties tālāk, it kā pēkšņi būtu parādījies kāds šausmu objekts.
+12130122	Laba rīcība nekad nav veltīga.
+12130530	Viņi juta, ka viņiem kaut kas jāsaka.
+12134201	Tas noteikti būtu tā vērts.
+12139549	Man vajag tikai mieru un klusumu.
+12140214	Visam ir savs laiks un vieta.
+12140294	Pēkšņi kļuvu ļoti miegains.
+12140651	Šaubas nomāc manu dvēseli.
+12140678	Esmu pārāk vieglprātīgs.
+12140712	Es biju bezatbildīgs.
+12140859	Kad es mēģinu staigāt, man šeit rodas šausmīgas sāpes.
+12140863	Toms nokrita no jumta un salauza trīs ribas.
+12140881	Man vajadzētu būt izprotošākam.
+12142411	Atrodiet savu augstāko spēku.
+12143019	Man nepatīk būt mīkstam un pūkainam.
+12143241	Beidziet rūpēties, ko par jums domā citi cilvēki.
+12143443	Par ko viņi runā?
+12143500	Cukurs padara mani slimu.
+12144250	Man kļūst nelabi, domājot par naudu.
+12144390	Man bija dīvainākais sapnis.
+12145053	Toms aukstajos ziemas mēnešos vienmēr jūtas nomākts.
+12158197	Man dažreiz ir grūti noticēt jauniešu teiktajam.
+12160699	Ieliec pārpalikumus hermētiskos traukos, lai novērstu bojāšanos.
+12160757	Kāds ir mans uzdevums?
+12163589	Viņai ir skaista balss.
+12163597	Es neesmu pelnījis tavu draudzību.
+12163777	Mani mērķi ir pieticīgi.
+12164148	Gribi mainīt savu dzīvi?
+12164910	Izvairieties no lieku risku uzņemšanās.
+12168901	Man ir zirgs, kas runā.
+12171114	Bivas ezers ir lielākais ezers Japānā.
+12171865	Toms apskāva katru no saviem bērniem.
+12173652	Par laimi, elektrība beidzot parādījās.
+12175427	Viņš to nepieminēja.
+12175811	Vai tev kādreiz ir ienācis prātā, ka tev var nebūt taisnība?
+12178212	Viņš nevēlas pakļauties sabiedrības normām.
+12179074	Vakardien es nopirku zirgu.
+12179130	Izlasi to man.
+12179238	Varbūt tā bija tā kļūda.
+12179294	Viņš ir ļoti ātrs.
+12179623	Es neskraidīšu tev pakaļ.
+12179771	Lūdzu, neskatieties uz mani tā.
+12180603	Strazds ir dziedātājputns.
+12182008	Toms nekad nav ēdis taizemiešu ēdienu.
+12186633	Kas un cik viņiem maksā par šādas propogandas izplatīšanu?
+12189882	Delfīni un vaļi nav zivis.
+12196605	Piekāst viņus un viņu likumus.
+12199603	Es rakstu franču valodā, lai pateiktu frančiem, ka neesmu francūzis.
+12204253	Eži ir visēdāji.
+12204380	Smaga sirds nenes veiklu mēli.
+12207062	Varbūt viņš melo.
+12211868	Zupai jābūt karstai.
+12211880	Tā zupa tika gatavota lielā čuguna katlā virs ugunskura.
+12215162	Runā, ka lielākā daļa lidmašīnu avāriju notiek nosēšanās vai pacelšanās posmos.
+12221092	Kad es piedzimu, mani vecāki dzīvoja Bostonā.
+12221316	Tu esi tik kontrolējošs.
+12221322	Izskatās, ka viņi ir apšaubāmi.
+12221731	Viņa mīl savu dēlu.
+12223615	Ko Toms vēlas?
+12232797	Toms ir ļoti noturīgs un vienmēr spēj pasmaidīt neatkarīgi no tā, kas notiek viņa dzīvē.
+12253771	Es uzskatu, ka jums tas būtu jādara.
+12288779	Agrāk mājrūpniecība bija pavisam ierasta padarīšana.
+12288789	Ja es būtu steidzies prātīgi, es nebūtu pieļāvis kļūdas.
+12324462	Jauneklis dzīvo vecā mājā.
+12324509	Es mēdzu būt pārāk sīkumains.
+12346222	Tu esi ļoti bagāta.
+12359592	Dārza suņuburkšķis ir viengadīgs augs, kam ir aromātiskas lapas un pētersīlim līdzīga garša.
+12369430	Man vajag kādu, kas man palīdzētu nokrāsot manu māju.
+12369432	Šī ir skaista glezna.
+12370635	Mēs bijām naivi.
+12373588	Es zinu, ka tev patiks šī filma.
+12373592	Tā filma bija interesantāka, nekā es gaidīju tai būt.
+12377122	Esmu labrocis, bet dažreiz mēģinu kaut ko darīt ar otru roku, piemēram, tagad ar kreiso roku izmantoju datorapeli.
+12378569	Nav nemaz tik grūti iemācīties braukt ar velosipēdu.
+12385081	Gaisā riņķoja pūķi.
+12388536	Nejauši izdzēsu failu.
+12388539	Beidzot pabeidzu darbu.
+12411020	Uzmanieties no Toma.
+12426470	Toms pievienojās brālībai.
+12428149	Viņš atlika ballīti.
+12437226	Es nezinu, vai tas ir vajadzīgs.
+12438749	Katra dvēsele ir daudzpusīga būtne.
+12438823	Man nekas nesanāca, jo es nebiju sagatavojies.
+12438839	Es sajutos vainīgs par to, ka es tik vienkārši dzīvoju.
+12445712	Šķiet, ka šajā vietā ir salīdzinoši zems piesārņojuma līmenis.
+12447134	Es mēdzu sevi noniecināt.
+12447332	Kaķim ap kaklu bija lentīte.
+12453034	Mani moka satiksmes troksnis.
+12453438	Anna maigi virzīja sienāzi uz loga pusi.
+12456627	Ar dvēseles spēku ir iespējams jebkas.
+12457591	Tomam noteikti ir paveicies.
+12459304	Tā ir doma, kas man sagādā mokas.
+12463496	Tas ir jāatzīst.
+12468893	Es esmu liels apšaubītājs.
+12468921	Tas šķiet bezcerīgi.
+12473874	Hipertireozes vai lielas vairogdziedzera aktivitātes gadījumā dziedzeris no asinsrites izvada jodīda jonus ātrāk nekā parasti.
+12473986	Tirgus ir pilns ar kņadu un burzmu.
+12478143	Mēs to darīsim par brīvu.
+12480229	Tā ir tikai kopija.
+12481719	Toma spilvens ir rozā, un uz tā ir fejas attēls.
+12482487	Negadījums noticis viņas nolaidības dēļ.
+12482619	Šī ir viena no Toma lielākajām bailēm.
+12483053	Tu esi skaistule.
+12483174	Kur ir vīrietis?
+12503840	Kas viņi tādi ir?
+12505890	Tā ir mana kļūda.
+12510718	Kur atrodas tuvākais muzejs?
+12510788	Šim alum ir diezgan rūgta garša.
+12511086	Par ko vispār var brīnīties šajos laikos.
+12520276	Es šodien nejūtos kā savā ādā.
+12522612	Senlatvieši godāja velnu.
+12522650	Tā tik turpini.
+12536094	Šis ir ļoti labs jautājums.
+12536365	Viņa prātīgums viņu paglāba no bojāejas.
+12537381	Autortiesību likumi apslāpē radošumu.
+12538259	Kā tu uzdrošinies ar mani runāt tādā balss tonī!
+12538268	Es nevaru ēst neko saldu, dēļ saviem jūtīgajiem zobiem.
+12540724	Ir patīkami būt viņa klātbūtnē.
+12548393	Vai varam uzdziedāt?
+12548420	Mums tas nebūs vajadzīgs.
+12550014	Vai ir viegli to saprast?
+12550044	Kad viņš ir piedzēries, viņam ir zems pacietības līmenis.
+12556456	Ūdens, kas nāk no Džurdžuras avotiem, ir tīrs.
+12556928	Es pametu fermu.
+12556929	Tev nav jāpaliek.
+12559125	Tas šķiet dīvaini.
+12560878	Viņi uzvarēja miera vējos.
+12561923	Tas prasīs mēnešus.
+12569574	Vai tu baidies no nākotnes?
+12574635	Vai tev ir austiņas?
+12574637	Aiziet, pasaki viņai!
+12574764	Esmu ļoti apmulsusi.
+12578426	Kad pamostos es neatceros savus sapņus.
+12579257	Tādam darbam esmu pārāk pedantisks.
+12585612	Es to svešinieku nepasveicināju, jo nobijos ka viņš mani nesapratīs.
+12586852	Nodzerties jau nav māksla.
+12586857	Man nebija ne jausmas.
+12586932	Ar savu veselību tā nedrīkst jokoties.
+12587011	Ieelpojiet caur degunu un izelpojiet caur muti.
+12589466	Ee jau esmu noguris.
+12590996	Es jūtos slikti.
+12591013	Esmu pārāk nomākts, lai to darītu.
+12591060	Man nepatīk romantiska mūzika.
+12592220	Bailes paralizē saprātu.
+12592222	Tas nebija saprātīgi.
+12592337	Tas kļūst smieklīgi.
+12593412	Viņš man pat nepajautāja, vai es esmu ar mieru.
+12612034	Marija mani pacietīgi gaidīja.
+12613894	Es biju dusmīgs.
+12617598	Apdrošināšana ir tikai oficiāls veids, kā izkrāpt naudu.
+12621327	Tas jau kļūst uzbāzīgi.
+12621330	Tas jau paliek uzmācīgi.
+12638252	Tas man liek justies dzīvai.
+12638369	Dariet pa savam.
+12638387	Tas ir praktiski.
+12643522	Es neesmu vienīgais, kuram tā vīrieša balss izklausās pēc sievietes balss.
+12647430	Vai tu dzirdēji tās zosis?
+12650903	Es pacietīgi gaidīšu.
+12651500	Toms bija pacietīgs.
+12653167	Senprūšu valodas atdzīvināšana sākās 80. gadu sākumā.
+12657060	Tad viņš saslima.
+12657314	Nevajag sevi pazemot.
+12657328	Nevajag sevi noniecināt.
+12674750	Šodien es nevaru neko padarīt.
+12680230	Tomam ir arī sarkana automašīna.
+12684017	Es neesmu redzējis Tomu kopš pagājušās vasaras.
+12686442	Man pagājušonakt bija dīvains sapnis.
+12686443	Es knapi atceros ko sapņoju pagājušonakt.
+12687031	Tas ir pieaugošs mēness.
+12732356	Insulīnu dabiski ražo aizkuņģa dziedzeris.
+12732357	Vairāk cilvēku mirst no aptaukošanās sekām nekā no bada.
+12774591	Taivānā cilvēki smagi strādā.
+12879125	Viņa visu dzirdēja.
+12879188	Tom, es tev uzticējos.
+12879200	Tev nevajadzētu man uzticēties.
+12880662	Kāpēc lai es šeit būtu, ja man nebūtu jābūt?
+12881758	Tas ir beidzies.
+12884674	Viņa izklausās izmisusi.
+12886423	Es jūtos privileģēta būt kopā ar tevi.
+12890168	Ne visiem dzīvē izdodas.
+12890783	Kur ir Džims?
+12893266	Ceru, ka tu jūties labāk, nekā izskaties.
+12894401	Nemirsti uz manis.
+12895274	Lūdzu, ļauj man paskaidrot savu rīcību.
+12902059	Viņa pieļāva kļūdu.
+12903977	Es esmu idiots.
+12904158	Man apnicis visu dienu būt mājās.
+12904235	Iela ir asfaltēta.
+12910508	Tas bija ļoti spraigi.
+12915251	Tas man lika justies šausmīgi.
+12917449	Tas nebija tā vērts.
+12924894	Zemes magnētiskā vide aiztur elektronus un jonus koncentriskās joslās, kas aptver planētu. Šīs jostas, ko sauc par Van Allena radiācijas jostām, aiztur lielāko daļu augstas enerģijas daļiņu.
+12927742	Zīlīte ir putns.
+12929437	Mana dzīve sūkā.
+12929464	Kur es tagad atrodos?
+12929721	Tā bija laba izvēle.
+12930017	Esmu tik miegains.
+12930042	Oho! Kas tas bija?
+12931574	Lai arī cik ļoti man tas patīk, es to vairs nevēlos darīt.
+12931615	Te iekšā ir auksts.
+12932302	Man trūkst vārdu.
+12932519	Kas šitas par mēslu?
+12932714	Pajautā man kaut ko vieglāku.
+12934059	Viņš vienmēr smird.
+12934066	Es ceru, ka tu to novērtē.
+12934315	Man nepatīk tulkot nejaušus teikumus.
+12934316	Man nepatīk šie teikumi.
+12936471	Man patīk brokastīs ēst maizi ar sviestu.
+12936531	Savu pirmo rupjmaizi izcepu ar paštaisītu maizes ieraugu. Sākumā gribēju padoties, jo man šķita, ka mīkla, kas šķita pārāk lipīga, ir neizdevusies, bet tad es to tomēr izcepu, un es neesmu vienīgā, kurai tā ļoti garšo.
+12938662	Tas sabojāja mūsu draudzību.
+12938687	Šķiet, ka man šodien neveicas.
+12938892	Viņš viņu faktiski publiski pazemoja.
+12939158	Tu pārāk viegli padevies.
+12941221	Man nepatīk klausīties, kā bērni raud.
+12941539	Jābūt kurlam, lai to nedzirdētu, un aklam, lai to neredzētu.
+12942939	Es negribu tikt izmantots.
+12942948	Alkoholisms iznīcināja manu dzīvi.
+12942969	Galvenais alkohola trūkums ir alkohola trūkums.
+12943255	Šis velosipēds ir vecs, bet tas ir labāk nekā nekas.
+12943309	Ko man vajadzēja darīt?
+12944244	Man tas jādara tagad.
+12944251	Kāpēc gan ne?
+12944552	Viņam bija jāiemācās cilvēkiem piedot.
+12946418	Vai vēlaties piparkūku cepumus?
+12946441	Tagad mani tas galīgi nesatrauktu.
+12946479	Es piedzimu tūkstoš deviņi simti trīsdesmit trešajā gadā.
+12946502	Tas nav mūsu tradīcijās.
+12946520	Marija bieži valkā augstpapēžu kurpes.
+12946865	Tev jau bija sava iespēja.
+12946870	Es satiku franču tūristus.
+12947719	Toms saglabāja mieru.
+12947911	Jums jādomā pašiem.
+12947927	Vai vari nodziedāt dziesmu?
+12948027	Nu viss, tu pats uzprasījies.
+12948321	Man patīk baltu valodas.
+12952367	Kāpēc tu bojā man dzīvi?
+12952409	Arī vīrieši raud.
+12952442	Vai ir jau janvāris?
+12952445	Vai 1 tiek uzskatīts par primāro skaitli?
+12952634	Kā viņš zināja?
+12952683	Es nesaprotu šo diagrammu.
+12953279	Viņš diskreditē to, ko esmu izdarījis.
+12953439	Jūsu tēmas ir zemiskas.
+12954266	Es neko nenožēloju.
+12957892	Es nebiju spējīgs izrādīt savas emocijas līdz tādam līmenim, kādu es patiesībā jutu.
+12960871	Es biju slikts draugs.
+12960882	Es biju drausmīgs draugs.
+12965751	Toms gribēja kausētus cūku taukus, nevis sviestu.
+12966401	Man bija jāatrod pašam savs ceļš.
+12967734	Kaut kas neticams!
+12967804	Es atturējos no dzeršanas.
+12970363	Tas man lika vilties.
+12970504	Es par viņu kļūdījos.
+12970530	Man nepatīk, ka uz mani blenž.
+12970560	Man nepatīk filmas.
+12970720	Viņš viegli zaudē savaldīšanos.
+12972976	Varbūt viņam bija taisnība.
+12973204	Es nebiju gaidījis izrādi.
+12974223	Es šodien nejūtos savā ādā.
+12974445	Es mēdzu sajaukt lietotājvārdus.
+12976028	Es nezinu, kā tas varēja gadīties.
+12977832	Pieklājīgi vārdi nomierina traku cilvēku.
+12978681	Diemžēl tas nav manos spēkos.
+12979045	Toms ir diezgan apzinīgs.
+12990941	Pie mums ieradās negaidīti ciemiņi.
+12990991	Jūs izturējāties necienīgi.
+12992690	Sapnī ar mani runāja kaut kāds suns.
+12992695	Es varbūt esmu tik atturīgs, jo esmu ticis pievilts no vairākiem cilvēkiem, kuri izmantojuši manu labsirdību savtīgiem nolūkiem.
+12993672	Nav tik skaļi jārunā.
+12993675	Nerunā tik skaļi!
+12993679	Vladimirs skaļi runāja pa telefonu.
+12994817	Ir vērts atcerēties šo pamācību.
+12994822	Es atsakos uz to atbildēt.
+12994825	Pirmais solis ir saprast, ka tev ir problēma.
+12994829	Labojumu izdarīšana ir pirmais solis ceļā uz rehabilitāciju.
+12994836	Toms nav Ūdensvīrs.
+12994839	Okeāns stiepjas ārpus redzesloka, atgādinājums par bezgalību.
+12997972	Tas, kurš dzimis Brazīlijā, ir brazīlietis.
+12998658	Man nepatīk spēlēt volejbolu.
+13000363	Man kauns dzīvot Eiropā.
+13000692	Toms nopirka sev papagaili.
+13002999	Esmu noguris no izaicinājumiem.
+13049194	Es ņemu savus vārdus atpakaļ.
+13049332	Mēs esam vientuļi šajā pasaulē.
+13049334	Policija deva Tomam iespēju padoties.
+13056772	Tomam labi padodas ģeogrāfija, vai ne?
+13062031	Trīs dienas, ne vairāk.
+13062989	Gramatika ir ļoti grūta.
+13094172	Bibliotēkā ir daudz grāmatu.
+13096614	Mans brālis ir ļoti svarīgs. Vismaz viņš tā iedomājas.
+13096659	Es tev nepiekrītu, Tom.
+13096916	Vai tas ir Toma dēls?
+13096923	Tomam riebās dzīvot Bostonā.
+13112991	Cik skaista ainava!
+13190158	Toma suns vakar aizgāja mūžībā.
+13248907	Es biju ļoti nogurusi.
+13248908	Es biju ļoti noguris.
+13273248	Rasu segregācija nav pieņemama.
+13280877	Toms tikko sācis paukošanu.
+13281327	Es jūs netaisnīgi apsūdzēju.
+13284272	Toms ir diezgan dīvains cilvēks.
+13284544	Es ilgojos pēc brīva dzīvesveida.
+13304069	Šī persona runā nesaprotamu valodu.
+13317144	Tai virvei jābūt satītai.
+13320108	Tas šķiet bīstami.
+13336988	Vilki ir draudīgi plēsēji.
+13341236	Bailes sastindzina prātu.
+13341439	Viņa viņu iebiedēja.
+13342739	Galvaskausā atrodas smadzenes.
+13342895	Tas ir gandrīz tukšs.
+13342899	Mēs pārstājām to darīt.
+13342947	Tokiponā mēs neko nenosaucam vārdā, mēs sakām, ko tas nozīmē.
+13346882	Ir nepieklājīgi, ka cilvēki laužas rindā.
+13351108	Vienkāršākais skaidrojums vienmēr ir visticamākais.
+13357953	Krūms ir pazīstams ciematos no Rietumāfrikas līdz Dienvidāfrikai. Tas ražo dzelteni oranžus augļus, kas pēc garšas ir līdzīgi aprikozēm, bet smaržo pēc ananāsiem. Augļi ir bagāti ar kalorijām un C vitamīnu, dzelzi un kāliju.
+13358236	Baidos, ka nebūs tik viegli.
+13358260	Kur man doties tālāk?
+13358370	Kādas ir jūsu vājās puses?
+13358375	Kādas ir jūsu stiprās un vājās puses?
+13363333	Es tik un tā nezinu, ko citu darīt.
+13363393	Toms ir ģenētiķis.
+13365543	Man tā grāmata šķita interesanta.
+13365545	Šī grāmata man šķita interesanta.
+13367985	Tā bija apzināta izvēle.
+13370973	Es nevarēju pretoties kārdinājumam.
+13373069	Viņai būtu jāatpūšas.
+13373167	Es tam tiku pāri pagājušajā gadā.
+13378005	Piedalīšanās nav obligāta.
+13391981	Man ir nepatikšanas.
+13397026	Kā tu vispār vari naktī gulēt?
+13399085	Mana dzīve ir pilna nožēlas.
+13399147	Viņai nevar uzticēties.
+13400666	Viņš atklāti ņirgājās par mani.
+13401296	Ceļš ir slikti uzturēts.
+13402859	Viņš strādā ļoti šaurā telpā.
+13402862	Karjera mani neinteresē.
+13404478	Izmanto abas rokas.
+13404709	Man tiešām nevajadzētu to darīt.
+13404789	Mums patīk radošums.
+13407775	Es biju pārāk piekusis, lai kaut ko darītu.
+13408648	Es neesmu izgulējies.
+13408649	Es vienkārši neizgulējos.
+13409062	Šķiet, esmu pārcenties.
+13411338	Ir normāli izjust emocijas.
+13414793	Toms kļuva ļoti miegains.
+13422574	Cik ļauni no tavas puses.
+13427353	Es biju pacietīgs.
+13428832	Es aizmirsu skaitīt līdzi.
+13433133	Tu izskaties sarūgtināta.
+13433222	Toms ir paštaisns.
+13444564	Nekas nevarētu būt sliktāks par to.
+13458010	Toms daiļrunīgi runāja.
+13502020	Mums šķiet, ka mēs esam nolādēti.
+13515002	Es to atradu nejauši.
+13517602	Es vienkārši gribēju uzspēlēt pokeru.
+13519785	Es vēlos ar jums runāt.
+13528232	Tas viss ir ļoti dīvaini.
+13530374	Rēķinu jau esmu samaksājis.
+13611122	Jūs esat pārsteidzoši attapīgs.
+13612655	Viņa man draudēja.
+13624090	To ir vērts pamēģināt.
+13628182	Kāpēc lai es tev palīdzētu?
+13628360	Viņi ir no Somijas.
+13630521	Tornis slējās starp drupām.
+13630943	Es šodien dodu priekšroku klasiskajai mūzikai.
+13632170	Es cenšos nesūdzēties.
+13634074	Cilvēki ir briesmoņi.
+13634832	Vai tas ir nopietni?
+13636571	Man patīk šī dziesma.
+13636575	Man patīk tavas dziesmas.
+13640367	Viņš izlēja nevainīgas asinis tikai prieka pēc.
+13649162	Laura ir no Brazīlijas. Viņa ir brazīliete.
+13652191	Tomam nerūp viņa veselība.
+13652532	Tas mēsls nedarbojas.
+13653070	Viņam nav sava iekšēja ritma.
+13653114	Tas viss ir absurdi.
+13653269	Lielās mājas ne vienmēr ir ērtas dzīvošanai.
+13654208	Viņš izzina filozofiskos jautājumus.
+13657684	Labi, ka pastāstīji.
+13658969	Tev nav par to jālielās.
+13658980	Tas, kā viņš uzvedas, ir vienkārši pretīgi.
+13659096	Kubas galvaspilsēta ir Havana.
+13661173	Ko, pie velna, tu dari?
+13663446	Pirmdiena bija tik juceklīga!
+13667722	Es nogulēju astoņas stundas.
+13667871	Viņam ir izcilnieka komplekss.
+13668985	Es vienkārši to nesaprotu.
+13669011	Tu izskaties mazliet savādāk.
+13673057	Tas daudz nelīdzēja.
+13674038	Es pats nezinu.
+13675610	Kāpēc lai tu par mani šaubītos?
+13678552	Jūs esat tāds muļķis.
+13679667	Toms ir cilvēcīgs.
+13679671	Cilvēcei ir pienākums aizsargāt savu planētu.
+13679960	Es uzskatu, ka kļūdu pieļaušana ir svarīga mācīšanās procesa sastāvdaļa.
+13680933	Varbūt jūs pārpratāt.
+13681128	Viņš domā, ka tu esi apburoša, bet viņš ir pārāk kautrīgs, lai kaut ko pateiktu.
+13684819	Es biju dusmīgs uz sevi.
+13685045	Vai tu domā, ka esmu stulbs?
+13686632	Kriptonīts nav reāls materiāls.
+13687027	Šodien jūtos vājš.
+13687069	Toms bija ļoti nepatīkams, jo bija gulējis tikai divas stundas.
+13687231	Šodiena ir nomācoša.
+13687511	Tas ir pārāk daudz, lai es ar to tiktu galā.
+13688509	Es klausos ļoti dažādu mūziku.
+13688612	Man sāk palikt auksti.
+13689437	Ja tu saki nē, tad lai tā arī būtu.
+13691893	Man vajadzēja nomirt tajā kritienā.
+13691904	Ar mani runā enģeļi.
+13692634	Droši vari man šonakt piezvanīt, ja tev ļoti vajag.
+13694404	Vai nav vienalga! Es darīšu kā es gribēšu!
+13694555	Man nepatīk nepāra skaitļi.
+13694975	Man vajag palīdzību!
+13695056	Toms nesatiek ar savu tēvu.
+13695111	Šī mūzika man ļoti palīdz atgūties.
+13696044	Toma vecamtēvam ļoti nepatika dalīties un stāstīt par savu skarbo un nepatīkamo pieredzi izsūtīšanas nometnēs.
+13697797	Vai daudziem nepatīk, ka es tik daudz muldu?
+13698015	Varbūt viņa to dara vienkārši pieklājības pēc.
+13699400	Ko gribēšu to darīšu, man nevienav nav jātaisnojas.
+13699549	Viņš izskatījās noraizējies par mani, tajā fotogrāfijā.
+13699551	Es nevēlos šos gēnus nodot kādam tālāk.
+13699634	Es labprāt paļautos tikai uz sevi, bet baidos, ka šajā pasaulē tas nav īsti iespējams.
+13699675	Man reizēm nepatīk valkāt cepures.
+13699815	Cilvēka sirds ir nepakļaujama.
+13700166	Viņš ir cietsirdīgs nelietis.
+13700443	Es biju atlūzis.
+13700501	Man vajag kaut kādas zāles, bet es nezinu kādas.
+13700506	Tas radījums izklausās dīvaini.
+13700757	Nē, es runāju par citu cilvēku.
+13700985	Kas tev svarīgāka? Kvantitāte vai kvalitāte?
+13701775	Es esmu galīgi atmetis cerības likt tiesības. Ne jau tādēļ, ka es nespētu nolikt, bet gan dēļ autovadīšanas kultūras uz ceļiem.
+13702264	Kā es šobrīd varu uzlabot savu veselību?
+13702300	Ko man ar to iesākt?
+13702427	Es nezinu kā man tas sanāca.
+13702477	Tas nav izdevīgi.
+13702546	Kūkums man ir iedzimts.
+13703290	Es joprojām nesaprotu šīs nianses.
+13703503	Kas var būt labāks par to?
+13704511	Tā ir zīme.
+13704541	Toms uz Mēriju parasti skatās ar nosodošu skatienu, neatkarīgi no tā cik daudz un ko viņa dara.
+13706463	Tomam nepatīk, ka viņam māca, kā jādzīvo.
+13706481	Tas ir sava veida noslēpums.
+13710863	Es, tik un tā, nekad neesmu juties cilvēka ķermenī, kā savā ādā.
+13711731	Es jau vairākus gadus neesmu slēpojis.
+13711940	Reizēm var apvienot lietderīgo ar patīkamo.
+13712520	Es neredzu, kāpēc man vajadzētu viņai palīdzēt.
+13712585	Neizmanto amerikānismus, nemēģini izlikties par amerikāni.
+13715878	Vai tu vari beigt fantazēt?
+13717511	Tu nevari viņiem uzticēties.
+13718634	Man nepatīk balti palagi.
+13719235	Tas bija vesels komplekss.
+13727706	Nav jau māksla neieklausīties savā organismā.
+13728176	Viņa ir ļoti pašapzinīga.
+13729072	Kā noritēja tikšanās?
+13730567	Man nākamreiz jābūt gudrākam.
+13730572	Nemāci Tomu, ja pats neesi bijis labāks.
+13732053	Toma senči bija raduši pārdzīvot tādu aukstumu.
+13732128	Es nedaudz pietēloju.
+13740378	Tev nav vajadzīga kosmētika.
+13741518	Toms ieteica to nedarīt.
+13742526	Laukos, dažreiz, dzīve nemaz nav tik mierīga, kā dažiem šķiet.
+13743236	Mēs viens otrā izceļam ēnas puses.
+13747596	Eiropā cilvēki pārlieku baidās ko mainīt savā ikdienā.
+13747666	Tu neesi pietiekami elastīga.
+13747669	Jūs neesat pietiekami elastīgi.
+13747823	Viņu ģimenē baidījās runāt par neērtām tēmām.
+13750122	Divus gadus pēc smagā kritiena un traumas, Toms knapi spēj padarīt visus nepieciešamos mājas darbus.
+13750170	Toms man teica, ka tā ir laba īpašība, ja tu pārsvarā skaties sevī, nevis ārpusē.
+13750197	Katram patīk atrasties patīkamu cilvēku kompānijā.
+13750230	Vai Toms ir kovbojs?
+13750996	Tā ir stulbākā lieta ko darīt pēc fiziskas traumas, tas ir, smēķēt cigaretes.
+13751697	Tur pat ne kripatiņas varbabības ir attēlots, tad kur ir arguments to aizliegt?! Es saprastu, ja tur būtu bijusi attēlota vardarbība vai asinis. Bet tur ir tikai mirušo cilvēku portreti, kas domāts ar piemiņas nozīmi. Skumji, absolūts cilvēcīguma trūkums.
+13751723	Tā vienkārši ir ņirgāšanās, no sistēmas puses.
+13751959	Ar ko atšķirās slēgtās no slepenajām organizācijām?
+13754492	Patiesībā, es neko tādu neesmu pelnījis.
+13754579	Viņam interesē Japānas viedoklis.
+13754728	Agrāk šeit bija lielāks kopības gars.
+13754809	Kāpēc dzīvei dažreiz jābūt tik bezdvēseliskai?
+13764945	Vispirms padomā, tad runā.
+13768131	Es vairs nevaru izturēt to banālismu.
+13768133	Es vairs nevaru paciest to banālismu.
+13774829	Šī ir viena no manām mīļākajām bērnības dziesmām.
+13775276	Ko iegūst uzvarētājs?
+13778399	Tomam, gribot negribot, par to nāca rēka.
+13778558	"Kādēļ viņš smejas?" "Manuprāt, viņš vienkārši izrāda sajūsmu, ka var pastāstīt un dalīties ar savu pieredzi."
+13778989	Paldies, ka uzklausīji mani.
+13781397	Kāpēc Tomam nepatīk, ka es tik daudz runāju?
+13812906	Ja gribat, varat paņemt manējo.
+13813072	Vai iedzersim par to?
+13813223	Es nespēju noticēt, ka viņa to izdarīja.
+13814629	Es par to vispār neuztraucos.
+13815078	Kuba nav kubs.
+13815434	Šovakar iešu iedzert ar dažiem draugiem.
+13815940	Kas zina, kas izskrēja cauri viņa prātam.
+13817116	Ziloņi ir majestātiski dzīvnieki.
+13817223	Es gaidīju stundām.
+13817276	Es jums neteikšu, kā to izdarīt.
+13817342	Toms reti kavējas darbā.
+13818178	Vai tev ir viņa telefona numurs?
+13818191	Lai neizdarītu galīgās muļķības, ir jāsaglabā vēsu galvu.
+13819626	Viņi grib, lai cilvēki viņus žēlo.
+13821944	Es varu darīt lietas, ko mans tēvs nekad nevarēja.
+13823512	Toms zināja, ka tā ir slikta ideja.
+13823572	Pastāsti man, kas notika tajā istabā.
+13823728	Pumpuri sāka atvērties.
+13824105	Šī ir mana karote.
+13824434	Maikam ļoti patīk dzīvnieki.
+13824718	Pašpalīdzība ir vislabākā palīdzība.
+13824743	Kāpēc tu uz mums tā skaties?
+13825107	Mani nomocīja neziņa.
+13826804	Es to nevaru atļauties.
+13826924	Ak, dieniņās, cik tu esi skaista.
+13827966	Tu esi pateicis pietiekami.
+13827976	Toms ir lauksaimnieks.
+13827979	Ja tā notiek, piezvani mums.
+13828036	Toms un Marija slidoja uz aizsalušā dīķa.
+13828067	Toms gribēja, lai viņa dēls mācās tajā skolā.
+13828456	Kūka ir apēsta.
+13828587	Šovakar viņi sniegs ziņojumu.
+13828676	Es to tikko nopirku.
+13829168	Man ir septiņdesmit trīs gadi.
+13829260	Viņiem nav Polijas pilsonības.
+13829263	Es redzēju koalu.
+13829291	Es jaucos lietās, kas uz mani neattiecas.
+13829310	Jūs izskatāties ļoti bālas.
+13829537	Es vēlētos divas biļetes, lūdzu.
+13830354	"Ko tu vēlies ēst?" "Nav svarīgi, dod man to, kas ir pieejams."
+13830369	Sadaliet kūku starp jums trim.
+13830521	Miršana ir daļa no spēles noteikumiem.
+13830523	Ar šo tu nevari iet iekšā.
+13830540	Vai tas ir tīrs zelts?
+13830544	Tu iemīlēsies Brazīlijā.
+13830794	Es zvēru, ka kādu dienu es tev visu izstāstīšu.
+13831307	Viņi teica, ka vēlas tikai, lai viņus atstāj mierā.
+13831401	Toms uzaicināja Mariju uz savu māju.
+13831435	Šis ir mans maks.
+13832211	Kāda ir minimālā alga Slovākijā?
+13832222	"Vai drīkstu ienākt?" "Jā, lūdzu!"
+13832247	Es aizmigu ar kontaktlēcām acīs.
+13832254	Vai jūs nelasījāt to, ko es uzrakstīju?
+13832314	Tu neizskaties pēc svarcēlāja.
+13832806	Viņa ir ļoti skaista sieviete.
+13832983	Ej lejā pa kāpnēm.
+13833529	Mēs gribam būt droši.
+13834151	Vai viņi ir mājās?
+13834290	Es tev neko nedabūju.
+13834502	Mēs ar jums sazināsimies, ja mums būs vēl kādi jautājumi.
+13834507	Es nedzīvoju, lai ēstu, es ēdu, lai dzīvotu.
+13835029	Cilvēkiem komunicēt, tā ir vitāla vajadzība.
+13835854	Ziema drīz būs cauri.
+13836118	Tas ir slapjš.
+13836218	Vai tas ir viss, ko tu gribi pateikt?
+13836220	Vai tas ir viss, ko vēlaties pateikt?
+13836448	Man jāpieskata trusis.
+13836550	Līdz rītdienai būšu Bostonā.
+13836554	Viss ir nopietni.
+13836747	Tu vari gulēt šeit, ja vēlies.
+13836768	Toms apciemo draugus Bostonā.
+13836953	Es to darīšu šādā veidā.
+13837046	Neaizmirsti ierakstīt savu vārdu sarakstā.
+13837175	Šo vietu ir vērts apmeklēt vismaz vienreiz.
+13840723	Tatāru valoda ir Tatarstānas valoda.
+13842607	Vakardiena izvērtās par galīgu jucekli.
+13843132	Tu tiešām esi nepatikšanās, vai ne?
+13843133	Jūs tiešām esat nepatikšanās, vai ne?
+13843261	Man ir lūgums.
+13843343	Metjū ienīda augstumu.
+13843345	Metjū arī nokrita.
+13846234	Cik jūs par to gribat?
+13847327	Mums joprojām tas ir jāizdara.
+13848193	Tas ir salmu jumts.
+13849997	Es nezinu, kāpēc es smejos.
+13851045	Lūdzu, piezvani man, kad būsi to izdarījis.
+13852943	Ļaujiet man to izdarīt.
+13854316	Es nespēju to iemācīties.
+13855114	Es tev palīdzēšu, ja iespējams.
+13857185	Kā tas darbojas?
+13857237	Kāpēc tu nepiezvanīji?
+13861574	Spēja pateikt "stop" savureiz glābj dzīvības.
+13862450	Es bieži pusdienoju viens.
+13863187	Es apsēdos lai pagaidītu.
+13863205	Kāds ir sliktā noskaņojumā.
+13864353	Zini savas robežas.
+13865976	Tā! Pie kā es paliku?
+13866016	Viņš vienmēr izvēlas improvizēt.
+13866753	Toms ielēca bedrē.
+13866986	Es pagatavoju tēju.
+13869357	Dod man laiku padomāt.
+13869375	Ja gribi, vari doties mājās.
+13869809	Man šeit ir apnicis.
+13871230	Toms izskatījās labi.
+13871276	Kaut kas ir piesaistījis Toma uzmanību.
+13871292	Kāpēc Toms neizsauca palīdzību?
+13876592	Toms apceļoja Japānu.
+13876644	Es jūtu, ka tā ir mana vaina.
+13879310	Mēs neko nevaram darīt.
+13881180	Es nāku no Irākas. Esmu irākietis, un es runāju arābiski.
+13882680	Es tā domāju.
+13882685	Musulmaņi tic atmaksas dienai.
+13893128	Viņš tik daudz gulēja.
+13893148	Viņš gulēja uz muguras.
+13894291	Toms ir vienlīdzības piekritējs.
+13896144	Tas ir visizsmalcinātākais modelis tirgū.
+13896595	Tas ir gluds.
+13896600	Tas ir tvaiks.
+13896631	Tā ir kokvilna.
+13899032	Vai tu vari strādāt viens?
+13899135	Man nav jāsteidzas.
+13900714	Kāda ir šī vārda etimoloģiskā sakne?
+13904213	Viņš ir vīrietis, kas novērtē sievietes.
+13917428	Vai tu viņus gaidi?
+13933284	Bet es to nevaru izdarīt.
+13951084	Marts ir gandrīz pusaudzis, vismaz viņš pats tā domā
+13958143	Vācija ir vēsa zeme.
+13958144	Tev vajadzētu būt pēdējam vārdam.
+13958540	Toms atļāva Marijai doties vienai pašai.
+13958571	Šis vārdnīca satur daudz informācijas.
+13959419	Es redzēju tevi ar Tomu pagājušajā pirmdienā.
+13959445	Tu vari runāt manā klātbūtnē.
+13959533	Izpausmes brīvība ir svarīga.
+13961972	Tev vajadzētu konsultēties ar advokātu.
+13962037	Toms bija mazliet noraizējies par to, kas varētu notikt.
+13963280	Vai varat atkārtot?
+13963290	Nevar tik daudz ēst.
+13963877	Man vajag, lai viņa to redzētu.
+13964404	Vienkārši dari visu, ko Toms saka.
+13964425	Atrodi sev citu nodarbošanos.
+13964429	Pirmdienās es guļu visu dienu.
+13966149	Vai ir suņi, kas nerej?
+13967862	Vai jūs esat atraduši atbildi uz šo jautājumu?
+13968255	Strausi nelido, jo tiem ir ļoti īsi spārni.
+13968309	Viņam vajadzēja viņu uzaicināt.
+13968329	Vai jums ir šis apavu pāris lielākos izmēros?
+13969527	Toms ir garākais bērns savā klasē.
+13969574	Tas ir arī mans iespaids.
+13969626	Kurš dzīvnieks ir brūns?
+13970617	Mēs palikām ar Tomu.
+13970627	Toms ir ļoti nobijies.
+13970644	Mēs ceļojām uz Franciju.
+13970689	Vecākie bērni palīdzēja jaunākajiem.
+13970747	Visu nakti es klīdu pa ielām.
+13970914	Velns lika tev to darīt.
+13971434	Toms ir bijis ļoti vientuļš kopš viņa sieva nomira.
+13971442	Visi ir bijuši tik jauki.
+13971443	Es tikai saku, ka Tomam nevar uzticēties.
+13971459	Es domāju, ka mēs viens otram varētu palīdzēt.
+13971485	Es tev esmu melojis.
+13971487	Viņš ir spītīgs savā viedoklī.
+13971489	Es viņu tikko dzirdēju.
+13972097	Tavs darbs nav grūts.
+13973139	Kāpēc viņš aizlaidās?
+13973835	Tu laikam biji noguris.
+13976756	Toms pelnīja savu iztiku kā skolotājs.
+13976920	Kāds ir jūsu ieteikums?
+13978039	Viņš viens pats dzīvo mežā.
+13978905	Bērniem ir veca grāmata.
+13981686	Vai tu teici Tomam par to, ko redzēji?
+13981743	Es tev to būtu pateikusi.
+13981806	Valstij vajag jūsu palīdzību.
+13982720	Ko man tagad vajadzētu darīt?
+13982722	Man priekš Toma ir darbs.
+13982779	Jūs nepārkāpāt likumu.
+13983676	Es nespēju pateikt patiesību.
+13984026	Kā es varu uzlabot savu angļu valodu?
+13984028	Toms novietoja automašīnu atpakaļgaitā.
+13984032	Ne visi putni spēj lidot.
+13984207	Es nedomāju, ka šeit ir ārsts.
+13984477	Damaska atrodas Sīrijā.
+13985295	Viņa tevi ciena.
+13986759	Toms sarakstā atpazina trīs vārdus.
+13988006	Mani pūliņi bija veltīgi.
+13988074	Kad atvēru kasti, tā bija tukša.
+13988113	Vai pēc deviņiem zvanīt ir lētāk?
+13989063	Ko Mērija tur dara viena pati?
+13989304	Vai tu tagad esi aizņemts?
+13989348	Beidz izlikties, ka nepazīsti mani.
+13989375	Es vienkārši vēlos noskaidrot, kas notika.
+13990408	Biju drošs, ka jūs ieradīsieties.
+13990896	Kāpēc tu nevelc kleitu?
+13991461	Cerams, ka viņš mani pagaidīs.
+13992071	Tas bija nepiemēroti.
+13993498	Toms ir atkritumu vācējs.
+13993509	Kāpēc es esmu tā piekusis?
+13993956	Tur pārdod puķes.
+14003202	Cilvēki uz lietām skatās atšķirīgi atkarībā no tā, vai viņi ir bagāti vai nabagi.
+14003307	Kas tas par putnu tur kokā?
+14010652	Vai tu gribi alu?
+14033409	Toms nepavadīja nakti mājās.
+14033475	Neņem to pie sirds.
+14069344	Vai mēs par daudz gremdējamies pagātnē?
+14069799	Vakar es pavadīju nakti cietumā.
+14071289	Toms negribēja izcelties.
+14074407	Toms nebūtu dziedājis, ja mēs nebūtu viņam lūguši.
+14079549	Cerams, mēs dzīvosim laimīgi līdz mūža galam.
+14081376	Vai gribat kādu jauku, siltu zāļu tēju?
+14081795	Vai tā nav maza pilsēta?
+14083758	Skola brīvlaikā ir slēgta.
+14085204	Viņš varētu būt veģetārietis.
+14087325	Lūdzu, iztulko šo.
+14087326	Kāpēc flamingi ir rozā?
+14087329	Es patiesībā to netaisījos darīt.
+14087330	Es patiesībā to negrasījos darīt.
+14088639	Ēdiena ziņā esmu ļoti izvēlīga.
+14089540	Londonu klāja migla.
+14094732	Esmu nolēmis piekrist to darīt.
+14096714	Toms noasiņoja līdz nāvei.
+14096801	Toma attieksme ir slavējama.
+14096802	Toma attieksme ir cildināma.
+14096812	Jūs visi esat ļoti mierīgi.
+14097045	Janni nav īpaši labs mērījumos.
+14097049	Tev par Tomu vairs nav jāuztraucas.
+14097052	Tev par Tomu vairs nevajag uztraukties.
+14097760	Viņš kvēli uz viņu paskatījās.
+14097772	Viņa mierina tēvu.

@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+469439	Ta sai üldise imetluse objektiks.
+620461	Ei ole vahet, kas lähed täna või homme.
+621673	Selles sõnaraamatus on umbes pool miljonit sõna.
+956040	Ei, see pole minu kodu.
+957376	Ma pesen selle pluusi ära.
+1179762	Kes võtaks selle äriprojekti rahastamise enese peale?
+1567160	Proovi seda uut ülikonda selga, siis näeme, kas see istub.
+2536231	Emili on minu parim sõber.
+2551403	See raamat on kuningast, kes oma krooni kaotab.
+2709594	Ma kukkusin eksamil läbi, sest ma ei õppinud.
+2709621	Ta läks lõpuks lahku sellest naisest.
+2709670	Kui palju autosid sul on olnud?
+2710678	Hallo? Oled sa veel siin?
+3325931	Olen näljane, sest ei söönud hommikust.
+3402661	Ta on pere must lammas.
+3772597	Ma kuulsin, et sa köhisid.
+3858768	Ma soovin, et sa oleksid minuga.
+3861127	Mida?! Holkil oli poeg? Aga ta polnud ju abielus.
+4340542	Oleks olnud parem, kui sa poleks täna tulnud.
+4340561	Et kaitsta oma pead, tuleb sul kiivrit kanda.
+4425025	Me oleme Tatoebas kõik sõbrad!
+4425083	Mu enesealalhoiuinstinkt hoiab mind tagasi täiesti korras lennukitest välja hüppamast.
+4425089	Kaladel on lõpused ja uimed.
+4428004	Õnnetus juhtus kaks tundi tagasi.
+4450130	Ma ütlesin sulle, et see ei toiminud.
+4649153	Sa oled väga hea kitarrist.
+4681116	Oli raske vastu panna soovile Tomi kael kahekorra käänata.
+4721341	Oktoober on alles kolme kuu pärast.
+5076882	Mul on ainult üks tekk.
+5076965	Ma söön praegu oma õega lõunat.
+5141095	Kas ma saaksin teie tähelepanu?
+6766922	Mu jalg on jälle surnud!
+8033908	See on hea viis uute inimestega kohtumiseks.
+8952432	Kas sa tahad meiega minna?
+9114208	Ära pane oma arvutit kinni.
+9114670	Kas sa tahad midagi juua?
+9120474	Nad mõlemad meeldivad mulle väga.
+9120476	Tulin siia, et sinuga rääkida.
+9141253	Sa ei pea homme varakult üles tõusma.
+9289667	Ettenägematute asjaolude tõttu on kõik tulevased tunnid sellel semestril interneti teel.
+11279989	Kuidas saab ilma hea hariduseta edukas olla?
+11280198	Helistan neile homme, kui tulen tagasi.
+11281038	Ta pole selline nagu meie.
+11281504	Kes tahab poola keelt õppida?
+11281541	Kes andis Kreekale nii palju raha?
+11281609	Miljard inimest räägib inglise keelt.
+11281691	Ma olen nagu mu ema.
+11297979	Ma ei tea tema perekonnanime.
+11309579	Sinu elukohas on palju järvi.
+11309808	Ta läks Pariisi, kuid tema vanemad läksid Londonisse.
+11313709	Ta ei pruugi mind mäletada, aga mina mäletan teda.
+11317355	Mu õde on kuulus laulja.
+11326226	Sa sööd liiga palju liha.
+11330625	Vaata, mis tal seljas on!
+11338114	Ma usun, et meil on tõsine olukord.
+11349785	Täna lugesin päevalehte ja leidsin sealt ühe väga huvitava artikli.
+11349883	See näeb nii pidulik välja.
+11354697	Tal on rohkem raha, kui vaja.
+11354725	Ma tahan õppida hollandi keelt.
+11354948	Sa annad mulle rohkem tunnustust, kui ma väärin.
+11355117	Suvel käin tihti rannas ujumas.
+11380442	Ta oskab rääkida portugali keelt.
+11390166	Kas need on kõik sinu omad?
+11390225	Millal te otsustasite seda teha?
+11390227	Miks sa seda raamatut rebid?
+11820825	Sloveeni keel on Sloveenia Vabariigi ametlik riigikeel.
+12029570	Sa tead, et ma olen kursis.
+12385040	Soovin, et kõik inimesed elaksid õiglaselt.
+12385044	Ma võtan oma ravimeid tühja kõhuga.
+12493720	Kas teie tütar on siin?
+12748055	Kui naine pole täiuslik, pole ta minu jaoks õige.
+12748122	Ta rääkis hästi jaapani keelt.
+13158725	Kuidas saaksime end koroonaviiruse eest kaitsta?
+13482219	Sinu asemel ma ei läheks sinna.
+13694223	Aasta kuues kuu on juuni.
+13719994	Gröönimaa on maailma suurim saar.
+13908062	Elav kala ujub vee all.
+14069641	Minu emakeel on taani keel.
+14096553	Ära lase seksitöötajal endale käeraudu panna.
+14098587	Ma tean, et sa usud mind.

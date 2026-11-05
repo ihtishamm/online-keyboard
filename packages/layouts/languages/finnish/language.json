@@ -1,0 +1,27 @@
+{
+  "slug": "finnish",
+  "code": "fi",
+  "order": 690,
+  "lang": "fi",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Finnish",
+    "native": "Suomi"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["fi-easy", "fi-standard"],
+  "accents": "äöåšžÄÖÅŠŽ",
+  "sample": "Tänään menemme metsään poimimaan marjoja ja sieniä.",
+  "voice": ["fi-FI"],
+  "wordList": true,
+  "translate": {
+    "google": "fi",
+    "bing": "fi",
+    "deepl": "fi"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

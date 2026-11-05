@@ -1,0 +1,27 @@
+{
+  "slug": "norwegian",
+  "code": "nb",
+  "order": 700,
+  "lang": "nb",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Norwegian",
+    "native": "Norsk"
+  },
+  "aliases": ["Bokmål", "Bokmal"],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["nb-easy", "nb-standard"],
+  "accents": "æøåéÆØÅÉ",
+  "sample": "I dag går vi på tur i skogen og plukker blåbær.",
+  "voice": ["nb-NO"],
+  "wordList": true,
+  "translate": {
+    "google": "no",
+    "bing": "nb",
+    "deepl": "nb"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

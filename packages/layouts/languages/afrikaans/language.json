@@ -1,0 +1,26 @@
+{
+  "slug": "afrikaans",
+  "code": "af",
+  "order": 810,
+  "lang": "af",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Afrikaans",
+    "native": "Afrikaans"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["af-easy"],
+  "accents": "êëéèïîôöûüáóúÊËÉÈÏÎÔÖÛÜÁÓÚ",
+  "sample": "Ons gaan môre strand toe as die weer mooi is.",
+  "voice": ["af-ZA"],
+  "wordList": true,
+  "translate": {
+    "google": "af",
+    "bing": "af"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

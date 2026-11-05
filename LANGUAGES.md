@@ -76,3 +76,22 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Japanese (/japanese) | Jpan | – | yes | Beta | – | no | typing tutor |
 | Chinese (Simplified) (/chinese-simplified) | Hans | – | yes | Beta | – | no | typing tutor |
 | Chinese (Traditional) (/chinese-traditional) | Hant | – | no | no | – | no | typing tutor |
+| Slovak (/slovak) | Latn | C | yes | Beta | – | sk-SK | spell check meets its targets; smart accents meet their target |
+| Slovenian (/slovenian) | Latn | C | yes | Beta | – | sl-SI | spell check meets its targets; smart accents meet their target |
+| Albanian (/albanian) | Latn | C | yes | Beta | – | sq-AL | spell check meets its targets; smart accents meet their target |
+| Lithuanian (/lithuanian) | Latn | C | yes | Beta | – | lt-LT | spell check meets its targets; smart accents meet their target |
+| Latvian (/latvian) | Latn | C | yes | Beta | – | lv-LV | spell check meets its targets; smart accents meet their target |
+| Estonian (/estonian) | Latn | C | yes | Beta | – | et-EE | spell check meets its targets; smart accents meet their target |
+| Finnish (/finnish) | Latn | C | yes | Beta | – | fi-FI | spell check meets its targets; smart accents meet their target |
+| Norwegian (/norwegian) | Latn | C | yes | Beta | – | nb-NO | spell check meets its targets; smart accents meet their target |
+| Danish (/danish) | Latn | C | yes | Beta | – | da-DK | spell check meets its targets; smart accents meet their target |
+| Icelandic (/icelandic) | Latn | C | yes | Beta | – | is-IS | spell check meets its targets; smart accents meet their target |
+| Faroese (/faroese) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target; typing test with words and sentences |
+| Irish (/irish) | Latn | C | yes | Beta | – | no | spell check meets its targets |
+| Welsh (/welsh) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target |
+| Scottish Gaelic (/scottish-gaelic) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target |
+| Maltese (/maltese) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target; typing test with words and sentences |
+| Galician (/galician) | Latn | C | yes | Beta | – | gl-ES | spell check meets its targets |
+| Esperanto (/esperanto) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target |
+| Latin (/latin) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target |
+| Afrikaans (/afrikaans) | Latn | C | yes | Beta | – | af-ZA | spell check meets its targets; smart accents meet their target |

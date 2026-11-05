@@ -1,0 +1,25 @@
+{
+  "slug": "scottish-gaelic",
+  "code": "gd",
+  "order": 760,
+  "lang": "gd",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Scottish Gaelic",
+    "native": "Gàidhlig"
+  },
+  "aliases": ["Gaelic"],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["gd-easy", "gd-standard"],
+  "accents": "àèìòùÀÈÌÒÙ",
+  "sample": "Tha an t-sìde brèagha an-diugh agus tha sinn a' dol dhan tràigh.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "gd"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

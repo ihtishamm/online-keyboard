@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+474891	Hun gav katten mælk.
+474970	Flyet afgår kl. 8:00.
+474981	Her til morgen skar jeg mig under barberingen.
+476044	Jeg vil vente her indtil han kommer.
+477037	Jeg foretrækker engelsk.
+479783	Messing er en legering af kobber og zink.
+479818	Jeg råder dig til at tage hjem.
+483430	Computeren er en kompliceret maskine.
+516115	Hunden løb efter katten.
+529932	Hun dumpede til eksamen og det skuffede mig meget.
+562185	Jeg vil spille tennis.
+570197	Der bliver aldrig løjet så meget som før et valg, under en krig, og efter en jagt.
+574501	Hvem er det, der sover i min seng?
+584528	Han formodedes at komme.
+586027	Jeg er bange for at jeg ikke kan hjælpe dig.
+586305	Jeg har ikke tid til at skrive til hende.
+594185	Jeg kommer tilbage klokken halv syv.
+594188	Han har blondt hår.
+606687	Dette tv-apparat er både stort og dyrt.
+606706	Borgmesteren overrakte selv præmierne.
+612382	Hun købte også ordbogen.
+613968	Denne stol er lavet af plast.
+614047	Kina er meget større end Japan.
+614130	Som en måde at fordrive tiden på sine lange rejser, lavede Christoffer Columbus engang en sætning med et uendeligt antal ord.
+614133	Hun får det dårligt bare ved synet af en slange.
+614209	Han har endnu ikke læst bogen.
+615007	Er du ny her?
+615421	Har du bestemt dig for at tage til Japan?
+615477	De forventer at du samarbejder.
+616005	Han begik selvmord.
+618744	Hvad koster det?
+618887	Han mødte sin ven medens han badede i havet.
+619359	Han stillede mig et spørgsmål.
+620415	Søndag er den sidste dag i ugen.
+621938	Jeg holder mest af sommeren.
+622188	Han viste os nogle fotos.
+626493	Næste gang kommer jeg tidligere.
+628410	Toget afgår om fem minutter.
+630638	De børn er lykkelige.
+630763	De æbler er store.
+630799	Der er ikke mange bøger på de hylder.
+647457	Jeg tager med dig til lufthavnen.
+654908	Et øjebliks tøven kan koste en pilot livet.
+659909	Jeg føler mig skyldig.
+660059	Han sang medens han arbejdede.
+661709	Mange europæere kender ikke det moderne Japan.
+663173	Hvor højt er det tårn?
+663371	Er de her dine briller?
+666963	Jeg er en hustru.
+669379	Jeg har en ven, hvis far er lærer.
+669525	Vent venligst her indtil han kommer.
+669798	Hun har den smukkeste bagdel jeg nogensinde har set.
+671940	Han skiftede skole sidste år.
+673343	"Hvem er uighurerne?" "Det ved jeg ikke."
+675078	Hun havde kun en lille sum penge.
+675134	Vent her til han kommer tilbage.
+675180	Er der nogle breve til mig i dagens post?
+675272	Lægen gav mig en indsprøjtning.
+685121	De har endnu ikke fastsat datoen for deres bryllup.
+688605	Spørg hende hvornår hun kommer tilbage.
+689336	Kvinders stilling har i årenes løb helt sikkert ændret sig til det bedre.
+693790	Han rejser til udlandet næste år.
+694509	Min mor er A-menneske.
+695522	Det er en hemmelighed.
+696695	Jeg er lavere end ham.
+696953	Har du alkoholfrie drikke?
+697191	Hvordan kan du være så passiv? Hvorfor tager du ikke hævn?
+701465	Han måler tiden med et radiostyret ur.
+707838	Problemet er ikke så meget pengene, som det er tiden.
+713051	Lægebehandlingen har kun forværret min mands tilstand.
+727234	Dette hus er ikke til salg.
+734105	Alt eller intet.
+750138	Jeg så den film for lang tid siden.
+754428	Jeg bor nær ved havet, altså kan jeg tit tage til stranden.
+755484	Gode piger kommer i himlen, slemme piger kommer alle vegne.
+763379	Priserne for de japanske biler er endnu relativ høje.
+767853	Kent er den fødte leder.
+945293	Mange asiatere har engelsk som fællessprog.
+945334	Jeg spurgte ham om, hvor han skulle hen.
+945402	Hun taler kun meget lidt engelsk.
+945426	Må jeg låne din hæftemaskine?
+979205	Der var ingen i huset.
+1006184	Man gav mig et tilbud jeg ikke kunne afslå.
+1100657	Hendes gamle kat er stadig i live.
+1120025	Spillet ville ikke være blevet aflyst, hvis ikke det havde regnet så meget.
+1123743	Jeg er stolt af dig.
+1130934	Hunde, der gør, bider ikke.
+1143530	Jeg husker huset, som jeg er vokset op i.
+1151376	Jeg kan ikke hjælpe jer.
+1157696	Kunne du lægge disse tasker i bagagerummet?
+1166628	Maleren bruger kun døde farver i sine malerier.
+1191124	Min motorcykel er ny.
+1278159	Vi har en aftale.
+1282106	Hundene, kattene og hestene er dyr.
+1296279	Foran os er hængebroen.
+1387222	Hvis livet er latterlig og absurd, så glæd dig over, at det ikke er kedeligt.
+1389911	Jeg har et æg.
+1399485	Burj Khalifa er i øjeblikket den højeste skyskraber i verden.
+1581893	Jeg kan ikke udstå ham.
+1715183	USA er et godt marked for japanske produkter.
+1720345	Mig går det strålende.
+1732925	Det var for varmt indenfor ...
+1749415	Jeg spytter på din mors grav!
+1756054	Engang var de hinanden til hjælp.
+1756322	Du har overrasket alle.
+1758387	Støjen fik hunden til at gø.
+1764920	Til hver hytte hører en minihave.
+1783238	Hvad er det smukkeste sprog i verden?
+1786036	Jeg har lært lidt norsk da jeg elsker det sprog.
+1786692	I kan parkere her.
+1788609	Hun sagde 'Jeg elsker dig' til mig.
+1789612	Tom sidder fast i fortiden.
+1790087	Hold op med at tale udenom og sig mig hvad problemet er!
+1793004	Tom og Maria har været gift i tre år.
+1793230	Du går ind i hospitalet.
+1796865	Hvad synes du om reggaemusik?
+1798133	Min bror er taget til Italien.
+1798189	Min bror har købt en ny bil.
+1798880	Nogen har sovet på sofaen.
+1801858	Jeg har en kuglepen, men jeg vil gerne have en anden.
+1803032	Hvor bruger du dine penge?
+1803125	Hvor ser du tegnefilm?
+1803168	Hvor finder du de blomster?
+1803174	Hvor spiller du basketball?
+1807439	Jeg kan lide din skole.
+1813052	Jeg har mange plysdyr.
+1815180	Han ved hvordan man sliber en kniv.
+1831705	Hvor mange æg spiste du i morges?
+1845340	Han bestilte en bøf til os.
+1848242	Hvad betyder ordet "talent" for dig?
+1858823	Funktionerne sinus og cosinus antager værdier mellem -1 og 1 (inklusive -1 og 1).
+1863481	Jeg gik til fods i skole.
+1863511	Hvordan er det lykkedes dig at få liget derind?
+1863800	Jeg kiggede rundt, men så ingen.
+1876607	Jeg elsker lugten af napalm om morgenen.
+1881820	Brugte han kondom?
+1884705	Selvom det regner i morgen, vil jeg tage derhen.
+1884728	Tom lukkede sin mappe og rakte den til Mary.
+1884955	Jeg fik at vide, at han var syg.
+1885082	Hvor kildrede du dem?
+1885127	Hvor limede du dem?
+1904554	Ormehullet er stabilt.
+1905432	Min vægt er fuldkommen normal. Jeg er bare tyve centimeter for kort.
+1914671	Hvis bare jeg havde lavet mine hjemmeopgaver!
+1914724	Jeg ser dit bord.
+1915003	Ræk mig kartoflerne.
+1915057	Ser du et kors og et spejl?
+1934601	Vågn op, sovetryne! Du har sovet i tolv timer!
+1939435	Tom er stor.
+1939654	Den øl er god.
+1945083	Hvem har knust koppen?
+1945336	Hun er alkoholiker.
+1945586	Hvor savede du dem?
+1945818	Hun har en perfekt krop.
+1945850	De gjorde det nogle få gange.
+1946301	Jeg spurgte ham om han kendte hendes adresse.
+1946357	Efter at have lavet min hjemmeopgave så jeg fjernsyn.
+1950321	Miniskørter er gået af mode.
+1952074	I kan ikke slå os alle ihjel.
+1952745	Tom kan ikke høre noget.
+1959396	Du er ikke et barn længere.
+1959984	Problemet er at solenergi simpelthen er for dyr.
+1960082	Dette er Ken. Han elsker sin hund.
+1962240	Han er en god taber.
+1962561	Statistikken taler for os.
+1979593	Døren blev skubbet op.
+1981102	Han gav mig det.
+1981221	Hun bad ham om at ringe til hende senere.
+1981242	De store sorte katte er altid i den grønne skov.
+1987614	Han lavede en fejl og drak gift.
+1987678	Jo flere penge vi har, jo flere ønsker vi.
+1995784	Det kan ikke gøres indenfor en time.
+1995785	At få at vide om der eksisterer liv udenfor Jorden, interesserer enhver.
+1995788	Vores lærer er ikke altid venlig overfor os.
+2022588	De eneste fingeraftryk politiet fandt på dørhåndtaget, var Toms.
+2022951	Hvad er dette til?
+2027465	Tom vil have os til at montere tv'et på væggen.
+2029653	"Det er første gang jeg kradser mine ejere", sagde katten.
+2039447	Vi er ikke længere i firserne.
+2067254	Kan du huske dette spil?
+2071984	I morgen tager jeg mig en fridag.
+2110097	Esperanto er en enorm udvidelse af min verden.
+2131727	Hold op! Det kildrer!
+2163208	Damaskus ligger i Syrien.
+2195408	Jeg tager cyklen til arbejde.
+2232955	Vær ikke et røvhul.
+2232976	Vores by bliver større og større.
+2232990	Min pullover er lilla.
+2234644	Du dikterede teksterne.
+2234809	Fordomme findes overalt og skader alle.
+2239336	Tom undervurderede Mary.
+2254763	Mit favoritord på tysk er ordet "Handschuhe".
+2260638	Er der noget du ønsker at sige?
+2263211	Cyklen er min.
+2266740	Vil du vente på os ved stationen?
+2282001	Hvilken søgemaskine bruger I?
+2282405	Doktor, jeg hedder Mutaz.
+2293332	Tom ønskede lidt mere albuerum.
+2294447	Det er for dårligt.
+2297220	Du er fyret.
+2301137	Katten fangede rotterne.
+2305702	Vi behøver talentfulde mennesker.
+2335970	Er telefaxen en moderne udgave af telegrafen?
+2338996	Er babyen vågnet op?
+2339107	Hun har drukket en kop kaffe.
+2348052	Er hun ikke sød?
+2350789	Jeg er næsten færdig.
+2365888	Jeg bør læse bogen.
+2368008	Jeg er ikke en atlet.
+2368023	Hendes datter har mavepine.
+2381047	"Bedre død end rød" var en populær sætning under "Den Kolde Krig".
+2382908	Mit fædreland er der, hvor min sjæl er.
+2401319	Lad os gå ind.
+2413010	Brødet er frisk.
+2436005	Spis, for du er sulten.
+2446544	Hellere død end rød.
+2452196	Vi bliver aldrig enige.
+2462565	I skoven var der mange svampe som var vokset frem umiddelbart efter en varm sommerregn.
+2468299	Solen er en stjerne.
+2478547	Bananen er sød.
+2482337	Tom tror ikke på udviklingslæren.
+2483081	Tom nægtede at tale fransk.
+2483122	Tom underviser i fransk i Boston.
+2483150	Hvordan siger man det på fransk?
+2483232	Er fransk svært at lære?
+2502570	Det er ikke kun til pynt.
+2503293	Men det er sandt!
+2513689	Advokater er alle løgnere.
+2513963	Hvorfor prøvede du at løbe væk?
+2516373	Slå på tråden før du kommer.
+2519631	Mit fly ankom kl. 21.
+2527782	Jeg så dig.
+2527806	Hold op med at opføre dig som en baby.
+2530343	Jeg låner dem fra stadsbiblioteket.
+2557938	Han er syndebukken.
+2568960	Jeg forsøgte forgæves at overbevise hende.
+2571195	"Jeg er ikke kun klog, nej, jeg er også en så utrolig skønhed", bemærkede Maria. "Jeg kunne næsten forelske mig i mig selv!" "Meget beskeden er du dog ikke", konstaterede Tom.
+2573961	Tom sagde at han havde gjort rent i huset hele dagen.
+2603045	Vi lærer for livet, ikke for skolen.
+2606565	Det var mørkeblåt.
+2610184	Det er skyet.
+2637809	Hvis enhver fejede for egen dør, ville vi have en renere by.
+2650237	Han bor i et tørlagt amt.
+2650634	Hvad er vigtigere?
+2665171	Jeg tog til hospitalet.
+2675648	John har en japansk bil.
+2681383	USA's præsident har endnu ikke taget klar stilling til den brutale magtkamp mellem hæren og muslimbrødrene.
+2681689	Dit kørekort er udløbet.
+2684938	En af grundene til at "Twitter" er så populær i Japan ligger i det japanske sprogs særegenhed. For selv om det ikke kan konkurrere med kinesisk, så gør det skrevne japansk med sine ideogrammer det muligt at fylde meget indhold i de 140 tegn sammenlignet med flere andre sprog. I øvrigt består den japanske version af denne sætning af nøjagtig 140 tegn. Hvor mange bliver det vel i de andre sprog?
+2688991	Varen jul er ikke den sande jul.
+2695653	I eftermiddag vil jeg lære engelsk.
+2700597	Hun barberede hendes moustache.
+2705013	F i det hexadecimale system er lig med 15.
+2848123	Guld er dyrere end bly.
+2930548	Tom brændte et stort bundt hundreddollarsedler.
+3061993	Tungens sår er de største og sværeste at hele.
+3077371	Efter mødet i USA besluttede han at skrive en bog for ikke-specialister.
+3077441	Der går min klasselærer.
+3094149	Min internetforbindelse er langsom.
+3114309	Den menneskelige grusomhed kender ingen grænser.
+3116392	Marie er flygtet.
+3137710	Har Marika skrevet breve til dig på finsk?
+3174639	Hvad er mindstelønnen i Ghana?
+3186049	Formueskatten har opspist en væsentlig del af min arv.
+3208435	Biblioteket er til venstre.
+3212055	Har De andre CD'er?
+3227951	Når man taler om solen.
+3248693	Jeg elsker hende alligevel.
+3253453	Det er hvad Tom har sagt til Mary.
+3255354	Jeg vil snart melde mig til et kursus i tysk.
+3256493	Jeg har løst problemet på denne måde.
+3275586	Johnny flyttede til Spanien for nogle måneder siden, så han er endnu ikke vant til at tale spansk.
+3303747	Hun tog treogtyve kilo på efter at hun blev gift.
+3310382	Jeg har købt en smartphone til min kone.
+3314368	Hvad har du spist til frokost i dag?
+3315548	Du kan når som helst hvor som helst lokke mig med nougatchokolade.
+3320193	Jeg har købt dette i Spanien.
+3332463	Jeg er heldig at have sådan nogle vidunderlige venner, familie og kæreste.
+3339639	Den smukke sorthårede pige var i parken.
+3355542	Jeg har coolt tøj og coole solbriller på.
+3361683	Hvor meget giver man i drikkepenge i Spanien?
+3363106	Jeg ligger i sengen med enorme tømmermænd.
+3364757	Hvor er mine drager?
+3364818	Den tapre ridder reddede den hulde prinsesse fra den onde drage.
+3369878	Har du slået ham ihjel?
+3372950	Hvorfor vil regeringen læse mine mails?
+3389641	Ved du hvor mine nøgler er?
+3393640	Han har sendt et brev til mig.
+3404415	Min hobby er mit akvarie.
+3451589	Politibilen har kørt forholdsvis hurtigt.
+3456498	Hvad er bilmærket og farven på direktørens bil?
+3461660	Ti stille mens jeg taler.
+3467587	Hvor er Toms klasse?
+3473394	Denne digtsamling slumrede længe i en skuffe i mit skrivebord.
+3479317	Tom må have set det.
+3494009	Tom har så mange penge at han ikke ved hvad han skal gøre med dem.
+3498518	Jeg sad fast i en trafikkø.
+3512560	Oversæt de understregede sætninger.
+3512674	Toms mor er sådan en sladretaske.
+3512687	Toms mor er sådan en sladdertante.
+3526114	Jeg ønsker en mp3-afspiller!
+3532946	I slutningen af oktober blev en græsk journalist, der i sit eget tidsskrift havde offentliggjort navnene på mere end to tusinde skatteunddragere, arresteret.
+3541826	Dine gæster venter.
+3548899	Min søn taler kun med mig når han har brug for penge.
+3557758	Hun kommer fra England.
+3565391	Min far lytter til klassisk musik.
+3568061	De spiser æbler.
+3568169	Hun spiste ét æble.
+3568177	Jeg har brug for ét æble.
+3568950	Måske skulle vi have skrællet æblerne før vi spiste dem.
+3581017	Hendes kæreste var virkelig vred på hende.
+3593354	Der var teenagere i parken som førte sig frem på deres skateboards.
+3593667	Jeg holdt op med at ryge for to år siden.
+3593808	Tom prøvede at overtale Mary til at holde op med at ryge.
+3610249	Gør køkkenet rent.
+3611936	Hun malede muren rød.
+3612173	Sømmet gik gennem væggen.
+3612931	Restauranten var ikke fuld.
+3614385	Det er ikke muligt.
+3616593	Er der nogen besked?
+3634113	Det er sjovt at lave en snemand om vinteren.
+3641326	Send mig ikke væk.
+3643421	Han arbejdede for det fælles bedste.
+3652506	Tom forventede mere.
+3655675	Jeg glemte at låse døren.
+3680416	Lad os lege gemme!
+3680636	Jeg flyttede i sidste måned.
+3687978	En eller anden bankede på døren.
+3690518	Jeg købte denne superhurtige popkornsmaskine som en julegave til mig selv.
+3695160	Jeg har ruder es.
+3696616	Det afhænger af sammenhængen.
+3712700	Har du købt dine julegaver?
+3740851	Tom er Marys stedfar.
+3753126	Han prædiker for døve ører.
+3782862	Han kan tale både engelsk og fransk.
+3798716	Vi er fra Tyskland.
+3817398	Jeg vil ikke hjælpe dig.
+3817422	Det er et mirakel! Linket virker!
+3924507	Jeg ønsker ikke at han tager afsted.
+3980366	Jeg lærte at malke en ko.
+4072874	Det er om Andrej Tarkovskijs sidste film.
+4094616	Teheran ligger i Iran.
+4107687	Det er ikke blod. Det er rødbede.
+4121337	Kassen er tung.
+4142949	For hende var det som om et tveægget sværd gik igennem hendes skrøbelige krop.
+4172902	Her er et paradoks. Men videnskabsmændene kan sikkert forklare dette.
+4178173	Er de amerikanere?
+4182305	Vi bor på sjette etage.
+4193662	Hvad er meningen?
+4197000	Tom sagde til mig at jeg ikke skulle gå med en lyserød skjorte.
+4200028	Tom kyssede Maria i nakken.
+4209325	Men svalen fløj endnu længere bort, og landskaberne blev smukkere og smukkere.
+4218647	Tom købte en avis og læste den i toget på vej til arbejdet.
+4245141	Hvorfra har De dokumentet?
+4257789	Han kan knap nok læse.
+4261118	Der er mere end halvtreds tusind bøger i det bibliotek.
+4263473	Fortæl hende ikke at du er strisser.
+4272188	Lad mig tage mig af det!
+4289918	Han gør aldrig noget uden at hun får færten af det.
+4296491	Det er ikke tilfredsstillende.
+4297966	Mad og tøj er livsfornødenheder.
+4364432	Biblioteket vil udstede et lånerkort til dig.
+4372282	Der foregår ikke noget.
+4373857	Med lidt knofedt vil vi få det her op at køre igen i løbet af nul komma fem.
+4380733	Tom trådte ind i det tomme værelse og bemærkede straks en tændt cigaret i askebægeret.
+4384773	Tom løber ofte splitternøgen gennem huset.
+4392646	Det var det hele værd.
+4440979	Hun krammede ham.
+4445562	Han lever nøjsomt.
+4451751	Jeg glæder mig virkeligt på jeres vegne.
+4457074	Elefantstødtænder er lavet af elfenben.
+4469496	Jeg elsker kærligheden.
+4478882	Golden Gate-broen er lavet af jern.
+4503144	Hvorfor er de ikke bekymrede?
+4511003	Hun har blond hår.
+4511042	Der var en masse skriverier om homoseksualitet.
+4513307	Der er mange æg i kassen.
+4518319	Jeg ønsker ikke at give dem nogen grund til at tro at jeg ikke er villig til at gøre mit arbejde.
+4538093	Tom hader lyden af sin egen stemme.
+4541320	De vil begynde at uddele gratis sprøjter og kanyler til stofmisbrugere.
+4559611	Hun er for ung til at få kørekort.
+4562424	Floden der løber gennem Paris, hedder Seinen.
+4562600	Der er også katte på Mars.
+4562740	Jorden og Mars behøver hinandens kvinder.
+4574051	Hvor mange elefanter er der tilbage i Afrika?
+4593317	Vores opgave er at genopføre muren.
+4610871	En fyr med et stort overskæg begyndte at følge efter mig.
+4616060	Vil du læse mit essay og rette fejlene hvis der er nogen?
+4617575	Lad os gøre verden broget!
+4670654	Hold op med at drille Tom.
+4706863	Hun sendte brevet med luftpost.
+4712340	Tom har været på hospitalet i tre uger nu.
+4755090	Tom kom for sent til det sidste tog.
+4772523	De hjalp ikke de fattige.
+4797822	Tom vidste ikke om han skulle grine eller græde.
+4821018	Sikke smukt landskabet er her!
+4825599	Er det forstået?
+4826201	Jeg så lyn på himlen.
+4827418	Hvordan kan du leve uden musik?
+4850429	Tom malker koen.
+4859023	Mit mellemnavn er ikke Tom.
+4867716	Den lille landsby, jeg bor i, blev fuldstændig ødelagt af oversvømmelsen.
+4870166	Lad os tale om dette senere.
+4905461	Tyngdekraften er det eneste der holder mig her.
+4906143	Dette dækker kun knap og nap vores leveomkostninger.
+4928977	Den er næsten ny!
+4944364	Kan du høre katten? Hun vil ind.
+4965138	Må jeg cykle?
+4989098	Jeg hedder Ahmad.
+5005777	Citron er en sur frugt.
+5009013	Jeg har intet at lave, og det lægger beslag på al min tid.
+5018969	Er det i denne butik du køber dine sko?
+5067272	Tom beskyldte Mary for at stjæle.
+5076545	Tom sagde at han ikke spiste kød.
+5111026	Han ønsker at holde et vågent øje med reglerne.
+5139962	Tom betalte for varerne med guld.
+5149468	Du kan tage din undertrøje på.
+5175857	Goddag! Hvordan går det?
+5176754	Hun købte en høne.
+5280457	Hvorfor brugte du ikke de penge jeg lånte dig?
+5308736	Jeg elsker farverne.
+5319207	Tom er en skrap chef. Ham skal man helst undgå at lægge sig ud med.
+5322564	Er du hjemme i aften?
+5365067	Jeg vil gerne sidde her for en stund.
+5389346	Tom sad på kantstenen.
+5398894	Damen spiller piano.
+5403866	Tom er en farisæer.
+5403879	Tom er en hykler.
+5408261	Det kan ikke være så dårligt.
+5463151	Jeg er ikke ungarer.
+5481244	Tom kan godt lide at gøre sig vigtig.
+5492220	Tom har været her siden 2013.
+5539993	Tom løb om kap med Mary ned ad bakken.
+5588803	Køber du stadigvæk lottokuponer?
+5588874	Hvorfor skulle vi hjælpe jer?
+5594523	Ved du ikke hvor smuk du er?
+5613804	Hendes far omkom på havet.
+5624117	Det er spildte penge.
+5673731	Lærerne vidste at min far slog mig.
+5673781	Lad være at gøre dig kostbar!
+5683852	Han sad på bænken og røg.
+5757160	Både Toms bolig og Toms kontor blev ransaget af politiet.
+5924466	Feminisme handler om at give kvinder frihed til selv at vælge. Feminisme er ikke en stok til at slå andre kvinder med. Det handler om frihed. Det handler om frigørelse. Det handler om ligestilling.
+5927380	Du har ikke råd til dette hus!
+5943618	Gud skabte mennesket.
+5975014	Ingen har råd til det.
+5989399	Hvad koster en liter mælk?
+5995107	Tom har fået det forkerte ben ud af sengen.
+6006307	Tom har uredt hår.
+6010524	Hans barnebarn bor i Holland.
+6017667	Vær nu ikke sådan en social justice warrior.
+6064894	»Politiske korrekt« betyder: Flyveforbud for lutrede tanker.
+6080488	Hvor rig er Tom egentlig?
+6106480	Tom sagde til mig, at han kunne høre noget, men han var ikke sikker på, hvad det var.
+6107668	Ægypterne byggede dette tempel til ære for farao Ramses 2.
+6117695	Jeg snyder aldrig.
+6133524	Jeg har ikke lyst til at skændes.
+6140490	Der er tyve i metroen.
+6141016	Hun dansede nøgen.
+6146188	Tom læste Marys navneskilt.
+6152433	Diskuter ikke med ham.
+6157758	Hvad koster bukserne?
+6168142	De besøger mig i mit hjem; de er mine gæster.
+6169595	Medicinen kan kun købes mod recept fra en læge.
+6175437	De har mange venner.
+6176514	Jeg vil gerne ønskes tillykke personligt.
+6214051	Jeg er amerikansk statsborger.
+6214071	Det er et formidabelt projekt.
+6214712	Hun er gift og har børn.
+6307522	Kan du huske hr. Saito?
+6326286	Layla var på udkig efter drømmeprinsen.
+6362119	Hvem har fortalt dig alt det?
+6365460	Jeg har slet ingen anelse om hvem han er.
+6366543	Tom skød Mary på klos hold.
+6394603	Vi malede selv vores hus.
+6400795	Siden i går er Tom formand for en kaninavlerforening.
+6405360	Er du ikke bare en lille smule nysgerrig?
+6550067	Tak for det!
+6567577	Der er et reservehjul i bagagerummet.
+6606429	Det er ikke sundt at tænke for meget over tingene.
+6669392	Tom gav Mary en rundvisning i sit hus.
+6695526	Mary gik afslappet klædt.
+6724637	Jeg bryder mig ikke om vinter.
+6775564	Jeg havde ingen anelse om at Tom gjorde sådan noget.
+6827793	Moderen ammede sit barn i bussen.
+6832351	Pludselig mødte jeg en af mine venner.
+6832882	Servitricen har købt en ny mobiltelefon og hun har vist den til alle sine faste kunder.
+6886816	Tom sidder i haven og læser avisen.
+6889236	Gipsplader er lavet af gips.
+6903730	Tom savner sin datter.
+6903738	Tom og Mary savner deres datter.
+6907946	Vi har seks timer hver dag.
+6910395	At bruge tid sammen med din familie bør have første prioritet for dig.
+6910410	Vi ændrer det snart.
+6915674	Vi har endnu ikke fundet et våben.
+6922068	Tom er meget venlig over for os.
+6927287	Mary tog solbad på stranden.
+6929745	Tom er meget venlig.
+6930671	Jeg tør vædde på at det har ingen tænkt på før.
+6932503	Tom og Mary er polyamourøse.
+6936843	"Jeg forstår det ikke." "Det gør jeg heller ikke."
+6943237	Tom har en svag tysk accent.
+6949184	Hun er meget nysgerrig.
+6951230	Har Tom ikke sunget?
+6952622	Serveren går ned nu og da.
+6959167	Jeg har for travlt til det.
+6971418	Fru Allan siger at jeg har en god stemme og at jeg skal synge i søndagsskolekoret.
+6979921	Tom tog eksamen for tre år siden.
+6980493	Vi har ikke den model på lager.
+6982217	Fadil har åbnet en fastfoodrestaurant.
+6982533	Mænd er så nyttesløse!
+6983614	Hun fylder femten år i morgen.
+6987662	Tom så en løve i zoologisk have.
+6989991	Et kirsebærtræs frugt er et kirsebær.
+6990032	Hvad ville du have ham til at gøre?
+6990742	Jeg havde ingen anelse om at Tom ikke var lykkelig her.
+6994672	Nej, jeg har glemt den hjemme.
+6998335	Skolens niveau er højt.
+7000437	Jeg sover for åbne vinduer.
+7000473	Sami er DJ'en.
+7003105	Tom var ikke bange for at bede om hjælp.
+7003114	Min holdning til ham er ændret.
+7009123	Tom har knald i låget.
+7014175	Det lille grantræ ønskede inderligt at blive større.
+7016025	"Hvor er barnet?" "Barnet sover."
+7025254	Gå ind på dit værelse og tænk over det jeg har sagt til dig!
+7026263	Du er en bangebuks.
+7036002	En sort kat spiser en hvid mus.
+7037568	Jeg havde også en dårlig hukommelse.
+7041263	Tom har sommerfugle i maven.
+7050731	Dette site bruger cookies.
+7055567	Jeg gemte mig i klædeskabet.
+7067137	Tom spiser alt hvad Mary stiller hen foran ham.
+7067148	Mary øvede sig på sin tale foran spejlet.
+7068598	Vi er gymnasieelever.
+7076114	Tom omfavnede sin bamse.
+7076717	Hvorfor blev penge opfundet?
+7079803	Det siges at Tom er overordentlig rig.
+7084259	Tom er euroskeptiker.
+7089105	Er du canadisk?
+7089543	Tom blev forelsket i en smuk ung kvinde.
+7092164	Publikum var hovedsageligt kvinder og børn.
+7094920	Tom har et skattekort.
+7098257	Frankrig grænser op til Spanien.
+7099203	De er ikke gode, vel?
+7105485	Er den derinde?
+7133005	Sami havde en forkærlighed for pool.
+7148815	Der er intet tilbage af æblekagen.
+7162141	Tom er ikke villig til at fortælle sandheden.
+7199979	Jeg har stjålet askebægeret fra restauranten.
+7200814	Tom tabte kæben.
+7267186	Vi har kendt hende i årevis.
+7269180	"Jeg tilbringer aftenen med Tom." "Tom! Er det ikke din kat?"
+7271811	Vær venlig at lade mig komme med.
+7279074	Det er ti år siden jeg sidst så hende.
+7281290	Tom elsker Canada.
+7286987	Han tog træet og savede det med saven.
+7287054	Tom tog Marys tomme glas ud af hendes hånd og fyldte det op igen.
+7287522	Jeg elsker rock.
+7316849	Der findes ikke en mere fantastisk kvinde i hele verden end dig.
+7317034	Tom gik på pension den 20. oktober 2013.
+7317042	Det skete den 20. oktober.
+7317056	Jeg tror du er blevet snydt.
+7318456	Ville du købe én, hvis den var lidt billigere?
+7320586	Ajax Amsterdam er Hollands bedst kendte fodboldklub.
+7320896	Tjener, tre kaffe, tak!
+7325494	På grund af manglende handel lukkes der mange butikker.
+7326043	Tom er en af Marys forskningsassistenter.
+7342891	Her har der engang været et hus.
+7361645	Hvilken internetudbyder har du?
+7372722	Jeg bliver her i Australien i mindst tre måneder.
+7418941	Jeg har en splint i fingeren.
+7419563	Kan du hjælpe mig med at plante denne busk?
+7426699	Jeg troede at Tom ikke drak.
+7461579	Hun sparede op til trange tider.
+7480596	Der findes ingen steder på Jorden hvor jeg hellere ville være.
+7496020	At vide hvordan man bøjer udsagnsord, er en absolut nødvendighed.
+7523828	Min mening om Tom har ændret sig.
+7571865	Hun trådte på bremsen og bilen stod stille.
+7588268	Tom ønskede at se Mary.
+7588795	Det var nemt at finde Toms kontor.
+7701450	Denne vej er farlig.
+7701468	Tom fandt en oase.
+7713273	Mary samlede en mønt op.
+7717290	Tom blev ydmyget.
+7737914	Tilbød Tom at hjælpe os?
+7744836	Et pensionat er et lille hotel der normalt drives som en familievirksomhed.
+7748862	Tom forsøgte at ignorere smerten.
+7751421	Tom og Mary søger bolig i København og omegn.
+7752590	Jeg har selv sadlet hestene.
+7775548	Jeg tager på hospitalet.
+7776172	Jeg har mange venner i Algeriet.
+7784770	Jeg skal også have købt mayonnaise og sojasauce.
+7791921	Han har åbnet vinduet.
+7791977	Tom er en skrælling.
+7801445	Sami betragter ikke engang sig selv som youtuber.
+7810180	Mary læser en spændende bog.
+7810526	Spild ikke tid på bagateller.
+7817804	Solen er lige gået ned.
+7817958	Lad os håbe at Tom og Maria kommer.
+7829600	Hvor sneede det?
+7842030	Jeg ønsker at lære kurdisk.
+7842943	Tom og Mary står allerede i starthullerne.
+7853782	Er Tom en god lærer?
+7855349	Jeg ville ønske at Tom ville hjælpe mig med at luge haven.
+7858298	Knælerens bagben er gåben og de forreste er omdannet til fangstben.
+7859653	Han fyldte vasen med vand.
+7860222	En kilt er ikke en nederdel.
+7865682	Jeg ønsker dig god weekend.
+7872264	Tom lider af sclerosis disseminata.
+7877602	Er hun taxachauffør?
+7877609	Er han taxichauffør?
+7882093	Ellie er meget feminin.
+7884135	Er Tom arresteret?
+7896526	Vi har stemt.
+7899086	Dette er Toms bil.
+7914677	Lad ikke børnene lege på gaden.
+7930257	Naturen sover om vinteren.
+7985522	Hvorfor er det ikke tilladt for kvinder at gøre det?
+7985577	Sami havde ble på.
+7987681	Hvorfor går bjørne i hi?
+7990203	Aldersrelateret makuladegeneration kan forårsage blindhed.
+8003425	Det er en automatisk blyantspidser. Man skal bare skubbe blyanten ind og den spidses af sig selv.
+8007964	Lad os spise til middag sammen engang.
+8016243	Jeg har svømmet i søen.
+8032152	Tom er i konferencerummet.
+8040090	Jeg er i virkeligheden ikke så bekymret for vejret.
+8052773	Tom afbrød sit studie.
+8063863	Jeg har googlet din eksmand.
+8104866	Alle lige tal større end 2 er summen af to primtal.
+8122562	Hvor mange timer cirka tager det at komme herfra til Australien?
+8129936	Vi så hr. Sato forlade værelset.
+8130773	Dette er en berbisk ordbog.
+8132547	De er skuespillere.
+8137224	"Hvad vil du have?" "Jeg vil have en hund."
+8138100	Der var ingen penge tilbage i min tegnebog.
+8138890	Du drikker for meget kaffe.
+8165947	Formodentlig har hans far engang forrådt Kina.
+8168050	Vi har ikke set ret mange duer her omkring på det sidste.
+8175097	Sidst jeg så Tom, var han hønefuld.
+8203166	Jeg gik hen og åbnede døren.
+8211695	Han har tabt småkagerne.
+8239388	Tom satte en ny rulle film i kameraet.
+8244868	Alle strissere er svin!
+8255605	Han taler berberisk som en indfødt.
+8257881	Jeg har brug for et nyt par briller.
+8264872	Kan du sige noget på berbisk?
+8266241	Har han tilgivet os?
+8266267	Tilgav hun mig?
+8271202	Mary bor i Cairo.
+8282158	Hun er gået fra forstanden.
+8331201	Elbilproducenten Tesla vil bygge sin europæiske fabrik i udkanten af Berlin.
+8450766	Tom er ikke autist.
+8507630	Vi begyndte arbejdet i april.
+8508852	Tom blev hængt for et mord som han ikke havde begået.
+8513342	Du er min helt, Tom.
+8534316	Er dine forældre strenge?
+8562904	Fandt de noget?
+8574499	Det er kun én af de ting, vi har fundet.
+8578676	Vedkommende ser ikke ud til at være amerikaner.
+8584915	Tom har drukket én øl.
+8587106	Han røg af nervøsitet den ene cigaret efter den anden.
+8595345	Jeg skal spise sundere.
+8595366	Alle burde lære mindst to fremmedsprog.
+8596048	Tom og Mary er stadig gift.
+8597025	Hvem har hængt vasketøjet op?
+8609562	Vi har en bison.
+8612354	Vi venter gæster i aften.
+8612891	Hvor kan jeg få toiletpapir?
+8619517	Tom red uden sadel.
+8631931	Er der nogen i den her klasse der går til skolen til fods?
+8638927	Det er i dag den tyvende dag Tom har været i karantæne.
+8650492	Jeg holder af franske film.
+8655370	Det bliver varmere dag for dag.
+8658238	Det her er over min lønklasse.
+8661003	Mary så dødsmart ud.
+8669179	Jeg spurgte Tom om hvorfor han græd.
+8679164	Karl bor i Zürich i Schweiz.
+8714571	Alle ved at I er nogle racistiske bøller.
+8720905	Han er en talentfuld ung instruktør.
+8729247	Jørgen studerer græsk.
+8734651	Tom døde, fordi han havde spist noget kontamineret oksekød.
+8783825	Han kan godt lide at læse aviser.
+8787416	Jeg har givet tredive dollar for de her sko.
+8802764	Tom bør snart være her.
+8807832	Tom hader at tabe.
+8819790	Det har jeg gjort med vilje.
+8827253	Det er ikke muligt at sige, hvor langt videnskaben måske er kommet i år 2100.
+8827988	Verden tog alt fra jøderne, og den har aldrig tilgivet os for det.
+8854770	Han indhentede mig.
+8863268	Jeg har glemt mit penalhus derhjemme.
+8865390	Tom foldede et papirfly.
+8873460	Tom er altid lidt irritabel om morgenen, før han får sin første kop kaffe.
+8884442	Vi har altid været meget gode bollevenner.
+8884964	Takket være en ekstraordinær kvalitetstilgang har virksomheden opbygget et brandimage, der sikrer det en position på internationale markeder.
+8893795	Hun tvang mig til at gøre det.
+8910787	Tom fandt et skod.
+8912798	Dette er fennikel.
+8917213	Morgenmaden er ikke klar.
+8947082	Vi fløj fra Boston til Chicago.
+8972143	Tom er ikke paramediciner.
+8977530	Vi starter en time tidligere i morgen.
+8980776	Han er ikke perfekt.
+8985376	Jeg lod ikke som om jeg var din ven.
+9001558	Nu er vi kvit.
+9072089	Jeg troede at Mary var din kæreste.
+9083545	Hvilken farve har dit hus?
+9086042	Jeg har betalt skat.
+9379009	Maradona var en halvgud. Med bolden var han en gud. Uden bolden var han et menneske.
+9409418	Jeg leger djævelens advokat.
+9458250	De her ege er over hundred år.
+9476424	Lad mig tale ud, tak!
+9517272	Andre lyse ideer?
+9534635	Den hest er i stand til at tale.
+9541333	Hvem er det, at du sympatiserer med?
+9578174	Den her teori er videnskabeligt funderet.
+9585882	Denne maskine dræber fascister.
+9709982	Hans forslag var uacceptabelt.
+9712057	Kan jeg få en doggybag?
+9712108	Det kostede det hvide ud af øjnene.
+9714416	Døren var ikke låst.
+9721807	Hvorfor driver katteurt katte til vanvid?
+9730979	Jeg vaskede min T-shirt.
+9738390	Min farbrors barn er mit søskendebarn.
+9738415	Min fasters barn er mit søskendebarn.
+9761797	Hvad har esperantisterne for?
+9777213	Sociopater kan lide at fortælle løgne.
+9801240	I vores klasse har vi en interaktiv tavle.
+9807690	Jeg er slet ikke bange.
+9814696	Ingen ved, hvad morgendagen vil bringe.
+9826686	Dampen har tildugget mine briller.
+9829976	Byens højeste punkt ligger 529 meter over havets overflade.
+9833187	Tom skyndte sig.
+9842532	Man spiser ret godt i São Paulo.
+9859410	Det er hemmeligt.
+9867016	Sverige ophæver indrejseforbuddet for danskere fra 31. marts 2021.
+9932390	Toms bil var blå. Marys bil var rød.
+10008883	De er virkelig nære venner.
+10014634	Pskov ligger i Sydrusland.
+10018307	Det tager meget lang tid at oplade elbilen.
+10048889	Tom hænger fra et træ. Han har hængt sig.
+10055720	Jeg kan ikke mere.
+10083441	Er Tom vegetar?
+10104637	Som barn spiste jeg næsten aldrig frugt.
+10118944	Lægen rådede Mary til at dyrke sport.
+10185289	Han så dig.
+10185475	Siden oldtiden har mennesket altid ønsket at flyve.
+10188570	Du har købt den af Tom, ikke sandt?
+10190454	I mandags var det rigtig koldt.
+10191785	Jeg er træt af arbejdet.
+10198960	Hvor er broen til Canada?
+10200645	Held og lykke med at forsøge at oversætte denne sætning, som består af præcis ottisyv tegn.
+10205475	Tom er en talentfuld musiker.
+10220719	Sami havde aldrig før mødt en muslim.
+10226951	Jeg har to hænder og to ben.
+10244096	Din uforskammethed stammer fra dit messiaskompleks.
+10258966	Hvor er sengen?
+10263748	Tom er i fængsel.
+10306185	Kom nærmere, så jeg kan se dit ansigt.
+10319617	Jeg har brug for den ASAP.
+10321045	Hun er ottiét år.
+10322690	Homovielser er lovlige her.
+10335496	Læn dig ikke op ad væggen!
+10360564	Jordbunden er hård; det har ikke regnet i en måned.
+10366633	I denne butik sælges der husholdningsmaskiner.
+10372653	Tom kan ikke være død.
+10393461	Hun ankom til tiden. Jeg ankom i rette tid.
+10464731	Tomatsuppen smager godt.
+10473851	Politiet anser hende for at være gerningspersonen.
+10477457	De har en bedre idé.
+10491609	Der er kun vand i flasken.
+10497826	Vi forsøgte at hjælpe Thomas.
+10499088	Kasakhstan er et af de udviklede lande i Centralasien.
+10519025	Tom så en vaskebjørn.
+10530271	Bland ikke ammoniak med blegemiddel!
+10547273	Vi har modtaget en klage.
+10567014	Jeg var syg i sidste uge.
+10568569	Tom er stadig på flugt.
+10623833	Den grå kat spinder.
+10624396	Tom blev smidt under bussen.
+10630155	Det er en jubilæumsmønt fra min personlige samling.
+10635111	Loftet er lavet af spejlglas.
+10636354	De passer perfekt sammen.
+10640641	Dette er midten af verden.
+10648847	Du har COVID-19.
+10649512	Tom reddede hunden fra at blive spist af de sultne soldater.
+10650672	Tom bad mig om at tilgive ham.
+10651749	Tom ligner sin bror.
+10651766	Gid jeg kunne bo i Boston sammen med dig.
+10654975	I tirsdags var det virkelig koldt.
+10659341	Jeg kan umuligt kende ham.
+10659558	Faunerne spillede hovbold.
+10662398	De søgte tilflugt under en eg.
+10663808	Der findes klogeåger der aldrig forstår at man godt kan have ret og alligevel være en idiot.
+10664344	Jeg begravede hende.
+10671316	Det er farligt at blive her ret meget længere.
+10673716	Hvad ville Tom købe?
+10680589	Jeg er døv, og min kone er blind. Vi er lykkelige.
+10689729	Er du dum?
+10696784	Hvor er stationen?
+10697103	Der er varmt tøj dér.
+10700868	Jeg har lige fundet ham.
+10703027	Hvor kan vi sætte os?
+10705060	Selv om det sner, er jeg nødt til at tage af sted.
+10706247	Jeg har virkelig lyst til en is.
+10708361	Tom er lige så jødisk som en sandwich med skinke og ost.
+10710527	Han holder af tigre.
+10713533	Livet her drejer sig kun om tage på arbejde og gå på indkøb.
+10715646	Tom vil nok stadig tøve med det.
+10717235	Min computer virker ikke.
+10717318	Hun var indlogeret på et nydeligt hotel.
+10718832	Hun spillede en vals på klaveret.
+10720558	Tom rullede over i Marys side af sengen.
+10720633	Publikum holdt op med at klappe.
+10723677	Han er meget lyshudet.
+10724353	Det var ikke nemt at vinde.
+10724433	Jeg sagde, jeg ville hjælpe dig.
+10724462	Er du allergisk over for nogen af disse ingredienser?
+10727566	Gid vi var blevet i Australien noget længere.
+10727911	Tom er på Marys værelse nu.
+10728532	Der er ingen, der angriber evangeliske kristne på grund af deres formodede støtte til Israel.
+10728904	Lagde du mærke til at Tom stirrede på Mary?
+10732323	De er hule.
+10732488	Jeg er dronningen over Antarktis.
+10741056	Ukraines hovedstad er Kyjiv.
+10743593	Dette er min naturlige hårfarve.
+10751953	Kan Tom spille klaver?
+10756369	Det regner! Se at få tøjet ind!
+10768696	Der er ingen røg uden ild.
+10780793	Ja, jeg er også kurder.
+10781434	Toms bedsteforældre var omrejsende landarbejdere.
+10783284	Han savner ham.
+10791762	Han har været i Indien.
+10795901	Har du noget imod at jeg ryger her?
+10802206	I går aftes deaktiverede jeg min twitterkonto.
+10869897	Jeg fik et stykke blyantsstift til min stiftblyant af hende.
+10870403	Hun har trykket på den forkerte knap.
+10908516	Ring til det her nummer.
+10971698	Jeg hader at lægge beskeder på telefonsvarere.
+11059763	Jeg har ventet længe på dig.
+11111365	Charles I, Englands konge, blev halshugget.
+11111375	Prins Charles bliver den næste britiske konge.
+11170009	Melanie dræbte en edderkop med sin hånd.
+11203976	Tom har sovet længe i dag.
+11236694	Hvorfor fortalte du ikke sandheden?
+11268720	Jeg elsker at følge med i, hvordan politikerne ryger i totterne på hinanden.
+11269427	Tom er blevet god til at programmere i JavaScript.
+11410125	Du har tabt alt.
+11561240	Han har en bjørn på.
+11621826	Tom skovler i sig.
+11622732	Min yngste bror er højere end mig.
+11658871	Lav en til til mig.
+11722634	Den skovl kostede 30 USD.
+11765186	Du er meget unfair.
+11780341	Hun er min kusine på min mors side.
+11828390	Kan I anbefale en god kinesisk restaurant?
+11838739	Jeg troede, du sagde at jeg kunne regne med dig.
+11843550	Tom svarede ikke på Marys brev.
+11844329	Hvornår begynder din juleferie?
+11845168	Tom er frisk som en fisk.
+11851654	En kat reddede hendes liv.
+11855422	Tom ligger for døden.
+11879188	Er det Deres håndtaske?
+11901725	At luge er et trættende arbejde.
+11916249	Sky Tom som pesten.
+11916592	Der afgår en bus hvert kvarter.
+11917110	Det drejer sig om penge.
+11917534	Hvis vi går den her vej, indhenter vi dem.
+11918237	Hvornår er det blåbærssæson?
+11919319	De fleste kabyler er muslimer.
+11922018	Han er en klog tyv.
+11928228	Dette mødelokale er for lille.
+11937365	Både Tom og Vladimir er homoseksuelle.
+11939822	Det var virkelig nuttet.
+11959962	Tom har købt petroleum.
+11981184	Smid den i skraldespanden.
+11987037	Tom og Mary skal skilles.
+12001829	Botswanas regering mislykkedes med at forsøge at omstøde en domstolsafgørelse fra 2019, som afkriminaliserede forhold mellem personer af samme køn.
+12009203	Hvilken pige taler du om?
+12009233	Tom må være overrasket.
+12059378	De er nederlændere.
+12095894	Jeg så en blåhval i går.
+12097633	Grønlands Fiskerilicenskontrol opdaterer kvoteoptaget ugentligt for det kystnære fiskeri.
+12104848	Jeg kan ikke vente i yderligere tre dage.
+12117196	Tom blev døbt den 20. oktober 2013.
+12136471	Vi har plukket blomster i haven.
+12137322	Det regnede og regnede.
+12143101	Du lyder ret sikker.
+12161472	Hvor dumme er vi?
+12166042	Jeg synes godt om resultatet.
+12186314	Tom fandt det meget vanskeligt.
+12186316	Tom syntes at det var meget svært.
+12190544	Hesten kom først.
+12206074	Jeg er lige blevet forlovet.
+12207288	Hvem bliver retsforfulgt?
+12208614	Det, du gør, er uansvarligt.
+12213688	Jeg kan se jer.
+12217846	Har du sæbe?
+12227957	Har du lejet en lejlighed?
+12235502	Hvorfor undertrykker de denne historie?
+12238080	Jeg har slægtninge i Europa.
+12240366	Jeg tror, du trænger til en kop kaffe.
+12257477	Den teori er fuldstændigt vanvittig.
+12270389	Hallo! Hallo! Det er mit skilt!
+12270947	Tom venter på dig i parken.
+12270948	Tom venter på jer i parken.
+12281795	De mennesker, der står her, venter på bussen.
+12281940	Jordbærrene koster ti euro kiloet.
+12282681	Det var ikke så dyrt som jeg troede, det ville være.
+12286747	Tom er vild med upside-down ananaskage.
+12287706	Alle børnene i denne klasse er meget høflige.
+12294888	Yanni var lejesoldat.
+12307339	Det var hyggeligt at møde dig.
+12307340	Du kan lige så godt tage hjem.
+12309185	Min nabo er tømrer.
+12309258	Tom er en dygtig snedker.
+12314904	Det er en regnorm.
+12318736	Stik ikke hånden i en hvepserede.
+12321601	Han tog en indkøbskurv, da han gik ind i supermarkedet.
+12327794	Maria er vakker.
+12336090	Jeg udspionerede Tom.
+12344195	Jeg tror ikke, det var tørretumbleren, der var årsag til at det krøb.
+12346335	Du kommer for sent.
+12349466	Tom lider af tandpine.
+12355994	Du og din familie kan gå ad helvede til!
+12378704	Hun er en taber.
+12380201	Tekanden er lavet af porcelæn.
+12388903	Siden min mand blev syg, har han tabt sig 20 kilo, og hans bukser er nu meget vide.
+12392736	Hun stiller mange spørgsmål.
+12399724	Tom har to sønner. Begge bor i Boston.
+12405930	Efeu er meget svær at fjerne.
+12406685	Den slovenske sangerinde Maja Keuc blev født i 1992.
+12407127	Edderkopper har ikke ører.
+12412089	Har du et hakkejern?
+12413816	Det område af Tyrkiet, der ligger i Asien, kaldes »Anatolien«.
+12413818	Brasilien ligger i Sydamerika.
+12413900	Blusen er lavet af bomuld.
+12421652	Toms hund er helt åbenlyst et gadekryds.
+12423129	I Mælkevejen er der myriader af stjerner.
+12430866	Jeg orker ikke hans arrogance.
+12432418	Man bliver aldrig for gammel til at lære.
+12433912	Ingen af mine kollegaer kan lide Tom.
+12435984	Foråret er en behagelig årstid.
+12441059	Synes du at finske kvinder er smukke?
+12468752	Hun er fuld af tvivl.
+12498848	Bliv så længe du har lyst.
+12504293	Østlig sialia er statsfugl i Missouri og New York.
+12508698	Har du kigget på billederne?
+12539276	I er berusede!
+12546894	Er det et problem for Dem?
+12556622	Hvad er der i bilen?
+12576944	Var det til nogen hjælp?
+12610057	Hvilken vidunderlig sætning!
+12617700	Ingen ønsker at høre dig synge.
+12623155	Ziri stillede masser af spørgsmål om katte.
+12662598	En kat har set fuglen.
+12680142	Forfatteren til denne bog har aldrig været i Rusland.
+12721401	Har jeg råd til det?
+12784017	Kan vi ikke kneppe her i bilen?
+12799966	Overalt var der cykler.
+12833060	Tom er en forbryder.
+12853542	Du har stuearrest!
+12864767	Vi har skrevet kommentarer.
+12867101	Hun har solgt sin bil.
+12904003	Jeg har været bange for mørke siden jeg var barn.
+12911338	Toms mor var aktivist.
+12928049	Et væltet træ spærrede vejen.
+12936552	Jeg lærte at køre bil da jeg var femten år gammel.
+12962951	Hvad har I lært i skolen i dag?
+12970851	Jeg kunne ikke huske ham.
+12970854	Tom vidste at der var en bedre måde.
+12970868	Prøv at falde til ro.
+12973845	Uopmærksom kørsel forårsager ulykker.
+13001043	Hvad er grunden til at Hamas ikke er bange for Israel?
+13010334	De håber at de kan sejre.
+13015722	Sami er kristen.
+13021376	Layla skød Sami på klos hold.
+13041121	Du lader som om intet er hændt.
+13053993	Har du fodret de omstrejfende katte?
+13080235	Coronavirussen findes slet ikke.
+13115038	Nu er Kosovo et uafhængigt land.
+13121187	Jeg tror at jeg ved, hvor jeg kan finde Tom.
+13126568	Kig ind hos mig på tilbagevejen.
+13145952	"Ingen anden præsident ville have gjort det, jeg gjorde", sagde Donald Trump.
+13150123	Tom elsker dig ikke. Han elsker mig!
+13157025	Har du gået tur med hunden?
+13159242	Kan det betale sig at købe guld?
+13219106	Klokken er kvarter i otte.
+13291692	Tom børster sin hest.
+13501219	Det skal du ikke skamme dig over.
+13568351	Jeg mangler mel.
+13579996	Ingen ejer Månen.
+13614828	Pave Leo den Fjortende er den første pave, der er født i USA.
+13616624	Kun gamle mennesker ser tv.
+13738091	Vi kender Mary.
+13803910	Stonewall Inn er en homobar.
+13837863	Hun gjorde altid sit bedste for at hjælpe mig.
+13843941	Han smilede høfligt.
+13858231	Tag en appelsin!
+13893084	Hvordan har de andre det?

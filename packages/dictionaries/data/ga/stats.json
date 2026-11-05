@@ -1,0 +1,15 @@
+{
+  "source": "gawiki.xml.bz2",
+  "pages": 61945,
+  "sentences": 554147,
+  "repeatedSentencesSkipped": 82435,
+  "tokens": 8049118,
+  "distinctWords": 269907,
+  "wordsKept": 95236,
+  "nextWordHeads": 9822,
+  "text": "ga-train.txt",
+  "textSentences": 1935,
+  "textWeight": 37.25,
+  "heldOutPages": 1283,
+  "heldOutSentences": 2000
+}

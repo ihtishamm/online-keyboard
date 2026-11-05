@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+380581	Gëzuar ditëlindjen Muriel!
+399030	Mirëmëngjes, të gjithë.
+791835	Vrasin dy zogj me një gur.
+1183490	Kam goxha prej tyre.
+1183492	Une dua shumë më tepër.
+1183496	Nuk mund të shoh asgjë, pa syzet e mia.
+1183563	Ajo nuk ka më shumë se dymbëdhjetë këlyshër.
+1183589	Kur Di Ma provoi për të 966-tën herë, kishte tashmë filluar të humbiste shpresat.
+1443644	Unë jam shumë i lumtur në Gjeorgji.
+1456326	Nënë Tereza u lind në Jugosllavi në vitin 1910.
+1519709	Ajo nuk vjen në ekskurzion sepse nuk e lejojnë prindërit.
+1533141	Krishti u ngjall!
+1709509	E dua shtëpinë time
+1723052	Me mire vone se kurr.
+1723059	Nuk kam para, por kam ëndërra.
+1723340	Ju nuk mund te gjeni fjalite qe keni shtuar tani sepse ato nuk jane indeksuar akoma. Indeksimi i fjalive nuk eshte akoma i egekutueshem , kjo behet cdo jave.
+1723362	Do ta gjesh dyqanin midis nje banke dhe nje shkolle.
+1723375	Une e humba filmin pa e pare. E keni pare u ?
+1723397	I varfer nuk eshte ai qe ka shum pak , por ai i cili kerkon shum.
+1723437	Kur nuk mund te beni cfare doni,ju beni cfare mundeni.
+1723475	Faleminderit qe me keni shpjeguar me ne fund pse njerzit me marrin mua per nje idiot.
+1723477	Me jep mua lirine ose me jep vdekjen.
+1723497	Sipas shkencatarve, atmosfera ngrohet vit pas viti.
+1723504	Mund te me telefononi perseri me vone ju lutem?
+1723508	Ke bere shum gabime te njejta.
+1723528	Eshte errsire jashte.
+1727577	Puthja juaj eshte me e embel se mjalta.
+1727590	Ne qofte se nuk do kishte uje, ne nuk mund te jetojme.
+1727600	Ata e kishin kete problem me perpara.
+1728236	Këpucet e mija jane shum te vogla. Kam nevojë për nje parë të reja.
+1728238	Ai eshte i pasur. Ai nuk ka nevoje per para!
+1728243	Ju dueht te studioni shum.
+1728248	Njerzit shpesh jane shum skeptik ndaj gjerave derisa kane prova te besueshme.
+1728254	Asaj i shkruaja shpesh kur isha student.
+1728273	Ikeda është mbiemri im, dhe Kazuko është emri.
+1934378	Ajo cfare ju thate eshte shum e ndryshme nga ajo qe degjova nga ai.
+1934390	Disa nga studentat ishin nga Azia dhe te tjeret ishin nga Europa.
+1934579	Nqs do te vini ndonjehere ne qytet, ejani te me vizitoni.
+1962608	Përformanca e kompjutërit tuaj ndoshta është shumë e dobët.
+1962612	Ju do te futeni në telashe nqs shpenzoni kohë me të.
+1962632	Unë pa ty si një trup pa shpirtë.
+1962643	Ai erdhi herët në shtëpi në mënyrë që te shihte fëmijët përpara se ata të shkonin në krevat.
+1962649	Ti e ke parë shtëpinë e tyre të re, apo jo ? Si është ajo ?
+1962666	Bën mirë të respektosh rregullat këtu, zonjushë.
+1962675	Të gjith ikën.
+1962695	E kam bërë jetën tënde shumë më të lehtë.
+1962702	Dy minuta për nxehje.
+1962708	Doja ta qartësoja këtë me ju.
+1962717	Pa marrë parasyshë pasojat.
+1962737	Ishte një vejushë lufte.
+1962754	Por kur gjithçka është thënë dhe bërë, ata kanë një gjë të përbashkët.
+1962757	Ti duhet të ndalosh pijen dhe cigaren.
+1962762	Doktori këshilloi babanë tim të ndalte duhanin.
+1962765	Nuk e pëlqej shumë atë , në fakt unë e urrej atë.
+1962837	Nuk është e lehtë për të zgjidhur problemin.
+1962838	Ma kalo mua kripen.
+1962839	Akoma besoj në dashuri.
+1978816	Unë kam një llogari Facebook-u.
+1978818	Twitter eshte me i mire dhe me shum i sigurtë se Facebook.
+1978824	Gjëja më e vështirë të bësh është të shohësh atë që ti do, që do dikë tjetër.
+1978835	Librat janë mbi bankë.
+1978837	Do të jetë një provim i vështirë ?
+1978856	Duhet të shkosh ne komisariat.
+1996085	Keni mënduar ndonjëherë për lidhjen midis frymarrjes, mendjes, dhe trupit ?
+1996087	Yotube është një vend i mirë për te gjetur muzikë me lyrics ne vidio.
+1996102	Ai do të bëhet një doktor i mirë.
+1996135	Policia kërkoi për kompjuterat e vjedhur por ata nuk u gjetën asnjëherë.
+2036732	Gëzuar Ditën e Nënës!
+2075788	Unë të dua.
+2148438	A keni fëmijë?
+2149769	Unë jam Gregor.
+2365555	Shtëpia ime është në rrethinat e qytetit.
+2365556	Nuk kam qejf të vrapoj deri tek stacioni.
+2365557	Kemi filluar të riciklojmë gazetat.
+2365563	Do ta mbaroj në dy ose tre minuta.
+2365580	Mirë, koha mbaroi. Le të mbarojmë mësimin tani.
+2365581	Çfarë do të bësh nesër?
+2365585	Xhazi nuk ka vdekur, thjesht duket qesharak.
+2365590	Ajo iku në Amerikë.
+2365591	Nuk më bëri dyshues ajo çfarë tha ai, por mënyra se si e tha.
+2365592	Ajo meriton më shumë.
+2365596	A shkon te muzeu ky autobusi?
+2419859	Bukuria e njeriut është sjellja në shoqeri.
+2420299	Sot është e diel.
+2420305	Ata nuk po vijnë.
+2420310	Jeta është e vetmja rrugë që nuk udhëtohet dy herë.
+2439102	Unë nuk dua të punoj në këto kushte.
+2561183	Tom përbërë një sonet.
+2760525	Unë jam mësues.
+2941283	Je zgjuar shumë herët sot. A ke diçka?
+2941338	Të shkokan ata syze.
+2941348	Nuk mund të besoj se kjo po ndodh. Të lutem, më thuaj se është një gënjeshtër!
+2941350	U takova me një plake.
+2941357	Mendova se Tomi ishte i ndryshëm.
+2941358	Jam shumë i kënaqur të njihem me ju.
+2941359	U zgjodhën gjashtëdhjetë deputete.
+2941367	Tomi duket i shqetësuar.
+2941368	Dua që të më duash.
+2941369	Ajo u mundua shumë të hiqte dyshimet nga mendja.
+2941379	Tomi sugjeroi që të bënim një mbrëmje lamtumirë për Merin.
+2942665	Nuk duhet të dalësh pas darkës.
+2942678	Po të jetë i zënë, ndihmoje atë.
+2942680	Xhorxhi është kapiteni i ekipit tonë.
+2942709	E vlerësoj përkushtimin tënd.
+2942797	Balena e madhe blu është gjallesa më e madhe që jeton.
+2942813	Një krim i caktuar është i dënueshm nëse je përjekur, por jo e dënueshme nëse kryer. Çfarë është kjo?
+2947354	Duke e konsideruar bashkëpunimin rajonal dhe marrëdhëniet e fqinjësisë së mirë, si shtylla që garantojnë paqen.
+2947355	Mbaje ne mend qe ju mund te vdisni.
+3081401	Kam dy mace.
+3100296	Unë pashë atë me sytë e mi.
+3100437	Njeriu është i ri.
+3100440	Unë lexova një libër.
+3100451	Unë jam në shtëpi.
+3100464	Unë nuk jam këtu.
+3100466	Djali i asaj gruas është i sëmurë.
+3100493	Unë jam këtu.
+3100542	Ajo është e martuar me një të huaj.
+3100546	Vajza po nuhat lulet.
+3100547	Ti nuk je spiun, apo jo?
+3100582	Nuk jam një fangirl.
+3100584	Nuk jam një notar i shkëlqyer.
+3100588	Nuk jam një njeri i mirë.
+3100589	Nuk jam një njeri i keq.
+3100680	Jam nga Rusia.
+3100756	Dua të ju them diçka.
+3102197	Ti nuk mund të vras veten duke mbajtur frymën.
+3102220	Unë do të vij në orën pesë.
+3102788	Unë nuk kam forcën tuaj.
+3179990	Unë do të të ndihmoj.
+3476557	Nuk kam frikë vetëtimën.
+3517736	Unë po shikoj në televizor.
+3517739	Athina është në Greqi.
+3517835	Kjo frikë është e kuptueshme.
+3518801	Ai kishte një mace të bardhë.
+3518945	Thika ime është e mprehtë.
+3518947	Unë isha mësues.
+3518950	Unë dua të jem një fotograf i natyrës.
+3518952	Unë jam anglez.
+3518962	Ju nuk e dini të vërtetën.
+3518965	Unë kam një llogari në Twitter.
+3518967	Vëllai im ka një llogari në Twitter.
+3518981	Ai jeton në Angli.
+3518982	Millie po ha bukë.
+3518991	Ti nuk ke sy të kafe.
+3518993	Millie po ha një banane.
+3520717	Unë mendoj që unë të po bie në gjumë.
+3521470	Ky telefon nuk po funksionon siç duhet.
+3878512	Unë nuk flas shqip.
+3985108	A e doni nënën tuaj?
+4395310	Qyteti ku unë jetoj është shumë i vogël.
+4395352	Puna që jam duke bërë në këtë moment është shumë interesante.
+4731178	Ata po zihen.
+4731179	E vërteta qëndron në mes.
+4731181	Mendoj se Tomi nuk qëllonte të bëntë atë.
+4731182	Tomi e shkroi numrin e telefonit të Marisë.
+4731183	Tomi punon aq shumë sa çdonjeri tjetër.
+4731184	Tomi nuk do të jetë gati për të ikur deri në orën 2.30.
+4731185	Tomi mendon se ato këpucë do të jenë shumë të mëdha.
+4731186	Tomi vjodhi një unazë diamanti shumë të vlefshme.
+4731187	Tomi erdhi në Boston kur ishte fëmijë.
+4731189	Tomi më pyeti nëse isha i zënë apo jo.
+4731191	Tomi më shkruan të paktën një herë në javë.
+4731193	Ka mijëra pjesëmarrës në ngjarjen e sotme.
+4731195	Unë hyj në Tatoeba një herë në javë.
+4731201	Ajo gjithmonë vishet shumë thjesht.
+4731203	Ai është gjithmonë i përpiktë.
+4731204	Po lexoj librin tënd.
+4731208	Sistemi ekonomik islamik nuk është zbatuar në shkollat islamike me konvikt deri më sot.
+4731211	Jo gjithçka mund të shpjegohet.
+4731212	Kam një copë lajmi të keq.
+4731214	Kam pasur shumë punë për të bërë kohët e fundit.
+4731217	Mos më bërtit.
+4731225	Një republikë është një komb kreu i të cilit nuk është një mbret apo një mbretëreshë, por një president.
+4731226	A mund të kthehem në shtëpi?
+4731227	Hëngra drekë rreth orës njëmbëdhjetë sepse kisha uri.
+4731230	Dua që të ikësh nesër në avion për në Boston.
+4731231	Të tregosh gënjeshtra është një zakon shumë i keq.
+4731232	Këto kamera janë prodhuar në Japoni.
+4731233	Lëre gazetën dhe dëgjo atë që të them.
+4731236	Jo. I kam kërkuar për më shumë se një orë.
+4731238	Një i panjohur është në këmb përpara shtëpisë.
+4731244	Pasi e pimë çajin, filluam një diskutim.
+4731246	Ai ka një makinë japoneze.
+4731248	Ai lexon shumë.
+4731253	Shkuam bashkë në Laramie, por pastaj u ndamë.
+4731261	Djali u shtirë se ishte aq i sëmurë që nuk mund të shkonte në shkollë.
+4731264	Xhimi nuk është çka ishte.
+4731275	Mos të bezdisemi.
+4731278	Ti s'ke asnjë hall në botë.
+4731280	Ti din diçka.
+4731281	Ky lloj pune kërkon shumë durim.
+4731309	Ku janë çelësat e tu?
+4731312	Ku mund t'i vë këto birra?
+4731324	Tomi e bëri me qëllim, mendoj.
+4731327	Shkuam në një piceri italiane.
+4731330	Nuk do të doja që të plagosesh.
+4731342	Tomi doli jashtë për të ngrënë.
+4731349	Mbajta anën time të marrëveshjes.
+4731352	Nuk mund të dalësh.
+4731353	Po e konsideroj seriozisht.
+4731358	A ke një vëlla binjak?
+4731359	Ai pyeti personin e parë me të cilin u takua afër fshatit.
+4731361	Ajo është akoma një pyetje e hapur.
+4731363	Të lutem, më jep një gotë ujë.
+4731404	Ai numëroi deri në 100.
+4731411	Departamentet federale janë goditur me një ndalim punësimi në një përpjekje për të ulur kostot e stafit qeveritar.
+4731413	E kanë arrestuar.
+4731420	Kur u ktheva në shtëpi, ai po gatuante darkë.
+4731493	Vera ka ardhur herët.
+4731533	Situata akoma ka mundësi të përmirësohet.
+4731538	Nuk lexova asnjë libër dje.
+4731539	Jam i lumtur sepse duke filluar nga sot, nuk kemi shkollë deri në shtator.
+4731542	Pse nuk erdhe me mua?
+4963631	Uji i mjaftueshëm është kusht i nevojshëm për jetën.
+4963643	Çfarë thanë ata për këtë?
+4963653	Tom e sqaroi atë në detaj, por unë akoma nuk e kuptoj.
+4963655	Nuk jam duke mbajtur frymën.
+4963665	Nuk jam duke u fshehur nga ndonjëri.
+4963666	Ku ka qenë duke u fshehur Tomi?
+4963681	I ke kompletuar detyrat e shtëpisë?
+4963682	Lexoje këtë në mbrëmje.
+4963683	Ramudi shkoi në shkollë.
+4963684	E vërtetë është, unë nuk kam ndonjë problem me të.
+4963687	Mbyllja e syve ju ndihmon të mendoni më mirë.
+4963688	Emri im është Ichiro.
+4963690	Pse gjithçka po shkon keq?
+5175043	Proletarë të të gjitha vendeve, bashkohuni!
+5247282	Cilën shfletuese po përdor ti?
+5247295	E vizitova Parisin para shumë kohe.
+5247299	A mund të ndihmoj me ndonjë gjë?
+5247305	Pse je aq i shqetësuar?
+5247313	Tomi do që unë t'i jap ndonjë këshillë për blerjen e aksioneve.
+5247314	Jemi më keq tani se sa përpara.
+5247327	Tomi ishte shumë i dehur.
+5250512	Unë nuk mund të ha aq shumë ushqim vetëm.
+5250513	Jo, nuk më pëlqen aq shumë.
+5310088	Breshkat janë zvarraniket.
+5433262	Pse je aq e shqetësuar?
+5448962	Çfarë studion një sovietolog?
+5528324	Mund të jetë një kurthë.
+5528333	Në fund të çdo lënde kam një provim.
+5528346	Shpik ndonjë gjë.
+5528486	Të pasurit kanë nevojë për mua, të varfërit kanë shumë nga unë dhe në qoftë se unë e ha atë do të vdes. Kush jam unë?
+5553627	Sapo theva një brinjë.
+6034524	Kam një fjalor.
+6218278	E la pirg e vrau, e la thes në tokë.
+6274948	SOS - Arrin diçka në pikën më të lartë sa s'mund të përmbahet më.
+6275887	Diçka që përfytyrohet si paralajmëruese e një të keqeje, diçka që ndjell një të keqe, hije e keqe. Fantazma e krizës.
+6287918	Vëlla shpirti vëllam.
+6297052	A do të hapësh restorantin e vet?
+6297058	Ai është i përsosur.
+6297060	Është e vështirë të mësosh.
+6297061	Nuk mund të të shoqëroj. Më mungon para.
+6297062	Kush do të jetë i pari të jetojë deri në lindjen e stër-stër-stër-nipin e tij?
+6297064	A do të bie shi sot akoma?
+6297065	Ma tregoi lajmin Hashimoto-i.
+6698155	Ku është biblioteka?
+6894532	Unë do të të vras.
+6981354	Ky qytet është i shëmtuar.
+6981369	Dua të vdes.
+6981373	Kosova është shteti më i ri në Evropë.
+6981381	Kush mendon se je?
+6981399	Nuk e di.
+6981407	Duhet të jesh e fortë.
+6981409	Tomi ishte xheloz për suksesin e Marisë.
+6981414	Kjo është shtëpia ime e tretë.
+6981427	Maria humbi çelësin.
+6981439	Maria është e shkëlqyeshme. Ajo gatoi një darkë të mrekullueshme për mua dhe madje lau vetë pjatat.
+6981442	Ata ishin të organizuar.
+6981449	Je një idiot. Mos u kthe.
+6981451	Islanda është një ishull.
+6981452	Çfarë mendon për teorinë time?
+6981465	"Çfarë do të thuash?" ajo qau.
+6981467	Nuk kam qenë këtu më parë.
+6981479	Kosova është tani një shtet i pavarur.
+6981480	Prishtina është kryeqyteti i Kosovës.
+6981482	Rumania është një vend ballkanik. Kryeqyteti i saj është Bukureshti.
+6981483	Gëzuar ditëlindjen, Rumani!
+6981487	Rumania quhet "România" në rumanisht.
+6981489	Muzeu kombëtar Brukenthal është muzeu i parë që u hap zyrtarisht në Rumani.
+6981491	Ti flet gjuhën time.
+6981493	Ai flet pesë gjuhë.
+6981495	Ajo flet dhjetë gjuhë.
+6981497	Unë e kuptoj gjuhën tënde.
+6981498	Ai flet dhjetë gjuhë.
+6981503	Ajo flet tre gjuhë.
+6981505	Anglishtja është një gjuhë.
+6981508	Mua më pëlqejnë të gjitha gjuhët.
+6981509	Tomi mësoi gjuhën e shenjave.
+6981510	A është e vështirë gjuha e tyre?
+6981515	I dua gjuhët gjermanike.
+6981522	Frëngjishtja është gjuha e saj e parë.
+6981523	Prusishtja është gjuhë baltike.
+6981525	Ai flet vetëm një gjuhë.
+6981526	Ku flitet gjuha jote?
+6981528	Ai flet dy gjuhë të huaja.
+6981529	Frëngjishtja është gjuhë e vështirë.
+6981530	Çfarë gjuhë po flasin ata?
+6981531	Cila është gjuha jote e preferuar?
+6982013	I njeh ata meshkujt atje?
+6982018	Zana e Malit është krijesë e bukur.
+6982019	Ai ka një kalë të kaftë.
+6982020	Ishte një ditë e zakonshme sot.
+6982023	Çfarë u bë?
+6982026	Vendimi për këtë do të shpallet nesër.
+6982028	Unë tani po endem si të mos kisha shtëpi.
+6982033	Ai është i çmendur por megjithatë ajo ende e dashuron.
+6982035	Vajza e vogël pa disa kuaj nga dritarja.
+6982040	Ajo jetoi një jetë të gjatë e të trishtë. Vdiq duke shpresuar që do ta shihte të birin qoftë edhe një herë.
+6982043	Flisni ju spanjisht?
+6982044	Më the që ne të dy do të jemi së bashku përgjithmonë. Pastaj u largove.
+6982045	Dita e mirë shihet në mëngjes.
+6982048	Dëshiron një portokall?
+6982053	Ai kishte shumë fjalë e pak vepra.
+6982056	Vajza e vogël pa një peshk të artë dhe shprehu një dëshirë.
+6982066	Nga dritarja e burgut Agroni pa një zog që fluturonte i lirë dhe ndjeu një dëshirë të flaktë që edhe ai të shijonte lirinë.
+6982073	Nuk mund të të ndihmoj, sepse nuk kuptoj hungarisht.
+6982075	Loja ishte e shkëlqyeshme.
+6982076	Pagova një gjobë.
+6982078	Brigitte është emër hollandez.
+6982079	Më pëlqejnë gratë, më pëlqen vera.
+6982081	Xhaxhai im jeton në Madrid, kryeqytetin e Spanjës.
+6982083	Ato janë motrat e mija.
+6982088	Sa është ora?
+6982090	Unë dua të kem një motër.
+6982095	Tomi pa një luan në kopshtin zoologjik.
+6982109	Dardha bie nën dardhë.
+6982112	Të lutem, buzëqesh.
+6982113	Unë nuk mund të këndoj.
+6982722	Unë jam dentisti i Tomit.
+6982737	Nuk duhet të humbasim shpresën.
+6982744	Ai vdiq nga i ftohti mbrëmë.
+6982749	Tomi dhe Maria po konsiderojnë divorcin.
+6982757	Ti e di që nuk është e vërtetë.
+6982761	Të dy e keni gabim.
+6982762	Tomi është më i fortë se unë.
+6982767	Jam shumë e uritur tani.
+6982769	Ai u zgjodh kryebashkiak përsëri.
+6982772	Na tregoni se kush jeni ju.
+6982776	Ti vërtetë je trap.
+6982777	Kjo është e lehtë.
+6982778	Kur shkove në shtëpi?
+6982780	Kur shkuat në shtëpi?
+6982781	A je ti dadoja e re?
+6982783	Mendoj se kam thyer këmbën.
+6982784	Tomi nuk ka nevojë për asgjë.
+6982787	Nuk është ideja e tij, është e imja.
+6982789	Kur do të përfundojë kjo?
+6982800	Mos harroni të bleni bukë.
+6982801	Kryeministri ra në Danub dhe u mbyt.
+6982806	Skllevërit konsideroheshin pronë.
+6982809	Më trego ku ka shkuar Tomi.
+6982811	Të gjithë e duan macen time.
+6982814	Tomi është aktivist për të drejtat e njeriut.
+6982815	Shikova në pasqyrë.
+6982817	Më pëlqen shumë gjuha japoneze.
+6982822	Nuk do të kem nevojë për ty.
+6982927	Tomi ha shumë.
+6982991	Tomi ishte i zënë tërë ditën.
+6982997	Tomi ec tre milje në ditë.
+6982999	Tomi shkroi një shënim në frëngjisht.
+6983003	Tomi po planifikon një udhëtim në Australi me Marian.
+6983009	Është sëmundja e Tomit serioze?
+6983016	Nuk është as koha as vendi.
+6983102	Tomi tha që ishte e vërtetë.
+6983103	Prindërit e Tomit jetojnë në një shtëpi të madhe.
+6983110	Laje mollën para se ta hash.
+6983112	Unë kam lindur në këtë spital.
+6983115	Tomi nuk përdor kripë në gatimet e tij.
+6983116	Nuk flas as frëngjisht as anglisht.
+6983117	Le të pastrojmë tavolinën.
+6983118	Tomi u bë doktor, si i ati.
+6983119	Ka një zgjidhje tjetër.
+6983123	Mos harro të sjellësh kostumin e banjës.
+6983129	Ëmbëlsira e vetme të cilën vërtetë e pëlqej është akullorja.
+6983130	I vetmi vend ku dua të jem tani është me ty.
+6983133	Cili ishte rezultati yt final?
+6983135	Rrugët e New Yorkut janë shumë të gjera.
+6983142	Askush nuk erdhi.
+6983151	Ndonjë e re?
+6983159	Zonjat të parat.
+6983171	Sa e turpshme!
+6983193	Ndonjë gjë tjetër?
+6983213	Të lutem eja.
+6983218	Të lutem largohu.
+6983230	Rrini të qetë.
+6983233	Të gjithë gënjejnë.
+6983236	Tomi u zhduk.
+6983249	Dikush në shtëpi?
+6983260	Askush nuk pyeti.
+6983319	Mos më bëj të qesh.
+6983375	Të pëlqen çaji?
+6983376	Ju pëlqen çaji?
+6983377	Ende e urren esperanton?
+6983518	Më dhemb koka.
+6984049	Mendova se Tomi po flinte.
+6984790	Si është gruaja jote, Tom?
+6984801	Nuk dua të jem kështu më.
+6987661	Por është shumë e shtrenjtë!
+6988762	Bëra çaj mbrëmë.
+6988853	E vetmja gjë nga e cila duhet të kemi frikë është vetë frika.
+6989511	Ku është dalja?
+6989516	Duhet të kisha ngrënë mëngjes.
+6989517	Ti po më gënjen.
+6989520	Do të më duhet pak më shumë kohë.
+6989527	Ka pasur një ndryshim të planit.
+6989535	Është fotografi e bukur.
+6989541	Nikotina është helm.
+6989543	Ndoshta Tomi nuk do që ti të shqetësohesh.
+6989548	Mund ta shoh menunë, ju lutem?
+6989563	Jam e etur.
+6992765	Je ulur në karrigen time.
+6992775	Mos lëndo askënd.
+6992783	Nëse është falas, merr sa më shumë që të mundesh.
+6992790	Ne kemi një përgjigje.
+6993177	Atëherë pse erdhe këtu?
+6997330	Biftek, të lutem.
+6997336	I thashë Tomit që jemi miq.
+6997337	Motra ime nuk është kuzhiniere e mirë, as unë nuk jam.
+6998101	Nuk mund të pres përgjithmonë.
+6998935	Kemi dy fëmijë.
+6999362	Dje Maria pastroi shtëpinë dhe lau rrobat.
+7002385	Kjo është ajo të cilës i trembej Tomi.
+7002391	Përse po më injoron Tomi?
+7002394	Do të jetojë Tomi?
+7002396	Tomi është briliant, apo jo?
+7002397	Tomi është armiku im.
+7002404	Pse nuk vjen në shtëpinë time të luash në piano?
+7003323	Ti je Maria.
+7003348	Tomi luan me top.
+7003355	Ju jeni djem.
+7003367	Babai është në rrugë.
+7003378	Guri rëndon në vend të vet.
+7003393	Kur të rritem...
+7003398	Postieri shpërndan postën.
+7003403	Polici mban rregull.
+7003409	Sot është e mërkurë.
+7003421	Viti ka 12 muaj.
+7003423	Stinët e vitit.
+7003443	Mirë u pafshim!
+7003894	Do të të thërras kur të arrij në Boston.
+7003917	Pse ishe në burg?
+7003919	Përse ishe në burg?
+7003920	Tomi mendon se jam ende një fëmijë.
+7003924	Ke ndonjë ide se kush e ka shkruar këtë libër?
+7003929	Të dy duken të dyshimtë.
+7003931	Shpata mund të përdoret për të mbrojtur trupin.
+7005251	Nuk dua që ti të lëndohesh.
+7005262	Tomi e di që jam kanadeze.
+7005414	Mund ta përballoj Tomin.
+7005421	Sa njerëz punojnë këtu?
+7005422	Sa vetë punojnë këtu?
+7005424	Sa persona punojnë këtu?
+7005428	Nuk di asgjë për të përveç asaj që më ke treguar ti.
+7005433	Edhe pse është i pasur, ai nuk është i lumtur.
+7005437	Ende nuk kupton?
+7005439	Çfarë po kërkonte Tomi?
+7005442	Kjo nuk është ajo çfarë desha të them.
+7005452	Më në fund kuptoj.
+7005454	Të kam treguar çdo gjë që di për Gjermaninë.
+7005474	Nuk kuptoj pse rri me Tomin tërë kohën.
+7005480	Dan, Linda, Matt dhe Rita janë miqtë e mi të rinj.
+7005483	Tomi nuk është në spital.
+7005539	Jemi të mërzitur për këtë humbje.
+7005544	Epo, le t'i hedhim një sy.
+7005552	Kam vetëm një fotografi të saj.
+7005554	E kam humbur atë unazë.
+7005555	Çdo gjë do të shkojë mirë.
+7005557	Ai më ftoi për darkë.
+7005562	Mos i lejo ta lëndojnë Tomin.
+7005564	Gjithmonë zgjohem në 6:30.
+7005569	Ke njohur ndonjë kanadez këtu në Boston?
+7005572	Kam lexuar librin tënd. Ishte shumë interesant.
+7005584	Si shqiptohet mbiemri yt?
+7005586	Ai ishte shumë i durueshëm.
+7005587	Mos u largo.
+7005588	Pengjet do të lirohen nesër.
+7005591	Kush është avokati yt?
+7005593	Askush nuk u përgjigj.
+7005595	Tomi u përgjigj.
+7005598	E sheh qiellin?
+7883416	Beduinë jetojnë në shkretëtirën.
+8737929	Shfarosja është pjesë e evolucionit.
+8741105	Unë nuk jam një burrë.
+8741107	Ku është akullore me vanilje?
+8741111	Ku është Boston?
+8741118	Shpesh unë ha bukë me gjalpë dhe mjaltë.
+8741129	Ku është motra ime?
+8741130	Unë ha peshk me kripë.
+8741131	Ti ha bukë me reçel pjeshkë.
+8741132	Ajo pi kafe me sheqer dhe krem.
+8766900	Nuk jam e sigurt nese mund te marrim bileta kete mbremje.
+8766904	Nuk jam e sigurt nese mund te gjejme bileta kete mbremje.
+8766941	Tomi preu nje peme ne kopshtin e tij.
+8766944	Tomi eshte ne vit te katert te gjimnazit.
+8766952	Tomi dhe Meri nuk duan te largohen nga Bostoni.
+8766954	Tomi mendon se ju te dy jeni bere per njeri-tjetrin.
+8766962	Edhe kur te jesh i vjeter e i thinjur duhet te jesh ne gjendje ta shijosh jeten.
+8766963	Nuk e kuptoj ankesen tende.
+8766967	Dua te takoj vajzen e enderrave te mia.
+8766968	Dua ta takoj vajzen e enderrave te mia.
+8766975	Ajo dukej e frikesuar.
+8766982	Tomi ka frike se mos Meri ndryshon mendjen.
+8766983	Tomi ka frike se Meri mund te ndryshoje mendjen.
+8766989	Shumica e amerikaneve e pelqejne Rusveltin.
+8766990	Isha vertete shume pa fat.
+8766993	Isha vertete shume i pafat.
+8766994	Une isha vertete shume i pafat.
+8766999	Ajo tha se ajo vete ishte e alkolizuar.
+8767007	Tomi e palosi letren.
+8793579	Sapo morra vesh qe do te te japin nje cmim sot ne darke.
+8793583	E dije qe Tomi dhe Meri po planifikonin te martoheshin?
+8793597	Tomi tha qe nuk donte ta shikonin me Merin.
+8793600	Meri that qe ndihet me mire sot.
+8793629	Di te shtiresh mire.
+8793639	Sami takoi nje grup njerezish te lajthitur.
+8793640	Po ta dinim, do te kishim ardhur me heret.
+8793651	Qeni po ha.
+8793662	Nuk ia dime vleren e vertete shendetit pa e humbur.
+8818404	Si duket, Tomi ishte vonë sepse kishte trafik ne Rt. 19.
+8971599	Ai vuri shumë para te kursimet.
+8971605	Sapo mësova një qind fjalë në esperanto.
+8971610	Tomi ndryshon mendim shumë herë.
+8971613	"Duhet të shkoj vitin e ardhshëm?" "Në Qipro."
+8971614	Tomi vuan nga gudulisjet.
+8971617	Julia ka shumë trëndafila dhe zambak në kopështin e saj.
+8971618	Tomi nuk u dorëzua.
+8971626	Mendoj të ndrishoj furrnizuesin.
+8971628	Po shkon të bësh sipërmarrje në Kili?
+8971632	Tomi ishte një spiun.
+8971639	"C'farë kombësie ishin kushërirat juaja?" "Maleziane'
+8971646	Nuk ka qenë njeri këtu.
+8971648	Disa njerëz duket sikur argëtohen duke folur.
+8971660	Ejani kur të doni.
+8971662	Unë kam nevoj për sheqer.
+8971666	Atëherë, jeni të gjithë gati për Krishtëlindjet?
+8971667	Ju shoqëroni fëmijët në shkollë.
+8971670	Gjuajti një gur në liqen.
+8971673	Mendonte se dikush i kishte hedhur helm në gjellë.
+8971674	Nuk m'u përgjigj kurrë.
+8971676	Do një syshkelje?
+8971677	Do një shkelje syri?
+8971679	Unë kam dashur gjithmonë ta them.
+8971682	Nuk shkon të ndërtosh banka në Afrikën e Jugut.
+8971684	Thuajini që kam nevojë për pak para.
+8971686	Nuk mundeshim ta imagjinonim se c'farë Pauli donte të bënte.
+8971687	Sapo e lexova
+8971690	Ajo u ngjyt shkallëve.
+8971695	Kush do të jetë në mbledhjen e javës së ardhshme?
+8971698	Kishte shumë njerëz aty.
+8971703	Të lutem, më trego menunë.
+8971704	Mundeni ta çoni në shpi?
+8971705	Kush do të punojë të premten mbrëma?
+8971711	Nuk shkojnë të ndërtojnë sinagoga në Irlandën e Veriut.
+8971713	Do të doja të pija pak çaj ose kafe.
+8971714	Thotë se quhet Tom.
+8971715	Thotë se e ka emrin Tom.
+8971719	Shumë faleminderit për mikpritjen tuaj sot.
+8971720	Tomi është shumë i inatosur me ju.
+8971724	Mu deshën disa orë për ta riprogramuar.
+8971728	Tomi do që unë të jem e sinqertë.
+8971729	Po sikur të dëshiroja të bëja të kundërtën?
+8971732	Më duhet një laptop.
+8971733	Nuk shkojmë të ndërtojmë varreza në Spanjë.
+8971738	Bëra diçka që të ofenodi?
+8971741	Pse disa herë është e vështirë?
+8971745	Çekiçi i artë nuk thyen dyert e qiellit.
+8971754	Atëherë, do më thuash kush je?
+8971755	Nuk duhet të ndodhë më.
+8971761	Nuk u martova me të.
+8971762	Do shkosh të ndërtosh bazat në Turqi.
+8971770	Unë jam nomofob.
+8971771	Unë kam frikë nga ligji.
+8971777	I pashë që hyrën.
+8971778	I pashë të hynin.
+8971781	Dëgjova që u bëre menazheri i filialit të Sidenit.
+8971788	Tomi po dridhej si një gjethe.
+8971790	Nuk ka më mirë.
+8971793	Të gjithë po qeshnin.
+8971796	Kjo lagje është e rrezikshme.
+8971798	Dikush do të bëjë keq.
+8971800	Nuk ha midis vahteve.
+8971801	Nuk ha ndërmjet vahteve.
+8971809	Shpresojmë që nuk do ta bëjë.
+8971813	Nuk do të shkoj kurrë!
+8971817	Asgjë nuk e shqetëson.
+8971823	Nëse duhet një burrë për të propozuar martesë, i duhet dhënë të hajë mirë.
+8971830	Jam i bindur që asnjeri nuk e di.
+8971833	Tomi nuk është i përfshirë.
+8971834	Unë jam e interesuar.
+8971837	Tomi pothuajse u mbyt.
+8971839	Problemi është se nuk kam një vend ku të fle sonte.
+8971840	I thashë që mos të përdorte ato.
+8971841	Sapo bëri një dush.
+8971846	Nuk shkojmë të bëjmë miqësira në Afrikën e Jugut.
+8971847	Së shpejti do më vijë radha dhe mua.
+8971851	Unë jetoj te ky hoteli.
+8971852	Ma ke thënë më parë.
+8971855	Është hapur supermarketi sonte?
+8971857	Unë nuk kaloj kurrë një ditë pa të menduar.
+8971858	Kam nevojë për syzet e mia.
+8971865	Bën të njëjtën gjë me të gjithë?
+8971876	Edhe unë kështu isha në shkollën e mesme?
+8971881	Isha shumë i frikësuar.
+8971886	E gjeta hotelin të tejmbushur me turistë të huaj.
+8971889	Tha se ishte i habitur.
+8971890	Nuk kam lexuar kurrë Dasain.
+8971893	Kam të drejtën ta shoqëroj?
+8971895	Ju nuk keni patur frikë nga lartësita.
+8971898	Më kalo pak sheqerin, të lutem.
+8971903	Thanë që e urrenin këtë libër.
+8971904	Shikoni se ç'farë i ndodhi.
+8972188	Ne e duam të gjithë.
+8972189	Kush bën zanatin e dikujt tjetër, s'e bën mirë.
+8972191	Nuk më pëlqeu shumë.
+8972192	Të gjithë e gjejnë veten te romanet realist.
+8972193	Shkojmë të ndërtojmë thertore në Norvegji?
+8972194	Dëshiron të luash ende golf?
+8972196	Provo këtë salcën.
+8972200	Thuaji Tomit që do të jem gati.
+8972201	Ata dinë të flasin spanjishten.
+8972202	Shkojnë të ndërtojnë tempuj në Arabinë Saudite?
+8972203	Jam pa fjalë.
+8972204	Ato duan të bëhen të famshme.
+8972207	"Të ç'farë kombësie janë profesorët tuaj?" "Polak"
+8972209	Kjo shprehje është në spanjisht kur nuk shikon.
+8972222	Shkoni të ndërtoni ferma në Liban.
+8972227	Ç'farë doni t'ju sjellë babagjyshi i Vitit të ri për krishtlindje?
+8972229	"Të cilës kombësi ishin mësueset e tua?" "Gjermane."
+8972233	Nuk jemi të ndarë.
+8972234	Do të shkoni të jepni mësim në Ukrainë?
+8972237	Tomi nuk e di që Mary është kanadeze.
+8973016	Po shkon të ndërtosh xhami në Japoni?
+8973017	Do ja çoj asaj.
+8973028	Tomi është qesharak.
+8973030	Ajo shtëpi të përket.
+8973035	Ajo nuk e di gjermanishten, apo jo?
+8973037	Tomi nuk gjeti asgjë të gabuar.
+8973043	Mendoja se Tomi nuk do ti dinte përgjigjet.
+8973048	Më duket se një energji e tëmerrshme trondit regullin e universit.
+8973057	Nuk jemi të kujdesshëm.
+8973061	Ai as që më dëgjon.
+8973064	Mora mesazhin e saktë sot në mëngjes.
+8973065	Nuk janë të dobëta si ishin dikur.
+8973067	Të enjten do bëjmë matematikë?
+8973069	Do ta pranoja.
+8973074	Keni kaluar kohë me Marien.
+8973077	E urrej motin këtu.
+8973081	Do shkosh të ndërtosh shtëpi në Meksikë?
+8973088	Shko të ndërtosh arena në Japoni.
+8973093	Di të vozit.
+8973098	Shoku im i ngusht nuk është indonezian?
+8973099	Mund ti thërrasim tani?
+8973100	"Të ç'farë kombësie ishin kushërirat e tyre?" "Lituaneze."
+8973107	Atij i pëlqen dhe sporti përveç muzikës.
+8973108	Unë do të doja që të ndodhte diçka e bukur.
+8973110	Po mëson dhe gjuhët e huaja?
+8973119	Ditët po fillojnë të zvogëlohen.
+8973121	Dukeshe e çuditur.
+8973122	Po provonim ta mbanim të fshehtë.
+8973123	Unë kam nevojë për më shumë hollësira.
+8973128	E di që duhet të jetë i urritut.
+9004962	Si je ti?
+9004963	Unë flas disa gjuhë të huaja.
+9004995	A flisni kinezisht?
+9004999	Jam nga Portugalia.
+9005001	Cili është pseudonimi juaj?
+9017433	Betohem që dje pash Superman-in.
+9017439	Askush nuk e dinte.
+9017440	Të gjithë e dinin.
+9017447	Ndahen në grupe me pesë persona secili.
+9017462	Vazhdojmë me diskutimin.
+9017476	Mos harro të falenderosh Tom-in për dhuratën.
+9017480	Ka kaluar shumë nga hera e funit që kam parë Tom-in kaq të lumtur.
+9017501	Tomi dëshironte që të gjithë të shkonin në shtëpi.
+9017536	Hajdutët ikën, pavarësisht një shkëmbimi të shkurtër zjarri me një polic.
+9017569	Parisi është qyteti më i bukur i botës.
+9017573	Tomi u gjet i vdekur në garazhin e tij.
+9017582	Cilat janë aftësitë tuaja në këtë lëmë?
+9017584	Kujt ja the?
+9017660	Tomi do ishte shumë krenar për të.
+9017661	Ndërvepron gjithmonë me publikun.
+9017670	Heqja e metaforës është e pakëshillueshme në një tekst letrar dhe pjesërisht e saktë në një tekst informues.
+9017682	Është pak xheloze.
+9017685	Je e sigurt që Tomi mund ti shërbejë vetë vetes?
+9017687	Kemi një përgjegjësi morale për të vepruar.
+9017698	Tomi mban ende syzet?
+9017699	Jam vetëm këtu?
+9017705	Është kurajoze, apo jo?
+9017714	Nuk do të ftohemi.
+9017717	Nuk do të marrim të ftohtë.
+9017729	Tomi është shumë me fat, apo jo?
+9017730	Tomi është fatlum, saktë?
+9017741	Kjo rrugicë është e akullt.
+9017743	Nuk është shumë i edukuar, apo jo?
+9017762	Nuk i vë mënjanë.
+9017765	Nuk shkon të ndërtosh baza ushtarake në Vietnam.
+9017766	Tashmë është në tavolinën e tij.
+9017775	Ne do të jemi shok të mirë deri në vdekje.
+9017781	Do të shkosh të japësh mësim të diçkaje në Greqi?
+9017783	Ajo është e huaj dhe nuk kupton rusishten.
+9017787	Do të ishe budalla nëse do t'i besoje asaj.
+9017805	Këshillat e sajë janë tërësisht të pavlerë.
+9017815	"Të ç'farë kombësie ishin nxënëset e tyre?" "Irlandezë"
+9017823	Tomi nuk ndaloi në një barnatore për të marrë barnat.
+9017825	U nise tashmë.
+9017831	Duket si mbulesa e një disku.
+9017853	Drejtohu nga lindja.
+9017854	Do të doja të isha i zgjuar si ju.
+9017866	I pëlqente devotshmëria ime.
+9017867	Edhe unë kam nevojë për ndihmë.
+9017868	Unë kam parë dy vajza të puthen.
+9017869	Pashë dy goca duke u puthur.
+9017876	Frëngjishtja evoluoi nga latinishtja.
+9017879	Nuk mund të aplikoni këtë teori në këtë rast.
+9017880	Ra nga shkallët.
+9017883	E di dikush sesi do ti shprehë përfundimet.
+9017899	Ajo është gjithçka për mua.
+9017900	Tomi e la familjen e tij.
+9017901	Tha që ishte me të vërtetë e palumtur.
+9017906	Nuk kam nevojë të shkoj asgjëkundi sot.
+9017911	Tomi mendonte se ishte një maçok.
+9017914	Tomi është më i zgjuar se ju?
+9017968	Nuk do ta përqafojë.
+9017977	Ky është një vend i mirë për të bërë kapmin.
+9017980	Prit se po fillon ndeshja.
+9017981	Ai mbërriti te stacioni.
+9017984	Ai e flet anglishten rrjedhshëm.
+9017990	Kjo është më e madhe.
+9018011	Nuk mendoj se Tomi dhe Maary janë të pafajshëm.
+9018017	Duhe të shkosh në shtëpi menjëherë.
+9018025	Ka patur shumë ankesa ditët e fundit rreth sasisë së zhurmës së ardhur nga apartamenti jot.
+9018028	Jam mërzitur me shkollën.
+9018029	Më ka ardhur në majë të hundës shkolla.
+9018031	Do të doja të porositja një pica.
+9018033	Nuk do shkojnë të kërkojnë dikë në Francë.
+9018035	Do të shkojnë të punojnë në Francë?
+9018040	E gjetë në ndonjë mbeturinore?
+9018041	Vazhdoi bashkëpunimin me gazetat më të rëndësishme italiane në 1974.
+9018043	E di se ç'farë po bëni.
+9018050	Unë nuk i kam adhuruar idhujt.
+9018053	Tomi ishte jashtë qytetit javë e shkuar.
+9018058	Si ishte mbrëmja e sajë?
+9018060	Ai magjistar është iluzionist.
+9018062	Mund të jenë në gjendje të më ndihmojnë.
+9018063	Nuk do të shkosh të ndërtosh palestra në Finlandë.
+9018064	Gjendja po më shqetëson shumë.
+9018067	Po shkoj të ndërtoj stadiume në Estoni.
+9018069	Burri që po më përshëndet është xhaxhai im.
+9018070	E dashura ime është shtatzënë dhe do ta mbajë fëmijën.
+9018071	Nuk e kam vjedhur portofolin e Tomit. Mund të më kontrollosh xhepat.
+9018074	Tomi dh Mary duken pak të pa kthjellët.
+9018081	Të thirra sepse kam nevojë për një nder.
+9018082	Vihu në radhë si gjithë të tjerët!
+9018087	Po shkon të japësh mësim në Zelandën e Re?
+9018091	"Të ç'farë kombësie janë studentet tuaja?" "Suedeze"
+9018094	Edhe ti je natyrist?
+9018113	Kuptova që isha i bllokuar te ky këndi i humbur për shumë kohë.
+9018120	Lajmërohet gjithmonë e më shkatërrimtar?
+9018123	Nuk bëj pothuajse kurrë gabime.
+9018145	Jo, nuk kam qenë kurrë.
+9018152	Shkoi gjithçka keq.
+9018155	Do të doja një kupë me akullore.
+9018160	Gjuha është bota në të cilën jetojnë njerëzit.
+9018162	Nuk jam mësuar më një trajtim të tillë.
+9018163	Unë jam e qëndrës.
+9018173	The që nuk do të flisnim për Tomin, apo jo?
+9018175	Bëj kujdes me atë gjë.
+9018177	Nuk mund ta kishte më gabim se kaq.
+9018190	Ekuipazhit ju desh ta linte anijen që po fundosej.
+9018192	Shko ndërto stadiume në Belgjikë.
+9018197	Arrij të fle shumë më mirë tani.
+9018200	Sapo të mbërrish, telefono.
+9018204	Unë punoj vetëm.
+9018207	Ndërtoja shtëpi druri.
+9018209	Me vërtet po më kërcënoje?
+9018210	Nuk mund të të them asgjë.
+9018213	Nuk i kam rezervuar ende fluturimet e mia për në Gjermani.
+9018215	Nuk do të shkoni të ndërtoni kjoska në Egjipt?
+9018217	Shikoj një lule të rrallë në saksi.
+9018221	Nuk shkojmë të japim mësim për diçka në Portugali?
+9018227	Një erë vjeshtërore fillojë të frinte.
+9018230	Nuk shkoni të ndërtoni kjoska në Brazil?
+9018237	Di që nesër benzinëshitësit janë në grevë.
+9018251	Nuk është fajtor për vrasje.
+9018261	Nëse kanë parë që kishte mashtrime, është e drejtë të denoncojnë!
+9018271	Tomi sapo mori një promovim.
+9018272	Po thërras Salvuccion me telefonin e Xhulias.
+9018273	Unë ndihmoj nënën time për të gatuar ushqimin.
+9018280	"Të ç'farë kombësie janë nënat tona?" "Estoneze."
+9018282	Nuk shkojmë me pushime në Amerikë.
+9018290	Tomi më tha se po i harrxhoja kohën.
+9018293	Tomi është i vetmi njeri që mund të më ndihmojë.
+9018298	Është e vështirë për të rekuperuar?
+9018306	Atij nuk i intereson asgjë.
+9018307	Duket se Tatoeba punon prapë mirë.
+9018311	Dy vite më parë, studiova anglishten në Angli.
+9018314	Keni ndërtuar ndonjëherë ndonjë shtëpi?
+9018323	Do të shkoni për pushime ne Siri?
+9018324	Nëse nuk e bën për mua, bëje për atë.
+9018326	Nuk besoj se mund ta bëjmë.
+9018327	E pashë në restorant.
+9018331	Nuk ka ujë të pijshëm.
+9018338	Më tha për punën e tij të re.
+9018347	E di ç'farë të bësh.
+9018348	Nuk dua të ulem pranë tyre.
+9018349	Unë zakonisht nuk bëj pyetje.
+9018371	Pse je kaq i fortë?
+9018372	Unë studioj fizikë.
+9018375	Ajo do të bëjë për vete.
+9018378	Tomi nuk është i përshtatshëm për punën.
+9018379	Vozitnim gjithë ditën.
+9018382	Nuk kam ardhur këtu për atë arsye.
+9018383	Ushtria përparoi drejtë armikut.
+9018384	Veshja është absolutisht e mrekullueshme.
+9018385	Ai këmbënguli për të lojtur një tjetër ndeshje.
+9018387	Fituam medaljen e bronxtë.
+9018392	Po më bën të nervozohem.
+9018395	Tomi më tha që e bëri.
+9018402	Unë jam më i zgjuar sa ata.
+9018406	Ai vazhdonte të më fiksonte.
+9018417	Truri është një organ shumë kompleks.
+9018422	Asaj i pëlqen të shkojë të kërcejë me miqtë e sajë.
+9018424	Ne e kemi bërë tashmë.
+9018425	Ju keni një pamje më të keqe se ai.
+9018428	Besoj se Tomi është i pandjeshëm.
+9018431	E njjihni Maryn, apo jo?
+9018441	Askush nuk mund të thotë se ç'farë do të ndodhë në të ardhmen.
+9018445	Unë ndihem i çliruar.
+9018451	Të isha si ju do të filloja menjëherë.
+9018460	Tomi nuk dohet ta bënte?
+9018462	Nuk do të shkojmë të ndërtojmë spitale në Mbretërinë e Bashkuar.
+9018464	Kultivo kastravec dhe përdore mirë.
+9018477	Po e marr si një shenjë shprese.
+9018478	Nuk e kam marrë kurrë seriozisht.
+9018484	Dukeni të shqetësuar.
+9018499	Nuk jam shumë e zënë me punë.
+9018501	Do vish me mua?
+9018510	Tomi nuk duhet të kishte blerë atë që bleu.
+9018513	Unë ja thashë që Tomi ishte gati.
+9018540	Duan të rezervojnë një udhëtim për Danimarkë.
+9018557	Nuk do ti them asnjërit për ty.
+9018562	Thjeshtë doja të më linit të qetë.
+9018565	Kam dëgjuar të thonë që është e varrosur nën gjithë atë borë.
+9018570	E bën dot, apo jo?
+9018574	Në dashuri ka vetëm fillime.
+9018591	Unë nuk mendoj se Tomi ishte i turpëruar.
+9018597	Unë nuk do të komentoj asgjë në lidhje me këtë.
+9018601	Ai më shoqërio deri tek restoranit.
+9018607	Për punë shkon në Irlandën e Veriut.
+9018610	Shkoi në Afrikë për të parë kafshët e egra.
+9018617	Linda ka për të të vrarë.
+9018624	Nuk hanë mish.
+9018627	Asgjë nuk duket se ka ndryshuar.
+9018638	Me një fjalë, lodhet nga gjithçka.
+9018655	Kush j'ua dha?
+9018658	Tomi më kërkoi të ndihmoja Maryn.
+9018664	Nuk mund ta bëj këtë pa të.
+9018684	Si mendon ta bësh?
+9018691	Ishte pyetja jote?
+9018693	Marika i shkroi letra në finlandisht?
+9018696	Je e sigurt që dëshiron të vazhdosh të bësh këtë?
+9018697	Unë po shkoj me të.
+9018699	Shoku im nuk ishte portugez?
+9018711	Tomi derdhi qumësht mbi drithërat e tij.
+9018714	Kursi yt ështV interesant?
+9018717	Ajo është me të vërtetë e bezdisshme.
+9023060	Kam nevojë për hapsirë.
+9023064	Nuk do të jesh kurrë vetëm.
+9023068	Nuk është e stilit tim.
+9023070	Është varka e Tomit.
+9023081	Cila ju pëlqen më shumë, pula apo peshku?
+9023087	Qetësohuni! Mos u nervozoni!
+9023092	Pës studim shkojnë në Suedi.
+9023093	Maria po vishej.
+9023097	Mendoj se Tomi është një tranjer i mirë.
+9023098	Është një idiot.
+9023099	Preveroj të punësoj vetëm njerëz që përkthejnë në gjuhën e tyre amtare.
+9023101	Ajo që thatë nuk ka kuptim.
+9023102	Nuk shkoj të ndërtoj fabrika në Gjermani.
+9023125	Tomi po blen.
+9023129	Ishte pak evaziv?
+9023138	Ende banoj me prindërit e mi.
+9023152	Udhëtimi u anulluar për arsye të një stuhie të tmerrshme.
+9023156	Ju do të jeni xheloze.
+9023157	Kjo gjë është shumë e mirë.
+9023158	Dëshiroj një dhomë teke me dush, ju lutem.
+9023160	Është e vërtetë për çdo praktikë.
+9023162	E dimë që nuk arrin deri tek ajo pikë.
+9023168	Ç'farë kanë realizuar Tomi dhe Mary?
+9023173	Po shkon të bësh njohje të reja në Francë.
+9023177	Kam në pronësi këtë tokë.
+9023178	Posedoj këtë terren.
+9023179	Ushqimi është gati!
+9023180	Është një qen i madh.
+9023181	Tomi e mori punë mbi bazën e forcës së rekomandimit të saj.
+9023187	Po shkojnë të kërkojnë diçka në Angli?
+9023188	Një krokodil i kafshoi një këmbë.
+9023196	Nuk shkon të ndërtojë mbarshtrorse në Bjellorusi.
+9023198	Unë kam qenë në Hokkaido.
+9023207	Të shkoj të ndërtoj tempuj në Indi?
+9023212	Po bëj atë që më thanë të bëj.
+9023217	Nuk shkon të ndërtosh shtëpi në Vietnam.
+9023225	Unë nuk dua t'ju mashtroj.
+9023228	Uau, jam një vonesaxhi i ulët.
+9023231	Kam qenë këtu trembëdhjetë ditë, mundësisht edhe më shumë.
+9023232	Do të jem këtu kur të kthehesh.
+9023239	Juve ju pëlqen Kawaguchi.
+9023241	Sa të mira janë këto vajza!
+9023247	Pse shkove aty?
+9023248	Tomi dii si të humbi garrën.
+9023251	"Të cilës kombësie ishin studentet tona?" "Peruviane."
+9023253	Më tha që kishte të ftohtë.
+9023255	Nuk shkon të ndërtojë restorante në Letoni?
+9023259	Është e paqëndrueshme.
+9023267	E njoh zonën.
+9023271	Do ta zbulojmë kush e bëri këtë.
+9044789	Ju lutem vendosni maskën.
+9089934	Ata janë Japonezë?
+9089940	Kur ishit në Australi?
+9089941	May është një lojtare e shkëlqyer e brixhit.
+9090859	Mund të flisni gjermanishten.
+9090865	Po shkon të ndërtosh rrugë në Vietnam?
+9090866	Unë jam me ju tani.
+9090868	Bëra një vrapim me të.
+9090869	Tomi dhe Mary studiojnë frëngjisht ç'do mbrëmje për tridhjet minuta.
+9090872	Nuk do të shkoni të ndërtoni mausole në Marok?
+9090887	Kjo nuk më ka ndodhur kurrë më parë.
+9090897	Kam nevoj për një palë këpucë të reja.
+9090904	"Të ç'farë kombësie janë miqtë e tyre?" "Kanadez."
+9090923	Të lutem, ndihmo lojbanin!
+9090926	Po shkoj të ndërtoj thertore në Portugali.
+9090938	Nuk shkojnë të ndërtojnë tempuj në Danimarkë?
+9090940	Ke kënduar ndonjëherë në publik?
+9523066	Erdoğan është presidenti i Turqisë.
+9727056	Sa kushton dhoma?
+9788070	Ai e shiti shpirtin e tij?
+9989636	Miku im i pëlqen bajamet.
+9997588	E urrej Naruton
+9997589	Unë jam ulur dhe po ëndërroj të shkoj në Nepal
+9997596	Pse jeni një njeri kaq i mrekullueshëm?
+9997599	Më pëlqen të ha ushqim.
+9997614	Ju mund ta kuptoni që Japonia është një superfuqi.
+10002926	Unë e dua Vegeta-n
+10002932	Unë agjëroj në Ramazan.
+10002933	Kur do të ha Kivi?
+10002935	Më pëlqen të lutem, të bëj dhikër dhe të shkoj në Haxh.
+10002936	Shqiptarët janë myslimanë të devotshëm.
+10002937	Shqiptarët e Maqedonisë e duan Shqipërinë.
+10002938	Turqia është miku më i ngushtë i Shqipërisë.
+10002943	Greqia dhe Serbia duan ta shkatërrojnë Shqipërinë.
+10002945	Shqiptarët e duan Mekën dhe Medinen.
+10002946	Italia nuk është një mik i ngushtë i Shqipërisë.
+10002956	Shqiptarët e duan xhihadin për të marrë tokat serbe dhe greke.
+10002957	Shqiptarët e duan xhihadin.
+10002959	Shqiptarët janë Xhihaditë më të mirë midis muslimanëve.
+10002961	Shqiptarët nuk bëjnë zina.
+10002970	Serbët dhe Grekët i urrejnë Shqiptarët.
+10002977	Shqiptarët janë të zgjuar.
+10003005	Shqiptarët janë besimtarë të flaktë të Islamit.
+10003008	Shqiptarët nuk takohen ndërsa martohen me kë zgjedhin prindërit e tyre.
+10003012	Gratë shqiptare veshin Niqab kur dalin jashtë.
+10003020	Gratë shqiptare nuk kanë të dashur.
+10003022	Gratë shqiptare janë më të bukurat në Evropë dhe nuk kanë prirje ta mbulojnë bukurinë e tyre me nikab.
+10003025	Gratë shqiptare janë të dashura dhe të kujdesshme ndaj Burrit dhe Fëmijëve të tyre.
+10003032	Burrat shqiptarë lejojnë që vajzat e tyre të martohen me çdo mysliman që do të kujdeset mirë për vajzën e tij.
+10003042	Shqiptarët hanë vetëm Mish Hallall.
+10003074	Shqiptarët janë inteligjencë.
+10471304	Pse nuk po ha?
+10762251	Çfarë është palindromi?
+10828669	Kush jeni ju?
+10828684	Ajo është turke.
+10828704	Një mësues i ri erdhi në shkollën time.
+10828712	S'do të shkoj në shkollë.
+10852495	Nuk di asgjë.
+11074106	Shkova në kishë.
+11074112	Çfarë duhet të bëj deri në orën tetë?
+11074129	A pranoni çeqe?
+11451137	Mund t'ju ndihmoj?
+11778790	Kush e zbuloi ishullin?
+12353708	Dua të fle.
+12353714	Kam një shtrat të madh.
+12353717	Po ha mollët.
+12690537	Isha shumë i lumtur në këtë qytet.
+12887493	I njoh të gjithë në fshat.
+13178833	Le të pjekim gështenjat
+13206480	Qiriu i jetës sime do të shuhet së shpejti.
+13206484	U martova tetë vjet më parë.
+13206494	A je miku im?
+13356308	Pse jam këtu?
+13735341	Kriporja është bosh.
+13735561	S'dua të eci vetëm.
+13735562	Nuk dua të eci vetëm.
+13735564	Dërgova një mesazh.
+13735598	A je donzhuan?
+13759494	Është një libër i ri.
+13814258	Libri është i bardhë.
+13830832	Do të jetë ftohtë nesër.
+13850604	Hëna nuk është yll.
+13987187	Dita e Esperantos festohet çdo vit në të gjithë botën për të shënuar përvjetorin e botimit të librit të parë mbi esperanton më 26 korrik 1887.

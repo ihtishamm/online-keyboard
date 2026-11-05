@@ -1,0 +1,550 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+845041	Għaliex il-lista ta' l-ilsna ma tinkludix il-Malti?
+941336	Bħalissa s-siegħa ta' filgħodu u għandi ngħas li ma ngħidlekx!
+941339	Kull meta nqum filgħodu, nħoss uġieħ tremend ġo nofs dahri.
+941342	Malli wasal fil-karozza, nduna li nesa' jitfi d-dwal tal-kċina.
+941344	Jekk qed tħossok miġugħ jew mdejjaq, tiddejjaqx tkellimni, ħabib!
+941349	Fi tmiem it-tbatija, storbju u tiġrib tat-tieni gwerra dinjija, sab is-sabar biss f'nofs il-baħar fuq id-dagħjsa, bil-qasba tas-sajd f'idejh u x-xemx titbissimlu tul il-jum fuq l-orizzont kaħlani.
+941350	Lanqas jekk jinżlu l-anġli mis-sema w jiżfnuli t-tango m'hu ser jirnexxili issa!
+941372	Tom ġieli kien jiżbalja attapposta waqt il-lezzjonijiet sabiex l-għalliema tagħti kasu.
+941394	Kemm jien injorant!
+941399	Għandu fortuna taż-żobb!
+1387539	Minn fejn int?
+1387580	Is-sena t-tajba!
+1387583	Il-Milied it-tajjeb!
+1387632	M'iniex minn hawn.
+1387665	Narak iktar tard!
+1387822	X'ħin hu?
+1387901	Il-ġurnata t-tajba.
+1387949	Jien minn Malta.
+1388207	Ma nixrobx alcohol.
+1388392	X'inhi din?
+1388395	Ma nistax naqbel miegħek.
+1388406	Fuq din naqbel miegħek.
+1388474	Titkellem bl-Ingliż?
+1388485	Dur fuq ix-xellug.
+1388489	Dur fuq il-lemin.
+1388501	Titkellem bit-Taljan?
+1388508	Il-kesħa llum.
+1388552	Is-sħana llum.
+1388559	Titkellem bil-Franċiż?
+1388564	Titkellem bl-Ispanjol?
+1388579	Jiena mill-Ingilterra.
+1388584	Ma nitkellimx bl-Ispanjol.
+1388585	Fejn hu t-tojlit?
+1388590	Fejn hu l-bank?
+1388593	Il-kont, jekk jogħġbok.
+1388629	Ommu titkellem bit-Taljan.
+1388648	Berlin hija l-belt kapitali Ġermaniża.
+1388653	Madrid hija l-belt kapitali ta' Spanja.
+2307579	Għal min ivvutajt fl-elezzjoni?
+2307582	Tista' almenu tgħid "grazzi".
+2307583	Dan ix-xogħol vera faċli.
+2307593	Immur l-iskola fit-tmienja ta' filgħodu.
+2318677	Ommi tnaddaf il-kamra.
+2318681	Il-fniek jħobbu jieklu l-karrotti.
+2318683	Min baqa' ħaj?
+2318695	Mary rasha iebsa wisq biex tiskuza ruħha.
+2318701	Kont ili nafha għaxar snin meta żżewwiġtha.
+2318702	Il-kont ġie iktar minn $25.
+2318715	Itilgħu fuq tal-linja wieħed wieħed.
+2318717	Imissek tieqaf tpejjep.
+2321871	Fetaħ il-kexxun, u ħareġ ittra.
+2321876	Ma kienx tort tiegħi.
+2321879	Għandi dsatax-il sena.
+2321882	Kieku kien għalina, konna ngħidu le.
+2321884	Skużani, se jkolli nħallik.
+2321885	Skużani, se jkolli mmur.
+2321887	Il-qtates jaqbdu l-ġrieden.
+2517906	Merħba fil-Wikipedija, l-enċiklopedija ħielsa li kulħadd jista' jimmodifika.
+2675702	Huwa suppost għandu jkun id-dar illum.
+2759293	Jiena ħsibt illi huwa kien ġej.
+3081425	Għandi żewġ qtates.
+3229113	L-eżami huwa diffiċli.
+3229122	Il-flixkun huwa vojt.
+3229249	Xi trid tagħmel?
+3229252	Xi trid tagħmel illum?
+3229294	Ix-xarabank huwa bil-mod.
+3229298	Jien ma rridx immur l-iskola.
+3229310	Ir-raġel huwa qawwi.
+3229331	Hemm studenti fil-bibljoteka.
+3229335	It-tifla għandha żiemel abjad.
+3229338	Millie għandha ktieb.
+3229350	Jien immur fuq vjaġġ.
+3229358	Jien naqra l-ktieb tiegħi.
+3229367	Millie taqra l-ktieb tagħha.
+3229391	Hu ma għandux xkubetta.
+3230944	Il-ktieb huwa fuq il-mejda.
+3231124	Is-Sena t-Tajba!
+3231141	Il-qattus tiegħek huwa iswed.
+3231148	Il-ktieb huwa ġdid.
+3231158	Il-kamra hija mudlama.
+3231165	Ir-riħa hija diżgustanti.
+3231170	L-eżami huwa faċli.
+3231179	It-traduzzjoni hija preċiża.
+3231322	Il-belt hija żgħira.
+3231324	Il-belt hija kbira.
+3231386	X'nistgħu nixorbu?
+3231420	Il-logħba hija divertenti.
+3231421	It-tazza hija nadifa.
+3231422	It-tazza hija maħmuġa.
+3231423	It-toqba hija dejqa.
+3231424	It-toqba hija wiesgħa.
+3231427	Il-kelma biex tidħol hija twila.
+3231428	Il-kelma biex tidħol hija qasira.
+3231429	It-tifel huwa rqiq.
+3231433	Hija il-ħabiba tiegħi.
+3231545	Naf li huwa mużiċist famuż.
+3231549	Il-waranofsinhar it-tajjeb.
+3231551	Il-lejla t-tajba.
+3231552	Il-lejl it-tajjeb!
+3231554	L-Għid it-Tajjeb!
+3257373	Ma niflaħx nistenna l-mument li niltaqa' miegħek.
+3307658	Esperanto, il-lingwa uffiċjali tal-Unjoni Ewropea, issa!
+3694818	Fil-ktieb hemm għaxart eżerċizzji.
+3717156	Hemm gżejjer fil-baħar.
+4222619	Bħalissa Burj Khalifa huwa wieħed mill-itwal skajskrejper fid-dinja.
+4256156	Merħba fil-Wikipedija.
+5813470	M'iniex bħal tfajliet oħrajn.
+5813471	Jien differenti minn ġuvintur oħra.
+5813472	Jien differenti minn subien oħra.
+5813473	Liema żiemel lgħabt?
+5813474	Fuq dak biss taħseb int.
+5813475	Tgħallimt kollox mingħandek.
+5813476	Tgħallimt kollox mingħandu.
+5813477	Tgħallimt kollox mingħandha.
+5813479	Naħseb għandi biżżejjed flus biex nixtri l-kompjuter li rrid.
+5813480	Kważi għandi kull ma rrid.
+5813482	Kważi għandi kull m'għandi bżonn.
+5813483	Kważi għandi kull ma neħtieġ.
+5813485	Ma naqbel ma' kważi xejn milli għadu kif qal Tom.
+5813486	Naħseb xtrajna kull m'għandna bżonn.
+6104541	Min baqa ħaj?
+6195984	Il-fkieren m'għandhomx snien.
+7315913	Il-kelb jorqod fuq il-couch.
+7682520	Is-surmast qal: "Il-gimgħa d-dieħla se tkun vaganza"
+7682523	Is-surmast saqsieni: "Il-gimgħa d-diehla se tkun vaganza?"
+7682525	Is-surmast saqsieni jekk il-gimgħa d-diehla hux se tkun vaganza.
+7682527	Is-surmast saqsieni : "Meta se jiġi?"
+7682530	Ikkmandah imur id-dar.
+7682533	Ordnalu jmur id-dar.
+7682536	Ordna biex jinġiebu d-dokumenti kollha.
+7682539	Ordna li jinġiebu d-dokumenti kollha.
+7682544	L-arloġġ qiegħed fuq il-mejda.
+7682547	Huwa l-arloġġ qiegħed fuq il-mejda?
+7682549	L-arloġġ qiegħed fuq il-mejda?
+7682551	Ħriġtu mill-forn kmieni wisq.
+7682555	Ħriġtux mill-forn kmieni wisq?
+7682561	L-arloġġ qiegħed fuq il-mejda, hu?
+7725021	Luis Suárez huwa urugwajani.
+7741895	It-tfal qed jieħdu zokkor ħafna aktar mil-limitu, jiġifieri dak ta’ 30 gramma ta’ zokkor.
+7741897	Man-nofs zokkor li jieħdu t-tfal ġej mix-xorb, il-ħelu, iċ-ċereali u l-yoghurts.
+7745934	Fil-bidu Alla ħalaq is-sema u l-art.
+7745955	L-unika kilwa li għandi qed taħdem aħjar minn meta kelli tnejn.
+7792096	Kemm jiswa dan l-arloġġ?
+7792098	Trid tissegwa r-regoli ta' l-iskola.
+7792352	Huwa qalli li kien sejjer l-Amerika.
+7792456	Qatt ma għoġobni l-bioloġija.
+7792458	Jien ukoll għalliem.
+7792459	Jiena ukoll għalliema.
+7792771	Togħġbok din il-belt?
+9083315	Fejn hi l-karozza tiegħek?
+9083321	Kilt sandwiċ fil-Subway.
+10469996	Il-qtates jaħkmu d-dinja.
+10470010	Trid iżżur l-Amerika?
+10470033	Fejn hu l-ktieb bil-qoxra ħamra?
+10471310	Għaliex ma tiekolx?
+10667431	Semmew binhom "Tom."
+10772329	Il-poplu magħqud qatt mhu se jiġi megħlub.
+11055909	Millie għandha għajnejn blu.
+11451681	Ziri baqa 'ħaj.
+11467242	Ivvutajt biex nibqgħu.
+11467883	Ziri reġa’ żżewweġ.
+11492469	Qed tara l-aħbarijiet?
+11652632	Yanni mar jorqod.
+11652636	Yanni fl-aħħar mar jorqod.
+11652638	Ziri mar jorqod bikri.
+11652639	Ziri malajr mar jorqod.
+11652640	Ziri ma damx mar jorqod.
+11652642	Aħna lkoll morna norqdu wara dan.
+11652644	Elias mar jorqod fil-kamra tiegħu.
+11652645	Lukas mar jorqod ftit.
+11652652	Ziri offra biex jgħin fix-xogħol.
+11652653	Ziri skuża ruħu.
+11652673	Ziri qaxxar il-leħja.
+11652675	Ziri reġa’ mar.
+11652683	Ziri ħabbat fuq il-bieb.
+11652684	Ziri ħabbat il-bieb.
+11652702	Paul iħobb jivvjaġġa.
+11652703	Ziri qatt ma pprotesta.
+11652705	Ziri waqqaf it-tipjip.
+11652712	Ziri tlewwem maʼ imħallef.
+11652715	Ziri kien intelliġenti.
+11652963	Paul inqatel minnufih.
+11652965	Paul qam imwerwer.
+11652970	Paul kien jilgħab Solitaire.
+11652973	Paul fetaħ gwardarobba tiegħu.
+11652978	Paul isuq semitrejler.
+11652979	Paul ta l-Rima ftit ilma.
+11652981	Paul mar l-kċina.
+11652990	Paul reġa’ mar lil-kantina
+11655428	Tom jħobb jaqta l-injam.
+11655429	Hu jħobb josserva l-għasafar.
+11655430	Ziri jħobb jieħu r-riskji.
+11655431	Hu jħobb jitkellem dwar l-Alġerija.
+11655432	Hi tħobb tilgħab ma' dan il-ħaruf.
+11655434	Hu jħobb jpejjep fit-twalett.
+11655435	Hu jħobb jitkellem dwar l-armata.
+11655438	Hu jħobb jqatta' ix-xahar tar-Ramadan fil-Kabylie.
+11655440	Hu jħobb jaħdem fix-xita.
+11655456	Yanni jħobb jagħmel il-biċċa l-kbira tal-affarijiet waħdu.
+11655469	In-nagħġa ta' Ziri tħobb tiekol qamħirrum.
+11655475	Ziri jħobb jikkampja fil-foresti nazzjonali.
+11655496	In-nagħġa tħobb tistaħba fil-maqjel.
+11655505	Ziri jħobb jara l-istilel billejl.
+11655516	Ziri jħobb jħalli ħwejġu fl-art.
+11655524	Ziri jħobb jħalli din l-liedna fil-kamra tal-banju.
+11655533	Ziri jipprova jgħin in-nies.
+11655536	Hu jipprova jimpressjona sħabu.
+11655539	Yanni qatt ma jipprova jimpressjona Skura.
+11655547	Hi dejjem tipprova tgħin in-nies oħra.
+11655556	Ziri dejjem jipprova jżomm il-wegħdi tiegħu.
+11655569	Hija Musulmana u tipprova tilbes modest.
+11655579	Il-Musulman it-tajjeb jipprova jogħġob lil Alla, mhux lin-nies.
+11658852	Ziri kien dejjem jitlef.
+11658853	Ziri kien dejjem jirbaħ.
+11658854	Ziri kien dejjem jkanta.
+11658855	Ziri dejjem jagħmel dan.
+11658856	Ziri dejjem joqgħod id-dar.
+11658858	Ziri kien dejjem jiekol waħdu.
+11658859	Ziri kien dejjem jgħum waħdu.
+11658860	Ziri kien dejjem jixrob waħdu.
+11658861	Ziri kien dejjem joqgħod waħdu.
+11658862	Ziri kien dejjem jaħdem waħdu.
+11658863	Ziri kien dejjem jilagħab waħdu.
+11658864	Ziri kien dejjem jiżfen waħdu.
+11658865	Ziri kien dejjem jimxi waħdu.
+11658866	Ziri kien dejjem jiġri waħdu.
+11658867	Ziri kien dejjem jiġri.
+11658868	Ziri kien dejjem jorqod waħdu.
+11658870	Stefan jorqod l-ġurnata kollha.
+11658872	Ziri kien dejjem jkanta waħdu.
+11658873	Ziri kien dejjem jgħidu dan.
+11658874	Ziri kien dejjem jagħmal dan.
+11658876	Ziri kien dejjem jilbes nuċċali tax-xemx.
+11658877	Ziri kien dejjem jilbes nuċċali.
+11658878	Ziri kien dejjem jilbes ingwanti.
+11658879	Ziri kien dejjem jilbes stivali.
+11658880	Ziri kien dejjem jilbes żraben sportivi.
+11658881	Ziri kien dejjem jistudja waħdu.
+11658882	Ziri dejjem jgħid dan.
+11658883	Ziri kien dejjem jċempel lil ommu.
+11658884	Ziri dejjem jaħsel snienu.
+11658885	Ziri ħasel snienu.
+11658886	Yanni dejjem jaħsel snienu.
+11658889	Ziri ħasel snienu?
+11658890	Robert mar jaħsel snienu.
+11658891	Felix kela u ħasel snienu.
+11658892	Hu jaf kif jaħsel snienu.
+11658893	Ziri dejjem jaħsel snienu wara l-kolazzjon.
+11658894	Ziri dejjem jaħsad l-ħaxix tiegħu.
+11658895	Ziri dejjem jibki fil-funerali.
+11658897	Ziri dejjem jiġġieled fil-festi.
+11658898	Ziri kien dejjem jagħmel dan waħdu.
+11658901	Ziri kien dejjem jara t-televixin waħdu.
+11662552	Ziri pprova kollox.
+11662553	Ziri pprova dan.
+11662554	Ziri pprova jisma.
+11662555	Ziri reġa' pprova.
+11662556	Ziri pprova jiffoka.
+11662557	Ziri pprova jibgħat SMS lil Rima.
+11662558	Ziri prova jinħeba.
+11662561	Ziri pprova jimxi malajr.
+11662562	Ziri pprova jorqod.
+11662564	Ziri daq in-naspli tal-Ġappun.
+11662565	Ziri pprova jinsa Rima.
+11662567	Ziri pprova jsib Rima.
+11662568	Ziri pprova joqtol Rima.
+11662569	Ziri pprova u reġa' pprova.
+11662570	Ziri pprova jċempel lil Rima.
+11662571	Ziri pprova jqarraq b'Rima.
+11662572	Ziri pprova irrabja Rima.
+11662574	Ziri pprova jċempel lil ġenituri tiegħu.
+11662604	Ziri kien qed jara.
+11662608	Ziri kien qed ipejjep.
+11667322	Ziri jistaʼ jaqra.
+11667323	Ziri jista' jikteb.
+11667324	Ziri jista' jitkellem.
+11667327	Ziri jista' jgħum.
+11667329	Ziri jista' jiġri.
+11667330	Ziri jista' jilgħab.
+11667331	Ziri jista' jitlaq.
+11667334	Ziri jista' jsajjar.
+11667336	Ziri jista' jmur.
+11667337	Ziri jista' jkanta.
+11667338	Ziri jista' jibqa.
+11667339	Ziri jista' jibda.
+11667341	Ziri jista' jiżfen.
+11667343	Ziri jista' jinbidel.
+11667347	Ziri jista' jieqaf.
+11667348	Ziri jista' jaħdem.
+11667349	Ziri jista' jipprova.
+11667350	Ziri jista' jagħmel dan.
+11667351	Ziri jista' jispjega dan.
+11667353	Ziri ma jistax jorqod.
+11667354	Ziri ma jistax joqgħod.
+11667355	Ziri jista' jilbes dan.
+11667356	Ziri jista' jilgħab il-poker.
+11667357	Ziri jista' jiftakar dan.
+11667358	Ziri jista' jmor issa.
+11667359	Ziri ma jistax jara.
+11667360	Ziri jista' jgħinek.
+11667361	Ziri jista' jisma' kollox.
+11667362	Ziri majistax jinbidel.
+11667363	Ziri jista' jgħallem Rima.
+11667364	Ziri majistax jiżfen.
+11667365	Ziri jista' jara Rima.
+11667366	Ziri jista' jingħaqad magħna.
+11667367	Ziri jista' jċempel lil Rima.
+11667368	Ziri jista' jarak.
+11667369	Ziri jista' jafda Rima.
+11667370	Ziri majistax jisma Rima.
+11667371	Ziri jista' jidħol.
+11667372	Ziri jista' ibiddel dak.
+11667373	Ziri jista' ibiddel dan.
+11667374	Ziri jista' jibża l-orsijiet.
+11667375	Ziri jista' jaqra l-imħuħ.
+11667377	Ziri ma jistax jistenna.
+11667378	Ziri ma jistax jispara.
+11672970	Ziri jrid l-flus.
+11672971	Ziri jrid dan.
+11672974	Ziri jrid dak.
+11672979	Ziri jrid l-imħabba
+11672980	Ziri jrid is-sess.
+11672983	Ziri jrid kejkijiet żgħar.
+11672988	Ziri jrid il-liedna.
+11672990	Ziri jrid l-inbid.
+11672992	Ziri jrid jitkellem.
+11672994	Ziri jrid pizza tal-ġobon.
+11672996	Ziri jrid pizza tal-pepperoni.
+11672997	Ziri jrid jgħin.
+11672998	Ziri jrid aktar zalza.
+11672999	Ziri jrid jiżfen.
+11673002	Ziri jrid jitlob maħfra.
+11673004	Ziri jrid iċ-ċertifikat.
+11673005	Ziri jrid jaħdem.
+11673006	Ziri jrid is-sess b'xejn.
+11673008	Ziri jrid l-ikel b'xejn.
+11673011	Ziri jrid ġelat.
+11673014	Ziri jrid jinbidel.
+11673016	Ziri jrid ikel tajjeb.
+11673018	Ziri jrid mara.
+11673020	Ziri jrid jaħrab.
+11673022	Ziri jrid jirtira.
+11673023	Ziri jrid sigarru.
+11673024	Ziri jrid promozzjoni.
+11673027	Ziri jrid ftit kafè.
+11673028	Ziri jrid divorzju.
+11673031	Ziri jrid aktar ħobż.
+11673032	Ziri jrid aktar stejjer.
+11673033	Ziri jrid dan issa.
+11673034	Ziri jrid dak issa.
+11673035	Ziri jrid liedna oħra.
+11673037	Ziri jrid spjegazzjoni.
+11673038	Ziri jrid Rima tagħmel dan.
+11673039	Ziri jrid imur jistad.
+11673041	Ziri jrid wieħed minn dawk.
+11673043	Ziri jrid waħda minn dawk.
+11673044	Ziri jrid jolqot Rima.
+11673054	Ziri jrid imur jiżfen.
+11673055	Ziri jrid imur jgħum.
+11673057	Ziri jrid imur hemm.
+11673059	Ziri jrid jarahom.
+11673060	Ziri jrid jibqa' hawn.
+11673061	Ziri jrid ikun jaf għaliex.
+11673063	Ziri jrid ikun waħdu.
+11673064	Ziri jrid joqgħod waħdu.
+11673065	Ziri jrid jgħix waħdu.
+11673066	Ziri jrid joqgħod.
+11673067	Ziri jrid jevita dan.
+11673068	Ziri jrid jara aktar.
+11673070	Ziri jrid kafè fih.
+11673071	Ziri jrid ħalib fih.
+11673073	Ziri jrid żieda fil-paga.
+11673074	Ziri jrid jirringrazzja Rima.
+11673075	Ziri jrid jarani.
+11673076	Ziri jrid joqgħod id-dar.
+11673078	Yanni joqgħod id-dar.
+11673079	Ziri jrid joqtol lil Rima.
+11673080	Ziri jrid imur id-dar.
+11673083	Ziri jrid jara Rima.
+11673085	Ziri jrid jbus Rima.
+11673086	Ziri jrid sapun mingħajr riħa.
+11673088	Ziri jrid Rima tibqa.
+11673090	Ziri jrid jiltaqa ma' Rima.
+11673091	Ziri jrid jgħix ħieles.
+11673092	Ziri jrid jibqa niexef.
+11673093	Ziri jrid d-doċċa tiegħu nadifa.
+11673094	Ziri jrid jċempel lil Rima.
+11673095	Ziri jrid jibqa sigur.
+11673096	Ziri jrid jitgħallem il-kitarra.
+11673097	Ziri jrid Rima tagħmel dak.
+11673098	Ziri jrid ikompli dik il-konversazzjoni.
+11673099	Kull ma jrid Ziri huwa ftit privatezza.
+11673100	Ziri jrid jara dak il-film.
+11673101	Ziri jrid Rima tmur id-dar.
+11673102	Ziri jrid ikun Robin Hood.
+11673104	Ziri jrid ikun kampiun.
+11673105	Ziri jrid ibigħ l-appartament tiegħu.
+11673107	Ziri jrid imur il-kulleġġ.
+11673108	Ziri jrid juri lil Rima xi ħaġa.
+11673111	Ziri jrid jaħsel xagħru.
+11673117	Ziri jrid isir attur.
+11673119	Ziri jrid isir kameraman.
+11673125	Ziri jrid isir psikjatra.
+11673129	Ziri jrid ikun l-gowler.
+11673133	Ziri jrid jara terapista.
+11673137	Ziri jrid jisma' l-istorja.
+11673139	Ziri jrid ikun astronawta.
+11673141	Ziri jrid ikun koreografu.
+11673143	Ziri jrid jitkellem miegħek.
+11673146	Ziri jrid Rima tiġi d-dar.
+11673148	Ziri jrid isuq il-Porsche.
+11673151	Ziri jrid jorqod ma' Rima.
+11673157	Ziri jrid jiġġieled ir-razziżmu.
+11694663	Ziri ma jistax jikkontrolla Rima.
+11694666	Enrico kompla jaqra kotba.
+11694667	Ziri kompla jagħti widen.
+11694669	Ziri kompla jisma'.
+11694671	Ziri stieden lil Rima.
+11694672	Ziri waqqaf Rima.
+11694673	Ziri nnota Rima.
+11694674	Ziri ltaqaʼ maʼ Rima.
+11694677	Ziri attakka lil Rima.
+11694679	Ziri jafda f'Rima.
+11694680	Ziri pproteġa lil Rima.
+11694684	Ziri bies Rima.
+11694685	Ziri ra Rima.
+11694687	Ziri ħeles lil Rima.
+11694689	Ziri semaʼ Rima.
+11694690	Ziri ġera wara Rima.
+11694694	Ziri ċempel lil Rima.
+11695520	Ziri qatel lil Rima.
+11695522	Ziri ħabb lil Rima.
+11695524	Ziri kien iħobb lil Rima.
+11695525	Ziri kien jobgħod lil Rima.
+11695527	Ziri ta daqqa lil Rima.
+11695528	Ziri mess Rima.
+11695530	Ziri għarrex Rima.
+11695531	Ziri rringrazzja lil Rima.
+11695533	Ziri attaka Rima.
+11695534	Ziri spara Rima.
+11695536	Ziri telaq lil Rima.
+11695538	Ziri abbanduna Rima.
+11695539	Ziri għen lil Rima.
+11695540	Ziri kien jaf Rima.
+11695544	Ziri iżżewweġ lil Rima.
+11695546	Ziri sawwat lil Rima.
+11695548	Tom sab xogħol.
+11695549	Hu sab xogħol fl-Alġerija.
+11695550	Ziri sab Rima.
+11695552	Enrico sab xi ħaġa.
+11695554	Enrico sab soluzzjoni.
+11695556	Enrico sab impjieg tajjeb fl-Alġerija.
+11695558	Enrico sab xogħol hemmhekk
+11695563	Enrico sab l-knisja.
+11695565	Ziri stupra Rima.
+11697494	Għid lit-tabib tiegħek.
+11697503	Ara lit-tabib tiegħek.
+11697504	Ċemplet lit-tabib.
+11697507	Hi żżewġet tabib.
+11697509	Żżewġet mill-ġdid.
+11697510	It-tabib eżaminani.
+11697511	It-tabib irrabja.
+11697512	Fejn hu t-tabib?
+11697514	It-tabib kien irrabjat.
+11697516	It-tabib ma jaf xejn.
+11697517	It-tabib ħareġ.
+11697518	Min hu it-tabib tiegħek?
+11697519	It-tabib daħal.
+11697520	It-tabib reġa.
+11697521	Għandna bżonn aktar tobba.
+11697522	It-tabib qal hekk.
+11697523	It-tabib tiegħu Alġerin.
+11697524	Hija tabiba tiegħi.
+11697526	Salas tabib tiegħi.
+11697527	Skura tabiba tiegħi.
+11697528	Rat lit-tabib.
+11697529	Salas ra lit-tabib.
+11697530	Skura rat lit-tabib.
+11697531	Huma raw lit-tabib.
+11697533	Yanni rringrazzja lit-tabib tiegħu.
+11697534	Kellem lit-tabib tiegħek.
+11697536	Ziri sar tabib.
+11864590	Hu wieġeb għall-mistoqsija.
+11964403	Yanni jilgħab il-kitarra.
+11964405	Hu jiekol il-ġobon.
+11964411	Hu jixrob ż-żejt taż-żebbuġa.
+11964416	Tom jikteb bil-mod.
+11964418	Tom jitkellem bil-mod.
+11964421	Tom jaqra bil-mod.
+11964425	Huwa jgħix fuq.
+11964431	Yanni jorqod kullimkien.
+11964435	Tom jsuq bil-mod.
+11964443	Skura għexet waħedha.
+11964472	Hu se jixtri trakk.
+11964475	Se nixtru lukanda.
+11964477	Tista' tixri dar?
+11964484	Għaliex xtrajt karozza?
+11964486	Għaliex xtrajt fjora?
+11964487	Għaliex xtrajt biljett?
+12392186	Il-mużika hija ħajti.
+12392188	Hemm ukoll televiżjoni fil-kamra?
+12392191	Tom jaf triqtu madwar il-qorti.
+12392193	Kif tintemm din l-istorja?
+12392194	Din hi tagħkom?
+12392195	Din hija tagħkom?
+12392196	Din hi tiegħek?
+12392197	Din hija tiegħek?
+12392199	Għandhom kappell tas-suf?
+12392200	Neħtieġu kappell tas-suf?
+12392201	Din il-ħuta mhix tajba biex tiekol.
+12392207	Ivvjaġġajna madwar il-pajjiż kollu.
+12392248	Xtrajt kappell tas-suf?
+12392249	Mekjusa għandha kappell tas-suf.
+12392251	Għandek kappell tas-suf?
+12392254	Din is-sħaba għandha forma ta' ħuta.
+12392257	Tgħallimna l-Ingliż ilbieraħ.
+12392259	Oħti hija Kristjana.
+12392263	Qiegħed infittex din il-lukanda.
+12392264	Nfittex din il-lukanda.
+12392267	Qiegħda infittex din il-lukanda.
+12392270	Tiħtieġ tmur l-isptar.
+12392271	Għandek bżonn tmur l-isptar.
+12392452	Tqis lilek innifsek bħala persuna onesta?
+12392464	Tlaqt mill-uffiċċju tiegħi.
+12392466	Kont qiegħed nilgħaq widna.
+12392467	Kont qed nilgħaq widna.
+12392470	Ridt niftaħ kont tal-bank.
+12392472	Huwa daħal il-bank.
+12392474	Daħal il-bank.
+12392475	Se naħsel il-kalzetti.
+12392477	Stajt immur id-dar.
+12993423	Wieħed, tnejn, tlieta, erbgħa, ħamsa.
+12996281	Jien Ċiniż u nħobb iċ-Ċina.
+13064741	Il-ġejjieni mhuwiex se jinbena fuq is-setgħa, u lanqas fuq ix-xewqa ta’ ħakma, iżda permezz ta’ applikazzjoni kajmana tal-metodu demokratiku, l-ispirtu kostruttiv ta’ qbil, u b’rispett għall-ħelsien.
+13086014	Jien ma għedtx li ridt dan.
+13086016	Tom qabel ma' dan.
+13086017	Huma biss lesti.
+13086018	Kulħadd juża l-Internet.
+13086020	Damien huwa wieħed mill-aktar ħbieb riċenti tiegħi minn meta kont qed ngħix Vancouver, BC. Għandna kemm lingwi naturali kif ukoll lingwi artifiċjali bħala passatempi komuni. Tagħni bil-Franċiż online meta kien għadu jgħix f'Ottawa. Okkazjoni memorabbli kienet meta kilna f’ristorant Messikan Tio Pepe’s fuq stylish Commercial Drive f’Vancouver, BC. Nieħdu pjaċir nitkellmu dwar il-lingwi. Jħobb l-Esperanto, l-Interlingua, u l-Ido kollha, u mhux biss dawk il-konlangs. Huwa ta' xagħar kannella skur ta' dixxendenza Pollakka.
+13086021	Skont AMeDAS, l-ammont ta 'preċipitazzjoni fir-raħal qabeż l-1,200 mm fi tlett ijiem.
+13424346	Il-Malti huwa lingwa Semitika.
+13564943	Ix-xadin waqa' mis-siġra.
+13564944	Ix-xadina waqgħet mis-siġra.
+13564945	L-ajruport huwa 'l bogħod minn hawn?
+13564946	Diġà ktibt tliet ittri.
+13707804	Merkurju jista' jidher mid-Dinja biss eżatt qabel tlugħ ix-xemx jew eżatt wara nżul ix-xemx, iżda mhux f'nofs il-lejl. Dan għaliex Merkurju dejjem jidher ħdejn ix-Xemx meta jidher mid-Dinja.
+13987178	Jum l-Esperanto jiġi ċċelebrat kull sena madwar id-dinja biex ifakkar l-anniversarju tal-pubblikazzjoni tal-ewwel ktieb dwar l-Esperanto fis-26 ta' Lulju, 1887.
+14088608	Sfortunatament, m'għandix biljett.

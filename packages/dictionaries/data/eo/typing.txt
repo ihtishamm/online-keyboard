@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+532077	Estas tempo, ke vi ĉesigu viajn infanaĵojn.
+544131	Mi ĵus finis miajn hejmtaskojn.
+554080	Ĉu la poŝtisto jam venis?
+641768	Mi havas du biletojn por la Imperia Teatro.
+658661	La pluvo forlavis la grundon.
+720572	Metu ĝin surpapere, tiel ke ĉiu pli bone komprenas.
+727073	Ŝi ŝajnigis priplori lian morton.
+728195	Kion ni manĝu hodiaŭ vespere?
+736091	Mi ne povas fidi al John pri mia aŭto.
+740526	Kelkaj politikistoj estas lupoj en felo ŝafida.
+922892	Se mi estos trovinta vian pasporton, mi tuj telefonos al vi.
+1061115	Ĉu vi estis antaŭe en Japanujo?
+1225584	Dum duonhoro ni havis teruran pluvegon.
+1454644	Sinjoro Grizo alvenis kiel la unua.
+1454743	S-ro Wall prokrastis viziton al dentisto.
+1651973	Ni faras buteron el lakto.
+1707528	Ne rakontu pri tio al viaj gepatroj, estu tiel afabla!
+1763458	Sub la ponto estas kajuto.
+1920032	Mi ridetis, aŭdante lian amdeklaron.
+1941822	Mi donas nutraĵon al vi kiel al birdeto!
+1948578	Mi tre amas tiun lingvon kaj volas ellerni ĝin ĝis bona nivelo.
+2005124	En aero ŝvebis la parfumo de printempaj floroj.
+2140662	Pli ol kvincent personoj vundiĝis.
+2285604	Ĉu vi ne havas amikojn?
+2381212	De mia patro mi lernis kiel uzi martelon.
+2398622	Hisu nian flagon sur la plej alta turo de la urbo!
+2428848	La vendo de tiu pentraĵo devus enspezigi nemalmulte da mono ĉe aŭkcio.
+2637517	Mi eltrovis, ke estis malfacile por ŝi solvi tiun problemon.
+2658309	Nia telefono ne funkcias, do mi riparigos ĝin.
+2797337	Mi volas iom da akvo.
+2870273	La knabinoj surhavas mallongajn jupojn ĉi-epoke.
+2986470	Por ĉiu kurso, kiun mi sekvas ĉi-sesmonate, mi havas kajeron. Ili estas tre pezaj.
+3047292	Tiu viro estas vere tre maljuna.
+3065090	La fakton, ke li estas grava ŝtatisto, oni ne povas negi.
+3229345	Mi vizitas miajn geavojn dufoje en semajno.
+3298704	Seksa logo estas tio, kion viroj povas priskribi nur per la manoj.
+4099732	Necesas esti singarda, sed ne timida.
+4205290	Vi devus vivi laŭ viaj principoj.
+4443451	Ĉagreno sidas sur la vizaĝo de la sinjorino.
+4605768	Lastnokte ni havis neinvititajn gastojn.
+4718535	La virino kuraĝe faris al la junulo amajn okuletojn.
+4885670	Kie mi povas aĉeti kandizitajn fruktojn?
+5071246	Vi ne uzu tiun vorton kontraŭ li.
+5086599	La dokumentoj, kiujn mi bezonas, troviĝas en la tirkesto.
+5143233	Ne lasu ilin malkuraĝigi vin!
+5185157	Ĉu vi kontentas pri via korpo?
+5188179	Kiel vi scias, ke estas ni, kiujn ili serĉas?
+5293571	Mi ankoraŭ ne komprenas tion, pri kio vi parolas.
+5315787	Mi devas scii, kion vi pensas.
+5407023	Mi estas la plej juna el la naŭ filoj de niaj gepatroj.
+5440334	Tiu kuzo poste edziĝis kun alireligia nederlandanino, kaj ili ekloĝis en Nederlando.
+5609463	Vi eble kapablas helpi Tomon.
+5655838	Ŝi resendis la ĉemizon, ĉar ĝi tro malgrandis.
+5690765	La vojo en tiu loko harpingle turniĝas desktren.
+5902198	Mi legas kaj spektas ĉion, kio temas pri araneoj.
+6311315	Kelkfoje mi nur volas forkuri kaj malaperi.
+6313437	La ĉeesto de Blankneĝulino ĝojigis ankaŭ Ĉefnanon, ĉar li nun povis paroli pri psikanalizo kun iu.
+6711843	Lasu min iri, kaj mi rekompencos vin.
+7132979	Kelkaj medikamentoj estas danĝeraj por la sano.
+8330537	Ne tre grava estas ĉi tio.
+8728986	La butikoj estas fermitaj hodiaŭ.
+8821631	Liaj pacientoj ne forlasos lin.
+8965338	Kiom da kalejdoskopoj troviĝas en la oranĝa skatolo?
+9844223	Hebreaj preĝoj, religiaj tekstoj, kaj komentaroj estas plenaj de referencoj al hebreoj kiel nacio.
+9952084	En la banĉambro estas pluvduŝilo.
+10162947	Ĉu la turo estas tiel grava en la ŝakludo?
+10634870	Kial vi ne festas kun ni?
+10638849	Tomaso povis resti, sed li decidis foriri.
+11806099	Mi ŝatus labori en pli malgranda entrepreno.
+11823633	Mi bedaŭras, ke mi tiom trinkis.
+12027598	La kabila estas tre mojosa lingvo.
+12091896	Kiel mi povas eskapi el la ĉiutaga irado?
+12143199	Ni donis al Tomo niajn ŝlosilojn.
+12787053	Ni havos dungan rendevuon posttagmeze.
+12857462	Britoj ĝenerale tre ŝatas siajn hejmbestojn.
+13179442	Li manĝas iom da bruna pano.
+13320521	Timur la kazaĥo unue ŝajnis al mi kiel japano, filipinano, ĉino, aŭ koreo.
+13614935	Kafeino estas unu el la plej vaste konsumataj alkaloidoj de la mondo.
+13798387	Mi petegas vian pardonon. Mi retiras miajn vortojn.
+13883897	Tomo ne ŝatis la sandviĉon, kiun Manjo faris por li.

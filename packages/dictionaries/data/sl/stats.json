@@ -1,0 +1,15 @@
+{
+  "source": "slwiki.xml.bz2",
+  "pages": 21825,
+  "sentences": 766473,
+  "repeatedSentencesSkipped": 118639,
+  "tokens": 8448758,
+  "distinctWords": 525751,
+  "wordsKept": 100000,
+  "nextWordHeads": 9789,
+  "text": "sl-train.txt",
+  "textSentences": 2530,
+  "textWeight": 46.59,
+  "heldOutPages": 444,
+  "heldOutSentences": 2000
+}

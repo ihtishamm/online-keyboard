@@ -178,7 +178,10 @@ async function passOne(sentencesPath: string) {
   const textLines = textFiles.flatMap((file) => readFileSync(file, "utf8").split("\n"));
   let textTokens = 0;
   for (const line of textLines) textTokens += tokenize(line, rules).filter(Boolean).length;
-  const textWeight = textTokens ? (Number(args["text-share"]) * tokens) / textTokens : 0;
+  // A small set must not outweigh the dump: 16 Faroese sentences at the full share put their
+  // words at the top of the list. Under 20,000 sentences the share shrinks in proportion.
+  const share = Number(args["text-share"]) * Math.min(1, textLines.filter(Boolean).length / 20000);
+  const textWeight = textTokens ? (share * tokens) / textTokens : 0;
   for (const line of textLines) {
     for (const sentence of splitSentences(line, rules)) {
       const before = sentences;

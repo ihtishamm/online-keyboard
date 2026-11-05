@@ -1,4 +1,16 @@
 {
+  "af": {
+    "sentences": 2000,
+    "accentWords": 883,
+    "foreignWords": 60,
+    "auto": 594,
+    "offered": 238,
+    "missed": 51,
+    "plainWords": 34385,
+    "wrongChanges": 7,
+    "restored": 0.942242355605889,
+    "meetsTarget": false
+  },
   "ca": {
     "sentences": 2000,
     "accentWords": 5960,
@@ -23,6 +35,30 @@
     "restored": 0.9109070188375679,
     "meetsTarget": false
   },
+  "cy": {
+    "sentences": 2000,
+    "accentWords": 509,
+    "foreignWords": 33,
+    "auto": 159,
+    "offered": 300,
+    "missed": 50,
+    "plainWords": 34713,
+    "wrongChanges": 9,
+    "restored": 0.9017681728880157,
+    "meetsTarget": false
+  },
+  "da": {
+    "sentences": 2000,
+    "accentWords": 3890,
+    "foreignWords": 74,
+    "auto": 3237,
+    "offered": 506,
+    "missed": 147,
+    "plainWords": 28515,
+    "wrongChanges": 12,
+    "restored": 0.9622107969151671,
+    "meetsTarget": false
+  },
   "de": {
     "sentences": 2000,
     "accentWords": 2766,
@@ -33,6 +69,18 @@
     "plainWords": 27280,
     "wrongChanges": 9,
     "restored": 0.9436008676789588,
+    "meetsTarget": false
+  },
+  "eo": {
+    "sentences": 2000,
+    "accentWords": 3183,
+    "foreignWords": 188,
+    "auto": 2281,
+    "offered": 611,
+    "missed": 291,
+    "plainWords": 32049,
+    "wrongChanges": 14,
+    "restored": 0.9085768143261075,
     "meetsTarget": false
   },
   "es": {
@@ -47,6 +95,42 @@
     "restored": 0.9728211632542128,
     "meetsTarget": true
   },
+  "et": {
+    "sentences": 2000,
+    "accentWords": 4029,
+    "foreignWords": 65,
+    "auto": 3268,
+    "offered": 258,
+    "missed": 503,
+    "plainWords": 19066,
+    "wrongChanges": 34,
+    "restored": 0.8751551253412757,
+    "meetsTarget": false
+  },
+  "fi": {
+    "sentences": 2000,
+    "accentWords": 4241,
+    "foreignWords": 106,
+    "auto": 3746,
+    "offered": 66,
+    "missed": 429,
+    "plainWords": 17207,
+    "wrongChanges": 20,
+    "restored": 0.8988446121197831,
+    "meetsTarget": false
+  },
+  "fo": {
+    "sentences": 1944,
+    "accentWords": 10541,
+    "foreignWords": 99,
+    "auto": 8026,
+    "offered": 1559,
+    "missed": 956,
+    "plainWords": 15785,
+    "wrongChanges": 31,
+    "restored": 0.9093065174082156,
+    "meetsTarget": false
+  },
   "fr": {
     "sentences": 2000,
     "accentWords": 6912,
@@ -57,6 +141,42 @@
     "plainWords": 37718,
     "wrongChanges": 13,
     "restored": 0.9809027777777778,
+    "meetsTarget": true
+  },
+  "ga": {
+    "sentences": 2000,
+    "accentWords": 11706,
+    "foreignWords": 24,
+    "auto": 8384,
+    "offered": 3013,
+    "missed": 309,
+    "plainWords": 27366,
+    "wrongChanges": 22,
+    "restored": 0.9736032803690415,
+    "meetsTarget": true
+  },
+  "gd": {
+    "sentences": 1726,
+    "accentWords": 3289,
+    "foreignWords": 447,
+    "auto": 1014,
+    "offered": 2154,
+    "missed": 121,
+    "plainWords": 25057,
+    "wrongChanges": 17,
+    "restored": 0.9632107023411371,
+    "meetsTarget": false
+  },
+  "gl": {
+    "sentences": 2000,
+    "accentWords": 5577,
+    "foreignWords": 31,
+    "auto": 4016,
+    "offered": 1399,
+    "missed": 162,
+    "plainWords": 34153,
+    "wrongChanges": 10,
+    "restored": 0.9709521247982786,
     "meetsTarget": true
   },
   "hr": {
@@ -83,17 +203,77 @@
     "restored": 0.8705088334546417,
     "meetsTarget": false
   },
+  "is": {
+    "sentences": 2000,
+    "accentWords": 14332,
+    "foreignWords": 61,
+    "auto": 11805,
+    "offered": 1471,
+    "missed": 1056,
+    "plainWords": 12894,
+    "wrongChanges": 30,
+    "restored": 0.926318727323472,
+    "meetsTarget": false
+  },
   "it": {
     "sentences": 2000,
     "accentWords": 1693,
-    "foreignWords": 103,
+    "foreignWords": 108,
     "auto": 860,
     "offered": 807,
     "missed": 26,
-    "plainWords": 41508,
+    "plainWords": 41503,
     "wrongChanges": 2,
     "restored": 0.9846426461901949,
     "meetsTarget": true
+  },
+  "lt": {
+    "sentences": 2000,
+    "accentWords": 8474,
+    "foreignWords": 19,
+    "auto": 5434,
+    "offered": 2024,
+    "missed": 1016,
+    "plainWords": 13596,
+    "wrongChanges": 48,
+    "restored": 0.8801038470616002,
+    "meetsTarget": false
+  },
+  "lv": {
+    "sentences": 2000,
+    "accentWords": 13131,
+    "foreignWords": 38,
+    "auto": 8201,
+    "offered": 3935,
+    "missed": 995,
+    "plainWords": 13084,
+    "wrongChanges": 32,
+    "restored": 0.9242251161373848,
+    "meetsTarget": false
+  },
+  "mt": {
+    "sentences": 2000,
+    "accentWords": 7865,
+    "foreignWords": 108,
+    "auto": 4535,
+    "offered": 3009,
+    "missed": 321,
+    "plainWords": 30569,
+    "wrongChanges": 39,
+    "restored": 0.9591862682771773,
+    "meetsTarget": false
+  },
+  "nb": {
+    "sentences": 2000,
+    "accentWords": 3410,
+    "foreignWords": 36,
+    "auto": 2718,
+    "offered": 373,
+    "missed": 319,
+    "plainWords": 26183,
+    "wrongChanges": 14,
+    "restored": 0.9064516129032258,
+    "meetsTarget": false
   },
   "nl": {
     "sentences": 2000,
@@ -143,14 +323,50 @@
     "restored": 0.9744604655546132,
     "meetsTarget": true
   },
+  "sk": {
+    "sentences": 2000,
+    "accentWords": 12349,
+    "foreignWords": 22,
+    "auto": 9729,
+    "offered": 1398,
+    "missed": 1222,
+    "plainWords": 15102,
+    "wrongChanges": 17,
+    "restored": 0.9010446189974897,
+    "meetsTarget": false
+  },
+  "sl": {
+    "sentences": 2000,
+    "accentWords": 4208,
+    "foreignWords": 101,
+    "auto": 3692,
+    "offered": 228,
+    "missed": 288,
+    "plainWords": 27361,
+    "wrongChanges": 4,
+    "restored": 0.9315589353612167,
+    "meetsTarget": false
+  },
+  "sq": {
+    "sentences": 2000,
+    "accentWords": 15051,
+    "foreignWords": 31,
+    "auto": 1476,
+    "offered": 13119,
+    "missed": 456,
+    "plainWords": 23251,
+    "wrongChanges": 78,
+    "restored": 0.9697030097667929,
+    "meetsTarget": false
+  },
   "sv": {
     "sentences": 2000,
     "accentWords": 7560,
-    "foreignWords": 58,
+    "foreignWords": 59,
     "auto": 5293,
     "offered": 1922,
     "missed": 345,
-    "plainWords": 26098,
+    "plainWords": 26097,
     "wrongChanges": 21,
     "restored": 0.9543650793650794,
     "meetsTarget": false
@@ -171,12 +387,12 @@
     "sentences": 2000,
     "accentWords": 45641,
     "foreignWords": 0,
-    "auto": 7344,
+    "auto": 7343,
     "offered": 35367,
-    "missed": 2930,
+    "missed": 2931,
     "plainWords": 8545,
     "wrongChanges": 8,
-    "restored": 0.9358033347209745,
+    "restored": 0.935781424596306,
     "meetsTarget": false
   }
 }

@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+369576	Qualis pater, talis filius.
+369577	Heus! Quid novi?
+381287	Dimidium facti qui coepit habet.
+613668	Hic et nunc.
+631988	Hi flores, quos vides, rosae sunt.
+695124	Ab asinis ad boves.
+732602	Leo fortior lupo est.
+735169	Stultorum infinitus est numerus.
+736784	Omnes ei invident.
+785052	Marcus clarus orator factus est.
+796402	Avis volare potest.
+812442	Videbaris veritatem nescire.
+813141	Marcus amicos vidit et ivit cum iis.
+815323	Lucullus multa pocula ex auro habebat.
+820362	Audio te loquentem.
+838114	Oblitus non sum tuorum verborum.
+861879	Cum orator gravia dixisset, omnes bellum pavebant.
+904425	Vigil publicus sum.
+917654	Venio cum Paulo.
+970705	Habent sua fata libelli.
+973669	Amici nostri filia minor defuncta est.
+982117	Opus est facere.
+1001733	In agris laborant.
+1008881	Ubi nunc habitatis?
+1077967	Non pluris sumus quam bullae.
+1086230	Hic malum est.
+1091639	Bibitisne potionem Arabicam?
+1111867	Mei vocatur. In culina coquit.
+1111963	Melo super mensam est.
+1129307	Balneum non erat.
+1129324	Cur in balneo estis?
+1131892	Magnam maculam feci.
+1138441	Pediludium ei non placet.
+1142315	Equus fuscus celer est.
+1142316	Haec raeda celeris est.
+1152046	Dominus Crouch, quid facis?
+1167405	Dominus Green parvum canem habet.
+1172294	Tabula geographica egeo.
+1174892	Hi canes magni sunt.
+1176149	Raeda tua celeris est.
+1176760	Procul a deversorio non est.
+1178073	"Quota hora est?" "Decima hora est."
+1178395	Pelliculae ei placent.
+1189305	Pupa fracta mea est.
+1193947	In montibus eram.
+1193950	Mala flava habemus.
+1200911	Thoracem laneum gero, quia algeo.
+1200928	In culina est, quia cenam parat.
+1205449	Ioannes praesepis animalibus aquam dat.
+1209600	Cum in Iaponia habitabam, multos amicos habebam.
+1217854	Aqua bona est.
+1218214	Canes mortui non mordent.
+1222055	Hae capsae magnitudinis eiusdem sunt.
+1225399	In urbe ambulabat.
+1226061	Loqui vobiscum gaudium erat.
+1227314	Didymus novum instrumentum photographicum emit.
+1229395	Ubi claves tuae sunt?
+1233233	Cum in America Foederata habitabam, pila Caledonica cum amicis ludebam.
+1233956	Quid hoc verbum significat?
+1235094	Da mihi potionem Arabicam, quaeso.
+1235104	Ei calamum dabo.
+1254003	Licetne cum magistro loqui?
+1256298	Cras Maria nos adiuvabit.
+1266576	Equi animalia sunt.
+1268378	Adultus non est, sedecim annos natus est!
+1271626	Hodie domi sumus.
+1273700	Licetne cum doctore loqui?
+1274193	Is capillos promissos habet.
+1279138	Estne feles an canis?
+1289623	Infans matrem suam quaerit.
+1292094	Primum hoc legam.
+1292319	Lex antiqua est.
+1297592	Quattuor oceani in mundo sunt.
+1308298	Eam bis in die videmus.
+1308299	Patrem bis in anno inviso.
+1308366	Ea semel in hebdomade parentibus scribit.
+1317416	Librum de avi scripsit.
+1317437	Didymus Mariae librum de Australia dedit.
+1318618	Ientaculum iam sumpsi.
+1319492	Didymus ovis nigra familiae est.
+1319990	Raeda meritoria ad aeriportum vectus sum.
+1320117	Haec birota reficienda est.
+1320382	Da mihi quinque dies.
+1320398	Hoc bene sapit.
+1320869	Da mihi tantum paululum.
+1320895	Duodecima hora placentam Neapolitanam et gallinaceam edimus.
+1320927	Quomodo hoc libum factum est?
+1320955	Quis hoc libum fecit?
+1322028	Multa plumba habeo.
+1322371	Loquerisne cum cane tuo?
+1323894	Cenam non volo.
+1332008	In lacu lavata sunt.
+1335539	Noli sententiam mutare.
+1338950	Edendum tibi est ut vivas, et non vivendum ut edas.
+1342161	Estne pater eius medicus?
+1342415	Quae medicamenta non sanant, ferrum sanat; quae ferrum non sanat, ignis sanat; quae vero ignis non sanat, insanabilia reputari oportet.
+1343019	Ecce libri mei, et illi eius sunt.
+1344674	Hodie domi laboro.
+1345088	Valde fessa sum.
+1345119	Didymus laetus videtur.
+1352291	Die tertio mensis Aprili, anni millesimi nongentesimi quinquagesimi natus sum.
+1352299	Die decimo mensis Octobris, anni MCMLXXII nata sum.
+1355489	Ibisne proximo anno in Americam?
+1355500	Proximo anno linguam Sinensem discere volo.
+1357491	Numerus telephonicus meus septem, octo, novem est.
+1357502	Pater meus negotiator est.
+1359442	Proxima hebdomade ad concentum ibo.
+1359452	Horologium meum reficiendum est.
+1363372	Fuistine umquam in Canada?
+1363384	Fuistine umquam Venetiis?
+1364947	Guilelmus multos amicos habet.
+1369974	Aliquando in Americam Foederatam ire volo.
+1370019	Puer natans frater meus est.
+1371361	Sapientia me consequitur, sed ego celerior sum.
+1389460	Puer tenebras timebat.
+1389631	Aliquando Novum Eboracum ire volo.
+1395549	Cum ei salutem dico, nunquam respondit; solum caput inclinat.
+1396246	Mendacium est libum.
+1396315	Domum ibis et manebis.
+1396360	"Quomodo advenisti?" "Pedibus adveni."
+1398294	Vulpe ignea utor.
+1398655	Omnes moriemur, alii citius alii serius.
+1400836	Maria oculos magnos habet.
+1400924	Puer domum cucurrit.
+1402512	"Mutationem motus proportionalem esse vi motrici impressæ, et fieri secundum lineam rectam qua vis illa imprimitur."
+1405487	Dies vicesimus est.
+1407890	Haec serpens te non vulnerabit. Eam tangere potes.
+1413629	Quid significant verba quae in vexillo Arabico sunt?
+1429682	Multa aqua eges.
+1441800	Thomas bonus homo est.
+1441811	Ita, domine, Gallice loqui velim.
+1443467	Sitio. Da mihi, quaeso, potionem frigidam.
+1447901	Te oro ut maneas.
+1454347	Audi dominum Inoue in illo deversorio mansisse.
+1485240	Oppidum pulchrum est.
+1490390	Utra magis tibi placent, mala an aurantia?
+1491989	Tu, Ioannes, multas terras scis.
+1493075	Mater eius epistulam scribit.
+1500407	Petasus vetus est.
+1500485	Femina duos saccos habet.
+1500785	Graeci decem annos Troiam oppugnaverunt.
+1502816	Lingua est mundus in quo habitant homines.
+1508777	Gladio occisus est.
+1533230	Ars quid est?
+1542960	Difficile est tribus linguis loqui.
+1557728	Laborate sicut formica.
+1563522	Patrem meum videre opto.
+1592873	Hoc glossarium meum est.
+1608763	Didymus ab equis delectatur.
+1682787	Hunc librum emere non possum. Nimis carus est.
+1705693	Numerum cubiculi tui, quaeso.
+1705699	Fratrem non habebat.
+1776544	Mihi praetervehitur aures illud.
+1783052	Quis te linguam Germanicam docet?
+1786715	Didymus panem secat.
+1786743	Quam longus Seto pons est?
+1786765	Cibum Italicum amo.
+1795276	Et caseum et panem edit.
+1812680	Puto vexillum rectum esse.
+1812684	Puto te errare.
+1853860	Errare humanum est, perseverare diabolicum.
+1863807	Teneo lupum auribus.
+1908641	Minime, fessa sum.
+1912091	Quam coronam vides?
+1914638	Quam crucem vides?
+1914655	Num parvam pueri mensam vides?
+1915637	Videsne patris mei hortum?
+1918205	Exodum vocant librum secundum, quia initio describitur egressio filiorum Israel de Aegypto. Exodus enim egressum significat.
+1943260	Mei fratres nondum responderunt vobis ad vestras quaestiones.
+1980943	Ea te aspicit.
+1980994	E culina exite!
+2064090	Num saltare potes?
+2109550	Didymus insanus est.
+2156256	Credo animum esse immortalem.
+2213181	Betty Esperantice optime loquitur.
+2213197	Anus e curru publico exivit.
+2217768	Hic liber non tam facilis est quam ille.
+2227622	Quid tibi placet? Quid tibi non placet?
+2228347	Tredecim feles mihi sunt.
+2229271	Bene opus facio.
+2229365	Quamdiu Georgius Fluvii Ianuarii laboravit?
+2229379	Hic hebdomadem fui.
+2298587	Video meliora, proboque, deteriora sequor!
+2433895	Te docere possum, si vis.
+2577713	Haec arbor nullum fructum edit.
+2592308	Gallice domi tantum loquimur.
+2599493	Hoc nosocomium est.
+2599510	Hi libri mihi sunt.
+2599524	Hoc rectum non est.
+2599525	Hoc facile non est.
+2599528	Hic cibus non est.
+2599562	Maria mater est.
+2630911	Nullus homo perfectus est.
+2631040	Ioannes viginti libros de historia scripsit. Bonus auctor est.
+2631087	Habesne plus lactis?
+2631101	Nihil ei est.
+2631118	Et clavis et malleo egeo, ut sellam reficiam.
+2635243	Aegra non sum.
+2635302	In corde meo es.
+2635321	Didymus solus in culina est.
+2651015	Annus longus est.
+2651051	Mater mea dura est.
+2700079	Gloria Patri et Filio et Spiritui sancto. Sicut erat in principio et nunc et semper et in saecula saeculorum. Amen.
+2730710	Spes panem non donat.
+2734075	Visne me tecum ad macellum ire?
+2734218	Estne thea nigra salubris?
+2756672	Responsum tuum falsum est.
+2786855	Ei homophylophiles sunt.
+2793335	Magis esse quam videri oportet.
+2793376	Formosa facies muta commendatio est.
+2793384	Pulchra mulier nuda erit quam purpurata pulchrior.
+2844237	Venter eius eburneus, distinctus sapphiris.
+2905737	Puellae in silvam properant.
+2917128	Amici mei mihi placent.
+3103871	exegi monumentum aere perennius.
+3103990	incredibile est quam facile etiam magnos viros dulcedo orationis abducat a vero.
+3211664	Scalas in taberna ferramentaria emo.
+3213732	alius diēs serēnus vidētur.
+3225030	Haec est domus mea.
+3270372	Tam laeti erant omnes.
+3293585	Ira et avaritia sunt periculosæ.
+3304709	Plura dixi quam volui.
+3307145	Quam quisque norit artem, in ea se exerceat.
+3465252	Mater tua tam obesa est ut cum Romae est, urbs habet octo colles.
+3586249	Aemilia et Delia et Syra sunt feminae.
+3592316	"Duo" et "tres" numeri sunt.
+3640726	Baculum domini in mensa est.
+3655305	Quintus in cubiculo parvo dormit.
+3657293	Marcus et Quintus Iuliam vocant: "Iulia! Veni!" sed Iulia eos non audit neque venit.
+3659702	Verba Aemiliae Iuliam delectant.
+3850145	Nesciebam tibi fratrem esse.
+3995430	Doloris medicus tempus.
+3995492	Tempore nihil velocius.
+4007123	Danis symbolum est libertatis.
+4008848	Fracto corde excrucior.
+4008891	Canibus sunt domini; felibus sunt servi.
+4059052	De patre tuo inquisivit.
+4059060	Quid dixisti? Id repete, quaeso.
+4171830	Liberi flores vitarum nostrarum sunt.
+4206442	Pater filiis suis pira dat.
+4206474	Thomas Mariae osculum dat.
+4280929	Fortiter in re, suaviter in modo.
+4424729	Āēr levior aquā.
+4427116	Didymus id nobis dixit.
+4462739	Maricam flentem videre non amo.
+4464549	Utens ad quem hunc nuntium mittere vis non exstat. Quaeso, tempta cum alio utentis nomine.
+4524104	estne aliquid quod nos narrare vis?
+4524111	iustitia caeca est.
+4696490	Solusne domi erat?
+4741086	Errare humanum est, perseverare diabolicum!
+4827001	Hoc est computatrum gestabile meum.
+4936921	Thomas per ostium intravit.
+4938402	Quem calamum vides?
+4938405	Unum tantum calamum habeo.
+4938418	Calamus meus mihi inveniendus est.
+4957898	Lunae die eos allocutus es?
+4968867	Ille est homo.
+4980595	Hiems multa bona fert, sed mala quoque.
+4982792	Vinum rubrum erat.
+5000812	Erant aliqui liberi in camera.
+5026392	Eo tempore iuvenis eram.
+5026396	Bracae tuae sordidae sunt.
+5029783	Didymus omnia refecit.
+5031056	Estne pulchrior quam ego?
+5031150	Illa penna carior est hac.
+5031169	Basipila iucundior est pila Caledonica.
+5031214	Corea Septentrionalis multo pulchrior est Meridionali.
+5031262	Minus intelligens est me.
+5031273	Illud horologium minus carum est quam hoc.
+5031291	Raeda Ford minus constat quam Mercedes Benz.
+5031441	Didymus est tam robustus quam equus.
+5031461	Didymus est tam robustus quam taurus.
+5031467	Tam intelligens est quam frater.
+5031703	Didymus popularissimus est.
+5031746	Didymus valde territus est.
+5031756	Didymus religiosissimus est.
+5031774	Hoc valde periculosum est.
+5031971	Plumbum tuum valde obscurum est.
+5032137	Haec exedra valde magna non est.
+5032142	Lingua Arabica maximi momenti est.
+5034201	Caecus es tu?
+5034206	Caeca non sum.
+5037404	Uterque mihi placet.
+5037418	Et canes et feles mihi placent.
+5037485	Ursi plerique omnivori sunt.
+5039086	Thomas raro potionem Arabicam bibit.
+5039136	Omnes potiones habent.
+5039216	Bibitne potionem Arabicam?
+5039355	Thomas potionem Mariae dedit.
+5040890	Paniculum fartum edunt.
+5041642	Nunc cenam sumo.
+5046111	Thomas mihi adiuvandus est.
+5046158	Litteras scripturus sum.
+5046172	Fenestrae mihi claudendae sunt.
+5048295	Hic liber in quattuor partes divisus est.
+5048385	Equus animal utile est.
+5049314	Raeda tua vilior quam mea est.
+5052965	Pecunia non egent.
+5053038	Mariam amplexi sumus.
+5054146	Erant insulae in mari.
+5055504	Thomas vir sceleratus erat.
+5068854	Liber de animalibus est.
+5068864	Quot illīc labōrant?
+5071347	Pater meus ubi est?
+5071411	"Thomas Mariam necavit." "Quid dixisti?" "Thoman Mariam necavisse."
+5076425	Nos omnes liberos habemus.
+5081664	Illa Thomae filia est.
+5082895	Nunquam efficies, ut cancri recta procedant.
+5085274	Iamne eum osculatus es?
+5089440	Una ex animalis alis fracta est.
+5089452	Tumultus in Amphitheatrum Flavium fuit.
+5089454	Tumultus in aeroplano fuit.
+5089458	Thomas homicidae filius est.
+5089549	Non puto foedera iusta.
+5089726	Fabula illa, quam mihi narrasti, pulcherrima est.
+5089804	Alae huius psittaci fractae sunt.
+5090617	Quod foedus est?
+5090656	Cur ibi sedes?
+5090657	Leones daltonici sunt.
+5090767	Fuscinula parva est.
+5103064	Nix pecudem laedit.
+5103161	Nilus fluvius maximus in Aegypto est.
+5103165	Aestate Nilus terram quotannis inundat.
+5103222	Hector, dux Troianorum, Patroclum occidit.
+5105460	Contra verbosos noli contendere verbis: sermo datur cunctis, animi sapientia paucis.
+5106509	Audito sonitu, Thomas e domo celeriter cucurrit.
+5106513	Canis domum custodit.
+5106567	Lupus agnum rapuit.
+5107438	Thomas maestus filium suum sepelivit.
+5107520	Pater pauca filiis dixit.
+5107576	Maria laborem Thomae facilem esse putat.
+5107596	Litteras tuas magna cum voluptate legi.
+5117478	Tu nunquam fratrem amavisti, ut non mirum sit, te ab eo non redamatum esse.
+5122476	Thomas innocens est.
+5122614	Romulus Rheae Silviae filius erat.
+5122616	Romulus Numitoris nepos erat.
+5126895	Maria aurantia decerpit.
+5135582	Ubi est pluviale tuum?
+5138512	Fīlius sorōris nostrae māla nōbīs emit.
+5145974	Aliqui eam secuti sunt.
+5146109	Ecclesia auro ornata est.
+5147170	In foro spectacula fiunt.
+5147198	Quid obstat, quominus nos beati simus?
+5148725	Puto eum ex Aegypto oriundum esse.
+5152537	Tibine multo labore opus fuit ad discendam Latinam linguam?
+5162882	Berolini neminem novis.
+5162956	Te rogo ut eam iuves.
+5163008	Agesilaus nomine, non potestate fuit rex.
+5163151	Quintus huic convivio non interfuit.
+5163161	Ambo fratres abierunt.
+5173233	Picae longis insignes caudis sunt.
+5173277	Maria fuit pauper, cum ditissima esse posset.
+5173295	Oblitus sum mei.
+5173368	Putavi ea de re te esse admonendum.
+5192924	Nesciebam tibi esse novercam.
+5192966	Duobus modis fieri potest.
+5195964	Thomas hic non laborat.
+5202890	Pars oppidi flammis deleta est.
+5205593	Putasne te cras hic futurum esse?
+5211893	Ego et Thomas valemus.
+5211959	Maria multum dormit.
+5223497	"Ivitne in Brasiliam?" "Bis vel ter illuc iter fecit."
+5223599	Servius rex declaratus est.
+5224453	Da mihi digitabula illa.
+5234188	Vigil publicus factus est.
+5251925	Te tantum desidero.
+5252841	Illi viri current.
+5275305	Quid sit futurum cras, fuge quaerere.
+5284433	Raeda mea ubi est?
+5312633	Id est quod factura sum.
+5338397	Thomas dixit se vocem Mariae audivisse.
+5789647	Longum erat gaudium.
+5875186	Mihi pergratum est te convenire!
+5875237	Di te ament.
+5875245	Esne maritus an caelebs?
+5875253	Velim cognoscere plura de Bostonia.
+5875267	Me paenitet haec cognoscere.
+5875277	Quid dicat, intellego.
+5875282	Legistine librum, quem Thomas tibi emit?
+5928537	Duae feminae cantant.
+5940475	Quae est uxor tua?
+5996715	Sedet æternumque sedebit infelix Theseus.
+6001911	Thomas coquere non potest.
+6015984	De caelo tactus sum.
+6019737	Omnes me diligunt.
+6032536	Delphini et balaenae non pisces, sed mammalia marina sunt.
+6071137	Vivere est sentire.
+6074090	Erigone canem maestum et singularem vidit.
+6074110	Diana scorpionem subiecit, qui Orion vita privaret.
+6078668	Magi stellam in Oriente viderunt.
+6078674	Pontifices et scribae dixerunt regi Christum Bethlehemae Iudaeae nasciturum.
+6172986	Nomen meum quoque est Thomas.
+6190966	Thoma, quid agis?
+6213343	Potesne hodie vespere catillos lavare?
+6219719	"Crede mihi," inquit.
+6318092	Te exspecto. Quando veniet?
+6329765	Arabicene legere potes?
+6331030	Norvegice loqui disco.
+6333420	Necesse mihi erit hoc ei dicere.
+6363672	Paulo longe abero.
+6363680	Quaereo num possis adiuvare.
+6366498	Thomam cum aliis vidi.
+6388889	Pater indigenus locutor francus est mater etiam locutrix anglica.
+6469181	Hoc computatrum nimis antiquum est.
+6485487	Talia voce refert curisque ingentibus æger / spem vultu simulat, premit altum corde dolorem.
+6543805	Dic mihi, quaeso, de tua magistra.
+6594300	His animum arrecti dictis, et fortis Achates / et pater Aeneas jamdudum erumpere nubem / ardebant.
+6635236	Quis est ille homo?
+6635619	Aquae agrum rigant ut homines eius industria colant.
+6635633	Iesus mihi laetitiam dat.
+6640319	Inde venimus, non redibimus.
+6646001	Dic Thomae te velle Bostoniam ire.
+6668074	Non habemus liberos.
+6706499	Nihil omnino videre possum.
+6761586	Minime, falsum est!
+6771001	Tum vero manifesta fides, Danaumque patescunt / insidiæ.
+6785340	Volo matrem tuam videre.
+6827234	Ilicet obruimur numero; primusque Corœbus / Penelei dextra divæ armipotentis ad aram / procumbit.
+6863880	Quis scripsit epistulam?
+6867592	Hinc ferro accingor rursus, clipeoque sinistram / insertabam aptans meque extra tecta ferebam; / ecce autem complexa pedes in limine conjux / hærebat, parvumque patri tendebat Iulum.
+6877843	In Graecia natus est.
+6943914	Mortem patris ultus est.
+7003303	Absit qui mea manducat mecum et sua secum.
+7004088	Commune concordiam periculum parit.
+7004112	Deliberando saepe perit occasio.
+7004766	Quid eis dabimus?
+7005195	"Nos te, Dardania incensa, tuaque arma secuti, / nos tumidum sub te permensi classibus æquor, / idem venturos tollemus in astra nepotes, / imperiumque urbi dabimus: tu mœnia magnis / magna para longumque fugæ ne linque laborem."
+7011795	Annosum vinum, socius vetus, et vetus aurum, haec sunt in cunctis trina probata locis.
+7011837	Camelus desiderans cornua, perdidit aures.
+7016692	Thomae pulchra diaeta est.
+7019633	De duobus malis, minus est eligendum.
+7020159	Ante annum hic fuimus.
+7022897	Quales arbores in pomario sunt?
+7022903	Non licet nobis hoc esse.
+7023116	Dum fortuna favet, parit et taurus vitulum.
+7023184	Homines, quo plura habent, eo cupiunt ampliora.
+7023195	In faciem recidit, quidquid in astra iacit.
+7023436	Puras Deus, non plenas, aspicit manus.
+7023455	Qui altari servit, de altare manducat.
+7023560	Vincit qui patitur.
+7025713	Flamma fumo est proxima.
+7030475	In teneris consuescere multum est.
+7030482	In fine videbitur cuius toni.
+7030990	Non dubito quin vivat.
+7032270	Putasne me pulchrum esse?
+7033529	Eam monere debemus.
+7035618	Salve, meum corculum.
+7037580	Avarus non sum.
+7037613	Male secum agit aeger, medicum qui heredem facit.
+7037714	Plumbo ursum petii.
+7039044	Salve, mea spes.
+7039664	Quae venit ex tuto, minus est accepta voluptas.
+7039668	Pro ratione Deus dispertit frigora vestis.
+7040616	Saepe carent multa responsis verbula stulta.
+7040627	Tandem sua poena nocentem sequitur.
+7040963	Si quid est amari, vitiat, si quid dulcis inest.
+7040991	Pululat herba satis, quae nil habet utilitatis.
+7041002	Qui satis exspectat, prospera cuncta videt.
+7041629	Ubi patruus tuus habitat?
+7041991	Thomas librum e Gallico in Anglicum sermonem convertit.
+7042006	Thomas tres libros in lucem emisit.
+7043038	Semper plus metuit animus ignotum malum.
+7044135	Ubicumque dulce est, ibi et acidum invenies.
+7044395	Puto me costam fregisse.
+7047026	Temulentus dormiens non est excitandus.
+7051220	Anulus meus est.
+7054370	Promptius est omnibus iudicare, quam facere.
+7055460	Thomas tempestatem metuit.
+7056113	Medici non semper diu vivunt.
+7056146	Thomas se esurire dixit.
+7056217	Huc venit ut me videat.
+7056267	Si hoc feceris, poenas dabis.
+7056288	Ut sementem feceris, ita metes.
+7057648	Filiam iurisconsulto nuptum dedit.
+7058044	Cur quod mater tibi imperat nunquam facis?
+7058090	Maria Thomae ut ad macellum iret imperavit.
+7058092	Bubula Thomae non placet.
+7061085	"Quomodo legitur numerus 123 456 789?" "Centum viginti et tres milliones, quadringenti quinquaginta et sex mille, septingenti octoginta et novem."
+7061383	Danae Polydectae gratias egit.
+7061685	Quid Thomas vellet rogavi.
+7061708	Omnes nautae perierunt.
+7069639	Genetivus et dativus singularis primae declinationis sunt aequales.
+7071939	Nemo patriam meam laudare vult.
+7072002	Cum fele sua lusit.
+7072834	Quis illas domus aedificaverit, nescit.
+7073140	Quō eam dīmīsistī?
+7073234	Quid putas Thomae faciendum esse?
+7075975	Thomas nunquam mentitus est.
+7076001	Vespae quaternas alas habent.
+7077250	Scorpius longam caudam habet.
+7077321	Ubi tē apis pupugit?
+7080502	Ilias XXIV libris constat.
+7080532	Quae est Thomae sententia?
+7081299	Nubiferi montes oppidum muniunt.
+7081337	Num totum opus confectum est?
+7083848	Placetne tibi hic saccus dorsualis?
+7084299	Nonne Thomas es tu?
+7084724	Ubi linguam Italicam didicit?
+7084728	Sami linguam Arabicam in Cairo didicit.
+7084777	Quandō gubernāre didicistī?
+7090319	Thomas ludi ianitor est.
+7090466	Sella lignea est.
+7099532	Virtus præmium est optimum.
+7101348	Haec sella commodior est quam illa.
+7107886	"Surge." "Tam multo mane?"
+7108454	Lingua Graeca difficilis est.
+7133654	Uppa dicit 'du du'.
+7136212	Cede mihi calceos.
+7139976	Tamesis est flumen quod per Londinium fluit.
+7167494	Vigiles publici Thoman ceperunt.
+7305635	In terra sunt montes alti, valles profundae, colles elevati, speluncae cavae, sylvae opacae.
+7305922	Magnes adtrahit ferrum.
+7310014	Animal vivit, sentit, movet se; nascitur, moritur, nutritur, et crescit, stat, aut sedet, aut cubat, aut graditur.
+7324331	Inducit in tabernam, jubet ut eligam ex omnibus raedis quemcunque vellem.
+7337126	Ludovicus rex Galliarum, peregrinaretur apud Burgundiones, occasione venationis nactus est familiaritatem cum quodam Conone, rustico homine, sed simplicis ac sinceri animi; nam monarchiae delectantur hominibus hoc genus.
+7337269	Dein paulum carnium de ventre veteris vaccae apponitur, sed elixum ante quindecim dies.
+7340474	“Unde nactus es tam miseram sarcinam, lusce?” “Imo quo de fers istud lupanar, ganeo?”
+7347539	"Tu audi me igitur dum pronuncio prælectionem, ego audiam te deinde." "Age, pronuncia."
+7366641	Quod si de facti qualitate, tibi dici: nos regem neque bonum neque justum, neque clementem, neque religiosum, neque pium, neque pacificum; sed hostem prope decennalem nec parentem patriae, sed vastatoré de medio sustulisse.
+7366787	"Deditne tibi pecuniam?" "Ut solet fere." "Quantum?" "Nihil ad te."
+7416234	"Nempe, quia novit vos esse gulosos." "Quomodo sumus gulosi?" "Quia fortasse devoratis uno convictu, quod datum fuerat in tres."
+7421773	Jam paratus sum.
+7427762	"Sed ut redeamus ad propositum, dabis mutuo mihi istum assem?" "Miror te petere mutuo a me, qui habes plus quam ego."
+7431565	Fabas indulcet fames.
+7432526	Nullum magnum ingenium sine mixtura dementiae.
+7452312	Esne amicus mihi?
+7495963	"Ubi fuit impressus?" "Lutetiæ."
+7562042	Frater meus in parvo vico habitat.
+7677713	Num librum meum habes?
+7696700	Cum autem Hannibal eam urbem occupaverit, manus dabimus.
+7744166	Minima de malis.
+7762243	Afferatur pauxillum aquæ, et lavate pedes vestros et requiescite sub arbore.
+7764995	Dixitque Dominus: Si invenero Sodomæ quinquaginta iustos in medio civitas, dimittam omni loco propter eos.
+7785561	Responderunt filii Heth dicentes: Audi nos, domine, princeps Dei es apud nos: in nobilissimo sepulcrorum nostrorum sepeli mortuum tuum; nullusque te prohibebit, quin in sepulcro eius sepelias mortuum tuum.
+7792041	Cucurrit itaque puella et nuntiavit in domum matris suæ omnia, quæ evenerant.
+7801151	Coxit autem Iacob pulmentum; ad quem, cum venisset Esau de agro lassus, ait: “Da mihi de coctione hac rufa, quia oppido lassus sum”. Quam ob causam vocatum est nomen eius Edom (id est Rufus).
+7827031	Iacob autem decepit cor Laban, non indicans ei quod fugeret.
+7858451	Responderunt: Numquid ut scorto abuti debuere sorore nostra?
+7867117	Et completi sunt dies Isaac centum octoginta annorum; consumptusque ætate mortuus est et appositus est populo suo senex et plenus dierum. Et sepelierunt eum Esau et Iacob filii sui.
+7880097	Videns pistorum magister quod somnium in bonum dissolvisset, ait: Et ego vidi somnium, quod tria canistra farinæ haberem super caput meum; et in uno canistro, quod erat excelsius, portare me ex omnibus cibis pharaonis, qui fiunt arte pistoria, avesque comedere eos.
+7887783	Apertoque unus sacco, ut daret iumento pabulum in deversorio, contemplatus pecuniam in ore sacculi dixit fratribus suis: “Reddita est mihi pecunia: en habetur in sacco!” Et obstupefacti turbatique mutuo dixerunt: “Quidnam est hoc, quod fecit nobis Deus?”
+7893702	Thomas amicus optimus filiae meae est.
+7900850	Minime, non hoc!
+7909395	In tota terra panis deerat, et oppresserat fames terram valde, defecitque terra Aegypti et terra Chanaan præ fame.
+7919378	In consilium eorum ne veniat anima mea, et in cœtu illorum non sit gloria mea; quia in furore suo occiderunt virum et in voluntate sua subnervaverunt tauros.
+7924731	Aser, pinguis panis eius, et præbebit delicias regales.
+7929141	Et fecit Deus firmamentum divisitque aquas, quæ erant sub firmamento, ab his, quæ erant super firmamentum. Et factum est ita.
+7929161	Vocavitque Deus firmamentum Cælum. Et factum est vespere et mane, dies secundus.
+7930573	Benedixitque eis Deus dicens: Crescite et multiplicamini et replete aquas maris, avesque multiplicentur super terram.
+7940300	Dixitque ad eum: Quid fecisti? Vox sanguinis fratris tui clamat ad me de agro.
+7952035	Et ex cunctis animantibus universæ carnis bina induces in arcam, ut vivant tecum, masculini sexus et feminini.
+7973588	Et Booz maioribus natu et universo populo: Testes, inquit, vos estis hodie quod acquisierim omnia, quæ fuerunt Elimelech et Chelion et Mahalon, tradente Noemi.
+7983478	Reversusque est Moyses ad Dominum et ait: Domine, cur afflixisti populum istum? Quare misisti me? Ex eo enim quo ingressus sum ad pharaonem, ut loquerer in nomine tuo, afflixit populum tuum; et non liberasti eos.
+7985925	Et pisces, qui erant in flumine, mortui sunt, computruitque fluvius, et non poterant Aegyptii bibere aquam fluminis; et fuit sanguis in tota terra Aegypti.
+7990969	Et ait Moyses: Egressus a te, orabo Dominum, et recedet musca a pharaone et a servis suis et a populo eius cras; verumtamen noli ultra fallere, ut non dimittas populum sacrificare Domino.
+8025743	Coxeruntque farinam, quam dudum de Aegypto conspersam tulerant, et fecerunt subcinericios panes azymos; neque enim poterant fermentari, cogentibus exire Aegyptiis et nullam facere sinentibus moram; nec pulmenti quidquam occurrerant præparare.
+8066566	Quod cum vidissent filii Israel, dixerunt ad invicem: "Manhu?” (quod significat: “Quid est hoc?”). Ignorabant enim quid esset. Quibus ait Moyses: “Iste est panis, quem dedit Dominus vobis ad vescendum."
+8079265	Quod cum vidisset socer eius, omnia scilicet, quæ agebat in populo, ait: Quid est hoc, quod facis in plebe? Cur solus sedes, et omnis populus præstolatur de mane usque ad vesperam?
+8084461	Cui ait Dominus: Vade, descende; ascendesque tu et Aaron tecum, sacerdotes autem et populus ne transeant terminos nec ascendant ad Dominum, ne interficiat illos.
+8090560	Qui percusserit patrem suum aut matrem, morte moriatur.
+8092758	Sin autem notum erat quod bos cornupeta esset ab heri et nudiustertius, et non custodivit eum dominus suus, reddet bovem pro bove et cadaver integrum accipiet.
+8124872	Dixit mihi, ut scribam epistolam amicae eius quae est in Germania.
+8135814	Ignorantia prætendi non potest.
+8213803	Velisne vinum rubrum?
+8217264	Nos matrem nostram visitamus.
+8217972	Ego in urbe Brasilia habito, tu Romae habitas, ille Lundinii habitat, illa Lutetiae habitat. Nos in Brasilia habitamus, vos in Italia habitatis, illi in Anglia habitant, illae in Gallia habitant.
+8218954	Pistor panem facit.
+8219281	Poeta carmina facit.
+8302044	Pater Thomae medicus erat.
+8349496	Vulgus, cum nullus cibus ei restet, divites edet.
+8425063	Abhinc decem annos hic is vivebat.
+8452602	Hic cancellis uti non licet.
+8452762	Thomas putat Mariam etiam nunc Bostoniae habitare.
+8452808	Omnes hoc facere volunt.
+8452814	Hoc recte facere volunt.
+8452815	Hoc recte facere volumus.
+8457680	Scisne cur Thomas profectus sit?
+8457961	Veni ut de eo loquerer.
+8458570	Te uxorem ducere volo.
+8458572	Thomas Mariam uxorem ducere vult.
+8458777	Etiam nocte splendet sol.
+8475373	Quis obviam venit?
+8475379	Quid mihi facient?
+8488540	Thomas paululum fessus esse videtur.
+8489206	Coffeam in cafeo bibo.
+8489208	Ientaculum in cafeo sumo.
+8489617	Vultisne me cum iis ire?
+8490227	Tramen exspectare taediosum est.
+8490450	Cur lupi ululant?
+8490458	Puto Thoman timidum esse.
+8491289	Thōmās in Austrāliā labōrat.
+8492092	Luna pulchra est.
+8492921	Ita fessi sunt, ut studere non possint.
+8502974	Estisne parati ad cenandum?
+8502976	Esne paratus ad volandum?
+8503948	Ad fabricam eamus.
+8504485	Quis ludo follis transvolantis ludere vult?
+8504578	Recordarisne nomen eius?
+8504588	Inscriptionem oblita sum.
+8504647	Non recordor ubi habites.
+8504671	Esne recordatus ei gratias agere?
+8504674	Esne recordatus ova emere?
+8504812	Thomas iterum vicit.
+8505220	Quibus linguis loquimini?
+8505227	Intellegisne quid feceris?
+8505299	In America nata est.
+8505316	In Mexico natus est.
+8505384	Cum puer eram, spinacam non edebam.
+8519768	Spero fore ut opus vobis placeat.
+8520226	Habesne taeniolam glutinosam?
+8520551	Quid in furno erat?
+8542192	Thomas dixit patrem suum et matrem mortuos esse.
+8542225	Credo te Thoman novisse.
+8542311	Thomas promisit se Bostoniam venturum.
+8557696	Ego numquam cannula ferruminatoria usa sum.
+8565729	Hunc librum volo.
+8579052	Facies eius pustula tegitur.
+8587756	An licet mihi pecuniam mutuari?
+8590181	Salve, nomen mihi est Thomas. Quid est nomen tibi?
+8590333	Semper a me dissentis.
+8592214	Infeliciter solum intellexi dimidiam partem cuius legi.
+8598497	Quid est derivativum ex e^x?
+8608288	Thomas id nescit.
+8631453	Sedabit naturalis philosophia opinionis lites et dissidia, quae inquietam hinc inde animam vexant, distrahunt et lacerant.
+8643869	Thomas philosophus est.
+8652728	Ad metam perventum est.
+8692472	Discipulus bonus es.
+8746210	Hoc malum viride est.
+8746282	Idem tibi faciendum censeo.
+8770024	Pedicabo ego vos ambos et irrumabo.
+8791965	Liber meus ibi nón est.
+8796110	Qualis mecum esset vita?
+8801685	Mercurius systematis solaris calidissimus est planeta.
+8805146	Quid semper in mente tua?
+8848389	Auxilio eguit eius.
+8848397	Thomas cur acciderit interpretabitur.
+8871789	Num es discipula huius ludi?
+8876223	Nonne telehorasim habes?
+8876227	Rectum est id quod Thomas tibi dixit.
+8885849	Ad eum ibam.
+8889660	Utrum puella an puer es?
+8889755	Thomas consobrinus meus est.
+8889912	Amico meo pecuniam commodavi.
+8902165	Itinere defessus sum.
+8915759	Iam dormit Thomas.
+8915762	Scio ubi hoc mihi quaerendum sit.
+8918428	Canis caudam agitat.
+8918443	Rosae tibi olfactandae sunt.
+8918530	Domus nostra minima est.
+8918563	Thomas parum laborat.
+8930816	Eos videre volo.
+8932707	Thomas septem abhinc annos uxorem amisit.
+8932754	Amita eius est.
+8932755	Matertera eius est.
+8937262	Cur linguam Anglicam discitis?
+8937637	Maria crura longa habet.
+8940170	Ioannes musicam amat.
+9034732	At enim si eam non religabis, quolibet ibit aberrabitque...
+9045861	Tibi fructus lavandi sunt antequam eos edis.
+9054991	Estne hoc commune?
+9064504	Thomas surrexit ut me salutaret.
+9072439	Thomas mihi dixit id Mariae curae esse.
+9072512	Difficultatum mearum se taedet.
+9076406	Semper Thoman meminero.
+9112589	Qualem fabulam audire vis?
+9112766	Ei bilibram dedi.
+9120549	Ei fidem habeo.
+9120587	Illud adduci vix possum, ut ei hoc dixeris.
+9127425	Maria periculis se obtulit.
+9130640	Moriar potius quam me dedam.
+9131861	Scio te hoc fecisse.
+9139433	Venerunt ut me necent.
+9144314	Tres meorum liberorum mortui sunt.
+9165390	Cultrum ei ademit.
+9178439	Hunc librum legens flebam.
+9265040	Pulchrum est veritas, veritas pulchrum.
+9352966	Pater meus omnium obliviscitur.
+9380661	Thomas Bostoniam oderat.
+9425130	Feles et canes Thoman timent.
+9538348	Tecum consentire non possum.
+9588827	In Aethiopiā habito.
+9621103	Quo haec via ducit?
+9621122	Aquam frigidam volo.
+9666423	Hoc ubi primum dixi, hoc dolui.
+9671842	Thomas se non vicisse confessus est.
+9691784	Utinam tam bene canere possim quam Thomas et Maria.
+9694771	Troia oppidum fuit.
+9698744	Utinam domi fuisset dum heri clamerem.
+9703796	Collum mihi dolet.
+9926371	Hic ientaculum sumere soleo.
+9929747	Thomas ianuam pulsat.
+9963911	Iesu tela placuisse eumque pauperes odisse constat.
+9963920	De lingua Francogallica locuti sumus.
+9963932	Denuo edere nolo.
+9973803	Noli interpretari hanc periodum.
+10091769	Agite ut vultis.
+10123539	Nominis sui ipsius oblitus est.
+10141994	In corde tuo ascendit concupiscentia nequitiæ.
+10169089	Eum omnia scire videtur.
+10217906	Mihi non molesta es.
+10236672	Regina regit colorem.
+10237159	Anna inscientibus parentibus nupsit.
+10264949	Libenter de se loquitur.
+10264988	Heac est mea sententia.
+10264999	Quis eum rogavit ut veniret?
+10293918	Dixit se aegrotare.
+10302812	Culpa mea est.
+10311149	Quid interest quis sciat?
+10311153	Quid interest quid accidat Thomae?
+10314362	Facilis et expeditus es ad dicendum.
+10319927	Nescio ubi sit.
+10320001	Fac eos certiores.
+10325484	Num bene dormivisti hac nocte?
+10342081	Nomen eius oblitus sum.
+10406805	Ne feceris. Periisti, si intrassis intra limen.
+10509658	Cave ne cadas.
+10511348	Dīcam semel tantum.
+10611459	Quid est simpliciter mysterium huius loci qui « hic » appellatur?
+10647914	Quod fecit Maria, Thomas vidit.
+10684997	Quando iterum eum videbitis?
+10689276	Iuvenis Novi Eboraci habitat.
+10692493	Da mihi crustulum.
+10694773	Tu domo venis.
+10702876	Balnea in foro non sunt.
+10708588	Hic vivere non potes.
+10709343	Thesaurum hic non sepelivimus.
+10711015	In hac schola studeo.
+10721058	Quisque turma pediludii undecim lusores initio lusu habere debet.
+10743093	Toki Pona est puella pulchra valde difficilis ad intellegendum. Ejus mysteria nondum solvere potui.
+10774508	Post lectionem loquemur.
+10776351	Uno abhinc anno domus dominum conveni.
+10799233	Quousque ergo dicemus de hac re?
+10815473	Tēne virum perīculōsum esse exīstimās?
+10820170	Lingua Iaponica similis linguae Sinicae omnino non est, quamquam utraque lingua Asiatica est.
+10834793	"Habitaveruntne avus et avia semper in hac urbe?" "Ita. Etiam eorum atavi."
+10862950	Domi litteras legi.
+10862954	Cras domi ero.
+10862955	Si cras pluet, manebisne domi?
+10862958	Thomas domi esse nolebat.
+10882975	Convento amicitiaeque inter nos hoc propino!
+10963658	Quis eligere potest?
+10985111	Liceat mihi explicare.
+11006013	Mensa est parva sed gravis.
+11012695	Cūr id fēcērunt?
+11012840	Thōmās mē hūc secūtus est.
+11021528	Iānuam claudī audīvī.
+11021587	Thōmās in Austrāliā habitābat.
+11024706	Thomas consilium fecit.
+11026970	Semper sōlus bibis.
+11032664	Pecuniae pudorem anteponit.
+11040211	Pudet non vos vestrum?
+11042506	Id quod modo vīdī crēdere nōn possum.
+11047272	Cur Thomas non cessavit?
+11065179	Thōmās pōtiōnem Sinēnsem Arabicae antepōnit.
+11065721	Quid igitur me facere oportet?
+11066655	Interdum patris egeo.
+11067516	Patruus et amita mea filios geminos habebunt. Sunt patrueles parvi mei.
+11069170	Idem facere debes quod Thomas et Maria nunc faciunt.
+11075660	Estne tibi hōrologium?
+11076100	Stultum est hoc admittere.
+11076224	Commendavi eum secundum merita eius.
+11077808	Quanti constat haec raeda?
+11078214	Quot ōva in diē ēs?
+11079326	Mē canere audīvit.
+11083015	Thomas flens Mariae epistolam legit.
+11084919	In mārī natābāmus.
+11085011	Thomas Mariam invenit.
+11085262	Hīc medicus vir doctus est.
+11085312	Modo cibum sūmpsī.
+11088717	Mox māla mītia erunt.
+11089152	Quousque Thōmās nōbīscum erit?
+11089164	Thōmās nihil ēmptūrus est.
+11089432	Noli arguere derisorem, ne oderit te; argue sapientem, et diliget te.
+11093780	Nōn est quod tē paeniteat.
+11094506	Quīn Thōman interrogās?
+11094625	Thōmās nihil audīvit.
+11097531	Thōmās cum aliquō locūtus erat.
+11097557	Cēna ubi est?
+11098762	Iam domum regressus sum.
+11107661	Scīmus tē negōtiōsum esse.
+11110377	Crēdō tē victūram esse.
+11114370	Legatos sui purgandi causa mittunt.
+11128028	Thōman gubernāre nōn sinam.
+11128048	Hōc nūntiō audītō, magnopere laetāta sum.
+11128171	Dīcit sē vincere in animō habēre.
+11128314	Dīcit sē parātam esse ad id faciendum.
+11129161	Putō Thōman umbellam tuam habēre.
+11129210	Num faber tignārius es?
+11130475	Quot fēlēs habēs?
+11130550	Quot hominēs iuvābis?
+11130655	Quot avunculōs habēs?
+11130827	Quot fīliī tibi sunt?
+11130905	Quot raedās habet?
+11137951	Cūr capsam aperuistī?
+11138022	Cūr mē dē hīs rēbus rogāvistis?
+11139231	Ubi cibum sūmpsit?
+11139290	Ubi id repperistis?
+11139385	Ubi ea sepelīvistī?
+11139391	Ubi ea sepelīvistis?
+11141087	Quotiēns eum convēnistī?
+11149393	Quālem vītam vīs?
+11149469	Quandō eam vīdistis?
+11149549	Quandō hās litterās trānstulistī?
+11154952	Cūr nōn apud eam mānsistī?
+11155022	Quomodō linguam Gallicam didicistis?
+11155049	Mē scrībere docuit.
+11155176	Sōla opus facere coācta sum.
+11156383	Hi colores non casei sunt.
+11164884	Initium mensis Augusti calidus est.
+11211085	In mundo erat, et mundus per ipsum factus est, et mundus eum non cognovit.
+11419496	Haec fēlēs pulcherrima est.
+11419501	Tū ipse ībis.
+11467072	Eum Thoman vocamus.
+11467079	In pace vivunt.
+11481894	Ubi est filia mea?
+11486356	Thomas semper negotiosus est.
+11525281	Vidi eum in tabernam intrare.
+11600508	Proxima hebdomade videbo magistrum meum.
+11630529	Qui dies est hodie?
+11636680	Alcohol eum affecit.
+11644823	Quis Graeciae tantam pecuniam dedit?
+11656602	Non moriturus sum.
+11657502	Thomas et Maria se stupuisse dixerunt.
+11664468	Leo et lupus sunt animalia valida.
+11669575	Arnoldus res valde phyletisticas de Iudaeis dixit.
+11708172	Collegam non fumantem habui et vicinum cuius uxor fumabat. Cogitavi apud me: quae non possunt amoris obsequia hominem facere sacrificia!
+11715808	Magis magisque solitarius et oblitus factus est ultimis vitae suae annis.
+11720956	Exspectat nos aliquis foris.
+11724447	Aliqui flere coeperunt.
+11725999	Oculi eius pleni erant lacrimarum.
+11726088	Etiam ego eam adiuvissem.
+11746119	Romani victis populis inter alia linguam suam imposuerunt.
+11746143	Mendacium est cui non iam credimus.
+11755146	Thomas graviter dormit.
+11755168	Somnum capere non potes.
+11755199	Sami innocentem hominem occidit.
+11797275	Gratias vobis ago quod in convivium meum venistis.
+11804211	Nihil mihi hic relictum est.
+11813915	Mane apud nos hodie.
+11813916	Thomas mihi dixit se canem cupere.
+11814204	Thoman in consilium advocavi.
+11815630	Pontem exstrūctūrus est.
+11815632	Quid tē interrogāvit?
+11822508	Mamma nōs ad cēnam advocāvit.
+11826972	Omnia ā tē didicī.
+11827107	Dīc quid cēnseās!
+11843758	Sapientes beate vivunt.
+11878312	Referendarius non bonus est.
+11984327	Is a populo suo amatus est.
+12004535	Clavichordum grave est.
+12014491	Abreptus est ab illa puer.
+12019319	Clam sum deus.
+12025593	Consobrini duo sunt.
+12072102	Panem in mensa habebimus?
+12123415	Ego sum Alpha.
+12135205	Quid gravissimum tibi est?
+12139584	Aditus ad stationem est circa angulum.
+12147109	Libros habe parumper dum locum illis quaeram.
+12167184	Thomas piscem purgavit.
+12174479	Fur calceos emere non vult.
+12202459	Biographia eius in decem linguas translata est.
+12211035	Quid est hoc quod dicitur amor?
+12250793	Cur eos non interrogas?
+12306280	Audivimus de te.
+12306784	Thomas se ad ecclesiam iturum dixit.
+12307287	Fumat et hoc incipit ad sanitatem eius afficere.
+12311597	Nescio quid cani meo edendi dem.
+12318606	Cur etiam nunc ades, Thoma?
+12323170	Non pudet te?
+12330609	Putabatur frater meus me a statione convehere, sed eum invenire non potui.
+12331194	Anglica lingua hodie fere toto orbe docetur.
+12331549	Numquam Thomae mentionem feci.
+12331595	Nemo Thoman animadvertere videtur.
+12334338	Mutabiles sunt mulieres, quisquis in eis confidet stultus est.
+12335256	Cur tam utiles locutiones multae numquam sumptae sunt ab iis quorum lingua vernacula est lingua in qua illae locutiones scriptae sunt?
+12339130	Miror cur sententia illa in tot linguas translata nondum recepta sit.
+12342897	Thomas in aquam cadit.
+12343022	Frigidus sum quamvis bene indutus.
+12346191	Quo ire paras?
+12351485	Aliquid facere debuisti.
+12352561	Pacem bello permutant.
+12353069	Domum magno pretio vendidit.
+12358038	Miseret me eius.
+12358049	Non potest quin misereat me eius.
+12358086	Non potest quin misereat me Thomae.
+12358140	Illi manus fune constrixere.
+12360529	Iudicium aequum fuit.
+12369337	Hoc mihi alicuius rei memoriam affert.
+12372442	Iulius Caesar, una ex maximis historiae figuris, in conventu Senatus Romani, Idibus Martiis, anno 44 aCn, confossus est.
+12375191	Arbor illa bellissima est.
+12408295	Si tu essem, veniam ab ea peterem.
+12414992	Capilli tui sicut greges caprarum quae ascenderunt de monte Galaad.
+12462847	Sicut fragmen mali punici, ita genae tuae, absque eo quod intrinsecus latet.
+12494717	Thomae erat filius.
+12603595	Post noctem obscurissimum aurora advenit.
+12811936	Bona fide spero te mox ex morbo convalescere.
+12826951	Cur id grave tibi est?
+12874725	Liber est donum quod pluries aperiri potest.
+12881678	Mater nostra est.
+12900191	Esne pecuniae tuae denuo oblita?
+12900272	Timor Domini principium scientiae sapientiam atque doctrinam stulti despiciunt.
+12908887	Latrunculorum lusus nationalis in India factus est.
+12930694	Estne frigidum in terra uestra?
+12954703	Avus et avia nepotes suos ludentes et ridentes videre amant.
+12959938	Ea poculum in mensa posuit.
+12980324	Amicus meus contristatus est quod uxorem quem valde amabat nuper amisit.
+13011452	Materia extractio prohibetur.
+13021557	Scio me illi ignoscere, quod iram in pectore habere nolo.
+13056973	Tatoeba magni momenti est ad linguas alienas in genere studendas. Id est de omnibus sententiarum collectio. Immensum et singulare corpus est.
+13057820	Saepe silentium optimum responsum est.
+13081808	Haud facile libidinibus carebat.
+13105665	E rure oriunda sum.
+13134554	Pepo in frigidario est.
+13141776	Dolor non dolet.
+13172901	Num id vero voluisti?
+13178515	Thōmās nōn est mentiēns bonus.
+13324673	Clades non fuit res inesperata. Adversarius erat fortissimus.
+13358849	Multam nostalgiam, sed etiam multam pulchritudinem relinquit.
+13413861	Oblīquat, illa Emma.
+13499551	Thomas adorator felium est.
+13527099	Hoc discrimen fuit praevisibile.
+13542596	Maria mihi dixit se Linguam Francogallicam per triennium didicisse.
+13556729	Vestīgia fēlis in nive vidēre potes.
+13566214	Forsitan diabolus hic loquitur.
+13593861	Scisne quid quaerere?
+13595022	Cum interlocutore imaginario loquor.
+13605265	Valedicere alicui quem valde amas est una ex tristissimis rebus in vita.
+13611718	Amata mea est orchis, rosa, rorismarina. Est pulchritudo serena, poesis elegans. Amica fida, omnia mihi facit. Nutrix mea, comes, stella dux.
+13612408	Hae orchides papilionibus volantibus similes sunt.
+13628573	Iugurtha et Roma inimici hostifici erant.
+13629690	Papa est Episcopus Romae.
+13630130	Mors venit non invitata.
+13632952	Est magna diminutio reverentiae erga auctoritatem et traditionem.
+13650887	Quid a nobis metuit?
+13665288	Illi animi pendent.
+13681649	Magna vis aquae ad chartam faciendam adhibetur.
+13708324	Mulierem cum magistro nostro loquentem non novi.
+13709085	Plus quam octoginta annos iuvenis fui. Et subito me senescere sensi. Nunc miror cur tam radicalis transformatio acciderit.
+13713248	Nec tecum possum vivere nec sine te.
+13728192	Turcica est lingua sexta maxime adhibita in Tatoeba (olim secunda erat).
+13728530	Is inter eos qui cis montem et illos qui ultra habitabant fecit pacem.
+13730250	Patria pulsus est.
+13731918	Mulieres semper mobili animo sunt.
+13736728	Odor mendacii statim apparet. Mendaces fraudibus victitant. Nihil quod dicunt rectum aut verum est. Omnia quae agunt falsa sunt, tantum ut te decipiant.
+13739592	Primo, Intellegentiam Artificialem docemus. Deinde, ab ea discimus.
+13743962	Crura et pedes eius valde tumidi sunt.
+13744604	Instrumentis vilibus, operarii peius operantur.
+13745042	Hoc Thomae surripui.
+13746580	Brevi tempore tantum linguam Turcicam discit, sed iam multas sententias interpretari potest.
+13754025	Graecus intestina piscium in fovea sepelivit.
+13758888	Omnia vincit amor et nos cedamus amori.
+13763716	Quod est pretium autocineti rubri?
+13776598	Brasiliani Lusitanice in Brasilia loquuntur. Turci Turcice in Turcia loquuntur. Graeci Graece in Graecia loquuntur. Hungari Hungarice in Hungaria loquuntur.
+13778673	Quot horti in hac urbe sunt? Licetne in eis birotas vehi?
+13802915	Interpretatio ars est, non scientia exacta.
+13804984	Canisne in cubiculo tuo?
+13827897	Thomas fratrem gemellum habet.
+13829323	Multum his diebus proximis laboravi.
+13831640	Brazilia Croatiam proximo die Martis opponet.
+13839538	Ad pistrinum ivi.
+13851017	Erro dum vivo.
+13851551	Quid in interpretatione magis interest, accuratio an pulchritudo?
+13856307	Decem annos tantum nata eram cum mater mea mortua est.
+13865359	Estne illa medica caeca?
+13876281	Malum non edit.
+13878258	Mater filium manu tenet.
+13889643	Nos in finalem iaculate.
+13903505	Aegritudo ex hominum opinione constituta est.
+13904603	Mors eum in flexu viae insperata invasit.
+13910058	Mortuus est ut vivere possemus.
+13940640	Matrem tuam futui.
+13970357	Latrinam purgare nolo.
+13982166	Filia mea in ludum ivit.
+13982219	Labor pars vitae nostrae est.
+13987225	Dies Esperantista quotannis toto orbe celebratur ad commemorandum anniversarium publicationis primi libri de Esperantista die XXVI mensis Iulii anno MDCCCLXXXVII.
+14008185	Intellectus saltu magno progreditur. Sed num veritas attingi potest?
+14011604	Qualis erit annus venturus in mundo intellegentiae artificialis?
+14014377	Statim surge et te para.
+14015601	Hanc placentamne fecisti? Est prorsus sapidissima!
+14024088	"Magistra, quid significat 'evimde' Turcice?" "Turcice, 'ev' significat 'domum', 'evim' significat 'domum meam', et 'evimde' significat 'in domo mea'. Intellegisne?" "Ita, gratias tibi ago."
+14032675	Ian et Sophia soror eius mane iuxta ambulantes ad scholam eunt.
+14039566	Pulli die Veneris exclusi sunt.
+14046288	Tibi inopinatum habeo.
+14050115	Readlang est applicatio optima, et non solum ad legendum. Ibi etiam novum vocabularium exercere potes.
+14059241	Dissimilis praesentis indicativi, qui significat aliquid nunc agi, aoristus ad actionem refertur quae modo generali aut continuo perficitur.
+14059771	Aves in arbore sedentes cantant.
+14063483	Cur tam tristis es? Semper tam hilaris fuisti!
+14070151	Album est omnium summa colorum. Nigrum est coloris absentia.
+14070747	Hae aurantia nondum matura sunt; adhuc viridissima sunt. Papayae autem maturae sunt; vide quam flavae sint.
+14072449	Condiciones commeatus in viis urbis meae plerumque bonae sunt, sed certis temporibus continuae sunt congestiones commeatus.
+14075039	"Ficus et persica in siropo mihi valde placent." "Mihi quoque. Cui non placent?"
+14076158	Via ambulando fit.
+14080446	Vix domo egreditur.
+14080644	Patria mea dives est opibus naturalibus et multa flumina et cataractas, silvas et lacus habet.
+14082467	"Suntne hi libelli omnes tui?" "Ita. Utor uno pro unaquaque lingua quam disco: Anglica, Gallica, Russica, Turcica, et cetera."
+14083408	Quid sumus dum vivimus? Non sumus proprie atomi nostri, cum miliardibus annorum ante nos exstiterint.
+14087264	Thomas pecuniam ut autocinetum emat non habet.
+14091332	Cum puer essem, piscatione gaudebam. Adultus, numquam iterum piscatus sum. Numquam venationi placuit. Eam actionem crudelem existimo.
+14091547	Soror eius heri in nosocomium recepta est. Medici dixerunt eam pneumonia affectam esse. Antibiotica sumit et meliorationem ostendit.
+14092473	"Cara, iter faciam et post hebdomadem revertar. Promitto te cotidie vocaturum esse, fortasse noctu." "Bene. Iter bonum habe."

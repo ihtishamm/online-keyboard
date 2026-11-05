@@ -66,8 +66,11 @@ export function blocklists(): Map<string, string[]> {
 
   const sources: Readonly<Record<string, readonly string[]>> = {
     ...Object.fromEntries(
-      ["cs", "de", "es", "fr", "hu", "it", "nl", "pl", "pt", "sv", "tr"].map((c) => [c, list(c)]),
+      ["cs", "da", "de", "eo", "es", "fi", "fr", "hu", "it", "nl", "pl", "pt", "sv", "tr"].map(
+        (c) => [c, list(c)],
+      ),
     ),
+    nb: list("no"),
     ar: [...list("ar"), ...list("fa")],
     fa: [...list("fa"), ...list("ar")],
     hi: [...hindi, ...converted("hi", "hi-roman", hindi)],

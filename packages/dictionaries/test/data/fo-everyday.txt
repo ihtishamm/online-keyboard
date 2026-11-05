@@ -1,0 +1,407 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+384910	Øll menniskju eru fødd fræls og jøvn til virðingar og mannarættindi. Tey hava skil og samvitsku og eiga at fara hvørt um annað í bróðuranda.
+396888	Í dag fleyg ein stórur bilur av vegnum.
+396892	Eg las aldri bókina.
+400942	Hvussu gongur tað?
+983664	Hetta er eitt ross.
+983665	Hetta er ein hestur.
+1190273	Tað er alvíst um allar bygdir.
+1190997	Dagarnir koma akandi.
+1191034	Nú er søgan øll.
+1519825	Øll hava rætt til vernd av andaligum og evnisligum áhugamálum í sambandi við eitt og hvørt vísindaligt, bókmentaligt ella listarligt verk, sum avvarðandi hevur greitt úr hondum.
+1979341	Góða nátt Tatoeba. Vit síggjast í morgin.
+1979379	Góðan morgin, Mike.
+1979505	"Hvar býrt tú?" "Eg búgvi í Tokyo."
+1980178	Hann er bøssi.
+1981118	Eg eri bestur.
+1981136	Eg eri best.
+2141880	Og nú skal eg siga tær mítt loyndarmál. Tað er sera einfalt: einans við hjartanum kanst tú síggja rætt. Tað avgerandi er ósjónlegt fyri eyganum.
+2345944	Bókin liggur á borðinum.
+2346875	Hetta er mín telda.
+2606962	Lívið er sum ein stórur motorvegur.
+2621181	Hann er lærari.
+2621182	Eg eri lækni.
+2634858	Eg eri ikki lækni.
+2864491	Eitt mál er als ikki nóg mikið.
+2976845	Eg elski teg.
+2976856	Hetta er kona mín.
+2976860	Hvussu eita tygum?
+2976882	Dryssa sukur á tá tær eru bakaðar.
+2976909	Maðurin er ikki ungur.
+2976916	Tann nýggi stólurin er lavendilbláur.
+2976930	Hon er ein sjúkrasystir.
+2976942	Hann liggur aldri.
+2976962	Eg veit ikki loyniorðsins.
+2976968	Sum eg var bangin!
+2976971	Jú meiri, jú betri.
+2976975	Tá ið teir komu av útróðri, ella hvar teir so høvdu verið, plagdu teir at syngja ein sálm.
+2976989	Betty fór til sjóvar gjár.
+2977155	Eg segði tað, at hann ikki skuldi havt nakað.
+2977173	Eg legði til merkis, at teir arbeiddu á keiini allan dag.
+2977191	Tú krógvar tað eisini fyri Eiriki, so hann fær einki at vita.
+2977241	Har vóru nógv fólk, eg ikki kendi.
+2977242	Tað var eitt meistaraverk, teir ofta tosaðu um.
+2977387	Hann er ungur og framasøkin.
+2977442	Eg skilji. Takki.
+2981550	Tá hann hevði latið seg í, fór hann út i køkin.
+2981567	So hugdi hann kvikliga uttan um seg at vita, um nakar sá.
+2981583	Tað kann enda galið.
+2981612	Hvat leitar tú eftir?
+2981750	Eg skal veksla eitt sindur av pengum.
+2981763	Hvussu nógv kostar tað?
+2981775	Kan eg fáa matseðilin?
+2981790	Eg eri muslimur.
+2981817	Hon er fríteinkjari.
+2981833	Hvussu eita tygum til fornavn?
+2981864	Dugir tú eingilskt?
+2981874	Eg dugi eitt sindur av fronskum.
+2981923	Stuttligt at hitta teg.
+2981924	Kann mann keypa eplir her?
+2981935	Tí trúgvi eg ikki!
+2981940	Hann hugsar bara um seg sjálvan.
+2981968	Eg haldi, at hatta ikki er nøkur býtt loysn.
+2987406	Hvørji sást du í dansinum í gjár?
+2987438	Sum tiðin gongur!
+2987444	Lívið er stutt.
+2987453	Tom er í býnum.
+2987456	Hann liggur á sjúkrahúsinum.
+2987457	Elaine liggur á sjúkrahúsinum.
+2987539	Eg fer í kirkju.
+2987665	Hon spælir guitar.
+2987668	Sólin kemur upp í eystri og setur í vestri.
+2987671	Hvat kjøt smakkar best?
+2987681	Tom er kommunistur.
+2987702	Nancy er úr London.
+2987717	Eg hugbítur at síggja hana.
+2987917	Vit keyptu tað bíligasta teið.
+2987939	Tom er ótolandi.
+2987949	New York er størsti býurin i heimin.
+2987957	Er tú tilfriðs nú?
+2987974	Eg havi nógvan fepur.
+2991702	Hann má koma sunnanífrá.
+2991704	Hon má koma sunnanífrá.
+2991710	Hann hevur lisið bókina úti.
+2992821	Sært tú handa myndin?
+2992876	Hesin bilurin er vakrari enn tykkara.
+2995825	Faðir vár, tú sum ert í himlunum! Heilagt verði navn títt; komi ríki títt, verði vilji tín sum í himli so á jørð; gev okkum í dag okkara dagliga breyð; og fyrigev okkum skuldir okkara, so sum vit fyrigeva skuldarum okkara; og leið okkum ikki í freistingar; men frels okkum frá tí illa. Tí at um tit fyrigeva monnum misgerðir teirra, so skal himmalski faðir tykkara eisini fyrigeva tykkum; men fyrigeva tit ikki monnum, so skal faðir tykkara ikki heldur fyrigeva misgerðir tykkara.
+2995846	Kunnu tygum vísa mær?
+2995860	Eg veit ikki nær fer hann.
+2995875	Eg veit hvar hann er.
+2995883	Óhappið hendi knappliga.
+2995892	Hann dugir ivaleyst betur enn teg.
+2998153	Hvussu gamal ert tú?
+2998154	Hvussu gomul ert tú?
+2998156	Tað kann kava.
+2998161	Eg eigi at fara til Danmarkar i morgin.
+2998209	Mary dugir japanskt.
+2998228	Hvat er kursurin?
+3000023	Øll hava krav um rættindi og frælsi, sum eru nevnd í hesi yvirlýsing, uttan mun til ættarslag (rasu), húðarlit, kyn, mál, átrúnað, politiska ella aðra sannføring, tjóðskaparligan ella samfelagsligan uppruna, ognarviðurskifti, føðing ella aðra støðu.
+3000187	Eg helt, at tú vildi ikki at tosa við okkum.
+3000196	Hvat sært tú?
+3002147	Hatta var sera gott.
+3002167	Hon er ótrúliga vøkur.
+3002190	Altso, problemið hjá mær er, at eg kan ikki lesa hard.
+3004499	Hvar er vesi?
+3004502	Eg tørvi tíni hjálp.
+3004503	Eg havi mist min pengapung.
+3004510	Eg eri sjúkur.
+3004515	Hvussu komi eg til bussteðgiplássið?
+3004516	Samtykkja tit gjaldkort?
+3004526	Ikki nerta meg!
+3009390	Hvøm sást tú?
+3009477	Hvat fyri breyð etur tú?
+3009573	Eg hati hansara foreldur.
+3009583	Tom hataði sínar foreldur.
+3009595	Eg dámi mjólkina og breyðina.
+3009604	Systir mín dámar bommini.
+3009618	Eg standi og hugsi um mínum børn.
+3013315	Eg eri ikki sjúkur.
+3013324	Eg haldi, tað er ein ávaring.
+3013329	Knappliga leyp Tom á føtur.
+3013333	Hvat ætlar tú at gera?
+3016124	Eingin hevði nakrantíð skrivað honum eitt bræv.
+3016126	Hann hevur ongar vinir.
+3016138	Hann er í heit góðum lag í dag.
+3016156	Tom fer av Kobe fyrramorgin.
+3016166	Eg gleði meg til jóla.
+3016174	Nagoya er millum Tokyo og Osaka.
+3016176	Vit halda hetta loyndarmálið okkara millum, takk.
+3016203	Eg eri ikki errin av framferð mínari.
+3031482	Hon er á Majorca og sólar sær.
+3031488	Eg kann ikki bara vera eftir her.
+3031499	Eg droymdi kaldum dreym í nátt.
+3031512	Eg drakk mjólk.
+3031516	Tú ert skít!
+3031518	Tað var bara ein dreymur.
+3031521	Fá hana at flyta seg!
+3031528	Segði og fór avstað.
+3031533	Hvar er París?
+3031543	Hvar er bókan?
+3031817	Eg vaknaði tíðliga fyrrapartin.
+3031823	Hevur tú brævið við tær?
+3031828	Eg man at hava eina gittaru.
+3031834	Hann hevði ongantíð verið í Okinawa fyrr.
+3031837	Ken hevði ongantíð verið í Nýjorvík.
+3031863	Ein gomul kona gongur yvir vegnum.
+3031887	Eg visti ikki, hvat eg skuldi siga.
+3031897	Fái meg ikki at trúgva, at eg umsíðir hitti teg.
+3031921	Hann ikki minnist meg.
+3031944	Eg havi hoyrt um teg.
+3031961	Tom er tolandi.
+3031990	Ein tjørn er eitt lítið vatn.
+3032014	Hvar eru foreldrini hjá tær?
+3033451	Emilía skrivaði tann setningin.
+3033495	Hon man at granska tónlist og dans.
+3033502	Kettan er ikki deyð.
+3033537	Ein dúgva ímyndar ein frið.
+3033543	Tann dúgvan ímyndar ein frið.
+3033564	Hann sær tín hestin.
+3033619	Tær eru bara tríggjar gentur í flokkinum.
+3033643	Tað regnaði í gjár.
+3033648	Rósa er ein vøkur blóma.
+3033663	Eg nýti róma út í mínum kaffi.
+3033670	Hann nýtti mjólk út í sínum kaffi.
+3033704	Eitt høgt hús vórðu reist fyri mítt húsið.
+3033723	Sitrón er súrur.
+3033787	Mínir hundarnir eru hvítu.
+3034106	Tær rosinurnar eru súrar.
+3041460	Tað er ein lygn!
+3048829	Súreplið er reytt.
+3048833	Ja, súreplið er reytt.
+3048876	Kann eg koyra tína orðabók?
+3049697	Maðurin er høgur.
+3049698	Træið er grønt.
+3049740	Mállæran er sera torfør.
+3049746	Hetta er eitt orðtak.
+3049766	Eg fati ikki hetta orðið.
+3049769	Tom er mínum húsbónda.
+3049773	Blóman er reyð.
+3049780	Tað er tín hundur. Hvar er mín?
+3049808	Hetta er eitt súreplatræ.
+3049812	Súreplið fall av træsins.
+3049830	Vit mugu fara.
+3049832	Eg eiga at fara heim.
+3049840	Eg kann ikki betala Tom í dag.
+3049842	Eg eigi betala seðilin í dag.
+3050119	Bilurin er bláur.
+3050139	Bilurin er grønur.
+3050140	Bilurin er brúnur.
+3050141	Bilurin er gráur.
+3050142	Bilurin er reyður.
+3050144	Bilurin er svartur.
+3050145	Bilurin er hvítur.
+3050147	Bilurin er gulur.
+3050148	Bilurin er appelsingulur.
+3050149	Bilurin er góður.
+3050150	Bilurin er ringur.
+3050152	Konan er høg.
+3050156	Hetta er eitt vakurt land.
+3050160	Konan er ikki vøkur.
+3050502	Tann vakri maðurin er høgur.
+3050503	Tann vakra konan er høg.
+3050506	Tann høga konan er vøkur.
+3050507	Tann høgi maðurin er vakur.
+3051211	Tað er mín hundur.
+3057288	Eg eri ein maður.
+3064046	Hví grætur tú?
+3081357	Eg havi tvær kettur.
+3084771	Tað er einn appilsin.
+3095404	Eg er ikki tín móður.
+3111575	Tom kanska dámar teg.
+3127280	Eg eri róligur.
+3285541	Eg gloymi teg ongantíð.
+3285571	Arbeiðir tú í morgin?
+3285581	Tað er lýtt.
+3285584	Hatta ljóðar ikki so gott.
+3285588	Eg fari at giftast.
+3285596	Han er so fátækur sum ein kirkjurotta.
+3285598	Hon er so vøkur sum mamma sín.
+3285609	Eg má tosa við teg.
+3294959	Eg vil skriva einn bók.
+3296970	Tom fortaldi ikki nøkrum tað.
+3296973	Her hevur ikki verið nakar.
+3296980	Onkur fortaldi mær tað.
+3296991	Hann drakk ein øl.
+3297027	Eg flúgvi til Hanoi í morgin.
+3297031	Tom og Mary flúgva til Boston í morgin.
+3297196	Eg havi lisið ein bók.
+3399061	Lívið er ikki eitt ævintýr. Um tú missir tín skógv um dimmið, ert tú fullur.
+3400434	Mín maður doyði ikki.
+3400435	Mín kona doyði ikki.
+3400439	Eg fari at hyggja at sjónvarpi.
+3498179	Eg hyggji at sjónvarpi.
+3498185	Hatta er sín hestur.
+3522537	Vit eru lidnir.
+3633397	Eg tími ikki í skúla.
+3647111	Eg fari at leiga ein bil.
+3647112	Nær kann eg vitja teg?
+3656762	Tom er horvin.
+3664019	Týskland hevur tveir høvuðstaðir.
+3665276	Duga tygum enskt?
+3665278	Eg dugi ikki japanskt.
+3665280	Eg dugi ikki spanskt.
+3665282	Eg tosi enskt, franskt og spanskt.
+3666094	Far alt fyri eitt, annars verða tú ov sein.
+3666118	Eg mátti fara til Boston.
+3666141	Keiro er størsti býur í Afrika.
+3666183	Tú skal lesa bókina.
+3715618	Tað eru oyggjar í sjónum.
+3872712	Tú hevur ein drúva.
+3923696	Sunnudagur er síðsti dagur í vikuni.
+3935508	Grikkaland er eitt gamalt land.
+3982541	Elskar tú mammu tína?
+4024704	Heimsins núverandi hægsti bygningur eitur Burdj Khalifa.
+4419045	Luftpútufarið hjá mær yður í álli
+4419046	Luftpútufarið hjá mær ýir í álli
+4461337	Eg ivi at hann er sakførari.
+4461350	Eg kann ikki fara higar.
+4645425	Tað er í ordan!
+4971467	Hjartaliga tillukku við føðingardegnum.
+5309750	Skjaldbøkur hava ikki tenn.
+5309774	Skjaldbøkur eru skriðdýr.
+5676696	Nær kemur tú heim til Føroyar?
+5947198	Tú kanst ikki hjálpa mær.
+6362329	Ert tú inni?
+7344898	Hvussu eitur tú?
+7344934	Ein, tveir, tríggir, fýra, fimm, seks, sjey, atta, níggju, tíggju.
+7344935	Null, ein, tveir, tríggir, fýra, fimm, seks, sjey, atta, níggju, tíggju.
+7344976	Tað var ein fuktigur, gráur summardagur síðst í juni.
+7533495	Dugir tú enskt?
+7533501	Dugir tú føroyskt?
+7533502	Duga tygum føroyskt?
+7533512	Ringið eftir løgregluni!
+7533513	Ringið eftir løgregluni.
+7533514	Luftpútufarið hjá mær yður í álli.
+7533515	Luftpútufarið hjá mær ýir í álli.
+7533516	Hvat kostar tað?
+7809814	Tað finnast ongir býttir spurningar.
+8008495	Lykilin stóð fastur.
+8146237	Býur mín er við sjógvin.
+8146241	Mennad er ránsmaður.
+8324077	Eg var bilsin at síggja so nógv fólk til konsertina.
+8324079	Fleiri av mínum vinum hava verið í Japan í ár.
+8324081	Hvat tørvar tær at eg geri?
+8324085	Skriva títt svar í tann næsta bláa teigin.
+8324087	Tom fór til posthúsið at senda eitt bræv.
+8324092	Tom sendi pening fyri at hjálpa Mary at syrgja fyri sínum børnum.
+8324093	Eg havi einki funnið enn.
+8324098	Tom verður ovurfegin um at hoyra hatta.
+8324582	Eg visti ikki hvar Tom hevði parkera bilin.
+8324583	Eg keypti tær okkurt at drekka.
+8324585	Sami visti um fjasið.
+8324587	Sami tørvar hesa tíðina.
+8325925	Eg segði við Mary at hon ikki skuldi drekka hatta vatnið.
+8325927	Mær hevði dáma væl at farið til Tom og tosa við hann.
+8325928	Hon er við at blíva gomul.
+8325929	Vit mugu fáa hesi fólkini út hiðani.
+8325930	Eg spæli fótbólt.
+8325931	Ikki revsa børnini.
+8325932	Eg visti at tú fór at koma aftur.
+8325933	Kanska eg geri júst tað.
+8325934	Hvat fara vit at gera við tað?
+8325935	Vit báðir skilja hvønn annan.
+8325936	Er tað veruliga eitt gott hugskot?
+8325937	Tom dugur hatta heilt væl.
+8325938	Eg eti næstan ongantíð fisk.
+8325939	Tom er svakur.
+8325940	Eg veit ikki hvat eg hevði gjørt uttan teg.
+8325941	Hann er burtur í arbeiðsørindum.
+8325942	Brævið var undirskriva av Tom.
+8325944	Eg bíti ikki.
+8325945	Tú burdi farið til lækna.
+8325946	Mary pengakúgar Tom.
+8325952	Eingin hevur uppiborið hatta.
+8325954	Eg lesi hesa bókina.
+8325956	Eg havi einki val.
+8325959	Er tað nokk?
+8325962	Har er ein banki framman fyri støðina.
+8325964	Tom hevur høgt blóðtrýst.
+8325965	Tom og Mary royndu at drepa John.
+8325966	Hatta er eg.
+8325974	Søgdu tey hvussu?
+8325975	Eg havi ilt her.
+8325976	Vit elska útferðir.
+8325980	Felagið fór á heysin.
+8325984	Lat okkum lurta.
+8325986	Nær byrjar framførslan?
+8325987	Tey elska meg.
+8325988	Tom arbeiðir ikki her.
+8325989	Tom varð dømdur til deyða.
+8325991	Eg vil ikki vera virðingarleysur.
+8325993	Mær dámar hesar.
+8325995	Eg vóni at hatta er skemt.
+8325996	Hví var tú ov seinur?
+8325998	Hvussu leingi kanst tú halda andanum?
+8325999	Ikki arbeiða ov hart!
+8326000	Eg drekki mjólk.
+8326001	Hann keypti mær eina nýggja orðabók.
+8326002	Vit búgva her.
+8326003	Henda bókin er nýggj.
+8326004	Hví trýrt tú Tom?
+8326005	Eg eri sera fegin at síggja teg.
+8326007	Eg gloymdi at sløkkja ljósið.
+8326008	Tom kysti Mary á hálsin.
+8326010	Ver varin ikki at drekka ov nógv.
+8326011	Hansara familja er sera stór.
+8326012	Ver í frið.
+8326013	Tað er hví eg ikki var í skúla í gjár.
+8326014	Eg græt allan morgunin.
+8326015	Tom bukkaði høviskur.
+8326016	Eg havi ætlanir.
+8326017	Eg kann fara.
+8326019	Hevur tú nakrar minuttir?
+8326020	Húsið er kalt.
+8326022	Eg vil sleppa heim.
+8326024	Eg rindaði í hondina.
+8326027	Hann rennur sera skjótt.
+8326028	Hann var føddur í Afrika.
+8335019	Bróður mín er ikki her í dag.
+8335025	Tað er keðiligt at tú ert noyddur at fara.
+8335028	Hvussu nógvar bilar hevur Alex?
+8335029	Hann sær altíð fegin út.
+8335044	Eg geri tað ikki soleiðis vanliga.
+8335050	Vit tendraðu sjónvarpið.
+8335057	Rostov og Rostov-on-Don eru tveir ymiskir býir, sum eru rættuliga langt burtur frá hvørjum øðrum.
+8335061	Tá órættvísi gerst lóg, gerst mótstøða ein skylda.
+8335063	Hvør er hesin vinur?
+8335076	Hann ger ting truplari uttan orsøk.
+8335082	Boston er ein áhugaverdur býur.
+8335083	Tom býr nær við skúlan hann gongur á.
+8335087	Tom býr nær við skúlan sum hann gongur á.
+8335091	Tom býr nær við sína skrivstovu.
+8348954	Eg havi møguliga sæð handan filmin fyrr, men eg kann næstan ikki minnast hann.
+8348955	Eg leiti til hann fyri hjálp.
+8348956	Tað loysir seg at vera høviskur.
+8348957	París er ein av verðins mest vitjaðu býum.
+8348960	Hann fortaldi mær at hann var fjálturstungin.
+8348969	Tillukku við føðingardegnum.
+8348973	Tú hevur veruliga hjálpt okkum nógv.
+8348979	Tom og Mary royndu at myrða John.
+8761444	Eg eri bangin fyri kakkuløkkum.
+8762075	Hvør át breyðið?
+10044513	Vit vilja hava heilar setningar.
+10849916	Elskar tú eisini meg?
+10851992	Familjan hjá mær býr í býinum.
+11302135	Vælkomin til Tatoeba!
+11302147	Mary er í barnsburði.
+11302150	Tú ert eitt sindur løgin.
+11302167	Lovar tú ikki at gloyma meg?
+11746077	Tey søgdu mær frá hundunum.
+11864586	Hann svaraði spurninginum.
+12096407	Systir mín er við barn.
+12096410	Eg fari ikki at svimja í dag.
+12096413	Offrið var ein kona.
+12096419	Øll foreldur vilja hava børn síni at vera glað.
+12096421	Dámdi tær gávuna okkara?
+12096423	Dámdi tykkum gávuna okkara?
+12096427	Henni dámdi ferðina til Póllandi.
+12728492	Er tað hósdagur í dag?
+12728501	Hansara kamar er óruddiligt.
+12728508	Føroyskt er torført.
+12728627	Hvat er tað torførasta málið í heiminum?
+12728629	Hetta er mín persónsleitari.
+12728630	Eg eri glaður fyri at vera her.
+12728631	Eg eri glað fyri at vera her.
+13356301	Hví eri eg her?
+13668217	Eg búgvi ikki í Helsinki.

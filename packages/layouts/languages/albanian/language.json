@@ -1,0 +1,26 @@
+{
+  "slug": "albanian",
+  "code": "sq",
+  "order": 650,
+  "lang": "sq",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Albanian",
+    "native": "Shqip"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["sq-easy", "sq-standard"],
+  "accents": "çëÇË",
+  "sample": "Sot është një ditë e bukur për të shëtitur në park.",
+  "voice": ["sq-AL"],
+  "wordList": true,
+  "translate": {
+    "google": "sq",
+    "bing": "sq"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

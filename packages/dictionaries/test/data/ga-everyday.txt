@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+585265	Go raibh míle maith agat!
+625514	Is liom na leabhair seo go léir.
+625518	Beidh sé ag scríobh litir.
+625522	Stop sé ag léamh leabhar.
+625529	An bhfuil aon rud a ól sa chuisneoir?
+625531	Táim ábalta an Spáinnis a léamh go heasca.
+625538	Is maith leis an sacar.
+625716	An bhfuil tuirse ort?
+626872	Chuaigh siad go dtí an zú ar an mbus inné.
+626911	Tiocfaidh sí gan mhoill.
+626917	Ó, cad é seo?
+626937	Tá sé i dTóiceo.
+626944	Is é do leabhar.
+626949	Tá sé ró-bheag.
+626951	D'fhan sí in ostán.
+626965	Ní thaitníonn iasc agus sceallóga le gach Sasanach.
+627061	Tá aithne aige ar an gcathair go maith.
+627084	Thug an múinteoir a lán oibre bhaile dúinn.
+628169	Ná rith sa seomra seo.
+630734	Tá mo theach in aice an stáisiúin.
+630742	Tiomáin go cúramach.
+631401	Thógfainn an carbhat donn seo.
+631405	Tá trí cupán caife ólta agat.
+654929	Tá mé ag dul go dtí an siopa.
+719083	Codlaíonn smaointe glasa neamhdhaite go fíochmhar.
+748598	Táim i mo bhall den club leadóige.
+748602	Thóg siad fál timpeall na feirme.
+752722	Ní gá duit dul go dtí an oifig gach Satharn.
+752746	Tá oifig an phoist suite i lár an bhaile.
+752751	An bhfuil tú ag bualadh le duine éigin anseo?
+752752	Tá tinneas orm.
+752754	Téigh anseo agus cabhrú liom.
+752758	Chuaigh sí isteach sa tacsaí.
+752762	Tháinig mé amach as an tacsaí.
+768873	Tha mi ag iarraidh mo chàraid a cheilidh an-ath-sheachdain.
+768883	Bha ar bana-chàraid a' siubhal do bhaile bheag an t-seachdain seo chaidh.
+773114	Ní mbiodh eagla orm.
+773134	"Tá eagla orm nach bhfuil muid í Kansas a thuilleadh", a duirt Pól.
+773138	Tá eagla orm roimh an mbus.
+773163	Tá mé i mo chónaí in Albain.
+774791	Am bheil thu ag iarraidh a dhol?
+869073	Tá beirt pháistí ina suí ar an gclaí.
+871603	Tabharfaidh mé cóip do dhuine ar bith a iarrann é.
+871609	Tabharfaidh mé an t-alt sin duit.
+871628	An bhean atá ina cónaí béal dorais, tá sí ag obair sa Státseirbhís anois.
+871633	Tá fear ag an doras atá ag iarraidh caint leat.
+871635	Chonaic sé seanchara an tseachtain seo caite nach bhfaca sé le blianta.
+871641	Is é Colm an duine a cheap mé a chonaic mé.
+871647	Tá sé ag déanamh rud éigin ansin.
+871688	Goidé a bheas ar siúl ar an Déardaoin?
+871708	Cé acu is fearr leat?
+871710	Cén bia is fearr leat?
+871714	Cé na daoine a bheidh anseo?
+871723	Cén uair a thiocfaidh tú ar ais?
+871727	Cén fhad a fhanfas siad?
+871741	Cé a dúirt é sin?
+871745	Cén nuachtán ab fhearr leat?
+871747	Cé atá ina chónaí sa teach sin?
+871757	Cad a dhéanann sí sa samhradh?
+871763	Cé a chonaic tú ag an amharclann?
+873060	Is i nDoire a cheannaigh mé carr inné.
+873069	Is é an gúna gorm a chaithﬁdh mé.
+873115	Is amhlaidh a bhris sé an fhuinneog.
+873117	Is amhlaidh a thitfidh tú!
+873126	’Séard a chonaic tú ná deilf.
+873141	’Séard a dhéanfaidh mé ná an seomra a ghlanadh.
+873144	An amhlaidh a thiocfaidh sibh?
+873165	Iriseoir is ea é.
+873172	Inné is ea a cheannaigh mé carr.
+873458	Ollamh is ea mo dheartháir.
+873469	Ag Bríd atá an t-airgead.
+873475	Ní mise a d’ith an píosa cáca deireanach.
+873481	Ag a hocht a chlog a imeoimid.
+873501	Sin é an teach a bhfanaim ann.
+873509	Cé hiad na daoine a bhfaca mé leo í?
+873534	Sin í an bhean ar fhan siad léi.
+873540	Sin iad na daoine ar chuir mé caoi ar a gcarr.
+873542	Sin é an teach a raibh siad ina gcónaí ann.
+873547	Sin í an bhean a bhfuair mé teachtaireacht uaithi.
+873554	Cén teach a bhfanann sibh ann?
+873560	Cé na múinteoirí a raibh tú ag caint leo?
+873562	Cén chathaoir ar chuir tú an leabhar uirthi?
+873566	Cén bhean a bhfuil a mac tinn?
+873568	Cé leis a bhfanann tú?
+873574	Céard faoi a raibh sibh ag caint?
+873578	Cé a bhfuil a leabhar anseo?
+873587	Goidé an dóigh a ndéanann tú sin?
+874817	Cén fáth a bhfuil siad anseo?
+874834	Cén teach a gcónaíonn siad ann?
+874840	Ab é an chaoi ar shiúil tú ón mbus?
+874844	Díoltar bláthanna ansin.
+874868	Gortaíodh Máire i dtimpiste.
+874883	Ní dheachthas ann.
+874895	Táthar saibhir anseo.
+874906	Rugadh i Sasana í.
+874908	Is féidir liom é a dhéanamh.
+874924	Teastaíonn níos mó.
+874930	D’éirigh leis an obair.
+874932	Cailleadh Séamas Mhicí Sheáin anuraidh.
+874936	Feictear dom go mbeidh siad mall.
+874956	Gearrtar siar níos mó gach bliain.
+874958	Níor cheart drochfhocail a rá.
+875670	Tá Bairbre cúramach.
+875682	Labhair sí go mímhúinte.
+875688	Déanfaidh mé an obair amárach.
+875697	Tá sneachta ann le mí anuas.
+875706	Tá siad ar an taobh istigh.
+913329	Níl aon tinteán mar do thinteán féin.
+949648	Inné bhí te.
+1345234	Conas atá an aimsir inniu?
+1345256	Is maith liom é sin a chloisteáil!
+1467588	Go minic ithim úlla.
+1577327	Scríobhann sé litir.
+1577343	D'fhreagair Smith go raibh brón ort
+1911148	Ta me Bhailghme na clag
+1922090	Ná caith cnámha ag an madra.
+2150800	Tá sé an-dorcha.
+2332622	Ní raibh mé in ann stop a chur Tom.
+2502509	Níl faic le dhéanamh agam!
+2502519	Tá tú go hálainn.
+2502521	Tá mé anseo.
+2502576	Níl mé tinn.
+2502596	Tá áthas orm.
+2502605	An bhfuil Béarla agat?
+2502610	Tá leabhar agam.
+2502612	An bhfuil an leabhar agat?
+2502919	Is féidearthacht é domhan eile.
+2504666	Tá an cat faoin mbord.
+2505271	Aon, dó, trí, ceathair, cúig, sé, seacht, ocht, naoi, deich.
+2610940	Céard is ábhar taighde don tSoivéideolaí?
+2634834	Ní dochtúir mé.
+2712327	Ba mhaith leo a casadh leat.
+2713824	Tá eagla ar airde orm.
+2714189	Ba mhaith liom beoir eile.
+2714196	Ní iasc é seo.
+2714197	Is Tel Aviv cathair álainn é.
+2714201	Tá oráiste ar an tábla ann.
+2714206	Rachaidh mé ansin ar eitleán.
+2714216	Íosfaidh mé an fheoil.
+2714217	Tá mé ag ithe an fheoil.
+2714222	Chuaigh mé go Londain.
+2714571	Is duine maith mé.
+2714572	Is duine olc mé.
+2714585	Tá mé ag ithe torthaí, mar tá ocras orm.
+2714587	Tá ocras orm. Níl fearg orm.
+2714616	Is maith liom teangacha!
+2714621	An bhfuil tú ag iarraidh siúcra?
+2714641	Is as Kiótó mé.
+2714643	An bhfuil Béarla aige?
+2714644	An bhfuil léarscáil agaibh?
+2714667	Tá sé a haon a chlog.
+2714669	Tá sé a seacht a chlog.
+2714670	Tá sé a dó a chlog.
+2714671	Tá sé a cúig a chlog.
+2714682	Tá sé a sé a chlog.
+2714684	Tá sé a naoi a chlog.
+2714806	Tá mé ag ithe úll.
+2714807	Chonaic mé madra.
+2714808	Is iriseoir mé.
+2714809	Ba mhaith liom bheith ina iriseoir.
+2714814	Is snámhóir mé.
+2714823	Tá fearg orm.
+2714831	Tá an rud seo beo.
+2714834	Tá teach mór agam.
+2714840	Tá teach dearg agam.
+2714878	Is cailín álainn thú.
+2714925	Tá a lán cairde agam.
+2714935	Tá beirt mhac agam.
+2714944	An bhfuil a fhios agat?
+2714994	Tá uaim dul ar scoil.
+2715098	Caithfidh mé gloiní gréine.
+2715102	Scríobh sí litir.
+2715252	An bhfuil tú réidh a imirt?
+2715255	An bhfuil tú réidh don dinnéar?
+2715259	Caithfidh mé dul.
+2718365	Tá mé ag scríobh litir.
+2936185	Níor thug mé freagra ar litir Tom go fóill.
+2936201	An bhfuil tú dall i ndáiríre?
+2936204	Deoir níor shil sé.
+2951279	Tá mac an bhean sin tinn.
+2951291	Tá an cluife seo éasca.
+2951317	Ní dheachaigh éinne ann.
+2951322	Is leatsa an leabhar.
+2974597	Fuair mé an t-airgead.
+2974610	Is é Baile Átha Cliath príomhchathair na hÉireann.
+2977172	Rachaidh sé go hÉire.
+2977176	Tá tú ag foghlaim Gaeilge.
+2977190	Tá an foirgneamh ard.
+2977202	Tá an t-uisce te.
+2983690	Tá mo mhadra glan.
+2983692	Tá mo mhadra an-ghlan.
+2983694	Níl iníon againn.
+2983756	Tá an fear ard.
+2988426	An bhfuil Bulgáiris agat?
+2988436	Thrasnaigh siad an tAigéan Atlantach.
+2989008	Tá an teach mór.
+3007692	Is é seo tús le ré nua.
+3031843	Tá mé ag ithe cáis.
+3042378	Tá na héin ag canadh.
+3057176	Is é an leon rí na dufaire.
+3091021	Ní stopann sé.
+3092510	Tá an crann in ann fás.
+3100433	Is féidir leat féin é inseacht do Tom.
+3103402	Tá go leor leabhar agam.
+3103414	Sníonn gach rud.
+3103429	Tá mé pósta agus tá beirt pháistí agam.
+3103713	Is é sin tús iontach!
+3103736	Beidh do bhás gan phian.
+3105614	Is é an Neiptiún t-ochtú pláinéad an ghrianchórais.
+3119584	Tá an ghrian ard.
+3119598	Ní comhtharlú é seo.
+3119602	Ní raibh comhtharlú é.
+3120370	Thit Peter i ngrá leis an cailín.
+3125504	Tá sí ag cócaireacht.
+3125506	Táimid ag cócaireacht.
+3125507	Tá sibh ag cócaireacht.
+3125512	Tá siad ag léamh leabhar.
+3128070	Tá mé ag léamh.
+3128088	Tá tú ag scríobh.
+3128098	Tá sí ag scríobh.
+3128112	Táimid ag cócaireacht anois.
+3128113	Tá siad ag cócaireacht anois.
+3132253	Tá mé ag ithe ceapaire.
+3132270	Tá mé ag ól bainne.
+3132604	Caithfidh mé dul a chodladh.
+3132608	Caithfidh mé dul go dtí an banc.
+3201438	Tá bláthanna dearga aici.
+3233362	Tá an cluiche leadránach.
+3233365	Tá an chathair bheag.
+3233370	Tá an teach te.
+3245205	An bhfuil tú go maith ag leadóige?
+3245206	An bhfuil tú go maith ag matamaitice?
+3260112	Tá feabhas ar an aimsir.
+3356884	An Esperanto, teanga oifigiúil an Aontais Eorpach, anois!
+3390438	Beidh mé ag obair.
+3390439	Níl an capall bán.
+3390441	Is óglach mé.
+3390443	Tá sí ag dul ar scoil.
+3390822	Is teanga mharbh í an Laidin.
+3391340	Is ospidéal é seo.
+3391354	Díolann an siopa sin feola agus éisc.
+3391521	Úsáideann na páistí siúcra.
+3391524	Níl go leor aráin.
+3391551	Is í Buenos Aires príomhchathair na hAirgintíne.
+3392717	Is tusa cara Tomás.
+3392719	Tá tú leonta.
+3399062	Ní síscéal é an saol. Má chailleann tú do bhróg ag meán oíche, tá tú ar meisce.
+3399148	Ní bhfuair mo bhean bás.
+3399149	Ní bhfuair m'fhear bás.
+3428286	Chuaigh sé ar an scoil.
+3433379	Is é Tom mo chara is fearr.
+3433386	Tá sé ag ithe.
+3433398	Fáilte go hIfreann!
+3433404	Is féidir le aon leanbh sin a dhéanamh.
+3433406	Bhí Tom saonta.
+3433412	Táim i Tehran.
+3433414	Tá an t-iolar bán.
+3433457	Tá brón orm, ní féidir liom cabhrú leat.
+3433459	An bhfuil grá agat mo dheirfiúr?
+3433952	Ná hoscail do leabhar.
+3467389	Tá Leanne ina cónaí i Leicester.
+3467411	Tá an bia go maith.
+3468043	Is maith le Leanne cnaipíní sicín.
+3522316	Ná féach ar Tom! Féach orm.
+3523053	An mo fháinní iad sin?
+3523054	Ba chóir duit sé a iarraidh.
+3561606	Táim ag éisteacht leis an amhrán seo.
+3561609	Fáilte! Conas atá tú?
+3561617	Is aingeal thú!
+3561618	An bhfuil sin mídhleathach?
+3592783	Ní thuigim bhur gceist.
+3592784	Tá sé ag foghlaim Béarla.
+3592796	Is guthán póca é seo.
+3598609	Ba ghnách linn dlúthchairde.
+3598615	Is maith liom cócaireacht.
+3598622	Tá sin go hálainn.
+3598632	John is ainm dom.
+3598637	Táim i bPáras.
+3598653	An Malaeisiach é?
+3598665	Is buachaill mór é Seán.
+3598666	Is buachaill mór é John.
+3598669	Is Ramudu é.
+3598685	Cá bhfuil Máire?
+3598702	Cad atá sibh ag ithe?
+3599488	Is féidir le gach duine páirt a ghlacadh.
+3599554	Tá siad ag labhairt Gaeilge.
+3599594	Déanaim staidéar ar an tSínis i mBéising.
+3599604	Tá na húlla díolta amach.
+3599607	Tá Spáinnis aige.
+3599664	Cé a bhí Mona Lisa?
+3599684	Tá na húlla dearg.
+3599711	Tá cat bán agam.
+3599724	Tá mé tríocha bliain d'aois.
+3599732	Tá grá agam di agus tá grá aici dom.
+3600002	Tá a fhios aige an chathair seo go han-mhaith.
+3600006	Tá an Béarla deacair a fhoghlaim.
+3600038	Tá sí ag múineadh dom.
+3600043	Dúirt Tomás go bhfuil áthas ar Máire.
+3600050	Ní maith liom páistí dona.
+3600067	Bhí Tomás ag labhairt le Máire.
+3600077	Fuair sé bás inné.
+3600080	Táimid ag dul faoi uisce.
+3600087	Tuigeann tú mé.
+3600101	Tugann sé meas sclábhaí orm.
+3601070	Is téacsleabhar maith é seo.
+3601077	Is margadh maith é seo.
+3601078	Is teach maith é seo.
+3601086	Níl aithne agam air.
+3601087	Níl a fhios agam fós.
+3601090	Níl aithne agam ort.
+3601091	Níl a fhios agam rud ar bith.
+3601092	Níl aithne agam uirthi.
+3601097	Níl aithne agam ar Tomás.
+3601099	Níl Gearmáinis agam.
+3601106	Níl snámh agam.
+3601118	Tá an t-ábhar seo an-tábhachtach.
+3601126	An bhfaca tú mo cheamara?
+3601138	An bhfaca tú mo mháthair?
+3601141	An bhfaca tú mo dheartháir?
+3601148	An bhfaca tú m'aintín?
+3601163	Cad atá Ciarán ag déanamh?
+3601166	Cad atá Caoimhín ag déanamh?
+3601182	Níl, níl mé bómánta.
+3602268	An raibh sibh in bhur n-aonar?
+3602359	Fuair muid bricfeasta ag a seacht a chlog.
+3602367	Conas atá an aimsir?
+3602372	Níl carr agam.
+3602373	Níl bosca agam.
+3602376	Níl claíomh agam.
+3602380	Níl deirfiúr agam.
+3602382	Níl deartháir agam.
+3602386	Níl teaghlach agam.
+3602390	Níl fiabhras orm.
+3602391	Níl madra agam.
+3602394	Níl peann luaidhe agam.
+3602397	Níl rogha agam.
+3602400	Níl cailín agam.
+3602416	Níl plean agam.
+3602418	Níl arm agam.
+3602422	Níl teileafón agam.
+3602432	Níl béan chéile agam.
+3602469	Tá rothar agam.
+3602472	Tá iníon agam.
+3602497	Tá ceist agam.
+3602505	Tá bord agam.
+3602509	Tá pas agam.
+3602519	Tá mé ag labhairt.
+3602543	Tá mé ag dul.
+3602546	Táim ag dul abhaile.
+3602547	Tá mé ag dul abhaile.
+3602671	Tá plean acu.
+3602678	Tá teach mór acu.
+3602681	Tá gairdín mór acu.
+3602682	Tá a fhios agam sin.
+3602686	Tá aithne agam ar an gcailín sin.
+3602694	Tá m'athair ag dul go dtí an tSín.
+3602709	Cé a ghoid mo chuid eochracha?
+3602723	Ní fhaca Tomás rud ar bith.
+3602931	Ní dóigh liom go bhfuil dochtúir anseo.
+3602994	Tá buachaill ann.
+3602996	Tá peann ann.
+3603001	Tá bonn óir ann.
+3603017	Tá gabhlóg anseo.
+3603024	Tá mo scian géar.
+3603071	Is Gearmánach mé.
+3603076	Is Spáinneach mé.
+3603112	Is mac léinn mé.
+3603121	Is bean tí mé.
+3603123	Is múinteoir mé.
+3603138	Is péas mé.
+3603141	Is buachaill mé.
+3603145	Is aistritheoir mé.
+3603153	Is Beirlíneach mé.
+3603158	Is altra mé.
+3603159	Is banaltra mé.
+3604002	Táim i mo chónaí i mBéal Feirste.
+3604014	Tá tú i do chónaí i mBéal Feirste.
+3604021	Tá sé ina chónaí i mBéal Feirste.
+3604032	Tá mé sa charr.
+3604033	Cá bhfuil tú?
+3604038	Tá an fear óg.
+3604052	Tá beirt deartháir agam.
+3604061	Tá beirt neacht agam.
+3604127	D'athtvuíteáil mé an tvuít sin.
+3604278	Is liomsa é sin.
+3604287	Is liomsa an carr seo.
+3604289	Is liomsa an teach seo.
+3663861	Tá oileáin ar an bhfarraige.
+3664148	An í sin eolaíocht i ndáiríre?
+3664149	Bhí stoirm ann.
+3664151	Is Tuircis í mo mháthairtheanga.
+3664153	Is mian liom a bheith ina haisteoir.
+3664157	Tá sí ag fiuchadh uibheacha sa chistin.
+3664161	Caithfidh mé a insint duit rud éigin.
+3672088	Tá Tom ag dul i bhfeabhas.
+3672095	Chuir an rud a dúirt Tom fearg ort, nár chuir?
+3672098	An bhfeiceann tú rud ar bith ansin?
+3684727	An madra rua rua rua.
+3684733	An madra rua ta dáinte.
+3684735	An madra rua in a lai san lucra.
+3684739	Agus bar a da cluis in airde.
+3690728	Cé a chreidfidh seo?
+3691546	Cá bhfuil an t-aerfort?
+3712194	Is laoch mé.
+3712197	Is diabéiteach mé.
+3785858	Choinnigh siad an chuid ab fhearr go dtí an deireadh.
+3785864	Thaitin sé go mór liom.
+3785868	Ná bac leis sin anois!
+3785869	Ar do chomhairle a rinne mé é.
+3785870	Bhí sé ag obair don chomhairle.
+3785872	An bhfuil moladh agat?
+3786840	Tá, tá ort.
+3786860	Tá ort obair.
+3796946	Ba Shasanach é.
+3840872	Tá madra aige.
+3840890	Tá madra aigesean.
+3840930	Fadhb ar bith!
+3845208	Tá sí ag ithe.
+3855209	Ní cheannaím ach carranna buí.
+3898622	Oibrím ag barra.
+3899580	Níor mhaith liom é a fheiceáil ar chor ar bith.
+3899581	Ní mian liom é a fheiceáil ar chor ar bith.
+3899586	Tá Pua ag canadh ag an eaglais.
+3923694	Is é an Domhnach an lá deireanach don tseachtain.
+3930991	An bhfuil tú seacht mbliana déag d'aois?
+3930999	Beidh sé litir a scríobh.
+3931106	An bhfuil tú i do chónaí i Meiriceá?
+3931113	Is mian liom carr nua a cheannach.
+3934869	Tá Gaeilge líofa agam, ach níl mé á labhairt go minic.
+3944661	Tá Gaeilge líofa agam, ach nílim á úsáid go minic.
+3944670	Ceapaim gur féidir linn seo a láimhseáil.
+3944697	D'fhéadfadh Tomás é a dhéanamh.
+3944704	Rinne Tomás ar airgead é.
+3944933	Níl aon eolas agam faoin mBéarla.
+3944965	Táim ag scríobh leabhair duit.
+3944972	An ndéanfaidh tú staidéar tar éis teacht abhaile duit?
+3944980	Ceapaim nach teanga deacair í an Ghaeilge.
+3944995	Ní mise do mhúinteoir.
+3945003	Tá grá agam dá hiníon.
+3945005	Thug mé an tseamróg don chailín álainn.
+3945040	Is Gaeilgeoir í an cara is fearr agam.
+3945043	Níl ach dhá inscne sa Ghaeilge.
+3945054	Táim ag foghlaim Gaeilge go mall.
+3945077	Is gorm é an dath is fearr liom.
+3945082	An bhfuil grá agat dom?
+3945089	Ní fheicim aon rud.
+3961088	Is léarscáil í seo.
+3961112	Is peann é seo.
+3961161	Is carr é seo.
+3982712	An bhfuil grá agat do do mháthair?
+4001495	Dún an doras seo!
+4062767	Sleamhnaigh mé agus thit mé ar an trasrian, díreach nuair a chas an solas chuig dearg.
+4062780	Chuimil Máire a súile lena náprún.
+4062783	An bhfuil Tomás fós ag obair?
+4062788	Caitheann Tomás an iomarca ama ag obair.
+4062791	B'fhearr liom colscaradh a fháil.
+4099793	Níor chroch tú do chóta taobh thiar den doras.
+4099794	Ná bí déanach don cruinniú amárach.
+4256146	Fáilte chuig an Vicipéid.
+4273994	Tá mé ag snámh in abhainn.
+4405793	Táim ag foghlaim Spáinnise.
+4420902	Ní hé m'athair é.
+4420909	Ní hé ach fear é.
+4445005	Bhí mé sásta sin.
+4521003	Ní gá dom bheith ag obair níos mó.
+4521016	Is mian liom rud éigin a insint duit.
+4521030	Ní hí mo chailín í. Is í mo dheirfiúr í.
+4521052	Tá gach duine ar meisce.
+4521054	An mian leat leadóg a imirt linn?
+4521060	Tar éis an dinnéir, crochaim liom ar an dtrá.
+4521094	Cé hé an chéad cheann?
+4521422	Is féidir liom dul.
+4521440	Ní mhian liom do theanga a labhairt.
+4521453	Cad atá tú ag foghlaim?
+4521458	Cad atá tú ag déanamh staidéir?
+4521459	Cad atá sibh ag déanamh staidéir?
+4521462	Ceapann Tomás go bhfuil tú ag insint bréige.
+4521481	Tháinig mé go dtí an tSín.
+4521488	Creidimid tú, a Thomáis.
+4521492	Tá an seomra an-bheag.
+4521497	Oscail an fhuinneog.
+4521502	D'fhoghlaim tú go tapa.
+4521754	Tá tú chomh saothrach le beach i gcónaí.
+4521757	Chealg beach mé.
+4549691	Leigheas sé an tinneas a bhí orm.
+4549692	An féidir leat éisc a fheiceáil ag snámh san uisce?
+4554673	Go raibh maith agat.
+4554675	Go raibh maith agaibh.
+4555637	Is fuath léi a fear céile.
+4555638	Tá an ghráin aici ar a fear céile.
+4555648	Tabharfaidh mé duit é.
+4555649	Tabharfaidh mé duit iad.
+4555652	Níor inis mé di é sin.
+4555664	Tá tú cliste.
+4555665	Ní féidir le duine éigin é a cheilt i gcónaí.
+4555667	Tabharfaidh mé freagra duit amárach.
+4555668	Freagróidh mé thú amárach.
+4555669	Ní mian liom tú bheith sa tóir orm.
+4555672	Ba dheartháireacha Romulus agus Remus.
+4555674	Cén fáth nach ndéanfaidh tú?
+4555681	Cé a bhris an buidéal?
+4564511	An féidir leat carr a thiomáint?
+4576026	Tá an t-éan sa spéir.
+4576443	Feiceann an madra dubh an cat bán.
+4576449	Tá an seanduine ina shuí.
+4576454	Tá an cailín óg ag canadh.
+4577022	A haon, a dó, a trí, a ceathair, a cúig, a sé, a seacht, a hocht, a naoi, a deich.
+4606563	Is mian liom foclóir maith.
+4606567	Tá mo lámh in uisce te.
+4606571	Féach ar an bpictiúr.
+4616454	An bhfuil Fraincis agat?
+4616499	Bhí mé réidh.
+4638731	Bíonn Tomás ag amharc ar an teilifís i gcónaí
+4646688	Ba chéasadh croí dó a bhí inti.
+4646704	D'fhág sé chun Meiriceá sa deireadh thiar.
+4646705	Buailfidh mé leat ag stáisiún na mbusanna.
+4646714	Bailigh leat amach as seo!
+4646724	Bhí mé ag an bpicitúrlann.
+4668703	Osclóidh mé an doras.
+4668707	Conas atá tú?
+4668710	Tá mé maith go leor.
+4668713	Suigh síos anseo.
+4668714	Suigh síos ansin.
+4668725	Tá an madra mór bán ag féachaint ar an gcat sin.
+4751758	An tú féin atá ann?
+4770662	Bhí mé sásta.
+4771893	Tá an taoiseach ag labhairt liom.
+4773287	Cén fáth is mian leat an leabhar seo a cheannach?
+4773410	Tá sárBhéarla agat.
+4857793	Is maith leis spórt.
+4913295	Ní dhearna mé d'airgead é.
+4915509	D'éirigh mé as an dtraein.
+4969131	Tá mé ag foghlaim na Gaeilge.
+4987799	Céard atá déanta agat?
+4987815	Níl lá rúin agam an meon sin a athrú.
+5015859	Ná bí ag gáire.
+5015861	Tá imní orm.
+5015990	Is minic a mbíonn sé ag seinn ar an ngiotár.
+5015993	Caitheadh sé go raibh lucht éisteachta mór ag an gceolchoirm.
+5015996	Ní raibh muid in ann déanamh amach ceard a bhí Paul ag iarraidh a dhéanamh.
+5029560	Cathain a d'ith an cat ramhar sin an t-éan beag buí?
+5152215	Tá coinníollacha ann.
+5152270	Is mór an teach.
+5152635	Thug sé roinnt airgid dom.
+5152674	Is é Tuircis mo theanga dhúchais.
+5152679	Scríobhfaidh sé litir.
+5152696	Dia duit! Cé chaoi a bhfuil tú?
+5152970	Cad atá á dheineamh agaibh?
+5154139	Cé go raibh an aimsir tirim, thug mé mo chóta dó nuair a bhí sé ag dul amach.
+5154525	Is é an rud a dhéanfaidh mé ná an seomra a ghlanadh.
+5154553	Níor aontaigh aon duine leis.
+5154920	Conas ar feidir linn iad a fháil?
+5154954	Is bleachtaire é.
+5154975	Cén slí abhfuil an trá?
+5155033	An bhfuil rud cearr léi?
+5155036	Cad is ainm duit?
+5155040	Tá sé tábhacht go gcloiseann sí an rud seo.
+5155045	Chonaic mé iad é a mharú.
+5167995	Is breá le mo thuismitheoirí dul ag scí gach geimhreadh.
+5168037	Níl a fhois ar bith agam cá bhfuil sé anois.
+5168116	Nach raibh fhois agat gur fuar sí bás 2 bhliain ó shin?
+5168185	Is mór cosúil cara ná múinteoir, an múinteoir nua.
+5168224	Fuair Dick bás nuair a bhí sé deich mbliain d'aois.
+5168235	Clúdaigh sí seo le páipéar.
+5168257	Creidim gur tuigim.
+5168271	"Go raibh maith agat" "Ná habair é"
+5168594	Cad a dhearna tú aréir?
+5228134	Tá sé ceart go leor.
+5228139	Bhreathnaigh sí amach tríd an fhuinneog.
+5228140	Fuair Dick bás nuair a bhí sé deich mbliana d'aois.
+5228197	Ní féidir liom labhairt.
+5516941	Faraor nach bhfuil mé in aois na hóige arís.
+5516948	Mar murach tusa, ag Dia atá a fhios cén uair a gheobhaimis amach faoin mbotún sin a rinne iad.
+5516952	Sin bealach amháin le breathnú air is docha.
+5520737	Meas tú an bhféadfainn labhairt leat, go príobháideach, le do thoil?
+5538468	Tá Tom ag ithe, fós.
+5538474	Ní bheidh a fhios againn go dtí an bhliain seo chugainn.
+5538481	Chuaigh Tom go dtí an linn snámha.
+5538483	Tá páistí Tom thíos staighre.
+5538494	Níl ach cluiche é seo.
+5542375	An bhfuil an leabhar agaibh?
+5564585	Bíonn cluasa ar na claíocha.
+5569800	Má bheadh airgead agam, cheannóin ticéid don cheolchoirm.
+5569837	Tá go leor airgid ag an seanfear.
+5570633	Is mise Farshad.
+5592743	Chuir Tomás a fhéinphic ar líne.
+5592749	Chuir Tomás a fhéinín ar líne.
+5599784	Tá brón orm...
+5599795	Le do thoil.
+5599882	An dtuigeann tú?
+5607354	An féidir liom bhur nguthán a úsáid?
+5614617	Tá na mná rialta ag canadh.
+5621762	Cheannaigh mé rud duit.
+5621765	Cheannaigh mé an gluaisteán.
+5621927	Ní mian liom ceapairí ar bith.
+5644056	An bhfaca tú mo sparán?
+5644070	Is féidir linn Béarla a labhairt.
+5644089	Mhionnaigh sé nach n-ólfaidh sé ariamh.
+5644150	Chaith sé an t-úll chugam.
+5649004	Bhí Tomás ar buile.
+5650983	Fuair Tomás léasadh teanga.
+5670086	Nollaig Shona duit!
+5840817	Táim i ngrá.
+5978202	Is é an bheatha an t-uisce.
+6031869	Ceapaim go dtuigeann tú mé.
+6042326	Níl aon rud agat.
+6042347	Ba mhaith liom caint leatsa.
+6077699	Is banríon draig é.
+6091908	Ní raibh sé ag éisteacht léi.
+6319208	Cad ann ar mhaith leat bheith nuair a fhásfaidh tú suas?
+6319213	Ba mhaith liom thú rud éigin a ghealladh dom.
+6319223	Ba mhaith liom bhur n-aird, le bhur dtoil.
+6319229	Ní raibh sé de cheart agat dul chuig a leithéid d'áit chontúirteach.
+6319230	Inseoidh mé duit faoina bhfuil mé ag iarraidh a dhéanamh.
+6319259	Ba mhaith le mo thuismitheoirí mé a theacht abhaile.
+6319264	Sin é go díreach an rud atá mé ag iarraidh a chloisteáil.
+6319265	Tá rud ann ar mhaith liom triail a bhaint as.
+6319272	Tá siad ag iarraidh Tom a fhanacht thar oíche.
+6319275	Ní raibh Tom ag iarraidh mé lámh a leagan air.
+6319279	Níl Tom ag iarraidh ach greim le hithe.
+6319287	Tá Tom ag iarraidh thú a fheiceáil thíos staighre.
+6319290	A Tom, uaitse atá mé ag iarraidh é a chloisteáil.
+6319291	A Tom, ba mhaith liom thú a theacht liomsa.
+6319294	Níl tuilleadh botún ar bith uainn.
+6319295	Nílimid ag iarraidh trioblóide.
+6319300	Ba mhaith linn thú taitneamh a bhaint as.
+6319301	Bhíomar ag iarraidh an t-ádh a ghuí leat.
+6319307	Cad é nach bhfuil Tom ag iarraidh muid a fheiceáil?
+6319309	Cén fáth a bhfuil Tom ag iarraidh muidne a dhéanamh seo?
+6319311	Cén fáth a mbeidís ag iarraidh Tom a ghortú?
+6319315	Ar mhaith leat triail a bhaint as?
+6319318	Tá a fhios agat cad é atá mé ag iarraidh thú a rá liom.
+6319320	Phós sí é nuair a bhí sí 20 d'aois.
+6319322	Tá na Seapánaigh ina n-oibrithe an-díograiseacha den chuid is mó.
+6319323	Is eagal liom a rá go bhfuil sé imithe agus ní fhillfidh sé choíche.
+6319325	In am is i dtráth.
+6319328	Chuaigh mé amach le gealt.
+6319350	Caithfear cabhair a dhéanamh ar chairde in am an ghátair.
+6319355	Nuair a thugaim cuairt ar mo gharmhac, tugaim rud éigin liom dó i gcónaí.
+6319360	Tá náire air gur theip air.
+6319363	Níor bhain sé taitneamh as a chuid ceachtanna.
+6319369	Múineadh dom conas a bheith slítheánta agus bréag a insint.
+6319373	Rug sé greim láimhe ar an ngasúr.
+6319374	Is iontach an rud é nach ndúirt sé aon rud ar bith.
+6319381	Chuir sé gnó nua ar bun.
+6319382	Anseo is doimhne atá an loch go bhfios dom.
+6319535	Ní bheidh mise ag an gcóisir.
+6319540	An bhfuil a fhios agat cén dia a bhfuil an teampall seo tiomnaithe dó?
+6319543	Ba mhaith liom an t-uaireadóir seo a mhalartú ar cheann nach bhfuil chomh daor leis.
+6319545	An féidir liom an rothar seo a úsáid?
+6319550	An féidir leat an cheist seo a fhreagairt?
+6319552	Féach go géar ar an ngrianghraf seo agus déan iarracht mé a fháil air.
+6319555	Is cuimhin liom na laethanta sásta a chaith mé faoin tuath gach uair a fhéachaim ar an ngrianghraf seo.
+6319556	Ceapaim gur chóir duit leithscéal a dhéanamh di.
+6319561	An bhfuil tú saor an deireadh seachtaine seo?
+6319563	Tá sí ag sábháil airgid le dul thar lear.
+6319566	Sínigh d'ainm ar an doiciméad seo, le do thoil.
+6319567	Sílim go bhfuil an t-úrscéal seo suimiúil gach uair a léim é.
+6319570	Saor ó locht atá sé de réir na fianaise seo.
+6319571	An féidir liom an áit seo a úsáid chun glasraí a chur?
+6319572	Níl mé sásta faoi na cúrsaí atá ann ná baol air.
+6319574	Ba mhaith liom an bhábóg seo a cheannach.
+6319575	Is féidir leat trí leabhar a fháil ar iasacht ag an am céanna sa leabharlann seo.
+6319576	Tá cosc ar sheilg ghéim sa choill shámh seo.
+6319585	An dtuigeann tú ciall an fhocail seo?
+6319587	Conas a deirtear an focal seo?
+6319592	Ní dada iad fadhbanna iompair ár gcathrach i gcomparáid leis na fadhbanna cathracha móra cosúil ar nós Londan agus Nua-Eabhrac.
+6319594	Ní féidir liom an phian seo a fhulaingt a thuilleadh.
+6319595	Tá na hóstáin ar fad lán ar an tsráid seo.
+6319596	Nach glórach an tsráid seo!
+6319597	Tá sé an-bhaolach dul trasna an bhóthair.
+6319606	Tá malairt tuairimí ann faoin bpointe seo.
+6319609	Níl dochar ar bith sa chuid is mó de nathracha an oileáin seo.
+6319616	Is Francach mé.
+6319629	Cad é a bhí tú a dhéanamh?
+7073205	Tá uisce agat agus ólann tú é.
+7075957	Léim an leabhar.
+7075967	Tá nuachtán agam.
+7290681	Uair a bhí mise ag fás suas, chonaic mé an buachaill is láidre sa mbaile. Agus ó chonaic mé an t-aonad san, nídh 'acainn dom dol im choladh.
+7290689	Is maith liom caife dóite.
+7290690	Dh'ólas caife.
+7290698	Cuibheasach focainn maith an rud so.
+7290700	Dh'aimsigh mé é ina luí ar an leaba.
+7290702	Bhí liathróid sacair ag Saimí.
+7292793	Is maith leo an Béarla.
+7590338	Níl mo choinsias glán.
+7676172	Ní dhéanfaidh mé dearmad ar a freagra riamh.
+7676186	Is gadaí an áthais í comparáid.
+7676201	Tá Máire go han-álainn.
+7676205	Tá Judy cineálta le gach duine.
+7676224	Tá grá againn ar an gcailín céanna.
+7676233	Seo é focal.
+7705877	Déanaim é mar is maith liom é a dhéanamh.
+7799803	Ghlac sé leis mar ionaí pearsanta an uair seo.
+7799821	Tá mé ag dul a chur an rud seo i gceart.
+7801184	Ghnóthaigh sí aird idirnáisiúnta as a cuid taighde.
+7801339	Ceart go leor.
+7801390	Cé i bhfíos?
+7801399	Buíochas le Dia.
+7801437	I ndáiríre? Cad chuige?
+7801440	Á, ceart go leor!
+7801559	Agus mar sin?
+7801572	An bhfuil aon duine abhaile?
+7801590	Céard a déarfadh muid chun báis?
+7801593	Tá tú ag faire.
+7801595	Níl a fhios aige.
+7801912	Ó! I ndáiríre?
+7804535	Is dochtúirí muid.
+7804584	Gabh mo leithscéal!
+7804856	Tá bialann anseo.
+7804863	Tá sé ró-the.
+7804865	Níl ocras orm.
+7804875	Ni thiocfaidh mé.
+7804878	An bhfuil airgead aici?
+7804882	Cén t-am é?
+7804883	Tá a fhios muid.
+7804959	Tá bron orm.
+7804960	An bhfuil bron ort?
+7804963	Tá ocras orthu.
+7805163	Bhí sé inné.
+7805167	Cá bhfuil do mhála?
+7805169	Tá mé ábalta rith.
+7809336	An bhfuil carr agat?
+7809337	Is í seo mo bhean chéile.
+7809339	Ní fhaca mé sin.
+7809345	Tá do mhadadh anseo.
+7809347	Tá do mhadadh ansiúd.
+7809349	Níl mé ábalta é sin a déanamh.
+7809351	Coinnigh mé leis an obair.
+7809353	Tabhair dom an spúnóg.
+7809697	Labhair siad Fraincis.
+7809701	Tá Tom an-sean.
+7809730	Cá bhfuil do shúile?
+7809763	Ní féidir liom é a oscailt!
+7810118	Cad é mar atá tú?
+7810119	Maith go leor.
+7810124	Níl mé i mo chodladh.
+7816203	Déanfaidh mé aon rud ach an post sin.
+7816213	D'imrínn le cúpla buachaillí.
+7816228	Déantar subha as sútha talún.
+7816236	Níl cairde ar bith aici.
+7816255	Tá Meg ag bualadh druma.
+7816272	An bhfuil aon duine anseo?
+7870173	Caithfidh mé staidéar a dhéanamh
+7871804	Ní dheachaigh aon duine ar bith ansin.
+7922339	Níl leigheas in aghaidh an bháis.
+8050258	Ceapaim go bhfuil mé líofa as Fraincis.
+8098173	Bhí na sléibhte garbh.
+8109604	An maith leat cáis?
+8109612	Bhí gá duit teacht inné.
+8109613	Cén fáth ba mhaith leat imeacht?
+8115255	An bhfuil bia uait?
+8117841	Dún an doras!
+8118025	Is maith liom Fraincis a labhairt.
+8118041	Ba mhaith liom dul abhaile.
+8212672	Tá grá agam do mo bhean chéile.
+8239919	Is buachaill thú.
+8239925	Tá an teocht an-ard.
+8239936	Ná déan dearmad ar riail uimhir a trí.
+8239948	Is cosúil go bhfuil Tomás ina chodladh.
+8239949	Ba cheart duit do thicéad a cheannach roimh ré.
+8239954	Níl sí cosúil linn.
+8239955	Cá bhfuil Tomás inniu?
+8290342	Scríos an ríomhaire.
+8290344	Tá an ríomhaire nua.
+8290348	Úsáideann mé an ríomhaire.
+8290363	Tá an ríomhaire as obair.
+8290371	Úsáideann mé an ríomhaire sin.
+8290381	Teastaíonn ríomhaire uaim.
+8290383	Is fuath liom mo ríomhaire.
+8290400	Ceannaíonn sé ríomhaire.
+8290403	Ceannaíonn sí ríomhaire.
+8290406	Is maith liom do ríomhaire.
+8388993	An gá dom deifir a dhéanamh?
+8586082	An bhfuil mo phictiúr próifíle go hálainn?
+8759854	Tá a fhios ag Tomás cá bhfuilim.
+8759881	Tá an-tuirse orm.
+8760040	Bhíomar le do mháthair.
+8760091	Is deargbhréagadóir é Donald Trump.
+8908400	D'fhoghlaimíomar an foréigean uaibh.
+9044794	Cuir masc ort, le do thoil.
+9044815	Tá ocht uaireadóir aici.
+9044839	Is féidir linn labhairt faoi.
+9076825	Nach raibh a fhios agat go bhfuair sí bás tuairim is dhá bhliain ó shin?
+9158361	Déantar plúr as cruithneacht.
+9312890	Cá bhfuil an traein seo ag dul?
+9464316	Tá teaghlach agam.
+9464456	Is múinteoir an-dian é Tomás agus ní maith le páistí é.
+9464464	Fuair seanathair ár gcomhghleacaí bás.
+9464470	Tá seoladh Thomáis agam áit éigin i mo ríomhaire.
+9464473	Tá Tomás ag scríobh a thráchtas dochtúireachta faoi láthair.
+9466086	Caithfidh tú dul abhaile anois.
+9472028	Níl aon leigheas ar tromluithe.
+9524237	Táim ag foghlaim Aramaise.
+9524267	Tá corp Thomáis sa marbhlann anois.
+9570985	Tabharfaidh mé óráid amárach.
+9663162	Is iníon léinn í, nach ea?
+9949737	Ní mian liom go mbeadh mo thír ina ball den Aontas Eorpach.
+9965188	An saoránaigh Mheiriceá sibh?
+9965191	Cén fáth nach dtéimid go dtí oifig Thomáis?
+9965554	Ba é smaoineamh Thomáis é.
+9965561	Tá an leabhar seo ró-leadránach.
+9965593	Is liomsa an ríomhaire glúine seo.
+9965602	Tá an tae ró-the.
+10258406	Dúirt sé os ard.
+10258438	An bhfuil fhios agat go bhfuil cailín ag Tom?
+10258443	Rinne mé cheana féin é.
+10309088	Tá straitéis níos fearr uainn.
+10309089	Teastaíonn straitéis níos fearr uainn.
+10317053	Tá orm imeacht.
+10317078	Tá ainm an chailín sin ar eolas agam.
+10317096	Chuaigh Máire a luí go sásta.
+10317098	An bhfeicfidh mé arís í?
+10317103	Tá sé fíorleadránach.
+10317113	An bhfuil a fhios agat conas cipíní itheacháin a choinneáil i gceart?
+10317121	Cad a cheannóidh tú?
+10317122	Céard a cheannóidh tú?
+10317126	Ní theastaíonn uaim slaghdán a fháil.
+10317138	Ní fhéadfainn liom Tomás a phiocadh suas ag an aerfort.
+10317141	Tá tuirse ar Tomás agus Máire.
+10317149	Is é an ceann ball den chorp an duine é.
+10317272	Fuair mé saor in aisce é.
+10317276	Ní theastaíonn lón uaim.
+10317290	Ní theastaíonn páistí uaim.
+10317298	Níl siad uaim.
+10317312	Ní labhraím Catalóinis.
+10317315	Táim ag foghlaim.
+10317319	Táim ag foghlaim Seicise.
+10317320	Táim ag foghlaim Bascaise.
+10317324	Táim ag foghlaim Sínise.
+10317326	Táim ag foghlaim Fraincise.
+10317328	Is féidir le páistí fiú é a thuiscint.
+10317356	Tá Baile Átha Cliath in Éirinn.
+10317357	Táim réidh chun é sin a dhéanamh duitse.
+10317364	Chríochnaigh an dara seimeastar.
+10317393	Níl gach reiligiún diachiúil.
+10317397	Tá do sheanathair an-dáimhiúil.
+10317403	Thug mé samplaí.
+10317407	Thug mé m'fhocal.
+10317422	An dochtúir é?
+10317425	Seo mo mhadra.
+10317429	Is mo mhadra é sin.
+10317433	Ní fhaca mé cé a tháinig.
+10317435	Is amadán é mo dheartháir.
+10317436	Amadán is ea mo dheartháir.
+10317439	Mharaigh sé é féin leis an ól.
+10317466	Réitíonn Dónall cáca seacláide.
+10317467	Déanann Dónall cáca seacláide.
+10317472	Chuir Tomás ceist orm cérbh é mo mhúinteoir Fraincise.
+10317483	Tá asma uirthi.
+10317487	Díreach toisc gur mac tíre mé glacann gach duine leis gur drochdhuine mé.
+10317493	B'fhéidir gur tréatúir é Tomás.
+10317495	Sílim go bhfuil tú go hiontach.
+10317500	Is féidir le Yanni ithe níos tapúla ná sin.
+10317509	An bhfuil tú chun gléasadh i bhfeisteas i mbliana?
+10317524	Táim déghnéasach fós.
+10317528	Bhí culaith scáinte air.
+10317533	Nach bhfuil tú chun teacht go dtí cóisir Thomáis anocht?
+10317544	Shíl mé go raibh Tomás tar éis imeacht cheana féin.
+10317574	Is cosúil gur smaoinigh siad ar rud éigin eile.
+10317631	Tá gach rud an-shimplí.
+10317645	Fan san áit a raibh tú ar feadh soicind.
+10317654	Ghlaoigh Tomás ar a bhean chéile chun a rá go mbeadh sé déanach.
+10317663	Faoin am ar thángamar ann bhí an long fágtha.
+10317679	Sílim gur bliain mhaith a bheidh ann.
+10317686	Rinne Tomás iarracht áitiú ar Mháire gan imeacht.
+10317726	Chuir sí ceist air an raibh a fhios aige cá raibh mé i mo chónaí.
+10317814	Is brionglóid mhaith í.
+10317818	Tar anseo ag a sé a chlog go díreach.
+10317819	Labhraíomar léi faoi le déanaí.
+10317823	Ba cheart go mbeadh Tomás in ann snámh trasna na habhann.
+10317923	An bhfuil an chuma orm go bhfuil mé saibhir?
+10317931	Má tá ocras ort, ith.
+10317932	Is féidir leat dul más mian leat.
+10317938	Glaoigh orm má aimsíonn tú rud éigin.
+10317939	Glaoigh orm má theastaíonn cúnamh uait.
+10317946	Mura n-itheann tú, faigheann tú bás.
+10317960	Mura dtéann tú, rachaidh mé.
+10317963	Mura n-insíonn tú di, inseoidh mé.
+10320050	Is sclábhaí mé.
+10329747	Níl am againn.
+10354434	An Éireannach tú?
+10471153	Tá rud éigin briste agam.
+10471154	An bhfuil an peann luaidhe briste agat?
+10471157	Tá scriosán i do bhosca pionsailí.
+10471382	Is seanfhear é.
+10696581	Foghlaim conas códú.
+10696585	Foghlaimígí conas códú.
+10696606	Bímis ag spraoi!
+10772273	Ní bheidh na daoine aontaithe a ruaig go deo.
+10808487	Chuir mé seomra in áirithe.
+10808516	Tá ríomhaire glúine agam.
+10808517	An bhfuil ríomhaire glúine agat?
+10808519	Chonaic mé ríomhaire glúine sa deasc.
+10808522	Is mian liom an fhírinne a insint duit.
+10808523	Ní féidir leat níos mó airgid a infheistiú.
+10923932	Tá go leor rudaí ar líne.
+10923954	Ní hé an Béarla an teanga is fusa ar domhan.
+10923956	An gcreideann tú i UFOanna?
+10923967	Tá cloiste agam faoi Thomás.
+10923969	Tá an cailín beag ag gol.
+10926380	Níl aon mhíniú agam air sin.
+10926384	Tá drochshlaghdán orm.
+10926390	Bhí an fómhar go maith i mbliana.
+10926441	Tá a dhóthain deacrachtaí ag Tomás.
+10926442	Cad is ainm do do dhlíodóir?
+10926443	Cad is ainm do do mhúinteoir?
+10926444	Rinne siad iarracht iad féin a mharú inné.
+10926459	Ní féidir leat aon rud a chódú gan ríomhaire.
+10926461	Dúnann an doras go huathoibríoch.
+10926463	Tá an músaem dúnta anois.
+10926498	Níl tiomáint agam.
+10926500	Le do thoil ná cuir oighear i mo dheoch.
+10926501	Ba mhaith liom áirithint a dhéanamh do dhuine amháin.
+10926502	Tá an ráta áitíochta in óstáin beagnach caoga faoin gcéad.
+10926505	Is í mo dhlúthchara í.
+11027025	Is maith liom Máire.
+11085329	Tá tú i ngrá.
+11089265	Fuair sí oideachas maith.
+11093951	Inniu an 18 Meitheamh agus an lá breithe Muiriel chomh maith!
+11093957	Lá breithe sona dhuit, a Muiriel!
+11098505	Is diabhalta a bhí an coinín.
+11098524	An le déanaí a bhí na grianghraif?
+11098551	Ar chúis éigin, ní raibh ag éirí leis an maidhc roimhe seo.
+11098554	Ní foláir do gach duine foghlaim ar a shon féin faoi dheireadh.
+11099073	B’fhéidir go dtabharfainn isteach go gairid agus codlóidh mé néal.
+11099294	Cuirfidh mé glaoch orthu amárach nuair a fhillfidh mé.
+11100323	Caithfidh tú dul a chodladh.
+11100324	Táim ag imtheacht.
+11101634	Tá mé an-ramhar!
+11102650	Siar i mo sheal ar ardscoil, d'éirigh mé ag a 6 a chlog gach maidin.
+11102658	Cá fhad a d'fhan tú ann?
+11102838	Níl eolas agam cén áit ar tháinig sé.
+11104334	'Sé an t-ionadh tosach na tuisceana.
+11104531	Ní thuigimid rudaidhe an dóigh atá siad, ach atá muidne.
+11206845	Bhuaigh mé an troid.
+11206859	Táim ag imirt gailf.
+11468885	Is fuath liom an domhan mar is fuath leis an domhan mé.
+11490739	An bhfeiceann tú an nuacht?
+11613639	Ba mhaith liom dul ansin.
+11767592	Ba mhaith leis dul go Meiriceá.
+11767822	Níl aon seomra spártha againn.
+11841335	Táim ag dul.
+11841341	Ba mhaith liom do thuairim a cloisteail.
+11841343	Tá sé comh árd agus a athair.
+11841350	Ní hé sin an rud a thaitníonn liom i ndáiríre.
+11841352	Tá Sami ina suí ar an tolg.
+11841407	Tá Tom díreach ar ais ó obair.
+11962909	D'ith mé an t-arán.
+11962913	Cé a bhí ag ithe an aráin?
+12042863	Chuaigh Ziri a luí.
+12042869	Tá tuirse ar na gceoltóirí.
+12042870	Tá na ceoltóirí tuirseach.
+12093574	Suí síos anois.
+12093617	Suí síos, a Thomáis.
+12139019	Níl aon mhac agam.
+12139024	Cá fhad atá an Níl?
+12197441	Cheannaigh m'athair bó.
+12197453	Tá tú ar meisce, Tom. Isteach sa tacsaí leat! Rachfaimid abhaile.
+12197455	An raibh tú ag cóisir Thom?
+12198168	Is cuma cé a thosaigh an argóint nó cén fáth.
+12198169	Inis léi go bhfuil mé do mo bhearradh féin.
+12198170	Is dócha go mbuafaidh Tom.
+12228593	Ceannóidh tú an leabhar inniu.
+12245327	Táim ag súil leis an sneachta.
+12245328	Táim ag dúil leis an sneachta.
+12245330	Táim ar bís faoin sneachta.
+12338037	Ní maith liom fínéagar.
+12353404	D'óladh mé a lán beorach.
+12353424	Dhiúltaigh Tomás an conradh a shíniú.
+12365435	Tá sí anseo!
+12369180	Tá an clár seo faoi phiongainí.
+12388616	An bhfuil teilifís sa seomra freisin?
+12445483	Ghoid duine éigin rothar Thomáis.
+12446302	Cén dath atá ar an ghrian?
+12446317	Cé mhéad scuadcharr a chonaic tú?
+12621075	Ceannóidh mé leabhar nua.
+12819678	Bhí an oíche fuar.
+12998575	Cá bhfuil mo ríomhaire pearsanta?
+13064676	Ní le brú ná le cur faoi chois a mhúnlófar ár dtodhchaí ach tríd an bpróiseas daonlathach a chur i bhfeidhm go foighneach, trí mheon dearfach an chomhaontaithe, agus an tsaoirse a urramú.
+13123848	Glóir don Úcráin!
+13158747	Conas is féidir linn muid féin a chosaint ar choróinvíreas?
+13204642	Níl Pápa againn!
+13249266	Seasaim leis an Téaváin.
+13249287	Táim go hainnis ag an bpéinteáil.
+13249289	Táim go dona ag an bpéinteáil.
+13652288	Níor gineadh an abairt seo le IS.
+13652290	Mharaigh sé mé.
+13652294	An bhfuil a fhios agat cad a bhfuilim ag caint faoi?
+13652296	An bhfuil a fhios agat cad a bhfuil mé ag caint faoi?
+13652300	Tá na cait bhána go hálainn.
+13652306	Táim tar éis mo chuid obair bhaile a chríochnú!
+13652307	Tá mé tar éis mo chuid obair bhaile a chríochnú!
+13652311	An bhfuil zú sa pháirc sin?
+13671939	Níl mé i mo chónaí i Heilsincí.
+14088670	Ar an drochuair, níl ticéad agam.
+14098112	Lean mé ar aghaidh.
+14098115	Tá uathachas orm.
+14098139	Níl tábhacht leis.
+14099070	Tá an mhatamaitic deacair.

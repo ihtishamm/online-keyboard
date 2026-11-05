@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+344289	Viirpuu hekk oli täis varblaste agarat säutsumist.
+344670	Lõpuks jõudsime välja kompromissile.
+345059	Tema plaan oli nii pöörane, et võttis meid keeletuks.
+346650	Kaenlaalused olid higised.
+358241	Ma ei taha piirata oma tegevust ainult ühe firmaga
+373135	Temast oli mõistlik end sellega mitte siduda.
+447850	Hr Smith eksis tihedas udus teelt.
+466849	Minu pojal on halb tervis.
+466855	Ma läksin üksinda metsa.
+467529	Ta lükkas mütsi kuklasse.
+467585	Töö kaunistab inimest.
+468539	Oletame, et ma tulen.
+469001	Ta jättis kohtumisele minemata.
+469131	Ta on minu õde.
+469153	Pärast tööd läksime jalutama.
+469376	Eksamit edukalt sooritatud, sõitis ta koju.
+469385	Mere ääres on praegu üle kahekümne kraadi sooja, mägedes on aga alla kümne kraadi.
+469386	Sinu jaoks on mul alati aega.
+469437	Praegu on päevad kõige pikemad ja ööd kõige lühemad.
+524549	Selle ettevõtte tugevuse aluseks on tulevikku suunatud strateegia.
+620513	Nad liikusid kiiremini kui galopeerivad hobused.
+620519	Mida varem me alustame, seda varem me lõpetame.
+620531	Aegajalt ta külastab mind.
+620537	Järgmisel laupäeval olen ma vaba.
+621660	Kus lapsed on?
+621666	Tema uus romaan ilmub järgmisel kuul.
+676660	Need, kes surma igatsevad on haletsust väärt, veelgi haletsusväärsemad on aga need, kes surma kardavad.
+746741	Nad tahtsid pulmapilti Eiffeli torni ees.
+948478	Ma olen Kylie Minogue'i uskunud alates 12. juunist 1998.
+949058	See kell on palju parem kui too.
+949059	Alati kui me kohtume kurdab ta oma naise üle.
+949453	See on minu meiliaadress.
+956038	Maja Keuc on hea laulja.
+956043	Sa peaksid magama.
+956049	Phoenix on Arizona osariigi pealinn.
+956257	Kes te kõik olete?
+956264	Ann on väike tüdruk.
+956265	Ma otsin sooja villast seelikut.
+956266	See on Brian Rock.
+956663	Mu seelik on liiga pikk.
+956666	Nagu ma arvasin, ta on neitsi!
+956671	Me naersime ja naersime.
+957318	Ma sooviksin selle linna kaarti.
+957336	Ma olen üliõpilane.
+957341	Eile sadas lund.
+957348	See on minu tütar.
+957359	Kes see on?
+957369	Me lähme õhtul Havaile.
+957378	Kes on roolis?
+957380	Ega sa ometigi ei eksi ju.
+957572	Mul ei ole kuigi head sõnaraamatut.
+1350036	Tema ei ole rikas ega kuulus.
+1403737	Sul poleks olnud tarvis kiirustada.
+1403761	Misako abiellus eelmisel juunikuul kanadalasega.
+1403778	Mu vend elab väikeses külas.
+1420582	Isa sõidab tööle.
+1440524	Kuu on Maa looduslik kaaslane.
+1566288	Me arvame, et on aeg rohkem naeratada.
+1566293	Ära noid aknaid lahti tee.
+1566305	See on pikk jutt.
+1566312	Kas te olete selle ettepaneku poolt või vastu?
+1566326	Asi ei ole seda väärt!
+1566345	Ma ei leia iial tõelist armastust.
+1567145	Temast sai pianist.
+1567149	Tal oleks see õnnestunud, oleks ta vaid proovinud.
+1567151	Mulle meeldib astronoomia.
+1567181	Kui ta naeratas, nägid lapsed tema pikki halle hambaid.
+1583595	Mina tahan ka!
+1800935	Elu on ilus.
+1801035	Ma kardan maavärinaid.
+1817839	Siin on minu süda.
+1984148	Kaheksajalg Paulil oli õigus.
+1997783	Kus nad on?
+2346901	See on minu arvuti.
+2431798	Ma olen pärit Eestist.
+2431811	Nüüd, ma olen hõivatud.
+2432887	Ma sündisin siin.
+2432889	Minu ema armastab muusikat.
+2432895	Joonlaud on lühike.
+2439073	Ma ei taha töötada nendes tingimustes.
+2522110	Täna õhtul öötaevas, tähed säravad väga eredalt.
+2536118	Minu isa on arst.
+2550468	Kus sa praegu elad?
+2577874	Mõtlen, järelikult olen.
+2594230	Kas see on täkk või mära?
+2628822	Selle pimeda klaverimängija esitatud lugu tekitas mu hinges sügava puudutuse.
+2633401	Maria on raamatukoi.
+2653732	Emily kirjutab kirja.
+2653735	Ma elan Kataris.
+2673905	Ta tahab saada lauljaks.
+2684323	Ma töötasin selles tehases.
+2688104	Minu sõbrale meeldib šokolaadijäätis.
+2690418	Lähme joome teed ja sööme šokolaadi!
+2692682	Ma olen väga rõõmus, et sellel lausel on nii palju tõlkeid juba.
+2692683	Mida vanemaks ma saan, seda vähem ma saan aru.
+2694555	Ma hakkan sulle helistama igal hommikul.
+2700140	Head ööd, Tatoeba. Näeme homme.
+2709535	Ma armastan kõiki marju, kuid eriti maasikaid.
+2709540	Karp oli maasikaid täis.
+2709579	Ma arvan, et me peaks kõik koos minema.
+2709582	Ma arvan, et me peaks politseisse helistama.
+2709598	Ma pean õppima.
+2709601	Ma vaatasin telekat õppimise asemel.
+2709615	Ta on hea õpilane.
+2709620	Temast saab hea abikaasa.
+2709674	Mõned inimesed arvavad, et hasartmängude mängimine on patt.
+2710672	Koer kohtub krokodilliga. Krokodill ütleb koerale: " Tere, kirbukott!" ja koer vastab:" Tere, käekott!"
+2710724	Heasüdamlikud naised on alati ilusad, kuid ilusad naised pole alati heasüdamlikud.
+2710747	Mesilased lendavad lillelt lillele.
+2710751	Lillepood on siin läheduses.
+2719243	Sul võib olla hea põhjus arvamaks, et su noorus on läbi.
+2719417	Taevast vaadelduna tundus jõgi hiiglasuure maona.
+2719656	Mitmuses hobune on hobused.
+2719657	Kas sa oskad hobusega sõita?
+2723690	Brasiilia on Lõuna-Ameerika suurim riik.
+2732624	Ma tahan saada keeleteadlaseks.
+2736028	Lapsed on meie elu lilled.
+2755381	Me reisime järgmisel kuul Eestisse.
+2774977	Millised su mõtted on?
+2786243	Ta on inglise keele õpetaja.
+2786343	Vampiir imeb minu verd.
+2786344	Ma ei ürita laiselda.
+2786467	Ma tahan õuna.
+2786473	Kas sa oled minu sõber?
+2786481	Minu tüdruksõber on väga ilus.
+2786489	Ma tahan raamatut.
+2786775	Ma tahan raamatut. Kus on raamatupood?
+2786790	Ma olen puu all.
+2786795	Valge kass on puu all.
+2786811	Ma olen õnnelik.
+2786818	Ta kirjutas kirja.
+2786836	Ma olen väga häbelik.
+2786841	Ma olen kodus.
+2786853	Mul on maja.
+2786858	Delfiinid on väga intelligentsed.
+2786861	See raamat on ülekaalulisuse kohta.
+2787017	Ma pean nüüd koju minema.
+2787027	Kas sa oled valmis minema?
+2787047	Raamat on riiulil.
+2787050	Kus on köis?
+2787057	Kas ma pole ilus?
+2787089	Ma olen hiinlane.
+2787100	Lõvi on džungli kuningas.
+2787256	See on väga väike raamat.
+2787259	Mul ei ole midagi süüa.
+2787261	Leedu on Euroopa Liidu liige.
+2787274	Linn on ilus.
+2787371	Karu sööb õuna.
+2787373	Kass loeb raamatut.
+2787379	Nad söövad õunu.
+2788188	Kas ma võin su vanade raamatute kogu vaadata?
+2788226	Eesti rahvaarv on umbes 1,3 miljonit inimest.
+2788501	Me ei saa kunagi teada.
+2794434	et tahtsin nagu temaga olla ja jätsin sõbrannad kus kurat
+2801317	Tom tahab sind näha nii ruttu kui võimalik.
+2801323	Tom tahab teada rohkem Mari minevikust.
+2801326	Tom tahab juua tassike kohvi.
+2801340	Kas seal on keegi?
+2801347	Kas sa tead kedagi Tomi nimelist?
+2801357	Ma ei tundnud sind ära.
+2886217	Kas sul sõnastikku on?
+2900411	Ma joon köögis vett.
+2900428	Münt on hõbedane.
+2914778	Ma tahan raamatu kirjutada.
+3004522	Ma olen haige.
+3006385	Ma teadsin, et ta valetab.
+3103669	Sinu surm on valutu.
+3167816	Nad on imeline.
+3254434	Ta unustas lampi välja lülitada.
+3325897	Ah? Oh, vabandust.
+3325900	Nad peavad kärpima kulusid.
+3325902	Noh, mulle meeldis maal töötada.
+3325914	Pood sattus olema eile täis.
+3325929	Kui sul on igav, soovitan minna kinno.
+3325955	Vesi on vedelik.
+3325968	Künkalt võime näha kaunist merevaadet.
+3325987	Mul ei ole hetkel raha kaasas.
+3399852	On mitu tegurit.
+3399855	Juba on hommik.
+3401542	Ma pean magama minema.
+3401681	Sul on palavik.
+3402186	Palun laula laulu.
+3402188	Ma tahan laulu laulda.
+3402672	Esimese silmapilgul paistis küsimus kerge olevat.
+3452033	Kas sul on leiba?
+3480451	Nad on liiga purjus.
+3480456	Tom ei räägi kodus prantsuse keelt.
+3480523	Tema poeg on kaheksa aastane.
+3480529	See oli tema esimene töökoht.
+3651617	Neil on suhkrut.
+3651620	Teil on vett.
+3709972	Mul on kaks autot.
+3710000	Mul on kaks poega.
+3710180	Mul on kolm nõbu.
+3772452	Tööline puhastab oma tööriistu.
+3772572	Ma armastan prantsuse keelt.
+3772581	Ma tahan elada Itaalias.
+3772594	Ma teeksin sinu heaks kõik, Tom.
+3772606	Aitäh abi eest!
+3772608	Ma ei teadnud, mida talle öelda.
+3772653	Sa pead seda praegu tegema.
+3834002	Lind on taevas.
+3834079	Su käekiri on loetamatu.
+3855877	Probleem on selles, et ma ei mäleta, kuhu ma oma auto parkisin.
+3855888	Kus on baar?
+3855891	Ma ei arvanud, et sa välja ilmud.
+3855911	Tom on sotsialist.
+3855927	See on väga suur sotsiaalne probleem.
+3855942	Tema käitumine ei ole sotsiaalselt vastuvõetav.
+3855943	Tema käitumine ei ole sotsiaalselt aktsepteeritav.
+3855960	Ma armastan maasikaid.
+3855980	Vähem on parem.
+3856109	Hobune võib joosta väga kiiresti.
+3856112	Palun andesta meile.
+3856123	Kas sa ütleksid Tomile, et ma astusin läbi?
+3856139	Kaks naist laulavad.
+3856146	Kui homme sajab, siis ma ei lähe.
+3858729	Kui vanad olid su lapsed, kui te Bostonisse kolisite?
+3858740	Sa pead reegleid järgima.
+3858743	Kas Tom on vasaku- või paremakäeline?
+3858748	Ma tahan pitsat süüa.
+3858750	Ma tahan Tomi häält kuulda.
+3858771	Sa pole minust parem.
+3858772	Sa peaksid ütlema, mida sa mõtled.
+3858774	Sul on väga hea mälu.
+3858785	Sa suudad ju seda?
+3858786	Sa suudad seda, eks?
+3858807	Kuidas sa selle ära arvasid?
+3858810	Kas sa teed seda?
+3858815	Kes selle tõi?
+3858817	Kas see on vale?
+3858827	Karp oli tühi.
+3858828	Elu pole kunagi lihtne.
+3858839	On kuum päev.
+3858842	Me teame seda nüüd.
+3861138	Mulle meeldib hommikusöögiks süüa mune, kuid mu õde eelistab kaerahelbeputru.
+3861161	Ma arvasin, et sa tahad mängida.
+4223221	Kas sa tahad olla minu sõber?
+4223227	Ma tunnen end halvasti.
+4303560	Kas sulle meeldib õppida?
+4340532	Sa oled kiire õppija.
+4340546	Mu silmad ei toimi enam väga hästi.
+4340551	Kontrolli, kas gaasikraan on suletud.
+4340562	Ära süüdista mind, Tom.
+4340597	Venetsueela aktsendiga harjumiseks kulus mul tükk aega.
+4340610	Jah. Õhk on väga niiske.
+4340612	Talle meeldib raamatuid lugeda.
+4368425	Nägid sa seda päikesetõusu? See oli päris ilus.
+4424998	Ma vabastan su.
+4425003	Palun friikartulid ilma äädikata.
+4425048	Kass, mis sa leidsid, on minu oma.
+4425145	Seemned on idanenud.
+4425147	Ta on ainult inimene.
+4425161	Keegi ütles mulle, et ma ei peaks sind usaldama.
+4425162	Jalgpallimängija tegi suure vea.
+4425187	See on tunnustatud Ameerika kirjanik.
+4425192	Mary on mu naine.
+4425279	Ma olen kindel et ma olen temasse armunud.
+4425788	Ta ostis kana.
+4427191	Su jalatsid on siin.
+4427205	Enne suren nälga, kui töötan tema alluvuses.
+4427213	Ken saabus Kyotosse.
+4427214	Kas Tomile meeldivad tomatid?
+4427215	See sviiter maksab üle viiekümne dollari.
+4427279	Mul on selle kohta vist teooria.
+4427280	Arvan, et mul on selle kohta teooria.
+4427284	Poisid on mõnikord veidrad.
+4427285	Poisid on mõnikord naljakad.
+4427292	Ma tunnen seda.
+4427995	Sulle on sõnum.
+4428033	Kes teda teavad, neile ta meeldib.
+4428068	Nii kaugele minevikku kui ma suudan mäletada, on mul alati olnud mõtteid ja ideid, mis tol hetkel tundusid et teevad mind unikaalseks.
+4428072	Ta oli esimene mees, kes ronis Fuji mäe otsa talvel.
+4428371	Üks lastest küsis ühel päeval: "Kust tulevad lapsed?"
+4428703	Tunne ennast kodus.
+4429162	Müra tõttu ei suutnud ma end kuuldavaks teha.
+4429864	Sa eksid: ta mängib kontrabassil, mitte tromboonil.
+4430395	Pane oma suu kinni.
+4430552	See pole ainus asi, mis ma tegema pean.
+4430559	Tal on päikeseprillid.
+4430798	Kas sa oled Tomile öelnud?
+4430841	Bussid käivad iga kümne minuti tagant.
+4430853	Ta käib juuksuris kolm korda kuus.
+4430856	Ta käib harva kirikus.
+4433600	Küsi Tomi käest.
+4433608	Tom vihkab mind ikka veel.
+4436721	Ütle mulle mis ma tegema pean.
+4436723	Tom vaarus uksest välja.
+4436726	Kas sa jõudsid midagi oma tööst ära teha?
+4437784	Las ma vaatan mis me teha saaksime.
+4437823	Kas sa sööd riisi iga päev?
+4439954	Miks sa tundi hilinesid?
+4439970	Mul ei olnud kuigipalju valikut.
+4439992	Tom käib harva kirikus.
+4439994	Palun vannita lapsed.
+4440038	Sulle oleks Boston meeldinud.
+4440050	Kas ma pean sulle tagasi maksma?
+4440058	Kas ma saaksin su tähelepanu?
+4440060	Ehk näeme veel.
+4440074	Tom hoidis Mari oma käte vahel.
+4440083	Keegi ei usalda enam Tomi.
+4440089	Tomil oli vale aadress.
+4440102	Kus mu sinine õnnemüts on?
+4441479	Me lahendame selle koos ära.
+4441483	Me saame sinuta hakkama.
+4441485	Tom on ohtlik, onju?
+4442359	Lahku minna poleks turvaline.
+4442376	Ma ei ole kunagi Tomi naist näinud.
+4442412	Tom on antisemitist.
+4442422	Kukkusin trepist alla ja lõin pea ära.
+4442436	Jõudsid oma sihtkohta.
+4449535	Ma viin su koju.
+4449584	Ma aitan sind mõne hetke pärast.
+4450122	Ma tegelen Tomiga ise.
+4450124	Ma olen koos Tomi ja Mariga.
+4450125	Ma parem lähen ja räägin Tomiga.
+4450126	Ma tahaks proovida.
+4450138	Kuidas sul täna õhtul läheb?
+4450163	Ära jäta mind enam kunagi.
+4450168	Kas see kõik sobib sulle?
+4450172	Tom jättis kõik oma asjad sulle.
+4592767	Mine tagasi tööle.
+4649003	Võta oma müts peast ära.
+4649013	Tom on sõbralik.
+4649024	Tal on mõned sõbrad.
+4649046	Meil pole teda vaja.
+4649071	Kiirabi saabus koheselt.
+4649079	Kas see kiri peab olema kirjutatud inglise keeles?
+4649133	Tal oli raskes haigus 1823 aasta sügisel.
+4649142	Ma tahan neid siia.
+4681089	Tom rääkis vaikselt Maryga.
+4681090	Need on minu püksid.
+4681098	Ma kiusan ainult.
+4681122	Ma ei suuda otsustada, kas ma olen õnnelik või kurb.
+4681130	Miks peaks Tom tahtma midagi sellist teha?
+4681153	Tom on vaevu elus.
+4681158	Nad saabuvad õhtul.
+4681164	See läks minu arvates hästi.
+4681170	Tomil on muutust vaja.
+4689581	Te istute mu toolil.
+4689594	Kas see on su esimene reis välismaale?
+4689607	Inimesed, kel on puue, ei talu, kui neid haletsetakse.
+4690569	Arvatavasti on nad ameeriklased.
+4690570	Kes on parem autojuht?
+4690573	Tom suri eelmisel aastal.
+4690594	Ma ajan habet igal hommikul.
+4691675	Mul on kahju...
+4696577	Kõik on valmis.
+4696580	Te võite alustada.
+4696596	Mulle ei meeldi su ettepanek.
+4696604	Seal taga pole midagi.
+4696605	Kas sa liitud meie klubiga?
+4721235	Mu pastakas sai tühjaks.
+4721237	Sul on peapõrutus.
+4721244	Mul pole sellega midagi pistmist.
+4721285	Kas sa näed seda?
+4721302	Rong läheb kell üheksa välja.
+4721305	Ma ei saa sind endaga kaasa võtta.
+4721330	Tom on Mary pärast väga mures.
+4721347	Mulle meeldib see, mida sa tegid.
+4721405	Ma võiksin sulle Tomi kohta selliseid asju rääkida, mis sind üllataksid.
+4721418	Me peaksime Tomile appi minema.
+4789293	Mina oleksin sellises olukorras uhkusest üsna puhevil.
+4851799	Ma ei tunne sind.
+5076878	Talvel sajab lund.
+5076897	Ta kaotas oma vanemad lennuõnnetuses.
+5076901	Susiel on kena naeratus.
+5076905	See on väga maitsev.
+5076926	Tom arvab, et ta suudab maailma päästa.
+5076930	Ma räägin palju.
+5076944	Mul pole palju aega. Kas sa saad selle korda ajada?
+5076953	Ma vihkan selliseid mehi.
+5076957	Tom ja Mary läksid matkama.
+5076974	Ma teadsin enne sind.
+5077029	Tom valetas oma hinde kohta.
+5077030	Kui vana on kõige vanem inimene, keda sa tead?
+5077056	Sellel päeval sadas vihma.
+5077066	Ma avasin ühe silma.
+5077076	Ma märkasin Tomi kohe.
+5077085	Kuidas see üldse võimalik on?
+5077097	Ma tean, et see on sinu jaoks raske.
+5077101	Tom rääkis sellest oma sõpradega.
+5077111	Mitte keegi ei tõusnud püsti.
+5077113	Ma ei tea, mida temaga ette võtta.
+5077114	See on saladus. Ma ei saa sulle rääkida.
+5077118	Ma ei mäleta, millal ma Tomi viimati nii õnnelikuna nägin.
+5077119	Pane uksed lukku.
+5077121	Tundub, et raha on otsa saanud.
+5077925	Mulle meeldib klaverit mängida.
+5077926	Eesti elanikkonna suurus on umbes 1,3 miljonit inimest.
+5078503	Mõnikord väsitab Pariis mu ära, aga Brüssel tüütab mind tihti ära. Seetõttu elan ma nende kahe vahel.
+5078525	Mary neiupõlvenimi on Jackson.
+5089091	Mitte keegi ei tulnud.
+5089110	Mitte midagi ei juhtunud.
+5092113	Saksamaal on kaks pealinna.
+5092115	Tom on kiirem kui sa arvad.
+5092160	See on parem kui mitte midagi.
+5092183	Me mängime igal õhtul malet.
+5092213	Ma kuulsin Tomi duši all laulmas.
+5092352	Ta kukkus jõkke.
+5092496	Nüüd on isa aias.
+5092499	Oh kui meil oleks aed!
+5092514	Thomas ei oodanud Mariat.
+5092525	Thomas ei ole rikas.
+5092539	Sa ei kutsunud mind.
+5092541	Te ei kutsunud mind.
+5092549	Thomase perekond on vaene.
+5092559	Kas sinu naine töötab?
+5092580	Me ootasime kogu öö.
+5092866	Ma kukkusin jalgrattalt maha.
+5092881	See juhtus kolm aastat tagasi.
+5092882	See on tühi.
+5092890	Kas Tom töötab ikka siin?
+5092904	Tom valmistab õhtusööki.
+5093073	Roomlaste väed olid väsinud.
+5131506	Inimene soovib alati olla parem kui keegi teine, ainult mitte parem kui oma poeg.
+5131510	Võit ja kaotus on vend ja õde.
+5134496	Tom oli siin kõige parem ujuja.
+5134514	Tom loodab, et sa saad peole tulla.
+5134519	See on siin tavaline suhtumine.
+5139176	Lapsed istusid lõkketule ümber ja kuulasid, kuidas Tom kummituslugusid rääkis.
+5139178	Ma ei kanna su vastu vimma.
+5139194	Mary lõi Tomi munadesse.
+5139212	Lootus ei ole strateegia.
+5139235	Ma tunnen oma kassist puudust.
+5139237	Ma olin noor ja mul oli raha vaja.
+5141085	Mõned inimesed arvavad, et president kulutab liiga palju aega reisimisele.
+5141093	Ma seletaksin seda sulle, aga su aju plahvataks.
+5848047	Silm silma, hammas hamba vastu.
+5974274	See teeb selle isegi veel erilisemaks.
+6766914	Mul on vaja mõningaid muudatusi teha.
+6766916	Tom pani oma maja põlema.
+6766923	Tom ei helista enne tagasi, kui koosolek läbi pole.
+6766925	Ta on õpilane.
+6766926	Ma arvasin, et Tom õpib prantsuse keelt.
+6766927	Kas sa soovid veel?
+7014393	Olen üritanud üle saada oma tagasihoidlikkusest, aga asjata.
+7782215	Tom saabus liiga hilja.
+8275724	See ei ole tema käekiri.
+8437547	Sa oled haige!
+8488814	Mina olen hea isa.
+8490347	Katel on koer.
+8497563	Tahaksin saada inglise keele õpetajaks.
+8716175	Täna on Tomi sünnipäev.
+8717031	Kas ma võin selle õuna ära süüa?
+8857042	Mida võime me sinult oodata?
+8895944	Kas ma olen sinu sõber?
+8916792	Toomas ei ole minu poeg.
+8916793	Kus sa neid nägid?
+8916797	Kirjutuslaua peal on õun.
+8923081	Ma olen siin töötanud kümme aastat.
+8923087	Mind ei hirmuta mitte miski.
+8952630	Ta müüb Prantsusmaal autosid.
+8952807	Rooma oli maailma pealinn.
+8972293	Maril on peavalu.
+8972302	Kui sügav see on?
+8972312	Minu ema sõbrad on minu sõbrad.
+8989208	Toomas ei joo.
+9003357	Toomas kutsus mind oma majja.
+9072137	Ta kõndis läbi metsa.
+9072165	Portugal ei ole Prantsusmaale nii lähedal kui Hispaania.
+9072166	Miks sa üksi elad?
+9072174	See on tema maja.
+9112730	Kas sa armastad mind ka?
+9112767	Prantsuse keel on mu emakeel.
+9112947	Ma lähen Bostonisse.
+9112997	Tom istus, et oodata.
+9113499	Kas ma saaksin veel piima?
+9113545	Ta ehitas uue maja.
+9113705	Ma olen oma profiilipilti vahetanud.
+9113742	Vabandust, et ma sind üles äratasin.
+9113819	Sa tulid toast välja.
+9113895	Ma olen ilusam kui sina.
+9114042	Me pole vaenlased.
+9114217	Ärge pange oma arvutit kinni.
+9114333	Mis on raamatu pealkiri?
+9114343	Hiina on Jaapanist kakskümmend korda suurem.
+9114444	Kus sa tahad elada?
+9114447	Ma arvan, et see jutt on tõsi.
+9114521	Ma saatsin sulle e-maili.
+9114586	Kas sa tegid juba oma kodutööd?
+9114708	See karp on puidust.
+9114713	Päike loojub varsti.
+9120462	Sa pead palju raamatuid lugema.
+9120471	Kõik saavad vigu teha.
+9125321	Tom sööb aeglaselt.
+9125324	Ma vihkan oma vanemaid.
+9125331	Ma olen uudishimulik.
+9125413	See on ilus lill.
+9125450	Millal su sünnipäev on?
+9125690	Mul on kolm nooremat õde.
+9126312	Uuringus ilmnes uus koroonaviiruse tüsistus.
+9130293	Tõin talle vett.
+9130308	Toomas tahab klaasitäit vett.
+9141079	Seda sõna ei kasutata tihti.
+9141114	Kuhu nad lähevad?
+9141140	Miks Tom vara koju läks?
+9141146	Ma võtan vihmavarju kaasa.
+9141150	Ma ei võtnud vihmavarju kaasa.
+9141209	Ma ei meeldi sulle vist väga, kui sa isegi ei vasta mu sõnumitele.
+9141283	Ma ei suuda otsustada, kas rääkida neile sellest peost või mitte.
+9141490	Ma arvan, et sa ei saanud küsimusest aru.
+9141694	Kuu tuli pilvede tagant välja.
+9171566	Mulle ei meeldi kurgid.
+9171584	Mu isa on advokaat.
+9183428	Tom näitas meile linnas ringi.
+9188930	Tomi keldris on piljardilaud.
+9189019	Millal see tempel ehitati?
+9189203	Palun kasutage allkorruse vannituba.
+9189214	Mu vanem vend tahab välismaal õppida.
+9189217	Mu vend tahab välismaal õppida.
+9189240	Ta elas mitu aastat välismaal.
+9189255	Me plaanime oma mesinädalad välismaal veeta.
+9189271	Mitu ellujäänut oli seal?
+9189274	Mitu ohvrit oli seal?
+9190292	Kui Tom helistab, mis ma peaksin ütlema?
+9203723	Kuulsin, et Tomil olevat üsna palju raha.
+9203777	Ma arvan, et ma ei armasta sind enam.
+9203817	Kõik nõustusid Tomiga.
+9203889	Tom ütles, et keegi teine ei proovinud seda teha.
+9203902	Tom ütles, et keegi teine ei saanud teda aidata.
+9203937	Tom ütles, et keegi teine ei olnud näljane.
+9203962	Tom ütles, et keegi teine ei tahtnud seda teha.
+9259701	Me peaksime pidanud olema rohkem tähelepanelikumad.
+9289358	Kui kaua võtab aega rongijaama jõudmine?
+9289408	Kas ma tohin küsimuse esitada?
+9289514	Võta kingad jalast.
+9289555	Sa ei saa aru.
+9929285	Kas oled väsinud?
+9929355	See lause on väga huvitav.
+10008552	Mul on külm.
+10046899	Kell on juba üksteist.
+10046926	Kell on viis.
+10046931	Kell on kakskümmend.
+10046934	Kell on seitse.
+10046951	Kell on veerand kümme.
+10109004	Pole tänu väärt!
+10168487	Kas see on saksa keel?
+10168493	Kas see on ukraina keel?
+10189463	Ma ei joo kunagi teed.
+10243655	Võid meie juurde jääda.
+10751181	Me oleme Itaalias.
+10785417	Mulle ei meeldi üllatused.
+10785798	Seda programmi ei saa DOS-režiimis käivitada.
+10792826	Kell on pool üheksa.
+10815119	Lastele meeldib jogurt.
+10843984	Meil pole paberit.
+10849990	Minu perekond elab linnas.
+10852473	Lisan selle oma soovide nimekirja.
+11264152	Vanamehel oli pikk hall habe.
+11276095	Tere õhtust, Chicago.
+11276127	On see tõsi?
+11276155	Sa räägid hästi.
+11276209	Kas sa räägid itaalia keelt?
+11276489	See restoran on liiga kallis.
+11277215	Ma räägin kiiresti.
+11277371	See kirss on tumepunane.
+11277386	See on sinu probleem.
+11277473	Sa lubasid mitte naerda.
+11277487	Kas sa mäletad seda filmi?
+11278235	See pole üldsegi hästi.
+11279187	Mees on tugev.
+11279198	Nad nägid seda ka.
+11279904	Ma juba teen seda.
+11280139	Me teadsime seda ette.
+11280153	See kõik oli olnud üks suur viga.
+11280169	Ma helistasin politseisse.
+11280183	Kõik asjad, mida ma ostsin, on juba kohale jõudnud.
+11280287	Pea meeles, et sa oled surelik.
+11280303	Nad petsid meid.
+11280318	Lund on sadanud.
+11280319	Tom sündis Marsil.
+11280352	Siin on teie koer.
+11280441	Mulle meeldib su koer.
+11280505	Kus su koer on?
+11280596	Koer haukus postiljoni peale.
+11280671	Ma olen türklane.
+11280675	Türgi oli tugevam kui Kreeka.
+11280779	Tom tahab juua.
+11280789	Ma kardan karusid.
+11280793	Kui kaua karu magab?
+11280795	Jahimees tulistas karu.
+11280854	Jääkarud on valged, sest nad on vanad karud.
+11280966	Mul pole sulle midagi öelda.
+11281007	Seda on liiga raske seletada.
+11281032	Mida sa ootasid?
+11281033	Tom on mõrvar.
+11281036	Ma armastan suve.
+11281318	Kas sa räägid?
+11281327	Kas sa räägid inglise keelt?
+11281354	Kellega ma räägin?
+11281359	Ta räägib portugali keelt.
+11281371	Me räägime kodus prantsuse keelt.
+11281375	Ma räägin hispaania keelt.
+11281390	Ta räägib nagu õpetaja.
+11281418	Saksa, hollandi, norra ja inglise on germaani keeled.
+11281434	Minu vastused olid õiged.
+11281490	Ma tahaksin läti keelt õppida.
+11281492	Miks su pere läks Lätti?
+11281508	Poola teadlased töötavad Aafrikas.
+11281528	Ma olen bulgaarlane.
+11281550	Hispaania keel on lihtne.
+11281588	Kas sa õpid inglise keelt?
+11281619	Ma õpin ukraina keelt.
+11281624	Ma armastan Ukrainat.
+11281642	Tom on šamaan.
+11281663	Juuksur lõikas ta juukseid.
+11281684	Sinu ema on pornostaar.
+11281687	Ma olen üksikema.
+11281701	Mida su ema ütleks?
+11281704	Kas sa oled tema ema?
+11281705	Mu ema lõikas noaga juustu.
+11281717	Tomil on oma ema silmad.
+11281738	Jah, see meeldib mulle.
+11288369	Lucy on ameeriklane.
+11288416	Tema on väljavalitu.
+11288497	Kes saab seda vältida?
+11288608	Kuul ei ole õhku.
+11288628	Ta ei pea seda tegema.
+11289171	Me oleme siin.
+11289196	Ja kus sina olid?
+11289200	Kõik oli hästi.
+11289304	See pole väga lihtne.
+11289385	Kes see võib olla?
+11289427	See on täpselt see, mida meil vaja on.
+11289453	Nüüd me teame miks.
+11289478	Ja mis siis?
+11290420	See ei ole teie oma.
+11290465	Mina armastan sind ka.
+11290470	Räägi minule temast.
+11290515	Ma sõin oma võileiba.
+11290551	Mul ei ole raamatuid.
+11290553	Tee on õnnetuse tõttu blokeeritud.
+11290593	Arst tuli otsekohe.
+11290687	Minu isa on Aafrikas.
+11290726	Ma proovisin kõike.
+11290739	Ma vihkan kõike.
+11290829	Vaesusest hoolimata kasvatasid nad üles seitse last.
+11290903	Ma lähen Ateenasse.
+11290958	Ateena ja Korintose afrodisiaakumid olid väga populaarsed.
+11291818	Kus on tempel?
+11291934	Kes kus oli?
+11294746	Ta tahaks puhkusele minna.
+11294755	Ma ei võitle.
+11294761	Ma ei saanud sellest päris aru.
+11297968	Tomile ei meeldi peeglisse vaadata.
+11298165	Mida Tom just tegi?
+11298166	Kas sa arvad, et Tom on ikka veel purjus?
+11298252	Ma ei suuda seda uskuda!
+11298424	Ma elan Kasahstanis.
+11298446	Näita mulle kõike.
+11303128	See olen mina.
+11303134	Ma olin väga hea.
+11305857	Mõlemad vennad surid.
+11305910	Minge ilma minuta!
+11308385	Ta oskab selili ujuda.
+11308559	Kuidas see aitab?
+11308574	Tom tahab sulle rääkida sellest, mis juhtus.
+11308591	Minul ei ole seda.
+11308787	Kuidas koolis läheb?
+11308798	Nii nagu sina kohtled oma vanemaid, kohtlevad sind ka sinu lapsed.
+11308810	Kujutage ette, et teil on naine.
+11308835	Ma ei nõustu temaga kunagi.
+11308838	Ta on üsna entusiastlik, kas pole?
+11308839	Elu koosneb paljudest tegevustest.
+11308845	Tahaksin Pariisis olla.
+11308855	Mind huvitab ajalugu.
+11309543	Spree jõgi voolab läbi Berliini.
+11309577	Teie elukohas on palju järvi.
+11309827	See oli Tom, kes meile appi tuli.
+11309841	Kas ma võin hetkeks sinu kustutuskummi laenata?
+11310131	Lase mul minna!
+11310141	Kuna te selle saite?
+11310156	Ma tean neid.
+11310180	Miks ma pean seda tegema?
+11310208	Ta võttis enda kaamera välja.
+11310233	Tomil ja Maryl on väga vedanud, et nad elus on.
+11310309	Ta tuleb täna pärastlõunal.
+11310340	Ma vihkan metrooga sõitmist.
+11310349	Vaatasime üksteisele otsa.
+11310380	Olen õnnelik, et see nüüd läbi on.
+11310405	Treening on tühistatud.
+11310457	Kuu pole veel tõusnud.
+11310461	Enne abiellumist oli ta Bennett.
+11310475	Mulle meeldib su aktsent.
+11310480	Kui kaugel on järgmine küla?
+11313666	Kas unustasite mune osta?
+11313720	Tom küsis, kas ma nägin midagi.
+11313756	Maarja karistas oma tütart valetamise eest.
+11313794	Tom jõuab tõenäoliselt varsti siia.
+11317135	Olen juba öelnud, et ma ei tee seda.
+11317204	See valge päikesevari on tema oma.
+11317238	Minu klient on süütu.
+11317305	See on selle aasta viimane mäng.
+11317314	Kes on selle raamatu autor?
+11317328	Suur tänu söögi eest!
+11319209	Olen selle suhtes suhteliselt ükskõikne.
+11319219	Olin terve päeva kodus ja lugesin romaane.
+11319294	Kas me saame hetke puhata?
+11319315	Isegi Tom ei nõustunud.
+11319338	Kui palju need prillid maksid?
+11319366	Sooviksin kviitungit, palun.
+11319388	Hoian kõik oma telefonikviitungid selles karbis.
+11319392	Kas sina joonistasid selle?
+11319417	Ta ujub jões.
+11319421	Kaheksateist minutit hiljem oli lahing läbi.
+11319433	Ma ei tea, mida nad tahavad.
+11319439	Mul on täna õhtuks kohtumine.
+11319442	Minu teada on siin järve sügavaim koht.
+11319451	Tom kannab musta portfelli.
+11319677	Võta sina raha.
+11319685	Tom ei suudle enam kunagi oma naist.
+11320140	Kas sa saad tulla?
+11320226	Me olime erinevad.
+11320276	Mary ei mäleta, et ta seda oleks öelnud.
+11320288	Kui vana su vend on?
+11320311	Sellel nukul on suured silmad.
+11320328	Õpi oma keelt.
+11320336	Majas sees on väga jahe.
+11320450	Ma mõtlesin sama asja.
+11320465	Tom on huvitatud Prantsusmaa ajaloost.
+11320472	Tom arvab, et ta on teistest parem.
+11320486	Ma proovisin sind päästa.
+11320502	Sa võid lõpetada.
+11326175	Mis teile selle töö juures meeldib?
+11326205	Tema ema oli kunagi laulja.
+11326243	Kas sa oled väga näljane?
+11327329	Tom tulistas esimesena.
+11327334	Ta teatas Alžeeriast.
+11327349	Kui vana sa muidu oled?
+11327364	Politsei ei lasknud Tomil Maryga rääkida.
+11327698	Kas sa ei teadnud seda?
+11327704	Miks sa ei tulnud?
+11327707	Ma naudin hommikusöögi valmistamist.
+11328307	Minu õde on väga tark.
+11328311	Mul on väga tark õde.
+11330534	Kas ta on teie tädi?
+11330542	Nad kasutavad sind ära.
+11330594	Madudel on halb nägemine.
+11330616	Tom ei jätnud Maryle valikut.
+11330859	Mul on neli kassi.
+11330875	Ma pean selle võimalikult kiiresti lõpetama.
+11330898	Sami pussitas Laylat.
+11333717	See on nii hea.
+11333794	Kas te ikka veel otsite teda?
+11333799	Ta otsustas auto müüa.
+11333812	Ma ei tea, kas see on hea.
+11333844	Tom ei maga kirstus nagu enamik vampiire.
+11333898	Kas see on teie töötaja?
+11333911	Sa ei pea täna õppima.
+11334153	Nende auto möödus meie omast.
+11334168	Võtke prillid eest ja sulgege silmad.
+11334172	Euroopas on palju riike, mida tahaksin külastada.
+11334207	Tom kaotas oma naise seitse aastat tagasi.
+11337144	Mida Tom ja Mary täna teevad?
+11337748	Ta ärkas üles kell viis, nagu tavaliselt.
+11338150	Tom kirjutas oma romaani vanal kirjutusmasinal.
+11338186	Üksindus on iseseisvus.
+11339715	Šveits asub Prantsusmaa, Itaalia, Austria ja Saksamaa vahel.
+11349720	Kuidas su isal läheb?
+11349750	Parem lahku kohe.
+11349754	Miks Tom kasti ei avanud?
+11349774	Ma ei ole Tomi peale vihane.
+11349897	Olen juba piisavalt kuulnud.
+11349963	Soovitan teil kauem mitte oodata.
+11349970	Ta ei reageeri üldse.
+11350127	Lasteaialapsed jalutasid käsikäes pargis.
+11350129	See on imporditud toode.
+11351002	Ta ei tunne meist kedagi.
+11351008	Mida sa tahad?
+11351023	Ütles John ja tal oli õigus.
+11351802	Tom on nagu elevant portselanipoes.
+11351840	Tom kasutab alati korduvkasutatavat riidest kotti.
+11352481	Miks sa õpid?
+11352483	Miks sa nutad?
+11352490	Keegi ei tea miks.
+11352491	Miks ma naeran?
+11352494	Kindlasti, miks mitte?
+11354112	Kas sa tahad, et mina sõidan?
+11354127	Ma arvan, et Tom saab aidata.
+11354263	Tom on bussijaamas, ootab Maryt.
+11354265	Ta magas väljas, aga ma ei tea kus.
+11354274	Tom teab koertest palju.
+11354391	Ta tahtis temaga prantsuse keelt õppida.
+11354400	Ta elab selles majas.
+11354848	Nad istusid maha.
+11354907	Tom häiris mind.
+11354909	Millal plaanite töölt pensionile jääda?
+11354926	Loodan, et ta eksib.
+11354951	Palun näita mulle nimekirja.
+11354991	Palun sulge uks... väljastpoolt!
+11355009	Olen natuke väsinud.
+11355074	Mitte millestki ei saa midagi.
+11355112	Olen seda raamatut lugenud: See on huvitav.
+11355129	Kas sa peidad midagi, Tom?
+11355216	Kui kaua see ilus ilm kestab?
+11355250	Vanal mehel on suur varandus.
+11355319	Ma ei tea üldse, mis toimub.
+11355381	Kes selle tegi?
+11355493	Kuhu ma võtmed panin?
+11355529	Sellepärast me Tomi vallandasime.
+11355619	Ära ole vihane!
+11355622	Tavaliselt teen seda koos Tomiga.
+11355630	Tom mõtles sama, mida mina.
+11355654	Ta ei tule täna.
+11355667	Tegin seda ilma kellegi abita.
+11355671	Ta suudles mind ainult korra.
+11356177	Olen kindel, et nägin teda kaks aastat tagasi.
+11356205	Nad ei tea, mida rahaga peale hakata.
+11356213	Mul on hirm pimeduse ees.
+11356623	Kas meil oli see?
+11358971	Tom ei tahtnud mind uskuda.
+11358994	Tom vajab meie tuge.
+11359029	Mul oli hea idee.
+11362948	Ma ei tea, mis Tomiga juhtus.
+11362966	Tom ei näinud sind.
+11362987	Roller ei käivitu.
+11363034	Pulma on kutsutud palju külalisi.
+11363055	Kas sa arvad, et Tomiga saab kõik korda?
+11380348	Te olete koos minuga.
+11380365	Me lahkusime siis, kui oli liiga hilja.
+11380369	Ma loodan, et jääme ellu.
+11380378	Tal on sensuaalne suu.
+11380383	See on esimene lennuk, mis uues lennujaamas maandub.
+11380397	Ma kaotasin oma pagasi.
+11380403	Peate sisse minema ja sooja saama.
+11380409	Ziri sõitis ilma probleemideta koju.
+11380412	Kas sulle meeldivad õunad või apelsinid?
+11380420	Kas täna on halb päev?
+11387615	Ma põrkasin neile otsa.
+11390155	Ta tegi talle imelise jalamassaaži.
+11390156	See on tõesti suur.
+11390169	Tom aitas õpetajal sõbrapäevaks klassiruumi sisustada.
+11390172	Olen püüdnud temaga ühendust saada.
+11390188	Kõik minu patsiendid on üle 75 aasta vanad.
+11390196	Mul on kohutav peavalu. Võtsin just kaks valuvaigistit. Loodame, et see läheb ära.
+11390199	Tom valetas meile.
+11390202	Palun jooge teed.
+11390221	Miks sa meid ei usalda?
+11390223	Millal te selle otsustasite?
+11390232	Tom ütles, et leidis midagi.
+11390239	Tom ei leidnud midagi.
+11391174	Tom ei rääkinud Maryle kõike.
+11391182	Tom andis Maryle võimaluse seda teha.
+11391279	Mul pole inimeste vastu midagi.
+11391281	Mida ma ilma Tomita teeksin?
+11391285	Tom on laulja ja näitleja.
+11391758	Hilineda on ebaviisakas.
+11405411	Ta suri eile.
+11405442	Tom raiskab lihtsalt aega.
+11468896	Ta teeb nüüd süüa.
+11497776	Kas ahvid võivad valetada?
+11820898	Ta on insener.
+11833503	Ta elab külas.
+11853076	Selle eest ma maksan!
+11866377	Ta vastas küsimusele.
+11890646	Perekond on meie jaoks kõik.
+11952473	Ma õpin uelsi keelt.
+12012364	Ma ei räägi ungari keelt.
+12029455	Tom teeskles, et magab.
+12029465	Ta jättis lapsed koju.
+12029467	Tema jättis lapsed koju.
+12029471	See on keeluala.
+12029490	Sõjas pole võitjat.
+12029563	Sa ei õppinud väga hästi.
+12029608	Millega Peeter raamatu kirjutab?
+12029618	Ta tahtis sinuga rääkida.
+12029919	Kas te räägite eesti keelt?
+12030595	Ma pean kellegagi rääkima.
+12101224	Tom sööb jäätist.
+12107978	Selles järves elab viis liiki kalu.
+12164008	Ta pööras oma särgi tagurpidi.
+12216651	Kellele sa kirjutad?
+12244631	Hispaania pealinn on Madrid.
+12244910	Nuuk on Gröönimaa pealinn.
+12246652	Kasahstan on väga suur maa.
+12268107	See õun on liiga väike.
+12268909	Vene luuletaja Lev Rubinštein on surnud pärast seda, kui ta jäi Moskvas auto alla.
+12275838	Iževsk on Udmurdi Vabariigi pealinn.
+12299033	Ta on teadlane.
+12299089	Ma olen ajakirjanik.
+12299900	Kus on raamatukogu?
+12299952	Kelle raamat see on?
+12303443	Oli külm ja pilvine.
+12306772	Ära usu kedagi.
+12317536	Maria aitas Tomi.
+12325510	Ta elab Thbilisis.
+12384999	Istanbulil on kolmkümmend üheksa osa.
+12385004	Ma tahan oma burgerit ilma salati ja tomatita.
+12385007	Pühapäeviti loen ajalehte.
+12385012	Ma tühistasin oma krediitkaardi.
+12385036	Kas ta kirjutab kirju inglise keeles?
+12385037	Ma ei ole arvutimängude kangelane.
+12385046	Ma tahan sinuga koos elada.
+12385059	Kuidas sinu esimene abikaasa suri?
+12385061	Kas su laps on poiss või tüdruk?
+12385064	Kõik inimesed on võrdsed.
+12389668	Nad usuvad teda.
+12481277	Kuhu see rong läheb?
+12624722	Euroopa Liidul on 24 ametlikku keelt: inglise, bulgaaria, tšehhi, taani, eesti, soome, prantsuse, kreeka, hollandi, horvaadi, iiri, leedu, läti, ungari, malta, saksa, poola, portugali, rumeenia, slovaki, sloveeni, hispaania, rootsi ja itaalia keel.
+12627810	Aga miks sa näed pindu oma venna silmas, kuid palki omas silmas sa ei pane tähele? Või kuidas sa ütled oma vennale: lase ma tõmban pinnu sinu silmast? Ja vaata, palk on su omas silmas! Sa silmakirjatseja! Tõmba esiti palk omast silmast ja siis sa seletad tõmmata pindu oma venna silmast.
+12642192	Igaüks oskab midagi.
+12743565	Kiiev on Ukraina pealinn.
+12743621	Rumeenia pealinn on Bukarest.
+12747733	Tom mängib akordionit päris hästi.
+12747751	Kas sa muutsid seda?
+12747756	Soovin, et täna oleks ilus ilm.
+12747759	Täna on ilus ilm.
+12747773	Ziri naeris pilkavalt.
+12747795	Bruno ärkas alarmi peale.
+12747803	Tom sõidab alati liiga kiiresti.
+12747841	Ma vihkasin Tomi.
+12747922	Tegin õhtusööki, samal ajal kui mu elukaaslane oma telefonist uudiseid vaatas.
+12747977	Mary sulges vaikselt ukse.
+12748040	Iga kord, kui teen vea, õpin midagi. Väljakutse on mitte teha samu vigu ikka ja jälle.
+12748057	Ma usun, et sa suhtud minusse kahtlustavalt.
+12748138	Kõik peale Mike'i olid peol.
+12748146	Üks teist valetab.
+12748152	Armukadedus on üks hävitavamaid inimlikke emotsioone.
+12748194	Kus ta end peidab?
+12748202	Kas tulite siia rongi või bussiga?
+12748276	Minu abikaasa on armukade.
+12748279	Kas sa tunned seda naist?
+12748310	Ta vihastab kergesti tühiste asjade pärast.
+12748333	Alžeeria kontrollib oma piire.
+12748335	Ta eemaldas korgi.
+12748344	Tom tundub väga meeldiv.
+12816410	Tom töötas karikaturistina.
+12825134	Kõik on kõigega seotud.
+12923400	Kas Brasiilias elab palju inimesi?
+12936621	See on ilus unenägu.
+12967939	Meie kool on suur ja ilus.
+13064663	Tulevikku ei saa ehitada jõu ega vallutamissooviga, vaid demokraatliku meetodi kannatliku rakendamise teel konstruktiivses kokkuleppimise õhkkonnas, suhtudes lugupidavalt vabadusse.
+13385244	Kell on pool kaksteist.
+13385375	Kell on pool kaheksa.
+13395575	Nad olid valmis.
+13395595	Kas sa lugesid kogu raamatu läbi?
+13482235	Tema abikaasa on rase.
+13572853	Kahjuks ma ei tea.
+13573515	Ta tappis mu.
+13649370	Ma ei taha üksi olla.
+13660284	Mulle meeldib laulda.
+13662234	Te elate Kaasanis.
+13678480	Head uut aastat, Tatoeba!
+13694190	Aasta teine kuu on veebruar.
+13694196	Aasta kolmas kuu on märts.
+13695125	Aasta kaheteistkümnes kuu on detsember.
+13704987	Ma kuulan Björk’i uut laulu.
+13719953	Kas ma saan menüüd näha?
+13719966	Riigilipp langetati poolde masti.
+13719982	Kas sul on kaardil piisavalt raha?
+13744023	Mulle meeldib see riik.
+13756086	Lülitasin arvuti sisse.
+13767912	Laadoga on täielikult jäätunud.
+13784845	Kivi on kõva.
+13802973	Ma ei ela enam Riias.
+13905061	Nädalas on seitse päeva.
+13905075	Kus teie raha on?
+13916874	Lora jõi vett.
+13954398	Laual on õun.
+13954661	Kas sa oskad ujuda?
+13954668	Tom on minu vanem vend.
+13954763	Ta on haige.
+13957802	Ta õpib hiina keelt.
+13960028	Ta õpib saksa keelt.
+13972347	Mul on kolm õde.
+14068732	Mu emakeel on puštu keel.
+14068733	Mu emakeel on dari keel.
+14068734	Mu emakeel on pärsia keel.
+14068743	Mu emakeel on albaania keel.
+14069640	Mu emakeel on taani keel.
+14071979	Ma söön juustu.
+14071980	Koer sööb juustu.
+14071985	See juust on liiga kallis.
+14088633	Kahjuks pole mul piletit.
+14088675	Prantsusmaa on hüpertsentraliseeritud riik.
+14088732	Millal sa oma vanemaid nägid?
+14096427	Vasakul on salakäik.
+14096433	Tom kolis Phuketi saarele.
+14096486	Ametiühing kutsus üles streikima.
+14096495	Mõned osad Briti ettepanekust tunduvad vastuvõetamatud.
+14096496	Kukeseened on seened.
+14096561	See on teie oma.
+14096569	Tom ja Mary muidugi ei räägi midagi.
+14096570	Niipea kui sa mulle ütled, kuidas, teen seda.
+14096573	Jaapanis on suvel väga kuum.
+14096578	Ma ei taha rääkida.
+14096583	Tom teadis, et teda karistatakse.
+14096590	Meil on vaja palju asju korda ajada.
+14096591	Milline ilus naine!
+14096598	Mary on Tomi ema.
+14096608	See piim on hapu.
+14096609	Ta tahtis seda.
+14096618	Juust, või, koor, jogurt ja keefir on piimatooted.
+14096629	Seda ahju on lihtne kasutada.
+14096639	Pariis on suur.
+14098247	Ma tahan õppida, kuidas prantsuse keeles toitu tellida.
+14098278	Tom tuleb järgmisel esmaspäeval Bostonisse.
+14098594	Ma õpin eesti keelt.
+14098596	Ma mängisin tennist.

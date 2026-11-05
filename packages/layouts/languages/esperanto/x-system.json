@@ -1,0 +1,367 @@
+{
+  "id": "eo-x-system",
+  "lang": "eo",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "X-system",
+    "native": "X-sistemo"
+  },
+  "source": "Keyman Esperanto Cx 1.2 by Gyula Zsigri (MIT): type x after a letter (cx ĉ, gx ĝ, hx ĥ, jx ĵ, sx ŝ, ux ŭ).",
+  "keys": {
+    "Backquote": {
+      "n": "`",
+      "s": "~"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "!"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "@"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "#"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "$"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "%"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "^"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "&"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "*"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+"
+    },
+    "KeyQ": {
+      "n": "q",
+      "s": "Q"
+    },
+    "KeyW": {
+      "n": "w",
+      "s": "W"
+    },
+    "KeyE": {
+      "n": "e",
+      "s": "E"
+    },
+    "KeyR": {
+      "n": "r",
+      "s": "R"
+    },
+    "KeyT": {
+      "n": "t",
+      "s": "T"
+    },
+    "KeyY": {
+      "n": "y",
+      "s": "Y"
+    },
+    "KeyU": {
+      "n": "u",
+      "s": "U"
+    },
+    "KeyI": {
+      "n": "i",
+      "s": "I"
+    },
+    "KeyO": {
+      "n": "o",
+      "s": "O"
+    },
+    "KeyP": {
+      "n": "p",
+      "s": "P"
+    },
+    "BracketLeft": {
+      "n": "[",
+      "s": "{"
+    },
+    "BracketRight": {
+      "n": "]",
+      "s": "}"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyA": {
+      "n": "a",
+      "s": "A"
+    },
+    "KeyS": {
+      "n": "s",
+      "s": "S"
+    },
+    "KeyD": {
+      "n": "d",
+      "s": "D"
+    },
+    "KeyF": {
+      "n": "f",
+      "s": "F"
+    },
+    "KeyG": {
+      "n": "g",
+      "s": "G"
+    },
+    "KeyH": {
+      "n": "h",
+      "s": "H"
+    },
+    "KeyJ": {
+      "n": "j",
+      "s": "J"
+    },
+    "KeyK": {
+      "n": "k",
+      "s": "K"
+    },
+    "KeyL": {
+      "n": "l",
+      "s": "L"
+    },
+    "Semicolon": {
+      "n": ";",
+      "s": ":"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "KeyZ": {
+      "n": "z",
+      "s": "Z"
+    },
+    "KeyX": {
+      "n": "x",
+      "s": "X"
+    },
+    "KeyC": {
+      "n": "c",
+      "s": "C"
+    },
+    "KeyV": {
+      "n": "v",
+      "s": "V"
+    },
+    "KeyB": {
+      "n": "b",
+      "s": "B"
+    },
+    "KeyN": {
+      "n": "n",
+      "s": "N"
+    },
+    "KeyM": {
+      "n": "m",
+      "s": "M"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "<"
+    },
+    "Period": {
+      "n": ".",
+      "s": ">"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "?"
+    }
+  },
+  "rules": [
+    {
+      "before": "C",
+      "typed": "x",
+      "add": "Ĉ",
+      "remove": 1
+    },
+    {
+      "before": "c",
+      "typed": "x",
+      "add": "ĉ",
+      "remove": 1
+    },
+    {
+      "before": "G",
+      "typed": "x",
+      "add": "Ĝ",
+      "remove": 1
+    },
+    {
+      "before": "g",
+      "typed": "x",
+      "add": "ĝ",
+      "remove": 1
+    },
+    {
+      "before": "H",
+      "typed": "x",
+      "add": "Ĥ",
+      "remove": 1
+    },
+    {
+      "before": "h",
+      "typed": "x",
+      "add": "ĥ",
+      "remove": 1
+    },
+    {
+      "before": "J",
+      "typed": "x",
+      "add": "Ĵ",
+      "remove": 1
+    },
+    {
+      "before": "j",
+      "typed": "x",
+      "add": "ĵ",
+      "remove": 1
+    },
+    {
+      "before": "S",
+      "typed": "x",
+      "add": "Ŝ",
+      "remove": 1
+    },
+    {
+      "before": "s",
+      "typed": "x",
+      "add": "ŝ",
+      "remove": 1
+    },
+    {
+      "before": "U",
+      "typed": "x",
+      "add": "Ŭ",
+      "remove": 1
+    },
+    {
+      "before": "u",
+      "typed": "x",
+      "add": "ŭ",
+      "remove": 1
+    },
+    {
+      "before": "C",
+      "typed": "X",
+      "add": "Ĉ",
+      "remove": 1
+    },
+    {
+      "before": "c",
+      "typed": "X",
+      "add": "ĉ",
+      "remove": 1
+    },
+    {
+      "before": "G",
+      "typed": "X",
+      "add": "Ĝ",
+      "remove": 1
+    },
+    {
+      "before": "g",
+      "typed": "X",
+      "add": "ĝ",
+      "remove": 1
+    },
+    {
+      "before": "H",
+      "typed": "X",
+      "add": "Ĥ",
+      "remove": 1
+    },
+    {
+      "before": "h",
+      "typed": "X",
+      "add": "ĥ",
+      "remove": 1
+    },
+    {
+      "before": "J",
+      "typed": "X",
+      "add": "Ĵ",
+      "remove": 1
+    },
+    {
+      "before": "j",
+      "typed": "X",
+      "add": "ĵ",
+      "remove": 1
+    },
+    {
+      "before": "S",
+      "typed": "X",
+      "add": "Ŝ",
+      "remove": 1
+    },
+    {
+      "before": "s",
+      "typed": "X",
+      "add": "ŝ",
+      "remove": 1
+    },
+    {
+      "before": "U",
+      "typed": "X",
+      "add": "Ŭ",
+      "remove": 1
+    },
+    {
+      "before": "u",
+      "typed": "X",
+      "add": "ŭ",
+      "remove": 1
+    }
+  ],
+  "longpress": {
+    "KeyU": [
+      "ŭ"
+    ],
+    "KeyS": [
+      "ŝ"
+    ],
+    "KeyG": [
+      "ĝ"
+    ],
+    "KeyH": [
+      "ĥ"
+    ],
+    "KeyJ": [
+      "ĵ"
+    ],
+    "KeyC": [
+      "ĉ"
+    ]
+  }
+}

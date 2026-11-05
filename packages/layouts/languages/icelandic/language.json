@@ -1,0 +1,26 @@
+{
+  "slug": "icelandic",
+  "code": "is",
+  "order": 720,
+  "lang": "is",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Icelandic",
+    "native": "Íslenska"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["is-easy", "is-standard"],
+  "accents": "áðéíóúýþæöÁÐÉÍÓÚÝÞÆÖ",
+  "sample": "Í dag förum við í göngutúr og sjáum fallegan foss.",
+  "voice": ["is-IS"],
+  "wordList": true,
+  "translate": {
+    "google": "is",
+    "bing": "is"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

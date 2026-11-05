@@ -1,0 +1,15 @@
+{
+  "source": "lawiki.xml.bz2",
+  "pages": 43377,
+  "sentences": 632299,
+  "repeatedSentencesSkipped": 148205,
+  "tokens": 5972271,
+  "distinctWords": 474113,
+  "wordsKept": 100000,
+  "nextWordHeads": 8994,
+  "text": "la-train.txt",
+  "textSentences": 55641,
+  "textWeight": 9.68,
+  "heldOutPages": 902,
+  "heldOutSentences": 2000
+}

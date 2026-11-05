@@ -31,7 +31,14 @@ const CLDR = "https://raw.githubusercontent.com/unicode-org/cldr/release-49/comm
 const MAX_VERSION = 15.0;
 
 /** CLDR files that fill the gaps in a language's own annotations (Shahmukhi's are incomplete). */
-const GAPS: Record<string, string[]> = { "pa-Arab": ["ur"], ks: ["ur"], ug: ["en"], tg: ["en"] };
+const GAPS: Record<string, string[]> = {
+  "pa-Arab": ["ur"],
+  ks: ["ur"],
+  ug: ["en"],
+  tg: ["en"],
+  da: ["en"],
+  mt: ["en"],
+};
 /**
  * Languages CLDR doesn't annotate (or whose CLDR file is empty, as Sanskrit's and Maithili's
  * are) whose speakers read another language's keywords.
@@ -49,6 +56,8 @@ const FALLBACK: Record<string, string> = {
   prs: "fa",
   "ms-Arab": "ms",
   "zh-Hans": "zh",
+  // CLDR files Norwegian's annotations under no; Bokmål's own nb file is empty.
+  nb: "no",
 };
 
 /** Every registry language's tag (language.json "lang"), sorted. */

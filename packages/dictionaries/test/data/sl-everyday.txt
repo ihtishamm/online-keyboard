@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+564096	Ali ste Ujgur?
+566090	David Beckham je Anglež.
+878776	Kdo o tebi z glavo razmišlja da spomni števk teh?
+948463	Jaz želim umreti z Getter Jaani.
+948565	Morate se držati diete.
+949075	Maja Keuc je dobra pevka.
+949110	Moje ime je Sally.
+949378	V nemščini so zloženke napisane z eno besedo.
+949384	Jaz rabim vaš nasvet!
+949398	Morda boste porabili največ 100 dolarjev.
+950300	Volka se ne more udomačiti.
+950303	Na banko morate prinesti svoj potni list.
+1246189	Mama! Ta ženska in človek se držite za roke, oni so zelo dobri prijatelji, kaj ne?
+1474275	Zemlja je manjša od Sonca.
+1518770	Francija je v Zahodni Evropi.
+1543687	Volka se ne da udomačiti.
+1543699	Nimam časa zate.
+1543709	Slovenska pevka Maja Kevc je bila rojena leta 1992.
+1543738	Kje je moja pisarna?
+1543777	Potrebujem tvoj nasvet.
+1566902	Zaprl je vrata.
+1790229	Svojemu očetu je spletla pulover.
+1790236	Med poukom morajo učenci biti tiho.
+1790237	Ekvator deli Zemljo na dve polobli.
+1790241	Mi prosim posodiš to knjigo?
+2115685	Sem na Portugalskem.
+2115698	Umazana hiša, umazana tla.
+2115711	Slovnica je zelo zapletena.
+2115716	Ni bilo veliko prometa.
+2115728	Ko sem o tem osnovnem vprašanju razmislil temeljito, sem prišel do zaključka, da razlika, ki jo priznani ljudje velikokrat opišejo kot "znatno" ali "občutno", med nepogrešljivima besedama "pomemben" in "ključen" ni precejšnja, ampak je kar zanemarljiva.
+2115730	Taki jeziki, kot so ruščina, poljščina, češčina in bolgarščina, imajo skupne slovanske korenine.
+2115745	Ni našel posteljnine.
+2115758	Prepričal sem ga, da se posvetuje z zdravnikom.
+2115881	Približno koliko knjig imata?
+2115888	Veliko bolnikov, ki zboli za rakom, izgubi svoje lase zaradi kemoterapije.
+2115904	Nisem nosorog, nisem tiger, pa me vodijo v to pusto divjino.
+2115949	Sprašujem se, kaj skuhati za večerjo.
+2117481	Svojemu očetu sem pomagal zaliti rože.
+2117482	Svojemu očetu sem pomagala zaliti rože.
+2117495	Slišim, da je bil moj oče star toliko kot jaz, ko je prišel v Tokio.
+2155090	Jaz sem srečen.
+2155112	On je genij.
+2202445	V tej sobi je deset ljudi.
+2202446	Lahko je brati to knjigo.
+2202448	Kaj se je zgodilo z ostalo hrano?
+2202450	Zavlačevanje: to je resen posel.
+2202453	Prisilili so me, da zapojem pesem.
+2202454	Prisilili so me, da pojem pesem.
+2202456	Litva se pridruži Evropski uniji.
+2202458	Litva je članica Evropske unije.
+2202465	Ali ni nadležno?
+2202467	Kaj ni nadležno?
+2306467	Jesi li ti katolik?
+2413017	Imam dve mački.
+2450137	Puščavnik je oseba, ki živi preprosto in v samoti, zlasti iz verskih nagibov.
+2450918	Vsi moji sorodniki živijo v tem mestu.
+2501116	Moja mama ljubi glasbo.
+2515802	Pozdravljeni v Wikipediji, prosti enciklopediji, ki jo lahko ureja vsakdo.
+2594225	Je to žrebec ali kobila?
+2618428	Moram iti v šolo.
+2618435	Vreme je sončno.
+2775143	Živijo! Kako ste?
+2788479	Noč čarovnic je praznoval v oktobru.
+3004533	Potrebujem vašo pomoč.
+3004537	Kako pridem do avtobusne postaje?
+3004541	Kakšno je menjalno razmerje?
+3005105	Jaz sem v Rusiji.
+3005148	Prijeten konec tedna!
+3005193	Glava ga boli.
+3005196	Nisem vas videl.
+3005207	Ali še nisi končal?
+3005216	Plačujemo visoko najemnino.
+3006249	Kdo pravi, da preproste stvari niso dobre?
+3011888	Ravno v pravem času si prišel.
+3011901	Ali veš kaj o Tomu?
+3011923	Koliko si plačal za to?
+3011946	Za zimo pride pomlad.
+3013271	Nič ne reci.
+3013280	Kje sta knjiga in svinčnik?
+3081208	Ljudi veliko bolj skrbi večnost po njihovi smrti kot pa večnost, ki se je zgodila še preden so se rodili. Gre pa za enako količino neskončnosti, ki se, od koder stojimo, razteza na vse strani.
+3114132	Monarh je imel šest sinov.
+3114140	Kličem iz mobilnega telefona.
+3119715	Njegov govor me je zelo navdušil.
+3119719	Naprava je navdušila vse.
+3119724	Mary je zelo ganjena.
+3248543	Ne potrebuješ mojega dovoljenja.
+3285507	Žive vsi narodi, ki hrepéne dočakat’ dan: da, koder sonce hodi, prepir iz sveta bo pregnan, ko rojak prost bo vs’ak, ne vrag, le sosed bo mejak, ko rojak prost bo vs’ak, ne vrag, le sosed bo, ne vrag, le sosed bo mejak.
+3298949	On je moj sosed.
+3475223	Tom je naredil nekaj slovničnih napak.
+3475230	Vohal sem slanino.
+3475231	Ne izgledaš preveč srečen.
+3475234	Z njim je šla v kino.
+3475236	Ali lahko Tom-u povem, kar si mi ravnokar rekla?
+3475241	Neuma je in grda.
+3476140	To ne bo zadnjič.
+3476155	Tom je ostal miren.
+3476156	Svojih šolskih dni se spominjam zelo dobro.
+3476157	Počakati bomo morali nekaj minut.
+3477082	Emily bo maturirala leta 2017.
+3477084	Mislil sem, da hočeš ločitev.
+3481149	Tom živi sam v gozdu.
+3481151	Potnikom je pokazala, kako si pripeti pas.
+3481155	Miza v tej sobi zavzame veliko prostora.
+3486088	Ne morem ti poslati vabila.
+3486096	Tom je popil svojo kavo.
+3486107	Njegova mati je Jugoslovanka.
+3493371	Nesreča se je zgodila včeraj zjutraj.
+3559523	Bognedaj, da bi crknu TV
+3582939	Grem v pisarni.
+3582942	To je šola.
+3618072	Ugotavlja rezultate, ki so bili doseženi z uporabo esperanta na področju mednarodne intelektualne izmenjave in za zbliževanje narodov sveta;
+3667387	Ljubim te z vsem srcem.
+3667393	Izjemno občutljiva je na mraz.
+3667397	Virus je pokosil mnogo slonov v Afriki.
+3667410	Od celodnevne hoje je bil popolnoma utrujen.
+3667417	Poznam vse detajle.
+3667419	Oprostite, imam vprašanje.
+3667452	Izginite! Vsi vi!
+3667518	Učitelj je zabaval učence.
+3667520	Nikoli ne vem, kaj reči ljudem, ki ne poznajo niti najosnovnejših dejstev, a se tega sploh ne zavedajo.
+3667522	Glava me ne boli več.
+3667526	To je rešitev, ali ne?
+3667529	Nihče ni rekel ničesar.
+3667530	Želiš vedeti zakaj sem lagal Tomu?
+3667534	On ne trpi takšnega načina obnašanja.
+3668662	Osebna svoboda je bistvo demokracije.
+3668666	Rad bi se pridružil tvoji skupini.
+3805474	Ženske spreminjajo svet.
+3810544	Deseti september je svetovni dan preprečevanja samomorov.
+3810546	Me boš prišel obiskat.
+3810554	Tom posluša Mary.
+3810556	Nisem razumel tvojega vprašanja.
+3810557	Toma ne obtožujem ničesar.
+3810584	Ko je prišel sem bral/a pismo.
+3810586	Zaprl se je v svojo sobo.
+3811113	Ti si bila, kajne?
+3811182	Kdo je to naslikal?
+3811209	Angleščina je jezik, ki ga govorijo po vsem svetu.
+3811213	Tom si je s čela obrisal znoj.
+3811215	Mary si je s čela obrisala znoj.
+3811223	Hodili sta po plaži, držeč se za roke.
+3811227	Tom ji je dal poljub na obe lici.
+3811229	Njegove ustnice so se dotaknile njenih.
+3811231	Ta ladja potrebuje kapitana.
+3811289	Si že kdaj bil v Teheranu?
+3811294	Naokoli teče kot kura brez glave.
+3811295	Imamo majhno hišo.
+3811299	Jazbec je ugriznil fanta.
+3811311	Kovanec je narejen iz zlata.
+3811313	Tom gre od Bostona do Chicaga s svojim avtom po običajni poti.
+3811321	Vzemi in pojdi!
+3811331	Nisem razumela tvojega vprašanja.
+3811336	Naravni logaritem e-ja je 1.
+3811372	Včeraj sem se šla umit v reko.
+3811376	Pesem "I Am Woman" Helene Reddy je postala neuradna himna ženskega osvobodilnega gibanja.
+3811377	Prispeli so na cilj.
+3811385	Tom je umrl v Rimu.
+3811389	Spet sem zamudil rok!
+3811399	Grozen teden je bil.
+3811403	Tom se je drl.
+3811408	Ni se zdel sumljiv.
+3811413	Tvoj oči mi ni všeč.
+3811430	Zanimivo je bilo.
+3811440	Tom nima bančnega računa.
+3811442	Tom nima kreditne kartice.
+3811454	Vedno rečem ja!
+3811464	Vsak dan se je učil uro in pol.
+3811470	Ti lahko povem skrivnost?
+3811477	Če nočeš odgovoriti, ti ni treba.
+3811485	Združeni narodi so leto 2015 razglasili za mednarodno leto luči.
+3811487	Boš še tu ko se vrnem?
+3811489	Tom se je počasi umaknil.
+3811492	Moški pije vodo.
+3811494	Beseda "злой" je edini ruski pridevnik z le enim zlogom.
+3811498	Besede moraš preurediti.
+3847522	Kar je zakonito za Jupitra, ni zakonito za vole.
+3941312	Lišček je zelo zanimiva ptica.
+4808241	Kaj bomo jedli za večerjo?
+4808338	Kje je moj dežnik?
+4808339	Napisal sem to knjigo.
+4808342	Imam star avto.
+4808347	Tom vas ignorira.
+4808365	On ljubi šport.
+4812292	Lahko dodajo dobeseden prevod.
+4812294	Tom se uporablja za delo.
+5217162	Če prideš v Rio me ne pozabi poklicat za vodiča!
+5336125	Sepa ve davaxa.
+5780224	Moje ime je Ricardo.
+5806539	Šla je sama v kino.
+5806560	Razveselilo me je tvoje pismo.
+5806575	Znanstveniki so našli vodo na Marsu.
+5810479	Ne pustiti odprtih vrat.
+5810485	On je zgolj gledalec.
+5810493	Odločil se je, da bo nehal kaditi.
+5810494	Imam dosti stvari, ki jih ne potrebujem.
+5833764	Obljubim, da te ne bom obsojal.
+5833768	Kako naj vem, da govoriš resnico?
+5833774	Kako si se preživljal preden si dobil to službo?
+5833776	Tom je trenutno v redu.
+5845792	Šel sem v London.
+5845794	Bil sem debel.
+5845799	Nenadoma me je zaprosil.
+5845844	Fotografiral je koalo.
+5923387	Nihče ne gleda.
+5927101	Bil sem pripravljen.
+5927145	Ne dotikaj se mojega sendviča!
+5965432	Ali veste, kaj se dogaja tam?
+5965493	Vej, da me ne strašiš.
+5965503	Ne naredim ničesar.
+5975770	Grem na plažo.
+6029963	Mi lahko poveste, kako se uporablja telefon.
+6029966	Škodilo je njegovemu ugledu.
+6029969	Tista ladja je na poti na Finsko.
+6029971	Vse najboljše za rojstni dan!
+6029975	Preprosto mi ni do tega.
+6597460	Počutil se je prazno.
+6597461	Grem v Los Angeles.
+6597462	Poišči svojo višjo moč.
+6597640	Nihče dejansko ne doživlja resničnosti zahvaljujoč oligarhiji miljarderjev.
+6597644	Ne sledim svoji dieti!
+6597646	Najdi svojo višjo moč.
+6597647	Grem v LA(ško).
+6597648	Ne moreš me premagati.
+6597650	Kje je najbližja delavnica za popravilo didgeridoo-jev?
+6597654	V desni roki drži zajemalko.
+6597657	Prosim pelji psa na sprehod.
+6597663	Telefonski klic bom sprejel v sosednji sobi.
+6597666	Ne moreš me premagati!
+6597669	Odvedli so nas do sodišča.
+6597677	Kaj je ta neznosen hrup?
+6597679	Popraskaj me po hrbtu
+6597693	Kje je juha?
+6597694	Kaj meniš o recikliranju?
+6597695	Na tem milu je las.
+6597700	Odpeljali so nas na sodišče.
+6597701	Dež trka po strehi.
+6597720	Resno, da ti ne bom prdnil na tvojo juho.
+6597731	Hipnotizirani so bili!
+6597743	Kaj si misliš o recikliranju?
+6597745	Ljudje so imoralni.
+6597751	Mesto pokriva majhno območje.
+6597770	To je za dobrodelne namene.
+6597771	Naj bo kratko in jedrnato.
+6597775	"Riž in kvinoja sta varni žiti" je rekla Mary.
+6597927	Koliko je ura v Buffalo, New York?
+6598410	Ali bi lahko psa sprehajal?
+6598418	Sumatra je otok.
+6598423	Postalo je jasno, kakšen je življenski stil osumljenca Miure v zaporu.
+6598426	Mislim da še nikoli nisem slišal tega imena.
+6598431	Nehaj biti tako gej!
+6598441	Me zanima če bo moral Tom narediti to.
+6598445	Sami je hotel malo vode.
+6598448	Primi me za roke in me glej v oči.
+6598548	Tom lahko dokaže, da je odplačal svoj dolg.
+6598558	Eno veliko porcijo riža prosim.
+6598563	Bi lahko ti peljal psa na sprehod?
+6598568	Tom je v hudih težavah.
+6598581	Sprehodi psa prosim
+6598583	Tom je odvisnik
+6598584	Telefone pustite zunaj
+6598589	Streho je treba popraviti.
+6598591	Kaj je ta obupen zvok?
+6598592	Zmasiraj mi hrbet
+6598687	Moje ime je Janez.
+6598704	Poglej me v oči.
+6598940	Sem brez besed.
+6598941	Ne vem kaj naj rečem.
+6598945	Poklical jih bom jutri, ko se vrnem.
+6598948	Me ne preseneča.
+6598965	To ni bil moj namen.
+6598968	Ničesar drugega te ne bom vprašal danes.
+6599700	Nikoli ne bom pozabil trenutka, ko sem v mojih rokah držal delfina.
+6599702	Pogrešam Michaela Jackosna
+6599705	Skeptični so do vseh novincev.
+6600810	Ostalo omako od špagetov bom pojedel, ko pridem domov
+6600811	Ukradel sem tvojo denarnico
+6601125	Njegov pes je starejši od mene.
+6601126	Pravi genij. Vsa tvoja družina umira zaradi kajenja, ampak ti še vedno kadiš.
+6601180	Še zmeraj te čakam.
+6601184	Tom se je nenadoma ustavil.
+6601190	Hodil sem kako miljo.
+6601191	Tom in Mary sta rekla da John noče jesti ničesar, kar skuhata.
+6601194	Mislil sem da jim lahko zaupam.
+6601195	Svetloba moti moje oči.
+6601201	Si res naredil to zastonj?
+6601261	Marija je prav tako skrbela za živela.
+6603627	Jutri bom boljši.
+6627585	Kakšne so prave številke?
+6627589	Lastnikova razlaga je jasna.
+6627592	Voda je zelo vroča.
+7303422	Kam sem jih dal?
+7800358	Beduini živijo v puščavi.
+7918785	Ena, dve, tri, štiri, pet, šest, sedem, osem, devet, deset.
+8020900	Nočem biti različen.
+8106143	Kdaj si šel včeraj spat?
+8143505	Zato ne morem verjeti.
+8159225	Danes je grozno vroče.
+8159277	Otrok je potreboval veliko časa, da je našel Liso.
+8159281	Ta punčka je strašljiva.
+8159286	Tom pošlje več kot sto SMS sporočil na dan.
+8159297	Mary pošlje več kot sto SMS-ov na dan.
+8560368	Nočem da moja država postane članica Evropske unije.
+8697181	Kdo bo prvi, ki bo vse uganil?
+8697213	Zakaj nisi odprl škatle?
+8697215	Zakaj nisi odprla škatle?
+8697238	Dojenček mirno spi.
+8697247	V moji sobi je telefon.
+8697256	Ta knjiga je težko razumljiva.
+8697267	Začenjam pozabljati francoščino.
+8697272	Želve nimajo zob.
+8697282	Ime mi je Sally.
+8808593	Voda ni hladna.
+8808616	Ali imate kaj dodatnega denarja?
+9142607	Tega krompirja ni mogoče kuhati.
+9142609	Kje je Subway?
+9142622	Tom je ostal v postelji do kosila.
+9142625	Ona ni vojakinja.
+9142630	Kdaj se boš umil?
+9142631	Kdaj se boš umila?
+9142635	A je arabec?
+9142641	A je arabka?
+9142645	Jaz sem bolna.
+9142646	Jaz sem bolan.
+9142650	Ime mi je Tom.
+9142877	Žal mi je, ampak vašega imena ni na seznamu.
+9226570	Povedal mi je, da je pravkar to storil.
+9988258	Ali ti je všeč Wagner?
+9988267	Tom me je povabil na svojo zabavo.
+10363176	Naučil sem se francosko.
+10363183	Naučil sem se nemško.
+10363190	Jaz bom prišel.
+10363191	Jaz bom prišla.
+10363196	Poskušam narediti več.
+10363208	To sem naredil z dobrim razlogom.
+10363218	Knjiga leži na mizi.
+10467069	Mačke vladajo svetu.
+10854943	Kralj živi v gradu.
+11192917	Pred zajtrkom se je stuširal.
+11207132	Kaj lahko naredim?
+11207133	Rim je lepo mesto.
+11229913	Sem na poti.
+11234949	Piše članek za šolski časopis.
+11235125	Od vas smo se naučili nasilje.
+11492464	Ali gledate novice?
+11603439	Slabo mi je.
+11607309	Nikoli se nisem identificiral kot religiozen.
+11607324	Lahko malo govorim s teboj?
+11609630	Mi lahko date skodelico kave?
+11629952	Jaz sem Tom.
+11630017	Kruh je svež.
+11630384	Ne govorim švedsko.
+11630388	Ne govorim kitajsko.
+11632555	Govorim samo malo nemško.
+11632557	Govorim samo malo slovensko.
+11633424	Želim ti lep dan.
+11634360	Želim biti kot ona.
+11635783	Kdor hoče videti, mora gledati s srcem.
+11637602	To je Karl.
+11637606	To je Tatoeba.
+11637878	Sloni so največje kopenske živali na svetu.
+11638022	En cvet še ne naredi pomladi.
+11638090	Niso vsi srečni, ki imajo srečo.
+11638257	Zunaj je mraz.
+11638486	Vsi za enega, eden za vse!
+11638533	Kdor dolgo kašlja, dolgo živi.
+11639619	Moje ime je Hashimoto.
+11639637	Moje ime je Dušana.
+11639658	Živijo, moje ime je Tom.
+11639693	Živijo, moje ime je Mohand.
+11639739	Ime mi je Wang.
+11639744	Živijo, ime mi je Maite.
+11639752	Živijo, ime mi je Janez.
+11639754	Živijo, ime mi je Sergej.
+11639766	Moje ime je Dilshad.
+11639776	Ime mi je Ludvik.
+11639786	Moje ime je Henrik.
+11639787	Ime mi je Henrik.
+11639789	Ime mi je Saša.
+11639793	Moje ime je Hisashi.
+11639801	Ime mi je Ahmad.
+11639805	Ime mi je Hopkins.
+11640753	Kdor reče A, mora reči tudi B.
+11640764	Tega jaz ne razumem.
+11641129	To je moj sin.
+11641133	To je moja hči.
+11641236	To je traparija.
+11641789	To je moja žena.
+11641828	Dobro jutro, Tom. Kako si?
+11643293	Naj živi Madžarska!
+11643306	Naj živi Mehika!
+11643347	Naj živi demokracija!
+11643466	Ogenj je ugasnil.
+11644250	Koliko stane pomoč na domu?
+11644260	Koliko vas na leto stane avtomobil?
+11644287	Koliko pa vas stane avto?
+11644374	Kava in čaj sta nepogrešljiva dela kulture turške kuhinje.
+11644428	Oh, kako lepo!
+11644545	Ne govorim špansko.
+11645127	To je jabolko.
+11645596	Jabolko na dan odžene zdravnika stran.
+11651162	Nova metla dobro pometa.
+11652021	Ne govorim estonsko.
+11652472	Tukaj sem tujec.
+11652968	Človek človeku volk.
+11652996	Mi o volku, volk iz gozda.
+11653618	Kdo ima rad pajke?
+11653698	Ne govorim ukrajinsko.
+11653699	Ne govorim francosko.
+11653727	Ne govorim bosansko.
+11653732	Ne govorim portugalsko.
+11653740	Ne govorim albansko.
+11653741	Ne govorim madžarsko.
+11653748	Ne govorim finsko.
+11653758	Ne govorim italijansko.
+11654389	Ne govorim poljsko.
+11656752	Ura je dva.
+11656755	Ura je tri.
+11659338	Ali govoriš madžarsko?
+11659344	Ali govorite madžarsko?
+11659374	Ali govorite nemško?
+11659788	Ali govorite kitajsko?
+11660453	Ali govoriš svahili?
+11660585	Ali govoriš slovaško?
+11660671	Ali govoriš malteško?
+11660676	Ali govoriš grško?
+11660706	Ali govorite slovensko?
+11660738	Ali govorite češko?
+11660740	Ali govoriš romunsko?
+11660746	Ali govorite makedonsko?
+11660832	Ali govoriš črnogorsko?
+11660833	Ali govorite črnogorsko?
+11660841	Ali govorite norveško?
+11660845	Ali govorite islandsko?
+11660846	Ali govoriš litovsko?
+11661123	Ali govoriš portugalsko?
+11661135	Ali govorite finsko?
+11661138	Ali govoriš turško?
+11661140	Ali govorite turško?
+11661316	Ali govoriš vietnamsko?
+11661320	Ali govorite vietnamsko?
+11661347	Ali govoriš tajsko?
+11661369	Ali govoriš kmersko?
+11661482	Ali govoriš korejsko?
+11661483	Ali govorite korejsko?
+11663418	Govorim francosko in angleško.
+11663445	Ali govoriš tibetansko?
+11663454	Ali govoriš singalsko?
+11663496	Govorim ujgursko in kitajsko.
+11663593	Učim se turško.
+11663652	Učim se francosko.
+11664141	Govorim francoski in angleški jezik.
+11664156	Govorim špansko in francosko.
+11664157	Govorim španski in francoski jezik.
+11664193	Govorim angleško, francosko in špansko.
+11664216	Jaz govorim angleško in špansko.
+11664218	Govorim angleški in španski jezik.
+11664223	Uči se angleško.
+11664226	Uči se nizozemsko.
+11664227	Uči se madžarsko.
+11664282	Uči se kitajsko.
+11664395	Učimo se nemško.
+11665239	Sonce sije, veter brije.
+11665360	Veter piha s hitrostjo 360 km/h.
+11670629	Učim se ujgursko.
+11670694	Ali govorite azersko?
+11671841	Ali govorite filipinsko?
+11672006	Slovenščina je južnoslovanski jezik.
+11672166	Kateri datum je danes?
+11672227	Ali govorite tadžiško?
+11672261	Ali govorite uzbeško?
+11672274	Ali govoriš urdujsko?
+11672275	Ali govorite urdujsko?
+11672316	Ali govorite paštunsko?
+11672321	Ali govorite turkmensko?
+11672772	Ali govoriš gruzinsko?
+11672774	Ali govorite gruzinsko?
+11672838	Ali govoriš amharsko?
+11672840	Ali govorite amharsko?
+11672867	Ali govoriš somalsko?
+11673049	Ali govoriš latinsko?
+11673050	Ali govorite latinsko?
+11674808	Motiti se je človeško.
+11674862	Ali govoriš indonezijsko?
+11674863	Ali govorite indonezijsko?
+11674894	Ali govorite malgaško?
+11676654	To je moja soba.
+11676680	Ali govoriš gudžaratsko?
+11678004	To, kar delaš, delaj dobro!
+11679135	Žive naj vsi narodi, ki hrepene dočakat dan, da, koder sonce hodi, prepir iz sveta bo pregnan, da rojak prost bo vsak, ne vrag, le sosed bo mejak!
+11679362	Nihče ne uide svoji usodi.
+11679593	Nesreča je priložnost za vrlino.
+11691691	Tudi pokvarjena ura dvakrat na dan kaže pravilen čas.
+11691870	Hudič se skriva v podrobnostih.
+11700092	Koliko je star ta grad?
+11700837	Ali lahko ponovite, prosim?
+11700900	Ali govoriš berbersko?
+11700918	Kako se to reče po francosko?
+11700930	Kako se to reče po slovensko?
+11700966	Tega nisem rekel.
+11701805	Ura je štiri.
+11703047	Kje je tvoj brat, Abel?
+11703048	Kje je Abel, tvoj brat?
+11703833	Tom je tvoj brat.
+11703846	Tom je tvoj oče.
+11703895	Tom je tvoj sovražnik.
+11703903	Ona je moja sovražnica.
+11704070	Moj oče je učitelj.
+11704197	On je najin sin.
+11704347	Ona je najina hči.
+11704599	Ona je moja hči.
+11704755	Marija je moja mama.
+11704875	Ona je moja profesorica.
+11704911	Tom je moj brat.
+11704921	To je moj brat.
+11705005	On je moj oče.
+11706641	Ura je sedem.
+11706778	Ena minuta ima šestdeset sekund.
+11707917	Slovenščina ni težka.
+11707946	Arabščina ni težka.
+11707952	Japonščina je težka.
+11707970	Nemščina je težka.
+11709586	Je arabščina težka?
+11709589	Situacija je težka.
+11712050	Koliko je stara Marija?
+11712113	Koliko si star?
+11712116	Tom, koliko si star?
+11712164	Tom je zelo star moški.
+11712618	Tom je mrtev.
+11712628	Marija je mrtva.
+11712910	Italija je zelo lepa dežela.
+11712979	Ljubljana je lepo mesto.
+11713002	Benetke so lepo mesto.
+11713009	Dunaj je lepo mesto.
+11713017	Budimpešta je lepo mesto.
+11713027	Boston je lepo mesto.
+11714957	Zrak je bil mrzel.
+11715115	Voda je bila mrzla.
+11715124	Voda je bila zelo mrzla.
+11715149	Moja domovina je Slovenija.
+11715587	Tom je zdravnik.
+11717120	Ura je pet čez tri.
+11728074	Čudni časi so. Otroci ne ubogajo več staršev in vsi že pišejo knjige.
+11729236	Kaj je ljubezen?
+11730421	Prepovedano krmljenje golobov.
+11730838	Kje je tvoj avto, Tom?
+11732313	Bodi zadovoljen s svojo usodo.
+11733933	Kje je vhod?
+11733948	Mineralno vodo, prosim.
+11733986	Zunaj je bilo mraz.
+11734060	Jaz sem iz Amerike.
+11734061	Sem iz Rusije.
+11734070	Sem iz Italije.
+11734073	Jaz sem iz Madžarske.
+11734087	Jaz sem iz Francije.
+11734088	Sem iz Anglije.
+11734089	Jaz sem iz Anglije.
+11734329	Stranka je kralj.
+11734341	Ali je res, da ima stranka vedno prav?
+11734347	Stranka nima vedno prav.
+11735661	Bil sem debel in zavaljen.
+11736900	Motiti se je človeško, pri napaki vztrajati pa neumno.
+11736941	Kar nam škoduje, nam je pogosto v poduk.
+11737005	Dokler diham, upam.
+11741107	Jaz sem študent.
+11741733	Tri, štiri, zdaj!
+11741811	Ali ste Američan?
+11741834	Ali ste Slovenec?
+11742052	Tam, kjer je volja, tam je pot.
+11742155	Kaj si po poklicu?
+11742194	Kje je pot?
+11742568	Kaj je sreča?
+11742606	Kaj je za vas sreča?
+11742623	Kaj je svoboda?
+11742691	Kaj to pomeni?
+11742737	Kaj pomeni biti srečen?
+11742785	Ne vem, kaj pomeni ta beseda.
+11745200	Jutri sem prost.
+11745385	Kakšno je bilo vreme včeraj?
+11745387	Kakšno je bilo včeraj vreme?
+11745432	Danes je petek.
+11745437	Danes je sobota.
+11749600	Slovenščina je evropski jezik.
+11749928	Bil sem zelo utrujen.
+11749931	Zelo sem utrujen.
+11749932	Zelo sem utrujena.
+11750093	Ali si zaspana?
+11750097	Ali si zaspana, Marija?
+11754839	Zakaj je nebo modro?
+11754858	To je zelo lepa barva.
+11755006	Jaz sem nedolžna.
+11755011	Pozor! Življensko nevarno!
+11755037	Kako je tvojemu psu ime?
+11755365	Ime mi je Janez.
+11755403	Kaj pomeni zelena barva?
+11758621	Prizadevajte si, da vstopite skozi ozka vrata.
+11760898	Tudi slepa kura zrno najde.
+11761960	Dober nasvet je zlata vreden.
+11762641	Vsak začetek je težak.
+11762944	Kdor hoče žeti, mora sejati.
+11763019	Kdor riskira, profitira.
+11765181	V miru je moč.
+11766485	Rada imam živali.
+11766486	Rad imam živali.
+11768573	Tokio je glavno mesto Japonske.
+11768633	Madrid je glavno mesto Španije.
+11768665	Helsinki so glavno mesto Finske.
+11768674	Berlin je glavno mesto Nemčije.
+11768714	Erevan je glavno mesto Armenije.
+11771494	Vaduz je glavno mesto Lihtenštajna.
+11771506	Reykjavik je glavno mesto Islandije.
+11771517	Skopje je glavno mesto Makedonije.
+11771523	Bukarešta je glavno mesto Romunije.
+11771544	Baku je glavno mesto Azerbajdžana.
+11771581	Priština je glavno mesto Kosova.
+11771592	Kazan je glavno mesto Tatarstana.
+11771747	Glavno mesto Italije je Rim.
+11771841	Glavno mesto Ukrajine je Kijev.
+11771986	Glavno mesto Madžarske je Budimpešta.
+11772020	Glavno mesto Slovenije je Ljubljana.
+11772374	Varšava ja glavno mesto Poljske.
+11772384	Glavno mesto Francije je Pariz.
+11772420	Daka je glavno mesto Bangladeša.
+11772435	Hanoj je glavno mesto Vietnama.
+11772493	Kaj je glavno mesto Šrilanke?
+11772502	Glavno mesto Šrilanke je Šri Džajavardenapura Kote.
+11772520	Šri Džajavardenapura Kote je glavno mesto Šrilanke.
+11772701	Švica je lepa dežela.
+11772725	Avstralija je lepa dežela.
+11772827	Slovenija je zelo lepa dežela.
+11772904	Šrilanka je tropska otoška država.
+11772919	Japonska je otoška država.
+11773954	Tajvan je otoška država.
+11776786	Kišinjev je glavno mesto Moldavije.
+11778512	Kdo je bil Konfucij?
+11778534	Kdo je bil Jezus Kristus?
+11778624	Kdo je bil Martin Luther King mlajši?
+11779361	Svet je zapleten.
+11779393	Ne potrebujem nikogar.
+11781295	Jaz sem Američanka.
+11781510	Moj hobi je branje.
+11781534	Ljubite svoje sovražnike.
+11781547	Kaj je Vaš hobi?
+11781687	Zakaj lahko papige govorijo?
+11782137	Moj hobi je glasba.
+11782242	Moj hobi je ribarjenje.
+11783094	Kaj je Tatoeba?
+11783100	Moj hobi je kolesarjenje.
+11784430	Imejte pogum, da uporabite svoj razum!
+11784447	Imejte pogum, da uporabite svoj razum. To je geslo razsvetljenja.
+11786221	Žirafe so čredne živali.
+11786443	Žirafa je najvišja žival na svetu.
+11786479	Ovce so čredne živali.
+11786487	Ovca je čredna žival.
+11786499	Krokodili in aligatorji so plazilci.
+11786528	Pajki niso žuželke.
+11787205	Dogovorov se je treba držati.
+11787692	Vse ima svoj čas.
+11789865	Pred zakonom so vsi enaki.
+11791347	Država, to sem jaz!
+11791348	Država sem jaz!
+11800646	»Kateri dan je danes?« »Četrtek.«
+11813300	Jaz nimam pojma.
+11815700	Podarjenemu konju se ne gleda v zobe.
+11815925	Vsak je svoje sreče kovač.
+11817264	Jaz sem inženir.
+11817267	Jaz sem inženirka.
+11817268	Ona je inženirka.
+11817433	A ti je všeč?
+11821070	Metulji so leteče žuželke.
+11823943	Ta knjiga je moja.
+11831000	To ni prav!
+11863467	To je trd oreh!
+11867340	Sneg je bil globok.
+11867398	Sneg je bil precej globok.
+11867430	Moja mama je moj idol.
+11873793	Vse imam pod nadzorom.
+11873794	Vse ima pod nadzorom.
+11877526	Povedal sem resnico.
+11885047	Bober je drugi največji glodalec na svetu.
+11885054	Živali so čuteča živa bitja.
+11885059	Slavec je ptič pevec iz družine muharjev.
+11885273	Jaz sem detektiv.
+11885855	Oh, ta slovnica!
+11885937	Bila je samo govorica.
+11888291	Kaj je laktoza?
+11889028	Danes je zelo pomemben dan.
+11889067	Zakaj je vitamin D tako zelo pomemben?
+11889080	Šport je zelo pomemben.
+11889329	Srce ima štiri komore.
+11894754	Rjavi medved je vsejed.
+11894821	Rjavi medvedi so vsejedi.
+11897158	Zakaj se treseš?
+11897163	Zelo dobro, hvala.
+11897167	Zelo dobro, hvala, in ti?
+11897805	Veste, zakaj imajo žirafe dolge vratove?
+11898763	Golobi so lepe ptice.
+11899149	Beseda »Amerika« izvira iz imena italijanskega raziskovalca Ameriga Vespuccija.
+11899226	Kako vzgojiti avokadovec?
+11899508	Avokado izvira iz Srednje Amerike.
+11901133	Doma imam eno leto staro grško želvo.
+11902892	Želve so mi bile že od nekdaj zanimive živali.
+11902924	Tisti, ki je goro prestavil, je začel z drobnim kamenjem.
+11902928	Znanje je zaklad, ki povsod spremlja svojega lastnika.
+11904853	Kaj se je zgodilo?
+11904907	Jezik je živ organizem.
+11905563	Ima zelene oči.
+11905750	Za kaj vse je dober avokado?
+11905842	Marija je psihologinja.
+11906039	Slovenka sem jaz.
+11906203	Beseda škorpijon izhaja iz starogrškega.
+11909124	Vemo, da medvedi obožujejo med.
+11909144	Medved je lahko za človeka nevaren.
+11909317	Oranžna je ena od sekundarnih barv.
+11909380	Mačke obožujejo miši.
+11909397	Psi obožujejo kosti.
+11912340	Radi imamo pse in oni imajo radi nas.
+11913775	Hvala za vse!
+11914047	Za vedno si odgovoren za tisto, kar si udomačil.
+11914823	Kdor prej pride, prej melje.
+11914830	Živimo v času, ko število zločinov hitro narašča.
+11914955	Pik ose načeloma ni nevaren, če se ne pojavi alergijska reakcija.
+11916155	Kaj storiti ob piku ose ali čebele?
+11916169	Kaj storiti, če vas piči osa?
+11918436	Sova je ptica roparica.
+11918951	Kako skuhamo dobro govejo juho?
+11918958	Kako se kuha zelenjavna juha?
+11918979	Dobra, domača goveja juha je nepogrešljiv del nedeljskega kosila.
+11919001	Buče so zelo zdrava živila.
+11919432	Življenje je kratko.
+11919813	Ne verjamem v pekel.
+11919912	Ne verjamem v hudiča.
+11921357	Ali me ljubiš?
+11921368	Ti je všeč Mozart?
+11922837	Zaljubila se je!
+11925487	A, ga že vidim!
+11928238	Nebo je sivo in temno.
+11928241	Zakaj je nebo ponoči temno?
+11930123	Spolnost je zasebna stvar.
+11930462	New Delhi je glavno mesto Indije.
+11930606	New Delhi je nenavadno mesto.
+11934770	Od kdaj ima Slovenija nove državne simbole?
+11934931	Koliko časa se že učiš slovenščino?
+11935095	A misliš, da si doma?
+11935155	Koliko stane zamenjava baterije na električnem avtomobilu?
+11935179	Umrla je na kraju dogodka.
+11935188	Ostala sem sama s tremi otroki.
+11935205	Kdaj naj se otrok začne učiti tuji jezik?
+11935254	A je slovenščina težek jezik?
+11935266	Slovenščina ni tako težka.
+11935267	Slovenščina ni težek jezik.
+11935280	Kaj jesti pred in po treningu za kar najboljše rezultate?
+11935329	Arabščina je semitski jezik.
+11935333	Turščina je težek jezik.
+11935346	Ali je slovenščina težek jezik?
+11936474	Ali veste zakaj imajo gorile debele nosnice? Ker imajo debele prste.
+11936485	V slovenskem parlamentu zazvoni telefon. Dvigne pleskar, ki renovira sejno sobo: »Danes ni tukaj nikogar. Danes delamo!«
+11936562	»Kako naj vas ostrižem?« je frizer vprašal stranko na stolu.
+11936589	Gost natakarju: »Čaj brez limone prosim.« Natakar: »Limon je zmanjkalo. Ali lahko brez pomaranče?«
+11940401	Francoščina ni težek jezik.
+11940501	Koliko zvezd je na nebu?
+11943547	Voda je tekočina brez barve.
+11955314	Ona je bogata.
+11978065	Kdo pije pivo?
+11978877	Marija je vdova.
+11978904	Tom je Španec.
+11979424	Tom je vdovec.
+11979469	On je vdovec.
+11979472	Ona je vdova.
+11979491	Kje je moja žena?
+11995232	Nebo je bilo modro.
+11995734	Morje je modro.
+11996051	Jaz sem najboljša.
+11999211	Kaj jedo lisice?
+12000288	Ta žena je njena mati.
+12000318	Bila mu je dobra žena.
+12000327	Bila sta kakor mož in žena.
+12021660	Imaš mojo besedo.
+12022587	Ena plus ena je dva.
+12023626	»A« je prva črka abecede.
+12023689	»C« je tretja črka abecede.
+12064265	Ona je prevajalka.
+12064455	Ona je Ukrajinka.
+12081111	Nič ne rečem.
+12082061	Nič ne vidim, nič ne slišim, nič ne rečem.
+12116172	Klopi in pršice so pajkovci.
+12116229	Škorpijoni imajo štiri pare nog.
+12123612	Katera je naslednja postaja?
+12123644	Katera je številka poleta?
+12128935	To je ščurek.
+12154056	Ali vam je všeč nogomet?
+12164859	Hiša ob jezeru je moja.
+12164871	Kdaj imaš rojstni dan?
+12164877	Kaj imaš zdaj v šoli?
+12166884	Lahko prineseš moj kozarec?
+12166903	Učim se angleško.
+12166904	Kateri jezik se učiš?
+12167044	Kakšen je odgovor na to vprašanje?
+12167142	Naredil sem vse vaje.
+12167220	Kam pelje avtobus?
+12167221	Kam pelje ta avtobus?
+12167510	Slovnica tega jezika je težka.
+12167520	Čigava je hiša?
+12217480	Jaz sem Marija.
+12252259	Včeraj je bilo precej vroče.
+12291578	Kje je avtobusna postaja?
+12291594	Oba živita na Dunaju.
+12292833	Denar ne bo problem.
+12303743	Zgodovina se ponavlja.
+12471978	Otroci danes niso v šoli.
+12624742	EU ima 24 uradnih jezikov: angleščina, bolgarščina, češčina, danščina, estonščina, finščina, francoščina, grščina, nizozemščina, hrvaščina, irščina, litovščina, latvijščina, madžarščina, malteščina, nemščina, poljščina, portugalščina, romunščina, slovaščina, slovenščina, španščina, švedščina in italianščina.
+12659325	Kaj je pet stebrov islama?
+12659329	Zakaj nisi prebral revije?
+12659547	Uničili smo poškodovano stavbo.
+12659615	Slišal sem hrup.
+12659616	Slišala sem hrup.
+12660336	Poročil sem se z lepo žensko.
+12660362	Mislim, da je Japonska zelo varna država.
+12748866	Daj mi tisoč poljubov.
+12786644	Yamoussoukro je glavno mesto Slonokoščene obale.
+12839608	Štirideset ljudi je prišlo.
+12839630	Vojna je trajala dve leti.
+12839637	Njegova žena je Francozinja.
+12839648	Sovražim moj glas.
+12839660	Izkoplji globoko luknjo!
+12839682	Prosim, potegni vrv.
+12839684	Vse me boli.
+12839796	Kaj je ta zvok?
+12841161	Ali lahko ponovite, kar ste zdaj rekli?
+12841168	Obrni se levo!
+12843017	Knjižnica je stara osemdeset let.
+12843024	Prosim, preberite stran štiriindevetdeset.
+12843040	Ko odrastem, hočem biti kralj.
+12843100	Hodil sem hrib.
+12843425	Ne postavljaj kozarca blizu roba mize.
+12991635	Vsaka nedelja je sveta, moj dragi bratranec.
+12992634	Nikoli ni poznal ljubezni.
+12993777	Izposodila si je sosedovo mačko, da bi se znebila legla miši.
+12994513	Vstopil sem, ne da bi me kdo videl.
+12995513	Sintaksa je pravilo za zgradbo stavka in besedni red.
+12996191	Pazite, da po tipkovnici ne polijete vode.
+12996930	Prosimo, imejte svojega psa na povodcu.
+12999087	V tišini sva se objela, stopil je na vlak in nikoli več ga nisem videla.
+12999490	Običajno vse svoje stavke prevede v elefen.
+12999672	Esperanto je instrumentalni jezik, ki ga je mogoče prevesti iz katerega koli drugega jezika.
+12999980	Ni mu mar, da bi dosegel sto let. Želi si le, da bi pri dvajsetih lahko videl svojega vnuka.
+13001717	Napredek, ki ga je umetna inteligenca že dosegla pri učenju jezikov, je preprosto spektakularen.
+13004028	Človeštvo je ogromna družina, ki se razveja na številne skupine, kjer so se in se še pojavljajo različni jeziki in narečja.
+13004285	To je bila njegova najboljša tekma.
+13004818	V Braziliji je zdaj poletje.
+13005511	Hitro sem prenehal s tem, kar sem počel, da bi ustregel tvoji prošnji, prijateljica.
+13006278	Šparta si je prizadevala za hegemonijo nad celotno Grčijo.
+13006763	Okoli padca Rimskega cesarstva, ki se je zgodil leta 476, se je latinščina razvijala drugače v vsaki večji regiji Zahoda.
+13008845	Moj najboljši slovar je Tatoeba.
+13010247	"Hvala." "Ni za kaj."
+13011014	Nič ni bolj uporabnega kot branje in primerjanje stavkov iz jezikov, ki se jih želimo naučiti.
+13011405	V elefenu lahko uporabljate dve abecedi: latinico in cirilico.
+13012328	Kako lahko ta drobna mravlja ustvari toliko telesne energije?
+13012400	Toliko vprašanj in tako malo odgovorov.
+13013325	Vrstni red besed v latinskem stavku je, čeprav prost, zelo pomemben.
+13013442	Prevod mora biti predvsem zvest. Ni pomembno, ali je dobesedno ali ni.
+13014660	Zakaj so ljudje zapustili Afriko in se začeli širiti po planetu?
+13014997	Med nama ni nobene ovire.
+13015233	V veselje ji je prevajati stavke, ki jih piše.
+13016453	Najin odnos je kot redek zaklad.
+13016587	Šibak plamen utripa in nato ugasne.
+13017080	Zdaj, na stara leta in brez veliko energije, me vse utrudi, tudi poezija sama.
+13017186	Ali obstajajo dobri volkovi in ​​slabi volkovi?
+13017443	Večkrat sem naredil in predelal isti stavek.
+13018079	V elefen je napisal petnajst tisoč stavkov.
+13018129	Pet je število med štiri in šest.
+13023241	Tatoeba ima že več kot trinajst milijonov besednih zvez v stotinah jezikov!
+13024382	Dober humor je kot pomlad, saj razcveti človeško naravo.
+13024383	Veselje je kot pomlad, saj razcveti človeško naravo.
+13024794	Vsakega stavka ni mogoče napisati v verzu.
+13025191	Pekel in nebesa so duševni vtisi.
+13025193	Pekel in nebesa so vtisi misli.
+13026668	Dobesedno prevajanje ne zajame vedno pravega pomena fraze ali izraza.
+13027989	Včasih se sprašujem, kakšen bi bil najboljši način, da se naučim prevajati.
+13028503	Srečna sem! Poslušala je mojo pesem.
+13029117	Preprostost jezika – Toki Pona.
+13031929	Ljubezen mine in v vsakem srcu pusti spomin na poljub ali pritožbo.
+13032092	Naša sreča je preprosto bežen vzorec naravnega stanja večnega Bitja.
+13033202	Zdaj vsak dan napiše stran ali več za svojo novo knjigo.
+13033485	Kdor je bil nekoč kralj, nikoli ne izgubi svojega veličanstva.
+13033749	Vid, vonj, sluh, dotik in okus: človek ima pet čutov za razumevanje neba, zemlje, morja – skratka Narave.
+13033986	Krepost ne išče posvetnih užitkov.
+13034549	Ure in ure je porabil za pisanje novih stavkov, novih verzov za svojo knjigo.
+13036727	Na svetu ni čudnega, kar bi se primerjalo s tvojim poljubom, draga moja.
+13036967	Na svetu ne more biti večjega čudeža od tega poljuba, ki si mi ga dal.
+13037139	Učitelj Toki Pona je odsoten. Zelo ga pogrešamo! Kaj naj storimo zdaj?
+13038739	To je moj učitelj, predani prijatelj. Na tem planetu ni nikogar bolj kultiviranega od njega.
+13038767	S primerjanjem prevodov se učim jezikov.
+13040249	Vse naredi z žogo. Spominja me celo na kralja Peléja. Že v šoli je razkrila čarobnost svoje noge.
+13042532	Ko piše v portugalščini, uporablja isto črkovanje kot v okcitanščini.
+13042877	Zjutraj pijem kokosovo vodo.
+13042896	In Bog je videl, da je dobro.
+13045773	Zjutraj se počutim bolje.
+13046285	Rekel je, da je njegova vest čista, a v resnici ima amnezijo.
+13048441	Telo je smrtno, duša pa nesmrtna.
+13049149	Real Madrid je igral čudovito. Mbappé je dosegel tri zadetke, tri čudovite umetnine.
+13050760	Upoštevam želje dekleta z modrozelenimi očmi.
+13053448	Smrt je nepovratna izguba zavesti – končni omedlevica, dokončni mrk.
+13057549	Pogosto je lažje prevajati iz katerega koli jezika v ruščino kot iz ruščine v kateri koli drug jezik.
+13058309	Prišel sem pričat.
+13064758	Prihodnosti ni mogoče graditi s silo ali željo po osvajanju, ampak z vztrajanjem pri demokraciji, konstruktivnim duhom dogovora in spoštovanjem svobode.
+13069143	Odpeljal ga je na stran, da bi mu povedal nekaj zaupnega.
+13069492	Lepota je pesem življenja.
+13069515	Gibranov stavek bi bilo treba prevesti v vse jezike, ki se govorijo na tem planetu.
+13075575	Ali piješ vodo?
+13078900	Živjo, moja lučka.
+13081542	Zmedenega sloga ni mogoče razumeti.
+13081955	Brez užitkov skorajda ni mogel.
+13087128	Posodobila sem programsko opremo na najnovejšo različico.
+13115493	Iz lonca prihaja para.
+13158743	Kako se lahko zaščitimo pred koronavirusom?
+13187120	Ljudje hočejo mir.
+13217401	To mora biti težko.
+13228081	Apetit je želja po jedi.
+13267787	Pipo lahko kadiš, ko odrasteš.
+13267876	Spermiji lahko prepotujejo velike razdalje, da dosežejo jajčece.
+13302327	Teh mineralov ni mogoče najti nikjer drugje na svetu.
+13302676	Ali naj jo zdaj preberem?
+13304067	Poroka je pojedina, ki se začne s sladico.
+13304492	Ves svet je zaljubljen v Brazilijo.
+13304759	Na tem svetu je vse norost, razen užitka.
+13306890	Kdo ve, kako blizu je ta država ustvarjanju jedrskega orožja?
+13314218	Midva se ne strinjava glede ničesar.
+13314293	Prosim, pomagajte poškodovani osebi.
+13317526	Takoj ko eden gre noter, drugi gre ven.
+13317749	Lucy vzame sliko.
+13317773	Izpraznite poštni nabiralnik !
+13317781	To izgleda slastno.
+13317832	Lahko me pokličeš po telefonu?
+13319225	Navodilo za uporabo je v vrečki.
+13319244	Moje letalo vzleti ob četrti uri.
+13322142	Umetna inteligenca spreminja svet. Ni pametno se ji upirati.
+13335589	Hvaležnost ni le največja vrlina, ampak tudi mati vseh drugih vrlin.
+13335861	Obstaja veliko religij, a duhovnost je samo ena.
+13363570	Imam veliko družino.
+13408354	Nič več ni, to so bile sanje, ki so se končale.
+13411703	Če pobegneš, te bo zver ujela; če ostaneš, te bo zver pojedla.
+13412507	Smej se in se nauči!
+13413208	Ta skrajno nespoštljiva sporočila je sin poslal svojemu očetu.
+13413956	Nikoli ne veš, kaj bo prišlo iz te glave.
+13420482	Despotizem in najbolj absurdna arogantnost kaznujeta celo najvišja tuja sodišča.
+13426860	Toliko tehnološkega napredka in nič duhovne evolucije človeštva!
+13428478	Ta posameznik je postal predmet študije o spremembi evolucijskega razvoja človeške vrste. Zanimiv primer.
+13430349	Moje orožje sta ironija in sarkazem.
+13432099	Samo Bog ve, kaj Tom počne.
+13433920	Čas je potekel. Ne morem več čakati.
+13434205	Študije kažejo, da so v 21. stoletju avtokratije v svetu v večini.
+13435333	Ne vem, kam gre človeštvo. Ko pa bom vedel, bom šel v drugo smer.
+13435765	Vzrok smrti ni bil razkrit.
+13436580	Daleč nad ljubeznijo do sebe je Ljubezen.
+13440286	Pojdi nazaj spat, sinko, še vedno je zgodaj zjutraj.
+13448701	Na njenem telesu so bile vidne brazgotine agresije, ki jo je leta trpela zaradi svojega brutalnega in brezsrčnega spremljevalca.
+13457538	Moj profil se skoraj spreminja v blog, čeprav je zanimanje omejeno.
+13457858	Odsotnost odziva je že odziv, poln pomena.
+13460316	Ne govori tako s starši.
+13466247	Znanje osvobaja. Nevednost zasužnjuje.
+13467845	Človek je sanjski metulj.
+13469486	Umetna inteligenca prevladuje v najpogosteje govorenih živih jezikih na svetu in celo v nekaterih mrtvih jezikih.
+13469703	Celotno vesolje je medsebojno povezano. Zavest se nahaja celo v atomih.
+13469777	Nasplošno sem proti predsodkom, ki jih imam za slepe in škodljive.
+13469884	Ali bomo igrali bolje, ali pa bomo utrpeli sramoto zaradi še enega izpada.
+13482984	Brez dvoma je to življenje bolj izguba kot dobiček.
+13484515	Na svetovnem odru se pojavlja nova in temačna faza konflikta med gospodarstvi narodov.
+13487474	Ljubi svoje starše, svojo sestro, svojo družino in naučil se boš, da ljubiti bližnjega in sebe pomeni v resnici ljubiti Boga in Naravo.
+13501113	Zakaj zapravljaš čas? Govoriš z vetrom!
+13509850	Kino je umetnost, sanje, posnemanje življenja.
+13514099	Naj Svet miru za vedno prepreči izbruh novih vojn!
+13514141	Pod ruševinami uničenih hiš bi lahko bilo na tisoče trupel.
+13514518	Ljudje častijo izbire. Alfa ne izbira. Izvršuje neizogibno.
+13515735	Ne zaupaj se svojemu prijatelju, saj ima še enega prijatelja; in tudi prijatelj tvojega prijatelja ima prijatelje.
+13516241	Danes sem star. Otrok in najstnik, ki sem bil nekoč, sta ostala na poti. Čas je tiho mineval in vse se je spremenilo.
+13524836	V sladkornici je zmanjkalo sladkorja in v kavnem aparatu ni več kave.
+13532949	Zmaga je začasna, učenje pa je večno.
+13537952	Vsaka usoda, pa naj bo še tako dolga in zapletena, je pravzaprav sestavljena iz enega samega trenutka: trenutka, v katerem človek za vedno spozna, kdo je.
+13540782	Tvoja naloga, o kraljica, je odkriti, kaj ti je všeč. Moja naloga je le izpolnjevati ukaze, ki jih prejmem.
+13542683	Ko se spremeniš, se spremeni vse.
+13548709	Ko se bom poročil, bo živela z mano in mojo ženo.
+13549032	Kdor dobro živi, ​​živi dolgo.
+13553036	Ne vem, kaj tam piše.
+13553762	Kupujete ali prodajate?
+13562081	Iz slavnega trojanskega rodu se bo rodil Cezar, ki bo razširil svoje cesarstvo do oceana in svojo slavo do zvezd.
+13564803	Zadnjo noč, ki sem jo preživel s tabo, bi rad pozabil, a mi ni uspelo.
+13566555	V ruskih šolah je angleščina najbolj preučevan tuji jezik.
+13574977	Kaj imam raje? Seks ali šah? Odvisno od položaja.
+13576119	Ko bi le bila ženska občutljivost bolj prisotna v Tatoebi! Spomnim se lahko le treh čudovitih imen: Eliana, Lisa in Marina.
+13576231	Poezija razume naravo bolje kot znanost.
+13577230	Živali so naši prijatelji.
+13577295	To že vemo.
+13577410	Ti si bil razlog za moj nasmeh. Postal si razlog za moje solze.
+13582643	Ona je Sophie, on je Yan, ona sta moja pravnuka. André, ki je njun oče, je moj vnuk.
+13584354	Popotnik skozi čas je po nesreči spremenil tok zgodovine.
+13585742	Imeli smo princa: Eneja, najplemenitejšega bojevnika, najpravičnejšega gospodarja, ubogljivega, krepostnega in dobrega.
+13585918	V veselje mi je spet študirati interlinguo.
+13829210	Trenutno pišem stavek o ljubezni.
+13848093	Moj oče ima sedemnajst vnukov.
+14064179	Zelo sem izbirčen glede hrane.

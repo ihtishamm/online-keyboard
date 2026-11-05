@@ -1,0 +1,15 @@
+{
+  "source": "eowiki.xml.bz2",
+  "pages": 21336,
+  "sentences": 1570112,
+  "repeatedSentencesSkipped": 93771,
+  "tokens": 15451542,
+  "distinctWords": 605074,
+  "wordsKept": 100000,
+  "nextWordHeads": 9977,
+  "text": "eo-train.txt",
+  "textSentences": 834870,
+  "textWeight": 0.85,
+  "heldOutPages": 438,
+  "heldOutSentences": 2000
+}

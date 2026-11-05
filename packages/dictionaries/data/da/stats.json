@@ -1,0 +1,15 @@
+{
+  "source": "dawiki.xml.bz2",
+  "pages": 19355,
+  "sentences": 774046,
+  "repeatedSentencesSkipped": 54495,
+  "tokens": 9867875,
+  "distinctWords": 458889,
+  "wordsKept": 100000,
+  "nextWordHeads": 9819,
+  "text": "da-train.txt",
+  "textSentences": 65381,
+  "textWeight": 11.8,
+  "heldOutPages": 339,
+  "heldOutSentences": 2000
+}

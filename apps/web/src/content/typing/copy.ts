@@ -365,6 +365,101 @@ export const TYPING_COPY: Readonly<Record<string, TypingCopy>> = {
     test: "Test brzine tipkanja",
     tip: "Croatian QWERTZ swaps Y and Z. š and đ are to the right of P, č and ć to the right of L, and ž by the Enter key.",
   },
+  sk: {
+    tutor: "Kurz písania na klávesnici",
+    test: "Test rýchlosti písania",
+    tip: "Slovak QWERTZ swaps Y and Z. The number row types ľ, š, č, ť, ž, ý, á, í and é; digits need Shift. ú and ä are right of P, ô right of L, and ň by Enter.",
+  },
+  sl: {
+    tutor: "Tečaj tipkanja",
+    test: "Test hitrosti tipkanja",
+    tip: "Slovenian QWERTZ swaps Y and Z. š is to the right of P, č to the right of L, and ž by the Enter key.",
+  },
+  sq: {
+    tutor: "Kurs shtypjeje",
+    test: "Test i shpejtësisë së shtypjes",
+    tip: "The Albanian keyboard swaps Y and Z. ç is to the right of P and ë to the right of L, and ë comes up more than almost any other letter.",
+  },
+  lt: {
+    tutor: "Spausdinimo pamokos",
+    test: "Spausdinimo greičio testas",
+    tip: "The number keys 1 to 8 type ą, č, ę, ė, į, š, ų and ū, and the = key types ž.",
+  },
+  lv: {
+    tutor: "Rakstīšanas kurss",
+    test: "Rakstīšanas ātruma tests",
+    tip: "Hold AltGr and press the plain letter: AltGr + A types ā, AltGr + S š, AltGr + N ņ. Keep your left hand home, and use your right thumb for AltGr.",
+  },
+  et: {
+    tutor: "Trükkimise õpetus",
+    test: "Trükkimiskiiruse test",
+    tip: "ü and õ are to the right of P, ö and ä to the right of L. They are ordinary letters here, so keep them on the little finger.",
+  },
+  fi: {
+    tutor: "Konekirjoituskurssi",
+    test: "Kirjoitusnopeustesti",
+    tip: "ö and ä are to the right of L, under your right little finger. Finnish uses them all the time, so they are worth learning first.",
+  },
+  nb: {
+    tutor: "Touchkurs",
+    test: "Skrivetest",
+    tip: "å is to the right of P, and ø and æ to the right of L, in that order.",
+  },
+  da: {
+    tutor: "Touchkursus",
+    test: "Skrivetest",
+    tip: "å is to the right of P, and æ and ø to the right of L, in that order: the reverse of Norwegian.",
+  },
+  is: {
+    tutor: "Fingrasetning",
+    test: "Innsláttarpróf",
+    tip: "ð is to the right of P, æ to the right of L, ö on the - key and þ on the / key. For á, press the ´ key right of æ, then a.",
+  },
+  fo: {
+    tutor: "Knappaskeið",
+    test: "Skrivroynd",
+    tip: "æ and ø are to the right of L, and ð two keys right of P. For á, press the ´ key by Backspace, then a.",
+  },
+  ga: {
+    tutor: "Cúrsa clóscríbhneoireachta",
+    test: "Tástáil luais",
+    tip: "Hold AltGr and press the vowel for the fada: AltGr + A types á, AltGr + E é.",
+  },
+  cy: {
+    tutor: "Cwrs teipio",
+    test: "Prawf teipio",
+    tip: "AltGr + 6 is the to bach: press it, then the vowel, so AltGr + 6 then w types ŵ.",
+  },
+  gd: {
+    tutor: "Cùrsa sgrìobhaidh",
+    test: "Deuchainn sgrìobhaidh",
+    tip: "The grave comes first: press the key left of 1, then the vowel, so that key then a types à.",
+  },
+  mt: {
+    tutor: "Kors tat-tajpjar",
+    test: "Test tat-tajpjar",
+    tip: "ċ is left of 1, ġ and ħ are right of P, and ż is left of Z on 47-key keyboards. għ is two keys: g, then ħ.",
+  },
+  gl: {
+    tutor: "Curso de mecanografía",
+    test: "Proba de mecanografía",
+    tip: "Galician uses the Spanish keyboard: ñ is right of L, and the ´ key beside it, then a vowel, types á, é, í, ó or ú.",
+  },
+  eo: {
+    tutor: "Tajpokurso",
+    test: "Tajpotesto",
+    tip: "Hold AltGr and press the plain letter: AltGr + C types ĉ, AltGr + S ŝ, AltGr + U ŭ.",
+  },
+  la: {
+    tutor: "Cursus dactylographiae",
+    test: "Probatio dactylographiae",
+    tip: "Most printed Latin needs only the plain alphabet. Where a sentence has a macron, hold AltGr and press the vowel: AltGr + A types ā.",
+  },
+  af: {
+    tutor: "Tikkursus",
+    test: "Tiktoets",
+    tip: 'Marks come first, then the letter: ^ then e types ê, " then e types ë.',
+  },
   vi: {
     tutor: "Luyện gõ phím",
     test: "Kiểm tra tốc độ gõ",

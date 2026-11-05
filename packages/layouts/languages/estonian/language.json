@@ -1,0 +1,27 @@
+{
+  "slug": "estonian",
+  "code": "et",
+  "order": 680,
+  "lang": "et",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Estonian",
+    "native": "Eesti"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["et-easy", "et-standard"],
+  "accents": "äõöüšžÄÕÖÜŠŽ",
+  "sample": "Täna läheme metsa seeni ja marju korjama.",
+  "voice": ["et-EE"],
+  "wordList": true,
+  "translate": {
+    "google": "et",
+    "bing": "et",
+    "deepl": "et"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

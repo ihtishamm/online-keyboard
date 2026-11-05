@@ -1,0 +1,15 @@
+{
+  "source": "nowiki.xml.bz2",
+  "pages": 16100,
+  "sentences": 777238,
+  "repeatedSentencesSkipped": 60498,
+  "tokens": 10092674,
+  "distinctWords": 481412,
+  "wordsKept": 100000,
+  "nextWordHeads": 9650,
+  "text": "nb-train.txt",
+  "textSentences": 17757,
+  "textWeight": 38.44,
+  "heldOutPages": 309,
+  "heldOutSentences": 2000
+}

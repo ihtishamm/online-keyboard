@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+625391	Dez, vinte, trinta, corenta, cincuenta, sesenta, setenta, oitenta, noventa, cen.
+625438	A porta non debe deixarse aberta.
+625463	Estou revisando o seu informe.
+650987	Non creo que ela volva antes das cinco.
+666236	Eles foron abandonados pola súa nai.
+855309	Se quen che mandou viñera.
+857466	Cantas veces por semana recollen o lixo nesa cidade?
+862529	Parece que tes prexuízos coas ideas que veñen doutros países.
+956079	Moito tino co presente que constrúes, débelle asemellar ao futuro que soñas.
+957151	As estradas están moi transitadas a esta hora do día.
+962967	El foi o campión durante tres anos.
+962983	Non me veñas con queixas cando che trabe.
+962999	Non podo atopar este arquivo en ningures.
+1303403	Non deixes para mañá o que poidas facer hoxe.
+1319381	O amor comeza a xurdir entrámbolos dous.
+1319529	O pavillón no que se celebrou o concerto estaba atestado de xente.
+1319783	Algunhas persoas coidan que o goberno ten poder de máis.
+1319832	Non te me vaias sen despedirte.
+1338498	Fale máis amodiño, por favor!
+1339824	A caixa non contén moitos agasallos.
+1339830	Pódesme dar medio quilo de zanco de polo, por favor?
+1340375	Disque incluso a algúns británicos gústanlles as habitacións xaponesas.
+1340871	Se queres, podes responder en español.
+1340921	O profesor chamaba os seus alumnos por orde alfabética.
+1342349	Unha enfermeira tomoume a temperatura.
+1342710	Se vas ao cine, leva a túa irmá.
+1342749	Cría que el xa rematara o traballo.
+1422861	Os traballadores pediron un incremento de soldo.
+1427660	O meu pai contraxo unha pneumonía o mes pasado.
+1429856	De todos nós, nosoutros somos os mellores.
+1431229	Nós camiñamos pola marxe do Támese.
+1431464	Bule, ou perderás o último tren.
+1437402	Velaquí está o teu libro.
+1439381	O grupo de xente progresou connosco.
+1444887	Deu un paseo antes do almorzo.
+1448812	Durante a reforma, foi preciso trocar os canos de casa.
+1449485	Agora case nunca vou ao cine.
+1455134	Esquecín pagar o alugueiro este mes.
+1455975	Foi acusado de roubar diñeiro.
+1506299	Xa non es ningún neno.
+1547941	Cando non puideres facer o que quixeres, fai o que puideres.
+1727079	Grazas por nos convidares a cear.
+1795862	El foi coma un pai para min.
+1859943	Hoxe conmemórase o terceiro centenario da súa nacenza.
+4737112	O saber fainos libres e mellores.
+11998045	Estiven a ter problemas para espertar.
+12004415	Que atopaches de novo na illa?
+12019444	Non creo que cociñar sexa difícil.
+12092912	Cando volvo ler as miñas vellas frases, moitas veces atopo algo que corrixir ou retocar.
+12109183	Teño medo polas miñas inseguridades.
+12116426	A xente que vive aquí son os meus amigos.
+12143649	Por desgraza, non hai onde cambiarse na praia.
+12148744	Eu tiña unha moza, pero separámonos hai tres meses.
+12158669	Escoito a túa voz mentres a néboa cobre a cidade este domingo pola mañá.
+12162137	Calquera persoa que bebe auga sempre está saudable.
+12197501	Non podes falar en serio.
+12200407	Os morcegos son animais que voan de noite e ás veces dormen en covas.
+12202298	Unha comisión de expertos determina como asignar os fondos.
+12306967	Alugaron a súa casa para o verán.
+12310680	Chamámoslle a Nova York a Gran Mazá.
+12313290	Entendo mellor unha frase en portugués cando a comparo coa súa tradución ao galego.
+12348994	Pon a honra por riba dos cartos.
+12351350	Que será da miña querida Tullia?
+12368031	O mal chega máis rápido do que volve.
+12934740	Comamos mentres a comida estea quente.
+13036611	Non pode haber ningunha marabilla no mundo que se compare cun bico de ti, querida.
+13081564	Amo a alguén que me deixou sen motivo.
+13430418	O silencio non sempre significa consentimento.
+13449631	A mesma lei pode empregarse tanto para incriminar como para exonerar.
+13456180	O bo alumno agora ensina ao mestre.
+13564637	Oxalá puidese esquecer a última noite que pasei contigo, pero non puiden.
+13633797	Nunca esquecerei o día que a biquei por primeira vez.
+13639535	Iugurta e Roma eran inimigos acérrimos.
+13660243	Dime a verdade sobre o amor.
+13701727	Nunca confundas a compaixón co amor.
+13721372	Os teus froitos son máis doces que os froitos da miña horta.
+13722455	Ela tiña catorce anos, e el lembraba ben cando a vira por primeira vez.
+13766569	Se o poeta marcha, a festa remata.
+13860013	Como se di iso en turco?
+13969226	Estou a probar o ordenador.

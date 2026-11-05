@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+637720	Multae arbores mali in horto sunt.
+779300	Bibe totum extra ut nihil maneat intra.
+780555	Pater meus senex factus est.
+785215	Senatus decrevit ut consul novum delectum haberet et patriam ab hostibus liberaret.
+813133	Cornibus tauri, apri dentibus pugnant.
+1152061	Telehorasis in cubiculo meo est.
+1235140	Mense Februario septemdecim annos nata erit.
+1259662	Mater mane ad nosocomium it.
+1272346	Aliquid aquae in poculo est.
+1320917	Libum in secunda mensa edere velim.
+1364833	Me adiuva ad domum purgandum, quaeso.
+1384807	Ecclesia pone domum meam est.
+1386960	Scio me bonum magistrum esse.
+1390389	Quam altus ille lacus est?
+1514324	Hae fenestrae ab eo apertae sunt.
+1705477	Sunt plus quam septem milia linguarum in orbe terrarum.
+2178090	Haec femina e Polonia oriunda est.
+2843120	Veniat dilectus meus in hortum suum, et comedat fructum pomorum suorum.
+5029980	Quinque rubrorum malorum chiliogrammata emimus.
+5031278	Hoc horologium minus carum est quam illud.
+5031351	Cantrix est tam clara quam Madonna.
+5031823	Hic liber valde novus est.
+5032104	Illa raeda valde nova est.
+5032195	Petri casa valde magna est.
+5074597	Nēmō potest duōbus dominīs servīre.
+5089814	Alae huius aquilae fractae sunt.
+5094612	Eis diebus, Germania exercitum fortem habebat.
+5122442	Turris in media urbe nuper cecidit.
+5202898	Dicere quae puduit, scribere iussit amor.
+6018380	Domum meam ab eius fluvius dividit.
+6305438	Dixit se ituram esse ad Lutetiam in Augusto.
+6949271	Dic Thomae me paratum esse.
+7020816	Dulcia non meruit, qui non gustavit amara.
+7039299	Iam me tempus alio vocat.
+7040625	Verbum dulce tibi multiplicabit amicos.
+7044113	Ratio non prodest ubi vis imperat.
+7048118	Feci quod potui, faciant meliora potentes.
+7052573	Qui furtim accipit, palam exsolvit.
+7054330	Quae mala cum multis patimur, leviora videntur.
+7056261	Quod venisti, gratias tibi ago.
+7107864	Herodianus scripsit Templum Pacis opus cunctorum maximum atque pulcherrimum fuisse.
+7895574	Et, orto mane, dimissi sunt cum asinis suis.
+8452781	Thomas dixit se non amplius Bostoniae habitare.
+8452833	Maria dixit se hoc facere velle.
+8503180	Ego et Maria mox matrimonio coniungemini.
+8504419	Praeterito Saturnii die nimis multi in concento erant.
+8918512	Autocinetum, quod Thomas emit, rubrum est.
+9013498	Vocibus fortuito missis omnia paulatim comperi.
+9045854	Omni superfuisti quae adhuc tibi obtigerunt.
+9112588	Vos ambos toto pectore amo.
+10837138	Anna habet parentes bonos, maritum amantem, socrum benignam. Digna est invidia.
+10976456	Proximo anno in Scotia me visurus es.
+11031063	Bonis nocet qui malis parcet.
+11040053	Et Thōmās et Marīa id facere volēbant.
+11069158	Proximō annō Thōmās Bostoniae opus faciet.
+11075495	Hoc tibi ostendere non possum.
+11142251	Quotiēns hoc reficere cōnāta es?
+11152822	Ex eōdem vīcō oriundae sunt.
+11712352	Qui est vir qui tecum locutus est?
+11800984	Noli id mihi dicere quod scio.
+12151839	Longum iter a centro sumus.
+12211399	Non possum dormire propter te.
+12318574	Homini servo suos domitos habere oportet oculos.
+12369328	Aristoteles eudaimonian summum bonum dixit.
+12378412	Fieri potest ut turris Eiffeliana robiginem capiat?
+12747598	Cattus meus scit me eum amare.
+12958065	Video vitam per lumen oculorum tuorum.
+12960651	Non omnes aves canere possunt.
+13279811	Da mihi quinque aut sex eorum.
+13425716	Oculīs clausīs eam ōsculātus est.
+13569118	Hic templum Junoni ingens Sidonia Dido condebat, donis opulentum et numine divae.
+13730235	Summa imperii ab eo ad senatum tradita est.
+13754843	Pacem quaesivit et felicitatem invenit.
+13835369	Vigiles scelera coercent, non exercitus.
+13895584	Magnus belli fautor se ut pacis defensorem praesentare vult.
+13936175	Zebrae equis striatis similes videntur.
+13959626	Amasne meum fratrem magis quam me?
+14012278	Omnis religio pons est ad eundem locum.
+14035408	Alios omnium culpat et uxoris vitam sororis complicare amat.
+14082698	Sclavi ob levissimam culpam graviter puniebantur.

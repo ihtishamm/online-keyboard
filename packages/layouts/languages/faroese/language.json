@@ -1,0 +1,26 @@
+{
+  "slug": "faroese",
+  "code": "fo",
+  "order": 730,
+  "lang": "fo",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Faroese",
+    "native": "Føroyskt"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["fo-easy", "fo-standard"],
+  "accents": "áðíóúýæøÁÐÍÓÚÝÆØ",
+  "sample": "Í dag fara vit ein túr til Tórshavnar.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "fo",
+    "bing": "fo"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

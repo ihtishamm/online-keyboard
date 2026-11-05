@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+1383979	Ārst, man ir sāpes kuņģī.
+2536244	Nav vajadzības runāt tik skaļi.
+2562763	Šis mums nebija viegls lēmums.
+3363809	Viņš ir tāds cilvēks, kurš sauc lietas īstajos vārdos.
+3366301	Ir gandrīz jau laiks doties projām.
+3759390	Parasti viņš runā nevis krievu, bet savā dzimtajā valodā.
+9801808	Samīms parādīja Lailai dažus no saviem zīmējumiem.
+10237560	Vai kāds tev kādreiz ir teicis, kas patiešām notika?
+10259019	Kā šīs problēmas var atrisināt?
+10264047	Viņa sirsnība ieguva ikviena uzticību.
+11412480	Kā jūs vēlaties savu kafiju?
+11429585	Tu esi sev nopelnījis abonētāju!
+11506341	Es tevi saprotu, kad tu nerunā ļoti ātri.
+11581426	Kāda veida māju vēlaties celt?
+11759232	Es gandrīz vienmēr valkāju cepuri, kad dodos ārā.
+12058310	Viņa ir noģībusi sliktā gaisa dēļ.
+12101385	Atmosfēra var kļūt diezgan saspringta.
+12140857	Esmu radis iztikt ar to kas man ir.
+12166298	Reizēm man vienkārši gribas aizbēgt un pazust.
+12229691	Pie dažām lietām var pierast ātri.
+12460711	Šīs kameras cena ir pārmērīga.
+12468943	Mana sirds tā sāpēja, ka man uznāca panikas lēkme.
+12478115	Reizēm tava dāvana var būt tavs lāsts.
+12514667	Kas pie joda tas bija?
+12564192	Kad man kaut kas sāk labi izdoties, es sāku no sevis baidīties.
+12579584	Ja viņš nebūtu mūs atstājis vienus, tad beigās viss nebūtu tā izvērties.
+12580738	Tas ir salds vai skābs?
+12581683	Mani sauc Toms. Kā es varu jums palīdzēt?
+12592354	Beidz spēlēt videospēles. Tu esi atkarīgs.
+12593618	Es nejūtos pārāk ērti cilvēka ķermenī.
+12596560	Pārāk daudz sēžot mājās, es palieku īgns.
+12596582	Ne vienmēr ir tik viegli noformulēt savas sajūtas.
+12613265	Viņš teica, ka būtu atnācis.
+12638337	Man jau ir bijušas divas kafijas.
+12728498	Lai jūsu sirdsapziņa ir jūsu ceļvedis.
+12904416	Es jūtos daudz labāk nekā pirmīt.
+12910677	Tagad man tam nav laika.
+12912689	Es nevaru pārstāt ēst čipsus, tie vienkārši garšo tik labi!
+12925838	Ja domā, ka esi tik nabadzīgs, iedomājies, ka trušiem savvaļā nav vajadzīga nauda, lai izdzīvotu.
+12930504	Tu droši vien domā, ka es esmu dīvains.
+12931672	Man likās, ka visi uz mani skatās.
+12961002	Tu neredzi savai dzīvei citu jēgu.
+12964060	Es zināju, ka tā bija slikta ideja.
+12970529	Ceru, ka tu nelūdz man aiziet.
+13284938	Vai šajā parkā mēs varam skrituļslidot?
+13379124	Viņa skrēja kā traka, lai panāktu viņu.
+13397585	Es nezinu, kā to aprakstīt.
+13515442	Viņa pie tā ir pieradusi.
+13634192	Toms izlikās, ka viņam nav naudas.
+13634715	Vai jūs dzerat kafiju ar cukuru vai bez?
+13652567	Vakaros, man mājās savu reiz ārprātīgi lēns internets.
+13653263	Es parasti nejūtos ērti strādājot komandā.
+13667919	Es nevaru ciest bērnu raudāšanu.
+13667952	Es vairs nevaru izturēt tavu čīkstēšanu.
+13694334	Ah, tomēr nē, man jau iedomājoties slikti paliek.
+13695651	Es knapi esmu pie kaut kādas veselības.
+13699908	Toms nekad nezina ko grib.
+13700510	Ko viņi ar to grib panākt?
+13717756	Kā es varu būt tik stulbs, ka man atkal tas nesanāk?
+13756522	Nav jau nemaz tik traki.
+13815086	Cik bieži tu ēd cūkgaļu?
+13818176	Futbola komandā ir vienpadsmit cilvēki.
+13830587	Jūs visi esat izsalkuši, vai ne?
+13836942	Vai tu man parādīsi, kā izmantot šo kameru?
+13837162	Cik bieži jūs viens ar otru runājat?
+13851157	Kad tu atgriezies no Tokijas?
+13859670	Kādas valstis tu esi apmeklējis?
+13906256	Toms gribēja parunāt par ko citu.
+13906260	Tev tiešām vajadzētu ar viņiem parunāt.
+13970648	Tu tiešām runāji ar Tomu?
+13970712	Vai tu vari izņemt trīsdesmit eiro?
+13971559	Es gandrīz nekad vairs neizeju no mājas.
+13971597	Mēs visi esam atšķirīgi, bet daži ir atšķirīgāki kā citi.
+13985016	Es zinu, ka tā nav tava vaina.
+13989211	Toms gultā nogulēja trīs nedēļas.
+13991475	Dieva dēļ! Dari, kā vēlies!
+13991759	Lai ko par mani teiktu, netici.
+14011237	Domāju, ka viņš pie jums rīt atnāks.
+14071274	Es labāk skatītos aizraujošu trilleri.
+14093170	Es tevi brīdināju, par to kas varētu notikt.

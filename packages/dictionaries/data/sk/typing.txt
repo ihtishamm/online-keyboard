@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+1318019	To nie je umenie. To je vagína so zubami.
+1441909	Tento sociologický výskum sa týka potratov.
+2862813	Vidím ho dosť často v meste. Niekedy obedujeme spolu.
+3339528	Hnutie odporu dalo veľa hrdinov.
+5013335	Nakoniec išla do Spojených štátov amerických.
+5013369	Nikto u mňa nie je.
+5100403	Som zvedavý, či je doma.
+7584603	Myslím, že to nie je pravda.
+8177129	Polož knihu na písací stôl!
+8874255	Kanárik je malý vtáčik a ľudia ho niekedy chovajú ako domáce zvieratko.
+8921042	Nikdy predtým som nehral tú hru.
+8936194	Zvykol som si viesť denník.
+8944770	Vďaka tebe som stratil chuť do jedla.
+8956570	Je toto dobré miesto na vysadenie stromu?
+8980732	Jeho koberec je celý biely.
+8996644	Vrátim sa asi o hodinu.
+8996794	Vonku je zima. Obleč si kabát.
+9006151	Obávam sa, že som prechladol.
+9042593	Učiteľ by sa nikdy nemal smiať na žiakovi, ktorý urobí chybu.
+9071229	Robiť si starosti je ako platiť dlh, ktorý nemáte.
+9079933	Tieto jablká sú pre teba.
+9264115	Chcel bych sa vás opýtať ešte zopár otázok.
+9715752	Zdá sa, že na tejto zemi nič nerastie.
+9727764	Podľa teplomera je vonku tridsať stupňov.
+9797539	Je príliš teplo a ja som veľmi unavená.
+9831393	Kto si stále nájde čas na dlhý list priateľovi?
+9935642	V poslednom čase robíte priveľa chýb.
+9954698	Sadni si tu a čakaj.
+9970423	Žalúdok a hrubé a tenké črevo tvoria tráviacu sústavu.
+9986311	Povedz jej, že som vo Francúzsku.
+9989564	Mária Lujza je matkou ôsmich detí.
+9993579	Amazonka je po Nílu druhá najdlhšia rieka na svete.
+10008526	Rád by som povedal zopár slov.
+10053680	Viete, ako sa to stalo?
+10065734	Vďaka Bohu, ste v poriadku.
+10496563	Nemohli by sme sa dneska stretnúť?
+10631403	Ak nemáš čo robiť, dívaj sa na strop svojej izby.
+11071587	On je dobrý maliar, však?
+12055187	Chcel som sa ľuďom páčiť.
+12572771	Odišla z domu pred desiatimi minútami.
+12623832	Prepáč, ale nemôžem ti pomôcť.
+12631642	Dnes večer idem do kina.
+12681886	Rukopis môjho strýka je ťažko čitateľný.
+12684091	Čo sú toto za otázky?
+12697080	Našla som miesto na bývanie.
+12710214	Koľko bytov je v tomto dome?
+12722636	Taký nezmysel som ešte nepočul.
+12743956	Soul je hlavné mesto Južnej Kórey.
+12782696	Hlavné mesto Tuniska je Tunis.
+12783623	Hlavným mestom Australie je Canberra.
+12793169	Mal by si skákať od radosti.
+12808434	Mogadišo je známe ako hlavné mesto únosov.
+12821808	Prečo sa žirafám nezakrúti hlava?
+12892545	Vráskavec obrovský je najväčším živočíchom, aký kedy žil na Zemi.
+12894463	Taškent je hlavné mesto Uzbekistanu.
+13028957	Zuzana Čaputová bola v poradí piatou prezidentkou Slovenskej republiky.
+13029524	Táto vláda nie je sociálna.
+13050710	Stať sa fyzicky zdatnejší je dnes jednoduché.
+13055140	Podali sme si ruky a usmiali sa na seba.
+13080511	Veverica žije v lesoch rôzneho druhu.
+13082685	Povedzte mi, čo to je.
+13116546	To ešte nie je všetko?
+13141835	Toto je obývačka, toto je kuchyňa a toto je záchod.
+13204657	Padol som na kolená a rozplakal sa.
+13268487	Včera bolo mimoriadne silné zemetrasenie.
+13431693	Čistenie zubov sa nezaobíde bez kvalitnej zubnej kefky.
+13480429	Adam Mickiewicz bol veľký básnik.
+13542411	Čo najradšej robíš vo svojom voľnom čase?
+13595279	Porušila si jedno z najdôležitejších pravidiel.
+13734627	Polyglot pozná a aktívne používa aspoň štyri jazyky.
+13734774	Slovenčina alebo slovenský jazyk je indoeurópsky jazyk.
+13812917	Celá rodina sa teší dobrému zdraviu.
+13906519	Celý chladiaci systém je tvorený niekoľkými časťami.
+13910831	Čokoláda sa výraba z plodov kakaovníka.
+13922681	Lekári bez hraníc je najväčšia nezávislá nezisková lekárska humanitárna organizácia na svete.
+13923965	Dnes má môj oco narodeniny.
+13949712	Anna je skvelá a ušľachtilá žena.
+13995831	Alkohol má negatívny vplyv na telo.
+14012184	Ako sa má tvoja sestra?
+14014062	Praha je moje rodné mesto.

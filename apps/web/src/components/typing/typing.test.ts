@@ -165,9 +165,23 @@ describe("lessons", () => {
 });
 
 /** Languages whose Tatoeba set is too small or not in their script: words only. */
-const NO_SENTENCES = new Set(["sd", "ks", "kok", "mai", "dv", "zlm", "brh", "scl", "khw", "ky", "tg"]);
+const NO_SENTENCES = new Set([
+  "sd",
+  "ks",
+  "kok",
+  "mai",
+  "dv",
+  "zlm",
+  "brh",
+  "scl",
+  "khw",
+  "ky",
+  "tg",
+  "fo",
+  "mt",
+]);
 /** Small Tatoeba sets: every usable sentence, under 50. */
-const FEW_SENTENCES = new Set(["ps", "pnb", "gu", "te", "kn", "si", "or", "sa", "mn"]);
+const FEW_SENTENCES = new Set(["ps", "pnb", "gu", "te", "kn", "si", "or", "sa", "mn", "gd"]);
 
 describe("generated typing pages", () => {
   it("cover every language but Urdu, which has its own, Hindko, with no text yet, and those typed by conversion", () => {

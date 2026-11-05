@@ -1,0 +1,15 @@
+{
+  "source": "fowiki.xml.bz2",
+  "pages": 14266,
+  "sentences": 158591,
+  "repeatedSentencesSkipped": 28454,
+  "tokens": 1645326,
+  "distinctWords": 148612,
+  "wordsKept": 42454,
+  "nextWordHeads": 8171,
+  "text": "fo-train.txt",
+  "textSentences": 16,
+  "textWeight": 23.2,
+  "heldOutPages": 288,
+  "heldOutSentences": 1944
+}

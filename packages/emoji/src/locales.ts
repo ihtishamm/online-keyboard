@@ -3,6 +3,7 @@
 
 /** Keyword file loaders, one per language CLDR annotates. */
 export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unknown }>>> = {
+  "af": () => import("../data/af.json"),
   "ar": () => import("../data/ar.json"),
   "as": () => import("../data/as.json"),
   "be": () => import("../data/be.json"),
@@ -10,17 +11,26 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
   "bn": () => import("../data/bn.json"),
   "ca": () => import("../data/ca.json"),
   "cs": () => import("../data/cs.json"),
+  "cy": () => import("../data/cy.json"),
+  "da": () => import("../data/da.json"),
   "de": () => import("../data/de.json"),
   "el": () => import("../data/el.json"),
   "es": () => import("../data/es.json"),
+  "et": () => import("../data/et.json"),
   "fa": () => import("../data/fa.json"),
+  "fi": () => import("../data/fi.json"),
+  "fo": () => import("../data/fo.json"),
   "fr": () => import("../data/fr.json"),
+  "ga": () => import("../data/ga.json"),
+  "gd": () => import("../data/gd.json"),
+  "gl": () => import("../data/gl.json"),
   "gu": () => import("../data/gu.json"),
   "he": () => import("../data/he.json"),
   "hi": () => import("../data/hi.json"),
   "hr": () => import("../data/hr.json"),
   "hu": () => import("../data/hu.json"),
   "hy": () => import("../data/hy.json"),
+  "is": () => import("../data/is.json"),
   "it": () => import("../data/it.json"),
   "ja": () => import("../data/ja.json"),
   "ka": () => import("../data/ka.json"),
@@ -31,10 +41,13 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
   "kok": () => import("../data/kok.json"),
   "ky": () => import("../data/ky.json"),
   "lo": () => import("../data/lo.json"),
+  "lt": () => import("../data/lt.json"),
+  "lv": () => import("../data/lv.json"),
   "mk": () => import("../data/mk.json"),
   "ml": () => import("../data/ml.json"),
   "mn": () => import("../data/mn.json"),
   "mr": () => import("../data/mr.json"),
+  "mt": () => import("../data/mt.json"),
   "my": () => import("../data/my.json"),
   "ne": () => import("../data/ne.json"),
   "nl": () => import("../data/nl.json"),
@@ -48,6 +61,9 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
   "ru": () => import("../data/ru.json"),
   "sd": () => import("../data/sd.json"),
   "si": () => import("../data/si.json"),
+  "sk": () => import("../data/sk.json"),
+  "sl": () => import("../data/sl.json"),
+  "sq": () => import("../data/sq.json"),
   "sr": () => import("../data/sr.json"),
   "sv": () => import("../data/sv.json"),
   "ta": () => import("../data/ta.json"),
@@ -63,10 +79,10 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
 };
 
 /** Languages CLDR lacks whose speakers search in another language's keywords. */
-export const ALIASES: Readonly<Record<string, string>> = {"skr":"ur","bal":"ur","hno":"ur","brh":"ur","scl":"ur","khw":"ur","ks":"ur","sa":"hi","mai":"hi","prs":"fa","ms-Arab":"ms","zh-Hans":"zh"};
+export const ALIASES: Readonly<Record<string, string>> = {"skr":"ur","bal":"ur","hno":"ur","brh":"ur","scl":"ur","khw":"ur","ks":"ur","sa":"hi","mai":"hi","prs":"fa","ms-Arab":"ms","zh-Hans":"zh","nb":"no"};
 
 /** Registry languages with no CLDR keywords: their emoji search is in English. */
-export const NOT_ANNOTATED: readonly string[] = ["ckb","dv"];
+export const NOT_ANNOTATED: readonly string[] = ["ckb","dv","eo","la"];
 
 /** Every registry language this file was generated for. */
-export const LANGUAGE_TAGS: readonly string[] = ["ar","as","bal","be","bg","bn","brh","ca","ckb","cs","de","dv","el","es","fa","fr","gu","he","hi","hno","hr","hu","hy","it","ja","ka","khw","kk","km","kn","ko","kok","ks","ky","lo","mai","mk","ml","mn","mr","ms-Arab","my","ne","nl","or","pa","pa-Arab","pl","prs","ps","pt","ro","ru","sa","scl","sd","si","skr","sr","sv","ta","te","tg","th","tr","ug","uk","ur","vi","zh-Hans","zh-Hant"];
+export const LANGUAGE_TAGS: readonly string[] = ["af","ar","as","bal","be","bg","bn","brh","ca","ckb","cs","cy","da","de","dv","el","eo","es","et","fa","fi","fo","fr","ga","gd","gl","gu","he","hi","hno","hr","hu","hy","is","it","ja","ka","khw","kk","km","kn","ko","kok","ks","ky","la","lo","lt","lv","mai","mk","ml","mn","mr","ms-Arab","mt","my","nb","ne","nl","or","pa","pa-Arab","pl","prs","ps","pt","ro","ru","sa","scl","sd","si","sk","skr","sl","sq","sr","sv","ta","te","tg","th","tr","ug","uk","ur","vi","zh-Hans","zh-Hant"];

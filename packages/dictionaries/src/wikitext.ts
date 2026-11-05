@@ -82,6 +82,11 @@ export function stripWikitext(source: string): string {
   s = removeNested(s, "{{", "}}");
   s = removeNested(s, "{|", "|}");
   s = s.replace(/<[^>]*>/g, " ");
+  // Table and image attributes left by templates (align=right, style="…").
+  s = s.replace(
+    /\b(?:align|valign|style|width|height|colspan|rowspan|bgcolor|border|cellpadding|cellspacing|class)\s*=\s*(?:"[^"]*"|'[^']*'|[^\s|]+)/gi,
+    " ",
+  );
   s = replaceLinks(s);
   s = s.replace(/\[(?:https?:|ftp:)?\/\/[^\s\]]*\s*([^\]]*)\]/g, " $1 ");
   s = s.replace(/(?:https?:|ftp:)\/\/\S+/g, " ");

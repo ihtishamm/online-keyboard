@@ -127,7 +127,38 @@ const ONE_LETTER: Record<string, string> = {
   ca: "aiodlmnst",
   hr: "aiuosk",
   vi: "aàáảãạôơởừửyý",
+  sk: "aikosuvz",
+  sl: "aiksouvz",
+  sq: "aeou",
+  lt: "iojs",
+  lv: "aiu",
+  et: "aeja",
+  fi: "",
+  nb: "iåøe",
+  da: "iåø",
+  is: "aáíóúé",
+  fo: "aíáó",
+  ga: "aéóis",
+  cy: "aiyo",
+  gd: "aiòs",
+  mt: "uaxi",
+  gl: "aeoóou",
+  eo: "aeo",
+  la: "aeioō",
+  af: "",
 };
+/**
+ * Maltese, Irish and Scottish Gaelic write articles and prefixes with a hyphen (il-kelb,
+ * t-uisce, h-uile): a word of its own, or every noun would be listed once per article.
+ */
+const HYPHEN_SPLITS = new Set(["mt", "ga", "gd"]);
+const LATIN_RUN_NO_HYPHEN = /\p{Script=Latin}(?:[\p{Script=Latin}\p{M}]|·(?=\p{Script=Latin}))*/gu;
+/** Latin Wikipedia cites English sources; these would rank among its commonest words. */
+const FOREIGN: Readonly<Record<string, ReadonlySet<string>>> = {
+  la: new Set("the of and to for by on from with at is as an be this that".split(" ")),
+};
+/** Where the Wikipedia is not named after the data code (Norwegian Bokmål is on nowiki). */
+const WIKI: Readonly<Record<string, string>> = { nb: "nowiki" };
 /**
  * Turkish writes the endings of a name after an apostrophe (Türkiye'nin, Tom'un). The ending
  * is part of the word, not a word of its own: it is matched with the name and cut off, so
@@ -140,14 +171,19 @@ const ROMANIAN_COMMA: Record<string, string> = { ş: "ș", ţ: "ț", Ş: "Ș", �
 
 const latin = (code: string): TextRules => ({
   code,
-  wiki: `${code}wiki`,
+  wiki: WIKI[code] ?? `${code}wiki`,
   sentenceEnd: LATIN_SENTENCE_END,
-  run: SUFFIX_AFTER_APOSTROPHE.has(code) ? LATIN_RUN_SUFFIX : LATIN_RUN,
+  run: SUFFIX_AFTER_APOSTROPHE.has(code)
+    ? LATIN_RUN_SUFFIX
+    : HYPHEN_SPLITS.has(code)
+      ? LATIN_RUN_NO_HYPHEN
+      : LATIN_RUN,
   joiners: /\s/g,
   normalizeWord: (raw) => {
     let word = normalizeLatin(raw.replace(/['’].*$/u, ""));
     // Romanian writes ș and ț with a comma; older text has the cedilla look-alikes ş and ţ.
     if (code === "ro" && word) word = word.replace(/[şţŞŢ]/g, (c) => ROMANIAN_COMMA[c]!);
+    if (word && FOREIGN[code]?.has(word.toLowerCase())) return null;
     if (word === null || [...word].length > 1) return word;
     return ONE_LETTER[code]!.includes(foldLatin(word, LATIN_LOCALES[code]!)) ? word : null;
   },

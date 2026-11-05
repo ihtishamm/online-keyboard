@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+1667879	Ar tu nežinai kur mano seni akiniai?
+2157702	Mes kiekvieną dieną bendraujame telefonu.
+2186033	Ji yra nepriklausoma nuo tėvų.
+2188082	Kas bus, jeigu paspausiu šį mygtuką?
+2618556	Aš nesitikėjau, kad jūs grįšite taip anksti.
+3216877	Nuleisk mane ant žemės, Tomai.
+3265510	Kodėl tu turi Tomo raktus.
+7204420	Bausmė turėtų būti proporcinga nusikaltimui.
+7790036	Aš norėčiau žinoti tikslų jenos kursą.
+7796326	Rytais Marija mankštinasi prie atviro lango.
+7907855	Aš tiesiog klausiausi, nieko nesakydamas.
+8245397	Ji taip pat yra išmintinga, kaip ir jis.
+8391676	Tomas yra geriausias mūsų įmonės darbuotojas.
+8843007	Kodėl tu manęs taip nekenti?
+8851261	Jie niekada nepadarė to, ką sakė, kad jie padarys.
+8860508	Tomas ir Marija sėdėjo vienas šalia kito.
+8870418	Akiniai nukrito ant grindų ir sudužo.
+9035656	Tomas dar negrįžo iš Australijos.
+9063703	Tomas nekantrauja susitikti su tavimi.
+9636591	Senąją miesto dalį juosė siena.
+9707537	Auksas yra nepaprastai brangus metalas.
+10187909	Jeigu jo nėra, sukurk jį.
+10282350	Ar tu esi už karą, ar prieš?
+10305096	Čia nėra taip jau blogai.
+10322014	Ji iš tikrųjų gali didžiuotis savo dukterimi.
+10501132	Manau, kad jums patiks desertas.
+10544263	Aš žadu su ja ten susitikti.
+10683337	Tomas kol kas negali su mumis pasišnekėti.
+10702779	Kas jus išmokė šliuožti slidėmis?
+10714521	Katė šalia lovos ėda pelę.
+10744932	Kiek ji išeikvoja per mėnesį?
+11070585	Bemaž visi žino, kad mano gimtoji kalba yra turkų.
+11204750	Aš su juo gyvenau viename kambaryje.
+11461528	Manęs paprašė skaityti paskaitą apie astronomiją.
+11549842	Su juo pernelyg daug rūpesčių.
+11778533	Žmonės nenori, kad tai pasibaigtų.
+11848559	Šios dainos priedainį sunku išmesti iš galvos.
+11937239	Mes visi norėtume atominio ginklo atsikratyti.
+12107810	Per egzaminą aš gavau penketą.
+12178236	Apie ką ji tavęs klausinėjo?
+12214190	Kai aš jį paskutinį kartą mačiau, jis buvo dar vaikas.
+12282227	Aš pas jį dažnai užeinu.
+12319967	Tomas stengėsi savo pyktį kontroliuoti.
+12324829	Reikia šiek tiek anksčiau ateiti.
+12325637	Jie tau apie tai pasakys.
+12423994	Žmonės viską priima pernelyg rimtai.
+12537699	Dabar Tomo eilė plauti indus.
+12554214	Mano nuomone, tai pernelyg laisvas vertimas.
+12720205	Aš supratau, ką jis šneka.
+12734197	Jūs seserį privedėte iki ašarų!
+12775504	Aš ir nežinojau, kad ji turi dukrą.
+12806504	Tu neįsivaizduoji, kiek laiko aš tam sugaišau.
+12851623	Padėkite man šitą mazgą atmegzti.
+12865650	Aš nematau jokių trūkumų, tik privalumus.
+12899150	Tomas svajoja apie didelį namą Atlanto pakrantėje.
+12901336	Galimas dalykas, tu ir teisus...
+12981927	Aš jaučiu tavo širdies plakimą.
+13026315	Juk tai yra nepaprastas, tiesa?
+13039928	Mano šeima gyvena šitame name.
+13045755	Vakar vakare per televizijos žinias rodė Tomą.
+13056615	Aš matau, kad su Jumis galima turėti reikalą.
+13192890	Ko jūs tokie pikti? Neleidžia pasivaikščioti?
+13217468	Aš manau, kad pasielgiau teisingai.
+13235234	Tokiomis aplinkybėmis tai buvo teisingas sprendimas.
+13324286	Jis mėgsta valgyti žalias morkas.
+13325470	Aš esu gana keblioje padėtyje.
+13362534	Tai buvo ne tik jo, bet ir visų noras.
+13380082	Skaityk kiek galima daugiau knygų.
+13430170	Jų akys buvo pilnos liūdesio.
+13441638	Sutinku, nueisiu su jumis dėl kompanijos.
+13456449	Aš būtent taip ir galvojau.
+13623556	Jūs negalite to daryti vien savo jėgomis.
+13708108	Tomas žino, kad tai melas.
+13731024	Abejoju, kad tau bus sunku gauti vairuotojo pažymėjimą.
+13773032	Ji kalbėjo beveik be sustojimo.
+13857986	Ar jie tau ne didoki?
+13862761	Ko jūs labiau už viską nekenčiate gyvenime?
+13879644	Šitas garsas turėjo priešui įvaryti baimės.
+13942702	Dėl ko jūs iš viso jai pasakėte, kad aš čia?
+14056556	Iš jūsų malonės aš čia jau dvi valandas stypsau.

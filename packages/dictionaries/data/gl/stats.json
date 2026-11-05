@@ -1,0 +1,15 @@
+{
+  "source": "glwiki.xml.bz2",
+  "pages": 18097,
+  "sentences": 618278,
+  "repeatedSentencesSkipped": 66896,
+  "tokens": 10665653,
+  "distinctWords": 297984,
+  "wordsKept": 100000,
+  "nextWordHeads": 9822,
+  "text": "gl-train.txt",
+  "textSentences": 7590,
+  "textWeight": 34.97,
+  "heldOutPages": 373,
+  "heldOutSentences": 2000
+}

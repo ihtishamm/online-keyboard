@@ -1,4 +1,11 @@
-import { NO_MODIFIERS, TypingMachine, US_QWERTY, isKeyCode, type KeyCode } from "@okb/engine";
+import {
+  deadStrokeMap,
+  NO_MODIFIERS,
+  TypingMachine,
+  US_QWERTY,
+  isKeyCode,
+  type KeyCode,
+} from "@okb/engine";
 import { parseLayout } from "@okb/engine/layout";
 import { describe, expect, it } from "vitest";
 import {
@@ -362,6 +369,17 @@ describe("Latin layouts", () => {
     "cs-easy": "čďěňřšťůžČĎĚŇŘŠŤŮŽ",
     "hu-easy": "őűŐŰ",
     "hr-easy": "čćđšžČĆĐŠŽ",
+    "sk-easy": "čďĺľňŕšťžČĎĹĽŇŔŠŤŽ",
+    "sl-easy": "čšžČŠŽ",
+    "lt-easy": "ąčęėįšųūžĄČĘĖĮŠŲŪŽ",
+    "lv-easy": "āčēģīķļņšūžĀČĒĢĪĶĻŅŠŪŽ",
+    "et-easy": "šžŠŽ",
+    "fi-easy": "šžŠŽ",
+    // Finnish and Swedish Windows keyboards leave š and ž, in loanwords only, to the accent bar.
+    "fi-standard": "šžŠŽ",
+    // Typed as cx, gx, hx, jx, sx, ux: rules, not keys (the golden test below).
+    "eo-x-system": "ĉĝĥĵŝŭĈĜĤĴŜŬ",
+    "la-easy": "œŒ",
     // Telex and VNI compose these from the keys before them (engine test/compose.test.ts).
     "vi-telex": "ăâđêôơưĂÂĐÊÔƠƯ",
     "vi-vni": "ăâđêôơưĂÂĐÊÔƠƯ",
@@ -406,6 +424,42 @@ describe("Latin layouts", () => {
     ["cs-qwertz", "2", "ě"],
   ])("%s: %s types %s", (id, keys, expected) => {
     expect(typeOn(id, keys)).toBe(expected);
+  });
+});
+
+describe("dead keys start on the key that is dead", () => {
+  it("Welsh: ^ is literal on Shift+6, dead on AltGr+6, so ŵ starts on AltGr+6", () => {
+    const stroke = deadStrokeMap(getLayout("cy-uk-extended")).get("ŵ")!;
+    expect(stroke.first).toMatchObject({ code: "Digit6", altgr: true });
+  });
+
+  it("Gaelic: the ' key is an apostrophe, and ` then a vowel types the grave", () => {
+    expect(typeOn("gd-standard", "'a")).toBe("'a");
+    expect(deadStrokeMap(getLayout("gd-standard")).get("à")!.first).toMatchObject({
+      code: "Backquote",
+      shift: false,
+    });
+  });
+});
+
+describe("Esperanto's x-system rewrites as it goes", () => {
+  it.each([
+    ["cx", "ĉ"],
+    ["Gx", "Ĝ"],
+    ["sxi", "ŝi"],
+    ["hodiaux", "hodiaŭ"],
+    ["jxus", "ĵus"],
+    ["hx", "ĥ"],
+    ["ax", "ax"],
+  ])("%s gives %s", (keys, expected) => {
+    const machine = new TypingMachine(getLayout("eo-x-system"));
+    let out = "";
+    for (const ch of keys) {
+      const hit = US_TO_CODE.get(ch)!;
+      const r = machine.press(hit[0], { ...NO_MODIFIERS, shift: hit[1] }, out);
+      if (r.kind === "text") out = out.slice(0, out.length - (r.remove ?? 0)) + r.text;
+    }
+    expect(out).toBe(expected);
   });
 });
 

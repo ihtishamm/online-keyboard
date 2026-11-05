@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+949422	To je moj poštni naslov.
+1499863	Burdž Kalifa je trenutno najvišji nebotičnik na svetu.
+1566904	Kalkulator na mizi je moj.
+1790231	Moja sestra je včeraj šla v Kobe.
+2155118	Ta zemljišča je moja lastnina.
+3005194	Kaj se mu je zgodilo?
+3013186	Še nikoli nisem bil tukaj.
+3486099	Odrasla je v prelepo žensko.
+3486105	Lahko vidim vašo vstopnico? Seveda, tukaj je.
+3667532	V Afriki ni deževalo že več kot en mesec.
+3811277	Rada bi preživela več časa s svojo družino.
+4841488	Kuj železo, dokler je vroče.
+5806561	Njegov sin se je tresel od strahu.
+5923391	To zgodbo mi je povedal prijatelj.
+5965445	Če bi te želela ubiti, bi te lahko ubila.
+6029964	Koliko let še nameravaš živeti tukaj?
+6597619	Znotraj se je počutil praznega.
+6597658	Hočem nov mlinček za poper.
+6597681	Če boš imel družino, ženo in otroke boš razumel.
+6598569	Poišči Boga, če ga lahko
+6599701	A lahko kakam v miru?
+6601123	Zelo smo utrujeni in razdražljivi.
+6601176	Marija je tudi skrbela za živali.
+6601352	Moj prednik je bil konjenik iz Mongolije.
+10363168	Kaj se dogaja v tej državi?
+11607321	Užival sem v lepi pomladi.
+11638035	Vsak dež ima svoj čas.
+11639659	Živijo, moje ime je Janez.
+11639698	Živijo, moje ime je Omid.
+11643307	Kraljica je mrtva, naj živi kralj!
+11700921	Kako se to reče po berbersko?
+11701703	Jabolko ne pade daleč od drevesa.
+11712916	Bolgarija je zelo lepa dežela.
+11715193	Eden za vse, vsi za enega.
+11730573	Zakaj je življenje tako zapleteno?
+11741981	Kjer je volja, tam je pot.
+11742605	Kaj je sreča za vas?
+11768109	Vilna je glavno mesto Litve.
+11768640	Kijev je glavno mesto Ukrajine.
+11768682	Kopenhagen je glavno mesto Danske.
+11768685	Oslo je glavno mesto Norveške.
+11771574	Beograd je glavno mesto Srbije.
+11771769	Danes je tvoj rojstni dan.
+11772432	Glavno mesto Laosa je Vientiane.
+11787396	Kdor ne posluša, naj izkuša.
+11885004	To je bila zelo velika napaka.
+11885861	Mislite, da slovnica ni pomembna?
+11897803	Zakaj ima žirafa dolg vrat?
+11930126	Spolnost je zasebna stvar vsakega posameznika in jo vsak čuti in doživlja na svoj način.
+12115180	Kdor prime za meč, bo z mečem poginil.
+12167229	Katero je največje mesto v Sloveniji?
+12167257	Moja prijateljica živi v Mariboru.
+12659339	Zelo mu je všeč nogomet.
+12839640	Ta knjiga je zelo debela.
+12996232	Starost je kot drugo otroštvo.
+12998004	Vsak dan, ki mine, je še en korak do končnega spanca.
+13008210	Imeli smo najbolj ljubečo in modro mamo.
+13017985	V teh stavkih je bila jasna podobnost med ruščino, slovenščino, srbščino in poljščino.
+13026431	Vredno je poskusiti napisati nekaj verzov.
+13026780	Ne morem verjeti, da lahko pri teh letih tako trdo dela.
+13073423	Sonce upanja nikoli ne zaide.
+13081638	Ljubim nekoga, ki me je zapustil brez razloga.
+13249274	Kako se človek nauči tujega jezika?
+13296932	Kaj misliš, da se zdaj dogaja?
+13304243	Med napadom je bilo hudo ranjenih več deset ljudi.
+13319235	On bere staro knjigo v francoščini.
+13319239	Ne morem zavračati tako dobre priložnosti.
+13485075	Pitje kave je zdrava navada. Dobro je za možgane in srce.
+13527304	Ali se lahko telo pozdravi z bolnim srcem?
+13546387	Potem sem spoznal, da je na obzorju še nekaj drugega.
+13550240	Vesolje je velikanski možgani. In ima svojo zavest.
+13553375	Ne razumem, kaj se dogaja, in to me zelo moti.
+13553863	Nihče ne more kupiti sreče.
+13558439	Mnogi ljudje so obstajali, a v resnici nikoli niso zares živeli.
+13570331	Iskreno povedano, ne razumem te.
+13583577	Cvetele so jablone in hruške, nad reko so se razširile megle.
+13586990	Zame ne bo razlike med Tirci in Trojanci.
+13591046	Moj brat je plesal z ženo, ko je doživel smrtonosni srčni napad.
+13629721	Pravkar sem končal domačo nalogo!
+13629728	Pravkar sem končala domačo nalogo!

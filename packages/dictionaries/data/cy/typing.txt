@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+1392516	Dw i ddim yn hoffi coffi.
+1422530	Cafodd hi ei geni yn America.
+1524747	Mae llygaid du 'da fi.
+1552234	Mae llygad ddu 'da fi.
+1571072	Mae fy marn i yn debyg i dy farn di.
+1963678	Dw i methu aros yma heno.
+1963699	Pa bryd wnawn ni ail-baentio ei hystafell hi?
+1963989	Dydw i ddim eisiau brechdanau.
+1968605	Oes gennych chi unrhyw lyfrau am Armenia?
+1977167	Mae hi wedi bod yn ddiwrnod da.
+1977869	Roedd yr ardd yn llawn o flodau melyn.
+1977880	Pam wnest ti gadael dy swydd?
+1978875	Mae gan gath gynffon a phedair coes.
+1978881	Ysgrifennodd Alexander frawddegau yn yr iaith Ferber.
+1978923	Welaist ti ei hwyneb hi?
+1979159	Wnest ti anghofio unrhyw beth?
+1981878	Pa fathau o frechdanau sydd gennych?
+1982032	Os wyt ti eisiau rhedeg, yna rheda.
+3090720	Gwelon nhw gath yn yr ardd.
+3138743	Sasha yw fy enw i.
+3604044	Does gen i ddim amser.
+3604046	Does gen i ddim arian.
+3663262	Mae 'na ynysoedd yn y môr.
+3766189	Dwi byth yn codi cyn saith.
+6889925	Beth yw ystyr yr ymadrodd hwn?
+6890230	Dw i methu yfed coffi heb siwgr.
+6892523	Dw i ddim yn hoffi pobl.
+7353072	O Bortiwgal ydyn ni, a chi?
+7354273	O ble ydych chi wedi dod?
+7669155	Esgusoda fi, elli di wneud swshi heb wasabi?
+7769280	Roedd y bwced llawn dŵr.
+7822192	Organeb gyda chelloedd cymhleth yw ewcaryot.
+7826963	Mae Tinhinane yn caru Amayas.
+7832674	Dyn wedi marw ar ôl cael ei daro gan gar ym Mhowys.
+7835294	Arosodd Sami i Layla yn ei fflat.
+7835315	Mae gen i gleis yn fy mraich.
+8050196	Roedd Romulus a Remus yn frodyr.
+8050202	Dydw i ddim yn cysgu.
+8109614	Pam wyt ti eisiau gadael?
+8115181	Sawl plentyn sy' gen ti?
+8115278	Cyhoeddir llawer o lyfrau Cymraeg bob blwyddyn.
+8118010	Rhedon ni yn y parc.
+8118011	Mae hi eisiau bod yn arwres.
+8118033	Gan fod yn bwrw glaw, arhosais adref.
+8118034	Bydd rhaid iddi fynd yno ar ei phen ei hun.
+8118048	Ychwanegaist siwgr i dy goffi.
+8118075	Cer i helpu dy fam.
+8118104	A siaredir Saesneg yng Nghanada?
+8269574	Mae'ch cymorth chi yn sicrhau bod ein cwrs yn cael ei gadw mewn cyflwr da.
+8269576	Diogelu Refeniw yn teithio o gwmpas y rhwydwaith yn rheolaidd.
+8678499	Dylech chi wneud dy waith cartref nawr.
+8678500	Dylech chi wneud dy waith cartref rŵan.
+8678513	A i os ei di.
+8678514	A i os ewch chi.
+8679426	Daeth hi adre a gwnaeth hi ei gwaith cartref.
+8732303	Mae Sami wedi dweud wrthon ni am ei brofiadau.
+8766551	Mae Donald Trump yn gancr oddi ar ddynoliaeth
+8992560	Allwn i ddim yn gwneud hynny eto.
+8992908	Dw i ddim eisiau mynd yn ôl adre eto.
+10178625	Mae Owen yn dylu pannas
+10271862	Ga i brynu tri oren?
+10272011	Ydy rhif ffôn yr ysgol yn y ddesg?
+10272118	Roedd y parti Nadolig yn rhy swnllyd i fi.
+10272123	Roedd y parti Nadolig yn wych.
+10272160	Dymunwn ni Nadolig Llawen i chi.
+10272164	Dymunwn ni benblwydd hapus i ti.
+10272424	Ga i fenthyg dy naddwr glas?
+10574986	Saif ei fila ar y bryn.
+10574990	Peintiodd ei feic yn las.
+11145818	Dydy o ddim yn cofio ei gyfrinair.
+11473380	Dy gymydog di ydw i.
+11473633	Beth wyt ti eisiau astudio yn y brifysgol?
+11473669	Dwyt ti ddim yn gallu ennill arian heb weithio.
+11559233	Un o ble wyt ti?
+11585527	Wnei di ail adrodd yn fwy araf, os gwelwch yn dda?
+12728108	Mae Duw ar y teledu.
+12915401	Mae gynnon ni ddwy gath ddu.
+13631223	Rhaid i ni brynu bara.
+13838863	Dydw i ddim yn dy adnabod di.
+14098400	Mae Lily yn siarad Japaneeg.

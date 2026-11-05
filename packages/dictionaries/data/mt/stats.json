@@ -1,0 +1,15 @@
+{
+  "source": "mtwiki.xml.bz2",
+  "pages": 8089,
+  "sentences": 383691,
+  "repeatedSentencesSkipped": 26372,
+  "tokens": 6754954,
+  "distinctWords": 233859,
+  "wordsKept": 77884,
+  "nextWordHeads": 9734,
+  "text": "mt-train.txt",
+  "textSentences": 127,
+  "textWeight": 90.18,
+  "heldOutPages": 180,
+  "heldOutSentences": 2000
+}

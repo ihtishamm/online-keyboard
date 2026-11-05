@@ -1,0 +1,15 @@
+{
+  "source": "skwiki.xml.bz2",
+  "pages": 23008,
+  "sentences": 760364,
+  "repeatedSentencesSkipped": 310099,
+  "tokens": 8298261,
+  "distinctWords": 495441,
+  "wordsKept": 100000,
+  "nextWordHeads": 9327,
+  "text": "sk-train.txt",
+  "textSentences": 31037,
+  "textWeight": 27.95,
+  "heldOutPages": 458,
+  "heldOutSentences": 2000
+}

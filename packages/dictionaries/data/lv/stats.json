@@ -1,0 +1,15 @@
+{
+  "source": "lvwiki.xml.bz2",
+  "pages": 22878,
+  "sentences": 641578,
+  "repeatedSentencesSkipped": 77229,
+  "tokens": 6708803,
+  "distinctWords": 389897,
+  "wordsKept": 100000,
+  "nextWordHeads": 9045,
+  "text": "lv-train.txt",
+  "textSentences": 19065,
+  "textWeight": 32.3,
+  "heldOutPages": 470,
+  "heldOutSentences": 2000
+}

@@ -69,7 +69,7 @@ if (args.train) {
       counts.set(fold(w), (counts.get(fold(w)) ?? 0) + 1);
     }
   const STAND_IN =
-    /(?<![\p{L}\p{M}])(?:Tom|Mary|Mari)[\p{L}\p{M}]{0,4}(?![\p{L}\p{M}])(?:['’]\p{Ll}+)?/gu;
+    /(?<![\p{L}\p{M}])(?:Tom|Th[oō]m|Tòm|Mary|Mari)[\p{L}\p{M}]{0,4}(?![\p{L}\p{M}])(?:['’]\p{Ll}+)?/gu;
   // A common word in its own right is written in lower case at least a quarter as often.
   const standIn = (w: string) => {
     const key = fold(w.replace(/['’].*$/u, ""));

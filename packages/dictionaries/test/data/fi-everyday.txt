@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+354133	Ostin hänelle nuken.
+354747	Kotona oleminen ei ole hauskaa.
+357101	Hänellä on kaksi tytärtä.
+425841	On varmaa, että hän onnistuu.
+752208	He kaikki etsivät eksynyttä lasta.
+752714	Älä huoli, ole hilpeä!
+752787	Mikä on lempi-TV-ohjelmasi?
+752997	Älä suotta epäröi esittää mielipidettäsi.
+769110	Enoni asuu New Yorkissa.
+785109	Pidän häntä suurena tiedemiehenä.
+790019	Tapasitko hänet yliopistolla?
+831437	Lapasorsia en ole koskaan nähnyt.
+915567	Saksa luopuu ydinvoimasta vuoteen 2022 mennessä.
+1011519	Venäjästä tuli toinen suurvalta.
+1011575	He ovat kasvissyöjiä.
+1012561	Hän näyttää vähän väsyneeltä.
+1012601	Otin vapaudekseni soittaa hänelle.
+1012613	Mihin aikaan menit eilen nukkumaan?
+1013875	Sinun ei olisi tarvinnut ottaa sateenvarjoa mukaasi.
+1015835	Hän näki minut ja purskahti yhtäkkiä nauruun.
+1016052	Älä puhu siitä asiasta hänen läsnäollessaan.
+1022138	Hän lähti ulos sen jälkeen kun hän siivosi huoneen.
+1023482	Hän osaa puhua kolmea kieltä.
+1023506	Sisältääkö tämä ruoka lihaa?
+1034589	Tyttö on itsepäinen.
+1050823	Aikaa ei ole hukattavaksi.
+1088765	Synnyin Osakassa, mutta kasvoin Tokiossa.
+1160099	Tulin Tokioon kolme vuotta sitten ja nyt asun täällä.
+1160170	Onko tämä sormus oikeaa kultaa?
+1164857	Teidän ei pitäisi enää juoda alkoholia.
+1180802	Hän näyttää olevan humalassa.
+1181222	Usko niitä, jotka etsivät totuutta; kaihda niitä, jotka ovat löytäneet sen.
+1182169	Anteeksi, onko tämä paikka varattu?
+1183295	Terve, mitä kuuluu?
+1185230	Tuo minulle päivän lehti.
+1186111	Tie on pölyinen. Eilen ei ole voinut sataa.
+1201821	Kun isä tuli kotiin, minä katsoin televisiota.
+1222582	Poliisi otti varasta käsivarresta kiinni.
+1393471	Hän jätti veden juoksemaan.
+1609366	En oikein tiedä, mitä sanoa...
+1631798	Nuoret ovat tavallisesti täynnä energiaa.
+1634178	Tule lähemmäs ja katso kuvaa tarkasti.
+1870282	Elämä on liian lyhyt saksan oppimiseen.
+1979307	Espanja on hänen äidinkielensä.
+2108416	Jos pelkäät kuolemista, niin olet jo kuollut.
+2128269	Yritys raukesi tyhjiin.
+2150718	Potilasta hoidetaan teho-osastolla.
+2224332	Minusta on mukavampaa mennä ulos kuin viettää aikaa Facebookissa.
+2293680	Hänen rekisterinsä on puhdas viimeisen kymmenen vuoden ajalta.
+2293743	Yliopistoelämä on merkityksellistä.
+2327200	Tämä on kolmen tähden hotelli. Yö maksaa kolmesataa dollaria.
+2599767	Puhut liian paljon.
+2600911	Minulla on kaksi sisarenpoikaa.
+2600969	Tämä draamasarja näytetään huomenna.
+2602988	Minut on lähetetty antamaan sinulle tämä.
+2612494	Tämä valokuva ei ole hänen. Se on meidän.
+2616144	Haluaisitko tanssia kanssani?
+2617620	Näin miehen kasvot ikkunassa.
+2623908	Voiko joku kertoa minulle missä näppäimistö on?
+2625014	En halua joutua tiellesi.
+2661635	Korjasin hänen radionsa.
+2661796	Hyvin suunniteltu on puoliksi tehty.
+2663807	Tatoeba-projektissa translitteroidut kielet ovat japani, kiina, shanghainkiina, georgia ja uzbekki.
+2663867	Tatoeba on avoimen lähdekoodin ohjelmisto.
+2663879	Tatoeba: Valvova Isoveli itkisi, jos hän ikinä näkisi sivustomme.
+2664081	Tatoebassa ei ole järkeä lisätä sadoittain lauseita, jos kieltä äidinkielenään puhuvat käyttäjät eivät tarkista, että ne ovat oikein.
+2664138	Jos haluat oikeasti tietää, sinun täytyy vain kysyä.
+2665800	Hyvien pisteiden eteen täytyy työskennellä kovasti.
+2665822	Minun edellytetään opiskelevan hyvin.
+2667341	En halua puhua perheestäni.
+2668114	Minulla ei ole ollut ongelmia Tomin kanssa.
+2670560	Tom mokasi taas.
+2670565	Se on ihan vitun siistiä.
+2670825	Tom saatiin vihdoinkin kiinni.
+2671978	Hautasin koirani lemmikkihautuumaalle.
+2673617	Hän oli kotona.
+2674442	En pidä tavasta, jolla Tom aina kalastelee kehumista.
+2675097	Tämä läpinäkyvä neste sisältää myrkkyä.
+2675102	Hän on veljeni, ei isäni.
+2676063	Anteeksi, minulla on toinen tapaaminen.
+2677957	Hän on nyt matalalla mielellä.
+2683305	Voisitko antaa meille neuvon?
+2683905	Suutelin häntä otsalle.
+2684089	Älä ota mitään riskejä.
+2684165	Mikä on niin kivaa?
+2684176	Pomotat niin paljon.
+2686303	Parilla oli onnellinen elämä.
+2692991	Isot miehet eivät aina ole vahvoja.
+2703948	Tom ei hiljentänyt.
+2710457	Tuo on todella outoa.
+2714902	Niitä valmistetaan useissa eri ko'oissa.
+2718996	Minulla oli tapana olla olevinani Tom.
+2719145	Tuomioistuin antoi tuomion tapauksesta.
+2722750	Tiedän että sinä yhä syytät Tomia Maryn kuolemasta.
+2727712	Ehkä Tom ei ollut siitä kovin onnellinen.
+2739920	Haluan nähdä Bostonin.
+2740023	Koetan parhaani mukaan olla häiritsemättä opiskeluasi.
+2746296	Tom ei halua pitsaa.
+2746566	Haluan vain mennä kotiin nukkumaan.
+2748029	Hän osaa soittaa pianoa.
+2748062	En viivy pitkään.
+2755918	Pojat on poikia ja tytöt on tyhmiä.
+2757346	Valitettavasti en ehdi, olen kovasti varattu juuri nyt.
+2766202	Ensimmäinen ryhmä opiskelee aamulla, toinen illalla.
+2770115	Minun oli työnnettävä polkupyörääni, koska kumi oli puhjennut.
+2781450	Radio on liian kovalla.
+2786438	Kissaparka jäi kuorma-auton alle.
+2786515	Opiskelijoiden määrä tällä luokalla on rajattu viiteentoista.
+2801214	Tom kiitti minua lahjasta.
+2802293	Hänen kauneutensa oli sanoinkuvaamaton.
+2802710	Kuuntelen tätä laulua, kun olen surullinen.
+2810085	Suunnitelmamme meni vikaan alusta lähtien.
+2810088	Jotkut kirjat ovat maistettavia, toiset nieltäviä ja jotkut harvat purtavia ja sulatettavia.
+2811364	He eivät luultavasti kuulleet sinua.
+2811540	Toivottavasti voimme pitää yhteyttä.
+2816039	Tom oli kuollut siihen mennessä kun sairaankuljetus saapui.
+2816832	Tom haluaa asua maalla eläköitymisen jälkeen.
+2818174	En tapaa häntä enempää.
+2820254	Minulla on hyvä syy olla huolestunut.
+2824826	Vanha viisikymppinen eukko teki minulle halukkaita ehdotuksia; hän halusi suudella minua.
+2838136	Sen täytyy olla hyvin kallis ravintola!
+2850129	Tom voi tulla millä hetkellä hyvänsä.
+2854765	Lopeta tuollaiset puheet.
+2854782	Näytti siltä kuin mitään ei olisi tapahtunut.
+2864772	Professori ratkaisi lopulta ongelman.
+2880717	Hän on kiinnostunut uusien ideoiden oppimisesta.
+2951130	Käännös oli uskollinen alkuperäiselle tekstille.
+2951313	Jos jätät asian tekemättä, kukaan ei tee sitä.
+2984719	Tom tekee työtä laittomasti USA:ssa.
+3007969	Oletko ollut Kiotossa?
+3010104	Kenestä säveltäjästä pidät eniten?
+3010187	Hän osaa puhua ja kirjoittaa venäjää.
+3027210	Mitä haluat tänään syödä?
+3054219	Tomilla on jalkasientä.
+3055202	Tomilla oli työhaastattelu tänä aamuna.
+3057864	En usko sen olevan välttämätöntä.
+3057870	En usko sen olevan realistista.
+3059085	Tiedätkö missä olemme?
+3065156	Tämä on liian paljon päivän työstä.
+3071297	Hän näytti pieneltä raskaansarjan isäni vierellä.
+3072764	Tom on luonani.
+3075744	Anna minun mennä ostamaan hieman leipää.
+3077116	Tom on hirvittävän rauhallinen.
+3079540	Voin taata sinulle työpaikan.
+3079904	Olen etsinyt sinua.
+3079940	Minua epäiltiin varkaaksi, koska hengailin lähellä jalokiviliikettä.
+3083016	Koska oli pientä kuumetta jäin vuoteeseen.
+3084290	Tämä ei ole paha.
+3084794	En voi saada Tomiin yhteyttä.
+3086593	Tämä on suloisin vauva, jonka olen koskaan nähnyt.
+3086616	Minulla on hirvittävä hammassärky.
+3090016	Vien poikani eläintarhaan iltapäivällä.
+3091341	Se on kaikkea muuta kuin mahdotonta.
+3104579	Keräätkö yhä postimerkkejä?
+3104613	Hän on aina ollut luokan pää.
+3115636	Tunnen kuin olisin unohtamassa jotakin.
+3116091	Tom ei ilmaantunut päivälliselle.
+3122805	Hän näytti matkustajille kuinka heidän turvavyönsä kiinnitetään.
+3122927	En halua kenenkään näkevän sitä.
+3123705	Tarvitsemme jotain syötävää.
+3132254	Tom muutti Bostoniin kolme vuotta sitten.
+3149782	Se ei ole meidän työtämme.
+3149816	Se hämmästytti Tomia.
+3155496	En ole menossa, koska muiden syiden lisäksi, minulla ei ole rahaa.
+3194997	En tiedä Tomin sukunimeä.
+3195047	Nykyään monet matkustavat autolla.
+3198026	Tom työskenteli sisällä.
+3198357	Vieraan ei pitäisi yrittää nostaa itseään isäntäänsä paremmaksi.
+3198486	Minä yllätin heidät.
+3200558	Haluan saada tietää Tomin uudesta työstä.
+3200566	Söimme curryriisiä eilen illalla.
+3205644	Jengirikollinen ampui poliisia jalkaan.
+3208356	Kävin katsomassa Tove Jansson -näyttelyn Ateneumissa.
+3208557	Heillä on molemmilla univormut.
+3208858	Tom ei ollut maksanut vuokraa.
+3213144	Poliisi eristi alueen ja etsi karkulaista kattavasti.
+3214539	Miksi olet peloissasi?
+3214990	Älä kysy häneltä mitään hänen avioliitostaan.
+3215374	Jumala parantaa sinut, ja lääkäri saa rahat.
+3215375	Sodassa laki on hiljaa.
+3215436	Voinko istua tähän?
+3215521	Minusta ei vain tunnu siltä.
+3215651	Japanin ilmasto on lauha.
+3216589	En voi rakentaa taloa. Minulla ei ole rahaa.
+3216788	Kennossa on munia.
+3219593	Kriittisinä hetkinä jopa vahvimmat tarvitsevat heikoimpia.
+3220328	Älä viitsi aina valittaa!
+3220695	Jos jäätä lämmitetään, se sulaa.
+3220843	Lopuksi sain nerokkaan idean.
+3221059	Tom ei ollut varma mitä hänen pitäisi tehdä.
+3221189	Hän pysyi naimattomana koko elämänsä.
+3223576	Alkaa tulla myöhä. En halua mennä kotiin yksin.
+3223894	Miksi haluat satuttaa Tomia?
+3228412	Haluaisin vähän lisää kahvia.
+3229435	Hän oli niin peloissaan, ettei pystynyt puhumaan.
+3229502	Tom ja Mari viihtyvät hyvin yhdessä.
+3230798	Minulla on kiireitä lauantaina.
+3233855	Hän on ulkomailla.
+3233874	Ala jo painella!
+3237678	Joudumme pulaan, jos jäämme kiinni.
+3239361	Kuinka tyhmäksi minua oikein luulet?
+3239892	Eikö tosi-TV ole totta?
+3241884	Voisitkohan auttaa minua?
+3242111	Hän on vain kateellinen nuoruudestasi.
+3242643	He odottivat häntä tuntikausia.
+3249811	Miksi te teette näin minulle?
+3276564	Mitä sinä haluat sanoa minulle?
+3276644	Voiko joku kertoa minulle mitä täällä oikein tapahtuu?
+3277546	Tom ei käy täällä koskaan.
+3278522	Pahastutko jos suutelen sinua?
+3279411	Ei sinulla sattuisi olemaan vielä viime lauantain lehteä?
+3285158	Hajonnut auto seisoi keskellä tietä.
+3285947	Useiden virheiden suma johti onnettomuuteen.
+3288194	Huoltoasema on yhden kilometrin päässä.
+3297131	Haluan tietää mitä tuolla ulkona on.
+3305500	Sinun pitäisi olla tarpeeksi viisas.
+3305600	Anna kun minä hoidan tämän.
+3305639	Se oli tosi halpa.
+3311429	Puhut englantia sujuvasti.
+3311540	Hän jätti neuvoni huomioimatta.
+3311563	Tom on rekkakuski.
+3317150	Maili vastaa noin 1 600 metriä.
+3318438	Hänen piittamaton sovinisminsa oli todella vastenmielistä.
+3319456	Lääkärit yrittävät yhä pelastaa Tomia.
+3319539	Minähän sanoin sinulle, että se oli tyhmä suunnitelma.
+3324169	Haluan baseballin pelaajaksi.
+3325231	Kun sanoit huolehtivasi Mustista, tiesit että siihen liittyy vastuita.
+3325265	Tom pyysi Maria karkaamaan kanssaan.
+3325478	Nyt on ollut poutaa, mutta pilviä tuossa kiertelee.
+3331595	Tomilla ei ollut sukkia jalassa, joten hänen jalkansa olivat kylmät.
+3333394	Olemme menossa naimisiin kolmen kuukauden päästä.
+3333409	Harkitsemme sitä nyt.
+3335274	Olet minulle oluen velkaa.
+3345826	Se ei ole minun autoni.
+3345889	Oikoluetutin tutkielmani Tomilla.
+3345894	Sain Tomin maalaamaan aidan.
+3358482	Hän tunsi terävää kipua.
+3365192	Odottakaa viisi minuuttia.
+3369101	Halusin ottaa kiinni sen linnun, mutta tajusin, että se on mahdotonta.
+3371878	Päästä minut menemään.
+3372838	Siellä on kylmä kesälläkin.
+3373360	Kannantatko suunnitelmaa vai et?
+3373680	Tom halusi, että Mari pysyy paikallaan kunnes hän tulee takaisin.
+3374330	Minulle tuli huono olo alkoholin juomisesta.
+3374504	Se on minun CD:ni, eikö olekin?
+3375688	Tom rakasti Maria, mutta Mari ei rakastanut häntä yhtään.
+3376577	Tiedätkö miltä minusta tuntuu?
+3376601	Oveni on aina sinulle avoinna.
+3377977	Missä sinun lippalakkisi on?
+3379312	Miten Tomilla menee?
+3382961	Tom pystyy juoksemaan nopeasti.
+3390783	Tom oli kuoleman porteilla.
+3391118	Kunhan vaan mietin, että ehkäpä Tom oli se, joka sytytti tulen.
+3391248	Haluan mahtua niihin farkkuihin.
+3394223	En ole itse asiassa käynyt vielä Bostonissa.
+3394241	Voisin ottaa sinut kyytiin matkalla töihin.
+3394503	Tom tykkää brassailla.
+3395229	Tom anoi palkankorotusta.
+3395693	Tänne sieltä, Tom.
+3395720	Tom livahti ulos luokasta.
+3396276	Tom on jo syönyt lounasta.
+3396291	Tom ei tuonut sitä tullessaan.
+3396308	Tom on rehellinen vaimolleen.
+3396355	Tomilla on tatuointeja ympäri kroppaa.
+3398811	Taidat olla melkoisen hyvä ranskassa, vai kuinka?
+3399443	Sun tyyppiset jätkät on kaikista oksettavimpia.
+3405099	Tämä huone ei ole iso.
+3409908	Auto on autotallissa.
+3410168	Tom puhuu englantia vahvalla ranskalaisella korostuksella.
+3411199	Michael Jackson on suosittu Yhdysvalloissa.
+3412542	No kun minulla on nyt kiire.
+3414700	Hän saattaa maksaa samalla mitalla takaisin.
+3419196	Saisinko lasin vettä, kiitos.
+3419375	Voisitko laittaa valot pois päältä?
+3420628	Voisitteko odottaa hetken?
+3420633	Voisitteko odotta vähän?
+3420882	Vaikka Mari antoikin Tomille litsarin, niin hän sai vain ansionsa mukaan.
+3421711	Tom sai juuri tietää, että hänen täytyy muuttaa Bostoniin.
+3422855	Aikaisemmat joukkotuhot ovat aiheutuneet luonnonkatastrofeista, kuten asteroideista, mutta tämän aiheuttavat ihmiset.
+3431936	Minä pidän Taavista, koska hän on todella kiltti.
+3435941	Sinun on korkea aika mennä nyt sänkyyn.
+3448545	Francisko, onko tämä sinun?
+3484389	Yritän säästää kymmenen prosenttia palkastani joka kuukausi.
+3515411	Söin liikaa tänään.
+3515444	Anteeksi, Tom, minulla ei ole aikaa jutella.
+3578911	Kukaan ei tiedä miksi.
+3604120	On satanut lunta päiväkaudet.
+3609410	Puriko Tomin koira koskaan Maria?
+3615176	Hän ei ollut ikinä onnellinen.
+3624586	Haluan sanoa, että olen pahoillani.
+3635125	Pitääkö Tom vieläkin yhteyttä Mariin?
+3639769	Michael Schumacher on kriittisessä tilassa.
+3648243	Tom tahtoi suojella Maria.
+3649681	Tom meni etsimään sinua.
+3652451	Tom tahtoi suojella viattomia.
+3652461	Tom tahtoi peruuttaa varainkeruutapahtuman.
+3701947	Loma on nyt ohi.
+3702065	”Ovatkohan kaikki paikalla? Hetkinen, missäs Tom on?” ”Se sanoi nukkuneensa pommiin ja tulevansa siksi puoli tuntia myöhässä.”
+3705417	Monenko maan nimi alkaa kirjaimella "y"?
+3715493	Käännä katseesi nykyisiin siunaksiisiisi — joita jokaisella on useita — älä menneisyyden erheisiisi, joita jokaisella on joitakin.
+3715710	Äidilläni ei ollut mitään niistä nykyajan mukavuuksista, jotka ovat nykyään kotiäitien käytössä.
+3717486	Hän kirjautui ulos hotellista.
+3742269	Ota niin paljon kuin tarvitset.
+3742276	Mitään ei muutettu.
+3742721	Minä olen menossa leffaan.
+3742724	Oletko menossa elokuviin?
+3742920	Mentäisiinkö leffaan sunnuntaina?
+3745862	Tom kertoi minulle kaiken siitä mitä oli tapahtunut.
+3747361	Tom punastui hieman.
+3749612	Tom näytti olevan todella hyvillään.
+3761684	Mari haluaa kivan pingviinin kuvan Tomin profiilista.
+3762443	Minusta sinä olet hölmö.
+3763163	Mikä hätänä, Tom? Itketkö sinä?
+3766858	Tom tiesi riskit.
+3771644	Me opiskelemme englantia koulussa.
+3774652	Tämä saattaa olla vaarallista aluetta.
+3775592	Kuulin heidän sanovan, että labrassa oli tapahtunut jotain.
+3776120	Mari penkoi käsilaukkunsa ympäri.
+3776229	Lause alkaa isolla alkukirjaimella.
+3779474	Tom sulki läppärinsä.
+3779538	”Voinko käyttää läppäriäni kylvyssä?” ”Et voi.”
+3781654	En usko, että voin rakastaa kahta ihmistä samaan aikaan.
+3782376	Etkö tunne sitä?
+3782480	Sepä oli onni.
+3789000	Onko Tomkin menossa?
+3789002	Miksi Tomin pitäisi mennä?
+3790402	Tossua toisen eteen.
+3792841	Hän osaa myös puhua ranskaa.
+3793731	Myyttekö ranskalaisia sanomalehtiä?
+3793793	Tomin ranska on täydellistä.
+3796063	Puhuvatko kaikki teistä ranskaa?
+3796149	Kannustin Tomia opettelemaan ranskaa.
+3796199	Tämä on kovin surullinen tarina.
+3796272	Asiasta toiseen, minkä ikäinen olet?
+3796679	Tom puhuu ranskaa hirveän huonosti.
+3797536	Tom raapi nenäänsä.
+3797550	Aloitimme aivan alusta.
+3798862	Minusta tuntuu siltä, että sen nettikaupan sivusto on käännetty Google-kääntäjällä.
+3800795	Miksi sinä haluat oppia ranskaa?
+3800923	Oletko jo saanut valmiiksi ranskanläksysi?
+3800950	Puhuuko kukaan perheenjäsenistäsi ranskaa?
+3808094	Eikö meidän pitäisi kysyä ensin Tomilta?
+3817211	Tom luulee, että hän tietää, mitä tapahtuu seuraavaksi.
+3817431	Minulla on koira. Onko sinulla koiraa?
+3827205	Tom on mahtava näyttelijä.
+3829249	Kaikki on mahdollista.
+3834639	Minä saatan jäädä.
+3835152	Sinä kuulostat äidiltäni.
+3835238	Lentoni takaisin Bostoniin lähtee kolmen tunnin kuluttua.
+3837552	Me teimme kaikki varotoimet.
+3844894	Sinulla on paljon ongelmia, vai mitä?
+3852341	Hiuksesi näyttävät hyviltä.
+3852448	Se ei ole se, mikä huolestuttaa minua.
+3861649	Anna kun katson sitä.
+3871831	En luota pankkeihin.
+3871865	Miksi sinä teit niin tyhmän jutun?
+3874635	Appelsiinit ovat hyvä C-vitamiinin lähde.
+3876311	Miksi se tekee kipeää, kun hikeä menee silmiin?
+3876322	Minulle samaa, kiitos.
+3877550	Kuinka monta lasta siellä on?
+3879842	Tässä kaupassa ei myydä alkoholia.
+3883201	Hän liitti hajallaan olevat palaset yhteen.
+3900990	Olin aivan lopussa, kun peli päättyi.
+3935778	Tom kertoi Marille, että häntä kiinnoistaisi ostaa yksi Marin maalauksista.
+3935938	Osaatko käyttää tietsikkaa?
+3937941	Kirsikankukat ovat Uenossa nyt parhaimmillaan.
+3938109	Siihen mennessä kun pääset kotiin, kaikki kirsikankukat ovat varisseet.
+3955254	Tom ei voi tehdä kaikkea itse.
+3968086	Hän ei kuollut turhaan.
+3985939	Tatoeban käyttäjät ovat kilttejä.
+3986151	Anteeksi, että vedin liian hätäisiä johtopäätöksiä.
+3993481	Voisitko antaa minulle esimerkin?
+4002736	Voitko suositella hyvää ravintolaa?
+4043442	Älkää menkö mihinkään ilman häntä.
+4044515	Sinulla on todella hieno auto.
+4044555	Eikö kukaan tiedä, kuinka pitkään me aiomme olla täällä?
+4052712	Harkitseko ihan vakavissasi myyväsi tämän eBayssä?
+4071109	Keskivertoauton renkaiden suositeltu paine on noin 2,21 baria.
+4118026	Tom osaa tehdä tämän.
+4118727	Tom tietää missä sinä olet.
+4137700	Tomi menee Bostoniin ensi kuussa.
+4141703	Tomi ei ole oikea mies tähän työhön.
+4166222	Tom käski Maria lopettamaan syömisen.
+4166455	Käy hakemassa Tom tänne takaisin.
+4167444	Tomin äiti kertoi erikoislaatuisen kertomuksen ruumiista irtautumiskokemuksesta, jonka hän koki taannoisella käynnillään kuoleman rajamailla.
+4169048	Kahdeksankymmentä prosenttia kommunikaatiosta on non-verbaalista.
+4169238	Älä tuijota minua tuolla lailla.
+4172290	Tomi ei pääse paikalle tänään.
+4174540	Voimmeko tavata tänä iltana?
+4181231	Ota paitasi pois.
+4181828	Kumpi on isompi, Tokio vai Kobe?
+4183322	En pysty liikuttaa jalkojani.
+4183329	Tomi ei ollut meidän kanssamme samaa mieltä.
+4186339	Tomi lähti varoittamatta.
+4202406	Minulla ei ole tapauksen kanssa mitään tekemistä.
+4218049	Auttakaa nyt joku minua.
+4223190	Tuo on hädin tuskin uskottavaa.
+4224643	Kirjoita vähintään 250 sanaa.
+4232805	Harrastukseni on kolikoiden keräily.
+4247840	Hän on älykäs ja vielä komeakin.
+4253400	Keisarinna on vierailulla Australiassa.
+4286046	Minua huolettaa tämän maan tulevaisuus.
+4307933	Oli mukavaa tavata Tomi.
+4328874	En pidä uinnista.
+4340650	Tämä on kovaa kamaa.
+4340751	Tomi oli todella jännittynyt.
+4347885	Voi leivällä maistuu todella hyvältä.
+4359507	Minulle se maistui.
+4359917	Poliisi nappasi Tomin.
+4360674	Sinähän olet yksi Tomin kavereista, eikö niin?
+4362986	Sinulle puhumisessa ei ole mitään järkeä, koska et kuitenkaan tee niin kuin minä sanon.
+4363276	Minulla on inhottava tunne siitä, että jotain hirveää tapahtuu.
+4364211	En maksa 40 taalaa ainokaisesta kirjasta.
+4401341	Saanko esittää kysymyksen?
+4412302	WC:n lamppu oli hankalassa paikassa ja lisäksi Mari oli niin lyhyt, että hän joutui vaihtamaan palaneen lampun käsikopelolla.
+4418279	Hänen sydämensä särkyi, koska hänen rakkautensa ei saanut vastakaikua.
+4419330	Monet kunnat ovat vähentäneet kloorin määrää ja käyttävät tätä nykyä myös uv-valoa vesijohtoveden puhdistamiseen.
+4420116	Minä asuin Bostonissa kolmen vuoden ajan.
+4436969	Montako kaupunkia maailmassa on?
+4439202	Tom ja Mari puhuvat toisilleen englanniksi.
+4475946	– Kaikkihan olisivat hyvillään jos kuolisin. – Mitä sinä höpiset? Kuka nyt sellaisesta tulisi hyvilleen?
+4481303	Tom ei edes yrittänyt kuunnella isänsä puheita.
+4509561	Pitäisikö ottaa olut tänään, vaiko tutkinto huomenna?
+4516894	Hän tulee varmasti.
+4522121	Anteeksi. Juna oli myöhässä.
+4525374	Aikuisten värityskirjat ovat saavuttaneet hiljattain suosiota.
+4559163	Maailman väkiluku on kasvanut nopeasti.
+4559164	Täällä on todella pimeää. En näe mitään.
+4627391	Tom joutui taas leikkaukseen.
+4629626	Onko se tieteellisesti todistettu?
+4638467	Tähdet tuikkivat taivaalla.
+4638567	Oliko se sinun suosikkisi?
+4681868	Tom teeskenteli nukkuvansa.
+4727632	Kuka tämän teki?
+4746617	Molemmat siskoni ovat keliaakikkoja.
+4747817	Tom on taas rikkonut jotakin.
+4763817	Olisin halunnut kyllä vähän isoryntäisempään sukuun syntyä... Ai niin, mieshän minä olen, että eihän siitä hyötyä minulle olisi.
+4828529	Tänään pysyttelen kotona.
+4831563	Mietitäänkö ensi vuotta vasta ensi vuoden puolella?
+4831564	»20 euroa. Hieman kyllä tyyris.» »Tinkaamalla hinta ehkä vähän vielä tippuu.»
+4899204	Ihminen ei elä ainoastaan omaa, yksistyistä elämäänsä, mutta myös, tiedostaen tai tiedostamattaan, aikakautensa ja aikalaistensa elämää.
+4938228	Tomi ei todellakaan ole niin älykäs kuin Mari luulee hänen olevan.
+4941354	En ole syönyt kolmeen päivään.
+4952994	Onks toi Tomin?
+4953073	Onko Tom sairas?
+4962732	Ensin syömme, sitten menemme.
+4992090	Ulos tästä autosta!
+4995785	Mistä sinä opit noin vaikean sanan?
+4995809	Puhutko sinä meistä?
+5004343	Hän on jo opiskelemassa kun sinä vasta heräilet.
+5008873	Se on mun vika.
+5026889	Mihin hän meni?
+5069426	Mummini puhuu hitaasti.
+5070873	Se oli kauhee päivä.
+5113091	Tänä aamuna tuli paljon postia.
+5147848	Tomin testamentti luetaan huomenna kello 14:30.
+5160261	Oletko pessyt pyykit?
+5196749	En anna sinun tehdä sitä.
+5206278	Tomi on rohkeampi kuin minä.
+5246596	Tomi kirjoitti kepillä nimensä hiekkaan.
+5260136	Japanin karaoke ja Suomen karaoke ovat aika erilaisia.
+5287724	Mul on tatska.
+5293605	Miehistö valmistautui ulkoavaruuteen suuntautuvaan matkaansa.
+5314308	Tomi on riippuvainen heroiinista.
+5384370	Minulla ei ole mitään tekemistä asian kanssa.
+5423402	Mitä olet mieltä? Pitäisikö minun pyytää anteeksi Tomilta?
+5435318	Kuinka sinä kehtaat loukata minun äidinkieltäni tuolla tavalla?!
+5444843	Meidän Linnunrata-galaksistamme katsottuna Andromeda on lähin galaksi.
+5465905	Tomi ei vaikuttanut vihaiselta.
+5483440	Miksi olet pahoillasi jostain, mitä et ole tehnyt?
+5483466	Minulla ei ole luottokorttia.
+5483482	Hänen vanhempansa eivät ole kaupungissa.
+5483505	Äitini pitää teestä todella paljon.
+5486638	Tomin puhelimella voi ottaa kuvia.
+5492773	Tomi ei ollut iloinen, niin kuin arvata saattaa.
+5507378	Olemme varmaan eksyneet. Onko sinulla kompassia?
+5512897	Tomi on arka.
+5518254	Hän lähetti Marille postikortin.
+5527219	Olet kolme vuotta Maria nuorempi.
+5527225	Voinko nyt mennä huoneeseeni?
+5528885	He saattavat olla väärässä.
+5535344	Tomilla on vähän vauvakuvia.
+5535452	En tiennyt, että se on sinulle tärkeää.
+5556482	Aikooko poliisi pidättää minut?
+5648572	Jopa lapsi osaa tehdä sen.
+5649617	Tomi asuu äitinsä luona.
+5712191	Tomilla on hyvä mielikuvitus.
+5721830	Eduskunta hyväksyi uuden lain viime viikolla.
+5722012	On sauna ja allas.
+5727610	Kuollessaan hän yritti kirjoittaa murhaajan nimen omalla verellään.
+5727763	En löydä lompakkoani.
+5728802	Voisiko joku kääntää yllä olevan kommentin sellaiselle kielelle, jota ymmärrän?
+5729326	Pidä ikkuna suljettuna.
+5760778	Keneltäköhän tämä on?
+5768197	Miksi sinun isäsi löi sinua?
+5807962	Olemme todella innoissamme siitä.
+5857821	Tom kysyi Marilta oliko hän nähnyt Jonia.
+5879254	Tom auttoi opettajaa koristelemaan luokan ystävänpäivää varten.
+5970435	Suurmiehet eivät aina ole viisaita.
+6025456	Kuinka usein peset astiat?
+6036195	Milli on nälkäinen.
+6085167	Mun oikee nimi on Tomi.
+6093700	Mä tartten työtä.
+6094618	Metsässä asuu hirvittävä paholainen.
+6097379	Tomi noudattaa tiukkaa ruokavaliota.
+6141863	Voimme olla vielä ystäviä.
+6142257	Mä näytin sille keskaria.
+6160196	Montako tuotantokautta tällä sarjalla on?
+6163657	Me olemme miehiä.
+6304099	Englannin hallitus on tätä hanketta vastaan.
+6360231	Nopeesti! Nopeesti! Mä kuulen askelii, mee piiloon!
+6450425	Mistä sinä ostit tuon kirjan?
+6482958	Mul on kissa.
+6586068	Hän kompastui kiveen.
+6589500	Valitettavasti olen sopinut jo muuta tuolle päivälle.
+6636527	Tomi on antanut valtavan määrän rahaa hyväntekeväisyyteen.
+6640200	Minulla on musta silmä.
+6667942	Kaikki oli minun syytäni.
+6733663	Paremmasta vaimosta ei voi edes uneksia.
+6830085	Siellä on turvallisempaa.
+6835213	Matka oli väsyttävä.
+6837282	Ei lapsi lapsi ole, vaan lapsenlapsi se vasta lapsi on.
+6858973	Minulla on harmaat hiukset.
+6864187	Oonks mä susta kaunis?
+6865434	Miten voisin rikastua?
+6865436	Mun elämä on tylsää.
+6865447	Uusi kuningas nousi valtaistuimelle vain viidentoista vuoden ikäisenä.
+6876504	Tämä loota ei mahdu matkalaukkuuni.
+6878694	Olen veljeäni kolme vuotta vanhempi.
+6899957	En halua omenaa.
+6900852	Mary sanoi soittavansa minulle.
+6924728	Siinä on paljon pohdittavaa.
+6926961	Mä rakastan tätä kappaletta.
+6930583	Perhe söi illallisen yhdessä.
+6930589	Sinulla ei ole mitään menetettävää.
+6940360	Siat eivät osaa lentää.
+6941735	Tomi löysi kuolleen meduusan rannalta.
+6943896	Jos huomenna sataa lunta, niin minä rakennan lumiukon.
+6955823	Haluan tietää lisää onnettomuudesta, jossa Tomi kuoli.
+6974230	Hänen kotonaan on aina viileää.
+6976482	Voisitko lähettää minulle kuvan itsestäsi?
+6986208	Kolmas kerta toden sanoo.
+6994017	Olen juuri lähettänyt tekstarin Tomille.
+7024283	Tomista ei yleensä ole mitään hyötyä tämmöisissä tilanteissa.
+7033892	Tarkista vastauksesi hänen kanssaan.
+7036731	Kävelimme kolme mailia.
+7044557	Tomi kertoi minulle, että te olitte täällä.
+7051505	Se koulu näyttää vankilalta.
+7100601	Saatan opiskella ranskaa ensi vuonna.
+7106023	Nyt Muiriel on kakskyt vuotta vanha.
+7106969	Tomi lainas mulle ne rahat mitä mä tarvin.
+7114868	Sinun pitää tulla pikaisesti.
+7122304	En halua sinua autooni.
+7124855	Puhumme usein säästä.
+7133452	Yhtäkkiä kuulin huudon.
+7133609	Myrsky teki pahaa vahinkoa viljelykselle.
+7137392	Ettehän te tekisi niin?
+7151544	Sami päätti palata takaisin Laylan kanssa.
+7160240	Minä en osaa laulaa yhtä hyvin kuin Tomi.
+7167176	Oletko sinä varma, että sinulla on ihan hyvä olo?
+7181541	Tomi on jo mies.
+7202139	Harkitsetteko te tosissanne menemistä?
+7202160	Mietitkö sinä vakavasti menemistä?
+7202682	Hän on kävelyllä ulkona.
+7204337	Siellä on jäljellä ainoastaan yksi säilyketölkki lihaa.
+7210423	Vain auringon takia olemme ylipäänsä elossa.
+7224224	Silloin kun ajaa, pitäisi keskittyä tiehen.
+7224439	Kyllä hän ajaa autoa, vai?
+7233392	Kakun leikkaaminen samankokoisiin paloihin on aika vaikeata.
+7258273	Olemme kaikki samassa joukkueessa.
+7258366	Ketkä antoivat teille tuon paidan?
+7259631	Kolme kolmanteen potenssiin on kaksikymmentäseitsemän.
+7261253	Nyt me näytämme miten tätä lemmaa voi käyttää päälauseen todistamiseen.
+7272744	Saanko lainata radiotasi?
+7288057	Tomi istuu sohvalla ja lukee lehteä.
+7332647	Tomi on huumorimiehiä.
+7334281	Tomi tyytyi kohtaloonsa.
+7335460	Tomi jäi jälkeen.
+7425764	Minä en ole vanha.
+7427223	Tämä kukkula on lumen peittämä koko vuoden.
+7447846	Minä muistan, että kävit usein Bettyn luona teellä, kun olit pieni tyttö.
+7522739	Tässä on isä.
+7681165	Lehmämme ei anna maitoa meille.
+7713616	Minkäikäinen teidän siskonne on?
+7713868	Heitä on liian monta.
+7738331	Enää et voi tehdä noin.
+7750259	Tiedätkö Tomin koiran nimeä?
+7750998	Minä en tykkää Bostonista yhtään.
+7751873	Kun lähdin talosta, muistin avaimen.
+7752425	Tähän halliin mahtuu 2000 henkeä.
+7758007	Jos sinä olet suhteen kolmas pyörä, olenko minä neljäs?
+7759164	Seurasin Tomin käskyjä.
+7759262	Tomilla on tatuointi, jossa on jotain outoa google translate -japania.
+7763865	F on heksadesimaalijärjestelmässä yhtäsuuri kuin 15.
+7775477	Hän on blondi.
+7780649	Minä otan sen keltaisen.
+7785539	Älä särje hänen sydäntään.
+7785540	Se ylitti odotukseni.
+7788482	Minä juon sen kahvin.
+7788668	Olemme valinneet erään hotellin läheltä niitä museoita.
+7805515	Päästäkää hänet vapaaksi!
+7824425	Vauva on nukkumassa.
+7835498	Banaani on ruohokasvi.
+7837725	Sinä olet hoikka.
+7838670	Viivoitin on lyhyt.
+7842611	Minä en pidä hänen turpeasta runoudestaan, enkä hänen tyhjänpäiväisistä kirjallisuutta koskevista kommenteistaan.
+7846813	Halusitko minun tekevän vielä jotain muuta?
+7848135	Haluaisitko sinä koettaa?
+7848226	Menetkö sinä juhlaan?
+7848239	Menettekö te niihin juhliin?
+7852742	Tänään käyn äidinisäni haudalla.
+7853050	Afrikka on köyhin maanosa.
+7855392	Tommin polkupyörä oli sininen, ennen kuin hän maalasi sen punaiseksi.
+7865310	Oletteko nähneet mitään siellä alhaalla?
+7865849	Ilman teidän apuanne en olisi voinut tehdä sitä.
+7868310	Tomilla on todisteita, joiden avulla hän voi todistaa sen.
+7868786	En ole milloinkaan ollut Englannissa.
+7894508	Pidä tätä kiinni!
+7913964	Ajattelin, että ehkä se olisi käyttökelpoinen.
+7913978	Tämä artikkeli ei ole minkään arvoinen.
+7922307	Miksette te puhu hänen kanssaan?
+7933751	Hän pääsi liristä kuin koira veräjästä.
+7934195	Susilauma on syypää lammaskuolemiin.
+7951389	Nämä linnut ovat kauniita.
+7961951	Vanhempani eivät olleet kovin iloisia.
+7997910	Minä en ole tottunut tämänkaltaisiin asioihin.
+8007170	Minun isäni ei ole milloinkaan käynyt ulkomailla.
+8015837	Minä puhun useaa kieltä, mutten englantia.
+8016006	Uskotko sinä todella, että olen noin tyhmä?
+8016263	Minä vihaan yllätyksiä.
+8027525	Avaan ikkunan ja tuuletan, jos ei haittaa.
+8055917	Voitko sinä antaa minulle sinun kännykkänumerosi?
+8056030	Minun täytyy lähteä aikaisin, jotta ehdin junaan.
+8056061	Minä taistelen kuolemaan asti.
+8072079	Luulin, että sinä et tulisi.
+8073512	Minä luulin, että Tomilla olisi koira.
+8101063	Kertokaa minulle, että rakastatteko te minua.
+8101289	Lukkosepän piti avata ovi.
+8109923	Kaikki eivät voi olla taiteilijoita.
+8123651	Hän kutsui lapsensa siihen huoneeseen.
+8124190	Tomi luulee, et se ymmärtää naisii.
+8135045	Syötkö juustokakkua ilman minua?
+8140520	Lattialla oli kaksi kenkäparia.
+8140875	Kuinka voimme kiittää sinua?
+8158930	Ei kukaan omista kuuta.
+8164312	Olen poistanut pilkun.
+8178297	Ateriakoko on kasvanut viimeisen kolmenkymmenen vuoden aikana.
+8179501	Me olemme jo puhuneet tästä.
+8180488	Sanoi pikku mies merestä, uros aallon vastaeli: ”Olen mie mokoma miesi, uros pieni, veen väkeä. Tulin tammen taittamahan, puun murskan murentamahan.”
+8189505	Miksi pelkäät minua?
+8198631	Tuomas luulee, että Marja on porattu.
+8206798	Minä olin lähes koko kesän Lontoossa.
+8207286	Mietin sitä silloin tällöin.
+8211086	Sanokaa se selvästi.
+8242556	Liekö se töräytys tarpeellinen?
+8244717	Menetkö sinä naimisiin kanssani?
+8246365	En ole harjoitellut tänään.
+8251166	Minulla on enemmän kuin tarpeeksi aikaa, mutta ei tarpeeksi rahaa.
+8252142	Rannalla oli sinetti.
+8252182	Jääkarhut käyttävät hylkeitä ravinnokseen.
+8253358	He ovat aivan minun takanani.
+8258409	Mihin minun pitäisi pysäköidä?
+8261793	Kuka on heittänyt tuon kiven ikkunan läpi?
+8265309	He kertoivat kaikille, että he olivat turvassa.
+8272628	Hän on minun siskoni ystävä.
+8277621	Hän voi juosta nopeasti.
+8298411	Ken vaikuttaa iloiselta.
+8306637	Kaikkia eläimiä tuli ei pelota.
+8308239	Tavatkaa minut kello neljätoista kolmekymmentä.
+8308416	Tatua myös kidutettiin.
+8310414	Mä en ollu yhtä onnekas ku Tomi.
+8315101	Mä luulen, et Tomi on tullu hulluksi.
+8318941	Hyvä, että löysin sinut.
+8326323	Korkeat vuoret ympäröivät minun kaupunkiani.
+8331073	Seela, muistahan snorkkeli!
+8342838	Mulla on ristikunkku.
+8354013	Tuo oli luottamuksellinen.
+8354032	Ymmärrän kyllä, miksi tuo on luottamuksellinen.
+8365692	Se sota kesti osapuilleen kaksi vuotta.
+8371789	Avantouinti ei ole vaaraksi terveille.
+8375955	Tomin pitää levätä muutama päivää.
+8381007	Tyttäreni kasvattaa afrikkalaisia Malawijärven kirjoahvenia.
+8431604	Hän otti esiin šampanjapullon, jonka oli säästänyt erityisten tilaisuuksien varalle.
+8463596	Se ei ollut kilpailu.
+8463729	Minä en ole milloinkaan aiemmin tuntenut oloani näin hyväksi.
+8473182	Tommi on ärsyttävä, sillä hänen on aina pakko saada tahtonsa läpi.
+8486322	Vaikka Carlos ja Juan näyttävätkin identtisiltä kaksosilta, ovat he vain tavallisia veljeksiä.
+8511020	Olen juuri syönyt illallisen.
+8543693	Käännän lauseita Tatoeba-sivustolla vapaa-ajallani.
+8565621	Onko totta, että eurooppalaiset eivät käy päivittäin suihkussa?
+8567975	Uteliaisuus tappoi kissan.
+8597465	Et uskalla syödä minua!
+8603742	Minä olen opiskellut ranskaa neljän vuoden ajan.
+8603929	Hän valittaa yhä ajanpuutetta.
+8606848	Jos sinulla on kysyttävää, niin ethän epäröi kysyä.
+8614087	Kevät on aikaisessa.
+8614709	Montako mehiläistä asuu pesässä?
+8622013	Siihen ei mene kauan.
+8623371	Me voimme puhua Tommin kanssa.
+8623461	Minä haluan matkustaa.
+8628745	Tiedän että pidät Tomista.
+8631522	Kuinka minä voisin luottaa sinuun?
+8645836	Hän kirjoittaa kirjeen.
+8646141	Kun eno tekee keiton, on siinä aina paljon sattumia.
+8654140	Näetkö eron näiden kahden kuvan välillä?
+8659944	He ovat toimistossani.
+8695863	Kiristäkää sitä ruuvia!
+8716474	Huora on vanha.
+8720098	Tomi ei pysty vahingoittamaan Maria enää.
+8729862	Mä en tiie viel.
+8743684	Sanoi vanha Väinämöinen: ”Enp' on huoli pursistasi, venehistäsi valita! On noita itselläniki joka tela tempaeltu, joka lahtema laottu, mikä tuulella tukeva, mikä vastasään menijä.” Lauloi nuoren Joukahaisen, lauloi siitäki syvemmä.
+8762817	Minä olen kaksitoista.
+8861893	He, jotka tietävät ja osaavat, toimivat. He, jotka tietävät, mutta eivät osaa, opettavat. He, jotka eivät tiedä eivätkä osaa, johtavat.
+8948782	Onnistuu kyllä. Se on helppo nakki.
+8954373	En uskalla ylittää katua Pekingissä, sillä autoilijat eivät ota jalankulkijoita huomioon siellä.
+8975681	Se vaara loistaa syksyn väreissä.
+8986140	Lintu neuvoo kotiin.
+9001709	Meillä on toimittaja paikan päällä Gazassa.
+9021082	Se on iäkäs.
+9024677	Hän pyysi apua.
+9037433	Mary luulee itseään rumaksi.
+9053917	Hän olikin kiltti.
+9062552	Niitä ei lainkaan kiinnosta.
+9067133	Eihän äitisi satu olemaan tiukka?
+9084157	Se utu on hälvennyt.
+9084572	Puhutko sinä japania sujuvasti?
+9086462	Tuomaan kolmas avioliitto oli onneton ja hän ajatteli erota vielä kerran.
+9090150	Tähdet alkoivat tulemaan esiin taivaalla.
+9096981	Raimo hiihti korven halki.
+9107348	Kuinka taitava sinä olet laulamaan?
+9150602	Haluatko kertoa heille?
+9162580	Minä kirjoitan siitä.
+9162680	Minä tahdon värjätä hiukseni punaiseksi.
+9190133	Mary löysi neliapilan.
+9203855	Pidä se lapsi poissa siltä lammelta.
+9230575	Älä herätä leijonaa, joka nukkuu.
+9237761	Maksimekot ovat muodissa tänä kesänä.
+9242896	Panaman kanava halkaisee Panamankannaksen.
+9246733	Tuomas karkasi nähdessään poliisin.
+9272873	Tämä oli helppo kysymys.
+9315015	Hänen miehensä oli joutunut onnettomuuteen. Hänestä oli tullut täysi vihannes.
+9331641	Onko sinulla puhelinta tai laturia?
+9332021	Tuo koristeellinen hopeatarjotin on suosikkini!
+9366352	Sami sai hupparin ilmaiseksi.
+9374587	Samilla on päällään hänen hupparinsa.
+9376235	Tuomolla oli harmaa huppari.
+9419666	Se pappi on hyvä ihminen.
+9423784	Sami on luonteeltaan hyvä mies.
+9426493	Varas ei pidä kuunvalosta eikä pahantekijä hyvästä miehestä.
+9444402	Pienten vauvojen posket tuntuvat sametilta.
+9451894	En ymmärrä teidän englantianne.
+9463226	Tuomo ja Marika elävät kommuunissa.
+9556860	Minulla on tapana juoda kahvia ja syödä leipää aamiaiseksi.
+9594631	En usko Samin tunteneen mitään Laylaa kohtaan.
+9637016	Minulla on kellarissa kaksi kolmivaihegeneraattoria.
+9671188	Tuhka oli vielä lämmintä.
+9673540	Tämän viikon aiheena on ilmaston lämpeneminen.
+9683754	He toivat kiinteää polttoainetta mukanansa.
+9689651	Me oltiin ihan perseet.
+9694154	Koska matkustelen siellä sun täällä!
+9750791	Terve, miten menee?
+9751217	Hän putosi helvetin syvyyksiin.
+9752884	Hyttysverkko oli repeytynyt.
+9765569	Sanakirjassa on vielä paljon parantamisen varaa.
+9773141	Hän istuu odotushuoneessa.
+9778088	Otan taas myöhemmin yhteyttä.
+9793792	Tästä lähtien en käytä sitä sanaa.
+9798769	Tomi ja Mari istuivat puiston penkillä.
+9804447	Hän on epätavallisen hermoheikko.
+9835478	Se ulkomainen pappi osallistui keskusteluihin.
+9835956	Google kääntäjällä on vielä paljon opittavaa, mutta se paranee päivä päivältä.
+9837601	Tanaka, onko sinulla osakkeita?
+9844414	Layla on ministerin vaimo.
+9845513	Tämä materiaali on vahvaa.
+9846216	Tomi tuli sisään ikkunasta.
+9850776	Minun mielestä meidän linjausta tulisi muuttaa.
+9854080	Sisältävätkö kananmunat runsaasti proteineja?
+9855332	Minulla on meno-paluulippu Tokioon.
+9859679	Pääministeri putosi Tonavaan ja hukkui.
+9860682	Mihin voin jättää mun polkupyörän?
+9890960	Osaatko kertoa meille Tuomosta jotain sellaista, jota emme jo tiedä?
+9932744	Minä olen sanonut jotakin.
+9945287	Tiheikkö ei toimi enää.
+9945889	Kanttikone meni rikki.
+9951998	Se kulmauskone ei toiminut.
+9968952	Etkö tykkää leikkiä mun kanssa?
+9974202	Hän työnsi hänet syrjään.
+9976605	Emme me tee mitään.
+9976650	Mary synnytti vastikään.
+9978281	Jos sää sallii, he lähtevät metsään sienestämään.
+9987421	Se tarina on meille tuttu.
+10011299	Mitä eroa on tähtitieteellä ja tähdistäennustamisella?
+10017416	Missä on lipunmyyntiluukku?
+10018369	Kylpyhuone on tehty marmorista.
+10025980	Omena on suuri.
+10031558	Päivää! Oletko töissä täällä?
+10038571	Yllättyisitkö, jos sanoisin, ettei nimeni oikeasti ole Tomi.
+10038602	Miksi ostit taas tällaisen kalliin sanakirjan?
+10042957	Harvard on Tomin kasvattikoulu.
+10043306	Missä vietettiin häät?
+10045495	Menin lentokentälle tapaamaan häntä.
+10049546	En osaa puhua ainua hyvin.
+10053133	Oletko harjoitellut yhtään tänään?
+10053885	Tapahtuu jotain outoa.
+10057850	Kevät on jo ihan kulman takana.
+10058628	Se oli kovan työn arvoista.
+10059509	En ole hyvä muistamaan yksityiskohtia.
+10072132	Mitkä näistä esineistä sinulla on pöydälläsi?
+10074314	Ennen muinoin oli tapana järjestää tapaninpäivänä tanssit ja tapa on alkanut taas ottaa tuulta alleen.
+10074473	En halua nyt syödä lihaa.
+10074589	Eikö sinulla ole yhtään tätä pienempää?
+10074590	Eikö sinulla ole mitään tuota pienempää?
+10078665	Hän luki pätkän Shakespearesta.
+10079672	Sinun autosi on kalliimpi kuin minun autoni.
+10092611	Tomi on elänyt köyhyydessä koko elämänsä.
+10102216	He ovat todella läheisiä ystäviä.
+10109538	Myöskään Tomi ei ole nälkäinen.
+10114864	Aion osallistua siihen kokoukseen.
+10118921	Miksi lapset sairastuvat niin helposti?
+10124762	Se ei ole täysin tyhmää.
+10144321	Satuitko sinä unohtamaan tuon?
+10199129	Emme usko sinun jumalaasi.
+10199133	Emme usko jumalaasi.
+10199149	Koska pääsen vapaaksi?
+10208355	Saksa oli aikoinaan Italian kanssa liitossa.
+10241496	Muurien sijaan meidän pitäisi rakentaa siltoja.
+10243707	Pahoittelen huonoa esperantoani.
+10246118	Minä olen surmannut heidät.
+10250811	En ole seurallinen.
+10251789	Et voi ajaa. Olet juonut.
+10254340	Odota vielä hetki.
+10266280	Mistä talosta sinä pidät eniten?
+10266367	Älä tunge nenääsi yksityiselämääni.
+10270291	Se ei ole juuri minkäänlainen ongelma.
+10272145	Mari on mun muija.
+10275196	En kiinnittänyt turvavyötäni.
+10316581	Olen tottunut kovaan työhön.
+10316853	En ole tottunut tekemään tuota.
+10323294	Hänen sydämensä täyttyi surusta.
+10327474	Minkä niminen kukka tämä on?
+10330144	Taistelemme viimeiseen saakka.
+10331621	Yanni on kertomassa toisen henkilön tarinaa.
+10332811	Matematiikka ja englanti olivat lempiaineitani.
+10333865	Tomin japanin kieli paranee pikkuhiljaa.
+10349430	Huone alkoi pyöriä, kun olin juonut liikaa.
+10349620	"Minulla on poikaystävä." – "Mistä lähtien?"
+10350716	Kuusi numeroiset tulot eivät ole harvinaisia lääkäreille.
+10351249	Tomi voitti toisen kerran.
+10391774	Aleksandra opetti lapset puhumaan englantia.
+10464350	Oletko minua vastaan?
+10473243	Tämä on kuin taikuutta.
+10476876	Voisinko saada lääkärintarkastuksen?
+10515545	Palaa kotiin ennen pimeäntuloa.
+10527523	Nyt meidät hukka perii.
+10528179	Luulin että pidät uusien asioiden oppimisesta.
+10528804	Päivittäinen liikunta on sinulle hyväksi.
+10531654	Näin vanhan miehen kaatuvan selälleen kadulla.
+10567148	Hän aneli minua tulemaan.
+10602790	Tomi voihki kovissa kivuissa.
+10604448	Hän kieltäytyi lääketieteellisestä hoidosta.
+10619558	Missä voisin tutustua pervitiiniin? Pakkaukseen, siis. Ei tietenkään aineeseen itseensä.
+10621844	Viikonloppua seuraavat neljä päivää ovat vaikeimmat.
+10621885	Miksi olet niin hiljaa?
+10630912	Poika heitti kiven.
+10631568	Miten olisi tuoppi olutta?
+10635330	Hän ei tiedä, että minulla on antipatioita häntä kohtaan.
+10635384	No, mitä sä sitten tarkotat?
+10636397	Nick on minulle kymmenen dollaria velkaa.
+10650178	Tomi paljasti salaisuuden.
+10651074	Tänään on liian kylmä lähteä eväsretkelle.
+10651710	Haluan yhden veitsen.
+10654743	Piiri pieni pyörii, lapset siinä hyörii.
+10658438	Kuka heistä on sulhanen?
+10665221	Työttömyys on vähäisempää ja lyhytkestoisempaa korkeammin koulutettujen keskuudessa.
+10676752	Peruskoulussa meillä oli kuukausittain evakuointiharjoitukset.
+10705106	Ylitettyäsi joen olet turvassa.
+10710992	Tuo keittiöstä jakkara.
+10779155	Tunsin hänet siihen aikaan.
+11043513	Kielioppi on oikeastaan vaikeaa, eikä lausuminen ole helppoa.
+11059823	Hänellä on paljon ennakoluuloja transihmisistä.
+11068267	Älä allekirjoita dokumenttia lukematta sitä.
+11081434	Tom ei palannut yksin.
+11089333	Tommi, herää! On myöhä!
+11100344	Tuomo saa hyviä arvosanoja ranskassa.
+11100345	Tuomo saa hyviä numeroita ranskassa.
+11134038	Sillä nuorella miehellä on hyvä ruokahalu.
+11136789	Tom ja Mary vetivät molemmat aseen esiin.
+11143547	Tätä tarjousta eivät koske tavalliset alennukset.
+11146485	En osaa lausua sukunimeäsi.
+11197188	Tämä on paljon parempi.
+11207101	No, niin kai.
+11213132	Voimakastahtoiset ihmiset eivät turmellu.
+11235025	Me pidämme Alaskan äärimmäisestä kylmyydestä.
+11235479	Missä olit kun kuulit Vesa-Matti Loirin kuolemasta?
+11237880	Oletko kiinnostunut urheilusta?
+11241669	Murhasta rangaistaan kuolemalla.
+11319116	Voisitko puhua vähän kovempaan ääneen?
+11363768	Tarvitsemmeko lupaa Tomilta?
+11363796	Ketkä antoivat sinulle luvan tehdä sen?
+11418744	He tulivat metsään, jossa olivat kerran tavanneet ketun.
+11453264	Kutsu tyttö meille.
+11492014	Uiko väki tässä lahdessa?
+11493097	Nukutko sinä vierashuoneessa?
+11498735	Purjelaiva laski ankkurinsa lahteen.
+11509969	Ostan uudet sukset.
+11532175	Olen jo puhunut Tomin kanssa meidän ongelmistamme.
+11532196	Tomi on hyvä lasten kanssa, eikö olekin?
+11559045	Minkä kirjan sinä tarvitset?
+11580765	Täällä on jotain pielessä.
+11584495	Sinun pitäisi heti kysyä lääkäriltä.
+11584507	En voi paljastaa teille kaikkia salaisuuksiani.
+11590419	Annoin Tomille avaimen mun kämppään.
+11595488	Tommi rakastaa diagrammeja ja kuvaajia.
+11620103	Jonain päivänä tämä toukka muuttunee kauniiksi perhoseksi.
+11632581	Se on ollut mun unelma pienestä saakka.
+11643440	Älä syö mun sipsejä.
+11758901	Minulla ei ollut ongelmia löytää hänen toimistoaan.
+11765733	Sekoita kaksi munaa ja vehnäjauhot.
+11779313	Taifuuni tuhosi monia taloja.
+11781951	Tomi asui puolet elämästään Australiassa.
+11786828	Suurinosa Tri. Jaakkolan potilaista ovat yli 60-vuotiaita.
+11860299	Mikä on Tomin sosiaaliturvatunnus?
+11880332	Mihin tarkalleen ottaen menitte?
+11885966	Hän tunnusti varastaneensa korut.
+11907915	En tykkää leivoksista.
+11929986	ʺFreeʺ niin kuin sanassa ʺfreedomʺ, ei niin kuin ilmaisessa oluessa.
+11949233	Olin aivan yksin.
+11972124	Hän suoritti velvollisuutensa.
+11994842	Meidän täytyy silti mennä kahdesti.
+11994901	Luulen, ettei Tom tehnyt tuota eilen, mutten ole varma.
+12027637	Hänen siskonsa valmistui lääkäriksi.
+12091440	Hänellä oli kummallinen hattu.
+12126092	Osaan soittaa pasuunaa.
+12135325	No, näithän sinäkin sen.
+12182430	Mun isoisoisoisoisä oli merirosvo.
+12202738	Salli minun syödä jotain tänään.
+12239834	Hän voi taivuttaa rautatangon paljain käsin.
+12284184	Hän saapui toivoen näkevänsä sinut.
+12292713	Hän eli yksinäistä elämää.
+12369850	Tomi vaikutti ahdistuneelta.
+12386308	Tomi nostaa penkiltä 59 kiloa.
+12389056	Ettekö halua tietää syytä?
+12419813	Oletko kalibroinut näyttösi?
+12433733	Onkohan maitorahka halvempaa Haaparannassa kuin Suomessa?
+12434737	Tiedän, että olette viettänyt kolme viime vuotta vankilassa.
+12467419	Tiedän että minulla on se, mutta en voi löydä sen.
+12725736	Mari on sairaanhoitaja.
+12725969	Kun opiskelen vierasta kieltä, merkintöjen kirjoittaminen päiväkirjaan auttaa minua muistamaan sanastoa.
+12726898	Tomi laittaa ruokaa.
+12734373	Missä olit eilen?
+12761470	Tomilla on veli, mutta en muista hänen nimeään.
+12761765	Kumpi näistä kirjoista minun pitäisi lukea ensin?
+12761780	Tykkään istua bussin etuosassa.
+12774848	Tom vaikutti todella vilpittömältä.
+12786524	Tomi teki Marille leijan.
+12854900	Tuomas yritti peitellä pettymystään.
+12855223	Ostin mustekynän, mutta hukkasin sen.
+12871378	Löysin luottokortin, jonka luulin hukanneeni.
+12889067	Löysinkin luottokortin, jonka luulin hävittäneeni.
+13020106	En tiennyt, että teillä oli ollut viikko vapaata viime kuussa.
+13040763	Haluan puhua italiaa!
+13040982	Tommi kävi kävelyllä.
+13056007	Elämä on täynnä mysteerejä.
+13092054	Tänään TV:stä ei tule mitä katsomisen arvoista.
+13093323	Tuomo suuteli Marya julkisesti.
+13238638	Tomi hymyili omahyväisesti.
+13248157	Tomi oli kassalla.
+13418238	Mies ilman päämäärää on kuin laiva ilman peräsintä.
+13420515	Samilla on uusi pomo.
+13420659	Hän kasvattaa viiksiä.
+13431042	Siitä on tullut tapa.
+13434619	Kylässämme jokainen tietää jokaisen.
+13438307	Joku heitti heihin kiven.
+13460848	Kuka on vastuussa ensi viikolla?
+13464417	Ensimmäinen paikka, jossa tänään vierailemme, on tämän kaupungin suurin shintopyhäkkö.
+13511173	Minä en näe teitä.
+13520353	Tuomo oli piirikunnan seriffi.
+13544836	Joukolla on kana kynittävänä.
+13595452	Kuinka hyvin Tom ymmärtää ranskaa?
+13607551	Heidän viimeisin jipponsa itse asiassa teki sovelluksesta huonomman.
+13609429	Tom on etuajassa.
+13610063	Kuka nauraa yläkerrassa?
+13610145	Puhun ranskaa sujuvasti, ja sekä saksaa että japania edistyneellä tasolla.
+13611651	Miksi potkaisit Tomia?
+13611779	— Kukaan muu presidentti ei olisi tehnyt mitä minä tein, sanoi Donald Trump.
+13612273	Tom valmistautui viikkojen ajan.
+13613888	Tom haluaa istua Maryn vieressä.
+13614074	Miltä se näyttäisi?
+13618569	Minkä niminen on Suomen pääkaupunki?
+13620266	Nukun hyvin vähän.
+13620303	Ajatukseni harhailevat joka puolelle.
+13622118	Hän oli tottunut heräämään aikaisin.
+13629190	Mitä sanoisit, jos emme menisikään kouluun, vaan sen sijaan rannalle.
+13678370	Hän ei auta köyhiä.
+13678386	He kertovat tarinaa.
+13776619	Kuka haluaa tämän?
+13810731	Nyt jotain rajaa. Tää ei oo enää hauskaa.
+13936922	Sisareni katsoo televisiota.
+14007291	Tommi katsoi kiväärinsä tähtäimen läpi.
+14097932	Olin ihan rikki.

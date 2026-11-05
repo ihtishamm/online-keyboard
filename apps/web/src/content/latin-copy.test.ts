@@ -28,7 +28,8 @@ describe.each(latin.map((l) => [l.slug, l] as const))("%s page examples", (_, l)
   const latinWords = makeDictionary(words, next, l.code, accents).latin!;
   const restorer = new AccentRestorer(latinWords.words, latinWords.locale, latinWords.accents);
 
-  it("restores what the tip says", () => {
+  // Latin writes macrons too rarely for smart accents to act: its tip says so instead.
+  it.skipIf(l.code === "la")("restores what the tip says", () => {
     const m = /Type (\S+) and press Space: smart accents writes ([^\s.]+)\./u.exec(copy);
     expect(m, "a 'Type … and press Space' tip").not.toBeNull();
     expect(restorer.restore(m![1]!).auto).toBe(m![2]);

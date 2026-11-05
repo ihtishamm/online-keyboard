@@ -1,0 +1,43 @@
+# Words and phrases kept out of typing practice. From LDNOOBW
+# (https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words),
+# CC BY 4.0; made by src/blocklist.ts. Build-time only.
+asshole
+dritt
+drittsekk
+faen
+faen i helvete
+fan
+fanken
+fitte
+forbanna
+forbannet
+forjævlig
+fuck
+fy faen
+føkk
+føkka
+føkkings
+helvete
+helvetet
+jævla
+jævlig
+kuk
+kukene
+kuker
+morraknuller
+morrapuler
+nigger
+pakkis
+pikk
+pokker
+ræva
+ræven
+satan
+shit
+sinnsykt
+skitt
+sotrør
+ståpikk
+ståpikkene
+ståpikker
+svartheiteste

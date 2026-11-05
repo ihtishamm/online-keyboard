@@ -1,0 +1,15 @@
+{
+  "source": "etwiki.xml.bz2",
+  "pages": 25030,
+  "sentences": 938064,
+  "repeatedSentencesSkipped": 98839,
+  "tokens": 8220980,
+  "distinctWords": 728949,
+  "wordsKept": 100000,
+  "nextWordHeads": 9548,
+  "text": "et-train.txt",
+  "textSentences": 5376,
+  "textWeight": 45.42,
+  "heldOutPages": 441,
+  "heldOutSentences": 2000
+}

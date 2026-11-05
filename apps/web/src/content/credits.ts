@@ -33,7 +33,7 @@ const WIKI_NAMES: Readonly<Record<string, string>> = {
   zh: "Chinese",
 };
 /** Wikipedia's subdomain, where it differs from the language's code. */
-const WIKI_CODES: Readonly<Record<string, string>> = { kok: "gom", prs: "fa", zlm: "ms" };
+const WIKI_CODES: Readonly<Record<string, string>> = { kok: "gom", prs: "fa", zlm: "ms", nb: "no" };
 /** Languages whose chat spellings come from Dakshina (see data/<code>/chat.tsv). */
 export const DAKSHINA: ReadonlySet<string> = new Set([
   "hi",

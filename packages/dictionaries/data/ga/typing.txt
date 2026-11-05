@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+871721	Cathain a bhí sé anseo cheana?
+871733	Conas atá an obair ag dul ar aghaidh?
+873073	Is iad do pháistíse a bhí mall.
+873157	An tusa a cheannóidh an bia?
+873530	Sin é an teach ar fhan mé ann.
+2714184	Níl uaim dul ar scoil.
+2714590	Ithim, mar tá ocras orm.
+2714723	Bhí mé ag obair sa mhonarcha seo.
+2715249	An bhfuil tú réidh don turas?
+3042382	Níl mé ag áiteamh leat.
+3103392	Ní, ní múinteoir mé. Is ach mac léinn mé.
+3119603	Ní thuigim an dán seo.
+3127242	Tá deartháir níos sine agam.
+3433451	Táim ag obair i siopa mo charad.
+3467389	Tá Leanne ina cónaí i Leicester.
+3599644	Caithfidh mé mo chuid fiacla a ghlanadh.
+3601095	Níl a fhios agam cén fáth.
+3601123	Clúdaigh do chosa le blaincéad.
+3601161	Cad atá Oisín ag déanamh?
+3602348	Tá an madra ag codladh sa charr.
+3604002	Táim i mo chónaí i mBéal Feirste.
+3664162	Is as an Ghréig mé.
+3770310	Tá sé ag ceannach an ríomhaire.
+3786855	Tá ar gach duine fáil bháis.
+3945045	Tá mo chara ag ithe éisc.
+3961105	Ospidéal is ea é seo.
+4001488	Tá sí ag ól an uisce.
+4062795	An féidir leat tú féin a chuir in iúl i gcúpla focal?
+4062799	Is aoibheann liom do bhlas Gearmánach.
+4521017	Is mian liom rud éigin a insint daoibh.
+4549674	Tá sé ag greadadh báistí ach caithfidh mé dul.
+4555650	Bhí an cailín ag amharc ar an gcé.
+4773402	Beidh tú in ann carr a thiomáint lá éigin.
+4913301	Ní níonn Tomás a charr in aon chor.
+4969125	Tá oráiste ar an mbórd.
+5015913	Cé nuair a rachaidh Sita go dtí Eluru?
+5228124	Cén téarma atá san úrscéal is déanaí leis?
+5516931	Buíochas le Dia gur tháinig tú orm.
+5542311	Chuirfeadh sibh isteach ar an bpost sin.
+5542313	Chuirfeadh tú isteach ar an bpost sin.
+6319254	Ni rud é a bhfuil fonn orm a dhéanamh.
+6319267	Tá fonn ar an mbeirt acu rud éigin a rá.
+6319378	An iomarca bia an tsiocair bháis a bhí aige.
+6319553	Féach go géar ar an ngrianghraf seo.
+6319584	Ní thuigim an focal seo.
+6319602	An bhfuil málaí sa siopa seo?
+7705878	Is maith le Máire capaill.
+7799811	Bain as mo phóca é go tapa!
+7912676	Táim ag déanamh iarrachta Béarla a fhoghlaim.
+8115273	Is maith liom labhairt Breatnais.
+8239937	Stróic Tomás an nóta as a chéile.
+8580235	Éireoidh mé, cuardóidh mé, tríd an mbaile, trí na sráideanna, lorgfaidh mé grá mo chroí.
+9965182	Chuir Yanni an bolgán solais i gcoimeádán dúnta go daingean.
+9965572	Shuigh sí ar an urlár agus dhún sí a súile.
+10258397	Ba cheart duit obair go dian.
+10258416	Tabhair dom eochair an ghluaisteáin, le do thoil.
+10317091	An é do chéad chuairt ar an tSeapáin é?
+10317440	Chuir sé é féin den saol leis an ól.
+10317496	Thug sí fuil chun a deirfiúr a shábháil.
+10317559	Ar dtús níor thaitin rac-cheol liom ach anois taitníonn sé liom.
+10317635	Is cuma leat fúmsa i ndáiríre.
+10317709	Bíonn Tomás i gcónaí ag úsáid a fhón cliste.
+10317936	Mura dtuigeann tú, cuir ceist.
+10317951	Mura bhfuil a fhios agat, cuir ceist orm.
+10317957	Mura bhfuil na freagraí ar eolas agat, tomhais.
+10320046	An bhfuil fón póca agat, a Thomáis?
+10926397	Sheas sí ar an díon.
+10926464	Ní chuireann an eochair an doras faoi ghlas i gceart.
+11089268	Tá Tomás ina chónaí i dteach beag nach bhfuil i bhfad ón abhainn.
+11093958	Tá fiche bliain ag Muiriel anois.
+11094835	Níl insint béil agam air.
+11101593	Tá sé do mo chiceáil!
+11962924	Táim ag ithe an aráin.
+12142607	Theastaigh ó Thomás a bheith ina spásaire nuair a bhí sé óg.
+12198162	Ní chuimhníonn Flavio ar ainm úsáideora Isabella.
+12272395	Tá triúr páistí ag Máire.
+12445457	Níor cheannaigh tú é sin, an raibh?
+12445497	Níor chuir a fhreagra iontas orm.
+12446311	Dúirt sé liom go bhfuil sé saibhir.
+14098165	Rinne mé mo chuid obair bhaile.

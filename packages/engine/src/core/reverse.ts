@@ -31,7 +31,8 @@ export function keystrokeMap(layout: Layout): ReadonlyMap<string, Keystroke> {
     }
   }
   // Telex and VNI type marks with letters or digits: the parts of typingParts have keys too.
-  const marks = layout.composer === "telex" ? TELEX_MARKS : layout.composer === "vni" ? VNI_MARKS : null;
+  const marks =
+    layout.composer === "telex" ? TELEX_MARKS : layout.composer === "vni" ? VNI_MARKS : null;
   if (marks) {
     for (const [part, key] of Object.entries(marks)) {
       const stroke = map.get(key);
@@ -110,8 +111,24 @@ export function deadStrokeMap(
   keys: ReadonlyMap<string, Keystroke> = keystrokeMap(layout),
 ): ReadonlyMap<string, DeadStroke> {
   const map = new Map<string, DeadStroke>();
+  const triggers = new Map<string, Keystroke>();
+  /** The key that starts a dead key: not one that types the same character literally (`live`). */
+  const triggerStroke = (trigger: string): Keystroke | undefined => {
+    if (triggers.has(trigger)) return triggers.get(trigger);
+    for (const [layer, mods] of LAYERS) {
+      for (const code of KEY_CODES) {
+        const def = keyDefFor(layout, code);
+        if (def?.[layer] === trigger && !def.live?.includes(layer)) {
+          const stroke = { code, ...mods };
+          triggers.set(trigger, stroke);
+          return stroke;
+        }
+      }
+    }
+    return undefined;
+  };
   for (const d of layout.deadkeys) {
-    const first = keys.get(d.trigger);
+    const first = triggerStroke(d.trigger);
     const then = keys.get(d.base);
     if (first && then && !keys.has(d.out) && !map.has(d.out))
       map.set(d.out, { trigger: d.trigger, first, then });

@@ -1,0 +1,26 @@
+{
+  "slug": "galician",
+  "code": "gl",
+  "order": 780,
+  "lang": "gl",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Galician",
+    "native": "Galego"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["gl-easy", "gl-spain"],
+  "accents": "áéíóúüñÁÉÍÓÚÜÑ¿¡",
+  "sample": "Hoxe vai bo tempo e imos pasear pola praia coa miña familia.",
+  "voice": ["gl-ES"],
+  "wordList": true,
+  "translate": {
+    "google": "gl",
+    "bing": "gl"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locales; speech services return Latin text, so the script probe is moot."
+}

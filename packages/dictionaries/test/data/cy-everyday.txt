@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+1392537	Dw i'n dod o Loegr.
+1392566	Dw i'n dy garu di.
+1394289	Mae'r car yn las.
+1415422	Ond fe gysgodd fel baban.
+1415424	Dyma eich allwedd.
+1415426	Wyt ti'n hoffi te?
+1415429	Beth sydd fel arfer yn achosi'r boen?
+1422579	Mae e'n dod o Gymru.
+1444957	Mae e'n gwybod ble dyn ni'n byw.
+1493473	Pwy ydw i?
+1494692	Esgusodwch fi. Ydych chi'n siarad Saesneg?
+1494718	Mae fy hofrenfad yn llawn llyswennod.
+1524740	Tom ydy fy ffrind gorau.
+1524748	Wyt ti'n byw yn Nhokyo?
+1524749	Dych chi'n byw yn Nhokyo?
+1524755	Mae cath wen 'da fi.
+1524767	Dw i'n hoffi cŵn.
+1545744	Dw i'n dod o'r Eidal a dw i'n siarad Eidaleg.
+1545747	Dw i'n dod o Awstralia.
+1545762	Does dim arian 'da fi, ond breuddwydion 'da fi.
+1547446	Mae hi'n bwrw cesair.
+1547500	Iaith hardd yw'r Gymraeg.
+1547510	Dw i wedi ennill y gêm.
+1547544	Dw i'n hen.
+1547839	Dw i'n caru Tatoeba.
+1551608	Mae Tom yn benfoel.
+1551617	Dw i'n gallu deall dy iaith di.
+1551620	Mae ci 'da fe.
+1551625	Mae e'n ei helpu hi.
+1551662	Mae e'n ei charu hi.
+1551680	Dw i'n gweithio.
+1571066	Dydy o ddim yn gallu cyfri.
+1571070	Panda wyt ti.
+1571073	Mathemateg ydy ein gwers cyntaf ni.
+1571074	Mae hi'n bwyta ei chinio yn yr adref.
+1571076	Peidiwch â thaflu sbwriel fan yma.
+1571080	Mae Tom yn wallgof dros Mary.
+1571081	Ble mae'r problem?
+1571084	Yn sicr, mae'n mynd i bwrw glaw.
+1571089	Aeth Alice i'r gwely am ddeg o'r gloch.
+1588714	Dros fy nghrogi!
+1768224	Rwyt ti'n fy neall i.
+1768227	Dych chi'n fy neall i.
+1959748	Nid yw un iaith byth yn ddigon.
+1963679	Gofynodd y dewin am wirfoddolwr o'r gynulleidfa.
+1963696	Mae hi'n braf iawn heddiw.
+1963702	Doeddwn i ddim yn barod.
+1963704	"Beth yw enw dy wraig?" "Dydw i ddim yn briod."
+1963746	Mae ganddo fab a dwy ferch.
+1963772	Mae'r ferch yn hoffi ceffylau.
+1963836	Mae Tocio yn ddinas enfawr.
+1963848	Rwyt ti'n ddynes.
+1963940	Dw i'n casáu'r byd oherwydd bod y byd yn fy nghasáu innau.
+1963945	Roeddwn i'n ddyn cyfoethog.
+1963949	Prynais tair potel o win.
+1963952	Wyt ti erioed wedi bwyta cig morfil?
+1963958	Mae gan y ddwy ferch llygaid gleision.
+1963959	Mae Tatoeba yn wefan gyfieithu.
+1963961	Cafodd ei fagu gan ei daid a'i nain.
+1963972	Creda Tom mewn tylwyth teg.
+1963981	Ble mae'r safle bws?
+1963984	Tybed beth ddigwyddodd iddo?
+1964094	Mae'r ci hwn yn rhedeg yn gyflym.
+1966846	Paid â darllen fy nyddiadur.
+1966847	Peidiwch â darllen fy nyddiadur.
+1966853	Dydw i ddim yn gwybod ei rhif ffôn hi.
+1966862	Mae gen i ddau frawd ac un chwaer.
+1966867	Mae o'n byw yn ei gar.
+1966870	Dw i'n berffeithydd.
+1966873	Dw i ddim yn hoffi dyddiau gwyntog.
+1966874	Mae hi'n saith o'r gloch.
+1966875	Roedd y tywysog ar goll yn y goedwig.
+1966876	Mae'n stori amwys.
+1966877	Mae o'n casáu Nancy.
+1968589	Mae'n rhaid i mi fynd rŵan.
+1968596	Mae o newydd gyrraedd.
+1968602	Mae'r trên yn gyflym iawn.
+1968604	Oes gen ti unrhyw lyfrau am Armenia?
+1969639	Tybed beth ddigwyddodd?
+1969641	Mae yna ddwy gath yn cysgu ar y gwely.
+1969642	Mae hanner yr afalau hyn wedi pydru.
+1969655	Dw i'n hoffi darllen.
+1969661	Cyflwyna dy waith cartref ar ddydd Llun.
+1969664	Cyflwynwch eich gwaith cartref ar ddydd Llun.
+1969713	Mae yna ddau sero yn y rhif "2010".
+1970591	Roedd hi'n niwlog iawn.
+1970599	Athrawes ydy hi.
+1970600	Mae hi'n athrawes.
+1972502	Rydym yn gwylio.
+1972506	Rhedodd yr arth ar fy ôl i.
+1972507	Mae o'n dalach na'i frawd.
+1972508	Mae'r glaw yn fy nilyn i bob man!
+1972509	Beth wyt ti'n ei wneud dydd Sul nesa'?
+1972510	Yn ôl Meic, mi brynodd Mac gar newydd.
+1972513	Mae'r Gymraeg, Cernyweg a'r Llydaweg oll yn perthyn yn agos i'w gilydd.
+1976667	Prynais gar yn Neri ddoe.
+1977140	Roedd hi'n sefyll yng nghanol yr ystafell.
+1977142	Mae Tom yn swrth iawn.
+1977145	Dw i'n mynd i'r eglwys ar ddydd Sul.
+1977169	Dw i'n heneiddio.
+1977175	Mae'r trên yn ddeng munud yn hwyr heddiw.
+1977177	Mae eu traed yn fudr.
+1977181	Mae'r cwmni eisiau cyflogi ugain o bobl.
+1977186	Mae hi wedi bod yn bwrw glaw yn ddi-stop am dri diwrnod.
+1977871	Mae aros adre yn ddiflas.
+1978868	Dydw i ddim yn gwylio teledu.
+1978877	Mae traean yn llai na hanner.
+1978884	Arabeg yw fy mamiaith.
+1978888	A oes yna unrhyw draethau yn yr Almaen?
+1978890	A oes yna ddaeargrynfeydd yn yr Almaen?
+1978893	A oes yna orlifoedd yn yr Almaen?
+1978895	A oes yna sgorpionau yn yr Almaen?
+1978897	Wyt ti am dalu amdano?
+1978904	Mae Barack Obama yn Gristion.
+1978913	Mae marwolaeth yn barhaol.
+1978917	Wyt ti erioed wedi plannu coeden?
+1978924	Welaist ti ei wyneb o?
+1978927	Ydy cathod yn breuddwydio?
+1978939	Ydy o'n hoffi Siapan?
+1978941	Ydy cariad yn bodoli?
+1978944	Oes ganddi hi gariad?
+1978947	Ydy'r cloc yna yn gweithio?
+1978950	Ydy dy ffrind yn siarad Esperanto?
+1978952	Ydy dy gyfaill yn siarad Esperanto?
+1978984	Mae'n rhaid i mi brynu blodau i'm cariad.
+1978989	Mae'r ci yn cysgu yn y car.
+1979006	Mae yna gath ar y bwrdd.
+1979037	Roeddwn i'n darllen llyfr.
+1979126	Ble mae'r swyddfa bost?
+1979160	Mae Tom yn anorecsig.
+1979300	Mae ei theulu yn fawr iawn.
+1979312	Mae gen i syniad da.
+1979332	Dw i'n rhy fyr.
+1979348	Pa danlwybr sy'n mynd i ganol y dref?
+1979355	Mae'r dref yn enwog am ei hen gastell.
+1979369	Roedd y llyfr hwn yn hawdd.
+1979381	Mae gen i lawer o dir.
+1979384	Mae hadau grawnafal yn gymharol fawr.
+1979393	Mae Muiriel yn ugain mlwydd oed.
+1979434	Peidiwch â dweud celwydd!
+1979478	Mae'n amlwg i bawb ei fod e mewn cariad.
+1979484	Be' sy'n bod, cariad?
+1979509	Roedd gen i syniad gwych.
+1979512	Gadewch i mi wybod.
+1979518	Wyt ti wedi ymweld â sw yn dy wlad di?
+1979529	Mae'n rhaid i mi weld meddyg ar unwaith.
+1979538	Mae'r ieithydd yn eitha gyfarwydd â'r dafodiaith.
+1979542	Nid yw'r llyfr hwn am ieithyddiaeth.
+1979562	Ieithydd Americanaidd oedd Edward Sapir.
+1979571	Mae gen i'r ffliw a dw i wedi blino.
+1979868	Rydym ni am wahodd Tom a Mary i'n parti Nos Galan Gaeaf.
+1979892	Roedd hi'n noswaith hydrefol hyfryd.
+1979901	Mae'r hydref yma.
+1979903	Try'r mynydd i gyd yn goch yn yr hydref.
+1979911	Yn yr hydref, syrth y dail o'r coed.
+1979919	Yr hydref yw'r tymor gorau ar gyfer darllen.
+1979922	Fel deilen yn yr hydrefwynt.
+1979956	Wyt ti'n siarad Saesneg?
+1980040	Wyt ti'n hoffi astudio?
+1980050	Mae fy llygaid yn las.
+1981640	Llosgodd ei sigarét o dwll yn ei ffrog hi.
+1981643	Mae'r athro newydd yn y dosbarth.
+1981677	Ddoe, aeth fy chwaer i Kobe.
+1981681	Mae'r bobl yn dioddef.
+1981691	Mi dreuliodd o lawer o'i amser yn darllen.
+1981694	Gest ti amser da ddoe?
+1981879	Pa fathau o frechdanau sydd gennyt ti?
+1981989	Beth ydy Tom yn darllen?
+1982022	Mae o'n gweithio oriau hir.
+1982037	Graddiais o brifysgol eleni.
+2036738	Sul y mamau hapus!
+2141769	Dyma fy nghyfrinach i. Mae hi'n syml iawn. Dim ond efo'r galon mae gweld yn iawn. Mae'r hyn sy'n bwysig anweledig i'r llygad.
+2318115	Dw i'n mynd i ddysgu almanaeg.
+2347969	Ydych chi'n siarad Saesneg?
+2447558	Rhaid i chi ateb y cwestiwn.
+2796667	Mae e'n gallu darllen yn dda.
+2796984	Dydy Ellen ddim yn gallu siarad Cymraeg.
+2797420	Does dim cath gyda fi.
+2797473	Oes ci gyda fe?
+2797474	Oes ci gyda hi?
+2803974	Dych chi'n siarad.
+2803975	Wyt ti'n siarad.
+2983633	Mae'r coffi yn oer.
+2983642	Mae'r dŵr yn poeth.
+2983684	Mae'r tŷ yn mawr.
+2983754	Mae'r dyn yn tal.
+3081381	Mae gen i ddwy gath.
+3090725	Cerddon nhw adre.
+3090979	Mi brynais i docyn.
+3092961	Phryna i mo'r car yfory.
+3092964	Roedd yr afal yn flasus.
+3092970	Dw i'n casáu'r bwyd yn y ffreutur.
+3092974	Mae'r plant wedi anghofio eu gwaith cartref.
+3116497	Mae hi'n darllen.
+3116537	Mae hi'n cantores.
+3116544	Mae gen i frawd hŷn.
+3117291	Rydw i'n bwyta.
+3117301	Rydw i'n bwyta cinio.
+3117304	Rydw i'n bwyta yma.
+3125794	Maen nhw'n darllen llyfr.
+3138742	Gyda pha stryd y dylem ddechrau?
+3138746	Paid ag ysmygu yn y gwely!
+3138747	Ble mae'i thŷ?
+3138748	'Rwy'n byw yn Hyogo.
+3138749	Nid yw ef yn ein hoffi.
+3138750	Llyfr newydd yw'r llyfr hwnnw.
+3138752	Wyt ti'n byw yma?
+3138754	'Rwyf tu ôl iddo.
+3138755	Mae'r bachgen yn bwyta bara.
+3138757	Ble mae'i dŷ?
+3138761	Merch deg yw Laurie.
+3138765	Byddent yn dod o hyd inni.
+3315776	Rwyt ti'n mynd i'r ysgol.
+3392748	Coffi, ys gwelwch yn dda.
+3400885	'Dwi yn y tŷ.
+3524064	Dw i'n hoffi siarad Cymraeg.
+3524071	Dw i'n hoffi coffi.
+3562304	Dim problem, wrth cwrs, os chi'n mynd
+3607807	Dw i'n hoffi Hokkaido.
+3717280	Dw i'n chwarae yn yr ardd.
+3717292	Rwyt ti'n chwarae yn yr ardd.
+3717295	Mae hi'n chwarae yn yr ardd.
+3717308	Dw i'n dysgu cerddoriaeth.
+3752702	Mae'r ty yn fach
+3766111	Pwy sy'n mynd i'r farchnad?
+3766113	Be' sy'n bod gyda Tom?
+3766115	Beth mae Tom yn gwneud?
+3766116	Beth ydy Tom?
+3766118	Pwy ydy Tom?
+3766122	Cwestiwn: Ai gi neu gath yw Cwci? Ateb: Un o rhein.
+4194519	Ar hyn o bryd, Burj Khalifa yw'r nendwr uchaf yn y byd.
+4424253	Dw i ddim yn deall.
+4548851	Mae un o gŵn fy ffrind yn dew.
+4548852	Mae swydd arall gen i.
+4748702	Mae rhaffau yn amgylchu'r lle.
+4748860	Mae'r te yn rhy oer.
+4748864	Dw i'n gweithio bob dydd ond Dydd Sul.
+4748870	Sgen i ddim waith heddiw.
+4748948	Mae o'n medru gweld drwy gefn ei phen.
+5978175	Dŵr yw bywyd.
+6207902	Mae'r frawddeg ddim yn wneud synnwyr.
+6304664	Mae'r ystafell cyfarfod i lawr y grisiau.
+6304685	Barlys ydy ein prif gynnyrch.
+6304686	Dydy Tom ddim yn hoffi astudio.
+6304698	Nes i newydd orffen darllen y llyfr.
+6304703	Dylwn i ddim wedi gofyn i ti i wnaed hynny.
+6443813	"Pwy dych chi?" "Tom dw i."
+6889825	Dw i'n hoffi dawnsio gyda Maria
+6889840	Torrodd Tom ei ffêr
+6889851	Mae'r llawr yn llithrig iawn
+6889865	Mae Tom yn byw yn Boston, hefyd.
+6889914	Dydyn nhw ddim yn dod.
+6889918	Dw i'n hoffi gwrando ar gerddoriaeth glasurol.
+6889927	Mae'n rhaid i mi redeg.
+6889928	Dw i methu nofio.
+6889932	Mae gen i gi mawr.
+6889936	Mae hi eisiau dawnsio.
+6889944	Mae'n rhaid i mi ddechrau.
+6889964	Dw i'n byw yn Japan.
+6889966	Dw i'n hoffi gwrando ar y radio.
+6889967	Wyt ti'n hoffi gyrru?
+6889968	Ydych chi'n hoffi gyrru?
+6889971	Mae hi'n bwrw glaw tu allan.
+6889976	Dw i'n hoffi plant.
+6889977	Ble mae'r menyn?
+6889979	Ble mae'r ysbyty?
+6889980	Un, dau, tri, pedwar, pump, chwech, saith, wyth, naw, deg.
+6889983	Mae rhywun yn canu.
+6889988	Dw i ar goll.
+6889994	Mae hi'n hoffi gwrando ar gerddoriaeth.
+6889999	Dw i'n siarad.
+6890001	Mae hi'n rhy hwyr.
+6890023	Ble mae'r gath?
+6890024	Roedd y plant yn chwarae yn y parc.
+6890027	Mae Eliza yn crio.
+6890029	Roedd Tom yn siarad.
+6890033	Dw i'n prynu bara.
+6890055	Mae blas chwerw i'r coffi hwn.
+6890057	Mae gan y coffi hwn flas chwerw.
+6890110	Hwyl fawr a phob lwc.
+6890111	Nofiodd Tom gyda'i fab.
+6890112	Dydy hi ddim yn rhy anodd i ddysgu Ffrangeg.
+6890114	Roedd hi'n oer tu allan.
+6890116	Mae'r bwrdd yn yr ystafell fyw.
+6890117	Dw i eisiau dysgu sut i chwarae gwyddbwyll.
+6890122	Rhoddodd Mary ei chyfeiriad i mi.
+6890223	Ble mae Rhufain?
+6890227	Ydy Tom a Mary yn cofio unrhyw beth?
+6890231	Dw i ddim yn gallu yfed coffi heb siwgr.
+6890232	Dwyt ti ddim yn fy ngharu i.
+6890234	Mae Tom yn astudio.
+6890240	Roedd hi eisiau bod yn athrawes.
+6890241	Rwyt ti'n hŷn na fi.
+6890245	Diolch am edrych ar ôl y plant.
+6890273	Rydyn ni angen prynu anrheg iddyn nhw.
+6890274	Pa het wyt ti'n hoffi?
+6892700	Roedd Tom wedi gweithio.
+6894297	Dylwn i drio y razor trydan hwn cyn ei brynu o.
+7032800	Rydyn ni wedi gwylio'r ffilm 'ma dwywaith.
+7035055	Trydanwr mewn theatr dych chi?
+7035079	Dw i mewn drama.
+7035128	Gwraig tŷ dw i.
+7035138	Siopwr dw i.
+7035142	Heddwas dych chi?
+7039124	Dych chi'n gwisgo menig?
+7041565	Sut dych chi, Dylan?
+7041568	Sut dych chi, Draig?
+7067948	Dw i'n hoffi pys.
+7075944	Dw i'n hoffi cennin.
+7075948	Dw i'n bwyta bara.
+7137433	Tybed wyt ti'n gwybod sut i wneud hynny.
+7255158	Dw i'n gweithio mewn ysgol Gymraeg.
+7255163	Ysgrifennydd dw i.
+7255165	Actor Cymraeg mewn theatr dw i.
+7305126	Beth ydych chi’n wneud?
+7351984	Cewch wared ohoni hi.
+7352043	Rydyn ni'n awyddus iawn i weld y ffilm.
+7353065	Peidiwch â gadael iddo fo ddianc.
+7353068	Un, dau, tri, pedwar, pump, chwech, saith, wyth, naw, a deg ydy rhifau.
+7353105	Mae'n oer iawn nawr.
+7353391	Mae Layla yn fam i chwech, yn byw yn ne dwyrain Lloegr.
+7354132	Mae llygod yn yfed y dŵr.
+7354250	Pwy wyt ti?
+7354260	Esgusodwch fi, ond pwy ydych chi?
+7354271	Esgusodwch fi, ond o ble ydych chi'n dod?
+7354995	Elli di gerdded?
+7355004	Allwch chi gerdded?
+7355010	Mae hi'n dweud ei bod hi'n unig.
+7356214	Rydyn ni'n yfed gormod.
+7356642	Ydyn nhw'n caru cathod?
+7359293	"A beth ydych chi'n yfed?" "Cwrw, os oes gen i, neu ddŵr os nad oes gen i gwrw." "'Tydych chi ddim yn yfed gwin?"
+7364029	Doedd gan Cesar ddim beic.
+7364039	A tithau, Brutus?
+7364050	Fe wnaeth Mari ei swydd hi.
+7364732	Ond tydi hi ddim yn ddigon i ti.
+7364740	Dywedodd Mari a wnaeth hi feddwl na fyddai Tomos yn gwneud hynny yfory.
+7364991	Meddwl gadarn mewn corff cadarn.
+7431947	Nid fel hyn y dylai pethau fod.
+7431961	Mae’n hollol warthus.
+7431972	Mae o wedi marw yn y fan a’r lle.
+7431979	Mae o'n gwneud mor â mynydd o bethau.
+7434678	Pam wyt ti'n drist?
+7447987	Faint o bres oes gen ti?
+7447989	Faint o bres 'sgen ti?
+7448032	Pam ydych chi'n chwerthin ar fy mhen i?
+7448052	Rhaid bod nhw o'u cof.
+7448053	Dwi'n meddwl dwi am fynd adre.
+7448055	Dwi am fynd am dro bach.
+7448065	Mae arna' i gymaint o ofn.
+7448068	Dwi i'n methu cysgu rwan.
+7448093	Dwi eisiau i chi fy mharchu i
+7448097	Mae'n rhaid dangos parch.
+7448103	Ty'd ymlaen, ti'n tynnu fy nghoes.
+7448113	Roedd rhaid i mi aros adre.
+7448411	Dywedais wrth Tomas.
+7449457	Mae hi'n bwrw hen wragedd a ffyn.
+7449470	Mae hi'n bwrw cyllyll a ffyrc.
+7449875	Mi wyt ti'n tynnu fy nghoes.
+7449889	Dwi'n meddwl dy fod ti'n tynnu fy nghoes.
+7457239	Mae hi'n studo bwrw.
+7457253	Mae hi'n piso bwrw.
+7457255	Mae hi'n chwipio bwrw.
+7590331	Dydw i ddim yn siarad Swedeg.
+7590335	Mae ganddi hi gath wen.
+7590342	Nid yw fy nghydwybod yn lân.
+7669152	Dwi'n falch eich bod chi dros eich annwyd.
+7769260	Mae barcut yn hedfan uwch ben y goeden.
+7769273	Dwi ddim yn gwybod.
+7769279	Cadwch y wers hon yn y cof.
+7769281	Dwi’n byw ym Melffast.
+7769285	Dwi’n dda iawn.
+7771034	Paid â gadael i Tom redeg.
+7771039	A fasech chi'n dweud wrthyf faint o'r gloch mae'r trên yn cychwyn?
+7822174	Mae lliwio gwallt yn dipyn o ymrwymiad.
+7822178	Roedd fy mab yn hollol foel pan gafodd ei eni.
+7822179	O ble felly daeth ein cochyn bach ni?
+7822189	Yng Nghymru, mae'n orfodol i fyfyrwyr ysgol astudio cemeg hyd at lefel TGAU (16 oed).
+7822191	Defnyddir system o'r enw 'Tacsonomeg Linnaeaidd' i ddosbarthu organebau mewn grwpiau.
+7822194	Mae'r ewcaryotau'n ffurfio un o'r tri pharth o organebau byw.
+7822198	Mae ei symudiad rhydd yn wahanol iawn i lawer brimatau eraill, yn enwedig yng nghymal yr ysgwydd.
+7822203	Mae dyn yn cerdded 200 milltir i brotestio yn erbyn Brexit.
+7826950	Mae'r plant yn oer.
+7826954	Mae Tom yn rhy ifanc i briodi.
+7826957	Aeth Layla gyda Sami.
+7826958	Mae Tom yn dawelach na Mary.
+7826965	Beth wyt ti'n gwneud yn yr atig?
+7832670	Yn ôl un arbenigwr mae'r profiad yn gallu bod yn "sioc anferth" i deuluoedd.
+7832671	Dechreuodd ymddygiad mab Liz waethygu pan ddechreuodd yn yr ysgol uwchradd.
+7832673	Rydyn ni'n gweld plant gydag ymddygiad heriol achos bod ganddyn nhw anawsterau dysgu yn fwy tebygol o gael eu gwahardd.
+7832676	Mae pêl-droed Americanaidd, pêl fas, pêl-fasged a hoci iâ yn cael eu gweld fel y chwaraeon nodweddiadol yng Ngogledd America.
+7835282	Wnes i ddim darllen llawer o lyfrau wythnos diwetha.
+7835286	Yfedodd hi ysgytlaeth protein.
+7835288	Rhaid i ni dilyn Tom.
+7835291	Ddydd Sul, fyddwn ni ddim yn bwyta adref.
+7835296	Dw i'n bwyta popeth.
+7835303	Y ceffyl hwnnw yn ddrud iawn.
+7835306	Dywedodd Mary mae hi'n iach.
+7835310	Mae Sami ddim yn berson creadigol.
+7835313	Mae'r milwyr yn gwisgo helmedau haearn.
+7836708	Gwnaeth hi ei gwisg Calan Gaeaf ei hun.
+7836715	Mae Layla ddim yn dy cariad.
+7836718	Pam wyt ti'n casau Tom cymaint?
+7836868	Nofion Tom a Mary yn y llyn rhewllyd.
+7836876	Rhaid i hi ei helpu.
+7836883	Weithiau rwyt ti'n fy synnu.
+7836888	Dw i eisiau mynd i Paris i astudio celf.
+7837695	Helpais i Tom i lenwi'r ffurflen gais.
+8050200	Mae fy llaw mewn dŵr poeth.
+8050212	Mae Mennad eisiau dweud rhywbeth.
+8050218	Mae Mennad yn newydd yma.
+8050226	Daeth Mennad i'r twrnament.
+8050239	Mae Mennad yn brysur yn y dosbarth.
+8050245	Mae Tom a Mair ill dau'n siarad Ffrangeg yn rhugl.
+8050250	Dw i'n gwybod tipyn bach o Ffrangeg yn barod.
+8050287	Roedd hynny ar y newyddion.
+8095980	Mae eisiau gwella ar bawb.
+8095985	Mae morfilod yn famaliaid.
+8095989	Helo, sut wyt ti?
+8095993	Mae Tom yn byw yng Nghymru.
+8095994	Tá Tomás ina chónaí sa Bhreatain Bheag.
+8095999	Yng Nghymru, mae gennym ddywediad.
+8109600	Rhaid i ni stopio.
+8109603	Wyt ti’n hoffi caws?
+8109610	Roedd rhaid i ti ddod ddoe.
+8109626	Dw i’n casáu’r lliw ‘na.
+8109642	Mae’n bwrw hen wragedd a ffyn.
+8115177	Da bo chi!
+8115178	Mae’n rhaid iddo fynd at y deintydd heddiw.
+8115186	Mae’n rhaid i ni adael ar ddiwedd y mis.
+8115189	Roedd yn ddiwrnod braf ddoe.
+8115197	Mae’r Fanaweg yn hawdd iawn!
+8115206	Mae o’n byw yn Lloegr.
+8115207	Mae’r dŵr yn lân.
+8115215	Dewch gennyn ni.
+8115240	Byddaf yn ymweld â thi yn dy swyddfa yfory.
+8115241	Hoffwn i fyw yn Efrog Newydd.
+8115242	Ai dyma’r ffordd iawn i’r amgueddfa?
+8115243	Pryd dechreuwch chi?
+8115245	Am ferch ddel!
+8115247	Does dim bwyd ar ôl.
+8115248	Mae enw’r ferch yn f’atgoffa o’m dyddiau hapus yn yr ysgol.
+8115250	Mae dy fam yn ifanc iawn.
+8115252	Mae Tom yn ein helpu efo hynny.
+8115253	Ond mae’n symud!
+8115263	Mae Iwerddon yn wlad chwedlau a dirgelion, chwedlau a straeon, traddodiadau a chwedlau.
+8115269	Wyt ti’n siarad Cymraeg?
+8115270	‘Dych chi’n siarad Cymraeg?
+8115275	Mae fy ffrind gorau’n dod o Gymru.
+8115276	Mae’n enw Cymreig.
+8115279	Mae Cernyweg, Cymraeg a Llydaweg yn ieithoedd Celtaidd.
+8115281	Dw i wedi dysgu fy mharot i siarad Cymraeg.
+8115283	Mae’r Gymraeg yn iaith swyddogol yng Nghymru ac yn Chubut.
+8115284	Mae Cymraeg yn iaith anodd iawn i mi.
+8115287	Dw i’n deall Cymraeg ond dw i ddim yn medru ei siarad.
+8115290	Y gwir ydy mod i’n dod o Gymru ond dw i’n byw ym Mryste.
+8115292	Mae orgraff y Gymraeg fel bod llawer o eiriau Cymraeg (fel “ffwrdd” a “gyflwynwyd”) yn arddangos i siaradwyr ieithoedd eraill i beidio cynnwys unrhyw gytseiniaid.
+8117832	Dydw i ddim yn dwpsyn!
+8117834	Beth wyt ti'n 'neud heddiw?
+8117840	Caewch y drws!
+8117860	Mae o'n ffrind i mi.
+8117883	Bydda' i'n dysgu Almaeneg.
+8117889	Wyt ti'n deall?
+8117891	Ydych chi'n deall?
+8117905	Aeth Tom i'r gampfa.
+8117907	Gyda phwy wyt ti'n chwarae tenis?
+8117910	Dw i'n mynd i fod yn ewythr.
+8117913	Neb ond Tom wnaeth hynny.
+8117926	Ydych chi erioed wedi canu mewn Ffrangeg?
+8117928	Mae gan Tom ddwylo mawrion.
+8117929	Dylet ti wedi mynd adre' yn barod.
+8117930	Diolch am fynd â nhw i bysgota.
+8117932	Doedd Tom ddim eisiau bod yn fferyllydd.
+8117934	Dydy Mennad byth yn siarad am ei hiselder.
+8117944	O le 'dych chi'n dod?
+8117946	Dw i wedi eu lleoli.
+8117949	Gofynnodd Tom i mi am bwy oedd yn gyfrifol am y ddamwain.
+8117950	Byddant yn goroesi.
+8117958	Galwodd Mari i ddweyd na fyddai hi yn ôl erbyn yfory.
+8117959	Dywedodd Tom ei fod yn aros am Mari.
+8117962	Dw i jyst ddim yn dy hoffi di.
+8117966	Dw i'n eitha' styfnig.
+8117973	Dw i'n sicr bod Tom yn euog.
+8117977	Dydw i ddim yn meddwl bydd Tom byth yn medru canu cystal â Mari.
+8117979	Mae Tom yn gwybod lle ydw i.
+8117984	Mae Tom a fi wedi bod yn ffrindiau am flynyddoedd.
+8117995	Mae Melanie yn meddwl bod y sefyllfa'n wael iawn.
+8117996	Ychwanegais lun a gobeithio dy fod ti'n ei weld yn addas.
+8117997	Mae Tom yn fy mhrofi i.
+8118002	Daeth o hyd i focs o dan y bwrdd.
+8118004	Mae gennym ddigon o ddŵr.
+8118005	Rhaid fy mod i wedi heintio.
+8118006	Dywedodd Tom a Mari wrthyf eu bod nhw'n sengl.
+8118013	'Roedd Sami yn gyrru Beamer du.
+8118014	'Dych chi ddim yn hoffi pysgod?
+8118016	Hoffwn wybod beth yw hi.
+8118017	Ga' i fynd adref?
+8118018	Cawsom wared o'r llygod yn ei dŷ.
+8118030	Egni a lwydd.
+8118038	Dydy hi ddim yn mynd i ddigwydd i Tom.
+8118039	Os nad ydy o'n yfed, bydd o'n marw.
+8118043	Ble mae'r orsaf nesaf?
+8118044	Mae gan Barbie wallt melyn a llygaid glas.
+8118053	Dw i'n gwybod nad ydy Tom yn gwybod y gwnaeth Mari hynny.
+8118057	Prynodd tad gamera i mi.
+8118059	Penderfynom beidio â gwneud hynny.
+8118060	Ti'n hoffi peli.
+8118064	'Roedd y ffair yn llawn dop.
+8118065	Doedd Tom ddim yn gwybod bod bleiddiau yn yr ardal.
+8118066	Dywedodd Tom a Mari wrth Siôn nad oedden nhw'n meddwl bod Alys yn drist.
+8118067	Nid oes tân heb fwg.
+8118076	Ond pam dwyt ti ddim eisiau mynd i Genefa?
+8118078	Mae Brwsel yn brifddinas Gwlad Belg.
+8118083	Dydyn ni ddim yn cael dau ben llinyn ynghŷd.
+8118084	Dangoswch y rhestr i mi.
+8118085	Mae pobl sy' jyst eisiau torri ar eich traws a gwastraffu'ch amser.
+8118086	Mae hi'n siarad fel petai hi'n gwybod popeth dan yr haul.
+8118088	Dydy Mari ddim yn chwaer i mi.
+8118092	Lleolir Llundain, prifddinas Lloegr, ar afon Tafwys.
+8118096	Gwelaf dy gath yn yr ardd.
+8118097	Dw i mewn cariad â thi.
+8118101	Mae'n rhy fach.
+8118102	Mae Tokyo'n ddinas fawr iawn.
+8118106	Mae ganddyn nhw ddwy ferch.
+8118107	Mae ganddi ferch a Mari yw ei henw.
+8118109	Beth wyt ti'n wneud?
+8118113	'Roeddwn i'n meddwl y gwelais ddyn yno.
+8118114	Mae dyn wrth y drws sy' eisiau siarad efo ti.
+8118116	Pwy sy' bia'r bwyd yma?
+8118120	Ai ti brynith y bwyd?
+8118121	Dyna'r tŷ 'roedden nhw'n byw ynddo.
+8118124	Mae hi'n brydferth.
+8118125	Mae dwy gath gen' i.
+8118126	Dw i'n ifanc.
+8118129	Ydw i'n ffrind i ti?
+8118131	"Faint ydy dy oed di?" - "Dw i'n dri deg oed."
+8118132	Aethon ni i Lundain.
+8118134	Bydda i'n bwyta'r cig.
+8269457	Ildiwch i gerbydau yn dod atoch.
+8269459	Mae’r rhwystrau hyn yn cael eu cau dros nos.
+8269468	Cadwer yng nghau ac ar glo.
+8269489	Pan fydd y lamp yn goleuo, siaradwch efo’r staff.
+8269494	Gwasgwch y botwm.
+8269495	Arhoswch am yr arwydd.
+8269506	Caniateir ysmygu o fewn y llinell derfyn.
+8269515	Mae’n dangos y tunell y flwyddyn o CO₂.
+8269517	Yma nodir pa mor effeithlon y mae ynni wedi cael ei ddefnyddio yn yr adeilad hwn dros y tri chyfnod cyfrifo diwethaf.
+8269519	Yma nodir gwybodaeth dechnegol am y modd y mae ynni yn cael ei ddefnyddio yn yr adeilad hwn.
+8269521	Tystysgrif Ynni i’w Harddangos yw hon fel y’i diffinnir yn Rheoliadau Perfformiad Ynni Adeiladau 2012, fel y’u diwygiwyd.
+8269523	Mae argymhellion ar gyfer gwella perfformiad ynni’r adeilad wedi’u cynnwys yn yr Adroddiad Argymhellion perthynol.
+8269529	Pwyswch y botwm i agor y drws.
+8269533	Rydych yn parcio ar eich menter eich hun, ni dderbynnir cyfrifoldeb am unrhyw golled, difrod, neu ddwyn.
+8269539	’R ydych yn hydradol?
+8269541	Cymerwch y prawf lliw wrin.
+8269545	Dyma yr fan lle Claddwyd Lewis Jones.
+8269548	Dyluniwyd gan ddisgyblion Ysgol Bro Dewi.
+8269550	Rhybudd! Cynnwys Asbestos.
+8269561	Gwyliwch eich pen.
+8269564	Ni ddylid gadael unrhyw roddion ger drws y siop pan fydd y siop ar gau.
+8269566	Nid oes hawl yfed a bwyta yn y siop hon.
+8269572	Gadewch y bagiau gweigion yn y bocs gerllaw y 18fed lawnt.
+8269574	Mae’ch cymorth chi yn sicrhau bod ein cwrs yn cael ei gadw mewn cyflwr da.
+8269578	Weithiau bydd ein Swyddogion yn gwisgo gwisg blaen ond byddant bob amser yn dangos ID wrth wirio eich tocynnau.
+8269584	Os ydych chi’n 16 oed neu’n hŷn, bydd angen i chi brynu tocyn.
+8269586	Os nad oes cyfleusterau prynu tocynnau yn eich gorsaf, dewch o hyd i aelod o staff cyn gynted â phosib er mwyn prynu tocyn neu i gael cyngor ynghylch y cyfle nesaf i brynu tocyn.
+8269589	Barod am antur?
+8269595	Ydych chi wedi datgloi ar gyfer eich cymydog?
+8269601	Diolch am eich cydweithrediad.
+8269602	Diffoddwch y golau!
+8585997	Cath ydw i.
+8586079	Dw i'n yfed gwin.
+8657668	Bydd angladd Tom y penwythnos 'ma.
+8657670	Rhaid i ni ei stopio.
+8657672	Dydy o ddim yn ifanc ond yn hen.
+8657673	Dyw e ddim yn ifanc ond yn hen.
+8657681	Rydyn ni'n chwilio am drysor.
+8657682	Rydym mi'n chwilio am trysor.
+8657683	Mae Mennad ar gael.
+8657684	Dw i'n mynd am dro.
+8657685	Rydw i'n mynd am dro.
+8678448	Roedd o'n edrych trwy ficrosgop.
+8678450	Roedd e'n edrych trwy ficrosgop.
+8678452	Roedd yn edrych trwy ficrosgop.
+8678453	Byddwn yn ei galw.
+8678455	Byddwn ni'n ei galw.
+8678459	Wyt ti eisiau gwydr o win?
+8678461	Beth fydd Tom yn meddwl?
+8678480	Mae hi'n treulio llawer o amser ar y ffôn.
+8678497	Dylet ti wneud dy waith cartref nawr.
+8678498	Dylet ti wneud dy waith cartref rŵan.
+8678509	Mae Sami yn siarad ag acen.
+8678511	Prynodd fy mam sgert newydd i fi.
+8678523	Roedd marwolaeth Tom yn syndod.
+8678524	Pryd wyt ti'n mynd yn ôl i'r Eidal?
+8678526	Pryd dach chi'n mynd yn ôl i'r Eidal?
+8678527	Pryd dych chi'n mynd yn ôl i'r Eidal?
+8678540	Roedd drws Tom ar agor.
+8678550	Taset ti'n magu ci, pa gi baset ti'n magu?
+8678553	Dw i'n mynd i gyngerdd wythnos nesa.
+8678554	Cyrhaeddodd Tom rhy hwyr.
+8678568	Wyt ti'n mynd i barti Tom?
+8678570	Ydych chi'n mynd i barti Tom?
+8678572	Dych chi'n mynd i barti Tom?
+8678573	Dach chi'n mynd i barti Tom?
+8678577	Gwenasant nhw arno fo.
+8678578	Gwenasant nhw arno fe.
+8678598	Dw i newydd dweud wrthi hi.
+8678608	Pryd gyraeddasoch chi yno?
+8678623	Mae Tom yn smwddio ei grysiau.
+8679386	Mae fy nant yn brifo.
+8679393	Mae hi wedi colli ei hallwedd.
+8679395	Mae hi wedi colli ei goriad.
+8679396	Collodd hi ei hallwedd.
+8679397	Collodd hi ei goriad.
+8679402	Dylet ti wrando ar dy imâm.
+8679405	Rydw i'n byw ar yr un llawr â Tom a Mary.
+8679406	Galwodd Sami fi eto.
+8679410	Yerevan ydy prifddinas Armenia.
+8679411	Maen nhw eisiau dod.
+8679412	Dydy fy enw ddim yn bwysig.
+8679421	Roedd Sami'n eistedd yn ei gar.
+8679439	Rydw i ddim yn meddwl fod Tom yn cysgu'n dal.
+8679442	Wyt ti eisiau mynd i'r gofod?
+8679443	Ydych chi eisiau mynd i'r gofod?
+8679444	Dych chi eisiau mynd i'r gofod?
+8679447	Dach chi eisiau mynd i'r gofod?
+8679451	Gwelsoch chi ormod o ffilmiau.
+8732063	Dyw Tom na Mary ddim wedi addo dod.
+8732065	Gadawodd Sami yr ystafell ddosbarth.
+8732067	Mae Tom a Mary yn mynd i'm helpu fi.
+8732076	Dywedodd Mary ei bod hi'n meddwl bod angen i Tom gael £300 o leiaf, er mwyn prynu popeth mae angen.
+8732080	Dywedodd hi baset ti'n gwneud hynny iddi.
+8732093	Ysgrifennodd Tom draethawd yn Ffrangeg.
+8732100	Mae'n ddiymhongar, onid yw e?
+8732109	Dywedodd Mary oedd hi'n gwybod baswn i'n dod.
+8732111	Doeddwn i ddim yn ystyried teimladau Tom o gwbl.
+8732124	Mae Islam wedi'm gwaredu fi.
+8732132	Mae Mary bron wedi cwpla, onid yw hi?
+8732144	Gobeithiodd y bydd yn clywed ohoni.
+8732147	Mae Mary wedi mynd â'i phlant i Awstralia.
+8732159	Mae Layla yn edrych fel ei chwaer hi.
+8732178	Cododd Mary o'i chadair hi.
+8732184	Rydw i'n moyn eistedd ar fy mhen fy hun.
+8732190	Dyw Sami ddim yn meddwl bod Layla yn perfformio'n dda.
+8732207	Roedd fel y fagddu.
+8732211	Doedd hi byth yn edrych arnof.
+8732220	Mae'r ystafell bron yn wag.
+8732230	Roedd Tom yn arfer bod yn hyfforddwr ci proffesiynol.
+8732258	Bwyton ni'r cinio mewn bwyty agos.
+8732260	Dydw i ddim yn gwybod llawer.
+8732264	Mae'n llwglyd hefyd, onid yw hi?
+8732277	Mae hi wastad yn cario'i chamera gyda hi ym mhobman.
+8732282	Mae'r nifer o bobl sydd wedi marw o Nipah yn eitha bach.
+8732311	Mae'n gwybod ei fod yn gallu dy drystio di.
+8732345	Mae Tom a Mary yn gobeithio eu bod nhw'n gallu gwneud hynny.
+8751641	Yn y dechreuad y creodd Duw y nefoedd a’r ddaear.
+8751666	A Duw a ddywedodd, Bydded goleuni, a goleuni a fu.
+8752085	A Duw a welodd y goleuni, mai da oedd: a Duw a wahanodd rhwng y goleuni a’r tywyllwch.
+8760110	Athro dw i.
+8760111	Athrawes dw i.
+8766563	Mae Donald Trump yn gancr oddi ar y ddaear hon.
+8766566	Arosan ni ar gyfer Tomas.
+8772020	Mae’r cawl yn rhy boeth.
+8783050	Mae gynni hi ychydig lyfrau.
+8783059	Dwi eisiau gweithio mewn Ysbyty.
+8783060	Dwi’n bwyta reis bob dydd.
+8798832	Mae'r llyfrgell mor bell â'r orsaf.
+8798839	Mae'r ferch yn dewach na'r bachgen.
+8798856	Nhw oedd y gwaetha.
+8800655	Wyt ti'n gwrando arna' i?
+8800656	Maen nhw'n edrych arnon ni.
+8800659	Rydw i'n rhoi anrheg iddi hi.
+8800661	Wyt ti wedi gofyn iddyn nhw?
+8800665	Wyt ti wedi gweld llun ohoni hi?
+8800816	Wyt ti'n poeni amdani hi?
+8800820	Wyt ti'n mynd i ysgrifennu ati hi?
+8802979	Dych chi ddim yn gweithio'n galed.
+8802982	Dydy'r plant ddim yn chwarae pêl droed yn y parc.
+8803471	Ach! Dwi wedi anghofio fy waled.
+8804326	Dydi o ddim gwerth rhech defaid.
+8804334	Roedd rhech Capel.
+8804342	Roedd fel rhech mewn pot jam
+8804386	Mae Tom yn goc oen.
+8805796	Roeddech chi'n gweithio'n galed.
+8805803	Roedd y llyfrau ar y bwrdd.
+8805810	Doedd y plant ddim yn y gwely.
+8805814	Roeddw i'n rhy hwyr.
+8805815	Oeddwn i'n rhy hwyr?
+8805828	Doedd yr ateb ddim yn iawn.
+8806606	Mae o’n fel rhech mewn pot jam
+8808983	Mae o wedi meddwi.
+8818963	1794 oedd blwyddyn Teyrnasiad Braw, ac aed â mintai fawr o filwyr o Estampes, yn Normandi, i Landreger i roi terfyn ar y rhai nad oeddent wedi bodloni i'r drefn.
+8833856	Fe welodd hi'r ffilm neithiwr.
+8833860	Wisgais i ddim ffrog newydd ddoe.
+8836835	Fe aeth y plant i'r ysgol ar y bws.
+8836840	Fe ddest ti i'r gwaith gyda Tom y bore 'ma.
+8895620	Os gwelwch yn dda.
+8919806	A beth am Usrule?
+8992460	Wyt ti wedi gweld y ffilm ‘Inception’?
+8992464	Mae’r dyn yn fawr.
+8992465	Rhaid i ni trio stopio hi.
+8992469	Mae car newydd ganddi hi.
+8992619	Mae problem gyda Tom.
+8992903	Roedd e'n tecstio ei ffrind e.
+8993140	Dyw Tom ddim yn hoffi cwrw neu win.
+8993150	Mae Tom wedi ennill eto.
+8993153	Mae hi'n gyfeillgar i bawb, ond yw hi?
+8993158	Roedd Sami a Layla yn chwerthin.
+8994181	Dych chi’n deall y cwestiwn yma?
+8994189	Mae’n rhy hwyr i fynd nawr.
+8994199	Dylech chi dechrau dysgu Ffrangeg.
+8994208	Roedd e’n bwrw eira.
+8994958	Rhaid iddo fe gwneud e nawr.
+8994959	Galla i'n siarad Saesneg yn barod.
+8994961	Beth yn nhw'n gwneud yma heno?
+8994974	Ydy fory yn rhy fuan?
+8996413	Ga i defnyddio dy ffôn di?
+9255281	Mae'n flin 'da fi.
+10178834	Dinas enfawr yw Tocio
+10178995	Dych chi'n hoffi bwyta caws?
+10178999	Athrawes dych chi, Mary?
+10179012	Dwi ddim yn hoffi gwisgo jîns newydd.
+10182885	Oes gardd gyda hi?
+10182889	Oes gardd gyda nhw?
+10182892	Dyn ni'n garddio
+10182893	Mae e'n dwlu gardio
+10182895	Dw i'n hoffi garddio
+10182896	Mae hi'n dwlu garddio
+10182899	Mae Tom yn mwynhau garddio
+10182901	Mae fy ngardd yn fach
+10182902	Fach yw fy ngardd
+10182904	Dw i'n dwlu dy ardd di
+10182905	Dw i'n dwlu dy ardd
+10182906	Dw i'n dwlu eich gardd chi
+10182908	Y garddwr dw i
+10182912	Garddwr dw i
+10182916	Wyt ti'n hoffi garddio?
+10182917	Dych chi'n hoffi garddio?
+10182961	Dyw Maria ddim yn siarad Almaeneg
+10182965	Dw i'n siomedig am y newyddion
+10182966	Bwydodd Tom y ci
+10182967	Aethon nhw i Kyoto y llynedd
+10182974	Cyrhaeddodd e ddydd Sul
+10182980	Dywedodd hi bod hi'n brysur iawn
+10271800	Dych chi'n hoffi teledu?
+10271805	Dw i'n hoffi cwrw.
+10271806	Dw i'n bwyta bara a selsig.
+10271811	Dw i'n yfed gwin coch.
+10271813	Dw i ddim yn hoffi moron chwaith.
+10271821	Mae hi'n wlyb heddiw, ond bydd hi'n well yfory.
+10271824	Mae hi'n braf ond yn niwlog.
+10271827	Ond dych chi ddim yn bwyta llysiau!
+10271830	Mae Tom yn mwynhau gwylio'r athletau ar y teledu.
+10271834	Wnest ti ddim gwylio'r gêm neithiwr.
+10271836	Wnaethoch chi wylio Tom ar y teledu neithiwr?
+10271839	Gwnaethon ni wylio'r teledu nos Fawrth diwetha.
+10271844	Wnaethoch chi degan gyda ffrind?
+10271857	Wnest ti'r gwaith?
+10271864	Dw i ddim eisiau prynu reis heddiw.
+10271871	Do, gwnes i frecwast blasus bore dydd Llun.
+10271880	Wnaethoch chi frecwast heddiw? Do.
+10271884	Dw i'n prynu orenau a afalau.
+10271887	Wyt ti'n smwddio?
+10271897	Dw i'n mwynhau llysiau.
+10271902	Gwnest ti ginio blasus iawn nos Fercher.
+10271909	Dyn ni'n hoffi menyn.
+10271915	Mae e'n dysgu Ffiseg.
+10271973	Dyn ni'n dysgu nofio.
+10271978	Dest ti i'r arddangosfa yma ddoe.
+10271986	Wyt ti'n hoffi cerdded yma?
+10271998	Ar ôl i ti wneud brecwast, mi wna i'r llestri.
+10272001	Gwna i'r papuro ar ôl i ti wneud y peintio.
+10272006	Wyt ti'n rhifo teganau.
+10272021	Wyt ti'n gwisgo crys newydd?
+10272053	Dych chi'n gwisgo trowsus newydd.
+10272056	Wyt ti'n gwisgo siwmper newydd.
+10272058	Dw i'n gwisgo menig da.
+10272061	Ydy e wedi gwisgo'r siwt newydd eto?
+10272094	Dw i'n gwisgo esgidiau da iawn.
+10272106	Cafodd y drydedd ferch anrheg Nadolig wych.
+10272111	Mae'r Nadolig ar y pumed ar hugain o Ragfyr.
+10272142	Chaethoch chi ddim anrheg.
+10272182	Mwynhewch eich ymddeoliad!
+10272188	Maen nhw'n dweud bod nhw wedi cael llond bol o'r rhyngrwyd erbyn hyn.
+10272191	Mae'r rhyngrwyd yn ein pentref yn araf iawn.
+10272194	Ga i gysylltu â'r rhyngrwyd yma?
+10272236	Roedd Megan yn meddwl bod ei rhieni'n codi cywilydd arni hi o flaen ei ffrindiau.
+10272238	Paid â chodi cywilydd arna i!
+10272244	Rheolwr cyllid y cwmni yw Mary.
+10272260	Mae'r tai newydd yn ddrud.
+10272264	Mae'r tai melyn yn rhad.
+10272268	Mary ydy'r rheolwr cyffredinol newydd, yn ôl Tom.
+10272273	Bydd y Cyfarfod Cyffredinol wythnos nesa, yn ôl gwefan y cwmn
+10272296	Does dim elw mewn moron, yn ôl Tom.
+10272306	Mae'r cwmni'n marchnata ei nwyddau yn Affrica.
+10272312	Dydy eu dyledion ddim dan reolaeth o gwbl.
+10272314	Mae gormod o ddyled gyda nhw ar hyn o bryd.
+10272317	Does dim problem, mae popeth dan reolaeth.
+10272320	Dwedodd Tom basai fe'n hysbysebu ei gar yn y papur wythnos nesa.
+10272323	Mae Tom yn hysbysebu moron.
+10272326	Mae Mary yn hysbysebu ceir.
+10272328	Does dim croeso i'r diafol yn nhŷ Tom.
+10272331	Nac oes, does dim diafol!
+10272334	Ble mae'r diafol?
+10272336	Roedd hi'n berson ysbrydol iawn yn y gorffennol.
+10272339	Oedd eich taid yn berson ysbrydol?
+10272342	Mae Mary yn berson ysbrydol.
+10272345	Dych chi'n credu bod ysbrydolrwydd yn bwysig i ni?
+10272347	Oes digon o ysbrydolrwydd yn y byd?
+10272351	Dych chi'n meddwl bod enaid gyda ni?
+10272358	Dwedodd hi fod awra goch gyda Mary.
+10272361	Dw i ddim yn credu bod ysbryd yma o gwbl.
+10272364	Oes ysbryd yma? Nac oes.
+10272366	Tasai digon o amser gyda fi, baswn i'n myfyrio am hanner awr bob dydd.
+10272368	Maen nhw'n myfyrio gyda'i gilydd.
+10272387	Oes ofergoelion yn Iwerddon?
+10272390	Hoffwn i wybod mwy am ofergoelion yn yr ardal.
+10272398	Sut basech chi'n egluro goleuedigaeth iddyn nhw?
+10272409	Ydy Mary yn defnyddio arogldarth?
+10272417	Mae pensil Mary yn y swyddfa.
+10272426	Rhaid i mi fenthyg pren mesur gan yr athro.
+10272428	Ga i fenthyg y pren mesur?
+10272434	Mae'r pren mesur wedi torri.
+10272437	Dw i wedi torri rhywbeth.
+10272439	Wyt ti wedi torri'r pensil?
+10272444	Oes cas pensiliau ar y bwrdd?
+10272451	Ydy hi wedi prynu cas pensiliau newydd?
+10272453	Mae Mary angen cas pensiliau newydd.
+10272460	Cwmpawd pwy ydy hwn?
+10272462	Mae cwmpawd gyda Mary.
+10272465	Mae cyfrifiannell gyda Tom.
+10272468	Pwy sy wedi colli rwber?
+10272472	Oes digon o arian gyda'r banciau?
+10272475	Mae'r dynion cyfoethog yn gweithio yn y banciau.
+10272477	Mae llawer o arian gyda'r banciau.
+10272480	Dydy Mary ddim yn hoffi talu trethi.
+10272485	Rhaid i fi gael cyfrif cyfrifiadur newydd.
+10272510	Bydd hi angen cyfrif newydd ar y system.
+10284690	Mae hi'n edrych bod Tom a Mary ddim yn mynd i briodi.
+10284691	Ro'n Yanni yn hela'n anghyfreithlon yn y goedwig 'na.
+10574966	Mae cefnogaeth yn bwysig iawn.
+10574968	Dw i'n meddwl bod dim byd yn bwysicach na chyfeillgarwch.
+10574970	Dwyt ti ddim yn gwybod faint o arian sy' arnaf i.
+10574971	Pe na bai cerddoriaeth, byddai'r byd yn lle diflas.
+10574975	Cafodd Yanni berthynas gyfrinachol efo Skura.
+10574978	Paid ag anghofio hynny.
+10574979	Na anghofier hynny.
+10574984	Dyna ddywedodd fy mam wrtha' i.
+10574988	Dyma'r dyn eira mwyaf hyll 'dw i erioed wedi'i weld!
+10574993	Caniataodd Tom i Mair yrru'i gar.
+10574994	Wneith o ddim ateb.
+10574995	Addawodd Tom i fynd i Awstralia gyda Mair.
+10574997	Rwyt ti'n gwybod sut i yrru, 'dwyt?
+10575005	Dw i ddim eisiau gwybod pam nad wyt ti'n fy hoffi.
+10575008	Sylweddolais ar bâr ffres o ôl-troed yn yr eira.
+10575010	Do'n i methu gwneud dim ar y pryd.
+10575011	Ddylai Tom ddim wedi cael ei anfon i'r carchar.
+10575013	Ro'n i'n meddwl byddai'r coleg yn lle mwy diddorol.
+10575023	Gallwch siarad Rwsieg a Tsieinëeg ill dwy.
+10575024	Mae wyth morwr ar ddeugain ar y llong.
+10575025	Byddai modd i ddyn na aeth i'r ysgol ddwyn o drên nwyddau, ond pe bai addysg brifysgol ganndo, byddai modd iddo ddwyn y rheilffordd i gyd.
+10575027	Wrth i ti yrru, dylet ganolbwyntio ar y ffordd.
+10575029	Roedd Tom yn hyderus, hefyd.
+10575030	Rwyt ti'n gwybod nad ydw i'n dda iawn yn canu.
+10575043	Dw i'n gweld bod gen ti dy gitâr efo ti. Wyt ti'n bwriadu chwarae rhywbeth i ni?
+10575045	Dywedodd Tom wrth y detectif heddlu nad oedd yn adnabod y dyn yn y llun.
+10748118	Mae'r arholiad yn anodd.
+10748119	Mae'r arholiad yn rhwydd.
+10851784	Mae Tom yn eirafyrddiwr da iawn.
+10851795	Mae'r llyfr hwn am sêr.
+10851811	Dw i'n yfed gwin poeth.
+10851813	Mae'r ddinas hon i'r gorllewin o Lundain.
+10851816	Dw i ddim yn hoffi bwyta tomatos.
+10851832	Wyt ti'n gweithio fel trydanwr?
+10852432	Dw i'n hoffi'r oriawr hon.
+11145779	Dw i'n hoffi dy gynffon.
+11145780	Mae Mary yn dweud bod hi eisiau ennill.
+11145802	Maen nhw'n byw yn Baghdad.
+11145807	Gaeth bag Sami ei atafaelu gan yr heddlu.
+11145808	Dw i'n coginio'n dda.
+11145810	Roedd Tom yn awyddus i weld Mary.
+11145817	Wnaethon ni'r rhain ar ben ein hun.
+11145823	Wyt ti'n dal i astudio ar ôl cinio?
+11145826	Mae Sami a Layla yn gorwedd draw fan 'na.
+11145828	Wnest ti dalu am y llyfr?
+11145829	Wnaeth o ddreifio adre i Algiers.
+11145830	Mae gen i alergedd i wyau.
+11145836	Oes rhaid i ti wneud hynny hefyd?
+11235123	Fe ddysgon ni'r ffyrnigrwydd oddi wrthoch chi.
+11473077	Mae tad Sami yn dod o'r Aifft.
+11473082	Mae'r llyfr ar y bwrdd.
+11473086	Dw i'n dy hoffi di.
+11473087	Dych chi'n hoffi cerddoriaeth?
+11473088	Wyt ti'n hoffi cerddoriaeth?
+11473097	Rhaid i mi wneud fy ngwaith cartref i cyn amser te.
+11473101	Wyt ti wedi cael ateb?
+11473125	Nid yw Tom yn gwylio ffilmiau rhyfel.
+11473129	Dydy Tom ddim yn gwylio ffilmiau rhyfel.
+11473382	Mae ein gwin ar ben.
+11473383	Mae fy nhad i'n athro Saesneg.
+11473386	Nawr, dw i'n byw yma.
+11473390	Dw i'n caru'r glaw.
+11473414	Mae Tom yn gallu siarad Ffrangeg.
+11473438	Mae e bob amser yn hwyr.
+11473453	Beth sy'n digwydd yn y byd?
+11473542	Mae hwn yn argyfwng.
+11473543	Dw i'n caru fy swydd.
+11473544	Wyt ti'n mwynhau dy swydd?
+11473545	Mae hi'n felys fel mêl.
+11473547	Pryna' i'r llyfr hwn.
+11473550	Pryni di'r llyfr heddiw.
+11473551	Dydw i ddim eisiau prynu'r carped hwn.
+11473556	Dydw i ddim yn hoffi pocer yn fawr.
+11473566	Ydy llenyddiaeth yn wahanol i farddoniaeth?
+11473577	Dych chi erioed wedi ymweld â gwlad dramor?
+11473639	Bydd y llyfr hwn yn trawsnewid eich bywyd.
+11473655	Does dim rhaid i chi aros yn yr ysbyty.
+11473659	Mae Tom wedi gwneud awgrym da.
+11473666	Mae ganddi obsesiwn â llyfrau.
+11543226	Rhaid i fi fwyta.
+11544421	Ydych chi'n siarad Cymraeg?
+11544439	Ydych chi'n dysgu Cymraeg?
+11544446	Pam ydych chi'n dysgu Cymraeg?
+11544471	Wyt ti’n dysgu Cymraeg?
+11550904	Dw i'n byw yng Nghasnewydd.
+11556943	Ble dych chi'n byw?
+11556956	Ble wyt ti'n byw?
+11559191	Ble mae’r tŷ bach?
+11559197	Siaradwch yn arafach os gwelwch yn dda.
+11559212	Iawn, diolch. A chithau?
+11560708	Bwrw hen wragedd â ffyn.
+11568341	Welai di wedyn!
+11568342	Welai di wedyn.
+11568343	Welai chi wedyn.
+11568458	Dw i ddim yn siarad Cymraeg.
+11572580	Beth ydy'ch enw chi?
+11572584	Mwynhewch eich bwyd.
+11572593	Dw i ddim yn gwybod.
+11572595	Wn i ddim.
+11572602	Dw i'n deall!
+11572609	Blwyddyn Newydd Dda!
+11572611	Blwyddyn newydd dda.
+11585525	Wnewch chi ail adrodd yn fwy araf, os gwelwch yn dda?
+11593645	Dyw fy chwaer ddim yn gweithio ar hyn o bryd.
+11593651	Dw i byth yn gyrru i siop y gornel.
+11593654	Dw i erioed wedi chwarae criced.
+11593659	Faswn i byth yn dringo Mynydd Etna.
+11593667	Dw i'n meddwl bod y ffilm yn ddifyr.
+11649291	Mae hi'n dri o'r gloch.
+11746036	Ffoniwch ni pan fyddwch chi'n cyrraedd!
+11831212	Hoffwn i gael peint o Guinness.
+11977576	Ydych chi'n hoffi'r ddinas hon?
+11981105	Pwy sy'n yfed cwrw?
+12033240	Gweithiwr dw i.
+12033249	Wyt ti'n hoffi siocled?
+12046037	Dw i'n darllen ei lyfrau e.
+12078872	Dan ni'n gwneud hyn bob dydd Llun.
+12093717	Mae Tom yn ifanc eto.
+12112176	Ble maen nhw?
+12120891	Dan ni ddim yn byw yma.
+12134233	Dw i'n yfed dŵr.
+12140893	Mae o'n prynu het.
+12140894	Gwnaeth o brynu het.
+12147024	Mi wnes i brynu llefrith yn yr archfarchnad heddiw.
+12278049	Dydy Vera ddim yn gallu cysgu.
+12297107	Dw i ddim yn gwneud dim byd eto.
+12311613	Po fwyaf y llanwpo fwyaf y trai
+12404264	Mae fy llyfr yn newydd.
+12558925	Dw i'n hoffi ei chath hi.
+12678914	Mae o'n olygus.
+12728103	Dw i'n gwylio teledu.
+12869129	Dwyt ti ddim yn gwybod.
+12885115	Pam wnest ti ysgrifennu'r llyfr hwn?
+12885125	Meddyg yw ei fab.
+12895586	Mae llyfr newydd gyda fi.
+12903871	Mae gen i oren ac afal.
+12970692	Efallai bod chi’n iawn.
+12970694	Efallai fod ti’n iawn.
+13010102	Dw i eisiau dysgu Iseldireg.
+13065089	Does dim moddion yn erbyn twpdra.
+13211633	Mae dy chwaer di'n cysgu.
+13217257	Mae'r llaeth yn boeth.
+13248851	Tom yn cefnogi Abertawe.
+13300685	Roedd y cyrri’n flasus iawn.
+13300687	Roedd y cyrri’n flasus dros ben.
+13420157	Ar 24 Awst, mae Wcráin yn dathlu ei hannibyniaeth.
+13648330	Dw i'n barod i ddysgu Esperanto.
+13648382	Ble mae hi'n dysgu Esperanto?
+13649374	Dw i ddim eisiau bod yn unig.
+13668307	Rwy'n mynd i'r ddinas i brynu bara.
+13706673	Rwy'n hoffi bwyta.
+13706707	Ble mae'r bara?
+13836348	Dw i yn ystafell Tom.
+13838856	Dydw i ddim yn dy gasáu di.
+13838857	Dw i ddim yn dy gasáu di.
+13838862	Cymraes wyt ti?
+13857572	Ein trydydd fab ni ydy Tom.
+13875738	Cymro wyt ti?
+13965756	Dw i'n dod o'r Almaen hefyd.
+14098221	Dwi eisiau bod yn Roomba. Dwi eisiau cyllyll wedi'u tapio wrtha i. Dwi eisiau cael fy rhyddhau.
+14098401	Mae Lily yn siarad Japaneg.

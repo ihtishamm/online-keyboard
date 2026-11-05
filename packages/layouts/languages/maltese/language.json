@@ -1,0 +1,26 @@
+{
+  "slug": "maltese",
+  "code": "mt",
+  "order": 770,
+  "lang": "mt",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Maltese",
+    "native": "Malti"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["latin"],
+  "layouts": ["mt-easy", "mt-47", "mt-48"],
+  "accents": "ċġħżàèìòùĊĠĦŻÀÈÌÒÙ",
+  "sample": "Illum it-temp sabiħ ħafna u se mmorru l-baħar.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "mt",
+    "bing": "mt"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

@@ -198,6 +198,64 @@ const WAVE1: readonly (readonly [string, string, string, string])[] = [
 ];
 const letters = (code: string) => WAVE1.find(([c]) => c === code)?.[2] ?? "";
 
+/** Wave 4 (plan 9c), the European Latin languages: as WAVE1. */
+const WAVE4_EUROPE: readonly (readonly [string, string, string, string])[] = [
+  ["sk", "slovak", "áäčďéíĺľňóôŕšťúýž", "Ľahká diakritika"],
+  ["sl", "slovenian", "čšž", "Lahka diakritika"],
+  ["sq", "albanian", "çë", "Shkronja të lehta"],
+  ["lt", "lithuanian", "ąčęėįšųūž", "Lengvi diakritikai"],
+  ["lv", "latvian", "āčēģīķļņšūž", "Vieglā diakritika"],
+  ["et", "estonian", "äõöüšž", "Lihtsad täpitähed"],
+  ["fi", "finnish", "äöåšž", "Helpot kirjaimet"],
+  ["nb", "norwegian", "æøåé", "Enkle aksenter"],
+  ["da", "danish", "æøåé", "Nemme accenter"],
+  ["is", "icelandic", "áðéíóúýþæö", "Auðveldir stafir"],
+  ["fo", "faroese", "áðíóúýæø", "Lættir bókstavir"],
+  ["ga", "irish", "áéíóú", "Síntí fada éasca"],
+  ["cy", "welsh", "âêîôûŵŷáéíóúàèìòùäëïöü", "Acenion hawdd"],
+  ["gd", "scottish-gaelic", "àèìòù", "Sràcan furasta"],
+  ["mt", "maltese", "ċġħżàèìòù", "Ittri faċli"],
+  ["gl", "galician", "áéíóúüñ¿¡", "Acentos fáciles"],
+  ["eo", "esperanto", "ĉĝĥĵŝŭ", "Facilaj literoj"],
+  ["la", "latin", "āēīōūȳæœ", "Litterae faciles"],
+  ["af", "afrikaans", "êëéèïîôöûüáóú", "Maklike aksente"],
+];
+/**
+ * US-International has no key for these letters, and these languages have no Windows layout on
+ * a US keyboard. Ours: AltGr plus the plain letter, as Latvian QWERTY does.
+ */
+const EASY_ALTGR: Readonly<Record<string, Readonly<Record<string, string>>>> = {
+  eo: { KeyC: "ĉ", KeyG: "ĝ", KeyH: "ĥ", KeyJ: "ĵ", KeyS: "ŝ", KeyU: "ŭ" },
+  la: { KeyA: "ā", KeyE: "ē", KeyI: "ī", KeyO: "ō", KeyU: "ū", KeyY: "ȳ" },
+  mt: { KeyC: "ċ", KeyG: "ġ", KeyH: "ħ", KeyZ: "ż" },
+  cy: { KeyW: "ŵ", KeyY: "ŷ" },
+};
+const wave4Letters = (code: string) => WAVE4_EUROPE.find(([c]) => c === code)?.[2] ?? "";
+
+/** National layouts of those languages, as WAVE1_NATIONAL. */
+// prettier-ignore
+const WAVE4_NATIONAL: readonly (readonly [string, string, string, string, string, string, string])[] = [
+  ["sk", "slovak", "qwertz", "sk-t-k0-windows.xml", "Slovak (QWERTZ)", "Slovenčina (QWERTZ)", '"Slovak"'],
+  ["sk", "slovak", "qwerty", "sk-t-k0-windows-qwerty.xml", "Slovak (QWERTY)", "Slovenčina (QWERTY)", '"Slovak (QWERTY)"'],
+  ["sl", "slovenian", "standard", "sl-t-k0-windows.xml", "Slovenian", "Slovenščina", '"Slovenian"'],
+  ["sq", "albanian", "standard", "sq-t-k0-windows.xml", "Albanian", "Shqip", '"Albanian"'],
+  ["lt", "lithuanian", "standard", "lt-t-k0-windows.xml", "Lithuanian", "Lietuvių", '"Lithuanian"'],
+  ["lv", "latvian", "qwerty", "lv-t-k0-windows-qwerty.xml", "Latvian (QWERTY)", "Latviešu (QWERTY)", '"Latvian (QWERTY)"'],
+  ["lv", "latvian", "standard", "lv-t-k0-windows.xml", "Latvian", "Latviešu", '"Latvian"'],
+  ["et", "estonian", "standard", "et-t-k0-windows.xml", "Estonian", "Eesti", '"Estonian"'],
+  ["fi", "finnish", "standard", "fi-t-k0-windows.xml", "Finnish", "Suomi", '"Finnish"'],
+  ["nb", "norwegian", "standard", "nb-t-k0-windows.xml", "Norwegian", "Norsk", '"Norwegian"'],
+  ["da", "danish", "standard", "da-t-k0-windows.xml", "Danish", "Dansk", '"Danish"'],
+  ["is", "icelandic", "standard", "is-t-k0-windows.xml", "Icelandic", "Íslenska", '"Icelandic"'],
+  ["fo", "faroese", "standard", "fo-t-k0-windows.xml", "Faroese", "Føroyskt", '"Faroese"'],
+  ["ga", "irish", "standard", "ga-t-k0-windows.xml", "Irish", "Gaeilge", '"Irish"'],
+  ["cy", "welsh", "uk-extended", "en-GB-t-k0-windows-extended.xml", "UK Extended", "DU Estynedig", '"United Kingdom Extended", the keyboard Windows offers for Welsh,'],
+  ["gd", "scottish-gaelic", "standard", "gd-t-k0-windows.xml", "Scottish Gaelic", "Gàidhlig", '"Scottish Gaelic"'],
+  ["mt", "maltese", "47", "mt-t-k0-windows.xml", "Maltese 47-key", "Malti 47", '"Maltese 47-Key"'],
+  ["mt", "maltese", "48", "mt-t-k0-windows-101key.xml", "Maltese 48-key", "Malti 48", '"Maltese 48-Key"'],
+  ["gl", "galician", "spain", "es-t-k0-windows.xml", "Spain (Galician)", "España (galego)", '"Spanish", the keyboard Galician is typed on in Spain,'],
+];
+
 /** National layouts of the Wave 1 languages: [code, folder, id, file, en, native, Windows name]. */
 // prettier-ignore
 const WAVE1_NATIONAL: readonly (readonly [string, string, string, string, string, string, string])[] = [
@@ -217,6 +275,69 @@ const WAVE1_NATIONAL: readonly (readonly [string, string, string, string, string
   ["sv", "swedish", "standard", "sv-t-k0-windows.xml", "Swedish", "Svenska", '"Swedish"'],
   ["ca", "catalan", "spain", "es-t-k0-windows.xml", "Spain (Catalan)", "Espanya (català)", '"Spanish", the keyboard Catalan is typed on in Spain and Andorra,'],
   ["hr", "croatian", "standard", "sl-t-k0-windows.xml", "Croatian", "Hrvatska", '"Croatian" (CLDR 43 has no Croatian file; Windows\' Croatian and Slovenian layouts have the same keys, so this is the Slovenian one)'],
+];
+
+const WAVE4_IMPORTS: readonly ImportSpec[] = [
+  ...WAVE4_EUROPE.map(([code, folder, accents, native]) => {
+    const spec = latin({
+      code,
+      folder,
+      id: "easy",
+      file: US_INTL,
+      accents,
+      name: { en: "Easy accents", native },
+    });
+    const extra = EASY_ALTGR[code];
+    if (!extra) return spec;
+    const list = Object.entries(extra).map(([key, ch]) => `AltGr+${key.slice(3)} ${ch}`);
+    return {
+      ...spec,
+      meta: { ...spec.meta, source: `${spec.meta.source} Added: ${list.join(", ")}.` },
+      patch: (keys: Keys) => {
+        for (const [key, ch] of Object.entries(extra))
+          set(keys, key as KeyCode, { ag: ch, sag: ch.toLocaleUpperCase("en") });
+      },
+    };
+  }),
+  ...WAVE4_NATIONAL.map(([code, folder, id, file, en, native, source]) =>
+    latin({
+      code,
+      folder,
+      id,
+      file: `cldr/${file}`,
+      accents: wave4Letters(code),
+      name: { en, native },
+      source,
+    }),
+  ).map((spec) =>
+    spec.meta.id === "gd-standard"
+      ? {
+          ...spec,
+          meta: {
+            ...spec.meta,
+            source: `${spec.meta.source} Changed: the ' key types an apostrophe (a' dol), and AltGr+' is the acute dead key; upstream has them the other way round, but Gaelic has no acutes and writes apostrophes all the time.`,
+          },
+          patch: (keys: Keys) => {
+            const { live: _, ...rest } = keys.Quote!;
+            keys.Quote = { ...rest, live: ["n"] };
+          },
+        }
+      : spec,
+  ),
+  {
+    out: "esperanto/x-system.json",
+    from: { keyman: "keyman/esperuni/esperuni.kmn", contextRules: true, usDefaults: true },
+    accents: "ĉĝĥĵŝŭ",
+    meta: {
+      id: "eo-x-system",
+      lang: "eo",
+      script: "Latn",
+      dir: "ltr",
+      name: { en: "X-system", native: "X-sistemo" },
+      source:
+        "Keyman Esperanto Cx 1.2 by Gyula Zsigri (MIT): type x after a letter (cx ĉ, gx ĝ, hx ĥ, jx ĵ, sx ŝ, ux ŭ).",
+    },
+  },
 ];
 
 const WAVE1_IMPORTS: readonly ImportSpec[] = [
@@ -632,6 +753,7 @@ export const IMPORTS: readonly ImportSpec[] = [
   },
   ...LATIN_IMPORTS,
   ...WAVE1_IMPORTS,
+  ...WAVE4_IMPORTS,
   {
     out: "tamil/tamil99.json",
     from: {
