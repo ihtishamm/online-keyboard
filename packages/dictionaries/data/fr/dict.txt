@@ -44291,7 +44291,6 @@ Asx
 4yD
 3ïC
 2êpeE
-2ðniE
 1wénaëlE
 1yantséC
 2nécoB
@@ -45984,7 +45983,6 @@ Asx
 3rraléonaisE
 2ghișoaraE
 3urðardóttirE
-6ssonB
 2llanpääA
 9nC
 4éE
@@ -52605,8 +52603,6 @@ AeD
 1āṉD
 1ēnuC
 1ōD
-1əF
-2gusE
 1ṯrB
 0objecteD
 6éE
@@ -56127,7 +56123,6 @@ BsE
 0ØresundE
 0Ü-TsangC
 1bersetzungF
-0ÞingvellirF
 0à-coupsD
 3ôtésF
 2dD

@@ -178,7 +178,7 @@
     "correctWords": 8384,
     "falseFlags": 140,
     "fixed": 34,
-    "wrongReplacements": 37,
+    "wrongReplacements": 36,
     "spellcheck": false,
     "autocorrect": false,
     "autocorrectByDefault": false
@@ -202,15 +202,15 @@
   "tr": {
     "prose": {
       "words": 3977,
-      "falseFlags": 257
+      "falseFlags": 237
     },
     "misspellings": 50,
     "flagged": 50,
     "top3": 50,
     "correctWords": 5130,
-    "falseFlags": 252,
+    "falseFlags": 246,
     "fixed": 34,
-    "wrongReplacements": 75,
+    "wrongReplacements": 73,
     "spellcheck": false,
     "autocorrect": false,
     "autocorrectByDefault": false
@@ -240,7 +240,7 @@
     "flagged": 48,
     "top3": 50,
     "correctWords": 6737,
-    "falseFlags": 105,
+    "falseFlags": 104,
     "fixed": 42,
     "wrongReplacements": 19,
     "spellcheck": false,
@@ -282,15 +282,15 @@
   "hu": {
     "prose": {
       "words": 4621,
-      "falseFlags": 455
+      "falseFlags": 452
     },
     "misspellings": 50,
     "flagged": 50,
     "top3": 48,
     "correctWords": 5693,
-    "falseFlags": 467,
+    "falseFlags": 455,
     "fixed": 34,
-    "wrongReplacements": 128,
+    "wrongReplacements": 129,
     "spellcheck": false,
     "autocorrect": false,
     "autocorrectByDefault": false
@@ -298,13 +298,13 @@
   "sv": {
     "prose": {
       "words": 4914,
-      "falseFlags": 251
+      "falseFlags": 248
     },
     "misspellings": 50,
     "flagged": 50,
     "top3": 47,
     "correctWords": 5763,
-    "falseFlags": 126,
+    "falseFlags": 123,
     "fixed": 31,
     "wrongReplacements": 27,
     "spellcheck": false,
@@ -442,13 +442,13 @@
   "et": {
     "prose": {
       "words": 3312,
-      "falseFlags": 397
+      "falseFlags": 389
     },
     "misspellings": 50,
     "flagged": 48,
     "top3": 50,
     "correctWords": 4948,
-    "falseFlags": 251,
+    "falseFlags": 250,
     "fixed": 34,
     "wrongReplacements": 66,
     "spellcheck": false,
@@ -458,15 +458,15 @@
   "fi": {
     "prose": {
       "words": 3309,
-      "falseFlags": 467
+      "falseFlags": 451
     },
     "misspellings": 50,
     "flagged": 49,
     "top3": 48,
     "correctWords": 5222,
-    "falseFlags": 382,
+    "falseFlags": 378,
     "fixed": 33,
-    "wrongReplacements": 110,
+    "wrongReplacements": 109,
     "spellcheck": false,
     "autocorrect": false,
     "autocorrectByDefault": false
@@ -474,7 +474,7 @@
   "nb": {
     "prose": {
       "words": 4493,
-      "falseFlags": 223
+      "falseFlags": 220
     },
     "misspellings": 50,
     "flagged": 50,
@@ -482,7 +482,7 @@
     "correctWords": 6633,
     "falseFlags": 143,
     "fixed": 36,
-    "wrongReplacements": 27,
+    "wrongReplacements": 28,
     "spellcheck": false,
     "autocorrect": false,
     "autocorrectByDefault": false
@@ -490,15 +490,15 @@
   "da": {
     "prose": {
       "words": 4870,
-      "falseFlags": 283
+      "falseFlags": 279
     },
     "misspellings": 50,
     "flagged": 49,
     "top3": 48,
     "correctWords": 6469,
-    "falseFlags": 132,
+    "falseFlags": 128,
     "fixed": 33,
-    "wrongReplacements": 28,
+    "wrongReplacements": 26,
     "spellcheck": false,
     "autocorrect": false,
     "autocorrectByDefault": false
@@ -506,15 +506,15 @@
   "is": {
     "prose": {
       "words": 4197,
-      "falseFlags": 194
+      "falseFlags": 189
     },
     "misspellings": 50,
     "flagged": 49,
     "top3": 48,
     "correctWords": 6407,
-    "falseFlags": 186,
+    "falseFlags": 189,
     "fixed": 28,
-    "wrongReplacements": 43,
+    "wrongReplacements": 44,
     "spellcheck": false,
     "autocorrect": false,
     "autocorrectByDefault": false

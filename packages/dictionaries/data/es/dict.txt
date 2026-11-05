@@ -43135,7 +43135,6 @@ Bs{
 5oB
 2óD
 3adasD
-2þingiE
 1madísC
 3páE
 3tlánC
@@ -43934,7 +43933,6 @@ Bs{
 3eD
 3ínD
 2víðF
-2ðiF
 1ebréE
 2camerónC
 3imaE
@@ -44449,8 +44447,6 @@ Bs{
 2énonD
 2ízarD
 2ðmundsdóttirD
-8sonD
-7urE
 1yőrF
 1áborC
 2lataF
@@ -45987,7 +45983,6 @@ Bs{
 3joD
 2ūkanC
 1ieyèsE
-2gurðssonB
 2jéE
 2loéD
 3toláE
@@ -53471,4 +53466,3 @@ Bs{
 1igaE
 0ștefanD
 0ɐ̞̃D
-0ənE

@@ -38232,7 +38232,6 @@ Asy
 2êB
 1i-lan-đàA
 2eudonnéA
-2miþoxB
 2vyāvadānaA
 2êm-thiếtA
 1onauwörthB
@@ -38321,7 +38320,6 @@ Asy
 5êA
 3liéniB
 2rdeazábalB
-3ðarA
 1eneraleB
 4tB
 3shōB
@@ -38763,7 +38761,6 @@ Asy
 2ềngB
 1nguyênB
 1oelleC
-2rðmannaC
 2ttB
 2uvelles-HébridesC
 2vákB
@@ -38986,7 +38983,6 @@ Asy
 2ầuB
 1iddhāntaC
 2euC
-2gurðssonB
 2mãoC
 2nišaB
 3éadB
@@ -39049,8 +39045,7 @@ Asy
 2ṃkhyaC
 1ōryūB
 2sekiC
-0TMÐTB
-1T-BGDĐTB
+0TT-BGDĐTB
 2ĐTB
 1VĐTĐC
 1a-bàB
@@ -39585,8 +39580,7 @@ Asy
 2utơnC
 2ễngB
 2ệm-pháp-chủC
-1orðrC
-2ọngC
+1oọngC
 1ucléaireC
 4êicC
 2ốcB
@@ -39860,7 +39854,10 @@ Asy
 1nuôlB
 0ÍslandB
 1ñigoC
-0ÐăngC
+0ÐôngB
+1ăngC
+1ếnC
+1ồngB
 1ộcC
 0ÓlafurC
 0Ô-manC
@@ -40011,7 +40008,6 @@ Asy
 3tấtC
 1ƠUB
 0ưcC
-0əjC
 0ḍākinīA
 0ạchA
 0ẢrậpB
