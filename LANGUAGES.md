@@ -95,3 +95,13 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Esperanto (/esperanto) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target |
 | Latin (/latin) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target |
 | Afrikaans (/afrikaans) | Latn | C | yes | Beta | – | af-ZA | spell check meets its targets; smart accents meet their target |
+| Azerbaijani (/azerbaijani) | Latn | C | yes | Beta | – | az-AZ | spell check meets its targets; smart accents meet their target |
+| Turkmen (/turkmen) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target |
+| Uzbek (/uzbek) | Latn | C | yes | Beta | – | uz-UZ | spell check meets its targets; smart accents meet their target; typing test with words and sentences |
+| Kurdish (Kurmanji) (/kurmanji) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target |
+| Yoruba (/yoruba) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target; typing test with words and sentences |
+| Igbo (/igbo) | Latn | C | yes | Beta | – | no | spell check meets its targets; typing test with words and sentences |
+| Hausa (/hausa) | Latn | C | yes | Beta | – | no | spell check meets its targets; smart accents meet their target |
+| Wolof (/wolof) | Latn | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets; smart accents meet their target; typing test with words and sentences |
+| Hawaiian (/hawaiian) | Latn | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets; smart accents meet their target; typing test with words and sentences |
+| Māori (/maori) | Latn | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets; smart accents meet their target; typing test with words and sentences |

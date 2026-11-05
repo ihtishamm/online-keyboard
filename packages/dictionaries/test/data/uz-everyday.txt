@@ -1,0 +1,817 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+392421	Sensiz hayot barbod.
+397125	Ashula aytish yaxshi ko'rasizmi?
+397201	Hazon bo'lma, muhabbat.
+408947	San suzlashkan oyal maning singilim buladi.
+423333	Sen uchun keldim.
+423337	Siz uchun keldim.
+423338	Sizlar uchun keldim.
+423839	Bu narsa nima?
+423842	Mening soatlarim qani?
+423855	U mening ishim.
+423857	Hech gap yo'q.
+423862	Men bultur kasal bo'ldim.
+521709	Go‘l tikansiz bo‘lmaydi.
+813318	Kelilar gullar haqida gapalshamiz .
+831684	Bo'ridan qurqqan to'qayg'a kirmas.
+865131	U mening singlimga uylandi.
+866280	O'ylashimcha u yaxshi o'yinchi
+866392	Yomg'ir mavsumi boshlandi.
+866398	U doktor emas.
+866399	Bu sening yagona imkoniyating.
+866401	U xar kuni yozishga vada bergan.
+866403	Chet elda ko'p do'stlarim bor.
+872731	Mana poezd kelyapti.
+873285	Uy ishingni to'liq bajarladingmi?
+948608	Getter Jaani ila o'lmaq istayiram.
+1200814	Menga yordam kerak.
+1200820	So`z beraman senga.
+1223543	U odamning ismini rosa xotirladim.
+1223548	Uning muhabbati yapon.
+1223552	Mening ismim Tom.
+1223560	U mening itim.
+1223564	Salam, eski do'stim!
+1223568	Sen mening volidamsin.
+2126009	Siz mening tushunayapsizmi?
+2296406	Stol ustida bir olma bor.
+2297023	Uning oilasi meni sevdi.
+2297393	U student emas.
+2428905	Chaqaloqning tagligini o'zgartirishim kerak.
+2499500	Ah, kofe haqiqatdan issiq!
+2521898	Amerika eng demokratik millat emas.
+2661319	Bu katta it.
+2661320	Bu mening kitobim.
+2661323	Men kitobni oldim.
+2661324	Men kitobni o'qiyman.
+2661329	G'ayritabiiy tush ko'rdim.
+2661332	Bir xatni o'qidim.
+2661336	Lori shishani sindirdi.
+2661337	Lori stulga o'tqizdi.
+2661338	Lori suvni ichdi.
+2661342	Men vrach emasman.
+2664962	Ayollarning basketbol komandasining erkak murabbiyi bor.
+2664973	Men ertaga maktabga boraman.
+2664974	Men kecha maktabga bordim.
+2664976	U eshikni yopadi.
+2664980	Men o'qituvchi emas.
+2664988	Chaqaloqning tagligini o'zgartirdim.
+2664990	Har bir rangning ma'nosi bor.
+2664995	O'qituvchi bo'lmoq istayman.
+2664998	Men o'zbekcha gapiraman.
+2665000	Olma stolning ustida.
+2767121	Mening bilan konsertga kelasanmi?
+2767156	Mening xonamda bir qancha jurnallar bor.
+2768393	Menga yordam kerak!
+2768397	Menga qoshiq, vilka va pichoq kerak. Rahmat.
+2768404	Pochta qo'ng'ir bino.
+2768807	Otam pochta qutisini qizilga bo'yadi.
+2768810	U aybsiz bo'ldi.
+2768820	U qo'shiq aytishga boshladi.
+2805725	Mushuk stul ustida uxlayapti.
+2819517	Bu mening uyim.
+2830947	Olmani kim o'g'irladi?
+2830951	Diqqatingiz uchun rahmat.
+2836661	Ba'zan kinoteatrga boraman.
+2836664	Bir odam ko'rmayman.
+2836671	U gapira oladi.
+2836674	Chaqaloq gapira olmaydi.
+2881357	Burj Halifa hozirgi kunda dunyodagi eng baland osmono'par bino deb hisoblanadi.
+2927670	Ikki mushugim bor.
+2928078	Dunyoda hayot qimmat boʻla oladi.
+2929040	Adabiyot bir millatning kelajagi.
+2929050	Bu dunyo mening uyim emas.
+2929057	Bu kitobni allaqachon oʻqiganman.
+2929061	Bu to'g'ri emas.
+2929064	Bu so'z juda ta'sirli.
+2929074	Mushuklar unga hujum qildi.
+2929148	Menda pul bor.
+2940517	Men sanskritchani o'rganmoqchiman.
+3098136	Bu mushuk emas. Bu it.
+3098138	Bu nima? Bu avtomobil.
+3098147	Melani tasodifan bir pashsha o'ldirdi.
+3098148	U bu yerda.
+3098155	Klassik musiqa tinglash bilan o'qish bir-birini to'ldiradi.
+3101930	Qoidalar hamma uchun.
+3161375	Ingliz tilida javob bering!
+3200203	Men kitob o'qidim.
+3212153	Uning qizil gullari bor.
+3507475	Sen o'qituvchi emasmiding?
+3763466	Yoshim yigirma to'rtda.
+3763467	Yoshim o'n sakkizda.
+3763468	U meni o'pdi, uni emas.
+3763469	U uni o'pdi.
+3763472	Yana Londonda yashaydi.
+3763473	Tom menga uni aytdi.
+3763776	Boj olinmaydigan savdo do'koni qayerda?
+3763777	O'rmonda bir quyon ko'rdim.
+3763781	Menda hamma faktlar yo'q.
+3763782	Suv issiq edi.
+3763789	Qancha pul xohlaysan?
+3763790	Qancha pul xohlaysiz?
+3763791	Qancha pul istaysan?
+3763792	Qancha pul istaysiz?
+3763795	Kim bilan gaplashmoqchisan?
+3763796	Kim bilan gaplashmoqchisiz?
+3763801	Kim bilan gaplashishni xohlaysan?
+3763802	Kim bilan gaplashishni xohlaysiz?
+3763831	U nima ovoz edi?
+3763870	Tuflimning ichida bir qoya bor.
+3763993	Olmalarni va apelsinlarni qiyoslayapsan.
+3763995	Menda faqat ikki qo'l bor.
+3764072	Bu yerda hech nima yo'q.
+3764077	Ko'zlarimning ichiga qara.
+3764086	Mening xonamda ikki ta kompyuter bor.
+3764087	Mening onam kartoshkani archdi.
+3764088	Bu kompyuter buzilgan.
+3764090	U qishloqda bir odam bor edi.
+3764091	Chaqaloq yig'lashdan to'xtadi.
+3764092	Bu surat kim tomonidan bo'yalgan?
+3764093	Mening bolalarim juda itoatsiz.
+3764095	Kecha xarid qilish markaziga bordim.
+3764098	Bu masjid kim tomonidan qurilgan?
+3764099	Ingliz tilini o'rganmoqchi emasman.
+3764100	Ularning vaziyati juda yaxshi.
+3764101	Sen humuk emassan.
+3764106	Vaziyat yaxshiroq bo'ladi.
+3764109	Yangi bir fayl yaratdim.
+3764111	U onasining o'limidan xabardor emas.
+3764114	U uning yonida tiz cho'kdi.
+3764117	Italiya bir yarimorol.
+3764120	Ular Tomni topmadilar.
+3764125	Mushuk itni ko'ryapti.
+3764126	It mushukni ko'ryapti.
+3764128	Ayol tortni yeyapti.
+3764130	U kompyuterni sotib olyapti.
+3764132	O'quvchi kitobni o'qiyapti.
+3764133	Talaba kitobni o'qiyapti.
+3764136	Men pivo ichmayman.
+3764143	Odam maktubni yozmayapti.
+3764146	O'quvchi televizor ko'rmayapti.
+3764147	Talaba televizor ko'rmayapti.
+3764151	Ayol tortni yemayapti.
+3764154	Mushuk itni ko'rmayapti.
+3764155	It mushukni ko'rmayapti.
+3764157	Men hozir uy vazifalarimni bajaryapman.
+3764286	Men universitetda o'qituvchiman.
+3764294	Men u qayerda ishlashini bilmoqchiman.
+3764295	Men u qayerda ishlashini bilmoqchi emasman.
+3764297	Televizor koʻrmoqchi emasman.
+3764299	U hozir restoranda o'zbek palovi yeyapti.
+3764300	Komandaning menejeri to'satdan iste'foga chiqdi.
+3764310	Qishloq joyida yashayman.
+3764311	Jon kitob o'qigan bola.
+3764315	Menga kitob o'qish yoqadi.
+3764450	Frantsiya G'arbiy Yevropada joylashgan.
+3764465	Qachon uyga qaytasan?
+3764470	Bizdan nima istaysiz?
+3764568	Mening amakim Toshkentda yashaydi.
+3764772	Sizning tilingizni o'rganmoqchi emasman.
+3766212	Kim qayerga boradi?
+3766220	Uning ko'zlari qora edi.
+3773995	Men pasportimni yo'qotib qo'ydim!
+3776250	Hech kim javob bermadi.
+3776251	Mening bir do'stim bor.
+3817203	Bu suratda qancha qiz bor?
+3817312	Hamma turli ayol meni ilhomlantiradi.
+3817315	Eng oxirida o'lasan.
+3817325	Tom yosh ko'rinayotgan edi.
+3817335	Nima qilayotgan eding?
+3817365	Samarqandga bormoqchi emasman.
+3817368	U Buxoroga bormoqchi.
+3817376	U Tomning onasi edi.
+3817381	Sening uying katta.
+3817385	Matematikani yomon ko'raman.
+3817394	Men faqat frantsuzcha gapiraman.
+3817596	U Buxoroda yashaydi.
+3817599	U Samarqandda yashaydi.
+3817600	U Toshkentda yashamaydi.
+3817606	Men faqat nemischa gapirayotgan edim.
+3834110	Mamlakatimiz ishg'ol qilinyapti.
+3834113	Meztliga oy yoqadi.
+3834117	Bir stakan kola olmoqchi edim.
+3834120	Senga fillar yoqadi.
+3834134	Kitobingiz stol ustida.
+3834214	U siz uchun yetarli emasmi?
+3834501	Sen buni yeysan.
+3834506	Siz hech O'zbekistonga bordingizmi?
+3834516	Men och edim.
+3834517	Men omadli edim.
+3834556	Qancha bolangiz bor?
+3835011	U Ashxobodga bordi.
+3835034	Sen uchun kelaman!
+3835035	Mening bobom arxeolog edi.
+3835476	Qancha mushugingiz bor?
+3835564	Men Ashxobodga boraman.
+3835567	Mening bir mashinam bor.
+3835607	Men pishloq yeyapman.
+3835779	Leannening ko'k ko'zlari bor.
+3836877	Bolalar hayotimizning gullari.
+3837742	Senda WhatsApp bormi?
+3838215	Jonli baliq suv ostida suzadi.
+3865726	Menga borish kerak.
+3865728	Bir kitob yozmoqchiman.
+3865729	Men bir kitob yozmoqchiman.
+3865730	Muammo bizning emas.
+3865734	Oldin uni ko'rgan edim.
+3865736	Men oldin uni ko'rgan edim.
+3866785	Sening uying bormi?
+3866787	Sizning uyingiz bormi?
+3943961	Nima uchun siz saytingizni yangilamaysiz?
+3971668	O'sha vaqtda uylangan edim.
+3982521	U hech qachon kasal emas edi.
+3982529	Ingliz tili lotin alifbosi bilan yozilgan.
+3982537	Bu bizning fikrimiz edi.
+4061499	Yangi yilingiz mubоrak bo'lsin.
+4119386	Men xatolar qilmayman.
+4125664	Bu gazetaning narxi bir dollar turadi.
+4125686	Ular bu g'oyadan bosh tortishlari kerak.
+4125749	Mahmud bekor yurishni yoqtirmaydi.
+4125767	Lola Salimning chekishini yoqtirmaydi.
+4125769	Mening otam doimo aytganini qiladi.
+4125772	U mohir usta.
+4125776	Men ertaga kelmayman.
+4125796	Biz kemaga soat o'nda o'tirdik.
+4127468	Mening xonam yuqorida
+4127482	O'tgan hafta harorat noldan yuqori edi.
+4127495	Bu maqolani qisqartirish shart emas.
+4127506	Bugun kim yo'q?
+4127522	Siz mutlaqo haqsiz.
+4127540	Rahmat,choy bo'lsa yo'q demayman.
+4127573	Kitob bu yaxshi sovg'a.
+4127634	Siz buni qanday bajardingiz?
+4127691	U mening oldimda hisobot beradi.
+4127724	Unga rais bilan muzokara olib borish vakolati buyurilgan edi.
+4129620	U erta turishga odatlangan.
+4129635	Otamdan yoshi katta bo'lsa ham, lekin abjir kishi edi.
+4129661	Mening boshim og'riyapti.
+4129678	U hech qachon rozi bo'lmaydi.
+4129699	Do'stlar,yahshilarni avaylang, asrang.
+4129768	Men Toshkentga avvallari ko'p kelardim.
+4129776	Avval o'yla,keyin so'yla.
+4129789	Avval maslahatlashib olib, keyin ish boshlaylik.
+4129799	U juda talabchan, lekin adolatli ayol.
+4131099	Adolat qaror topdi.
+4132478	Molekulalar atomlarga ajraladi.
+4132482	Suv kislorod bilan vodorodga ajraldi.
+4132487	Go'sht suyaklardan ajraldi.
+4132497	Po'stloq daraxtdan ajraldi.
+4132500	ajralganni bo'ri er.
+4132502	Elga qo'shilsang - er bo'lasan, eldan ajralsang - yer bo'lasan.
+4132604	Urushda bir qo'lidan ajraldi.
+4132606	Qiz tengdoshlaridan ajralib turadi.
+4132609	U do'stlaridan g'ayratliligi bilan ajralib turadi.
+4132612	Ahmad o'z aybiga iqror bo'ldi.
+4132614	Ahmad mening aybimni ochib tashladi.
+4132630	Hasan aybdorday yerga qarab o'tirdi.
+4132635	Hammasiga aybdor o'zim.
+4132637	Navbatchi militsioner aybdorni olib chiqib ketdi.
+4132640	U Ahmadni ehtiyotsizlikda aybladi.
+4132644	Mendan chin ismingizni yashirib kelganingiz uchun ayblay olmayman.
+4134291	Bek ayyor ko'zlarini Razzoqqa qaratdi.
+4134300	Yer o'z o'qi atrofida aylanadi.
+4134305	Oy Yer atrofida aylanadi.
+4134310	Qiz davrani uch aylandi.
+4134317	Yuring, havoda aylanamiz.
+4134324	Suv muzga aylandi.
+4134333	Yomg'ir astasekin qorga aylandi.
+4134345	Sobir har doim olimlar doirasida aylanadi.
+4134359	Men do'stimga bu voqea haqida aytdim.
+4134428	Akamning ketishi to'g'risida otamga aytaman.
+4134439	Bola "r"ni ayta olmaydi.
+4134547	Mahalladan ham uch-to'rt kishi aytdim, oshni ko'proq qilishi kerak.
+4134573	Uni xalq shoiri deb aytadilar.
+4134579	Qimorboz deb kimni aytasiz?
+4134665	Keyingi bekatda tushasizmi?
+4134676	Sobir bugun keladimi?
+4134688	Bu topshiriqni albatta bajaramiz.
+4134695	To'yingga albatta boraman.
+4134701	Bog'imizga albatta o'rik danagidan ekamiz.
+4136070	Sen birovni ham aldama,o'zingni ham aldama: mana bu yerda darding bor...
+4136075	Qorovul bir soatdan keyin almashadi.
+4136078	Kalishim almashib qolibdi.
+4136089	Xullas, aloqamiz buzilib qoldi.
+4136096	Bu gaplarning menga aloqasi yo'q.
+4136106	Anvar xususiy haeti, ayniqsa Ra'noga aloqasidan hech kimga og'iz ochmas edi.
+4136116	Kattalar bilan mashg'ulot Elmurodga alohida zavq berar edi.
+4136128	Ayolning ovozini aniq eshitdim.
+4136134	Qorong'ida odam aniq ko'rinmaydi.
+4136144	Anor faqat janubda o'sadi.
+4136149	Mening kelinimga ayt:kurak, bolta, arra, jami asboblarni yig'sin.
+4136156	Haqiqatda ham shuni nazarda tutyapsizmi?
+4136717	Inson - aql egasidir.
+4136719	Aql yoshda emas, boshda.
+4136721	Jahl kelganda, aql ketadi.
+4136723	Ko'pdan ko'p chiqar.
+4136725	Men uning so'zlariga ahamiyat bermadim.
+4136732	Shahrimizning aholisi tez ko'paymoqda.
+4136735	O'tgan hafta biz holam nikida bo'ldik.
+4136737	U xavfdan qutildi.
+4136739	Uni order bilan taqdirladilar.
+4136741	Biz oz kutamiz!
+4374811	Mening lug'atim bor.
+4374833	Menga lug'at kerak.
+4374879	Bo'yashni o'rganish uchun Frantsiyaga boraman.
+4381008	Shifokor bo'lishga qaror qildim.
+4381012	Menga yordam bera olasizmi?
+4381015	Ko'p raketalar Qozog'istondagi Boyqo'ng'irdan uchiriladi.
+4381016	Mendan ne istaysan?
+4381018	Onang qayerda yashaydi?
+4381031	Agar bir tugmani bossang, yo omon qolasan, yo o'lasan.
+4381876	Qozoq tilini o'rganmoqchiman.
+4387920	Rossiyaning poytaxti Moskva emasmi?
+4420911	U faqat bir odam.
+4420916	Bu o'yin yomon emas.
+4420921	Shifokor sizga nima aytib berdi?
+4420922	Shifokor senga nima aytib berdi?
+4420923	Dorini sotib oldingmi?
+4420924	Dorini sotib oldingizmi?
+4444370	Menda sayohat qilish uchun yetarli pul yo'q.
+4444371	Kechirimingizni qabul qilmayman.
+4523285	U omadli odam.
+4523286	Okeanni yaxshi ko'raman.
+4857823	Uning yigirma bolasi bor.
+4866629	O'tgan kecha menga telefon qildingmi?
+4866633	Siz mening qushlarimni ko'rmadingizmi?
+4866634	Sen mening qushlarimni ko'rmadingmi?
+4866635	Mening qushlarimni ko'rmadingizmi?
+4866636	Mening qushlarimni ko'rmadingmi?
+4866639	Favvoraga bora olamanmi?
+4889606	Bu it emas.
+5308289	Toshbaqalarning tishlari yo'q.
+5397075	Men Toshkentda yashayman.
+5953782	Unda ishim bor.
+6894559	Tomning boy bo'lganini o'yladim.
+7206748	U o'z Xudosiga qattiq iymoni bor
+7206754	Tom ko'pgina insonlarni taniydi.
+7206772	Tom bilan suhbatlashishni xohlayman.
+7206783	Tom o ishni qilishga izin bermaydi.
+7206788	O'ylisanki buni qilish arziydimi?
+7206793	Bu faqatgina boshlanishi edi.
+7206799	Qachondar beri bunday katta va kuchli bo'lib ketding?
+7206808	Bu sening yangi romaningning bir qismimi? U kachon kitob magazinlarga chiqadi?
+7206813	Sen shunday yoqimlisan!
+7206821	Tom va Maryam bir birini yaxshi tanimaydi.
+7206826	Men Tomning hech qaysi gapiga ishonmayman.
+7206836	Bu suv butilkasini to'ldirip qo'ying, iltimos!
+7206839	Siz biron kishini o'ldirib qo'yishingiz mumkin.
+7206840	Men Pragvada tug'ulganman.
+7206850	G'oyalarni amalda joriy qilish qiyindir.
+8097840	Badaviylar choʻlda yashaydi.
+8305319	Bu uning yozuvi emas.
+8453329	Oqibatsiz inson ekansiz!
+8453335	Menga sadoqatlik bilan xizmat qilasanmi?
+8453456	Xohlagan tilingizda yozishingiz mumkin. Tatoeba saytida barcha tillar tengdir.
+8456483	Qarilarga yordam berib, o'g'lim, savobga qolasan.
+8536798	Kitoblarni u yerdan olingiz.
+8536841	To'g'ri tarjima qilingiz.
+8536875	Bog'da ko'p gullar bormi?
+8536883	U juda qiyin edi.
+8541528	Oldin men boshlayman.
+8542143	U eshikni yopdi.
+8542161	Qizingni menga ber.
+8542168	Toshkentga oldinroq ikki marta borganman.
+8544330	O'qishga vaqtim yo'q.
+8544338	Chaqalog'imiz gapira boshladi.
+8544340	Men juda aqlliman.
+8544346	Bu matnni o'qish mumkin bo'lmaydi.
+8775078	Oilangiz haqqida hamma narsani bilasizmi?
+8780199	Hisoblashim to'g'ri edi.
+8780202	Sami saratonga chalingan bemor edi.
+8780203	Ular qo'shiq ayta oladilar.
+8780206	Tom uni asosli sababga ko'ra qiladi.
+8780208	Tom uni quchoqladi.
+8781187	Uyda ovqat bormi?
+8781521	U supermarketga ketadimi?
+8781522	Uni senga aytmayman.
+8781540	U qo'ylarini oziqlantiryapti.
+8781541	Men sovuq suv ichyapman.
+8781545	Bu yerda sovuq suv bormi?
+8781549	U o'qituvchini diqqat bilan tinglayapti.
+8781551	Men doim sovuq suv ichaman.
+8812561	Chet elliklarga qozoq tilini o'rgatyapman.
+8812565	Biz ham qozoq tilini o'rganaylik!
+8812572	Kompyuterlarni yomon ko'raman.
+8813312	Kitobni u yozgan.
+8821062	Do'stlaring kimligini ayt, shunda men kimligingni aytaman.
+8821095	Bu rostdan ham spagettimi?
+8821103	Kechirasiz, qoshiqni berib yubora olasizmi?
+8821109	Sovg'aga nima sotib olding?
+8821114	Pianinodan boshqa nima musiqa asbobi chalasan?
+8821117	Qaygadir bormoqchi bo'lgan joying bormi?
+8821120	Xavotir olayotganing uchun rahmat-a.
+8821127	Bunchalik (ko'p) yesang, oshqozonni buzasan.
+8821132	Tomdan qo'ng'iroq bo'ldimi?
+8821134	Bo'ldi, bundan boshqa kutmayman.
+8821138	25-sahifadagi xaritani ko'ring.
+8821360	Test qanday bo'ldi?
+8821362	Tom jahli chiqayotganini ko'rgan joying bormi?
+8821364	Uzr deb aytgandimku!
+8821366	Bir oz tezroq kelganingda yaxshi bo'lar edi.
+8821367	Yana Tom nimanidir buzdimi?
+8821370	Bugungi kechki ovqat nima?
+8821377	O'zim ham nima deganimga tushunmay qoldim.
+8821378	Hozir soat nechi, bilasanmi?
+8821379	Qishki ta'tillar qaysi kundan?
+8821384	Yuz ranging yomon, yaxshimisan? Kasalxonaga borgan ma'qul emasmi?
+8821389	"Avatar" degan kinoni bilasanmi?
+8821392	Qanday qilishni o'rgatsang, qilaman.
+8821393	Qiz bola bilan o'pishgan joying bormi?
+8821395	Boshqa nimadir so'ramoqchi bo'lgan narsang bormi?
+8821397	Yana bir bor qilib ko'rchi.
+8821399	Bugungi kechga rejang bormi?
+8821404	Bu parkaga nima deysan?
+8821407	Hozir soat nechi?
+8821409	Kech qolganim uchun uzr.
+8821411	Talaffuzim yomon, uzr.
+8821416	Bu kecha yaxshi uxlashimni sezyapman.
+8821422	G'alati gap aytmagin!
+8821426	Soat 11 bo'ldi, bilsang.
+8821429	Shokolad uchun rahmat. Shirin edi!
+8824042	Shoshmasang ham bo'ladi.
+8824044	Bunaqa yengil kiyimda uxlasang, shamollaysan.
+8824046	Seni sevaman. Har doim.
+8824074	Ertaga ham bora olsam, boraman.
+8824077	Javob berging kelmasa, javob bermasang ham mayli.
+8824082	Bugun yoqqadigan narsangnigina yesang bo'ladi.
+8824094	Negadir ob-havo yomon bo'lib boshladi-a.
+8824111	Ertaga tong otguncha kutgin.
+8824118	Tom yomon odam emas, xavotir olmagin.
+8824120	Uzr-a, qo'rqitish niyatim yo'q edi.
+8824180	Meriya oldidagi novvoy narxlarni ko'tardi.
+8824182	Boston bunchalik issiq bo'ladi deb o'ylamagandim.
+8824183	Yana gaplasha olsak, xursand bo'laman.
+8824184	Baribir Tom nimanidir bekityapti deb o'ylayman.
+8824185	Tom ko'proq yeyishi kerak deb o'ylayman.
+8824188	Musiqasiz hayotni hayolimga sig'dira olmayman.
+8824189	Tom borsa, men bormayman.
+8824190	Mazali narsa yemoqchiman.
+8824191	Yana bir oz shoshilmay yurmoqchiman.
+8824192	Dunyoga kelganim uchun kechiring.
+8824193	Uylanmoqchi (/Erga tegmoqchi) emasmanku-ya, farzand xohlayman.
+8824195	Bir oz kutib turing, iltimos.
+8824199	Hozirgi tovush nima?
+8824201	Tom uchun baxt nima?
+8824205	Bu qo'shiqni bilasanmi?
+8824212	Quloqchining (Naushniging) bormi?
+8824215	Bu kecha Skype qila olasanmi (ga kira olasanmi)?
+8824217	Ertaga qandaydir rejang bormi?
+8824219	Tomning oyisini hech ko'rganmisan?
+8824221	Charchagandirsan? Tezroq uxlasangchi?
+8824226	Janob Santa axir aslida otangku, to'g'rimi?
+8824232	Ertaga erta turish kerak. Endi uxlasangchi?
+8824233	Bu velosiped kimniki?
+8824241	Nima uchun menga bunchalik mehribonsan?
+8824245	Tom bilan odatda qaysi tilda gaplashasan?
+8824247	Kim bilan gaplashyapsan?
+8824249	Bunaqa erta tongdan nima qilyapsan?
+8824250	Bunday qorong'u joyda nima qilyapsan?
+8824251	Odatda qanaqa musiqa eshitasan?
+8824259	Nega bunchalik ingliz tilidan zo'rsan?
+8832134	Nima demoqchiligimni unutib qo'ydim.
+8832141	Nega bunchalik fransuzchada ustasan?
+8832143	Kim bunaqa dedi?
+8832146	Bu qo'g'irchoqni o'zing yasadingmi?
+8832148	Nimaga menga aytib bermading?
+8832149	Nega bunaqa qilding?
+8832151	Kinoteatrga [borish] vokzaldan yaqinmi?
+8832154	Nega bunchalik ovqat qilishda ustasan?
+8832157	Bu yer hech o'tmagan yo'limiz-a?
+8832187	Bu nima degani?
+8832192	O'tgan yilgi rojdestvoda nima qilganding?
+8832207	Bu/Shu/O'sha pivo qancha edi?
+8832213	Meni qanchalik sevasan?
+8832222	Bahor va kuzdan senga qaysi yoqadi?
+8832236	Ertaga qayerda uchrashamiz?
+8832243	O'zga sayyoraliklar bor deb o'ylaysanmi?
+8832245	Qorbobo bor deb o'ylaysanmi?
+8832248	Tom, sen nima deb o'ylaysan?
+8832259	Savolga savol bilan javob qaytarishni bas qilarsan?
+8832319	Keyingi paytdagi studentlarning bo'ylari baland deb o'ylamaysanmi?
+8832320	Yuzing qizil, yaxshimisan? Issig'ing bor emasmi?
+8832321	Rojdestvo sovg'asiga nima xohlaysan?
+8832322	Bu nonni yesam maylimi?
+8832323	Ertaga nechida kutib olishga borsam bo'ladi?
+8832328	Meni kutib turgandingmi? Rahmat!
+8832331	Oxirgi poyezd soat nechida?
+8832332	Bu soat qancha turadi?
+8848027	Keyin saroyda, hukumatda, yig'ilishlarda va ko'chada hech kim turk tilidan boshqa hech bir tilda so'zlasha olmaydi.
+8848039	Ushbu kitobni o'qish uchun bir hafta vaqt ketadi.
+9182424	Iltimos, baland ovoz bilan gapirmang!
+9245361	Iltimos, niqob taqing.
+9528155	Erdogan Turkiyaning prezidenti.
+9637647	Uy qabristondek jimjit edi.
+9637711	Biz maktab yaqinida yashaymiz.
+9641354	Men oʻquvchi emasman.
+9641392	Oʻquvchining kitobi qayerda?
+9642863	Har kimniki oʻziga, oy koʻrinar koʻziga.
+9642917	Oilam hech nimadan shubhalanmadi.
+9642951	Bolalarning tana harorati oʻsmirlarnikidan yuqori.
+9644578	Bu uy emas.
+9646581	6 soatda bir marta tana haroratimni oʻlchadim.
+9646597	Kecha yomgʻir yogʻdi.
+9646607	Kecha yer qimirladi.
+9646627	Kecha qor yogʻdi.
+10236721	Assalomu alaykum, do'stlar!
+10267297	It qo'limni tishladi.
+10267299	U taxminan o'ttiz yoshda.
+10299308	Bizda qog'oz qolmagan.
+10473679	Tom qachon bozorlashadi?
+10473683	Men gid bo'lib ishlayman.
+10473684	Men o'qituvchi bo'lib ishlayman.
+10473685	Men maslahatchi bo'lib ishlayman.
+10473686	Men sotuvchi bo'lib ishlayman.
+10473687	Men qulfchi bo'lib ishlayman.
+10473689	Men oshpaz bo'lib ishlayman.
+10473694	Men frilans tarjimon bo'lib ishlayman.
+10473696	Men avtobus haydovchisi bo'lib ishlayman.
+10473703	Bungacha men taksi haydovchisi bo'lib ishlaganman.
+10473704	Men uch yil ofitsiant bo'lib ishladim.
+10473705	Bu rasm juda chiroyli.
+10473710	Sudya Tomni uch yillik qamoq jazosiga hukm qildi.
+10473716	U aqldan ozgan.
+10473800	Men Turkcha o'rganaman.
+10473877	Mening yoshim qirqda.
+10473908	Tom Mariyaning otasi emas. U, uning amakisi.
+10473919	Qancha pul qo'ymoqchisiz?
+10473922	Pul jo'natsam bo'ladimi?
+10473927	Sizga qancha to'lashim kerak?
+10473938	Qayerda o'tirishni xohlaysiz?
+10473943	Menga mol go'shti keltiring.
+10473945	Cho'chqa go'shti yemayman.
+10473951	Bu yerga kelsam bo'ladimi?
+10473952	Mol go'shti yemayman.
+10473961	Bu xona menga yoqmadi.
+10473971	Bu rang sizga yoqdimi?
+10473987	Har kimning o'zi yoqtirgan narsasi bor.
+10474001	Pasportni qayerga ko'rsatish kerak?
+10474002	Buning uchun to'lashim kerakmi?
+10474120	Baliqchilar suv ustida uchib ketishadi.
+10474460	Ko'zim shishib ketdi.
+10474479	O'zimga oro bermoqchiman.
+10474489	U chumoliga ham ozor bermasdi.
+10474500	Mening qulog'im og'riyapti.
+10474508	O'zbekcha gapiradigan doktor bormi?
+10474514	Bank qayerda joylashgan?
+10474519	Sizga telefon ma'lumotnomasi kerakmi?
+10474528	Xonamda issiq suv yo'q.
+10474533	Bu xonada issiq suv bormi?
+10474537	Bu xonada issiq suv yo'q.
+10474540	Bu atrofda dorixona bormi?
+10474546	Ertaga do'l yog'adi.
+10474550	Kitoblar qayerda sotiladi?
+10474558	Restoran qachon ochiladi?
+10474561	Bo'sh xonangiz bormi?
+10474578	Uygonganimda soat oltidan o'tgan edi.
+10474586	Bemorning ahvoli qanday?
+10474592	Qo'y go'shti qancha turadi?
+10474605	Bank o'ng tomonda.
+10474613	Bank chap tomonda.
+10474881	Soat oltidan o'tgan edi.
+10474907	Pul almashtirmoqchi edim.
+10476348	Mening uch bosh qo'yim bor.
+10476365	Men o'la yozdim.
+10476373	Nega uni o'ldirding?
+10476541	Eshikni kim ochdi?
+10476923	Bugun qor yog'yapti.
+10477267	Ertaga qor yog'adi.
+10479218	Nima ish qilasiz?
+10511144	Bugun, men osh pishirishni hohlayman.
+10511147	O'rmonda juda ko'p hayvonlar bor.
+10715866	Sen juda qimmatlisan.
+10715868	Iltimos meni o'ldirmang!
+10715870	Mening o'g'limdan qimmatliroq narsam yo'q!
+10715871	Bu ishni tugatganingdan so'ng uyga keta olasan.
+10715872	Uni yo'qotishdan qo'rqaman.
+10715888	Biz hammamiz Tom o'zini o'ldirishi mumkin deb o'ylagandik.
+10715889	Biz uni kechasi joylashtira olamiz.
+10715991	Men yaxshi sendvich yedim.
+10715999	Erkin va baxtli bo'lishni xohlayman.
+10716008	Bu Tomning uyining surati.
+10785812	Ushbu dasturni DOS rejimida ishga tushirish mumkin emas.
+10846288	Bizda qog‘oz yo‘q.
+10846297	Tomning xotini norvegiyalik.
+10846303	Sen roman yozishing kerak.
+10846314	Barcha eshiklar qulflanganidan do‘konga kirolmadim.
+10846317	Jazoir hech qachon o‘z bayrog‘ini o‘zgartirmagan.
+10846322	Inglizcha kitobingiz bormi?
+10852553	Hech narsa bilmaysan.
+10852554	Hech narsa bilmaysiz.
+10852565	Prezident sayohat qilishni yaxshi ko‘radi.
+10852577	U kecha Tokioga yetib keldi.
+10852578	Kecha oyning tutilishini ko‘rdingmi?
+10852586	Maktabimizning kutubxonasida kitoblar juda ko‘p.
+10852590	Tom hayotining ko‘p qismini Bostonda o‘tkazdi.
+10852594	Baliqni yaxshi ko‘raman.
+10852595	Baliqni yaxshi ko‘rmayman.
+10852597	Baliqni yomon ko‘raman.
+10854398	Kechani qayerda o‘tkazding?
+10854402	Qirol qal’ada yashaydi.
+10854406	Ziri berber tili haqida nutq so‘zladi.
+10854410	Ijtimoiy tarmoqlar vaqtingizni yo‘qotadi.
+10873705	Sen qayerda yashaysan?
+10873730	Uning iti qayerda?
+10874182	Germaniyaga qachon borasan?
+10874183	Germaniyaga qachon borasiz?
+10874207	Mening ikki kitobim bor.
+10874208	Mening ikkita kitobim bor.
+10875874	Mushuklar banan yemaydilar.
+10877160	Men kitob o‘qishni yaxshi ko‘raman.
+10967278	Otam ingliz tili o‘qituvchisi.
+11064463	Televizorning ovozini pasaytira olamanmi?
+11064465	Ushbu alomatga duch kelishingiz birinchi martami?
+11065573	Men go‘sht yemayman.
+11065653	Men o‘z kompyuterimdan foydalanyapman.
+11071980	Tom bolalarning e’tiborini jalb qilishga harakat qildi.
+11163461	Ular menga nimadir topishganini aytishdi.
+11165377	Agar yomg‘ir yog‘sa, piknik bekor qilinadi.
+11165378	Bu mening pasportim.
+11165379	Velosiped ijaraga olmoqchiman.
+11165448	Do‘stim shakar ishlatmaydi.
+11282103	Bu savolingizga javob berdimi?
+11282104	Bu savolingizga javobmi?
+11282118	Juda antigigiyenik bo‘lganidan jamoat hojatxonalaridan foydalanishni rad etaman.
+11282683	Qilgan ishing hech qanday kulgili emas.
+11282688	Kutubxona qoidalariga ko‘ra baland ovozda gapirish taqiqlanadi.
+11282690	Bu dunyoda o‘z qoidalaring bilan yashay olmaysan.
+11298032	Bu jumlani kim yozdi?
+11483321	Ularning mushuki yo‘q edi.
+11483323	Boshqa tilda gaplashasizmi?
+11483324	U Belgiyaga ko‘chib o‘tishga qaror qildi.
+11537587	Seni quchoqlasam maylimi?
+11537605	Bu kitobni ikki yil oldin o‘qigan edim.
+11596130	Tom haqiqatni aytishdan qo‘rqadi.
+11596131	Men nima noto‘g‘ri qilganimni bilmoqchiman.
+11596132	Qiladigan bir narsa bo‘lmasligi juda zerikarli.
+11596142	Ertaga rejalaring qanday?
+11596146	Ko‘zoynagimni topolmayapman. Uni topishimga yordam ber!
+11601005	Meni ko‘nglim aynayapti.
+11609666	Menga bir chashka qahva berasizmi?
+11609668	Har bir genotsid nafrat nutqi bilan boshlanadi.
+11633397	Bugun Tomning dam olish kuni.
+11767896	Bu sening qalamlaringmi?
+11904898	Ma’lumotlar bazamizda bunday yozuv yo‘q.
+11905568	So‘roqqa javob berdi.
+11905569	Savolga javob berdi.
+11906413	Tillarni yaxshi ko‘raman.
+11906421	U ko‘zlarini yumdi.
+11906761	Savolga javob ber.
+11909096	Men televizor ko‘ryapman.
+11909482	Men mushuklarni yaxshi ko‘raman, mushuklar ham meni yaxshi ko‘radilar.
+11909489	Ikki dunyo orasida yashayman.
+12009048	Men ikkiyuzlamachi emasman.
+12020045	Bu poyezd bu yerda to‘xtamaydi.
+12020358	Men faqat birinchi tarjimani o‘qidim.
+12020360	Faqat birinchi tarjimani o‘qidim.
+12073309	Mening uyim bu qishloqda.
+12073350	Bugun maktabda nimani o‘rganding?
+12073352	Bugun maktabda nimani o‘rgandingiz?
+12075584	U koʻzlarini yumdi.
+12146200	Bugun qo‘y go‘shti yo‘q.
+12146204	Nima ichishni xohlaysiz?
+12146208	Menga meva sharbati olib keling.
+12146211	Men o‘zbek emasman.
+12146212	Sen o‘zbek emassan.
+12146213	U o‘zbek emas.
+12156103	Tom yoshligida kosmonavt bo‘lmoqchi ekan.
+12156104	Tom yoshligida kosmonavt bo‘lishni xohlagan.
+12173805	Kredit kartasi bilan to‘lay olamanmi?
+12173872	Bugun ob-havo qanday?
+12175750	Angliyada qaysi valyuta ishlatiladi?
+12175770	Muammoni qanday hal qilishimiz kerak?
+12178990	Do‘stlarimdan qarzdor bo‘lishni yoqtirmayman.
+12180541	Menga kalitlarim kerak.
+12190616	Musiqa tinglashni juda yaxshi ko‘raman.
+12190644	Xonada televizor yo‘q edi.
+12191596	Bu qo‘shiqning nomi nima?
+12191601	Qaysi tillarda gaplasholasan?
+12191602	Qaysi tillarda gaplasha olasan?
+12191609	Qahvam shakarsiz bo‘lsa xursand bo‘laman.
+12194042	U hayvonlar haqida kitob yozgan.
+12194916	Men buni imzolashni xohlamayman.
+12194917	Men uni imzolashni xohlamayman.
+12195388	Nihoyat unga turmushga chiqdi.
+12195389	Nihoyat unga uylandi.
+12203773	Uning tarjimai holi o‘nta tilga tarjima qilingan.
+12203774	Uning biografiyasi o‘nta tilga tarjima qilingan.
+12205172	Bu kitobni qaysi tildan tarjima qilgansan?
+12205192	Bu kitob qaysi tilda yozilgan?
+12205402	Bu kitobning muallifi kim?
+12304625	Bu do‘konda ayollar kiyimlari sotilmaydi.
+12305060	Bu suratlarni sen olganmisan?
+12305077	Sening fikrlaringni taxmin qila olaman.
+12321198	Boshliq, hammasi ketdi! Gips olib tashlandi! Mijoz ketmoqda!
+12361268	Men sening quling emasman.
+12474868	Sen va Tom bu yerda xavfsiz bo'lasizlar.
+12474870	U senga nega yordam bermadi?
+12474879	Siz va Tom bu yerda xavfsiz bo'lasizlar.
+12474898	Men Tomga mening shaxsiy hayotimga xo'jayin emasligini aytdim.
+12474905	Men u narsani tushunmadim, va Tom ham tushungani yo'q.
+12474907	Tomni u narsa uchun tayyorlang.
+12474909	Tomning ovoz yozish studiyasi bor.
+12474911	Tomning birinchi asari 6 ta tilga tarjima qilingan.
+12474915	Tom allaqachon o'z davomchisini tanlab bo'lgan.
+12474917	Tom o'z sohasida juda yaxshi.
+12526042	Ertangi yig‘ilishga kelmayman.
+12526043	Bugungi o‘yinga kelmayman.
+12526044	Ertangi yig‘ilishga kelolmayman.
+12536022	Ertaga ob-havo qanday bo‘ladi?
+12540010	Men o‘lgan emasman.
+12794129	Kimdir o‘zini o‘ldirdi.
+12794144	Ularning hamkorligi bilan vazifa muvaffaqiyatli bajarildi.
+12794157	Meni chayon chaqdi.
+12794207	Menimcha, Tom hali ham uyda.
+12794770	Nima uchun bosh harflardan foydalanish muhim?
+12794774	Bakalavr darajasi to‘rt yil davom etadi.
+12794783	Uning o‘limidan oldin to‘rt yil o‘tdi.
+12890671	Tom meni o‘pishiga ruxsat berdim.
+12896843	Oshpaz bo‘lib ishlayman.
+12897069	U meni ko‘ryaptimi?
+12897094	Dushanbadan tashqari har kuni bo‘shman.
+12897213	Petri kitobni nima bilan yozmoqda?
+12897219	Ular hamma pulni sarflashdi.
+12897220	Ular hamma pulni sarfladilar.
+12897269	Hamma pulingni bir kunda sarflamaslikka harakat qil.
+12897289	Men senga pul yubora olmayman.
+12897292	Men senga pul yuborolmayman.
+12897484	Senga bergan pulimni qanday sarflading?
+12897506	Rasmda nimani ko‘ryapsan?
+12897886	Go‘sht yeyishni yaxshi ko‘raman.
+12898254	Loyihani tugatishim kerak.
+12898255	Men loyihani tugatishim kerak.
+12899845	Bu barcha mayda-chuydadan qutulolasanmi?
+12899850	Erkaklar ham yig‘lashadi.
+12900078	Ushbu mavzuga e’tibor qilishingni tavsiya qilaman.
+12900087	Qizini chet elga yubordi.
+12905762	Ingliz tilida gapirmayman.
+12905766	Ta’lim uchun bo‘lsa ham seni chet elga yuborolmayman.
+12905776	Bolamni uzoq maktabga yubormoqchi emasman.
+12905777	Bolamni uzoq maktabga yuborishni xohlamayman.
+12905917	Nega itlarni shunchalik yomon ko‘rasan?
+12905919	Tom barcha mol-mulkini sotgan.
+12905920	Tom barcha mol-mulkini sotdi.
+12943646	Sallollohu alayhi vasallam.
+13040252	Mehmonxonamizda chekish taqiqlangan.
+13113664	Ushbu hujjat imzolanishi kerak.
+13154723	Bu kitobni bolalar ham o‘qiy oladi.
+13154768	Nega men bilan gaplashmayapsiz?
+13158769	O‘zimizni koronavirusdan qanday himoya qilishimiz mumkin?
+13247350	Bu dog‘ni olib tashlash qiyin bo‘ladi.
+13407656	Turk alifbosida yigirma toʻqqizta harf bor.
+13537990	U oʻrgimchakdan qoʻrqadi.
+13538320	Uni oʻqishim kerak.
+13538468	Yevropada nechta til bor?
+13539828	Qiz doʻstingiz bormi?
+13539872	U matematikadan hech narsa tushunmaydi.
+13539875	Men sening oʻrningda boʻlsam, u bilan gaplashmas edim.
+13539983	Matematikadan hech narsa tushunmaydi.
+13540141	U koʻzlarini ochmoqchi emas.
+13572520	Kecha kelolmaganim uchun uzr soʻrayman.
+13572521	Kecha kela olmaganim uchun uzr soʻrayman.
+13572535	Ijtimoiy tarmoqlardan foydalanishni toʻxtatdim.
+13679878	Bu kitobni sotib olishga pulim yetmaydi.
+13679909	Men bu kitobni sotib olmayman.
+13717866	Onangga xat yozdingmi?
+13717877	Xonada koʻp odamlar bor edi.
+13719128	Onamga xat yozyapman.
+13719169	Onasi uning tugʻilgan kunida vafot etdi.
+13720329	Mening katta mashinam bor.
+13725533	Endi kimga ishonishni bilmayman.
+13725544	Kitob oʻqishni yoqtirmayman.
+13756060	Ikki kun uxlolmadim.
+13756061	Ikkala qizim ham universitetda oʻqiydi.
+13756063	Qizim chet elda oʻqiyapti.
+13759532	Yaxshi otga bir qamchi, yomon otga ming qamchi.
+13778740	Sen ham kelolasan.
+13778747	Biz mineral suv ichamiz.
+13778751	Mendan soʻramoqchi boʻlgan narsangiz bormi?
+13778752	Mendan soʻramoqchi boʻlgan narsang bormi?
+13778757	U men haqimda bir soʻz ham aytmadi.
+13778760	Tokio qaysi mamlakatning poytaxti?
+13779156	Rossiyada benzin qancha turadi?
+13844093	Otamning oʻn yetti nabirasi bor.
+13851670	Dunyoni kim boshqaradi?
+13852047	Senga muhim bir narsani koʻrsataman.
+13858675	Ingliz tilida hamma joyda gaplashiladi
+13884335	Kitobimni olib kel
+13914978	Biz muzlatgich sotib olishimiz mumkin.
+13915086	U Amerikaga borishga qaror qildi.
+13915659	Menga soʻzlashgich kerak.
+13991501	Kecha maktabga faqat men keldim.
+13991549	Xitoycha oʻrganish qiyin emas.
+14027370	Tug'ilgan kuningiz bilan!
+14034790	Bugun faqat bozorga bordim.
+14034801	Tizimni kimga oʻrnattirding?
+14035332	Maktabda nimani oʻrgandingiz?
+14036130	Ularning qilgan ishlari ajoyib edi.
+14036131	Ularning qilgan ishlari ajoyib boʻldi.
+14036132	Bundan yaxshiroq hech narsa qilolmadim.
+14036441	Maktabni bitirganga chorak asrdan koʻproq vaqt oʻtdi.
+14036442	Hikoya qanday davom etmoqda?
+14036450	Bu qanday yasaladi?
+14036453	Tilingizni yaxshi koʻraman.
+14036454	Tilingni yaxshi koʻraman.
+14036820	U sizning haqingizda soʻradi.
+14036822	U siz haqingizda soʻradi.
+14095326	Ota-onangni qachon koʻrding?
+14095327	Buni hech kim bilmaydi.

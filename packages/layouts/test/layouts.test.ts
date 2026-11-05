@@ -5,6 +5,7 @@ import {
   US_QWERTY,
   isKeyCode,
   type KeyCode,
+  keystrokeMap,
 } from "@okb/engine";
 import { parseLayout } from "@okb/engine/layout";
 import { describe, expect, it } from "vitest";
@@ -380,9 +381,15 @@ describe("Latin layouts", () => {
     // Typed as cx, gx, hx, jx, sx, ux: rules, not keys (the golden test below).
     "eo-x-system": "ĉĝĥĵŝŭĈĜĤĴŜŬ",
     "la-easy": "œŒ",
+    "yo-easy": "ǹǸ",
     // Telex and VNI compose these from the keys before them (engine test/compose.test.ts).
     "vi-telex": "ăâđêôơưĂÂĐÊÔƠƯ",
     "vi-vni": "ăâđêôơưĂÂĐÊÔƠƯ",
+  };
+
+  const NOT_ON_LAYOUT: Readonly<Record<string, string>> = {
+    "az-standard": "w",
+    "tk-standard": "cqvx",
   };
 
   it.each(latin.flatMap((l) => l.layouts.map((id) => [id, l.accents!] as const)))(
@@ -390,6 +397,9 @@ describe("Latin layouts", () => {
     (id, accents) => {
       const chars = producibleWithDeadKeys(id);
       for (const c of "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ") {
+        // Windows gives these their own letters in those places: Azerbaijani has no w, Turkmen
+        // no c, q, v or x. English words need the Easy layout.
+        if (NOT_ON_LAYOUT[id]?.includes(c.toLowerCase())) continue;
         expect(chars.has(c), `${id} types ${c}`).toBe(true);
       }
       const missing = [...accents].filter((c) => /\p{L}/u.test(c) && !chars.has(c));
@@ -434,6 +444,11 @@ describe("dead keys start on the key that is dead", () => {
   });
 
   it("Gaelic: the ' key is an apostrophe, and ` then a vowel types the grave", () => {
+    // Yoruba needs a dot and a tone on one letter: Windows' keys reach one or the other.
+    for (const id of ["yo-easy", "yo-standard"]) {
+      expect(keystrokeMap(getLayout(id)).get("\u0301")).toMatchObject({ code: "BracketRight" });
+      expect(keystrokeMap(getLayout(id)).get("\u0300")).toMatchObject({ code: "BracketLeft" });
+    }
     expect(typeOn("gd-standard", "'a")).toBe("'a");
     expect(deadStrokeMap(getLayout("gd-standard")).get("à")!.first).toMatchObject({
       code: "Backquote",

@@ -1,0 +1,506 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+1434492	Kei te ngenge ahau!
+1434602	I tatū te rererangi i te wā tika.
+1434635	He tere ia.
+1434642	Ka haere ahau i te tekau karaka.
+1434653	He ngeru, he kurī rānei?
+1438264	Kei te wātea koe āpōpō?
+1589589	Kāore e pai ki a au te tiakarete.
+1589597	He whakaaro tōku.
+1589606	He nui rawa te utu!
+1589614	Kāore anō au kia whakatau.
+1589618	Āhea te pāti?
+1589632	Kaua e wareware ki te tīketi.
+1589668	He tino makariri tēnei rangi.
+1589689	Kia ora mo ngā maumaharatanga.
+1824361	Kia pai te mahi ki te hunga e kino ana ki a koutou.
+2708793	Kei te tāhoe au i roto ki te moana.
+2716916	He āporo māku.
+2716918	Ko Roberto ahau.
+2987418	He nui te whare.
+3081435	E rua aku ngeru.
+3083894	Tēnei he wharekura.
+3083895	He tauira au.
+3083898	He tauira ia.
+3083911	Nāu tēnei kurī.
+3083915	Nāku tēnei kurī.
+3083917	Tēnei he āporo kākāriki.
+3083925	He tāne mārena ahau.
+3083928	He ngeru au.
+3083929	He wahine au.
+3083951	Kāore te taro i te hou.
+3083963	Kei te kai ahau.
+3083997	Kei te kai koe.
+3084002	I kai au i te miraka tepe.
+3088156	I haere anō ia.
+3088183	Kāore au e hiahia ana ki te haere ki te kura.
+3091026	He pāika tōku.
+3091028	E hia ngā pereti, e hia ngā kapu?
+3091030	Tokohia ā koutou ākonga?
+3091032	Tokoiwa pea ā mātou ākonga.
+3091034	Tokotoru āu tamariki?
+3091036	E whitu ngā parāikete?
+3091039	Kotahi rau ngā marae o tēnei rohe.
+3091041	E whā tekau mā whā ō tātou manuhiri.
+3091043	E whitu ōu parāikete.
+3091045	Kotahi anake te urunga.
+3091047	E rua tekau āna tamariki.
+3091049	Tekau mā waru rātou.
+3091051	Tokorua ōku tuākana.
+3091053	Kotahi tōku tungāne.
+3091055	Ka kite mātou i tāna kāhui kuihi.
+3091057	He kiore te mōkai a tāku tamāhine.
+3091059	Na wai ēnei kūkū?
+3092471	Kaua e unuhia ō hū!
+3092473	Kaua e katia te kūaha.
+3092475	Whakapaitia tō moenga.
+3650158	He pai ki a au.
+3808190	Kei te aroha au ki a koe.
+4230488	Ko Burj Khalifa te hangatanga nui o te ao i tēnei wā.
+4441403	E rua tāra te utu mō te pukapuka.
+4441407	I whakatangitangihia e rāua/rātou te rakuraku me te akōtiana.
+4441411	Kotahi te tūngou mai a Tom.
+4441414	He waewae iti ōna.
+4441438	E hiahia ana ahau ki te pokanga Caesarian.
+4441446	Kua wera te āhua o te rangi i tēnei marama, hāunga tēnei rā.
+4441448	Kāore i te tika.
+4441452	Kāore koe i te kite i te whakaparakoretanga o te poroutīni i roto i tētahi whakamātautau o te iranga.
+4441457	He roa atu te wā e whakapaua ana e ētahi kaimahi hauora e wherawhera pepa ana, i te wā e manaaki ana i ngā tūroro.
+4441462	Mahia ai he taputapu i roto i tā mātou wheketere.
+4441464	Kaua e whakararuraru i a au!
+4441467	I torona tā Mary rua tūpāpaku e Tom.
+4441476	I whakakāhoretia e te ngārahu te tono mō te whakawhitiwhiti kōrero.
+4441489	I pēhea koe i uru mai ai? He kī tāu?
+4441503	He rite tonu tana oho wawe ake i ngā ata.
+4441507	He mea pōuri kāore ōna whakaaro e hāngai ana ki ngā āhuatanga o te wā.
+4441509	He wuruwhi koe i roto i ngā kākahu o te hipi.
+4441511	Kia tīmata tātou ki te rārangi tuarima i runga i te whārangi tekau.
+4441515	I mahia e māua/mātou he panikeke mō te parakuihi.
+4441525	Nā te aitua motokā ōku mātua i mate ai ka tekau mā toru ana ōku tau.
+4458389	I pikia te taiapa waea teitei e Tom kia taea ai e ia te uru atu ki roto i te wheketere tawhito, ahakoa i katia ia e tōna pāpā.
+4458393	Kua pau tā rāua/rātou huka ināianei.
+4458395	Ka tuarihia tēnā e koe?
+4458398	Tiaki ai te pēke nei i ōna ake painga i ngā wā katoa.
+4458399	Kāore i wareware i a māua/mātou
+4458400	I haere ia ki Rānana ako ai i te reo Pākehā.
+4458404	I te wā o te haerenga, i whakaaro au ki a koe.
+4458408	Ka pikia te taiapa e Tom, ka kohia ai ētahi āporo i te rākau.
+4458412	Kāore tērā i te pai ki a au.
+4458413	Ko te manga "One Piece" e tino paingia ana ki Malaysia.
+4458418	Ka hangaia tētahi whāriki i te mākete matua ki ngā rau maroke.
+4458432	Kāore te rākau nui i te kākāriki.
+4458434	Tata ki te tokoiwa ā mātou ākonga.
+4458436	He rerekē ngā āhuatanga o te oranga.
+4458438	Pōuri atu, kei pūhia koe e au.
+4458445	E tika ana kia whakatutukia tēnei mahi ā te āpōpō.
+4458446	I tonoa e ia te tūranga.
+4458447	Kia tūturu tō kōrero.
+4458448	E kore e taea e au te tiaki i a ia.
+4458454	E hia anō ngā whare ā Tom?
+4458455	Kāore au e pai ina kohetetia ngā tamariki e ngā whāea.
+4458456	Kia ora mō tō whakamōhio mai i a au.
+4458462	He kiri māia ahau ia rā, ia rā.
+4458465	I te moe hōhonu ia.
+4458466	Ko te kaikiritanga tēnei.
+4458468	E hiahia ana au ki te mōhio ka taea e tātou te whakawhirinaki ki a Tom.
+4458519	I kōrapa a Tom.
+4458521	E hiahia noa ana au ki te tuku mihi atu ki a koe.
+4458523	Tuhia tana wāhi noho.
+4458524	He nui rawa te utu mō te pire whakahoutanga o te hiko ki Tiamani.
+4458525	Me whakamātau koe ki te whakatūwhera i te tatau.
+4458529	I roa tana oranga.
+4458534	Kāore ia i tuku i te mūhoretanga kia whakapāhunu i a ia.
+4458560	Kāore au i te mōhio tūturu ka aha au ā muri atu i taku putanga i te whare wānanga.
+4458586	Kei hea tana whare haumanu?
+4458587	I whākina atu e Tom te kōrero muna ki a Mary.
+4458588	I mare ia i te auahi.
+4458589	E 3,000 yen e nama ana au ki a koe.
+4458590	Ko tēnei te ngeru tino nui kua kitea e au.
+4458591	Kia ora, Mike. Kāore au i te pīrangi ki te pīkaokao.
+4458593	Ahakoa he aha ngā mea ka pīkauria e tātou, he mea nui te pukumahitanga.
+4458599	Me i kore ake te hanga whena o te wharau nei, kua taka rawa iho i te āwhā i tērā pō.
+4458613	He mea tāhae nā rāua/rātou tana kopa i runga i te tereina.
+4458616	Kāore a Tom i te rata ki tana utu o nāianei.
+4458619	Me haere au ki te whare paku.
+4458626	I kōhurutia e Mary tana tāne, he tūturu te kōrero nei?
+4458631	Kāore tōku matua i te tino kaha ki te kōrero.
+4458634	I hāmūmū mō tētahi wā.
+4459603	Kāore ōku take.
+4459648	Haere mai ki Tatoeba!
+4459736	Kotahi rau e rima tekau hoki ngā tāngata i mate i te rū whenua.
+4459770	He koi ngā karu o te kārearea.
+4459772	Ākene pea kei te hē koe.
+4459792	I waihotia e au te tatau e tūwhera ana.
+4459797	Kāore i harikoa tana matenga.
+4459798	Me utu e koe āu nama.
+4459804	Te āhua nei i karo ia i te tūtaki mai ki a au.
+4459811	E mokemoke ana koe ki a ia, nē rā?
+4459872	Kāore he mea anō?
+4459877	Maharatia ki te kite i a ia āpōpō.
+4459878	E hia te roa o tā tāua mārenatanga?
+4459880	He aha i kore ai koe e tuku i a ia kia whiriwhiri?
+4459907	Kāore he kōwhiringa kē atu. Me mahi au i tēnei ināianei.
+4459924	I hea kē koe i tērā pō ?
+4459986	I tērā wiki tōku whaea i pāngia ai e te whurū.
+4460555	Kāore au i te hiahia kia āwangawanga tōku whaea.
+4460561	Kāore he wahine pērā rawa i a ia te whakahīhī i roto i tā mātou kamupene.
+4460564	Ka mahue pea taku whakamōhio atu ki a ia.
+4460566	He aha te wā me whakamōhio atu tāua ki a ia?
+4460567	E mā ana te wāhi?
+4460568	Kua rua ngā rā kua kore au e moe.
+4460569	Kaua rawa koe e whakautu i tērā.
+4460570	Nā te āwhā rāua/rātou i tae tōmuri mai ai.
+4460571	He uaua tonu te hanga i tētahi wati.
+4460575	E tika ana kia tautohetohetia tērā raruraru.
+4460576	He hoa tūturu a Tom rāua ko Mary?
+4460583	I okaina ia e ia ki tētahi tao kōura.
+4460585	I pā atu tētahi ki tōna tuarā.
+4460586	He aha tō tino pepeha?
+4460587	He tangata tino pai a Hideyo Noguchi i tōna wā.
+4460619	Te haunga hoki o tērā!
+4460620	Ka whakatūwheratia e au te matapihi kia uru mai ai he hau.
+4460621	I te ngaro au mō te rima mēneti.
+4460622	E hiahia ana ahau ki te mōhio nā wai tērā mahi.
+4462290	Ko Mary te mātanga ahurei o te whenua nei e pā ana ki te pakanga ki Hīria.
+4462310	Ko ētahi kaihoahoa kākahu o Itaria e mea ana ā tēnei tau paingia haerehia ai ngā hūtu kaukau mā.
+4462330	Kāore ia i te mau pōtae.
+4462347	He hinuhinu te pēke nei.
+4462353	He raparapa e hiahiatia ana e au mō ēnei hū.
+4462366	He tino pukumahi a Tom ki tana mahi.
+4462375	I pēhea rāua i whakamatea ai?
+4462384	He pai ki a au māku anō a Tom e whakaoho.
+4462386	Kāore e paingia ana e au te kai parai.
+4462388	Kātahi anō a ia ka kai. E kai ana au i ngā wā katoa.
+4462389	He tinihanga koe.
+4462390	I tutuki pai tērā.
+4462394	Nā te mea kāore ia i haere mai, kāore hoki au i haere atu.
+4462400	E pānui ana ngā tāngata katoa.
+4462402	E hiahia ana ahau kia whakatā koe mō tētahi wā.
+4462446	He maha āna pūtea, he tokoiti ōna hoa.
+4462447	He tere a Albert ki te ako.
+4462448	I whakatūria ā māua tēneti e māua i mua i te pō.
+4462451	I whakatūria e māua he waea i waenganui i ngā pou e rua.
+4462452	Kua tino rerekē te papa kāinga i ngā tau tekau kua taha atu.
+4462453	Ko te rere huka taku tino tākaro.
+4463716	I ngaro i a Tom ngā mea katoa.
+4463717	He tokomaha ōku hoa hei āwhina mai i ahau.
+4463718	He aha i kore ai koe e rata mai ki a mātou?
+4463719	He aha i kore ai koe e rata mai ki a māua?
+4463729	He pai te kite anō i a koe, e Tom.
+4463732	Kāore kau ahau i kite i tētahi tangata pērā rawa te riri i tōku oranga.
+4463733	Whakamahi ai au i te Firefox.
+4463735	E kikī ana te papa rēhia i te tamariki.
+4463853	I titiro mākutu a Tom ki te whakaahua.
+4463854	I te taha noa atu ahau.
+4463858	I mātakitaki te whakaminenga i tētahi tawhititanga haumaru.
+4463860	He kaupapa pai tēnā.
+4463966	Kāore ahau i mea ki te tino whakatoko ake i ngā āhuatanga e pā ana ki a koe.
+4463970	Ka meinga auautia ngā tāngata e tērā kaiwhakahaere kia mahi i ngā hāora roa.
+4463984	I kai ahau i tērā āporo.
+4463994	Kāore ahau i te tautohetohe ki a koe.
+4463995	He pai tonu a Tom ki te kōrero i te reo Wīwī.
+4463996	I waea atu ahau ki a ia mā te waea.
+4464828	I ētahi wā, he pai ki a au te eke hōiho.
+4464830	I hokona e au te pukapuka.
+4464831	Ka hoatu au ki a koe he tauira.
+4464832	Me pēhea koe e utu ai i āu nama?
+4464834	I whakaitihia te whakapae kōhuru ki te matenga pokerehū.
+4464835	He hākawa ahau ki te whakapono ki a rāua.
+4464836	He hākawa ahau ki te whakapono ki a rātou.
+4464837	Ko te ara o te whaiāipo tēnei.
+4464838	Kāore ahau i hoko i ērā mea.
+4464839	E kinongia rawatia ana āna kōrero e au.
+4464840	I tonoa e ia he pūtea nui i a rātou, engari auare ake.
+4464841	Ka tata ahau te haere, ka tae mai koe.
+4464842	I te matemoe ahau.
+4464843	Tōna tikanga, e harawene a Tom.
+4464844	E hiahiatia ana kia tapia tāku wati.
+4464845	I tere a Tom ki te piki ake i te arapiki.
+4465024	I whakatūria ā mātou tēneti e mātou i mua i te pō.
+4465026	I pēhea rātou i whakamatea ai?
+4465029	He aha te wā me whakamōhio atu tātou ki a ia?
+4465072	I rongo kōrero koe mō te ahi o nanahi?
+4465248	Kāore a Tom i tonoa e au kia haere mai.
+4465675	He pai kē ki a au te noho ki te kāinga i te haere ki te hī ika.
+4472785	Kua tuhia e au tana nama waea.
+4472787	Kāore i uaua.
+4517177	I mahue iho rātou i te wāhi o te hoariri.
+4517178	I te noho noa a Tom i reira, kāore he aha i puta i tōna waha.
+4517179	I āta tirohia ia e Tom.
+4517180	Aroha mai, engari me haere koe.
+4517181	He tino rawe a Tom.
+4517184	He whakamataku te pūngāwerewere ki a au.
+4517185	I tērā pō māua i mātakitaki ai i tētahi pikitia whakaaroha i te whare pikitia.
+4517191	Kei hea tētahi whare kai pai i konei?
+4517192	E rata ana mātou katoa ki a Tom.
+4517196	I noho tino hū a Tom i runga i te hōpa.
+4517199	He reka tēnei wāina ki tōku ngao.
+4517200	Ki te kore he mātauranga pai, me pēhea koe e eke ai ki te taumata angitu?
+4517203	He whakaaro tino pai ō Tom.
+4517207	I uru atu ia ki te ngahere ki te kimi i tana tamariki e ngaro ana.
+4517531	E whakakoia ana te māripi e Tom.
+4517536	I ngaro tā rāua kurī i a rāua.
+4517537	I ngaro tā rātou kurī i a rātou.
+4517546	E hiahia ana ahau ki te hoki atu.
+4517550	E rata ana ngā tāngata katoa o konei ki a koe.
+4517552	Ka whakamaioha ahau ki te taea e koe te mahi i tērā mahi.
+4517555	Te āhua nei i te pōnānā a Tom.
+4517563	Kaua e rorirori. E mōhiotia ana e koe e arohaina ana koe e au.
+4517565	Nā Tom tērā mahi i mahi.
+4517574	E mārama ana ahau ki te riri e rangona ana e Tom.
+4517585	Hei tā ētahi, e takahia ana te Whakatikatikatanga Tuawhā e ngā mīhini matawai i te katoa o te tinana.
+4517594	Ko ngā kaipānui o taua pukapuka e whakapono ana he mātanga rātou.
+4517597	E paingia ana a Bob ki te kura.
+4517598	I kitea ia e au e mahi ana i tērā mahi.
+4517601	I tae tuatahi atu te Irihama ki Haina i waenganui i te rautau tuawhitu.
+4517685	I āwhinatia te tama e ahau.
+4517686	I te haere atu te kaipuke ki uta.
+4517688	Ka toa pea a Tom i te tauomaoma.
+4517689	E hiahia ana ahau ki te hoko i tētahi matapihi papararo pai te hanga, he ārai mātao hoki.
+4517692	I mārama te kitea i te matekiri a Tom
+4517703	He āhua maha ngā takunetanga ahurea e tautokona ana e tō mātou kamupene.
+4517706	Kāore kau a Dan i utu i tana reti ki a Linda.
+4517708	He tino reka te wai.
+4517712	He taumaha tēnei pēke kikorangi.
+4517714	Ko te haere ki rāwāhi e paingia ana e te tokomaha.
+4517715	Ehara nā Tom ngā rīhi i horoi.
+4517717	I kī mai a Tom ka haere mai a Mary ki te kai i te hapa.
+4517721	He mārama ki a au ko tēnei te kōrero pono.
+4517725	I kitea e koe te whitinga o te rā i mua nei? I tino ātaahua.
+4517727	I te tuatahi, i pōhēhē ahau ko koe tō tuakana.
+4517728	I te tuatahi, i pōhēhē ahau ko koe tō teina.
+4517729	He pai te mahi akoranga ki a koe?
+4517736	He mea āhua rerekē tā Tom i tūmanako ai.
+4517738	Kāore i te rite tonu tā Tom mahi i te mahi kāinga i mua i te hapa.
+4517985	Kua toru ngā rā a Tom e ngaro ana i te kura.
+4517991	Mauria atu ai ngā tamariki e Tom ki te kura ia rā, ia rā.
+4517999	I haere atu māua ko Tom ki te mātakitaki i tētahi pikitia i muri i te kura.
+4518001	I haere māua ko Tom ki te mātakitaki i tētahi pikitia i muri i te mahi.
+4518004	E mātakitaki ana a Tom i te pouaka whakaata mō te katoa o te rā.
+4518009	E mōhio ana a Tom he aha tā Mary i mahi ai?
+4518019	I taea e Tom te kite i te tangi a Mary.
+4518023	I kī atu a Tom ki a Mary me kaua a ia e hīkoi ko ia anake ā te pō.
+4518025	He roa rawa te wā e whakapaua ana e Tom e whakamahi ana i te rorohiko.
+4518026	Kua roa ahau e tatari ana ki a Tom.
+4518027	E hiahia ana a Tom ki te mōhio ā hea koe haere mai ai.
+4518031	Ka koromōkātia a Tom e ngā kaikāhaki, ka rakatia ia ki roto i tētahi korōhete.
+4518032	I noho tahi a Tom rāua ko John i te wā o te kāreti.
+4518033	I haere rānei a Tom ki te kāreti?
+4519381	I kī mai a Tom ki a au kua kōwhiria e Mary ki te kai i ngā kai whakatinanga.
+4519471	Tuatahi, kia kōrero tātou mō ngā mahi i mahia e Tom.
+4519472	He kaitunu tino pai a Tom.
+4519729	I tatari ahau ki a Tom mō te wā roa.
+4519730	Kāore au i te whakaaro he tino maha ngā ōritenga i waenganui i a Tom rāua ko Mary.
+4519735	Kāore a Tom i whakaaro ka pērā te whakahoki a Mary.
+4519744	I noho a Tom ki runga i tētahi tūru ki te kokonga.
+4519747	I mahia e Tom ngā mea katoa i taea e ia te mahi.
+4519754	Ka āwhina mai a Tom i a tātou mēnā i taea e ia.
+4519755	I paku whakatūwhera a Tom i te matapihi.
+4519761	I hoatu a Tom i tētahi kawhe ki a Mary.
+4519764	I haere a Tom ki te kīhini ki te tiki atu i ētahi kawhe.
+4519765	Kāore a Tom i te tino kaha ki te horoi i tana taiwhanga moe.
+4519767	Kāore i mā te taiwhanga moe a Tom.
+4519771	Kāore i rahi ā Tom pūtea hei hoko i tētahi kawhe.
+4519772	I hoatu a Tom i tētahi kawhe wera ki a Mary.
+4629060	I whakatūria e mātou he waea i waenganui i ngā pou e rua.
+4830409	Ki te hoko koe i tētahi aihikirīmi māku, ka hoatu ahau ki a koe he kihi.
+4830416	Whakapau ai a Tom i te nuinga o tana wā wātea e whakaharatau ana i te rakuraku.
+4830418	Ko Tom te hoa kotahi o Mary nōna i te kura kōhungahunga.
+4830427	Ko koe te hoa kotahi o Tom i mua.
+4830432	He whakaātaahuatanga tino pai te manahautanga rāua ko te uruhautanga, he rongoā rongonui rāua hei whakarangatahi i te āhua o te tangata.
+4830446	I mea ahau i tētahi mea hē?
+4830458	Ka roa te wā kia ora rā anō ahau i tēnei rewharewha.
+4844457	E hua ana ahau me aha ahau ki te kimi i tētahi mahi.
+4844459	"He kaputī anō māu?" "Kāore."
+4844461	Ko te āhua nei, kua whakakapia kētia koe.
+4844462	Kua huaruatia te utu o te kawhe mai i tērā wā.
+4844463	E whakahāwea ana tēnei waiata i te wahine.
+4844465	E mōhio ana ahau e inumia ana te kawhe e Tom.
+4844466	Nā wai tēnei paihikara?
+4844467	I kai hapa ahau i a ia.
+4844469	He aha kē tāu e hoko ana i tētahi whare pērā rawa te nui o te utu?
+4844513	He ngohe tērā.
+4844514	Ka taea e koe te whakamahi i tāku.
+4844516	Ko Tom tētahi o ngā ringatoi moroki tino rongonui o te ao.
+4844517	I paingia e koe taku whakaahua?
+4844518	Ka mahue taku noho i reira, i tō taha.
+4844519	Haere mai i a au ināianei.
+4844520	He kānara ēnei?
+4844521	Ka tae mai a Tākuta Rueda.
+4844522	Kaua e āwangawanga. Ka kimihia ia e au mōu.
+4844523	E 15 ōna tau, i oma atu ia i te kāinga.
+4844524	Kia pono taku kōrero, he tawhito rawa tō āhua whakaaro.
+4844525	He maha ngā mea o te ao kua kitea e ia.
+4844526	He karaehe pia māku.
+4844527	Kāore koe i te ngenge, nē?
+4844528	Kāore māua i whawhai.
+4844530	E pai ana a Tom?
+4844531	Kāore mātou i whawhai.
+4844532	Nō reira kāore ahau i konei.
+4844533	I kaha taku oma, engari i mahue ahau i te tereina.
+4844538	Kī atu ki a rātou he mea nui.
+4844539	Kī atu ki a rāua he mea nui.
+4844540	I tautohetohe ahau ki a ia.
+5020849	Nau mai ki Tatoeba!
+5607363	He mōrearea te haere i te tuarangi.
+5607364	Māueue ana ahau i te whakaaro.
+5607365	E pīrangi ana koe ki ētahi tohutohu utukore?
+5607366	Kāore i te mea whakamataku ko te mahi tā ngā rata e mahi ana e kīia ana ko te 'parakitihi'?
+5607368	"I kihia koe e ia ki hea?" "Ki ōku ngutu." "Kao, me kī, i hea koe i te wā i kihia ai koe e ia?"
+5607371	Kāore au i te whakamā i tēnei.
+5607372	E whakahurihia ana ngā ākonga e te pūnaha mātauranga hei karetao.
+6186214	Kāore i kitea te tūpāpaku e ngā pirihimana.
+6186216	E mōhio ana tātou he nui ake te rā i te Ao nei.
+6186218	I horomititia te nākahi e te nākahi nui ake.
+6186219	Kāore i ngā pirihimana he taunakitanga hei whakatūturu i tērā.
+6186220	He tino nui ēnei āporo.
+6186269	He pārae raihi tino nui e karapoti ana i te taone.
+6186270	He peita kikorangi e hiahiatia ana e au.
+6186271	Ko te āhua nei he pakeke ake a Mary i te rima tekau tau.
+6186272	He pakeke ake a Mary i a au.
+6186273	Me whakaute te hunga rangatahi i ō rātou kaumātua.
+6186274	Kāore koe e whakarērea e ahau.
+6187614	He aha te pāmahana e whakarewaina ai te matā?
+6824282	Ko Ricardo ahau.
+6911134	Hei aha tō kamakama. Ki te kore koe e pukumahi, e kore rawa koe e angitu.
+6911142	I ngana ngā makimaki ki te tāhae i ā mātou kai.
+7918842	Tahi, rua, toru, whā, rima, ono, whitu, waru, iwa, tekau.
+8981396	Nō mātou tēnei kura.
+8981399	E mōhio ana ahau ki te rangatira.
+8981401	He taraka tōku.
+8981403	Tokowhā āku tamariki.
+8981406	He kairīpoata ia.
+8981452	Tokorua āku tamāhine.
+8981454	E aroha ana ahau ki tāku wahine.
+8981457	Ko ahau te rēwera.
+8981470	Ehara ahau i tōu kaiako.
+8981472	Ehara ahau i te rata.
+8981477	Kua kore ahau i tōu kaiako.
+8981482	Kei te ātaahua te ao.
+8981628	Tokorua āku tama.
+8981630	He pōtae ēnei.
+8981631	Nōku tēnei whare.
+9870694	Ko tāku kurī tēnei.
+9870695	Ko tāku ngeru tēnei.
+9870698	I kite koe i te tāne?
+9870700	Ko wai te ingoa o tēnei rākau?
+9872798	He pōtae tēnei.
+9872805	Ehara tēnei i te pōtae.
+10766356	He tāone a Ākarana.
+10766360	Nōku te pōtae mangu.
+10766363	Ehara tēnei i te whare.
+10766364	He hōiho tāu?
+10766385	Ka hoko ahau i te pukapuka mō tāku wahine.
+10767628	Nōku tēnei kāinga.
+10767632	Kia atawhai ki tōu tamaiti.
+10767637	He whero te pōtae.
+11491747	I whakatau ia ki te neke ki Belgium.
+12078371	He aha koe i ako i te kura i tēnei rā?
+12078504	E whā aku ngeru.
+12078505	Ko Emiri tōku ingoa.
+12078532	Kāore au e kai i te mīti i a au anō.
+12078550	Kāore au e mōhio ki a ia.
+12078552	Kei te mamae tōku puku.
+12657481	Kua heke te patapata ua.
+12657483	Kei te aha koe?
+12657487	Āhea tō rā whānau?
+12657488	Kei te haere au ki te hokomaha
+12657490	E whai ake nei
+12657500	Hoatu ēnēi ki a Lucy
+13098988	Na ka haere mai etahi wahine tokorua ki reira, ki te kingi, he wahine kairau, a tu ana i tona aroaro.
+13458990	He kaiwhakamahere ahau ki a Tom
+13458995	E kī, he tere tērā !
+13458999	Ka aroha ahau ki a koe mō āke tonu
+13459000	Katia tā kōrua waha
+13460009	He aha rātou e mahi ana?
+13460020	Ka mārena rāua i Hune.
+13460180	Te āhua nei, he tino matapōuri te wāheke.
+13460190	Kei te aroha ahau i ōu ngutu
+13460198	Pātaitia a Tom he aha tātou ā tērā wā
+13460200	Nāku tētahi tūru.
+13460203	Kei te hiahia a Yanni ētahi wā e mahi ana.
+13460208	He mate kē a Tom pea.
+13460210	I toro a Tom i tētahi hoa.
+13460217	I tīmata a Yanni ki kari.
+13462850	He raru matua o Tom i kore whakakatakata
+13462853	Ko wai tāu kaitohu rorotu?
+13462856	He kārangaranga te niupepa nei i ā rohe.
+13462859	He tokomaha ngā tāngata e noho tata ana ki mātou.
+13462866	He pai te wāhi engari kāore au i hiahia ki noho ki kōnei.
+13468113	Kei te whakamomori au i tāna āwhina.
+13468119	He tata wharengaro te nakinaki nei.
+13470937	Kei runga noa atu rātou.
+13470938	He whaikōrero whakaohooho tēnei
+13470943	Kei te mōhio ia i āku rerenga.
+13470953	Ā tōna wā, i hiahia au me watimeka ā hei hanga ngā hāpira, ngā kānapanapa, ngā rūpi, ngā taimana rīngi me tāhei hoki
+13471516	I mārena ia ki tētahi kaiako o whakaari.
+13473169	Tōna tikanga kia tūtaki ia ki a ia ki ngā kiriata.
+13473181	E hia ngā tiakarete i hoko koe?
+13473184	E hia ngā tiakarete i kai a Tom?
+13474052	Kua pau koutou ngā tōtiti.
+13474053	Kei te kai ai a Tom i ngā tōtiti miti kore anake.
+13474054	I haere rātou ki te tiki tōtiti maroke.
+13474055	Ka hoko au ki a ia ētahi tōtiti maroke.
+13474061	I auau ngā kurī.
+13474063	Horoia te kurī.
+13475739	Ekea te pahi.
+13475740	He pahi tēnei.
+13475748	I pōturi te haere te pahi.
+13475750	I aroha a Lajos i tērā pahi.
+13475751	He mā te pahi.
+13475753	Nāku te pahi.
+13475760	I pīkau a Tom.
+13475762	I te pīkau rātou.
+13475763	I te pīkau ia.
+13475764	Kautahangatia tāku pīkau.
+13475765	I wareware koe i tāku pīkau.
+13475766	Tīkina tāku pīkau.
+13475767	Homai te pīkau.
+13475769	I tanuku te arapoka.
+13475772	I tomo ia i te arapoka.
+13475774	I haere ia i roto i te arapoka.
+13485290	Paraihetia ōku makawe.
+13485291	He makawe weriweri
+13485292	He makawe kikorangi ōna.
+13485298	I tapahi ōna makawe.
+13485304	He ātaahua i āhua ōu makawe.
+13488502	Nāku tētahi pene?
+13488505	Kei hea te pene nei ?
+13488506	He pai tāku pene.
+13488507	I tāhae ia tāku pene.
+13535479	He iti tāu māra.
+13556889	Kāti e maremare ana
+13593970	Kāore ahau i pātai.
+13593997	Nā wai i pakaru i te pātara?
+13722502	Kāore tātou i te whakapono i te kāwangatanga
+13733832	I ngaro tāna pū whakaahua i a ia i mua tata atu.
+13733835	He iti tāu māra nei !
+13736760	He whakamōrearea te hāngoangoa nei
+13736765	E tū ana au kei mua i a koe
+13736766	He mīharo rātou.
+13736767	He tino whakaohooho rawa atu i te kōrero nei.
+13736771	Tīkina ia hei roto.
+13736773	Kei te mōhio i āna rārangi
+13736778	E hia ngā whakawai riri nāu?
+13752542	Kāore koe i hiahia ki noho ki a au?
+13924992	He tauira pukumahi ia
+13924995	Nō Aketina ia?
+13924997	Ka aha a Jane ā te ata ?
+13924998	He tokomaha ngā tāngata i te whare pukapuka i ngā wā katoa.
+13926477	Ko tāku hoa tēnei, Skura.
+13926479	Nōku whare nunui.
+13926480	Nōku whare iti.
+13926481	Nōku whare wawaenga.
+13926482	I whakamātau ahau e panui ana i tēna pukapuka.
+13926483	He tino hōhā tēna pukapuka, heoi anō i whakamutu panui ahau kei waenganui pū.
+13926486	He pai tōku karu inaianei.
+13926488	He pai tōku waewae inaianei.
+14057613	He pēpi tonu tāku mokopuna.
+14057615	Inawhea au ki a tōna kāinga ai e ako ana ia.
+14057617	I whakatūpato au i a ia engari i whakangongo ia i te whakatūpato.
+14057620	Kāore ia e hoko tērā whare nā te mea he iti tāna utu.
+14057622	He pai rawa te tuku kia whakarere.
+14081711	I hoko ngā waka i utu waihanga iti.
+14081712	Ngā mihi mō te tono engari kāore au e haere.
+14081713	I manaaki koe i a koutou.

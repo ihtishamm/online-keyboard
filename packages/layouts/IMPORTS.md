@@ -884,6 +884,180 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
 - **Skipped:** nothing
 - **Our changes:** none
 
+## az-easy
+
+- **Output:** `languages/azerbaijani/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first. Added: AltGr+E ə, AltGr+G ğ, AltGr+I ı, AltGr+S ş.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 38, sag 24), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyE.ag: `é` → `ə`
+  - KeyE.sag: `É` → `Ə`
+  - KeyI.ag: `í` → `ı`
+  - KeyI.sag: `Í` → `İ`
+  - KeyS.ag: `ß` → `ş`
+  - KeyS.sag: `§` → `Ş`
+  - KeyG.ag: none → `ğ`
+  - KeyG.sag: none → `Ğ`
+
+## tk-easy
+
+- **Output:** `languages/turkmen/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first. Added: AltGr+N ň, AltGr+S ş, AltGr+Y ý, AltGr+J ž.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 38, sag 24), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyY.ag: `ü` → `ý`
+  - KeyY.sag: `Ü` → `Ý`
+  - KeyS.ag: `ß` → `ş`
+  - KeyS.sag: `§` → `Ş`
+  - KeyJ.ag: none → `ž`
+  - KeyJ.sag: none → `Ž`
+  - KeyN.ag: `ñ` → `ň`
+  - KeyN.sag: `Ñ` → `Ň`
+
+## uz-easy
+
+- **Output:** `languages/uzbek/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first. Added: AltGr+O oʻ, AltGr+G gʻ, AltGr+M ʼ, AltGr+icolon ʻ.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 38, sag 25), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyO.ag: `ó` → `oʻ`
+  - KeyO.sag: `Ó` → `Oʻ`
+  - KeyG.ag: none → `gʻ`
+  - KeyG.sag: none → `Gʻ`
+  - Semicolon.ag: `¶` → `ʻ`
+  - Semicolon.sag: `°` → `ʻ`
+  - KeyM.ag: `µ` → `ʼ`
+  - KeyM.sag: none → `ʼ`
+
+## kmr-easy
+
+- **Output:** `languages/kurmanji/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first. Added: AltGr+S ş, AltGr+E ê, AltGr+I î, AltGr+U û, AltGr+C ç.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyE.ag: `é` → `ê`
+  - KeyE.sag: `É` → `Ê`
+  - KeyU.ag: `ú` → `û`
+  - KeyU.sag: `Ú` → `Û`
+  - KeyI.ag: `í` → `î`
+  - KeyI.sag: `Í` → `Î`
+  - KeyS.ag: `ß` → `ş`
+  - KeyS.sag: `§` → `Ş`
+  - KeyC.ag: `©` → `ç`
+  - KeyC.sag: `¢` → `Ç`
+
+## yo-easy
+
+- **Output:** `languages/yoruba/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first. Added: AltGr+E ẹ, AltGr+O ọ, AltGr+S ṣ, AltGr+N ń. Added: AltGr+] adds a high tone and AltGr+[ a low tone to the letter before.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyE.ag: `é` → `ẹ`
+  - KeyE.sag: `É` → `Ẹ`
+  - KeyO.ag: `ó` → `ọ`
+  - KeyO.sag: `Ó` → `Ọ`
+  - BracketLeft.ag: `«` → `U+0300`
+  - BracketRight.ag: `»` → `U+0301`
+  - KeyS.ag: `ß` → `ṣ`
+  - KeyS.sag: `§` → `Ṣ`
+  - KeyN.ag: `ñ` → `ń`
+  - KeyN.sag: `Ñ` → `Ń`
+
+## ig-easy
+
+- **Output:** `languages/igbo/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first. Added: AltGr+I ị, AltGr+O ọ, AltGr+U ụ, AltGr+N ṅ.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyU.ag: `ú` → `ụ`
+  - KeyU.sag: `Ú` → `Ụ`
+  - KeyI.ag: `í` → `ị`
+  - KeyI.sag: `Í` → `Ị`
+  - KeyO.ag: `ó` → `ọ`
+  - KeyO.sag: `Ó` → `Ọ`
+  - KeyN.ag: `ñ` → `ṅ`
+  - KeyN.sag: `Ñ` → `Ṅ`
+
+## ha-easy
+
+- **Output:** `languages/hausa/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first. Added: AltGr+B ɓ, AltGr+D ɗ, AltGr+K ƙ, AltGr+Y ƴ.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 39, sag 25), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyY.ag: `ü` → `ƴ`
+  - KeyY.sag: `Ü` → `Ƴ`
+  - KeyD.ag: `ð` → `ɗ`
+  - KeyD.sag: `Ð` → `Ɗ`
+  - KeyK.ag: none → `ƙ`
+  - KeyK.sag: none → `Ƙ`
+  - KeyB.ag: none → `ɓ`
+  - KeyB.sag: none → `Ɓ`
+
+## wo-easy
+
+- **Output:** `languages/wolof/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first. Added: AltGr+G ŋ.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 38, sag 24), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyG.ag: none → `ŋ`
+  - KeyG.sag: none → `Ŋ`
+
+## haw-easy
+
+- **Output:** `languages/hawaiian/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first. Added: AltGr+A ā, AltGr+E ē, AltGr+I ī, AltGr+O ō, AltGr+U ū, AltGr+icolon ʻ.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyE.ag: `é` → `ē`
+  - KeyE.sag: `É` → `Ē`
+  - KeyU.ag: `ú` → `ū`
+  - KeyU.sag: `Ú` → `Ū`
+  - KeyI.ag: `í` → `ī`
+  - KeyI.sag: `Í` → `Ī`
+  - KeyO.ag: `ó` → `ō`
+  - KeyO.sag: `Ó` → `Ō`
+  - KeyA.ag: `á` → `ā`
+  - KeyA.sag: `Á` → `Ā`
+  - Semicolon.ag: `¶` → `ʻ`
+  - Semicolon.sag: `°` → `ʻ`
+
+## mi-easy
+
+- **Output:** `languages/maori/easy.json`
+- **Source:** `vendor/cldr/en-t-k0-windows-extended.xml`. Windows "United States-International", from Unicode CLDR 43 keyboard data (Unicode License v3) (en-t-k0-windows-extended.xml). Long-press alternates put the language's own letters first. Added: AltGr+A ā, AltGr+E ē, AltGr+I ī, AltGr+O ō, AltGr+U ū.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 37, sag 23), 51 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyE.ag: `é` → `ē`
+  - KeyE.sag: `É` → `Ē`
+  - KeyU.ag: `ú` → `ū`
+  - KeyU.sag: `Ú` → `Ū`
+  - KeyI.ag: `í` → `ī`
+  - KeyI.sag: `Í` → `Ī`
+  - KeyO.ag: `ó` → `ō`
+  - KeyO.sag: `Ó` → `Ō`
+  - KeyA.ag: `á` → `ā`
+  - KeyA.sag: `Á` → `Ā`
+
 ## sk-qwertz
 
 - **Output:** `languages/slovak/qwertz.json`
@@ -1052,6 +1226,89 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
 - **Source:** `vendor/cldr/es-t-k0-windows.xml`. Windows "Spanish", the keyboard Galician is typed on in Spain,, from Unicode CLDR 43 keyboard data (Unicode License v3) (es-t-k0-windows.xml). Long-press alternates put the language's own letters first.
 - **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
 - **Coverage:** 48 keys (n 48, s 48, ag 12), 49 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## az-standard
+
+- **Output:** `languages/azerbaijani/standard.json`
+- **Source:** `vendor/cldr/az-t-k0-windows.xml`. Windows "Azerbaijani Latin", from Unicode CLDR 43 keyboard data (Unicode License v3) (az-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 2)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## tk-standard
+
+- **Output:** `languages/turkmen/standard.json`
+- **Source:** `vendor/cldr/tk-t-k0-windows.xml`. Windows "Turkmen", from Unicode CLDR 43 keyboard data (Unicode License v3) (tk-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 2)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## kmr-turkish-q
+
+- **Output:** `languages/kurmanji/turkish-q.json`
+- **Source:** `vendor/cldr/tr-t-k0-windows.xml`. Windows "Turkish Q", the keyboard Kurmanji is usually typed on in Turkey,, from Unicode CLDR 43 keyboard data (Unicode License v3) (tr-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 23, sag 2), 54 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## yo-standard
+
+- **Output:** `languages/yoruba/standard.json`
+- **Source:** `vendor/cldr/yo-t-k0-windows.xml`. Windows "Yoruba", from Unicode CLDR 43 keyboard data (Unicode License v3) (yo-t-k0-windows.xml). Long-press alternates put the language's own letters first. Added: AltGr+] adds a high tone and AltGr+[ a low tone to the letter before.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 10, sag 6), 30 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - BracketLeft.ag: none → `U+0300`
+  - BracketRight.ag: none → `U+0301`
+
+## ig-standard
+
+- **Output:** `languages/igbo/standard.json`
+- **Source:** `vendor/cldr/ig-t-k0-windows.xml`. Windows "Igbo", from Unicode CLDR 43 keyboard data (Unicode License v3) (ig-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 21, sag 17), 36 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## ha-standard
+
+- **Output:** `languages/hausa/standard.json`
+- **Source:** `vendor/cldr/ha-t-k0-windows.xml`. Windows "Hausa", from Unicode CLDR 43 keyboard data (Unicode License v3) (ha-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 9, sag 5)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## wo-standard
+
+- **Output:** `languages/wolof/standard.json`
+- **Source:** `vendor/cldr/wo-t-k0-windows.xml`. Windows "Wolof", from Unicode CLDR 43 keyboard data (Unicode License v3) (wo-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 13), 37 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## haw-standard
+
+- **Output:** `languages/hawaiian/standard.json`
+- **Source:** `vendor/cldr/haw-t-k0-windows.xml`. Windows "Hawaiian", from Unicode CLDR 43 keyboard data (Unicode License v3) (haw-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 6, sag 6)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## mi-standard
+
+- **Output:** `languages/maori/standard.json`
+- **Source:** `vendor/cldr/mi-t-k0-windows.xml`. Windows "Maori", from Unicode CLDR 43 keyboard data (Unicode License v3) (mi-t-k0-windows.xml). Long-press alternates put the language's own letters first.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48), 11 dead-key compositions
 - **Skipped:** nothing
 - **Our changes:** none
 

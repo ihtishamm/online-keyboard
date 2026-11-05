@@ -1,0 +1,26 @@
+{
+  "slug": "uzbek",
+  "code": "uz",
+  "order": 840,
+  "lang": "uz",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Uzbek",
+    "native": "Oʻzbekcha"
+  },
+  "aliases": [],
+  "region": "central-asia",
+  "fonts": ["latin"],
+  "layouts": ["uz-easy"],
+  "accents": "ʻʼ",
+  "sample": "Bugun havo juda yaxshi, biz oʻzbek tilida gaplashamiz.",
+  "voice": ["uz-UZ"],
+  "wordList": true,
+  "translate": {
+    "google": "uz",
+    "bing": "uz"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locale; speech services return Latin text, so the script probe is moot."
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "azerbaijani",
+  "code": "az",
+  "order": 820,
+  "lang": "az",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Azerbaijani",
+    "native": "Azərbaycanca"
+  },
+  "aliases": ["Azeri"],
+  "region": "central-asia",
+  "fonts": ["latin"],
+  "layouts": ["az-easy", "az-standard"],
+  "accents": "çəğıöşüÇƏĞÖŞÜİ",
+  "sample": "Bu gün hava çox gözəldir və biz dənizə gedirik.",
+  "voice": ["az-AZ"],
+  "wordList": true,
+  "translate": {
+    "google": "az",
+    "bing": "az"
+  },
+  "tier": null,
+  "notes": "Voice: Latin-script locale; speech services return Latin text, so the script probe is moot."
+}

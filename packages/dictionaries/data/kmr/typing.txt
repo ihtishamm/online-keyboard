@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+1558708	Bi kîjan dojehê ve tu dichî?
+1561303	Ew meraqî ewlehî ya te dike.
+4146821	Ew nan bi roni xwar.
+8353986	Diya te li vir e.
+8636417	Gava nexweş bikevî li malê bimîne!
+8666026	Mamoste nû ji zanîngehê derçûye.
+8679398	Çima ti kes alî tom nake?
+8733068	Agirê şevê nêzîk xuya dike.
+8752507	Di salekê de çar demsal hene.
+9006666	Îro ji bo şevînê dora birayê min e.
+9006679	Kesên baş bin timî baş in.
+9158461	Me odeke hotelê girt bi ser deryayê ve meyze dike.
+9158756	Ji her kesê wir, ez herî kêm axivîm.
+9158904	Ez li şona wê bama, ez bawer dikim ezê biçûma nexweşxanakê din.
+9162252	Ezî têm te ji wir derxim.
+9164209	Tu ne neçarî wisa bikî.
+9171755	Samî ji Xwedê re îbadet kir.
+9210123	Hûn herî zêde ji kîjan demsalê hez dikin?
+9229434	Di oda min da têlêfonek heye.
+9615670	Waneya me ya îro hevnaskirin e.
+9616677	Êdî kincên xwe, ez bi xwe li xwe dikim.
+9616828	Li cîhanê, mirov bi temamî ne wekhev in.
+9639633	Xwînhênerên we av lixwe digirin.
+9658267	Vîrus ji bakteriyan gellek hûriktir in.
+9677884	Di van rojan da hemû kes bergirîne li dij xurîkê.
+9696789	Seriyek sîr biavêje nava tirşikê.
+9696799	Şeva çûyî hewa germ bû.
+9697174	Ji hiriya wan kincan çêdikin.
+9697377	Di cejinan de çi amadekarî tên kirin?
+9697614	Hewil bide ku tu bi rêbazê rast rengîn bikî.
+9697617	Kîso, lawirekî ciyawaz e, dikare xwe di qalikê xwe de veşêre.
+9697658	Em çoka xwe bi jor de bilind bikin.
+9697678	Di hundirê lîstikgehê de amûrên bi rengên cuda tên belavkirin.
+9697860	Nivîsa ku li ser kevala dibistanê hatibû nivîsîn.
+9698034	Dapîr çi ji zarokan re dibêje?
+9698151	Navên her du çemê ku di welatê me re derbas dibin çi ne?
+9698165	Bi taybetî hatina her çar demsalan di pey hev re.
+9698257	Kevokê jê xwest ku destpêkê hevalên wê rizgar bike.
+9698308	Avê ji cihên destnîşankirî vexwin.
+9698352	Zarok hêviya civaka xwe ne.
+9727493	Xwezî bavê min ev zarok dîtibûna.
+9728133	Ya min dixwest ez bibêjim.
+9728172	Bes e êdî, divê em rêya xwe vekin.
+9728220	Ez bi te serbilind im!
+9728298	Me ti carî pişta xwe nedaye erdê.
+9728385	Ez dikarim pereyê pêşin bidim?
+9728386	Em dikarin bi karta krediyê bikirin?
+9728400	Ez dikarim vê lîstikê peyda bikim?
+9729713	Qewet be ji we re.
+9729727	Rewşa tenduristiya wî pir baş e.
+9729939	Ji xwe re dewekî bixwaze.
+9802146	Divê tu dev jê berdî, ev hînbûna te ne baş e.
+9802159	Ez ji gotina xwe nayêm xwar.
+9802215	Aş berdaye li pê çeqçeqê ketiye.
+9802303	Kumê min ji rastiyê qetiyaye.
+9802356	Tu bibî gerdî tu nebînî vî erdî.
+9802455	Min marekî reş di bin vî zinarî de dît.
+9820448	Dibe ku ez hinekî çavnebar bûm.
+9820522	Ew lîstikvanekî tenîsê yê baş e.
+9820530	Her tişt xerab xuya dike.
+9822488	Divê her meh bi kêmanî tu pirtûkekê bixwînî.
+9823076	Ez ji ser navê te fedî dikim.
+9823168	Kesê ku bêdengiya mere fêm nake, peyvên mere jî fêm nake.
+9952344	Tu bi xêr hatî meha Remezanê.
+9969199	Xaneyên xwînê di moxê hestî de tên berhemanîn.
+9986019	Hêstirên te dilê min perçe dike.
+10126798	Tu ji ya min hez dikî?
+10474337	Te çawa ev fikir pêk anî?
+10480013	Spas ji bo ku hûn ewqas hevkar in.
+10484847	Ger hûn ji min bipirsin ka ev rast e an na, ez bi rastî nizanim.
+10535676	Tu ji kîjan herêma Kurdistanê yî?
+10550009	Em dixwazin bajarê xwe paxiş bikin.
+10552943	Ji heywanan re rêz bigirin.
+10564469	Kristofer Kolumbus Amerîka keşf kir.
+10762550	Di vê malê de çend pisîk hene?
+10780736	Tu ji kîjan bajarî yî?
+11011945	Wî, reqîbê xwe têk bir.
+11013405	Divê ez reva xwe bidomînim.
+11037447	Bala xwe bide min, ji kerema xwe.
+13531581	Ji kerema xwe re hevokên sade çêbike.

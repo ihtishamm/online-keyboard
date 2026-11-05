@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+10807371	An bada rahoto cewa yanzu Europe ba ta da wani sabon labarin wannan cutan.
+10809178	Mummunan harbi ya barke daren da ya gabata.
+10811630	Makaɗin na buga gangarsa da ƙarfi.
+10813400	Wannan akwatin na da banbancin kala da waccan.
+10813681	Duk waɗannan abubuwan suna ƙara mana farin ciki.
+10813730	Beth ba za ta yarda Chris ya sumbace ta ba saboda yana da datti sosai.
+10813930	Idan har zakayi wani abu, to dole ne ka yishi da kyau sosai.
+10815918	Zan kasance sau biyu zuwa New York wannan lokacin.
+10816136	Ki sanar da mahaifinki isowata.
+10816522	Na yi bacci jiya baki ɗaya.
+10818236	Karkanda ya yi bacci kan ganyaye.
+10818763	Na je siyayya ranar Asabar da ta wuce.
+10820539	An kori abokan gaba daga filin.
+10820915	Murmurewarsa ba wani abu bane mu'ujiza.
+10820974	Ayyukansa masu daraja sun cancanci yabo sosai.
+10821118	Ya musanta cewar yana daga cikin masu laifin.
+10821334	Ya ja kunnen yaran game da wasa akan titi.
+10821387	Yayi kokarin kashe kansa amma abin ya faskara.
+10824835	Lallai ta burge da tga sa kayanta na sawar yammaci.
+10825136	Ina kallon talabijin lokacin da na sami hutun karatu.
+10826743	Tare da takun sawun ta gudu zuwa bakin kofar.
+10831527	Idan kun koyi yadda ake yin dabarun katin koyaushe zaku zama rayuwar jam'iyyar.
+10834011	Janar Jackson ya gaza kama duk wani Ba'indiye.
+10834021	Daga karshe dai, an tilastawa Jamusawa janyewa.
+10835412	Abubuwa kamar irin su talabijin da kwamfuta ba bu maganarsu shekaru hamsin da suka wuce.
+10835542	Sai dai idan kuna da ƙananan jijiyoyi, bai kamata ku sami matsala ba.
+10837843	Ƴan leƙen asirin sun lalata lissafin.
+10838158	Zan je Hawaii ta jirgin ruwa.
+10840378	Ka kalli wannan magen. Shine Mr. Brown.
+10842745	Ka samo amsar wannan tambayar?
+10844911	Ina aka haifi Woody Allen?
+10845365	Ba za su iya ganina ba.
+10848702	Mai girma shugaban ƙasa, sunana Khan kuma ni ba ɗan ta'adda bane.
+10850911	Ɓarawo ne kaɗai ya san hanyar yn sata.
+10853058	Kada ka bari wani ya gaya maka in ba haka ba.
+10853474	Mutumin nan yana hawa kan yarinyar kuma sai ya ji ya kasa komai.
+10853617	Ban gane me ya sa DNA ke da ban sha'awa ba.
+10855575	Ba ki yarda damu baki ɗaya ba, ko kuwa?
+10855679	An haɗa sassan ta hanyar ƙarfe.
+10858360	Ku gaya min kawai lokacin da kuke son tafiya.
+10859071	Ban gani ɗaya daga cikin waɗancen ba acikin shekaru uku da suka wuce.
+10863557	Yanzu dai, me ya sa ban yi mamaki ba?
+10864206	Gaskiya kai mai abin mamaki ne.
+10868708	Motar na dauke da kayayyaki zuwa Mexico.
+10868854	Na karɓi bal ɗin sabida ƴar tsanar.
+10869301	Mutum nawa kuke da su cikin iyalanku?
+10869625	Tarbiyya yana da muhimmanci cikin al'umma.
+10872325	Hassada itace ainihin gaskiyar rayuwar Amurkawa.
+10872369	Shin har yanzu kuna tuna wuraren wannan yaƙin?
+10872708	Ina fatan zamu isa ga asalin wannan sirrin tare.
+10875422	Shi mutum ne mai nutsuwa.
+10877365	Wani lokaci, yakan ji kamar tituna koyaushe ana kan gini.
+10877414	Na yi imani da mala'iku masu tsaro.
+10880579	Ni mutum ne mai son motoci.
+10880863	Har yanzu ban da isassun kuɗaɗen da zan saya.
+10881046	Ni masanin kimiyyar siyasa ne.
+10881053	Ya ci kek ya sha shayi.
+10881165	Abin farin ciki, ba mu taɓa samun malalar mai ba.
+10884500	Na tuna lokacin da kai karamin jariri ne.
+10884655	Jiya ne ranan haifuwar kaka na mace.
+10884792	Mota ta na wajen adana motoci.
+10886415	Ina tsammanin zan iya kula da kaina.
+10886709	Dole ne mu kwashe asibitin.
+10888829	Waɗannan ɗakunan suna da alaƙa da zamani fiye da ɓangaren tsakiya na gidan.
+10888860	Haka kawai na yi tunani.
+10888940	An tura zakin ya kashe Hercules.
+10889036	Muna buƙatar duk taimakon da za mu samu.
+10889174	Dole ne mun rasa wani abu.
+10891945	Kada ka yi yunƙurin kama karen. Yana da haɗari.
+10893659	Bana tsammanin za ka iya yin haka.
+10894201	Har yanzu ba ta yin hakan, ko kuwa?
+10894224	Tana yin abun da take son yi kawai.
+10894294	Ta ce ba za ta yi haka ba.
+10895666	Za su yi idan sun shigo.
+10896122	Abokan shan shansa suna da wahalar fahimtar duk wannan.
+10896579	Kodayake waɗannan batura sababbi ne, amma ba sa aiki.
+10898091	Shi makaho ne tun daga haifuwa.
+10898113	Yana kanshi kamar mai zaitun.
+10898122	Dukkan tsuntsayen na son tashi.
+10898642	Ina son suturar launin ruwan-ƙasa mai haske.

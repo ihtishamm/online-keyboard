@@ -7,7 +7,8 @@ import { strokeName } from "../../components/typing/keys";
  * one tip on the letters that slow learners down. Original text. Outside Latin script the
  * tips name keys straight from the layout (`on`), so they cannot drift from it. The headings
  * outside Latin script use the English loanwords those languages' typing sites use; none has
- * been reviewed by a native speaker yet.
+ * been reviewed by a native speaker yet. Yoruba, Igbo, Wolof and Hawaiian stay in English
+ * until someone who writes them can give the phrases.
  */
 export interface TypingCopy {
   /** "Typing tutor" and "typing test" in the language. */
@@ -459,6 +460,56 @@ export const TYPING_COPY: Readonly<Record<string, TypingCopy>> = {
     tutor: "Tikkursus",
     test: "Tiktoets",
     tip: 'Marks come first, then the letter: ^ then e types ê, " then e types ë.',
+  },
+  az: {
+    tutor: "Yazı kursu",
+    test: "Yazı sürəti testi",
+    tip: "On the Azerbaijani layout ü is on W, ö and ğ right of P, ı and ə right of L, and ç and ş on the comma and period keys.",
+  },
+  tk: {
+    tutor: "Ýazuw kursy",
+    test: "Ýazuw tizligi synagy",
+    tip: "On the Turkmen layout ä is on Q, ü on X, ç on C and ý on V. ň and ö are right of P, and ş is by Enter.",
+  },
+  uz: {
+    tutor: "Yozish kursi",
+    test: "Yozish tezligi testi",
+    tip: "Hold AltGr for the two special letters: AltGr + O types oʻ and AltGr + G types gʻ.",
+  },
+  kmr: {
+    tutor: "Kursa nivîsandinê",
+    test: "Testa nivîsandinê",
+    tip: "Hold AltGr and press the plain letter: AltGr + E types ê, AltGr + I î, AltGr + U û and AltGr + S ş.",
+  },
+  yo: {
+    tutor: "Typing tutor",
+    test: "Typing test",
+    tip: "Practice words come as they are written. Hold AltGr for AltGr + E ẹ, AltGr + O ọ and AltGr + S ṣ, press ' or ` before a plain vowel to add a tone, and AltGr + ] or AltGr + [ after ẹ or ọ.",
+  },
+  ig: {
+    tutor: "Typing tutor",
+    test: "Typing test",
+    tip: "Hold AltGr and press the plain letter: AltGr + I types ị, AltGr + O ọ, AltGr + U ụ and AltGr + N ṅ.",
+  },
+  ha: {
+    tutor: "Koyon rubutu",
+    test: "Gwajin rubutu",
+    tip: "Hold AltGr and press the plain letter: AltGr + B types ɓ, AltGr + D ɗ, AltGr + K ƙ and AltGr + Y ƴ.",
+  },
+  wo: {
+    tutor: "Typing tutor",
+    test: "Typing test",
+    tip: 'On Easy accents AltGr + N types ñ and AltGr + G ŋ. For ë, press " then e.',
+  },
+  haw: {
+    tutor: "Typing tutor",
+    test: "Typing test",
+    tip: "Hold AltGr and press the vowel for its kahakō: AltGr + A types ā. AltGr + ; types the ʻokina.",
+  },
+  mi: {
+    tutor: "Akoranga patopato",
+    test: "Whakamātautau patopato",
+    tip: "Hold AltGr and press the vowel for its tohutō: AltGr + A types ā, AltGr + O ō.",
   },
   vi: {
     tutor: "Luyện gõ phím",

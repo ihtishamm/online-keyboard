@@ -61,6 +61,16 @@ const SOUND: Readonly<Record<string, readonly string[]>> = {
   eo: ["ĉc", "ĝg", "ŝs", "ŭu", "ĵj"],
   la: ["uv", "iy", "ae", "bp", "dt"],
   af: ["fv", "dt", "êe", "ëe", "ôo"],
+  az: ["əe", "ıi", "öo", "üu", "şs", "çc", "ğg"],
+  tk: ["äa", "öo", "üu", "ýy", "ňn", "şs", "çc"],
+  uz: ["xh", "qk", "ao", "ie"],
+  kmr: ["êe", "îi", "ûu", "şs", "çc"],
+  yo: ["ẹe", "ọo", "ṣs", "áa"],
+  ig: ["ịi", "ọo", "ụu", "ṅn", "áa"],
+  ha: ["ɓb", "ɗd", "ƙk", "ƴy"],
+  wo: ["ëe", "ñn", "ŋn", "àa", "óo"],
+  haw: ["āa", "ēe", "īi", "ōo", "ūu"],
+  mi: ["āa", "ēe", "īi", "ōo", "ūu"],
 };
 const WEAK: Readonly<Record<string, string>> = {
   ar: "اوي",
@@ -105,6 +115,16 @@ const WEAK: Readonly<Record<string, string>> = {
   eo: "aeiojnrs",
   la: "aeiounrst",
   af: "aeiounrt",
+  az: "aeəıiouürnl",
+  tk: "aäeiouürnl",
+  uz: "aeiourln",
+  kmr: "aeêiîouûrn",
+  yo: "aeẹioọun",
+  ig: "aeiịoọuụn",
+  ha: "aeiourn",
+  wo: "aeioun",
+  haw: "aeiou",
+  mi: "aeiou",
   vi: "aeiouynhg",
 };
 

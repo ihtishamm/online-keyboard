@@ -45314,6 +45314,7 @@ Dăx
 2leșcanuA
 3itaB
 4țaE
+3lieħaE
 2morandiștilorB
 2nchúE
 3donçaB
@@ -46434,7 +46435,9 @@ Dăx
 2ghiartăuE
 5soaraB
 5șteluluiE
-3urðardóttirC
+3urdssonB
+5ðardóttirC
+6ssonD
 2hăstriaA
 2lașiB
 3ivașC

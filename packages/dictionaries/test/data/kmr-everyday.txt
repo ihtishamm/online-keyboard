@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+1467758	Ew enteresant e
+1471202	Min dît kuchikek sipî jump dikir ji ser dîwar.
+1471204	Ma bexche de pirr chîchek hene?
+1475377	Ez pirr berchî me.
+1477145	Ez ê chêkim ji te re kostumek nû.
+1477157	Tu î wek kevin wek min.
+1477163	Ew in brader ên min.
+1498015	Asin metalek bi kar e.
+1498043	Wî pirsî ji min ku bidim wî xwê.
+1498050	Em dixwin da em karibin bijîn.
+1500317	Di yekemîn cî de em divê bibînin rêyek der ji vê.
+1502260	Tu xwendekarekî japonî î?
+1503327	Em ê geleki bixwin îshev, vêca hêvî dikim ku tu ne di rejîm de î.
+1509830	Ew wisa belengaz bu ku nikarî bu nan bikire.
+1510835	Wisa tarî bu.
+1511017	Bipeyve bi dengê bilind da ku herkes bikar be te bibihîze.
+1511024	Ser masê sêv heye.
+1511445	Wî got ku ê ji me re pashê bêje derbarê encamên testan.
+1524532	Min tutisht tune ku bidim.
+1524549	Chav hincaran dipeyvin bilindtir ji peyvan.
+1524554	Kî e jina bi vesta qehveyî?
+1526148	Ez bawer dikim ku dem hey e bo min de bigerim berbersivyarîtî a vê problemê.
+1531156	Ez hez dikim meyze odê bikim.
+1536919	Dixwazî tu ez te bibim stasiyonê?
+1539582	Em kêr nakin chi ew dike.
+1539584	Ew mir berî ku ez bigihim wir.
+1539617	Chawa dikare bibe, ew ku tu nizanî?
+1539694	Tom dibe bash kêr li chivîkan.
+1539732	Kar xuyanî dikir pirr hêsan, lê bir ji min hefteyek.
+1542718	Ev rojgul e.
+1546189	Wê nexwesh bu sê hefteyan.
+1552867	Dikarî tu mi bide zanîn bi rulan?
+1552870	Ew lawikek zîrek e.
+1556033	Ez lawikek zêde normal im, kî gelek hobby yên wî hene, heye pirr gelek.
+1558711	Ez dichim dur ana.
+1558712	Kecha te droga bikartîne.
+1558735	Ne hêle here.
+1561362	Bê goman, unîverso bêdawî ye.
+1596468	Ne gerek e tu alîkariya min bikî.
+1596480	Tom bashtirîn leystikvan e di tîm de.
+1596486	Hinek ji wan hevalên min in.
+1674521	Sibe tu cidke?
+1695918	Eu zu dirabe.
+2330619	Jin û zarok pêşîn!
+2899504	Îro în e.
+3045221	Problem hey e li vir.
+3050756	Wan temashe kir li filmê aksiyon.
+3050757	Ez ê bidim te bisikletek bo rojbûna te.
+3090353	Va ye sira min, ew bi xwe gelekî sade ye: Mirov tenê bi dilê xwe dikare baş bibîne. Tiştên bingehîn bi çavan nayên dîtin.
+3469767	Rast bike shashîtiyê u dosyayê bizîvirî ji birêz Luxemburg re.
+3472022	Ew problema min e bi Tom re.
+3485508	Ez te hez dikim gelekî.
+3491097	Ev ne perûke ye.
+5233177	Berx û gurên tirkan bi hev re diçêrin.
+5809934	Ez piştgiriyê nadim we.
+5810003	Tu alîkariyê dixwazî?
+5810013	Bavê te li kû ye?
+5810018	Bavê te kî ye?
+5810026	Ew birayên min in.
+5810036	Ew bavê te ye.
+5810040	Tu li wir î.
+5810045	Kurdî zimanê min e.
+5810052	Ez wê nas dikim.
+5989831	Ew heval in?
+5989832	Hevalê min ê hêja!
+5989855	Azad li vir e.
+5989873	Ez înternetê wek çavkaniya bo lêkolînên xwe bi kar tînim.
+6153854	Tom, evên te ne?
+6156927	Ez ji hal ket me.
+6156956	Nexşe ser hêt e.
+6156969	Ez nikarim wilo bijîm.
+6156995	Tom ber derî ye.
+6157000	Kitik dikarin bibînin di tariyê de.
+6158479	Ez dixwazim li te bigerim.
+8304959	Elfabeya kurdî ji sî û yek herfan hevedudanî ye: a, b, c, ç, d, e, ê, f, g, h, i, î, j, k, l, m, n, o, p, q, r, s, ş, t, u, û, v, w, x, y, z.
+8311270	Ev sêv e.
+8318030	Ez mamoste me.
+8323518	Bi xêr hatin bo malpera me!
+8323552	Bi xêr hatin bo Tatoeba!
+8325466	Eşq çi ye?
+8326998	Ez tî me.
+8329801	Navê min Rahul e.
+8331057	Silav, navê min Omîd e.
+8335560	Minghui kî ye?
+8335569	Laurie kî ye?
+8339767	Ev mêşhingiv e?
+8344558	Ez aşpêj im.
+8347963	Em razî ne.
+8348233	Em birçî ne.
+8349550	Saet yek e.
+8349573	Saet sisê ye.
+8349738	Tu ji kû yî?
+8349956	Ez 20 salî me.
+8350264	Ez bîst û çar salî me.
+8350364	Ez çil salî me.
+8350813	Bob hevalê min e.
+8350817	Ev hevalê min e.
+8352670	Ev kursî ye.
+8352892	Tom mijûl e.
+8356833	Hûn kî ne?
+8357514	Ew hemşîre ye.
+8358874	Kerê mirî, ji gur natirse.
+8362590	Ev kevçî ye.
+8375847	Zebeş e, dendik reş e, çiqas xweş e.
+8387920	Ez îtalî fêr dibim.
+8390840	Ez esperanto fêr dibim.
+8391603	Erê, ez zewicî me.
+8393827	Duşenbe paytexta Tacîkistanê ye.
+8393836	Berlîn paytexta Almanyayê ye.
+8393914	Bexda paytexta Iraqê ye.
+8405655	Sê kamerên min hene.
+8410979	Bişkek serbajarê Qirgizistanê ye.
+8410998	Dîmeşq serbajarê Sûriyê ye.
+8417844	Jiyan xweş e.
+8431958	Tom îro ne li vir e.
+8435286	Dinya germ e.
+8437161	Navê wê Meryem e.
+8437184	Navê te bi xêr?
+8468909	Kitêb li ser masê ye.
+8490080	Tu bavê wî nas dikî?
+8490130	Ma bexçe de pir çîçek hene?
+8490191	Tu kurmancî dibêjî?
+8507379	Saet neh û nîv e.
+8636410	Destê xwe nede çav, poz û devê xwe.
+8665262	Ez ê herim mala bavê xwe.
+8665289	Em mêr in.
+8665298	Kurd ji çaya qaçax hez dikin.
+8679394	Li vira pêwîstiya me bi tîmeke tendirustiyê heye.
+8705457	"Tu trimbileke bê ajoname dajoyê" min ji wî pirsî.
+8705460	lojban zimanekî dijwar e , rast e?
+8705535	Gelo bawerî ku ew min nas bikin ?
+8717043	Ez nanê rind çêdikim.
+8717047	Hun niha derin xewkin
+8717108	Kurd kî ne, û çima dewletê wan nîne?
+8717176	Zeyta zeytûna ê me heye?
+8718128	Min ev rûçik carna dîti.
+8723449	Ew derê dibistanê.
+8723590	Dayika Tom li ku derê ye?
+8724205	Ez dikarim alkol vexwim?
+8724206	Min gotinek negot.
+8727892	Pismame min e ezîz.
+8732920	Divê tu wextê xwe li gel Tom derbas bikî.
+8733100	Rastî zirav dibe nadire, derew stûr dibe dişkê.
+8733374	Bi gulekê bihar nayê.
+8733480	Ez nizanim, min çiqas xew kirî ye.
+8733524	Ez li Tokyo çêbûme û mezin bûme.
+8733679	Şîv ser sifrê ye.
+8733694	Ez wî bi xaşe dixwazim.
+8733732	Ev xeletiyek jidil bû.
+8733755	Xwarina kurdî pirr xweş û cûrbecûr e
+8733837	Xêra xwe, goşt.
+8733838	Goşt yan masî?
+8744160	Aqil taca zêrîn e, di serê her kesî de nîn e.
+8752377	Ji min re çente û cilên dibistanê kirîn.
+8752379	Roja dibistana me vebû, ez zû rabûm.
+8752394	Dibistan cihê perwerde û fêrbûnê ye.
+8752448	Yek ji riyên bêhnvedanê, baş razan e.
+8752469	Min cilên xwe yên neteweyî li xwe kir û çûm şahiyê.
+8752487	Azadiya jinê, azadiya civakê ye.
+8752494	Di rojekê de 24 demjimêr hene.
+8752502	Em danê nîvro firavînê dixwin.
+8752511	Di salekê de 12 meh hene.
+8786684	Ez ji vî cihî pir hez dikim.
+8874582	Kesek li malê bû?
+9006592	Hûr û rêvî xwarina resen a kurdan e.
+9006596	Deh kewên min hene.
+9006599	Ez ji durûyan hez nakim.
+9006609	Vîrusa koronayê malik le me xera kir.
+9006629	Windows 10 nermalavek e.
+9006634	Perwerde ji bo gelê me hewce ye.
+9006653	Pênc gavan şûnve were.
+9006657	Ez her sibe werzişê dikim.
+9006658	Pîştî şîvan ez ê biçim cem hevala xwe.
+9006742	Îro min malbata xwe bir seyrangehê.
+9006755	Lêvên sor şûna xwe li ser sêvê dihişt.
+9091848	Tom guhdarî kir.
+9092320	Baş bo te ye.
+9092388	Çiqas para mezin ji vê şaşiya Tom e?
+9100352	Ji bîr neke da bikarbînî tayê diranan.
+9100988	Rê giş diçin Roma.
+9138936	Mala me li Îlamê ye.
+9139522	Tom avrêş kir oda xwe.
+9139531	Caran dihejin destên min.
+9141420	Êdî kurdî(kurmancî) jî di tatoebayê de ye.
+9141568	Her kes mîmarê dîwarê xwe ye.
+9143253	Tom xwedîyê teorîyek nîne.
+9143258	Îro roj gelek nivîsên nûçeyan yên xapîner hene.
+9144040	Tu yê wî bibînî.
+9144042	Tom du caran ket girtîgehê.
+9144048	Tu ji bo Tom dîsa dixebitî?
+9144242	Ew dewlemend e û mîna parsekekî dijî.
+9144336	Min ji marketê xwarin stend.
+9144374	Hinek gotin hene ku tavilê merîyan dike nivîskar.
+9144424	Ne şerm e ku tu bikevê, şerm e ku tu řanebê.
+9144425	Ji tinebûna şêra, řovî xwe nîşan didin wekî mêra.
+9144608	Tom merivekî piř hêja ye.
+9144636	Ez dikarim bi Tom řa bajom.
+9144720	Bavê te ji te hez dike.
+9152338	Hûn çi biçînin, hûnê biçinin.
+9152772	Pirr piçûk e.
+9152819	Hemû digerin li zarokê wendayî.
+9155577	Xemgînî saatekî dike deh!
+9155689	Trên li ser rêyan dimeşin.
+9155842	Sê zarokên wan hene.
+9155882	Ez tu caran naçim malê.
+9155910	Ez bi serwîsê diçim dibistanê.
+9158273	Ez hêvî dikim ku ne rast be.
+9158524	Ez difikirim ku hûn rast bûn.
+9158856	Ez dixwazim zanibim tu kîçaq dixwazê wî tiştî bikê.
+9158861	Ew nikanî wî biparêzîya.
+9158863	Ew kîçaq fêrî vî tiştî bû.
+9159494	Ji kerema xwe ve.
+9162256	Tom Duşemê hat cem min.
+9162291	Min cîyekî boş dît.
+9162299	Sêvê ew çûyê ez gihîştim.
+9162344	Bi xwe bike.
+9162349	Tu çima vî kenzî zer li xwe nakî?
+9162364	Ka em heřin beravê.
+9162368	Ez dixwazim bi te řa bimînim.
+9163139	London, cîyê ez dijîm, navdar e bi mijdûmanê xwe.
+9163174	Xewna wê ku bi perestar be.
+9163181	Ew sê masîya nêçîrkir.
+9163217	Ew pir xweş distre.
+9163222	Em ji temaşekirina fîlman hez dikin.
+9164100	Tu xwendekara herî jîr î.
+9164103	Ez dizanim tu jî bêriya min dikî.
+9164165	wana piřsgirêkê berda bê çareserî.
+9164226	Biryar bi dest te ye.
+9167196	Min ji bîr kir.
+9170495	Ew rabû û çû.
+9170562	Tom hîn jî westiyayî xuya dike.
+9170596	Ma difiroşin ew bîra Guiness li vir?
+9170931	Tu divê bihêlî kurê te serbixwe bibe.
+9174729	Tom baz dide bilez.
+9174904	Min dirêj kir destên xwe.
+9206499	Ez ji rengê kesk hez dikim.
+9206507	Ez ji rengê şîn hez dikim.
+9206523	Ez çar salî me.
+9206569	Şagirtên min pir delal in.
+9206576	Ez ji wanê me.
+9209748	Pisîk li bin darê ye.
+9209796	Valahiyên li jêr dagirin.
+9209805	Pênc zarokan dilîst.
+9209826	Zarokan milkêşek çêkirine.
+9209840	Lawirên di wêneyên li jêr de binasin.
+9209846	Ala rengîn bilind bû.
+9209850	Diranê xwe fîq dike.
+9209856	Pênûsa xwe di ser van xalan re bibe.
+9209860	Vegere hêlîna xwe.
+9209863	Tim li dor wê seyran e.
+9209874	Wênesazê zîrek, li wêneyên jêrê temaşe bike.
+9209937	Em lîstika lasekirinê bilîzin.
+9209956	Em guhdar bikin, paşê bersivê bidin.
+9209963	Ger em mala xwe paqij nekin, em dê di nav qirêjiyê de bimînin.
+9209964	Em dikarin bi paqijiyê, xwe ji nexweşiyan biparêzin.
+9209983	Navê min Dilxwaz e.
+9210015	Dibistan cihê perwede û ferkirinê ye.
+9210032	Herî zêde pirtûk li ku derê hene?
+9210039	Roj bi roj war xweş dibe.
+9210042	Goga min pir rengîn e.
+9210113	Hûn dizanin xalxalok li ku dijî?
+9210115	Ez xalxalok im, di werza buharê û meha gulanê de derdikevim.
+9210130	Demsala havînî pir germ e.
+9210133	Di demsala payîzê de jî, pelên daran zer dibin û dibistan vedibin.
+9210135	Hûn dizanin zozan çi ne?
+9210151	Dema ku em mêweyan bixwin, em dê zû mezin bibin û di jiyan û dibistana xwe de serkeftî bin.
+9210205	Pêşeng cotkarekî pir zîrek e.
+9229064	Tu çi dermanî me pêşnîyar dikê?
+9229296	Ez carna piř ditengijim.
+9612028	Tevahîya cureyêd xelkê li Tokyoyê dijîn.
+9614134	Ezê se kim ger Tom kane destekê xwe bide me.
+9615603	Wan çenteyê xwe amade kirin.
+9615606	Em ji malê derketin.
+9615611	Cîrana me Zîlan jî xwe amade kiribû.
+9615612	Derketibû ser rê.
+9615636	Her wiha qadeke lîstokê jî tê de heye.
+9615674	Navê min Rodî ye.
+9615675	Di bêhinvedanê de, min bi hevalên xwe re lîstokên cur bi cur lîstine.
+9615677	Xwendekarê xweşik, xwe bide nasîn.
+9615700	Dibistana me paqij e.
+9615703	Sola min paqij e.
+9615706	Maseya min paqij e.
+9616026	Em jê bipirsin.
+9616070	Ji axaftina xwe şerm nakim.
+9616078	Ji mijara xwe dernakevim û mijarê belawela nakim.
+9616139	Ez û hevalên xwe bi hev re dilîzin.
+9616403	Heger pîvan tune bin, tevlihevî dê çêbibe.
+9616595	Her zarok xwedî maf e ku mafên xwe nas bike.
+9616665	Ti carî ji gotin û şîretên wê tengezar nabim.
+9616714	Min ji xwe re bernameyeke heftane amade kiriye.
+9616741	Rengê çavên mirov nayê guherîn.
+9616747	Em di nava rojekê de gelek karan dikin.
+9616757	Heger em bi şev zû ranezin, sibehê em ê nikaribin zû şiyar bibin.
+9616994	Eger daxwaza ji bo dersa Kurdî çiqas zêde be dê bandorê li ser tayînkirina hejmara mamosteyên Kurdî jî bike.
+9617018	Pêşeroja zimanê me girêdayî zarokên me ne
+9619268	Marî xemgîn bû piştî nameya Tomî xwendîyê.
+9619443	Yonanîyêd berê, nedihîştin 'evda deng bidin, çimkî 'evd wê her tim dengê xwe bide seydayê xwe.
+9619478	Rev jî nîvê mêranîyê ye.
+9619536	Ez nîşanî heyvê dikim, û ew gêja li bêçîyê min se dike.
+9623320	Ez nabînim ku em naka kanin tiştek bikin.
+9632686	Wana hewl da ku tiştê dibe veşêrin.
+9638105	Ew di tariyê de dijiya.
+9638109	Tom matmayî mabû.
+9638114	Rewşa min a acîl heye.
+9638637	Carekê ez ji Bejaia çûm Cezayîrê bi yek çûnê.
+9638680	Ez evîndarê te me.
+9639504	Laşê mirov tenê ji xaneyên hûrik pêk tê.
+9639549	Xaneyên xwînê di moxê hestî de tên çêkirin.
+9639613	Gedeya min tijî ye.
+9639632	Xwînhênerok û xwînberok lûleyên xwînê yên bi tîreya piçûk in ko mûlûleyan bi xwînber û xwînhêneran ve girê dide.
+9656701	Min porê wê firçe kir.
+9656752	Porê xwe bide jêkirinê.
+9656818	Wê porê xwe şe kir.
+9657011	Tom porê min kur kir.
+9657596	Ez hinek av dixazim.
+9658433	Her dijatenek bakterî an jî vîrusek taybet armanc dike
+9658456	Divê tu bakteriyên hundirê xwe kefxweş bikî.
+9658511	Dijaten bakteriyan dikujin, lê li dij vîrusan wê tiştek nekin.
+9663198	Çavên min fireh bûn.
+9663208	Çavên te baş nin in?
+9663213	Çavên xwe vekirî bihêle.
+9663228	Çavên wê şîn e.
+9665717	Cab dayîna vê pirsê hesan e.
+9696650	Bedirxan kar û barê xwe yên malê dikir.
+9696658	Li ber dîwarê malê, li ber germahiya beroşkê rawestiya.
+9696669	Ew zarokê wan ê pêşî bû.
+9696680	Hemed Beg piştî xwarina xwe xwar hate ber tîna rojê.
+9696682	Li ser mirov tesîreke pir xweş çê dike.
+9696684	Karê ku kariba dikir ê ku nekariba jî dihişt.
+9696685	Lê piranî karê mala xwe wê dixwast bi xwe bike û dikir.
+9696736	Çivîk û balinde bi baskan difirin.
+9696753	Hespê boz dibeze.
+9696759	Îşev hewa germ e.
+9696760	Îşev hewa sar e.
+9696788	Rovî birçî dimîne, diçe nêçîrê.
+9696800	Werîsê riziyayî zû diqete.
+9696802	Ew xort diçe dibistanê.
+9696854	Malbata herî biçûk e, û jê re malbata tovik tê gotin.
+9696855	Dema xizmên me jî tevlî malbatê dibin, dibe malbata mezin.
+9696895	Her xwarinek sûdeke wê ji laşê me re heye.
+9696898	Tiştên ku vekirî tên firotin divê em nekirin û nexwin.
+9696899	Ava ku em vedixwin jî pêwîst e paqij be.
+9696908	Tiliyên xwe nexin devê xwe û neynûkên xwe nexwin.
+9696935	Kesê ku di dermanxaneyê de kar dike bi me re dibe alîkar.
+9696975	Li her du rexên gewdeyê me dest, li jêr jî ling hene.
+9696984	Ev lebatên me, karê wan cuda ye.
+9697001	Dema ku em cihê mala xwe şîrove dikin, em dikarin bibêjin.
+9697015	Ew ê serê tîra rengtarî bakur û ya rengvekirî jî başûr nîşan bide.
+9697018	Bi rêya kuna gêrîkan jî em dikarin aliyên xwe nas bikin.
+9697039	Em li gorî van em bernameya xwe ya jiyanê amade dikin.
+9697054	Dinya li derdora royê digere.
+9697058	Ji gera Erdê ya derdora royê re, sal tê gotin.
+9697060	Erd gera xwe li derdora rokê di salekê de temam dike.
+9697065	Her der bi şînatiyan pir xweşik dibe.
+9697071	Buhar dema cotkirin û çandiniya baxçeyan e.
+9697073	Di demsala buharê de, lawir ji xewa zivistanê şiyar dibin.
+9697079	Dema em derkevin derve, pêwîst e sîwan bi me re hebe.
+9697087	Ev demsal, dema çinîna genim, ceh û nîskan e.
+9697092	Demsala havînê piranî bi bêhinvedanê derbas dibe.
+9697097	Tirî, hirmî, hinar û mêweyên din digihêjin.
+9697125	Bûka berfê tê çêkirin.
+9697129	Mehên demsala payîzê kîjan in?
+9697132	Dinya me girover e, li dora xwe digere.
+9697134	Dinya me girover e dora rojê digere.
+9697147	Di xwezayê de her heyînek xwedî girîngî û wateyekê ye.
+9697152	Dema em li hawîrdora xwe dinêrin şînatiyê dibînin.
+9697167	Lawir ji zindiyên derdora me ne.
+9697171	Em pir sûdê ji wan digirin.
+9697176	Zeviyên xwe bi wan lawiran cot dikin û barên xwe dikişînin.
+9697183	Wan birçî û bêav nehêlin.
+9697290	Hinek lawir li kolanan dijîn.
+9697291	Pêwîst e em li wan nedin û wan nekujin.
+9697317	Piranî jin û karker çalakî û şahiyan li dar dixin.
+9697318	Berxwedan, hevgirtin û kêfxweşî bingehê van cejinan in.
+9697340	Ev cejn rojên berxwedan, serkeftin an jî rojên kêfxweşiyê ne.
+9697346	Ji bo pîrozkirina cejinan, amadekariyên cur bi cur tên kirin.
+9697350	Lê belê, amadekariyên giştî jî hene.
+9697357	Dayîka min xwarin û vexwarinê ji wan re amade dike.
+9697365	Pêşî em ji bo rêzgirtina ji şehîdan re rawestiyan.
+9697375	Di rojnameyan de nivîsên der barê rojê de hatin weşandin.
+9697380	Ji nifşekî derbasî nifşekî din dibe û xwe berdewam dike.
+9697388	Kinc, xwarin, lîstok, stran û awazên me çanda me ne.
+9697416	Demeke dirêj lê temaşe nekin.
+9697588	Nêzîkî televizyonê rûnenin.
+9697589	Li radyoyê jî bi dengekî bilind guhdar nekin.
+9697590	Em li bernameyên ku em sûdê jê bigrin, temaşe bikin.
+9697593	Bi rêya internêtê em dikarin xwe bigihînin her deverê.
+9697597	Dema telefon di şarjê de be, axaftin metirsîdar e.
+9697615	Werdek, firindeyeke bejavî ye, gelek rengên wê hene.
+9697620	Welatê me bi simbilên zêrîn, zengîn e.
+9697626	Ji bo ku em dema xwe bi rêkûpêk bikin, demjimêr pêwîst e.
+9697646	Laşê xwendekar ên jiyangîr û lebatî, divê baş werin amadekirin.
+9697652	Ev beş, tevger û berjengên guncaw digire nava xwe.
+9697696	Her tîmek golekî wan heye.
+9697700	Em bi hev re goga pêyan bilîzin.
+9697706	Pêwîst e em şîr û hêkan bixwin.
+9697720	Em li wêneyên li jêr binêrin û mîna wan, tev bigerin.
+9697732	Em li ser lingekî rawestin.
+9697743	Lîstik di hundirê lîstikgeheke nîşankirî de, tê lîstin.
+9697744	Xwendekar di hundirê lîstikgehê de bi serbestî belav dibin.
+9697779	Em li paqijiya dibistana xwe, miqate bin.
+9697788	Ka em di cihê xwe de li ser şehê pê, bimeşin.
+9697795	Li pêşiya xwendekar bend û astengên cuda hene.
+9697802	Xwendekar, di mêzeyên xwe de rûdinin.
+9697819	Em gotinên li jêr bigihînin wêneyên wan.
+9697822	Em valahiyên li jêr bi tîpên li rex wan dagirin.
+9697830	Lîstika me pir xweş e.
+9697835	Bi vebûna dibistanê, hestên xwe bînin ziman.
+9697858	Xwendekar çawa û bi kê re polê paqij dikin?
+9697868	Pol û dibistana xwe paqij kirin.
+9697874	Gelo, divê demên paqijiyê destnîşankirî bin, an na?
+9697949	Her sibeh di dema xwe de digihêje dibistanê.
+9697956	Dema xwendinê xwendin e; dema lîstinê lîstin e.
+9697994	Bû dema dibistanê.
+9698016	Malbat, dibistana me ya destpêkê ye.
+9698030	Dema Alan rastî astengiyan tê, kî alîkariya wî dike?
+9698031	Alan û Rojda çawa nêzî dayîk û bavê xwe dibin?
+9698033	Kî li derdora dapîrê kom bûne?
+9698038	Bi zanebûn û temenê xwe yê mezin, me li derdora xwe kom dike.
+9698044	Nêrînên dapîrê çawa ne?
+9698045	Çima em li derdora dapîra xwe kom dibin?
+9698047	Çima em jê hez dikin û rêzê jê re digirin?
+9698076	Hezkirina wê ji bo min nayê pîtav û pîvan.
+9698078	Yên li erd û li ezman.
+9698089	Tenê ew bû ya giran.
+9698143	Em mazot, gaz û gelek tiştên din jê bi dest dixin.
+9698148	Ev hemû xweşî û zengîniya welatê me ne.
+9698185	Berf û baran çi dikin?
+9698199	Sîwan ji nişkan ve got: Hevalino!
+9698229	Hevalê me tevlî lîstik û çalakiyên xwendekaran dibû.
+9698261	Kevokê lê vegerand.
+9698264	Divê tu destpêkê wan rizgar bikî.
+9698290	Kê alîkariya kevokan kir?
+9698311	Divê em cilên stûr di werzê zivistanê de li xwe bikin.
+9698312	Dema em bi bapêşê bikevin, divê em xwe biparêzin.
+9698334	Hin ji wan sûdmend in û hin ji wan jî biziyan in.
+9698351	Divê em şînatî û mêweyên neşuştî, nexwin.
+9698357	Refa sêyem dixwînim.
+9698360	Mamoste, heval û malbata min, ji dengê min hez dikin.
+9698362	Her dem ji min re dibêjin tu yê di hunerê de, bi pêş bikevî.
+9698367	Navê min jî Berçem e.
+9698370	Di wan de baş û serkeftî me.
+9698389	Ango hin milên me xurt in û hinek jî lawaz in.
+9698413	Hezkirina min ji dil e.
+9727157	Dema em tev bibin sûcdar, dê demokrasî çêbibe.
+9727165	Divê meriv xwe ji serbestiyê rizgar bike.
+9727263	Xulqê min teng e dîsa.
+9727272	Ez ê êgir dadim.
+9727286	Ez bîst û pênc salî me, tu?
+9727294	Ez pir ji xwendekarên xwe hez dikim.
+9727299	Pênûsekê bide min.
+9727305	Li bajarekî hat dîtin.
+9727306	Em çûn gundekî.
+9727309	Ez karim nanekî bixwim.
+9727373	Zarok avê tînin.
+9727376	Çekên kîmyewî û yên nukleerî qedexe ne.
+9727378	Plana duyemîn a ji nû ve avakirina vê kuçeyê pir baş e.
+9727385	Polîsan xwendekar gulebaran kirin.
+9727419	Hejmara kesên betal her diçe zêdetir dibe.
+9727427	An jî tu yê li benda wî bimînî?
+9727444	Dema firavînê ye.
+9727445	Em ê sibê biçin sînemayê.
+9727456	Xwendegeh kengî vebû?
+9727492	Li min porkurê!
+9727496	Erê, min dît.
+9727507	Şeva we xweş be.
+9727510	Gava ku baran bariya, ew reviyan malê.
+9727537	Rewş çawa ye?
+9727555	Ez ji birçîbûnê dimirim!
+9727941	Xem nexwe ez ê li te miqate bim.
+9727990	Jûra min pir tevlihev bûye.
+9728003	Em di têkiliyê de bimînin.
+9728017	Em hemfikir in.
+9728024	Stûyê xwe xwar neke.
+9728028	Wext temam e.
+9728079	Bila hayê me ji hev hebe.
+9728091	Pêşveçûnana xwe bidomîne.
+9728107	Ez nizanim li ser vê çi bibêjim.
+9728112	Ma tu werê dihizirî?
+9728127	Stûyê xwe xwar neke, berxwedêr be!
+9728132	Çi bû, pirsgirêka te çi ye?
+9728144	Min şaş fam neke.
+9728160	Divê em karê xwe baştir bikin.
+9728165	Tu her dem di bîra min de yî.
+9728179	Çima ev jiyan wiha dijwar bûye?
+9728189	Tu çi dixwazî bide pê wê.
+9728192	Dev ji gurmegurmê berde.
+9728195	Aniha her tişt li rê ye.
+9728198	Em biçin mizgeftê.
+9728210	Helwesta xwe di vê babetê de zelal bike.
+9728215	Tiştên xerab bi serê wî de hatine.
+9728261	Ez dizanim tu kî yî.
+9728266	Divê ez vê yekê biceribînim û pêk bînim.
+9728273	Porê wê reş û çavê wê şîn bû.
+9728289	Ez her tim ji wê re qala te dikim.
+9728290	Ez ê dev ji vî karê beradayî berdim.
+9728294	Tiştên ji dikanê hatine paqij bike.
+9728318	Kes xwedîtiyê li we dike?
+9728375	Ez dikarim qehweyekê bidim we?
+9728379	Ez dikarim biçim paşiya xênî?
+9728394	Divê em teknolojiyê baş baş bi kar bînin.
+9728405	Îsal havînî min ji xwe re xaniyekî du qat lê kir.
+9728415	Hatina min ne ji kêfê bû, karê min derket lewma ez hatim.
+9728442	Karê ku em dikin tenê ji bo parastinê ye.
+9728443	Tu ji kirina çi hez dikî?
+9728472	Îsal me genîm zû çand û baranê jî lê kir.
+9728494	Hûn bi ku ve diçin, ew ne rêya rast e.
+9728513	Em biçin fîlmtemaşekirinê?
+9729710	Va ye buhar hat û kulîlk vebûn.
+9729718	Mem û Zîn berhema nivîskarê Kurd Ehmedê Xanî ye.
+9729729	Tu wekî berazan î.
+9729736	Tu xwe baş hest dikî?
+9729737	Di ser wê bûyerê re kelogirî bû.
+9729738	Ev xiyar çilmisî ne û gelekî buha ne.
+9729743	Pozê min xetimiye.
+9729746	Çavên min nepixîne.
+9729770	Trextor li deriyê mala me qelibî.
+9729772	Pir xwe min tê lê karê min heye.
+9729808	Tekerê erebeya min teqiya.
+9729821	Wextê ku em gihîştin Silêmaniyê min agahdar bikin.
+9729824	Ji kerema xwe ber bi paşiyê ve bimeşe.
+9729848	Ekrana kombersa min hinekî biçûk e.
+9729889	Sobeya me ya ceyranê hundir dike tenûr.
+9729893	Spasdarê we û karên we me.
+9729923	Bila bîftek nîvpijiyayî be.
+9729935	Min ev nikarîbû bixwara, ji kerema xwe hûn dikarin bikin paket?
+9729946	Ev şêraniya min a ji bo kar e.
+9729973	Em li daristanê wenda bûn.
+9729974	Di taştêyê de penêr û mast nebe, nabe.
+9729978	Payitexta welêt Mêrdîn e.
+9729980	Ez dikarim li pasaporta we mêze bikim?
+9729981	Ji kerema xwe çenteyên xwe deynin ser maseyê.
+9729982	Divê em li ser cizdanê we hûr bibin.
+9729986	Ez ê sê mehan li vî bajarî bimînim.
+9730002	Jê re digotin fermandar, berxikê ber dilê dêya xwe.
+9730026	Porê Rozayê zer e.
+9730032	Ka taştê amade bike, cot li benda min e.
+9730034	Televizyonê veke û bibe ser Waarê.
+9730048	Mamoste îro nehatiye.
+9730128	Ev qayiş ji min re biçûk e.
+9730141	Ka fotografê xwe ji min re bişîne.
+9730146	Di hezîranê de rêya min diyar dibe.
+9730147	Ka em herin dikanê.
+9730154	Heyv ronî ye mîna lembeyê.
+9730155	Rûyê xwe veşêre bila kes te nebîne.
+9730181	Kursiyê rast bike.
+9730194	Here ji wî bipirse.
+9730197	Here ji wê bipirse.
+9730211	Ev sala ew ê bibe sala zimanê me.
+9730214	Ji kerema xwe.
+9730225	Cîranên me her roj xwarinê ji me re tînin.
+9730238	Bi bedeldayînê jî ev çareser nabe.
+9730239	Bila ciwanên me belawela nayên girtin.
+9730256	Te soz dabû min.
+9730257	Te çima peyva xwe xwar.
+9730286	Deh kes li vir in.
+9753422	Ew çi deng bû?
+9766300	Ew aciz dibe.
+9766339	Tu dê biajoyî.
+9766809	Tu dê neyînî.
+9766820	Serê te diêşe.
+9766839	Zikê we êşiya.
+9766850	Wê alî te kir.
+9771493	Çawa ku roj hilat em bi rê ketin.
+9772471	We alî min kiriye.
+9772480	Ez ê alî te bikim.
+9772490	Te alî min nekir.
+9772500	Wî alî min nekiriye.
+9772510	Em alî te nakin.
+9772518	Hûn ê alî min nekin.
+9772521	Ez araste bûm.
+9772532	Ew araste bûne.
+9772534	Tu araste dibî.
+9772538	Hûn araste dibin.
+9772543	Em ê araste bibin.
+9772546	Ew ê araste bibin.
+9772563	Ew araste nabin.
+9772682	Wî asê kir.
+9772720	Wê asê nekir.
+9772733	Ez asê nakim.
+9772752	Wan ava kir.
+9772755	Wî ava kiriye.
+9772767	Tu dê ava bikî.
+9772775	Wê ava nekir.
+9772777	Me ava nekir.
+9772784	Me ava nekiriye.
+9772791	Ew ava nakin.
+9772868	Min av da.
+9772927	Tu av nadî.
+9772928	Ew av nade.
+9772938	Hûn ê av nedin.
+9774067	Min avjenî kir.
+9774074	We avjenî kir.
+9774084	We avjenî kiriye.
+9774111	Te avjenî nekir.
+9774122	Wî avjenî nekiriye.
+9774124	Me avjenî nekiriye.
+9774213	Tu ba didî.
+9774215	Em ba didin.
+9774222	Hûn ê ba bidin.
+9774229	We ba neda.
+9774236	Ez ba nadim.
+9774246	Em ê ba nedin.
+9774248	Ew ê ba nedin.
+9774250	Te ba kir.
+9774260	Me ba kiriye.
+9774263	Ez ba dikim.
+9774269	Ew ba dikin.
+9774286	Wî ba nekiriye.
+9774289	We ba nekiriye.
+9774290	Wan ba nekiriye.
+9774384	Ew ê bar bike.
+9774391	Wê bar nekir.
+9774422	We bawer kir.
+9774444	Min bawer nekir.
+9774449	Me bawer nekir.
+9774451	Wan bawer nekir.
+9774453	Te bawer nekiriye.
+9774460	Ez bawer nakim.
+9774468	Ew ê bawer neke.
+9774470	Hûn ê bawer nekin.
+9774515	Wan baz neda.
+9797776	Min baz nedaye.
+9797780	We baz nedaye.
+9797782	Ez baz nadim.
+9797786	Hûn baz nadin.
+9797818	Tu yê bibehecî.
+9797843	Tu yê nebehecî.
+9797911	Te behs kir.
+9797932	Tu dê behs bikî.
+9797937	Min behs nekir.
+9797956	Ew behs nake.
+9798042	Min berhev kiriye.
+9798051	Ew berhev dike.
+9798094	Em bi ber ketin.
+9798101	Em bi ber ketine.
+9798104	Ez bi ber dikevim.
+9798105	Tu bi ber dikevî.
+9798106	Ew bi ber dikeve.
+9798164	Ew ê bi ber bikevin.
+9798201	Hûn ê bi ber nekevin.
+9798202	Ew ê bi ber nekevin.
+9798322	Tu yê bibexşînî.
+9798363	Tu yê bibezî.
+9798369	Tu yê nebezî.
+9798910	Wê bêriya malê nekiriye.
+9798921	Ez bêriya dibistanê nakim.
+9798923	Ew bêriya dibistanê nake.
+9798956	Ez bi ber xwe neketim.
+9798964	Hûn bi ber xwe neketim.
+9798979	Em bi ber xwe neketine.
+9799012	Ew ê bi ber xwe nekevin.
+9799014	Te bi dest xist.
+9799029	Wan bi dest nexist.
+9799061	Ew bi dest naxin.
+9799071	Ew ê bi dest nexe.
+9800070	Ew bilind nebûne.
+9800074	Em bilind dibin.
+9800076	Ew bilind dibin.
+9800087	Em ê bilind bibin.
+9800313	Tu yê nebirî.
+9801454	Tu yê nebizdî.
+9801517	Me li we borand.
+9801647	Hûn mamoste ne.
+9801648	Piştî peyvên dengdêr bi dawî dibin.
+9801659	Ji erebeyê peya bûn.
+9801663	Min tu ceribandî.
+9801709	Tu yê biceribînî.
+9802097	Xêra wî li kesî nabe.
+9802130	Pir xuya ye ku di vî karî de dek û dolap hene.
+9802136	Ew yekî derewker e.
+9802153	Tu timî dixwî qet jê têr nabî.
+9802172	Xwe pir mezin dibîne, qure ye.
+9802208	Sûcê xwe red dike, lê her kes wî nas dike.
+9802280	Diranên wî di bêrîka min de ne.
+9802289	Hefsarê xwe qetandiye.
+9802330	Mirîşka me ye diçe di pîna xelkê de hêkan dike.
+9802333	Nan da ber me, çû da ser me.
+9802343	Dilê min diçe goşt.
+9802351	Serî jê re hejand.
+9802380	Rojeva axaftinê wiha ye.
+9802420	Ji bo me herduyan.
+9802426	Niha em jî westiyayî û birçî ne.
+9802429	Her wiha ji ber ku maleke kevn e.
+9802434	Lê belkî li serşokê be.
+9802448	Dosyeyan tevlî bike.
+9802481	Em bi hev re radizên.
+9802486	Ez çûm acîlê, piyê min diêşe.
+9802492	Ez wan nas dikim.
+9802498	Dibe ku em li dijî hev rabin lê ew her tim li cem min e.
+9802514	Wê jî ferheng kirî.
+9802517	Ne pêkan bû ku te çalakiyên xwe yên demsazkirî kontrol bikira.
+9807023	Gelekî xewa min hat.
+9807043	Ez ê wî li derdorê bibînim.
+9808155	Ez dikarim xwe çeng bikim.
+9808203	Divê ez biçim.
+9808217	Xweh û birayên min!
+9808224	Em li hev bikin.
+9813131	Pêşî divê ez vî karî biqedînim.
+9813310	Tenê du qedehên min ên şerabê hebûn.
+9813368	Sibê bi min re şîvê bixwe.
+9813411	Ez wiha nafikirim.
+9813415	Ez wisa nafikirim.
+9813421	Ev der bi rastî sar e.
+9813424	Wan li dijî hikûmetê serî hildan.
+9813440	Ez jê piştrast im ku ev ne henek e.
+9815069	Sedema hatina min a bingehîn ev e.
+9815517	Havîna borî ew çû wir.
+9815521	Samî gelekî flortoz bû.
+9815522	Samî gelekî doxînsist bû.
+9815552	Tom ev yek bi Mary re nîqaş kir.
+9816343	Tom di xewê de ma û dawiya fîlm nedît.
+9816363	Di demeke nêz de tu yê xeberê ji me bistînî.
+9816371	Fikra te jî mîna ya min e.
+9816379	Leyla di jêrzemînê de ma.
+9816411	Min ji te re çendek gul berhev kirin.
+9816421	Min bi xwe re bibe malê.
+9816422	Bejna min û ya Tom yek e.
+9816423	Ez, wan nîşan nadim.
+9818278	Hîn jî pirsên min hene ku dixwazim ji te bipirsim.
+9818424	Ez heta saet dehan bênavber razam.
+9818453	Tom ji bîr kir ku otomobîla xwe kilît bike.
+9818554	Ev ne pereyê te ye, yê min e.
+9818556	Doh şevê me bi hev re li televizyonê temaşe kir.
+9818570	Tom havîna borî mala xwe boyax kir.
+9818574	Min dengekî lêdanê ji derî bihîst.
+9818576	Mala we hemûyan ava.
+9818580	Di çalakiyê de ji neh welatan sî tîm hatin cem hev.
+9818582	Tom pir nayê hezkirin.
+9818586	Sîstemên aborî yên ku pesnê pereyan nadin, hene.
+9818589	Tenê şensekê bide min, temam?
+9818593	Ev xwişka Tom e.
+9818596	Fîlmên ku tu pir ji wan hez dikî kîjan in?
+9818611	Ji ber şer ji dibistanê hatim avêtin.
+9819266	Tu bi xêr û silamet gihîştî malê?
+9819277	Tu nabêjî ti veqetîn tune bû. Wan biryar dan ku dîsa li cem hev bimînin.
+9819289	Heke tiştekî ku ez ê karibim ji bo te bikim hebe, ji kerema xwe ji min re bibêje.
+9819485	Ne cejn e, ne seyran e.
+9819486	"Apên wan ji ku ne?" "Norwêc."
+9819527	Ew pirî caran nayê dibistanê.
+9820138	Te ev sererast kirin?
+9820442	Tom, nîv tazî ji kolanê ber bi jêr ve reviya.
+9820451	Min hewl da ku li ser wî nefikirim.
+9820499	Zilam erebeyekê diajo.
+9822338	Ez bi wî re çûm beravê.
+9822421	Ez tenê di dawiya hefteyê de araqê vedixwim.
+9822468	Fadil çeka xwe danî.
+9822484	Sumatra giravek e.
+9822503	Hewce nake bê veşartin.
+9822847	Ez hêvî dikim ku me ya rast kiribe.
+9822858	Ez dizanim tu çima daketiyî vir.
+9823085	Tirsa Tom ji bilindahiyê heye, ne wisa?
+9823152	Ez li nêzî okyanûsê mezin bûm.
+9823185	Şêweya axaftina Tom min hêrs dike.
+9823246	Ev xwarin qet tameke xweş nade.
+9823300	Bi wan re pokerê nelîze.
+9823301	Ez bi wan re dimînim.
+9823440	Tu bawer î ku tu Tom nas nakî?
+9823449	Heke min navnîşana wî zanibûya, min ê jê re binivîsanda.
+9823453	Mala Tom mezin e.
+9825521	Tu bi kê re dijî?
+9825547	Ji bo seyehata min pere têra min nake.
+9825578	Heke ne pirsgirêk be, ez ê aniha veqetim.
+9825587	Ez bi qasî te kal im.
+9825589	Ez bi qasî te pîr im.
+9825602	Kar ne ev e.
+9825628	Ev ecêb e, ne wisa?
+9837172	Aboriya Spanyayê dihele.
+9837174	Ka ez te bibim firavînê.
+9968909	Tu hestiyek neşikestîbû.
+9968969	Te qet hestiyek şikesti yî?
+9969167	Wî masî gellek hestî li xwe digire.
+9969196	Me hestiyên mirov li vî şkeftê de dît.
+9969315	Hin hestiyên mil û destên xwe şikand.
+9969317	Xaneyên bineratî yên mezenşîmî di moxê hestî de cih digirin.
+9969328	Min kalê ko hestiyên mirîşkan dida kûçikê xwe dît.
+9985482	Heke tenê dijepeydekara B li te hebe, xwîna te cora B ye.
+9985675	Min dilê wê şikand
+9985701	Guh bide dilê xwe.
+9985709	Pirsgirêkên dil bi Tom heye.
+9985862	Dilê te pak e.
+9985898	Dilê Samî sekinî.
+9985921	Wê dilê min heland.
+9985928	Nexweşiya dil li min heye.
+9985935	wê dilê wî dizî.
+9985948	Nûçe dilê wê şikand.
+9986001	Ez ji dil ve peyivîm.
+9986013	Dilek wê yê pak heye.
+10019699	Min jibo Tomî sê-çerxekî kirî.
+10019877	Min guman kir Tom û Mary bi rastî jî di talûkeyê da bûn yan na.
+10019933	Wî xwest Quran bixwîne
+10019999	Divê tu hema biçî.
+10020000	Tom nexwest vê bike sibê.
+10020020	Ez bawer im Tom dizane wê çi bike.
+10020034	Ez bawer im Tom dizane em çima li vir in.
+10020036	Lazim bû min vêya qet çê nekira.
+10020040	Tom ji min ra got ew hêvî dike Mary bitedbîr be.
+10031802	Min çavên xwe vekir.
+10031806	Çavên min westiyayî bûn.
+10126262	Azad ji Hewlêrê ye.
+10126747	Em dê çi bikin?
+10126806	Dev ji min berde!
+10471131	Wî stran got.
+10474294	Meymûnê mûz xwar.
+10474315	Jina min sê sal berê mir.
+10474359	Ev xwendekar Amerîkî ye.
+10474364	Wî ji me xwest ku em bêdeng bin.
+10474373	Tevahiya şevê wê ji min re peyvek negot.
+10474383	Ji bo rojekê bes e.
+10474399	Divê tu wê baş nas bikî.
+10474582	Em ê nikaribin tiştekî biguherînin.
+10474620	Pirsek min ji wê re heye.
+10474626	Tenê kesek di bin lêpirsînê de ye.
+10474663	Tu mirovekî pir nexweş î.
+10474798	Tom Mary nekuşt.
+10476706	Ka em bibînin ka ew çiqas wext didin te.
+10476717	Ez nikarim bi te re bipejirînim.
+10476728	Ji min nepirsin çi bû.
+10479995	Divê ez vê ji Tom re rave bikim.
+10480116	Wî ji min alîkarî xwest.
+10480252	Ez ji wan fam nakim.
+10480273	Tom pisîkek reş hebû.
+10484863	Tu şekir nakî qehweya xwe.
+10484910	Ez nikarim wan çavan ji bîr bikim.
+10494999	Baş e, em herin.
+10495002	Ez ji xwendinê hez dikim.
+10495003	Tu qehremanê min î.
+10495008	Ma hewce ye ku ez roja Duşemê li civînê bim?
+10495131	Ger bixwaze dikare vê bike.
+10497040	Çavên wê kesk in.
+10497318	Guhên dîwar hene.
+10535594	Hûn dixwazin bixwînin?
+10535615	Ez dizanim Tom feqîr e.
+10535685	Ez ji vê hez nakim.
+10535694	Em pê bawer in ku em dikarin bikin.
+10535699	Ez dixwazim odeya xwe paqij bikim.
+10535715	Bêdeng be û li fîlm temaşe bike.
+10535747	Li gundê piçûk pênc çêlek hene.
+10535768	Biha piştî saet şeşan bilind dibin.
+10537582	Ez dikarim vê bikirim?
+10537590	Malbateke te ya mezin heye?
+10537606	Nehêle ew bixwe.
+10547616	Bi Erebî diaxive.
+10549266	Divê tu bi kesekî bawer bikî.
+10549297	Xem neke. Ew dizane ku ew çi dike.
+10549328	Bi rastî tu li vir çi dikî?
+10549341	Şîr cemidî bû.
+10549372	Ez tenê du gavan dûrî vir dijîm.
+10550013	Tom duhê moda raketinê de bû.
+10550031	Min sê pirtûkên nivîskar yên dirêjtirîn xwend.
+10550056	Li Kalîfornîya, zêdetirînên mal xwediyê çarçoveya ji darê ye.
+10550063	Tu hevek şekir dixwazî bo qehweya xwe?
+10551519	Te têra xwe got.
+10551522	Mezinên min her roj lêxistina pîyano da kirin.
+10552783	Samî dixwest bibe misilman.
+10552817	Pere ne her tişt e.
+10552824	Nasnameya te ya xwendekariyê heye?
+10552920	Te çima li ser wê nivîsî?
+10552950	Ez kêfxweş im ku hûn hemî li vir in.
+10559715	Ew deh sal in mirî ye.
+10559733	Em gelek nan dixwin.
+10561903	Divê ez bi Tom re bûma.
+10562046	Tom Duşemê çû malê.
+10564407	Tu min dîn dikî.
+10564427	Ji kesî re nebêje ku te ev ji min bihîstiye.
+10564428	Em naxwazin tu bimirî.
+10564440	Min ew hembêz kir.
+10564453	Ez naxwazim careke din li wir nan bixwim.
+10611384	Nexweşiya min wê min bikuje.
+10611392	Tom ne pirsgirêka min e.
+10611397	Wê ew ferheng jî kirî.
+10611399	Ez ji zebeş hez dikim.
+10624786	Tom li zanîngeha ku ez mamostetiyê dikim xwendekarek e.
+10672896	Li ser vê yekê min hestên tevlihev hene.
+10672909	Te bi qestî wisa kir?
+10672928	Tom îro dikare alîkariya me bike.
+10678087	Ew dixwaze ku ez sibê alîkariya wî bikim.
+10680749	Ew mişteriyên me ne.
+10680761	Pirteqal xwedî naverokeke zêde ya vîtamînê ye.
+10680762	Mercên we çi ne?
+10680769	Sibe baran nabare.
+10680779	Hûn dixwazin vê odeyê jî boyax bikin?
+10680783	Tom kêf kir.
+10685887	Ew ji baran û berfê hez dike.
+10724279	Te got ku tu jê nefret dikî.
+10724288	Pisîkê xwe di navberê guliyan de veşart.
+10724307	Tom kurm pelaxt.
+10724310	Enerjiya nuklerî xeternak e.
+10724458	Divê ez bi wan re biaxivim.
+10725135	Tom hewl da ku wê bike lê nekarî.
+10725138	Nizanim çima nehatî.
+10725156	Ew keçeke pir şermok e.
+10725159	Ew her sibe diçin bazarê.
+10725172	Hûn ji rewşa siyasî ya welatê xwe kêfxweş in?
+10725560	Pismamê wê dê li Fransayê bixwîne.
+10725803	Çima tu vê dibêjî?
+10726267	Çend kes mirin?
+10757414	Viyana li rojhilatê Awistiryayê ye.
+10757415	Bi rastî ez te sûcdar nakim.
+10757642	Em ê vê havînê klîma bikar neyînin.
+10758731	Banka herî nêzik li ku ye?
+10758780	Ew destên xwe dişo.
+10758781	Çima tu destên xwe naşoyî?
+10762569	Orşelîm bajarê herî pîroz û girîng ê Cihûyan e.
+10762604	Sermaya min heye.
+10762611	Îro sar e.
+10762614	Duşemî sar bû.
+10780761	Hûn ji ku ne?
+10785251	Ev hemû pirtûk in.
+10826632	Ez ne terorîst im.
+10933194	Zimanê kurdî pir xweş e.
+10933218	Ew çû hinek hewaya paqij bistîne.
+10968479	Her du jî dadgerên gelekî jêhatî ne.
+10968481	Tom di van demên dawiyê de stranên xemgîniyê dibêje.
+11011863	Ma ew dizane ku ez li vir im?
+11011864	Min digot qet tu yê piştî nîvro biçî pirtûkxaneyê.
+11011948	Bêyî ku raweste deh saetan xebitî.
+11011949	Bîrayê pir venexwin.
+11011951	Ma min ji te re negot li vê derê stranan nebêje?
+11013401	Maryê çîrokeka kurt nivîsî.
+11013425	Tom li aliyê din ê avê nêrî.
+11013672	Ka em li vir rasteqîne bin.
+11013946	Ewrek rojê vedişêre.
+11013960	Tom ji we zêdetir diaxive.
+11017374	Jimareyên tu di wêneyê de dibînî bi destnivîsê binivîse!
+11017377	Bi rastî jî tu difikirî ku tu dikarî vê bi tena serê xwe bikî?
+11017381	Neh hezar û neh sed û nod û neh û zêdek yek dike hezar.
+11017414	Xoşewîstê min cidî dixuye.
+11017433	Me feqek vegirt.
+11017443	Tom û Mary li wê daristanê xwe vedişêrin.
+11026205	Tom di van demên dawîn de vêya gelekî dike.
+11026212	Tom yek ji endezyarên me yên herî baş e.
+11026810	Navê pisxalê min Ehmed e.
+11026815	Tomî rêxistina çalakiyê kir.
+11026830	Ma tu li Fransayê dijî?
+11026841	Em ê kurê xwe bizewicînin.
+11027070	Ez ê pê re biçim sînemayê.
+11027354	Min navê xwe ji bîr kir.
+11037448	Îro piştî kar em beyzbolê dilîzin.
+11056981	Di vê dema salê de her dem germ e.
+11056982	Şer piştî sê salan dest pê kir.
+11056999	Ez ne kangûr im.
+11057027	Ez gelek bêriya te dikim.
+11057035	Ez li Pekînê Çînî dixwînim.
+11057097	Em dixwazin raya te bibihîzin.
+11057125	Ew bi kurdî dipeyive?
+11101389	Nikarim bi mirovan re têkiliyê daînim.
+11102449	Min şûştina destan ji bîr kir.
+11132336	Rê bi qeşayê girtiye.
+11219888	Min hemû pereyên xwe dan dizîn.
+11219893	Kûçikî ceriband ku bi destê min vede.
+11219919	Min tevahiya rojê bi paqijkirina odeyê derbas kir.
+11219924	Nikarim dema paşîn a girîna xwe bi bîr bînim.
+11219927	Judokayê herî baş ê cîhanê kî ye?
+11220031	Tom di odeya xwe de mûm pê naxe.
+11220040	Avê vala bike destşoyê.
+11220052	Kana madenê girtî ye.
+11220070	Guvahî derew kir.
+11220489	Emily di nav stêrkan de bû.
+11406878	Em li kîjan navçeyê ne?
+11554755	Ew mîna kamyonvanekî dipeyive.
+11818314	Ez salekê jê mezintir im.
+11818316	Zêde dereng e, otobus jixwe rabûye.
+11818319	Tom ê bixebite ku kar di zûtirîn katê de biqedîne.
+11981614	Çima wê xwest biçe?
+12101143	Hemû dêûbav dixwazin ku zarokên wan kêfxweş bin.
+12113013	Ma tu hîn birçî nebî?
+12210171	We ev name xwendine?
+12488932	Tu rêzefîlmekî temaşe dikî?
+12488941	Televîzyon mirovî ehmeqî dike.
+12623510	Ma te lîstikek lîstiye?
+13002893	Ez dikarim bi Piotrî re biaxivim?
+13002906	Mirin gava herî girîng a jiyana mirov e.
+13036522	Ez anha amade me, Tom.
+13036528	Tom û ez di heman rojê de ji dayîk bûne.
+13036533	Ewr li asîmanan tune ne.
+13071119	Îro diranê min diêşe.
+13191937	Kûçik dilsoztirîn dostê mirovan e.
+13195503	Ew piyanoyê lê dixe.
+13511997	Xêra xwe hevokên sade çêke.
+13530565	Tu çayê dixwazî ?
+13531520	Pismamê min zanyarekî bîrkarî ye.
+13531524	Ji xemgîniyê, hişê min jî çûye.
+13531535	Mixabin! peyvên kurdî pir nayên bikaranîn.
+13531536	Divê mirov ji xwe hez bike, û ji kalbûna xwe baznede.
+13531609	Ji min re ferhenga elektronîk pêwîste.
+13531669	Rojbaş, Hûn dê biçin kuderê?
+13531698	Tu çi dermanî ji bo me pêşinyar dikî?
+13531714	Min hîn şaştiyek nekiriye.
+13578965	Êdî bes e!
+13593938	Komputera min naxebite.
+13682257	Gelo sedemek heye ku Tom îro ne li vir e?
+13682271	Ew ne zanyar e, lê ew hevalê me ye.
+13685123	Ez heneka dikim.
+13685149	Pir aşiqê wê bu.
+13685508	Kesê ku derdê wi dinya be,weka dinyayê derdê wi hene.
+13686139	Ez bi tomrame.
+13686148	Ji hindikîve Kirina viya çend deqe berdewam dike.
+13702327	Armanca me Tirkiyeyeke mezin û bihêz e.
+13719942	Ez dikarim menûyê bibînim?

@@ -1,0 +1,26 @@
+{
+  "slug": "turkmen",
+  "code": "tk",
+  "order": 830,
+  "lang": "tk",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Turkmen",
+    "native": "Türkmençe"
+  },
+  "aliases": [],
+  "region": "central-asia",
+  "fonts": ["latin"],
+  "layouts": ["tk-easy", "tk-standard"],
+  "accents": "äçňöşüýžÄÇŇÖŞÜÝŽ",
+  "sample": "Bu gün howa gowy, biz deňze gidýäris.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "tk",
+    "bing": "tk"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

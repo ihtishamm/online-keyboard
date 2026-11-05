@@ -1,0 +1,15 @@
+{
+  "source": "hawwiki.xml.bz2",
+  "pages": 3022,
+  "sentences": 21211,
+  "repeatedSentencesSkipped": 4008,
+  "tokens": 368902,
+  "distinctWords": 22062,
+  "wordsKept": 5750,
+  "nextWordHeads": 2095,
+  "text": "haw-train.txt",
+  "textSentences": 7,
+  "textWeight": 5.71,
+  "heldOutPages": 55,
+  "heldOutSentences": 301
+}

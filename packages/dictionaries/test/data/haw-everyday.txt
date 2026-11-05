@@ -1,0 +1,150 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+3081441	ʻElua aʻu pōpoki.
+3083402	Maka ka palaoa.
+3083405	ʻAʻole maka ka palaoa.
+3083409	He wahine au.
+3083413	He kaikamahine au.
+3083415	He kāne mea wahine au.
+3083416	He kanaka au.
+3083426	He pōpoki au.
+3083770	Nui kēia ʻīlio.
+3083772	Keʻokeʻo kēia ʻīlio.
+3083777	Momona loa kēia pōpoki.
+3083785	He haumāna au.
+3083789	He ʻāpala ʻōmaʻomaʻo kēia.
+3083798	He kula kēia.
+3084055	Ke ʻai nei ʻoe.
+3084063	He haumāna ʻo ia.
+3084069	He ʻāpala kēia.
+3084079	ʻAʻole au makemake e hele i ke kula.
+3084104	He pea kēia.
+3084112	Maka kēia hua.
+3084113	Maka kēia kūlina.
+3084115	ʻAʻole au he kumu.
+3084120	ʻAʻole au he kauka.
+3084146	Makemake au e hele i ke kulanui.
+3084149	Makemake au e hele i Kioko.
+3084167	Makemake au e hele i ʻAukekulelia me koʻu ʻohana.
+3084754	ʻŌmaʻomaʻo kēia puke.
+3084758	ʻAʻole ʻōmaʻomaʻo ka ʻāpala.
+3084761	ʻAʻole ʻula kēia ʻāpala.
+3084763	He ʻalani kēia.
+3085026	Makemake au e aʻo i ka ʻōlelo Hawaiʻi.
+3085027	ʻAʻole au akamai.
+3085031	Liʻiliʻi ka penikala.
+3085036	Loloa ke kaʻa ʻōhua.
+3085787	Noho au ma Honolulu.
+3085789	ʻImi ʻo ia he hōkele.
+3085794	E ʻike ʻoe nā haumāna.
+3085799	Ke hele nei au ma he hale kūʻai.
+3154476	ʻAʻole ʻoe he wahine.
+3154477	ʻAʻole ʻoe he kāne.
+3154481	Nani ke kaikamahine.
+3154491	He haumāna maikaʻi ʻo ia.
+3154586	He noho ʻo ia.
+3154590	He manu ʻo ia.
+3154598	ʻAʻole keʻokeʻo ka lio.
+3154601	He manu ʻo ia?
+3154605	He noho ʻo ia?
+3154615	He wilikī au.
+3154617	He wilikī ʻoe.
+3154626	ʻO au ke kumu.
+3154780	E hele mai au.
+3154909	E hele au.
+3154911	I hele au ma ka panakō.
+3155219	ʻAʻole au pōloli.
+3155244	Hana nā kaikamahine.
+3155249	Ke kālai nei ke keiki.
+3155270	Hīmeni ʻo Pua.
+3155272	Ua hīmeni ʻo Pua.
+3155275	Ke hīmeni nei ʻo Pua.
+3155277	E hīmeni ana ʻo Pua.
+3155279	Hīmeni ʻo Pua i ka halepule.
+3155282	Ua hīmeni ʻo Pua i ka halepule.
+3155284	Ke hīmeni nei ʻo Pua i ka halepule.
+3155287	E hīmeni ana ʻo Pua i ka halepule.
+3156027	He wahine maikaʻi ʻo ia.
+3156029	Loa kou makua kāne.
+3156037	ʻAʻole maikaʻi kō lāua kaʻa.
+3156048	ʻŌpio ke kāne.
+3156051	Ikaika ke kāne.
+3399049	Ano nā kanaka.
+3399053	E kū kēia hale.
+3578024	He nūpepa kēia.
+3803454	ʻElua oʻu kaikunāne.
+3803462	ʻElua aʻu puke.
+3803463	ʻElua oʻu kaʻa.
+3803467	ʻElua aʻu keiki.
+3803470	He kumu ʻo ia.
+4002619	He niu kēia.
+4848309	Ua noho ke kanaka i Honolulu.
+4848311	Ua noho ke kanaka i Kīlauea.
+4848326	Hāʻawi ke kanaka i ka makana i ke aliʻi.
+4848328	Hāʻawi ke aliʻi i ka makana i ke kanaka.
+4848330	Ua hāʻawi ke aliʻi i ka makana i ke kanaka.
+4848333	Hāʻawi ke aliʻi i ka ipukukui i ke kanaka.
+4848334	Ua hāʻawi ke aliʻi i ka ipukukui i ke kanaka.
+4848346	I Maui hāʻawi ke aliʻi i ka makana i ke kanaka.
+4848352	I Maui ua hāʻawi ke aliʻi i ka makana i ke kanaka.
+4848355	I Maui hāʻawi ke aliʻi i ka ipukukui i ke kanaka.
+4848358	Hāʻawi ke aliʻi i ka poi i ke kanaka.
+4848362	Hāʻawi ke aliʻi i ka pua i ke kanaka.
+4848364	Hāʻawi ke aliʻi i ka pūpū i ke kanaka.
+4849439	Hāʻawi ke akua i ka pua i ke kanaka.
+4849441	Hāʻawi ke akua i ka pūpū i ke kanaka.
+4849451	Hāʻawi ke akua i ka iʻa i ke kanaka.
+4849460	Hāʻawi ke akua i he iʻa i ke kanaka.
+4849465	Hāʻawi ke akua i nā iʻa i ke kanaka.
+4849468	Hāʻawi ke akua i he mau iʻa i ke kanaka.
+4849479	Hāʻawi ke akua i he pūpū i ke kanaka.
+4853081	ʻAi ke kanaka nui i ka niu liʻiliʻi.
+4853082	Ua ʻai ke kanaka nui i ka niu liʻiliʻi.
+4853083	Ke ʻai nei ke kanaka nui i ka niu liʻiliʻi.
+4853084	E ʻai ana ke kanaka nui i ka niu liʻiliʻi.
+4853085	ʻAʻole e ʻai nei ke kanaka nui i ka niu liʻiliʻi.
+4853631	E ʻai lohi ana ke kanaka nui i ka niu liʻiliʻi.
+4853633	E ʻai wiki ana ke kanaka nui i ka niu liʻiliʻi.
+4855869	ʻUlaʻula ka pua liʻiliʻi.
+4855882	Keʻokeʻo ka pūpū liʻiliʻi.
+4856425	Polū ka pua liʻiliʻi.
+4856427	Poni ka pua liʻiliʻi.
+4856429	Lena ka pua liʻiliʻi.
+4856431	ʻEleʻele ka pua liʻiliʻi.
+4856433	Maʻomaʻo ka pua liʻiliʻi.
+4856435	Hinahina ka pua liʻiliʻi.
+4856437	Keʻokeʻo ka pua liʻiliʻi.
+4856439	Melemele ʻili ʻalani ka pua liʻiliʻi.
+4856441	Uliuli ka pua liʻiliʻi.
+4856443	Halakea ka pua liʻiliʻi.
+4858579	Melemele ka pua nui.
+4858591	ʻUlaʻula ka pua nui.
+4858606	Keʻokeʻo ka pua nui.
+4858626	ʻAlani ka pua nui.
+4858640	ʻĀhinahina ka pua nui.
+4858723	Polū ka pua nui.
+4860223	Kaumaha ke kanaka.
+4860228	Hauʻoli ke kanaka.
+4860261	Loloa ke kanaka.
+4860296	Hanuʻu ke kanaka.
+4860313	Uē ke kanaka.
+4860319	ʻAkaʻaka ke kanaka.
+4860331	Minoʻaka ke kanaka.
+4890331	Aia he pua i ka hale.
+4890334	Aia he mau pua i nā hale.
+5770284	Aloha! ʻO Wikoli koʻu inoa. Hoʻomana au i ka kilo hōkū a me ka mōhihiʻo. ʻAi au i ka manapua. Ua hānau au ma ka ʻĀina Pilipino.
+6824275	ʻO wauʻo Ricardo.
+7262573	Aloha e Kaʻiulani.
+7265269	E hele, e Kaʻiulani.
+7265272	E ʻōlelo, e Kawika.
+8875160	He hapa au.
+9472169	ʻAʻole au i lawe i ka puke a Koma.
+9472800	ʻO koʻu makuahine kēia.
+9472801	ʻO koʻu makuakāne kēia.
+9472802	ʻO kaʻu hana kēia.
+10356272	ʻO Koma koʻu inoa.
+10449512	ʻO Keoni koʻu inoa.
+10773369	Nui nā wāhine i ka manaʻo o ka noho ʻilihune.
+11746101	Makemake ʻoe e hula me aʻu?
+12894352	Mai ʻulaʻula! Loaʻa i kahi lāʻau!
+13987223	Hoʻolauleʻa ʻia ka Lā ʻEsperanto i kēlā me kēia makahiki a puni ka honua e hoʻomanaʻo i ka lā hoʻomanaʻo o ka paʻi ʻia ʻana o ka puke mua ma ka ʻōlelo Esperanto ma Iulai 26, 1887.

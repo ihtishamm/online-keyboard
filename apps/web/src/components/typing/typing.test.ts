@@ -179,6 +179,12 @@ const NO_SENTENCES = new Set([
   "tg",
   "fo",
   "mt",
+  "uz",
+  "yo",
+  "ig",
+  "wo",
+  "haw",
+  "mi",
 ]);
 /** Small Tatoeba sets: every usable sentence, under 50. */
 const FEW_SENTENCES = new Set(["ps", "pnb", "gu", "te", "kn", "si", "or", "sa", "mn", "gd"]);

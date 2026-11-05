@@ -1,0 +1,26 @@
+{
+  "slug": "igbo",
+  "code": "ig",
+  "order": 870,
+  "lang": "ig",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Igbo",
+    "native": "Igbo"
+  },
+  "aliases": [],
+  "region": "africa",
+  "fonts": ["latin"],
+  "layouts": ["ig-easy", "ig-standard"],
+  "accents": "ịọụṅáàéèíìóòúùỊỌỤṄÁÀÉÈÍÌÓÒÚÙ",
+  "sample": "Anyị na-aga ahịa taa ka anyị zụta ihe oriri.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ig",
+    "bing": "ig"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

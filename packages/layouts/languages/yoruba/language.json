@@ -1,0 +1,26 @@
+{
+  "slug": "yoruba",
+  "code": "yo",
+  "order": 860,
+  "lang": "yo",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Yoruba",
+    "native": "Yorùbá"
+  },
+  "aliases": [],
+  "region": "africa",
+  "fonts": ["latin"],
+  "layouts": ["yo-easy", "yo-standard"],
+  "accents": "ẹọṣáàéèíìóòúùńǹẸỌṢÁÀÉÈÍÌÓÒÚÙŃǸ",
+  "sample": "Mo fẹ́ lọ sí ọjà lónìí pẹ̀lú àwọn ọ̀rẹ́ mi.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "yo",
+    "bing": "yo"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

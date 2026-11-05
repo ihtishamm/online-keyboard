@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+7884969	Ol gyz maňa duýdurman gitdi.
+7887522	MAry özüniň çep taý köwşüni tapyp bilmedi.
+7887603	Sen geçen ýyl Awstraliýada däldiň gerek?
+7888348	Hiç haçan aldamajagyňa söz berýärsiňmi?
+7888459	Eger ruçkaň ýok bolsa, gaam ulan.
+7892941	Gazet entäk onuň makalasyny entäk terjime etmedi.
+7894633	Sen özüňi gowy duýaňok şeýle dälmi?
+7894666	Sen maňa hiç haçan aýtmadyň buny näme üçin etmänliňigi.
+7896464	Tomuň ýüregi ýarylan bolsa gerek.
+7902001	Men şu aýakgaplaryň reňkini halamok.
+7902394	Olar özleriniň işlerini taşlamaga karar berdiler.
+7903211	Men häzir telefona jogap berip bilmerin.
+7905109	Kristmas günini hemişe maşgalam bilen geçirýärin.
+7907676	Haçanda olar biziň näme iş edendigimiz barada bilseler, näme bolarka?
+7911245	Şol meniň ynançlaryma garşy gidýär.
+7911248	Şu gün meniň üçin gowy däl.
+7911273	Şu öýi siziň özüňiziň gurandygyňyz hakykatmy?
+7917256	Iňlis edebiýatyny öwrenmek niýeti bilen Amerika gitdi.
+7918204	Öñünden Tañyry ýalkasyn jogap bereniñiz üçin.
+7918416	Öñünden Tañyry ýalkasyn berjek jogabyñyz üçin.
+7923223	Ejem hemişe meni görjekdigini aýdar.
+7929228	Ulaguñ gapysyny gulplamak ýadyña düşdümi?
+7930543	Tomy nireden tapandygyňy bize görkez.
+7930568	Meriniñ gaty ýarawsyzdygyny men bilýärin.
+7931007	Men ony çyndanam dolandyryp biljegime ynanýaryn.
+7931079	Ol aradan çykan wagty hemme maşgalasy onuň ýanyndady.
+7931381	Biz bu biznes bilen hiç zat edip bilemzok.
+7931484	Men nemes dilinde gürlemesemem olary halaýan.
+7931588	Düýn nirede bolanymy üç saparda biljek bol!
+7932531	Jenap Darcy meniň gyzym bilen adaglanan.
+7932901	Men ony otagynda aglap oturan halda tapdym.
+7932914	Hiç kime äpişgeleri açmaga ýol berme!
+7933398	Biziň bagtymyza ol gyz Brazilýa ýekeje özi gitdi.
+7934356	Mery soñky üç ýylyñ dowamynda köp zatlary öwrenendigini aýtdy.
+7934512	Semi Leýlañ soýgülisi barada bildi.
+7934517	Sämi şol döwürler kemçiliksiz adam däldi.
+7934569	Çykyşyňyz üçin adatdan daşary bir tema tapmak gerek däl.
+7936346	Ol öz ýatýan otagyny öz agasy bilen paýlaşmaly boldy.
+7937039	Sen ony birbada etseñ gowy bolar.
+7937101	Men hiç haçan Tomdan gowy adamyny görmedim.
+7937134	Semi instagram sahypasynda hiç hili surat goýanok.
+7937256	Siz bu syýany nirden satyn aldyñyz?
+7937554	Dil öwrenmek üçin köp wagt gerek.
+7937613	Men geçen agşam seniñ bilen gowy wagt geçirdim
+7937675	Siz muny ol oglan üçin açmaga borçly.
+7937680	Meni gaharlandyran zat barada siz bilen gürleşip bilerinmi?
+7938579	Meri Toma öýüne ugratmaklygy sorady
+7938818	Biziň hemmämiz hem ýalňyşlyk edýäris, ýöne adamlar olary ýatdan çykarýar
+7939032	Uzakdan garalanda köp zat görünýär.
+7939194	Leýla hiç wagt mekdep tansynda bolup görmändir.
+7939475	Meri Tomuň ondan etmegini islän zadyny etmezdi.
+7939560	Semi bilen Leýlañ bal aýy gutardy.
+7939781	Mery näme aljak bolýandygyny Toma aýtmaly eken.
+7939840	Maña Bostona göçmek hökman däl.
+7939961	Bize bu ýerde ýüzmäge rugsat berilmeýär
+7940054	Sen Tomuñ haçan yzyna geljekdigini bilýäñmi?
+7940064	Men bu gije bu ýerde galmak islämok
+7940093	Mery Tomyñ göwnüne degesim gelenok diýýä.
+7940135	Ol hakykatdan ýeterlik gowy kitap.
+7940285	Tim üç dürli mekdeplerde okadýar.
+7940395	Men öz çagalarym bilen bir zatlar etmägi halaýaryn.
+7940440	Tomuň şol ýerde bolmak islemeýändigini bilýärin.
+7940632	Siz biziň bilen bäsleşip bilmersiňiz.
+7940709	Bagyşlañ, meniiñ kän bir kömegim degmedigine
+7940774	Men öz minnetdarlygymy sözler bilen beýan edip bilemok
+7941256	Öñünden aýdyp goýsañ örän gowy bolar.
+7941365	Başgalara garşy onuñ tarapyny saýlamaga karar berdim.
+7941471	Dört goşmak üç ýedi bolýar.
+7941560	Haýyş, muny tapan ýeriňizde goýuň.
+7941615	Siziň gaýgyňyz - meniň gaýgym.
+7941658	Meniň çykyşym diňe üç minut töweregi bolar.
+8021851	Ine, meniň ruçkamy ulanyp görüň.
+8022768	Men siziň fransuz dili boýunça testiňizden geçmejegiňizi bilýärdim.
+10476899	Men muny ýazýançam, sen gap-gaçlary ýuw.
+12128727	Üç sagat ozal ýagyş ýagyp başlapdy.
+12191612	Kofäm şekersiz bolsa bagtly bolaryn.
+12304603	Ol Ankarada alty ýyl ýaşapdyr.
+12449402	Iň ýakyn aýallar hajathanasy nirede?
+13756051	Näme üçin ol bilen gürleşmeli?
+13890292	Sen hemişe şol kitaby işläp ýörersiň.

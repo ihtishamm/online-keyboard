@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+2144307	Böyük sirr nədir?
+2340108	Biz dünyada yaşayırıq.
+2340124	Xəstəxanada bir həftə keçirdim.
+2416647	Mənim oxumağa vaxtım yoxdur.
+2423267	Çörək dükanı haradadır?
+2423278	Lori gözəl qızdır.
+2423291	Pişiklər siçan tutar.
+2423303	Çörək təzə deyil.
+2423326	Maşınını işə saldı.
+2427981	Mən kollec tələbəsiyəm.
+2427983	Bir çox yuxum var.
+2603887	Uğur adətən zəhmət tələb edir.
+2676398	Həyat böyük bir magistral kimidir.
+2680535	Ann şokoladı çox sevir.
+2705343	Bu xətt uzunluq dairəsini göstərir.
+2705346	Sənin qədər məşhuram.
+2705374	O, məktub yazdı.
+2715185	İki oğlum var.
+2792438	Melani alma yeyir.
+2812747	Qırmızı sənin rəngin deyil.
+2837318	Başqa dildə danışa bilmirəm.
+2852641	Mənim oğlum jurnalistdir.
+2872253	Bir misal gətir.
+2872302	Tətilimi Bakıda keçirəcəm.
+2876519	Çoxları hökumətə inanmır.
+2876521	Tom az qala ölürdü.
+2883653	Bu, çoxlarını təəccübləndirdi.
+2887945	Biz artıq geçikmişik.
+2920518	Mən polis deyiləm.
+2922494	Dünən xoşbəxt idim.
+2932592	Cim qədər sürətli qaçıram.
+2932597	Bu kitabı artıq oxumuşam.
+2942577	Tənqid etməyə haqqım var.
+2942579	Bizim qızımız yoxdur.
+3006823	Ananızın nə dediyini eşitdiniz.
+3006840	On üç yaşım olanda üç ay xəstəxanada yatdım.
+3108814	Sehrbazlar illüziya sənətindən istifadə edirlər.
+3298686	O, mənim atamdır.
+3303311	Əsla heçkəsə söyləməyin.
+3303383	Bu, yeni maşın deyil.
+3303414	Tomun ne xoşladığını bilirəm.
+3303443	Bunun nə mövzuda olduğunu bilirəm.
+3303465	Nəyin əskik olduğunu bilirəm.
+3303526	Dərhal eve getsən yaxşı olar.
+3303694	Mükafatı aldığı üçün öyündü.
+3303718	Məktəbə avtobus ya da qatarla gəlir.
+3303739	Həyatını şirkətinə həsr etdi.
+3303743	Onların dəvətini qəbul etmədi.
+3303773	Bir vəsiyyət etmədən öldü.
+3303838	Acı danışan şirin söz eşitməz.
+3303853	İnsanlar yaşayarkən yuxudadır, Öldüklərində oyanarlar.
+3303867	Bu həftə məşğulam.
+3303868	Növbəti dəfə sürmə sırası mənimdir.
+3303876	Bu gün buludlar yox idi.
+3303880	İstilik bu gün qorxuncdu.
+3303881	Bu gün riyaziyyat tapşırığı var.
+3304233	O bir oğrudur.
+3304244	O, çox məşğuldur.
+3304254	Onu pulsuz aldım.
+3305127	Tom nerdivana dırmaşmağa başladı.
+3305136	O, çox israrlı idi.
+3305185	Xanım Swan bizim İngilis dili müəllimimizdir.
+3305212	Dünən məşğul idim.
+3305241	Məncə nə etməyin lazım olduğunu bilirsən.
+3305252	Nə zaman başı bəlada olsa onun yanında oldu.
+3306899	Bunu liseydən bəri etməmişdim.
+3306923	O, yaxşı bir sportsmendir.
+3306944	İkinci siniflərə İngilis dili öyrədirəm.
+3306971	Annem bir tort edir.
+3307062	Hamı sizi gözləyir.
+3307070	Zəlzələni hiss edəndə oyun oynayırdım.
+3307096	Bunu anana apar.
+3351298	Məktəbə getmək istəmirəm.
+3392731	Qırmızı evim var.
+3453049	Tom mənimlə danışırdı.
+3455144	Fahişəxanada işləməyi planlaşdırıram.
+3606339	O, kitabı bir gündə oxudu.
+3702653	Kimyaya nifrət edirəm.
+3986481	Biz orada olmuşuq.
+3986497	İmtahan necə keçdi?
+3986510	O, qəhvə xoşlayır.
+3986537	Bugün hava necədir?
+3986549	Bizi heç vaxt tapmayacaqlar.
+3986564	O gələndə başlayacağıq.
+3986578	Dünən saatımı oğurlayıblar.
+3986639	Tom əslində nə baş verdiyini bilir.
+3986652	Toni harda oynayır?
+3986662	Sən sadəcə bir oyuncaqsan.
+3986712	Tom burda olduğumuzu bilir.
+3988754	Ukraynanın paytaxtı Kiyevdir.
+3988774	Mən zəif idim.
+3988792	Mən məktub yazmıram.
+3988804	Siz türkcə danışırsız?
+3988809	Bu müqəddəs torpaqdır.
+3988810	Mən səhvən sənin çətirini götürdüm.
+3988811	Tomun ötən gecə nə etdiyini bilirsən?
+3988828	Biz ikimiz də ağladıq.
+3988869	Sənə təcili yardım lazımdır?
+3988872	Mən heç nə görmürəm!
+3988873	Bu oyunu xatırlayırsınız?
+3988969	Heç vaxt düşünməzdim ki, səni yenidən görə bilərəm.
+3989019	Onlar bu planeti "Yer" adlandırırlar.
+3989047	Otaqda yüzdən çox adam var.
+3989071	O səni istəyir.
+3989072	O sizi istəyir.
+3989095	Bəs səbəb nə idi?
+3989105	Mariyanın iki əcnəbi dostu var.
+3989113	Tom kitabı yerə qoydu.
+3989122	O cavan görünür.
+3989171	O həmişə qara geyinir.
+3989921	Müharibə dörd il çəkmişdi.
+3989923	Mən öz işimi gördüm.
+3989934	Yeni bir velosiped almaq ücün kifayət qədər pulum yoxdur.
+3989941	Mən onların arasında əyləşdim.
+3989944	Allah bilir, o hara gedib.
+3989951	Maşın yolun ortasında dayandı.
+3989978	Sən ondan daha gözəlsən.
+3990006	Biz indi tamamilə fərqli insanlarıq.
+3990025	Səncə balıqlar eşidə bilir?
+3990037	Əlbəttə ki qala bilərsən.
+3990095	Hər ailədə biri var.
+3990167	Sən sakitləşənə kimi mən nə baş verdiyini sənə deməyəcəm.
+3990359	Emili biraz rumın dili öyrənib.
+3990433	O, təkcə ispanca yox, fransızca da danışır.
+3990497	Səhvə görə mən məsuliyyət daşıyıram.
+3990611	Eşşəklər dözümlü heyvanlardır.
+3990614	Gələn ay mən burada olmayacam.
+3990929	Ona vəkil lazımdır.
+3990966	Onlar heç nə tapmadılar.
+3990970	Məndən uzaq dur.
+3991009	Mən sənə baxmırdım.
+3991047	Yox, sən başa düşmürsən.
+3991065	"Saat neçədir?" , o özü özündən soruşdu.
+3991071	Mayk bizim komandanın kapitanıdır.
+3991131	Mən özüm öz qayğıma qala bilirəm.
+3991170	İngiltərə və Şotlandiya qonşudurlar.
+3991171	Onun bacısı Şotlandiyada yaşayır.
+3991228	Yeni Zelandiyada ingilis dilində danışılır.
+3991238	Mən Yeni Zelandiyada olmamışam.
+3991296	İrəvan Ermənistanın paytaxtıdır.
+3991430	Den çox qayğıkeş bir ata idi.
+3991474	Con cibindən bir açar çıxardı.
+3994362	Mən cavabı təkrarlayıram.
+3994739	Tom sirri bilir.
+3994766	Mən bilirəm ki, siz də bilmirsiniz.
+3994800	Mən bildiyimə görə, o, maşınla gəlir.
+3994900	Sizin çəkmələriniz məndə deyil.
+3994964	Mən sənin sözlərini başa düşürəm.
+3994971	Siz Avstriyanın harasında böyümüsünüz?
+3995026	Mən də gedirəm.
+3997383	O mənə pıçıldadı ki, acdır.
+3997740	Sənin çemodanın haradadır?
+4000844	O sənə nə dedi?
+4000849	Mətbəxin qapısı açıldı.
+4000872	Niyə bizimlə qalmadın?
+4000885	Nikson Kaliforniyada doğulub.
+4000889	Tom dünən mənə yazdı.
+4001120	Biz Misirdə gizlənəcəyik.
+4001139	Mən həqiqətən Misirə getmək istəyirəm.
+4008013	Meri dörd yarpaqlı yonca tapdı.
+4024826	Sen anani sevirsenmi?
+4036470	Tom bunun haqqında heç nə bilmir.
+4036519	Mən Almaniyaya getmək istəyirəm.
+4036536	Yox, bunu mən yazmamışam.
+4036547	Mən demək olar ki hər gün çin dilində danışıram.
+4036566	Bunu mənə göndər.
+4036655	Bratislava Slovakiyanın paytaxtıdır.
+4036681	Kanadanın neçə əyaləti var?
+4036689	Tatoebaya xoş gəlmişsiniz.
+4076464	Mən hava limanına taksi ilə getdim.
+4076563	Siz İsaya çətin vaxtlarınızda yaxın olursunuz, yaxşı vaxtlarınızda yox.
+4076582	Bu butulkanı su ilə doldur.
+4076613	Qazaxıstan Mərkəzi Asiyanın inkişaf etmiş ölkələrindən biridir.
+4076710	Onlar yola getmədilər.
+4090143	Almalar ağaclarda yetişirlər.
+4090158	İsveçrəyə daha yaxşı almalar lazımdır.
+4090180	Bütün almalar qırmızıdırlar.
+4090270	Sənin üç lüğətin var.
+4090314	Bu sizin lüğətinizdir?
+4090320	Onların iki lüğəti var.
+4090324	Mən bu lüğəti istəyirəm.
+4090392	Tirana Albaniyanın paytaxtıdır.
+4090422	Yunanıstan qərb sivilizasiyasının beşiyi idi.
+4090460	Əvvəl Fransa, sonra İraq.
+4090462	Fransa Qərbi Avropadadır.
+4090463	Fransa Qərbi Avropada yerləşir.
+4090467	Con dünən Fransaya yola düşdü.
+4090472	Bu şəhər Fransadadır.
+4090475	Paris Fransanın paytaxtıdır.
+4097268	O Fransanın Portuqaliyadakı səfiridir.
+4097269	Portuqaliyanın birinci paytaxtı hara idi?
+4097390	Sənin mənə nə edəcəyimi deməyə haqqın yoxdur.
+4099197	Tom pişikləri sevir.
+4099222	Ken iki pişik saxlayır.
+4099232	Pişiklərin doqquz canı var.
+4099313	Ukraynada mən həmişə Ukrayna dilində danışıram.
+4099352	Tom İraq və İran arasındakı fərqi bilmir.
+4099361	Əgər istəyisinizsə bir müddət burada qala bilərsiniz.
+4099782	Gəl kitabxananın qabağında görüşək.
+4099833	Oslo Norveçin paytaxtıdır.
+4099845	Onlar bir müddət Norveçdə yaşadılar.
+4099851	O, Norveçdə yük maşını sürücüsü işlədi.
+4100852	Bill Yaponiyada idi.
+4100859	Yaponiyanın mülayim iqlimi var.
+4100876	Budur, Yaponiyanın bayrağı.
+4100907	Merinin "Frozen" filmindən xoşu gəlir.
+4100916	Liviyada minimal əmək haqqı nə qədərdir?
+4100926	Fars körfəzi İran və Ərəbistan yarımadasının arasında yerləşir.
+4100963	Bu mənim sualımdır.
+4100975	Mənim quşlarımı görməmisən?
+4100983	Tom səni sevir.
+4101010	O mənim ürəyimdir.
+4101017	Gecəniz xeyrə və şirin yuxular.
+4106526	Tom indi məşğuldur.
+4106745	Biz həmişə birlikdə idik.
+4106803	Onların təyyarəsi birazdan qalxacaq.
+4106809	Uşağı yeməyə məcbur etmə.
+4106864	Otelə getməkçün taksi tut.
+4106907	Sən harda yaşayırsan?
+4106913	Sənin adın nədir?
+4107066	İngilis dili beynəlxalq dil hesab olunur.
+4108662	Öküz döyüşü çox maraqlı bir səhnədir.
+4108669	"Gələn dəfə", o dedi.
+4108690	Ana bizim üçün çay hazırlayır.
+4108705	Onun ailəsinin heç nəyə ehtiyacı yoxdur.
+4108718	Tom birini tapdı.
+4108725	İtə sümük atmayın!
+4108745	Ona kömək lazımdır.
+4108819	Mən taksidən düşdüm.
+4108847	Mən sizin haqqınızda hər şeyi bilirəm.
+4108994	Mən şimali İsveçdə yaşayıram.
+4109021	O, Fransaya köçməzdən əvvəl İsveçdə yaşayıb.
+4109070	Fransa İspaniya ilə həmsərhəddir.
+4109081	Mənim əmim İspaniyanın şərqində yaşayır.
+4109100	Madrid İspaniyanın paytaxtı və ən vacib şəhəridir.
+4109114	Tom pivəni açmadı.
+4109138	Mən tək getməliyəm.
+4109189	Tom banka getməlidir.
+4109192	Sənin bacının itinin adı nədir?
+4109212	Mən Bobla tennis oynadım.
+4109226	Bu cümlədə beş söz var.
+4109244	Tom qəhrəman deyil.
+4110948	Sən çox gözəlsən.
+4110951	Biz mənzildə yaşayırıq.
+4110954	Tom rusca danışa bilir.
+4116138	Bu kitab sizə məxsusdur?
+4116160	O onlara yaponca necə danışmağı öyrədir.
+4116169	Bu ev çox böyükdür, elə deyil?
+4116207	Düşünürəm ki, o haqlıdır.
+4116303	Mən bayırda olacam.
+4116420	Bu yeri yaxşı tanıyırsan?
+4116437	Atam çox yorğundur.
+4119860	Mağaza bugün bağlıdır.
+4123546	Yeməyə nə məsləhət görərdin?
+4167312	Çünki mən çin dilində danışıram.
+4167565	Qahirə Afrikada ən böyük şəhərdir.
+4168211	Tom ağacın arxasında gizləndi.
+4168213	Mən hələ də sənin səsini eşidirəm.
+4170652	Onların vecinə olmayacaq.
+4174301	Den Lindanın otağını görmək istədi.
+4174388	May apreldən sonra gəlir.
+4174392	Əsl qəhrəmanlar bizik.
+4174430	Bu tamamilə aydındır.
+4174515	Bəzi qızlar tennis oynayırdılar.
+4174536	Mən iş axtarıram.
+4191013	Pasxa bayramınız mübarək!
+4191107	Heç kim məni başa düşmür.
+4191137	Tom dedi ki, bizi gözləyəcək.
+4249326	Bu portağallar çox turşdurlar.
+4249329	Stolun üstündə portağal yoxdur.
+4249348	Siz tək deyilsiniz.
+4279493	O qlobal istiləşməyə inanmır.
+4279527	Mən Tomu unutmamışam.
+4279537	Bizim toyumuz sabahdır.
+4279557	Onların iki əcnəbi dostları var.
+4279577	Mən güzgüdə öz əksimi gördüm.
+4314642	Salvador Dali ispan rəssamı idi.
+4314648	Siz həkim deyilsiniz.
+4314721	Bayırda qar yağır.
+4314770	Səncə hədiyyəm onun xoşuna gələcək?
+4314781	Mən müharibənin əleyhinəyəm.
+4314788	Yaponiyanın ordusu çox güclü idi.
+4314791	Mən müəllim idim.
+4315873	Mənə bir-iki gün vaxt ver.
+4315912	Sən həmişə mənə yalan danışırsan.
+4315952	Mən çox tələbkaram?
+4321199	Kinşasa Konqo Demokratik Respublikasının paytaxtıdır.
+4321211	Hava da, su da həyat üçün zəruridir.
+4321214	Tom daha yaxşı idi.
+4321306	Mən hər şeyi dedim.
+4321314	O oturub kitab oxuyurdu.
+4321337	Payız mənim xoşuma gəlir.
+4321361	Yaxşı gün idi.
+4336725	Tom həbsxanada deyil.
+4336745	Körpə hələ yatır.
+4336761	O, əlini qaldırdı.
+4336819	Vilnüs Litvanın paytaxtıdır.
+4336823	Tom komandanın lideridir.
+4336952	Onun atasını tanıyırsan?
+4337003	Kompüterlərdən zəhləm gedir.
+4337048	Mən maşınımın içindəyəm.
+4337070	Mənə yaxşı bir lüğət lazımdır.
+4337075	Onlar Allaha inanırlar.
+4337078	Otaq qaranlıq idi.
+4339134	Toma deyin ki, bu bir səhv idi.
+4339167	Biz indi Toma kömək edə bilərik.
+4339183	O çox xoşbəxt görünür.
+4339186	Bu sizin vertolyotunuzdur?
+4339213	Kitab ən yaxşı hədiyyədir.
+4339264	İzaha ehtiyac yoxdur.
+4339266	Təcili yardım gələnə qədər Tom mənimlə qaldı.
+4340498	Mən sadəcə Tomu alçaltmaq istəyirəm.
+4340504	Əslində mən xoşbəxtəm.
+4340522	Mən bu planetdə yaşayıram.
+4340543	O onun dostudur.
+4340571	Tom daha burada yaşaya bilməz.
+4343050	Onun doğulduğu kənd buradan uzaqdır.
+4343053	Mən çox diqqətli idim.
+4343067	Timi tapa bilmirəm.
+4344055	Onun bazarlıq etməkdən zəhləsi gedir.
+4344057	Tərcümə məsuliyyətli işdir.
+4344080	Ondan pis iy gəlir.
+4344085	Cümlənin sonunda nöqtə qoymağı unutmuşam.
+4344160	Tom başa düşmədi.
+4404968	Gecədir. Ailə şam edir.
+4405018	Divan almaq istərdim.
+4407292	Siz harada tennis oynayırsınız?
+4407345	Ümid edirəm arzum həyata keçər.
+4407350	Mən ondan qorxmuram.
+4407354	Sadəcə ürəyinizin səsini dinləyin.
+4407362	Sizin ürəyiniz xəstədir.
+4407386	Başın hələ də ağrıyır?
+4407389	Onun burnu qanadı.
+4407395	Onun burnu qanayır.
+4407419	Burnumu qaşımaq istəyirəm.
+4407427	Tomun bir qızı var idi.
+4407430	Çox yaxşı. Necəsiniz?
+4407431	Çox yaxşı. Necəsən?
+4407447	Biz sizdən heç nə istəmirik.
+4407455	Əlcəklərin yadından çıxmasın. Hava soyuqdur.
+4407457	Üzr istəmək üçün artıq çox gecdir.
+4407500	Mən ət yeyirəm.
+4407523	Sən qapını açırsan.
+4407601	Biz qan qardaşlarıyıq.
+4407646	Yeganə bilik mənbəyi təcrübədir.
+4407647	Günəş enerjisi yeni enerji mənbəyidir.
+4407650	Atam mənim ən böyük ilham mənbəyimdir.
+4407657	Mən almanca danışıram.
+4409409	Quşların qanadları olur.
+4409444	Qardaşı ondan daha səbirlidir.
+4409483	Onun adı Tomoyuki Oquradır.
+4409519	Sənin yerində olsaydım onun məsləhətinə qulaq asardım.
+4409626	İsa nə edərdi?
+4409642	Xristiyanlar İsa Məsihə inanırlar.
+4409756	Badımcan, kök, pomidor.
+4409760	Badımcanları yu və uclarını kəs.
+4410867	İnsanların əbədi yaşamağı mümkün deyil.
+4410888	Deyəsən bilirəm niyə.
+4410901	Uşaq vaxtı ağaca dırmaşmaqdan xoşum gəlirdi.
+4410920	Əcaib bir şeyə oxşayırsan.
+4410933	Sizdən yaxşı diplomat olardı.
+4410943	Onlar balıqları yemlədilər.
+4411004	O, Taronun qardaşıdır.
+4411023	Dostum Naritadan Parisə yola düşdü.
+4411043	Tom dördyarpaqlı yonca tapdı.
+4411168	Qaşlarımdan zəhləm gedir.
+4411228	Tom qulançar yeyir, amma qardaşı yox.
+4411231	Xeyli vaxtdır ki, qulançar yemirəm.
+4411280	O avtobus sürücüsüdür.
+4411284	O, taksi sürücüsüdür.
+4411285	O taksi sürücüsüdür?
+4411291	Tom yaxşı sürücüdür.
+4411307	Tom aqressiv sürücüdür.
+4411370	Payız yerini qışa verdi.
+4411439	Yaponlar tunes yeməyi xoşlayırlar.
+4411903	Məni dayandıra bilməzsən.
+4411918	Mən xəstəxanada işləyirəm.
+4412804	Çəhrayı yastıq təmizdir.
+4412821	Mars müharibə allahıdır.
+4412853	Heç Koreya yarımadasında olmusan?
+4412857	Bakı Abşeron yarımadasının cənub sahilində yerləşir.
+4412874	Dostum dünən evdə deyildi.
+4412878	Bu sənin otağındır?
+4412910	Üç baqet, zəhmət olmasa.
+4412914	Sizin üç maşınınız var.
+4412917	Üç kişi var idi.
+4414855	Allaha and olsun ki, yalan demirəm.
+4414857	Biz həmişə qaydalara tabe olmalıyıq.
+4416590	Mənə bıçaq lazımdır.
+4416985	Alisaya yaşıl yaraşır.
+4417067	Texas Yaponiyadan təqribən iki dəfə böyükdür.
+4417073	Şərqi Montana qışda xüsusilə küləkli və soyuq olur.
+4417102	Brayan Nyu-Yorka yola düşdü.
+4419003	Onlar kəndi su ilə təmin etdilər.
+4419024	Bu çay dayazdır?
+4419529	Mən maşında idim.
+4419545	Anqola 1975-ci ildə müstəqil oldu.
+4419558	Onların qara saçları var.
+4422170	Tom evə gəldi.
+4422172	Tom evə qayıtdı.
+4422185	Yana Londonda yaşayır.
+4422266	Mənim oğlum var.
+4422268	Niyə ofisə getmədin?
+4436923	Tom saqqızını uddu.
+4512429	Müharibə sona çatdı.
+4512431	Biz müharibə elan etdik.
+4512451	Müharibə 1954-də sona çatdı.
+4539798	Qələmi mənə ver.
+4801000	İngilis dili beynəlxalq dildir.
+4998576	Mən sadəcə sənlə danışmaq istəyirəm.
+5156234	Tom zəng etdi.
+5156240	Bunun qiyməti vecimə də deyil. Onsuz da onu alacam.
+5156244	Bəsdir üzr istədin.
+5156252	Tom nə cür kitab oxuyur?
+5156256	Bir gün anlayacaqsan.
+5156262	Onunla nə edəcəyiniz vecimə də deyil.
+5156268	Mənim kompyuterim bahalıdır.
+5336145	İt çox hürdü.
+5342282	Tomun insanları ağlatmaq bacarığı var.
+5343457	Əlbəttə, mən özümü günhakar hiss edirəm.
+5343462	O, dini musiqi dinləyir.
+5343478	O, topu bağda tapdı.
+5344060	Soyuq su, zəhmət olmazsa.
+5362483	O, meşədə azıb.
+5362638	O, onu yenidən yazdı.
+5362644	Kataloniyanın müstəqilliyi haqqında nə düşünürsünüz?
+5375620	Sənin üçün pis xəbərim var.
+5375652	Məncə səni həqiqətən sevirəm, Tom.
+5415699	Sizdə hansı şərabdan var?
+5998599	Mən indi sizə kömək etmək üçün heç nə edə bilmərəm.
+7463488	O üç dildə danışır.
+7463495	Sən bu gün tez yatmalısan.
+7463508	Tom axırıncı dəfə səninlə nə vaxt danışıb?
+7463516	Bu dəfə Tom və mən oynayırıq.
+7463517	Sən yavaş gedirsən.
+7463523	O köynəyini cırdı.
+7463572	Mən island dilini öyrənirəm.
+7463587	O kahı yuyur.
+7463667	O, yumurtalarını duzladı.
+7463688	Tom sərçələrin cikkiltisini eşidir.
+7463756	Çinə xoş gəlmişsiniz!
+7463773	O sabah Çinə yola düşür.
+8108606	Qışda üzmək sağlam adamlar üçün təhlükəli deyildir.
+8240440	Mən elə düşündüm ki sussam daha yaxşı olar.
+8240461	Bir-iki məsləhət istəyirsən?
+8241143	Danianın onu döyən Fadil ilə münasibəti var idi.
+8780153	Problemin nə olduğunu tam deyə bilmədim.
+8780157	Tom sorğu-sual üçün içəri gətirildi.
+8780443	Mən balaca olanda çox yaramazlıq edirdim.
+8802428	Mən Parisə səyahət etdim, ancaq yüksəklikdən qorxduğum üçün Eyfel qülləsinə çıxmadım.
+8803241	Tom deyir ki, o Mary-nin dedikləri barədə düşünür.
+8803369	Oğlanların qızlarla danışarkən yaşadığı ən böyük problemlərdən biri deməyə sözünün olmamasıdır.
+8805758	O banjoda ifa etməyi bacarır.
+8805775	Tom bildirdi ki, Mary John'un bunu tək etməli ola biləcəyini düşünür.
+8805777	Çox vaxt kiminlə badminton oynayırsan?
+8809135	Siz düzgün yerdəsiniz.
+8811806	Biz niyə fransız dilini öyrənməliyik?
+8821185	Onlar onu görmədilər.
+8821191	O başını aşağı saldı və öz-özünə nə isə donquldandı.
+8821219	Printerlərin tək işləmədiyi vaxt, sənin onlara ehtiyacın olan vaxtdır.
+8824533	Mən ona bir az su verdim.
+8827482	Tom Bostonu xoşladığını dedi.
+8829253	Günlərdir ki, Tom-u görmürəm.
+8829259	Kasıblıq bütün pisliklərin köküdür.
+8829302	Sənin böyük potensialın var.
+8854116	Shinto haqqında öyrənilməli çox şey var.
+8854125	Tom və mən, demək olar ki, eyni boydayıq.
+8854128	Tom onu saxlamaq üçün heç nə etmədi.
+8854155	Mən şübhə edirəm ki, Tom həqiqətən həkimdir.
+8856341	Tom fikirləşir ki, o Mary-dən daha yaxşı fransızca danışır.
+8856354	Tom bir də səni heç vaxt görməyəcək.
+8859657	Hər şeyi diqqətlə araşdıracağıq.
+8862394	Tom və Mary arzulayırdılar ki, onların daha çox asudə vaxtı olsun.
+8862397	Səndə özünəməxsus olan nədir?
+8862417	Mary öz qayğısına yaxşı qalır.
+8996476	Çox təşəkkür edirəm.
+8996480	Hər kəsin fikir və söz azadlığı vardır.
+9642283	Mən sənin kimi deyiləm.
+9643371	Su içmək istəmirəm.
+9686078	Gözlə, gözəl günlər bir gün mütləq gələcək.
+10233777	Əyləc yaxşı işləmir.
+10315238	Porto-Novo Beninin paytaxtıdır.
+10315240	Tom və Meri mənim xoşuma gəlmirlər.
+10315243	Mənə elə kömək lazım deyil.
+10315249	O düşünür ki bu maraqlı və əyləncəli olacaq.
+10315329	Gərək ayaqqabılarını təmiz saxlayasan.
+10474882	Saat altını keçmişdi.
+10846982	Azərbaycanın paytaxtı haradır?
+10874414	Mən qapını açanda onun yatdığını gördüm.
+11132326	Öyrənmək istədiyim bir şeylər var.
+11165402	Mənə bir şey tapdıqlarını söylədilər.
+11219817	İt əlimi dişləməyə çalışdı.
+11505960	Onlar tək qalmaq istədiklərini söylədilər.
+11864588	Suala cəvab verdi.
+11897328	Mən bəzən biraz fikirli oluram
+11909626	İnternet qəzetlərindən nadir hallarda xəbər oxuyuram.
+12009051	Mən ikiüzlü deyiləm.
+12020362	Yalnız birinci tərcüməni oxudum.
+12075586	O, gözlərini yumdu.
+12129120	Xahiş edirəm Tomu tapmağıma kömək et.
+12205170	Bu kitabı hansı dildən tərcümə etmisən?
+12205422	Qurğuşunsuz benzin almaq istəyirəm.
+12472237	Hər ölkənin öz bayrağı vardır.
+12886903	Xəstəliyin təsiri azalır.
+12886970	Bazar ertəsi məşğul gün olacaq.
+13040257	Ən sevdiyin şokolad növü hansıdır?
+13247366	Qar gecə vaxtı yağırdı.
+13312092	Bu hətta real sözdürmü?
+13312108	Səslə yazılmış mətn onu daha düzgün və asan oxumağa kömək edir.
+13312112	Hər ikinizə dünyanın bütün xoşbəxtliyini arzulayıram.
+13312139	Qatara oturmaq üçün kifayət qədər vaxtın var.
+13312141	Qırmızı gözlərim var.
+13312151	Bir qadının kiminləsə görüşdüyünü öyrənməyin ən yaxşı yolunu bilirsinizsə, mənə öyrədin.
+13312224	Aə, gəl oraya gedək.
+13312230	Kitabın bütün fəsli ona həsr olunub.
+13312243	Əla şahmat oyundan sonra mən bəzən ağlayıram.
+13312250	Ölkənizdə məşhur bir abidənin adını çəkə bilərsinizmi?
+13312296	İnsanlar qorxu ilə dolu idilər.
+13312309	O, artıq getdi.
+13312952	Evdə səhər yeməyi yedin?
+13313002	Onlar səssizcə ona baxırdılar.
+13313006	Tom qısqanc deyildi.
+13313152	Şəhərin mərkəzində çox qəşəng geniş mənzilimiz var.
+13313155	Onunla nə qədər yaxınsınız?
+13313177	Toma deyin ki, mən günahsızam.
+13313321	Günəş bizə işıq və istilik verir.
+13313404	Bu məqaləni kim tərcümə edə bilər?
+13313409	Tom harada olduğu barədə bir şey dedimi?
+13313413	Maşını təmir üçün emalatxanaya aparmalıyam.
+13313422	Tom Məryəmə Cona kömək etməsini söylədi.
+13313639	Kitabxana kitablarını sinifdə qoymayın.
+13313644	Məryəm çox işləyir, elə deyilmi?
+13313659	Çin restoranında idik.
+13313683	Narıncı hansı rəngdir?
+13314162	Mən heç vaxt ağlamırdım.
+13315226	Gedin onlardan soruşun.
+13315261	Sənə ehtiyacımız var, Tom.
+13315263	Bu onlara aiddir.
+13316404	Məryam Tomdan çamadanını daşımasını istədi.
+13316408	1887-ci il avqustun 9-da mən evləndim.
+13328318	Burada müzakirə edilən məsələlər - sərhədlərin delimitasiyası, siyasi öhdəliklər və ən əsası Zəngəzur dəhlizinin açılması sülhün konkret konturlarını müəyyən edir.
+13328338	İnsan haqları fəaliyyətinə görə SSRİ hökuməti tərəfindən on beş il həbs edilmiş, 1990–1999-cu illərdə Ukrayna Xalq Deputatı olmuş, Ukraynada ilk və ən görkəmli antikommunistlərdən biri kimi dövlət vəzifəsində çalışmışdır.
+13328339	O, iki dəfə Ukrayna prezidentliyinə namizəd olmuşdur.
+13328403	Python öyrənilməsi asan, güclü bir proqramlaşdırma dilidir.
+13328419	Tarixi Azərbaycan torpaqları müasir sivilizasiyanın inkişafa başladığı ən qədim mədəniyyət mərkəzlərindən biridir.
+13328420	Azərbaycanlılar həm də dünyanın ən qədim dövlətçilik ənənələrinə malik olan xalqlarındandır.
+13328437	1993-cü ildə xalqın tələbi ilə ümummilli lider Heydər Əliyevin hakimiyyətə qayıdışından sonra vəziyyət dəyişməyə başladı.
+13328491	1996-cı ildə Azərbaycan Texniki Universitetinin Mühəndis biznesi və menecment fakültəsini mühəndis-iqtisadçı ixtisası üzrə fərqlənmə diplomu ilə bitirib.
+13328498	Dövlət başçısının müvafiq Sərəncamlarına əsasən, 2016-2018-ci illərdə Mənzil İnşaatı Dövlət Agentliyinə rəhbərlik edib.
+13328546	Toma söz verdim ki, bunu bu gün edəcəm.
+13328563	Məktəb vaxtlarımda kriket oynayardım.
+13328602	Mən də sizlə gələ bilərəm?
+13328608	Tom hələ də çaş-baş idi.
+13328725	Telefon köşkünü harada tapa bilərəm?
+13328750	Bu kitabların yalnız bir neçəsini oxumuşam.
+13328779	Tom Meri ilə danışmağa razılıq verdi.
+13328820	İlham Əliyevin Ağdam və Xankəndiyə səfəri.
+13328821	Visit of Ilham Aliyev to Aghdam and Khankendi.
+13328908	1981-ci ildə Bakı şəhər 23 №-li orta məktəbi qızıl medalla bitirərək Nəriman Nərimanov adına Azərbaycan Dövlət Tibb İnstitutunun müalicə-profilaktika fakültəsinə daxil olmuşdur.
+13328910	1988-ci ildə İ.M.Seçenov adına Birinci Moskva Dövlət Tibb İnstitutunu fərqlənmə diplomu ilə bitirmişdir.
+13328914	1990–1995-ci illərdə Moskvada Elmi Tədqiqat Göz Xəstəlikləri İnstitutunda işləmişdir.
+13328922	2002-ci ilin oktyabrında Azərbaycan Gimnastika Federasiyasının prezidenti seçilmişdir.
+13328931	2004-cü ilin dekabrında Azərbaycan Respublikası Milli Olimpiya Komitəsinin IV Baş Məclisində MOK-un İcraiyyə Komitəsinə üzv seçilmişdir.
+13328950	2016-cı ilin iyununda Bakıda keçirilən Dünya Azərbaycanlılarının IV Qurultayında Dünya Azərbaycanlılarını Əlaqələndirmə Şurasının üzvü seçilmişdir.
+13328970	Bu Azərbaycan Respublikası Prezidentinin rəsmi internet saytıdır.
+13329092	Pişik qutudakı siçanı yeyir.
+13329097	Dənizdə üzmək xoşdur.
+13329118	Probleminiz odur ki, həddindən artıq düşünürsünüz.
+13329192	Keçən həftədən bəri bu kitabı oxuyuram.
+13329271	Mən bu kitabı keçən həftədən bəri oxuyuram.
+13329298	Dövlət başçıları əvvəlcə xatirə şəkli çəkdirdilər.
+13329665	Yaponiyanın ABŞ ilə böyük ticarəti var.
+13329672	Siqaret çəkə bilmərəm.
+13329683	Fransız dilini bilmirəm.
+13329684	Digərlərindən öncə çatdım.
+13329685	Heç vaxt xaricdə olmamışam.
+13329689	Onu bir də görməyəcəm.
+13329693	Bananları almalardan daha çox sevirəm.
+13329787	O, ingilis dilini öyrənmək üçün Amerikaya getdi.
+13329806	Boş vaxtlarımda şeir yazıram.
+13329807	Oxumağı yaxşı bacarıram.
+13329819	Ərköyün uşaqlardan xoşum gəlmir.
+13329824	Elə bil yorulmuşam.
+13329831	Qardaşınızda olan lüğətdən məndə də var.
+13329834	Məndə aşağı qan təzyiqi var.
+13329871	Məzən qayçıdan konserv açan kimi istifadə edirəm.
+13329881	Ev tapşırığımı bitirə bilmədim.
+13329956	Onun inandırmaq bir az vaxtımı aldı.
+13329968	Məktəbdən sonra tennis oynadım.
+13330104	Bu gün Xocalı şəhidlərinin ruhları şaddır. Prezident, Müzəffər Ali Baş Komandan İlham Əliyevin rəhbərliyi ilə çoxəsrlik tariximizdə bənzəri olmayan Vətən müharibəsi, eləcə də uğurlu antiterror tədbirləri nəticəsində respublikamızın ərazi bütövlüyü və suverenliyi tam təmin olunub, Xocalı şəhəri separatçılardan təmizlənib.
+13330123	Pythonda proqramlaya bilirsən?
+13330125	Piton ilanlarınız var?
+13330135	Google səni tanıyır.
+13330153	Ordubad Azərbaycanın Naxçıvan Muxtar Respublikasının ikinci böyük şəhəri və eyniadlı rayonun paytaxtıdır.
+13330216	Meri dincələ bilər.
+13330726	"Salam." "Və aleykim salam."
+13330775	Dalınızca yığışdırmaqdan bezdim.
+13330777	Arxanca yığışdırmaqdan yoruldum.
+13330784	İki xarici dil öyrənirəm.
+13330787	Bunun koşer olmadığını bilirəm.
+13330800	Çəkicini borc ala bilərəm?
+13330841	Mennad Bayanı sikir.
+13330927	"Niyə?" "Bilmirəm niyə."
+13330954	Qonaq Gürcüstanın Baş naziri İrakli Kobaxidzenin salamlarını dövlətimizin başçısına çatdırdı.
+13331480	Tom sizi tapdı?
+13331556	Düşünmürəm ki, Tom bunu ona kimin etdiyini bilir.
+13331560	Mən onu narahat etmək istəməzdim.
+13331564	Bu zarafatı illərdir ki, eşitmirdim.
+13331592	Siz Tomla danışın. Mən Meri ilə danışacam.
+13331601	Tom sənə bunu etməyə yardım edə bilər.
+13331628	Kompüterin yenə bip səsi çıxardı.
+13331637	Bilgisayarın yenə bip səsi çıxardı.
+13331741	Leyla 2006-cı ilin iyul ayında xərçəngdən öldü.
+13331812	O kollecə getdi.
+13331894	Tom kömək edə bilər?
+13331934	Tom və Meri övladlarına bunu etməyə icazə verməzdilər.
+13331943	Tomun şəxsiyyətini təqdir edirəm.
+13331946	O, konsertdə iştirak etmək üçün pul ödəyib.
+13331997	"Çay istərdizmi?" "Bəli, zəhmət olmasa."
+13332031	Avropada xoş vaxt keçirin.
+13332056	Estoniya, Belarus, Ukrayna, Gürcüstan və Azərbaycan Rusiya ilə həmsərhəd olan ölkələrdən bəziləridir.
+13332086	Tezliklə gəlib, məni görün.
+13332153	Ehtiyat açarım var.
+13332250	Zəhmət olmasa, rəhbərə xitab edin.
+13332289	Zəncirbəndin açıq qalıb.
+13332707	Sizə bir stəkan su gətirəcəm.
+13332740	Tom artıq Merinin ona nifrət etdiyini bilirdi, elə deyilmi?
+13332741	Qanunlara riayət etməlisən?
+13332755	"Nan hardadı?" "Mətbəxdə."
+13332770	Sən mənim tanıdığım ən ağıllı, ən seksual, ən gözəl qadınsan.
+13332787	Tomun bu çiçəkləri haradan aldığını bilirsən?
+13332793	Tomun bu gülləri haradan aldığını bilirsiniz?
+13332807	Tom dedi ki, Meri bunu etməkdə Condan daha cəld olacaq.
+13332826	Mən bütün həftə Tomla əlaqə saxlamağa çalışdım.
+13332852	O, sənin qədər sürətli qaça bilir.
+13333068	Onlar bir-biri ilə danışırlar.
+13333194	O çox mehriban qonşudur.
+13333208	Özünə inan və uğur qazanacaqsan.
+13333324	Əhəmiyyətli olan özünüz haqda özünüzün nə düşünməyinizdir.
+13333333	Bir müdrik ən pisi belə gülərək qarşılamalı idi.
+13333343	Cahillik bəladan qurtulmağın pis yoludur.
+13333359	Əxlaqın pozulması mədəniyyətlərin dağılmasına zəmin yaradır.
+13333373	Birinci şərt olmadan ikincisinə çatmaq çox çətindir.
+13333385	Hamımız həyatın qısalığından danışarıq da, boş keçən zamanlarımızı necə istifadə edəcəyimizi bilməyik!
+13334177	İnsan, məntiqli düşünən bir heyvandır.
+13334180	İnsanın günaha batmaq istəməməsi ilə istəyib-bacarmaması fərqli şeylərdir.
+13334202	O, deyir ki, sənin üçün bunu etməyəcək.
+13334209	İngilis dilinə gəlincə, heç kim mənə qalib gələ bilməz.
+13334214	Sabah yüz faiz orda olmayaca.
+13334263	Hələ də işdən ayrılmağı planlayırsız?
+13334288	Bu il etdiyin ən çılğın şey nədir?
+13334323	Sizi heç kəs tapmayacaq.
+13334938	Fransız dili dərsləri alıram.
+13334947	Ulduzları saya bilərsiz?
+13334951	Mən o məktəbdə praktiki olaraq heç nə öyrənməmişəm.
+13334956	Tom ya Avstraliyada, ya da Yeni Zelandiyadadır.
+13335039	Tom təhqir olunmuşdu.
+13335041	Tom mənə danışmağa qoymadı.
+13335053	Üç günə geri dön.
+13335924	Biz onu tapmalıyıq.
+13335968	Onlar məəttəl qalıblar.
+13342570	Əllərini yaxşıca yu.
+13342576	Məni vurmaqdan əl çəkin.
+13342598	Budur, bizim şərab siyahımız.
+13342604	Tom nahar sifariş etdi.
+13342613	Orda dayanın, Tom.
+13342618	Mənimlə evə gəlin.
+13342620	Gəlib, buna baxın.
+13343326	Mənə bir az buz gətirin.
+13343333	Mənə stəkan tap.
+13343337	Gününüz xoş olsun.
+13343342	Toma zəng vurmalısan.
+13343399	Bunu mənə görə elə.
+13343474	Tomun iki pişiyi var.
+13343498	Tom bilməli idi.
+13343503	Onlar sizi istəmirlər.
+13344208	Mən qəsəbəni tərk edirəm.
+13344212	Şikayət edə bilməzsiz.
+13344216	Toma de ki, xəstəyəm.
+13344227	Xahiş edirəm, qalmağa icazə ver.
+13344352	Gedib, Tomla danışın.
+13344382	İndi danışa bilərik.
+13344417	Bizi xəbərdar edin.
+13344423	Zəhmət olmasa pişiyi yedizdirin.
+13344460	Tom harda ola bilər?
+13344477	O, bir növ utancaqdır.
+13344522	Bu, hiylə deyil.
+13344534	Bu, it deyil.
+13344550	Gəl yanımda otur.
+13344851	Bu cihazda növbəti 2 saat ərzində soruşma.
+13344871	WebAuthn ilə uyğun cihazdan istifadə edərək doğrulayın.
+13344889	Bu nişanları çap edib, təhlükəsiz bir yerdə saxlayın.
+13344937	Ehtiyat nişandan istifadə edin.
+13344973	İki mərhələli doğrulamanı aktivləşdirmək üçün bu yardıçıdakı addımları izləyin.
+13344978	Hansı doğrulama metodundan istifadə etmək istədiyinizi seçin.
+13345002	Seçilmiş doğrulama metodu ilə bağlı problemlə qarşılaşdıq.
+13345008	Zəhmət olmasa, geri qayıdın və məlumatınızı düzgün daxil etdiyinizi yoxlayıb, yenidən cəhd edin və ya əvəzinə başqa doğrulama metodundan istifadə edin.
+13345077	O, ölməkdən qorxmur.
+13345084	Zəhmət olmasa e-poçt ünvanınızı daxil edin.
+13345148	Python istifadə edirsiz?
+13345363	Bunu aşağıda təkrar redaktə edə bilərsiz.
+13345401	Səbriniz üçün təşəkkür edirik.
+13345404	Problem sayt administratorlarına e-poçt vasitəsi ilə bildirildi və qısa bir zamanda həll olunacaq.
+13346020	Qəfil pəncərə qapadılır.
+13347286	Onunla nə qədər tez görüşə bilərəm?
+13347875	Düşünürəm ki, sənin getmək vaxtındır.
+13347878	Mən onu heyran etmək istəyirdim.
+13347890	Fərdi düzəliş oluna bilən xanalarda yadda saxlanılmamış dəyişiklikləriniz var.
+13347901	Əməliyyatı təkrar icra etməli olacaqsınız.
+13348093	Mənə diş çöpü verin.
+13348096	Bir də heç vaxt aşiq olmayacam.
+13348102	Onu olduğu yerə qaytarın.
+13348332	Mənə yardım elə, Tom.
+13348336	Keçi ot yeyir.
+13348346	Onlar ət yeyirlər.
+13348364	Telefonumun batereyası qurtardı.
+13348379	Gəl burda danışaq.
+13348393	Ayağa qalxa bilərsiz.
+13348402	Onun atası əla pianoçudur.
+13348405	İndicə Tom adlı oğlanla tanış oldum.
+13350173	Olar birinci mən gedim?
+13350177	Tomun evi hardadır?
+13350203	Tom kifayət qədər sərxoşdur.
+13350216	Buna çarə yoxdur.
+13350239	Tom gələn həftə Meri ilə zooparka gedə bilər.
+13350254	O, mənə aşiq oldu.
+13350267	Tom xoruldamadığını deyir.
+13350276	Biz insanıq, tanrı yox.
+13350494	Mənə elə gəlir ki, səni daha əvvəl görmüşəm.
+13350499	Get bir az yat.
+13350779	Onlar əl sıxdılar.
+13351998	Onlar bizə çatacaqlar.
+13352047	Onlar real deyillər.
+13352053	Hamısı çıxıb gedib.
+13352254	Tom acından ölməyəcək.
+13358511	Hansı diş ağrıdır?
+13358618	III Şuşa Qlobal Media Forumunun iştirakçıları ilə görüş keçirilib.
+13358635	Biz Azərbaycanın mədəni mərkəzinin bir hissəsi olan Xankəndi şəhərində sizi görməkdən şadıq.
+13358813	Tom yardım edir.
+13358818	Tom yas tutur.
+13361356	Tom panikaya düşdü.
+13361521	Tom mahnı oxuyur.
+13362091	Nə baş verdiyini heç kəs hiss etmədi.
+13362150	Daha sürətli sür.
+13363724	Çoxlu pulun var.
+13363735	Həmişə kaska taxıram.
+13363740	Ən qoca at 62 yaşına qədər yaşayıb.
+13363938	Tez qıdığım tutur.
+13363944	Getməyə davam elə.
+13363947	Vuruşmağa davam et.
+13363955	Döyüşməyə davam edin.
+13363982	Dırmanmağa davam edin.
+13364041	Gəlin hücum edək.
+13364043	İşləməyə davam elə.
+13364065	Gülümsəməyə davam edin.
+13364067	Oxumağa davam elə
+13364122	Ayrı yerə bax.
+13364131	Bir də bax.
+13364178	Burda heç nə yoxdur.
+13364768	Tom məndən iki dəfə böyükdür.
+13368218	Onlar istirahət elədilər.
+13368221	Onlar imtina etdilər.
+13368245	Fransız dili faydalı bir dildir.
+13368248	Fransız dili istifadəyə yararlı dildir.
+13368254	O, avtobusla gəldi, yoxsa qatarla?
+13368326	Onlar iştirak edirlər.
+13368349	Tom təsdiq etdi.
+13368368	Mənə cavab ver.
+13368863	Onlar mübahisə etdilər.
+13369000	Təkrar cəhd elə.
+13369778	Biz pulu yerə bölürük.
+13369792	O, sözlərimi təhrif etdi.
+13369882	Nə baş verdi?
+13369947	Sən Tom deyilsən?
+13370790	Məni tərk etməyin.
+13370795	Qəsəbəni tərk etməyin.
+13370825	Vikipediya pulsuz ensiklopediyadır.
+13370828	Sea Breeze Nardaranda yerləşir.
+13370845	Kəlbəcər Şimali Qarabağın qərbində, bölgənin rəsmi hüdudlarından kənarda yerləşən rayon olub Ermənistanla həmsərhəd idi.
+13371104	Qətnamə dərhal atəşkəs və hərbi əməliyyatların dayandırılmasını tələb etməklə, xüsusən mülki şəxslərə hücumlar və yaşayış məntəqələrinin bombardmanlarını qeyd etməklə, regionda beynəlxalq humanitar yardım səyləri üçün maneəsiz çıxışa çağırmaqla başlayıb.
+13371748	Ona əl vurma.
+13372031	Gəncəli Sabahi Mərənddə doğulub.
+13372077	Bütün aşkarlanan yaşayış məskənləri, ola bilsin ki, işğalçıların basqınları zamanı yanğınlar nəticəsində məhv edilib.
+13372539	Kavasakidə çoxlu fabriklər var.
+13372540	Məktəbdə siqaret çəkmək qadağandır.
+13372545	İsti çörək var?
+13372895	Yaponiyanın ən böyük dörd adası — Honşu, Hokkaydo, Kyuşu və Şikoku adası ölkə ərazisinin təxminən 97 %-ni əhatə edir.
+13372896	Yaponiyanın əhalisi 126 milyon nəfərdir və bu göstəriciyə görə dünyada 10-cu yerdədir.
+13372898	Böyük Tokioda 35 milyondan çox insan yaşayır, bu isə buranı dünyada ən böyük mitropolit bölgə və dünyada ən böyük ÜDM bölgəsi edir.
+13372900	Yaponiya haqqında məlumat verən ilk mənbə I əsrə aid olan Çin tarixi mətnləridir.
+13372906	XIX əsrin sonlarında, XX əsrin əvvəllərində — Yaponiyanın hərbi gücünün artdığı dövrdə Birinci Çin-yapon müharibəsi, Rus-yapon müharibəsi və Birinci Dünya müharibəsində əldə olunmuş qələbələr Yaponiyaya imperiya ərazisini genişləndirməyə imkan yaratmışdır.
+13372909	Siz ailə kimisiniz.
+13372911	Siz böyük bir ailəsiniz.
+13374182	Məhəmmədhüseyn Şəhriyar Azərbaycan dilində sanballı şeirlər toplusu yazan ilk İran azərbaycanlılarından biridir.
+13374345	Bu küçənin adı nədir?
+13374406	Özünüzü mənlə qarışdırmayın!
+13374449	Mənə sözlük alın.
+13374691	Qız çörəyi yeyir.
+13374959	Xəstəxanada qələbəlik var.
+13374981	Zəhmət olmasa, mənə ünvanınızı deyin.
+13375029	Mən satqın deyiləm.
+13375112	Mənim kofedən zəhləm gedir.
+13375129	Tom dükanı bağlayır.
+13375521	Bolqar dilində danışa bilirsən?
+13375763	Mən müəllimə deyiləm.
+13376073	İsrail səfirliyi hardadır?
+13376098	Onun qırmızı gülləri var.
+13376330	Bir nümunə gətir.
+13377625	Hər şey üçün təşəkkür edirəm.
+13377747	Tez-tez supermarketdə bir-birimizi görürük.
+13378284	Tom dindirilmək üçün gətirilib.
+13379291	Sami yenidən evləndi.
+13379892	Prezident İlham Əliyevi Birləşmiş Ərəb Əmirliklərinin vitse-prezidenti, Baş nazirin müavini, Prezident Divanının rəhbəri Şeyx Mansur bin Zayed Əl Nəhyan və digər rəsmi şəxslər qarşıladılar.
+13379929	994-cü ildən 2003-cü ilin avqust ayınadək Azərbaycan Respublikası Dövlət Neft Şirkətinin əvvəlcə vitse-prezidenti, sonra isə birinci vitse-prezidenti olub.
+13379948	Üç övladı, beş nəvəsi var.
+13379967	Tom məmnun deyil.
+13379969	Tom narahat idi.
+13379970	Tom fərqli idi.
+13379988	Tom dünyasını dəyişdi.
+13380017	Tom dava edirdi.
+13380023	Tom silahsız idi.
+13385569	Gördüm ki, Tom qorxur.
+13385667	Tomun performansını bəyəndim.
+13385682	Xalq qütbləşmiş vəziyyətdədir.
+13385789	Tomla əlaqən var?
+13385797	Tomu intihara sürüklədin.
+13389268	Buna görə gözləməyə dəyməz.
+13389287	Bir saat altmış dəqiqədir.
+13389356	Tom donuz boydadı.
+13389440	40 dənə qəhbə bir araya gəlsə, sənin kimi bicbala doğa bilməz.
+13389461	Fikir adamı sikir.
+13393639	Tom çimərlikdə kef elədi.
+13393650	Qədeş submədəniyyəti 1950-ci illərdə yaranmışdır.
+13393805	Mağazanın pəncərəsi daşla sındırılmışdı.
+13393806	Vitrin daşla sındırıldı.
+13393808	Siqaretin və yandıranın var?
+13393811	Kitabın mənimkinin iki qatıdır.
+13394041	Tom kömək etmək üçün gəlib.
+13394056	Tom və Meri çox yaxın idilər.
+13395621	Heç bir sübut yoxdur.
+13395622	Bir dənə qalıb.
+13395624	Bir dənə də var.
+13398858	Siz şanslısınız ki, belə yaxşı işiniz var.
+13399472	Təhlükə halında bu düyməni sıxın.
+13411179	Yox, mən sizin atanızam.
+13411181	Axındakı su soyuqdur.
+13414734	Tom, mən sənin atanam!
+13416698	O, daha yaxşıdır, elə deyil?
+13418961	Meri onu istədi.
+13423173	Tom məktəbə getməməyə başladı.
+13430622	O, qrip səbəbindən çox öskürüb.
+13498643	Qaranlıqda təkbaşına nə edirsiz?
+13498650	İstixana şəraiti ekzotik bitkilərin inkişafına kömək etdi.
+13498653	Güclü liderlər müxtəliflikdən qorxmur.
+13518345	Onun səhvinə niyə bu qədər əsəbiləşdin?
+13518360	Niyə bu qədər çox oxuyursan?
+13518410	Tom bizi çox işlədir.
+13518427	Onları buradan çıxart.
+13518429	Bu manqo şirindir.
+13518494	Səncə də bu qəribə deyil?
+13518497	Onlar gecə boyunca işlədilər.
+13522629	Onların çıxış yolu yoxdur.
+13522630	Çıxış yolun yoxdur.
+13522666	Mənim problemim səninki ilə eynidir.
+13522680	İngilis zooloqu və primatoloqu Ceyn Qudoll 91 yaşında vəfat edib.
+13522694	Türkiyə mətbəxinə aid olan mənəmən adını İzmirin eyniadlı ilçəsindən alıb.
+13522697	Ramiz Mehdiyev professor Kamilə Əliyevanın və fövqəladə hallar nazirinin müavini Teymur Mehdiyevin atasıdır.
+13522709	Polisə zəng elə!
+13522742	İstədiyiniz kimi edin.
+13522745	Əli xarab olan telefonunu qarantiyaya göndərdi.
+13527382	Oleq bir də geri dönmədi.
+13527401	Bir şüşə su ver.
+13603532	Avstriyada avtomat satış aparatından siqaret ala bilərsiz.
+13603607	Kişi həkim istəyirsiz yoxsa qadın?
+13615686	Əl fənəriniz var?
+13617701	Meri partiyə açıq çiyinli don geyinmişdi.
+13617703	Meri açıq çiyinli don geyindi.
+13617756	Onun kompüteri qoşuludur.
+13618765	Tom arvadını tərk etdi.
+13618775	Tom bilir ki, bunu etməməlidir.
+13618782	Tomun həbs olunduğunu bilirəm.
+13618930	Tomun bunu etməyəcəyini bilirəm.
+13618954	Tomun bunu bir daha etməsi inandırıcı deyil.
+13619573	Bütün sərnişinlərdən qatarı tərk etmək tələb olundu.
+13619601	Bütün heyət yorğundur.
+13619613	İkisi arasında hansı daha bahalıdır?
+13619667	Aşağıdan qüssəli mahnı səsi gəlir.
+13619674	Elə gəldi ki, salamlaşmaq belə yadımdan çıxdı.
+13619709	Necə də ensiz pilləkənlərdir.
+13619735	Daha çox una ehtiyacımız var.
+13619776	İki nəfərdən biri getməlidir.
+13620162	Buna görə ailəmə təşəkkür edirəm.
+13620167	Hələ də düşünürəm ki, aramız düzələ bilər.
+13620784	O, İslamı qəbul etdi.
+13620828	Qələm ruhun dilidir.
+13620835	Bunu etmək nə qədər çətin ola bilər axı?
+13620863	Qapı axıra qədər bağlanmayıb.
+13620867	Tanrının hər yerdə olduğunu hiss edirsən?
+13620955	Sehrbaz özünü aslana çevirdi.
+13621008	Ukraynadakı müharibə Qərbə daha baha başa gəldiyini sübut edir.
+13628431	Tom karateni harda öyrənib?
+13632367	Bizə o gecə nə baş verdiyini de.
+13632373	Onu sizdən öyrənmişəm!
+13632404	Tomun yaxşı arqumenti var.
+13632458	Ona yardım etmək üçün əlindən gələni etdi.
+13632468	Heydər Əliyev adına Beynəlxalq Hava Limanı, Azərbaycanın altı beynəlxalq hava limanından biridir.
+13632479	Tokio və ətrafındakı bir neçə prefekturanı əhatə edən Böyük Tokioda 35 milyondan çox insan yaşayır, bu isə buranı dünyada ən böyük mitropolit bölgə və dünyada ən böyük ÜDM bölgəsi edir.
+13632501	E.ə. 500-cü ildə başlayan Yayoi dövründə yerli əhali Çin və Koreya vasitəsilə çəltik yetişdirmək, yeni tərz dulusçuluq, metallurgiya kimi məşğuliyyətlərlə tanış olmuşdur.
+13632523	XX əsrin əvvəllərində qısa müddət davam edən "Tayşo demokratiyası" dövründə ekspansionizm və militarizm daha çox əhəmiyyət kəsb etməyə başlamışdır.
+13632573	Tom və Meri bunu edə bilməyəcəklərini dedilər.
+13632886	Tom iş tapdığı üçün şanslı idi.
+13632914	O, qolumu çimdiklədi.
+13632919	O, bizə ikibaşlı cavab verdi.
+13632922	O, bizə məmuniyyətlə köməklik göstərdi.
+13633296	Tom indi hardadır?
+13635470	Məktəbə piyada gedə bilərsən, yoxsa avtobusa minməlisən?
+13635521	Bütün bunlar necə baş verə bilər axı?
+13635548	Bugün qəmgin görünürsüz.
+13636648	Möhkəm qaçsan qatara çatacaqsan.
+13636652	Zəhmət olmasa, onu xüsusi çatdırılma ilə göndərin.
+13637210	Ev qarın ağırlığı altında çökdü.
+13638462	Bu velosiped qardaşımınkıdır.
+13638522	Növbəti dəfə daha yaxşı oxuya biləcəksən.
+13638523	Növbəti dəfə daha yaxşı oxuya biləcəksiz.
+13638537	Növbəti dəfə sizi nə vaxt görə bilərəm?
+13638548	Gələn ikinci günü, yəni Sentyabrın 10-u sənlə görüşəcəm.
+13638660	Hər zaman olmalı olduğum qədər nəzakətli deyiləm.
+13638664	Sənə xəbərlərim var.
+13638684	Dağ dumanın altında bulanıqlaşmışdı.
+13638688	Dumandan başqa heç nə görmədik.
+13638845	Bunun üçün çox yaşlanmışam.
+13638849	Çəkici hara qoydum?
+13638850	Üç bacıdan ən cavanı mənəm.
+13638853	Doğum günündə harda idin?
+13639351	Meri özünü masaj etdi.
+13639354	Adətən çimərliyə gedirəm.
+13639356	Kitabını böyük maraqla oxuyacam.
+13639357	Bu, tam qaneedici deyil.
+13639358	Tom və Meri dedi ki, bunu niyə etmək istədiyini başa düşmürlər.
+13639373	Onunla bir saat boyunca dünya barışı haqqında mübahisə etdim.
+13639474	Onlarla işləyə bilmərəm.
+13639476	Onunla işləyə bilmərəm.
+13639481	Mən onunla işləyəcəm.
+13639511	Onunla bir kəlmə danışmaq istəyirəm.
+13639544	Onunla danışmağa getdim.
+13639558	Mən WhatsApp endirdim.
+13639572	Biz kinonu endirdik.
+13639575	Mən kinonu endirdim.
+13639597	Sami bu videonu yüklədi.
+13639601	O, video yüklədi.
+13639605	Ziri yeni video yüklədi.
+13639652	Kompüterim Linux istifadə edir.
+13639671	Linux azad əməliyyat sistemidir.
+13639692	ABŞ-yə xoş gəldiniz.
+13640514	ABŞ-də insanlar ingilis dilində danışırlar.
+13640551	Biz FTB agentləriyik.
+13640591	Onunla indi danışmaq istəyirəm.
+13640596	Öncə onunla danışmaq istəyirəm.
+13640649	Onunla danışmağa cəhd göstərim.
+13641143	Onlarla heç vaxt danışa bilməmişəm.
+13641164	Birinci onunla danışmalıyam.
+13641241	Bizimlə danışmaq istəmirsiz?
+13641244	Onunla danışmaq istəmirsən?
+13641262	Asta gedən yorulmaz.
+13641279	Sİ etibarlı təlimçidir?
+13641296	Sİ xəstəlikləri dəqiq müəyyən edə bilir?
+13641306	Orban açıq şəkildə Aİ-yə meydan oxuyur.
+13641316	Monteneqro Aİ-na qoşulmaq istəyir.
+13641330	SSRİ nə deməkdir?
+13641398	Verilənlər bazası dolub.
+13641415	Məhəmməd Əmin Rəsulzadə 1884-cü ildə Novxanıda anadan olub.
+13641769	Boldinin sıravi bir adam olduğu ortaya çıxdı.
+13642016	Bu ifadəni Azərbaycan dilinə tərcümə edə bilərsiniz?
+13642018	Tomun fikrincə, dünyada futboldan daha maraqlı heç nə yoxdur.
+13643998	O, sol əlini yaraladı.
+13644026	Adriano İslama nifrət edirdi.
+13644039	Tom qrafik dizaynerdir.
+13644067	Özbaşıma işləməyi üstün tuturam.
+13644073	İslam şərabı qadağan edir.
+13644079	O, İslam haqqında kollecdə oxuyanda öyrəndi.
+13644080	Tanrı haqqında ilk dəfə o vaxt öyrəndim.
+13644089	O, İsanın Tanrı olduğuna inanmır.
+13644125	Onun anası müsəlman oldu.
+13644149	Bizə niyə kömək etmirsən?
+13644185	Yad adamlarla danışma.
+13644187	Tanımadığın adamlarla danışma.
+13720383	Bu, həqiqətən də yaxşı bir məktəbdir.
+13761323	Ceyn əsəbi idi.
+13846639	Bu, Sİ tərəfindən yaradılıb.
+13887965	Onlar tezliklə gedəcəklər.
+13888001	Mən daha da azad olmaq istəyirəm.
+13888026	Bağışlayın. Tomun bacısı qəzadan bəri heç kiminlə danışmayıb.
+13888096	Axmaqdan məsləhət alma, yeyərkən danışma.
+13938955	Mənim özümü sikən lazımdır.
+14011278	Əlaqəli sahəyə görə birbaşa sıralama aparmaq, EventDate cədvəli ilə JOIN əməliyyatı icra edəcək və birdən çox tarixi olan tədbirlər üçün hər tarixə görə sətirlərin çoxalmasına səbəb olacaq. Əvvəlcə aqreqat funksiya ilə annotasiya etmək isə sıralamadan öncə bu sətirləri yenidən hər tədbir üçün tək bir sətir halına gətirir.
+14034786	Bu gün sadəcə bazara getdim.
+14037446	Bu adamı heç kəs görməyib.
+14037456	Hələ də iş başındayam.
+14050758	Burada qalmağı bir gecə də uzada bilərəm?
+14050766	Onların əlcəkləri cüt deyil.

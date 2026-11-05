@@ -39,6 +39,16 @@ const WAVE1 = [
   ["galician", "Galician", "spain"],
   ["esperanto", "Esperanto", "easy"],
   ["afrikaans", "Afrikaans", "easy"],
+  ["azerbaijani", "Azerbaijani", "standard"],
+  ["turkmen", "Turkmen", "standard"],
+  ["uzbek", "Uzbek", "easy"],
+  ["kurmanji", "Kurdish (Kurmanji)", "turkish-q"],
+  ["yoruba", "Yoruba", "standard"],
+  ["igbo", "Igbo", "standard"],
+  ["hausa", "Hausa", "standard"],
+  ["wolof", "Wolof", "standard"],
+  ["hawaiian", "Hawaiian", "standard"],
+  ["maori", "Māori", "standard"],
 ] as const;
 
 const ROOT = new URL("../../../", import.meta.url);

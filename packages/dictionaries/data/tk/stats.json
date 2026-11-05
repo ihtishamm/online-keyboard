@@ -1,0 +1,15 @@
+{
+  "source": "tkwiki.xml.bz2",
+  "pages": 8352,
+  "sentences": 115075,
+  "repeatedSentencesSkipped": 14575,
+  "tokens": 1296105,
+  "distinctWords": 167414,
+  "wordsKept": 49166,
+  "nextWordHeads": 6452,
+  "text": "tk-train.txt",
+  "textSentences": 6027,
+  "textWeight": 6.7,
+  "heldOutPages": 184,
+  "heldOutSentences": 1219
+}

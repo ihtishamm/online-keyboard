@@ -35,6 +35,9 @@ const GAPS: Record<string, string[]> = {
   "pa-Arab": ["ur"],
   ks: ["ur"],
   ug: ["en"],
+  ig: ["en"],
+  mi: ["en"],
+  wo: ["en"],
   tg: ["en"],
   da: ["en"],
   mt: ["en"],
@@ -58,6 +61,7 @@ const FALLBACK: Record<string, string> = {
   "zh-Hans": "zh",
   // CLDR files Norwegian's annotations under no; Bokmål's own nb file is empty.
   nb: "no",
+  kmr: "ku",
 };
 
 /** Every registry language's tag (language.json "lang"), sorted. */

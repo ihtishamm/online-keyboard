@@ -1,0 +1,12 @@
+{
+  "source": "wowiki.xml.bz2",
+  "pages": 1811,
+  "sentences": 24125,
+  "repeatedSentencesSkipped": 5393,
+  "tokens": 490917,
+  "distinctWords": 37338,
+  "wordsKept": 11233,
+  "nextWordHeads": 4228,
+  "heldOutPages": 34,
+  "heldOutSentences": 319
+}

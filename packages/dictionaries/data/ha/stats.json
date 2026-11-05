@@ -1,0 +1,15 @@
+{
+  "source": "hawiki.xml.bz2",
+  "pages": 33367,
+  "sentences": 623685,
+  "repeatedSentencesSkipped": 78410,
+  "tokens": 11221483,
+  "distinctWords": 255398,
+  "wordsKept": 83575,
+  "nextWordHeads": 9365,
+  "text": "ha-train.txt",
+  "textSentences": 21620,
+  "textWeight": 31.31,
+  "heldOutPages": 668,
+  "heldOutSentences": 2000
+}

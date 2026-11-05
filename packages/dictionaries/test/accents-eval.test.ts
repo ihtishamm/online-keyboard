@@ -35,6 +35,8 @@ const scores: Record<string, Recorded> = existsSync(RESULTS)
   : {};
 const recorded: Readonly<Record<string, Recorded>> = structuredClone(scores);
 
+const SMALL_SAMPLE: Record<string, number> = { tk: 1000, mi: 500, wo: 300, haw: 300 };
+
 describe("smart accents", () => {
   for (const code of Object.keys(LATIN_LOCALES)) {
     if (only && only !== code) continue;
@@ -71,8 +73,9 @@ describe("smart accents", () => {
           score.restored >= TARGET && score.wrongChanges / score.plainWords <= MAX_WRONG;
         if (dev) return;
         scores[code] = { ...score, meetsTarget };
-        // Smaller Wikipedias (Faroese, Scottish Gaelic) have fewer than 2,000 usable sentences.
-        expect(heldOut.length).toBeGreaterThanOrEqual(1500);
+        // Smaller Wikipedias (Faroese, Scottish Gaelic) have fewer than 2,000 usable sentences,
+        // and the smallest fewer still: their scores are published with that sample size.
+        expect(heldOut.length).toBeGreaterThanOrEqual(SMALL_SAMPLE[code] ?? 1500);
         if (process.env.EVAL_WRITE === "1") return;
         expect(recorded[code], "results/accents.json is up to date").toEqual(scores[code]);
         if (recorded[code]?.meetsTarget) {

@@ -43127,6 +43127,7 @@ Caq
 3ðarF
 2lsingørC
 2rnandezC
+2ydərF
 1idreolaíochtF
 2larioB
 3árioF
@@ -46117,7 +46118,8 @@ Caq
 2ḥyáG
 1ehudaD
 1ixiānG
-1outubálaíD
+1olŋuB
+2utubálaíD
 1ucatánB
 1ólaisD
 1úcatanG
@@ -46559,8 +46561,10 @@ AaE
 2ógB
 1ustrālisE
 2ßerE
+1zərbaycanB
 1íochD
 3dhD
+1ɡəsˠE
 0bPailísF
 3ncógC
 3rasF
@@ -49203,6 +49207,7 @@ BíC
 2fféranceE
 3reáilteD
 4iúlF
+2llərindəF
 2ngeánF
 3imítC
 7eF
@@ -52924,6 +52929,7 @@ DaD
 3thC
 2manD
 2pasB
+1əC
 0mAnnálaF
 1BadA
 3hámaíE
@@ -54480,6 +54486,7 @@ AaD
 2túD
 2íosachA
 8aF
+1əF
 1̪ˠC
 0obrádlannC
 1chtagánachF
@@ -55380,6 +55387,7 @@ BighF
 2maE
 4íE
 2rógaF
+1əF
 0quienF
 2ébécoiseD
 0rabhcháinB
@@ -57880,6 +57888,7 @@ AeE
 3chonsanD
 3litirD
 2tachD
+1əD
 1͡siG
 0uachtaránachC
 2fásaighG
@@ -57993,6 +58002,7 @@ AeE
 6íB
 5fadhE
 3óirE
+1əG
 0weißG
 1ojewództwoC
 1ātisD
@@ -58601,7 +58611,6 @@ AeE
 5nnB
 4tearB
 1tG
-0ðeE
 0ócaidíG
 4rG
 3rC
@@ -58761,4 +58770,5 @@ AeE
 0ƏbülfəzD
 0ȮraD
 0ɔ̃E
+0ɣəG
 0ḤasanE

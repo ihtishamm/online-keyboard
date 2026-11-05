@@ -146,7 +146,26 @@ const ONE_LETTER: Record<string, string> = {
   eo: "aeo",
   la: "aeioō",
   af: "",
+  az: "o",
+  tk: "",
+  uz: "u",
+  kmr: "e",
+  yo: "o",
+  ig: "ọ",
+  ha: "",
+  wo: "a",
+  haw: "aeio",
+  mi: "aeio",
 };
+/**
+ * Uzbek writes oʻ and gʻ as letters, and an apostrophe sign (maʼno); Hawaiian's ʻokina is a
+ * consonant (Hawaiʻi). Web text has these in several look-alikes: one form each, kept in the word.
+ */
+const UZBEK_RUN = /\p{Script=Latin}(?:[\p{Script=Latin}\p{M}]|[-'’‘ʻʼ`](?=\p{Script=Latin}))*/gu;
+const HAWAIIAN_RUN =
+  /[ʻ‘'’]?\p{Script=Latin}(?:[\p{Script=Latin}\p{M}]|[-ʻ‘'’](?=\p{Script=Latin}|[ʻ‘'’]))*/gu;
+const uzbekLetters = (w: string) => w.replace(/([oOgG])['’‘ʻʼ`]/g, "$1ʻ").replace(/['’‘`]/g, "ʼ");
+const hawaiianLetters = (w: string) => w.replace(/['’‘]/g, "ʻ");
 /**
  * Maltese, Irish and Scottish Gaelic write articles and prefixes with a hyphen (il-kelb,
  * t-uisce, h-uile): a word of its own, or every noun would be listed once per article.
@@ -157,8 +176,19 @@ const LATIN_RUN_NO_HYPHEN = /\p{Script=Latin}(?:[\p{Script=Latin}\p{M}]|·(?=\p{
 const FOREIGN: Readonly<Record<string, ReadonlySet<string>>> = {
   la: new Set("the of and to for by on from with at is as an be this that".split(" ")),
 };
+/**
+ * Letters of other languages that small Wikipedias quote often enough to reach the top of a
+ * list: Sorani in Latin letters on the Kurmanji Wikipedia, IPA and Khoisan clicks on the
+ * Hawaiian and Māori ones. Words with them are not words of the language.
+ */
+const OUTSIDE_THE_ALPHABET = /[\u0180-\u02BA\u02BC-\u02FF]/u;
+const ALIEN: Readonly<Record<string, RegExp>> = {
+  kmr: /[řŘ]/u,
+  haw: OUTSIDE_THE_ALPHABET,
+  mi: OUTSIDE_THE_ALPHABET,
+};
 /** Where the Wikipedia is not named after the data code (Norwegian Bokmål is on nowiki). */
-const WIKI: Readonly<Record<string, string>> = { nb: "nowiki" };
+const WIKI: Readonly<Record<string, string>> = { nb: "nowiki", kmr: "kuwiki" };
 /**
  * Turkish writes the endings of a name after an apostrophe (Türkiye'nin, Tom'un). The ending
  * is part of the word, not a word of its own: it is matched with the name and cut off, so
@@ -175,15 +205,27 @@ const latin = (code: string): TextRules => ({
   sentenceEnd: LATIN_SENTENCE_END,
   run: SUFFIX_AFTER_APOSTROPHE.has(code)
     ? LATIN_RUN_SUFFIX
-    : HYPHEN_SPLITS.has(code)
-      ? LATIN_RUN_NO_HYPHEN
-      : LATIN_RUN,
+    : code === "uz"
+      ? UZBEK_RUN
+      : code === "haw"
+        ? HAWAIIAN_RUN
+        : HYPHEN_SPLITS.has(code)
+          ? LATIN_RUN_NO_HYPHEN
+          : LATIN_RUN,
   joiners: /\s/g,
   normalizeWord: (raw) => {
-    let word = normalizeLatin(raw.replace(/['’].*$/u, ""));
+    let word =
+      code === "uz"
+        ? normalizeLatin(uzbekLetters(raw))
+        : code === "haw"
+          ? normalizeLatin(hawaiianLetters(raw))
+          : normalizeLatin(raw.replace(/['’].*$/u, ""));
     // Romanian writes ș and ț with a comma; older text has the cedilla look-alikes ş and ţ.
     if (code === "ro" && word) word = word.replace(/[şţŞŢ]/g, (c) => ROMANIAN_COMMA[c]!);
+    // Turkmen's ň is often typed ń (soń for soň): same word, and only ň is in the alphabet.
+    if (code === "tk" && word) word = word.replace(/ń/g, "ň").replace(/Ń/g, "Ň");
     if (word && FOREIGN[code]?.has(word.toLowerCase())) return null;
+    if (word && ALIEN[code]?.test(word)) return null;
     if (word === null || [...word].length > 1) return word;
     return ONE_LETTER[code]!.includes(foldLatin(word, LATIN_LOCALES[code]!)) ? word : null;
   },

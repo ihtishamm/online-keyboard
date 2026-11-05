@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+2502690	Kitap sende barmy?
+3720257	Sen meniň bilen geljek.
+3720270	Sen kim bilen gitjek?
+3720272	Men ol ýere gitjek.
+3720276	Men häzir gitjek.
+3720281	Sen kinoteatra gitjekmi?
+3720282	Sen ol ýere gitjekmi?
+3720401	Men saz diňleýärin.
+3720418	Ol radio diňleýär.
+3720419	Men bir aýdym diňleýärin.
+3720426	Emily saz diňleýärdi.
+3720451	Men hemişe saz diňleýärin; onsuz ýaşap bilmem.
+3720525	Bu meniň saýlamam.
+3720696	Meniň bir maşgalam bar.
+3834249	Ol ýagşy däl.
+3834999	Leanne-iň gök gözleri bar.
+3835007	Men Aşgabada gidýän.
+3836901	Çagalar durmuşymyzyň gülleridir.
+3838207	Diri balyk suw astynda ýüzýär.
+3932527	Ol meň ejem.
+3933469	Maňa taksi gerek!
+3936595	Men bir kitap okadym.
+4061498	Täze ýylyñyz gutly bolsun.
+4380991	Ejemiň gözleri kör boldy.
+4845713	Ol, ölümden örän gorkýar.
+7577897	Meniň iýesim gelenok.
+7579235	Otly haçan ugraýar?
+7579253	Men her gün mekdebe gidýärin.
+7579262	Sag boluň, oňat.
+7587510	Men söz berýärin.
+7879468	Hemme kişi üçin ýeterlik nahar barmy?
+7879476	Olar bu günler başga jaýda ýaşaýarlar.
+7879500	Men Toma duýduryş bererin.
+7879501	Biz Toma näme bolandygyny bilmeýäris.
+7883924	Ol näme üçin şeýle gülkünç?
+7884240	Men aydym diñlemegi halaýaryn
+7884259	Bir hepdede ýedi gün bar
+7884779	Ýaz paslynda tebigat örăn owadan
+7885035	Tom netijeler üçin gynanandyr öýdemok.
+7885062	Meseläni nädip çözmelidigini maňa aýt.
+7885109	Mende biraz kynçylyk ýüze çykdy.
+7885126	Sen düýn näme etdiň?
+7885145	Milletparazlyk hat-da telewizorda hem bar.
+7885364	Sen himiýa okaýaňmy?
+7885379	Erbet endikden dynmak aňsat däl.
+7885435	Walentina Tereşkowa Sowet Soýuzyň Gahrymany ady bilen sylaglandy.
+7885445	Şu dynç güni, söz berýän.
+7885456	Grammatikany biraz öwrenmäge çalyş.
+7885460	Laýla türmede ýekeje gün hem ýaşap bilmezdi.
+7885461	Gapy ussasy gapy üçin 500 sany kerpiç gerekdigini hasaplady.
+7885466	Men seni alymdyr diyip pikir etdim.
+7885469	Leýla heňkirmäge dowam etdi.
+7885492	"Dogrymy aýtsam, men beýiklikden gorkýaryn." "Sen gorkak."
+7885644	Sami şol sesi eşidip bilýär.
+7885646	Exceli ulanmak aňsat däl.
+7886195	Meniň gürleşesim gelýän aýratyn bir kişim bar.
+7886226	Ne Tom, ne-de Meri Awstraliýa gidip görmediler.
+7886262	Garry adam öler ýaly açlyk çekdi.
+7886405	Torbalar onuň yzynda üýşürilip goýlupdy.
+7886441	Ol Hytaýa 2014-nji ýylyň oktýabrynda geldi we köp wagt geçmänkä özüni Taýwanda rahatlyk bilen ýerleşdirdi.
+7886444	Siz haçan Toma muny etmäge rugsat bermeli diýen netijä geldiňiz?
+7886922	Ol oz mashynyny hepdede bir gezek yuwyar
+7886924	Sen klassika dinleyanmi?
+7887143	Ol öz yan yoldaşy bilen nikasyny bozdy.
+7887189	Men örän gowy diňleýji.
+7887202	Meniň gözlerim gök reňkde
+7887502	Bu örän owadan.
+7887514	tom öz dostlaryna örän wepaly.
+7887539	Sami öz durmuşyndan ýadady.
+7887555	Sami sagat ondan ikä çenli işledi.
+7887565	Olar öz naharlaryny bişirýärler.
+7887574	Mary maňa Bostonda öý satyn alandygyny aýtdy.
+7887586	Tom we Meri öz oturmaly ýerlerinde otyrlar.
+7887587	Hemmämiz bileje Bostona gidäýsek nähili bolar?
+7887600	Sami Laýladan birnäçe ýaş ulydy.
+7888239	Sen Kanadan haýsy ýerinden bolarsyň?
+7888276	Onuň nähili ýakyndygyny gördüňmi?
+7888338	Tom özüniň muny etmäge aşa uly ýaşly diýip pikir edendigini aýtdy.
+7888345	Tom her gün irden ýedide turýar.
+7888408	Şu golaýda awtobus duralgasy barmy?
+7888412	Ony aşak goýuň!
+7888442	Meri Tom bilen ýaşdaş.
+7888446	Meri Toma aç däldigini aýtdy.
+7888456	Iň soňunda islänimizi gazandyk.
+7888457	Seniň Tom bilen oturmagyň hökmançylygy ýok.
+7888461	Gyşky dynç alyşyňdan lezzet aldyňmy?
+7888499	Sen ol gyza ses bermekçimi?
+7888501	Dogruçyl bolmak kyn.
+7888528	Tom köplenç duşenbeler öýde bolýar.
+7888536	Tom meniň bilen Bostona gider.
+7888537	Olar ony edendikelrini ret etdiler.
+7888558	Howa guranda, suwsadýar we üsgülewige getirýär.
+7888577	Men ony özbaşdak edibilerdim diýip pikir edýärin.
+7888602	Sen ol gyzy gabandyňmy?
+7888603	Tom we Meriniň satmak isleýän üç sany goşmaça bileti bar.
+7888606	Tom maňa kömek etmekçi, şeýle dälmi?
+7888608	Biz Tom bilen oktýabryň ýigrimisine gürleşeris.
+7888630	Masaru şugun öýlenýär.
+7888636	Pişik öz sebedinde.
+7889495	Ýagyş ýagmasyny goýýança, daşaryk çykjak däl.
+7889523	Ol ýarawsyz däl.
+7889525	Sýuzanyň eşikleri hapa.
+7889597	Bu öýjükli telefon.
+7889612	Ýaşaýşyň özi siziň mugallymyňyz we siz hemişe öwreniş halatyndasyňyzdyr.
+7889626	Tom näçe pul ogurlapdyr?
+7889729	Men bu soraga jogap berip bilmeýärin.
+7889734	Tomuň daşky keşbi üýtgäpdir.
+7889755	Kakam dynç almaly. Ol üç sagatlap bakçamyza işledi.
+7889784	Men Tomyn oran meshurdygyna gen galyan
+7892816	Bir elde băş barmak bar.
+7892822	Tomusda kőplenç doňdurma iýýăris.
+7892912	Tom garaşmaly bolar.
+7892936	Men hemişe bilyärdim ogullyga (gyzlyga) alnandygymy.
+7893023	Toma gitmäge taýýardygymyzy aýt.
+7893040	Ol bize garaşjakdygyna söz berdi.
+7893818	Bu Tomuň tigri.
+7893828	Haýyş edýän maňa syry aýdaýyňda?
+7893863	Bular gijeki gülleriň bir görnüşi.
+7893865	Indiki ýygnak tomuň täze ýaşaýan ýerinde bolar.
+7893888	Eger birazajyk çalt ýörän bolsak, wagtynda ýetişip bilerdik.
+7893893	Biz meseläni çözmäge synanyşýarys.
+7894519	Men işe girmek üçin arza ýazdym.
+7894521	Seniň ogluň näçe ýaşynda?
+7894622	Tom we Meri ýaly adamlar her aý näçe pul sowýar diýip pikir edýärsiň?
+7894637	Tomuň aýalynyň ady Meri we onuň oglunyň ady Horeýs.
+7894665	Tom ýaşamak üçin bir ýer tapmalydy.
+7894678	Ol maňa otagyna girmegi ret etdi.
+7894684	Sen Tom we Mary seniň dostlaryň diýdiňmi?
+7894694	Ol bu zady başaryp biljegini aýtdy.
+7894696	Sami öz pişigini Farid diýip atlandyrdy.
+7894777	Sami jynsy geýenok.
+7896188	Ýagyş möwsümi haçan gutarýar?
+7896256	Men şol awtobusa münmedim, şonuň üçinem men şu wagt öýde däl.
+7896358	Sizem birbada başlap bilersiňiz.
+7896363	Ol (gyz) ýaranok diýýärler.
+7896372	Tom hiç haçan ýeke söz aýtmandy.
+7896374	Ol (oglan) öz goňşusyny ýigrenýär.
+7896381	Olar şony etmejekdiklerini aýdýarlar.
+7896405	Öýde galmak içgysgynç bolýar.
+7896406	Öýde galmak içgysgynç.
+7896413	Meniň ruçkamy ulanyp bilersiň.
+7896414	Meniň ruçkamy ulanyp bilersiňiz.
+7896415	Tomuň ene dili - fransuz dili.
+7896434	Her ýekşenbe güni tennis oýnamak islärmidiň?
+7896438	Men ömürem nämäniň ýalnyşdygyny bilip bilmedim.
+7896439	Olar özleriniň galmaklyga soralandygyny aýdýarlar.
+7896449	Çyralary öçürsem bolardymyka?
+7896454	Tom biz utup bilerdik diýip pikir edendigini aýtdy.
+7896463	Polisiýa bizi tussaglady.
+7896469	Ir säher turmagy halaýan adamlardan tanaýanym diňe siz.
+7896470	Ir säher turmaklygy gowy görýänlerden meniň bilýänim diňe siz.
+7896471	Ir säher turmaklygy gowy görýänlerden meniň bilýänim diňe sen.
+7896472	Tom bergä batdy.
+7896473	Bu öň bolupdy.
+7896708	Men Fadiliň kimdigini bilmeýärin.
+7896709	Sen Okinawada bolup gördüňmi?
+7896715	Geliň asudalygymyzy goraly
+7896716	Sen meniň oglum.
+7896726	Siz dürli şertlere uýgunlaşmalysyňyz.
+7896953	Garyp adamlara äsgermezlik etme.
+7897444	Tom adalat islemändi. Ol ar almak isläpdi.
+7897559	Aýalym bilen ýaman işe düşdüm öýdýärin.
+7898356	Men Tomy duruzmaly.
+7898369	Men müýnimi almana başladym.
+7898551	Meri adatça öz dostlary bilen.
+7898561	Tom bilen Meri özleriniň görnüşleri ýaly uly däl.
+7898693	Men diňeje hiç hili ýalňyşlyk goýbermändigimden ynamdar bolmak isledim.
+7898698	Men Tomuň özüni nähili duýşuny kesgitli bilýärin.
+7898818	Ol saz diňläp otyrdy.
+7898824	Meri Bostonda bir jaý satyn alandygyny maňa aýtdy.
+7898836	Men Tom bilen jaňlaşmaly.
+7898895	Olar barada alada etme. Olar bahyllyk edýärler.
+7898910	Men şol soraga jogap beribilemok.
+7898913	Men özümi ýalňyz duýýaryn. Şol sebäpden Facebookda juda köp dostum bar.
+7898919	Edere başga zadyňyz ýokmy?
+7898932	Ol ukuda ýaly göründi.
+7898962	Şol şarfy nireden satyn aldyňyz?
+7898966	Tom uzakly gün işledi.
+7899010	Ýok, men toý etmedik.
+7900291	Men Tom-a aýdym aýt diýmedim.
+7901998	Bu Kanadaly kompaniýa.
+7902334	Tom adatça mekdebe ir gitýär.
+7902339	Tom ýygnagy alyp bardy.
+7902367	Men Tom bilen Jonyň örän işli adamdyklaryna ynanýaryn.
+7905044	Ol bilen nirede tanyşanymy düşünýäň
+7905046	Dekabr aýynda sowuk bir gijede aradan çykdy.
+7905076	Kesel bolanyňa ynanýaňmy?
+7905086	Muny düýn nirede etdiň?
+7905092	Sami Feýsbukda Leýlany yzarlaýardy.
+7905094	Sami birnäçe günlerden bäri garaşýar.
+7905119	Dykgatly boljakdygyny aýtdylar.
+7905126	Polisiýa para almaly däl.
+7905161	Fransuzça menden gowy gürleýärsiň.
+7905168	Biz näme üçin garyp?
+7905317	Gyz dostuň barmy?
+7905326	Bu örän takyk kesgitlenmedikdir/ nämälimdir.
+7905339	Onuň esasy gyzyklanmasy taryhdadyr.
+7905350	Sen örän batyr / mertsiň.
+7905389	Sen Tom we Meria ony etmeligine rugsat berdiň.
+7905409	Gruppa 1791-de ir ýapyldy.
+7907433	Tom kömek etmek üçin elinden gelenini etdi.
+7907801	Seniň soňky sapar ses bereniň haçan bolupdy?
+7907821	Men köpçülikde düzeldilsem halamaýaryn.
+7907836	Meniň jübimden otlyda pullar ogurlandy.
+7907843	Toma hiç zat barada aladalanmak gerek däldir.
+7908557	Aşgabat ak şäher.
+7911161	Seniň pasport nomeriň näme?
+7911178	Nämedigine garamazdan, siz akylyňyzy şoňa berip, hakykatdanam ony isleseňiz, oňa ýetip bilersiňiz.
+7911200	Men siziň hemmäňize bil baglabiljegimi bilýärin.
+7911214	Tom başga-da görkezme berdimi?
+7911225	Olar örän çalt ösýärler.
+7911241	Suwly grafini maňa uzadyň.
+7911242	Suwly küýzäni maňa uzat.
+7911243	Şol döwürler ýagdaýlar şeýledi.
+7911249	Men işiňizi size yzyna bermegi teklip etmek islärdim.
+7911264	Ben we men oňuşamzok. Biziň hiç hilli meňzeşligimiz ýok.
+7911270	Şu ýerden hekaýa geň we elhenç bolup başlaýar welin, men hatda ony okamagymy goýubilemok.
+7911901	Dokuz müňden ýokaryda!
+7911904	Tom Bostonyň eteginde kiçi bir obada ýaşaýar.
+7913347	Kompyuterde işlăp bilmeklik peýdaly we gyzykly.
+7913349	Bu sapak bize düşnükli boldy.
+7914473	Bu tigir oglan doganymyňky
+7915087	Oňa uniwersitetde duşdyňmy?
+7915107	Soňky wagtdan bäri köp üýtgedi.
+7915151	Häzir ony görmeseň has gowy.
+7915190	Gülleriň ikisem deň bahada
+7915204	Bütün ýyl bärde maýyl.
+7915211	Tomuň geljegi näbelli.
+7915237	O oglany söýýändigini o gyz aýtdy.
+7915242	Marya Tom aşyk bolandygyny gowy bilýärin.
+7915808	Hiç kim şagyzyny gülmäge mejbur edip bilmez.
+7915813	Onuň eşitmegini islämok.
+7916226	Ol taksi sürüji.
+7917220	Iňlisçe arkaýyn gürläp bilýär.
+7917241	Her gün iňlisçe öwrenýär.
+7917244	Iňlisçe we ýene swahiliçe gepleýär.
+7917260	Stansiýada söýgülisine garaşdy.
+7917380	Tom kompýuterimi ulanmak üçin bärik geldi.
+7918199	Bu gyz orän uzyn.
+7918202	Olar bu oýuny gowy gördüler.
+7918208	Men muny barlaryn.
+7918218	Ol bir zat ýazdymy gündeligine düýn?
+7918223	Düýn ol bir zat ýazdymy gündeligine?
+7918238	Ol ýene öñki zatlardan gürrüñ edip başlady.
+7918241	Ol oglan ýene bolup geçen zatlardan gürrüñ edip başlady.
+7918273	Men muny düşündirerin birden düşünmeseñ.
+7918288	Men muny saña düşündirerin birden bilmedik ýagdaýyñda.
+7918301	Men muny ol oglana düşündirerin birden bilmedik ýagdaýynda.
+7918361	Haýyşt, sowadyjynyñ gapysyny ýapaýda.
+7921585	Tom öz aýaly bilen gelermi ýa-da ýeke özi?
+7921600	Hepde-de näçe gezek kinoteatyra film görmane gidýäñ?
+7921625	Tom ol işi ýerine ýetirmekde birinji boldy.
+7921639	Tom Maryniñ familiýasynam bilenok eken.
+7921670	Sen Hudaýyñ barlygyna ynanýarsyñmy?
+7923095	Soňra,otly durýança şygyrdy.
+7923231	Siz häzir meşhur.
+7923233	Tomuň getirmegimi isleyän zadyny getirdim.
+7923237	Tomuň ýygnaga gatnaşmalydygyny oýlamaýaryn.
+7923240	Sami birneme wagtlap ýoga etdi.
+7923304	Sami häzir elli 50 ýaşynda.
+7923311	Men bilen hiç haçan gepleşmemegiňi aýdypdym.
+7923314	Mary aňyna geldi.
+7923454	Bu başyma gelip biljek iň gowy zatdy.
+7923502	Oňa bir şans bermeli men.
+7924536	Tom Awstraliýaly we Meri Täze Zelandiýaly.
+7924545	Meriniň şony edendigingen Tomuň habarynyň bardygyny men bilýärin.
+7924546	Bu derýa şeýle bir hapalanan welin, balyklar onuň içinde mundan artyk ýaşabilmezler.
+7924594	Tom saňa şony nädip etmegi aýdardy diýip pikir etmedim.
+7924626	Meniň saňa on dollar borjum bar.
+7924632	Biriniň meniň adymy tutandygyny eşitdim.
+7924644	Munuň adalatly däldini siz bilýärsiňiz.
+7924650	Men seniň özüňi her gün diňe üç ýa dört setir, islendik kitapdan, islendik dilde, kelläňe gelibiläýjek iň dogry we iň kaşaň iňlis diline terjime etmäge ulanmagyňy islärdim; munuň seniň stiliňi döretjekdigini sen duýmarsyňam we ol saňa endige öwrülen nepislik berer. Bu seniň günde on bäş minudyňam almaz.
+7924662	Ol muny bir däl, iki gezek etdi.
+7925378	Muny etmegiň dym gowy boljakdygyna karar berdim
+7929014	Men kän syýahat etmeýärin.
+7929015	Bu seniñ ýalñyşyñdyr öýdemok.
+7929018	Howa bulutlaşyp barýar.
+7929026	Siziñ ýüregiñiz gysýar.
+7929031	Ol öz aýalyny urup otyrdy.
+7929048	Tomyñ sungata höwesi bar.
+7929054	Gowy oka yogsa synagdan geçip bilmersiñ.
+7929065	Tom haýwanyñ şekiline meñzeýän buludy gördi.
+7929103	Ol kitaby gutaryp barýar.
+7929127	Ol oglan üşäp baranok.
+7929131	Ol ýeke sözem jogap bermedi.
+7929142	Ol köp wagt giç gelýar.
+7929173	Siz öýüñizde näçe sany haýwan saklaýarsynyz?
+7929523	Öň Fuji dagyna dyrmyşdym.
+7929570	Lukman bolmak isleýärin.
+7929663	Tom we Mary buny etmägä rugsatlarynyň ýokdygyny aýtdylar.
+7929697	Açarymyň nirededigini bilýärsiňizmi?
+7929699	Bäh! Maňa görkezäýdä.
+7929716	Aýdanlarymyň hemmesi dogry boldy.
+7929786	Tom howply hasaplanýar.
+7930486	Sen ony aýdyp bilýäñmi?
+7930512	Olaryň ýaş babatda tapawudy dört ýaşdan kän bolup bilmezdi.
+7930520	Tom ýaş, emma ol günäsiz däl.
+7930525	Biz dogry netijä gelendiris diýip men umyt edýärin.
+7930536	Tom Bostondaky uýasyny görmäge gitdi.
+7930538	Tom Bostondaky aýal doganyny görmäge gitdi.
+7930554	"Bu gulaklar kimiňki?" "Olar Mikki Mausyňky."
+7930570	Siz maña düşünmediñiz.
+7930585	Siz suwy sowadyja goýduñyzmy?
+7930598	Orkid güli meñ iñ gowy görýän gülüm.
+7930601	Men onuñ yzyndan ýetmek üçin gaty çalt ylgadym.
+7930615	Ol gyz bütin gününi aglap geçirdi.
+7930627	Orkid güli onuiñ iñ gpwy görýän güli.
+7930660	Men düşunemok näme üçin ol zadýñ wajyplygyny.
+7930712	Sen Tomuň Maryny halamadygyny nädip bildiň?
+7930713	Ol gyz garaşdy.
+7930742	Biz olara aýdarys.
+7930938	Tomyň eşikleri ezilen ýaly çyg.
+7930965	Sen okuwa haýsy etegiňi geýjek bu gün?
+7931011	Ol zadyň dört sany aýagy bar, agaçdan ýasalan we aşhanada ýaşaýar.
+7931028	Ýeri, olary hem özimiz bilen alyp gideli.
+7931046	Olar okap otyr.
+7931047	Ol Portugal gitara çalýar.
+7931050	Men Tom bilen Meriniñ ony näme sebäpden etmediklerini bilýärin.
+7931055	Albert üçin muny öwrenmek añsat.
+7931098	Ol gyz maña ol ýerde garaşjak bolýarmy?
+7931113	Toma maşynyny nirä goýmalydygyny aýdyp bilýän barmy?
+7931115	Iň ýamany ýalňyzlykdan mahrum bolmakdyr.
+7931217	Tom menden ertir gelmegimi sorady.
+7931239	Ol hemme zady bilmek isleýär.
+7931332	Onuñ kompýuteri öz ýatagynda.
+7931383	Biz bu biznisyzmyz bilen hiç zat edip bilmeýäris.
+7931387	Ol gyz öz şlýapasyny tapyp bilenok.
+7931390	Men onuñ bir zat diýesi gelýänligini duýýaryn.
+7931396	Ol seniñ ony bilýäniñi bilýär.
+7931415	Hares ýüzüp bilýär.
+7931418	Men puly gowy görýärin.
+7931429	Sen soñunda geldiñ.
+7931440	Çaga seretmek üçin sabyrly bolmaly.
+7931456	Dän duş hem etmedi
+7931460	Bu hekaýa bolgusyz
+7931468	Tom we Mary muny özleri edip biljeklerdigini aýtdy
+7931480	Men nemes dilinde gürlämok ýöne olary gowy görýärin
+7931498	Belli boluşy ýaly Tom Bostondaky uniwersitede gitmelidi.
+7931509	Tom bilen Mery ýeke däldirler diýip umyt edýärin.
+7931537	Fadil Laylany Rami bilen tanyşdyrdy.
+7931539	Men şol işe ýüz tutmany pikirlenýärin.
+7931545	Tom gapyny gulplap bilmedi, sebäbi ýalňyş açary bardy.
+7931557	Tom Marynyň şo karary alanyna düşünip bilmedi.
+7931558	Bu gezek hatynda ogrular,jenaýatçylar hakda ekeni
+7931565	Tom Marynyň näme aýtjak bolanyna düşünip bilmedi.
+7931570	Tom aýtmaga ýerlikli sözleri oýlap bilmedi.
+7931572	Tom synanyşmakdan başga hiç zadyň pikirini edip bilmedi.
+7931631	Arzan otelde gijämizi geçirdik.
+7931658	Tom bilen Mery nirede bolmalylaryny bilýändirler diýip pikir edemok.
+7931670	Stansiýanyň öňünde çüwdürim bar.
+7931691	Bir-ä saç guradýanymy ogurlapdyr.
+7931754	Hellowin Demirgazyk Amerika oduň töwereginde hasyly gutlaýan, arwah hekaýalary paýlaşýan, aýdym aýdýan we pal atýan Ýewropaly immigrantlar tarapyndan getirilendir.
+7931809	Tom we Mary özleriniň ýetişdiren gök-önümlerinden başga hiç zat iýmeýärler.
+7931892	Ýüzüjiler suwa girýärler.
+7931900	Tomyň zähmet şertleri gowydy.
+7932198	Bu sözlemi terjime etmek düýbünden gadagan.
+7932277	Men diýişim ýaly ýerine ýetir.
+7932303	Sami käwagt Layla bilen işleýärdi.
+7932415	Tom mana entek name etmelidigin aytmady.
+7932416	Sen öz pikirini aytmaly.
+7932424	Ol gutyda name bardygyny bilemokdym.
+7932428	Bizin filosofiyamyz yonekey.
+7932436	Biz ir gaytmaly dal ekenik.
+7932463	Men gaty sesi esitdim
+7932468	Tom ol yere wagtyna bardymy?
+7932470	Men Tomy tutmak ucin ylgap bilsimden calt ylgadym.
+7932508	Men kömek edip biljek birini tanaýaryn.
+7932510	Tom bilen Mary ol ýere gidip bilmejeklerini aýtdylar.
+7932779	Tom maňa ynanmak islemedi.
+7932785	Tom islegine ýetmek üçin elinden gelenini eder.
+7932789	Tom toparda bolanlygy üçin begençli
+7932852	Meni bagyşlaň, ýöne biz indi öýe gitmeli.
+7932859	Gedaý özüniň konserwa gutusyndaky ujypsyzja teňňesini şyňňyrdatdy.
+7932869	Ol düýn agşam nirede bolupdyr?
+7932883	Meri ömürboýy şol ýerde ýaşady.
+7932907	Tomuň kompýuteri döwlen.
+7932908	Bu mazaly başagaý ýere meňzeýär.
+7932924	Ol elhenç aýdym.
+7932926	Tom kitap okamak isleýär.
+7932946	Tom üýtgemäge isleg bildirmeýän ýaly göründi.
+7932953	Men belki hut Tomuň eden zadyny ederin.
+7932967	Tom meniň okadan çagalarymyň iň gowularynyň biri.
+7932978	Her kim sen dälisiň diýip pikir edýändir öýdemok.
+7932980	Men günortandan öň örän açdym.
+7932981	Tom meniň welosipedimi bejerdi.
+7932986	Tom ýatmaga synanşýar.
+7932992	Size tizräk email ýazmandygym üçin meni bagyşlaň.
+7933004	Tom her gezek Bostona gelende, Merini görmäge gidýär.
+7933025	Ol saňa kömek etdi, şeýle dälmi?
+7933091	Tom we Mery Bostonda bir ýyldan kän ýaşamaly bolmaz diyip umyt edýärler.
+7933106	Sen ony Tom üçin edersiñä, şeýle dälmi?
+7933123	Sami öz gepleşigine taýýarlanýardy.
+7933393	Eger señ Mera soragyñ bar bolsa, ony özünden sora.
+7933394	Saňa meniň razylygym gerek däl.
+7933405	Tom şol bada uklap galdy.
+7933406	Tom we men şol Park köçesindäki öýi satyn aldyk.
+7933410	Tom şony asla eden däldir.
+7933427	Siz Tomuň okaýan mekdebinde okaýarsyňyzmy?
+7933477	Tom Mara kakasynyň ýaşaýyş üçin näme edýändigini sorady.
+7933478	Gün gysga, edere bolsa zat kän.
+7933498	Bagyşlaň, men düşünemok. Biraz haýalrak gaýtalap bilersiňmi?
+7933499	Men onuň bulary görip oturmasyny islemeýärin.
+7933517	Onuñ öz ýolbaşçysyna doly ynamy bar.
+7933525	Onuñ özüne gaty göwni ýetenokdy.
+7933538	Biz muny kesgitledik.
+7933542	Ogry gaçyp gutuldy.
+7933554	Men nämä garaşmalydymy bilmedim.
+7933556	Ol özbaşdak ýaşaýar.
+7933582	Edilmeli işi Toma iki gezek aýtmagymyñ geregi ýok.
+7933598	Tom bilen Mery nähili aýdym diñlemegi halaýarlar?
+7933629	Tomuň nämä meňzeýändigini bilýärsiňizmi?
+7933630	Tomuň nämä meňzeýändigini bilýärsiňmi?
+7933668	Tom we Mery ony ertir etjekdiklerini aýtdylar.
+7934338	Bu ýuwaş bolar diýip umyt edýärin.
+7934370	Ol düzmesini täzeden ýazmaly boldy.
+7934374	Men Tom bilen ýekelikde gürleşmek islärdim.
+7934377	Geçen agşam Semi hiç gözüni ýummady.
+7934434	Men miweli içgini seýrek içýärin.
+7934438	Tom öz äýnegini nirede goýandygy barada geňirgendi.
+7934454	Mery hemmeler bilen gödek, şeýle dälmi?
+7934456	Sämi hiç zat almaz.
+7934497	Tom dört ýaşyndaka gyzamyk çykardy.
+7934500	Sämi Youtubeda wideo ýasady.
+7934519	Semiñ Leýla biraz duýgusy bardy.
+7934539	Tom bilen Meryny ol gyzyklandyrmaýana meñzeýär.
+7934555	Tomyñ pula gaty zerurlygy bardy.
+7934566	Konsertiň näçe wagt dowam etjekdigini men bilemok.
+7934584	Islesem hem saňa aýdyp bilmeýän.
+7934589	Semi Leýlanyñ öz ýanyndan geçip gidenini gördi.
+7934625	Semi itleriniñ ikisini daşaryk aýlamana çykardy.
+7934652	Meniň arkam soňky döwür ýene ýaramazlaşdy.
+7934655	Tom Meriniň şony etjekdigini bilýändigini aýdýar.
+7934686	Maňa diňe onuň bilen gürleşmek gerek.
+7934725	Meniñ Tomyñ ony etjegine ynamym ýok.
+7934727	Semi ikinji gatda ýaşaýar.
+7934750	Tom göwni çökgün görünýär.
+7934808	Onuñ endamynyñ ähli ýerinde ýaralaryñ yzlary bar.
+7934889	Tom kellesini ýaýkady we otagdan çykyp gitdi.
+7934916	Tomyñ aýagy ýalañaç däldi emma Meryñky bolsa şeýledi.
+7934925	Semi henizem polisiýany çagyrmakdan boýun gaçyrýardy.
+7934951	Men Awstraliýa gitmäne sabyrsyzlyk bilen garaşýan.
+7934969	Mery ony edýändigini aýdýar.
+7934983	Tom münkür bolup bilýär.
+7935065	Meniň işimi isleýärmiň?
+7935742	Semi özünu örän oñaýsyz duýdy.
+7935926	Ol sizden maňa içalylyk etmegi soradymy?
+7935930	Sen özüň üçin meniň Toma içalylyk etmegimi isleýärsiňmi?
+7935931	Biz haçan sapaklara gatnap başlarys?
+7936336	Men Tomyň Ýapon naharlaryny barlamak isläp biljegini pikir etdim.
+7936344	Biz öwrenmegi täsirli, gyzykly we täsin etmek isleýäris.
+7936353	Men ony has irräk etmelidim.
+7936359	Ol özüniň täze işini halaýar.
+7936360	Marslylar ýer şaryny ele aldylar.
+7936367	Tom meni diňlemezdi.
+7936374	Tom we Meri görünmeseler näme bolar?
+7936375	Tom köplenç ýokary tizlikde sürýär.
+7936378	Tomuň näme edip biljegini gördüň.
+7936379	Ejeň bilen beýle gepleşme.
+7936405	Biz siziň gyzyklanýanlygyňyza minnetdar.
+7936410	Olar ulaglarynyñ açarlaryny ýitirdiler.
+7936493	Men dostdan köprägi.
+7936497	Uýaň nädip ýogaldy?
+7936508	Laýla gitmek isledi.
+7936514	Tom bilen Meriniň hakykatdanam fransuz dilini öwrenýändiklerini ýa öwrenmeýändiklerini bilesim gelýär.
+7936521	Tom bilen Meri giç agşama çenli daşarda galsalar halamok.
+7936538	Siz bu dermany lukmanyň derman haty bolmazdan satyn alyp bilmersiňiz.
+7936546	Tom däldigime men begenýärin.
+7936562	Tom Meriniň tolgunmandygy aýtdy.
+7936567	Men siziň kakaňyzyň maslahatyna eýermelidim.
+7936570	Men seniň kakaň maslahatyny almalydym.
+7936604	Köp sag bol, Tom, ýöne hökman däl.
+7936611	Men Tom ýeke geler diýip pikir etdim.
+7936620	Tom şol barada örän bilesigeliji.
+7936625	Meniň gyzymdan daşda dur!
+7936642	Men hakykatdanam şony siziň bilen etmek isledim.
+7936649	Tom dikuçar sürübilýän hiç kimi tanamaýandygyny aýtdy.
+7936790	Men ony onuñ ýaly edesim gelenok.
+7936935	Semi Leýlany has gowy tanaýardy.
+7936953	Düýn Tom ony nirede etdi?
+7936962	Maña lemonly çaý getirip beräý.
+7936967	Meniñ öñ motorym bardy.
+7936984	Mery özüne $3,000 hödürländiklerini aýtdy.
+7937018	Men oña bir gezek kömek edipdim.
+7937031	Mery Tomyñ ýeke özi bolar diýip pikir edendigini aýtdy.
+7937037	Sen maşyn satyn aldyñmy?
+7937084	Siz çöregi kesip otyrsyñyz.
+7937095	Olar gygyryp bilmeýär çünki olar köp wagt mundan öñ ölen adamlar.
+7937121	Tom sen birzatlar iýdiñmi?
+7937139	Siz gelip kömek edip bilýäñizmi?
+7937149	Biz kiçijik ýurtda ýaşaýarys ýöne bu ýerde hemme adam biri-birini tanaýar.
+7937185	Biz bu ýere günäkärlemäne gelemzok.
+7937198	Ol oglan musury tokaýa zyñdy.
+7937200	Ol galyndylary tokaýa zyñdy.
+7937211	Mery aglajak bolýar, şeýle dälmi?
+7937229	Men ol gyzdan garaşmagyny soradym, ýöne meni ol terk etdi.
+7937239	Tom agşamlyk taýýarlap otyr.
+7937244	Tom alty metr uzyn
+7937245	Men hiç kimi oldüresim gelenok.
+7937260	Biz öz howlymyzy satdyk.
+7937265	Men çilim çekmäne kömek edip bilmeýän.
+7937295	Tom bilen Meryñ bolýan ýerinde gar ýagýar.
+7937298	Men seni söýmekde däli bolýan.
+7937302	Men Merini nähili özüme aşyk edip bilerin.
+7937304	Men nähili onuñ ynamyny gazanyp bilerin?
+7937328	Siz geçen aý naçe eser okadyñyz?
+7937333	Sen fransuz kitaplary kän okaýañmy?
+7937343	Meniñ kitaphanamda azajyk fransuz kitaplar bar.
+7937351	Mery hassahana ýaramaýandygy üçin gitdi.
+7937359	Men sebäpli ýüze çykan problemalar üçin ötünç soraýaryn.
+7937383	Sen oña men barada gowy zat aýdyp bilýäñmj?
+7937403	Tom näme üçin bärde? Ol okuwda bolmala.
+7937413	Mery öýlänki ýygnakda boljagyny aýtdy.
+7937432	Men Berber dilini öwrenmek isleýärin.
+7937447	Indi maña iberme muny
+7937455	Meniñ gaty kän öý işim bar.
+7937460	Men ol ýere gitmäne gaty ýaltanýaryn.
+7937491	Ol özünden başga hiç kimi günäkärläp bilenok.
+7937504	Ol bagy satmadygyny aýtdy.
+7937508	ol oglan bagy satmadygyny aýtdy.
+7937544	Sen muny edip bilmerin öýtseñ etme.
+7937551	Sen bu gutyny nähili açdyñ?
+7937555	Bu gutularyñ üstünde oturma.
+7937556	Bu ýer agşam sowuk bolýar.
+7937562	Men bu ýerde sagat 2:30-da saña garaşyp oturaryn.
+7937568	Sen haýsysynda witamin C bardyr öýdýäñ, almadamy ýa-da üzümde?
+7937574	Meniñ pikirimçe Toma äýnek gerek.
+7937606	Maña öz islän möçberimi tölemediler
+7937619	Men seniñ maña garry diýeniñe ynanyp bilemok.
+7937622	Ol gyz gepi ýaýradýar
+7937646	Sen muny oña bermeli
+7937650	Sen muny ol gyza bermeli
+7937663	Ol oglan saña näçe töleýär?
+7937917	Tom bilen Mery özlerine bir zat bolar öýdip gorkýardylar.
+7937929	Hic zat bolmaly.
+7937939	Semi şuny halanok.
+7937977	Mana komek et.
+7938027	Bu meñ aşyk bolan mugallymym.
+7938179	Tom Marynyň Fransuzça bilýändigini düşünýändigini aýtdy.
+7938195	Bir synpda biz.
+7938199	Ellerini stola degdi.
+7938200	Bular seniň saüýlawlayň.
+7938206	Menden topy zyňmagymy isledi.
+7938222	Bu günlerde birnäçe myhmanlarymyz boljak
+7938227	Biz adatça Iňlisçe gürleşýäris.
+7938232	Tomuň muny etmesine näme üçin rugsat bermeýärsiň?
+7938237	Saminiň öýi ýykylan ýagdaýda.
+7938350	Aýalymyň meni iş ýerimde telefon etmegini halamaýaryn.
+7938393	Ýagyşdan soñra howa arassalanýar.
+7938396	Iýul aýy tomusyň iñ yssy aýydyr.
+7938399	Tebigatyñ beren baýlygyny tygşytly ulanmaly.
+7938406	Tom hemme soraglary assajykdan jogaplady.
+7938407	Tom hemme soraglary jogaplap biljek ýaly akyllydyr.
+7938417	Men meňzeş birnäçe soraglary özime berýärin.
+7938421	Sizden bir kino soragy sorajak
+7938423	Biz sorag kabl etmeýäris.
+7938430	.Hakykatdan hem soragym ýok/
+7938432	Men öýleden soňra işleýärin.
+7938438	Tom baskançaklarda göründi.
+7938482	Saňa Merini halamak hökmän däldir. Sen diňe ol bilen işlemelidirsiň.
+7938483	Aýdan zadyňy ýerine ýetir we eden zadyňy hem aýt.
+7938491	Onuň pikiriçe ol diňe "A" (göreldeli) baha alar.
+7938498	Olar üns berip eşidip otyrlar.
+7938500	Tom gözýaşlaryny tutup bilmedi.
+7938510	Bu seniň ýeke-täk mümkinçiligiň.
+7938517	Üç ýyl ýaly bilelikdedik.
+7938523	Bu ruçka näçeden?
+7938530	Tom oňa gürrüňsiz ses bermedi.
+7938538	Bir zatlar asgyçdan asylgydy.
+7938540	Ol öz ýaşyna seredeniňde uly görünýär
+7938567	Muny döredenleriň biri men.
+7938568	Polisiýa Saminyň durmuşy barada köpräk öwrendi
+7938587	Tom Mary üçin hot-dog aldy.
+7938588	Tom we Meri ruçkalaryny gözlediler
+7938589	Sen soragnamany doldurdyñmy?
+7938590	Kimiň dosty sen?
+7938636	Tomyñ ýeñmäne hujuwy ýokdy.
+7938665	Tom dykkatly bolmalydygymy aýtdy.
+7938676	Rifler biziň okeanlarymyzyň owadan we möhüm bolegi bolup durýar
+7938692	Sami Laýlanyň gyzy barada sorap başlady
+7938740	Tom onuň erbet ýadawdygyny aýtdy.
+7938743	Tom meşguldygyny aýtdy
+7938745	Tom Fransuzça okandygyny aýtdy.
+7938749	Meniň kodym ýadymda däl.
+7938751	Täze sözler her gün döreýär.
+7938758	Ol ony satyn aljakdygyny aýtdy.
+7938779	Semi Leýlañ ýarawsyzdygyny bilýär.
+7938783	Tom Mary gaçandyr öýtdi.
+7938790	Tom hiç zat soramady.
+7938793	Olaryň iki sany ajaýyp çagalary bar
+7938807	Anne birden-kä duýdy, egerde ol entäk hem Antoninyň halamagyny gazanmasa-da, ol näme bolsa-da onuň hormatyny gazandy.
+7938810	Aşak düşüň we agşamlyk edniň
+7938832	Tom şuny etmek isleýändigiňi aýdanlaryň biri däl.
+7938855	Muny indi etmezsiňiz diýip umyt edýen.
+7938857	Maryniň Tumblrde blogy bar.
+7938877	Näme üçin ýakyn wagtlarda Bostona gitmediň?
+7938882	Şonuň üçin Tom Maryny halamaýar.
+7938885	"Men hem öwretmägi halaýaryn" diýip Gilbert aýtdy.
+7938889	Şuny etmegimiň gerek däldigini bilýärsiň, şeýle dälmi?
+7938893	Anna mekdebiň gapysyny gulplady we öýüne gitdi
+7938907	Eger Mary bärde bolsady Tom ýalňyz bolmazdy diýip pikir edýärin.
+7938937	Öňkisi ýaly Tom bilen habarlaşyp bilemok.
+7938964	Şu wagt meselä ünsümi berip bilmerin.
+7938967	Ol pul üçin öýlendi.
+7938973	Üçden biraz minut geçdi
+7938974	Häli üç bolanok
+7938975	Hemme zatlarym şu ýerde.
+7938997	Tomuň ýanynda oturmagynyň ýerine, Meri oturgyjyny beýleki parta tarap süýşürdi.
+7938999	Işe gitmegiňe taýýar bolmak üçin günde näçe wagt sarp edýarsiň?
+7939034	Meniň dogduk mekanym Alžirdir.
+7939035	Bir edip göreli
+7939043	Ýyldyzlar şöhle saçýar
+7939049	Hemme gapylary gulplamaly,iň azyndan ýapyp goýmaly.
+7939063	Hepdede bir gezek dostlaryma fransuzça sapak berýärin.
+7939071	Gyzyl reňkde geçdiň.
+7939083	Sen obada birtopar kirpi bolar diýip söz berdiň.
+7939086	Sen öz maksadyňa ýetmek üçin näme edýärsiň?
+7939089	Onuň maksady millioner bolmakdyr.
+7939098	Tom bu ýere geldimi?
+7939108	Tom Merini tanamaýandygyny aýdanda ýalan sözleýärdi.
+7939149	Men hem gidip bilerinmi?
+7939196	Sema köşeşmek gerek.
+7939210	Semi içgi geýimiñ nädip ol ýere düşenini bilesi geldi.
+7939237	Mery ýarawsyzlygyna garamazdan işlemegini dowam edýärdi.
+7939243	Semi yza ädim etdi.
+7939257	Sen ony edenleñ biridiñ, şeýle dälmi?
+7939267	Bu ýerde garañkyda taşlanmak islemeýärin.
+7939283	Tom mundan köpüsini isleýär.
+7939291	Tom muny bur özi etmek islemeýändigini aýtdy.
+7939310	Tom uruşdan sag gutuldy.
+7939313	Bu munuñ ýaly gutaryp bilmez.
+7939314	Bu dogry wagtmy?
+7939317	Bu gorky dogrymy?
+7939322	Meñ pikirimçe bu köprini kesip geçmek howpsyz bolmaz.
+7939370	Bu ýerde hiç zat özgermeýär.
+7939374	Saňa ol gülleri kim berdi?
+7939378	Mery öz kynçylyklary barada Toma aýtdy.
+7939382	Tomuñ atasy dogulandan bäri kördi.
+7939415	Men ýagşy bolaryn diýip pikir etdim.
+7939428	Bu ýerlerde welosipet kireýine alyp biljegim ýer barmy?
+7939432	Seni şu ýerde öýümde tapmaklygymyň garaşylmadyk hormatyny men nämä borçly?
+7939437	Meniñçe indi adamlar bir gezek ulanyp bolýan paketleri ulanmagy goýmalylar.
+7939442	Düýn mekdepde näme bolandygy hakda Toma bir zat diýdiñmi?
+7939444	Tom Meriniň şony ýaňyja edip bolandygyny aýtdy.
+7939445	Tom bu günler näme iş edýär?
+7939451	Tom bilen Mery gapjygyñy nireden tapandyklaryny aýtdylarmy?
+7939465	Elbetde bu meniñ hakyky maşgalam. Isleseñiz meniñ pasportymdan görup bilersiñiz.
+7939474	Men Tom bilen Mery señ bilen Bostona gidýändirler öýtdüm.
+7939482	Tom ahyrsoňy şony nädip etmeligini öwrener.
+7939510	Ýene düşündirmegimi isleýärmisiňiz?
+7939511	Häkimlige gitmegiň iň gowy ýoly näme?
+7939518	Men yzyma birigün gelmekçi bolýan.
+7939532	Tomuñ kellesiniñ çaşyp çaşmandygyny bilesim gelýär.
+7939548	Nähili ýygylykda zatlary ýitirýärsiňiz?
+7939570	Tom Fransuzçada örän ýaman, dälmi?
+7939572	Düýn bazara gitdiñmi?
+7939575	Semi hat-da ol ýere seretmedem.
+7939585	Tom muny etmek üçin rugsatly,dälmi?
+7939607	Bu hakda gepleşmek üçin bize wagt beriñ.
+7939613	Tom Awstraliýa yzyna dolandy.
+7939636	Ol gyzy kabul edip bilmeris.
+7939646	Tom Bostona gidip gördümi?
+7939652	Tom hemmämizden garry,dälmi?
+7939669	Bu kitap owadan suratlardan doly.
+7939678	Tom örän höwesjeñ balykçy we awçy.
+7939681	Bu otag garañkylyga bürendi.
+7939704	Mary ony etjek däl.
+7939715	Men näme üçin Awstraliýa gitmeli?
+7939718	Tom meni tanaýardy.
+7939719	Men teññämi sowmadym
+7939720	Mary meni tanaýardy.
+7939730	Ol ony isleýär.
+7939732	Mary onu isleýär.
+7939736	Tom we Mery Bostony halamzok diýýärler.
+7939748	Tom bizi gorkuzdy.
+7939761	Ol okuwçylara iñlis dilini öwredýär
+7939765	Tom planlar etdi.
+7939777	Gije gaty sowuk bolýar
+7939787	Ol oglan ol gyza hat ýazdy
+7939788	Muny täzeden ýazdyñ dälmi?
+7939793	Tom muny täzeden ýazdy.
+7939808	Tomyñ indiki hepdede gelmegi ahmal.
+7939809	Mary köwüş satýar.
+7939831	Olar riskleri alypdyrlar.
+7939843	Mary seni duýdurdy.
+7939861	Men aslynda hiç seniñ tarapyñda däl.
+7939868	Tom bildirişsiz kowuldy.
+7939889	Güýji ýok adamlar akylly, akmaklar bolsa güýçli
+7939895	Siz şu wagt başlarsyñyz
+7939901	Georgler ol ýerde naçe ýyl ýaşadylar?
+7939905	Stoluñ üstünde küýze bar
+7939910	Ol sakalyny syrdy
+7939943	Ol özüniñ gaty gaharlydygyny aýtdy.
+7939952	Ol göwnüme ýarady diýdi.
+7939958	Men olaryñ bize muny etmäge rugsat bermejegini bilýän
+7939962	Semi bilen ejesi alty hepdeläp bir-biri bilen gürleşmediler.
+7939973	Men Tomdan öťünç soraýan
+7939989	Meñ endamym süýt ýaly ak, saçlarym bişen bugdaý ýaly altyn; Men ýazyñ ýapragy ýaly terje.
+7939990	Seret biziñ eden zadymyza
+7939999	Mery ony etmäne razy bolmajagyny aýtdy.
+7940002	Ol öz kompýuteriniñ öñünde köp wagt geçirýär
+7940005	Tom Awstraliýada köpden bäri ýaşaýar.
+7940007	Olar islän zatlaryny alyp bilerler.
+7940037	Ol oglandan daş dur
+7940050	Bu ýüp gaty berk
+7940058	Men Tomdan muny näme üçin islänini soramadym
+7940062	Sen pişikleriñe näme berýäñ?
+7940063	Sen pişikleriñi näme bilen naharlaýañ?
+7940088	Biz olara özümizi tanadarys
+7940099	Olar seni atar.
+7940101	Gygyrmak aýdym aýtmak däl
+7940126	Sema öýi nähili arassalamalydygy barada Leýla öwretmek gerek däl.
+7940131	Operasiýa dañdan başlaýar.
+7940137	Sen Tom bilen maña kömek edip bilmersiñmi?
+7940138	Ol men barmakam öň boldy.
+7940158	Semi ybadathanadan ogurlady.
+7940161	Tom bilen Mery köplenç islän zatlaryna ýetýärler.
+7940162	Garry adam pul üçin maňa ýalbardy.
+7940169	Men mañyz iýmegi halaýan.
+7940181	Olar meseläni maslahatlaşýarlar.
+7940263	Sami hiç hili jenaýat işini etmedi.
+7940268	Hiç kim Alžire maýa goýmak islemeýär.
+7940276	Tom öz puly bilen tygşytly bolmady.
+7940294	Tom we Meri el çarpyşdylar.
+7940329	Men ony tapmaly.
+7940333	Bu heý öň bolup görüpdimi?
+7940345	Ol eýýäm başga söhbetdeşlikdir.
+7940352	Seniň maňa ynanmaýandygyňy bilýärin.
+7940354	Düýn dükanda köp adam bardy.
+7940360	Ikinji jahan uruşy ilkinjä seredeniňde has gan döküşükli boldy.
+7940363	Ol gowuja welin, ýöne howplydyr.
+7940393	Bu uniwerstitet gaty çekeleşiklidir
+7940405	Sami Laýla onuň zatlaryna el degirmezligine aýtdy.
+7940413	Sami özüni erbet duýdy.
+7940414	Men ol işi şü gün birwagt etmelidirin.
+7940415	Ol özüniň närazydygyny aýtdy.
+7940428	Sämi Laýlanyň üstünden gözegçilik edýärdi.
+7940430	Tom bilen Meri üýtgeşik.
+7940457	Tom we Meri Jona ony halamaýandyklaryny aýtjak bolmaga synanyşdylar.
+7940464	Ol düýn ony özi ýerine ýetirdi.
+7940532	Ol maňa ir geljekdigine söz berdi.
+7940549	Men gullukda sakgal ösdürip bilemok.
+7940561	Ol eşidiş ukybyny ýitirdi.
+7940567	Meniň gabanjaň ýoldaşym bar.
+7940571	Üç adam geldi.
+7940573	Suw hapanalan, ony içme.
+7940595	Semi özüni gödek alyp barýar.
+7940605	Semi öz durmuşy bilen islän zadyny edip biler.
+7940624	Men henizem Fransuz dilini öwrenmegi meýilleşdirýän.
+7940626	Sen ol wagt maña hakykaty aýdan bolsadyñ.
+7940644	Haýal etmän lukman çagyryň.
+7940651	Tom bilen Mery hakykatdanam ony ermäge razylaşdylarmy?
+7940659	Eger-de biz Tom we Merinyň näme teklip edendigini ýerine ýetirsek, biz özümize biraz wagt saklap bileris.
+7940663	Käwagt hiç zat aýtmazlyk gowy
+7940673	Sen hiç haçan Fransuzça okamadyñ şeýle dämi?
+7940680	Sen bütin gije näme bilen meşgul bolduñ?
+7940695	Meniñ näme duýýanymy sen nähili bilýärsiñ?
+7940698	Men sizdäki üç zadyñ hemmesinem gowy görýärin
+7940711	Gynansakda men kän bir kömek edip bilmedim
+7940722	Tom özüniň gamgyn bolandygyny aýtdy.
+7940728	Men bu çagalary oýandyrasym gelenok.
+7940746	Aýal dünýäniñ iñ gowy zady
+7940751	Ol akylly däl, samsyk
+7940757	Men Toma dönüklik etmerin.
+7940771	Men öz minnetdarlygymy sözler bilen aýdyp bilmeýärin
+7940780	Belkide Toma aýtmazlygymyz has gowusydyr.
+7940787	Seniň pikiriňçe sen Toma garnyňda biraz akyllyrakmyň?
+7940793	Bu guşuñ ady wagtail
+7940805	Tom nädip ýogaldy?
+7940812	Tom yzyna gaýdyp geljekdigine söz berdi.
+7940852	Alžir bilen Marokkada lingwistiki meňzeşlikleri bardyr.
+7940855	Ne Tomuň nede Merinyň bu ýerde kän dostlary bar.
+7940862	Men çemedanymy ýatdan çykarypdyryn.
+7940870	Yok, Tañry ýalkasyn, ol meniñ zadym däl.
+7940872	Meniñ pikirimçe maña birnäçe aýnek gerek
+7940901	Tom ahyrsoňy şony eder.
+7940904	Erbet howa üçin ötünç soraýarys.
+7940918	Adam uzakly gün ýatdy.
+7940929	Meniň onuň bilen gürleşesim gelýär.
+7940949	Tom örän gijä galjakdygyny aýtdy.
+7940955	Welosipediňizi wagtlaýyn alyp bilerinmi?
+7940956	Ýaş gyz gözýaş dökdi.
+7940981	Tomuň muny wagtynda etmezligi ahmal.
+7940987	Oňa biziň nirä gidenimizi aýt.
+7940989	Biz diňe oňa kömek etmek üçin bu ýerde.
+7941002	Tomuň diplomatik tejribesi ýok.
+7941019	Tom şony şu gün eder öýdemok.
+7941044	Men hiç haçan Tomy boýunbagly görmändim.
+7941057	Tomy koridord gördüm.
+7941062	Bugün irden häzir Tomy gördüm.
+7941063	Tomuň Jonyň aýalyny öpendigini gördüm.
+7941076	Tomuň sumkadan bir zat ogurlandygyny gördüm.
+7941077	Ony Tomuň alandygyny gördüm.
+7941086	Tomuň özini öldürjekdigini gördüm.
+7941092	Düýn irden Tomy gördüm.
+7941103	Chukyñ Bar we Grillinde işleýärin.
+7941127	Tomuň maşynyny maşyn goýulýan ýerde gördüm.
+7941141	Ol ýerdemi doguldyñ?
+7941151	Öziñi ýeñilmeýän duýýañmy?
+7941158	Tom meni küştde ýeñdi.
+7941170	Tom we Mary ýakynlaşdylar.
+7941210	Seni daşaryda gördüm.
+7941211	Onu öñ görendigim ýadymda däl.
+7941227	Bir sürüji öñdaki kreslo oturdy.
+7941251	Tom bilen Mery şahmaty köplenç bile oýnaýarlar.
+7941263	Geçen aý uruşanymyzdan bäri Kareni görmedim.
+7941294	Hawa,dogry aýdýarsyñ.
+7941306	Tom "Semremegiñ dogry ýa-da ýalñyş ýoly ýok" diýdi.
+7941308	Başka nähili hereket edilýändigini bilmeýärin.
+7941312	Hiç bir iki söz many taýdan bir däldir.
+7941335	Hemmäni minnetdar edip bilmezsiñ.
+7941342	Hemme aýnalaryñ ýapyk bolanlygy üçin ol otag howasyzdy.
+7941346	Tom ony gitmezinden ozal etmeli.
+7941352	Tom bilen gürleşmegi unudypdyryn.
+7941353	Olaryñ hiç haýsyny halamaýaryn.
+7941373	Hemme okuwçylaryñ kitaphana gitmäge haky bar.
+7941387	Hemme millet saýlawda seslerini berdi.
+7941393	Ofis hoşgal baýramçylygy belleýär.
+7941399	Tomuň etjekdigini ynanýňmy?
+7941406	Bu hiç hili mesele däl.
+7941410	Tomuñ ony etmegi heniz hem meýilleşdirýändigini bilýärin.
+7941446	Senin aýdýanyñ nädogry.
+7941451	Meri aýakgabyny geýmäge başlady.
+7941468	Bu hepde soňy boş dälmi sen?
+7941469	Bu goşlaryñ häziriñ özünde meniñ otagyma äkidilmegini isleýärin.
+7941473	Sen näme üçin meniñ et diýen zadymy etmeýärsiñ?
+7941495	Mery Bostonda däldigini aýtdy.
+7941502	Bir zat takykdy: Aljir üýtgeýär.
+7941517	Men mazalyja doýdum.
+7941522	Tomy seniñ tanaýşyñ ýaly tanaýandyryn öýdemok.
+7941529	Tom başaryp bilmejegini dile getirdi.
+7941556	Biz öz meselelerimizi özümiz çözmeli.
+7941587	Tom gysga wagtlyk bize goşular.
+7941601	Meniñ razylygymy alman gyzyma öýlenmäge nädip milt edip bilýäñ?
+7941610	Tom bilen Meriniň ýaşy onçakly uly däl, şeýle dälmi?
+7941648	Tom hepdede üç gezek daşarda iýip-içýär.
+7941650	Tom bilen Meri şony üçünji gezekde has gowy etdiler.
+7941663	Tom gyzynyň saçyny daraýar.
+7941665	Meri öýüne gaýdyp barýar.
+7941673	Meniň jogabym seniňki bilen gabat gelýär.
+7941693	Men diňe bir çemedan bilen syýahat etmäge çalyşýaryn.
+7941698	Şuny edeniň sendigini bilýärin.
+7941702	Men şony bilmelidim.
+7941716	Semi islän dosty bilen oturyp biler.
+7941727	Şübheli ýaragly we howply.
+7941738	Men Toma garaşmasyny maslahat bermeli ekenim.
+7941755	Tom bilen Mery nirä gidenlerini aýtmadylar.
+7941770	Semi elmyda oñ ýaly pohçulyklary eder.
+7941777	Men "Kömek ediň!" diýip çykylyk ses eşitdim. Men şol wagt gülüp otyrdym.
+7941790	Sen oña özüñe garaş diýipsiñ.
+7941801	Semi hiç zady alada etmeli däl.
+7941803	Sami näme üçin hassahanada?
+7941806	Mery açarlaryny stolyñ üstünde goýup gitdi.
+7941834	Olar isledikleriçe galyp bilerler.
+7941868	Tom Mery bilen ýaşaýardy.
+7941879	Tom agtygyny gowy görýärdi.
+7941885	Ol öýleneninden bäri bagtly görünýär.
+7941890	Ony etmek gaty hezil bolar öýtmedim.
+7941910	Mery özi bilen nirede duşuşmalydygyny aýtdymy?
+7941997	Tom Mery ýaly arkaýyn bolup bilenokdy.
+7942037	Men ony başararyn diýip saña kim aýtdy?
+7942078	Tomdan sorap gör, ol hem saña şol bir zady aýdar.
+7942124	Käbir güller ýazda gülleýär, käbiri bolsa güýzde.
+7942427	Ol özüniň bütin durmuşy barada gürrüň berdi.
+7942431	Ony ýetmek belki-de gymmat düşer.
+7942478	Sami bu ýerde dost tutunmak üçin däldir.
+7942507	Eger-de sen Tom we Meriny görseň, haýyş olara meniň olary gözleýändigimi aýt.
+7942520	Ähtimal Tom we Meri özleriniň açdygyny Jona aýtmalydyrlar.
+7942552	Men Toma hiç zat görkezmedim.
+7942568	Men agyr sowuklamamdan açyldym.
+7942602	Hemmesi bilen mylakatly gürleş.
+7942617	Men diňe özümiň dolandyryjym üçin terjime edýärin.
+7942632	Sen meniň ýyldyzymsyň, Sami.
+7942634	Onuň gözleri ýyldyzlar deý şöhle saçýardy.
+7943329	Semi Leýlañ otag nomerini yadyndan çykardy.
+7944871	Semi Laýlanyň otagynyň belgisini ýadyndan çykardy.
+7948766	Haýyş, maňa bir stakan suw ber.
+7948792	Gutarnykly sözlemleri isleýäris.
+7948794	Pianino çalmagy öwrenýär.
+7948800	Gürleşmäge ygtyýarym ýok.
+7951450	Olar oňat adamlar.
+7951462	Layla gam-gussa batyp otyr.
+7951472	Şu wagt boşmyka?
+7951473	Men derrew turdym.
+7951480	Kino gutarmaka ýatyp galdym.
+7951484	Oňa maňa ýaz diýip aýt.
+7951585	Hany, şol suratlara bir seredip goreýinle.
+7951602	Onuň matematikadan başarnygyna söz ýok.
+7951608	Şu teksti terjime ediň.
+7951639	Ol maňa hiç wagt özüniň nirde işleýändigini aýtmady.
+7951663	Tomyň teklibi makul görülmedi.
+7951667	Olara näme bolandygyna br seret.
+7951676	Men ol ýerde bolanymda Bostan sowuk däldi.
+7956015	Ol gaty ukuly görünýär.
+7956140	Meñ aýdýanymy ýaz.
+7961462	Tom her gün diýen ýaly maña jañ edýärdi.
+7961465	Men tomusky dynç alyşymy gowy geçirdim.
+7961935	Mery özünden kömek soralandygyny aýtdy.
+7962484	Indi hiç wagt gijä galmajakdygyma söz berýärin.
+7963708	Ol iş hakykatdanam kyndy.
+7963737	Tom gyzyny öýde ýeke goýup gitdi.
+7964940	Men Awstraliýa geçen gyş göçüp geldim.
+7965261	Seniñ üçin bu sapak añsat bolup görüner.
+7965277	Ýok, men ony görmedim. Meniñ kellämiñ yzynda gözlem bardyr öýüdýäñmi?
+7968666	Haýyş dur diýýänçäm dowam et.
+7968689	Geçmiş barada alada etme.
+7974606	Bu gün meniñ gyzymyñ doglan güni.
+7974677	Men agşam bärde bolaryn.
+7975281	Tom ellerini jübsüne saldy.
+7975292	Ene-atamyñ kimdigini bilesim gelýär.
+7978905	Tom Awstraliýadan birnäçe gün mundan öñ gitdi.
+7995703	Ol ýylanlardan hiç hili gorkanok.
+7995704	Ony sen etdiñ, şeýle dälmi?
+7995706	Ulaglar howany gaty hapalaýarlar.
+7996506	Tomyñ näme üçin agaç ussasy bolasy gelýär?
+7996510	Boston indi meniñ öýüm.
+7999079	Bu oñ ýaly gorkuç däl.
+7999089	Sen maña bir zat aýtmakçy bolýansyñ öýütdim.
+7999099	Mundan beýläk men siziñ mugallymyñyz däl.
+8019462	Bu maşyn saňa degişli, şeýle dälmi?
+8019473	Men bu netijeden hiç hili hoşal däl.
+8019475	Meniň häzir şony etmäge keýpim ýok.
+8542112	Suşi gowy görýäňmi?
+8542133	Ol gapyny ýapdy.
+8543271	Bu aýalyň ady näme?
+8544322	Okamaga wagtym ýok.
+8676075	Haýsy ýyldyz toplumlary görýärsiňiz?
+8781191	Öýde nahar barmy?
+8801021	Men daşary ýurtlulara gazak dilini öwredýän.
+9641398	Meň çagam bar.
+9644655	Bu öý däl.
+10476539	Gapyny kim açdy?
+10479453	Sen meni söýeňokmy?
+10874210	Meniň iki kitabym bar.
+10876068	Iş hakda gürleşmäň. Biz dynç alýas.
+11065656	Men öz kompýuterimi ulanýaryn.
+11065756	Men ony söýemok.
+11065757	Men beýle zatlary halamok.
+11071676	Şu gün ýüzmäge gitmek islämok.
+11282101	Bu soragyňyza jogapmy?
+11298239	Bu sözlemi kim ýazdy?
+11633399	Bu gün Tomyň dynç güni.
+11688241	Sen ertir nätjek?
+11906266	Seniň gelmegini islemedim.
+12003799	Seň gelmegiňe garaşýadym.
+12003814	Tom buhgalter diýip pikir etdim.
+12022083	Bu öýde näçe adam ýaşaýa?
+12128729	Biz şäher merkeziniň golaýynda ýaşaýarys.
+12129089	Gözleýän adamyň bize tarap gelýär.
+12190623	Aýdym diňlemegi gaty gowy görýärin.
+12191603	Haýsy dillerde gürläp bilersiň?
+12207012	Meň arkam agyrýa.
+12207022	Bu hatlary okadyňyzmy?
+12361269	Olara hakykaty aýdypdyrmy?
+12361279	Hemme ýerde möýleri gördüm.
+12361282	Diňe seni söýýärin.
+12361302	Hyzmatkär puly ogurlandygyny inkär etdi.
+12449287	Etmeli has möhüm zatlarynyň bardygyny aýtdy.
+12449290	Itim bärde däl.
+12449295	Maňa muny unutmajakdygyňy wada ber.
+12449297	Tomuň erbet sürüji däldigini bilýärin.
+12449407	Angliýada haýsy dilde gürleşilýär?
+12449409	Kim oňa jaň edipdir?
+12526033	Näme üçin kompýuter bilen gürleşýäň?
+12778821	Ol hristiançylyga tarapgöýlük edýär.
+12897096	Men duşenbe gününden başga her gün boş.
+12897275	Ähli puluňy bir günde sarp etmezlige çalyş.
+12899844	Bu biderek zatlaryň hemmesinden dynyp bilersiňmi?
+12900069	Muňa kim sebäpkär?
+12900093	Içgimi azaltsam gowy bolardy.
+13154776	Näme üçin meniň bilen gürleşmeýärsiňiz?
+13247354	Bu tegmili aýyrmak kyn bolar.
+13407657	Türk elipbiýinde ýigrimi dokuz harp bar.
+13538176	Ol möýden gorkýar.
+13539823	Halaşýan gyzyňyz barmy?
+13539838	Niredendigi möhüm däl.
+13539844	Men seniň ýeriňde bolsam, ol ýere ýeke özüm gitmezdim.
+13539859	Biz bir köçede ýaşaýas.
+13539860	Biz bir köçede ýaşaýarys.
+13539869	Ol matematikadan hiç zat düşünmeýär.
+13540149	Ol gözlerini açmak islemeýär.
+13572540	Düýn gelip bilmedigim üçin ötünç soraýaryn.
+13679889	Mende bu kitaby satyn almaga ýeterlik pul ýok.
+13679893	Bu kitaby satyn alyp bilemok.
+13717876	Otagda köp adam bardy.
+13755834	Şweýsariýaň paýtagty näme?
+13755837	Menem Ženewa gitjek.
+13755899	Bu nädip edilýär?
+13756032	Şu ýyl daşary ýurda gitmerin.
+13756033	Gyzym daşary ýurtda okaýar.
+13779159	Russiýada benzin näçeden?
+13854135	Haýwanlar biziň dostlarymyzdyr.
+13890260	Ölüm ýa-da ýaralanma ýüze çykmady.
+13890264	Onuň ýokanç keseli ýok.
+13890266	Tom maňa ony garaşmaly däldigimi aýtdy.
+13890267	Sen ruhuňy satýarsyň.
+13890271	Men haty Toma berdim.
+13890278	Şeýle kitaplar has düşnükli dillerde ýazylmaly.
+13890286	Minnetdar bolmagy öwreniň.
+13915093	Ol Amerika gitmegi ýüregine düwdi.
+14057164	Daşary ýurtlulaň Türkmenistana girmegi örän kyn bolýa.

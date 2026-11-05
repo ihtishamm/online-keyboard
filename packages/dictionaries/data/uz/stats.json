@@ -1,0 +1,15 @@
+{
+  "source": "uzwiki.xml.bz2",
+  "pages": 99998,
+  "sentences": 397151,
+  "repeatedSentencesSkipped": 444374,
+  "tokens": 3976200,
+  "distinctWords": 346181,
+  "wordsKept": 89841,
+  "nextWordHeads": 9206,
+  "text": "uz-train.txt",
+  "textSentences": 215,
+  "textWeight": 89.24,
+  "heldOutPages": 2002,
+  "heldOutSentences": 2000
+}

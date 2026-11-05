@@ -1,0 +1,26 @@
+{
+  "slug": "maori",
+  "code": "mi",
+  "order": 910,
+  "lang": "mi",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Māori",
+    "native": "Te Reo Māori"
+  },
+  "aliases": ["Maori", "Te Reo"],
+  "region": "oceania",
+  "fonts": ["latin"],
+  "layouts": ["mi-easy", "mi-standard"],
+  "accents": "āēīōūĀĒĪŌŪ",
+  "sample": "Kei te haere mātou ki te moana ā te ata āpōpō.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "mi",
+    "bing": "mi"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

@@ -227,6 +227,10 @@ const INFLECTIONS: Readonly<Record<string, readonly (readonly [string, string])[
   eo: [["j", ""], ["n", ""], ["jn", ""]],
   la: [["ae", "a"], ["i", "us"], ["um", "us"], ["am", "a"], ["os", "us"], ["as", "a"]],
   af: [["e", ""], ["s", ""], ["te", "t"], ["ste", "s"]],
+  az: [["lar", ""], ["lər", ""], ["ın", ""], ["in", ""]],
+  tk: [["lar", ""], ["ler", ""], ["yň", ""], ["iň", ""]],
+  uz: [["lar", ""], ["ni", ""], ["ning", ""], ["da", ""]],
+  kmr: [["an", ""], ["ên", ""], ["ê", ""], ["a", ""]],
   vi: [],
 };
 
@@ -284,6 +288,16 @@ const LATIN: Readonly<Record<string, { groups: readonly string[]; weak?: string 
   eo: { groups: ["cĉ", "gĝ", "hĥ", "jĵ", "sŝ", "uŭ"] },
   la: { groups: ["aā", "eē", "iī", "oō", "uū", "yȳ", "uv"] },
   af: { groups: ["aá", "eéèêë", "iíîï", "oóôö", "uúûü", "fv"] },
+  az: { groups: ["cç", "eə", "gğ", "iı", "oö", "sş", "uü"] },
+  tk: { groups: ["aä", "cç", "nň", "oö", "sş", "uü", "yý", "zž"] },
+  uz: { groups: ["xh", "qk"] },
+  kmr: { groups: ["cç", "eê", "iî", "sş", "uû"] },
+  yo: { groups: ["aáà", "eẹéè", "iíì", "oọóò", "sṣ", "uúù", "nńǹ"] },
+  ig: { groups: ["aáà", "eéè", "iịíì", "nṅ", "oọóò", "uụúù"] },
+  ha: { groups: ["bɓ", "dɗ", "kƙ", "yƴ"] },
+  wo: { groups: ["aàã", "eéë", "oóö", "nñŋ"] },
+  haw: { groups: ["aā", "eē", "iī", "oō", "uū"], weak: "ʻ" },
+  mi: { groups: ["aā", "eē", "iī", "oō", "uū"] },
   vi: {
     groups: [
       "aàáảãạăằắẳẵặâầấẩẫậ",

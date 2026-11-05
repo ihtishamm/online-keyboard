@@ -1,0 +1,23 @@
+{
+  "slug": "wolof",
+  "code": "wo",
+  "order": 890,
+  "lang": "wo",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Wolof",
+    "native": "Wolof"
+  },
+  "aliases": [],
+  "region": "africa",
+  "fonts": ["latin"],
+  "layouts": ["wo-easy", "wo-standard"],
+  "accents": "àãéëñŋóöÀÃÉËÑŊÓÖ",
+  "sample": "Tey dinaa dem ca marse ba ak sama xarit yi.",
+  "voice": [],
+  "wordList": true,
+  "translate": {},
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

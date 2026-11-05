@@ -56,7 +56,7 @@ const count = languages.length;
     {groups.map(([name, list]) => (
       <section aria-label={name} data-group>
         <h2 class="mb-2 text-sm font-semibold tracking-wide text-muted uppercase">{name}</h2>
-        <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {list.map((l) => (
             <li
               data-names={[l.name.en, l.name.native, l.slug, ...l.aliases].join(" ").toLowerCase()}

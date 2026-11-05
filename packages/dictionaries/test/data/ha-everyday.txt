@@ -1,0 +1,1002 @@
+# Everyday sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number,
+# tab, sentence. Chosen by src/import-tatoeba.ts. Used only to test the spell checker.
+2909177	Na rasa kyamarata kwanan baya.
+2909204	Garinmu sai kara haɓaka yakeyi.
+2910424	Gada kaji kunya kawai kayiman magana.
+3178868	Ta dawo daga asibiti ne.
+3494074	Bari salama ta kasance a duniya.
+10792073	An fi saninsa a kai na.
+10804521	Zan yi ko kun amince ko ba ku amince ba.
+10804525	Za mu yi kewarki lokacin da ba kya nan.
+10804545	An bude gadar domini zirga-zirgar ababen hawa.
+10804551	Bayarwa tana da alaƙa da buƙata.
+10804562	Tattaunawa ta ginu ne bisa girmama juna.
+10804565	A lokacin mayaka, su kan saka garkuwa domin kare kawunan su daga kaifin takobi.
+10804607	Nan gaba kaɗa za mu kammala shirin fatin.
+10804615	Ta yi ihun jin daɗi har ta fita hayyacinta.
+10804635	Daga makarantar na kammala.
+10804674	Idan ka shiga kasan ruwa, riƙe hanci da hurawa don kauda kunnuwan ka.
+10804743	Za mu kammala aikin ko da zai ɗauke mu tsahon ranar yau baki ɗaya.
+10807135	Bayan matarsa ta gudu, Harold ya shiga halin ɗimuwa.
+10807142	An samu taron jama'a a wajen shagalin.
+10807215	Ina ganin harkaina ne inyi karatun ta natsu.
+10807361	Yanzu an saba da sadarwa ta talabijin da rediyo.
+10807471	Yau shekaru 33 kenan da Marilyn Monroe ta mutu.
+10807475	Bazai daɗe kafin damina ya shigo.
+10807485	Mac ya taimake ni ɗauke da injin tsabtace injin.
+10807522	Margaret, wacce kuka hadu da mahaifinta a ranar Lahadin da ta gabata, ƙwararriyar ɗan wasan ƙwallon tennis ce.
+10807528	Mista White ya ce saboda taron nan, babu dakin da akoi.
+10807572	Na hutar da dukkan kari akan siyar da tafiya.
+10807588	Ben ya yi tseren mita 100 tare da Carl.
+10809067	Fred ya girma ya zama likita.
+10809082	Kamar dai Mr. Brook mutumin kwarai ne.
+10809094	Shugaban Frank yana fama da yunwa sosai.
+10809134	Kai - aikin ya kare! Bari mu tafi abu na gaba!
+10809165	Ba Bill kawai ba har da Mac ke haukan son Kwamfyutoci.
+10809182	Na ji daɗin yadda na aske gemu na.
+10809260	Nora ta kalli mamarta.
+10809313	Duk yadda za ki yi gudu, ba za ki taɓa kamo shi ba.
+10809389	Yaya zasu yi da sanyi a cikin wancan rumfar?
+10809412	Bazan iya fahimtar meyasa James koyaushe yana neman laifi da matar shi ba.
+10809453	Ya kamata ka jefar da sigarin da kake sha tun kafin Terry ya gani.
+10809485	Na tabbata wannan tarin da Ted ke fama da shi a sakamakom tabar da ya ke ne.
+10809574	Zan tafi ko da za a yi ruwa gobe.
+10811134	Kada ku yi irin wannan fuska mai fushi.
+10811177	Har yanzu yana cikin matakin gwaji.
+10811185	Babu ƙashin gaskiya a ciki.
+10811186	Don haka ba za su iya yin mafarki ba.
+10811200	Nagarta ta san abin da ta kasance.
+10811306	Ranan crismati ya faɗa a ranar Asabar wancan shekarar.
+10811311	Ofaya daga cikin kuliyoyin baƙi ne, ɗayan kuma launin ruwan kasa.
+10811439	Yaron ya zana hoto a bango.
+10811487	Waɗannan yaran goggon su ke kula da su.
+10811519	Yankunan kasar sun bushe har sun kusan zama hamada.
+10811553	An harbe dan sanda a bugun sa.
+10811602	An kashe miliyoyin dala da yawa don ƙoƙarin tada kamfanin.
+10811708	Waɗannan digirin 4 dai-dai su ke da kaso 30 na wani ɓangareb duniya da ke lulluɓe cikin ƙanƙara.
+10811733	Dole ne ku gudanar da ƙungiyar makaɗa da kyau.
+10811747	Mista Smith ya ba da shawarar aure ga Jane.
+10811763	Komai ya faru gaba daya.
+10811797	Kina farawa, za ki tarar da bus ɗin.
+10811800	Rikicin ya ɓata sunan kamfanin.
+10811810	Yi haƙuri, amma wannan sigar sigari ta ƙare.
+10811852	Mrs. Jones yawanci takan yi ma sakataren mai gidanta magana da haushi.
+10811854	Mista John ya yarda da aiki tukuru da samun riba.
+10811915	Jim yana cikin mutanen da na tsana.
+10811977	San Francisco yana bakin Teku ta yamma na Amurka.
+10811979	Sandra ta ba ni wurin zama a jirgin.
+10812000	Ga John, Sammy ya iya waka.
+10812006	Ina da sha'awar buga wasan soccer.
+10812007	Gaba ɗaya ƙungiyar sun ji su cikin annashuwa, bayan sun yi nasara a wasan.
+10812023	UN, kamar yadda ka sani na nufin Majalisar Dinkin Duniya.
+10812081	Wannan babban littafi ne!
+10812101	Mu canza wannan batun.
+10812111	Wannan furen dawan yana fitar da kamshi mai daɗi.
+10813394	Tarin fasaha ya fi yawa a zane-zanen ƙwararrun Dutch.
+10813421	Yawan wannan garin ya kasance tsayayyen shekaru goma da suka gabata.
+10813499	Shi ya rubuta wannan waƙar daddaren jiya.
+10813502	Wannan aikin yana yin da'awa mai girma akan ƙarfin tunaninmu.
+10813528	Yanzu kina son barin wannan soyayyar kazar ta tafi a sadaka?
+10813587	Wannan shine yadda Scott da mutanensa suka isa Pole ta Kudu.
+10813607	Dole mu ci sau bakwai a jere domin cin gasan.
+10813707	A koyaushe Kare tana nuna zoben ta na lu'ulu'u.
+10813736	Mahaifiyar Cookie ta mutu sakamakon cutar kansa.
+10813760	Dila dabba ce ta daji.
+10813822	Ni soyayya na da muhimmanci a wajena kamar yadda kuɗi ya ke a wajenta.
+10813852	Kawuna yayi ritaya daga koyarwa bara, amma zai malejin rike wani mukami a jami'a.
+10813867	Eric ya yi sauti mai daɗi akan fiano.
+10813906	Hm, wancan shawara ne mai kyau. Bari mu je wajen.
+10813909	Mr Wilson yana fushi da Dennis.
+10813938	Babu komawa baya yanzu.
+10813950	Yaushe zan zo wajen ku?
+10813984	Ann ta bada labarin yadda ta tsira.
+10813997	Kamar yadda wani labari ya nuna, kuɗi na zagaya ne daga wannan waje zuwa wancan.
+10814015	Wani abu zai iya zama daidai a cikin wani al'umma amma ya zama ba daidai ba a wani.
+10814016	Wani bincike ya nuna adadin cututtukan daji na huhu na kashi 17% na kashe mata masu cutar kansa.
+10814023	Tururuwa suna da al'umma mai tsari.
+10814127	Dole ka nutsu ka yi karatu don jarrabawar gwaji ta tarihi.
+10814128	Gobe kina da abubuwa da yawa.
+10814158	Kar ka manta yi wa matarka kyakkyawa kyakkyawan fata.
+10814164	Nazarin ku na halin da ake ciki daidai ne.
+10814172	Ina son ka rayu kamar yadda mutane ke rayuwa.
+10814178	Akwai wanda ya ke son ganinki.
+10814225	Tsawon mintuna nawa yake ɗauka zuwa tashar JR da ƙafa?
+10814237	A ƙarni na shida, yan Anglo-Saxons sun fara amfani da harufan yan Roma.
+10814254	Tauraro na uku na wani sarki ne.
+10814262	Yaran biyu sun zama abokai na kut da kut a sansanin.
+10814285	Za mu fitar da ajanda ta karshe gobe da safiyar Litinin, 20 ga watan Junairu, muna son amsa da sauri.
+10814337	"Aw, haba dai, ɗan nan!" manomin ya dage.
+10815713	’Yan sandan suna neman takardun da suka ɓace.
+10815793	Ta fuskar tsattsauran ra'ayi, ba za a iya kiran tarihi kimiyya ba.
+10815803	Kungiyar taimako ta mutum guda ba za ta gamsar ba.
+10815809	Ina da wahalar numfashi.
+10815843	Tuki da ganganci zai jawo hatsari.
+10815941	Da safennan na samu wasika daga gida yana cewa baba na ya fara rashin lafiya.
+10816006	Mafi kyawun kariya shine laifi.
+10816046	Jiya na aika wa Ellen saƙo.
+10816061	Na zo in gan Dr. King a shekarar da ya wuce.
+10816084	Rashin isasshiyar iskar shaƙa hatsari ce ga na dabbobi.
+10816106	Akwai kokwanto da yawa ga yaron.
+10816123	'Yancin tunani ya tabbata a tsarin mulki.
+10816170	Ya yi imanin cewa akwai ɗan leƙen asiri a cikinmu.
+10816216	Dole mu kalli al'amarin da ra'ayin da ya dace.
+10816226	Muna yawan yin karta ran Lahadi.
+10816275	Ba ku da wata damuwa a kan asusuna.
+10816312	Shawara shine kara dasa itatuwa a gefen tituna.
+10816327	Yar uwata tana da hankali game da kafafunta masu kauri.
+10816354	Ina so in koma ƙauyenku.
+10816397	Na ga Julie a filin jirgin sama.
+10816418	Na ji ma ƙafa na ciwo da kuskure.
+10816482	Ya zama mun dole in kyale shirin.
+10816489	Ina son ganin ta, ta kowane hali.
+10816545	Na shanye ƙurar daga ƙasa da na'urar tsabtace kasa.
+10816574	Nayi mamakin tsawar kwatsam.
+10818082	Na komo ina son sa.
+10818179	Ra'ayin wasan ya sauka.
+10818190	Ta tsine mishi don shi ya jawo hatsarin.
+10818222	Kunne na yana ƙara.
+10818296	Ka baje min ra'ayinka sannan ka bani amsa kai tsaye!
+10818359	Ya sami ƙarfin gwiwa sosai yadda zai iya fasa ƙanƙara a taron hukumar gudanarwar.
+10818423	Tsuntsaye na kuka nan da can a lambun.
+10818434	Akwai siyayya da nike so in yi.
+10818448	Samarin duk suna da shekaru.
+10818475	Ba za ku ce shi ya yi sata ba, har sai kun tabbatar.
+10818498	Ana amfani da Sandar tafiya don taimakawa wajen tafiya kamar sanda.
+10818501	Shuke-shuke suna bayar da iskar oxygen yayin da suke yin abinci.
+10818518	Mun dawo kan layi ɗaya.
+10818556	Tsuntsayen na kuka to kan bishiyun.
+10818579	Isharar wata hanya ce ta sadarwa.
+10818591	Daga lokacin haihuwarsa, mutum ba zai iya jituwa ba tare da dogaro da wasu ba.
+10818615	Mutane sun taɓa yin imani duniya lebur take.
+10818624	Mutum yana buƙatar abubuwa masu nishandantarwa kamar yadda yake buƙatar addini.
+10818693	Kwat da wando shudi, farin rigan sama da jan tayi ya zama dole ma duk ma'aikata maza.
+10818737	Ba wani lokacin bayani da ya rage.
+10818767	Malamin ya sanya mana matsaloli goma don aikin gida.
+10818821	Ban kuma ganin Karen ba tunda muka rabu da juna watan da ya gabata.
+10818906	Kaftin ɗin ya umarci mutanensa da su haɗu waje guda.
+10818964	Shin akwai mai facin tayar mota?
+10818969	Shin akwai wanda yayi tambaya na?
+10818989	Ina jin sosai cewa maza da mata dai-dai ne.
+10819017	Abubuwa duniya a ƙayyade su ke.
+10819018	Duniya ta wanzu kusan shekaru miliyan biyar da suka gabata.
+10819019	Isasa ba tauraruwa ba ce, amma duniya ce.
+10819037	Sannu a hankali amma ya ci nasara a tseren.
+10819059	Al'adata ce in je yawo kafin karin kumallo.
+10820522	Tsuntsaye na yin kwai.
+10820529	Masarautar ta mayar da martani.
+10820570	Kirkirar wayar tarho ya haifar da juyin juya halin a rayuwarmu.
+10820784	Manoma suna aiki sosai a cikin filin.
+10820785	Manoman suna kan katanga suna tantamar wa za on marawa baya.
+10820819	Shine Mr. Brown, shugaban kwamitin.
+10820832	Kawai wani abu ya zo min cewar dole zai yi asarar kuɗin.
+10820834	Yana tabawa, yana fashewa.
+10820842	Na gan shi yana wasan karta tare da su gaba daya.
+10820852	Da gaske ya sami cikakkun maki a gwadawar.
+10820934	Kalmansa sun yi tsufan from yatsunsa sun fito waje.
+10820950	Halin shi daidai kamar mai hauka.
+10820966	Dabararsa ta burge sosai.
+10820968	Zan iya gazawa ba don taimakonsa ba.
+10820976	Bari mu sha wani abinsha sabida nasarar sa.
+10820977	Manufofinsa sun sanya lafazi don kyautata jin daɗin ƙasa.
+10820987	Soja ne kuma yana da matuƙar juriya.
+10820995	Duk kokarinsa kamar ya tashi a banza.
+10821003	Halinsa a bayyane yake ga babbar adawa.
+10821057	A koyaushe yana da lura da yawuce-yawucen mai gidan shi.
+10821100	Ya karasa giyan sannan ya nema a kara mai wani.
+10821104	Ya ɗauki naushi a kai.
+10821164	Yana zuwa makaranta ta bas ko jirgin ƙasa.
+10821171	Ya daure kunshin da zare.
+10821175	Ya ba da sanarwar kasancewarsa ga Miss Brown.
+10821228	Yana alfahari akan shin dan Burtaniya ne.
+10821256	Ya lika lakabi a cikin jakar.
+10821264	Yana cikin ɓacin rai.
+10821289	Na tabbata shi ne zai kasance mutum na karshe da zai yi hakan.
+10821313	Yanzu ya na da karancin kudi.
+10821314	Yanzu ba ya zama a can wajen.
+10821315	Bai taɓa samun abin da yake buƙata ba.
+10821328	Tabbas zai kafa sabon tarihi a cikin sau uku.
+10821392	Da kwanciyar hankali ya rasu.
+10821398	Ya ceci rayuwa na da jefa nashi cikin hatsari.
+10821461	Ya tuka kan wata mahakar ma'adanai kuma motarsa ta jeep ta fashe.
+10821486	Yana da karfin fada a ji.
+10821494	Ya kafa yumbu a cikin kwano.
+10821500	Ya kaini ƙarshe.
+10821525	Ya matse kunnen sa a bango.
+10821545	Na tabbatar ba shi da lai fi.
+10824549	Sun kashe lokaci wajen yin karta.
+10824557	Sun tsayar da lokacin tafiya London.
+10824578	Suna iya zuwa ranar Litinin ko Talata, amma ba Laraba ko Alhamis ba.
+10824590	Suna jawo hankalin abokan ciniki ta hanyar miƙa musu kaya masu inganci.
+10824598	Suna ƙarancin kuɗi.
+10824604	Suna jin suna cikin wahala.
+10824619	Sun ci abincin rana a lambu.
+10824635	Sun tafi balaguro zuwa Pole ta Arewa.
+10824658	Jita-jitar cewa tana shirin yin aure tana yaduwa a gari.
+10824684	Tana da fara'a da dabara.
+10824686	Shigar rigarta al'amari ne mai arha.
+10824695	Babban turaren ta yana da wani kanshi madaidaici.
+10824698	Muna danganta fuskarta da fure.
+10824844	Tana jin dadin kallon finafinan abin tsoro.
+10824851	Ta saka jaket wanda bai da matsi.
+10824868	Ta yi wannan dabon cikin sauki.
+10824888	Baki ɗaya farin cikin da take ciki ya koma baƙin ciki.
+10824893	Za ta sauka a Royal Hotel a ranar Talata mai zuwa.
+10824902	Ta fi kyau yau akan yadda na gan ta na karshe.
+10824929	Tana ɗauke da manyan akwatinta kan ɗan dako.
+10824957	Tayi bayanin dalilin da yasa tayi latti.
+10824979	Yarinya ce doguwa, siririya mai dogon gashi, mai ruwan kasa mai laushi.
+10824987	Kamar abinda ya ce ya ɓata mata rai.
+10825035	Wanda ake kara zai ɗaukaka ƙara zuwa babbar kotu.
+10825164	Kuɗan zuma ya sokeni.
+10825169	Shugaban kungiyar ta'addancin ya sa duka membobin sun yi layi, suna riƙe iko ta hanyar tsoro.
+10825224	'Yan mata ma su mai da hankali ne ke iya jure wannan aikin.
+10825256	Mene ne wannan kamar ba ruwansa?
+10825318	Ofishin gidan waya shine gini mai launin ruwan kasa.
+10825343	Zo ka taimaka mana.
+10825349	Aradu ta tsorata daliban.
+10826683	A wannan lokacin karon farko na zauna a wata villa mai zaman kanta, kuma haƙiƙa hakan babban lamari ne.
+10826688	Da ganin yadda ya yi shirme, kowa ya kasa taimaka sai dariya.
+10826695	Ku yabi Ubangiji sannan ku mika harshashi.
+10826699	Idan akwai yakin nukiliya a duk duniya ana cewa za a yi “hunturu ta nukiliya” a duk faɗin duniyar na tsawon watanni.
+10826704	Bayan Mutuwar kwatsam na Kaka, Kakanta ya fara tsufa da sauri.
+10826716	Toh! Saurara kuma saurara da kyau!
+10826734	... Aaah, yaya zan iya jure wannan ina mamaki?
+10826799	Ah, yanzu na tuna. Na yi amfani da robaron roba; wani abu da ba na da wuya, ko kuma kusan ba zan taɓa yi ba.
+10826801	Yaya ka ke gano sashin Kula da Inganci?
+10826894	"Baba, wannan takobi na gaske ne?" "Tabbas, ta zama gasa ne bayan komai."
+10827058	Ya yi imani akwai mai leken asiri a tsakaninmu.
+10827070	Ka san banbanci tsakanin silba da gwangwani?
+10827155	Na yi shirin rabuwa da ita.
+10827203	Ina da wayo.
+10827226	Idan kun fenti mai launin rawaya, zaku kashe tsuntsaye biyu da dutse guda: zai tsaya waje ɗaya, kuma zaku sami ragowar kuɗi saboda kuna iya amfani da fenti da kuka rage.
+10827247	Ya kasa yin abin da ya fada.
+10827360	Ya bani tsoro ni kada in gan ka akan zanar gizo duk ranar.
+10827404	Alamar shahararre galibi shine sunansa ya fi ayyukansa daraja.
+10827516	Na je wajen sayar da kifi da safen nan, na samu kifin siyarwa mai kyau.
+10827546	Ina fatan zama likitan hakori a gaba.
+10827556	Bazai yiwu ba.
+10827558	Ba a fagen rikice-rikicen ɗan adam da yawa suka ci bashi kaɗan.
+10827575	Ayya, abun tausayi! Na yi tunani komai zai zama daidai a karshe.
+10827592	Yi mun afwa, amma bani da canji.
+10827594	Shin ko ina ta wasika ko sakonni?
+10827608	Babbane, ko ba haka ba?
+10827609	Bai kamata a saurari hangensa ba.
+10827632	Kasar Japan ita kadai ce kasar da hare-haren bam din nukiliya suka fada.
+10827653	Kuna ganin zai iya haifar da cuta?
+10827734	Ina so in gabatar da babban abokina Luis.
+10827794	Daƙiƙine kamar itace a tsaye.
+10830592	Adireshin imel ɗin da na aika a baya mai yiwuwa bai bayyana ba. Ba kwa buƙatar ƙaddamar da komai.
+10830657	Ɓangarorin biyu, sun sanya hannu kan yarjejeniyar kwanan nan.
+10830739	Kolliya akan farshe ba shi da amfani: babu wanda ya ke kallon farshunan ko ta yaya.
+10830783	Duniya na bin tsarin dukiya, duk wanda ya mallake ta shine da magana.
+10830817	Aure nau'ine na take haƙƙin ɗan adam.
+10830822	Mai sa'a a karta, mara sa'a a soyayya.
+10830866	Ku zauna ta la'akari da lambobinku.
+10830907	Har yanzu ina da wata yayar.
+10830933	Dukkan dabbobi uku sun yi kokarin taimaka ma tsohon, birin yayi amfani da karfin shi ya tattara ya'yan itatuwa, da fox ya kaman kifi daga cikin kogi ya kawo mishi.
+10830946	Muna da gig gobe da daddare a gidan rawa.
+10831052	Na ari gudumar mahaifina don in gina gidan kare.
+10831076	A ranar 13 ga watan Disamba shekarar 1981 ne aka ayyana dokar soja a Poland.
+10831089	Kowa akwai aikin da ya kamata ya yi cikin al'umar nan, domin ƙara samar da cigaban da ya kamata.
+10831112	Me yasa yake da wahalar samar da cewar tantanin halitta mai juyawa shine sashin asali na jijiyoyi?
+10831118	Ana ganin shi babu kyau ma wani jarumi a cikin littafi nishadi ya karya bango na huɗu.
+10831136	Alƙalin ya yanke hukuncin shekaru biyar gidan yari da aiki mai tsanani.
+10831166	Kina da kyakkyawa nono.
+10831305	Ba na cikin yanayi mai kyau.
+10831309	Yi gudu, aboki na, tsohuwar duniyar yana bayan ka!
+10831336	Kada ku nemi gafara, na fahimta sosai.
+10831412	Mu kan zama masu zalunci ga waɗanda suke ƙauna kuma suke bauta mana a ɓoye.
+10831415	Kungiyar kula da ɗan adam aiki ne na duk bil'adama, waɗanda ke cin ribar sa sosai ya kamata su biya mafi yawan amfani ga fa'idar da suka samu, ba shakka suna haɗama, kawai suna son ƙari.
+10831461	Sabon fim din Harry Potter kyakkyawa gurgu ne.
+10831495	Ƙararrawar yayi kara.
+10831549	Amma bani da kudi.
+10831556	Yaushe zaka dawo gida daga Milan?
+10831592	Karka kwatanta ni da tauraruwar fim.
+10831603	A cikin 1848, mutane sun zo California don neman zinariya.
+10831608	Ambaliyar ruwa ne ya haifar da hadarin da ya faru a garin.
+10831620	Wasan tsalle wasa ne mai wahala.
+10831628	Mun kasance a cikin jirgin har tsawon sa'o'i goma.
+10833117	Idan ka dasa irin tufa za ta iya zama bishiya.
+10833145	Hanyar da za mu tarar gaba ba ta da kyau.
+10833146	Duniya kamar siffar kwallo take, ba a shimfide bane.
+10833167	Na yaga rigata lokacin da nake aiki cikin lambu.
+10833171	Ƴan ta'adda sun kai hari cibiyar cinikayya ta duniya dake birinin New York a shekarar 2001.
+10833195	Lashe zaben babbar nasara ce ga jam'iyyar siyasa ta dan takarar.
+10833236	Ko za ka duba tayoyin?
+10833244	Ta ci gaba da damuna.
+10833264	Mata na kulawa da mu tamkar wasu iyayen gidansu. Suna bauta mana, amma kuma ko wane lokaci suna damunmu domin yi musu wani abu.
+10833279	Sutudiyon ta yi ƙankanta, ba wajen da zaʻa buya.
+10833322	Jiya agogon ƙararrawa bai tafi ba kuma Kurt bai farka ba.
+10833347	Jirgin ƙasan zai taso ƙarfe shida kuma ya isa ƙarfe goma.
+10833366	Akwai wasu muhimmiyar takardu da suka ɓata daga jerin takardu.
+10833370	A 'yan kwanakin nan da wuya ka banbanta tsakanin jam'iyyun siyasa.
+10833504	Na karɓi hayar ɗaki na wata guda a Farisa.
+10833543	Kafin Dauda ya isa, Samantha ta fara saita teburin.
+10833591	Karka kashe kanka.
+10833648	Girman kai na mutum raunin mutum ne.
+10833675	Doki ne kawai na neman haraji.
+10833742	Sun harbi 'yan Burtaniya daga bayan itatuwa.
+10833767	Sun ji cewa yanzu ba lokacin tayar da yaƙi ba.
+10833832	Sojojin Burtaniya na yaƙi sosai, amma sun kasa dakatar da Jamusawa.
+10833855	Shugana Kasa Ruzabel ya yanke shawarar kin rama farmaki ga Jafan nan take.
+10833900	A wurare da dama, akwai karancin abinci kuma mutane na jin yunwa.
+10833921	Bari su ci gaba da ayyukansu.
+10833985	Takalminsa da wando sun lulluɓe da laka.
+10834009	Zuwa 1897, dubannin mutane ba su da aiki.
+10834011	Janar Jackson ya gaza kama duk wani Ba’indiye.
+10834022	Ba ta ji daɗin nasarar da Marilyn Monroe ta samu ba.
+10834025	Mutane sun yi kira da a mamaye ƙasar Cuba kai tsaye.
+10834028	Babansa ya rike mukamin Sanata a United Stated.
+10834047	Maƙiya abokai ne da ba za su taɓa barinka ba.
+10834931	Ka tabbata zaka zo.
+10834993	Na kama ka!
+10835031	Sharon ta gano cewa tana da juna biyu.
+10835048	Zata haifu a watan Yuli.
+10835240	Akwai dogon wajen juyawa.
+10835250	Idan nayi la'akari da yiyuwan kamuwa da cutar mura a kowane lokaci da na sha baki da yarinya da ban sani ba, bazan taba samun sa'a da 'yan mata ko kadan.
+10835268	Ya kashe kansa sakamakon tsalle daga tsauni.
+10835389	Kamar kashin kifi ya makale a makogoro na.
+10835451	Wanne ne waƙanda ka fi so na mawaka Rolling Stones?
+10835586	A ko yaushe a kuma ko ina yana son hankalin kowa ya koma kansa.
+10835595	Gidana na hawa na mataki na uku.
+10835633	Mai biyayya ne shi fiye da tsammanina.
+10835753	Ba na jin Yaren samaniya.
+10835839	Abubuwan da ke gaba an yi wahayi zuwa ga sashi ta hanyar labarin gaskiya.
+10835856	Kan azzakarinka yana fita daga bel ɗinka.
+10837324	Mara lafiyar yafi mai lafiya nesan kwana.
+10837331	Ko bindigar ka da harsashi?
+10837340	Wannan magen mai launin ruwan kasa.
+10837447	Jikin bil'adama ya ƙunshi ƙananan ƙwayoyin halitta ne kawai.
+10837506	Bana son wannan littafin.
+10837526	Kowanne lokaci ƙudan zuma na ƙara kusa da tagar kicin.
+10837527	A saman wankin akwai kwalabe na wuski da yawa.
+10837544	Wataƙila ya ɓace jirgin.
+10837635	Ana la'akari da shi cewa shi babban ɗan siyasa ne.
+10837671	Likita ya aika da mai rayayyen mara lafiya zuwa gawarwakin.
+10837674	Haramun ne sanya karnuka yin fitsari.
+10837824	Da fatan za a karɓi taya murna ta ga nasarar ku a yau.
+10837931	Wannan magen mai launin ruwan kasa ne.
+10838131	Ina makullan ka?
+10839700	Mikiya na tashi a sama.
+10839748	Tana cikin yanayi mara dadi.
+10839874	Idan ka tura madannin, kofar zata bude.
+10839968	Babu tabbas cewa Sharon na iyawa.
+10840041	Wuta ta hasken ta a cike yake.
+10840089	Sun ja kwale-kwalen su zuwa baƙin teku.
+10840109	Ba daga nan nake ba.
+10840133	Wolves ba kasafai suke kai wa mutane hari ba.
+10840236	Na ji John yana magana da Mista. Brown.
+10840259	Taurari da yawa na haskawa a sama.
+10840296	Na yarda. Nayi kuskure.
+10840340	Mama tayi kuka.
+10840400	An fara kai harin ne da wani harin kunar bakin wake da mota.
+10840470	Dubunnan mutane suna kwana cikin tsananin sanyi a lokacin sanyi.
+10840473	Daidaitan yanayin yana da saurin cutarwa.
+10840512	Duk da yake a farko ya shahara a fim din mai zaman kansa wanda ya yi, daga nan ya tafi daga darektan wani jerin shirye-shiryen talabijin mai ban dariya ga mai shirya fim mai cike da cikakken iko. Irin wannan aikinsa ne.
+10840516	Zan sha giya.
+10840529	Martaban na ƙasa yana daga cikin waɗancan abubuwan da ban fahimta ba.
+10840538	Na gode, na fahimci komai.
+10840541	Ya cancance shi.
+10840603	Shin dadi tafiya da jirgi ruwa?
+10840613	Achan Babu daidaitaccen tsarin ƙasa.
+10840638	Mun yi hayan wasan kwaikwayo na soyayya da dariya.
+10840639	Zan sami izini?
+10840658	Wasan shi basa sa dariya.
+10842123	Wancan harbi ne mai arha.
+10842197	Idan mutane sun san ta hanyar ƙananan mazajen da suke mulka, da sannu zasu yi tawaye.
+10842282	Waya tana kara, amma babu wanda ya amsa.
+10842288	Wancan itacen yana girma kusa da gidan ta.
+10842304	Opera a Ingilishi, shi ne jigo, game da abinda ya kamata a baseball a Italiya.
+10842415	Za a ƙara buƙatar gwaji nan gaba.
+10842479	Hakan ya sanya ni kuka.
+10842480	Yana yi kamar shahararen tauraro.
+10842532	Bazan bari ba!
+10842543	Wata damfara ce kawai ta neman kudi.
+10842568	Muna fatan wani abu mai kyau zai faru.
+10842619	Tana busa yawan busa kahonta.
+10842629	Ta tafi makarantar mata da maza.
+10842651	Raunukan suna warkewa.
+10842687	Komawa ga lambar siriya a duk lokacin da kuka nemi taimakon fasaha.
+10842761	Bana cikin kurciya amma har yanzu ina iya cizo.
+10842773	Shin kun taɓa liƙa fosta a bango?
+10842830	Yau akwai zaafi sosai; ya kai 45 °C a cikin inuwa.
+10842834	Dole mu daina kona gandun dajin mu, saboda shine tushen iskar da muke shaka.
+10842859	Rose mace ce mai kauna da kirki sosai.
+10842884	Na yi tafiya daga nan har Jamus amma na kasa samun lokacin da zan ziyarci Alexander.
+10842896	Harshen Turanci na Amurka bai fi Turanci na Burtaniya kyau ba.
+10842980	Na san Kawu Alfred zai dawo.
+10843051	Tunda yanzu an amince da auratayya tsakanin jinsi guda, nan bada jimawa ba zan auri kaina.
+10843081	Ki buƙatar abin hawa zuwa gida?
+10843103	Mizayil nawa wanna jirgin saman zai iya dauka?
+10843113	Wace ƙasa ce ke da cikakken amfani wajen samar da masara?
+10844912	Duniyata kullum sabuwa.
+10845001	"Da alama ba za ku so yin zango tare da ni ba." "Ka yi kuskure. A zahiri, ina ganin zan so hakan sosai."
+10845125	Tana da wani irin tari.
+10845203	Daina bugawa kato!
+10845224	"Wani irin giya kake so?" "Me kake dashi a famfo?"
+10845278	Da sunan Allah, ka kare ni daga wannan mahaukaciyar matar!
+10845379	A ina ka yi aski?
+10845400	Idan mai dakon kaya ya ɗauki kaya, kar a manta da shi.
+10845460	Na faɗa mata komai.
+10845497	Ya buge ka ne?
+10845544	Tana so ta zama daga cikin al'ummar turawa.
+10845580	Ina son nazarin ku.
+10845591	Ba na son yin wasan karta.
+10845608	Da gaske ba kwa son yin wannan.
+10845623	Ina so in nemi afuwa akan abin da nayi.
+10845648	Na kwashe sheakru biyar a matsayin mamba na ƙungiyar nan. Oh tsaya, a'a. Shida.
+10845671	Gubar cherry za ta iya kashe duke.
+10845672	Ina so in siya kwei dozin.
+10845778	Ina farin ciki kina farin ciki.
+10845787	Mu mutane ne masu hidima da yawa.
+10845829	Tana rubutu game da rashi da rudani kuma.
+10845868	Shin mutumin kirki ya san motar wanene nan?
+10845879	Dole ne mu nemi wani abu don toshe wannan rami.
+10847735	Barka, Na samu zuwa shagon!
+10847739	Me yasa kowa yake raɗa?
+10847758	Tafkin English ne ya raba tsakanin Birtaniya da Europe.
+10847790	Wannan tashin hankali ne.
+10847846	Yana da son ibada.
+10847866	Akwai caji a kati na.
+10847867	Wannan shine kashedinku na karshe.
+10847942	Tsawon wane lokaci ka san Luis?
+10847961	Idan wannan shine mafi kyawun dukkanin duniyoyi masu yuwuwa, yaya sauran suke?
+10847971	Ta gabatar da ni ga ‘yar uwarta.
+10847973	Kalmar da kayi amfani da ita ta dogara da ma'anar da kake nufi.
+10847995	Yanki ne mai launin toka-toka.
+10848002	Sun buge shi tun daga farko kuma sun kasance tare shekaru 20 yanzu.
+10848008	Kullum kara shakuwa mu ke.
+10848025	Kuna son shan kofi?
+10848033	Kai kazamin alade!
+10848191	Mu abin koyi ne.
+10848212	Kawo ta nan.
+10848230	Na yi sa'a.
+10848236	Ni ma na ji.
+10848252	Ni abokin ciniki ne.
+10848360	Ivan mai ban tsoro ya kashe ɗansa a 1581.
+10848438	Ina son riga mai kwala me kyau.
+10848453	Taron bikin ya kayatar.
+10848466	Dakunan biyu suna hade.
+10848492	Bana son yan sanda.
+10848498	Kada ku kira ni dan iska.
+10848503	Ba ku da taro?
+10848621	Muna da bukatar hutu daga juna.
+10848637	A doka, an hana bara a titi.
+10848703	Ya bayar da wani sashi na gidansa ga ɗansa Robert.
+10848712	Tana kwankwasa kofa.
+10848719	Ina zuwa makaranta ran Asabar.
+10850090	Gaskiya ba sa son sharuɗan.
+10850091	Ba zan iya sanin ko ta sauka, a jirkice yadda bai kamata ba.
+10850097	Ta busar da idanunta.
+10850138	Har yazu ban yi tambaya ba.
+10850239	Na san yadda zan gyara wannan.
+10850270	Na yi jerin sunayen.
+10850288	Ina buƙatar kara duba rubutu na.
+10850289	Ina son zan ƙara yin wani kiran wayar.
+10850309	Na gano cewa ban shirya ba.
+10850419	Ba ma zuwa makaranta ran Asabar.
+10850436	Kwafi biyu na yarjejeniyar yanzu an buga su kuma bangarorin biyu zasu rattaba hannu a kan su.
+10850488	Bayan tseren, kowa ya tsaya yana haki yana yin minti biyar ko goma.
+10850507	Na ɗauka kin kammala da wannan tun da farko.
+10850543	Don Allah a dawo da wadannan littattfan ran Asabar.
+10850570	Abu mai kyau ne kyakkyawar ne?
+10850587	Mu na yawan tunani cewa lokacin mu kawai ranar lahadi ne da kuma a lokacin hutu.
+10850613	Har sai mun sake haduwa, Bob da Nora.
+10850617	Wannan wace ma'aikata ce?
+10850651	Bari mu sanya kaya mai daraja.
+10850702	Ina ajiye wannan kwalbar ruwan inabi don wani rana na musamman.
+10850853	Ka ƙware kan hakan.
+10850873	Zan komo kansa.
+10850881	Tsuntsaye nawa talking to lambun makarantar?
+10850932	Saboda daya ya sanya abun wuya na zinare, dayan kuma ya saka igiya.
+10850983	Kar ka tambaye su inda zasu je.
+10851003	Muna bukatan Likita. Abun gaggawa ne.
+10851042	Kar ka taɓa rasa imani da kanka. Kana iya duk abun da kake son yin.
+10852718	Na ga yaro.
+10852841	Ka ji kunya.
+10852948	Duk kewaye, har zuwa idanun iya kai wa, ba abin da ake iya gani sai filayen kankara, wanda jirgi ya kasance da ƙyar.
+10852994	Wannan ne abokin da na mikawa makullin.
+10853035	Aika wasikar ta hanyar rajista don tabbatar da cewa ta kai ga burinta.
+10853065	Wancan ba hanya bane na kula da baki.
+10853071	Ba za'a iya yin shi a lokacin da muke da shi.
+10853088	Duba tallan na a kusurwar hannun dama ta sama.
+10853090	Akwai kwanciyar hankali a yanayin Casey yayin da ta hau matsayin ta; akwai girman kai a cikin hali na Casey da murmushi a kan fuskar Casey.
+10853094	An rufe akwatin.
+10853113	Ruwan sama ya faranta min rai.
+10853123	Na amshi wata wuƙa mai amfani da lantarki a matsayin kyauta.
+10853153	Me ya faru da Megan Fox?
+10853175	Suna yin kayayyakin gyara a masana'antar kera motoci.
+10853204	Yanayi a waje ya kai digo huɗu ƙasa da sifili.
+10853215	Ina ne Boston?
+10853311	Wannan uzirin bai kai na barin aiki ba.
+10853328	Mayen na shan jini.
+10853373	Shin kun kai akwatunan har can attik?
+10853389	Karin mutane suna neman hanyoyin maganin gargajiya.
+10853420	Manomin ya haka Rami domin ya dasa bishiya.
+10853464	Yan kallon na yabawa kungiyoyin biyu.
+10853515	Abin da hannu ya gina, su ke rusa shi.
+10853521	Wannan baƙin tekun wani sannaniyar wuri ne na masu yawon buɗe ido.
+10853528	Rayuwarku tana cikin haɗari.
+10853529	Idan baka da fil ɗin maƙale kaya, to dogon fil ɗin zai iya amfani.
+10853558	Dan Allah ara mun wancan littafin.
+10853581	Muna magana ne game da mulkin mallakar Birtaniyya.
+10853655	Littafin Bible ya gaya mana mu so maƙwaftanmu.
+10855151	Za su taimaka mana.
+10855198	"Daga baya ta kirji cikin ido" - za ka iya bayani akan aikin, saboda ba zai yiyu a yi tunani wani rikicaccen hanya rubuta wani shiri ba.
+10855206	Muna buƙatar ɓoye gawar.
+10855218	Menene kake yi cikin dare haka?
+10855239	Ka ajiye in da baza agani ba.
+10855262	Ina jin cewa babu wa'yanda suka damu da yanayin fitar da maganar su kamar yan Russia.
+10855282	Dukkanin ku yau kuna lafiya?
+10855300	A ina ku ke tunanin mu ke?
+10855399	Kar ka zama lausari idan ta kasance kai ka ke rike bindigar ba wani ba.
+10855407	Kun san shi da kanka: wani mutum ba tare da wasu takaddun doka an hana shi wanzu ba.
+10855434	Citta na da matuƙar amfani a lokacin hunturu.
+10855441	A ina ne na ajiye makullin mota?
+10855467	Kar ka fada wa amarya ta.
+10855531	Ba na son yin wani abu da zai iya zama haɗari.
+10855558	Mun kama ɗaya daga cikin masu leken asirin su.
+10855573	Kun cika ƙorafi, ko ba haka ba?
+10855574	Kana aiki mai kyau.
+10855617	Na ga wancan fim din ran Asabar.
+10855627	Za a ɗaure shi a jikin bishiya, sai biri, a bayansa, ya buge shi a kai da dutsen.
+10855636	Mahaifinta ya amince da shirinta.
+10855674	Suna farautar gawawwaki a cikin kango.
+10855682	Ka daure shi sosai.
+10855698	Ina za ku je ku yi karatu?
+10855703	Kai, akwai wanda yake da ɗan cingam?
+10855745	Wannan shi ne jeri na farko na jerin kan falsafar zamani.
+10855788	'Yanci shine jigon duk cigaban ɗan adam. Ya yi imanin cewa ba wani abu da aka ba mu, amma idan kun yarda da yin aiki tuƙuru. Idan kun yarda da gasa, mafarkin Amurka na nan a gare ku.
+10855849	A yi addu'a ga yarinya mai tsarki.
+10855863	Ina yarinya, na so Barbie.
+10855902	Na sanya dutse a karshen takardar saboda kar iska ya ɗauke.
+10855945	Lokacin da iska ta kwashe wani ɓangaren rufinmu mun shiga damuwa sosai.
+10856017	Tafiya a cikin hasken wata hanya ce ta nuna soyayya don kawo ƙarshen yin zance.
+10856024	Me ka ke so ka gani?
+10856049	Zan iya ba da shawara?
+10856063	Wani abu mara dadi ya faru.
+10856103	Shin kuna tambayar hukuncin da zan yanke akan wannan al'amarin?
+10856113	Wajen da muke amfani da shi domin ajiye kayan, kayan an ƙara masa farashi, dole yanzu mu nemi wani wajen.
+10856150	Walt bai ba iyalinsa komai ba bayan mutuwarsa.
+10858204	Shin kana so ka ci wannan?
+10858230	Toh, menene sirrin ka?
+10858247	Ka ɗan yi kamar launin kore.
+10858250	Shin koyaushe kuna sa koren kaya a ranar St. Patrick's Day?
+10858251	Wataƙila dole ne muyi aiki da wuri yau.
+10858252	Ina da tabbacin za ki iya gudanar da aikin.
+10858274	Na tabbatar, akwai hanyar da za mu gyara wannan.
+10858294	Dole mu zauna a tare yanzu.
+10858321	Daraktan wasan gudun yace hanyar za ta cika da ruwan sama ko ƙanƙara.
+10858397	Tsohuwar ta tsallake titin.
+10858437	Kar ka kira ni da wancan, ta faɗa a hankali.
+10858452	Kuna iya lalata komai.
+10858526	Idan kuwa Turuzu, ne zan aure shi.
+10858561	Unguwar Latin na da maƙwaftaka da ɗaliban Paris.
+10858599	Wani yana kwankwasa kararrawan ƙofa.
+10858630	Kawuna direba ne me ban tsoro.
+10858679	Ba wani abu da za ka nemi afuwa.
+10858709	Dan Allah bani aron sent goma.
+10858718	Matsalar nauyi yana da matukar mahimmanci a tsakanin mata.
+10858748	Muna nan tafe a bayanku.
+10858774	Ina da karnuka biyu.
+10858786	Shin kana da wani babban kwanu?
+10858792	Ɗan sandan ya duba ko mutumin da ke kwance na da sauran numfashi.
+10858822	Bani da wata manufa a kan ku baki dayan ku.
+10858838	Kasancewa dangi ya fi wannan zurfin gaske.
+10858909	Ya kamata ka tafi yanzu.
+10858929	Kuna ganin wannan ita ce amsar?
+10858995	Babban wajen da aka bari ba kowa tsakanin taron jama'a da wuta, matashiyar ta yi rawa.
+10859036	Marubucin ya nuna babbar baiwa a cikin halittar halayensa.
+10859045	Shin kun karanta wannan?
+10859057	Ya kusan manta kuɗin sa.
+10859063	Matashin da yake tare da matuƙin jirgin ya mutu.
+10859079	Rudanin yaƙi nada doguwar tasiri akan wa'yanda suka tsira daga shi.
+10859099	Zaka iya kasancewa tare da mu idan kana so.
+10859104	Yaya siririn yayi yawa?
+10859121	Zai iya zama kuskure ne.
+10863243	Ba za ku yi amfani da kwalban feshi don tsabtace wayarku ba, ko kuwa?
+10863396	Wakilan jama'a da sauran baƙi na iya amfani da ɗakin karatu na tsakiya don samun damar zuba kayan da ba a samu cikin sauƙi a wani wuri.
+10863442	Babu tabbacin komai.
+10863448	Ubangiji shi ne jagorana, takobina kuma abin abokin rayuwata.
+10863483	Amsar ka tana da muhimmanci!
+10863543	Kar ka haskan fitilar leza in fuska!
+10863558	Me ya sa ba za ki je ki kalli TV ba ni kuma na dafa abincin dare?
+10863559	Bangaren dama na rikoda ta ya fice.
+10863612	A karshen rabin farko Real Madrid ke kan gaba, amma daga karshe Chelsea ce ta yi nasara.
+10863660	Zai iya kasancewa da taimako.
+10863669	Idan kun sha kofi mai narkewa ba kwa buƙatar tukunyar kofi.
+10863699	Na shirya abincin safe ma Dee.
+10863755	In haka ne manufar ainihi, tabbas zan san da haka.
+10863770	Kowa ya daki wawan.
+10863783	Mahaifiyata da mahaifina zasu ƙaunace ni ko da menene.
+10863785	Nurse din ta fada min cewa bai kamata ta cutar ba.
+10863828	Scientificungiyar kimiyya ta duniya ta bayyana karara cewa ayyukan ɗan adam tuni suna canza tsarin canjin yanayin duniya.
+10863932	Na yi tsammanin zan fahimce ki.
+10863940	Mata suna da gaskiya.
+10863950	Ba na jin za mu iya dogara da shi.
+10864010	Ina fatan zan iya yin shi.
+10864014	Musayar kayayyaki da aiyuka tsakanin kasashen biyu na karuwa.
+10864040	An yi shiru mai yawa.
+10864077	Bansan abunda yake wakana anan ba.
+10864132	Kai, nisanta daga bangon.
+10864188	Ni babban mosoyinki ne.
+10864234	Ina matuƙar jin ƙishi.
+10864240	Za mu iya yankewa zuwa farauta a nan?
+10865881	Ta yaya ki ke magance waɗannan wahalhalun?
+10865891	Masu sauraro sun rincabe da ihu.
+10865904	Wannan ba gaskiya bane.
+10865947	Shin wancan ya dace kuwa?
+10865964	Wace irin jaka kike son na sayo miki?
+10866012	Harafin "n" harafi ne ƙarami.
+10866025	Menene direban tseren ya ce?
+10866032	Ya maida idanunsa kan silin.
+10866040	Waye ne ta ke da shi a cikin zuciyarta?
+10866057	Nut ita ce allahiyar Masar ta sama.
+10866094	Zan dafa maka wani abu.
+10866102	Kun yi wani kuskure.
+10866140	Ina tsammanin ya kamata ka yi ritaya.
+10866141	Ina gani in je in soke kawai in soke tanadin da na sa a yi mana.
+10866149	Gaskiya ban san me ya ke faruwa ba.
+10866162	Kana da ci da yawa.
+10866170	Kin riga kin gamsar da ni.
+10866185	Wannan zai iya nishandantarwa.
+10866187	Zan zo gidanku.
+10866198	Da wuya a manta da abinda ya faru.
+10866233	Kamar zan je na ƙara cire wasu ƴan kuɗaɗe daga banki.
+10866247	Menene naku nazarin?
+10866249	A ƙalla dai ba ni kaɗai ba ne.
+10866262	Tuni an zabi wanda zai maye gurbinka.
+10866305	Santa Claus yawanci ana zana shi kamar roly-poly. Ba shi da fata sosai.
+10866330	Za ku ɗan ƙara komawa baya?
+10866347	Ta yaya za ku gina wani abu mai girma kamar wannan a kan yashi?
+10866352	Aiki ya so karshe nan take, a tsakiyar watan Yuli.
+10866384	Wannan tsibirin ya nunka Manhattan girma sau shida.
+10866393	Yanzu kake magana from tsuntsaye.
+10866402	Jiragen kasa suna tafiya ta hanyar wannan rami da nisan mil arba'in a awa daya.
+10866419	Wannan babbar mota na iya daukan tonne ashirin da biyar na simintin ruwa.
+10866499	Sun yi kira ga masu gadin gabar teku.
+10866546	Zan gargaɗe su.
+10866555	Bana son ta manta dani.
+10866578	Shin zai yiwu a yi tafiya da irin wannan gudun.
+10866624	Waaye zai damu ko ma me ya same ta?
+10866728	Taimakon jin daɗinsa ne.
+10866739	Ban ma taɓa haɗuwa da shi ba.
+10866742	Ina son ganin ta.
+10866743	Zan haɗu da ita wani lokaci.
+10866754	Gaskiyar ita ce ba na son ta.
+10866845	Zan je na yi masa wanka.
+10866942	Wani ne ya jefe ta da dutse.
+10866968	Shin kun taɓa tunani game da su?
+10868622	Nan da nan aka kama mai kisan gillar, aka saka shi a cikin mota kuma aka kore shi daga wurin da aka aikata laifin.
+10868651	Ya ce bashi da masaniyar cewa abokin aikin sa na karbar cin hanci.
+10868680	Dan kashe kansa yayi dan gudun kamewa.
+10868709	Rayuwa na cike da ƙalubale.
+10868728	Inspector Dan Anderson ya tattara shaidu game da laifin dagan wurin da ya faru.
+10868809	Kanar Collins yana da aure kuma yana da 'ya mace. Idan ta samu lokaci tana son gudu, buga wasan golf kuma ta je hutawa cikin rumfa.
+10868871	Kuna son kallon Talabijin, don haka kuna tsammanin abin da nake yi a lokacin ɓata-rai yana da ƙarfi sosai.
+10868897	Dan bai bada makamin shi don a gwada.
+10868962	Ikirari abu ne mai kyau ga rai.
+10868979	Dan ya kai kara ga ‘yan sanda cewa an sace‘ yarsa kuma an yi mata fyade.
+10869013	Waɗannan waƙoƙin tayoyin an yi su ne ta hanyar matsakaiciyar abin hawa.
+10869040	Motar Dan kamar ta bace ba tare da wata alama ba.
+10869134	Za a iya amfani da ƙarin hannu biyu?
+10869165	Hatsarin mummuna ne.
+10869180	Ci gaba a hankali amma yana ci gaba koyaushe yana nasara.
+10869327	Na yi bacci cikin jirgin na wasu awanni.
+10869341	Laccar ba ta da armashi ko kadan ga gundura.
+10869402	Shin kuna son zama a Mumbai?
+10869495	Ban so abincin ba, amma na tilasta ma kaina na ci.
+10869504	Ya kasance abokina ne sosai.
+10869524	Gudun Numfashi na ya karu kuma na dimauta.
+10869533	Ya batun askirim me cakuletin bayan cin abinci?
+10869600	Muddin ba su yin hakan a cikin jama'a, bari su tafi don shi.
+10869618	Alfred ya rasa sha'awar wannan aikin.
+10869642	Ya amsa laifin yayin da ake tuhumarsa.
+10869716	Kayan gini suna da tsada sosai a wannan lokacin.
+10869780	Za ku sami harɓi guda ɗaya a wannan, don haka kada ku busa shi.
+10869788	Kotun da bata da mata kamar lambu ne wanda bashi da furanni.
+10872115	Samun ruwan sama yayi ƙasa.
+10872218	Ina jin dadi sosai.
+10872248	Sun shiga tashin hankali.
+10872382	Zaka iya ajiye makamashi ta hanyar kashe fitilun lokacin da ka bar daki.
+10872394	Ƙwaƙwalwa na da hadadden tsari.
+10872521	Wani shawara mai hazaƙa dole yaro ya koya kafin ya iya buga fiyano?
+10872533	Zan shiga shekaru talatin wannan Oktobar.
+10872612	Kuna cin kifi da yawa?
+10872619	Za mu yi abinda za mu iya.
+10872668	Na karar da yammacin Asabar din ina kallon TV.
+10872675	Yau na lalata komai.
+10872726	Mummy, mene ne adireshin Santa Claus? Ina son aika masa da wasika.
+10872782	Shin wanda Turanci ba asalin harshen shi zai taɓa iya cin muhawara tare da wanda Turanci asalin harshen shi a mafi girman matakan muhawara?
+10872795	Rike ka ba wani amfani. Lalata ka babu asara bane.
+10872808	Fim ɗin da ya lashe gasar Oscar shi ne ya fi kowane fim ɗin ƙasar waje.
+10872870	Kowa na shawo kan bakin ciki daban daban.
+10872946	Akwai hatsari yin ruwa a gobe.
+10872995	Jami'an binciken sun ƙara gano wata shaidar.
+10874613	Matukan jirgi suna sadarwa tare da sabis na tashar jirgin sama ta rediyo.
+10874700	Kwancen Kwai na Easter wani biki ne na shekara-shekara wanda ake gudanarwa a lawn na Fadar White House kowace Litinin.
+10874719	A narkar da cakulet da bota sannan a juya su da kyau.
+10874740	Baba, ba wasa nike yi ba! Ina da juna biyu.
+10874760	Tunaninmu mai ƙarfine kamar yadda tsuntsaye ke dunƙulewa waje ɗaya cikin duniyarsu ba tare da sun rarrabu ba.
+10874772	Na bada hujja bata yi daidai ba.
+10874801	Ya ɗauke cokalin saman bakinsa.
+10874819	Daga abinda za ku iya fada, wane darasi kuka fi so?
+10874845	Babu wata matsala gaba ɗaya.
+10874885	Mutuwa abu ne ga kowa kuma mutum ba zai iya tsira ba.
+10874948	Har yanzu ana ba da izinin horas da Kofur a ƙasashe da dama.
+10874968	Ya rufe kofar ya kulle ta.
+10875001	Wasu daga cikin mutanen da ke cikin taron suna ta jefa kwalaban giya.
+10875008	Meya sa ba za ki yi magana da ita ba?
+10875034	Fuskanci mara lafiya kamar naku kuma ba mahimmanci bane? Idan ka canza tunaninka, tafiya zuwa asibiti shine mafi kyawun zaɓi, koba haka ba?
+10875051	Idan kun sani ko ina ga ina cikin matsala,...
+10875059	Eve ta bai wa Adamu tuffa ta ilimi.
+10875114	Na roƙi Allah ya bani babur, amma sai bai bani ba. Sai na saci babur ɗin kuma na roƙi Allah ya yafe min.
+10875125	Ci gaban fasaha ba zai ɓata rayuwar mu ba.
+10875159	Na kasance ina ba da agaji a dafa abinci na dafa.
+10875175	Ina so in mayar da hankali kan hakan.
+10875205	Na ga wani abin tashin hankali.
+10875282	Ban gama yin tunani ba.
+10875434	Mai da hankali.
+10875465	Suna cikin dakin binciken kimiyya.
+10875487	Makamashin amfani da hasken rana zai da kimanin shekaru ɗari biyar. Idan da wani yana nan lokacin da abin ya faru, da sun bar wannan duniyar sun nemi wata sabuwa.
+10875499	Zan kai karar ka da saurin da zai iya juya ƙwaƙwalwar ka.
+10875509	Yana da dumi, don haka na kunna faran wutar lantarki.
+10875557	Baza ka daamu idan ka juya baya saboda in sanya kaya?
+10875585	An tilasta min buga littafina da kaina.
+10877380	Kwaɓin fulawar ya maƙale a jikin kantar.
+10877418	Shaidan koyaushe yana neman hanyar da zai sanya wani mummunan abu ma mafi munin.
+10877421	Don reshe mai ƙarfi, ana buƙatar gatari mai ƙarfi.
+10877431	Ba a hukumance ba ne.
+10877433	Mafi yawan wadanda abin ya shafa yara ne.
+10877486	Na yi ƙoƙarin zama tare da ita, amma abin ya gagara.
+10877502	Hukumar leƙen asri ta sanya wasu jami'an sirri a yankin ƙungiyoyin ƴan ta'adda.
+10877588	Ke kaɗai nake so.
+10877590	Bayan tiyatar sai ya ci gaba da zama cikin lura.
+10877786	Dukkan mutane su en uwa maza da mata ne agare ni.
+10877790	Tana fama da ciwon koda.
+10877880	Yana kashe ni.
+10877895	Na ji wancan da yawa, ni ma.
+10877896	Wannan bana farko bane nike kasawa a lokacin tambayoyi na neman aiki.
+10877927	Gidajen TV sun watsa taron.
+10878002	Dole ni in kamala gyara rubutun da za'a gabatar. Ya kusan karewa.
+10878048	Mafi muhimmanci a bangaren 'yancin fadar ra'ayi shine ma'aikata na samun nutsuwar fuskantar shugabanninsu kan duk abinda ya shafe su.
+10878051	Duk lokacin da Mama na tana da wani matsala na kanta abun da ta fiso tayi shine rubutu zuwa ɓangaren shawara na jaridar da ta fiso.
+10878093	Na tambayi madubin sihirina idan akwai wanda ya fi ni kyau. Wataƙila zai gaya mani sau ɗaya idan an gama dariya.
+10878094	Da na ƙara ci a lokacin cin abincin rana, da yanzu bana jin yunwa.
+10878214	Ka auna abubuwan da ka zaba a hankali.
+10878253	Kotun sun hana ɗaukaka ƙara.
+10878262	Ina ciki na dogon lokaci.
+10878287	Kusan ni nayi komai.
+10878311	Mutane suna kaunar jaruman wasanni.
+10878385	Da fatan za su zamewa.
+10878407	Ladabtarwa ita ce hanya.
+10880365	Shin ba quid biyar take da shi kawai ba?
+10880459	Shin zaka iya taimaka mun da gyara facin taya na?
+10880462	Har yanzu ba a gano wanda ya yi kisan ba.
+10880521	Ban taɓa yin waƙa cin jama'a ba.
+10880658	Ina ganin bai kamata in ci wannan ba.
+10880686	Bamu binne taskar anan ba.
+10880693	Koyaushe ina samun matsala yayin bacci da daddare kafin babban biki.
+10880710	Ni ma, na yi hakan.
+10880711	Taya zaka yanke hukuncin abinda zaka maida hankali?
+10880783	Ban ci abincin rana ba.
+10880852	Me ya sa baka yin abin da ya kamata ka dinga yi?
+10880864	Har yanzu ban sayo abubuwan da mu ke da buƙata ba.
+10880872	Ina da tabbacin ba za a kamani ba.
+10880898	Har yanzu ina yin haka duk lokacin da zan iya.
+10880934	Ni bana son wancan mahaukacin.
+10880945	"Yaren yana da ban tsoro." "A'a, wannan mutumin kawai yana da mummunar murya. Idan ka saurari wannan saurayin yana magana da shi, zaka ga yana jin daɗi sosai. " "Lalali gaskiyane. Yana ko da dadin ji."
+10880951	Ina cin abincin dare.
+10880957	Har yanzu ba a gano wadanda abin ya shafa ba.
+10880967	Babu yiwuwar zan zo da kaina.
+10880974	Kamar a buge kake.
+10880996	Kin san wani abu game da haka, ko?
+10881040	Na fara kyalkyala dariya.
+10881072	Me yasa ba ka da wasa ne Abokina? Kamar bansanka ba kuma.
+10881088	Kash, Ba zato ba tsammani na shanye kwalban giya.
+10881097	Ana haifan mutane kowane dakika.
+10881100	Na sake yi.
+10881136	Dukkan shawarwari juyin juya hali nada sauki.
+10881172	Ba na zuwa coci kuma.
+10881222	Dukkanin manhajar na'urar computer na abuɗe yake.
+10881277	Ina za ku je wannan karshen mako?
+10881280	Na yi ƙoƙari kada in bar motsin rai na ya yanke hukunci.
+10881312	Babana ya kai 'yan'uwanan da ni gidan zu Asabar din da ta wuce.
+10883904	Ya kamata ace wannan watan za ta haihu.
+10883911	Soyayya ba duk abin da ta kece ta kasance ba.
+10883915	An fara samun haske.
+10883941	Matan 'yan damfara ne.
+10884020	An raba wadannan 'ƴan biyun masu kama ɗaya yayin haihuwarsu.
+10884024	Shin da gaske kuna buƙatar yin hakan?
+10884026	Rana na yana kusa.
+10884027	Ina da tabbacin kuskure ka yi.
+10884029	Wannan kamfanin mai sun shiga wani babban badaƙalar rashawa na mai.
+10884039	Kuna jin ƙishirwa, ko ba haka ba?
+10884059	Cinema, kamar zane, yana nuna ganuwa.
+10884067	Ta yaya zan yi hakan?
+10884078	Wani ya cimma nasara yayin da sunansa ya ba zu ko ina, in banda cikin waya.
+10884088	Shin ba za ku so ƙarin sani game da wannan ba?
+10884118	Shin zaka iya ko bazaka iya ba?
+10884131	Gwamnatin na da iko da buƙatun kamfanoni.
+10884140	Ba ki ji daɗi ba?
+10884142	Ba mu gano yarinyar ba.
+10884161	Katangar zata zama babba.
+10884182	Shin baza ka iya kara hakuri ba?
+10884185	Wannan kalmar ita ce kadai makamin da zai nakasta diragon.
+10884187	Babu sojojin da zasu dace da dragon.
+10884223	Barayin sun saci zanen daga gidan kayan tarihin yayin da mai gadin ke bacci.
+10884233	Bana tsammanin zai yi sauki yin hakan.
+10884238	Ina tunanin ba zai ji dadi da hakan ba.
+10884261	Sun baka tsoro.
+10884310	Bata daina kirana da tura min sakonni ba.
+10884436	A mako mai zuwa zan daure nakoma wajen likitan haƙori.
+10884440	Shawarar cewa akwai rayuwa kamar naamu a wasu duniya daban na ban sha'awa.
+10884458	Wato sun yi magana tare game da lambun da game da gidan kuma game da sana'ar babban su da kuma game da abubuwa daban-daban, saboda Bella ta rasa gaba-daya duk tsoron ta na dodo.
+10884467	A yanzu dai sarkin da sarauniyar, sun sunbaci ƴarsu ba tare da tashinta daga bacci ba, sannan suka fita wajen fada domin bada dokar cewar kada wanda ya je kusa da inda ta ke.
+10884485	Wow! Kusan kamar muna cikin wata duniyar ne.
+10884501	Akwai wanda yake jin tsoro?
+10884607	Na dauka a rana irin wannan kina waje.
+10884639	Ba zan je ba har sai na ji ina so.
+10884674	Kamar tsawon wani lokaci zai ɗauke ka yin hakan?
+10884724	Za ki ƙara yin hakan ko, ko ba haka ba?
+10884726	Kasan da hakan, ko ba haka ba?
+10884756	Wannan littafi ne da nake son karantawa.
+10884766	Ban san inda zan je ba.
+10884771	Ciwon da na ji ba wani mai yawa bane.
+10884810	Zan yi dukkanin abinda na ke son yi.
+10884882	Zan yi hakan ni kaɗai.
+10886204	Yafi sosai ka riƙe shirme da karfi akan ka saduda akan tekun tunanin wahala.
+10886261	Ya buga wasan da takalminsa ya riƙe shi a jikin bango.
+10886294	Maza wawaye ne, ashe ba su bane, Mademoiselle?
+10886322	Man shanu ya yi wuya sosai ta yadda ba zai yiwu a watsa shi a kan burodin ba tare da tsaga rami a ciki ba.
+10886333	Hukuncin yayi tsanani da yawa.
+10886339	Eve ta haifi ɗa namiji.
+10886389	Me yasa baka fada minii baza ka yi ba?
+10886407	Ina tunanin zuwa laburare da ranan nan.
+10886411	Na san ba za mu iya yin haka a yau ba.
+10886426	Kina son sanin me ya sa na ƙi yin hakan?
+10886474	Me ya sa ba za mu tafi tare ba?
+10886481	Kamshin abinda ki ke girkawa yana da dadi.
+10886523	Me ya sa ba za ka saurara ba?
+10886527	Ban sanya kwat ba.
+10886549	Ya kamata Ingila ta zauna a matsayin mamban Tarayyar Turai ko ta fita daga Tarayyar Turai?
+10886563	Jin daɗi shine babban tarkon ku kuma ya fito daga yankin kwanciyar hankali babban ƙalubalen ku.
+10886565	Majizai suna da ban tsoro.
+10886574	Kai kwararre ne sosai.
+10886659	Dole gadar ta kasance mai tsayi don ba da damar jiragen ruwa su wuce ƙasa.
+10886661	Lallodar ta ɗaga sanya ko wane ɓangare na rufin a hankali a wajen zamansa.
+10886701	Daukaka ita ce rana ta matattu.
+10886710	Faɗi hakan ga dukkan ma'aikatan asibitin.
+10886732	Mary ba ta sami damar yin duk abinda muka ce ta yi ba.
+10886734	Na yi tsammani Maryamu za ta gigice, amma ba ta kasance ba.
+10886798	Wannan yana da matukar damuwa.
+10886854	Dakarun Elite da ke firgitarwa sun kwace West Virginia.
+10886920	A kowani lokaci ana kan sa masa ido.
+10886994	Kai co, na zaba romon salak akan kayana!
+10887011	Zai iya dai daita ƙwallon a fuskarsa.
+10887042	A cikin hamada, nauyin ruwa yana da mahimmanci kamar zinari.
+10887099	Ina sonki fiye da yadda na ke son kowa.
+10887109	Kullum ina so in karfafa 'yan mata da samari su bi burinsu, komai girman su.
+10887121	Oh! Wannan yayi kyau sosai!
+10887161	Tana zaune a LA, amma ba kaunar-LA.
+10888804	Kuma idan akwai wani burin ayyukan da muke so don kansa, ya bayyana a fili cewa hakan zai zama Mai kyau da mafi kyau.
+10888836	A tattauna abubuwan da masu kallo yakamata su sani a karshen gabatarwar.
+10888848	Yana shirya gayyatar baƙi masu yawa zuwa wajen bikin kammalawa.
+10888882	Ina zubar da jini! A murza min ciwon da karfi.
+10888893	Muna yin duk abin da za mu iya don nemo ɗanka.
+10889035	Zan kasance a nan na ƙarin wasu awanni.
+10889037	Nayi Sa'a, bana buƙatar zuwa wajen da kaina.
+10889051	Faɗa mini ainihin abin da kuke so in yi.
+10889090	Kamar zan kuma makara.
+10889131	Ina ganin wannan gurguwar shawara ce.
+10889137	Wannan yayi daidai a idon ka?
+10889140	Na fita daga cikin dam na wanka.
+10889184	Wow, wancan ya burge sosai!
+10889215	Akwai yuwuwar ba zan yi haka ba a yau.
+10889242	Har yanzu ban kusa gama wannan ba.
+10889333	Kowa ya kamata yayi hakan.
+10889454	Tsawon wane lokaci ganawar zata kasance?
+10889472	Kina da niyyar zuwa wajen nunƙaya yau?
+10889484	Ina tsammanin kun riga kun aikata hakan.
+10889561	Wannan zai sanya keken a gaban doki.
+10889580	Ba mamaki nan gaba za ku saurare ni yayinda na ke cewa ku bi a hankali.
+10889586	Beudan zuma suna rufe sel da fim na kakin zuma.
+10889643	Shin kun ba katsen abincin?
+10889657	Wace jami'ar ka je?
+10889675	Ya kamata ina nan jiya.
+10889682	Idan da zan sami lokacin, da na yi hakan.
+10889698	Ina tsoron biya.
+10889761	Kewar Brooke tana da irin wannan kyawun wanda kamar ana jefa shi cikin sauƙin talauci mara kyau.
+10889776	"Ban taba gamuwa da dan kungiyar can ba wanda ba mugu ba." Ya za a yi ka sani? Watakil ka hadu da wasu masu kirki, amma ba su fada maka cewa 'yan kungiyar ba ne."
+10889779	Launin fata-, harshe-, da "kabilu" dangane da addini shirme ne.
+10889796	Idan kina so za ki iya zama tare da mu.
+10891295	Dole ne mu halakar da shaidan.
+10891339	Na ratsa zuciyata da fatan mutuwa wannan ya tsaya tsakaninmu.
+10891402	Isra'ila ta fi karfin doka.
+10891410	Muna da abin mamaki.
+10891437	Abokina ya kaini ƙarshen arewacin tsibirin domin ganin wata mata.
+10891474	Na je bakin taga ina kallon waje.
+10891501	Sarki bashi da tufafi.
+10891509	Yaushe ne lokacin wasan?
+10891522	Na saurari da sha'awa hirar jami'in tsaron guda biyun.
+10891688	Bayani na da mahimmanci a cikin al'ummar mu.
+10891689	Wannan kwararar bayanan daga karshe ya haifar da 'yan jaridu a yankuna da yawa na duniya. Amma saboda bayanai suna da karfi sosai, shugabannin duniya da yawa sun yi kokarin dakatar da shi.
+10891745	Ko ya faɗi wani abu kafin ya mutu?
+10891762	Woo hoo! Shine karshen mako!
+10891796	An kashe ministan tsaro sakamakon harbin bindiga dalilin baccin da yayi a wajen faretin sojoji.
+10891812	'Yar aikin ta kwankwasa kofa ba a amsa mata ba, har ta murda hannun kofar, sai ta gane kofar a kulle take daga ciki.
+10891860	Bai kamata malamai suyi irin waɗannan maganganun da ɗalibansu mata ba.
+10891927	Zaki yawanci suna nufin dabbobin da suke da rauni ko mara lafiya.
+10892019	Ina tunanin kyawawan mata za su yi kyau a ko wane irin abu su ka sanya.
+10892044	Na fita daga ɓangare na.
+10892079	Ba mu da lokacin bincika duk waɗannan bayanan.
+10892147	Ta yaya wani abin da zai fitar da ni zai zama da ban dariya?
+10892151	Ta yaya kuka sami damar kasancewa a ƙarƙashin radar na tsahon lokaci?
+10892157	Har yaushe kake a nan kafin mai gadin ya zo?
+10892162	Wannan ne abinda bai kamata ka yi ba.
+10892326	A da, ina da aiki a Austaralia.
+10892347	Na san kuna son Australia.
+10892377	Nayi tunanin zaka fi haka tsufa.
+10892380	Mun ɗauka ana maraba da zuwanmu a nan.
+10892384	Na yi tunani cewa wani abu baƙon abu ne.
+10893569	Nayi mamaki ba lallai ne nayi abu daya da ya kamata kayi ba.
+10893675	Bana tsammanin akwai bukatar na ci gaba da zama anan.
+10893677	Ba na tsammanin cewar zan so zama a Boston.
+10893703	Ba na tsammanin zan iya tsayawa da yawa.
+10893889	Duk wanda zai iya canza wurin soyayya, shima zai iya cire ta.
+10893891	Auna ita ce ainihin son kai.
+10893910	Ina da wata karamar kyanwa mai suna Nina.
+10893924	"Eh da kyau, bani waɗannan huɗun." "Zan ba ki rabi – idan kin so." "Me ya sa ba za ka bani gaba ɗaya ba?" "Sabida nima ina buƙatar guda biyu."
+10893931	Mayyar ta tashi sama.
+10893975	Ta tilastawa kanta yin magana.
+10893982	Ta gyara motar da kanta.
+10893983	Ta sanya kanta shan giya mai tsada.
+10893989	Tana iya kokarin yin hakan da kanta.
+10894028	Ta nuna mun sabuwar gitan ta.
+10894065	Ya gama aikin da aka bashi daga makaranta.
+10894088	Gaba daya baya son dan uwansa.
+10894148	Zai ci abinci idan ya isa gida.
+10894156	Ta ce ita ba Kirista ba ce.
+10894208	Tace tana so tayi magana da Faransanci.
+10894219	Ta ce an tilasta mata yin haka.
+10894302	Ya ce bai damu ba.
+10894316	Ya gaya mani cewa bai ji ƙishirwa ba.
+10894375	Ta san cewa tana jin jiki.
+10894448	Sun tilasta kansu yin murmurshi.
+10894466	Za su yi duk abinda muka sanya su yi.
+10894497	A hankali hujjojina sun bayyana, amma cikin kwanaki ukun da gabata hankali ya dawo sosai. Wasu lokutan na kan yi fatan ban taɓa ba.
+10894516	Kai, amma fa ya yi kyau.
+10894518	Wannan beran gidan yana da launin toka.
+10894539	Sun gaya min cewar sun yi tunanin zan rage ƙiba.
+10895639	Sun ce zasu iya yin hakan yau.
+10895653	Sun ce sai sun yi kuka kullum.
+10895676	Sun yi fushi ƙwarai, ko ba haka ba?
+10895800	Sun manta su biya kuɗin wayar talefon ɗinsu.
+10895802	Sun yi wasa a kungiyar kwalejinsu.
+10895843	Matan ta haifi ɗa na miji.
+10895866	Abu mai muhimmanci ba shi ne burin ba, amma tafiyar.
+10895891	Hankalin ta a kwance.
+10895939	Na yarda cewa bai kamata na yi haka ba.
+10895981	Ina ganin zai fi idan muka bari zuwa gobe sai mu yi.
+10896235	From sassafe ake kama fara.
+10896277	Ina murnan da zamuje fikinik na gobennan.
+10896362	A nan an yi gwagwarmaya da yawa daga cikin rikice-rikice masu gwagwarmaya yayin yakin basasa na Roses.
+10896455	Sun dauke ni a matsayin jikansu.
+10896512	Hikima ƙungiya ce ta kimiyyar ɗabi'a da fasaha.
+10896572	Wannan maganin na samuwa kawai ta rubutun likita.
+10898077	Mun tafi neman zinariya.
+10898111	Mary matar yayana ce.
+10898135	Muna so mu ƙare al'umma da muhalli.
+10898215	Kuma Ubangiji yace ma Abraham: Meyasa Sara tayi dariya, da cewa: Yaya Ni, tsohuwa da ni, in haifi yaro kuwa?
+10898250	Sai ya miƙa hannu ya ɗauki takobin don ya yanka ɗansa.
+10898400	Haka ta fada min ranar Talatar da ta wuce, wani abu zai mummuna ZAI IYA faruwa da ni idan bana yin addu'a a kowannne dare. Ni kuma na ki yin addu'ar sama da mako guda, ina jiran in ga abin da zai faru da ni... kuma babu abin da ya faru.
+10898445	Waɗannan su ne zuriyar sama da ƙasa, lokacin da aka halicce su, a ranar da Ubangiji Allah ya yi sama da ƙasa.
+10898452	Ba san ta yadda zan ƙawata tsuburin Thousand ba.
+10898490	Kasance aboki nakusa ka fita neman abinci. A lokaci guda, fitar da sharan.
+10898548	Ina ganin akwai wani mai leka asiri a tsakanin mu.
+10898560	Musa ya amsa, ya ce, `` Ba za su gaskata da ni ba, ba kuwa za su saurari muryata ba, amma za su ce, 'Ubangiji bai bayyana gare ka ba.
+10898601	Amma na sani har yanzu kai da barorinka ba kuna tsoron Ubangiji Allah ba.
+10898631	Tsarinsa ya lalace.
+10898667	Shin zan sayi motar baƙar fata ko motar shuɗi?
+13720384	Kana buƙatan wani abu ɗaban?
+13810689	Kin zo nan da kanki?

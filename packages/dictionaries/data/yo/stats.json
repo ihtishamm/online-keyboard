@@ -1,0 +1,15 @@
+{
+  "source": "yowiki.xml.bz2",
+  "pages": 42456,
+  "sentences": 262572,
+  "repeatedSentencesSkipped": 59292,
+  "tokens": 4334707,
+  "distinctWords": 190565,
+  "wordsKept": 57262,
+  "nextWordHeads": 9275,
+  "text": "yo-train.txt",
+  "textSentences": 14,
+  "textWeight": 65.59,
+  "heldOutPages": 837,
+  "heldOutSentences": 2000
+}

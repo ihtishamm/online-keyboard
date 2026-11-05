@@ -1,0 +1,12 @@
+{
+  "source": "igwiki.xml.bz2",
+  "pages": 28218,
+  "sentences": 612365,
+  "repeatedSentencesSkipped": 73796,
+  "tokens": 10533130,
+  "distinctWords": 267064,
+  "wordsKept": 83997,
+  "nextWordHeads": 9862,
+  "heldOutPages": 516,
+  "heldOutSentences": 2000
+}

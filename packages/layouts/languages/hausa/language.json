@@ -1,0 +1,26 @@
+{
+  "slug": "hausa",
+  "code": "ha",
+  "order": 880,
+  "lang": "ha",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Hausa",
+    "native": "Hausa"
+  },
+  "aliases": [],
+  "region": "africa",
+  "fonts": ["latin"],
+  "layouts": ["ha-easy", "ha-standard"],
+  "accents": "ɓɗƙƴƁƊƘƳ",
+  "sample": "Yau muna zuwa kasuwa don mu sayi ƙwai da ɗan burodi.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ha",
+    "bing": "ha"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

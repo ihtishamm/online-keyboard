@@ -43,6 +43,16 @@ export const LATIN_LOCALES: Readonly<Record<string, string>> = {
   eo: "eo",
   la: "la",
   af: "af",
+  az: "az",
+  tk: "tk",
+  uz: "uz",
+  kmr: "ku",
+  yo: "yo",
+  ig: "ig",
+  ha: "ha",
+  wo: "wo",
+  haw: "haw",
+  mi: "mi",
 };
 
 export const isLatinCode = (code: string): boolean => code in LATIN_LOCALES;
@@ -70,7 +80,7 @@ export const CASE_LOCALES: Readonly<Record<string, string>> = {
 export const isCasedCode = (code: string): boolean => code in CASE_LOCALES;
 
 /** Languages whose words hold an apostrophe (Ukrainian м'ята, Belarusian сям'я). */
-const APOSTROPHE_INSIDE: ReadonlySet<string> = new Set(["uk", "be"]);
+const APOSTROPHE_INSIDE: ReadonlySet<string> = new Set(["uk", "be", "uz"]);
 
 /** What may sit inside a word of this language, beside letters and marks. */
 export const innerMarks = (code: string): RegExp =>
@@ -80,7 +90,7 @@ const LETTER = /[\p{L}\p{M}]/u;
 /** Inside a word only: Catalan's middle dot (col·lecció) and hyphens (peut-être). */
 const INNER = /[·-]/;
 /** A Latin word, as stored in word lists. Apostrophes split words (l'homme, dell'anno). */
-const WORD = /^[\p{Script=Latin}](?:[\p{Script=Latin}\p{M}]|[·-](?=[\p{Script=Latin}]))*$/u;
+const WORD = /^[\p{Script=Latin}ʻ](?:[\p{Script=Latin}\p{M}ʻʼ]|[·-](?=[\p{Script=Latin}]))*$/u;
 
 /** The word list form of a word as written: NFC, Latin letters only; null otherwise. */
 export function normalizeLatin(raw: string): string | null {
@@ -105,6 +115,14 @@ const BASE: Readonly<Record<string, string>> = {
   ð: "d",
   þ: "th",
   ħ: "h",
+  ə: "e",
+  ɓ: "b",
+  ɗ: "d",
+  ƙ: "k",
+  ƴ: "y",
+  ŋ: "n",
+  ʻ: "",
+  ʼ: "",
 };
 
 /** A folded word without accents, as typed on a plain keyboard: canción → cancion, łódź → lodz. */
@@ -112,7 +130,7 @@ export function stripAccents(folded: string): string {
   return folded
     .normalize("NFD")
     .replace(/\p{M}/gu, "")
-    .replace(/[łøđıæœßðþħ]/g, (c) => BASE[c]!)
+    .replace(/[łøđıæœßðþħəɓɗƙƴŋʻʼ]/g, (c) => BASE[c]!)
     .normalize("NFC");
 }
 

@@ -1,0 +1,15 @@
+{
+  "source": "miwiki.xml.bz2",
+  "pages": 8117,
+  "sentences": 19641,
+  "repeatedSentencesSkipped": 33930,
+  "tokens": 220961,
+  "distinctWords": 21120,
+  "wordsKept": 4955,
+  "nextWordHeads": 1499,
+  "text": "mi-train.txt",
+  "textSentences": 1,
+  "textWeight": 3.68,
+  "heldOutPages": 183,
+  "heldOutSentences": 735
+}

@@ -1,0 +1,82 @@
+# Sentences from Tatoeba (https://tatoeba.org), CC BY 2.0 FR: sentence number, tab,
+# sentence. Chosen by src/typing-sentences.ts for the typing test and tutor.
+2420314	On il əvvəl aldığım evim hələ də təzə görünür.
+2852646	Onlar bir neçə il İspaniyada yaşadılar.
+2864477	Bir dil heç vaxt kifayət deyil.
+3303875	Bu gün yəqin ki yağış yağacaq.
+3306917	Oda bir az daha odun qoy.
+3307067	Hər kəs musiqi sevir mi?
+3677815	Mən heç vaxt fransızca danışmıram.
+3986692	Düz gedin, sonra isə sağa dönün.
+3989092	Müəllimimiz bizi iki qrupa ayırdı.
+3991246	Oklend Yeni Zelandiyada bir şəhərdir.
+3994371	Mən dünən gecə yaxşı yatdım.
+3994756	O mənim ağlımı başımdan alır.
+3994995	O, dostlarına ingilis dili öyrədir.
+3995051	Mən bir də ora getməyəcəm.
+4000998	Bu, sənə haqqında danışdığım dərmandır.
+4036657	Slovakiyada minimal əmək haqqı nə qədərdir?
+4097391	Sizin mənə nə edəcəyimi deməyə haqqınız yoxdur.
+4099249	Rumıniyada minimal əmək haqqı nə qədərdir?
+4099335	Mən artıq Toma sabah bura gəlməyinə ehtiyac olmadığını demişəm.
+4100899	Salam, mən Yaponiyadan Tomoko Satoyam.
+4109014	Bu kənd İsveç kralına məxsusdur.
+4109106	Ax! Əgər varlı olsaydım özümə İspaniyada ev alardım.
+4116426	Mən sənin bacınla dost olmaq istəyirəm.
+4191157	Tomun vəziyyəti get-gedə daha da çətinləşir.
+4191170	Tomdan avvəl çıxan adamın adı nə idi?
+4191192	Yaxşı ki, pizzanı icad ediblər!
+4279505	Mən onlardan heç nə istəmirəm.
+4321288	Biz sizi qorumaq üçün buradayıq.
+4339151	Mən artıq iki saatdır ki buradayam.
+4407384	O heç vaxt başını itirmir.
+4407635	Hər çayın bir mənbəyi var.
+4407649	Balıq insanlar üçün mühüm qida mənbəyidir.
+4420003	Divanda oturan qadın mənim nənəmdir.
+5156260	Gəlin uzun-uzadı danışmadan birbaşa mətləbə keçək.
+5362574	Xəbərlərdə eşitdiyin hər şeyə inanma.
+5415697	Vaxt qazanmaq üçün komputerdən istifadə etdik.
+7463556	Erməni dilində Ermənistana Hayastan deyirlər.
+8811816	Sami kokain ilə içkini bir-birinə qatmağa başladı.
+13040259	Ən çox sevdiyin şokolad növü hansıdır?
+13312106	O, hər gün multivitamin həbi qəbul edir.
+13312120	Polad elastikdir, dəmir isə elastik deyil.
+13313060	Düşünürəm ki, Tomun bu gün burada olmayacağını bilirsən.
+13313624	Biz oyananda günortaya yaxın idi.
+13316433	Mən sizə ən vacib olanı belə deməmişəm.
+13328606	Mən də sənlə gələ bilərəmmi?
+13329777	Mən ingilis dilində tələffüzümü təkmilləşdirmək istərdim.
+13329847	Bu gün günortadan sonra tennis oynayacam.
+13330011	Anam mənə küçəni keçməzdən əvvəl həmişə həm sola, həm də sağa baxmağı öyrədib.
+13330127	Həyat qısadır, ona görə də Python-dan istifadə edirəm.
+13330889	Riyaziyyatı ingilis dili kimi çox oxuyuram.
+13331632	Kompüteriniz yenə bip səsi çıxardı.
+13332064	Qışı sərt və soyuq olan kəndimizdə istilik məsələsi hər zaman insanları düşündürən əsas məsələlərdən biri idi.
+13333256	Mən onunla səyahətə çıxmaq istəyirəm.
+13333351	Çox vaxt yenilik böyüklükdən daha çox heyrət doğurur.
+13333372	Əvvəl gözəl xasiyyətə malik ol, yalnız bundan sonra təhsil almağa başla.
+13334181	İnsanlar çox şeyə sahib olduqca, daha da artığını istəyirlər.
+13342588	Xahiş edirəm başqa tərəfə baxın.
+13342640	Yəqin ki, bundan xəbəriniz var.
+13347284	Özümü çox yaxşı hiss edirəm.
+13358651	Bu Forum, əslində, dialoq, şəffaflıq və daimi inkişaf edən media mühitində əməkdaşlığa yönəlib.
+13370075	Məni də əlavə edə bilərsiniz?
+13372547	Meri anası ilə qalmaq istədi.
+13376094	Mən xoşbəxtəm ki, kişi deyiləm.
+13385794	İcazə ver Tomu təqdim edim.
+13386807	Onun velosipedi bu velosipeddən fərqlidir.
+13475895	Dilin doğurdan da çox uzanıb.
+13518339	Niyə amerikalı valideynlər uşaqlarını tərifləyirlər?
+13518487	Tibb bacısı Tomun nəbzini yoxladı.
+13522744	Dünən gecə güclü yağış yağdı.
+13603538	Cloudflare çökəndə çökmə detektoru saytı da çökmüşdü.
+13618967	Yediyimiz yeməyin demək olar ki, hamısını burdan alıram.
+13632399	Ubuntu özündə çoxlu proqram təminatı ehtiva edir.
+13638679	Vadi duman içində görünməz olmuşdu.
+13639653	Mənim kompüterim Linux istifadə edir.
+13641144	Onunla heç vaxt danışa bilməmişəm.
+13644098	İslam və Xristianlıq çox oxşardırlar.
+13644217	Bu ayaqqabıları keçən ay almışam.
+13756261	Estonların çoxu texnologiyada çox mahirdirlər.
+13888058	Sən musiqiçi deyilsən, elə deyilmi?
+13938960	Eyni sözləri, adları, mövzu və ya nümunələri təkrar-təkrar istifadə etməkdən çəkinin.

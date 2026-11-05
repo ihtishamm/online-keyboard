@@ -1,0 +1,26 @@
+{
+  "slug": "kurmanji",
+  "code": "kmr",
+  "order": 850,
+  "lang": "kmr",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Kurdish (Kurmanji)",
+    "native": "Kurmancî"
+  },
+  "aliases": ["Northern Kurdish"],
+  "region": "middle-east",
+  "fonts": ["latin"],
+  "layouts": ["kmr-easy", "kmr-turkish-q"],
+  "accents": "çêîşûÇÊÎŞÛ",
+  "sample": "Îro hewa pir xweş e û em diçin çiyê.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ku",
+    "bing": "kmr"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

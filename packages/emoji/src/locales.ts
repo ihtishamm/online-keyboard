@@ -6,6 +6,7 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
   "af": () => import("../data/af.json"),
   "ar": () => import("../data/ar.json"),
   "as": () => import("../data/as.json"),
+  "az": () => import("../data/az.json"),
   "be": () => import("../data/be.json"),
   "bg": () => import("../data/bg.json"),
   "bn": () => import("../data/bn.json"),
@@ -25,11 +26,13 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
   "gd": () => import("../data/gd.json"),
   "gl": () => import("../data/gl.json"),
   "gu": () => import("../data/gu.json"),
+  "ha": () => import("../data/ha.json"),
   "he": () => import("../data/he.json"),
   "hi": () => import("../data/hi.json"),
   "hr": () => import("../data/hr.json"),
   "hu": () => import("../data/hu.json"),
   "hy": () => import("../data/hy.json"),
+  "ig": () => import("../data/ig.json"),
   "is": () => import("../data/is.json"),
   "it": () => import("../data/it.json"),
   "ja": () => import("../data/ja.json"),
@@ -43,6 +46,7 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
   "lo": () => import("../data/lo.json"),
   "lt": () => import("../data/lt.json"),
   "lv": () => import("../data/lv.json"),
+  "mi": () => import("../data/mi.json"),
   "mk": () => import("../data/mk.json"),
   "ml": () => import("../data/ml.json"),
   "mn": () => import("../data/mn.json"),
@@ -70,19 +74,23 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
   "te": () => import("../data/te.json"),
   "tg": () => import("../data/tg.json"),
   "th": () => import("../data/th.json"),
+  "tk": () => import("../data/tk.json"),
   "tr": () => import("../data/tr.json"),
   "ug": () => import("../data/ug.json"),
   "uk": () => import("../data/uk.json"),
   "ur": () => import("../data/ur.json"),
+  "uz": () => import("../data/uz.json"),
   "vi": () => import("../data/vi.json"),
+  "wo": () => import("../data/wo.json"),
+  "yo": () => import("../data/yo.json"),
   "zh-Hant": () => import("../data/zh-Hant.json"),
 };
 
 /** Languages CLDR lacks whose speakers search in another language's keywords. */
-export const ALIASES: Readonly<Record<string, string>> = {"skr":"ur","bal":"ur","hno":"ur","brh":"ur","scl":"ur","khw":"ur","ks":"ur","sa":"hi","mai":"hi","prs":"fa","ms-Arab":"ms","zh-Hans":"zh","nb":"no"};
+export const ALIASES: Readonly<Record<string, string>> = {"skr":"ur","bal":"ur","hno":"ur","brh":"ur","scl":"ur","khw":"ur","ks":"ur","sa":"hi","mai":"hi","prs":"fa","ms-Arab":"ms","zh-Hans":"zh","nb":"no","kmr":"ku"};
 
 /** Registry languages with no CLDR keywords: their emoji search is in English. */
-export const NOT_ANNOTATED: readonly string[] = ["ckb","dv","eo","la"];
+export const NOT_ANNOTATED: readonly string[] = ["ckb","dv","eo","haw","la"];
 
 /** Every registry language this file was generated for. */
-export const LANGUAGE_TAGS: readonly string[] = ["af","ar","as","bal","be","bg","bn","brh","ca","ckb","cs","cy","da","de","dv","el","eo","es","et","fa","fi","fo","fr","ga","gd","gl","gu","he","hi","hno","hr","hu","hy","is","it","ja","ka","khw","kk","km","kn","ko","kok","ks","ky","la","lo","lt","lv","mai","mk","ml","mn","mr","ms-Arab","mt","my","nb","ne","nl","or","pa","pa-Arab","pl","prs","ps","pt","ro","ru","sa","scl","sd","si","sk","skr","sl","sq","sr","sv","ta","te","tg","th","tr","ug","uk","ur","vi","zh-Hans","zh-Hant"];
+export const LANGUAGE_TAGS: readonly string[] = ["af","ar","as","az","bal","be","bg","bn","brh","ca","ckb","cs","cy","da","de","dv","el","eo","es","et","fa","fi","fo","fr","ga","gd","gl","gu","ha","haw","he","hi","hno","hr","hu","hy","ig","is","it","ja","ka","khw","kk","km","kmr","kn","ko","kok","ks","ky","la","lo","lt","lv","mai","mi","mk","ml","mn","mr","ms-Arab","mt","my","nb","ne","nl","or","pa","pa-Arab","pl","prs","ps","pt","ro","ru","sa","scl","sd","si","sk","skr","sl","sq","sr","sv","ta","te","tg","th","tk","tr","ug","uk","ur","uz","vi","wo","yo","zh-Hans","zh-Hant"];

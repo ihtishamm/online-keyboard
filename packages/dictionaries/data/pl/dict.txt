@@ -43012,6 +43012,7 @@ Bego~
 3utówD
 2fvénaC
 2lāhE
+2þingiE
 1mazonkęF
 2brożegoC
 6yB
@@ -47685,6 +47686,8 @@ AąB
 2terałuF
 2zjeE
 4ęB
+2þarkE
+6uD
 1éE
 0gabinetówE
 2dałD
@@ -49387,6 +49390,7 @@ CyE
 4szaE
 6ychC
 7mE
+1əszonE
 1̥E
 0macedońskaE
 3ierzystaD
@@ -49968,6 +49972,7 @@ BychE
 6zE
 4ieC
 4ówB
+1əE
 0naGłosD
 2białA
 4erałaE

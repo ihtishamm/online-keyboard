@@ -331,6 +331,35 @@ import latin from "../languages/latin/language.json";
 import laEasy from "../languages/latin/easy.json";
 import afrikaans from "../languages/afrikaans/language.json";
 import afEasy from "../languages/afrikaans/easy.json";
+import azerbaijani from "../languages/azerbaijani/language.json";
+import azEasy from "../languages/azerbaijani/easy.json";
+import azStandard from "../languages/azerbaijani/standard.json";
+import turkmen from "../languages/turkmen/language.json";
+import tkEasy from "../languages/turkmen/easy.json";
+import tkStandard from "../languages/turkmen/standard.json";
+import uzbek from "../languages/uzbek/language.json";
+import uzEasy from "../languages/uzbek/easy.json";
+import kurmanji from "../languages/kurmanji/language.json";
+import kmrEasy from "../languages/kurmanji/easy.json";
+import kmrTurkishQ from "../languages/kurmanji/turkish-q.json";
+import yoruba from "../languages/yoruba/language.json";
+import yoEasy from "../languages/yoruba/easy.json";
+import yoStandard from "../languages/yoruba/standard.json";
+import igbo from "../languages/igbo/language.json";
+import igEasy from "../languages/igbo/easy.json";
+import igStandard from "../languages/igbo/standard.json";
+import hausa from "../languages/hausa/language.json";
+import haEasy from "../languages/hausa/easy.json";
+import haStandard from "../languages/hausa/standard.json";
+import wolof from "../languages/wolof/language.json";
+import woEasy from "../languages/wolof/easy.json";
+import woStandard from "../languages/wolof/standard.json";
+import hawaiian from "../languages/hawaiian/language.json";
+import hawEasy from "../languages/hawaiian/easy.json";
+import hawStandard from "../languages/hawaiian/standard.json";
+import maori from "../languages/maori/language.json";
+import miEasy from "../languages/maori/easy.json";
+import miStandard from "../languages/maori/standard.json";
 
 /** Every language.json, in page order. */
 export const LANGUAGE_FILES = [
@@ -424,6 +453,16 @@ export const LANGUAGE_FILES = [
   esperanto,
   latin,
   afrikaans,
+  azerbaijani,
+  turkmen,
+  uzbek,
+  kurmanji,
+  yoruba,
+  igbo,
+  hausa,
+  wolof,
+  hawaiian,
+  maori,
 ] as LanguageFile[];
 
 /** Every layout file, by language, in each language's order. */
@@ -619,6 +658,25 @@ export const RAW_LAYOUTS = [
   eoXSystem,
   laEasy,
   afEasy,
+  azEasy,
+  azStandard,
+  tkEasy,
+  tkStandard,
+  uzEasy,
+  kmrEasy,
+  kmrTurkishQ,
+  yoEasy,
+  yoStandard,
+  igEasy,
+  igStandard,
+  haEasy,
+  haStandard,
+  woEasy,
+  woStandard,
+  hawEasy,
+  hawStandard,
+  miEasy,
+  miStandard,
 ] as LayoutInput[];
 
 /** The transliteration schemes the layouts use. */

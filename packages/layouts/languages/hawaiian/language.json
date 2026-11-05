@@ -1,0 +1,25 @@
+{
+  "slug": "hawaiian",
+  "code": "haw",
+  "order": 900,
+  "lang": "haw",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Hawaiian",
+    "native": "ʻŌlelo Hawaiʻi"
+  },
+  "aliases": [],
+  "region": "oceania",
+  "fonts": ["latin"],
+  "layouts": ["haw-easy", "haw-standard"],
+  "accents": "āēīōūʻĀĒĪŌŪ",
+  "sample": "Aloha mai kākou, he lā maikaʻi kēia ma Hawaiʻi.",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "haw"
+  },
+  "tier": null,
+  "notes": "No voice: no browser speech locale we can verify."
+}

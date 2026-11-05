@@ -1,0 +1,15 @@
+{
+  "source": "kuwiki.xml.bz2",
+  "pages": 90800,
+  "sentences": 471575,
+  "repeatedSentencesSkipped": 149304,
+  "tokens": 5841656,
+  "distinctWords": 378325,
+  "wordsKept": 96186,
+  "nextWordHeads": 8518,
+  "text": "kmr-train.txt",
+  "textSentences": 9276,
+  "textWeight": 29.53,
+  "heldOutPages": 1778,
+  "heldOutSentences": 2000
+}

@@ -1,0 +1,15 @@
+{
+  "source": "azwiki.xml.bz2",
+  "pages": 22032,
+  "sentences": 726374,
+  "repeatedSentencesSkipped": 110560,
+  "tokens": 8550807,
+  "distinctWords": 450948,
+  "wordsKept": 100000,
+  "nextWordHeads": 9103,
+  "text": "az-train.txt",
+  "textSentences": 11356,
+  "textWeight": 54.41,
+  "heldOutPages": 448,
+  "heldOutSentences": 2000
+}

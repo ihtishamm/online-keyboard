@@ -72,6 +72,17 @@ const inscriptExtras = (keys: Keys) => {
   }
 };
 
+/**
+ * Windows' Yoruba keys reach a tone or a dot, never both, so ẹ́ and ọ̀ could not be typed. These
+ * add the tone after the letter, as U+0301 and U+0300.
+ */
+const YORUBA_TONES =
+  " Added: AltGr+] adds a high tone and AltGr+[ a low tone to the letter before.";
+function yorubaTones(keys: Keys): void {
+  set(keys, "BracketRight", { ag: "\u0301" });
+  set(keys, "BracketLeft", { ag: "\u0300" });
+}
+
 /** The Windows US-International keyboard: the base of every "Easy accents" layout. */
 const US_INTL = "cldr/en-t-k0-windows-extended.xml";
 
@@ -219,6 +230,16 @@ const WAVE4_EUROPE: readonly (readonly [string, string, string, string])[] = [
   ["eo", "esperanto", "ĉĝĥĵŝŭ", "Facilaj literoj"],
   ["la", "latin", "āēīōūȳæœ", "Litterae faciles"],
   ["af", "afrikaans", "êëéèïîôöûüáóú", "Maklike aksente"],
+  ["az", "azerbaijani", "çəğıöşü", "Asan hərflər"],
+  ["tk", "turkmen", "äçňöşüýž", "Aňsat harplar"],
+  ["uz", "uzbek", "ʻʼ", "Oson harflar"],
+  ["kmr", "kurmanji", "çêîşû", "Tîpên hêsan"],
+  ["yo", "yoruba", "ẹọṣáàéèíìóòúùńǹ", "Lẹ́tà rọrùn"],
+  ["ig", "igbo", "ịọụṅáàéèíìóòúù", "Mkpụrụedemede dị mfe"],
+  ["ha", "hausa", "ɓɗƙƴ", "Haruffa masu sauƙi"],
+  ["wo", "wolof", "àãéëñŋóö", "Araf yu yomb"],
+  ["haw", "hawaiian", "āēīōūʻ", "Nā hua maʻalahi"],
+  ["mi", "maori", "āēīōū", "Reta māmā"],
 ];
 /**
  * US-International has no key for these letters, and these languages have no Windows layout on
@@ -229,7 +250,18 @@ const EASY_ALTGR: Readonly<Record<string, Readonly<Record<string, string>>>> = {
   la: { KeyA: "ā", KeyE: "ē", KeyI: "ī", KeyO: "ō", KeyU: "ū", KeyY: "ȳ" },
   mt: { KeyC: "ċ", KeyG: "ġ", KeyH: "ħ", KeyZ: "ż" },
   cy: { KeyW: "ŵ", KeyY: "ŷ" },
+  az: { KeyE: "ə", KeyG: "ğ", KeyI: "ı", KeyS: "ş" },
+  tk: { KeyN: "ň", KeyS: "ş", KeyY: "ý", KeyJ: "ž" },
+  uz: { KeyO: "oʻ", KeyG: "gʻ", KeyM: "ʼ", Semicolon: "ʻ" },
+  kmr: { KeyS: "ş", KeyE: "ê", KeyI: "î", KeyU: "û", KeyC: "ç" },
+  yo: { KeyE: "ẹ", KeyO: "ọ", KeyS: "ṣ", KeyN: "ń" },
+  ig: { KeyI: "ị", KeyO: "ọ", KeyU: "ụ", KeyN: "ṅ" },
+  ha: { KeyB: "ɓ", KeyD: "ɗ", KeyK: "ƙ", KeyY: "ƴ" },
+  wo: { KeyG: "ŋ" },
+  haw: { KeyA: "ā", KeyE: "ē", KeyI: "ī", KeyO: "ō", KeyU: "ū", Semicolon: "ʻ" },
+  mi: { KeyA: "ā", KeyE: "ē", KeyI: "ī", KeyO: "ō", KeyU: "ū" },
 };
+const UPPER_LOCALE: Readonly<Record<string, string>> = { az: "az", kmr: "tr" };
 const wave4Letters = (code: string) => WAVE4_EUROPE.find(([c]) => c === code)?.[2] ?? "";
 
 /** National layouts of those languages, as WAVE1_NATIONAL. */
@@ -254,6 +286,15 @@ const WAVE4_NATIONAL: readonly (readonly [string, string, string, string, string
   ["mt", "maltese", "47", "mt-t-k0-windows.xml", "Maltese 47-key", "Malti 47", '"Maltese 47-Key"'],
   ["mt", "maltese", "48", "mt-t-k0-windows-101key.xml", "Maltese 48-key", "Malti 48", '"Maltese 48-Key"'],
   ["gl", "galician", "spain", "es-t-k0-windows.xml", "Spain (Galician)", "España (galego)", '"Spanish", the keyboard Galician is typed on in Spain,'],
+  ["az", "azerbaijani", "standard", "az-t-k0-windows.xml", "Azerbaijani", "Azərbaycanca", '"Azerbaijani Latin"'],
+  ["tk", "turkmen", "standard", "tk-t-k0-windows.xml", "Turkmen", "Türkmençe", '"Turkmen"'],
+  ["kmr", "kurmanji", "turkish-q", "tr-t-k0-windows.xml", "Turkish Q (Kurmanji)", "Tirkî Q (Kurmancî)", '"Turkish Q", the keyboard Kurmanji is usually typed on in Turkey,'],
+  ["yo", "yoruba", "standard", "yo-t-k0-windows.xml", "Yoruba", "Yorùbá", '"Yoruba"'],
+  ["ig", "igbo", "standard", "ig-t-k0-windows.xml", "Igbo", "Igbo", '"Igbo"'],
+  ["ha", "hausa", "standard", "ha-t-k0-windows.xml", "Hausa", "Hausa", '"Hausa"'],
+  ["wo", "wolof", "standard", "wo-t-k0-windows.xml", "Wolof", "Wolof", '"Wolof"'],
+  ["haw", "hawaiian", "standard", "haw-t-k0-windows.xml", "Hawaiian", "ʻŌlelo Hawaiʻi", '"Hawaiian"'],
+  ["mi", "maori", "standard", "mi-t-k0-windows.xml", "Māori", "Māori", '"Maori"'],
 ];
 
 /** National layouts of the Wave 1 languages: [code, folder, id, file, en, native, Windows name]. */
@@ -292,10 +333,19 @@ const WAVE4_IMPORTS: readonly ImportSpec[] = [
     const list = Object.entries(extra).map(([key, ch]) => `AltGr+${key.slice(3)} ${ch}`);
     return {
       ...spec,
-      meta: { ...spec.meta, source: `${spec.meta.source} Added: ${list.join(", ")}.` },
+      meta: {
+        ...spec.meta,
+        source: `${spec.meta.source} Added: ${list.join(", ")}.${code === "yo" ? YORUBA_TONES : ""}`,
+      },
       patch: (keys: Keys) => {
         for (const [key, ch] of Object.entries(extra))
-          set(keys, key as KeyCode, { ag: ch, sag: ch.toLocaleUpperCase("en") });
+          set(keys, key as KeyCode, {
+            ag: ch,
+            sag: ch === "ı" ? "İ" : ch.toLocaleUpperCase(UPPER_LOCALE[code] ?? "en"),
+          });
+        // Uzbek writes o' all the time: the ' key must not wait for the next letter.
+        if (code === "uz") keys.Quote = { ...keys.Quote, live: ["n"] };
+        if (code === "yo") yorubaTones(keys);
       },
     };
   }),
@@ -310,19 +360,25 @@ const WAVE4_IMPORTS: readonly ImportSpec[] = [
       source,
     }),
   ).map((spec) =>
-    spec.meta.id === "gd-standard"
+    spec.meta.id === "yo-standard"
       ? {
           ...spec,
-          meta: {
-            ...spec.meta,
-            source: `${spec.meta.source} Changed: the ' key types an apostrophe (a' dol), and AltGr+' is the acute dead key; upstream has them the other way round, but Gaelic has no acutes and writes apostrophes all the time.`,
-          },
-          patch: (keys: Keys) => {
-            const { live: _, ...rest } = keys.Quote!;
-            keys.Quote = { ...rest, live: ["n"] };
-          },
+          meta: { ...spec.meta, source: `${spec.meta.source}${YORUBA_TONES}` },
+          patch: yorubaTones,
         }
-      : spec,
+      : spec.meta.id === "gd-standard"
+        ? {
+            ...spec,
+            meta: {
+              ...spec.meta,
+              source: `${spec.meta.source} Changed: the ' key types an apostrophe (a' dol), and AltGr+' is the acute dead key; upstream has them the other way round, but Gaelic has no acutes and writes apostrophes all the time.`,
+            },
+            patch: (keys: Keys) => {
+              const { live: _, ...rest } = keys.Quote!;
+              keys.Quote = { ...rest, live: ["n"] };
+            },
+          }
+        : spec,
   ),
   {
     out: "esperanto/x-system.json",

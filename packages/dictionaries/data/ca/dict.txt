@@ -43031,6 +43031,7 @@ As}
 2èxiaA
 2ísA
 2ósA
+2þingiA
 1madóC
 3zòniaB
 2brosB
@@ -43154,6 +43155,7 @@ As}
 5iaB
 5àsiaB
 2tónomaB
+2ðumlaB
 1valòniaA
 2endañoC
 4tíB
@@ -47788,6 +47790,7 @@ As}
 1āoD
 1ūsuD
 3ųD
+1əD
 0n-èsimD
 1abísD
 2ftalèC
@@ -48535,7 +48538,8 @@ As}
 1ǫkD
 0sableC
 3éC
-2fràC
+2fnaðiD
+3ràC
 3àvidaB
 7esD
 2gristàD
@@ -49245,6 +49249,7 @@ As}
 2timoA
 1ricB
 2sidsD
+0þaðD
 0āstikaD
 0ănB
 0ĉieloD
@@ -49272,5 +49277,6 @@ As}
 0ŢepeşD
 0Ǫ́A
 0ȘtefaniaC
+0əlziA
 0ḤawwāhD
 0ḥrD

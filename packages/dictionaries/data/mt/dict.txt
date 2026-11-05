@@ -40623,6 +40623,7 @@ Bjietz
 6żiC
 1znalcóllarC
 2ánC
+2ərbaycanC
 1çuB
 1érienD
 1ïrB
@@ -41889,6 +41890,7 @@ Bjietz
 3īE
 1ŭmgangsanC
 1ǒngE
+1əpəzE
 1ỳD
 0LadomirováE
 2ferrièreD
@@ -42555,6 +42557,7 @@ Bjietz
 2éD
 3bécoisB
 2ýB
+1əbələC
 0RPĊB
 1abotničkiD
 2dićE
@@ -45234,6 +45237,8 @@ Bjietz
 2ngëE
 1öfteD
 1żarijietD
+1əB
+2rE
 0laghabB
 2hamE
 4qE
@@ -45560,6 +45565,7 @@ Bjietz
 1œursD
 1żerżqaC
 3wqaD
+1əD
 0nabrežjeD
 2fteniċiE
 2għalC
@@ -45713,6 +45719,7 @@ Bjietz
 5uE
 1ūrE
 1żommuB
+1əB
 1ậmB
 0obeżiB
 5tàB
@@ -45953,6 +45960,7 @@ Bjietz
 1åD
 1ërparimD
 1óloE
+1əE
 0qabbeżE
 3żietC
 5thaE
@@ -46142,6 +46150,7 @@ Bjietz
 1ħasB
 2isC
 1ōmeE
+1əB
 0sabieħD
 6aD
 4haD
@@ -46361,6 +46370,7 @@ Bjietz
 2ieħaB
 3hC
 1œurB
+1əB
 1ɛ̃C
 1̪E
 0tabirruħuE
@@ -46419,7 +46429,8 @@ Bjietz
 2naċitàB
 3ereE
 3nōD
-2ologiíE
+2oD
+3logiíE
 5ġikamentD
 2rgaC
 3ritorjalitàE
@@ -46772,6 +46783,7 @@ Bjietz
 2ritableD
 1ürtsikiluD
 1āraE
+1əC
 1ạcD
 0waqgħetxD
 2ħdiB
