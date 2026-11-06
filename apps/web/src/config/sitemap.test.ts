@@ -18,5 +18,6 @@ describe("sitemap sections", () => {
     expect(at("/case-converter")).toBe("tools");
     expect(at("/keyboard-tester")).toBe("tools");
     expect(at("/kruti-dev-to-unicode")).toBe("tools");
+    expect(at("/chanakya-to-unicode")).toBe("tools");
   });
 });

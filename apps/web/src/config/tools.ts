@@ -14,6 +14,7 @@ export const TOOL_PAGES: readonly ToolPage[] = [
   { path: "/keyboard-tester", name: "Keyboard tester", languages: [] },
   { path: "/inpage-to-unicode", name: "InPage to Unicode", languages: ["urdu"] },
   { path: "/kruti-dev-to-unicode", name: "Kruti Dev to Unicode", languages: ["hindi", "marathi"] },
+  { path: "/chanakya-to-unicode", name: "Chanakya to Unicode", languages: ["hindi"] },
 ];
 
 /** The tools a keyboard page links to. */

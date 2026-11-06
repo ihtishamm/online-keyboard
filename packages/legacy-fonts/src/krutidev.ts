@@ -32,13 +32,13 @@ export const DEVANAGARI: Script = {
   rephAfterVowelSigns: true,
 };
 
-const I = `${PRE}ि`;
+export const I = `${PRE}ि`;
 
 /**
  * Code → Unicode, in the order the encoder prefers: when two codes give the same letters,
  * Unicode → Kruti Dev writes the first.
  */
-const TABLE: readonly (readonly [string, string])[] = [
+export const TABLE: readonly (readonly [string, string])[] = [
   // Independent vowels.
   ["vks", "ओ"],
   ["vkS", "औ"],
@@ -240,7 +240,7 @@ const TABLE: readonly (readonly [string, string])[] = [
 ];
 
 /** Read but never written: other codes for the same glyph, and common typing slips. */
-const DECODE_ONLY: readonly (readonly [string, string])[] = [
+export const DECODE_ONLY: readonly (readonly [string, string])[] = [
   ["Ã", "ई"],
   ["ó", "स्त्र"],
   ["Dk", "क"],
@@ -302,7 +302,7 @@ const DECODE_ONLY: readonly (readonly [string, string])[] = [
 ];
 
 /** Unicode the table can't hold as written: plain punctuation. */
-const ENCODE_ONLY: readonly (readonly [string, string])[] = [
+export const ENCODE_ONLY: readonly (readonly [string, string])[] = [
   ["ि", "f"],
   ["ऍ", ",W"],
   ["॥", "AA"],
@@ -316,7 +316,7 @@ const ENCODE_ONLY: readonly (readonly [string, string])[] = [
 const C = "क-हक़-य़ॹ-ॿ";
 
 /** Unicode clean-ups, applied before the marks move: they only look at neighbours. */
-const FIXES: readonly (readonly [RegExp, string])[] = [
+export const FIXES: readonly (readonly [RegExp, string])[] = [
   // A half form plus the stick is the full letter (Dk = क); also before ो and ौ (Lks).
   [new RegExp(`([${C}]\u093C?)\u094Dा`, "gu"), "$1"],
   [new RegExp(`([${C}]\u093C?)\u094D([ोौॉ])`, "gu"), "$1$2"],
@@ -341,7 +341,7 @@ const FIXES: readonly (readonly [RegExp, string])[] = [
 
 /** Codes Kruti Dev draws: printable ASCII, Latin-1 and the Windows-1252 extras. */
 const EXTRAS = new Set([...CP1252_HIGH, "∙", "‐"]);
-function isCode(ch: string): boolean {
+export function isCode(ch: string): boolean {
   const cp = ch.codePointAt(0)!;
   return (cp > 0x20 && cp < 0x7f) || (cp >= 0xa1 && cp <= 0xff) || EXTRAS.has(ch);
 }
@@ -350,8 +350,8 @@ function isCode(ch: string): boolean {
  * Consonant + \u094Dर: the full letter with the rakar stroke, z (प्र = iz), or ª under letters
  * with a round foot (ट्र = Vª). Glyphs of their own, such as Ø for क्र, come first.
  */
-function rakars(): [string, string][] {
-  const full = TABLE.filter(
+export function rakars(table: readonly (readonly [string, string])[] = TABLE): [string, string][] {
+  const full = table.filter(
     ([code, uni]) => /^[\u0915-\u0939]\u093C?$/u.test(uni) && code.length <= 2,
   );
   return full.map(([code, uni]) => [

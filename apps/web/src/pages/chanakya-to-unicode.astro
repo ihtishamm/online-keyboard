@@ -1,0 +1,194 @@
+---
+import { chanakyaToUnicode, unicodeToChanakya } from "@okb/legacy-fonts/chanakya";
+import { unicodeToWalkman } from "@okb/legacy-fonts/walkman";
+import ChanakyaConverter from "../components/tools/ChanakyaConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Chanakya to Unicode Converter, and Unicode to Chanakya | ${SITE.name}`;
+const description =
+  "Convert Chanakya and Walkman Chanakya 905 Hindi text to Unicode, and back, as you type. Detects which of the two your text is in, keeps English words from Word documents, and never uploads your text.";
+
+const steps = [
+  "Copy the Chanakya text from Word, Google Docs, PageMaker or a PDF, and paste it into the box.",
+  "The page works out which Chanakya encoding the text is in, and the Unicode Hindi appears below. If it looks wrong, choose the other font in the Font list.",
+  "To go the other way, choose Unicode → Chanakya, pick the font your document uses, paste Unicode Hindi, and press the Copy button.",
+];
+
+// Every example is run through the converters when the page is built.
+const examples = ["हिन्दी", "स्थिति", "कार्यक्रम", "आपका स्वागत है"].map((u) => ({
+  chanakya: unicodeToChanakya(u).text,
+  walkman: unicodeToWalkman(u).text,
+  unicode: chanakyaToUnicode(unicodeToChanakya(u).text).text,
+}));
+
+const faqs = [
+  {
+    q: "Why are there two Chanakya fonts in the list?",
+    a: "Two different encodings go by the name. In the font called Chanakya, Hindi letters sit on accented Latin codes, so आकाश is stored as ¥æ·¤æàæ. Walkman Chanakya 905 is a typewriter-style layout close to Kruti Dev, so the same word is stored as vkdk'k. A table for one reads the other as nonsense. This page looks at the text and picks the right one, and you can override it in the Font list.",
+  },
+  {
+    q: "The result looks like nonsense. What should I try?",
+    a: "Open the Font list and choose the other Chanakya. Very short text can be detected wrongly, because a few characters say little about the encoding. If neither font works, the text is probably in another font: Kruti Dev and DevLys text looks much like Walkman Chanakya 905 but has different codes, so try our Kruti Dev converter.",
+  },
+  {
+    q: "My document mixes Hindi and English. Will the English be garbled?",
+    a: "Not if you copy from Word, LibreOffice or Google Docs and paste here. The converter reads which font each part of the text is in, converts only the Chanakya parts and keeps English, digits and headings in other fonts as they are. Plain text has no fonts, so with a .txt file or text from a PDF everything is treated as Chanakya.",
+  },
+  {
+    q: "Are the short i (ि) and the half r (र्) put in the right place?",
+    a: "Yes. Chanakya stores ि before its letter and the र् hook after its syllable, in the order you see them. The converter moves them past whole clusters, so स्थिति, मर्त्य and वर्ल्ड come out right, where converters that move र् past one letter give मत्र्य and वल्र्ड.",
+  },
+  {
+    q: "What happens to digits?",
+    a: "In the Chanakya font we checked, 0 to 9 draw ordinary digits, so they stay as they are. Going back, Hindi digits such as १२३ become 123, because that font has no separate codes we could confirm for them. Walkman Chanakya 905 has its own Hindi digits, and they convert both ways.",
+  },
+  {
+    q: "Some characters show as �. Why?",
+    a: "A few codes draw decorative shapes or shapes we could not match to a Hindi letter with confidence. The converter marks each with � and tells you how many there are, so you can fix them by hand.",
+  },
+  {
+    q: "Is my text uploaded?",
+    a: "No. The conversion runs in your browser, and your text never leaves your device. The page works offline once it has loaded.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Chanakya to Unicode Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: "hi",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Convert Chanakya text to Unicode Hindi",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} fonts={["devanagari"]} font="devanagari" credits={{}}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">Chanakya to Unicode Converter</h1>
+    <span class="font-devanagari text-xl text-accent" lang="hi">
+      चाणक्य से यूनिकोड
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Turn Hindi in Chanakya or Walkman Chanakya 905 into Unicode that works on phones, websites and
+    in every font, or turn Unicode back into either one. The page detects which one your text is in,
+    and everything happens on your device.
+  </p>
+
+  <ChanakyaConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to convert Chanakya to Unicode
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <table class="w-full table-fixed text-sm">
+        <thead>
+          <tr class="text-left text-muted">
+            <th scope="col" class="pb-1 font-medium">
+              Chanakya
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              Walkman 905
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              Unicode
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {examples.map((e) => (
+            <tr class="border-t border-border">
+              <td class="py-1.5 pe-3 font-mono break-all">{e.chanakya}</td>
+              <td class="py-1.5 pe-3 font-mono break-all">{e.walkman}</td>
+              <td class="font-devanagari py-1.5 text-lg" lang="hi">
+                {e.unicode}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <p class="text-muted">
+      We drew the codes of both fonts from the font files and compared them with their Unicode
+      letters, by eye. Of Hindi Wikipedia's 100,000 most common words, 99.81% go to Chanakya and
+      back unchanged, and 99.85% to Walkman Chanakya 905 and back; the rest come back in their
+      standard spelling or use letters these fonts don't have, such as ऌ. The classic Chanakya
+      converter reads 98.1% of our Chanakya output the same way, and HinLegacy reads 95.4% of our
+      Walkman output the same way; we counted the differences, and in nearly all of them we follow
+      the font where that software follows an older table.
+    </p>
+    <p class="mt-2 text-muted">
+      Some limits: the Chanakya font file we found has no glyphs for seven rare codes and draws
+      others differently from the classic table, so for those we follow the classic table without
+      the font to confirm it. Apart from a few words quoted from real PDFs, the tests use text our
+      own converter produced, not scanned documents.
+    </p>
+    <p class="mt-2 text-xs text-muted">
+      Sources:
+      <a class="underline" href="https://github.com/manishprajapatidev/hindi-font-converter">
+        hindi-font-converter
+      </a>
+      by Manish Prajapati,
+      <a class="underline" href="https://github.com/satvikmishra44/HinLegacy">
+        HinLegacy
+      </a>
+      by Satvik Mishra and
+      <a class="underline" href="https://github.com/aparsoft/lipi">
+        lipi
+      </a>
+      by Aparsoft, all MIT licence.
+    </p>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

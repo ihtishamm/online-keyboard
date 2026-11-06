@@ -11,7 +11,6 @@ export default function KrutiDevConverter({ initial }: { initial?: Direction }) 
     <LegacyConverter
       legacy={{
         name: "Kruti Dev",
-        family: "Kruti Dev 010",
         // Kruti Dev 010, 011…, and DevLys, which uses the same codes.
         isFont: (family) => /kruti\s*dev|devlys/i.test(family),
         placeholder: "Paste Kruti Dev text here: it looks like fgUnh esa Vkbi djsa",
@@ -23,8 +22,15 @@ export default function KrutiDevConverter({ initial }: { initial?: Direction }) 
         slug: "hindi",
         placeholder: "यूनिकोड हिन्दी यहाँ लिखें या पेस्ट करें",
       }}
-      toUnicode={krutiDevToUnicode}
-      fromUnicode={unicodeToKrutiDev}
+      fonts={[
+        {
+          id: "krutidev",
+          name: "Kruti Dev",
+          family: "Kruti Dev 010",
+          toUnicode: krutiDevToUnicode,
+          fromUnicode: unicodeToKrutiDev,
+        },
+      ]}
       isUnicode={isUnicodeDevanagari}
       initial={initial}
     />

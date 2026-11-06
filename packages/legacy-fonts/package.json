@@ -6,7 +6,9 @@
   "sideEffects": false,
   "description": "Legacy font encodings (Kruti Dev, Chanakya, Bijoy, Zawgyi) to Unicode and back.",
   "exports": {
-    "./krutidev": "./src/krutidev.ts"
+    "./krutidev": "./src/krutidev.ts",
+    "./chanakya": "./src/chanakya.ts",
+    "./walkman": "./src/walkman.ts"
   },
   "scripts": {
     "test": "vitest run",

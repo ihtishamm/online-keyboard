@@ -845,14 +845,14 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
   - **What we do better:** live conversion with no ads over the text; font-aware paste that converts only the runs set in the legacy font; ि and reph moved past whole clusters; "Copy for Kruti Dev" puts the font name on the clipboard, so Word pastes it already set in Kruti Dev 010; Zawgyi detected automatically; every table checked against two references and the font itself.
 - **Sources (licences checked 2026-11-07, recorded in §8 and each package README):**
   - Kruti Dev: hindi-font-converter (Manish Prajapati, MIT) and SIL's Remington GAIL (MIT); the Kruti Dev 010 font, for checking only.
-  - Chanakya: hindi-font-converter's `ch.js` (MIT), lipi (Aparsoft, MIT) and HinLegacy (MIT, Walkman Chanakya 905).
+  - Chanakya: hindi-font-converter's `ch.js` (MIT) for the font named Chanakya; HinLegacy (MIT) and lipi (Aparsoft, MIT) for Walkman Chanakya 905, a different encoding. Found while building: see 10.1.
   - Bijoy: bondhon (BanglaKit, MIT) and poriborton (OpenBangla, MIT; partly derived from bondhon and Avro, so not fully independent). Avro (MPL) is not used.
   - Zawgyi: CLDR's `my-t-my-s0-zawgyi` transform (Unicode License), Rabbit (WTFPL) and Google myanmar-tools (Apache-2.0) for detection.
   - Rejected: ltrc/kru2uni and the Bijoy unicode_converter (GPL-3.0), Mad-FOX/bijoy2unicode (MPL-2.0).
   - No §11 decision blocks this phase.
 
 - [ ] **10.1 Legacy-font converters.**
-  - [ ] Kruti Dev ↔ Unicode (Hindi; a very large search), then Chanakya.
+  - [x] Kruti Dev ↔ Unicode (Hindi; a very large search), then Chanakya.
     - **Kruti Dev done (2026-11-07):** `/kruti-dev-to-unicode`, both directions, live as you type. New package `packages/legacy-fonts`, with a shared engine for glyph fonts (`src/glyph.ts`) that maps codes with a table, then moves ि past the next whole cluster and the reph back over the whole syllable before it. Bijoy will reuse it.
     - **Table checks** (details in the package README): every code was drawn in the Kruti Dev 010 font beside our Unicode. The classic table matches the font everywhere except `•` (a bullet, not ऽ) and `pkS` (the font draws चौ; the classic table says चै). 13 font codes the classic table lacks were added; 8 unclear glyphs count as unknown. SIL's Remington GAIL agrees on 67 of 84 keys (every letter and sign); the other 17 are punctuation and number-row keys where Kruti Dev keeps older positions, each checked against the font.
     - **Numbers:** of Hindi Wikipedia's 100,000 most frequent words, 99,843 (99.84%) go to Kruti Dev and back unchanged, 128 come back in canonical form (ा+ॅ → ॉ, ंं → ं) and 29 use letters Kruti Dev lacks (ॠ, ऌ, ऎ). We read the classic encoder's output for all but 369 words, every one a classic fault or an odd source spelling, each kind counted by a test.
@@ -860,6 +860,11 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - **Links:** home page, the Hindi and Marathi keyboard pages (a new tools registry, `src/config/tools.ts`, which also lists the sitemap's tool pages; the Urdu page now links InPage too).
     - **Tests:** 53 unit tests in the package (the 100k-word round trip, the Remington GAIL and classic comparisons), 5 for the font-aware paste, and e2e on desktop and Pixel 7 (typing, Word paste, reverse with clipboard HTML, Edit in Hindi keyboard, link from /hindi, axe, 360 px).
     - **Not done:** .docx upload (paste from Word covers the font-aware case); no real-world Kruti Dev document was tested, only text made by our encoder and the classic one; no native-speaker check of the page copy.
+    - **Chanakya done (2026-11-07):** `/chanakya-to-unicode`, both directions, live. "Chanakya" is two encodings: the font named Chanakya (`¥æ·¤æàæ`) and Walkman Chanakya 905 (`vkdk'k`, a Remington layout close to Kruti Dev). One page handles both: it detects the encoding from the text (331 of 200,000 single words wrong, mostly very short) and a Font list overrides it, which `LegacyConverter` now supports for any page with several fonts.
+    - **Table checks** (details in the package README): every code of both fonts was drawn and compared by eye. The Chanakya font overrules `ch.js` on `ì ¨ í` and adds five codes. Walkman's table was built from its Type 1 outlines, because HinLegacy keeps Kruti Dev's values for many codes the font draws otherwise.
+    - **Numbers:** of 100,000 Hindi words, 99,812 go through Chanakya and back unchanged and 99,850 through Walkman; 166 and 128 come back canonical; 22 use letters the fonts lack. The classic decoder reads 97,942 of our Chanakya words the same way and HinLegacy 95,281 of our Walkman words; every disagreement is counted by kind, and a test fails on any other kind.
+    - **Falls short of the two-reference bar (the user accepted this, 2026-11-07):** `ch.js` is the only clean Chanakya table, and the one font file we found can't confirm 17 of its codes (`€ Ž ž`, four undefined bytes, `v`–`~`, `®`), so those rest on `ch.js` alone. `0`–`9` follow the font (Latin digits) against `ch.js`. For Walkman, 4,086 words differ from HinLegacy and only the font backs us. See the README.
+    - **Not done:** no real Chanakya document was tested; for Walkman only the words lipi quotes from real PDFs (ncert.nic.in did not resolve here). Which publishers use which encoding is not established by any source here, so the page doesn't say. No native-speaker check of the page copy.
   - [ ] Bijoy ↔ Unicode (Bangla; Bangladesh).
   - [ ] Zawgyi ↔ Unicode (Burmese), with automatic detection (check Google myanmar-tools, Apache-2.0).
   - [ ] Each one follows the InPage method:
@@ -952,9 +957,11 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | Mozc dictionary data | Kana → kanji (`data/ja/readings.txt`) | BSD 3-Clause, with IPAdic (ICOT notice) and Okinawa dictionary notices, all permissive; the set Google's web corpus adds is not in the open source version (`vendor/mozc/`) | In use (9b), checked 2026-11-04 |
 | ICU word segmentation (`Intl.Segmenter`) | Thai, Lao, Khmer, Burmese, Chinese and Japanese words, at build time and while typing | Unicode License; comes with Node and the browser, nothing copied | In use (9b) |
 | Google myanmar-tools | Zawgyi detection | Apache-2.0 | Confirmed 2026-11-07 (10.1) |
-| hindi-font-converter (Manish Prajapati) | Kruti Dev and Chanakya tables; the classic converter as a test reference | MIT | In use (10.1, Kruti Dev) |
+| hindi-font-converter (Manish Prajapati) | Kruti Dev and Chanakya tables; the classic converters as test references | MIT | In use (10.1) |
+| HinLegacy (Satvik Mishra), lipi (Aparsoft) | Walkman Chanakya 905: second reference in the tests; the Q hook and real PDF words | MIT | In use (10.1, tests only) |
 | Remington GAIL (SIL, Keyman) | Independent check of the Kruti Dev table | MIT | In use (10.1, tests only) |
 | Kruti Dev 010 font | Checking each code's glyph by eye | Freeware, not open licensed | Used for checking only; never copied or shipped |
+| Chanakya and Walkman Chanakya 905 fonts | Checking each code's glyph by eye | Not open licensed | Used for checking only; never copied or shipped |
 | bondhon (BanglaKit), poriborton (OpenBangla) | Bijoy tables | MIT | Confirmed 2026-11-07 (10.1) |
 | CLDR `my-t-my-s0-zawgyi` transform; Rabbit | Zawgyi ↔ Unicode | Unicode License; WTFPL | Confirmed 2026-11-07 (10.1) |
 | Subtitle-based frequency lists | Chat words | Unclear (the underlying subtitles' rights) | **Avoid** unless the licence is clear |
