@@ -1,3 +1,5 @@
+import { TOOL_PAGES } from "./tools";
+
 /**
  * Sitemap sections (plan Phase 9, scaling work): one file per kind of page, so each stays
  * small at a hundred languages and Search Console reports coverage per section. The home
@@ -5,7 +7,7 @@
  */
 export type Section = "keyboards" | "typing" | "guides" | "cheat-sheets" | "tools";
 
-const TOOLS = new Set(["case-converter", "inpage-to-unicode", "keyboard-tester"]);
+const TOOLS = new Set(TOOL_PAGES.map((t) => t.path.slice(1)));
 
 /** The section of an absolute page URL, or null for the general one. */
 export function sitemapSection(url: string): Section | null {

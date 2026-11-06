@@ -1,0 +1,181 @@
+---
+import { krutiDevToUnicode, unicodeToKrutiDev } from "@okb/legacy-fonts/krutidev";
+import KrutiDevConverter from "../components/tools/KrutiDevConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Kruti Dev to Unicode Converter, and Unicode to Kruti Dev | ${SITE.name}`;
+const description =
+  "Convert Kruti Dev 010 (and DevLys) Hindi text to Unicode, and Unicode back to Kruti Dev, as you type. Keeps English words from Word documents, handles ि and र् correctly, and never uploads your text.";
+
+const steps = [
+  "Copy the Kruti Dev text from Word, Google Docs, PageMaker or a PDF, and paste it into the box.",
+  "The Unicode Hindi appears below as you paste or type. Check it, then copy it, download it or open it in the Hindi keyboard.",
+  "To go the other way, choose Unicode → Kruti Dev, paste Unicode Hindi, and press Copy for Kruti Dev. It pastes into Word already set in Kruti Dev 010.",
+];
+
+// Every example is run through the converter when the page is built.
+const examples = ["हिन्दी", "स्थिति", "कार्यक्रम", "प्रधानमंत्री", "आपका स्वागत है"].map((u) => ({
+  legacy: unicodeToKrutiDev(u).text,
+  unicode: krutiDevToUnicode(unicodeToKrutiDev(u).text).text,
+}));
+
+const faqs = [
+  {
+    q: "Why does my Kruti Dev text look like fgUnh esa?",
+    a: "Kruti Dev is a typewriter-style font: it stores ordinary Latin letters and draws each one as a Hindi shape, so f g U n h shows as हिन्दी only while the font is Kruti Dev. Change the font, or open the text on a phone or website, and you see the Latin letters. Unicode stores the Hindi letters themselves, so they show correctly everywhere.",
+  },
+  {
+    q: "My document mixes Hindi and English. Will the English be garbled?",
+    a: "Not if you copy from Word, LibreOffice or Google Docs and paste here. The converter reads which font each part of the text is in, converts only the Kruti Dev parts and keeps English, digits and headings in other fonts as they are. Plain text has no fonts, so with a .txt file or text from a PDF everything is treated as Kruti Dev.",
+  },
+  {
+    q: "Which fonts does it convert?",
+    a: "Kruti Dev 010 and the other Kruti Dev numbers that share its codes, and DevLys 010, which uses the same codes. Chanakya and other Hindi fonts use different codes.",
+  },
+  {
+    q: "Are the short i (ि) and the half r (र्) put in the right place?",
+    a: "Yes. Kruti Dev stores ि before its letter and the र् hook after its syllable, in the order you see them. The converter moves them past whole clusters, so स्थिति, मर्त्य and वर्ल्ड come out right, where converters that move र् past one letter give मत्र्य and वल्र्ड. It also reads pkS as चौ, the way the font draws it, not चै.",
+  },
+  {
+    q: "How do I turn Unicode Hindi back into Kruti Dev?",
+    a: "Choose Unicode → Kruti Dev, paste or type your Hindi, and press Copy for Kruti Dev. Word, LibreOffice and Google Docs paste it already set in Kruti Dev 010; anywhere else, select it and choose that font. Kruti Dev has no codes for a few signs, such as %; the converter lists them so you can check.",
+  },
+  {
+    q: "Some characters show as �. Why?",
+    a: "A few codes draw shapes that match no Hindi letter, or that the font draws in more than one way. The converter marks each with � and tells you how many there are, so you can fix them by hand.",
+  },
+  {
+    q: "Is my text uploaded?",
+    a: "No. The conversion runs in your browser, and your text never leaves your device. The page works offline once it has loaded.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Kruti Dev to Unicode Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: "hi",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Convert Kruti Dev text to Unicode Hindi",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} fonts={["devanagari"]} font="devanagari" credits={{}}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">
+      Kruti Dev to Unicode Converter
+    </h1>
+    <span class="font-devanagari text-xl text-accent" lang="hi">
+      कृतिदेव से यूनिकोड
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Turn Hindi typed in Kruti Dev into Unicode that works on phones, websites and in every font, or
+    turn Unicode back into Kruti Dev for forms and offices that still ask for it. Everything happens
+    on your device.
+  </p>
+
+  <KrutiDevConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to convert Kruti Dev to Unicode
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="text-left text-muted">
+            <th scope="col" class="pb-1 font-medium">
+              Kruti Dev codes
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              Unicode
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {examples.map((e) => (
+            <tr class="border-t border-border">
+              <td class="py-1.5 pe-3 font-mono">{e.legacy}</td>
+              <td class="font-devanagari py-1.5 text-lg" lang="hi">
+                {e.unicode}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <p class="text-muted">
+      Every code was drawn in the Kruti Dev 010 font and compared with its Unicode letters. The
+      letters also match SIL's Remington GAIL keyboard, an independent record of the same typewriter
+      layout. Of Hindi Wikipedia's 100,000 most common words, 99.84% convert to Kruti Dev and back
+      unchanged; the rest are spellings Kruti Dev can't tell apart, which come back in their
+      standard form, or use letters it doesn't have, such as ॠ.
+    </p>
+    <p class="mt-2 text-xs text-muted">
+      Sources: the Kruti Dev table of
+      <a class="underline" href="https://github.com/manishprajapatidev/hindi-font-converter">
+        hindi-font-converter
+      </a>
+      by Manish Prajapati and
+      <a
+        class="underline"
+        href="https://github.com/keymanapp/keyboards/tree/master/release/r/remington_gail"
+      >
+        Remington GAIL
+      </a>
+      by SIL Global, both MIT licence.
+    </p>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

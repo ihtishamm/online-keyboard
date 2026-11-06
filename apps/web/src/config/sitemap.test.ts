@@ -17,5 +17,6 @@ describe("sitemap sections", () => {
     expect(at("/cheat-sheets/urdu-phonetic")).toBe("cheat-sheets");
     expect(at("/case-converter")).toBe("tools");
     expect(at("/keyboard-tester")).toBe("tools");
+    expect(at("/kruti-dev-to-unicode")).toBe("tools");
   });
 });

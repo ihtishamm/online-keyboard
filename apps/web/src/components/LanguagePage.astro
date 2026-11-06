@@ -22,6 +22,7 @@ import { RULE_TABLES } from "../content/rule-tables";
 import Base from "../layouts/Base.astro";
 import { creditsFor } from "../content/credits";
 import { SITE } from "../config/site";
+import { toolsFor } from "../config/tools";
 import { accentAccuracyFor, accuracyFor, percent } from "../content/accuracy";
 import { copyFor } from "../content/languages";
 import { romanFor } from "../content/roman";
@@ -89,6 +90,8 @@ const jsonLd = [
     })),
   },
 ];
+const tools = toolsFor(slug);
+const toRoman = language.layouts.some((id) => isRomanLayout(getLayout(id)));
 // Urdu's typing pages are its own; the rest come from [lang]-typing-tutor and -test.
 const hasTyping = slug === "urdu" || TYPING_LANGUAGES.some((l) => l.slug === slug);
 ---
@@ -300,12 +303,22 @@ const hasTyping = slug === "urdu" || TYPING_LANGUAGES.some((l) => l.slug === slu
           </a>
         </p>
       )}
-      {language.layouts.some((id) => isRomanLayout(getLayout(id))) && (
+      {(toRoman || tools.length > 0) && (
         <p class="mt-4 text-sm">
           Convert:{" "}
-          <a class="text-accent underline" href={`/${slug}/to-roman`}>
-            {language.name.en} script to English letters
-          </a>
+          {toRoman && (
+            <a class="text-accent underline" href={`/${slug}/to-roman`}>
+              {language.name.en} script to English letters
+            </a>
+          )}
+          {tools.map((t, i) => (
+            <>
+              {(toRoman || i > 0) && " · "}
+              <a class="text-accent underline" href={t.path}>
+                {t.name}
+              </a>
+            </>
+          ))}
         </p>
       )}
       <OfflineSave language={language} typing={hasTyping} />

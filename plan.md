@@ -91,6 +91,7 @@ Each item's competitor check (§5.1) refreshes this table. Rows marked *(check)*
 | **English-to-Hindi sites** (easyhindityping and similar) | Phonetic Hindi typing with suggestions. Kruti Dev converters. Large Indian audience. | 3–5 ad slots and 70–80 requests while typing (easyhindityping's Tamil page, easynepalityping, checked 2026-11-01). Letter-by-letter rules get common words wrong (वनाक्कम). tamil.changathi.com is right but scrolls sideways at 360 px. No accuracy numbers. | Roman typing for 30+ South Asian languages, offline and private, with a measured accuracy number. |
 | **Typing-test sites** (monkeytype, 10fastfingers, typing.com; exam sites typingbaba, hindityping.info) | Polished tests, leaderboards. Monkeytype and 10fastfingers cover Urdu, Hindi, Arabic, Farsi, Thai, Korean and more. 10fastfingers already scores Indic by keystrokes. keybr has a daily goal and streaks. | They need the device's own keyboard for the language: no on-screen layout and no layout choice, so with no Urdu or Hindi keyboard installed you can't take the test. 10fastfingers' Urdu isn't Nastaliq. The exam sites are ad-heavy on phones: typingbaba shows 11 ad slots and an app-install popup at 360 px. keybr is English letters only and overflows sideways at 360 px. No lessons built from the layout, no Roman spelling lessons (checked 2026-11-01). | A test and tutor on the layout you choose, typed with the on-screen keyboard on any device, in Nastaliq and correct Indic shaping. Lessons built from each layout, Roman spelling lessons, no ads over the text. Same-for-everyone daily challenge with streaks and a share card. |
 | **Keyboard-tester sites** (monsgeek, key-tester.pages.dev) | Large search volume. Monsgeek: ANSI and ISO pictures, ghosting and rollover, polling rate. | Built for desktop: key-tester and monsgeek overflow sideways at 360 px (681 px and 462 px). Store pages with sale popups. No ABNT2 or JIS, no layout mapping, no Unicode inspector (checked 2026-11-01). | A tester with ANSI, ISO, ABNT2 and JIS, chatter checks and OS layout detection, plus layout mapping and a Unicode inspector that shows ZWJ, ZWNJ and RLM, and a multi-touch tester on phones. |
+| **Legacy-font converters** (TypingBaba, unicodetoxx, Rabbit) | Large searches (Kruti Dev, Bijoy, Zawgyi). Most convert both ways; some convert live. | Ad-heavy (TypingBaba: 12–16 ad frames, button press to convert). The shared classic Kruti Dev code misplaces र् in clusters and misreads चौ. English in a pasted Word document is garbled. Rabbit doesn't detect Zawgyi (checked 2026-11-07). | Tables checked against the font and two references, font-aware paste, "Copy for Kruti Dev" that pastes into Word in the font, automatic Zawgyi detection. |
 | **Case-converter sites** | Large search volume | English rules only *(check)* | Turkish İ/ı, German ß, Greek tonos, Dutch IJ, Irish prefixes |
 | **Gboard / SwiftKey** (native) | The bar for mobile typing feel | Not on desktop. No export, image cards, InPage, cheat sheets or tests. | Match their feel on the web (Phase 5), and offer what they can't |
 
@@ -837,8 +838,28 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
 - nothing is uploaded;
 - every tool works on a phone.
 
+**Phase 10 start (2026-11-07): competitor check and sources**
+- **Competitor check** (Chromium, 1366 and 360 px). Loaded: TypingBaba's Kruti Dev ↔ Unicode pages, unicodetoxx.pages.dev (Bijoy), Rabbit (Zawgyi) and learnpunjabi.org's Shahmukhi–Gurmukhi page. textstudio, rajtool, bijoy.converteraz.com, bangladatetoday and wordcounter.net did not resolve from here. Beat list:
+  - **What they do:** all fit 360 px. unicodetoxx and Rabbit convert as you type, with 3 and 18 requests. Rabbit converts both ways.
+  - **What they miss:** TypingBaba shows 12–16 ad frames and makes 100–190 requests, and converts only on a button press. Rabbit doesn't detect the encoding: Zawgyi pasted into its first box (Unicode) came out garbled. The classic Kruti Dev converters that most sites share move र् past one letter only (वर्ल्ड → वल्र्ड, मर्त्य → मत्र्य) and read `pkS` as चै, which the font draws as चौ. learnpunjabi.org's tool is a project page, no working converter. All of them turn English words in a pasted Word document into garbage, because plain text loses the fonts.
+  - **What we do better:** live conversion with no ads over the text; font-aware paste that converts only the runs set in the legacy font; ि and reph moved past whole clusters; "Copy for Kruti Dev" puts the font name on the clipboard, so Word pastes it already set in Kruti Dev 010; Zawgyi detected automatically; every table checked against two references and the font itself.
+- **Sources (licences checked 2026-11-07, recorded in §8 and each package README):**
+  - Kruti Dev: hindi-font-converter (Manish Prajapati, MIT) and SIL's Remington GAIL (MIT); the Kruti Dev 010 font, for checking only.
+  - Chanakya: hindi-font-converter's `ch.js` (MIT), lipi (Aparsoft, MIT) and HinLegacy (MIT, Walkman Chanakya 905).
+  - Bijoy: bondhon (BanglaKit, MIT) and poriborton (OpenBangla, MIT; partly derived from bondhon and Avro, so not fully independent). Avro (MPL) is not used.
+  - Zawgyi: CLDR's `my-t-my-s0-zawgyi` transform (Unicode License), Rabbit (WTFPL) and Google myanmar-tools (Apache-2.0) for detection.
+  - Rejected: ltrc/kru2uni and the Bijoy unicode_converter (GPL-3.0), Mad-FOX/bijoy2unicode (MPL-2.0).
+  - No §11 decision blocks this phase.
+
 - [ ] **10.1 Legacy-font converters.**
   - [ ] Kruti Dev ↔ Unicode (Hindi; a very large search), then Chanakya.
+    - **Kruti Dev done (2026-11-07):** `/kruti-dev-to-unicode`, both directions, live as you type. New package `packages/legacy-fonts`, with a shared engine for glyph fonts (`src/glyph.ts`) that maps codes with a table, then moves ि past the next whole cluster and the reph back over the whole syllable before it. Bijoy will reuse it.
+    - **Table checks** (details in the package README): every code was drawn in the Kruti Dev 010 font beside our Unicode. The classic table matches the font everywhere except `•` (a bullet, not ऽ) and `pkS` (the font draws चौ; the classic table says चै). 13 font codes the classic table lacks were added; 8 unclear glyphs count as unknown. SIL's Remington GAIL agrees on 67 of 84 keys (every letter and sign); the other 17 are punctuation and number-row keys where Kruti Dev keeps older positions, each checked against the font.
+    - **Numbers:** of Hindi Wikipedia's 100,000 most frequent words, 99,843 (99.84%) go to Kruti Dev and back unchanged, 128 come back in canonical form (ा+ॅ → ॉ, ंं → ं) and 29 use letters Kruti Dev lacks (ॠ, ऌ, ऎ). We read the classic encoder's output for all but 369 words, every one a classic fault or an odd source spelling, each kind counted by a test.
+    - **Stand-out features:** font-aware paste (text copied from Word or Google Docs carries each run's font; only Kruti Dev and DevLys runs are converted, English stays); "Copy for Kruti Dev" writes HTML naming the font as well as plain text; codes read as ISO-8859-1 (C1 controls) are mapped back; Word's curly quotes are read as श्/ष्, as the font draws them.
+    - **Links:** home page, the Hindi and Marathi keyboard pages (a new tools registry, `src/config/tools.ts`, which also lists the sitemap's tool pages; the Urdu page now links InPage too).
+    - **Tests:** 53 unit tests in the package (the 100k-word round trip, the Remington GAIL and classic comparisons), 5 for the font-aware paste, and e2e on desktop and Pixel 7 (typing, Word paste, reverse with clipboard HTML, Edit in Hindi keyboard, link from /hindi, axe, 360 px).
+    - **Not done:** .docx upload (paste from Word covers the font-aware case); no real-world Kruti Dev document was tested, only text made by our encoder and the classic one; no native-speaker check of the page copy.
   - [ ] Bijoy ↔ Unicode (Bangla; Bangladesh).
   - [ ] Zawgyi ↔ Unicode (Burmese), with automatic detection (check Google myanmar-tools, Apache-2.0).
   - [ ] Each one follows the InPage method:
@@ -930,7 +951,12 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | OpenCC data | Simplified ↔ Traditional; forms in the Chinese lists | Apache-2.0 (`vendor/opencc/LICENSE`) | In use (9b) |
 | Mozc dictionary data | Kana → kanji (`data/ja/readings.txt`) | BSD 3-Clause, with IPAdic (ICOT notice) and Okinawa dictionary notices, all permissive; the set Google's web corpus adds is not in the open source version (`vendor/mozc/`) | In use (9b), checked 2026-11-04 |
 | ICU word segmentation (`Intl.Segmenter`) | Thai, Lao, Khmer, Burmese, Chinese and Japanese words, at build time and while typing | Unicode License; comes with Node and the browser, nothing copied | In use (9b) |
-| Google myanmar-tools | Zawgyi detection | Apache-2.0 | Check at 10.1 |
+| Google myanmar-tools | Zawgyi detection | Apache-2.0 | Confirmed 2026-11-07 (10.1) |
+| hindi-font-converter (Manish Prajapati) | Kruti Dev and Chanakya tables; the classic converter as a test reference | MIT | In use (10.1, Kruti Dev) |
+| Remington GAIL (SIL, Keyman) | Independent check of the Kruti Dev table | MIT | In use (10.1, tests only) |
+| Kruti Dev 010 font | Checking each code's glyph by eye | Freeware, not open licensed | Used for checking only; never copied or shipped |
+| bondhon (BanglaKit), poriborton (OpenBangla) | Bijoy tables | MIT | Confirmed 2026-11-07 (10.1) |
+| CLDR `my-t-my-s0-zawgyi` transform; Rabbit | Zawgyi ↔ Unicode | Unicode License; WTFPL | Confirmed 2026-11-07 (10.1) |
 | Subtitle-based frequency lists | Chat words | Unclear (the underlying subtitles' rights) | **Avoid** unless the licence is clear |
 | Leipzig Corpora Collection | — | Sources conflict (CC BY vs CC BY-NC) | **Don't use** without written confirmation (the old plan listed it) |
 | Hunspell dictionaries | — | GPL/LGPL/MPL, varies | **Don't ship** in the client bundle unless the licence fits; our own spell checker covers this |
