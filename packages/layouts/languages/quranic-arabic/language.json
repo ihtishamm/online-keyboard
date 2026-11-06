@@ -1,0 +1,27 @@
+{
+  "slug": "quranic-arabic",
+  "code": "qur",
+  "order": 1110,
+  "lang": "ar",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Quranic Arabic",
+    "native": "رسم المصحف"
+  },
+  "aliases": ["Quran", "Koran", "Tashkeel", "Harakat"],
+  "region": "special",
+  "fonts": ["naskh"],
+  "layouts": ["qur-standard"],
+  "accents": "\u064E\u064B\u064F\u064C\u0650\u064D\u0652\u0651\u0670ٱ\u0653\u06E1\u06E2\u06E5\u06E6\u06D6\u06D7\u06DA\u06DB\u06D8\u06D9\u06DC\u06DE\u06DD\u06E9",
+  "sample": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+  "voice": [],
+  "wordList": false,
+  "translate": {
+    "google": "ar",
+    "bing": "ar",
+    "deepl": "ar"
+  },
+  "tier": null,
+  "notes": "A special keyboard, not a language (plan 9c, Batch 4): Arabic 101 with every mark of the Mushaf. No word list: suggestions without marks would undo the point. Emoji names come from Arabic (lang ar)."
+}

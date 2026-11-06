@@ -153,6 +153,7 @@ describe("golden typing", () => {
 /** Letters each layout must be able to type (core alphabets, not every loan letter). */
 const ALPHABETS: Record<string, string> = {
   "ar-standard": "ابتثجحخدذرزسشصضطظعغفقكلمنهويءآأإؤئةى",
+  "qur-standard": "ابتثجحخدذرزسشصضطظعغفقكلمنهويءآأإؤئةىٱ",
   "fa-standard": "آابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیءئ\u200C",
   "ps-standard": "اآبپتټثجځچڅحخدډذرړزږژسشښصضطظعغفقکګلمنڼوهېیۍيئ",
   "sd-phonetic": "اٻبڀتٿٽثپجڄڃچڇحخدڌڏڊڍذرڙزژسشصضطظعغفڦقڪکڳگڱلمنڻوهھءي",
@@ -392,9 +393,12 @@ describe("Latin layouts", () => {
     "fi-easy": "šžŠŽ",
     // Finnish and Swedish Windows keyboards leave š and ž, in loanwords only, to the accent bar.
     "fi-standard": "šžŠŽ",
-    // Typed as cx, gx, hx, jx, sx, ux: rules, not keys (the golden test below).
-    "eo-x-system": "ĉĝĥĵŝŭĈĜĤĴŜŬ",
     "la-easy": "œŒ",
+    // SIL writes the hooked schwa as ə and the hook ˞ ([[[), not as one letter.
+    "ipa-sil": "ɚ",
+    // No syllable starts with i, u or ü (they are written yi, wu, yu), so no rule gives
+    // their toned capitals.
+    "py-tones": "ĪÍǏÌŪÚǓÙǕǗǙǛ",
     "yo-easy": "ǹǸ",
     // Telex and VNI compose these from the keys before them (engine test/compose.test.ts).
     "vi-telex": "ăâđêôơưĂÂĐÊÔƠƯ",
@@ -409,7 +413,9 @@ describe("Latin layouts", () => {
   it.each(latin.flatMap((l) => l.layouts.map((id) => [id, l.accents!] as const)))(
     "%s types a–z, and its language's special letters but the known gaps",
     (id, accents) => {
+      // Letters context rules build count too (x-system cx ĉ, pinyin ma3 mǎ, IPA n> ŋ).
       const chars = producibleWithDeadKeys(id);
+      for (const rule of getLayout(id).rules) for (const c of rule.add) chars.add(c);
       for (const c of "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ") {
         // Windows gives these their own letters in those places: Azerbaijani has no w, Turkmen
         // no c, q, v or x. English words need the Easy layout.
@@ -511,6 +517,62 @@ describe("Esperanto's x-system rewrites as it goes", () => {
     ["ax", "ax"],
   ])("%s gives %s", (keys, expected) => {
     const machine = new TypingMachine(getLayout("eo-x-system"));
+    let out = "";
+    for (const ch of keys) {
+      const hit = US_TO_CODE.get(ch)!;
+      const r = machine.press(hit[0], { ...NO_MODIFIERS, shift: hit[1] }, out);
+      if (r.kind === "text") out = out.slice(0, out.length - (r.remove ?? 0)) + r.text;
+    }
+    expect(out).toBe(expected);
+  });
+});
+
+describe("IPA (SIL) rewrites the letter before", () => {
+  it.each([
+    ["n>", "\u014B"],
+    ["e<", "\u025B"],
+    ["s=", "\u0283"],
+    ["?=", "\u0294"],
+    ["h^", "\u02B0"],
+    ["}s=i=p", "\u02C8\u0283\u026Ap"],
+    ["a:", "a\u02D0"],
+    ["a::", "a\u02D1"],
+    ["a~", "a\u0303"],
+    ["a@3", "a\u0301"],
+    ["a@31", "a\u0302"],
+    ["#4", "\u02E5"],
+    ["#42", "\u02E5\u02E7"],
+    ["t+", "t\u031F"],
+    ["t++", "t\u031D"],
+    ["n%", "n\u0325"],
+    ["c_", "\u00E7"],
+    ["t#&s", "t\u0361s"],
+    ["2_", "\u2082"],
+    // The examples on the page (content/languages/ipa.md).
+    ["e=", "\u0259"],
+    ["o<", "\u0254"],
+    ["u<", "\u028A"],
+    ["i=", "\u026A"],
+    ["a=", "\u0251"],
+    ["a<", "\u00E6"],
+    ["z=", "\u0292"],
+    ["t=", "\u03B8"],
+    ["d=", "\u00F0"],
+    ["r>", "\u027E"],
+    ["w^", "\u02B7"],
+    ["j^", "\u02B2"],
+    ["}}", "\u02CC"],
+    ["t{", "t\u032A"],
+    ["n$", "n\u0329"],
+    ["k]]", "k\u02BC"],
+    ["a*", "a\u0308"],
+    ["N=", "\u0274"],
+    ["R=", "\u0280"],
+    ["G=", "\u0262"],
+    ["!", "\u01C3"],
+    ["a@1", "a\u0300"],
+  ])("%s gives %s", (keys, expected) => {
+    const machine = new TypingMachine(getLayout("ipa-sil"));
     let out = "";
     for (const ch of keys) {
       const hit = US_TO_CODE.get(ch)!;

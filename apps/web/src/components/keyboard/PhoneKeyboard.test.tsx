@@ -72,6 +72,20 @@ describe("phone keyboard", () => {
     expect(key("KeyQ")).toBeTruthy();
   });
 
+  it("applies the layout's rules to a symbol: pinyin ma then 3 is mǎ", () => {
+    history.replaceState(null, "", "/pinyin-tones");
+    render(
+      <KeyboardApp bundle={languageBundle("pinyin-tones")} layoutId="py-tones" explicitLayout />,
+    );
+    tap(key("KeyM"));
+    tap(key("KeyA"));
+    fireEvent.click(screen.getByRole("button", { name: "Numbers and symbols" }));
+    tap(document.querySelector<HTMLButtonElement>('button[data-symbol="3"]')!);
+    expect(editor().value).toBe("mǎ");
+    tap(document.querySelector<HTMLButtonElement>('button[data-symbol="3"]')!);
+    expect(editor().value).toBe("mǎ3");
+  });
+
   it("moves the caret when sliding on Space, without typing a space", () => {
     renderUrdu();
     const el = editor();

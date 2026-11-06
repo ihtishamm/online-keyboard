@@ -3960,9 +3960,21 @@
       "remove": 1
     },
     {
+      "before": "›",
+      "typed": "›",
+      "add": "»",
+      "remove": 1
+    },
+    {
       "before": "«",
       "typed": "‹",
       "add": "<",
+      "remove": 1
+    },
+    {
+      "before": "»",
+      "typed": "›",
+      "add": ">",
       "remove": 1
     },
     {
@@ -4071,6 +4083,11 @@
       "typed": "0",
       "add": "፼፼",
       "remove": 3
+    },
+    {
+      "before": "፼፼",
+      "typed": "0",
+      "add": ""
     },
     {
       "before": "፪",
@@ -5358,56 +5375,22 @@
     }
   ],
   "longpress": {
-    "KeyQ": [
-      "ቕ"
-    ],
-    "KeyE": [
-      "ዕ"
-    ],
-    "KeyT": [
-      "ጥ"
-    ],
-    "KeyU": [
-      "ዑ"
-    ],
-    "KeyI": [
-      "ዒ"
-    ],
-    "KeyO": [
-      "ዖ"
-    ],
-    "KeyP": [
-      "ጵ"
-    ],
-    "KeyA": [
-      "ዐ"
-    ],
-    "KeyS": [
-      "ጽ"
-    ],
-    "KeyH": [
-      "ሕ"
-    ],
-    "KeyK": [
-      "ኽ"
-    ],
-    "Semicolon": [
-      "፡"
-    ],
-    "KeyZ": [
-      "ዥ"
-    ],
-    "KeyC": [
-      "ጭ"
-    ],
-    "KeyN": [
-      "ኝ"
-    ],
-    "Comma": [
-      "‹"
-    ],
-    "Period": [
-      "›"
-    ]
+    "KeyQ": ["ቕ"],
+    "KeyE": ["ዕ"],
+    "KeyT": ["ጥ"],
+    "KeyU": ["ዑ"],
+    "KeyI": ["ዒ"],
+    "KeyO": ["ዖ"],
+    "KeyP": ["ጵ"],
+    "KeyA": ["ዐ"],
+    "KeyS": ["ጽ"],
+    "KeyH": ["ሕ"],
+    "KeyK": ["ኽ"],
+    "Semicolon": ["፡"],
+    "KeyZ": ["ዥ"],
+    "KeyC": ["ጭ"],
+    "KeyN": ["ኝ"],
+    "Comma": ["‹"],
+    "Period": ["›"]
   }
 }

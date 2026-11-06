@@ -1,7 +1,7 @@
 ---
 import { getLayout } from "@okb/layouts";
 import { allSheets, pdfPath, sheetPath } from "../../components/cheatsheet/sheets";
-import { FONT_CLASS } from "../../components/fonts";
+import { nameFontClass } from "../../components/fonts";
 import { SITE } from "../../config/site";
 import Base from "../../layouts/Base.astro";
 
@@ -24,7 +24,7 @@ const description =
         <h2 id={`h-${language.slug}`} class="mb-3 flex items-baseline gap-3 text-xl font-semibold">
           {language.name.en}
           <span
-            class={`${FONT_CLASS[language.fonts[0]!]} text-lg font-normal text-accent`}
+            class={`${nameFontClass(language.fonts[0]!)} text-lg font-normal text-accent`}
             lang={language.lang}
             dir={language.dir}
           >

@@ -195,6 +195,28 @@ describe("context rules", () => {
     expect(warnings).toEqual([expect.stringMatching(/option opt=x/)]);
   });
 
+  it("reads options at their store's default, beep, and > as a context rule's key", () => {
+    const { rules, warnings } = importKeyman(
+      [
+        "store(mode) ''",
+        "store(base) 'nh'",
+        "store(eng) '\u014B\u0127'",
+        "group(main) using keys",
+        // The if() is item 1 of the context, so index(eng, 2) is the any() after it.
+        "if(mode = '') any(base) + '>' > index(eng, 2)",
+        "if(mode = 'before') '>' + any(base) > index(eng, 3)",
+        "'\u014B\u014B' + '0' > context beep",
+      ].join("\n"),
+      { contextRules: true, usDefaults: true },
+    );
+    expect(rules).toEqual([
+      { before: "n", typed: ">", add: "\u014B", remove: 1 },
+      { before: "h", typed: ">", add: "\u0127", remove: 1 },
+      { before: "\u014B\u014B", typed: "0", add: "" },
+    ]);
+    expect(warnings).toEqual([expect.stringMatching(/option mode=before/)]);
+  });
+
   it("reads a quoted > as a key", () => {
     const { keys } = importKeyman(`group(main) using keys\n+ ">" > "."`);
     expect(keys.Period?.s).toBe(".");

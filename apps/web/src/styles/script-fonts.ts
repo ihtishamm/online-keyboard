@@ -12,7 +12,10 @@ import { SYSTEM_FONTS, type SystemFont } from "../components/font-names";
  */
 
 /** The fontsource package behind each editor font (Inter, the UI font, is in Base.astro). */
-export const FONT_PACKAGES: Readonly<Record<Exclude<FontId, "latin" | SystemFont>, string>> = {
+/** Fonts with no package: Inter (Base.astro) and our IPA cut (global.css). */
+type OwnFont = "latin" | "ipa";
+
+export const FONT_PACKAGES: Readonly<Record<Exclude<FontId, OwnFont | SystemFont>, string>> = {
   nastaliq: "noto-nastaliq-urdu",
   naskh: "noto-naskh-arabic",
   devanagari: "noto-sans-devanagari",
@@ -33,10 +36,10 @@ export const FONT_PACKAGES: Readonly<Record<Exclude<FontId, "latin" | SystemFont
   lao: "noto-sans-lao",
   khmer: "noto-sans-khmer",
   myanmar: "noto-sans-myanmar",
-  "ethiopic": "noto-sans-ethiopic",
-  "tibetan": "noto-serif-tibetan",
-  "syriac": "noto-sans-syriac",
-  "cherokee": "noto-sans-cherokee",
+  ethiopic: "noto-sans-ethiopic",
+  tibetan: "noto-serif-tibetan",
+  syriac: "noto-sans-syriac",
+  cherokee: "noto-sans-cherokee",
   "canadian-aboriginal": "noto-sans-canadian-aboriginal",
   "ol-chiki": "noto-sans-ol-chiki",
 };
@@ -68,12 +71,12 @@ function faces(pkg: string): string {
   });
 }
 
-/** The @font-face rules for these fonts, minified a little; Latin and system fonts need none. */
+/** The @font-face rules for these fonts, minified a little; our own and system fonts need none. */
 export function fontFaces(fonts: readonly FontId[]): string {
   return [...new Set(fonts)]
     .filter(
-      (f): f is Exclude<FontId, "latin" | SystemFont> =>
-        f !== "latin" && !(SYSTEM_FONTS as readonly string[]).includes(f),
+      (f): f is Exclude<FontId, OwnFont | SystemFont> =>
+        f !== "latin" && f !== "ipa" && !(SYSTEM_FONTS as readonly string[]).includes(f),
     )
     .map((f) => faces(FONT_PACKAGES[f]))
     .join("")

@@ -98,6 +98,21 @@ export class TypingMachine {
     }
     if (!out) return { kind: "none" };
     if (this._layout.composer) return this.compose(out, before);
+    return this.applyRules(out, before, held);
+  }
+
+  /**
+   * A character typed without its key: from a phone's symbols page or a long press. Context
+   * rules apply as if its key had been pressed, so pinyin's ma then 3 is mǎ from either.
+   */
+  pressText(text: string, before = ""): PressResult {
+    const held = this.held;
+    this.held = null;
+    if (this.pending !== null || this._layout.composer) return { kind: "text", text };
+    return this.applyRules(text, before, held);
+  }
+
+  private applyRules(out: string, before: string, held: string | null): PressResult {
     if (held === null || !before.endsWith(held)) {
       const rule = this.rules.get(out)?.find((r) => before.endsWith(r.before));
       if (rule) {

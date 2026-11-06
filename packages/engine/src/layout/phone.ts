@@ -26,8 +26,13 @@ const LAYERS = ["n", "s", "ag", "sag"] as const;
 /** Western digits and punctuation a phone user expects on the symbols page in any language. */
 const ALWAYS = [..."1234567890", ..."@#&-+()/*\"':;!?.,_%=<>[]{}\\|~^$"];
 
-/** Currency signs by language (primary subtag), after the language's own punctuation. */
+/**
+ * Currency signs by language (the full tag, else its primary subtag), after the language's
+ * own punctuation.
+ */
 const CURRENCY: Record<string, string> = {
+  // Arabic in Roman letters (a special keyboard) is for scholarly text: no riyal sign.
+  "ar-Latn": "",
   ur: "₨",
   pnb: "₨",
   skr: "₨",
@@ -164,7 +169,11 @@ export function phoneLayout(layout: Layout): PhoneLayout {
     for (const v of outputs(layout, code)) add(v);
     for (const v of layout.longpress[code] ?? []) add(v);
   }
-  for (const ch of [...(CURRENCY[layout.lang.split("-")[0]!] ?? ""), ...COMMON_CURRENCY]) add(ch);
+  for (const ch of [
+    ...(CURRENCY[layout.lang] ?? CURRENCY[layout.lang.split("-")[0]!] ?? ""),
+    ...COMMON_CURRENCY,
+  ])
+    add(ch);
   for (const ch of ALWAYS) add(ch);
   // The full row of the language's own digits leads the page, even where some digit keys
   // also sit on the letter rows (they carry letters on Shift in a few layouts), and whichever

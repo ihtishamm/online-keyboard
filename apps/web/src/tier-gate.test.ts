@@ -9,7 +9,14 @@
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { LANGUAGES, getLayout, type Language, type Tier, isRomanLayout } from "@okb/layouts";
+import {
+  LANGUAGES,
+  getLayout,
+  isRomanLayout,
+  isSpecialKeyboard,
+  type Language,
+  type Tier,
+} from "@okb/layouts";
 import { describe, expect, it } from "vitest";
 import { allSheets } from "./components/cheatsheet/sheets";
 import { accentAccuracyFor, accuracyFor } from "./content/accuracy";
@@ -79,7 +86,7 @@ const RANK = { A: 3, B: 2, C: 1 } as const;
 const rank = (t: Tier) => (t ? RANK[t] : 0);
 
 export function roster(): string {
-  const rows = LANGUAGES.map((l) => {
+  const rows = LANGUAGES.filter((l) => !isSpecialKeyboard(l)).map((l) => {
     const c = checks(l);
     const earned = earnedTier(l);
     const next = earned === "B" ? c.A : earned === "C" ? c.B : earned === null ? c.C : [];
@@ -108,6 +115,17 @@ export function roster(): string {
     `| ${head.join(" | ")} |`,
     `|${head.map(() => "---").join("|")}|`,
     ...rows.map((r) => `| ${r.join(" | ")} |`),
+    "",
+    "## Special keyboards",
+    "",
+    "Keyboards for a notation, not a language: not counted above and given no tier.",
+    "",
+    "| Keyboard | Script | Layouts |",
+    "|---|---|---|",
+    ...LANGUAGES.filter(isSpecialKeyboard).map(
+      (l) =>
+        `| ${l.name.en} (/${l.slug}) | ${l.script} | ${l.layouts.map((id) => getLayout(id).name.en).join(", ")} |`,
+    ),
     "",
   ].join("\n");
 }

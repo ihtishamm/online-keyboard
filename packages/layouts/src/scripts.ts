@@ -288,7 +288,7 @@ export const SCRIPTS: Readonly<Record<string, ScriptInfo>> = {
   Latn: {
     name: "Latin",
     dir: "ltr",
-    fonts: ["latin"],
+    fonts: ["latin", "ipa"],
     punctuation: ".,?!;:¿¡«»„“”‚‘’–—…",
     cased: true,
     joining: false,

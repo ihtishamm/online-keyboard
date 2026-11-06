@@ -197,4 +197,12 @@ describe("context rules", () => {
     expect(m.press("KeyK", NO_MODIFIERS, "")).toEqual({ kind: "text", text: "k" });
     expect(m.press("KeyK", NO_MODIFIERS, "k")).toEqual({ kind: "text", text: "-k" });
   });
+
+  it("applies rules to text typed without a key, as from a phone's symbols page", () => {
+    const m = new TypingMachine(layout);
+    expect(m.pressText("k", "k-k")).toEqual({ kind: "text", text: "k" });
+    expect(m.pressText("k", "k")).toEqual({ kind: "text", text: "-k" });
+    expect(m.pressText("a", "k")).toEqual({ kind: "none" });
+    expect(m.pressText("z", "k")).toEqual({ kind: "text", text: "z" });
+  });
 });

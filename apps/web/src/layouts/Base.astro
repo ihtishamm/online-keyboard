@@ -43,6 +43,8 @@ interface Props {
     cedict?: boolean;
     opencc?: boolean;
     mozc?: boolean;
+    /** The IPA font, cut from Doulos SIL. */
+    doulos?: boolean;
   };
   /** Slug of the page's language, marked as current in the language picker. */
   language?: string;
@@ -280,13 +282,28 @@ const arabicLogo = font === undefined || font === "nastaliq" || font === "naskh"
             {"."}
           </p>
         )}
+        {credits.doulos && (
+          <p>
+            {"The phonetic font is cut from "}
+            <a class="underline" href="https://software.sil.org/doulos/">
+              Doulos SIL
+            </a>
+            {" (© SIL Global, "}
+            <a class="underline" href="https://openfontlicense.org/">
+              SIL Open Font License 1.1
+            </a>
+            {") and renamed Phonetic Symbols, as that licence asks of a cut font."}
+          </p>
+        )}
         {credits.mozc && (
           <p>
             {"Kanji readings are from the "}
             <a class="underline" href="https://github.com/google/mozc">
               Mozc
             </a>
-            {" open source dictionary (BSD 3-Clause, © Google), which includes IPAdic (© NAIST, ICOT notice) and Okinawa dictionary data."}
+            {
+              " open source dictionary (BSD 3-Clause, © Google), which includes IPAdic (© NAIST, ICOT notice) and Okinawa dictionary data."
+            }
           </p>
         )}
       </div>

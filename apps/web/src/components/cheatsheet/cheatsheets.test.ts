@@ -6,8 +6,9 @@ describe("printable charts", () => {
   const sheets = allSheets();
 
   it("cover every layout, with unique ids", () => {
-    // Keyboard layouts and Roman schemes; 9c batch 1 added 39 layouts.
-    expect(sheets.length).toBe(223);
+    // Keyboard layouts and Roman schemes; 9c batch 1 added 39 layouts, batch 4 Quranic Arabic
+    // (IPA, pinyin tones and Arabic romanisation have a rule table instead).
+    expect(sheets.length).toBe(224);
     expect(new Set(sheets.map((s) => s.id)).size).toBe(sheets.length);
     expect(sheets.find((s) => s.id === "urdu-roman")?.kind).toBe("roman");
   });

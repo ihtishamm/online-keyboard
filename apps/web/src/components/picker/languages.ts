@@ -107,6 +107,8 @@ export function suggestLanguages(
       continue;
     }
     for (const l of list) {
+      // Special keyboards are tools, not a browser's language (IPA's und reads as English).
+      if (l.region === "special") continue;
       const ours = new Intl.Locale(l.lang).maximize();
       if (ours.language !== wanted.language) continue;
       if (wanted.script && ours.script && wanted.script !== ours.script) continue;

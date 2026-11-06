@@ -1426,7 +1426,7 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
 - **Output:** `languages/amharic/gff.json`
 - **Source:** `vendor/keyman/gff_amharic/gff_amharic.kmn`. Keyman GFF Amharic by the Geʾez Frontier Foundation (MIT): type a consonant, then a vowel (se ሰ, sa ሳ).
 - **Licence:** MIT, Geʾez Frontier Foundation (vendor/keyman/gff_amharic/LICENSE.md)
-- **Coverage:** 47 keys (n 47, s 47), 575 context rules
+- **Coverage:** 47 keys (n 47, s 47), 578 context rules
 - **Skipped:** 
   - line 194: unsupported context rule, skipped: any(ሳድስ) + [T_ግዕዝ] > index(ግዕዝ,1)
   - line 195: unsupported context rule, skipped: any(ሳድስ) + [T_ካዕብ] > index(ካዕብ,1)
@@ -1512,8 +1512,6 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
   - line 371: unsupported context rule, skipped: any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)
   - line 372: unsupported context rule, skipped: any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
   - line 377: unknown key or modifiers, skipped: [SHIFT ' ']
-  - line 397: unsupported context rule, skipped: '›' + '>' > '»'
-  - line 399: unsupported context rule, skipped: '»' + '>' > '>'
   - line 405: item 1 of euro not mapped
   - line 405: item 2 of euro not mapped
   - line 405: item 3 of euro not mapped
@@ -1575,7 +1573,6 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
   - line 413: item 47 of euroVowels not mapped
   - line 413: item 48 of euroVowels not mapped
   - line 426: unsupported context rule, skipped: any(arabNumbersWithZero) any(ethWordspaceOrComma) + any(arabNumbers) > index(arabNumbersWithZero,1) index(ColonOrComma,2) index(arabNumbers,3)
-  - line 442: unsupported context rule, skipped: '፼፼' + '0' > context beep
   - line 457: unknown key or modifiers, skipped: [T_THOUSAND]
   - line 511: unknown key or modifiers, skipped: [T_BANG]
   - line 512: unsupported rule (context), skipped: '!' deadkey(2) + any(latinPunctIn) > index(latinPunctOut,3)
@@ -1939,7 +1936,7 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
 - **Output:** `languages/tigrinya/gff.json`
 - **Source:** `vendor/keyman/gff_tigrinya_ethiopia/gff_tigrinya_ethiopia.kmn`. Keyman GFF Tigrinya (Ethiopia) by the Geʾez Frontier Foundation (MIT): type a consonant, then a vowel (se ሰ, sa ሳ).
 - **Licence:** MIT, Geʾez Frontier Foundation (vendor/keyman/gff_tigrinya_ethiopia/LICENSE.md)
-- **Coverage:** 47 keys (n 47, s 47), 890 context rules
+- **Coverage:** 47 keys (n 47, s 47), 893 context rules
 - **Skipped:** 
   - line 164: unknown key or modifiers, skipped: [CTRL '.']
   - line 165: unsupported context rule, skipped: U+135E + [CTRL '.'] > U+135F
@@ -2042,8 +2039,6 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
   - line 362: unsupported context rule, skipped: any(arabNumbersWithZero) + ',' >  context(1) ','
   - line 367: unsupported rule (context), skipped: notany(arabNumbersWithZero) '፣' + any(arabNumbersWithZero) > context(1) '፣' index(arabNumbersWithZero,3)
   - line 369: unsupported context rule, skipped: any(arabNumbersWithZero) ',' + ' ' > context(1) '፣' ' '
-  - line 383: unsupported context rule, skipped: '›' + '>' > '»'
-  - line 385: unsupported context rule, skipped: '»' + '>' > '>'
   - line 391: item 1 of euro not mapped
   - line 391: item 2 of euro not mapped
   - line 391: item 3 of euro not mapped
@@ -2105,7 +2100,6 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
   - line 399: item 47 of euroVowels not mapped
   - line 399: item 48 of euroVowels not mapped
   - line 412: unsupported context rule, skipped: any(arabNumbersWithZero) any(ethWordspaceOrComma) + any(arabNumbers) > index(arabNumbersWithZero,1) index(ColonOrComma,2) index(arabNumbers,3)
-  - line 429: unsupported context rule, skipped: '፼፼' + '0' > context beep
   - line 445: unknown key or modifiers, skipped: [T_THOUSAND]
   - line 447: unknown key or modifiers, skipped: [T_BACK]
   - line 323: repeats the rule for ኊ + እ, skipped
@@ -2190,6 +2184,99 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
   - line 343: repeats the rule for ך + י, skipped
   - line 344: repeats the rule for ף + י, skipped
   - line 345: repeats the rule for י + י, skipped
+- **Our changes:** none
+
+## qur-standard
+
+- **Output:** `languages/quranic-arabic/standard.json`
+- **Source:** `vendor/cldr/ar-t-k0-windows.xml`. Windows "Arabic (101)", from Unicode CLDR 43 keyboard data (Unicode License v3), with the Quranic marks added by us on AltGr. AltGr on a key gives the Quranic form of the mark on its Shift (AltGr+Q the dagger alif ٰ, AltGr+X the Quranic sukun ۡ, AltGr+W, R and S the open tanwin), AltGr+H types ٱ, the number row the pause marks, ۞, ﴿ ﴾, ۝ and ۩, and Shift+AltGr the Arabic-Indic digits.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 27, sag 16)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.ag: none → `U+06D6`
+  - Digit1.sag: none → `١`
+  - Digit2.ag: none → `U+06D7`
+  - Digit2.sag: none → `٢`
+  - Digit3.ag: none → `U+06D8`
+  - Digit3.sag: none → `٣`
+  - Digit4.ag: none → `U+06D9`
+  - Digit4.sag: none → `٤`
+  - Digit5.ag: none → `U+06DA`
+  - Digit5.sag: none → `٥`
+  - Digit6.ag: none → `U+06DB`
+  - Digit6.sag: none → `٦`
+  - Digit7.ag: none → `U+06DC`
+  - Digit7.sag: none → `٧`
+  - Digit8.ag: none → `۞`
+  - Digit8.sag: none → `٨`
+  - Digit9.ag: none → `﴿`
+  - Digit9.sag: none → `٩`
+  - Digit0.ag: none → `﴾`
+  - Digit0.sag: none → `٠`
+  - Minus.ag: none → `U+06DD`
+  - Equal.ag: none → `۩`
+  - KeyQ.ag: none → `U+0670`
+  - KeyW.ag: none → `U+08F0`
+  - KeyE.ag: none → `U+0657`
+  - KeyR.ag: none → `U+08F1`
+  - KeyY.ag: none → `U+0655`
+  - KeyO.ag: none → `U+06DF`
+  - KeyO.sag: none → `U+06E0`
+  - KeyA.ag: none → `U+0656`
+  - KeyS.ag: none → `U+08F2`
+  - KeyS.sag: none → `U+06E3`
+  - KeyD.ag: none → `ۦ`
+  - KeyD.sag: none → `U+06E7`
+  - KeyH.ag: none → `ٱ`
+  - KeyH.sag: none → `U+0654`
+  - KeyK.ag: none → `U+06E8`
+  - KeyL.ag: none → `U+06E2`
+  - KeyL.sag: none → `U+06ED`
+  - KeyX.ag: none → `U+06E1`
+  - KeyN.ag: none → `U+0653`
+  - KeyN.sag: none → `U+06E4`
+  - Comma.ag: none → `ۥ`
+
+## ipa-sil
+
+- **Output:** `languages/ipa/sil.json`
+- **Source:** `vendor/keyman/sil_ipa/sil_ipa.kmn`. Keyman IPA (SIL) 2.0.2 by SIL Global (MIT): type a letter, then = < > or ^ to change it (n> ŋ, e< ɛ, h^ ʰ); @ then a digit for tones. Its option mode (RAlt+-, symbol first) and touch-only keys are left out.
+- **Licence:** MIT, SIL Global (vendor/keyman/sil_ipa/LICENSE.md)
+- **Coverage:** 47 keys (n 47, s 47), 624 context rules
+- **Skipped:** 
+  - line 378: rule for option option_key=before, skipped: "=" + any(equalD)  > index(equalU,3)
+  - line 379: rule for option option_key=before, skipped: ">" + any(greatD)  > index(greatU,3)
+  - line 380: rule for option option_key=before, skipped: "<" + any(lessD)   > index(lessU,3)
+  - line 381: rule for option option_key=before, skipped: "^" + any(hatD)    > index(hatU,3)
+  - line 382: rule for option option_key=before, skipped: "\|" + any(pipeD)   > index(pipeU,3)
+  - line 383: rule for option option_key=before, skipped: U+0320 + any(subscriptD) > index(subscriptU,3)
+  - line 386: rule for option option_key=before, skipped: "=" + "!"  > U+01C2
+  - line 387: rule for option option_key=before, skipped: ">" + "!"  > U+01C1
+  - line 388: rule for option option_key=before, skipped: "<" + "!"  > U+01C0
+  - line 389: rule for option option_key=before, skipped: "=" + "+"  > U+002B
+  - line 390: rule for option option_key=before, skipped: "=" + ">"  > U+2192
+  - line 391: rule for option option_key=before, skipped: "=" + "<"  > U+034F
+  - line 392: rule for option option_key=before, skipped: "#" + "<"  > U+A71C
+  - line 393: rule for option option_key=before, skipped: "#" + ">"  > U+A71B
+  - line 394: rule for option option_key=before, skipped: U+01C3 + "^" > U+A71D
+  - line 395: rule for option option_key=before, skipped: U+A71B + ">" > U+2197
+  - line 396: rule for option option_key=before, skipped: U+A71C + "<" > U+2198
+  - line 397: rule for option option_key=before, skipped: "S"  + ">"  > U+03C3
+  - line 399: rule for option option_key=before, skipped: U+207C + any(EqSupK)    > index(EqSuperscript,3)
+  - line 400: rule for option option_key=before, skipped: "^<" + any(LessSupK)  > index(LessSuperscript,4)
+  - line 401: rule for option option_key=before, skipped: "^>" + any(GreatSupK) > index(GreatSuperscript,4)
+  - line 370: unknown key or modifiers, skipped: [RALT "-"]
+  - line 372: unsupported rule (context), skipped: if(&baselayout = 'de-de') + [RALT SHIFT "="]	>	reset(option_key)
+  - line 373: unsupported rule (context), skipped: if(&baselayout != 'de-de') + [RALT "="]	>	reset(option_key)
+  - line 431: unknown key or modifiers, skipped: [T_02D0_02D0]
+  - line 432: unknown key or modifiers, skipped: [T_02e7_02e5]
+  - line 433: unknown key or modifiers, skipped: [T_02e7_02e9]
+  - line 434: unknown key or modifiers, skipped: [T_02e8_02e5_02e8]
+  - line 435: unknown key or modifiers, skipped: [T_02e9_02e5]
+  - line 436: unknown key or modifiers, skipped: [T_02e5_02e9]
+  - line 437: unknown key or modifiers, skipped: [T_02e9_02e7]
+  - line 438: unknown key or modifiers, skipped: [T_02e8_02e7_02e8]
 - **Our changes:** none
 
 ## ta-tamil99

@@ -1,6 +1,13 @@
 ---
 import { pageFonts } from "../styles/script-fonts";
-import { getLanguage, getLayout, languageBundle, layoutSlug, isRomanLayout } from "@okb/layouts";
+import {
+  getLanguage,
+  getLayout,
+  isRomanLayout,
+  isSpecialKeyboard,
+  languageBundle,
+  layoutSlug,
+} from "@okb/layouts";
 import { getCollection } from "astro:content";
 import { FONT_CLASS } from "./fonts";
 import { TYPING_LANGUAGES } from "../content/typing/practice";
@@ -10,6 +17,8 @@ import LatinLetters from "./LatinLetters.astro";
 import OfflineSave from "./OfflineSave.astro";
 import LayoutChart from "./LayoutChart.astro";
 import RomanGuide from "./RomanGuide.astro";
+import RuleTable from "./RuleTable.astro";
+import { RULE_TABLES } from "../content/rule-tables";
 import Base from "../layouts/Base.astro";
 import { creditsFor } from "../content/credits";
 import { SITE } from "../config/site";
@@ -171,6 +180,9 @@ const hasTyping = slug === "urdu" || TYPING_LANGUAGES.some((l) => l.slug === slu
       ) : (
         <LayoutChart layout={layout} />
       )}
+      {RULE_TABLES[layoutId] && (
+        <RuleTable layout={layout} spec={RULE_TABLES[layoutId]} fontClass={scriptFont} />
+      )}
       {accentAccuracy && (
         <div id="accuracy" class="mt-4 max-w-2xl scroll-mt-4 text-sm">
           <h3 class="mb-1 font-semibold">
@@ -316,7 +328,7 @@ const hasTyping = slug === "urdu" || TYPING_LANGUAGES.some((l) => l.slug === slu
     </section>
   </div>
 
-  {language.script === "Latn" && language.accents && (
+  {language.script === "Latn" && language.accents && !isSpecialKeyboard(language) && (
     <LatinLetters
       accents={language.accents}
       lang={language.lang}

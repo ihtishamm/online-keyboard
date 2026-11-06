@@ -14,6 +14,7 @@ import { LANGUAGE_FILES, RAW_LAYOUTS, SCHEME_LIST } from "./registry";
 export * from "./registry";
 export {
   REGIONS,
+  isSpecialKeyboard,
   type FontId,
   type LanguageFile,
   type Region,

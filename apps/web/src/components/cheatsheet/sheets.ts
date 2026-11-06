@@ -1,5 +1,6 @@
 import { LANGUAGES, getLayout, layoutSlug, type Language, isRomanLayout } from "@okb/layouts";
 import { romanFor } from "../../content/roman";
+import { RULE_TABLES } from "../../content/rule-tables";
 
 /** A printable one-page chart of a layout: its keys, or for Roman typing the spelling guide. */
 export interface Sheet {
@@ -15,6 +16,9 @@ export function allSheets(): Sheet[] {
     language.layouts.flatMap((layoutId): Sheet[] => {
       const roman = isRomanLayout(getLayout(layoutId));
       if (roman && !romanFor(layoutId)) return [];
+      // IPA, pinyin tones, Arabic romanisation: the keys are near QWERTY and the letters come
+      // from rules, which a key chart cannot show. Their pages have the rule table.
+      if (RULE_TABLES[layoutId]) return [];
       const id = `${language.slug}-${layoutSlug(layoutId)}`;
       return [{ id, language, layoutId, kind: roman ? "roman" : "keys" }];
     }),

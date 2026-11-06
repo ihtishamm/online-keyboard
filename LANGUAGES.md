@@ -116,3 +116,14 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Inuktitut (/inuktitut) | Cans | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets; typing test with words and sentences |
 | Santali (/santali) | Olck | C | yes | Beta | – | no | spell check meets its targets |
 | Bodo (/bodo) | Deva | – | no | no | – | no | typing tutor |
+
+## Special keyboards
+
+Keyboards for a notation, not a language: not counted above and given no tier.
+
+| Keyboard | Script | Layouts |
+|---|---|---|
+| IPA (Phonetic Alphabet) (/ipa) | Latn | IPA (SIL) |
+| Quranic Arabic (/quranic-arabic) | Arab | Arabic 101 with Quranic marks |
+| Arabic Romanisation (/arabic-transliteration) | Latn | Romanisation |
+| Pinyin with Tone Marks (/pinyin-tones) | Latn | Tone numbers |

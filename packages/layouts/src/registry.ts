@@ -384,6 +384,14 @@ import santali from "../languages/santali/language.json";
 import satStandard from "../languages/santali/standard.json";
 import bodo from "../languages/bodo/language.json";
 import brxInscript from "../languages/bodo/inscript.json";
+import ipa from "../languages/ipa/language.json";
+import ipaSil from "../languages/ipa/sil.json";
+import quranicArabic from "../languages/quranic-arabic/language.json";
+import qurStandard from "../languages/quranic-arabic/standard.json";
+import arabicTransliteration from "../languages/arabic-transliteration/language.json";
+import arlStandard from "../languages/arabic-transliteration/standard.json";
+import pinyinTones from "../languages/pinyin-tones/language.json";
+import pyTones from "../languages/pinyin-tones/tones.json";
 
 /** Every language.json, in page order. */
 export const LANGUAGE_FILES = [
@@ -498,6 +506,10 @@ export const LANGUAGE_FILES = [
   inuktitut,
   santali,
   bodo,
+  ipa,
+  quranicArabic,
+  arabicTransliteration,
+  pinyinTones,
 ] as LanguageFile[];
 
 /** Every layout file, by language, in each language's order. */
@@ -725,6 +737,10 @@ export const RAW_LAYOUTS = [
   iuNaqittaut,
   satStandard,
   brxInscript,
+  ipaSil,
+  qurStandard,
+  arlStandard,
+  pyTones,
 ] as LayoutInput[];
 
 /** The transliteration schemes the layouts use. */

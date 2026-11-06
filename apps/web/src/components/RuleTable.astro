@@ -1,0 +1,54 @@
+---
+import type { Layout } from "@okb/engine/layout";
+import { ruleTable, type RuleTableSpec } from "../content/rule-tables";
+
+interface Props {
+  layout: Layout;
+  spec: RuleTableSpec;
+  /** The editor font's class, so the table shows letters as the editor does. */
+  fontClass: string;
+}
+
+const { layout, spec, fontClass } = Astro.props;
+const rows = ruleTable(layout, spec);
+---
+
+<div class="mt-6 max-w-2xl">
+  <h3 class="mb-1 font-semibold">Letters you build with a key</h3>
+  <p class="mb-2 text-sm text-muted">{spec.caption}</p>
+  <div
+    class="max-h-[28rem] overflow-auto rounded-xl border border-border"
+    tabindex="0"
+    role="region"
+    aria-label="Letters you build with a key"
+  >
+    <table class="w-full border-collapse text-center text-sm">
+      <thead class="sticky top-0 bg-surface-2">
+        <tr>
+          <th scope="col" class="px-3 py-2 text-start font-medium">
+            Type
+          </th>
+          {spec.keys.map((k) => (
+            <th scope="col" class="px-3 py-2 font-mono font-medium">
+              then {k.split("").join(" ")}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-border bg-surface">
+        {rows.map((row) => (
+          <tr>
+            <th scope="row" class="px-3 py-1.5 text-start font-mono font-medium">
+              {row.before}
+            </th>
+            {row.cells.map((cell) => (
+              <td class:list={[fontClass, "px-3 py-1.5 text-lg"]} lang={layout.lang}>
+                {cell ?? <span class="text-muted">–</span>}
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>

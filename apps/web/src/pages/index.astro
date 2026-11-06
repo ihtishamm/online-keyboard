@@ -1,7 +1,7 @@
 ---
 import { CORE_FONTS } from "../styles/script-fonts";
-import { LANGUAGES, REGIONS, type Language } from "@okb/layouts";
-import { FONT_CLASS } from "../components/fonts";
+import { LANGUAGES, REGIONS, isSpecialKeyboard, type Language } from "@okb/layouts";
+import { nameFontClass } from "../components/fonts";
 import HomeSuggestions from "../components/picker/HomeSuggestions";
 import { SCRIPT_NAMES, pickerLanguage } from "../components/picker/languages";
 import Base from "../layouts/Base.astro";
@@ -13,7 +13,11 @@ const group = (key: (l: Language) => string, names: Record<string, string>) =>
     .map((k) => [names[k]!, LANGUAGES.filter((l) => key(l) === k)] as const)
     .filter(([, list]) => list.length > 0);
 const byRegion = group((l) => l.region, REGIONS);
-const byScript = group((l) => l.script, SCRIPT_NAMES);
+// Special keyboards (IPA, pinyin tone marks) keep their own group when browsing by script too.
+const byScript = [
+  ...group((l) => (isSpecialKeyboard(l) ? "" : l.script), SCRIPT_NAMES),
+  [REGIONS.special, LANGUAGES.filter(isSpecialKeyboard)] as const,
+];
 ---
 
 <Base title={`${SITE.name}: ${SITE.tagline}`} fonts={CORE_FONTS}>
@@ -81,7 +85,7 @@ const byScript = group((l) => l.script, SCRIPT_NAMES);
                   >
                     <span class="text-lg font-medium">{l.name.en} keyboard</span>
                     <span
-                      class={`${FONT_CLASS[l.fonts[0]!]} text-2xl text-accent`}
+                      class={`${nameFontClass(l.fonts[0]!)} text-2xl text-accent`}
                       lang={l.lang}
                       dir={l.dir}
                     >

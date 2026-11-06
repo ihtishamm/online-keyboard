@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { desktopCharacters } from "@okb/engine";
-import { getLayout, LANGUAGES } from "@okb/layouts";
+import { getLayout, LANGUAGES, isSpecialKeyboard } from "@okb/layouts";
 import { TEXT_RULES, splitSentences, tokenize } from "../src/languages.ts";
 import { tokenize as tokenizeUrdu } from "../src/urdu.ts";
 
@@ -125,7 +125,10 @@ describe("text rules", () => {
   it("cover every language on the site", () => {
     const slugs = new Set(Object.values(SLUG));
     // Traditional Chinese has its readings but no word list of its own: it types by conversion.
-    const pages = LANGUAGES.map((l) => l.slug).filter((slug) => slug !== "chinese-traditional");
+    // Special keyboards (IPA, pinyin tone marks) are for a notation and have no word list.
+    const pages = LANGUAGES.filter((l) => !isSpecialKeyboard(l))
+      .map((l) => l.slug)
+      .filter((slug) => slug !== "chinese-traditional");
     expect(pages.filter((slug) => !slugs.has(slug))).toEqual([]);
     expect(Object.keys(TEXT_RULES).sort()).toEqual(Object.keys(SLUG).sort());
   });

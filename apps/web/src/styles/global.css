@@ -12,6 +12,17 @@
 }
 
 /*
+ * The IPA page's editor font: Doulos SIL 7.000 cut to the characters its keyboard types, with
+ * ASCII and Latin-1 so letters and their marks come from one font (src/fonts/README.md,
+ * OFL-Doulos.txt). Renamed, as the OFL requires of a cut font with Reserved Font Names.
+ */
+@font-face {
+  font-family: "Phonetic Symbols";
+  src: url("../fonts/doulos-phonetic-symbols.woff2") format("woff2");
+  font-display: swap;
+}
+
+/*
  * Phone keyboard mode: narrow screens, and touch screens turned sideways (a landscape phone is
  * wider than `sm` but still a phone). `short` is the landscape case, where keys must be lower.
  * Keep in sync with PHONE_QUERY in components/keyboard/useNarrow.ts.
@@ -177,6 +188,7 @@
   --stack-cherokee: "Noto Sans Cherokee", "Inter Variable", sans-serif;
   --stack-canadian-aboriginal: "Noto Sans Canadian Aboriginal", "Inter Variable", sans-serif;
   --stack-ol-chiki: "Noto Sans Ol Chiki", "Inter Variable", sans-serif;
+  --stack-ipa: "Phonetic Symbols", "Inter Variable", serif;
   --stack-georgian: "Noto Sans Georgian", "Inter Variable", sans-serif;
   --stack-thai: "Noto Sans Thai", "Inter Variable", sans-serif;
   --stack-lao: "Noto Sans Lao", "Inter Variable", sans-serif;
@@ -323,6 +335,11 @@
 
   .font-ol-chiki {
     font-family: var(--stack-ol-chiki);
+    line-height: 1.8;
+  }
+
+  .font-ipa {
+    font-family: var(--stack-ipa);
     line-height: 1.8;
   }
 

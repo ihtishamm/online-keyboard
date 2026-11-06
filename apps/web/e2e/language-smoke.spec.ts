@@ -60,10 +60,32 @@ function layoutsOf(slug: string): Map<string, Layout & { translit?: string }> {
 const layoutSlug = (id: string) => id.slice(id.indexOf("-") + 1);
 
 /**
- * Layouts that build letters from several keys (GFF: a consonant, then a vowel): the keys to
- * press for the sample's first word, on a US keyboard.
+ * Layouts that build letters from several keys (GFF: a consonant, then a vowel; IPA: a letter,
+ * then = < > or ^; pinyin: a syllable, then its tone): the keys to press for the sample's first
+ * word, on a US keyboard.
  */
-const TYPED_AS: Readonly<Record<string, string>> = { amharic: "selam", tigrinya: "selam" };
+const TYPED_AS: Readonly<Record<string, string>> = {
+  amharic: "selam",
+  tigrinya: "selam",
+  ipa: "}}i=nte=}na<s=e=ne=l",
+  "pinyin-tones": "Ni3",
+};
+/** On the phone keyboard, GFF's letters are tapped as on a computer. */
+const TAPPED_AS: Readonly<Record<string, string>> = { amharic: "selam", tigrinya: "selam" };
+
+/** The US key for a character, with Shift where it needs it: page.keyboard.type drops Shift. */
+const US_KEYS = ["Backquote", ...[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map((d) => `Digit${d}`)];
+US_KEYS.push("Minus", "Equal", "BracketLeft", "BracketRight", "Backslash", "Semicolon", "Quote");
+US_KEYS.push("Comma", "Period", "Slash");
+function usKey(ch: string): string {
+  if (/^[a-z]$/.test(ch)) return `Key${ch.toUpperCase()}`;
+  if (/^[A-Z]$/.test(ch)) return `Shift+Key${ch}`;
+  const plain = "`1234567890-=[]\\;',./".indexOf(ch);
+  if (plain >= 0) return US_KEYS[plain]!;
+  const shifted = '~!@#$%^&*()_+{}|:"<>?'.indexOf(ch);
+  if (shifted >= 0) return `Shift+${US_KEYS[shifted]}`;
+  throw new Error(`no US key for ${ch}`);
+}
 
 const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
@@ -91,7 +113,7 @@ for (const language of LANGUAGES) {
       test.skip(isMobile, "physical keyboard");
       await editor(page).click();
       const keys = TYPED_AS[language.slug];
-      if (keys) await page.keyboard.type(keys);
+      if (keys) for (const ch of keys) await page.keyboard.press(usKey(ch));
       else await typeText(page, layout, word);
       await expect(editor(page)).toHaveValue(word);
     });
@@ -116,7 +138,7 @@ for (const language of LANGUAGES) {
       // Hangul keys show letters that join: tap a whole word's letters and expect the syllables.
       const hangul = layout.composer === "hangul";
       // GFF builds the word from its sounds: tap s, e, l, a, m and expect ሰላም.
-      const keysFor = TYPED_AS[language.slug];
+      const keysFor = TAPPED_AS[language.slug];
       if (keysFor) {
         for (const ch of keysFor)
           await keyboard.locator(`button[data-key="Key${ch.toUpperCase()}"]`).tap();

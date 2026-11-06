@@ -1,0 +1,333 @@
+{
+  "id": "qur-standard",
+  "lang": "ar",
+  "script": "Arab",
+  "dir": "rtl",
+  "name": {
+    "en": "Arabic 101 with Quranic marks",
+    "native": "قياسي مع علامات المصحف"
+  },
+  "source": "Windows \"Arabic (101)\", from Unicode CLDR 43 keyboard data (Unicode License v3), with the Quranic marks added by us on AltGr. AltGr on a key gives the Quranic form of the mark on its Shift (AltGr+Q the dagger alif \u0670, AltGr+X the Quranic sukun \u06E1, AltGr+W, R and S the open tanwin), AltGr+H types ٱ, the number row the pause marks, ۞, ﴿ ﴾, \u06DD and ۩, and Shift+AltGr the Arabic-Indic digits.",
+  "mobile": {
+    "rows": [
+      [
+        "KeyQ",
+        "KeyW",
+        "KeyE",
+        "KeyR",
+        "KeyT",
+        "KeyY",
+        "KeyU",
+        "KeyI",
+        "KeyO",
+        "KeyP",
+        "BracketLeft"
+      ],
+      [
+        "KeyA",
+        "KeyS",
+        "KeyD",
+        "KeyF",
+        "KeyG",
+        "KeyH",
+        "KeyJ",
+        "KeyK",
+        "KeyL",
+        "Semicolon",
+        "Quote"
+      ],
+      [
+        "Backquote",
+        "KeyX",
+        "KeyC",
+        "KeyV",
+        "KeyN",
+        "KeyM",
+        "Comma",
+        "Period",
+        "Slash",
+        "BracketRight"
+      ]
+    ],
+    "longpress": {
+      "KeyX": ["ئ"],
+      "KeyG": ["لا", "لآ"]
+    }
+  },
+  "keys": {
+    "Backquote": {
+      "n": "ذ",
+      "s": "\u0651"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "!",
+      "ag": "\u06D6",
+      "sag": "١"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "@",
+      "ag": "\u06D7",
+      "sag": "٢"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "#",
+      "ag": "\u06D8",
+      "sag": "٣"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "$",
+      "ag": "\u06D9",
+      "sag": "٤"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "%",
+      "ag": "\u06DA",
+      "sag": "٥"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "^",
+      "ag": "\u06DB",
+      "sag": "٦"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "&",
+      "ag": "\u06DC",
+      "sag": "٧"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "*",
+      "ag": "۞",
+      "sag": "٨"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": ")",
+      "ag": "﴿",
+      "sag": "٩"
+    },
+    "Digit0": {
+      "n": "0",
+      "s": "(",
+      "ag": "﴾",
+      "sag": "٠"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_",
+      "ag": "\u06DD"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+",
+      "ag": "۩"
+    },
+    "KeyQ": {
+      "n": "ض",
+      "s": "\u064E",
+      "ag": "\u0670"
+    },
+    "KeyW": {
+      "n": "ص",
+      "s": "\u064B",
+      "ag": "\u08F0"
+    },
+    "KeyE": {
+      "n": "ث",
+      "s": "\u064F",
+      "ag": "\u0657"
+    },
+    "KeyR": {
+      "n": "ق",
+      "s": "\u064C",
+      "ag": "\u08F1"
+    },
+    "KeyT": {
+      "n": "ف",
+      "s": "لإ"
+    },
+    "KeyY": {
+      "n": "غ",
+      "s": "إ",
+      "ag": "\u0655"
+    },
+    "KeyU": {
+      "n": "ع",
+      "s": "‘"
+    },
+    "KeyI": {
+      "n": "ه",
+      "s": "÷"
+    },
+    "KeyO": {
+      "n": "خ",
+      "s": "×",
+      "ag": "\u06DF",
+      "sag": "\u06E0"
+    },
+    "KeyP": {
+      "n": "ح",
+      "s": "؛"
+    },
+    "BracketLeft": {
+      "n": "ج",
+      "s": "<"
+    },
+    "BracketRight": {
+      "n": "د",
+      "s": ">"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyA": {
+      "n": "ش",
+      "s": "\u0650",
+      "ag": "\u0656"
+    },
+    "KeyS": {
+      "n": "س",
+      "s": "\u064D",
+      "ag": "\u08F2",
+      "sag": "\u06E3"
+    },
+    "KeyD": {
+      "n": "ي",
+      "s": "]",
+      "ag": "ۦ",
+      "sag": "\u06E7"
+    },
+    "KeyF": {
+      "n": "ب",
+      "s": "["
+    },
+    "KeyG": {
+      "n": "ل",
+      "s": "لأ"
+    },
+    "KeyH": {
+      "n": "ا",
+      "s": "أ",
+      "ag": "ٱ",
+      "sag": "\u0654"
+    },
+    "KeyJ": {
+      "n": "ت",
+      "s": "ـ"
+    },
+    "KeyK": {
+      "n": "ن",
+      "s": "،",
+      "ag": "\u06E8"
+    },
+    "KeyL": {
+      "n": "م",
+      "s": "/",
+      "ag": "\u06E2",
+      "sag": "\u06ED"
+    },
+    "Semicolon": {
+      "n": "ك",
+      "s": ":"
+    },
+    "Quote": {
+      "n": "ط",
+      "s": "\""
+    },
+    "IntlBackslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyZ": {
+      "n": "ئ",
+      "s": "~"
+    },
+    "KeyX": {
+      "n": "ء",
+      "s": "\u0652",
+      "ag": "\u06E1"
+    },
+    "KeyC": {
+      "n": "ؤ",
+      "s": "}"
+    },
+    "KeyV": {
+      "n": "ر",
+      "s": "{"
+    },
+    "KeyB": {
+      "n": "لا",
+      "s": "لآ"
+    },
+    "KeyN": {
+      "n": "ى",
+      "s": "آ",
+      "ag": "\u0653",
+      "sag": "\u06E4"
+    },
+    "KeyM": {
+      "n": "ة",
+      "s": "’"
+    },
+    "Comma": {
+      "n": "و",
+      "s": ",",
+      "ag": "ۥ"
+    },
+    "Period": {
+      "n": "ز",
+      "s": "."
+    },
+    "Slash": {
+      "n": "ظ",
+      "s": "؟"
+    }
+  },
+  "longpress": {
+    "Backquote": ["\u0651"],
+    "Digit1": ["\u06D6"],
+    "Digit2": ["\u06D7"],
+    "Digit3": ["\u06D8"],
+    "Digit4": ["\u06D9"],
+    "Digit5": ["\u06DA"],
+    "Digit6": ["\u06DB"],
+    "Digit7": ["\u06DC"],
+    "Digit8": ["۞"],
+    "Digit9": ["﴿"],
+    "Digit0": ["﴾"],
+    "Minus": ["\u06DD"],
+    "Equal": ["۩"],
+    "KeyQ": ["\u064E", "\u0670"],
+    "KeyW": ["\u064B", "\u08F0"],
+    "KeyE": ["\u064F", "\u0657"],
+    "KeyR": ["\u064C", "\u08F1"],
+    "KeyT": ["لإ"],
+    "KeyY": ["إ", "\u0655"],
+    "KeyU": ["‘"],
+    "KeyI": ["÷"],
+    "KeyO": ["×", "\u06DF", "\u06E0"],
+    "KeyP": ["؛"],
+    "KeyA": ["\u0650", "\u0656"],
+    "KeyS": ["\u064D", "\u08F2", "\u06E3"],
+    "KeyD": ["ۦ", "\u06E7"],
+    "KeyG": ["لأ"],
+    "KeyH": ["أ", "ٱ", "\u0654"],
+    "KeyJ": ["ـ"],
+    "KeyK": ["،", "\u06E8"],
+    "KeyL": ["\u06E2", "\u06ED"],
+    "KeyX": ["\u0652", "\u06E1"],
+    "KeyB": ["لآ"],
+    "KeyN": ["آ", "\u0653", "\u06E4"],
+    "KeyM": ["’"],
+    "Comma": ["ۥ"],
+    "Slash": ["؟"]
+  }
+}

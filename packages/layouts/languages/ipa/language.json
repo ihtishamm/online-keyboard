@@ -1,0 +1,23 @@
+{
+  "slug": "ipa",
+  "code": "ipa",
+  "order": 1100,
+  "lang": "und-fonipa",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "IPA (Phonetic Alphabet)",
+    "native": "IPA"
+  },
+  "aliases": ["International Phonetic Alphabet", "Phonetic alphabet", "Phonetics"],
+  "region": "special",
+  "fonts": ["ipa"],
+  "layouts": ["ipa-sil"],
+  "accents": "əɪʊɛɔæɑʌɒɜɐɚʃʒθðŋɹɾɡʔχʁħʕɲɟçɣɸβʋɬɮʎɭɳɖʈʂʐɕʑɨʉɯɵøœɤʏʰʷʲːˈˌ",
+  "sample": "ˌɪntəˈnæʃənəl fəˈnɛtɪk ˈælfəbɛt",
+  "voice": [],
+  "wordList": false,
+  "translate": {},
+  "tier": null,
+  "notes": "A special keyboard, not a language (plan 9c, Batch 4): left out of language counts and tiers. Its letters have no capitals in IPA, so the letter bar never offers any. The font is our cut of Doulos SIL (apps/web/src/fonts/README.md)."
+}

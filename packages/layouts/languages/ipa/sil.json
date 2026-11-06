@@ -1,0 +1,3708 @@
+{
+  "id": "ipa-sil",
+  "lang": "und-fonipa",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "IPA (SIL)",
+    "native": "IPA"
+  },
+  "source": "Keyman IPA (SIL) 2.0.2 by SIL Global (MIT): type a letter, then = < > or ^ to change it (n> ŋ, e< ɛ, h^ ʰ); @ then a digit for tones. Its option mode (RAlt+-, symbol first) and touch-only keys are left out.",
+  "keys": {
+    "Backquote": {
+      "s": "\u0303",
+      "n": "`"
+    },
+    "Digit1": {
+      "s": "ǃ",
+      "n": "1"
+    },
+    "Digit2": {
+      "s": "\u030A",
+      "n": "2"
+    },
+    "Digit3": {
+      "s": "#",
+      "n": "3"
+    },
+    "Digit4": {
+      "s": "\u0329",
+      "n": "4"
+    },
+    "Digit5": {
+      "s": "\u0325",
+      "n": "5"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "^"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "&"
+    },
+    "Digit8": {
+      "s": "\u0308",
+      "n": "8"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")"
+    },
+    "Minus": {
+      "s": "\u0320",
+      "n": "-"
+    },
+    "Equal": {
+      "s": "\u031F",
+      "n": "="
+    },
+    "KeyQ": {
+      "s": "Q",
+      "n": "q"
+    },
+    "KeyW": {
+      "n": "w",
+      "s": "W"
+    },
+    "KeyE": {
+      "s": "E",
+      "n": "e"
+    },
+    "KeyR": {
+      "s": "R",
+      "n": "r"
+    },
+    "KeyT": {
+      "n": "t",
+      "s": "T"
+    },
+    "KeyY": {
+      "n": "y",
+      "s": "Y"
+    },
+    "KeyU": {
+      "s": "U",
+      "n": "u"
+    },
+    "KeyI": {
+      "s": "I",
+      "n": "i"
+    },
+    "KeyO": {
+      "s": "O",
+      "n": "o"
+    },
+    "KeyP": {
+      "n": "p",
+      "s": "P"
+    },
+    "BracketLeft": {
+      "s": "\u032A",
+      "n": "["
+    },
+    "BracketRight": {
+      "s": "ˈ",
+      "n": "]"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyA": {
+      "n": "a",
+      "s": "A"
+    },
+    "KeyS": {
+      "n": "s",
+      "s": "S"
+    },
+    "KeyD": {
+      "n": "d",
+      "s": "D"
+    },
+    "KeyF": {
+      "n": "f",
+      "s": "F"
+    },
+    "KeyG": {
+      "n": "g",
+      "s": "G"
+    },
+    "KeyH": {
+      "s": "H",
+      "n": "h"
+    },
+    "KeyJ": {
+      "n": "j",
+      "s": "J"
+    },
+    "KeyK": {
+      "n": "k",
+      "s": "K"
+    },
+    "KeyL": {
+      "s": "L",
+      "n": "l"
+    },
+    "Semicolon": {
+      "s": "ː",
+      "n": ";"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "KeyZ": {
+      "n": "z",
+      "s": "Z"
+    },
+    "KeyX": {
+      "n": "x",
+      "s": "X"
+    },
+    "KeyC": {
+      "n": "c",
+      "s": "C"
+    },
+    "KeyV": {
+      "n": "v",
+      "s": "V"
+    },
+    "KeyB": {
+      "s": "B",
+      "n": "b"
+    },
+    "KeyN": {
+      "s": "N",
+      "n": "n"
+    },
+    "KeyM": {
+      "n": "m",
+      "s": "M"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "<"
+    },
+    "Period": {
+      "n": ".",
+      "s": ">"
+    },
+    "Slash": {
+      "s": "?",
+      "n": "/"
+    }
+  },
+  "rules": [
+    {
+      "before": "b\u0303",
+      "typed": "\u0303",
+      "add": "ᵬ",
+      "remove": 2
+    },
+    {
+      "before": "d\u0303",
+      "typed": "\u0303",
+      "add": "ᵭ",
+      "remove": 2
+    },
+    {
+      "before": "f\u0303",
+      "typed": "\u0303",
+      "add": "ᵮ",
+      "remove": 2
+    },
+    {
+      "before": "l\u0303",
+      "typed": "\u0303",
+      "add": "ɫ",
+      "remove": 2
+    },
+    {
+      "before": "m\u0303",
+      "typed": "\u0303",
+      "add": "ᵯ",
+      "remove": 2
+    },
+    {
+      "before": "n\u0303",
+      "typed": "\u0303",
+      "add": "ᵰ",
+      "remove": 2
+    },
+    {
+      "before": "p\u0303",
+      "typed": "\u0303",
+      "add": "ᵱ",
+      "remove": 2
+    },
+    {
+      "before": "r\u0303",
+      "typed": "\u0303",
+      "add": "ᵲ",
+      "remove": 2
+    },
+    {
+      "before": "ɾ\u0303",
+      "typed": "\u0303",
+      "add": "ᵳ",
+      "remove": 2
+    },
+    {
+      "before": "s\u0303",
+      "typed": "\u0303",
+      "add": "ᵴ",
+      "remove": 2
+    },
+    {
+      "before": "t\u0303",
+      "typed": "\u0303",
+      "add": "ᵵ",
+      "remove": 2
+    },
+    {
+      "before": "z\u0303",
+      "typed": "\u0303",
+      "add": "ᵶ",
+      "remove": 2
+    },
+    {
+      "before": "\u0308",
+      "typed": "\u0308",
+      "add": "\u033D",
+      "remove": 1
+    },
+    {
+      "before": "\u033D",
+      "typed": "\u0308",
+      "add": "\u0306",
+      "remove": 1
+    },
+    {
+      "before": "\u0306",
+      "typed": "\u0308",
+      "add": "\u0307",
+      "remove": 1
+    },
+    {
+      "before": "\u0307",
+      "typed": "\u0308",
+      "add": "\u0310",
+      "remove": 1
+    },
+    {
+      "before": "\u0329",
+      "typed": "\u0329",
+      "add": "\u032F",
+      "remove": 1
+    },
+    {
+      "before": "\u032F",
+      "typed": "\u0329",
+      "add": "\u0330",
+      "remove": 1
+    },
+    {
+      "before": "a\u0330",
+      "typed": "\u0329",
+      "add": "ᶏ",
+      "remove": 2
+    },
+    {
+      "before": "ɑ\u0330",
+      "typed": "\u0329",
+      "add": "ᶐ",
+      "remove": 2
+    },
+    {
+      "before": "ɗ\u0330",
+      "typed": "\u0329",
+      "add": "ᶑ",
+      "remove": 2
+    },
+    {
+      "before": "e\u0330",
+      "typed": "\u0329",
+      "add": "ᶒ",
+      "remove": 2
+    },
+    {
+      "before": "ɛ\u0330",
+      "typed": "\u0329",
+      "add": "ᶓ",
+      "remove": 2
+    },
+    {
+      "before": "ɜ\u0330",
+      "typed": "\u0329",
+      "add": "ᶔ",
+      "remove": 2
+    },
+    {
+      "before": "ə\u0330",
+      "typed": "\u0329",
+      "add": "ᶕ",
+      "remove": 2
+    },
+    {
+      "before": "i\u0330",
+      "typed": "\u0329",
+      "add": "ᶖ",
+      "remove": 2
+    },
+    {
+      "before": "ɔ\u0330",
+      "typed": "\u0329",
+      "add": "ᶗ",
+      "remove": 2
+    },
+    {
+      "before": "ʃ\u0330",
+      "typed": "\u0329",
+      "add": "ᶘ",
+      "remove": 2
+    },
+    {
+      "before": "u\u0330",
+      "typed": "\u0329",
+      "add": "ᶙ",
+      "remove": 2
+    },
+    {
+      "before": "ʒ\u0330",
+      "typed": "\u0329",
+      "add": "ᶚ",
+      "remove": 2
+    },
+    {
+      "before": "\u0330",
+      "typed": "\u0329",
+      "add": "\u0329",
+      "remove": 1
+    },
+    {
+      "before": "\u032A",
+      "typed": "\u032A",
+      "add": "\u033A",
+      "remove": 1
+    },
+    {
+      "before": "\u033A",
+      "typed": "\u032A",
+      "add": "\u033B",
+      "remove": 1
+    },
+    {
+      "before": "\u033B",
+      "typed": "\u032A",
+      "add": "\u033C",
+      "remove": 1
+    },
+    {
+      "before": "\u033C",
+      "typed": "\u032A",
+      "add": "\u0323",
+      "remove": 1
+    },
+    {
+      "before": "\u0323",
+      "typed": "\u032A",
+      "add": "\u032A",
+      "remove": 1
+    },
+    {
+      "before": "\u0325",
+      "typed": "\u0325",
+      "add": "\u032C",
+      "remove": 1
+    },
+    {
+      "before": "\u032C",
+      "typed": "\u0325",
+      "add": "\u0324",
+      "remove": 1
+    },
+    {
+      "before": "b\u0324",
+      "typed": "\u0325",
+      "add": "ᶀ",
+      "remove": 2
+    },
+    {
+      "before": "d\u0324",
+      "typed": "\u0325",
+      "add": "ᶁ",
+      "remove": 2
+    },
+    {
+      "before": "f\u0324",
+      "typed": "\u0325",
+      "add": "ᶂ",
+      "remove": 2
+    },
+    {
+      "before": "ɡ\u0324",
+      "typed": "\u0325",
+      "add": "ᶃ",
+      "remove": 2
+    },
+    {
+      "before": "k\u0324",
+      "typed": "\u0325",
+      "add": "ᶄ",
+      "remove": 2
+    },
+    {
+      "before": "l\u0324",
+      "typed": "\u0325",
+      "add": "ᶅ",
+      "remove": 2
+    },
+    {
+      "before": "m\u0324",
+      "typed": "\u0325",
+      "add": "ᶆ",
+      "remove": 2
+    },
+    {
+      "before": "n\u0324",
+      "typed": "\u0325",
+      "add": "ᶇ",
+      "remove": 2
+    },
+    {
+      "before": "p\u0324",
+      "typed": "\u0325",
+      "add": "ᶈ",
+      "remove": 2
+    },
+    {
+      "before": "r\u0324",
+      "typed": "\u0325",
+      "add": "ᶉ",
+      "remove": 2
+    },
+    {
+      "before": "s\u0324",
+      "typed": "\u0325",
+      "add": "ᶊ",
+      "remove": 2
+    },
+    {
+      "before": "ʃ\u0324",
+      "typed": "\u0325",
+      "add": "ᶋ",
+      "remove": 2
+    },
+    {
+      "before": "v\u0324",
+      "typed": "\u0325",
+      "add": "ᶌ",
+      "remove": 2
+    },
+    {
+      "before": "x\u0324",
+      "typed": "\u0325",
+      "add": "ᶍ",
+      "remove": 2
+    },
+    {
+      "before": "z\u0324",
+      "typed": "\u0325",
+      "add": "ᶎ",
+      "remove": 2
+    },
+    {
+      "before": "\u0324",
+      "typed": "\u0325",
+      "add": "\u0325",
+      "remove": 1
+    },
+    {
+      "before": "˥",
+      "typed": "0",
+      "add": "˩"
+    },
+    {
+      "before": "˦",
+      "typed": "0",
+      "add": "˩"
+    },
+    {
+      "before": "˧",
+      "typed": "0",
+      "add": "˩"
+    },
+    {
+      "before": "˨",
+      "typed": "0",
+      "add": "˩"
+    },
+    {
+      "before": "˩",
+      "typed": "0",
+      "add": "˩"
+    },
+    {
+      "before": "˥",
+      "typed": "1",
+      "add": "˨"
+    },
+    {
+      "before": "˦",
+      "typed": "1",
+      "add": "˨"
+    },
+    {
+      "before": "˧",
+      "typed": "1",
+      "add": "˨"
+    },
+    {
+      "before": "˨",
+      "typed": "1",
+      "add": "˨"
+    },
+    {
+      "before": "˩",
+      "typed": "1",
+      "add": "˨"
+    },
+    {
+      "before": "˥",
+      "typed": "2",
+      "add": "˧"
+    },
+    {
+      "before": "˦",
+      "typed": "2",
+      "add": "˧"
+    },
+    {
+      "before": "˧",
+      "typed": "2",
+      "add": "˧"
+    },
+    {
+      "before": "˨",
+      "typed": "2",
+      "add": "˧"
+    },
+    {
+      "before": "˩",
+      "typed": "2",
+      "add": "˧"
+    },
+    {
+      "before": "˥",
+      "typed": "3",
+      "add": "˦"
+    },
+    {
+      "before": "˦",
+      "typed": "3",
+      "add": "˦"
+    },
+    {
+      "before": "˧",
+      "typed": "3",
+      "add": "˦"
+    },
+    {
+      "before": "˨",
+      "typed": "3",
+      "add": "˦"
+    },
+    {
+      "before": "˩",
+      "typed": "3",
+      "add": "˦"
+    },
+    {
+      "before": "˥",
+      "typed": "4",
+      "add": "˥"
+    },
+    {
+      "before": "˦",
+      "typed": "4",
+      "add": "˥"
+    },
+    {
+      "before": "˧",
+      "typed": "4",
+      "add": "˥"
+    },
+    {
+      "before": "˨",
+      "typed": "4",
+      "add": "˥"
+    },
+    {
+      "before": "˩",
+      "typed": "4",
+      "add": "˥"
+    },
+    {
+      "before": "#",
+      "typed": "0",
+      "add": "˩",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "1",
+      "add": "˨",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "2",
+      "add": "˧",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "3",
+      "add": "˦",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "4",
+      "add": "˥",
+      "remove": 1
+    },
+    {
+      "before": "꜒",
+      "typed": "0",
+      "add": "꜒"
+    },
+    {
+      "before": "꜓",
+      "typed": "0",
+      "add": "꜒"
+    },
+    {
+      "before": "꜔",
+      "typed": "0",
+      "add": "꜒"
+    },
+    {
+      "before": "꜕",
+      "typed": "0",
+      "add": "꜒"
+    },
+    {
+      "before": "꜖",
+      "typed": "0",
+      "add": "꜒"
+    },
+    {
+      "before": "꜒",
+      "typed": "1",
+      "add": "꜓"
+    },
+    {
+      "before": "꜓",
+      "typed": "1",
+      "add": "꜓"
+    },
+    {
+      "before": "꜔",
+      "typed": "1",
+      "add": "꜓"
+    },
+    {
+      "before": "꜕",
+      "typed": "1",
+      "add": "꜓"
+    },
+    {
+      "before": "꜖",
+      "typed": "1",
+      "add": "꜓"
+    },
+    {
+      "before": "꜒",
+      "typed": "2",
+      "add": "꜔"
+    },
+    {
+      "before": "꜓",
+      "typed": "2",
+      "add": "꜔"
+    },
+    {
+      "before": "꜔",
+      "typed": "2",
+      "add": "꜔"
+    },
+    {
+      "before": "꜕",
+      "typed": "2",
+      "add": "꜔"
+    },
+    {
+      "before": "꜖",
+      "typed": "2",
+      "add": "꜔"
+    },
+    {
+      "before": "꜒",
+      "typed": "3",
+      "add": "꜕"
+    },
+    {
+      "before": "꜓",
+      "typed": "3",
+      "add": "꜕"
+    },
+    {
+      "before": "꜔",
+      "typed": "3",
+      "add": "꜕"
+    },
+    {
+      "before": "꜕",
+      "typed": "3",
+      "add": "꜕"
+    },
+    {
+      "before": "꜖",
+      "typed": "3",
+      "add": "꜕"
+    },
+    {
+      "before": "꜒",
+      "typed": "4",
+      "add": "꜖"
+    },
+    {
+      "before": "꜓",
+      "typed": "4",
+      "add": "꜖"
+    },
+    {
+      "before": "꜔",
+      "typed": "4",
+      "add": "꜖"
+    },
+    {
+      "before": "꜕",
+      "typed": "4",
+      "add": "꜖"
+    },
+    {
+      "before": "꜖",
+      "typed": "4",
+      "add": "꜖"
+    },
+    {
+      "before": "&",
+      "typed": "0",
+      "add": "꜒",
+      "remove": 1
+    },
+    {
+      "before": "&",
+      "typed": "1",
+      "add": "꜓",
+      "remove": 1
+    },
+    {
+      "before": "&",
+      "typed": "2",
+      "add": "꜔",
+      "remove": 1
+    },
+    {
+      "before": "&",
+      "typed": "3",
+      "add": "꜕",
+      "remove": 1
+    },
+    {
+      "before": "&",
+      "typed": "4",
+      "add": "꜖",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "&",
+      "add": "\u0361",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "ǃ",
+      "add": "ꜞ",
+      "remove": 1
+    },
+    {
+      "before": "##",
+      "typed": "ǃ",
+      "add": "ꜟ",
+      "remove": 2
+    },
+    {
+      "before": "\u030A",
+      "typed": "&",
+      "add": "\u035C",
+      "remove": 1
+    },
+    {
+      "before": "ː",
+      "typed": "ː",
+      "add": "ˑ",
+      "remove": 1
+    },
+    {
+      "before": "ˑ",
+      "typed": "ː",
+      "add": "ːː",
+      "remove": 1
+    },
+    {
+      "before": "[",
+      "typed": "[",
+      "add": "ʽ",
+      "remove": 1
+    },
+    {
+      "before": "ʽ",
+      "typed": "[",
+      "add": "˞",
+      "remove": 1
+    },
+    {
+      "before": "˞",
+      "typed": "[",
+      "add": ""
+    },
+    {
+      "before": "]",
+      "typed": "]",
+      "add": "ʼ",
+      "remove": 1
+    },
+    {
+      "before": "ʼ",
+      "typed": "]",
+      "add": "\u031A",
+      "remove": 1
+    },
+    {
+      "before": "\u031A",
+      "typed": "]",
+      "add": "ʻ",
+      "remove": 1
+    },
+    {
+      "before": "ˈ",
+      "typed": "ˈ",
+      "add": "ˌ",
+      "remove": 1
+    },
+    {
+      "before": "ˌ",
+      "typed": "ˈ",
+      "add": "\u0348",
+      "remove": 1
+    },
+    {
+      "before": "\u0348",
+      "typed": "ˈ",
+      "add": "\u1DC2",
+      "remove": 1
+    },
+    {
+      "before": "\u030A",
+      "typed": "0",
+      "add": "\u030F",
+      "remove": 1
+    },
+    {
+      "before": "\u030F",
+      "typed": "0",
+      "add": ""
+    },
+    {
+      "before": "\u030F",
+      "typed": "4",
+      "add": "\u030C",
+      "remove": 1
+    },
+    {
+      "before": "\u030A",
+      "typed": "1",
+      "add": "\u0300",
+      "remove": 1
+    },
+    {
+      "before": "\u0300",
+      "typed": "1",
+      "add": ""
+    },
+    {
+      "before": "\u0300",
+      "typed": "2",
+      "add": "\u1DC5",
+      "remove": 1
+    },
+    {
+      "before": "\u0300",
+      "typed": "3",
+      "add": "\u030C",
+      "remove": 1
+    },
+    {
+      "before": "\u0301",
+      "typed": "2",
+      "add": "\u1DC7",
+      "remove": 1
+    },
+    {
+      "before": "\u030C",
+      "typed": "1",
+      "add": "\u1DC8",
+      "remove": 1
+    },
+    {
+      "before": "\u030A",
+      "typed": "2",
+      "add": "\u0304",
+      "remove": 1
+    },
+    {
+      "before": "\u0304",
+      "typed": "2",
+      "add": ""
+    },
+    {
+      "before": "\u0304",
+      "typed": "3",
+      "add": "\u1DC4",
+      "remove": 1
+    },
+    {
+      "before": "\u0304",
+      "typed": "1",
+      "add": "\u1DC6",
+      "remove": 1
+    },
+    {
+      "before": "\u030A",
+      "typed": "3",
+      "add": "\u0301",
+      "remove": 1
+    },
+    {
+      "before": "\u0301",
+      "typed": "3",
+      "add": ""
+    },
+    {
+      "before": "\u0301",
+      "typed": "1",
+      "add": "\u0302",
+      "remove": 1
+    },
+    {
+      "before": "\u0302",
+      "typed": "3",
+      "add": "\u1DC9",
+      "remove": 1
+    },
+    {
+      "before": "\u030A",
+      "typed": "4",
+      "add": "\u030B",
+      "remove": 1
+    },
+    {
+      "before": "\u030B",
+      "typed": "4",
+      "add": ""
+    },
+    {
+      "before": "\u030B",
+      "typed": "0",
+      "add": "\u0302",
+      "remove": 1
+    },
+    {
+      "before": "\u031F",
+      "typed": "\u031F",
+      "add": "\u031D",
+      "remove": 1
+    },
+    {
+      "before": "\u031D",
+      "typed": "\u031F",
+      "add": "\u0318",
+      "remove": 1
+    },
+    {
+      "before": "\u0318",
+      "typed": "\u031F",
+      "add": "\u0339",
+      "remove": 1
+    },
+    {
+      "before": "\u0339",
+      "typed": "\u031F",
+      "add": "\u031F",
+      "remove": 1
+    },
+    {
+      "before": "\u0320",
+      "typed": "\u0320",
+      "add": "\u031E",
+      "remove": 1
+    },
+    {
+      "before": "\u031E",
+      "typed": "\u0320",
+      "add": "\u0319",
+      "remove": 1
+    },
+    {
+      "before": "\u0319",
+      "typed": "\u0320",
+      "add": "\u031C",
+      "remove": 1
+    },
+    {
+      "before": "c",
+      "typed": "\u0320",
+      "add": "ç",
+      "remove": 1
+    },
+    {
+      "before": "\u031C",
+      "typed": "\u0320",
+      "add": "\u0327",
+      "remove": 1
+    },
+    {
+      "before": "\u0327",
+      "typed": "\u0320",
+      "add": "\u0320",
+      "remove": 1
+    },
+    {
+      "before": "B",
+      "typed": "=",
+      "add": "ʙ",
+      "remove": 1
+    },
+    {
+      "before": "E",
+      "typed": "=",
+      "add": "ɘ",
+      "remove": 1
+    },
+    {
+      "before": "G",
+      "typed": "=",
+      "add": "ɢ",
+      "remove": 1
+    },
+    {
+      "before": "H",
+      "typed": "=",
+      "add": "ʜ",
+      "remove": 1
+    },
+    {
+      "before": "I",
+      "typed": "=",
+      "add": "ɨ",
+      "remove": 1
+    },
+    {
+      "before": "L",
+      "typed": "=",
+      "add": "ʟ",
+      "remove": 1
+    },
+    {
+      "before": "N",
+      "typed": "=",
+      "add": "ɴ",
+      "remove": 1
+    },
+    {
+      "before": "O",
+      "typed": "=",
+      "add": "ɵ",
+      "remove": 1
+    },
+    {
+      "before": "Q",
+      "typed": "=",
+      "add": "ʡ",
+      "remove": 1
+    },
+    {
+      "before": "R",
+      "typed": "=",
+      "add": "ʀ",
+      "remove": 1
+    },
+    {
+      "before": "S",
+      "typed": "=",
+      "add": "ᶘ",
+      "remove": 1
+    },
+    {
+      "before": "U",
+      "typed": "=",
+      "add": "ʉ",
+      "remove": 1
+    },
+    {
+      "before": "Z",
+      "typed": "=",
+      "add": "ᶚ",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "=",
+      "add": "‿",
+      "remove": 1
+    },
+    {
+      "before": "?",
+      "typed": "=",
+      "add": "ʔ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "=",
+      "add": "‖",
+      "remove": 1
+    },
+    {
+      "before": "ǃ",
+      "typed": "=",
+      "add": "ǂ",
+      "remove": 1
+    },
+    {
+      "before": "a",
+      "typed": "=",
+      "add": "ɑ",
+      "remove": 1
+    },
+    {
+      "before": "b",
+      "typed": "=",
+      "add": "β",
+      "remove": 1
+    },
+    {
+      "before": "c",
+      "typed": "=",
+      "add": "ç",
+      "remove": 1
+    },
+    {
+      "before": "d",
+      "typed": "=",
+      "add": "ð",
+      "remove": 1
+    },
+    {
+      "before": "e",
+      "typed": "=",
+      "add": "ə",
+      "remove": 1
+    },
+    {
+      "before": "f",
+      "typed": "=",
+      "add": "ɸ",
+      "remove": 1
+    },
+    {
+      "before": "g",
+      "typed": "=",
+      "add": "ɣ",
+      "remove": 1
+    },
+    {
+      "before": "h",
+      "typed": "=",
+      "add": "ɥ",
+      "remove": 1
+    },
+    {
+      "before": "i",
+      "typed": "=",
+      "add": "ɪ",
+      "remove": 1
+    },
+    {
+      "before": "j",
+      "typed": "=",
+      "add": "ɟ",
+      "remove": 1
+    },
+    {
+      "before": "l",
+      "typed": "=",
+      "add": "ɬ",
+      "remove": 1
+    },
+    {
+      "before": "n",
+      "typed": "=",
+      "add": "ɲ",
+      "remove": 1
+    },
+    {
+      "before": "o",
+      "typed": "=",
+      "add": "ɒ",
+      "remove": 1
+    },
+    {
+      "before": "p",
+      "typed": "=",
+      "add": "ʘ",
+      "remove": 1
+    },
+    {
+      "before": "r",
+      "typed": "=",
+      "add": "ɹ",
+      "remove": 1
+    },
+    {
+      "before": "s",
+      "typed": "=",
+      "add": "ʃ",
+      "remove": 1
+    },
+    {
+      "before": "t",
+      "typed": "=",
+      "add": "θ",
+      "remove": 1
+    },
+    {
+      "before": "u",
+      "typed": "=",
+      "add": "ɯ",
+      "remove": 1
+    },
+    {
+      "before": "v",
+      "typed": "=",
+      "add": "ʋ",
+      "remove": 1
+    },
+    {
+      "before": "w",
+      "typed": "=",
+      "add": "ʍ",
+      "remove": 1
+    },
+    {
+      "before": "x",
+      "typed": "=",
+      "add": "χ",
+      "remove": 1
+    },
+    {
+      "before": "y",
+      "typed": "=",
+      "add": "ʏ",
+      "remove": 1
+    },
+    {
+      "before": "z",
+      "typed": "=",
+      "add": "ʒ",
+      "remove": 1
+    },
+    {
+      "before": "‿",
+      "typed": "=",
+      "add": ""
+    },
+    {
+      "before": "\u031F",
+      "typed": "=",
+      "add": "+",
+      "remove": 1
+    },
+    {
+      "before": "0",
+      "typed": "=",
+      "add": "∅",
+      "remove": 1
+    },
+    {
+      "before": "A",
+      "typed": ">",
+      "add": "ᴂ",
+      "remove": 1
+    },
+    {
+      "before": "E",
+      "typed": ">",
+      "add": "ɶ",
+      "remove": 1
+    },
+    {
+      "before": "G",
+      "typed": ">",
+      "add": "ʛ",
+      "remove": 1
+    },
+    {
+      "before": "H",
+      "typed": ">",
+      "add": "ɧ",
+      "remove": 1
+    },
+    {
+      "before": "I",
+      "typed": ">",
+      "add": "ᵼ",
+      "remove": 1
+    },
+    {
+      "before": "L",
+      "typed": ">",
+      "add": "ɺ",
+      "remove": 1
+    },
+    {
+      "before": "O",
+      "typed": ">",
+      "add": "ɤ",
+      "remove": 1
+    },
+    {
+      "before": "R",
+      "typed": ">",
+      "add": "ʁ",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": ">",
+      "add": "ꜛ",
+      "remove": 1
+    },
+    {
+      "before": "=",
+      "typed": ">",
+      "add": "→",
+      "remove": 1
+    },
+    {
+      "before": "ǃ",
+      "typed": ">",
+      "add": "ǁ",
+      "remove": 1
+    },
+    {
+      "before": "a",
+      "typed": ">",
+      "add": "ɐ",
+      "remove": 1
+    },
+    {
+      "before": "b",
+      "typed": ">",
+      "add": "ɓ",
+      "remove": 1
+    },
+    {
+      "before": "c",
+      "typed": ">",
+      "add": "ƈ",
+      "remove": 1
+    },
+    {
+      "before": "d",
+      "typed": ">",
+      "add": "ɗ",
+      "remove": 1
+    },
+    {
+      "before": "e",
+      "typed": ">",
+      "add": "ɜ",
+      "remove": 1
+    },
+    {
+      "before": "g",
+      "typed": ">",
+      "add": "ɠ",
+      "remove": 1
+    },
+    {
+      "before": "h",
+      "typed": ">",
+      "add": "ħ",
+      "remove": 1
+    },
+    {
+      "before": "j",
+      "typed": ">",
+      "add": "ʄ",
+      "remove": 1
+    },
+    {
+      "before": "k",
+      "typed": ">",
+      "add": "ƙ",
+      "remove": 1
+    },
+    {
+      "before": "l",
+      "typed": ">",
+      "add": "ɮ",
+      "remove": 1
+    },
+    {
+      "before": "m",
+      "typed": ">",
+      "add": "ɱ",
+      "remove": 1
+    },
+    {
+      "before": "n",
+      "typed": ">",
+      "add": "ŋ",
+      "remove": 1
+    },
+    {
+      "before": "o",
+      "typed": ">",
+      "add": "ø",
+      "remove": 1
+    },
+    {
+      "before": "p",
+      "typed": ">",
+      "add": "ƥ",
+      "remove": 1
+    },
+    {
+      "before": "q",
+      "typed": ">",
+      "add": "ʠ",
+      "remove": 1
+    },
+    {
+      "before": "r",
+      "typed": ">",
+      "add": "ɾ",
+      "remove": 1
+    },
+    {
+      "before": "s",
+      "typed": ">",
+      "add": "σ",
+      "remove": 1
+    },
+    {
+      "before": "t",
+      "typed": ">",
+      "add": "ƭ",
+      "remove": 1
+    },
+    {
+      "before": "u",
+      "typed": ">",
+      "add": "ʌ",
+      "remove": 1
+    },
+    {
+      "before": "w",
+      "typed": ">",
+      "add": "ɰ",
+      "remove": 1
+    },
+    {
+      "before": "U",
+      "typed": ">",
+      "add": "ᵾ",
+      "remove": 1
+    },
+    {
+      "before": "z",
+      "typed": ">",
+      "add": "ʑ",
+      "remove": 1
+    },
+    {
+      "before": "ꜛ",
+      "typed": ">",
+      "add": "↗",
+      "remove": 1
+    },
+    {
+      "before": "0",
+      "typed": ">",
+      "add": "◌",
+      "remove": 1
+    },
+    {
+      "before": "E",
+      "typed": "<",
+      "add": "œ",
+      "remove": 1
+    },
+    {
+      "before": "I",
+      "typed": "<",
+      "add": "ᵻ",
+      "remove": 1
+    },
+    {
+      "before": "L",
+      "typed": "<",
+      "add": "ʎ",
+      "remove": 1
+    },
+    {
+      "before": "O",
+      "typed": "<",
+      "add": "ɞ",
+      "remove": 1
+    },
+    {
+      "before": "Q",
+      "typed": "<",
+      "add": "ʢ",
+      "remove": 1
+    },
+    {
+      "before": "R",
+      "typed": "<",
+      "add": "ɻ",
+      "remove": 1
+    },
+    {
+      "before": "?",
+      "typed": "<",
+      "add": "ʕ",
+      "remove": 1
+    },
+    {
+      "before": ".",
+      "typed": "<",
+      "add": "|",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "<",
+      "add": "ꜜ",
+      "remove": 1
+    },
+    {
+      "before": "ǃ",
+      "typed": "<",
+      "add": "ǀ",
+      "remove": 1
+    },
+    {
+      "before": "a",
+      "typed": "<",
+      "add": "æ",
+      "remove": 1
+    },
+    {
+      "before": "c",
+      "typed": "<",
+      "add": "ɕ",
+      "remove": 1
+    },
+    {
+      "before": "d",
+      "typed": "<",
+      "add": "ɖ",
+      "remove": 1
+    },
+    {
+      "before": "e",
+      "typed": "<",
+      "add": "ɛ",
+      "remove": 1
+    },
+    {
+      "before": "g",
+      "typed": "<",
+      "add": "ɡ",
+      "remove": 1
+    },
+    {
+      "before": "h",
+      "typed": "<",
+      "add": "ɦ",
+      "remove": 1
+    },
+    {
+      "before": "j",
+      "typed": "<",
+      "add": "ʝ",
+      "remove": 1
+    },
+    {
+      "before": "l",
+      "typed": "<",
+      "add": "ɭ",
+      "remove": 1
+    },
+    {
+      "before": "n",
+      "typed": "<",
+      "add": "ɳ",
+      "remove": 1
+    },
+    {
+      "before": "o",
+      "typed": "<",
+      "add": "ɔ",
+      "remove": 1
+    },
+    {
+      "before": "r",
+      "typed": "<",
+      "add": "ɽ",
+      "remove": 1
+    },
+    {
+      "before": "s",
+      "typed": "<",
+      "add": "ʂ",
+      "remove": 1
+    },
+    {
+      "before": "t",
+      "typed": "<",
+      "add": "ʈ",
+      "remove": 1
+    },
+    {
+      "before": "u",
+      "typed": "<",
+      "add": "ʊ",
+      "remove": 1
+    },
+    {
+      "before": "v",
+      "typed": "<",
+      "add": "ⱱ",
+      "remove": 1
+    },
+    {
+      "before": "w",
+      "typed": "<",
+      "add": "ⱳ",
+      "remove": 1
+    },
+    {
+      "before": "y",
+      "typed": "<",
+      "add": "ɥ",
+      "remove": 1
+    },
+    {
+      "before": "z",
+      "typed": "<",
+      "add": "ʐ",
+      "remove": 1
+    },
+    {
+      "before": "ꜜ",
+      "typed": "<",
+      "add": "↘",
+      "remove": 1
+    },
+    {
+      "before": "=",
+      "typed": "<",
+      "add": "\u034F",
+      "remove": 1
+    },
+    {
+      "before": "0",
+      "typed": "^",
+      "add": "⁰",
+      "remove": 1
+    },
+    {
+      "before": "1",
+      "typed": "^",
+      "add": "¹",
+      "remove": 1
+    },
+    {
+      "before": "2",
+      "typed": "^",
+      "add": "²",
+      "remove": 1
+    },
+    {
+      "before": "3",
+      "typed": "^",
+      "add": "³",
+      "remove": 1
+    },
+    {
+      "before": "4",
+      "typed": "^",
+      "add": "⁴",
+      "remove": 1
+    },
+    {
+      "before": "5",
+      "typed": "^",
+      "add": "⁵",
+      "remove": 1
+    },
+    {
+      "before": "6",
+      "typed": "^",
+      "add": "⁶",
+      "remove": 1
+    },
+    {
+      "before": "7",
+      "typed": "^",
+      "add": "⁷",
+      "remove": 1
+    },
+    {
+      "before": "8",
+      "typed": "^",
+      "add": "⁸",
+      "remove": 1
+    },
+    {
+      "before": "9",
+      "typed": "^",
+      "add": "⁹",
+      "remove": 1
+    },
+    {
+      "before": "-",
+      "typed": "^",
+      "add": "⁻",
+      "remove": 1
+    },
+    {
+      "before": "(",
+      "typed": "^",
+      "add": "⁽",
+      "remove": 1
+    },
+    {
+      "before": ")",
+      "typed": "^",
+      "add": "⁾",
+      "remove": 1
+    },
+    {
+      "before": "+",
+      "typed": "^",
+      "add": "⁺",
+      "remove": 1
+    },
+    {
+      "before": "=",
+      "typed": "^",
+      "add": "⁼",
+      "remove": 1
+    },
+    {
+      "before": "a",
+      "typed": "^",
+      "add": "ᵃ",
+      "remove": 1
+    },
+    {
+      "before": "æ",
+      "typed": "^",
+      "add": "𐞃",
+      "remove": 1
+    },
+    {
+      "before": "ᴂ",
+      "typed": "^",
+      "add": "ᵆ",
+      "remove": 1
+    },
+    {
+      "before": "ɐ",
+      "typed": "^",
+      "add": "ᵄ",
+      "remove": 1
+    },
+    {
+      "before": "ɑ",
+      "typed": "^",
+      "add": "ᵅ",
+      "remove": 1
+    },
+    {
+      "before": "ɒ",
+      "typed": "^",
+      "add": "ᶛ",
+      "remove": 1
+    },
+    {
+      "before": "b",
+      "typed": "^",
+      "add": "ᵇ",
+      "remove": 1
+    },
+    {
+      "before": "ʙ",
+      "typed": "^",
+      "add": "𐞄",
+      "remove": 1
+    },
+    {
+      "before": "ɓ",
+      "typed": "^",
+      "add": "𐞅",
+      "remove": 1
+    },
+    {
+      "before": "c",
+      "typed": "^",
+      "add": "ᶜ",
+      "remove": 1
+    },
+    {
+      "before": "ɕ",
+      "typed": "^",
+      "add": "ᶝ",
+      "remove": 1
+    },
+    {
+      "before": "d",
+      "typed": "^",
+      "add": "ᵈ",
+      "remove": 1
+    },
+    {
+      "before": "ð",
+      "typed": "^",
+      "add": "ᶞ",
+      "remove": 1
+    },
+    {
+      "before": "ɖ",
+      "typed": "^",
+      "add": "𐞋",
+      "remove": 1
+    },
+    {
+      "before": "ɗ",
+      "typed": "^",
+      "add": "𐞌",
+      "remove": 1
+    },
+    {
+      "before": "e",
+      "typed": "^",
+      "add": "ᵉ",
+      "remove": 1
+    },
+    {
+      "before": "ə",
+      "typed": "^",
+      "add": "ᵊ",
+      "remove": 1
+    },
+    {
+      "before": "ɛ",
+      "typed": "^",
+      "add": "ᵋ",
+      "remove": 1
+    },
+    {
+      "before": "ɘ",
+      "typed": "^",
+      "add": "𐞎",
+      "remove": 1
+    },
+    {
+      "before": "ɜ",
+      "typed": "^",
+      "add": "ᶟ",
+      "remove": 1
+    },
+    {
+      "before": "ɞ",
+      "typed": "^",
+      "add": "𐞏",
+      "remove": 1
+    },
+    {
+      "before": "ɤ",
+      "typed": "^",
+      "add": "𐞑",
+      "remove": 1
+    },
+    {
+      "before": "f",
+      "typed": "^",
+      "add": "ᶠ",
+      "remove": 1
+    },
+    {
+      "before": "g",
+      "typed": "^",
+      "add": "ᵍ",
+      "remove": 1
+    },
+    {
+      "before": "ɡ",
+      "typed": "^",
+      "add": "ᶢ",
+      "remove": 1
+    },
+    {
+      "before": "ɢ",
+      "typed": "^",
+      "add": "𐞒",
+      "remove": 1
+    },
+    {
+      "before": "ɠ",
+      "typed": "^",
+      "add": "𐞓",
+      "remove": 1
+    },
+    {
+      "before": "ʛ",
+      "typed": "^",
+      "add": "𐞔",
+      "remove": 1
+    },
+    {
+      "before": "ɣ",
+      "typed": "^",
+      "add": "ˠ",
+      "remove": 1
+    },
+    {
+      "before": "h",
+      "typed": "^",
+      "add": "ʰ",
+      "remove": 1
+    },
+    {
+      "before": "ħ",
+      "typed": "^",
+      "add": "𐞕",
+      "remove": 1
+    },
+    {
+      "before": "ʜ",
+      "typed": "^",
+      "add": "𐞖",
+      "remove": 1
+    },
+    {
+      "before": "ɦ",
+      "typed": "^",
+      "add": "ʱ",
+      "remove": 1
+    },
+    {
+      "before": "ɧ",
+      "typed": "^",
+      "add": "𐞗",
+      "remove": 1
+    },
+    {
+      "before": "i",
+      "typed": "^",
+      "add": "ⁱ",
+      "remove": 1
+    },
+    {
+      "before": "ɪ",
+      "typed": "^",
+      "add": "ᶦ",
+      "remove": 1
+    },
+    {
+      "before": "ɨ",
+      "typed": "^",
+      "add": "ᶤ",
+      "remove": 1
+    },
+    {
+      "before": "ᵻ",
+      "typed": "^",
+      "add": "ᶧ",
+      "remove": 1
+    },
+    {
+      "before": "ɩ",
+      "typed": "^",
+      "add": "ᶥ",
+      "remove": 1
+    },
+    {
+      "before": "j",
+      "typed": "^",
+      "add": "ʲ",
+      "remove": 1
+    },
+    {
+      "before": "ʝ",
+      "typed": "^",
+      "add": "ᶨ",
+      "remove": 1
+    },
+    {
+      "before": "ɟ",
+      "typed": "^",
+      "add": "ᶡ",
+      "remove": 1
+    },
+    {
+      "before": "ʄ",
+      "typed": "^",
+      "add": "𐞘",
+      "remove": 1
+    },
+    {
+      "before": "k",
+      "typed": "^",
+      "add": "ᵏ",
+      "remove": 1
+    },
+    {
+      "before": "l",
+      "typed": "^",
+      "add": "ˡ",
+      "remove": 1
+    },
+    {
+      "before": "ʟ",
+      "typed": "^",
+      "add": "ᶫ",
+      "remove": 1
+    },
+    {
+      "before": "ɬ",
+      "typed": "^",
+      "add": "𐞛",
+      "remove": 1
+    },
+    {
+      "before": "ɭ",
+      "typed": "^",
+      "add": "ᶩ",
+      "remove": 1
+    },
+    {
+      "before": "ɮ",
+      "typed": "^",
+      "add": "𐞞",
+      "remove": 1
+    },
+    {
+      "before": "ʎ",
+      "typed": "^",
+      "add": "𐞠",
+      "remove": 1
+    },
+    {
+      "before": "m",
+      "typed": "^",
+      "add": "ᵐ",
+      "remove": 1
+    },
+    {
+      "before": "ɱ",
+      "typed": "^",
+      "add": "ᶬ",
+      "remove": 1
+    },
+    {
+      "before": "n",
+      "typed": "^",
+      "add": "ⁿ",
+      "remove": 1
+    },
+    {
+      "before": "ɴ",
+      "typed": "^",
+      "add": "ᶰ",
+      "remove": 1
+    },
+    {
+      "before": "ɲ",
+      "typed": "^",
+      "add": "ᶮ",
+      "remove": 1
+    },
+    {
+      "before": "ɳ",
+      "typed": "^",
+      "add": "ᶯ",
+      "remove": 1
+    },
+    {
+      "before": "ŋ",
+      "typed": "^",
+      "add": "ᵑ",
+      "remove": 1
+    },
+    {
+      "before": "o",
+      "typed": "^",
+      "add": "ᵒ",
+      "remove": 1
+    },
+    {
+      "before": "ø",
+      "typed": "^",
+      "add": "𐞢",
+      "remove": 1
+    },
+    {
+      "before": "œ",
+      "typed": "^",
+      "add": "ꟹ",
+      "remove": 1
+    },
+    {
+      "before": "ɶ",
+      "typed": "^",
+      "add": "𐞣",
+      "remove": 1
+    },
+    {
+      "before": "ɔ",
+      "typed": "^",
+      "add": "ᵓ",
+      "remove": 1
+    },
+    {
+      "before": "ɵ",
+      "typed": "^",
+      "add": "ᶱ",
+      "remove": 1
+    },
+    {
+      "before": "ɷ",
+      "typed": "^",
+      "add": "𐞤",
+      "remove": 1
+    },
+    {
+      "before": "p",
+      "typed": "^",
+      "add": "ᵖ",
+      "remove": 1
+    },
+    {
+      "before": "ɸ",
+      "typed": "^",
+      "add": "ᶲ",
+      "remove": 1
+    },
+    {
+      "before": "q",
+      "typed": "^",
+      "add": "𐞥",
+      "remove": 1
+    },
+    {
+      "before": "r",
+      "typed": "^",
+      "add": "ʳ",
+      "remove": 1
+    },
+    {
+      "before": "ʀ",
+      "typed": "^",
+      "add": "𐞪",
+      "remove": 1
+    },
+    {
+      "before": "ɹ",
+      "typed": "^",
+      "add": "ʴ",
+      "remove": 1
+    },
+    {
+      "before": "ɺ",
+      "typed": "^",
+      "add": "𐞦",
+      "remove": 1
+    },
+    {
+      "before": "ɻ",
+      "typed": "^",
+      "add": "ʵ",
+      "remove": 1
+    },
+    {
+      "before": "ɽ",
+      "typed": "^",
+      "add": "𐞨",
+      "remove": 1
+    },
+    {
+      "before": "ɾ",
+      "typed": "^",
+      "add": "𐞩",
+      "remove": 1
+    },
+    {
+      "before": "ʁ",
+      "typed": "^",
+      "add": "ʶ",
+      "remove": 1
+    },
+    {
+      "before": "s",
+      "typed": "^",
+      "add": "ˢ",
+      "remove": 1
+    },
+    {
+      "before": "ʂ",
+      "typed": "^",
+      "add": "ᶳ",
+      "remove": 1
+    },
+    {
+      "before": "ʃ",
+      "typed": "^",
+      "add": "ᶴ",
+      "remove": 1
+    },
+    {
+      "before": "t",
+      "typed": "^",
+      "add": "ᵗ",
+      "remove": 1
+    },
+    {
+      "before": "ʈ",
+      "typed": "^",
+      "add": "𐞯",
+      "remove": 1
+    },
+    {
+      "before": "u",
+      "typed": "^",
+      "add": "ᵘ",
+      "remove": 1
+    },
+    {
+      "before": "ʉ",
+      "typed": "^",
+      "add": "ᶶ",
+      "remove": 1
+    },
+    {
+      "before": "ɥ",
+      "typed": "^",
+      "add": "ᶣ",
+      "remove": 1
+    },
+    {
+      "before": "ɯ",
+      "typed": "^",
+      "add": "ᵚ",
+      "remove": 1
+    },
+    {
+      "before": "ɰ",
+      "typed": "^",
+      "add": "ᶭ",
+      "remove": 1
+    },
+    {
+      "before": "ʊ",
+      "typed": "^",
+      "add": "ᶷ",
+      "remove": 1
+    },
+    {
+      "before": "v",
+      "typed": "^",
+      "add": "ᵛ",
+      "remove": 1
+    },
+    {
+      "before": "ʋ",
+      "typed": "^",
+      "add": "ᶹ",
+      "remove": 1
+    },
+    {
+      "before": "ʌ",
+      "typed": "^",
+      "add": "ᶺ",
+      "remove": 1
+    },
+    {
+      "before": "w",
+      "typed": "^",
+      "add": "ʷ",
+      "remove": 1
+    },
+    {
+      "before": "ʍ",
+      "typed": "^",
+      "add": "ꭩ",
+      "remove": 1
+    },
+    {
+      "before": "x",
+      "typed": "^",
+      "add": "ˣ",
+      "remove": 1
+    },
+    {
+      "before": "y",
+      "typed": "^",
+      "add": "ʸ",
+      "remove": 1
+    },
+    {
+      "before": "ʏ",
+      "typed": "^",
+      "add": "𐞲",
+      "remove": 1
+    },
+    {
+      "before": "z",
+      "typed": "^",
+      "add": "ᶻ",
+      "remove": 1
+    },
+    {
+      "before": "ʐ",
+      "typed": "^",
+      "add": "ᶼ",
+      "remove": 1
+    },
+    {
+      "before": "ʑ",
+      "typed": "^",
+      "add": "ᶽ",
+      "remove": 1
+    },
+    {
+      "before": "ʒ",
+      "typed": "^",
+      "add": "ᶾ",
+      "remove": 1
+    },
+    {
+      "before": "ʔ",
+      "typed": "^",
+      "add": "ˀ",
+      "remove": 1
+    },
+    {
+      "before": "ʕ",
+      "typed": "^",
+      "add": "ˤ",
+      "remove": 1
+    },
+    {
+      "before": "ʡ",
+      "typed": "^",
+      "add": "𐞳",
+      "remove": 1
+    },
+    {
+      "before": "ʢ",
+      "typed": "^",
+      "add": "𐞴",
+      "remove": 1
+    },
+    {
+      "before": "ǀ",
+      "typed": "^",
+      "add": "𐞶",
+      "remove": 1
+    },
+    {
+      "before": "ǁ",
+      "typed": "^",
+      "add": "𐞷",
+      "remove": 1
+    },
+    {
+      "before": "ǂ",
+      "typed": "^",
+      "add": "𐞸",
+      "remove": 1
+    },
+    {
+      "before": "ǃ",
+      "typed": "^",
+      "add": "ꜝ",
+      "remove": 1
+    },
+    {
+      "before": "ʘ",
+      "typed": "^",
+      "add": "𐞵",
+      "remove": 1
+    },
+    {
+      "before": "β",
+      "typed": "^",
+      "add": "ᵝ",
+      "remove": 1
+    },
+    {
+      "before": "θ",
+      "typed": "^",
+      "add": "ᶿ",
+      "remove": 1
+    },
+    {
+      "before": "χ",
+      "typed": "^",
+      "add": "ᵡ",
+      "remove": 1
+    },
+    {
+      "before": "A",
+      "typed": "|",
+      "add": "ᴀ",
+      "remove": 1
+    },
+    {
+      "before": "E",
+      "typed": "|",
+      "add": "ᴇ",
+      "remove": 1
+    },
+    {
+      "before": "T",
+      "typed": "|",
+      "add": "ʇ",
+      "remove": 1
+    },
+    {
+      "before": "Y",
+      "typed": "|",
+      "add": "ʯ",
+      "remove": 1
+    },
+    {
+      "before": "Z",
+      "typed": "|",
+      "add": "ʅ",
+      "remove": 1
+    },
+    {
+      "before": "a",
+      "typed": "|",
+      "add": "α",
+      "remove": 1
+    },
+    {
+      "before": "d",
+      "typed": "|",
+      "add": "ȡ",
+      "remove": 1
+    },
+    {
+      "before": "e",
+      "typed": "|",
+      "add": "ʚ",
+      "remove": 1
+    },
+    {
+      "before": "h",
+      "typed": "|",
+      "add": "ђ",
+      "remove": 1
+    },
+    {
+      "before": "i",
+      "typed": "|",
+      "add": "ɩ",
+      "remove": 1
+    },
+    {
+      "before": "l",
+      "typed": "|",
+      "add": "ȴ",
+      "remove": 1
+    },
+    {
+      "before": "n",
+      "typed": "|",
+      "add": "ȵ",
+      "remove": 1
+    },
+    {
+      "before": "t",
+      "typed": "|",
+      "add": "ȶ",
+      "remove": 1
+    },
+    {
+      "before": "u",
+      "typed": "|",
+      "add": "ɷ",
+      "remove": 1
+    },
+    {
+      "before": "y",
+      "typed": "|",
+      "add": "ʮ",
+      "remove": 1
+    },
+    {
+      "before": "z",
+      "typed": "|",
+      "add": "ɿ",
+      "remove": 1
+    },
+    {
+      "before": "0",
+      "typed": "\u0320",
+      "add": "₀",
+      "remove": 1
+    },
+    {
+      "before": "1",
+      "typed": "\u0320",
+      "add": "₁",
+      "remove": 1
+    },
+    {
+      "before": "2",
+      "typed": "\u0320",
+      "add": "₂",
+      "remove": 1
+    },
+    {
+      "before": "3",
+      "typed": "\u0320",
+      "add": "₃",
+      "remove": 1
+    },
+    {
+      "before": "4",
+      "typed": "\u0320",
+      "add": "₄",
+      "remove": 1
+    },
+    {
+      "before": "5",
+      "typed": "\u0320",
+      "add": "₅",
+      "remove": 1
+    },
+    {
+      "before": "6",
+      "typed": "\u0320",
+      "add": "₆",
+      "remove": 1
+    },
+    {
+      "before": "7",
+      "typed": "\u0320",
+      "add": "₇",
+      "remove": 1
+    },
+    {
+      "before": "8",
+      "typed": "\u0320",
+      "add": "₈",
+      "remove": 1
+    },
+    {
+      "before": "9",
+      "typed": "\u0320",
+      "add": "₉",
+      "remove": 1
+    },
+    {
+      "before": "₀",
+      "typed": "\u0320",
+      "add": "0\u0320",
+      "remove": 1
+    },
+    {
+      "before": "₁",
+      "typed": "\u0320",
+      "add": "1\u0320",
+      "remove": 1
+    },
+    {
+      "before": "₂",
+      "typed": "\u0320",
+      "add": "2\u0320",
+      "remove": 1
+    },
+    {
+      "before": "₃",
+      "typed": "\u0320",
+      "add": "3\u0320",
+      "remove": 1
+    },
+    {
+      "before": "₄",
+      "typed": "\u0320",
+      "add": "4\u0320",
+      "remove": 1
+    },
+    {
+      "before": "₅",
+      "typed": "\u0320",
+      "add": "5\u0320",
+      "remove": 1
+    },
+    {
+      "before": "₆",
+      "typed": "\u0320",
+      "add": "6\u0320",
+      "remove": 1
+    },
+    {
+      "before": "₇",
+      "typed": "\u0320",
+      "add": "7\u0320",
+      "remove": 1
+    },
+    {
+      "before": "₈",
+      "typed": "\u0320",
+      "add": "8\u0320",
+      "remove": 1
+    },
+    {
+      "before": "₉",
+      "typed": "\u0320",
+      "add": "9\u0320",
+      "remove": 1
+    },
+    {
+      "before": "˩",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "˩",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "˩",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "˩",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "˩",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "˨",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "˨",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "˨",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "˨",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "˨",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "˧",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "˧",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "˧",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "˧",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "˧",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "˦",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "˦",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "˦",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "˦",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "˦",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "˥",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "˥",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "˥",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "˥",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "˥",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "ꜜ",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "ꜜ",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "ꜜ",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "ꜜ",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "ꜜ",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "ꜛ",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "ꜛ",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "ꜛ",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "ꜛ",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "ꜛ",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "↗",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "↗",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "↗",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "↗",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "↗",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "↘",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "↘",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "↘",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "↘",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "↘",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "ː",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "ː",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "ː",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "ː",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "ː",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "ˑ",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "ˑ",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "ˑ",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "ˑ",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "ˑ",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "ⁿ",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "ⁿ",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "ⁿ",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "ⁿ",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "ⁿ",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "˞",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "˞",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "˞",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "˞",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "˞",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "ʼ",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "ʼ",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "ʼ",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "ʼ",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "ʼ",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "\u031A",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "\u031A",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "\u031A",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "\u031A",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "\u031A",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "[",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "[",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "[",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "[",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "[",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "\\",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "\\",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "\\",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "\\",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "\\",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "]",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "]",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "]",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "]",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "]",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "ˈ",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "ˈ",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "ˈ",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "ˈ",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "ˈ",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "ˌ",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "ˌ",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "ˌ",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "ˌ",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "ˌ",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "\u035C",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "\u035C",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "\u035C",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "\u035C",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "\u035C",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "\u0361",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "\u0361",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "\u0361",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "\u0361",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "\u0361",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "‿",
+      "typed": "\u031F",
+      "add": ""
+    },
+    {
+      "before": "‿",
+      "typed": "\u0320",
+      "add": ""
+    },
+    {
+      "before": "‿",
+      "typed": "\u0325",
+      "add": ""
+    },
+    {
+      "before": "‿",
+      "typed": "\u0329",
+      "add": ""
+    },
+    {
+      "before": "‿",
+      "typed": "\u032A",
+      "add": ""
+    },
+    {
+      "before": "˩",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "˩",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "˩",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "˨",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "˨",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "˨",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "˧",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "˧",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "˧",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "˦",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "˦",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "˦",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "˥",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "˥",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "˥",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "ꜜ",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "ꜜ",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "ꜜ",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "ꜛ",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "ꜛ",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "ꜛ",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "↗",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "↗",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "↗",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "↘",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "↘",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "↘",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "ː",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "ː",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "ː",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "ˑ",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "ˑ",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "ˑ",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "ⁿ",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "ⁿ",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "ⁿ",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "˞",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "˞",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "˞",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "ʼ",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "ʼ",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "ʼ",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u031A",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "\u031A",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "\u031A",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "[",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "[",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "[",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\\",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "\\",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "\\",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "]",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "]",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "]",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "ˈ",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "ˈ",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "ˈ",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "ˌ",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "ˌ",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "ˌ",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u035C",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "\u035C",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "\u035C",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u0361",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "\u0361",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "\u0361",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "‿",
+      "typed": "\u0303",
+      "add": ""
+    },
+    {
+      "before": "‿",
+      "typed": "\u0308",
+      "add": ""
+    },
+    {
+      "before": "‿",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u030F",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u030C",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u0300",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u0304",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u0301",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u0302",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u030B",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u1DC4",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u1DC6",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u1DC8",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u1DC9",
+      "typed": "\u030A",
+      "add": ""
+    },
+    {
+      "before": "\u030A",
+      "typed": "\u030A",
+      "add": "\u030D",
+      "remove": 1
+    }
+  ],
+  "longpress": {
+    "Backquote": ["\u0303"],
+    "Digit1": ["ǃ"],
+    "Digit2": ["\u030A"],
+    "Digit4": ["\u0329"],
+    "Digit5": ["\u0325"],
+    "Digit8": ["\u0308"],
+    "Minus": ["\u0320"],
+    "Equal": ["\u031F"],
+    "BracketLeft": ["\u032A"],
+    "BracketRight": ["ˈ"],
+    "Semicolon": ["ː"]
+  }
+}

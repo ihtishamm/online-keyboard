@@ -29,6 +29,7 @@ export type FontId =
   | "cherokee"
   | "canadian-aboriginal"
   | "ol-chiki"
+  | "ipa"
   | "hangul"
   | "cjk-sc"
   | "cjk-tc"
@@ -41,7 +42,11 @@ export type FontId =
  */
 export type Tier = "A" | "B" | "C" | null;
 
-/** Regions for browsing languages, in display order. */
+/**
+ * Regions for browsing languages, in display order. `special` holds keyboards for a notation
+ * rather than a language (IPA, Quranic Arabic, Arabic romanisation, pinyin tone marks): they
+ * are not counted as languages and earn no tier.
+ */
 export const REGIONS = {
   "south-asia": "South Asia",
   "middle-east": "Middle East and North Africa",
@@ -52,8 +57,13 @@ export const REGIONS = {
   "southeast-asia": "Southeast Asia",
   americas: "The Americas",
   oceania: "Oceania",
+  special: "Special keyboards",
 } as const;
 export type Region = keyof typeof REGIONS;
+
+/** A keyboard for a notation (IPA, pinyin tone marks), not a language: see REGIONS. */
+export const isSpecialKeyboard = (language: { region: Region }): boolean =>
+  language.region === "special";
 
 /**
  * Codes the translation sites use for the language, set only where the service's own list
@@ -80,7 +90,7 @@ export interface LanguageFile {
   name: { en: string; native: string };
   /** Other English names people search for (Persian for Farsi, Bengali for Bangla). */
   aliases: readonly string[];
-  /** Where most speakers live, for browsing by region. */
+  /** Where most speakers live, for browsing by region; `special` for a notation's keyboard. */
   region: Region;
   /** Fonts offered in the editor; the first is the default. */
   fonts: readonly FontId[];

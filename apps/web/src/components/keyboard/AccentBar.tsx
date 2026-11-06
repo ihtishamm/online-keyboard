@@ -1,8 +1,13 @@
 import type { PointerEvent } from "react";
 
 export interface AccentBarProps {
-  /** The language's special letters (lower case, then capitals) and its own punctuation. */
+  /**
+   * The language's special letters (lower case, then capitals) and its own punctuation, or
+   * the marks of a script (Quranic Arabic's tashkeel).
+   */
   accents: string;
+  /** The editor's font class, so marks and letters look as they will in the text. */
+  fontClass?: string;
   /** Shift or Caps Lock is on: offer the capitals. */
   upper: boolean;
   lang: string;
@@ -14,6 +19,35 @@ export interface AccentBarProps {
 }
 
 const keepFocus = (e: PointerEvent) => e.preventDefault();
+
+/** Names screen readers lack for the marks letter bars offer (Quranic Arabic's). */
+const MARK_NAMES: Readonly<Record<string, string>> = {
+  "\u064E": "fatha",
+  "\u064B": "fathatan",
+  "\u064F": "damma",
+  "\u064C": "dammatan",
+  "\u0650": "kasra",
+  "\u064D": "kasratan",
+  "\u0652": "sukun",
+  "\u0651": "shadda",
+  "\u0670": "dagger alif",
+  "\u0653": "maddah",
+  "\u06E1": "Quranic sukun",
+  "\u06E2": "small meem",
+  "\u06E5": "small waw",
+  "\u06E6": "small yeh",
+  "\u06D6": "pause sign sala",
+  "\u06D7": "pause sign qala",
+  "\u06D8": "pause sign meem",
+  "\u06D9": "pause sign la",
+  "\u06DA": "pause sign jeem",
+  "\u06DB": "pause sign three dots",
+  "\u06DC": "small high seen",
+};
+
+/** A screen reader's name for a lone mark, or its code point. */
+const markName = (c: string) =>
+  MARK_NAMES[c] ?? `U+${c.codePointAt(0)!.toString(16).toUpperCase().padStart(4, "0")}`;
 
 const KEY =
   "flex min-h-11 min-w-10 shrink-0 items-center justify-center rounded-lg bg-surface px-2 text-lg text-text shadow-sm hover:bg-key-pressed sm:min-h-9";
@@ -36,7 +70,9 @@ export default function AccentBar(props: AccentBarProps) {
   };
   // Capitals whose small letter is on every keyboard (Turkish İ, from i) join the capitals.
   const extra = chars.filter((c) => !lower.includes(c) && !lower.map(upperOf).includes(c));
-  const shown = props.upper ? [...new Set([...lower.map(upperOf), ...extra])] : lower;
+  // IPA has no capitals: Shift leaves its bar as it is.
+  const cased = chars.some((c) => c !== c.toLowerCase());
+  const shown = props.upper && cased ? [...new Set([...lower.map(upperOf), ...extra])] : lower;
   const toggle = (on: boolean) =>
     `${TOGGLE} ${on ? "border-accent bg-accent-soft text-text" : "border-border text-muted"}`;
 
@@ -54,9 +90,11 @@ export default function AccentBar(props: AccentBarProps) {
           lang={props.lang}
           onPointerDown={keepFocus}
           onClick={() => props.onPick(c)}
-          className={KEY}
+          className={`${KEY} ${props.fontClass ?? ""}`}
+          aria-label={/^\p{M}/u.test(c) ? markName(c) : undefined}
         >
-          {c}
+          {/* A mark alone has nothing to sit on: show it on a dotted circle. */}
+          {/^\p{M}/u.test(c) ? `\u25CC${c}` : c}
         </button>
       ))}
       <span aria-hidden="true" className="mx-1 h-6 w-px shrink-0 bg-border" />

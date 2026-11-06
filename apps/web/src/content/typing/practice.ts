@@ -8,7 +8,14 @@ import {
 import { decodeDictionary } from "@okb/engine/compact";
 import { romanizeWord } from "@okb/engine/romanize";
 import { isBlocked, readBlocklist } from "@okb/dictionaries/blocked";
-import { LANGUAGES, getLayout, getScheme, type Language, isRomanLayout } from "@okb/layouts";
+import {
+  LANGUAGES,
+  getLayout,
+  getScheme,
+  isRomanLayout,
+  isSpecialKeyboard,
+  type Language,
+} from "@okb/layouts";
 import { typeable } from "../../components/typing/drill";
 import { ROMAN_TABLES } from "../../components/tools/roman-tables";
 
@@ -79,10 +86,16 @@ const keyLayouts = (l: Language): Layout[] =>
 /**
  * Languages with generated typing pages: every one with a key layout, but Urdu, and Hindko
  * and Bodo, which have no open text to practise on (Hindko: 4 Wiktionary entries, checked
- * 2026-11-04; Bodo: no Wikipedia or Tatoeba, checked 2026-11-07).
+ * 2026-11-04; Bodo: no Wikipedia or Tatoeba, checked 2026-11-07). Special keyboards (IPA,
+ * pinyin tone marks) are tools for a notation, not languages to practise.
  */
 export const TYPING_LANGUAGES: readonly Language[] = LANGUAGES.filter(
-  (l) => l.slug !== "urdu" && l.code !== "hno" && l.code !== "brx" && keyLayouts(l).length > 0,
+  (l) =>
+    l.slug !== "urdu" &&
+    l.code !== "hno" &&
+    l.code !== "brx" &&
+    !isSpecialKeyboard(l) &&
+    keyLayouts(l).length > 0,
 );
 
 const sentenceRows = (l: Language): [string, string][] =>

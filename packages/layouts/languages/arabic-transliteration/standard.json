@@ -1,0 +1,490 @@
+{
+  "id": "arl-standard",
+  "lang": "ar-Latn",
+  "script": "Latn",
+  "dir": "ltr",
+  "name": {
+    "en": "Romanisation",
+    "native": "Romanisation"
+  },
+  "source": "Ours: US QWERTY with DIN 31635 letters. = after a letter adds its mark (h= ḥ, a= ā), a second = its other form (h== ḫ, s== š, t== ṯ, d== ḏ, g== ǧ); ` types ʿ and Shift+` ʾ. AltGr types the marked letters at once, and AltGr+[ ] the ALA-LC ʻ ʼ.",
+  "keys": {
+    "Backquote": {
+      "n": "ʿ",
+      "s": "ʾ",
+      "ag": "`",
+      "sag": "~"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "!"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "@"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "#"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "$"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "%"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "^"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "&"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "*"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+"
+    },
+    "KeyQ": {
+      "n": "q",
+      "s": "Q",
+      "caps": "shift"
+    },
+    "KeyW": {
+      "n": "w",
+      "s": "W",
+      "caps": "shift"
+    },
+    "KeyE": {
+      "n": "e",
+      "s": "E",
+      "caps": "shift",
+      "ag": "ē",
+      "sag": "Ē"
+    },
+    "KeyR": {
+      "n": "r",
+      "s": "R",
+      "caps": "shift"
+    },
+    "KeyT": {
+      "n": "t",
+      "s": "T",
+      "caps": "shift",
+      "ag": "ṭ",
+      "sag": "Ṭ"
+    },
+    "KeyY": {
+      "n": "y",
+      "s": "Y",
+      "caps": "shift"
+    },
+    "KeyU": {
+      "n": "u",
+      "s": "U",
+      "caps": "shift",
+      "ag": "ū",
+      "sag": "Ū"
+    },
+    "KeyI": {
+      "n": "i",
+      "s": "I",
+      "caps": "shift",
+      "ag": "ī",
+      "sag": "Ī"
+    },
+    "KeyO": {
+      "n": "o",
+      "s": "O",
+      "caps": "shift",
+      "ag": "ō",
+      "sag": "Ō"
+    },
+    "KeyP": {
+      "n": "p",
+      "s": "P",
+      "caps": "shift"
+    },
+    "BracketLeft": {
+      "n": "[",
+      "s": "{",
+      "ag": "ʻ"
+    },
+    "BracketRight": {
+      "n": "]",
+      "s": "}",
+      "ag": "ʼ"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyA": {
+      "n": "a",
+      "s": "A",
+      "caps": "shift",
+      "ag": "ā",
+      "sag": "Ā"
+    },
+    "KeyS": {
+      "n": "s",
+      "s": "S",
+      "caps": "shift",
+      "ag": "ṣ",
+      "sag": "Ṣ"
+    },
+    "KeyD": {
+      "n": "d",
+      "s": "D",
+      "caps": "shift",
+      "ag": "ḍ",
+      "sag": "Ḍ"
+    },
+    "KeyF": {
+      "n": "f",
+      "s": "F",
+      "caps": "shift"
+    },
+    "KeyG": {
+      "n": "g",
+      "s": "G",
+      "caps": "shift",
+      "ag": "ġ",
+      "sag": "Ġ"
+    },
+    "KeyH": {
+      "n": "h",
+      "s": "H",
+      "caps": "shift",
+      "ag": "ḥ",
+      "sag": "Ḥ"
+    },
+    "KeyJ": {
+      "n": "j",
+      "s": "J",
+      "caps": "shift",
+      "ag": "ǧ",
+      "sag": "Ǧ"
+    },
+    "KeyK": {
+      "n": "k",
+      "s": "K",
+      "caps": "shift"
+    },
+    "KeyL": {
+      "n": "l",
+      "s": "L",
+      "caps": "shift"
+    },
+    "Semicolon": {
+      "n": ";",
+      "s": ":"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "KeyZ": {
+      "n": "z",
+      "s": "Z",
+      "caps": "shift",
+      "ag": "ẓ",
+      "sag": "Ẓ"
+    },
+    "KeyX": {
+      "n": "x",
+      "s": "X",
+      "caps": "shift"
+    },
+    "KeyC": {
+      "n": "c",
+      "s": "C",
+      "caps": "shift"
+    },
+    "KeyV": {
+      "n": "v",
+      "s": "V",
+      "caps": "shift"
+    },
+    "KeyB": {
+      "n": "b",
+      "s": "B",
+      "caps": "shift"
+    },
+    "KeyN": {
+      "n": "n",
+      "s": "N",
+      "caps": "shift"
+    },
+    "KeyM": {
+      "n": "m",
+      "s": "M",
+      "caps": "shift"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "<"
+    },
+    "Period": {
+      "n": ".",
+      "s": ">"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "?"
+    }
+  },
+  "rules": [
+    {
+      "before": "a",
+      "typed": "=",
+      "add": "ā",
+      "remove": 1
+    },
+    {
+      "before": "i",
+      "typed": "=",
+      "add": "ī",
+      "remove": 1
+    },
+    {
+      "before": "u",
+      "typed": "=",
+      "add": "ū",
+      "remove": 1
+    },
+    {
+      "before": "e",
+      "typed": "=",
+      "add": "ē",
+      "remove": 1
+    },
+    {
+      "before": "o",
+      "typed": "=",
+      "add": "ō",
+      "remove": 1
+    },
+    {
+      "before": "h",
+      "typed": "=",
+      "add": "ḥ",
+      "remove": 1
+    },
+    {
+      "before": "ḥ",
+      "typed": "=",
+      "add": "ḫ",
+      "remove": 1
+    },
+    {
+      "before": "s",
+      "typed": "=",
+      "add": "ṣ",
+      "remove": 1
+    },
+    {
+      "before": "ṣ",
+      "typed": "=",
+      "add": "š",
+      "remove": 1
+    },
+    {
+      "before": "d",
+      "typed": "=",
+      "add": "ḍ",
+      "remove": 1
+    },
+    {
+      "before": "ḍ",
+      "typed": "=",
+      "add": "ḏ",
+      "remove": 1
+    },
+    {
+      "before": "t",
+      "typed": "=",
+      "add": "ṭ",
+      "remove": 1
+    },
+    {
+      "before": "ṭ",
+      "typed": "=",
+      "add": "ṯ",
+      "remove": 1
+    },
+    {
+      "before": "z",
+      "typed": "=",
+      "add": "ẓ",
+      "remove": 1
+    },
+    {
+      "before": "ẓ",
+      "typed": "=",
+      "add": "ž",
+      "remove": 1
+    },
+    {
+      "before": "g",
+      "typed": "=",
+      "add": "ġ",
+      "remove": 1
+    },
+    {
+      "before": "ġ",
+      "typed": "=",
+      "add": "ǧ",
+      "remove": 1
+    },
+    {
+      "before": "j",
+      "typed": "=",
+      "add": "ǧ",
+      "remove": 1
+    },
+    {
+      "before": "A",
+      "typed": "=",
+      "add": "Ā",
+      "remove": 1
+    },
+    {
+      "before": "I",
+      "typed": "=",
+      "add": "Ī",
+      "remove": 1
+    },
+    {
+      "before": "U",
+      "typed": "=",
+      "add": "Ū",
+      "remove": 1
+    },
+    {
+      "before": "E",
+      "typed": "=",
+      "add": "Ē",
+      "remove": 1
+    },
+    {
+      "before": "O",
+      "typed": "=",
+      "add": "Ō",
+      "remove": 1
+    },
+    {
+      "before": "H",
+      "typed": "=",
+      "add": "Ḥ",
+      "remove": 1
+    },
+    {
+      "before": "Ḥ",
+      "typed": "=",
+      "add": "Ḫ",
+      "remove": 1
+    },
+    {
+      "before": "S",
+      "typed": "=",
+      "add": "Ṣ",
+      "remove": 1
+    },
+    {
+      "before": "Ṣ",
+      "typed": "=",
+      "add": "Š",
+      "remove": 1
+    },
+    {
+      "before": "D",
+      "typed": "=",
+      "add": "Ḍ",
+      "remove": 1
+    },
+    {
+      "before": "Ḍ",
+      "typed": "=",
+      "add": "Ḏ",
+      "remove": 1
+    },
+    {
+      "before": "T",
+      "typed": "=",
+      "add": "Ṭ",
+      "remove": 1
+    },
+    {
+      "before": "Ṭ",
+      "typed": "=",
+      "add": "Ṯ",
+      "remove": 1
+    },
+    {
+      "before": "Z",
+      "typed": "=",
+      "add": "Ẓ",
+      "remove": 1
+    },
+    {
+      "before": "Ẓ",
+      "typed": "=",
+      "add": "Ž",
+      "remove": 1
+    },
+    {
+      "before": "G",
+      "typed": "=",
+      "add": "Ġ",
+      "remove": 1
+    },
+    {
+      "before": "Ġ",
+      "typed": "=",
+      "add": "Ǧ",
+      "remove": 1
+    },
+    {
+      "before": "J",
+      "typed": "=",
+      "add": "Ǧ",
+      "remove": 1
+    }
+  ],
+  "longpress": {
+    "Backquote": ["ʾ"],
+    "KeyE": ["ē", "Ē"],
+    "KeyT": ["ṭ", "ṯ", "Ṭ"],
+    "KeyU": ["ū", "Ū"],
+    "KeyI": ["ī", "Ī"],
+    "KeyO": ["ō", "Ō"],
+    "BracketLeft": ["ʻ"],
+    "BracketRight": ["ʼ"],
+    "KeyA": ["ā", "Ā"],
+    "KeyS": ["ṣ", "š", "Ṣ"],
+    "KeyD": ["ḍ", "ḏ", "Ḍ"],
+    "KeyG": ["ġ", "ǧ", "Ġ"],
+    "KeyH": ["ḥ", "ḫ", "Ḥ"],
+    "KeyJ": ["ǧ", "Ǧ"],
+    "KeyZ": ["ẓ", "ž", "Ẓ"]
+  }
+}

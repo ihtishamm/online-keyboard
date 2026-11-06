@@ -584,6 +584,84 @@ const WAVE4_SCRIPTS: readonly ImportSpec[] = [
   },
 ];
 
+/** Arabic 101 on phones: three rows of 11, 11 and 10 letters, as Arabic phone keyboards. */
+const ARABIC_PHONE_ROWS: KeyCode[][] = [
+  ["KeyQ", "KeyW", "KeyE", "KeyR", "KeyT", "KeyY", "KeyU", "KeyI", "KeyO", "KeyP", "BracketLeft"],
+  ["KeyA", "KeyS", "KeyD", "KeyF", "KeyG", "KeyH", "KeyJ", "KeyK", "KeyL", "Semicolon", "Quote"],
+  ["Backquote", "KeyX", "KeyC", "KeyV", "KeyN", "KeyM", "Comma", "Period", "Slash", "BracketRight"],
+];
+
+/** Special keyboards (plan 9c, Batch 4): tools for a notation, not a language's own layout. */
+const SPECIAL_IMPORTS: readonly ImportSpec[] = [
+  {
+    out: "quranic-arabic/standard.json",
+    from: { cldr: "cldr/ar-t-k0-windows.xml" },
+    meta: {
+      id: "qur-standard",
+      lang: "ar",
+      script: "Arab",
+      dir: "rtl",
+      name: { en: "Arabic 101 with Quranic marks", native: "قياسي مع علامات المصحف" },
+      source: `Windows "Arabic (101)", from ${CLDR_NOTE}, with the Quranic marks added by us on AltGr. AltGr on a key gives the Quranic form of the mark on its Shift (AltGr+Q the dagger alif \u0670, AltGr+X the Quranic sukun \u06E1, AltGr+W, R and S the open tanwin), AltGr+H types ٱ, the number row the pause marks, ۞, ﴿ ﴾, \u06DD and ۩, and Shift+AltGr the Arabic-Indic digits.`,
+      mobile: { rows: ARABIC_PHONE_ROWS, longpress: { KeyX: ["ئ"], KeyG: ["لا", "لآ"] } },
+    },
+    patch: (keys) => {
+      const marks: [KeyCode, string, string?][] = [
+        // The Quranic form of the mark on Shift: fatha, fathatan, damma, dammatan, kasra,
+        // kasratan, sukun.
+        ["KeyQ", "\u0670"],
+        ["KeyW", "\u08F0"],
+        ["KeyE", "\u0657"],
+        ["KeyR", "\u08F1"],
+        ["KeyA", "\u0656"],
+        ["KeyS", "\u08F2", "\u06E3"],
+        ["KeyX", "\u06E1"],
+        // Alef wasla on alef, hamza marks beside the letters with hamza.
+        ["KeyH", "\u0671", "\u0654"],
+        ["KeyY", "\u0655"],
+        ["KeyN", "\u0653", "\u06E4"],
+        // Small letters on their own letter: waw, yeh, noon, meem.
+        ["Comma", "\u06E5"],
+        ["KeyD", "\u06E6", "\u06E7"],
+        ["KeyK", "\u06E8"],
+        ["KeyL", "\u06E2", "\u06ED"],
+        // Pause marks, then the section, verse and prostration signs.
+        ["Digit1", "\u06D6"],
+        ["Digit2", "\u06D7"],
+        ["Digit3", "\u06D8"],
+        ["Digit4", "\u06D9"],
+        ["Digit5", "\u06DA"],
+        ["Digit6", "\u06DB"],
+        ["Digit7", "\u06DC"],
+        ["Digit8", "\u06DE"],
+        ["Digit9", "\uFD3F"],
+        ["Digit0", "\uFD3E"],
+        // The two zeros (letter not read) on O.
+        ["KeyO", "\u06DF", "\u06E0"],
+        ["Minus", "\u06DD"],
+        ["Equal", "\u06E9"],
+      ];
+      for (const [code, ag, sag] of marks) set(keys, code, sag ? { ag, sag } : { ag });
+      // Arabic-Indic digits for verse numbers (\u06DD١٢): Windows' Arabic 101 types 0–9 only.
+      for (let d = 0; d <= 9; d++)
+        set(keys, `Digit${d}` as KeyCode, { sag: String.fromCodePoint(0x0660 + d) });
+    },
+  },
+  {
+    out: "ipa/sil.json",
+    from: { keyman: "keyman/sil_ipa/sil_ipa.kmn", contextRules: true, usDefaults: true },
+    meta: {
+      id: "ipa-sil",
+      lang: "und-fonipa",
+      script: "Latn",
+      dir: "ltr",
+      name: { en: "IPA (SIL)", native: "IPA" },
+      source:
+        "Keyman IPA (SIL) 2.0.2 by SIL Global (MIT): type a letter, then = < > or ^ to change it (n> ŋ, e< ɛ, h^ ʰ); @ then a digit for tones. Its option mode (RAlt+-, symbol first) and touch-only keys are left out.",
+    },
+  },
+];
+
 const WAVE1_IMPORTS: readonly ImportSpec[] = [
   ...WAVE1.map(([code, folder, accents, native]) =>
     latin({
@@ -642,46 +720,7 @@ export const IMPORTS: readonly ImportSpec[] = [
       source: `Windows "Arabic (101)", from ${CLDR_NOTE}. Phone rows are ours, in the order Arabic phone keyboards use.`,
       // Phones: three rows of 11, 11 and 10 letters; ئ sits on ء, and لا and لآ on ل.
       mobile: {
-        rows: [
-          [
-            "KeyQ",
-            "KeyW",
-            "KeyE",
-            "KeyR",
-            "KeyT",
-            "KeyY",
-            "KeyU",
-            "KeyI",
-            "KeyO",
-            "KeyP",
-            "BracketLeft",
-          ],
-          [
-            "KeyA",
-            "KeyS",
-            "KeyD",
-            "KeyF",
-            "KeyG",
-            "KeyH",
-            "KeyJ",
-            "KeyK",
-            "KeyL",
-            "Semicolon",
-            "Quote",
-          ],
-          [
-            "Backquote",
-            "KeyX",
-            "KeyC",
-            "KeyV",
-            "KeyN",
-            "KeyM",
-            "Comma",
-            "Period",
-            "Slash",
-            "BracketRight",
-          ],
-        ],
+        rows: ARABIC_PHONE_ROWS,
         longpress: { KeyX: ["ئ"], KeyG: ["لا", "لآ"] },
       },
     },
@@ -999,6 +1038,7 @@ export const IMPORTS: readonly ImportSpec[] = [
   ...WAVE1_IMPORTS,
   ...WAVE4_IMPORTS,
   ...WAVE4_SCRIPTS,
+  ...SPECIAL_IMPORTS,
   {
     out: "tamil/tamil99.json",
     from: {

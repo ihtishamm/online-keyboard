@@ -20,6 +20,8 @@
  *   any(cons) + any(keys) > index(cons, 1) index(signs, 2)
  *   any(cons) "\u094D" + "a" > index(cons, 1)
  *   $keyman: if(opt = '0') "न्" + "k" > "ङ्क्"  (option at its default value; others skipped)
+ *   if(option_key = '') any(d) + "=" > index(u, 2)  (the default is the store's first value)
+ *   any(marks) + any(keys) > context beep         (the key types nothing there)
  * Anything else (other context, a dead key with no spacing form, chained dead keys) is
  * reported as a warning, never imported wrongly. The space bar is never mapped.
  */
@@ -165,7 +167,8 @@ function storeKeys(items: Item[], options: KeymanOptions): (KeyRef | null)[] {
 const CONTEXT_ITEM = /any\s*\(\s*([^\s(),]+)\s*\)|[Uu]\+([0-9A-Fa-f]{4,6})|"([^"]*)"|'([^']*)'/g;
 const CONTEXT_PART = `(?:any\\s*\\(\\s*[^\\s(),]+\\s*\\)|[Uu]\\+[0-9A-Fa-f]{4,6}|"[^"]*"|'[^']*')`;
 const CONTEXT_RULE = new RegExp(
-  `^(${CONTEXT_PART}(?:\\s*${CONTEXT_PART})*)\\s*\\+\\s*(.+?)\\s*>\\s*(.+)$`,
+  // A quoted key is one token, so `+ ">" > …` does not end at the > inside the quotes.
+  `^(${CONTEXT_PART}(?:\\s*${CONTEXT_PART})*)\\s*\\+\\s*("[^"]*"|'[^']*'|.+?)\\s*>\\s*(.+)$`,
 );
 
 /** A context rule waiting for its key's character, which later rules may still define. */
@@ -222,19 +225,21 @@ function expandContextRule(
         return null;
       }
       let out = "";
+      // `beep` only sounds a bell: `context beep` leaves the text as it is.
       const re =
-        /\s*(?:(context)|index\s*\(\s*([^\s(),]+)\s*,\s*(\d+)\s*\)|[Uu]\+([0-9A-Fa-f]{4,6})|"([^"]*)"|'([^']*)')/y;
-      for (let pos = 0; pos < rhs.length; pos = re.lastIndex) {
+        /\s*(?:(context)|(beep)|index\s*\(\s*([^\s(),]+)\s*,\s*(\d+)\s*\)|[Uu]\+([0-9A-Fa-f]{4,6})|"([^"]*)"|'([^']*)')/y;
+      for (let pos = 0; pos < rhs.trimEnd().length; pos = re.lastIndex) {
         re.lastIndex = pos;
         const m = re.exec(rhs);
         if (!m) return null;
+        if (m[2]) continue;
         if (m[1]) out += before;
-        else if (m[4]) out += String.fromCodePoint(parseInt(m[4], 16));
-        else if (m[5] !== undefined || m[6] !== undefined) out += m[5] ?? m[6];
+        else if (m[5]) out += String.fromCodePoint(parseInt(m[5], 16));
+        else if (m[6] !== undefined || m[7] !== undefined) out += m[6] ?? m[7];
         else {
-          const at = Number(m[3]);
+          const at = Number(m[4]);
           const i = at === anys[0]?.at ? c : at === keyAt && keyStore ? k : -1;
-          const item = stores.get(m[2]!)?.[i];
+          const item = stores.get(m[3]!)?.[i];
           if (!item || !("char" in item)) return null;
           out += item.char;
         }
@@ -271,31 +276,41 @@ export function importKeyman(source: string, options: KeymanOptions = {}): Keyma
 
   const lines: { lineNo: number; line: string }[] = [];
   let open: { lineNo: number; line: string } | null = null;
-  source
-    .replace(/^\uFEFF/, "")
-    .split(/\r?\n/)
-    .forEach((raw, idx) => {
-      // Strip trailing comments (`c ...`) that are outside quotes.
-      let text = raw.replace(/(^|\s)c\s.*$|(^|\s)c$/, "").trim();
-      if (options.contextRules && /^\$keymanweb:/.test(text)) return;
-      if (options.contextRules) text = text.replace(/^\$keymanonly:\s*/, "");
-      const option = options.contextRules
-        ? /^\$keyman:\s*if\(\s*(\w+)\s*=\s*'([^']*)'\s*\)\s*(.*)$/.exec(text)
-        : null;
-      if (option) {
-        const [, opt = "", value = "", rest = ""] = option;
-        if (value === "0") text = rest;
-        else {
-          warnings.push(`line ${idx + 1}: rule for option ${opt}=${value}, skipped: ${rest}`);
-          return;
-        }
+  const sourceLines = source.replace(/^\uFEFF/, "").split(/\r?\n/);
+  // An option's default is the value its store starts with (`store(opt) ''`), else '0'.
+  const optionDefaults = new Map<string, string>();
+  for (const raw of sourceLines) {
+    const m = /^\s*store\s*\(\s*(\w+)\s*\)\s*(?:'([^']*)'|"([^"]*)")\s*(?:c\s.*)?$/.exec(raw);
+    if (m) optionDefaults.set(m[1]!, m[2] ?? m[3] ?? "");
+  }
+  sourceLines.forEach((raw, idx) => {
+    // Strip trailing comments (`c ...`) that are outside quotes.
+    let text = raw.replace(/(^|\s)c\s.*$|(^|\s)c$/, "").trim();
+    if (options.contextRules && /^\$keymanweb:/.test(text)) return;
+    if (options.contextRules) text = text.replace(/^\$keymanonly:\s*/, "");
+    const option = options.contextRules
+      ? /^(?:\$keyman:\s*)?if\(\s*(\w+)\s*=\s*(?:'([^']*)'|"([^"]*)")\s*\)\s*(.*)$/.exec(text)
+      : null;
+    if (option) {
+      const [, opt = "", single, double, rest = ""] = option;
+      const value = single ?? double ?? "";
+      // The if() is item 1 of the context, so index() positions after it are one higher.
+      if (value === (optionDefaults.get(opt) ?? "0"))
+        text = rest.replace(
+          /index\s*\(\s*([^\s(),]+)\s*,\s*(\d+)\s*\)/g,
+          (_, store: string, at: string) => `index(${store}, ${Number(at) - 1})`,
+        );
+      else {
+        warnings.push(`line ${idx + 1}: rule for option ${opt}=${value}, skipped: ${rest}`);
+        return;
       }
-      const more = text.endsWith("\\"); // a backslash continues the line
-      const part = more ? text.slice(0, -1).trim() : text;
-      if (open) open.line += " " + part;
-      else lines.push((open = { lineNo: idx + 1, line: part }));
-      if (!more) open = null;
-    });
+    }
+    const more = text.endsWith("\\"); // a backslash continues the line
+    const part = more ? text.slice(0, -1).trim() : text;
+    if (open) open.line += " " + part;
+    else lines.push((open = { lineNo: idx + 1, line: part }));
+    if (!more) open = null;
+  });
 
   for (const { line } of lines) {
     const store = /^store\s*\(\s*([^)\s]+)\s*\)\s*(.*)$/i.exec(line);

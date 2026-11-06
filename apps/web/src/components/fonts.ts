@@ -17,12 +17,13 @@ export const FONT_CLASS: Record<FontId, string> = {
   thaana: "font-thaana",
   hebrew: "font-hebrew",
   armenian: "font-armenian",
-  "ethiopic": "font-ethiopic",
-  "tibetan": "font-tibetan",
-  "syriac": "font-syriac",
-  "cherokee": "font-cherokee",
+  ethiopic: "font-ethiopic",
+  tibetan: "font-tibetan",
+  syriac: "font-syriac",
+  cherokee: "font-cherokee",
   "canadian-aboriginal": "font-canadian-aboriginal",
   "ol-chiki": "font-ol-chiki",
+  ipa: "font-ipa",
   georgian: "font-georgian",
   thai: "font-thai",
   lao: "font-lao",
@@ -34,3 +35,9 @@ export const FONT_CLASS: Record<FontId, string> = {
   "cjk-jp": "font-cjk-jp",
   latin: "font-latin",
 };
+
+/**
+ * The class for a language's name in a list of many languages. The IPA font is ours and covers
+ * IPA only, and "IPA" needs no font of its own: lists use Inter, so they never fetch it.
+ */
+export const nameFontClass = (font: FontId): string => FONT_CLASS[font === "ipa" ? "latin" : font];

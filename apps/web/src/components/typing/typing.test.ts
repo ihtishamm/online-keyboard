@@ -8,7 +8,7 @@ import {
 } from "@okb/engine";
 import { decodeDictionary } from "@okb/engine/compact";
 import { readFileSync } from "node:fs";
-import { LANGUAGES, getLayout, getScheme } from "@okb/layouts";
+import { LANGUAGES, getLayout, getScheme, isSpecialKeyboard } from "@okb/layouts";
 import { describe, expect, it } from "vitest";
 import { TYPING_COPY } from "../../content/typing/copy";
 import {
@@ -201,7 +201,8 @@ describe("generated typing pages", () => {
     const slugs = TYPING_LANGUAGES.map((l) => l.slug);
     // Japanese, both Chinese, Amharic and Tigrinya: what is typed (romaji, pinyin, GFF's
     // consonant then vowel) is not what is shown. Yiddish: Pasekh rewrites letters as you type.
-    expect(slugs).toHaveLength(LANGUAGES.length - 9);
+    // Special keyboards (IPA, pinyin tone marks) are not languages to practise.
+    expect(slugs).toHaveLength(LANGUAGES.filter((l) => !isSpecialKeyboard(l)).length - 9);
     expect(slugs).not.toContain("urdu");
     expect(slugs).not.toContain("hindko");
     expect(slugs).not.toContain("bodo");

@@ -8,7 +8,7 @@ const FONTS = [
   ...["nastaliq", "naskh", "devanagari", "bengali", "gurmukhi", "gujarati", "oriya", "tamil"],
   ...["telugu", "kannada", "malayalam", "sinhala", "thaana", "latin"],
   ...["hebrew", "armenian", "georgian", "thai", "lao", "khmer", "myanmar"],
-  ...["ethiopic", "tibetan", "syriac", "cherokee", "canadian-aboriginal", "ol-chiki"],
+  ...["ethiopic", "tibetan", "syriac", "cherokee", "canadian-aboriginal", "ol-chiki", "ipa"],
   ...["hangul", "cjk-sc", "cjk-tc", "cjk-jp"],
 ];
 
@@ -64,8 +64,8 @@ describe("language registry (languages/<slug>/)", () => {
         // By the language's rules: Turkish ı and İ pair with the plain I and i.
         const lower = c.toLocaleLowerCase(l.lang);
         const other = c === lower ? c.toLocaleUpperCase(l.lang) : lower;
-        // ß has no single capital in use (SS), and is fine alone.
-        if (!/^[a-z]+$/i.test(other) && [...other].length === 1)
+        // ß has no single capital in use (SS), and is fine alone. IPA has no capitals at all.
+        if (l.slug !== "ipa" && !/^[a-z]+$/i.test(other) && [...other].length === 1)
           expect(letters, `${c} in the other case`).toContain(other);
       }
       for (const c of l.accents!) {

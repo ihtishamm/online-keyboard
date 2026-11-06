@@ -25,7 +25,8 @@ const FAMILIES: Readonly<Record<string, { dir: string; files: RegExp; local?: tr
     ]),
   ),
   "Inter Variable": { dir: "@fontsource-variable/inter", files: /-wght-normal\.woff2$/ },
-  "Spacing Accents": { dir: "src/fonts", files: /\.woff2$/, local: true },
+  "Spacing Accents": { dir: "src/fonts", files: /spacing-accents\.woff2$/, local: true },
+  "Phonetic Symbols": { dir: "src/fonts", files: /phonetic-symbols\.woff2$/, local: true },
 };
 
 /** Each editor font's stack, read from global.css (--stack-<font>). */

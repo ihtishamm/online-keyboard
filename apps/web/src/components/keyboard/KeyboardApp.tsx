@@ -531,8 +531,14 @@ export default function KeyboardApp({
     rerender();
   };
 
+  /** A long press, the symbols page or the bar: the layout's context rules apply as for a key. */
   const onAlternate = (text: string) => {
-    if (!insertWithRule(text)) insert(text);
+    const result = passthrough ? null : machine.pressText(text, textBeforeCaret());
+    if (result?.kind === "text" && result.remove) rewriteBeforeCaret(result.remove, result.text);
+    else if (result?.kind !== "none") {
+      const out = result?.kind === "text" ? result.text : text;
+      if (!insertWithRule(out)) insert(out);
+    }
     latch.consume();
     rerender();
   };
@@ -1089,9 +1095,10 @@ export default function KeyboardApp({
           </Suspense>
         )}
 
-        {isLatin && language.accents && !passthrough && !(coarse && emojiOpen) && (
+        {language.accents && !passthrough && !(coarse && emojiOpen) && (
           <AccentBar
             accents={language.accents}
+            fontClass={FONT_CLASS[font]}
             upper={displayMods.shift !== displayMods.caps}
             lang={language.lang}
             onPick={(c) => {
