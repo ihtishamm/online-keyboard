@@ -7,96 +7,96 @@ Word lists for prediction and Roman transliteration, and the pipeline that build
 Each language with a Wikipedia has `data/<code>/` built from its article dump (the latest
 dumps, downloaded in October 2026; Urdu's source is described below):
 
-| Code  | Wikipedia       | Pages   | Words read | Words kept | Shipped to the browser |
-| ----- | --------------- | ------- | ---------- | ---------- | ---------------------- |
-| `ur`  | Urdu            | 704,532 | 58.0M      | 100,000    | 40,000                 |
-| `ar`  | Arabic          | 146,244 | 65.9M      | 100,000    | 40,000                 |
-| `fa`  | Persian         | 210,065 | 61.6M      | 100,000    | 40,000                 |
-| `ps`  | Pashto          | 23,433  | 13.3M      | 100,000    | 40,000                 |
-| `sd`  | Sindhi          | 23,040  | 9.0M       | 66,700     | 40,000                 |
-| `pnb` | Western Punjabi | 76,471  | 32.2M      | 100,000    | 40,000                 |
-| `skr` | Saraiki         | 25,059  | 8.9M       | 70,705     | 40,000                 |
-| `ks`  | Kashmiri        | 11,837  | 0.9M       | 21,396     | 21,396                 |
-| `ckb` | Central Kurdish | 85,153  | 11.0M      | 100,000    | 40,000                 |
-| `ug`  | Uyghur          | 10,658  | 3.7M       | 89,217     | 40,000                 |
-| `dv`  | Dhivehi         | 4,621   | 0.7M       | 28,440     | 28,440                 |
-| `hi`  | Hindi           | 175,824 | 45.1M      | 100,000    | 35,000                 |
-| `bn`  | Bengali         | 192,129 | 68.8M      | 100,000    | 35,000                 |
-| `es`  | Spanish         | 3,835   | 13.4M      | 100,000    | 40,000 + 10,500 accent |
-| `fr`  | French          | 3,244   | 12.1M      | 100,000    | 40,000 + 14,100 accent |
-| `it`  | Italian         | 7,975   | 14.1M      | 100,000    | 40,000 + 3,200 accent  |
-| `de`  | German          | 3,469   | 12.5M      | 100,000    | 37,500 + 10,600 accent |
-| `pt`  | Portuguese      | 5,838   | 12.6M      | 100,000    | 40,000 + 9,200 accent  |
-| `tr`  | Turkish         | 11,476  | 9.1M       | 100,000    | 40,000 + 24,600 accent |
-| `pl`  | Polish          | 4,173   | 4.8M       | 100,000    | 40,000 + 18,500 accent |
-| `nl`  | Dutch           | 4,204   | 6.9M       | 100,000    | 37,500 + 3,000 accent  |
-| `ro`  | Romanian        | 6,657   | 5.2M       | 87,516     | 40,000 + 12,800 accent |
-| `cs`  | Czech           | 3,530   | 4.8M       | 100,000    | 40,000 + 23,500 accent |
-| `hu`  | Hungarian       | 4,414   | 5.4M       | 100,000    | 37,500 + 21,500 accent |
-| `sv`  | Swedish         | 5,102   | 5.1M       | 97,115     | 40,000 + 16,800 accent |
-| `ca`  | Catalan         | 4,501   | 5.9M       | 74,643     | 40,000 + 6,300 accent  |
-| `hr`  | Croatian        | 7,701   | 4.8M       | 100,000    | 40,000 + 12,300 accent |
-| `ru`  | Russian         | 7,092   | 17.8M      | 100,000    | 37,500                 |
-| `uk`  | Ukrainian       | 16,145  | 12.6M      | 100,000    | 37,500                 |
-| `be`  | Belarusian      | 39,944  | 9.4M       | 100,000    | 37,500                 |
-| `bg`  | Bulgarian       | 25,395  | 13.7M      | 100,000    | 40,000                 |
-| `sr`  | Serbian         | 16,707  | 11.4M      | 100,000    | 40,000                 |
-| `mk`  | Macedonian      | 35,683  | 12.1M      | 100,000    | 40,000                 |
-| `kk`  | Kazakh          | 105,009 | 12.0M      | 100,000    | 37,500                 |
-| `ky`  | Kyrgyz          | 77,191  | 7.6M       | 100,000    | 35,000                 |
-| `tg`  | Tajik           | 116,286 | 7.4M       | 100,000    | 37,500                 |
-| `mn`  | Mongolian       | 32,236  | 8.2M       | 100,000    | 37,500                 |
-| `el`  | Greek           | 17,642  | 13.7M      | 100,000    | 35,000                 |
-| `he`  | Hebrew          | 11,624  | 15.8M      | 100,000    | 40,000                 |
-| `hy`  | Armenian        | 30,807  | 9.6M       | 100,000    | 40,000                 |
-| `ka`  | Georgian        | 39,986  | 8.2M       | 100,000    | 35,000                 |
-| `th`  | Thai            | 18,548  | 16.0M      | 35,245     | 35,245                 |
-| `lo`  | Lao             | 6,173   | 1.1M       | 11,195     | 11,195                 |
-| `km`  | Khmer           | 14,701  | 6.8M       | 36,195     | 32,500                 |
-| `my`  | Burmese         | 104,549 | 14.6M      | 23,573     | 23,573                 |
-| `vi`  | Vietnamese      | 9,666   | 19.2M      | 53,180     | 35,000                 |
-| `ko`  | Korean          | 15,409  | 10.6M      | 100,000    | 37,500                 |
-| `ja`  | Japanese        | 6,216   | 22.5M      | 98,114     | 35,000                 |
-| `zh`  | Chinese         | 8,058   | 15.3M      | 55,712     | 35,000                 |
-| `sk` | Slovak | 23,008 | 8.3M | 100,000 | see `dict.txt` |
-| `sl` | Slovenian | 21,825 | 8.4M | 100,000 | see `dict.txt` |
-| `sq` | Albanian | 29,318 | 9.8M | 100,000 | see `dict.txt` |
-| `lt` | Lithuanian | 31,014 | 7.5M | 100,000 | see `dict.txt` |
-| `lv` | Latvian | 22,878 | 6.7M | 100,000 | see `dict.txt` |
-| `et` | Estonian | 25,030 | 8.2M | 100,000 | see `dict.txt` |
-| `fi` | Finnish | 9,459 | 8.3M | 100,000 | see `dict.txt` |
-| `nb` | Norwegian (Bokmål) | 16,100 | 10.1M | 100,000 | see `dict.txt` |
-| `da` | Danish | 19,355 | 9.9M | 100,000 | see `dict.txt` |
-| `is` | Icelandic | 39,878 | 7.8M | 100,000 | see `dict.txt` |
-| `fo` | Faroese | 14,266 | 1.6M | 42,454 | see `dict.txt` |
-| `ga` | Irish | 61,945 | 8.0M | 95,236 | see `dict.txt` |
-| `cy` | Welsh | 59,286 | 7.0M | 83,083 | see `dict.txt` |
-| `gd` | Scottish Gaelic | 16,134 | 1.6M | 28,402 | see `dict.txt` |
-| `mt` | Maltese | 8,089 | 6.8M | 77,884 | see `dict.txt` |
-| `gl` | Galician | 18,097 | 10.7M | 100,000 | see `dict.txt` |
-| `eo` | Esperanto | 21,336 | 15.5M | 100,000 | see `dict.txt` |
-| `la` | Latin | 43,377 | 6.0M | 100,000 | see `dict.txt` |
-| `af` | Afrikaans | 20,526 | 9.6M | 100,000 | see `dict.txt` |
-| `az` | Azerbaijani | 22,032 | 8.6M | 100,000 | see `dict.txt` |
-| `tk` | Turkmen | 8,352 | 1.3M | 49,166 | see `dict.txt` |
-| `uz` | Uzbek | 99,998 | 4.0M | 89,841 | see `dict.txt` |
-| `kmr` | Kurdish (Kurmanji) | 90,800 | 5.8M | 96,186 | see `dict.txt` |
-| `yo` | Yoruba | 42,456 | 4.3M | 57,262 | see `dict.txt` |
-| `ig` | Igbo | 28,218 | 10.5M | 83,997 | see `dict.txt` |
-| `ha` | Hausa | 33,367 | 11.2M | 83,575 | see `dict.txt` |
-| `wo` | Wolof | 1,811 | 0.5M | 11,233 | see `dict.txt` |
-| `haw` | Hawaiian | 3,022 | 0.4M | 5,750 | see `dict.txt` |
-| `mi` | Māori | 8,117 | 0.2M | 4,955 | see `dict.txt` |
-| `tt` | Tatar | 66,339 | 3.4M | 98,695 | see `dict.txt` |
-| `ba` | Bashkir | 36,607 | 4.3M | 94,944 | see `dict.txt` |
-| `yi` | Yiddish | 15,925 | 3.3M | 50,175 | see `dict.txt` |
-| `am` | Amharic | 16,377 | 1.5M | 56,215 | see `dict.txt` |
-| `ti` | Tigrinya | 560 | 104k | 4,290 | see `dict.txt` |
-| `bo` | Tibetan (syllables) | 15,249 | 10.5M | 11,119 | see `dict.txt` |
-| `syr` | Syriac (from arcwiki) | 1,969 | 56k | 3,117 | see `dict.txt` |
-| `chr` | Cherokee | 1,056 | 22k | 1,377 | see `dict.txt` |
-| `iu` | Inuktitut | 615 | 18k | 1,003 | see `dict.txt` |
-| `sat` | Santali | 17,358 | 4.6M | 58,024 | see `dict.txt` |
+| Code  | Wikipedia             | Pages   | Words read | Words kept | Shipped to the browser |
+| ----- | --------------------- | ------- | ---------- | ---------- | ---------------------- |
+| `ur`  | Urdu                  | 704,532 | 58.0M      | 100,000    | 40,000                 |
+| `ar`  | Arabic                | 146,244 | 65.9M      | 100,000    | 40,000                 |
+| `fa`  | Persian               | 210,065 | 61.6M      | 100,000    | 40,000                 |
+| `ps`  | Pashto                | 23,433  | 13.3M      | 100,000    | 40,000                 |
+| `sd`  | Sindhi                | 23,040  | 9.0M       | 66,700     | 40,000                 |
+| `pnb` | Western Punjabi       | 76,471  | 32.2M      | 100,000    | 40,000                 |
+| `skr` | Saraiki               | 25,059  | 8.9M       | 70,705     | 40,000                 |
+| `ks`  | Kashmiri              | 11,837  | 0.9M       | 21,396     | 21,396                 |
+| `ckb` | Central Kurdish       | 85,153  | 11.0M      | 100,000    | 40,000                 |
+| `ug`  | Uyghur                | 10,658  | 3.7M       | 89,217     | 40,000                 |
+| `dv`  | Dhivehi               | 4,621   | 0.7M       | 28,440     | 28,440                 |
+| `hi`  | Hindi                 | 175,824 | 45.1M      | 100,000    | 35,000                 |
+| `bn`  | Bengali               | 192,129 | 68.8M      | 100,000    | 35,000                 |
+| `es`  | Spanish               | 3,835   | 13.4M      | 100,000    | 40,000 + 10,500 accent |
+| `fr`  | French                | 3,244   | 12.1M      | 100,000    | 40,000 + 14,100 accent |
+| `it`  | Italian               | 7,975   | 14.1M      | 100,000    | 40,000 + 3,200 accent  |
+| `de`  | German                | 3,469   | 12.5M      | 100,000    | 37,500 + 10,600 accent |
+| `pt`  | Portuguese            | 5,838   | 12.6M      | 100,000    | 40,000 + 9,200 accent  |
+| `tr`  | Turkish               | 11,476  | 9.1M       | 100,000    | 40,000 + 24,600 accent |
+| `pl`  | Polish                | 4,173   | 4.8M       | 100,000    | 40,000 + 18,500 accent |
+| `nl`  | Dutch                 | 4,204   | 6.9M       | 100,000    | 37,500 + 3,000 accent  |
+| `ro`  | Romanian              | 6,657   | 5.2M       | 87,516     | 40,000 + 12,800 accent |
+| `cs`  | Czech                 | 3,530   | 4.8M       | 100,000    | 40,000 + 23,500 accent |
+| `hu`  | Hungarian             | 4,414   | 5.4M       | 100,000    | 37,500 + 21,500 accent |
+| `sv`  | Swedish               | 5,102   | 5.1M       | 97,115     | 40,000 + 16,800 accent |
+| `ca`  | Catalan               | 4,501   | 5.9M       | 74,643     | 40,000 + 6,300 accent  |
+| `hr`  | Croatian              | 7,701   | 4.8M       | 100,000    | 40,000 + 12,300 accent |
+| `ru`  | Russian               | 7,092   | 17.8M      | 100,000    | 37,500                 |
+| `uk`  | Ukrainian             | 16,145  | 12.6M      | 100,000    | 37,500                 |
+| `be`  | Belarusian            | 39,944  | 9.4M       | 100,000    | 37,500                 |
+| `bg`  | Bulgarian             | 25,395  | 13.7M      | 100,000    | 40,000                 |
+| `sr`  | Serbian               | 16,707  | 11.4M      | 100,000    | 40,000                 |
+| `mk`  | Macedonian            | 35,683  | 12.1M      | 100,000    | 40,000                 |
+| `kk`  | Kazakh                | 105,009 | 12.0M      | 100,000    | 37,500                 |
+| `ky`  | Kyrgyz                | 77,191  | 7.6M       | 100,000    | 35,000                 |
+| `tg`  | Tajik                 | 116,286 | 7.4M       | 100,000    | 37,500                 |
+| `mn`  | Mongolian             | 32,236  | 8.2M       | 100,000    | 37,500                 |
+| `el`  | Greek                 | 17,642  | 13.7M      | 100,000    | 35,000                 |
+| `he`  | Hebrew                | 11,624  | 15.8M      | 100,000    | 40,000                 |
+| `hy`  | Armenian              | 30,807  | 9.6M       | 100,000    | 40,000                 |
+| `ka`  | Georgian              | 39,986  | 8.2M       | 100,000    | 35,000                 |
+| `th`  | Thai                  | 18,548  | 16.0M      | 35,245     | 35,245                 |
+| `lo`  | Lao                   | 6,173   | 1.1M       | 11,195     | 11,195                 |
+| `km`  | Khmer                 | 14,701  | 6.8M       | 36,195     | 32,500                 |
+| `my`  | Burmese               | 104,549 | 14.6M      | 23,573     | 23,573                 |
+| `vi`  | Vietnamese            | 9,666   | 19.2M      | 53,180     | 35,000                 |
+| `ko`  | Korean                | 15,409  | 10.6M      | 100,000    | 37,500                 |
+| `ja`  | Japanese              | 6,216   | 22.5M      | 98,114     | 35,000                 |
+| `zh`  | Chinese               | 8,058   | 15.3M      | 55,712     | 35,000                 |
+| `sk`  | Slovak                | 23,008  | 8.3M       | 100,000    | see `dict.txt`         |
+| `sl`  | Slovenian             | 21,825  | 8.4M       | 100,000    | see `dict.txt`         |
+| `sq`  | Albanian              | 29,318  | 9.8M       | 100,000    | see `dict.txt`         |
+| `lt`  | Lithuanian            | 31,014  | 7.5M       | 100,000    | see `dict.txt`         |
+| `lv`  | Latvian               | 22,878  | 6.7M       | 100,000    | see `dict.txt`         |
+| `et`  | Estonian              | 25,030  | 8.2M       | 100,000    | see `dict.txt`         |
+| `fi`  | Finnish               | 9,459   | 8.3M       | 100,000    | see `dict.txt`         |
+| `nb`  | Norwegian (Bokmål)    | 16,100  | 10.1M      | 100,000    | see `dict.txt`         |
+| `da`  | Danish                | 19,355  | 9.9M       | 100,000    | see `dict.txt`         |
+| `is`  | Icelandic             | 39,878  | 7.8M       | 100,000    | see `dict.txt`         |
+| `fo`  | Faroese               | 14,266  | 1.6M       | 42,454     | see `dict.txt`         |
+| `ga`  | Irish                 | 61,945  | 8.0M       | 95,236     | see `dict.txt`         |
+| `cy`  | Welsh                 | 59,286  | 7.0M       | 83,083     | see `dict.txt`         |
+| `gd`  | Scottish Gaelic       | 16,134  | 1.6M       | 28,402     | see `dict.txt`         |
+| `mt`  | Maltese               | 8,089   | 6.8M       | 77,884     | see `dict.txt`         |
+| `gl`  | Galician              | 18,097  | 10.7M      | 100,000    | see `dict.txt`         |
+| `eo`  | Esperanto             | 21,336  | 15.5M      | 100,000    | see `dict.txt`         |
+| `la`  | Latin                 | 43,377  | 6.0M       | 100,000    | see `dict.txt`         |
+| `af`  | Afrikaans             | 20,526  | 9.6M       | 100,000    | see `dict.txt`         |
+| `az`  | Azerbaijani           | 22,032  | 8.6M       | 100,000    | see `dict.txt`         |
+| `tk`  | Turkmen               | 8,352   | 1.3M       | 49,166     | see `dict.txt`         |
+| `uz`  | Uzbek                 | 99,998  | 4.0M       | 89,841     | see `dict.txt`         |
+| `kmr` | Kurdish (Kurmanji)    | 90,800  | 5.8M       | 96,186     | see `dict.txt`         |
+| `yo`  | Yoruba                | 42,456  | 4.3M       | 57,262     | see `dict.txt`         |
+| `ig`  | Igbo                  | 28,218  | 10.5M      | 83,997     | see `dict.txt`         |
+| `ha`  | Hausa                 | 33,367  | 11.2M      | 83,575     | see `dict.txt`         |
+| `wo`  | Wolof                 | 1,811   | 0.5M       | 11,233     | see `dict.txt`         |
+| `haw` | Hawaiian              | 3,022   | 0.4M       | 5,750      | see `dict.txt`         |
+| `mi`  | Māori                 | 8,117   | 0.2M       | 4,955      | see `dict.txt`         |
+| `tt`  | Tatar                 | 66,339  | 3.4M       | 98,695     | see `dict.txt`         |
+| `ba`  | Bashkir               | 36,607  | 4.3M       | 94,944     | see `dict.txt`         |
+| `yi`  | Yiddish               | 15,925  | 3.3M       | 50,175     | see `dict.txt`         |
+| `am`  | Amharic               | 16,377  | 1.5M       | 56,215     | see `dict.txt`         |
+| `ti`  | Tigrinya              | 560     | 104k       | 4,290      | see `dict.txt`         |
+| `bo`  | Tibetan (syllables)   | 15,249  | 10.5M      | 11,119     | see `dict.txt`         |
+| `syr` | Syriac (from arcwiki) | 1,969   | 56k        | 3,117      | see `dict.txt`         |
+| `chr` | Cherokee              | 1,056   | 22k        | 1,377      | see `dict.txt`         |
+| `iu`  | Inuktitut             | 615     | 18k        | 1,003      | see `dict.txt`         |
+| `sat` | Santali               | 17,358  | 4.6M       | 58,024     | see `dict.txt`         |
 
 The Latin-script languages (plan 7.5, 7.7) read the first 20 to 40 MB of their dump (the oldest, most
 edited articles), and add everyday sentences from [Tatoeba](https://tatoeba.org) through
