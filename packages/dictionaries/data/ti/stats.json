@@ -1,0 +1,13 @@
+{
+  "source": "tiwiki.xml.bz2",
+  "pages": 560,
+  "sentences": 8741,
+  "repeatedSentencesSkipped": 148,
+  "tokens": 104160,
+  "distinctWords": 24210,
+  "wordsKept": 4290,
+  "nextWordHeads": 953,
+  "text": "ti-train.txt",
+  "textSentences": 3196,
+  "textWeight": 0.25
+}

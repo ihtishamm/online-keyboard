@@ -8,6 +8,7 @@ const FONTS = [
   ...["nastaliq", "naskh", "devanagari", "bengali", "gurmukhi", "gujarati", "oriya", "tamil"],
   ...["telugu", "kannada", "malayalam", "sinhala", "thaana", "latin"],
   ...["hebrew", "armenian", "georgian", "thai", "lao", "khmer", "myanmar"],
+  ...["ethiopic", "tibetan", "syriac", "cherokee", "canadian-aboriginal", "ol-chiki"],
   ...["hangul", "cjk-sc", "cjk-tc", "cjk-jp"],
 ];
 

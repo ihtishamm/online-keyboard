@@ -1,0 +1,10 @@
+{
+  "source": "iuwiki.xml.bz2",
+  "pages": 615,
+  "sentences": 2516,
+  "repeatedSentencesSkipped": 127,
+  "tokens": 18450,
+  "distinctWords": 10163,
+  "wordsKept": 1003,
+  "nextWordHeads": 101
+}

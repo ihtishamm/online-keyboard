@@ -1,0 +1,174 @@
+{
+  "id": "sat-standard",
+  "lang": "sat",
+  "script": "Olck",
+  "dir": "ltr",
+  "name": {
+    "en": "Ol Chiki",
+    "native": "ᱚᱞ ᱪᱤᱠᱤ"
+  },
+  "source": "Windows \"Ol Chiki\", from Unicode CLDR 43 keyboard data (Unicode License v3).",
+  "keys": {
+    "Backquote": {
+      "s": "ᱻ"
+    },
+    "Digit1": {
+      "n": "᱑"
+    },
+    "Digit2": {
+      "n": "᱒"
+    },
+    "Digit3": {
+      "n": "᱓"
+    },
+    "Digit4": {
+      "n": "᱔"
+    },
+    "Digit5": {
+      "n": "᱕"
+    },
+    "Digit6": {
+      "n": "᱖"
+    },
+    "Digit7": {
+      "n": "᱗"
+    },
+    "Digit8": {
+      "n": "᱘"
+    },
+    "Digit9": {
+      "n": "᱙"
+    },
+    "Digit0": {
+      "n": "᱐"
+    },
+    "Minus": {
+      "s": "ᱼ"
+    },
+    "KeyE": {
+      "n": "ᱟ"
+    },
+    "KeyY": {
+      "n": "ᱵ"
+    },
+    "KeyU": {
+      "n": "ᱦ",
+      "s": "ᱝ"
+    },
+    "KeyI": {
+      "n": "ᱜ"
+    },
+    "KeyO": {
+      "n": "ᱫ"
+    },
+    "KeyP": {
+      "n": "ᱡ"
+    },
+    "BracketLeft": {
+      "n": "ᱰ",
+      "s": "ᱲ"
+    },
+    "BracketRight": {
+      "n": "ᱹ",
+      "s": "ᱧ"
+    },
+    "KeyA": {
+      "n": "ᱳ"
+    },
+    "KeyS": {
+      "n": "ᱮ"
+    },
+    "KeyD": {
+      "n": "ᱚ"
+    },
+    "KeyF": {
+      "n": "ᱤ"
+    },
+    "KeyG": {
+      "n": "ᱩ"
+    },
+    "KeyH": {
+      "n": "ᱯ"
+    },
+    "KeyJ": {
+      "n": "ᱨ"
+    },
+    "KeyK": {
+      "n": "ᱠ"
+    },
+    "KeyL": {
+      "n": "ᱛ"
+    },
+    "Semicolon": {
+      "n": "ᱪ",
+      "s": "ᱺ"
+    },
+    "Quote": {
+      "n": "ᱴ"
+    },
+    "KeyZ": {
+      "n": "ᱷ",
+      "s": "ᱽ"
+    },
+    "KeyX": {
+      "n": "ᱸ"
+    },
+    "KeyC": {
+      "n": "ᱢ",
+      "s": "ᱬ"
+    },
+    "KeyV": {
+      "n": "ᱱ"
+    },
+    "KeyB": {
+      "n": "ᱣ",
+      "s": "ᱶ"
+    },
+    "KeyN": {
+      "n": "ᱞ"
+    },
+    "KeyM": {
+      "n": "ᱥ"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "᱿"
+    },
+    "Period": {
+      "n": ".",
+      "s": "᱾"
+    },
+    "Slash": {
+      "n": "ᱭ"
+    }
+  },
+  "longpress": {
+    "KeyU": [
+      "ᱝ"
+    ],
+    "BracketLeft": [
+      "ᱲ"
+    ],
+    "BracketRight": [
+      "ᱧ"
+    ],
+    "Semicolon": [
+      "ᱺ"
+    ],
+    "KeyZ": [
+      "ᱽ"
+    ],
+    "KeyC": [
+      "ᱬ"
+    ],
+    "KeyB": [
+      "ᱶ"
+    ],
+    "Comma": [
+      "᱿"
+    ],
+    "Period": [
+      "᱾"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "source": "chrwiki.xml.bz2",
+  "pages": 1056,
+  "sentences": 3150,
+  "repeatedSentencesSkipped": 1447,
+  "tokens": 22335,
+  "distinctWords": 6979,
+  "wordsKept": 1377,
+  "nextWordHeads": 282
+}

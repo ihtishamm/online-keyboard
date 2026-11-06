@@ -38,6 +38,8 @@ const GAPS: Record<string, string[]> = {
   ig: ["en"],
   mi: ["en"],
   wo: ["en"],
+  sat: ["en"],
+  syr: ["en"],
   tg: ["en"],
   da: ["en"],
   mt: ["en"],

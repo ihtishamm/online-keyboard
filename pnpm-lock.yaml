@@ -214,7 +214,16 @@ importers:
       '@fontsource/noto-sans-bengali':
         specifier: ^5.3.0
         version: 5.3.0
+      '@fontsource/noto-sans-canadian-aboriginal':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@fontsource/noto-sans-cherokee':
+        specifier: ^5.3.0
+        version: 5.3.0
       '@fontsource/noto-sans-devanagari':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@fontsource/noto-sans-ethiopic':
         specifier: ^5.3.0
         version: 5.3.0
       '@fontsource/noto-sans-georgian':
@@ -244,10 +253,16 @@ importers:
       '@fontsource/noto-sans-myanmar':
         specifier: ^5.3.0
         version: 5.3.0
+      '@fontsource/noto-sans-ol-chiki':
+        specifier: ^5.3.0
+        version: 5.3.0
       '@fontsource/noto-sans-oriya':
         specifier: ^5.3.0
         version: 5.3.0
       '@fontsource/noto-sans-sinhala':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@fontsource/noto-sans-syriac':
         specifier: ^5.3.0
         version: 5.3.0
       '@fontsource/noto-sans-tamil':
@@ -260,6 +275,9 @@ importers:
         specifier: ^5.3.0
         version: 5.3.0
       '@fontsource/noto-sans-thai':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@fontsource/noto-serif-tibetan':
         specifier: ^5.3.0
         version: 5.3.0
       '@okb/dictionaries':
@@ -854,8 +872,17 @@ packages:
   '@fontsource/noto-sans-bengali@5.3.0':
     resolution: {integrity: sha512-EFBMU0UvzyFSc1ERK369zfqEu6DMRuWmCQ2+2ahhQTQAIDPEyN1UYlQdQeFkheu2DWG2hfdwrhiLlGFl2sSr/A==}
 
+  '@fontsource/noto-sans-canadian-aboriginal@5.3.0':
+    resolution: {integrity: sha512-3oJxXsViblUoIRQZpCBxwq1lsbnbKYz/t9G5S/jTZluvC1UuSmK5gb6FXMzxLHx5VJw+mWGSXvQZObuZA3nzyQ==}
+
+  '@fontsource/noto-sans-cherokee@5.3.0':
+    resolution: {integrity: sha512-w0ZzbS+5iqOdwWPx2AbVIEL3BsyDykmxpW69SILEjD8jSQ3BQknoxKmYyvNqjNYVKPyZltKPmyqIciqB/AP13A==}
+
   '@fontsource/noto-sans-devanagari@5.3.0':
     resolution: {integrity: sha512-7khYmipS/5KAUUmrO1DKir8yL8XI00d0+ZE9BqbS8XF1jzObv6CpPOk3UeYxF+Pvi8bx9bBvprBCOcbx/eQWTQ==}
+
+  '@fontsource/noto-sans-ethiopic@5.3.0':
+    resolution: {integrity: sha512-ivXPkx5Grhse+0GEyedQysDI5vSMUIeDNBhev6OIcSX6WyAPtvutU/CSWqf2wv67POnvQ0QaQ8Aq36vy9WfZpw==}
 
   '@fontsource/noto-sans-georgian@5.3.0':
     resolution: {integrity: sha512-+a+N1mvCugsggDb5eKPKcwDXQQtbaV+x9/Zo2/p2c9yAZeib+qD2ftbezbPAoLvBf4MP+F8BdDwHdrlnNRSdng==}
@@ -884,11 +911,17 @@ packages:
   '@fontsource/noto-sans-myanmar@5.3.0':
     resolution: {integrity: sha512-/ja/Fbmtv4TRpd8LgnVFvDRFIzR0bvYaVCwGNK6Hnn5uBGccCfGFnZ7wRPG1/IyMnScVIjrnOmN+2jOL0b8tRQ==}
 
+  '@fontsource/noto-sans-ol-chiki@5.3.0':
+    resolution: {integrity: sha512-Y1e6v15uOncVVlX4DUQIXEfzKHj+DNlIdE8k3fXiJFyG7G4lDdoPHXi5uyW5NoaiyoF/Xd5BpAsH6fEzIJ7nug==}
+
   '@fontsource/noto-sans-oriya@5.3.0':
     resolution: {integrity: sha512-nl5R08M+PHfiRJNdlxy5mPDpeFzKa16p14MprNsSKJn7QyJtU3PZ2CHi3x/9vzw05ox+In9i8BmVnPRrK4R/jg==}
 
   '@fontsource/noto-sans-sinhala@5.3.0':
     resolution: {integrity: sha512-g52kQSjsB3vHmFbp6zrPfumJxZADhsssOHd3fMkN+hCK1JrpKvSudtJMAAGuVUcrC7r9dqNmmslj7I9VU1dzbw==}
+
+  '@fontsource/noto-sans-syriac@5.3.0':
+    resolution: {integrity: sha512-9GSaPnxN9rmYGhvyGyWUKlNPvncWZDFwGc5VwrJu7Gik1aovVudrqQ49wwtYxUJ6fxzvCEDhX36j6DKO8osceg==}
 
   '@fontsource/noto-sans-tamil@5.3.0':
     resolution: {integrity: sha512-webid7fyBljiIEJ1hXuey48vCUe2Oq3/EwYjo6XBtXItO9FoUmqy0bEnXA5iE++iC324BTI8QMy80SYtDheCzA==}
@@ -901,6 +934,9 @@ packages:
 
   '@fontsource/noto-sans-thai@5.3.0':
     resolution: {integrity: sha512-ngqUyvDukkZUHypQbUJvUdAeYa2aYZsyeDTsdqMudf7GK2F2TK19OZ5kbo+37qsBtkNpmAMhEObQnWnzPqzKUw==}
+
+  '@fontsource/noto-serif-tibetan@5.3.0':
+    resolution: {integrity: sha512-0BEcd06ijxHuEBkZJcRqB0g0hPAY/wGrqEzvCaq84j1ZjgQRey+ZDqRBA/bMKfoz0jB+nnW9dXaHAmCsctkMrw==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -3775,7 +3811,13 @@ snapshots:
 
   '@fontsource/noto-sans-bengali@5.3.0': {}
 
+  '@fontsource/noto-sans-canadian-aboriginal@5.3.0': {}
+
+  '@fontsource/noto-sans-cherokee@5.3.0': {}
+
   '@fontsource/noto-sans-devanagari@5.3.0': {}
+
+  '@fontsource/noto-sans-ethiopic@5.3.0': {}
 
   '@fontsource/noto-sans-georgian@5.3.0': {}
 
@@ -3795,9 +3837,13 @@ snapshots:
 
   '@fontsource/noto-sans-myanmar@5.3.0': {}
 
+  '@fontsource/noto-sans-ol-chiki@5.3.0': {}
+
   '@fontsource/noto-sans-oriya@5.3.0': {}
 
   '@fontsource/noto-sans-sinhala@5.3.0': {}
+
+  '@fontsource/noto-sans-syriac@5.3.0': {}
 
   '@fontsource/noto-sans-tamil@5.3.0': {}
 
@@ -3806,6 +3852,8 @@ snapshots:
   '@fontsource/noto-sans-thaana@5.3.0': {}
 
   '@fontsource/noto-sans-thai@5.3.0': {}
+
+  '@fontsource/noto-serif-tibetan@5.3.0': {}
 
   '@humanfs/core@0.19.2':
     dependencies:

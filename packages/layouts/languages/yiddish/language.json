@@ -1,0 +1,24 @@
+{
+  "slug": "yiddish",
+  "code": "yi",
+  "order": 940,
+  "lang": "yi",
+  "script": "Hebr",
+  "dir": "rtl",
+  "name": {
+    "en": "Yiddish",
+    "native": "ייִדיש"
+  },
+  "aliases": [],
+  "region": "europe",
+  "fonts": ["hebrew"],
+  "layouts": ["yi-pasekh"],
+  "sample": "שלום! ווי גייט עס הײַנט?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "yi"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

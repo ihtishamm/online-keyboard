@@ -1,0 +1,13 @@
+{
+  "source": "yiwiki.xml.bz2",
+  "pages": 15925,
+  "sentences": 216320,
+  "repeatedSentencesSkipped": 18218,
+  "tokens": 3277391,
+  "distinctWords": 135995,
+  "wordsKept": 50175,
+  "nextWordHeads": 8141,
+  "text": "yi-train.txt",
+  "textSentences": 26033,
+  "textWeight": 11.31
+}

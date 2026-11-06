@@ -70,6 +70,8 @@ export const CASE_LOCALES: Readonly<Record<string, string>> = {
   sr: "sr",
   mk: "mk",
   kk: "kk",
+  tt: "tt",
+  ba: "ba",
   ky: "ky",
   tg: "tg",
   mn: "mn",

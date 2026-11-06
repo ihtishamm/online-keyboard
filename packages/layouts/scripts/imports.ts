@@ -25,7 +25,7 @@ export interface ImportSpec {
   /** Output path under languages/. */
   out: string;
   from:
-    | { cldr: string }
+    | { cldr: string; capsAsBase?: boolean }
     | { xkb: string; variant: string }
     | { keyman: string; ctrlAsAltGr?: boolean; contextRules?: boolean; usDefaults?: boolean };
   meta: Omit<LayoutInput, "keys" | "longpress" | "deadkeys">;
@@ -392,6 +392,194 @@ const WAVE4_IMPORTS: readonly ImportSpec[] = [
       name: { en: "X-system", native: "X-sistemo" },
       source:
         "Keyman Esperanto Cx 1.2 by Gyula Zsigri (MIT): type x after a letter (cx ĉ, gx ĝ, hx ĥ, jx ĵ, sx ŝ, ux ŭ).",
+    },
+  },
+];
+
+const WAVE4_SCRIPTS: readonly ImportSpec[] = [
+  {
+    out: "bodo/inscript.json",
+    from: { cldr: "cldr/hi-t-k0-windows.xml" },
+    meta: {
+      id: "brx-inscript",
+      lang: "brx",
+      script: "Deva",
+      dir: "ltr",
+      name: { en: "InScript", native: "इनस्क्रिप्ट" },
+      source: `Windows "Devanagari - INSCRIPT", the Indian standard Bodo is typed on, from ${CLDR_NOTE}. ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr, as on the Hindi page.`,
+    },
+    patch: (keys) => {
+      set(keys, "Digit1", { sag: "\u200D" });
+      set(keys, "Digit2", { sag: "\u200C" });
+      set(keys, "Digit4", { sag: "₹" });
+    },
+  },
+  {
+    out: "tatar/standard.json",
+    from: { cldr: "cldr/tt-t-k0-windows.xml" },
+    meta: {
+      id: "tt-standard",
+      lang: "tt",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Standard", native: "Стандарт" },
+      source: `Windows "Tatar", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "bashkir/standard.json",
+    patch: (keys) => set(keys, "KeyT", { ag: "ё", sag: "Ё" }),
+    from: { cldr: "cldr/ba-t-k0-windows.xml" },
+    meta: {
+      id: "ba-standard",
+      lang: "ba",
+      script: "Cyrl",
+      dir: "ltr",
+      name: { en: "Standard", native: "Стандарт" },
+      source: `Windows "Bashkir", from ${CLDR_NOTE}. Upstream cannot type ё; we add it on AltGr+T, the е key.`,
+    },
+  },
+  {
+    out: "tibetan/standard.json",
+    from: { cldr: "cldr/bo-t-k0-windows.xml" },
+    meta: {
+      id: "bo-standard",
+      lang: "bo",
+      script: "Tibt",
+      dir: "ltr",
+      name: { en: "Standard", native: "ལྟ་མཚོན" },
+      source: `Windows "Tibetan (PRC)", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "syriac/standard.json",
+    from: { cldr: "cldr/syr-t-k0-windows.xml" },
+    // No font we ship draws these box corners, and Syriac text never uses them.
+    patch: (keys) => {
+      delete keys.Minus!.ag;
+      delete keys.Equal!.ag;
+    },
+    meta: {
+      id: "syr-standard",
+      lang: "syr",
+      script: "Syrc",
+      dir: "rtl",
+      name: { en: "Standard", native: "ܫܪܫܐ" },
+      source: `Windows "Syriac", from ${CLDR_NOTE}. Changed: AltGr+- and AltGr+= (box corners ┌ ┐) left empty, as no font here draws them.`,
+    },
+  },
+  {
+    out: "syriac/phonetic.json",
+    from: { cldr: "cldr/syr-t-k0-windows-qwerty.xml" },
+    // No font we ship draws these box corners, and Syriac text never uses them.
+    patch: (keys) => {
+      delete keys.Minus!.ag;
+      delete keys.Equal!.ag;
+    },
+    meta: {
+      id: "syr-phonetic",
+      lang: "syr",
+      script: "Syrc",
+      dir: "rtl",
+      name: { en: "Phonetic", native: "ܩܠܐ" },
+      source: `Windows "Syriac Phonetic", from ${CLDR_NOTE}. Changed: AltGr+- and AltGr+= (box corners ┌ ┐) left empty, as no font here draws them.`,
+    },
+  },
+  {
+    out: "cherokee/standard.json",
+    from: { cldr: "cldr/chr-t-k0-windows.xml" },
+    meta: {
+      id: "chr-standard",
+      lang: "chr",
+      script: "Cher",
+      dir: "ltr",
+      name: { en: "Cherokee Nation", native: "ᏣᎳᎩ" },
+      source: `Windows "Cherokee Nation", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "cherokee/phonetic.json",
+    from: { cldr: "cldr/chr-t-k0-windows-phonetic.xml" },
+    meta: {
+      id: "chr-phonetic",
+      lang: "chr",
+      script: "Cher",
+      dir: "ltr",
+      name: { en: "Phonetic", native: "ᏣᎳᎩ" },
+      source: `Windows "Cherokee Phonetic", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "inuktitut/naqittaut.json",
+    from: { cldr: "cldr/iu-t-k0-windows.xml", capsAsBase: true },
+    patch: (keys) => {
+      delete keys.Digit7!.sag; // ⅔: no font here draws it
+    },
+    meta: {
+      id: "iu-naqittaut",
+      lang: "iu",
+      script: "Cans",
+      dir: "ltr",
+      name: { en: "Naqittaut", native: "ᓇᕿᑦᑕᐅᑦ" },
+      source: `Windows "Inuktitut - Naqittaut", from ${CLDR_NOTE}. Changed: syllabics are on the plain keys; Windows has them behind Caps Lock, with Latin letters on the plain keys. Shift+AltGr+7 (⅔) left empty, as no font here draws it.`,
+    },
+  },
+  {
+    out: "santali/standard.json",
+    from: { cldr: "cldr/sat-t-k0-windows.xml" },
+    meta: {
+      id: "sat-standard",
+      lang: "sat",
+      script: "Olck",
+      dir: "ltr",
+      name: { en: "Ol Chiki", native: "ᱚᱞ ᱪᱤᱠᱤ" },
+      source: `Windows "Ol Chiki", from ${CLDR_NOTE}.`,
+    },
+  },
+  {
+    out: "amharic/gff.json",
+    from: { keyman: "keyman/gff_amharic/gff_amharic.kmn", contextRules: true, usDefaults: true },
+    meta: {
+      id: "am-gff",
+      lang: "am",
+      script: "Ethi",
+      dir: "ltr",
+      name: { en: "GFF syllables", native: "ጂኤፍኤፍ" },
+      source:
+        "Keyman GFF Amharic by the Geʾez Frontier Foundation (MIT): type a consonant, then a vowel (se ሰ, sa ሳ).",
+    },
+  },
+  {
+    out: "tigrinya/gff.json",
+    from: {
+      keyman: "keyman/gff_tigrinya_ethiopia/gff_tigrinya_ethiopia.kmn",
+      contextRules: true,
+      usDefaults: true,
+    },
+    meta: {
+      id: "ti-gff",
+      lang: "ti",
+      script: "Ethi",
+      dir: "ltr",
+      name: { en: "GFF syllables", native: "ጂኤፍኤፍ" },
+      source:
+        "Keyman GFF Tigrinya (Ethiopia) by the Geʾez Frontier Foundation (MIT): type a consonant, then a vowel (se ሰ, sa ሳ).",
+    },
+  },
+  {
+    out: "yiddish/pasekh.json",
+    from: {
+      keyman: "keyman/yiddish_pasekh/yiddish_pasekh.kmn",
+      contextRules: true,
+      usDefaults: true,
+    },
+    meta: {
+      id: "yi-pasekh",
+      lang: "yi",
+      script: "Hebr",
+      dir: "rtl",
+      name: { en: "Pasekh", native: "פּתח" },
+      source: "Keyman Yiddish Pasekh (MIT).",
     },
   },
 ];
@@ -810,6 +998,7 @@ export const IMPORTS: readonly ImportSpec[] = [
   ...LATIN_IMPORTS,
   ...WAVE1_IMPORTS,
   ...WAVE4_IMPORTS,
+  ...WAVE4_SCRIPTS,
   {
     out: "tamil/tamil99.json",
     from: {
@@ -1477,7 +1666,7 @@ export interface ImportResult {
 export function buildImport(spec: ImportSpec, sourceText: string): ImportResult {
   const imported =
     "cldr" in spec.from
-      ? importCldr(sourceText)
+      ? importCldr(sourceText, { capsAsBase: spec.from.capsAsBase ?? false })
       : "xkb" in spec.from
         ? importXkb(sourceText, spec.from.variant)
         : importKeyman(sourceText, spec.from);

@@ -162,8 +162,8 @@ function storeKeys(items: Item[], options: KeymanOptions): (KeyRef | null)[] {
   return items.map((i) => ("char" in i ? keyRef(`'${i.char}'`, options) : i.key));
 }
 
-const CONTEXT_ITEM = /any\s*\(\s*(\w+)\s*\)|[Uu]\+([0-9A-Fa-f]{4,6})|"([^"]*)"|'([^']*)'/g;
-const CONTEXT_PART = `(?:any\\s*\\(\\s*\\w+\\s*\\)|[Uu]\\+[0-9A-Fa-f]{4,6}|"[^"]*"|'[^']*')`;
+const CONTEXT_ITEM = /any\s*\(\s*([^\s(),]+)\s*\)|[Uu]\+([0-9A-Fa-f]{4,6})|"([^"]*)"|'([^']*)'/g;
+const CONTEXT_PART = `(?:any\\s*\\(\\s*[^\\s(),]+\\s*\\)|[Uu]\\+[0-9A-Fa-f]{4,6}|"[^"]*"|'[^']*')`;
 const CONTEXT_RULE = new RegExp(
   `^(${CONTEXT_PART}(?:\\s*${CONTEXT_PART})*)\\s*\\+\\s*(.+?)\\s*>\\s*(.+)$`,
 );
@@ -198,7 +198,7 @@ function expandContextRule(
   if (anys.length > 1 || anys.some((a) => !a.store)) return null;
   const choices = anys[0]?.store ?? [null];
   const keyAt = items.length + 1;
-  const keyAny = /^any\s*\(\s*(\w+)\s*\)$/i.exec(lhs);
+  const keyAny = /^any\s*\(\s*([^\s(),]+)\s*\)$/i.exec(lhs);
   const keyStore = keyAny ? stores.get(keyAny[1]!) : null;
   if (keyAny && !keyStore) return null;
   const keyList: (KeyRef | null)[] = keyStore
@@ -216,10 +216,14 @@ function expandContextRule(
       .join("");
     for (let k = 0; k < keyList.length; k++) {
       const key = keyList[k];
-      if (!key) return null;
+      // A store may list keys no US keyboard has (GFF's ä and é): those simply cannot be pressed.
+      if (!key) {
+        if (keyStore) continue;
+        return null;
+      }
       let out = "";
       const re =
-        /\s*(?:(context)|index\s*\(\s*(\w+)\s*,\s*(\d+)\s*\)|[Uu]\+([0-9A-Fa-f]{4,6})|"([^"]*)"|'([^']*)')/y;
+        /\s*(?:(context)|index\s*\(\s*([^\s(),]+)\s*,\s*(\d+)\s*\)|[Uu]\+([0-9A-Fa-f]{4,6})|"([^"]*)"|'([^']*)')/y;
       for (let pos = 0; pos < rhs.length; pos = re.lastIndex) {
         re.lastIndex = pos;
         const m = re.exec(rhs);
@@ -237,6 +241,8 @@ function expandContextRule(
       }
       let same = 0;
       while (same < before.length && before[same] === out[same]) same++;
+      // Never split a letter beyond U+FFFF: 𞟣 and 𞟤 share their first half.
+      if (same > 0 && /[\uD800-\uDBFF]/.test(before[same - 1]!)) same--;
       rules.push({
         before,
         key,
@@ -271,6 +277,8 @@ export function importKeyman(source: string, options: KeymanOptions = {}): Keyma
     .forEach((raw, idx) => {
       // Strip trailing comments (`c ...`) that are outside quotes.
       let text = raw.replace(/(^|\s)c\s.*$|(^|\s)c$/, "").trim();
+      if (options.contextRules && /^\$keymanweb:/.test(text)) return;
+      if (options.contextRules) text = text.replace(/^\$keymanonly:\s*/, "");
       const option = options.contextRules
         ? /^\$keyman:\s*if\(\s*(\w+)\s*=\s*'([^']*)'\s*\)\s*(.*)$/.exec(text)
         : null;
@@ -333,8 +341,8 @@ export function importKeyman(source: string, options: KeymanOptions = {}): Keyma
     const [, , dead, lhs = "", rhs = ""] = rule;
 
     // + any(keys) > index(out, n)  /  + any(keys) > nul
-    const any = /^any\s*\(\s*(\w+)\s*\)$/i.exec(lhs);
-    const index = /^index\s*\(\s*(\w+)\s*,\s*(\d+)\s*\)$/i.exec(rhs);
+    const any = /^any\s*\(\s*([^\s(),]+)\s*\)$/i.exec(lhs);
+    const index = /^index\s*\(\s*([^\s(),]+)\s*,\s*(\d+)\s*\)$/i.exec(rhs);
     if (any) {
       const from = stores.get(any[1]!);
       if (!from) {

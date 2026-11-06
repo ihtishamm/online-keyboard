@@ -1,0 +1,4 @@
+# Words and phrases kept out of typing practice. From LDNOOBW
+# (https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words),
+# CC BY 4.0; made by src/blocklist.ts. Build-time only.
+

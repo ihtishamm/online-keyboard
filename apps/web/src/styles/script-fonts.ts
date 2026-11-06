@@ -33,6 +33,12 @@ export const FONT_PACKAGES: Readonly<Record<Exclude<FontId, "latin" | SystemFont
   lao: "noto-sans-lao",
   khmer: "noto-sans-khmer",
   myanmar: "noto-sans-myanmar",
+  "ethiopic": "noto-sans-ethiopic",
+  "tibetan": "noto-serif-tibetan",
+  "syriac": "noto-sans-syriac",
+  "cherokee": "noto-sans-cherokee",
+  "canadian-aboriginal": "noto-sans-canadian-aboriginal",
+  "ol-chiki": "noto-sans-ol-chiki",
 };
 
 const CSS = import.meta.glob<string>("../../node_modules/@fontsource/*/400.css", {

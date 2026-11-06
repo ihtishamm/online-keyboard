@@ -1,0 +1,25 @@
+{
+  "slug": "amharic",
+  "code": "am",
+  "order": 950,
+  "lang": "am",
+  "script": "Ethi",
+  "dir": "ltr",
+  "name": {
+    "en": "Amharic",
+    "native": "አማርኛ"
+  },
+  "aliases": [],
+  "region": "africa",
+  "fonts": ["ethiopic"],
+  "layouts": ["am-gff"],
+  "sample": "ሰላም! ዛሬ እንዴት ነህ?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "am",
+    "bing": "am"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

@@ -22,7 +22,9 @@ function edits(a: string, b: string): number {
   let row = y.map((_, i) => i + 1);
   x.forEach((c, i) => {
     const next = [i + 1];
-    y.forEach((d, j) => next.push(Math.min(row[j]! + 1, next[j]! + 1, (j ? row[j - 1]! : i) + (c === d ? 0 : 1))));
+    y.forEach((d, j) =>
+      next.push(Math.min(row[j]! + 1, next[j]! + 1, (j ? row[j - 1]! : i) + (c === d ? 0 : 1))),
+    );
     row = next.slice(1);
   });
   return row.at(-1) ?? x.length;

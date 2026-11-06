@@ -7,7 +7,8 @@ import { strokeName } from "../../components/typing/keys";
  * one tip on the letters that slow learners down. Original text. Outside Latin script the
  * tips name keys straight from the layout (`on`), so they cannot drift from it. The headings
  * outside Latin script use the English loanwords those languages' typing sites use; none has
- * been reviewed by a native speaker yet. Yoruba, Igbo, Wolof and Hawaiian stay in English
+ * been reviewed by a native speaker yet. Yoruba, Igbo, Wolof, Hawaiian, Tatar, Bashkir,
+ * Tibetan, Syriac, Cherokee, Inuktitut and Santali stay in English
  * until someone who writes them can give the phrases.
  */
 export interface TypingCopy {
@@ -131,6 +132,41 @@ function NON_LATIN(): Record<string, TypingCopy> {
       tutor: "לימוד הקלדה",
       test: "מבחן מהירות הקלדה",
       tip: `Final letters have keys of their own: ${on("he-standard", "ךםןףץ")}.`,
+    },
+    tt: {
+      tutor: "Typing tutor",
+      test: "Typing test",
+      tip: `Tatar's own letters replace Russian ones: ${on("tt-standard", "өәүңҗһ")}. The Russian letters are on AltGr.`,
+    },
+    ba: {
+      tutor: "Typing tutor",
+      test: "Typing test",
+      tip: `Bashkir's own letters are on the number row and beside it: ${on("ba-standard", "әөҡғҫҙһүң")}.`,
+    },
+    bo: {
+      tutor: "Typing tutor",
+      test: "Typing test",
+      tip: `End every syllable with the tsheg: ${on("bo-standard", "་།")}. M, then a letter, stacks it below.`,
+    },
+    syr: {
+      tutor: "Typing tutor",
+      test: "Typing test",
+      tip: `The Windows Syriac layout follows the Arabic one: ${on("syr-standard", "ܫܣܝܒܠܐ")}. Vowel points are on Shift.`,
+    },
+    chr: {
+      tutor: "Typing tutor",
+      test: "Typing test",
+      tip: `The six vowels: ${on("chr-standard", "ᎠᎡᎢᎣᎤᎥ")}. Each other key is a whole syllable, with more on Shift.`,
+    },
+    iu: {
+      tutor: "Typing tutor",
+      test: "Typing test",
+      tip: `Columns share a consonant: ${on("iu-naqittaut", "ᐃᐅᐊ")}. The finals are on the number row.`,
+    },
+    sat: {
+      tutor: "Typing tutor",
+      test: "Typing test",
+      tip: `The vowels: ${on("sat-standard", "ᱟᱚᱤᱩᱮᱳ")}.`,
     },
     hy: {
       tutor: "Տպագրության ուսուցում",

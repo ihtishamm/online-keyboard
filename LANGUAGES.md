@@ -105,3 +105,14 @@ and the evaluation results. Do not edit by hand. Tiers are defined in plan.md §
 | Wolof (/wolof) | Latn | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets; smart accents meet their target; typing test with words and sentences |
 | Hawaiian (/hawaiian) | Latn | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets; smart accents meet their target; typing test with words and sentences |
 | Māori (/maori) | Latn | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets; smart accents meet their target; typing test with words and sentences |
+| Tatar (/tatar) | Cyrl | C | yes | Beta | – | no | spell check meets its targets |
+| Bashkir (/bashkir) | Cyrl | C | yes | Beta | – | no | spell check meets its targets; typing test with words and sentences |
+| Yiddish (/yiddish) | Hebr | – | yes | Beta | – | no | typing tutor |
+| Amharic (/amharic) | Ethi | – | yes | Beta | – | no | typing tutor |
+| Tigrinya (/tigrinya) | Ethi | – | yes | Beta | – | no | typing tutor |
+| Tibetan (/tibetan) | Tibt | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets; typing test with words and sentences |
+| Syriac (/syriac) | Syrc | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets; typing test with words and sentences |
+| Cherokee (/cherokee) | Cher | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets; typing test with words and sentences |
+| Inuktitut (/inuktitut) | Cans | C | yes | Beta | – | no | word list of 20k+ words; spell check meets its targets; typing test with words and sentences |
+| Santali (/santali) | Olck | C | yes | Beta | – | no | spell check meets its targets |
+| Bodo (/bodo) | Deva | – | no | no | – | no | typing tutor |

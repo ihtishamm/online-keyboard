@@ -360,6 +360,30 @@ import hawStandard from "../languages/hawaiian/standard.json";
 import maori from "../languages/maori/language.json";
 import miEasy from "../languages/maori/easy.json";
 import miStandard from "../languages/maori/standard.json";
+import tatar from "../languages/tatar/language.json";
+import ttStandard from "../languages/tatar/standard.json";
+import bashkir from "../languages/bashkir/language.json";
+import baStandard from "../languages/bashkir/standard.json";
+import yiddish from "../languages/yiddish/language.json";
+import yiPasekh from "../languages/yiddish/pasekh.json";
+import amharic from "../languages/amharic/language.json";
+import amGff from "../languages/amharic/gff.json";
+import tigrinya from "../languages/tigrinya/language.json";
+import tiGff from "../languages/tigrinya/gff.json";
+import tibetan from "../languages/tibetan/language.json";
+import boStandard from "../languages/tibetan/standard.json";
+import syriac from "../languages/syriac/language.json";
+import syrStandard from "../languages/syriac/standard.json";
+import syrPhonetic from "../languages/syriac/phonetic.json";
+import cherokee from "../languages/cherokee/language.json";
+import chrStandard from "../languages/cherokee/standard.json";
+import chrPhonetic from "../languages/cherokee/phonetic.json";
+import inuktitut from "../languages/inuktitut/language.json";
+import iuNaqittaut from "../languages/inuktitut/naqittaut.json";
+import santali from "../languages/santali/language.json";
+import satStandard from "../languages/santali/standard.json";
+import bodo from "../languages/bodo/language.json";
+import brxInscript from "../languages/bodo/inscript.json";
 
 /** Every language.json, in page order. */
 export const LANGUAGE_FILES = [
@@ -463,6 +487,17 @@ export const LANGUAGE_FILES = [
   wolof,
   hawaiian,
   maori,
+  tatar,
+  bashkir,
+  yiddish,
+  amharic,
+  tigrinya,
+  tibetan,
+  syriac,
+  cherokee,
+  inuktitut,
+  santali,
+  bodo,
 ] as LanguageFile[];
 
 /** Every layout file, by language, in each language's order. */
@@ -677,6 +712,19 @@ export const RAW_LAYOUTS = [
   hawStandard,
   miEasy,
   miStandard,
+  ttStandard,
+  baStandard,
+  yiPasekh,
+  amGff,
+  tiGff,
+  boStandard,
+  syrStandard,
+  syrPhonetic,
+  chrStandard,
+  chrPhonetic,
+  iuNaqittaut,
+  satStandard,
+  brxInscript,
 ] as LayoutInput[];
 
 /** The transliteration schemes the layouts use. */

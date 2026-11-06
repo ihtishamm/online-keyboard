@@ -1,11 +1,5 @@
 import AxeBuilder from "@axe-core/playwright";
-import {
-  deadStrokeMap,
-  keystrokeMap,
-  typingParts,
-  type Keystroke,
-  type Layout,
-} from "@okb/engine";
+import { deadStrokeMap, keystrokeMap, typingParts, type Keystroke, type Layout } from "@okb/engine";
 import { expect, test, type Page } from "@playwright/test";
 import { readdirSync, readFileSync } from "node:fs";
 
@@ -65,6 +59,12 @@ function layoutsOf(slug: string): Map<string, Layout & { translit?: string }> {
 /** "ur-phonetic" -> "phonetic", as in @okb/layouts. */
 const layoutSlug = (id: string) => id.slice(id.indexOf("-") + 1);
 
+/**
+ * Layouts that build letters from several keys (GFF: a consonant, then a vowel): the keys to
+ * press for the sample's first word, on a US keyboard.
+ */
+const TYPED_AS: Readonly<Record<string, string>> = { amharic: "selam", tigrinya: "selam" };
+
 const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 for (const language of LANGUAGES) {
@@ -90,7 +90,9 @@ for (const language of LANGUAGES) {
     test(`types ${word} from the physical keyboard`, async ({ page, isMobile }) => {
       test.skip(isMobile, "physical keyboard");
       await editor(page).click();
-      await typeText(page, layout, word);
+      const keys = TYPED_AS[language.slug];
+      if (keys) await page.keyboard.type(keys);
+      else await typeText(page, layout, word);
       await expect(editor(page)).toHaveValue(word);
     });
 
@@ -113,7 +115,18 @@ for (const language of LANGUAGES) {
       );
       // Hangul keys show letters that join: tap a whole word's letters and expect the syllables.
       const hangul = layout.composer === "hangul";
-      const source = hangul ? typingParts(word) : language.sample.toLowerCase();
+      // GFF builds the word from its sounds: tap s, e, l, a, m and expect ሰላም.
+      const keysFor = TYPED_AS[language.slug];
+      if (keysFor) {
+        for (const ch of keysFor)
+          await keyboard.locator(`button[data-key="Key${ch.toUpperCase()}"]`).tap();
+        await expect(editor(page)).toHaveValue(word);
+        return;
+      }
+      // Lower case, unless that leaves the keyboard: Cherokee's lower case (ꭳ) is on no key.
+      const lower = language.sample.toLowerCase();
+      const cased = [...lower].filter((ch) => byChar.has(ch)).length > 1 ? lower : language.sample;
+      const source = hangul ? typingParts(word) : cased;
       const letters = [...source].filter((ch) => byChar.has(ch));
       const typed = hangul ? letters : letters.slice(0, 5);
       expect(typed.length, `letters of "${language.sample}" on the keyboard`).toBeGreaterThan(1);

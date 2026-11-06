@@ -171,6 +171,12 @@
   --stack-thaana: "Noto Sans Thaana", "Inter Variable", sans-serif;
   --stack-hebrew: "Noto Sans Hebrew", "Inter Variable", sans-serif;
   --stack-armenian: "Noto Sans Armenian", "Inter Variable", sans-serif;
+  --stack-ethiopic: "Noto Sans Ethiopic", "Inter Variable", sans-serif;
+  --stack-tibetan: "Noto Serif Tibetan", "Inter Variable", sans-serif;
+  --stack-syriac: "Noto Sans Syriac", "Inter Variable", sans-serif;
+  --stack-cherokee: "Noto Sans Cherokee", "Inter Variable", sans-serif;
+  --stack-canadian-aboriginal: "Noto Sans Canadian Aboriginal", "Inter Variable", sans-serif;
+  --stack-ol-chiki: "Noto Sans Ol Chiki", "Inter Variable", sans-serif;
   --stack-georgian: "Noto Sans Georgian", "Inter Variable", sans-serif;
   --stack-thai: "Noto Sans Thai", "Inter Variable", sans-serif;
   --stack-lao: "Noto Sans Lao", "Inter Variable", sans-serif;
@@ -287,6 +293,36 @@
 
   .font-hebrew {
     font-family: var(--stack-hebrew);
+    line-height: 1.8;
+  }
+
+  .font-ethiopic {
+    font-family: var(--stack-ethiopic);
+    line-height: 2;
+  }
+
+  .font-tibetan {
+    font-family: var(--stack-tibetan);
+    line-height: 2.2;
+  }
+
+  .font-syriac {
+    font-family: var(--stack-syriac);
+    line-height: 2;
+  }
+
+  .font-cherokee {
+    font-family: var(--stack-cherokee);
+    line-height: 1.8;
+  }
+
+  .font-canadian-aboriginal {
+    font-family: var(--stack-canadian-aboriginal);
+    line-height: 1.8;
+  }
+
+  .font-ol-chiki {
+    font-family: var(--stack-ol-chiki);
     line-height: 1.8;
   }
 

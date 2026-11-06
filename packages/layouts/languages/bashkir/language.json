@@ -1,0 +1,25 @@
+{
+  "slug": "bashkir",
+  "code": "ba",
+  "order": 930,
+  "lang": "ba",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Bashkir",
+    "native": "Башҡортса"
+  },
+  "aliases": [],
+  "region": "central-asia",
+  "fonts": ["latin"],
+  "layouts": ["ba-standard"],
+  "sample": "Һаумыһығыҙ! Бөгөн хәлдәрегеҙ нисек?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ba",
+    "bing": "ba"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

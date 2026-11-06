@@ -1,0 +1,13 @@
+{
+  "source": "amwiki.xml.bz2",
+  "pages": 16377,
+  "sentences": 127032,
+  "repeatedSentencesSkipped": 15750,
+  "tokens": 1529880,
+  "distinctWords": 211036,
+  "wordsKept": 56215,
+  "nextWordHeads": 6920,
+  "text": "am-train.txt",
+  "textSentences": 97,
+  "textWeight": 21.36
+}

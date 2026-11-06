@@ -1,0 +1,25 @@
+{
+  "slug": "tibetan",
+  "code": "bo",
+  "order": 970,
+  "lang": "bo",
+  "script": "Tibt",
+  "dir": "ltr",
+  "name": {
+    "en": "Tibetan",
+    "native": "བོད་སྐད"
+  },
+  "aliases": [],
+  "region": "east-asia",
+  "fonts": ["tibetan"],
+  "layouts": ["bo-standard"],
+  "sample": "བཀྲ་ཤིས་བདེ་ལེགས།",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "bo",
+    "bing": "bo"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

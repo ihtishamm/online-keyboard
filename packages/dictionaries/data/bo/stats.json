@@ -1,0 +1,10 @@
+{
+  "source": "bowiki.xml.bz2",
+  "pages": 15249,
+  "sentences": 838829,
+  "repeatedSentencesSkipped": 243359,
+  "tokens": 10458952,
+  "distinctWords": 29051,
+  "wordsKept": 11119,
+  "nextWordHeads": 6251
+}

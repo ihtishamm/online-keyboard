@@ -17,6 +17,17 @@ const SLUG: Record<string, string> = {
   ks: "kashmiri",
   bal: "balochi",
   hno: "hindko",
+  tt: "tatar",
+  ba: "bashkir",
+  yi: "yiddish",
+  am: "amharic",
+  ti: "tigrinya",
+  bo: "tibetan",
+  syr: "syriac",
+  chr: "cherokee",
+  iu: "inuktitut",
+  sat: "santali",
+  brx: "bodo",
   brh: "brahui",
   scl: "shina",
   khw: "khowar",
@@ -271,6 +282,8 @@ describe("built word lists", () => {
         for (const out of desktopCharacters(getLayout(id))) for (const c of out) typeable.add(c);
         // Dead keys too: ^ then a types â on Turkish Q.
         for (const d of getLayout(id).deadkeys) for (const c of d.out) typeable.add(c);
+        // And rules on what is typed: GFF builds ሰ from s then e, Pasekh יִ from י then I.
+        for (const r of getLayout(id).rules) for (const c of r.add) typeable.add(c);
       }
       typeable.add("\u200C"); // the ZWNJ key exists on every Arabic-script layout we ship
       // Latin pages: the accent bar types the language's letters, in both cases.

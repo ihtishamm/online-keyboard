@@ -1,0 +1,25 @@
+{
+  "slug": "tatar",
+  "code": "tt",
+  "order": 920,
+  "lang": "tt",
+  "script": "Cyrl",
+  "dir": "ltr",
+  "name": {
+    "en": "Tatar",
+    "native": "Татарча"
+  },
+  "aliases": [],
+  "region": "central-asia",
+  "fonts": ["latin"],
+  "layouts": ["tt-standard"],
+  "sample": "Сәлам! Бүген хәлләрегез ничек?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "tt",
+    "bing": "tt"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

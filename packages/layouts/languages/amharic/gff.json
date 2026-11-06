@@ -1,0 +1,3510 @@
+{
+  "id": "am-gff",
+  "lang": "am",
+  "script": "Ethi",
+  "dir": "ltr",
+  "name": {
+    "en": "GFF syllables",
+    "native": "ጂኤፍኤፍ"
+  },
+  "source": "Keyman GFF Amharic by the Geʾez Frontier Foundation (MIT): type a consonant, then a vowel (se ሰ, sa ሳ).",
+  "keys": {
+    "Backquote": {
+      "n": "`",
+      "s": "~"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "!"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "@"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "#"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "$"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "%"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "^"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "&"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "*"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")"
+    },
+    "Minus": {
+      "s": "\u135F",
+      "n": "-"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+"
+    },
+    "KeyQ": {
+      "s": "ቅ",
+      "n": "ቅ"
+    },
+    "KeyW": {
+      "s": "ው",
+      "n": "ው"
+    },
+    "KeyE": {
+      "n": "እ",
+      "s": "እ"
+    },
+    "KeyR": {
+      "s": "ር",
+      "n": "ር"
+    },
+    "KeyT": {
+      "n": "ት",
+      "s": "ጥ"
+    },
+    "KeyY": {
+      "s": "ይ",
+      "n": "ይ"
+    },
+    "KeyU": {
+      "n": "ኡ",
+      "s": "ኡ"
+    },
+    "KeyI": {
+      "n": "ኢ",
+      "s": "ኢ"
+    },
+    "KeyO": {
+      "n": "ኦ",
+      "s": "ኦ"
+    },
+    "KeyP": {
+      "s": "ጵ",
+      "n": "ፕ"
+    },
+    "BracketLeft": {
+      "n": "[",
+      "s": "{"
+    },
+    "BracketRight": {
+      "n": "]",
+      "s": "}"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyA": {
+      "n": "አ",
+      "s": "አ"
+    },
+    "KeyS": {
+      "n": "ስ",
+      "s": "ጽ"
+    },
+    "KeyD": {
+      "s": "ድ",
+      "n": "ድ"
+    },
+    "KeyF": {
+      "s": "ፍ",
+      "n": "ፍ"
+    },
+    "KeyG": {
+      "s": "ግ",
+      "n": "ግ"
+    },
+    "KeyH": {
+      "n": "ህ",
+      "s": "ሕ"
+    },
+    "KeyJ": {
+      "s": "ጅ",
+      "n": "ጅ"
+    },
+    "KeyK": {
+      "n": "ክ",
+      "s": "ኽ"
+    },
+    "KeyL": {
+      "s": "ል",
+      "n": "ል"
+    },
+    "Semicolon": {
+      "s": "፡",
+      "n": "፤"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "KeyZ": {
+      "n": "ዝ",
+      "s": "ዥ"
+    },
+    "KeyX": {
+      "s": "ሽ",
+      "n": "ሽ"
+    },
+    "KeyC": {
+      "n": "ች",
+      "s": "ጭ"
+    },
+    "KeyV": {
+      "s": "ቭ",
+      "n": "ቭ"
+    },
+    "KeyB": {
+      "s": "ብ",
+      "n": "ብ"
+    },
+    "KeyN": {
+      "n": "ን",
+      "s": "ኝ"
+    },
+    "KeyM": {
+      "s": "ም",
+      "n": "ም"
+    },
+    "Comma": {
+      "n": "፣",
+      "s": "‹"
+    },
+    "Period": {
+      "s": "›",
+      "n": "."
+    },
+    "Slash": {
+      "n": "/",
+      "s": "?"
+    }
+  },
+  "rules": [
+    {
+      "before": "\u135F",
+      "typed": "\u135F",
+      "add": "_",
+      "remove": 1
+    },
+    {
+      "before": "ስ",
+      "typed": "ስ",
+      "add": "ሥ",
+      "remove": 1
+    },
+    {
+      "before": "ህ",
+      "typed": "ህ",
+      "add": "ኅ",
+      "remove": 1
+    },
+    {
+      "before": "ጽ",
+      "typed": "ጽ",
+      "add": "ፅ",
+      "remove": 1
+    },
+    {
+      "before": "፡",
+      "typed": "'",
+      "add": ""
+    },
+    {
+      "before": "አ",
+      "typed": "እ",
+      "add": "ኧ",
+      "remove": 1
+    },
+    {
+      "before": "እ",
+      "typed": "ኡ",
+      "add": "ኡ",
+      "remove": 1
+    },
+    {
+      "before": "እ",
+      "typed": "ኢ",
+      "add": "ኢ",
+      "remove": 1
+    },
+    {
+      "before": "እ",
+      "typed": "አ",
+      "add": "ኣ",
+      "remove": 1
+    },
+    {
+      "before": "ኢ",
+      "typed": "እ",
+      "add": "ኤ",
+      "remove": 1
+    },
+    {
+      "before": "እ",
+      "typed": "ኦ",
+      "add": "ኦ",
+      "remove": 1
+    },
+    {
+      "before": "እ",
+      "typed": "እ",
+      "add": "ዕ",
+      "remove": 1
+    },
+    {
+      "before": "ዒ",
+      "typed": "እ",
+      "add": "ዔ",
+      "remove": 1
+    },
+    {
+      "before": "ኡ",
+      "typed": "ኡ",
+      "add": "ዑ",
+      "remove": 1
+    },
+    {
+      "before": "ኢ",
+      "typed": "ኢ",
+      "add": "ዒ",
+      "remove": 1
+    },
+    {
+      "before": "ኦ",
+      "typed": "ኦ",
+      "add": "ዖ",
+      "remove": 1
+    },
+    {
+      "before": "አ",
+      "typed": "አ",
+      "add": "ዓ",
+      "remove": 1
+    },
+    {
+      "before": "ዓ",
+      "typed": "አ",
+      "add": "ዐ",
+      "remove": 1
+    },
+    {
+      "before": "ዐ",
+      "typed": "አ",
+      "add": "ኣ",
+      "remove": 1
+    },
+    {
+      "before": "ህ",
+      "typed": "እ",
+      "add": "ሀ",
+      "remove": 1
+    },
+    {
+      "before": "ል",
+      "typed": "እ",
+      "add": "ለ",
+      "remove": 1
+    },
+    {
+      "before": "ሕ",
+      "typed": "እ",
+      "add": "ሐ",
+      "remove": 1
+    },
+    {
+      "before": "𞟥",
+      "typed": "እ",
+      "add": "𞟠",
+      "remove": 2
+    },
+    {
+      "before": "ም",
+      "typed": "እ",
+      "add": "መ",
+      "remove": 1
+    },
+    {
+      "before": "ሥ",
+      "typed": "እ",
+      "add": "ሠ",
+      "remove": 1
+    },
+    {
+      "before": "ር",
+      "typed": "እ",
+      "add": "ረ",
+      "remove": 1
+    },
+    {
+      "before": "ስ",
+      "typed": "እ",
+      "add": "ሰ",
+      "remove": 1
+    },
+    {
+      "before": "ሽ",
+      "typed": "እ",
+      "add": "ሸ",
+      "remove": 1
+    },
+    {
+      "before": "ቅ",
+      "typed": "እ",
+      "add": "ቀ",
+      "remove": 1
+    },
+    {
+      "before": "ቕ",
+      "typed": "እ",
+      "add": "ቐ",
+      "remove": 1
+    },
+    {
+      "before": "ብ",
+      "typed": "እ",
+      "add": "በ",
+      "remove": 1
+    },
+    {
+      "before": "ቭ",
+      "typed": "እ",
+      "add": "ቨ",
+      "remove": 1
+    },
+    {
+      "before": "ት",
+      "typed": "እ",
+      "add": "ተ",
+      "remove": 1
+    },
+    {
+      "before": "ች",
+      "typed": "እ",
+      "add": "ቸ",
+      "remove": 1
+    },
+    {
+      "before": "ኅ",
+      "typed": "እ",
+      "add": "ኀ",
+      "remove": 1
+    },
+    {
+      "before": "ን",
+      "typed": "እ",
+      "add": "ነ",
+      "remove": 1
+    },
+    {
+      "before": "ኝ",
+      "typed": "እ",
+      "add": "ኘ",
+      "remove": 1
+    },
+    {
+      "before": "ክ",
+      "typed": "እ",
+      "add": "ከ",
+      "remove": 1
+    },
+    {
+      "before": "ኽ",
+      "typed": "እ",
+      "add": "ኸ",
+      "remove": 1
+    },
+    {
+      "before": "ው",
+      "typed": "እ",
+      "add": "ወ",
+      "remove": 1
+    },
+    {
+      "before": "ዕ",
+      "typed": "እ",
+      "add": "ዐ",
+      "remove": 1
+    },
+    {
+      "before": "ዝ",
+      "typed": "እ",
+      "add": "ዘ",
+      "remove": 1
+    },
+    {
+      "before": "ዥ",
+      "typed": "እ",
+      "add": "ዠ",
+      "remove": 1
+    },
+    {
+      "before": "ይ",
+      "typed": "እ",
+      "add": "የ",
+      "remove": 1
+    },
+    {
+      "before": "ድ",
+      "typed": "እ",
+      "add": "ደ",
+      "remove": 1
+    },
+    {
+      "before": "ጅ",
+      "typed": "እ",
+      "add": "ጀ",
+      "remove": 1
+    },
+    {
+      "before": "ግ",
+      "typed": "እ",
+      "add": "ገ",
+      "remove": 1
+    },
+    {
+      "before": "ጝ",
+      "typed": "እ",
+      "add": "ጘ",
+      "remove": 1
+    },
+    {
+      "before": "ጥ",
+      "typed": "እ",
+      "add": "ጠ",
+      "remove": 1
+    },
+    {
+      "before": "ጭ",
+      "typed": "እ",
+      "add": "ጨ",
+      "remove": 1
+    },
+    {
+      "before": "ጵ",
+      "typed": "እ",
+      "add": "ጰ",
+      "remove": 1
+    },
+    {
+      "before": "ጽ",
+      "typed": "እ",
+      "add": "ጸ",
+      "remove": 1
+    },
+    {
+      "before": "ፅ",
+      "typed": "እ",
+      "add": "ፀ",
+      "remove": 1
+    },
+    {
+      "before": "ፍ",
+      "typed": "እ",
+      "add": "ፈ",
+      "remove": 1
+    },
+    {
+      "before": "ፕ",
+      "typed": "እ",
+      "add": "ፐ",
+      "remove": 1
+    },
+    {
+      "before": "ህ",
+      "typed": "ኡ",
+      "add": "ሁ",
+      "remove": 1
+    },
+    {
+      "before": "ል",
+      "typed": "ኡ",
+      "add": "ሉ",
+      "remove": 1
+    },
+    {
+      "before": "ሕ",
+      "typed": "ኡ",
+      "add": "ሑ",
+      "remove": 1
+    },
+    {
+      "before": "𞟥",
+      "typed": "ኡ",
+      "add": "𞟡",
+      "remove": 2
+    },
+    {
+      "before": "ም",
+      "typed": "ኡ",
+      "add": "ሙ",
+      "remove": 1
+    },
+    {
+      "before": "ሥ",
+      "typed": "ኡ",
+      "add": "ሡ",
+      "remove": 1
+    },
+    {
+      "before": "ር",
+      "typed": "ኡ",
+      "add": "ሩ",
+      "remove": 1
+    },
+    {
+      "before": "ስ",
+      "typed": "ኡ",
+      "add": "ሱ",
+      "remove": 1
+    },
+    {
+      "before": "ሽ",
+      "typed": "ኡ",
+      "add": "ሹ",
+      "remove": 1
+    },
+    {
+      "before": "ቅ",
+      "typed": "ኡ",
+      "add": "ቁ",
+      "remove": 1
+    },
+    {
+      "before": "ቕ",
+      "typed": "ኡ",
+      "add": "ቑ",
+      "remove": 1
+    },
+    {
+      "before": "ብ",
+      "typed": "ኡ",
+      "add": "ቡ",
+      "remove": 1
+    },
+    {
+      "before": "ቭ",
+      "typed": "ኡ",
+      "add": "ቩ",
+      "remove": 1
+    },
+    {
+      "before": "ት",
+      "typed": "ኡ",
+      "add": "ቱ",
+      "remove": 1
+    },
+    {
+      "before": "ች",
+      "typed": "ኡ",
+      "add": "ቹ",
+      "remove": 1
+    },
+    {
+      "before": "ኅ",
+      "typed": "ኡ",
+      "add": "ኁ",
+      "remove": 1
+    },
+    {
+      "before": "ን",
+      "typed": "ኡ",
+      "add": "ኑ",
+      "remove": 1
+    },
+    {
+      "before": "ኝ",
+      "typed": "ኡ",
+      "add": "ኙ",
+      "remove": 1
+    },
+    {
+      "before": "ክ",
+      "typed": "ኡ",
+      "add": "ኩ",
+      "remove": 1
+    },
+    {
+      "before": "ኽ",
+      "typed": "ኡ",
+      "add": "ኹ",
+      "remove": 1
+    },
+    {
+      "before": "ው",
+      "typed": "ኡ",
+      "add": "ዉ",
+      "remove": 1
+    },
+    {
+      "before": "ዕ",
+      "typed": "ኡ",
+      "add": "ዑ",
+      "remove": 1
+    },
+    {
+      "before": "ዝ",
+      "typed": "ኡ",
+      "add": "ዙ",
+      "remove": 1
+    },
+    {
+      "before": "ዥ",
+      "typed": "ኡ",
+      "add": "ዡ",
+      "remove": 1
+    },
+    {
+      "before": "ይ",
+      "typed": "ኡ",
+      "add": "ዩ",
+      "remove": 1
+    },
+    {
+      "before": "ድ",
+      "typed": "ኡ",
+      "add": "ዱ",
+      "remove": 1
+    },
+    {
+      "before": "ጅ",
+      "typed": "ኡ",
+      "add": "ጁ",
+      "remove": 1
+    },
+    {
+      "before": "ግ",
+      "typed": "ኡ",
+      "add": "ጉ",
+      "remove": 1
+    },
+    {
+      "before": "ጝ",
+      "typed": "ኡ",
+      "add": "ጙ",
+      "remove": 1
+    },
+    {
+      "before": "ጥ",
+      "typed": "ኡ",
+      "add": "ጡ",
+      "remove": 1
+    },
+    {
+      "before": "ጭ",
+      "typed": "ኡ",
+      "add": "ጩ",
+      "remove": 1
+    },
+    {
+      "before": "ጵ",
+      "typed": "ኡ",
+      "add": "ጱ",
+      "remove": 1
+    },
+    {
+      "before": "ጽ",
+      "typed": "ኡ",
+      "add": "ጹ",
+      "remove": 1
+    },
+    {
+      "before": "ፅ",
+      "typed": "ኡ",
+      "add": "ፁ",
+      "remove": 1
+    },
+    {
+      "before": "ፍ",
+      "typed": "ኡ",
+      "add": "ፉ",
+      "remove": 1
+    },
+    {
+      "before": "ፕ",
+      "typed": "ኡ",
+      "add": "ፑ",
+      "remove": 1
+    },
+    {
+      "before": "ህ",
+      "typed": "ኢ",
+      "add": "ሂ",
+      "remove": 1
+    },
+    {
+      "before": "ል",
+      "typed": "ኢ",
+      "add": "ሊ",
+      "remove": 1
+    },
+    {
+      "before": "ሕ",
+      "typed": "ኢ",
+      "add": "ሒ",
+      "remove": 1
+    },
+    {
+      "before": "𞟥",
+      "typed": "ኢ",
+      "add": "𞟢",
+      "remove": 2
+    },
+    {
+      "before": "ም",
+      "typed": "ኢ",
+      "add": "ሚ",
+      "remove": 1
+    },
+    {
+      "before": "ሥ",
+      "typed": "ኢ",
+      "add": "ሢ",
+      "remove": 1
+    },
+    {
+      "before": "ር",
+      "typed": "ኢ",
+      "add": "ሪ",
+      "remove": 1
+    },
+    {
+      "before": "ስ",
+      "typed": "ኢ",
+      "add": "ሲ",
+      "remove": 1
+    },
+    {
+      "before": "ሽ",
+      "typed": "ኢ",
+      "add": "ሺ",
+      "remove": 1
+    },
+    {
+      "before": "ቅ",
+      "typed": "ኢ",
+      "add": "ቂ",
+      "remove": 1
+    },
+    {
+      "before": "ቕ",
+      "typed": "ኢ",
+      "add": "ቒ",
+      "remove": 1
+    },
+    {
+      "before": "ብ",
+      "typed": "ኢ",
+      "add": "ቢ",
+      "remove": 1
+    },
+    {
+      "before": "ቭ",
+      "typed": "ኢ",
+      "add": "ቪ",
+      "remove": 1
+    },
+    {
+      "before": "ት",
+      "typed": "ኢ",
+      "add": "ቲ",
+      "remove": 1
+    },
+    {
+      "before": "ች",
+      "typed": "ኢ",
+      "add": "ቺ",
+      "remove": 1
+    },
+    {
+      "before": "ኅ",
+      "typed": "ኢ",
+      "add": "ኂ",
+      "remove": 1
+    },
+    {
+      "before": "ን",
+      "typed": "ኢ",
+      "add": "ኒ",
+      "remove": 1
+    },
+    {
+      "before": "ኝ",
+      "typed": "ኢ",
+      "add": "ኚ",
+      "remove": 1
+    },
+    {
+      "before": "ክ",
+      "typed": "ኢ",
+      "add": "ኪ",
+      "remove": 1
+    },
+    {
+      "before": "ኽ",
+      "typed": "ኢ",
+      "add": "ኺ",
+      "remove": 1
+    },
+    {
+      "before": "ው",
+      "typed": "ኢ",
+      "add": "ዊ",
+      "remove": 1
+    },
+    {
+      "before": "ዕ",
+      "typed": "ኢ",
+      "add": "ዒ",
+      "remove": 1
+    },
+    {
+      "before": "ዝ",
+      "typed": "ኢ",
+      "add": "ዚ",
+      "remove": 1
+    },
+    {
+      "before": "ዥ",
+      "typed": "ኢ",
+      "add": "ዢ",
+      "remove": 1
+    },
+    {
+      "before": "ይ",
+      "typed": "ኢ",
+      "add": "ዪ",
+      "remove": 1
+    },
+    {
+      "before": "ድ",
+      "typed": "ኢ",
+      "add": "ዲ",
+      "remove": 1
+    },
+    {
+      "before": "ጅ",
+      "typed": "ኢ",
+      "add": "ጂ",
+      "remove": 1
+    },
+    {
+      "before": "ግ",
+      "typed": "ኢ",
+      "add": "ጊ",
+      "remove": 1
+    },
+    {
+      "before": "ጝ",
+      "typed": "ኢ",
+      "add": "ጚ",
+      "remove": 1
+    },
+    {
+      "before": "ጥ",
+      "typed": "ኢ",
+      "add": "ጢ",
+      "remove": 1
+    },
+    {
+      "before": "ጭ",
+      "typed": "ኢ",
+      "add": "ጪ",
+      "remove": 1
+    },
+    {
+      "before": "ጵ",
+      "typed": "ኢ",
+      "add": "ጲ",
+      "remove": 1
+    },
+    {
+      "before": "ጽ",
+      "typed": "ኢ",
+      "add": "ጺ",
+      "remove": 1
+    },
+    {
+      "before": "ፅ",
+      "typed": "ኢ",
+      "add": "ፂ",
+      "remove": 1
+    },
+    {
+      "before": "ፍ",
+      "typed": "ኢ",
+      "add": "ፊ",
+      "remove": 1
+    },
+    {
+      "before": "ፕ",
+      "typed": "ኢ",
+      "add": "ፒ",
+      "remove": 1
+    },
+    {
+      "before": "ህ",
+      "typed": "አ",
+      "add": "ሃ",
+      "remove": 1
+    },
+    {
+      "before": "ል",
+      "typed": "አ",
+      "add": "ላ",
+      "remove": 1
+    },
+    {
+      "before": "ሕ",
+      "typed": "አ",
+      "add": "ሓ",
+      "remove": 1
+    },
+    {
+      "before": "𞟥",
+      "typed": "አ",
+      "add": "𞟣",
+      "remove": 2
+    },
+    {
+      "before": "ም",
+      "typed": "አ",
+      "add": "ማ",
+      "remove": 1
+    },
+    {
+      "before": "ሥ",
+      "typed": "አ",
+      "add": "ሣ",
+      "remove": 1
+    },
+    {
+      "before": "ር",
+      "typed": "አ",
+      "add": "ራ",
+      "remove": 1
+    },
+    {
+      "before": "ስ",
+      "typed": "አ",
+      "add": "ሳ",
+      "remove": 1
+    },
+    {
+      "before": "ሽ",
+      "typed": "አ",
+      "add": "ሻ",
+      "remove": 1
+    },
+    {
+      "before": "ቅ",
+      "typed": "አ",
+      "add": "ቃ",
+      "remove": 1
+    },
+    {
+      "before": "ቕ",
+      "typed": "አ",
+      "add": "ቓ",
+      "remove": 1
+    },
+    {
+      "before": "ብ",
+      "typed": "አ",
+      "add": "ባ",
+      "remove": 1
+    },
+    {
+      "before": "ቭ",
+      "typed": "አ",
+      "add": "ቫ",
+      "remove": 1
+    },
+    {
+      "before": "ት",
+      "typed": "አ",
+      "add": "ታ",
+      "remove": 1
+    },
+    {
+      "before": "ች",
+      "typed": "አ",
+      "add": "ቻ",
+      "remove": 1
+    },
+    {
+      "before": "ኅ",
+      "typed": "አ",
+      "add": "ኃ",
+      "remove": 1
+    },
+    {
+      "before": "ን",
+      "typed": "አ",
+      "add": "ና",
+      "remove": 1
+    },
+    {
+      "before": "ኝ",
+      "typed": "አ",
+      "add": "ኛ",
+      "remove": 1
+    },
+    {
+      "before": "ክ",
+      "typed": "አ",
+      "add": "ካ",
+      "remove": 1
+    },
+    {
+      "before": "ኽ",
+      "typed": "አ",
+      "add": "ኻ",
+      "remove": 1
+    },
+    {
+      "before": "ው",
+      "typed": "አ",
+      "add": "ዋ",
+      "remove": 1
+    },
+    {
+      "before": "ዕ",
+      "typed": "አ",
+      "add": "ዓ",
+      "remove": 1
+    },
+    {
+      "before": "ዝ",
+      "typed": "አ",
+      "add": "ዛ",
+      "remove": 1
+    },
+    {
+      "before": "ዥ",
+      "typed": "አ",
+      "add": "ዣ",
+      "remove": 1
+    },
+    {
+      "before": "ይ",
+      "typed": "አ",
+      "add": "ያ",
+      "remove": 1
+    },
+    {
+      "before": "ድ",
+      "typed": "አ",
+      "add": "ዳ",
+      "remove": 1
+    },
+    {
+      "before": "ጅ",
+      "typed": "አ",
+      "add": "ጃ",
+      "remove": 1
+    },
+    {
+      "before": "ግ",
+      "typed": "አ",
+      "add": "ጋ",
+      "remove": 1
+    },
+    {
+      "before": "ጝ",
+      "typed": "አ",
+      "add": "ጛ",
+      "remove": 1
+    },
+    {
+      "before": "ጥ",
+      "typed": "አ",
+      "add": "ጣ",
+      "remove": 1
+    },
+    {
+      "before": "ጭ",
+      "typed": "አ",
+      "add": "ጫ",
+      "remove": 1
+    },
+    {
+      "before": "ጵ",
+      "typed": "አ",
+      "add": "ጳ",
+      "remove": 1
+    },
+    {
+      "before": "ጽ",
+      "typed": "አ",
+      "add": "ጻ",
+      "remove": 1
+    },
+    {
+      "before": "ፅ",
+      "typed": "አ",
+      "add": "ፃ",
+      "remove": 1
+    },
+    {
+      "before": "ፍ",
+      "typed": "አ",
+      "add": "ፋ",
+      "remove": 1
+    },
+    {
+      "before": "ፕ",
+      "typed": "አ",
+      "add": "ፓ",
+      "remove": 1
+    },
+    {
+      "before": "ሂ",
+      "typed": "እ",
+      "add": "ሄ",
+      "remove": 1
+    },
+    {
+      "before": "ሊ",
+      "typed": "እ",
+      "add": "ሌ",
+      "remove": 1
+    },
+    {
+      "before": "ሒ",
+      "typed": "እ",
+      "add": "ሔ",
+      "remove": 1
+    },
+    {
+      "before": "𞟢",
+      "typed": "እ",
+      "add": "𞟤",
+      "remove": 2
+    },
+    {
+      "before": "ሚ",
+      "typed": "እ",
+      "add": "ሜ",
+      "remove": 1
+    },
+    {
+      "before": "ሢ",
+      "typed": "እ",
+      "add": "ሤ",
+      "remove": 1
+    },
+    {
+      "before": "ሪ",
+      "typed": "እ",
+      "add": "ሬ",
+      "remove": 1
+    },
+    {
+      "before": "ሲ",
+      "typed": "እ",
+      "add": "ሴ",
+      "remove": 1
+    },
+    {
+      "before": "ሺ",
+      "typed": "እ",
+      "add": "ሼ",
+      "remove": 1
+    },
+    {
+      "before": "ቂ",
+      "typed": "እ",
+      "add": "ቄ",
+      "remove": 1
+    },
+    {
+      "before": "ቒ",
+      "typed": "እ",
+      "add": "ቔ",
+      "remove": 1
+    },
+    {
+      "before": "ቢ",
+      "typed": "እ",
+      "add": "ቤ",
+      "remove": 1
+    },
+    {
+      "before": "ቪ",
+      "typed": "እ",
+      "add": "ቬ",
+      "remove": 1
+    },
+    {
+      "before": "ቲ",
+      "typed": "እ",
+      "add": "ቴ",
+      "remove": 1
+    },
+    {
+      "before": "ቺ",
+      "typed": "እ",
+      "add": "ቼ",
+      "remove": 1
+    },
+    {
+      "before": "ኂ",
+      "typed": "እ",
+      "add": "ኄ",
+      "remove": 1
+    },
+    {
+      "before": "ኒ",
+      "typed": "እ",
+      "add": "ኔ",
+      "remove": 1
+    },
+    {
+      "before": "ኚ",
+      "typed": "እ",
+      "add": "ኜ",
+      "remove": 1
+    },
+    {
+      "before": "ኪ",
+      "typed": "እ",
+      "add": "ኬ",
+      "remove": 1
+    },
+    {
+      "before": "ኺ",
+      "typed": "እ",
+      "add": "ኼ",
+      "remove": 1
+    },
+    {
+      "before": "ዊ",
+      "typed": "እ",
+      "add": "ዌ",
+      "remove": 1
+    },
+    {
+      "before": "ዚ",
+      "typed": "እ",
+      "add": "ዜ",
+      "remove": 1
+    },
+    {
+      "before": "ዢ",
+      "typed": "እ",
+      "add": "ዤ",
+      "remove": 1
+    },
+    {
+      "before": "ዪ",
+      "typed": "እ",
+      "add": "ዬ",
+      "remove": 1
+    },
+    {
+      "before": "ዲ",
+      "typed": "እ",
+      "add": "ዴ",
+      "remove": 1
+    },
+    {
+      "before": "ጂ",
+      "typed": "እ",
+      "add": "ጄ",
+      "remove": 1
+    },
+    {
+      "before": "ጊ",
+      "typed": "እ",
+      "add": "ጌ",
+      "remove": 1
+    },
+    {
+      "before": "ጚ",
+      "typed": "እ",
+      "add": "ጜ",
+      "remove": 1
+    },
+    {
+      "before": "ጢ",
+      "typed": "እ",
+      "add": "ጤ",
+      "remove": 1
+    },
+    {
+      "before": "ጪ",
+      "typed": "እ",
+      "add": "ጬ",
+      "remove": 1
+    },
+    {
+      "before": "ጲ",
+      "typed": "እ",
+      "add": "ጴ",
+      "remove": 1
+    },
+    {
+      "before": "ጺ",
+      "typed": "እ",
+      "add": "ጼ",
+      "remove": 1
+    },
+    {
+      "before": "ፂ",
+      "typed": "እ",
+      "add": "ፄ",
+      "remove": 1
+    },
+    {
+      "before": "ፊ",
+      "typed": "እ",
+      "add": "ፌ",
+      "remove": 1
+    },
+    {
+      "before": "ፒ",
+      "typed": "እ",
+      "add": "ፔ",
+      "remove": 1
+    },
+    {
+      "before": "ህ",
+      "typed": "ኦ",
+      "add": "ሆ",
+      "remove": 1
+    },
+    {
+      "before": "ል",
+      "typed": "ኦ",
+      "add": "ሎ",
+      "remove": 1
+    },
+    {
+      "before": "ሕ",
+      "typed": "ኦ",
+      "add": "ሖ",
+      "remove": 1
+    },
+    {
+      "before": "𞟥",
+      "typed": "ኦ",
+      "add": "𞟦",
+      "remove": 2
+    },
+    {
+      "before": "ም",
+      "typed": "ኦ",
+      "add": "ሞ",
+      "remove": 1
+    },
+    {
+      "before": "ሥ",
+      "typed": "ኦ",
+      "add": "ሦ",
+      "remove": 1
+    },
+    {
+      "before": "ር",
+      "typed": "ኦ",
+      "add": "ሮ",
+      "remove": 1
+    },
+    {
+      "before": "ስ",
+      "typed": "ኦ",
+      "add": "ሶ",
+      "remove": 1
+    },
+    {
+      "before": "ሽ",
+      "typed": "ኦ",
+      "add": "ሾ",
+      "remove": 1
+    },
+    {
+      "before": "ቅ",
+      "typed": "ኦ",
+      "add": "ቆ",
+      "remove": 1
+    },
+    {
+      "before": "ቕ",
+      "typed": "ኦ",
+      "add": "ቖ",
+      "remove": 1
+    },
+    {
+      "before": "ብ",
+      "typed": "ኦ",
+      "add": "ቦ",
+      "remove": 1
+    },
+    {
+      "before": "ቭ",
+      "typed": "ኦ",
+      "add": "ቮ",
+      "remove": 1
+    },
+    {
+      "before": "ት",
+      "typed": "ኦ",
+      "add": "ቶ",
+      "remove": 1
+    },
+    {
+      "before": "ች",
+      "typed": "ኦ",
+      "add": "ቾ",
+      "remove": 1
+    },
+    {
+      "before": "ኅ",
+      "typed": "ኦ",
+      "add": "ኆ",
+      "remove": 1
+    },
+    {
+      "before": "ን",
+      "typed": "ኦ",
+      "add": "ኖ",
+      "remove": 1
+    },
+    {
+      "before": "ኝ",
+      "typed": "ኦ",
+      "add": "ኞ",
+      "remove": 1
+    },
+    {
+      "before": "ክ",
+      "typed": "ኦ",
+      "add": "ኮ",
+      "remove": 1
+    },
+    {
+      "before": "ኽ",
+      "typed": "ኦ",
+      "add": "ኾ",
+      "remove": 1
+    },
+    {
+      "before": "ው",
+      "typed": "ኦ",
+      "add": "ዎ",
+      "remove": 1
+    },
+    {
+      "before": "ዕ",
+      "typed": "ኦ",
+      "add": "ዖ",
+      "remove": 1
+    },
+    {
+      "before": "ዝ",
+      "typed": "ኦ",
+      "add": "ዞ",
+      "remove": 1
+    },
+    {
+      "before": "ዥ",
+      "typed": "ኦ",
+      "add": "ዦ",
+      "remove": 1
+    },
+    {
+      "before": "ይ",
+      "typed": "ኦ",
+      "add": "ዮ",
+      "remove": 1
+    },
+    {
+      "before": "ድ",
+      "typed": "ኦ",
+      "add": "ዶ",
+      "remove": 1
+    },
+    {
+      "before": "ጅ",
+      "typed": "ኦ",
+      "add": "ጆ",
+      "remove": 1
+    },
+    {
+      "before": "ግ",
+      "typed": "ኦ",
+      "add": "ጎ",
+      "remove": 1
+    },
+    {
+      "before": "ጝ",
+      "typed": "ኦ",
+      "add": "ጞ",
+      "remove": 1
+    },
+    {
+      "before": "ጥ",
+      "typed": "ኦ",
+      "add": "ጦ",
+      "remove": 1
+    },
+    {
+      "before": "ጭ",
+      "typed": "ኦ",
+      "add": "ጮ",
+      "remove": 1
+    },
+    {
+      "before": "ጵ",
+      "typed": "ኦ",
+      "add": "ጶ",
+      "remove": 1
+    },
+    {
+      "before": "ጽ",
+      "typed": "ኦ",
+      "add": "ጾ",
+      "remove": 1
+    },
+    {
+      "before": "ፅ",
+      "typed": "ኦ",
+      "add": "ፆ",
+      "remove": 1
+    },
+    {
+      "before": "ፍ",
+      "typed": "ኦ",
+      "add": "ፎ",
+      "remove": 1
+    },
+    {
+      "before": "ፕ",
+      "typed": "ኦ",
+      "add": "ፖ",
+      "remove": 1
+    },
+    {
+      "before": "ሁ",
+      "typed": "አ",
+      "add": "ኋ",
+      "remove": 1
+    },
+    {
+      "before": "ሉ",
+      "typed": "አ",
+      "add": "ሏ",
+      "remove": 1
+    },
+    {
+      "before": "ሑ",
+      "typed": "አ",
+      "add": "ሗ",
+      "remove": 1
+    },
+    {
+      "before": "ሙ",
+      "typed": "አ",
+      "add": "ሟ",
+      "remove": 1
+    },
+    {
+      "before": "ሡ",
+      "typed": "አ",
+      "add": "ሧ",
+      "remove": 1
+    },
+    {
+      "before": "ሩ",
+      "typed": "አ",
+      "add": "ሯ",
+      "remove": 1
+    },
+    {
+      "before": "ሱ",
+      "typed": "አ",
+      "add": "ሷ",
+      "remove": 1
+    },
+    {
+      "before": "ሹ",
+      "typed": "አ",
+      "add": "ሿ",
+      "remove": 1
+    },
+    {
+      "before": "ቁ",
+      "typed": "አ",
+      "add": "ቋ",
+      "remove": 1
+    },
+    {
+      "before": "ቡ",
+      "typed": "አ",
+      "add": "ቧ",
+      "remove": 1
+    },
+    {
+      "before": "ቩ",
+      "typed": "አ",
+      "add": "ቯ",
+      "remove": 1
+    },
+    {
+      "before": "ቱ",
+      "typed": "አ",
+      "add": "ቷ",
+      "remove": 1
+    },
+    {
+      "before": "ቹ",
+      "typed": "አ",
+      "add": "ቿ",
+      "remove": 1
+    },
+    {
+      "before": "ኁ",
+      "typed": "አ",
+      "add": "ኋ",
+      "remove": 1
+    },
+    {
+      "before": "ኑ",
+      "typed": "አ",
+      "add": "ኗ",
+      "remove": 1
+    },
+    {
+      "before": "ኙ",
+      "typed": "አ",
+      "add": "ኟ",
+      "remove": 1
+    },
+    {
+      "before": "ኩ",
+      "typed": "አ",
+      "add": "ኳ",
+      "remove": 1
+    },
+    {
+      "before": "ዙ",
+      "typed": "አ",
+      "add": "ዟ",
+      "remove": 1
+    },
+    {
+      "before": "ዡ",
+      "typed": "አ",
+      "add": "ዧ",
+      "remove": 1
+    },
+    {
+      "before": "ዱ",
+      "typed": "አ",
+      "add": "ዷ",
+      "remove": 1
+    },
+    {
+      "before": "ጁ",
+      "typed": "አ",
+      "add": "ጇ",
+      "remove": 1
+    },
+    {
+      "before": "ጉ",
+      "typed": "አ",
+      "add": "ጓ",
+      "remove": 1
+    },
+    {
+      "before": "ጡ",
+      "typed": "አ",
+      "add": "ጧ",
+      "remove": 1
+    },
+    {
+      "before": "ጩ",
+      "typed": "አ",
+      "add": "ጯ",
+      "remove": 1
+    },
+    {
+      "before": "ጱ",
+      "typed": "አ",
+      "add": "ጷ",
+      "remove": 1
+    },
+    {
+      "before": "ጹ",
+      "typed": "አ",
+      "add": "ጿ",
+      "remove": 1
+    },
+    {
+      "before": "ፁ",
+      "typed": "አ",
+      "add": "ጿ",
+      "remove": 1
+    },
+    {
+      "before": "ፉ",
+      "typed": "አ",
+      "add": "ፏ",
+      "remove": 1
+    },
+    {
+      "before": "ፑ",
+      "typed": "አ",
+      "add": "ፗ",
+      "remove": 1
+    },
+    {
+      "before": "ሁ",
+      "typed": "እ",
+      "add": "ኈ",
+      "remove": 1
+    },
+    {
+      "before": "ኁ",
+      "typed": "እ",
+      "add": "ኈ",
+      "remove": 1
+    },
+    {
+      "before": "ኩ",
+      "typed": "እ",
+      "add": "ኰ",
+      "remove": 1
+    },
+    {
+      "before": "ቁ",
+      "typed": "እ",
+      "add": "ቈ",
+      "remove": 1
+    },
+    {
+      "before": "ጉ",
+      "typed": "እ",
+      "add": "ጐ",
+      "remove": 1
+    },
+    {
+      "before": "ሁ",
+      "typed": "ኡ",
+      "add": "ኍ",
+      "remove": 1
+    },
+    {
+      "before": "ኁ",
+      "typed": "ኡ",
+      "add": "ኍ",
+      "remove": 1
+    },
+    {
+      "before": "ኩ",
+      "typed": "ኡ",
+      "add": "ኵ",
+      "remove": 1
+    },
+    {
+      "before": "ቁ",
+      "typed": "ኡ",
+      "add": "ቍ",
+      "remove": 1
+    },
+    {
+      "before": "ጉ",
+      "typed": "ኡ",
+      "add": "ጕ",
+      "remove": 1
+    },
+    {
+      "before": "ሁ",
+      "typed": "ኢ",
+      "add": "ኊ",
+      "remove": 1
+    },
+    {
+      "before": "ኁ",
+      "typed": "ኢ",
+      "add": "ኊ",
+      "remove": 1
+    },
+    {
+      "before": "ኩ",
+      "typed": "ኢ",
+      "add": "ኲ",
+      "remove": 1
+    },
+    {
+      "before": "ቁ",
+      "typed": "ኢ",
+      "add": "ቊ",
+      "remove": 1
+    },
+    {
+      "before": "ጉ",
+      "typed": "ኢ",
+      "add": "ጒ",
+      "remove": 1
+    },
+    {
+      "before": "ኊ",
+      "typed": "እ",
+      "add": "ኌ",
+      "remove": 1
+    },
+    {
+      "before": "ኲ",
+      "typed": "እ",
+      "add": "ኴ",
+      "remove": 1
+    },
+    {
+      "before": "ቊ",
+      "typed": "እ",
+      "add": "ቌ",
+      "remove": 1
+    },
+    {
+      "before": "ጒ",
+      "typed": "እ",
+      "add": "ጔ",
+      "remove": 1
+    },
+    {
+      "before": "ኮ",
+      "typed": "ኦ",
+      "add": "ኰ",
+      "remove": 1
+    },
+    {
+      "before": "ጎ",
+      "typed": "ኦ",
+      "add": "ጐ",
+      "remove": 1
+    },
+    {
+      "before": "ኰ",
+      "typed": "ኦ",
+      "add": "ኮ",
+      "remove": 1
+    },
+    {
+      "before": "ጐ",
+      "typed": "ኦ",
+      "add": "ጎ",
+      "remove": 1
+    },
+    {
+      "before": "፡",
+      "typed": "፡",
+      "add": "።",
+      "remove": 1
+    },
+    {
+      "before": "፡",
+      "typed": "-",
+      "add": "፦",
+      "remove": 1
+    },
+    {
+      "before": "፡",
+      "typed": "+",
+      "add": "፠",
+      "remove": 1
+    },
+    {
+      "before": "፡",
+      "typed": "#",
+      "add": "፨",
+      "remove": 1
+    },
+    {
+      "before": "።",
+      "typed": "፡",
+      "add": ":",
+      "remove": 1
+    },
+    {
+      "before": ":",
+      "typed": "፡",
+      "add": "፡",
+      "remove": 1
+    },
+    {
+      "before": "፣",
+      "typed": "፣",
+      "add": "፥",
+      "remove": 1
+    },
+    {
+      "before": "፥",
+      "typed": "፣",
+      "add": ",",
+      "remove": 1
+    },
+    {
+      "before": ",",
+      "typed": "፣",
+      "add": "፣",
+      "remove": 1
+    },
+    {
+      "before": "፤",
+      "typed": "፤",
+      "add": ";",
+      "remove": 1
+    },
+    {
+      "before": ";",
+      "typed": "፤",
+      "add": "፤",
+      "remove": 1
+    },
+    {
+      "before": "‹",
+      "typed": "‹",
+      "add": "«",
+      "remove": 1
+    },
+    {
+      "before": "«",
+      "typed": "‹",
+      "add": "<",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "1",
+      "add": "፩",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "2",
+      "add": "፪",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "3",
+      "add": "፫",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "4",
+      "add": "፬",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "5",
+      "add": "፭",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "6",
+      "add": "፮",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "7",
+      "add": "፯",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "8",
+      "add": "፰",
+      "remove": 1
+    },
+    {
+      "before": "#",
+      "typed": "9",
+      "add": "፱",
+      "remove": 1
+    },
+    {
+      "before": "፩",
+      "typed": "0",
+      "add": "፲",
+      "remove": 1
+    },
+    {
+      "before": "፲",
+      "typed": "0",
+      "add": "፻",
+      "remove": 1
+    },
+    {
+      "before": "፻",
+      "typed": "0",
+      "add": "፲፻",
+      "remove": 1
+    },
+    {
+      "before": "፲፻",
+      "typed": "0",
+      "add": "፼",
+      "remove": 2
+    },
+    {
+      "before": "፼",
+      "typed": "0",
+      "add": "፲፼",
+      "remove": 1
+    },
+    {
+      "before": "፲፼",
+      "typed": "0",
+      "add": "፻፼",
+      "remove": 2
+    },
+    {
+      "before": "፻፼",
+      "typed": "0",
+      "add": "፲፻፼",
+      "remove": 2
+    },
+    {
+      "before": "፲፻፼",
+      "typed": "0",
+      "add": "፼፼",
+      "remove": 3
+    },
+    {
+      "before": "፪",
+      "typed": "0",
+      "add": "፳",
+      "remove": 1
+    },
+    {
+      "before": "፫",
+      "typed": "0",
+      "add": "፴",
+      "remove": 1
+    },
+    {
+      "before": "፬",
+      "typed": "0",
+      "add": "፵",
+      "remove": 1
+    },
+    {
+      "before": "፭",
+      "typed": "0",
+      "add": "፶",
+      "remove": 1
+    },
+    {
+      "before": "፮",
+      "typed": "0",
+      "add": "፷",
+      "remove": 1
+    },
+    {
+      "before": "፯",
+      "typed": "0",
+      "add": "፸",
+      "remove": 1
+    },
+    {
+      "before": "፰",
+      "typed": "0",
+      "add": "፹",
+      "remove": 1
+    },
+    {
+      "before": "፱",
+      "typed": "0",
+      "add": "፺",
+      "remove": 1
+    },
+    {
+      "before": "፳",
+      "typed": "0",
+      "add": "፪፻",
+      "remove": 1
+    },
+    {
+      "before": "፴",
+      "typed": "0",
+      "add": "፫፻",
+      "remove": 1
+    },
+    {
+      "before": "፵",
+      "typed": "0",
+      "add": "፬፻",
+      "remove": 1
+    },
+    {
+      "before": "፶",
+      "typed": "0",
+      "add": "፭፻",
+      "remove": 1
+    },
+    {
+      "before": "፷",
+      "typed": "0",
+      "add": "፮፻",
+      "remove": 1
+    },
+    {
+      "before": "፸",
+      "typed": "0",
+      "add": "፯፻",
+      "remove": 1
+    },
+    {
+      "before": "፹",
+      "typed": "0",
+      "add": "፰፻",
+      "remove": 1
+    },
+    {
+      "before": "፺",
+      "typed": "0",
+      "add": "፱፻",
+      "remove": 1
+    },
+    {
+      "before": "፪፻",
+      "typed": "0",
+      "add": "፳፻",
+      "remove": 2
+    },
+    {
+      "before": "፫፻",
+      "typed": "0",
+      "add": "፴፻",
+      "remove": 2
+    },
+    {
+      "before": "፬፻",
+      "typed": "0",
+      "add": "፵፻",
+      "remove": 2
+    },
+    {
+      "before": "፭፻",
+      "typed": "0",
+      "add": "፶፻",
+      "remove": 2
+    },
+    {
+      "before": "፮፻",
+      "typed": "0",
+      "add": "፷፻",
+      "remove": 2
+    },
+    {
+      "before": "፯፻",
+      "typed": "0",
+      "add": "፸፻",
+      "remove": 2
+    },
+    {
+      "before": "፰፻",
+      "typed": "0",
+      "add": "፹፻",
+      "remove": 2
+    },
+    {
+      "before": "፱፻",
+      "typed": "0",
+      "add": "፺፻",
+      "remove": 2
+    },
+    {
+      "before": "፳፻",
+      "typed": "0",
+      "add": "፪፼",
+      "remove": 2
+    },
+    {
+      "before": "፴፻",
+      "typed": "0",
+      "add": "፫፼",
+      "remove": 2
+    },
+    {
+      "before": "፵፻",
+      "typed": "0",
+      "add": "፬፼",
+      "remove": 2
+    },
+    {
+      "before": "፶፻",
+      "typed": "0",
+      "add": "፭፼",
+      "remove": 2
+    },
+    {
+      "before": "፷፻",
+      "typed": "0",
+      "add": "፮፼",
+      "remove": 2
+    },
+    {
+      "before": "፸፻",
+      "typed": "0",
+      "add": "፯፼",
+      "remove": 2
+    },
+    {
+      "before": "፹፻",
+      "typed": "0",
+      "add": "፰፼",
+      "remove": 2
+    },
+    {
+      "before": "፺፻",
+      "typed": "0",
+      "add": "፱፼",
+      "remove": 2
+    },
+    {
+      "before": "፪፼",
+      "typed": "0",
+      "add": "፳፼",
+      "remove": 2
+    },
+    {
+      "before": "፫፼",
+      "typed": "0",
+      "add": "፴፼",
+      "remove": 2
+    },
+    {
+      "before": "፬፼",
+      "typed": "0",
+      "add": "፵፼",
+      "remove": 2
+    },
+    {
+      "before": "፭፼",
+      "typed": "0",
+      "add": "፶፼",
+      "remove": 2
+    },
+    {
+      "before": "፮፼",
+      "typed": "0",
+      "add": "፷፼",
+      "remove": 2
+    },
+    {
+      "before": "፯፼",
+      "typed": "0",
+      "add": "፸፼",
+      "remove": 2
+    },
+    {
+      "before": "፰፼",
+      "typed": "0",
+      "add": "፹፼",
+      "remove": 2
+    },
+    {
+      "before": "፱፼",
+      "typed": "0",
+      "add": "፺፼",
+      "remove": 2
+    },
+    {
+      "before": "፳፼",
+      "typed": "0",
+      "add": "፪፻፼",
+      "remove": 2
+    },
+    {
+      "before": "፴፼",
+      "typed": "0",
+      "add": "፫፻፼",
+      "remove": 2
+    },
+    {
+      "before": "፵፼",
+      "typed": "0",
+      "add": "፬፻፼",
+      "remove": 2
+    },
+    {
+      "before": "፶፼",
+      "typed": "0",
+      "add": "፭፻፼",
+      "remove": 2
+    },
+    {
+      "before": "፷፼",
+      "typed": "0",
+      "add": "፮፻፼",
+      "remove": 2
+    },
+    {
+      "before": "፸፼",
+      "typed": "0",
+      "add": "፯፻፼",
+      "remove": 2
+    },
+    {
+      "before": "፹፼",
+      "typed": "0",
+      "add": "፰፻፼",
+      "remove": 2
+    },
+    {
+      "before": "፺፼",
+      "typed": "0",
+      "add": "፱፻፼",
+      "remove": 2
+    },
+    {
+      "before": "፪፻፼",
+      "typed": "0",
+      "add": "፳፻፼",
+      "remove": 3
+    },
+    {
+      "before": "፫፻፼",
+      "typed": "0",
+      "add": "፴፻፼",
+      "remove": 3
+    },
+    {
+      "before": "፬፻፼",
+      "typed": "0",
+      "add": "፵፻፼",
+      "remove": 3
+    },
+    {
+      "before": "፭፻፼",
+      "typed": "0",
+      "add": "፶፻፼",
+      "remove": 3
+    },
+    {
+      "before": "፮፻፼",
+      "typed": "0",
+      "add": "፷፻፼",
+      "remove": 3
+    },
+    {
+      "before": "፯፻፼",
+      "typed": "0",
+      "add": "፸፻፼",
+      "remove": 3
+    },
+    {
+      "before": "፰፻፼",
+      "typed": "0",
+      "add": "፹፻፼",
+      "remove": 3
+    },
+    {
+      "before": "፱፻፼",
+      "typed": "0",
+      "add": "፺፻፼",
+      "remove": 3
+    },
+    {
+      "before": "፳፻፼",
+      "typed": "0",
+      "add": "፪፼፼",
+      "remove": 3
+    },
+    {
+      "before": "፴፻፼",
+      "typed": "0",
+      "add": "፫፼፼",
+      "remove": 3
+    },
+    {
+      "before": "፵፻፼",
+      "typed": "0",
+      "add": "፬፼፼",
+      "remove": 3
+    },
+    {
+      "before": "፶፻፼",
+      "typed": "0",
+      "add": "፭፼፼",
+      "remove": 3
+    },
+    {
+      "before": "፷፻፼",
+      "typed": "0",
+      "add": "፮፼፼",
+      "remove": 3
+    },
+    {
+      "before": "፸፻፼",
+      "typed": "0",
+      "add": "፯፼፼",
+      "remove": 3
+    },
+    {
+      "before": "፹፻፼",
+      "typed": "0",
+      "add": "፰፼፼",
+      "remove": 3
+    },
+    {
+      "before": "፺፻፼",
+      "typed": "0",
+      "add": "፱፼፼",
+      "remove": 3
+    },
+    {
+      "before": "፩",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፩",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፩",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፩",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፩",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፩",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፩",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፩",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፩",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፪",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፪",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፪",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፪",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፪",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፪",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፪",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፪",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፪",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፫",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፫",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፫",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፫",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፫",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፫",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፫",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፫",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፫",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፬",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፬",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፬",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፬",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፬",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፬",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፬",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፬",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፬",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፭",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፭",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፭",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፭",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፭",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፭",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፭",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፭",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፭",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፮",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፮",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፮",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፮",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፮",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፮",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፮",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፮",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፮",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፯",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፯",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፯",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፯",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፯",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፯",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፯",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፯",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፯",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፰",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፰",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፰",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፰",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፰",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፰",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፰",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፰",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፰",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፱",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፱",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፱",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፱",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፱",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፱",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፱",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፱",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፱",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፲",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፲",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፲",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፲",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፲",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፲",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፲",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፲",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፲",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፳",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፳",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፳",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፳",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፳",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፳",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፳",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፳",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፳",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፴",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፴",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፴",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፴",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፴",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፴",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፴",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፴",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፴",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፵",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፵",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፵",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፵",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፵",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፵",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፵",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፵",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፵",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፶",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፶",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፶",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፶",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፶",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፶",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፶",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፶",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፶",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፷",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፷",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፷",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፷",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፷",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፷",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፷",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፷",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፷",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፸",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፸",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፸",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፸",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፸",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፸",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፸",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፸",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፸",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፹",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፹",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፹",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፹",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፹",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፹",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፹",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፹",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፹",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፺",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፺",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፺",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፺",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፺",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፺",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፺",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፺",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፺",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፻",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፻",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፻",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፻",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፻",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፻",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፻",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፻",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፻",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "፼",
+      "typed": "1",
+      "add": "፩"
+    },
+    {
+      "before": "፼",
+      "typed": "2",
+      "add": "፪"
+    },
+    {
+      "before": "፼",
+      "typed": "3",
+      "add": "፫"
+    },
+    {
+      "before": "፼",
+      "typed": "4",
+      "add": "፬"
+    },
+    {
+      "before": "፼",
+      "typed": "5",
+      "add": "፭"
+    },
+    {
+      "before": "፼",
+      "typed": "6",
+      "add": "፮"
+    },
+    {
+      "before": "፼",
+      "typed": "7",
+      "add": "፯"
+    },
+    {
+      "before": "፼",
+      "typed": "8",
+      "add": "፰"
+    },
+    {
+      "before": "፼",
+      "typed": "9",
+      "add": "፱"
+    },
+    {
+      "before": "ቑ",
+      "typed": "አ",
+      "add": "ቛ",
+      "remove": 1
+    },
+    {
+      "before": "ኹ",
+      "typed": "አ",
+      "add": "ዃ",
+      "remove": 1
+    },
+    {
+      "before": "ጙ",
+      "typed": "አ",
+      "add": "ጟ",
+      "remove": 1
+    },
+    {
+      "before": "ቑ",
+      "typed": "እ",
+      "add": "ቘ",
+      "remove": 1
+    },
+    {
+      "before": "ኹ",
+      "typed": "እ",
+      "add": "ዀ",
+      "remove": 1
+    },
+    {
+      "before": "ጙ",
+      "typed": "እ",
+      "add": "ⶓ",
+      "remove": 1
+    },
+    {
+      "before": "ቑ",
+      "typed": "ኡ",
+      "add": "ቝ",
+      "remove": 1
+    },
+    {
+      "before": "ኹ",
+      "typed": "ኡ",
+      "add": "ዅ",
+      "remove": 1
+    },
+    {
+      "before": "ጙ",
+      "typed": "ኡ",
+      "add": "ⶖ",
+      "remove": 1
+    },
+    {
+      "before": "ቑ",
+      "typed": "ኢ",
+      "add": "ቚ",
+      "remove": 1
+    },
+    {
+      "before": "ኹ",
+      "typed": "ኢ",
+      "add": "ዂ",
+      "remove": 1
+    },
+    {
+      "before": "ጙ",
+      "typed": "ኢ",
+      "add": "ⶔ",
+      "remove": 1
+    },
+    {
+      "before": "ቚ",
+      "typed": "እ",
+      "add": "ቜ",
+      "remove": 1
+    },
+    {
+      "before": "ዂ",
+      "typed": "እ",
+      "add": "ዄ",
+      "remove": 1
+    },
+    {
+      "before": "ⶔ",
+      "typed": "እ",
+      "add": "ⶕ",
+      "remove": 1
+    }
+  ],
+  "longpress": {
+    "Minus": [
+      "\u135F"
+    ],
+    "KeyT": [
+      "ጥ"
+    ],
+    "KeyP": [
+      "ጵ"
+    ],
+    "KeyS": [
+      "ጽ"
+    ],
+    "KeyH": [
+      "ሕ"
+    ],
+    "KeyK": [
+      "ኽ"
+    ],
+    "Semicolon": [
+      "፡"
+    ],
+    "KeyZ": [
+      "ዥ"
+    ],
+    "KeyC": [
+      "ጭ"
+    ],
+    "KeyN": [
+      "ኝ"
+    ],
+    "Comma": [
+      "‹"
+    ],
+    "Period": [
+      "›"
+    ]
+  }
+}

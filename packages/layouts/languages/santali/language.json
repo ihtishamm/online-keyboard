@@ -1,0 +1,24 @@
+{
+  "slug": "santali",
+  "code": "sat",
+  "order": 1010,
+  "lang": "sat",
+  "script": "Olck",
+  "dir": "ltr",
+  "name": {
+    "en": "Santali",
+    "native": "ᱥᱟᱱᱛᱟᱲᱤ"
+  },
+  "aliases": [],
+  "region": "south-asia",
+  "fonts": ["ol-chiki"],
+  "layouts": ["sat-standard"],
+  "sample": "ᱡᱚᱦᱟᱨ᱾",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "sat"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

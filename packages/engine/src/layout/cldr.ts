@@ -91,7 +91,11 @@ function layerFor(modifiers: string | undefined): Layer | null {
 /** Control characters and the space bar never belong on a key cap. */
 const isPrintable = (text: string) => text !== " " && !/^\p{Cc}+$/u.test(text);
 
-export function importCldr(xml: string): CldrImport {
+/**
+ * `capsAsBase`: Windows' Inuktitut keeps Latin letters on the plain keys and syllabics behind
+ * Caps Lock. A page for typing Inuktitut takes the Caps maps as the plain and Shift keys.
+ */
+export function importCldr(xml: string, options: { capsAsBase?: boolean } = {}): CldrImport {
   const keys: CldrImport["keys"] = {};
   const warnings: string[] = [];
   const caps = new Map<KeyCode, { capsN?: string; capsS?: string }>();
@@ -100,8 +104,13 @@ export function importCldr(xml: string): CldrImport {
   const keyMapRe = /<keyMap\b([^>]*)>([\s\S]*?)<\/keyMap>/g;
   for (const [, attrs = "", body = ""] of xml.matchAll(keyMapRe)) {
     const modifiers = /\bmodifiers="([^"]*)"/.exec(attrs)?.[1];
-    const layer = layerFor(modifiers);
+    let layer = layerFor(modifiers);
     if (!layer) continue;
+    if (options.capsAsBase) {
+      if (layer === "n" || layer === "s") continue;
+      if (layer === "capsN") layer = "n";
+      else if (layer === "capsS") layer = "s";
+    }
     for (const [, mapAttrs = ""] of body.matchAll(/<map\b([^>]*?)\/>/g)) {
       const iso = /\biso="([^"]*)"/.exec(mapAttrs)?.[1] ?? "";
       const to = /\bto="([^"]*)"/.exec(mapAttrs)?.[1];

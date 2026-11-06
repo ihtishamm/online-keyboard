@@ -1,0 +1,13 @@
+{
+  "source": "bawiki.xml.bz2",
+  "pages": 36607,
+  "sentences": 425901,
+  "repeatedSentencesSkipped": 365872,
+  "tokens": 4327927,
+  "distinctWords": 324029,
+  "wordsKept": 94944,
+  "nextWordHeads": 9405,
+  "text": "ba-train.txt",
+  "textSentences": 39,
+  "textWeight": 61.48
+}

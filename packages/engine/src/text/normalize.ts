@@ -311,6 +311,8 @@ export const CYRILLIC_ALPHABETS: Readonly<Record<string, string>> = {
   ky: RUSSIAN + "ңөү",
   tg: "абвгғдеёжзиӣйкқлмнопрстуӯфхҳчҷшъэюя",
   mn: RUSSIAN + "өү",
+  tt: RUSSIAN + "әөүҗңһ",
+  ba: RUSSIAN + "әөүғҡңҙҫһ",
 };
 
 /**
@@ -358,6 +360,14 @@ const georgianWord = (raw: string): string | null => {
   return /^[\u10D0-\u10F0]+$/.test(word) ? word : null;
 };
 
+/** Letters of one script, nothing else, once its marks are dropped or kept as `strip` says. */
+const lettersWord =
+  (letters: RegExp, strip?: RegExp) =>
+  (raw: string): string | null => {
+    const word = (strip ? raw.replace(strip, "") : raw).normalize("NFC");
+    return letters.test(word) ? word : null;
+  };
+
 /** Word normalisers by data code (Language.code). */
 export const WORD_NORMALIZERS: Readonly<Record<string, (raw: string) => string | null>> = {
   ur: normalizeUrdu,
@@ -400,4 +410,24 @@ export const WORD_NORMALIZERS: Readonly<Record<string, (raw: string) => string |
   he: hebrewWord,
   hy: armenianWord,
   ka: georgianWord,
+  // Yiddish keeps the points that make its letters (אַ אָ פּ וּ יִ), and writes װ ױ ײ as pairs.
+  yi: (raw) => {
+    const word = raw
+      .normalize("NFD")
+      .replace(/\u05F0/g, "וו")
+      .replace(/\u05F1/g, "וי")
+      .replace(/\u05F2/g, "יי")
+      .replace(/[\u0591-\u05AF\u05B0-\u05B3\u05B5\u05B6\u05B9-\u05BB\u05BD\u05C1-\u05C7]/g, "");
+    // eslint-disable-next-line no-misleading-character-class -- letters and their points
+    return /^[\u05D0-\u05EA\u05B4\u05B7\u05B8\u05BC\u05BF]+$/.test(word) ? word : null;
+  },
+  am: lettersWord(/^[\u1200-\u135F\u2D80-\u2DDE]+$/u),
+  ti: lettersWord(/^[\u1200-\u135F\u2D80-\u2DDE]+$/u),
+  // A Tibetan word here is one syllable: nothing marks where words end.
+  bo: lettersWord(/^[\u0F40-\u0FBC]+$/u),
+  // Everyday Syriac leaves out the vowel points.
+  syr: lettersWord(/^[\u0710-\u072F\u074D-\u074F]+$/u, /[\u0730-\u074A]/g),
+  chr: lettersWord(/^[\u13A0-\u13F5]+$/u),
+  iu: lettersWord(/^[\u1401-\u166C\u166F-\u167F]+$/u),
+  sat: lettersWord(/^[\u1C5A-\u1C7D]+$/u),
 };

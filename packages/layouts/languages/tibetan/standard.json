@@ -1,0 +1,709 @@
+{
+  "id": "bo-standard",
+  "lang": "bo",
+  "script": "Tibt",
+  "dir": "ltr",
+  "name": {
+    "en": "Standard",
+    "native": "ལ\u0F9F་མཚ\u0F7Cན"
+  },
+  "source": "Windows \"Tibetan (PRC)\", from Unicode CLDR 43 keyboard data (Unicode License v3).",
+  "keys": {
+    "Backquote": {
+      "n": "ཨ",
+      "s": "༁",
+      "sag": "ༀ"
+    },
+    "Digit1": {
+      "n": "༡",
+      "s": "༪",
+      "sag": "\u0FB2\u0F80"
+    },
+    "Digit2": {
+      "n": "༢",
+      "s": "༫",
+      "sag": "\u0F77"
+    },
+    "Digit3": {
+      "n": "༣",
+      "s": "༬",
+      "sag": "\u0FB3\u0F80"
+    },
+    "Digit4": {
+      "n": "༤",
+      "s": "༭",
+      "sag": "\u0F79"
+    },
+    "Digit5": {
+      "n": "༥",
+      "s": "༮",
+      "sag": "\u0F71\u0F72"
+    },
+    "Digit6": {
+      "n": "༦",
+      "s": "༯",
+      "sag": "༉"
+    },
+    "Digit7": {
+      "n": "༧",
+      "s": "༰",
+      "sag": "༊"
+    },
+    "Digit8": {
+      "n": "༨",
+      "s": "༱",
+      "sag": "༏"
+    },
+    "Digit9": {
+      "n": "༩",
+      "s": "༲",
+      "sag": "༐"
+    },
+    "Digit0": {
+      "n": "༠",
+      "s": "༳",
+      "sag": "༒"
+    },
+    "Minus": {
+      "n": "ཧ",
+      "s": "༼",
+      "sag": "༌"
+    },
+    "Equal": {
+      "n": "ཝ",
+      "s": "༽",
+      "sag": "༓"
+    },
+    "KeyQ": {
+      "n": "ཅ",
+      "s": "༕",
+      "sag": "ྉ"
+    },
+    "KeyW": {
+      "n": "ཆ",
+      "s": "༖",
+      "sag": "ྈ"
+    },
+    "KeyE": {
+      "n": "\u0F7A",
+      "s": "༗",
+      "sag": "྾"
+    },
+    "KeyR": {
+      "n": "ར",
+      "s": "\u0FBC",
+      "sag": "ཪ"
+    },
+    "KeyT": {
+      "n": "ཏ",
+      "s": "ཊ",
+      "sag": "\u0F9A"
+    },
+    "KeyY": {
+      "n": "ཡ",
+      "s": "\u0FBB",
+      "sag": "྿"
+    },
+    "KeyU": {
+      "n": "\u0F74",
+      "s": "\u0F18",
+      "sag": "\u0F71\u0F74"
+    },
+    "KeyI": {
+      "n": "\u0F72",
+      "s": "\u0F19",
+      "sag": "\u0F71\u0F72"
+    },
+    "KeyO": {
+      "n": "\u0F7C",
+      "s": "༚",
+      "sag": "࿀"
+    },
+    "KeyP": {
+      "n": "ཕ",
+      "s": "༛",
+      "sag": "࿁"
+    },
+    "BracketLeft": {
+      "n": "ཙ",
+      "s": "༜",
+      "sag": "࿂"
+    },
+    "BracketRight": {
+      "n": "ཚ",
+      "s": "༝",
+      "sag": "࿃"
+    },
+    "Backslash": {
+      "n": "ཛ",
+      "s": "༞",
+      "sag": "ཛ\u0FB7"
+    },
+    "KeyA": {
+      "n": "འ",
+      "s": "\u0F71",
+      "sag": "࿄"
+    },
+    "KeyS": {
+      "n": "ས",
+      "s": "༟",
+      "sag": "࿅"
+    },
+    "KeyD": {
+      "n": "ད",
+      "s": "ཌ",
+      "sag": "\u0F9C"
+    },
+    "KeyF": {
+      "n": "བ",
+      "s": "༾",
+      "sag": "བ\u0FB7"
+    },
+    "KeyG": {
+      "n": "ང",
+      "s": "༿",
+      "sag": "\u0FC6"
+    },
+    "KeyH": {
+      "n": "མ",
+      "s": "࿏",
+      "sag": "࿇"
+    },
+    "KeyJ": {
+      "n": "་",
+      "s": "༂",
+      "sag": "࿈"
+    },
+    "KeyK": {
+      "n": "ག",
+      "s": "༃",
+      "sag": "ག\u0FB7"
+    },
+    "KeyL": {
+      "n": "ལ",
+      "s": "༆",
+      "sag": "࿉"
+    },
+    "Semicolon": {
+      "n": "ཞ",
+      "s": "༇",
+      "sag": "࿊"
+    },
+    "Quote": {
+      "n": "།",
+      "s": "༸",
+      "sag": "࿋"
+    },
+    "KeyZ": {
+      "n": "ཟ",
+      "s": "༴",
+      "sag": "࿌"
+    },
+    "KeyX": {
+      "n": "ཤ",
+      "s": "ཥ",
+      "sag": "\u0FB5"
+    },
+    "KeyC": {
+      "n": "ཀ",
+      "s": "ཀ\u0FB5",
+      "sag": "\u0F90\u0FB5"
+    },
+    "KeyV": {
+      "n": "ཁ",
+      "s": "\u0F87",
+      "sag": "༶"
+    },
+    "KeyB": {
+      "n": "པ",
+      "s": "\u0F86",
+      "sag": "\u0F82"
+    },
+    "KeyN": {
+      "n": "ན",
+      "s": "ཎ",
+      "sag": "\u0F9E"
+    },
+    "KeyM": {
+      "n": "m",
+      "s": "M",
+      "sag": "ད\u0FB7"
+    },
+    "Comma": {
+      "n": "ཐ",
+      "s": "ཋ",
+      "sag": "\u0F9B"
+    },
+    "Period": {
+      "n": "ཇ",
+      "s": "༺",
+      "sag": "ྋ"
+    },
+    "Slash": {
+      "n": "ཉ",
+      "s": "༻",
+      "sag": "ྊ"
+    }
+  },
+  "deadkeys": [
+    {
+      "trigger": "m",
+      "base": "་",
+      "out": "\u0F84"
+    },
+    {
+      "trigger": "m",
+      "base": "།",
+      "out": "༎"
+    },
+    {
+      "trigger": "m",
+      "base": "༠",
+      "out": "༈"
+    },
+    {
+      "trigger": "m",
+      "base": "༡",
+      "out": "༄"
+    },
+    {
+      "trigger": "m",
+      "base": "༢",
+      "out": "༅"
+    },
+    {
+      "trigger": "m",
+      "base": "༣",
+      "out": "\u0F7E"
+    },
+    {
+      "trigger": "m",
+      "base": "༤",
+      "out": "\u0F83"
+    },
+    {
+      "trigger": "m",
+      "base": "༥",
+      "out": "\u0F37"
+    },
+    {
+      "trigger": "m",
+      "base": "༦",
+      "out": "\u0F35"
+    },
+    {
+      "trigger": "m",
+      "base": "༧",
+      "out": "ཿ"
+    },
+    {
+      "trigger": "m",
+      "base": "༨",
+      "out": "༔"
+    },
+    {
+      "trigger": "m",
+      "base": "༩",
+      "out": "༑"
+    },
+    {
+      "trigger": "m",
+      "base": "m",
+      "out": "྅"
+    },
+    {
+      "trigger": "M",
+      "base": "m",
+      "out": "\u0FA1\u0FB7"
+    },
+    {
+      "trigger": "M",
+      "base": "M",
+      "out": "\u0F39"
+    },
+    {
+      "trigger": "m",
+      "base": "ཀ",
+      "out": "\u0F90"
+    },
+    {
+      "trigger": "m",
+      "base": "ཁ",
+      "out": "\u0F91"
+    },
+    {
+      "trigger": "m",
+      "base": "ག",
+      "out": "\u0F92"
+    },
+    {
+      "trigger": "M",
+      "base": "ག",
+      "out": "\u0F92\u0FB7"
+    },
+    {
+      "trigger": "m",
+      "base": "ང",
+      "out": "\u0F94"
+    },
+    {
+      "trigger": "m",
+      "base": "ཅ",
+      "out": "\u0F95"
+    },
+    {
+      "trigger": "m",
+      "base": "ཆ",
+      "out": "\u0F96"
+    },
+    {
+      "trigger": "m",
+      "base": "ཇ",
+      "out": "\u0F97"
+    },
+    {
+      "trigger": "m",
+      "base": "ཉ",
+      "out": "\u0F99"
+    },
+    {
+      "trigger": "m",
+      "base": "ཏ",
+      "out": "\u0F9F"
+    },
+    {
+      "trigger": "M",
+      "base": "ཏ",
+      "out": "\u0F9C\u0FB7"
+    },
+    {
+      "trigger": "m",
+      "base": "ཐ",
+      "out": "\u0FA0"
+    },
+    {
+      "trigger": "m",
+      "base": "ད",
+      "out": "\u0FA1"
+    },
+    {
+      "trigger": "M",
+      "base": "ད",
+      "out": "ཌ\u0FB7"
+    },
+    {
+      "trigger": "m",
+      "base": "ན",
+      "out": "\u0FA3"
+    },
+    {
+      "trigger": "m",
+      "base": "པ",
+      "out": "\u0FA4"
+    },
+    {
+      "trigger": "m",
+      "base": "ཕ",
+      "out": "\u0FA5"
+    },
+    {
+      "trigger": "m",
+      "base": "བ",
+      "out": "\u0FA6"
+    },
+    {
+      "trigger": "M",
+      "base": "བ",
+      "out": "\u0FA6\u0FB7"
+    },
+    {
+      "trigger": "m",
+      "base": "མ",
+      "out": "\u0FA8"
+    },
+    {
+      "trigger": "m",
+      "base": "ཙ",
+      "out": "\u0FA9"
+    },
+    {
+      "trigger": "m",
+      "base": "ཚ",
+      "out": "\u0FAA"
+    },
+    {
+      "trigger": "m",
+      "base": "ཛ",
+      "out": "\u0FAB"
+    },
+    {
+      "trigger": "M",
+      "base": "ཛ",
+      "out": "\u0FAB\u0FB7"
+    },
+    {
+      "trigger": "m",
+      "base": "ཝ",
+      "out": "\u0FBA"
+    },
+    {
+      "trigger": "m",
+      "base": "ཞ",
+      "out": "\u0FAE"
+    },
+    {
+      "trigger": "m",
+      "base": "ཟ",
+      "out": "\u0FAF"
+    },
+    {
+      "trigger": "m",
+      "base": "འ",
+      "out": "\u0FB0"
+    },
+    {
+      "trigger": "m",
+      "base": "ཡ",
+      "out": "\u0FB1"
+    },
+    {
+      "trigger": "m",
+      "base": "ར",
+      "out": "\u0FB2"
+    },
+    {
+      "trigger": "m",
+      "base": "ལ",
+      "out": "\u0FB3"
+    },
+    {
+      "trigger": "m",
+      "base": "ཤ",
+      "out": "\u0FB4"
+    },
+    {
+      "trigger": "m",
+      "base": "ས",
+      "out": "\u0FB6"
+    },
+    {
+      "trigger": "m",
+      "base": "ཧ",
+      "out": "\u0FB7"
+    },
+    {
+      "trigger": "m",
+      "base": "ཨ",
+      "out": "\u0FB8"
+    },
+    {
+      "trigger": "m",
+      "base": "\u0F72",
+      "out": "\u0F80"
+    },
+    {
+      "trigger": "m",
+      "base": "\u0F74",
+      "out": "\u0FAD"
+    },
+    {
+      "trigger": "m",
+      "base": "\u0F7A",
+      "out": "\u0F7B"
+    },
+    {
+      "trigger": "m",
+      "base": "\u0F7C",
+      "out": "\u0F7D"
+    }
+  ],
+  "longpress": {
+    "Backquote": [
+      "༁",
+      "ༀ"
+    ],
+    "Digit1": [
+      "༪",
+      "\u0FB2\u0F80"
+    ],
+    "Digit2": [
+      "༫",
+      "\u0F77"
+    ],
+    "Digit3": [
+      "༬",
+      "\u0FB3\u0F80"
+    ],
+    "Digit4": [
+      "༭",
+      "\u0F79"
+    ],
+    "Digit5": [
+      "༮",
+      "\u0F71\u0F72"
+    ],
+    "Digit6": [
+      "༯",
+      "༉"
+    ],
+    "Digit7": [
+      "༰",
+      "༊"
+    ],
+    "Digit8": [
+      "༱",
+      "༏"
+    ],
+    "Digit9": [
+      "༲",
+      "༐"
+    ],
+    "Digit0": [
+      "༳",
+      "༒"
+    ],
+    "Minus": [
+      "༼",
+      "༌"
+    ],
+    "Equal": [
+      "༽",
+      "༓"
+    ],
+    "KeyQ": [
+      "༕",
+      "ྉ"
+    ],
+    "KeyW": [
+      "༖",
+      "ྈ"
+    ],
+    "KeyE": [
+      "༗",
+      "྾"
+    ],
+    "KeyR": [
+      "\u0FBC",
+      "ཪ"
+    ],
+    "KeyT": [
+      "ཊ",
+      "\u0F9A"
+    ],
+    "KeyY": [
+      "\u0FBB",
+      "྿"
+    ],
+    "KeyU": [
+      "\u0F18",
+      "\u0F71\u0F74"
+    ],
+    "KeyI": [
+      "\u0F19",
+      "\u0F71\u0F72"
+    ],
+    "KeyO": [
+      "༚",
+      "࿀"
+    ],
+    "KeyP": [
+      "༛",
+      "࿁"
+    ],
+    "BracketLeft": [
+      "༜",
+      "࿂"
+    ],
+    "BracketRight": [
+      "༝",
+      "࿃"
+    ],
+    "Backslash": [
+      "༞",
+      "ཛ\u0FB7"
+    ],
+    "KeyA": [
+      "\u0F71",
+      "࿄"
+    ],
+    "KeyS": [
+      "༟",
+      "࿅"
+    ],
+    "KeyD": [
+      "ཌ",
+      "\u0F9C"
+    ],
+    "KeyF": [
+      "༾",
+      "བ\u0FB7"
+    ],
+    "KeyG": [
+      "༿",
+      "\u0FC6"
+    ],
+    "KeyH": [
+      "࿏",
+      "࿇"
+    ],
+    "KeyJ": [
+      "༂",
+      "࿈"
+    ],
+    "KeyK": [
+      "༃",
+      "ག\u0FB7"
+    ],
+    "KeyL": [
+      "༆",
+      "࿉"
+    ],
+    "Semicolon": [
+      "༇",
+      "࿊"
+    ],
+    "Quote": [
+      "༸",
+      "࿋"
+    ],
+    "KeyZ": [
+      "༴",
+      "࿌"
+    ],
+    "KeyX": [
+      "ཥ",
+      "\u0FB5"
+    ],
+    "KeyC": [
+      "ཀ\u0FB5",
+      "\u0F90\u0FB5"
+    ],
+    "KeyV": [
+      "\u0F87",
+      "༶"
+    ],
+    "KeyB": [
+      "\u0F86",
+      "\u0F82"
+    ],
+    "KeyN": [
+      "ཎ",
+      "\u0F9E"
+    ],
+    "KeyM": [
+      "ད\u0FB7"
+    ],
+    "Comma": [
+      "ཋ",
+      "\u0F9B"
+    ],
+    "Period": [
+      "༺",
+      "ྋ"
+    ],
+    "Slash": [
+      "༻",
+      "ྊ"
+    ]
+  }
+}

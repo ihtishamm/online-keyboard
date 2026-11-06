@@ -329,6 +329,8 @@ const CYRILLIC: Readonly<Record<string, readonly string[]>> = {
   ky: ["ңн", "өо", "үу", "еэ", "иы"],
   tg: ["ғг", "ӣи", "қк", "ӯу", "ҳх", "ҷч"],
   mn: ["өо", "үу", "еэ", "иы", "цч", "зж"],
+  tt: ["әа", "өо", "үу", "җж", "ңн", "һх", "еэ"],
+  ba: ["әа", "өо", "үу", "ҡк", "ғг", "ҫс", "ҙз", "ңн", "һх"],
 };
 
 /** Languages the spell checker has rules for (data codes). */

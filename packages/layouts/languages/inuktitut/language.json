@@ -1,0 +1,24 @@
+{
+  "slug": "inuktitut",
+  "code": "iu",
+  "order": 1000,
+  "lang": "iu",
+  "script": "Cans",
+  "dir": "ltr",
+  "name": {
+    "en": "Inuktitut",
+    "native": "ᐃᓄᒃᑎᑐᑦ"
+  },
+  "aliases": [],
+  "region": "americas",
+  "fonts": ["canadian-aboriginal"],
+  "layouts": ["iu-naqittaut"],
+  "sample": "ᐊᐃ! ᖃᓄᐃᑉᐱᑦ?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "bing": "iu"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

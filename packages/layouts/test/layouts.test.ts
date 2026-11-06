@@ -217,6 +217,20 @@ const ALPHABETS: Record<string, string> = {
   "ky-standard": "абвгдеёжзийклмнопрстуфхцчшщъыьэюяңөү",
   "tg-standard": "абвгғдеёжзиӣйкқлмнопрстуӯфхҳчҷшъэюя",
   "mn-standard": "абвгдеёжзийклмнопрстуфхцчшщъыьэюяөү",
+  "tt-standard": "абвгдеёжзийклмнопрстуфхцчшщъыьэюяәөүҗңһ",
+  "ba-standard": "абвгдеёжзийклмнопрстуфхцчшщъыьэюяәөүғҡңҙҫһ",
+  "yi-pasekh": "אבגדהוזחטיכךלמםנןסעפףצץקרשת",
+  // Each consonant's bare form is on a key; vowels build the rest (tests below).
+  "am-gff": "ህልሕምርስሽቅብቭትችንኝክኽውዝዥይድጅግጥጭጵጽፍፕእኡኢኦ",
+  "ti-gff": "ህልሕምርስሽቅብቭትችንኝክኽውዝዥይድጅግጥጭጵጽፍፕእኡኢኦ",
+  "bo-standard": "ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ",
+  "syr-standard": "ܐܒܓܕܗܘܙܚܛܝܟܠܡܢܣܥܦܨܩܪܫܬ",
+  "syr-phonetic": "ܐܒܓܕܗܘܙܚܛܝܟܠܡܢܣܥܦܨܩܪܫܬ",
+  "chr-standard": "ᎠᎡᎢᎣᎤᎥ",
+  "chr-phonetic": "ᎠᎡᎢᎣᎤᎥ",
+  "iu-naqittaut": "ᐃᐅᐊᐱᐳᐸᑎᑐᑕᑭᑯᑲᒋᒍᒐᒥᒧᒪᓂᓄᓇᓯᓱᓴᓕᓗᓚᔨᔪᔭᕕᕗᕙᕆᕈᕋ",
+  "sat-standard": "ᱚᱛᱜᱝᱞᱟᱠᱡᱢᱣᱤᱥᱦᱧᱨᱩᱪᱫᱬᱭᱮᱯᱰᱱᱲᱳᱴᱵᱶᱷ",
+  "brx-inscript": "अआइईउऊएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह",
 };
 
 /** Golden words typed on a US keyboard. */
@@ -454,6 +468,35 @@ describe("dead keys start on the key that is dead", () => {
       code: "Backquote",
       shift: false,
     });
+  });
+});
+
+describe("Ge'ez syllables build as you type (GFF)", () => {
+  const type = (id: string, keys: string) => {
+    const machine = new TypingMachine(getLayout(id));
+    let out = "";
+    for (const ch of keys) {
+      const hit = US_TO_CODE.get(ch)!;
+      const r = machine.press(hit[0], { ...NO_MODIFIERS, shift: hit[1] }, out);
+      if (r.kind === "text") out = out.slice(0, out.length - (r.remove ?? 0)) + r.text;
+    }
+    return out;
+  };
+  it.each([
+    ["am-gff", "s", "ስ"],
+    ["am-gff", "se", "ሰ"],
+    ["am-gff", "sa", "ሳ"],
+    ["am-gff", "selam", "ሰላም"],
+    ["am-gff", "zare", "ዛረ"],
+    ["am-gff", "ss", "ሥ"],
+    ["am-gff", "bEt", "በት"],
+    ["am-gff", "i", "ኢ"],
+    ["am-gff", "ii", "ዒ"],
+    ["am-gff", "qua", "ቋ"],
+    ["ti-gff", "selam", "ሰላም"],
+    ["ti-gff", "Qe", "ቐ"],
+  ])("%s: %s gives %s", (id, keys, expected) => {
+    expect(type(id, keys)).toBe(expected);
   });
 });
 

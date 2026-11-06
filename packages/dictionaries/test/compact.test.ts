@@ -9,7 +9,7 @@ const DATA = new URL("../data/", import.meta.url);
 const built = readdirSync(DATA).filter((c) => existsSync(new URL(`${c}/words.txt`, DATA)));
 
 /** So little running text that fewer words have a known next word. */
-const THIN_CORPUS = new Set(["mi"]);
+const THIN_CORPUS: Readonly<Record<string, number>> = { mi: 5, ti: 5, syr: 5, chr: 5, iu: 10 };
 
 describe("shipped dictionaries (plan item 6.1)", () => {
   for (const code of built) {
@@ -29,7 +29,7 @@ describe("shipped dictionaries (plan item 6.1)", () => {
       expect(accents.filter((a) => listed.has(a.word))).toEqual([]);
       const heads = next.split("\n").filter(Boolean);
       expect(heads.length).toBeGreaterThan(
-        Math.min(SHIPPED_HEADS, words.length) / 2 - (THIN_CORPUS.has(code) ? 500 : 0),
+        Math.min(SHIPPED_HEADS, words.length) / (THIN_CORPUS[code] ?? 2),
       );
     });
   }

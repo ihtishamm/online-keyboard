@@ -1,0 +1,22 @@
+{
+  "slug": "cherokee",
+  "code": "chr",
+  "order": 990,
+  "lang": "chr",
+  "script": "Cher",
+  "dir": "ltr",
+  "name": {
+    "en": "Cherokee",
+    "native": "ᏣᎳᎩ"
+  },
+  "aliases": [],
+  "region": "americas",
+  "fonts": ["cherokee"],
+  "layouts": ["chr-standard", "chr-phonetic"],
+  "sample": "ᎣᏏᏲ! ᏙᎯᏧ?",
+  "voice": [],
+  "wordList": true,
+  "translate": {},
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

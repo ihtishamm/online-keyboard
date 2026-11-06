@@ -95,11 +95,19 @@ export function blocklists(): Map<string, string[]> {
     km: [],
     my: [],
     vi: [],
+    yi: [],
+    am: [],
+    ti: [],
+    bo: [],
+    syr: [],
+    chr: [],
+    iu: [],
+    sat: [],
     th: list("th"),
     ko: list("ko"),
     // LDNOOBW has Russian only; these languages share many of its roots and loanwords.
     ...Object.fromEntries(
-      ["ru", "uk", "be", "bg", "sr", "mk", "kk", "ky", "tg", "mn"].map((c) => [c, list("ru")]),
+      ["ru", "uk", "be", "bg", "sr", "mk", "kk", "ky", "tg", "mn", "tt", "ba"].map((c) => [c, list("ru")]),
     ),
   };
 

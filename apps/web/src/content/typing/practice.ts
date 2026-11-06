@@ -74,16 +74,15 @@ export interface PracticeText {
  * Telex and VNI do work: their keys build the word part by part (engine typingParts).
  */
 const keyLayouts = (l: Language): Layout[] =>
-  l.layouts
-    .map(getLayout)
-    .filter((layout) => !layout.translit && !layout.rules.length);
+  l.layouts.map(getLayout).filter((layout) => !layout.translit && !layout.rules.length);
 
 /**
- * Languages with generated typing pages: every one with a key layout, but Urdu, and Hindko,
- * which has no open text to practise on (4 Wiktionary entries, checked 2026-11-04).
+ * Languages with generated typing pages: every one with a key layout, but Urdu, and Hindko
+ * and Bodo, which have no open text to practise on (Hindko: 4 Wiktionary entries, checked
+ * 2026-11-04; Bodo: no Wikipedia or Tatoeba, checked 2026-11-07).
  */
 export const TYPING_LANGUAGES: readonly Language[] = LANGUAGES.filter(
-  (l) => l.slug !== "urdu" && l.code !== "hno" && keyLayouts(l).length > 0,
+  (l) => l.slug !== "urdu" && l.code !== "hno" && l.code !== "brx" && keyLayouts(l).length > 0,
 );
 
 const sentenceRows = (l: Language): [string, string][] =>

@@ -35,7 +35,7 @@ function changes(spec: ImportSpec, source: string): string[] {
   if (!spec.patch && !spec.patchRules) return [];
   const raw =
     "cldr" in spec.from
-      ? importCldr(source).keys
+      ? importCldr(source, { capsAsBase: spec.from.capsAsBase ?? false }).keys
       : "xkb" in spec.from
         ? importXkb(source, spec.from.variant).keys
         : importKeyman(source, spec.from).keys;

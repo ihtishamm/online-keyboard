@@ -1,0 +1,452 @@
+{
+  "id": "chr-standard",
+  "lang": "chr",
+  "script": "Cher",
+  "dir": "ltr",
+  "name": {
+    "en": "Cherokee Nation",
+    "native": "ᏣᎳᎩ"
+  },
+  "source": "Windows \"Cherokee Nation\", from Unicode CLDR 43 keyboard data (Unicode License v3).",
+  "keys": {
+    "Backquote": {
+      "n": "`",
+      "s": "Ꮚ",
+      "ag": "Ꮐ",
+      "sag": "~"
+    },
+    "Digit1": {
+      "n": "ᏣᎳᎩ",
+      "s": "Ꮁ",
+      "ag": "1",
+      "sag": "!"
+    },
+    "Digit2": {
+      "n": "ᎣᏏᏲ",
+      "s": "Ꮗ",
+      "ag": "2",
+      "sag": "@"
+    },
+    "Digit3": {
+      "n": "ᏩᏙ",
+      "s": "Ꮷ",
+      "ag": "3",
+      "sag": "#"
+    },
+    "Digit4": {
+      "n": "Ꮩ",
+      "s": "Ꮀ",
+      "ag": "4",
+      "sag": "$"
+    },
+    "Digit5": {
+      "n": "Ꮶ",
+      "s": "Ꮉ",
+      "ag": "5",
+      "sag": "%"
+    },
+    "Digit6": {
+      "n": "Ꮬ",
+      "s": "Ꮭ",
+      "ag": "6",
+      "sag": "^"
+    },
+    "Digit7": {
+      "n": "Ꮛ",
+      "s": "Ꮱ",
+      "ag": "7",
+      "sag": "&"
+    },
+    "Digit8": {
+      "n": "Ꮦ",
+      "s": "Ꮊ",
+      "ag": "8",
+      "sag": "*"
+    },
+    "Digit9": {
+      "n": "Ꮢ",
+      "s": "(",
+      "ag": "9",
+      "sag": "("
+    },
+    "Digit0": {
+      "n": "Ꮔ",
+      "s": ")",
+      "ag": "0",
+      "sag": ")"
+    },
+    "Minus": {
+      "n": "Ꮏ",
+      "s": "Ꮌ",
+      "ag": "-",
+      "sag": "_"
+    },
+    "Equal": {
+      "n": "Ᏻ",
+      "s": "Ꮍ",
+      "ag": "=",
+      "sag": "+"
+    },
+    "KeyQ": {
+      "n": "Ꭺ",
+      "s": "Ꮖ",
+      "ag": "q",
+      "sag": "Q",
+      "caps": "shift"
+    },
+    "KeyW": {
+      "n": "Ꮃ",
+      "s": "Ꮻ",
+      "ag": "w",
+      "sag": "W",
+      "caps": "shift"
+    },
+    "KeyE": {
+      "n": "Ꭱ",
+      "s": "Ꮳ",
+      "ag": "e",
+      "sag": "E",
+      "caps": "shift"
+    },
+    "KeyR": {
+      "n": "Ꮫ",
+      "s": "Ꮟ",
+      "ag": "r",
+      "sag": "R",
+      "caps": "shift"
+    },
+    "KeyT": {
+      "n": "Ꮤ",
+      "s": "Ꮨ",
+      "ag": "t",
+      "sag": "T",
+      "caps": "shift"
+    },
+    "KeyY": {
+      "n": "Ꮿ",
+      "s": "Ᏺ",
+      "ag": "y",
+      "sag": "Y",
+      "caps": "shift"
+    },
+    "KeyU": {
+      "n": "Ꭴ",
+      "s": "Ꭽ",
+      "ag": "u",
+      "sag": "U",
+      "caps": "shift"
+    },
+    "KeyI": {
+      "n": "Ꭲ",
+      "s": "Ᏹ",
+      "ag": "i",
+      "sag": "I",
+      "caps": "shift"
+    },
+    "KeyO": {
+      "n": "Ꭳ",
+      "s": "Ꮼ",
+      "ag": "o",
+      "sag": "O",
+      "caps": "shift"
+    },
+    "KeyP": {
+      "n": "Ꮑ",
+      "s": "Ꮺ",
+      "ag": "p",
+      "sag": "P",
+      "caps": "shift"
+    },
+    "BracketLeft": {
+      "n": "Ꮥ",
+      "s": "Ꮡ",
+      "ag": "[",
+      "sag": "{"
+    },
+    "BracketRight": {
+      "n": "Ꮆ",
+      "s": "Ꮴ",
+      "ag": "]",
+      "sag": "}"
+    },
+    "Backslash": {
+      "n": "Ꮹ",
+      "s": "Ꮾ",
+      "ag": "\\",
+      "sag": "|"
+    },
+    "KeyA": {
+      "n": "Ꭰ",
+      "s": "Ꮜ",
+      "ag": "a",
+      "sag": "A",
+      "caps": "shift"
+    },
+    "KeyS": {
+      "n": "Ꮝ",
+      "s": "Ꮞ",
+      "ag": "s",
+      "sag": "S",
+      "caps": "shift"
+    },
+    "KeyD": {
+      "n": "Ꮧ",
+      "s": "Ꮠ",
+      "ag": "d",
+      "sag": "D",
+      "caps": "shift"
+    },
+    "KeyF": {
+      "n": "Ꭹ",
+      "s": "Ꮘ",
+      "ag": "f",
+      "sag": "F",
+      "caps": "shift"
+    },
+    "KeyG": {
+      "n": "Ꭶ",
+      "s": "Ꮵ",
+      "ag": "g",
+      "sag": "G",
+      "caps": "shift"
+    },
+    "KeyH": {
+      "n": "Ꭿ",
+      "s": "Ꮂ",
+      "ag": "h",
+      "sag": "H",
+      "caps": "shift"
+    },
+    "KeyJ": {
+      "n": "Ꮪ",
+      "s": "Ꭻ",
+      "ag": "j",
+      "sag": "J",
+      "caps": "shift"
+    },
+    "KeyK": {
+      "n": "Ꮈ",
+      "s": "Ꭷ",
+      "ag": "k",
+      "sag": "K",
+      "caps": "shift"
+    },
+    "KeyL": {
+      "n": "Ꮅ",
+      "s": "Ꭾ",
+      "ag": "l",
+      "sag": "L",
+      "caps": "shift"
+    },
+    "Semicolon": {
+      "n": "Ꮸ",
+      "s": "Ꮰ",
+      "ag": ";",
+      "sag": ":"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "KeyZ": {
+      "n": "Ꭼ",
+      "s": "Ꮓ",
+      "ag": "z",
+      "sag": "Z",
+      "caps": "shift"
+    },
+    "KeyX": {
+      "n": "Ᏼ",
+      "s": "Ꮽ",
+      "ag": "x",
+      "sag": "X",
+      "caps": "shift"
+    },
+    "KeyC": {
+      "n": "Ꮣ",
+      "s": "Ꮯ",
+      "ag": "c",
+      "sag": "C",
+      "caps": "shift"
+    },
+    "KeyV": {
+      "n": "Ꭵ",
+      "s": "Ꮮ",
+      "ag": "v",
+      "sag": "V",
+      "caps": "shift"
+    },
+    "KeyB": {
+      "n": "Ꭸ",
+      "s": "Ᏸ",
+      "ag": "b",
+      "sag": "B",
+      "caps": "shift"
+    },
+    "KeyN": {
+      "n": "Ꮎ",
+      "s": "Ꮋ",
+      "ag": "n",
+      "sag": "N",
+      "caps": "shift"
+    },
+    "KeyM": {
+      "n": "Ꮕ",
+      "s": "Ꮇ",
+      "ag": "m",
+      "sag": "M",
+      "caps": "shift"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "Ꮲ",
+      "ag": "<"
+    },
+    "Period": {
+      "n": ".",
+      "s": "Ꮄ",
+      "ag": ">"
+    },
+    "Slash": {
+      "n": "Ꮒ",
+      "s": "Ꮙ",
+      "ag": "/",
+      "sag": "?"
+    }
+  },
+  "longpress": {
+    "Backquote": [
+      "Ꮚ",
+      "Ꮐ"
+    ],
+    "Digit1": [
+      "Ꮁ"
+    ],
+    "Digit2": [
+      "Ꮗ"
+    ],
+    "Digit3": [
+      "Ꮷ"
+    ],
+    "Digit4": [
+      "Ꮀ"
+    ],
+    "Digit5": [
+      "Ꮉ"
+    ],
+    "Digit6": [
+      "Ꮭ"
+    ],
+    "Digit7": [
+      "Ꮱ"
+    ],
+    "Digit8": [
+      "Ꮊ"
+    ],
+    "Minus": [
+      "Ꮌ"
+    ],
+    "Equal": [
+      "Ꮍ"
+    ],
+    "KeyQ": [
+      "Ꮖ"
+    ],
+    "KeyW": [
+      "Ꮻ"
+    ],
+    "KeyE": [
+      "Ꮳ"
+    ],
+    "KeyR": [
+      "Ꮟ"
+    ],
+    "KeyT": [
+      "Ꮨ"
+    ],
+    "KeyY": [
+      "Ᏺ"
+    ],
+    "KeyU": [
+      "Ꭽ"
+    ],
+    "KeyI": [
+      "Ᏹ"
+    ],
+    "KeyO": [
+      "Ꮼ"
+    ],
+    "KeyP": [
+      "Ꮺ"
+    ],
+    "BracketLeft": [
+      "Ꮡ"
+    ],
+    "BracketRight": [
+      "Ꮴ"
+    ],
+    "Backslash": [
+      "Ꮾ"
+    ],
+    "KeyA": [
+      "Ꮜ"
+    ],
+    "KeyS": [
+      "Ꮞ"
+    ],
+    "KeyD": [
+      "Ꮠ"
+    ],
+    "KeyF": [
+      "Ꮘ"
+    ],
+    "KeyG": [
+      "Ꮵ"
+    ],
+    "KeyH": [
+      "Ꮂ"
+    ],
+    "KeyJ": [
+      "Ꭻ"
+    ],
+    "KeyK": [
+      "Ꭷ"
+    ],
+    "KeyL": [
+      "Ꭾ"
+    ],
+    "Semicolon": [
+      "Ꮰ"
+    ],
+    "KeyZ": [
+      "Ꮓ"
+    ],
+    "KeyX": [
+      "Ꮽ"
+    ],
+    "KeyC": [
+      "Ꮯ"
+    ],
+    "KeyV": [
+      "Ꮮ"
+    ],
+    "KeyB": [
+      "Ᏸ"
+    ],
+    "KeyN": [
+      "Ꮋ"
+    ],
+    "KeyM": [
+      "Ꮇ"
+    ],
+    "Comma": [
+      "Ꮲ"
+    ],
+    "Period": [
+      "Ꮄ"
+    ],
+    "Slash": [
+      "Ꮙ"
+    ]
+  }
+}

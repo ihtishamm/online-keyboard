@@ -1,0 +1,22 @@
+{
+  "slug": "syriac",
+  "code": "syr",
+  "order": 980,
+  "lang": "syr",
+  "script": "Syrc",
+  "dir": "rtl",
+  "name": {
+    "en": "Syriac",
+    "native": "ܠܫܢܐ ܣܘܪܝܝܐ"
+  },
+  "aliases": ["Aramaic"],
+  "region": "middle-east",
+  "fonts": ["syriac"],
+  "layouts": ["syr-standard", "syr-phonetic"],
+  "sample": "ܫܠܡܐ ܥܠܝܟܘܢ",
+  "voice": [],
+  "wordList": true,
+  "translate": {},
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

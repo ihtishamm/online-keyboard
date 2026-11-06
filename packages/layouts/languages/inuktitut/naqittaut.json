@@ -1,0 +1,504 @@
+{
+  "id": "iu-naqittaut",
+  "lang": "iu",
+  "script": "Cans",
+  "dir": "ltr",
+  "name": {
+    "en": "Naqittaut",
+    "native": "ᓇᕿᑦᑕᐅᑦ"
+  },
+  "source": "Windows \"Inuktitut - Naqittaut\", from Unicode CLDR 43 keyboard data (Unicode License v3). Changed: syllabics are on the plain keys; Windows has them behind Caps Lock, with Latin letters on the plain keys. Shift+AltGr+7 (⅔) left empty, as no font here draws it.",
+  "keys": {
+    "Backquote": {
+      "n": "`",
+      "s": "~",
+      "sag": "~"
+    },
+    "Digit1": {
+      "n": "ᖕ",
+      "ag": "!",
+      "sag": "¢"
+    },
+    "Digit2": {
+      "n": "ᑉ",
+      "ag": "@",
+      "sag": "®"
+    },
+    "Digit3": {
+      "n": "ᕐ",
+      "ag": "#",
+      "sag": "¼"
+    },
+    "Digit4": {
+      "n": "ᒃ",
+      "ag": "$",
+      "sag": "½"
+    },
+    "Digit5": {
+      "n": "ᑦ",
+      "ag": "%",
+      "sag": "¾"
+    },
+    "Digit6": {
+      "n": "ᖅ",
+      "ag": "*",
+      "sag": "^"
+    },
+    "Digit7": {
+      "n": "ᒻ",
+      "ag": "&"
+    },
+    "Digit8": {
+      "n": "ᓐ",
+      "ag": "•",
+      "sag": "©"
+    },
+    "Digit9": {
+      "n": "ᓪ",
+      "ag": "[",
+      "sag": "÷"
+    },
+    "Digit0": {
+      "n": "ᔾ",
+      "ag": "]",
+      "live": ["ag"],
+      "sag": "+"
+    },
+    "Minus": {
+      "n": "−"
+    },
+    "Equal": {
+      "n": "ᕝ",
+      "ag": "="
+    },
+    "KeyQ": {
+      "n": "ᖏ",
+      "s": "ᒋ",
+      "ag": "ᖐ",
+      "sag": "ᒌ"
+    },
+    "KeyW": {
+      "n": "ᐃ",
+      "s": "ᐱ",
+      "ag": "ᐄ",
+      "sag": "ᐲ"
+    },
+    "KeyE": {
+      "n": "ᕿ",
+      "s": "ᕆ",
+      "ag": "ᖀ",
+      "sag": "ᕇ"
+    },
+    "KeyR": {
+      "n": "ᑭ",
+      "s": "ᖕ",
+      "ag": "ᑮ"
+    },
+    "KeyT": {
+      "n": "ᑎ",
+      "s": "ᙱ",
+      "ag": "ᑏ",
+      "sag": "ᙲ"
+    },
+    "KeyY": {
+      "n": "ᓯ",
+      "s": "ᙳ",
+      "ag": "ᓰ",
+      "sag": "ᙴ"
+    },
+    "KeyU": {
+      "n": "ᒥ",
+      "s": "ᙵ",
+      "ag": "ᒦ",
+      "sag": "ᙶ"
+    },
+    "KeyI": {
+      "n": "ᓂ",
+      "s": "ᖤ",
+      "ag": "ᓃ",
+      "sag": "ᖥ"
+    },
+    "KeyO": {
+      "n": "ᓕ",
+      "s": "ᖠ",
+      "ag": "ᓖ",
+      "sag": "ᖡ"
+    },
+    "KeyP": {
+      "n": "ᔨ",
+      "s": "ᖦ",
+      "ag": "ᔩ"
+    },
+    "BracketLeft": {
+      "n": "ᒡ",
+      "s": "ᔅ",
+      "ag": "“",
+      "sag": "”"
+    },
+    "BracketRight": {
+      "n": "]",
+      "s": "[",
+      "ag": "‘",
+      "sag": "’"
+    },
+    "Backslash": {
+      "n": "/",
+      "sag": "|"
+    },
+    "KeyA": {
+      "n": "ᖑ",
+      "s": "ᒍ",
+      "ag": "ᖒ",
+      "sag": "ᒎ"
+    },
+    "KeyS": {
+      "n": "ᐅ",
+      "s": "ᐳ",
+      "ag": "ᐆ",
+      "sag": "ᐴ"
+    },
+    "KeyD": {
+      "n": "ᖁ",
+      "s": "ᕈ",
+      "ag": "ᖂ",
+      "sag": "ᕉ"
+    },
+    "KeyF": {
+      "n": "ᑯ",
+      "s": "ᕕ",
+      "ag": "ᑰ",
+      "sag": "ᕖ"
+    },
+    "KeyG": {
+      "n": "ᑐ",
+      "s": "(",
+      "ag": "ᑑ"
+    },
+    "KeyH": {
+      "n": "ᓱ",
+      "s": ")",
+      "ag": "ᓲ"
+    },
+    "KeyJ": {
+      "n": "ᒧ",
+      "s": "ᔪ",
+      "ag": "ᒨ",
+      "sag": "ᔫ"
+    },
+    "KeyK": {
+      "n": "ᓄ",
+      "s": "ᕗ",
+      "ag": "ᓅ",
+      "sag": "ᕘ"
+    },
+    "KeyL": {
+      "n": "ᓗ",
+      "s": "ᖢ",
+      "ag": "ᓘ",
+      "sag": "ᖣ"
+    },
+    "Semicolon": {
+      "n": ";",
+      "s": ":",
+      "ag": "ŋ"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\"",
+      "ag": "ł",
+      "sag": "Ł"
+    },
+    "IntlBackslash": {
+      "n": "/",
+      "sag": "|"
+    },
+    "KeyZ": {
+      "n": "ᖓ",
+      "s": "ᒐ",
+      "ag": "ᖔ",
+      "sag": "ᒑ"
+    },
+    "KeyX": {
+      "n": "ᐊ",
+      "s": "ᐸ",
+      "ag": "ᐋ",
+      "sag": "ᐹ"
+    },
+    "KeyC": {
+      "n": "ᖃ",
+      "s": "ᕋ",
+      "ag": "ᖄ",
+      "sag": "ᕌ"
+    },
+    "KeyV": {
+      "n": "ᑲ",
+      "s": "?",
+      "ag": "ᑳ",
+      "sag": "{"
+    },
+    "KeyB": {
+      "n": "ᑕ",
+      "s": "ᕼ",
+      "ag": "ᑖ",
+      "sag": "}"
+    },
+    "KeyN": {
+      "n": "ᓴ",
+      "s": "ᓇ",
+      "ag": "ᓵ",
+      "sag": "ᓈ"
+    },
+    "KeyM": {
+      "n": "ᒪ",
+      "s": "ᓚ",
+      "ag": "ᒫ",
+      "sag": "ᓛ"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "<"
+    },
+    "Period": {
+      "n": ".",
+      "s": ">"
+    },
+    "Slash": {
+      "n": "ᔭ",
+      "s": "ᕙ",
+      "ag": "ᔮ",
+      "sag": "ᕚ"
+    }
+  },
+  "deadkeys": [
+    {
+      "trigger": "]",
+      "base": "ᐃ",
+      "out": "ᐄ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᐅ",
+      "out": "ᐆ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᐊ",
+      "out": "ᐋ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᐱ",
+      "out": "ᐲ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᐳ",
+      "out": "ᐴ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᐸ",
+      "out": "ᐹ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᑐ",
+      "out": "ᑑ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᑕ",
+      "out": "ᑖ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᑭ",
+      "out": "ᑮ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᑯ",
+      "out": "ᑰ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᑲ",
+      "out": "ᑳ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᒍ",
+      "out": "ᒎ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᒐ",
+      "out": "ᒑ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᒥ",
+      "out": "ᒦ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᒧ",
+      "out": "ᒨ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᒪ",
+      "out": "ᒫ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᓄ",
+      "out": "ᓅ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᓇ",
+      "out": "ᓈ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᓗ",
+      "out": "ᓘ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᓚ",
+      "out": "ᓛ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᓱ",
+      "out": "ᓲ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᓴ",
+      "out": "ᓵ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᔨ",
+      "out": "ᔩ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᔪ",
+      "out": "ᔫ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᔭ",
+      "out": "ᔮ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᕆ",
+      "out": "ᕇ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᕈ",
+      "out": "ᕉ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᕋ",
+      "out": "ᕌ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᕕ",
+      "out": "ᕖ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᕗ",
+      "out": "ᕘ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᕙ",
+      "out": "ᕚ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᕿ",
+      "out": "ᖀ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᖁ",
+      "out": "ᖂ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᖃ",
+      "out": "ᖄ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᖑ",
+      "out": "ᖒ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᖓ",
+      "out": "ᖔ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᙵ",
+      "out": "ᙶ"
+    },
+    {
+      "trigger": "]",
+      "base": "ᖢ",
+      "out": "ᖣ"
+    }
+  ],
+  "longpress": {
+    "Digit1": ["¢"],
+    "Digit2": ["®"],
+    "Digit3": ["¼"],
+    "Digit4": ["½"],
+    "Digit5": ["¾"],
+    "Digit8": ["•", "©"],
+    "Digit9": ["÷"],
+    "KeyQ": ["ᒋ", "ᖐ", "ᒌ"],
+    "KeyW": ["ᐱ", "ᐄ", "ᐲ"],
+    "KeyE": ["ᕆ", "ᖀ", "ᕇ"],
+    "KeyR": ["ᖕ", "ᑮ"],
+    "KeyT": ["ᙱ", "ᑏ", "ᙲ"],
+    "KeyY": ["ᙳ", "ᓰ", "ᙴ"],
+    "KeyU": ["ᙵ", "ᒦ", "ᙶ"],
+    "KeyI": ["ᖤ", "ᓃ", "ᖥ"],
+    "KeyO": ["ᖠ", "ᓖ", "ᖡ"],
+    "KeyP": ["ᖦ", "ᔩ"],
+    "BracketLeft": ["ᔅ", "“", "”"],
+    "BracketRight": ["‘", "’"],
+    "KeyA": ["ᒍ", "ᖒ", "ᒎ"],
+    "KeyS": ["ᐳ", "ᐆ", "ᐴ"],
+    "KeyD": ["ᕈ", "ᖂ", "ᕉ"],
+    "KeyF": ["ᕕ", "ᑰ", "ᕖ"],
+    "KeyG": ["ᑑ"],
+    "KeyH": ["ᓲ"],
+    "KeyJ": ["ᔪ", "ᒨ", "ᔫ"],
+    "KeyK": ["ᕗ", "ᓅ", "ᕘ"],
+    "KeyL": ["ᖢ", "ᓘ", "ᖣ"],
+    "Semicolon": ["ŋ"],
+    "Quote": ["ł", "Ł"],
+    "KeyZ": ["ᒐ", "ᖔ", "ᒑ"],
+    "KeyX": ["ᐸ", "ᐋ", "ᐹ"],
+    "KeyC": ["ᕋ", "ᖄ", "ᕌ"],
+    "KeyV": ["ᑳ"],
+    "KeyB": ["ᕼ", "ᑖ"],
+    "KeyN": ["ᓇ", "ᓵ", "ᓈ"],
+    "KeyM": ["ᓚ", "ᒫ", "ᓛ"],
+    "Slash": ["ᕙ", "ᔮ", "ᕚ"]
+  }
+}

@@ -185,17 +185,26 @@ const NO_SENTENCES = new Set([
   "wo",
   "haw",
   "mi",
+  "ba",
+  "bo",
+  "syr",
+  "chr",
+  "iu",
+  // Tatoeba's Santali ends in ? and !, which the Ol Chiki layout lacks: 2 sentences are left.
+  "sat",
 ]);
 /** Small Tatoeba sets: every usable sentence, under 50. */
 const FEW_SENTENCES = new Set(["ps", "pnb", "gu", "te", "kn", "si", "or", "sa", "mn", "gd"]);
 
 describe("generated typing pages", () => {
-  it("cover every language but Urdu, which has its own, Hindko, with no text yet, and those typed by conversion", () => {
+  it("cover every language but Urdu, which has its own, Hindko and Bodo, with no text yet, and those typed by conversion", () => {
     const slugs = TYPING_LANGUAGES.map((l) => l.slug);
-    // Japanese and both Chinese: what is typed (romaji, pinyin) is not what is shown.
-    expect(slugs).toHaveLength(LANGUAGES.length - 5);
+    // Japanese, both Chinese, Amharic and Tigrinya: what is typed (romaji, pinyin, GFF's
+    // consonant then vowel) is not what is shown. Yiddish: Pasekh rewrites letters as you type.
+    expect(slugs).toHaveLength(LANGUAGES.length - 9);
     expect(slugs).not.toContain("urdu");
     expect(slugs).not.toContain("hindko");
+    expect(slugs).not.toContain("bodo");
     for (const l of TYPING_LANGUAGES) expect(TYPING_COPY[l.code], l.code).toBeDefined();
   });
 

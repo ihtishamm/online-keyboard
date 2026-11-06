@@ -242,6 +242,8 @@ const CYRILLIC_ONE_LETTER: Record<string, string> = {
   sr: "аиоусј",
   mk: "аиов",
   kk: "",
+  tt: "",
+  ba: "",
   ky: "",
   tg: "ваюе",
   mn: "",
@@ -266,6 +268,7 @@ const cyrillic = (code: string): TextRules => ({
 });
 
 const LETTER_END = /(?<=[.?!…։])\s+|\n+/u;
+const ETHIOPIC_END = /[።፧፨?!\n]+/u;
 /** A language with its own alphabet, and one-letter words listed in `single`. */
 const alphabet = (code: string, run: RegExp, single: string, cased: boolean): TextRules => ({
   code,
@@ -280,6 +283,8 @@ const alphabet = (code: string, run: RegExp, single: string, cased: boolean): Te
   },
   ...(cased ? { fold: (w: string) => foldLatin(w, code) } : {}),
 });
+
+const TEXT_IU = alphabet("iu", /[\u1401-\u166C\u166F-\u167F]+/gu, "", false);
 
 /** A script written without spaces between words. */
 const unspaced = (code: string, run: RegExp): TextRules => {
@@ -370,6 +375,8 @@ export const TEXT_RULES: Readonly<Record<string, TextRules>> = {
     normalizeWord: normalizeBangla,
   },
   mr: indic("mr", "Devanagari", normalizeMarathi),
+  // Bodo has no Wikipedia yet: these rules wait for a source of text.
+  brx: indic("brx", "Devanagari", normalizeHindi),
   gu: indic("gu", "Gujarati", normalizeGujarati),
   pa: indic("pa", "Gurmukhi", normalizePunjabi),
   ta: indic("ta", "Tamil", normalizeTamil),
@@ -400,6 +407,35 @@ export const TEXT_RULES: Readonly<Record<string, TextRules>> = {
   he: alphabet("he", /[\u05D0-\u05EA\u0591-\u05C7]+/gu, "", false),
   hy: alphabet("hy", /[\u0531-\u0556\u0561-\u0587]+/gu, "ևուէ", true),
   ka: alphabet("ka", /[\u10D0-\u10F0]+/gu, "", false),
+  // eslint-disable-next-line no-misleading-character-class -- letters and their points
+  yi: alphabet("yi", /[\u05D0-\u05EA\u05F0-\u05F2\u0591-\u05C7]+/gu, "", false),
+  am: {
+    ...alphabet("am", /[\u1200-\u135F\u2D80-\u2DDE]+/gu, "", false),
+    sentenceEnd: ETHIOPIC_END,
+  },
+  ti: {
+    ...alphabet("ti", /[\u1200-\u135F\u2D80-\u2DDE]+/gu, "", false),
+    sentenceEnd: ETHIOPIC_END,
+  },
+  // Tibetan joins syllables with the tsheg ་, not spaces: that is what makes two words a pair.
+  bo: {
+    ...alphabet("bo", /[\u0F40-\u0FBC]+/gu, "", false),
+    sentenceEnd: /[།༎\n]+/u,
+    joiners: /[\s\u0F0B]/g,
+  },
+  syr: {
+    ...alphabet("syr", /[\u0710-\u074A\u074D-\u074F]+/gu, "", false),
+    wiki: "arcwiki",
+    sentenceEnd: /[܀܁܂.?!؟\n]+/u,
+  },
+  chr: alphabet("chr", /[\u13A0-\u13F5]+/gu, "", false),
+  iu: {
+    ...TEXT_IU,
+    sentenceEnd: /[᙮.?!\n]+/u,
+    // Cree, quoted on the Inuktitut Wikipedia: its e-series and finals are not Inuktitut letters.
+    normalizeWord: (raw) => (/[ᐁᐯᑌᑫᒉᒣᓀᓭᔦᕃᐦᑊᒈᑨ]/u.test(raw) ? null : TEXT_IU.normalizeWord(raw)),
+  },
+  sat: { ...alphabet("sat", /[\u1C5A-\u1C7D]+/gu, "", false), sentenceEnd: /[᱾᱿.?!\n]+/u },
   th: unspaced("th", /[\u0E01-\u0E3A\u0E40-\u0E4E]+/gu),
   lo: unspaced("lo", /[\u0E81-\u0EBD\u0EC0-\u0ECD\u0EDC-\u0EDF]+/gu),
   km: unspaced("km", /[\u1780-\u17D3\u200B]+/gu),

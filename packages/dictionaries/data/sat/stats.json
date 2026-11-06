@@ -1,0 +1,13 @@
+{
+  "source": "satwiki.xml.bz2",
+  "pages": 17358,
+  "sentences": 324826,
+  "repeatedSentencesSkipped": 65613,
+  "tokens": 4609149,
+  "distinctWords": 222030,
+  "wordsKept": 58024,
+  "nextWordHeads": 9058,
+  "text": "sat-train.txt",
+  "textSentences": 4982,
+  "textWeight": 24.64
+}

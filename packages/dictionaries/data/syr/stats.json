@@ -1,0 +1,10 @@
+{
+  "source": "arcwiki.xml.bz2",
+  "pages": 1969,
+  "sentences": 5454,
+  "repeatedSentencesSkipped": 634,
+  "tokens": 55645,
+  "distinctWords": 12985,
+  "wordsKept": 3117,
+  "nextWordHeads": 621
+}

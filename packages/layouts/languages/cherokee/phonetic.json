@@ -1,0 +1,1068 @@
+{
+  "id": "chr-phonetic",
+  "lang": "chr",
+  "script": "Cher",
+  "dir": "ltr",
+  "name": {
+    "en": "Phonetic",
+    "native": "ᏣᎳᎩ"
+  },
+  "source": "Windows \"Cherokee Phonetic\", from Unicode CLDR 43 keyboard data (Unicode License v3).",
+  "keys": {
+    "Backquote": {
+      "n": "`",
+      "s": "~"
+    },
+    "Digit1": {
+      "n": "1",
+      "s": "!"
+    },
+    "Digit2": {
+      "n": "2",
+      "s": "@"
+    },
+    "Digit3": {
+      "n": "3",
+      "s": "#"
+    },
+    "Digit4": {
+      "n": "4",
+      "s": "$"
+    },
+    "Digit5": {
+      "n": "5",
+      "s": "%"
+    },
+    "Digit6": {
+      "n": "6",
+      "s": "^"
+    },
+    "Digit7": {
+      "n": "7",
+      "s": "&"
+    },
+    "Digit8": {
+      "n": "8",
+      "s": "*"
+    },
+    "Digit9": {
+      "n": "9",
+      "s": "("
+    },
+    "Digit0": {
+      "n": "0",
+      "s": ")"
+    },
+    "Minus": {
+      "n": "-",
+      "s": "_"
+    },
+    "Equal": {
+      "n": "=",
+      "s": "+"
+    },
+    "KeyQ": {
+      "n": "q",
+      "s": "Q"
+    },
+    "KeyW": {
+      "n": "w",
+      "s": "W"
+    },
+    "KeyE": {
+      "n": "Ꭱ",
+      "s": "Ꭱ"
+    },
+    "KeyT": {
+      "n": "t",
+      "s": "T"
+    },
+    "KeyY": {
+      "n": "y",
+      "s": "Y"
+    },
+    "KeyU": {
+      "n": "Ꭴ",
+      "s": "Ꭴ"
+    },
+    "KeyI": {
+      "n": "Ꭲ",
+      "s": "Ꭲ"
+    },
+    "KeyO": {
+      "n": "Ꭳ",
+      "s": "Ꭳ"
+    },
+    "BracketLeft": {
+      "n": "[",
+      "s": "{"
+    },
+    "BracketRight": {
+      "n": "]",
+      "s": "}"
+    },
+    "Backslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyA": {
+      "n": "Ꭰ",
+      "s": "Ꭰ"
+    },
+    "KeyS": {
+      "n": "s",
+      "s": "S"
+    },
+    "KeyD": {
+      "n": "d",
+      "s": "D"
+    },
+    "KeyG": {
+      "n": "g",
+      "s": "G"
+    },
+    "KeyH": {
+      "n": "h",
+      "s": "H"
+    },
+    "KeyJ": {
+      "n": "j",
+      "s": "J"
+    },
+    "KeyK": {
+      "n": "k",
+      "s": "K"
+    },
+    "KeyL": {
+      "n": "l",
+      "s": "L"
+    },
+    "Semicolon": {
+      "n": ";",
+      "s": ":"
+    },
+    "Quote": {
+      "n": "'",
+      "s": "\""
+    },
+    "IntlBackslash": {
+      "n": "\\",
+      "s": "|"
+    },
+    "KeyX": {
+      "n": "x",
+      "s": "X"
+    },
+    "KeyC": {
+      "n": "c",
+      "s": "C"
+    },
+    "KeyV": {
+      "n": "Ꭵ",
+      "s": "Ꭵ"
+    },
+    "KeyN": {
+      "n": "n",
+      "s": "N"
+    },
+    "KeyM": {
+      "n": "m",
+      "s": "M"
+    },
+    "Comma": {
+      "n": ",",
+      "s": "<"
+    },
+    "Period": {
+      "n": ".",
+      "s": ">"
+    },
+    "Slash": {
+      "n": "/",
+      "s": "?"
+    }
+  },
+  "deadkeys": [
+    {
+      "trigger": "c",
+      "base": "Ꭰ",
+      "out": "Ꭷ"
+    },
+    {
+      "trigger": "C",
+      "base": "Ꭰ",
+      "out": "Ꭷ"
+    },
+    {
+      "trigger": "d",
+      "base": ",",
+      "out": ","
+    },
+    {
+      "trigger": "D",
+      "base": ",",
+      "out": ","
+    },
+    {
+      "trigger": "d",
+      "base": ";",
+      "out": ";"
+    },
+    {
+      "trigger": "D",
+      "base": ";",
+      "out": ";"
+    },
+    {
+      "trigger": "d",
+      "base": ":",
+      "out": ":"
+    },
+    {
+      "trigger": "D",
+      "base": ":",
+      "out": ":"
+    },
+    {
+      "trigger": "d",
+      "base": "[",
+      "out": "["
+    },
+    {
+      "trigger": "D",
+      "base": "[",
+      "out": "["
+    },
+    {
+      "trigger": "d",
+      "base": "{",
+      "out": "{"
+    },
+    {
+      "trigger": "D",
+      "base": "{",
+      "out": "{"
+    },
+    {
+      "trigger": "d",
+      "base": "<",
+      "out": "<"
+    },
+    {
+      "trigger": "D",
+      "base": "<",
+      "out": "<"
+    },
+    {
+      "trigger": "d",
+      "base": "|",
+      "out": "|"
+    },
+    {
+      "trigger": "D",
+      "base": "|",
+      "out": "|"
+    },
+    {
+      "trigger": "d",
+      "base": "Ꭰ",
+      "out": "Ꮣ"
+    },
+    {
+      "trigger": "D",
+      "base": "Ꭰ",
+      "out": "Ꮣ"
+    },
+    {
+      "trigger": "d",
+      "base": "Ꭱ",
+      "out": "Ꮥ"
+    },
+    {
+      "trigger": "D",
+      "base": "Ꭱ",
+      "out": "Ꮥ"
+    },
+    {
+      "trigger": "d",
+      "base": "Ꭲ",
+      "out": "Ꮧ"
+    },
+    {
+      "trigger": "D",
+      "base": "Ꭲ",
+      "out": "Ꮧ"
+    },
+    {
+      "trigger": "d",
+      "base": "Ꭳ",
+      "out": "Ꮩ"
+    },
+    {
+      "trigger": "D",
+      "base": "Ꭳ",
+      "out": "Ꮩ"
+    },
+    {
+      "trigger": "d",
+      "base": "Ꭴ",
+      "out": "Ꮪ"
+    },
+    {
+      "trigger": "D",
+      "base": "Ꭴ",
+      "out": "Ꮪ"
+    },
+    {
+      "trigger": "d",
+      "base": "Ꭵ",
+      "out": "Ꮫ"
+    },
+    {
+      "trigger": "D",
+      "base": "Ꭵ",
+      "out": "Ꮫ"
+    },
+    {
+      "trigger": "d",
+      "base": "d",
+      "out": "d"
+    },
+    {
+      "trigger": "d",
+      "base": "D",
+      "out": "D"
+    },
+    {
+      "trigger": "D",
+      "base": "d",
+      "out": "d"
+    },
+    {
+      "trigger": "D",
+      "base": "D",
+      "out": "D"
+    },
+    {
+      "trigger": "d",
+      "base": "n",
+      "out": "n"
+    },
+    {
+      "trigger": "d",
+      "base": "N",
+      "out": "N"
+    },
+    {
+      "trigger": "D",
+      "base": "n",
+      "out": "n"
+    },
+    {
+      "trigger": "D",
+      "base": "N",
+      "out": "N"
+    },
+    {
+      "trigger": "g",
+      "base": "Ꭰ",
+      "out": "Ꭶ"
+    },
+    {
+      "trigger": "G",
+      "base": "Ꭰ",
+      "out": "Ꭶ"
+    },
+    {
+      "trigger": "g",
+      "base": "Ꭱ",
+      "out": "Ꭸ"
+    },
+    {
+      "trigger": "G",
+      "base": "Ꭱ",
+      "out": "Ꭸ"
+    },
+    {
+      "trigger": "g",
+      "base": "Ꭲ",
+      "out": "Ꭹ"
+    },
+    {
+      "trigger": "G",
+      "base": "Ꭲ",
+      "out": "Ꭹ"
+    },
+    {
+      "trigger": "g",
+      "base": "Ꭳ",
+      "out": "Ꭺ"
+    },
+    {
+      "trigger": "G",
+      "base": "Ꭳ",
+      "out": "Ꭺ"
+    },
+    {
+      "trigger": "g",
+      "base": "Ꭴ",
+      "out": "Ꭻ"
+    },
+    {
+      "trigger": "G",
+      "base": "Ꭴ",
+      "out": "Ꭻ"
+    },
+    {
+      "trigger": "g",
+      "base": "Ꭵ",
+      "out": "Ꭼ"
+    },
+    {
+      "trigger": "G",
+      "base": "Ꭵ",
+      "out": "Ꭼ"
+    },
+    {
+      "trigger": "h",
+      "base": "Ꭰ",
+      "out": "Ꭽ"
+    },
+    {
+      "trigger": "H",
+      "base": "Ꭰ",
+      "out": "Ꭽ"
+    },
+    {
+      "trigger": "h",
+      "base": "Ꭱ",
+      "out": "Ꭾ"
+    },
+    {
+      "trigger": "H",
+      "base": "Ꭱ",
+      "out": "Ꭾ"
+    },
+    {
+      "trigger": "h",
+      "base": "Ꭲ",
+      "out": "Ꭿ"
+    },
+    {
+      "trigger": "H",
+      "base": "Ꭲ",
+      "out": "Ꭿ"
+    },
+    {
+      "trigger": "h",
+      "base": "Ꭳ",
+      "out": "Ꮀ"
+    },
+    {
+      "trigger": "H",
+      "base": "Ꭳ",
+      "out": "Ꮀ"
+    },
+    {
+      "trigger": "h",
+      "base": "Ꭴ",
+      "out": "Ꮁ"
+    },
+    {
+      "trigger": "H",
+      "base": "Ꭴ",
+      "out": "Ꮁ"
+    },
+    {
+      "trigger": "h",
+      "base": "Ꭵ",
+      "out": "Ꮂ"
+    },
+    {
+      "trigger": "H",
+      "base": "Ꭵ",
+      "out": "Ꮂ"
+    },
+    {
+      "trigger": "j",
+      "base": "Ꭰ",
+      "out": "Ꮳ"
+    },
+    {
+      "trigger": "J",
+      "base": "Ꭰ",
+      "out": "Ꮳ"
+    },
+    {
+      "trigger": "j",
+      "base": "Ꭱ",
+      "out": "Ꮴ"
+    },
+    {
+      "trigger": "J",
+      "base": "Ꭱ",
+      "out": "Ꮴ"
+    },
+    {
+      "trigger": "j",
+      "base": "Ꭲ",
+      "out": "Ꮵ"
+    },
+    {
+      "trigger": "J",
+      "base": "Ꭲ",
+      "out": "Ꮵ"
+    },
+    {
+      "trigger": "j",
+      "base": "Ꭳ",
+      "out": "Ꮶ"
+    },
+    {
+      "trigger": "J",
+      "base": "Ꭳ",
+      "out": "Ꮶ"
+    },
+    {
+      "trigger": "j",
+      "base": "Ꭴ",
+      "out": "Ꮷ"
+    },
+    {
+      "trigger": "J",
+      "base": "Ꭴ",
+      "out": "Ꮷ"
+    },
+    {
+      "trigger": "j",
+      "base": "Ꭵ",
+      "out": "Ꮸ"
+    },
+    {
+      "trigger": "J",
+      "base": "Ꭵ",
+      "out": "Ꮸ"
+    },
+    {
+      "trigger": "k",
+      "base": "Ꭰ",
+      "out": "Ꭷ"
+    },
+    {
+      "trigger": "K",
+      "base": "Ꭰ",
+      "out": "Ꭷ"
+    },
+    {
+      "trigger": "k",
+      "base": "Ꭳ",
+      "out": "Ꭺ"
+    },
+    {
+      "trigger": "K",
+      "base": "Ꭳ",
+      "out": "Ꭺ"
+    },
+    {
+      "trigger": "l",
+      "base": "Ꭰ",
+      "out": "Ꮃ"
+    },
+    {
+      "trigger": "L",
+      "base": "Ꭰ",
+      "out": "Ꮃ"
+    },
+    {
+      "trigger": "l",
+      "base": "Ꭱ",
+      "out": "Ꮄ"
+    },
+    {
+      "trigger": "L",
+      "base": "Ꭱ",
+      "out": "Ꮄ"
+    },
+    {
+      "trigger": "l",
+      "base": "Ꭲ",
+      "out": "Ꮅ"
+    },
+    {
+      "trigger": "L",
+      "base": "Ꭲ",
+      "out": "Ꮅ"
+    },
+    {
+      "trigger": "l",
+      "base": "Ꭳ",
+      "out": "Ꮆ"
+    },
+    {
+      "trigger": "L",
+      "base": "Ꭳ",
+      "out": "Ꮆ"
+    },
+    {
+      "trigger": "l",
+      "base": "Ꭴ",
+      "out": "Ꮇ"
+    },
+    {
+      "trigger": "L",
+      "base": "Ꭴ",
+      "out": "Ꮇ"
+    },
+    {
+      "trigger": "l",
+      "base": "Ꭵ",
+      "out": "Ꮈ"
+    },
+    {
+      "trigger": "L",
+      "base": "Ꭵ",
+      "out": "Ꮈ"
+    },
+    {
+      "trigger": "m",
+      "base": "Ꭰ",
+      "out": "Ꮉ"
+    },
+    {
+      "trigger": "M",
+      "base": "Ꭰ",
+      "out": "Ꮉ"
+    },
+    {
+      "trigger": "m",
+      "base": "Ꭱ",
+      "out": "Ꮊ"
+    },
+    {
+      "trigger": "M",
+      "base": "Ꭱ",
+      "out": "Ꮊ"
+    },
+    {
+      "trigger": "m",
+      "base": "Ꭲ",
+      "out": "Ꮋ"
+    },
+    {
+      "trigger": "M",
+      "base": "Ꭲ",
+      "out": "Ꮋ"
+    },
+    {
+      "trigger": "m",
+      "base": "Ꭳ",
+      "out": "Ꮌ"
+    },
+    {
+      "trigger": "M",
+      "base": "Ꭳ",
+      "out": "Ꮌ"
+    },
+    {
+      "trigger": "m",
+      "base": "Ꭴ",
+      "out": "Ꮍ"
+    },
+    {
+      "trigger": "M",
+      "base": "Ꭴ",
+      "out": "Ꮍ"
+    },
+    {
+      "trigger": "n",
+      "base": "Ꭰ",
+      "out": "Ꮎ"
+    },
+    {
+      "trigger": "N",
+      "base": "Ꭰ",
+      "out": "Ꮎ"
+    },
+    {
+      "trigger": "n",
+      "base": "Ꭱ",
+      "out": "Ꮑ"
+    },
+    {
+      "trigger": "N",
+      "base": "Ꭱ",
+      "out": "Ꮑ"
+    },
+    {
+      "trigger": "n",
+      "base": "Ꭲ",
+      "out": "Ꮒ"
+    },
+    {
+      "trigger": "N",
+      "base": "Ꭲ",
+      "out": "Ꮒ"
+    },
+    {
+      "trigger": "n",
+      "base": "Ꭳ",
+      "out": "Ꮓ"
+    },
+    {
+      "trigger": "N",
+      "base": "Ꭳ",
+      "out": "Ꮓ"
+    },
+    {
+      "trigger": "n",
+      "base": "Ꭴ",
+      "out": "Ꮔ"
+    },
+    {
+      "trigger": "N",
+      "base": "Ꭴ",
+      "out": "Ꮔ"
+    },
+    {
+      "trigger": "n",
+      "base": "Ꭵ",
+      "out": "Ꮕ"
+    },
+    {
+      "trigger": "N",
+      "base": "Ꭵ",
+      "out": "Ꮕ"
+    },
+    {
+      "trigger": "n",
+      "base": "h",
+      "out": "Ꮐ"
+    },
+    {
+      "trigger": "n",
+      "base": "H",
+      "out": "Ꮐ"
+    },
+    {
+      "trigger": "N",
+      "base": "h",
+      "out": "Ꮐ"
+    },
+    {
+      "trigger": "N",
+      "base": "H",
+      "out": "Ꮐ"
+    },
+    {
+      "trigger": "q",
+      "base": "Ꭰ",
+      "out": "Ꮖ"
+    },
+    {
+      "trigger": "Q",
+      "base": "Ꭰ",
+      "out": "Ꮖ"
+    },
+    {
+      "trigger": "q",
+      "base": "Ꭱ",
+      "out": "Ꮗ"
+    },
+    {
+      "trigger": "Q",
+      "base": "Ꭱ",
+      "out": "Ꮗ"
+    },
+    {
+      "trigger": "q",
+      "base": "Ꭲ",
+      "out": "Ꮘ"
+    },
+    {
+      "trigger": "Q",
+      "base": "Ꭲ",
+      "out": "Ꮘ"
+    },
+    {
+      "trigger": "q",
+      "base": "Ꭳ",
+      "out": "Ꮙ"
+    },
+    {
+      "trigger": "Q",
+      "base": "Ꭳ",
+      "out": "Ꮙ"
+    },
+    {
+      "trigger": "q",
+      "base": "Ꭵ",
+      "out": "Ꮛ"
+    },
+    {
+      "trigger": "Q",
+      "base": "Ꭵ",
+      "out": "Ꮛ"
+    },
+    {
+      "trigger": "s",
+      "base": "`",
+      "out": "Ꮝ"
+    },
+    {
+      "trigger": "S",
+      "base": "`",
+      "out": "Ꮝ"
+    },
+    {
+      "trigger": "s",
+      "base": "Ꭰ",
+      "out": "Ꮜ"
+    },
+    {
+      "trigger": "S",
+      "base": "Ꭰ",
+      "out": "Ꮜ"
+    },
+    {
+      "trigger": "s",
+      "base": "Ꭱ",
+      "out": "Ꮞ"
+    },
+    {
+      "trigger": "S",
+      "base": "Ꭱ",
+      "out": "Ꮞ"
+    },
+    {
+      "trigger": "s",
+      "base": "Ꭲ",
+      "out": "Ꮟ"
+    },
+    {
+      "trigger": "S",
+      "base": "Ꭲ",
+      "out": "Ꮟ"
+    },
+    {
+      "trigger": "s",
+      "base": "Ꭳ",
+      "out": "Ꮠ"
+    },
+    {
+      "trigger": "S",
+      "base": "Ꭳ",
+      "out": "Ꮠ"
+    },
+    {
+      "trigger": "s",
+      "base": "Ꭴ",
+      "out": "Ꮡ"
+    },
+    {
+      "trigger": "S",
+      "base": "Ꭴ",
+      "out": "Ꮡ"
+    },
+    {
+      "trigger": "s",
+      "base": "Ꭵ",
+      "out": "Ꮢ"
+    },
+    {
+      "trigger": "S",
+      "base": "Ꭵ",
+      "out": "Ꮢ"
+    },
+    {
+      "trigger": "s",
+      "base": "x",
+      "out": "Ꮝ"
+    },
+    {
+      "trigger": "s",
+      "base": "X",
+      "out": "Ꮝ"
+    },
+    {
+      "trigger": "S",
+      "base": "x",
+      "out": "Ꮝ"
+    },
+    {
+      "trigger": "S",
+      "base": "X",
+      "out": "Ꮝ"
+    },
+    {
+      "trigger": "t",
+      "base": "Ꭰ",
+      "out": "Ꮤ"
+    },
+    {
+      "trigger": "T",
+      "base": "Ꭰ",
+      "out": "Ꮤ"
+    },
+    {
+      "trigger": "t",
+      "base": "Ꭱ",
+      "out": "Ꮦ"
+    },
+    {
+      "trigger": "T",
+      "base": "Ꭱ",
+      "out": "Ꮦ"
+    },
+    {
+      "trigger": "t",
+      "base": "Ꭲ",
+      "out": "Ꮨ"
+    },
+    {
+      "trigger": "T",
+      "base": "Ꭲ",
+      "out": "Ꮨ"
+    },
+    {
+      "trigger": "t",
+      "base": "Ꭴ",
+      "out": "Ꮪ"
+    },
+    {
+      "trigger": "T",
+      "base": "Ꭴ",
+      "out": "Ꮪ"
+    },
+    {
+      "trigger": "t",
+      "base": "Ꭵ",
+      "out": "Ꮫ"
+    },
+    {
+      "trigger": "T",
+      "base": "Ꭵ",
+      "out": "Ꮫ"
+    },
+    {
+      "trigger": "w",
+      "base": "Ꭰ",
+      "out": "Ꮹ"
+    },
+    {
+      "trigger": "W",
+      "base": "Ꭰ",
+      "out": "Ꮹ"
+    },
+    {
+      "trigger": "w",
+      "base": "Ꭱ",
+      "out": "Ꮺ"
+    },
+    {
+      "trigger": "W",
+      "base": "Ꭱ",
+      "out": "Ꮺ"
+    },
+    {
+      "trigger": "w",
+      "base": "Ꭲ",
+      "out": "Ꮻ"
+    },
+    {
+      "trigger": "W",
+      "base": "Ꭲ",
+      "out": "Ꮻ"
+    },
+    {
+      "trigger": "w",
+      "base": "Ꭳ",
+      "out": "Ꮼ"
+    },
+    {
+      "trigger": "W",
+      "base": "Ꭳ",
+      "out": "Ꮼ"
+    },
+    {
+      "trigger": "w",
+      "base": "Ꭴ",
+      "out": "Ꮽ"
+    },
+    {
+      "trigger": "W",
+      "base": "Ꭴ",
+      "out": "Ꮽ"
+    },
+    {
+      "trigger": "w",
+      "base": "Ꭵ",
+      "out": "Ꮾ"
+    },
+    {
+      "trigger": "W",
+      "base": "Ꭵ",
+      "out": "Ꮾ"
+    },
+    {
+      "trigger": "y",
+      "base": "Ꭰ",
+      "out": "Ꮿ"
+    },
+    {
+      "trigger": "Y",
+      "base": "Ꭰ",
+      "out": "Ꮿ"
+    },
+    {
+      "trigger": "y",
+      "base": "Ꭱ",
+      "out": "Ᏸ"
+    },
+    {
+      "trigger": "Y",
+      "base": "Ꭱ",
+      "out": "Ᏸ"
+    },
+    {
+      "trigger": "y",
+      "base": "Ꭲ",
+      "out": "Ᏹ"
+    },
+    {
+      "trigger": "Y",
+      "base": "Ꭲ",
+      "out": "Ᏹ"
+    },
+    {
+      "trigger": "y",
+      "base": "Ꭳ",
+      "out": "Ᏺ"
+    },
+    {
+      "trigger": "Y",
+      "base": "Ꭳ",
+      "out": "Ᏺ"
+    },
+    {
+      "trigger": "y",
+      "base": "Ꭴ",
+      "out": "Ᏻ"
+    },
+    {
+      "trigger": "Y",
+      "base": "Ꭴ",
+      "out": "Ᏻ"
+    },
+    {
+      "trigger": "y",
+      "base": "Ꭵ",
+      "out": "Ᏼ"
+    },
+    {
+      "trigger": "Y",
+      "base": "Ꭵ",
+      "out": "Ᏼ"
+    }
+  ],
+  "longpress": {}
+}

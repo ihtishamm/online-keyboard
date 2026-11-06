@@ -1321,6 +1321,877 @@ Rules the importers cannot express are listed under **Skipped** and left out, ne
 - **Skipped:** nothing
 - **Our changes:** none
 
+## brx-inscript
+
+- **Output:** `languages/bodo/inscript.json`
+- **Source:** `vendor/cldr/hi-t-k0-windows.xml`. Windows "Devanagari - INSCRIPT", the Indian standard Bodo is typed on, from Unicode CLDR 43 keyboard data (Unicode License v3). ZWJ, ZWNJ and ₹ moved from Ctrl+Shift (a browser shortcut) to Shift+AltGr, as on the Hindi page.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 23, sag 13)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit1.sag: none → `U+200D`
+  - Digit2.sag: none → `U+200C`
+  - Digit4.sag: none → `₹`
+
+## tt-standard
+
+- **Output:** `languages/tatar/standard.json`
+- **Source:** `vendor/cldr/tt-t-k0-windows.xml`. Windows "Tatar", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 16, sag 7)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## ba-standard
+
+- **Output:** `languages/bashkir/standard.json`
+- **Source:** `vendor/cldr/ba-t-k0-windows.xml`. Windows "Bashkir", from Unicode CLDR 43 keyboard data (Unicode License v3). Upstream cannot type ё; we add it on AltGr+T, the е key.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 47 keys (n 47, s 47, ag 2, sag 1)
+- **Skipped:** nothing
+- **Our changes:** 
+  - KeyT.ag: none → `ё`
+  - KeyT.sag: none → `Ё`
+
+## bo-standard
+
+- **Output:** `languages/tibetan/standard.json`
+- **Source:** `vendor/cldr/bo-t-k0-windows.xml`. Windows "Tibetan (PRC)", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 47 keys (n 47, s 47, sag 47), 54 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## syr-standard
+
+- **Output:** `languages/syriac/standard.json`
+- **Source:** `vendor/cldr/syr-t-k0-windows.xml`. Windows "Syriac", from Unicode CLDR 43 keyboard data (Unicode License v3). Changed: AltGr+- and AltGr+= (box corners ┌ ┐) left empty, as no font here draws them.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 34)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Minus.ag: `┌` → none
+  - Equal.ag: `┐` → none
+
+## syr-phonetic
+
+- **Output:** `languages/syriac/phonetic.json`
+- **Source:** `vendor/cldr/syr-t-k0-windows-qwerty.xml`. Windows "Syriac Phonetic", from Unicode CLDR 43 keyboard data (Unicode License v3). Changed: AltGr+- and AltGr+= (box corners ┌ ┐) left empty, as no font here draws them.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 48, ag 34)
+- **Skipped:** nothing
+- **Our changes:** 
+  - Minus.ag: `┌` → none
+  - Equal.ag: `┐` → none
+
+## chr-standard
+
+- **Output:** `languages/cherokee/standard.json`
+- **Source:** `vendor/cldr/chr-t-k0-windows.xml`. Windows "Cherokee Nation", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 47 keys (n 47, s 47, ag 46, sag 44)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## chr-phonetic
+
+- **Output:** `languages/cherokee/phonetic.json`
+- **Source:** `vendor/cldr/chr-t-k0-windows-phonetic.xml`. Windows "Cherokee Phonetic", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 43 keys (n 43, s 43), 176 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** none
+
+## iu-naqittaut
+
+- **Output:** `languages/inuktitut/naqittaut.json`
+- **Source:** `vendor/cldr/iu-t-k0-windows.xml`. Windows "Inuktitut - Naqittaut", from Unicode CLDR 43 keyboard data (Unicode License v3). Changed: syllabics are on the plain keys; Windows has them behind Caps Lock, with Latin letters on the plain keys. Shift+AltGr+7 (⅔) left empty, as no font here draws it.
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 48 keys (n 48, s 34, ag 42, sag 38), 38 dead-key compositions
+- **Skipped:** nothing
+- **Our changes:** 
+  - Digit7.sag: `⅔` → none
+
+## sat-standard
+
+- **Output:** `languages/santali/standard.json`
+- **Source:** `vendor/cldr/sat-t-k0-windows.xml`. Windows "Ol Chiki", from Unicode CLDR 43 keyboard data (Unicode License v3).
+- **Licence:** Unicode License v3 (vendor/cldr/LICENSE)
+- **Coverage:** 41 keys (n 39, s 11)
+- **Skipped:** nothing
+- **Our changes:** none
+
+## am-gff
+
+- **Output:** `languages/amharic/gff.json`
+- **Source:** `vendor/keyman/gff_amharic/gff_amharic.kmn`. Keyman GFF Amharic by the Geʾez Frontier Foundation (MIT): type a consonant, then a vowel (se ሰ, sa ሳ).
+- **Licence:** MIT, Geʾez Frontier Foundation (vendor/keyman/gff_amharic/LICENSE.md)
+- **Coverage:** 47 keys (n 47, s 47), 575 context rules
+- **Skipped:** 
+  - line 194: unsupported context rule, skipped: any(ሳድስ) + [T_ግዕዝ] > index(ግዕዝ,1)
+  - line 195: unsupported context rule, skipped: any(ሳድስ) + [T_ካዕብ] > index(ካዕብ,1)
+  - line 196: unsupported context rule, skipped: any(ሳድስ) + [T_ሣልስ] > index(ሣልስ,1)
+  - line 197: unsupported context rule, skipped: any(ሳድስ) + [T_ራብዕ] > index(ራብዕ,1)
+  - line 198: unsupported context rule, skipped: any(ሳድስ) + [T_ኃምስ] > index(ኃምስ,1)
+  - line 199: unsupported context rule, skipped: any(ሳድስ) + [T_ሳብዕ] > index(ሳብዕ,1)
+  - line 200: unsupported context rule, skipped: any(ሳድስ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  - line 202: unsupported rule (context), skipped: if( &layer = "ሀ-layer" ) 'ህ' + any(touchVowelsExtended) > index(ሀ_ቤተሰብ,3)
+  - line 203: unsupported rule (context), skipped: if( &layer = "ሀ-layer" ) + any(touchVowelsExtended) > index(ሀ_ቤተሰብ,2)
+  - line 204: unsupported rule (context), skipped: if( &layer = "ለ-layer" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
+  - line 205: unsupported rule (context), skipped: if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
+  - line 206: unsupported rule (context), skipped: if( &layer = "መ-layer" ) + any(touchVowels) > index(መ_ቤተሰብ,2)
+  - line 207: unsupported rule (context), skipped: if( &layer = "ሠ-layer" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
+  - line 208: unsupported rule (context), skipped: if( &layer = "ሠ-extra" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
+  - line 209: unsupported rule (context), skipped: if( &layer = "ረ-layer" ) + any(touchVowels) > index(ረ_ቤተሰብ,2)
+  - line 210: unsupported rule (context), skipped: if( &layer = "ሰ-layer" ) + any(touchVowels) > index(ሰ_ቤተሰብ,2)
+  - line 211: unsupported rule (context), skipped: if( &layer = "ሸ-layer" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
+  - line 212: unsupported rule (context), skipped: if( &layer = "ቀ-layer" ) 'ቅ' + any(touchVowelsExtended) > index(ቀ_ቤተሰብ,3)
+  - line 213: unsupported rule (context), skipped: if( &layer = "ቀ-layer" ) + any(touchVowelsExtended) > index(ቀ_ቤተሰብ,2)
+  - line 214: unsupported rule (context), skipped: if( &layer = "በ-layer" ) + any(touchVowels) > index(በ_ቤተሰብ,2)
+  - line 215: unsupported rule (context), skipped: if( &layer = "ቨ-layer" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
+  - line 216: unsupported rule (context), skipped: if( &layer = "ቨ-extra" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
+  - line 217: unsupported rule (context), skipped: if( &layer = "ተ-layer" ) + any(touchVowels) > index(ተ_ቤተሰብ,2)
+  - line 218: unsupported rule (context), skipped: if( &layer = "ቸ-layer" ) + any(touchVowels) > index(ቸ_ቤተሰብ,2)
+  - line 219: unsupported rule (context), skipped: if( &layer = "ኀ-layer" ) 'ኅ' + any(touchVowelsExtended) > index(ኀ_ቤተሰብ,3)
+  - line 220: unsupported rule (context), skipped: if( &layer = "ኀ-layer" ) + any(touchVowelsExtended) > index(ኀ_ቤተሰብ,2)
+  - line 221: unsupported rule (context), skipped: if( &layer = "ኀ-extra" ) 'ኅ' + any(touchVowelsExtended) > index(ኀ_ቤተሰብ,3)
+  - line 222: unsupported rule (context), skipped: if( &layer = "ኀ-extra" ) + any(touchVowelsExtended) > index(ኀ_ቤተሰብ,2)
+  - line 223: unsupported rule (context), skipped: if( &layer = "ነ-layer" ) + any(touchVowels) > index(ነ_ቤተሰብ,2)
+  - line 224: unsupported rule (context), skipped: if( &layer = "ኘ-layer" ) + any(touchVowels) > index(ኘ_ቤተሰብ,2)
+  - line 225: unsupported rule (context), skipped: if( &layer = "አ-layer" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
+  - line 226: unsupported rule (context), skipped: if( &layer = "አ-layer" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
+  - line 227: unsupported rule (context), skipped: if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
+  - line 228: unsupported rule (context), skipped: if( &layer = "ከ-layer" ) 'ክ' + any(touchVowelsExtended) > index(ከ_ቤተሰብ,3)
+  - line 229: unsupported rule (context), skipped: if( &layer = "ከ-layer" ) + any(touchVowelsExtended) > index(ከ_ቤተሰብ,2)
+  - line 230: unsupported rule (context), skipped: if( &layer = "ኸ-layer" ) 'ኽ' + any(touchVowelsExtended) > index(ኸ_ቤተሰብ,3)
+  - line 231: unsupported rule (context), skipped: if( &layer = "ኸ-layer" ) + any(touchVowelsExtended) > index(ኸ_ቤተሰብ,2)
+  - line 232: unsupported rule (context), skipped: if( &layer = "ኸ-extra" ) 'ኽ' + any(touchVowelsExtended) > index(ኸ_ቤተሰብ,3)
+  - line 233: unsupported rule (context), skipped: if( &layer = "ኸ-extra" ) + any(touchVowelsExtended) > index(ኸ_ቤተሰብ,2)
+  - line 234: unsupported rule (context), skipped: if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
+  - line 235: unsupported rule (context), skipped: if( &layer = "ወ-layer" ) + any(touchVowels) > index(ወ_ቤተሰብ,2)
+  - line 236: unsupported rule (context), skipped: if( &layer = "ዘ-layer" ) + any(touchVowels) > index(ዘ_ቤተሰብ,2)
+  - line 237: unsupported rule (context), skipped: if( &layer = "ዠ-layer" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2)
+  - line 238: unsupported rule (context), skipped: if( &layer = "ዠ-extra" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2)
+  - line 239: unsupported rule (context), skipped: if( &layer = "የ-layer" ) + any(touchVowels) > index(የ_ቤተሰብ,2)
+  - line 240: unsupported rule (context), skipped: if( &layer = "ደ-layer" ) + any(touchVowels) > index(ደ_ቤተሰብ,2)
+  - line 241: unsupported rule (context), skipped: if( &layer = "ጀ-layer" ) + any(touchVowels) > index(ጀ_ቤተሰብ,2)
+  - line 242: unsupported rule (context), skipped: if( &layer = "ገ-layer" ) 'ግ' + any(touchVowelsExtended) > index(ገ_ቤተሰብ,3)
+  - line 243: unsupported rule (context), skipped: if( &layer = "ገ-layer" ) + any(touchVowelsExtended) > index(ገ_ቤተሰብ,2)
+  - line 244: unsupported rule (context), skipped: if( &layer = "ጠ-layer" ) + any(touchVowels) > index(ጠ_ቤተሰብ,2)
+  - line 245: unsupported rule (context), skipped: if( &layer = "ጨ-layer" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2)
+  - line 246: unsupported rule (context), skipped: if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2)
+  - line 247: unsupported rule (context), skipped: if( &layer = "ጸ-layer" ) + any(touchVowels) > index(ጸ_ቤተሰብ,2)
+  - line 248: unsupported rule (context), skipped: if( &layer = "ፀ-layer" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
+  - line 249: unsupported rule (context), skipped: if( &layer = "ፀ-extra" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
+  - line 250: unsupported rule (context), skipped: if( &layer = "ፈ-layer" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
+  - line 251: unsupported rule (context), skipped: if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
+  - line 252: unsupported rule (context), skipped: if( &layer = "ፐ-extra" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
+  - line 255: unsupported rule (context), skipped: if( &layer = "ዀ-extra" ) 'ዀ' + any(ዀ_layer_keys) > index(ዀ_layer_out,3)
+  - line 256: unsupported rule (context), skipped: if( &layer = "ዀ-extra" ) + [T_WWE] > 'ዀ' dk(1)
+  - line 257: unsupported rule (context), skipped: if( &layer = "ዀ-extra" ) + any(ዀ_layer_keys) > index(ዀ_layer_out,2)
+  - line 259: unsupported rule (context), skipped: if( &layer = "ᎀ-extra" ) 'ᎀ' + any(ᎀ_layer_keys) > index(ᎀ_layer_out,3)
+  - line 260: unsupported rule (context), skipped: if( &layer = "ᎀ-extra" ) + [U_1380] > 'ᎀ' dk(1)
+  - line 262: unsupported rule (context), skipped: if( &layer = "ᎈ-extra" ) 'ᎈ' + any(ᎈ_layer_keys) > index(ᎈ_layer_out,3)
+  - line 263: unsupported rule (context), skipped: if( &layer = "ᎈ-extra" ) + [U_1388] > 'ᎈ' dk(1)
+  - line 265: unsupported rule (context), skipped: if( &layer = "𞟨-extra" ) '𞟨' + any(𞟨_layer_keys) > index(𞟨_layer_out,3)
+  - line 266: unsupported rule (context), skipped: if( &layer = "𞟨-extra" ) + [U_1E7E8] > '𞟨' dk(1)
+  - line 271: unsupported rule (context), skipped: if( &layer = "ቐ-layer" ) + any(touchVowelsExtended) > index(ቐ_ቤተሰብ,2)
+  - line 272: unsupported rule (context), skipped: if( &layer = "ቐ-layer" ) 'ቕ' + any(touchVowelsExtended) > index(ቐ_ቤተሰብ,3)
+  - line 273: unsupported rule (context), skipped: if( &layer = "ቐ-extra" ) + any(touchVowelsExtended) > index(ቐ_ቤተሰብ,2)
+  - line 274: unsupported rule (context), skipped: if( &layer = "ጘ-layer" ) + any(touchVowelsExtended) > index(ጘ_ቤተሰብ,2)
+  - line 275: unsupported rule (context), skipped: if( &layer = "ጘ-layer" ) 'ጝ' + any(touchVowelsExtended) > index(ጘ_ቤተሰብ,3)
+  - line 276: unsupported rule (context), skipped: if( &layer = "ጘ-extra" ) + any(touchVowelsExtended) > index(ጘ_ቤተሰብ,2)
+  - line 277: unsupported rule (context), skipped: if( &layer = "𞟠-extra" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
+  - line 295: item 1 of loneVowelKeys not mapped
+  - line 295: item 12 of loneVowelKeys not mapped
+  - line 296: unsupported context rule, skipped: any(loneVowelEthio) + "'" > index(loneVowelEthio,1) deadkey(1)
+  - line 367: unsupported context rule, skipped: any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
+  - line 368: unsupported context rule, skipped: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
+  - line 369: unsupported context rule, skipped: any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
+  - line 370: unsupported context rule, skipped: any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
+  - line 371: unsupported context rule, skipped: any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)
+  - line 372: unsupported context rule, skipped: any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
+  - line 377: unknown key or modifiers, skipped: [SHIFT ' ']
+  - line 397: unsupported context rule, skipped: '›' + '>' > '»'
+  - line 399: unsupported context rule, skipped: '»' + '>' > '>'
+  - line 405: item 1 of euro not mapped
+  - line 405: item 2 of euro not mapped
+  - line 405: item 3 of euro not mapped
+  - line 405: item 4 of euro not mapped
+  - line 405: item 5 of euro not mapped
+  - line 405: item 6 of euro not mapped
+  - line 405: item 7 of euro not mapped
+  - line 405: item 8 of euro not mapped
+  - line 405: item 9 of euro not mapped
+  - line 405: item 10 of euro not mapped
+  - line 407: unsupported context rule, skipped: 'ጽ' + 'ß' > 'ፅ'
+  - line 408: unknown key or modifiers, skipped: '¨'
+  - line 413: item 1 of euroVowels not mapped
+  - line 413: item 2 of euroVowels not mapped
+  - line 413: item 3 of euroVowels not mapped
+  - line 413: item 4 of euroVowels not mapped
+  - line 413: item 5 of euroVowels not mapped
+  - line 413: item 6 of euroVowels not mapped
+  - line 413: item 7 of euroVowels not mapped
+  - line 413: item 8 of euroVowels not mapped
+  - line 413: item 9 of euroVowels not mapped
+  - line 413: item 10 of euroVowels not mapped
+  - line 413: item 11 of euroVowels not mapped
+  - line 413: item 12 of euroVowels not mapped
+  - line 413: item 13 of euroVowels not mapped
+  - line 413: item 14 of euroVowels not mapped
+  - line 413: item 15 of euroVowels not mapped
+  - line 413: item 16 of euroVowels not mapped
+  - line 413: item 17 of euroVowels not mapped
+  - line 413: item 18 of euroVowels not mapped
+  - line 413: item 19 of euroVowels not mapped
+  - line 413: item 20 of euroVowels not mapped
+  - line 413: item 21 of euroVowels not mapped
+  - line 413: item 22 of euroVowels not mapped
+  - line 413: item 23 of euroVowels not mapped
+  - line 413: item 24 of euroVowels not mapped
+  - line 413: item 25 of euroVowels not mapped
+  - line 413: item 26 of euroVowels not mapped
+  - line 413: item 27 of euroVowels not mapped
+  - line 413: item 28 of euroVowels not mapped
+  - line 413: item 29 of euroVowels not mapped
+  - line 413: item 30 of euroVowels not mapped
+  - line 413: item 31 of euroVowels not mapped
+  - line 413: item 32 of euroVowels not mapped
+  - line 413: item 33 of euroVowels not mapped
+  - line 413: item 34 of euroVowels not mapped
+  - line 413: item 35 of euroVowels not mapped
+  - line 413: item 36 of euroVowels not mapped
+  - line 413: item 37 of euroVowels not mapped
+  - line 413: item 38 of euroVowels not mapped
+  - line 413: item 39 of euroVowels not mapped
+  - line 413: item 40 of euroVowels not mapped
+  - line 413: item 41 of euroVowels not mapped
+  - line 413: item 42 of euroVowels not mapped
+  - line 413: item 43 of euroVowels not mapped
+  - line 413: item 44 of euroVowels not mapped
+  - line 413: item 45 of euroVowels not mapped
+  - line 413: item 46 of euroVowels not mapped
+  - line 413: item 47 of euroVowels not mapped
+  - line 413: item 48 of euroVowels not mapped
+  - line 426: unsupported context rule, skipped: any(arabNumbersWithZero) any(ethWordspaceOrComma) + any(arabNumbers) > index(arabNumbersWithZero,1) index(ColonOrComma,2) index(arabNumbers,3)
+  - line 442: unsupported context rule, skipped: '፼፼' + '0' > context beep
+  - line 457: unknown key or modifiers, skipped: [T_THOUSAND]
+  - line 511: unknown key or modifiers, skipped: [T_BANG]
+  - line 512: unsupported rule (context), skipped: '!' deadkey(2) + any(latinPunctIn) > index(latinPunctOut,3)
+  - line 514: unknown key or modifiers, skipped: [T_00AB]
+  - line 515: unknown key or modifiers, skipped: [T_2039]
+  - line 516: unknown key or modifiers, skipped: [T_201C]
+  - line 517: unknown key or modifiers, skipped: [T_2018]
+  - line 518: unknown key or modifiers, skipped: [T_2019]
+  - line 519: unknown key or modifiers, skipped: [T_201D]
+  - line 520: unknown key or modifiers, skipped: [T_203A]
+  - line 521: unknown key or modifiers, skipped: [T_00BB]
+  - line 523: unknown key or modifiers, skipped: [T_1362]
+  - line 524: unsupported rule (context), skipped: '።' deadkey(2) + any(ethioPunctIn) > index(ethioPunctOut,3)
+  - line 525: item 1 of ethioPunctIn not mapped
+  - line 525: item 2 of ethioPunctIn not mapped
+  - line 525: item 3 of ethioPunctIn not mapped
+  - line 525: item 4 of ethioPunctIn not mapped
+  - line 525: item 5 of ethioPunctIn not mapped
+  - line 525: item 6 of ethioPunctIn not mapped
+  - line 525: item 7 of ethioPunctIn not mapped
+  - line 299: repeats the rule for አ + እ, skipped
+  - line 302: repeats the rule for እ + ኡ, skipped
+  - line 303: repeats the rule for እ + ኢ, skipped
+  - line 304: repeats the rule for እ + አ, skipped
+  - line 306: repeats the rule for ኢ + እ, skipped
+  - line 307: repeats the rule for እ + ኦ, skipped
+  - line 314: repeats the rule for እ + እ, skipped
+  - line 319: repeats the rule for ዒ + እ, skipped
+  - line 324: repeats the rule for ኡ + ኡ, skipped
+  - line 325: repeats the rule for ኢ + ኢ, skipped
+  - line 326: repeats the rule for ኦ + ኦ, skipped
+  - line 329: repeats the rule for አ + አ, skipped
+  - line 330: repeats the rule for ዓ + አ, skipped
+  - line 331: repeats the rule for ዐ + አ, skipped
+  - line 336: repeats the rule for ህ + እ, skipped
+  - line 336: repeats the rule for ል + እ, skipped
+  - line 336: repeats the rule for ሕ + እ, skipped
+  - line 336: repeats the rule for 𞟥 + እ, skipped
+  - line 336: repeats the rule for ም + እ, skipped
+  - line 336: repeats the rule for ሥ + እ, skipped
+  - line 336: repeats the rule for ር + እ, skipped
+  - line 336: repeats the rule for ስ + እ, skipped
+  - line 336: repeats the rule for ሽ + እ, skipped
+  - line 336: repeats the rule for ቅ + እ, skipped
+  - line 336: repeats the rule for ቕ + እ, skipped
+  - line 336: repeats the rule for ብ + እ, skipped
+  - line 336: repeats the rule for ቭ + እ, skipped
+  - line 336: repeats the rule for ት + እ, skipped
+  - line 336: repeats the rule for ች + እ, skipped
+  - line 336: repeats the rule for ኅ + እ, skipped
+  - line 336: repeats the rule for ን + እ, skipped
+  - line 336: repeats the rule for ኝ + እ, skipped
+  - line 336: repeats the rule for ክ + እ, skipped
+  - line 336: repeats the rule for ኽ + እ, skipped
+  - line 336: repeats the rule for ው + እ, skipped
+  - line 336: repeats the rule for ዕ + እ, skipped
+  - line 336: repeats the rule for ዝ + እ, skipped
+  - line 336: repeats the rule for ዥ + እ, skipped
+  - line 336: repeats the rule for ይ + እ, skipped
+  - line 336: repeats the rule for ድ + እ, skipped
+  - line 336: repeats the rule for ጅ + እ, skipped
+  - line 336: repeats the rule for ግ + እ, skipped
+  - line 336: repeats the rule for ጝ + እ, skipped
+  - line 336: repeats the rule for ጥ + እ, skipped
+  - line 336: repeats the rule for ጭ + እ, skipped
+  - line 336: repeats the rule for ጵ + እ, skipped
+  - line 336: repeats the rule for ጽ + እ, skipped
+  - line 336: repeats the rule for ፅ + እ, skipped
+  - line 336: repeats the rule for ፍ + እ, skipped
+  - line 336: repeats the rule for ፕ + እ, skipped
+  - line 337: repeats the rule for ህ + ኡ, skipped
+  - line 337: repeats the rule for ል + ኡ, skipped
+  - line 337: repeats the rule for ሕ + ኡ, skipped
+  - line 337: repeats the rule for 𞟥 + ኡ, skipped
+  - line 337: repeats the rule for ም + ኡ, skipped
+  - line 337: repeats the rule for ሥ + ኡ, skipped
+  - line 337: repeats the rule for ር + ኡ, skipped
+  - line 337: repeats the rule for ስ + ኡ, skipped
+  - line 337: repeats the rule for ሽ + ኡ, skipped
+  - line 337: repeats the rule for ቅ + ኡ, skipped
+  - line 337: repeats the rule for ቕ + ኡ, skipped
+  - line 337: repeats the rule for ብ + ኡ, skipped
+  - line 337: repeats the rule for ቭ + ኡ, skipped
+  - line 337: repeats the rule for ት + ኡ, skipped
+  - line 337: repeats the rule for ች + ኡ, skipped
+  - line 337: repeats the rule for ኅ + ኡ, skipped
+  - line 337: repeats the rule for ን + ኡ, skipped
+  - line 337: repeats the rule for ኝ + ኡ, skipped
+  - line 337: repeats the rule for ክ + ኡ, skipped
+  - line 337: repeats the rule for ኽ + ኡ, skipped
+  - line 337: repeats the rule for ው + ኡ, skipped
+  - line 337: repeats the rule for ዕ + ኡ, skipped
+  - line 337: repeats the rule for ዝ + ኡ, skipped
+  - line 337: repeats the rule for ዥ + ኡ, skipped
+  - line 337: repeats the rule for ይ + ኡ, skipped
+  - line 337: repeats the rule for ድ + ኡ, skipped
+  - line 337: repeats the rule for ጅ + ኡ, skipped
+  - line 337: repeats the rule for ግ + ኡ, skipped
+  - line 337: repeats the rule for ጝ + ኡ, skipped
+  - line 337: repeats the rule for ጥ + ኡ, skipped
+  - line 337: repeats the rule for ጭ + ኡ, skipped
+  - line 337: repeats the rule for ጵ + ኡ, skipped
+  - line 337: repeats the rule for ጽ + ኡ, skipped
+  - line 337: repeats the rule for ፅ + ኡ, skipped
+  - line 337: repeats the rule for ፍ + ኡ, skipped
+  - line 337: repeats the rule for ፕ + ኡ, skipped
+  - line 338: repeats the rule for ህ + ኢ, skipped
+  - line 338: repeats the rule for ል + ኢ, skipped
+  - line 338: repeats the rule for ሕ + ኢ, skipped
+  - line 338: repeats the rule for 𞟥 + ኢ, skipped
+  - line 338: repeats the rule for ም + ኢ, skipped
+  - line 338: repeats the rule for ሥ + ኢ, skipped
+  - line 338: repeats the rule for ር + ኢ, skipped
+  - line 338: repeats the rule for ስ + ኢ, skipped
+  - line 338: repeats the rule for ሽ + ኢ, skipped
+  - line 338: repeats the rule for ቅ + ኢ, skipped
+  - line 338: repeats the rule for ቕ + ኢ, skipped
+  - line 338: repeats the rule for ብ + ኢ, skipped
+  - line 338: repeats the rule for ቭ + ኢ, skipped
+  - line 338: repeats the rule for ት + ኢ, skipped
+  - line 338: repeats the rule for ች + ኢ, skipped
+  - line 338: repeats the rule for ኅ + ኢ, skipped
+  - line 338: repeats the rule for ን + ኢ, skipped
+  - line 338: repeats the rule for ኝ + ኢ, skipped
+  - line 338: repeats the rule for ክ + ኢ, skipped
+  - line 338: repeats the rule for ኽ + ኢ, skipped
+  - line 338: repeats the rule for ው + ኢ, skipped
+  - line 338: repeats the rule for ዕ + ኢ, skipped
+  - line 338: repeats the rule for ዝ + ኢ, skipped
+  - line 338: repeats the rule for ዥ + ኢ, skipped
+  - line 338: repeats the rule for ይ + ኢ, skipped
+  - line 338: repeats the rule for ድ + ኢ, skipped
+  - line 338: repeats the rule for ጅ + ኢ, skipped
+  - line 338: repeats the rule for ግ + ኢ, skipped
+  - line 338: repeats the rule for ጝ + ኢ, skipped
+  - line 338: repeats the rule for ጥ + ኢ, skipped
+  - line 338: repeats the rule for ጭ + ኢ, skipped
+  - line 338: repeats the rule for ጵ + ኢ, skipped
+  - line 338: repeats the rule for ጽ + ኢ, skipped
+  - line 338: repeats the rule for ፅ + ኢ, skipped
+  - line 338: repeats the rule for ፍ + ኢ, skipped
+  - line 338: repeats the rule for ፕ + ኢ, skipped
+  - line 339: repeats the rule for ህ + አ, skipped
+  - line 339: repeats the rule for ል + አ, skipped
+  - line 339: repeats the rule for ሕ + አ, skipped
+  - line 339: repeats the rule for 𞟥 + አ, skipped
+  - line 339: repeats the rule for ም + አ, skipped
+  - line 339: repeats the rule for ሥ + አ, skipped
+  - line 339: repeats the rule for ር + አ, skipped
+  - line 339: repeats the rule for ስ + አ, skipped
+  - line 339: repeats the rule for ሽ + አ, skipped
+  - line 339: repeats the rule for ቅ + አ, skipped
+  - line 339: repeats the rule for ቕ + አ, skipped
+  - line 339: repeats the rule for ብ + አ, skipped
+  - line 339: repeats the rule for ቭ + አ, skipped
+  - line 339: repeats the rule for ት + አ, skipped
+  - line 339: repeats the rule for ች + አ, skipped
+  - line 339: repeats the rule for ኅ + አ, skipped
+  - line 339: repeats the rule for ን + አ, skipped
+  - line 339: repeats the rule for ኝ + አ, skipped
+  - line 339: repeats the rule for ክ + አ, skipped
+  - line 339: repeats the rule for ኽ + አ, skipped
+  - line 339: repeats the rule for ው + አ, skipped
+  - line 339: repeats the rule for ዕ + አ, skipped
+  - line 339: repeats the rule for ዝ + አ, skipped
+  - line 339: repeats the rule for ዥ + አ, skipped
+  - line 339: repeats the rule for ይ + አ, skipped
+  - line 339: repeats the rule for ድ + አ, skipped
+  - line 339: repeats the rule for ጅ + አ, skipped
+  - line 339: repeats the rule for ግ + አ, skipped
+  - line 339: repeats the rule for ጝ + አ, skipped
+  - line 339: repeats the rule for ጥ + አ, skipped
+  - line 339: repeats the rule for ጭ + አ, skipped
+  - line 339: repeats the rule for ጵ + አ, skipped
+  - line 339: repeats the rule for ጽ + አ, skipped
+  - line 339: repeats the rule for ፅ + አ, skipped
+  - line 339: repeats the rule for ፍ + አ, skipped
+  - line 339: repeats the rule for ፕ + አ, skipped
+  - line 341: repeats the rule for ሂ + እ, skipped
+  - line 341: repeats the rule for ሊ + እ, skipped
+  - line 341: repeats the rule for ሒ + እ, skipped
+  - line 341: repeats the rule for 𞟢 + እ, skipped
+  - line 341: repeats the rule for ሚ + እ, skipped
+  - line 341: repeats the rule for ሢ + እ, skipped
+  - line 341: repeats the rule for ሪ + እ, skipped
+  - line 341: repeats the rule for ሲ + እ, skipped
+  - line 341: repeats the rule for ሺ + እ, skipped
+  - line 341: repeats the rule for ቂ + እ, skipped
+  - line 341: repeats the rule for ቒ + እ, skipped
+  - line 341: repeats the rule for ቢ + እ, skipped
+  - line 341: repeats the rule for ቪ + እ, skipped
+  - line 341: repeats the rule for ቲ + እ, skipped
+  - line 341: repeats the rule for ቺ + እ, skipped
+  - line 341: repeats the rule for ኂ + እ, skipped
+  - line 341: repeats the rule for ኒ + እ, skipped
+  - line 341: repeats the rule for ኚ + እ, skipped
+  - line 341: repeats the rule for ኪ + እ, skipped
+  - line 341: repeats the rule for ኺ + እ, skipped
+  - line 341: repeats the rule for ዊ + እ, skipped
+  - line 341: repeats the rule for ዒ + እ, skipped
+  - line 341: repeats the rule for ዒ + እ, skipped
+  - line 341: repeats the rule for ዚ + እ, skipped
+  - line 341: repeats the rule for ዢ + እ, skipped
+  - line 341: repeats the rule for ዪ + እ, skipped
+  - line 341: repeats the rule for ዲ + እ, skipped
+  - line 341: repeats the rule for ጂ + እ, skipped
+  - line 341: repeats the rule for ጊ + እ, skipped
+  - line 341: repeats the rule for ጚ + እ, skipped
+  - line 341: repeats the rule for ጢ + እ, skipped
+  - line 341: repeats the rule for ጪ + እ, skipped
+  - line 341: repeats the rule for ጲ + እ, skipped
+  - line 341: repeats the rule for ጺ + እ, skipped
+  - line 341: repeats the rule for ፂ + እ, skipped
+  - line 341: repeats the rule for ፊ + እ, skipped
+  - line 341: repeats the rule for ፒ + እ, skipped
+  - line 342: repeats the rule for ህ + ኦ, skipped
+  - line 342: repeats the rule for ል + ኦ, skipped
+  - line 342: repeats the rule for ሕ + ኦ, skipped
+  - line 342: repeats the rule for 𞟥 + ኦ, skipped
+  - line 342: repeats the rule for ም + ኦ, skipped
+  - line 342: repeats the rule for ሥ + ኦ, skipped
+  - line 342: repeats the rule for ር + ኦ, skipped
+  - line 342: repeats the rule for ስ + ኦ, skipped
+  - line 342: repeats the rule for ሽ + ኦ, skipped
+  - line 342: repeats the rule for ቅ + ኦ, skipped
+  - line 342: repeats the rule for ቕ + ኦ, skipped
+  - line 342: repeats the rule for ብ + ኦ, skipped
+  - line 342: repeats the rule for ቭ + ኦ, skipped
+  - line 342: repeats the rule for ት + ኦ, skipped
+  - line 342: repeats the rule for ች + ኦ, skipped
+  - line 342: repeats the rule for ኅ + ኦ, skipped
+  - line 342: repeats the rule for ን + ኦ, skipped
+  - line 342: repeats the rule for ኝ + ኦ, skipped
+  - line 342: repeats the rule for ክ + ኦ, skipped
+  - line 342: repeats the rule for ኽ + ኦ, skipped
+  - line 342: repeats the rule for ው + ኦ, skipped
+  - line 342: repeats the rule for ዕ + ኦ, skipped
+  - line 342: repeats the rule for ዝ + ኦ, skipped
+  - line 342: repeats the rule for ዥ + ኦ, skipped
+  - line 342: repeats the rule for ይ + ኦ, skipped
+  - line 342: repeats the rule for ድ + ኦ, skipped
+  - line 342: repeats the rule for ጅ + ኦ, skipped
+  - line 342: repeats the rule for ግ + ኦ, skipped
+  - line 342: repeats the rule for ጝ + ኦ, skipped
+  - line 342: repeats the rule for ጥ + ኦ, skipped
+  - line 342: repeats the rule for ጭ + ኦ, skipped
+  - line 342: repeats the rule for ጵ + ኦ, skipped
+  - line 342: repeats the rule for ጽ + ኦ, skipped
+  - line 342: repeats the rule for ፅ + ኦ, skipped
+  - line 342: repeats the rule for ፍ + ኦ, skipped
+  - line 342: repeats the rule for ፕ + ኦ, skipped
+  - line 346: repeats the rule for ሁ + አ, skipped
+  - line 346: repeats the rule for ሉ + አ, skipped
+  - line 346: repeats the rule for ሑ + አ, skipped
+  - line 346: repeats the rule for ሙ + አ, skipped
+  - line 346: repeats the rule for ሡ + አ, skipped
+  - line 346: repeats the rule for ሩ + አ, skipped
+  - line 346: repeats the rule for ሱ + አ, skipped
+  - line 346: repeats the rule for ሹ + አ, skipped
+  - line 346: repeats the rule for ቁ + አ, skipped
+  - line 346: repeats the rule for ቡ + አ, skipped
+  - line 346: repeats the rule for ቩ + አ, skipped
+  - line 346: repeats the rule for ቱ + አ, skipped
+  - line 346: repeats the rule for ቹ + አ, skipped
+  - line 346: repeats the rule for ኁ + አ, skipped
+  - line 346: repeats the rule for ኑ + አ, skipped
+  - line 346: repeats the rule for ኙ + አ, skipped
+  - line 346: repeats the rule for ኩ + አ, skipped
+  - line 346: repeats the rule for ዙ + አ, skipped
+  - line 346: repeats the rule for ዡ + አ, skipped
+  - line 346: repeats the rule for ዱ + አ, skipped
+  - line 346: repeats the rule for ጁ + አ, skipped
+  - line 346: repeats the rule for ጉ + አ, skipped
+  - line 346: repeats the rule for ጡ + አ, skipped
+  - line 346: repeats the rule for ጩ + አ, skipped
+  - line 346: repeats the rule for ጱ + አ, skipped
+  - line 346: repeats the rule for ጹ + አ, skipped
+  - line 346: repeats the rule for ፁ + አ, skipped
+  - line 346: repeats the rule for ፉ + አ, skipped
+  - line 346: repeats the rule for ፑ + አ, skipped
+  - line 347: repeats the rule for ሁ + እ, skipped
+  - line 347: repeats the rule for ኁ + እ, skipped
+  - line 347: repeats the rule for ኩ + እ, skipped
+  - line 347: repeats the rule for ቁ + እ, skipped
+  - line 347: repeats the rule for ጉ + እ, skipped
+  - line 348: repeats the rule for ሁ + ኡ, skipped
+  - line 348: repeats the rule for ኁ + ኡ, skipped
+  - line 348: repeats the rule for ኩ + ኡ, skipped
+  - line 348: repeats the rule for ቁ + ኡ, skipped
+  - line 348: repeats the rule for ጉ + ኡ, skipped
+  - line 349: repeats the rule for ሁ + ኢ, skipped
+  - line 349: repeats the rule for ኁ + ኢ, skipped
+  - line 349: repeats the rule for ኩ + ኢ, skipped
+  - line 349: repeats the rule for ቁ + ኢ, skipped
+  - line 349: repeats the rule for ጉ + ኢ, skipped
+  - line 350: repeats the rule for ሁ + አ, skipped
+  - line 350: repeats the rule for ሁ + አ, skipped
+  - line 350: repeats the rule for ኁ + አ, skipped
+  - line 350: repeats the rule for ኁ + አ, skipped
+  - line 350: repeats the rule for ኩ + አ, skipped
+  - line 350: repeats the rule for ኩ + አ, skipped
+  - line 350: repeats the rule for ቁ + አ, skipped
+  - line 350: repeats the rule for ቁ + አ, skipped
+  - line 350: repeats the rule for ጉ + አ, skipped
+  - line 350: repeats the rule for ጉ + አ, skipped
+  - line 352: repeats the rule for ኊ + እ, skipped
+  - line 352: repeats the rule for ኊ + እ, skipped
+  - line 352: repeats the rule for ኊ + እ, skipped
+  - line 352: repeats the rule for ኲ + እ, skipped
+  - line 352: repeats the rule for ቊ + እ, skipped
+  - line 352: repeats the rule for ጒ + እ, skipped
+  - line 473: repeats the rule for ቕ + እ, skipped
+  - line 473: repeats the rule for ቕ + እ, skipped
+  - line 473: repeats the rule for ጝ + እ, skipped
+  - line 473: repeats the rule for ጝ + እ, skipped
+  - line 474: repeats the rule for ቕ + ኡ, skipped
+  - line 474: repeats the rule for ቕ + ኡ, skipped
+  - line 474: repeats the rule for ጝ + ኡ, skipped
+  - line 474: repeats the rule for ጝ + ኡ, skipped
+  - line 475: repeats the rule for ቕ + ኢ, skipped
+  - line 475: repeats the rule for ቕ + ኢ, skipped
+  - line 475: repeats the rule for ጝ + ኢ, skipped
+  - line 475: repeats the rule for ጝ + ኢ, skipped
+  - line 476: repeats the rule for ቕ + አ, skipped
+  - line 476: repeats the rule for ቕ + አ, skipped
+  - line 476: repeats the rule for ጝ + አ, skipped
+  - line 476: repeats the rule for ጝ + አ, skipped
+  - line 478: repeats the rule for ቒ + እ, skipped
+  - line 478: repeats the rule for ቒ + እ, skipped
+  - line 478: repeats the rule for ጚ + እ, skipped
+  - line 478: repeats the rule for ጚ + እ, skipped
+  - line 479: repeats the rule for ቕ + ኦ, skipped
+  - line 479: repeats the rule for ቕ + ኦ, skipped
+  - line 479: repeats the rule for ጝ + ኦ, skipped
+  - line 479: repeats the rule for ጝ + ኦ, skipped
+  - line 495: repeats the rule for ቑ + አ, skipped
+  - line 495: repeats the rule for ኹ + አ, skipped
+  - line 495: repeats the rule for ጙ + አ, skipped
+  - line 496: repeats the rule for ቑ + እ, skipped
+  - line 496: repeats the rule for ኹ + እ, skipped
+  - line 496: repeats the rule for ጙ + እ, skipped
+  - line 497: repeats the rule for ቑ + ኡ, skipped
+  - line 497: repeats the rule for ኹ + ኡ, skipped
+  - line 497: repeats the rule for ጙ + ኡ, skipped
+  - line 498: repeats the rule for ቑ + ኢ, skipped
+  - line 498: repeats the rule for ኹ + ኢ, skipped
+  - line 498: repeats the rule for ጙ + ኢ, skipped
+  - line 499: repeats the rule for ቑ + አ, skipped
+  - line 499: repeats the rule for ቑ + አ, skipped
+  - line 499: repeats the rule for ኹ + አ, skipped
+  - line 499: repeats the rule for ኹ + አ, skipped
+  - line 499: repeats the rule for ጙ + አ, skipped
+  - line 499: repeats the rule for ጙ + አ, skipped
+  - line 501: repeats the rule for ቚ + እ, skipped
+  - line 501: repeats the rule for ዂ + እ, skipped
+  - line 501: repeats the rule for ⶔ + እ, skipped
+- **Our changes:** none
+
+## ti-gff
+
+- **Output:** `languages/tigrinya/gff.json`
+- **Source:** `vendor/keyman/gff_tigrinya_ethiopia/gff_tigrinya_ethiopia.kmn`. Keyman GFF Tigrinya (Ethiopia) by the Geʾez Frontier Foundation (MIT): type a consonant, then a vowel (se ሰ, sa ሳ).
+- **Licence:** MIT, Geʾez Frontier Foundation (vendor/keyman/gff_tigrinya_ethiopia/LICENSE.md)
+- **Coverage:** 47 keys (n 47, s 47), 890 context rules
+- **Skipped:** 
+  - line 164: unknown key or modifiers, skipped: [CTRL '.']
+  - line 165: unsupported context rule, skipped: U+135E + [CTRL '.'] > U+135F
+  - line 166: unsupported context rule, skipped: U+135F + [CTRL '.'] > U+135D
+  - line 167: unsupported context rule, skipped: U+135D + [CTRL '.'] > U+135D beep
+  - line 174: unsupported context rule, skipped: U+135E + [U_135E] > U+135F
+  - line 175: unsupported context rule, skipped: U+135E + [U_135F] > U+135D
+  - line 176: unsupported context rule, skipped: U+135F + [U_135E] > U+135D
+  - line 180: unsupported context rule, skipped: U+135E + [U_135D] > U+135E beep
+  - line 181: unsupported context rule, skipped: U+135F + [U_135F] > U+135F beep
+  - line 182: unsupported context rule, skipped: U+135F + [U_135D] > U+135F beep
+  - line 183: unsupported context rule, skipped: U+135D + [U_135E] > U+135D beep
+  - line 184: unsupported context rule, skipped: U+135D + [U_135F] > U+135D beep
+  - line 185: unsupported context rule, skipped: U+135D + [U_135D] > U+135D beep
+  - line 196: unsupported context rule, skipped: any(ሳድስ) + [T_ግዕዝ] > index(ግዕዝ,1)
+  - line 197: unsupported context rule, skipped: any(ሳድስ) + [T_ካዕብ] > index(ካዕብ,1)
+  - line 198: unsupported context rule, skipped: any(ሳድስ) + [T_ሣልስ] > index(ሣልስ,1)
+  - line 199: unsupported context rule, skipped: any(ሳድስ) + [T_ራብዕ] > index(ራብዕ,1)
+  - line 200: unsupported context rule, skipped: any(ሳድስ) + [T_ኃምስ] > index(ኃምስ,1)
+  - line 201: unsupported context rule, skipped: any(ሳድስ) + [T_ሳብዕ] > index(ሳብዕ,1)
+  - line 202: unsupported context rule, skipped: any(ሳድስ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  - line 204: unsupported context rule, skipped: any(ራብዕ፡ልዩ) +  [T_ዘመደ_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
+  - line 205: unsupported context rule, skipped: any(ራብዕ፡ልዩ) +  [T_ዘመደ_ሣልስ] > index(ዘመደ፡ሣልስ,1)
+  - line 206: unsupported context rule, skipped: any(ራብዕ፡ልዩ) +  [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ,1)
+  - line 207: unsupported context rule, skipped: any(ራብዕ፡ልዩ) +  [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
+  - line 208: unsupported context rule, skipped: any(ራብዕ፡ልዩ) +  [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
+  - line 211: unsupported rule (context), skipped: if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
+  - line 212: unsupported rule (context), skipped: if( &layer = "ሀ-layer" ) + any(touchVowels) > index(ሀ_ቤተሰብ,2)
+  - line 213: unsupported rule (context), skipped: if( &layer = "ሀ-layer" ) + 'h' > 'ህ'
+  - line 214: unsupported rule (context), skipped: if( &layer = "ለ-layer" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
+  - line 215: unsupported rule (context), skipped: if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
+  - line 216: unsupported rule (context), skipped: if( &layer = "መ-layer" ) + any(touchVowels) > index(መ_ቤተሰብ,2)
+  - line 217: unsupported rule (context), skipped: if( &layer = "ሠ-layer" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
+  - line 218: unsupported rule (context), skipped: if( &layer = "ሠ-extra" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
+  - line 219: unsupported rule (context), skipped: if( &layer = "ረ-layer" ) + any(touchVowels) > index(ረ_ቤተሰብ,2)
+  - line 220: unsupported rule (context), skipped: if( &layer = "ሰ-layer" ) + any(touchVowels) > index(ሰ_ቤተሰብ,2)
+  - line 221: unsupported rule (context), skipped: if( &layer = "ሰ-layer" ) + 's' > 'ስ'
+  - line 222: unsupported rule (context), skipped: if( &layer = "ሸ-layer" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
+  - line 223: unsupported rule (context), skipped: if( &layer = "ቀ-layer" ) + any(touchVowels) > index(ቀ_ቤተሰብ,2)
+  - line 224: unsupported rule (context), skipped: if( &layer = "ቐ-layer" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
+  - line 225: unsupported rule (context), skipped: if( &layer = "በ-layer" ) + any(touchVowels) > index(በ_ቤተሰብ,2)
+  - line 226: unsupported rule (context), skipped: if( &layer = "ቨ-layer" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
+  - line 227: unsupported rule (context), skipped: if( &layer = "ቨ-extra" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
+  - line 228: unsupported rule (context), skipped: if( &layer = "ተ-layer" ) + any(touchVowels) > index(ተ_ቤተሰብ,2)
+  - line 229: unsupported rule (context), skipped: if( &layer = "ቸ-layer" ) + any(touchVowels) > index(ቸ_ቤተሰብ,2)
+  - line 230: unsupported rule (context), skipped: if( &layer = "ቸ-extra" ) + any(touchVowels) > index(ቸ_ቤተሰብ,2)
+  - line 231: unsupported rule (context), skipped: if( &layer = "ኀ-layer" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
+  - line 232: unsupported rule (context), skipped: if( &layer = "ኀ-extra" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
+  - line 233: unsupported rule (context), skipped: if( &layer = "ነ-layer" ) + any(touchVowels) > index(ነ_ቤተሰብ,2)
+  - line 234: unsupported rule (context), skipped: if( &layer = "ኘ-layer" ) + any(touchVowels) > index(ኘ_ቤተሰብ,2)
+  - line 235: unsupported rule (context), skipped: if( &layer = "ኘ-extra" ) + any(touchVowels) > index(ኘ_ቤተሰብ,2)
+  - line 236: unsupported rule (context), skipped: if( &layer = "አ-layer" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
+  - line 237: unsupported rule (context), skipped: if( &layer = "አ-layer" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
+  - line 238: unsupported rule (context), skipped: if( &layer = "ከ-layer" ) + any(touchVowels) > index(ከ_ቤተሰብ,2)
+  - line 239: unsupported rule (context), skipped: if( &layer = "ኸ-layer" ) + any(touchVowels) > index(ኸ_ቤተሰብ,2)
+  - line 240: unsupported rule (context), skipped: if( &layer = "ዐ-layer" ) 'ዕ' + any(touchVowels) > index(ዐ_ቤተሰብ,3)
+  - line 241: unsupported rule (context), skipped: if( &layer = "ዐ-layer" ) 'ዐ' + any(touchVowels) > context(2) index(ዐ_ቤተሰብ,3)
+  - line 242: unsupported rule (context), skipped: if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
+  - line 243: unsupported rule (context), skipped: if( &layer = "ወ-layer" ) + any(touchVowels) > index(ወ_ቤተሰብ,2)
+  - line 244: unsupported rule (context), skipped: if( &layer = "ዘ-extra" ) + any(touchVowels) > index(ዘ_ቤተሰብ,2)
+  - line 245: unsupported rule (context), skipped: if( &layer = "ዠ-layer" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2)
+  - line 246: unsupported rule (context), skipped: if( &layer = "ዠ-extra" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2)
+  - line 247: unsupported rule (context), skipped: if( &layer = "የ-layer" ) + any(touchVowels) > index(የ_ቤተሰብ,2)
+  - line 248: unsupported rule (context), skipped: if( &layer = "ደ-layer" ) + any(touchVowels) > index(ደ_ቤተሰብ,2)
+  - line 249: unsupported rule (context), skipped: if( &layer = "ዸ-extra" ) + any(touchVowels) > index(ዸ_ቤተሰብ,2)
+  - line 250: unsupported rule (context), skipped: if( &layer = "ጀ-layer" ) + any(touchVowels) > index(ጀ_ቤተሰብ,2)
+  - line 251: unsupported rule (context), skipped: if( &layer = "ገ-layer" ) + any(touchVowels) > index(ገ_ቤተሰብ,2)
+  - line 252: unsupported rule (context), skipped: if( &layer = "ጘ-extra" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
+  - line 253: unsupported rule (context), skipped: if( &layer = "ጠ-layer" ) + any(touchVowels) > index(ጠ_ቤተሰብ,2)
+  - line 254: unsupported rule (context), skipped: if( &layer = "ጨ-layer" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2)
+  - line 255: unsupported rule (context), skipped: if( &layer = "ጨ-extra" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2)
+  - line 256: unsupported rule (context), skipped: if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2)
+  - line 257: unsupported rule (context), skipped: if( &layer = "ጰ-extra" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2)
+  - line 258: unsupported rule (context), skipped: if( &layer = "ጸ-layer" ) + any(touchVowels) > index(ጸ_ቤተሰብ,2)
+  - line 259: unsupported rule (context), skipped: if( &layer = "ጸ-layer" ) + 'S' > 'ጽ'
+  - line 260: unsupported rule (context), skipped: if( &layer = "ፀ-layer" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
+  - line 261: unsupported rule (context), skipped: if( &layer = "ፀ-extra" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
+  - line 262: unsupported rule (context), skipped: if( &layer = "ፈ-layer" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
+  - line 263: unsupported rule (context), skipped: if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
+  - line 264: unsupported rule (context), skipped: if( &layer = "𞟠-extra" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
+  - line 266: unsupported rule (context), skipped: if( &layer = "ቈ-layer" ) + any(touchVowelsLabialvelar) > index(ቈ_ቤተሰብ,2)
+  - line 267: unsupported rule (context), skipped: if( &layer = "ቘ-layer" ) + any(touchVowelsLabialvelar) > index(ቘ_ቤተሰብ,2)
+  - line 268: unsupported rule (context), skipped: if( &layer = "ኈ-extra" ) + any(touchVowelsLabialvelar) > index(ኈ_ቤተሰብ,2)
+  - line 269: unsupported rule (context), skipped: if( &layer = "ኰ-layer" ) + any(touchVowelsLabialvelar) > index(ኰ_ቤተሰብ,2)
+  - line 270: unsupported rule (context), skipped: if( &layer = "ዀ-layer" ) + any(touchVowelsLabialvelar) > index(ዀ_ቤተሰብ,2)
+  - line 271: unsupported rule (context), skipped: if( &layer = "ጐ-layer" ) + any(touchVowelsLabialvelar) > index(ጐ_ቤተሰብ,2)
+  - line 272: unsupported rule (context), skipped: if( &layer = "ⶓ-extra" ) + any(touchVowelsLabialvelar) > index(ⶓ_ቤተሰብ,2)
+  - line 290: item 1 of loneVowelKeys not mapped
+  - line 290: item 12 of loneVowelKeys not mapped
+  - line 303: unsupported context rule, skipped: any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
+  - line 338: unsupported context rule, skipped: any(ሳድስ)      + "'" > context(1) deadkey(1)
+  - line 340: unsupported context rule, skipped: any(ካዕብ፡መደበኛ) + "'" > context(1) deadkey(1)
+  - line 341: unsupported context rule, skipped: any(ካዕብ፡ልዩ)   + "'" > context(1) deadkey(1)
+  - line 342: unsupported context rule, skipped: any(ዘመደ፡ሣልስ)  + "'" > context(1) deadkey(1)
+  - line 343: unsupported context rule, skipped: any(ሣልስ)      + "'" > context(1) deadkey(1)
+  - line 346: unsupported context rule, skipped: any(arabNumbersWithZero) + ':' > context(1) ':'
+  - line 347: unsupported context rule, skipped: any(arabNumbersWithZero) ':' + ' ' > context(1) '፡' ' '
+  - line 358: unsupported context rule, skipped: any(Ethiopic) + '.' > context(1) '።'
+  - line 359: unsupported context rule, skipped: any(arabNumbersWithZero) '.' + ' ' > context(1) '።' ' '
+  - line 362: unsupported context rule, skipped: any(arabNumbersWithZero) + ',' >  context(1) ','
+  - line 367: unsupported rule (context), skipped: notany(arabNumbersWithZero) '፣' + any(arabNumbersWithZero) > context(1) '፣' index(arabNumbersWithZero,3)
+  - line 369: unsupported context rule, skipped: any(arabNumbersWithZero) ',' + ' ' > context(1) '፣' ' '
+  - line 383: unsupported context rule, skipped: '›' + '>' > '»'
+  - line 385: unsupported context rule, skipped: '»' + '>' > '>'
+  - line 391: item 1 of euro not mapped
+  - line 391: item 2 of euro not mapped
+  - line 391: item 3 of euro not mapped
+  - line 391: item 4 of euro not mapped
+  - line 391: item 5 of euro not mapped
+  - line 391: item 6 of euro not mapped
+  - line 391: item 7 of euro not mapped
+  - line 391: item 8 of euro not mapped
+  - line 391: item 9 of euro not mapped
+  - line 391: item 10 of euro not mapped
+  - line 393: unsupported context rule, skipped: 'ጽ' + 'ß' > 'ፅ'
+  - line 394: unknown key or modifiers, skipped: '¨'
+  - line 399: item 1 of euroVowels not mapped
+  - line 399: item 2 of euroVowels not mapped
+  - line 399: item 3 of euroVowels not mapped
+  - line 399: item 4 of euroVowels not mapped
+  - line 399: item 5 of euroVowels not mapped
+  - line 399: item 6 of euroVowels not mapped
+  - line 399: item 7 of euroVowels not mapped
+  - line 399: item 8 of euroVowels not mapped
+  - line 399: item 9 of euroVowels not mapped
+  - line 399: item 10 of euroVowels not mapped
+  - line 399: item 11 of euroVowels not mapped
+  - line 399: item 12 of euroVowels not mapped
+  - line 399: item 13 of euroVowels not mapped
+  - line 399: item 14 of euroVowels not mapped
+  - line 399: item 15 of euroVowels not mapped
+  - line 399: item 16 of euroVowels not mapped
+  - line 399: item 17 of euroVowels not mapped
+  - line 399: item 18 of euroVowels not mapped
+  - line 399: item 19 of euroVowels not mapped
+  - line 399: item 20 of euroVowels not mapped
+  - line 399: item 21 of euroVowels not mapped
+  - line 399: item 22 of euroVowels not mapped
+  - line 399: item 23 of euroVowels not mapped
+  - line 399: item 24 of euroVowels not mapped
+  - line 399: item 25 of euroVowels not mapped
+  - line 399: item 26 of euroVowels not mapped
+  - line 399: item 27 of euroVowels not mapped
+  - line 399: item 28 of euroVowels not mapped
+  - line 399: item 29 of euroVowels not mapped
+  - line 399: item 30 of euroVowels not mapped
+  - line 399: item 31 of euroVowels not mapped
+  - line 399: item 32 of euroVowels not mapped
+  - line 399: item 33 of euroVowels not mapped
+  - line 399: item 34 of euroVowels not mapped
+  - line 399: item 35 of euroVowels not mapped
+  - line 399: item 36 of euroVowels not mapped
+  - line 399: item 37 of euroVowels not mapped
+  - line 399: item 38 of euroVowels not mapped
+  - line 399: item 39 of euroVowels not mapped
+  - line 399: item 40 of euroVowels not mapped
+  - line 399: item 41 of euroVowels not mapped
+  - line 399: item 42 of euroVowels not mapped
+  - line 399: item 43 of euroVowels not mapped
+  - line 399: item 44 of euroVowels not mapped
+  - line 399: item 45 of euroVowels not mapped
+  - line 399: item 46 of euroVowels not mapped
+  - line 399: item 47 of euroVowels not mapped
+  - line 399: item 48 of euroVowels not mapped
+  - line 412: unsupported context rule, skipped: any(arabNumbersWithZero) any(ethWordspaceOrComma) + any(arabNumbers) > index(arabNumbersWithZero,1) index(ColonOrComma,2) index(arabNumbers,3)
+  - line 429: unsupported context rule, skipped: '፼፼' + '0' > context beep
+  - line 445: unknown key or modifiers, skipped: [T_THOUSAND]
+  - line 447: unknown key or modifiers, skipped: [T_BACK]
+  - line 323: repeats the rule for ኊ + እ, skipped
+  - line 323: repeats the rule for ኊ + ዕ, skipped
+- **Our changes:** none
+
+## yi-pasekh
+
+- **Output:** `languages/yiddish/pasekh.json`
+- **Source:** `vendor/keyman/yiddish_pasekh/yiddish_pasekh.kmn`. Keyman Yiddish Pasekh (MIT).
+- **Licence:** MIT, Gyula Zsigri (vendor/keyman/yiddish_pasekh/LICENSE.md)
+- **Coverage:** 47 keys (n 47, s 43), 1128 context rules
+- **Skipped:** 
+  - line 104: repeats the rule for \אַ + ײ, skipped
+  - line 105: repeats the rule for \אָ + ײ, skipped
+  - line 106: repeats the rule for \ע + ײ, skipped
+  - line 107: repeats the rule for \ + ײ, skipped
+  - line 108: repeats the rule for ץ + ײ, skipped
+  - line 108: repeats the rule for ם + ײ, skipped
+  - line 108: repeats the rule for ן + ײ, skipped
+  - line 108: repeats the rule for ך + ײ, skipped
+  - line 109: repeats the rule for ף + ײ, skipped
+  - line 152: repeats the rule for \ + בֿ, skipped
+  - line 153: repeats the rule for ץ + בֿ, skipped
+  - line 153: repeats the rule for ם + בֿ, skipped
+  - line 153: repeats the rule for ן + בֿ, skipped
+  - line 153: repeats the rule for ך + בֿ, skipped
+  - line 154: repeats the rule for ף + בֿ, skipped
+  - line 186: repeats the rule for ך + צ, skipped
+  - line 186: repeats the rule for ם + צ, skipped
+  - line 186: repeats the rule for ן + צ, skipped
+  - line 186: repeats the rule for ף + צ, skipped
+  - line 186: repeats the rule for ץ + צ, skipped
+  - line 205: repeats the rule for ך + פֿ, skipped
+  - line 205: repeats the rule for ם + פֿ, skipped
+  - line 205: repeats the rule for ן + פֿ, skipped
+  - line 205: repeats the rule for ף + פֿ, skipped
+  - line 205: repeats the rule for ץ + פֿ, skipped
+  - line 222: repeats the rule for ץ + ה, skipped
+  - line 233: repeats the rule for ו + אי, skipped
+  - line 233: repeats the rule for י + אי, skipped
+  - line 233: repeats the rule for ך + אי, skipped
+  - line 233: repeats the rule for ם + אי, skipped
+  - line 233: repeats the rule for ן + אי, skipped
+  - line 233: repeats the rule for ף + אי, skipped
+  - line 233: repeats the rule for ץ + אי, skipped
+  - line 233: repeats the rule for ײ + אי, skipped
+  - line 243: repeats the rule for ך + אײ, skipped
+  - line 243: repeats the rule for ם + אײ, skipped
+  - line 243: repeats the rule for ן + אײ, skipped
+  - line 243: repeats the rule for ף + אײ, skipped
+  - line 243: repeats the rule for ץ + אײ, skipped
+  - line 263: repeats the rule for ך + מ, skipped
+  - line 263: repeats the rule for ם + מ, skipped
+  - line 263: repeats the rule for ן + מ, skipped
+  - line 263: repeats the rule for ף + מ, skipped
+  - line 263: repeats the rule for ץ + מ, skipped
+  - line 270: repeats the rule for ך + נ, skipped
+  - line 270: repeats the rule for ם + נ, skipped
+  - line 270: repeats the rule for ן + נ, skipped
+  - line 270: repeats the rule for ף + נ, skipped
+  - line 270: repeats the rule for ץ + נ, skipped
+  - line 309: repeats the rule for ו + או, skipped
+  - line 309: repeats the rule for ך + או, skipped
+  - line 309: repeats the rule for ם + או, skipped
+  - line 309: repeats the rule for ן + או, skipped
+  - line 309: repeats the rule for ף + או, skipped
+  - line 309: repeats the rule for ץ + או, skipped
+  - line 309: repeats the rule for װ + או, skipped
+  - line 330: repeats the rule for ך + כ, skipped
+  - line 330: repeats the rule for ם + כ, skipped
+  - line 330: repeats the rule for ן + כ, skipped
+  - line 330: repeats the rule for ף + כ, skipped
+  - line 330: repeats the rule for ץ + כ, skipped
+  - line 331: repeats the rule for \אַ + י, skipped
+  - line 333: repeats the rule for \אָ + י, skipped
+  - line 337: repeats the rule for \ע + י, skipped
+  - line 342: repeats the rule for \ + י, skipped
+  - line 343: repeats the rule for ץ + י, skipped
+  - line 343: repeats the rule for ם + י, skipped
+  - line 343: repeats the rule for ן + י, skipped
+  - line 343: repeats the rule for ך + י, skipped
+  - line 344: repeats the rule for ף + י, skipped
+  - line 345: repeats the rule for י + י, skipped
+- **Our changes:** none
+
 ## ta-tamil99
 
 - **Output:** `languages/tamil/tamil99.json`
@@ -2151,6 +3022,7 @@ CLDR 43 Windows keyboards ready for the national layouts (plan 7.5). Unicode Lic
 
 | File | Name | Coverage | Skipped |
 | --- | --- | --- | --- |
+| `bo-t-k0-windows-extended.xml` | Tibetan (PRC) - Updated | 47 keys (n 47, s 47, sag 47), 54 dead-key compositions | nothing |
 | `el-POLYTON-t-k0-windows.xml` | Greek Polytonic | 48 keys (n 48, s 48, ag 23, sag 7), 260 dead-key compositions | nothing |
 | `he-t-k0-windows.xml` | Hebrew | 48 keys (n 48, s 48, ag 6) | nothing |
 | `km-t-k0-windows.xml` | Khmer | 47 keys (n 47, s 47, ag 41, sag 44) | nothing |

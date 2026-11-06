@@ -1,0 +1,13 @@
+{
+  "source": "ttwiki.xml.bz2",
+  "pages": 66339,
+  "sentences": 415731,
+  "repeatedSentencesSkipped": 478824,
+  "tokens": 3356048,
+  "distinctWords": 258679,
+  "wordsKept": 98695,
+  "nextWordHeads": 8442,
+  "text": "tt-train.txt",
+  "textSentences": 69491,
+  "textWeight": 3.96
+}

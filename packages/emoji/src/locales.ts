@@ -4,13 +4,16 @@
 /** Keyword file loaders, one per language CLDR annotates. */
 export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unknown }>>> = {
   "af": () => import("../data/af.json"),
+  "am": () => import("../data/am.json"),
   "ar": () => import("../data/ar.json"),
   "as": () => import("../data/as.json"),
   "az": () => import("../data/az.json"),
+  "ba": () => import("../data/ba.json"),
   "be": () => import("../data/be.json"),
   "bg": () => import("../data/bg.json"),
   "bn": () => import("../data/bn.json"),
   "ca": () => import("../data/ca.json"),
+  "chr": () => import("../data/chr.json"),
   "cs": () => import("../data/cs.json"),
   "cy": () => import("../data/cy.json"),
   "da": () => import("../data/da.json"),
@@ -63,6 +66,7 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
   "pt": () => import("../data/pt.json"),
   "ro": () => import("../data/ro.json"),
   "ru": () => import("../data/ru.json"),
+  "sat": () => import("../data/sat.json"),
   "sd": () => import("../data/sd.json"),
   "si": () => import("../data/si.json"),
   "sk": () => import("../data/sk.json"),
@@ -70,10 +74,12 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
   "sq": () => import("../data/sq.json"),
   "sr": () => import("../data/sr.json"),
   "sv": () => import("../data/sv.json"),
+  "syr": () => import("../data/syr.json"),
   "ta": () => import("../data/ta.json"),
   "te": () => import("../data/te.json"),
   "tg": () => import("../data/tg.json"),
   "th": () => import("../data/th.json"),
+  "ti": () => import("../data/ti.json"),
   "tk": () => import("../data/tk.json"),
   "tr": () => import("../data/tr.json"),
   "ug": () => import("../data/ug.json"),
@@ -90,7 +96,7 @@ export const ANNOTATIONS: Readonly<Record<string, () => Promise<{ default: unkno
 export const ALIASES: Readonly<Record<string, string>> = {"skr":"ur","bal":"ur","hno":"ur","brh":"ur","scl":"ur","khw":"ur","ks":"ur","sa":"hi","mai":"hi","prs":"fa","ms-Arab":"ms","zh-Hans":"zh","nb":"no","kmr":"ku"};
 
 /** Registry languages with no CLDR keywords: their emoji search is in English. */
-export const NOT_ANNOTATED: readonly string[] = ["ckb","dv","eo","haw","la"];
+export const NOT_ANNOTATED: readonly string[] = ["bo","brx","ckb","dv","eo","haw","iu","la","tt","yi"];
 
 /** Every registry language this file was generated for. */
-export const LANGUAGE_TAGS: readonly string[] = ["af","ar","as","az","bal","be","bg","bn","brh","ca","ckb","cs","cy","da","de","dv","el","eo","es","et","fa","fi","fo","fr","ga","gd","gl","gu","ha","haw","he","hi","hno","hr","hu","hy","ig","is","it","ja","ka","khw","kk","km","kmr","kn","ko","kok","ks","ky","la","lo","lt","lv","mai","mi","mk","ml","mn","mr","ms-Arab","mt","my","nb","ne","nl","or","pa","pa-Arab","pl","prs","ps","pt","ro","ru","sa","scl","sd","si","sk","skr","sl","sq","sr","sv","ta","te","tg","th","tk","tr","ug","uk","ur","uz","vi","wo","yo","zh-Hans","zh-Hant"];
+export const LANGUAGE_TAGS: readonly string[] = ["af","am","ar","as","az","ba","bal","be","bg","bn","bo","brh","brx","ca","chr","ckb","cs","cy","da","de","dv","el","eo","es","et","fa","fi","fo","fr","ga","gd","gl","gu","ha","haw","he","hi","hno","hr","hu","hy","ig","is","it","iu","ja","ka","khw","kk","km","kmr","kn","ko","kok","ks","ky","la","lo","lt","lv","mai","mi","mk","ml","mn","mr","ms-Arab","mt","my","nb","ne","nl","or","pa","pa-Arab","pl","prs","ps","pt","ro","ru","sa","sat","scl","sd","si","sk","skr","sl","sq","sr","sv","syr","ta","te","tg","th","ti","tk","tr","tt","ug","uk","ur","uz","vi","wo","yi","yo","zh-Hans","zh-Hant"];

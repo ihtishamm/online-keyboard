@@ -1,0 +1,22 @@
+{
+  "slug": "bodo",
+  "code": "brx",
+  "order": 1020,
+  "lang": "brx",
+  "script": "Deva",
+  "dir": "ltr",
+  "name": {
+    "en": "Bodo",
+    "native": "बड़ो"
+  },
+  "aliases": [],
+  "region": "south-asia",
+  "fonts": ["devanagari"],
+  "layouts": ["brx-inscript"],
+  "sample": "खुलुमबाय।",
+  "voice": [],
+  "wordList": false,
+  "translate": {},
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}

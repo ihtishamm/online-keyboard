@@ -77,6 +77,26 @@ dumps, downloaded in October 2026; Urdu's source is described below):
 | `eo` | Esperanto | 21,336 | 15.5M | 100,000 | see `dict.txt` |
 | `la` | Latin | 43,377 | 6.0M | 100,000 | see `dict.txt` |
 | `af` | Afrikaans | 20,526 | 9.6M | 100,000 | see `dict.txt` |
+| `az` | Azerbaijani | 22,032 | 8.6M | 100,000 | see `dict.txt` |
+| `tk` | Turkmen | 8,352 | 1.3M | 49,166 | see `dict.txt` |
+| `uz` | Uzbek | 99,998 | 4.0M | 89,841 | see `dict.txt` |
+| `kmr` | Kurdish (Kurmanji) | 90,800 | 5.8M | 96,186 | see `dict.txt` |
+| `yo` | Yoruba | 42,456 | 4.3M | 57,262 | see `dict.txt` |
+| `ig` | Igbo | 28,218 | 10.5M | 83,997 | see `dict.txt` |
+| `ha` | Hausa | 33,367 | 11.2M | 83,575 | see `dict.txt` |
+| `wo` | Wolof | 1,811 | 0.5M | 11,233 | see `dict.txt` |
+| `haw` | Hawaiian | 3,022 | 0.4M | 5,750 | see `dict.txt` |
+| `mi` | Māori | 8,117 | 0.2M | 4,955 | see `dict.txt` |
+| `tt` | Tatar | 66,339 | 3.4M | 98,695 | see `dict.txt` |
+| `ba` | Bashkir | 36,607 | 4.3M | 94,944 | see `dict.txt` |
+| `yi` | Yiddish | 15,925 | 3.3M | 50,175 | see `dict.txt` |
+| `am` | Amharic | 16,377 | 1.5M | 56,215 | see `dict.txt` |
+| `ti` | Tigrinya | 560 | 104k | 4,290 | see `dict.txt` |
+| `bo` | Tibetan (syllables) | 15,249 | 10.5M | 11,119 | see `dict.txt` |
+| `syr` | Syriac (from arcwiki) | 1,969 | 56k | 3,117 | see `dict.txt` |
+| `chr` | Cherokee | 1,056 | 22k | 1,377 | see `dict.txt` |
+| `iu` | Inuktitut | 615 | 18k | 1,003 | see `dict.txt` |
+| `sat` | Santali | 17,358 | 4.6M | 58,024 | see `dict.txt` |
 
 The Latin-script languages (plan 7.5, 7.7) read the first 20 to 40 MB of their dump (the oldest, most
 edited articles), and add everyday sentences from [Tatoeba](https://tatoeba.org) through

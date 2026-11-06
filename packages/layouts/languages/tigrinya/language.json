@@ -1,0 +1,25 @@
+{
+  "slug": "tigrinya",
+  "code": "ti",
+  "order": 960,
+  "lang": "ti",
+  "script": "Ethi",
+  "dir": "ltr",
+  "name": {
+    "en": "Tigrinya",
+    "native": "ትግርኛ"
+  },
+  "aliases": [],
+  "region": "africa",
+  "fonts": ["ethiopic"],
+  "layouts": ["ti-gff"],
+  "sample": "ሰላም! ሎሚ ከመይ ኣለኻ?",
+  "voice": [],
+  "wordList": true,
+  "translate": {
+    "google": "ti",
+    "bing": "ti"
+  },
+  "tier": null,
+  "notes": "No voice yet: the locale has not passed /voice-probe."
+}
