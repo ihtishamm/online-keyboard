@@ -1,0 +1,498 @@
+# Cyrillic, tab, Latin: names CLDR has in both uz-Cyrl and uz-Latn, through Node 24.20.0's ICU
+# 78.3 (CLDR 48.0), Unicode License. Each is its own translation, not a
+# conversion. Written by scripts/import-uzbek.ts.
+Меърож ороли	Me’roj oroli
+Андорра	Andorra
+Бирлашган Араб Амирликлари	Birlashgan Arab Amirliklari
+Афғонистон	Afgʻoniston
+Антигуа ва Барбуда	Antigua va Barbuda
+Ангилья	Angilya
+Албания	Albaniya
+Арманистон	Armaniston
+Кюрасао	Kyurasao
+Ангола	Angola
+Антарктида	Antarktida
+Аргентина	Argentina
+Америка Самоаси	Amerika Samoasi
+Австрия	Avstriya
+Австралия	Avstraliya
+Аруба	Aruba
+Аланд ороллари	Aland orollari
+Озарбайжон	Ozarbayjon
+Босния ва Герцеговина	Bosniya va Gertsegovina
+Барбадос	Barbados
+Бангладеш	Bangladesh
+Бельгия	Belgiya
+Буркина-Фасо	Burkina-Faso
+Болгария	Bolgariya
+Баҳрайн	Bahrayn
+Бурунди	Burundi
+Бенин	Benin
+Сен-Бартелеми	Sen-Bartelemi
+Бермуда	Bermuda orollari
+Бруней	Bruney
+Боливия	Boliviya
+Бонейр, Синт-Эстатиус ва Саба	Boneyr, Sint-Estatius va Saba
+Бразилия	Braziliya
+Багама ороллари	Bagama orollari
+Бутан	Butan
+Мьянма (Бирма)	Myanma (Birma)
+Буве ороли	Buve oroli
+Ботсванна	Botsvana
+Беларус	Belarus
+Белиз	Beliz
+Канада	Kanada
+Кокос (Килинг) ороллари	Kokos (Kiling) orollari
+Конго-Киншаса	Kongo – Kinshasa
+Марказий Африка Республикаси	Markaziy Afrika Respublikasi
+Конго Браззавиль	Kongo – Brazzavil
+Швейцария	Shveytsariya
+Кот-д’Ивуар	Kot-d’Ivuar
+Кук ороллари	Kuk orollari
+Чили	Chili
+Камерун	Kamerun
+Хитой	Xitoy
+Колумбия	Kolumbiya
+Клиппертон ороли	Klipperton oroli
+Коста-Рика	Kosta-Rika
+Сербия	Serbiya
+Куба	Kuba
+Кабо-Верде	Kabo-Verde
+Рождество ороли	Rojdestvo oroli
+Кипр	Kipr
+Чехия	Chexiya
+Германия	Germaniya
+Диего-Гарсия	Diyego-Garsiya
+Жибути	Jibuti
+Дания	Daniya
+Доминика	Dominika
+Доминикан Республикаси	Dominikan Respublikasi
+Жазоир	Jazoir
+Сэута ва Мелилла	Seuta va Melilya
+Эквадор	Ekvador
+Эстония	Estoniya
+Миср	Misr
+Ғарбий Саҳрои Кабир	G‘arbiy Sahroi Kabir
+Эритрея	Eritreya
+Испания	Ispaniya
+Эфиопия	Efiopiya
+Европа Иттифоқи	Yevropa Ittifoqi
+Финляндия	Finlandiya
+Фижи	Fiji
+Фолкленд ороллари	Folklend orollari
+Микронезия	Mikroneziya
+Фарер ороллари	Farer orollari
+Франция	Fransiya
+Габон	Gabon
+Буюк Британия	Buyuk Britaniya
+Гренада	Grenada
+Грузия	Gruziya
+Француз Гвианаси	Fransuz Gvianasi
+Гернси	Gernsi
+Гана	Gana
+Гибралтар	Gibraltar
+Гренландия	Grenlandiya
+Гамбия	Gambiya
+Гвинея	Gvineya
+Гваделупе	Gvadelupe
+Экваториал Гвинея	Ekvatorial Gvineya
+Греция	Gretsiya
+Жанубий Георгия ва Жанубий Сендвич ороллари	Janubiy Georgiya va Janubiy Sendvich orollari
+Гватемала	Gvatemala
+Гуам	Guam
+Гвинея-Бисау	Gvineya-Bisau
+Гаяна	Gayana
+Гонконг (Хитой ММҲ)	Gonkong (Xitoy MMH)
+Херд ва Макдоналд ороллари	Xerd va Makdonald orollari
+Гондурас	Gonduras
+Хорватия	Xorvatiya
+Гаити	Gaiti
+Венгрия	Vengriya
+Канар ороллари	Kanar orollari
+Индонезия	Indoneziya
+Ирландия	Irlandiya
+Исроил	Isroil
+Мэн ороли	Men oroli
+Ҳиндистон	Hindiston
+Ироқ	Iroq
+Эрон	Eron
+Исландия	Islandiya
+Италия	Italiya
+Жерси	Jersi
+Ямайка	Yamayka
+Иордания	Iordaniya
+Япония	Yaponiya
+Кения	Keniya
+Қирғизистон	Qirgʻiziston
+Камбоджа	Kambodja
+Кирибати	Kiribati
+Комор ороллари	Komor orollari
+Сент-Китс ва Невис	Sent-Kits va Nevis
+Шимолий Корея	Shimoliy Koreya
+Жанубий Корея	Janubiy Koreya
+Қувайт	Quvayt
+Кайман ороллари	Kayman orollari
+Қозоғистон	Qozogʻiston
+Лаос	Laos
+Ливан	Livan
+Сент-Люсия	Sent-Lyusiya
+Лихтенштейн	Lixtenshteyn
+Шри-Ланка	Shri-Lanka
+Либерия	Liberiya
+Лесото	Lesoto
+Литва	Litva
+Люксембург	Lyuksemburg
+Латвия	Latviya
+Ливия	Liviya
+Марокаш	Marokash
+Монако	Monako
+Молдова	Moldova
+Черногория	Chernogoriya
+Сент-Мартин	Sent-Martin
+Мадагаскар	Madagaskar
+Маршал ороллари	Marshall orollari
+Шимолий Македония	Shimoliy Makedoniya
+Мали	Mali
+Монголия	Mongoliya
+Макао (Хитой ММҲ)	Makao (Xitoy MMH)
+Шимолий Марианна ороллари	Shimoliy Mariana orollari
+Мартиника	Martinika
+Мавритания	Mavritaniya
+Монтсеррат	Montserrat
+Мальта	Malta
+Маврикий	Mavrikiy
+Мальдив ороллари	Maldiv orollari
+Малави	Malavi
+Мексика	Meksika
+Малайзия	Malayziya
+Мозамбик	Mozambik
+Намибия	Namibiya
+Янги Каледония	Yangi Kaledoniya
+Нигер	Niger
+Норфолк ороллари	Norfolk oroli
+Нигерия	Nigeriya
+Вануату	Vanuatu
+Никарагуа	Nikaragua
+Нидерландия	Niderlandiya
+Норвегия	Norvegiya
+Непал	Nepal
+Науру	Nauru
+Ниуэ	Niue
+Янги Зеландия	Yangi Zelandiya
+Уммон	Ummon
+Панама	Panama
+Перу	Peru
+Француз Полинезияси	Fransuz Polineziyasi
+Папуа - Янги Гвинея	Papua – Yangi Gvineya
+Филиппин	Filippin
+Покистон	Pokiston
+Польша	Polsha
+Сент-Пьер ва Микелон	Sen-Pyer va Mikelon
+Питкэрн ороллари	Pitkern orollari
+Пуэрто-Рико	Puerto-Riko
+Фаластин ҳудуди	Falastin hududlari
+Португалия	Portugaliya
+Палау	Palau
+Парагвай	Paragvay
+Қатар	Qatar
+Ёндош Океания	Tashqi Okeaniya
+Реюнион	Reyunion
+Зимбабве	Zimbabve
+Руминия	Ruminiya
+Россия	Rossiya
+Руанда	Ruanda
+Саудия Арабистони	Saudiya Arabistoni
+Соломон ороллари	Solomon orollari
+Сейшел ороллари	Seyshel orollari
+Судан	Sudan
+Швеция	Shvetsiya
+Сингапур	Singapur
+Муқаддас Елена ороли	Muqaddas Yelena oroli
+Словения	Sloveniya
+Свалбард ва Ян-Майен	Shpitsbergen va Yan-Mayen
+Словакия	Slovakiya
+Сьерра-Леоне	Syerra-Leone
+Сан-Марино	San-Marino
+Сенегал	Senegal
+Сомали	Somali
+Суринам	Surinam
+Жанубий Судан	Janubiy Sudan
+Сан-Томе ва Принсипи	San-Tome va Prinsipi
+Салвадор	Salvador
+Синт-Мартен	Sint-Marten
+Сурия	Suriya
+Свазиленд	Svazilend
+Тристан-да-Куня	Tristan-da-Kunya
+Туркс ва Кайкос ороллари	Turks va Kaykos orollari
+Чад	Chad
+Француз жанубий ҳудудлари	Fransuz Janubiy hududlari
+Того	Togo
+Таиланд	Tailand
+Тожикистон	Tojikiston
+Токелау	Tokelau
+Тимор-Лесте	Timor-Leste
+Туркманистон	Turkmaniston
+Тунис	Tunis
+Тонга	Tonga
+Туркия	Turkiya
+Тринидад ва Тобаго	Trinidad va Tobago
+Тувалу	Tuvalu
+Тайван	Tayvan
+Танзания	Tanzaniya
+Украина	Ukraina
+Уганда	Uganda
+АҚШ ёндош ороллари	AQSH yondosh orollari
+Америка Қўшма Штатлари	Amerika Qo‘shma Shtatlari
+Уругвай	Urugvay
+Ўзбекистон	Oʻzbekiston
+Ватикан	Vatikan
+Сент-Винсент ва Гренадин	Sent-Vinsent va Grenadin
+Вьетнам	Vyetnam
+Венесуэла	Venesuela
+Британия Виргин ороллари	Britaniya Virgin orollari
+АҚШ Виргин ороллари	AQSH Virgin orollari
+Уоллис ва Футуна	Uollis va Futuna
+Самоа	Samoa
+Косово	Kosovo
+Яман	Yaman
+Майотта	Mayotta
+Жанубий Африка Республикаси	Janubiy Afrika Respublikasi
+Замбия	Zambiya
+Номаълум минтақа	Noma’lum mintaqa
+Голланд Антил гульдени	Niderlandiya antil guldeni
+Аргентина песоси	Argentina pesosi
+Аруба флорини	Aruba florini
+Барбадос доллари	Barbados dollari
+Бермуда доллари	Bermuda dollari
+Боливия болвиани	Boliviya bolivianosi
+Бразил реали	Braziliya reali
+Багама доллари	Bagama dollari
+Белиз доллари	Beliz dollari
+Канада доллари	Kanada dollari
+Чили песоси	Chili pesosi
+Хитой юани	Xitoy yuani
+Колумбия песоси	Kolumbiya pesosi
+Коста-Рика колони	Kosta-Rika koloni
+Куба Айирбошлаш песоси	Kuba ayirboshlash pesosi
+Куба песоси	Kuba pesosi
+Доминикан песоси	Dominikana pesosi
+Жазоир динори	Jazoir dinori
+Миср фунти	Misr funti
+Евро	Yevro
+Фолькленд ороли фунти	Folklend orollari funti
+Инглиз фунт	Angliya funt sterlingi
+Гватемала кветзали	Gvatemala ketsali
+Гаяна доллари	Gayana dollari
+Гондурас лемпираси	Gonduras lempirasi
+Гаити гурдаси	Gaiti gurdi
+Ҳинд рупияси	Hindiston rupiyasi
+Ямайка доллари	Yamayka dollari
+Япон йенаси	Yaponiya iyenasi
+Кайман ороли Доллари	Kayman orollari dollari
+Ливия динори	Liviya dinori
+Марокаш дирҳами	Marokash dirhami
+Мексика песоси	Meksika pesosi
+Никарагуа кордобаси	Nikaragua kordobasi
+Панама бальбоаси	Panama balboasi
+Перу сол	Peru soli
+Парагвай гуарани	Paragvay guaranisi
+Рус рубли	Rossiya rubli
+Суринам доллари	Surinam dollari
+Тринидад ва Тобаго доллари	Trinidad va Tobago dollari
+АҚШ доллари	AQSH dollari
+Уругвай песоси	Urugvay pesosi
+Ўзбекистон сўм	O‘zbekiston so‘mi
+Венесуэла боливари	Venesuela bolivari
+Шарқий Кариб доллари	Sharqiy Karib dollari
+афарча	afar
+абхазча	abxaz
+африкаанс	afrikaans
+аканча	akan
+амхарча	amxar
+арагон	aragon
+арабча	arab
+ассомча	assam
+аварча	avar
+аймара	aymara
+озарбайжонча	ozarbayjon
+бошқирдча	boshqird
+беларусча	belarus
+болгарча	bolgar
+бхожпури	bxojpuri
+бислама	bislama
+бамбарча	bambara
+бенгалча	bengal
+тибетча	tibet
+бретонча	breton
+боснийча	bosniy
+каталонча	katalan
+чечен тили	chechen
+чаморро	chamorro
+корсиканча	korsikan
+чехча	chex
+славянча (черков)	slavyan (cherkov)
+чуваш тили	chuvash
+уэлсча	valliy
+датча	dan
+немисча	nemischa
+дивехи	divexi
+дзонгка	dzongka
+эвеча	eve
+грекча	grek
+инглизча	inglizcha
+эсперанто	esperanto
+испанча	ispancha
+эстонча	estoncha
+баскча	bask
+форсий	fors
+фулаҳ	fula
+финча	fincha
+фижича	fiji
+фарерча	farercha
+французча	fransuzcha
+ғарбий фризча	g‘arbiy friz
+ирландча	irland
+шотландча гаелик	shotland-gel
+галицийча	galisiy
+гуарани	guarani
+гужаротча	gujarot
+мэнча	men
+хауса	xausa
+иброний	ivrit
+ҳинди	hind
+хорватча	xorvat
+гаитянча	gaityan
+венгерча	venger
+арманча	arman
+гереро	gerero
+интерлингва	interlingva
+индонезча	indonez
+игбо	igbo
+идо	ido
+исландча	island
+италянча	italyan
+инуктитут	inuktitut
+японча	yapon
+иддиш	idish
+яванча	yavan
+грузинча	gruzincha
+кикую	kikuyu
+қозоқча	qozoqcha
+гренландча	grenland
+хмерча	xmer
+каннада	kannada
+корейсча	koreyscha
+канури	kanuri
+кашмирча	kashmircha
+курдча	kurdcha
+корнча	korn
+қирғизча	qirgʻizcha
+лотинча	lotincha
+люксембургча	lyuksemburgcha
+гандача	ganda
+лингалча	lingala
+лаосча	laos
+литвача	litva
+луба-катанга	luba-katanga
+латишча	latishcha
+малагасийча	malagasiy
+маршалл тили	marshall
+маори	maori
+македонча	makedon
+малаялам	malayalam
+мўғулча	mongol
+руминча	rumincha
+маратхи	maratxi
+малай тил	malay
+малтача	maltiy
+бирманча	birman
+норвегча бокмал	norveg-bokmal
+шимолий ндебеле	shimoliy ndebele
+непалча	nepal
+голландча	niderland
+норвегча нюнорск	norveg-nyunorsk
+жанубий ндебелча	janubiy ndebel
+чева	cheva
+окситанча	oksitan
+оромо	oromo
+одия	oriya
+панжобча	panjobcha
+полякча	polyakcha
+пушту	pushtu
+португалча	portugalcha
+кечуа	kechua
+романшча	romansh
+рунди	rundi
+русча	ruscha
+киняруанда	kinyaruanda
+санскрит	sanskrit
+синдҳи	sindhi
+шимолий саамча	shimoliy saam
+санго	sango
+сербча (Лотин)	serbcha (lotin)
+сингалча	singal
+словакча	slovakcha
+словенча	slovencha
+шона	shona
+сомалича	somalicha
+албанча	alban
+сербча	serbcha
+свати	svati
+сунданча	sundan
+шведча	shved
+суахили	suaxili
+тамилча	tamil
+телугу	telugu
+тожикча	tojik
+тайча	tay
+тигриняча	tigrinya
+туркманча	turkman
+филипинча	filipincha
+тонганча	tongan
+туркча	turk
+татарча	tatar
+уйғурча	uyg‘ur
+украинча	ukrain
+урду	urdu
+ўзбекча	o‘zbek
+венда	venda
+ветнамча	vyetnam
+волапюк	volapyuk
+волофча	volof
+хоса	kxosa
+йоруба	yoruba
+хитойча	xitoy
+зулу	zulu
+Араб	arab
+Арман	arman
+Бенгали	bengal
+Кирил	kirill
+Девангари	devanagari
+Грузин	gruzin
+Юнон	grek
+Соддалаштирилган	soddalashgan
+Анъанавий	anʼanaviy
+Иброний	ivrit
+Япон	yapon
+Корейс	koreys
+Лотин	lotin
+Тай	tay
+январ	Yanvar
+феврал	Fevral
+март	Mart
+апрел	Aprel
+май	May
+июн	Iyun
+июл	Iyul
+август	Avgust
+сентябр	Sentabr
+октябр	Oktabr
+ноябр	Noyabr
+декабр	Dekabr
+душанба	dushanba
+сешанба	seshanba
+чоршанба	chorshanba
+пайшанба	payshanba
+жума	juma
+шанба	shanba
+якшанба	yakshanba

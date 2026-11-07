@@ -1,0 +1,252 @@
+---
+import { decodeDictionary } from "@okb/engine/compact";
+import russianList from "@okb/script-converters/data/ru.txt?raw";
+import loans from "@okb/script-converters/data/uz-loans.tsv?raw";
+import { UzbekCyrillic, toLatin, toNewLatin } from "@okb/script-converters/uzbek";
+import UzbekConverter from "../components/tools/UzbekConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Uzbek Cyrillic to Latin Converter, with the new 2027 alphabet | ${SITE.name}`;
+const description =
+  "Convert Uzbek between Cyrillic and Latin (kirill – lotin) as you type, in the alphabet in use or the new one of 2027 (Ö, Ğ, Ş, Ç). It writes oʻ and gʻ with the right apostrophe, gets Russian words like концерт and сентябрь right, and your text never leaves your device.";
+
+const steps = [
+  "Paste or type Uzbek in Cyrillic or Latin. The page sees which alphabet it is and turns round by itself, and reads Latin in either the 1995 or the 2027 alphabet.",
+  "Choose the Latin alphabet to write: 1995 (in use) or 2027 (new). To switch Latin text between the two, choose 1995 ↔ 2027.",
+  "The result appears below as you type. For Latin to Cyrillic, the page downloads a list of Russian words (about 310 KB) the first time. Then copy the text, download it, or keep editing in the Uzbek keyboard.",
+];
+
+// Every example is run through the converter when the page is built.
+const writer = new UzbekCyrillic();
+writer.addTable(loans.split("\n"));
+writer.addRussian(decodeDictionary(russianList).words);
+const cyr = (s: string) => writer.toCyrillic(s).text;
+const examples = ["Ўзбекистон Республикаси", "Шаҳар, ғалаба, чой", "маъно, Исҳоқ, сентябрь"].map(
+  (c) => ({ from: c, to: toLatin(c).text, next: toLatin(c, "2027").text }),
+);
+const back = ["O'zbekiston, g'alaba", "konsertlar, iyunda", "Özbekiston, şahar"].map((l) => ({
+  from: l,
+  to: cyr(l),
+}));
+
+const faqs = [
+  {
+    q: "What is the new 2027 alphabet?",
+    a: `Law O'RQ-1184, signed on 21 October 2026, replaces four letters of the Uzbek Latin alphabet: Oʻ becomes Ö, Gʻ Ğ, Sh Ş and Ch Ç, so it has 28 letters and the ʼ sign. It comes into force on 22 April 2027, and documents in the current alphabet stay valid. The page writes both (${toNewLatin("Oʻzbekiston, choy")}), reads both, and converts Latin text from one to the other. The new spelling rules aren't published yet, so everything else follows the 1995 rules.`,
+  },
+  {
+    q: "Which apostrophe does it use in oʻ and gʻ?",
+    a: "The right ones: ʻ (U+02BB) in oʻ and gʻ, and ʼ (U+02BC) for the tutuq belgisi in maʼno. Whatever you typed (', `, ‘ or ’) is read as one of them, so O'zbekiston and Oʻzbekiston convert alike.",
+  },
+  {
+    q: "How does it know концерт, компьютер and сентябрь?",
+    a: `Latin drops ц, ь and ъ, so konsert could be консерт and kompyuter компютер. The page knows Russian words two ways: a table of 728 loanwords from uzcyrl and UzTransliterator (both MIT), and 100,000 Russian words from Russian Wikipedia, each looked up by how Uzbek Latin writes it. An Uzbek ending can follow: konsertlar becomes ${cyr("konsertlar")}, iyunda ${cyr("iyunda")}. As the 1995 rules say, сентябрь and октябрь are sentabr and oktabr in Latin.`,
+  },
+  {
+    q: "Why is it marked Beta?",
+    a: "Latin to Cyrillic can still miss a Russian word that neither list has, or take an Uzbek word for a Russian one (past, low, can become пасть). And little Uzbek Cyrillic text is free to test with: the real sample is 169 sentences. Cyrillic to Latin is a table and much safer.",
+  },
+  {
+    q: "What happens to е, ц and ъ going to Latin?",
+    a: `As the 1995 rules say: е is ye at the start of a word and after a vowel (${toLatin("ер, поезд").text}), ц is ts after a vowel and s otherwise (${toLatin("лицей, цирк").text}), ъ is ʼ (${toLatin("маъно").text}), and сҳ is written sʼh so it isn't read as sh (${toLatin("Исҳоқ").text}).`,
+  },
+  {
+    q: "Is my text uploaded?",
+    a: "No. The conversion runs in your browser, and your text never leaves your device. Once the word list has loaded, the page works offline.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Uzbek Cyrillic to Latin Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: ["uz-Cyrl", "uz-Latn"],
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Convert Uzbek Cyrillic to Latin",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} credits={{}}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">
+      Uzbek Cyrillic to Latin Converter
+    </h1>
+    <a
+      href="#checked-heading"
+      class="rounded-full border border-border px-2 py-0.5 text-xs font-medium text-muted"
+      title="Some Russian words come out wrong going to Cyrillic; see how we checked it"
+    >
+      Beta
+    </a>
+    <span class="text-xl text-accent" lang="uz">
+      Кирилл ↔ Lotin
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Turn Uzbek Cyrillic into Latin, or Latin back into Cyrillic, in the alphabet in use or the new
+    one that comes into force on 22 April 2027 (Ö, Ğ, Ş, Ç). It writes oʻ and gʻ with the proper
+    apostrophe whatever you type, and gets Russian words right going to Cyrillic. Everything happens
+    on your device.
+  </p>
+
+  <UzbekConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to convert Uzbek Cyrillic to Latin
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <table class="w-full table-fixed text-sm">
+        <thead>
+          <tr class="text-left text-muted">
+            <th scope="col" class="pb-1 font-medium">
+              Cyrillic
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              1995
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              2027
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {examples.map((e) => (
+            <tr class="border-t border-border">
+              <td class="py-1.5 pe-3 text-base break-words" lang="uz-Cyrl">
+                {e.from}
+              </td>
+              <td class="py-1.5 pe-3 text-base break-words" lang="uz-Latn">
+                {e.to}
+              </td>
+              <td class="py-1.5 text-base break-words" lang="uz-Latn">
+                {e.next}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <table class="mt-4 w-full table-fixed text-sm">
+        <thead>
+          <tr class="text-left text-muted">
+            <th scope="col" class="pb-1 font-medium">
+              Latin
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              Cyrillic
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {back.map((e) => (
+            <tr class="border-t border-border">
+              <td class="py-1.5 pe-3 text-base break-words" lang="uz-Latn">
+                {e.from}
+              </td>
+              <td class="py-1.5 text-base break-words" lang="uz-Cyrl">
+                {e.to}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <p class="text-muted">
+      Against two references. uztext's 560 test cases, each citing its source (the 1995 rules, the
+      explanatory dictionary, reports of the 2026 law), all pass, in both directions and between the
+      two Latin alphabets. CLDR has Uzbek names (countries, languages, currencies, months) written
+      separately in each alphabet; of the 557 words that are the same name in both, 98.9% come out
+      as CLDR writes them going to Latin and 95.7% going to Cyrillic. Most differences are names
+      spelled two ways (Беларус or Беларусь, январ or январь).
+    </p>
+    <p class="mt-2 text-muted">
+      On real text: of Tatoeba's 169 Uzbek sentences in Cyrillic, 632 of 638 words go to Latin and
+      back unchanged (two of the six are spelled unusually there: хайот, йозилган). Of 1,000
+      sentences from Uzbek Wikipedia, 99.9% of the words go to Cyrillic and back unchanged. The list
+      of Russian words alone finds 62% of the loanword table's words, against 22% for the rules. No
+      Uzbek speaker has reviewed the output yet.
+    </p>
+    <p class="mt-2 text-xs text-muted">
+      Sources: loanwords from
+      <a class="underline" href="https://github.com/DavronJamoliddinov/uzcyrl">
+        uzcyrl
+      </a>{" "}
+      and
+      <a class="underline" href="https://github.com/elmurod1202/UzTransliterator">
+        UzTransliterator
+      </a>{" "}
+      (MIT); Russian words from
+      <a class="underline" href="https://ru.wikipedia.org/">
+        Russian Wikipedia
+      </a>{" "}
+      (CC BY-SA 4.0); test cases from
+      <a class="underline" href="https://github.com/abafaboy/uztext">
+        uztext
+      </a>{" "}
+      (MIT), names from
+      <a class="underline" href="https://cldr.unicode.org/">
+        CLDR
+      </a>{" "}
+      (Unicode License) and sentences from
+      <a class="underline" href="https://tatoeba.org/">
+        Tatoeba
+      </a>{" "}
+      (CC BY 2.0 FR); the 2027 alphabet from law
+      <a class="underline" href="https://lex.uz/docs/8548754">
+        O'RQ-1184
+      </a>
+      .
+    </p>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

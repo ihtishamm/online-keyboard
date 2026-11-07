@@ -28,6 +28,16 @@ export const TOOL_PAGES: readonly ToolPage[] = [
     name: "Serbian Cyrillic to Latin",
     languages: ["serbian"],
   },
+  {
+    path: "/kazakh-cyrillic-to-latin",
+    name: "Kazakh Cyrillic to Latin",
+    languages: ["kazakh"],
+  },
+  {
+    path: "/uzbek-cyrillic-to-latin",
+    name: "Uzbek Cyrillic to Latin",
+    languages: ["uzbek"],
+  },
 ];
 
 /** The tools a keyboard page links to. */

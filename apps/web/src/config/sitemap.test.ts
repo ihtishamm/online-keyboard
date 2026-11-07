@@ -24,5 +24,7 @@ describe("sitemap sections", () => {
     expect(at("/shahmukhi-to-gurmukhi")).toBe("tools");
     expect(at("/urdu-to-hindi")).toBe("tools");
     expect(at("/serbian-cyrillic-to-latin")).toBe("tools");
+    expect(at("/kazakh-cyrillic-to-latin")).toBe("tools");
+    expect(at("/uzbek-cyrillic-to-latin")).toBe("tools");
   });
 });

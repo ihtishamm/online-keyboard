@@ -4,12 +4,15 @@
   "private": true,
   "type": "module",
   "sideEffects": false,
-  "description": "Script converters: Shahmukhi ↔ Gurmukhi and Urdu ↔ Hindi backed by word lists, and Serbian Cyrillic ↔ Latin.",
+  "description": "Script converters: Shahmukhi ↔ Gurmukhi and Urdu ↔ Hindi backed by word lists, and Serbian, Kazakh and Uzbek Cyrillic ↔ Latin.",
   "exports": {
     "./bridge": "./src/bridge.ts",
     "./punjabi": "./src/punjabi.ts",
     "./hindustani": "./src/hindustani.ts",
     "./serbian": "./src/serbian.ts",
+    "./alphabet": "./src/alphabet.ts",
+    "./kazakh": "./src/kazakh.ts",
+    "./uzbek": "./src/uzbek.ts",
     "./data/*": "./data/*"
   },
   "scripts": {

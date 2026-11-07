@@ -13,6 +13,23 @@
  *   numerals in Latin (Facebook, www.rts.rs, XX век), so they are left as they are.
  */
 
+import {
+  CYRILLIC_LETTER,
+  type Converted,
+  LATIN_LETTER,
+  type Part,
+  ROMAN,
+  UNITS,
+  cyrillicOrLatin,
+  isLetter,
+  isUpper,
+  merge,
+  tokens,
+  withCase,
+} from "./alphabet.ts";
+
+export type { Converted, Part } from "./alphabet.ts";
+
 const LATIN: Readonly<Record<string, string>> = {
   а: "a",
   б: "b",
@@ -54,45 +71,8 @@ const CYRILLIC: Readonly<Record<string, string>> = {
   ź: "з\u{301}",
 };
 
-const CYRILLIC_LETTER = /\p{Script=Cyrillic}/u;
-const LATIN_LETTER = /\p{Script=Latin}/u;
-
 /** Which alphabet a text is mostly in, or null. */
-export function serbianScript(text: string): "cyrillic" | "latin" | null {
-  let cyrillic = 0;
-  let latin = 0;
-  for (const ch of text) {
-    if (CYRILLIC_LETTER.test(ch)) cyrillic++;
-    else if (LATIN_LETTER.test(ch)) latin++;
-  }
-  if (cyrillic + latin === 0) return null;
-  return cyrillic >= latin ? "cyrillic" : "latin";
-}
-
-const isUpper = (ch: string | undefined) =>
-  ch !== undefined && ch !== ch.toLowerCase() && ch === ch.toUpperCase();
-const isLetter = (ch: string | undefined) => ch !== undefined && /\p{L}/u.test(ch);
-
-export interface Part {
-  text: string;
-  /** "kept": left as it was (foreign, a link, a Roman numeral); "guess": spelled by rule. */
-  kind?: "kept" | "guess";
-}
-
-export interface Converted {
-  text: string;
-  parts: Part[];
-  /** Words converted. */
-  words: number;
-  /** Words left as they were. */
-  kept: string[];
-  /** Words whose marks or digraphs no word list confirmed. */
-  guessed: string[];
-  /** Letters with no Serbian equivalent, left as they were (я, щ…). */
-  unknown: string[];
-  /** Whether missing č ć š ž đ were put back. */
-  restored: boolean;
-}
+export const serbianScript = cyrillicOrLatin;
 
 /**
  * One Cyrillic word's letters → Latin. `before` and `after` are the nearest letters outside it,
@@ -165,18 +145,6 @@ export function toLatin(text: string): Converted {
     unknown: [...unknown],
     restored: false,
   };
-}
-
-/** Joins neighbouring parts of the same kind and drops empty ones. */
-function merge(parts: readonly Part[]): Part[] {
-  const merged: Part[] = [];
-  for (const p of parts) {
-    if (!p.text) continue;
-    const prev = merged[merged.length - 1];
-    if (prev && !prev.kind && !p.kind) prev.text += p.text;
-    else merged.push({ ...p });
-  }
-  return merged;
 }
 
 /** The word's Latin spelling without marks, as typed on an English keyboard. */
@@ -259,13 +227,6 @@ const FOREIGN_PREFIXES = new RegExp(
 const DOUBLED = /bb|cc|dd|ff|gg|hh|kk|ll|mm|nn|pp|rr|ss|tt|zz/;
 /** With marks typed, c before h isn't č: Chicago, Michael. */
 const FOREIGN_MARKED = /ch/;
-/** Unit symbols, which stay Latin after a number (15 km, 20 °C), as Serbian Wikipedia has them. */
-const UNITS = new Set(
-  "km m cm mm dm µm nm kg g mg t l ml dl ha s ms min h kWh kW W MW GW kV V mA A Hz kHz MHz GHz B kB MB GB TB Pa hPa kPa MPa bar kcal cal J kJ ppm dB C F K".split(
-    " ",
-  ),
-);
-const ROMAN = /^(?=[MDCLXVI]{2,}$|V$)M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/;
 
 /**
  * Where nj, lj and dž are two letters. Built from the word list's Cyrillic spellings (нј, дж)
@@ -465,28 +426,7 @@ export class SerbianCyrillic {
 const TLD =
   "com|net|org|rs|me|ba|hr|si|mk|eu|info|io|gov|edu|html?|php|pdf|docx?|xlsx?|txt|jpe?g|png|gif|zip";
 /** Links, addresses and handles stay as they are; words are runs of letters. */
-const TOKEN = new RegExp(
-  [
-    `(?<keep>(?:https?://|www\\.)[^\\s<>"]+`,
-    `[\\w.+-]+@[\\w-]+(?:\\.[\\w-]+)+`,
-    `[@#][\\p{L}\\p{N}_]+`,
-    `[\\p{L}\\p{N}-]+(?:\\.[\\p{L}\\p{N}-]+)*\\.(?:${TLD})\\b)`,
-    `[\\p{L}\\p{M}]+`,
-  ].join("|"),
-  "gu",
-);
-
-/** Copies the case of the Latin word (lower, Title or CAPITALS) to its Cyrillic. */
-function withCase(latin: string, cyrillic: string): string {
-  const letters = [...latin].filter(isLetter);
-  if (letters.length > 1 && letters.every(isUpper)) return cyrillic.toUpperCase();
-  const rest = letters.slice(1);
-  // Mixed capitals (BiH): letter by letter, when there are no digraphs to throw it out.
-  if (rest.some(isUpper) && letters.length === [...cyrillic].length)
-    return [...cyrillic].map((c, i) => (isUpper(letters[i]) ? c.toUpperCase() : c)).join("");
-  if (isUpper(letters[0])) return cyrillic[0]!.toUpperCase() + cyrillic.slice(1);
-  return cyrillic;
-}
+const TOKEN = tokens(TLD);
 
 /** Letters a list word adds marks to. */
 function changes(typed: string, latin: string): number {

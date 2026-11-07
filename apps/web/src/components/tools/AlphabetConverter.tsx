@@ -1,33 +1,62 @@
 import { ArrowLeftRight, Copy, Download, Keyboard } from "lucide-react";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
-import type { Converted } from "@okb/script-converters/serbian";
+import type { Converted } from "@okb/script-converters/alphabet";
 import { downloadText } from "../keyboard/actions";
 import { openInNewDraft } from "../keyboard/drafts";
 
 /** Latin → Cyrillic, with or without a word list. */
 export interface CyrillicWriter {
-  toCyrillic(text: string, options?: { restore?: boolean }): Converted;
+  toCyrillic(text: string, options?: { restore?: boolean; alphabet?: string }): Converted;
+}
+
+export interface LatinAlphabet {
+  id: string;
+  /** In the list: "1995 (in use)". */
+  label: string;
+  /** In the text boxes' names, when shorter: "1995". */
+  short?: string;
+  /** Shown under the choice: whether it is official, and since when. */
+  note?: string;
 }
 
 export interface AlphabetConverterProps {
   /** "Serbian" */
   language: string;
-  /** The keyboard page that types the Cyrillic. */
+  /** The keyboard page for the language. */
   slug: string;
+  /** Which alphabet that keyboard types; its output gets "Edit in … keyboard". Cyrillic by default. */
+  keyboardScript?: "cyrillic" | "latin";
   /** BCP 47 tags of the two alphabets: sr-Cyrl, sr-Latn. */
   cyrillicLang: string;
   latinLang: string;
   placeholders: { cyrillic: string; latin: string };
-  toLatin(text: string): Converted;
+  toLatin(text: string, alphabet?: string): Converted;
   /** The rules alone, until `load` gives the word list's writer. */
   rules: CyrillicWriter;
   load?: () => Promise<CyrillicWriter>;
   detect(text: string): "cyrillic" | "latin" | null;
-  /** Letters with marks the list can put back ("č ć š ž đ"), and how to tell they're missing. */
-  marks?: { letters: string; missing(text: string): boolean };
+  /**
+   * Letters with marks the list can put back ("č ć š ž đ"), and how to tell they're missing;
+   * either may depend on the Latin alphabet.
+   */
+  marks?: {
+    letters: string | ((alphabet: string) => string);
+    missing(text: string, alphabet?: string): boolean;
+  };
+  /** Latin alphabets to choose from, the default first (Kazakh 2021 and 2018). */
+  alphabets?: {
+    options: readonly LatinAlphabet[];
+    /** Which one a Latin text is in, or null when it can't tell. */
+    detect?(text: string, writer: CyrillicWriter): string | null;
+  };
+  /** A third way, between the Latin alphabets (Uzbek 1995 ↔ 2027). */
+  latinPair?: {
+    label: string;
+    convert(text: string): { text: string; from: string; to: string };
+  };
 }
 
-type Way = "toLatin" | "toCyrillic";
+type Way = "toLatin" | "toCyrillic" | "latinPair";
 type ListState = "loading" | "ready" | "failed";
 
 const BTN =
@@ -45,8 +74,10 @@ const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one :
  * marked.
  */
 export default function AlphabetConverter(props: AlphabetConverterProps) {
-  const { language, rules, load, marks } = props;
+  const { language, rules, load, marks, alphabets, latinPair } = props;
   const [way, setWay] = useState<Way>("toLatin");
+  const [alphabet, setAlphabet] = useState(alphabets?.options[0]?.id ?? "");
+  const alphabetId = useId();
   const [input, setInput] = useState("");
   // null: decided by the text.
   const [restoreChoice, setRestoreChoice] = useState<boolean | null>(null);
@@ -59,12 +90,13 @@ export default function AlphabetConverter(props: AlphabetConverterProps) {
   const [ready, setReady] = useState(false);
   useEffect(() => setReady(true), []);
 
+  const current = alphabets?.options.find((a) => a.id === alphabet);
   const names = {
     cyrillic: `${language} Cyrillic`,
-    latin: `${language} Latin`,
+    latin: current ? `${language} Latin (${current.short ?? current.label})` : `${language} Latin`,
   };
   const from = way === "toLatin" ? "cyrillic" : "latin";
-  const to = way === "toLatin" ? "latin" : "cyrillic";
+  const to = way === "toCyrillic" ? "cyrillic" : "latin";
 
   const announce = (text: string) => {
     setAnnouncement("");
@@ -84,22 +116,63 @@ export default function AlphabetConverter(props: AlphabetConverterProps) {
     );
   }, [load, way, hasText, list]);
 
-  const missing = useMemo(() => !!marks && marks.missing(input), [marks, input]);
+  const missing = useMemo(
+    () => !!marks && marks.missing(input, alphabet || undefined),
+    [marks, input, alphabet],
+  );
   const restore = marks ? (restoreChoice ?? missing) : false;
+  const letters = typeof marks?.letters === "function" ? marks.letters(alphabet) : marks?.letters;
   let result: Converted | null = null;
+  let pair: { from: string; to: string } | null = null;
   if (hasText) {
-    result =
-      way === "toLatin"
-        ? props.toLatin(input)
-        : (writer.current ?? rules).toCyrillic(input, { restore });
+    if (way === "latinPair" && latinPair) {
+      const r = latinPair.convert(input);
+      pair = r;
+      result = {
+        text: r.text,
+        parts: [{ text: r.text }],
+        words: 0,
+        kept: [],
+        guessed: [],
+        unknown: [],
+        restored: false,
+      };
+    } else
+      result =
+        way === "toLatin"
+          ? props.toLatin(input, alphabet || undefined)
+          : (writer.current ?? rules).toCyrillic(input, {
+              restore,
+              alphabet: alphabet || undefined,
+            });
   }
+  const inputName = pair ? `${language} Latin (${pair.from})` : names[from];
+  const outputName = pair ? `${language} Latin (${pair.to})` : names[to];
 
   const change = (text: string) => {
     const script = props.detect(text);
-    if (script === to) {
-      setWay(way === "toLatin" ? "toCyrillic" : "toLatin");
-      announce(`Reading ${names[to]}, writing ${names[from]}`);
+    let next = way;
+    if (script === "cyrillic" && way !== "toLatin") next = "toLatin";
+    else if (script === "latin" && way === "toLatin") next = "toCyrillic";
+    const messages: string[] = [];
+    if (next !== way) {
+      setWay(next);
+      messages.push(
+        next === "toLatin"
+          ? `Reading ${names.cyrillic}, writing ${names.latin}`
+          : `Reading ${language} Latin, writing ${names.cyrillic}`,
+      );
     }
+    // Pasted Latin in the other alphabet: read it as that one.
+    if (next === "toCyrillic" && alphabets?.detect) {
+      const found = alphabets.detect(text, writer.current ?? rules);
+      const option = alphabets.options.find((a) => a.id === found);
+      if (option && option.id !== alphabet) {
+        setAlphabet(option.id);
+        messages.push(`Reading the ${option.short ?? option.label} Latin alphabet`);
+      }
+    }
+    if (messages.length) announce(messages.join(". "));
     if (!text.trim()) setRestoreChoice(null);
     setInput(text);
   };
@@ -107,7 +180,20 @@ export default function AlphabetConverter(props: AlphabetConverterProps) {
   const swap = () => {
     setInput(result?.text ?? "");
     setRestoreChoice(null);
-    setWay(way === "toLatin" ? "toCyrillic" : "toLatin");
+    if (way !== "latinPair") setWay(way === "toLatin" ? "toCyrillic" : "toLatin");
+  };
+
+  const choose = (w: Way) => {
+    if (w === way) return;
+    if (w === "latinPair" || way === "latinPair") {
+      setWay(w);
+      setRestoreChoice(null);
+      // Latin stays Latin; Cyrillic text only makes sense going to Latin.
+      if (w === "toCyrillic" && props.detect(input) === "cyrillic") setInput("");
+      if (w === "latinPair" && props.detect(input) === "cyrillic") setInput(result?.text ?? "");
+      return;
+    }
+    swap();
   };
 
   const notes: string[] = [];
@@ -116,9 +202,9 @@ export default function AlphabetConverter(props: AlphabetConverterProps) {
       notes.push("Loading the word list. Until it arrives, every word is spelled by rule.");
     if (way === "toCyrillic" && list === "failed")
       notes.push("The word list didn't load (are you offline?), so every word is spelled by rule.");
-    if (restore && marks)
+    if (restore && letters)
       notes.push(
-        `${missing && restoreChoice === null ? `There is no ${marks.letters.split(" ").join(", ")} in your text, so the` : "The"} word list puts the marks back.`,
+        `${missing && restoreChoice === null ? `There is no ${letters.split(" ").join(", ")} in your text, so the` : "The"} word list puts the marks back.`,
       );
     if (result.guessed.length)
       notes.push(
@@ -152,22 +238,49 @@ export default function AlphabetConverter(props: AlphabetConverterProps) {
           aria-label="Conversion direction"
           className="inline-flex rounded-lg border border-border bg-surface p-0.5"
         >
-          {(["toLatin", "toCyrillic"] as const).map((w) => (
+          {(latinPair
+            ? (["toLatin", "toCyrillic", "latinPair"] as const)
+            : (["toLatin", "toCyrillic"] as const)
+          ).map((w) => (
             <button
               key={w}
               type="button"
               role="radio"
               aria-checked={way === w}
-              onClick={() => w !== way && swap()}
+              onClick={() => choose(w)}
               className={`min-h-11 rounded-md px-3 text-sm font-medium sm:min-h-9 ${
                 way === w ? "bg-accent text-accent-fg" : "text-muted hover:text-text"
               }`}
             >
-              {w === "toLatin" ? "Cyrillic → Latin" : "Latin → Cyrillic"}
+              {w === "toLatin"
+                ? "Cyrillic → Latin"
+                : w === "toCyrillic"
+                  ? "Latin → Cyrillic"
+                  : latinPair!.label}
             </button>
           ))}
         </div>
-        {marks && way === "toCyrillic" && (
+        {alphabets && way !== "latinPair" && (
+          <label
+            htmlFor={alphabetId}
+            className="inline-flex min-h-11 items-center gap-2 text-sm sm:min-h-9"
+          >
+            Latin alphabet
+            <select
+              id={alphabetId}
+              value={alphabet}
+              onChange={(e) => setAlphabet(e.target.value)}
+              className="min-h-11 rounded-lg border border-border bg-surface px-2 text-sm text-text sm:min-h-9"
+            >
+              {alphabets.options.map((a) => (
+                <option key={a.id} value={a.id}>
+                  {a.label}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
+        {letters && way === "toCyrillic" && (
           <label
             htmlFor={restoreId}
             className="inline-flex min-h-11 items-center gap-2 text-sm sm:min-h-9"
@@ -179,14 +292,17 @@ export default function AlphabetConverter(props: AlphabetConverterProps) {
               onChange={(e) => setRestoreChoice(e.target.checked)}
               className="size-4 accent-accent"
             />
-            Add missing {marks.letters}
+            Add missing {letters}
           </label>
         )}
       </div>
+      {current?.note && way !== "latinPair" && (
+        <p className="-mt-2 text-xs text-muted">{current.note}</p>
+      )}
 
       <div className="flex flex-col gap-1.5">
         <label htmlFor={inputId} className="text-sm font-medium">
-          {names[from]} text
+          {inputName} text
         </label>
         <textarea
           id={inputId}
@@ -218,7 +334,7 @@ export default function AlphabetConverter(props: AlphabetConverterProps) {
       <div className="flex flex-col gap-1.5">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <span id={`${outputId}-label`} className="text-sm font-medium">
-            {names[to]} text
+            {outputName} text
           </span>
           <div className="flex flex-wrap gap-2">
             <button type="button" className={BTN} disabled={!result} onClick={() => void copy()}>
@@ -239,7 +355,7 @@ export default function AlphabetConverter(props: AlphabetConverterProps) {
             <button type="button" className={BTN} disabled={!result} onClick={swap}>
               <ArrowLeftRight {...icon} /> Swap
             </button>
-            {to === "cyrillic" && (
+            {to === (props.keyboardScript ?? "cyrillic") && (
               <button
                 type="button"
                 className={BTN}

@@ -883,7 +883,8 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - tables built from two independent references with clean licences;
     - round-trip tests;
     - unknown codes are counted and shown to the user.
-- [ ] **10.2 Script converters.**
+- [x] **10.2 Script converters.**
+  - **Status (2026-11-07):** all four pairs shipped. Serbian and Kazakh meet the two-reference bar; Shahmukhi and Hindi–Urdu fall short of it (no clean second word list) and are Beta, and Uzbek is Beta for its small Cyrillic test set. None has had a native-speaker check.
   - [x] Shahmukhi ↔ Gurmukhi, with dictionary help for vowels.
     - **Done (2026-11-07), Beta:** `/shahmukhi-to-gurmukhi`, both directions, live as you type. It detects the script of what is typed or pasted and turns round by itself. New package `packages/script-converters`: a shared engine (`src/bridge.ts`) that Hindi ↔ Urdu will reuse, and the Punjabi rules (`src/punjabi.ts`). New island `ScriptConverter.tsx` for any such pair. Linked from the Punjabi and Shahmukhi keyboards, the home page and the sitemap.
     - **Method:** Gurmukhi → Shahmukhi by rule is nearly mechanical, so Shahmukhi is the pivot. Each word of the target word list is indexed by a fold of its Shahmukhi spelling: letters Gurmukhi can't tell apart (س ص ث, ط ت, ع…) and letters people type alike (nukta or none). The more frequent match wins unless its spelling is further away. Words with no match keep the rules' spelling, and the page underlines them and counts them. The word lists are 100,000 words (Gurmukhi has 92,327), about 290 KB gzipped each, fetched only for the script being written and indexed a part at a time so the page keeps answering.
@@ -903,7 +904,15 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - **Numbers** (README): Cyrillic → Latin matches ICU's Serbian-Latin/BGN on all 22,000 rows. On 19,355 held-out Wiktionary pairs, 99.9 % → Latin and 99.8 % → Cyrillic (99.6 % of words with nj, lj, dž). 97.8 % of 2,000 srwiki sentences survive Cyrillic → Latin → Cyrillic; typed without marks, 97.8 % of their words come back right (82.7 % of Wiktionary's words, mostly names). Ćirilizator's 44 digraph stems all split but two (injaric, the acronym SSRNJ).
     - **References:** ICU (an executable, through ctypes) and Wiktionary for → Latin; Wiktionary, srwiki's own Cyrillic and Ćirilizator's exceptions and test sentences for → Cyrillic. Ćirilizator's foreign-word list is used, credited, after our word list (we narrowed home- and like- and dropped covid-).
     - **Not done:** Latin abbreviations that don't look foreign are converted (ICMP → ИЦМП); words alike without marks (reci) get the more frequent; no native-speaker check of the output or the page copy.
-  - [ ] Kazakh and Uzbek Cyrillic ↔ Latin. Check which official alphabet version is current.
+  - [x] Kazakh and Uzbek Cyrillic ↔ Latin. Check which official alphabet version is current.
+    - **Alphabet status (checked 2026-11-07):** Kazakh has no approved Latin alphabet. Decree 637 (February 2018) was replaced by a 31-letter draft of April 2021 that was never signed; the switch moved to 2031 and the ministry said in June 2026 it is still being refined. Uzbek's 1995 Latin alphabet is in use; law O'RQ-1184 (signed 21 October 2026) brings Ö Ğ Ş Ç from 22 April 2027, and documents in the old alphabet stay valid. Chosen with the user: Kazakh writes 2021 with a 2018 option and the page says neither is approved; Uzbek writes 1995 with a 2027 option and converts between the two Latin versions.
+    - **Done (2026-11-07):** `/kazakh-cyrillic-to-latin` (not Beta) and `/uzbek-cyrillic-to-latin` (Beta), both directions, live, turning round by itself, and reading Latin in either version (detected, with a picker). `src/kazakh.ts`, `src/uzbek.ts`, and `src/alphabet.ts` for what they share with Serbian. `AlphabetConverter.tsx` gained an alphabet picker with notes, a third way (1995 ↔ 2027), and per-alphabet marks. Linked from the Kazakh and Uzbek keyboards, the home page and the sitemap.
+    - **Kazakh method:** Cyrillic → Latin is a table that matches Wikipedia's chart of both versions on every letter; ё ц ч щ ю я, which no decree gives, are written as the chart has them (2021: io ts tş ştş iu ia). Latin → Cyrillic looks each word up in 100,000 kkwiki words indexed by their Latin spelling (и/й, х/һ, ъ ь, Russian ц), then the longest known start plus rules; text typed without marks gets them back from the list, with endings by vowel harmony.
+    - **Uzbek method:** the 1995 rules both ways (е ye, ц ts/s, ъ ʼ, сҳ sʼh, sentabr), any apostrophe read as ʻ or ʼ. For ц ь ъ э in Russian words: uzcyrl's and UzTransliterator's 728 loanwords (MIT), then 100,000 ruwiki words indexed by their Uzbek Latin spelling, with Uzbek endings after, and guards so an Uzbek word isn't taken for Russian (only words with ц ь ъ э; none with ы or щ; no case forms; not when the rule spelling is itself Russian).
+    - **Numbers** (README): Kazakh, every word through Latin and back on the held-out halves: Tatoeba 99.8 % (2021) and 99.7 % (2018), kkwiki 99.1 % and 98.9 %; typed without marks 97.1 % / 95.9 % (2021). Uzbek: uztext's 560 sourced cases all pass; of CLDR's 557 words alike in uz-Cyrl and uz-Latn, 98.9 % → Latin and 95.7 % → Cyrillic; Tatoeba's 169 Cyrillic sentences 632/638 words through Latin and back; uzwiki 99.9 % through Cyrillic and back. The Russian list alone finds 62 % of the loanword table (rules alone 22 %).
+    - **References:** Kazakh: the draft decree and Wikipedia's chart for → Latin, compared with kazakh-script-converter and qazlatyn-db (MIT; they differ only on ё ц ч щ я); Tatoeba and kkwiki text for → Cyrillic. Uzbek: uztext (MIT, each case citing the 1995 rules, the explanatory dictionary or the 2026 law) and CLDR. ICU's uz_Cyrl-uz_Latn was tried and set aside: it doesn't follow the 1995 rules (obʼyekt, sentyabr) and back to Cyrillic it writes э for every e.
+    - **Why Uzbek is Beta:** only 169 Uzbek Cyrillic sentences are free to test with, and Latin → Cyrillic can still take an Uzbek word for a Russian one (past → пасть).
+    - **Not done:** past → пасть; AQSh in a text all in capitals becomes AQSH; the 2027 spelling rules aren't published, so only the four letters change; the Turkic Academy's 2024 common alphabet was not checked (its site served an anti-robot page); no native-speaker check of the output or the page copy.
 - [ ] **10.3 Text tools.**
   - [ ] **Diacritics remover:** Arabic and Urdu harakat, Hebrew niqqud, Latin accents.
   - [ ] **Digit converter:** ٠١٢ / ۰۱۲ / ०१२ / 012.
@@ -1003,6 +1012,18 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | English Wiktionary via kaikki.org (Serbo-Croatian entries) | Serbian Latin–Cyrillic test pairs | CC BY-SA 4.0 | In use (10.2, tests only) |
 | ICU `Serbian-Latin/BGN` (system ICU 74) | Independent check of Serbian Cyrillic → Latin | Unicode License | In use (10.2, tests only) |
 | Ćirilizator, Serbian Transliterator (Jovan Turanjanin) | Common foreign words; digraph exceptions and test sentences as test data | MIT | In use (10.2) |
+| Kazakh Wikipedia dump | 100,000-word Cyrillic list for Kazakh Latin → Cyrillic; 2,000 test sentences | CC BY-SA 4.0 | In use (10.2) |
+| Tatoeba (Kazakh; Uzbek Cyrillic, 169 sentences) | Test sentences | CC BY 2.0 FR | In use (10.2, tests only) |
+| Kazakh draft decree on the 2021 Latin alphabet (legalacts.egov.kz id 8243312) | The 31 letters of 2021 | Public legal text | In use (10.2) |
+| Wikipedia, "Kazakh alphabets" chart | Every letter of the 2021 and 2018 versions, incl. ё ц ч щ ю я | CC BY-SA 4.0 | In use (10.2, tests) |
+| kazakh-script-converter 2.0.0 (Kenzhebek Taniyev); qazlatyn-db 4.0.0 (Talgat Uspanov) | Kazakh letter tables, compared in tests | MIT | In use (10.2, tests only) |
+| uzcyrl (DavronJamoliddinov); UzTransliterator (elmurod1202) | 728 Uzbek Russian loanwords, Latin and Cyrillic | MIT | In use (10.2) |
+| uztext (Abdulfayyod Mukhamedov) | 560 Uzbek test cases, each citing its rule's source | MIT | In use (10.2, tests only) |
+| CLDR 48 (through Node's ICU) | 495 Uzbek names in uz-Cyrl and uz-Latn | Unicode License | In use (10.2, tests only) |
+| Russian Wikipedia dump | 100,000 Russian words for Uzbek Latin → Cyrillic | CC BY-SA 4.0 | In use (10.2) |
+| Law O'RQ-1184 (lex.uz/docs/8548754) | The 2027 Uzbek Latin alphabet | Public legal text | In use (10.2) |
+| ICU uz_Cyrl-uz_Latn, uz_Latn-uz_Cyrl | — | Unicode License | Tried, not used: doesn't follow the 1995 rules |
+| uz-books (Hugging Face, murodbek) | — | Card says Apache 2.0; nothing on the books' own rights | **Not used** (10.2) |
 | Zawgyi-One 4.30 | Checking the output by eye | Not open licensed | Used for checking only; never copied or shipped |
 | Subtitle-based frequency lists | Chat words | Unclear (the underlying subtitles' rights) | **Avoid** unless the licence is clear |
 | Leipzig Corpora Collection | — | Sources conflict (CC BY vs CC BY-NC) | **Don't use** without written confirmation (the old plan listed it) |

@@ -8,6 +8,12 @@ leaves out what the other writes, so a word list has to help:
 - `@okb/script-converters/bridge`: the engine they share.
 - `@okb/script-converters/serbian`: Serbian Cyrillic ↔ Latin, which needs a word list only for
   digraphs and missing marks (see [Serbian](#serbian-cyrillic--latin)).
+- `@okb/script-converters/kazakh`: Kazakh Cyrillic ↔ Latin, 2021 and 2018 alphabets (see
+  [Kazakh](#kazakh-cyrillic--latin)).
+- `@okb/script-converters/uzbek`: Uzbek Cyrillic ↔ Latin, 1995 and 2027 alphabets (see
+  [Uzbek](#uzbek-cyrillic--latin)).
+- `@okb/script-converters/alphabet`: what the three Cyrillic–Latin converters share (result
+  shape, words and links, letter case, units and Roman numerals).
 
 ## How it works
 
@@ -193,6 +199,121 @@ restated in `test/serbian.test.ts` as data.
   We differ from Ćirilizator on purpose in one test sentence: muzzičkog changes, as č makes it
   Serbian.
 
+## Kazakh Cyrillic ↔ Latin
+
+**Which alphabet (checked 2026-11-07).** None is approved. Decree 637 (19 February 2018) set a
+Latin alphabet with acute accents and sh, ch; the government then drafted a 31-letter version
+(April 2021, legalacts.egov.kz id 8243312: Ä Ğ Ñ Ö Ū Ü Ş, İ for и/й, I ı for і) whose decree was
+never signed. The switch was moved from 2025 to 2031, and the Ministry of Science said in June
+2026 that the alphabet is still being refined. So `toLatin(text, "2021")` is the default and
+`"2018"` is offered; the page says neither is approved. The Turkic Academy's 2024 common
+alphabet was not used: its page served an anti-robot check, and no other source for its table
+was found.
+
+**Cyrillic → Latin** is a table. The draft has no letters for ё ц ч щ ю я (Kazakh uses them only
+in Russian words); we write them as Wikipedia's chart does (2021: io ts tş ştş iu ia; 2018: ıo
+s ch shch ıý ıa), so each can be told apart again. ъ and ь are dropped. Capitals follow Turkish
+casing in 2021 (и → İ, і → I).
+
+**Latin → Cyrillic** (`KazakhCyrillic`) can't be a table: one letter stands for и and й, ъ and ь
+are gone, and h is х or һ. The Cyrillic word list (`data/kk.txt`) is indexed by each word's Latin
+spelling; of the words that match, the more frequent wins, with a bonus for the one the rules
+would write. A word the list lacks takes the longest known start (at least 3 letters) and spells
+the rest by rule (и after a consonant, й after a vowel, iotated я ю at a start or after a vowel,
+ts → ц only at a start or in -tsiia, -tsio-, e → э after a or o). Text with none of the marked
+letters is read as typed on an English keyboard: words are looked up without marks, and endings
+the list lacks are chosen by vowel harmony. Which version a Latin text is in is told by the
+letters only one has, or else by how many words each finds in the list. Latin i and ə typed
+inside a Cyrillic word are read as і and ә.
+
+### Data (built 2026-11-07)
+
+| File                                     | What                                                                    | Source and licence                                                                                                                 |
+| ---------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `data/kk.txt`                            | 100,000 Cyrillic words, front-coded (about 320 KB gzipped)              | Kazakh Wikipedia, by `@okb/dictionaries` (CC BY-SA 4.0)                                                                            |
+| `test/data/kk-sentences.txt`             | 2,000 sentences, no two opening alike                                   | kkwiki slices at 45 and 75 % (the 20 % slice had no pages), by `scripts/import-sentences.ts --distinct` (CC BY-SA 4.0)             |
+| `dictionaries/test/data/kk-everyday.txt` | Everyday sentences, not from Wikipedia                                  | Tatoeba (CC BY 2.0 FR), shared with the keyboards' tests                                                                           |
+| in `test/kazakh.test.ts`                 | Wikipedia's chart of the 2021 and 2018 alphabets; two MIT letter tables | en.wikipedia.org "Kazakh alphabets"; kazakh-script-converter 2.0.0 (Kenzhebek Taniyev) and qazlatyn-db 4.0.0 (Talgat Uspanov), MIT |
+
+### Measured (2026-11-07)
+
+Every Cyrillic word through Latin and back. Sentences are split by SHA-1: the half below 0x80
+tuned the rules, the other half is scored.
+
+| Set (held-out half)         | 2021   | 2018   |
+| --------------------------- | ------ | ------ |
+| Tatoeba, 3,248 words        | 99.8 % | 99.7 % |
+| kkwiki, 13,901 words        | 99.1 % | 98.9 % |
+| Tatoeba typed without marks | 97.1 % | 97.5 % |
+| kkwiki typed without marks  | 95.9 % | 95.5 % |
+
+- Cyrillic → Latin matches Wikipedia's chart on every letter of both versions. The two MIT
+  tables differ from ours only where no decree gives a letter: kazakh-script-converter writes ч
+  and щ as ş; qazlatyn-db writes ё ö, ц s, ч ch, щ ş, я ıa.
+- Misses are mostly Russian words and names the list lacks, and words alike without marks (sai:
+  сай or шай), which get the more frequent.
+
+## Uzbek Cyrillic ↔ Latin
+
+**Which alphabet (checked 2026-11-07).** The Latin alphabet of 1995 (with oʻ gʻ sh ch and ʼ) is
+in use. Law O'RQ-1184 (signed 21 October 2026, lex.uz/docs/8548754) replaces Oʻ Gʻ Sh Ch with Ö Ğ
+Ş Ç from 22 April 2027, and documents in the old alphabet stay valid. `toLatin(text, "1995")` is
+the default, `"2027"` is offered, and `toNewLatin` / `fromNewLatin` convert Latin text between
+the two. The 2027 spelling rules aren't published, so everything else follows the 1995 rules.
+
+**Cyrillic → Latin** follows the 1995 rules: е is ye at a word's start, after a vowel and after ъ
+ь; ц is ts after a vowel or й, s otherwise; ъ is ʼ but dropped between a consonant and е ё ю я
+(объект obyekt) and after ў; сҳ is sʼh; сентябрь and октябрь are sentabr, oktabr. ʻ is U+02BB and
+ʼ U+02BC, and any apostrophe typed is read as one of them. A capital that becomes two letters
+(Ш) is SH among capitals and Sh otherwise; a word of one letter stands alone.
+
+**Latin → Cyrillic** (`UzbekCyrillic`) is the rules backwards (e → э at a start or after a
+vowel, yo yu ya → ё ю я, -tsiya → -ция), then two lists for what Latin hides (ц ь ъ э in Russian
+words): the loanword table (`data/uz-loans.tsv`), then 100,000 Russian words indexed by how Uzbek
+Latin writes them, with an Uzbek ending allowed after (konsertlar концертлар; ь is dropped
+before a vowel ending, as in автомобили). The Russian index keeps only words where it matters
+(with ц ь ъ э), and leaves out words with ы or щ, ь before а и о у, words that differ only in э,
+Russian case forms, words whose rule spelling is itself a Russian word (stol, seriya), and words
+another split explains (konsuli is консул + и, not концу + ли). In 2027 text, sh is s + h, as ş
+is the letter; Romanian ș is read as ş.
+
+ICU's `uz_Cyrl-uz_Latn` and `uz_Latn-uz_Cyrl` transforms (system ICU 74) were tried and not
+used as a reference: they don't follow the 1995 rules (объект obʼyekt, Исҳоқ Ishoq, сентябрь
+sentyabr) and back to Cyrillic they write э for every e (Ўзбэкистон, лицэй).
+
+### Data (built 2026-11-07)
+
+| File                                    | What                                                      | Source and licence                                                                                                                                                 |
+| --------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `data/ru.txt`                           | 100,000 Russian words, front-coded (about 310 KB gzipped) | Russian Wikipedia, by `@okb/dictionaries` (CC BY-SA 4.0)                                                                                                           |
+| `data/uz-loans.tsv`                     | 728 Russian loanwords, Latin and Cyrillic                 | [uzcyrl](https://github.com/DavronJamoliddinov/uzcyrl) and [UzTransliterator](https://github.com/elmurod1202/UzTransliterator) (MIT), by `scripts/import-uzbek.ts` |
+| `test/data/uz-uztext.tsv`               | 560 test cases, each citing its rule's source             | [uztext](https://github.com/abafaboy/uztext) `corpus/cases.json` (MIT)                                                                                             |
+| `test/data/uz-cldr.tsv`                 | 495 names CLDR has in both uz-Cyrl and uz-Latn            | CLDR 48 through Node's ICU (Unicode License)                                                                                                                       |
+| `test/data/uz-cyrillic-sentences.txt`   | 169 Uzbek sentences in Cyrillic (all Tatoeba has)         | Tatoeba (CC BY 2.0 FR)                                                                                                                                             |
+| `dictionaries/test/data/uz-heldout.txt` | Uzbek Wikipedia sentences in Latin                        | Uzbek Wikipedia (CC BY-SA 4.0), shared with the keyboards' tests                                                                                                   |
+
+Not used: uz-books on Hugging Face (tahrirchi, now murodbek), about 40,000 OCRed books in both
+alphabets. Its card says Apache 2.0 but says nothing of the books' own rights.
+
+### Measured (2026-11-07)
+
+| Set                                                      | Result                          |
+| -------------------------------------------------------- | ------------------------------- |
+| uztext's cases (to Latin, to Cyrillic, to and from 2027) | 560 / 560                       |
+| CLDR, 557 words the same name in both: → Latin           | 98.9 %                          |
+| CLDR: → Cyrillic                                         | 95.7 %                          |
+| Tatoeba Cyrillic, 638 words through Latin and back       | 632 (99.1 %)                    |
+| uzwiki, 13,209 words through Cyrillic and back           | 99.9 %                          |
+| Loanword table found by the Russian list alone           | 62.0 % (the rules alone 22.0 %) |
+
+- CLDR's names are separate translations, so only words alike once ь ъ, ц/с, э/е, й/и and
+  doubled letters are set aside are compared. Most differences are names spelled two ways
+  (Беларус or Беларусь, январ or январь).
+- Tatoeba's six misses: two typos in the sentences (хайот, йозилган), Цао, Брайан (браян by the
+  rules) and Мишел (мишель from the Russian list).
+- The Tatoeba set is small (169 sentences); there is little free Uzbek Cyrillic text to test on,
+  which is why the page is Beta.
+
 ## Known issues
 
 - Words written alike in Shahmukhi always come out as the more frequent; the words around them
@@ -201,3 +322,9 @@ restated in `test/serbian.test.ts` as data.
 - No Punjabi, Hindi or Urdu speaker has reviewed the output.
 - Serbian: Latin abbreviations are converted unless they look foreign (ICMP becomes ИЦМП);
   homographs without marks get the more frequent word; no Serbian speaker has reviewed the output.
+- Kazakh: Russian words and names the list lacks are spelled by rule; words alike without marks
+  get the more frequent; neither Latin version is approved, and no Kazakh speaker has reviewed the
+  output.
+- Uzbek: an Uzbek word that is also a Russian one can come out Russian (past → пасть); AQSh in a
+  text all in capitals becomes AQSH; the 2027 spelling rules aren't published; no Uzbek speaker
+  has reviewed the output.

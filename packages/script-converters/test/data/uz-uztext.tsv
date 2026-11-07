@@ -1,0 +1,564 @@
+# Function, input, expected, the rule's source (UNVERIFIED where uztext marks it so); a line
+# break in a case is written \n.
+# From uztext (github.com/abafaboy/uztext, corpus/cases.json), Copyright (c) 2026
+# Abdulfayyod Mukhamedov, MIT License. Written by scripts/import-uzbek.ts.
+to_latin	ота	ota	LAW-1995
+to_cyrillic	ota	ота	LAW-1995
+to_latin	бола	bola	LAW-1995
+to_cyrillic	bola	бола	LAW-1995
+to_latin	ватан	vatan	LAW-1995
+to_cyrillic	vatan	ватан	LAW-1995
+to_latin	гул	gul	LAW-1995
+to_cyrillic	gul	гул	LAW-1995
+to_latin	дарё	daryo	LAW-1995
+to_cyrillic	daryo	дарё	LAW-1995
+to_latin	жон	jon	LAW-1995
+to_cyrillic	jon	жон	LAW-1995
+to_latin	журнал	jurnal	LAW-1995
+to_cyrillic	jurnal	журнал	LAW-1995
+to_latin	зиё	ziyo	LAW-1995
+to_cyrillic	ziyo	зиё	LAW-1995
+to_latin	илм	ilm	LAW-1995
+to_cyrillic	ilm	илм	LAW-1995
+to_latin	йил	yil	LAW-1995
+to_cyrillic	yil	йил	LAW-1995
+to_latin	китоб	kitob	LAW-1995
+to_cyrillic	kitob	китоб	LAW-1995
+to_latin	лола	lola	LAW-1995
+to_cyrillic	lola	лола	LAW-1995
+to_latin	мактаб	maktab	LAW-1995
+to_cyrillic	maktab	мактаб	LAW-1995
+to_latin	нон	non	LAW-1995
+to_cyrillic	non	нон	LAW-1995
+to_latin	олма	olma	LAW-1995
+to_cyrillic	olma	олма	LAW-1995
+to_latin	пахта	paxta	LAW-1995
+to_cyrillic	paxta	пахта	LAW-1995
+to_latin	руҳ	ruh	LAW-1995
+to_cyrillic	ruh	руҳ	LAW-1995
+to_latin	сув	suv	LAW-1995
+to_cyrillic	suv	сув	LAW-1995
+to_latin	тил	til	LAW-1995
+to_cyrillic	til	тил	LAW-1995
+to_latin	уй	uy	LAW-1995
+to_cyrillic	uy	уй	LAW-1995
+to_latin	фарзанд	farzand	LAW-1995
+to_cyrillic	farzand	фарзанд	LAW-1995
+to_latin	хабар	xabar	RULES-1995 §29
+to_cyrillic	xabar	хабар	RULES-1995 §29
+to_latin	чой	choy	RULES-1995 §19
+to_cyrillic	choy	чой	RULES-1995 §19
+to_latin	шаҳар	shahar	RULES-1995 §17
+to_cyrillic	shahar	шаҳар	RULES-1995 §17
+to_latin	эрта	erta	WP
+to_cyrillic	erta	эрта	WP
+to_latin	юлдуз	yulduz	RULES-1995 §25
+to_cyrillic	yulduz	юлдуз	RULES-1995 §25
+to_latin	янги	yangi	RULES-1995 §26
+to_cyrillic	yangi	янги	RULES-1995 §26
+to_latin	ўқитувчи	oʻqituvchi	RULES-1995 §5
+to_cyrillic	oʻqituvchi	ўқитувчи	RULES-1995 §5
+to_latin	қишлоқ	qishloq	LAW-1995
+to_cyrillic	qishloq	қишлоқ	LAW-1995
+to_latin	ғалаба	gʻalaba	LAW-1995
+to_cyrillic	gʻalaba	ғалаба	LAW-1995
+to_latin	ҳаёт	hayot	LAW-1995
+to_cyrillic	hayot	ҳаёт	LAW-1995
+to_latin	ер	yer	WP
+to_cyrillic	yer	ер	WP
+to_latin	етти	yetti	RULES-1995 §25
+to_cyrillic	yetti	етти	RULES-1995 §25
+to_latin	поезд	poyezd	RULES-1995 §6
+to_cyrillic	poyezd	поезд	RULES-1995 §6
+to_latin	кеча	kecha	RULES-1995 §6
+to_cyrillic	kecha	кеча	RULES-1995 §6
+to_latin	беҳи	behi	RULES-1995 §6
+to_cyrillic	behi	беҳи	RULES-1995 §6
+to_latin	телефон	telefon	RULES-1995 §6
+to_cyrillic	telefon	телефон	RULES-1995 §6
+to_latin	театр	teatr	RULES-1995 §6
+to_cyrillic	teatr	театр	RULES-1995 §6
+to_latin	кел	kel	RULES-1995 §6
+to_cyrillic	kel	кел	RULES-1995 §6
+to_latin	зеҳн	zehn	RULES-1995 §6
+to_cyrillic	zehn	зеҳн	RULES-1995 §6
+to_latin	экин	ekin	RULES-1995 §6
+to_cyrillic	ekin	экин	RULES-1995 §6
+to_latin	эсла	esla	RULES-1995 §6
+to_cyrillic	esla	эсла	RULES-1995 §6
+to_latin	эвара	evara	RULES-1995 §6
+to_cyrillic	evara	эвара	RULES-1995 §6
+to_latin	экран	ekran	RULES-1995 §6
+to_cyrillic	ekran	экран	RULES-1995 §6
+to_latin	экспорт	eksport	RULES-1995 §6
+to_cyrillic	eksport	экспорт	RULES-1995 §6
+to_latin	океан	okean	RULES-1995 §7
+to_cyrillic	okean	океан	RULES-1995 §7
+to_latin	поэма	poema	RULES-1995 §7
+to_cyrillic	poema	поэма	RULES-1995 §7
+to_latin	аэростат	aerostat	RULES-1995 §7
+to_cyrillic	aerostat	аэростат	RULES-1995 §7
+to_latin	мева	meva	WP
+to_cyrillic	meva	мева	WP
+to_latin	эшик	eshik	WP
+to_cyrillic	eshik	эшик	WP
+to_latin	эркак	erkak	WP
+to_cyrillic	erkak	эркак	WP
+to_latin	ер-сув	yer-suv	WP
+to_cyrillic	yer-suv	ер-сув	WP
+to_latin	қуёш	quyosh	WP
+to_cyrillic	quyosh	қуёш	WP
+to_latin	дуэт	duet	WP
+to_cyrillic	duet	дуэт	WP
+to_latin	эълон	eʼlon	RULES-1995 §32
+to_cyrillic	eʼlon	эълон	RULES-1995 §32
+to_latin	неъмат	neʼmat	RULES-1995 §32
+to_cyrillic	neʼmat	неъмат	RULES-1995 §32
+to_latin	шеър	sheʼr	RULES-1995 §32
+to_cyrillic	sheʼr	шеър	RULES-1995 §32
+to_latin	аъло	aʼlo	RULES-1995 §32
+to_cyrillic	aʼlo	аъло	RULES-1995 §32
+to_latin	баъзан	baʼzan	RULES-1995 §32
+to_cyrillic	baʼzan	баъзан	RULES-1995 §32
+to_latin	маъюс	maʼyus	RULES-1995 §32
+to_cyrillic	maʼyus	маъюс	RULES-1995 §32
+to_latin	таъзим	taʼzim	RULES-1995 §32
+to_cyrillic	taʼzim	таъзим	RULES-1995 §32
+to_latin	раъй	raʼy	RULES-1995 §32
+to_cyrillic	raʼy	раъй	RULES-1995 §32
+to_latin	таъб	taʼb	RULES-1995 §32
+to_cyrillic	taʼb	таъб	RULES-1995 §32
+to_latin	эътибор	eʼtibor	RULES-1995 §32
+to_cyrillic	eʼtibor	эътибор	RULES-1995 §32
+to_latin	эътиқод	eʼtiqod	RULES-1995 §32
+to_cyrillic	eʼtiqod	эътиқод	RULES-1995 §32
+to_latin	меъмор	meʼmor	RULES-1995 §32
+to_cyrillic	meʼmor	меъмор	RULES-1995 §32
+to_latin	феъл	feʼl	RULES-1995 §32
+to_cyrillic	feʼl	феъл	RULES-1995 §32
+to_latin	Нуъмон	Nuʼmon	RULES-1995 §32
+to_cyrillic	Nuʼmon	Нуъмон	RULES-1995 §32
+to_latin	шуъла	shuʼla	RULES-1995 §32
+to_cyrillic	shuʼla	шуъла	RULES-1995 §32
+to_latin	инъом	inʼom	RULES-1995 §32
+to_cyrillic	inʼom	инъом	RULES-1995 §32
+to_latin	санъат	sanʼat	RULES-1995 §32
+to_cyrillic	sanʼat	санъат	RULES-1995 §32
+to_latin	қатъий	qatʼiy	RULES-1995 §32
+to_cyrillic	qatʼiy	қатъий	RULES-1995 §32
+to_latin	масъул	masʼul	RULES-1995 §32
+to_cyrillic	masʼul	масъул	RULES-1995 §32
+to_latin	маъно	maʼno	KUN-2021
+to_cyrillic	maʼno	маъно	KUN-2021
+to_latin	Қуръон	Qurʼon	RULES-1995 §32
+to_cyrillic	Qurʼon	Қуръон	RULES-1995 §32
+to_latin	Исҳоқ	Isʼhoq	RULES-1995 §17
+to_cyrillic	Isʼhoq	Исҳоқ	RULES-1995 §17
+to_latin	асҳоб	asʼhob	RULES-1995 §17
+to_cyrillic	asʼhob	асҳоб	RULES-1995 §17
+to_latin	машҳур	mashhur	RULES-1995 §17
+to_cyrillic	mashhur	машҳур	RULES-1995 §17
+to_latin	ошхона	oshxona	RULES-1995 §17
+to_cyrillic	oshxona	ошхона	RULES-1995 §17
+to_latin	цирк	sirk	IZOH
+to_cyrillic	sirk	цирк	IZOH
+to_latin	цех	sex	IZOH
+to_cyrillic	sex	цех	IZOH
+to_latin	цемент	sement	IZOH
+to_cyrillic	sement	цемент	IZOH
+to_latin	концерт	konsert	IZOH
+to_cyrillic	konsert	концерт	IZOH
+to_latin	лицей	litsey	IZOH
+to_cyrillic	litsey	лицей	IZOH
+to_latin	полиция	politsiya	IZOH
+to_cyrillic	politsiya	полиция	IZOH
+to_latin	станция	stansiya	IZOH
+to_cyrillic	stansiya	станция	IZOH
+to_latin	акция	aksiya	IZOH
+to_cyrillic	aksiya	акция	IZOH
+to_latin	принцип	prinsip	IZOH
+to_cyrillic	prinsip	принцип	IZOH
+to_latin	федерация	federatsiya	IZOH
+to_cyrillic	federatsiya	федерация	IZOH
+to_latin	квитанция	kvitansiya	IZOH
+to_cyrillic	kvitansiya	квитанция	IZOH
+to_latin	конституция	konstitutsiya	IZOH
+to_cyrillic	konstitutsiya	конституция	IZOH
+to_latin	вице-президент	vitse-prezident	IZOH
+to_cyrillic	vitse-prezident	вице-президент	IZOH
+to_latin	отсиз	otsiz	LAW-1995
+to_cyrillic	otsiz	отсиз	LAW-1995
+to_latin	объект	obyekt	IZOH
+to_cyrillic	obyekt	объект	IZOH
+to_latin	субъект	subyekt	IZOH
+to_cyrillic	subyekt	субъект	IZOH
+to_latin	съезд	syezd	IZOH; IMLO
+to_cyrillic	syezd	съезд	IZOH; IMLO
+to_latin	пьеса	pyesa	IZOH; IMLO
+to_cyrillic	pyesa	пьеса	IZOH; IMLO
+to_latin	ателье	atelye	IZOH; IMLO
+to_cyrillic	atelye	ателье	IZOH; IMLO
+to_latin	компьютер	kompyuter	IZOH
+to_cyrillic	kompyuter	компьютер	IZOH
+to_latin	ноль	nol	IMLO
+to_cyrillic	nol	ноль	IMLO
+to_latin	мўъжиза	moʻjiza	IMLO
+to_cyrillic	moʻjiza	мўъжиза	IMLO
+to_latin	январь	yanvar	IMLO
+to_cyrillic	yanvar	январь	IMLO
+to_latin	февраль	fevral	IMLO
+to_cyrillic	fevral	февраль	IMLO
+to_latin	апрель	aprel	IMLO
+to_cyrillic	aprel	апрель	IMLO
+to_latin	июнь	iyun	IMLO
+to_cyrillic	iyun	июнь	IMLO
+to_latin	июль	iyul	IMLO
+to_cyrillic	iyul	июль	IMLO
+to_latin	сентябрь	sentabr	RULES-1995 §1
+to_cyrillic	sentabr	сентябрь	RULES-1995 §1
+to_latin	октябрь	oktabr	IMLO
+to_cyrillic	oktabr	октябрь	IMLO
+to_latin	ноябрь	noyabr	RULES-1995 §1; IMLO
+to_cyrillic	noyabr	ноябрь	RULES-1995 §1; IMLO
+to_latin	декабрь	dekabr	IMLO
+to_cyrillic	dekabr	декабрь	IMLO
+to_latin	ўғил	oʻgʻil	LAW-1995
+to_cyrillic	oʻgʻil	ўғил	LAW-1995
+to_latin	тоғ	togʻ	RULES-1995 §28
+to_cyrillic	togʻ	тоғ	RULES-1995 §28
+to_latin	боғ	bogʻ	LAW-1995
+to_cyrillic	bogʻ	боғ	LAW-1995
+to_latin	дўст	doʻst	LAW-1995
+to_cyrillic	doʻst	дўст	LAW-1995
+to_latin	сўз	soʻz	LAW-1995
+to_cyrillic	soʻz	сўз	LAW-1995
+to_latin	кўнгил	koʻngil	RULES-1995 §26
+to_cyrillic	koʻngil	кўнгил	RULES-1995 §26
+to_latin	ёмғир	yomgʻir	LAW-1995
+to_cyrillic	yomgʻir	ёмғир	LAW-1995
+to_latin	ёғоч	yogʻoch	LAW-1995
+to_cyrillic	yogʻoch	ёғоч	LAW-1995
+to_latin	йўқ	yoʻq	LAW-1995
+to_cyrillic	yoʻq	йўқ	LAW-1995
+to_latin	йўл	yoʻl	RULES-1995 §25
+to_cyrillic	yoʻl	йўл	RULES-1995 §25
+to_latin	оғир	ogʻir	LAW-1995
+to_cyrillic	ogʻir	оғир	LAW-1995
+to_latin	гўшт	goʻsht	LAW-1995
+to_cyrillic	goʻsht	гўшт	LAW-1995
+to_latin	бўтакўз	boʻtakoʻz	RULES-1995 §5
+to_cyrillic	boʻtakoʻz	бўтакўз	RULES-1995 §5
+to_latin	дўппи	doʻppi	RULES-1995 §5
+to_cyrillic	doʻppi	дўппи	RULES-1995 §5
+to_latin	дунё	dunyo	RULES-1995 §25
+to_cyrillic	dunyo	дунё	RULES-1995 §25
+to_latin	тайёр	tayyor	RULES-1995 §25
+to_cyrillic	tayyor	тайёр	RULES-1995 §25
+to_latin	туя	tuya	RULES-1995 §25
+to_cyrillic	tuya	туя	RULES-1995 §25
+to_latin	иқтисодиёт	iqtisodiyot	LAW-1995
+to_cyrillic	iqtisodiyot	иқтисодиёт	LAW-1995
+to_latin	маданият	madaniyat	LAW-1995
+to_cyrillic	madaniyat	маданият	LAW-1995
+to_latin	ярим	yarim	LAW-1995
+to_cyrillic	yarim	ярим	LAW-1995
+to_latin	яхши	yaxshi	RULES-1995 §25
+to_cyrillic	yaxshi	яхши	RULES-1995 §25
+to_latin	юрак	yurak	LAW-1995
+to_cyrillic	yurak	юрак	LAW-1995
+to_latin	ёз	yoz	RULES-1995 §25
+to_cyrillic	yoz	ёз	RULES-1995 §25
+to_latin	йигит	yigit	RULES-1995 §25
+to_cyrillic	yigit	йигит	RULES-1995 §25
+to_latin	самолёт	samolyot	WP
+to_cyrillic	samolyot	самолёт	WP
+to_latin	Корея	Koreya	WP
+to_cyrillic	Koreya	Корея	WP
+to_latin	тонг	tong	RULES-1995 §26
+to_cyrillic	tong	тонг	RULES-1995 §26
+to_latin	минг	ming	RULES-1995 §26
+to_cyrillic	ming	минг	RULES-1995 §26
+to_latin	денгиз	dengiz	RULES-1995 §26
+to_cyrillic	dengiz	денгиз	RULES-1995 §26
+to_latin	сингил	singil	RULES-1995 §26
+to_cyrillic	singil	сингил	RULES-1995 §26
+to_latin	келинг	keling	RULES-1995 §26
+to_cyrillic	keling	келинг	RULES-1995 §26
+to_latin	тенг	teng	RULES-1995 §26
+to_cyrillic	teng	тенг	RULES-1995 §26
+to_latin	шиша	shisha	RULES-1995 §17
+to_cyrillic	shisha	шиша	RULES-1995 §17
+to_latin	шодлик	shodlik	RULES-1995 §17
+to_cyrillic	shodlik	шодлик	RULES-1995 §17
+to_latin	ишқ	ishq	RULES-1995 §17
+to_cyrillic	ishq	ишқ	RULES-1995 §17
+to_latin	пишиқ	pishiq	RULES-1995 §17
+to_cyrillic	pishiq	пишиқ	RULES-1995 §17
+to_latin	бош	bosh	RULES-1995 §17
+to_cyrillic	bosh	бош	RULES-1995 §17
+to_latin	тош	tosh	RULES-1995 §17
+to_cyrillic	tosh	тош	RULES-1995 §17
+to_latin	чевар	chevar	RULES-1995 §19
+to_cyrillic	chevar	чевар	RULES-1995 §19
+to_latin	чиройли	chiroyli	RULES-1995 §19
+to_cyrillic	chiroyli	чиройли	RULES-1995 §19
+to_latin	аччиқ	achchiq	RULES-1995 §19
+to_cyrillic	achchiq	аччиқ	RULES-1995 §19
+to_latin	учун	uchun	RULES-1995 §19
+to_cyrillic	uchun	учун	RULES-1995 §19
+to_latin	кучли	kuchli	RULES-1995 §19
+to_cyrillic	kuchli	кучли	RULES-1995 §19
+to_latin	ишчи	ishchi	LAW-1995
+to_cyrillic	ishchi	ишчи	LAW-1995
+to_latin	хўроз	xoʻroz	RULES-1995 §29
+to_cyrillic	xoʻroz	хўроз	RULES-1995 §29
+to_latin	бахт	baxt	RULES-1995 §29
+to_cyrillic	baxt	бахт	RULES-1995 §29
+to_latin	ахборот	axborot	RULES-1995 §29
+to_cyrillic	axborot	ахборот	RULES-1995 §29
+to_latin	ҳосил	hosil	RULES-1995 §30
+to_cyrillic	hosil	ҳосил	RULES-1995 §30
+to_latin	ҳамма	hamma	RULES-1995 §30
+to_cyrillic	hamma	ҳамма	RULES-1995 §30
+to_latin	баҳор	bahor	RULES-1995 §30
+to_cyrillic	bahor	баҳор	RULES-1995 §30
+to_latin	ислоҳ	isloh	RULES-1995 §30
+to_cyrillic	isloh	ислоҳ	RULES-1995 §30
+to_latin	никоҳ	nikoh	RULES-1995 §30
+to_cyrillic	nikoh	никоҳ	RULES-1995 §30
+to_latin	Ўзбекистон	Oʻzbekiston	LAW-1995
+to_cyrillic	Oʻzbekiston	Ўзбекистон	LAW-1995
+to_latin	Тошкент	Toshkent	LAW-1995
+to_cyrillic	Toshkent	Тошкент	LAW-1995
+to_latin	Самарқанд	Samarqand	LAW-1995
+to_cyrillic	Samarqand	Самарқанд	LAW-1995
+to_latin	Бухоро	Buxoro	LAW-1995
+to_cyrillic	Buxoro	Бухоро	LAW-1995
+to_latin	Хоразм	Xorazm	LAW-1995
+to_cyrillic	Xorazm	Хоразм	LAW-1995
+to_latin	Наманган	Namangan	LAW-1995
+to_cyrillic	Namangan	Наманган	LAW-1995
+to_latin	Андижон	Andijon	LAW-1995
+to_cyrillic	Andijon	Андижон	LAW-1995
+to_latin	Фарғона	Fargʻona	LAW-1995
+to_cyrillic	Fargʻona	Фарғона	LAW-1995
+to_latin	Қорақалпоғистон	Qoraqalpogʻiston	LAW-1995
+to_cyrillic	Qoraqalpogʻiston	Қорақалпоғистон	LAW-1995
+to_latin	Навоий	Navoiy	LAW-1995
+to_cyrillic	Navoiy	Навоий	LAW-1995
+to_latin	Жиззах	Jizzax	LAW-1995
+to_cyrillic	Jizzax	Жиззах	LAW-1995
+to_latin	Қашқадарё	Qashqadaryo	LAW-1995
+to_cyrillic	Qashqadaryo	Қашқадарё	LAW-1995
+to_latin	Сурхондарё	Surxondaryo	LAW-1995
+to_cyrillic	Surxondaryo	Сурхондарё	LAW-1995
+to_latin	Термиз	Termiz	LAW-1995
+to_cyrillic	Termiz	Термиз	LAW-1995
+to_latin	Гулистон	Guliston	LAW-1995
+to_cyrillic	Guliston	Гулистон	LAW-1995
+to_latin	Нукус	Nukus	LAW-1995
+to_cyrillic	Nukus	Нукус	LAW-1995
+to_latin	Қарши	Qarshi	LAW-1995
+to_cyrillic	Qarshi	Қарши	LAW-1995
+to_latin	оила	oila	LAW-1995
+to_cyrillic	oila	оила	LAW-1995
+to_latin	шоир	shoir	LAW-1995
+to_cyrillic	shoir	шоир	LAW-1995
+to_latin	қоя	qoya	LAW-1995
+to_cyrillic	qoya	қоя	LAW-1995
+to_latin	мустақиллик	mustaqillik	LAW-1995
+to_cyrillic	mustaqillik	мустақиллик	LAW-1995
+to_latin	университет	universitet	LAW-1995
+to_cyrillic	universitet	университет	LAW-1995
+to_latin	муҳаббат	muhabbat	LAW-1995
+to_cyrillic	muhabbat	муҳаббат	LAW-1995
+to_latin	ҳафта	hafta	LAW-1995
+to_cyrillic	hafta	ҳафта	LAW-1995
+to_latin	ШАҲАР	SHAHAR	WP
+to_latin	Шаҳар	Shahar	WP
+to_latin	ЧОЙ	CHOY	WP
+to_latin	Чой	Choy	WP
+to_latin	ЎЗБЕКИСТОН	OʻZBEKISTON	WP
+to_latin	ЁШЛАР	YOSHLAR	WP
+to_latin	Ёшлар	Yoshlar	WP
+to_latin	ЕР	YER	WP
+to_latin	Ер	Yer	WP
+to_latin	ЮЛДУЗ	YULDUZ	WP
+to_latin	ЯНГИ	YANGI	WP
+to_latin	ЦИРК	SIRK	WP
+to_latin	ЛИЦЕЙ	LITSEY	WP
+to_latin	ЎҒИЛ	OʻGʻIL	WP
+to_latin	Ўғил	Oʻgʻil	WP
+to_latin	ЭЪЛОН	EʼLON	WP
+to_latin	ОБЪЕКТ	OBYEKT	WP
+to_latin	ИСҲОҚ	ISʼHOQ	WP
+to_latin	ОКТЯБРЬ	OKTABR	WP
+to_latin	Октябрь	Oktabr	WP
+to_latin	ТОШ	TOSH	WP
+to_latin	ТОШКЕНТ ШАҲРИ	TOSHKENT SHAHRI	WP
+to_latin	Ш	Sh	WP
+to_latin	ЧОРШАНБА	CHORSHANBA	WP
+to_latin	Чоршанба	Chorshanba	WP
+to_cyrillic	SHAHAR	ШАҲАР	WP
+to_cyrillic	Shahar	Шаҳар	WP
+to_cyrillic	OʻZBEKISTON	ЎЗБЕКИСТОН	WP
+to_cyrillic	YER	ЕР	WP
+to_cyrillic	ISʼHOQ	ИСҲОҚ	WP
+to_cyrillic	OKTABR	ОКТЯБРЬ	WP
+to_cyrillic	SIRK	ЦИРК	WP
+to_cyrillic	LITSEY	ЛИЦЕЙ	WP
+to_latin	Ўзбекистон — менинг Ватаним.	Oʻzbekiston — mening Vatanim.	WP
+to_cyrillic	Oʻzbekiston — mening Vatanim.	Ўзбекистон — менинг Ватаним.	WP
+to_latin	Тошкент шаҳри	Toshkent shahri	WP
+to_cyrillic	Toshkent shahri	Тошкент шаҳри	WP
+to_latin	Ассалому алайкум!	Assalomu alaykum!	WP
+to_cyrillic	Assalomu alaykum!	Ассалому алайкум!	WP
+to_latin	Шаҳар ва қишлоқ	Shahar va qishloq	WP
+to_cyrillic	Shahar va qishloq	Шаҳар ва қишлоқ	WP
+to_latin	«Ҳаёт» китоби, 2026 йил.	«Hayot» kitobi, 2026 yil.	WP
+to_cyrillic	«Hayot» kitobi, 2026 yil.	«Ҳаёт» китоби, 2026 йил.	WP
+to_latin	Бугун 10 сентябрь.	Bugun 10 sentabr.	WP
+to_cyrillic	Bugun 10 sentabr.	Бугун 10 сентябрь.	WP
+to_latin	Санъат ва маданият	Sanʼat va madaniyat	WP
+to_cyrillic	Sanʼat va madaniyat	Санъат ва маданият	WP
+to_latin	Қуёш чиқди.\nЕр исиди.	Quyosh chiqdi.\nYer isidi.	WP
+to_cyrillic	Quyosh chiqdi.\nYer isidi.	Қуёш чиқди.\nЕр исиди.	WP
+to_latin	Hello, дунё!	Hello, dunyo!	undefined
+to_latin	Özbekiston	Oʻzbekiston	GAZETA
+to_latin	ŞAHAR	SHAHAR	GAZETA
+to_cyrillic	O'zbekiston	Ўзбекистон	undefined
+to_cyrillic	O‘zbekiston	Ўзбекистон	undefined
+to_cyrillic	O`zbekiston	Ўзбекистон	undefined
+to_cyrillic	sanʻat	санъат	undefined
+to_cyrillic	Is'hoq	Исҳоқ	RULES-1995 §17
+to_cyrillic	SHAHAR	ШАҲАР	undefined
+to_cyrillic	Özbekiston	Ўзбекистон	GAZETA
+to_cyrillic	Şahar	Шаҳар	GAZETA
+to_cyrillic	çoy	чой	GAZETA
+to_cyrillic	toğ	тоғ	GAZETA
+to_cyrillic	vitse-prezidenti	вице-президенти	IZOH
+to_cyrillic	litseyda	лицейда	IZOH
+to_cyrillic	konsertga	концертга	IZOH
+to_cyrillic	sirka	сирка	undefined
+to_cyrillic	iyunda	июньда	IMLO UNVERIFIED
+to_cyrillic	atelyeda	ательеда	IMLO
+to_cyrillic	Nol	Ноль	IMLO
+to_cyrillic	SEX	ЦЕХ	IZOH
+to_cyrillic	nola	нола	undefined
+to_latin	Сентябрда	Sentabrda	RULES-1995 §1
+to_new	Oʻzbekiston	Özbekiston	GAZETA; TIMESCA; KURSIV
+to_new	OʻZBEKISTON	ÖZBEKISTON	GAZETA; TIMESCA; KURSIV
+to_new	shahar	şahar	GAZETA; TIMESCA; KURSIV
+to_new	Shahar	Şahar	GAZETA; TIMESCA; KURSIV
+to_new	SHAHAR	ŞAHAR	GAZETA; TIMESCA; KURSIV
+to_new	choy	çoy	GAZETA; TIMESCA; KURSIV
+to_new	Choy	Çoy	GAZETA; TIMESCA; KURSIV
+to_new	CHOY	ÇOY	GAZETA; TIMESCA; KURSIV
+to_new	gʻalaba	ğalaba	GAZETA; TIMESCA; KURSIV
+to_new	Gʻalaba	Ğalaba	GAZETA; TIMESCA; KURSIV
+to_new	GʻALABA	ĞALABA	GAZETA; TIMESCA; KURSIV
+to_new	togʻ	toğ	GAZETA; TIMESCA; KURSIV
+to_new	oʻgʻil	öğil	GAZETA; TIMESCA; KURSIV
+to_new	Qoraqalpogʻiston	Qoraqalpoğiston	GAZETA; TIMESCA; KURSIV
+to_new	mashhur	maşhur	GAZETA; TIMESCA; KURSIV
+to_new	ishchi	işçi	GAZETA; TIMESCA; KURSIV
+to_new	achchiq	aççiq	GAZETA; TIMESCA; KURSIV
+to_new	koʻngil	köngil	GAZETA; TIMESCA; KURSIV
+to_new	sanʼat	sanʼat	GAZETA; TIMESCA; KURSIV
+to_new	maʼno	maʼno	GAZETA; TIMESCA; KURSIV
+to_new	Toshkent shahri	Toşkent şahri	GAZETA; TIMESCA; KURSIV
+to_new	oshxona	oşxona	GAZETA; TIMESCA; KURSIV
+to_new	choʻl	çöl	GAZETA; TIMESCA; KURSIV
+to_new	goʻsht	göşt	GAZETA; TIMESCA; KURSIV
+to_new	Shoshilinch	Şoşilinç	GAZETA; TIMESCA; KURSIV
+to_new	shisha	şişa	GAZETA; TIMESCA; KURSIV
+to_new	SHOIR	ŞOIR	GAZETA; TIMESCA; KURSIV
+to_new	Chorshanba	Çorşanba	GAZETA; TIMESCA; KURSIV
+to_new	litsey	litsey	GAZETA; TIMESCA; KURSIV
+to_new	yoʻq	yöq	GAZETA; TIMESCA; KURSIV
+to_new	yosh	yoş	GAZETA; TIMESCA; KURSIV
+to_new	oʻqituvchi	öqituvçi	GAZETA; TIMESCA; KURSIV
+to_new	bogʻ	boğ	GAZETA; TIMESCA; KURSIV
+to_new	xoʻroz	xöroz	GAZETA; TIMESCA; KURSIV
+to_new	tong	tong	GAZETA
+to_new	yangi	yangi	GAZETA
+to_new	dengiz	dengiz	GAZETA
+to_new	Ming	Ming	GAZETA
+to_new	Isʼhoq	Isʼhoq	RULES-1995 §17 UNVERIFIED
+to_new	asʼhob	asʼhob	RULES-1995 §17 UNVERIFIED
+to_new	ISʼHOQ	ISʼHOQ	RULES-1995 §17 UNVERIFIED
+to_new	чой	çoy	GAZETA
+to_new	шаҳар	şahar	GAZETA
+to_new	ўқитувчи	öqituvçi	GAZETA
+to_new	қишлоқ	qişloq	GAZETA
+to_new	ғалаба	ğalaba	GAZETA
+to_new	кеча	keça	GAZETA
+to_new	эшик	eşik	GAZETA
+to_new	қуёш	quyoş	GAZETA
+to_new	машҳур	maşhur	GAZETA
+to_new	ошхона	oşxona	GAZETA
+to_new	мўъжиза	möjiza	GAZETA
+to_new	ўғил	öğil	GAZETA
+to_new	тоғ	toğ	GAZETA
+to_new	боғ	boğ	GAZETA
+to_new	дўст	döst	GAZETA
+to_new	сўз	söz	GAZETA
+to_new	кўнгил	köngil	GAZETA
+to_new	ёмғир	yomğir	GAZETA
+to_new	ёғоч	yoğoç	GAZETA
+to_new	йўқ	yöq	GAZETA
+to_new	йўл	yöl	GAZETA
+to_new	оғир	oğir	GAZETA
+to_new	гўшт	göşt	GAZETA
+to_new	бўтакўз	bötaköz	GAZETA
+to_new	дўппи	döppi	GAZETA
+to_new	яхши	yaxşi	GAZETA
+to_new	шиша	şişa	GAZETA
+to_new	шодлик	şodlik	GAZETA
+to_new	ишқ	işq	GAZETA
+to_new	пишиқ	pişiq	GAZETA
+to_new	бош	boş	GAZETA
+to_new	тош	toş	GAZETA
+to_new	чевар	çevar	GAZETA
+to_new	чиройли	çiroyli	GAZETA
+to_new	аччиқ	aççiq	GAZETA
+to_new	учун	uçun	GAZETA
+to_new	кучли	kuçli	GAZETA
+to_new	ишчи	işçi	GAZETA
+to_new	хўроз	xöroz	GAZETA
+to_new	Ўзбекистон	Özbekiston	GAZETA
+to_new	Тошкент	Toşkent	GAZETA
+to_new	Фарғона	Farğona	GAZETA
+to_new	Қорақалпоғистон	Qoraqalpoğiston	GAZETA
+to_new	Қашқадарё	Qaşqadaryo	GAZETA
+to_new	Қарши	Qarşi	GAZETA
+to_new	шоир	şoir	GAZETA
+to_new	O'zbekiston	Özbekiston	undefined
+to_new	g`alaba	ğalaba	undefined
+to_new	Ўзбекистон	Özbekiston	undefined
+to_new	Шаҳар	Şahar	undefined
+to_new	Исҳоқ	Isʼhoq	RULES-1995 §17 UNVERIFIED
+from_new	ŞAHAR	SHAHAR	GAZETA; TIMESCA; KURSIV
+from_new	Şahar	Shahar	GAZETA; TIMESCA; KURSIV
+from_new	Ş	Sh	GAZETA; TIMESCA; KURSIV
+from_new	ÇOY	CHOY	GAZETA; TIMESCA; KURSIV
+from_new	Özbekiston	Oʻzbekiston	GAZETA; TIMESCA; KURSIV
+from_new	ÖZBEKISTON	OʻZBEKISTON	GAZETA; TIMESCA; KURSIV
+from_new	Ğalaba	Gʻalaba	GAZETA; TIMESCA; KURSIV
+from_new	toğ	togʻ	GAZETA; TIMESCA; KURSIV
+from_new	öğil	oʻgʻil	GAZETA; TIMESCA; KURSIV
+from_new	maşhur	mashhur	GAZETA; TIMESCA; KURSIV
+from_new	TOŞ	TOSH	GAZETA; TIMESCA; KURSIV
+from_new	Toş	Tosh	GAZETA; TIMESCA; KURSIV
+from_new	işçi	ishchi	GAZETA; TIMESCA; KURSIV
+from_new	aççiq	achchiq	GAZETA; TIMESCA; KURSIV
+from_new	Toşkent şahri	Toshkent shahri	GAZETA; TIMESCA; KURSIV
+from_new	köngil	koʻngil	GAZETA; TIMESCA; KURSIV
+from_new	yöq	yoʻq	GAZETA; TIMESCA; KURSIV
+from_new	Çorşanba	Chorshanba	GAZETA; TIMESCA; KURSIV
+from_new	ÇORŞANBA	CHORSHANBA	GAZETA; TIMESCA; KURSIV
+from_new	Özbekiston	Oʻzbekiston	GAZETA; TIMESCA; KURSIV
+from_new	Ўзбекистон	Ўзбекистон	GAZETA; TIMESCA; KURSIV
+from_new	sanʼat	sanʼat	GAZETA; TIMESCA; KURSIV
+from_new	Isʼhoq	Isʼhoq	RULES-1995 §17 UNVERIFIED
+from_new	șahar	shahar	undefined UNVERIFIED

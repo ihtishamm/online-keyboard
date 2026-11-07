@@ -1,0 +1,230 @@
+---
+import { decodeDictionary } from "@okb/engine/compact";
+import kazakhList from "@okb/script-converters/data/kk.txt?raw";
+import { KazakhCyrillic, toLatin } from "@okb/script-converters/kazakh";
+import KazakhConverter from "../components/tools/KazakhConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Kazakh Cyrillic to Latin Converter (2021 and 2018 alphabets) | ${SITE.name}`;
+const description =
+  "Convert Kazakh between Cyrillic and the Latin alphabet (kirillitsa – latynşa) as you type, in the 2021 version or the 2018 one. Latin back to Cyrillic gets и, й, х, һ and Russian words right from a word list, puts back marks typed without them, and your text never leaves your device.";
+
+const steps = [
+  "Paste or type Kazakh in Cyrillic or Latin. The page sees which alphabet it is and turns round by itself.",
+  "Choose the Latin alphabet: 2021 (the default) or 2018. Latin text in the other version is recognised and read as that one.",
+  "The other alphabet appears below as you type. For Latin to Cyrillic, the page downloads a word list (about 320 KB) the first time. Words it doesn't have are underlined: check those. Then copy the text, download it, or keep editing in the Kazakh keyboard.",
+];
+
+// Every example is run through the converter when the page is built.
+const writer = new KazakhCyrillic(decodeDictionary(kazakhList).words);
+const cyr = (s: string, restore?: boolean) => writer.toCyrillic(s, { restore }).text;
+const examples = ["Қазақстан Республикасы", "Сәлеметсіз бе! Үйге келдім.", "ШАЙ мен чай"].map(
+  (c) => ({ from: c, to: toLatin(c).text, old: toLatin(c, "2018").text }),
+);
+const back = ["İä, äiel men bala", "Qazırgı uaqytta", "Sálemetsiz be!"].map((l) => ({
+  from: l,
+  to: cyr(l),
+}));
+
+const faqs = [
+  {
+    q: "Which Latin alphabet is official?",
+    a: "None yet. Kazakhstan decided in 2017 to move to Latin by 2025, then moved the date to 2031, and its Ministry of Science said in June 2026 that the alphabet is still being refined. Two versions are in use: the 31-letter version of 2021 (Ä, Ğ, Ñ, Ö, Ū, Ü, Ş), whose decree was drafted but never signed, and the version of Decree 637 of February 2018 (Á, Ǵ, Ń, Ó, Ú, Ý, Sh, Ch). The page writes 2021 unless you choose 2018, and reads both.",
+  },
+  {
+    q: "How are ё, ц, ч, щ, ю and я written?",
+    a: `The 2021 draft has no letters for them, as Kazakh uses them only in Russian words. The page writes them as Wikipedia's chart of the 2021 alphabet does: ё io, ц ts, ч tş, щ ştş, ю iu, я ia (${toLatin("Юрта").text}, ${toLatin("Чай").text}), so every letter can be told apart again. Other converters write ч as ş or ch, so check what your reader expects. In the 2018 version they are ıo, s, ch, shch, ıý and ıa.`,
+  },
+  {
+    q: "Latin has one letter for и and й, and drops ъ and ь. How does it go back to Cyrillic?",
+    a: `With a list of 100,000 Kazakh words from Kazakh Wikipedia, written in Cyrillic. Each word is looked up by its Latin spelling, so äiel becomes ${cyr("äiel")}, İä becomes ${cyr("İä")} and Russian words keep their ь and ц. Words the list doesn't have are spelled by rule (й after a vowel, и after a consonant) and underlined.`,
+  },
+  {
+    q: "My Latin text has no ä, ğ, ñ, ö, ū, ü, ş or ı. Can it still convert?",
+    a: `Yes. When a text has none of the marked letters, the page assumes it was typed on an English keyboard and puts the marks back from the word list: Qazirgi uaqytta becomes ${cyr("Qazirgi uaqytta", true)}. Words alike without marks (sai: сай or шай) get the more frequent one, so read the result through. The "Add missing" box overrides the guess either way.`,
+  },
+  {
+    q: "Why is İ dotted and I not?",
+    a: `In the 2021 version, и and й are İ i and і is I ı, as in Turkish: ${toLatin("Иә, ІЛІМ").text}. In 2018, і is I i and и, й are I ı. The page writes the right capitals for each.`,
+  },
+  {
+    q: "What about Latin words, links and other Cyrillic letters?",
+    a: "Foreign words and links stay as they are, shown in grey: Facebook, www.kazinform.kz, and Roman numerals (XX ğasyr). Letters of other Cyrillic alphabets (Uzbek ў, Ukrainian ї) have no Kazakh Latin spelling, so a word with one is left as it is and counted. Latin i typed for і inside a Cyrillic word, which is common, is read as і.",
+  },
+  {
+    q: "Is my text uploaded?",
+    a: "No. The conversion runs in your browser, and your text never leaves your device. Once the word list has loaded, the page works offline.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Kazakh Cyrillic to Latin Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: ["kk-Cyrl", "kk-Latn"],
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Convert Kazakh Cyrillic to Latin",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} credits={{}}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">
+      Kazakh Cyrillic to Latin Converter
+    </h1>
+    <span class="text-xl text-accent" lang="kk">
+      Кирилл ↔ Latyn
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Turn Kazakh Cyrillic into the Latin alphabet, or Latin back into Cyrillic, in the 2021 version
+    or the 2018 one. Kazakhstan hasn't approved a Latin alphabet yet, so the page writes the latest
+    version, 2021, unless you choose 2018, and says where versions differ. Everything happens on
+    your device.
+  </p>
+
+  <KazakhConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to convert Kazakh Cyrillic to Latin
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <table class="w-full table-fixed text-sm">
+        <thead>
+          <tr class="text-left text-muted">
+            <th scope="col" class="pb-1 font-medium">
+              Cyrillic
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              2021
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              2018
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {examples.map((e) => (
+            <tr class="border-t border-border">
+              <td class="py-1.5 pe-3 text-base break-words" lang="kk-Cyrl">
+                {e.from}
+              </td>
+              <td class="py-1.5 pe-3 text-base break-words" lang="kk-Latn">
+                {e.to}
+              </td>
+              <td class="py-1.5 text-base break-words" lang="kk-Latn">
+                {e.old}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <table class="mt-4 w-full table-fixed text-sm">
+        <thead>
+          <tr class="text-left text-muted">
+            <th scope="col" class="pb-1 font-medium">
+              Latin
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              Cyrillic
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {back.map((e) => (
+            <tr class="border-t border-border">
+              <td class="py-1.5 pe-3 text-base break-words" lang="kk-Latn">
+                {e.from}
+              </td>
+              <td class="py-1.5 text-base break-words" lang="kk-Cyrl">
+                {e.to}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <p class="text-muted">
+      Cyrillic to Latin is a table. Its 31 letters of 2021 are those of the draft decree of April
+      2021, and every letter of both versions is as Wikipedia's chart of the Kazakh alphabets has
+      it. Two other converters' tables agree with it except on ё, ц, ч, щ and я, the letters no
+      decree gives.
+    </p>
+    <p class="mt-2 text-muted">
+      Latin to Cyrillic was checked on real text, every word sent to Latin and back: 1,000 everyday
+      sentences from Tatoeba, which aren't from Wikipedia, and 2,000 sentences from Kazakh
+      Wikipedia. Half of each was used to tune the rules; on the other half, 99.8% (Tatoeba) and
+      99.1% (Wikipedia) of the words come back exactly in the 2021 version, and 99.7% and 98.9% in
+      2018. Most misses are Russian words and names the list doesn't have. Typed without marks,
+      97.1% and 95.9% of the words get them back (2021). No Kazakh speaker has reviewed the output
+      yet.
+    </p>
+    <p class="mt-2 text-xs text-muted">
+      Sources: the word list and test sentences from
+      <a class="underline" href="https://kk.wikipedia.org/">
+        Kazakh Wikipedia
+      </a>{" "}
+      (CC BY-SA 4.0); test sentences from
+      <a class="underline" href="https://tatoeba.org/">
+        Tatoeba
+      </a>{" "}
+      (CC BY 2.0 FR); the 2021 letters from the
+      <a class="underline" href="https://legalacts.egov.kz/npa/view?id=8243312">
+        draft decree
+      </a>
+      ; letter tables compared with kazakh-script-converter and qazlatyn-db (both MIT).
+    </p>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>
