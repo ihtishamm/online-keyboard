@@ -6,6 +6,8 @@ leaves out what the other writes, so a word list has to help:
 - `@okb/script-converters/punjabi`: Shahmukhi ↔ Gurmukhi.
 - `@okb/script-converters/hindustani`: Urdu ↔ Hindi (Devanagari).
 - `@okb/script-converters/bridge`: the engine they share.
+- `@okb/script-converters/serbian`: Serbian Cyrillic ↔ Latin, which needs a word list only for
+  digraphs and missing marks (see [Serbian](#serbian-cyrillic--latin)).
 
 ## How it works
 
@@ -114,9 +116,88 @@ alone, the test pairs score 72.3 % (Hindi → Urdu) and 32.4 % (Urdu → Hindi).
 - **The titles** are weaker still than for Punjabi: many are translations, and foreign names are
   spelled differently in each Wikipedia (آئسٹالا, आइशतला).
 
+## Serbian Cyrillic ↔ Latin
+
+Serbian writes both alphabets letter for letter, so Cyrillic → Latin is a table (`toLatin`). Љ,
+Њ and Џ become LJ, NJ, DŽ in a word in capitals and Lj, Nj, Dž otherwise, judged by the nearest
+letters as ICU does (А-Љ is A-LJ). A word with letters Serbian lacks (Russian я, щ, ь) is left
+whole and counted. Montenegrin с́ and з́ become ś and ź.
+
+Latin → Cyrillic (`SerbianCyrillic`) is the same table read backwards, plus three decisions:
+
+1. **Digraphs.** lj, nj and dž are one letter unless the Cyrillic word list (100,000 words from
+   Serbian Wikipedia, `data/sr.txt`) spells the word with two (конјугација), or a stem rule says so
+   for words the list lacks: nad-, pod-, pred-, feld- before ž (надживети), a few od-ž stems
+   (одживети, but оџак), and in-, kon-, an-, ken-, tan-, van- before j in borrowed words
+   (инјекција, конјунктура, Танјуг).
+2. **Missing marks.** A text with none of č ć š ž đ was typed on an English keyboard, so each word
+   is looked up by its letters without marks (`bare`: č ć → c, đ → dj, dž → dz). The most frequent
+   list word wins; each mark it adds costs one doubling of frequency, which hardly matters
+   (97.9–98.0 % on dev sentences for weights 0 to 3; 1 is used). A word the list lacks is spelled
+   by rule and marked: dj is ђ and dz is џ except after od-, pod-, nad- and the like (одједном,
+   надзор), and surnames typed -ovic, -evic, -ic get ћ.
+3. **Words that stay Latin**, as Serbian Cyrillic text keeps them: links, addresses, handles and
+   file names; Roman numerals (XIV; a lone I only mid-sentence, and none in a text all in
+   capitals, where MI and VI are words); unit symbols after a number (15 km, 20 °C), as Serbian
+   Wikipedia writes them; words with letters Serbian lacks (q w x y ä…) or mixed capitals
+   (iPhone, but BiH is Serbian); and, if the list doesn't have the word, words Serbian
+   Wikipedia's Cyrillic text keeps in Latin (`data/sr-latin.txt`, 1,065 words), Ćirilizator's
+   common foreign words and beginnings (Facebook, username, mailom), and English-looking letter
+   pairs (gh, ph, th but not across a prefix as in prethodan, a doubled consonant except in
+   capitals as in SSSR, oo or ee near the end, ch when marks are typed). A word with a mark, lj
+   or nj is always Serbian.
+
+Ligatures (ǈ, ǌ, ĳ, ﬁ) and Ð are read as their letters, and Latin letters inside a Cyrillic word
+(Бeoград with a Latin e) are changed.
+
+### Data (built 2026-11-07)
+
+| File                                | What                                                              | Source and licence                                                                           |
+| ----------------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `data/sr.txt`                       | 100,000 Cyrillic words, front-coded (about 270 KB gzipped)        | Serbian Wikipedia, by `@okb/dictionaries` (CC BY-SA 4.0)                                     |
+| `data/sr-latin.txt`                 | 1,065 words srwiki's Cyrillic sentences keep in Latin             | Nine 4 MB slices of the srwiki dump (at 5–65 %), by `scripts/import-latin.ts` (CC BY-SA 4.0) |
+| `test/data/sr-pairs-{dev,test}.tsv` | 38,767 Latin–Cyrillic word pairs, split by a hash                 | English Wiktionary via kaikki.org (CC BY-SA 4.0), by `scripts/import-serbian-pairs.ts`       |
+| `test/data/sr-sentences.txt`        | 2,000 sentences, no two opening alike                             | Three other srwiki slices (15, 30, 88 %), by `scripts/import-sentences.ts --distinct`        |
+| `test/data/sr-icu.tsv`              | ICU 74's Serbian-Latin/BGN on the sentences and 20,000 list words | ICU (Unicode License), by `scripts/icu-serbian.py`                                           |
+| in `src/serbian.ts`                 | Common foreign words and word beginnings                          | [Ćirilizator](https://github.com/turanjanin/cirilizator) (Jovan Turanjanin, MIT)             |
+
+The Latin list and the test sentences come from different slices, so the round trip doesn't
+see its own foreign words. Turanjanin's
+[Serbian Transliterator](https://github.com/turanjanin/serbian-transliterator) (MIT), which takes
+its data from Ćirilizator, was read, not run: its test sentences and digraph exceptions are
+restated in `test/serbian.test.ts` as data.
+
+### Measured (2026-11-07)
+
+| Set                                         | Result                                 |
+| ------------------------------------------- | -------------------------------------- |
+| ICU's Serbian-Latin, 22,000 rows            | 100 % the same Latin                   |
+| Wiktionary pairs, test (19,355): → Latin    | 99.9 %                                 |
+| Wiktionary pairs, test: → Cyrillic          | 99.8 % (99.6 % of 1,874 with nj lj dž) |
+| Wiktionary pairs, dev (19,412): → Cyrillic  | 99.9 % (99.8 % of 1,783 with nj lj dž) |
+| Ćirilizator's digraph exceptions (44 stems) | all split but injaric and ssrnj        |
+| srwiki sentences: Cyrillic → Latin → back   | 97.8 % of 2,000 unchanged              |
+| srwiki sentences typed without marks        | 97.8 % of 27,037 words right           |
+| Wiktionary pairs typed without marks        | 82.7 % (test), mostly names            |
+
+- The 22 Wiktionary pairs that don't match → Latin are Wiktionary's own slips (Abadzic for
+  Абаџић). → Cyrillic misses are foreign words Wiktionary writes in Cyrillic and we keep (Allah,
+  Matteo), odd entries (кетцхуп), rare compounds (crnook црноок), Поџабље (we split pod-ž), and
+  spellings srwiki and Wiktionary differ on (Нетанјаху, Нетањаху).
+- Round-trip misses: Latin abbreviations srwiki keeps beside Serbian ones in Cyrillic (ICMP, RSA
+  and ССО), km and км both in use, Latin taxa and phrases srwiki writes in Cyrillic (ex situ),
+  and Latin letters typed into Cyrillic words, which we correct.
+- Missing marks: words alike without them (reci: реци or речи; kos: кос or кош), Hungarian and
+  Croatian names the list lacks.
+- The sentences were also used while building the rules, so those two lines aren't independent.
+  We differ from Ćirilizator on purpose in one test sentence: muzzičkog changes, as č makes it
+  Serbian.
+
 ## Known issues
 
 - Words written alike in Shahmukhi always come out as the more frequent; the words around them
   aren't used yet.
 - Western Punjabi Wikipedia writes ਣ as ن more than as ݨ, so the converter does too.
 - No Punjabi, Hindi or Urdu speaker has reviewed the output.
+- Serbian: Latin abbreviations are converted unless they look foreign (ICMP becomes ИЦМП);
+  homographs without marks get the more frequent word; no Serbian speaker has reviewed the output.

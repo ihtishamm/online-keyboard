@@ -6,6 +6,9 @@
  *   bzip2recover slice.bz2 && cat rec*slice.bz2 | bzcat > slice.xml
  *   node scripts/import-sentences.ts --lang pa --script Gurmukhi --xml slice.xml
  *
+ * Serbian: three 4 MB slices at 15, 30 and 88 % of srwiki's dump, joined, with --distinct and
+ * --sentences 2000 (the middle of the dump is bot-made village stubs).
+ *
  * Writes test/data/<lang>-sentences.txt. The word lists come from the same Wikipedias, read
  * from the start of the dump; small editions are read whole, so these sentences may share
  * words with the lists, as any text would.
@@ -22,6 +25,8 @@ const { values: args } = parseArgs({
     script: { type: "string" },
     xml: { type: "string" },
     sentences: { type: "string", default: "1000" },
+    // Skip a sentence whose first three words an earlier one had: bot-made stubs repeat them.
+    distinct: { type: "boolean", default: false },
   },
 });
 const rules = TEXT_RULES[args.lang ?? ""];
@@ -41,12 +46,22 @@ function worthy(s: string): boolean {
 
 const max = Number(args.sentences);
 const picked: string[] = [];
+const openings = new Set<string>();
+function fresh(s: string): boolean {
+  if (!args.distinct) return true;
+  const opening = s.replace(/\d+/g, "0").split(/\s+/).slice(0, 3).join(" ");
+  if (openings.has(opening)) return false;
+  openings.add(opening);
+  return true;
+}
 const reader = new DumpReader();
 const lines = createInterface({ input: createReadStream(args.xml), crlfDelay: Infinity });
 for await (const line of lines) {
   const page = reader.line(line);
   if (!page || page.ns !== 0 || isRedirect(page.text)) continue;
-  picked.push(...splitSentences(stripWikitext(page.text), rules).filter(worthy).slice(0, 5));
+  picked.push(
+    ...splitSentences(stripWikitext(page.text), rules).filter(worthy).filter(fresh).slice(0, 5),
+  );
   if (picked.length >= max) break;
 }
 lines.close();

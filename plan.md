@@ -896,7 +896,13 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - **Numbers** (README): on the 6,848 Wiktionary pairs held out while tuning, 82.2 % Hindi → Urdu and 58.2 % Urdu → Hindi (the rules alone: 72.3 % and 32.4 %). On Wikipedia text the list finds 88.8 % of Urdu words and 80.3 % of Hindi ones; round trips keep 99.4 % and 92.8 %. Hindi finds fewer because much of Hindi Wikipedia's vocabulary is Sanskrit that Urdu Wikipedia doesn't use (संविधान, प्रतियोगिता). The titles linked between hiwiki and urwiki match 36.6 % and 29.1 % (translations, and foreign names spelled differently).
     - **Falls short of the two-reference bar**, as for Shahmukhi: the titles are a weak second reference, and no clean, independent Hindi–Urdu word list was found.
     - **Not done:** homographs get the word more frequent on Wikipedia, which is wrong for everyday text: کیا becomes किया (not क्या), میں में (not मैं), ہوں हों (not हूँ), کل कुल (not कल). Using the words around them (a next-word table) is the fix. Names spelled differently in the two scripts (دہلی, दिल्ली) are spelled by rule. No native-speaker check.
-  - [ ] Serbian Cyrillic ↔ Latin.
+  - [x] Serbian Cyrillic ↔ Latin.
+    - **Done (2026-11-07):** `/serbian-cyrillic-to-latin`, both directions, live, turning round by itself. `packages/script-converters/src/serbian.ts` and a new island `AlphabetConverter.tsx` for any Cyrillic–Latin pair, which Kazakh and Uzbek can reuse. Linked from the Serbian keyboard, the home page and the sitemap. Not Beta: it meets the two-reference bar both ways.
+    - **Competitor check:** lexilogos, 2cyr and prylad did not resolve or had gone (404) from here. Lexilogos's own text, read through a fetcher, says nadživeti and injekcija need the user to type n+j or d+ž. turanjanin's Serbian Transliterator and Ćirilizator (MIT) use a hand list of exception stems and foreign words; they read ASCII dj as ђ everywhere except listed stems, and don't put back missing marks.
+    - **What we do better:** nj, lj and dž settled by a 100,000-word Cyrillic list from srwiki, with stem rules for the rest; text typed without č ć š ž đ gets its marks back from the list (detected, with a box to override), and words it lacks are underlined; foreign words, links, Roman numerals and units after a number stay Latin and are shown in grey; LJ/Lj by the letters around; Montenegrin ś ź; Russian words left whole and counted.
+    - **Numbers** (README): Cyrillic → Latin matches ICU's Serbian-Latin/BGN on all 22,000 rows. On 19,355 held-out Wiktionary pairs, 99.9 % → Latin and 99.8 % → Cyrillic (99.6 % of words with nj, lj, dž). 97.8 % of 2,000 srwiki sentences survive Cyrillic → Latin → Cyrillic; typed without marks, 97.8 % of their words come back right (82.7 % of Wiktionary's words, mostly names). Ćirilizator's 44 digraph stems all split but two (injaric, the acronym SSRNJ).
+    - **References:** ICU (an executable, through ctypes) and Wiktionary for → Latin; Wiktionary, srwiki's own Cyrillic and Ćirilizator's exceptions and test sentences for → Cyrillic. Ćirilizator's foreign-word list is used, credited, after our word list (we narrowed home- and like- and dropped covid-).
+    - **Not done:** Latin abbreviations that don't look foreign are converted (ICMP → ИЦМП); words alike without marks (reci) get the more frequent; no native-speaker check of the output or the page copy.
   - [ ] Kazakh and Uzbek Cyrillic ↔ Latin. Check which official alphabet version is current.
 - [ ] **10.3 Text tools.**
   - [ ] **Diacritics remover:** Arabic and Urdu harakat, Hebrew niqqud, Latin accents.
@@ -994,6 +1000,9 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | SLPG Punjabi Transliteration Corpus (Hugging Face) | — | No licence stated; data files removed | **Rejected** (10.2) |
 | English Wiktionary via kaikki.org (Hindi and Urdu entries) | Urdu–Hindi test pairs | CC BY-SA 4.0 | In use (10.2, tests only) |
 | Hindi Wikipedia `langlinks` dump | One-word titles linked to Urdu Wikipedia: the second Urdu–Hindi reference | CC BY-SA 4.0 | In use (10.2, tests only) |
+| English Wiktionary via kaikki.org (Serbo-Croatian entries) | Serbian Latin–Cyrillic test pairs | CC BY-SA 4.0 | In use (10.2, tests only) |
+| ICU `Serbian-Latin/BGN` (system ICU 74) | Independent check of Serbian Cyrillic → Latin | Unicode License | In use (10.2, tests only) |
+| Ćirilizator, Serbian Transliterator (Jovan Turanjanin) | Common foreign words; digraph exceptions and test sentences as test data | MIT | In use (10.2) |
 | Zawgyi-One 4.30 | Checking the output by eye | Not open licensed | Used for checking only; never copied or shipped |
 | Subtitle-based frequency lists | Chat words | Unclear (the underlying subtitles' rights) | **Avoid** unless the licence is clear |
 | Leipzig Corpora Collection | — | Sources conflict (CC BY vs CC BY-NC) | **Don't use** without written confirmation (the old plan listed it) |

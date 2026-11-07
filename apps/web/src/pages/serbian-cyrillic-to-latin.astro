@@ -1,0 +1,228 @@
+---
+import { decodeDictionary } from "@okb/engine/compact";
+import serbianList from "@okb/script-converters/data/sr.txt?raw";
+import latinList from "@okb/script-converters/data/sr-latin.txt?raw";
+import { SerbianCyrillic, toLatin } from "@okb/script-converters/serbian";
+import SerbianConverter from "../components/tools/SerbianConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Serbian Cyrillic to Latin Converter, and Latin to Cyrillic | ${SITE.name}`;
+const description =
+  "Convert Serbian between Cyrillic and Latin (ćirilica i latinica) as you type. It gets nj, lj and dž right, puts back č, ć, š, ž and đ typed without marks, leaves foreign words in Latin, and your text never leaves your device.";
+
+const steps = [
+  "Paste or type Serbian in Cyrillic or Latin. The page sees which alphabet it is and turns round by itself.",
+  "The other alphabet appears below as you type. For Latin to Cyrillic, the page downloads a word list (about 280 KB) the first time.",
+  "Words left in Latin are grey, and words the list didn't have when it put marks back are underlined: check those. Then copy the text, download it, or keep editing in the Serbian keyboard.",
+];
+
+// Every example is run through the converter when the page is built.
+const writer = new SerbianCyrillic(decodeDictionary(serbianList).words);
+writer.keepLatin(latinList.split("\n"));
+const cyr = (s: string, restore?: boolean) => writer.toCyrillic(s, { restore }).text;
+const examples = ["Добар дан! Како сте?", "ЉУБАВ и Љубав", "Његош, џеп, ђак"].map((c) => ({
+  from: c,
+  to: toLatin(c).text,
+}));
+const back = [
+  "Odjednom Tanjug reče da će nadživeti injekciju.",
+  "konjugacija",
+  "Luj XIV i Facebook",
+  "Medju nama, kuca je velika.",
+].map((l) => ({ from: l, to: cyr(l) }));
+
+const faqs = [
+  {
+    q: "How does it handle nj, lj and dž?",
+    a: `They are usually one Cyrillic letter (њ, љ, џ), but not always: where a prefix or a foreign word puts the two letters side by side they stay two, as in nadživeti (${cyr("nadživeti")}), injekcija (${cyr("injekcija")}) and konjugacija (${cyr("konjugacija")}). The page checks each word against a list of 100,000 Serbian words from Serbian Wikipedia, written in Cyrillic, and rules for the common prefixes cover words the list doesn't have.`,
+  },
+  {
+    q: "My Latin text has no č, ć, š, ž or đ. Can it still convert?",
+    a: `Yes. When a text has none of those letters, the page assumes it was typed on an English keyboard and puts the marks back from the word list: kuca becomes ${cyr("kuca", true)}, medju ${cyr("medju", true)}. A word the list doesn't have is spelled as typed and underlined. As soon as your text has one of those letters, the page reads every c, s and z as typed; the "Add missing" box overrides that either way.`,
+  },
+  {
+    q: "Why do some words stay in Latin?",
+    a: `Serbian Cyrillic text keeps foreign names, links and Roman numerals in Latin, so the page leaves them as they are and shows them in grey: Facebook, www.rts.rs, XX vek (${cyr("XX vek")}). A word counts as foreign when it has letters Serbian doesn't use (q, w, x, y, ä…), when Serbian Wikipedia's Cyrillic articles keep it in Latin, or when it looks English. Unit symbols after a number (15 km) stay in Latin too, as Serbian Wikipedia writes them.`,
+  },
+  {
+    q: "Is LJUBAV written correctly in capitals?",
+    a: `Yes. Љ becomes LJ in a word in capitals and Lj at the start of a normal word: ${toLatin("ЉУБАВ").text} and ${toLatin("Љубав").text}. The other way round, LJ, Lj and the single-character ligatures some fonts use (ǈ) all become Љ.`,
+  },
+  {
+    q: "Does it handle Montenegrin ś and ź?",
+    a: `Yes. Montenegrin ś and ź are written с́ and з́ in Cyrillic, and the page converts them both ways: ${toLatin("с\u{301}утра").text}.`,
+  },
+  {
+    q: "What about Russian or other Cyrillic text?",
+    a: "Letters Serbian doesn't have (я, щ, ы…) have no Serbian Latin spelling, so a word with one is left as it is, shown in grey, and counted.",
+  },
+  {
+    q: "Is my text uploaded?",
+    a: "No. The conversion runs in your browser, and your text never leaves your device. Once the word list has loaded, the page works offline.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Serbian Cyrillic to Latin Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: ["sr-Cyrl", "sr-Latn"],
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Convert Serbian Cyrillic to Latin",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} credits={{}}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">
+      Serbian Cyrillic to Latin Converter
+    </h1>
+    <span class="text-xl text-accent" lang="sr-Cyrl">
+      ћирилица ↔ latinica
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Turn Serbian Cyrillic into Latin (ćirilica u latinicu), or Latin into Cyrillic. It gets nj, lj
+    and dž right, puts back č, ć, š, ž and đ when they were left out, and leaves foreign words,
+    links and Roman numerals in Latin. Everything happens on your device.
+  </p>
+
+  <SerbianConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to convert Serbian Cyrillic to Latin
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <table class="w-full table-fixed text-sm">
+        <thead>
+          <tr class="text-left text-muted">
+            <th scope="col" class="pb-1 font-medium">
+              Typed
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              Converted
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {examples.map((e) => (
+            <tr class="border-t border-border">
+              <td class="py-1.5 pe-3 text-base" lang="sr-Cyrl">
+                {e.from}
+              </td>
+              <td class="py-1.5 text-base" lang="sr-Latn">
+                {e.to}
+              </td>
+            </tr>
+          ))}
+          {back.map((e) => (
+            <tr class="border-t border-border">
+              <td class="py-1.5 pe-3 text-base" lang="sr-Latn">
+                {e.from}
+              </td>
+              <td class="py-1.5 text-base" lang="sr-Cyrl">
+                {e.to}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <p class="text-muted">
+      Cyrillic to Latin is a table: it writes the same Latin as ICU's Serbian transform for all
+      22,000 sentences and words we compared. Latin to Cyrillic was checked against 19,355 word
+      pairs from English Wiktionary that we kept aside while building the rules: 99.8% come out in
+      Wiktionary's Cyrillic, and 99.6% of the words with nj, lj or dž. Of 2,000 sentences from
+      Serbian Wikipedia, 97.8% go to Latin and back unchanged. Most of the rest have Latin
+      abbreviations (ICMP, RSA), which Wikipedia keeps in Latin, beside Serbian ones (ССО), which it
+      writes in Cyrillic, or units written both ways (km and км).
+    </p>
+    <p class="mt-2 text-muted">
+      Typed without marks, 97.8% of the words in those sentences get their č, ć, š, ž and đ back.
+      The misses are mostly words that are written alike without marks (reci: реци or речи) and rare
+      names; of Wiktionary's words, many of them place names and surnames, 83% come back right. That
+      is why the page underlines the words the list doesn't have. The sentences were also used while
+      building the rules, so those two numbers are not independent. No Serbian speaker has reviewed
+      the output yet.
+    </p>
+    <p class="mt-2 text-xs text-muted">
+      Sources: the word list and test sentences from
+      <a class="underline" href="https://sr.wikipedia.org/">
+        Serbian Wikipedia
+      </a>
+      , and test pairs from{" "}
+      <a class="underline" href="https://en.wiktionary.org/">
+        English Wiktionary
+      </a>{" "}
+      by way of{" "}
+      <a class="underline" href="https://kaikki.org/">
+        kaikki.org
+      </a>
+      , all under
+      <a class="underline" href="https://creativecommons.org/licenses/by-sa/4.0/">
+        CC BY-SA 4.0
+      </a>
+      ; common foreign words from
+      <a class="underline" href="https://github.com/turanjanin/cirilizator">
+        Ćirilizator
+      </a>{" "}
+      (MIT); Cyrillic to Latin checked against
+      <a class="underline" href="https://icu.unicode.org/">
+        ICU
+      </a>
+      .
+    </p>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

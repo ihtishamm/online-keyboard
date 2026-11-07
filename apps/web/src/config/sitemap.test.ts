@@ -23,5 +23,6 @@ describe("sitemap sections", () => {
     expect(at("/zawgyi-to-unicode")).toBe("tools");
     expect(at("/shahmukhi-to-gurmukhi")).toBe("tools");
     expect(at("/urdu-to-hindi")).toBe("tools");
+    expect(at("/serbian-cyrillic-to-latin")).toBe("tools");
   });
 });

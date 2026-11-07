@@ -23,6 +23,11 @@ export const TOOL_PAGES: readonly ToolPage[] = [
     languages: ["punjabi", "shahmukhi"],
   },
   { path: "/urdu-to-hindi", name: "Urdu to Hindi", languages: ["urdu", "hindi"] },
+  {
+    path: "/serbian-cyrillic-to-latin",
+    name: "Serbian Cyrillic to Latin",
+    languages: ["serbian"],
+  },
 ];
 
 /** The tools a keyboard page links to. */
