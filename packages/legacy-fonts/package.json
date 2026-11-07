@@ -8,7 +8,8 @@
   "exports": {
     "./krutidev": "./src/krutidev.ts",
     "./chanakya": "./src/chanakya.ts",
-    "./walkman": "./src/walkman.ts"
+    "./walkman": "./src/walkman.ts",
+    "./bijoy": "./src/bijoy.ts"
   },
   "scripts": {
     "test": "vitest run",

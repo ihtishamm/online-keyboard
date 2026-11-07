@@ -6,6 +6,7 @@ entry point, so a page loads only its own table:
 - `@okb/legacy-fonts/krutidev`: Kruti Dev 010 (and DevLys 010, which uses the same codes).
 - `@okb/legacy-fonts/chanakya`: the font named Chanakya, plus `detectChanakyaFont`.
 - `@okb/legacy-fonts/walkman`: Walkman Chanakya 905.
+- `@okb/legacy-fonts/bijoy`: Bijoy, for SutonnyMJ and the other MJ fonts.
 
 `src/glyph.ts` is the shared engine for "glyph" fonts, which store Latin-1 codes in the order
 the glyphs are drawn: it maps codes with a table, then moves the short-i sign (ि) past the
@@ -112,3 +113,64 @@ the font backs us: HinLegacy, the one Walkman table, follows Kruti Dev there.
 **Not checked:** no real Chanakya document, and for Walkman only the words lipi quotes from real
 PDFs. Everything else is text from our own encoder. Which publishers used which encoding is not
 established by any source here, so the page doesn't say.
+
+### Bijoy (checked 2026-11-07)
+
+**Two spellings of the same text are in use, and the font settles which one to write.** Both
+open tables and the font disagree on a handful of codes. Three copies of SutonnyMJ, all
+(c) Mustafa Jabbar / Ananda Computers, draw the same glyphs, so this is not a font-version
+accident in one file.
+
+| Text           | SutonnyMJ draws | poriborton and bondhon write | That code in SutonnyMJ  |
+| -------------- | --------------- | ---------------------------- | ----------------------- |
+| স্ত ন্ত        | `¯Í` `šÍ`       | `¯—` `š—`                    | `—` is a ড়             |
+| রু, the hook ু | `iæ`            | `i“`                         | `“` is a curl           |
+| ম্ন            | `gœ`            | `æ`                          | `æ` is the hook ু       |
+| স্ন            | `¯œ`            | `ø`                          | `ø` is a ল-ফলা          |
+| ত্ম            | `Z¥`            | `Í`                          | `Í` is a ত-ফলা          |
+| ণ্ড            | `Ð`             | `Ê`                          | `Ê` is a curl           |
+| প্ল ল্ল শ্ল…   | `cø` `jø` `kø`  | `c−` `j−` `k−` or U+00AD     | `−` is a ণ্ড; no U+00AD |
+| স্প ম্প ষ্প    | `¯ú` `¤ú` `®ú`  | `¯c` `¤c` `®c`               | Draws, but set loose    |
+
+Decoding reads both. Encoding writes the left column, because the point of the output is to look
+right under the font. Where one code means different things in the two spellings, the letter
+before it decides: `æ` after a letter is ু (but `wbæ` is নিম্ন, as ু can't follow ি), on its own
+ম্ন; `ø` after a letter is ল-ফলা, on its own স্ন; `Í` after a half form is ত-ফলা, on its own ত্ম.
+`—` and `“` read as ্ত and ু after a letter, and as themselves anywhere else; `”` is half চ only
+before a letter. `−` is ্ল after `c e k j M` and ণ্ড elsewhere.
+
+| Source                                                                  | Used for                                                                                                                                                                                                    | Licence           |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| [poriborton](https://github.com/OpenBangla/poriborton) (OpenBangla)     | Conjunct table and the kar-shape rules; its 742 pairs are the reference in the tests (`test/reference/poriborton-pairs.ts`)                                                                                 | MIT               |
+| [bondhon](https://github.com/banglakit/bondhon) (BanglaKit)             | Second table. poriborton credits it, so the two are not fully independent; they agree on 226 of 231 shared entries                                                                                          | MIT               |
+| [Bijoy2Unicode](https://github.com/JehadurRE/Bijoy2Unicode) (Md. Jehad) | Read only, not copied or run: its notes first showed the two spellings in real documents. It credits Mad-FOX/bijoy2unicode (MPL), which we reject, as initial inspiration, so nothing of it is in this repo | MIT               |
+| `SUTOM.TTF` and two other copies of SutonnyMJ                           | Every code drawn and compared by eye, and every conjunct and kar the encoder writes; **used for checking only, never copied or shipped**                                                                    | Not open licensed |
+
+Both tables only encode, so the decoder is the encoder's table inverted, plus the half forms and
+subjoined forms the font draws. `¹` গ্ন and `º` গ্দ are in the font and in neither table; `ÿ` is
+ক্ষ in the font, where poriborton has ড়্গ, which has no glyph and is written `o&M`.
+
+**Kars.** ু has four shapes, ূ three, ৃ two, and ে and ৈ two each, picked from the letter before;
+the rules are poriborton's, with `æ` for its `“`. `chooseKars` marks the shape with a private code
+before the table runs. Where the font has no glyph for a conjunct, the hasanta shows (`&`) and the
+letters stand apart, so ি goes before the last one: পঙ্ক্তি is `cO&w³`. `splitUnjoined` adds a ZWNJ
+there, the Unicode for the same look, which is why those words come back with a ZWNJ. The engine's
+`keepJoiners` lets `র‍্য` (`i¨`) stay apart from the reph of `র্য` (`h©`).
+
+Unknown, shown as �: `@` (a decorative mark) and bytes 0x81, 0x8D, 0x8F, 0x90, 0x9D (no glyph).
+
+**Bangla Wikipedia's 100,000 most frequent words:**
+
+|                                                                    |  Words |
+| ------------------------------------------------------------------ | -----: |
+| Back unchanged                                                     | 99,742 |
+| Back with a ZWNJ where the font shows the hasanta                  |    241 |
+| Back in standard spelling (typing slips such as ে + া typed apart) |     13 |
+| A stray nukta the font can't show                                  |      4 |
+| Unchanged words that the classic spelling misreads                 |      2 |
+
+**What was not done.** Only SutonnyMJ was checked, not the other MJ fonts. Bijoy2Unicode was read
+but not run against our output, and no other clean Bijoy → Unicode decoder was found, so nothing
+reads our decoder's input independently: its checks are the font, the real-word samples and
+poriborton's pairs. Apart from those samples, the tests use text our own encoder produced, not
+documents.

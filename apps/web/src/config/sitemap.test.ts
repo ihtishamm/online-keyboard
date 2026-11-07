@@ -19,5 +19,6 @@ describe("sitemap sections", () => {
     expect(at("/keyboard-tester")).toBe("tools");
     expect(at("/kruti-dev-to-unicode")).toBe("tools");
     expect(at("/chanakya-to-unicode")).toBe("tools");
+    expect(at("/bijoy-to-unicode")).toBe("tools");
   });
 });

@@ -1,0 +1,191 @@
+---
+import { bijoyToUnicode, unicodeToBijoy } from "@okb/legacy-fonts/bijoy";
+import BijoyConverter from "../components/tools/BijoyConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Bijoy to Unicode Converter, and Unicode to Bijoy | ${SITE.name}`;
+const description =
+  "Convert Bangla typed in Bijoy (SutonnyMJ) to Unicode, and back, as you type. Reads both Bijoy spellings, keeps English words from Word documents, and never uploads your text.";
+
+const steps = [
+  "Copy the Bijoy text from Word, Google Docs or a PDF, and paste it into the box.",
+  "The Unicode Bangla appears below as soon as you paste. Copy it, or carry on in the Bangla keyboard.",
+  "To go the other way, choose Unicode → Bijoy, paste Unicode Bangla, and press the Copy button. In Word the text arrives already set in SutonnyMJ.",
+];
+
+// Every example is run through the converters when the page is built.
+const examples = ["বাংলা", "বিস্তারিত", "প্রধানমন্ত্রী", "কর্মকর্তা", "গুরুত্ব"].map((u) => ({
+  bijoy: unicodeToBijoy(u).text,
+  unicode: bijoyToUnicode(unicodeToBijoy(u).text).text,
+}));
+
+const faqs = [
+  {
+    q: "Which fonts does this work with?",
+    a: "Text typed for SutonnyMJ, the font we checked every code against. Other Bijoy fonts, whose names usually end in MJ, are made for the same codes, but we have not checked them one by one. Text in Boishakhi, Bongshi or other Bangla systems uses different codes and will not convert correctly.",
+  },
+  {
+    q: "Why do converters disagree about some Bijoy text?",
+    a: "The same word can be stored in two ways. বিস্তারিত appears as we¯ÍvwiZ and as we¯—vwiZ, and রু as iæ and as i“. This page reads both, so text in either spelling comes out right. Going back to Bijoy, it writes the codes SutonnyMJ really draws: in that font — is a ড় and “ a curl, so the other spelling looks broken once the font is applied.",
+  },
+  {
+    q: "My document mixes Bangla and English. Will the English be garbled?",
+    a: "Not if you copy from Word, LibreOffice or Google Docs and paste here. The converter reads which font each part of the text is in, converts only the parts set in a Bijoy font and keeps English in other fonts as it is. Plain text has no fonts, so with a .txt file or text from a PDF everything is treated as Bijoy.",
+  },
+  {
+    q: "Are ি, ে and the reph (র্) put in the right place?",
+    a: "Yes. Bijoy stores ি, ে and ৈ before their letter and the reph after its syllable, in the order you see them. The converter moves them past whole conjuncts, so স্থিতি, কর্মকর্তা and র্ক্য come out right, and ে and া join into ো.",
+  },
+  {
+    q: "Why does a conjunct come out with a visible hasanta?",
+    a: "Some conjuncts have no glyph in the font, so Bijoy shows the two letters apart with a hasanta between them, as in the foreign name টাফ্‌টস. Going to Bijoy, the page writes them that way. Coming back, it keeps the hasanta visible with an invisible character called a zero-width non-joiner, so the Unicode looks the way the Bijoy text did.",
+  },
+  {
+    q: "Is য় the same as the য় on my keyboard?",
+    a: "It looks the same. Unicode has two ways to store য়, ড় and ঢ়: one code, or the letter plus a nukta sign. The converter gives the standard normalised form, the letter plus the nukta. Some search and replace tools treat the two as different.",
+  },
+  {
+    q: "Some characters show as �. Why?",
+    a: "The code @ draws a decorative mark with no Bangla letter behind it, and five byte values draw nothing at all. The converter marks each with � and tells you how many there are, so you can fix them by hand.",
+  },
+  {
+    q: "Is my text uploaded?",
+    a: "No. The conversion runs in your browser, and your text never leaves your device. The page works offline once it has loaded.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Bijoy to Unicode Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: "bn",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Convert Bijoy text to Unicode Bangla",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} fonts={["bengali"]} font="bengali" credits={{}}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">Bijoy to Unicode Converter</h1>
+    <span class="font-bengali text-xl text-accent" lang="bn">
+      বিজয় থেকে ইউনিকোড
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Turn Bangla typed in Bijoy into Unicode that works on phones, websites and in every font, or
+    turn Unicode back into Bijoy for SutonnyMJ. Everything happens on your device.
+  </p>
+
+  <BijoyConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to convert Bijoy to Unicode
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <table class="w-full table-fixed text-sm">
+        <thead>
+          <tr class="text-left text-muted">
+            <th scope="col" class="pb-1 font-medium">
+              Bijoy
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              Unicode
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {examples.map((e) => (
+            <tr class="border-t border-border">
+              <td class="py-1.5 pe-3 font-mono break-all">{e.bijoy}</td>
+              <td class="font-bengali py-1.5 text-lg" lang="bn">
+                {e.unicode}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <p class="text-muted">
+      We drew the codes from the SutonnyMJ font file and compared them with their Unicode letters,
+      by eye, along with every conjunct and vowel shape the converter writes. Of Bangla Wikipedia's
+      100,000 most common words, 99.74% go to Bijoy and back unchanged, and nearly all the rest only
+      gain an invisible joiner where the font shows a hasanta. Written in the older spelling
+      instead, all but 2 of those words still read correctly. The poriborton project's 742 test
+      pairs all match, apart from the spelling differences explained above and one conjunct, ড়্গ,
+      where the code it uses draws ক্ষ in SutonnyMJ.
+    </p>
+    <p class="mt-2 text-muted">
+      Some limits: we checked one font family, SutonnyMJ. A few codes are read differently in the
+      two spellings, so the page goes by the letter before them, and text in the older spelling can
+      occasionally be misread. Apart from short samples, the tests use text our own converter
+      produced, not scanned documents.
+    </p>
+    <p class="mt-2 text-xs text-muted">
+      Sources:
+      <a class="underline" href="https://github.com/OpenBangla/poriborton">
+        poriborton
+      </a>
+      by OpenBangla,
+      <a class="underline" href="https://github.com/banglakit/bondhon">
+        bondhon
+      </a>
+      by BanglaKit and
+      <a class="underline" href="https://github.com/JehadurRE/Bijoy2Unicode">
+        Bijoy2Unicode
+      </a>
+      by Md. Jehad, all MIT licence.
+    </p>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

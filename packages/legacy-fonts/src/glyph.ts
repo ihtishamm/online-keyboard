@@ -61,6 +61,11 @@ export interface GlyphFont {
    * breaks, text already in Unicode) passes through unchanged.
    */
   isCode: (ch: string) => boolean;
+  /**
+   * Keep ZWJ and ZWNJ when encoding, for scripts where they change the spelling (Bangla). The
+   * table then has to say what each joiner becomes.
+   */
+  keepJoiners?: boolean;
 }
 
 export interface Decoded {
@@ -195,20 +200,18 @@ export function encodeGlyphs(font: GlyphFont, input: string): Encoded {
   const s = font.script;
   const pre = new RegExp(`[${s.preBase}]`, "u");
   // Put the marks where the font draws them.
-  const visual = input
-    .normalize("NFD")
-    .replace(/[\u200C\u200D]/g, "")
-    .replace(
-      t.syllable,
-      (_, reph: string | undefined, cluster: string, signs: string, mods: string) => {
-        const first = signs.match(pre)?.[0] ?? "";
-        const rest = first ? signs.replace(first, "") : signs;
-        const mark = reph ? REPH : "";
-        return s.rephAfterVowelSigns
-          ? first + cluster + rest + mark + mods
-          : first + cluster + mark + rest + mods;
-      },
-    );
+  const nfd = input.normalize("NFD");
+  const visual = (font.keepJoiners ? nfd : nfd.replace(/[\u200C\u200D]/g, "")).replace(
+    t.syllable,
+    (_, reph: string | undefined, cluster: string, signs: string, mods: string) => {
+      const first = signs.match(pre)?.[0] ?? "";
+      const rest = first ? signs.replace(first, "") : signs;
+      const mark = reph ? REPH : "";
+      return s.rephAfterVowelSigns
+        ? first + cluster + rest + mark + mods
+        : first + cluster + mark + rest + mods;
+    },
+  );
   let out = "";
   const unsupported = new Set<string>();
   for (let i = 0; i < visual.length;) {

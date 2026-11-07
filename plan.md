@@ -865,7 +865,12 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - **Numbers:** of 100,000 Hindi words, 99,812 go through Chanakya and back unchanged and 99,850 through Walkman; 166 and 128 come back canonical; 22 use letters the fonts lack. The classic decoder reads 97,942 of our Chanakya words the same way and HinLegacy 95,281 of our Walkman words; every disagreement is counted by kind, and a test fails on any other kind.
     - **Falls short of the two-reference bar (the user accepted this, 2026-11-07):** `ch.js` is the only clean Chanakya table, and the one font file we found can't confirm 17 of its codes (`€ Ž ž`, four undefined bytes, `v`–`~`, `®`), so those rest on `ch.js` alone. `0`–`9` follow the font (Latin digits) against `ch.js`. For Walkman, 4,086 words differ from HinLegacy and only the font backs us. See the README.
     - **Not done:** no real Chanakya document was tested; for Walkman only the words lipi quotes from real PDFs (ncert.nic.in did not resolve here). Which publishers use which encoding is not established by any source here, so the page doesn't say. No native-speaker check of the page copy.
-  - [ ] Bijoy ↔ Unicode (Bangla; Bangladesh).
+  - [x] Bijoy ↔ Unicode (Bangla; Bangladesh).
+    - **Done (2026-11-07):** `/bijoy-to-unicode`, both directions, live, with font-aware paste (any `…MJ` font) and Copy in SutonnyMJ. `packages/legacy-fonts/src/bijoy.ts` runs on the shared engine, which gained `keepJoiners`. Linked from the Bangla keyboard, the home page and the sitemap.
+    - **Two spellings:** real text and the open tables differ on a handful of codes (`¯Í` / `¯—`, `iæ` / `i“`, `gœ` / `æ`, `Ð` / `Ê` and others; README table). Drawing them settled it: under SutonnyMJ the tables' codes show other shapes (`—` is a ড়). So the page reads both and writes what the font draws. Three copies of the font agree.
+    - **Numbers:** of 100,000 Bangla words, 99,742 go through Bijoy and back unchanged, 241 gain a ZWNJ where the font shows a hasanta, 13 come back in standard spelling, 4 hold a stray nukta. Rewritten in the classic spelling, 2 of the 99,742 misread. poriborton's 742 test pairs all match after its spelling is put into the font's, except ড়্গ (2 pairs), whose code `ÿ` draws ক্ষ. Every conjunct and kar the encoder writes was drawn and compared by eye.
+    - **Falls short of the two-reference bar:** bondhon and poriborton only encode and are not fully independent, so the decoder is their table inverted plus the font. Bijoy2Unicode (MIT) is the one clean-looking decoder found: it was read, not run or copied, and it credits Mad-FOX's MPL package as initial inspiration. Its notes are what first showed the two spellings in real documents.
+    - **Not done:** only SutonnyMJ was checked, not the other MJ fonts; no real Bijoy document was tested beyond short samples; no native-speaker check of the page copy.
   - [ ] Zawgyi ↔ Unicode (Burmese), with automatic detection (check Google myanmar-tools, Apache-2.0).
   - [ ] Each one follows the InPage method:
     - tables built from two independent references with clean licences;
@@ -962,7 +967,8 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | Remington GAIL (SIL, Keyman) | Independent check of the Kruti Dev table | MIT | In use (10.1, tests only) |
 | Kruti Dev 010 font | Checking each code's glyph by eye | Freeware, not open licensed | Used for checking only; never copied or shipped |
 | Chanakya and Walkman Chanakya 905 fonts | Checking each code's glyph by eye | Not open licensed | Used for checking only; never copied or shipped |
-| bondhon (BanglaKit), poriborton (OpenBangla) | Bijoy tables | MIT | Confirmed 2026-11-07 (10.1) |
+| bondhon (BanglaKit), poriborton (OpenBangla) | Bijoy tables and kar rules; poriborton's pairs as the test reference | MIT | In use (10.1) |
+| Bijoy2Unicode (Md. Jehad) | Read for the two Bijoy spellings; not copied or run | MIT | Read only (10.1) |
 | CLDR `my-t-my-s0-zawgyi` transform; Rabbit | Zawgyi ↔ Unicode | Unicode License; WTFPL | Confirmed 2026-11-07 (10.1) |
 | Subtitle-based frequency lists | Chat words | Unclear (the underlying subtitles' rights) | **Avoid** unless the licence is clear |
 | Leipzig Corpora Collection | — | Sources conflict (CC BY vs CC BY-NC) | **Don't use** without written confirmation (the old plan listed it) |
