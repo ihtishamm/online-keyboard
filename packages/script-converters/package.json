@@ -8,6 +8,7 @@
   "exports": {
     "./bridge": "./src/bridge.ts",
     "./punjabi": "./src/punjabi.ts",
+    "./hindustani": "./src/hindustani.ts",
     "./data/*": "./data/*"
   },
   "scripts": {

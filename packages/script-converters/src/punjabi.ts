@@ -5,6 +5,7 @@
  * س ص ث a word uses. Digits and punctuation change too (੧੨ ↔ ۱۲, । ↔ ۔, ? ↔ ؟); Latin digits stay.
  */
 import type { Pair, Side } from "./bridge.ts";
+import { ARABIC_WORD, foldArabic, normalizeArabic, spellArabic } from "./arabic.ts";
 
 const NUKTA = "\u0A3C";
 const VIRAMA = "\u0A4D";
@@ -187,90 +188,6 @@ const S_CONSONANT = new Map<string, [string, string]>(
 const ASPIRATE = table("ਕ ਖ,ਗ ਘ,ਚ ਛ,ਜ ਝ,ਟ ਠ,ਡ ਢ,ਤ ਥ,ਦ ਧ,ਪ ਫ,ਬ ਭ");
 const S_VOWEL = new Set(["ا", "آ", "و", "ی", "ے", "ع", "ء", "ئ", "ؤ"]);
 
-/** Marks Shahmukhi usually leaves out, and joiners: dropped before anything else. */
-function dropped(code: number): boolean {
-  return (
-    (code >= 0x64b && code <= 0x65f) ||
-    code === 0x670 ||
-    code === 0x640 ||
-    (code >= 0x6ea && code <= 0x6ed) ||
-    code === 0x200c ||
-    code === 0x200e ||
-    code === 0x200f
-  );
-}
-const S_LETTER = new Map(
-  ["ي ی", "ى ی", "ك ک", "ه ہ", "ۃ ہ", "ۀ ہ", "ۂ ہ", "ۓ ئے", "ݪ ل", "ڻ ݨ"].map(
-    (pair) => pair.split(" ") as [string, string],
-  ),
-);
-S_LETTER.set(String.fromCodePoint(0x8c7), "ل");
-const HAMZA_ABOVE = String.fromCodePoint(0x654);
-
-function normalizeShahmukhi(word: string): string {
-  let out = "";
-  const text = word.normalize("NFC");
-  // Every letter here is one UTF-16 unit.
-  for (let i = 0; i < text.length; i++) {
-    const c = text[i]!;
-    if (c === HAMZA_ABOVE && out.endsWith("ی")) out = out.slice(0, -1) + "ئ";
-    else if (!dropped(text.charCodeAt(i))) out += S_LETTER.get(c) ?? c;
-  }
-  // Punjabi Wikipedia's bots write plurals such as علاقےآں for علاقیاں.
-  return out.includes("ےآ") ? out.replaceAll("ےآ", "یا") : out;
-}
-
-/** Letters Gurmukhi can't tell apart, which only a word list can choose between. */
-const SPELLING = new Map(
-  ["ص س", "ث س", "ط ت", "ذ ز", "ض ز", "ظ ز", "ژ ز", "ح ہ", "ق ک", "أ ا", "ؤ و", "ݨ ن"].map(
-    (pair) => pair.split(" ") as [string, string],
-  ),
-);
-// Only carry a vowel, or (ع) are written as a vowel or not at all in Gurmukhi: ਇਲਮ علم.
-for (const c of ["ئ", "ء", "ع"]) SPELLING.set(c, "");
-
-/** Differences people make when they type, on top of SPELLING. */
-const TYPING = new Map(
-  // Letters a nukta makes in Gurmukhi, which many people leave out: ਖਬਰ for ਖ਼ਬਰ.
-  ["غ گ", "خ کھ", "ف پھ", "ز ج"].map((pair) => pair.split(" ") as [string, string]),
-);
-
-/** A Shahmukhi spelling with the choices Gurmukhi can't make folded away. */
-export function spellShahmukhi(word: string): string {
-  let out = "";
-  for (let i = 0; i < word.length; i++) {
-    const c = word[i]!;
-    let to = SPELLING.get(c) ?? c;
-    if (c === "آ" && out !== "") to = "ا";
-    // ہہ is one h (ایہہ), and two alifs one vowel.
-    if ((to === "ہ" || to === "ا") && out.endsWith(to)) continue;
-    out += to;
-  }
-  // A final ہ after a consonant is often the vowel ا: بچہ ਬੱਚਾ, کمرہ ਕਮਰਾ.
-  const before = out.at(-2);
-  if (out.endsWith("ہ") && before && before !== "ا" && before !== "و") out = out.slice(0, -1) + "ا";
-  return out;
-}
-
-function typed(word: string): string {
-  let out = "";
-  for (let i = 0; i < word.length; i++) {
-    const c = word[i]!;
-    const next = word[i + 1];
-    // \u0A02 before ਬ or ਪ sounds m, and Shahmukhi often writes م: ਦਸੰਬਰ دسمبر.
-    if (c === "ن" && (next === "ب" || next === "پ")) out += "م";
-    else out += TYPING.get(c) ?? c;
-  }
-  return out;
-}
-
-/** Shahmukhi spellings that sound alike fold to one key; ع gives one key per way of reading it. */
-export function foldShahmukhi(word: string): string[] {
-  if (!word.includes("ع")) return [typed(spellShahmukhi(word))];
-  const readings = [word, word.replaceAll("ع", "ا"), word.replaceAll("ع", "ی")];
-  return [...new Set(readings.map((w) => typed(spellShahmukhi(w))))];
-}
-
 /** The Gurmukhi the rules write for a normalized Shahmukhi word: a guess at the vowels. */
 function shahmukhiRules(word: string): string {
   const chars = [...word];
@@ -361,8 +278,6 @@ function shahmukhiRules(word: string): string {
 
 // Marks first, so no letter comes before a mark in the class.
 const GURMUKHI_WORD = /[\u{A70}-\u{A75}\u{A01}-\u{A65}]+/gu;
-const SHAHMUKHI_WORD =
-  /[\u{621}-\u{63A}\u{640}-\u{65F}\u{670}-\u{6D3}\u{6D5}\u{6FA}-\u{6FF}\u{750}-\u{77F}\u{8A0}-\u{8FF}\u{200C}\u{200E}-\u{200F}]+/gu;
 
 export const gurmukhi: Side = {
   word: GURMUKHI_WORD,
@@ -377,8 +292,8 @@ export const gurmukhi: Side = {
 };
 
 export const shahmukhi: Side = {
-  word: SHAHMUKHI_WORD,
-  normalize: normalizeShahmukhi,
+  word: ARABIC_WORD,
+  normalize: normalizeArabic,
   pivot: (word) => [word],
 };
 
@@ -412,8 +327,8 @@ function othersToGurmukhi(text: string): string {
 export const GURMUKHI_TO_SHAHMUKHI: Pair = {
   from: gurmukhi,
   to: shahmukhi,
-  spell: spellShahmukhi,
-  fold: foldShahmukhi,
+  spell: spellArabic,
+  fold: foldArabic,
   weight: 1.5,
   rules: (word) => fromGurmukhi(word),
   others: othersToShahmukhi,
@@ -422,14 +337,19 @@ export const GURMUKHI_TO_SHAHMUKHI: Pair = {
 export const SHAHMUKHI_TO_GURMUKHI: Pair = {
   from: shahmukhi,
   to: gurmukhi,
-  spell: spellShahmukhi,
-  fold: foldShahmukhi,
+  spell: spellArabic,
+  fold: foldArabic,
   weight: 1.5,
   rules: shahmukhiRules,
   others: othersToGurmukhi,
 };
 
-export { fromGurmukhi, shahmukhiRules, normalizeShahmukhi };
+export { fromGurmukhi, shahmukhiRules };
+export {
+  normalizeArabic as normalizeShahmukhi,
+  spellArabic as spellShahmukhi,
+  foldArabic as foldShahmukhi,
+};
 
 /** Which script a text is mostly in, or null when it has no letters of either. */
 export function punjabiScript(text: string): "gurmukhi" | "shahmukhi" | null {

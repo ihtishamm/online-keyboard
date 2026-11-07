@@ -1,0 +1,225 @@
+---
+import { decodeDictionary } from "@okb/engine/compact";
+import { Bridge } from "@okb/script-converters/bridge";
+import hindiList from "@okb/script-converters/data/hi.txt?raw";
+import urduList from "@okb/script-converters/data/ur.txt?raw";
+import { HINDI_TO_URDU, URDU_TO_HINDI } from "@okb/script-converters/hindustani";
+import HindustaniConverter from "../components/tools/HindustaniConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Urdu to Hindi Converter, and Hindi to Urdu | ${SITE.name}`;
+const description =
+  "Convert text between the Urdu and Hindi (Devanagari) scripts as you type. A word list fills in the vowels Urdu leaves out, words it can't find are marked, and your text never leaves your device.";
+
+const steps = [
+  "Paste or type Urdu or Hindi. The page sees which script it is and turns round by itself.",
+  "The other script appears below as you type. The first time, the page downloads a word list (about 300 KB) that picks each word's spelling.",
+  "Check the underlined words: they weren't in the word list, so they are spelled by rule. Then copy the text, download it, or keep editing in the Urdu or Hindi keyboard.",
+];
+
+// Every example is run through the converters when the page is built.
+const toHindi = new Bridge(URDU_TO_HINDI, decodeDictionary(hindiList).words);
+const toUrdu = new Bridge(HINDI_TO_URDU, decodeDictionary(urduList).words);
+const examples = ["پاکستان کی قومی زبان اردو ہے۔", "پانی", "کتاب", "محبت", "زندگی", "استعمال"].map(
+  (urdu) => ({ urdu, hindi: toHindi.convert(urdu).text }),
+);
+const back = ["भारत की राजधानी दिल्ली है।", "आप कैसे हैं?", "ख़ूबसूरत"].map((hindi) => ({
+  hindi,
+  urdu: toUrdu.convert(hindi).text,
+}));
+const what = toHindi.convert("کیا").text;
+const sanskrit = toUrdu.convert("संविधान").text;
+
+const faqs = [
+  {
+    q: "Is this a translation from Urdu to Hindi?",
+    a:
+      "No, it changes the script, not the words. Spoken Urdu and Hindi are close, so everyday text reads naturally in either script. Formal writing differs: Hindi often uses Sanskrit words and Urdu Persian and Arabic ones, and those come across unchanged in the other script. संविधान (constitution) becomes " +
+      sanskrit +
+      ", where an Urdu writer would use آئین.",
+  },
+  {
+    q: "Why does Urdu to Hindi need a word list?",
+    a: "Urdu usually leaves out short vowels and doubled letters, so کتاب could be read many ways; Hindi writes किताब in full. No rule can tell which vowels a word has, but a list of 100,000 Hindi words from Hindi Wikipedia can: the page picks the word that fits, and the more common one when several do.",
+  },
+  {
+    q: "Which words come out wrong?",
+    a: `Words the list doesn't have, which the page underlines, and words that are written the same in Urdu but differently in Hindi. کیا is both क्या (what) and किया (did); the page writes the more common in Wikipedia, ${what}, every time, and likewise میں is में more often than मैं. Read the result through before you use it.`,
+  },
+  {
+    q: "Is Hindi to Urdu more reliable?",
+    a: "Yes. Hindi writes every vowel, so the rules alone get most words right, and the Urdu word list only has to choose between letters that sound alike, such as س, ص and ث or ز, ذ, ض and ظ.",
+  },
+  {
+    q: "My Hindi has no nukta (जिंदगी for ज़िंदगी). Does that matter?",
+    a: "No. Both come out as زندگی, because the word list knows the word.",
+  },
+  {
+    q: "What happens to digits and punctuation?",
+    a: "Devanagari digits become Urdu ones and back (१९४७ and ۱۹۴۷), । becomes ۔, and commas and question marks turn round. Ordinary digits such as 1947 stay as they are.",
+  },
+  {
+    q: "Is my text uploaded?",
+    a: "No. The conversion runs in your browser, and your text never leaves your device. Once the word lists have loaded, the page works offline.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Urdu to Hindi Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: ["ur", "hi"],
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Convert Urdu script to Hindi script",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base
+  title={title}
+  description={description}
+  fonts={["devanagari", "nastaliq"]}
+  font="devanagari"
+  credits={{}}
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">Urdu to Hindi Converter</h1>
+    <a
+      href="#checked-heading"
+      class="rounded-full border border-border px-2 py-0.5 text-xs font-medium text-muted"
+      title="Some words come out wrong; see how we checked it"
+    >
+      Beta
+    </a>
+    <span class="font-devanagari text-xl text-accent" lang="hi">
+      उर्दू से हिंदी
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Turn text in the Urdu script into Hindi (Devanagari), or Hindi into Urdu. A word list fills in
+    the vowels Urdu leaves out, and the words it can't find are underlined, so you know what to
+    check. It changes the script, not the words. Everything happens on your device.
+  </p>
+
+  <HindustaniConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to convert Urdu to Hindi
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <table class="w-full table-fixed text-sm">
+        <thead>
+          <tr class="text-left text-muted">
+            <th scope="col" class="pb-1 font-medium">
+              Urdu
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              Hindi
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {[...examples, ...back].map((e) => (
+            <tr class="border-t border-border">
+              <td class="font-nastaliq py-1.5 pe-3 text-lg" lang="ur" dir="rtl">
+                {e.urdu}
+              </td>
+              <td class="font-devanagari py-1.5 text-lg" lang="hi">
+                {e.hindi}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <p class="text-muted">
+      On running text from Urdu Wikipedia, the Hindi word list finds 89% of the words; on Hindi
+      Wikipedia, the Urdu list finds 80%, fewer because much of Hindi Wikipedia's vocabulary is
+      Sanskrit that Urdu doesn't use. The rest are spelled by rule and underlined. Against 6,848
+      word pairs from English Wiktionary that we kept aside while building the rules, 82% of Hindi
+      words come out in Wiktionary's Urdu spelling, and 58% of Urdu words in its Hindi one. Some of
+      the rest are spellings that are also in use (आयरलैंड and आयरलैण्ड), but many are real
+      mistakes, mostly words that are written alike in Urdu. That is why this page is marked Beta.
+    </p>
+    <p class="mt-2 text-muted">
+      As a second check we used one-word article titles that Hindi and Urdu Wikipedia link to each
+      other. Only about a third match, because many titles are translations rather than the same
+      word and foreign names are spelled differently in each. No Hindi or Urdu speaker has reviewed
+      the output yet.
+    </p>
+    <p class="mt-2 text-xs text-muted">
+      Sources: word lists built from
+      <a class="underline" href="https://ur.wikipedia.org/">
+        Urdu Wikipedia
+      </a>{" "}
+      and
+      <a class="underline" href="https://hi.wikipedia.org/">
+        Hindi Wikipedia
+      </a>
+      , and test pairs from{" "}
+      <a class="underline" href="https://en.wiktionary.org/">
+        English Wiktionary
+      </a>{" "}
+      by way of{" "}
+      <a class="underline" href="https://kaikki.org/">
+        kaikki.org
+      </a>
+      , all under
+      <a class="underline" href="https://creativecommons.org/licenses/by-sa/4.0/">
+        CC BY-SA 4.0
+      </a>
+      .
+    </p>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

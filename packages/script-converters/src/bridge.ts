@@ -34,6 +34,11 @@ export interface Pair {
   rules(word: string): string;
   /** Digits and punctuation, for the text between words. */
   others(text: string): string;
+  /**
+   * Where the other script writes one word as two (Hindi जिसका, Urdu جس کا): the parts of a
+   * word the list doesn't have, to look up one by one.
+   */
+  split?: (word: string) => string[] | null;
 }
 
 export interface Converted {
@@ -114,7 +119,12 @@ export class Bridge {
     const candidates = [...new Set(pivots.flatMap(this.pair.fold))].flatMap(
       (k) => this.exact.get(k) ?? [],
     );
-    const best = choose(candidates, spelled, this.pair.weight);
+    let best = choose(candidates, spelled, this.pair.weight);
+    const parts = best === null ? this.pair.split?.(word) : null;
+    if (parts) {
+      const found = parts.map((p) => this.lookup(p));
+      if (found.every((f) => f !== null)) best = found.join(" ");
+    }
     this.memo.set(word, best);
     return best;
   }

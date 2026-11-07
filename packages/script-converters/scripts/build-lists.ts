@@ -11,7 +11,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { encodeDictionary } from "@okb/engine/compact";
 
-export const LISTS = ["pa", "pnb"] as const;
+export const LISTS = ["pa", "pnb", "hi", "ur"] as const;
 export const WORDS = 100_000;
 
 const wanted = process.argv.slice(2);

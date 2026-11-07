@@ -1,5 +1,3 @@
-import { readFileSync } from "node:fs";
-import { decodeDictionary } from "@okb/engine/compact";
 import { describe, expect, it } from "vitest";
 import { Bridge } from "../src/bridge.ts";
 import {
@@ -10,18 +8,10 @@ import {
   punjabiScript,
   spellShahmukhi,
 } from "../src/punjabi.ts";
-
-const list = (code: string) =>
-  decodeDictionary(readFileSync(new URL(`../data/${code}.txt`, import.meta.url), "utf8")).words;
-const data = (name: string) =>
-  readFileSync(new URL(`./data/${name}`, import.meta.url), "utf8")
-    .split("\n")
-    .filter((l) => l && !l.startsWith("#"));
+import { data, list, pairScore, pc, running, verbose } from "./evaluate.ts";
 
 const toShahmukhi = new Bridge(GURMUKHI_TO_SHAHMUKHI, list("pnb"));
 const toGurmukhi = new Bridge(SHAHMUKHI_TO_GURMUKHI, list("pa"));
-const verbose = !!process.env.EVAL_VERBOSE;
-const pc = (n: number, of: number) => `${n}/${of} (${((100 * n) / of).toFixed(1)}%)`;
 
 describe("Gurmukhi → Shahmukhi", () => {
   it.each([
@@ -120,71 +110,29 @@ describe("evaluation", () => {
     s: (w: string) => normalizeShahmukhi(w).replace(/ݨ/g, "ن"),
   };
 
-  function score(rows: string[]) {
-    let s = 0;
-    let g = 0;
-    for (const row of rows) {
-      const [shah, gur] = row.split("\t") as [string, string];
-      if (fold.s(toShahmukhi.convert(gur).text) === fold.s(shah)) s++;
-      if (fold.g(toGurmukhi.convert(shah).text) === fold.g(gur)) g++;
-    }
-    return { s, g, n: rows.length };
-  }
+  const same = {
+    g: (a: string, b: string) => fold.g(a) === fold.g(b),
+    s: (a: string, b: string) => fold.s(a) === fold.s(b),
+  };
 
   it.each([
     ["pa-pairs-dev.tsv", 0.81, 0.6],
     ["pa-pairs-test.tsv", 0.81, 0.62],
     ["pa-titles.tsv", 0.5, 0.47],
   ])("%s", (file, toS, toG) => {
-    const { s, g, n } = score(data(file));
-    if (verbose) console.log(`${file}: to Shahmukhi ${pc(s, n)}, to Gurmukhi ${pc(g, n)}`);
-    expect(s / n).toBeGreaterThan(toS);
-    expect(g / n).toBeGreaterThan(toG);
+    const r = pairScore(data(file), toShahmukhi, toGurmukhi, same.s, same.g);
+    if (verbose) {
+      console.log(
+        `${file}: to Shahmukhi ${pc(r.toArabic, r.n)}, to Gurmukhi ${pc(r.fromArabic, r.n)}`,
+      );
+    }
+    expect(r.toArabic / r.n).toBeGreaterThan(toS);
+    expect(r.fromArabic / r.n).toBeGreaterThan(toG);
   });
 
-  function running(
-    lines: string[],
-    there: Bridge,
-    back: Bridge,
-    same: (a: string, b: string) => boolean,
-  ) {
-    let words = 0;
-    let guessed = 0;
-    let kept = 0;
-    let compared = 0;
-    for (const line of lines) {
-      const out = there.convert(line);
-      words += out.words;
-      guessed += out.guessed.length;
-      const before = [...line.matchAll(there.from.word)].map((m) => there.from.normalize(m[0]));
-      const after = [...out.text.matchAll(back.from.word)].map((m) => back.convert(m[0]).text);
-      if (before.length !== after.length) continue;
-      before.forEach((w, i) => {
-        compared++;
-        if (same(w, after[i]!)) kept++;
-      });
-    }
-    return {
-      found: (words - guessed) / words,
-      round: kept / compared,
-      words,
-      guessed,
-      kept,
-      compared,
-    };
-  }
-
   it("Gurmukhi Wikipedia text", () => {
-    const r = running(
-      data("pa-sentences.txt"),
-      toShahmukhi,
-      toGurmukhi,
-      (a, b) => fold.g(a) === fold.g(b),
-    );
-    if (verbose)
-      console.log(
-        `pa: found ${pc(r.words - r.guessed, r.words)}, round trip ${pc(r.kept, r.compared)}`,
-      );
+    const r = running(data("pa-sentences.txt"), toShahmukhi, toGurmukhi, same.g);
+    if (verbose) console.log(`pa: ${r.text}`);
     expect(r.found).toBeGreaterThan(0.94);
     expect(r.round).toBeGreaterThan(0.92);
   });
@@ -196,10 +144,7 @@ describe("evaluation", () => {
       toShahmukhi,
       (a, b) => spellShahmukhi(normalizeShahmukhi(a)) === spellShahmukhi(normalizeShahmukhi(b)),
     );
-    if (verbose)
-      console.log(
-        `pnb: found ${pc(r.words - r.guessed, r.words)}, round trip ${pc(r.kept, r.compared)}`,
-      );
+    if (verbose) console.log(`pnb: ${r.text}`);
     expect(r.found).toBeGreaterThan(0.87);
     expect(r.round).toBeGreaterThan(0.97);
   });
