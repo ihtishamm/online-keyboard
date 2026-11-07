@@ -14,6 +14,13 @@ import { convertLegacyRuns } from "./legacy-paste";
 
 export type Direction = "to-unicode" | "from-unicode";
 
+/** What reading a text gives. A note is shown to the reader when nothing needs a warning. */
+export interface LegacyRead {
+  text: string;
+  unknown: number;
+  note?: string | undefined;
+}
+
 /** One encoding. Most pages have one; Chanakya has two that share a name. */
 export interface LegacyFont {
   id: string;
@@ -21,8 +28,13 @@ export interface LegacyFont {
   name: string;
   /** The font family to set copied text in, for Word: "Kruti Dev 010". */
   family: string;
-  toUnicode: (text: string) => { text: string; unknown: number };
-  fromUnicode: (text: string) => { text: string; unsupported: string[] };
+  toUnicode: (text: string) => LegacyRead;
+  /** Missing on an entry that only reads, such as Zawgyi's "leave it as Unicode". */
+  fromUnicode?: (text: string) => {
+    text: string;
+    unsupported: string[];
+    note?: string | undefined;
+  };
 }
 
 export interface LegacyConverterProps {
@@ -32,6 +44,9 @@ export interface LegacyConverterProps {
     /** Font families whose runs a pasted document converts. */
     isFont: (family: string) => boolean;
     placeholder: string;
+    /** For an encoding we can draw (Zawgyi); others show their codes in a monospace font. */
+    fontClass?: string;
+    lang?: string;
   };
   unicode: {
     /** "Hindi" */
@@ -44,9 +59,12 @@ export interface LegacyConverterProps {
   };
   /** The first is the default. With more than one, a picker appears. */
   fonts: readonly LegacyFont[];
-  /** Which of `fonts` text is in, by id. */
-  detect?: (text: string) => string;
-  isUnicode: (text: string) => boolean;
+  /** Which of `fonts` text is in, by id. `inFont`: the text came from runs in the legacy font. */
+  detect?: (text: string, inFont?: boolean) => string;
+  /** `picked`: the entry chosen by hand, if any. */
+  isUnicode: (text: string, picked: string | null) => boolean;
+  /** Reads a text while no font is picked, for encodings that can mix in one document. */
+  auto?: (text: string) => LegacyRead;
   initial?: Direction;
 }
 
@@ -127,19 +145,22 @@ export default function LegacyConverter(props: LegacyConverterProps) {
   const detected =
     (mixed?.source === input ? byId(mixed.fontId) : undefined) ??
     byId(input.trim() ? props.detect?.(input) : undefined);
-  const font = byId(picked) ?? (toUnicode ? detected : undefined) ?? fonts[0]!;
+  const writers = fonts.filter((f) => f.fromUnicode);
+  const writer = writers.find((f) => f.id === picked) ?? writers[0]!;
+  const font = toUnicode ? (byId(picked) ?? detected ?? fonts[0]!) : writer;
   let output = "";
   let status: Status | null = null;
   if (mixed && mixed.source === input && toUnicode) {
     output = mixed.text;
     status = mixed.status;
   } else if (input.trim() && toUnicode) {
-    if (props.isUnicode(input)) {
+    if (props.isUnicode(input, picked)) {
       output = input;
       status = { kind: "info", text: `This text is already Unicode ${unicode.name}.` };
     } else {
-      const result = font.toUnicode(input);
+      const result = !picked && props.auto ? props.auto(input) : font.toUnicode(input);
       output = result.text;
+      if (result.note) status = { kind: "info", text: result.note };
       if (result.unknown) {
         status = {
           kind: "warn",
@@ -148,8 +169,9 @@ export default function LegacyConverter(props: LegacyConverterProps) {
       }
     }
   } else if (input && !toUnicode) {
-    const result = font.fromUnicode(input);
+    const result = writer.fromUnicode!(input);
     output = result.text;
+    if (result.note) status = { kind: "info", text: result.note };
     if (result.unsupported.length) {
       status = {
         kind: "warn",
@@ -180,7 +202,7 @@ export default function LegacyConverter(props: LegacyConverterProps) {
       sample += text;
       return { text, unknown: 0 };
     });
-    const chosen = byId(pickedId) ?? byId(props.detect?.(sample)) ?? fonts[0]!;
+    const chosen = byId(pickedId) ?? byId(props.detect?.(sample, true)) ?? fonts[0]!;
     const result = convertLegacyRuns(html, legacy.isFont, chosen.toUnicode);
     if (!result || result.kept === 0) return false;
     setMixed({
@@ -214,7 +236,7 @@ export default function LegacyConverter(props: LegacyConverterProps) {
     setDirection(next);
   };
 
-  const legacyArea = `${AREA} min-h-40 font-mono text-sm`;
+  const legacyArea = `${AREA} min-h-40 ${legacy.fontClass ? `${legacy.fontClass} text-xl` : "font-mono text-sm"}`;
   const unicodeArea = `${AREA} ${unicode.fontClass} min-h-40 text-xl`;
 
   return (
@@ -245,14 +267,14 @@ export default function LegacyConverter(props: LegacyConverterProps) {
         ))}
       </div>
 
-      {fonts.length > 1 && (
+      {(toUnicode ? fonts : writers).length > 1 && (
         <div className="flex flex-col gap-1.5 self-start">
           <label htmlFor={fontId} className="text-sm font-medium">
             Font
           </label>
           <select
             id={fontId}
-            value={picked ?? (toUnicode ? "auto" : fonts[0]!.id)}
+            value={picked ?? (toUnicode ? "auto" : writers[0]!.id)}
             onChange={(e) => pick(e.target.value)}
             className="min-h-11 rounded-lg border border-border bg-surface px-2.5 text-sm text-text sm:min-h-9"
           >
@@ -261,7 +283,7 @@ export default function LegacyConverter(props: LegacyConverterProps) {
                 {detected ? `Detected: ${detected.name}` : "Detect automatically"}
               </option>
             )}
-            {fonts.map((f) => (
+            {(toUnicode ? fonts : writers).map((f) => (
               <option key={f.id} value={f.id}>
                 {f.name}
               </option>
@@ -284,7 +306,7 @@ export default function LegacyConverter(props: LegacyConverterProps) {
           autoCorrect="off"
           placeholder={toUnicode ? legacy.placeholder : unicode.placeholder}
           {...(toUnicode
-            ? { className: legacyArea, dir: "ltr" }
+            ? { className: legacyArea, dir: "ltr", lang: legacy.lang }
             : { className: unicodeArea, lang: unicode.lang })}
         />
         {toUnicode && (
@@ -311,7 +333,7 @@ export default function LegacyConverter(props: LegacyConverterProps) {
         value={output}
         outputRef={outputRef}
         className={toUnicode ? unicodeArea : legacyArea}
-        lang={toUnicode ? unicode.lang : undefined}
+        lang={toUnicode ? unicode.lang : legacy.lang}
         actions={
           toUnicode ? (
             <>

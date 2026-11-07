@@ -871,7 +871,14 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - **Numbers:** of 100,000 Bangla words, 99,742 go through Bijoy and back unchanged, 241 gain a ZWNJ where the font shows a hasanta, 13 come back in standard spelling, 4 hold a stray nukta. Rewritten in the classic spelling, 2 of the 99,742 misread. poriborton's 742 test pairs all match after its spelling is put into the font's, except ড়্গ (2 pairs), whose code `ÿ` draws ক্ষ. Every conjunct and kar the encoder writes was drawn and compared by eye.
     - **Falls short of the two-reference bar:** bondhon and poriborton only encode and are not fully independent, so the decoder is their table inverted plus the font. Bijoy2Unicode (MIT) is the one clean-looking decoder found: it was read, not run or copied, and it credits Mad-FOX's MPL package as initial inspiration. Its notes are what first showed the two spellings in real documents.
     - **Not done:** only SutonnyMJ was checked, not the other MJ fonts; no real Bijoy document was tested beyond short samples; no native-speaker check of the page copy.
-  - [ ] Zawgyi ↔ Unicode (Burmese), with automatic detection (check Google myanmar-tools, Apache-2.0).
+  - [x] Zawgyi ↔ Unicode (Burmese), with automatic detection (check Google myanmar-tools, Apache-2.0).
+    - **Done (2026-11-07):** `/zawgyi-to-unicode`, both directions, live. Zawgyi needs no font name and no choice: Google's detector runs on every line, so a document with both encodings comes out right, and the Font list can force either reading. Font-aware paste trusts runs in a Zawgyi font. Copy for Zawgyi pastes into Word in Zawgyi-One. Linked from the Burmese keyboard, the home page and the sitemap.
+    - **Not a table:** Zawgyi reuses the Myanmar block, so `packages/legacy-fonts/src/translit.ts` is a small engine for ICU transform rules, `zawgyi-rules.ts` is CLDR's rule text with our changes marked, and `zawgyi-detect.ts` is the detector adapted from myanmar-tools.
+    - **Stand-out features:** the box draws Zawgyi with Noto Sans Zawgyi (OFL, cut to 20 KB), so it looks right on any device with no font installed; line-by-line detection for mixed documents.
+    - **Fixes to CLDR** (table in the package README): the stock rules, and so ICU itself, turn a line ending in ၄ into ၎ (`အခန္း ၄` → `အခန်း ၎`), and move း past `u`, `3` or `6` (a typo in the rules), confirmed on real ICU. They also leave ၀ typed for ဝ as a digit, misplace ေ after stacks, and misattach medial ra after ှ. Neither CLDR nor Rabbit was enough alone: Rabbit gets those right, but writes the stack of `ကမ္ဘာ` under the wrong letter.
+    - **Numbers:** the engine matches real ICU on 48,187 lines and 60,000 lines of random code points with the rules unchanged. All 66 lines of real government Zawgyi read the same as Rabbit; they differ from stock ICU on 6, all ၀ → ဝ. 23,386 of 23,573 words go through Zawgyi and back unchanged; of the 187 others, 69 are fragments and 118 are typing slips. 321 of 419 real words re-encode exactly as typed. The detector scores 50 of 50 of Google's strings the same, and gets every real and Unicode line right; single words alone 97.6% (Unicode) and 95.7% (Zawgyi).
+    - **Method note for later fonts:** when a Unicode and a legacy font share a design, draw every word in both and score the pixels (23,573 words take 30 seconds in Chromium). Decoding real legacy text and encoding it again shows how people really typed it, and that beat the look of the font: it overruled a change made on pixels alone.
+    - **Not done:** the real Zawgyi is one sample, 66 lines and Rabbit's few sentences; the rest is our encoder's text. No native-speaker check of the output or the page copy.
   - [ ] Each one follows the InPage method:
     - tables built from two independent references with clean licences;
     - round-trip tests;
@@ -961,7 +968,7 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | OpenCC data | Simplified ↔ Traditional; forms in the Chinese lists | Apache-2.0 (`vendor/opencc/LICENSE`) | In use (9b) |
 | Mozc dictionary data | Kana → kanji (`data/ja/readings.txt`) | BSD 3-Clause, with IPAdic (ICOT notice) and Okinawa dictionary notices, all permissive; the set Google's web corpus adds is not in the open source version (`vendor/mozc/`) | In use (9b), checked 2026-11-04 |
 | ICU word segmentation (`Intl.Segmenter`) | Thai, Lao, Khmer, Burmese, Chinese and Japanese words, at build time and while typing | Unicode License; comes with Node and the browser, nothing copied | In use (9b) |
-| Google myanmar-tools | Zawgyi detection | Apache-2.0 | Confirmed 2026-11-07 (10.1) |
+| Google myanmar-tools | Zawgyi detector and model; real text and expected scores in the tests | Apache-2.0 | In use (10.1) |
 | hindi-font-converter (Manish Prajapati) | Kruti Dev and Chanakya tables; the classic converters as test references | MIT | In use (10.1) |
 | HinLegacy (Satvik Mishra), lipi (Aparsoft) | Walkman Chanakya 905: second reference in the tests; the Q hook and real PDF words | MIT | In use (10.1, tests only) |
 | Remington GAIL (SIL, Keyman) | Independent check of the Kruti Dev table | MIT | In use (10.1, tests only) |
@@ -969,7 +976,10 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | Chanakya and Walkman Chanakya 905 fonts | Checking each code's glyph by eye | Not open licensed | Used for checking only; never copied or shipped |
 | bondhon (BanglaKit), poriborton (OpenBangla) | Bijoy tables and kar rules; poriborton's pairs as the test reference | MIT | In use (10.1) |
 | Bijoy2Unicode (Md. Jehad) | Read for the two Bijoy spellings; not copied or run | MIT | Read only (10.1) |
-| CLDR `my-t-my-s0-zawgyi` transform; Rabbit | Zawgyi ↔ Unicode | Unicode License; WTFPL | Confirmed 2026-11-07 (10.1) |
+| CLDR `my-t-my-s0-zawgyi`, `my-t-my-d0-zawgyi` | Zawgyi ↔ Unicode rules, with our fixes | Unicode License | In use (10.1) |
+| Rabbit | Independent Zawgyi rule tables, read as data in the tests | WTFPL | In use (10.1, tests only) |
+| Noto Sans Zawgyi | Draws Zawgyi on the converter page | SIL OFL 1.1 | In use (10.1), cut to the Myanmar block |
+| Zawgyi-One 4.30 | Checking the output by eye | Not open licensed | Used for checking only; never copied or shipped |
 | Subtitle-based frequency lists | Chat words | Unclear (the underlying subtitles' rights) | **Avoid** unless the licence is clear |
 | Leipzig Corpora Collection | — | Sources conflict (CC BY vs CC BY-NC) | **Don't use** without written confirmation (the old plan listed it) |
 | Hunspell dictionaries | — | GPL/LGPL/MPL, varies | **Don't ship** in the client bundle unless the licence fits; our own spell checker covers this |

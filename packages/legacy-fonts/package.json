@@ -9,7 +9,8 @@
     "./krutidev": "./src/krutidev.ts",
     "./chanakya": "./src/chanakya.ts",
     "./walkman": "./src/walkman.ts",
-    "./bijoy": "./src/bijoy.ts"
+    "./bijoy": "./src/bijoy.ts",
+    "./zawgyi": "./src/zawgyi.ts"
   },
   "scripts": {
     "test": "vitest run",

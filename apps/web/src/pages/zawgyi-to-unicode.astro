@@ -1,0 +1,194 @@
+---
+import { autoToUnicode, unicodeToZawgyi } from "@okb/legacy-fonts/zawgyi";
+import ZawgyiConverter from "../components/tools/ZawgyiConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Zawgyi to Unicode Converter, and Unicode to Zawgyi | ${SITE.name}`;
+const description =
+  "Convert Zawgyi Burmese to Unicode, and back, as you type. Finds Zawgyi by itself, handles documents with both encodings, and never uploads your text.";
+
+const steps = [
+  "Paste the Burmese text into the box. You don't need to know which encoding it is in.",
+  "The page finds the Zawgyi and shows the Unicode below as soon as you paste. Copy it, or carry on in the Burmese keyboard.",
+  "To go the other way, choose Unicode → Zawgyi, paste Unicode Burmese, and press the Copy button. In Word the text arrives already set in Zawgyi-One.",
+];
+
+// Every example is run through the converters when the page is built.
+const examples = ["မြန်မာစာ", "ကျောင်းသားများ", "နိုင်ငံတော်", "ကြည့်ရှု", "သန္ဓေ"].map((u) => {
+  const zawgyi = unicodeToZawgyi(u).text;
+  return { zawgyi, unicode: autoToUnicode(zawgyi).text };
+});
+
+const faqs = [
+  {
+    q: "Why does my Burmese text look broken?",
+    a: "Zawgyi and Unicode use the same code points with different meanings, and store some letters in a different order. Text typed in one looks scrambled in a font made for the other. This page changes the text itself, so it looks right in every Unicode font.",
+  },
+  {
+    q: "How does it know which text is Zawgyi?",
+    a: "Google's open source Zawgyi detector scores how likely each pair of neighbouring characters is in each encoding. The page runs it on every line, so a document with some of each comes out right: only the Zawgyi lines change. The Font list shows what was found.",
+  },
+  {
+    q: "It says my text is already Unicode, but it is Zawgyi.",
+    a: "A few words carry too little to tell, and many read the same in both encodings. Choose Zawgyi in the Font list to convert everything. Text pasted from Word in a Zawgyi font is treated as Zawgyi unless it clearly isn't.",
+  },
+  {
+    q: "My document mixes Burmese and English. Will the English change?",
+    a: "No. Only Myanmar characters are touched, so English and digits stay as they are in any text.",
+  },
+  {
+    q: "Why did ၀ change to ဝ?",
+    a: "The digit zero ၀ and the letter ဝ look alike, and Zawgyi typists often used one for the other. A zero with no digit beside it that touches a Burmese letter is read as the letter, so အ၀တ္ becomes အဝတ်. Numbers such as ၂၀၂၆ and a zero standing alone stay digits. Likewise ၄င္း becomes ၎င်း, but every other ၄ stays the digit four.",
+  },
+  {
+    q: "Why does the Zawgyi box look right on my phone when my font is Unicode?",
+    a: "The box draws Zawgyi with Noto Sans Zawgyi, which comes with this page. Once you copy the text elsewhere, it needs a Zawgyi font such as Zawgyi-One to look right.",
+  },
+  {
+    q: "Can it write Mon, Shan or Karen in Zawgyi?",
+    a: "No. Zawgyi was made for Burmese, and it uses the code points of those languages' letters for its own shapes. The page warns you and leaves such letters as they are.",
+  },
+  {
+    q: "Is my text uploaded?",
+    a: "No. The conversion runs in your browser, and your text never leaves your device. The page works offline once it has loaded.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Zawgyi to Unicode Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: "my",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Convert Zawgyi text to Unicode Burmese",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} fonts={["myanmar"]} font="myanmar" credits={{}}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">Zawgyi to Unicode Converter</h1>
+    <span class="font-myanmar text-xl text-accent" lang="my">
+      ဇော်ဂျီမှ ယူနီကုဒ်သို့
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Turn Zawgyi Burmese into Unicode that works on phones, websites and in every font, or turn
+    Unicode back into Zawgyi. The page finds the Zawgyi by itself, and everything happens on your
+    device.
+  </p>
+
+  <ZawgyiConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to convert Zawgyi to Unicode
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <table class="w-full table-fixed text-sm">
+        <thead>
+          <tr class="text-left text-muted">
+            <th scope="col" class="pb-1 font-medium">
+              Zawgyi
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              Unicode
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {examples.map((e) => (
+            <tr class="border-t border-border">
+              <td class="font-zawgyi py-1.5 pe-3 text-lg" lang="my-Qaag">
+                {e.zawgyi}
+              </td>
+              <td class="font-myanmar py-1.5 text-lg" lang="my">
+                {e.unicode}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <p class="text-muted">
+      We started from the Unicode Consortium's CLDR conversion rules, the ones ICU and Google's
+      tools use, and compared them with the independent Rabbit converter and with Zawgyi text from a
+      Myanmar government site. Then we fixed what that showed. The stock rules turn a line ending in
+      the digit ၄ into the symbol ၎, so "Chapter 4" stops being a number. They move း past a digit
+      written straight after it, and they leave ၀ typed for ဝ as a digit. All of the government text
+      now reads the same as it does in Rabbit. Every word in our 23,573-word list was drawn in Noto
+      Sans Zawgyi beside its Unicode and compared automatically, and of those, 99.2% come back from
+      Zawgyi unchanged. We checked a sample by eye in Zawgyi-One.
+    </p>
+    <p class="mt-2 text-muted">
+      Some limits: the real Zawgyi we tested is one government sample, a few hundred words, and the
+      rest of the tests use text our own converter wrote. No Burmese speaker has reviewed the output
+      yet. A single word can read as either encoding, which is why the Font list lets you choose.
+    </p>
+    <p class="mt-2 text-xs text-muted">
+      Sources:
+      <a class="underline" href="https://github.com/unicode-org/cldr">
+        CLDR
+      </a>
+      (Unicode License),
+      <a class="underline" href="https://github.com/google/myanmar-tools">
+        myanmar-tools
+      </a>
+      by Google (Apache 2.0),
+      <a class="underline" href="https://github.com/Rabbit-Converter/Rabbit">
+        Rabbit
+      </a>
+      (WTFPL) and Noto Sans Zawgyi (SIL Open Font License).
+    </p>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

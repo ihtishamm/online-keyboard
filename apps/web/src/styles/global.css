@@ -23,6 +23,18 @@
 }
 
 /*
+ * Draws Zawgyi on the converter page, where any Unicode font would garble it: Noto Sans Zawgyi
+ * cut to the Myanmar block (src/fonts/README.md, OFL-Noto-Zawgyi.txt). It has no Reserved Font
+ * Name, so it keeps its name.
+ */
+@font-face {
+  font-family: "Noto Sans Zawgyi";
+  src: url("../fonts/noto-sans-zawgyi.woff2") format("woff2");
+  unicode-range: U+1000-109F, U+200B-200D;
+  font-display: swap;
+}
+
+/*
  * Phone keyboard mode: narrow screens, and touch screens turned sideways (a landscape phone is
  * wider than `sm` but still a phone). `short` is the landscape case, where keys must be lower.
  * Keep in sync with PHONE_QUERY in components/keyboard/useNarrow.ts.
@@ -189,6 +201,7 @@
   --stack-canadian-aboriginal: "Noto Sans Canadian Aboriginal", "Inter Variable", sans-serif;
   --stack-ol-chiki: "Noto Sans Ol Chiki", "Inter Variable", sans-serif;
   --stack-ipa: "Phonetic Symbols", "Inter Variable", serif;
+  --stack-zawgyi: "Noto Sans Zawgyi", "Inter Variable", sans-serif;
   --stack-georgian: "Noto Sans Georgian", "Inter Variable", sans-serif;
   --stack-thai: "Noto Sans Thai", "Inter Variable", sans-serif;
   --stack-lao: "Noto Sans Lao", "Inter Variable", sans-serif;
@@ -336,6 +349,10 @@
   .font-ol-chiki {
     font-family: var(--stack-ol-chiki);
     line-height: 1.8;
+  }
+
+  .font-zawgyi {
+    font-family: var(--stack-zawgyi);
   }
 
   .font-ipa {

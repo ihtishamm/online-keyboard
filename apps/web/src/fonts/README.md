@@ -31,3 +31,14 @@ The character list is every key, rule (`before` and `add`) and long press of
 `packages/layouts/languages/ipa/sil.json`, with `accents` and `sample` from its
 `language.json`, U+25CC and typographic quotes and dashes. Cut it again when the IPA
 keyboard gains characters: `src/fonts.test.ts` fails on any it cannot draw.
+
+`noto-sans-zawgyi.woff2` draws Zawgyi on `/zawgyi-to-unicode`, where a Unicode font would garble
+it. It is Noto Sans Zawgyi 14.0d3e4 (SIL Open Font License 1.1, `OFL-Noto-Zawgyi.txt`), from
+github.com/saturngod/notosan-zawgyi, whose file merges it with Noto Sans for Latin. Cut to U+1000-109F, the spaces and the zero-width characters, 20 KB. Noto has no Reserved
+Font Name, so it keeps its name:
+
+```js
+const woff2 = await subsetFont(notoZawgyiMergeTtf, myanmarBlock + spaces, {
+  targetFormat: "woff2",
+});
+```

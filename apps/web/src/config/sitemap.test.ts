@@ -20,5 +20,6 @@ describe("sitemap sections", () => {
     expect(at("/kruti-dev-to-unicode")).toBe("tools");
     expect(at("/chanakya-to-unicode")).toBe("tools");
     expect(at("/bijoy-to-unicode")).toBe("tools");
+    expect(at("/zawgyi-to-unicode")).toBe("tools");
   });
 });

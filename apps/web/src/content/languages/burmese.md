@@ -14,7 +14,7 @@ tips:
   - "F types the asat ်, which silences a consonant, as in န်."
 faqs:
   - q: "Does this type Zawgyi?"
-    a: "No. It types Unicode, the international standard, which phones and websites now expect. A Zawgyi to Unicode converter is planned."
+    a: "No. It types Unicode, the international standard, which phones and websites now expect. For text already in Zawgyi, the Zawgyi to Unicode converter on this site changes it in either direction."
   - q: "Why does ေ come after the consonant?"
     a: "Unicode stores letters in spoken order. The font draws ေ on the left, but you type it after its consonant."
   - q: "Can I type Burmese in English letters here?"

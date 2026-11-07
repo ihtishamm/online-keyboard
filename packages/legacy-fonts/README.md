@@ -7,6 +7,8 @@ entry point, so a page loads only its own table:
 - `@okb/legacy-fonts/chanakya`: the font named Chanakya, plus `detectChanakyaFont`.
 - `@okb/legacy-fonts/walkman`: Walkman Chanakya 905.
 - `@okb/legacy-fonts/bijoy`: Bijoy, for SutonnyMJ and the other MJ fonts.
+- `@okb/legacy-fonts/zawgyi`: Zawgyi, with automatic detection. It works differently from the
+  others: see [Zawgyi](#zawgyi-checked-2026-11-07).
 
 `src/glyph.ts` is the shared engine for "glyph" fonts, which store Latin-1 codes in the order
 the glyphs are drawn: it maps codes with a table, then moves the short-i sign (ि) past the
@@ -174,3 +176,80 @@ but not run against our output, and no other clean Bijoy → Unicode decoder was
 reads our decoder's input independently: its checks are the font, the real-word samples and
 poriborton's pairs. Apart from those samples, the tests use text our own encoder produced, not
 documents.
+
+### Zawgyi (checked 2026-11-07)
+
+**Zawgyi is a different kind of problem.** The other fonts here store Latin-1 codes that a table can
+map. Zawgyi uses the Myanmar Unicode block itself, with some code points changed in meaning, and
+stores letters in the order they are drawn. So `zawgyi.ts` converts with reordering rules, and it
+can't tell the encoding from any one character: that takes a statistical detector.
+
+- `src/translit.ts` is a small engine for ICU transform rules. It keeps ICU's semantics, including
+  quantifiers that never backtrack.
+- `src/zawgyi-rules.ts` is CLDR's rule text with our changes marked `# ours:`, so a diff against CLDR
+  shows exactly what differs.
+- `src/zawgyi-detect.ts` and `src/zawgyi-model.ts` are Google's detector and its trained model.
+- Text is converted line by line, so `^` and `$` in the rules mean a line's ends, and a document with
+  both encodings comes out right. A line sure of its own encoding (about 95% each way) goes by that;
+  a shorter one follows the whole text.
+
+| Source                                                                                                 | Used for                                                                                                                                 | Licence                   |
+| ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| CLDR `my-t-my-s0-zawgyi`, `my-t-my-d0-zawgyi`, at commit db90e4a7a9                                    | The rules, with the changes below                                                                                                        | Unicode License           |
+| [myanmar-tools](https://github.com/google/myanmar-tools) (Google)                                      | The detector and model, adapted; its government text and expected scores in the tests. Its rules are CLDR's, so it is not a second table | Apache-2.0                |
+| [Rabbit](https://github.com/Rabbit-Converter/Rabbit) (saturngod)                                       | The independent reference: its rule tables are read as data in the tests (`test/reference/rabbit-rules.json`). None of its code runs     | WTFPL                     |
+| ICU 74.2 (system library)                                                                              | Proves `translit.ts`: its output is stored in `test/reference/icu-zawgyi.json`                                                           | Unicode License           |
+| Noto Sans Zawgyi 14.0d3e4, via [saturngod/notosan-zawgyi](https://github.com/saturngod/notosan-zawgyi) | Draws Zawgyi on the page (cut to the Myanmar block, 20 KB), and the pixel check below                                                    | SIL Open Font License 1.1 |
+| Zawgyi-One 4.30, via [saturngod/mmwebfonts](https://github.com/saturngod/mmwebfonts)                   | The real target font, compared by eye; **used for checking only, never copied or shipped**                                               | Not open licensed         |
+
+**The engine is proven before the rules are questioned.** With CLDR's rules unchanged, it gives the
+same output as real ICU, both ways, on 48,187 lines of text and 60,000 lines of random code points.
+The one difference: ICU's negated sets also match at the end of a text, so ICU reads a lone `၀` as ဝ.
+
+**What we changed, and why.** Each came from a disagreement between CLDR, Rabbit, real text and the
+fonts. The ICU checks above used the rules as published.
+
+| CLDR                                                                                          | Ours                                                                                        | Found by                            |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------- |
+| `အခန္း ၄` → `အခန်း ၎`: a line ending in ၄, starting with it, or a ၄ after a sign, becomes ၎   | Only `၄င္း` is ၎င်း. Every other ၄ is four                                                  | Reading the rules, confirmed on ICU |
+| `လား3` → `လာ3း`: a typo (`\1u36` for `ံ`) moves း past `u`, `3`, `6`                          | Fixed, and း now moves past ံ as intended                                                   | Reading the rules, confirmed on ICU |
+| ၀ typed for ဝ stays a digit in `အ၀တ္`, `အပါအ၀င္`, `ဒုတိယ၀န္ႀကီး`                              | A ၀ with no digit beside it that touches a letter or sign is ဝ. On its own it stays a digit | Rabbit, on real text                |
+| ေ goes after a stack, so `သန္ဓေသား` comes back `သန္ဓသေား`                                     | ေ before the stack, ligatures, ဿ and kinzi with ya-pin                                      | Round trip, Zawgyi-One              |
+| Sorts `103B` as Unicode ya-pin, but in Zawgyi it is medial ra: `အလှပြင်` comes back `အလြှပင်` | Dropped                                                                                     | Round trip                          |
+| Reads `ဣေႁႏၵ` with ေ between the two letters                                                  | Moves ြ and ေ past the stack together                                                       | Round trip                          |
+| ည with lower signs, dots and ှ takes its short form                                           | Keeps the full ည where the font wants it (`ညူး`, `ညှိုး`, `ကြည့်`)                          | Pixel check, real text              |
+| Wrong or unusual orders for `ရှိ`, `ယနေ့`, `ခန့်`, `တွေ့`, `နွေး`, `လျှံ`, `ရုပ်`, `ယာဉ်`     | The forms in real text: `ရွိ`, `ယေန႔`, `ခန္႔`, `ေတြ႕`, `ေႏြး`, `လွ်ံ`, `႐ုပ္`, `ယာဥ္`       | Real text                           |
+
+Neither table was enough alone. Rabbit gets the first five right and CLDR doesn't. But Rabbit's
+encoder puts the stack of `ကမ္ဘာ` and `ပုစ္ဆာ` under the wrong letter, and these words only look right
+because its decoder undoes that. CLDR draws them correctly, in both fonts.
+
+**Checks and numbers:**
+
+|                                                                                          |                  |
+| ---------------------------------------------------------------------------------------- | ---------------- |
+| Real Zawgyi lines read the same as Rabbit                                                | 66 of 66         |
+| The same lines, differing from stock ICU (all six are ၀ → ဝ)                             | 6 of 66          |
+| Burmese Wikipedia words back unchanged through Zawgyi                                    | 23,386 of 23,573 |
+| Of the 187 that change: fragments such as a virama with nothing after it                 | 69               |
+| Of the 187: typing slips in the word list (`ကို်`, `ခဲဲ့`), which come back spelled well | 118              |
+| Real Zawgyi words decoded, encoded again, and back exactly as typed                      | 321 of 419       |
+| Detector scores equal to Google's own                                                    | 50 of 50         |
+| Lines and sentences detected right: real Zawgyi, Unicode, and Zawgyi from our encoder    | 397 of 397       |
+| Single words detected right, read alone: Unicode, Zawgyi                                 | 97.6%, 95.7%     |
+
+Most of the 98 real words that re-encode differently are `ထုိ` against `ထို`, the same shape typed in
+either order (real text has both about equally, and we keep CLDR's), or ၀ → ဝ, which is the fix.
+
+The pixel check draws each word's Unicode in Noto Sans Myanmar and its Zawgyi in Noto Sans Zawgyi,
+which share a design, and scores the overlap. It found most of the bugs above, but it is a way to
+find them and not a grade: the forms real text uses for `ဖွဲ့` and `မှူး` score lower than Rabbit's
+tidier ones, as Noto draws them apart, and Zawgyi-One draws them well. Where the two disagreed, real
+text won.
+
+**What was not done.** The real Zawgyi here is one sample: 66 lines from a Myanmar government site
+and Rabbit's handful of test sentences, a few hundred words. Everything else is text from our own
+encoder. No Burmese speaker has reviewed the output. Single words detected alone are the weak spot,
+which is why the page has a Font list, and why a line too short to judge follows its document. The
+paste path trusts a font named Zawgyi, so Unicode text set in such a font and too short to judge is
+misread.
