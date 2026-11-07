@@ -1,0 +1,23 @@
+{
+  "name": "@okb/script-converters",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "description": "Script converters backed by word lists: Shahmukhi ↔ Gurmukhi, Urdu ↔ Hindi, and Cyrillic ↔ Latin.",
+  "exports": {
+    "./bridge": "./src/bridge.ts",
+    "./punjabi": "./src/punjabi.ts",
+    "./data/*": "./data/*"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@okb/engine": "workspace:*",
+    "@types/node": "^24.19.2",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
+  }
+}

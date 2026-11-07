@@ -1,0 +1,233 @@
+---
+import { decodeDictionary } from "@okb/engine/compact";
+import { Bridge } from "@okb/script-converters/bridge";
+import gurmukhiList from "@okb/script-converters/data/pa.txt?raw";
+import shahmukhiList from "@okb/script-converters/data/pnb.txt?raw";
+import { GURMUKHI_TO_SHAHMUKHI, SHAHMUKHI_TO_GURMUKHI } from "@okb/script-converters/punjabi";
+import PunjabiConverter from "../components/tools/PunjabiConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Shahmukhi to Gurmukhi Converter, and Gurmukhi to Shahmukhi | ${SITE.name}`;
+const description =
+  "Convert Punjabi between Shahmukhi and Gurmukhi as you type. A word list fills in the vowels Shahmukhi leaves out, words it can't find are marked, and your text never leaves your device.";
+
+const steps = [
+  "Paste or type Punjabi in either script. The page sees which one it is and turns round by itself.",
+  "The other script appears below as you type. The first time, the page downloads a word list (about 300 KB) that picks each word's spelling.",
+  "Check the underlined words: they weren't in the word list, so their vowels are a guess. Then copy the text, download it, or keep editing in the Punjabi keyboard.",
+];
+
+// Every example is run through the converters when the page is built.
+const toGurmukhi = new Bridge(SHAHMUKHI_TO_GURMUKHI, decodeDictionary(gurmukhiList).words);
+const toShahmukhi = new Bridge(GURMUKHI_TO_SHAHMUKHI, decodeDictionary(shahmukhiList).words);
+const examples = ["میں پنجابی بولدا ہاں۔", "پانی", "کتاب", "پاکستان", "لاہور", "استعمال"].map(
+  (shahmukhi) => ({ shahmukhi, gurmukhi: toGurmukhi.convert(shahmukhi).text }),
+);
+const back = ["ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ", "ਜ਼ਿੰਦਗੀ", "ਦਸੰਬਰ"].map((gurmukhi) => ({
+  gurmukhi,
+  shahmukhi: toShahmukhi.convert(gurmukhi).text,
+}));
+const three = toGurmukhi.convert("تن").text;
+
+const faqs = [
+  {
+    q: "Why does Shahmukhi to Gurmukhi need a word list?",
+    a: "Shahmukhi usually leaves out short vowels and doubled letters, so کتاب could be read many ways; Gurmukhi writes ਕਿਤਾਬ in full. No rule can tell which vowels a word has, but a list of 92,000 Gurmukhi words from Punjabi Wikipedia can: the page picks the word that fits, and the more common one when several do.",
+  },
+  {
+    q: "Which words come out wrong?",
+    a: `Words the list doesn't have, which the page underlines, and words that are written the same in Shahmukhi but differently in Gurmukhi. تن is both ਤਿੰਨ (three) and ਤਨ (body); the page writes the more common, ${three}, every time. Read the result through before you use it.`,
+  },
+  {
+    q: "Is Gurmukhi to Shahmukhi more reliable?",
+    a: "Yes. Gurmukhi writes every vowel, so the rules alone get most words right, and the Shahmukhi word list only has to choose between letters that sound alike, such as س, ص and ث or ز, ذ, ض and ظ.",
+  },
+  {
+    q: "Does it write ਣ as ن or ݨ?",
+    a: "As ن, as most Shahmukhi writing on Punjabi Wikipedia does. Text that has ݨ is read as ਣ.",
+  },
+  {
+    q: "My Gurmukhi has no nukta (ਖਬਰ for ਖ਼ਬਰ). Does that matter?",
+    a: "No. Both come out as خبر, because the word list knows the word.",
+  },
+  {
+    q: "What happens to digits and punctuation?",
+    a: "Gurmukhi digits become Shahmukhi ones and back (੧੯੪੭ and ۱۹۴۷), । becomes ۔, and commas and question marks turn round. Ordinary digits such as 1947 stay as they are.",
+  },
+  {
+    q: "Is my text uploaded?",
+    a: "No. The conversion runs in your browser, and your text never leaves your device. Once the word lists have loaded, the page works offline.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Shahmukhi to Gurmukhi Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: ["pa", "pnb"],
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Convert Shahmukhi Punjabi to Gurmukhi",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base
+  title={title}
+  description={description}
+  fonts={["gurmukhi", "nastaliq"]}
+  font="gurmukhi"
+  credits={{}}
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">
+      Shahmukhi to Gurmukhi Converter
+    </h1>
+    <a
+      href="#checked-heading"
+      class="rounded-full border border-border px-2 py-0.5 text-xs font-medium text-muted"
+      title="Some words come out wrong; see how we checked it"
+    >
+      Beta
+    </a>
+    <span class="font-gurmukhi text-xl text-accent" lang="pa">
+      ਸ਼ਾਹਮੁਖੀ ਤੋਂ ਗੁਰਮੁਖੀ
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Turn Punjabi in Shahmukhi into Gurmukhi, or Gurmukhi into Shahmukhi. A word list fills in the
+    vowels Shahmukhi leaves out, and the words it can't find are underlined, so you know what to
+    check. Everything happens on your device.
+  </p>
+
+  <PunjabiConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to convert Shahmukhi to Gurmukhi
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <table class="w-full table-fixed text-sm">
+        <thead>
+          <tr class="text-left text-muted">
+            <th scope="col" class="pb-1 font-medium">
+              Shahmukhi
+            </th>
+            <th scope="col" class="pb-1 font-medium">
+              Gurmukhi
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {examples.map((e) => (
+            <tr class="border-t border-border">
+              <td class="font-nastaliq py-1.5 pe-3 text-lg" lang="pnb" dir="rtl">
+                {e.shahmukhi}
+              </td>
+              <td class="font-gurmukhi py-1.5 text-lg" lang="pa">
+                {e.gurmukhi}
+              </td>
+            </tr>
+          ))}
+          {back.map((e) => (
+            <tr class="border-t border-border">
+              <td class="font-nastaliq py-1.5 pe-3 text-lg" lang="pnb" dir="rtl">
+                {e.shahmukhi}
+              </td>
+              <td class="font-gurmukhi py-1.5 text-lg" lang="pa">
+                {e.gurmukhi}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <p class="text-muted">
+      On running text from Punjabi Wikipedia, the word list finds 95% of the words in Gurmukhi
+      articles and 89% in Shahmukhi ones; the rest are spelled by rule and underlined. Against 3,068
+      word pairs from English Wiktionary that we kept aside while building the rules, 85% of
+      Gurmukhi words come out in Wiktionary's Shahmukhi spelling, and 64% of Shahmukhi words in its
+      Gurmukhi one. Some of the rest are spellings that are also in use (ਆਵਾਜ਼ for ਅਵਾਜ਼), but many
+      are real mistakes, mostly words that are written alike in Shahmukhi. That is why this
+      direction is marked Beta.
+    </p>
+    <p class="mt-2 text-muted">
+      As a second check we used one-word article titles that the two Punjabi Wikipedias link to each
+      other. Only about half match, because many titles are translations rather than the same word
+      (ਭਾਸ਼ਾ and زبان) and foreign names are spelled freely. No Punjabi speaker has reviewed the
+      output yet.
+    </p>
+    <p class="mt-2 text-xs text-muted">
+      Sources: word lists built from
+      <a class="underline" href="https://pa.wikipedia.org/">
+        Punjabi Wikipedia
+      </a>{" "}
+      and
+      <a class="underline" href="https://pnb.wikipedia.org/">
+        Western Punjabi Wikipedia
+      </a>
+      , and test pairs from{" "}
+      <a class="underline" href="https://en.wiktionary.org/">
+        English Wiktionary
+      </a>{" "}
+      by way of{" "}
+      <a class="underline" href="https://kaikki.org/">
+        kaikki.org
+      </a>
+      , all under
+      <a class="underline" href="https://creativecommons.org/licenses/by-sa/4.0/">
+        CC BY-SA 4.0
+      </a>
+      .
+    </p>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

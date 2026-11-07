@@ -21,5 +21,6 @@ describe("sitemap sections", () => {
     expect(at("/chanakya-to-unicode")).toBe("tools");
     expect(at("/bijoy-to-unicode")).toBe("tools");
     expect(at("/zawgyi-to-unicode")).toBe("tools");
+    expect(at("/shahmukhi-to-gurmukhi")).toBe("tools");
   });
 });

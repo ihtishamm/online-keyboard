@@ -17,6 +17,11 @@ export const TOOL_PAGES: readonly ToolPage[] = [
   { path: "/chanakya-to-unicode", name: "Chanakya to Unicode", languages: ["hindi"] },
   { path: "/bijoy-to-unicode", name: "Bijoy to Unicode", languages: ["bangla"] },
   { path: "/zawgyi-to-unicode", name: "Zawgyi to Unicode", languages: ["burmese"] },
+  {
+    path: "/shahmukhi-to-gurmukhi",
+    name: "Shahmukhi to Gurmukhi",
+    languages: ["punjabi", "shahmukhi"],
+  },
 ];
 
 /** The tools a keyboard page links to. */

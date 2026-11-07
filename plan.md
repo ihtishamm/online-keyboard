@@ -884,7 +884,12 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - round-trip tests;
     - unknown codes are counted and shown to the user.
 - [ ] **10.2 Script converters.**
-  - [ ] Shahmukhi ↔ Gurmukhi, with dictionary help for vowels.
+  - [x] Shahmukhi ↔ Gurmukhi, with dictionary help for vowels.
+    - **Done (2026-11-07), Beta:** `/shahmukhi-to-gurmukhi`, both directions, live as you type. It detects the script of what is typed or pasted and turns round by itself. New package `packages/script-converters`: a shared engine (`src/bridge.ts`) that Hindi ↔ Urdu will reuse, and the Punjabi rules (`src/punjabi.ts`). New island `ScriptConverter.tsx` for any such pair. Linked from the Punjabi and Shahmukhi keyboards, the home page and the sitemap.
+    - **Method:** Gurmukhi → Shahmukhi by rule is nearly mechanical, so Shahmukhi is the pivot. Each word of the target word list is indexed by a fold of its Shahmukhi spelling: letters Gurmukhi can't tell apart (س ص ث, ط ت, ع…) and letters people type alike (nukta or none). The more frequent match wins unless its spelling is further away. Words with no match keep the rules' spelling, and the page underlines them and counts them. The word lists are 100,000 words (Gurmukhi has 92,327), about 290 KB gzipped each, fetched only for the script being written and indexed a part at a time so the page keeps answering.
+    - **Numbers** (README): on the 3,068 Wiktionary pairs held out while tuning, 85.1 % Gurmukhi → Shahmukhi and 64.0 % Shahmukhi → Gurmukhi (the rules alone: 77.9 % and 31.3 %). On real Wikipedia text the list finds 95.1 % of Gurmukhi words and 88.9 % of Shahmukhi ones. The second reference, one-word titles linked between the two Wikipedias, matches 54 % and 51 %, because many titles are translations. Tuned on the dev pairs and the sentences, so those numbers are not independent.
+    - **Falls short of the two-reference bar:** no clean, independent Shahmukhi–Gurmukhi word list exists. The SLPG corpus on Hugging Face has no licence and no data, and learnpunjabi.org's lexicon isn't published. The titles are a weak second reference.
+    - **Not done:** homographs (تن: ਤਿੰਨ or ਤਨ) always get the more frequent word, as context is not used yet. ਣ is written ن, as Western Punjabi Wikipedia mostly does. No native-speaker check of the output or the page copy.
   - [ ] Hindi ↔ Urdu (Hindustani), with dictionary help. Show its quality number.
   - [ ] Serbian Cyrillic ↔ Latin.
   - [ ] Kazakh and Uzbek Cyrillic ↔ Latin. Check which official alphabet version is current.
@@ -979,6 +984,9 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | CLDR `my-t-my-s0-zawgyi`, `my-t-my-d0-zawgyi` | Zawgyi ↔ Unicode rules, with our fixes | Unicode License | In use (10.1) |
 | Rabbit | Independent Zawgyi rule tables, read as data in the tests | WTFPL | In use (10.1, tests only) |
 | Noto Sans Zawgyi | Draws Zawgyi on the converter page | SIL OFL 1.1 | In use (10.1), cut to the Myanmar block |
+| English Wiktionary via kaikki.org (Punjabi entries) | Shahmukhi–Gurmukhi test pairs | CC BY-SA 4.0 | In use (10.2, tests only) |
+| Punjabi Wikipedia `langlinks` dump | One-word titles linked to Western Punjabi Wikipedia: the second Shahmukhi reference | CC BY-SA 4.0 | In use (10.2, tests only) |
+| SLPG Punjabi Transliteration Corpus (Hugging Face) | — | No licence stated; data files removed | **Rejected** (10.2) |
 | Zawgyi-One 4.30 | Checking the output by eye | Not open licensed | Used for checking only; never copied or shipped |
 | Subtitle-based frequency lists | Chat words | Unclear (the underlying subtitles' rights) | **Avoid** unless the licence is clear |
 | Leipzig Corpora Collection | — | Sources conflict (CC BY vs CC BY-NC) | **Don't use** without written confirmation (the old plan listed it) |

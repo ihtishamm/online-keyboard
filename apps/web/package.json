@@ -48,6 +48,7 @@
     "@okb/inpage": "workspace:*",
     "@okb/layouts": "workspace:*",
     "@okb/legacy-fonts": "workspace:*",
+    "@okb/script-converters": "workspace:*",
     "astro": "^7.4.2",
     "idb-keyval": "^6.3.0",
     "lucide-react": "^1.61.0",
