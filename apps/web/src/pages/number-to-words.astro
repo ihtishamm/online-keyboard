@@ -1,0 +1,188 @@
+---
+import { numberToWords, type WordsLanguage, type WordsOptions } from "@okb/text-tools/number-words";
+import NumberToWords from "../components/tools/NumberToWords";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Number to Words in Urdu, Hindi, Bangla and Arabic: Cheque Amount Writer | ${SITE.name}`;
+const description =
+  "Write any amount in words in Urdu, Hindi, Bangla, Arabic and English, with lakh and crore, rupees and paisa, taka, riyals and dirhams, ready for a cheque. Live as you type, free and private.";
+
+// Every example is run through the tool when the page is built.
+const w = (input: string, language: WordsLanguage, opts: WordsOptions = {}) => {
+  const r = numberToWords(input, language, opts);
+  if (!r.ok) throw new Error(`example ${input} ${language}: ${r.reason}`);
+  return r.text;
+};
+const examples = [
+  { figures: "PKR 1,25,000.50", language: "ur", text: w("125000.50", "ur", { currency: "PKR" }) },
+  {
+    figures: "₹ 12,50,000",
+    language: "hi",
+    text: w("1250000", "hi", { currency: "INR", only: true }),
+  },
+  { figures: "৳ 2,500", language: "bn", text: w("2500", "bn", { currency: "BDT", only: true }) },
+  {
+    figures: "SAR 357.29",
+    language: "ar",
+    text: w("357.29", "ar", { currency: "SAR", only: true }),
+  },
+  {
+    figures: "PKR 1,25,000",
+    language: "en",
+    text: w("125000", "en", { currency: "PKR", only: true }),
+  },
+];
+
+const steps = [
+  "Type the amount in figures, with or without commas. Urdu, Arabic, Hindi and Bangla digits work too.",
+  "Choose the language and the currency. The amount appears in words as you type, with the English line beside it.",
+  "Copy the words onto your cheque, invoice or form. Untick “only” or choose no currency to spell a plain number.",
+];
+
+const faqs = [
+  {
+    q: "How do I write an amount on a cheque in Urdu?",
+    a: `Write the rupees, then the paisa after اور: 1,25,000.50 is ${w("125000.50", "ur", { currency: "PKR" })}. In English the same cheque reads ${w("125000.50", "en", { currency: "PKR", only: true })}. Most banks in Pakistan and India accept either language; the amount in words is the one that counts if the figures differ.`,
+  },
+  {
+    q: "What are lakh, crore, arab and kharab?",
+    a: `South Asia groups large numbers in hundreds after the first thousand: a lakh is 1,00,000 (a hundred thousand), a crore is 1,00,00,000 (ten million), an arab is a hundred crore (a billion) and a kharab a hundred arab. 12,50,00,000 is ${w("125000000", "ur")} in Urdu and ${w("125000000", "hi")} in Hindi. India often counts on in crores instead (100 crore, 1 lakh crore); tick the option to write it that way.`,
+  },
+  {
+    q: "Why do Hindi numbers like 91 to 99 have two spellings?",
+    a: `Both -वे and -बे are written (निन्यानवे and निन्यानबे), and so are पंद्रह and पन्द्रह. We follow CLDR, the standard data behind phones and browsers, except where Wiktionary and Hindi Wikipedia agree on another spelling, as for ${w("99", "hi")} and ${w("15", "hi")}. Urdu and Bangla have a few such words too, such as ${w("53", "ur")} and ${w("52", "bn")}.`,
+  },
+  {
+    q: "How does Arabic grammar change the words?",
+    a: `Arabic numbers agree with what they count. From 3 to 10 the number takes the opposite gender and the noun is plural (${w("3", "ar", { currency: "SAR" })}); from 11 to 99 the noun is singular with tanween (${w("25", "ar", { currency: "SAR" })}); after hundreds it is plain singular (${w("100", "ar", { currency: "SAR" })}); and for one and two the noun comes first (${w("2", "ar", { currency: "SAR" })}). Halalas are feminine, so 29 halalas is ${w("0.29", "ar", { currency: "SAR" })}. On a cheque the amount goes between فقط and لا غير.`,
+  },
+  {
+    q: "Which currencies does it know?",
+    a: "Pakistani, Indian and Nepalese rupees with paisa, Bangladeshi taka with poisha, and in Arabic the Saudi, Qatari and Omani riyal, the UAE dirham, the Kuwaiti, Bahraini and Jordanian dinar (with three decimals, for fils), the Egyptian pound and the US dollar. Choose “None” to spell any number, with a decimal point read digit by digit.",
+  },
+  {
+    q: "Is my amount sent anywhere?",
+    a: "No. The words are worked out in your browser, and nothing you type leaves your device. The page works offline once it has loaded.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Number to Words`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: ["ur", "hi", "bn", "ar", "en"],
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Write an amount in words",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+const FONT: Record<string, string> = {
+  ur: "font-nastaliq",
+  ar: "font-naskh",
+  hi: "font-devanagari",
+  bn: "font-bengali",
+  en: "",
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  fonts={["nastaliq", "naskh", "devanagari", "bengali"]}
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <h1 class="mb-2 text-2xl font-semibold tracking-tight sm:text-3xl">Number to Words</h1>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Write any amount in words in Urdu, Hindi, Bangla, Arabic and English, with lakh and crore, as it
+    goes on a cheque. Everything happens on your device.
+  </p>
+
+  <NumberToWords client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to write an amount in words
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <ul class="space-y-3">
+        {examples.map((e) => (
+          <li>
+            <span class="block text-sm text-muted">{e.figures}</span>
+            <span lang={e.language} dir="auto" class={`block text-lg ${FONT[e.language]}`}>
+              {e.text}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <ul class="list-disc space-y-2 ps-5 text-muted">
+      <li>
+        Urdu, Hindi and Bangla: CLDR's number rules, run by ICU, give the same words as ours for
+        every number to 1,000 and 1,000 more up to 99 kharab, except where we chose another
+        spelling. Every word from 0 to 99 is one Wiktionary gives, except seven we kept from CLDR:
+        چھ, تئیس and تریسٹھ, which Urdu Wikipedia uses more; চৌদ্দ, likewise in Bangla; and चौवालीस,
+        तिरेपन and तिरेसठ, which Hindi Wikipedia doesn't settle either way.
+      </li>
+      <li>
+        English with lakh and crore matches CLDR's Indian English up to 99,999 crore; above it we go
+        on counting in crores (one lakh crore) where CLDR switches to trillions.
+      </li>
+      <li>
+        Arabic: we match the 30 examples of the default style in the tafqit library's guide, and its
+        rules for placing the counted noun. Three of the guide's examples with a feminine noun
+        (ثلاثة ليرات) contradict its own code and the grammar; we follow the grammar (ثلاث ليرات).
+        CLDR's Arabic rules were set aside, because they give forms such as ثلاثة مائة for 300 and
+        إحدى عشر for a masculine 11.
+      </li>
+      <li>A native speaker has not yet checked the words in any of these languages.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

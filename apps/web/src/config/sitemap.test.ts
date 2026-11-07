@@ -26,5 +26,10 @@ describe("sitemap sections", () => {
     expect(at("/serbian-cyrillic-to-latin")).toBe("tools");
     expect(at("/kazakh-cyrillic-to-latin")).toBe("tools");
     expect(at("/uzbek-cyrillic-to-latin")).toBe("tools");
+    expect(at("/remove-diacritics")).toBe("tools");
+    expect(at("/digit-converter")).toBe("tools");
+    expect(at("/number-to-words")).toBe("tools");
+    expect(at("/word-counter")).toBe("tools");
+    expect(at("/fix-urdu-arabic-pdf-text")).toBe("tools");
   });
 });

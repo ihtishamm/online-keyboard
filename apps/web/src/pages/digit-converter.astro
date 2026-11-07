@@ -1,0 +1,153 @@
+---
+import { convertDigits, digitsOf, DIGIT_SYSTEMS } from "@okb/text-tools/digits";
+import DigitConverter from "../components/tools/DigitConverter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Digit Converter: English Numbers to Arabic, Urdu, Hindi and Bangla Digits | ${SITE.name}`;
+const description =
+  "Convert numbers in any text between 0123, Arabic ٠١٢٣, Urdu and Persian ۰۱۲۳, Hindi १२३ and Bangla ১২৩ digits as you type, with Arabic separators (٫ ٬ ٪) and lakh grouping. Free and private.";
+
+// Every example is run through the converter when the page is built.
+const examples = [
+  { from: "Call 0300-1234567", to: "arabext", opts: {} },
+  { from: "السعر 1,250.50 ريال", to: "arab", opts: { separators: true } },
+  { from: "قیمت ۱۲٬۵۰۰ تومان", to: "latn", opts: { separators: true } },
+  { from: "₹ 12500075", to: "deva", opts: { grouping: "indian" as const } },
+  { from: "মোট 2,50,000 টাকা", to: "beng", opts: {} },
+].map((e) => ({ ...e, result: convertDigits(e.from, e.to, e.opts).text }));
+const mixed = convertDigits("۱۲۳٤٥٦", "arabext").text;
+
+const steps = [
+  "Type or paste text with numbers in it, in any script.",
+  "Choose the digits you want. Every digit in the text changes as you type; the words around them stay as they are.",
+  "Set the options if you need them: Arabic separators, lakh or thousands grouping, numbers in English words left alone. Then copy or download.",
+];
+
+const faqs = [
+  {
+    q: "What is the difference between ٤٥٦ and ۴۵۶?",
+    a: `Arabic and Persian use different digit characters, and four, five and six even look different: ٤٥٦ in Arabic, ۴۵۶ in Persian and Urdu. Text typed on two keyboards often mixes them, which breaks searching and sorting. Choose "Urdu and Persian" and ${"۱۲۳٤٥٦"} becomes ${mixed}, all one kind.`,
+  },
+  {
+    q: "Which separators does Arabic use?",
+    a: `With Arabic or Persian digits, the decimal point is ٫ and the thousands separator ٬, as in ${convertDigits("1,234.5", "arab", { separators: true }).text}, and the percent sign is ٪. The "Separators to match" option writes them, and turns them back into . , and % when you convert to Western digits. Urdu text often keeps . and , even with Urdu digits; untick the option to keep separators as typed.`,
+  },
+  {
+    q: "Can it write lakh and crore?",
+    a: `Yes. Choose "Lakh and crore" and 12500075 becomes ${convertDigits("12500075", "latn", { grouping: "indian" }).text}, as in India, Pakistan and Bangladesh; "Thousands" gives ${convertDigits("12500075", "latn", { grouping: "western" }).text}. Numbers of four digits, such as years, are left ungrouped.`,
+  },
+  {
+    q: "Will it change COVID-19 or MP3?",
+    a: `Not unless you ask. Numbers touching English letters stay in Western digits by default, so ${convertDigits("COVID-19 کے 25 کیس", "arabext", { skipLatin: true }).text} keeps COVID-19 as it is. Untick "Leave numbers in English words alone" to convert those too.`,
+  },
+  {
+    q: "Which digits can it write?",
+    a: `${DIGIT_SYSTEMS.map((s) => `${s.name} (${digitsOf(s.id).slice(0, 3).join("")})`).join(", ")}. It reads the digits of every script in Unicode, so text in any of them converts.`,
+  },
+  {
+    q: "Is my text uploaded?",
+    a: "No. The conversion runs in your browser, and your text never leaves your device. The page works offline once it has loaded.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Digit Converter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Convert digits between scripts",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} fonts={["naskh", "devanagari", "bengali"]}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="mb-2 flex flex-wrap items-center gap-x-3 gap-y-1">
+    <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">Digit Converter</h1>
+    <span class="font-naskh text-xl text-accent" aria-hidden="true">
+      123 ↔ ١٢٣ ↔ ۱۲۳ ↔ १२३
+    </span>
+  </div>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Write the numbers in your text in English (Western), Arabic, Urdu and Persian, Hindi, Bangla or
+    any other script's digits, with the right separators and lakh grouping. Everything happens on
+    your device.
+  </p>
+
+  <DigitConverter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to convert digits
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <ul class="space-y-2">
+        {examples.map((e) => (
+          <li class="flex flex-wrap items-baseline gap-x-2">
+            <bdi class="font-naskh text-lg">{e.from}</bdi>
+            <span aria-hidden="true" class="text-muted">
+              →
+            </span>
+            <span class="sr-only">becomes</span>
+            <bdi class="font-naskh text-lg">{e.result}</bdi>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <p class="text-muted">
+      Each digit is read by its value in the Unicode Character Database, which covers the digits of
+      every script. The digits and separators we write were checked against ICU, the library
+      browsers use to format numbers: every set the page offers, and Arabic (Saudi Arabia), Persian
+      and Bangla formatting, match it exactly.
+    </p>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

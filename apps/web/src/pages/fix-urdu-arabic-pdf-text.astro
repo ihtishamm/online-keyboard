@@ -1,0 +1,180 @@
+---
+import { fixPdfText } from "@okb/text-tools/pdf-text";
+import PdfTextFixer from "../components/tools/PdfTextFixer";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Fix Urdu and Arabic Text Copied from a PDF: Reversed and Broken Letters | ${SITE.name}`;
+const description =
+  "Paste Urdu, Arabic or Persian text copied from a PDF and get it back the right way round: letters joined again, backwards lines and words put in order, numbers kept as they are, hidden marks removed. Free and private.";
+
+// Every example is run through the fixer when the page is built.
+const fix = (text: string) => fixPdfText(text).text;
+const examples = [
+  {
+    what: "Urdu laid out backwards, in letter shapes",
+    from: "ﯽﺌﮔ ﮪﮍﺑ (ًﺎﺒﯾﺮﻘﺗ) ﯼﺩﺎﺑﺁ ﯽﮐ 2025 ﮟﯿﻣ ﻥﺎﺘﺴﮐﺎﭘ",
+    lang: "ur",
+  },
+  {
+    what: "Arabic laid out backwards",
+    from: "ﺔﺋﺎﻤﻟﺍ ﻲﻓ 125 ﺩﺪﻌﻟﺍ ،ﻪﻠﻟﺍ ﺔﻤﺣﺭﻭ ﻢﻜﻴﻠﻋ ﻡﻼﺴﻟﺍ",
+    lang: "ar",
+  },
+  {
+    what: "Urdu with its words backwards",
+    from: "ہے۔ زبان قومی کی پاکستان اردو",
+    lang: "ur",
+  },
+  {
+    what: "Arabic with its lam ligatures turned round",
+    from: "إىل عىل األدب ال بأس",
+    lang: "ar",
+  },
+].map((e) => ({ ...e, to: fix(e.from) }));
+
+const steps = [
+  "Copy the text from the PDF and paste it into the box.",
+  "The fixed text appears below at once. If a line still reads backwards, choose how the lines are broken under Line order.",
+  "Copy the fixed text or download it as a file.",
+];
+
+const faqs = [
+  {
+    q: "Why does Urdu or Arabic text come out broken when I copy it from a PDF?",
+    a: "A PDF stores the shapes on the page, not the text. Many PDFs record each letter as the shape it takes at the start, middle or end of a word (the Arabic presentation forms), and in the order they are drawn, from left to right. Copied out, the text runs backwards, and the letters, though they look right, are not the ones a keyboard types: search, spell check and sorting all fail on them.",
+  },
+  {
+    q: "What does the fixer change?",
+    a: `It turns the letter shapes back into letters, reverses lines laid out backwards letter by letter or word by word while keeping numbers and English words the right way round (${fix("ﮟﯿﻣ 2025")}, not 5202), removes the invisible direction marks some PDF readers add, and mends the lam ligature where it came out turned round: اهلل as الله, عىل as على, اسالم as اسلام.`,
+  },
+  {
+    q: "A line still reads backwards. What can I do?",
+    a: "The fixer decides line by line from the letter shapes and from where the full stop is. A heading or a line without a full stop follows the rest of the text. If it still guesses wrong, choose under Line order whether every line is backwards letter by letter or word by word.",
+  },
+  {
+    q: "Does it work for Persian, Pashto and Sindhi?",
+    a: "Persian, yes: it was checked on Persian text as well as Urdu and Arabic. Pashto, Sindhi and other languages in the Arabic script get the same fixes for letter shapes and order, but the word list that mends لا covers Urdu, Persian and Arabic only.",
+  },
+  {
+    q: "Is my text sent anywhere?",
+    a: "No. The text is fixed in your browser, and nothing you paste leaves your device. The word list is downloaded once, like the page itself.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} PDF Text Fixer`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    inLanguage: ["ur", "ar", "fa"],
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Fix Urdu or Arabic text copied from a PDF",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} fonts={["naskh"]}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <h1 class="mb-2 text-2xl font-semibold tracking-tight sm:text-3xl">
+    Fix Urdu and Arabic Text Copied from a PDF
+  </h1>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Paste text that came out backwards or in broken letters, and get it back as you would type it.
+    Works for Urdu, Arabic and Persian. Everything happens on your device.
+  </p>
+
+  <PdfTextFixer client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to fix text copied from a PDF
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <ul class="space-y-4">
+        {examples.map((e) => (
+          <li>
+            <span class="block text-sm text-muted">{e.what}</span>
+            <span
+              lang={e.lang}
+              dir="ltr"
+              class="block font-naskh text-lg text-muted line-through decoration-1"
+            >
+              {e.from}
+            </span>
+            <span lang={e.lang} dir="rtl" class="block font-naskh text-lg">
+              {e.to}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <ul class="list-disc space-y-2 ps-5 text-muted">
+      <li>
+        We printed 792 sentences, 192 in Urdu and 300 each in Persian and Arabic, to a PDF with
+        Chrome and copied them out with pdftotext, a common PDF reader on Linux. None came out
+        right; after the fixer, 743 did (94%): 189 Urdu, 291 Persian and 263 Arabic. More than half
+        the rest are words whose لا came out as ال where the word list couldn't settle it, mostly
+        because both spellings are words, such as طالب and طلاب.
+      </li>
+      <li>
+        Read in its raw order, with every line's words backwards, 191 of the Urdu and 223 of the
+        Arabic sentences came back whole. Persian fared worse in that mode, which breaks lines at
+        the joiner inside words such as می‌شود.
+      </li>
+      <li>
+        We also broke every third sentence ourselves, from the Unicode data alone: in letter shapes,
+        laid out backwards letter by letter, and with the words backwards. The fixer put back all of
+        them but one.
+      </li>
+      <li>On correct text, 47,901 words of Urdu, Persian and Arabic, it changed nothing.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

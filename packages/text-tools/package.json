@@ -1,0 +1,24 @@
+{
+  "name": "@okb/text-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "description": "Text tools: diacritics remover, digit converter, number to words, word counter and PDF text repair.",
+  "exports": {
+    "./diacritics": "./src/diacritics.ts",
+    "./digits": "./src/digits.ts",
+    "./number-words": "./src/number-words.ts",
+    "./counter": "./src/counter.ts",
+    "./pdf-text": "./src/pdf-text.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
+  }
+}

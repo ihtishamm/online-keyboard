@@ -1,0 +1,185 @@
+---
+import {
+  countText,
+  READING_WPM,
+  smsParts,
+  SPEAKING_WPM,
+  wordsOf,
+  xLength,
+} from "@okb/text-tools/counter";
+import WordCounter from "../components/tools/WordCounter";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Word Counter and Character Counter for Urdu, Hindi, Arabic, Thai, Chinese and Every Language | ${SITE.name}`;
+const description =
+  "Count words, characters, sentences and paragraphs in any language, with characters counted as you see them and words found in Thai, Chinese and Japanese too. SMS parts and X length included. Free and private.";
+
+// Every example is counted by the tool when the page is built.
+const examples = [
+  { lang: "hi", text: "नमस्ते दुनिया" },
+  { lang: "ur", text: "آپ کیسے ہیں؟" },
+  { lang: "th", text: "สวัสดีครับ ผมชื่อสมชาย" },
+  { lang: "zh", text: "我爱北京天安门" },
+  { lang: "en", text: "A well-known café 👨‍👩‍👧" },
+].map((e) => {
+  const c = countText(e.text);
+  return { ...e, words: c.words, characters: c.characters, units: c.utf16, parts: wordsOf(e.text) };
+});
+const urduSms = smsParts("آپ کیسے ہیں؟ میں ٹھیک ہوں۔");
+
+const steps = [
+  "Type or paste your text into the box. The counts change as you type.",
+  "Read the words, characters, sentences and paragraphs at the top, with the time it takes to read.",
+  "Check how many SMS the text needs and its length on X before you send it.",
+];
+
+const faqs = [
+  {
+    q: "Why does this count fewer characters than other counters in Hindi or Bangla?",
+    a: `Most counters count code units, the pieces a computer stores, not the letters you see. In नमस्ते, स्ते is one letter built from four pieces, so the word is ${countText("नमस्ते").characters} characters here and ${countText("नमस्ते").utf16} on a counter that counts pieces. The same happens with emoji: 👨‍👩‍👧 is one character but ${countText("👨‍👩‍👧").utf16} pieces. The pieces are shown under “More counts” as UTF-16 units, which is what a form's character limit usually checks.`,
+  },
+  {
+    q: "How are words counted in Thai, Chinese and Japanese?",
+    a: `These languages are written without spaces between words, so counting spaces gives nonsense. We use the Unicode word rules and the word dictionaries built into your browser. สวัสดีครับ ผมชื่อสมชาย is ${countText("สวัสดีครับ ผมชื่อสมชาย").words} words (${wordsOf("สวัสดีครับ ผมชื่อสมชาย").join(" · ")}), not 2. Microsoft Word counts every Chinese or Japanese character as a word instead, so we show that number as well.`,
+  },
+  {
+    q: "Is a hyphenated word one word or two?",
+    a: `One. Whatever is written between two spaces counts once, as in Microsoft Word: well-known, and/or, 2025-11-07 and Turkish 2004'te are one word each. The exception is Chinese, Japanese, Thai and the other scripts written without spaces, where the browser's dictionary finds the words, so 我有3个iPhone手机 is ${wordsOf("我有3个iPhone手机").length} words.`,
+  },
+  {
+    q: "How many SMS will my Urdu or Hindi message take?",
+    a: `A text message holds 160 characters of the basic Latin set (GSM 7-bit), but only 70 once it contains any other letter, such as Urdu, Hindi or an emoji. Longer messages are split into parts of 153 or 67, because each part carries a short header. ${"آپ کیسے ہیں؟ میں ٹھیک ہوں۔"} is ${urduSms.units} units, so ${urduSms.parts} message. Curly quotes “ ” and some accents also force the 70 limit; the counter lists the characters that did it.`,
+  },
+  {
+    q: "How does X (Twitter) count my post?",
+    a: `X allows 280, but counts each Chinese, Japanese and Korean character and each emoji as 2, and every web address as 23. Urdu, Arabic, Hindi, Bangla, Thai and the other scripts of South Asia, the Middle East and Europe count 1 for each code point: سلام is ${xLength("سلام")}, नमस्ते is ${xLength("नमस्ते")} and 你好 is ${xLength("你好")}.`,
+  },
+  {
+    q: "How is reading time worked out?",
+    a: `At ${READING_WPM} words a minute for silent reading and ${SPEAKING_WPM} for reading aloud, the averages for adults reading English found by Marc Brysbaert's 2019 review of reading-rate studies. Reading speeds in other languages and scripts differ, so take it as a rough guide.`,
+  },
+  {
+    q: "Is my text sent anywhere?",
+    a: "No. Everything is counted in your browser, and nothing you type leaves your device. The page works offline once it has loaded.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Word Counter`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Count the words and characters in a text",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <h1 class="mb-2 text-2xl font-semibold tracking-tight sm:text-3xl">Word and Character Counter</h1>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Count words, characters, sentences and paragraphs in any language, including Urdu, Hindi,
+    Arabic, Thai, Chinese and Japanese. Everything happens on your device.
+  </p>
+
+  <WordCounter client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to count words and characters
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <ul class="space-y-3">
+        {examples.map((e) => (
+          <li>
+            <span lang={e.lang} dir="auto" class="block text-lg">
+              {e.text}
+            </span>
+            <span class="block text-sm text-muted">
+              {e.words} {e.words === 1 ? "word" : "words"}, {e.characters} characters
+              {e.units !== e.characters && ` (${e.units} UTF-16 units)`}
+              {e.parts.length > e.text.split(" ").length && (
+                <>
+                  : <span lang={e.lang}>{e.parts.join(" · ")}</span>
+                </>
+              )}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <ul class="list-disc space-y-2 ps-5 text-muted">
+      <li>
+        Characters, words and sentences follow the Unicode rules for text boundaries (UAX #29), as
+        built into your browser, with its dictionaries for Thai, Lao, Khmer, Burmese, Chinese and
+        Japanese. Browsers carry their own copies of these rules, so counts in those six languages
+        can differ slightly between browsers.
+      </li>
+      <li>
+        Words: on the 1,000 sentences of each Universal Dependencies parallel treebank, our count
+        equals the words between spaces in every sentence of Hindi, Arabic, Korean, Turkish,
+        Indonesian, Russian, English, German and French. For Chinese it comes within 0.5% of the
+        treebank's hand-checked words and for Japanese within 3%. Thai comes out 13% higher, because
+        the browser splits compounds that the treebank keeps whole, such as เดินทาง (เดิน + ทาง).
+      </li>
+      <li>
+        SMS: the character set is the one in Unicode's table of the GSM 03.38 alphabet, and the
+        number of messages matches all 48 cases in the tests of Twilio's segment calculator.
+      </li>
+      <li>
+        X: the length matches 22 of the 24 weighted-length tests published with twitter-text, X's
+        own counting library. The other two test which web addresses X accepts as links; we count
+        any address as 23.
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

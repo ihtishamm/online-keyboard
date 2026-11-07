@@ -1,0 +1,175 @@
+---
+import {
+  DEFAULT_REMOVE,
+  removeDiacritics,
+  type DiacriticOptions,
+} from "@okb/text-tools/diacritics";
+import DiacriticsRemover from "../components/tools/DiacriticsRemover";
+import Base from "../layouts/Base.astro";
+import { SITE } from "../config/site";
+
+const title = `Remove Diacritics: Harakat, Niqqud and Accents Remover | ${SITE.name}`;
+const description =
+  "Remove Arabic and Urdu harakat (zabar, zer, pesh, shadda), Hebrew niqqud and cantillation, Latin accents and Russian stress marks as you type. Choose which marks go; letters like آ, ئ, й and every Hindi vowel sign stay. Free and private.";
+
+// Every example is run through the remover when the page is built.
+const strip = (text: string, opts: Partial<DiacriticOptions> = {}) =>
+  removeDiacritics(text, { remove: DEFAULT_REMOVE, ...opts }).text;
+const examples = [
+  { from: "اَلسَّلَامُ عَلَيْكُمْ", lang: "ar" },
+  { from: "پاکِسْتان زِنْدَہ باد", lang: "ur" },
+  { from: "שָׁלוֹם עֲלֵיכֶם", lang: "he" },
+  { from: "Ça va? Où est le café?", lang: "fr" },
+  { from: "Łódź, Kraków, Gdańsk", lang: "pl" },
+  { from: "Где моя́ ру́чка?", lang: "ru" },
+].map((e) => ({ ...e, to: strip(e.from) }));
+
+const steps = [
+  "Type or paste your text. It can mix scripts: Arabic, Urdu, Hebrew and Latin are each handled by their own rules.",
+  "The text without diacritics appears below as you type, with a count of what was removed.",
+  "Untick any kind of mark you want to keep, such as shadda or the Hebrew shin dot, then copy or download the result.",
+];
+
+const faqs = [
+  {
+    q: "Which Arabic and Urdu marks does it remove?",
+    a: `The short vowels (zabar, zer and pesh, called fatha, kasra and damma in Arabic), tanween, jazm (sukun), shadda, the superscript alef (khari zabar), Quranic signs and tatweel, each with its own box. It keeps the hamza and madda that are part of a letter, so آ, أ, ئ, ؤ, ۂ and ۓ stay as they are: ${strip("آئِینَہ")} and ${strip("سُؤال")}. Tick "Hamza and madda on alef" to write أ, إ and آ as a plain ا, as some search indexes do.`,
+  },
+  {
+    q: "Why does ٱلْكِتَٰبُ become الكتب and not الكتاب?",
+    a: `In the Quran's spelling the long a is often only the small superscript alef, so removing it leaves الكتب. Modern spelling writes it as a full alef. For Quranic text, tick "write ٰ as ا": ${strip("ٱلْكِتَٰبُ", { quranSpelling: true })}. Words that modern spelling also writes without the alef keep it out: ${strip("هَٰذَا ذَٰلِكَ", { quranSpelling: true })}.`,
+  },
+  {
+    q: "Why doesn't Hebrew come out in the usual spelling?",
+    a: `Removing niqqud gives the spelling without vowel letters (ktiv haser): ${strip("אֱלֹהִים")}. Everyday Hebrew without niqqud adds ו and י as vowel letters (ktiv male, אלוהים). Which ones to add depends on the word, so the remover doesn't guess: of 5,000 Wiktionary words we checked, 17% differ from their usual spelling in this way.`,
+  },
+  {
+    q: "Can I keep ñ, or write ä as ae?",
+    a: `Yes. Type the letters to keep in "Keep these letters", for example ñÑ for Spanish: mañana stays mañana. For German, choose the German spelling and Müller becomes ${strip("Müller", { spelling: "de" })}; for Danish and Norwegian, Ålborg becomes ${strip("Ålborg", { spelling: "da" })}. "Plain ASCII letters" also spells ß, æ and þ in plain letters: ${strip("Straße", { latin: "ascii" })}.`,
+  },
+  {
+    q: "Does it remove ł, ø and đ?",
+    a: `Yes: ${strip("Łódź, Tromsø, Đorđe")}. These letters have no separate mark in Unicode, so many removers that rely on splitting letters from marks leave them as they are.`,
+  },
+  {
+    q: "Will it break Hindi, Bangla or other scripts?",
+    a: "No. Only Arabic-script, Hebrew, Latin, Greek and Cyrillic marks are removed. The vowel signs of Hindi, Bangla, Thai and other scripts are part of their letters, so text in those scripts comes back exactly as it was.",
+  },
+  {
+    q: "Is my text uploaded?",
+    a: "No. Everything runs in your browser, and your text never leaves your device. The page works offline once it has loaded.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${SITE.name} Diacritics Remover`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web browser)",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    url: new URL(Astro.url.pathname, Astro.site).href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Remove diacritics from text",
+    step: steps.map((text, i) => ({ "@type": "HowToStep", position: i + 1, text })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} fonts={["naskh", "hebrew"]}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <h1 class="mb-2 text-2xl font-semibold tracking-tight sm:text-3xl">Remove Diacritics</h1>
+  <p class="mb-5 max-w-3xl text-sm text-muted sm:text-base">
+    Take the harakat out of Arabic and Urdu, the niqqud out of Hebrew, and the accents out of Latin,
+    Greek and Russian text. Choose which marks go; letters that need their mark stay. Everything
+    happens on your device.
+  </p>
+
+  <DiacriticsRemover client:idle={{ timeout: 500 }} />
+
+  <div class="below-fold mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr]">
+    <section aria-labelledby="howto-heading" class="min-w-0">
+      <h2 id="howto-heading" class="mb-3 text-xl font-semibold">
+        How to remove diacritics
+      </h2>
+      <ol class="list-decimal space-y-2 ps-5">
+        {steps.map((s) => (
+          <li>{s}</li>
+        ))}
+      </ol>
+    </section>
+    <section aria-labelledby="examples-heading" class="min-w-0">
+      <h2 id="examples-heading" class="mb-3 text-xl font-semibold">
+        Examples
+      </h2>
+      <ul class="space-y-2">
+        {examples.map((e) => (
+          <li class="flex flex-wrap items-baseline gap-x-2">
+            <span lang={e.lang} dir="auto" class="font-naskh text-lg">
+              {e.from}
+            </span>
+            <span aria-hidden="true" class="text-muted">
+              →
+            </span>
+            <span class="sr-only">becomes</span>
+            <span lang={e.lang} dir="auto" class="font-naskh text-lg">
+              {e.to}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="checked-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="checked-heading" class="mb-3 text-xl font-semibold">
+      How we checked it
+    </h2>
+    <ul class="list-disc space-y-2 ps-5 text-muted">
+      <li id="checked-latin">
+        Latin: on 17,600 words with accents from 47 languages, plain ASCII matches ICU's Latin-ASCII
+        transform except on a few IPA letters such as ɑ and ʃ, which ICU leaves as they are; German
+        spelling matches ICU's de-ASCII on every German word.
+      </li>
+      <li id="checked-wiktionary">
+        Arabic script, Hebrew and Russian: we removed the marks from words as Wiktionary writes them
+        with their vowels or stress and compared the result with the entry's plain title. It matched
+        on 4,975 of 5,000 Arabic words, 4,968 of 5,000 Urdu, 3,942 of 3,999 Russian and 681 of 731
+        Persian. Almost all the rest differ only in spacing, punctuation or letter forms (ك for ک, a
+        missing ZWNJ), or the title is another form of the word.
+      </li>
+      <li>
+        Hebrew matched on 4,047 of 5,000 words. Nearly all the others are spelled in full without
+        niqqud, with an extra ו or י for the vowels (אֱלֹהִים is written אלוהים). Adding those
+        letters takes knowing the word, so the tool leaves the spelling as it is.
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="faq-heading" class="below-fold mt-12 max-w-3xl">
+    <h2 id="faq-heading" class="mb-3 text-xl font-semibold">
+      Frequently asked questions
+    </h2>
+    <div class="divide-y divide-border rounded-xl border border-border bg-surface">
+      {faqs.map((f) => (
+        <details class="group px-4 py-3">
+          <summary class="cursor-pointer font-medium">{f.q}</summary>
+          <p class="mt-2 text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>

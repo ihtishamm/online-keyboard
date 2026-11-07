@@ -93,6 +93,7 @@ Each item's competitor check (§5.1) refreshes this table. Rows marked *(check)*
 | **Keyboard-tester sites** (monsgeek, key-tester.pages.dev) | Large search volume. Monsgeek: ANSI and ISO pictures, ghosting and rollover, polling rate. | Built for desktop: key-tester and monsgeek overflow sideways at 360 px (681 px and 462 px). Store pages with sale popups. No ABNT2 or JIS, no layout mapping, no Unicode inspector (checked 2026-11-01). | A tester with ANSI, ISO, ABNT2 and JIS, chatter checks and OS layout detection, plus layout mapping and a Unicode inspector that shows ZWJ, ZWNJ and RLM, and a multi-touch tester on phones. |
 | **Legacy-font converters** (TypingBaba, unicodetoxx, Rabbit) | Large searches (Kruti Dev, Bijoy, Zawgyi). Most convert both ways; some convert live. | Ad-heavy (TypingBaba: 12–16 ad frames, button press to convert). The shared classic Kruti Dev code misplaces र् in clusters and misreads चौ. English in a pasted Word document is garbled. Rabbit doesn't detect Zawgyi (checked 2026-11-07). | Tables checked against the font and two references, font-aware paste, "Copy for Kruti Dev" that pastes into Word in the font, automatic Zawgyi detection. |
 | **Case-converter sites** | Large search volume | English rules only *(check)* | Turkish İ/ı, German ß, Greek tonos, Dutch IJ, Irish prefixes |
+| **Text-tool sites** (wordcounter.net, noqta.tn, num2word.com, charset.org) | Large searches for word counts, number to words and "fix reversed Arabic" | 9–10 ad frames and about 60–100 requests. wordcounter.net counts UTF-16 units and Thai as 2 words; noqta's fix turns 2025 into 5202 and leaves Urdu letter shapes; charset.org leaves harakat and niqqud (checked 2026-11-07). | Grapheme counts and words in every script, SMS and X length; a PDF fixer measured on real pdftotext output; number words in five languages for a cheque. |
 | **Gboard / SwiftKey** (native) | The bar for mobile typing feel | Not on desktop. No export, image cards, InPage, cheat sheets or tests. | Match their feel on the web (Phase 5), and offer what they can't |
 
 **Our position:** deep where our audience lives (South Asian and Arabic-script languages, with flagship features), broad everywhere else (110 languages, all with a good phone keyboard). Private, offline, and every tool works on a phone.
@@ -913,16 +914,36 @@ Page names, from the owner's table (title and H1; URL stays `/<lang>/roman`):
     - **References:** Kazakh: the draft decree and Wikipedia's chart for → Latin, compared with kazakh-script-converter and qazlatyn-db (MIT; they differ only on ё ц ч щ я); Tatoeba and kkwiki text for → Cyrillic. Uzbek: uztext (MIT, each case citing the 1995 rules, the explanatory dictionary or the 2026 law) and CLDR. ICU's uz_Cyrl-uz_Latn was tried and set aside: it doesn't follow the 1995 rules (obʼyekt, sentyabr) and back to Cyrillic it writes э for every e.
     - **Why Uzbek is Beta:** only 169 Uzbek Cyrillic sentences are free to test with, and Latin → Cyrillic can still take an Uzbek word for a Russian one (past → пасть).
     - **Not done:** past → пасть; AQSh in a text all in capitals becomes AQSH; the 2027 spelling rules aren't published, so only the four letters change; the Turkic Academy's 2024 common alphabet was not checked (its site served an anti-robot page); no native-speaker check of the output or the page copy.
-- [ ] **10.3 Text tools.**
-  - [ ] **Diacritics remover:** Arabic and Urdu harakat, Hebrew niqqud, Latin accents.
-  - [ ] **Digit converter:** ٠١٢ / ۰۱۲ / ०१२ / 012.
-  - [ ] **Number to words** in Urdu, Hindi, Arabic and Bangla (cheque writing, with lakh and crore).
-  - [ ] **Word and character counter** for all scripts, grapheme-aware.
-  - [ ] **"Fix Urdu/Arabic text copied from a PDF":** turn presentation forms back into normal letters and undo reversed order. This is a common pain point.
-- [ ] Each tool:
+- [x] **10.3 Text tools.**
+  - **10.3 start (2026-11-07): competitor check.** Chromium, 1366 and 360 px; all loaded and none scrolls sideways at 360 px. Beat list:
+    - **wordcounter.net:** 9–10 ad frames, about 60 requests. Counts UTF-16 units, not characters (नमस्ते दुनिया क्षत्रिय is 22; a family emoji and é are 10); a Thai sentence is 2 words, seven hanzi one word.
+    - **noqta.tn "Fix reversed Arabic text":** about 60 requests; at 360 px the cookie banner covers the box. Its fix turns 2025 into 5202 and leaves Urdu letter shapes (پ ک ی ے ڑ ھ گ) unconverted.
+    - **num2word.com:** about 100 requests, 8–9 ad frames, button press; lakh and crore right in Urdu and English (writes پچھتر). **amountinwords.netlify.app:** PKR only, English cheque line in capitals. adalatonline.pk: 92 requests.
+    - **charset.org (remove accents):** drops ł ø đ, always strips ñ, and leaves Arabic harakat and Hebrew niqqud as they are.
+    - **What we do better:** everything live and on the device; graphemes, not code units; words for scripts without spaces; SMS parts and X length with the characters to blame; PDF text fixed with numbers and English kept in order and the lam ligatures mended; mark groups chosen one by one; cheque words in five languages with each currency.
+  - **Sources** (§8 and `packages/text-tools/README.md`): UCD 17; ICU (Latin-ASCII, de-ASCII, RBNF spell-out, `Intl.NumberFormat`, `Intl.Segmenter`); CLDR RBNF for ur, hi, bn and en_IN; Wiktionary through kaikki.org; tafqit (MIT, read as data); Universal Dependencies PUD; Unicode's GSM0338.TXT; Twilio's segment calculator tests (MIT); twitter-text (Apache-2.0); Brysbaert 2019; Wikipedia extracts and pdftotext for the PDF fixer. All new code is in a new package, `packages/text-tools`, one entry point per tool.
+  - [x] **Diacritics remover:** Arabic and Urdu harakat, Hebrew niqqud, Latin accents.
+    - **Done (2026-11-07):** `/remove-diacritics`, live, with each group of marks chosen on its own (Arabic harakat, Quranic signs, tatweel, Hebrew niqqud and cantillation, Latin and Greek accents, Russian stress, plain ASCII, German spelling). Letters such as آ ئ й and every Indic vowel sign stay.
+    - **Numbers** (README): plain ASCII matches ICU's Latin-ASCII on 99.97 % of 951,894 words (the rest IPA letters and º ª); German spelling matches de-ASCII on all 15,096 German words. Against Wiktionary's marked and plain forms: Arabic 4,975/5,000, Urdu 4,968/5,000, Russian 3,942/3,999, Persian 681/731, with the rest sorted by kind in the tests. Hebrew 4,047/5,000: 848 others differ only by the ו and י of everyday spelling (ktiv male), which needs knowing the word, so the tool doesn't add them.
+  - [x] **Digit converter:** ٠١٢ / ۰۱۲ / ०१२ / 012.
+    - **Done (2026-11-07):** `/digit-converter`, live, to any of 21 digit sets, reading any Unicode digit; Arabic separators (٫ ٬ ٪) and grouping in thousands or lakhs. Checked code point by code point against UCD 17, and every set and the Arabic, Persian and Bangla formatting against ICU's `Intl.NumberFormat`.
+  - [x] **Number to words** in Urdu, Hindi, Arabic and Bangla (cheque writing, with lakh and crore).
+    - **Done (2026-11-07):** `/number-to-words`, live, in Urdu, Hindi, Bangla, Arabic and English with lakh and crore, and a cheque line with rupees and paisa, taka, riyals or dirhams.
+    - **Numbers** (README): CLDR's rules run by ICU give our words for all 2,014 test numbers per language, except where we chose Wiktionary's spelling (Urdu 54, Hindi 389, Bangla 42 numbers). Every word 0–99 is Wiktionary's, except seven kept from CLDR. Arabic matches tafqit's 30 default-style examples; CLDR's Arabic rules were set aside (ثلاثة مائة, a masculine إحدى عشر), and three of tafqit's feminine examples contradict the grammar.
+    - **Not done:** no native-speaker check in any language; where Urdu puts صرف on a cheque has no source, so the page doesn't add it; Bangla writes লাখ, not লক্ষ, with no option.
+  - [x] **Word and character counter** for all scripts, grapheme-aware.
+    - **Done (2026-11-07):** `/word-counter`: words, characters (graphemes), without spaces, sentences, paragraphs, reading and speaking time, the scripts in the text, most used words, SMS parts with the characters that force Unicode, and the length on X.
+    - **Numbers** (README): on the 1,000 sentences of each Universal Dependencies PUD treebank, the word count equals the space count in every sentence of Hindi, Arabic, Korean, Turkish, Indonesian, Russian, English, German and French; against hand-made words, Chinese 0.5 % high, Japanese 3 % low, Thai 13 % high. SMS: every character of GSM0338.TXT and all 48 Twilio cases. X: 22 of twitter-text's 24 weighted-length cases (the other two are which addresses X accepts as links).
+    - **Not done:** Thai is high because ICU's dictionary splits compounds (เดินทาง); our own Thai word list would fix it. Counts for scripts without spaces vary a little by browser. The case converter's `textCounts` still counts a hyphenated word as two.
+  - [x] **"Fix Urdu/Arabic text copied from a PDF":** turn presentation forms back into normal letters and undo reversed order. This is a common pain point.
+    - **Done (2026-11-07):** `/fix-urdu-arabic-pdf-text`: letter shapes back to letters; lines laid out backwards reversed letter by letter, keeping numbers and English in order as UAX #9 groups them; lines with their words backwards reversed word by word (decided by the full stop, then by a vote of the text); direction marks removed; marks read before their letter moved back; lam ligatures read back wrongly mended, with the word list deciding ال → لا. A Line order box overrides.
+    - **Numbers** (README): 792 Wikipedia and treebank sentences printed by Chrome and read by pdftotext: none right before, 743 after (94 %; Urdu 189/192, Persian 291/300, Arabic 263/300). In `-raw` order Urdu 191/192 and Arabic 223/300. Damage made from the Unicode data alone: 1,055 of 1,056 restored. 47,901 words of correct text are left unchanged.
+    - **Not done:** Persian from `pdftotext -raw` (77/300; that mode breaks lines at ZWNJ); ال/لا where both are words (طالب, طلاب); only Chrome's PDFs read by pdftotext were tested, not Acrobat or InPage PDFs.
+- [x] Each tool:
   - links from the relevant keyboard pages;
   - is in the sitemap;
   - gets e2e and axe tests on desktop and phone.
+  - **Done (2026-11-07):** all five are in `src/config/tools.ts` (keyboard pages and sitemap) and on the home page; `e2e/text-tools.spec.ts` checks each tool, its keyboard link and axe on desktop and Pixel 7.
 
 **Exit**
 - Every converter matches its reference outputs on its test corpus.
@@ -1025,6 +1046,15 @@ Check each one again at the start of the phase that uses it. "Confirmed" means c
 | ICU uz_Cyrl-uz_Latn, uz_Latn-uz_Cyrl | — | Unicode License | Tried, not used: doesn't follow the 1995 rules |
 | uz-books (Hugging Face, murodbek) | — | Card says Apache 2.0; nothing on the books' own rights | **Not used** (10.2) |
 | Zawgyi-One 4.30 | Checking the output by eye | Not open licensed | Used for checking only; never copied or shipped |
+| ICU 74 transliterators Latin-ASCII, de-ASCII and RBNF spell-out (system ICU, through ctypes) | References for the diacritics remover and number to words | Unicode License | In use (10.3, tests only) |
+| CLDR main RBNF rules for ur, hi, bn, en_IN | Number words 0–99 and scales | Unicode License | In use (10.3) |
+| English Wiktionary via kaikki.org (ar, ur, fa, he, ru words; ur, hi, bn number words) | Diacritics and number-word test pairs | CC BY-SA 4.0 | In use (10.3, tests only) |
+| tafqit (Mohsen Alyafei) | Arabic number-word examples, read as data; code not run or copied | MIT | In use (10.3, tests only) |
+| Universal Dependencies PUD treebanks (12 languages) | Word-count reference | CC BY-SA 4.0 | In use (10.3, tests only) |
+| Unicode GSM0338.TXT | The GSM 7-bit alphabet for SMS parts | Unicode terms of use | In use (10.3) |
+| message-segment-calculator (Twilio) | 48 SMS segment cases, restated in tests; code not used | MIT | In use (10.3, tests only) |
+| twitter-text `config/v3.json`, `conformance/validate.yml` | Weight ranges for the X length; 24 test cases | Apache-2.0 | In use (10.3) |
+| Wikipedia extracts (Urdu, Persian) and the Arabic PUD treebank, printed by Chrome and read by poppler's pdftotext 24.02 | 792 test sentences for the PDF text fixer | CC BY-SA 4.0 | In use (10.3, tests only) |
 | Subtitle-based frequency lists | Chat words | Unclear (the underlying subtitles' rights) | **Avoid** unless the licence is clear |
 | Leipzig Corpora Collection | — | Sources conflict (CC BY vs CC BY-NC) | **Don't use** without written confirmation (the old plan listed it) |
 | Hunspell dictionaries | — | GPL/LGPL/MPL, varies | **Don't ship** in the client bundle unless the licence fits; our own spell checker covers this |
