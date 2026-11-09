@@ -41,6 +41,7 @@ export default defineConfig({
     command: `pnpm build && pnpm preview --port ${PORT} --ignore-lock`,
     url: `http://localhost:${PORT}`,
     reuseExistingServer: !process.env.CI,
-    timeout: 180_000,
+    // The build comes first: about 6.5 minutes with the cheat-sheet PDFs, more on a CI machine.
+    timeout: 900_000,
   },
 });

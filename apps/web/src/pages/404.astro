@@ -1,0 +1,22 @@
+---
+/** Served by the host for any address that isn't part of the site. */
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="Page not found | Likho"
+  description="This page doesn't exist or has moved."
+  noindex
+  credits={{}}
+>
+  <h1 class="mb-2 text-2xl font-semibold tracking-tight">Page not found</h1>
+  <p class="mb-4 max-w-2xl">
+    This page doesn't exist or has moved. Pick your language from the menu at the top, or start from
+    the home page.
+  </p>
+  <p class="mt-6">
+    <a class="inline-flex min-h-11 items-center text-accent underline" href="/">
+      Home page
+    </a>
+  </p>
+</Base>

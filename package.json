@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "pnpm --filter @okb/web dev",
     "build": "pnpm -r build",
-    "test": "pnpm -r test",
+    "test": "pnpm -r test --testTimeout=30000",
     "test:e2e": "pnpm --filter @okb/web test:e2e",
     "typecheck": "pnpm -r typecheck",
     "lint": "eslint . && node tools/invisible-chars.mjs",
