@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/make-cheatsheets.ts",
+    "build": "node scripts/setup-vercel-browser.ts && astro build && node scripts/make-cheatsheets.ts",
     "preview": "astro preview",
     "typecheck": "astro check",
     "test": "vitest run --passWithNoTests",
