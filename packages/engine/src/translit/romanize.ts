@@ -1336,7 +1336,8 @@ function casedWord(word: string, t: AlphabetTable, style: RomanStyle): string {
     const spelled = pair ? pair[s] : (t.letters[lower]?.[s] ?? lower);
     if (pair) i++;
     if (!upper(c)) out += spelled;
-    else out += allCaps ? spelled.toUpperCase() : spelled.charAt(0).toUpperCase() + spelled.slice(1);
+    else
+      out += allCaps ? spelled.toUpperCase() : spelled.charAt(0).toUpperCase() + spelled.slice(1);
   }
   return out;
 }
@@ -1410,7 +1411,8 @@ export function romanizeWord(word: string, table: RomanTable, options: RomanizeO
     const known = words?.get(word);
     if (known) return known;
     const cased = table.kind === "alphabet" && table.cased ? words?.get(word.toLowerCase()) : null;
-    if (cased) return word[0] === word[0]!.toLowerCase() ? cased : cased[0]!.toUpperCase() + cased.slice(1);
+    if (cased)
+      return word[0] === word[0]!.toLowerCase() ? cased : cased[0]!.toUpperCase() + cased.slice(1);
   }
   if (table.kind === "indic") return indicWord(word, table, style);
   if (table.kind === "alphabet") return alphabetWord(word, table, style);

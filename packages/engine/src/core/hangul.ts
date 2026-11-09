@@ -117,7 +117,10 @@ export function backspaceHangul(before: string): Rewrite | null {
 }
 
 const SPLIT: Readonly<Record<string, string>> = Object.fromEntries(
-  [...Object.entries(VOWEL_PAIRS), ...Object.entries(FINAL_PAIRS)].map(([pair, one]) => [one, pair]),
+  [...Object.entries(VOWEL_PAIRS), ...Object.entries(FINAL_PAIRS)].map(([pair, one]) => [
+    one,
+    pair,
+  ]),
 );
 
 /** A syllable as the letters typed for it, in order: 과 is ㄱㅗㅏ, 값 is ㄱㅏㅂㅅ. */

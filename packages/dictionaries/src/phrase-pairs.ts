@@ -24,7 +24,14 @@ const { values: args } = parseArgs({
 const SIZE = 500;
 const out = (name: string) => new URL(`../test/data/${name}`, import.meta.url);
 
-function write(code: string, credit: string, tsv: string, lang: string, read: (w: string) => string | null, skip: RegExp) {
+function write(
+  code: string,
+  credit: string,
+  tsv: string,
+  lang: string,
+  read: (w: string) => string | null,
+  skip: RegExp,
+) {
   const words = new Intl.Segmenter(lang, { granularity: "word" });
   const sides = { dev: [] as string[], test: [] as string[] };
   const rows = readFileSync(tsv, "utf8")
@@ -70,7 +77,8 @@ if (args.mozc && args.jpn) {
       const [reading, , , cost, surface] = line.split("\t");
       if (!reading || !surface) continue;
       const known = readings.get(surface);
-      if (!known || Number(cost) < known.cost) readings.set(surface, { reading, cost: Number(cost) });
+      if (!known || Number(cost) < known.cost)
+        readings.set(surface, { reading, cost: Number(cost) });
     }
   }
   write(

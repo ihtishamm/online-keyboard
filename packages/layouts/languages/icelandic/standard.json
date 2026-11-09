@@ -13,9 +13,7 @@
       "n": "°",
       "s": "¨",
       "ag": "°",
-      "live": [
-        "ag"
-      ]
+      "live": ["ag"]
     },
     "Digit1": {
       "n": "1",
@@ -477,46 +475,18 @@
     }
   ],
   "longpress": {
-    "Backquote": [
-      "¨"
-    ],
-    "Digit5": [
-      "€"
-    ],
-    "Minus": [
-      "Ö"
-    ],
-    "KeyE": [
-      "é",
-      "€"
-    ],
-    "KeyY": [
-      "ý"
-    ],
-    "KeyU": [
-      "ú"
-    ],
-    "KeyI": [
-      "í"
-    ],
-    "KeyO": [
-      "ó",
-      "ö"
-    ],
-    "BracketLeft": [
-      "Ð"
-    ],
-    "KeyA": [
-      "á"
-    ],
-    "Semicolon": [
-      "Æ"
-    ],
-    "KeyM": [
-      "µ"
-    ],
-    "Slash": [
-      "Þ"
-    ]
+    "Backquote": ["¨"],
+    "Digit5": ["€"],
+    "Minus": ["Ö"],
+    "KeyE": ["é", "€"],
+    "KeyY": ["ý"],
+    "KeyU": ["ú"],
+    "KeyI": ["í"],
+    "KeyO": ["ó", "ö"],
+    "BracketLeft": ["Ð"],
+    "KeyA": ["á"],
+    "Semicolon": ["Æ"],
+    "KeyM": ["µ"],
+    "Slash": ["Þ"]
   }
 }

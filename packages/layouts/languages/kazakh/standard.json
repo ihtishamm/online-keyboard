@@ -10,17 +10,7 @@
   "source": "Windows \"Kazakh\", from Unicode CLDR 43 keyboard data (Unicode License v3). Upstream cannot type ё; we add it on AltGr+T, the е key. Phone rows are ours.",
   "mobile": {
     "rows": [
-      [
-        "Digit2",
-        "Digit3",
-        "Digit4",
-        "Digit5",
-        "Digit8",
-        "Digit9",
-        "Digit0",
-        "Minus",
-        "Equal"
-      ],
+      ["Digit2", "Digit3", "Digit4", "Digit5", "Digit8", "Digit9", "Digit0", "Minus", "Equal"],
       [
         "KeyQ",
         "KeyW",
@@ -47,17 +37,7 @@
         "Semicolon",
         "Quote"
       ],
-      [
-        "KeyZ",
-        "KeyX",
-        "KeyC",
-        "KeyV",
-        "KeyB",
-        "KeyN",
-        "KeyM",
-        "Comma",
-        "Period"
-      ]
+      ["KeyZ", "KeyX", "KeyC", "KeyV", "KeyB", "KeyN", "KeyM", "Comma", "Period"]
     ]
   },
   "keys": {
@@ -299,130 +279,46 @@
     }
   },
   "longpress": {
-    "Digit2": [
-      "Ә"
-    ],
-    "Digit3": [
-      "І"
-    ],
-    "Digit4": [
-      "Ң"
-    ],
-    "Digit5": [
-      "Ғ"
-    ],
-    "Digit8": [
-      "Ү"
-    ],
-    "Digit9": [
-      "Ұ"
-    ],
-    "Digit0": [
-      "Қ"
-    ],
-    "Minus": [
-      "Ө"
-    ],
-    "Equal": [
-      "Һ"
-    ],
-    "KeyQ": [
-      "Й"
-    ],
-    "KeyW": [
-      "Ц"
-    ],
-    "KeyE": [
-      "У"
-    ],
-    "KeyR": [
-      "К"
-    ],
-    "KeyT": [
-      "Е",
-      "ё",
-      "Ё"
-    ],
-    "KeyY": [
-      "Н"
-    ],
-    "KeyU": [
-      "Г"
-    ],
-    "KeyI": [
-      "Ш"
-    ],
-    "KeyO": [
-      "Щ"
-    ],
-    "KeyP": [
-      "З"
-    ],
-    "BracketLeft": [
-      "Х"
-    ],
-    "BracketRight": [
-      "Ъ"
-    ],
-    "KeyA": [
-      "Ф"
-    ],
-    "KeyS": [
-      "Ы"
-    ],
-    "KeyD": [
-      "В"
-    ],
-    "KeyF": [
-      "А"
-    ],
-    "KeyG": [
-      "П"
-    ],
-    "KeyH": [
-      "Р"
-    ],
-    "KeyJ": [
-      "О"
-    ],
-    "KeyK": [
-      "Л"
-    ],
-    "KeyL": [
-      "Д"
-    ],
-    "Semicolon": [
-      "Ж"
-    ],
-    "Quote": [
-      "Э"
-    ],
-    "KeyZ": [
-      "Я"
-    ],
-    "KeyX": [
-      "Ч"
-    ],
-    "KeyC": [
-      "С"
-    ],
-    "KeyV": [
-      "М"
-    ],
-    "KeyB": [
-      "И"
-    ],
-    "KeyN": [
-      "Т"
-    ],
-    "KeyM": [
-      "Ь"
-    ],
-    "Comma": [
-      "Б"
-    ],
-    "Period": [
-      "Ю"
-    ]
+    "Digit2": ["Ә"],
+    "Digit3": ["І"],
+    "Digit4": ["Ң"],
+    "Digit5": ["Ғ"],
+    "Digit8": ["Ү"],
+    "Digit9": ["Ұ"],
+    "Digit0": ["Қ"],
+    "Minus": ["Ө"],
+    "Equal": ["Һ"],
+    "KeyQ": ["Й"],
+    "KeyW": ["Ц"],
+    "KeyE": ["У"],
+    "KeyR": ["К"],
+    "KeyT": ["Е", "ё", "Ё"],
+    "KeyY": ["Н"],
+    "KeyU": ["Г"],
+    "KeyI": ["Ш"],
+    "KeyO": ["Щ"],
+    "KeyP": ["З"],
+    "BracketLeft": ["Х"],
+    "BracketRight": ["Ъ"],
+    "KeyA": ["Ф"],
+    "KeyS": ["Ы"],
+    "KeyD": ["В"],
+    "KeyF": ["А"],
+    "KeyG": ["П"],
+    "KeyH": ["Р"],
+    "KeyJ": ["О"],
+    "KeyK": ["Л"],
+    "KeyL": ["Д"],
+    "Semicolon": ["Ж"],
+    "Quote": ["Э"],
+    "KeyZ": ["Я"],
+    "KeyX": ["Ч"],
+    "KeyC": ["С"],
+    "KeyV": ["М"],
+    "KeyB": ["И"],
+    "KeyN": ["Т"],
+    "KeyM": ["Ь"],
+    "Comma": ["Б"],
+    "Period": ["Ю"]
   }
 }

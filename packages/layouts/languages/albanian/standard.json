@@ -41,9 +41,7 @@
     "Digit6": {
       "n": "6",
       "s": "^",
-      "live": [
-        "s"
-      ],
+      "live": ["s"],
       "ag": "˛"
     },
     "Digit7": {
@@ -647,69 +645,26 @@
     }
   ],
   "longpress": {
-    "Digit2": [
-      "ˇ"
-    ],
-    "Digit4": [
-      "˘"
-    ],
-    "Digit5": [
-      "°"
-    ],
-    "Digit6": [
-      "˛"
-    ],
-    "Digit8": [
-      "˙"
-    ],
-    "Digit9": [
-      "´"
-    ],
-    "Digit0": [
-      "˝"
-    ],
-    "Minus": [
-      "¨"
-    ],
-    "Equal": [
-      "¸"
-    ],
-    "KeyE": [
-      "ë"
-    ],
-    "BracketLeft": [
-      "Ç",
-      "÷"
-    ],
-    "BracketRight": [
-      "×"
-    ],
-    "Backslash": [
-      "¤"
-    ],
-    "KeyS": [
-      "đ"
-    ],
-    "KeyD": [
-      "Đ"
-    ],
-    "KeyK": [
-      "ł"
-    ],
-    "KeyL": [
-      "Ł"
-    ],
-    "Semicolon": [
-      "Ë"
-    ],
-    "Quote": [
-      "ß"
-    ],
-    "KeyC": [
-      "ç"
-    ],
-    "KeyM": [
-      "§"
-    ]
+    "Digit2": ["ˇ"],
+    "Digit4": ["˘"],
+    "Digit5": ["°"],
+    "Digit6": ["˛"],
+    "Digit8": ["˙"],
+    "Digit9": ["´"],
+    "Digit0": ["˝"],
+    "Minus": ["¨"],
+    "Equal": ["¸"],
+    "KeyE": ["ë"],
+    "BracketLeft": ["Ç", "÷"],
+    "BracketRight": ["×"],
+    "Backslash": ["¤"],
+    "KeyS": ["đ"],
+    "KeyD": ["Đ"],
+    "KeyK": ["ł"],
+    "KeyL": ["Ł"],
+    "Semicolon": ["Ë"],
+    "Quote": ["ß"],
+    "KeyC": ["ç"],
+    "KeyM": ["§"]
   }
 }

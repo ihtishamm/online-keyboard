@@ -20,4 +20,11 @@ export const phrase = (
   converter,
 });
 
-export const CHINESE_PUNCTUATION = { ".": "。", ",": "，", "?": "？", "!": "！", ":": "：", ";": "；" };
+export const CHINESE_PUNCTUATION = {
+  ".": "。",
+  ",": "，",
+  "?": "？",
+  "!": "！",
+  ":": "：",
+  ";": "；",
+};

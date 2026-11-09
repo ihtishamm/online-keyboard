@@ -315,138 +315,49 @@
     }
   },
   "longpress": {
-    "Backquote": [
-      "Ꮚ",
-      "Ꮐ"
-    ],
-    "Digit1": [
-      "Ꮁ"
-    ],
-    "Digit2": [
-      "Ꮗ"
-    ],
-    "Digit3": [
-      "Ꮷ"
-    ],
-    "Digit4": [
-      "Ꮀ"
-    ],
-    "Digit5": [
-      "Ꮉ"
-    ],
-    "Digit6": [
-      "Ꮭ"
-    ],
-    "Digit7": [
-      "Ꮱ"
-    ],
-    "Digit8": [
-      "Ꮊ"
-    ],
-    "Minus": [
-      "Ꮌ"
-    ],
-    "Equal": [
-      "Ꮍ"
-    ],
-    "KeyQ": [
-      "Ꮖ"
-    ],
-    "KeyW": [
-      "Ꮻ"
-    ],
-    "KeyE": [
-      "Ꮳ"
-    ],
-    "KeyR": [
-      "Ꮟ"
-    ],
-    "KeyT": [
-      "Ꮨ"
-    ],
-    "KeyY": [
-      "Ᏺ"
-    ],
-    "KeyU": [
-      "Ꭽ"
-    ],
-    "KeyI": [
-      "Ᏹ"
-    ],
-    "KeyO": [
-      "Ꮼ"
-    ],
-    "KeyP": [
-      "Ꮺ"
-    ],
-    "BracketLeft": [
-      "Ꮡ"
-    ],
-    "BracketRight": [
-      "Ꮴ"
-    ],
-    "Backslash": [
-      "Ꮾ"
-    ],
-    "KeyA": [
-      "Ꮜ"
-    ],
-    "KeyS": [
-      "Ꮞ"
-    ],
-    "KeyD": [
-      "Ꮠ"
-    ],
-    "KeyF": [
-      "Ꮘ"
-    ],
-    "KeyG": [
-      "Ꮵ"
-    ],
-    "KeyH": [
-      "Ꮂ"
-    ],
-    "KeyJ": [
-      "Ꭻ"
-    ],
-    "KeyK": [
-      "Ꭷ"
-    ],
-    "KeyL": [
-      "Ꭾ"
-    ],
-    "Semicolon": [
-      "Ꮰ"
-    ],
-    "KeyZ": [
-      "Ꮓ"
-    ],
-    "KeyX": [
-      "Ꮽ"
-    ],
-    "KeyC": [
-      "Ꮯ"
-    ],
-    "KeyV": [
-      "Ꮮ"
-    ],
-    "KeyB": [
-      "Ᏸ"
-    ],
-    "KeyN": [
-      "Ꮋ"
-    ],
-    "KeyM": [
-      "Ꮇ"
-    ],
-    "Comma": [
-      "Ꮲ"
-    ],
-    "Period": [
-      "Ꮄ"
-    ],
-    "Slash": [
-      "Ꮙ"
-    ]
+    "Backquote": ["Ꮚ", "Ꮐ"],
+    "Digit1": ["Ꮁ"],
+    "Digit2": ["Ꮗ"],
+    "Digit3": ["Ꮷ"],
+    "Digit4": ["Ꮀ"],
+    "Digit5": ["Ꮉ"],
+    "Digit6": ["Ꮭ"],
+    "Digit7": ["Ꮱ"],
+    "Digit8": ["Ꮊ"],
+    "Minus": ["Ꮌ"],
+    "Equal": ["Ꮍ"],
+    "KeyQ": ["Ꮖ"],
+    "KeyW": ["Ꮻ"],
+    "KeyE": ["Ꮳ"],
+    "KeyR": ["Ꮟ"],
+    "KeyT": ["Ꮨ"],
+    "KeyY": ["Ᏺ"],
+    "KeyU": ["Ꭽ"],
+    "KeyI": ["Ᏹ"],
+    "KeyO": ["Ꮼ"],
+    "KeyP": ["Ꮺ"],
+    "BracketLeft": ["Ꮡ"],
+    "BracketRight": ["Ꮴ"],
+    "Backslash": ["Ꮾ"],
+    "KeyA": ["Ꮜ"],
+    "KeyS": ["Ꮞ"],
+    "KeyD": ["Ꮠ"],
+    "KeyF": ["Ꮘ"],
+    "KeyG": ["Ꮵ"],
+    "KeyH": ["Ꮂ"],
+    "KeyJ": ["Ꭻ"],
+    "KeyK": ["Ꭷ"],
+    "KeyL": ["Ꭾ"],
+    "Semicolon": ["Ꮰ"],
+    "KeyZ": ["Ꮓ"],
+    "KeyX": ["Ꮽ"],
+    "KeyC": ["Ꮯ"],
+    "KeyV": ["Ꮮ"],
+    "KeyB": ["Ᏸ"],
+    "KeyN": ["Ꮋ"],
+    "KeyM": ["Ꮇ"],
+    "Comma": ["Ꮲ"],
+    "Period": ["Ꮄ"],
+    "Slash": ["Ꮙ"]
   }
 }

@@ -273,123 +273,42 @@
     }
   },
   "longpress": {
-    "Backquote": [
-      "׳"
-    ],
-    "Digit3": [
-      "€"
-    ],
-    "Digit4": [
-      "₪"
-    ],
-    "Digit5": [
-      "°"
-    ],
-    "Digit6": [
-      "\u05AB"
-    ],
-    "Digit7": [
-      "\u05BD"
-    ],
-    "Digit8": [
-      "×"
-    ],
-    "Digit9": [
-      "\u200E"
-    ],
-    "Digit0": [
-      "\u200F"
-    ],
-    "Minus": [
-      "־"
-    ],
-    "Equal": [
-      "–"
-    ],
-    "KeyQ": [
-      "\u05C2"
-    ],
-    "KeyW": [
-      "\u05C1"
-    ],
-    "KeyE": [
-      "\u05B8"
-    ],
-    "KeyR": [
-      "\u05B3"
-    ],
-    "KeyY": [
-      "װ"
-    ],
-    "KeyU": [
-      "\u05B9",
-      "\u05BA"
-    ],
-    "KeyP": [
-      "\u05B7"
-    ],
-    "BracketLeft": [
-      "\u05B2"
-    ],
-    "BracketRight": [
-      "\u05BF"
-    ],
-    "Backslash": [
-      "\u05BB"
-    ],
-    "KeyA": [
-      "\u05B0"
-    ],
-    "KeyS": [
-      "\u05BC"
-    ],
-    "KeyG": [
-      "ױ"
-    ],
-    "KeyH": [
-      "ײ"
-    ],
-    "KeyJ": [
-      "\u05B4",
-      "\u200D"
-    ],
-    "KeyL": [
-      "”",
-      "“"
-    ],
-    "Semicolon": [
-      "„",
-      "”"
-    ],
-    "Quote": [
-      "״"
-    ],
-    "KeyX": [
-      "\u05B6"
-    ],
-    "KeyC": [
-      "\u05B1",
-      "\u034F"
-    ],
-    "KeyB": [
-      "׆"
-    ],
-    "KeyN": [
-      "\u200C"
-    ],
-    "KeyM": [
-      "\u05B5"
-    ],
-    "Comma": [
-      "’",
-      "‘"
-    ],
-    "Period": [
-      "‚",
-      "’"
-    ],
-    "Slash": [
-      "÷"
-    ]
+    "Backquote": ["׳"],
+    "Digit3": ["€"],
+    "Digit4": ["₪"],
+    "Digit5": ["°"],
+    "Digit6": ["\u05AB"],
+    "Digit7": ["\u05BD"],
+    "Digit8": ["×"],
+    "Digit9": ["\u200E"],
+    "Digit0": ["\u200F"],
+    "Minus": ["־"],
+    "Equal": ["–"],
+    "KeyQ": ["\u05C2"],
+    "KeyW": ["\u05C1"],
+    "KeyE": ["\u05B8"],
+    "KeyR": ["\u05B3"],
+    "KeyY": ["װ"],
+    "KeyU": ["\u05B9", "\u05BA"],
+    "KeyP": ["\u05B7"],
+    "BracketLeft": ["\u05B2"],
+    "BracketRight": ["\u05BF"],
+    "Backslash": ["\u05BB"],
+    "KeyA": ["\u05B0"],
+    "KeyS": ["\u05BC"],
+    "KeyG": ["ױ"],
+    "KeyH": ["ײ"],
+    "KeyJ": ["\u05B4", "\u200D"],
+    "KeyL": ["”", "“"],
+    "Semicolon": ["„", "”"],
+    "Quote": ["״"],
+    "KeyX": ["\u05B6"],
+    "KeyC": ["\u05B1", "\u034F"],
+    "KeyB": ["׆"],
+    "KeyN": ["\u200C"],
+    "KeyM": ["\u05B5"],
+    "Comma": ["’", "‘"],
+    "Period": ["‚", "’"],
+    "Slash": ["÷"]
   }
 }

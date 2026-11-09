@@ -136,7 +136,8 @@ export function useSuggestions(options: SuggestionsOptions) {
     if (!(translit instanceof PhraseConverter) || loadPhrases.current === translit) return;
     loadPhrases.current = translit;
     void loadReadings(code).then((text) => {
-      if (text === null) loadPhrases.current = null; // try again on the next key
+      if (text === null)
+        loadPhrases.current = null; // try again on the next key
       else {
         translit.setReadings(text);
         setPhraseReady((n) => n + 1);
@@ -291,7 +292,18 @@ export function useSuggestions(options: SuggestionsOptions) {
       .after(previous, LIMIT)
       .map((w) => shown(w, previous === null ? "A" : "a"));
     return items.length ? { mode: "next", items, range: null } : NONE;
-  }, [editorRef, translit, predict, dictionary, spell, restorer, latin, wordBefore, inner, phraseReady]);
+  }, [
+    editorRef,
+    translit,
+    predict,
+    dictionary,
+    spell,
+    restorer,
+    latin,
+    wordBefore,
+    inner,
+    phraseReady,
+  ]);
 
   /** Where the user is typing a word: it is not underlined until the caret leaves it. */
   const typingAt = useRef({ text: "", caret: -1 });
@@ -351,8 +363,7 @@ export function useSuggestions(options: SuggestionsOptions) {
       } else if (current.range) {
         const noSpace = unspaced || (current.mode === "roman" && translit?.spaced === false);
         replaceText(el, current.range.start, current.range.end, item + (noSpace ? "" : " "));
-      }
-      else insertText(el, item + " ");
+      } else insertText(el, item + " ");
       return true;
     },
     [editorRef, compute, saveKept, unspaced, translit],
@@ -392,9 +403,7 @@ export function useSuggestions(options: SuggestionsOptions) {
   /** Roman mode: is there a Roman word waiting to be converted? */
   const composing = useCallback((): boolean => {
     const el = editorRef.current;
-    return (
-      !!el && !!translit && translit.wordBefore(el.value, el.selectionStart) !== null
-    );
+    return !!el && !!translit && translit.wordBefore(el.value, el.selectionStart) !== null;
   }, [editorRef, translit]);
 
   /**

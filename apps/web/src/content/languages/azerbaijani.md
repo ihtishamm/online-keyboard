@@ -6,7 +6,7 @@ headingNative: "Azərbaycan dili"
 intro: "Azerbaijani's commonest special letter, ə, is on no English keyboard. Tap it in the bar, use the Azerbaijani layout, or type plain letters and press Space: smart accents adds the marks when only one spelling is an Azerbaijani word."
 layouts:
   az-easy:
-    summary: "Your English keyboard, plus AltGr: AltGr+E types ə, AltGr+G ğ, AltGr+I ı (Shift for İ) and AltGr+S ş. \" then o types ö, \" then u ü, and AltGr+comma ç. US-International with those four keys added by us."
+    summary: 'Your English keyboard, plus AltGr: AltGr+E types ə, AltGr+G ğ, AltGr+I ı (Shift for İ) and AltGr+S ş. " then o types ö, " then u ü, and AltGr+comma ç. US-International with those four keys added by us.'
     bestFor: "Anyone with an English keyboard who writes Azerbaijani: learners, students, and people who live abroad."
     title: "Azerbaijani Letters on an English Keyboard: ə ğ ş | Likho"
   az-standard:

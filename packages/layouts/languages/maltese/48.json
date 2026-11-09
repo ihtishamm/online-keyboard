@@ -248,50 +248,18 @@
     }
   },
   "longpress": {
-    "Backquote": [
-      "Ċ"
-    ],
-    "Digit3": [
-      "€",
-      "£"
-    ],
-    "KeyE": [
-      "è",
-      "È"
-    ],
-    "KeyU": [
-      "ù",
-      "Ù"
-    ],
-    "KeyI": [
-      "ì",
-      "Ì"
-    ],
-    "KeyO": [
-      "ò",
-      "Ò"
-    ],
-    "BracketLeft": [
-      "Ġ"
-    ],
-    "BracketRight": [
-      "Ħ"
-    ],
-    "Backslash": [
-      "Ż"
-    ],
-    "KeyA": [
-      "à",
-      "À"
-    ],
-    "KeyG": [
-      "ġ"
-    ],
-    "KeyZ": [
-      "ż"
-    ],
-    "KeyC": [
-      "ċ"
-    ]
+    "Backquote": ["Ċ"],
+    "Digit3": ["€", "£"],
+    "KeyE": ["è", "È"],
+    "KeyU": ["ù", "Ù"],
+    "KeyI": ["ì", "Ì"],
+    "KeyO": ["ò", "Ò"],
+    "BracketLeft": ["Ġ"],
+    "BracketRight": ["Ħ"],
+    "Backslash": ["Ż"],
+    "KeyA": ["à", "À"],
+    "KeyG": ["ġ"],
+    "KeyZ": ["ż"],
+    "KeyC": ["ċ"]
   }
 }

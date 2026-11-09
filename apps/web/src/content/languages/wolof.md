@@ -6,7 +6,7 @@ headingNative: "Wolof"
 intro: "Wolof marks vowels with à, é, ë, ó and the rest, and adds ñ and ŋ. Tap them in the bar, use the Windows Wolof layout, or type plain letters and press Space: smart accents adds them when only one spelling is a Wolof word. The word list comes from a small Wikipedia, so check the suggestions."
 layouts:
   wo-easy:
-    summary: "Your English keyboard: AltGr+N types ñ, AltGr+G ŋ, \" then e ë, and ' then e é. US-International, with ŋ added by us."
+    summary: 'Your English keyboard: AltGr+N types ñ, AltGr+G ŋ, " then e ë, and '' then e é. US-International, with ŋ added by us.'
     bestFor: "Anyone with an English keyboard who writes Wolof: learners, students, and people who live abroad."
     title: "Wolof Letters on an English Keyboard: ë ñ ŋ | Likho"
   wo-standard:

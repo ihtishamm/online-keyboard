@@ -228,62 +228,24 @@
     }
   },
   "longpress": {
-    "Digit3": [
-      "№"
-    ],
-    "Digit4": [
-      "€"
-    ],
-    "Digit7": [
-      "§"
-    ],
-    "Digit8": [
-      "°"
-    ],
-    "Digit0": [
-      "—"
-    ],
-    "Minus": [
-      "–"
-    ],
-    "KeyI": [
-      "ჲ"
-    ],
-    "BracketLeft": [
-      "«"
-    ],
-    "BracketRight": [
-      "»"
-    ],
-    "KeyA": [
-      "ჺ"
-    ],
-    "KeyF": [
-      "ჶ"
-    ],
-    "KeyG": [
-      "ჹ"
-    ],
-    "KeyH": [
-      "ჱ"
-    ],
-    "KeyJ": [
-      "ჷ"
-    ],
-    "KeyZ": [
-      "ჵ"
-    ],
-    "KeyX": [
-      "ჴ"
-    ],
-    "KeyV": [
-      "ჳ"
-    ],
-    "KeyN": [
-      "ჼ"
-    ],
-    "Slash": [
-      "჻"
-    ]
+    "Digit3": ["№"],
+    "Digit4": ["€"],
+    "Digit7": ["§"],
+    "Digit8": ["°"],
+    "Digit0": ["—"],
+    "Minus": ["–"],
+    "KeyI": ["ჲ"],
+    "BracketLeft": ["«"],
+    "BracketRight": ["»"],
+    "KeyA": ["ჺ"],
+    "KeyF": ["ჶ"],
+    "KeyG": ["ჹ"],
+    "KeyH": ["ჱ"],
+    "KeyJ": ["ჷ"],
+    "KeyZ": ["ჵ"],
+    "KeyX": ["ჴ"],
+    "KeyV": ["ჳ"],
+    "KeyN": ["ჼ"],
+    "Slash": ["჻"]
   }
 }

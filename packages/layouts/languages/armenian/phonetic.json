@@ -48,15 +48,7 @@
         "BracketRight",
         "Backslash"
       ],
-      [
-        "KeyZ",
-        "KeyX",
-        "KeyC",
-        "KeyV",
-        "KeyB",
-        "KeyN",
-        "KeyM"
-      ]
+      ["KeyZ", "KeyX", "KeyC", "KeyV", "KeyB", "KeyN", "KeyM"]
     ]
   },
   "keys": {
@@ -335,137 +327,49 @@
     }
   },
   "longpress": {
-    "Backquote": [
-      "՜"
-    ],
-    "Digit1": [
-      "Է"
-    ],
-    "Digit2": [
-      "Թ"
-    ],
-    "Digit3": [
-      "Փ"
-    ],
-    "Digit4": [
-      "Ձ"
-    ],
-    "Digit5": [
-      "Ջ"
-    ],
-    "Digit6": [
-      "Ւ"
-    ],
-    "Digit8": [
-      "Ր"
-    ],
-    "Digit9": [
-      "Չ"
-    ],
-    "Digit0": [
-      "Ճ"
-    ],
-    "Minus": [
-      "—"
-    ],
-    "Equal": [
-      "Ժ"
-    ],
-    "KeyQ": [
-      "Ք"
-    ],
-    "KeyW": [
-      "Ո"
-    ],
-    "KeyE": [
-      "Ե"
-    ],
-    "KeyR": [
-      "Ռ"
-    ],
-    "KeyT": [
-      "Տ"
-    ],
-    "KeyY": [
-      "Ը"
-    ],
-    "KeyU": [
-      "Ւ"
-    ],
-    "KeyI": [
-      "Ի"
-    ],
-    "KeyO": [
-      "Օ"
-    ],
-    "KeyP": [
-      "Պ"
-    ],
-    "BracketLeft": [
-      "Խ"
-    ],
-    "BracketRight": [
-      "Ծ"
-    ],
-    "Backslash": [
-      "Շ"
-    ],
-    "KeyA": [
-      "Ա"
-    ],
-    "KeyS": [
-      "Ս"
-    ],
-    "KeyD": [
-      "Դ"
-    ],
-    "KeyF": [
-      "Ֆ"
-    ],
-    "KeyG": [
-      "Գ"
-    ],
-    "KeyH": [
-      "Հ"
-    ],
-    "KeyJ": [
-      "Յ"
-    ],
-    "KeyK": [
-      "Կ"
-    ],
-    "KeyL": [
-      "Լ"
-    ],
-    "Semicolon": [
-      "։"
-    ],
-    "IntlBackslash": [
-      "«"
-    ],
-    "KeyZ": [
-      "Զ"
-    ],
-    "KeyX": [
-      "Ղ"
-    ],
-    "KeyC": [
-      "Ց"
-    ],
-    "KeyV": [
-      "Վ"
-    ],
-    "KeyB": [
-      "Բ"
-    ],
-    "KeyN": [
-      "Ն"
-    ],
-    "KeyM": [
-      "Մ"
-    ],
-    "Slash": [
-      "՞"
-    ]
+    "Backquote": ["՜"],
+    "Digit1": ["Է"],
+    "Digit2": ["Թ"],
+    "Digit3": ["Փ"],
+    "Digit4": ["Ձ"],
+    "Digit5": ["Ջ"],
+    "Digit6": ["Ւ"],
+    "Digit8": ["Ր"],
+    "Digit9": ["Չ"],
+    "Digit0": ["Ճ"],
+    "Minus": ["—"],
+    "Equal": ["Ժ"],
+    "KeyQ": ["Ք"],
+    "KeyW": ["Ո"],
+    "KeyE": ["Ե"],
+    "KeyR": ["Ռ"],
+    "KeyT": ["Տ"],
+    "KeyY": ["Ը"],
+    "KeyU": ["Ւ"],
+    "KeyI": ["Ի"],
+    "KeyO": ["Օ"],
+    "KeyP": ["Պ"],
+    "BracketLeft": ["Խ"],
+    "BracketRight": ["Ծ"],
+    "Backslash": ["Շ"],
+    "KeyA": ["Ա"],
+    "KeyS": ["Ս"],
+    "KeyD": ["Դ"],
+    "KeyF": ["Ֆ"],
+    "KeyG": ["Գ"],
+    "KeyH": ["Հ"],
+    "KeyJ": ["Յ"],
+    "KeyK": ["Կ"],
+    "KeyL": ["Լ"],
+    "Semicolon": ["։"],
+    "IntlBackslash": ["«"],
+    "KeyZ": ["Զ"],
+    "KeyX": ["Ղ"],
+    "KeyC": ["Ց"],
+    "KeyV": ["Վ"],
+    "KeyB": ["Բ"],
+    "KeyN": ["Ն"],
+    "KeyM": ["Մ"],
+    "Slash": ["՞"]
   }
 }

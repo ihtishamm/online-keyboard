@@ -143,32 +143,14 @@
     }
   },
   "longpress": {
-    "KeyU": [
-      "ᱝ"
-    ],
-    "BracketLeft": [
-      "ᱲ"
-    ],
-    "BracketRight": [
-      "ᱧ"
-    ],
-    "Semicolon": [
-      "ᱺ"
-    ],
-    "KeyZ": [
-      "ᱽ"
-    ],
-    "KeyC": [
-      "ᱬ"
-    ],
-    "KeyB": [
-      "ᱶ"
-    ],
-    "Comma": [
-      "᱿"
-    ],
-    "Period": [
-      "᱾"
-    ]
+    "KeyU": ["ᱝ"],
+    "BracketLeft": ["ᱲ"],
+    "BracketRight": ["ᱧ"],
+    "Semicolon": ["ᱺ"],
+    "KeyZ": ["ᱽ"],
+    "KeyC": ["ᱬ"],
+    "KeyB": ["ᱶ"],
+    "Comma": ["᱿"],
+    "Period": ["᱾"]
   }
 }

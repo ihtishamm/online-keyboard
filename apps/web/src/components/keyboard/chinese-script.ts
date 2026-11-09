@@ -1,11 +1,14 @@
 import { ChineseScriptConverter } from "@okb/engine";
 
 /** OpenCC's tables, fetched only when someone converts. */
-const FILES = import.meta.glob<string>("../../../../../packages/dictionaries/data/zh/opencc-*.txt", {
-  query: "?url",
-  import: "default",
-  eager: true,
-});
+const FILES = import.meta.glob<string>(
+  "../../../../../packages/dictionaries/data/zh/opencc-*.txt",
+  {
+    query: "?url",
+    import: "default",
+    eager: true,
+  },
+);
 
 export type ScriptDirection = "s2t" | "t2s";
 
@@ -14,7 +17,9 @@ const loaded = new Map<ScriptDirection, Promise<ChineseScriptConverter | null>>(
 function converter(direction: ScriptDirection): Promise<ChineseScriptConverter | null> {
   let promise = loaded.get(direction);
   if (!promise) {
-    const url = Object.entries(FILES).find(([path]) => path.endsWith(`opencc-${direction}.txt`))?.[1];
+    const url = Object.entries(FILES).find(([path]) =>
+      path.endsWith(`opencc-${direction}.txt`),
+    )?.[1];
     promise = (async () => {
       if (!url) return null;
       const response = await fetch(url);

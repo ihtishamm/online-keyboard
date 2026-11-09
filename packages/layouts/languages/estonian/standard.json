@@ -204,9 +204,7 @@
       "s": "Ä",
       "ag": "^",
       "sag": "^",
-      "live": [
-        "sag"
-      ],
+      "live": ["sag"],
       "caps": "shift"
     },
     "IntlBackslash": {
@@ -458,51 +456,19 @@
     }
   ],
   "longpress": {
-    "Digit3": [
-      "£"
-    ],
-    "Digit4": [
-      "¤"
-    ],
-    "Digit5": [
-      "€"
-    ],
-    "KeyE": [
-      "€"
-    ],
-    "KeyU": [
-      "ü"
-    ],
-    "KeyO": [
-      "õ",
-      "ö"
-    ],
-    "BracketLeft": [
-      "Ü"
-    ],
-    "BracketRight": [
-      "Õ",
-      "§"
-    ],
-    "Backslash": [
-      "½"
-    ],
-    "KeyA": [
-      "ä"
-    ],
-    "KeyS": [
-      "š",
-      "Š"
-    ],
-    "Semicolon": [
-      "Ö"
-    ],
-    "Quote": [
-      "Ä"
-    ],
-    "KeyZ": [
-      "ž",
-      "Ž"
-    ]
+    "Digit3": ["£"],
+    "Digit4": ["¤"],
+    "Digit5": ["€"],
+    "KeyE": ["€"],
+    "KeyU": ["ü"],
+    "KeyO": ["õ", "ö"],
+    "BracketLeft": ["Ü"],
+    "BracketRight": ["Õ", "§"],
+    "Backslash": ["½"],
+    "KeyA": ["ä"],
+    "KeyS": ["š", "Š"],
+    "Semicolon": ["Ö"],
+    "Quote": ["Ä"],
+    "KeyZ": ["ž", "Ž"]
   }
 }

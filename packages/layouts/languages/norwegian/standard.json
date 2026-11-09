@@ -491,39 +491,16 @@
     }
   ],
   "longpress": {
-    "Backquote": [
-      "§"
-    ],
-    "Digit3": [
-      "£"
-    ],
-    "Digit4": [
-      "¤"
-    ],
-    "Digit5": [
-      "€"
-    ],
-    "Equal": [
-      "´"
-    ],
-    "KeyE": [
-      "é",
-      "€"
-    ],
-    "BracketLeft": [
-      "Å"
-    ],
-    "KeyA": [
-      "å"
-    ],
-    "Semicolon": [
-      "Ø"
-    ],
-    "Quote": [
-      "Æ"
-    ],
-    "KeyM": [
-      "µ"
-    ]
+    "Backquote": ["§"],
+    "Digit3": ["£"],
+    "Digit4": ["¤"],
+    "Digit5": ["€"],
+    "Equal": ["´"],
+    "KeyE": ["é", "€"],
+    "BracketLeft": ["Å"],
+    "KeyA": ["å"],
+    "Semicolon": ["Ø"],
+    "Quote": ["Æ"],
+    "KeyM": ["µ"]
   }
 }

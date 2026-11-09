@@ -28,18 +28,69 @@ const TONE_MISMATCH = 25;
 const MAX_WORD = 24;
 
 const INITIALS: Readonly<Record<string, string>> = {
-  ㄅ: "b", ㄆ: "p", ㄇ: "m", ㄈ: "f", ㄉ: "d", ㄊ: "t", ㄋ: "n", ㄌ: "l", ㄍ: "g", ㄎ: "k", ㄏ: "h",
-  ㄐ: "j", ㄑ: "q", ㄒ: "x", ㄓ: "zh", ㄔ: "ch", ㄕ: "sh", ㄖ: "r", ㄗ: "z", ㄘ: "c", ㄙ: "s",
+  ㄅ: "b",
+  ㄆ: "p",
+  ㄇ: "m",
+  ㄈ: "f",
+  ㄉ: "d",
+  ㄊ: "t",
+  ㄋ: "n",
+  ㄌ: "l",
+  ㄍ: "g",
+  ㄎ: "k",
+  ㄏ: "h",
+  ㄐ: "j",
+  ㄑ: "q",
+  ㄒ: "x",
+  ㄓ: "zh",
+  ㄔ: "ch",
+  ㄕ: "sh",
+  ㄖ: "r",
+  ㄗ: "z",
+  ㄘ: "c",
+  ㄙ: "s",
 };
 const FINALS: Readonly<Record<string, string>> = {
-  ㄚ: "a", ㄛ: "o", ㄜ: "e", ㄝ: "e", ㄞ: "ai", ㄟ: "ei", ㄠ: "ao", ㄡ: "ou", ㄢ: "an", ㄣ: "en",
-  ㄤ: "ang", ㄥ: "eng", ㄦ: "er", ㄧ: "i", ㄨ: "u", ㄩ: "v",
-  ㄧㄚ: "ia", ㄧㄛ: "io", ㄧㄝ: "ie", ㄧㄞ: "iai", ㄧㄠ: "iao", ㄧㄡ: "iu", ㄧㄢ: "ian", ㄧㄣ: "in",
-  ㄧㄤ: "iang", ㄧㄥ: "ing",
-  ㄨㄚ: "ua", ㄨㄛ: "uo", ㄨㄞ: "uai", ㄨㄟ: "ui", ㄨㄢ: "uan", ㄨㄣ: "un", ㄨㄤ: "uang", ㄨㄥ: "ong",
-  ㄩㄝ: "ve", ㄩㄢ: "van", ㄩㄣ: "vn", ㄩㄥ: "iong",
+  ㄚ: "a",
+  ㄛ: "o",
+  ㄜ: "e",
+  ㄝ: "e",
+  ㄞ: "ai",
+  ㄟ: "ei",
+  ㄠ: "ao",
+  ㄡ: "ou",
+  ㄢ: "an",
+  ㄣ: "en",
+  ㄤ: "ang",
+  ㄥ: "eng",
+  ㄦ: "er",
+  ㄧ: "i",
+  ㄨ: "u",
+  ㄩ: "v",
+  ㄧㄚ: "ia",
+  ㄧㄛ: "io",
+  ㄧㄝ: "ie",
+  ㄧㄞ: "iai",
+  ㄧㄠ: "iao",
+  ㄧㄡ: "iu",
+  ㄧㄢ: "ian",
+  ㄧㄣ: "in",
+  ㄧㄤ: "iang",
+  ㄧㄥ: "ing",
+  ㄨㄚ: "ua",
+  ㄨㄛ: "uo",
+  ㄨㄞ: "uai",
+  ㄨㄟ: "ui",
+  ㄨㄢ: "uan",
+  ㄨㄣ: "un",
+  ㄨㄤ: "uang",
+  ㄨㄥ: "ong",
+  ㄩㄝ: "ve",
+  ㄩㄢ: "van",
+  ㄩㄣ: "vn",
+  ㄩㄥ: "iong",
 };
-const TONE_MARKS: Readonly<Record<string, string>> = { "ˉ": "1", ˊ: "2", ˇ: "3", ˋ: "4", "˙": "5" };
+const TONE_MARKS: Readonly<Record<string, string>> = { ˉ: "1", ˊ: "2", ˇ: "3", ˋ: "4", "˙": "5" };
 export const ZHUYIN_LETTERS =
   "ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩˊˇˋ˙ˉ";
 
@@ -86,7 +137,9 @@ export function zhuyinToPinyin(text: string): string {
     } else if (INITIALS[c]) {
       flush();
       current = c;
-    } else if (FINALS[current ? current.slice(INITIALS[current[0]!] ? 1 : 0) + c : c] !== undefined) {
+    } else if (
+      FINALS[current ? current.slice(INITIALS[current[0]!] ? 1 : 0) + c : c] !== undefined
+    ) {
       current += c;
     } else {
       flush();
@@ -146,9 +199,9 @@ export class PhraseConverter {
       const kana = romajiToKana(input.toLowerCase());
       const tail = /[a-z']*$/.exec(kana)![0];
       return {
-        base: kana.slice(0, kana.length - tail.length).replace(/[ァ-ヶ]/g, (c) =>
-          String.fromCodePoint(c.codePointAt(0)! - 0x60),
-        ),
+        base: kana
+          .slice(0, kana.length - tail.length)
+          .replace(/[ァ-ヶ]/g, (c) => String.fromCodePoint(c.codePointAt(0)! - 0x60)),
         tones: new Map(),
         tail,
       };
@@ -244,7 +297,8 @@ export class PhraseConverter {
       if (this.kind !== "kana") {
         for (let j = Math.min(base.length - 1, MAX_WORD); j > 0 && out.length < limit; j--) {
           const first = this.bestEntry(base.slice(0, j), 0, tones);
-          if (first && !tones.size) add(first[0].surface + base.slice(j), "completion", first[1] + 30);
+          if (first && !tones.size)
+            add(first[0].surface + base.slice(j), "completion", first[1] + 30);
         }
       }
       // Longer words this reading starts.

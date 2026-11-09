@@ -495,51 +495,20 @@
     }
   ],
   "longpress": {
-    "Backquote": [
-      "§"
-    ],
-    "Digit3": [
-      "£"
-    ],
-    "Digit4": [
-      "¤"
-    ],
-    "Digit5": [
-      "€"
-    ],
-    "KeyE": [
-      "€"
-    ],
-    "KeyY": [
-      "ý"
-    ],
-    "KeyU": [
-      "ú"
-    ],
-    "KeyI": [
-      "í"
-    ],
-    "KeyO": [
-      "ó"
-    ],
-    "BracketLeft": [
-      "Å",
-      "¨"
-    ],
-    "BracketRight": [
-      "Ð"
-    ],
-    "KeyA": [
-      "á"
-    ],
-    "Semicolon": [
-      "Æ"
-    ],
-    "Quote": [
-      "Ø"
-    ],
-    "KeyM": [
-      "µ"
-    ]
+    "Backquote": ["§"],
+    "Digit3": ["£"],
+    "Digit4": ["¤"],
+    "Digit5": ["€"],
+    "KeyE": ["€"],
+    "KeyY": ["ý"],
+    "KeyU": ["ú"],
+    "KeyI": ["í"],
+    "KeyO": ["ó"],
+    "BracketLeft": ["Å", "¨"],
+    "BracketRight": ["Ð"],
+    "KeyA": ["á"],
+    "Semicolon": ["Æ"],
+    "Quote": ["Ø"],
+    "KeyM": ["µ"]
   }
 }

@@ -234,119 +234,43 @@
     }
   },
   "longpress": {
-    "Digit9": [
-      "–"
-    ],
-    "Digit0": [
-      "№"
-    ],
-    "Equal": [
-      "€"
-    ],
-    "KeyQ": [
-      "ы"
-    ],
-    "KeyW": [
-      "У"
-    ],
-    "KeyE": [
-      "Е"
-    ],
-    "KeyR": [
-      "И"
-    ],
-    "KeyT": [
-      "Ш"
-    ],
-    "KeyY": [
-      "Щ"
-    ],
-    "KeyU": [
-      "К"
-    ],
-    "KeyI": [
-      "С"
-    ],
-    "KeyO": [
-      "Д"
-    ],
-    "KeyP": [
-      "З"
-    ],
-    "BracketLeft": [
-      "Ц"
-    ],
-    "BracketRight": [
-      "§"
-    ],
-    "Backslash": [
-      "“"
-    ],
-    "KeyA": [
-      "ѝ"
-    ],
-    "KeyS": [
-      "Я"
-    ],
-    "KeyD": [
-      "А"
-    ],
-    "KeyF": [
-      "О"
-    ],
-    "KeyG": [
-      "Ж"
-    ],
-    "KeyH": [
-      "Г"
-    ],
-    "KeyJ": [
-      "Т"
-    ],
-    "KeyK": [
-      "Н"
-    ],
-    "KeyL": [
-      "В"
-    ],
-    "Semicolon": [
-      "М"
-    ],
-    "Quote": [
-      "Ч"
-    ],
-    "IntlBackslash": [
-      "Ѝ"
-    ],
-    "KeyZ": [
-      "Ю"
-    ],
-    "KeyX": [
-      "Й"
-    ],
-    "KeyC": [
-      "Ъ"
-    ],
-    "KeyV": [
-      "Э"
-    ],
-    "KeyB": [
-      "Ф"
-    ],
-    "KeyN": [
-      "Х"
-    ],
-    "KeyM": [
-      "П"
-    ],
-    "Comma": [
-      "Р"
-    ],
-    "Period": [
-      "Л"
-    ],
-    "Slash": [
-      "Б"
-    ]
+    "Digit9": ["–"],
+    "Digit0": ["№"],
+    "Equal": ["€"],
+    "KeyQ": ["ы"],
+    "KeyW": ["У"],
+    "KeyE": ["Е"],
+    "KeyR": ["И"],
+    "KeyT": ["Ш"],
+    "KeyY": ["Щ"],
+    "KeyU": ["К"],
+    "KeyI": ["С"],
+    "KeyO": ["Д"],
+    "KeyP": ["З"],
+    "BracketLeft": ["Ц"],
+    "BracketRight": ["§"],
+    "Backslash": ["“"],
+    "KeyA": ["ѝ"],
+    "KeyS": ["Я"],
+    "KeyD": ["А"],
+    "KeyF": ["О"],
+    "KeyG": ["Ж"],
+    "KeyH": ["Г"],
+    "KeyJ": ["Т"],
+    "KeyK": ["Н"],
+    "KeyL": ["В"],
+    "Semicolon": ["М"],
+    "Quote": ["Ч"],
+    "IntlBackslash": ["Ѝ"],
+    "KeyZ": ["Ю"],
+    "KeyX": ["Й"],
+    "KeyC": ["Ъ"],
+    "KeyV": ["Э"],
+    "KeyB": ["Ф"],
+    "KeyN": ["Х"],
+    "KeyM": ["П"],
+    "Comma": ["Р"],
+    "Period": ["Л"],
+    "Slash": ["Б"]
   }
 }

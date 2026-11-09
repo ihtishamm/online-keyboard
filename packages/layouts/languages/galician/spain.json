@@ -490,49 +490,19 @@
     }
   ],
   "longpress": {
-    "Backquote": [
-      "ª"
-    ],
-    "Digit3": [
-      "·"
-    ],
-    "Digit5": [
-      "€"
-    ],
-    "Digit6": [
-      "¬"
-    ],
-    "Equal": [
-      "¿"
-    ],
-    "KeyE": [
-      "é",
-      "€"
-    ],
-    "KeyU": [
-      "ú",
-      "ü"
-    ],
-    "KeyI": [
-      "í"
-    ],
-    "KeyO": [
-      "ó"
-    ],
-    "Backslash": [
-      "Ç"
-    ],
-    "KeyA": [
-      "á"
-    ],
-    "Semicolon": [
-      "Ñ"
-    ],
-    "Quote": [
-      "¨"
-    ],
-    "KeyN": [
-      "ñ"
-    ]
+    "Backquote": ["ª"],
+    "Digit3": ["·"],
+    "Digit5": ["€"],
+    "Digit6": ["¬"],
+    "Equal": ["¿"],
+    "KeyE": ["é", "€"],
+    "KeyU": ["ú", "ü"],
+    "KeyI": ["í"],
+    "KeyO": ["ó"],
+    "Backslash": ["Ç"],
+    "KeyA": ["á"],
+    "Semicolon": ["Ñ"],
+    "Quote": ["¨"],
+    "KeyN": ["ñ"]
   }
 }
